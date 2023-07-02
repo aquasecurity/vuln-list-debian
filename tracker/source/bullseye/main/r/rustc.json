@@ -1,0 +1,62 @@
+{
+  "Architecture": [
+    "any all"
+  ],
+  "Binary": [
+    "rustc, libstd-rust-1.48, libstd-rust-dev, libstd-rust-dev-windows, libstd-rust-dev-wasm32, rust-gdb, rust-lldb, rust-doc, rust-src"
+  ],
+  "Build-Conflicts": [
+    "gdb-minimal \u003c!nocheck\u003e"
+  ],
+  "Build-Depends": [
+    "debhelper (\u003e= 9), debhelper-compat (= 12), dpkg-dev (\u003e= 1.17.14), python3:native, cargo:native (\u003e= 0.40.0) \u003c!pkg.rustc.dlstage0\u003e, rustc:native (\u003e= 1.47.0+dfsg) \u003c!pkg.rustc.dlstage0\u003e, rustc:native (\u003c= 1.48.0++) \u003c!pkg.rustc.dlstage0\u003e, llvm-11-dev:native, llvm-11-tools:native, gcc-mingw-w64-x86-64-posix:native [amd64] \u003c!nowindows\u003e, libllvm11, cmake (\u003e= 3.0) | cmake3, pkg-config, zlib1g-dev:native, zlib1g-dev, liblzma-dev:native, binutils (\u003e= 2.26) \u003c!nocheck\u003e | binutils-2.26 \u003c!nocheck\u003e, git \u003c!nocheck\u003e, procps \u003c!nocheck\u003e, gdb (\u003e= 7.12) \u003c!nocheck\u003e, curl \u003cpkg.rustc.dlstage0\u003e, ca-certificates \u003cpkg.rustc.dlstage0\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "wasi-libc (\u003e= 0.0~git20200731.215adc8~~) \u003c!nowasm\u003e, wasi-libc (\u003c= 0.0~git20200731.215adc8++) \u003c!nowasm\u003e, clang-11:native"
+  ],
+  "Checksums-Sha256": [
+    "41994d5bd2b33e25b541b330173061e9748eca95144cb52074cd5c9277bb6468 2665 rustc_1.48.0+dfsg1-2.dsc f39dd5901feb713bc8876a042c3105bf654177878d8bcc71962c8dcc041af367 22048320 rustc_1.48.0+dfsg1.orig.tar.xz 7b4db2ce181dc3d8999388c7ea32ac1a992b699dbc70e4b6cd0b88831437c5ff 76924 rustc_1.48.0+dfsg1-2.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/main/r/rustc"
+  ],
+  "Files": [
+    "5cae62a59034d342f2abcbb2ed4bce79 2665 rustc_1.48.0+dfsg1-2.dsc a429436119d1d92c53524836c3017f63 22048320 rustc_1.48.0+dfsg1.orig.tar.xz bf0a264a093cc9ed2bcaa5b96d6de84d 76924 rustc_1.48.0+dfsg1-2.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "http://www.rust-lang.org/"
+  ],
+  "Maintainer": [
+    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
+  ],
+  "Package": [
+    "rustc"
+  ],
+  "Package-List": [
+    "libstd-rust-1.48 deb libs optional arch=any libstd-rust-dev deb libdevel optional arch=any libstd-rust-dev-wasm32 deb libdevel optional arch=all profile=!nowasm libstd-rust-dev-windows deb libdevel optional arch=amd64 profile=!nowindows rust-doc deb doc optional arch=all profile=!nodoc rust-gdb deb devel optional arch=all rust-lldb deb devel optional arch=all rust-src deb devel optional arch=all rustc deb devel optional arch=any"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "rust"
+  ],
+  "Standards-Version": [
+    "4.2.1"
+  ],
+  "Uploaders": [
+    "Ximin Luo \u003cinfinity0@debian.org\u003e, Sylvestre Ledru \u003csylvestre@debian.org\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/rust-team/rust"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/rust-team/rust.git"
+  ],
+  "Version": [
+    "1.48.0+dfsg1-2"
+  ]
+}
