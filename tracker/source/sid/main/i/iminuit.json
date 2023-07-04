@@ -6,16 +6,16 @@
     "python3-iminuit"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-exec, dh-python, python3-all-dev, python3-matplotlib, python3-numpy, python3-pybind11, python3-pytest, python3-setuptools, python3-tabulate \u003c!nocheck\u003e"
+    "cmake, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, python3-ipykernel \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-numba \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pybind11, python3-pytest \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-setuptools, python3-tabulate \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c9500e784e707d711780513b233c3bcbbf9bbfab9a54e2d670fe4b3b40f93429 2193 iminuit_2.11.2-4.dsc 8cae7917ca2d22c691e00792bfbbb812b84ac5c75120eb2ae879fb4ada41ee6c 411984 iminuit_2.11.2.orig.tar.gz 8dc7c11c6c51f61c8d79b88d1da760f8cc8a310f1d64a0004d51e3d8fbbd48dc 5648 iminuit_2.11.2-4.debian.tar.xz"
+    "24d6f530c55c954d57d2bba741cb5bd591447dbd9393571d158261d7f6ac5a71 2470 iminuit_2.22.0-1.dsc e0ccc37bad8bc1bd3b9d3fa07d28d4c0407e25a888faa9b559be2d9afbd2d97c 2324676 iminuit_2.22.0.orig.tar.gz 016aab85f3793e81a2f1da34268fed7fbbafbc00a69edfb97a4c091748650440 6656 iminuit_2.22.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/iminuit"
   ],
   "Files": [
-    "71bce5aee7728fcd03372113e5ae24f5 2193 iminuit_2.11.2-4.dsc 179f1631bc1de87c421f7841c651729b 411984 iminuit_2.11.2.orig.tar.gz ef96a53bc6ac73d79700f09b848b5730 5648 iminuit_2.11.2-4.debian.tar.xz"
+    "a071d43ed9c3f1797797914cfc873bdf 2470 iminuit_2.22.0-1.dsc 481db7c4873221ad2e4eef51939fcb75 2324676 iminuit_2.22.0.orig.tar.gz eeabf2121fc6f6c4bbbda9d6dab4a841 6656 iminuit_2.22.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,10 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "python3-pytest"
+    "python3-ipykernel, python3-matplotlib, python3-numba, python3-pytest, python3-scipy, python3-tabulate"
   ],
   "Uploaders": [
-    "Jeremy Sanders \u003cjeremy@jeremysanders.net\u003e"
+    "Jeremy Sanders \u003cjeremy@jeremysanders.net\u003e, Stephan Lachnit \u003cstephanlachnit@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/iminuit"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/iminuit.git"
   ],
   "Version": [
-    "2.11.2-4"
+    "2.22.0-1"
   ]
 }

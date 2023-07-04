@@ -6,16 +6,16 @@
     "librust-async-io-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-lock-2+default-dev (\u003e= 2.6-~~) \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-concurrent-queue-2+default-dev \u003c!nocheck\u003e, librust-futures-lite-1+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.77-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-parking-2+default-dev \u003c!nocheck\u003e, librust-polling-2+default-dev \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-socket2-0.4+all-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-socket2-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-waker-fn-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-lock-2+default-dev (\u003e= 2.6-~~) \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-concurrent-queue-2+default-dev \u003c!nocheck\u003e, librust-futures-lite-1+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-parking-2+default-dev \u003c!nocheck\u003e, librust-polling-2+default-dev \u003c!nocheck\u003e, librust-rustix-0.37+fs-dev (\u003e= 0.37.1-~~) \u003c!nocheck\u003e, librust-rustix-0.37+std-dev (\u003e= 0.37.1-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-socket2-0.4+all-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-socket2-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-waker-fn-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e8905352eaa2f1ace76f639f3c682d9af0645289287680472656a80656df36da 3282 rust-async-io_1.11.0-1.dsc 6fe557ebe0829511ddff4ad3011d159c0e6f144e05e3e8c3ab5095a131900a7b 36619 rust-async-io_1.11.0.orig.tar.gz 386c7b2de95ce8002360efee96616c80419e4c61268dfe145846642d1f76b8cf 3152 rust-async-io_1.11.0-1.debian.tar.xz"
+    "5637a5c2518d0000f9c129906dfe3a6cc9d67424f036fc9cb7b4f79c3199a1a3 3216 rust-async-io_1.13.0-1.dsc 0fc5b45d93ef0529756f812ca52e44c221b35341892d3dcc34132ac02f3dd2af 37191 rust-async-io_1.13.0.orig.tar.gz cb631375be9973e0c7fc5f6ffb42b5baf62424b22c5a828f35b8f52ecf3c36dc 3156 rust-async-io_1.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-io"
   ],
   "Files": [
-    "670f3fb3ee4b93f2bf376358ee8dda81 3282 rust-async-io_1.11.0-1.dsc 1a3ab39aa1caa7b8f4d6ee2b5f0e2d43 36619 rust-async-io_1.11.0.orig.tar.gz 871d88bd0dc114129395115a26892ea1 3152 rust-async-io_1.11.0-1.debian.tar.xz"
+    "3498a831ace83cf54cc3460cb39dd832 3216 rust-async-io_1.13.0-1.dsc 85e67aace07fa2fc176e690c75109365 37191 rust-async-io_1.13.0.orig.tar.gz 4393a6aa02c53abacd8b721083c1f12d 3156 rust-async-io_1.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-channel-1+default-dev, librust-async-net-1+default-dev, librust-blocking-1+default-dev, librust-criterion-0.3+default-dev, librust-criterion-0.4+default-dev, librust-getrandom-0.2+default-dev, librust-inotify-0.10-dev, librust-inotify-0.9-dev, librust-nix-0.25-dev, librust-signal-hook-0.3+default-dev, librust-tempfile-3+default-dev, librust-timerfd-1+default-dev"
+    "dh-cargo, librust-async-channel-1+default-dev, librust-async-net-1+default-dev, librust-blocking-1+default-dev, librust-criterion-0.4+cargo-bench-support-dev, librust-getrandom-0.2+default-dev, librust-inotify-0.10-dev, librust-inotify-0.9-dev, librust-signal-hook-0.3+default-dev, librust-tempfile-3+default-dev, librust-timerfd-1+default-dev"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-io]"
   ],
   "Version": [
-    "1.11.0-1"
+    "1.13.0-1"
   ]
 }
