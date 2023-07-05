@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "golang-google-grpc-dev"
+    "golang-google-grpc-dev, protoc-gen-go-grpc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-golang (\u003e= 1.17~), golang-any, golang-github-golang-mock-dev, golang-github-google-go-cmp-dev, golang-glog-dev | golang-github-golang-glog-dev, golang-golang-x-net-dev (\u003e= 1:0.0+git20170629), golang-golang-x-oauth2-dev, golang-golang-x-oauth2-google-dev, golang-golang-x-sys-dev, golang-google-genproto-dev, golang-google-protobuf-dev, golang-github-golang-protobuf-1-5-dev, protobuf-compiler (\u003e= 3.20~)"
+    "debhelper-compat (= 13), dh-sequence-golang, golang-any, golang-github-golang-protobuf-1-3-dev, golang-github-google-go-cmp-dev, golang-glog-dev | golang-github-golang-glog-dev, golang-golang-x-net-dev (\u003e= 1:0.0+git20170629), golang-golang-x-oauth2-dev, golang-golang-x-oauth2-google-dev, golang-golang-x-sys-dev, golang-google-genproto-dev, golang-google-protobuf-dev, protobuf-compiler (\u003e= 3.11.4~), protoc-gen-go-1-3"
   ],
   "Checksums-Sha256": [
-    "f21c4a2b486bb186210f5d8ed84f225d3b4131c32faad13ada7b7b3563c07f90 2592 golang-google-grpc_1.38.0-5.dsc fd6a2e2ae9e810670fdb63d196275ddb171e7f99f3bb801a02dde973de2f557b 1253222 golang-google-grpc_1.38.0.orig.tar.gz 37a665c592bd7663c713e416d2aec0b44a758bd21d709a512525efa0eab842be 20972 golang-google-grpc_1.38.0-5.debian.tar.xz"
+    "b9b3cd00dc403f745f1a3c6def8f825b8bffe14e2962648bf34c932686f5f7b0 2767 golang-google-grpc_1.38.0+really1.33.3-1.dsc 2255ad83a5b6bd2b285ea839afd315b2fb810e532569280760ebc91567d3b1e1 774208 golang-google-grpc_1.38.0+really1.33.3.orig.tar.xz eed7d3408ef30ac1a9c672aff0dbced35956101e2bcf44de2513d06b78fc01cc 85540 golang-google-grpc_1.38.0+really1.33.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/golang-google-grpc"
   ],
   "Files": [
-    "8b022d13e81c7c32434707184f89e623 2592 golang-google-grpc_1.38.0-5.dsc ce0e003eb5f85c5f965fa7c8dc722679 1253222 golang-google-grpc_1.38.0.orig.tar.gz 486690f13fbe4ca768f23505ee9d25a0 20972 golang-google-grpc_1.38.0-5.debian.tar.xz"
+    "38407df728925be419bba144485da2a5 2767 golang-google-grpc_1.38.0+really1.33.3-1.dsc bff50e0d6516db88495413ea8e17bfa6 774208 golang-google-grpc_1.38.0+really1.33.3.orig.tar.xz 4a6c462a86093fc477054c3937862137 85540 golang-google-grpc_1.38.0+really1.33.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "golang-google-grpc"
   ],
   "Package-List": [
-    "golang-google-grpc-dev deb devel optional arch=all"
+    "golang-google-grpc-dev deb golang optional arch=all protoc-gen-go-grpc deb golang optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "golang"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest-pkg-go"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/go-team/packages/golang-google-grpc.git"
   ],
   "Version": [
-    "1.38.0-5"
+    "1.38.0+really1.33.3-1"
   ]
 }
