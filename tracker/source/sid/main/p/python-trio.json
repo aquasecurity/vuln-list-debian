@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-trio"
+    "python-trio-doc, python3-trio"
   ],
   "Build-Depends": [
-    "debhelper, debhelper-compat (= 13), dh-python, netbase, pylint, python3, python3-astor, python3-async-generator, python3-attr, python3-exceptiongroup, python3-idna, python3-jedi, python3-openssl, python3-outcome, python3-pytest, python3-setuptools, python3-sniffio, python3-sortedcontainers, python3-trustme, python3-yapf"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-astor, python3-async-generator, python3-attr, python3-exceptiongroup, python3-idna, python3-jedi, python3-openssl, python3-outcome, python3-pytest, python3-setuptools, python3-sniffio, python3-sortedcontainers, python3-sphinx, python3-sphinx-rtd-theme, python3-sphinxcontrib.trio, python3-trustme, python3-yapf"
   ],
   "Checksums-Sha256": [
-    "b3893f811b74799e1e0fff255c1a9ac6cb4074b2decbbde7bb7eb1be7ccc68db 2090 python-trio_0.22.0-0.2.dsc ce68f1c5400a47b137c5a4de72c7c901bd4e7a24fbdebfe9b41de8c6c04eaacf 472205 python-trio_0.22.0.orig.tar.gz 71f20382ee83cd1bd02675b1cf8d94b8344a07a02f18665fbde44a8d59c50b67 2948 python-trio_0.22.0-0.2.debian.tar.xz"
+    "cf5c10fe04826b0a6dc3a9d50724442c5f74f01dd1ed488dfa8b86daa9ea1ad2 2154 python-trio_0.22.1-1.dsc ff57529734c65fc3915c56517bd0f828221e0d3b3260669e17e2fa9dc8f00167 536365 python-trio_0.22.1.orig.tar.gz f8240a77ee011bc56ff3eebbdacb88d7409a3dd3ded56e14b9fb9d273db0029b 4956 python-trio_0.22.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-trio"
   ],
   "Files": [
-    "94940eed116fa4cd13bb6d6ce535e3ef 2090 python-trio_0.22.0-0.2.dsc f7dbfa6a8722065f09da188641d8ed93 472205 python-trio_0.22.0.orig.tar.gz c231d96f77cdf0d0b92babb637366d96 2948 python-trio_0.22.0-0.2.debian.tar.xz"
+    "18becccd4fd16770c615d846cfc293d3 2154 python-trio_0.22.1-1.dsc fe0a79463deb6622550d2f4756f8b52e 536365 python-trio_0.22.1.orig.tar.gz 143607afe357d64b159ecbf6545e41c8 4956 python-trio_0.22.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/python-trio/trio"
   ],
   "Maintainer": [
-    "Robie Basak \u003crobie@justgohome.co.uk\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "python-trio"
   ],
   "Package-List": [
-    "python3-trio deb python optional arch=all"
+    "python-trio-doc deb doc optional arch=all python3-trio deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,9 +39,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all"
+  ],
+  "Uploaders": [
+    "Robie Basak \u003crobie@justgohome.co.uk\u003e, Michael Fladischer \u003cfladi@debian.org\u003e,"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/python-team/packages/python-trio"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/python-team/packages/python-trio.git"
   ],
   "Version": [
-    "0.22.0-0.2"
+    "0.22.1-1"
   ]
 }
