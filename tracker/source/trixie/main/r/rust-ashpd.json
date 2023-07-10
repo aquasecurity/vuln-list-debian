@@ -6,16 +6,16 @@
     "librust-ashpd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumflags2-0.6+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-repr-0.1+default-dev \u003c!nocheck\u003e, librust-strum-0.19+default-dev \u003c!nocheck\u003e, librust-strum-macros-0.19+default-dev \u003c!nocheck\u003e, librust-zbus-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-zvariant-2+default-dev \u003c!nocheck\u003e, librust-zvariant-2+enumflags2-dev \u003c!nocheck\u003e, librust-zvariant-derive-2+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-std-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e, librust-enumflags2-0.7+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e, librust-rand-0.8-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-repr-0.1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-url-2+serde-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-zbus-3+async-io-dev (\u003e= 3.1-~~) \u003c!nocheck\u003e, librust-zbus-3+url-dev (\u003e= 3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "92d2d10f614621c6fd2f88d791a7df51caff14dd4f2b06f1409811828c38c96b 2551 rust-ashpd_0.1.0-1.1.dsc 05092d6c609057712953f07e974752926ec8fcf5feed2782e9ed70a2ea0a2304 36503 rust-ashpd_0.1.0.orig.tar.gz 985fc16db046887172cb6904ccb86abc7905a688765997aaadee586d1fafb03e 3108 rust-ashpd_0.1.0-1.1.debian.tar.xz"
+    "cb21b6e091a34d4a9a424c2bfa66f07cb736c7633e4cb4f59380bda8f6f2f4ff 2852 rust-ashpd_0.4.0-3.dsc 31688b40eb5d739049f721d8405c33d3796b3f51f2bea84421a542dafe397e41 66215 rust-ashpd_0.4.0.orig.tar.gz 1accc0d105fc85959793fd1d62cac30287069ef76c8ff50af28e2f16a92e0ce3 4164 rust-ashpd_0.4.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ashpd"
   ],
   "Files": [
-    "0ff4d3bdee20f099e726c965d10c814c 2551 rust-ashpd_0.1.0-1.1.dsc db98b645844350ee06bc782c49b7e766 36503 rust-ashpd_0.1.0.orig.tar.gz d4dba8175cedd9f74cee16880a176632 3108 rust-ashpd_0.1.0-1.1.debian.tar.xz"
+    "bc77078e7e587a8710ef05c1c903e7ae 2852 rust-ashpd_0.4.0-3.dsc 469d3d853a979bf5eda47513fb75900c 66215 rust-ashpd_0.4.0.orig.tar.gz 39ccb4d89891a60e192e9ec69bb98a4b 4164 rust-ashpd_0.4.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,16 +36,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.1"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-byteorder-1+default-dev, librust-serde-json-1+default-dev"
   ],
   "Uploaders": [
-    "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
+    "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e, Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/ashpd"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ashpd]"
   ],
   "Version": [
-    "0.1.0-1.1"
+    "0.4.0-3"
   ]
 }
