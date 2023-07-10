@@ -6,16 +6,16 @@
     "librust-widestring-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5d282b1f12dfad9954991056f0ebdf109ec7a97527cecab70aac9c03faa0b5da 2069 rust-widestring_0.4.0-2.dsc effc0e4ff8085673ea7b9b2e3c73f6bd4d118810c9009ed8f1e16bd96c331db6 24241 rust-widestring_0.4.0.orig.tar.gz ea7e9ffb7e5922f7c502f78c403d5e1cc523fb31c72926b74243bd30b0dcc61c 2472 rust-widestring_0.4.0-2.debian.tar.xz"
+    "f8ff64523be5b4e5599f3d8493e1418b6b815db703800a4adaa8fcda0e604ff2 2185 rust-widestring_1.0.2-1.dsc 653f141f39ec16bba3c5abe400a0c60da7468261cc2cbf36805022876bc721a8 79706 rust-widestring_1.0.2.orig.tar.gz 2102a0ac6f874ba6628628d79c3d7bc9e3b0a641aa6bcf7db54108af92d35064 2852 rust-widestring_1.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-widestring"
   ],
   "Files": [
-    "cbacdbf6d116f42cb93b11e7f8d92430 2069 rust-widestring_0.4.0-2.dsc 85a67f6f40cf2df6e1f12791a2b1cf9a 24241 rust-widestring_0.4.0.orig.tar.gz 2b85db5de2247833313dbb0dbdd4aa25 2472 rust-widestring_0.4.0-2.debian.tar.xz"
+    "185c3663b4078bae9050f2889b7ebcfe 2185 rust-widestring_1.0.2-1.dsc 923b0b8738e502839b45fceb53a51a3e 79706 rust-widestring_1.0.2.orig.tar.gz 8b9d0558c885ba589d7c4ba09c2d9824 2852 rust-widestring_1.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-winapi-0.3+default-dev, librust-winapi-0.3+winbase-dev"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/widestring]"
   ],
   "Version": [
-    "0.4.0-2"
+    "1.0.2-1"
   ]
 }
