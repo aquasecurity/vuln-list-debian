@@ -3,7 +3,7 @@
     "any all"
   ],
   "Binary": [
-    "puredata, puredata-core, puredata-gui, puredata-gui-l10n, puredata-doc, puredata-dev, puredata-utils, puredata-extra"
+    "puredata, puredata-core, puredata64, puredata64-core, puredata-common, puredata-gui, puredata-gui-l10n, puredata-doc, puredata-dev, puredata-utils, puredata-extra, libpd0, libpd-dev"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), gettext, libasound2-dev [linux-any], libjack-dev, portaudio19-dev"
@@ -12,16 +12,16 @@
     "python3:any"
   ],
   "Checksums-Sha256": [
-    "db1d56a704badd8353484749773878aae0d2a4ba89b722ca9d17738ef464c9e0 2726 puredata_0.53.1+ds-2.dsc 18abe6db2bfe783458aee2c062ee1ce01abb41fd0c790dced97a2f5846460d78 3286468 puredata_0.53.1+ds.orig.tar.xz 016fa49bb269123612e88af7af3906b7a4b9fdb4892d05d90c08e7fc6d2fbb6c 32436 puredata_0.53.1+ds-2.debian.tar.xz"
+    "cc5af2c2e0970ad91e57f5c7b9d7c38de185df5522291af18bcc6ec0a7a7a93e 3015 puredata_0.54.0+ds-2.dsc c9fbd1281a0d8c720b32a97420ec035ef286f67cd371c392c82ee31af11f0d97 3465884 puredata_0.54.0+ds.orig.tar.xz 123c8a48bbe0013a5707b63d41bd04c10b447b9136e637c3ab51e86ffa426dad 35232 puredata_0.54.0+ds-2.debian.tar.xz"
   ],
   "Dgit": [
-    "434b918e9f418f1ca68baae07da12c6d0786d75d debian archive/debian/0.53.1+ds-2 https://git.dgit.debian.org/puredata"
+    "0924681f4151a6e21e5b5f25419c493ea671eeaa debian archive/debian/0.54.0+ds-2 https://git.dgit.debian.org/puredata"
   ],
   "Directory": [
     "pool/main/p/puredata"
   ],
   "Files": [
-    "428a981c62c50ec3e605ba00565211dc 2726 puredata_0.53.1+ds-2.dsc 2520a0b5494fa16f2ce274d6fcf850a3 3286468 puredata_0.53.1+ds.orig.tar.xz 51dc2a7a89205a2be138d790b8bb0c57 32436 puredata_0.53.1+ds-2.debian.tar.xz"
+    "00c6f512de95652c75cec84e95e16e5f 3015 puredata_0.54.0+ds-2.dsc 654ff8a05cc3135fd9e9e5f8b3f56053 3465884 puredata_0.54.0+ds.orig.tar.xz 49dd54bdc40b52d70b2939d96e35d27e 35232 puredata_0.54.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "puredata"
   ],
   "Package-List": [
-    "puredata deb sound optional arch=all puredata-core deb sound optional arch=any puredata-dev deb libdevel optional arch=all puredata-doc deb doc optional arch=all puredata-extra deb sound optional arch=any puredata-gui deb sound optional arch=all puredata-gui-l10n deb localization optional arch=all puredata-utils deb utils optional arch=any"
+    "libpd-dev deb libdevel optional arch=any libpd0 deb libs optional arch=any puredata deb sound optional arch=all puredata-common deb sound optional arch=any puredata-core deb sound optional arch=any puredata-dev deb libdevel optional arch=all puredata-doc deb doc optional arch=all puredata-extra deb sound optional arch=any puredata-gui deb sound optional arch=all puredata-gui-l10n deb localization optional arch=all puredata-utils deb utils optional arch=any puredata64 deb sound optional arch=all puredata64-core deb sound optional arch=any"
   ],
   "Priority": [
     "source"
@@ -51,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "pd-zexy"
+    "build-essential, pd-zexy"
   ],
   "Uploaders": [
     "Paul Brossier \u003cpiem@debian.org\u003e, IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e,"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/multimedia-team/pd/puredata.git"
   ],
   "Version": [
-    "0.53.1+ds-2"
+    "0.54.0+ds-2"
   ]
 }
