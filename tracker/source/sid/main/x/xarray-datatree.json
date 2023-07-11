@@ -9,7 +9,7 @@
     "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-h5netcdf, python3-netcdf4, python3-pytest, python3-setuptools, python3-setuptools-scm, python3-xarray, python3-zarr"
   ],
   "Checksums-Sha256": [
-    "5def0cf7745a47998a3a58099727a71f61bbcf3301b547b772f38c92f50dfc01 3604 xarray-datatree_0.0.12-1.dsc 1a7152afeb38102c85f277da8726597f22a89ae930a8efe6d42a492558e82847 78032 xarray-datatree_0.0.12.orig.tar.gz fa0768aa8e7287ea2de641d5aa5913da41adfc88203243727b8c36312882d022 3796 xarray-datatree_0.0.12-1.debian.tar.xz"
+    "7412625b9870ede8902ac71d8a0b33422fc7f86fb9ea6cca702e19902a5bae41 3604 xarray-datatree_0.0.12-2.dsc 1a7152afeb38102c85f277da8726597f22a89ae930a8efe6d42a492558e82847 78032 xarray-datatree_0.0.12.orig.tar.gz f9c1851af895281816c429dfa877fd441a64c06fceed634ff4c2ed3ffbde1a25 3848 xarray-datatree_0.0.12-2.debian.tar.xz"
   ],
   "Description": [
     "Tree-like hierarchical data structure for xarray Datatree provides hierarchical data structure, more flexible than a single xarray.Dataset object. It is able to represent netCDF files / Zarr stores with multiple nested groups in a single in-memory object, but datatree.DataTree objects have many other uses, such as: . * organising many related datasets, e.g. results of the same experiment with different parameters, or simulations of the same system using different models, * analysing similar data at multiple resolutions simultaneously, such as when doing a convergence study, * comparing heterogenous but related data, such as experimental and theoretical data, I/O with nested data formats such as netCDF / Zarr groups. . The approach used is based on benbovy's DatasetNode example, the basic idea is that each tree node wraps a up to a single xarray.Dataset. The differences are that datatree: . * uses a node structure inspired by anytree for the tree, * implements path-like getting and setting, * has functions for mapping user-supplied functions over every node in the tree, * automatically dispatches some of xarray.Dataset's API over every node in the tree (such as .isel), * has a bunch of tests, * has a printable representation"
@@ -18,7 +18,7 @@
     "pool/main/x/xarray-datatree"
   ],
   "Files": [
-    "dcfe32cda9e795c33e9a860bea6e87fc 3604 xarray-datatree_0.0.12-1.dsc a73276717e0d66d90927aaa7f064d55c 78032 xarray-datatree_0.0.12.orig.tar.gz 4ee313f22dcb92a0caf2b4d2edd38717 3796 xarray-datatree_0.0.12-1.debian.tar.xz"
+    "89e97e3e0d72dacc6e6a9af401678652 3604 xarray-datatree_0.0.12-2.dsc a73276717e0d66d90927aaa7f064d55c 78032 xarray-datatree_0.0.12.orig.tar.gz b2ec1a0c71a5b9baf3fdff76f2f20bf0 3848 xarray-datatree_0.0.12-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian-gis-team/xarray-datatree.git"
   ],
   "Version": [
-    "0.0.12-1"
+    "0.0.12-2"
   ]
 }
