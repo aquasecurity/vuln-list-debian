@@ -6,16 +6,16 @@
     "python3-execnet, execnet-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-apipkg, python3-setuptools, python3-setuptools-scm, python3-pytest, python3-sphinx"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-hatch-vcs, python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-sphinx"
   ],
   "Checksums-Sha256": [
-    "834742ad14c9af3dd0cf9abb001b745802279fbacfa5f58d5cc76ea84e870055 2195 execnet_1.9.0-1.dsc b7d921c8fe7f604d7d0f5c53a0a0dc616ef97d6e64b5e47ba8caad99f9eea86d 150420 execnet_1.9.0.orig.tar.xz e9361f5f14db123b0773755725f08b1216768570bb5e672224a3a695232d9044 6248 execnet_1.9.0-1.debian.tar.xz"
+    "c30254f7466e24f89cee671fe2e238b33f16223b718b123c2a83650a3ce54aec 2253 execnet_2.0.0-2.dsc 4dba0bd86a6ae5288babbcc7c966bb7c73534f948f02e02fb48587ddcb1a2ba4 172932 execnet_2.0.0.orig.tar.gz 0d018ab242cb8a55bd08b4deaf5694ec44cc7175da1272c76c46e6b88c180e77 6104 execnet_2.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/execnet"
   ],
   "Files": [
-    "7ff010f4e1eba386c17d4b6f20040cab 2195 execnet_1.9.0-1.dsc 089ad837e7881caa7ced5dcb8d9eb810 150420 execnet_1.9.0.orig.tar.xz cbd336e5fbd4d6952b61431b81adb443 6248 execnet_1.9.0-1.debian.tar.xz"
+    "2e38034d8b792d261649926e13c68197 2253 execnet_2.0.0-2.dsc 24260e42e475a1cc7b29735461ae98f2 172932 execnet_2.0.0.orig.tar.gz 47f4a0a410389314923fb90a4163e1db 6104 execnet_2.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-apipkg, python3-pytest"
+    "python3-all, python3-pytest, python3-pytest-timeout"
   ],
   "Uploaders": [
     "Scott Talbert \u003cswt@techie.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/execnet.git"
   ],
   "Version": [
-    "1.9.0-1"
+    "2.0.0-2"
   ]
 }

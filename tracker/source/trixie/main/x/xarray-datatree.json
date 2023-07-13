@@ -1,0 +1,65 @@
+{
+  "Architecture": [
+    "all"
+  ],
+  "Binary": [
+    "python3-xarray-datatree"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-h5netcdf, python3-netcdf4, python3-pytest, python3-setuptools, python3-setuptools-scm, python3-xarray, python3-zarr"
+  ],
+  "Checksums-Sha256": [
+    "7412625b9870ede8902ac71d8a0b33422fc7f86fb9ea6cca702e19902a5bae41 3604 xarray-datatree_0.0.12-2.dsc 1a7152afeb38102c85f277da8726597f22a89ae930a8efe6d42a492558e82847 78032 xarray-datatree_0.0.12.orig.tar.gz f9c1851af895281816c429dfa877fd441a64c06fceed634ff4c2ed3ffbde1a25 3848 xarray-datatree_0.0.12-2.debian.tar.xz"
+  ],
+  "Description": [
+    "Tree-like hierarchical data structure for xarray Datatree provides hierarchical data structure, more flexible than a single xarray.Dataset object. It is able to represent netCDF files / Zarr stores with multiple nested groups in a single in-memory object, but datatree.DataTree objects have many other uses, such as: . * organising many related datasets, e.g. results of the same experiment with different parameters, or simulations of the same system using different models, * analysing similar data at multiple resolutions simultaneously, such as when doing a convergence study, * comparing heterogenous but related data, such as experimental and theoretical data, I/O with nested data formats such as netCDF / Zarr groups. . The approach used is based on benbovy's DatasetNode example, the basic idea is that each tree node wraps a up to a single xarray.Dataset. The differences are that datatree: . * uses a node structure inspired by anytree for the tree, * implements path-like getting and setting, * has functions for mapping user-supplied functions over every node in the tree, * automatically dispatches some of xarray.Dataset's API over every node in the tree (such as .isel), * has a bunch of tests, * has a printable representation"
+  ],
+  "Directory": [
+    "pool/main/x/xarray-datatree"
+  ],
+  "Files": [
+    "89e97e3e0d72dacc6e6a9af401678652 3604 xarray-datatree_0.0.12-2.dsc a73276717e0d66d90927aaa7f064d55c 78032 xarray-datatree_0.0.12.orig.tar.gz b2ec1a0c71a5b9baf3fdff76f2f20bf0 3848 xarray-datatree_0.0.12-2.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/xarray-contrib/datatree"
+  ],
+  "Maintainer": [
+    "Debian GIS Project \u003cpkg-grass-devel@lists.alioth.debian.org\u003e"
+  ],
+  "Package": [
+    "xarray-datatree"
+  ],
+  "Package-List": [
+    "python3-xarray-datatree deb python optional arch=all"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "misc"
+  ],
+  "Standards-Version": [
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all"
+  ],
+  "Uploaders": [
+    "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/debian-gis-team/xarray-datatree"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/debian-gis-team/xarray-datatree.git"
+  ],
+  "Version": [
+    "0.0.12-2"
+  ]
+}
