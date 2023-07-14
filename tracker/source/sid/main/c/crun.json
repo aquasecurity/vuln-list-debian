@@ -6,16 +6,16 @@
     "crun"
   ],
   "Build-Depends": [
-    "automake, debhelper-compat (= 13), go-md2man, golang-github-opencontainers-image-spec-dev, golang-github-opencontainers-specs-dev (\u003e= 1.0.2.114.g494a5a6), gperf, libcap-dev, libseccomp-dev, libsystemd-dev, libyajl-dev, pkgconf | pkg-config, python3"
+    "automake, debhelper-compat (= 13), go-md2man, golang-github-opencontainers-image-spec-dev, golang-github-opencontainers-specs-dev (\u003e= 1.1.0~rc3), gperf, libcap-dev, libseccomp-dev, libsystemd-dev, libwasmedge-dev [amd64 arm64], libyajl-dev, pkgconf | pkg-config, python3"
   ],
   "Checksums-Sha256": [
-    "8f10abc239923042eca0b0de83fbb510e4cebaadfc937ff77bd0bde0d8dd383f 2335 crun_1.8.1-1.dsc 01b68269d94e5fe11106a9b14c2f144be03b16ec798951f4efa6aa16ba9da29a 692152 crun_1.8.1.orig.tar.xz 6998eb8c0f15c19041092ec012021ab396e1e444a3ba587808fd6af8bf2e2df9 488 crun_1.8.1.orig.tar.xz.asc 9fb7fcc20476082fe3fdc9356e5a9baeed4328b1f04f8e6062c82b6975803f08 16636 crun_1.8.1-1.debian.tar.xz"
+    "ce8f58716f9d20656cac612b569eafec7744cf0d191420a90282159fd89ff389 2418 crun_1.8.5-1.dsc 00ad733ecfef50b5e8683b1031171f6ecd3539691fbdaf2fa384c05397298c61 724704 crun_1.8.5.orig.tar.xz c47af8ff9f6ff1d137c577738bfcd12f1d3e81f545d513cdad1216b2b5f59398 488 crun_1.8.5.orig.tar.xz.asc ef9543c1c65f113852e7c58d08ab8b90002570dd73856da20a831026d3e01705 19412 crun_1.8.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/crun"
   ],
   "Files": [
-    "ca98c207e11005421230410b99031cfb 2335 crun_1.8.1-1.dsc 3b12cf5f6a458b909ed03abc887a24de 692152 crun_1.8.1.orig.tar.xz 612f7fadb4a640324aa4bda15b382d2c 488 crun_1.8.1.orig.tar.xz.asc bf44c8741c406c6db0ad5011cbdd6d9d 16636 crun_1.8.1-1.debian.tar.xz"
+    "f636ee0db87054d6f169ae8702f0abe3 2418 crun_1.8.5-1.dsc cbc8d0ccdc5d99eb2cd5cbb7a2dcea00 724704 crun_1.8.5.orig.tar.xz 84b6b4ccf358ae63da73647575b8df1e 488 crun_1.8.5.orig.tar.xz.asc eff3472fe9b0032ac93153192089c1b0 19412 crun_1.8.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://github.com/containers/crun"
   ],
   "Maintainer": [
-    "Dmitry Smirnov \u003conlyjob@debian.org\u003e"
+    "Faidon Liambotis \u003cparavoid@debian.org\u003e"
   ],
   "Package": [
     "crun"
@@ -41,8 +41,14 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python-is-python3"
+  ],
   "Uploaders": [
-    "Faidon Liambotis \u003cparavoid@debian.org\u003e, Reinhard Tartler \u003csiretart@tauware.de\u003e,"
+    "Dmitry Smirnov \u003conlyjob@debian.org\u003e, Reinhard Tartler \u003csiretart@tauware.de\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/crun"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/crun.git"
   ],
   "Version": [
-    "1.8.1-1"
+    "1.8.5-1"
   ]
 }
