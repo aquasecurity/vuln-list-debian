@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "amd64 arm64 ppc64el all"
   ],
   "Binary": [
-    "libhipsparse0, libhipsparse-dev"
+    "libhipsparse0, libhipsparse-dev, libhipsparse0-tests, libhipsparse-doc"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), cmake, rocm-cmake (\u003e= 5.3.0), gfortran, hipcc, libamd-comgr-dev, libhsa-runtime-dev, libamdhip64-dev, librocsparse-dev, libgtest-dev \u003c!nocheck\u003e"
   ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "7e8ccd828d5bd97a10b460056f2bca8d04d1595de5ceb56cb7109b625508b0e8 2194 hipsparse_5.3.3+dfsg-2.dsc 726865e47b6069904a65ff7f187154b58921ff04226408231404fa42b96f94c4 269228 hipsparse_5.3.3+dfsg.orig.tar.xz dbd4d2cbc1c3f795020ae50bb6a1ef87b1a5221285161e0f49ad705415976d55 5244 hipsparse_5.3.3+dfsg-2.debian.tar.xz"
+    "c86fadb01aef7e1708197e07d1bfa7a6680a6dd250ce94f1e1d93f8063573cbd 2722 hipsparse_5.3.3+dfsg-4.dsc 726865e47b6069904a65ff7f187154b58921ff04226408231404fa42b96f94c4 269228 hipsparse_5.3.3+dfsg.orig.tar.xz 3b870534199488b6162da05bd6ec6b5d6104d12b278436cb77a3192922a3cc99 11440 hipsparse_5.3.3+dfsg-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hipsparse"
   ],
   "Files": [
-    "34d7ffb6ead8d2a4bf71f3f40e641bab 2194 hipsparse_5.3.3+dfsg-2.dsc 22cb940ec6cb6e9b8a7dfe4571d6b8d0 269228 hipsparse_5.3.3+dfsg.orig.tar.xz 79c371add4c35479515c6654f65185a3 5244 hipsparse_5.3.3+dfsg-2.debian.tar.xz"
+    "42445db26b5de389150f441f65b6218b 2722 hipsparse_5.3.3+dfsg-4.dsc 22cb940ec6cb6e9b8a7dfe4571d6b8d0 269228 hipsparse_5.3.3+dfsg.orig.tar.xz e9ec504ccb2ba440fcb5651beaccb4a1 11440 hipsparse_5.3.3+dfsg-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +27,13 @@
     "https://github.com/rocmsoftwareplatform/hipsparse"
   ],
   "Maintainer": [
-    "ROCm Team \u003cdebian-ai@lists.debian.org\u003e"
+    "Debian ROCm Team \u003cdebian-ai@lists.debian.org\u003e"
   ],
   "Package": [
     "hipsparse"
   ],
   "Package-List": [
-    "libhipsparse-dev deb libdevel optional arch=any libhipsparse0 deb libs optional arch=any"
+    "libhipsparse-dev deb libdevel optional arch=amd64,arm64,ppc64el libhipsparse-doc deb doc optional arch=all profile=!nodoc libhipsparse0 deb libs optional arch=amd64,arm64,ppc64el libhipsparse0-tests deb libdevel optional arch=amd64,arm64,ppc64el"
   ],
   "Priority": [
     "optional"
@@ -40,6 +43,9 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
   ],
   "Uploaders": [
     "Maxime Chambonnet \u003cmaxzor@maxzor.eu\u003e, Cordell Bloor \u003ccgmb@slerp.xyz\u003e,"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/rocm-team/hipsparse.git"
   ],
   "Version": [
-    "5.3.3+dfsg-2"
+    "5.3.3+dfsg-4"
   ]
 }
