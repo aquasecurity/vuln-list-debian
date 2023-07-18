@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any all"
+    "any-i386 any-amd64 any-arm64 all"
   ],
   "Binary": [
-    "libhalide14-0, libhalideaot14-0, libhalide14-0-dev, libhalide14-doc, halide14-api-doc, python3-halide, python3-halide-doc"
+    "libhalide16-0, libhalideaot16-0, libhalide16-0-dev, libhalide16-doc, halide16-api-doc, python3-halide, python3-halide-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3, python3-dev, libpython3-dev, pybind11-dev, python3-numpy, python3-imageio, cmake, ninja-build, llvm-14, llvm-14-dev, clang-14, libclang-14-dev, libclang-rt-14-dev, lld-14 [amd64 arm64 i386], libomp-14-dev [!armel !mipsel !s390x !sparc64 !x32 !powerpc], libgl-dev, zlib1g-dev, libjpeg-dev, libpng-dev, doxygen, libxml2-dev, libopenblas-dev [!armel !mipsel !x32], libatlas-base-dev [armel mipsel]"
+    "debhelper-compat (= 13), dh-python [!i386], python3 [!i386], python3-dev [!i386], libpython3-dev [!i386], pybind11-dev [!i386], python3-numpy [!i386], python3-imageio [!i386], cmake, ninja-build, llvm-16, llvm-16-dev, clang-16, libclang-16-dev, libclang-rt-16-dev, lld-16 [amd64 arm64 i386], libomp-16-dev [!armel !mipsel !s390x !sparc64 !x32 !powerpc], libgl-dev, zlib1g-dev, libjpeg-dev, libpng-dev, doxygen, libxml2-dev, libopenblas-dev [!armel !mipsel !x32], libatlas-base-dev [armel mipsel]"
   ],
   "Checksums-Sha256": [
-    "2e59fef78cbbe614ef51bdff2075d05c2fbde24fc05b907631e2f7d61e8e7630 2664 halide_14.0.0-3.dsc f9fc9765217cbd10e3a3e3883a60fc8f2dbbeaac634b45c789577a8a87999a01 31806106 halide_14.0.0.orig.tar.gz 2f6daf8b957dfa215128e2db1009dca1fd24b3ba771aa433ec249710e13755eb 292784 halide_14.0.0-3.debian.tar.xz"
+    "146bfd0ce015a0d957756f473e43bc7acef54f597a8c451a4f512aa45d01ed4e 2811 halide_16.0.0-3.dsc a0cccee762681ea697124b8172dd65595856d0fa5bd4d1af7933046b4a085b04 32984419 halide_16.0.0.orig.tar.gz c9b8f8f666deb9459b89eb9db328376ecf70fe2971df5cb5832f05380e1c96e8 293520 halide_16.0.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/halide"
   ],
   "Files": [
-    "3411e83c3027aad173c51d6d1ced29db 2664 halide_14.0.0-3.dsc d7d44d7f32ebd310ffc04b783d1bee75 31806106 halide_14.0.0.orig.tar.gz 2d98e3969df47ffd73fae7373b0527f5 292784 halide_14.0.0-3.debian.tar.xz"
+    "b3f69e69ef4ee7b1bfa6481ecd96b4fd 2811 halide_16.0.0-3.dsc 6b1ffc5109940755ddad142644f3253c 32984419 halide_16.0.0.orig.tar.gz 30b8a54ac2317e9bb23084e1577ea81a 293520 halide_16.0.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "halide"
   ],
   "Package-List": [
-    "halide14-api-doc deb doc optional arch=all libhalide14-0 deb libs optional arch=any libhalide14-0-dev deb libdevel optional arch=any libhalide14-doc deb doc optional arch=all libhalideaot14-0 deb libs optional arch=all python3-halide deb python optional arch=any python3-halide-doc deb doc optional arch=all"
+    "halide16-api-doc deb doc optional arch=all libhalide16-0 deb libs optional arch=any-i386,any-amd64,any-arm64 libhalide16-0-dev deb libdevel optional arch=any-i386,any-amd64,any-arm64 libhalide16-doc deb doc optional arch=all libhalideaot16-0 deb libs optional arch=all python3-halide deb python optional arch=any-amd64,any-arm64 python3-halide-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org/pkg-llvm-team/halide.git -b debian"
   ],
   "Version": [
-    "14.0.0-3"
+    "16.0.0-3"
   ]
 }
