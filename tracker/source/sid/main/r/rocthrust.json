@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "all amd64 arm64 ppc64el"
   ],
   "Binary": [
-    "librocthrust-dev"
+    "librocthrust-dev, librocthrust-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, hipcc, libamd-comgr-dev, libhsa-runtime-dev, rocminfo, rocm-cmake, librocprim-dev, libgtest-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), cmake, hipcc, libamd-comgr-dev, libhsa-runtime-dev, patchelf, rocminfo, rocm-cmake, librocprim-dev, libgtest-dev"
   ],
   "Checksums-Sha256": [
-    "1ebdb0d6d7afe8aae99021f98e502b9b613905e0cb57655292e2c80e916a7d5f 2111 rocthrust_5.3.3-3.dsc 0c2fc8d437efaf5c4c859d97adb049d4025025d0be0e0908f59a8112508234e5 1178835 rocthrust_5.3.3.orig.tar.gz a0e2ad512dcae2892b84e7c685d4f2361977d1b2fb0c9beb911d6f234d56d0a6 7368 rocthrust_5.3.3-3.debian.tar.xz"
+    "32ff3aa4070f85be6a8a34f8b6c166467960e1f06f6fb8c6af61d4a1b04c86d2 2268 rocthrust_5.3.3-4.dsc 0c2fc8d437efaf5c4c859d97adb049d4025025d0be0e0908f59a8112508234e5 1178835 rocthrust_5.3.3.orig.tar.gz 0adcde7addfd34d5a3999d5558a4490625f08b4fcad89c0239a2c01bdff53b21 8376 rocthrust_5.3.3-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocthrust"
   ],
   "Files": [
-    "56e28c67537bcf13eae72670fdbcda6c 2111 rocthrust_5.3.3-3.dsc bd5faf48c9fa5e29ee246bd2789cd4e4 1178835 rocthrust_5.3.3.orig.tar.gz 85643dd8edfe2820bd409664809e61cf 7368 rocthrust_5.3.3-3.debian.tar.xz"
+    "b7a6614158f96a36a525ed07f8219eeb 2268 rocthrust_5.3.3-4.dsc bd5faf48c9fa5e29ee246bd2789cd4e4 1178835 rocthrust_5.3.3.orig.tar.gz 5b0b7d3bdb8e52702ed5df525e6cf0d6 8376 rocthrust_5.3.3-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/rocmsoftwareplatform/rocthrust"
   ],
   "Maintainer": [
-    "ROCm Team \u003cdebian-ai@lists.debian.org\u003e"
+    "Debian ROCm Team \u003cdebian-ai@lists.debian.org\u003e"
   ],
   "Package": [
     "rocthrust"
   ],
   "Package-List": [
-    "librocthrust-dev deb libdevel optional arch=all"
+    "librocthrust-dev deb libdevel optional arch=all librocthrust-tests deb libdevel optional arch=amd64,arm64,ppc64el"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,9 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
   ],
   "Uploaders": [
     "Maxime Chambonnet \u003cmaxzor@maxzor.eu\u003e, Cordell Bloor \u003ccgmb@slerp.xyz\u003e, Christian Kastner \u003cckk@debian.org\u003e,"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/rocm-team/rocthrust.git"
   ],
   "Version": [
-    "5.3.3-3"
+    "5.3.3-4"
   ]
 }
