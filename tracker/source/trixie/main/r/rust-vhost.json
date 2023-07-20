@@ -6,16 +6,16 @@
     "librust-vhost-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, librust-vm-memory-0.10+default-dev \u003c!nocheck\u003e, librust-vmm-sys-util-0.11+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, librust-vm-memory-0.12+backend-mmap-dev \u003c!nocheck\u003e, librust-vm-memory-0.12+default-dev \u003c!nocheck\u003e, librust-vmm-sys-util-0.11+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c062a757803834823da716802c433f42f05561bf43ade533f6a2c619b422bac2 2509 rust-vhost_0.6.0-5.dsc c9b791c5b0717a0558888a4cf7240cea836f39a99cb342e12ce633dcaa078072 196931 rust-vhost_0.6.0.orig.tar.gz bf01edc17c6dd03e8d80e9b1ed59a52111c6e5a2954d190f3947c794fe854231 4336 rust-vhost_0.6.0-5.debian.tar.xz"
+    "e8236522688900ac0ec9482a27012195c4d17fca7bca5f08fa558485f3cfd51e 2130 rust-vhost_0.8.1-1.dsc 61957aeb36daf0b00b87fff9c10dd28a161bd35ab157553d340d183b3d8756e6 200170 rust-vhost_0.8.1.orig.tar.gz 9dea15ce5847c98255940ed1e45d51904e950ceea79880facd0b9cab7f948a85 4536 rust-vhost_0.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vhost"
   ],
   "Files": [
-    "40d4d5a6a11eacb2f75a509cb055a3a0 2509 rust-vhost_0.6.0-5.dsc aa7b692036574ea353b5c3ee7cf06be7 196931 rust-vhost_0.6.0.orig.tar.gz 9125175cdc115e0078a0cc4f69ce38f9 4336 rust-vhost_0.6.0-5.debian.tar.xz"
+    "12cd5b42cb4fe40cc74bd695cf995817 2130 rust-vhost_0.8.1-1.dsc f2d11274454a283c7388e42101290b8b 200170 rust-vhost_0.8.1.orig.tar.gz 1dfea974800a9e81452f1d0c3cd70d26 4536 rust-vhost_0.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serial-test-0.9+default-dev, librust-tempfile-3+default-dev, librust-vm-memory-0.10+backend-mmap-dev, librust-vm-memory-0.10+default-dev"
+    "dh-cargo, librust-serial-test-0.9+default-dev, librust-tempfile-3+default-dev"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vhost]"
   ],
   "Version": [
-    "0.6.0-5"
+    "0.8.1-1"
   ]
 }
