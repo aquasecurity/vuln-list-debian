@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64el"
+    "amd64 arm64 ppc64el all"
   ],
   "Binary": [
-    "hipcc, libamdhip64-5, libamdhip64-dev, libhiprtc-builtins5"
+    "hipcc, libamdhip64-5, libamdhip64-dev, libhiprtc-builtins5, libamdhip64-doc"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), clang-15, clang-format-15, clang-tidy-15, clang-tools-15 \u003c!nocheck\u003e, clangd-15, cmake, libamd-comgr-dev (\u003e= 5.2.0~), libclang-15-dev, libclang-rt-15-dev, libhsa-runtime-dev (\u003e= 5.2.0~), libnuma-dev, librocm-smi-dev (\u003e= 5.2.0~) \u003c!nocheck\u003e, lld-15 \u003c!nocheck\u003e, llvm-15-dev, mesa-common-dev, mlir-15-tools, libmlir-15-dev, patchelf, rocminfo (\u003e= 5.2.0~) \u003c!nocheck\u003e, rocm-device-libs (\u003e= 5.2.0~) \u003c!nocheck\u003e, zlib1g-dev"
   ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "332fbc3a1aab27a2dd83bbf55c029b087211315e34ccf0a824fff445d48cbecf 3556 rocm-hipamd_5.2.3-10.dsc 0493c414d4db1af8e1eb30a651d9512044644244488ebb13478c2138a7612998 622291 rocm-hipamd_5.2.3.orig-clr.tar.gz 5b83d1513ea4003bfad5fe8fa741434104e3e49a87e1d7fad49e5a8c1d06e57b 1049547 rocm-hipamd_5.2.3.orig-hip.tar.gz 932ea3cd268410010c0830d977a30ef9c14b8c37617d3572a062b5d4595e2b94 1006686 rocm-hipamd_5.2.3.orig-opencl.tar.gz 5031d07554ce07620e24e44d482cbc269fa972e3e35377e935d2694061ff7c04 362375 rocm-hipamd_5.2.3.orig.tar.gz 83c90f648cb2aa364c35ec4e66efff1e82c1a08a006e7d08ac027cc886ed642c 23004 rocm-hipamd_5.2.3-10.debian.tar.xz"
+    "261cf7c5fb352b31d46d71f3c8fa9fc02a45fe517e4def364d9cbc49a87f9e77 3673 rocm-hipamd_5.2.3-11.dsc 0493c414d4db1af8e1eb30a651d9512044644244488ebb13478c2138a7612998 622291 rocm-hipamd_5.2.3.orig-clr.tar.gz 5b83d1513ea4003bfad5fe8fa741434104e3e49a87e1d7fad49e5a8c1d06e57b 1049547 rocm-hipamd_5.2.3.orig-hip.tar.gz 932ea3cd268410010c0830d977a30ef9c14b8c37617d3572a062b5d4595e2b94 1006686 rocm-hipamd_5.2.3.orig-opencl.tar.gz 5031d07554ce07620e24e44d482cbc269fa972e3e35377e935d2694061ff7c04 362375 rocm-hipamd_5.2.3.orig.tar.gz 6b5aa9713e87a5f8eef340338c4051616cbfdfb79831a1bf4356cdb6b7342855 26432 rocm-hipamd_5.2.3-11.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocm-hipamd"
   ],
   "Files": [
-    "93a583eb2928728ba595266e40025797 3556 rocm-hipamd_5.2.3-10.dsc a80f6dba90ba8b1861c5a99af9b99b91 622291 rocm-hipamd_5.2.3.orig-clr.tar.gz d62df37d04384cf579081468ea01b90a 1049547 rocm-hipamd_5.2.3.orig-hip.tar.gz 72908a2efd5ecb63bce3c28775f0c203 1006686 rocm-hipamd_5.2.3.orig-opencl.tar.gz f84ced90c4ce2d3bdd003d87140c65d8 362375 rocm-hipamd_5.2.3.orig.tar.gz 159119dde1844a0d3d19dbb424679678 23004 rocm-hipamd_5.2.3-10.debian.tar.xz"
+    "a188db8ea168e4efab25928ad7412602 3673 rocm-hipamd_5.2.3-11.dsc a80f6dba90ba8b1861c5a99af9b99b91 622291 rocm-hipamd_5.2.3.orig-clr.tar.gz d62df37d04384cf579081468ea01b90a 1049547 rocm-hipamd_5.2.3.orig-hip.tar.gz 72908a2efd5ecb63bce3c28775f0c203 1006686 rocm-hipamd_5.2.3.orig-opencl.tar.gz f84ced90c4ce2d3bdd003d87140c65d8 362375 rocm-hipamd_5.2.3.orig.tar.gz 99034fb921a1ca69e3d921e0ab9c6c24 26432 rocm-hipamd_5.2.3-11.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rocm-hipamd"
   ],
   "Package-List": [
-    "hipcc deb devel optional arch=amd64,arm64,ppc64el libamdhip64-5 deb libs optional arch=amd64,arm64,ppc64el libamdhip64-dev deb libdevel optional arch=amd64,arm64,ppc64el libhiprtc-builtins5 deb libs optional arch=amd64,arm64,ppc64el"
+    "hipcc deb devel optional arch=amd64,arm64,ppc64el libamdhip64-5 deb libs optional arch=amd64,arm64,ppc64el libamdhip64-dev deb libdevel optional arch=amd64,arm64,ppc64el libamdhip64-doc deb doc optional arch=all profile=!nodoc libhiprtc-builtins5 deb libs optional arch=amd64,arm64,ppc64el"
   ],
   "Priority": [
     "optional"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rocm-team/rocm-hipamd.git"
   ],
   "Version": [
-    "5.2.3-10"
+    "5.2.3-11"
   ]
 }

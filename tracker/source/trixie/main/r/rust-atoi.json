@@ -6,16 +6,16 @@
     "librust-atoi-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 8), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.1~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0e2db2dc9f90349fcd91abdab207b56b9cdd5053d6fa4b1b11902c5afd356cfd 2058 rust-atoi_0.2.3-1.dsc baa5dc0129ce09c8c87e2714a0b67c095d4a5e3261a7bbb3d7ac44d43d5dd190 4241 rust-atoi_0.2.3.orig.tar.gz a25466ccb8a808eae58d8ad11dd7e093a39f2085150b6127ec470fd0cb70907d 2308 rust-atoi_0.2.3-1.debian.tar.xz"
+    "2ae015f9ef47145b91214459e589e423936ae8de8f0020af0214a5fc031bb289 1854 rust-atoi_2.0.0-1.dsc f28d99ec8bfea296261ca1af174f24225171fea9664ba9003cbebee704810528 7785 rust-atoi_2.0.0.orig.tar.gz 98b67aa133dc0d6939767df2d64299cc93ae1f1f48bc00777aeec9f0edffc854 2660 rust-atoi_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-atoi"
   ],
   "Files": [
-    "bb111849a2b8ba3067288cfef405b72d 2058 rust-atoi_0.2.3-1.dsc 05d5f885e7f2ecdc0503171b27ba042a 4241 rust-atoi_0.2.3.orig.tar.gz 13c025cc0916aead67c99958d9e773be 2308 rust-atoi_0.2.3-1.debian.tar.xz"
+    "98cfec03d4d03c1a81933bdfa62ab29c 1854 rust-atoi_2.0.0-1.dsc 9b1db134eb4d4586f5f0f2f621bc97bc 7785 rust-atoi_2.0.0.orig.tar.gz 0aef24f5b50cf6c9d489840d19ef8a81 2660 rust-atoi_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-criterion-0.4+default-dev"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/atoi]"
   ],
   "Version": [
-    "0.2.3-1"
+    "2.0.0-1"
   ]
 }
