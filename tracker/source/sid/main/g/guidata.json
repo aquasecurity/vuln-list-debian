@@ -6,16 +6,19 @@
     "python3-guidata, python-guidata-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-all, python3-numpy, python3-pandas, python3-pil, python3-qtpy, python3-setuptools, python3-sip, python3-sphinx, python3-spyder"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-h5py, python3-numpy, python3-pandas, python3-pil, python3-pytest \u003c!nocheck\u003e, python3-pytest-xvfb \u003c!nocheck\u003e, python3-qtpy, python3-setuptools, python3-sip, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-spyder"
   ],
   "Checksums-Sha256": [
-    "0f65e03a9c910c6876a54c961f12f50d99cb51cd9866087f371d78acbfc9d5c3 2262 guidata_2.3.1-1.dsc 9d8104826ca76c8bed79ab8f680cc6a40e74547ce3fb3d04ca6cb57ddeac1819 504812 guidata_2.3.1.orig.tar.gz 9a39aadec85498693ade3e4e9e24a312462f73d8b2aa41d7317d3042a9d2bd65 11196 guidata_2.3.1-1.debian.tar.xz"
+    "99592c9b89d868142223ec67d848876c3f3e425aecc8bdbd3dd9df580e605d6e 2660 guidata_3.0.0+dfsg1-1.dsc 03d42f4b9ae430bc951dae65fa85606342914f32d93514326fd940572757ee08 472168 guidata_3.0.0+dfsg1.orig.tar.xz 5423e0bf0a8657a1e9a0b7b27eaefebc1e9369e0f5a0f720e70f64f24d391b45 11452 guidata_3.0.0+dfsg1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "4b6a5533568f193db30adfc1f1e30ec3fb7dc2b1 debian archive/debian/3.0.0+dfsg1-1 https://git.dgit.debian.org/guidata"
   ],
   "Directory": [
     "pool/main/g/guidata"
   ],
   "Files": [
-    "ee8cb7d816c8822eaec2dceaba501c90 2262 guidata_2.3.1-1.dsc 56912ee74a5e5bf6f93410c921ee5e8d 504812 guidata_2.3.1.orig.tar.gz 9c50e618df8640196e62c69e0e95d053 11196 guidata_2.3.1-1.debian.tar.xz"
+    "2603d07f2aa32527b01dfc84458f12b3 2660 guidata_3.0.0+dfsg1-1.dsc db8005717f128f9e6da8fe398d3336b3 472168 guidata_3.0.0+dfsg1.orig.tar.xz 3c38ee67eef596f089df2d1cdb1f640f 11452 guidata_3.0.0+dfsg1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,8 +44,14 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest, python3-pytest-xvfb"
+  ],
   "Uploaders": [
-    "Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e"
+    "Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/guidata"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/science-team/guidata.git"
   ],
   "Version": [
-    "2.3.1-1"
+    "3.0.0+dfsg1-1"
   ]
 }
