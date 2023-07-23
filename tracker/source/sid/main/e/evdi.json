@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "evdi-dkms, libevdi0, libevdi0-dev"
+    "evdi-dkms, libevdi1, libevdi-dev, libevdi0-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-dkms, dkms, dh-exec, libdrm-dev"
+    "debhelper-compat (= 13), dh-exec, dh-sequence-dkms, libdrm-dev"
   ],
   "Checksums-Sha256": [
-    "5525b9f9d8cf19d07d4bbc454079de612d5298afdf275d86300cf933ce7295a9 2212 evdi_1.14.0+dfsg-0.1.dsc d52ac645178981af1ff7b714184507e8332f2d0d2829e05e592d3de2780ce736 46540 evdi_1.14.0+dfsg.orig.tar.xz 93322fccfd237070d9c4bcfb6304bdf813af8f508f55ed45656972f0ba056079 5200 evdi_1.14.0+dfsg-0.1.debian.tar.xz"
+    "d86f56e9352bd3913993640f3064680875857ca60ef3321355028b8f4827aa61 2241 evdi_1.14.0+dfsg-1.dsc d52ac645178981af1ff7b714184507e8332f2d0d2829e05e592d3de2780ce736 46540 evdi_1.14.0+dfsg.orig.tar.xz 58659d0511d63b3a148fa2e42d65e4b6afcbe8be972405f215148f9ecd10ca16 5388 evdi_1.14.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/evdi"
   ],
   "Files": [
-    "92601cbb5295a8bd8010a2ed07d60e74 2212 evdi_1.14.0+dfsg-0.1.dsc 9ada7f30b3bd1a35efde6c64d4874dc7 46540 evdi_1.14.0+dfsg.orig.tar.xz 2edd831916df4a5b0bea6a6f4864d4e6 5200 evdi_1.14.0+dfsg-0.1.debian.tar.xz"
+    "e8536b79a5e582eca8cbd21333366523 2241 evdi_1.14.0+dfsg-1.dsc 9ada7f30b3bd1a35efde6c64d4874dc7 46540 evdi_1.14.0+dfsg.orig.tar.xz ebcf80d9fa82a7066fc348a6c4ea91fd 5388 evdi_1.14.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/DisplayLink/evdi"
   ],
   "Maintainer": [
-    "Hanno Stock \u003copensource@hanno-stock.de\u003e"
+    "Harlan Lieberman-Berg \u003chlieberman@debian.org\u003e"
   ],
   "Package": [
     "evdi"
   ],
   "Package-List": [
-    "evdi-dkms deb kernel optional arch=all libevdi0 deb libs optional arch=any libevdi0-dev deb libdevel optional arch=all"
+    "evdi-dkms deb kernel optional arch=all libevdi-dev deb libdevel optional arch=all libevdi0-dev deb oldlibs optional arch=all libevdi1 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,21 +39,18 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "dkms"
+    "autopkgtest-pkg-dkms"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/hansto-guest/evdi"
+    "https://salsa.debian.org/debian/evdi"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/hansto-guest/evdi.git"
+    "https://salsa.debian.org/debian/evdi.git"
   ],
   "Version": [
-    "1.14.0+dfsg-0.1"
+    "1.14.0+dfsg-1"
   ]
 }

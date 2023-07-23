@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libqt6core6, libqt6concurrent6, libqt6dbus6, libqt6gui6, qt6-qpa-plugins, qt6-gtk-platformtheme, qt6-xdgdesktopportal-platformtheme, libqt6opengl6, libqt6openglwidgets6, libqt6network6, libqt6sql6, libqt6sql6-mysql, libqt6sql6-odbc, libqt6sql6-psql, libqt6sql6-sqlite, libqt6sql6-ibase, libqt6test6, libqt6widgets6, libqt6xml6, libqt6printsupport6, qt6-base-dev, qt6-base-private-dev, qt6-base-dev-tools, qt6-base-examples, qmake6-bin, qmake6"
+    "libqt6core6, libqt6concurrent6, libqt6dbus6, libqt6gui6, qt6-qpa-plugins, qt6-gtk-platformtheme, qt6-xdgdesktopportal-platformtheme, libqt6opengl6, libqt6openglwidgets6, libqt6network6, libqt6sql6, libqt6sql6-mysql, libqt6sql6-odbc, libqt6sql6-psql, libqt6sql6-sqlite, libqt6sql6-ibase, libqt6test6, libqt6widgets6, libqt6xml6, libqt6printsupport6, qt6-base-dev, qt6-base-private-dev, qt6-base-dev-tools, qt6-base-examples, qmake6-bin, qmake6, qt6-base-doc, qt6-base-doc-html, qt6-base-doc-dev"
   ],
   "Build-Depends": [
     "cmake (\u003e= 3.24~), debhelper-compat (= 13), default-libmysqlclient-dev, dh-exec, firebird-dev [linux-any], libatspi2.0-dev, libb2-dev, libcups2-dev, libdbus-1-dev, libdouble-conversion-dev, libdrm-dev [linux-any], libfontconfig-dev, libfreetype-dev, libgbm-dev [linux-any], libgl-dev, libgles-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev, libgtk-3-dev, libharfbuzz-dev, libicu-dev, libinput-dev [linux-any], libjpeg-dev, libkrb5-dev, liblttng-ust-dev [linux-any], libmd4c-dev, libmd4c-html0-dev, libmtdev-dev [linux-any], libpcre2-dev, libpng-dev, libpq-dev, libproxy-dev, libsctp-dev [linux-any], libsqlite3-dev, libssl-dev, libsystemd-dev [linux-any], libts-dev, libudev-dev [linux-any], libvulkan-dev [linux-any], libwayland-dev [linux-any], libx11-dev, libx11-xcb-dev, libxcb-glx0-dev, libxcb-icccm4-dev, libxcb-image0-dev, libxcb-keysyms1-dev, libxcb-randr0-dev, libxcb-render-util0-dev, libxcb-render0-dev, libxcb-shape0-dev, libxcb-shm0-dev, libxcb-sync-dev, libxcb-util-dev, libxcb-xfixes0-dev, libxcb-xinerama0-dev, libxcb-xinput-dev, libxcb-xkb-dev, libxcb1-dev, libxext-dev, libxfixes-dev, libxi-dev, libxkbcommon-dev, libxkbcommon-x11-dev, libxrender-dev, libzstd-dev, ninja-build, pkg-config, pkg-kde-tools (\u003e= 0.15.17~), qt6-base-dev:native \u003ccross\u003e, unixodbc-dev, zlib1g-dev"
   ],
+  "Build-Depends-Indep": [
+    "qt6-base-dev (\u003e= 6.4~) \u003c!nodoc\u003e, qt6-documentation-tools (\u003e= 6.4~) \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "51ee80ef7ad27c622de7998df98988fe34be7035bd459085bee4595383c4fbca 4817 qt6-base_6.4.2+dfsg-14.dsc 4f14b89a9463a540fd84a6718b8519a2297119b454ef547721015a9e9019ae9e 45943692 qt6-base_6.4.2+dfsg.orig.tar.xz b28ee5c4449e18359edb1a64db140e7b4f2ef0209336d00fb9e8c6c34d56600a 185144 qt6-base_6.4.2+dfsg-14.debian.tar.xz"
+    "2be9a621d3509e82d50552d3cecce2715a6389a583f170f85f0f0cf00e0e19b8 5103 qt6-base_6.4.2+dfsg-16.dsc 4f14b89a9463a540fd84a6718b8519a2297119b454ef547721015a9e9019ae9e 45943692 qt6-base_6.4.2+dfsg.orig.tar.xz 5b9682b56435207354704fce9dd57b12bc9aa3d6a7580383509471715890f0e5 186868 qt6-base_6.4.2+dfsg-16.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qt6-base"
   ],
   "Files": [
-    "d3f64309a1918222ab64fa9e9742fc02 4817 qt6-base_6.4.2+dfsg-14.dsc 99724190bd6eb53b3f4b723e09e32304 45943692 qt6-base_6.4.2+dfsg.orig.tar.xz 3bf9473deb87574d51bc27f8e2b88a13 185144 qt6-base_6.4.2+dfsg-14.debian.tar.xz"
+    "a4ef2fcfa56654bad70ce2fd3cc131be 5103 qt6-base_6.4.2+dfsg-16.dsc 99724190bd6eb53b3f4b723e09e32304 45943692 qt6-base_6.4.2+dfsg.orig.tar.xz 70c52aa03e40673ecb0ce89c7d2cb19d 186868 qt6-base_6.4.2+dfsg-16.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "qt6-base"
   ],
   "Package-List": [
-    "libqt6concurrent6 deb libs optional arch=any libqt6core6 deb libs optional arch=any libqt6dbus6 deb libs optional arch=any libqt6gui6 deb libs optional arch=any libqt6network6 deb libs optional arch=any libqt6opengl6 deb libs optional arch=any libqt6openglwidgets6 deb libs optional arch=any libqt6printsupport6 deb libs optional arch=any libqt6sql6 deb libs optional arch=any libqt6sql6-ibase deb libs optional arch=linux-any libqt6sql6-mysql deb libs optional arch=any libqt6sql6-odbc deb libs optional arch=any libqt6sql6-psql deb libs optional arch=any libqt6sql6-sqlite deb libs optional arch=any libqt6test6 deb libs optional arch=any libqt6widgets6 deb libs optional arch=any libqt6xml6 deb libs optional arch=any qmake6 deb devel optional arch=any qmake6-bin deb devel optional arch=any qt6-base-dev deb libdevel optional arch=any qt6-base-dev-tools deb devel optional arch=any qt6-base-examples deb misc optional arch=any qt6-base-private-dev deb libdevel optional arch=any qt6-gtk-platformtheme deb libs optional arch=any qt6-qpa-plugins deb libs optional arch=any qt6-xdgdesktopportal-platformtheme deb libs optional arch=any"
+    "libqt6concurrent6 deb libs optional arch=any libqt6core6 deb libs optional arch=any libqt6dbus6 deb libs optional arch=any libqt6gui6 deb libs optional arch=any libqt6network6 deb libs optional arch=any libqt6opengl6 deb libs optional arch=any libqt6openglwidgets6 deb libs optional arch=any libqt6printsupport6 deb libs optional arch=any libqt6sql6 deb libs optional arch=any libqt6sql6-ibase deb libs optional arch=linux-any libqt6sql6-mysql deb libs optional arch=any libqt6sql6-odbc deb libs optional arch=any libqt6sql6-psql deb libs optional arch=any libqt6sql6-sqlite deb libs optional arch=any libqt6test6 deb libs optional arch=any libqt6widgets6 deb libs optional arch=any libqt6xml6 deb libs optional arch=any qmake6 deb devel optional arch=any qmake6-bin deb devel optional arch=any qt6-base-dev deb libdevel optional arch=any qt6-base-dev-tools deb devel optional arch=any qt6-base-doc deb doc optional arch=all qt6-base-doc-dev deb libdevel optional arch=all qt6-base-doc-html deb doc optional arch=all qt6-base-examples deb misc optional arch=any qt6-base-private-dev deb libdevel optional arch=any qt6-gtk-platformtheme deb libs optional arch=any qt6-qpa-plugins deb libs optional arch=any qt6-xdgdesktopportal-platformtheme deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/qt-kde-team/qt6/qt6-base.git"
   ],
   "Version": [
-    "6.4.2+dfsg-14"
+    "6.4.2+dfsg-16"
   ]
 }
