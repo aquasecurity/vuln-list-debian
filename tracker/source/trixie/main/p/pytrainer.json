@@ -6,19 +6,19 @@
     "pytrainer"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, gir1.2-gtk-3.0, locales-all, python3, python3-dateutil, python3-gi-cairo, python3-lxml, python3-matplotlib, python3-migrate, python3-mock, python3-mysqldb, python3-pip, python3-psycopg2, python3-setuptools, xauth, xvfb"
+    "debhelper-compat (= 13), dh-python, python3, python3-dateutil, python3-lxml, python3-matplotlib, python3-migrate, python3-mysqldb, python3-pip, python3-psycopg2, python3-setuptools, tox"
   ],
   "Checksums-Sha256": [
-    "886c61ffd975487acf66f4beb8da5afde5af34a4c407a73215ed3757e700af86 2583 pytrainer_2.1.0-2.dsc 0f633c86e54c5157e8e2f31f2cdc486101ee4adf3a75b3f8f311e9ce31467b1d 764796 pytrainer_2.1.0.orig.tar.gz cdf6d5dd248e90d86c5af538fea862ef5b94e11a9f3daa9bb1e304f5179130e1 833 pytrainer_2.1.0.orig.tar.gz.asc 5ce10eb7600573fb74c8532f88f666de3062d3ac6972b376c120c2d237d6662b 20104 pytrainer_2.1.0-2.debian.tar.xz"
+    "9cdf9a94aaafed89b1ed9d488a686aa3607994dd7cef30018e7beaf53da72e7f 2582 pytrainer_2.2.1-1.dsc 4b31dbdd63d09c523cbbbb8f2f33387fad08988f986afa63900318dfa6470c7b 780105 pytrainer_2.2.1.orig.tar.gz 6a282c12da06f6f770306ea0ba4fe098f9416d2fd63227a45c9af50d66dce81e 833 pytrainer_2.2.1.orig.tar.gz.asc f254f6663f071326654b86874f5a39bbb9f71fef5206d41fd4cec869c91ca4b3 17100 pytrainer_2.2.1-1.debian.tar.xz"
   ],
   "Dgit": [
-    "283a452ed6646e9815297f0de5b0acbe00e8f3f8 debian archive/debian/2.1.0-2 https://git.dgit.debian.org/pytrainer"
+    "61c80dac5405d0c178fd2dafbdc532227b440e31 debian archive/debian/2.2.1-1 https://git.dgit.debian.org/pytrainer"
   ],
   "Directory": [
     "pool/main/p/pytrainer"
   ],
   "Files": [
-    "4af621bab00d1178884fa09bf1de1efe 2583 pytrainer_2.1.0-2.dsc 778d2598c0f802497d769f8347157c67 764796 pytrainer_2.1.0.orig.tar.gz b02e9483e080ed21567ff6715fd75b89 833 pytrainer_2.1.0.orig.tar.gz.asc 3771a10eee375d69b8a1df5d3c6b3d54 20104 pytrainer_2.1.0-2.debian.tar.xz"
+    "698edff93acf6e892fb1f63ddc920eec 2582 pytrainer_2.2.1-1.dsc 2fee7f07868d7185554e2d3e4ba1aeed 780105 pytrainer_2.2.1.orig.tar.gz a8375e23135d9c1c6272637a6672c189 833 pytrainer_2.2.1.orig.tar.gz.asc c5d9a7d10dc5b12b6bee93cb2c8fa69e 17100 pytrainer_2.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, xauth, xvfb"
   ],
   "Uploaders": [
     "Noèl Köthe \u003cnoel@debian.org\u003e, Arto Jantunen \u003cviiru@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/pytrainer.git"
   ],
   "Version": [
-    "2.1.0-2"
+    "2.2.1-1"
   ]
 }
