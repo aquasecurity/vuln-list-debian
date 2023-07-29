@@ -9,16 +9,16 @@
     "debhelper-compat (= 13)"
   ],
   "Build-Depends-Indep": [
-    "perl, libmodule-install-rtx-perl (\u003e= 0.42-1~), libmodule-install-substitute-perl"
+    "perl, libmodule-install-rtx-perl (\u003e= 0.42-1~), libmodule-install-substitute-perl, libtest-nowarnings-perl \u003c!nocheck\u003e, liblog-dispatch-perl-perl \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d0f8a7895eddde722a41e7f1e2a0b9033a5168b01d2567fd69e0457849cc77e1 2484 rt-extension-mergeusers_1.06-1.dsc 0369059bbcc66e4608361114806b5dbb16a84c1257f192f804a520adff2f78e4 46900 rt-extension-mergeusers_1.06.orig.tar.gz 29d44bf6f4944d2399c3dd788087da333856533123c92bfc943232652d24c7f2 2848 rt-extension-mergeusers_1.06-1.debian.tar.xz"
+    "d40139b618ea8e5c99e17a6ec6cb02cefabdb38c7e986c7b635d828120890dfd 2582 rt-extension-mergeusers_1.08-1.dsc 16cfe9c97e9dcd31822d990a96e6a8667644d8e65d7a5961a38f0fd518e906c8 46981 rt-extension-mergeusers_1.08.orig.tar.gz 78d95dc63648d215c8fef76abca901a94d2b6ba4991dadc617927295744c2c05 6980 rt-extension-mergeusers_1.08-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rt-extension-mergeusers"
   ],
   "Files": [
-    "e8afb0f9368b4e3050a1a97dcde6c5c3 2484 rt-extension-mergeusers_1.06-1.dsc 6d1547e949ab27c33b10915d4c85bb81 46900 rt-extension-mergeusers_1.06.orig.tar.gz 010f9db18f3f79f48a31182cd97aafa9 2848 rt-extension-mergeusers_1.06-1.debian.tar.xz"
+    "b0eed37a93b220f4d15ea966d615891e 2582 rt-extension-mergeusers_1.08-1.dsc 7d03972692332aa8247fc25abeebc883 46981 rt-extension-mergeusers_1.08.orig.tar.gz 6d2b3b5d389561562d0710b48e97a0f9 6980 rt-extension-mergeusers_1.08-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-perl"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, pkg-perl-autopkgtest"
   ],
   "Uploaders": [
     "Andrew Ruthven \u003candrew@etc.gen.nz\u003e, Dominic Hargreaves \u003cdom@earth.li\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/request-tracker-team/rt-extension-mergeusers.git"
   ],
   "Version": [
-    "1.06-1"
+    "1.08-1"
   ]
 }
