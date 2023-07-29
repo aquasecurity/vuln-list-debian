@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libqt6designer6, libqt6designercomponents6, libqt6help6, libqt6uitools6, assistant-qt6, designer-qt6, linguist-qt6, qdbus-qt6, qt6-documentation-tools, qt6-l10n-tools, qt6-tools-dev, qt6-tools-private-dev, qt6-tools-dev-tools"
+    "libqt6designer6, libqt6designercomponents6, libqt6help6, libqt6uitools6, assistant-qt6, designer-qt6, linguist-qt6, qdbus-qt6, qt6-documentation-tools, qt6-l10n-tools, qt6-tools-dev, qt6-tools-private-dev, qt6-tools-dev-tools, qt6-tools-doc, qt6-tools-doc-html, qt6-tools-doc-dev, qt6-tools-examples"
   ],
   "Build-Depends": [
-    "clang-15, cmake (\u003e= 3.24~), debhelper-compat (= 13), libclang-15-dev, libgl-dev, liblitehtml-dev (\u003e= 0.6~), libqt6opengl6-dev (\u003e= 6.4.2+dfsg~), libssl-dev, libvulkan-dev [linux-any], libxcb-xkb-dev, llvm-15-dev, ninja-build, pkg-config, pkg-kde-tools, qt6-base-dev (\u003e= 6.4.2+dfsg~), qt6-base-private-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-private-dev (\u003e= 6.4.2+dfsg~)"
+    "clang-15, cmake (\u003e= 3.24~), debhelper-compat (= 13), libclang-15-dev, libgl-dev, liblitehtml-dev (\u003e= 0.6~), libssl-dev, libvulkan-dev [linux-any], libxcb-xkb-dev, llvm-15-dev, ninja-build, pkg-config, pkg-kde-tools, qt6-base-dev (\u003e= 6.4.2+dfsg~), qt6-base-private-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-private-dev (\u003e= 6.4.2+dfsg~)"
+  ],
+  "Build-Depends-Indep": [
+    "qt6-base-dev (\u003e= 6.4~) \u003c!nodoc\u003e, qt6-documentation-tools (\u003e= 6.4~) \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "cf4ae981f2351118761385cf63a0f28f972874aa6e648bdf0e965de098721a49 3075 qt6-tools_6.4.2-1.dsc a31387916184e4a5ef522d3ea841e8e931cc0f88be0824a7a354a572d5826c68 8740276 qt6-tools_6.4.2.orig.tar.xz 4f3135d1134dc2707725b2530c0f6a93ef63efd0bdb875f0aca067e16dccafbb 36708 qt6-tools_6.4.2-1.debian.tar.xz"
+    "763c4aa0f2df68672db65e0ae7444e73dd87499bb467b190c4ad129e8e13d3d7 3428 qt6-tools_6.4.2-3.dsc a31387916184e4a5ef522d3ea841e8e931cc0f88be0824a7a354a572d5826c68 8740276 qt6-tools_6.4.2.orig.tar.xz 71e849fe713f6d69f0d9a0169277b88e66e3df4d90aecdd1f77e8af7ea61afdd 38188 qt6-tools_6.4.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qt6-tools"
   ],
   "Files": [
-    "51ba7d8e69737ddee9bb56a8a9dc611f 3075 qt6-tools_6.4.2-1.dsc ab1515b2bc678ae1dbd807dbbe45774a 8740276 qt6-tools_6.4.2.orig.tar.xz 7bdac9a162e939786f390079f4eee7c4 36708 qt6-tools_6.4.2-1.debian.tar.xz"
+    "2f566aa37896b802062454d524d3e5e7 3428 qt6-tools_6.4.2-3.dsc ab1515b2bc678ae1dbd807dbbe45774a 8740276 qt6-tools_6.4.2.orig.tar.xz 90a86b4185513ee392c601aec37fc0a3 38188 qt6-tools_6.4.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "qt6-tools"
   ],
   "Package-List": [
-    "assistant-qt6 deb devel optional arch=any designer-qt6 deb devel optional arch=any libqt6designer6 deb libs optional arch=any libqt6designercomponents6 deb libs optional arch=any libqt6help6 deb libs optional arch=any libqt6uitools6 deb libs optional arch=any linguist-qt6 deb devel optional arch=any qdbus-qt6 deb utils optional arch=any qt6-documentation-tools deb utils optional arch=any qt6-l10n-tools deb utils optional arch=any qt6-tools-dev deb libdevel optional arch=any qt6-tools-dev-tools deb devel optional arch=any qt6-tools-private-dev deb libdevel optional arch=any"
+    "assistant-qt6 deb devel optional arch=any designer-qt6 deb devel optional arch=any libqt6designer6 deb libs optional arch=any libqt6designercomponents6 deb libs optional arch=any libqt6help6 deb libs optional arch=any libqt6uitools6 deb libs optional arch=any linguist-qt6 deb devel optional arch=any qdbus-qt6 deb utils optional arch=any qt6-documentation-tools deb utils optional arch=any qt6-l10n-tools deb utils optional arch=any qt6-tools-dev deb libdevel optional arch=any qt6-tools-dev-tools deb devel optional arch=any qt6-tools-doc deb doc optional arch=all qt6-tools-doc-dev deb libdevel optional arch=all qt6-tools-doc-html deb doc optional arch=all qt6-tools-examples deb misc optional arch=any qt6-tools-private-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,7 +45,7 @@
     "4.6.2"
   ],
   "Uploaders": [
-    "Patrick Franz \u003cdeltaone@debian.org\u003e"
+    "Patrick Franz \u003cdeltaone@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/qt-kde-team/qt6/qt6-tools"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/qt-kde-team/qt6/qt6-tools.git"
   ],
   "Version": [
-    "6.4.2-1"
+    "6.4.2-3"
   ]
 }
