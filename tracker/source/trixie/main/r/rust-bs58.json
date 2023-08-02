@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-bs58-dev, librust-bs58+check-dev"
+    "librust-bs58-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+grab-spare-slice-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+std-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8db4b7f108098431a78c79df43cb97a4214005e5361c7320167ce2bd852a264d 2159 rust-bs58_0.4.0-2.dsc 771fe0050b883fcc3ea2359b1a96bcfbc090b7116eae7c3c512c7a083fdf23d3 24914 rust-bs58_0.4.0.orig.tar.gz 3a2762d8579462f587f9073fe6c7287cfb70aacc4f551c570597837625b30658 4180 rust-bs58_0.4.0-2.debian.tar.xz"
+    "163b5c0910a801d8305da7ddea6b6607808537a8f230f375b0e856207d9857a4 2320 rust-bs58_0.5.0-1.dsc f5353f36341f7451062466f0b755b96ac3a9547e4d7f6b70d603fc721a7d7896 27263 rust-bs58_0.5.0.orig.tar.gz 2936b8b33bab737db16bda4c9949a4abcba6ed8f18280d92dc3bc6e01c5b8038 3876 rust-bs58_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bs58"
   ],
   "Files": [
-    "593e40df1a90865a0454fe765832ea0f 2159 rust-bs58_0.4.0-2.dsc 2cc34f80995f2244f29c8e8e9baaa366 24914 rust-bs58_0.4.0.orig.tar.gz 41f5e68e087b3e7cbd86596ae74e160a 4180 rust-bs58_0.4.0-2.debian.tar.xz"
+    "6477921ac55e88172f3f5a5a9b188f16 2320 rust-bs58_0.5.0-1.dsc bde7853c15ba477f39c191f542750007 27263 rust-bs58_0.5.0.orig.tar.gz 00e70835401576ecee2386fc6f6bd094 3876 rust-bs58_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "rust-bs58"
   ],
   "Package-List": [
-    "librust-bs58+check-dev deb rust optional arch=any librust-bs58-dev deb rust optional arch=any"
+    "librust-bs58-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.1"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-tinyvec-1+default-dev, librust-tinyvec-1+rustc-1-55-dev"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bs58]"
   ],
   "Version": [
-    "0.4.0-2"
+    "0.5.0-1"
   ]
 }

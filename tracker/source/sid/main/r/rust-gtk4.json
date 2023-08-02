@@ -6,16 +6,16 @@
     "librust-gtk4-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-cairo-rs-0.16+default-dev \u003c!nocheck\u003e, librust-field-offset-0.3+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-gdk-pixbuf-0.16+default-dev \u003c!nocheck\u003e, librust-gdk4-0.5+default-dev (\u003e= 0.5.5-~~) \u003c!nocheck\u003e, librust-gio-0.16+default-dev \u003c!nocheck\u003e, librust-gio-0.16+v2-66-dev \u003c!nocheck\u003e, librust-glib-0.16+default-dev (\u003e= 0.16.2-~~) \u003c!nocheck\u003e, librust-glib-0.16+v2-66-dev (\u003e= 0.16.2-~~) \u003c!nocheck\u003e, librust-graphene-rs-0.16+default-dev \u003c!nocheck\u003e, librust-gsk4-0.5+default-dev (\u003e= 0.5.5-~~) \u003c!nocheck\u003e, librust-gtk4-macros-0.5+default-dev (\u003e= 0.5.5-~~) \u003c!nocheck\u003e, librust-gtk4-sys-0.5+default-dev (\u003e= 0.5.5-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-pango-0.16+default-dev \u003c!nocheck\u003e, librust-pango-0.16+v1-46-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-cairo-rs-0.17+default-dev \u003c!nocheck\u003e, librust-field-offset-0.3+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-gdk-pixbuf-0.17+default-dev \u003c!nocheck\u003e, librust-gdk4-0.6+default-dev \u003c!nocheck\u003e, librust-gio-0.17+default-dev \u003c!nocheck\u003e, librust-gio-0.17+v2-66-dev \u003c!nocheck\u003e, librust-glib-0.17+default-dev \u003c!nocheck\u003e, librust-glib-0.17+v2-66-dev \u003c!nocheck\u003e, librust-graphene-rs-0.17+default-dev \u003c!nocheck\u003e, librust-gsk4-0.6+default-dev \u003c!nocheck\u003e, librust-gtk4-macros-0.6+default-dev \u003c!nocheck\u003e, librust-gtk4-sys-0.6+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-pango-0.17+default-dev \u003c!nocheck\u003e, librust-pango-0.17+v1-46-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "723f2de7f1f4f464216b9823f052179013b53a59bf99aeaf2cf0b3cbdaac7d07 3110 rust-gtk4_0.5.5-3.dsc fd89dba65def483a233dc4fdd3f3dab01576e3d83f80f6c9303ebe421661855e 553957 rust-gtk4_0.5.5.orig.tar.gz 76588a818c4e79f640aa1ad56e10627df22c63f2588854cd89a393267ef0e127 3392 rust-gtk4_0.5.5-3.debian.tar.xz"
+    "14250ffde375c393fd6eca78419bf4d89ad890b6f514bbcf8e7ba779543588ba 2984 rust-gtk4_0.6.6-1.dsc b28a32a04cd75cef14a0983f8b0c669e0fe152a0a7725accdeb594e2c764c88b 473518 rust-gtk4_0.6.6.orig.tar.gz 023b550adbc5002231620616aefde8affb27ecfc4828b938a5e4fc153a58cfba 3804 rust-gtk4_0.6.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gtk4"
   ],
   "Files": [
-    "7140de102b9cce0606dee86fd159a2d5 3110 rust-gtk4_0.5.5-3.dsc 5d6377036e552d8d1173759cd114fad7 553957 rust-gtk4_0.5.5.orig.tar.gz 6327de8973b2a182ebe403f5ee1af237 3392 rust-gtk4_0.5.5-3.debian.tar.xz"
+    "648339823511485496ea23be8be66743 2984 rust-gtk4_0.6.6-1.dsc eb493f0339e537f96c73497bbd135a49 473518 rust-gtk4_0.6.6.orig.tar.gz 47c7c21f5ba15e2eb1a80bdf5f4e42ef 3804 rust-gtk4_0.6.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-gir-format-check-0.1+default-dev"
+    "dh-cargo, librust-gir-format-check-0.1+default-dev, xauth, xvfb"
   ],
   "Uploaders": [
-    "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e, Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/gtk4"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gtk4]"
   ],
   "Version": [
-    "0.5.5-3"
+    "0.6.6-1"
   ]
 }

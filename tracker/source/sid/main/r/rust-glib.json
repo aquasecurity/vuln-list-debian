@@ -6,16 +6,16 @@
     "librust-glib-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-executor-0.3+default-dev \u003c!nocheck\u003e, librust-futures-task-0.3-dev \u003c!nocheck\u003e, librust-futures-util-0.3+default-dev \u003c!nocheck\u003e, librust-gio-sys-0.16+default-dev \u003c!nocheck\u003e, librust-glib-macros-0.16+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.16+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.16+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-executor-0.3+default-dev \u003c!nocheck\u003e, librust-futures-task-0.3-dev \u003c!nocheck\u003e, librust-futures-util-0.3+default-dev \u003c!nocheck\u003e, librust-gio-sys-0.17+default-dev \u003c!nocheck\u003e, librust-glib-macros-0.17+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.17+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.17+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+const-generics-dev \u003c!nocheck\u003e, librust-smallvec-1+const-new-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+union-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2896c4a9273cfccdb4637081fad1a6984ce2f606359bcd9611eca4bfa37aea41 2963 rust-glib_0.16.7-3.dsc ddd4df61a866ed7259d6189b8bcb1464989a77f1d85d25d002279bbe9dd38b2f 223926 rust-glib_0.16.7.orig.tar.gz 3c2972c89ff1c2bd68f43ed73bef79b3bf2bb59654419cd2f04c376390bba2ee 7992 rust-glib_0.16.7-3.debian.tar.xz"
+    "d4015474ec4df4fc827c05f1df6832e3cc7777b67db690b8396922435f64e07a 3122 rust-glib_0.17.10-1.dsc d3fad45ba8d4d2cea612b432717e834f48031cd8853c8aaf43b2c79fec8d144b 259266 rust-glib_0.17.10.orig.tar.gz 142eef912151aa48f7a144e87915cd2b2899b0b5827e8b4ff9c8ad9028e07dc8 4224 rust-glib_0.17.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-glib"
   ],
   "Files": [
-    "e8a81f6268d18f36bc85be108ba3c156 2963 rust-glib_0.16.7-3.dsc 21238906c30479598403cc0dcce90894 223926 rust-glib_0.16.7.orig.tar.gz 3d170c05b91c71b8059a61dbfae74eb6 7992 rust-glib_0.16.7-3.debian.tar.xz"
+    "26751840c90a6394265e2772c538cd42 3122 rust-glib_0.17.10-1.dsc 8a77ef0fbd1f57341424942fe530c5d6 259266 rust-glib_0.17.10.orig.tar.gz 7dc4b2b7893bdaebb9984957327d40d3 4224 rust-glib_0.17.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-gir-format-check-0.1+default-dev, librust-tempfile-3+default-dev, librust-trybuild2-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-gir-format-check-0.1+default-dev, librust-tempfile-3+default-dev, librust-trybuild-1+default-dev"
   ],
   "Uploaders": [
-    "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/glib"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/glib]"
   ],
   "Version": [
-    "0.16.7-3"
+    "0.17.10-1"
   ]
 }

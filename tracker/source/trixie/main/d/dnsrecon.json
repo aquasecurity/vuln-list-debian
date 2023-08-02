@@ -8,14 +8,17 @@
   "Build-Depends": [
     "debhelper-compat (= 13), dh-python, python3, python3-setuptools"
   ],
+  "Build-Depends-Indep": [
+    "python3-pytest \u003c!nocheck\u003e"
+  ],
   "Checksums-Sha256": [
-    "8fb9c8bed84eb3ea695143572646b367b3c011e5242570caae1add50261e1249 1960 dnsrecon_1.1.3-2.dsc 076aa0745ab956b278f535f17fd002bd8be838e00fd18a639c30e9cd37ec9eb0 648660 dnsrecon_1.1.3.orig.tar.gz 22f98ffbd1d60604577278e71de6027a3f52be4c64e59e0ed32c6dd844261fe8 6276 dnsrecon_1.1.3-2.debian.tar.xz"
+    "995cc7a1134b6f09c309c93c1e5af57646164de0c6cf7c288944ab3ed21bc363 2062 dnsrecon_1.1.5-1.dsc 528881c6f2cf759ce91c895c19345768902c3fd811b05dbdfba864f5980aef9c 655071 dnsrecon_1.1.5.orig.tar.gz 10413ef530d9f8211dc20df5b36c8344997b2ff17314a957814ee8618ae6ffe4 6528 dnsrecon_1.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dnsrecon"
   ],
   "Files": [
-    "a1bb2158f435d40b936efc4067751892 1960 dnsrecon_1.1.3-2.dsc 717e10983d92a8bef0353687d0dc0cbb 648660 dnsrecon_1.1.3.orig.tar.gz 144ae2fe6ff720835ab7c6d80b52bba3 6276 dnsrecon_1.1.3-2.debian.tar.xz"
+    "1d1d4b91506b86439b45da5a3a7ced31 2062 dnsrecon_1.1.5-1.dsc a201cc76e938412d7dd0b8d2c183cfb7 655071 dnsrecon_1.1.5.orig.tar.gz d089e7176a3b6ff12392405a4804b41c 6528 dnsrecon_1.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Marcos Fouces \u003cmarcos@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/pkg-security-team/dnsrecon.git"
   ],
   "Version": [
-    "1.1.3-2"
+    "1.1.5-1"
   ]
 }
