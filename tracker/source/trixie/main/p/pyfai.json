@@ -6,19 +6,22 @@
     "pyfai, python3-pyfai, python-pyfai-doc"
   ],
   "Build-Depends": [
-    "cython3, debhelper, debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, python3-all-dev, python3-fabio, python3-h5py, python3-matplotlib, python3-numexpr, python3-numpy, python3-pip, python3-pyopencl, python3-pyqt5, python3-scipy, python3-setuptools, python3-silx (\u003e= 0.10.1), python3-sphinx, python3-tk, xauth, xvfb"
+    "bitshuffle \u003c!nocheck\u003e, cython3, debhelper, debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, pybuild-plugin-pyproject, python-dev-is-python3, python3-all-dev, python3-fabio, python3-h5py, python3-hdf5plugin, python3-matplotlib, python3-mesonpy (\u003e= 0.11), python3-numexpr, python3-numpy, python3-pip, python3-pyopencl, python3-pyqt5, python3-scipy, python3-setuptools, python3-silx, python3-sphinx, python3-tk, xauth, xvfb"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, help2man, libjs-mathjax, pandoc, python3-nbsphinx, python3-sphinx-rtd-theme, python3-sphinxcontrib.programoutput"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, help2man \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, pandoc \u003c!nodoc\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinxcontrib.programoutput \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "7baea5f3be31af6cd90f9eb820cd941be213fbd2d549bdcc1fe96da10e29053f 2767 pyfai_0.21.3+dfsg1-4.dsc 0027636647938d9914958aa53c2330d4c32a8a52a692fd70eb05bfd9ee722bb4 31470444 pyfai_0.21.3+dfsg1.orig.tar.xz 5c91acc2f78e4dcb2389ab1cf1ea9ac84b3ec5429ec61cdabd946d17419ffcb6 33620 pyfai_0.21.3+dfsg1-4.debian.tar.xz"
+    "d21db8970178b3c79fdd4418b4504be635f15ac09a7863f633483b60dd587aa8 3115 pyfai_2023.5.0+dfsg1-9.dsc 9762a007352f2eb82364c71334c0a5e014304ac5830e349453d24c8bc323ef69 34695848 pyfai_2023.5.0+dfsg1.orig.tar.xz a485ad2dcac80c4e7227b823af10118e528823d796bc133fec028e503ee12212 33292 pyfai_2023.5.0+dfsg1-9.debian.tar.xz"
+  ],
+  "Dgit": [
+    "f8567e664bbd716301f97385226c4ff786df2a60 debian archive/debian/2023.5.0+dfsg1-9 https://git.dgit.debian.org/pyfai"
   ],
   "Directory": [
     "pool/main/p/pyfai"
   ],
   "Files": [
-    "6eeea7fc311460f5e74fd1d2eac5e1f9 2767 pyfai_0.21.3+dfsg1-4.dsc 091fc573e0dd58b6406e5da47eaf499c 31470444 pyfai_0.21.3+dfsg1.orig.tar.xz 3f6100639f1b5b4e906069d0ac6f5ea5 33620 pyfai_0.21.3+dfsg1-4.debian.tar.xz"
+    "0fd00a8e143ee4abac057c316901771c 3115 pyfai_2023.5.0+dfsg1-9.dsc cd48233e550230eef08d7e37a522ff65 34695848 pyfai_2023.5.0+dfsg1.orig.tar.xz 16b7cc25823238b7cd5e12f00ae3d0c3 33292 pyfai_2023.5.0+dfsg1-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-tk, xauth, xvfb"
+    "bitshuffle, pocl-opencl-icd, python3-all, python3-tk, xauth, xvfb"
   ],
   "Uploaders": [
     "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e, Jerome Kieffer \u003cjerome.kieffer@esrf.fr\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e,"
@@ -60,6 +63,6 @@
     "https://salsa.debian.org/science-team/pyfai.git"
   ],
   "Version": [
-    "0.21.3+dfsg1-4"
+    "2023.5.0+dfsg1-9"
   ]
 }
