@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "libmediastreamer12, libmediastreamer-dev, libmediastreamer-tools, libmediastreamer-data, libmediastreamer-doc"
+    "libmediastreamer13, libmediastreamer-dev, libmediastreamer-tools, libmediastreamer-data, libmediastreamer-doc, mediastreamer2-plugin-msqogl"
   ],
   "Build-Depends": [
     "cmake, debhelper-compat (= 13)"
   ],
   "Build-Depends-Arch": [
-    "libasound2-dev [linux-any], libavcodec-dev (\u003e= 6:10~), libavutil-dev (\u003e= 6:10~), libbcg729-dev (\u003e= 1.1.1~), libbcmatroska2-dev (\u003e= 5.1~), libbctoolbox-dev (\u003e= 5.1.64~), libbzrtp-dev (\u003e= 5.1.64~), libgles-dev, libglew-dev, libgsm1-dev, libmbedtls-dev, libopus-dev, libortp-dev (\u003e= 1:5.1.64~), libpcap-dev, libpulse-dev, libspandsp-dev, libspeex-dev, libspeexdsp-dev, libsqlite3-dev, libsrtp2-dev [!hurd-any !sparc], libswscale-dev (\u003e= 6:10~), libtheora-dev, libturbojpeg0-dev, libupnp-dev, libv4l-dev [linux-any], libvpx-dev, libx11-dev, libxext-dev, libxml2-dev, libxv-dev, libzxingcore-dev, mesa-common-dev, pkg-config, qtdeclarative5-dev, qtbase5-dev, xxd"
+    "libasound2-dev [linux-any], libavcodec-dev (\u003e= 6:10~), libavutil-dev (\u003e= 6:10~), libbcg729-dev (\u003e= 1.1.1~), libbcmatroska2-dev (\u003e= 5.1~), libbctoolbox-dev (\u003e= 5.2.0~), libbzrtp-dev (\u003e= 5.2.0~), libgles-dev, libglew-dev, libgsm1-dev, libmbedtls-dev, libopus-dev, libortp-dev (\u003e= 1:5.2.0~), libpcap-dev, libpulse-dev, libspandsp-dev, libspeex-dev, libspeexdsp-dev, libsqlite3-dev, libsrtp2-dev [!hurd-any !sparc], libswscale-dev (\u003e= 6:10~), libtheora-dev, libturbojpeg0-dev, libupnp-dev, libv4l-dev [linux-any], libvpx-dev, libx11-dev, libxext-dev, libxml2-dev, libxv-dev, libzxingcore-dev, mesa-common-dev, pkg-config, qtdeclarative5-dev, qtbase5-dev, xxd"
   ],
   "Build-Depends-Indep": [
     "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "2829eaa3fd13dfd9b6852fd2152a8c09e240d0660284afe5f4db9cddf20bdd8a 3344 mediastreamer2_5.1.64+dfsg-3.dsc 7777fc89a064085953f3b0022f8730735817b8525f30668a22f1da5eb3217692 3686911 mediastreamer2_5.1.64+dfsg.orig.tar.gz 4adb84dcb4798cb4d79bba41842b64ed4ed0e0549b9ffd5e1c0abfd1fdc178b6 19528 mediastreamer2_5.1.64+dfsg-3.debian.tar.xz"
+    "f040620173ff38211ad95f81ca089a03bb4b7b0290b92175ccd6cd4a87d16adc 3421 mediastreamer2_5.2.0+dfsg-3.dsc 91e8f6cc08a1c8cdf54007d5a47d1324fcd4fc2fa9de4cfcea92dffdac1a74d8 3687023 mediastreamer2_5.2.0+dfsg.orig.tar.gz 40b9ad5b5bbe27eeaf176936b340342530d432479b17117b8e1da25acd9f550c 28312 mediastreamer2_5.2.0+dfsg-3.debian.tar.xz"
   ],
   "Description": [
     "Multimedia streaming engine for telephony"
@@ -24,7 +24,7 @@
     "pool/main/m/mediastreamer2"
   ],
   "Files": [
-    "0851fdd4b96fa099332266bafc4c02db 3344 mediastreamer2_5.1.64+dfsg-3.dsc 0316fa78cd558cf25082f8c4da7c74b2 3686911 mediastreamer2_5.1.64+dfsg.orig.tar.gz 3327be44d225159f2baa1302d2b35593 19528 mediastreamer2_5.1.64+dfsg-3.debian.tar.xz"
+    "9ddcb37dc4317517be71206a0e821a9a 3421 mediastreamer2_5.2.0+dfsg-3.dsc ddbd6bbe9ab0dfe38ef0258e2694a0ee 3687023 mediastreamer2_5.2.0+dfsg.orig.tar.gz a5cc617bee18b53165b0830795a8fd74 28312 mediastreamer2_5.2.0+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,7 @@
     "mediastreamer2"
   ],
   "Package-List": [
-    "libmediastreamer-data deb libs optional arch=all libmediastreamer-dev deb libdevel optional arch=any libmediastreamer-doc deb doc optional arch=all profile=!nodoc libmediastreamer-tools deb libs optional arch=any libmediastreamer12 deb libs optional arch=any"
+    "libmediastreamer-data deb libs optional arch=all libmediastreamer-dev deb libdevel optional arch=any libmediastreamer-doc deb doc optional arch=all profile=!nodoc libmediastreamer-tools deb libs optional arch=any libmediastreamer13 deb libs optional arch=any mediastreamer2-plugin-msqogl deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -48,7 +48,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Uploaders": [
     "Kilian Krause \u003ckilian@debian.org\u003e, Tzafrir Cohen \u003ctzafrir@debian.org\u003e, Felix Lechner \u003cfelix.lechner@gmail.com\u003e, Bernhard Schmidt \u003cberni@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/pkg-voip-team/linphone-stack/mediastreamer2.git"
   ],
   "Version": [
-    "1:5.1.64+dfsg-3"
+    "1:5.2.0+dfsg-3"
   ]
 }
