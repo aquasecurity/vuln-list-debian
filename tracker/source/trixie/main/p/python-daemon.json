@@ -3,28 +3,28 @@
     "all"
   ],
   "Binary": [
-    "python3-daemon"
+    "python3-daemon, python-daemon-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "pybuild-plugin-pyproject, python3-setuptools, debhelper-compat (= 13)"
   ],
   "Build-Depends-Indep": [
     "python3-docutils, python3-testtools, python3-testscenarios (\u003e= 0.4), python3-lockfile, python3-all, twine, dh-python"
   ],
   "Checksums-Sha256": [
-    "59cbd2b6a451381ec8eca1fe94924ca051bd557d79f0db9cec27ea3775e7ceaa 2112 python-daemon_2.3.2-1.dsc 3deeb808e72b6b89f98611889e11cc33754f5b2c1517ecfa1aaf25f402051fb5 83127 python-daemon_2.3.2.orig.tar.gz da2fa108ce3f08f036e9f6709cac5d49ed4b6f2abad25a2d9a7b20b2d240e60c 31860 python-daemon_2.3.2-1.debian.tar.xz"
+    "a6dba1eaec791505102ac8f4901782edcf55d83e3b24702f35ac597031a1b2f2 2249 python-daemon_3.0.1-1.1.dsc 6c57452372f7eaff40934a1c03ad1826bf5e793558e87fef49131e6464b4dae5 81337 python-daemon_3.0.1.orig.tar.gz 783ea8c2652358ef439b6ff390911e10546d9a3d824f77fccbbbc2e1458ff621 31484 python-daemon_3.0.1-1.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-daemon"
   ],
   "Files": [
-    "bec1816426bc7da7e487bc32a99d873b 2112 python-daemon_2.3.2-1.dsc b7397fe73d516dc14921500a1245b41c 83127 python-daemon_2.3.2.orig.tar.gz 98397325d26f344af3c1ad2f4ef517ee 31860 python-daemon_2.3.2-1.debian.tar.xz"
+    "0cb60b38614dd38eeecbd8156d5db2c1 2249 python-daemon_3.0.1-1.1.dsc 4c369b8c6d3de956d8f9dfb2c872c284 81337 python-daemon_3.0.1.orig.tar.gz 8bedeee5ca2a5e8b5c6b7b5e2dee315e 31484 python-daemon_3.0.1-1.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://pypi.python.org/pypi/python-daemon/"
+    "https://pagure.io/python-daemon/"
   ],
   "Maintainer": [
     "Ben Finney \u003cbignose@debian.org\u003e"
@@ -33,7 +33,7 @@
     "python-daemon"
   ],
   "Package-List": [
-    "python3-daemon deb python optional arch=all"
+    "python-daemon-doc deb doc optional arch=all python3-daemon deb python optional arch=all"
   ],
   "Priority": [
     "source"
@@ -42,13 +42,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pkg-resources"
+    "python3-all, python3-package-smoke-test"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/pkg-python-daemon/"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/pkg-python-daemon.git"
   ],
   "Version": [
-    "2.3.2-1"
+    "3.0.1-1.1"
   ]
 }
