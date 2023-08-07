@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libqt6remoteobjects6, libqt6remoteobjectsqml6, libqt6remoteobjects6-bin, qml6-module-qtremoteobjects, qt6-remoteobjects-dev"
+    "libqt6remoteobjects6, libqt6remoteobjectsqml6, libqt6remoteobjects6-bin, qml6-module-qtremoteobjects, qt6-remoteobjects-dev, qt6-remoteobjects-doc, qt6-remoteobjects-doc-html, qt6-remoteobjects-doc-dev, qt6-remoteobjects-examples"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.24~), debhelper-compat (= 13), libgl-dev, libqt6opengl6-dev (\u003e= 6.4.2+dfsg~), libssl-dev, libvulkan-dev [linux-any], ninja-build, pkg-config, pkg-kde-tools, qml6-module-qtquick (\u003e= 6.4.2+dfsg~), qml6-module-qttest (\u003e= 6.4.2+dfsg~), qt6-base-dev (\u003e= 6.4.2+dfsg~), qt6-base-private-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-private-dev (\u003e= 6.4.2+dfsg~), qt6-remoteobjects-dev:native \u003ccross\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "cmake (\u003e= 3.24~), debhelper-compat (= 13), libgl-dev, libssl-dev, libvulkan-dev [linux-any], ninja-build, pkg-config, pkg-kde-tools, qml6-module-qtquick (\u003e= 6.4.2+dfsg~), qml6-module-qttest (\u003e= 6.4.2+dfsg~), qt6-base-dev (\u003e= 6.4.2+dfsg~), qt6-base-private-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-dev (\u003e= 6.4.2+dfsg~), qt6-declarative-private-dev (\u003e= 6.4.2+dfsg~), qt6-remoteobjects-dev:native \u003ccross\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "qt6-base-dev (\u003e= 6.4~) \u003c!nodoc\u003e, qt6-documentation-tools (\u003e= 6.4~) \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "1df23755587fc348a973fccfc3ddc5245a80721a2baa2b019c0ae20ae5266835 2838 qt6-remoteobjects_6.4.2-3.dsc 583c53640020d5d068eef7ae180d750120bb49e30249c2febdd173c5a7428812 365884 qt6-remoteobjects_6.4.2.orig.tar.xz 8bc7af75421ad0f5f4916a0441b0ee8cae8857ffe322828f3b177836ddae726c 8492 qt6-remoteobjects_6.4.2-3.debian.tar.xz"
+    "90d48110247c81a6bd77f10f5654bd374ba86836a2822f046422213e7fd3ee2e 3226 qt6-remoteobjects_6.4.2-5.dsc 583c53640020d5d068eef7ae180d750120bb49e30249c2febdd173c5a7428812 365884 qt6-remoteobjects_6.4.2.orig.tar.xz fb9177cb59ccb1f3a9bf7c2b78be9c9ed100c1c5cf7b4448ba7fa85ef87e1428 9264 qt6-remoteobjects_6.4.2-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qt6-remoteobjects"
   ],
   "Files": [
-    "f9cec2ae7719afda004dd21a68504164 2838 qt6-remoteobjects_6.4.2-3.dsc 6c42fd1243ef9ba1f9f1c6fe8d47c228 365884 qt6-remoteobjects_6.4.2.orig.tar.xz 89441335b173de117f26ad2a6a0f3623 8492 qt6-remoteobjects_6.4.2-3.debian.tar.xz"
+    "e54b0472a040beb8cd9ef3d58a9842db 3226 qt6-remoteobjects_6.4.2-5.dsc 6c42fd1243ef9ba1f9f1c6fe8d47c228 365884 qt6-remoteobjects_6.4.2.orig.tar.xz 7a67ec1452a88df6ec636eb377799242 9264 qt6-remoteobjects_6.4.2-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "qt6-remoteobjects"
   ],
   "Package-List": [
-    "libqt6remoteobjects6 deb libs optional arch=any libqt6remoteobjects6-bin deb utils optional arch=any libqt6remoteobjectsqml6 deb libs optional arch=any qml6-module-qtremoteobjects deb libs optional arch=any qt6-remoteobjects-dev deb libdevel optional arch=any"
+    "libqt6remoteobjects6 deb libs optional arch=any libqt6remoteobjects6-bin deb utils optional arch=any libqt6remoteobjectsqml6 deb libs optional arch=any qml6-module-qtremoteobjects deb libs optional arch=any qt6-remoteobjects-dev deb libdevel optional arch=any qt6-remoteobjects-doc deb doc optional arch=all qt6-remoteobjects-doc-dev deb libdevel optional arch=all qt6-remoteobjects-doc-html deb doc optional arch=all qt6-remoteobjects-examples deb misc optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,7 +45,7 @@
     "4.6.2"
   ],
   "Uploaders": [
-    "Patrick Franz \u003cdeltaone@debian.org\u003e, Lu YaNing \u003cdluyaning@gmail.com\u003e"
+    "Patrick Franz \u003cdeltaone@debian.org\u003e, Lu YaNing \u003cdluyaning@gmail.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/qt-kde-team/qt6/qt6-remoteobjects"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/qt-kde-team/qt6/qt6-remoteobjects.git"
   ],
   "Version": [
-    "6.4.2-3"
+    "6.4.2-5"
   ]
 }
