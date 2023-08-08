@@ -3,19 +3,22 @@
     "linux-any"
   ],
   "Binary": [
-    "sysprof, libsysprof-4, libsysprof-ui-5, libsysprof-4-dev"
+    "sysprof, libsysprof-4, libsysprof-ui-5, libsysprof-capture-4-dev, libsysprof-4-dev, libsysprof-ui-5-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), binutils-dev (\u003e= 2.17), bzip2, desktop-file-utils, dh-exec, dh-sequence-gnome, itstool, libadwaita-1-dev \u003c!pkg.sysprof.nogui\u003e, libcairo2-dev, libglib2.0-dev (\u003e= 2.73.0), libgtk-4-dev (\u003e= 4.6) \u003c!pkg.sysprof.nogui\u003e, libjson-glib-dev, libpolkit-agent-1-dev (\u003e= 0.105), libpolkit-gobject-1-dev (\u003e= 0.105), libsystemd-dev, libunwind-dev [!s390x !alpha !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !riscv64 !sparc64 !x32], libxml2-utils, meson (\u003e= 0.59.0), polkitd"
+    "debhelper-compat (= 13), binutils-dev, bzip2, desktop-file-utils, dh-sequence-gnome, itstool, libadwaita-1-dev [!riscv64] \u003c!pkg.sysprof.nogui\u003e, libcairo2-dev, libglib2.0-dev (\u003e= 2.73.0), libgtk-4-dev (\u003e= 4.6) [!riscv64] \u003c!pkg.sysprof.nogui\u003e, libjson-glib-dev, libpolkit-agent-1-dev, libpolkit-gobject-1-dev, libsystemd-dev, libunwind-dev (\u003e= 1) [!s390x !alpha !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !riscv64 !sparc64 !x32], libxml2-utils, meson (\u003e= 0.59.0), polkitd"
   ],
   "Checksums-Sha256": [
-    "becfcca434ac35a12e60e8499d34271d6f97d565ad165909eb23759a86e0da60 2890 sysprof_3.48.0-2.dsc 07d9081a66cf2fb52753f48ff2b85ada75c60ff1bc1af1bd14d8aeb627972168 533092 sysprof_3.48.0.orig.tar.xz 6ca95331dad0c04a49f65b660bb9618a328b1c36df8988308b3f74d6ad9e8a62 13656 sysprof_3.48.0-2.debian.tar.xz"
+    "7db72d187b2bd0888d38cc53681ae0d9f066a2631e5d5cf86e614e097229ddcb 3167 sysprof_3.48.0-4.dsc 07d9081a66cf2fb52753f48ff2b85ada75c60ff1bc1af1bd14d8aeb627972168 533092 sysprof_3.48.0.orig.tar.xz 4806bfd09e2e8212f5a3630d012e5b5b61f51290b008446776db507369cfac61 15188 sysprof_3.48.0-4.debian.tar.xz"
+  ],
+  "Dgit": [
+    "85c836c10e486114cdee7dc0e5d692bd993bd57b debian archive/debian/3.48.0-4 https://git.dgit.debian.org/sysprof"
   ],
   "Directory": [
     "pool/main/s/sysprof"
   ],
   "Files": [
-    "e1f2877a7c4c4da1e8ce3bef3feb1949 2890 sysprof_3.48.0-2.dsc ee1556063c7b8d9abd414f451b04c33a 533092 sysprof_3.48.0.orig.tar.xz 9456965f09271f2c821a6009f9fe43a9 13656 sysprof_3.48.0-2.debian.tar.xz"
+    "afa0e0d625541087a07492815df030cc 3167 sysprof_3.48.0-4.dsc ee1556063c7b8d9abd414f451b04c33a 533092 sysprof_3.48.0.orig.tar.xz 385d83e29ed11947450a559f3bff742c 15188 sysprof_3.48.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "sysprof"
   ],
   "Package-List": [
-    "libsysprof-4 deb libs optional arch=linux-any libsysprof-4-dev deb libdevel optional arch=linux-any libsysprof-ui-5 deb libs optional arch=linux-any profile=!pkg.sysprof.nogui sysprof deb devel optional arch=linux-any"
+    "libsysprof-4 deb libs optional arch=linux-any libsysprof-4-dev deb libdevel optional arch=linux-any libsysprof-capture-4-dev deb libdevel optional arch=linux-any libsysprof-ui-5 deb libs optional arch=linux-any profile=!pkg.sysprof.nogui libsysprof-ui-5-dev deb libdevel optional arch=linux-any profile=!pkg.sysprof.nogui sysprof deb devel optional arch=linux-any profile=!pkg.sysprof.nogui"
   ],
   "Priority": [
     "source"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, libsysprof-capture-4-dev, libsysprof-ui-5-dev, pkg-config"
+    "build-essential, pkg-config"
   ],
   "Uploaders": [
     "Ritesh Raj Sarraf \u003crrs@debian.org\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e, Marco Trevisan (Treviño) \u003cmarco@ubuntu.com\u003e, Michael Biebl \u003cbiebl@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/sysprof.git"
   ],
   "Version": [
-    "3.48.0-2"
+    "3.48.0-4"
   ]
 }
