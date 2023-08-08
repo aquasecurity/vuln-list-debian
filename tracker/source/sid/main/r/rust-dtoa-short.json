@@ -6,16 +6,16 @@
     "librust-dtoa-short-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 8), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dtoa-0.4+default-dev (\u003e= 0.4.1~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dtoa-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5a15257526577d7a0986879e5c8eee953defbe7ff63e5c56f3f6de1402c8b05b 2118 rust-dtoa-short_0.3.2-1.dsc 59020b8513b76630c49d918c33db9f4c91638e7d3404a28084083b87e33f76f2 8074 rust-dtoa-short_0.3.2.orig.tar.gz c4bb07449cb6fa46a27bdd057cfc720758fa15fd72877455c4bd9f35bc7b5b7c 1712 rust-dtoa-short_0.3.2-1.debian.tar.xz"
+    "e87cba855b264141fd7e0bcab3aa5b85cef4d50c3ee527ad90f17b1d91bdea13 2221 rust-dtoa-short_0.3.4-1.dsc dbaceec3c6e4211c79e7b1800fb9680527106beb2f9c51904a3210c03a448c74 8276 rust-dtoa-short_0.3.4.orig.tar.gz 42d98bc855eada0f2c86b2ba4e7497fb924bd028ee201b0614175c99275a4186 2200 rust-dtoa-short_0.3.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dtoa-short"
   ],
   "Files": [
-    "92bdc062198c8d44547687a67367f381 2118 rust-dtoa-short_0.3.2-1.dsc 47af2ffd513f2b4e88748cc99e4223fc 8074 rust-dtoa-short_0.3.2.orig.tar.gz dd22eb3057b1e83e7a545a3ec6302478 1712 rust-dtoa-short_0.3.2-1.debian.tar.xz"
+    "72c82a9f950fe67e2e4273fb8920fc20 2221 rust-dtoa-short_0.3.4-1.dsc a057f06b8b62792bcfc17bf71e45b730 8276 rust-dtoa-short_0.3.4.orig.tar.gz 6eb29d6e46f29a67493e4ffa3a5268ca 2200 rust-dtoa-short_0.3.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-float-cmp-0.9+default-dev"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dtoa-short]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.4-1"
   ]
 }
