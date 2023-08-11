@@ -6,16 +6,16 @@
     "librust-futf-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 8), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-mac-0.1+default-dev \u003c!nocheck\u003e, librust-new-debug-unreachable-1+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-mac-0.1+default-dev \u003c!nocheck\u003e, librust-new-debug-unreachable-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9304b97467e3e37b5e7d30aaa659badae03706094b705002e37139de922f09cc 2097 rust-futf_0.1.4-1.dsc 7c9c1ce3fa9336301af935ab852c437817d14cd33690446569392e65170aac3b 11341 rust-futf_0.1.4.orig.tar.gz 90c214d71048ee6d455e47adc8b566472e62697ac19c308138e7c791dd6a1e9d 2356 rust-futf_0.1.4-1.debian.tar.xz"
+    "f2cf9386fe6c320d63c323ef1af6d434d1df17337a0cca911314e97ac477f670 2194 rust-futf_0.1.5-1.dsc df420e2e84819663797d1ec6544b13c5be84629e7bb00dc960d6917db2987843 11344 rust-futf_0.1.5.orig.tar.gz b99434596d9069efee43b74feb30048b932b47d2fda1c42fbba1594c48d454c9 3340 rust-futf_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-futf"
   ],
   "Files": [
-    "bde9f8a10ea6b0a3ced9de9756433d81 2097 rust-futf_0.1.4-1.dsc 97a2637a0640d4d651a8d35b25adde70 11341 rust-futf_0.1.4.orig.tar.gz 4cd0c79b44c4af547c9737eefd938197 2356 rust-futf_0.1.4-1.debian.tar.xz"
+    "5ad1871737df6c14ea6d8decac355d8f 2194 rust-futf_0.1.5-1.dsc b0aae97e900fcbe7fd48703d1ff16af4 11344 rust-futf_0.1.5.orig.tar.gz 3a36530f7add4c5df62bba6c5b560c94 3340 rust-futf_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/futf]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.1.5-1"
   ]
 }
