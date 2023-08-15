@@ -6,16 +6,19 @@
     "python3-pycoast, python-pycoast-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, fonts-dejavu-core, pybuild-plugin-pyproject, python3-all, python3-aggdraw, python3-numpy, python3-pil, python3-pyproj, python3-pyresample, python3-pyshp, python3-pytest, python3-setuptools, python3-sphinx, python3-sphinxcontrib.apidoc, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-python, fonts-dejavu-core, pybuild-plugin-pyproject, python3-all, python3-aggdraw, python3-numpy, python3-pil, python3-pyproj, python3-pyresample, python3-pyshp, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.apidoc \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-versioneer"
   ],
   "Checksums-Sha256": [
-    "74e8d902e44c313bb78fd1c9b8d831af0e1c2b9431f78e4bc609264e00f8b860 2446 pycoast_1.6.1+dfsg-3.dsc d6afdefafc923a980f7fd266f844a739b7f4ef72027afcbe49f51aae40820c03 10159012 pycoast_1.6.1+dfsg.orig.tar.xz 51754a8ea21b4eedf1cdc8602966747c51b28b1a98c5bd1f77a4155e0672696b 9008 pycoast_1.6.1+dfsg-3.debian.tar.xz"
+    "c113b5d416087347a59fbcf56d8ac12484ef138d30b6027f0428b960a61e305e 2730 pycoast_1.6.1+dfsg-4.dsc d6afdefafc923a980f7fd266f844a739b7f4ef72027afcbe49f51aae40820c03 10159012 pycoast_1.6.1+dfsg.orig.tar.xz 8eb0d49458d35cb502fa48166687c1eadf54613401133c293e37f49b40db8a69 8976 pycoast_1.6.1+dfsg-4.debian.tar.xz"
+  ],
+  "Description": [
+    "Draw coastlines, borders and rivers on images (for Python 3) Pycoast is a Python package to add coastlines, borders and rivers to raster images using data from the GSHHG (previously known as GSHHS) and WDBII datasets. . This package is part of the PyTroll toolset."
   ],
   "Directory": [
     "pool/main/p/pycoast"
   ],
   "Files": [
-    "ae52afe5f34e9062746b3286256ee1c5 2446 pycoast_1.6.1+dfsg-3.dsc 6a401f3c60633032ade8ffbb03630721 10159012 pycoast_1.6.1+dfsg.orig.tar.xz c7b939714c83191d98299f90e15f7a95 9008 pycoast_1.6.1+dfsg-3.debian.tar.xz"
+    "8b4182bc46affb9f4bd6f12789544c7c 2730 pycoast_1.6.1+dfsg-4.dsc 6a401f3c60633032ade8ffbb03630721 10159012 pycoast_1.6.1+dfsg.orig.tar.xz f56ae7d6677acd11261a95afa795ab63 8976 pycoast_1.6.1+dfsg-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/pycoast.git"
   ],
   "Version": [
-    "1.6.1+dfsg-3"
+    "1.6.1+dfsg-4"
   ]
 }
