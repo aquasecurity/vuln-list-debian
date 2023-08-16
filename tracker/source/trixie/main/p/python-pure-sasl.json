@@ -9,16 +9,16 @@
     "debhelper-compat (= 10), dh-python, openstack-pkg-tools (\u003e= 98~), python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-kerberos, python3-mock, python3-nose"
+    "python3-kerberos, python3-mock, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "09a309f77eba39b9c429ef5adde254a2b26fd6bff157d740358114f22c4d64ab 2187 python-pure-sasl_0.5.1+dfsg1-2.dsc 74036813e45ad0811e7e8c909f57c3caeea04a7ffcce6d94c7dfa732b3f41c17 13752 python-pure-sasl_0.5.1+dfsg1.orig.tar.xz b7954e553caba8dc7892026e89b71a2f65fc1b5570bed6751654c089f7c1459f 2636 python-pure-sasl_0.5.1+dfsg1-2.debian.tar.xz"
+    "3e2b1048581fa2c1bf060e8ff2ad1569f6f839b5d1f700da9efc4895f8d853a8 2244 python-pure-sasl_0.5.1+dfsg1-3.dsc 74036813e45ad0811e7e8c909f57c3caeea04a7ffcce6d94c7dfa732b3f41c17 13752 python-pure-sasl_0.5.1+dfsg1.orig.tar.xz 80be8b33a29d586aabec6649c701393fd0f41f12a35bfbbb29f7af75f543169c 2904 python-pure-sasl_0.5.1+dfsg1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-pure-sasl"
   ],
   "Files": [
-    "41ffbe8b7300d438fca5e0567ab744f3 2187 python-pure-sasl_0.5.1+dfsg1-2.dsc b5e5e172b973a13f885424fa799c630d 13752 python-pure-sasl_0.5.1+dfsg1.orig.tar.xz 0583cdf4bcd473cd12ea4ab553784952 2636 python-pure-sasl_0.5.1+dfsg1-2.debian.tar.xz"
+    "fb2fb376c7e8004762a49125033c88ff 2244 python-pure-sasl_0.5.1+dfsg1-3.dsc b5e5e172b973a13f885424fa799c630d 13752 python-pure-sasl_0.5.1+dfsg1.orig.tar.xz d6ec81443b61b03d90cb66d40b30f659 2904 python-pure-sasl_0.5.1+dfsg1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.3.0"
+    "4.4.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-pure-sasl.git"
   ],
   "Version": [
-    "0.5.1+dfsg1-2"
+    "0.5.1+dfsg1-3"
   ]
 }
