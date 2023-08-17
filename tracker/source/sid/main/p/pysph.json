@@ -6,16 +6,19 @@
     "python3-pysph, pysph-viewer, pysph-doc"
   ],
   "Build-Depends": [
-    "cython3, debhelper-compat (= 12), dh-python, libjs-mathjax, libtrilinos-zoltan-dev, mayavi2, mpi-default-dev, python3-all-dev, python3-beaker, python3-compyle, python3-cyarray, python3-h5py, python3-mako (\u003e= 1.1.0), python3-mpi4py, python3-numpy, python3-pyopencl, python3-pyside2.qtwidgets, python3-pytest, python3-pytest-runner, python3-pytools, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-stl, python3-traits, python3-pyzoltan"
+    "cython3, debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc, libjs-mathjax, libtrilinos-zoltan-dev, mayavi2, mpi-default-dev, python3-all-dev, python3-beaker, python3-compyle, python3-cyarray, python3-h5py, python3-mako (\u003e= 1.1.0), python3-mpi4py, python3-numpy, python3-pyopencl, python3-pyside2.qtwidgets, python3-pytest \u003c!nocheck\u003e, python3-pytest-runner \u003c!nocheck\u003e, python3-pytools, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-stl, python3-traits, python3-pyzoltan"
   ],
   "Checksums-Sha256": [
-    "2cd0bef3668d76ad4d97693b624f43316eb4490d22a02c6756a3f944e51bc20f 2570 pysph_1.0~b1-5.dsc 8c6ac3f0f62aa428d4b8157396772317ec44f282e89ce03ed2b919684613160d 3081320 pysph_1.0~b1.orig.tar.gz f84f97c85af3ddcabc0c50292e0335fc0ef123972e64c916f7e7cd37e0bdc9e9 12968 pysph_1.0~b1-5.debian.tar.xz"
+    "d03eabc3bf02fd96c50c36f6025305ab20438b5f7b0f0e2f56017249987c970a 3129 pysph_1.0~b1-6.dsc 8c6ac3f0f62aa428d4b8157396772317ec44f282e89ce03ed2b919684613160d 3081320 pysph_1.0~b1.orig.tar.gz f2ed1fa3f0ca944e415190254279b90350fac733f4e35502ff295fa922df14a6 13516 pysph_1.0~b1-6.debian.tar.xz"
+  ],
+  "Description": [
+    "Open-source framework for Smoothed Particle Hydrodynamics It is implemented in Python and the performance critical parts are implemented in Cython. . PySPH is implemented in a way that allows a user to specify the entire SPH simulation in pure Python. High-performance code is generated from this high-level Python code, compiled on the fly and executed. PySPH also features optional automatic parallelization using mpi4py and Zoltan."
   ],
   "Directory": [
     "pool/main/p/pysph"
   ],
   "Files": [
-    "50a89e7715037bbe98e05c0ebb4a73a3 2570 pysph_1.0~b1-5.dsc 05441d54ad4b2476a1a136615ba7afc9 3081320 pysph_1.0~b1.orig.tar.gz 95314051b0246b188b25614362efdbc6 12968 pysph_1.0~b1-5.debian.tar.xz"
+    "4d469547a3e464fb3a82b4461ceca5c3 3129 pysph_1.0~b1-6.dsc 05441d54ad4b2476a1a136615ba7afc9 3081320 pysph_1.0~b1.orig.tar.gz 29eb4a9e7d4dd4db1b5aa0041554c403 13516 pysph_1.0~b1-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/science-team/pysph.git"
   ],
   "Version": [
-    "1.0~b1-5"
+    "1.0~b1-6"
   ]
 }
