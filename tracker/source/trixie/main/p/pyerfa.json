@@ -6,16 +6,16 @@
     "python3-erfa"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, graphviz, liberfa-dev, python3-all-dev, python3-numpy, python3-packaging, python3-pytest, python3-pytest-doctestplus, python3-setuptools, python3-setuptools-scm, python3-sphinx, python3-sphinx-astropy"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc, graphviz, liberfa-dev, pybuild-plugin-pyproject, python3-all-dev, python3-numpy, python3-packaging, python3-pytest \u003c!nocheck\u003e, python3-pytest-doctestplus \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-astropy \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "d0e1709b3c0836bbcf94ba9cbec8a1f7102633b4101ef76d75a19d354811c660 2324 pyerfa_2.0.0.3+ds-1.dsc 71162f253781edded33274cfd2d840afdd972a031bcbd451a3aa80766160d558 151032 pyerfa_2.0.0.3+ds.orig.tar.xz 2dc1c5129ba1e8d425e76ec2043a6a46d3a625873fd58f250c15cfe2abd070e5 4948 pyerfa_2.0.0.3+ds-1.debian.tar.xz"
+    "49d7e4370802a92c6a20d13bbe2d9d105a3dea8607cf402a781983f96b67e29d 2394 pyerfa_2.0.0.3+ds-2.dsc 71162f253781edded33274cfd2d840afdd972a031bcbd451a3aa80766160d558 151032 pyerfa_2.0.0.3+ds.orig.tar.xz 39f2f814a441c12a938ff080e70181ea8be89103a3b5ec84487a2ba2b629146d 4872 pyerfa_2.0.0.3+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyerfa"
   ],
   "Files": [
-    "2b830a89d72470c85a34a7886aa56b9f 2324 pyerfa_2.0.0.3+ds-1.dsc f42921f116f340e628a65d1fa2476d75 151032 pyerfa_2.0.0.3+ds.orig.tar.xz 2b77f030fdd05ff944b2edd196f3ff33 4948 pyerfa_2.0.0.3+ds-1.debian.tar.xz"
+    "3459f1d32ecaf609558680f4a80989a2 2394 pyerfa_2.0.0.3+ds-2.dsc f42921f116f340e628a65d1fa2476d75 151032 pyerfa_2.0.0.3+ds.orig.tar.xz e2c37099d03611959b97bb04589b1634 4872 pyerfa_2.0.0.3+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/debian-astro-team/pyerfa.git"
   ],
   "Version": [
-    "2.0.0.3+ds-1"
+    "2.0.0.3+ds-2"
   ]
 }

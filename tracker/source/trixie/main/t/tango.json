@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "liblog4tango5v5, liblog4tango-dev, liblog4tango-doc, libtango9, libtango-dev, libtango-doc, libtango-tools, tango-common, tango-db, tango-starter, tango-accesscontrol, tango-test"
+    "libtango9-4, libtango-dev, libtango-doc, libtango-tools, tango-common, tango-db, tango-starter, tango-accesscontrol, tango-test"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), default-libmysqlclient-dev, libcos4-dev, cppzmq-dev, omniidl, po-debconf"
+    "debhelper-compat (= 13), cmake, default-libmysqlclient-dev, libcos4-dev, libjpeg-dev, cppzmq-dev, omniidl, po-debconf"
   ],
   "Build-Depends-Indep": [
     "doxygen, python3-ipython, python3-sphinx, python3-sphinx-rtd-theme"
   ],
   "Checksums-Sha256": [
-    "01df6f4c03cb27b277906dabb0104c71647cf63317de6abd8f3eec12e1a839be 2787 tango_9.3.4+dfsg1-2.dsc 8d66ca336259ee716559f86bc3e11476ee6f4dd3ef2653a2c6402537f9f3b7a8 60354476 tango_9.3.4+dfsg1.orig.tar.xz 6e4d3afd443cd1e1cdadccefa83714267b7634b648e6a5d2ee8a474c85c0cefe 30072 tango_9.3.4+dfsg1-2.debian.tar.xz"
+    "c236104ef3f0ce381415b2b549c3680e0de77edd3c6ebb49c84db528c4667f9d 2045 tango_9.4.2+dfsg1-1.dsc e643fd6f04f214b6080b4d8e16cd0beb0147a969a0531589be327d3c4f7204db 54912764 tango_9.4.2+dfsg1.orig.tar.xz 893a5af427e53fcab97c6a04fed1ef7d2d0693fdd100b6bfb5685d45c8f6538e 32916 tango_9.4.2+dfsg1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tango"
   ],
   "Files": [
-    "5d66d2c3c13daf60e8c19cb553e2fd40 2787 tango_9.3.4+dfsg1-2.dsc a485e4779e966c70ccfe76a215497d33 60354476 tango_9.3.4+dfsg1.orig.tar.xz 1aae8136153061bec01f7456957ecfc9 30072 tango_9.3.4+dfsg1-2.debian.tar.xz"
+    "baa3c607962e8a4fa4001a1e46bcca31 2045 tango_9.4.2+dfsg1-1.dsc aa6a57bccec5f6bc937b4aea9a74f580 54912764 tango_9.4.2+dfsg1.orig.tar.xz 5ee1da8da06e297ddea3615d451d241a 32916 tango_9.4.2+dfsg1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "tango"
   ],
   "Package-List": [
-    "liblog4tango-dev deb libdevel optional arch=any liblog4tango-doc deb doc optional arch=all liblog4tango5v5 deb libs optional arch=any libtango-dev deb libdevel optional arch=any libtango-doc deb doc optional arch=all libtango-tools deb net optional arch=any libtango9 deb libs optional arch=any tango-accesscontrol deb net optional arch=any tango-common deb net optional arch=all tango-db deb net optional arch=any tango-starter deb net optional arch=any tango-test deb net optional arch=any"
+    "libtango-dev deb libdevel optional arch=any libtango-doc deb doc optional arch=all libtango-tools deb net optional arch=any libtango9-4 deb libs optional arch=any tango-accesscontrol deb net optional arch=any tango-common deb net optional arch=all tango-db deb net optional arch=any tango-starter deb net optional arch=any tango-test deb net optional arch=any"
   ],
   "Priority": [
     "source"
@@ -42,7 +42,13 @@
     "science"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "mariadb-server"
   ],
   "Uploaders": [
     "Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/science-team/tango.git"
   ],
   "Version": [
-    "9.3.4+dfsg1-2"
+    "9.4.2+dfsg1-1"
   ]
 }
