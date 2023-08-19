@@ -6,16 +6,16 @@
     "python3-satpy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libjs-jquery-datatables, libjs-mathjax, pybuild-plugin-pyproject, python3-all, python3-appdirs, python3-astropy, python3-behave, python3-bottleneck, python3-bs4, python3-cloudpickle, python3-dask, python3-defusedxml, python3-distributed, python3-donfig, python3-eccodes, python3-ephem, python3-fsspec, python3-geotiepoints (\u003e= 1.6), python3-glymur, python3-grib, python3-h5netcdf, python3-h5py, python3-hdf4, python3-imageio, python3-netcdf4, python3-numpy, python3-packaging, python3-pil, python3-pint, python3-pooch, python3-pygac, python3-pycoast, python3-pydecorate, python3-pykdtree, python3-pyninjotiff, python3-pyorbital (\u003e= 1.7.3), python3-pyproj, python3-pyresample (\u003e= 1.24.0), python3-pyspectral, python3-pytest, python3-pytest-lazy-fixture, python3-rasterio, python3-requests, python3-rioxarray, python3-scipy, python3-setuptools, python3-skyfield, python3-sphinx, python3-sphinx-rtd-theme, python3-sphinxcontrib.apidoc, python3-tables, python3-tornado, python3-trollimage, python3-trollsched, python3-trollsift, python3-xarray, python3-yaml, python3-zarr"
+    "debhelper-compat (= 13), dh-python, libjs-jquery-datatables \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-appdirs, python3-astropy, python3-behave \u003c!nocheck\u003e, python3-bottleneck, python3-bs4, python3-cloudpickle, python3-dask, python3-defusedxml, python3-distributed, python3-donfig, python3-eccodes, python3-ephem, python3-fsspec, python3-geotiepoints (\u003e= 1.6), python3-glymur, python3-grib, python3-h5netcdf, python3-h5py, python3-hdf4, python3-imageio, python3-netcdf4, python3-numpy, python3-packaging, python3-pil, python3-pint, python3-pooch, python3-pygac, python3-pycoast, python3-pydecorate, python3-pykdtree, python3-pyninjotiff, python3-pyorbital (\u003e= 1.7.3), python3-pyproj, python3-pyresample (\u003e= 1.24.0), python3-pyspectral, python3-pytest \u003c!nocheck\u003e, python3-pytest-lazy-fixture \u003c!nocheck\u003e, python3-rasterio, python3-requests, python3-rioxarray, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-setuptools-scm-git-archive, python3-skyfield, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinxcontrib.apidoc \u003c!nodoc\u003e, python3-tables, python3-tornado, python3-trollimage, python3-trollsched, python3-trollsift, python3-xarray, python3-xarray-datatree, python3-yaml, python3-zarr"
   ],
   "Checksums-Sha256": [
-    "e676a44a84ffd57a5c65de731e1b10b51bee59cf6e2c45929787510f6e319ce8 3138 satpy_0.43.0-1.dsc b0bc5bccfc37eba3e0d229d87a00c29246751d4ec1f4c806005c39564911826f 1370069 satpy_0.43.0.orig.tar.gz be7ce66d13e996da8337a87f8e76bcb8d93b16970dd48067c2ac753e113123f5 956132 satpy_0.43.0-1.debian.tar.xz"
+    "480dda732aa7f66554801fcd0152261585ef577d6324126a51af44b6821ed23c 3244 satpy_0.43.0-3.dsc b0bc5bccfc37eba3e0d229d87a00c29246751d4ec1f4c806005c39564911826f 1370069 satpy_0.43.0.orig.tar.gz 7c20dea8bb972f6f9cdc6fa5972c37d2ee7748f86708005e7c0812628f48d300 955020 satpy_0.43.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/satpy"
   ],
   "Files": [
-    "29227229eac3e0c236d5241f67493e5e 3138 satpy_0.43.0-1.dsc 9d5c676b87edbc289d51376ede5aea1a 1370069 satpy_0.43.0.orig.tar.gz 42214be39f8bee6248e7d078f36bbe4c 956132 satpy_0.43.0-1.debian.tar.xz"
+    "0fdc5358da643164433f2d663a2ef904 3244 satpy_0.43.0-3.dsc 9d5c676b87edbc289d51376ede5aea1a 1370069 satpy_0.43.0.orig.tar.gz f0b5dc99cf27c05628399ad39a97621e 955020 satpy_0.43.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/debian-gis-team/satpy.git"
   ],
   "Version": [
-    "0.43.0-1"
+    "0.43.0-3"
   ]
 }
