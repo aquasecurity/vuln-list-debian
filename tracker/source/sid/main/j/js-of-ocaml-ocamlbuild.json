@@ -6,19 +6,19 @@
     "libjs-of-ocaml-ocamlbuild-ocaml-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ocaml, ocaml-dune, ocamlbuild, dh-ocaml (\u003e= 1.2)"
+    "debhelper-compat (= 13), ocaml, ocaml-dune, ocaml-findlib, ocamlbuild, js-of-ocaml \u003c!nocheck\u003e, libbase-ocaml-dev \u003c!nocheck\u003e, nodejs \u003c!nocheck\u003e, dh-ocaml (\u003e= 1.2)"
   ],
   "Checksums-Sha256": [
-    "9c9addc2e87b9fa6e1932b15a024fbde6041e0530ab96bec38ab8c31d51b109d 2124 js-of-ocaml-ocamlbuild_0.0.0+git20220118+852302c8-4.dsc ee2324d297c4aef2eca4874960edb44eabcb3477eed7d9380910a792acf832cb 28479 js-of-ocaml-ocamlbuild_0.0.0+git20220118+852302c8.orig.tar.gz c3689fd37ebfa4ecb35f298c0e67065346178c0e022421cc4f7e1c8aab33d342 2016 js-of-ocaml-ocamlbuild_0.0.0+git20220118+852302c8-4.debian.tar.xz"
+    "fdefb3fb34a00145f07e9059bb48db3e10716bcfb29b3246586daee0b65738f7 2128 js-of-ocaml-ocamlbuild_5.0-1.dsc aa59bcbf1ce27bcb2a3eb77a8a2c1ff17e9ddbe0f240e3a198ca1cebb0a1c07b 17855 js-of-ocaml-ocamlbuild_5.0.orig.tar.bz2 5e87f3cb2ea6439fbae810eac97289705a0223741057b647bb58137eaa577799 2344 js-of-ocaml-ocamlbuild_5.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "2e6ffd71b7ac94fd4c8e98d778579dfae490d071 debian archive/debian/0.0.0+git20220118+852302c8-4 https://git.dgit.debian.org/js-of-ocaml-ocamlbuild"
+    "3f1c64e94c68e0d1a9bc7a85c9612836ecf052b1 debian archive/debian/5.0-1 https://git.dgit.debian.org/js-of-ocaml-ocamlbuild"
   ],
   "Directory": [
     "pool/main/j/js-of-ocaml-ocamlbuild"
   ],
   "Files": [
-    "71e2a8309c352a009643b1ba24309f8d 2124 js-of-ocaml-ocamlbuild_0.0.0+git20220118+852302c8-4.dsc 0444b324bc6058ec1b830836b9b32cd7 28479 js-of-ocaml-ocamlbuild_0.0.0+git20220118+852302c8.orig.tar.gz 7c9a40a5e20653e43fe9e40f46fed047 2016 js-of-ocaml-ocamlbuild_0.0.0+git20220118+852302c8-4.debian.tar.xz"
+    "5ce6b30efa9d5c83520280472de79e0f 2128 js-of-ocaml-ocamlbuild_5.0-1.dsc 1b63535027f72658873a8d979700e436 17855 js-of-ocaml-ocamlbuild_5.0.orig.tar.bz2 f55ec4eb0df9700d6c191fd3f85fd940 2344 js-of-ocaml-ocamlbuild_5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "js-of-ocaml, nodejs, ocaml, ocaml-findlib, ocamlbuild"
+  ],
   "Uploaders": [
     "Stéphane Glondu \u003cglondu@debian.org\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/ocaml-team/js-of-ocaml-ocamlbuild.git"
   ],
   "Version": [
-    "0.0.0+git20220118+852302c8-4"
+    "5.0-1"
   ]
 }

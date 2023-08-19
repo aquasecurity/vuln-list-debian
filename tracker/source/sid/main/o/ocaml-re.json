@@ -6,19 +6,19 @@
     "libre-ocaml-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ocaml-nox, ocaml-findlib, ocaml-dune, libseq-ocaml-dev, libounit-ocaml-dev, dh-ocaml (\u003e= 1.2)"
+    "debhelper-compat (= 13), ocaml, ocaml-findlib, ocaml-dune, libseq-ocaml-dev, libounit-ocaml-dev \u003c!nocheck\u003e, dh-ocaml (\u003e= 1.2)"
   ],
   "Checksums-Sha256": [
-    "2645fff345203ce304b89ed41aab57b8c6b02abc630a872203824cf0926d63e7 1811 ocaml-re_1.10.4-3.dsc 83eb3e4300aa9b1dc7820749010f4362ea83524742130524d78c20ce99ca747c 82985 ocaml-re_1.10.4.orig.tar.bz2 9cbf2ff6e72c3ca77495e1eee152b8448e60497aab68a4ecebfd04ddfb9f701a 2320 ocaml-re_1.10.4-3.debian.tar.xz"
+    "5af11ccc37d711c7977eb3133b3c4cbbc295d7a1d17cd6e0087517fb3de31614 1899 ocaml-re_1.11.0-1.dsc 01fc244780c0f6be72ae796b1fb750f367de18624fd75d07ee79782ed6df8d4f 85340 ocaml-re_1.11.0.orig.tar.bz2 230b9b98d2b3b8a8f41aa045d8d4e099cd67c20e20f5ef797dc477c88b8a58dc 2712 ocaml-re_1.11.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "941bb972e9c445793686674ec9601045904fc117 debian archive/debian/1.10.4-3 https://git.dgit.debian.org/ocaml-re"
+    "ea8fcfbc2c41b365efb00a7b52f1a6a4f9295a66 debian archive/debian/1.11.0-1 https://git.dgit.debian.org/ocaml-re"
   ],
   "Directory": [
     "pool/main/o/ocaml-re"
   ],
   "Files": [
-    "e6bb93d09737a8b46459323b8b076151 1811 ocaml-re_1.10.4-3.dsc 68c427f8b55507f8b61c613ee6a5b3da 82985 ocaml-re_1.10.4.orig.tar.bz2 9281a7dd7457f46690a404163c1c2afb 2320 ocaml-re_1.10.4-3.debian.tar.xz"
+    "1dcff02be9b453d5c138a7c12a3c271d 1899 ocaml-re_1.11.0-1.dsc e0199e32947fd33fcc1b8e69de2308a1 85340 ocaml-re_1.11.0.orig.tar.bz2 f1494bd32406b57acc40d76f1b131bcc 2712 ocaml-re_1.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "libounit-ocaml-dev, ocaml, ocaml-dune"
   ],
   "Uploaders": [
     "Mehdi Dogguy \u003cmehdi@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/ocaml-team/ocaml-re.git"
   ],
   "Version": [
-    "1.10.4-3"
+    "1.11.0-1"
   ]
 }
