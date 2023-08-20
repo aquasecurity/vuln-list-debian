@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "afl++, afl++-clang, afl++-doc, afl, afl-clang, afl-doc"
+    "afl++, afl++-doc"
   ],
   "Build-Depends": [
-    "clang-14, debhelper-compat (= 13), dh-buildinfo, gcc-12-plugin-dev, lld-14 [!s390x], llvm-14-dev, python3-dev, clang, libcmocka-dev, dh-strip-nondeterminism"
+    "clang-14, debhelper-compat (= 13), dh-buildinfo, gcc-13-plugin-dev, gcc-multilib [amd64 i386 mips64el mipsel ppc64 s390x sparc64 x32], lld-14 [!s390x], llvm-14-dev, python3-dev, clang, libcmocka-dev, dh-strip-nondeterminism"
   ],
   "Checksums-Sha256": [
-    "5c005ead4945ea4645ef4c3c18c99944f87c8311ecbaf061ee44751c3390fa3b 2496 aflplusplus_4.04c-4.dsc 979ae35bc9a06f5283240955762ac69ea91f36a519ec6521b4ee48d2bcea53c2 2832011 aflplusplus_4.04c.orig.tar.gz c87abd29e2e79fb6c71c2766b350c1d435c24771da62e2bbfe096e9d94015acd 11548 aflplusplus_4.04c-4.debian.tar.xz"
+    "2de34e34c7cfc842d6d0670ed299c9b138e134a684ef1165f460c8e4cd25b16b 2364 aflplusplus_4.08c-1.dsc f8d93f2343a040323b88f0d09c93be33b043bf63ba483af45510cb85aa1a2305 2894794 aflplusplus_4.08c.orig.tar.gz f055842bd8a59ed9953419b112f5acd57beec56d558e34cda5c27f0ad0a1463f 9500 aflplusplus_4.08c-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/aflplusplus"
   ],
   "Files": [
-    "4d5e86bab4d08b8a29be18f1d383cb27 2496 aflplusplus_4.04c-4.dsc 11f0176843c4b327e4e2312095cfb056 2832011 aflplusplus_4.04c.orig.tar.gz 391c928a6564834800744af39b58f4d3 11548 aflplusplus_4.04c-4.debian.tar.xz"
+    "65cb8013a14417060f8b4979ef9686f8 2364 aflplusplus_4.08c-1.dsc 75b914f8d54f663bbcf62c055c785621 2894794 aflplusplus_4.08c.orig.tar.gz 9d60118c23f83cc1bf8bd8353f40744b 9500 aflplusplus_4.08c-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "aflplusplus"
   ],
   "Package-List": [
-    "afl deb oldlibs optional arch=all afl++ deb devel optional arch=any afl++-clang deb oldlibs optional arch=any afl++-doc deb doc optional arch=all afl-clang deb oldlibs optional arch=all afl-doc deb oldlibs optional arch=all"
+    "afl++ deb devel optional arch=any afl++-doc deb doc optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/pkg-security-team/aflplusplus.git"
   ],
   "Version": [
-    "4.04c-4"
+    "4.08c-1"
   ]
 }
