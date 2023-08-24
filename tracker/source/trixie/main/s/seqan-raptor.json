@@ -6,16 +6,16 @@
     "seqan-raptor, seqan-raptor-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libseqan3-dev (\u003e= 3.3.0~rc.1), libgtest-dev, libxxhash-dev, libcereal-dev, libsimde-dev, pkg-config, doxygen \u003c!nodoc\u003e, cppreference-doc-en-html \u003c!nodoc\u003e, texlive-font-utils \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e, texlive-latex-recommended \u003c!nodoc\u003e, texlive-latex-extra \u003c!nodoc\u003e, texlive-xetex \u003c!nodoc\u003e, texlive-plain-generic \u003c!nodoc\u003e, texlive-fonts-recommended \u003c!nodoc\u003e, ghostscript \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), cmake, libseqan3-dev (\u003e= 3.3.0~rc.1), libgtest-dev, libxxhash-dev, libcereal-dev, libsimde-dev, libyaml-cpp-dev, pkg-config, doxygen \u003c!nodoc\u003e, cppreference-doc-en-html \u003c!nodoc\u003e, texlive-font-utils \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e, texlive-latex-recommended \u003c!nodoc\u003e, texlive-latex-extra \u003c!nodoc\u003e, texlive-xetex \u003c!nodoc\u003e, texlive-plain-generic \u003c!nodoc\u003e, texlive-fonts-recommended \u003c!nodoc\u003e, ghostscript \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "777b1487039a76fdc591763cd4fdb530c843fa0a70b17be14fc858dacce75c9b 2449 seqan-raptor_3.0.0+ds-2.dsc d529a0654492f7e414ac323f9ffd92737403d98e387086d81d7b5b84852bb994 2476728 seqan-raptor_3.0.0+ds.orig.tar.xz f6bf8b4357946335e2f511c87e053ce89b40c0c8b1958c041779d49f4abc6478 10468 seqan-raptor_3.0.0+ds-2.debian.tar.xz"
+    "5b856e39721cb51520316a6fe663abf6f7317a1a61155a133090cc5c6df020f2 2557 seqan-raptor_3.0.1+ds-3.dsc 3fb5f987f3c0e678d5de41ab3f9f66eae37ba5993edb294caa9e8f2c6132a55d 3085184 seqan-raptor_3.0.1+ds.orig.tar.xz 8930505204e6d48588bb4d7e79de9422e26685e0f9ddc96e3ee1f8d8da24dbcb 9120 seqan-raptor_3.0.1+ds-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/seqan-raptor"
   ],
   "Files": [
-    "f47d2f6d3019407cd42b0b04187aba6f 2449 seqan-raptor_3.0.0+ds-2.dsc d074685f64d80153d9390630b026449f 2476728 seqan-raptor_3.0.0+ds.orig.tar.xz 752455679554ad49f3ff249adafa248b 10468 seqan-raptor_3.0.0+ds-2.debian.tar.xz"
+    "52199e7bf58cf2a02b6b50a1041421f4 2557 seqan-raptor_3.0.1+ds-3.dsc 650d23e7c16c308dcc95dbc6d302df1f 3085184 seqan-raptor_3.0.1+ds.orig.tar.xz d6ee941ec6ab3672beb54daffb471e64 9120 seqan-raptor_3.0.1+ds-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "seqan-raptor"
   ],
   "Package-List": [
-    "seqan-raptor deb science optional arch=any seqan-raptor-doc deb doc optional arch=all"
+    "seqan-raptor deb science optional arch=any seqan-raptor-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "cwltool, nodejs, python3-setuptools"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/med-team/seqan-raptor.git"
   ],
   "Version": [
-    "3.0.0+ds-2"
+    "3.0.1+ds-3"
   ]
 }
