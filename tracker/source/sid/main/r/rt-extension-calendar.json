@@ -3,28 +3,28 @@
     "all"
   ],
   "Binary": [
-    "rt4-extension-calendar"
+    "rt4-extension-calendar, rt5-extension-calendar"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 9)"
+    "debhelper-compat (= 13)"
   ],
   "Build-Depends-Indep": [
-    "request-tracker4, libcapture-tiny-perl, libmodule-install-rtx-perl, libdatetime-perl, libdatetime-set-perl, perl"
+    "perl, libcapture-tiny-perl \u003c!nocheck\u003e, libmodule-install-rtx-perl (\u003e= 0.42-1~), libdatetime-perl \u003c!nocheck\u003e, libdatetime-set-perl \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dc6be3a6ffb541e127e31ca1c488edbd64d909b14083e8a4aef845e6a2583157 2392 rt-extension-calendar_1.01-1.1.dsc 753ca43cf4935bb4d7279743c3fb7b8c96593f5fe9b8b162b8493674b7047fc1 42009 rt-extension-calendar_1.01.orig.tar.gz 32b6756518303fed701303dd5dddcd487e8d2de7ea7da47bd626cc863b476717 2164 rt-extension-calendar_1.01-1.1.debian.tar.xz"
+    "204430b1f3778a4dfdece90af195f609505699ec1d249cd741fd7d8d826bd63d 2461 rt-extension-calendar_1.05-3.dsc 3050d2c865eae5560b2f29613924c7bde2b405049f5af999a7346d007f90bc9d 43816 rt-extension-calendar_1.05.orig.tar.gz 810bb656e6056b8a6587798f68563634a01cb945fc076366a371ec5b78eedb2e 6864 rt-extension-calendar_1.05-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rt-extension-calendar"
   ],
   "Files": [
-    "e438fa574a12013bc6b9d6cafb756199 2392 rt-extension-calendar_1.01-1.1.dsc 5ca9af124b88b54db41380ec91f279c9 42009 rt-extension-calendar_1.01.orig.tar.gz e22d7d91baafa2a9a3d6d72375d136a8 2164 rt-extension-calendar_1.01-1.1.debian.tar.xz"
+    "bb302668641be0cb3bf6f6dc04376eb9 2461 rt-extension-calendar_1.05-3.dsc 95cdc09afe5eb3e4954ecbf86a4d90d5 43816 rt-extension-calendar_1.05.orig.tar.gz 034d77a4ac82fd296104a9e94823bcc3 6864 rt-extension-calendar_1.05-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://search.cpan.org/dist/RTx-Calendar/"
+    "https://metacpan.org/pod/RTx::Calendar"
   ],
   "Maintainer": [
     "Debian Request Tracker Group \u003cpkg-request-tracker-maintainers@lists.alioth.debian.org\u003e"
@@ -33,7 +33,7 @@
     "rt-extension-calendar"
   ],
   "Package-List": [
-    "rt4-extension-calendar deb perl optional arch=all"
+    "rt4-extension-calendar deb perl optional arch=all rt5-extension-calendar deb perl optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,10 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "pkg-perl-autopkgtest"
   ],
   "Uploaders": [
-    "KURASHIKI Satoru \u003clurdan@gmail.com\u003e, Dominic Hargreaves \u003cdom@earth.li\u003e,"
+    "KURASHIKI Satoru \u003clurdan@gmail.com\u003e, Dominic Hargreaves \u003cdom@earth.li\u003e, Andrew Ruthven \u003candrew@etc.gen.nz\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/request-tracker-team/rt-extension-calendar"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/request-tracker-team/rt-extension-calendar.git"
   ],
   "Version": [
-    "1.01-1.1"
+    "1.05-3"
   ]
 }
