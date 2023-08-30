@@ -6,19 +6,19 @@
     "pd-iemmatrix"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-buildinfo, libfftw3-dev, libgsl-dev | libgsl0-dev, libsndfile1-dev, puredata-dev | puredata"
+    "debhelper-compat (= 13), dh-buildinfo, dh-sequence-pd-lib-builder, libfftw3-dev, libgsl-dev | libgsl0-dev, libsndfile1-dev, pkg-config"
   ],
   "Checksums-Sha256": [
-    "ac77e5dc76b2f45cba175648b0aa6cf154818edac2018ee6a900493ecf6a6a98 2263 pd-iemmatrix_0.3.2-4.dsc 25311e7b8f7fc8c8163539038f238b899c3e7428b31359ba3272b32f28d68859 262483 pd-iemmatrix_0.3.2.orig.tar.bz2 b161d513d44284523474749394a62c76309bf39d5a80f5a860df4e7e3f04a18b 8680 pd-iemmatrix_0.3.2-4.debian.tar.xz"
+    "ea3e3a862f662ba3c45218a3a0ae0714f1b3a63c546e2ee79dbf25a1e51ba0f1 2362 pd-iemmatrix_0.3.3-2.dsc f8f83d375fdfd509651d0c58e0f10a256cb705064d3f37398ed6e3e5299bb4c4 199998 pd-iemmatrix_0.3.3.orig.tar.bz2 e773d577b489e690268642c5ab17cc50381e276d6fdda660de6fbb308bb3ad46 8108 pd-iemmatrix_0.3.3-2.debian.tar.xz"
   ],
   "Dgit": [
-    "a7038b048c357e6d8b1fec6d2015749c65049050 debian archive/debian/0.3.2-4 https://git.dgit.debian.org/pd-iemmatrix"
+    "36653fc5fa0f826b170e75d915764c34f16c7e39 debian archive/debian/0.3.3-2 https://git.dgit.debian.org/pd-iemmatrix"
   ],
   "Directory": [
     "pool/main/p/pd-iemmatrix"
   ],
   "Files": [
-    "47b2fb402992a149d2aec23b75d277b3 2263 pd-iemmatrix_0.3.2-4.dsc bb408fa8c894e37efba28c716dbee4b0 262483 pd-iemmatrix_0.3.2.orig.tar.bz2 744acc1113b4ec1e15a77718669a1c3f 8680 pd-iemmatrix_0.3.2-4.debian.tar.xz"
+    "09554e737a9f8c1102d7bc25522f4b79 2362 pd-iemmatrix_0.3.3-2.dsc 2471b58ece21cf117ed970d2ad5f0491 199998 pd-iemmatrix_0.3.3.orig.tar.bz2 1afd6e94b46b57112b40ceec528e7601 8108 pd-iemmatrix_0.3.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "sound"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "puredata-core, puredata64-core"
   ],
   "Uploaders": [
     "Roman Haefeli \u003creduzent@gmail.com\u003e, IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/multimedia-team/pd/pd-iemmatrix.git"
   ],
   "Version": [
-    "0.3.2-4"
+    "0.3.3-2"
   ]
 }
