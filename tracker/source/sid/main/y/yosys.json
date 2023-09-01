@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "yosys, yosys-dev, yosys-doc"
+    "yosys, yosys-dev, yosys-abc, yosys-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, tcl-dev, libreadline-dev, bison, flex, gawk, git, libffi-dev, pkg-config, txt2man, iverilog (\u003e= 10.1), python3, berkeley-abc (\u003e= 1.01+20230625git01b1bd1+dfsg-3)"
+    "debhelper-compat (= 13), dh-python, tcl-dev, libreadline-dev, libbz2-dev, zlib1g-dev, bison, flex, gawk, git, libffi-dev, pkg-config, txt2man, iverilog (\u003e= 10.1), python3"
   ],
   "Build-Depends-Indep": [
     "texlive-base, texlive-plain-generic, texlive-fonts-recommended, texlive-fonts-extra, texlive-latex-base, texlive-latex-extra, texlive-font-utils, texlive-science, texlive-publishers, texlive-bibtex-extra, tex-gyre, latexmk, lmodern, graphviz, pdf2svg, python3-sphinx, python3-sphinx-press-theme, python3-sphinxcontrib.bibtex"
   ],
   "Checksums-Sha256": [
-    "70eacc3839c4ace06d41978b3f860d5675159b4cda0f030ea1375065718723ad 2703 yosys_0.30-6.dsc 1b29c9ed3d396046b67c48f0900a5f2156c6136f2e0651671d05ee26369f147d 2542403 yosys_0.30.orig.tar.gz 3680b0971ed72598da8815fe0b480498c5304bfab47047533693f80fc4f645d6 21056 yosys_0.30-6.debian.tar.xz"
+    "40a533fdb8f8661e589d3f9172fe0bc53453ab30d11de0610b78f645943a2396 2966 yosys_0.32-1.dsc d6575ee0f29ef11e52114897067d7017614d99b1f1481f7116c9260ab9e13b47 6161112 yosys_0.32.orig-abc.tar.gz 07b168491fa103a57231483a80f8e03545d0c957672e96b73d4eb9c8c8c43930 2552341 yosys_0.32.orig.tar.gz 4be4e0089a87ec6350fc4ba75457c1d6e76891929ac1806ee4dab129bf94fe58 30700 yosys_0.32-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/y/yosys"
   ],
   "Files": [
-    "e725be3e8370c1a02cb6d00be1e9d7e4 2703 yosys_0.30-6.dsc c32c670b024084969ba8f22b036d9b60 2542403 yosys_0.30.orig.tar.gz 45f4bb5cc9965efdb2a8e48e29905dc7 21056 yosys_0.30-6.debian.tar.xz"
+    "7b15009bc5210430a5138d3514484322 2966 yosys_0.32-1.dsc a076accc96ed9a23df152087cdd9664b 6161112 yosys_0.32.orig-abc.tar.gz 94c7f8b71ce93bb96fcf16373b505c04 2552341 yosys_0.32.orig.tar.gz 5a27294293c0c41a7d138fd341ecc9b3 30700 yosys_0.32-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "yosys"
   ],
   "Package-List": [
-    "yosys deb electronics optional arch=any yosys-dev deb electronics optional arch=any yosys-doc deb doc optional arch=all"
+    "yosys deb electronics optional arch=any yosys-abc deb electronics optional arch=any yosys-dev deb electronics optional arch=any yosys-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "berkeley-abc, g++, gawk, gcc, iverilog, pkg-config, tcl"
+    "g++, gawk, gcc, iverilog, pkg-config, tcl"
   ],
   "Uploaders": [
     "Ruben Undheim \u003cruben.undheim@gmail.com\u003e, Sebastian Kuzminsky \u003cseb@highlab.com\u003e, Daniel Gröber \u003cdxld@darkboxed.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/science-team/yosys.git"
   ],
   "Version": [
-    "0.30-6"
+    "0.32-1"
   ]
 }
