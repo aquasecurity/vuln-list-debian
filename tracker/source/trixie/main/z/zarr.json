@@ -6,16 +6,16 @@
     "python3-zarr"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-asciitree, python3-fasteners, python3-fsspec, python3-h5py, python3-msgpack, python3-numcodecs, python3-numpy, python3-numpydoc, python3-pytest, python3-pytest-doctestplus, python3-pytest-timeout, python3-setuptools, python3-setuptools-scm, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-design, python3-sphinx-issues, python3-sphinx-rtd-theme, python3-pydata-sphinx-theme"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-asciitree, python3-fasteners, python3-fsspec, python3-h5py, python3-msgpack, python3-numcodecs, python3-numpy, python3-numpydoc \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-doctestplus \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-sphinx-issues \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "6f6639caf105c0fba12de234d1b25173153f53f4ec2e156ba2bea659df29cdc9 2563 zarr_2.16.0+ds-1.dsc 17f8c946285dbd7fa1253b463651ca5b58dd7d5fdc3f6651494a4d419eb21b72 980352 zarr_2.16.0+ds.orig.tar.xz dcd6153e8925901592ce75f77a882d5d4fcd7733efced8bc9269c1a12acbab5a 5412 zarr_2.16.0+ds-1.debian.tar.xz"
+    "0cc8904d72cbd7379e3e0961994314775c322b07db5727ac990744b54e9ba2c0 2632 zarr_2.16.1+ds-2.dsc 40d737538f258d13ee23ecb7cffdfd6aa93d4f496a7ef274396f29d165a1004e 979976 zarr_2.16.1+ds.orig.tar.xz 6ed5390f9783b6e2453e0b9dc52739a07aaad13113ce527cce9700157904626f 5320 zarr_2.16.1+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/z/zarr"
   ],
   "Files": [
-    "fcd0d5b3310b260ab4b63399c5262e49 2563 zarr_2.16.0+ds-1.dsc 097f88759a21b2ea8ba7ca2b5244e67e 980352 zarr_2.16.0+ds.orig.tar.xz ce3ae601f9ec95b5c344c6a3e1a74c7e 5412 zarr_2.16.0+ds-1.debian.tar.xz"
+    "892c613fd0fa5c5585b270c7423906f4 2632 zarr_2.16.1+ds-2.dsc d19444b631f3f81ce760187232b3d642 979976 zarr_2.16.1+ds.orig.tar.xz 7698a61fe3b31b7f7de7017def0f63fc 5320 zarr_2.16.1+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-h5py, python3-msgpack, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/science-team/zarr.git"
   ],
   "Version": [
-    "2.16.0+ds-1"
+    "2.16.1+ds-2"
   ]
 }
