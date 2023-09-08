@@ -6,16 +6,16 @@
     "librust-breezyshim-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-debversion-0.2+default-dev \u003c!nocheck\u003e, librust-debversion-0.2+python-debian-dev \u003c!nocheck\u003e, librust-pyo3+auto-initialize-dev (\u003e= 0.18-~~) \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003e= 0.18-~~) \u003c!nocheck\u003e, librust-pyo3+serde-dev (\u003e= 0.18-~~) \u003c!nocheck\u003e, librust-pyo3-file+default-dev (\u003e= 0.5.0-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.6.0-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e, librust-url-2+serde-dev \u003c!nocheck\u003e, brz-debian \u003c!nocheck\u003e, python3-breezy \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-debversion-0.2+default-dev \u003c!nocheck\u003e, librust-debversion-0.2+python-debian-dev \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003e= 0.18-~~) \u003c!nocheck\u003e, librust-pyo3+serde-dev (\u003e= 0.18-~~) \u003c!nocheck\u003e, librust-pyo3-file+default-dev (\u003e= 0.5.0-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.6.0-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e, librust-url-2+serde-dev \u003c!nocheck\u003e, brz-debian \u003c!nocheck\u003e, python3-breezy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "940bfa3edec3e2fd45e8ac79cbd6f2a54dc738eb82198ae0d1e2921effb5a2ae 2409 rust-breezyshim_0.1.19-1.dsc 9f91d0c94415ffb289424cf023c40a35bd5bbbe397785b7fc1f40dad6dcbf9bc 20017 rust-breezyshim_0.1.19.orig.tar.gz b27eafb4ab5a1bc65dffd4a8dd8c2a49ca1547b53b2faa928dd29a246cbad8f1 2536 rust-breezyshim_0.1.19-1.debian.tar.xz"
+    "d4a066c6db3080f795ccab8382e98cd33c5928e67309b836b2182863a3072568 2411 rust-breezyshim_0.1.22-1.dsc 49d6c4e60ac1b8f5f736d08c9b7b8bdc27b16baec1951be321c7db3f995f62ed 20394 rust-breezyshim_0.1.22.orig.tar.gz 86a6d27ec8d755f7635ae3e60e5e6f7cf2b7b5bcb2b642bcd8285af44268febe 2304 rust-breezyshim_0.1.22-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-breezyshim"
   ],
   "Files": [
-    "d585c139a689d152d42f40a7d3df9e64 2409 rust-breezyshim_0.1.19-1.dsc 84adcaa81afcbf3eb4c523e47e6dc37b 20017 rust-breezyshim_0.1.19.orig.tar.gz 4713f2df15d76994604100cd081c377c 2536 rust-breezyshim_0.1.19-1.debian.tar.xz"
+    "fbf1e08b8a2ebce2a5302eb77d933999 2411 rust-breezyshim_0.1.22-1.dsc 4a8b5f58788b29420002317e0ab8989d 20394 rust-breezyshim_0.1.22.orig.tar.gz 96d83965147c260b9cb2925f1988d871 2304 rust-breezyshim_0.1.22-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-pyo3+auto-initialize-dev, librust-pyo3+default-dev"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/breezyshim]"
   ],
   "Version": [
-    "0.1.19-1"
+    "0.1.22-1"
   ]
 }
