@@ -6,16 +6,16 @@
     "python3-flask-babel, python-flask-babel-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-sphinx, python3-all, python3-babel, python3-flask, python3-jinja2, python3-pallets-sphinx-themes, python3-pytest, python3-pytest-mock, python3-setuptools, python3-tz"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-poetry-core, pybuild-plugin-pyproject, python3-tz \u003c!nocheck\u003e, python3-flask \u003c!nocheck\u003e, python3-babel \u003c!nocheck\u003e, python3-jinja2 \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, furo \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "427f842e05cf42fdc6f387e639a55836a6fc2b7018653cc0cca0f42f4657fa47 2207 flask-babel_2.0.0-3.dsc f9faf45cdb2e1a32ea2ec14403587d4295108f35017a7821a2b1acb8cfd9257d 19588 flask-babel_2.0.0.orig.tar.gz 6e0ce2b4e992e5249d0bc96ac3aaf4088362b866deba39b0a80024f2cda116d8 3904 flask-babel_2.0.0-3.debian.tar.xz"
+    "43f459bff27ca100dbcf65695229b4101c2d9687fb8b76d3d0daf96b72e3c6d1 1756 flask-babel_3.1.0-1.dsc 27ae8d70438566bf0b26623aab7f5fe213a0ff471152901433b8cb29864b5a1b 18680 flask-babel_3.1.0.orig.tar.xz 06b675c0211247acbf504588166b878c88a656e168be00db29e9995ba2782101 4712 flask-babel_3.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/flask-babel"
   ],
   "Files": [
-    "2f118add68070446e85dc10ee73d48ae 2207 flask-babel_2.0.0-3.dsc 50d5e92d96ef58787bf85b5a1b0a5567 19588 flask-babel_2.0.0.orig.tar.gz ab13e3772677a288eb88fbb806d29f76 3904 flask-babel_2.0.0-3.debian.tar.xz"
+    "57ec284e29a318a744ffe1886f44bee8 1756 flask-babel_3.1.0-1.dsc f1d8688cdbbade9ef4b56b124d87fe62 18680 flask-babel_3.1.0.orig.tar.xz e324a7dba9174839ad6b3ee4d8259524 4712 flask-babel_3.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://github.com/python-babel/flask-babel"
   ],
   "Maintainer": [
-    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "flask-babel"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Louis-Philippe Véronneau \u003cpollo@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/flask-babel"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/flask-babel.git"
   ],
   "Version": [
-    "2.0.0-3"
+    "3.1.0-1"
   ]
 }
