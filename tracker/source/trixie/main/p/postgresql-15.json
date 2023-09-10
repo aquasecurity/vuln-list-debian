@@ -6,16 +6,16 @@
     "libpq-dev, libpq5, libecpg6, libecpg-dev, libecpg-compat3, libpgtypes3, postgresql-15, postgresql-client-15, postgresql-server-dev-15, postgresql-doc-15, postgresql-plperl-15, postgresql-plpython3-15, postgresql-pltcl-15"
   ],
   "Build-Depends": [
-    "autoconf, bison, clang [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32], debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libpam0g-dev | libpam-dev, libperl-dev, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32], lz4 | liblz4-tool, mawk, perl (\u003e= 5.8), pkg-config, postgresql-common (\u003e= 233~), python3-dev, systemtap-sdt-dev, tcl-dev, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
+    "autoconf, bison, clang [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32], debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libpam0g-dev | libpam-dev, libperl-dev, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32], lz4 | liblz4-tool, mawk, perl (\u003e= 5.8), pkg-config, postgresql-common (\u003e= 233~), python3-dev, systemtap-sdt-dev, tcl-dev, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
   ],
   "Checksums-Sha256": [
-    "2b4efdfd5d2a90af878b034cb3a7dbd198465759a0f4826e285f54b99f6f5e5d 3965 postgresql-15_15.4-1.dsc baec5a4bdc4437336653b6cb5d9ed89be5bd5c0c58b94e0becee0a999e63c8f9 22850355 postgresql-15_15.4.orig.tar.bz2 a70d90764e75f6df949ef834aef7af294881ef996d9a7e47a4fe61a464f0c732 25160 postgresql-15_15.4-1.debian.tar.xz"
+    "c4c91a9b2e45f80dc27a787af6148e4f992993431684b230f7e56c605985e1c9 4187 postgresql-15_15.4-2.dsc baec5a4bdc4437336653b6cb5d9ed89be5bd5c0c58b94e0becee0a999e63c8f9 22850355 postgresql-15_15.4.orig.tar.bz2 66737c08eeee8cacf423f53f0c75524904973be5b923718ea98c064b03e175da 25308 postgresql-15_15.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-15"
   ],
   "Files": [
-    "6fea07d9187a4395b76034b7de97969f 3965 postgresql-15_15.4-1.dsc f2f861fb99d742cb9c2f8aa46a8a947d 22850355 postgresql-15_15.4.orig.tar.bz2 755663bcf159c57865be06ef63dcc2bb 25160 postgresql-15_15.4-1.debian.tar.xz"
+    "52c55456efff400a5682913838bb9f5e 4187 postgresql-15_15.4-2.dsc f2f861fb99d742cb9c2f8aa46a8a947d 22850355 postgresql-15_15.4.orig.tar.bz2 344241665ed3866dc8f053fa62f4f950 25308 postgresql-15_15.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-15"
   ],
   "Package-List": [
-    "libecpg-compat3 deb libs optional arch=any libecpg-dev deb libdevel optional arch=any libecpg6 deb libs optional arch=any libpgtypes3 deb libs optional arch=any libpq-dev deb libdevel optional arch=any libpq5 deb libs optional arch=any postgresql-15 deb database optional arch=any postgresql-client-15 deb database optional arch=any postgresql-doc-15 deb doc optional arch=all profile=!nodoc postgresql-plperl-15 deb database optional arch=any postgresql-plpython3-15 deb database optional arch=any postgresql-pltcl-15 deb database optional arch=any postgresql-server-dev-15 deb libdevel optional arch=any"
+    "libecpg-compat3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs libecpg-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs libecpg6 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs libpgtypes3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs libpq-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs libpq5 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs postgresql-15 deb database optional arch=any postgresql-client-15 deb database optional arch=any postgresql-doc-15 deb doc optional arch=all profile=!nodoc postgresql-plperl-15 deb database optional arch=any postgresql-plpython3-15 deb database optional arch=any postgresql-pltcl-15 deb database optional arch=any postgresql-server-dev-15 deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql.git -b 15"
   ],
   "Version": [
-    "15.4-1"
+    "15.4-2"
   ]
 }
