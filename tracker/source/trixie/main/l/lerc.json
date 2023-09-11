@@ -6,16 +6,19 @@
     "liblerc4, liblerc-dev, python3-lerc"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 12), dh-python, pkg-kde-tools, python3-all, python3-numpy, python3-setuptools"
+    "architecture-is-little-endian, cmake, debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-pkgkde-symbolshelper, dh-sequence-python3, pkg-kde-tools, python3-all, python3-numpy, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "61c32adc1590f930af4b94b151e6a0a8569ace7d7a4f1961eb049f209b47a417 2224 lerc_4.0.0+ds-2.dsc acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723 348140 lerc_4.0.0+ds.orig.tar.xz b5676df41934c3c95447a66f766ac8f536cf9fa88063c93b0201e6b4fd25aff6 7780 lerc_4.0.0+ds-2.debian.tar.xz"
+    "49d68994f4570a72d781914aecdbfd0cb2a40b2c9dd81344f9517d97643f9c57 2638 lerc_4.0.0+ds-3.dsc acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723 348140 lerc_4.0.0+ds.orig.tar.xz 1d6ed278a6dde4f7c703a77d4e9fab10dcf1b61881572a8da4f2103b2ee4da65 8024 lerc_4.0.0+ds-3.debian.tar.xz"
+  ],
+  "Description": [
+    "Limited Error Raster Compression library LERC is an open-source image or raster format which supports rapid encoding and decoding for any pixel type (not just RGB or Byte). Users set the maximum compression error per pixel while encoding, so the precision of the original input image is preserved (within user defined error bounds)."
   ],
   "Directory": [
     "pool/main/l/lerc"
   ],
   "Files": [
-    "1fc00b1bb2c86c071f8c72ff76f0bf5a 2224 lerc_4.0.0+ds-2.dsc 587b5ce9cad1e4b32c43a73f9a66d512 348140 lerc_4.0.0+ds.orig.tar.xz 03252d4073121eecd0ed5b8cafd1d182 7780 lerc_4.0.0+ds-2.debian.tar.xz"
+    "9a384b4c89584bd26ffc35095ce443d4 2638 lerc_4.0.0+ds-3.dsc 587b5ce9cad1e4b32c43a73f9a66d512 348140 lerc_4.0.0+ds.orig.tar.xz fb419710d68fc839b57ec218bcd80e7e 8024 lerc_4.0.0+ds-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/lerc.git"
   ],
   "Version": [
-    "4.0.0+ds-2"
+    "4.0.0+ds-3"
   ]
 }
