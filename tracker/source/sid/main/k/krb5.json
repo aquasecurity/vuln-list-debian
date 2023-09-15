@@ -6,19 +6,22 @@
     "krb5-user, krb5-kdc, krb5-kdc-ldap, krb5-admin-server, krb5-kpropd, krb5-multidev, libkrb5-dev, libkrb5-dbg, krb5-pkinit, krb5-otp, krb5-k5tls, krb5-doc, libkrb5-3, libgssapi-krb5-2, libgssrpc4, libkadm5srv-mit12, libkadm5clnt-mit12, libk5crypto3, libkdb5-10, libkrb5support0, libkrad0, krb5-gss-samples, krb5-locales, libkrad-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), byacc | bison, comerr-dev, docbook-to-man, libkeyutils-dev [linux-any], libldap2-dev \u003c!stage1\u003e, libsasl2-dev \u003c!stage1\u003e, libssl-dev, ss-dev, libverto-dev (\u003e= 0.2.4), pkg-config"
+    "byacc | bison, comerr-dev, debhelper-compat (= 13), docbook-to-man, libkeyutils-dev [linux-any], libldap2-dev \u003c!stage1\u003e, libsasl2-dev \u003c!stage1\u003e, libssl-dev, libverto-dev (\u003e= 0.2.4), pkg-config, ss-dev"
+  ],
+  "Build-Depends-Arch": [
+    "keyutils, libcmocka-dev, python3-kdcproxy, python3-pyrad"
   ],
   "Build-Depends-Indep": [
-    "python3, python3-cheetah, python3-lxml, python3-sphinx, doxygen, doxygen-latex, tex-gyre"
+    "doxygen, doxygen-latex, python3, python3-cheetah, python3-lxml, python3-sphinx, tex-gyre"
   ],
   "Checksums-Sha256": [
-    "1b272a4e1d303749af23c10c1e5f709115b63b4d739361df4282d88403705057 3171 krb5_1.20.1-3.dsc 704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851 8661660 krb5_1.20.1.orig.tar.gz 2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666 833 krb5_1.20.1.orig.tar.gz.asc 045ee0fca6e008f2cbfdadeea8f9d66182f21c99ae67d20cf940e98f1e513a28 100208 krb5_1.20.1-3.debian.tar.xz"
+    "21dd89f7b1a9b70ebbc48b7d2708640ff632477fca549dae3ceef8a5b4c258ec 3248 krb5_1.20.1-4.dsc 704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851 8661660 krb5_1.20.1.orig.tar.gz 2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666 833 krb5_1.20.1.orig.tar.gz.asc 2b96f8e13204ecd91f956f7c78552cd0319f01bc2944df2c2bdcaa99bab2bbec 104400 krb5_1.20.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/krb5"
   ],
   "Files": [
-    "8dc148966658252b2ec316ee45f563fb 3171 krb5_1.20.1-3.dsc 73f5780e7b587ccd8b8cfc10c965a686 8661660 krb5_1.20.1.orig.tar.gz 46551f0a032aa02dccac3789a344e028 833 krb5_1.20.1.orig.tar.gz.asc 093eafce2c1f7c7cbae0e28b1770f794 100208 krb5_1.20.1-3.debian.tar.xz"
+    "695a1c1f49038cea10190774705e9f28 3248 krb5_1.20.1-4.dsc 73f5780e7b587ccd8b8cfc10c965a686 8661660 krb5_1.20.1.orig.tar.gz 46551f0a032aa02dccac3789a344e028 833 krb5_1.20.1.orig.tar.gz.asc 8e4fa4356f8aba2c90bb420a8633a957 104400 krb5_1.20.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +45,7 @@
     "net"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +63,6 @@
     "https://salsa.debian.org/debian/krb5"
   ],
   "Version": [
-    "1.20.1-3"
+    "1.20.1-4"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "any-amd64 any-i386 powerpc ppc64 all"
+    "any-amd64 any-i386 arm64 powerpc ppc64 all"
   ],
   "Binary": [
     "hmmer, hmmer-doc, hmmer-examples"
@@ -9,13 +9,13 @@
     "debhelper-compat (= 13), libdivsufsort-dev, python3"
   ],
   "Checksums-Sha256": [
-    "f094605dab0f31cf53129a704990cfe14c345b88b85160ec21d80ddc2e11e1d8 2128 hmmer_3.3.2+dfsg-1.dsc 32913d564890c0eac5a95af9cc0a4284e612138be4754212db316fff1d379803 12390556 hmmer_3.3.2+dfsg.orig.tar.xz 8d750af4414f6603cfa21387ae465057acf6990ded6f94da262cdc737c321d43 14264 hmmer_3.3.2+dfsg-1.debian.tar.xz"
+    "4eb91d29f6764b82c6202f65e5947f97395eef657b526b9d7cc5d548bbc937eb 2154 hmmer_3.4+dfsg-1.dsc 87ada77366ed6ab0159a0c1217f8a55cbe9a708c4a98cf644929eb3703ce3309 13297988 hmmer_3.4+dfsg.orig.tar.xz 528dc37a612fb1b528dca4a2432b6fc621ea2c74ffa3b45841d33181108df496 12696 hmmer_3.4+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hmmer"
   ],
   "Files": [
-    "8a904fc21b5dd12521c835efba469067 2128 hmmer_3.3.2+dfsg-1.dsc e04965f449d014e0f1ec30eb8e93680c 12390556 hmmer_3.3.2+dfsg.orig.tar.xz d2e5478082fd51a374751d254a9b3fbc 14264 hmmer_3.3.2+dfsg-1.debian.tar.xz"
+    "eac621e54815fb6c0915fdacf5d669bf 2154 hmmer_3.4+dfsg-1.dsc ac66418b48c613d96d43770f971a22d3 13297988 hmmer_3.4+dfsg.orig.tar.xz b190ea942a346087193b2b48202a0e2d 12696 hmmer_3.4+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "hmmer"
   ],
   "Package-List": [
-    "hmmer deb science optional arch=any-amd64,any-i386,powerpc,ppc64,x32 hmmer-doc deb doc optional arch=all hmmer-examples deb doc optional arch=all"
+    "hmmer deb science optional arch=any-amd64,any-i386,arm64,powerpc,ppc64,x32 hmmer-doc deb doc optional arch=all hmmer-examples deb doc optional arch=all"
   ],
   "Priority": [
     "source"
@@ -39,10 +39,13 @@
     "science"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/med-team/hmmer.git"
   ],
   "Version": [
-    "3.3.2+dfsg-1"
+    "3.4+dfsg-1"
   ]
 }
