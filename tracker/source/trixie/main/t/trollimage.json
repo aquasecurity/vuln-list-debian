@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "python3-trollimage"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-python, python3-all, python3-dask, python3-numpy, python3-pil, python3-pyproj, python3-pyresample, python3-pytest, python3-rasterio, python3-setuptools, python3-xarray"
+    "cython3, debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, python3-dask, python3-numpy, python3-pil, python3-pyproj \u003c!nocheck\u003e, python3-pyresample \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-rasterio, python3-setuptools, python3-versioneer, python3-xarray"
   ],
   "Checksums-Sha256": [
-    "1a285aff6ee68613558b284d08876c09d2ef5e1423f1ea1281b82ab75d98ce2f 2284 trollimage_1.20.1-1.dsc cf1358aedd375b2a1f3bf3b5a0923c9f108ebec7a68a96eda78a3d51f747643f 1444231 trollimage_1.20.1.orig.tar.gz 493328305434f8f501db8dc327d7ffa93da032eb30c7413fc27e4294cbe420c7 4316 trollimage_1.20.1-1.debian.tar.xz"
+    "01f9c521a62eb78e1e8a114095ba69090f2cbe141075c531e9d0c946917c62af 2360 trollimage_1.21.0-1.dsc 2191feb7fd2133e3f7370c5b3a3c4ee2058de62949131f6a55ee4d33d59e0c8d 1446723 trollimage_1.21.0.orig.tar.gz 7c12954f3e26fb3bd6e187dedbdb08152c17812e3503bfdff8fa52ca268f06f9 4900 trollimage_1.21.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/trollimage"
   ],
   "Files": [
-    "f18d68bda62821eabcbd4357ef14b53a 2284 trollimage_1.20.1-1.dsc 698c49df11c75ba414e6cdd4e43e9364 1444231 trollimage_1.20.1.orig.tar.gz c86ed1a6bf7133389a5e28fbf5dd4f96 4316 trollimage_1.20.1-1.debian.tar.xz"
+    "3e54796c347c133063005f0220305e93 2360 trollimage_1.21.0-1.dsc c4d82b8cf310a44af9fa94646a835cd1 1446723 trollimage_1.21.0.orig.tar.gz 704fbf6bd23420c1af7426579e312767 4900 trollimage_1.21.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "trollimage"
   ],
   "Package-List": [
-    "python3-trollimage deb python optional arch=all"
+    "python3-trollimage deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/debian-gis-team/trollimage.git"
   ],
   "Version": [
-    "1.20.1-1"
+    "1.21.0-1"
   ]
 }
