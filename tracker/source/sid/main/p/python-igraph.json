@@ -6,16 +6,16 @@
     "python3-igraph"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pkg-config, python3-all-dev, python3-numpy, python3-setuptools, python3-texttable, bison, flex, libxml2-dev, cmake"
+    "debhelper-compat (= 13), pkg-config, dh-python, libigraph-dev, python3-all-dev, python3-numpy, python3-setuptools, python3-texttable, python3-scipy, python3-pandas, python3-networkx, python3-graph-tool [amd64 arm64 ppc64el s390x ia64 ppc64]"
   ],
   "Checksums-Sha256": [
-    "6172040bd9f630a51354b436b546a1d207660aad98526c6442d519ab0180111e 2898 python-igraph_0.10.8-1.dsc 91dbe8b6ded79871a3310fa44b491c920557e53ec85f79b977fafff3651edc0b 4225630 python-igraph_0.10.8.orig.tar.gz 2330c6b87d09c0a3b58375199f2cbf245d49cfde95d72693bf6d01d3aa98df30 4516 python-igraph_0.10.8-1.debian.tar.xz"
+    "cec02343a914f37c52afbcc12e2b7e279dfd9d727c3937e0aa113b9bfac60595 3099 python-igraph_0.10.8+ds-2.dsc 3d995e6e7a6ea83945493d23059cc4e4b44a55840247f09609a9cab5c17f2b98 341340 python-igraph_0.10.8+ds.orig.tar.xz 1044cc0b20c0c7560ca8e0f26157ba69ff115948454f4191bec44da09c61e2d3 5212 python-igraph_0.10.8+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-igraph"
   ],
   "Files": [
-    "34e1213ac0f485f07e246983e3ca7807 2898 python-igraph_0.10.8-1.dsc ce170419cf40e85709186d293a8e7e8f 4225630 python-igraph_0.10.8.orig.tar.gz f0adbc977144403a90ce9ecfda9c1a29 4516 python-igraph_0.10.8-1.debian.tar.xz"
+    "c81221e239751968e8a248732b41a19b 3099 python-igraph_0.10.8+ds-2.dsc 2c9483048a6fcbc3f16ebe98d3fc479b 341340 python-igraph_0.10.8+ds.orig.tar.xz 6d2a4245d791630461b5b52bc808725f 5212 python-igraph_0.10.8+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-graph-tool, python3-networkx, python3-numpy, python3-pandas, python3-scipy"
   ],
   "Uploaders": [
     "Jerome Benoit \u003ccalculus@rezozer.net\u003e, TANIGUCHI Takaki \u003ctakaki@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-igraph.git"
   ],
   "Version": [
-    "0.10.8-1"
+    "0.10.8+ds-2"
   ]
 }
