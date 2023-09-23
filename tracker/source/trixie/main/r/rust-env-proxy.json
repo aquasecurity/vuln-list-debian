@@ -6,16 +6,16 @@
     "librust-env-proxy-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "65f8cb69cb767934f599297973f65200d84afdf1c97b6462a6fdbd9f56522882 1853 rust-env-proxy_0.4.0-1.dsc 4aa837517e4a24a1ca0f0adb2bc10f2e631159ce977a606d8ea1c8b575f96b01 11169 rust-env-proxy_0.4.0.orig.tar.gz df704fb72230ebe843145beb54f27db66cbebade749b40ca0f2012fc40b2c66b 2528 rust-env-proxy_0.4.0-1.debian.tar.xz"
+    "ea0f6b41cde2225edefaa4a9caae8f486123f0b3cf26c7e1501042db194b1b01 1960 rust-env-proxy_0.4.1-1.dsc 3a5019be18538406a43b5419a5501461f0c8b49ea7dfda0cfc32f4e51fc44be1 11256 rust-env-proxy_0.4.1.orig.tar.gz 9933f0e11e5abcc3de12d825e2e33a25db6d09ae2c1052f62c63982548c7f401 2792 rust-env-proxy_0.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-env-proxy"
   ],
   "Files": [
-    "5052f6c821e2f3ed7e5a503665f5126f 1853 rust-env-proxy_0.4.0-1.dsc 85f3d600469bb443671c731a56798e85 11169 rust-env-proxy_0.4.0.orig.tar.gz bfed6ee60360b5366b2f38b6d40136bb 2528 rust-env-proxy_0.4.0-1.debian.tar.xz"
+    "e6945927c936ec9490172cf61710eddf 1960 rust-env-proxy_0.4.1-1.dsc 249636a8c8e57527d0e72ae772df5acd 11256 rust-env-proxy_0.4.1.orig.tar.gz e6dee084b11eaa1f85bf707a6e5b11e4 2792 rust-env-proxy_0.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-lazy-static-1+default-dev"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/env-proxy]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.4.1-1"
   ]
 }
