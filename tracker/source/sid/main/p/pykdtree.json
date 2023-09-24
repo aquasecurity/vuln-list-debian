@@ -6,16 +6,16 @@
     "python3-pykdtree"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, cython3, python3-all-dev, python3-mako, python3-pytest, python3-numpy, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, cython3, pybuild-plugin-pyproject, python3-all-dev, python3-mako, python3-pytest \u003c!nocheck\u003e, python3-numpy, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "04f41227ef74e8e5aaaeb83ec7217313097a4b05a80b9d407c1158ef76d12199 2205 pykdtree_1.3.7+ds-1.dsc f17a9a1ff90b095789b9834a6ae6b06c6ad25cad14f6c3755509baf19b793eec 19788 pykdtree_1.3.7+ds.orig.tar.xz 4217e85cb1eafdc4a2c70150d17dd96d20ddd2c85cedbd5c85081ae99ab683c8 5608 pykdtree_1.3.7+ds-1.debian.tar.xz"
+    "778faa4375f1f5fbe4185259931cd37d34dcf44966366e95e5ac487e7ae65554 2223 pykdtree_1.3.9+ds-1.dsc 3af178195fe1d703407acb1b99fd5d2dfdfc80ba6794dc6c1a186bcc5182ef65 19308 pykdtree_1.3.9+ds.orig.tar.xz bef509c84f114b5c6e330c9770c56c7513ffa7b3dbeddb981657804fe40b8684 5672 pykdtree_1.3.9+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pykdtree"
   ],
   "Files": [
-    "156e36e82ac98b47ad42237bacafb5dc 2205 pykdtree_1.3.7+ds-1.dsc c7fd3fc525ada7a89d6a86417fe33b65 19788 pykdtree_1.3.7+ds.orig.tar.xz 3b4b246e8c5308d8841c344eb6176f5e 5608 pykdtree_1.3.7+ds-1.debian.tar.xz"
+    "6946548bbd675c09ecfba425c860dc66 2223 pykdtree_1.3.9+ds-1.dsc eb9ff1f1a9ac5758f5591790f5524829 19308 pykdtree_1.3.9+ds.orig.tar.xz e889c7abac3dcf66cb758296de8a6fef 5672 pykdtree_1.3.9+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/debian-gis-team/pykdtree.git"
   ],
   "Version": [
-    "1.3.7+ds-1"
+    "1.3.9+ds-1"
   ]
 }
