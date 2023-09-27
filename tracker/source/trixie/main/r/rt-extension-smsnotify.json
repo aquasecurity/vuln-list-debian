@@ -3,22 +3,22 @@
     "all"
   ],
   "Binary": [
-    "rt4-extension-smsnotify"
+    "rt4-extension-smsnotify, rt5-extension-smsnotify"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 9)"
+    "debhelper-compat (= 13)"
   ],
   "Build-Depends-Indep": [
-    "libmodule-install-readmefrompod-perl (\u003e= 0.20), libmodule-install-rtx-perl (\u003e= 0.37-3~), libsms-send-perl (\u003e= 1.06), perl"
+    "libmodule-install-readmefrompod-perl (\u003e= 0.20), libmodule-install-rtx-perl (\u003e= 0.42-1~), libmodule-install-automanifest-perl, libsms-send-perl (\u003e= 1.06), rename, perl"
   ],
   "Checksums-Sha256": [
-    "7ed6f5ec5411ee825687e97dbdb6d20e9cc0d70cf78afd181d4be1a45a669a56 1995 rt-extension-smsnotify_1.04-1.1.dsc 5cd2cb10bcc562a04f2b490cf18c55aeb607a13f702060863275f819b6cfea8c 57419 rt-extension-smsnotify_1.04.orig.tar.gz 41138228606a1b8371fada83f3051f0fb776fed7fb82c9795f149a261d6c2528 36708 rt-extension-smsnotify_1.04-1.1.debian.tar.xz"
+    "afb590264c58068e7d5a368eebc113b85a8a0f648399e91e2f80638c22fe2d07 2478 rt-extension-smsnotify_1.04-3.dsc 5cd2cb10bcc562a04f2b490cf18c55aeb607a13f702060863275f819b6cfea8c 57419 rt-extension-smsnotify_1.04.orig.tar.gz 0ed4679eee343666147e289a5b9580bc91ff371a46ab9372e93c8aab66caace6 14888 rt-extension-smsnotify_1.04-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rt-extension-smsnotify"
   ],
   "Files": [
-    "dbea68b471539d81167fec2b8766f310 1995 rt-extension-smsnotify_1.04-1.1.dsc 7c6250b649416f8f94e0258908e3478c 57419 rt-extension-smsnotify_1.04.orig.tar.gz 1f63b2711e917d84daaa4248feac8de7 36708 rt-extension-smsnotify_1.04-1.1.debian.tar.xz"
+    "d9700468cfb37efa05824273f5ecb50a 2478 rt-extension-smsnotify_1.04-3.dsc 7c6250b649416f8f94e0258908e3478c 57419 rt-extension-smsnotify_1.04.orig.tar.gz 1f3dce3b4bc8e9d30732c1e70b19d261 14888 rt-extension-smsnotify_1.04-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,13 +27,13 @@
     "https://metacpan.org/release/RT-Extension-SMSNotify"
   ],
   "Maintainer": [
-    "Dominic Hargreaves \u003cdom@earth.li\u003e"
+    "Debian Request Tracker Group \u003cpkg-request-tracker-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "rt-extension-smsnotify"
   ],
   "Package-List": [
-    "rt4-extension-smsnotify deb perl optional arch=all"
+    "rt4-extension-smsnotify deb perl optional arch=all rt5-extension-smsnotify deb perl optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,9 +42,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.6"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "pkg-perl-autopkgtest"
+  ],
+  "Uploaders": [
+    "Dominic Hargreaves \u003cdom@earth.li\u003e, Andrew Ruthven \u003candrew@etc.gen.nz\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/request-tracker-team/rt-extension-smsnotify"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/request-tracker-team/rt-extension-smsnotify.git"
   ],
   "Version": [
-    "1.04-1.1"
+    "1.04-3"
   ]
 }
