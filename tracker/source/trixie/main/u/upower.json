@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "upower, upower-doc, libupower-glib3, libupower-glib-dev, gir1.2-upowerglib-1.0"
+    "upower, upower-doc, upower-tests, libupower-glib3, libupower-glib-dev, gir1.2-upowerglib-1.0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, dh-exec, meson (\u003e= 0.56.0), gobject-introspection, gtk-doc-tools, gettext (\u003e= 0.19.8), libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.58), libgudev-1.0-dev (\u003e= 235) [linux-any], libimobiledevice-dev (\u003e= 0.9.7) [linux-any], libkvm-dev [kfreebsd-any], pkg-config, udev [linux-any], xsltproc"
+    "debhelper-compat (= 13), dh-sequence-gir, dh-exec, meson (\u003e= 0.56.0), gobject-introspection, gtk-doc-tools, gettext (\u003e= 0.19.8), libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.58), libgudev-1.0-dev (\u003e= 238) [linux-any], libimobiledevice-dev (\u003e= 0.9.7) [linux-any], libkvm-dev [kfreebsd-any], pkg-config, udev [linux-any], xsltproc"
   ],
   "Build-Depends-Indep": [
     "libglib2.0-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "62ca1f6c4313994018321b5837774039b08dabd59da1de23cee0d8a912684104 2756 upower_0.99.20-2.dsc 6b11baeb4e9273def260ca86f2ed482ab4e56e8f4e999b2632d6ba0ea2bccd9a 126098 upower_0.99.20.orig.tar.bz2 e8be8781185b8e9a9c5d03ea1185330ff05de81a176c6bca6737c91d7dca9135 13920 upower_0.99.20-2.debian.tar.xz"
+    "6930986e8f941383f121b859158189d36fbd7818e6c019b248d83a58045e6a0c 2796 upower_1.90.2-4.dsc 6cc46c9c753f614b970738e02ba7e37d86ebbedd81e9742dd22caafbd743894d 138265 upower_1.90.2.orig.tar.bz2 25eaeb70a44a50814455253cb28ac486fb0eb0f6d6214a547acbe1a1aad7662b 15276 upower_1.90.2-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/upower"
   ],
   "Files": [
-    "2f55aa7deb88e442aa88b0cfc6eb6928 2756 upower_0.99.20-2.dsc 4c929971f7c89facc50537fa585415e9 126098 upower_0.99.20.orig.tar.bz2 a84e5c89034e30b430bf882bd871ee2d 13920 upower_0.99.20-2.debian.tar.xz"
+    "7a92716ffd9f339e3710287457e67008 2796 upower_1.90.2-4.dsc bfd6e3275e61d7e097b53eb2b216fffa 138265 upower_1.90.2.orig.tar.bz2 d773ab802fe6aab35977235064778b39 15276 upower_1.90.2-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "upower"
   ],
   "Package-List": [
-    "gir1.2-upowerglib-1.0 deb introspection optional arch=any libupower-glib-dev deb libdevel optional arch=any libupower-glib3 deb libs optional arch=any upower deb admin optional arch=any upower-doc deb doc optional arch=all profile=!nodoc"
+    "gir1.2-upowerglib-1.0 deb introspection optional arch=any libupower-glib-dev deb libdevel optional arch=any libupower-glib3 deb libs optional arch=any upower deb admin optional arch=any upower-doc deb doc optional arch=all profile=!nodoc upower-tests deb admin optional arch=linux-any"
   ],
   "Priority": [
     "source"
@@ -42,13 +42,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, gir1.2-glib-2.0, gir1.2-umockdev-1.0, python3, python3-dbus, python3-dbusmock, python3-gi, python3-packaging, umockdev"
+    "build-essential, gir1.2-umockdev-1.0, gnome-desktop-testing, python3-dbus, python3-dbusmock, python3-packaging, umockdev"
   ],
   "Uploaders": [
     "Michael Biebl \u003cbiebl@debian.org\u003e, Martin Pitt \u003cmpitt@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/utopia-team/upower.git"
   ],
   "Version": [
-    "0.99.20-2"
+    "1.90.2-4"
   ]
 }
