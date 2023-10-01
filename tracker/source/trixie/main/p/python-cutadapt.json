@@ -6,22 +6,22 @@
     "python3-cutadapt, cutadapt"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all-dev, python3-setuptools, python3-setuptools-scm, python3-pytest-mock, python3-pytest-timeout, python3-xopen, python3-dnaio, python3-pytest, cython3"
+    "debhelper-compat (= 13), dh-python, libpython3-all-dev, python3-all-dev:any, pybuild-plugin-pyproject, python3-setuptools, python3-setuptools-scm:native, python3-pytest-mock \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-xopen \u003c!nocheck\u003e, python3-dnaio \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, cython3:native"
   ],
   "Checksums-Sha256": [
-    "8411483b945a07c3ed5a7d7988789daf0312eaf03560151a6a41ac410b158fe0 2479 python-cutadapt_4.2-1.dsc e33816a58f7d5f5b9922981c48b65f5ddf9ebdf566d0ab75a4418634122d85d6 223006 python-cutadapt_4.2.orig.tar.gz 10e741408a3a9f3ddb04470b0beec80aa7a25f6b05bc7fb1a5282a51ff4135fa 8548 python-cutadapt_4.2-1.debian.tar.xz"
+    "49959a9b7d5929067e6045093901c54a311b0f25a18e37e4dcc8a8dca2943f58 1882 python-cutadapt_4.4-1.dsc 0343da04101c88b7b9845f136bd411c558e63ae9abbfb27248e3fb2d43b299aa 236178 python-cutadapt_4.4.orig.tar.gz 1d597b7ceafb097449de0447bbf112b162608bc2c383f5c3238b1db227c8e258 8940 python-cutadapt_4.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-cutadapt"
   ],
   "Files": [
-    "fa06d2a52147c1cb9f9e1ed1573720e9 2479 python-cutadapt_4.2-1.dsc 4258b60f4d2422dd77ad94351804838f 223006 python-cutadapt_4.2.orig.tar.gz a4dfbb1e9bd52a6142623aa567f220b1 8548 python-cutadapt_4.2-1.debian.tar.xz"
+    "2b7211871a1fc307228c45352e92df88 1882 python-cutadapt_4.4-1.dsc 46f6569ff6a508b8fd02af22e60c8698 236178 python-cutadapt_4.4.orig.tar.gz 0017e4ee61319bf8737d621251d251e6 8940 python-cutadapt_4.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://pypi.python.org/pypi/cutadapt"
+    "https://cutadapt.readthedocs.io/"
   ],
   "Maintainer": [
     "Debian Med Packaging Team \u003cdebian-med-packaging@lists.alioth.debian.org\u003e"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest, python3-pytest-mock, python3-pytest-timeout"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Olivier Sallou \u003cosallou@debian.org\u003e, Andreas Tille \u003ctille@debian.org\u003e, Kevin Murray \u003ckdmfoss@gmail.com\u003e, Steffen Moeller \u003cmoeller@debian.org\u003e,"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/med-team/python-cutadapt.git"
   ],
   "Version": [
-    "4.2-1"
+    "4.4-1"
   ]
 }
