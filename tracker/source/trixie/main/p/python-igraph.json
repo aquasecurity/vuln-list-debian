@@ -6,16 +6,16 @@
     "python3-igraph"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pkg-config, python3-all-dev, python3-numpy, python3-setuptools, python3-texttable, bison, flex, libxml2-dev, cmake"
+    "debhelper-compat (= 13), pkg-config, dh-python, libigraph-dev, python3-all-dev, python3-numpy, python3-setuptools, python3-texttable, python3-scipy, python3-pandas, python3-networkx, python3-graph-tool [amd64 arm64 ppc64el s390x ia64 ppc64]"
   ],
   "Checksums-Sha256": [
-    "2e02a32ef2465f205fb68d959aa1d59e93ae68bf388d5b459ce4b9edbc9bf6f3 2194 python-igraph_0.10.2-1.dsc 215c53591b0bccd2082ef0e007e1919f25c040abb03014bdb4f20712173e33c2 4096476 python-igraph_0.10.2.orig.tar.gz fa83a97a567b612a455410201d7b06f66031a91fa42e108bc876f60f5fff0f1e 4240 python-igraph_0.10.2-1.debian.tar.xz"
+    "cec02343a914f37c52afbcc12e2b7e279dfd9d727c3937e0aa113b9bfac60595 3099 python-igraph_0.10.8+ds-2.dsc 3d995e6e7a6ea83945493d23059cc4e4b44a55840247f09609a9cab5c17f2b98 341340 python-igraph_0.10.8+ds.orig.tar.xz 1044cc0b20c0c7560ca8e0f26157ba69ff115948454f4191bec44da09c61e2d3 5212 python-igraph_0.10.8+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-igraph"
   ],
   "Files": [
-    "08afd5661fae904a5329fb3e3b5278f9 2194 python-igraph_0.10.2-1.dsc 6951cc2e803118b74209ae21d54de38a 4096476 python-igraph_0.10.2.orig.tar.gz 45694332a4e764e9dcf0ca6f16070adc 4240 python-igraph_0.10.2-1.debian.tar.xz"
+    "c81221e239751968e8a248732b41a19b 3099 python-igraph_0.10.8+ds-2.dsc 2c9483048a6fcbc3f16ebe98d3fc479b 341340 python-igraph_0.10.8+ds.orig.tar.xz 6d2a4245d791630461b5b52bc808725f 5212 python-igraph_0.10.8+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,16 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-graph-tool, python3-networkx, python3-numpy, python3-pandas, python3-scipy"
   ],
   "Uploaders": [
-    "TANIGUCHI Takaki \u003ctakaki@debian.org\u003e, Hugo Lefeuvre \u003chle@debian.org\u003e"
+    "Jerome Benoit \u003ccalculus@rezozer.net\u003e, TANIGUCHI Takaki \u003ctakaki@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-igraph"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-igraph.git"
   ],
   "Version": [
-    "0.10.2-1"
+    "0.10.8+ds-2"
   ]
 }
