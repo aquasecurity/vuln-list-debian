@@ -6,16 +6,16 @@
     "python3-ephem"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all-dev, python3-setuptools, tzdata"
+    "debhelper-compat (= 13), dh-python, python3-all-dev, python3-setuptools, tzdata, tzdata-legacy"
   ],
   "Checksums-Sha256": [
-    "ba93fa7a80ab27608c1f18ec0d62e66a2642ec5fbc306694ae6a8c7c96d9ab4b 2010 pyephem_4.1.4-2.dsc 73a59f0d2162d1624535c3c3b75f956556bdbb2055eaf554a7bef147d3f9c760 1256106 pyephem_4.1.4.orig.tar.gz 947f483374d2d28a9c69ce1885c7f6f74d33ec19289265a02762a914e816dfa7 4980 pyephem_4.1.4-2.debian.tar.xz"
+    "945e9377240ee9879a0b1f7f8c7c32620e8e0d32a82db085c9bc4d81a456e8c6 2067 pyephem_4.1.4-3.dsc 73a59f0d2162d1624535c3c3b75f956556bdbb2055eaf554a7bef147d3f9c760 1256106 pyephem_4.1.4.orig.tar.gz fc71fcc2a5a95fcd7b746cdbc811ba7540e11d36a4887541d8457965e2531d2d 5000 pyephem_4.1.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyephem"
   ],
   "Files": [
-    "ebb139babcd87a2f7306c5e566d4f098 2010 pyephem_4.1.4-2.dsc a16ea63937d02f29e37a777297cc45e0 1256106 pyephem_4.1.4.orig.tar.gz ac1d8445ea11ee2ac928eeab40d1828e 4980 pyephem_4.1.4-2.debian.tar.xz"
+    "c98e646774ee549704c5aa6e4c524dcd 2067 pyephem_4.1.4-3.dsc a16ea63937d02f29e37a777297cc45e0 1256106 pyephem_4.1.4.orig.tar.gz 17c6080950d9aa3f609546cff31df93a 5000 pyephem_4.1.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "tzdata, tzdata-legacy"
+  ],
   "Uploaders": [
     "Ole Streicher \u003colebole@debian.org\u003e"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian-astro-team/pyephem.git"
   ],
   "Version": [
-    "4.1.4-2"
+    "4.1.4-3"
   ]
 }
