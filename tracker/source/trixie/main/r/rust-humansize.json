@@ -6,19 +6,22 @@
     "librust-humansize-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libm-0.2+default-dev (\u003e= 0.2.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "db28317e36a6839c3bd7ffac3e81e6c5df53ec1481346b6eef29669884bd183e 2055 rust-humansize_1.1.0-2.dsc b6cab2627acfc432780848602f3f558f7e9dd427352224b0d9324025796d2a5e 4459 rust-humansize_1.1.0.orig.tar.gz 114379616a94f2f0e5fe63c10cfb16b4492f0304f115c5c83ee65fcf799ee1bb 2388 rust-humansize_1.1.0-2.debian.tar.xz"
+    "143bdddf24b12c71c836a28df514b31e2a4423ed59f17c2873c973af34316941 2247 rust-humansize_2.1.3-1.dsc 6cb51c9a029ddc91b07a787f1d86b53ccfa49b0e86688c946ebe8d3555685dd7 11953 rust-humansize_2.1.3.orig.tar.gz b67023e40594144566f1909629efad1a3052b20433f021093d5dee483e911a84 2996 rust-humansize_2.1.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-humansize"
   ],
   "Files": [
-    "eeb9e521413e575d4da5be46c8047d68 2055 rust-humansize_1.1.0-2.dsc 20de08f72b66c768ee5f6ccbe1ece0cc 4459 rust-humansize_1.1.0.orig.tar.gz dbce1e3fed48fc7afa8a7c3e147765ce 2388 rust-humansize_1.1.0-2.debian.tar.xz"
+    "cd1c21aa6bcbc1806eeea411cfdf64dc 2247 rust-humansize_2.1.3-1.dsc 26570de3ac165280c441fb77ecd68ede 11953 rust-humansize_2.1.3.orig.tar.gz 139c2ed7155e1cad8aad20c128a3c5cc 2996 rust-humansize_2.1.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/LeopoldArkham/humansize"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/humansize]"
   ],
   "Version": [
-    "1.1.0-2"
+    "2.1.3-1"
   ]
 }
