@@ -6,16 +6,16 @@
     "librust-rustix-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.3.2-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.68-~~) \u003c!nocheck\u003e, librust-errno-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-io-lifetimes-2+close-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.144-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.144-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+errno-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+general-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+ioctl-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+no-std-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+prctl-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+system-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+std-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-bitflags-2-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-errno-0.3+std-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-errno-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.148-~~) \u003c!nocheck\u003e, librust-libc-0.2+std-dev (\u003e= 0.2.148-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+elf-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+errno-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+general-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+ioctl-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+no-std-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1aea322ddb532aa745b7ef89770c56fdb751afe8bc8228656fa63f5ee7a58ce0 3093 rust-rustix_0.37.20-2.dsc e5efdcab114222362a4194165bc73b7778daabd11f06f56a09afafabf2701095 312361 rust-rustix_0.37.20.orig.tar.gz 6c51376becea1db074d3a127a608c46d78995953fc21842fda7bd9a3eacacdc8 9368 rust-rustix_0.37.20-2.debian.tar.xz"
+    "e5ed303c49f58618ea0c289a82123582db7c3130f6aa50869e307f965192cab4 3029 rust-rustix_0.38.17-1.dsc f25469e9ae0f3d0047ca8b93fc56843f38e6774f0914a107ff8b41be8be8e0b7 353766 rust-rustix_0.38.17.orig.tar.gz 1af6cd1ee537643f6c5a151777268c9107da6d1f7efe10923b0f99b3635ece09 6088 rust-rustix_0.38.17-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustix"
   ],
   "Files": [
-    "a68db17b94c925874411257a72e633fc 3093 rust-rustix_0.37.20-2.dsc 92c401ce9462b6f62f32e5df831b1a67 312361 rust-rustix_0.37.20.orig.tar.gz e4808818e91e1826a5d33be23913d594 9368 rust-rustix_0.37.20-2.debian.tar.xz"
+    "d20d70c3eee1d723cfe9dd32f6349e22 3029 rust-rustix_0.38.17-1.dsc 4ff266abc32423e36367c5ff9e7ae8d4 353766 rust-rustix_0.38.17.orig.tar.gz 6cd55017fd6771dacebf16c7cf37f7a7 6088 rust-rustix_0.38.17-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.4+default-dev, librust-errno-0.3-dev, librust-flate2-1+default-dev, librust-io-lifetimes-2+close-dev, librust-libc-0.2+default-dev, librust-memoffset-0.6+default-dev, librust-serial-test-0.9+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-errno-0.3-dev, librust-flate2-1+default-dev, librust-libc-0.2+default-dev, librust-memoffset-0.6+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev, librust-tempfile-3+default-dev"
   ],
   "Uploaders": [
     "John Goerzen \u003cjgoerzen@complete.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustix]"
   ],
   "Version": [
-    "0.37.20-2"
+    "0.38.17-1"
   ]
 }
