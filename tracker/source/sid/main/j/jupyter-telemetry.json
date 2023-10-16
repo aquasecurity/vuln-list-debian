@@ -6,16 +6,16 @@
     "python3-jupyter-telemetry"
   ],
   "Build-Depends": [
-    "dh-python, python3-setuptools, python3-all, python3-jsonschema, python3-pythonjsonlogger, python3-ruamel.yaml, python3-traitlets, debhelper-compat (= 13)"
+    "dh-python, python3-setuptools, python3-all, python3-jsonschema, python3-pythonjsonlogger, python3-ruamel.yaml, python3-traitlets, python3-pytest \u003c!nocheck\u003e, debhelper-compat (= 13)"
   ],
   "Checksums-Sha256": [
-    "68581fc87f945d62f7416d8e92db77b025f71aabb7711dbf0c09c1b4ffdbeb5e 2136 jupyter-telemetry_0.1.0-4.dsc 445c613ae3df70d255fe3de202f936bba8b77b4055c43207edf22468ac875314 9607 jupyter-telemetry_0.1.0.orig.tar.gz e5d85aa8d71e98767734ef34c5d49ad65c90e62a9517ad91fe9a99e71624b8c4 2476 jupyter-telemetry_0.1.0-4.debian.tar.xz"
+    "5c15599731c315552053a69daa67dbe3bbb7dcdf26108e59f078fcec3cfd96a5 2268 jupyter-telemetry_0.1.0-5.dsc 445c613ae3df70d255fe3de202f936bba8b77b4055c43207edf22468ac875314 9607 jupyter-telemetry_0.1.0.orig.tar.gz 3109f816f51dd9de26c7a6a0ac5918116d3fe6c9644ff3da8485935c3f67f0c8 2900 jupyter-telemetry_0.1.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jupyter-telemetry"
   ],
   "Files": [
-    "d69e0676084b5cabc064e5d7a757a15c 2136 jupyter-telemetry_0.1.0-4.dsc 578a8787b59d1d68924e8597e4300398 9607 jupyter-telemetry_0.1.0.orig.tar.gz 116c6d997d9315701e12ee036fa9fecf 2476 jupyter-telemetry_0.1.0-4.debian.tar.xz"
+    "fea5fd8c38e1a0431d7839c17814faf3 2268 jupyter-telemetry_0.1.0-5.dsc 578a8787b59d1d68924e8597e4300398 9607 jupyter-telemetry_0.1.0.orig.tar.gz a3cd7455579bc1483663ac49da495018 2900 jupyter-telemetry_0.1.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
-    "Roland Mas \u003clolando@debian.org\u003e"
+    "Roland Mas \u003clolando@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/jupyter-telemetry"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/jupyter-telemetry.git"
   ],
   "Version": [
-    "0.1.0-4"
+    "0.1.0-5"
   ]
 }
