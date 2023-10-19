@@ -9,19 +9,19 @@
     "ccache"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), haskell-devscripts-minimal \u003c!cross\u003e, devscripts, grep-dctrl, pkg-config, ghc:native (\u003e= 9.0), libgmp-dev, llvm-15 [armel armhf], libffi-dev, libncurses-dev, python3-sphinx \u003c!cross\u003e, python3-sphinx-rtd-theme \u003c!cross\u003e, dpkg-dev (\u003e= 1.16.1.1)"
+    "debhelper-compat (= 12), haskell-devscripts-minimal (\u003e= 0.16.31) \u003c!cross\u003e, devscripts, pkg-config, ghc:native (\u003e= 9.0), hadrian:native (\u003e= 9.4.7-3) \u003c!pkg.ghc.nohadrian\u003e, hadrian:native (\u003c\u003c 9.5) \u003c!pkg.ghc.nohadrian\u003e, llvm-15 [armel armhf s390x riscv64], libgmp-dev, libffi-dev, libncurses-dev, python3:native, python3-sphinx \u003c!cross\u003e"
   ],
   "Build-Depends-Indep": [
-    "hscolour, fop"
+    "hscolour, python3-sphinx-rtd-theme"
   ],
   "Checksums-Sha256": [
-    "83e4d05fd9838636f98a1d1ba106cca772b7471ab7efe0c5f0d55247edefb509 2626 ghc_9.4.6-1.dsc 1b705cf52692f9d4d6707cdf8e761590f5f56ec8ea6a65e36610db392d3d24b9 28594616 ghc_9.4.6.orig.tar.xz 4a9a9ecf13c6f4fc5d1502632673f8c0ad210f6cdcbe288afcf8c0aff271bd77 659 ghc_9.4.6.orig.tar.xz.asc 8492a665b6c411afd7cda41cbf713b931e0caee2a7f696b0ed7ea4487d0e4acc 56488 ghc_9.4.6-1.debian.tar.xz"
+    "38cc046d423d8ed077e7cd120f63ef9447741fb63e4fd632240a3d53a321ec32 2715 ghc_9.4.7-1.dsc 06775a52b4d13ac09edc6dabc299fd11e59d8886bbcae450af367baee2684c8f 28618472 ghc_9.4.7.orig.tar.xz 01a803d710b9961452d2470fe1cfd7d69be099c807b15f5458d1000c8ab5322e 659 ghc_9.4.7.orig.tar.xz.asc 6f6ec43c3f725dfdcd2687e5ec045ef114b9f1bd5faca2b806ab44bf3e8601f2 64580 ghc_9.4.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/ghc"
   ],
   "Files": [
-    "8c4fd1416dc8293334c4fad857e62eda 2626 ghc_9.4.6-1.dsc c6e763cd8ace8f0224b5c738cc06e320 28594616 ghc_9.4.6.orig.tar.xz 994d3a71d6f37121e9a06023a86e66db 659 ghc_9.4.6.orig.tar.xz.asc 4f811a2b1155f888c46390f55e85a993 56488 ghc_9.4.6-1.debian.tar.xz"
+    "eff8a441fb52241314c3218fdaf6ae23 2715 ghc_9.4.7-1.dsc dc514b8143294586ed2d8f386f162186 28618472 ghc_9.4.7.orig.tar.xz 4b752a1441727297738697dbd46c3be1 659 ghc_9.4.7.orig.tar.xz.asc d63bbee3f4029432e40ccb61f3d87e59 64580 ghc_9.4.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "haskell"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/haskell-team/DHG_packages.git [p/ghc]"
   ],
   "Version": [
-    "9.4.6-1"
+    "9.4.7-1"
   ]
 }
