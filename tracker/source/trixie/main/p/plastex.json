@@ -6,19 +6,19 @@
     "plastex, python3-plastex, python-plastex-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-pytest"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "dvipng, libjs-jquery, pdf2svg, python3-bs4, python3-chardet, python3-docopt, python3-jinja2, python3-pil, python3-unidecode, texlive-binaries, texlive-latex-base, texlive-latex-extra"
+    "dvipng \u003c!nocheck\u003e, dvisvgm \u003c!nocheck\u003e, imagemagick \u003c!nocheck\u003e, libjs-jquery, libjs-mathjax, librsvg2-bin \u003c!nocheck\u003e, locales-all \u003c!nocheck\u003e, pdf2svg, poppler-utils \u003c!nocheck\u003e, python3-bs4 \u003c!nocheck\u003e, python3-jinja2, python3-pil, python3-pytest, python3-typing-extensions, python3-unidecode, texlive-binaries, texlive-extra-utils, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra, texlive-xetex \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8c041df45b33d78d189d689fade021f4f64c2a324b28d285374ef3b1c83fed01 2442 plastex_2.1-4.dsc dbad0d692f5c026d66e9b203a3e35ce0a04b8b82b747ee7649075342d9a072b5 958902 plastex_2.1.orig.tar.gz a435223fee445e271a7b9de2676ef4d66be1b63949ceb1314519ee3f6a8182db 90356 plastex_2.1-4.debian.tar.xz"
+    "214c4f242870ed957504f5cacae9b13777b1a611677da80146183d0ed98ecec3 2855 plastex_3.0-2.dsc abf4dfa3b9c4cc6e08dab800422635f005fae5b25cc2fe41e496d142fde57acd 1010086 plastex_3.0.orig.tar.gz 1446d41979e99bae7eeb3456e755c219cc3e3bff5f7ea72cc11c9939bf715b6d 89348 plastex_3.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/plastex"
   ],
   "Files": [
-    "b700aa9530b0172b2b329b52970de809 2442 plastex_2.1-4.dsc 6db3d86e5c81928fbebaeef002ff82f6 958902 plastex_2.1.orig.tar.gz 43494d9ab6116aad150faf945e5ad0ce 90356 plastex_2.1-4.debian.tar.xz"
+    "abdef47c199f63b90ea80de6b84cb382 2855 plastex_3.0-2.dsc 6cda7c45f179585737b0bda8fb5e2dce 1010086 plastex_3.0.orig.tar.gz dae89672b756b36f0d1ed0033efc9d0d 89348 plastex_3.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "tex"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "libjs-jquery, pdf2svg, python3-all, python3-bs4, python3-chardet, python3-docopt, python3-jinja2, python3-pytest, texlive-latex-extra"
+    "dvipng, dvisvgm, imagemagick, libjs-jquery, librsvg2-bin, locales-all, pdf2svg, poppler-utils, python3-all, python3-bs4, python3-jinja2, python3-pytest, texlive-binaries, texlive-extra-utils, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra, texlive-xetex"
   ],
   "Uploaders": [
     "Stuart Prescott \u003cstuart@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/plastex.git"
   ],
   "Version": [
-    "2.1-4"
+    "3.0-2"
   ]
 }

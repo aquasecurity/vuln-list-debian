@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "hy, python3-hy"
+    "hy, python3-hy, hy-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 9), dh-python, python3-all (\u003e= 3.5~), python3-astor (\u003e= 0.8~), python3-colorama, python3-coverage, python3-funcparserlib (\u003e= 0.3.6~), python3-pygments (\u003e= 1.6~), python3-pytest (\u003e= 3.2.1~), python3-rply (\u003e= 0.7.7~), python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-all (\u003e= 3.5~), python3-astor (\u003e= 0.8~), python3-coverage, python3-funcparserlib (\u003e= 1.0.0~), python3-pip, python3-pygments (\u003e= 1.6~) \u003c!nodoc\u003e, python3-pytest (\u003e= 3.2.1~) \u003c!nocheck\u003e, python3-rply (\u003e= 0.7.7~), python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "5298ba9b92c4708cd3672f32894f6f1ca4ae852446253f450a86c9f7f1adacf8 2207 hy_0.19.0-2.dsc 3a24f02a22ab8679783b1b817eba5fd1cfa1b9fb334e16fad74fc1887d257efc 441124 hy_0.19.0.orig.tar.gz b098aca95139757a0a37d275d9d9202ca56ebb47eb11cacdd4c417040fa0c9e7 7936 hy_0.19.0-2.debian.tar.xz"
+    "542417f91b17a4556d2316c94e76f4a6685ef62103570ae3df46d7f05a1a4b55 2375 hy_0.27.0-1.dsc 871309605f86c1c4c0e9045e5fe19e178a2cad98d7707aa78fc5add2cad8ae65 436551 hy_0.27.0.orig.tar.gz c703726b4b860c8c293bbc61329467ae131c2ebbaa31e6782358b1115523a9b7 11276 hy_0.27.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hy"
   ],
   "Files": [
-    "173273684bfbec7726e019583166a25c 2207 hy_0.19.0-2.dsc 4e388b8b6351aea39f91f3544adba10a 441124 hy_0.19.0.orig.tar.gz b652b177d29e4a38b4ebdf79f8a0fccc 7936 hy_0.19.0-2.debian.tar.xz"
+    "e5813d12ce1fdbdadf3f1eda00099c4f 2375 hy_0.27.0-1.dsc 9f1d003d7a8f19251247932a9df74764 436551 hy_0.27.0.orig.tar.gz d2ebbba0ba84ef2ed43780f9a54fddbf 11276 hy_0.27.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "hy"
   ],
   "Package-List": [
-    "hy deb python optional arch=all python3-hy deb python optional arch=all"
+    "hy deb devel optional arch=all hy-doc deb doc optional arch=all profile=!nodoc python3-hy deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.6"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "python3-pytest"
   ],
   "Uploaders": [
-    "Paul Tagliamonte \u003cpaultag@debian.org\u003e"
+    "Paul Tagliamonte \u003cpaultag@debian.org\u003e, IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/hy-team/hy"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/hy-team/hy.git"
   ],
   "Version": [
-    "0.19.0-2"
+    "0.27.0-1"
   ]
 }

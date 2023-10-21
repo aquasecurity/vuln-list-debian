@@ -6,16 +6,19 @@
     "python3-colorcet"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-python, python3-all, python3-mock, python3-pyct, python3-pytest, python3-pytest-runner, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-matplotlib \u003c!nocheck\u003e, python3-mock, python3-pyct, python3-pytest \u003c!nochech\u003e, python3-pytest-mpl \u003c!nochceck\u003e, python3-pytest-runner \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "0d7bb88dda7ff3ad831a7277cc29ed8fb8cdd71766212963d2fc3a9f8e91eeb7 1708 colorcet_2.0.2-2.dsc 6d6108a963a1c82846616eb010a774268e0adba0fa5ff956bd34934694908ebd 1668628 colorcet_2.0.2.orig.tar.xz cd1524986a8bc17381cbfbf79b2bcfb78d458a00d652ca79c778939c79392a60 7200 colorcet_2.0.2-2.debian.tar.xz"
+    "00ce04eb78cb15d8029a9b42313012ff25a778476d532142d5085e01ece9c2d9 2503 colorcet_3.0.1-1.dsc e44cc4b6b6f4d626927323eec6b9936081b9e5a4fed59e31a00f50f0bee67e42 2196288 colorcet_3.0.1.orig.tar.gz 2595dbbdd5aabafa799e78416728b7a0adb8f3d96b59846967e3b89fbcf99823 7776 colorcet_3.0.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "89cde0664a7bf126c04669b860bc02fbd7f16f2f debian archive/debian/3.0.1-1 https://git.dgit.debian.org/colorcet"
   ],
   "Directory": [
     "pool/main/c/colorcet"
   ],
   "Files": [
-    "b0f7db48af75e9c78075b34c9abf4ede 1708 colorcet_2.0.2-2.dsc d65df8a3340e8b6da6b943c51e73570b 1668628 colorcet_2.0.2.orig.tar.xz a98b1e822db2a07b262dc432a57d1dff 7200 colorcet_2.0.2-2.debian.tar.xz"
+    "be3970c27997d60392fa88dacb56e431 2503 colorcet_3.0.1-1.dsc 448b237ee59d465c9aff0f4af28840a1 2196288 colorcet_3.0.1.orig.tar.gz 4ce0356406890613b2c87a5db727202d 7776 colorcet_3.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +27,7 @@
     "https://github.com/holoviz/colorcet"
   ],
   "Maintainer": [
-    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
+    "Debian PaN Maintainers \u003cdebian-pan-maintainers@alioth-lists.debian.net\u003e"
   ],
   "Package": [
     "colorcet"
@@ -39,10 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-matplotlib, python3-pytest"
   ],
   "Uploaders": [
-    "Sebastien Delafond \u003cseb@debian.org\u003e"
+    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/colorcet"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/science-team/colorcet.git"
   ],
   "Version": [
-    "2.0.2-2"
+    "3.0.1-1"
   ]
 }
