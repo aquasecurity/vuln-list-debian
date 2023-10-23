@@ -6,19 +6,22 @@
     "libassimp5, libassimp-dev, libassimp-doc, assimp-utils, python3-pyassimp, assimp-testmodels"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-buildinfo, doxygen, libboost-dev, libdraco-dev, libminizip-dev, libstb-dev, libutfcpp-dev, pkg-config, zlib1g-dev | libz-dev"
+    "cmake, debhelper-compat (= 13), dh-buildinfo, doxygen \u003c!nodoc\u003e, libboost-dev, libdraco-dev, libminizip-dev, libpugixml-dev, libstb-dev, libutfcpp-dev, pkg-config, rapidjson-dev, zlib1g-dev | libz-dev"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-python3, python3-all"
+    "dh-sequence-doxygen \u003c!nodoc\u003e, dh-sequence-python3, python3-all"
   ],
   "Checksums-Sha256": [
-    "7bd2776a1df553a6b456ce8d51c5692c9679f77d51cd4aa9de9440ae03f09a1f 2343 assimp_5.2.5~ds0-1.1.dsc ee20da341210d15296e74304ebaf88563734048401f71f008d7d6ae1da373e1d 23527844 assimp_5.2.5~ds0.orig.tar.xz a5d5b2d2e890ecb6e3816615003d46c37781f9e9fc2a2ab0ef7bf0970251deb5 33368 assimp_5.2.5~ds0-1.1.debian.tar.xz"
+    "4b5baf0c74b0b95c451c9936551abbfd07fba6198cae03eb3f836df96d88bf2e 2685 assimp_5.3.1+ds-1.dsc cb4963bd7c337e2da7fd4deee6233add3c2d5ffbc5e50846f665310f50c5a86d 24983304 assimp_5.3.1+ds.orig.tar.xz 7222a286aa2b25d2300e961ebdaba8ffbf3e6a2aad81873e94644375437366e4 33420 assimp_5.3.1+ds-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "8d7b71fccbba26cf337dd74aea59b952e2a245dd debian archive/debian/5.3.1+ds-1 https://git.dgit.debian.org/assimp"
   ],
   "Directory": [
     "pool/main/a/assimp"
   ],
   "Files": [
-    "4419c45f883d638417f02318153abe38 2343 assimp_5.2.5~ds0-1.1.dsc 5984f56b1f42b6825a4ed20097771eb5 23527844 assimp_5.2.5~ds0.orig.tar.xz 9d9af3241c209227e3209964043d2b7d 33368 assimp_5.2.5~ds0-1.1.debian.tar.xz"
+    "76112e2cac1c072ec877c5901b8347fe 2685 assimp_5.3.1+ds-1.dsc 4f1ed0c0740e81c7c0cf7db4624cfd9f 24983304 assimp_5.3.1+ds.orig.tar.xz 9ae5e49c9d63a6cc4a80dc1e23d8877a 33420 assimp_5.3.1+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "assimp"
   ],
   "Package-List": [
-    "assimp-testmodels deb graphics optional arch=all assimp-utils deb utils optional arch=any libassimp-dev deb libdevel optional arch=any libassimp-doc deb doc optional arch=all libassimp5 deb libs optional arch=any python3-pyassimp deb python optional arch=all"
+    "assimp-testmodels deb graphics optional arch=all assimp-utils deb utils optional arch=any libassimp-dev deb libdevel optional arch=any libassimp-doc deb doc optional arch=all profile=!nodoc libassimp5 deb libs optional arch=any python3-pyassimp deb python optional arch=all"
   ],
   "Priority": [
     "source"
@@ -42,13 +45,13 @@
     "graphics"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, cmake, freeglut3-dev, libgl-dev, libgl1-mesa-dev, libz-dev, zlib1g-dev"
+    "build-essential, cmake, freeglut3-dev, libgl-dev, libgl1-mesa-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/assimp"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian/assimp.git"
   ],
   "Version": [
-    "5.2.5~ds0-1.1"
+    "5.3.1+ds-1"
   ]
 }
