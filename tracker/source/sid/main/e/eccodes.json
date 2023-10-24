@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64 kfreebsd-amd64 ia64 alpha all"
+    "any all"
   ],
   "Binary": [
     "libeccodes0, libeccodes-data, libeccodes-dev, libeccodes-tools, libeccodes-doc"
@@ -9,16 +9,16 @@
     "libgrib-api-dev, libopenjpeg-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-buildinfo, dh-fortran-mod, gfortran | fortran-compiler, ecbuild (\u003e= 3.7.0), libjpeg-dev, libpng-dev, flex, bison, quilt, swig, doxygen, libboost-dev, libhdf5-dev, chrpath, libaec-dev, libnetcdf-dev, libopenjp2-7-dev"
+    "debhelper-compat (= 13), architecture-is-64-bit, dh-buildinfo, dh-fortran-mod, gfortran | fortran-compiler, ecbuild (\u003e= 3.7.0), libjpeg-dev, libpng-dev, flex, bison, quilt, swig, doxygen, libboost-dev, libhdf5-dev, chrpath, libaec-dev, libnetcdf-dev, libopenjp2-7-dev"
   ],
   "Checksums-Sha256": [
-    "606294b53669fc013903466f13d84f5900a6b4c72bc5dbf368a79d0fb6be65bb 3000 eccodes_2.32.0-1.dsc bf4c658fdc5c92a7f92bfdf2ba11556308a3de4e40ebc38e2b72e95133b42d9d 81523340 eccodes_2.32.0.orig-data.tar.xz edf4e878babf51351c3e1c85d205b3961537f0685c9da5dd7b8d67e4d0996d4e 4082160 eccodes_2.32.0.orig.tar.xz f9d90fb36c875a132864272dee0ff3290c64006908c5dd3437232f935dff38d5 12076 eccodes_2.32.0-1.debian.tar.xz"
+    "1eb429e7d4e946f8ef1d939ac84bed2a53af71dbaf6ca2c685124671e1758f6a 2708 eccodes_2.32.0-2.dsc bf4c658fdc5c92a7f92bfdf2ba11556308a3de4e40ebc38e2b72e95133b42d9d 81523340 eccodes_2.32.0.orig-data.tar.xz edf4e878babf51351c3e1c85d205b3961537f0685c9da5dd7b8d67e4d0996d4e 4082160 eccodes_2.32.0.orig.tar.xz d9aad4ad3414ece959fb2a47f92245fa8a33cca98034bfb8a71710c216ad8e80 11996 eccodes_2.32.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/eccodes"
   ],
   "Files": [
-    "94c6e3127d18d06dc6b79bd43fafa373 3000 eccodes_2.32.0-1.dsc 2b6bc2daa3d83d49ff5b8329e170a5e6 81523340 eccodes_2.32.0.orig-data.tar.xz abf5b5b2b181f35e01425035e321a729 4082160 eccodes_2.32.0.orig.tar.xz d991b222a13d3dc13ce43fb9bf962b1a 12076 eccodes_2.32.0-1.debian.tar.xz"
+    "089d761dcb583f47342b405892c0eb46 2708 eccodes_2.32.0-2.dsc 2b6bc2daa3d83d49ff5b8329e170a5e6 81523340 eccodes_2.32.0.orig-data.tar.xz abf5b5b2b181f35e01425035e321a729 4082160 eccodes_2.32.0.orig.tar.xz 5aacc8c88980c77d912262bdf98111a2 11996 eccodes_2.32.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "eccodes"
   ],
   "Package-List": [
-    "libeccodes-data deb science optional arch=all libeccodes-dev deb libdevel optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libeccodes-doc deb doc optional arch=all libeccodes-tools deb utils optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libeccodes0 deb libs optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha"
+    "libeccodes-data deb science optional arch=all libeccodes-dev deb libdevel optional arch=any libeccodes-doc deb doc optional arch=all libeccodes-tools deb utils optional arch=any libeccodes0 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org:/science-team/eccodes.git -b debian/latest"
   ],
   "Version": [
-    "2.32.0-1"
+    "2.32.0-2"
   ]
 }
