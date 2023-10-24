@@ -6,13 +6,13 @@
     "gpsbabel, gpsbabel-doc, gpsbabel-gui"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), qt5-qmake, pkg-config, libexpat1-dev, expat, libxml2-utils, libusb-1.0-0-dev, zlib1g-dev, libshp-dev, qtbase5-dev, qtwebengine5-dev [amd64 arm64 armhf i386 mips64el], qttools5-dev-tools, libqt5serialport5-dev, qttranslations5-l10n, imagemagick, locales-all, xsltproc, docbook-xsl"
+    "debhelper-compat (= 13), cmake, pkgconf, libexpat1-dev, expat, libxml2-utils, libusb-1.0-0-dev, zlib1g-dev, libshp-dev, qt6-5compat-dev, qt6-base-dev, qt6-serialport-dev, qt6-tools-dev, qt6-translations-l10n, qt6-webengine-dev [amd64 arm64 armhf i386], imagemagick, xsltproc, docbook-xsl"
   ],
   "Build-Depends-Indep": [
-    "fop, docbook-xml, libpaper-dev"
+    "fop, docbook-xml"
   ],
   "Checksums-Sha256": [
-    "b97275df0aa2e6a58f8d4b5ce45197d4ca1e1f6fd25dfd79a3b54ad9bcc822d0 2754 gpsbabel_1.8.0+ds-7.dsc f90cee4434ad4b0259f0bb4d1b685a221734fb6e380a9d9bff94860728292ec3 8725768 gpsbabel_1.8.0+ds.orig.tar.xz d640b7e17301868389ae4bde73e14870d51301022f633fb74fabd8626abdca3d 14788 gpsbabel_1.8.0+ds-7.debian.tar.xz"
+    "6d88a862012c280d1925d07395dfefe0fff223769d9edd3133dbb143191e0dee 2695 gpsbabel_1.9.0+ds-1.dsc dd23a469faeb8a2d4835850204af9aabcc4c6b9ce46cf9a60473f17a3a6b2d0b 8661860 gpsbabel_1.9.0+ds.orig.tar.xz 2f500b9760bbf2d8eb23c72e2f6280e134ddead1bd586a2b72419070fc31cda3 14340 gpsbabel_1.9.0+ds-1.debian.tar.xz"
   ],
   "Description": [
     "GPS file conversion plus transfer to/from GPS units GPSBabel converts waypoints, tracks, and routes from one format to another, whether that format is a common mapping format like Delorme, Streets and Trips, or even a serial upload or download to a GPS unit such as those from Garmin and Magellan."
@@ -21,7 +21,7 @@
     "pool/main/g/gpsbabel"
   ],
   "Files": [
-    "39e41f1597f71ed6358420f979a44598 2754 gpsbabel_1.8.0+ds-7.dsc a6255a39771cfcdba97ccded7ea50113 8725768 gpsbabel_1.8.0+ds.orig.tar.xz 3ecb7f625b80399d796d3e6b862a8fee 14788 gpsbabel_1.8.0+ds-7.debian.tar.xz"
+    "95e30f1214c2479a0d13265f544c5f8e 2695 gpsbabel_1.9.0+ds-1.dsc 86cf0f2a7409b7fe6a758f4d69d3e1cb 8661860 gpsbabel_1.9.0+ds.orig.tar.xz ce646b95342335974483e0e8e192511e 14340 gpsbabel_1.9.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "gpsbabel"
   ],
   "Package-List": [
-    "gpsbabel deb utils optional arch=any gpsbabel-doc deb doc optional arch=all gpsbabel-gui deb utils optional arch=amd64,arm64,armhf,i386,mips64el"
+    "gpsbabel deb utils optional arch=any gpsbabel-doc deb doc optional arch=all gpsbabel-gui deb utils optional arch=any"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gps-team/pkg-gpsbabel.git"
   ],
   "Version": [
-    "1.8.0+ds-7"
+    "1.9.0+ds-1"
   ]
 }
