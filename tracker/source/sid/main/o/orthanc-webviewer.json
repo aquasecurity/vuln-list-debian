@@ -6,16 +6,16 @@
     "orthanc-webviewer"
   ],
   "Build-Depends": [
-    "cmake, debhelper (\u003e= 10), libboost-all-dev, libgtest-dev, libjpeg-dev, libjs-jquery-ui, libjs-jquery-ui-theme-base, libjsoncpp-dev, liborthancframework-dev, libpng-dev, libsqlite3-dev, orthanc-dev (\u003e= 0.9.5), unzip, uuid-dev, yui-compressor, zlib1g-dev"
+    "cmake, debhelper-compat (= 13), libboost-all-dev, libgtest-dev, libjpeg-dev, libjs-jquery-ui, libjs-jquery-ui-theme-base, libjsoncpp-dev, liborthancframework-dev, libpng-dev, libsqlite3-dev, orthanc-dev, unzip, uuid-dev, yui-compressor, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "b7da62b8f996b76ceaaa218dd91abaec24a7e39c5f8022ff3356c1b0ea37db25 2290 orthanc-webviewer_2.8-2.dsc 14aed5dbc6d8a39ec14fcad615b74ac032bf042786bc55b26da13c6741e5b867 103308 orthanc-webviewer_2.8.orig.tar.xz d011a98745561d227b9f50c3d907c309faa26289fd7e79360924f882f84eb35f 254456 orthanc-webviewer_2.8-2.debian.tar.xz"
+    "92c51ed64827b7fdffafd88e30bbc1bceb853370ccfb478a7e853e733b2cd69d 2479 orthanc-webviewer_2.8-3.dsc 14aed5dbc6d8a39ec14fcad615b74ac032bf042786bc55b26da13c6741e5b867 103308 orthanc-webviewer_2.8.orig.tar.xz 22091636da537571ddb2925eb19266a4d26dd8b3a74d7c5932a90b1618985c28 255700 orthanc-webviewer_2.8-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/orthanc-webviewer"
   ],
   "Files": [
-    "3d65b8881db444aeefbf12309b48bd1e 2290 orthanc-webviewer_2.8-2.dsc f34f706f3c29a2626408f69ab1e6b256 103308 orthanc-webviewer_2.8.orig.tar.xz 485ccc322a93e076f97eb7d27d7b0570 254456 orthanc-webviewer_2.8-2.debian.tar.xz"
+    "cab4b424f6b44ce653d5cd17f4fabb14 2479 orthanc-webviewer_2.8-3.dsc f34f706f3c29a2626408f69ab1e6b256 103308 orthanc-webviewer_2.8.orig.tar.xz 13187bc826fe251b559a25796e5cf77d 255700 orthanc-webviewer_2.8-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, cmake, libgtest-dev, libjpeg-dev, libjsoncpp-dev, liborthancframework-dev, libpng-dev, libsqlite3-dev, orthanc-dev, orthanc-doc, uuid-dev"
   ],
   "Uploaders": [
     "Sebastien Jodogne \u003cs.jodogne@gmail.com\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/med-team/orthanc-webviewer.git"
   ],
   "Version": [
-    "2.8-2"
+    "2.8-3"
   ]
 }
