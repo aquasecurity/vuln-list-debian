@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-willow, python-willow-doc"
+    "python3-willow"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-mock, python3-opencv, python3-pil, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-sphinxcontrib.spelling, python3-wand"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, flit, python3-all, python3-filetype, python3-defusedxml, python3-pil, python3-wand, python3-opencv"
   ],
   "Checksums-Sha256": [
-    "2135aa4a55b0c3a8eb76f3d83918fd0925b9d0cc989baa5dd57542f1dc08918b 2177 willow_1.4-3.dsc ecddc04b84a70551997e7b402ebbe436d613e4bfa0352afbc3c056e328f57917 1950643 willow_1.4.orig.tar.gz 78ecc8cbd17f112fb5552bc8185f6e24420af8a7f325766630ba70c10f360563 3844 willow_1.4-3.debian.tar.xz"
+    "402ef7ebfe5bd5a44a0818c96444a67d70036d658a0b69be3798366bef7ae944 2187 willow_1.6.2-1.dsc fdb9f8df99d5d3871a1c772a1cbf5e5a8aef918aa6e047240a46bc502d99a47d 2746040 willow_1.6.2.orig.tar.gz 9df3533799235f7c036a9e3edd7c8284ac37cd849963ac8fb352eb96ef9212ff 4496 willow_1.6.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/willow"
   ],
   "Files": [
-    "5a751246cd3b1018eda597c27f4895fc 2177 willow_1.4-3.dsc 09bb378e59be906a4d3034f2b01fd547 1950643 willow_1.4.orig.tar.gz 4289e47ab77976e8845f5c1546846543 3844 willow_1.4-3.debian.tar.xz"
+    "8efe23ff0bb8d8719aa47401400a2192 2187 willow_1.6.2-1.dsc 0be099588c60baef77a5c9d2db02d20e 2746040 willow_1.6.2.orig.tar.gz a91debe6a3f4b050b79ac062cfd63609 4496 willow_1.6.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "willow"
   ],
   "Package-List": [
-    "python-willow-doc deb doc optional arch=all python3-willow deb python optional arch=all"
+    "python3-willow deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-opencv, python3-pil, python3-wand"
   ],
   "Uploaders": [
     "Christopher Hoskin \u003cmans0954@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/willow.git"
   ],
   "Version": [
-    "1.4-3"
+    "1.6.2-1"
   ]
 }
