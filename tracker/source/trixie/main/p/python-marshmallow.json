@@ -9,16 +9,16 @@
     "debhelper-compat (= 13)"
   ],
   "Build-Depends-Indep": [
-    "dh-python, python3-all, python3-dateutil, python3-pytest, python3-setuptools, python3-simplejson, python3-sphinx, python3-tz"
+    "dh-python, python3-all, python3-dateutil, python3-pytest, python3-setuptools, python3-simplejson, python3-sphinx, python3-tz, tzdata-legacy"
   ],
   "Checksums-Sha256": [
-    "6fd0d9e2fff1f67639f27014489dcceba40589aea4ff0709a7658c68224816e7 2216 python-marshmallow_3.18.0-1.dsc 23ac3a95212dd8c4c356dc89f166d0f22e148a1f083d915f1b634b2449150b28 181156 python-marshmallow_3.18.0.orig.tar.gz e9e3e13d1acd0d10c6ed2124571f3c4d8d7deb6ec46cb7403d8e34c4635a0f44 3328 python-marshmallow_3.18.0-1.debian.tar.xz"
+    "e64d756fffec0a431123c4a8face70453548fd3c61700effb5de737ef40cc07b 2284 python-marshmallow_3.20.1-1.1.dsc 1f37696dea0b6d4a9de04459ba694106531c42179547b286c81113e02234d1bf 183404 python-marshmallow_3.20.1.orig.tar.gz f69c2efc8bfa3c667274c42c31bdc7743e9461512204e7892b3c9f9b70853edb 3624 python-marshmallow_3.20.1-1.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-marshmallow"
   ],
   "Files": [
-    "d4c24d69f846aeba1c7cb89b697b1c20 2216 python-marshmallow_3.18.0-1.dsc 7c13cdaff2b6306d8d97862715b10923 181156 python-marshmallow_3.18.0.orig.tar.gz 79ff28b0381e27b278c0355db394acc0 3328 python-marshmallow_3.18.0-1.debian.tar.xz"
+    "a255976c1f39e273a3890655effde561 2284 python-marshmallow_3.20.1-1.1.dsc 1b2dd23689d880667591dc6edc886344 183404 python-marshmallow_3.20.1.orig.tar.gz 5354516731cd94cd7df49788b91ba32b 3624 python-marshmallow_3.20.1-1.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/python-marshmallow"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian/python-marshmallow.git"
   ],
   "Version": [
-    "3.18.0-1"
+    "3.20.1-1.1"
   ]
 }
