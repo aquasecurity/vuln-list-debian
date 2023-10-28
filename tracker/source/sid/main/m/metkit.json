@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64 kfreebsd-amd64 ia64 alpha all"
+    "any all"
   ],
   "Binary": [
     "libmetkit0d, libmetkit-data, libmetkit-dev, libmetkit-utils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ecbuild (\u003e= 3.7.2-1~), gfortran | fortran-compiler, libeckit-dev (\u003e= 1.23.1-1~), libodc-dev [!powerpc !armel !armhf !i386 !mipsel], odc [!powerpc !armel !armhf !i386 !mipsel], libeccodes-dev, libeccodes-tools, libopenjp2-7-dev"
+    "debhelper-compat (= 13), architecture-is-64-bit, ecbuild (\u003e= 3.7.2-1~), gfortran | fortran-compiler, libeckit-dev (\u003e= 1.23.1-1~), libodc-dev, odc, libeccodes-dev, libeccodes-tools, libopenjp2-7-dev"
   ],
   "Checksums-Sha256": [
-    "73f509f1a21e3b57a7b8dfa8ebfb94300d9e0dbdba8a4c9bc395e3c7775abc67 2593 metkit_1.10.17-1.dsc 40f7ed84c34450e5184e8f265993650241869fdc1ca593c3b3f3192b1ac91666 415372 metkit_1.10.17.orig.tar.xz 07c531ba3e82eb100ad927c262a1141d252f0d50622f2562f9c3f2f1cc280b95 4532 metkit_1.10.17-1.debian.tar.xz"
+    "9f5ba9ceff932b498e4bd6d3bdb87a5afff65760aa384a9a4704afbd3bdac5b4 2223 metkit_1.10.19-1.dsc 7b5ee68aee49b1e1fc5d3cf9cc20fda5cf2d697d1089e7a5d1c9b17e41a5923d 415300 metkit_1.10.19.orig.tar.xz 0c14c89ffe51cb36021558273f82bfe1cee298321eb79460941baf1a0a4aed82 4508 metkit_1.10.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/metkit"
   ],
   "Files": [
-    "b04d451082e7dbed130f64e540887825 2593 metkit_1.10.17-1.dsc ee75bd5cab4a73faa85c5064474bc394 415372 metkit_1.10.17.orig.tar.xz 80880f8598ed3c3970c4cf4bba3255d2 4532 metkit_1.10.17-1.debian.tar.xz"
+    "d2bac9e5a59fa135b8617fffd23baf0c 2223 metkit_1.10.19-1.dsc 7951f2f62fb4426c8eb201259de630a6 415300 metkit_1.10.19.orig.tar.xz fbb42bb0bbf5bf520a490a4110225e0c 4508 metkit_1.10.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "metkit"
   ],
   "Package-List": [
-    "libmetkit-data deb utils optional arch=all libmetkit-dev deb libdevel optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libmetkit-utils deb utils optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libmetkit0d deb libs optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha"
+    "libmetkit-data deb utils optional arch=all libmetkit-dev deb libdevel optional arch=any libmetkit-utils deb utils optional arch=any libmetkit0d deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org/science-team/metkit.git -b debian/latest"
   ],
   "Version": [
-    "1.10.17-1"
+    "1.10.19-1"
   ]
 }
