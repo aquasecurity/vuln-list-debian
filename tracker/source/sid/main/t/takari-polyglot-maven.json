@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "libtakari-polyglot-maven-java"
+    "libtakari-polyglot-maven-java, libtakari-polyglot-groovy-java, libtakari-polyglot-maven-plugin-java, libtakari-polyglot-ruby-java"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk, groovy, junit4, libcommons-logging-java, libplexus-component-metadata-java, maven-debian-helper"
+    "debhelper-compat (= 13), default-jdk-headless, groovy, jruby (\u003e= 9.3.9.0), libcommons-logging-java, libjruby-maven-plugin-java, libplexus-component-metadata-java, maven-debian-helper, ruby-maven-tools"
   ],
   "Checksums-Sha256": [
-    "54cae84b1f5f3911de25c5e6902a153722d9e51548a8b213aeaca2c8af2f8ade 2268 takari-polyglot-maven_0.4.11-1.dsc 163814ebd8574b46e6c823290e4bc291d4a8093c6fb93bb9905f76ff8c5502d9 231572 takari-polyglot-maven_0.4.11.orig.tar.xz a58afad7d92abf5a63e65ec26514fb9f385a6d55491a8901419e5fdb730e2d11 7324 takari-polyglot-maven_0.4.11-1.debian.tar.xz"
+    "1ea9a11b21809b42dee5812bc6ec77818f8d5ba35e64c26f1ce7b84a2a5c96bc 2022 takari-polyglot-maven_0.4.11-2.dsc 163814ebd8574b46e6c823290e4bc291d4a8093c6fb93bb9905f76ff8c5502d9 231572 takari-polyglot-maven_0.4.11.orig.tar.xz 20fe2928b9e768256a033d71151b44fdcbf9f8c7d2e12947d80b2a218a5b6f6e 8904 takari-polyglot-maven_0.4.11-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/takari-polyglot-maven"
   ],
   "Files": [
-    "75a4213816c1e50482e01fff3de2f5f0 2268 takari-polyglot-maven_0.4.11-1.dsc 2edf5cb78d99731ef4d1ea10645f4675 231572 takari-polyglot-maven_0.4.11.orig.tar.xz 952139b33a54db5bba8e8356cc13a511 7324 takari-polyglot-maven_0.4.11-1.debian.tar.xz"
+    "9ed0d438119e88aff6b56572edbec6bc 2022 takari-polyglot-maven_0.4.11-2.dsc 2edf5cb78d99731ef4d1ea10645f4675 231572 takari-polyglot-maven_0.4.11.orig.tar.xz 74f0051122a78990383e37374a510802 8904 takari-polyglot-maven_0.4.11-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "takari-polyglot-maven"
   ],
   "Package-List": [
-    "libtakari-polyglot-maven-java deb java optional arch=all"
+    "libtakari-polyglot-groovy-java deb java optional arch=all libtakari-polyglot-maven-java deb java optional arch=all libtakari-polyglot-maven-plugin-java deb java optional arch=all libtakari-polyglot-ruby-java deb java optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "4.6.2"
   ],
   "Uploaders": [
-    "Sudip Mukherjee \u003csudipm.mukherjee@gmail.com\u003e, tony mancill \u003ctmancill@debian.org\u003e"
+    "Sudip Mukherjee \u003csudipm.mukherjee@gmail.com\u003e, tony mancill \u003ctmancill@debian.org\u003e, Jérôme Charaoui \u003cjerome@riseup.net\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/java-team/takari-polyglot-maven"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/java-team/takari-polyglot-maven.git"
   ],
   "Version": [
-    "0.4.11-1"
+    "0.4.11-2"
   ]
 }
