@@ -6,10 +6,10 @@
     "python3-xarray-datatree"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-h5netcdf, python3-netcdf4, python3-pytest, python3-setuptools, python3-setuptools-scm, python3-xarray, python3-zarr"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-h5netcdf, python3-netcdf4, python3-packaging, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-xarray, python3-zarr"
   ],
   "Checksums-Sha256": [
-    "7412625b9870ede8902ac71d8a0b33422fc7f86fb9ea6cca702e19902a5bae41 3604 xarray-datatree_0.0.12-2.dsc 1a7152afeb38102c85f277da8726597f22a89ae930a8efe6d42a492558e82847 78032 xarray-datatree_0.0.12.orig.tar.gz f9c1851af895281816c429dfa877fd441a64c06fceed634ff4c2ed3ffbde1a25 3848 xarray-datatree_0.0.12-2.debian.tar.xz"
+    "4354060665319738eb7d0c5cf9692bbabda78d789dd4e0f137435f665de54808 3638 xarray-datatree_0.0.13-1.dsc 10b2d1c30be845cfcba33b3400b770d44005477d49e9d950fad7f014c3aeb4ff 83341 xarray-datatree_0.0.13.orig.tar.gz cba4e6dd3100f79f2591c2c1a3a09af7aeb2bc2fc4d75ea536e10d4801ccd44e 3180 xarray-datatree_0.0.13-1.debian.tar.xz"
   ],
   "Description": [
     "Tree-like hierarchical data structure for xarray Datatree provides hierarchical data structure, more flexible than a single xarray.Dataset object. It is able to represent netCDF files / Zarr stores with multiple nested groups in a single in-memory object, but datatree.DataTree objects have many other uses, such as: . * organising many related datasets, e.g. results of the same experiment with different parameters, or simulations of the same system using different models, * analysing similar data at multiple resolutions simultaneously, such as when doing a convergence study, * comparing heterogenous but related data, such as experimental and theoretical data, I/O with nested data formats such as netCDF / Zarr groups. . The approach used is based on benbovy's DatasetNode example, the basic idea is that each tree node wraps a up to a single xarray.Dataset. The differences are that datatree: . * uses a node structure inspired by anytree for the tree, * implements path-like getting and setting, * has functions for mapping user-supplied functions over every node in the tree, * automatically dispatches some of xarray.Dataset's API over every node in the tree (such as .isel), * has a bunch of tests, * has a printable representation"
@@ -18,7 +18,7 @@
     "pool/main/x/xarray-datatree"
   ],
   "Files": [
-    "89e97e3e0d72dacc6e6a9af401678652 3604 xarray-datatree_0.0.12-2.dsc a73276717e0d66d90927aaa7f064d55c 78032 xarray-datatree_0.0.12.orig.tar.gz b2ec1a0c71a5b9baf3fdff76f2f20bf0 3848 xarray-datatree_0.0.12-2.debian.tar.xz"
+    "3d9ea7f31ce141a5bf76da5dddbdc403 3638 xarray-datatree_0.0.13-1.dsc 3514ba80836d0b8ef862c330cb98d5b0 83341 xarray-datatree_0.0.13.orig.tar.gz 8c79186d86f885783a39a48985b43e7c 3180 xarray-datatree_0.0.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-pybuild"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/xarray-datatree.git"
   ],
   "Version": [
-    "0.0.12-2"
+    "0.0.13-1"
   ]
 }
