@@ -6,16 +6,16 @@
     "librust-ripasso-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-config-0.11+toml-dev \u003c!nocheck\u003e, librust-git2-0.16+default-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-gpgme-0.10+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-reqwest-0.11+blocking-dev \u003c!nocheck\u003e, librust-reqwest-0.11+default-dev \u003c!nocheck\u003e, librust-sequoia-ipc-0.28+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1+default-dev \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e, librust-totp-rs-3+default-dev \u003c!nocheck\u003e, librust-totp-rs-3+otpauth-dev \u003c!nocheck\u003e, librust-whoami-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.66-~~) \u003c!nocheck\u003e, librust-base64-0.21+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-config-0.11+toml-dev \u003c!nocheck\u003e, librust-git2-0.16+default-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-gpgme-0+default-dev (\u003e= 0.10-~~) \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-hmac-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-reqwest-0.11+blocking-dev (\u003e= 0.11.12-~~) \u003c!nocheck\u003e, librust-reqwest-0.11+default-dev (\u003e= 0.11.12-~~) \u003c!nocheck\u003e, librust-sequoia-ipc-0.28+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1+default-dev (\u003e= 1.13.0-~~) \u003c!nocheck\u003e, librust-sha1-0.10+default-dev (\u003e= 0.10.5-~~) \u003c!nocheck\u003e, librust-sha2-0.10+default-dev (\u003e= 0.10.6-~~) \u003c!nocheck\u003e, librust-toml-0.5+default-dev (\u003e= 0.5.9-~~) \u003c!nocheck\u003e, librust-totp-rs-3+default-dev \u003c!nocheck\u003e, librust-totp-rs-3+otpauth-dev \u003c!nocheck\u003e, librust-whoami-1+default-dev (\u003e= 1.2.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "52a8b4b31ef6df34b0004dbc5ed3a3c75b8a5e9eb3c065d3b740337b4c85c523 2926 rust-ripasso_0.6.1-2.dsc f0afa158896d20e41997a24bfbcb58cfd4fef1ffaff60d23819209a7b7c213f0 425284 rust-ripasso_0.6.1.orig.tar.gz 3f510800e3f1ad8d1434c6a18e98a801f7a26df600da334684b4b95d3de78124 4272 rust-ripasso_0.6.1-2.debian.tar.xz"
+    "a3de68268f6dde979e5fef886aa18c64673973941b328bcd43b365fe1f82dc47 3302 rust-ripasso_0.6.4-1.dsc 9d1abc21f91641421efe9c9ef775a1a3f81ae8e2b13a81fcaabea829d07ced41 429623 rust-ripasso_0.6.4.orig.tar.gz b086850d922206d8be8eac15ffa480d3315af26da5e2c207618aa9b11dc065f7 3932 rust-ripasso_0.6.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ripasso"
   ],
   "Files": [
-    "30b03f1ed9a2d31da5cdbdc5dd894fa5 2926 rust-ripasso_0.6.1-2.dsc 95a70ccf3c352889e3cc4a953f59fb02 425284 rust-ripasso_0.6.1.orig.tar.gz 8b21a298406f0b8210229ca59b70095b 4272 rust-ripasso_0.6.1-2.debian.tar.xz"
+    "ce4df6e5e9ce209f109ac65cebd9dc0d 3302 rust-ripasso_0.6.4-1.dsc 4457e8e8c381452231ad500ef0e7f222 429623 rust-ripasso_0.6.4.orig.tar.gz fc93dfa5e6ab8794976248f800450fb2 3932 rust-ripasso_0.6.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-flate2-1+default-dev, librust-tar-0.4+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-criterion-0.3+default-dev, librust-flate2-1+default-dev, librust-tar-0.4+default-dev, librust-tempfile-3+default-dev"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ripasso]"
   ],
   "Version": [
-    "0.6.1-2"
+    "0.6.4-1"
   ]
 }
