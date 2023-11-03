@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64 kfreebsd-amd64 ia64 alpha"
+    "any"
   ],
   "Binary": [
     "libfdb5-0d, libfdb5-dev, fdb5"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), architecture-is-64-bit, ecbuild (\u003e= 3.3.0-3), libeckit-dev (\u003e= 1.23.0-1~), libeccodes-dev, libopenjp2-7-dev, libmetkit-dev, libodc-dev, libmetkit-utils (\u003e= 1.8.10~1~), libpmem-dev [amd64 arm64 ppc64el riscv64], librados-dev, libeccodes-tools"
+    "debhelper-compat (= 13), architecture-is-64-bit, ecbuild (\u003e= 3.3.0-3), libeckit-dev (\u003e= 1.23.0-1~), libeccodes-dev, libopenjp2-7-dev, libmetkit-dev, libodc-dev, libmetkit-utils (\u003e= 1.8.10~1~), libpmem-dev [amd64 arm64 ppc64el riscv64], librados-dev [!sparc64 !ppc64 !alpha !loong64], libeccodes-tools"
   ],
   "Checksums-Sha256": [
-    "76945209b7809ae155f68905ba2dd6ccd99ca0969856b752eddbed415b986335 2746 fdb_5.11.23-2.dsc 9e4cfdc58f2d748b1cac4c56f02d00136eb541340012b3b0b63f329f54f268dd 56873080 fdb_5.11.23.orig-data.tar.xz 1531f13a21c299ce173cd09f26dbafeef6797f54d6c08f020434d62d568bc3ad 1651448 fdb_5.11.23.orig.tar.xz 034118299de641485ffdeaf20a7d52d55a45430f2427eabaf7823826f4de072f 7916 fdb_5.11.23-2.debian.tar.xz"
+    "06be4c28f86680247ec629e6da8bb821de92bec272ec798249ffbdc834338c7e 2464 fdb_5.11.25-1.dsc 9e4cfdc58f2d748b1cac4c56f02d00136eb541340012b3b0b63f329f54f268dd 56873080 fdb_5.11.25.orig-data.tar.xz f2415e5ebc7403079cfeff47faff59d499377752a01ff1de6c2c4dd46a5bbbad 1654600 fdb_5.11.25.orig.tar.xz f8e292ec8c00eace14f564bfad882a7eff91e076ae4d6ca97b7fe482be8c7fc6 7952 fdb_5.11.25-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fdb"
   ],
   "Files": [
-    "03308016cebf7d620f906c2df14ddf71 2746 fdb_5.11.23-2.dsc cccf46897362cacdfcdc5710e097b753 56873080 fdb_5.11.23.orig-data.tar.xz d4cebbaaab68d702e2eef3c02f694eab 1651448 fdb_5.11.23.orig.tar.xz e44be0e3ac998257b99f1445f5dc4065 7916 fdb_5.11.23-2.debian.tar.xz"
+    "db8796b2db3b05d4756c9ec09bed8f29 2464 fdb_5.11.25-1.dsc cccf46897362cacdfcdc5710e097b753 56873080 fdb_5.11.25.orig-data.tar.xz d39781f57b997219f5005fd68a6304f8 1654600 fdb_5.11.25.orig.tar.xz 408aaec3d8190d6c3e78f1a7e2e41d6c 7952 fdb_5.11.25-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "fdb"
   ],
   "Package-List": [
-    "fdb5 deb utils optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libfdb5-0d deb libs optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libfdb5-dev deb libdevel optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha"
+    "fdb5 deb utils optional arch=any libfdb5-0d deb libs optional arch=any libfdb5-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org:/science-team/fdb.git -b debian/latest"
   ],
   "Version": [
-    "5.11.23-2"
+    "5.11.25-1"
   ]
 }
