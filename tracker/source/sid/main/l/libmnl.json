@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "libmnl-dev, libmnl0"
+    "libmnl-dev, libmnl0, libmnl-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), libtool, pkg-config"
+    "debhelper-compat (= 13), libtool, pkg-config"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "9dc308ffade8cc0cb7a7ee8925e25f338121f642a9a9caef535effd893d4830a 2071 libmnl_1.0.4-3.dsc 171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81 301270 libmnl_1.0.4.orig.tar.bz2 7f5a5c246ee6d6d65efd01db289886c0ea986546f112e70c3006b50d0e6fabc1 7780 libmnl_1.0.4-3.debian.tar.xz"
+    "c2cd0719facd01f70474f9d9f210be6e7652ce2f8335638fe851c64792298ef2 2505 libmnl_1.0.5-1.dsc 274b9b919ef3152bfb3da3a13c950dd60d6e2bcd54230ffeca298d03b40d0525 314791 libmnl_1.0.5.orig.tar.bz2 7175ee1de6c831e6d7ffae3540af7fcd9c64f302351af55ff12966ecbe6a5b71 833 libmnl_1.0.5.orig.tar.bz2.asc 5080665710591ea31267bd40585239d1f04f5071f6d06e46f0682c108137a22f 9924 libmnl_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libm/libmnl"
   ],
   "Files": [
-    "a0c116591eb7551e96857716b133773a 2071 libmnl_1.0.4-3.dsc be9b4b5328c6da1bda565ac5dffadb2d 301270 libmnl_1.0.4.orig.tar.bz2 432e7e5ea9eef073aa922b0c8d9405a3 7780 libmnl_1.0.4-3.debian.tar.xz"
+    "6585d21c5f86108826a4036477df0eec 2505 libmnl_1.0.5-1.dsc 0bbb70573119ec5d49435114583e7a49 314791 libmnl_1.0.5.orig.tar.bz2 ed1bd729d077c72bb7afd362b6026894 833 libmnl_1.0.5.orig.tar.bz2.asc c404bb153baf95bf35ea7a8b64efd880 9924 libmnl_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "libmnl"
   ],
   "Package-List": [
-    "libmnl-dev deb libdevel optional arch=linux-any libmnl0 deb libs optional arch=linux-any"
+    "libmnl-dev deb libdevel optional arch=linux-any libmnl-doc deb doc optional arch=all profile=!nodoc libmnl0 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "source"
@@ -39,10 +42,10 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.6.2"
   ],
   "Uploaders": [
-    "Neutron Soutmun \u003cneutrons@debian.org\u003e, Arturo Borrero Gonzalez \u003carturo@debian.org\u003e"
+    "Neutron Soutmun \u003cneutrons@debian.org\u003e, Arturo Borrero Gonzalez \u003carturo@debian.org\u003e, Jeremy Sowden \u003cjeremy@azazel.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/pkg-netfilter-team/pkg-libmnl"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/pkg-netfilter-team/pkg-libmnl.git"
   ],
   "Version": [
-    "1.0.4-3"
+    "1.0.5-1"
   ]
 }
