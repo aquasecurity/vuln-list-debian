@@ -6,16 +6,16 @@
     "pinentry-curses, pinentry-tty, pinentry-qt, pinentry-gtk2, pinentry-fltk, pinentry-gnome3, pinentry-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libassuan-dev (\u003e= 2.1.0), libfltk1.3-dev, libgcr-3-dev, libglib2.0-dev (\u003e= 2.15.5), libgpg-error-dev (\u003e= 1.16), libgtk2.0-dev (\u003e= 2.4.0), libncurses5-dev, libncursesw5-dev, libqt5waylandclient5-dev, libsecret-1-dev, m4, pkg-config, qtbase5-dev, texinfo"
+    "debhelper-compat (= 13), libassuan-dev (\u003e= 2.1.0), libfltk1.3-dev \u003c!pkg.pinentry.onlytty\u003e, libgcr-3-dev \u003c!pkg.pinentry.onlytty\u003e, libglib2.0-dev (\u003e= 2.15.5) \u003c!pkg.pinentry.onlytty\u003e, libgpg-error-dev (\u003e= 1.16), libgtk2.0-dev (\u003e= 2.4.0) \u003c!pkg.pinentry.onlytty\u003e, libncurses-dev \u003c!pkg.pinentry.onlytty\u003e, libqt5waylandclient5-dev \u003c!pkg.pinentry.onlytty\u003e, libsecret-1-dev \u003c!pkg.pinentry.onlytty\u003e, m4, pkg-config, qtbase5-dev \u003c!pkg.pinentry.onlytty\u003e, texinfo"
   ],
   "Checksums-Sha256": [
-    "cb45060817fa5563d76591d99f0a7596aa069101710545852ec34a70a387597e 2242 pinentry_1.2.1-1.dsc 457a185e5a85238fb945a955dc6352ab962dc8b48720b62fc9fa48c7540a4067 547698 pinentry_1.2.1.orig.tar.bz2 9f7d9c7509e4ff4161a043893d76183bd975230fcad671b643c90f78e500ba95 390 pinentry_1.2.1.orig.tar.bz2.asc ae1bd8af99fe91bd3877b6fd3d606facbfb1be02d0227da7cc81f54f7fe2f708 18568 pinentry_1.2.1-1.debian.tar.xz"
+    "679a692b8a34c68a9146869347a09164d952a4b79dd2daa6ca20a1caa6aed8e8 3170 pinentry_1.2.1-3.dsc 457a185e5a85238fb945a955dc6352ab962dc8b48720b62fc9fa48c7540a4067 547698 pinentry_1.2.1.orig.tar.bz2 9f7d9c7509e4ff4161a043893d76183bd975230fcad671b643c90f78e500ba95 390 pinentry_1.2.1.orig.tar.bz2.asc 7919390ebf6fdf2f8e4e05231bc1348edb119396d29d66718478775bb4c9a0ba 18864 pinentry_1.2.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pinentry"
   ],
   "Files": [
-    "da21f8b7370d2692ff76b2f907617d06 2242 pinentry_1.2.1-1.dsc be9b0d4bb493a139d2ec20e9b6872d37 547698 pinentry_1.2.1.orig.tar.bz2 87bcb895a0c2a7b6cb46d6562aa864fd 390 pinentry_1.2.1.orig.tar.bz2.asc 6070db7a75f43dda77d183f4e1e77eb8 18568 pinentry_1.2.1-1.debian.tar.xz"
+    "a779df50c3fdc9283d4cc8c678f982ee 3170 pinentry_1.2.1-3.dsc be9b0d4bb493a139d2ec20e9b6872d37 547698 pinentry_1.2.1.orig.tar.bz2 87bcb895a0c2a7b6cb46d6562aa864fd 390 pinentry_1.2.1.orig.tar.bz2.asc 29da8cbc3b55e98bf14af2779681456e 18864 pinentry_1.2.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pinentry"
   ],
   "Package-List": [
-    "pinentry-curses deb utils optional arch=any pinentry-doc deb doc optional arch=all pinentry-fltk deb utils optional arch=any pinentry-gnome3 deb utils optional arch=any pinentry-gtk2 deb utils optional arch=any pinentry-qt deb utils optional arch=any pinentry-tty deb utils optional arch=any"
+    "pinentry-curses deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-doc deb doc optional arch=all pinentry-fltk deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-gnome3 deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-gtk2 deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-qt deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-tty deb utils optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "utils"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/pinentry.git"
   ],
   "Version": [
-    "1.2.1-1"
+    "1.2.1-3"
   ]
 }
