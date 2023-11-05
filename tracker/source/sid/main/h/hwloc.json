@@ -9,19 +9,19 @@
     "autoconf2.13"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-exec, libltdl-dev [!gnu-any-any], valgrind-if-available, libcairo2-dev, libx11-dev, libxml2-dev, libxml2-utils \u003c!nocheck\u003e, libncurses-dev, libnuma-dev [linux-any] \u003c!nocheck\u003e, libxnvctrl-dev, libpciaccess-dev, libudev-dev [linux-any], pkg-config, ocl-icd-opencl-dev [!hurd-any] | opencl-dev, opencl-headers, autoconf (\u003e= 2.63), dpkg-dev (\u003e= 1.16)"
+    "debhelper-compat (= 12), dh-exec, libltdl-dev [!gnu-any-any] \u003c!pkg.hwloc.minimum\u003e, valgrind-if-available \u003c!pkg.hwloc.minimum\u003e, libcairo2-dev \u003c!pkg.hwloc.minimum\u003e, libx11-dev \u003c!pkg.hwloc.minimum\u003e, libxml2-dev \u003c!pkg.hwloc.minimum\u003e, libxml2-utils \u003c!nocheck !pkg.hwloc.minimum\u003e, libncurses-dev \u003c!pkg.hwloc.minimum\u003e, libnuma-dev [linux-any] \u003c!nocheck !pkg.hwloc.minimum\u003e, libxnvctrl-dev \u003c!pkg.hwloc.minimum\u003e, libpciaccess-dev \u003c!pkg.hwloc.minimum\u003e, libudev-dev [linux-any] \u003c!pkg.hwloc.minimum\u003e, pkg-config, ocl-icd-opencl-dev [!hurd-any] \u003c!pkg.hwloc.minimum\u003e | opencl-dev \u003c!pkg.hwloc.minimum\u003e, opencl-headers \u003c!pkg.hwloc.minimum\u003e, autoconf (\u003e= 2.63), dpkg-dev (\u003e= 1.16)"
   ],
   "Build-Depends-Indep": [
-    "doxygen-latex, transfig"
+    "doxygen-latex \u003c!nodoc\u003e, transfig \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "4ab52a9d61955523b05ee2ff66d730c2c96cbfc40102147ade4d6e4c0165784c 2685 hwloc_2.9.3-1.dsc 5c4062ce556f6d3451fc177ffb8673a2120f81df6835dea6a21a90fbdfff0dec 6986142 hwloc_2.9.3.orig.tar.bz2 60e694969cdaa1b6a530f43d26d692f3cae6629f207a5d6c6051829ab818e190 13356 hwloc_2.9.3-1.debian.tar.xz"
+    "df77b4d396336e83986ce48c5b6fcb37f4ef743689bc58dbbf96ac36c0de868e 3062 hwloc_2.9.3-2.dsc 5c4062ce556f6d3451fc177ffb8673a2120f81df6835dea6a21a90fbdfff0dec 6986142 hwloc_2.9.3.orig.tar.bz2 c0e18671de2f23e498fdd96ed22924e459303fb775be1e3560bd5a0cd3da582b 13548 hwloc_2.9.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hwloc"
   ],
   "Files": [
-    "0ebb5a74b568bec1d981be4a20a25853 2685 hwloc_2.9.3-1.dsc d3eb9cc49b66d607fcc81ab68aeb6156 6986142 hwloc_2.9.3.orig.tar.bz2 a986d8b792d971535dba2058afd1dfb4 13356 hwloc_2.9.3-1.debian.tar.xz"
+    "289e9ab9508a8ebfb3753bbd148ab257 3062 hwloc_2.9.3-2.dsc d3eb9cc49b66d607fcc81ab68aeb6156 6986142 hwloc_2.9.3.orig.tar.bz2 88870c19db5b7c35344525610b780843 13548 hwloc_2.9.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "hwloc"
   ],
   "Package-List": [
-    "hwloc deb admin optional arch=any hwloc-nox deb admin optional arch=any libhwloc-common deb libs optional arch=all libhwloc-dev deb libdevel optional arch=any libhwloc-doc deb doc optional arch=all libhwloc-plugins deb libs optional arch=any libhwloc15 deb libs optional arch=any"
+    "hwloc deb admin optional arch=any profile=!pkg.hwloc.minimum hwloc-nox deb admin optional arch=any libhwloc-common deb libs optional arch=all libhwloc-dev deb libdevel optional arch=any libhwloc-doc deb doc optional arch=all profile=!nodoc libhwloc-plugins deb libs optional arch=any profile=!pkg.hwloc.minimum libhwloc15 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/hwloc.git"
   ],
   "Version": [
-    "2.9.3-1"
+    "2.9.3-2"
   ]
 }
