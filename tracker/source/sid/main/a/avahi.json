@@ -6,19 +6,19 @@
     "avahi-daemon, avahi-dnsconfd, avahi-autoipd, python3-avahi, avahi-utils, avahi-discover, libavahi-common3, libavahi-common-data, libavahi-common-dev, libavahi-core7, libavahi-core-dev, libavahi-client3, libavahi-client-dev, libavahi-glib1, libavahi-glib-dev, libavahi-gobject0, libavahi-gobject-dev, libavahi-compat-libdnssd1, libavahi-compat-libdnssd-dev, libavahi-ui-gtk3-0, libavahi-ui-gtk3-dev, avahi-ui-utils, gir1.2-avahi-0.6"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13.11.6~), debhelper-compat (= 13), dh-sequence-gir, dh-sequence-python3, intltool, libcap-dev [linux-any], libdaemon-dev, libdbus-1-dev, libexpat-dev, libgdbm-dev, libgirepository1.0-dev, libglib2.0-dev, libgtk-3-dev \u003c!pkg.avahi.nogui\u003e, pkgconf, python-gi-dev \u003c!nopython\u003e, python3, python3-dbus \u003c!nopython\u003e, python3-gdbm, python3-gi \u003c!nopython\u003e, xmltoman"
+    "debhelper (\u003e= 13.11.6~), debhelper-compat (= 13), dh-sequence-gir \u003c!nogir\u003e, dh-sequence-python3, intltool, libcap-dev [linux-any], libdaemon-dev, libdbus-1-dev, libexpat-dev, libgdbm-dev, libgirepository1.0-dev \u003c!nogir\u003e, libglib2.0-dev, libgtk-3-dev \u003c!pkg.avahi.nogui\u003e, pkgconf, python-gi-dev \u003c!nopython\u003e, python3, python3-dbus \u003c!nopython\u003e, python3-gdbm, python3-gi \u003c!nopython\u003e, xmltoman"
   ],
   "Checksums-Sha256": [
-    "316213a4c12bfb02afec5a899842435a07fe9da8a50c6a830e79d1063da8d157 4105 avahi_0.8-12.dsc 060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda 1591458 avahi_0.8.orig.tar.gz 923200bd2eb5705a3d0f595f3ce07a1b71877b0257fdb73a18343e87a90431e2 39924 avahi_0.8-12.debian.tar.xz"
+    "faf89ba513268aee052fd1b45d23d6084f703202c3b705133da3296e1b66ddef 4153 avahi_0.8-13.dsc 060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda 1591458 avahi_0.8.orig.tar.gz 79a294f880d900b2704e520c0894709e3e259b905617b20b3c0b8dc5449e3066 40452 avahi_0.8-13.debian.tar.xz"
   ],
   "Dgit": [
-    "73798a2b1fdc6d014730e3d9c4ae2b134b03384a debian archive/debian/0.8-12 https://git.dgit.debian.org/avahi"
+    "0e28774f15883c8e9be7ecdfd841c14e8557c62f debian archive/debian/0.8-13 https://git.dgit.debian.org/avahi"
   ],
   "Directory": [
     "pool/main/a/avahi"
   ],
   "Files": [
-    "d20a21469cd095ab2c27a1361e9e8bab 4105 avahi_0.8-12.dsc 229c6aa30674fc43c202b22c5f8c2be7 1591458 avahi_0.8.orig.tar.gz 8f7af3b10000181dcef2db0ee257bdb1 39924 avahi_0.8-12.debian.tar.xz"
+    "bf87cf2e77216af745f3ec11d34bdff4 4153 avahi_0.8-13.dsc 229c6aa30674fc43c202b22c5f8c2be7 1591458 avahi_0.8.orig.tar.gz 5f357213472eb0c0ea18cca81ca7ef39 40452 avahi_0.8-13.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "avahi"
   ],
   "Package-List": [
-    "avahi-autoipd deb net optional arch=linux-any avahi-daemon deb net optional arch=any avahi-discover deb net optional arch=all profile=!nopython,!pkg.avahi.nogui avahi-dnsconfd deb net optional arch=any avahi-ui-utils deb utils optional arch=any profile=!pkg.avahi.nogui avahi-utils deb net optional arch=any gir1.2-avahi-0.6 deb introspection optional arch=any libavahi-client-dev deb libdevel optional arch=any libavahi-client3 deb libs optional arch=any libavahi-common-data deb libs optional arch=any libavahi-common-dev deb libdevel optional arch=any libavahi-common3 deb libs optional arch=any libavahi-compat-libdnssd-dev deb libdevel optional arch=any libavahi-compat-libdnssd1 deb libs optional arch=any libavahi-core-dev deb libdevel optional arch=any libavahi-core7 deb libs optional arch=any libavahi-glib-dev deb libdevel optional arch=any libavahi-glib1 deb libs optional arch=any libavahi-gobject-dev deb libdevel optional arch=any libavahi-gobject0 deb libs optional arch=any libavahi-ui-gtk3-0 deb libs optional arch=any profile=!pkg.avahi.nogui libavahi-ui-gtk3-dev deb libdevel optional arch=any profile=!pkg.avahi.nogui python3-avahi deb python optional arch=any profile=!nopython"
+    "avahi-autoipd deb net optional arch=linux-any avahi-daemon deb net optional arch=any avahi-discover deb net optional arch=all profile=!nopython,!pkg.avahi.nogui avahi-dnsconfd deb net optional arch=any avahi-ui-utils deb utils optional arch=any profile=!pkg.avahi.nogui avahi-utils deb net optional arch=any gir1.2-avahi-0.6 deb introspection optional arch=any profile=!nogir libavahi-client-dev deb libdevel optional arch=any libavahi-client3 deb libs optional arch=any libavahi-common-data deb libs optional arch=any libavahi-common-dev deb libdevel optional arch=any libavahi-common3 deb libs optional arch=any libavahi-compat-libdnssd-dev deb libdevel optional arch=any libavahi-compat-libdnssd1 deb libs optional arch=any libavahi-core-dev deb libdevel optional arch=any libavahi-core7 deb libs optional arch=any libavahi-glib-dev deb libdevel optional arch=any libavahi-glib1 deb libs optional arch=any libavahi-gobject-dev deb libdevel optional arch=any profile=!nogir libavahi-gobject0 deb libs optional arch=any libavahi-ui-gtk3-0 deb libs optional arch=any profile=!pkg.avahi.nogui libavahi-ui-gtk3-dev deb libdevel optional arch=any profile=!pkg.avahi.nogui python3-avahi deb python optional arch=any profile=!nopython"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/utopia-team/avahi.git"
   ],
   "Version": [
-    "0.8-12"
+    "0.8-13"
   ]
 }
