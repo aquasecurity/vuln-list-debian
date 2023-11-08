@@ -6,19 +6,19 @@
     "python3-pyvo"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-numpy (\u003e= 1.4.0), python3-requests, python3-astropy (\u003e= 1.2.1)"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-astropy, python3-pytest \u003c!nocheck\u003e, python3-requests, python3-requests-mock \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "python3-setuptools, python3-astropy-helpers (\u003e= 1.2)"
+    "python3-setuptools, python3-setuptools-scm"
   ],
   "Checksums-Sha256": [
-    "247a7cd158f001942dce4e998d827317d81ac27d6c802fa3194814a099a3f35d 2136 pyvo_1.2.1-1.dsc 8459ee8a78358077d480fd78a4d8c89fd0f243f46ec08c19bdd01f6fe87cdc3d 797412 pyvo_1.2.1.orig.tar.gz 4e018fe3cea675bce8f2d90a3a4e8c751b495e05e5c5cc3d2767a15d41d5baaf 4104 pyvo_1.2.1-1.debian.tar.xz"
+    "df7945c4b5dfcef75dc2b84524e259763171664eb6894f794c8a3960ce08410e 2208 pyvo_1.4.2-1.dsc e1000b58f554a6b75b4ca1680ae7a9772025d7dafc2368686fc1db45cdfd7a99 849830 pyvo_1.4.2.orig.tar.gz e6106b4eb07bf7db60e2bf5f748b7ac59e6503b518819708a9a4f8ed6eeb2b3d 4080 pyvo_1.4.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyvo"
   ],
   "Files": [
-    "4b71e46f556e56d2870eb1ef2969e415 2136 pyvo_1.2.1-1.dsc 8eaa271c176e93924b840de1e486f4bf 797412 pyvo_1.2.1.orig.tar.gz 9c8fa20ace5af8c92d43100c8129f297 4104 pyvo_1.2.1-1.debian.tar.xz"
+    "3e3382e92777e6f6d967e4ce786beea1 2208 pyvo_1.4.2-1.dsc dee0ab4dff7ade73ee2672637b70c709 849830 pyvo_1.4.2.orig.tar.gz e7a656cadd21dd6e7ce7f8e60322874d 4080 pyvo_1.4.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pytest, python3-requests-mock"
   ],
   "Uploaders": [
     "Josue Ortega \u003cjosue@debian.org\u003e, Paul Sladen \u003cdebian@paul.sladen.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian-astro-team/pyvo.git"
   ],
   "Version": [
-    "1.2.1-1"
+    "1.4.2-1"
   ]
 }

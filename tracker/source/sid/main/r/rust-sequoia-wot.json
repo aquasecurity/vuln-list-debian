@@ -6,16 +6,16 @@
     "librust-sequoia-wot-dev, sq-wot"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~), librust-chrono-0.4+default-dev, librust-clap-2+default-dev (\u003e= 2.33-~~), librust-clap-2+wrap-help-dev (\u003e= 2.33-~~), librust-crossbeam-0.8+default-dev (\u003e= 0.8.1-~~), librust-enumber-0.3+default-dev, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~), librust-num-cpus-1+default-dev, librust-sequoia-openpgp-1+default-dev (\u003e= 1.5-~~), librust-sequoia-openpgp-mt-0.1+default-dev, librust-thiserror-1+default-dev (\u003e= 1.0.2-~~), librust-time-0.3+default-dev"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~), librust-chrono-0.4+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+wrap-help-dev, librust-clap-complete-4+default-dev, librust-clap-mangen-0.2+default-dev, librust-crossbeam-0.8+default-dev (\u003e= 0.8.1-~~), librust-dot-writer-0.1+default-dev (\u003e= 0.1.3-~~), librust-enumber-0.3+default-dev, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~), librust-num-cpus-1+default-dev, librust-openpgp-cert-d-0.1+default-dev, librust-sequoia-cert-store-0.3+default-dev (\u003e= 0.3.1-~~), librust-sequoia-openpgp-1+crypto-nettle-dev (\u003e= 1.13-~~), librust-sequoia-policy-config-0.6+default-dev, librust-thiserror-1+default-dev (\u003e= 1.0.2-~~), librust-tokio-1+default-dev (\u003e= 1.13-~~), librust-tokio-1+rt-dev (\u003e= 1.13-~~)"
   ],
   "Checksums-Sha256": [
-    "b1e68f7ef84b2a80e5cd1a6309c7e5aa015254736fdb51f210185926402e7af1 2220 rust-sequoia-wot_0.2.0-1.dsc d3e8b932f7bf92f5a541e9fc5747a85c995742fe5f378e07a3bb89bba4e4db0c 976857 rust-sequoia-wot_0.2.0.orig.tar.gz e543426f89f0c7c93749f6d0b7822ab56c9169f23d9c003642ceaf4a86e2c371 2892 rust-sequoia-wot_0.2.0-1.debian.tar.xz"
+    "fef3a2b39fd5cb71796aa1bb4185a4201a751b17ee61e987ee1bc854310d6ad0 3299 rust-sequoia-wot_0.8.1-1.dsc cf5135009a31efa667ef38e517d848727585d854704ee8f36ca4b52b9b3d9765 1074907 rust-sequoia-wot_0.8.1.orig.tar.gz a01f139099a55072663722db3e4d8c39928638cf83c1ac461c03e500b2328a69 8296 rust-sequoia-wot_0.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-wot"
   ],
   "Files": [
-    "6c79cf741d7eda8a3a6165c6cad45e44 2220 rust-sequoia-wot_0.2.0-1.dsc 7d3d73c11dd434252f66354cad6d5d2b 976857 rust-sequoia-wot_0.2.0.orig.tar.gz 6277a54d31fae6864da0e068f778cf38 2892 rust-sequoia-wot_0.2.0-1.debian.tar.xz"
+    "5f7c7f019cf0b5652336915aa4e0d347 3299 rust-sequoia-wot_0.8.1-1.dsc 649030a105f221776c7e50720f7b8062 1074907 rust-sequoia-wot_0.8.1.orig.tar.gz a6a76f7f925f11d3c47d7d16a7ad6e83 8296 rust-sequoia-wot_0.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.1"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-cmd-2+default-dev, librust-clap-2+default-dev, librust-predicates-2+default-dev, librust-quickcheck-0.9-dev"
+    "dh-cargo, librust-assert-cmd-2+default-dev, librust-predicates-3+default-dev, librust-quickcheck-1-dev, librust-sequoia-openpgp-1+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-1+crypto-nettle-dev, librust-tempfile-3+default-dev"
   ],
   "Uploaders": [
-    "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
+    "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/sequoia-wot"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-wot]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.8.1-1"
   ]
 }
