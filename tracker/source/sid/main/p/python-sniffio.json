@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-sniffio"
+    "python-sniffio-doc, python3-sniffio"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 9~), debhelper-compat (= 13), dh-python, python3, python3-pytest, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-pytest, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-sphinxcontrib.trio, python3-trio"
   ],
   "Checksums-Sha256": [
-    "b7c209db76fbe9517288113cd8a1d0b0bf1ffaf7dee2a0bbdcb82e7b793db3e6 1838 python-sniffio_1.2.0-1.dsc c4666eecec1d3f50960c6bdf61ab7bc350648da6c126e3cf6898d8cd4ddcd3de 17132 python-sniffio_1.2.0.orig.tar.gz b939bfaaee56be769f3d604274a3445c60160f1f11c60a4f3d3fab1737d7d90a 2752 python-sniffio_1.2.0-1.debian.tar.xz"
+    "508ca6b55d520c4a994cf7dc9b085d09ce66f5da8253aa82500542d9c70b7037 1986 python-sniffio_1.3.0-1.dsc e60305c5e5d314f5389259b7f22aaa33d8f7dee49763119234af3755c55b9101 17103 python-sniffio_1.3.0.orig.tar.gz 18b1c1c5b744b42f24205d29f23fbca1bb7b579530020815592b37100d18162b 4376 python-sniffio_1.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-sniffio"
   ],
   "Files": [
-    "f9d530c8e63bbc85e5c8368c69b90e4e 1838 python-sniffio_1.2.0-1.dsc 2d7cc6c3a94d3357d333a4ade4a83de8 17132 python-sniffio_1.2.0.orig.tar.gz 18256488f5d3351f8e587de20c30f603 2752 python-sniffio_1.2.0-1.debian.tar.xz"
+    "27ba2af13f388bf4c53e84ab178b59f3 1986 python-sniffio_1.3.0-1.dsc abb96bcda81817d6c632915c53ac29c8 17103 python-sniffio_1.3.0.orig.tar.gz b2d6876310df17963971e5313de1b5d8 4376 python-sniffio_1.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/python-trio/sniffio"
   ],
   "Maintainer": [
-    "Robie Basak \u003crobie@justgohome.co.uk\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "python-sniffio"
   ],
   "Package-List": [
-    "python3-sniffio deb python optional arch=all"
+    "python-sniffio-doc deb doc optional arch=all python3-sniffio deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,9 +39,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.1.2"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all"
+  ],
+  "Uploaders": [
+    "Robie Basak \u003crobie@justgohome.co.uk\u003e, Michael Fladischer \u003cfladi@debian.org\u003e,"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/python-team/packages/python-sniffio"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/python-team/packages/python-sniffio.git"
   ],
   "Version": [
-    "1.2.0-1"
+    "1.3.0-1"
   ]
 }
