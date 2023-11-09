@@ -6,19 +6,22 @@
     "python3-argcomplete"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, tcsh, fish, python3-wheel, python3-pexpect, python3-coverage, python3-flake8, python3-pip"
+    "debhelper-compat (= 13), dh-python, fish \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-all, python3-pexpect \u003c!nocheck\u003e, python3-pip \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-wheel \u003c!nocheck\u003e, tcsh \u003c!nocheck\u003e, zsh \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0dae3fca02ff61792785ed88e012d85ad282263cf625e717ff7d9a2ba309853e 2398 python-argcomplete_2.0.0-1.dsc 6372ad78c89d662035101418ae253668445b391755cfe94ea52f1b9d22425b20 54164 python-argcomplete_2.0.0.orig.tar.gz 019feb37bbb96c7be19e607a4c8b6337538b595a39ef91d244a1cf3ec32aac55 195 python-argcomplete_2.0.0.orig.tar.gz.asc 04796cdc06069e45e9d0c5cdfb26dee5ca5ee0efebb6ad340cf6a7bf7a641a26 7864 python-argcomplete_2.0.0-1.debian.tar.xz"
+    "cd72be3336e85daf5df6e2c1cbf68468c91419af63aa4a7c3b3d5979ba35cf91 1817 python-argcomplete_3.1.4-1.dsc 72558ba729e4c468572609817226fb0a6e7e9a0a7d477b882be168c0b4a62b94 79529 python-argcomplete_3.1.4.orig.tar.gz 89dbc35fda663e96f753a438bfba2bf66da014aba0ad7fa6d74b209ce8ffce3f 7016 python-argcomplete_3.1.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-argcomplete"
   ],
   "Files": [
-    "5033cc9d1903a3acf7f780874e822b4b 2398 python-argcomplete_2.0.0-1.dsc 50437bb1e6911540e8ba9b97c7768663 54164 python-argcomplete_2.0.0.orig.tar.gz 72b730d0c27c35a98ef47952a1df3a9e 195 python-argcomplete_2.0.0.orig.tar.gz.asc f7b791a22aa5a438687bbb8b18397683 7864 python-argcomplete_2.0.0-1.debian.tar.xz"
+    "97e8942c656c64654b09165907df7167 1817 python-argcomplete_3.1.4-1.dsc 9aca6f9f6897e34e2360032ebc2bff10 79529 python-argcomplete_3.1.4.orig.tar.gz f9bce62d4ad7b64ba4414a98f9c21072 7016 python-argcomplete_3.1.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kislyuk/argcomplete"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -36,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "fish, python3-all, python3-pexpect, python3-pip, python3-setuptools, python3-wheel, tcsh, zsh"
   ],
   "Uploaders": [
     "Marc Dequènes (Duck) \u003cDuck@DuckCorp.org\u003e"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-argcomplete.git"
   ],
   "Version": [
-    "2.0.0-1"
+    "3.1.4-1"
   ]
 }
