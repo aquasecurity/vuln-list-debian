@@ -6,16 +6,16 @@
     "libworkflow0, libworkflow-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libssl-dev"
+    "debhelper-compat (= 13), cmake, libgtest-dev \u003c!nocheck\u003e, libssl-dev"
   ],
   "Checksums-Sha256": [
-    "26b1d5eaaf80bf5a57668e63f98ecc5708c8c8d003414db6425a1ea035ddd215 1915 workflow_0.10.9-1.dsc 10f695aeb5da87ae138e3bcd2fa10c18aac782b0da20f11b2fd0b7b091d06767 419865 workflow_0.10.9.orig.tar.gz f214bd7f5d4206630fa84504378e547f52ff762a3241290e97187e271bbcf1b9 4924 workflow_0.10.9-1.debian.tar.xz"
+    "6571b19cb4a0aede2adf3461c34ddc5f1b8854fa5087544f66d00ba819e38f5e 1995 workflow_0.11.1-2.dsc 06968ed4e43f6676811b620d09eb5c32ac57252305e7e28def6efde8ef1ceb19 424114 workflow_0.11.1.orig.tar.gz e8381cbed90bb1d92e0a3204643155318e2e6ff86524591edd34d2498925d6d2 5412 workflow_0.11.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/workflow"
   ],
   "Files": [
-    "a804a7af08237ec2002274083a1e9bfc 1915 workflow_0.10.9-1.dsc 6808e1e057673d45bf75fff4143c4655 419865 workflow_0.10.9.orig.tar.gz 3836ea3350640d9aa001007a39729f89 4924 workflow_0.10.9-1.debian.tar.xz"
+    "8a7a39a3a95eca5a02809430c3a842d5 1995 workflow_0.11.1-2.dsc fa668e9391616937a1ea5fe22f2825c1 424114 workflow_0.11.1.orig.tar.gz 794ff1ce367fc32acad819a6d60ec3e7 5412 workflow_0.11.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/workflow"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/workflow.git"
   ],
   "Version": [
-    "0.10.9-1"
+    "0.11.1-2"
   ]
 }
