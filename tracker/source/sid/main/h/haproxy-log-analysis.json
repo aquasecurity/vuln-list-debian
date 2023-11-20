@@ -6,16 +6,16 @@
     "python3-haproxy-log-analysis, haproxy-log-analysis"
   ],
   "Build-Depends": [
-    "dh-python, debhelper-compat (= 13), help2man, python3-setuptools, python3-all"
+    "dh-python, debhelper-compat (= 13), help2man, python3-setuptools, python3-all, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "ed26af39acea87626c995a0ff9391855cb061c7fbe9807e0020cf48daaf43513 2214 haproxy-log-analysis_2.0~b0-4.dsc 8f2ee1c239d112f046502f9228edc2a2c570f16176fde2a68106a912d8309798 259502 haproxy-log-analysis_2.0~b0.orig.tar.gz 4e489ecfc286579818a6668efdaef98297bedc33a707eca947cb4af64e3e64d8 2048 haproxy-log-analysis_2.0~b0-4.debian.tar.xz"
+    "e60fcaa7c11eb07d16a48892e0a7e5dfa2aa253037fdbe3afed720db04d86ad6 1713 haproxy-log-analysis_5.1.0-2.dsc 9eb326250a06145666fa6498c0ecf04f3123ed8a3ffdb472f60612d6b8956ed3 55271 haproxy-log-analysis_5.1.0.orig.tar.gz bdd1ff5e8c62dc7678eccb71eb4e20a69cc8a6aff2fd78cf872acadf95ef9833 2536 haproxy-log-analysis_5.1.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/haproxy-log-analysis"
   ],
   "Files": [
-    "2a5d56995551cdae4b20179f57fe4a2a 2214 haproxy-log-analysis_2.0~b0-4.dsc a8b65e92cb543a6656de1cf33d4a2422 259502 haproxy-log-analysis_2.0~b0.orig.tar.gz 2ba8dcb9c91c1f18e526cd5325aa6730 2048 haproxy-log-analysis_2.0~b0-4.debian.tar.xz"
+    "ee0d441009d7ee2d41db121d7abaefbd 1713 haproxy-log-analysis_5.1.0-2.dsc 9bc5aeb47013cf57ee06122182e0c66b 55271 haproxy-log-analysis_5.1.0.orig.tar.gz 8aea37ef92d8adf87fe2bb5f17de9fcb 2536 haproxy-log-analysis_5.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "haproxy-log-analysis"
   ],
   "Package-List": [
-    "haproxy-log-analysis deb python optional arch=all python3-haproxy-log-analysis deb python optional arch=all"
+    "haproxy-log-analysis deb utils optional arch=all python3-haproxy-log-analysis deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Christopher Baines \u003cmail@cbaines.net\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/haproxy-log-analysis.git"
   ],
   "Version": [
-    "2.0~b0-4"
+    "5.1.0-2"
   ]
 }

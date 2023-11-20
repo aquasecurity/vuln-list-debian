@@ -6,16 +6,16 @@
     "python3-django-phonenumber-field"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-django (\u003e= 2.2~), python3-setuptools, python3-phonenumbers, python3-babel"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-babel, python3-django, python3-djangorestframework, python3-phonenumbers, python3-pytest, python3-pytest-django, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "4aa31c0a7077b5391aed071b9122b1f74c864f3566528fc1bf2f91f1a57e7486 1744 django-phonenumber-field_5.2.0-1.dsc 52b2e5970133ec5ab701218b802f7ab237229854dc95fd239b7e9e77dc43731d 30622 django-phonenumber-field_5.2.0.orig.tar.gz c75357502ad10e9efd24348918498fef41d01dc8992c6b0ab1f182bf83718e8e 2304 django-phonenumber-field_5.2.0-1.debian.tar.xz"
+    "54d283cd8a7a370c7a2cb31b774a59dff242dd093e9f10508e4030246e07627a 2128 django-phonenumber-field_7.2.0-1.dsc 78e16ad75c2c8f7e32ab0efdef7ef69d6ddbb6192c68fe2c807b79cd388b12d4 38738 django-phonenumber-field_7.2.0.orig.tar.gz dd61523fbdb9be56e3d909ece986644edbf074bff2e3f833a80dfd785efbb540 4736 django-phonenumber-field_7.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/django-phonenumber-field"
   ],
   "Files": [
-    "d5d6ff02ee876d0fc1e11dc5b0a87443 1744 django-phonenumber-field_5.2.0-1.dsc 80c7094f9445f848e05f43694a237a26 30622 django-phonenumber-field_5.2.0.orig.tar.gz 4f974435263522edceb1759c0a224b38 2304 django-phonenumber-field_5.2.0-1.debian.tar.xz"
+    "6988326faa54efe7dfa61013f0584b47 2128 django-phonenumber-field_7.2.0-1.dsc 6ff27fa99d21a256cd746dcb1a0e89fe 38738 django-phonenumber-field_7.2.0.orig.tar.gz b789c8bb81a08cd6beabef7ca8f30d4d 4736 django-phonenumber-field_7.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all"
   ],
   "Uploaders": [
-    "Tom Teichler \u003cdebdolph@tom-teichler.de\u003e, Dominik George \u003cnatureshadow@debian.org\u003e"
+    "Tom Teichler \u003cdebdolph@tom-teichler.de\u003e, Dominik George \u003cnatureshadow@debian.org\u003e, Michael Fladischer \u003cfladi@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/django-phonenumber-field"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/django-phonenumber-field.git"
   ],
   "Version": [
-    "5.2.0-1"
+    "7.2.0-1"
   ]
 }
