@@ -6,16 +6,16 @@
     "r-cran-spatialreg"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-spdata, r-cran-matrix, r-cran-sf, r-cran-spdep, r-cran-expm, r-cran-coda, r-cran-mass, r-cran-boot, r-cran-learnbayes, r-cran-nlme, r-cran-multcomp"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-spdata, r-cran-matrix, r-cran-sf, r-cran-spdep (\u003e= 1.3-1), r-cran-coda, r-cran-mass, r-cran-boot, r-cran-learnbayes, r-cran-nlme, r-cran-multcomp"
   ],
   "Checksums-Sha256": [
-    "23104b7cca1a0b3f0b6ee4d29839746a1fc2649e807e9a2ce3177f25738c95f4 2280 r-cran-spatialreg_1.2-9+dfsg-1.dsc 24c4ee89f4cd2ad90cb87cd2b5fc3b68805eddf45458e0b0d13705359e7c2d30 120448 r-cran-spatialreg_1.2-9+dfsg.orig.tar.xz 6aa21be4df51e3e60a1515f968c467fd1a81d4da5611324b2c67248fde8afe6f 3076 r-cran-spatialreg_1.2-9+dfsg-1.debian.tar.xz"
+    "658dd53068858ee1b408f5a6e661e493398fe21315bc75520adac64db19fe49a 2465 r-cran-spatialreg_1.3-1+dfsg-1.dsc 131ad49fa1963802cae4bef54d81634578af78c9aa060f1047d8ced8e3f3447d 120820 r-cran-spatialreg_1.3-1+dfsg.orig.tar.xz 76b2088c8b1230639d7604fbc0113e1fb0eae66061a5aeaa8823fa9bd301eb7f 3476 r-cran-spatialreg_1.3-1+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-spatialreg"
   ],
   "Files": [
-    "cc765ab36ad9ca96b55ea1cd9b1c3ba1 2280 r-cran-spatialreg_1.2-9+dfsg-1.dsc c72f86da2e31e36d220ee84c669bfbdc 120448 r-cran-spatialreg_1.2-9+dfsg.orig.tar.xz 973e49228728155f3b0cb471a02207f4 3076 r-cran-spatialreg_1.2-9+dfsg-1.debian.tar.xz"
+    "e43bb6c8ccc83feffa0902d45f9d72f9 2465 r-cran-spatialreg_1.3-1+dfsg-1.dsc 85b24bb4eeb82c0aa661af03667bb720 120820 r-cran-spatialreg_1.3-1+dfsg.orig.tar.xz b38c19193cf0c4ae5c84781ce9eb07a7 3476 r-cran-spatialreg_1.3-1+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-expm, r-cran-foreign, r-cran-igraph, r-cran-knitr, r-cran-lmtest, r-cran-rmarkdown, r-cran-rspectra, r-cran-sandwich, r-cran-spam, r-cran-tinytest"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-spatialreg.git"
   ],
   "Version": [
-    "1.2-9+dfsg-1"
+    "1.3-1+dfsg-1"
   ]
 }
