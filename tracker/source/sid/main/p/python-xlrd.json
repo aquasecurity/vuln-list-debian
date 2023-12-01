@@ -6,16 +6,16 @@
     "python3-xlrd, python-xlrd-docs"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-sphinx, python3-setuptools, python3-pkginfo, python3-all"
+    "debhelper-compat (= 13), dh-python, python3-sphinx, python3-setuptools, python3-pytest, python3-pkginfo, python3-all"
   ],
   "Checksums-Sha256": [
-    "fb1f9d0752ed83c789c8e0e7858730289c23ab1dcc2271d85617fe8eb261c441 2118 python-xlrd_1.2.0-3.dsc 546eb36cee8db40c3eaa46c351e67ffee6eeb5fa2650b71bc4c758a29a1b29b2 554079 python-xlrd_1.2.0.orig.tar.gz ce4cdb5dab007bacbe48a5c35000795a64bea1fee0d7cdb26e8be12e32b1cbd7 7500 python-xlrd_1.2.0-3.debian.tar.xz"
+    "80185e35339e191b36b96522753f90b87a7b74a94dda9e8cc564e46a03a4740a 2196 python-xlrd_2.0.1-2.dsc eb56c9d63059e18784cc172c0f2a2af738117e3397cc4f70aea60d6677832935 368304 python-xlrd_2.0.1.orig.tar.gz 479b6b9cb7a2b88bdc97d59da41ac2a8067c990de6ad80b3af5fc91415b305b0 7172 python-xlrd_2.0.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-xlrd"
   ],
   "Files": [
-    "ef550e90956ce299abb0990e860bdb38 2118 python-xlrd_1.2.0-3.dsc e5d5b96924d791b22898b622eb3e918e 554079 python-xlrd_1.2.0.orig.tar.gz a3ad937db20b64263d6045a94a9fc912 7500 python-xlrd_1.2.0-3.debian.tar.xz"
+    "f374e427c77e1efac7ab33889434bdb8 2196 python-xlrd_2.0.1-2.dsc 34cf90b90d93e1a74cf60928cb670a7a 368304 python-xlrd_2.0.1.orig.tar.gz fdb72491e3becce81da33fe1617f3001 7172 python-xlrd_2.0.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Vincent Bernat \u003cbernat@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-xlrd.git"
   ],
   "Version": [
-    "1.2.0-3"
+    "2.0.1-2"
   ]
 }
