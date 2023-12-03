@@ -6,16 +6,16 @@
     "scilab-cli, scilab, scilab-data, scilab-include, scilab-minimal-bin, scilab-full-bin, scilab-doc, scilab-doc-fr, scilab-doc-pt-br, scilab-doc-ja, scilab-test"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bash-completion, chrpath, fakeroot, gfortran, javahelper, libcurl4-openssl-dev, libnum-ocaml-dev, libpcre2-dev, libxml2-dev, pkgconf, tcl-dev, time, tk-dev, libarpack2-dev, libblas-dev | libatlas-base-dev, libeigen3-dev, liblapack-dev, ant, default-jdk, libactivation-java, libflexdock-java, libgl-dev, libjaxb-java, libjgoodies-looks-java, libjogl2-java (\u003e= 2.4.0+dfsg), libjrosetta-java, liblucene8-java, libskinlf-java, libfreehep-graphicsio-emf-java, libfreehep-graphicsio-java, libfreehep-graphics2d-java, libfreehep-util-java, docbook-xsl, fop, javahelp2, libavalon-framework-java, libbatik-java, libjeuclid-core-java, libsaxon-java, libxml-commons-external-java, libfftw3-dev, libmatio-dev (\u003e= 1.5.18), libsuitesparse-dev, libjlatexmath-fop-java, libjlatexmath-java, libhdf5-dev, libjgraphx-java, mpi-default-dev, libeclipse-jdt-core-java, ant-optional \u003c!nocheck\u003e, junit4 \u003c!nocheck\u003e, libcobertura-java \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), bash-completion, chrpath, fakeroot, gfortran, javahelper, libarchive-dev, libcurl4-openssl-dev, libnum-ocaml-dev, libpcre2-dev, libxml2-dev, pkgconf, tcl-dev, time, tk-dev, libarpack2-dev, libblas-dev | libblas.so, libeigen3-dev, liblapack-dev, ant, default-jdk, libactivation-java, libflexdock-java, libgl-dev, libjakarta-activation-java, libjaxb-java, libjgoodies-looks-java, libjogl2-java (\u003e= 2.4.0+dfsg), libjrosetta-java, liblucene8-java, libopenjfx-java, libskinlf-java, libfreehep-graphicsio-emf-java, libfreehep-graphicsio-java, libfreehep-graphics2d-java, libfreehep-util-java, docbook-xsl, fop, javahelp2, libavalon-framework-java, libbatik-java, libjeuclid-core-java, libsaxonhe-java, libxml-commons-external-java, libfftw3-dev, libmatio-dev, libsuitesparse-dev, libjlatexmath-fop-java, libjlatexmath-java, libhdf5-dev, libjgraphx-java, mpi-default-dev, libeclipse-jdt-core-java, ant-optional \u003c!nocheck\u003e, junit4 \u003c!nocheck\u003e, libcobertura-java \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "13b6985b4590fbe464ab19ce2cb1dc2eaf5fc15cd48b58283d41cdb7926e5fc0 3461 scilab_6.1.1+dfsg2-10.dsc 0034d7fb1c4c45cdefd3ecf533d706b2526a5a51cc2fe699fc90378657998770 61827136 scilab_6.1.1+dfsg2.orig.tar.xz bf2ee1ab0824d7375cadcf247cbe5c31a7ada4ef0ea4cbd8f838837dfcc07e90 48636 scilab_6.1.1+dfsg2-10.debian.tar.xz"
+    "f0337f3288a7ffb7ec0746298a5c2145f578da06807515f261c2f3cacc77b228 3587 scilab_2024.0.0+dfsg-5.dsc 183a494d99ad0bb410744336a0b2086be28679ca7d7154426c7b9bc96e5a127b 61947684 scilab_2024.0.0+dfsg.orig.tar.xz 34c88a0f28660fb26f99d9f3d1679105a4ccf46fac6768066182f1047d8f1220 64500 scilab_2024.0.0+dfsg-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/scilab"
   ],
   "Files": [
-    "d6641a67d613e5430dbb81bcda317fb2 3461 scilab_6.1.1+dfsg2-10.dsc 608adc7616c6fd99c7480d23113216d0 61827136 scilab_6.1.1+dfsg2.orig.tar.xz 4b069d54ac8de25bbcd81ab41aff3442 48636 scilab_6.1.1+dfsg2-10.debian.tar.xz"
+    "6769465650847fdb657085a099ab3bc7 3587 scilab_2024.0.0+dfsg-5.dsc e8edb2247523a6e8c1945311c0c81c8d 61947684 scilab_2024.0.0+dfsg.orig.tar.xz 62eb24387980a704a543552ae0c40066 64500 scilab_2024.0.0+dfsg-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, xauth, xvfb"
+  ],
   "Uploaders": [
     "Julien Puydt \u003cjpuydt@debian.org\u003e, Pierre Gruet \u003cpgt@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/science-team/scilab.git"
   ],
   "Version": [
-    "6.1.1+dfsg2-10"
+    "2024.0.0+dfsg-5"
   ]
 }
