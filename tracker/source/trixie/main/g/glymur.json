@@ -6,16 +6,19 @@
     "python3-glymur, glymur-bin"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libopenjp2-7, procps, pybuild-plugin-pyproject, python3-all, python3-lxml, python3-numpy, python3-packaging, python3-pil, python3-pytest, python3-setuptools, python3-skimage"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, libopenjp2-7, procps, pybuild-plugin-pyproject, python3-all, python3-lxml, python3-numpy, python3-packaging, python3-pil, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-skimage"
   ],
   "Checksums-Sha256": [
-    "e57f72ddfd77a173b7460088ddf7d290f7fc34a0931db46ff16f57b4150e2a8a 2326 glymur_0.12.8-1.dsc 0a5e7f001a8ceb3da932eed45c717f57781f44ad664425e11a73199cd8c3f78f 4550502 glymur_0.12.8.orig.tar.gz c7b072d404aa57969c1ac0d49103c728d5a5711f712018d36e7a72f6e95e8947 5744 glymur_0.12.8-1.debian.tar.xz"
+    "81dc5af7ebece6dc4a4f74d852aa24cc7afae4d73d1120aeab6d7285a069505f 3127 glymur_0.12.9-1.dsc db3cfcafdef47932309b5e4a17e1854d6e3b787168a9fe86599a6efe71e41be4 4552577 glymur_0.12.9.orig.tar.gz d2764c0cf29c79dee19ad24d477f6d5593f16d219ab546d06510419b4da4f1bb 5780 glymur_0.12.9-1.debian.tar.xz"
+  ],
+  "Description": [
+    "Python tools for accessing JPEG2000 files Glymur is an interface to the OpenJPEG library which allows one to read and write JPEG 2000 files from Python. Glymur supports both reading and writing of JPEG 2000 images, but writing JPEG 2000 images is currently limited to images that can fit in memory. Glymur can read images using OpenJPEG library versions as far back as 1.3, but it is strongly recommended to use at least version 2.1.2. . In regards to metadata, most JP2 boxes are properly interpreted. Certain optional JP2 boxes can also be written, including XML boxes and XMP UUIDs. There is incomplete support for reading JPX metadata. . Glymur will look to use lxml when processing boxes with XML content, but can fall back upon the standard library’s ElementTree if lxml is not available."
   ],
   "Directory": [
     "pool/main/g/glymur"
   ],
   "Files": [
-    "5e23f1bc59f9f54b7dffe22e6218de98 2326 glymur_0.12.8-1.dsc 7e7c752b2638ab1a711ca9b4b5ec6b01 4550502 glymur_0.12.8.orig.tar.gz 88a6ce3f06dea5bb04ff87c34f8e1005 5744 glymur_0.12.8-1.debian.tar.xz"
+    "2685d365192dd5716e9d6bfc8a4cdbec 3127 glymur_0.12.9-1.dsc dacd1614a642e25153b12e642ac21bc7 4552577 glymur_0.12.9.orig.tar.gz b8f67756696249472b727c565177a5c0 5780 glymur_0.12.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest, python3-skimage"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/glymur.git"
   ],
   "Version": [
-    "0.12.8-1"
+    "0.12.9-1"
   ]
 }
