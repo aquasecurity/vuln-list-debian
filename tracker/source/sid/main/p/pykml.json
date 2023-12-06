@@ -6,16 +6,19 @@
     "python3-pykml, pykml"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-python, python3-all, python3-lxml, python3-pytest, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-lxml, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "8c4b8cd164b8f7104c55cdae448e23a867149a2d37708683d31894139c42fb11 2195 pykml_0.2.0+dfsg-3.dsc fdfbb92c82363faac634f70a2bce80984758915528136d168b7f33fe03b2bcb6 283196 pykml_0.2.0+dfsg.orig.tar.xz e3c978b47b95ef89988686abc90eadb1ecea5c0b6f75ecdd416033695a4f1090 6988 pykml_0.2.0+dfsg-3.debian.tar.xz"
+    "d7578a6f269b9847f047668a6d00c68252377a89752dc992109a9e0e2b347600 2426 pykml_0.2.0+dfsg-4.dsc fdfbb92c82363faac634f70a2bce80984758915528136d168b7f33fe03b2bcb6 283196 pykml_0.2.0+dfsg.orig.tar.xz 3e9a4184552a27960fa4c5b9ce33ae2624b442b58cc7336483dcd44896676d20 7420 pykml_0.2.0+dfsg-4.debian.tar.xz"
+  ],
+  "Description": [
+    "Python KML library PyKML is a Python package for parsing and authoring KML documents. It is based on the lxml.objectify API (http://codespeak.net/lxml/objectify.html) which provides Pythonic access to XML documents."
   ],
   "Directory": [
     "pool/main/p/pykml"
   ],
   "Files": [
-    "d9732dd60fa9d77eed69597c4ef3f785 2195 pykml_0.2.0+dfsg-3.dsc dbb9f6b159c927021eccb2e39c8b30d1 283196 pykml_0.2.0+dfsg.orig.tar.xz 9029ff5c96c3a6e580dfc1eec87c3d27 6988 pykml_0.2.0+dfsg-3.debian.tar.xz"
+    "a19596c7897f22284740e2344a85d5f2 2426 pykml_0.2.0+dfsg-4.dsc dbb9f6b159c927021eccb2e39c8b30d1 283196 pykml_0.2.0+dfsg.orig.tar.xz c41be6ca99f0cd056e51b632d0ea3867 7420 pykml_0.2.0+dfsg-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/pykml.git"
   ],
   "Version": [
-    "0.2.0+dfsg-3"
+    "0.2.0+dfsg-4"
   ]
 }
