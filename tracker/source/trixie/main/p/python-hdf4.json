@@ -6,16 +6,16 @@
     "python3-hdf4"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libhdf4-alt-dev, libjpeg-dev, pybuild-plugin-pyproject, python3-all-dev, python3-pytest, python3-numpy, python3-setuptools, zlib1g-dev"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, libhdf4-alt-dev, libjpeg-dev, pybuild-plugin-pyproject, python3-all-dev, python3-pytest \u003c!nocheck\u003e, python3-numpy, python3-setuptools, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "c47cf814798558aa4c5db62b944f5a00752f5ff3c7a5cc7c36a0eac93199c29f 2229 python-hdf4_0.11.3-1.dsc f20ac4e3bd1f432bc65769f7a48c4533b81a6123b0ac0f03a1cb02677cad0f9f 147083 python-hdf4_0.11.3.orig.tar.gz 576095f03f81c809a680766340c6051ff00b302596306005429833da9f5b2662 3608 python-hdf4_0.11.3-1.debian.tar.xz"
+    "1171121a5fcf62d0ee4397f82c01a86ff2b1c1684a9ac2434468f9aae4448141 2245 python-hdf4_0.11.3-2.dsc f20ac4e3bd1f432bc65769f7a48c4533b81a6123b0ac0f03a1cb02677cad0f9f 147083 python-hdf4_0.11.3.orig.tar.gz 93d11ac952eb870599ffba8c03c88690ecdff89b70252ab191139b822049ed48 3656 python-hdf4_0.11.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-hdf4"
   ],
   "Files": [
-    "ffe19f1271256ce3b5bbd785a050f5a6 2229 python-hdf4_0.11.3-1.dsc e4ffda6871a1f56fabc272746ef9f2bb 147083 python-hdf4_0.11.3.orig.tar.gz 48bc51eb2f8c733539bd8fad053acbb6 3608 python-hdf4_0.11.3-1.debian.tar.xz"
+    "8fcb1c72bf63309524018832b4c0b173 2245 python-hdf4_0.11.3-2.dsc e4ffda6871a1f56fabc272746ef9f2bb 147083 python-hdf4_0.11.3.orig.tar.gz f3c26d89ace2a12387880c52b89667d6 3656 python-hdf4_0.11.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/debian-gis-team/python-hdf4.git"
   ],
   "Version": [
-    "0.11.3-1"
+    "0.11.3-2"
   ]
 }
