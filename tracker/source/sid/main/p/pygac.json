@@ -6,16 +6,19 @@
     "python3-pygac, pygac-bin"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-bottleneck, python3-docutils, python3-geotiepoints, python3-h5py, python3-numpy, python3-packaging, python3-pyorbital, python3-pytest, python3-scipy, python3-setuptools, python3-setuptools-scm"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-bottleneck, python3-docutils, python3-geotiepoints, python3-h5py, python3-numpy, python3-packaging, python3-pyorbital, python3-pytest \u003c!nocheck\u003e, python3-scipy, python3-setuptools, python3-setuptools-scm"
   ],
   "Checksums-Sha256": [
-    "1280343fa247c1215aeb669aaeb3eddebf1e5d37845b2767f25a8d76f1542853 2351 pygac_1.7.2-1.dsc b6cfbbe4ead57f916eacf8ffa1250ec03a74d7f0d89dbde3e664c51cc04df633 521999 pygac_1.7.2.orig.tar.gz 98941f24d537119b39514652813de818e6064802de3817d7bb21c1faebc6a3bd 6588 pygac_1.7.2-1.debian.tar.xz"
+    "5560a4b400a681ebd41429878648ebf6d238a83e4e21787e2492ece263146527 3290 pygac_1.7.2-2.dsc b6cfbbe4ead57f916eacf8ffa1250ec03a74d7f0d89dbde3e664c51cc04df633 521999 pygac_1.7.2.orig.tar.gz 6de0b7351bd195de6ac6058535ed7990fe05e2d2f83f77ebcc0be6cd572809d3 6580 pygac_1.7.2-2.debian.tar.xz"
+  ],
+  "Description": [
+    "Python package to read and calibrate NOAA AVHRR GAC data pygac reads NOAA AVHRR Global Area Coverage (GAC) data, and performs state of the art calibration and navigation. . It must be noted that pygac expects Level 1b file to contain normal GAC header and data records, the format of which are mentioned in the official NOAA POD and KLM Data User Guides. The user should not prepend any other header (e.g. when downloading GAC data from CLASS archive etc) to the L1b file. In the first pre-processing step, pygac determines whether the GAC data comes from the second (i.e. NOAA-14 and before) or the third generation (NOAA-15 and onwards) AVHRR instrument by \"pygac-run\". This is done by reading the first three bytes of the data set. If they contain the any of the following values, [\"CMS\", \"NSS\", \"UKM\", \"DSS\"], then the KLM reader from \"gac_klm.py\" file is invoked, otherwise the POD reader is invoked (gac_pod.py)."
   ],
   "Directory": [
     "pool/main/p/pygac"
   ],
   "Files": [
-    "591138166dd9a7f1633fb8f603e58082 2351 pygac_1.7.2-1.dsc 50a6cdfa9e30a55ad0751c33185f8c44 521999 pygac_1.7.2.orig.tar.gz 4439b57c5651163ad7529fc3035dda3f 6588 pygac_1.7.2-1.debian.tar.xz"
+    "8992b0a7c7f389676d22cd1af691fb24 3290 pygac_1.7.2-2.dsc 50a6cdfa9e30a55ad0751c33185f8c44 521999 pygac_1.7.2.orig.tar.gz 215fd4fcf59b6de0116d42e1e440744c 6580 pygac_1.7.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/pygac.git"
   ],
   "Version": [
-    "1.7.2-1"
+    "1.7.2-2"
   ]
 }
