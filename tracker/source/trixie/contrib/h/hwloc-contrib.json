@@ -9,16 +9,19 @@
     "autoconf2.13"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-exec, libltdl-dev [!gnu-any-any], valgrind-if-available, libcairo2-dev, libx11-dev, libxml2-dev, libxml2-utils \u003c!nocheck\u003e, libncurses-dev, libnuma-dev [linux-any] \u003c!nocheck\u003e, libxnvctrl-dev, nvidia-cuda-dev, libpciaccess-dev, libudev-dev [linux-any], pkg-config, ocl-icd-opencl-dev [!hurd-any] | opencl-dev, opencl-headers, autoconf (\u003e= 2.63), dpkg-dev (\u003e= 1.16)"
+    "debhelper-compat (= 12), dh-exec, libltdl-dev [!gnu-any-any] \u003c!pkg.hwloc.minimum\u003e, valgrind-if-available \u003c!pkg.hwloc.minimum\u003e, libcairo2-dev \u003c!pkg.hwloc.minimum\u003e, libx11-dev \u003c!pkg.hwloc.minimum\u003e, libxml2-dev \u003c!pkg.hwloc.minimum\u003e, libxml2-utils \u003c!nocheck !pkg.hwloc.minimum\u003e, libncurses-dev \u003c!pkg.hwloc.minimum\u003e, libnuma-dev [linux-any] \u003c!nocheck !pkg.hwloc.minimum\u003e, libxnvctrl-dev \u003c!pkg.hwloc.minimum\u003e, nvidia-cuda-dev \u003c!pkg.hwloc.minimum\u003e, libpciaccess-dev \u003c!pkg.hwloc.minimum\u003e, libudev-dev [linux-any] \u003c!pkg.hwloc.minimum\u003e, pkg-config, ocl-icd-opencl-dev [!hurd-any] \u003c!pkg.hwloc.minimum\u003e | opencl-dev \u003c!pkg.hwloc.minimum\u003e, opencl-headers \u003c!pkg.hwloc.minimum\u003e, autoconf (\u003e= 2.63), dpkg-dev (\u003e= 1.16)"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen-latex \u003c!nodoc\u003e, transfig \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "976d84bda52ba08d374c72a59d57a4715bedd908322a46c5cfec9b4a00e273b5 2333 hwloc-contrib_2.9.3-1.dsc 5c4062ce556f6d3451fc177ffb8673a2120f81df6835dea6a21a90fbdfff0dec 6986142 hwloc-contrib_2.9.3.orig.tar.bz2 a9cec8cee6a75cffd44923f62288b9e3c8c757547fd5c6e7950e54ebfab95cb2 13032 hwloc-contrib_2.9.3-1.debian.tar.xz"
+    "c043cccf28be2048fca24a3274f398d7f22d0c76acfdfe23d070f77070b2915c 2741 hwloc-contrib_2.10.0-1.dsc 79d7f0516d2ac462e3718d2df37837a632f52e359657fa0fca6373103a35df13 2633391 hwloc-contrib_2.10.0.orig.tar.bz2 7bea3b7079142e6acd13ca94587305d15a2d46ad9b7b34a32d89c710c693686f 13120 hwloc-contrib_2.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/contrib/h/hwloc-contrib"
   ],
   "Files": [
-    "3a4a4a914c90ff6b33f3fb740cad1e82 2333 hwloc-contrib_2.9.3-1.dsc d3eb9cc49b66d607fcc81ab68aeb6156 6986142 hwloc-contrib_2.9.3.orig.tar.bz2 3a4cb845792f9ac631b450ee74641e31 13032 hwloc-contrib_2.9.3-1.debian.tar.xz"
+    "8fd732f0b7de1418ae3b37fd892ca683 2741 hwloc-contrib_2.10.0-1.dsc f11042340ecf333f4f0dffc919f411ad 2633391 hwloc-contrib_2.10.0.orig.tar.bz2 1ad27623771d597e84a018d081c4f48d 13120 hwloc-contrib_2.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "hwloc-contrib"
   ],
   "Package-List": [
-    "libhwloc-contrib-plugins deb contrib/libs optional arch=any"
+    "libhwloc-contrib-plugins deb contrib/libs optional arch=any profile=!pkg.hwloc.minimum"
   ],
   "Priority": [
     "optional"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/debian/hwloc.git -b contrib"
   ],
   "Version": [
-    "2.9.3-1"
+    "2.10.0-1"
   ]
 }
