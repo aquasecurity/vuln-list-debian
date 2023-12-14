@@ -6,16 +6,16 @@
     "node-resolve"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-nodejs, node-assert \u003c!nocheck\u003e, node-semver \u003c!nocheck\u003e, node-tap \u003c!nocheck\u003e, node-tape \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-nodejs, node-assert \u003c!nocheck\u003e, node-hasown, node-rollup-plugin-commonjs, node-rollup-plugin-json, node-rollup-plugin-node-resolve, node-rollup-plugin-terser, node-semver \u003c!nocheck\u003e, node-tap \u003c!nocheck\u003e, node-tape \u003c!nocheck\u003e, rollup"
   ],
   "Checksums-Sha256": [
-    "b1019542caad8bb97b0cf5e61b928b755c54d2df1830dd8a58e16873a6b7b592 3553 node-resolve_1.22.8+~cs5.34.15-1.dsc d3cb5510d6fbd7352a502b900b5a75051f76b3f87ff98fa30572fcd3f7f2a4dc 11156 node-resolve_1.22.8+~cs5.34.15.orig-is-core-module.tar.gz 906cf19a85aaeff60b0319e59dd0fa1cb1a71749923f3792f2849418bf7e9945 9968 node-resolve_1.22.8+~cs5.34.15.orig-object-keys.tar.gz 656615a8fbf7946fd563362930336b839eb3fc9deb58aaf463a5696fe2e70459 3428 node-resolve_1.22.8+~cs5.34.15.orig-path-parse.tar.gz bea5d1bc0b70915755cf91a0d85115ac290b59da4cdbd0668e959ccbe0b34fe3 3334 node-resolve_1.22.8+~cs5.34.15.orig-types-resolve.tar.gz 89c836e813c1647113f30279508c69d5a5110432eac917226803d60fb2e579ea 31859 node-resolve_1.22.8+~cs5.34.15.orig.tar.gz 79afddb5a53707f3f07a2a9f9f29419b27efef4ffe07e2a8709dce1f8110736d 7924 node-resolve_1.22.8+~cs5.34.15-1.debian.tar.xz"
+    "a55e0f250c1b4adda2fb58978c1b30896e81342a2adc5f6ce037a0996ebc6a44 3688 node-resolve_1.22.8+~cs5.34.15-2.dsc d3cb5510d6fbd7352a502b900b5a75051f76b3f87ff98fa30572fcd3f7f2a4dc 11156 node-resolve_1.22.8+~cs5.34.15.orig-is-core-module.tar.gz 906cf19a85aaeff60b0319e59dd0fa1cb1a71749923f3792f2849418bf7e9945 9968 node-resolve_1.22.8+~cs5.34.15.orig-object-keys.tar.gz 656615a8fbf7946fd563362930336b839eb3fc9deb58aaf463a5696fe2e70459 3428 node-resolve_1.22.8+~cs5.34.15.orig-path-parse.tar.gz bea5d1bc0b70915755cf91a0d85115ac290b59da4cdbd0668e959ccbe0b34fe3 3334 node-resolve_1.22.8+~cs5.34.15.orig-types-resolve.tar.gz 89c836e813c1647113f30279508c69d5a5110432eac917226803d60fb2e579ea 31859 node-resolve_1.22.8+~cs5.34.15.orig.tar.gz e44a0d614d7d56250c6c934fd654cadfc73ee1a5b291c02c53520033b4069edc 8352 node-resolve_1.22.8+~cs5.34.15-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/node-resolve"
   ],
   "Files": [
-    "92beaec00b76ee156b6e04db9992d416 3553 node-resolve_1.22.8+~cs5.34.15-1.dsc c882a4bfb0faca1f7923977a4b9132f0 11156 node-resolve_1.22.8+~cs5.34.15.orig-is-core-module.tar.gz a0df386996ce0a2ce0ddb658c2e6c6d7 9968 node-resolve_1.22.8+~cs5.34.15.orig-object-keys.tar.gz 8eda56969f5808e3e9ae19bb8e5225fd 3428 node-resolve_1.22.8+~cs5.34.15.orig-path-parse.tar.gz b8b7eaab24b12b6adcaa82661de8fc65 3334 node-resolve_1.22.8+~cs5.34.15.orig-types-resolve.tar.gz dc2e7097ef83ffee5b4d15b27e551339 31859 node-resolve_1.22.8+~cs5.34.15.orig.tar.gz dc1dd711c0437eb3ca7d7568b80d7214 7924 node-resolve_1.22.8+~cs5.34.15-1.debian.tar.xz"
+    "84ec283ab21b2355fbddb77563b8f0c2 3688 node-resolve_1.22.8+~cs5.34.15-2.dsc c882a4bfb0faca1f7923977a4b9132f0 11156 node-resolve_1.22.8+~cs5.34.15.orig-is-core-module.tar.gz a0df386996ce0a2ce0ddb658c2e6c6d7 9968 node-resolve_1.22.8+~cs5.34.15.orig-object-keys.tar.gz 8eda56969f5808e3e9ae19bb8e5225fd 3428 node-resolve_1.22.8+~cs5.34.15.orig-path-parse.tar.gz b8b7eaab24b12b6adcaa82661de8fc65 3334 node-resolve_1.22.8+~cs5.34.15.orig-types-resolve.tar.gz dc2e7097ef83ffee5b4d15b27e551339 31859 node-resolve_1.22.8+~cs5.34.15.orig.tar.gz 8a6ab1025af2c4ed089585df2ff2e58f 8352 node-resolve_1.22.8+~cs5.34.15-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/js-team/node-resolve.git"
   ],
   "Version": [
-    "1.22.8+~cs5.34.15-1"
+    "1.22.8+~cs5.34.15-2"
   ]
 }
