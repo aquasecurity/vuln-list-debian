@@ -6,16 +6,16 @@
     "python3-ruamel.yaml.clib"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, cython3, python3-all-dev, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, cython3, pybuild-plugin-pyproject, python3-all-dev, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "aa6e857a9e04b1655ea5d3a4e3486c62b50fba1ee39c38f6724753d9f81cb7fa 2087 ruamel.yaml.clib_0.2.7-1.dsc 1f08fd5a2bea9c4180db71678e850b995d2a5f4537be0e94557668cf0f5f9497 182535 ruamel.yaml.clib_0.2.7.orig.tar.gz 39bb916520d4c5692b0328ee148f2d2ad9aa45a05aa66fa53dd665950719a29a 3016 ruamel.yaml.clib_0.2.7-1.debian.tar.xz"
+    "77f5db56b667768a00b151c63f56e4e361562ec8ef21dbfa52448e91fbbb3e7a 2205 ruamel.yaml.clib_0.2.8-1.dsc beb2e0404003de9a4cab9753a8805a8fe9320ee6673136ed7f04255fe60bb512 213824 ruamel.yaml.clib_0.2.8.orig.tar.gz d3aa8020b9b867bedde32a609a739ceea2147ebc23e8005c14b10b0971a1b3d9 3644 ruamel.yaml.clib_0.2.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/ruamel.yaml.clib"
   ],
   "Files": [
-    "ed8c62a21caaaad68b90b83a52a5745b 2087 ruamel.yaml.clib_0.2.7-1.dsc 4b7bc49c0022baf161203dc1ea4806f9 182535 ruamel.yaml.clib_0.2.7.orig.tar.gz d900ab97cb47f81bc10eaddac673e14b 3016 ruamel.yaml.clib_0.2.7-1.debian.tar.xz"
+    "3999dbd9c56d7b4739f2ad51e085a04d 2205 ruamel.yaml.clib_0.2.8-1.dsc b72e549363fa1b9c4f9123e98f2b46cc 213824 ruamel.yaml.clib_0.2.8.orig.tar.gz 1a0e1cf2c53a544ad33c21fe7dbc00d8 3644 ruamel.yaml.clib_0.2.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest, python3-ruamel.yaml"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/ruamel.yaml.clib.git"
   ],
   "Version": [
-    "0.2.7-1"
+    "0.2.8-1"
   ]
 }
