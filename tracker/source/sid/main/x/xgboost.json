@@ -6,16 +6,16 @@
     "xgboost, libxgboost-dev, libxgboost0, python3-xgboost"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-python, libdmlc-dev (\u003e= 0.5), python3-all, python3-setuptools"
+    "cmake, debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, libdmlc-dev (\u003e= 0.5), python3-all, python3-setuptools, python3-hatchling"
   ],
   "Checksums-Sha256": [
-    "80d025c878c54302d8a4952c410159641ee0997a3f9c6d4483961a279cf59fd4 2187 xgboost_1.7.6-1.dsc 20acbdc04e5c724884788a51abbc400fc0d8497ae6cb5b404fef4e0d32fe1a0e 1873636 xgboost_1.7.6.orig.tar.gz 4f5f74681ed5327b9cbe1640831032d16ca4df926a9ddcf9b59753423e2772c0 22520 xgboost_1.7.6-1.debian.tar.xz"
+    "eca1a247caf21959c62da1e093590825500b077b0df29b0fe40349c24d6c7a12 2283 xgboost_2.0.2-2.dsc e83a981109363cea0c71a71b2df465a5e88f1eac9ec33057767ce884c7c2e8ce 1986568 xgboost_2.0.2.orig.tar.gz defc0e31b11e1dcb700d01fcd3ab515b02a3e0f75fe200b44c2c4074f719c357 22316 xgboost_2.0.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/x/xgboost"
   ],
   "Files": [
-    "4e769f1df2cd8e5b8dfa67ae0ca988f9 2187 xgboost_1.7.6-1.dsc a6dd45bf1086eb751f5e25821b8ca76f 1873636 xgboost_1.7.6.orig.tar.gz 7525b82cfb80eb9d07ebf03b04cdcf5c 22520 xgboost_1.7.6-1.debian.tar.xz"
+    "872e4812554f2f3ce9700323a4125aaf 2283 xgboost_2.0.2-2.dsc 3bed5d133c9fc2bcc2add498d4744d5d 1986568 xgboost_2.0.2.orig.tar.gz 76ba181c2f5944f31aab917d969d04eb 22316 xgboost_2.0.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "python3-scipy, python3-sklearn"
+  ],
   "Uploaders": [
     "Mo Zhou \u003clumin@debian.org\u003e"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/xgboost.git"
   ],
   "Version": [
-    "1.7.6-1"
+    "2.0.2-2"
   ]
 }
