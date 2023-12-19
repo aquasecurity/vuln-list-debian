@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64 kfreebsd-amd64 ia64 alpha all"
+    "any all"
   ],
   "Binary": [
     "libfckit-dev, libfckit0d, libfckit-utils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-fortran-mod, gfortran | fortran-compiler, flang-15 [amd64 arm64 ppc64 ppc64el riscv64], patchelf, ecbuild (\u003e= 3.3.0-2), python3-all, libeckit-dev (\u003e= 1.15.4-1~), libssl-dev, libcurl4-gnutls-dev"
+    "debhelper-compat (= 13), architecture-is-64-bit, dh-sequence-fortran-mod, gfortran | fortran-compiler, flang-17 [!mips64el !s390x], patchelf, ecbuild (\u003e= 3.3.0-2), python3-all, libeckit-dev (\u003e= 1.24.6-1~), libssl-dev, libcurl4-gnutls-dev"
   ],
   "Checksums-Sha256": [
-    "91821680f8457a60ccb29d5a721e42f2e7c5daf0f57fba560447f137ee6f4a7c 2407 fckit_0.11.0-1.dsc 4af2c39c2e5834757d22878a1bf0cce46339bb8b9cfe89981c87efe2f5e8dab6 127228 fckit_0.11.0.orig.tar.xz db3b3d9ef58a8955ca18a2218212a1d9a3e87fd563e3aefa20622364cbdf5f2f 5660 fckit_0.11.0-1.debian.tar.xz"
+    "ba1f1d34d40588626de3929303378275fc5c127d0adabadab9d4fd2bd8f571a2 2177 fckit_0.11.0-4.dsc 4af2c39c2e5834757d22878a1bf0cce46339bb8b9cfe89981c87efe2f5e8dab6 127228 fckit_0.11.0.orig.tar.xz 5b8f5bf4bc9079685df9d35ae0d2980a935d6cd79794ad7c8613285aec8b8fd4 6052 fckit_0.11.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fckit"
   ],
   "Files": [
-    "cb769bd5d61758c4acbb9b2f7d48f5a1 2407 fckit_0.11.0-1.dsc 39719b58d33f1ae2a64c704d51b8e4df 127228 fckit_0.11.0.orig.tar.xz 7cc42e702d526b6697252271841c0f55 5660 fckit_0.11.0-1.debian.tar.xz"
+    "1037d764e9b935bd032bc6b02c3ef494 2177 fckit_0.11.0-4.dsc 39719b58d33f1ae2a64c704d51b8e4df 127228 fckit_0.11.0.orig.tar.xz ece2a9f5f549af0672efa6b91049167a 6052 fckit_0.11.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "fckit"
   ],
   "Package-List": [
-    "libfckit-dev deb libdevel optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha libfckit-utils deb science optional arch=all libfckit0d deb libs optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64,alpha"
+    "libfckit-dev deb libdevel optional arch=any libfckit-utils deb science optional arch=all libfckit0d deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org:/mckinstry/fckit.git -b debian/latest"
   ],
   "Version": [
-    "0.11.0-1"
+    "0.11.0-4"
   ]
 }
