@@ -6,19 +6,19 @@
     "python3-xraydb, python-xraydb-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), sqlite3, dh-python, python3-setuptools, python3-all, python3-numpy, python3-scipy, python3-sqlalchemy, python3-pytest \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-pybtex \u003c!nodoc\u003e, python3-sphinxcontrib.bibtex \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), sqlite3, dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-setuptools, python3-all, python3-numpy, python3-platformdirs, python3-scipy, python3-sqlalchemy, python3-pytest \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-pybtex \u003c!nodoc\u003e, python3-sphinxcontrib.bibtex \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c58097d873226ed0db16ca42850c789e6229569505e02223677e17d6c8869a3b 2501 xraydb_4.5.0-1.dsc 85351007e00c5beac0248b45cb81c7502d8ad2c2ab5b3bb373bed95b3602ea9c 12245432 xraydb_4.5.0.orig.tar.xz c84f9896720e9ee5a5fd76a161b1075994eede0796c8a7ec39f9670ec3209273 4224 xraydb_4.5.0-1.debian.tar.xz"
+    "19ed104a0d14dda315ec64451030288d5255f27d225f6ce6f8cb841be0a01187 2672 xraydb_4.5.3-2.dsc 29952d0d30ba93b0b51e96689cbc7020b54795a253ef9ba61b92534077e1e0db 12256564 xraydb_4.5.3.orig.tar.xz ba9fa1e684fd4b1e379ddf978419abfa7787e67999d12452ab165fbf822fb4d8 4548 xraydb_4.5.3-2.debian.tar.xz"
   ],
   "Dgit": [
-    "15be88ad94e7e52ad02d1f613edcd2f7fc01298a debian archive/debian/4.5.0-1 https://git.dgit.debian.org/xraydb"
+    "2ad1ec9921c0e4afb9c1c375535f6e2a5d0da51a debian archive/debian/4.5.3-2 https://git.dgit.debian.org/xraydb"
   ],
   "Directory": [
     "pool/main/x/xraydb"
   ],
   "Files": [
-    "3719a2cca4dfa3eeb42ad6260f074b6e 2501 xraydb_4.5.0-1.dsc 969a513e108d4fd3e4e8ae9fcd95c0c4 12245432 xraydb_4.5.0.orig.tar.xz f17f25c6fca6a18c7c4c15ab048eb4d8 4224 xraydb_4.5.0-1.debian.tar.xz"
+    "25eb6691c07791163c36d2798d9afd4b 2672 xraydb_4.5.3-2.dsc 505b2bcf3bd3a29e6eb9f50c7d3a27d0 12256564 xraydb_4.5.3.orig.tar.xz 0c0e17073cbbfec96e1f3696d8e3fc96 4548 xraydb_4.5.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e, Sebastien Delafond \u003cseb@debian.org\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/science-team/xraydb.git"
   ],
   "Version": [
-    "4.5.0-1"
+    "4.5.3-2"
   ]
 }
