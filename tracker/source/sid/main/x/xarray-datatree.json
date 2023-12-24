@@ -6,10 +6,10 @@
     "python3-xarray-datatree"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-h5netcdf, python3-netcdf4, python3-packaging, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-xarray, python3-zarr"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-h5netcdf, python3-netcdf4, python3-packaging, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-xarray (\u003e= 2023.12), python3-zarr"
   ],
   "Checksums-Sha256": [
-    "4354060665319738eb7d0c5cf9692bbabda78d789dd4e0f137435f665de54808 3638 xarray-datatree_0.0.13-1.dsc 10b2d1c30be845cfcba33b3400b770d44005477d49e9d950fad7f014c3aeb4ff 83341 xarray-datatree_0.0.13.orig.tar.gz cba4e6dd3100f79f2591c2c1a3a09af7aeb2bc2fc4d75ea536e10d4801ccd44e 3180 xarray-datatree_0.0.13-1.debian.tar.xz"
+    "6cd6df40bac909847773c5fb4ba88f78be9c1e35ff10445fd78348c2bed88dc3 3651 xarray-datatree_0.0.13-2.dsc 10b2d1c30be845cfcba33b3400b770d44005477d49e9d950fad7f014c3aeb4ff 83341 xarray-datatree_0.0.13.orig.tar.gz 039db6f14ae2bcd7689927a26ecdb6c5f86df315544bf74d5d546e0b038a7fc7 3636 xarray-datatree_0.0.13-2.debian.tar.xz"
   ],
   "Description": [
     "Tree-like hierarchical data structure for xarray Datatree provides hierarchical data structure, more flexible than a single xarray.Dataset object. It is able to represent netCDF files / Zarr stores with multiple nested groups in a single in-memory object, but datatree.DataTree objects have many other uses, such as: . * organising many related datasets, e.g. results of the same experiment with different parameters, or simulations of the same system using different models, * analysing similar data at multiple resolutions simultaneously, such as when doing a convergence study, * comparing heterogenous but related data, such as experimental and theoretical data, I/O with nested data formats such as netCDF / Zarr groups. . The approach used is based on benbovy's DatasetNode example, the basic idea is that each tree node wraps a up to a single xarray.Dataset. The differences are that datatree: . * uses a node structure inspired by anytree for the tree, * implements path-like getting and setting, * has functions for mapping user-supplied functions over every node in the tree, * automatically dispatches some of xarray.Dataset's API over every node in the tree (such as .isel), * has a bunch of tests, * has a printable representation"
@@ -18,7 +18,7 @@
     "pool/main/x/xarray-datatree"
   ],
   "Files": [
-    "3d9ea7f31ce141a5bf76da5dddbdc403 3638 xarray-datatree_0.0.13-1.dsc 3514ba80836d0b8ef862c330cb98d5b0 83341 xarray-datatree_0.0.13.orig.tar.gz 8c79186d86f885783a39a48985b43e7c 3180 xarray-datatree_0.0.13-1.debian.tar.xz"
+    "b1b9cb0d16a6c81b9492c4415edf2040 3651 xarray-datatree_0.0.13-2.dsc 3514ba80836d0b8ef862c330cb98d5b0 83341 xarray-datatree_0.0.13.orig.tar.gz 33d8e4aceaefb4c6817143235965b3ff 3636 xarray-datatree_0.0.13-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/xarray-datatree.git"
   ],
   "Version": [
-    "0.0.13-1"
+    "0.0.13-2"
   ]
 }
