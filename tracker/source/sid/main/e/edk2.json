@@ -3,22 +3,22 @@
     "all"
   ],
   "Binary": [
-    "ovmf, ovmf-ia32, qemu-efi-arm, qemu-efi-aarch64, efi-shell-ia32, efi-shell-x64, efi-shell-arm, efi-shell-aa64"
+    "ovmf, ovmf-ia32, qemu-efi-arm, qemu-efi-aarch64, qemu-efi-riscv64, efi-shell-ia32, efi-shell-x64, efi-shell-arm, efi-shell-aa64"
   ],
   "Build-Depends": [
-    "bc, debhelper-compat (= 12), dh-exec, dosfstools, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], iasl, lsb-release, mtools, nasm, python3, python3-distutils, python3-pexpect, qemu-utils, qemu-system-arm (\u003e= 1:2.12+dfsg), qemu-system-x86 (\u003e= 1:2.12+dfsg), uuid-dev, xorriso"
+    "bc, debhelper-compat (= 12), dh-exec, dosfstools, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], gcc-riscv64-linux-gnu, iasl, lsb-release, mtools, nasm, python3, python3-distutils, python3-pexpect, qemu-utils, qemu-system-arm (\u003e= 1:2.12+dfsg), qemu-system-x86 (\u003e= 1:2.12+dfsg), uuid-dev, xorriso"
   ],
   "Build-Indep-Architecture": [
     "amd64"
   ],
   "Checksums-Sha256": [
-    "b1ab1f2c5a47c633cfd2593ed042c5d576290eb81e641a2820fbd14c04a191de 2884 edk2_2023.05-2.dsc a8eb9266d5993f71e2dbd1d09bf649f49388ad7ca5aa26c787f7dabd0dd37f46 17274728 edk2_2023.05.orig.tar.xz ccb4e7e59530f8c01048c6db5f0008f880e654b138519e195fad77d7f96b650d 37544 edk2_2023.05-2.debian.tar.xz"
+    "c5d149d4f45c19ee8249db31bffb629fb621114e4b0d285fe9a64eee3b20e930 2988 edk2_2023.11-2.dsc 7a06a495fa0f087406b43e3b2622e47e7ad4d25e55ec7fd64ba27a2295cca17d 25083316 edk2_2023.11.orig.tar.xz 485b942f56300d549a5ae84fe9ba8ad38446caea18755eeb425cddf4ba621323 40924 edk2_2023.11-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/edk2"
   ],
   "Files": [
-    "eae58e7d6ae55537edee4c43de6ae2f0 2884 edk2_2023.05-2.dsc 1b026fe8538034bdf33537ed5b0a5499 17274728 edk2_2023.05.orig.tar.xz 71af3dd075de5c20b3ef38c42178399c 37544 edk2_2023.05-2.debian.tar.xz"
+    "d684b5b782a6636ad5119a2eea047009 2988 edk2_2023.11-2.dsc 03a212f83f1372a7b81c8fef94554b5c 25083316 edk2_2023.11.orig.tar.xz 228754c065d49aab5eb0c60d65fcfd88 40924 edk2_2023.11-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "edk2"
   ],
   "Package-List": [
-    "efi-shell-aa64 deb misc optional arch=all efi-shell-arm deb misc optional arch=all efi-shell-ia32 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-ia32 deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-arm deb misc optional arch=all"
+    "efi-shell-aa64 deb misc optional arch=all efi-shell-arm deb misc optional arch=all efi-shell-ia32 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-ia32 deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-arm deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dosfstools, grub-efi-amd64-signed, grub-efi-arm64-signed, mtools, openssl, python3-pexpect, qemu-system-arm, qemu-system-x86, sbsigntool, shim-signed, xorriso"
+    "dosfstools, grub-efi-amd64-signed, grub-efi-arm64-signed, mtools, openssl, python3-pexpect, qemu-system-arm, qemu-system-misc, qemu-system-x86, sbsigntool, shim-signed, xorriso"
   ],
   "Uploaders": [
     "Steve Langasek \u003cvorlon@debian.org\u003e, Serge Hallyn \u003cserge.hallyn@ubuntu.com\u003e, dann frazier \u003cdannf@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/qemu-team/edk2.git"
   ],
   "Version": [
-    "2023.05-2"
+    "2023.11-2"
   ]
 }
