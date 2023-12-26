@@ -6,16 +6,16 @@
     "python3-httpbin"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3, python3-brotli, python3-decorator, python3-flask, python3-flasgger, python3-gevent, python3-greenlet, python3-itsdangerous, python3-jinja2, python3-markupsafe, python3-setuptools, python3-six, python3-werkzeug"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3, python3-brotli \u003c!nocheck\u003e, python3-decorator \u003c!nocheck\u003e, python3-flask \u003c!nocheck\u003e, python3-flasgger \u003c!nocheck\u003e, python3-setuptools, python3-werkzeug \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "17a22b079f416fb717b14db9cceab799e7c84166b122d3a9e2cfc27db046cf7f 1692 httpbin_0.10.1+dfsg-2.dsc 3a0d42f3ff99cf1d83847442ec1a7ecbc327a6e6ebe1324314a5519191ea4981 88928 httpbin_0.10.1+dfsg.orig.tar.xz 34e78bca17581404b2a95fd1e1c4cd4e5af8849ca14f452d0f910ce32f21120b 5912 httpbin_0.10.1+dfsg-2.debian.tar.xz"
+    "51768cd76100fb609bb47795431797c98e924e31ac749477ef829187e8490cfd 2383 httpbin_0.10.1+dfsg-3.dsc 3a0d42f3ff99cf1d83847442ec1a7ecbc327a6e6ebe1324314a5519191ea4981 88928 httpbin_0.10.1+dfsg.orig.tar.xz 34b9df1718dd0801845e889d403f7d4ecf469c5bebd03fc6918a6d909ba885bf 7948 httpbin_0.10.1+dfsg-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/httpbin"
   ],
   "Files": [
-    "323007baf78f14a74dad79e03bc26eb4 1692 httpbin_0.10.1+dfsg-2.dsc a141577dae5e299e960a866c348052df 88928 httpbin_0.10.1+dfsg.orig.tar.xz e0bd97b585fc177279b82783499d497a 5912 httpbin_0.10.1+dfsg-2.debian.tar.xz"
+    "93c8c1b49686213f0a1b5daed89ccff1 2383 httpbin_0.10.1+dfsg-3.dsc a141577dae5e299e960a866c348052df 88928 httpbin_0.10.1+dfsg.orig.tar.xz 32c883b7b8de824f786c1a922a417dc9 7948 httpbin_0.10.1+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-brotli, python3-decorator, python3-flasgger, python3-flask, python3-werkzeug"
   ],
   "Uploaders": [
     "Timo Röhling \u003croehling@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/httpbin.git"
   ],
   "Version": [
-    "0.10.1+dfsg-2"
+    "0.10.1+dfsg-3"
   ]
 }
