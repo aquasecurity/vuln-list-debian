@@ -6,19 +6,16 @@
     "golang-github-kubernetes-gengo-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-golang, golang-go, golang-glog-dev, golang-github-davecgh-go-spew-dev, golang-github-kr-pretty-dev, golang-github-gogo-protobuf-dev, golang-github-google-go-cmp-dev, golang-github-spf13-pflag-dev, golang-gopkg-check.v1-dev, golang-golang-x-tools-dev, golang-k8s-klog-dev, golang-k8s-sigs-yaml-dev"
+    "debhelper-compat (= 13), dh-sequence-golang, golang-any (\u003e= 2:1.15~), golang-glog-dev, golang-github-davecgh-go-spew-dev, golang-github-kr-pretty-dev, golang-github-google-gofuzz-dev, golang-github-gogo-protobuf-dev, golang-github-google-go-cmp-dev, golang-github-spf13-pflag-dev, golang-gopkg-check.v1-dev, golang-golang-x-tools-dev, golang-k8s-klog-dev, golang-k8s-sigs-yaml-dev"
   ],
   "Checksums-Sha256": [
-    "83337e1ca7089c9438caaa5ec958cff7091f7b010a72c72440c002c5b61e8b40 2149 golang-github-kubernetes-gengo_0.0~git20210915.39e73c8-2.dsc dfcbb462467d678c28e6cecd39b159415eef15978414b9ee0c058de81e199ee9 76980 golang-github-kubernetes-gengo_0.0~git20210915.39e73c8.orig.tar.xz 96f9c33286c2502005ebf9081deab610033e2c1475a33cd0ba96110fef6d54ce 3644 golang-github-kubernetes-gengo_0.0~git20210915.39e73c8-2.debian.tar.xz"
-  ],
-  "Dgit": [
-    "a61f46bcf77996ea1cd2ba631ff0c7d6164db324 debian archive/debian/0.0_git20210915.39e73c8-2 https://git.dgit.debian.org/golang-github-kubernetes-gengo"
+    "c32328d05a8b59319d62772541bb5756ae0063381d83563d756e31d486b6b85b 2691 golang-github-kubernetes-gengo_0.0~git20230829.9cce18d-2.dsc f23677225f50f8466afa71d487aded3fa2d2e84055848eee66cc9ba636dc1959 85936 golang-github-kubernetes-gengo_0.0~git20230829.9cce18d.orig.tar.xz 8b68baea7ba818572d63d907b9d7b303f5fdcae9d48d4c8a14fda659534f48d2 3108 golang-github-kubernetes-gengo_0.0~git20230829.9cce18d-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/golang-github-kubernetes-gengo"
   ],
   "Files": [
-    "fff1e4e5c85066ed58b8afbb70cb9938 2149 golang-github-kubernetes-gengo_0.0~git20210915.39e73c8-2.dsc a728b1472ba4b1aed302a820e172830c 76980 golang-github-kubernetes-gengo_0.0~git20210915.39e73c8.orig.tar.xz ae0a9c9100bb1e4248027113ed1789be 3644 golang-github-kubernetes-gengo_0.0~git20210915.39e73c8-2.debian.tar.xz"
+    "4ce00be4889a624ebf1ff4e81c3da9ff 2691 golang-github-kubernetes-gengo_0.0~git20230829.9cce18d-2.dsc 7573a3bf3007c52baee7d921c0c6d015 85936 golang-github-kubernetes-gengo_0.0~git20230829.9cce18d.orig.tar.xz 0ebac045f731de5d1ed60e8a3bd4a6c1 3108 golang-github-kubernetes-gengo_0.0~git20230829.9cce18d-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,13 +27,13 @@
     "https://github.com/kubernetes/gengo"
   ],
   "Maintainer": [
-    "Debian Go Packaging Team \u003cpkg-go-maintainers@lists.alioth.debian.org\u003e"
+    "Debian Go Packaging Team \u003cteam+pkg-go@tracker.debian.org\u003e"
   ],
   "Package": [
     "golang-github-kubernetes-gengo"
   ],
   "Package-List": [
-    "golang-github-kubernetes-gengo-dev deb devel optional arch=all"
+    "golang-github-kubernetes-gengo-dev deb golang optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -45,7 +42,10 @@
     "golang"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-go"
   ],
   "Uploaders": [
     "Tim Potter \u003ctpot@hpe.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/go-team/packages/golang-k8s-gengo.git"
   ],
   "Version": [
-    "0.0~git20210915.39e73c8-2"
+    "0.0~git20230829.9cce18d-2"
   ]
 }
