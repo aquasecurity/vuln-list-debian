@@ -6,19 +6,19 @@
     "lammps, liblammps-dev, liblammps0, python3-lammps, lammps-doc, lammps-data, lammps-examples"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-python, gfortran | fortran-compiler, libavcodec-dev, libeigen3-dev, libfftw3-dev, libhdf5-mpi-dev, libjpeg-dev, libkim-api-dev, libnetcdf-dev, libsymspg-dev, libvtk9-dev, libvtk9-qt-dev, mpi-default-bin, mpi-default-dev, ocl-icd-opencl-dev | opencl-dev, python3-all-dev, voro++-dev"
+    "cmake, debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, gfortran | fortran-compiler, libavcodec-dev, libeigen3-dev, libfftw3-dev, libhdf5-mpi-dev, libjpeg-dev, libkim-api-dev, libnetcdf-dev, libpnetcdf-dev, libsymspg-dev, libvtk9-dev, libvtk9-qt-dev, mpi-default-bin, mpi-default-dev, ocl-icd-opencl-dev | opencl-dev, python3-all-dev, python3-sphinx, voro++-dev"
   ],
   "Build-Depends-Indep": [
-    "libjs-jquery, libjs-underscore, texlive-latex-recommended, texlive-fonts-recommended, texlive-latex-extra, tex-gyre, doxygen, sphinx-rtd-theme-common, latexmk, htmldoc, python3-sphinxcontrib.spelling, python3-sphinx, python3-sphinx-tabs, python3-breathe, virtualenv, git"
+    "libjs-sphinxdoc, libjs-jquery, libjs-mathjax, libjs-underscore, texlive-latex-recommended, texlive-fonts-recommended, texlive-latex-extra, tex-gyre, doxygen, sphinx-rtd-theme-common, latexmk, htmldoc, python3-sphinx-tabs, python3-sphinxcontrib.jquery, python3-sphinxcontrib.spelling, python3-breathe, python3-venv, git"
   ],
   "Checksums-Sha256": [
-    "058ff77c1fe885c7e29015523bd67ad6ebdb9743b6c665f85d011dfc7b45c81c 3000 lammps_20220106.git7586adbb6a+ds1-2.dsc 65146c615ad24d8b8bc64f4e05e86226a7f1fdb45c0b5ea9416562b9f3863082 80348740 lammps_20220106.git7586adbb6a+ds1.orig.tar.xz f1db31cf6250324613ada9e7a856811293b31abc867762b5530f06b243925fe8 15176 lammps_20220106.git7586adbb6a+ds1-2.debian.tar.xz"
+    "334e823a1a88a0e7bc4caeed3ecf02a930282cf2b0f2d5b640a3c4bbba440e40 3075 lammps_20231121+dfsg-2.dsc e0c3b1c043f34ff06c51af2f165fa9bbdb8017d0bb71d4a52d0b29d132d46e8d 150251728 lammps_20231121+dfsg.orig.tar.xz 775a2e623a13114518c6e62ed24c327accb2a61cf301691f03c60451ea78b871 16612 lammps_20231121+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lammps"
   ],
   "Files": [
-    "4ed84381ee423805c646052f01626230 3000 lammps_20220106.git7586adbb6a+ds1-2.dsc 29ec64141c2eec47ae0551bee8c203ec 80348740 lammps_20220106.git7586adbb6a+ds1.orig.tar.xz 0c88e455372d0cdc77b005485e466759 15176 lammps_20220106.git7586adbb6a+ds1-2.debian.tar.xz"
+    "4a675552d68f4fb3b4049e9803ba8482 3075 lammps_20231121+dfsg-2.dsc ba9bcff793120fb4e85f522da29c062e 150251728 lammps_20231121+dfsg.orig.tar.xz 9815cc8aef822f30cf198908c169601c 16612 lammps_20231121+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "python3"
+  ],
   "Uploaders": [
     "Anton Gladky \u003cgladk@debian.org\u003e"
   ],
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/science-team/lammps.git"
   ],
   "Version": [
-    "20220106.git7586adbb6a+ds1-2"
+    "20231121+dfsg-2"
   ]
 }
