@@ -6,22 +6,22 @@
     "libgirepository-1.0-1, libgirepository1.0-dev, libgirepository1.0-doc, gobject-introspection, gir1.2-glib-2.0, gir1.2-freedesktop"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, meson (\u003e= 0.60.0), python3:native, python3-debian:native, python3-dev, python3-distutils, pkg-config, flex, gtk-doc-tools, bison, libglib2.0-dev (\u003e= 2.78.0), libcairo2-dev, libffi-dev (\u003e= 3.4), libtool, python3-mako, python3-markdown"
+    "debhelper-compat (= 13), dh-sequence-python3, gobject-introspection:native \u003ccross\u003e, libpython3-dev, meson (\u003e= 0.60.0), pkgconf, python3:native, python3-debian:native, python3-dev:any, python3-distutils, qemu-user \u003ccross\u003e, flex, bison, libelf-dev, libelf-dev:native, libglib2.0-dev (\u003e= 2.78.0), libcairo2-dev, libffi-dev (\u003e= 3.4), libtool, python3-mako:native, python3-markdown:native"
   ],
   "Build-Depends-Indep": [
-    "libglib2.0-doc (\u003e= 2.78.0)"
+    "gtk-doc-tools, libglib2.0-doc (\u003e= 2.78.0)"
   ],
   "Checksums-Sha256": [
-    "1ad9d9be000ad5c70a3c8b4b8340cf57f0c407b38937dd3a7419c24efb38fb6d 3535 gobject-introspection_1.78.1-5.dsc 44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4 1060296 gobject-introspection_1.78.1.orig.tar.xz 63c578605aa05c812a11ed2c8a0fc070d86f4a3af3b18c4b7db76634f6e66f38 43960 gobject-introspection_1.78.1-5.debian.tar.xz"
+    "389cad263d889731ebd024ddc00008be82af8d76c8563c824ad7eb2f253b194c 3663 gobject-introspection_1.78.1-6.dsc 44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4 1060296 gobject-introspection_1.78.1.orig.tar.xz 1620e6d6279c70278414d5a27e58499d1aad30b8baf9a3b193456cd69a6ba2eb 53244 gobject-introspection_1.78.1-6.debian.tar.xz"
   ],
   "Dgit": [
-    "404ccb930e444f1020fb467bc3dfe38091a44719 debian archive/debian/1.78.1-5 https://git.dgit.debian.org/gobject-introspection"
+    "855b96ab80d8b77838524052e16d2ef5453d644a debian archive/debian/1.78.1-6 https://git.dgit.debian.org/gobject-introspection"
   ],
   "Directory": [
     "pool/main/g/gobject-introspection"
   ],
   "Files": [
-    "4460eca1bd1aa6918ff49e3fc5a21344 3535 gobject-introspection_1.78.1-5.dsc fbddfac52807161670a11023965f1176 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz da2677e6b9c91b33c036d2233a96cec3 1060296 gobject-introspection_1.78.1.orig.tar.xz cb7eba50ecec4cdbed7335aded8ccf78 43960 gobject-introspection_1.78.1-5.debian.tar.xz"
+    "3ab178dd2f9e49c4d4cc1e037f5f8023 3663 gobject-introspection_1.78.1-6.dsc fbddfac52807161670a11023965f1176 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz da2677e6b9c91b33c036d2233a96cec3 1060296 gobject-introspection_1.78.1.orig.tar.xz 964aca07c912b9cbad3888c007adf1cd 53244 gobject-introspection_1.78.1-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, file, gir1.2-gtk-3.0, libcairo2-dev"
+    "build-essential, file, gir1.2-gtk-3.0, libcairo2-dev, pkgconf"
   ],
   "Uploaders": [
     "Iain Lane \u003claney@debian.org\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e, Marco Trevisan (Treviño) \u003cmarco@ubuntu.com\u003e, Matthias Klumpp \u003cmak@debian.org\u003e, Michael Biebl \u003cbiebl@debian.org\u003e, Tim Lunn \u003ctim@feathertop.org\u003e, Simon McVittie \u003csmcv@debian.org\u003e"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/gnome-team/gobject-introspection.git"
   ],
   "Version": [
-    "1.78.1-5"
+    "1.78.1-6"
   ]
 }
