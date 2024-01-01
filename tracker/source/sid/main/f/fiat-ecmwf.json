@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64 kfreebsd-amd64 ia64"
+    "any"
   ],
   "Binary": [
     "libfiat-0, fiat-utils, libfiat-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-buildinfo, dh-sequence-fortran-mod, ecbuild (\u003e= 3.3.2), gfortran | fortran-compiler, python3-all-dev, libfckit-dev (\u003e= 0.9.2-2), libeckit-dev, libfckit-utils, mpi-default-dev, chrpath"
+    "debhelper-compat (= 13), architecture-is-64-bit, dh-buildinfo, dh-fortran-mod (\u003e= 0.31), ecbuild (\u003e= 3.3.2), python3-all-dev, libfckit-dev (\u003e= 0.11.0-5), libfckit-utils, mpi-default-dev, chrpath"
   ],
   "Checksums-Sha256": [
-    "e8eb1f3ec378290aaf2589b625f6607f0bac8854d7bad727fc99735263620cb2 2462 fiat-ecmwf_1.2.0-1.dsc c097fea87552d8c1cc7104132cbd645faf760954c111b8aebaa05d46227fc5df 188624 fiat-ecmwf_1.2.0.orig.tar.xz 5db0140a7f6f561ee1ba171be980bee4df40cc57b3da45dd9c609d3b36375137 3600 fiat-ecmwf_1.2.0-1.debian.tar.xz"
+    "02fdb19ce1dab791b313db442bb70e905ee0799a70cbe00d3b568dd2c51fdef5 2153 fiat-ecmwf_1.2.0-2.dsc c097fea87552d8c1cc7104132cbd645faf760954c111b8aebaa05d46227fc5df 188624 fiat-ecmwf_1.2.0.orig.tar.xz 619bad968d0c79634108421a68577964b82baabf73255ed6bb2d82b2a0723605 3700 fiat-ecmwf_1.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fiat-ecmwf"
   ],
   "Files": [
-    "75152afa4c9b9030fe2b116c1b2a0a47 2462 fiat-ecmwf_1.2.0-1.dsc 1717fefe65c2d403eb9621f6bc1d6f99 188624 fiat-ecmwf_1.2.0.orig.tar.xz d8f5a3f6e3fccc631367533f08dba237 3600 fiat-ecmwf_1.2.0-1.debian.tar.xz"
+    "ff3defeb530ece9cbab10b56689cd66c 2153 fiat-ecmwf_1.2.0-2.dsc 1717fefe65c2d403eb9621f6bc1d6f99 188624 fiat-ecmwf_1.2.0.orig.tar.xz 8bfb620093c10256f9a92849a063df03 3700 fiat-ecmwf_1.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "fiat-ecmwf"
   ],
   "Package-List": [
-    "fiat-utils deb science optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64 libfiat-0 deb libs optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64 libfiat-dev deb libdevel optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64"
+    "fiat-utils deb science optional arch=any libfiat-0 deb libs optional arch=any libfiat-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org:/science-team/fiat.git -b debian/latest"
   ],
   "Version": [
-    "1.2.0-1"
+    "1.2.0-2"
   ]
 }
