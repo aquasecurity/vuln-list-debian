@@ -6,16 +6,16 @@
     "librust-ascii-canvas-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-term-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-term-0.7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "35bb8662e6312621eab3cad629b8893323befedbe43b46acc8c092289085ad8e 2185 rust-ascii-canvas_2.0.0-2.dsc 35b3dc5ac1edb913d269b8d3f6891de42d627d8c28db308e836fea1dd2feae7b 10347 rust-ascii-canvas_2.0.0.orig.tar.gz 8ae43f71541e07dd3185881965dcc46695ea8bc0893f1127a52d08656094cefa 2472 rust-ascii-canvas_2.0.0-2.debian.tar.xz"
+    "c32a25c29dff30a36da146fb802990a77b06dc4e0c413fce0414d22498252dfe 2267 rust-ascii-canvas_3.0.0-1.dsc 8824ecca2e851cec16968d54a01dd372ef8f95b244fb84b84e70128be347c3c6 10575 rust-ascii-canvas_3.0.0.orig.tar.gz ede55d5452f8116dd2c09996ae39da7da2b209998045a1531cf5d06803c608f6 2708 rust-ascii-canvas_3.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ascii-canvas"
   ],
   "Files": [
-    "1205d59b5dad7b135318c50f9c12b783 2185 rust-ascii-canvas_2.0.0-2.dsc 31b42c5553e675f9bf1c7e0659c65ffd 10347 rust-ascii-canvas_2.0.0.orig.tar.gz 205ef2f993c1375c38f3cc508f1f675f 2472 rust-ascii-canvas_2.0.0-2.debian.tar.xz"
+    "858fd7ba2a0d71532f2f8502b3857e7c 2267 rust-ascii-canvas_3.0.0-1.dsc edc4a35fc2238e8be5b0a06832c691b4 10575 rust-ascii-canvas_3.0.0.orig.tar.gz cf57e504c6cd7af2d33a648416b6bea5 2708 rust-ascii-canvas_3.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-diff-0.1+default-dev"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ascii-canvas]"
   ],
   "Version": [
-    "2.0.0-2"
+    "3.0.0-1"
   ]
 }

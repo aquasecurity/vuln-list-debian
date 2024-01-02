@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "all amd64 arm64 i386 mips64el ppc64el s390x ia64 ppc64 riscv64 sparc64 x32"
+    "all amd64 arm64 i386 ia64 loong64 mips64el ppc64 ppc64el riscv64 s390x sparc64 x32"
   ],
   "Binary": [
     "libgudhi-dev, libgudhi-examples, libgudhi-doc, python3-gudhi, gudhui, gudhi-utils"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.5), cython3, debhelper-compat (= 13), dh-python, libboost-filesystem-dev (\u003e= 1.66), libboost-program-options-dev (\u003e= 1.66), libboost-system-dev (\u003e= 1.66), libboost-test-dev (\u003e= 1.66), libboost-thread-dev (\u003e= 1.66), libboost-timer-dev (\u003e= 1.66), libcgal-dev (\u003e= 5.5.1), libcgal-qt5-dev (\u003e= 5.5.1), libeigen3-dev, libgmp-dev, libhera-dev (\u003e= 1.0.0), libqglviewer-dev-qt5, libtbb-dev, pybind11-dev, python3-all-dev, python3-eagerpy, python3-matplotlib, python3-numpy, python3-pot, python3-pybind11, python3-pytest, python3-scipy, python3-setuptools, python3-sklearn, python3-tk, qtbase5-dev"
+    "cmake (\u003e= 3.8), cython3-legacy, debhelper-compat (= 13), dh-python, libboost-filesystem-dev (\u003e= 1.66), libboost-program-options-dev (\u003e= 1.66), libboost-system-dev (\u003e= 1.66), libboost-test-dev (\u003e= 1.66), libboost-thread-dev (\u003e= 1.66), libboost-timer-dev (\u003e= 1.66), libcgal-dev (\u003e= 5.5.1), libcgal-qt5-dev (\u003e= 5.5.1), libeigen3-dev, libgmp-dev, libhera-dev (\u003e= 2.0.0), libqglviewer-dev-qt5, libtbb-dev, pybind11-dev, python3-all-dev, python3-eagerpy, python3-matplotlib, python3-numpy, python3-pot, python3-pybind11, python3-pytest, python3-scipy, python3-setuptools, python3-sklearn, python3-tk, qtbase5-dev"
   ],
   "Build-Depends-Indep": [
     "doxygen, graphviz"
   ],
   "Checksums-Sha256": [
-    "97befb8c2820dfd528af27bb211264df6d4c86fb0ed29c1f6126863f61c89c6c 3203 gudhi_3.7.1+dfsg-2.dsc 2b330684c6e4f430c1d905cb65b876431bee6435cc312f477dde837a478c5400 17582640 gudhi_3.7.1+dfsg.orig.tar.xz dc066c776343e6da60b05b854a06ffa9bdb4ec9ea0f392034f1661dc18f05462 15720 gudhi_3.7.1+dfsg-2.debian.tar.xz"
+    "c0ba2816cfba71c2447e162822eebdb99d9a1cece1048728f53a6723d2458778 3242 gudhi_3.8.0+dfsg-1.dsc 45045470ead3729334b16832ab6d06a95ef3fa5a2386dca688ffaccb30e53299 17607108 gudhi_3.8.0+dfsg.orig.tar.xz 8c8c067deb297ab92b0b6a54971aad79c26911a1fe226c1bc182489455f1e11f 11012 gudhi_3.8.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gudhi"
   ],
   "Files": [
-    "5c95c0e2335fefb931be0e0077da27e5 3203 gudhi_3.7.1+dfsg-2.dsc a1833f0d519356e5096c9495e51893b3 17582640 gudhi_3.7.1+dfsg.orig.tar.xz 26c7ff48d497588bbbd19a7ea321e01b 15720 gudhi_3.7.1+dfsg-2.debian.tar.xz"
+    "d540858093bd3688d33b0342ac5acf6d 3242 gudhi_3.8.0+dfsg-1.dsc ea5dd212bdf135dfae288510d6172a07 17607108 gudhi_3.8.0+dfsg.orig.tar.xz 465bedd022ab23cc4c9c1a180f7db5f7 11012 gudhi_3.8.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gudhi"
   ],
   "Package-List": [
-    "gudhi-utils deb math optional arch=amd64,arm64,i386,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sparc64,x32 gudhui deb math optional arch=amd64,arm64,i386,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sparc64,x32 libgudhi-dev deb libdevel optional arch=all libgudhi-doc deb doc optional arch=all libgudhi-examples deb misc optional arch=all python3-gudhi deb python optional arch=amd64,arm64,i386,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sparc64,x32"
+    "gudhi-utils deb math optional arch=amd64,arm64,i386,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sparc64,x32 gudhui deb math optional arch=amd64,arm64,i386,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libgudhi-dev deb libdevel optional arch=all libgudhi-doc deb doc optional arch=all libgudhi-examples deb misc optional arch=all python3-gudhi deb python optional arch=amd64,arm64,i386,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sparc64,x32"
   ],
   "Priority": [
     "extra"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/gspr/gudhi.git -b debian/sid"
   ],
   "Version": [
-    "3.7.1+dfsg-2"
+    "3.8.0+dfsg-1"
   ]
 }
