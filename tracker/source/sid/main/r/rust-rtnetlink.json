@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-rtnetlink-dev, librust-rtnetlink+tokio-dev, librust-rtnetlink+tokio-socket-dev"
+    "librust-rtnetlink-dev"
   ],
   "Build-Depends": [
     "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev (\u003e= 0.3.11-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-netlink-packet-core-0.7+default-dev \u003c!nocheck\u003e, librust-netlink-packet-route-0.17+default-dev \u003c!nocheck\u003e, librust-netlink-packet-utils-0.5+default-dev \u003c!nocheck\u003e, librust-netlink-proto-0.11+tokio-socket-dev \u003c!nocheck\u003e, librust-netlink-proto-0.11-dev \u003c!nocheck\u003e, librust-netlink-sys-0.8+default-dev \u003c!nocheck\u003e, librust-nix-0+fs-dev (\u003e= 0.26.1-~~) \u003c!nocheck\u003e, librust-nix-0+mount-dev (\u003e= 0.26.1-~~) \u003c!nocheck\u003e, librust-nix-0+sched-dev (\u003e= 0.26.1-~~) \u003c!nocheck\u003e, librust-nix-0+signal-dev (\u003e= 0.26.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "457ecbabe21c25fcaeb41f78f591d6bb7585a23c90add9eddc9ad2501199094a 3372 rust-rtnetlink_0.13.1-1.dsc 7a552eb82d19f38c3beed3f786bd23aa434ceb9ac43ab44419ca6d67a7e186c0 42517 rust-rtnetlink_0.13.1.orig.tar.gz f35f8495b71b53c3d7c74a04740e08627124e2f5bcb6fe896d51c3daa8afdf6e 5428 rust-rtnetlink_0.13.1-1.debian.tar.xz"
+    "3ac9194fb975c6595f1942d61884b3f5103bc616393b165a69ecb99d3535007f 3257 rust-rtnetlink_0.13.1-2.dsc 7a552eb82d19f38c3beed3f786bd23aa434ceb9ac43ab44419ca6d67a7e186c0 42517 rust-rtnetlink_0.13.1.orig.tar.gz b8299ae3d432f347a37dd93f88763520d54b39521361631c5987acdac612c8e0 5912 rust-rtnetlink_0.13.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rtnetlink"
   ],
   "Files": [
-    "2c656750d62295cd228098760520cb84 3372 rust-rtnetlink_0.13.1-1.dsc d6e88af38c5e98f31a17a1eb4e289050 42517 rust-rtnetlink_0.13.1.orig.tar.gz 3133ea10b7263c629d91ca3c115211aa 5428 rust-rtnetlink_0.13.1-1.debian.tar.xz"
+    "f62e5ac496857b7736f52727d94c4706 3257 rust-rtnetlink_0.13.1-2.dsc d6e88af38c5e98f31a17a1eb4e289050 42517 rust-rtnetlink_0.13.1.orig.tar.gz ce51b441bcc3178466db1207a7b04776 5912 rust-rtnetlink_0.13.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-rtnetlink"
   ],
   "Package-List": [
-    "librust-rtnetlink+tokio-dev deb rust optional arch=any librust-rtnetlink+tokio-socket-dev deb rust optional arch=any librust-rtnetlink-dev deb rust optional arch=any"
+    "librust-rtnetlink-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.10+default-dev, librust-ipnetwork-0.17+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-env-logger-0.10+default-dev, librust-ipnetwork-0.17+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rtnetlink]"
   ],
   "Version": [
-    "0.13.1-1"
+    "0.13.1-2"
   ]
 }
