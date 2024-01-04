@@ -6,16 +6,16 @@
     "pyensembl"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-setuptools, python3-all, python3-pandas, python3-numpy, python3-datacache, python3-serializable, python3-memoized-property, python3-gtfparse"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-all, python3-pandas, python3-numpy, python3-datacache, python3-serializable, python3-memoized-property, python3-gtfparse, python3-nose \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fc765e15897d38e3d6acde7d251182d07b42896656e60512a0252cea69211952 2206 pyensembl_2.2.8+ds-1.dsc 49edbac10f0b2d78025b75c134accb06177eed925f04172c22b2baf3445d34db 45692 pyensembl_2.2.8+ds.orig.tar.xz 4076134d3ec9cfa0990eb29b0ae68a1d2c411a1ae7abb0df947604798f699935 3680 pyensembl_2.2.8+ds-1.debian.tar.xz"
+    "33882853bfde8dbb3d0b978c81b8586489d18b44969b385e70fb14ce45aafdb6 2294 pyensembl_2.2.9+ds-1.dsc 932edd9d9e87f2b0e80d9f69b0cb2f51a8418eed7935a97fe0b17f088bc8f23b 45772 pyensembl_2.2.9+ds.orig.tar.xz 8ddec3d47ddedf6a96b3b372dbb1ed98dac93e3108e4ca87c1260bb1d71d8703 4564 pyensembl_2.2.9+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyensembl"
   ],
   "Files": [
-    "a4bcd30cc9fc3a75d68623cc770e6ed6 2206 pyensembl_2.2.8+ds-1.dsc 657eb86bbf06d68958a43f92bd5b59f6 45692 pyensembl_2.2.8+ds.orig.tar.xz d46cd05eeb7dbae91e07ae95a19f33e4 3680 pyensembl_2.2.8+ds-1.debian.tar.xz"
+    "c6e599aeb223f1803438e0f0260c8f90 2294 pyensembl_2.2.9+ds-1.dsc df6fc8430f3755185bf1d8831a16b958 45772 pyensembl_2.2.9+ds.orig.tar.xz e42e8b89bcebf903a6cb49e9e639b23f 4564 pyensembl_2.2.9+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-nose, python3-pytest"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e, Étienne Mollier \u003cemollier@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/med-team/pyensembl.git"
   ],
   "Version": [
-    "2.2.8+ds-1"
+    "2.2.9+ds-1"
   ]
 }
