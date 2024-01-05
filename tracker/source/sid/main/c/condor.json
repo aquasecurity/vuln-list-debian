@@ -3,37 +3,37 @@
     "any all"
   ],
   "Binary": [
-    "htcondor, htcondor-dev, htcondor-doc, htcondor-dbg, libclassad-dev, libclassad8"
+    "condor, condor-dev, condor-doc, minicondor, condor-annex-ec2, condor-upgrade-checks, condor-kbdd, condor-vm-gahp, condor-test, htcondor, htcondor-dev, htcondor-doc, minihtcondor, htcondor-annex-ec2, htcondor-upgrade-checks, htcondor-test"
   ],
   "Build-Conflicts": [
     "liblog4cpp5-dev"
   ],
   "Build-Depends": [
-    "autotools-dev, bison, chrpath, cmake, debhelper (\u003e= 9~), default-jdk | gcj-jdk, dh-autoreconf, dh-python, flex, gsoap (\u003e= 2.7.17-1~), help2man, latex2html, libboost-filesystem-dev, libboost-program-options-dev, libboost-python-dev, libboost-regex-dev, libboost-system-dev, libboost-test-dev, libboost-thread-dev, libcgroup-dev, libcurl4-openssl-dev, libexpat1-dev, libglobus-ftp-client-dev, libglobus-gass-server-ez-dev, libglobus-gram-client-dev, libglobus-gram-protocol-dev, libglobus-gss-assist-dev, libkrb5-dev, libldap2-dev | libldap-dev, libpcre3-dev, libpq-dev, libvirt-dev, libx11-dev, libxml2-dev, libxss-dev, po-debconf, python-dev, texlive-font-utils, transfig, uuid-dev, zlib1g-dev"
+    "cmake (\u003e= 3.16), debhelper, debhelper-compat (= 13), default-jdk, dh-python, libboost-filesystem-dev, libboost-program-options-dev, libboost-python-dev, libboost-regex-dev, libboost-system-dev, libboost-test-dev, libboost-thread-dev, libcgroup-dev, libcurl4-openssl-dev, libkrb5-dev, libldap2-dev | libldap-dev, libmunge-dev, libpam0g-dev, libpcre2-dev, libpq-dev, libscitokens-dev, libsqlite3-dev, libsystemd-dev, libvirt-dev, libx11-dev, libxml2-dev, libxss-dev, python3-dev, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-nbsphinx, python3-sphinx-autodoc-typehints, uuid-dev, voms-dev, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "c44e9f49e333fa1dff4d6d1dae9b2e8f7d2b53947a5f68c590ddf9b1038951c6 2946 condor_8.6.8~dfsg.1-2.dsc 6d696a09d94fb55765593aa08628bd1170cbb687775d00f12c309b6af83c7356 10532736 condor_8.6.8~dfsg.1.orig.tar.gz d33ea3dd91ff0f554a9f10a6e50fb82e69a03fa7a13b85d5c485be9399a72d8d 73548 condor_8.6.8~dfsg.1-2.debian.tar.xz"
+    "51fc4c2bb6a444c5ddb0813d8ec4eb09a9df0cd1943d24c0e59a37378ab96113 3464 condor_23.2.0+dfsg-1.dsc 5c1c1fa40739b1d782c9bb726e0a7c792c098b515ec3296e83b94e3916a9dd49 8104368 condor_23.2.0+dfsg.orig.tar.xz 4e947d1ab80681e8caa267a4a25df2f9ead115baf34218878461507b103483ff 24940 condor_23.2.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/condor"
   ],
   "Files": [
-    "c7296f3ebf5625e411dfdacf459f7041 2946 condor_8.6.8~dfsg.1-2.dsc 4ebe1e0f25048804cacb29232103dc0c 10532736 condor_8.6.8~dfsg.1.orig.tar.gz 7ee46f2bc72079782244033816b69b47 73548 condor_8.6.8~dfsg.1-2.debian.tar.xz"
+    "6ee2f7896bb13c66d395be5f0c776a41 3464 condor_23.2.0+dfsg-1.dsc b123ed2eb54d564d7a2962250fedf44a 8104368 condor_23.2.0+dfsg.orig.tar.xz 8e38c3f07abd59a21ebec0429d960d75 24940 condor_23.2.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://research.cs.wisc.edu/htcondor"
+    "https://htcondor.org/"
   ],
   "Maintainer": [
-    "HTCondor Developers \u003ccondor-debian@cs.wisc.edu\u003e"
+    "Debian HPC Team \u003cdebian-hpc@lists.debian.org\u003e"
   ],
   "Package": [
     "condor"
   ],
   "Package-List": [
-    "htcondor deb science extra arch=any htcondor-dbg deb debug extra arch=any htcondor-dev deb libdevel extra arch=any htcondor-doc deb doc extra arch=all libclassad-dev deb libdevel extra arch=any libclassad8 deb libs extra arch=any"
+    "condor deb science optional arch=any condor-annex-ec2 deb science optional arch=any condor-dev deb libdevel optional arch=any condor-doc deb doc optional arch=all condor-kbdd deb science optional arch=any condor-test deb science optional arch=any condor-upgrade-checks deb science optional arch=all condor-vm-gahp deb science optional arch=any htcondor deb science optional arch=any htcondor-annex-ec2 deb science optional arch=any htcondor-dev deb science optional arch=any htcondor-doc deb science optional arch=all htcondor-test deb science optional arch=any htcondor-upgrade-checks deb science optional arch=all minicondor deb science optional arch=any minihtcondor deb science optional arch=any"
   ],
   "Priority": [
     "source"
@@ -42,18 +42,18 @@
     "science"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.6.1"
   ],
   "Uploaders": [
-    "Michael Hanke \u003cmih@debian.org\u003e, Tim Theisen \u003ctim@cs.wisc.edu\u003e"
+    "Tim Theisen \u003ctim@cs.wisc.edu\u003e"
   ],
   "Vcs-Browser": [
-    "https://anonscm.debian.org/cgit/pkg-exppsy/condor.git"
+    "https://salsa.debian.org/hpc-team/condor"
   ],
   "Vcs-Git": [
-    "git://anonscm.debian.org/pkg-exppsy/condor.git"
+    "https://salsa.debian.org/hpc-team/condor.git"
   ],
   "Version": [
-    "8.6.8~dfsg.1-2"
+    "23.2.0+dfsg-1"
   ]
 }
