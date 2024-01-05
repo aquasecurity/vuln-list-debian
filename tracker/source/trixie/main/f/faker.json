@@ -6,16 +6,16 @@
     "python3-fake-factory, faker"
   ],
   "Build-Depends": [
-    "dh-python, python3-setuptools, python3-all, debhelper-compat (= 13), help2man, python3-mock, python3-dateutil, python3-pytest \u003c!nocheck\u003e, python3-pytest-runner \u003c!nocheck\u003e, python3-unidecode \u003c!nocheck\u003e"
+    "dh-python, python3-setuptools, python3-all, debhelper-compat (= 13), help2man, python3-mock \u003c!nocheck\u003e, python3-pil \u003c!nocheck\u003e, python3-dateutil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-runner \u003c!nocheck\u003e, python3-unidecode \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-validators \u003c!nocheck\u003e, python3-xmltodict \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "241393ac9fd7b36b9b3d55d232e86fb09d607fd87fc889756218bd2a5e5570df 2160 faker_0.9.3-2.dsc 8ffb7127ccd18be4150599d9afa16f05403f9ea0ed760da33d2622b0631fddd6 774382 faker_0.9.3.orig.tar.gz 61bc0e31120bedf9a3019ac99c0d27f93cbbed1a34ea98ef10c9a8d8d3b7129a 4232 faker_0.9.3-2.debian.tar.xz"
+    "0e2446a511422dad1dd1a2e8e2f6b1c3150f12bf4a82c6c42467f6ae44d12223 2455 faker_22.0.0-1.dsc e0c92b3d474422344b95f90d4d24b9a2b101e16bd3a3a08a534b9b928126a935 1720347 faker_22.0.0.orig.tar.gz 2fd26cdde7e93497f7bf92747edcd93e0fbe9ff4c7bfd26d6fdf039ef8c3e957 3640 faker_22.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/faker"
   ],
   "Files": [
-    "2519844c3c6b815d8358d9fdbe057e86 2160 faker_0.9.3-2.dsc 52904901d7fa8193c16683c3ebda2c55 774382 faker_0.9.3.orig.tar.gz db613cdc5739356dc75586b459e66e28 4232 faker_0.9.3-2.debian.tar.xz"
+    "6ba5578dd6c767172af320fb093d5940 2455 faker_22.0.0-1.dsc 064287c579edc6098b338a86fcd265c0 1720347 faker_22.0.0.orig.tar.gz 20a7a50591a071d1f8cfcc161b9c2b5f 3640 faker_22.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-freezegun, python3-pytest, python3-unidecode, python3-validators, python3-xmltodict"
   ],
   "Uploaders": [
     "Christopher Baines \u003cmail@cbaines.net\u003e, Brian May \u003cbam@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/faker.git"
   ],
   "Version": [
-    "0.9.3-2"
+    "22.0.0-1"
   ]
 }
