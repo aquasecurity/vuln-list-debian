@@ -6,16 +6,16 @@
     "python3-proxmoxer"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-setuptools, python3-all, python3-nose, python3-mock, python3-requests, python3-paramiko"
+    "debhelper-compat (= 13), dh-python, python3-setuptools, python3-all, python3-mock, python3-requests, python3-requests-toolbelt, python3-responses, python3-paramiko, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "324125dfc49bcee7406e38b5aa3a3010c180fb80790ef92e4e115015c63134e9 1742 proxmoxer_1.2.0-2.dsc 3a0ae0ebb6e9e303997c76018bcb4e9ed33580b262269aa63288243e30f67ea3 17751 proxmoxer_1.2.0.orig.tar.gz 81f29dfff050c961b090ffaec7ac6a0dcc6866a468e4e4f2880b65a430a66a4e 3376 proxmoxer_1.2.0-2.debian.tar.xz"
+    "b9b2aad582bbec23574fd164fc04e283ee45190eca95631e2eb02a2ee50a040a 1973 proxmoxer_2.0.1-1.dsc c77eed2c57c841d571edb5e3a8836102d951081a06c8ecc6740f3315f18d3fe0 32102 proxmoxer_2.0.1.orig.tar.gz 6f7cdba1fd5342a0da843cd608f23262ee27f18ec884a59e166c71a8e7da0235 3976 proxmoxer_2.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/proxmoxer"
   ],
   "Files": [
-    "a6ecc71c6a2311ec5494cef5cd4424ec 1742 proxmoxer_1.2.0-2.dsc 2775d20d6e5c6192ff9fd72b1fbec7f9 17751 proxmoxer_1.2.0.orig.tar.gz 661e809729e572eb6a67c84e7e3f0f5c 3376 proxmoxer_1.2.0-2.debian.tar.xz"
+    "5186076cac11b4123dc58ad609513d9d 1973 proxmoxer_2.0.1-1.dsc 735f264afb91136784df9684c665f967 32102 proxmoxer_2.0.1.orig.tar.gz a70f9a16cf5ea2399a950ae0b457f3ba 3976 proxmoxer_2.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-mock, python3-paramiko, python3-pytest, python3-requests, python3-requests-toolbelt, python3-responses"
   ],
   "Uploaders": [
     "Elena Grandi \u003cvalhalla@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/proxmoxer.git"
   ],
   "Version": [
-    "1.2.0-2"
+    "2.0.1-1"
   ]
 }
