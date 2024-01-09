@@ -6,16 +6,19 @@
     "mathgl, udav, libmgl8, libmgl-mpi8, libmgl-wnd8, libmgl-glut8, libmgl-qt5-8, libmgl-fltk8, libmgl-wx8, libmgl-data, libmgl-dev, python3-mathgl"
   ],
   "Build-Depends": [
-    "chrpath, cmake, debhelper-compat (= 13), desktop-file-utils, dh-sequence-python3, fluid, freeglut3-dev, libfltk1.3-dev, libfontconfig1-dev, libgif-dev, libgl1-mesa-dev | libgl-dev, libgsl-dev, libhdf4-dev, libhdf5-dev, libhpdf-dev, libjpeg-dev, libltdl-dev, liblua5.1-dev, libpng-dev, libqt5opengl5-dev, libqt5webkit5-dev, libtiff-dev, libwxgtk3.2-dev, libxcursor-dev, libxft-dev, libxi-dev, libxinerama-dev, libxmu-dev, mpi-default-dev, python3-dev, python3-numpy, qtwebengine5-dev [amd64 arm64 armhf i386 mipsel], swig, texinfo, texlive, texlive-plain-generic"
+    "chrpath, cmake, debhelper-compat (= 13), desktop-file-utils, dh-sequence-python3, file, fluid, freeglut3-dev, libfltk1.3-dev, libfontconfig-dev, libgif-dev, libgl-dev, libgsl-dev, libhdf4-dev, libhdf5-dev, libhpdf-dev, libjpeg-dev, libltdl-dev, liblua5.1-dev, libpng-dev, libqt5opengl5-dev, libqt5webkit5-dev, libtiff-dev, libwxgtk3.2-dev, libxcursor-dev, libxft-dev, libxi-dev, libxinerama-dev, libxmu-dev, mpi-default-dev, python3-dev, python3-numpy, qtwebengine5-dev [amd64 arm64 armhf i386], swig, texinfo, texlive, texlive-plain-generic"
   ],
   "Checksums-Sha256": [
-    "55da583b7c4e7de53cc39316b0cbcac1e8fe58b0828c0aeda0535c949496896a 3156 mathgl_8.0.1-4.dsc ca84bf9480c39ed3112e920c16ce3d8f2898698f62896f3a57714128622a55aa 23979834 mathgl_8.0.1.orig.tar.gz 23e4db1989d99055faa7a0d0ca69443ca936fee21464bbffbc2321fa44a8fa66 13484 mathgl_8.0.1-4.debian.tar.xz"
+    "93fe70358c72af3535b7e8d4c5b18467448f2d7f566bab430accd58bf2100853 3307 mathgl_8.0.1-5.dsc ca84bf9480c39ed3112e920c16ce3d8f2898698f62896f3a57714128622a55aa 23979834 mathgl_8.0.1.orig.tar.gz a24ab40aa0c81691a1eda66730a1115fa602d7f7906e598a4d91f86fbb0d2401 14440 mathgl_8.0.1-5.debian.tar.xz"
+  ],
+  "Dgit": [
+    "54bfea0cf96a7e2a992ebaef02c19c7d985a69d1 debian archive/debian/8.0.1-5 https://git.dgit.debian.org/mathgl"
   ],
   "Directory": [
     "pool/main/m/mathgl"
   ],
   "Files": [
-    "ddc9aeb2e337d867730c58ac8d5e01bb 3156 mathgl_8.0.1-4.dsc e86d414f180f7d3e3f1495aca7134409 23979834 mathgl_8.0.1.orig.tar.gz 3f41a04e565bf4f29cfe215cda3ef394 13484 mathgl_8.0.1-4.debian.tar.xz"
+    "e393e7824ba5b187466cd186c86b3bd9 3307 mathgl_8.0.1-5.dsc e86d414f180f7d3e3f1495aca7134409 23979834 mathgl_8.0.1.orig.tar.gz 0b30b2a13909d3ae9f6cc8a90f4c4212 14440 mathgl_8.0.1-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Dimitrios Eftaxiopoulos \u003ceftaxi12@otenet.gr\u003e, Alastair McKinstry \u003cmckinstry@debian.org\u003e, Rafael Laboissière \u003crafael@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/science-team/mathgl.git"
   ],
   "Version": [
-    "8.0.1-4"
+    "8.0.1-5"
   ]
 }
