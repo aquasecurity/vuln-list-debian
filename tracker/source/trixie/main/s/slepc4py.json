@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "python3-slepc4py, python3-slepc4py-real, python3-slepc4py-real3.18, python3-slepc4py-complex, python3-slepc4py-complex3.18, python3-slepc4py-64-real, python3-slepc4py-64-real3.18, python3-slepc4py-64-complex, python3-slepc4py-64-complex3.18, python-slepc4py-doc"
+    "python3-slepc4py, python3-slepc4py-real, python3-slepc4py-real3.19, python3-slepc4py-complex, python3-slepc4py-complex3.19, python3-slepc4py-64-real, python3-slepc4py-64-real3.19, python3-slepc4py-64-complex, python3-slepc4py-64-complex3.19, python-slepc4py-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, chrpath, cython3, python3-all-dev, python3-distutils, python3-numpy (\u003e= 1:1.4.1-4~), libslepc-real3.18-dev, libpetsc-real3.18-dev, libslepc-complex3.18-dev, libpetsc-complex3.18-dev, python3-petsc4py, python3-petsc4py-real3.18, python3-petsc4py-complex3.18, libslepc64-real3.18-dev, libpetsc64-real3.18-dev, libslepc64-complex3.18-dev, libpetsc64-complex3.18-dev, python3-petsc4py-64-real3.18, python3-petsc4py-64-complex3.18, mpi-default-dev, libjs-jquery (\u003e= 3.1.0), libjs-underscore (\u003e= 1.3.1), sphinx-common"
+    "debhelper-compat (= 13), dh-python, chrpath, cython3-legacy, python3-all-dev, python3-distutils, python3-numpy (\u003e= 1:1.4.1-4~), libslepc-real3.19-dev, libpetsc-real3.19-dev, libslepc-complex3.19-dev, libpetsc-complex3.19-dev, python3-petsc4py, python3-petsc4py-real3.19, python3-petsc4py-complex3.19, libslepc64-real3.19-dev, libpetsc64-real3.19-dev, libslepc64-complex3.19-dev, libpetsc64-complex3.19-dev, python3-petsc4py-64-real3.19, python3-petsc4py-64-complex3.19, mpi-default-dev, libjs-jquery (\u003e= 3.1.0), libjs-underscore (\u003e= 1.3.1), sphinx-common"
   ],
   "Build-Depends-Indep": [
     "python3-sphinx, latexmk, texinfo, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra, texlive-latex-recommended"
   ],
   "Checksums-Sha256": [
-    "9e8bd70bef50bc952fa971f395aa147b9fb640a73d2b5ea2a2c63feba6264cf2 3467 slepc4py_3.18.3-1.dsc 93c978f115683900a575026111ff2abe6f3ce4de8c21eec53c07dfd97ea43c85 1184022 slepc4py_3.18.3.orig.tar.gz ea58f4e97bf3f161684029a5af0fb2e758a0653c6f4fbb766cde0ffb996f0cc4 9088 slepc4py_3.18.3-1.debian.tar.xz"
+    "6b9292725045db38a7657c2ce6ec34c6855a9b2e0a2f05eca159b931b3afecda 3513 slepc4py_3.19.2-2.dsc e58a1bd532c141d78243b13a6791bf78f328850f325197f52b8279edce7d3bf9 683061 slepc4py_3.19.2.orig.tar.gz 025e8884c36e59c95d854bdd29c091a1601ef3a86bc8d3d0f7309e60ae90931b 9280 slepc4py_3.19.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/slepc4py"
   ],
   "Files": [
-    "6f82e5a3afc91cc9e013c41eeab702fd 3467 slepc4py_3.18.3-1.dsc 1fc8069ecca91b0c94cd3b13f0218e06 1184022 slepc4py_3.18.3.orig.tar.gz fb9357d005c500d49450fb2c56acd8a6 9088 slepc4py_3.18.3-1.debian.tar.xz"
+    "0a15cfef01dc9e544eb199d2eb1a597f 3513 slepc4py_3.19.2-2.dsc aaaef63e784d308d326445a6e55e0e24 683061 slepc4py_3.19.2.orig.tar.gz 5602f39ab5e82f14e581ea093ff22438 9280 slepc4py_3.19.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "slepc4py"
   ],
   "Package-List": [
-    "python-slepc4py-doc deb doc optional arch=all python3-slepc4py deb python optional arch=all python3-slepc4py-64-complex deb python optional arch=all python3-slepc4py-64-complex3.18 deb python optional arch=any python3-slepc4py-64-real deb python optional arch=all python3-slepc4py-64-real3.18 deb python optional arch=any python3-slepc4py-complex deb python optional arch=all python3-slepc4py-complex3.18 deb python optional arch=any python3-slepc4py-real deb python optional arch=all python3-slepc4py-real3.18 deb python optional arch=any"
+    "python-slepc4py-doc deb doc optional arch=all python3-slepc4py deb python optional arch=all python3-slepc4py-64-complex deb python optional arch=all python3-slepc4py-64-complex3.19 deb python optional arch=any python3-slepc4py-64-real deb python optional arch=all python3-slepc4py-64-real3.19 deb python optional arch=any python3-slepc4py-complex deb python optional arch=all python3-slepc4py-complex3.19 deb python optional arch=any python3-slepc4py-real deb python optional arch=all python3-slepc4py-real3.19 deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, gzip, pkg-config"
+    "@builddeps@, gzip, pkg-config, python3-all"
   ],
   "Uploaders": [
     "Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/science-team/slepc4py.git"
   ],
   "Version": [
-    "3.18.3-1"
+    "3.19.2-2"
   ]
 }
