@@ -6,16 +6,16 @@
     "librust-sudo-rs-dev, sudo-rs"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-glob-0.3+default-dev, librust-libc-0.2+default-dev (\u003e= 0.2.127-~~), librust-log-0.4+default-dev (\u003e= 0.4.11-~~), librust-log-0.4+std-dev (\u003e= 0.4.11-~~), libpam-dev, pandoc"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native (\u003e= 1.70), libstd-rust-dev, librust-glob-0.3+default-dev, librust-libc-0.2+default-dev (\u003e= 0.2.127-~~), librust-log-0.4+default-dev (\u003e= 0.4.11-~~), librust-log-0.4+std-dev (\u003e= 0.4.11-~~), libpam-dev, pandoc"
   ],
   "Checksums-Sha256": [
-    "c22fd038ff904be8e25b4c77edcd509d376daf4ce9796b47e164a66784ecf16c 2395 rust-sudo-rs_0.2.1-1.dsc f4d0c60111aa9f68713b8539a31d40665cca3916d6e4eeb265b6bdcc01eb47ee 148303 rust-sudo-rs_0.2.1.orig.tar.gz bf1f17343b9303f57fd72691269a9022e46ca6b4666e785662ebd5be77ea717b 4208 rust-sudo-rs_0.2.1-1.debian.tar.xz"
+    "3f41d042bc50bc93f38c341a4e7b8c8b419b27f086b4f74b59187591664f1b6a 2425 rust-sudo-rs_0.2.1-2.dsc f4d0c60111aa9f68713b8539a31d40665cca3916d6e4eeb265b6bdcc01eb47ee 148303 rust-sudo-rs_0.2.1.orig.tar.gz 63999bad4f947ce8cbdc734e89a6cf1499485e217155e1513d6cec900c540344 4736 rust-sudo-rs_0.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sudo-rs"
   ],
   "Files": [
-    "dfd50b5777ccff6df8e062e6fc878071 2395 rust-sudo-rs_0.2.1-1.dsc 1d0b6c66257a9d153ab9f72e5227e656 148303 rust-sudo-rs_0.2.1.orig.tar.gz edde484dd0c5288693c135b06ebe238c 4208 rust-sudo-rs_0.2.1-1.debian.tar.xz"
+    "8a17152299035d9661df86096b033406 2425 rust-sudo-rs_0.2.1-2.dsc 1d0b6c66257a9d153ab9f72e5227e656 148303 rust-sudo-rs_0.2.1.orig.tar.gz a6f57f343ef97c064004b98a4f72319e 4736 rust-sudo-rs_0.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev"
+    "dh-cargo, libpam-dev, librust-pretty-assertions-1+default-dev, procps"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sudo-rs]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.1-2"
   ]
 }
