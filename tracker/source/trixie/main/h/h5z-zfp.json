@@ -6,16 +6,19 @@
     "hdf5-filter-plugin-zfp-serial"
   ],
   "Build-Depends": [
-    "architecture-is-little-endian, debhelper-compat (= 13), dh-fortran-mod (\u003e= 0.11), pkg-config, libhdf5-dev, libhdf5-mpi-dev, mpi-default-dev, libzfp-dev, hdf5-tools, gfortran, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e"
+    "architecture-is-little-endian, debhelper-compat (= 13), dh-fortran-mod (\u003e= 0.11), dh-sequence-sphinxdoc \u003c!nodoc\u003e, gfortran, hdf5-tools, libhdf5-dev, libhdf5-mpi-dev, libzfp-dev, mpi-default-dev, pkg-config, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "82fb805fbc3d73ca01e520faa7a4bafc264a021ce8f5387596e3c192a5911335 2363 h5z-zfp_1.1.0+git20221021-4.dsc 22836397e007027dfab82a5405a491af7662d2143388562796d973cdca1c061b 169146 h5z-zfp_1.1.0+git20221021.orig.tar.gz bb26bd1d41b29c4a2d2ae1ead435f374a419e8f69bf12ce2ef2a47d13d261550 5192 h5z-zfp_1.1.0+git20221021-4.debian.tar.xz"
+    "bc12744a887adcfe25c4feefc031ec6d8649e90dc575aacddc117f1a33d2ef1a 2441 h5z-zfp_1.1.1-2.dsc bdc9d78e36016df61296c891d654e7494f1a08eca864e5156e97a2690a5ddb4c 180816 h5z-zfp_1.1.1.orig.tar.gz 84b9e789ef6cf94dc29971d00645da9be1a9cb96d9766a5b9e4e5d1a5c4b9ff8 4984 h5z-zfp_1.1.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "30b5ee10e61cb3a218bc8ca94dd4cec0bc46c307 debian archive/debian/1.1.1-2 https://git.dgit.debian.org/h5z-zfp"
   ],
   "Directory": [
     "pool/main/h/h5z-zfp"
   ],
   "Files": [
-    "24f2534b9ef72f8db4c9e680210c0218 2363 h5z-zfp_1.1.0+git20221021-4.dsc 0e11d24da41b9cf9fd40268505e6ee53 169146 h5z-zfp_1.1.0+git20221021.orig.tar.gz 36f81cfe8b52f84225a230ca7af16758 5192 h5z-zfp_1.1.0+git20221021-4.debian.tar.xz"
+    "54ae7af03a3c981890dfbd929852719b 2441 h5z-zfp_1.1.1-2.dsc dce033d6aca7334b51079b821864733f 180816 h5z-zfp_1.1.1.orig.tar.gz 98a2c34095faa4f95fc2976ee7ef744d 4984 h5z-zfp_1.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +48,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3, python3-h5py"
+    "@builddeps@, python3, python3-h5py"
   ],
   "Uploaders": [
-    "Freexian Packaging Team \u003cteam+freexian@tracker.debian.org\u003e"
+    "Freexian Packaging Team \u003cteam+freexian@tracker.debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/h5z-zfp"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/science-team/h5z-zfp.git"
   ],
   "Version": [
-    "1.1.0+git20221021-4"
+    "1.1.1-2"
   ]
 }
