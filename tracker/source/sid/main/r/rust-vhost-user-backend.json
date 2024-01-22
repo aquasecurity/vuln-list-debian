@@ -6,16 +6,16 @@
     "librust-vhost-user-backend-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-vhost-0.8+default-dev \u003c!nocheck\u003e, librust-vhost-0.8+vhost-user-slave-dev \u003c!nocheck\u003e, librust-virtio-bindings-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-virtio-queue-0.9+default-dev \u003c!nocheck\u003e, librust-vm-memory-0.12+backend-atomic-dev \u003c!nocheck\u003e, librust-vm-memory-0.12+backend-mmap-dev \u003c!nocheck\u003e, librust-vm-memory-0.12+default-dev \u003c!nocheck\u003e, librust-vmm-sys-util-0.11+default-dev \u003c!nocheck\u003e, architecture-is-64-bit"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-vhost-0.10+default-dev \u003c!nocheck\u003e, librust-vhost-0.10+vhost-user-backend-dev \u003c!nocheck\u003e, librust-virtio-bindings-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-virtio-queue-0.11+default-dev \u003c!nocheck\u003e, librust-vm-memory-0.14+backend-atomic-dev \u003c!nocheck\u003e, librust-vm-memory-0.14+backend-mmap-dev \u003c!nocheck\u003e, librust-vm-memory-0.14+default-dev \u003c!nocheck\u003e, librust-vmm-sys-util-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, architecture-is-64-bit"
   ],
   "Checksums-Sha256": [
-    "1eb330991fed2aea60fedb225d830de8db0f230f6095a6515268b317c5bfb5d2 2877 rust-vhost-user-backend_0.10.1-1.dsc ab069cdedaf18a0673766eb0a07a0f4ee3ed1b8e17fbfe4aafe5b988e2de1d01 18512 rust-vhost-user-backend_0.10.1.orig.tar.gz 3c36a374978211d82e62b8a616f14730d725fbd15cdc2804e5dd33da2797b5ed 3236 rust-vhost-user-backend_0.10.1-1.debian.tar.xz"
+    "9a3880a5b97fde4b2605371628e17167a69b1e2a9caf92ee020f235fb0e3b801 3339 rust-vhost-user-backend_0.13.1-1.dsc 72c8c447d076ac508d78cb45664d203df7989e891656dce260a7e93d72352c9a 20534 rust-vhost-user-backend_0.13.1.orig.tar.gz 162b0a05ff27ec549853a15e4d0081af91367229e93fe85140bac61d1a7df307 3796 rust-vhost-user-backend_0.13.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vhost-user-backend"
   ],
   "Files": [
-    "b80f3ac18e9bdb0b78487d30968bdb8f 2877 rust-vhost-user-backend_0.10.1-1.dsc b2c86b05272da0d2b90522f8565735c0 18512 rust-vhost-user-backend_0.10.1.orig.tar.gz 609ea1b82159f4f03be786c03f7708dd 3236 rust-vhost-user-backend_0.10.1-1.debian.tar.xz"
+    "97479d5aed2cd571edf0e0ce27a809b8 3339 rust-vhost-user-backend_0.13.1-1.dsc 8d31d7681f26e413276fff9d5754569d 20534 rust-vhost-user-backend_0.13.1.orig.tar.gz 12ae6a7fb986968089b48134ce7c904f 3796 rust-vhost-user-backend_0.13.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-nix-0.26+default-dev, librust-tempfile-3+default-dev, librust-vhost-0.8+default-dev, librust-vhost-0.8+test-utils-dev, librust-vhost-0.8+vhost-user-master-dev, librust-vhost-0.8+vhost-user-slave-dev, librust-vm-memory-0.12+backend-atomic-dev, librust-vm-memory-0.12+backend-bitmap-dev, librust-vm-memory-0.12+backend-mmap-dev, librust-vm-memory-0.12+default-dev"
+    "dh-cargo, librust-nix-0.26+default-dev, librust-nix-0.26+fs-dev, librust-nix-0.27+default-dev, librust-nix-0.27+fs-dev, librust-tempfile-3+default-dev, librust-vhost-0.10+default-dev, librust-vhost-0.10+test-utils-dev, librust-vhost-0.10+vhost-user-backend-dev, librust-vhost-0.10+vhost-user-frontend-dev, librust-vm-memory-0.14+backend-atomic-dev, librust-vm-memory-0.14+backend-bitmap-dev, librust-vm-memory-0.14+backend-mmap-dev, librust-vm-memory-0.14+default-dev"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vhost-user-backend]"
   ],
   "Version": [
-    "0.10.1-1"
+    "0.13.1-1"
   ]
 }
