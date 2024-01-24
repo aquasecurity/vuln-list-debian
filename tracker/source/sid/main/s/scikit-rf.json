@@ -6,16 +6,16 @@
     "python3-scikit-rf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, pybuild-plugin-pyproject"
   ],
   "Checksums-Sha256": [
-    "b200ad58fedaeb56b172f09da6622271e03ce2536ede69474acdb0a9fe1b95e9 2011 scikit-rf_0.15.4-2.1.dsc fe1e52f6f6c65287b3d5b5bb9c28f8069375419f198fcce39660b2b92bf67907 18506917 scikit-rf_0.15.4.orig.tar.gz 317c9fc6bb99fbf020bb2d057a868f0e9d69cb88c7d87c411004838758abe1b8 5012 scikit-rf_0.15.4-2.1.debian.tar.xz"
+    "cdd8f38d4543676304ec67d2f279295cc64ec7c95f9bdeb6b7df8f13f3da6141 2200 scikit-rf_0.30.0-1.1.dsc 8e834c030f687ce3640735fc430b430dc515b9697d1db6a6a4a6375886c0cf42 30325621 scikit-rf_0.30.0.orig.tar.gz 099b1c9c18176c26ed0ee7f61b72e1541b72331254a050f6587a8dd631a1339b 5384 scikit-rf_0.30.0-1.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/scikit-rf"
   ],
   "Files": [
-    "0223414eff7b7b38e15dbaa7147e0947 2011 scikit-rf_0.15.4-2.1.dsc 1bc4894d30803951d36d45144b1f1aed 18506917 scikit-rf_0.15.4.orig.tar.gz 4d51ee4bedd79963aa98d54e8f254fa9 5012 scikit-rf_0.15.4-2.1.debian.tar.xz"
+    "09bb6f81b4cdcade987f7a1f2e3258fc 2200 scikit-rf_0.30.0-1.1.dsc 912ba2f79da3e4694144313ea4874eb2 30325621 scikit-rf_0.30.0.orig.tar.gz 9999ddfcd018b7e7a434202f308abe51 5384 scikit-rf_0.30.0-1.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all, python3-ipython, python3-numpy, python3-pandas, python3-pytest, python3-pyvisa, python3-scipy"
   ],
   "Uploaders": [
     "Ruben Undheim \u003cruben.undheim@gmail.com\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/electronics-team/scikit-rf.git"
   ],
   "Version": [
-    "0.15.4-2.1"
+    "0.30.0-1.1"
   ]
 }
