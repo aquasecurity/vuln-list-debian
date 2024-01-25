@@ -3,22 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "libamd3, libbtf2, libcamd3, libcolamd3, libccolamd3, libcholmod5, libcxsparse4, libklu2, libldl3, libumfpack6, librbio4, libspqr4, libmongoose3, mongoose, libspex2, libsuitesparseconfig7, libsuitesparse-dev, libsuitesparse-doc"
+    "libamd3, libbtf2, libcamd3, libcolamd3, libccolamd3, libcholmod5, libcxsparse4, libklu2, libldl3, libumfpack6, librbio4, libspqr4, libsuitesparse-mongoose3, suitesparse-mongoose, mongoose, libspex2, libparu0, libsuitesparseconfig7, libsuitesparse-dev, libsuitesparse-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gfortran, libblas-dev, liblapack-dev, libgmp-dev, libmpfr-dev, cmake, pkgconf"
+    "debhelper-compat (= 13), cmake"
+  ],
+  "Build-Depends-Arch": [
+    "pkgconf, gfortran, libblas-dev, liblapack-dev, libgmp-dev, libmpfr-dev"
   ],
   "Build-Depends-Indep": [
-    "texlive-latex-extra, texlive-plain-generic, texlive-bibtex-extra, texlive-fonts-extra, ghostscript, texlive-science, texlive-xetex"
+    "texlive-latex-extra, texlive-plain-generic, texlive-bibtex-extra, texlive-fonts-extra, ghostscript, texlive-science, texlive-xetex, python3-pygments"
   ],
   "Checksums-Sha256": [
-    "397374f81fdb48326836b130957592c0ee1ac60bb366fd1aae15fdf104bfc2f6 3120 suitesparse_7.3.1+dfsg-2.dsc 36b8fb7d44b1b8a8e6e9719a5b590195cb24c14aec59fe3f6bd712b2d4a0e3c0 41040176 suitesparse_7.3.1+dfsg.orig.tar.xz 04eae47bf4cd640c4a0810f5aae1a2893d0df9a18f5b994d934029fadcdc10a1 25112 suitesparse_7.3.1+dfsg-2.debian.tar.xz"
+    "8b55f7ca28d7940534fa5f93a6669ed8aa404ef974c398b0c056db1bf7f20b2c 3302 suitesparse_7.5.1+dfsg-2.dsc ebdeed9358773006734d7b147b435a0d87a605c2a6dddbe40899338e28c74b32 50595176 suitesparse_7.5.1+dfsg.orig.tar.xz 45ac2b9a116c506525094c409046ac6282a4c8196cc326bb2cfcded4e635f71e 26708 suitesparse_7.5.1+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/suitesparse"
   ],
   "Files": [
-    "a0487d9a87510b0a2618b777473edee0 3120 suitesparse_7.3.1+dfsg-2.dsc 1f349191bd62b5fe7552aa9c5f1fcb2e 41040176 suitesparse_7.3.1+dfsg.orig.tar.xz 7fd201e63179d2d4d5ce8091b72d68a3 25112 suitesparse_7.3.1+dfsg-2.debian.tar.xz"
+    "d138915da05ca469fe4ebf0d90049945 3302 suitesparse_7.5.1+dfsg-2.dsc 305e7e89d2b63080115f561365a26855 50595176 suitesparse_7.5.1+dfsg.orig.tar.xz ac23141f6d6dc7a8b6eac7bf551189d1 26708 suitesparse_7.5.1+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "suitesparse"
   ],
   "Package-List": [
-    "libamd3 deb libs optional arch=any libbtf2 deb libs optional arch=any libcamd3 deb libs optional arch=any libccolamd3 deb libs optional arch=any libcholmod5 deb libs optional arch=any libcolamd3 deb libs optional arch=any libcxsparse4 deb libs optional arch=any libklu2 deb libs optional arch=any libldl3 deb libs optional arch=any libmongoose3 deb libs optional arch=any librbio4 deb libs optional arch=any libspex2 deb libs optional arch=any libspqr4 deb libs optional arch=any libsuitesparse-dev deb libdevel optional arch=any libsuitesparse-doc deb doc optional arch=all libsuitesparseconfig7 deb libs optional arch=any libumfpack6 deb libs optional arch=any mongoose deb math optional arch=any"
+    "libamd3 deb libs optional arch=any libbtf2 deb libs optional arch=any libcamd3 deb libs optional arch=any libccolamd3 deb libs optional arch=any libcholmod5 deb libs optional arch=any libcolamd3 deb libs optional arch=any libcxsparse4 deb libs optional arch=any libklu2 deb libs optional arch=any libldl3 deb libs optional arch=any libparu0 deb libs optional arch=any librbio4 deb libs optional arch=any libspex2 deb libs optional arch=any libspqr4 deb libs optional arch=any libsuitesparse-dev deb libdevel optional arch=any libsuitesparse-doc deb doc optional arch=all libsuitesparse-mongoose3 deb libs optional arch=any libsuitesparseconfig7 deb libs optional arch=any libumfpack6 deb libs optional arch=any mongoose deb oldlibs optional arch=all suitesparse-mongoose deb math optional arch=any"
   ],
   "Priority": [
     "source"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/science-team/suitesparse.git"
   ],
   "Version": [
-    "1:7.3.1+dfsg-2"
+    "1:7.5.1+dfsg-2"
   ]
 }
