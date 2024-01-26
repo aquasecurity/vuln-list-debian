@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "laurel"
+    "librust-laurel-dev, laurel"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-bindgen+default-dev (\u003e= 0.60), librust-caps-0.5+default-dev, librust-exacl+default-dev (\u003e= 0.6-~~), librust-getopts-0.2+default-dev, librust-indexmap-1+default-dev, librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-log-0.4+default-dev, librust-nix+default-dev (\u003e= 0.22-~~), librust-nom-7+default-dev, librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-json-1+preserve-order-dev, librust-signal-hook-0.3+default-dev, librust-simple-logger-1+default-dev, librust-syslog-6+default-dev, librust-tinyvec-1+alloc-dev, librust-tinyvec-1+default-dev, librust-toml-0.5+default-dev, dh-sysuser, libacl1-dev, pandoc"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native (\u003e= 1.56), libstd-rust-dev, librust-bindgen+default-dev (\u003e= 0.60-~~), librust-caps-0.5+default-dev, librust-exacl+default-dev (\u003e= 0.6-~~), librust-getopts-0.2+default-dev, librust-indexmap+default-dev (\u003e= 1.9-~~), librust-indexmap+serde-dev (\u003e= 1.9-~~), librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-log-0.4+default-dev, librust-nix-0.26+default-dev, librust-nom-7+default-dev, librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-json-1+preserve-order-dev, librust-signal-hook-0.3+default-dev, librust-simple-logger+default-dev (\u003e= 1-~~), librust-syslog-6+default-dev, librust-tinyvec-1+alloc-dev, librust-tinyvec-1+default-dev, librust-toml-0.5+default-dev, dh-sysuser, pandoc"
   ],
   "Checksums-Sha256": [
-    "d2d937513363640f9d471ebf207bf336b057488d3bbd830da98770acb86519d3 2683 rust-laurel_0.5.3-1.1.dsc b640ee07dcb591f653d817e0bc8af179ab45bda1ff10e20fc455dcb7cea95e44 112036 rust-laurel_0.5.3.orig.tar.gz 6dfff5e6e5a1a14455f18d665019027aed052723d58553b1776130b3815dc880 2624 rust-laurel_0.5.3-1.1.debian.tar.xz"
+    "73051be719f08e3f4350639fc39ff464bf4d060c8079778ac208bd1649791032 2993 rust-laurel_0.5.5-1.dsc 50164cc0093cfcb67e78544f5b1af4a693465977baa05e76080a1e8efd4ffe3f 119089 rust-laurel_0.5.5.orig.tar.gz 0b430e4c7e06028a31a982a9783799b949eb6aaf038d05a89ed25c8758e10be0 3468 rust-laurel_0.5.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-laurel"
   ],
   "Files": [
-    "a3f1bb812bc7ab2c803aff42d7b67d81 2683 rust-laurel_0.5.3-1.1.dsc 4fe3960727e509a4836555888d59800e 112036 rust-laurel_0.5.3.orig.tar.gz 6ffdd2aa86cc67698d428dd2e1922af8 2624 rust-laurel_0.5.3-1.1.debian.tar.xz"
+    "4e2ece49187e578a7bdd52983b44964b 2993 rust-laurel_0.5.5-1.dsc 6e0d1eeb78204d93c494cf37c4875300 119089 rust-laurel_0.5.5.orig.tar.gz edb872d89a25048913ffcd650dbffb93 3468 rust-laurel_0.5.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/threathunters-io/laurel"
   ],
   "Maintainer": [
-    "Hilko Bengen \u003cbengen@debian.org\u003e"
+    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
   ],
   "Package": [
     "rust-laurel"
   ],
   "Package-List": [
-    "laurel deb admin optional arch=any"
+    "laurel deb admin optional arch=any librust-laurel-dev deb admin optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-bencher-0+default-dev, librust-gperftools-0+default-dev"
+  ],
+  "Uploaders": [
+    "Hilko Bengen \u003cbengen@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/laurel"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/laurel]"
   ],
   "Version": [
-    "0.5.3-1.1"
+    "0.5.5-1"
   ]
 }
