@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "nextcloud-spreed-signaling"
+    "nextcloud-spreed-signaling, nextcloud-spreed-signaling-proxy, nextcloud-spreed-signaling-client, nextcloud-spreed-signaling-common"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), dh-exec, dh-golang, golang-any, golang-easyjson, golang-etcd-server-dev (\u003e= 3.4), golang-github-dlintw-goconf-dev, golang-github-golang-jwt-jwt-dev, golang-github-google-uuid-dev, golang-github-gorilla-mux-dev, golang-github-gorilla-securecookie-dev, golang-github-mailru-easyjson-dev, golang-github-nats-io-go-nats-dev, golang-github-notedit-janus-go-dev, golang-github-oschwald-maxminddb-golang-dev, golang-github-pion-sdp-dev, golang-prometheus-client-dev, golang-websocket-dev, protoc-gen-go-grpc"
   ],
   "Checksums-Sha256": [
-    "cb5c9e8bf34ab8966ba6aab972db364f40ab2c98ea35b0bf3a8f943c139a7658 2739 nextcloud-spreed-signaling_1.2.2-1.dsc 6379a757dc44655b8248e9d7aec11f9429c9b12072f384ee52bdecfea95dba8a 260711 nextcloud-spreed-signaling_1.2.2.orig.tar.gz 01bfe2df9cb065a85d0452a95421eb6dca3f4e10027c52bad06e7821539d5c87 16312 nextcloud-spreed-signaling_1.2.2-1.debian.tar.xz"
+    "f4a94e0f29fcfae5a2e98deba367aaf8a7f0903443047bed887463b3d592955f 3140 nextcloud-spreed-signaling_1.2.2-3.dsc 6379a757dc44655b8248e9d7aec11f9429c9b12072f384ee52bdecfea95dba8a 260711 nextcloud-spreed-signaling_1.2.2.orig.tar.gz e678701a4057598f206c47597cbd24f999ae23caac88800321ba857a911a15f9 17652 nextcloud-spreed-signaling_1.2.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/nextcloud-spreed-signaling"
   ],
   "Files": [
-    "ced39d07b472506bdae521e596925cb1 2739 nextcloud-spreed-signaling_1.2.2-1.dsc 0182a422a131a80ccfab4e67eba46057 260711 nextcloud-spreed-signaling_1.2.2.orig.tar.gz 29767f0aa7d6950cf85bc0ca956828d1 16312 nextcloud-spreed-signaling_1.2.2-1.debian.tar.xz"
+    "935bc71cf1d9c97734d19d89b477742b 3140 nextcloud-spreed-signaling_1.2.2-3.dsc 0182a422a131a80ccfab4e67eba46057 260711 nextcloud-spreed-signaling_1.2.2.orig.tar.gz 48029a0a0ed5dd7d298579b9d5f8341a 17652 nextcloud-spreed-signaling_1.2.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "nextcloud-spreed-signaling"
   ],
   "Package-List": [
-    "nextcloud-spreed-signaling deb golang optional arch=any"
+    "nextcloud-spreed-signaling deb golang optional arch=any nextcloud-spreed-signaling-client deb golang optional arch=any nextcloud-spreed-signaling-common deb golang optional arch=all nextcloud-spreed-signaling-proxy deb golang optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest-pkg-go"
   ],
   "Uploaders": [
-    "Dominik George \u003cnatureshadow@debian.org\u003e"
+    "Mike Gabriel \u003csunweaver@debian.org\u003e, Dominik George \u003cnatureshadow@debian.org\u003e, Joachim Bauch \u003cbauch@struktur.de\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/go-team/packages/nextcloud-spreed-signaling"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/go-team/packages/nextcloud-spreed-signaling.git"
   ],
   "Version": [
-    "1.2.2-1"
+    "1.2.2-3"
   ]
 }
