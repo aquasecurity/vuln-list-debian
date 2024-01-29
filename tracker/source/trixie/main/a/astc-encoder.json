@@ -3,19 +3,25 @@
     "any"
   ],
   "Binary": [
-    "astcenc, libastcenc4d, libastcenc-dev"
+    "astcenc, libastcenc5d, libastcenc-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libstb-dev, libtinyexr-dev, libz-dev, pkg-config \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), cmake, libgtest-dev \u003c!nocheck\u003e, libstb-dev, libtinyexr-dev, libz-dev, pkg-config \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0853f9d6230ec35aff2fe0d8d999698cc900fcf7788ea643c13bcf3b58a1646a 2038 astc-encoder_4.5.0+ds-2.dsc 7db1c480cb816aa3309e8bf16b4a01a03426eca3efb67d9c9d4c92523c0221c8 33772176 astc-encoder_4.5.0+ds.orig.tar.xz 22bc5c32841f4f1b2f01d312cf160c2f39c98cc48a4fb4333d85b238213ffc93 13484 astc-encoder_4.5.0+ds-2.debian.tar.xz"
+    "f5ef9025835e6476fff1c02528b94e93bd7148f261b2b9e3a8e4f8ea897e4c02 2734 astc-encoder_4.7.0+ds-2.dsc 3861d1463a1b4ed47062db55999ea191019cdc8312989a766b0859f517bd68bf 33786576 astc-encoder_4.7.0+ds.orig.tar.xz 99aa12294817266b3a48709fc71c9b0e04094bb263aa2cdedb623c2e5af0063c 13576 astc-encoder_4.7.0+ds-2.debian.tar.xz"
+  ],
+  "Description": [
+    "ASTC image compression and decompression The Adaptive Scalable Texture Compression (ASTC) format, developed by Arm® and AMD, has been adopted as an official extension to the Open GL®, OpenGL ES, and Vulkan® graphics APIs. It provides a major step forward both in terms of image quality at a given bitrate, and in terms of the format and bitrate flexibility available to content creators. This allows more assets to use compression, often at a reduced bitrate compared to legacy formats, reducing memory bandwidth and energy consumption."
+  ],
+  "Dgit": [
+    "7b0919a5bff8f0e9709a03b16466446f69eabb81 debian archive/debian/4.7.0+ds-2 https://git.dgit.debian.org/astc-encoder"
   ],
   "Directory": [
     "pool/main/a/astc-encoder"
   ],
   "Files": [
-    "b18166e61182c21b6a837df476001192 2038 astc-encoder_4.5.0+ds-2.dsc aa6771e5da4a314d7c7b6bd75893e15c 33772176 astc-encoder_4.5.0+ds.orig.tar.xz 3fdd4b28557105c5ec668904772963c4 13484 astc-encoder_4.5.0+ds-2.debian.tar.xz"
+    "251081fb3d325a3e42d73277b067331d 2734 astc-encoder_4.7.0+ds-2.dsc 4cdd614a71d0acaa7a9b6f171cad7a19 33786576 astc-encoder_4.7.0+ds.orig.tar.xz 90fdc8bc870b83b6720403e879e36b41 13576 astc-encoder_4.7.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +36,7 @@
     "astc-encoder"
   ],
   "Package-List": [
-    "astcenc deb graphics optional arch=any libastcenc-dev deb libdevel optional arch=any libastcenc4d deb libs optional arch=any"
+    "astcenc deb graphics optional arch=any libastcenc-dev deb libdevel optional arch=any libastcenc5d deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -45,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "c++-compiler, cmake, g++"
+    "c++-compiler, cmake, g++, libgtest-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/roehling/astc-encoder"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/roehling/astc-encoder.git"
   ],
   "Version": [
-    "4.5.0+ds-2"
+    "4.7.0+ds-2"
   ]
 }
