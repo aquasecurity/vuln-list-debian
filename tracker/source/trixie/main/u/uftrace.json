@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 i386 riscv64"
+    "amd64 arm64 armel armhf i386 riscv64"
   ],
   "Binary": [
     "uftrace"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), libelf-dev, pandoc, python3, pkg-config, libpython3-dev, libdw-dev, libncurses-dev, libcapstone-dev, libluajit-5.1-dev, bash-completion"
+    "debhelper-compat (= 12), libelf-dev, pandoc, python3, pkg-config, libpython3-dev, libdw-dev, libncurses-dev, libcapstone-dev, libluajit-5.1-dev [!riscv64], libunwind-dev, libtraceevent-dev, bash-completion"
   ],
   "Checksums-Sha256": [
-    "6db1677df1c1bb675e04550f6f76954ac770a96b13c04dd794418b7e8d9979e6 2039 uftrace_0.15.1-1.dsc 5c427852c7c63ffecbf343836f0e5409dbf4f33b612843f2b0fd254f33a749fd 1153505 uftrace_0.15.1.orig.tar.gz b416b59b83ffe79149a0a8e3f18261f1bb78362c5072562b9a27860acfd391cf 8616 uftrace_0.15.1-1.debian.tar.xz"
+    "6908ba4f2ba21351254bd165e1d21ad77906c1aa2f5dd54ff92e00213de4872f 2108 uftrace_0.15.2-1.dsc f274437c59e845c7636be55267ea3e8f08b7ca11de2413b7045b403247d5f64d 1153687 uftrace_0.15.2.orig.tar.gz bf0c9a4045cef0b687109eae57c5b5a33c2bc377960af4d64d8bf51843caf88b 8716 uftrace_0.15.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/uftrace"
   ],
   "Files": [
-    "5b1646bbcafdfdff97960809f7c43f96 2039 uftrace_0.15.1-1.dsc 9aa57714c5d2383b15ea0cf47c2ce65a 1153505 uftrace_0.15.1.orig.tar.gz f17def1e9b77a343504350f5835609b5 8616 uftrace_0.15.1-1.debian.tar.xz"
+    "ac59f9c1984cd4676d85c702b98b9689 2108 uftrace_0.15.2-1.dsc 2a3bedf602c788fe2067425f78dce659 1153687 uftrace_0.15.2.orig.tar.gz 6c306d3291cfc26bcfe7db1e542dc3f3 8716 uftrace_0.15.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "uftrace"
   ],
   "Package-List": [
-    "uftrace deb utils optional arch=amd64,arm64,i386,riscv64"
+    "uftrace deb utils optional arch=amd64,arm64,armel,armhf,i386,riscv64"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/uftrace.git"
   ],
   "Version": [
-    "0.15.1-1"
+    "0.15.2-1"
   ]
 }
