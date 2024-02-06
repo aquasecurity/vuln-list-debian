@@ -6,19 +6,19 @@
     "libusb-1.0-0, libusb-1.0-0-dev, libusb-1.0-doc, libusb-1.0-0-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libudev-dev [linux-any], pkg-config"
+    "debhelper-compat (= 13), libudev-dev [linux-any], pkg-config, umockdev \u003c!nocheck\u003e, libumockdev-dev \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen"
   ],
   "Checksums-Sha256": [
-    "3d75673e367fab1d0ca1ef29276ff4ea31dd7678c9573c10975e8d80bdbd0b14 2144 libusb-1.0_1.0.26-1.dsc 12ce7a61fc9854d1d2a1ffe095f7b5fac19ddba095c259e6067a46500381b5a5 620534 libusb-1.0_1.0.26.orig.tar.bz2 fdf5de721b46c9f411f833f531176f93de9e2b15101d55a4bff36ea6af0e0226 11524 libusb-1.0_1.0.26-1.debian.tar.xz"
+    "8bb3b5e8ad48159cc562cc98b1d86ab78c0c24076bfaa25175855e332392503b 2528 libusb-1.0_1.0.27-1.dsc ffaa41d741a8a3bee244ac8e54a72ea05bf2879663c098c82fc5757853441575 643680 libusb-1.0_1.0.27.orig.tar.bz2 1cd22bbfe4ce382ca9b091e2a6275c48f1c776253815cbb615da295ae0bfe687 833 libusb-1.0_1.0.27.orig.tar.bz2.asc 560bc02e704b8f28b04be3e6a551ccbf2b5c5cb0850864d6a5416ad05723f0b4 17044 libusb-1.0_1.0.27-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libu/libusb-1.0"
   ],
   "Files": [
-    "62b5264457391b66a346f734528477ed 2144 libusb-1.0_1.0.26-1.dsc 9c75660dfe1d659387c37b28c91e3160 620534 libusb-1.0_1.0.26.orig.tar.bz2 4397ff9942d68caeb9c099804d4cd2e6 11524 libusb-1.0_1.0.26-1.debian.tar.xz"
+    "f8b1dbf81dc292cbb44b2b4baaf6a2e3 2528 libusb-1.0_1.0.27-1.dsc 1fb61afe370e94f902a67e03eb39c51f 643680 libusb-1.0_1.0.27.orig.tar.bz2 be3b4265eb0ba77ea2a4bbe78539e1d7 833 libusb-1.0_1.0.27.orig.tar.bz2.asc 9ab0e4b8a46ea6c3456343bba278398a 17044 libusb-1.0_1.0.27-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "libusb-1.0"
   ],
   "Package-List": [
-    "libusb-1.0-0 deb libs optional arch=linux-any,hurd-any libusb-1.0-0-dev deb libdevel optional arch=linux-any,hurd-any libusb-1.0-0-udeb udeb debian-installer optional arch=linux-any,hurd-any libusb-1.0-doc deb doc optional arch=all"
+    "libusb-1.0-0 deb libs optional arch=linux-any,hurd-any libusb-1.0-0-dev deb libdevel optional arch=linux-any,hurd-any libusb-1.0-0-udeb udeb debian-installer optional arch=linux-any,hurd-any profile=!noudeb libusb-1.0-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,15 +42,15 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkg-config"
+    "autoconf, automake, build-essential, libudev-dev, libumockdev-dev, pkg-config, umockdev"
   ],
   "Version": [
-    "2:1.0.26-1"
+    "2:1.0.27-1"
   ]
 }
