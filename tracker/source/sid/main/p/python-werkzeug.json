@@ -6,22 +6,22 @@
     "python3-werkzeug, python-werkzeug-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, flit, pybuild-plugin-pyproject, python3-all, python3-cryptography \u003c!nocheck\u003e, python3-doc, python3-ephemeral-port-reserve \u003c!nocheck\u003e, python3-greenlet \u003c!nocheck\u003e, python3-markupsafe, python3-pallets-sphinx-themes \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xprocess \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-issues \u003c!nodoc\u003e, python3-sphinxcontrib-log-cabinet \u003c!nodoc\u003e, python3-watchdog \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, flit, pybuild-plugin-pyproject, python3-all, python3-cryptography \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, python3-ephemeral-port-reserve \u003c!nocheck\u003e, python3-greenlet \u003c!nocheck\u003e, python3-markupsafe, python3-pallets-sphinx-themes \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xprocess \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-issues \u003c!nodoc\u003e, python3-sphinxcontrib-log-cabinet \u003c!nodoc\u003e, python3-watchdog \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1bb66f180af14e0f59cba435a1bd64eeac076f3a8aa7fc1970164f2d54d7b14e 2649 python-werkzeug_2.3.8-1.dsc 8e9deefea65cfe6ca5a76e2d15e5e75a8e737f5385dd12433695ba8266c17c08 834470 python-werkzeug_2.3.8.orig.tar.gz f95b0f6a27888e0387ce28d68e89ded1c047130709709d92d720fbf210c1b83d 8976 python-werkzeug_2.3.8-1.debian.tar.xz"
+    "e9e5bb0bc94dd1640b3b00e9a6e3e71f620df500b9d7bd5ebd65a43e71bacede 2872 python-werkzeug_3.0.1-2.dsc acc5bf483bd710b1a66d0c876975e3967960fbe713be68a534b3d36beecad36b 719708 python-werkzeug_3.0.1.orig.tar.xz c7ed75b2960e456db7d354859c295c2cb95fc4973b43df1ef78fe236d163d585 17916 python-werkzeug_3.0.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-werkzeug"
   ],
   "Files": [
-    "cb60fc939c441dc86c9fe7100e131deb 2649 python-werkzeug_2.3.8-1.dsc 95a8f86c3b6e0fef205b268c706e0897 834470 python-werkzeug_2.3.8.orig.tar.gz 05064b33acfc5b932aa8e07ba322c0fa 8976 python-werkzeug_2.3.8-1.debian.tar.xz"
+    "2279d51818dc41ae1adbb1185c1736a2 2872 python-werkzeug_3.0.1-2.dsc 9d66a616d8cdacaf87ec844e45aabf2c 719708 python-werkzeug_3.0.1.orig.tar.xz ad6983857d0800cbdf1cad97212c573c 17916 python-werkzeug_3.0.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://werkzeug.pocoo.org/"
+    "https://github.com/pallets/werkzeug/"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -39,13 +39,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@"
+    "python3-all, python3-cryptography, python3-ephemeral-port-reserve, python3-greenlet, python3-pytest, python3-pytest-timeout, python3-pytest-xprocess, python3-watchdog"
   ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e, Ondřej Nový \u003conovy@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-werkzeug.git"
   ],
   "Version": [
-    "2.3.8-1"
+    "3.0.1-2"
   ]
 }
