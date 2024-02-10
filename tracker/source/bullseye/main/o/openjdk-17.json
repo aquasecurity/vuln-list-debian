@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "alpha amd64 armel armhf arm64 i386 ia64 mips mipsel mips64 mips64el powerpc ppc64 ppc64el m68k riscv64 sh4 sparc sparc64 s390x x32 all"
+    "alpha amd64 armel armhf arm64 i386 ia64 loong64 mips mipsel mips64 mips64el powerpc ppc64 ppc64el m68k riscv64 sh4 sparc sparc64 s390x x32 all"
   ],
   "Binary": [
     "openjdk-17-jdk-headless, openjdk-17-jre-headless, openjdk-17-jdk, openjdk-17-jre, openjdk-17-demo, openjdk-17-source, openjdk-17-doc, openjdk-17-dbg, openjdk-17-jre-zero"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), file, autoconf, automake, autotools-dev, ant, ant-optional, g++-10 \u003c!cross\u003e, openjdk-17-jdk-headless:native | openjdk-16-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libfreetype6-dev (\u003e= 2.2.1), libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig1-dev, libgtk2.0-0 | libgtk-3-0, libharfbuzz-dev, libffi-dev, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libnss3-dev (\u003e= 2:3.17.1), openjdk-17-jdk-headless \u003ccross\u003e"
+    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), file, autoconf, automake, autotools-dev, ant, ant-optional, g++-10 \u003c!cross\u003e, openjdk-17-jdk-headless:native | openjdk-16-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig1-dev, libgtk2.0-0 | libgtk-3-0, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libnss3-dev (\u003e= 2:3.17.1), openjdk-17-jdk-headless \u003ccross\u003e"
   ],
   "Build-Depends-Indep": [
     "graphviz, pandoc"
   ],
   "Checksums-Sha256": [
-    "8e2f9da26664c6b7b3937e9c226783889262c304766bccd641380390793baa74 4250 openjdk-17_17.0.7+7-1~deb11u1.dsc 54979d3108824cb1ff03063f9d00154395eeb6aa37153f1e3d990bd3064fe65f 61894896 openjdk-17_17.0.7+7.orig.tar.xz 290a915319af612be3fc4dddd465555c8458ef40a6bb0a11a99587c960fac947 199004 openjdk-17_17.0.7+7-1~deb11u1.debian.tar.xz"
+    "d9c3dc5f0addfd18d8589a2666dfcbf88b7468e6a2fcb38a5759de67392a48e0 4623 openjdk-17_17.0.10+7-1~deb11u1.dsc c2013181c6fbd98d7aa2b868ee6dec7ca24f0ebee05f6b074a420b0910866f38 616652 openjdk-17_17.0.10+7.orig-googletest.tar.xz 9962f9bb17c3595f41a20c6d161bacd9577ffa58aa364541e6982e09ca0114a7 62508320 openjdk-17_17.0.10+7.orig.tar.xz 4a24f85bdebb8a49c36ac8b3d32960a96c5e3d87cda88783ea2934ca9b3aa4f0 197344 openjdk-17_17.0.10+7-1~deb11u1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openjdk-17"
   ],
   "Files": [
-    "e90a5f7c786db87c69c5f219a86692eb 4250 openjdk-17_17.0.7+7-1~deb11u1.dsc 31686ecebc0181d2fce168e83c6f4791 61894896 openjdk-17_17.0.7+7.orig.tar.xz 6a57bc25f722ab66aa1d2a7302d7a1bd 199004 openjdk-17_17.0.7+7-1~deb11u1.debian.tar.xz"
+    "4a61b47cf06a236a3f0ad195937cbe19 4623 openjdk-17_17.0.10+7-1~deb11u1.dsc edcb7552a0ef4a3f0261203a675ad342 616652 openjdk-17_17.0.10+7.orig-googletest.tar.xz 609ce889685891ed2f0976e11e39c852 62508320 openjdk-17_17.0.10+7.orig.tar.xz 7ab50f6944ae9607fcba9a8631a52f1b 197344 openjdk-17_17.0.10+7-1~deb11u1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "openjdk-17"
   ],
   "Package-List": [
-    "openjdk-17-dbg deb debug optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-demo deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-doc deb doc optional arch=all openjdk-17-jdk deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jdk-headless deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jre deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jre-headless deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jre-zero deb java optional arch=amd64,i386,arm64,armhf,ppc64,ppc64el,s390x openjdk-17-source deb java optional arch=all"
+    "openjdk-17-dbg deb debug optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-demo deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-doc deb doc optional arch=all openjdk-17-jdk deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jdk-headless deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jre deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jre-headless deb java optional arch=alpha,amd64,armel,armhf,arm64,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-17-jre-zero deb java optional arch=amd64,i386,arm64,armhf,ppc64,ppc64el,riscv64,s390x openjdk-17-source deb java optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/openjdk-team/openjdk.git -b openjdk-17"
   ],
   "Version": [
-    "17.0.7+7-1~deb11u1"
+    "17.0.10+7-1~deb11u1"
   ]
 }
