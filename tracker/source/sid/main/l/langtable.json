@@ -6,16 +6,16 @@
     "python3-langtable"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3, python3-lxml \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, python3, libxml2-utils \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f43efd466222e24c5a31ad486085ca64eaa5fcd29fa9aef8d10f6b3f5577904d 2046 langtable_0.0.64-2.dsc 1297b7f6e33160887fe08a88176aa0ea873b810a55f2a2740257b124184b067a 1350585 langtable_0.0.64.orig.tar.gz b59363d5735618d5794493b962f573d91367218c40fb2fd3dc8b3bd45ee8ba4a 2868 langtable_0.0.64-2.debian.tar.xz"
+    "bb6308a314563a0225fa4de94ebc9650c0a276372861c1f4dcc3ebbf86a36fce 2094 langtable_0.0.65-1.dsc bf466296aba9142c114eee2dbb1917c3868bab384c63f608fc978a44b75b4863 1360986 langtable_0.0.65.orig.tar.gz 7946f831670af7e4085e8458b5e203f8f890db3ef3f4fb57094c6e0202c1694e 3360 langtable_0.0.65-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/langtable"
   ],
   "Files": [
-    "0a52ed555cc0d2e23f397e3f21372257 2046 langtable_0.0.64-2.dsc 395a3f18ededacd420dd28c6e22db9ec 1350585 langtable_0.0.64.orig.tar.gz 2a7a6234745d43e30edc74bd9414423f 2868 langtable_0.0.64-2.debian.tar.xz"
+    "6bfb80235872cc47754373df07745a38 2094 langtable_0.0.65-1.dsc 300b173e86251b77afe0fe21df20c7a4 1360986 langtable_0.0.65.orig.tar.gz 1adcbef9c97682613266ca96f8d847fd 3360 langtable_0.0.65-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "libxml2-utils"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/langtable.git"
   ],
   "Version": [
-    "0.0.64-2"
+    "0.0.65-1"
   ]
 }
