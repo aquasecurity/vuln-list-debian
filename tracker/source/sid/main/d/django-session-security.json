@@ -6,16 +6,16 @@
     "python3-django-session-security"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-six, python3-django, python3-sphinx"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-six, python3-django, python3-sphinx, python3-selenium \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be75e1afb54caaf2356c7b97de3c5779f93f792e83fd306ce4819b93e5038206 2231 django-session-security_2.6.6+dfsg-2.dsc 68dfdb1276f3e3b39f0555d24b00bc2fac3077ed991733a7754969adffe37007 95596 django-session-security_2.6.6+dfsg.orig.tar.xz 913b337982223df04d835be8fc685479bcf61ed294c105449b0ae302e7e49f4d 6360 django-session-security_2.6.6+dfsg-2.debian.tar.xz"
+    "204a3adaeac9d9f320951ea5de338a70f752b393e64b1f3f9f1eba8fa1fc119c 2328 django-session-security_2.6.7+dfsg-1.dsc a245bab170a5f7615a025c7040c975887da5a72c5fb33cb6abd8632a406572cb 95988 django-session-security_2.6.7+dfsg.orig.tar.xz 7285d03ab3393a96d65db319e720c92d5e6ce32e8018309b2a944c29c43175c6 7888 django-session-security_2.6.7+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/django-session-security"
   ],
   "Files": [
-    "994ebb7544f7623617c09abda772bcc3 2231 django-session-security_2.6.6+dfsg-2.dsc fa0feb3d5e4765f044efe0f18f7f032b 95596 django-session-security_2.6.6+dfsg.orig.tar.xz d18d7a1483830279336a1f553193736e 6360 django-session-security_2.6.6+dfsg-2.debian.tar.xz"
+    "45c8edd2163eceed644a5228ae652701 2328 django-session-security_2.6.7+dfsg-1.dsc cc902af84a5e4d7c54c2579419177753 95988 django-session-security_2.6.7+dfsg.orig.tar.xz 69df7ff672afeed03f71955a9da8c889 7888 django-session-security_2.6.7+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all"
   ],
   "Uploaders": [
     "Jean-Michel Vourgère \u003cnirgal@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/django-session-security.git"
   ],
   "Version": [
-    "2.6.6+dfsg-2"
+    "2.6.7+dfsg-1"
   ]
 }
