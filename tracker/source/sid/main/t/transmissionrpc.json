@@ -6,16 +6,16 @@
     "python3-transmissionrpc, python-transmissionrpc-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), python3-setuptools, dh-python, python3-all, python3-pytest \u003c!nocheck\u003e, python3-sphinx, python3-six"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-poetry-core, python3-typing-extensions, python3-yarl, python3-setuptools, python3-all, python3-pytest \u003c!nocheck\u003e, python3-sphinx"
   ],
   "Checksums-Sha256": [
-    "11b15b482bbf876ac408cc9ee3db4f7543b8781194f8d57c48e234d389857455 1666 transmissionrpc_0.11-7.dsc 96f6ddd492c82dddb7b45d7224324fa14f523548ff98e54e7a91f2719eaac735 106435 transmissionrpc_0.11.orig.tar.gz 661ee3ccc1bfa5c9e58ed5d4137d0e2cf8cb9e8b0cc76f6d94eded3990ebe1ff 6112 transmissionrpc_0.11-7.debian.tar.xz"
+    "d5583bbc9328cf28fab0512a517d3a1ffb23f4114ca5b88560d5bcfc5fdd50bd 2400 transmissionrpc_7.0.3-1.dsc 361cf57d371e86c37f5c69188b9634646f92c98e2b08929132eb6e24722fb130 140442 transmissionrpc_7.0.3.orig.tar.gz 4a050ff3ab5faaae4bf5fa0022e309e96d059905f05810a402d2cdb4905e477a 7968 transmissionrpc_7.0.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/transmissionrpc"
   ],
   "Files": [
-    "48cbb1135cf80b027dee8d02a23630f6 1666 transmissionrpc_0.11-7.dsc 2ec4dc465435cc970c20f1e10524439b 106435 transmissionrpc_0.11.orig.tar.gz 8c58fda43fec0e3bedb6133accaabbc5 6112 transmissionrpc_0.11-7.debian.tar.xz"
+    "63bc499a7a19545fe0af8775cd2e2a3d 2400 transmissionrpc_7.0.3-1.dsc 172b9db9729328715b465abecc607fe3 140442 transmissionrpc_7.0.3.orig.tar.gz 9869d8d178474d0422e7a41af2fe6bda 7968 transmissionrpc_7.0.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "transmission-daemon"
   ],
   "Uploaders": [
     "Vincent Bernat \u003cbernat@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/transmissionrpc.git"
   ],
   "Version": [
-    "0.11-7"
+    "7.0.3-1"
   ]
 }
