@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64 mips64el ppc64el s390x riscv64 sparc64 kfreebsd-amd64 ia64 all"
+    "any all"
   ],
   "Binary": [
     "metview, metview-data, libmetview0d, libmetview-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ecbuild (\u003e= 3.3.0-2), gfortran | fortran-compiler, python3-all-dev, libgeotiff-dev, flex, bison, libtirpc-dev, libncurses-dev, libjemalloc-dev, libpng-dev, libssl-dev, libhdf5-dev, liblapack-dev, libpango1.0-dev, libmetkit-dev, libmetkit-utils, fdb5, libfdb5-dev (\u003e= 5.11.25-1), odc, libodc-dev, libfftw3-dev, libeigen3-dev, chrpath, mksh, libfckit-dev, qt6-base-dev, libqt6core5compat6-dev, libqt6svg6-dev, libvulkan-dev, libxkbcommon-dev, libemos-dev, libemos-bin, libeccodes-dev (\u003e= 2.22.0), libeccodes-tools, libatlas-ecmwf-dev (\u003e= 0.29.0-2), libatlas-ecmwf-utils, libeckit-dev (\u003e= 1.10.1~), libboost-dev, libopenjp2-7-dev, libmagics++-metview-dev (\u003e= 4.12.1-2), libmagics++-dev (\u003e= 4.12.1-2), libxmu-dev, libgdbm-dev, libcurl4-gnutls-dev, libcairo2-dev, pkg-config, swig, libexpat1-dev, libterralib-dev (\u003e= 4.3.0+dfsg.2-8), libqt5svg5-dev, libgd-dev, imagemagick, libnetcdf-dev, flextra, flexpart"
+    "debhelper-compat (= 13), architecture-is-64-bit, ecbuild (\u003e= 3.3.0-2), gfortran | fortran-compiler, python3-all-dev, libgeotiff-dev, flex, bison, libtirpc-dev, libncurses-dev, libjemalloc-dev, libpng-dev, libssl-dev, libhdf5-dev, liblapack-dev, libpango1.0-dev, libmetkit-dev, libmetkit-utils, fdb5, libfdb5-dev (\u003e= 5.11.25~), odc, libodc-dev, libfftw3-dev, libeigen3-dev, chrpath, mksh, libfckit-dev, qt6-base-dev, libqt6core5compat6-dev, libqt6svg6-dev, libvulkan-dev, libxkbcommon-dev, libemos-dev, libemos-bin, libeccodes-dev (\u003e= 2.22.0), libeccodes-tools, libatlas-ecmwf-dev (\u003e= 0.29.0-2), libatlas-ecmwf-utils, libeckit-dev (\u003e= 1.10.1~), libboost-dev, libopenjp2-7-dev, libmagics++-metview-dev (\u003e= 4.12.1-2), libmagics++-dev (\u003e= 4.12.1-2), libxmu-dev, libgdbm-dev, libcurl4-gnutls-dev, libcairo2-dev, pkgconf, swig, libexpat1-dev, libterralib-dev (\u003e= 4.3.0+dfsg.2-8), libqt5svg5-dev, libgd-dev, imagemagick, libnetcdf-dev, flextra, flexpart"
   ],
   "Checksums-Sha256": [
-    "c5b72012241aecf6f6837f0ca02940081f1132f460c1ebc62bf07dde1d240473 3510 metview_5.20.0-2.dsc 0e42c9a09f6a55155c7413ac4c2fc225f42f7dc99f1310078541944cb426e62b 12472796 metview_5.20.0.orig-data.tar.xz cd30e609223276ba7c38af94781188a1cd9b2bbb1d30328cbd336cbd004dd806 39879896 metview_5.20.0.orig.tar.xz d0f4ecc58187eb542895e395365ba4753e93fb2a6053d6c5d89948a19efcec1a 40112 metview_5.20.0-2.debian.tar.xz"
+    "6008e991073d8f93f7b5521de417028d0300132b370f0e0fa329e9948e664d0d 3238 metview_5.21.1-1.dsc 0e42c9a09f6a55155c7413ac4c2fc225f42f7dc99f1310078541944cb426e62b 12472796 metview_5.21.1.orig-data.tar.xz bbb94ea9dfd0e6e2c59048684c4a6a48ffe875cf25092822419e56ac1f08f630 39891372 metview_5.21.1.orig.tar.xz dc62a8377f9137d0b77a83537af127b505678847f7906d3f0725a49e00d54b79 40460 metview_5.21.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/metview"
   ],
   "Files": [
-    "5e6e0ff21eae5d411aca3bc6296ef5f7 3510 metview_5.20.0-2.dsc 937244526893d74fac9918a5f30d02d1 12472796 metview_5.20.0.orig-data.tar.xz dc2af2cfce00f63d9b966df64db1cca4 39879896 metview_5.20.0.orig.tar.xz 5bd2b77a94a3c96c44d11aa8a17bd321 40112 metview_5.20.0-2.debian.tar.xz"
+    "a9693ec266b0939c0b4a1d8cb78b7fb1 3238 metview_5.21.1-1.dsc 937244526893d74fac9918a5f30d02d1 12472796 metview_5.21.1.orig-data.tar.xz b64a40603ff039d2d61151c9d5325d02 39891372 metview_5.21.1.orig.tar.xz e1e27fd76c4697ecfc873ae98c5702b5 40460 metview_5.21.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "metview"
   ],
   "Package-List": [
-    "libmetview-dev deb libdevel optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64 libmetview0d deb libs optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64 metview deb science optional arch=amd64,arm64,ppc64,mips64el,ppc64el,s390x,riscv64,sparc64,kfreebsd-amd64,ia64 metview-data deb science optional arch=all"
+    "libmetview-dev deb libdevel optional arch=any libmetview0d deb libs optional arch=any metview deb science optional arch=any metview-data deb science optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org:/science-team/metview.git"
   ],
   "Version": [
-    "5.20.0-2"
+    "5.21.1-1"
   ]
 }
