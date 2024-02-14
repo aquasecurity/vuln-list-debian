@@ -6,16 +6,16 @@
     "librust-h2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-sink-0.3-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e, librust-indexmap-1+default-dev (\u003e= 1.5.2-~~) \u003c!nocheck\u003e, librust-indexmap-1+std-dev (\u003e= 1.5.2-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-util-0.7+codec-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-tokio-util-0.7+default-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.21-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-sink-0.3-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e, librust-indexmap+default-dev (\u003e= 1.9.3-~~) \u003c!nocheck\u003e, librust-indexmap+std-dev (\u003e= 1.9.3-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-util-0.7+codec-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-tokio-util-0.7+default-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-tokio-util-0.7+io-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.35-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "92c88b0e07f81656e2ac4b22ec98b2c7178141f32b52626c33bea68ed7b9c2de 3126 rust-h2_0.3.21-1.dsc 91fc23aa11be92976ef4729127f1a74adf36d8436f7816b185d18df956790833 166581 rust-h2_0.3.21.orig.tar.gz 2deca7259f6836fd5fcb1cbdb35b8c44a3f2163f848b6efcf3b8d6db51c81992 4188 rust-h2_0.3.21-1.debian.tar.xz"
+    "b7205201aad31008a593af830db2b3f6f5aeed668cb4585efaa6023b316765c4 3227 rust-h2_0.3.24-1.dsc bb2c4422095b67ee78da96fbb51a4cc413b3b25883c7717ff7ca1ab31022c9c9 167814 rust-h2_0.3.24.orig.tar.gz cf729439c2eb1434a788508367452c3b9c81a5eac604e0156351c860143c1fb0 4288 rust-h2_0.3.24-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-h2"
   ],
   "Files": [
-    "36153b16ed8c999aaa0d9f24d3779a9b 3126 rust-h2_0.3.21-1.dsc 46e9bb4d5825488ac4d0ae73371f9482 166581 rust-h2_0.3.21.orig.tar.gz 4accf7e373366ed17cb26ad669fe60e1 4188 rust-h2_0.3.21-1.debian.tar.xz"
+    "727015b9ad017246567350f6d2de20b0 3227 rust-h2_0.3.24-1.dsc f8d17c98def1d7d057d2f5da3d29bc9b 167814 rust-h2_0.3.24.orig.tar.gz d62f636e1421fff5c1a4d62ffa1980a0 4288 rust-h2_0.3.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.10-dev, librust-hex-0.4+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-serde-1+default-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, librust-walkdir-2+default-dev"
+    "dh-cargo, librust-env-logger-0.10-dev, librust-hex-0.4+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, librust-serde-1+default-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, librust-tokio-rustls-0.24+default-dev, librust-walkdir-2+default-dev"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/h2]"
   ],
   "Version": [
-    "0.3.21-1"
+    "0.3.24-1"
   ]
 }
