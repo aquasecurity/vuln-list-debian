@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
     "python3-presto, presto"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools, python3-biopython \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-packaging \u003c!nocheck\u003e, vsearch [amd64 arm64 kfreebsd-amd64 ppc64el] \u003c!nocheck\u003e, cd-hit \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0e613d2a1ee0feb3c127a3e1ef2db3c845b7bc5714f11b91bd17d1ecaa907fad 2051 presto_0.7.1-1.dsc 4fb3180e651483a506c31e4f37839a43dec61f4396dcab8c7b608e81cc21b76f 84220 presto_0.7.1.orig.tar.xz 5a224d6f3034475d6047a5ebe12257cbc8f99637392a7e73e85f048b2f9ef502 20280 presto_0.7.1-1.debian.tar.xz"
+    "9d15613574a6f2b8e3ef5b0f303541b13684d7a3c0f2db9b163a924673409045 2233 presto_0.7.2-1.dsc 2eb8874e93df323a6fdf8a6e198f7795d710493d6a94d25d650a8ce0aa22c37b 361536 presto_0.7.2.orig.tar.xz 448a6926319a56a21569fc927e45b1708549ef27b7542ebfa345e0d8aab698d2 20772 presto_0.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/presto"
   ],
   "Files": [
-    "a7290103a6864d887462b61c65c8af35 2051 presto_0.7.1-1.dsc 23d61253b421af6d6efc8904383c62be 84220 presto_0.7.1.orig.tar.xz 712e2dc306c8b1c77f050822df9c7809 20280 presto_0.7.1-1.debian.tar.xz"
+    "258ee0e5d4679549daed1afd186aa3ac 2233 presto_0.7.2-1.dsc c10efa18782dda0f00d1a99becd31881 361536 presto_0.7.2.orig.tar.xz 50274e92ddd35153efbe95fe0cb01b0b 20772 presto_0.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "presto"
   ],
   "Package-List": [
-    "presto deb python optional arch=all python3-presto deb python optional arch=all"
+    "presto deb python optional arch=all python3-presto deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,10 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/med-team/presto.git"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.7.2-1"
   ]
 }
