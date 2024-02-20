@@ -6,16 +6,16 @@
     "libpapi7.1, libsde1, libpapi-dev, papi-tools, papi-examples"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, gfortran, libpfm4-dev (\u003e= 4.13.0+git16) [linux-any], librocm-smi-dev [!hppa !x32 !hurd-any !kfreebsd-any]"
+    "debhelper-compat (= 13), dh-sequence-python3, gfortran, libpfm4-dev (\u003e= 4.13.0+git16) [linux-any], librocm-smi-dev [!hppa !x32 !hurd-any !kfreebsd-any], mpi-default-dev"
   ],
   "Checksums-Sha256": [
-    "442607ed7f197a00569df325169aa4daf821aa50a1c9e50ba0da4a90f93811a0 2257 papi_7.1.0-2.dsc 092c4be0295d7874a17f687ed3bcc71c5cad6b5bb269a6486b3c1078d12a1441 2650676 papi_7.1.0.orig.tar.xz d3f682723ce5949bc88b32990c361c0012b6acf556277390e0ea2ad65b65fd62 21636 papi_7.1.0-2.debian.tar.xz"
+    "715618f9558e590d531a1efc56e3a2959a43a3af1d50d1c47e0ae874c5b6ecfd 2367 papi_7.1.0-3.dsc 092c4be0295d7874a17f687ed3bcc71c5cad6b5bb269a6486b3c1078d12a1441 2650676 papi_7.1.0.orig.tar.xz c4ce15dad772d158d7f61c86870411216f58001fabfa15e39902c022645ed063 24392 papi_7.1.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/papi"
   ],
   "Files": [
-    "a6607d4bf6d88953dcfb71cc276d09d0 2257 papi_7.1.0-2.dsc ea6a0dad60c04225ed50cc4dc5047744 2650676 papi_7.1.0.orig.tar.xz 6f652161a7cac28413a95b5adc877f1a 21636 papi_7.1.0-2.debian.tar.xz"
+    "c4f4dc9039dd3a2aa7a3bbccf1705a7a 2367 papi_7.1.0-3.dsc ea6a0dad60c04225ed50cc4dc5047744 2650676 papi_7.1.0.orig.tar.xz 90a8578248a0c8115f410d9bb3cfd08c 24392 papi_7.1.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "g++, gfortran, libpfm4-dev, make, mpi-default-dev"
+  ],
   "Uploaders": [
     "Vincent Danjean \u003cvdanjean@debian.org\u003e, Andreas Beckmann \u003canbe@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/hpc-team/papi.git"
   ],
   "Version": [
-    "7.1.0-2"
+    "7.1.0-3"
   ]
 }
