@@ -1,36 +1,39 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "kubectx"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bats, kubernetes-client"
+    "debhelper-compat (= 13), dh-golang, golang-any, golang-github-facette-natsort-dev, golang-github-fatih-color-dev, golang-github-google-go-cmp-dev, golang-github-mattn-go-isatty-dev, golang-github-pkg-errors-dev, golang-gopkg-yaml.v3-dev, golang-k8s-apimachinery-dev, golang-k8s-client-go-dev, help2man \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "704a5f6b54cb199160297e5e9210da2c5695be3f56bb1f2ef15284dd71a4f08d 1848 kubectx_0.9.3-1.dsc c9f1323f759605405ef8240d6fa64e741b788d978dff25d624a90af2760e778d 520511 kubectx_0.9.3.orig.tar.gz 4b649eb5dafe27729b222e94738ba598ee4d728b87cdf81a06803ab04a293655 2476 kubectx_0.9.3-1.debian.tar.xz"
+    "9c5fbc72b2411db4a11028c819e15763dc8cfcbf040d83442844a0d7c4a35e56 2367 kubectx_0.9.5-1.dsc c94392fba8dfc5c8075161246749ef71c18f45da82759084664eb96027970004 523259 kubectx_0.9.5.orig.tar.gz c0156d1a9b75936df9e89a1f5f01134e69ca090ce5ec1fc5f18c90ae0ffe0663 3504 kubectx_0.9.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kubectx"
   ],
   "Files": [
-    "e2434a1bfd07d51b842fdc4a7bf44cc1 1848 kubectx_0.9.3-1.dsc 481281285a42c48914fcd66828333c6f 520511 kubectx_0.9.3.orig.tar.gz fd3217957292208a9c01cb5c2a1f390d 2476 kubectx_0.9.3-1.debian.tar.xz"
+    "4a8ed1458d8d6f165e7de47e4b328331 2367 kubectx_0.9.5-1.dsc a621532b88d5568845d27c47b452e8f8 523259 kubectx_0.9.5.orig.tar.gz 11a009a738b2b164660f5a57f71e0d67 3504 kubectx_0.9.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Go-Import-Path": [
+    "github.com/ahmetb/kubectx"
   ],
   "Homepage": [
     "https://github.com/ahmetb/kubectx"
   ],
   "Maintainer": [
-    "ChangZhuo Chen (陳昌倬) \u003cczchen@debian.org\u003e"
+    "Debian Kubernetes Packaging Team \u003cteam+kubernetes@tracker.debian.org\u003e"
   ],
   "Package": [
     "kubectx"
   ],
   "Package-List": [
-    "kubectx deb devel optional arch=all"
+    "kubectx deb devel optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,15 +42,21 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-go"
+  ],
+  "Uploaders": [
+    "Arthur Diniz \u003carthurbdiniz@gmail.com\u003e, ChangZhuo Chen (陳昌倬) \u003cczchen@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/debian/kubectx"
+    "https://salsa.debian.org/kubernetes-team/packages/kubectx"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/debian/kubectx.git"
+    "https://salsa.debian.org/kubernetes-team/packages/kubectx.git"
   ],
   "Version": [
-    "0.9.3-1"
+    "0.9.5-1"
   ]
 }

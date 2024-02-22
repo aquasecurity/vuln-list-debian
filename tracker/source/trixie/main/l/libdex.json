@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any all"
+    "linux-any all"
   ],
   "Binary": [
     "libdex-1-1, libdex-dev, libdex-doc, gir1.2-dex-1"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, gi-docgen, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.68), libsysprof-capture-4-dev, meson (\u003e= 0.62.0), valac"
+    "debhelper-compat (= 13), dh-sequence-gir, gi-docgen, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.68), libsysprof-capture-4-dev, liburing-dev [!i386], meson (\u003e= 0.62.0), valac"
   ],
   "Checksums-Sha256": [
-    "df38b36887a83bd0fc1256da295524349095b0be8a029c41d754707210febcc2 2202 libdex_0.4.2-1.dsc e69e29e1f07455ce7f67053e22a7d27b8ef26d6b1c9ecb393fc2a9d076cf1f85 95892 libdex_0.4.2.orig.tar.xz 4ebbe7d4f8f8bf11a7638b6e897140ef0cb7f970561d4266a1941b52d44022b7 5452 libdex_0.4.2-1.debian.tar.xz"
+    "74fe47d35a01fa5f741014ae178fdb58b08a0e844503c6149d76a8f39e14131a 2248 libdex_0.5.0-3.dsc 64431dd4de29e31120faea18f9947c6b720f2cf6b6ac92eaeeeda1714ce5d7a3 97216 libdex_0.5.0.orig.tar.xz a944fa538e75a194843f7367b6b5efcec287a5da10ae22a733376416a45cee37 5644 libdex_0.5.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libd/libdex"
   ],
   "Files": [
-    "5e9816962cfcff4985de706fb26b3f5b 2202 libdex_0.4.2-1.dsc 5a9f7b48e463b55ec50d119ed0d2913a 95892 libdex_0.4.2.orig.tar.xz e1a5c10d47cb966c1ca14828f6893f55 5452 libdex_0.4.2-1.debian.tar.xz"
+    "ba3e09715fcdd2872e80341d32ce8ef4 2248 libdex_0.5.0-3.dsc 3764e5dbaca4be16a1e1e616992c32f6 97216 libdex_0.5.0.orig.tar.xz 089dd7c38ec75f2f72f49887830d64a6 5644 libdex_0.5.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libdex"
   ],
   "Package-List": [
-    "gir1.2-dex-1 deb introspection optional arch=any libdex-1-1 deb libs optional arch=any libdex-dev deb libdevel optional arch=any libdex-doc deb doc optional arch=all"
+    "gir1.2-dex-1 deb introspection optional arch=linux-any libdex-1-1 deb libs optional arch=linux-any libdex-dev deb libdevel optional arch=linux-any libdex-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/gnome-team/libdex.git"
   ],
   "Version": [
-    "0.4.2-1"
+    "0.5.0-3"
   ]
 }
