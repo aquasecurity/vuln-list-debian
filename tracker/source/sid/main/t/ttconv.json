@@ -6,16 +6,16 @@
     "python3-ttconv"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1a3c34ad5e0e88d0df0217ec11546cb4c6ebf718fab68b20a8e650c82d92f2fb 1968 ttconv_1.0.5-3.dsc cd3bf9b28ff01b6e193d49f521b3130e855e1e823f586dddda8d82afca08b2b1 166439 ttconv_1.0.5.orig.tar.gz 2bcfd486e81074daa24a473a35bbdeecd909ca91c2eeb2a2284110108b7350e5 2072 ttconv_1.0.5-3.debian.tar.xz"
+    "4e9b0fd89fbbea6c86f73183675aefa308480744500e369f50adbb276107f4a1 2063 ttconv_1.0.8-1.dsc 87b5c24ffec18f3484895d4368ba9f607c957e600c1bfc99ad48ceecb5789b9e 189875 ttconv_1.0.8.orig.tar.gz b416449bfcd2e9dc6ac3fbc2bb84c2804b33e3edb26adc4709835229ebd4f55f 4672 ttconv_1.0.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/ttconv"
   ],
   "Files": [
-    "8d27dc93c476a5e3f116bc7afa8ca161 1968 ttconv_1.0.5-3.dsc c35b926ff90afc0704c02af079c90059 166439 ttconv_1.0.5.orig.tar.gz 26a5282a8314aee702ddecbc767db56e 2072 ttconv_1.0.5-3.debian.tar.xz"
+    "64639f284d9a05b894c92545b24938ea 2063 ttconv_1.0.8-1.dsc 0bd80b976b182a6e32d3cb504d011a5e 189875 ttconv_1.0.8.orig.tar.gz c357d915a14fd82544041ca47e1df575 4672 ttconv_1.0.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ttconv"
   ],
   "Package-List": [
-    "python3-ttconv deb utils optional arch=all"
+    "python3-ttconv deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
   ],
   "Uploaders": [
     "Martin \u003cdebacle@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/ttconv.git"
   ],
   "Version": [
-    "1.0.5-3"
+    "1.0.8-1"
   ]
 }
