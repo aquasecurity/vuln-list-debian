@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all amd64 arm64 armel armhf i386 loong64 mipsel mips64el ppc64el riscv64"
+    "any all"
   ],
   "Binary": [
-    "keyman, python3-keyman-config, libkmnkbp-dev, libkmnkbp0-0, ibus-keyman"
+    "keyman, python3-keyman-config, libkeymancore-dev, libkeymancore1, ibus-keyman, keyman-system-service"
   ],
   "Build-Depends": [
-    "bash-completion, debhelper (\u003e= 11), dh-python, gir1.2-webkit2-4.1 | gir1.2-webkit2-4.0, ibus, liblocale-gettext-perl, perl, python3-all (\u003e= 3.5), python3-dbus, python3-gi, python3-lxml, python3-magic, python3-numpy, python3-pil, python3-pip, python3-qrcode, python3-sentry-sdk (\u003e= 1.1) | python3-raven, python3-requests, python3-requests-cache, python3-setuptools, meson (\u003e= 0.45), ninja-build, libgtk-3-dev, libibus-1.0-dev (\u003e= 1.2), libjson-glib-dev (\u003e= 1.4.0), pkg-config, xserver-xephyr, xvfb, metacity, gawk"
+    "bash-completion, debhelper-compat (= 12), dh-python, gawk, gir1.2-webkit2-4.1 | gir1.2-webkit2-4.0, ibus, libevdev-dev, libgtk-3-dev, libibus-1.0-dev (\u003e= 1.2), libicu-dev, libjson-glib-dev (\u003e= 1.4.0), liblocale-gettext-perl, libsystemd-dev, meson (\u003e= 0.53), metacity, ninja-build, perl, pkg-config, python3-all (\u003e= 3.5), python3-dbus, python3-gi, python3-lxml, python3-magic, python3-numpy, python3-pil, python3-pip, python3-qrcode, python3-requests-cache, python3-requests, python3-sentry-sdk (\u003e= 1.1), python3-setuptools, xserver-xephyr, xvfb"
   ],
   "Checksums-Sha256": [
-    "8b8568a43c8726fde3dd6989ba8b169967ef282914cb416e8b20d301a60a761d 3295 keyman_16.0.145-1.dsc 8a5547bfd8c2898bea8827b221bd3a74cae7555e7474ec02ab5e88755df5adb3 3715599 keyman_16.0.145.orig.tar.gz 07c1a9e078fa628ed36d79735c9147677b38510b01deae8960a67efc290aefdf 833 keyman_16.0.145.orig.tar.gz.asc f9631d6f2959ce1fc573dde12625584dde3a12e5e313e6e80d05f06fa35646aa 12932 keyman_16.0.145-1.debian.tar.xz"
+    "9205821363c676513739d4cca90da28a250172d96945a5582a6075fe29a9c945 3345 keyman_17.0.272-1.dsc f04b2ff230be9c3624954a2ce6cc432d1c8baa9501ba254eb98ffb5adec1ac4b 3769690 keyman_17.0.272.orig.tar.gz bdd5ed085d3e4ccb527fa6f64215a535ac5e7088a7f2debafc5d52ff4c804f70 833 keyman_17.0.272.orig.tar.gz.asc ba779376582ab2487c2f41bf27a9be39d3e9f9b0a0f82959a20723c004c72b26 12648 keyman_17.0.272-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/keyman"
   ],
   "Files": [
-    "9f8b57a13d6ae48ad91c049fa228db8f 3295 keyman_16.0.145-1.dsc ae5788044db8b309425e08b27eeb0535 3715599 keyman_16.0.145.orig.tar.gz 003a6f539c6515885b9761bf4ec65790 833 keyman_16.0.145.orig.tar.gz.asc 1329b82a7e4cc55a053d2f6cfd63645f 12932 keyman_16.0.145-1.debian.tar.xz"
+    "b0f373d40a5df28f4cb316e3727bb45b 3345 keyman_17.0.272-1.dsc fdf6abf251bf280f12130b9e7f0a0a7d 3769690 keyman_17.0.272.orig.tar.gz fa4ef32309d2873cdb0bef88dd5d405e 833 keyman_17.0.272.orig.tar.gz.asc 6ff76cd0f89824265cb572454a18fc66 12648 keyman_17.0.272-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "keyman"
   ],
   "Package-List": [
-    "ibus-keyman deb text optional arch=amd64,arm64,armel,armhf,i386,loong64,mipsel,mips64el,ppc64el,riscv64 keyman deb text optional arch=all libkmnkbp-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,loong64,mipsel,mips64el,ppc64el,riscv64 libkmnkbp0-0 deb libs optional arch=amd64,arm64,armel,armhf,i386,loong64,mipsel,mips64el,ppc64el,riscv64 python3-keyman-config deb python optional arch=all"
+    "ibus-keyman deb text optional arch=amd64,arm64,armel,armhf,i386,loong64,mipsel,mips64el,ppc64el,riscv64 keyman deb text optional arch=all keyman-system-service deb text optional arch=any libkeymancore-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,loong64,mipsel,mips64el,ppc64el,riscv64 libkeymancore1 deb libs optional arch=amd64,arm64,armel,armhf,i386,loong64,mipsel,mips64el,ppc64el,riscv64 python3-keyman-config deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,24 +39,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkg-config"
+    "build-essential, libicu-dev, pkg-config"
   ],
   "Uploaders": [
     "Keyman team \u003csupport@keyman.com\u003e, Eberhard Beilharz \u003ceb1@sil.org\u003e,"
   ],
   "Vcs-Browser": [
-    "https://github.com/keymanapp/keyman/tree/stable-16.0/linux/debian"
+    "https://github.com/keymanapp/keyman/tree/beta/linux/debian"
   ],
   "Vcs-Git": [
-    "https://github.com/keymanapp/keyman.git -b stable-16.0 [linux/debian]"
+    "https://github.com/keymanapp/keyman.git -b beta [linux/debian]"
   ],
   "Version": [
-    "16.0.145-1"
+    "17.0.272-1"
   ]
 }
