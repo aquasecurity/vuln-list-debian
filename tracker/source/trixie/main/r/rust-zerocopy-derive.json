@@ -6,16 +6,16 @@
     "librust-zerocopy-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-syn-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-synstructure-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.10-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.31-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "220def4600dc2df63a5ac4e17ab8b6d84e1c8a78613e5686ec28e895ee22bbea 2415 rust-zerocopy-derive_0.3.1-1.dsc a0fbc82b82efe24da867ee52e015e58178684bd9dd64c34e66bdf21da2582a9f 519668 rust-zerocopy-derive_0.3.1.orig.tar.gz c80de21454a919d33b649de9f4c60191da79f10c806ef84535705d4d1a007d13 2880 rust-zerocopy-derive_0.3.1-1.debian.tar.xz"
+    "048fca22041ddac1c6afeb1c6914de049cce9902d8eebfe6a230f5488f7b2e39 2580 rust-zerocopy-derive_0.7.32-2.dsc 9ce1b18ccd8e73a9321186f97e46f9f04b778851177567b1975109d26a08d2a6 37623 rust-zerocopy-derive_0.7.32.orig.tar.gz dfc6a77c96008cfdede1dc2a30d16ad1dd45df2e7e20291a718756b18c5804bd 4152 rust-zerocopy-derive_0.7.32-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zerocopy-derive"
   ],
   "Files": [
-    "0f939ea0f4e9dcb272f1fb93f2076a72 2415 rust-zerocopy-derive_0.3.1-1.dsc fc9aaeab86439522f816869aac997098 519668 rust-zerocopy-derive_0.3.1.orig.tar.gz 3f7e934eb5dc5561e221ade29971735d 2880 rust-zerocopy-derive_0.3.1-1.debian.tar.xz"
+    "e7549d3f4a8e77a3d617a668734dd3ee 2580 rust-zerocopy-derive_0.7.32-2.dsc 936257597fbe2fd02d954a5db53c687a 37623 rust-zerocopy-derive_0.7.32.orig.tar.gz 0215f85502e151de1689c19ad4c1167a 4152 rust-zerocopy-derive_0.7.32-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-compiletest-rs-0.3+default-dev"
+    "dh-cargo, librust-static-assertions-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, librust-zerocopy-0.7+default-dev, librust-zerocopy-0.7+derive-dev"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zerocopy-derive]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.7.32-2"
   ]
 }
