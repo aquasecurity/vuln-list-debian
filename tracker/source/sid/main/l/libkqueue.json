@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libkqueue0, libkqueue-dev"
+    "libkqueue0t64, libkqueue-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), cmake"
+    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 12), cmake"
   ],
   "Checksums-Sha256": [
-    "6e0238e04686af66cdf982f7ab3c1c7fdeb4e09d26490360b487d5d369de990d 1953 libkqueue_2.3.1-1.dsc 44e187a42c8f8061c323d959742b9cfb53236dd34e5dc9837fea2571bd980efc 151800 libkqueue_2.3.1.orig.tar.gz 6c19647e22003d1c831e462843e46aa9104eb74a56e5241d2f2e83097c34205b 4240 libkqueue_2.3.1-1.debian.tar.xz"
+    "41026dd82ca231db286d22b334829a553e1d6790b016c0b3e067589681ff725a 2020 libkqueue_2.3.1-1.1.dsc 44e187a42c8f8061c323d959742b9cfb53236dd34e5dc9837fea2571bd980efc 151800 libkqueue_2.3.1.orig.tar.gz 92fbaac34a920708c1eef15a5a970e6348cf1cc998882536c050e228f1bcef16 4420 libkqueue_2.3.1-1.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libk/libkqueue"
   ],
   "Files": [
-    "5aed79b9265c3f21f5eda7777edc659e 1953 libkqueue_2.3.1-1.dsc 4583e7fc0f222ef4d81c1207ebc51c25 151800 libkqueue_2.3.1.orig.tar.gz 2aa6dd909e661f7a333689fab610f919 4240 libkqueue_2.3.1-1.debian.tar.xz"
+    "e6696b69b0ac37adbfd78e141faff221 2020 libkqueue_2.3.1-1.1.dsc 4583e7fc0f222ef4d81c1207ebc51c25 151800 libkqueue_2.3.1.orig.tar.gz 70446fbde79d6e14d3c7c5b85a2d8000 4420 libkqueue_2.3.1-1.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libkqueue"
   ],
   "Package-List": [
-    "libkqueue-dev deb libdevel optional arch=any libkqueue0 deb libs optional arch=any"
+    "libkqueue-dev deb libdevel optional arch=any libkqueue0t64 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "libkqueue0"
+  ],
   "Vcs-Browser": [
     "https://github.com/mheily/debian-packages/tree/libkqueue"
   ],
@@ -51,6 +54,6 @@
     "https://github.com/mheily/debian-packages.git -b libkqueue"
   ],
   "Version": [
-    "2.3.1-1"
+    "2.3.1-1.1"
   ]
 }
