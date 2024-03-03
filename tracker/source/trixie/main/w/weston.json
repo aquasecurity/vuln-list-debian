@@ -6,16 +6,16 @@
     "weston, libweston-13-0, libweston-13-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), freerdp2-dev, libcairo2-dev (\u003e= 1.10.0), libcolord-dev (\u003e= 0.1.27), libdbus-1-dev, libdrm-dev (\u003e= 2.4.108), libegl1-mesa-dev (\u003e= 9.0~), libgbm-dev (\u003e= 17.2), libgdk-pixbuf-2.0-dev, libgles2-mesa-dev (\u003e= 9.0~), libglu1-mesa-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libinput-dev (\u003e= 1.2.0), libjpeg-dev, liblcms2-dev, libneatvnc-dev (\u003e= 0.7.0) [!ia64 !sparc64], libpam0g-dev, libpango1.0-dev, libpixman-1-dev (\u003e= 0.25.2), libpipewire-0.3-dev, libpng-dev, libseat-dev (\u003e= 0.4), libsystemd-dev, libudev-dev (\u003e= 136), libva-dev, libvpx-dev, libwayland-dev (\u003e= 1.22.0), libwebp-dev, libx11-dev, libx11-xcb-dev, libxcb-composite0-dev, libxcb-cursor-dev, libxcb-shape0-dev, libxcb-xfixes0-dev, libxcb-xkb-dev, libxcb1-dev, libxcursor-dev, libxkbcommon-dev (\u003e= 0.3.0), libxml2-dev, mesa-common-dev, meson (\u003e= 0.63.0), pkg-config, wayland-protocols (\u003e= 1.31)"
+    "debhelper-compat (= 13), freerdp2-dev [!ia64], libcairo2-dev (\u003e= 1.10.0), libcolord-dev (\u003e= 0.1.27), libdbus-1-dev, libdrm-dev (\u003e= 2.4.108), libegl1-mesa-dev (\u003e= 9.0~), libgbm-dev (\u003e= 17.2), libgdk-pixbuf-2.0-dev, libgles2-mesa-dev (\u003e= 9.0~), libglu1-mesa-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libinput-dev (\u003e= 1.2.0), libjpeg-dev, liblcms2-dev, libneatvnc-dev (\u003e= 0.7.0) [!ia64 !sparc64], libpam0g-dev, libpango1.0-dev, libpipewire-0.3-dev, libpixman-1-dev (\u003e= 0.25.2), libpng-dev, libseat-dev (\u003e= 0.4), libsystemd-dev, libudev-dev (\u003e= 136), libva-dev, libvpx-dev, libwayland-dev (\u003e= 1.22.0), libwebp-dev, libx11-dev, libx11-xcb-dev, libxcb-composite0-dev, libxcb-cursor-dev, libxcb-shape0-dev, libxcb-xfixes0-dev, libxcb-xkb-dev, libxcb1-dev, libxcursor-dev, libxkbcommon-dev (\u003e= 0.3.0), libxml2-dev, mesa-common-dev, meson (\u003e= 0.63.0), pkgconf, wayland-protocols (\u003e= 1.31)"
   ],
   "Checksums-Sha256": [
-    "bff8b90fccda455d1f20eee84d3b5f7a7548b0674587c47867f869faa4181aed 3278 weston_13.0.0-1.dsc 52ff1d4aa2394a2e416c85a338b627ce97fa71d43eb762fd4aaf145d36fc795a 1986520 weston_13.0.0.orig.tar.xz d4b697fa1835a55a75036a7f03bbff1ef11de8bea8e6e02f088b8428e8213fde 833 weston_13.0.0.orig.tar.xz.asc 43e39e22d5c56061ee412974807f926ba5875f0342db7b81e6a9fc44b6fe9f58 24496 weston_13.0.0-1.debian.tar.xz"
+    "37b286d1922fa532c9ff03c42ba52ff8331ca4645c8c009ea44b8600aeec538e 3338 weston_13.0.0-4.dsc 52ff1d4aa2394a2e416c85a338b627ce97fa71d43eb762fd4aaf145d36fc795a 1986520 weston_13.0.0.orig.tar.xz d4b697fa1835a55a75036a7f03bbff1ef11de8bea8e6e02f088b8428e8213fde 833 weston_13.0.0.orig.tar.xz.asc 8d1b5356020a4a4b330d28a7860f96a76ee9ed5beae1ea9c18852277ecb1f7bf 25364 weston_13.0.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/weston"
   ],
   "Files": [
-    "f8a396f6e620c37205704636c8089277 3278 weston_13.0.0-1.dsc cdd0ec2c360eebdf878f1b5d3113dc6c 1986520 weston_13.0.0.orig.tar.xz 5af29ac507cc3323666c60a81ad2070d 833 weston_13.0.0.orig.tar.xz.asc 798f5c0d22a9ea64867f38e52366115c 24496 weston_13.0.0-1.debian.tar.xz"
+    "c095e822d3c1bc24f564d81eafdffd33 3338 weston_13.0.0-4.dsc cdd0ec2c360eebdf878f1b5d3113dc6c 1986520 weston_13.0.0.orig.tar.xz 5af29ac507cc3323666c60a81ad2070d 833 weston_13.0.0.orig.tar.xz.asc 5b310666e7b01f444dc02c2b2d00f9c7 25364 weston_13.0.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Mike Gabriel \u003csunweaver@debian.org\u003e, Héctor Orón Martínez \u003czumbi@debian.org\u003e, Emilio Pozuelo Monfort \u003cpochu@debian.org\u003e, Dylan Aïssi \u003cdaissi@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/xorg-team/wayland/weston.git"
   ],
   "Version": [
-    "13.0.0-1"
+    "13.0.0-4"
   ]
 }
