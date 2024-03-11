@@ -6,16 +6,16 @@
     "librust-gio-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.18+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.18+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-6+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+ws2def-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, libgirepository1.0-dev \u003c!nocheck\u003e, xmlstarlet \u003c!nocheck\u003e, gir-rust-code-generator \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.19+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.19+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-6+default-dev \u003c!nocheck\u003e, libgirepository1.0-dev, xmlstarlet, gir-rust-code-generator (\u003e= 0.19.0)"
   ],
   "Checksums-Sha256": [
-    "a3eed45c6819ef59f42d0a493717663f7c7273447a2ba5ea60cd94c3df7ac99e 2658 rust-gio-sys_0.18.1-2.dsc 37566df850baf5e4cb0dfb78af2e4b9898d817ed9263d1090a2df958c64737d2 81369 rust-gio-sys_0.18.1.orig.tar.gz 7fd04404d4ddc0cb5bba2f1138b1b46d0075bca76cbf48bfb13268973ee5b1f6 4048 rust-gio-sys_0.18.1-2.debian.tar.xz"
+    "e12809ddac70ea6318d24fb9886cd6b3d119942a84e7082230e95d6b2a2be389 2492 rust-gio-sys_0.19.0-2.dsc bcf8e1d9219bb294636753d307b030c1e8a032062cba74f493c431a5c8b81ce4 81621 rust-gio-sys_0.19.0.orig.tar.gz 7bb18c57ac218a5bef9ac032ef21d3afc63be17d88af7ffb3adb25b6962f559b 4428 rust-gio-sys_0.19.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gio-sys"
   ],
   "Files": [
-    "d296976e1f3febb8daeb080625fd0378 2658 rust-gio-sys_0.18.1-2.dsc feb3f27af542e3b29388abd6ac1ec541 81369 rust-gio-sys_0.18.1.orig.tar.gz 36ff8d6a86efa88cdc7ab9811116ac60 4048 rust-gio-sys_0.18.1-2.debian.tar.xz"
+    "162c76d81c999888c034037401449fcd 2492 rust-gio-sys_0.19.0-2.dsc 6eaf9196de1bac331b0a4cac56d054bb 81621 rust-gio-sys_0.19.0.orig.tar.gz 2f22c4efc363997d3c09324ccbbb4f49 4428 rust-gio-sys_0.19.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, libglib2.0-dev, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gio-sys]"
   ],
   "Version": [
-    "0.18.1-2"
+    "0.19.0-2"
   ]
 }
