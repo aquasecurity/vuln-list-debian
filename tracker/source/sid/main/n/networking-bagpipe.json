@@ -3,7 +3,7 @@
     "all"
   ],
   "Binary": [
-    "networking-bagpipe-doc, python3-networking-bagpipe"
+    "networking-bagpipe-doc, python3-networking-bagpipe, networking-bagpipe-bgp-agent"
   ],
   "Build-Depends": [
     "debhelper-compat (= 11), dh-python, openstack-pkg-tools, python3-all, python3-pbr, python3-setuptools, python3-sphinx"
@@ -12,13 +12,13 @@
     "python3-babel, python3-coverage, python3-exabgp, python3-hacking, python3-isort, python3-mock, python3-netaddr, python3-networking-bgpvpn, python3-networking-sfc, python3-neutron (\u003e= 2:23.0.0~b3), python3-neutron-lib, python3-openstackdocstheme, python3-os-testr, python3-oslo.concurrency, python3-oslo.config, python3-oslo.db, python3-oslo.i18n, python3-oslo.log, python3-oslo.messaging, python3-oslo.privsep, python3-oslo.rootwrap, python3-oslo.serialization, python3-oslo.service, python3-oslo.versionedobjects, python3-oslotest, python3-pbr, python3-pecan, python3-pyroute2, python3-sphinxcontrib.actdiag, python3-sphinxcontrib.blockdiag, python3-sphinxcontrib.nwdiag, python3-sphinxcontrib.seqdiag, python3-stevedore, python3-subunit, python3-testresources, python3-testscenarios, python3-testtools, python3-webtest, subunit"
   ],
   "Checksums-Sha256": [
-    "3eba5c0e921ab3c15eb84d649bb12976cd94b99cc3ebe5719b8ef03e64afce94 3115 networking-bagpipe_19.0.0-1.dsc 239b74426b00b064d4d27bb451dfcb02c56deda39d4f716f6db66c489a836f6b 177592 networking-bagpipe_19.0.0.orig.tar.xz 4682a396f4d2137f2c17af74244e807a19315b0d4f2f16fcc769654e6676feda 3900 networking-bagpipe_19.0.0-1.debian.tar.xz"
+    "6c3c5747a8d31d77628583b4cc4ed9bc12938720fa49ba5bff3b565e34b03997 3201 networking-bagpipe_19.0.0-2.dsc 239b74426b00b064d4d27bb451dfcb02c56deda39d4f716f6db66c489a836f6b 177592 networking-bagpipe_19.0.0.orig.tar.xz 0a095202aba7b27c291530545719c084a872f379437d37035fcaa37874b39ef9 4384 networking-bagpipe_19.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/networking-bagpipe"
   ],
   "Files": [
-    "3c166a88e39f31e4c2921e282523a37b 3115 networking-bagpipe_19.0.0-1.dsc 37050337317d31db5b3ba3b039ff5deb 177592 networking-bagpipe_19.0.0.orig.tar.xz 837858019b47014f652e18d6d229bdfb 3900 networking-bagpipe_19.0.0-1.debian.tar.xz"
+    "f2156845f89ba110f80eacc1fc6b981b 3201 networking-bagpipe_19.0.0-2.dsc 37050337317d31db5b3ba3b039ff5deb 177592 networking-bagpipe_19.0.0.orig.tar.xz 4192261304fd2f21c418015c0040522b 4384 networking-bagpipe_19.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "networking-bagpipe"
   ],
   "Package-List": [
-    "networking-bagpipe-doc deb doc optional arch=all profile=!nodoc python3-networking-bagpipe deb python optional arch=all"
+    "networking-bagpipe-bgp-agent deb net optional arch=all networking-bagpipe-doc deb doc optional arch=all profile=!nodoc python3-networking-bagpipe deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/openstack-team/neutron-plugins/networking-bagpipe.git"
   ],
   "Version": [
-    "19.0.0-1"
+    "19.0.0-2"
   ]
 }
