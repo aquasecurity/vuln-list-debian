@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "fuse2fs, logsave, e2fsck-static, e2fsprogs-l10n, libcom-err2t64, comerr-dev, libss2t64, ss-dev, e2fsprogs-udeb, libext2fs2t64, libext2fs-dev, e2fsprogs"
+    "fuse2fs, logsave, e2fsck-static, e2fsprogs-l10n, libcom-err2, comerr-dev, libss2, ss-dev, e2fsprogs-udeb, libext2fs2t64, libext2fs-dev, e2fsprogs"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), gettext, texinfo, pkg-config, libfuse-dev [linux-any kfreebsd-any] \u003c!pkg.e2fsprogs.no-fuse2fs\u003e, debhelper-compat (= 12), dh-exec, libblkid-dev, uuid-dev, m4, udev [linux-any], systemd [linux-any], systemd-dev [linux-any], cron [linux-any]"
+    "dpkg-dev (\u003e= 1.22.5), gettext, texinfo, pkg-config, libfuse-dev [linux-any kfreebsd-any] \u003c!pkg.e2fsprogs.no-fuse2fs\u003e, debhelper-compat (= 12), dh-exec, libblkid-dev, uuid-dev, m4, udev [linux-any], systemd [linux-any], systemd-dev [linux-any], cron [linux-any], dh-sequence-movetousr"
   ],
   "Checksums-Sha256": [
-    "a1c0f31f77ae3ddb823a13561df02d3cd6a655bb735bb572617ddc6d104acee4 3148 e2fsprogs_1.47.0-2.3.dsc 6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578 9637717 e2fsprogs_1.47.0.orig.tar.gz 704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1 488 e2fsprogs_1.47.0.orig.tar.gz.asc d7a35e13ccd97bb488d2afbe8e5fadc95d2173ac3fc3f989c00dacb3f5b9b551 87780 e2fsprogs_1.47.0-2.3.debian.tar.xz"
+    "955af7a0d797182731dee25b2687039d4475d079f1e5b16f2783823cf5d5cdf1 3159 e2fsprogs_1.47.0-2.4.dsc 6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578 9637717 e2fsprogs_1.47.0.orig.tar.gz 704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1 488 e2fsprogs_1.47.0.orig.tar.gz.asc 7f0bfd12b86f7bdbeed311e4219765769a991b282d9a01ad37d4ba3c6b080d70 88124 e2fsprogs_1.47.0-2.4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/e2fsprogs"
   ],
   "Files": [
-    "232ea12a341bb453a863d2d4f4ea76f2 3148 e2fsprogs_1.47.0-2.3.dsc 6b4f18a33873623041857b4963641ee9 9637717 e2fsprogs_1.47.0.orig.tar.gz 0d285d11f13417932bc475cb6ae27af2 488 e2fsprogs_1.47.0.orig.tar.gz.asc fdf782fd1d9ab54f2ec3b7246f3badef 87780 e2fsprogs_1.47.0-2.3.debian.tar.xz"
+    "b06b04da8409d6b0734a6d1a56920466 3159 e2fsprogs_1.47.0-2.4.dsc 6b4f18a33873623041857b4963641ee9 9637717 e2fsprogs_1.47.0.orig.tar.gz 0d285d11f13417932bc475cb6ae27af2 488 e2fsprogs_1.47.0.orig.tar.gz.asc cba2dea28dc4f89586fb4603a9aaad79 88124 e2fsprogs_1.47.0-2.4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "e2fsprogs"
   ],
   "Package-List": [
-    "comerr-dev deb libdevel optional arch=any e2fsck-static deb admin optional arch=any profile=!pkg.e2fsprogs.no-static e2fsprogs deb admin required arch=any e2fsprogs-l10n deb localization optional arch=all e2fsprogs-udeb udeb debian-installer optional arch=any profile=!noudeb fuse2fs deb admin optional arch=linux-any,kfreebsd-any profile=!pkg.e2fsprogs.no-fuse2fs libcom-err2t64 deb libs optional arch=any libext2fs-dev deb libdevel optional arch=any libext2fs2t64 deb libs optional arch=any libss2t64 deb libs optional arch=any logsave deb admin optional arch=any ss-dev deb libdevel optional arch=any"
+    "comerr-dev deb libdevel optional arch=any e2fsck-static deb admin optional arch=any profile=!pkg.e2fsprogs.no-static e2fsprogs deb admin required arch=any e2fsprogs-l10n deb localization optional arch=all e2fsprogs-udeb udeb debian-installer optional arch=any profile=!noudeb fuse2fs deb admin optional arch=linux-any,kfreebsd-any profile=!pkg.e2fsprogs.no-fuse2fs libcom-err2 deb libs optional arch=any libext2fs-dev deb libdevel optional arch=any libext2fs2t64 deb libs optional arch=any libss2 deb libs optional arch=any logsave deb admin optional arch=any ss-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "source"
@@ -54,6 +54,6 @@
     "https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git -b debian/master"
   ],
   "Version": [
-    "1.47.0-2.3"
+    "1.47.0-2.4"
   ]
 }
