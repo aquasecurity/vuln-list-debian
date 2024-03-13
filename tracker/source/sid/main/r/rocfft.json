@@ -6,25 +6,25 @@
     "librocfft0, librocfft-dev, librocfft0-tests, librocfft-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, hipcc, libamd-comgr-dev, libhsa-runtime-dev, rocminfo, patchelf, rocm-cmake (\u003e= 5.3.0), python3-dev, libsqlite3-dev, librocrand-dev, libboost-program-options-dev, libfftw3-dev, libgtest-dev"
+    "debhelper-compat (= 13), cmake, hipcc (\u003e= 5.6.1~), libamdhip64-dev (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), rocm-cmake (\u003e= 5.3.0), python3-dev, libsqlite3-dev, libhiprand-dev, libboost-program-options-dev, libfftw3-dev, libgtest-dev \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "124dcf3672237b7d4968a3999ccc18a708af8e5051237c3f9d26d697d169bab5 2701 rocfft_5.5.0-6.dsc 9288152e66504b06082e4eed8cdb791b4f9ae2836b3defbeb4d2b54901b96485 935968 rocfft_5.5.0.orig.tar.gz 5730c791a6d36b2d88d1d65939487286cb410e949b184451dc3ef548b591d4da 10216 rocfft_5.5.0-6.debian.tar.xz"
+    "442b224d7056836c6eb94299222cdbebeb1ea9be918bb763a0e71b1759b56a53 2780 rocfft_5.7.1-1.dsc 202f11f60dc8738e29bbd1b397d419e032794f8bffb7f48f2b31f09cc5f08bc2 1192841 rocfft_5.7.1.orig.tar.gz 85d68bddd93b8b41779379eb3f1c5049af4770eed6b05c679f199862127f6c13 12520 rocfft_5.7.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocfft"
   ],
   "Files": [
-    "7d70c379a2c281b255e67b41e72158d1 2701 rocfft_5.5.0-6.dsc ef197b4d45e9f4d2a4995e37bd143d0d 935968 rocfft_5.5.0.orig.tar.gz 6169bfca22fa62fc4113cd3248dbb13f 10216 rocfft_5.5.0-6.debian.tar.xz"
+    "88f1046bee4a473e37a9a98834075914 2780 rocfft_5.7.1-1.dsc 41fe65e3012f797c271b3779262041cb 1192841 rocfft_5.7.1.orig.tar.gz 9c49c9e61e7d311b4dfc6e0df4814ee9 12520 rocfft_5.7.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/rocmsoftwareplatform/rocfft"
+    "https://github.com/ROCm/rocfft"
   ],
   "Maintainer": [
     "Debian ROCm Team \u003cdebian-ai@lists.debian.org\u003e"
@@ -33,7 +33,7 @@
     "rocfft"
   ],
   "Package-List": [
-    "librocfft-dev deb libdevel optional arch=amd64,arm64,ppc64el librocfft-doc deb doc optional arch=all profile=!nodoc librocfft0 deb libs optional arch=amd64,arm64,ppc64el librocfft0-tests deb libdevel optional arch=amd64,arm64,ppc64el"
+    "librocfft-dev deb libdevel optional arch=amd64,arm64,ppc64el librocfft-doc deb doc optional arch=all profile=!nodoc librocfft0 deb libs optional arch=amd64,arm64,ppc64el librocfft0-tests deb libdevel optional arch=amd64,arm64,ppc64el profile=!nocheck"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rocm-team/rocfft.git"
   ],
   "Version": [
-    "5.5.0-6"
+    "5.7.1-1"
   ]
 }
