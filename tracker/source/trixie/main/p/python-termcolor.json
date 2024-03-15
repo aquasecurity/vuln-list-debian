@@ -6,16 +6,19 @@
     "python3-termcolor"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 9), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 9), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-hatch-vcs, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-pytest"
   ],
   "Checksums-Sha256": [
-    "a96279f5ec563654822fa8e76e37435f9215253db8f969c8829d940fd17e1d7c 2049 python-termcolor_1.1.0-4.dsc 1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b 3912 python-termcolor_1.1.0.orig.tar.gz 4d4bba06694e5ddfe6ce2fd27d106ac9f74f3cba7816ed3637af3d91c2cfb17d 2308 python-termcolor_1.1.0-4.debian.tar.xz"
+    "9ebaa19f87e7c50a8e0d83715f865ecef5b737521c3659eee917c49021695159 2228 python-termcolor_2.4.0-1.dsc 5bc47f5a6b4a9c06e32fe560a5d118dbf25c204565bb6ed0efda9a8fafb08f1b 11704 python-termcolor_2.4.0.orig.tar.xz ba2f5bdfd8edcc50690b00abb65eb7809d20ebba27be170671478de87d4b48a0 2748 python-termcolor_2.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-termcolor"
   ],
   "Files": [
-    "c5119ca37955d84154a3116f5ed422a3 2049 python-termcolor_1.1.0-4.dsc 043e89644f8909d462fbbfa511c768df 3912 python-termcolor_1.1.0.orig.tar.gz 4081127908944a525715cd7810099ff0 2308 python-termcolor_1.1.0-4.debian.tar.xz"
+    "8bd0ac113c6fcc57a6bdaf87d3a42656 2228 python-termcolor_2.4.0-1.dsc 52ad475825c02628ab1b31deb310197c 11704 python-termcolor_2.4.0.orig.tar.xz 9ce7a0199afed0410333b32c605979fe 2748 python-termcolor_2.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +44,12 @@
   "Standards-Version": [
     "4.1.3"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-termcolor.git"
   ],
   "Version": [
-    "1.1.0-4"
+    "2.4.0-1"
   ]
 }
