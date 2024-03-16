@@ -6,22 +6,22 @@
     "libgirepository-1.0-1, libgirepository1.0-dev, libgirepository-1.0-dev, libgirepository1.0-doc, gobject-introspection, gobject-introspection-bin, gir1.2-glib-2.0, gir1.2-glib-2.0-dev, gir1.2-girepository-2.0, gir1.2-girepository-2.0-dev, gir1.2-freedesktop, gir1.2-freedesktop-dev"
   ],
   "Build-Depends": [
-    "bison, debhelper-compat (= 13), dh-sequence-python3, flex, gobject-introspection:native \u003ccross\u003e, libcairo2-dev, libelf-dev, libelf-dev:native, libffi-dev (\u003e= 3.4), libglib2.0-dev (\u003e= 2.78.0), libpython3-dev, libtool, meson (\u003e= 0.60.0), pkgconf, python3-debian:native, python3-dev:any, python3-mako:native, python3-markdown:native, python3-setuptools, python3:native, qemu-user \u003ccross\u003e"
+    "bison, debhelper-compat (= 13), dh-sequence-python3, flex, gobject-introspection (\u003e= 1.78.1-17~) \u003ccross !nogir\u003e, libcairo2-dev, libelf-dev, libelf-dev:native, libffi-dev (\u003e= 3.4), libglib2.0-dev (\u003e= 2.78.0), libpython3-dev, libtool, meson (\u003e= 0.60.0), pkgconf, python3-debian:native, python3-dev:any, python3-mako:native, python3-markdown:native, python3-setuptools, python3:native"
   ],
   "Build-Depends-Indep": [
     "gtk-doc-tools, libglib2.0-doc (\u003e= 2.78.0)"
   ],
   "Checksums-Sha256": [
-    "adbc3bfd048a5f3425da0b0b5f380ed2b5088a1c4b58924a4a7013374fd51761 4177 gobject-introspection_1.78.1-16.dsc 44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4 1060296 gobject-introspection_1.78.1.orig.tar.xz 9cee4b9b646b59b0e64bed68310fd618399bb1141d5850f1d73615ef4bbe29ce 61412 gobject-introspection_1.78.1-16.debian.tar.xz"
+    "1ff2907e2095b5c4b75c3f264c3c6af0b41efa4caea1004f9424b179be9ddfd9 4279 gobject-introspection_1.78.1-17.dsc 44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4 1060296 gobject-introspection_1.78.1.orig.tar.xz bb17cba79ec65c3413363a834d6ff737ba3d287b22e43eb4a89658d89ba28b4a 61936 gobject-introspection_1.78.1-17.debian.tar.xz"
   ],
   "Dgit": [
-    "96d1d325a90546e83b481da470eecbb0eccdf8da debian archive/debian/1.78.1-16 https://git.dgit.debian.org/gobject-introspection"
+    "9048c73155b85024492ae26e8f8f7b12e2f5b24b debian archive/debian/1.78.1-17 https://git.dgit.debian.org/gobject-introspection"
   ],
   "Directory": [
     "pool/main/g/gobject-introspection"
   ],
   "Files": [
-    "c83b248b03be3ceb3a844d4569e6428e 4177 gobject-introspection_1.78.1-16.dsc fbddfac52807161670a11023965f1176 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz da2677e6b9c91b33c036d2233a96cec3 1060296 gobject-introspection_1.78.1.orig.tar.xz f863a270b3f56e976b52d78fa4ee0816 61412 gobject-introspection_1.78.1-16.debian.tar.xz"
+    "2b03e000afb17dee74138a929874941d 4279 gobject-introspection_1.78.1-17.dsc fbddfac52807161670a11023965f1176 5327096 gobject-introspection_1.78.1.orig-glib.tar.xz da2677e6b9c91b33c036d2233a96cec3 1060296 gobject-introspection_1.78.1.orig.tar.xz 9344666d298951a13738a8aa54c2760a 61936 gobject-introspection_1.78.1-17.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "gobject-introspection"
   ],
   "Package-List": [
-    "gir1.2-freedesktop deb introspection optional arch=any gir1.2-freedesktop-dev deb libdevel optional arch=any gir1.2-girepository-2.0 deb introspection optional arch=any gir1.2-girepository-2.0-dev deb libdevel optional arch=any gir1.2-glib-2.0 deb introspection optional arch=any gir1.2-glib-2.0-dev deb libdevel optional arch=any gobject-introspection deb devel optional arch=any gobject-introspection-bin deb devel optional arch=any libgirepository-1.0-1 deb libs optional arch=any libgirepository-1.0-dev deb libdevel optional arch=any libgirepository1.0-dev deb libdevel optional arch=any libgirepository1.0-doc deb doc optional arch=all"
+    "gir1.2-freedesktop deb introspection optional arch=any profile=!nogir gir1.2-freedesktop-dev deb libdevel optional arch=any profile=!nogir gir1.2-girepository-2.0 deb introspection optional arch=any profile=!nogir gir1.2-girepository-2.0-dev deb libdevel optional arch=any profile=!nogir gir1.2-glib-2.0 deb introspection optional arch=any profile=!nogir gir1.2-glib-2.0-dev deb libdevel optional arch=any profile=!nogir gobject-introspection deb devel optional arch=any gobject-introspection-bin deb devel optional arch=any libgirepository-1.0-1 deb libs optional arch=any libgirepository-1.0-dev deb libdevel optional arch=any libgirepository1.0-dev deb libdevel optional arch=any profile=!nogir libgirepository1.0-doc deb doc optional arch=all"
   ],
   "Priority": [
     "source"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/gnome-team/gobject-introspection.git -b debian/trixie"
   ],
   "Version": [
-    "1.78.1-16"
+    "1.78.1-17"
   ]
 }
