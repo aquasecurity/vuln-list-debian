@@ -6,16 +6,22 @@
     "python3-numpy"
   ],
   "Build-Depends": [
-    "cython3 (\u003e= 0.29.30), debhelper-compat (= 11), dh-python, dvisvgm, gfortran, libblas-dev [!arm !m68k], liblapack-dev [!arm !m68k], python3-all-dev, python3-hypothesis (\u003e= 6.35.0) \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-setuptools, python3-typing-extensions (\u003e= 4.2.0) \u003c!nocheck\u003e, python3-tz \u003c!nocheck\u003e"
+    "cython3:native (\u003e= 3.0), debhelper-compat (= 13), dh-python, dh-sequence-python3, gfortran [amd64 arm64 ppc64el] \u003c!nocheck\u003e, libblas-dev [!arm !m68k], liblapack-dev [!arm !m68k], libpython3-all-dev, mypy \u003c!nocheck\u003e, ninja-build, pybuild-plugin-pyproject, python3-all-dev:any, python3-charset-normalizer \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-mesonpy:native, python3-pyproject-metadata:native, python3-pytest \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-setuptools \u003c!nocheck\u003e, python3-typing-extensions (\u003e= 4.2.0) \u003c!nocheck\u003e, python3-tz \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "04be21ce76cc1f4104cb9b6096357319f3b940585382081b116a882a8abb4abc 2421 numpy_1.24.2-3.dsc a7c88b0cf7c7c5ea03a76593ce4065af3beb8f50c25db6a7ee72369b2c936c65 8239412 numpy_1.24.2.orig.tar.xz 37350a6221a644ece93c1d1eeddddf536202a1d00d218a584e93b485915de5b8 32080 numpy_1.24.2-3.debian.tar.xz"
+    "93ce7331596e96340e3f66c087e5e01e8a0918a1f9f922a8d3d279a8abb1255e 2842 numpy_1.26.4+ds-2.dsc 6d7439af1de399433eb44fce065d22000b0480e6d153f013697d58387defb6af 11269580 numpy_1.26.4+ds.orig.tar.xz 73f1ea021fff6837c244fe639331835a157b974390023af513f6125532f4da33 24812 numpy_1.26.4+ds-2.debian.tar.xz"
+  ],
+  "Description": [
+    "Fast array facility to the Python language NumPy contains a powerful N-dimensional array object, sophisticated (broadcasting) functions, tools for integrating C/C++ and Fortran code, and useful linear algebra, Fourier transform, and random number capabilities."
+  ],
+  "Dgit": [
+    "83904f739e3f4355769dffe7f4de018a6af249f7 debian archive/debian/1%1.26.4+ds-2 https://git.dgit.debian.org/numpy"
   ],
   "Directory": [
     "pool/main/n/numpy"
   ],
   "Files": [
-    "3b1c576fcb6bb5212404bb339648c9af 2421 numpy_1.24.2-3.dsc 2b310457e8e0e401b4973d2fc95080f5 8239412 numpy_1.24.2.orig.tar.xz 011fd2bd904a4ee07fe65af74884d048 32080 numpy_1.24.2-3.debian.tar.xz"
+    "641a14c4a76fe6b8bd607a24dc391453 2842 numpy_1.26.4+ds-2.dsc 9fc752fe1de9869a6bbd93234dd9a093 11269580 numpy_1.26.4+ds.orig.tar.xz 6bc4b2e9762db91750f9279ad1238ab0 24812 numpy_1.26.4+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2.0"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
+    "autopkgtest-pkg-pybuild"
   ],
-  "Testsuite-Triggers": [
-    "build-essential, dpkg-dev, gcc, gfortran, libatlas3-base, libfftw3-dev, libopenblas0, python3-all, python3-all-dev, python3-hypothesis, python3-pytest, python3-setuptools, python3-typing-extensions, python3-tz"
+  "Uploaders": [
+    "Christian Kastner \u003cckk@debian.org\u003e, Timo Röhling \u003croehling@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/numpy"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/numpy.git"
   ],
   "Version": [
-    "1:1.24.2-3"
+    "1:1.26.4+ds-2"
   ]
 }
