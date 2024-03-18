@@ -6,16 +6,16 @@
     "python-openssl-doc, python3-openssl"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-cffi, python3-cryptography (\u003c\u003c 42), python3-cryptography (\u003e= 38), python3-flaky, python3-pretend, python3-pytest (\u003e= 3.0.1), python3-setuptools, python3-sphinx (\u003e= 1.0.7+dfsg), python3-sphinx-rtd-theme"
+    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, openssl \u003c!nocheck\u003e, python3-all, python3-cffi \u003c!nocheck\u003e, python3-cryptography (\u003c\u003c 42), python3-cryptography (\u003e= 38), python3-flaky \u003c!nocheck\u003e, python3-pretend \u003c!nocheck\u003e, python3-pytest (\u003e= 3.0.1) \u003c!nocheck\u003e, python3-setuptools, python3-sphinx (\u003e= 1.0.7+dfsg) \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "f54975cf91a6978a222d9ceb5765eeb88b26b4347c1a23474a828989c781cb4e 2191 pyopenssl_24.0.0-2.dsc 9bf74c1dbcd1d36c7840bcca55e5deb0a7c723292a92b7a039648b221252309d 146316 pyopenssl_24.0.0.orig.tar.xz b2982f789963ab6c9300ecead0ea1c4b8760429cb2ff98d078515addaf3b43cd 9368 pyopenssl_24.0.0-2.debian.tar.xz"
+    "7479feb3d5ad37db98c7e7d46bd7542adc01daafc0ff18fc9d86d2a28c534b57 2415 pyopenssl_24.0.0-3.dsc 9bf74c1dbcd1d36c7840bcca55e5deb0a7c723292a92b7a039648b221252309d 146316 pyopenssl_24.0.0.orig.tar.xz 9f158038428b0b2f07978417abf5f9fee53ae477f031cf3c12acf4335765f423 9576 pyopenssl_24.0.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyopenssl"
   ],
   "Files": [
-    "99a35e9daa57d8768e62f21e77cc5422 2191 pyopenssl_24.0.0-2.dsc d586d80f5127de7372238e9e00ca7468 146316 pyopenssl_24.0.0.orig.tar.xz e1e7fdcc96b71de84aefbdd1787f8fa0 9368 pyopenssl_24.0.0-2.debian.tar.xz"
+    "f8115b6682e4081fffeee527d78bd8fe 2415 pyopenssl_24.0.0-3.dsc d586d80f5127de7372238e9e00ca7468 146316 pyopenssl_24.0.0.orig.tar.xz 5392356d60ea3f4c7e149aaaea19a8ee 9576 pyopenssl_24.0.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://pyopenssl.org/"
   ],
   "Maintainer": [
-    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e,"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "pyopenssl"
@@ -39,7 +39,13 @@
     "interpreters"
   ],
   "Standards-Version": [
-    "4.6.1.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Andrey Rakhmatullin \u003cwrar@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pyopenssl"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/pyopenssl.git"
   ],
   "Version": [
-    "24.0.0-2"
+    "24.0.0-3"
   ]
 }
