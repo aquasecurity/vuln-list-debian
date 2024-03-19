@@ -6,16 +6,16 @@
     "librust-pem-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.21+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.21+alloc-dev \u003c!nocheck\u003e, librust-base64-0.21+std-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "139d807a272fd12f71223d07788b08d5c26f355cfa70de89c223dc07f61f7fa7 2242 rust-pem_1.1.1-1.dsc a8835c273a76a90455d7344889b0964598e3316e2a79ede8e36f16bdcf2228b8 11352 rust-pem_1.1.1.orig.tar.gz 8808a0c3a740347686bc507b1edd2f1687df80a538a45e26110cf7a33f5dfde5 3796 rust-pem_1.1.1-1.debian.tar.xz"
+    "4e043fafdd91a27bbbb3613cd9563fd9dd136d447a0ddbd82fdfe6343a4e6015 2356 rust-pem_3.0.3-2.dsc 1b8fcc794035347fb64beda2d3b462595dd2753e3f268d89c5aae77e8cf2c310 13035 rust-pem_3.0.3.orig.tar.gz 492540ad17372cc8aaa885d3ac2a6caa4ecc912bc1f68cdb9bd2f81e59560b6f 3220 rust-pem_3.0.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pem"
   ],
   "Files": [
-    "cd7f460bcf63fcfee02542b1e039df65 2242 rust-pem_1.1.1-1.dsc 557c4864171a3d830774b152c14782d3 11352 rust-pem_1.1.1.orig.tar.gz 2ee0e7dbace16a3bda03f50b60750cc2 3796 rust-pem_1.1.1-1.debian.tar.xz"
+    "064c5575b0468e36524de5f55ad9efe4 2356 rust-pem_3.0.3-2.dsc ad44cdb87e3c0b5cd6c3f26059971546 13035 rust-pem_3.0.3.orig.tar.gz 1a3ff4f5712f2710cacde88448d1eb39 3220 rust-pem_3.0.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-criterion-0.3+default-dev, librust-proptest-1+std-dev, librust-serde-json-1+default-dev"
   ],
   "Uploaders": [
     "nicoo \u003cnicoo@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pem]"
   ],
   "Version": [
-    "1.1.1-1"
+    "3.0.3-2"
   ]
 }

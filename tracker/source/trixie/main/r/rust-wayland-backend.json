@@ -6,16 +6,16 @@
     "librust-wayland-backend-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-downcast-rs-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-io-lifetimes-2+default-dev \u003c!nocheck\u003e, librust-nix-0.26+event-dev \u003c!nocheck\u003e, librust-nix-0.26+fs-dev \u003c!nocheck\u003e, librust-nix-0.26+poll-dev \u003c!nocheck\u003e, librust-nix-0.26+socket-dev \u003c!nocheck\u003e, librust-nix-0.26+uio-dev \u003c!nocheck\u003e, librust-scoped-tls-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+const-generics-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-smallvec-1+const-new-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-smallvec-1+union-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-wayland-sys-0.30+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.59) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-downcast-rs-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-io-lifetimes-2+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.17-~~) \u003c!nocheck\u003e, librust-rustix-0.38+event-dev (\u003e= 0.38.17-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.17-~~) \u003c!nocheck\u003e, librust-rustix-0.38+net-dev (\u003e= 0.38.17-~~) \u003c!nocheck\u003e, librust-rustix-0.38+process-dev (\u003e= 0.38.17-~~) \u003c!nocheck\u003e, librust-scoped-tls-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+const-generics-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-smallvec-1+const-new-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-smallvec-1+union-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-wayland-sys-0.30+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "461efe471465889e2ea246ee279ccb8357506e0dab19f557cab5ee5ca16bcca5 2978 rust-wayland-backend_0.1.2-1.dsc 41b48e27457e8da3b2260ac60d0a94512f5cba36448679f3747c0865b7893ed8 68748 rust-wayland-backend_0.1.2.orig.tar.gz e174d6eb1202be19592a7b18ef6632d136df2f54c6eaf88df27db009c7f3273a 3164 rust-wayland-backend_0.1.2-1.debian.tar.xz"
+    "619de4668ab387dd850901789d291a6c92adf2fa730903a9c299925d3a5b0830 3225 rust-wayland-backend_0.1.2-3.dsc 41b48e27457e8da3b2260ac60d0a94512f5cba36448679f3747c0865b7893ed8 68748 rust-wayland-backend_0.1.2.orig.tar.gz e2c06c3f1f5493a9fdf6039effb4fd7aaf8fead617aa26a2877a929ad1621f7a 9292 rust-wayland-backend_0.1.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wayland-backend"
   ],
   "Files": [
-    "ab087b79ca79a91352ae27888dcda601 2978 rust-wayland-backend_0.1.2-1.dsc 35f76bdca9fb0ed2d631e45806cbbe49 68748 rust-wayland-backend_0.1.2.orig.tar.gz 52825984b04cb11ac7ff6d2e7e01e862 3164 rust-wayland-backend_0.1.2-1.debian.tar.xz"
+    "43cc236df9beec64a81057230afdfa45 3225 rust-wayland-backend_0.1.2-3.dsc 35f76bdca9fb0ed2d631e45806cbbe49 68748 rust-wayland-backend_0.1.2.orig.tar.gz 473bae0cafb2ceabd1a5be8c440ca7f6 9292 rust-wayland-backend_0.1.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-concat-idents-1+default-dev, librust-env-logger-0.10+default-dev"
+    "dh-cargo, librust-concat-idents-1+default-dev, librust-env-logger-0.10+default-dev, librust-wayland-scanner-0.30+default-dev, librust-wayland-sys-0.30+client-dev, librust-wayland-sys-0.30+default-dev, librust-wayland-sys-0.30+server-dev"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-backend]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.1.2-3"
   ]
 }
