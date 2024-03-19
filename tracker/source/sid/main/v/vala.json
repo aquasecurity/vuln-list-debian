@@ -6,19 +6,22 @@
     "libvalacodegen-0.56-0, valac-bin, valac, valac-0.56-vapi, vala-0.56-doc, libvala-0.56-0, libvala-0.56-dev, valadoc, libvaladoc-0.56-0, libvaladoc-0.56-data, libvaladoc-0.56-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gnome, libglib2.0-dev (\u003e= 2.48), libgraphviz-dev (\u003e= 2.16), bison (\u003e= 2.3), flex, libdbus-1-dev \u003c!nocheck\u003e, dbus (\u003e= 1.8) \u003c!nocheck\u003e, libgirepository1.0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-gnome, gir1.2-freedesktop \u003c!nocheck\u003e, gir1.2-freedesktop-dev \u003c!nocheck\u003e, gir1.2-glib-2.0 \u003c!nocheck\u003e, gir1.2-glib-2.0-dev \u003c!nocheck\u003e, gobject-introspection (\u003e= 1.78.1-14~) \u003c!nocheck\u003e, libglib2.0-dev (\u003e= 2.48), libgraphviz-dev (\u003e= 2.16) [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!pkg.vala.nographviz\u003e, bison (\u003e= 2.3), flex, libdbus-1-dev \u003c!nocheck\u003e, dbus (\u003e= 1.8) \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "docbook-xml, xsltproc"
   ],
   "Checksums-Sha256": [
-    "47d39f5f1a19dd06ddbdf0e608063f0a7b735c8e6285d51f327fef485b4396c3 2815 vala_0.56.16-1.dsc 05487b5600f5d2f09e66a753cccd8f39c1bff9f148aea1b7774d505b9c8bca9b 4013716 vala_0.56.16.orig.tar.xz bbbcac1d54a745e82830055b40d6324a77fe2088431c38d3df07809ed5320498 34204 vala_0.56.16-1.debian.tar.xz"
+    "2ec952992e3e29dca621a5164983deec65a9676267a7b7d93139f5bd05eb6db0 3249 vala_0.56.16-2.dsc 05487b5600f5d2f09e66a753cccd8f39c1bff9f148aea1b7774d505b9c8bca9b 4013716 vala_0.56.16.orig.tar.xz 3939e35add28b226ee853b9794582f5215840c14c08ce9d6cb6103345accd709 35300 vala_0.56.16-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "147e6eb35bfe4f67072a993b73060384484bfc62 debian archive/debian/0.56.16-2 https://git.dgit.debian.org/vala"
   ],
   "Directory": [
     "pool/main/v/vala"
   ],
   "Files": [
-    "905c79b08ce352e116136145333c5a92 2815 vala_0.56.16-1.dsc ba7738749bfb5b3c159a55825c9e20bc 4013716 vala_0.56.16.orig.tar.xz c440a69680ffcd078b96c56e0be7f21f 34204 vala_0.56.16-1.debian.tar.xz"
+    "4febfbd9cc37e9fa8e3dde5620d675d3 3249 vala_0.56.16-2.dsc ba7738749bfb5b3c159a55825c9e20bc 4013716 vala_0.56.16.orig.tar.xz 8bc45039f880639b6e73c11c782fcb28 35300 vala_0.56.16-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "vala"
   ],
   "Package-List": [
-    "libvala-0.56-0 deb libs optional arch=any libvala-0.56-dev deb libdevel optional arch=any libvalacodegen-0.56-0 deb devel optional arch=any libvaladoc-0.56-0 deb libs optional arch=any libvaladoc-0.56-data deb misc optional arch=all libvaladoc-0.56-dev deb libdevel optional arch=any vala-0.56-doc deb doc optional arch=all valac deb devel optional arch=any valac-0.56-vapi deb devel optional arch=all valac-bin deb devel optional arch=any valadoc deb devel optional arch=any"
+    "libvala-0.56-0 deb libs optional arch=any libvala-0.56-dev deb libdevel optional arch=any libvalacodegen-0.56-0 deb devel optional arch=any libvaladoc-0.56-0 deb libs optional arch=any profile=!pkg.vala.nographviz libvaladoc-0.56-data deb misc optional arch=all profile=!pkg.vala.nographviz libvaladoc-0.56-dev deb libdevel optional arch=any profile=!pkg.vala.nographviz vala-0.56-doc deb doc optional arch=all valac deb devel optional arch=any valac-0.56-vapi deb devel optional arch=all valac-bin deb devel optional arch=any valadoc deb devel optional arch=any profile=!pkg.vala.nographviz"
   ],
   "Priority": [
     "optional"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/gnome-team/vala.git"
   ],
   "Version": [
-    "0.56.16-1"
+    "0.56.16-2"
   ]
 }
