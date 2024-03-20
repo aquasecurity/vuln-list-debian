@@ -6,19 +6,19 @@
     "librocsolver0, librocsolver-dev, librocsolver0-tests, librocsolver-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, gfortran, hipcc, libamd-comgr-dev, libhsa-runtime-dev, patchelf, rocminfo, rocm-cmake, libfmt-dev, librocblas-dev (\u003e= 5.5.0), libopenblas-dev, libgtest-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), cmake, gfortran, hipcc (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), rocm-cmake, libfmt-dev, librocblas-dev (\u003e= 5.5.0), liblapack-dev \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "639f419257ce4df305dc16ffbf3744dc30132aead5fb5903f656e7af054ac65d 2749 rocsolver_5.5.1-4.dsc 8bf843e42d2e89203ea5fdb6e6082cea90da8d02920ab4c09bcc2b6f69909760 726171 rocsolver_5.5.1.orig.tar.gz 92b1c34a24a6b86cb82c6e44d79db530ef4d65a212cbdd39945de431aa77c7cf 10456 rocsolver_5.5.1-4.debian.tar.xz"
+    "633550721717e36785259f3af84a3da56aebe9bee52742ac4826248816185e53 2834 rocsolver_5.5.1-5.dsc 8bf843e42d2e89203ea5fdb6e6082cea90da8d02920ab4c09bcc2b6f69909760 726171 rocsolver_5.5.1.orig.tar.gz fea9733b4910400fe06fe9fd1242bbb248ecae120a65ca54f498b85efd3b5b77 15764 rocsolver_5.5.1-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocsolver"
   ],
   "Files": [
-    "99f0082b74975558d08acc2a5923c3d5 2749 rocsolver_5.5.1-4.dsc 53714220a9ea42929d88603512744ce3 726171 rocsolver_5.5.1.orig.tar.gz 920e827b0e5a0124062d575e7f80d640 10456 rocsolver_5.5.1-4.debian.tar.xz"
+    "daeaf21eadd75929dbb5e3edf4bb5371 2834 rocsolver_5.5.1-5.dsc 53714220a9ea42929d88603512744ce3 726171 rocsolver_5.5.1.orig.tar.gz 4d2e0edaa88aa5eee8cf666c5c40d1eb 15764 rocsolver_5.5.1-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "libopenblas0-pthread"
+  ],
   "Uploaders": [
     "Maxime Chambonnet \u003cmaxzor@maxzor.eu\u003e, Cordell Bloor \u003ccgmb@slerp.xyz\u003e, Christian Kastner \u003cckk@debian.org\u003e,"
   ],
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rocm-team/rocsolver.git"
   ],
   "Version": [
-    "5.5.1-4"
+    "5.5.1-5"
   ]
 }

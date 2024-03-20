@@ -6,16 +6,16 @@
     "python3-cryptography, python-cryptography-doc"
   ],
   "Build-Depends": [
-    "cargo, debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, dpkg-dev (\u003e= 1.17.14), librust-asn1-0.15-dev, librust-asn1-derive-0.15-dev, librust-cfg-if-dev, librust-foreign-types-shared-0.1-dev, librust-once-cell-dev, librust-openssl-dev, librust-openssl-sys-dev, librust-ouroboros-0.15-dev, librust-paste-dev, librust-pem-1.1-dev, librust-pyo3-0.20-dev, librust-pyo3-0.20+default-dev, librust-pyo3-macros-0.20-dev, librust-self-cell-dev, libssl-dev, pybuild-plugin-pyproject, python3-all-dev, python3-cffi, python3-cryptography-vectors (\u003c\u003c 41.0.8~) \u003c!nocheck\u003e, python3-cryptography-vectors (\u003e= 41.0.7~) \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-iso8601 \u003c!nocheck\u003e, python3-pretend \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-pytest-subtests \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-rust, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-tz \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e"
+    "cargo, debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, librust-asn1-0.15-dev, librust-asn1-derive-0.15-dev, librust-cfg-if-dev, librust-foreign-types-shared-0.1-dev, librust-once-cell-dev, librust-openssl-dev (\u003e= 0.10.64~), librust-openssl-sys-dev (\u003e= 0.9.101~), librust-ouroboros-0.15-dev, librust-paste-dev, librust-pem-3.0-dev, librust-pyo3-0.20-dev, librust-pyo3-0.20+default-dev, librust-pyo3-macros-0.20-dev, librust-self-cell-dev, libssl-dev, pybuild-plugin-pyproject, python3-all-dev, python3-cffi, python3-cryptography-vectors (\u003c\u003c 42.0.6~) \u003c!nocheck\u003e, python3-cryptography-vectors (\u003e= 42.0.5~) \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-iso8601 \u003c!nocheck\u003e, python3-pretend \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-pytest-subtests \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-rust (\u003e= 1.7.0~), python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-tz \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "330ddd5e9195e6f80c8f60ef493665bcdcf7af1aa985f1190504784c3eef4b51 3385 python-cryptography_41.0.7-5.dsc 13f93ce9bea8016c253b34afc6bd6a75993e5c40672ed5405a9c832f0d4a00bc 630892 python-cryptography_41.0.7.orig.tar.gz 7e807f8e7baf82ef86ac094aaf5dffc4101a4c0ec20b36cb61c7b5c124d9380f 10632 python-cryptography_41.0.7-5.debian.tar.xz"
+    "8ce1c3edd92d947a51b1859a9f025d0d26ad120f9e4df254750e7a7b0e0a01e8 3219 python-cryptography_42.0.5-1.dsc 5cc64602bce41e18de2e26c38557620e00167fb9cef1ccbfbb451f0e99fe66ca 668444 python-cryptography_42.0.5.orig.tar.gz 26e1c32420ac3ec2f2c913376eb82d8e3f48a84fe5469fa23b0f69d641cc1a05 10536 python-cryptography_42.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-cryptography"
   ],
   "Files": [
-    "744d8ac3e4f8e7556a90d212e2d54d1d 3385 python-cryptography_41.0.7-5.dsc c06f01c4bc95327c2e4378589ed5a193 630892 python-cryptography_41.0.7.orig.tar.gz 5f41582fa9a9292e685d810265228b6a 10632 python-cryptography_41.0.7-5.debian.tar.xz"
+    "0e0bf3eb0860c88ef32e79d6ed8e9b94 3219 python-cryptography_42.0.5-1.dsc 2646bf1124393514ce6c519a82f8edcf 668444 python-cryptography_42.0.5.orig.tar.gz 836e5c8ea3fde411fddcc0b22503ae54 10536 python-cryptography_42.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-cffi, python3-cryptography-vectors, python3-hypothesis, python3-iso8601, python3-pretend, python3-pyasn1-modules, python3-pytest, python3-pytest-benchmark, python3-pytest-subtests, python3-tz"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Jérémy Lal \u003ckapouer@melix.org\u003e,"
+    "Jérémy Lal \u003ckapouer@melix.org\u003e, Andrey Rakhmatullin \u003cwrar@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-cryptography"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/python-cryptography.git"
   ],
   "Version": [
-    "41.0.7-5"
+    "42.0.5-1"
   ]
 }
