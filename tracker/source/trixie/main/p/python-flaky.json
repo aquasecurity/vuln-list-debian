@@ -6,16 +6,16 @@
     "python3-flaky"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-genty, python3-mock, python3-nose, python3-pytest, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-pytest \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "66e3b8403e4757d6f71ae5823c7e0a3711a812880acea950d89a1c1b8cb302e7 2105 python-flaky_3.7.0-2.dsc d2d0c482ef43211e9ef23213dd83ec1b2686c1510a5ac83624b7d6b41710c3eb 36165 python-flaky_3.7.0.orig.tar.gz dbd7542b39e7014008140e081f466b22ffdf5dae09962ae992ad324f03ed4668 2776 python-flaky_3.7.0-2.debian.tar.xz"
+    "0d33f94c739b373e2200fac67086860746b33de40030f4264bf5634fa8a25f42 2158 python-flaky_3.8.1-1.dsc 2656989f02deca3854aeecfe7fb5f8e7d96cd68737846e7e8ca7b058658908a2 31516 python-flaky_3.8.1.orig.tar.gz 9b091b74bee5753cd5491e3954920da7056700ca3cb9f2d73aee249e92f7e873 3144 python-flaky_3.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-flaky"
   ],
   "Files": [
-    "6e29779f8d69a9c045e38088a9aa6ab4 2105 python-flaky_3.7.0-2.dsc 91f181dc3982daba9e70d2b20f711f97 36165 python-flaky_3.7.0.orig.tar.gz 39a40796123c46d794923ecf53629852 2776 python-flaky_3.7.0-2.debian.tar.xz"
+    "9bc97bfe86bad798f7da64551b238d3e 2158 python-flaky_3.8.1-1.dsc c3ed7cdba8b5680c45bee66a32907970 31516 python-flaky_3.8.1.orig.tar.gz e8942816afd94f5084d697cc456e862f 3144 python-flaky_3.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
   ],
-  "Uploaders": [
-    "Tristan Seligmann \u003cmithrandi@debian.org\u003e"
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest, python3-pytest-xdist"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-flaky"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/python-flaky.git"
   ],
   "Version": [
-    "3.7.0-2"
+    "3.8.1-1"
   ]
 }
