@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any-amd64 any-i386"
+    "any"
   ],
   "Binary": [
     "libconsensuscore-dev, python3-pbconsensuscore"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-exec, libboost-dev, swig, python3-setuptools, python3-all-dev, python3-numpy"
+    "debhelper-compat (= 13), architecture-is-64-bit, architecture-is-little-endian, dh-sequence-python3, dh-exec, libboost-dev, swig, python3-setuptools, python3-all-dev, python3-numpy, libsimde-dev"
   ],
   "Checksums-Sha256": [
-    "b1d862ede3646b024b82c37fed63f962851ce08b8cd1cb4cc583d9519aa84f4e 2293 consensuscore_1.1.1+dfsg-5.dsc 47865e3769e2d6647003f70ffce68f8a5b2f69a6ae04ff27d106b3ec84660d82 363936 consensuscore_1.1.1+dfsg.orig.tar.xz 0a4d09c146d25759b92145c0005dd2e0048182f34ade00281a8524b4f755ba4c 9296 consensuscore_1.1.1+dfsg-5.debian.tar.xz"
+    "521c1e7abfd2c3f5dbd67540d0553a2b065bfbc923b9c86860badae05825ef78 2320 consensuscore_1.1.1+dfsg-6.dsc 47865e3769e2d6647003f70ffce68f8a5b2f69a6ae04ff27d106b3ec84660d82 363936 consensuscore_1.1.1+dfsg.orig.tar.xz 87dcd9b6deccbaf764515705d3d62075497aa783275074dd6c8c4b940c7410b9 10012 consensuscore_1.1.1+dfsg-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/consensuscore"
   ],
   "Files": [
-    "7bae621f8ba09343721a7ad84d6ad24e 2293 consensuscore_1.1.1+dfsg-5.dsc 17991299008d1c01e25ce3984b7fe7bd 363936 consensuscore_1.1.1+dfsg.orig.tar.xz c6aa8849d99e80395184dbbb30ebe2b3 9296 consensuscore_1.1.1+dfsg-5.debian.tar.xz"
+    "a1187fe00c56b77361ed06ee9826c324 2320 consensuscore_1.1.1+dfsg-6.dsc 17991299008d1c01e25ce3984b7fe7bd 363936 consensuscore_1.1.1+dfsg.orig.tar.xz 55ce5d7d5e60fb336e64740395136115 10012 consensuscore_1.1.1+dfsg-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "consensuscore"
   ],
   "Package-List": [
-    "libconsensuscore-dev deb libdevel optional arch=any-amd64,any-i386 python3-pbconsensuscore deb python optional arch=any-amd64,any-i386"
+    "libconsensuscore-dev deb libdevel optional arch=any python3-pbconsensuscore deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/med-team/consensuscore.git"
   ],
   "Version": [
-    "1.1.1+dfsg-5"
+    "1.1.1+dfsg-6"
   ]
 }
