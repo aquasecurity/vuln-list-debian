@@ -6,16 +6,16 @@
     "python3-dateutil"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-setuptools-scm, python3-six"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-freezegun \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-six, tzdata-legacy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "538c6dc0fd3d39e4563c16bac3c46264ca508cdbf0e94d412a46bd678bd6a9dc 2017 python-dateutil_2.8.2-3.dsc 0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86 357324 python-dateutil_2.8.2.orig.tar.gz 4404ace4ea5854a049e6a623a37dd6dba8f21710a40094235b7be81965c9405e 12052 python-dateutil_2.8.2-3.debian.tar.xz"
+    "d323e0ee2b04cce8f8e82636d5890e8ae89442f57462a1f1d5e5f7820983e19b 2282 python-dateutil_2.9.0-1.dsc 78e73e19c63f5b20ffa567001531680d939dc042bf7850431877645523c66709 342990 python-dateutil_2.9.0.orig.tar.gz aace3c970c3243288cd5ac29050c2f0de751282023a1dd12cc0f6d5783c40703 6860 python-dateutil_2.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-dateutil"
   ],
   "Files": [
-    "d4139087acbe09750e50803ccf47fbb0 2017 python-dateutil_2.8.2-3.dsc 5970010bb72452344df3d76a10281b65 357324 python-dateutil_2.8.2.orig.tar.gz df4b6a68cbf8955928c5fd71bb8d0958 12052 python-dateutil_2.8.2-3.debian.tar.xz"
+    "9ef680947691871ebc6cc39cea34d0a6 2282 python-dateutil_2.9.0-1.dsc f4888298c0f2d5239c85c6457455a975 342990 python-dateutil_2.9.0.orig.tar.gz 4b32f425ad2934be47b4a58890343704 6860 python-dateutil_2.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,10 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-freezegun, python3-hypothesis, python3-pytest, tzdata-legacy"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Guido Günther \u003cagx@sigxcpu.org\u003e,"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/python-dateutil.git"
   ],
   "Version": [
-    "2.8.2-3"
+    "2.9.0-1"
   ]
 }
