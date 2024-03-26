@@ -6,16 +6,16 @@
     "librocprim-dev, librocprim-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, hipcc, libamd-comgr-dev, libhsa-runtime-dev, patchelf, rocminfo, rocm-cmake (\u003e= 5.3.0), libgtest-dev"
+    "debhelper-compat (= 13), cmake, hipcc (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), rocm-cmake (\u003e= 5.3.0), libgtest-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c787185f1082b351caaac12151149a167b55e4df079b0295dbe58308a5de88eb 2216 rocprim_5.7.1-1.dsc 15d820a0f61aed60efbba88b6efe6942878b02d912f523f9cf8f33a4583d6cd7 535649 rocprim_5.7.1.orig.tar.gz 09decd005b4d270a12f9657afd0d4bf85bdf944c299d53452bdea5332bc33c92 4932 rocprim_5.7.1-1.debian.tar.xz"
+    "6646d4af3af26259fa43b2adaf2ace01d41d37844ef0a2f2de0ce25945f76128 2258 rocprim_5.7.1-2.dsc 15d820a0f61aed60efbba88b6efe6942878b02d912f523f9cf8f33a4583d6cd7 535649 rocprim_5.7.1.orig.tar.gz 8d78a17aa79a32851ea0e7efb6a1f4bf34cde695d098e36ea4de82ae590c19e8 6704 rocprim_5.7.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocprim"
   ],
   "Files": [
-    "7b5ede6dd92118aa1661f27b544be7b3 2216 rocprim_5.7.1-1.dsc f0062f6351cdde9c8abbc5731f3891ea 535649 rocprim_5.7.1.orig.tar.gz 9bde30f85bc546f7eaa2fdb05ace2b64 4932 rocprim_5.7.1-1.debian.tar.xz"
+    "df6a44a60a5abb10f97fac1409c80529 2258 rocprim_5.7.1-2.dsc f0062f6351cdde9c8abbc5731f3891ea 535649 rocprim_5.7.1.orig.tar.gz d59083ab0611646a723ec1a057e0ffdf 6704 rocprim_5.7.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rocprim"
   ],
   "Package-List": [
-    "librocprim-dev deb libdevel optional arch=all librocprim-tests deb libdevel optional arch=amd64,arm64,ppc64el"
+    "librocprim-dev deb libdevel optional arch=all librocprim-tests deb libdevel optional arch=amd64,arm64,ppc64el profile=!nocheck"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rocm-team/rocprim.git"
   ],
   "Version": [
-    "5.7.1-1"
+    "5.7.1-2"
   ]
 }
