@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "arm64 musl-linux-arm64 armel armhf musl-linux-armhf i386 musl-linux-i386 amd64 musl-linux-amd64 m68k musl-linux-m68k mips musl-linux-mips mipsel musl-linux-mipsel mips64el musl-linux-mips64el s390x musl-linux-s390x sh4 musl-linux-sh4 ppc64el musl-linux-ppc64el riscv64 musl-linux-riscv64"
+    "arm64 musl-linux-arm64 armel armhf musl-linux-armhf i386 musl-linux-i386 amd64 musl-linux-amd64 loong64 musl-linux-loong64 m68k musl-linux-m68k mips musl-linux-mips mipsel musl-linux-mipsel mips64el musl-linux-mips64el s390x musl-linux-s390x sh4 musl-linux-sh4 ppc64el musl-linux-ppc64el riscv64 musl-linux-riscv64"
   ],
   "Binary": [
     "musl, musl-dev, musl-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gcc-aarch64-linux-gnu [arm64], gcc-arm-linux-gnueabi [armel], gcc-arm-linux-gnueabihf [armhf], gcc-i686-linux-gnu [i386], gcc-m68k-linux-gnu [m68k], gcc-mips-linux-gnu [mips], gcc-mips64el-linux-gnuabi64 [mips64el], gcc-mipsel-linux-gnu [mipsel], gcc-powerpc64le-linux-gnu [ppc64el], gcc-riscv64-linux-gnu [riscv64], gcc-s390x-linux-gnu [s390x], gcc-sh4-linux-gnu [sh4], gcc-x86-64-linux-gnu [amd64]"
+    "debhelper-compat (= 13), gcc-aarch64-linux-gnu [arm64], gcc-arm-linux-gnueabi [armel], gcc-arm-linux-gnueabihf [armhf], gcc-i686-linux-gnu [i386], gcc-loongarch64-linux-gnu [loong64], gcc-m68k-linux-gnu [m68k], gcc-mips-linux-gnu [mips], gcc-mips64el-linux-gnuabi64 [mips64el], gcc-mipsel-linux-gnu [mipsel], gcc-powerpc64le-linux-gnu [ppc64el], gcc-riscv64-linux-gnu [riscv64], gcc-s390x-linux-gnu [s390x], gcc-sh4-linux-gnu [sh4], gcc-x86-64-linux-gnu [amd64]"
   ],
   "Checksums-Sha256": [
-    "ec83f7214940edfb03857c05896bb9bb380f0a6d67fec3f95dca60161e71f01a 3517 musl_1.2.4-2.dsc 7a35eae33d5372a7c0da1188de798726f68825513b7ae3ebe97aaaa52114f039 1063758 musl_1.2.4.orig.tar.gz 4aa4f74cdabd0629d9400c04637ccc311dd120baa137c016e25dfdcb5600a4ad 490 musl_1.2.4.orig.tar.gz.asc 953f9b71d1c1fd827a521725ead722fd3821ac208614cf99f8150dec070b1121 24152 musl_1.2.4-2.debian.tar.xz"
+    "c8fbd6f4da2ba712bbda204bec276dd87a9913d85ba18ac608ba0c9a933d6885 3643 musl_1.2.5-1.dsc a9a118bbe84d8764da0ea0d28b3ab3fae8477fc7e4085d90102b8596fc7c75e4 1080786 musl_1.2.5.orig.tar.gz d9030116fd03e4acfa0b665a13a5de46110296b4e30bb8e67be1f08af29f6306 490 musl_1.2.5.orig.tar.gz.asc 5576a3e9bccf778e0e5a14ead99aa2a88480874ea295b2d87a819932de06b415 24264 musl_1.2.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/musl"
   ],
   "Files": [
-    "30ad244630ce6a75162cb1aaed4e80f7 3517 musl_1.2.4-2.dsc ba95cb2c0ba278f081f96380be555fce 1063758 musl_1.2.4.orig.tar.gz e2fcfbf5e8de162b76ce70507342546f 490 musl_1.2.4.orig.tar.gz.asc c8cea0a06747492396986922c5d2f009 24152 musl_1.2.4-2.debian.tar.xz"
+    "c5b9f6fac6804613ad96ce9a43f256e1 3643 musl_1.2.5-1.dsc ac5cfde7718d0547e224247ccfe59f18 1080786 musl_1.2.5.orig.tar.gz 52945accececaefa1fb269f95eb152b2 490 musl_1.2.5.orig.tar.gz.asc e5cc9fd0af2bba6bd07f2d7bc8f5e8b7 24264 musl_1.2.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "musl"
   ],
   "Package-List": [
-    "musl deb libs optional arch=arm64,musl-linux-arm64,armel,armhf,musl-linux-armhf,i386,musl-linux-i386,amd64,musl-linux-amd64,m68k,musl-linux-m68k,mips,musl-linux-mips,mipsel,musl-linux-mipsel,mips64el,musl-linux-mips64el,s390x,musl-linux-s390x,sh4,musl-linux-sh4,ppc64el,musl-linux-ppc64el,riscv64,musl-linux-riscv64 musl-dev deb libdevel optional arch=arm64,musl-linux-arm64,armel,armhf,musl-linux-armhf,i386,musl-linux-i386,amd64,musl-linux-amd64,m68k,musl-linux-m68k,mips,musl-linux-mips,mipsel,musl-linux-mipsel,mips64el,musl-linux-mips64el,s390x,musl-linux-s390x,sh4,musl-linux-sh4,ppc64el,musl-linux-ppc64el,riscv64,musl-linux-riscv64 musl-tools deb devel optional arch=amd64,arm64,armel,armhf,i386,m68k,mips,mips64el,mipsel,ppc64el,riscv64,s390x,sh4"
+    "musl deb libs optional arch=arm64,musl-linux-arm64,armel,armhf,musl-linux-armhf,i386,musl-linux-i386,amd64,musl-linux-amd64,loong64,musl-linux-loong64,m68k,musl-linux-m68k,mips,musl-linux-mips,mipsel,musl-linux-mipsel,mips64el,musl-linux-mips64el,s390x,musl-linux-s390x,sh4,musl-linux-sh4,ppc64el,musl-linux-ppc64el,riscv64,musl-linux-riscv64 musl-dev deb libdevel optional arch=arm64,musl-linux-arm64,armel,armhf,musl-linux-armhf,i386,musl-linux-i386,amd64,musl-linux-amd64,loong64,musl-linux-loong64,m68k,musl-linux-m68k,mips,musl-linux-mips,mipsel,musl-linux-mipsel,mips64el,musl-linux-mips64el,s390x,musl-linux-s390x,sh4,musl-linux-sh4,ppc64el,musl-linux-ppc64el,riscv64,musl-linux-riscv64 musl-tools deb devel optional arch=amd64,arm64,armel,armhf,i386,loong64,m68k,mips,mips64el,mipsel,ppc64el,riscv64,s390x,sh4"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/reiner/musl.git"
   ],
   "Version": [
-    "1.2.4-2"
+    "1.2.5-1"
   ]
 }
