@@ -6,16 +6,16 @@
     "composer"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), help2man, jsonlint, php-composer-ca-bundle, php-composer-semver, php-composer-spdx-licenses, php-composer-xdebug-handler, php-json-schema, php-psr-log, php-symfony-console, php-symfony-filesystem, php-symfony-finder, php-symfony-process, phpab, pkg-php-tools (\u003e= 1.29~)"
+    "debhelper-compat (= 12), git, help2man, jsonlint, mercurial, php-composer-ca-bundle, php-composer-semver, php-composer-spdx-licenses, php-composer-xdebug-handler, php-json-schema, php-mbstring, php-psr-log, php-symfony-console, php-symfony-filesystem, php-symfony-finder, php-symfony-process, php-zip, phpab, phpunit, pkg-php-tools (\u003e= 1.29~)"
   ],
   "Checksums-Sha256": [
-    "929ed9cfff462e73da62a15b61487109b18519acaa169a7f2e5fb0a21c654c8b 1904 composer_1.8.4-1+deb10u1.dsc 288ab33c8f11f0db4b5883d4a115a8ead8ef1a74c924f3accadc61d220ca22de 406561 composer_1.8.4.orig.tar.gz b1bf0bb2e9b380b571ea0766b8798e79a5ccd6f74e7e45188bc357f552ada79e 10132 composer_1.8.4-1+deb10u1.debian.tar.xz"
+    "f90f1993e390cc31bfef036088952c06f1e16dc34e3cce7a52502325f5f76b30 2356 composer_1.8.4-1+deb10u3.dsc 288ab33c8f11f0db4b5883d4a115a8ead8ef1a74c924f3accadc61d220ca22de 406561 composer_1.8.4.orig.tar.gz 9f3fe62907d2ca006fac6d05983b27efa35d6f05f690787cb3e17bec5b867cec 425448 composer_1.8.4-1+deb10u3.debian.tar.xz"
   ],
   "Directory": [
     "pool/updates/main/c/composer"
   ],
   "Files": [
-    "225717c2d0142c5c0d586ef317e03247 1904 composer_1.8.4-1+deb10u1.dsc 0fb0249cc1047048c91fa1c7c6d706a4 406561 composer_1.8.4.orig.tar.gz 6904f36136877b24326af227cf5092b5 10132 composer_1.8.4-1+deb10u1.debian.tar.xz"
+    "2c74b4c9e24600494c9909a4b4639d57 2356 composer_1.8.4-1+deb10u3.dsc 0fb0249cc1047048c91fa1c7c6d706a4 406561 composer_1.8.4.orig.tar.gz d40213042e5dcee9c415f5474f8f75e8 425448 composer_1.8.4-1+deb10u3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.3.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "David Prévot \u003ctaffit@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/php-team/pear/composer.git -b debian/buster"
   ],
   "Version": [
-    "1.8.4-1+deb10u1"
+    "1.8.4-1+deb10u3"
   ]
 }
