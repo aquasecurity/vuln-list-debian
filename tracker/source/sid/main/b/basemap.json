@@ -6,16 +6,16 @@
     "python-mpltoolkits.basemap-data, python-mpltoolkits.basemap-doc, python3-mpltoolkits.basemap"
   ],
   "Build-Depends": [
-    "cython3, debhelper-compat (= 12), dh-python, libgeos-dev, python3-all, python3-all-dev, python3-matplotlib, python3-netcdf4, python3-numpy, python3-pil, python3-pyproj, python3-pyshp, python3-setuptools, python3-six, python3-sphinx, python3-tk"
+    "cython3-legacy, debhelper-compat (= 13), dh-python, libgeos-dev, python3-all, python3-all-dev, python3-matplotlib, python3-netcdf4, python3-numpy, python3-pil, python3-pyproj, python3-pyshp, python3-setuptools, python3-six, python3-sphinx, python3-tk"
   ],
   "Checksums-Sha256": [
-    "de563c6d906da0584fa66dd3072214f2997b27129050ea10dd307f4b94bb64b5 2347 basemap_1.2.2+dfsg-3.dsc 1f5f6aed2131957fb90f3e0af89549f3bf0a189e4487271f74f836e0cddb8ea2 86230584 basemap_1.2.2+dfsg.orig.tar.xz 71ac8701c29c71ce6c1acd1669548765238d1c44b1b179bc56178e6cb88d12e8 20040 basemap_1.2.2+dfsg-3.debian.tar.xz"
+    "a7d462bc2bfde049ea8cbbfb3dc1e04334a8c806ab9b093fcf5162af01fe50dc 2556 basemap_1.2.2+dfsg-4.dsc 1f5f6aed2131957fb90f3e0af89549f3bf0a189e4487271f74f836e0cddb8ea2 86230584 basemap_1.2.2+dfsg.orig.tar.xz e183b186640e4db2467f4c82dda4ab91d9639d32ab0f5b66fbec01aed1d08c3b 28396 basemap_1.2.2+dfsg-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/basemap"
   ],
   "Files": [
-    "23bf954932275c4811d7e913092a5fe9 2347 basemap_1.2.2+dfsg-3.dsc ae6673e422d0c3b8d720df4f344089bf 86230584 basemap_1.2.2+dfsg.orig.tar.xz 9d2a1f0ff946b9885167c8eb1e43f23a 20040 basemap_1.2.2+dfsg-3.debian.tar.xz"
+    "4f4b099b8dcae21a0489b4a4efa4ffa3 2556 basemap_1.2.2+dfsg-4.dsc ae6673e422d0c3b8d720df4f344089bf 86230584 basemap_1.2.2+dfsg.orig.tar.xz 53aba641a9d06a9f56f3f022d609ccd3 28396 basemap_1.2.2+dfsg-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,16 @@
     "python"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-netcdf4, xauth, xvfb"
+  ],
+  "Uploaders": [
+    "Andreas Tille \u003ctille@debian.org\u003e, Emmanuel Arias \u003ceamanu@yaerobi.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/basemap"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/basemap.git"
   ],
   "Version": [
-    "1.2.2+dfsg-3"
+    "1.2.2+dfsg-4"
   ]
 }

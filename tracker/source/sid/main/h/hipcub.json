@@ -6,16 +6,16 @@
     "libhipcub-dev, libhipcub-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, hipcc, libamd-comgr-dev, libhsa-runtime-dev, patchelf, rocminfo, rocm-cmake, librocprim-dev, libgtest-dev"
+    "debhelper-compat (= 13), cmake, hipcc (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), rocm-cmake, librocprim-dev (\u003e= 5.5.1~), libgtest-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "299b8ba60fa9ae43f72ef7dc9b39b340dcc753c0148d17aa2e5b222bc39e6c05 2169 hipcub_5.7.1-2.dsc 9b23a58408bc4c549d3c754196cb3e2c1a50e177ab0a286101cbea2f7f173945 322980 hipcub_5.7.1.orig.tar.gz 6e3e56d70009d285d693cfaa2b2bb5eaadc3791f881155a339faad09bd9cd1e1 5196 hipcub_5.7.1-2.debian.tar.xz"
+    "9e1a7b8ac06b0f0938370210976d0ef5a8d047bc2de0ac4116f3b0001d3d5feb 2223 hipcub_5.7.1-3.dsc 9b23a58408bc4c549d3c754196cb3e2c1a50e177ab0a286101cbea2f7f173945 322980 hipcub_5.7.1.orig.tar.gz f6a7f5736c6d845a51454810d602be168e238629d2d3ecef1bf7e2b72af46046 5284 hipcub_5.7.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hipcub"
   ],
   "Files": [
-    "06c26e8a98ecaff86e03b716eef28a95 2169 hipcub_5.7.1-2.dsc a328173b6412f4cb91b9bebe49d2c47b 322980 hipcub_5.7.1.orig.tar.gz b492c10d04bb5f0f000e3dcfb62851d8 5196 hipcub_5.7.1-2.debian.tar.xz"
+    "9f3dd50048f130d8794ff93a6e261398 2223 hipcub_5.7.1-3.dsc a328173b6412f4cb91b9bebe49d2c47b 322980 hipcub_5.7.1.orig.tar.gz 43cafcef394933811e01fe20dfcbdf32 5284 hipcub_5.7.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "hipcub"
   ],
   "Package-List": [
-    "libhipcub-dev deb libdevel optional arch=all libhipcub-tests deb libdevel optional arch=amd64,arm64,ppc64el"
+    "libhipcub-dev deb libdevel optional arch=all libhipcub-tests deb libdevel optional arch=amd64,arm64,ppc64el profile=!nocheck"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rocm-team/hipcub.git"
   ],
   "Version": [
-    "5.7.1-2"
+    "5.7.1-3"
   ]
 }
