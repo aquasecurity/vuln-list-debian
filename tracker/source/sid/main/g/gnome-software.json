@@ -3,7 +3,7 @@
     "any all"
   ],
   "Binary": [
-    "gnome-software, gnome-software-common, gnome-software-plugin-flatpak, gnome-software-plugin-snap, gnome-software-dev, gnome-software-doc"
+    "gnome-software, gnome-software-common, gnome-software-plugin-deb, gnome-software-plugin-flatpak, gnome-software-plugin-fwupd, gnome-software-plugin-snap, gnome-software-dev, gnome-software-doc"
   ],
   "Build-Depends": [
     "appstream, debhelper-compat (= 13), dh-sequence-gnome, docbook-xsl, gsettings-desktop-schemas-dev (\u003e= 3.18), gtk-doc-tools, libadwaita-1-dev (\u003e= 1.4), libappstream-dev (\u003e= 1.0.0), libflatpak-dev (\u003e= 1.14.0) [amd64 arm64 armel armhf i386 mipsel mips64el ppc64el s390x hppa powerpc ppc64 riscv64 x32], libfwupd-dev (\u003e= 1.5.6) [linux-any], libglib-testing-0-dev, libglib2.0-dev (\u003e= 2.70.0), libgtk-4-dev (\u003e= 4.12.0), libgudev-1.0-dev [linux-any], libjson-glib-dev (\u003e= 1.6.0), libmalcontent-0-dev [amd64 arm64 armel armhf i386 mipsel mips64el ppc64el s390x hppa powerpc ppc64 riscv64 x32], libostree-dev (\u003e= 2022.5-2~) [linux-any], libpackagekit-glib2-dev (\u003e= 1.2.5), libpolkit-gobject-1-dev, libsnapd-glib-dev (\u003e= 1.63) [amd64 arm64 armel armhf i386 ppc64el s390x], libsoup-3.0-dev, libxml2-utils, libxmlb-dev (\u003e= 0.1.7), meson (\u003e= 0.55.0), pkgconf, polkitd, xsltproc"
@@ -12,19 +12,19 @@
     "libgdk-pixbuf2.0-doc \u003c!nodoc\u003e, libglib2.0-doc \u003c!nodoc\u003e, libgtk-3-doc \u003c!nodoc\u003e, libjson-glib-doc \u003c!nodoc\u003e, libsoup-3.0-doc \u003c!nodoc\u003e, libsoup2.4-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c0c7fdd4a817db0e245ef149134c6fca27ea3c86b82bbb5078ac40dd9fedced8 3678 gnome-software_46.0-1.dsc 11893002bbb54082896683707bc3991ae55a2f3040811a760e3a92c96544f86e 2543880 gnome-software_46.0.orig.tar.xz 09dcba21df27f0fe14f8c05e2b0cb55e3b63e5aa1bd9b0edbb3d06bdc85d3744 13124 gnome-software_46.0-1.debian.tar.xz"
+    "8316663f2c2cf5a7fe3cb83c150cde609609e0d34965399f9d034b12fc26d814 3848 gnome-software_46.0-3.dsc 11893002bbb54082896683707bc3991ae55a2f3040811a760e3a92c96544f86e 2543880 gnome-software_46.0.orig.tar.xz d2d06a1581a11ffb285630c6af59db918cfef0d50bddb83d4de02943df0ee8bf 13184 gnome-software_46.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnome-software"
   ],
   "Files": [
-    "11e018034561b4fde97719de2c2ce8eb 3678 gnome-software_46.0-1.dsc 33dedfda386a145d9124da14ce5af432 2543880 gnome-software_46.0.orig.tar.xz 22819915f8068d01f17ce7a359465d60 13124 gnome-software_46.0-1.debian.tar.xz"
+    "359c94577086c2af13a90c34f2cb6159 3848 gnome-software_46.0-3.dsc 33dedfda386a145d9124da14ce5af432 2543880 gnome-software_46.0.orig.tar.xz ff96b5da5d76a160cbe9053a9a06c0c4 13184 gnome-software_46.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://wiki.gnome.org/Apps/Software"
+    "https://apps.gnome.org/Software/"
   ],
   "Maintainer": [
     "Debian GNOME Maintainers \u003cpkg-gnome-maintainers@lists.alioth.debian.org\u003e"
@@ -33,7 +33,7 @@
     "gnome-software"
   ],
   "Package-List": [
-    "gnome-software deb gnome optional arch=any gnome-software-common deb gnome optional arch=all gnome-software-dev deb libdevel optional arch=any gnome-software-doc deb doc optional arch=all profile=!nodoc gnome-software-plugin-flatpak deb gnome optional arch=amd64,arm64,armel,armhf,hppa,i386,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,x32 gnome-software-plugin-snap deb gnome optional arch=amd64,arm64,armel,armhf,i386,ppc64el,s390x"
+    "gnome-software deb gnome optional arch=any gnome-software-common deb gnome optional arch=all gnome-software-dev deb libdevel optional arch=any gnome-software-doc deb doc optional arch=all profile=!nodoc gnome-software-plugin-deb deb gnome optional arch=any gnome-software-plugin-flatpak deb gnome optional arch=amd64,arm64,armel,armhf,hppa,i386,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,x32 gnome-software-plugin-fwupd deb gnome optional arch=linux-any gnome-software-plugin-snap deb gnome optional arch=amd64,arm64,armel,armhf,i386,ppc64el,s390x"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/gnome-team/gnome-software.git"
   ],
   "Version": [
-    "46.0-1"
+    "46.0-3"
   ]
 }
