@@ -6,19 +6,19 @@
     "bubblewrap"
   ],
   "Build-Depends": [
-    "bash-completion, debhelper-compat (= 13), docbook-xml, docbook-xsl, iproute2 \u003c!nocheck\u003e, libcap-dev, libcap2-bin \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libselinux1-dev, meson, perl:any \u003c!nocheck\u003e, pkg-config, python3:any \u003c!nocheck\u003e, xsltproc"
+    "bash-completion, debhelper-compat (= 13), docbook-xml, docbook-xsl, iproute2 \u003c!nocheck\u003e, libcap-dev, libcap2-bin \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libselinux1-dev, meson, perl:any \u003c!nocheck\u003e, pkgconf, python3:any \u003c!nocheck\u003e, xsltproc"
   ],
   "Checksums-Sha256": [
-    "a1e8a9b9e8b7ff91dc63cfc129d0080c0df77708c755953082ccebc4e7c88d8e 2350 bubblewrap_0.8.0-2.dsc 957ad1149db9033db88e988b12bcebe349a445e1efc8a9b59ad2939a113d333a 149088 bubblewrap_0.8.0.orig.tar.xz 4acad6a916863f678bab8ab0778957fca56d55cd3b2db452ebf9e5f75cb19e16 13092 bubblewrap_0.8.0-2.debian.tar.xz"
+    "fb480ed5ba28ae8ce60862a4fa38b26308e1cb7115e2c2c0218f9ebe89fcc7b6 2684 bubblewrap_0.9.0-1.dsc c6347eaced49ac0141996f46bba3b089e5e6ea4408bc1c43bab9f2d05dd094e1 118984 bubblewrap_0.9.0.orig.tar.xz 355568011016d6d5592c13830778a9b06365926f6478ae43e51b2ab5c3bc3c92 833 bubblewrap_0.9.0.orig.tar.xz.asc b1bdec31fb4eb6d239c9dff2a287cca84bc92ce42c6df0dfd15da6cdd7f99f40 12712 bubblewrap_0.9.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "0d22ee67f8524ce3db934f68a231ce6ecf27abd6 debian archive/debian/0.8.0-2 https://git.dgit.debian.org/bubblewrap"
+    "21bdd46cc65dc3417e9175dbf9e7aa12988e88bf debian archive/debian/0.9.0-1 https://git.dgit.debian.org/bubblewrap"
   ],
   "Directory": [
     "pool/main/b/bubblewrap"
   ],
   "Files": [
-    "c7060474392c0d501cfab7cb4889f0c6 2350 bubblewrap_0.8.0-2.dsc fc0e14bc26df76225e8f8cc2df9fb657 149088 bubblewrap_0.8.0.orig.tar.xz 66ffea03a8413e16d71e5d05b7680bf8 13092 bubblewrap_0.8.0-2.debian.tar.xz"
+    "b5d2e1fc5f7d2e601a8976a60383f7be 2684 bubblewrap_0.9.0-1.dsc adcbd7c08ac068a9328ec93cd83716e5 118984 bubblewrap_0.9.0.orig.tar.xz d197557b062221ab7213eac9e5085419 833 bubblewrap_0.9.0.orig.tar.xz.asc f4c6c088488f0ffe8d268033de88402a 12712 bubblewrap_0.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "iproute2, libcap2-bin, libipc-run-perl, perl, python3, usrmerge"
+  ],
   "Uploaders": [
     "Laszlo Boszormenyi (GCS) \u003cgcs@debian.org\u003e, Simon McVittie \u003csmcv@debian.org\u003e,"
   ],
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian/bubblewrap.git"
   ],
   "Version": [
-    "0.8.0-2"
+    "0.9.0-1"
   ]
 }
