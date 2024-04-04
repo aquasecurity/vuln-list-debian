@@ -6,16 +6,16 @@
     "python3-pykeepass"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-argon2, python3-construct (\u003e= 2.10.52), python3-dateutil, python3-lxml, python3-pycryptodome (\u003e= 3.9.4), python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-argon2, python3-construct (\u003e= 2.10.52), python3-dateutil, python3-lxml, python3-pycryptodome (\u003e= 3.9.4), python3-pyotp \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "ab2199a2734940a0f3e01f9050e58eb8cf0af4b92b059c1ac6603bc017f76bf9 2200 pykeepass_4.0.6-2.dsc 05c486145a075a328f08677d47fe3bc3f587b325b7832719b6ee226a2c0f57ee 103092 pykeepass_4.0.6.orig.tar.gz b2566739fbb52a6c89ac0237a7d02ca1e0ac6d62a0e22b8fc50260c18cc4aab2 4300 pykeepass_4.0.6-2.debian.tar.xz"
+    "e24b5d1df45b2e8d8344b1f9317da4fe6a83525d60f2fcb6dc7ac032b36dd69e 2265 pykeepass_4.0.7-2.dsc c1c8bba7314a8aff196dbb3c2bcbde6dfa64008f4e67637f06d5139d13095cfe 110217 pykeepass_4.0.7.orig.tar.gz e176ab4d1e4f1995ec6fc40ac8b99da989ec2ab3c833110cee877c28f905bd10 4816 pykeepass_4.0.7-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pykeepass"
   ],
   "Files": [
-    "ce286be088818f9d2dea73075a346b9c 2200 pykeepass_4.0.6-2.dsc fd2114170c85b3d5a1610506ddf792f4 103092 pykeepass_4.0.6.orig.tar.gz bfabe0641a19d2b39d03a82118e83e45 4300 pykeepass_4.0.6-2.debian.tar.xz"
+    "a7693556e3457538b627390a69229e0a 2265 pykeepass_4.0.7-2.dsc 5f5aa9ac74ada7779385d65dc375279e 110217 pykeepass_4.0.7.orig.tar.gz c3b22a6dda6876f7da94647e21464473 4816 pykeepass_4.0.7-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all"
+    "python3-all, python3-pkg-resources, python3-pyotp"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pykeepass.git"
   ],
   "Version": [
-    "4.0.6-2"
+    "4.0.7-2"
   ]
 }

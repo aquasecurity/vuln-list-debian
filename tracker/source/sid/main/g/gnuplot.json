@@ -6,19 +6,19 @@
     "gnuplot, gnuplot-doc, gnuplot-nox, gnuplot-qt, gnuplot-x11, gnuplot-data"
   ],
   "Build-Depends": [
-    "autoconf, automake, debhelper-compat (= 13), dh-lua, libcairo2-dev, libedit-dev, libgd-dev, liblua5.1-0-dev, libpango1.0-dev, libpng-dev, qtbase5-dev, qtbase5-dev-tools, qttools5-dev-tools, libqt5svg5-dev, libx11-dev, libxt-dev, pkg-config, libwxgtk3.2-dev, zlib1g-dev"
+    "autoconf, automake, debhelper-compat (= 13), dh-lua, libcairo2-dev, libedit-dev, libgd-dev, liblua5.1-0-dev, libpango1.0-dev, libpng-dev, qtbase5-dev \u003c!nox-only\u003e, qtbase5-dev-tools \u003c!nox-only\u003e, qttools5-dev-tools \u003c!nox-only\u003e, libqt5svg5-dev \u003c!nox-only\u003e, libx11-dev \u003c!nox-only\u003e, libxt-dev \u003c!nox-only\u003e, pkg-config, libwxgtk3.2-dev \u003c!nox-only\u003e, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
-    "latex2html, texinfo, texlive-fonts-recommended, texlive-font-utils, texlive-latex-base, texlive-latex-extra, texlive-latex-recommended, texlive-science, texlive-xetex, texlive-fonts-extra, fonts-freefont-ttf, fonts-freefont-otf, emacs-nox"
+    "latex2html \u003c!nox-only\u003e, texinfo \u003c!nox-only\u003e, texlive-fonts-recommended \u003c!nox-only\u003e, texlive-font-utils \u003c!nox-only\u003e, texlive-latex-base \u003c!nox-only\u003e, texlive-latex-extra \u003c!nox-only\u003e, texlive-latex-recommended \u003c!nox-only\u003e, texlive-science \u003c!nox-only\u003e, texlive-xetex \u003c!nox-only\u003e, texlive-fonts-extra \u003c!nox-only\u003e, fonts-freefont-ttf \u003c!nox-only\u003e, fonts-freefont-otf \u003c!nox-only\u003e, emacs-nox \u003c!nox-only\u003e"
   ],
   "Checksums-Sha256": [
-    "f9c600035e9e4bb23e979b489a3776e2339134e20dca47720263ca1b599d0bd7 2745 gnuplot_6.0.0+dfsg1-2.dsc ead709d810b64522b2a14fabb5297ee91511559923ef2a267018bd711a07185b 2198588 gnuplot_6.0.0+dfsg1.orig.tar.xz 12daff20b3a10bb3d65a60dcd35124aa82e3f4078e695bf8f80e7d6a45faf2a0 31604 gnuplot_6.0.0+dfsg1-2.debian.tar.xz"
+    "ea49814ba149288fb4d0f7e05b538a838dda61f40ae689c5ba31de39241a3fea 3064 gnuplot_6.0.0+dfsg1-3.dsc ead709d810b64522b2a14fabb5297ee91511559923ef2a267018bd711a07185b 2198588 gnuplot_6.0.0+dfsg1.orig.tar.xz ce981eedc63695bf82c969e7aad393303aae3e8b73cd1347eb9bb692557d1043 32504 gnuplot_6.0.0+dfsg1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnuplot"
   ],
   "Files": [
-    "da18f08ad7a4b6e31dfc842326ea9763 2745 gnuplot_6.0.0+dfsg1-2.dsc ac805ac8ffbd772baed3d9008887b009 2198588 gnuplot_6.0.0+dfsg1.orig.tar.xz 054638bd2fee1d0915ae05626cbe464a 31604 gnuplot_6.0.0+dfsg1-2.debian.tar.xz"
+    "9f5531dd97090e2331e56d62ce992c85 3064 gnuplot_6.0.0+dfsg1-3.dsc ac805ac8ffbd772baed3d9008887b009 2198588 gnuplot_6.0.0+dfsg1.orig.tar.xz ba3e2b39a491a28dffa1a357bd0bf093 32504 gnuplot_6.0.0+dfsg1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gnuplot"
   ],
   "Package-List": [
-    "gnuplot deb math optional arch=all gnuplot-data deb doc optional arch=all gnuplot-doc deb doc optional arch=all gnuplot-nox deb math optional arch=any gnuplot-qt deb math optional arch=any gnuplot-x11 deb math optional arch=any"
+    "gnuplot deb math optional arch=all gnuplot-data deb doc optional arch=all gnuplot-doc deb doc optional arch=all profile=!nox-only gnuplot-nox deb math optional arch=any gnuplot-qt deb math optional arch=any profile=!nox-only gnuplot-x11 deb math optional arch=any profile=!nox-only"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/gnuplot.git"
   ],
   "Version": [
-    "6.0.0+dfsg1-2"
+    "6.0.0+dfsg1-3"
   ]
 }
