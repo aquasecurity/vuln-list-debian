@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armhf i386"
+    "amd64 arm64 armhf i386 riscv64 loong64"
   ],
   "Binary": [
-    "fwupd-unsigned, fwupd-unsigned-dev, fwupd-amd64-signed-template, fwupd-i386-signed-template, fwupd-armhf-signed-template, fwupd-arm64-signed-template"
+    "fwupd-unsigned, fwupd-unsigned-dev, fwupd-amd64-signed-template, fwupd-i386-signed-template, fwupd-armhf-signed-template, fwupd-arm64-signed-template, fwupd-riscv64-signed-template, fwupd-loong64-signed-template"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13), gnu-efi [amd64 arm64 armhf i386], meson, mingw-w64-tools [amd64 arm64 armhf i386]"
+    "debhelper (\u003e= 13), gnu-efi (\u003e= 3.0.18) [amd64 arm64 armhf i386 riscv64 loong64], meson, mingw-w64-tools [amd64 arm64 armhf i386 riscv64 loong64]"
   ],
   "Checksums-Sha256": [
-    "02865412bd88ba61c695594fb8a7f54efda0bfc09e40d66f0ebd03c29ccb525d 2577 fwupd-efi_1.4-1.dsc b1f5fe72e16d4e2f4c616da416dc93bd79331057336208465da37bafe8f8f83d 39688 fwupd-efi_1.4.orig.tar.gz 37e4e0a0b00e0de0ec49762d246eaae0a810127ec4f81e8ee1809dd0c4d82faf 8772 fwupd-efi_1.4-1.debian.tar.xz"
+    "7f07b43f879d6d84bf18e842c954f3b83f42bd0cec0722ddeb8a6cfbc6c3a7fd 2860 fwupd-efi_1.5-4.dsc a2fa00a70b0e3bfac87d76bbb1a2176efa6429bfb726c668a92312209512655e 42900 fwupd-efi_1.5.orig.tar.gz 02b2c1eec75daf36c2f6447c863188427814ce6b87ff9aa0b39f0d4f364d9fab 11820 fwupd-efi_1.5-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fwupd-efi"
   ],
   "Files": [
-    "71e49f8ef3128f002d098cf13422e160 2577 fwupd-efi_1.4-1.dsc 31ed82b51bd64233168a706d84c96391 39688 fwupd-efi_1.4.orig.tar.gz 43b602fb9525833d41f323739d45995d 8772 fwupd-efi_1.4-1.debian.tar.xz"
+    "0d04ade6fb8f50cab88ef52d0ad6e552 2860 fwupd-efi_1.5-4.dsc fba5f6e73a07c311f56ff6f8bc263e52 42900 fwupd-efi_1.5.orig.tar.gz 5462f2edf85c193e184a984bffeb71b4 11820 fwupd-efi_1.5-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "fwupd-efi"
   ],
   "Package-List": [
-    "fwupd-amd64-signed-template deb admin optional arch=amd64 fwupd-arm64-signed-template deb admin optional arch=arm64 fwupd-armhf-signed-template deb admin optional arch=armhf fwupd-i386-signed-template deb admin optional arch=i386 fwupd-unsigned deb admin optional arch=amd64,arm64,armhf,i386 fwupd-unsigned-dev deb admin optional arch=amd64,arm64,armhf,i386"
+    "fwupd-amd64-signed-template deb admin optional arch=amd64 fwupd-arm64-signed-template deb admin optional arch=arm64 fwupd-armhf-signed-template deb admin optional arch=armhf fwupd-i386-signed-template deb admin optional arch=i386 fwupd-loong64-signed-template deb admin optional arch=loong64 fwupd-riscv64-signed-template deb admin optional arch=riscv64 fwupd-unsigned deb admin optional arch=amd64,arm64,armhf,i386,riscv64,loong64 fwupd-unsigned-dev deb admin optional arch=amd64,arm64,armhf,i386,riscv64,loong64"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/efi-team/fwupd-efi.git -b debian/unstable"
   ],
   "Version": [
-    "1:1.4-1"
+    "1:1.5-4"
   ]
 }
