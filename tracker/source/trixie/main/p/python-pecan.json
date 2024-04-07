@@ -9,16 +9,16 @@
     "debhelper-compat (= 10), dh-python, openstack-pkg-tools, python3-all, python3-setuptools, python3-sphinx"
   ],
   "Build-Depends-Indep": [
-    "gunicorn, python3-genshi, python3-gunicorn, python3-jinja2, python3-kajiki, python3-logutils, python3-mako, python3-markupsafe, python3-mock, python3-pytest, python3-simplegeneric, python3-singledispatch, python3-six, python3-sqlalchemy, python3-virtualenv, python3-webob, python3-webtest"
+    "gunicorn, python3-genshi, python3-gunicorn, python3-jinja2, python3-kajiki, python3-logutils, python3-mako, python3-markupsafe, python3-mock, python3-pytest, python3-simplegeneric, python3-singledispatch, python3-sqlalchemy, python3-virtualenv, python3-webob, python3-webtest"
   ],
   "Checksums-Sha256": [
-    "bed21f053c5e21ae6366af754469c98086e1c1b97851f9bbe6782105936af674 2451 python-pecan_1.4.2-3.dsc 076889c4b69a3b58b355c0e404695f67833f15bc7dc0c3d93ea4ddcb5ab6d64b 139028 python-pecan_1.4.2.orig.tar.xz 3d12bc66433efbaa4c8c7888faa18e12de6af20f977da77ccf472c9f14b768de 6280 python-pecan_1.4.2-3.debian.tar.xz"
+    "cedca32f0eedfe9bfb9321a5e8c084d6c8e01d58b059dbc4809af95dd588c706 2483 python-pecan_1.5.1-2.dsc cc68f594c67f692a7e3d942582544d9f34192049fd4b9b2406260613473bf6ef 138804 python-pecan_1.5.1.orig.tar.xz d4358477a08341ea8358300c694a6c2b6949e33735aee58d3b5fcff79741d2c0 5756 python-pecan_1.5.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-pecan"
   ],
   "Files": [
-    "6b419b6591681553e183875789cbacc2 2451 python-pecan_1.4.2-3.dsc bebecd0ce73c649db5883a834a058370 139028 python-pecan_1.4.2.orig.tar.xz 261f8f2f1bc31def1daa9939c3904977 6280 python-pecan_1.4.2-3.debian.tar.xz"
+    "680622b4c7c136805b39f43085985bb5 2483 python-pecan_1.5.1-2.dsc 995b411a52b5d1ea01fdcbd1d627f5c6 138804 python-pecan_1.5.1.orig.tar.xz 0586d11102865a21295774fbcb70a6ef 5756 python-pecan_1.5.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,10 @@
     "4.1.1"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-pecan.git"
   ],
   "Version": [
-    "1.4.2-3"
+    "1.5.1-2"
   ]
 }
