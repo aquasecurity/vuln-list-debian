@@ -6,19 +6,19 @@
     "python3-pyasn1, python-pyasn1-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-sphinx"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-sphinx"
   ],
   "Build-Depends-Indep": [
     "python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "f0b80346e5a13654a83e70e2de11157386dffdcb020e1197fb9562147ca65296 2018 pyasn1_0.4.8-4.dsc aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba 146820 pyasn1_0.4.8.orig.tar.gz 0c84bc2378ddbded2a76f70aff2857df682d25d8fcb66157ec2ad9ed0c4241fe 5632 pyasn1_0.4.8-4.debian.tar.xz"
+    "bb3f7bf31f7c2c106aae658d4b353bc3002bf381768cf0a1b206bb67165e2a64 2239 pyasn1_0.5.1-1.dsc 6d391a96e59b23130a5cfa74d6fd7f388dbbe26cc8f1edf39fdddf08d9d6676c 147134 pyasn1_0.5.1.orig.tar.gz d066d2fa3e28406ac95b99cb013d76dc1dd2774cfe58ea4e565a2574a6ea9b09 5900 pyasn1_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyasn1"
   ],
   "Files": [
-    "25e8ca2b168ddbd906a0f494348d6d46 2018 pyasn1_0.4.8-4.dsc dffae4ff9f997a83324b3f33fe62be54 146820 pyasn1_0.4.8.orig.tar.gz 8466e29e27260578d3b3b12a6986aec1 5632 pyasn1_0.4.8-4.debian.tar.xz"
+    "b9199415b97b61ab4919e2c430fe025f 2239 pyasn1_0.5.1-1.dsc 1e8ca05cc7040aaf06e321886715eb7e 147134 pyasn1_0.5.1.orig.tar.gz 8939b63a6141e6ccd351a2f9ca6d3431 5900 pyasn1_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,10 @@
     "4.5.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Deepak Tripathi \u003capenguinlinux@gmail.com\u003e, Vincent Bernat \u003cbernat@debian.org\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/pyasn1.git"
   ],
   "Version": [
-    "0.4.8-4"
+    "0.5.1-1"
   ]
 }

@@ -9,16 +9,16 @@
     "debhelper-compat (= 10), dh-python, openstack-pkg-tools, python3-all, python3-pbr, python3-setuptools, python3-sphinx"
   ],
   "Build-Depends-Indep": [
-    "python3-babel, python3-defusedxml (\u003e= 0.7.0), python3-fixtures, python3-httpretty, python3-openstackdocstheme \u003c!nodoc\u003e, python3-oslo.serialization, python3-oslo.utils, python3-oslotest \u003c!nocheck\u003e, python3-pyasn1-modules-lextudio, python3-pyghmi, python3-pysnmp-lextudio, python3-pysnmp-pyasn1, python3-requests, python3-requests-mock \u003c!nocheck\u003e, python3-stestr, python3-testscenarios \u003c!nocheck\u003e, python3-testtools \u003c!nocheck\u003e, subunit \u003c!nocheck\u003e"
+    "python3-babel, python3-defusedxml (\u003e= 0.7.0), python3-fixtures, python3-httpretty, python3-openstackdocstheme \u003c!nodoc\u003e, python3-oslo.serialization, python3-oslo.utils, python3-oslotest \u003c!nocheck\u003e, python3-pyasn1, python3-pyasn1-modules, python3-pyasyncore, python3-pyghmi, python3-pysnmp4, python3-requests, python3-requests-mock \u003c!nocheck\u003e, python3-stestr, python3-testscenarios \u003c!nocheck\u003e, python3-testtools \u003c!nocheck\u003e, subunit \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7406f1e4c4a4dcd59d353ee51f8a7b15392bdc5847c9cc8b6210b74d245feae2 2675 python-scciclient_0.15.0-2.dsc 7c2069c5626a3ddd49b9e60db2478bed74447637070da182dcca9bcac9e7ffda 52732 python-scciclient_0.15.0.orig.tar.xz 475efb5243abd900610eddbdc68bfe3833f0028088c6145aeffd52cf64167e5c 3300 python-scciclient_0.15.0-2.debian.tar.xz"
+    "93c7b27fbe40429ee0621a1b6a3d9781b3465b2e53768c84581ff5f0e6c6aa1c 2726 python-scciclient_0.16.0-1.dsc 59a1b7fb70eca85ce5be00c89eec4bb8a303b5866660701136bebbce9120c4d9 52756 python-scciclient_0.16.0.orig.tar.xz 83bd5c4b9994584f41d5ef709410c3efba42e9ca85da2349803ec95d01b41668 3952 python-scciclient_0.16.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-scciclient"
   ],
   "Files": [
-    "5357f354fcf94350d598fb931a6dad0e 2675 python-scciclient_0.15.0-2.dsc 05958ad778cceafbeb926a68004fc5ca 52732 python-scciclient_0.15.0.orig.tar.xz ce0d3815deba142a2f5ae720446beefc 3300 python-scciclient_0.15.0-2.debian.tar.xz"
+    "c1b132899d90f9c46351945b7195728e 2726 python-scciclient_0.16.0-1.dsc c71628e1be76c88f45f3ef1bfe8cd21a 52756 python-scciclient_0.16.0.orig.tar.xz 197594fbe14b408fcff99a3e81c48b96 3952 python-scciclient_0.16.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.4.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-scciclient.git"
   ],
   "Version": [
-    "0.15.0-2"
+    "0.16.0-1"
   ]
 }
