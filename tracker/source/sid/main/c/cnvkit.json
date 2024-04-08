@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64el"
+    "all"
   ],
   "Binary": [
     "cnvkit"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools, python3-pytest \u003c!nocheck\u003e, python3-pyfaidx \u003c!nocheck\u003e, python3-biopython \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pysam \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-pomegranate \u003c!nocheck\u003e, r-bioc-dnacopy \u003c!nocheck\u003e, poppler-utils \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools, pybuild-plugin-pyproject, python3-pytest \u003c!nocheck\u003e, python3-pyfaidx \u003c!nocheck\u003e, python3-biopython \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pysam \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-pomegranate \u003c!nocheck\u003e, r-bioc-dnacopy \u003c!nocheck\u003e, poppler-utils \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6b652f5a9e9a519a17fdbed744ac658895417cb2ceb3580f448c1095f6c3cf7f 2455 cnvkit_0.9.10-1.dsc 56739496f1f59511661107e662d81e5fd8af413571e853b0a1b34d882a19349a 23663020 cnvkit_0.9.10.orig.tar.gz ac6661114a6424a4413134531fe6a3a0222f536eb22eba44cac010f7141d09ff 17376 cnvkit_0.9.10-1.debian.tar.xz"
+    "000b2b65f3ed174afdb9813b6b44083884335b10fefbbc6ccbbe50029414e0c5 2449 cnvkit_0.9.10-2.dsc 56739496f1f59511661107e662d81e5fd8af413571e853b0a1b34d882a19349a 23663020 cnvkit_0.9.10.orig.tar.gz 6664138655aa08f7349c74c257dcdd5bfc9eaf67f3b0608715a96d2dd42817c5 17748 cnvkit_0.9.10-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/cnvkit"
   ],
   "Files": [
-    "869f0a16fee2cbe9abd9b60e6bd36e4b 2455 cnvkit_0.9.10-1.dsc ac1e8d636fc0fc694d1475a212d0cf98 23663020 cnvkit_0.9.10.orig.tar.gz 2cb3b7baefb56912532b59ac320e0425 17376 cnvkit_0.9.10-1.debian.tar.xz"
+    "064f06ab82814c6b7fc3020b515934a8 2449 cnvkit_0.9.10-2.dsc ac1e8d636fc0fc694d1475a212d0cf98 23663020 cnvkit_0.9.10.orig.tar.gz 5f842d12c34db9964337f7035a88d4c8 17748 cnvkit_0.9.10-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "cnvkit"
   ],
   "Package-List": [
-    "cnvkit deb science optional arch=amd64,arm64,ppc64el"
+    "cnvkit deb science optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
+    "autopkgtest, autopkgtest-pkg-pybuild"
   ],
   "Testsuite-Triggers": [
     "poppler-utils"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/cnvkit.git"
   ],
   "Version": [
-    "0.9.10-1"
+    "0.9.10-2"
   ]
 }
