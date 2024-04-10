@@ -6,16 +6,16 @@
     "libsop-java-java, libsop-java-java-doc, libsop-java-picocli-java, libsop-java-picocli-java-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk, default-jdk-doc, gradle-debian-helper, javahelper, junit5 \u003c!nocheck\u003e, libjsr305-java, libmaven3-core-java, libpicocli-java (\u003e\u003e 4), maven-repo-helper, sqop \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), default-jdk \u003c!nodoc\u003e, default-jdk-doc \u003c!nodoc\u003e, default-jdk-headless, gradle-debian-helper, javahelper, junit5 \u003c!nocheck\u003e, libjsr305-java, libmaven3-core-java, libpicocli-java (\u003e\u003e 4), maven-repo-helper, sqop \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "54c116e6bc4be4f5a10c1bf21702773d4191166c0aac2ac793378c296a5146bc 1812 sop-java_7.0.1-1.dsc 5c11f380a4bac63d8f141a68949d3506120b7baf7de4be7ee51bb3daed32aaa8 139380 sop-java_7.0.1.orig.tar.xz d59ad39a5ad6512980cca2618c2069194fa083c79b1dc04c8d68f3643077f128 29012 sop-java_7.0.1-1.debian.tar.xz"
+    "3fcdd04ffc7c02187174fa157856029d126dad9d20d020ba4215430eb33ce15e 1882 sop-java_7.0.1-2.dsc 5c11f380a4bac63d8f141a68949d3506120b7baf7de4be7ee51bb3daed32aaa8 139380 sop-java_7.0.1.orig.tar.xz 2afc5321c90561b91e6682ec7a3dde6a37509bfc20126bedfa836be44de4a488 29256 sop-java_7.0.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sop-java"
   ],
   "Files": [
-    "71197f1007ea60bbaf53e688dd835b04 1812 sop-java_7.0.1-1.dsc 747ad7e9eb21508e59fe39c4fb1f78dd 139380 sop-java_7.0.1.orig.tar.xz b14dae03c752b281e4cbedd620d8ccf2 29012 sop-java_7.0.1-1.debian.tar.xz"
+    "8e271f0195292d0df03436912584a441 1882 sop-java_7.0.1-2.dsc 747ad7e9eb21508e59fe39c4fb1f78dd 139380 sop-java_7.0.1.orig.tar.xz 47136c4b1badccf7492dc53fbe6335d7 29256 sop-java_7.0.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "sop-java"
   ],
   "Package-List": [
-    "libsop-java-java deb java optional arch=all libsop-java-java-doc deb doc optional arch=all libsop-java-picocli-java deb java optional arch=all libsop-java-picocli-java-doc deb doc optional arch=all"
+    "libsop-java-java deb java optional arch=all libsop-java-java-doc deb doc optional arch=all profile=!nodoc libsop-java-picocli-java deb java optional arch=all libsop-java-picocli-java-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/java-team/sop-java.git"
   ],
   "Version": [
-    "7.0.1-1"
+    "7.0.1-2"
   ]
 }

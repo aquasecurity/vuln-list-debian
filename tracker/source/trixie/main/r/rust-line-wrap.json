@@ -6,16 +6,16 @@
     "librust-line-wrap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-safemem-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.37.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dab1ab7a702b47989b8ba641637948bc5297b015f4a0fac858b6010d6fe28770 1768 rust-line-wrap_0.1.1-1.dsc f30344350a2a51da54c1d53be93fade8a237e545dbcc4bdbe635413f2117cab9 10010 rust-line-wrap_0.1.1.orig.tar.gz 2b326908092ef8c3eea714f792906277c1a54aa22c4c3a36a634f20a0a8b4028 1704 rust-line-wrap_0.1.1-1.debian.tar.xz"
+    "c4a7ccb8ce592747900e7134539fa4b23228a4a719fdbacf74df65a7783c1c75 2163 rust-line-wrap_0.2.0-1.dsc dd1bc4d24ad230d21fb898d1116b1801d7adfc449d42026475862ab48b11e70e 10633 rust-line-wrap_0.2.0.orig.tar.gz 7ad773231234d4e68a43beb0bb2c14c5c752ea6bb818b6b2e43fc522aa7fea60 1984 rust-line-wrap_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-line-wrap"
   ],
   "Files": [
-    "62fc5bbd2a1665aa65b226186892afa8 1768 rust-line-wrap_0.1.1-1.dsc 651dd38020e02806ccadcc41df89c7dc 10010 rust-line-wrap_0.1.1.orig.tar.gz dc85ba05f67d86cea21347108cb775d1 1704 rust-line-wrap_0.1.1-1.debian.tar.xz"
+    "6d0375b98fdff77938421b4d550c5841 2163 rust-line-wrap_0.2.0-1.dsc 18269342d6029e685049fa4c09aaab53 10633 rust-line-wrap_0.2.0.orig.tar.gz ca3e08de659570ff488df63988c3b1f0 1984 rust-line-wrap_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-rand-0.8+default-dev"
   ],
   "Uploaders": [
     "Helen Koike \u003chelen@koikeco.de\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/line-wrap]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.2.0-1"
   ]
 }
