@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-parsel"
+    "python3-parsel, python-parsel-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-cssselect \u003c!nocheck\u003e, python3-jmespath \u003c!nocheck\u003e, python3-lxml \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-runner, python3-setuptools, python3-sybil \u003c!nocheck\u003e, python3-w3lib \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-all, python3-cssselect \u003c!nocheck\u003e, python3-jmespath \u003c!nocheck\u003e, python3-lxml \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-notfound-page \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sybil \u003c!nocheck\u003e, python3-w3lib \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dfbd53097005fade9d0b420cb2d29011b05191053ef113f99db1460346e321a3 2457 python-parsel_1.9.0+dfsg-1.dsc 5a8582e6f56ae1fb1bb7a1012d1e613a6ca9950ddae2a154e9e4c91a118f4df1 43772 python-parsel_1.9.0+dfsg.orig.tar.xz ef1665b6553995d5a68fb82f27157dd666188e14561bbbc02269668e2dd35a0d 4972 python-parsel_1.9.0+dfsg-1.debian.tar.xz"
+    "c37f43f2b512497200677c04e7c82292a2997b46773ba1862670ce29756e08fa 2520 python-parsel_1.9.1+dfsg-1.dsc d0ab58b869075520c1871f7f3959e0ea28e9fa11ac39cc710118784b3ba1474b 43220 python-parsel_1.9.1+dfsg.orig.tar.xz 477e91c4d6d9b9209e8f25d4718f70c5985162da6b77091c47f892726900269c 5032 python-parsel_1.9.1+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-parsel"
   ],
   "Files": [
-    "2fc09f32b97894bae6f8c04aa03739fb 2457 python-parsel_1.9.0+dfsg-1.dsc 17a35877267138d3da76fc125331c7fd 43772 python-parsel_1.9.0+dfsg.orig.tar.xz ac516344c62f06f7ad40f876d911d7f2 4972 python-parsel_1.9.0+dfsg-1.debian.tar.xz"
+    "87772ea5eb216816e21f70db02266ea7 2520 python-parsel_1.9.1+dfsg-1.dsc 3fc31f041bceee4532ec5f822d90b107 43220 python-parsel_1.9.1+dfsg.orig.tar.xz 87f808cb96e304164d78b5a0f203de67 5032 python-parsel_1.9.1+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python-parsel"
   ],
   "Package-List": [
-    "python3-parsel deb python optional arch=all"
+    "python-parsel-doc deb doc optional arch=all python3-parsel deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,10 +42,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-jmespath, python3-psutil, python3-pytest, python3-sybil"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Ignace Mouzannar \u003cmouzannar@gmail.com\u003e, Andrey Rakhmatullin \u003cwrar@debian.org\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/python-parsel.git"
   ],
   "Version": [
-    "1.9.0+dfsg-1"
+    "1.9.1+dfsg-1"
   ]
 }
