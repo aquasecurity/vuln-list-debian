@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64el"
+    "amd64 arm64 ppc64el all"
   ],
   "Binary": [
-    "librccl1, librccl-dev"
+    "librccl1, librccl-dev, librccl1-tests, librccl-doc"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), cmake, hipcc (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), rocm-cmake, librocm-smi-dev, liboam-dev, chrpath \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e"
   ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "3f14445e5fda532ded930cd5bf2c2959bb5d241faf82bf38d7a1d280267df580 2174 rccl_5.4.3-2.dsc a2524f602bd7b3b6afeb8ba9aff660216ee807fa836e46442d068b5ed5f51a4d 983139 rccl_5.4.3.orig.tar.gz 174839d1ce25a22d6e0371d7ec4d0ce786e681b2352a70f4e63ddf3b8dd9d84a 7068 rccl_5.4.3-2.debian.tar.xz"
+    "0ca83820525d51a6f76368142acf33acf7180543a9d56bcab4777f96d4387262 2645 rccl_5.4.3-3.dsc a2524f602bd7b3b6afeb8ba9aff660216ee807fa836e46442d068b5ed5f51a4d 983139 rccl_5.4.3.orig.tar.gz 006802b70be531ac8a514aaae2ee5f242823d2d19bfc22fe120737d18d0b796c 8860 rccl_5.4.3-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rccl"
   ],
   "Files": [
-    "e25141bb08e0255b43dc7d0f97f2c336 2174 rccl_5.4.3-2.dsc b27225e1b03eba441cbaacb6a85ac1e8 983139 rccl_5.4.3.orig.tar.gz 5a448a13329e55f6b56ec62d4ecba985 7068 rccl_5.4.3-2.debian.tar.xz"
+    "71e581091c9957f1f91b87dfb5d886f9 2645 rccl_5.4.3-3.dsc b27225e1b03eba441cbaacb6a85ac1e8 983139 rccl_5.4.3.orig.tar.gz c455d312cab118302e6339ed53e1e34b 8860 rccl_5.4.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rccl"
   ],
   "Package-List": [
-    "librccl-dev deb libdevel optional arch=amd64,arm64,ppc64el librccl1 deb libs optional arch=amd64,arm64,ppc64el"
+    "librccl-dev deb libdevel optional arch=amd64,arm64,ppc64el librccl-doc deb doc optional arch=all profile=!nodoc librccl1 deb libs optional arch=amd64,arm64,ppc64el librccl1-tests deb libdevel optional arch=amd64,arm64,ppc64el profile=!nocheck"
   ],
   "Priority": [
     "optional"
@@ -40,6 +43,12 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "grep"
   ],
   "Uploaders": [
     "Cordell Bloor \u003ccgmb@slerp.xyz\u003e, Christian Kastner \u003cckk@debian.org\u003e,"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rocm-team/rccl.git"
   ],
   "Version": [
-    "5.4.3-2"
+    "5.4.3-3"
   ]
 }
