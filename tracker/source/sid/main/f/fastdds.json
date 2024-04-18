@@ -3,13 +3,13 @@
     "any all"
   ],
   "Binary": [
-    "libfastrtps2.11t64, libfastrtps-dev, libfastrtps-doc, fastdds-tools"
+    "libfastrtps2.14, libfastrtps-dev, libfastrtps-doc, fastdds-tools"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), cmake, doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, libasio-dev, libboost-dev, libfastcdr-dev, libfoonathan-memory-dev, libsqlite3-dev, libssl-dev, libtinyxml2-dev, nlohmann-json3-dev, tao-pegtl-dev, faketime \u003c!nocheck\u003e, libgmock-dev \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e, openssl \u003c!nocheck\u003e, python3 \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), cmake, doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, libasio-dev, libboost-dev, libfastcdr-dev (\u003e= 2.2), libfoonathan-memory-dev, libsqlite3-dev, libssl-dev, libtinyxml2-dev, nlohmann-json3-dev, tao-pegtl-dev, libgmock-dev \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e, python3 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "98ecae14e8b20bbbba55f9dbc272be2d731b34894c36331a70a89cfddab8d0a7 3326 fastdds_2.11.2+ds-6.1.dsc e22dba5c216e37daca4f1a90c1c15ec9f553fd4435023b29d048e8bce6dbb1d4 3073060 fastdds_2.11.2+ds.orig.tar.xz c6c1e21ccb9352b8c49b9526612aba00099dace2f177b94ee3ff41f9950facb7 21564 fastdds_2.11.2+ds-6.1.debian.tar.xz"
+    "639749b05fa9e6ed5248d7169beb6e376b4033cd856e9970a3aa7092cd40aadd 3225 fastdds_2.14.0+ds-2.dsc d06b4efc09088b26dec13ba8ff87501a045bd946a7f366057c43df5cf0c845b7 3214940 fastdds_2.14.0+ds.orig.tar.xz 83159d8abe62b12ae87132346686b0126ee8f2e11745a80e12bd3a42dae59d8c 16860 fastdds_2.14.0+ds-2.debian.tar.xz"
   ],
   "Description": [
     "C++ library for the Real Time Publish Subscribe Protocol This package is part of eProsima FastDDS.  RTPS is the wire interoperability protocol defined for the Data Distribution Service (DDS) standard by the Object Management Group (OMG). . The library is a standalone C++ implementation compliant with the OMG DDS 1.4 and OMG RTPS 2.2 standards. It is a tier one implementation for ROS 2. Compared to other free DDS implementations, it is very feature-complete and provides two API layers: one for high-level Publish-Subscriber access that focuses on usability, and a lower-level Writer-Reader API that allows more sophisticated fine tuning of the RTPS protocol."
@@ -18,7 +18,7 @@
     "pool/main/f/fastdds"
   ],
   "Files": [
-    "d44bfb44b5d676d61ba30db1070c9f2f 3326 fastdds_2.11.2+ds-6.1.dsc 4e0d04d463678226ceb8b9285d262afb 3073060 fastdds_2.11.2+ds.orig.tar.xz 27049aea8b0f1008baec5a1481be5e68 21564 fastdds_2.11.2+ds-6.1.debian.tar.xz"
+    "83928d2ad2b0d9603308eadb0d902ace 3225 fastdds_2.14.0+ds-2.dsc a030ba4d9edcfb7760c60b87d38cb38d 3214940 fastdds_2.14.0+ds.orig.tar.xz 0091d5abcb073ad281fcfaf52e111fd5 16860 fastdds_2.14.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "fastdds"
   ],
   "Package-List": [
-    "fastdds-tools deb net optional arch=any libfastrtps-dev deb libdevel optional arch=any libfastrtps-doc deb doc optional arch=all libfastrtps2.11t64 deb libs optional arch=any"
+    "fastdds-tools deb net optional arch=any libfastrtps-dev deb libdevel optional arch=any libfastrtps-doc deb doc optional arch=all libfastrtps2.14 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, faketime, g++, gcc, libgtest-dev, make, nlohmann-json3-dev, openssl, python3, tao-pegtl-dev"
+    "cmake, g++, gcc, libgmock-dev, libgtest-dev, nlohmann-json3-dev, python3"
   ],
   "Uploaders": [
     "Timo Röhling \u003croehling@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/robotics-team/fastdds.git"
   ],
   "Version": [
-    "2.11.2+ds-6.1"
+    "2.14.0+ds-2"
   ]
 }
