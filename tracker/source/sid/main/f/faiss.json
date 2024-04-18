@@ -6,16 +6,22 @@
     "libfaiss-dev, python3-faiss"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-python, dh-sequence-python3, dh-sequence-numpy3, libblas-dev, libgtest-dev, liblapack-dev, libpython3-dev, python3-dev:any, python3-numpy, python3-setuptools, swig"
+    "cmake, debhelper-compat (= 13), dh-python, dh-sequence-python3, dh-sequence-numpy3, libblas-dev, libgtest-dev, liblapack-dev, libpython3-all-dev, python3-all-dev:any, python3-numpy, python3-setuptools, swig"
   ],
   "Checksums-Sha256": [
-    "b0abd0afe0279598c249e2f8b09d525db0422af113e5eec54565d8b286ccaec2 2064 faiss_1.7.4-3.dsc d9a7b31bf7fd6eb32c10b7ea7ff918160eed5be04fe63bb7b4b4b5f2bbde01ad 909408 faiss_1.7.4.orig.tar.gz 2a6f98dfd81581537acf5339e328fc77226a5e871c803822170977cd6d21dc34 6740 faiss_1.7.4-3.debian.tar.xz"
+    "1e0ffcf9b16feec1c2c81c253325d650ad2ce50463285f3cbf717edf25a6182a 2887 faiss_1.8.0-1.dsc 56ece0a419d62eaa11e39022fa27c8ed6d5a9b9eb7416cc5a0fdbeab07ec2f0c 1015506 faiss_1.8.0.orig.tar.gz 36ede1f93e8361fa403d31a2e2be0d6373a6bf8e8d749e45d9c44bd9c221d99b 6796 faiss_1.8.0-1.debian.tar.xz"
+  ],
+  "Description": [
+    "efficient similarity search and clustering of dense vectors Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. Some of the most useful algorithms are implemented on the GPU. It is developed by Facebook AI Research."
+  ],
+  "Dgit": [
+    "0c01501e37145e9703b7083c83db66705e0202ca debian archive/debian/1.8.0-1 https://git.dgit.debian.org/faiss"
   ],
   "Directory": [
     "pool/main/f/faiss"
   ],
   "Files": [
-    "f6933193d8ccf92fe3351d567271d0a7 2064 faiss_1.7.4-3.dsc e1f96b228ec6a0819bc65efb9d196ec6 909408 faiss_1.7.4.orig.tar.gz 9a6903ad1cde412dd7030793e63a6beb 6740 faiss_1.7.4-3.debian.tar.xz"
+    "f7619d23c236d2064f938067b65c0723 2887 faiss_1.8.0-1.dsc fc6de8d8fdffca8ed3ff1944c9ec634d 1015506 faiss_1.8.0.orig.tar.gz 507299b7832791d9e8c370931f16cca6 6796 faiss_1.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "c++-compiler, cmake, g++, libgtest-dev"
+    "c++-compiler, cmake, g++, libgtest-dev, python3-all"
   ],
   "Uploaders": [
     "Mo Zhou \u003clumin@debian.org\u003e"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/deeplearning-team/faiss.git"
   ],
   "Version": [
-    "1.7.4-3"
+    "1.8.0-1"
   ]
 }
