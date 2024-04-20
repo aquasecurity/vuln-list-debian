@@ -3,25 +3,25 @@
     "linux-any all"
   ],
   "Binary": [
-    "u-boot, u-boot-amlogic, u-boot-asahi, u-boot-imx, u-boot-qemu, u-boot-qcom, u-boot-tegra, u-boot-omap, u-boot-sunxi, u-boot-exynos, u-boot-mvebu, u-boot-rockchip, u-boot-rpi, u-boot-stm32, u-boot-sifive, u-boot-starfive, u-boot-tools"
+    "u-boot, u-boot-amlogic-binaries, u-boot-asahi, u-boot-imx, u-boot-qemu, u-boot-qcom, u-boot-tegra, u-boot-omap, u-boot-sunxi, u-boot-exynos, u-boot-exynos-binaries, u-boot-mvebu, u-boot-rockchip, u-boot-rpi, u-boot-stm32, u-boot-sifive, u-boot-sitara-binaries, u-boot-starfive, u-boot-tools"
   ],
   "Build-Depends": [
     "bc, bison, debhelper-compat (= 13), flex, libpython3-dev:native [linux-any], libssl-dev, python3:any [linux-any], python3-pyelftools [linux-any], python3-setuptools [linux-any], swig [linux-any]"
   ],
   "Build-Depends-Arch": [
-    "arm-trusted-firmware (\u003e= 2.9~) [arm64], crust-firmware (\u003e= 0.3-2~) [arm64], device-tree-compiler, libfdt-dev:native [arm64], libgnutls28-dev, libgnutls28-dev:native [arm64], libncurses-dev, libncurses-dev:native, libssl-dev:native, lzop [armhf], opensbi (\u003e= 1.3) [riscv64], uuid-dev, uuid-dev:native [arm64]"
+    "arm-trusted-firmware (\u003e= 2.9~) [arm64], crust-firmware (\u003e= 0.3-2~) [arm64], device-tree-compiler, gcc-arm-linux-gnueabihf [arm64], libfdt-dev:native [arm64], libgnutls28-dev, libgnutls28-dev:native [arm64], libncurses-dev, libncurses-dev:native, libssl-dev:native, lzop [armhf], opensbi (\u003e= 1.3) [riscv64], python3-jsonschema [arm64], python3-yaml [arm64], uuid-dev, uuid-dev:native [arm64]"
   ],
   "Build-Depends-Indep": [
     "gcc-i686-linux-gnu [!i386], gcc-arm-linux-gnueabihf [!armhf], gcc-aarch64-linux-gnu [!arm64], gcc-riscv64-linux-gnu [!riscv64], gcc-x86-64-linux-gnu [!amd64], gcc-powerpc-linux-gnu [!powerpc], gcc-mips64el-linux-gnuabi64 [!mips64el], gcc-mipsel-linux-gnu [!mipsel]"
   ],
   "Checksums-Sha256": [
-    "3a1a5caf46a7fc203af4247283a4574a5828160f8b852a3bde22a902bd1e495b 3159 u-boot_2024.01+dfsg-3.dsc cd9f4c204fdd1157de8c812ded9b12b819d044f7b5ed340565b46653ae05a17d 16768668 u-boot_2024.01+dfsg.orig.tar.xz d63a62d5e9854dc145927a381af9785bd2f9012e8ae966f158787c511a49b4f5 104836 u-boot_2024.01+dfsg-3.debian.tar.xz"
+    "82c29dfcd64d76c42be6734c5099748197026aee3c3151258a4a24dd92bfc145 3440 u-boot_2024.01+dfsg-5.dsc cd9f4c204fdd1157de8c812ded9b12b819d044f7b5ed340565b46653ae05a17d 16768668 u-boot_2024.01+dfsg.orig.tar.xz 9c60e01f3f067cb4cb6148e29023281a6143a8c3c7a5c1065dde3e681db04755 105744 u-boot_2024.01+dfsg-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/u-boot"
   ],
   "Files": [
-    "25796a409edca2dc6fcdbc64eaa698ea 3159 u-boot_2024.01+dfsg-3.dsc 42a989d18bc8d9f5cbcf9f96bc1b7c05 16768668 u-boot_2024.01+dfsg.orig.tar.xz 4b36bfd231b90d39505a83a03273b20e 104836 u-boot_2024.01+dfsg-3.debian.tar.xz"
+    "399fda1fbd95a393c6bffc6e911c8643 3440 u-boot_2024.01+dfsg-5.dsc 42a989d18bc8d9f5cbcf9f96bc1b7c05 16768668 u-boot_2024.01+dfsg.orig.tar.xz 06c00a45025956f9a534f3dff5583297 105744 u-boot_2024.01+dfsg-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "u-boot"
   ],
   "Package-List": [
-    "u-boot deb admin optional arch=armel,sh4 u-boot-amlogic deb admin optional arch=arm64 u-boot-asahi deb admin optional arch=arm64 u-boot-exynos deb admin optional arch=armhf u-boot-imx deb admin optional arch=armhf u-boot-mvebu deb admin optional arch=arm64 u-boot-omap deb admin optional arch=armhf u-boot-qcom deb admin optional arch=arm64 u-boot-qemu deb admin optional arch=all u-boot-rockchip deb admin optional arch=armhf,arm64 u-boot-rpi deb admin optional arch=armel,armhf,arm64 u-boot-sifive deb admin optional arch=riscv64 u-boot-starfive deb admin optional arch=riscv64 u-boot-stm32 deb admin optional arch=armhf u-boot-sunxi deb admin optional arch=armhf,arm64 u-boot-tegra deb admin optional arch=armhf,arm64 u-boot-tools deb admin optional arch=linux-any profile=!pkg.uboot.notools"
+    "u-boot deb admin optional arch=armel,sh4 u-boot-amlogic-binaries deb contrib/admin optional arch=arm64 u-boot-asahi deb admin optional arch=arm64 u-boot-exynos deb admin optional arch=armhf u-boot-exynos-binaries deb contrib/admin optional arch=armhf u-boot-imx deb admin optional arch=armhf u-boot-mvebu deb admin optional arch=arm64 u-boot-omap deb admin optional arch=armhf u-boot-qcom deb admin optional arch=arm64 u-boot-qemu deb admin optional arch=all u-boot-rockchip deb admin optional arch=armhf,arm64 u-boot-rpi deb admin optional arch=armel,armhf,arm64 u-boot-sifive deb admin optional arch=riscv64 u-boot-sitara-binaries deb contrib/admin optional arch=arm64 u-boot-starfive deb admin optional arch=riscv64 u-boot-stm32 deb admin optional arch=armhf u-boot-sunxi deb admin optional arch=armhf,arm64 u-boot-tegra deb admin optional arch=armhf,arm64 u-boot-tools deb admin optional arch=linux-any profile=!pkg.uboot.notools"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/u-boot.git"
   ],
   "Version": [
-    "2024.01+dfsg-3"
+    "2024.01+dfsg-5"
   ]
 }
