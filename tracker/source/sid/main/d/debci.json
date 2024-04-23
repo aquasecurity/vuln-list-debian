@@ -6,16 +6,16 @@
     "debci, debci-worker, debci-collector"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), debootstrap, amqp-tools, autopkgtest (\u003e= 5.29~) \u003c!pkg.debci.runtime\u003e, curl, dctrl-tools, debian-archive-keyring, distro-info, fonts-font-awesome (\u003e= 4.0.3~), inotify-tools, jq, libjs-bootstrap, libjs-jquery, libjs-jquery-flot, moreutils, patchutils, postgresql \u003c!pkg.debci.runtime\u003e, puma \u003c!pkg.debci.runtime\u003e, rabbitmq-server \u003c!pkg.debci.runtime\u003e, rerun \u003c!pkg.debci.runtime\u003e, retry, rsync, ruby, ruby-activerecord (\u003e= 2:5.2), ruby-bunny, ruby-database-cleaner \u003c!pkg.debci.runtime\u003e, ruby-erubi, ruby-foreman \u003c!pkg.debci.runtime\u003e, ruby-localhost \u003c!pkg.debci.runtime\u003e, ruby-magic \u003c!pkg.debci.runtime\u003e, ruby-omniauth-gitlab, ruby-pg, ruby-rack-test \u003c!pkg.debci.runtime\u003e, ruby-rspec (\u003e= 2.14) \u003c!pkg.debci.runtime\u003e, ruby-sinatra, ruby-sinatra-contrib, ruby-kaminari-activerecord, ruby-sqlite3, ruby-thor, shellcheck \u003c!pkg.debci.runtime\u003e, shunit2 \u003c!pkg.debci.runtime\u003e, yard \u003c!pkg.debci.runtime\u003e"
+    "debhelper-compat (= 12), debootstrap, amqp-tools, autopkgtest (\u003e= 5.29~) \u003c!pkg.debci.runtime\u003e, curl, dctrl-tools, debian-archive-keyring, distro-info, fonts-font-awesome (\u003e= 4.0.3~), inotify-tools, jq, libjs-bootstrap, libjs-jquery, libjs-jquery-flot, moreutils, patchutils, postgresql \u003c!pkg.debci.runtime\u003e, puma \u003c!pkg.debci.runtime\u003e, rabbitmq-server \u003c!pkg.debci.runtime\u003e, rerun \u003c!pkg.debci.runtime\u003e, retry, rsync, ruby, ruby-activerecord (\u003e= 2:5.2), ruby-bullet \u003c!pkg.debci.runtime\u003e, ruby-bunny, ruby-database-cleaner \u003c!pkg.debci.runtime\u003e, ruby-erubi, ruby-foreman \u003c!pkg.debci.runtime\u003e, ruby-localhost \u003c!pkg.debci.runtime\u003e, ruby-magic \u003c!pkg.debci.runtime\u003e, ruby-omniauth-gitlab, ruby-pg, ruby-rack-test \u003c!pkg.debci.runtime\u003e, ruby-rspec (\u003e= 2.14) \u003c!pkg.debci.runtime\u003e, ruby-sinatra, ruby-sinatra-contrib, ruby-kaminari-activerecord, ruby-sqlite3, ruby-thor, shellcheck \u003c!pkg.debci.runtime\u003e, shunit2 \u003c!pkg.debci.runtime\u003e, yard \u003c!pkg.debci.runtime\u003e"
   ],
   "Checksums-Sha256": [
-    "abfb27ea0effb0fe8232224a0c2935a9681487902e06dcc9c58ecb1804a2af55 2901 debci_3.9.dsc 717558caef1e3fd755af61f56466c5981888e2692895a37afe90252b8e80bd1a 158928 debci_3.9.tar.xz"
+    "148f679bdb4195543604bb3f837d06c4dd3ce72e45c1c83749f85b116eb4839f 2952 debci_3.10.dsc fab7f121f77af868484b1c412d7d3db20320d517393769d4fcb87c09a9c7c5e1 161648 debci_3.10.tar.xz"
   ],
   "Directory": [
     "pool/main/d/debci"
   ],
   "Files": [
-    "79f590b8a16a7b1bf9c610be85422018 2901 debci_3.9.dsc d656df2ad810812443d9546a9b0a7fc0 158928 debci_3.9.tar.xz"
+    "7124eed745770bd740a43902cbd4781c 2952 debci_3.10.dsc 5aca41f9cf64b41e814661aa229cad15 161648 debci_3.10.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "autopkgtest, dnsmasq-base, ebtables, iptables, libnss-myhostname, libvirt-clients, libvirt-daemon-system, lxc, lxc-templates, netcat-openbsd, rabbitmq-server, redir, rsync, ruby-database-cleaner, ruby-magic, ruby-rack-test, ruby-rspec, shunit2"
+    "autopkgtest, dnsmasq-base, ebtables, iptables, libnss-myhostname, libvirt-clients, libvirt-daemon-system, lxc, lxc-templates, netcat-openbsd, rabbitmq-server, redir, rsync, ruby-bullet, ruby-database-cleaner, ruby-magic, ruby-rack-test, ruby-rspec, shunit2"
   ],
   "Uploaders": [
     "Antonio Terceiro \u003cterceiro@debian.org\u003e, Paul Gevers \u003celbrus@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/ci-team/debci.git"
   ],
   "Version": [
-    "3.9"
+    "3.10"
   ]
 }
