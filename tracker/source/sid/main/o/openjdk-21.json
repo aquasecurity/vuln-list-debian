@@ -6,19 +6,19 @@
     "openjdk-21-jdk-headless, openjdk-21-jre-headless, openjdk-21-jdk, openjdk-21-jre, openjdk-21-demo, openjdk-21-source, openjdk-21-doc, openjdk-21-dbg, openjdk-21-testsupport, openjdk-21-jre-zero"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), file, autoconf, automake, autotools-dev, ant, ant-optional, g++-13 \u003c!cross\u003e, openjdk-21-jdk-headless:native | openjdk-20-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libnss3-dev (\u003e= 2:3.17.1), openjdk-21-jdk-headless \u003ccross\u003e"
+    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), jtreg7 (\u003e= 7.3.1+1~) \u003c!nocheck\u003e, libtestng7-java \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xfonts-base \u003c!nocheck\u003e, libgl1-mesa-dri [!x32] \u003c!nocheck\u003e, xfwm4 \u003c!nocheck\u003e, x11-xkb-utils \u003c!nocheck\u003e, dbus-x11 \u003c!nocheck\u003e, libasmtools-java \u003c!nocheck\u003e, autoconf, automake, autotools-dev, ant, ant-optional, g++-13 \u003c!cross\u003e, openjdk-21-jdk-headless:native | openjdk-20-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libnss3-dev (\u003e= 2:3.17.1), openjdk-21-jdk-headless \u003ccross\u003e"
   ],
   "Build-Depends-Indep": [
     "graphviz, pandoc"
   ],
   "Checksums-Sha256": [
-    "6e70af57b54fad5bf05218a3433ec69422f33e85acf7546904d863ad82a0a651 5017 openjdk-21_21.0.3+9-1.dsc 65165bc0ee3e518916f7374f71c4bce6071090f5c5bcd665fa5aea23cd73131d 616784 openjdk-21_21.0.3+9.orig-googletest.tar.xz 2145ba14d682bb8e8a60c91be156d3e7562ca99e322f8e99203ce166ae1e03f2 66269508 openjdk-21_21.0.3+9.orig.tar.xz 02543514de92d874aa17109f7c8abc209b80ce960c75eca6485025848c460d12 210656 openjdk-21_21.0.3+9-1.debian.tar.xz"
+    "3540ef53c83eb32afc8bb9617f061d299052a782501d725e791f4a9178156914 5260 openjdk-21_21.0.3+9-2.dsc 65165bc0ee3e518916f7374f71c4bce6071090f5c5bcd665fa5aea23cd73131d 616784 openjdk-21_21.0.3+9.orig-googletest.tar.xz 2145ba14d682bb8e8a60c91be156d3e7562ca99e322f8e99203ce166ae1e03f2 66269508 openjdk-21_21.0.3+9.orig.tar.xz da2ce454caf929852dbd72b4e6c7566f8800bb8bedb9b94e770c22cb5d2c7da4 212300 openjdk-21_21.0.3+9-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openjdk-21"
   ],
   "Files": [
-    "91e4da82259981d00f70e929c982220f 5017 openjdk-21_21.0.3+9-1.dsc b685050366e61b66f7693c8a883c182b 616784 openjdk-21_21.0.3+9.orig-googletest.tar.xz a411bdf35cb71ff9273b4eb78479c89d 66269508 openjdk-21_21.0.3+9.orig.tar.xz 9c7e57d3f73ea2ffac6e1b58e7309f36 210656 openjdk-21_21.0.3+9-1.debian.tar.xz"
+    "1756d004ae14b8fa6e403ad41f1d0b11 5260 openjdk-21_21.0.3+9-2.dsc b685050366e61b66f7693c8a883c182b 616784 openjdk-21_21.0.3+9.orig-googletest.tar.xz a411bdf35cb71ff9273b4eb78479c89d 66269508 openjdk-21_21.0.3+9.orig.tar.xz f28f61ba31d4e3316c3a8ee811a86264 212300 openjdk-21_21.0.3+9-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/openjdk-team/openjdk.git -b openjdk-21"
   ],
   "Version": [
-    "21.0.3+9-1"
+    "21.0.3+9-2"
   ]
 }
