@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "curl, libcurl4, libcurl3-gnutls, libcurl4-openssl-dev, libcurl4-gnutls-dev, libcurl4-doc"
+    "curl, libcurl4t64, libcurl3t64-gnutls, libcurl4-openssl-dev, libcurl4-gnutls-dev, libcurl4-doc"
   ],
   "Build-Conflicts": [
     "autoconf2.13, automake1.4"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), autoconf, automake, ca-certificates, dh-exec, groff-base, libbrotli-dev, libgnutls28-dev, libidn2-dev, libkrb5-dev, libldap2-dev, libnghttp2-dev, libpsl-dev, librtmp-dev, libssh-dev, libssh2-1-dev, libssl-dev, libtool, libzstd-dev, locales-all \u003c!nocheck\u003e, openssh-server \u003c!nocheck\u003e, python3:native \u003c!nocheck\u003e, python3-impacket \u003c!nocheck\u003e, gnutls-bin [amd64 arm64 armel armhf i386 mips64el mipsel s390x powerpc ppc64 riscv64] \u003c!nocheck\u003e, quilt, stunnel4 \u003c!nocheck\u003e, zlib1g-dev"
+    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), autoconf, automake, ca-certificates, dh-exec, groff-base, libbrotli-dev, libgnutls28-dev, libidn2-dev, libkrb5-dev, libldap2-dev [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!pkg.curl.noldap\u003e, libnghttp2-dev, libpsl-dev, librtmp-dev, libssh-dev, libssh2-1-dev, libssl-dev, libtool, libzstd-dev, locales-all [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!nocheck\u003e, openssh-server [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!nocheck\u003e, python3:native [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!nocheck\u003e, python3-impacket [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!nocheck\u003e, gnutls-bin [!armel !armhf !hppa !m68k !powerpc !sh4 !ppc64el] \u003c!nocheck\u003e, quilt, stunnel4 [!armel !armhf !hppa !m68k !powerpc !sh4] \u003c!nocheck\u003e, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "64ac1de3cabae24dcc1d403977cae690b902db3585b540ff0bd9ac9a83e2d052 3117 curl_8.5.0-2.dsc 05fc17ff25b793a437a0906e0484b82172a9f4de02be5ed447e0cab8c3475add 4372979 curl_8.5.0.orig.tar.gz e5c4311a86b03daea93290de17cf0e3b46e468a1d99bd5b9934d91af5409d378 488 curl_8.5.0.orig.tar.gz.asc 5e398fc2d420bfc3fedc4d3cdedfad8bc4eadf5445bf59905af0e6f2602fcb66 47912 curl_8.5.0-2.debian.tar.xz"
+    "e82aef61cc65e71af664eeeae48923ffad5897ec24effc9d6e431f4a6beac1b7 3398 curl_8.7.1-3.dsc f91249c87f68ea00cf27c44fdfa5a78423e41e71b7d408e5901a9896d905c495 4462311 curl_8.7.1.orig.tar.gz f2abc438269f3fe37749941d91069f4972d339cae9b289e536257d90098dcd1f 488 curl_8.7.1.orig.tar.gz.asc a320ce9ce6758b709f2c3aa0b3b9237f8c84761d1eddcfabea4719bf092b3cec 52812 curl_8.7.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/curl"
   ],
   "Files": [
-    "18e5782d6bcfbac3a3f8f0d7f2f2e54d 3117 curl_8.5.0-2.dsc 0bc69288b20ae165ff4b7d6d7bbe70d2 4372979 curl_8.5.0.orig.tar.gz 436599fb65f4bd57b741a7be077314eb 488 curl_8.5.0.orig.tar.gz.asc a079022360f6a18b766f46124766d044 47912 curl_8.5.0-2.debian.tar.xz"
+    "729da0eca18e0277b1257dad8df0e9ea 3398 curl_8.7.1-3.dsc 92f7a11836678b725e2cb59fef10c273 4462311 curl_8.7.1.orig.tar.gz 32355348176c447a532758a472adae97 488 curl_8.7.1.orig.tar.gz.asc 7d258284d619247f9ed5d4327c3bb44e 52812 curl_8.7.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "curl"
   ],
   "Package-List": [
-    "curl deb web optional arch=any libcurl3-gnutls deb libs optional arch=any libcurl4 deb libs optional arch=any libcurl4-doc deb doc optional arch=all libcurl4-gnutls-dev deb libdevel optional arch=any libcurl4-openssl-dev deb libdevel optional arch=any"
+    "curl deb web optional arch=any libcurl3t64-gnutls deb libs optional arch=any libcurl4-doc deb doc optional arch=all libcurl4-gnutls-dev deb libdevel optional arch=any libcurl4-openssl-dev deb libdevel optional arch=any libcurl4t64 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/curl.git"
   ],
   "Version": [
-    "8.5.0-2"
+    "8.7.1-3"
   ]
 }
