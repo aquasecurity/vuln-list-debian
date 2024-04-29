@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any all"
+    "any"
   ],
   "Binary": [
-    "libpapi7.1, libsde1, libpapi-dev, papi-tools, papi-examples"
+    "libpapi7.1t64, libsde1t64, libpapi-dev, papi-tools, papi-examples"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, gfortran, libpfm4-dev (\u003e= 4.13.0+git16) [linux-any], librocm-smi-dev [!hppa !x32 !hurd-any !kfreebsd-any]"
+    "debhelper-compat (= 13), dh-sequence-python3, gfortran, libpfm4-dev (\u003e= 4.13.0+git16) [linux-any], librocm-smi-dev [!hppa !x32 !hurd-any !kfreebsd-any], mpi-default-dev, dpkg-dev (\u003e= 1.22.5)"
   ],
   "Checksums-Sha256": [
-    "442607ed7f197a00569df325169aa4daf821aa50a1c9e50ba0da4a90f93811a0 2257 papi_7.1.0-2.dsc 092c4be0295d7874a17f687ed3bcc71c5cad6b5bb269a6486b3c1078d12a1441 2650676 papi_7.1.0.orig.tar.xz d3f682723ce5949bc88b32990c361c0012b6acf556277390e0ea2ad65b65fd62 21636 papi_7.1.0-2.debian.tar.xz"
+    "00f9d288c79292a1338d4c0b31634cecee11616265bfa3dabd4af58d8c3988e1 2397 papi_7.1.0-5.dsc 092c4be0295d7874a17f687ed3bcc71c5cad6b5bb269a6486b3c1078d12a1441 2650676 papi_7.1.0.orig.tar.xz d4f31ae6dc772cb94b3e89d6a499e0470f390915d24466b2bc6db58ceedce114 24672 papi_7.1.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/papi"
   ],
   "Files": [
-    "a6607d4bf6d88953dcfb71cc276d09d0 2257 papi_7.1.0-2.dsc ea6a0dad60c04225ed50cc4dc5047744 2650676 papi_7.1.0.orig.tar.xz 6f652161a7cac28413a95b5adc877f1a 21636 papi_7.1.0-2.debian.tar.xz"
+    "669f95e79c94f0ee63a7a422d7688dcd 2397 papi_7.1.0-5.dsc ea6a0dad60c04225ed50cc4dc5047744 2650676 papi_7.1.0.orig.tar.xz 7d7cd9a4133f0d5d01ec9a09bb3f1924 24672 papi_7.1.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "papi"
   ],
   "Package-List": [
-    "libpapi-dev deb libdevel optional arch=any libpapi7.1 deb libs optional arch=any libsde1 deb libs optional arch=any papi-examples deb devel optional arch=all papi-tools deb devel optional arch=any"
+    "libpapi-dev deb libdevel optional arch=any libpapi7.1t64 deb libs optional arch=any libsde1t64 deb libs optional arch=any papi-examples deb devel optional arch=any papi-tools deb devel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "g++, gfortran, libpfm4-dev, make, mpi-default-dev"
   ],
   "Uploaders": [
     "Vincent Danjean \u003cvdanjean@debian.org\u003e, Andreas Beckmann \u003canbe@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/hpc-team/papi.git"
   ],
   "Version": [
-    "7.1.0-2"
+    "7.1.0-5"
   ]
 }
