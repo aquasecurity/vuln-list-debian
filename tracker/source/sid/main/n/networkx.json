@@ -6,16 +6,16 @@
     "python3-networkx"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, latexmk, python3-all, python3-decorator (\u003e= 4.3.0), python3-gdal, python3-ipykernel, python3-matplotlib (\u003e= 3.0.2), python3-nbconvert, python3-nbformat, python3-numpy, python3-pydot, python3-pygraphviz, python3-pytest, python3-scipy, python3-setuptools, python3-traitlets, texlive-binaries, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra, texlive-latex-recommended, texlive-plain-generic, zip"
+    "debhelper-compat (= 13), dh-python, latexmk, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-contextily \u003c!nodoc\u003e, python3-decorator (\u003e= 4.3.0), python3-gdal, python3-geopandas \u003c!nodoc\u003e, python3-igraph \u003c!nodoc\u003e, python3-ipykernel, python3-libpysal (\u003e= 4.10) \u003c!nodoc\u003e, python3-matplotlib (\u003e= 3.0.2), python3-momepy \u003c!nodoc\u003e, python3-nb2plots \u003c!nodoc\u003e, python3-nbconvert, python3-nbformat, python3-numpy \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-osmnx \u003c!nodoc\u003e, python3-pandas \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pydot (\u003e= 2.0), python3-pygraphviz (\u003e= 1.12), python3-pytest, python3-scipy, python3-seaborn \u003c!nodoc\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-gallery \u003c!nodoc\u003e, python3-traitlets, texlive-binaries, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra, texlive-latex-recommended, texlive-plain-generic, zip"
   ],
   "Checksums-Sha256": [
-    "5b5c852889fdd21682a5b15aadcb57a7472fd7f803093e3e35692d3e8272d9f4 2312 networkx_2.8.8-2.dsc 8f2451ea27f6ae988e284544e260f12ad4c67ec6582a5e0b3b19a5a227943859 1549072 networkx_2.8.8.orig.tar.xz e0876a788f986f918dcaddb91958b071b008fb72355ce508ec0a1a24996a8ff0 14272 networkx_2.8.8-2.debian.tar.xz"
+    "b9cd928c8bd80ef55ff9ebc02e46246780ee17ec1fe4534a314f8216adfd4c93 2869 networkx_3.2.1-2.dsc ba30504c7d348595dfc99bdf199bbac2db8416faa39a549478bcb77897ebff18 1635536 networkx_3.2.1.orig.tar.xz 00196e24b8ffdf2eba08aca8660fe448550e87de749e0875d6d44ae06cb50380 15652 networkx_3.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/networkx"
   ],
   "Files": [
-    "2ad7e2388907a7aa1d1c3a12ef7cb965 2312 networkx_2.8.8-2.dsc 8fb55d59aea03db12d9106fadeb7bcb3 1549072 networkx_2.8.8.orig.tar.xz 7b2511ac56adc4450a986135cb18ca85 14272 networkx_2.8.8-2.debian.tar.xz"
+    "9e7d9567834694d86f8f1b160f1d1fdd 2869 networkx_3.2.1-2.dsc 1a1661c7cc4c08a97c6af67d39126161 1635536 networkx_3.2.1.orig.tar.xz a5459f21fa7d7a2e9a426b4ae4507450 15652 networkx_3.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://networkx.github.io/"
   ],
   "Maintainer": [
-    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e,"
+    "Debian OpenStack \u003cteam+openstack@tracker.debian.org\u003e"
   ],
   "Package": [
     "networkx"
@@ -41,13 +41,22 @@
   "Standards-Version": [
     "4.6.2.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
+  "Uploaders": [
+    "Thomas Goirand \u003czigo@debian.org\u003e,"
+  ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/python-team/packages/networkx"
+    "https://salsa.debian.org/openstack-team/third-party/networkx"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/python-team/packages/networkx.git"
+    "https://salsa.debian.org/openstack-team/third-party/networkx.git"
   ],
   "Version": [
-    "2.8.8-2"
+    "3.2.1-2"
   ]
 }
