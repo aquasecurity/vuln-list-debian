@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64el"
+    "amd64 arm64 riscv64 ppc64el"
   ],
   "Binary": [
     "ucx-utils, libucx-dev, libucx0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libnuma-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64], librdmacm-dev, libfuse3-dev, doxygen, texlive-latex-base"
+    "debhelper-compat (= 13), libibverbs-dev (\u003e= 1.1.7) [amd64 arm64 riscv64 ppc64el s390x], libnuma-dev [amd64 arm64 riscv64 ppc64 s390x], librdmacm-dev, libibmad-dev, libibumad-dev, libfuse3-dev, libamdhip64-dev [!riscv64], doxygen, texlive-latex-base, lcov"
   ],
   "Checksums-Sha256": [
-    "0c8dcb645c55ea0558217e28263936ceee0e85a08cde63d02e384df773901e0b 2264 ucx_1.15.0-1.dsc ddeb368f847aa9fd6ce3fd75caaef61fac93655c3a61fa923ed2277d7a0687fb 1919536 ucx_1.15.0.orig.tar.xz 53c34e679b97f550f88cba97d102c35031e90bf1bac1e8058cb586f1d903b56e 6460 ucx_1.15.0-1.debian.tar.xz"
+    "5b184cbc1142a0df2f322eca5dbdee57e6d64f931472f17bb19f8ee46fd93646 2360 ucx_1.16.0+ds-5.dsc 7db10747215d1224addddc82b51d084d47413e109a12fefd21262880bd91e91c 2189056 ucx_1.16.0+ds.orig.tar.xz 52f61abf5f5304904344d5029be56096fa11d152f173c4b5907025d9149f8e74 7660 ucx_1.16.0+ds-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/ucx"
   ],
   "Files": [
-    "52fb0624e7d5a42f70248eeeb0a037d2 2264 ucx_1.15.0-1.dsc eb56818d002f9c1ba54fe0c4aa99c688 1919536 ucx_1.15.0.orig.tar.xz 5b8b66f4a1191867e0298069f85ab771 6460 ucx_1.15.0-1.debian.tar.xz"
+    "14aed23b85fcd896430f5d8f39cc493f 2360 ucx_1.16.0+ds-5.dsc 817011bcc9023640d8707658238cae0c 2189056 ucx_1.16.0+ds.orig.tar.xz 5e1b6428311924f37520b1e02b3c34c3 7660 ucx_1.16.0+ds-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ucx"
   ],
   "Package-List": [
-    "libucx-dev deb libdevel optional arch=amd64,arm64,ppc64el libucx0 deb libs optional arch=amd64,arm64,ppc64el ucx-utils deb science optional arch=amd64,arm64,ppc64el"
+    "libucx-dev deb libdevel optional arch=amd64,arm64,riscv64,ppc64el libucx0 deb libs optional arch=amd64,arm64,riscv64,ppc64el ucx-utils deb science optional arch=amd64,arm64,riscv64,ppc64el"
   ],
   "Priority": [
     "extra"
@@ -45,12 +45,12 @@
     "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org:/science-team/ucx.git"
+    "https://salsa.debian.org/science-team/ucx.git"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org:/science-team/ucx.git -b debian/latest"
+    "https://salsa.debian.org/science-team/ucx.git -b debian/latest"
   ],
   "Version": [
-    "1.15.0-1"
+    "1.16.0+ds-5"
   ]
 }
