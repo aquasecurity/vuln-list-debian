@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any-amd64 any-i386 arm64 armel armhf loong64 mips64el ppc64el s390x ia64 ppc64 riscv64 sh4 sparc64 all"
+    "any all"
   ],
   "Binary": [
     "libsbml5-dev, libsbml5t64, python3-sbml5, libsbml5-java, libsbml5-perl, libsbml5-octave, libsbml5-cil, libsbml5-examples, libsbml5-doc, libsbml5-cil-doc, libsbml5-perl-doc, python3-sbml5-doc"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), dh-sequence-python3, dh-sequence-cli [!mips64el !riscv64], cmake, dh-exec, doxygen \u003c!nodoc\u003e, swig, libxml2-dev, python3-dev, perl, libperl-dev, default-jdk-headless, default-jdk-doc \u003c!nodoc\u003e, dh-octave, r-base-dev, r-base-core, graphviz, zlib1g-dev, libbz2-dev, libnewlib-dev, check, texlive-latex-base \u003c!nodoc\u003e, rdfind, texlive-latex-extra \u003c!nodoc\u003e"
+    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), dh-sequence-python3, dh-sequence-cli [!mips64el !riscv64 !loong64 !sh4 !sparc64 !x32 !hurd-any !ia64], cmake, dh-exec, doxygen \u003c!nodoc\u003e, swig, libxml2-dev, python3-dev, perl, libperl-dev, default-jdk-headless, default-jdk-doc, dh-octave, r-base-dev, r-base-core, graphviz \u003c!nodoc\u003e, zlib1g-dev, libbz2-dev, libnewlib-dev, check, rdfind"
   ],
   "Checksums-Sha256": [
-    "d63d81c5e4cdffeecc8c7520cb92136ee7f3d25ea69f407211b553416fa9bd80 3904 libsbml_5.20.2+dfsg-4.dsc e286a32637fa0bfd565cdeefbd9f3c9d5832e296b4f2d8cf127eaac001e14bc0 15772772 libsbml_5.20.2+dfsg.orig.tar.xz 7e9914d8d7f58521ed21cb50f495cbb10181e208f11ff44a51af59d6d43d428a 24380 libsbml_5.20.2+dfsg-4.debian.tar.xz"
+    "bfee103c1b79f0e52af1b2265a779bb892be5b889271a3159a88db37951a43ac 3179 libsbml_5.20.2+dfsg-5.dsc e286a32637fa0bfd565cdeefbd9f3c9d5832e296b4f2d8cf127eaac001e14bc0 15772772 libsbml_5.20.2+dfsg.orig.tar.xz 2781aaaff1dd66f2a0e487024243f50022f427937feefa15e0c4aa7e9dd939c0 24524 libsbml_5.20.2+dfsg-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libs/libsbml"
   ],
   "Files": [
-    "a08954a0cfd064a2258cd23e429228dc 3904 libsbml_5.20.2+dfsg-4.dsc 0fa425945c1840f81acffac29edb970b 15772772 libsbml_5.20.2+dfsg.orig.tar.xz 5dadbd893e6b448640b5bef5e74ab712 24380 libsbml_5.20.2+dfsg-4.debian.tar.xz"
+    "b7aac240bb796b2f2f0c3ad29bf98ca5 3179 libsbml_5.20.2+dfsg-5.dsc 0fa425945c1840f81acffac29edb970b 15772772 libsbml_5.20.2+dfsg.orig.tar.xz ea2e1399bf83b953756c6bee814961f3 24524 libsbml_5.20.2+dfsg-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libsbml"
   ],
   "Package-List": [
-    "libsbml5-cil deb cli-mono optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,ppc64el,s390x,ia64,ppc64,sh4,sparc64,x32 libsbml5-cil-doc deb doc optional arch=all profile=!nodoc libsbml5-dev deb libdevel optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sh4,sparc64,x32 libsbml5-doc deb doc optional arch=all profile=!nodoc libsbml5-examples deb doc optional arch=all profile=!nodoc libsbml5-java deb java optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sh4,sparc64,x32 libsbml5-octave deb math optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sh4,sparc64,x32 libsbml5-perl deb perl optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sh4,sparc64,x32 libsbml5-perl-doc deb doc optional arch=all profile=!nodoc libsbml5t64 deb libs optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sh4,sparc64,x32 python3-sbml5 deb python optional arch=any-amd64,arm64,armel,armhf,any-i386,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sh4,sparc64,x32 python3-sbml5-doc deb doc optional arch=all profile=!nodoc"
+    "libsbml5-cil deb cli-mono optional arch=any-amd64,arm64,armel,armhf,any-i386,ppc64el,s390x,powerpc,ppc64 libsbml5-cil-doc deb doc optional arch=all profile=!nodoc libsbml5-dev deb libdevel optional arch=any libsbml5-doc deb doc optional arch=all profile=!nodoc libsbml5-examples deb doc optional arch=all profile=!nodoc libsbml5-java deb java optional arch=any libsbml5-octave deb math optional arch=any libsbml5-perl deb perl optional arch=any libsbml5-perl-doc deb doc optional arch=all profile=!nodoc libsbml5t64 deb libs optional arch=any python3-sbml5 deb python optional arch=any python3-sbml5-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/libsbml.git"
   ],
   "Version": [
-    "5.20.2+dfsg-4"
+    "5.20.2+dfsg-5"
   ]
 }

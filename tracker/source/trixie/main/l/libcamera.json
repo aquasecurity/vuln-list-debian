@@ -6,16 +6,16 @@
     "libcamera-dev, libcamera-doc, libcamera0.2, libcamera-ipa, libcamera-tools, libcamera-v4l2, gstreamer1.0-libcamera, python3-libcamera"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, doxygen \u003c!nodoc\u003e, doxygen-latex [!sh4] \u003c!nodoc\u003e | texlive-latex-extra \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, libdrm-dev \u003c!pkg.libcamera.nosdl\u003e, libdw-dev \u003c!pkg.libcamera.notrace\u003e, libevent-dev, libgnutls28-dev | gnutls-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libgtest-dev \u003c!nocheck\u003e, libjpeg-dev \u003c!pkg.libcamera.nosdl\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, liblttng-ust-dev [linux-any], libpython3-dev \u003c!pkg.libcamera.nopython\u003e, libsdl2-dev \u003c!pkg.libcamera.nosdl\u003e, libtiff-dev, libudev-dev [linux-any], libyaml-dev, meson (\u003e= 0.60), openssl, pkgconf | pkg-config, python3-jinja2, python3-ply, python3-pybind11 \u003c!pkg.libcamera.nopython\u003e, python3-sphinx \u003c!nodoc\u003e, python3-yaml, qtbase5-dev \u003c!pkg.libcamera.noqt\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, doxygen \u003c!nodoc\u003e, doxygen-latex [!sh4] \u003c!nodoc\u003e | texlive-latex-extra \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, libdrm-dev \u003c!pkg.libcamera.nosdl\u003e, libdw-dev \u003c!pkg.libcamera.notrace\u003e, libevent-dev, libgnutls28-dev | gnutls-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libgtest-dev \u003c!nocheck\u003e, libjpeg-dev \u003c!pkg.libcamera.nosdl\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, liblttng-ust-dev [!hurd-any !i386], libpython3-dev \u003c!pkg.libcamera.nopython\u003e, libsdl2-dev \u003c!pkg.libcamera.nosdl\u003e, libtiff-dev, libudev-dev [linux-any], libyaml-dev, meson (\u003e= 0.60), openssl, pkgconf | pkg-config, python3-jinja2, python3-ply, python3-pybind11 \u003c!pkg.libcamera.nopython\u003e, python3-sphinx \u003c!nodoc\u003e, python3-yaml, qtbase5-dev \u003c!pkg.libcamera.noqt\u003e"
   ],
   "Checksums-Sha256": [
-    "ad5b75195bdf4e5ad3b7415d99ccfae2364926463844a1728ac1264c4e6072b0 3325 libcamera_0.2.0-2.dsc 5c515c67477a14e2ef14c79920a4d05fda951d11bf75bcfb2a7149391f6398b5 1081360 libcamera_0.2.0.orig.tar.xz b1159d03e87576147aca55cc88c35a8abdf7424c81e9e905dc90fa901ae01662 19612 libcamera_0.2.0-2.debian.tar.xz"
+    "0460805c22c564110a4272302b1753c8e1947b8e3402c554e9402eb71b6820b6 3369 libcamera_0.2.0-3.dsc 5c515c67477a14e2ef14c79920a4d05fda951d11bf75bcfb2a7149391f6398b5 1081360 libcamera_0.2.0.orig.tar.xz 03672f1a090692c6806d8a4f32b2920529d7372f7e05d80adafcec6a4f7f9d4b 20168 libcamera_0.2.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libc/libcamera"
   ],
   "Files": [
-    "f47cb7c9133015939ad8a07585a7290e 3325 libcamera_0.2.0-2.dsc 927ba1c9d6434af1007dfb95032d91af 1081360 libcamera_0.2.0.orig.tar.xz 446cca90cd4a86118e1a7847805f423b 19612 libcamera_0.2.0-2.debian.tar.xz"
+    "fa19bcb1e861f8a9120c6ff205ea8e0d 3369 libcamera_0.2.0-3.dsc 927ba1c9d6434af1007dfb95032d91af 1081360 libcamera_0.2.0.orig.tar.xz 789ecebc002eb434b331200e4cfbeaaa 20168 libcamera_0.2.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libcamera"
   ],
   "Package-List": [
-    "gstreamer1.0-libcamera deb libs optional arch=any libcamera-dev deb libdevel optional arch=any libcamera-doc deb doc optional arch=all profile=!nodoc libcamera-ipa deb libs optional arch=any libcamera-tools deb video optional arch=any libcamera-v4l2 deb libs optional arch=any libcamera0.2 deb libs optional arch=any python3-libcamera deb python optional arch=any"
+    "gstreamer1.0-libcamera deb libs optional arch=any libcamera-dev deb libdevel optional arch=any libcamera-doc deb doc optional arch=all profile=!nodoc libcamera-ipa deb libs optional arch=any libcamera-tools deb video optional arch=any libcamera-v4l2 deb libs optional arch=linux-any libcamera0.2 deb libs optional arch=any python3-libcamera deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Emmanuel Arias \u003cemmanuelarias30@gmail.com\u003e, IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e, Andrej Shadura \u003candrewsh@debian.org\u003e, Dylan Aïssi \u003cdaissi@debian.org\u003e"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/multimedia-team/libcamera.git"
   ],
   "Version": [
-    "0.2.0-2"
+    "0.2.0-3"
   ]
 }
