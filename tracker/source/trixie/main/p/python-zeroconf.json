@@ -6,19 +6,19 @@
     "python3-zeroconf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-async-timeout (\u003e= 4.0.1), python3-ifaddr (\u003e= 0.1.7), python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-pytest-timeout, python3-pytest-tornasync"
+    "python3-async-timeout (\u003e= 4.0.1), python3-ifaddr, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-tornasync \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "16d1b7ac9302b819744590133465acaa2cd38417682aa4965b49567ccb5cf679 2384 python-zeroconf_0.132.2-1.dsc 9ad8bc6e3f168fe8c164634c762d3265c775643defff10e26273623a12d73ae1 170698 python-zeroconf_0.132.2.orig.tar.gz 88b859d96dbba2e3b1ffa4d7b1b6eff19511489573acffcdd1d88348e4d42b04 6860 python-zeroconf_0.132.2-1.debian.tar.xz"
+    "11512a6ae7686e566acb9664b038603b08269c490d33373cf7c9ae6000062bb6 2473 python-zeroconf_0.132.2-2.dsc 9ad8bc6e3f168fe8c164634c762d3265c775643defff10e26273623a12d73ae1 170698 python-zeroconf_0.132.2.orig.tar.gz 2f99558cb7da24249042d8a8a311f9e99aed64fb51855e4ca2d37a63caf223e8 6960 python-zeroconf_0.132.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-zeroconf"
   ],
   "Files": [
-    "df8cc58a21976d13180d5e99319044d0 2384 python-zeroconf_0.132.2-1.dsc 25fbce5f213df0043dfb89f8a938d03a 170698 python-zeroconf_0.132.2.orig.tar.gz 63f36e3d1fb6c0a7e2a00313d728f514 6860 python-zeroconf_0.132.2-1.debian.tar.xz"
+    "16b1b48e1cfec1f2583e008c2865b1fb 2473 python-zeroconf_0.132.2-2.dsc 25fbce5f213df0043dfb89f8a938d03a 170698 python-zeroconf_0.132.2.orig.tar.gz 51efdf4de2b401a95b01e822b528867b 6960 python-zeroconf_0.132.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Ruben Undheim \u003cruben.undheim@gmail.com\u003e, YOKOTA Hiroshi \u003cyokota.hgml@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-zeroconf.git"
   ],
   "Version": [
-    "0.132.2-1"
+    "0.132.2-2"
   ]
 }
