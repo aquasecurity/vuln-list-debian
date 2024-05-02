@@ -6,16 +6,16 @@
     "ansible-lint"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-ansible-compat (\u003e= 4.0.5) \u003c!nocheck\u003e, python3-filelock (\u003e= 3.3.0) \u003c!nocheck\u003e, python3-rich (\u003e= 12.0.0) \u003c!nocheck\u003e, python3-ruamel.yaml (\u003e= 0.18.5) \u003c!nocheck\u003e, python3-wcmatch \u003c!nocheck\u003e, black (\u003e= 22.8.0) \u003c!nocheck\u003e, git \u003c!nocheck\u003e, yamllint (\u003e= 1.30.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cd4235c28e929b15137ac8e8006e03944e4716137287a59aa5a478ced2b51794 2111 ansible-lint_6.17.2-1.dsc 9d39ceda368c45f04739662b13326593ffa7b2c1590c9c548c6fcc443f2a286e 428396 ansible-lint_6.17.2.orig.tar.gz 15514d7fbfd43e2e25fa70f57be8459d250e4b45827762daec267167f7806bc1 7788 ansible-lint_6.17.2-1.debian.tar.xz"
+    "04d91a2bc9cfcd10cd03c5cf90a32eba4b0c81554b353d48fb0327c506ac1166 2522 ansible-lint_6.17.2-3.dsc 9d39ceda368c45f04739662b13326593ffa7b2c1590c9c548c6fcc443f2a286e 428396 ansible-lint_6.17.2.orig.tar.gz 98ff1980d4dca15f7747ae502bdaade90146af3c2badb53debf39368f4239f59 9944 ansible-lint_6.17.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/ansible-lint"
   ],
   "Files": [
-    "defd4f2df934005b917f6c19a2149fb6 2111 ansible-lint_6.17.2-1.dsc 90ca5966e6309d9817699715b76e96ca 428396 ansible-lint_6.17.2.orig.tar.gz 3ca736ba19745142c10fa41f4d1d084a 7788 ansible-lint_6.17.2-1.debian.tar.xz"
+    "b209c25c5079a18367b8581e9f484120 2522 ansible-lint_6.17.2-3.dsc 90ca5966e6309d9817699715b76e96ca 428396 ansible-lint_6.17.2.orig.tar.gz 284e7beed4c7deff644172a7bc29aa1d 9944 ansible-lint_6.17.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,9 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Samuel Henrique \u003csamueloph@debian.org\u003e, Gregory Colpart \u003creg@debian.org\u003e"
   ],
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/ansible-lint.git"
   ],
   "Version": [
-    "6.17.2-1"
+    "6.17.2-3"
   ]
 }
