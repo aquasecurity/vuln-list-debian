@@ -6,16 +6,16 @@
     "librust-ttrpc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait+default-dev (\u003e= 0.1.24-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.3.2-~~) \u003c!nocheck\u003e, librust-bytes+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.59-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.59-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nix-0.26+default-dev \u003c!nocheck\u003e, librust-protobuf-2+default-dev \u003c!nocheck\u003e, librust-protobuf-codegen-pure+default-dev (\u003e= 2.14.0-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+macros-dev \u003c!nocheck\u003e, librust-tokio-1+rt-dev \u003c!nocheck\u003e, librust-tokio-1+sync-dev \u003c!nocheck\u003e, librust-tokio-1+time-dev \u003c!nocheck\u003e, librust-tokio-vsock-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.3.2-~~) \u003c!nocheck\u003e, librust-crossbeam-0.8+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.59-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.59-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nix-0.27+default-dev \u003c!nocheck\u003e, librust-nix-0.27+fs-dev \u003c!nocheck\u003e, librust-nix-0.27+socket-dev \u003c!nocheck\u003e, librust-protobuf-2+default-dev (\u003e= 2.14-~~) \u003c!nocheck\u003e, librust-protobuf-codegen-pure-2+default-dev (\u003e= 2.14-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f4348b9a087b456f5db4655ebfcc3d67d6962a92648daa9e01fd15bc0412b276 3015 rust-ttrpc_0.5.2-4.dsc 66a973ce6d5eaa20c173635b29ffb660dafbc7ef109172c0015ba44e47a23711 28883 rust-ttrpc_0.5.2.orig.tar.gz 4e4ab26f432f9b2cc3f1ef8e5e3c72276c42ce5bd3d06d1f8eddc0ff04d03b4c 3616 rust-ttrpc_0.5.2-4.debian.tar.xz"
+    "1bf906722869142ce8a98cea9492b898fd0f02bbf8d6e2d566e141e6dda0543c 2739 rust-ttrpc_0.8.1-2.dsc 55ea338db445bee75c596cf8a478fbfcefad5a943c9e92a7e1c805c65ed39551 48696 rust-ttrpc_0.8.1.orig.tar.gz 6c3ae22c4805000a7644bd134379ceb0efa297ac74d0865ea6a1c2c41f27ba3c 6356 rust-ttrpc_0.8.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ttrpc"
   ],
   "Files": [
-    "f5d1e2d6d1fdb5f84004bcd475160cf2 3015 rust-ttrpc_0.5.2-4.dsc 8d598e3cf887320f05bbe453914183bc 28883 rust-ttrpc_0.5.2.orig.tar.gz ba7a842f4e67d3ab66fddc5e7fef5fd1 3616 rust-ttrpc_0.5.2-4.debian.tar.xz"
+    "cbee64ba0bc46e439881aa71df277cd9 2739 rust-ttrpc_0.8.1-2.dsc 4fb8c6e875f8e280202f9aeed349cf2e 48696 rust-ttrpc_0.8.1.orig.tar.gz 046e5522c03c113f618de511beed8505 6356 rust-ttrpc_0.8.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-assert-cmd-2+default-dev"
   ],
   "Uploaders": [
     "Shengjing Zhu \u003czhsj@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ttrpc]"
   ],
   "Version": [
-    "0.5.2-4"
+    "0.8.1-2"
   ]
 }
