@@ -6,16 +6,19 @@
     "kvirc, libkvilib5, kvirc-modules, kvirc-data"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.1.0), debhelper-compat (= 13), doxygen, extra-cmake-modules, graphviz, libenchant-2-dev, libkf5coreaddons-dev, libkf5i18n-dev, libkf5notifications-dev, libkf5service-dev, libkf5windowsystem-dev, libkf5xmlgui-dev, libperl-dev, libphonon4qt5-dev, libqt5svg5-dev, libqt5webkit5-dev, libqt5x11extras5-dev, libssl-dev, libx11-dev, libxrender-dev, libxss-dev, pkg-config, pkg-kde-tools, python3-dev, qtmultimedia5-dev, zlib1g-dev"
+    "cmake (\u003e= 3.16.0), debhelper-compat (= 13), dh-sequence-kf5, extra-cmake-modules, libenchant-2-dev, libkf5coreaddons-dev, libkf5i18n-dev, libkf5kio-dev, libkf5notifications-dev, libkf5parts-dev, libkf5service-dev, libkf5windowsystem-dev, libkf5xmlgui-dev, libperl-dev, libphonon4qt5-dev, libqt5svg5-dev, libqt5x11extras5-dev, libssl-dev, libx11-dev, libxrender-dev, libxss-dev, pkgconf, python3-dev, qtbase5-dev, qtmultimedia5-dev, qtwebengine5-dev, zlib1g-dev"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "8e5691260127410cadc1076a92ceec5082801bbe34d6929b88350a177185b79e 2604 kvirc_5.0.0+dfsg-6.dsc 7940984eb961994122ca12fcb16415c2f3a508df6c4b39cfeda13f2ff9871c1b 3617280 kvirc_5.0.0+dfsg.orig.tar.xz a0090d4a07aec334a15be87c863629fb36e0f934f98122f20ac5faeca97b34be 28364 kvirc_5.0.0+dfsg-6.debian.tar.xz"
+    "a629632923da2dfce4aec8655407faa59c9f98433c493d4cae7c86a0fd1116d0 2693 kvirc_5.2.2+dfsg-2.dsc 55ab347f195e87bbbcf20001adb01480a5916ef3bb9142bdb53b61f848769e9f 3909912 kvirc_5.2.2+dfsg.orig.tar.xz aba8e6db5a080af18093218a3879883903020ddd58b2472aa2bba8da072b41cf 25692 kvirc_5.2.2+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kvirc"
   ],
   "Files": [
-    "f4f66db2ef0dab22e8cd0014a86e17be 2604 kvirc_5.0.0+dfsg-6.dsc 837561919860b543230d7dd92bb22cc7 3617280 kvirc_5.0.0+dfsg.orig.tar.xz 81fbf280a33ab698353e950a887a7177 28364 kvirc_5.0.0+dfsg-6.debian.tar.xz"
+    "7e0b76e4bb0656d6ceab0a7aad1b65b1 2693 kvirc_5.2.2+dfsg-2.dsc ea32e2a3cbc23630549be6f23e2f2349 3909912 kvirc_5.2.2+dfsg.orig.tar.xz d372f254237221f38b56d70888b00653 25692 kvirc_5.2.2+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "kvirc"
   ],
   "Package-List": [
-    "kvirc deb net optional arch=any kvirc-data deb net optional arch=all kvirc-modules deb libs optional arch=any libkvilib5 deb libs optional arch=any"
+    "kvirc deb net optional arch=any kvirc-data deb net optional arch=all kvirc-modules deb oldlibs optional arch=any libkvilib5 deb oldlibs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,10 +42,10 @@
     "net"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.6.2"
   ],
   "Uploaders": [
-    "Raúl Sánchez Siles \u003crasasi78@gmail.com\u003e, Kai Wasserbäch \u003ccuran@debian.org\u003e, Mark Purcell \u003cmsp@debian.org\u003e, Andrey Rahmatullin \u003cwrar@debian.org\u003e"
+    "Raúl Sánchez Siles \u003crasasi78@gmail.com\u003e, Kai Wasserbäch \u003ccuran@debian.org\u003e, Mark Purcell \u003cmsp@debian.org\u003e, Andrey Rakhmatullin \u003cwrar@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/qt-kde-team/extras/kvirc"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/qt-kde-team/extras/kvirc.git"
   ],
   "Version": [
-    "4:5.0.0+dfsg-6"
+    "4:5.2.2+dfsg-2"
   ]
 }

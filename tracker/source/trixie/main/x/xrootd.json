@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "xrootd-server, libxrdapputils2, libxrdcrypto2, libxrdcryptolite2, libxrdutils3, libxrdxml3, xrootd-plugins, libxrootd-dev, libxrdcl3, libxrdec1, libxrdffs3, libxrdposix3, libxrdssilib2, libxrdssishmap2, xrootd-client-plugins, xrootd-client-http-plugins, libxrootd-client-dev, libxrdhttputils2, libxrdserver3, xrootd-server-plugins, libxrootd-server-dev, libxrootd-private-dev, xrootd-client, xrootd-fuse, xrootd-voms-plugins, xrootd-scitokens-plugins, libxrdcephposix0, xrootd-ceph-plugins, python3-xrootd, xrootd-doc"
+    "xrootd-server, libxrdapputils2t64, libxrdcrypto2t64, libxrdcryptolite2t64, libxrdutils3t64, libxrdxml3t64, xrootd-plugins, libxrootd-dev, libxrdcl3t64, libxrdec1t64, libxrdffs3t64, libxrdposix3t64, libxrdssilib2t64, libxrdssishmap2t64, xrootd-client-plugins, xrootd-client-http-plugins, libxrootd-client-dev, libxrdhttputils2t64, libxrdserver3t64, xrootd-server-plugins, libxrootd-server-dev, libxrootd-private-dev, xrootd-client, xrootd-fuse, xrootd-voms-plugins, xrootd-scitokens-plugins, libxrdcephposix0, xrootd-ceph-plugins, python3-xrootd, xrootd-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, cmake, pkg-config, libfuse-dev [linux-any kfreebsd-any], libkrb5-dev, libcurl4-openssl-dev, libtinyxml-dev, libxml2-dev, ncurses-dev, libssl-dev, libreadline-dev, zlib1g-dev, libsystemd-dev [linux-any], pybuild-plugin-pyproject, python3-dev, python3-pip, python3-setuptools, python3-wheel, libjson-c-dev, libmacaroons-dev, uuid-dev, voms-dev, libscitokens-dev, davix-dev, librados-dev [amd64 arm64 mips64el ppc64el riscv64 s390x], libradospp-dev [amd64 arm64 mips64el ppc64el riscv64 s390x], libradosstriper-dev [amd64 arm64 mips64el ppc64el riscv64 s390x], libisal-dev [!i386 !hppa !hurd-i386 !powerpc !x32], attr, libcppunit-dev, libgtest-dev, openssl, uuid-runtime"
+    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), dh-python, cmake, pkgconf, libfuse-dev [linux-any kfreebsd-any], libkrb5-dev, libcurl4-openssl-dev, libtinyxml-dev, libxml2-dev, ncurses-dev, libssl-dev, libreadline-dev, zlib1g-dev, libsystemd-dev [linux-any], pybuild-plugin-pyproject, python3-dev, python3-pip, python3-setuptools, python3-wheel, libjson-c-dev, libmacaroons-dev, uuid-dev, voms-dev, libscitokens-dev, davix-dev, librados-dev [amd64 arm64 mips64el ppc64el riscv64 s390x], libradospp-dev [amd64 arm64 mips64el ppc64el riscv64 s390x], libradosstriper-dev [amd64 arm64 mips64el ppc64el riscv64 s390x], libisal-dev [!i386 !hppa !hurd-i386 !powerpc !x32], attr, libcppunit-dev, libgtest-dev, openssl, uuid-runtime"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-sphinxdoc, doxygen, graphviz, python3-sphinx"
   ],
   "Checksums-Sha256": [
-    "6232789f5ef6184e55b23e356169c0c20d533f520003b35091a3c22ff785492a 4494 xrootd_5.6.7-1.dsc 4089ce3a69fcf6566d320ef1f4a73a1d6332e6835b7566e17548569bdea78a8d 6698751 xrootd_5.6.7.orig.tar.gz 6e35c97112912b2abd72af2a46b0e90390fe89991a82018cb37b2b195686617f 11592 xrootd_5.6.7-1.debian.tar.xz"
+    "feb3586fb553182747cccf3ab037d32a7c1cf4623d64a625c67e34db6f07d3b0 4591 xrootd_5.6.9-2.dsc 44196167fbcf030d113e3749dfdecab934c43ec15e38e77481e29aac191ca3a8 6701277 xrootd_5.6.9.orig.tar.gz 035ff1b7aed970f68e4af7aadbdd0c4f10d6669984fbe8163924270c75b1cf8b 15520 xrootd_5.6.9-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/x/xrootd"
   ],
   "Files": [
-    "5f650710a3584d349717d7468c4f40f7 4494 xrootd_5.6.7-1.dsc 877d79d4e5d76e77512ad35ce142ea53 6698751 xrootd_5.6.7.orig.tar.gz 0bdefc69d5ff9abbf9b9715cd93073da 11592 xrootd_5.6.7-1.debian.tar.xz"
+    "2e779a79fa6de0733d1122c6599e24bd 4591 xrootd_5.6.9-2.dsc 48a3fe6e8768305b742dd2d08404114c 6701277 xrootd_5.6.9.orig.tar.gz 616af5c7aadcdb34493648f04cb7ab03 15520 xrootd_5.6.9-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "xrootd"
   ],
   "Package-List": [
-    "libxrdapputils2 deb libs optional arch=any libxrdcephposix0 deb libs optional arch=amd64,arm64,mips64el,ppc64el,riscv64,s390x libxrdcl3 deb libs optional arch=any libxrdcrypto2 deb libs optional arch=any libxrdcryptolite2 deb libs optional arch=any libxrdec1 deb libs optional arch=any libxrdffs3 deb libs optional arch=any libxrdhttputils2 deb libs optional arch=any libxrdposix3 deb libs optional arch=any libxrdserver3 deb libs optional arch=any libxrdssilib2 deb libs optional arch=any libxrdssishmap2 deb libs optional arch=any libxrdutils3 deb libs optional arch=any libxrdxml3 deb libs optional arch=any libxrootd-client-dev deb libdevel optional arch=any libxrootd-dev deb libdevel optional arch=any libxrootd-private-dev deb libdevel optional arch=any libxrootd-server-dev deb libdevel optional arch=any python3-xrootd deb python optional arch=any xrootd-ceph-plugins deb libs optional arch=amd64,arm64,mips64el,ppc64el,riscv64,s390x xrootd-client deb net optional arch=any xrootd-client-http-plugins deb libs optional arch=any xrootd-client-plugins deb libs optional arch=any xrootd-doc deb doc optional arch=all xrootd-fuse deb net optional arch=linux-any,kfreebsd-any xrootd-plugins deb libs optional arch=any xrootd-scitokens-plugins deb libs optional arch=any xrootd-server deb net optional arch=any xrootd-server-plugins deb libs optional arch=any xrootd-voms-plugins deb libs optional arch=any"
+    "libxrdapputils2t64 deb libs optional arch=any libxrdcephposix0 deb libs optional arch=amd64,arm64,mips64el,ppc64el,riscv64,s390x libxrdcl3t64 deb libs optional arch=any libxrdcrypto2t64 deb libs optional arch=any libxrdcryptolite2t64 deb libs optional arch=any libxrdec1t64 deb libs optional arch=any libxrdffs3t64 deb libs optional arch=any libxrdhttputils2t64 deb libs optional arch=any libxrdposix3t64 deb libs optional arch=any libxrdserver3t64 deb libs optional arch=any libxrdssilib2t64 deb libs optional arch=any libxrdssishmap2t64 deb libs optional arch=any libxrdutils3t64 deb libs optional arch=any libxrdxml3t64 deb libs optional arch=any libxrootd-client-dev deb libdevel optional arch=any libxrootd-dev deb libdevel optional arch=any libxrootd-private-dev deb libdevel optional arch=any libxrootd-server-dev deb libdevel optional arch=any python3-xrootd deb python optional arch=any xrootd-ceph-plugins deb libs optional arch=amd64,arm64,mips64el,ppc64el,riscv64,s390x xrootd-client deb net optional arch=any xrootd-client-http-plugins deb libs optional arch=any xrootd-client-plugins deb libs optional arch=any xrootd-doc deb doc optional arch=all xrootd-fuse deb net optional arch=linux-any,kfreebsd-any xrootd-plugins deb libs optional arch=any xrootd-scitokens-plugins deb libs optional arch=any xrootd-server deb net optional arch=any xrootd-server-plugins deb libs optional arch=any xrootd-voms-plugins deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/ellert/xrootd.git"
   ],
   "Version": [
-    "5.6.7-1"
+    "5.6.9-2"
   ]
 }

@@ -3,25 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "krb5-user, krb5-kdc, krb5-kdc-ldap, krb5-admin-server, krb5-kpropd, krb5-multidev, libkrb5-dev, libkrb5-dbg, krb5-pkinit, krb5-otp, krb5-k5tls, krb5-doc, libkrb5-3, libgssapi-krb5-2, libgssrpc4, libkadm5srv-mit12, libkadm5clnt-mit12, libk5crypto3, libkdb5-10, libkrb5support0, libkrad0, krb5-gss-samples, krb5-locales, libkrad-dev"
+    "krb5-user, krb5-kdc, krb5-kdc-ldap, krb5-admin-server, krb5-kpropd, krb5-multidev, libkrb5-dev, libkrb5-dbg, krb5-pkinit, krb5-otp, krb5-k5tls, krb5-doc, libkrb5-3, libgssapi-krb5-2, libgssrpc4t64, libkadm5srv-mit12, libkadm5clnt-mit12, libk5crypto3, libkdb5-10t64, libkrb5support0, libkrad0, krb5-gss-samples, krb5-locales, libkrad-dev"
   ],
   "Build-Depends": [
-    "byacc | bison, comerr-dev, debhelper-compat (= 13), docbook-to-man, libkeyutils-dev [linux-any], libldap2-dev \u003c!stage1\u003e, libsasl2-dev \u003c!stage1\u003e, libssl-dev, libverto-dev (\u003e= 0.2.4), pkg-config, ss-dev"
+    "dpkg-dev (\u003e= 1.22.5), byacc | bison, comerr-dev, debhelper-compat (= 13), docbook-to-man, libkeyutils-dev [linux-any], libldap2-dev \u003c!stage1\u003e, libsasl2-dev \u003c!stage1\u003e, libssl-dev, libverto-dev (\u003e= 0.2.4), pkg-config, ss-dev"
   ],
   "Build-Depends-Arch": [
-    "keyutils [linux-any] \u003c!nocheck\u003e, libcmocka-dev \u003c!nocheck\u003e, python3-kdcproxy \u003c!nocheck\u003e, python3-pyrad \u003c!nocheck\u003e"
+    "dpkg-dev (\u003e= 1.22.5), keyutils [linux-any] \u003c!nocheck\u003e, libcmocka-dev \u003c!nocheck\u003e, python3-kdcproxy \u003c!nocheck\u003e, python3-pyrad \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen, doxygen-latex, python3, python3-cheetah, python3-lxml, python3-sphinx, tex-gyre"
   ],
   "Checksums-Sha256": [
-    "014d2e50cd3fe911c1499bb203f63ddd3b9f306650451bfb1d8c33d7449a6b10 3304 krb5_1.20.1-5.dsc 704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851 8661660 krb5_1.20.1.orig.tar.gz 2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666 833 krb5_1.20.1.orig.tar.gz.asc aba9f1047af6733679eeffd2ff9dae6ede5089f8f57e8b1117a9ac935b136105 104484 krb5_1.20.1-5.debian.tar.xz"
+    "e61a19ad704e6457781a9a62605b0851183ca8fffe44426f8138120a2ffea689 3360 krb5_1.20.1-6.dsc 704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851 8661660 krb5_1.20.1.orig.tar.gz 2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666 833 krb5_1.20.1.orig.tar.gz.asc b2e63f51edb711c9a4e1bf544e85194a1b3bc36812f48d4bcb78a01f2236200c 104740 krb5_1.20.1-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/krb5"
   ],
   "Files": [
-    "57618e29e850dde9eacd2d9d5467467f 3304 krb5_1.20.1-5.dsc 73f5780e7b587ccd8b8cfc10c965a686 8661660 krb5_1.20.1.orig.tar.gz 46551f0a032aa02dccac3789a344e028 833 krb5_1.20.1.orig.tar.gz.asc 1036c84739314c90a49b95c3e4b9ec1f 104484 krb5_1.20.1-5.debian.tar.xz"
+    "5688b38fdbc2d88478ea7a70c2ace72c 3360 krb5_1.20.1-6.dsc 73f5780e7b587ccd8b8cfc10c965a686 8661660 krb5_1.20.1.orig.tar.gz 46551f0a032aa02dccac3789a344e028 833 krb5_1.20.1.orig.tar.gz.asc c11641ab76f055dc1898a74cb7944567 104740 krb5_1.20.1-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "krb5"
   ],
   "Package-List": [
-    "krb5-admin-server deb net optional arch=any krb5-doc deb doc optional arch=all krb5-gss-samples deb net optional arch=any krb5-k5tls deb net optional arch=any krb5-kdc deb net optional arch=any krb5-kdc-ldap deb net optional arch=any profile=!stage1 krb5-kpropd deb net optional arch=any krb5-locales deb localization optional arch=all krb5-multidev deb libdevel optional arch=any krb5-otp deb net optional arch=any krb5-pkinit deb net optional arch=any krb5-user deb net optional arch=any libgssapi-krb5-2 deb libs optional arch=any libgssrpc4 deb libs optional arch=any libk5crypto3 deb libs optional arch=any libkadm5clnt-mit12 deb libs optional arch=any libkadm5srv-mit12 deb libs optional arch=any libkdb5-10 deb libs optional arch=any libkrad-dev deb libdevel optional arch=any libkrad0 deb libs optional arch=any libkrb5-3 deb libs optional arch=any libkrb5-dbg deb debug optional arch=any libkrb5-dev deb libdevel optional arch=any libkrb5support0 deb libs optional arch=any"
+    "krb5-admin-server deb net optional arch=any krb5-doc deb doc optional arch=all krb5-gss-samples deb net optional arch=any krb5-k5tls deb net optional arch=any krb5-kdc deb net optional arch=any krb5-kdc-ldap deb net optional arch=any profile=!stage1 krb5-kpropd deb net optional arch=any krb5-locales deb localization optional arch=all krb5-multidev deb libdevel optional arch=any krb5-otp deb net optional arch=any krb5-pkinit deb net optional arch=any krb5-user deb net optional arch=any libgssapi-krb5-2 deb libs optional arch=any libgssrpc4t64 deb libs optional arch=any libk5crypto3 deb libs optional arch=any libkadm5clnt-mit12 deb libs optional arch=any libkadm5srv-mit12 deb libs optional arch=any libkdb5-10t64 deb libs optional arch=any libkrad-dev deb libdevel optional arch=any libkrad0 deb libs optional arch=any libkrb5-3 deb libs optional arch=any libkrb5-dbg deb debug optional arch=any libkrb5-dev deb libdevel optional arch=any libkrb5support0 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/debian/krb5"
   ],
   "Version": [
-    "1.20.1-5"
+    "1.20.1-6"
   ]
 }

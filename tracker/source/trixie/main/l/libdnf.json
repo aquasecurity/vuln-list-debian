@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "libdnf-dev, libdnf1, libdnf2, libdnf2-common, libdnf-doc, python3-hawkey, python3-hawkey-doc, python3-libdnf"
+    "libdnf-dev, libdnf2t64, libdnf2-common, libdnf-doc, python3-hawkey, python3-hawkey-doc, python3-libdnf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-dev, libpython3-dev, cmake, pkg-config, libglib2.0-dev, libsolv-dev (\u003e= 0.7.14-1.1~), libsolvext-dev (\u003e= 0.7.14-1.1~), libsolv-tools (\u003e= 0.7.14-1.1~), librpm-dev (\u003e= 4.14.2.1+dfsg1-1.1~), libzstd-dev, librepo-dev (\u003e= 1.14.5-1~), gtk-doc-tools, python3-sphinx, check, python3-nose, libgpgme-dev, libssl-dev, libjson-c-dev, libmodulemd-dev, libsmartcols-dev, libsqlite3-dev, gettext, swig, libcppunit-dev, doxygen, python3-breathe, rpm-common (\u003e= 4.14.2.1+dfsg1-1.1~), valgrind"
+    "debhelper-compat (= 13), dh-package-notes, dh-sequence-python3, python3-dev, libpython3-dev, cmake, pkgconf, libglib2.0-dev, libsolv-dev (\u003e= 0.7.14-1.1~), libsolvext-dev (\u003e= 0.7.14-1.1~), libsolv-tools (\u003e= 0.7.14-1.1~), librpm-dev (\u003e= 4.15.0~), libzstd-dev, librepo-dev (\u003e= 1.15.0~), gtk-doc-tools, python3-sphinx, check, libgpgme-dev, libssl-dev, libjson-c-dev, libmodulemd-dev (\u003e= 2.11.2~), libsmartcols-dev, libsqlite3-dev, gettext, swig, libcppunit-dev, doxygen, python3-breathe, rpm-common (\u003e= 4.15.0~), valgrind"
   ],
   "Checksums-Sha256": [
-    "a6d57c97d6efa269c66d4481a82df3f03be11380ee8dfdbcbdc401a56f5a4c62 2781 libdnf_0.69.0-2.2.dsc a79debe797050d5b99c6e81a8f19cf0d1d74f05749c422479f490db40cd53c45 1154241 libdnf_0.69.0.orig.tar.gz 724fa797ef4f507d6091babb8b5f6130554cf7b1f74d1070eb179942cb9a4a0d 11788 libdnf_0.69.0-2.2.debian.tar.xz"
+    "b769d7d345f1b157948ad2bca0ba98bde95c7bfafc8de64cf002a86cddcbc66b 2838 libdnf_0.73.1-2.dsc 7b793920f617f9d377b7a302fc69ab1c23cef9302482ee4a8715d61fa6271610 1207156 libdnf_0.73.1.orig.tar.gz 756a32875883c54893b73d07072ceea254a6bdd2fda6b0f2ac73e8eb9bc2c312 12092 libdnf_0.73.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libd/libdnf"
   ],
   "Files": [
-    "a29f13548e0dff8f8c69ed1da045cd8e 2781 libdnf_0.69.0-2.2.dsc f1ad937a2fdd110eaffbb53566ef8bb0 1154241 libdnf_0.69.0.orig.tar.gz e9c3ea6894e6a4344d314f6c40572604 11788 libdnf_0.69.0-2.2.debian.tar.xz"
+    "a7b07853095987662b6bc0c5ba30240e 2838 libdnf_0.73.1-2.dsc c49cddcac15b2fa6f4eeb9112d8d7f95 1207156 libdnf_0.73.1.orig.tar.gz 76eab5fff1d75e39d7d28f690d3698cd 12092 libdnf_0.73.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/rpm-software-management/libdnf"
   ],
   "Maintainer": [
-    "Frédéric Pierret \u003cfrederic.pierret@qubes-os.org\u003e"
+    "RPM packaging team \u003cteam+pkg-rpm@tracker.debian.org\u003e"
   ],
   "Package": [
     "libdnf"
   ],
   "Package-List": [
-    "libdnf-dev deb libdevel optional arch=any libdnf-doc deb doc optional arch=all libdnf1 deb oldlibs optional arch=all libdnf2 deb libs optional arch=any libdnf2-common deb libs optional arch=all python3-hawkey deb python optional arch=any python3-hawkey-doc deb doc optional arch=all python3-libdnf deb python optional arch=any"
+    "libdnf-dev deb libdevel optional arch=any libdnf-doc deb doc optional arch=all libdnf2-common deb libs optional arch=all libdnf2t64 deb libs optional arch=any python3-hawkey deb python optional arch=any python3-hawkey-doc deb doc optional arch=all python3-libdnf deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,15 +39,18 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
+  ],
+  "Uploaders": [
+    "Frédéric Pierret \u003cfrederic.pierret@qubes-os.org\u003e, Luca Boccassi \u003cbluca@debian.org\u003e,"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/fepitre/libdnf"
+    "https://salsa.debian.org/pkg-rpm-team/libdnf"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/fepitre/libdnf.git"
+    "https://salsa.debian.org/pkg-rpm-team/libdnf.git"
   ],
   "Version": [
-    "0.69.0-2.2"
+    "0.73.1-2"
   ]
 }

@@ -6,16 +6,16 @@
     "libpq-dev, libpq5, libecpg6, libecpg-dev, libecpg-compat3, libpgtypes3, postgresql-16, postgresql-client-16, postgresql-server-dev-16, postgresql-doc-16, postgresql-plperl-16, postgresql-plpython3-16, postgresql-pltcl-16"
   ],
   "Build-Depends": [
-    "autoconf, bison, clang [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32], debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libpam0g-dev | libpam-dev, libperl-dev, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32], lz4 | liblz4-tool, mawk, perl (\u003e= 5.8), pkg-config, postgresql-common (\u003e= 252~), python3-dev, systemtap-sdt-dev, tcl-dev, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
+    "autoconf, bison, clang [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32] \u003c!pkg.postgresql.nollvm\u003e, debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libpam0g-dev | libpam-dev, libperl-dev, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [!alpha !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32] \u003c!pkg.postgresql.nollvm\u003e, lz4 | liblz4-tool, mawk, perl (\u003e= 5.8), pkg-config, postgresql-common (\u003e= 252~), python3-dev, systemtap-sdt-dev, tcl-dev, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
   ],
   "Checksums-Sha256": [
-    "2700b610a315b627632e3d6cc11103707e78048c59272fa6ef2aeeab1f0541f5 4187 postgresql-16_16.2-1.dsc 446e88294dbc2c9085ab4b7061a646fa604b4bec03521d5ea671c2e5ad9b2952 24711703 postgresql-16_16.2.orig.tar.bz2 6eaa133ec2240213b1bab0e59c800353d2ec18af2d48c1c1f60fbbb7f1096fa0 31264 postgresql-16_16.2-1.debian.tar.xz"
+    "99cdcca6bc535f2fac34a1acf12855b5b699616a9723c42277d79a425eb297b4 4237 postgresql-16_16.2-2.dsc 446e88294dbc2c9085ab4b7061a646fa604b4bec03521d5ea671c2e5ad9b2952 24711703 postgresql-16_16.2.orig.tar.bz2 b7744cd9c7e5ede9e4ce0d86c5d32d72ec1ca07e1fb31faa3a4859fc96f9155a 31296 postgresql-16_16.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-16"
   ],
   "Files": [
-    "d72056af8106c89485f61651dfa4a87f 4187 postgresql-16_16.2-1.dsc 3d19d93434666db5d33e692472915ae5 24711703 postgresql-16_16.2.orig.tar.bz2 426fa2f98e9f58313b95affbf40a4575 31264 postgresql-16_16.2-1.debian.tar.xz"
+    "34abcf806b8e990e26a423ef56b2cfa0 4237 postgresql-16_16.2-2.dsc 3d19d93434666db5d33e692472915ae5 24711703 postgresql-16_16.2.orig.tar.bz2 6c1271e1f876857be7554314e471edf6 31296 postgresql-16_16.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql.git -b 16"
   ],
   "Version": [
-    "16.2-1"
+    "16.2-2"
   ]
 }

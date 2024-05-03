@@ -1,27 +1,27 @@
 {
   "Architecture": [
-    "amd64 arm64 armel armhf i386 mips64el ppc64el hppa hurd-i386 ia64 kfreebsd-amd64 kfreebsd-i386 riscv64 loong64 all"
+    "any all"
   ],
   "Binary": [
     "jellyfish, libjellyfish-2.0-2, libjellyfish-2.0-dev, python3-dna-jellyfish, libjellyfish-perl, jellyfish-examples"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), d-shlibs, autoconf-archive, yaggo, pkg-config, bc, time, procps, swig, python3-all-dev, dh-sequence-python3, perl, chrpath, libhts-dev, dos2unix, samtools"
+    "debhelper-compat (= 13), architecture-is-little-endian, architecture-is-64-bit, d-shlibs, autoconf-archive, yaggo, pkgconf, bc, time, procps, swig, python3-all-dev, dh-sequence-python3, python3-setuptools, perl, chrpath, libhts-dev, dos2unix, samtools"
   ],
   "Checksums-Sha256": [
-    "69d4d93573d2cea40bbd53d04dd337a49b0e423cfa971c4acb07bb4a76eec07c 3282 jellyfish_2.3.1-2.dsc 540d09457fb4e14b98c7f1428cf885c333e2d6ef4f6a3735aa06be13eb523d69 681990 jellyfish_2.3.1.orig.tar.gz 1b431f9062e9379aa0fac783c008ae5328ba499b0fe82573f59082a023c7d144 13924 jellyfish_2.3.1-2.debian.tar.xz"
+    "7ae0de4ee57f6ab0b8f76a4a40f4d0fd0ce52dfb19b905a766673babdfc54ae7 2687 jellyfish_2.3.1-3.dsc 540d09457fb4e14b98c7f1428cf885c333e2d6ef4f6a3735aa06be13eb523d69 681990 jellyfish_2.3.1.orig.tar.gz 476e52f24cf5f7ac0bc1b047372d16fcbbc057e71ce5a5098c93d8726a9154b5 13340 jellyfish_2.3.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jellyfish"
   ],
   "Files": [
-    "68856e60e6ed409beb17886991d19e36 3282 jellyfish_2.3.1-2.dsc 27fb29ad3edfe25d776cfbf98dcc8c0e 681990 jellyfish_2.3.1.orig.tar.gz 026bc276a5b6db11f005a2d3a5aa7ea4 13924 jellyfish_2.3.1-2.debian.tar.xz"
+    "6804fbc64819a4f40b16a11ec57fc826 2687 jellyfish_2.3.1-3.dsc 27fb29ad3edfe25d776cfbf98dcc8c0e 681990 jellyfish_2.3.1.orig.tar.gz c7928f076800e7bc8f60f2ff07c5ce31 13340 jellyfish_2.3.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/gmarcais/Jellyfish"
+    "https://www.genome.umd.edu/jellyfish.html"
   ],
   "Maintainer": [
     "Debian Med Packaging Team \u003cdebian-med-packaging@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "jellyfish"
   ],
   "Package-List": [
-    "jellyfish deb science optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,hppa,hurd-i386,ia64,kfreebsd-amd64,kfreebsd-i386,riscv64,loong64 jellyfish-examples deb science optional arch=all libjellyfish-2.0-2 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,hppa,hurd-i386,ia64,kfreebsd-amd64,kfreebsd-i386,riscv64,loong64 libjellyfish-2.0-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,hppa,hurd-i386,ia64,kfreebsd-amd64,kfreebsd-i386,riscv64,loong64 libjellyfish-perl deb perl optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,hppa,hurd-i386,ia64,kfreebsd-amd64,kfreebsd-i386,riscv64,loong64 python3-dna-jellyfish deb python optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,hppa,hurd-i386,ia64,kfreebsd-amd64,kfreebsd-i386,riscv64,loong64"
+    "jellyfish deb science optional arch=any jellyfish-examples deb science optional arch=all libjellyfish-2.0-2 deb libs optional arch=any libjellyfish-2.0-dev deb libdevel optional arch=any libjellyfish-perl deb perl optional arch=any python3-dna-jellyfish deb python optional arch=any"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/jellyfish.git"
   ],
   "Version": [
-    "2.3.1-2"
+    "2.3.1-3"
   ]
 }
