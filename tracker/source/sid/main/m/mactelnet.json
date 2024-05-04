@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any kfreebsd-any"
+    "linux-any kfreebsd-any all"
   ],
   "Binary": [
-    "mactelnet-client, mactelnet-server"
+    "mactelnet-client, mactelnet-server, mactelnet-locales"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 9), autoconf (\u003e= 2.68~), automake (\u003e= 1.1), dh-autoreconf (\u003e= 10)"
+    "debhelper-compat (= 13), autoconf (\u003e= 2.71), automake (\u003e= 1.16), autopoint (\u003e= 0.21), libssl-dev (\u003e= 1.1), gettext (\u003e= 0.21)"
   ],
   "Checksums-Sha256": [
-    "2e5ac3d898f5b56c802c5110321494fd908f15c810d22e0d5520e8e636a3a0f0 2042 mactelnet_0.4.4-4.dsc 5317847045d1cdc33f4b210ebc70b2bdd1755a860edbaeffff52ef94693c846e 231408 mactelnet_0.4.4.orig.tar.gz ffb3fed47debf4b21556503252feab4407d9b9e5a0451a41381a3268dfc87543 6804 mactelnet_0.4.4-4.debian.tar.xz"
+    "c24732df4b0d1fabdb2ceb967f1b60f356028f0331ecaf41300c99d8d93aa25d 2407 mactelnet_0.5.1-1.dsc fba6f072fd44ab7514de570e8b48ff8192ce8b028d106f8aef24d23515585dee 270653 mactelnet_0.5.1.orig.tar.gz 0762e007349e78c0eecccf65cdf0d9a4ba684ad6577b560252b6254064d1e043 833 mactelnet_0.5.1.orig.tar.gz.asc b5155ca02b2cb8000c3e3f72c4eafafcb8fbd5b47431157e303591d489890422 6436 mactelnet_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mactelnet"
   ],
   "Files": [
-    "d3e1d87b9dcfe07c4a04239aee31f4b2 2042 mactelnet_0.4.4-4.dsc 0b8827c6aeee2daeb8fc4e3147567d6f 231408 mactelnet_0.4.4.orig.tar.gz 9ab080cbed65fc9c6109049cf1d5b69b 6804 mactelnet_0.4.4-4.debian.tar.xz"
+    "0eaa0e0dfa08db7bd245dd03588bcdf1 2407 mactelnet_0.5.1-1.dsc 0f17531d5af281217ecd86d3d877f595 270653 mactelnet_0.5.1.orig.tar.gz c28ce83ce3d134cd22629ac36c194d37 833 mactelnet_0.5.1.orig.tar.gz.asc dd4ed4172cb68a53966559fda214539a 6436 mactelnet_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mactelnet"
   ],
   "Package-List": [
-    "mactelnet-client deb net extra arch=linux-any,kfreebsd-any mactelnet-server deb net extra arch=linux-any,kfreebsd-any"
+    "mactelnet-client deb net optional arch=linux-any,kfreebsd-any mactelnet-locales deb net optional arch=all mactelnet-server deb net optional arch=linux-any,kfreebsd-any"
   ],
   "Priority": [
     "source"
@@ -39,15 +39,15 @@
     "net"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.6.0"
   ],
   "Vcs-Browser": [
-    "https://github.com/haakonnessjoen/MACTelnet-Debian-Packaging"
+    "https://salsa.debian.org/haakonn/mactelnet"
   ],
   "Vcs-Git": [
-    "https://github.com/haakonnessjoen/MACTelnet-Debian-Packaging.git"
+    "https://salsa.debian.org/haakonn/mactelnet.git"
   ],
   "Version": [
-    "0.4.4-4"
+    "0.5.1-1"
   ]
 }
