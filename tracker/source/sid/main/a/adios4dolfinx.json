@@ -6,16 +6,16 @@
     "python3-adios4dolfinx"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, python3-adios2, python3-adios2-mpi, python3-dolfinx, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
+    "architecture-is-64-bit, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, python3-adios2, python3-adios2-mpi, python3-dolfinx (\u003e= 1:0.8.0~) | python3-dolfinx-complex (\u003e= 1:0.8.0~) | python3-dolfinx-real (\u003e= 1:0.8.0~), python3-ipyparallel \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "198b4f74713e2ab5bb226bd76c7ee1140b91a6c99be62dbf5665e05cd54d0205 2352 adios4dolfinx_0.7.3-7.dsc 1ebddfb4d2509e1cbceb55a60a1a6febae5ed19e13390ddc6d4972ec50a0665b 31462 adios4dolfinx_0.7.3.orig.tar.gz de23a70ca60c9d3e5eac80de2d7a5527339ee15cc3a9c5b97ae7a5bcacf58297 4232 adios4dolfinx_0.7.3-7.debian.tar.xz"
+    "e1d6206a3b3211c0316a91b7841edde348f2218650b65c75950285244208bcd5 2538 adios4dolfinx_0.8.1.post0-1.dsc 921e99c6dad3bb9e5096b8cdf305c01b74ae64e517d7ecc555be3bbea77c4787 70249 adios4dolfinx_0.8.1.post0.orig.tar.gz f0aa8f0210f2f25eae620feb55cd1152e73cd5c6419092ae64f24b3a98738092 4868 adios4dolfinx_0.8.1.post0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/adios4dolfinx"
   ],
   "Files": [
-    "93845fc7e50837049903a0ae8f56e822 2352 adios4dolfinx_0.7.3-7.dsc 344ff9220dad2fbb6e82f9a7db2440ca 31462 adios4dolfinx_0.7.3.orig.tar.gz c8958b00906535446dc4c98181e378c9 4232 adios4dolfinx_0.7.3-7.debian.tar.xz"
+    "fe8aaf6e4189ee7f1931a47de703e468 2538 adios4dolfinx_0.8.1.post0-1.dsc 4918c5eb607e61b4f8c1223fb8b8e021 70249 adios4dolfinx_0.8.1.post0.orig.tar.gz e4908159922b6707905e3d8b51cbb57c 4868 adios4dolfinx_0.8.1.post0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all-dev, python3-dolfinx-complex, python3-pytest"
+    "python3-all-dev, python3-dolfinx-complex, python3-ipyparallel, python3-pytest"
   ],
   "Uploaders": [
     "Francesco Ballarin \u003cfrancesco.ballarin@unicatt.it\u003e, Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/fenics/adios4dolfinx.git"
   ],
   "Version": [
-    "0.7.3-7"
+    "0.8.1.post0-1"
   ]
 }
