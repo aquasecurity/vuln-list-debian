@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "openmpi-bin, libopenmpi-dev, libopenmpi3, openmpi-common, openmpi-doc"
+    "openmpi-bin, libopenmpi-dev, libopenmpi3t64, openmpi-common, openmpi-doc"
   ],
   "Build-Conflicts": [
     "libmpich-dev, libopenmpi-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.16.1~), dh-fortran-mod (\u003e= 0.31), debhelper-compat (= 13), libevent-dev, libpmix-dev, libucx-dev [amd64 arm64 ppc64el], zlib1g-dev, libhwloc-dev, pkg-config, libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libfabric-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 !sh4 !powerpc !x32], libnuma-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libpsm-infinipath1-dev [amd64 i386], libpsm2-dev [amd64], default-jdk [!hppa !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !alpha !ppc64 !sparc64] \u003c!nojava\u003e, flex"
+    "dpkg-dev (\u003e= 1.22.5), dh-fortran-mod (\u003e= 0.31), debhelper-compat (= 13), libevent-dev, libpmix-dev [amd64 arm64 mips64el ppc64el riscv64 s390x alpha ia64 loong64 ppc64 sparc64], libucx-dev [amd64 arm64 ppc64el], zlib1g-dev, libhwloc-dev, pkg-config, libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libfabric-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 !sh4 !powerpc !x32], libnuma-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libpsm-infinipath1-dev [amd64 i386], libpsm2-dev [amd64], default-jdk [!hppa !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !alpha !ppc64 !sparc64] \u003c!nojava\u003e, flex"
   ],
   "Checksums-Sha256": [
-    "c995e2bf0dc7056506347d08e89eb1b103c5cad289ffe4427b451b735f9fac17 2746 openmpi_4.1.6-5.dsc 3008e56128e73579019200887a7eb641e5d3fc31a4b409f883955b42794c5aaf 6912088 openmpi_4.1.6.orig.tar.xz 5bb4d22e126137c1f107540705f685fb9bb4cae279c9afb35840450d1e6aa2c9 69336 openmpi_4.1.6-5.debian.tar.xz"
+    "354ced32cd1739ae277e3928e4dfd72b94a0ffe6b9278148c5078ea8101dbb15 2841 openmpi_4.1.6-13.2.dsc 3008e56128e73579019200887a7eb641e5d3fc31a4b409f883955b42794c5aaf 6912088 openmpi_4.1.6.orig.tar.xz 7b567ffa7826800ecceb86b9f6fe50e15b7f98bf2e19e665fd5dc9f304414d1c 69928 openmpi_4.1.6-13.2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openmpi"
   ],
   "Files": [
-    "2834ac23cb5f30a82486d224f9644f95 2746 openmpi_4.1.6-5.dsc f4129c753f45b88e4dc571b0c03ac142 6912088 openmpi_4.1.6.orig.tar.xz 83cfe60d9d3139e8e833b81797c9eb59 69336 openmpi_4.1.6-5.debian.tar.xz"
+    "2bb48b4689d55381a3e7ad9fa094e63f 2841 openmpi_4.1.6-13.2.dsc f4129c753f45b88e4dc571b0c03ac142 6912088 openmpi_4.1.6.orig.tar.xz 12c4e5e6e7496941ad2040f8586f11f7 69928 openmpi_4.1.6-13.2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "openmpi"
   ],
   "Package-List": [
-    "libopenmpi-dev deb libdevel optional arch=any libopenmpi3 deb libs optional arch=any openmpi-bin deb net optional arch=any openmpi-common deb net optional arch=all openmpi-doc deb doc optional arch=all"
+    "libopenmpi-dev deb libdevel optional arch=any libopenmpi3t64 deb libs optional arch=any openmpi-bin deb net optional arch=any openmpi-common deb net optional arch=all openmpi-doc deb doc optional arch=all"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/hpc-team/openmpi.git -b debian/latest"
   ],
   "Version": [
-    "4.1.6-5"
+    "4.1.6-13.2"
   ]
 }
