@@ -3,22 +3,22 @@
     "any"
   ],
   "Binary": [
-    "libqm-dsp0, libqm-dsp-dev"
+    "libqm-dsp0t64, libqm-dsp-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), liblapack-dev | liblapack.so, pkg-config, vamp-plugin-sdk"
+    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), liblapack-dev | liblapack.so, pkgconf | pkg-config, vamp-plugin-sdk"
   ],
   "Checksums-Sha256": [
-    "51b6a9cfb0e68d57b5aea4e1e5478fe7fdb8f0f470d7f7d2b0ab424c3a42625b 2214 qm-dsp_1.7.1-7.dsc 2b203f6dabd0475f13b356945827ae90a4ba4a4bbde935ffc334b50a9c782561 1488202 qm-dsp_1.7.1.orig.tar.gz f7ab03c19bebd8ea8ed1684cfee99ed9f89be4d50bc6c7e01064a0ac9fee42c7 7076 qm-dsp_1.7.1-7.debian.tar.xz"
+    "fa2a7e0102217c2a63754315d31fe8461b2409efb5a4e94979eff01b4375adff 2373 qm-dsp_1.7.1-8.dsc 2b203f6dabd0475f13b356945827ae90a4ba4a4bbde935ffc334b50a9c782561 1488202 qm-dsp_1.7.1.orig.tar.gz 68cf17e37976fe32b06e2e69a2213a0b0c902b7c822941441ad2472b2061e6bd 7860 qm-dsp_1.7.1-8.debian.tar.xz"
   ],
   "Dgit": [
-    "9c09805d32899ad77784bc52204c09d7bfdf2493 debian archive/debian/1.7.1-7 https://git.dgit.debian.org/qm-dsp"
+    "070ac1cc40033116530ded50da1211a4cb847352 debian archive/debian/1.7.1-8 https://git.dgit.debian.org/qm-dsp"
   ],
   "Directory": [
     "pool/main/q/qm-dsp"
   ],
   "Files": [
-    "02d5f1d6b800b23bbda560754546b744 2214 qm-dsp_1.7.1-7.dsc 9c7a7b15926000e15a9e3c7c06492e58 1488202 qm-dsp_1.7.1.orig.tar.gz 71de376c85a48307e369f93350d17ec8 7076 qm-dsp_1.7.1-7.debian.tar.xz"
+    "e4dc6f64e905280af736bce182039b62 2373 qm-dsp_1.7.1-8.dsc 9c7a7b15926000e15a9e3c7c06492e58 1488202 qm-dsp_1.7.1.orig.tar.gz 205e54e474a98ec76eb49d59850554d7 7860 qm-dsp_1.7.1-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "qm-dsp"
   ],
   "Package-List": [
-    "libqm-dsp-dev deb libdevel optional arch=any libqm-dsp0 deb libs optional arch=any"
+    "libqm-dsp-dev deb libdevel optional arch=any libqm-dsp0t64 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -43,6 +43,12 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, libboost-test-dev, valgrind"
   ],
   "Uploaders": [
     "Jaromír Mikeš \u003cmira.mikes@seznam.cz\u003e, IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e,"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/multimedia-team/qm-dsp.git"
   ],
   "Version": [
-    "1.7.1-7"
+    "1.7.1-8"
   ]
 }

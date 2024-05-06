@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "rpm, rpm2cpio, rpm-common, rpm-i18n, librpm9t64, librpmio9t64, librpmbuild9t64, librpmsign9t64, librpm-dev, python3-rpm"
+    "rpm, rpm2cpio, rpm-common, rpm-i18n, librpm10, librpmio10, librpmbuild10, librpmsign10, librpm-dev, python3-rpm"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), binutils-dev, bzip2, debugedit (\u003e= 1:5), dh-sequence-python3, dh-package-notes, gnupg2 [linux-any], libarchive-dev, libaudit-dev [linux-any], libbz2-dev, libcap-dev [linux-any], libdbus-1-dev, libdw-dev, libelf-dev, libfsverity-dev [linux-any], libgcrypt20-dev, liblua5.3-dev, liblzma-dev, libmagic-dev, libpopt-dev, libreadline-dev, libselinux1-dev [linux-any], libsemanage-dev [linux-any], libsepol-dev [linux-any], libsqlite3-dev, libxml2-dev, libzstd-dev, p7zip-full, pandoc, pkgconf, python3-all-dev, python3-utf8-locale \u003c!nocheck\u003e, xz-utils, zlib1g-dev"
+    "debhelper-compat (= 13), binutils-dev, bzip2, cmake, debugedit (\u003e= 1:5), dh-sequence-python3, dh-package-notes, gnupg2 [linux-any], libarchive-dev, libaudit-dev [linux-any], libbz2-dev, libcap-dev [linux-any], libdbus-1-dev, libdw-dev, libelf-dev, libfsverity-dev [linux-any], libgcrypt20-dev, liblua5.3-dev, liblzma-dev, libmagic-dev, libpopt-dev, libreadline-dev, libselinux1-dev [linux-any], libsemanage-dev [linux-any], libsepol-dev [linux-any], libsqlite3-dev, libxml2-dev, libzstd-dev, 7zip, pkgconf, python3-all-dev, python3-utf8-locale \u003c!nocheck\u003e, xz-utils, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "b58b5e2a04252cbed8dbadd4214c877a717bf0f54095c194d4eeb503ec35d455 3043 rpm_4.18.2+dfsg-2.1.dsc cbd3d19b6fd8338cdd15c2e114308149ed381267f8e98612c3d9c1340cd118f7 2834324 rpm_4.18.2+dfsg.orig.tar.xz d836c6f1e1c13918cd5240e5062e18d64efe60528d98b7aeabebe0733caf41c1 47428 rpm_4.18.2+dfsg-2.1.debian.tar.xz"
+    "46451d346abb0a0f63172352a0afe496fd5dbc97f98467c923c60074131ffcbd 3064 rpm_4.19.1.1+dfsg-1.dsc a9fd5a0ac73c49a30b57e9b5cf5248f9b41792ee3e8d7e87a6489850ab035da3 2219804 rpm_4.19.1.1+dfsg.orig.tar.xz 0432f36f99df6f8a6a736e66773b9287d2322ce2051b07a6e33c7a25373a1cf4 45656 rpm_4.19.1.1+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rpm"
   ],
   "Files": [
-    "60b9d0851b185b2e0fe8d50c41d8ceb8 3043 rpm_4.18.2+dfsg-2.1.dsc 33b81982ddc57e704755dbcf99d5bd72 2834324 rpm_4.18.2+dfsg.orig.tar.xz d188a9837af58e408790dc3b5a19be8f 47428 rpm_4.18.2+dfsg-2.1.debian.tar.xz"
+    "c159ab4f1e7d6348e5d0738d24d61bdb 3064 rpm_4.19.1.1+dfsg-1.dsc e619cd241bc34fc9882e4819129e29aa 2219804 rpm_4.19.1.1+dfsg.orig.tar.xz febea0c43c6b471ecef2515ee0e51067 45656 rpm_4.19.1.1+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rpm"
   ],
   "Package-List": [
-    "librpm-dev deb libdevel optional arch=any librpm9t64 deb libs optional arch=any librpmbuild9t64 deb libs optional arch=any librpmio9t64 deb libs optional arch=any librpmsign9t64 deb libs optional arch=any python3-rpm deb python optional arch=any rpm deb admin optional arch=any rpm-common deb admin optional arch=any rpm-i18n deb localization optional arch=all rpm2cpio deb admin optional arch=any"
+    "librpm-dev deb libdevel optional arch=any librpm10 deb libs optional arch=any librpmbuild10 deb libs optional arch=any librpmio10 deb libs optional arch=any librpmsign10 deb libs optional arch=any python3-rpm deb python optional arch=any rpm deb admin optional arch=any rpm-common deb admin optional arch=any rpm-i18n deb localization optional arch=all rpm2cpio deb admin optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "fakeroot, file, make, python3-utf8-locale"
   ],
   "Uploaders": [
-    "Michal Čihař \u003cnijel@debian.org\u003e"
+    "Michal Čihař \u003cnijel@debian.org\u003e, Luca Boccassi \u003cbluca@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/pkg-rpm-team/rpm"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/pkg-rpm-team/rpm.git"
   ],
   "Version": [
-    "4.18.2+dfsg-2.1"
+    "4.19.1.1+dfsg-1"
   ]
 }
