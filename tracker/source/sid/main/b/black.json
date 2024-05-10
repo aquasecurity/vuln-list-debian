@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
     "black, python-black-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bash-completion, dh-python, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-click, python3-hatch-vcs, python3-hatchling, python3-mypy-extensions, python3-pathspec, python3-platformdirs, python3-pytest \u003c!nocheck\u003e, python3-regex, python3-setuptools, python3-setuptools-scm, python3-sphinx (\u003e= 3.2) \u003c!nodoc\u003e, python3-sphinx-copybutton (\u003e= 0.4.0-2) \u003c!nodoc\u003e, python3-sphinxcontrib.programoutput \u003c!nodoc\u003e, python3-tomli, python3-typing-extensions"
+    "debhelper-compat (= 13), bash-completion, dh-python, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all-dev, python3-click, python3-hatch-mypyc, python3-hatch-vcs, python3-hatchling, python3-mypy-extensions, python3-pathspec, python3-platformdirs, python3-pytest \u003c!nocheck\u003e, python3-regex, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton (\u003e= 0.4.0-2) \u003c!nodoc\u003e, python3-sphinxcontrib.programoutput \u003c!nodoc\u003e, python3-tomli, python3-typing-extensions"
   ],
   "Checksums-Sha256": [
-    "b0181fa9afbbcd19ec3b41c99fcd2ecd324955324fdc7888dcaf80cb25209056 2845 black_24.4.2-1.dsc 27c2a421d8213f07c38f0b5e3968d928f75f2b3dfabd87c66db93e699c406e2d 1261725 black_24.4.2.orig.tar.gz d9ea60fd1b9ac6351ea36c65b381c96a4046917cb1acfce86b447426bc778cd2 11064 black_24.4.2-1.debian.tar.xz"
+    "870de039a14bb185a0b615a97c3262082c88c0cc55cea17bb70991adf536cccd 2614 black_24.4.2-2.dsc 27c2a421d8213f07c38f0b5e3968d928f75f2b3dfabd87c66db93e699c406e2d 1261725 black_24.4.2.orig.tar.gz b1e9e54c510e96123397d3e37b57dea673bdd648912ef71f7dc1aa1ec40fcac8 11184 black_24.4.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/black"
   ],
   "Files": [
-    "1766ab5afd29ab9f097a9930f73d1af1 2845 black_24.4.2-1.dsc 9977449b2eb323a495e15ffae3b25503 1261725 black_24.4.2.orig.tar.gz 815f2d8894ff2e24a89085663c440e43 11064 black_24.4.2-1.debian.tar.xz"
+    "9b01a921c3cf529970acd8dd7ae3f3bd 2614 black_24.4.2-2.dsc 9977449b2eb323a495e15ffae3b25503 1261725 black_24.4.2.orig.tar.gz fa57da8e036c872fe95736a71246ac7d 11184 black_24.4.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "black"
   ],
   "Package-List": [
-    "black deb python optional arch=all python-black-doc deb doc optional arch=all"
+    "black deb python optional arch=any python-black-doc deb doc optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,16 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "dpkg-dev, python3, python3-aiohttp, python3-click, python3-docutils, python3-mypy-extensions, python3-pathspec, python3-platformdirs, python3-pytest, python3-regex, python3-setuptools, python3-sphinx, python3-tomli, python3-typing-extensions"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Sylvestre Ledru \u003csylvestre@debian.org\u003e, Chris Lamb \u003clamby@debian.org\u003e,"
+    "Sylvestre Ledru \u003csylvestre@debian.org\u003e, Chris Lamb \u003clamby@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/black"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/black.git"
   ],
   "Version": [
-    "24.4.2-1"
+    "24.4.2-2"
   ]
 }
