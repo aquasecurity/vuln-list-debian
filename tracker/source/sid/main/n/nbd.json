@@ -6,16 +6,16 @@
     "nbd-server, nbd-client, nbd-client-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libglib2.0-dev (\u003e= 2.26.0), libgnutls28-dev, libnl-genl-3-dev [linux-any], docbook-utils, autoconf-archive, bison, flex"
+    "debhelper-compat (= 13), libglib2.0-dev (\u003e= 2.26.0), libgnutls28-dev, libnl-genl-3-dev [linux-any], docbook-utils, docbook, po-debconf, autoconf-archive, bison, flex"
   ],
   "Checksums-Sha256": [
-    "2e43839da9ea4524a34c1970ac7bff65a505ad51f6c2ef632298a5b02b11d41d 1534 nbd_3.26.1-1.dsc f0cf509fa5b20b1a07f7904eb637e9b47d3e30b6ed6f00075af5d8b701c78fef 570628 nbd_3.26.1.orig.tar.xz 689a4af5977dc496df5692c14496527d56b67bf6d2200ace0fd3f5f69b65a1af 74488 nbd_3.26.1-1.debian.tar.xz"
+    "249210e0eac85414a82daf89063df0e41e9680add0e9538c9817420b5ffe0d47 1621 nbd_3.26.1-2.dsc f0cf509fa5b20b1a07f7904eb637e9b47d3e30b6ed6f00075af5d8b701c78fef 570628 nbd_3.26.1.orig.tar.xz d050dbba193d82a672b4b03b4a331d06f3571990a87768b774be28fb2fee5826 77428 nbd_3.26.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/nbd"
   ],
   "Files": [
-    "c8c1b038504771fd493ff7d0e0fe8dda 1534 nbd_3.26.1-1.dsc 9a15e88f2b63d467ce5a6db1da8a2f0f 570628 nbd_3.26.1.orig.tar.xz ca47ae9ccab67fe48ae289d399024f77 74488 nbd_3.26.1-1.debian.tar.xz"
+    "503e429b49d793e80c41a2d5a3895f02 1621 nbd_3.26.1-2.dsc 9a15e88f2b63d467ce5a6db1da8a2f0f 570628 nbd_3.26.1.orig.tar.xz 6f1da413efbaed48e95d29917128eab9 77428 nbd_3.26.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "awk, debvm, e2fsprogs, openssh-client, uidmap"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/wouter/nbd"
   ],
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/wouter/nbd.git"
   ],
   "Version": [
-    "1:3.26.1-1"
+    "1:3.26.1-2"
   ]
 }
