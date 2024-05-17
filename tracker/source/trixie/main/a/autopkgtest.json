@@ -6,19 +6,19 @@
     "autopkgtest"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), fakeroot, procps, pycodestyle | pep8, pyflakes3, python3 (\u003e= 3.3), python3-debian, python3-docutils, python3-mock"
+    "debhelper-compat (= 13), fakeroot \u003c!nocheck\u003e, pre-commit \u003c!nocheck\u003e, procps \u003c!nocheck\u003e, pycodestyle | pep8 \u003c!nocheck\u003e, pyflakes3 \u003c!nocheck\u003e, python3 (\u003e= 3.8), python3-debian \u003c!nocheck\u003e, python3-docutils, shellcheck \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "627a608e2561c3c687b4a8c6a95e57334702f284c88f41df5241b3f210bcb4b3 2136 autopkgtest_5.34.dsc c6958d13f50de7db50198047782fde58a1abe8dda3ea28135162a5dca0e5d2e2 221008 autopkgtest_5.34.tar.xz"
+    "dacf1ada796c1b62df31977f97dfa75af7c67d6ff0a3e6d6e438e5bcc7a7070f 2214 autopkgtest_5.35.dsc 3bdaea392c99b7b7dbb853613631c992670b4a6a14e9f48cb38e0a4f25b67775 223196 autopkgtest_5.35.tar.xz"
   ],
   "Dgit": [
-    "be973105ab2b330c928b968c9727380c5e76993a debian archive/debian/5.34 https://git.dgit.debian.org/autopkgtest"
+    "4042574baa325eb25a16dbd37927e78c68f46e56 debian archive/debian/5.35 https://git.dgit.debian.org/autopkgtest"
   ],
   "Directory": [
     "pool/main/a/autopkgtest"
   ],
   "Files": [
-    "07fc32c38ec2d07bbec7ed52d241bfd3 2136 autopkgtest_5.34.dsc 251f7b3d94aa659b5f4a27e4e051f1b7 221008 autopkgtest_5.34.tar.xz"
+    "ee25e8ef33941c98c38ae90e423e66fc 2214 autopkgtest_5.35.dsc f87268650446b2de1919b326a61ca12f 223196 autopkgtest_5.35.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "adduser, autodep8, build-essential, buildah, ca-certificates, catatonit, debhelper, debian-archive-keyring, debootstrap, devscripts, distro-info, dnsmasq, dnsmasq-base, docker.io, dumb-init, fakeroot, golang-github-containernetworking-plugin-dnsname, iptables, libpam-cgfs, lxc, lxc-templates, lxcfs, lxd, mmdebstrap, podman, python3-distro-info, rsync, sbuild, schroot, slirp4netns, tini, uidmap, util-linux"
+    "adduser, autodep8, build-essential, buildah, ca-certificates, catatonit, debhelper, debian-archive-keyring, debootstrap, devscripts, distro-info, dnsmasq, dnsmasq-base, docker.io, dumb-init, fakeroot, golang-github-containernetworking-plugin-dnsname, iptables, libpam-cgfs, lxc, lxc-templates, lxcfs, lxd, lxd-installer, mmdebstrap, podman, python3-distro-info, rsync, sbuild, schroot, slirp4netns, tini, uidmap, util-linux"
   ],
   "Uploaders": [
     "Ian Jackson \u003cijackson@chiark.greenend.org.uk\u003e, Martin Pitt \u003cmpitt@debian.org\u003e, Antonio Terceiro \u003cterceiro@debian.org\u003e, Paul Gevers \u003celbrus@debian.org\u003e, Simon McVittie \u003csmcv@debian.org\u003e, Paride Legovini \u003cparide@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/ci-team/autopkgtest.git"
   ],
   "Version": [
-    "5.34"
+    "5.35"
   ]
 }
