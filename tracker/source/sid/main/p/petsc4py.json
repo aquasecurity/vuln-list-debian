@@ -3,19 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "python3-petsc4py, python3-petsc4py-real, python3-petsc4py-complex, python3-petsc4py-real3.19, python3-petsc4py-complex3.19, python3-petsc4py-64-real, python3-petsc4py-64-complex, python3-petsc4py-64-real3.19, python3-petsc4py-64-complex3.19, python-petsc4py-doc"
+    "python3-petsc4py, python3-petsc4py-real, python3-petsc4py-complex, python3-petsc4py-real3.20, python3-petsc4py-complex3.20, python3-petsc4py-64-real, python3-petsc4py-64-complex, python3-petsc4py-64-real3.20, python3-petsc4py-64-complex3.20, python-petsc4py-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all-dev (\u003e= 3.3), python3-distutils, cython3-legacy (\u003e= 0.24~), python3-numpy (\u003e= 1:1.4.1-4~), libpetsc-real3.19-dev, libpetsc-complex3.19-dev, libpetsc64-real3.19-dev, libpetsc64-complex3.19-dev, chrpath, mpi-default-dev, libhdf5-mpi-dev, sphinx | python3-sphinx | dh-sequence-sphinxdoc, texinfo \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-python, python3-all-dev (\u003e= 3.3), cython3 (\u003e= 3~), python3-numpy (\u003e= 1:1.4.1-4~), libpetsc-real3.20-dev, libpetsc-complex3.20-dev, libpetsc64-real3.20-dev, libpetsc64-complex3.20-dev, chrpath, mpi-default-dev, libhdf5-mpi-dev, sphinx | python3-sphinx | dh-sequence-sphinxdoc"
+  ],
+  "Build-Depends-Indep": [
+    "petsc3.20-doc \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python-mpi4py-doc \u003c!nodoc\u003e, python-pyopencl-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c53abda3c33dda3da33ca608b34a03fcbc9f9d380bb104c677ce2330a6d6e093 3136 petsc4py_3.19.6-7.dsc 346283b3c5716c08c7c2ef3e59095820171c37430ff24458e344b7ab1a9b766c 287827 petsc4py_3.19.6.orig.tar.gz 7bfbb109f871a0dc6bc95fef815164f6a11eaa12b89ae11d00cbe936c092ac4f 14656 petsc4py_3.19.6-7.debian.tar.xz"
+    "8bd5f5865cd0b10dd16dbc1c5f649118706bf1f1daec36904573648b53c58eae 3293 petsc4py_3.20.5-2.dsc 2f40a6a7bfdaa2bca7c1f3e739ab7c74aba8d95db05aa1d120826eec904bbc16 412642 petsc4py_3.20.5.orig.tar.gz da8866111841221c444cf6941fc83a8598849337a4456a267f745c17068a34ab 15672 petsc4py_3.20.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/petsc4py"
   ],
   "Files": [
-    "57336437349dc15da2ff1ea11ba9824d 3136 petsc4py_3.19.6-7.dsc 35e302c31ba4235d6cfbcb3fe5e4a682 287827 petsc4py_3.19.6.orig.tar.gz 4ffedf782aa12251ee399b7613161925 14656 petsc4py_3.19.6-7.debian.tar.xz"
+    "5e7e218685522c75e7f2ccbd5fa1dbf4 3293 petsc4py_3.20.5-2.dsc 1bd407d09a65c043acf75e5f701265be 412642 petsc4py_3.20.5.orig.tar.gz 9a23aaee12b25042eeb2596be7be11bf 15672 petsc4py_3.20.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "petsc4py"
   ],
   "Package-List": [
-    "python-petsc4py-doc deb doc optional arch=all python3-petsc4py deb python optional arch=all python3-petsc4py-64-complex deb python optional arch=all python3-petsc4py-64-complex3.19 deb python optional arch=any python3-petsc4py-64-real deb python optional arch=all python3-petsc4py-64-real3.19 deb python optional arch=any python3-petsc4py-complex deb python optional arch=all python3-petsc4py-complex3.19 deb python optional arch=any python3-petsc4py-real deb python optional arch=all python3-petsc4py-real3.19 deb python optional arch=any"
+    "python-petsc4py-doc deb doc optional arch=all python3-petsc4py deb python optional arch=all python3-petsc4py-64-complex deb python optional arch=all python3-petsc4py-64-complex3.20 deb python optional arch=any python3-petsc4py-64-real deb python optional arch=all python3-petsc4py-64-real3.20 deb python optional arch=any python3-petsc4py-complex deb python optional arch=all python3-petsc4py-complex3.20 deb python optional arch=any python3-petsc4py-real deb python optional arch=all python3-petsc4py-real3.20 deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, gzip, pkg-config, python3-numpy"
+    "@builddeps@, gzip, pkg-config, python3-all, python3-numpy"
   ],
   "Uploaders": [
     "Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/science-team/petsc4py.git"
   ],
   "Version": [
-    "3.19.6-7"
+    "3.20.5-2"
   ]
 }
