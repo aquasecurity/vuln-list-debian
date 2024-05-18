@@ -6,16 +6,16 @@
     "libmariadb-dev, libmariadb-dev-compat, libmariadb3, libmariadbd19t64, libmariadbd-dev, mariadb-common, mariadb-client-core, mariadb-client, mariadb-server-core, mariadb-server, mariadb-server-10.5, mariadb-backup, mariadb-plugin-connect, mariadb-plugin-s3, mariadb-plugin-rocksdb, mariadb-plugin-oqgraph, mariadb-plugin-mroonga, mariadb-plugin-spider, mariadb-plugin-gssapi-server, mariadb-plugin-gssapi-client, mariadb-plugin-cracklib-password-check, mariadb-plugin-hashicorp-key-management, mariadb-plugin-provider-bzip2, mariadb-plugin-provider-lz4, mariadb-plugin-provider-lzma, mariadb-plugin-provider-lzo, mariadb-plugin-provider-snappy, mariadb-test, mariadb-test-data"
   ],
   "Build-Depends": [
-    "bison, cmake, cracklib-runtime \u003c!nocheck\u003e, debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.22.5), gdb \u003c!nocheck\u003e, libboost-dev, libbz2-dev, libcrack2-dev (\u003e= 2.9.0), libcurl4-openssl-dev | libcurl4-dev, libedit-dev, libedit-dev:native, libfmt-dev (\u003e= 7.0.0), libjemalloc-dev [linux-any], libjudy-dev, libkrb5-dev, liblz4-dev, liblzma-dev, liblzo2-dev, libncurses-dev, libnuma-dev [linux-any], libpam0g-dev, libpcre2-dev, libpmem-dev [amd64 arm64 ppc64el riscv64], libsnappy-dev, libssl-dev, libssl-dev:native, libsystemd-dev [linux-any], liburing-dev [linux-any], libxml2-dev, libzstd-dev (\u003e= 1.3.3), lsb-release, perl:any, po-debconf, psmisc, unixodbc-dev, uuid-dev, zlib1g-dev (\u003e= 1:1.1.3-5~), zlib1g-dev:native"
+    "bison, cmake, cracklib-runtime \u003c!nocheck\u003e, debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.22.5), gdb \u003c!nocheck\u003e, libboost-dev, libbz2-dev, libcrack2-dev (\u003e= 2.9.0), libcurl4-openssl-dev | libcurl4-dev, libedit-dev, libedit-dev:native, libfmt-dev (\u003e= 10.2.2) | libfmt-dev (\u003c\u003c 10), libjemalloc-dev [linux-any], libjudy-dev, libkrb5-dev, liblz4-dev, liblzma-dev, liblzo2-dev, libncurses-dev, libnuma-dev [linux-any], libpam0g-dev, libpcre2-dev, libpmem-dev [amd64 arm64 ppc64el riscv64], libsnappy-dev, libssl-dev, libssl-dev:native, libsystemd-dev [linux-any], liburing-dev [linux-any], libxml2-dev, libzstd-dev (\u003e= 1.3.3), lsb-release, perl:any, po-debconf, psmisc, unixodbc-dev, uuid-dev, zlib1g-dev (\u003e= 1:1.1.3-5~), zlib1g-dev:native"
   ],
   "Checksums-Sha256": [
-    "152e15c08bf60e7eae2a433a9344ac5b8a1e55dab80d932854e48bc98cc64fc0 5078 mariadb_10.11.7-4.dsc 9aa2e3445fadd52524505c8d9c9bd08e4a4f51600b5c2d7933fe18ae6b1c53ca 96991805 mariadb_10.11.7.orig.tar.gz c321165b783d41fa14e87d1cadd85a9241a2aabe8a389f4e9a2f9bd5658a2065 279328 mariadb_10.11.7-4.debian.tar.xz"
+    "66dd4a2a1d8b14e2c8879250a8de25c4bc2f13fe824ae374a3c6597f9a037027 5355 mariadb_10.11.8-1.dsc 5f04f3e33d9f1cbeff05e79c54d41d302630500c995aee72b0638e2f9dfcdf0f 100913048 mariadb_10.11.8.orig.tar.gz 1173697074df0e0eadc4518bdaa988349fc3c7180cb6d6ea39a41eabc60c6b3c 833 mariadb_10.11.8.orig.tar.gz.asc 59eb1c5c6ffcc97c5ac89e6d846d8a3d1f61a7c58fd72cdf3cb1cecb3d2821da 278332 mariadb_10.11.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mariadb"
   ],
   "Files": [
-    "0faa2f828edcff597749795d73df5405 5078 mariadb_10.11.7-4.dsc 2987250d26f39c02443051569ee2385e 96991805 mariadb_10.11.7.orig.tar.gz 36fee5f73f1c7c340cff23d68fc41b3d 279328 mariadb_10.11.7-4.debian.tar.xz"
+    "13872782d37035a774834fe68287d04c 5355 mariadb_10.11.8-1.dsc ba7abfae7947893c5a5343180808b0cb 100913048 mariadb_10.11.8.orig.tar.gz ec8ab488ccca2b1daada17ac5fcf833f 833 mariadb_10.11.8.orig.tar.gz.asc 23a9b68cb15d48a570b073a669dbd987 278332 mariadb_10.11.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "diffutils, eatmydata"
   ],
   "Uploaders": [
-    "Otto Kekäläinen \u003cotto@debian.org\u003e"
+    "Otto Kekäläinen \u003cotto@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/mariadb-team/mariadb-server"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/mariadb-team/mariadb-server.git"
   ],
   "Version": [
-    "1:10.11.7-4"
+    "1:10.11.8-1"
   ]
 }
