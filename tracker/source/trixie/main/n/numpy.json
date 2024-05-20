@@ -1,27 +1,30 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "python3-numpy"
+    "python3-numpy, python-numpy-doc"
   ],
   "Build-Depends": [
     "cython3:native (\u003e= 3.0), debhelper-compat (= 13), dh-python, dh-sequence-python3, gfortran [amd64 arm64 ppc64el] \u003c!nocheck\u003e, libblas-dev [!arm !m68k], liblapack-dev [!arm !m68k], libpython3-all-dev, mypy \u003c!nocheck\u003e, ninja-build, pybuild-plugin-pyproject, python3-all-dev:any, python3-charset-normalizer \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-mesonpy:native, python3-pyproject-metadata:native, python3-pytest \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-setuptools \u003c!nocheck\u003e, python3-typing-extensions (\u003e= 4.2.0) \u003c!nocheck\u003e, python3-tz \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e"
   ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python-imageio-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e, python-pytest-doc \u003c!nodoc\u003e, python-scipy-doc \u003c!nodoc\u003e, python-skimage-doc \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-ipython \u003c!nodoc\u003e, python3-matplotlib \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-pickleshare \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "58a254683a9474c2e706d91e350764376a97226e62baaa5380bed35eeb0b5ece 3017 numpy_1.26.4+ds-8.dsc 6d7439af1de399433eb44fce065d22000b0480e6d153f013697d58387defb6af 11269580 numpy_1.26.4+ds.orig.tar.xz 068521b75a99e7e2248fec6b45cfcce137324430174a1a0360271dc0a448e06e 25264 numpy_1.26.4+ds-8.debian.tar.xz"
+    "dcdabfe1fb97f2934a066d39806ab80ecfe38e69bfc62ec0ce56f03dde77cfe9 3572 numpy_1.26.4+ds-10.dsc 6d7439af1de399433eb44fce065d22000b0480e6d153f013697d58387defb6af 11269580 numpy_1.26.4+ds.orig.tar.xz 2ae2cc59cd06e09f0ce710eb8044c4422021fbc62cc7f280becfe76da399f8e2 155748 numpy_1.26.4+ds-10.debian.tar.xz"
   ],
   "Description": [
     "Fast array facility to the Python language NumPy contains a powerful N-dimensional array object, sophisticated (broadcasting) functions, tools for integrating C/C++ and Fortran code, and useful linear algebra, Fourier transform, and random number capabilities."
   ],
   "Dgit": [
-    "a28192c63f0b261f6a4870defcce51bf35cb3bd8 debian archive/debian/1%1.26.4+ds-8 https://git.dgit.debian.org/numpy"
+    "0eeee5778c0d483fdb09fad4898c4a3d602762ca debian archive/debian/1%1.26.4+ds-10 https://git.dgit.debian.org/numpy"
   ],
   "Directory": [
     "pool/main/n/numpy"
   ],
   "Files": [
-    "2a7ead4b509733d1c623d6f1085f2c5d 3017 numpy_1.26.4+ds-8.dsc 9fc752fe1de9869a6bbd93234dd9a093 11269580 numpy_1.26.4+ds.orig.tar.xz 1fd69b934479dcd8bd6a8671e3ab58a6 25264 numpy_1.26.4+ds-8.debian.tar.xz"
+    "646bdc5749ca082311123e8020dbc293 3572 numpy_1.26.4+ds-10.dsc 9fc752fe1de9869a6bbd93234dd9a093 11269580 numpy_1.26.4+ds.orig.tar.xz 46e00d506520bd9e8d214767a69f30ba 155748 numpy_1.26.4+ds-10.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +39,7 @@
     "numpy"
   ],
   "Package-List": [
-    "python3-numpy deb python optional arch=any"
+    "python-numpy-doc deb doc optional arch=all profile=!nodoc python3-numpy deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -60,6 +63,6 @@
     "https://salsa.debian.org/python-team/packages/numpy.git"
   ],
   "Version": [
-    "1:1.26.4+ds-8"
+    "1:1.26.4+ds-10"
   ]
 }
