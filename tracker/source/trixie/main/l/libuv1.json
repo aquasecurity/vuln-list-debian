@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any hurd-any"
+    "linux-any hurd-any all"
   ],
   "Binary": [
-    "libuv1-dev, libuv1t64"
+    "libuv1-dev, libuv1t64, libuv1-doc"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 13), dh-exec, netbase, pkg-config"
+    "cmake, debhelper-compat (= 13), dh-exec, dh-sequence-sphinxdoc \u003c!nodoc\u003e, netbase, pkgconf, sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c4fd1802c6511713d51127bcbb732e8dc6945887c9d936b8f953932e58d33cc9 2022 libuv1_1.48.0-1.1.dsc 95b66faf3c19b021eb475c0a04c4febfe0442efbd88bca3174d32a1f8957cb71 1322696 libuv1_1.48.0.orig.tar.gz 9ef0040ce04b10a66d6ecc48cbb5412d6d4a39a7b66b8bb8ec8760f354e39c09 21592 libuv1_1.48.0-1.1.debian.tar.xz"
+    "2b73ec0130571425d1d24f9e9b5ed4398c85be019923fd8d83e52b69b4050ba7 2092 libuv1_1.48.0-4.dsc 95b66faf3c19b021eb475c0a04c4febfe0442efbd88bca3174d32a1f8957cb71 1322696 libuv1_1.48.0.orig.tar.gz d144de5e4de0ac72a4b8fd12873cc5223ab1ad936dadd03285e38bfe40d17897 22704 libuv1_1.48.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libu/libuv1"
   ],
   "Files": [
-    "8e747d4e51e13da2aaa49e7f35a6ef4e 2022 libuv1_1.48.0-1.1.dsc bf42b4cdae4b327bf9d91908961421a2 1322696 libuv1_1.48.0.orig.tar.gz 8fca9915466a7d89d0db8f629592281b 21592 libuv1_1.48.0-1.1.debian.tar.xz"
+    "eb0a6fb3eeb7fee58a69b01d2c2735d0 2092 libuv1_1.48.0-4.dsc bf42b4cdae4b327bf9d91908961421a2 1322696 libuv1_1.48.0.orig.tar.gz 37ea2c74a0e675e81a9211e8f6b21c8c 22704 libuv1_1.48.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libuv1"
   ],
   "Package-List": [
-    "libuv1-dev deb libdevel optional arch=linux-any,hurd-any libuv1t64 deb libs optional arch=linux-any,hurd-any"
+    "libuv1-dev deb libdevel optional arch=linux-any,hurd-any libuv1-doc deb doc optional arch=all libuv1t64 deb libs optional arch=linux-any,hurd-any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/libuv1.git"
   ],
   "Version": [
-    "1.48.0-1.1"
+    "1.48.0-4"
   ]
 }
