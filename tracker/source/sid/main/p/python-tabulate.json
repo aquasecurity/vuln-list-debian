@@ -6,16 +6,16 @@
     "python3-tabulate"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-wcwidth"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm, python3-wcwidth"
   ],
   "Checksums-Sha256": [
-    "9e56b9688d9194535a852ea17164e28e7260485db2a17f64e56501b6809adfcb 2156 python-tabulate_0.8.10-1.dsc 7a81a625d3cdfdd7c9db25f992410f46e7cbb20ed151126fceeac95586b90284 49453 python-tabulate_0.8.10.orig.tar.gz 3a97742926d35ee2a0a063090138374c17501bbe936e051d5bd1d539a0527fba 4524 python-tabulate_0.8.10-1.debian.tar.xz"
+    "b2a8c2e8c5fc206af3c76b53af177d78f0165df2b6330c1869e0e89eb76dd2f1 2308 python-tabulate_0.9.0-1.dsc 0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c 81090 python-tabulate_0.9.0.orig.tar.gz 282b55a09d82bff9427c17d246eb5afb352c8075077684410d661ebd951471ce 5164 python-tabulate_0.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-tabulate"
   ],
   "Files": [
-    "d459dcea5aa178bb6458d77bfc8de04b 2156 python-tabulate_0.8.10-1.dsc 20e05407c171830cc4a80703a7773d67 49453 python-tabulate_0.8.10.orig.tar.gz 4e7b290ff9ded273610c7ccc6c257a4e 4524 python-tabulate_0.8.10-1.debian.tar.xz"
+    "505123baef2b662309c9355d3cbccb63 2308 python-tabulate_0.9.0-1.dsc 3b10bb64f8a06ca7549d3481b7e6c028 81090 python-tabulate_0.9.0.orig.tar.gz 93a0a167531327592d656079a36dd51a 5164 python-tabulate_0.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-numpy, python3-pandas, python3-pytest, python3-wcwidth"
   ],
   "Uploaders": [
     "Yago González \u003cyagogonzalezg@gmail.com\u003e, ChangZhuo Chen (陳昌倬) \u003cczchen@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-tabulate.git"
   ],
   "Version": [
-    "0.8.10-1"
+    "0.9.0-1"
   ]
 }
