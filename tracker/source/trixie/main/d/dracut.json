@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "dracut, dracut-core, dracut-network, dracut-squash, dracut-live, dracut-config-generic, dracut-config-rescue"
+    "dracut, dracut-core, dracut-install, dracut-network, dracut-squash, dracut-live, dracut-config-generic, dracut-config-rescue"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), debhelper, asciidoc-base, xsltproc, docbook-xsl, docbook-xml, quilt, libkmod-dev, pkg-config"
+    "debhelper-compat (= 12), debhelper, asciidoc-base, xsltproc, docbook-xsl, docbook-xml, quilt, libkmod-dev, pkgconf, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "04ef697798ebf447342808f0fd0d47cee26d1913bf6cfe33f143fda722d302e3 2304 dracut_060+5-1.dsc 74ebb69e0bdbd9d960f9909b446a26d02eb584c623d748fa5a22fd6c5b2be183 379172 dracut_060+5.orig.tar.xz 541125ef2fd76c240c03b731ef369e3f075532004ee929a2245b731efb9cba57 15936 dracut_060+5-1.debian.tar.xz"
+    "418048ed9bc669bbc941a48afd48f70ea6ad9f3124d78c97a8d5235e0f221747 2688 dracut_060+5-8.dsc 74ebb69e0bdbd9d960f9909b446a26d02eb584c623d748fa5a22fd6c5b2be183 379172 dracut_060+5.orig.tar.xz d4f37a9d50e725fadd6f628de4ba4f60be9f0e9b3ef6a86f2f6ea4ce3d35fc23 19036 dracut_060+5-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dracut"
   ],
   "Files": [
-    "34519e8a29766b76d984411b8ed628cd 2304 dracut_060+5-1.dsc 8061d5a3b712693c912a4e6614986b7d 379172 dracut_060+5.orig.tar.xz 952ac8c6b5ce0ee4a0bcb98945c8ce25 15936 dracut_060+5-1.debian.tar.xz"
+    "3e527f81aa1413b9fb8b30cca5e9594b 2688 dracut_060+5-8.dsc 8061d5a3b712693c912a4e6614986b7d 379172 dracut_060+5.orig.tar.xz 5e4064035c3e4c90226b9d3f3981def0 19036 dracut_060+5-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "dracut"
   ],
   "Package-List": [
-    "dracut deb utils optional arch=all dracut-config-generic deb utils optional arch=all dracut-config-rescue deb utils optional arch=all dracut-core deb utils optional arch=any dracut-live deb utils optional arch=all dracut-network deb utils optional arch=all dracut-squash deb utils optional arch=all"
+    "dracut deb utils optional arch=all dracut-config-generic deb utils optional arch=all dracut-config-rescue deb utils optional arch=all dracut-core deb utils optional arch=any dracut-install deb utils optional arch=any dracut-live deb utils optional arch=all dracut-network deb utils optional arch=all dracut-squash deb utils optional arch=all"
   ],
   "Priority": [
     "source"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "btrfs-progs, busybox, cryptsetup, fdisk, gawk, iproute2, iputils-ping, isc-dhcp-client, isc-dhcp-server, kbd, linux-image-generic, lvm2, make, mdadm, mount, nbd-client, nbd-server, parted, procps, qemu-kvm, squashfs-tools, systemd-boot-efi, systemd-sysv, util-linux, vim"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/dracut"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/dracut.git"
   ],
   "Version": [
-    "060+5-1"
+    "060+5-8"
   ]
 }
