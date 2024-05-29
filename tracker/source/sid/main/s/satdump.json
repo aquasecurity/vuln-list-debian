@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "satdump"
+    "satdump, satdump-data"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), pkgconf, libfftw3-dev, libvolk-dev | libvolk2-dev, libpng-dev, libluajit-5.1-dev, libnng-dev, librtlsdr-dev, libhackrf-dev, libairspy-dev, libairspyhf-dev, libglew-dev, libglfw3-dev, libzstd-dev, libomp-dev, ocl-icd-opencl-dev"
+    "cmake, debhelper-compat (= 13), pkgconf, libfftw3-dev, libtiff-dev, libjemalloc-dev, libvolk-dev | libvolk2-dev, libpng-dev, libnng-dev, librtlsdr-dev, libhackrf-dev, libairspy-dev, libairspyhf-dev, libglfw3-dev, zenity, libzstd-dev, libomp-dev, ocl-icd-opencl-dev, intel-opencl-icd [!arm64], libarmadillo-dev"
   ],
   "Checksums-Sha256": [
-    "89fecff2d637e65b32c1c4ba075a301bcf6f62a76b2a29b4cf1f775ad3f9cd31 1943 satdump_1.1.2-1.dsc 6979463793b58a7ef62c6d61d4cb826396d0f625b95efe418251a7b02b6e87ed 27554520 satdump_1.1.2.orig.tar.gz 9ed7287dbcc10a9e3dd82a3fc1cc2694766726970cfe7d7ce7ce17e1ccf3b797 11428 satdump_1.1.2-1.debian.tar.xz"
+    "8769cb098d81dbdd160d608d635e2acd4ec8f1d512b090de26e5265f88d0c3a9 2161 satdump_1.2.0-1.dsc 099d51864a0a3e374b0d12a9ad13d8ac263b9ab0cb88d4e5b08c2b72b9afb20e 31627921 satdump_1.2.0.orig.tar.gz 9a784704c79be445a9ee85338927ce5948cdf48687aab74ed814087d09eec530 11816 satdump_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/satdump"
   ],
   "Files": [
-    "ac6e460beeacadbb6e0334eccb2f20e5 1943 satdump_1.1.2-1.dsc c7bbd6cd82d27b2ffa1c64fae236262f 27554520 satdump_1.1.2.orig.tar.gz 46bf37ec635de5a3947522cc30ebcf02 11428 satdump_1.1.2-1.debian.tar.xz"
+    "8e22c05c0f411452a23f32d6dded7416 2161 satdump_1.2.0-1.dsc cf8ba9cbaf22f0a7585eadc214d6ce52 31627921 satdump_1.2.0.orig.tar.gz e3f7f74cc77a2c2e00c1f4b62be927c2 11816 satdump_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "satdump"
   ],
   "Package-List": [
-    "satdump deb hamradio optional arch=any"
+    "satdump deb hamradio optional arch=any satdump-data deb hamradio optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,9 +39,15 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/svone/satdump"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/svone/satdump.git"
   ],
   "Version": [
-    "1.1.2-1"
+    "1.2.0-1"
   ]
 }
