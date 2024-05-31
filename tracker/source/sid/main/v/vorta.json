@@ -6,16 +6,16 @@
     "vorta"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, python3-all, python3-setuptools, qttools5-dev-tools, borgbackup \u003c!nocheck\u003e, dbus-daemon \u003c!nocheck\u003e, libqt5svg5 \u003c!nocheck\u003e, openssh-client \u003c!nocheck\u003e, python3-mock \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-paramiko (\u003e= 2.6.0-1~) \u003c!nocheck\u003e, python3-peewee \u003c!nocheck\u003e, python3-platformdirs \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pyqt5 \u003c!nocheck\u003e, python3-pytestqt \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, qtchooser"
+    "debhelper-compat (= 13), pybuild-plugin-pyproject, dh-sequence-python3, python3-all, pyqt6-dev-tools, borgbackup \u003c!nocheck\u003e, dbus-daemon \u003c!nocheck\u003e, fuse3 \u003c!nocheck\u003e, libqt6svg6 \u003c!nocheck\u003e, openssh-client \u003c!nocheck\u003e, python3-pyfuse3 \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-peewee \u003c!nocheck\u003e, python3-platformdirs \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pyqt6 \u003c!nocheck\u003e, python3-pytestqt \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, qt6-l10n-tools"
   ],
   "Checksums-Sha256": [
-    "7262033a03e2eb2d7a536507af1cfb98695d5a00749a7a242fc500074d260b07 1971 vorta_0.8.12-2.dsc 697a1d6f6f93b1b2447c7f19cf250d24d72e2f784e62c54287d9ee39cac59f38 833844 vorta_0.8.12.orig.tar.gz 1b1546312e86db39184ebaa24b98c43701ab46cf22e29c7b1d187332492c6a79 9600 vorta_0.8.12-2.debian.tar.xz"
+    "c6c7c72baf51668b657f2940070d7c35a566a916f5970cab77dbbefc400d8622 2554 vorta_0.9.1-1.dsc c276057ab48a8eff2256b8b6e233f57165aae83c75c9bfcc801ecfe7823b8790 896262 vorta_0.9.1.orig.tar.gz a32a66507c42c5266b66d79606fc771f69572873b4600dedcdcf200fff280eea 13344 vorta_0.9.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/v/vorta"
   ],
   "Files": [
-    "a2cf4daac8cf8d4a53352280a2e36ede 1971 vorta_0.8.12-2.dsc edf28c5fb3aabad1663dcda3e4547675 833844 vorta_0.8.12.orig.tar.gz fd7270be38aaeaa0c0cf444881a2cff3 9600 vorta_0.8.12-2.debian.tar.xz"
+    "b4d3d0d30123ca7a0d6b806ce468ee64 2554 vorta_0.9.1-1.dsc aa4e3b426979e4124c6d23b959519c8b 896262 vorta_0.9.1.orig.tar.gz 69a23b8912a09f2ee34983c88855e1c3 13344 vorta_0.9.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "borgbackup, openssh-client, python3-all, python3-mock, python3-pytest-forked, python3-pytest-mock, python3-pytestqt, xauth, xvfb"
+    "borgbackup, fuse3, openssh-client, python3-all, python3-pyfuse3, python3-pytest-forked, python3-pytest-mock, python3-pytestqt, xauth, xvfb"
   ],
   "Uploaders": [
     "Nicholas D Steeves \u003csten@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/vorta.git"
   ],
   "Version": [
-    "0.8.12-2"
+    "0.9.1-1"
   ]
 }
