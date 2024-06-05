@@ -6,16 +6,16 @@
     "librust-wadl-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-mime-0.3+default-dev \u003c!nocheck\u003e, librust-reqwest-0.11+default-dev (\u003e= 0.11.22-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-xmltree-0.10+default-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-form-urlencoded-1+default-dev (\u003e= 1.2.1-~~) \u003c!nocheck\u003e, librust-iri-string-0.7+default-dev \u003c!nocheck\u003e, librust-iri-string-0.7+std-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.21-~~) \u003c!nocheck\u003e, librust-mime-0.3+default-dev (\u003e= 0.3.17-~~) \u003c!nocheck\u003e, librust-reqwest-0.11+blocking-dev \u003c!nocheck\u003e, librust-reqwest-0.11+default-dev \u003c!nocheck\u003e, librust-reqwest-0.11+json-dev \u003c!nocheck\u003e, librust-reqwest-0.11+multipart-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.107-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-xmltree-0.10+default-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "80bf329277e15c47caf14ac59eef971985a25931b03811531087d8ec1b3e147f 2098 rust-wadl_0.1.4-1.dsc 9c26613b6cf975af362e2224caa3c557ba47aa18b1918f71fa58ef14f8028c82 18422 rust-wadl_0.1.4.orig.tar.gz fbcd16ade4f3a2645c7cf4f64c38011654126307281e892041a5b0ced5d3c45d 2524 rust-wadl_0.1.4-1.debian.tar.xz"
+    "6418d7ea2a3a0e340b7fb25b3f0b7c6a32df44bd5707c93ed784ddcfd6eb37fc 2435 rust-wadl_0.3.0-1.dsc ed918faf7b77dadbd6171d539cf06b2277b9ee3aae3aa371322bbc70c60bb931 122465 rust-wadl_0.3.0.orig.tar.gz 2b320741747282f72b693417ae15a66e3cc5ced1dced6ad8508653a3395aa534 2792 rust-wadl_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wadl"
   ],
   "Files": [
-    "df35fbc116a8c0dbf4d25222138744a5 2098 rust-wadl_0.1.4-1.dsc 4bf99a0dae62d0ac0e6b05bd9e4d05d2 18422 rust-wadl_0.1.4.orig.tar.gz 5619d0209688a95011378ffb38f2b630 2524 rust-wadl_0.1.4-1.debian.tar.xz"
+    "52c14b19583cec9e331b5159f069c89f 2435 rust-wadl_0.3.0-1.dsc 108f14309a11a3f601ba8a13276912fe 122465 rust-wadl_0.3.0.orig.tar.gz 43d3f35544d6c57bcb6e976281083c7a 2792 rust-wadl_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-maplit-1+default-dev"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wadl]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.3.0-1"
   ]
 }
