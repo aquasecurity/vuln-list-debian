@@ -12,16 +12,19 @@
     "cmake, debhelper-compat (= 13), libasound2-dev, libcurl4-gnutls-dev | libcurl-dev, libfreetype-dev, libjpeg-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxext-dev, libxinerama-dev, libxrandr-dev, pkg-config, python3:any, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
-    "doxygen, graphviz"
+    "dh-sequence-doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "6f645d79dfe11f898b0cbced53205f9d4c8792d1d73dae5299611ad60227d394 2533 juce_7.0.5+ds-2.dsc 604050e7cac894e8d445da001aa240a55a8295140eb8b803ee852d0eef378c4e 10872152 juce_7.0.5+ds.orig.tar.xz 187e941dc38932d7e87e07abd88b49aaf533782746dd6e0cb6ec391221ac0daa 43036 juce_7.0.5+ds-2.debian.tar.xz"
+    "3d82c6734a40acfbea4604971be2a49fbd5b9a75b3a0f0bb8fad12f9db4cebc0 2731 juce_7.0.12+ds-1.dsc ff817f3f409c116e6184f72bdba4f84196fcb49ecc39babbb2284ab4028b3fe4 11512136 juce_7.0.12+ds.orig.tar.xz 3bb16d7e483b42e00c649142f62a079fad61d6fff3c61ab4c52d6fa921ad6a01 43804 juce_7.0.12+ds-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "42005019bbfaed73ddff127bca50c9e570abc371 debian archive/debian/7.0.12+ds-1 https://git.dgit.debian.org/juce"
   ],
   "Directory": [
     "pool/main/j/juce"
   ],
   "Files": [
-    "496334ebaedf2ae1099ddedc85097608 2533 juce_7.0.5+ds-2.dsc 61dc8e85fcff10690616fecfd62928ba 10872152 juce_7.0.5+ds.orig.tar.xz c6a7fa6a8d58433fc7e4717b2dcfb733 43036 juce_7.0.5+ds-2.debian.tar.xz"
+    "f04c674be5545c68c73a7b48adfd16bb 2731 juce_7.0.12+ds-1.dsc 4c5d63aaf49234cb9a371074b9dfdec5 11512136 juce_7.0.12+ds.orig.tar.xz ab9bb1c25c67abc74a2678ce1d356f05 43804 juce_7.0.12+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +39,7 @@
     "juce"
   ],
   "Package-List": [
-    "juce-modules-source deb devel optional arch=any juce-modules-source-data deb devel optional arch=all juce-tools deb devel optional arch=any libjuce-doc deb doc optional arch=all"
+    "juce-modules-source deb devel optional arch=any juce-modules-source-data deb devel optional arch=all juce-tools deb devel optional arch=any libjuce-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -45,7 +48,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -63,6 +66,6 @@
     "https://salsa.debian.org/multimedia-team/juce.git"
   ],
   "Version": [
-    "7.0.5+ds-2"
+    "7.0.12+ds-1"
   ]
 }

@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "util-linux, util-linux-locales, mount, bsdutils, bsdextrautils, fdisk, fdisk-udeb, libblkid1, libblkid1-udeb, libblkid-dev, libfdisk1, libfdisk1-udeb, libfdisk-dev, libmount1, libmount1-udeb, libmount-dev, libsmartcols1, libsmartcols1-udeb, libsmartcols-dev, libuuid1, uuid-runtime, libuuid1-udeb, uuid-dev, util-linux-udeb, rfkill, eject, eject-udeb, util-linux-extra"
+    "util-linux, util-linux-locales, mount, bsdutils, bsdextrautils, fdisk, fdisk-udeb, libblkid1, libblkid1-udeb, libblkid-dev, libfdisk1, libfdisk1-udeb, libfdisk-dev, libmount1, libmount1-udeb, libmount-dev, libsmartcols1, libsmartcols1-udeb, libsmartcols-dev, libuuid1, uuid-runtime, libuuid1-udeb, uuid-dev, util-linux-udeb, rfkill, eject, eject-udeb, util-linux-extra, liblastlog2-2, liblastlog2-dev, libpam-lastlog2, lastlog2"
   ],
   "Build-Conflicts": [
     "libedit-dev"
   ],
   "Build-Depends": [
-    "asciidoctor \u003c!stage1 !nodoc\u003e, bc \u003c!stage1 !nocheck\u003e, bison, debhelper-compat (= 13), dh-exec, dh-package-notes, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), flex, gettext, libaudit-dev [linux-any] \u003c!stage1\u003e, libcap-ng-dev [linux-any] \u003c!stage1\u003e, libcrypt-dev \u003c!stage1\u003e, libcryptsetup-dev [linux-any] \u003c!pkg.util-linux.noverity\u003e, libncurses-dev, libpam0g-dev \u003c!stage1\u003e, libreadline-dev, libselinux1-dev [linux-any], libsystemd-dev [linux-any] \u003c!stage1\u003e, libtool, libudev-dev [linux-any] \u003c!stage1\u003e, netbase \u003c!stage1 !nocheck\u003e, pkgconf, po-debconf, po4a, socat \u003c!stage1 !nocheck\u003e, systemd [linux-any] \u003c!stage1\u003e, systemd-dev [linux-any] \u003c!stage1\u003e, zlib1g-dev"
+    "asciidoctor \u003c!stage1 !nodoc\u003e, bc \u003c!stage1 !nocheck\u003e, bison, debhelper-compat (= 13), dh-exec, dh-package-notes, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), flex, gettext, libaudit-dev [linux-any] \u003c!stage1\u003e, libcap-ng-dev [linux-any] \u003c!stage1\u003e, libcrypt-dev \u003c!stage1\u003e, libcryptsetup-dev [linux-any] \u003c!pkg.util-linux.noverity\u003e, libncurses-dev, libpam0g-dev \u003c!stage1\u003e, libreadline-dev, libselinux1-dev [linux-any], libsqlite3-dev, libsystemd-dev [linux-any] \u003c!stage1\u003e, libtool, libudev-dev [linux-any] \u003c!stage1\u003e, netbase \u003c!stage1 !nocheck\u003e, pkgconf, po-debconf, po4a, socat \u003c!stage1 !nocheck\u003e, systemd [linux-any] \u003c!stage1\u003e, systemd-dev [linux-any] \u003c!stage1\u003e, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "920a1571dd64bc07bb77002aa720f59575943ffca8607f9b0ba5842a876a1cf4 4647 util-linux_2.40.1-4.dsc 59e676aa53ccb44b6c39f0ffe01a8fa274891c91bef1474752fad92461def24f 8823784 util-linux_2.40.1.orig.tar.xz 80b8022b3c423d8ee3822a50f76b058c2cb64d117f216d99a00fd2b3e44d1e14 105276 util-linux_2.40.1-4.debian.tar.xz"
+    "835dd773eb1bb969450ea7b16f50d2c640f9e0d76801f53893c89dd8b1682a37 4895 util-linux_2.40.1-8.dsc 59e676aa53ccb44b6c39f0ffe01a8fa274891c91bef1474752fad92461def24f 8823784 util-linux_2.40.1.orig.tar.xz 18a580ca89bd466b32ecb25b6e7ddc8aaccb5fc2c7ed1893994a754191044b2a 106124 util-linux_2.40.1-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/util-linux"
   ],
   "Files": [
-    "ba74566c7b0b8d32c121f6731523fee1 4647 util-linux_2.40.1-4.dsc 42ca7b92a3d77087de362f43ac29a3df 8823784 util-linux_2.40.1.orig.tar.xz c2725cb29d6b75af36d8f9d01008fff0 105276 util-linux_2.40.1-4.debian.tar.xz"
+    "b24d99fe45a776b666e3b71578532bfb 4895 util-linux_2.40.1-8.dsc 42ca7b92a3d77087de362f43ac29a3df 8823784 util-linux_2.40.1.orig.tar.xz e73cae207a413f8692c576d2fc70b624 106124 util-linux_2.40.1-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "util-linux"
   ],
   "Package-List": [
-    "bsdextrautils deb utils optional arch=any profile=!stage1 bsdutils deb utils required arch=any profile=!stage1 essential=yes eject deb utils optional arch=linux-any profile=!stage1 eject-udeb udeb debian-installer optional arch=linux-any profile=!stage1,!noudeb fdisk deb utils important arch=any fdisk-udeb udeb debian-installer optional arch=hurd-any,linux-any profile=!stage1,!noudeb libblkid-dev deb libdevel optional arch=any libblkid1 deb libs optional arch=any libblkid1-udeb udeb debian-installer optional arch=any profile=!noudeb libfdisk-dev deb libdevel optional arch=any libfdisk1 deb libs optional arch=any libfdisk1-udeb udeb debian-installer optional arch=any profile=!noudeb libmount-dev deb libdevel optional arch=linux-any libmount1 deb libs optional arch=any libmount1-udeb udeb debian-installer optional arch=linux-any profile=!noudeb libsmartcols-dev deb libdevel optional arch=any libsmartcols1 deb libs optional arch=any libsmartcols1-udeb udeb debian-installer optional arch=any profile=!noudeb libuuid1 deb libs optional arch=any libuuid1-udeb udeb debian-installer optional arch=any profile=!noudeb mount deb admin required arch=linux-any profile=!stage1 rfkill deb utils optional arch=linux-any profile=!stage1 util-linux deb utils required arch=any profile=!stage1 essential=yes util-linux-extra deb utils standard arch=any profile=!stage1 util-linux-locales deb localization optional arch=all profile=!stage1 util-linux-udeb udeb debian-installer optional arch=any profile=!stage1,!noudeb uuid-dev deb libdevel optional arch=any uuid-runtime deb utils optional arch=any profile=!stage1"
+    "bsdextrautils deb utils optional arch=any profile=!stage1 bsdutils deb utils required arch=any profile=!stage1 essential=yes eject deb utils optional arch=linux-any profile=!stage1 eject-udeb udeb debian-installer optional arch=linux-any profile=!stage1,!noudeb fdisk deb utils important arch=any fdisk-udeb udeb debian-installer optional arch=hurd-any,linux-any profile=!stage1,!noudeb lastlog2 deb utils optional arch=any libblkid-dev deb libdevel optional arch=any libblkid1 deb libs optional arch=any libblkid1-udeb udeb debian-installer optional arch=any profile=!noudeb libfdisk-dev deb libdevel optional arch=any libfdisk1 deb libs optional arch=any libfdisk1-udeb udeb debian-installer optional arch=any profile=!noudeb liblastlog2-2 deb libs optional arch=any liblastlog2-dev deb libdevel optional arch=any libmount-dev deb libdevel optional arch=linux-any libmount1 deb libs optional arch=any libmount1-udeb udeb debian-installer optional arch=linux-any profile=!noudeb libpam-lastlog2 deb admin optional arch=any libsmartcols-dev deb libdevel optional arch=any libsmartcols1 deb libs optional arch=any libsmartcols1-udeb udeb debian-installer optional arch=any profile=!noudeb libuuid1 deb libs optional arch=any libuuid1-udeb udeb debian-installer optional arch=any profile=!noudeb mount deb admin required arch=linux-any profile=!stage1 rfkill deb utils optional arch=linux-any profile=!stage1 util-linux deb utils required arch=any profile=!stage1 essential=yes util-linux-extra deb utils standard arch=any profile=!stage1 util-linux-locales deb localization optional arch=all profile=!stage1 util-linux-udeb udeb debian-installer optional arch=any profile=!stage1,!noudeb uuid-dev deb libdevel optional arch=any uuid-runtime deb utils optional arch=any profile=!stage1"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/util-linux.git"
   ],
   "Version": [
-    "2.40.1-4"
+    "2.40.1-8"
   ]
 }
