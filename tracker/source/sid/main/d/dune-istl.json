@@ -6,19 +6,19 @@
     "libdune-istl-dev, libdune-istl-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake (\u003e= 3.13), gfortran, mpi-default-bin, mpi-default-dev, pkgconf, python3, libdune-common-dev (\u003e= 2.9.0), libsuitesparse-dev [!armel !armhf !hppa !hurd-i386 !powerpc !x32], libsuperlu-dev"
+    "debhelper-compat (= 13), cmake (\u003e= 3.13), gfortran, mpi-default-bin, mpi-default-dev, pkgconf, python3, libdune-common-dev (\u003e= 2.9.0), libsuitesparse-dev [!armel !armhf !i386 !hppa !hurd-i386 !powerpc !x32], libsuperlu-dev"
   ],
   "Build-Depends-Indep": [
     "doxygen, ghostscript, graphviz, imagemagick, texlive-latex-extra, texlive-latex-recommended, texlive-pictures"
   ],
   "Checksums-Sha256": [
-    "f98c0ac311ba345c319dde401f4cfa2e89971a169b1bc73e609dd64b24f24810 2366 dune-istl_2.9.0-4.dsc 7e6430422709b31ed7352ba874fd800ca9f6161312501804a1387bf3a519e254 295480 dune-istl_2.9.0.orig.tar.xz 74a7e85b5e732ef98d875b730a54e64fa2b175c1d78e6e8b0adac3c4b9c5235b 8112 dune-istl_2.9.0-4.debian.tar.xz"
+    "67181cb93dd81f1bee43f3556487c931adab0f415a98c64f2bba8aaebc338f50 2481 dune-istl_2.9.0-5.dsc 7e6430422709b31ed7352ba874fd800ca9f6161312501804a1387bf3a519e254 295480 dune-istl_2.9.0.orig.tar.xz b35b42a0c5213743faa9735ffd547c9c4df2bf0851cf300e1bcdb95aefc2133c 8296 dune-istl_2.9.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dune-istl"
   ],
   "Files": [
-    "b93a096e8158727b2abcf380908f54a6 2366 dune-istl_2.9.0-4.dsc 7a66d2d2ceb8672a0fb1f34c07acb334 295480 dune-istl_2.9.0.orig.tar.xz 49e567c572b3ff0d66ec2e57886ad00b 8112 dune-istl_2.9.0-4.debian.tar.xz"
+    "c8a984c31b03997f17545fb9201bd359 2481 dune-istl_2.9.0-5.dsc 7a66d2d2ceb8672a0fb1f34c07acb334 295480 dune-istl_2.9.0.orig.tar.xz 2cdc1568e0945ad634a6574e9d12812d 8296 dune-istl_2.9.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, libsuperlu-dev, mpi-default-bin, mpi-default-dev"
+  ],
   "Uploaders": [
     "Ansgar \u003cansgar@debian.org\u003e, Markus Blatt \u003cmarkus@dr-blatt.de\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/science-team/dune-istl.git"
   ],
   "Version": [
-    "2.9.0-4"
+    "2.9.0-5"
   ]
 }
