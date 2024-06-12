@@ -6,16 +6,16 @@
     "librust-smithay-clipboard-dev, librust-smithay-clipboard+dlopen-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smithay-client-toolkit-0.16+dlopen-dev \u003c!nocheck\u003e, librust-smithay-client-toolkit-0.16-dev \u003c!nocheck\u003e, librust-wayland-client-0.29+default-dev \u003c!nocheck\u003e, librust-wayland-client-0.29+dlopen-dev \u003c!nocheck\u003e, librust-wayland-client-0.29+use-system-lib-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.149-~~) \u003c!nocheck\u003e, librust-smithay-client-toolkit-0.18+calloop-dev \u003c!nocheck\u003e, librust-wayland-backend-0.3+client-system-dev \u003c!nocheck\u003e, librust-wayland-backend-0.3+dlopen-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7f47ebd9899190d1c59c4bbdcf1ce7f7987723c1e7d98a1649016a257ecdc6ef 2767 rust-smithay-clipboard_0.6.6-2.dsc 0a345c870a1fae0b1b779085e81b51e614767c239e93503588e54c5b17f4b0e8 16797 rust-smithay-clipboard_0.6.6.orig.tar.gz c42611232581c38eebfce9edf9e875e33f95d3de568b24db205e11b1bcfb2440 2944 rust-smithay-clipboard_0.6.6-2.debian.tar.xz"
+    "c1510ed23883187c52351af24c31f6cb1fb5c7c7b44805a3517c346ca743d1f4 2783 rust-smithay-clipboard_0.7.1-1.dsc c091e7354ea8059d6ad99eace06dd13ddeedbb0ac72d40a9a6e7ff790525882d 18456 rust-smithay-clipboard_0.7.1.orig.tar.gz 2ee0786933c1b306d3bf6d77f08e0bc49de03b4839d232e10dc6511fadf4e8a5 3028 rust-smithay-clipboard_0.7.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-smithay-clipboard"
   ],
   "Files": [
-    "214c97999875eb29c1f29824d9916805 2767 rust-smithay-clipboard_0.6.6-2.dsc 8996d95a2eaaf23ce02fa9858ac62776 16797 rust-smithay-clipboard_0.6.6.orig.tar.gz f577d864a95d23042bff2e15e3fe3ab4 2944 rust-smithay-clipboard_0.6.6-2.debian.tar.xz"
+    "09ea7eaad8bd111b762dbb109b6e700e 2783 rust-smithay-clipboard_0.7.1-1.dsc 82524d56df67f220fd1232ae2878b84c 18456 rust-smithay-clipboard_0.7.1.orig.tar.gz 211fd769f04540c4fd0ef1a1c7c2ad4a 3028 rust-smithay-clipboard_0.7.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-smithay-client-toolkit-0.16+calloop-dev"
+    "dh-cargo, librust-smithay-client-toolkit-0.18+calloop-dev, librust-smithay-client-toolkit-0.18+xkbcommon-dev"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/smithay-clipboard]"
   ],
   "Version": [
-    "0.6.6-2"
+    "0.7.1-1"
   ]
 }
