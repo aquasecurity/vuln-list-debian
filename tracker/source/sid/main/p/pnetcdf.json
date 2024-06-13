@@ -1,36 +1,36 @@
 {
   "Architecture": [
-    "amd64 arm64 mips64el ppc64el s390x alpha ia64 sparc64 kfreebsd-amd64 ppc64 riscv64"
+    "any"
   ],
   "Binary": [
     "libpnetcdf-dev, pnetcdf-bin, libpnetcdf0d"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gfortran | fortran-compiler, dh-sequence-fortran-mod, mpi-default-dev, libutf8proc-dev, chrpath, texlive-latex-base, ghostscript"
+    "debhelper-compat (= 13), architecture-is-64-bit, gfortran | fortran-compiler, dh-sequence-fortran-mod, mpi-default-dev, libutf8proc-dev, chrpath, texlive-latex-base, ghostscript"
   ],
   "Checksums-Sha256": [
-    "69c0fea88d76e5359277fa18dcd913e7202a5084800c21d2afe87a19766a2c03 2453 pnetcdf_1.12.3-2.dsc 8f54023ffbbd3c8137e5422b44e32324113d5690f1da0cb7ecd5842c2de850a9 1024696 pnetcdf_1.12.3.orig.tar.xz 023d0434ce6e126b3ad91cee36fc4731be9bedc66642beabed4acf58d48c6406 6776 pnetcdf_1.12.3-2.debian.tar.xz"
+    "d4d45708ff6cfa2fbc63b8ea88014b6670872c0848b05890fe4892ddf37785ba 2235 pnetcdf_1.13.0-1.dsc eac3c492f3e7d78841b764db229b547c37391db1ad9f0c0bfce5bbc691d259b5 1631152 pnetcdf_1.13.0.orig.tar.xz ed0dd010bf4e655c83275d4b0fceecea9598de8908cc97901ba1f3a2a0d94ab5 6876 pnetcdf_1.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pnetcdf"
   ],
   "Files": [
-    "8b0a30fc481c30c1211d32b640f91477 2453 pnetcdf_1.12.3-2.dsc b0313c4a15c2597739d25f019215e980 1024696 pnetcdf_1.12.3.orig.tar.xz 4f67adec84af43df2f5c3eff06956af5 6776 pnetcdf_1.12.3-2.debian.tar.xz"
+    "ad4dae6062b26ff255d62a20f1f4d75c 2235 pnetcdf_1.13.0-1.dsc 073a29fc6f047ccfc8c4257cc2b46164 1631152 pnetcdf_1.13.0.orig.tar.xz e2a401f1c66b0993e39ed777fc67337c 6876 pnetcdf_1.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://trac.mcs.anl.gov/projects/parallel-netcdf"
+    "https://parallel-netcdf.github.io/"
   ],
   "Maintainer": [
-    "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
+    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "pnetcdf"
   ],
   "Package-List": [
-    "libpnetcdf-dev deb libdevel optional arch=amd64,arm64,mips64el,ppc64el,s390x,alpha,ia64,sparc64,kfreebsd-amd64,ppc64,riscv64 libpnetcdf0d deb libs optional arch=amd64,arm64,mips64el,ppc64el,s390x,alpha,ia64,sparc64,kfreebsd-amd64,ppc64,riscv64 pnetcdf-bin deb science optional arch=amd64,arm64,mips64el,ppc64el,s390x,alpha,ia64,sparc64,kfreebsd-amd64,ppc64,riscv64"
+    "libpnetcdf-dev deb libdevel optional arch=any libpnetcdf0d deb libs optional arch=any pnetcdf-bin deb science optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,15 +39,18 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Uploaders": [
+    "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org:/science-team/pnetcdf.git"
+    "https://salsa.debian.org/science-team/pnetcdf.git"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org:/science-team/pnetcdf.git -b debian/latest"
+    "https://salsa.debian.org/science-team/pnetcdf.git -b debian/latest"
   ],
   "Version": [
-    "1.12.3-2"
+    "1.13.0-1"
   ]
 }
