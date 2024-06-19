@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "i386 amd64 arm64"
+    "any"
   ],
   "Binary": [
-    "ispc"
+    "ispc, libispcrt1, libispcrt-dev"
   ],
   "Build-Depends": [
     "bison, clang, cmake, debhelper-compat (= 13), flex, g++-multilib [amd64 i386], libc6-dev-armel-cross [arm64], libc6-dev-armhf-cross [arm64], libclang-dev, libtbb-dev, llvm-dev"
   ],
   "Checksums-Sha256": [
-    "32b9d46d0c4be85344eece8428f7e987edef533f758ae0e9947a87e01612ed0f 2132 ispc_1.23.0-1.dsc e268eabed9a9021b4402725ed1c120b8eca776ee4aaf50ddeb0e4adaadda05f9 19625270 ispc_1.23.0.orig.tar.gz a85dcaa6f6f679a0122445dc4d5a8e0cfa29b1c9bfb3ea3893bb539f376a02e8 6904 ispc_1.23.0-1.debian.tar.xz"
+    "e5616202b8f5d3d8cf83e84af4d5bf63512307dd81b32af65dee9c606e6ae182 2238 ispc_1.24.0-1.dsc fac82c8f3f7ece2bc96620cef0b34e10b29462de9349447bcd8c3ba98cfdcd72 19672686 ispc_1.24.0.orig.tar.gz 108755060d4ef30a09a26dc528ea95003200bc3c8613d20d4ece5359691c2365 7552 ispc_1.24.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/ispc"
   ],
   "Files": [
-    "423b1e3d9d9bab81cd1775acca35a712 2132 ispc_1.23.0-1.dsc c878dcafe324477520e00a8d42519880 19625270 ispc_1.23.0.orig.tar.gz e9563af29a56e534406a9ec3d25b0481 6904 ispc_1.23.0-1.debian.tar.xz"
+    "4f26468a3af122a97115889c1f3a288b 2238 ispc_1.24.0-1.dsc c0cb60bc0e79d1e96e77b5b923726971 19672686 ispc_1.24.0.orig.tar.gz ec92c562de49065d60d7844e3cb49361 7552 ispc_1.24.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ispc"
   ],
   "Package-List": [
-    "ispc deb devel optional arch=i386,amd64,arm64"
+    "ispc deb devel optional arch=i386,amd64,arm64 libispcrt-dev deb libdevel optional arch=any libispcrt1 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential"
+    "build-essential, cmake"
   ],
   "Uploaders": [
     "Francois Mazen \u003cmzf@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/ispc.git"
   ],
   "Version": [
-    "1.23.0-1"
+    "1.24.0-1"
   ]
 }
