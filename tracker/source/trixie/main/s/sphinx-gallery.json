@@ -6,16 +6,16 @@
     "python3-sphinx-gallery, python-sphinx-gallery-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 9), dh-python, optipng, python-pandas-doc \u003c!nodoc\u003e, python-sklearn-doc \u003c!nodoc\u003e, python3-all, python3-doc \u003c!nodoc\u003e, python3-ipython \u003c!nodoc\u003e, python3-joblib \u003c!nocheck\u003e, python3-matplotlib (\u003e= 3.2.2), python3-memory-profiler \u003c!nodoc\u003e, python3-pil, python3-plotly \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-runner \u003c!nocheck\u003e, python3-seaborn, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-statsmodels \u003c!nodoc\u003e, sphinx-doc \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, jdupes, optipng, pybuild-plugin-pyproject, python-numpy-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e, python-sklearn-doc \u003c!nodoc\u003e, python3-all, python3-doc \u003c!nodoc\u003e, python3-graphviz \u003c!nodoc\u003e, python3-ipython \u003c!nodoc\u003e, python3-joblib \u003c!nocheck\u003e, python3-matplotlib (\u003e= 3.2.2), python3-memory-profiler \u003c!nodoc\u003e, python3-pil, python3-plotly \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-runner \u003c!nocheck\u003e, python3-seaborn, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-statsmodels \u003c!nodoc\u003e, sphinx-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c86f184f1ef49cf8acf12f14ed7e37730fbb2373e58ed22f5b1980efd1b866aa 2536 sphinx-gallery_0.10.1-5.dsc 2c8120fc9d4ad32620806891608dea84b1e84e0c80a60994f92ffbfe5d5e255c 421400 sphinx-gallery_0.10.1.orig.tar.xz b985a0c2a80fbce38cce1b1a9a46fa0ed76282fc876bd8ecdaee00f160a82b16 9532 sphinx-gallery_0.10.1-5.debian.tar.xz"
+    "b79c6dffa989af1d6e0942de30dc6beffeb05f3cf36ef309f4654b24a322156c 2918 sphinx-gallery_0.16.0-1.dsc e43c6d687a5bbacd7c6c440ce62f917ee1a413a4ed70423245d7c2e75bb00811 748399 sphinx-gallery_0.16.0.orig.tar.gz 9472ae623104a61b12664264c6913331d0a58cdd2f4efdf2aad9369d4cc6138c 8200 sphinx-gallery_0.16.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sphinx-gallery"
   ],
   "Files": [
-    "a426f6d007042900368d1e7750ccd696 2536 sphinx-gallery_0.10.1-5.dsc 48e7c8e01c43c50652e192ac9802dbae 421400 sphinx-gallery_0.10.1.orig.tar.xz 6d54783e989125f81ef49866ec3866aa 9532 sphinx-gallery_0.10.1-5.debian.tar.xz"
+    "5825f61685a606e7bb3f1a6f3782921d 2918 sphinx-gallery_0.16.0-1.dsc ed5f9fbf91d88294af6c890384b68770 748399 sphinx-gallery_0.16.0.orig.tar.gz 2bb7b8a9c53a3a708652875d2c800ad0 8200 sphinx-gallery_0.16.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://sphinx-gallery.github.io/"
   ],
   "Maintainer": [
-    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e,"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "sphinx-gallery"
@@ -39,7 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-joblib, python3-matplotlib, python3-pytest, python3-pytest-cov, python3-pytest-runner"
+  ],
+  "Uploaders": [
+    "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/sphinx-gallery"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/sphinx-gallery.git"
   ],
   "Version": [
-    "0.10.1-5"
+    "0.16.0-1"
   ]
 }
