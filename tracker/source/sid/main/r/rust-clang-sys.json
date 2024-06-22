@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-clang-sys-dev, librust-clang-sys+libloading-dev"
+    "librust-clang-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, libclang-dev \u003c!nocheck\u003e | libclang-15-dev [mips64el] \u003c!nocheck\u003e, llvm | llvm-15 [mips64el], clang | clang-15 [mips64el]"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, libclang-dev \u003c!nocheck\u003e, llvm, clang"
   ],
   "Checksums-Sha256": [
-    "0e600933f150f3c98b4e5dedfdd3268742480bdc858b1c207a4874445a56c311 2524 rust-clang-sys_1.3.0-2.dsc fa66045b9cb23c2e9c1520732030608b02ee07e5cfaa5a521ec15ded7fa24c90 37713 rust-clang-sys_1.3.0.orig.tar.gz 60f4c7c193ad6a7004ef32c719e2a86b470dfa72a1418caf4f8871ad73c12433 3460 rust-clang-sys_1.3.0-2.debian.tar.xz"
+    "48f6a7843579e954e05ac8d0555f8af3a51e96ee1f0b7df843d21e9971f9b217 1850 rust-clang-sys_1.8.1-1.dsc 0b023947811758c97c59bf9d1c188fd619ad4718dcaa767947df1cadb14f39f4 44009 rust-clang-sys_1.8.1.orig.tar.gz b45ecc10910dad3169617de2c5ecf10f2e59ec83d0b53caca7c47be3be2addcf 3552 rust-clang-sys_1.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-clang-sys"
   ],
   "Files": [
-    "37a4a538c918e04372c1a51e30094262 2524 rust-clang-sys_1.3.0-2.dsc fb81582ed8e3a915e7e24652fad856b9 37713 rust-clang-sys_1.3.0.orig.tar.gz a496c3982ecb6723c4e11af4ad3fe28e 3460 rust-clang-sys_1.3.0-2.debian.tar.xz"
+    "ac5ab135588f22b7bd40fedf59ee523f 1850 rust-clang-sys_1.8.1-1.dsc 5354f10053de350a42ecd5f4136ec439 44009 rust-clang-sys_1.8.1.orig.tar.gz 622f776ca2bbdd7a4a3b2ec6114220ed 3552 rust-clang-sys_1.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "rust-clang-sys"
   ],
   "Package-List": [
-    "librust-clang-sys+libloading-dev deb rust optional arch=any librust-clang-sys-dev deb rust optional arch=any"
+    "librust-clang-sys-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "clang, dh-cargo, librust-glob-0.3+default-dev, librust-lazy-static-1+default-dev, librust-tempfile-3+default-dev, llvm"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/clang-sys]"
   ],
   "Version": [
-    "1.3.0-2"
+    "1.8.1-1"
   ]
 }
