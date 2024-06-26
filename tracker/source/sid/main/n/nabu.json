@@ -6,16 +6,19 @@
     "python3-nabu"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-h5py (\u003e= 3.0), python3-numpy, python3-psutil, python3-pytest, python3-scipy, python3-setuptools, python3-silx, python3-tifffile, python3-tomoscan, pybuild-plugin-pyproject, python3-pyunitsystem, python3-nxtomo"
+    "debhelper-compat (= 13), dh-python, pocl-opencl-icd, python3-all, python3-h5py (\u003e= 3.0), python3-numpy, python3-psutil, python3-pytest, python3-scipy, python3-setuptools, python3-silx, python3-tifffile, python3-tomoscan, pybuild-plugin-pyproject, python3-pyunitsystem, python3-nxtomo"
   ],
   "Checksums-Sha256": [
-    "fb0395b31092d03349baba9da52f90c2d325fad337eea8a165ae654736116cd3 2262 nabu_2024.1.6-2.dsc 06e13e1ce8a4ff0f1fadf9188021cc8848f1a2a7417945328e86d87ef6f72b81 474169 nabu_2024.1.6.orig.tar.gz ffe3a8600031185474db1466cd7ef94aa05680ea0e3be3fa75c14992a9d7c68b 3412 nabu_2024.1.6-2.debian.tar.xz"
+    "c0946ed539fbfb44b55b0b9f43675cc1acc7d78ef365c518a68f85cd076c9026 2461 nabu_2024.1.6-3.dsc 06e13e1ce8a4ff0f1fadf9188021cc8848f1a2a7417945328e86d87ef6f72b81 474169 nabu_2024.1.6.orig.tar.gz 78d546861d9f26de0eee5043e29be490f6641650a408e4c7090f6059904acf55 3900 nabu_2024.1.6-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "afe78a39e70989ec3a20525b96431d69a8813cff debian archive/debian/2024.1.6-3 https://git.dgit.debian.org/nabu"
   ],
   "Directory": [
     "pool/main/n/nabu"
   ],
   "Files": [
-    "559727a34ae4850d891232e5a90e3ddc 2262 nabu_2024.1.6-2.dsc 92fd1abc7ee674e8ff121f49a5f7b192 474169 nabu_2024.1.6.orig.tar.gz ebb7b23deaa64b4f25c974c31cd0b9bc 3412 nabu_2024.1.6-2.debian.tar.xz"
+    "89a382983827392125ff3227d50b5f0e 2461 nabu_2024.1.6-3.dsc 92fd1abc7ee674e8ff121f49a5f7b192 474169 nabu_2024.1.6.orig.tar.gz 6ad8897d62a7007fafa11b6c74a002c1 3900 nabu_2024.1.6-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +45,10 @@
     "4.6.2.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "clinfo, pocl-opencl-icd, python3-all"
   ],
   "Uploaders": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/nabu.git"
   ],
   "Version": [
-    "2024.1.6-2"
+    "2024.1.6-3"
   ]
 }
