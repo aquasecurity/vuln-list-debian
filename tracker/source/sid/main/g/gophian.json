@@ -6,16 +6,16 @@
     "gophian"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, scdoc, python3, python3-setuptools, python3-jinja2, python3-click, python3-debian, python3-debianbts, python3-packaging, python3-questionary, python3-requests, python3-requests-cache, python3-treelib"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, scdoc, python3, python3-setuptools, python3-jinja2, python3-click, python3-debian, python3-debianbts, python3-graphviz, python3-looseversion, python3-questionary, python3-requests, python3-requests-cache, python3-treelib"
   ],
   "Checksums-Sha256": [
-    "df1315b883ec4b9e81da7b9199f381b7b91cd639498f31171448fbb625c8dd76 2078 gophian_0.1.1-1.dsc 8d5dd9c23bf8a3c8e761f32bd866776277ea730a0b04ca12f9f23d03386cbb14 52443 gophian_0.1.1.orig.tar.gz 54350f0cc469692f1fd280e79445ee471a02ad5b54610bd70cf7efb8757234cd 2720 gophian_0.1.1-1.debian.tar.xz"
+    "9a01086fd33281ff9848a37d8e27c593eb7eb4dcc40f7f39310217eb3310441c 2215 gophian_0.2.0-1.dsc e7fe23c77be460b352ff004f5462364ed1912137541fb6af6332a5833863192e 55493 gophian_0.2.0.orig.tar.gz ad4145a5c8f0252f6881b0e4d37813d459dddb9939624163dce980fe3f5f1aff 2924 gophian_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gophian"
   ],
   "Files": [
-    "8d88d00ee83cb3c15d70dfaa1edcbb75 2078 gophian_0.1.1-1.dsc 5b9e70fa404b729b77d8871860888e60 52443 gophian_0.1.1.orig.tar.gz 2bb940913cf313de6b2b421fa0baa216 2720 gophian_0.1.1-1.debian.tar.xz"
+    "5743c9eb7a2be3367b00086c389368ea 2215 gophian_0.2.0-1.dsc ee355e85d9701cf96189a39b53b71d86 55493 gophian_0.2.0.orig.tar.gz 9e022fdb2c0a545c406301d93d0eff30 2924 gophian_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, pybuild-plugin-autopkgtest"
+  ],
   "Vcs-Browser": [
     "https://codeberg.org/Maytha8/gophian"
   ],
@@ -48,6 +54,6 @@
     "https://codeberg.org/Maytha8/gophian.git -b debian/latest"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.2.0-1"
   ]
 }

@@ -3,22 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "vamp-plugin-sdk, libvamp-sdk2v5, libvamp-hostsdk3v5, vamp-examples, vamp-plugin-sdk-doc"
+    "vamp-plugin-sdk, libvamp-sdk2t64, libvamp-hostsdk3t64, vamp-examples, vamp-plugin-sdk-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), docbook-to-man, graphviz, libsndfile1-dev, pkg-config"
+    "debhelper-compat (= 13), docbook-to-man, dpkg-dev (\u003e= 1.22.5), graphviz, libsndfile1-dev, pkgconf | pkg-config"
   ],
   "Build-Depends-Indep": [
     "doxygen"
   ],
   "Checksums-Sha256": [
-    "caaafe546f8e2c4d0699d8bad55cbd852a9dba4735e9f8d5da213eae908635cf 2397 vamp-plugin-sdk_2.10.0-4.dsc aeaf3762a44b148cebb10cde82f577317ffc9df2720e5445c3df85f3739ff75f 313354 vamp-plugin-sdk_2.10.0.orig.tar.gz e02d9e489393e9739130a421e5c9c602893e70aebd6e92f1b9d1023cd6fb096f 10748 vamp-plugin-sdk_2.10.0-4.debian.tar.xz"
+    "2313c3ad36c3433a25d81d609bbadd959526a02c814b389e0e984a016c449e1d 2635 vamp-plugin-sdk_2.10.0-5.dsc aeaf3762a44b148cebb10cde82f577317ffc9df2720e5445c3df85f3739ff75f 313354 vamp-plugin-sdk_2.10.0.orig.tar.gz de7f5cfc96d7fe72e247af5fa15cea0c037377801fbf760b6f5db8c7f848dd03 12836 vamp-plugin-sdk_2.10.0-5.debian.tar.xz"
+  ],
+  "Dgit": [
+    "b8dc194725391c9072460fe076d828e12286384e debian archive/debian/2.10.0-5 https://git.dgit.debian.org/vamp-plugin-sdk"
   ],
   "Directory": [
     "pool/main/v/vamp-plugin-sdk"
   ],
   "Files": [
-    "201f74a5ccba87b86d6f32ad226655eb 2397 vamp-plugin-sdk_2.10.0-4.dsc 848f7ac0227b5c783bee0dd7a5cb3642 313354 vamp-plugin-sdk_2.10.0.orig.tar.gz 29bb2f466260c9cecfaa5300c477108d 10748 vamp-plugin-sdk_2.10.0-4.debian.tar.xz"
+    "a5b1748a5ae7dcbf1085f0b5db0fd883 2635 vamp-plugin-sdk_2.10.0-5.dsc 848f7ac0227b5c783bee0dd7a5cb3642 313354 vamp-plugin-sdk_2.10.0.orig.tar.gz 3aac92b45b529d6c4f1aa55ab56ca3ec 12836 vamp-plugin-sdk_2.10.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "vamp-plugin-sdk"
   ],
   "Package-List": [
-    "libvamp-hostsdk3v5 deb libs optional arch=any libvamp-sdk2v5 deb libs optional arch=any vamp-examples deb sound optional arch=any vamp-plugin-sdk deb libs optional arch=any vamp-plugin-sdk-doc deb doc optional arch=all"
+    "libvamp-hostsdk3t64 deb libs optional arch=any libvamp-sdk2t64 deb libs optional arch=any vamp-examples deb sound optional arch=any vamp-plugin-sdk deb libs optional arch=any vamp-plugin-sdk-doc deb doc optional arch=all"
   ],
   "Priority": [
     "source"
@@ -42,10 +45,16 @@
     "sound"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, pkgconf"
   ],
   "Uploaders": [
-    "Dennis Braun \u003csnd@debian.org\u003e, Jaromír Mikeš \u003cmira.mikes@seznam.cz\u003e"
+    "Dennis Braun \u003csnd@debian.org\u003e, Jaromír Mikeš \u003cmira.mikes@seznam.cz\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/multimedia-team/vamp-plugin-sdk"
@@ -54,6 +63,6 @@
     "https://salsa.debian.org/multimedia-team/vamp-plugin-sdk.git"
   ],
   "Version": [
-    "2.10.0-4"
+    "2.10.0-5"
   ]
 }
