@@ -1,27 +1,27 @@
 {
   "Architecture": [
-    "all amd64 arm64 loong64 mips64el ppc64el riscv64"
+    "any all"
   ],
   "Binary": [
     "python-skbio-doc, python3-skbio"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cython3-legacy, dh-sequence-python3, python3-all-dev, python3-setuptools, python3-numpy, python3-matplotlib, python3-cachecontrol, python3-decorator, python3-h5py, python3-pandas, python3-scipy (\u003e= 1.9), python3-ipython, python3-hdmedians, python3-sklearn, python3-natsort, libssw-dev, sphinx-common, libsimde-dev"
+    "debhelper-compat (= 13), cython3-legacy, dh-sequence-python3, python3-all-dev, python3-biom-format, python3-setuptools, python3-numpy, python3-matplotlib, python3-cachecontrol, python3-decorator, python3-h5py, python3-pandas, python3-scipy (\u003e= 1.9), python3-ipython, python3-hdmedians, python3-sklearn, python3-natsort, libssw-dev, sphinx-common, libsimde-dev"
   ],
   "Build-Depends-Arch": [
-    "python3-lockfile \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
+    "python3-lockfile \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, architecture-is-64-bit"
   ],
   "Build-Depends-Indep": [
-    "python3-sphinx \u003c!nodoc\u003e, python3-sphinx-bootstrap-theme \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python-biom-format-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e"
+    "python3-sphinx \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python-scipy-doc \u003c!nodoc\u003e, python-biom-format-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "de988d12f77096f321a630a7335e494a1cf311ab32010d5bb9da468d07e840ac 2804 python-skbio_0.5.9-4.dsc 3a60700b1a21864a7484741c2deedba2b853da13e86325755c34b177eb1f4a1b 3559390 python-skbio_0.5.9.orig.tar.gz 15528c914ec39149afb5b8ad8d82cdfa890800ca7c644e0b6ea4ae97b3c1b2ba 15676 python-skbio_0.5.9-4.debian.tar.xz"
+    "e8de5384fd626bb697cc24d811052706e8f3f4ada595b8a653434b552782136c 2888 python-skbio_0.6.1-2.dsc 3c2d28117a7feb5fbb1e52ac1b585266cd8b1e95a74fc2f36d3dfb532f57c58e 2187103 python-skbio_0.6.1.orig.tar.gz c8b370fbcd19fd0a7830eb55b839838bb1443edb904baffba6f7796a063fbf7b 12216 python-skbio_0.6.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-skbio"
   ],
   "Files": [
-    "39a8c1eb3b33fee7213950f5406ef90a 2804 python-skbio_0.5.9-4.dsc b5b9a135e814d51787873cbdb95bcb7b 3559390 python-skbio_0.5.9.orig.tar.gz 792e43e3b36a554f82fc3fb6da3eb7ef 15676 python-skbio_0.5.9-4.debian.tar.xz"
+    "33c1280e3ad1933b3bf8fd368378c5ec 2888 python-skbio_0.6.1-2.dsc 4b324b16c561aae3edae112f056c8124 2187103 python-skbio_0.6.1.orig.tar.gz ca6fe27b9dab0ec43c35e676a3ec0f71 12216 python-skbio_0.6.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "python-skbio"
   ],
   "Package-List": [
-    "python-skbio-doc deb doc optional arch=all profile=!nodoc python3-skbio deb python optional arch=amd64,arm64,loong64,mips64el,ppc64el,riscv64"
+    "python-skbio-doc deb doc optional arch=all profile=!nodoc python3-skbio deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/med-team/python-skbio.git"
   ],
   "Version": [
-    "0.5.9-4"
+    "0.6.1-2"
   ]
 }
