@@ -6,16 +6,16 @@
     "librust-ntp-udp-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-ntp-proto-1+--internal-api-dev (\u003e= 1.1.3-~~) \u003c!nocheck\u003e, librust-ntp-proto-1+default-dev (\u003e= 1.1.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.145-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.145-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.32-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.32-~~) \u003c!nocheck\u003e, librust-tokio-1+time-dev (\u003e= 1.32-~~) \u003c!nocheck\u003e, librust-tracing-0.1+default-dev (\u003e= 0.1.21-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-ntp-proto-1+--internal-api-dev (\u003e= 1.1.3-~~) \u003c!nocheck\u003e, librust-ntp-proto-1+default-dev (\u003e= 1.1.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.145-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.145-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.32-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.32-~~) \u003c!nocheck\u003e, librust-tokio-1+time-dev (\u003e= 1.32-~~) \u003c!nocheck\u003e, librust-tracing-0.1+default-dev (\u003e= 0.1.21-~~) \u003c!nocheck\u003e, librust-tokio-test-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c688596884d80b3ce25f2d722dd73ba03c130d1d516ff769e039f12f1242cd0e 2768 rust-ntp-udp_1.1.3-1.dsc 9d745ef7f8d86d842631c117096fcffe7cdd8cca9fd25c8914aa43ac84772d52 18499 rust-ntp-udp_1.1.3.orig.tar.gz 20059b83fcca4c4c12481bb5238ff484a46e80cb05c3c43c72bf7262b898dcbe 2972 rust-ntp-udp_1.1.3-1.debian.tar.xz"
+    "567e81140ed7c496962540caecd49687916f9e6d85e90fbf91097f7a891b078c 2879 rust-ntp-udp_1.1.3-2.dsc 9d745ef7f8d86d842631c117096fcffe7cdd8cca9fd25c8914aa43ac84772d52 18499 rust-ntp-udp_1.1.3.orig.tar.gz a1ffe48663d0358af72c0d444d30a525faf4ad02d67e5a0fb46f99c76c9a792e 3164 rust-ntp-udp_1.1.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ntp-udp"
   ],
   "Files": [
-    "d1e1419fcdbf548ccd91c04dccf6f202 2768 rust-ntp-udp_1.1.3-1.dsc aac9794359db5345cba48903cf85f9c4 18499 rust-ntp-udp_1.1.3.orig.tar.gz a38a54edacc878034cffeb2c238f58ce 2972 rust-ntp-udp_1.1.3-1.debian.tar.xz"
+    "3598820e5f9f5374511b3eb86c6e9a65 2879 rust-ntp-udp_1.1.3-2.dsc aac9794359db5345cba48903cf85f9c4 18499 rust-ntp-udp_1.1.3.orig.tar.gz d378ba3c2de96b46e05634c026e43dd4 3164 rust-ntp-udp_1.1.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+net-dev, librust-tokio-1+test-util-dev, librust-tokio-1+time-dev"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+test-util-dev, librust-tokio-1+time-dev, librust-tokio-test-dev"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ntp-udp]"
   ],
   "Version": [
-    "1.1.3-1"
+    "1.1.3-2"
   ]
 }
