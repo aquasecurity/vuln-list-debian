@@ -6,16 +6,16 @@
     "python3-datalab"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dbus, dh-python, python3-all, pybuild-plugin-pyproject, python3-setuptools, python3-h5py, python3-guidata, python3-guiqwt, python3-numpy, python3-opencv, python3-plotpy, python3-pywt, python3-qtpy, python3-skimage, xauth, xvfb"
+    "debhelper-compat (= 13), dbus, dh-python, python3-all, pybuild-plugin-pyproject, python3-setuptools, python3-h5py, python3-guidata, python3-guiqwt, python3-numpy, python3-opencv, python3-plotpy (\u003e= 2.4~), python3-pytest \u003c!nocheck\u003e, python3-pytest-xvfb \u003c!nocheck\u003e, python3-pywt, python3-qtpy, python3-skimage, xauth, xvfb \u003c!nocheck\u003e, x11-utils \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f1c0c206da6288a48bf913956cadc6bba89b9608a9c6c6e47c2af6e33f59f712 2302 datalab_0.14.2-2.dsc c27776ddf53711573b96e5f9df92e5ad2ce02e7d22a69612bd2644209db6dcb0 36327475 datalab_0.14.2.orig.tar.gz 688f964023a308ad33df45631b9a7af0617a4a583f44f3f49e25c17c32aad4c9 3588 datalab_0.14.2-2.debian.tar.xz"
+    "02a6b835265e68adbb2537325ab93801a9d4f7a699e8a067f21820dcff0798af 2394 datalab_0.16.2-1.dsc 50b9ccb94ba26058f09d2a5fdf715af9534867856251306163e9dbe636ccecff 27756927 datalab_0.16.2.orig.tar.gz d529b0dbc071f74a1801c2c842318ee1ba070ce30563eb5160116b4dc804ebc9 3740 datalab_0.16.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/datalab"
   ],
   "Files": [
-    "66c06ab8ee7e3bffd5fb2d2b88c5d5f4 2302 datalab_0.14.2-2.dsc e14afc7d3e9293963fbbec8beee5b6bd 36327475 datalab_0.14.2.orig.tar.gz 5890de15a1c1885e24deba8c050e07da 3588 datalab_0.14.2-2.debian.tar.xz"
+    "1864587583b50d2f8da3c8fead188031 2394 datalab_0.16.2-1.dsc 4a7759f7100d8ded927d95af9c06c77a 27756927 datalab_0.16.2.orig.tar.gz 79b017429ab0a3beeabd8695ce30f406 3740 datalab_0.16.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,10 @@
     "4.6.2.0"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-pybuild"
+    "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "xvfb"
+    "python3-pytest-xvfb"
   ],
   "Uploaders": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/datalab.git"
   ],
   "Version": [
-    "0.14.2-2"
+    "0.16.2-1"
   ]
 }
