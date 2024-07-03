@@ -6,16 +6,16 @@
     "librust-concurrent-queue-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.11-~~) \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b7411190db8b4283cf9b1ad152c3521eead7c103eed5c9c6dc1aa6c47acd841b 2432 rust-concurrent-queue_2.3.0-1.dsc f057a694a54f12365049b0958a1685bb52d567f5593b355fbf685838e873d400 20189 rust-concurrent-queue_2.3.0.orig.tar.gz 5540cdc693cca0b95e1ff824de93d42f08fac0f395f13185a1dffed9e67fe6e7 3196 rust-concurrent-queue_2.3.0-1.debian.tar.xz"
+    "b31a34cc3fbb45f9e7bcb06ec0cfac75604cff1b3d303d631cbef16a4bb8d964 2422 rust-concurrent-queue_2.5.0-2.dsc 4ca0197aee26d1ae37445ee532fefce43251d24cc7c166799f4d46817f1d3973 22654 rust-concurrent-queue_2.5.0.orig.tar.gz c03db7c44a3abf827d3b1a273118daca42ac71ccc226d2187e1bc8d9855f67d1 3408 rust-concurrent-queue_2.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-concurrent-queue"
   ],
   "Files": [
-    "9464a8adc1decc718783a4efa12755d5 2432 rust-concurrent-queue_2.3.0-1.dsc 7aae42bbfaea3a8e930fbb8de4e86df8 20189 rust-concurrent-queue_2.3.0.orig.tar.gz af08bb4ae8e881033c0b87d54f7f83e4 3196 rust-concurrent-queue_2.3.0-1.debian.tar.xz"
+    "7d12d964252dff19955a4c6cd3fc4d89 2422 rust-concurrent-queue_2.5.0-2.dsc d1f70680f36b13b74bab20250fb2f26f 22654 rust-concurrent-queue_2.5.0.orig.tar.gz 57a3c636e1d90e1465879b45b1d6a9fc 3408 rust-concurrent-queue_2.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-easy-parallel-3+default-dev, librust-fastrand-1+default-dev, librust-fastrand-2+default-dev"
+    "dh-cargo, librust-criterion-0.5+cargo-bench-support-dev, librust-easy-parallel-3+default-dev, librust-fastrand-1+default-dev"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/concurrent-queue]"
   ],
   "Version": [
-    "2.3.0-1"
+    "2.5.0-2"
   ]
 }
