@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "python3-debugpy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-django \u003c!nocheck\u003e, python3-flask \u003c!nocheck\u003e, python3-gevent \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pydevd (\u003c\u003c 2.11), python3-pydevd (\u003e= 2.10.0+ds-2), python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-setuptools"
+    "cython3, debhelper-compat (= 13), dh-python, dh-sequence-python3, gdb \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-all-dev, python3-django \u003c!nocheck\u003e, python3-flask \u003c!nocheck\u003e, python3-gevent \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "a305ffbc577744e4b8489f217048f8a855906389befd4d6972157279f6310292 2523 debugpy_1.8.0+ds-4.dsc 6314f991ee1559b188cce5eb6e1342fa007853385c12e140b5876437e42f11a9 145796 debugpy_1.8.0+ds.orig.tar.xz 21db72c7e33dc71d706a64dd154122df4c690ab837c7d225bdbae6ded477cfde 6672 debugpy_1.8.0+ds-4.debian.tar.xz"
+    "a09b2b27424f18882ca79c54b38b6163048d6f33ddb4f0898708b78eccd37a15 2540 debugpy_1.8.2+ds-1.dsc f1d702ab783469ccbd62225bf478de2235d585f47a46b037a98a1b23006a2b61 1086252 debugpy_1.8.2+ds.orig.tar.xz fd591bba3eac82727fcff36a7630afa2aa9f0c0f2c651e7b6bb180d7a90a1f50 13536 debugpy_1.8.2+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/debugpy"
   ],
   "Files": [
-    "418950af1b21eea5cc36cbd61595bed1 2523 debugpy_1.8.0+ds-4.dsc 3f271b068a214da8466b38d11ca13a9b 145796 debugpy_1.8.0+ds.orig.tar.xz 759c4c9eaf4d878f298f86d4ce638373 6672 debugpy_1.8.0+ds-4.debian.tar.xz"
+    "57c4a230745e19f27f3edc35e06be542 2540 debugpy_1.8.2+ds-1.dsc a250ba013c2d24f7d233de9cb9fa4e05 1086252 debugpy_1.8.2+ds.orig.tar.xz 9e44d56b3b6643b2a4ff2353cd52b7d3 13536 debugpy_1.8.2+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "debugpy"
   ],
   "Package-List": [
-    "python3-debugpy deb python optional arch=all"
+    "python3-debugpy deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gdb, python3-all, python3-django, python3-flask, python3-gevent, python3-psutil, python3-pytest, python3-pytest-timeout, python3-pytest-xdist, python3-requests"
+    "gdb, python3-all, python3-django, python3-flask, python3-gevent, python3-numpy, python3-psutil, python3-pytest, python3-pytest-timeout, python3-pytest-xdist, python3-requests"
   ],
   "Uploaders": [
     "Julian Gilbey \u003cjdg@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/debugpy.git"
   ],
   "Version": [
-    "1.8.0+ds-4"
+    "1.8.2+ds-1"
   ]
 }
