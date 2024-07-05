@@ -6,16 +6,16 @@
     "librust-sequoia-gpg-agent-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.152-~~) \u003c!nocheck\u003e, librust-sequoia-cert-store-0.5+default-dev \u003c!nocheck\u003e, librust-sequoia-ipc-0.34+default-dev (\u003e= 0.34.1-~~) \u003c!nocheck\u003e, librust-sequoia-openpgp-1+compression-dev (\u003e= 1.19-~~) \u003c!nocheck\u003e, librust-sequoia-openpgp-1+crypto-nettle-dev (\u003e= 1.19-~~) \u003c!nocheck\u003e, librust-stfu8-0.2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.38-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.35.0-~~) \u003c!nocheck\u003e, gpgconf \u003c!nocheck\u003e, gpg-agent \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-lalrpop-0.20-dev \u003c!nocheck\u003e | librust-lalrpop-0.19-dev \u003c!nocheck\u003e | librust-lalrpop-0.18-dev \u003c!nocheck\u003e | librust-lalrpop-0.17-dev \u003c!nocheck\u003e, librust-lalrpop-util-0.20+default-dev \u003c!nocheck\u003e | librust-lalrpop-util-0.19+default-dev \u003c!nocheck\u003e | librust-lalrpop-util-0.18+default-dev \u003c!nocheck\u003e | librust-lalrpop-util-0.17+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.152-~~) \u003c!nocheck\u003e, librust-sequoia-ipc-0.35+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1+compression-dev (\u003e= 1.19-~~) \u003c!nocheck\u003e, librust-sequoia-openpgp-1+crypto-nettle-dev (\u003e= 1.19-~~) \u003c!nocheck\u003e, librust-stfu8-0.2+default-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.38-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.35.0-~~) \u003c!nocheck\u003e, gpgconf \u003c!nocheck\u003e, gpg-agent \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be076090eaad767bd9b4ff2643348698d1620ae9a928f796d896317405244457 3062 rust-sequoia-gpg-agent_0.3.1-2.dsc f29f0e04d9d161c65384a02282380ceaf1b506e768cab95837a428439c2596a4 101496 rust-sequoia-gpg-agent_0.3.1.orig.tar.gz 8388cf877660c41ea620786eb99a1dbf29270ad5f4316f7dad5eebd8cf774ce3 2792 rust-sequoia-gpg-agent_0.3.1-2.debian.tar.xz"
+    "f6a077b8b70cf7e5004e917df3d8743dbfeeaca44f7497fc36f4a97470b257a7 3072 rust-sequoia-gpg-agent_0.4.2-1.dsc ba4db5fdd92efb296d42b194e2114f21ba737d5d2905b5e8063a8207eb953685 142966 rust-sequoia-gpg-agent_0.4.2.orig.tar.gz eb16fe56946889ae8ab1795b9e141293dfcae869254222352fc222c5755de18a 3208 rust-sequoia-gpg-agent_0.4.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-gpg-agent"
   ],
   "Files": [
-    "2f4727123b6fec0580dfa5971a28d46a 3062 rust-sequoia-gpg-agent_0.3.1-2.dsc a80f7ca0a4fe3da6729f6952d5de36fd 101496 rust-sequoia-gpg-agent_0.3.1.orig.tar.gz fc1ed10d8e80bee3ff7d39df075c55b7 2792 rust-sequoia-gpg-agent_0.3.1-2.debian.tar.xz"
+    "92da5fc38cf4175bc6b29a6a97eb5590 3072 rust-sequoia-gpg-agent_0.4.2-1.dsc aed486852ced63715a9ad9adf666ed6a 142966 rust-sequoia-gpg-agent_0.4.2.orig.tar.gz f27130885eca4a2c7d359908ebe0a562 3208 rust-sequoia-gpg-agent_0.4.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev, librust-tempfile-3+default-dev, librust-tokio-test-0.4+default-dev"
+    "dh-cargo, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-clap-4+string-dev, librust-clap-4+wrap-help-dev, librust-lazy-static-1+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-test-0.4+default-dev"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-gpg-agent]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.4.2-1"
   ]
 }
