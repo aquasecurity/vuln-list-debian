@@ -6,16 +6,16 @@
     "librust-sysexits-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b6ab5052a1bfdaed7bfdd2dcb268cddb67faac9f0f904948f2df701b5e3356d7 2129 rust-sysexits_0.7.11-1.dsc 1073811f017d0d128952468acaa3af7c71075819c214d08bec5993b0f74cf972 15287 rust-sysexits_0.7.11.orig.tar.gz 29a831bd472ab19e42ac002ea7c28247dd484c2c3d7050bc9fb0700cc4ef1500 2820 rust-sysexits_0.7.11-1.debian.tar.xz"
+    "511c526ff57c6540c3a03a0cacf6cbfe20496f33c36134cfe0b11136641084e2 2248 rust-sysexits_0.8.1-1.dsc c4008983d29e823b1415f5f12732d5c9a44059795fb6218262cc0185668851e2 21101 rust-sysexits_0.8.1.orig.tar.gz edcdf46b697440051e1ab95d8142f1df1b2451ee023711107fd3a68652ceb058 2868 rust-sysexits_0.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sysexits"
   ],
   "Files": [
-    "fd8fe079594701e550aed8e1a81bc6e8 2129 rust-sysexits_0.7.11-1.dsc 76b456123034bdd74d30d4bef97f6a85 15287 rust-sysexits_0.7.11.orig.tar.gz 920c497aae9c26a26dc0fd9b094a3a53 2820 rust-sysexits_0.7.11-1.debian.tar.xz"
+    "364f39e7fa5c3fd9ecc5e7f1368da116 2248 rust-sysexits_0.8.1-1.dsc e051ebcce8a52643684ce92b29b4a2d2 21101 rust-sysexits_0.8.1.orig.tar.gz 90b3928a96abd7a4debbdf71b20407ee 2868 rust-sysexits_0.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-proptest-1+default-dev, librust-test-strategy-0.4+default-dev"
   ],
   "Uploaders": [
     "Boyuan Yang \u003cbyang@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sysexits]"
   ],
   "Version": [
-    "0.7.11-1"
+    "0.8.1-1"
   ]
 }
