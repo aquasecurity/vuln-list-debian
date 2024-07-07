@@ -6,16 +6,16 @@
     "modernize, python3-libmodernize"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-python, python3-all, python3-nose, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-fissix, python3-flit-scm, python3-pytest, python3-pytest-cov"
   ],
   "Checksums-Sha256": [
-    "2e7db4e6fccb66d9704995468f70b445b0949310ea3fde1c87e8123ba5cbb199 2105 modernize_0.7-3.dsc d4f6a3555b1621281ee013d830337c72c133c6318efaac6fc24fe6afa0cc1ab6 18277 modernize_0.7.orig.tar.gz 5ff4f0b006a834182210095acb8e2a9d0522d5628dbb943c8f23d6878b1bb32d 3540 modernize_0.7-3.debian.tar.xz"
+    "fc5fe0e0e492b64aca440545ece65032ced53d0ffb7dc5ce8e9b640d1af13ab2 2223 modernize_0.9-2.dsc 133aa806c6964bb0b960266473408c7ae331ba52043c787dcc42ff0163870e29 36904 modernize_0.9.orig.tar.gz 51dbbf3aded3a2d2b0345030ca6dcbdc13bb73462833dfbfa19fdc31ff1fb2fd 3980 modernize_0.9-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/modernize"
   ],
   "Files": [
-    "558312c7a2207ecca769ff720b0e84a6 2105 modernize_0.7-3.dsc 80e356e4218f6a293f76d9e362aaaaec 18277 modernize_0.7.orig.tar.gz de1a260258bf16ef571fa72bc2beb431 3540 modernize_0.7-3.debian.tar.xz"
+    "f81663a3c9fa6ab345737e0b85b559c4 2223 modernize_0.9-2.dsc 3a9cfd350242ef94c5ac7604c9343238 36904 modernize_0.9.orig.tar.gz 65528ab882d39a76aa6e05ebb5fb3f34 3980 modernize_0.9-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.5.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
   ],
   "Uploaders": [
     "Benjamin Drung \u003cbenjamin.drung@cloud.ionos.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/modernize.git"
   ],
   "Version": [
-    "0.7-3"
+    "0.9-2"
   ]
 }
