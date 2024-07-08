@@ -6,19 +6,19 @@
     "python3-gsd, python-gsd-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cython3, dh-python, pybuild-plugin-pyproject, python3-setuptools, python3-all-dev, python3-ipython, python3-numpy (\u003c\u003c 1:2), python3-sphinx, architecture-properties, architecture-is-little-endian"
+    "debhelper-compat (= 13), cython3, dh-python, pybuild-plugin-pyproject, python3-setuptools, python3-all-dev, python3-ipython, python3-numpy (\u003e= 1:1.19.0~), python3-pytest \u003c!nocheck\u003e, python3-sphinx, architecture-properties, architecture-is-little-endian"
   ],
   "Build-Depends-Indep": [
-    "python3-doc, doxygen, furo, libjs-mathjax, python3-breathe, python3-pandas, python3-sphinx-rtd-theme"
+    "python3-doc, doxygen \u003c!nodoc\u003e, furo, libjs-mathjax \u003c!nodoc\u003e, python3-breathe, python-numpy-doc \u003c!nodoc\u003e, python3-pandas, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "865f762dd20d61b69b292807829ac3b11384dcf68ea242e8273089fb83f3ec7d 2359 python-gsd_3.0.1-3.dsc 181516f7c2932f40f82fa4845dc9011dec915152b118332f23c7520a960d1834 106596 python-gsd_3.0.1.orig.tar.gz 52f2df4324a0b645fb09c679ec469ef45c4bfdd8cd51a9d2f63242f06603447d 5564 python-gsd_3.0.1-3.debian.tar.xz"
+    "2c592d4d2e5d1d02261272fc049f6e9577e7d706af291e8d31e45aa84291b44d 2495 python-gsd_3.3.0-1.dsc 3b2f478cb0c6fa1f0d6651c3f14d9436a2082c7ee4d08b053ce121675cd3060b 108597 python-gsd_3.3.0.orig.tar.gz ee93055440813a1d1363d755a70bcdbda9e9af1dc591e8933cac5a2367f700d0 6116 python-gsd_3.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-gsd"
   ],
   "Files": [
-    "c1be11f5b5d122ac794a42790d172a91 2359 python-gsd_3.0.1-3.dsc bc6ecb0aaf5d091b1762c670ebc74ea0 106596 python-gsd_3.0.1.orig.tar.gz f93a73054a0f969c24de4078ed69d365 5564 python-gsd_3.0.1-3.debian.tar.xz"
+    "55bbdb4b0a1378da15ab929ca4440096 2495 python-gsd_3.3.0-1.dsc 8b1930019791ea559e314a0b7e849818 108597 python-gsd_3.3.0.orig.tar.gz a796d72250ea320bf029cb0e8a49b5d7 6116 python-gsd_3.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-pytest"
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debichem-team/python-gsd.git"
   ],
   "Version": [
-    "3.0.1-3"
+    "3.3.0-1"
   ]
 }
