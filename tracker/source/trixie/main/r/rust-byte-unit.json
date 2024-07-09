@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-byte-unit-dev, librust-byte-unit+default-dev, librust-byte-unit+serde-dev"
+    "librust-byte-unit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-utf8-width-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rust-decimal-1+std-dev \u003c!nocheck\u003e, librust-rust-decimal-1-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e, librust-utf8-width-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "776c82ded839a7048176a8dcd55c69d11436736d7a7bb7f8478a551f6775cf25 2423 rust-byte-unit_4.0.13-1.dsc 956ffc5b0ec7d7a6949e3f21fd63ba5af4cffdc2ba1e0b7bf62b481458c4ae7f 10846 rust-byte-unit_4.0.13.orig.tar.gz 845365d2b82ef4036262d543ef35e92011fa8d8bb510f328f0e4f2e9284c77b8 2904 rust-byte-unit_4.0.13-1.debian.tar.xz"
+    "dad9baa9ea45e2c8d82f1ee7362d46b428aeb72de8a0e9530527fff40a2aaec0 2446 rust-byte-unit_5.1.4-1.dsc 33ac19bdf0b2665407c39d82dbc937e951e7e2001609f0fb32edd0af45a2d63e 26354 rust-byte-unit_5.1.4.orig.tar.gz 59a6e2b6b33a37415716cc77441a03504cf1edd34c94027485cc454c0db686e8 3100 rust-byte-unit_5.1.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-byte-unit"
   ],
   "Files": [
-    "4766faa456469a6c1b53fb5e17ce2d78 2423 rust-byte-unit_4.0.13-1.dsc 5c4d89b7040d41b14262efa7a38b683d 10846 rust-byte-unit_4.0.13.orig.tar.gz 8650a56465c79f44a66ab4acfb335308 2904 rust-byte-unit_4.0.13-1.debian.tar.xz"
+    "f3fe060edac0cab8fb4dd0eec07ce2a7 2446 rust-byte-unit_5.1.4-1.dsc a8ada3e30f22f0ad4d25ce76c130c60d 26354 rust-byte-unit_5.1.4.orig.tar.gz 27de5b95c09ed4224db145dc541d7964 3100 rust-byte-unit_5.1.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-byte-unit"
   ],
   "Package-List": [
-    "librust-byte-unit+default-dev deb rust optional arch=any librust-byte-unit+serde-dev deb rust optional arch=any librust-byte-unit-dev deb rust optional arch=any"
+    "librust-byte-unit-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-serde-json-1+default-dev"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/byte-unit]"
   ],
   "Version": [
-    "4.0.13-1"
+    "5.1.4-1"
   ]
 }
