@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "gorm.app, libgorm-dev, libgorm1"
+    "gorm.app, gorm.app-doc, libgorm-dev, libinterfacebuilder-dev, libinterfacebuilder1"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libgnustep-gui-dev, texlive-latex-base, texlive-fonts-recommended, cm-super-minimal, texinfo, imagemagick"
+    "debhelper-compat (= 13), imagemagick, libgnustep-gui-dev (\u003e= 0.31.1-2)"
+  ],
+  "Build-Depends-Indep": [
+    "cm-super-minimal \u003c!nodoc\u003e, gnustep-base-doc \u003c!nodoc\u003e, gnustep-gui-doc \u003c!nodoc\u003e, texinfo \u003c!nodoc\u003e, texlive-fonts-recommended \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "bdc75fe30d782437ca59204f1f62a3af93e668f47db8d0ec23f1397c2c195739 2179 gorm.app_1.3.1-1.dsc 75ee9e3ee4b76820423e04deb3116bf01bcc26a28c4db85d3a67979673041c9e 7090395 gorm.app_1.3.1.orig.tar.gz c481eaf4d94bfefd39f7e9cf24e32cf8df72669ce25cf933f7cbb6f6e5ff60e6 10000 gorm.app_1.3.1-1.debian.tar.xz"
+    "2c13c34cdd53bec10dca7411d4b6c46f3b3de43c8295d2cc8831ff580dd3c455 2475 gorm.app_1.4.0-4.dsc 094b044c316f7c8d46f89fa60a2d444c7f0958c421c7edf4188ea42bec7bd5bc 770167 gorm.app_1.4.0.orig.tar.gz 1b12f54a19cc948ac079a39f517359f6f6b666e8954063a63b8176da4a35a392 11720 gorm.app_1.4.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gorm.app"
   ],
   "Files": [
-    "4589e9f848172f9012bb15f66a3877a3 2179 gorm.app_1.3.1-1.dsc cda32b3ed214a0d5ba9080eb3ebe82d2 7090395 gorm.app_1.3.1.orig.tar.gz 2f7935c82d8dd4322319be57246c4dd4 10000 gorm.app_1.3.1-1.debian.tar.xz"
+    "e94b3e704a98d116c49a38baee9d2686 2475 gorm.app_1.4.0-4.dsc 3a0f227f96fd97a1fe4f6e03b310aa8d 770167 gorm.app_1.4.0.orig.tar.gz 2beb1c41f7151ac9c6d6bb4f20a2e0b4 11720 gorm.app_1.4.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "gorm.app"
   ],
   "Package-List": [
-    "gorm.app deb gnustep optional arch=any libgorm-dev deb libdevel optional arch=any libgorm1 deb libs optional arch=any"
+    "gorm.app deb gnustep optional arch=any gorm.app-doc deb doc optional arch=all profile=!nodoc libgorm-dev deb oldlibs optional arch=all libinterfacebuilder-dev deb libdevel optional arch=any libinterfacebuilder1 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,10 +42,10 @@
     "gnustep"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Uploaders": [
-    "Gürkan Myczko \u003ctar@debian.org\u003e, Yavor Doganov \u003cyavor@gnu.org\u003e"
+    "Alex Myczko \u003ctar@debian.org\u003e, Yavor Doganov \u003cyavor@gnu.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/gnustep-team/gorm.app"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/gnustep-team/gorm.app.git"
   ],
   "Version": [
-    "1.3.1-1"
+    "1.4.0-4"
   ]
 }
