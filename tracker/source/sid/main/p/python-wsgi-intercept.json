@@ -9,16 +9,16 @@
     "debhelper-compat (= 10), dh-python, openstack-pkg-tools, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-httplib2, python3-pytest, python3-requests, python3-six, python3-urllib3"
+    "python3-httplib2, python3-pytest, python3-pytest-xdist, python3-requests, python3-six, python3-urllib3"
   ],
   "Checksums-Sha256": [
-    "307544e02279527889246da504782e03582e7792486dcb7810284670a09d0c4d 2242 python-wsgi-intercept_1.13.0-1.dsc 123bb7d27f1a149abdf6b34dc8bc9b8672c073ea0dac08b65ce867d1579f755e 21124 python-wsgi-intercept_1.13.0.orig.tar.xz 6c41939dcee2bace34e335f1e981e5684364b30e3eebc98e682eeb51d33fc667 10348 python-wsgi-intercept_1.13.0-1.debian.tar.xz"
+    "eadd70ea85717fd11142b8195ec1de9a0d127662938442405994c0fcf9b291f8 2319 python-wsgi-intercept_1.13.0-2.dsc 123bb7d27f1a149abdf6b34dc8bc9b8672c073ea0dac08b65ce867d1579f755e 21124 python-wsgi-intercept_1.13.0.orig.tar.xz fc966f416e90ab21822b92ad234bef2478d602328b2a0dae8f509b8dfa5386fd 10552 python-wsgi-intercept_1.13.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-wsgi-intercept"
   ],
   "Files": [
-    "09ada938a0b8ffff5b470590538df099 2242 python-wsgi-intercept_1.13.0-1.dsc 1f63d05122d2afda0c6c4e836c5109b3 21124 python-wsgi-intercept_1.13.0.orig.tar.xz f07a5d3cc4cad46a604e694d7aeccffc 10348 python-wsgi-intercept_1.13.0-1.debian.tar.xz"
+    "6d9fe1fea5f741ff4b97d52b91344d54 2319 python-wsgi-intercept_1.13.0-2.dsc 1f63d05122d2afda0c6c4e836c5109b3 21124 python-wsgi-intercept_1.13.0.orig.tar.xz da32f627cc39c2431876b4fe53c4788f 10552 python-wsgi-intercept_1.13.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.1.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-wsgi-intercept.git"
   ],
   "Version": [
-    "1.13.0-1"
+    "1.13.0-2"
   ]
 }
