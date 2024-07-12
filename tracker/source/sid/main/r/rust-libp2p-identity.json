@@ -6,16 +6,16 @@
     "librust-libp2p-identity-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo, librust-base64-0.21+default-dev \u003c!nocheck\u003e, librust-bs58-0.5+default-dev \u003c!nocheck\u003e, librust-ed25519-dalek-2+default-dev \u003c!nocheck\u003e, librust-hex-literal-0.4+default-dev \u003c!nocheck\u003e, librust-hkdf-0.12+default-dev \u003c!nocheck\u003e, librust-multihash-0.19+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-p256-0.13+ecdsa-dev \u003c!nocheck\u003e, librust-p256-0.13+pem-dev \u003c!nocheck\u003e, librust-p256-0.13+std-dev \u003c!nocheck\u003e, librust-quick-protobuf-0.8+default-dev \u003c!nocheck\u003e, librust-quickcheck-1+default-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-rmp-serde-1+default-dev \u003c!nocheck\u003e, librust-sec1-0.7-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-tracing-0.1+default-dev \u003c!nocheck\u003e, librust-void-1+default-dev \u003c!nocheck\u003e, librust-zeroize-1+default-dev \u003c!nocheck\u003e, libstring-shellquote-perl \u003c!nocheck\u003e \u003c!nocheck\u003e, rustc (\u003e= 1.73)"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-base64-0.21+default-dev \u003c!nocheck\u003e, librust-bs58-0.5+default-dev \u003c!nocheck\u003e, librust-ed25519-dalek-2+default-dev \u003c!nocheck\u003e, librust-hex-literal-0.4+default-dev \u003c!nocheck\u003e, librust-hkdf-0.12+default-dev \u003c!nocheck\u003e, librust-multihash-0.19+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-p256-0.13+ecdsa-dev \u003c!nocheck\u003e, librust-p256-0.13+pem-dev \u003c!nocheck\u003e, librust-p256-0.13+std-dev \u003c!nocheck\u003e, librust-quick-protobuf-0.8+default-dev \u003c!nocheck\u003e, librust-quickcheck-1+default-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-rmp-serde-1+default-dev \u003c!nocheck\u003e, librust-sec1-0.7-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-tracing-0.1+default-dev \u003c!nocheck\u003e, librust-void-1+default-dev \u003c!nocheck\u003e, librust-zeroize-1+default-dev \u003c!nocheck\u003e, rustc (\u003e= 1.73)"
   ],
   "Checksums-Sha256": [
-    "96f23ae7af29af6521fd456d495f1dfd220493753ee2f304a2a11eb48c00865c 3509 rust-libp2p-identity_0.2.9+ds-3.dsc 528406d4a40334de6ed581bd5c999b4d56d60301c764e11bfedf6da3e78b8c96 51768 rust-libp2p-identity_0.2.9+ds.orig.tar.xz 09ffae114646eb1cad08ae53616302508c08f2efe079045598be250ce76e5e13 19692 rust-libp2p-identity_0.2.9+ds-3.debian.tar.xz"
+    "c77045000b97d420a4fa1460e0f9e9dfa83374c531c085ebaded986cb0949fce 3458 rust-libp2p-identity_0.2.9+ds-4.dsc 528406d4a40334de6ed581bd5c999b4d56d60301c764e11bfedf6da3e78b8c96 51768 rust-libp2p-identity_0.2.9+ds.orig.tar.xz 4de48143282cdb2208e2722b0691585ea6bfd42fc45ebc8fe13de8eb2677ab7f 8536 rust-libp2p-identity_0.2.9+ds-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libp2p-identity"
   ],
   "Files": [
-    "291ba5c5071877bb050fd003ec40b52e 3509 rust-libp2p-identity_0.2.9+ds-3.dsc 091e1695ff5044986d0d91b34f8dd004 51768 rust-libp2p-identity_0.2.9+ds.orig.tar.xz 3df629bd3826bf665609eed07f53ef2e 19692 rust-libp2p-identity_0.2.9+ds-3.debian.tar.xz"
+    "4e39639506c6d2d58451a0ad450cae2c 3458 rust-libp2p-identity_0.2.9+ds-4.dsc 091e1695ff5044986d0d91b34f8dd004 51768 rust-libp2p-identity_0.2.9+ds.orig.tar.xz 3c0b9675938a3a7f87b5a2b33ca2337f 8536 rust-libp2p-identity_0.2.9+ds-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-base64-0.21+default-dev, librust-hex-literal-0.4+default-dev, librust-libp2p-identity-0.2+default-dev, librust-libp2p-identity-0.2+ecdsa-dev, librust-libp2p-identity-0.2+ed25519-dev, librust-libp2p-identity-0.2+peerid-dev, librust-libp2p-identity-0.2+rand-dev, librust-libp2p-identity-0.2+serde-dev, librust-libp2p-identity-0.2-dev, librust-num-traits-0.2+default-dev, librust-rmp-serde-1+default-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-base64-0.21+default-dev, librust-hex-literal-0.4+default-dev, librust-libp2p-identity-0.2+default-dev, librust-libp2p-identity-0.2+ecdsa-dev, librust-libp2p-identity-0.2+ed25519-dev, librust-libp2p-identity-0.2+peerid-dev, librust-libp2p-identity-0.2+rand-dev, librust-libp2p-identity-0.2+serde-dev, librust-libp2p-identity-0.2-dev, librust-num-traits-0.2+default-dev, librust-rmp-serde-1+default-dev, librust-serde-json-1+default-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-libp2p-identity"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-libp2p-identity.git"
   ],
   "Version": [
-    "0.2.9+ds-3"
+    "0.2.9+ds-4"
   ]
 }
