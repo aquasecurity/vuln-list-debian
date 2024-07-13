@@ -9,16 +9,16 @@
     "debhelper-compat (= 10), dh-python, openstack-pkg-tools, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-httplib2, python3-pytest, python3-requests, python3-six, python3-urllib3"
+    "python3-httplib2, python3-pytest, python3-pytest-xdist, python3-requests, python3-six, python3-urllib3"
   ],
   "Checksums-Sha256": [
-    "c7bdeb6bb2c8de55f6abd266d9b62231dacef9896f0cb821b7dba4526b81e9d5 2232 python-wsgi-intercept_1.9.3-5.dsc 0ee9385fa415c2b46d2de2797263d8cebc760bb3ff3f3e58ae485e4b9bedbdb8 22184 python-wsgi-intercept_1.9.3.orig.tar.xz 760db1df9d071edc8e3749cd67b425005e3237175547d0af4d69243d0492a9cc 6272 python-wsgi-intercept_1.9.3-5.debian.tar.xz"
+    "eadd70ea85717fd11142b8195ec1de9a0d127662938442405994c0fcf9b291f8 2319 python-wsgi-intercept_1.13.0-2.dsc 123bb7d27f1a149abdf6b34dc8bc9b8672c073ea0dac08b65ce867d1579f755e 21124 python-wsgi-intercept_1.13.0.orig.tar.xz fc966f416e90ab21822b92ad234bef2478d602328b2a0dae8f509b8dfa5386fd 10552 python-wsgi-intercept_1.13.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-wsgi-intercept"
   ],
   "Files": [
-    "50864291fb717aab03227913ac02caf8 2232 python-wsgi-intercept_1.9.3-5.dsc 4f99d0850bc7aef577c2e4acd1bce5ff 22184 python-wsgi-intercept_1.9.3.orig.tar.xz 5e7abec95354690f86cc9d63c6759766 6272 python-wsgi-intercept_1.9.3-5.debian.tar.xz"
+    "6d9fe1fea5f741ff4b97d52b91344d54 2319 python-wsgi-intercept_1.13.0-2.dsc 1f63d05122d2afda0c6c4e836c5109b3 21124 python-wsgi-intercept_1.13.0.orig.tar.xz da32f627cc39c2431876b4fe53c4788f 10552 python-wsgi-intercept_1.13.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.1.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-wsgi-intercept.git"
   ],
   "Version": [
-    "1.9.3-5"
+    "1.13.0-2"
   ]
 }
