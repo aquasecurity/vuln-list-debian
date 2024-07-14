@@ -6,16 +6,16 @@
     "librust-event-listener-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), librust-futures-0.3+std-dev, librust-waker-fn-1+default-dev, libstring-shellquote-perl"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-concurrent-queue-2+std-dev \u003c!nocheck\u003e, librust-futures-lite-dev (\u003c\u003c 3) \u003c!nocheck\u003e, librust-parking-2-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-try-lock-0.2+default-dev \u003c!nocheck\u003e, librust-waker-fn-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1869440740a3fbd0b398f53a49fd34b02fed0b440fd0ce4fada9089e94a00d4f 2247 rust-event-listener_2.5.3-4.dsc dce5f7f0ae064c5be28abc3ac23187e9396f2b0d2b74e7788e91c24c1b04f63d 15102 rust-event-listener_2.5.3.orig.tar.gz f865327b941fcdd2d6c1943000cda5517a8a089df6a08843ade759eff10a4c8c 11660 rust-event-listener_2.5.3-4.debian.tar.xz"
+    "b3090875de1f9576c0df30b09789767dc6007c655955f40b7c457635c4a1362b 2497 rust-event-listener_5.3.1-3.dsc f21651f173312b3e7c9e24735b3be974a6956a1fb9643f7d05a3977f2c3dc196 37352 rust-event-listener_5.3.1.orig.tar.gz c13a9eb5bc55d537fc61988059c3730ec67e8b4dc9ef47b5fcd287d099c8a058 8332 rust-event-listener_5.3.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-event-listener"
   ],
   "Files": [
-    "034792c260ddf28b155caec864c5c370 2247 rust-event-listener_2.5.3-4.dsc 903009333ec59a037a72d749beeabd10 15102 rust-event-listener_2.5.3.orig.tar.gz 6b619c1b2733cb6ad70c575c18de225d 11660 rust-event-listener_2.5.3-4.debian.tar.xz"
+    "a1b563a2c9c5fa089c1c4e18e582903c 2497 rust-event-listener_5.3.1-3.dsc 4a47132aafee6a65df01f68832cbf482 37352 rust-event-listener_5.3.1.orig.tar.gz e4a3060981e2a65d100846c6925c173c 8332 rust-event-listener_5.3.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-event-listener-2+default-dev, librust-event-listener-2-dev, librust-futures-0.3+std-dev, librust-waker-fn-1+default-dev"
+    "dh-cargo, librust-event-listener-5+default-dev, librust-event-listener-5+std-dev, librust-event-listener-5-dev, librust-futures-lite-1+default-dev, librust-try-lock-0.2+default-dev, librust-waker-fn-1+default-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-event-listener"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-event-listener.git"
   ],
   "Version": [
-    "2.5.3-4"
+    "5.3.1-3"
   ]
 }
