@@ -6,16 +6,16 @@
     "librust-async-channel-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), librust-concurrent-queue-2+default-dev \u003c!nocheck\u003e, librust-easy-parallel-3+default-dev \u003c!nocheck\u003e, librust-event-listener-2+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-futures-lite-1+default-dev \u003c!nocheck\u003e, libstring-shellquote-perl"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-concurrent-queue-2+std-dev (\u003e= 2.5) \u003c!nocheck\u003e, librust-easy-parallel-3+default-dev \u003c!nocheck\u003e, librust-event-listener-strategy-0.5+std-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-lite-dev (\u003c\u003c 3) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "724240fddd81b1865e109e55966aa237b93ffb74f48286ca4f58ae1165f47cd0 2428 rust-async-channel_1.9.0-2.dsc 34eccbc4ea2f8a7b13b6e0055d6f250d2e52997e3a00a430ca1f5f4598cf06f8 14512 rust-async-channel_1.9.0.orig.tar.gz 782542f9a619b187371039049e53de05ef5f9738656016fd4fea070acaf5712b 11808 rust-async-channel_1.9.0-2.debian.tar.xz"
+    "b539b86ad63a5ead94d0cdd7ee5c11a159e6813fd813da325a5bccf049c099d4 2475 rust-async-channel_2.3.1-4.dsc 444ecaf1171d0e97803d993a1a486b1577424f03804021013e6efeeb9112affd 15494 rust-async-channel_2.3.1.orig.tar.gz 62c289d44f612ac905df85e11466dc51dbb823150f85aac0b9de05d27b2f5690 4396 rust-async-channel_2.3.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-channel"
   ],
   "Files": [
-    "390202271db5f7740e13de1c113f6bf3 2428 rust-async-channel_1.9.0-2.dsc b7ae3277f119ce0da25ed1d0fff60b8f 14512 rust-async-channel_1.9.0.orig.tar.gz c87da44c94b76c5f8230f6b7edf07451 11808 rust-async-channel_1.9.0-2.debian.tar.xz"
+    "b5d9b7c9c287cacce1b8f49f8aa0c358 2475 rust-async-channel_2.3.1-4.dsc 690ad1c585ae15dafeb4fc6bdd0999c6 15494 rust-async-channel_2.3.1.orig.tar.gz 439d180b9df2be3204a01f7832b7e3ac 4396 rust-async-channel_2.3.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-channel-1+default-dev, librust-async-channel-1-dev, librust-easy-parallel-3+default-dev, librust-futures-lite-1+default-dev"
+    "dh-cargo, librust-async-channel-2+default-dev, librust-async-channel-2-dev, librust-easy-parallel-3+default-dev, librust-easy-parallel-3+std-dev, librust-futures-lite-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-async-channel"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-async-channel.git"
   ],
   "Version": [
-    "1.9.0-2"
+    "2.3.1-4"
   ]
 }
