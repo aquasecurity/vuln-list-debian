@@ -1,27 +1,30 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "steptalk, libsteptalk0, libsteptalk-dev"
+    "steptalk, steptalk-doc, libsteptalk0d, libsteptalk-dev, steptalk-gui-module, steptalk-gdl2-module, steptalk-sqlclient-module"
   ],
   "Build-Depends": [
-    "cdbs, debhelper (\u003e= 7), libreadline-dev, libgnustep-gui-dev, libgnustep-dl2-dev"
+    "debhelper-compat (= 13), gnustep-make (\u003e= 2.9.2-2), libgnustep-dl2-dev (\u003e= 0.12.0+git20171224), libgnustep-gui-dev, libreadline-dev, libsqlclient-dev"
+  ],
+  "Build-Depends-Indep": [
+    "gnustep-base-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "01245a6450df247f2043b961cb79c0a7b7a3d91a9115bf79fec5d18c75128ec6 2133 steptalk_0.10.0-6.dsc 6ca07337d4a695a3ac29afccdf6e35fa85d1c91b7e730bc70760ccbd6583cd1a 308088 steptalk_0.10.0.orig.tar.gz 9ef35b846c9d87fac483217b1c5c31da8ade45b2be049846c6422c190790656f 33068 steptalk_0.10.0-6.debian.tar.xz"
+    "ff1e6c3ea159ecdec0fa69ff65e101a1449e56d5258c1b3a84b5648e279f0928 2694 steptalk_0.10.0+git20200629-2.dsc 28611ca925dab3a44ac8875985314dcb5008022ababd3f54c5deadc3f9f1d80e 240437 steptalk_0.10.0+git20200629.orig.tar.gz 4f9aedd7d0a13e1b994cd44ab910b430eceb323c6f717ba8c7517892d6134738 10464 steptalk_0.10.0+git20200629-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/steptalk"
   ],
   "Files": [
-    "3e54ea79ef0db5c2d7b3ad2a9a2bf39e 2133 steptalk_0.10.0-6.dsc e2889a33e234ce1a7d569a216bccb4f3 308088 steptalk_0.10.0.orig.tar.gz 079e1ca076747d96220d2476b5487dc0 33068 steptalk_0.10.0-6.debian.tar.xz"
+    "48ac18c9241f6a617a80987075fd96fb 2694 steptalk_0.10.0+git20200629-2.dsc 27080cf9e4b538543a2d020d6752245e 240437 steptalk_0.10.0+git20200629.orig.tar.gz c9bb5382abc80a8554cb76d1a11218e0 10464 steptalk_0.10.0+git20200629-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.gnustep.org/experience/StepTalk.html"
+    "http://wwwmain.gnustep.org/experience/StepTalk.html"
   ],
   "Maintainer": [
     "Debian GNUstep maintainers \u003cpkg-gnustep-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +33,7 @@
     "steptalk"
   ],
   "Package-List": [
-    "libsteptalk-dev deb libdevel optional arch=any libsteptalk0 deb libs optional arch=any steptalk deb gnustep optional arch=any"
+    "libsteptalk-dev deb libdevel optional arch=any libsteptalk0d deb libs optional arch=any steptalk deb gnustep optional arch=any steptalk-doc deb doc optional arch=all profile=!nodoc steptalk-gdl2-module deb gnustep optional arch=any steptalk-gui-module deb gnustep optional arch=any steptalk-sqlclient-module deb gnustep optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,18 +42,24 @@
     "gnustep"
   ],
   "Standards-Version": [
-    "3.9.5"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "libgnustep-base-dev"
   ],
   "Uploaders": [
-    "Yavor Doganov \u003cyavor@gnu.org\u003e"
+    "Yavor Doganov \u003cyavor@gnu.org\u003e,"
   ],
   "Vcs-Browser": [
-    "http://anonscm.debian.org/gitweb/?p=pkg-gnustep/steptalk.git"
+    "https://salsa.debian.org/gnustep-team/steptalk"
   ],
   "Vcs-Git": [
-    "git://anonscm.debian.org/pkg-gnustep/steptalk.git"
+    "https://salsa.debian.org/gnustep-team/steptalk.git"
   ],
   "Version": [
-    "0.10.0-6"
+    "0.10.0+git20200629-2"
   ]
 }

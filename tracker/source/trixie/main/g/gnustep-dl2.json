@@ -1,27 +1,30 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "gnustep-dl2, libgnustep-dl2-0d, libgnustep-dl2-dev, gnustep-dl2-postgresql-adaptor, gnustep-dl2-sqlite-adaptor"
+    "gnustep-dl2, gnustep-dl2-doc, libgnustep-dl2-0deb, libgnustep-dl2-dev, gnustep-dl2-postgresql-adaptor, gnustep-dl2-sqlite-adaptor"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libpq-dev, librenaissance0-dev, libsqlite3-dev, libgorm-dev, texinfo, texlive-latex-base, imagemagick"
+    "debhelper-compat (= 13), gnustep-make (\u003e= 2.9.2-2), gorm.app (\u003e= 1.4), imagemagick, libinterfacebuilder-dev, libpq-dev, librenaissance0-dev, libsqlite3-dev, postgresql \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "gnustep-base-doc \u003c!nodoc\u003e, gnustep-gui-doc \u003c!nodoc\u003e, texinfo \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "9764d50012116cfbf3b6e0fe70aa9d8392de3ea7ef9a527bd7f358b2654b733a 2453 gnustep-dl2_0.12.0-16.dsc 1361b02c68d1b1c369b57625a5f43dafe8167e226aea64acb517621f1ed4a989 827164 gnustep-dl2_0.12.0.orig.tar.gz 4b9b8428b82d0bb69984e58ccc582bda3aa79053e243b997aa99f2f81d7ac0c5 110420 gnustep-dl2_0.12.0-16.debian.tar.xz"
+    "51d081c559884354b1a62824beb6939ee8578899875e99252452d17f87480700 2844 gnustep-dl2_0.12.0+git20171224-3.dsc ca1576e80ec06cd79bc4117129ed05669f819cc484a2ddedfe93c3a948c85329 1882924 gnustep-dl2_0.12.0+git20171224.orig.tar.gz 9b8b6fcff03be3396d5d68ffae5d1f6bfba7602ca5c865fe007652f33ab24f85 22604 gnustep-dl2_0.12.0+git20171224-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnustep-dl2"
   ],
   "Files": [
-    "8bed03b5c242644c382704123ab1cb52 2453 gnustep-dl2_0.12.0-16.dsc 933f7535e6ff4a269cb5dea2b3658d48 827164 gnustep-dl2_0.12.0.orig.tar.gz a4f351d9d062c8ddc68bed3d465ac1b5 110420 gnustep-dl2_0.12.0-16.debian.tar.xz"
+    "4825d075fe2bf19ca5d619ed3842207e 2844 gnustep-dl2_0.12.0+git20171224-3.dsc 388385814ea0075dc8ec28b23ef53b2e 1882924 gnustep-dl2_0.12.0+git20171224.orig.tar.gz 1e5a0dff2820140bc4b75ed632902292 22604 gnustep-dl2_0.12.0+git20171224-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.gnustep.org/experience/GDL2.html"
+    "https://mediawiki.gnustep.org/index.php/GDL"
   ],
   "Maintainer": [
     "Debian GNUstep maintainers \u003cpkg-gnustep-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +33,7 @@
     "gnustep-dl2"
   ],
   "Package-List": [
-    "gnustep-dl2 deb gnustep optional arch=any gnustep-dl2-postgresql-adaptor deb gnustep optional arch=any gnustep-dl2-sqlite-adaptor deb gnustep optional arch=any libgnustep-dl2-0d deb libs optional arch=any libgnustep-dl2-dev deb libdevel optional arch=any"
+    "gnustep-dl2 deb gnustep optional arch=any gnustep-dl2-doc deb doc optional arch=all profile=!nodoc gnustep-dl2-postgresql-adaptor deb gnustep optional arch=any gnustep-dl2-sqlite-adaptor deb gnustep optional arch=any libgnustep-dl2-0deb deb libs optional arch=any libgnustep-dl2-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,10 +42,16 @@
     "gnustep"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "postgresql"
   ],
   "Uploaders": [
-    "Federico Gimenez Nieto \u003cfgimenez@coit.es\u003e, Eric Heintzmann \u003cheintzmann.eric@free.fr\u003e"
+    "Federico Gimenez Nieto \u003cfgimenez@coit.es\u003e, Eric Heintzmann \u003cheintzmann.eric@free.fr\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/gnustep-team/gnustep-dl2"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/gnustep-team/gnustep-dl2.git"
   ],
   "Version": [
-    "0.12.0-16"
+    "0.12.0+git20171224-3"
   ]
 }
