@@ -6,16 +6,16 @@
     "python3-jupyter-core, jupyter-core, python-jupyter-core-doc, jupyter"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-ipython \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-platformdirs \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autodoc-typehints \u003c!nodoc\u003e, python3-traitlets \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-enchant \u003c!nodoc\u003e, python3-hatchling, python3-ipython \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pip \u003c!nocheck\u003e, python3-platformdirs \u003c!nocheck\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autodoc-typehints \u003c!nodoc\u003e, python3-sphinxcontrib.spelling \u003c!nodoc\u003e, python3-traitlets \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "97e3835d2feae7ca269cf90da3bc774cb3254a71f3d90d8897df9c9f48c5f893 2576 jupyter-core_5.3.2-3.dsc d4743ff07c86c48235c386a00bc0c3011bf12a2f14e2d7ba81d1422cfb69262c 85510 jupyter-core_5.3.2.orig.tar.gz 8acf23379b3bac6f2483b992d98183293ebacd7a014b9d73dcbe140567ba41b4 7456 jupyter-core_5.3.2-3.debian.tar.xz"
+    "8c5e1630444d5795d3f28cc0dbdfe69dab3a7c6dd12dde151b735076d4c17ced 2702 jupyter-core_5.7.2-1.dsc a258cd15a34d3aedc1aa77f13be2eb2ddf98e6739f4354d5854681b064d46520 88169 jupyter-core_5.7.2.orig.tar.gz 1ad00ad7956a56046620c14c660831044bf1e93c13e23987c94b916647b79ee5 7468 jupyter-core_5.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jupyter-core"
   ],
   "Files": [
-    "6c424aaaa069e82cb4decea11958b85c 2576 jupyter-core_5.3.2-3.dsc c5899c4ca2b91981ffa51f7e3d0a4ae8 85510 jupyter-core_5.3.2.orig.tar.gz 92c84160be476d8e2d43f8c0f3435711 7456 jupyter-core_5.3.2-3.debian.tar.xz"
+    "ddcc45a9e97717e3e2b0853fda52f400 2702 jupyter-core_5.7.2-1.dsc 97589e671ec3afee642d68058a7f33df 88169 jupyter-core_5.7.2.orig.tar.gz 8b07be61460c6cfc52aac21d54240de2 7468 jupyter-core_5.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "jupyter-core"
   ],
   "Package-List": [
-    "jupyter deb metapackages optional arch=all jupyter-core deb utils optional arch=all python-jupyter-core-doc deb doc optional arch=all python3-jupyter-core deb python optional arch=all"
+    "jupyter deb metapackages optional arch=all jupyter-core deb utils optional arch=all python-jupyter-core-doc deb doc optional arch=all profile=!nodoc python3-jupyter-core deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Julien Puydt \u003cjpuydt@debian.org\u003e, Gordon Ball \u003cgordon@chronitis.net\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/jupyter-core.git"
   ],
   "Version": [
-    "5.3.2-3"
+    "5.7.2-1"
   ]
 }
