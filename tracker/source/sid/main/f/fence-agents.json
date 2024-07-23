@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "fence-agents, fence-virt, fence-virtd"
+    "fence-agents, fence-agents-common, fence-agents-aliyun, fence-agents-ack-manual, fence-agents-alom, fence-agents-amt, fence-agents-apc, fence-agents-apc-snmp, fence-agents-aws, fence-agents-azure-arm, fence-agents-bladecenter, fence-agents-brocade, fence-agents-cdu, fence-agents-cisco-mds, fence-agents-cisco-ucs, fence-agents-compute, fence-agents-crosslink, fence-agents-cyberpower-ssh, fence-agents-docker, fence-agents-drac, fence-agents-drac5, fence-agents-dummy, fence-agents-eaton-snmp, fence-agents-eaton-ssh, fence-agents-ecloud, fence-agents-emerson, fence-agents-eps, fence-agents-gce, fence-agents-hds-cb, fence-agents-heuristics-ping, fence-agents-hpblade, fence-agents-ibmblade, fence-agents-ibm-powervs, fence-agents-ibm-vpc, fence-agents-ibmz, fence-agents-ifmib, fence-agents-ilo2, fence-agents-ilo-moonshot, fence-agents-ilo-mp, fence-agents-ilo-ssh, fence-agents-intelmodular, fence-agents-ipdu, fence-agents-ipmilan, fence-agents-ironic, fence-agents-kdump, fence-agents-kubevirt, fence-agents-ldom, fence-agents-lindy-pdu, fence-agents-lpar, fence-agents-mpath, fence-agents-netio, fence-agents-openstack, fence-agents-ovh, fence-agents-ovm, fence-agents-powerman, fence-agents-pve, fence-agents-raritan, fence-agents-raritan-px3, fence-agents-rcd-serial, fence-agents-redfish, fence-agents-rhevm, fence-agents-rsa, fence-agents-rsb, fence-agents-sanbox2, fence-agents-sbd, fence-agents-scsi, fence-agents-skalar, fence-agents-vbox, fence-agents-virsh, fence-agents-vmware, fence-agents-vmware-rest, fence-agents-vmware-soap, fence-agents-vmware-vcloud, fence-agents-wti, fence-agents-xenapi, fence-agents-zvm, fence-virt, fence-virtd"
   ],
   "Build-Depends": [
     "autoconf, automake, bison, debhelper-compat (= 13), dh-python, flex, iputils-ping, libcpg-dev, libglib2.0-dev, libnet-telnet-perl, libnspr4-dev, libnss3-dev, libtool, libvirt-dev, libxml2-dev, libxml2-utils, perl, python3, python3-boto3, python3-googleapi, python3-kubernetes, python3-oauth2client, python3-pexpect, python3-pycurl, python3-requests, python3-suds, systemd-dev, time, uuid-dev, xsltproc"
   ],
   "Checksums-Sha256": [
-    "93101151cc061170b15e076e8cbb2ec4b464dac35927dbaebbfcabfc4f9f033d 2636 fence-agents_4.12.1-1.1.dsc a30349759931bc19eed100225615215b9c26e005cefa394993b5cbee13b72145 475073 fence-agents_4.12.1.orig.tar.gz c177ea9fec0183f7345d700b2b4936f924a6854791f3bf7238af8fcf8dfa4b2c 11564 fence-agents_4.12.1-1.1.debian.tar.xz"
+    "f6826b49f45baed1fe7f53106879a97dc9187ad8afb8a11b87174df977189fbd 7972 fence-agents_4.15.0-1.dsc 9faaf0e50b6f25edb5df47e85a815f0a770a9d5cf4a020f24ece6b368454f725 486883 fence-agents_4.15.0.orig.tar.gz ba8bfcb2acc85b3a15e6d38289e41c266d8edc08ed3ced0263f584755dd1b46b 17988 fence-agents_4.15.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fence-agents"
   ],
   "Files": [
-    "dda55798e8a2ad779648bc03619dee3a 2636 fence-agents_4.12.1-1.1.dsc f7005de5c4ce356bcaae23ee19529115 475073 fence-agents_4.12.1.orig.tar.gz c4ec3148838fca609548f38a2cbd6a9e 11564 fence-agents_4.12.1-1.1.debian.tar.xz"
+    "4435331a613e98ef219961df523cb37e 7972 fence-agents_4.15.0-1.dsc 955c6402ebe6c763b2040745c022aca7 486883 fence-agents_4.15.0.orig.tar.gz f9d911f588b59860fbe1f8e4e6623b16 17988 fence-agents_4.15.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "fence-agents"
   ],
   "Package-List": [
-    "fence-agents deb admin optional arch=any fence-virt deb admin optional arch=any fence-virtd deb admin optional arch=any"
+    "fence-agents deb admin optional arch=all fence-agents-ack-manual deb admin optional arch=all fence-agents-aliyun deb admin optional arch=all fence-agents-alom deb admin optional arch=all fence-agents-amt deb admin optional arch=all fence-agents-apc deb admin optional arch=all fence-agents-apc-snmp deb admin optional arch=all fence-agents-aws deb admin optional arch=all fence-agents-azure-arm deb admin optional arch=all fence-agents-bladecenter deb admin optional arch=all fence-agents-brocade deb admin optional arch=all fence-agents-cdu deb admin optional arch=all fence-agents-cisco-mds deb admin optional arch=all fence-agents-cisco-ucs deb admin optional arch=all fence-agents-common deb admin optional arch=all fence-agents-compute deb admin optional arch=all fence-agents-crosslink deb admin optional arch=all fence-agents-cyberpower-ssh deb admin optional arch=all fence-agents-docker deb admin optional arch=all fence-agents-drac deb admin optional arch=all fence-agents-drac5 deb admin optional arch=all fence-agents-dummy deb admin optional arch=all fence-agents-eaton-snmp deb admin optional arch=all fence-agents-eaton-ssh deb admin optional arch=all fence-agents-ecloud deb admin optional arch=all fence-agents-emerson deb admin optional arch=all fence-agents-eps deb admin optional arch=all fence-agents-gce deb admin optional arch=all fence-agents-hds-cb deb admin optional arch=all fence-agents-heuristics-ping deb admin optional arch=all fence-agents-hpblade deb admin optional arch=all fence-agents-ibm-powervs deb admin optional arch=all fence-agents-ibm-vpc deb admin optional arch=all fence-agents-ibmblade deb admin optional arch=all fence-agents-ibmz deb admin optional arch=all fence-agents-ifmib deb admin optional arch=all fence-agents-ilo-moonshot deb admin optional arch=all fence-agents-ilo-mp deb admin optional arch=all fence-agents-ilo-ssh deb admin optional arch=all fence-agents-ilo2 deb admin optional arch=all fence-agents-intelmodular deb admin optional arch=all fence-agents-ipdu deb admin optional arch=all fence-agents-ipmilan deb admin optional arch=all fence-agents-ironic deb admin optional arch=all fence-agents-kdump deb admin optional arch=any fence-agents-kubevirt deb admin optional arch=all fence-agents-ldom deb admin optional arch=all fence-agents-lindy-pdu deb admin optional arch=all fence-agents-lpar deb admin optional arch=all fence-agents-mpath deb admin optional arch=all fence-agents-netio deb admin optional arch=all fence-agents-openstack deb admin optional arch=all fence-agents-ovh deb admin optional arch=all fence-agents-ovm deb admin optional arch=all fence-agents-powerman deb admin optional arch=all fence-agents-pve deb admin optional arch=all fence-agents-raritan deb admin optional arch=all fence-agents-raritan-px3 deb admin optional arch=all fence-agents-rcd-serial deb admin optional arch=all fence-agents-redfish deb admin optional arch=all fence-agents-rhevm deb admin optional arch=all fence-agents-rsa deb admin optional arch=all fence-agents-rsb deb admin optional arch=all fence-agents-sanbox2 deb admin optional arch=all fence-agents-sbd deb admin optional arch=all fence-agents-scsi deb admin optional arch=all fence-agents-skalar deb admin optional arch=all fence-agents-vbox deb admin optional arch=all fence-agents-virsh deb admin optional arch=all fence-agents-vmware deb admin optional arch=all fence-agents-vmware-rest deb admin optional arch=all fence-agents-vmware-soap deb admin optional arch=all fence-agents-vmware-vcloud deb admin optional arch=all fence-agents-wti deb admin optional arch=all fence-agents-xenapi deb admin optional arch=all fence-agents-zvm deb admin optional arch=all fence-virt deb admin optional arch=any fence-virtd deb admin optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gawk, iputils-ping, libxml2-utils, python3-openstackclient, time, xsltproc"
+    "@recommends@, gawk, libxml2-utils, time, xsltproc"
   ],
   "Uploaders": [
     "Adrian Vondendriesch \u003cadrian.vondendriesch@credativ.de\u003e, Valentin Vidic \u003cvvidic@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/ha-team/fence-agents.git"
   ],
   "Version": [
-    "4.12.1-1.1"
+    "4.15.0-1"
   ]
 }
