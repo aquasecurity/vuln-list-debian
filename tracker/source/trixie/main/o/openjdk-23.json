@@ -6,19 +6,19 @@
     "openjdk-23-jdk-headless, openjdk-23-jre-headless, openjdk-23-jdk, openjdk-23-jre, openjdk-23-demo, openjdk-23-source, openjdk-23-doc, openjdk-23-dbg, openjdk-23-testsupport, openjdk-23-jre-zero"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), file, autoconf, automake, autotools-dev, ant, ant-optional, g++-13 \u003c!cross\u003e, openjdk-22-jdk-headless:native | openjdk-23-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libnss3-dev (\u003e= 2:3.17.1), openjdk-23-jdk-headless \u003ccross\u003e"
+    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, wdiff, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), jtreg7 (\u003e= 7.3.1+1~) \u003c!nocheck\u003e, libtestng7-java \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xfonts-base \u003c!nocheck\u003e, libgl1-mesa-dri [!x32] \u003c!nocheck\u003e, xfwm4 \u003c!nocheck\u003e, x11-xkb-utils \u003c!nocheck\u003e, dbus-x11 \u003c!nocheck\u003e, libasmtools-java \u003c!nocheck\u003e, autoconf, automake, autotools-dev, ant, ant-optional, g++-14 \u003c!cross\u003e, openjdk-22-jdk-headless:native | openjdk-23-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libnss3-dev (\u003e= 2:3.17.1), openjdk-23-jdk-headless \u003ccross\u003e"
   ],
   "Build-Depends-Indep": [
     "graphviz, pandoc"
   ],
   "Checksums-Sha256": [
-    "d45a645c01ca1a42e3bd5b9da1610ae96239e3b5559a65b40392bd511ffb3f24 4971 openjdk-23_23~28ea-1.dsc 65165bc0ee3e518916f7374f71c4bce6071090f5c5bcd665fa5aea23cd73131d 616784 openjdk-23_23~28ea.orig-googletest.tar.xz 98d7bc3bedfbe4844d9bfe3953928c5f425e62160e0c1cc18fd4f2a792948194 70806268 openjdk-23_23~28ea.orig.tar.xz 5a65a53c4e88db1a7648f537eae25e14ddbc19c98bc8b5b7fa095545dd0e3ce7 202228 openjdk-23_23~28ea-1.debian.tar.xz"
+    "ce9777a572b8aebc8bfe10295a2eaa8a54cfd871a7fc60e8cfc81af6c648343f 5213 openjdk-23_23~33ea-1.dsc 65165bc0ee3e518916f7374f71c4bce6071090f5c5bcd665fa5aea23cd73131d 616784 openjdk-23_23~33ea.orig-googletest.tar.xz 17c6da00ad6efd1103af3d79c735c3b492afddf7f91aece3eeca813b5650f376 70879968 openjdk-23_23~33ea.orig.tar.xz 6c4fbe3db7621581cef076153821e4a627daff4ba702e5fa5e2775943100bba7 203844 openjdk-23_23~33ea-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openjdk-23"
   ],
   "Files": [
-    "e57ee667ac0362e155dd008e1ca5d2f8 4971 openjdk-23_23~28ea-1.dsc b685050366e61b66f7693c8a883c182b 616784 openjdk-23_23~28ea.orig-googletest.tar.xz 022254805fbadd572be65b1728a10e40 70806268 openjdk-23_23~28ea.orig.tar.xz 951b3ecacd73107875ab95ce37d5b359 202228 openjdk-23_23~28ea-1.debian.tar.xz"
+    "321660cd6659a1e709e7120b86eb3ca4 5213 openjdk-23_23~33ea-1.dsc b685050366e61b66f7693c8a883c182b 616784 openjdk-23_23~33ea.orig-googletest.tar.xz 501d79d46f03f3c5d83904c16c6049a0 70879968 openjdk-23_23~33ea.orig.tar.xz fe524c0023944f5b11ed09535f1a1e1e 203844 openjdk-23_23~33ea-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/openjdk-team/openjdk.git"
   ],
   "Version": [
-    "23~28ea-1"
+    "23~33ea-1"
   ]
 }
