@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "nanoc, ruby-nanoc-core, ruby-nanoc-cli, ruby-nanoc-live, ruby-nanoc-external, ruby-nanoc-checking, ruby-nanoc-deploying"
+    "nanoc, ruby-nanoc-core, ruby-nanoc-cli, ruby-nanoc-live, ruby-nanoc-external, ruby-nanoc-checking, ruby-nanoc-deploying, ruby-nanoc-org-mode"
   ],
   "Build-Depends": [
-    "asciidoc, asciidoctor, coderay, debhelper-compat (= 13), dctrl-tools, gem2deb (\u003e= 1.2.1~), git, highlight, pry, python3-pygments, rake, rsync, ruby-addressable (\u003e= 2.5~), ruby-adsf (\u003e= 1.4~), ruby-adsf-live, ruby-builder, ruby-colored (\u003e= 1.2), ruby-contracts (\u003e= 0.17), ruby-coveralls, ruby-cri (\u003e= 2.15~), ruby-ddmetrics, ruby-ddmemoize, ruby-ddplugin, ruby-erubi, ruby-erubis, ruby-fog-local, ruby-fuubar, ruby-haml (\u003e= 6.0), ruby-immutable-ruby, ruby-brandur-json-schema, ruby-kramdown, ruby-listen (\u003e= 3~), ruby-maruku, ruby-memo-wise, ruby-mime-types, ruby-minitest, ruby-mocha, ruby-mustache, ruby-nokogiri (\u003e= 1.12~), ruby-parallel, ruby-pygments.rb, ruby-rack, ruby-rdiscount, ruby-redcarpet, ruby-redcloth, ruby-ref, ruby-rouge (\u003e= 4), ruby-rspec, ruby-rspec-its, ruby-rubypants, ruby-sass, ruby-slim, ruby-slow-enumerator-tools, ruby-timecop, ruby-tomlrb, ruby-tty-command, ruby-tty-platform, ruby-tty-which, ruby-terser, ruby-vcr, ruby-webmock, ruby-zeitwerk, yard"
+    "asciidoc, asciidoctor, coderay, debhelper-compat (= 13), dctrl-tools, gem2deb (\u003e= 1.2.1~), git, highlight, pry, python3-pygments, rake, rsync, ruby-addressable (\u003e= 2.5~), ruby-adsf (\u003e= 1.4~), ruby-adsf-live, ruby-base64 (\u003e= 0.2~), ruby-builder, ruby-colored (\u003e= 1.2), ruby-contracts (\u003e= 0.17), ruby-coveralls, ruby-cri (\u003e= 2.15~), ruby-ddmetrics, ruby-ddmemoize, ruby-ddplugin, ruby-erubi, ruby-erubis, ruby-fog-local, ruby-fuubar, ruby-haml (\u003e= 6.0), ruby-immutable-ruby, ruby-brandur-json-schema, ruby-kramdown, ruby-listen (\u003e= 3~), ruby-maruku, ruby-memo-wise, ruby-mime-types, ruby-minitest, ruby-mocha, ruby-mustache, ruby-nokogiri (\u003e= 1.12~), ruby-org, ruby-parallel, ruby-pygments.rb, ruby-rack, ruby-rdiscount, ruby-redcarpet, ruby-redcloth, ruby-ref, ruby-rouge (\u003e= 4), ruby-rspec, ruby-rspec-its, ruby-rubypants, ruby-sass, ruby-slim, ruby-slow-enumerator-tools, ruby-timecop, ruby-tomlrb, ruby-tty-command, ruby-tty-platform, ruby-tty-which, ruby-terser, ruby-vcr, ruby-webmock, ruby-zeitwerk, yard"
   ],
   "Checksums-Sha256": [
-    "ddda4452fc72421a90f4b813fbeb23d7dcab5475ddf397017a73c64ce9c37493 2703 nanoc_4.12.18-1.dsc dad77c109f2018b98af45c1f1f432336208ec904477b9e26de4110ab6b4bcd62 351358 nanoc_4.12.18.orig.tar.gz a11a77db95001db33878f54e7c535daa8bfa152f6c923ee9162cafd34628833a 16128 nanoc_4.12.18-1.debian.tar.xz"
+    "09291b0aa4f25b57779aa0445e79158a6cbfcf85d50b05ce1bb106898a65e85d 2805 nanoc_4.12.21-1.dsc dd1684964887397553eec78271dcdba03db014e8bfe269bbf27ee72047f6af26 356922 nanoc_4.12.21.orig.tar.gz 9cff3d2b468b284c9ca8d6ce3b33fae0e9199069e94e507f5029fcbff529dea3 16568 nanoc_4.12.21-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/nanoc"
   ],
   "Files": [
-    "9e6fc56f8fcb3fbdd7516262d9920fb0 2703 nanoc_4.12.18-1.dsc c70d72c77950137250d630cc9e2d575c 351358 nanoc_4.12.18.orig.tar.gz ef3fd9716fae9033dd7de77f8183bbd6 16128 nanoc_4.12.18-1.debian.tar.xz"
+    "3f4c45563edce80affe8403708401e2c 2805 nanoc_4.12.21-1.dsc 588eb6e9633abaf8ed572de198e5ceef 356922 nanoc_4.12.21.orig.tar.gz 105e5a27b17df97d939a24c88780e095 16568 nanoc_4.12.21-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "nanoc"
   ],
   "Package-List": [
-    "nanoc deb web optional arch=all ruby-nanoc-checking deb ruby optional arch=all ruby-nanoc-cli deb ruby optional arch=all ruby-nanoc-core deb ruby optional arch=all ruby-nanoc-deploying deb ruby optional arch=all ruby-nanoc-external deb ruby optional arch=all ruby-nanoc-live deb ruby optional arch=all"
+    "nanoc deb web optional arch=all ruby-nanoc-checking deb ruby optional arch=all ruby-nanoc-cli deb ruby optional arch=all ruby-nanoc-core deb ruby optional arch=all ruby-nanoc-deploying deb ruby optional arch=all ruby-nanoc-external deb ruby optional arch=all ruby-nanoc-live deb ruby optional arch=all ruby-nanoc-org-mode deb ruby optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "web"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-ruby"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/ruby-team/nanoc.git"
   ],
   "Version": [
-    "4.12.18-1"
+    "4.12.21-1"
   ]
 }

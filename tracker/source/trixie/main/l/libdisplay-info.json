@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libdisplay-info1, libdisplay-info-dev, libdisplay-info-bin"
+    "libdisplay-info2, libdisplay-info-dev, libdisplay-info-bin"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), hwdata, meson, pkgconf"
+    "debhelper-compat (= 13), edid-decode \u003c!nocheck\u003e, hwdata, meson, pkgconf"
   ],
   "Checksums-Sha256": [
-    "288da6f7aa6312c376910083003c8ee70974fe793f26ed91a2650dbad801a6f1 2093 libdisplay-info_0.1.1-2.dsc a5aeef57817916286526292ec816a5338c4d3c0094ce91e584fc82b57070a44f 99518 libdisplay-info_0.1.1.orig.tar.gz 3f242ae1c86c033494f4833ce25c19c8bad65329d43c6eab39484e2a1f6655f8 8660 libdisplay-info_0.1.1-2.debian.tar.xz"
+    "7f416a22845c9bc5ae586dc0e518b071141ad5b108959973755b03315f59cebc 2175 libdisplay-info_0.2.0-2.dsc f6cf2ddbba3753ae38de5113d1fcb8fab977dfaf5fb07b38cd68d8482765e208 97213 libdisplay-info_0.2.0.orig.tar.bz2 18756b8ac1d9ed53f7627e3b78acb2b742f4c85c4c184e493532e588f593972f 9352 libdisplay-info_0.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libd/libdisplay-info"
   ],
   "Files": [
-    "cd18e8f56b6f879c0272d81dbe014613 2093 libdisplay-info_0.1.1-2.dsc f214fc05b8294ef26aec00a66e20f3d8 99518 libdisplay-info_0.1.1.orig.tar.gz 0e4f537ffb387c04654ec328ecf8c210 8660 libdisplay-info_0.1.1-2.debian.tar.xz"
+    "dff7b14abc26795b10ec56a8532e2a48 2175 libdisplay-info_0.2.0-2.dsc eca13bb883f6a95687548f087776d65a 97213 libdisplay-info_0.2.0.orig.tar.bz2 be917b01a9cb910763bf5f4dbf890a16 9352 libdisplay-info_0.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libdisplay-info"
   ],
   "Package-List": [
-    "libdisplay-info-bin deb video optional arch=any libdisplay-info-dev deb libdevel optional arch=any libdisplay-info1 deb libs optional arch=any"
+    "libdisplay-info-bin deb video optional arch=any libdisplay-info-dev deb libdevel optional arch=any libdisplay-info2 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/libdisplay-info"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/libdisplay-info.git"
   ],
   "Version": [
-    "0.1.1-2"
+    "0.2.0-2"
   ]
 }
