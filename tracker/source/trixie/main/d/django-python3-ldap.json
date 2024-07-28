@@ -6,16 +6,16 @@
     "python3-django-python3-ldap"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "b7ddc1317b16b163a9c95236cdb6a1d2790891aaf5abdc15dcf7177cdc7ab3bc 1806 django-python3-ldap_0.12.0-1.dsc ed9e875e50ca17a83b49597773baba1a6805fbfb1b49e4bc4c6f27ca0dd948b2 14050 django-python3-ldap_0.12.0.orig.tar.gz 418323a50954b2e5d7875261943b3cff45ca1218d905593cc94304d05ca913a2 2964 django-python3-ldap_0.12.0-1.debian.tar.xz"
+    "98ad131c0e4f1a17fd027549d0905f78c03e0171ef74aae080e471dd1f7ae64c 1938 django-python3-ldap_0.15.6-1.dsc 780ac3a2d20de17857990dd0a1bdb8f899855a59725c23638fd07f349439f588 20211 django-python3-ldap_0.15.6.orig.tar.gz a9218453e7b35af34d22615ac945498216d9bbb26ac8034e48d7f5efcb8afbed 3276 django-python3-ldap_0.15.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/django-python3-ldap"
   ],
   "Files": [
-    "6f57402425f6bb7e58d4d2c3def82199 1806 django-python3-ldap_0.12.0-1.dsc 644efa169f101dde20b455af708698e3 14050 django-python3-ldap_0.12.0.orig.tar.gz 78210601f1ed8633d628bfc5ca8d559d 2964 django-python3-ldap_0.12.0-1.debian.tar.xz"
+    "4956b074043d47c50603e78364458040 1938 django-python3-ldap_0.15.6-1.dsc e5456a9e1bff3fce3f96cedf288ef6b3 20211 django-python3-ldap_0.15.6.orig.tar.gz 01e490ba69e02f6f125adf2443100f45 3276 django-python3-ldap_0.15.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3-all, python3-django, python3-ldap3, slapd"
   ],
   "Uploaders": [
     "Michael Fladischer \u003cfladi@debian.org\u003e,"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/django-python3-ldap.git"
   ],
   "Version": [
-    "0.12.0-1"
+    "0.15.6-1"
   ]
 }
