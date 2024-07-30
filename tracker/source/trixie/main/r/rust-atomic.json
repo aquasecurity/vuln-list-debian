@@ -6,16 +6,16 @@
     "librust-atomic-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.13.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c5664cebbc740c60270fde95365bcc8f5e749b0805f8796d74de90fa74570cac 2178 rust-atomic_0.5.1-4.dsc b88d82667eca772c4aa12f0f1348b3ae643424c8876448f3f7bd5787032e234c 12817 rust-atomic_0.5.1.orig.tar.gz aef368c85f74964b7ce0c514508cb8d74eafe3c17010d4c89f90dc7da13682be 3556 rust-atomic_0.5.1-4.debian.tar.xz"
+    "32900947e66b499097ff33437625b45ff7fa4bc32fe7a3a2272a0adc5099cb0d 2358 rust-atomic_0.6.0-1.dsc 8d818003e740b63afc82337e3160717f4f63078720a810b7b903e70a5d1d2994 12919 rust-atomic_0.6.0.orig.tar.gz 74edd741bc5261f7cdb365c3f7fdefc33b48b2b35a6fc7f6053ac87bfd72fe7f 3676 rust-atomic_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-atomic"
   ],
   "Files": [
-    "9e9d1dd5ee349d72a458b6ff372d03c9 2178 rust-atomic_0.5.1-4.dsc ac4f0b96cb2b9ff2baf6c5a5f8d354cc 12817 rust-atomic_0.5.1.orig.tar.gz fe45bdd68628ad4b9a960584715839e2 3556 rust-atomic_0.5.1-4.debian.tar.xz"
+    "4cdd8440c141c915f1c904bf635d2014 2358 rust-atomic_0.6.0-1.dsc d5429345859ca55574fc016fa83c2fe7 12919 rust-atomic_0.6.0.orig.tar.gz 03a7dd87bb8cb82e67d4642a571a961e 3676 rust-atomic_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/atomic]"
   ],
   "Version": [
-    "0.5.1-4"
+    "0.6.0-1"
   ]
 }
