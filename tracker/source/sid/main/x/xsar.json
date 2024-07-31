@@ -9,7 +9,7 @@
     "debhelper-compat (= 13), dh-python, dh-sequence-python3, python3-affine, python3-aiohttp, python3-all, python3-cartopy, python3-dask, python3-dill, python3-distributed, python3-fiona, python3-fsspec, python3-geopandas, python3-lxml, python3-matplotlib, python3-numpy, python3-packaging, python3-psutil, python3-pyproj, python3-rasterio, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-shapely, python3-tz, python3-xarray, python3-xarray-datatree, python3-xarray-safe-rcm, python3-xarray-safe-s1, python3-xradarsat2, python3-yaml"
   ],
   "Checksums-Sha256": [
-    "1f650328d7cffb56e6bc6d8b805a5e57f8a65e4a666133e14ec18e9e3ce2e1a8 3473 xsar_2024.06.24-1.dsc 3c19ad59a61a5d8a8c85c67e3d9df94cdc30b1e41df8f0a9ae2237df43e7d0da 1378353 xsar_2024.06.24.orig.tar.gz 733f78c7bf49e27280f00b991209ec5a6dcac90637ce287dcfe92f1e82f9a179 4008 xsar_2024.06.24-1.debian.tar.xz"
+    "0ae86fbee32e2b8f7f20132eb672a24d0c4cab5dc3d03b996f100fd6ae973ff7 3473 xsar_2024.07.30-1.dsc 7db33e3a685f2720ebc2bba91ba732b103ebf1fafdba79f7bbab06079bb558ee 1378389 xsar_2024.07.30.orig.tar.gz e47b292a857843311532fddf47a82f54c1e9458730ca24d95735ff685df85bca 4056 xsar_2024.07.30-1.debian.tar.xz"
   ],
   "Description": [
     "Python xarray reader to use Level-1 GRD Synthetic Aperture Radar products XSAR is a distributed Level 1 Synthetic Aperture Radar (SAR) file reader designed to write efficient distributed processing algorithms with xarray and dask. . It currently handles Level-1 Sentinel-1 and Radarsat-2 data in SAFE format, as found on scihub or PEPS. . XSAR rely on `xarray.open_rasterio`, rasterio and GDAL to read digital_number from SAFE product to return an `xarray.Dataset` object with dask chunks. LUTs are decoded from XML files and applied to digital_number, following official ESA thermal de-noising document and ESA Sentinel-1 Product Specification. . End user can directly use for example sigma0 variable, or the de-noised sigma0 computed from digital_number and by applying relevant LUTs. . Since XSAR rely on dask, it have a small memory footprint: variables are read from file and computed only if needed."
@@ -18,7 +18,7 @@
     "pool/main/x/xsar"
   ],
   "Files": [
-    "460f887fe00350f9d52c8391e2961970 3473 xsar_2024.06.24-1.dsc d7f8f4c6c3b1b219874da44577997b14 1378353 xsar_2024.06.24.orig.tar.gz f16108fe887ee78734fffa7519da0126 4008 xsar_2024.06.24-1.debian.tar.xz"
+    "13bc34564444ff19ffb3ba15f85aef2d 3473 xsar_2024.07.30-1.dsc d17536b078fd2e410a63db54cdf81625 1378389 xsar_2024.07.30.orig.tar.gz cbc9e7e59fbe03df6cb1270c4690d9ea 4056 xsar_2024.07.30-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/xsar.git"
   ],
   "Version": [
-    "2024.06.24-1"
+    "2024.07.30-1"
   ]
 }
