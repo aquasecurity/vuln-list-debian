@@ -6,16 +6,16 @@
     "librust-keccak-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 8), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "45202ca3a4b5e3d3acebcaef63a0fbad44040d10c7dbb31b34a5d7ed7b7a6c01 2020 rust-keccak_0.1.0-1.dsc 67c21572b4949434e4fc1e1978b99c5f77064153c59d998bf13ecd96fb5ecba7 5849 rust-keccak_0.1.0.orig.tar.gz 73223708eb530cf25244dc81c2104b6ea841b9ea682f2a7f3516794f9babf93c 4256 rust-keccak_0.1.0-1.debian.tar.xz"
+    "890fb90a762572a6a8a605130f91391fd890dc7699fec95c32e3b144d3324e25 1663 rust-keccak_0.1.5-1.dsc ecc2af9a1119c51f12a14607e783cb977bde58bc069ff0c3da1095e635d70654 13120 rust-keccak_0.1.5.orig.tar.gz 56786ac9f166a20dc8d71daedb24bd9c79d18b3b8feae15a30a64bea31ee5588 2816 rust-keccak_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-keccak"
   ],
   "Files": [
-    "62fcf72e79674bc1e6c6a0f087bb028e 2020 rust-keccak_0.1.0-1.dsc dd9ddd25c1fd24dae39d732389c7350f 5849 rust-keccak_0.1.0.orig.tar.gz 9f633e8a8a9c393e54968be8863cac62 4256 rust-keccak_0.1.0-1.debian.tar.xz"
+    "d183f2d51fd559f1d471f9b06470247b 1663 rust-keccak_0.1.5-1.dsc e73229eba9b95aa4b9fcc7a07e5d7da3 13120 rust-keccak_0.1.5.orig.tar.gz 76ae56b0fdda61739fa692a82af55a1b 2816 rust-keccak_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,10 +36,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo"
   ],
   "Uploaders": [
-    "kpcyrd \u003cgit@rxv.cc\u003e"
+    "kpcyrd \u003cgit@rxv.cc\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/keccak"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/keccak]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.1.5-1"
   ]
 }
