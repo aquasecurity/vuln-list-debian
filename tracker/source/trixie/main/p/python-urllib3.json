@@ -6,16 +6,16 @@
     "python3-urllib3"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-brotli, python3-coverage, python3-idna, python3-mock, python3-pytest, python3-setuptools, python3-six, python3-tornado"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-brotli \u003c!nocheck\u003e, python3-coverage \u003c!nocheck\u003e, python3-cryptography \u003c!nocheck\u003e, python3-hatchling, python3-idna \u003c!nocheck\u003e, python3-openssl \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-socks \u003c!nocheck\u003e, python3-tornado \u003c!nocheck\u003e, python3-trustme \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "79e4f444c901d1e51bfbbac5c7834324a61518cebe27a240c7846deb9bf75d84 1735 python-urllib3_1.26.18-2.dsc f8ecc1bba5667413457c529ab955bf8c67b45db799d159066261719e328580a0 305687 python-urllib3_1.26.18.orig.tar.gz 302c5ba9bb458b40ce688310b9475042f0746dcc1dfa5bb9a6859ea0f5e358bd 13016 python-urllib3_1.26.18-2.debian.tar.xz"
+    "63d191d1d158b9a6cf6fd16439a64c179f0612ffb0566a9ad8767aa5bbcf4076 2607 python-urllib3_2.0.7-2.dsc c97dfde1f7bd43a71c8d2a58e369e9b2bf692d1334ea9f9cae55add7d0dd0f84 282546 python-urllib3_2.0.7.orig.tar.gz adc4734c0b33f962c282d39fc9a5e38702e6a30bfffcd729c33c777ff78e777e 10736 python-urllib3_2.0.7-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-urllib3"
   ],
   "Files": [
-    "8c8542f5ff78f8a1b2258a9b4f7a7ead 1735 python-urllib3_1.26.18-2.dsc f986d8e9616d2a43389f678d5dad9893 305687 python-urllib3_1.26.18.orig.tar.gz e2c30a82c2dece4ba5c65996c9261b2b 13016 python-urllib3_1.26.18-2.debian.tar.xz"
+    "51f45f29f14dedb6d819251405d416e0 2607 python-urllib3_2.0.7-2.dsc 5a264ef3ae827e5842bbc80536a343dd 282546 python-urllib3_2.0.7.orig.tar.gz 0ea6e65868c5548a5e67df02acde7e6f 10736 python-urllib3_2.0.7-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-brotli, python3-coverage, python3-idna, python3-mock, python3-pytest, python3-six, python3-tornado"
+    "python3-all, python3-brotli, python3-coverage, python3-cryptography, python3-idna, python3-openssl, python3-pytest, python3-pytest-timeout, python3-six, python3-socks, python3-tornado, python3-trustme"
   ],
   "Uploaders": [
     "Daniele Tricoli \u003ceriol@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-urllib3.git"
   ],
   "Version": [
-    "1.26.18-2"
+    "2.0.7-2"
   ]
 }
