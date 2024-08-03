@@ -6,16 +6,16 @@
     "python3-jupyter-client, jupyter-client, python-jupyter-client-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, ipython3, pybuild-plugin-pyproject, python3-all, python3-dateutil, python3-entrypoints, python3-hatchling \u003c!nocheck\u003e, python3-jupyter-core, python3-mypy \u003c!nocheck\u003e, python3-myst-parser, python3-nest-asyncio, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio (\u003e= 0.18.0) \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-tornado, python3-traitlets, python3-zmq"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, ipython3, pybuild-plugin-pyproject, python-ipython-doc \u003c!nodoc\u003e, python3-all, python3-dateutil, python3-hatchling, python3-jupyter-core, python3-mypy \u003c!nocheck\u003e, python3-myst-parser, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio (\u003e= 0.18.0) \u003c!nocheck\u003e, python3-pytest-jupyter \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-sphinx, python3-sphinx-autodoc-typehints \u003c!nodoc\u003e, python3-sphinxcontrib-github-alt \u003c!nodoc\u003e, python3-tornado, python3-traitlets, python3-zmq"
   ],
   "Checksums-Sha256": [
-    "56850b18da3ed035e5d1a18e76dd02c71d51315a55bb916ae01d89fa6a481fdc 2856 jupyter-client_7.4.9-2.dsc 465acd236f9709a09583d9324185bb323959da756ef9b41efbec6135b6687789 332213 jupyter-client_7.4.9.orig.tar.gz ee498b91cd3477eda35c188773abf3956e37aa641bf0f4a92973377378bd0a1d 7980 jupyter-client_7.4.9-2.debian.tar.xz"
+    "a5a4e891b20942974105b967bda4edb84d4891e4606b7be0b802ca94e9c4f94a 2976 jupyter-client_8.6.2-1.dsc cb88a7a2e416ac7621ffa49ace62b01bebd25c851fcdadc0b0c023af0a40d75c 342609 jupyter-client_8.6.2.orig.tar.gz cb91fc461ed241eb85740910692df970215812c0441628f960fd086cf26df61b 9612 jupyter-client_8.6.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jupyter-client"
   ],
   "Files": [
-    "0dc0ff3e3164b72ce7f17accf55eb97d 2856 jupyter-client_7.4.9-2.dsc cdcec4d3bcaa293d0984658be99ab08a 332213 jupyter-client_7.4.9.orig.tar.gz 507cd5fe44c19827e71736b27780fc2d 7980 jupyter-client_7.4.9-2.debian.tar.xz"
+    "9d545478d054c27543d9466fccb612f1 2976 jupyter-client_8.6.2-1.dsc 1706a1da1af9f9bacd12d6a2216f5b6c 342609 jupyter-client_8.6.2.orig.tar.gz 17c135c546a4544be81fde6ed491fed1 9612 jupyter-client_8.6.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "jupyter-client"
   ],
   "Package-List": [
-    "jupyter-client deb utils optional arch=all python-jupyter-client-doc deb doc optional arch=all python3-jupyter-client deb python optional arch=all"
+    "jupyter-client deb utils optional arch=all python-jupyter-client-doc deb doc optional arch=all profile=!nodoc python3-jupyter-client deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-ipykernel, python3-ipython, python3-mock, python3-pytest, python3-pytest-asyncio, python3-pytest-timeout, python3-sphinx"
+    "jupyter-core, python3-all, python3-ipykernel, python3-ipython, python3-mock, python3-pytest, python3-pytest-asyncio, python3-pytest-jupyter, python3-pytest-timeout, python3-sphinx"
   ],
   "Uploaders": [
     "Julien Puydt \u003cjpuydt@debian.org\u003e, Gordon Ball \u003cgordon@chronitis.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/jupyter-client.git"
   ],
   "Version": [
-    "7.4.9-2"
+    "8.6.2-1"
   ]
 }

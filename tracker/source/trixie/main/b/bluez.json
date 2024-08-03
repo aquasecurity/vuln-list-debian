@@ -6,16 +6,19 @@
     "libbluetooth3, libbluetooth-dev, bluetooth, bluez, bluez-cups, bluez-obexd, bluez-meshd, bluez-hcidump, bluez-test-tools, bluez-test-scripts, bluez-source"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), flex, bison, libdbus-1-dev (\u003e= 1.6), libglib2.0-dev, libdw-dev, libudev-dev, libreadline-dev, libical-dev, libasound2-dev, libell-dev (\u003e= 0.39), libjson-c-dev (\u003e= 0.13), python3-docutils, udev, check \u003c!nocheck\u003e, systemd, systemd-dev"
+    "debhelper-compat (= 13), flex, bison, libdbus-1-dev (\u003e= 1.6), libglib2.0-dev, libdw-dev, libudev-dev, libreadline-dev, libical-dev, libasound2-dev, libell-dev (\u003e= 0.39), libjson-c-dev (\u003e= 0.13), python3-docutils, python3-pygments, udev, check \u003c!nocheck\u003e, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "1743191e6b2132b22389270e5477390aef6733f3848e32c2fe3a1e870449c42a 2748 bluez_5.71-1.dsc a26c321fae068e693cd8adb8773cf1beeac906183b608863120441745f1ea680 1930176 bluez_5.71.orig.tar.xz 0ee86429435accede234bf5b9445af4977426dea8525419573aabd75d53671f3 40672 bluez_5.71-1.debian.tar.xz"
+    "03d0f68de4bdd1d84b4f13d882ba32982b8ce5cc3f1a9122d85dad80f3674263 2823 bluez_5.73-1.1.dsc 7be26a0932f733bab2bc1de0c3d7f6f4841902bc66116b0a72d941c1e4e1a1e3 3578336 bluez_5.73.orig.tar.gz c3e20e079e299a6fb384f30980e5dd9d014c8cbd87f9466eab5a204899433576 801 bluez_5.73.orig.tar.gz.asc 1d405b008c5363d2275ab7f7f183a2dc27103423032edb1db7055f24f525c355 42068 bluez_5.73-1.1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "9dd109e11eb01bdd8bccb56c8e4d7d7f5db771c0 debian archive/debian/5.73-1.1 https://git.dgit.debian.org/bluez"
   ],
   "Directory": [
     "pool/main/b/bluez"
   ],
   "Files": [
-    "51794f378bdbbacf0d9817b45858fc78 2748 bluez_5.71-1.dsc 291bee85a3c582f603f364954a0c8533 1930176 bluez_5.71.orig.tar.xz 3683636da373afd334ddd8f3a409e0e0 40672 bluez_5.71-1.debian.tar.xz"
+    "e15758241dab012888d3e3f3307a3ee3 2823 bluez_5.73-1.1.dsc 7d378c2a8766e864f40af12ea6e0a364 3578336 bluez_5.73.orig.tar.gz 192099d6a2c498937152085ce1d6c951 801 bluez_5.73.orig.tar.gz.asc e33bcda7c2f14d70373b7fac37794a56 42068 bluez_5.73-1.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-dbus"
   ],
   "Uploaders": [
     "Nobuhiro Iwamatsu \u003ciwamatsu@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/bluetooth-team/bluez.git"
   ],
   "Version": [
-    "5.71-1"
+    "5.73-1.1"
   ]
 }

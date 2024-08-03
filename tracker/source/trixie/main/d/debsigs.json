@@ -6,25 +6,28 @@
     "debsigs"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-single-binary, lyx"
+    "debhelper-compat (= 13), dh-sequence-single-binary, lyx \u003c!nodoc\u003e, debsig-verify \u003c!nocheck\u003e, devscripts \u003c!nocheck\u003e, gnupg \u003c!nocheck\u003e, python3 \u003c!nocheck\u003e, python3-click \u003c!nocheck\u003e, python3-feature-check (\u003e\u003e 2.1~) \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-tomli-w \u003c!nocheck\u003e, python3-typedload \u003c!nocheck\u003e, sqop \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "perl"
   ],
   "Checksums-Sha256": [
-    "e6a54af99cc49b97b3e868d4050f5e4c2fda0eb97c14100201fd5d60533bb29a 1736 debsigs_0.1.26.dsc b3491142fa47f581bf63d241ead4f536650e64048fffd8939680bf11f0cf8d0b 31876 debsigs_0.1.26.tar.xz"
+    "b8bc5eabcba577708748e127b028b5e32ace440a20a13e2803d3f1f0acd943b9 2608 debsigs_0.2.1-1.dsc 1823d886ed6c2a155bc23e7d2b412aaf132fef3d3e0abba3159bf3ea5f4f8d02 41140 debsigs_0.2.1.orig.tar.xz 364b76b854fa3bf451eb20a2ce44e3a00f9715c8ae32ed2412d97f2ce1aa607d 833 debsigs_0.2.1.orig.tar.xz.asc 60081facf1ef26f393887fa7db04a48942f160567febb9553c2c0cda7f45ba0d 8580 debsigs_0.2.1-1.debian.tar.xz"
   ],
   "Dgit": [
-    "9deb8fdf00e321486bb838879b5dfacc1d5ae2b3 debian archive/debian/0.1.26 https://git.dgit.debian.org/debsigs"
+    "20349bb4579761b9519c20884d564aa2523a8d87 debian archive/debian/0.2.1-1 https://git.dgit.debian.org/debsigs"
   ],
   "Directory": [
     "pool/main/d/debsigs"
   ],
   "Files": [
-    "2c47e01291b5bcbd92977adfed156aeb 1736 debsigs_0.1.26.dsc 3ecd88af845c9dc1b3186306c3fd8a4c 31876 debsigs_0.1.26.tar.xz"
+    "b2b4a9f66a113f1345c071e3b91f8c4a 2608 debsigs_0.2.1-1.dsc 535f14f11aafce1a34132efb53e8f9b6 41140 debsigs_0.2.1.orig.tar.xz 99bb22d316fa95b97c70ff5ec6f6d359 833 debsigs_0.2.1.orig.tar.xz.asc abc8c5d906d9cb6c1253b40f8a2f5e81 8580 debsigs_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
-    "3.0 (native)"
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/debsigs/debsigs"
   ],
   "Maintainer": [
     "Peter Pentchev \u003croam@debian.org\u003e"
@@ -42,21 +45,21 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "perl"
+    "@builddeps@, perl"
   ],
   "Vcs-Browser": [
-    "https://gitlab.com/debsigs/debsigs"
+    "https://gitlab.com/debsigs/debsigs/-/tree/debian/unstable"
   ],
   "Vcs-Git": [
-    "https://gitlab.com/debsigs/debsigs.git"
+    "https://gitlab.com/debsigs/debsigs.git -b debian/unstable"
   ],
   "Version": [
-    "0.1.26"
+    "0.2.1-1"
   ]
 }
