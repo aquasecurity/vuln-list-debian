@@ -6,19 +6,19 @@
     "mcstas, mcstas-comps, mcstas-mccodelib, mcstas-mcdoc, mcstas-manuals, mcstas-mcrun, mcstas-mcgui, mcstas-clusterscripts, mcstas-mcplot-pyqtgraph, mcstas-mcplot-matplotlib, mcstas-mcplot-svg, mcstas-mcplot-matlab, mcstas-mcdisplay-pyqtgraph, mcstas-mcdisplay-webgl, mcstas-mcdisplay-webgl-classic, mcstas-mcdisplay-mantid, mcstas-mcdisplay-matlab, mcstas-mcresplot, mcstas-mcdisplay-matplotlib, mcstas-suite-python, mcxtrace, mcxtrace-comps, mcxtrace-mccodelib, mcxtrace-mxdoc, mcxtrace-manuals, mcxtrace-mxrun, mcxtrace-mxgui, mcxtrace-clusterscripts, mcxtrace-mxplot-pyqtgraph, mcxtrace-mxplot-matplotlib, mcxtrace-mxplot-svg, mcxtrace-mxplot-matlab, mcxtrace-mxdisplay-pyqtgraph, mcxtrace-mxdisplay-webgl, mcxtrace-mxdisplay-webgl-classic, mcxtrace-mxdisplay-matlab, mcxtrace-mxdisplay-matplotlib, mcxtrace-suite-python"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, dh-cmake, bison, flex, gfortran, recode, python3-all, dh-python"
+    "bison, cmake, debhelper-compat (= 13), dh-cmake, dh-python, flex, gfortran, pandoc, python3-all, recode"
   ],
   "Checksums-Sha256": [
-    "9602bcb0297ef2e56c171b818f08e54e74d2148921256cc99bb47abb17608d21 5086 mccode_0.0~git20240719135548.728fd5e+ds5-1.dsc 54555955cadd5bc23a437d779dce2ab3017e8a5160864fcdd5d38c47009671cb 217518544 mccode_0.0~git20240719135548.728fd5e+ds5.orig.tar.xz f6aa62409f1cd8c897424fc81c3b523ea815636f91b5f4ab7e4c93a70a607fd4 28356 mccode_0.0~git20240719135548.728fd5e+ds5-1.debian.tar.xz"
+    "3533d2011f3cc3b5eb7eda9b243ca8c83b6f8dfafab949b74767a588c748d970 5150 mccode_0.0~git20240801183257.cdaa431+ds5-1.dsc 546025d9da5dda235861e4cbc219176bfdf36073170e4b950f088417d3e6c497 215744412 mccode_0.0~git20240801183257.cdaa431+ds5.orig.tar.xz 7c1d0479aa5349b8ba4b026ac2da3976064f4f55db392065030d051156f29d47 22572 mccode_0.0~git20240801183257.cdaa431+ds5-1.debian.tar.xz"
   ],
   "Dgit": [
-    "5c90ac7921393b234cc16ed1b0d359000cee04f0 debian archive/debian/0.0_git20240719135548.728fd5e+ds5-1 https://git.dgit.debian.org/mccode"
+    "fc017b56a72e72518ccd8cf3d9ba3b34d0cc4da2 debian archive/debian/0.0_git20240801183257.cdaa431+ds5-1 https://git.dgit.debian.org/mccode"
   ],
   "Directory": [
     "pool/main/m/mccode"
   ],
   "Files": [
-    "42771db4048e57250f3036a24945a5f2 5086 mccode_0.0~git20240719135548.728fd5e+ds5-1.dsc 3208011213f4b95bbea194b600f14ac9 217518544 mccode_0.0~git20240719135548.728fd5e+ds5.orig.tar.xz 3ad180c0fc734ea2e06d60fcde8f8a44 28356 mccode_0.0~git20240719135548.728fd5e+ds5-1.debian.tar.xz"
+    "6c4a7dcd4592a3045e9063dc2dec7b81 5150 mccode_0.0~git20240801183257.cdaa431+ds5-1.dsc 009927947e28dd751781fd179dbe2dea 215744412 mccode_0.0~git20240801183257.cdaa431+ds5.orig.tar.xz 9a449f44fdc140a5af3a6aa554d1eed0 22572 mccode_0.0~git20240801183257.cdaa431+ds5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
   ],
   "Uploaders": [
-    "Roland Mas \u003clolando@debian.org\u003e"
+    "Roland Mas \u003clolando@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/mccode"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/science-team/mccode.git"
   ],
   "Version": [
-    "0.0~git20240719135548.728fd5e+ds5-1"
+    "0.0~git20240801183257.cdaa431+ds5-1"
   ]
 }
