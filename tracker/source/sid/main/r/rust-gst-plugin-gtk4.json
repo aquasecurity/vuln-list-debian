@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-gst-plugin-gtk4-dev"
+    "librust-gst-plugin-gtk4-dev, gstreamer1.0-gtk4"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-channel-2+default-dev \u003c!nocheck\u003e, librust-gst-plugin-version-helper-0.8+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.22+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.22+v1-16-dev \u003c!nocheck\u003e, librust-gstreamer-base-0.22+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-0.22+default-dev \u003c!nocheck\u003e, librust-gtk4-0.8+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-channel-2+default-dev \u003c!nocheck\u003e, librust-gst-plugin-version-helper-0.8+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.22+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.22+v1-16-dev \u003c!nocheck\u003e, librust-gstreamer-base-0.22+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-0.22+default-dev \u003c!nocheck\u003e, librust-gtk4-0.8+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, cargo-c:native, librust-gdk4-wayland-dev (\u003e= 0.8.2-~~), librust-gdk4-x11-dev (\u003e= 0.8.2-~~), librust-gstreamer-gl-dev (\u003e= 0.22.0-~~), librust-gstreamer-gl-egl-dev (\u003e= 0.22.0-~~), librust-gstreamer-gl-x11-dev (\u003e= 0.22.0-~~), librust-gstreamer-gl-wayland-dev (\u003e= 0.22.0-~~), librust-gstreamer-allocators-dev (\u003e= 0.22.0-~~)"
   ],
   "Checksums-Sha256": [
-    "02cbec6dbc984ffe149bc0fd6a32574a8d4d5cf77cbaf75c3ffc86c87d330d96 2027 rust-gst-plugin-gtk4_0.12.7-3.dsc c95543801d561c9fef65704421a7208d06d90dad30f4a5e5e64db741219f6958 37400 rust-gst-plugin-gtk4_0.12.7.orig.tar.gz 367f3b6fbc567cf1a3f9232bb3c79d4d97325407ec276d8970db8f0b43aa7e55 3608 rust-gst-plugin-gtk4_0.12.7-3.debian.tar.xz"
+    "c33b53671b9d8641311ac91a2314a5cd24640f7d20e132475df1c5ccc094b338 2385 rust-gst-plugin-gtk4_0.12.7-5.dsc c95543801d561c9fef65704421a7208d06d90dad30f4a5e5e64db741219f6958 37400 rust-gst-plugin-gtk4_0.12.7.orig.tar.gz 8852351b009243893cc03d9485c572d6574e545d21af330424a4b799a337c147 4332 rust-gst-plugin-gtk4_0.12.7-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gst-plugin-gtk4"
   ],
   "Files": [
-    "083aeaf85f51b08cdaa6aaca0f05ce5f 2027 rust-gst-plugin-gtk4_0.12.7-3.dsc 32a417aea6a3d850a4b981af555d78f2 37400 rust-gst-plugin-gtk4_0.12.7.orig.tar.gz 8101841ad36bc95a2367ecf3e524042e 3608 rust-gst-plugin-gtk4_0.12.7-3.debian.tar.xz"
+    "95c8b59be123484352815bedf6c1ab88 2385 rust-gst-plugin-gtk4_0.12.7-5.dsc 32a417aea6a3d850a4b981af555d78f2 37400 rust-gst-plugin-gtk4_0.12.7.orig.tar.gz 898ea2cdd122032aa967972aafaeaa0e 4332 rust-gst-plugin-gtk4_0.12.7-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "rust-gst-plugin-gtk4"
   ],
   "Package-List": [
-    "librust-gst-plugin-gtk4-dev deb rust optional arch=any"
+    "gstreamer1.0-gtk4 deb rust optional arch=any librust-gst-plugin-gtk4-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,7 +36,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -45,7 +45,7 @@
     "dh-cargo"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/gst-plugin-gtk4"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gst-plugin-gtk4]"
   ],
   "Version": [
-    "0.12.7-3"
+    "0.12.7-5"
   ]
 }
