@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libtevent0t64, libtevent-dev"
+    "libtevent0t64, libtevent0, libtevent-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), libcmocka-dev, libtalloc-dev (\u003e= 2.4.2~), pkg-config, python3:any"
+    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5) \u003c!pkg.tevent.before-t64\u003e, libcmocka-dev, libtalloc-dev (\u003e= 2.4.2~), pkgconf, python3:any"
   ],
   "Checksums-Sha256": [
-    "e49ea1ebcac8234f689fd880d4e6316ccfa62f341ecfb9a23343a527cf6fff36 1799 tevent_0.16.1-2.dsc 362971e0f32dc1905f6fe4736319c4b8348c22dc85aa6c3f690a28efe548029e 890010 tevent_0.16.1.orig.tar.gz 7f22d378778af12dc54e1886302c932ece39babc408a94b260ec8e8c0b26ccb5 14960 tevent_0.16.1-2.debian.tar.xz"
+    "7bea2ce9f1ce6054f9a7ec99b050bbf886f6402cc964639379f5e6378c85e5a3 1933 tevent_0.16.1-3.dsc 362971e0f32dc1905f6fe4736319c4b8348c22dc85aa6c3f690a28efe548029e 890010 tevent_0.16.1.orig.tar.gz 16800cee411d230a2cee8b9980b0d2e416323f222f3d0d5c36da421fd1cdab7b 15184 tevent_0.16.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tevent"
   ],
   "Files": [
-    "9cba3ca4bb1209170659083fc6bc93ed 1799 tevent_0.16.1-2.dsc c739515f59e4cde1716f00bf14c64930 890010 tevent_0.16.1.orig.tar.gz 1c8cb054debc3785cbf639484fc69f06 14960 tevent_0.16.1-2.debian.tar.xz"
+    "6b1710d9baa6fa5f1f214529d903ad79 1933 tevent_0.16.1-3.dsc c739515f59e4cde1716f00bf14c64930 890010 tevent_0.16.1.orig.tar.gz bc94b64670d9d9d06d59877900a4f83a 15184 tevent_0.16.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "tevent"
   ],
   "Package-List": [
-    "libtevent-dev deb libdevel optional arch=any libtevent0t64 deb libs optional arch=any"
+    "libtevent-dev deb libdevel optional arch=any libtevent0 deb libs optional arch=any profile=pkg.tevent.before-t64 libtevent0t64 deb libs optional arch=any profile=!pkg.tevent.before-t64"
   ],
   "Priority": [
     "source"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/samba-team/tevent.git"
   ],
   "Version": [
-    "0.16.1-2"
+    "0.16.1-3"
   ]
 }
