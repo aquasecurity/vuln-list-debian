@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "passwd, login, uidmap, libsubid4, libsubid-dev"
+    "passwd, login.defs, uidmap, libsubid5, libsubid-dev"
   ],
   "Build-Depends": [
     "bison, debhelper-compat (= 13), dh-package-notes, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), docbook-xml \u003c!nodoc\u003e, docbook-xsl \u003c!nodoc\u003e, gettext, itstool \u003c!nodoc\u003e, libacl1-dev, libattr1-dev, libaudit-dev [linux-any], libbsd-dev, libcrypt-dev, libltdl-dev, libpam0g-dev, libselinux1-dev [linux-any], libsemanage-dev [linux-any], libsystemd-dev [linux-any], libxml2-utils \u003c!nodoc\u003e, pkgconf, quilt, systemd-dev [linux-any], xsltproc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "acc3fc8f624dab35da1342978173661fba9b2f6003ad30150d5ac46b331114d2 2642 shadow_4.15.3-3.dsc 32303f204907eb0d6c32b7908414885be53a4caf00f149f54991ac3ce424652e 2054548 shadow_4.15.3.orig.tar.xz 8a0b05f7f95ad60480d2c63ae8b49fa4c372d1c73fb00b0d24465dc0bb09554b 171224 shadow_4.15.3-3.debian.tar.xz"
+    "24cd98911d3d7b2af50bedeff52d193b038e0a1786ff8981d48fcea7e23efdf5 2642 shadow_4.16.0-3.dsc a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda 2053720 shadow_4.16.0.orig.tar.xz bc5d0548e0006bdfc73cc4b42947683e9bd928105f518cff304045d83cd1c4a3 171632 shadow_4.16.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/shadow"
   ],
   "Files": [
-    "1dc6d412a6adcab85d51b6f7afd40f9b 2642 shadow_4.15.3-3.dsc d03210348981035850cb5b0509ee7d73 2054548 shadow_4.15.3.orig.tar.xz 90b8988982004f7c496df1b5d265bfd1 171224 shadow_4.15.3-3.debian.tar.xz"
+    "30ce2a968e9db2aa011f7aee18c4648b 2642 shadow_4.16.0-3.dsc 4f773d70ef25d236e818931e038e09a6 2053720 shadow_4.16.0.orig.tar.xz 9221dfd878d1cb06ccba8aef3e281436 171632 shadow_4.16.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "shadow"
   ],
   "Package-List": [
-    "libsubid-dev deb libdevel optional arch=any libsubid4 deb libs optional arch=any login deb admin required arch=any protected=yes passwd deb admin required arch=any uidmap deb admin optional arch=any"
+    "libsubid-dev deb libdevel optional arch=any libsubid5 deb libs optional arch=any login.defs deb admin required arch=all passwd deb admin required arch=any uidmap deb admin optional arch=any"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/shadow.git -b master"
   ],
   "Version": [
-    "1:4.15.3-3"
+    "1:4.16.0-3"
   ]
 }
