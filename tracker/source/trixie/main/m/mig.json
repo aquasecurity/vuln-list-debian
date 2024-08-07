@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any-i386 any-amd64"
+    "any-i386 any-amd64 any-arm64 hurd-arm64"
   ],
   "Binary": [
-    "mig, mig-for-host, mig-i686-gnu, mig-x86-64-gnu"
+    "mig, mig-for-host, mig-i686-gnu, mig-x86-64-gnu, mig-aarch64-gnu"
   ],
   "Build-Depends": [
     "dpkg-dev (\u003e= 1.17.14), debhelper-compat (= 12), dh-exec, gnumach-dev (\u003e= 2:1.8+git20231217~), flex, libfl-dev, bison"
   ],
   "Checksums-Sha256": [
-    "38c3a332071e1c424c880743cede95190c3b5f49f24df3c0be7c978ce430a8b5 2298 mig_1.8+git20231217-3.dsc 684c897b62fdeaa84608738f76facb11d41335312c3488d27c339a51393376e9 197664 mig_1.8+git20231217.orig.tar.xz 7b369d271fc0f8414e83499bac2deebd4decb85b9452996475d65908512cf9fd 10544 mig_1.8+git20231217-3.debian.tar.xz"
+    "4dacc0450772389a998c2c003b951e10bd6a9593cc3ed4fcf04544af1edae05c 2379 mig_1.8+git20231217-5.dsc 684c897b62fdeaa84608738f76facb11d41335312c3488d27c339a51393376e9 197664 mig_1.8+git20231217.orig.tar.xz a1e1a7f2d96748120fdc1c76942bb00ccfcbd10f21a2ea33b1b5386ec226ec5c 10636 mig_1.8+git20231217-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mig"
   ],
   "Files": [
-    "e99baa7b166c983071023c976c9f39f2 2298 mig_1.8+git20231217-3.dsc 58422f51175e1c9a8ac45e0aad304c20 197664 mig_1.8+git20231217.orig.tar.xz 72c6e477e22580fe79c79c2fed938381 10544 mig_1.8+git20231217-3.debian.tar.xz"
+    "48a0998831140f64f59366c78958d307 2379 mig_1.8+git20231217-5.dsc 58422f51175e1c9a8ac45e0aad304c20 197664 mig_1.8+git20231217.orig.tar.xz 2eda14dc7aaf75eaa4b5cc8b1823d086 10636 mig_1.8+git20231217-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mig"
   ],
   "Package-List": [
-    "mig deb devel optional arch=hurd-i386,hurd-amd64 mig-for-host deb devel optional arch=any-i386,any-amd64 mig-i686-gnu deb devel optional arch=any-i386 mig-x86-64-gnu deb devel optional arch=any-amd64"
+    "mig deb devel optional arch=hurd-i386,hurd-amd64,hurd-arm64 mig-aarch64-gnu deb devel optional arch=any-arm64 mig-for-host deb devel optional arch=any-i386,any-amd64,any-arm64 mig-i686-gnu deb devel optional arch=any-i386 mig-x86-64-gnu deb devel optional arch=any-amd64"
   ],
   "Priority": [
     "source"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/hurd-team/mig.git"
   ],
   "Version": [
-    "1.8+git20231217-3"
+    "1.8+git20231217-5"
   ]
 }
