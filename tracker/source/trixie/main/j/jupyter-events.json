@@ -3,19 +3,22 @@
     "all"
   ],
   "Binary": [
-    "python3-jupyter-events"
+    "python3-jupyter-events, python-jupyter-events-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-all, pybuild-plugin-pyproject, python3-hatchling, python3-pytest, python3-traitlets, jupyter-server"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-click, python3-fqdn, python3-hatchling, python3-idna, python3-isoduration, python3-json-pointer, python3-jsonschema (\u003e= 4.18.0), python3-myst-parser \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-console-scripts \u003c!nocheck\u003e, python3-pythonjsonlogger (\u003e= 3.0.0), python3-referencing, python3-rfc3339-validator, python3-rfc3986-validator, python3-rich, python3-sphinx, python3-sphinxcontrib.spelling \u003c!nodoc\u003e, python3-traitlets, python3-uritemplate, python3-webcolors, python3-yaml"
   ],
   "Checksums-Sha256": [
-    "88ac56c8e06c720100b59a0fa8b42da8a0a8785298ff0463ec3f100e42041e14 2147 jupyter-events_0.9.0-2.dsc 81ad2e4bc710881ec274d31c6c50669d71bbaa5dd9d01e600b56faa85700d399 60502 jupyter-events_0.9.0.orig.tar.gz 928f354b3e02d02ace39720e98e699ee3cd6c97746945c54c780c4e7581a509a 2376 jupyter-events_0.9.0-2.debian.tar.xz"
+    "d788f47e929825b327621dbf11ba98629e47bc3ec5f5e1d927b2447352861e87 3181 jupyter-events_0.10.0-2.dsc dc521a2e7f3f51a42fc5cd8af477ed8cde4cd337836d6c6c5e462843000f7e68 61678 jupyter-events_0.10.0.orig.tar.gz daace23bf7908ee6ea44324c28370031a87a5f3ac1b2e3360a30d0615c59b521 4836 jupyter-events_0.10.0-2.debian.tar.xz"
+  ],
+  "Description": [
+    "Event system for Jupyter applications and extensions Jupyter Events is a configurable event system that enables Jupyter Python Applications (e.g. Jupyter Server, JupyterLab Server, JupyterHub, etc.) to emit events-structured data describing things happening inside the application. Other software (e.g. client applications like JupyterLab) can listen and respond to these events."
   ],
   "Directory": [
     "pool/main/j/jupyter-events"
   ],
   "Files": [
-    "a6a7a33a63b87bce6197a6ec1f65c402 2147 jupyter-events_0.9.0-2.dsc a17ff4fc3fdae332534bba2713e154b2 60502 jupyter-events_0.9.0.orig.tar.gz 2e920bca75599e9f90fd434448ecfedc 2376 jupyter-events_0.9.0-2.debian.tar.xz"
+    "4a011109632c3eb9a6fbb0d2bffe2536 3181 jupyter-events_0.10.0-2.dsc 83c730fa8c2ad836e0c3e62fd0477bed 61678 jupyter-events_0.10.0.orig.tar.gz d01d6f58c54fea6e77d8593244c9278f 4836 jupyter-events_0.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "jupyter-events"
   ],
   "Package-List": [
-    "python3-jupyter-events deb python optional arch=all"
+    "python-jupyter-events-doc deb doc optional arch=all profile=!nodoc python3-jupyter-events deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Roland Mas \u003clolando@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/jupyter-events.git"
   ],
   "Version": [
-    "0.9.0-2"
+    "0.10.0-2"
   ]
 }

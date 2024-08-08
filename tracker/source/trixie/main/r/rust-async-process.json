@@ -6,16 +6,16 @@
     "librust-async-process-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), librust-async-io-2+default-dev \u003c!nocheck\u003e, librust-async-lock-2+default-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-event-listener-2+default-dev \u003c!nocheck\u003e, librust-futures-lite-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+std-dev \u003c!nocheck\u003e, librust-signal-hook-0.3+iterator-dev \u003c!nocheck\u003e, libstring-shellquote-perl"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-async-channel-2+default-dev \u003c!nocheck\u003e, librust-async-executor-1+default-dev \u003c!nocheck\u003e, librust-async-io-2+default-dev \u003c!nocheck\u003e, librust-async-lock-3+default-dev \u003c!nocheck\u003e, librust-async-signal-0.2+default-dev \u003c!nocheck\u003e, librust-async-task-4+default-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-event-listener-5+default-dev \u003c!nocheck\u003e, librust-futures-lite-dev (\u003c\u003c 3) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+process-dev \u003c!nocheck\u003e, librust-rustix-0.38+std-dev \u003c!nocheck\u003e, librust-tracing-0.1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "890d97001ecd745511919d88d1a84c4a7fea6b3ef4e956fba9eb793345dedce7 2547 rust-async-process_1.7.0-4.dsc a7f1fdb70756a448adc857ddccdc8480ef15f3a5ee212c9a9cc2ac42eaeee7e5 19682 rust-async-process_1.7.0.orig.tar.gz ce2e80904b8a4613dddf437501321b97eaaa8afc5337775e35613a18350162ed 15820 rust-async-process_1.7.0-4.debian.tar.xz"
+    "d815c96998abad23ccf2f0fe2f8fb9586b2a08e9610386a7e91745bcb4d1cc8c 2774 rust-async-process_2.2.3-3.dsc 6260b822765fe58fc1498904070d957a7bbd8a4495ea5d85521e99f4011e5cf6 24910 rust-async-process_2.2.3.orig.tar.gz bd7b183f79aebb97d1f1cf30f4be7e05829235f104a59376e4406541e50cd987 4960 rust-async-process_2.2.3-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-process"
   ],
   "Files": [
-    "bfe1bce17866d30a0565d48a79ccb658 2547 rust-async-process_1.7.0-4.dsc dc5975498310c0d73891cacd3c833b01 19682 rust-async-process_1.7.0.orig.tar.gz 05a8f0dd23f694b38d1d2406bda28365 15820 rust-async-process_1.7.0-4.debian.tar.xz"
+    "540076278cb41f50f35f39f4e7ca7371 2774 rust-async-process_2.2.3-3.dsc deeadde807bac22a0bbe3ca6dd4e7760 24910 rust-async-process_2.2.3.orig.tar.gz f2ac8227b3c46ecde962b178e4404a11 4960 rust-async-process_2.2.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-process-1+default-dev, librust-async-process-1-dev"
+    "dh-cargo, librust-async-executor-1+default-dev, librust-async-process-2+default-dev, librust-async-process-2-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-async-process"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-async-process.git"
   ],
   "Version": [
-    "1.7.0-4"
+    "2.2.3-3"
   ]
 }
