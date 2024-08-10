@@ -1,36 +1,36 @@
 {
   "Architecture": [
-    "kfreebsd-any linux-any"
+    "linux-any"
   ],
   "Binary": [
-    "cdrdao"
+    "cdrdao, gcdmaster"
   ],
   "Build-Depends": [
-    "antlr, debhelper-compat (= 13), libao-dev, libcam-dev [kfreebsd-any], libvorbis-dev, pkg-config"
+    "debhelper-compat (= 13), libao-dev, libgtkmm-3.0-dev, libsigc++-2.0-dev, libvorbis-dev, pkgconf"
   ],
   "Checksums-Sha256": [
-    "38936f7872790aca8764c253f150447372ef59a6a1ab7f29a40056e5f2c72907 1928 cdrdao_1.2.4-3.dsc 358d9cb83370ceaecdc60564cbf14c2ea2636eac60a966e2461c011ba09853b4 1442181 cdrdao_1.2.4.orig.tar.bz2 0113586d9af8a9322cd29894ff829328414f6a5a4d4ef587332b9f76d60231fe 12528 cdrdao_1.2.4-3.debian.tar.xz"
+    "41b4ccff1d763062db51f0ba7a4060122f61ba2e6af9bf093659c5a68f3d4157 1987 cdrdao_1.2.5-1.dsc d19b67c853c5dba2406afaab6cd788e77f35eebe634cac4679528477c7be01b6 870084 cdrdao_1.2.5.orig.tar.bz2 31568d5273f3dc9014c6815a87f605caa83164c107accb20ca0dd6c2773b9442 15388 cdrdao_1.2.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/cdrdao"
   ],
   "Files": [
-    "bb1365463fb936f035e2f83bb7bd5c43 1928 cdrdao_1.2.4-3.dsc 2ada887d1b30b440867b8df0d3023cf7 1442181 cdrdao_1.2.4.orig.tar.bz2 9d651dcf157f3a80f0b44d6f6c668042 12528 cdrdao_1.2.4-3.debian.tar.xz"
+    "045e97c6d5d47ac9ebda2a422a535ba9 1987 cdrdao_1.2.5-1.dsc 45adc4da3d7299471c01e14b80184e36 870084 cdrdao_1.2.5.orig.tar.bz2 60f4a3af25ee5ec70fcefaa179b12d2b 15388 cdrdao_1.2.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://cdrdao.sourceforge.net/"
+    "https://cdrdao.sourceforge.net/"
   ],
   "Maintainer": [
-    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
+    "Sven Geuer \u003csge@debian.org\u003e"
   ],
   "Package": [
     "cdrdao"
   ],
   "Package-List": [
-    "cdrdao deb otherosfs optional arch=kfreebsd-any,linux-any"
+    "cdrdao deb otherosfs optional arch=linux-any gcdmaster deb sound optional arch=linux-any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,10 @@
     "otherosfs"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/cdrdao"
@@ -48,6 +51,6 @@
     "https://salsa.debian.org/debian/cdrdao.git"
   ],
   "Version": [
-    "1:1.2.4-3"
+    "1:1.2.5-1"
   ]
 }
