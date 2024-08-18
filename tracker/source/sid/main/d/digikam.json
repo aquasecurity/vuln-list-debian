@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "any all"
+    "amd64 arm64 armhf i386 all"
   ],
   "Binary": [
     "digikam-private-libs, digikam, showfoto, digikam-data"
@@ -9,16 +9,16 @@
     "libboost1.62-dev (\u003c\u003c 1.62.0+dfsg-4), libgraphicsmagick1-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), appstream, bison, cmake (\u003e= 3.0.0), extra-cmake-modules, flex, gphoto2, help2man, libkf6calendarcore-dev, libkf6contacts-dev, libkf6filemetadata-dev, libkf6iconthemes-dev, libkf6kio-dev, libkf6notifyconfig-dev, libkf6service-dev, libkf6solid-dev, libkf6sonnet-dev, libkf6threadweaver-dev, libkf6windowsystem-dev, libkf6xmlgui-dev, qt6-multimedia-dev, qt6-networkauth-dev, qt6-scxml-dev, qt6-svg-dev, qt6-webengine-dev [amd64 arm64 armhf i386], libavcodec-dev, libavfilter-dev, libavformat-dev, libavutil-dev, libswscale-dev, libavdevice-dev, libboost-graph-dev, libeigen3-dev (\u003e= 3.1.2), libexiv2-dev (\u003e= 0.27), libexpat1-dev | libexpat-dev, libheif-dev, libgphoto2-dev, libjpeg-dev, liblcms2-dev, liblensfun-dev, liblqr-1-0-dev, libmagick++-dev, imagemagick-6.q16, libmarble-dev, libopencv-dev (\u003e= 3.3.0~), libpng-dev, libpulse-dev, libtiff-dev, libusb-1.0-0-dev [linux-any], libx265-dev, libxslt1-dev, libxml2-dev, libxv-dev, pkgconf, pkg-kde-tools (\u003e= 0.15.21), portaudio19-dev"
+    "debhelper-compat (= 12), appstream, bison, cmake (\u003e= 3.0.0), extra-cmake-modules, flex, gphoto2, help2man, libkf6calendarcore-dev, libkf6contacts-dev, libkf6filemetadata-dev, libkf6iconthemes-dev, libkf6kio-dev, libkf6notifyconfig-dev, libkf6service-dev, libkf6solid-dev, libkf6sonnet-dev, libkf6threadweaver-dev, libkf6windowsystem-dev, libkf6xmlgui-dev, qt6-multimedia-dev, qt6-networkauth-dev, qt6-scxml-dev, qt6-svg-dev, qt6-webengine-dev, libavcodec-dev, libavfilter-dev, libavformat-dev, libavutil-dev, libswscale-dev, libavdevice-dev, libboost-graph-dev, libeigen3-dev (\u003e= 3.1.2), libexiv2-dev (\u003e= 0.27), libexpat1-dev | libexpat-dev, libheif-dev, libgphoto2-dev, libjpeg-dev, liblcms2-dev, liblensfun-dev, liblqr-1-0-dev, libmagick++-dev, imagemagick-6.q16, libmarble-dev, libopencv-dev (\u003e= 3.3.0~), libpng-dev, libpulse-dev, libtiff-dev, libusb-1.0-0-dev [linux-any], libx265-dev, libxslt1-dev, libxml2-dev, libxv-dev, pkgconf, pkg-kde-tools (\u003e= 0.15.21), portaudio19-dev"
   ],
   "Checksums-Sha256": [
-    "53d9a0eb648a79731df308866d81022b486334f8cafa6e86519b1b4eda74ad8c 3154 digikam_8.4.0-2.dsc b1f4177d5c4da9f4ba0718788de3097fd3d99f2cf6d5173a789829a254d5b464 60433104 digikam_8.4.0.orig.tar.xz 5c2b88409c989d351025d440e9928fb001b2083735d2df41b58a07d3f6275fc8 39180 digikam_8.4.0-2.debian.tar.xz"
+    "8a59103598d17163be0a62361896ac22b75f6c78fbe5612c2f20b120e6306212 3205 digikam_8.4.0-3.dsc b1f4177d5c4da9f4ba0718788de3097fd3d99f2cf6d5173a789829a254d5b464 60433104 digikam_8.4.0.orig.tar.xz 1a0a2b711c21d9b1b7ea4c41c91f7f2f426cd2d1e69f25061080673c6bdd69a1 39232 digikam_8.4.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/digikam"
   ],
   "Files": [
-    "76f41d24162fc38738ec621a8af4a0fe 3154 digikam_8.4.0-2.dsc 5de985f9eef4927d77e687f8b5b10a19 60433104 digikam_8.4.0.orig.tar.xz eedfa1767e6b6ba408dda242736a7f47 39180 digikam_8.4.0-2.debian.tar.xz"
+    "b88fbd9704474302d00d4974e522d26e 3205 digikam_8.4.0-3.dsc 5de985f9eef4927d77e687f8b5b10a19 60433104 digikam_8.4.0.orig.tar.xz 0cbf036690ca609b0a70241b7359720f 39232 digikam_8.4.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "digikam"
   ],
   "Package-List": [
-    "digikam deb graphics optional arch=any digikam-data deb graphics optional arch=all digikam-private-libs deb libs optional arch=any showfoto deb graphics optional arch=any"
+    "digikam deb graphics optional arch=amd64,arm64,armhf,i386 digikam-data deb graphics optional arch=all digikam-private-libs deb libs optional arch=amd64,arm64,armhf,i386 showfoto deb graphics optional arch=amd64,arm64,armhf,i386"
   ],
   "Priority": [
     "source"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/digikam.git"
   ],
   "Version": [
-    "4:8.4.0-2"
+    "4:8.4.0-3"
   ]
 }
