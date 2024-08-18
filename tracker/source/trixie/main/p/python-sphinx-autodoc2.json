@@ -3,19 +3,22 @@
     "all"
   ],
   "Binary": [
-    "python3-sphinx-autodoc2"
+    "python3-sphinx-autodoc2, python-sphinx-autodoc2-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), python3-setuptools, dh-sequence-python3, python3-all, python3-astroid, python3-tomli, python3-typing-extensions, pybuild-plugin-pyproject, flit, python3-pytest \u003c!nocheck\u003e, python3-pytest-regressions \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, flit, pybuild-plugin-pyproject, python3-all, python3-astroid, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-regressions \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nocheck\u003e, python3-tomli, python3-typing-extensions"
+  ],
+  "Build-Depends-Indep": [
+    "furo \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "463572650115c51c5083994642c032ab003154b68c51c1dffd2f0f289af679dd 2439 python-sphinx-autodoc2_0.5.0-2.dsc 6d27cc623a2560952a379798598fc87dd2bb949e6a55706d9ae3d86bd4c9279a 113947 python-sphinx-autodoc2_0.5.0.orig.tar.gz 47d65f93eebafa2cac6e1750e2ae45043a764eda309894368d7d2dbea0697112 3188 python-sphinx-autodoc2_0.5.0-2.debian.tar.xz"
+    "15c6ddce3f4dbb968e9938c2885dd7283aca09d3579380e9cd7dace4106933e7 2597 python-sphinx-autodoc2_0.5.0-4.dsc 6d27cc623a2560952a379798598fc87dd2bb949e6a55706d9ae3d86bd4c9279a 113947 python-sphinx-autodoc2_0.5.0.orig.tar.gz 31b883c355abb897344fcd5cd4de7c26dfd54da77821f6a4fd2692c780e6a6ba 5680 python-sphinx-autodoc2_0.5.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-sphinx-autodoc2"
   ],
   "Files": [
-    "fe9acc63ce52e670fbe06f27505b0973 2439 python-sphinx-autodoc2_0.5.0-2.dsc 7035976574edc114f7a5fd745e09b48f 113947 python-sphinx-autodoc2_0.5.0.orig.tar.gz 97b41eed7d0915126cdedec5d81306ac 3188 python-sphinx-autodoc2_0.5.0-2.debian.tar.xz"
+    "4db30834a013743541b49e4ea07c105b 2597 python-sphinx-autodoc2_0.5.0-4.dsc 7035976574edc114f7a5fd745e09b48f 113947 python-sphinx-autodoc2_0.5.0.orig.tar.gz 968032bddf259590cd46e0ff1a9149f9 5680 python-sphinx-autodoc2_0.5.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "python-sphinx-autodoc2"
   ],
   "Package-List": [
-    "python3-sphinx-autodoc2 deb python optional arch=all"
+    "python-sphinx-autodoc2-doc deb doc optional arch=all python3-sphinx-autodoc2 deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Yogeswaran Umasankar \u003ckd8mbd@gmail.com\u003e, Pulak Bhushan \u003cpulakbhushan@gmail.com\u003e"
+    "Yogeswaran Umasankar \u003cyogu@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-sphinx-autodoc2"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-sphinx-autodoc2.git"
   ],
   "Version": [
-    "0.5.0-2"
+    "0.5.0-4"
   ]
 }
