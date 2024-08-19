@@ -6,16 +6,19 @@
     "python3-beanbag-docutils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, python3-all, python3-django \u003c!nocheck\u003e, python3-kgb \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx, python3-sphinx-testing \u003c!nocheck\u003e, python3-sphinxcontrib.serializinghtml \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-django \u003c!nocheck\u003e, python3-kgb \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-sphinx, python3-sphinx-testing \u003c!nocheck\u003e, python3-sphinxcontrib.serializinghtml \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c8f9833996cead34b56b4f49a022de95df0acb3e55e2dec0a80e8fcebaff2eda 2268 beanbag-docutils_2.4-2.dsc a180592b2f872625ba7fcb4e0c71d9c9e6719ba9cdca0c999e4d262fc098d024 47027 beanbag-docutils_2.4.orig.tar.gz c3ed2e19b24cf51cc9f48af2d3a1e0dd3b25e299d28b3126a4de87005005e7ec 2628 beanbag-docutils_2.4-2.debian.tar.xz"
+    "dc7f4dcd2daf4d9826da3b940ae19d1e9a81ffd75df07ec1414dd132f1bf455b 2453 beanbag-docutils_2.4-3.dsc a180592b2f872625ba7fcb4e0c71d9c9e6719ba9cdca0c999e4d262fc098d024 47027 beanbag-docutils_2.4.orig.tar.gz ca6f1ac39b8b6a7f356a0b605217e47c05f16118a13dc5062d2f118ac4e0e313 3492 beanbag-docutils_2.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/beanbag-docutils"
   ],
   "Files": [
-    "9e5800d95c3fc28509d6289ebc277ab3 2268 beanbag-docutils_2.4-2.dsc 230ccf8393b48c33ea6ef751c8b7b2cb 47027 beanbag-docutils_2.4.orig.tar.gz d0a6cc9b947ee38634a24b6a76e9a648 2628 beanbag-docutils_2.4-2.debian.tar.xz"
+    "a34a4d41ace5b14b10e9e56af570c64e 2453 beanbag-docutils_2.4-3.dsc 230ccf8393b48c33ea6ef751c8b7b2cb 47027 beanbag-docutils_2.4.orig.tar.gz a6ace9bb2df3c34f56ead306458a115e 3492 beanbag-docutils_2.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,8 +44,14 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-django, python3-kgb, python3-pytest, python3-sphinx-testing, python3-sphinxcontrib.serializinghtml"
+  ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/beanbag-docutils"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/beanbag-docutils.git"
   ],
   "Version": [
-    "2.4-2"
+    "2.4-3"
   ]
 }
