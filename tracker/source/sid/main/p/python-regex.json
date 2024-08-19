@@ -6,16 +6,19 @@
     "python3-regex"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all-dev, python3-docutils, python3-pygments, python3-setuptools"
+    "debhelper-compat (= 13), dh-package-notes, dh-python, dpkg-build-api (= 1), pybuild-plugin-pyproject, python3-all-dev, python3-click \u003c!nocheck\u003e, python3-docutils, python3-pygments, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "c813f66cb0627d068ff76baab87656a9fface39abd98767886e31036caaf9bac 2057 python-regex_0.1.20221031-2.dsc 8d771bb20ceb6c6bd425c28747e3007566901aad5ab139805b85ede794dca7b0 271132 python-regex_0.1.20221031.orig.tar.xz 2c51767d11ae2c9393ac5d003b875783bd660c84fdc5168f642583a26a4c4bae 5420 python-regex_0.1.20221031-2.debian.tar.xz"
+    "11ae41a67b32d768de0798bb92246fdd73e59f7c4cd9a51c221020fffaadc50f 2412 python-regex_0.1.20240724-1.dsc 9cfd009eed1a46b27c14039ad5bbc5e71b6367c5b2e6d5f5da0ea91600817506 393485 python-regex_0.1.20240724.orig.tar.gz a656b4675af30a7d08851944dc69f8af1d4beda1ae1f2af010695cf6f21c5fd1 9480 python-regex_0.1.20240724-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "983b59383d1e3612a38f36782f6e4de8769984e9 debian archive/debian/0.1.20240724-1 https://git.dgit.debian.org/python-regex"
   ],
   "Directory": [
     "pool/main/p/python-regex"
   ],
   "Files": [
-    "83fc7167b64eeff16575b4bc95f9cd4a 2057 python-regex_0.1.20221031-2.dsc 7d9cae7a10ec17e6c5c0c15ed3932b4a 271132 python-regex_0.1.20221031.orig.tar.xz 0db6bd2452032ea5d4aa96aaa0b7f09d 5420 python-regex_0.1.20221031-2.debian.tar.xz"
+    "aaaba7e4bcd7d21bc3c0f4925d9c5e0f 2412 python-regex_0.1.20240724-1.dsc 1f23019dcf303d487abdfa18ad18402d 393485 python-regex_0.1.20240724.orig.tar.gz e59b1c08242027a1729e41b48fb8959b 9480 python-regex_0.1.20240724-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,16 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-click"
+  ],
+  "Uploaders": [
+    "Peter Pentchev \u003croam@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-regex"
@@ -48,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-regex.git"
   ],
   "Version": [
-    "0.1.20221031-2"
+    "0.1.20240724-1"
   ]
 }
