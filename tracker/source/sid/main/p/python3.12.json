@@ -3,7 +3,7 @@
     "any all"
   ],
   "Binary": [
-    "python3.12, python3.12-venv, libpython3.12-stdlib, python3.12-minimal, python3.12-nopie, libpython3.12-minimal, libpython3.12t64, python3.12-examples, python3.12-dev, libpython3.12-dev, libpython3.12-testsuite, idle-python3.12, python3.12-doc, python3.12-dbg, libpython3.12t64-dbg, python3.12-full"
+    "python3.12, python3.12-venv, libpython3.12-stdlib, python3.12-minimal, python3.12-nopie, libpython3.12-minimal, libpython3.12t64, python3.12-examples, python3.12-dev, libpython3.12-dev, libpython3.12-testsuite, idle-python3.12, python3.12-doc, python3.12-dbg, libpython3.12t64-dbg, python3.12-full, python3.12-tk, python3.12-gdbm"
   ],
   "Build-Depends": [
     "debhelper (\u003e= 11), dpkg-dev (\u003e= 1.17.11), quilt, autoconf, lsb-release, sharutils, libreadline-dev | libeditreadline-dev, libncurses-dev, zlib1g-dev, libbz2-dev, liblzma-dev, libgdbm-dev, libdb-dev, tk-dev, blt-dev (\u003e= 2.4z), libssl-dev, libexpat1-dev, libbluetooth-dev [linux-any] \u003c!pkg.python3.12.nobluetooth\u003e, locales-all, libnsl-dev, libsqlite3-dev, libffi-dev (\u003e= 3.0.5) [!or1k], libgpm2 [linux-any], media-types | mime-support, netbase, bzip2, time, python3:any, python3.12:any \u003ccross\u003e, net-tools, tzdata \u003c!nocheck\u003e, systemtap-sdt-dev [!hurd-amd64 !hurd-i386], valgrind-if-available"
@@ -12,13 +12,13 @@
     "python3-sphinx, python3-docs-theme, texinfo"
   ],
   "Checksums-Sha256": [
-    "f910824e0956807b970a195ef65826327c4cae81402d0f6293497de1e92d4e17 3806 python3.12_3.12.5-1.dsc fa8a2e12c5e620b09f53e65bcd87550d2e5a1e2e04bf8ba991dcc55113876397 20422396 python3.12_3.12.5.orig.tar.xz 34ee53e4b0c25b61728c03b69d8949f440a201286b91868a08286bfd65a80f60 212752 python3.12_3.12.5-1.debian.tar.xz"
+    "867fa47969d3c86cc989647b3a565df3f18a74a339fe82bd0cfe7871b3d1762b 3868 python3.12_3.12.5-4.dsc fa8a2e12c5e620b09f53e65bcd87550d2e5a1e2e04bf8ba991dcc55113876397 20422396 python3.12_3.12.5.orig.tar.xz 67152d53d1ff537e0d5822fa3211eff3b6dfd868d3a3399e797f8da265edb6a5 213132 python3.12_3.12.5-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python3.12"
   ],
   "Files": [
-    "5be86550eacff82fcb01bead22c68955 3806 python3.12_3.12.5-1.dsc 02c7d269e077f4034963bba6befdc715 20422396 python3.12_3.12.5.orig.tar.xz e92d08932d8b65e7f035a4612316e08f 212752 python3.12_3.12.5-1.debian.tar.xz"
+    "ef28e68c1e4f172ae265b6c9e1fe37f2 3868 python3.12_3.12.5-4.dsc 02c7d269e077f4034963bba6befdc715 20422396 python3.12_3.12.5.orig.tar.xz 076a1f242900b3fffaca4c156dff10c6 213132 python3.12_3.12.5-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python3.12"
   ],
   "Package-List": [
-    "idle-python3.12 deb python optional arch=all libpython3.12-dev deb libdevel optional arch=any libpython3.12-minimal deb python optional arch=any libpython3.12-stdlib deb python optional arch=any libpython3.12-testsuite deb libdevel optional arch=all libpython3.12t64 deb libs optional arch=any libpython3.12t64-dbg deb debug optional arch=any python3.12 deb python optional arch=any python3.12-dbg deb debug optional arch=any python3.12-dev deb python optional arch=any python3.12-doc deb doc optional arch=all python3.12-examples deb python optional arch=all python3.12-full deb python optional arch=any python3.12-minimal deb python optional arch=any python3.12-nopie deb python optional arch=any python3.12-venv deb python optional arch=any"
+    "idle-python3.12 deb python optional arch=all libpython3.12-dev deb libdevel optional arch=any libpython3.12-minimal deb python optional arch=any libpython3.12-stdlib deb python optional arch=any libpython3.12-testsuite deb libdevel optional arch=all libpython3.12t64 deb libs optional arch=any libpython3.12t64-dbg deb debug optional arch=any python3.12 deb python optional arch=any python3.12-dbg deb debug optional arch=any python3.12-dev deb python optional arch=any python3.12-doc deb doc optional arch=all python3.12-examples deb python optional arch=all python3.12-full deb python optional arch=any python3.12-gdbm deb python optional arch=any python3.12-minimal deb python optional arch=any python3.12-nopie deb python optional arch=any python3.12-tk deb python optional arch=any python3.12-venv deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, ca-certificates, gdb, locales-all, python3-gdbm, python3-gdbm-dbg, python3-pip, python3-setuptools, python3-setuptools-whl, python3-tk, python3-tk-dbg, python3-wheel-whl, shunit2, systemtap-sdt-dev, virtualenv"
+    "build-essential, ca-certificates, gdb, locales-all, python3-pip, python3-setuptools, python3-setuptools-whl, python3-wheel-whl, shunit2, systemtap-sdt-dev, virtualenv"
   ],
   "Uploaders": [
     "Stefano Rivera \u003cstefanor@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/cpython-team/python3.git"
   ],
   "Version": [
-    "3.12.5-1"
+    "3.12.5-4"
   ]
 }
