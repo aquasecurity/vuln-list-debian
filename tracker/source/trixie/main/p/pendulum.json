@@ -6,16 +6,16 @@
     "python3-pendulum"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all-dev, python3-setuptools"
+    "cargo, debhelper-compat (= 13), dh-sequence-python3, librust-mimalloc-dev, librust-pyo3+extension-module-dev, librust-pyo3+generate-import-lib-dev, librust-pyo3-0.22+gil-refs-dev, librust-pyo3-dev, pybuild-plugin-pyproject, python3-all-dev, python3-maturin, python3-pytest \u003c!nocheck\u003e, python3-time-machine \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "923dec3d659ae5cd9c0f464c8164083b919a93883060a7274bc9ddef844200d2 1972 pendulum_2.1.2-4.dsc 71c6e12398b98abed0e5cd09320de01bce05c689fc24c6870e5aa179f66c1fbf 61484 pendulum_2.1.2.orig.tar.xz 67f20fd456979370c1fb8bd3e81f0a9727b75808f0cd2282f2ac1087d5fa9b63 3000 pendulum_2.1.2-4.debian.tar.xz"
+    "0d44af4f4182cbc9b015247a07e74fb85d603983609a4e6f024ada2fed61134e 2316 pendulum_3.0.0-1.dsc 7f45b0d758f6d7b3f050d579327324d49a1cc1e5b166762fa5b83e4dc1f73a62 179981 pendulum_3.0.0.orig.tar.gz 81e5c470fd2f17c2f6548db6593e660101f3dd92c212b0489b4fec8d8c9ac7f8 5648 pendulum_3.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pendulum"
   ],
   "Files": [
-    "0b4720db8d3e6a14b9119d8484003581 1972 pendulum_2.1.2-4.dsc 2a8d6ffa122bb81b94d35265bbbe2474 61484 pendulum_2.1.2.orig.tar.xz 4e76b4dcfd8d0e298d9c4ed33ae18f4c 3000 pendulum_2.1.2-4.debian.tar.xz"
+    "c49230f4c529f7960fad03be3fbe59b4 2316 pendulum_3.0.0-1.dsc 82d4ac19cbf8d32fe4b37e9f2a310330 179981 pendulum_3.0.0.orig.tar.gz c932513e1cba522be5200bf52997f1c8 5648 pendulum_3.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://pendulum.eustace.io"
   ],
   "Maintainer": [
-    "Daniel Baumann \u003cdaniel.baumann@progress-linux.org\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "pendulum"
@@ -39,15 +39,21 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Ananthu C V \u003cweepingclown@disroot.org\u003e, Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
-    "https://git.progress-linux.org/users/daniel.baumann/debian/packages/pendulum"
+    "https://salsa.debian.org/python-team/packages/pendulum"
   ],
   "Vcs-Git": [
-    "https://git.progress-linux.org/users/daniel.baumann/debian/packages/pendulum"
+    "https://salsa.debian.org/python-team/packages/pendulum.git"
   ],
   "Version": [
-    "2.1.2-4"
+    "3.0.0-1"
   ]
 }
