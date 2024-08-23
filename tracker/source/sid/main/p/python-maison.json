@@ -6,16 +6,19 @@
     "python3-maison"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-click \u003c!nocheck\u003e, python3-poetry-core, python3-pydantic (\u003e= 2.0~) \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
+  ],
+  "Build-Depends-Indep": [
+    "furo \u003c!nodoc\u003e, python3-click \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pydantic (\u003e= 2.0~) \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autobuild \u003c!nodoc\u003e, python3-sphinx-click \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "0035b5af79e8a03d6fc1da1a90f5056ff87977fab18162326ffbf4615996424f 2254 python-maison_1.4.3-3.dsc b5e8afd21e45e1b651e0de579c7b87f9a81bbb899ea6a1666745b1ee96f0753e 65408 python-maison_1.4.3.orig.tar.gz 96c23df98a8feacd86adbb4b0d40ccabaf296a734669708362a0e55b12b5cf24 2724 python-maison_1.4.3-3.debian.tar.xz"
+    "1ce259a235ffd00c8a2da90f390d318a4972d8f2c08269101e8d7338e45710d3 2450 python-maison_2.0.0-1.dsc 30e050e598cd3f9b1bd0a629c68e1481eba764e97ad9332a34bbb8e98777331f 68803 python-maison_2.0.0.orig.tar.gz 807a644dfaf8dfb7947d6662661fa44e24c78a0e6600dc62b4b670d9ff3f3eff 3508 python-maison_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-maison"
   ],
   "Files": [
-    "88a1dad1f8885edc555d3b51fd0d0bdc 2254 python-maison_1.4.3-3.dsc a663ee83ad12325c5ad2c940c13ad09c 65408 python-maison_1.4.3.orig.tar.gz f9dd18d32a705d76a6750ce23b9cd653 2724 python-maison_1.4.3-3.debian.tar.xz"
+    "052dbd7c4836ab3566d9083c7b3713bb 2450 python-maison_2.0.0-1.dsc f13ea57c07154c811a727b8e9ac094eb 68803 python-maison_2.0.0.orig.tar.gz be51109c8f6cb42c8b06e94fa51e2928 3508 python-maison_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +51,7 @@
     "python3-all, python3-pydantic, python3-pytest"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-maison"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-maison.git"
   ],
   "Version": [
-    "1.4.3-3"
+    "2.0.0-1"
   ]
 }
