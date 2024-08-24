@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 i386 arm64 all"
+    "amd64 arm64 all"
   ],
   "Binary": [
     "shim-signed, shim-signed-common"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13), shim-unsigned (= 15.7-1), sbsigntool (\u003e= 0.9.2-2), po-debconf"
+    "debhelper (\u003e= 13), shim-unsigned (= 15.8-1), shim-helpers-amd64-signed [amd64], shim-helpers-arm64-signed [arm64], sbsigntool (\u003e= 0.9.2-2), po-debconf, debhelper-compat (= 13)"
   ],
   "Checksums-Sha256": [
-    "6ce4f139db0e14cd31640713955d9a3b0d7e3d614a32d0443cce81157c5c01ac 1808 shim-signed_1.40.dsc 4b2672a177acc5a7e1a8a1d88e118d07918dce51aa60ae26a99edce4f48e9ca5 815248 shim-signed_1.40.tar.xz"
+    "2cde2c561af1ac8f3242fd4f61a9003b7aea64a5f937b502f8274b311e64b69f 1893 shim-signed_1.44.dsc 03476db8262287a7171cfae25c15fce225b711e60d3e3679d1d8c11078bd06a8 586116 shim-signed_1.44.tar.xz"
   ],
   "Directory": [
     "pool/main/s/shim-signed"
   ],
   "Files": [
-    "7de597ca291e7db17d0de588ce773fc9 1808 shim-signed_1.40.dsc 1dcbbb922e650db660c773227cbe9eeb 815248 shim-signed_1.40.tar.xz"
+    "4cdaedf88e9a161be33a2a2029c3eaa2 1893 shim-signed_1.44.dsc c9d35bd03b32650f4e512f0623c43ffa 586116 shim-signed_1.44.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -27,7 +27,7 @@
     "shim-signed"
   ],
   "Package-List": [
-    "shim-signed deb utils optional arch=amd64,i386,arm64 shim-signed-common deb utils optional arch=all"
+    "shim-signed deb utils optional arch=amd64,arm64 shim-signed-common deb utils optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org/efi-team/shim-signed.git"
   ],
   "Version": [
-    "1.40"
+    "1.44"
   ]
 }
