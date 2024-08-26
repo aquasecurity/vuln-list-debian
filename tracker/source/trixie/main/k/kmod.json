@@ -6,16 +6,16 @@
     "kmod, libkmod2, libkmod-dev, kmod-udeb, libkmod2-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), autoconf, automake, libtool, pkgconf, liblzma-dev (\u003e= 5.4.5-0.2), libssl-dev, libzstd-dev, zstd \u003c!nocheck\u003e, gtk-doc-tools, xsltproc"
+    "debhelper-compat (= 13), autoconf, automake, libtool, pkgconf, liblzma-dev (\u003e= 5.4.5-0.2), libssl-dev, libzstd-dev, zstd \u003c!nocheck\u003e, gtk-doc-tools, xsltproc, scdoc"
   ],
   "Checksums-Sha256": [
-    "02d2f20b3971b8fdefc3c925fa73e5b871be035bdbdd9d072d49b33b0bf755f9 1565 kmod_32+20240611-1.dsc 95f0d11200c56920899b1b1dba6b3f844c15a5fc7145994b142238c1f00e5488 254336 kmod_32+20240611.orig.tar.xz 4497224b3e779f11ee0f65cc09a121a2a9dad03484e9405b944b20f11c37688b 9416 kmod_32+20240611-1.debian.tar.xz"
+    "adcfb953544f040c68496280014eadbfd8d0d77e18cfa12d506851666a364761 1646 kmod_33+20240816-2.dsc 62869d2eaf047b9f6d6ff30dbfa9a3dbe6622a7a009c2d19f71af84cd0d83265 297820 kmod_33+20240816.orig.tar.xz 8242463b1a5c030f693cbdafbcf41c2e76b302015ad21d6d9de49595ca792592 10664 kmod_33+20240816-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kmod"
   ],
   "Files": [
-    "75674813a784ba3ad6458cea9ea12ffd 1565 kmod_32+20240611-1.dsc 144e5f4d680fcd1ed0f290a66caa0bf9 254336 kmod_32+20240611.orig.tar.xz b97d9e6a2490c0735d286377e649b6b6 9416 kmod_32+20240611-1.debian.tar.xz"
+    "b29de6e1324aeffe9da9340f43e96d57 1646 kmod_33+20240816-2.dsc b4d5063fcd529a65ccde9483eb6db908 297820 kmod_33+20240816.orig.tar.xz b8ef0f307f9dee268dd333477f8a5538 10664 kmod_33+20240816-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -38,6 +38,12 @@
   "Standards-Version": [
     "4.7.0.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, pkg-config"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/md/kmod"
   ],
@@ -45,6 +51,6 @@
     "https://salsa.debian.org/md/kmod.git"
   ],
   "Version": [
-    "32+20240611-1"
+    "33+20240816-2"
   ]
 }
