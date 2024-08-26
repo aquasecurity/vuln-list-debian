@@ -6,19 +6,16 @@
     "python3-distributed, python-distributed-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libjs-sortable-tablesort, python3-all, pybuild-plugin-pyproject, python3-click (\u003e= 6.6), python3-cloudpickle (\u003e= 1.5.0), python3-cryptography \u003c!nocheck\u003e, python3-dask (\u003e= 2024.5.2), python3-dask (\u003c\u003c 2024.5.2.1~), python3-doc \u003c!nodoc\u003e, python3-jupyter-server (\u003e= 1.23.3-2) \u003c!nocheck\u003e, python3-locket, python3-msgpack, python3-numpy \u003c!nocheck\u003e, python3-numpydoc, python3-pandas \u003c!nocheck\u003e, python-pandas-doc \u003c!nodoc\u003e, python3-psutil, python3-pytest, python3-pytest-asyncio, python3-pytest-rerunfailures \u003c!nocheck\u003e, python3-pytest-timeout, python3-setuptools, python3-sortedcollections, python3-sphinx, python3-sphinx-click, python3-dask-sphinx-theme \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-tblib, python3-toolz (\u003e= 0.8.2), python3-tornado (\u003e= 5), python3-versioneer, python3-yaml, python3-zict (\u003e= 3.0.0), tzdata-legacy, uglifyjs"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, libjs-sortable-tablesort, pybuild-plugin-pyproject, python-dask-doc \u003c!nodoc\u003e, python-fsspec-doc \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e, python3-all, python3-click (\u003e= 6.6), python3-cloudpickle (\u003e= 1.5.0), python3-cryptography \u003c!nocheck\u003e, python3-dask (\u003c\u003c 2024.5.2.1~), python3-dask (\u003e= 2024.5.2), python3-dask-sphinx-theme \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-jinja2, python3-jupyter-server (\u003e= 1.23.3-2) \u003c!nocheck\u003e, python3-locket, python3-msgpack, python3-numpy \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-packaging, python3-pandas \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-psutil, python3-pytest, python3-pytest-asyncio, python3-pytest-rerunfailures \u003c!nocheck\u003e, python3-pytest-timeout, python3-setuptools, python3-sortedcollections, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-click \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-tblib, python3-toolz (\u003e= 0.8.2), python3-tornado (\u003e= 5), python3-urllib3, python3-versioneer, python3-yaml, python3-zict (\u003e= 3.0.0), tzdata-legacy, uglifyjs"
   ],
   "Checksums-Sha256": [
-    "e53317756efe23ecd546d66f45938d2792ea10ea91cb8d292e2c7bb29e037970 3660 dask.distributed_2024.5.2+ds.1-3.dsc b86e539dbb72374c862fc6c443088bd6a012c051d388cc9d7df7568e739a771b 2131376 dask.distributed_2024.5.2+ds.1.orig.tar.xz a5b3e13c929962362c4a551080dbed0b629d2285ee87cbb9dd456dc3162d1683 2040252 dask.distributed_2024.5.2+ds.1-3.debian.tar.xz"
-  ],
-  "Dgit": [
-    "a55a1eb2f9d7f93017bfa8ce5facd08d86bd627b debian archive/debian/2024.5.2+ds.1-3 https://git.dgit.debian.org/dask.distributed"
+    "29370dd8d57b850556b7189e21ef681eae34e28cb2e36536775aae9fa3568d90 3757 dask.distributed_2024.5.2+ds.1-4.dsc b86e539dbb72374c862fc6c443088bd6a012c051d388cc9d7df7568e739a771b 2131376 dask.distributed_2024.5.2+ds.1.orig.tar.xz 38e483daf2f6ec1813af22aa8964f30e2d3b010eeeea9a4ba9f66c40fc2139fa 2039716 dask.distributed_2024.5.2+ds.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dask.distributed"
   ],
   "Files": [
-    "ed912eecb2a4ee7d99b3d42d4b1b4528 3660 dask.distributed_2024.5.2+ds.1-3.dsc d30a2d544a533530fb05e136c8b30e62 2131376 dask.distributed_2024.5.2+ds.1.orig.tar.xz 379579a444496f976fa937de131a2696 2040252 dask.distributed_2024.5.2+ds.1-3.debian.tar.xz"
+    "2856454b02f714d3a133a8f640825ca5 3757 dask.distributed_2024.5.2+ds.1-4.dsc d30a2d544a533530fb05e136c8b30e62 2131376 dask.distributed_2024.5.2+ds.1.orig.tar.xz cbf08d2da1559285ee13ca8174ca3078 2039716 dask.distributed_2024.5.2+ds.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "dask.distributed"
   ],
   "Package-List": [
-    "python-distributed-doc deb doc optional arch=all python3-distributed deb python optional arch=all"
+    "python-distributed-doc deb doc optional arch=all profile=!nodoc python3-distributed deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/dask.distributed.git"
   ],
   "Version": [
-    "2024.5.2+ds.1-3"
+    "2024.5.2+ds.1-4"
   ]
 }
