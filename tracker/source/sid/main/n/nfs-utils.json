@@ -6,16 +6,16 @@
     "nfs-kernel-server, nfs-common, libnfsidmap-dev, libnfsidmap1"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libwrap0-dev, libevent-dev, libkrb5-dev, libblkid-dev, libkeyutils-dev, pkg-config, libldap2-dev, libcap-dev, libtirpc-dev, libdevmapper-dev, libmount-dev, libsqlite3-dev, libxml2-dev"
+    "debhelper-compat (= 13), libwrap0-dev, libevent-dev, libkrb5-dev, libblkid-dev, libkeyutils-dev, pkgconf, libldap2-dev, libcap-dev, libtirpc-dev, libdevmapper-dev, libmount-dev, libsqlite3-dev, libxml2-dev"
   ],
   "Checksums-Sha256": [
-    "8d055c689facb46f29a3d33cce2c59743ec8b965caaddf525e434027395376c4 2567 nfs-utils_2.6.4-5.dsc 01b3b0fb9c7d0bbabf5114c736542030748c788ec2fd9734744201e9b0a1119d 728280 nfs-utils_2.6.4.orig.tar.xz 1e29cf89c7499fd55d03abdf0984507151dc3e48ea2c1487843394d1b336eae0 50348 nfs-utils_2.6.4-5.debian.tar.xz"
+    "c3fd0bc394ee24afbb79c9849f008995e06cb1435697dd3bb56877dd6779b7ba 2633 nfs-utils_2.6.4-6.dsc 01b3b0fb9c7d0bbabf5114c736542030748c788ec2fd9734744201e9b0a1119d 728280 nfs-utils_2.6.4.orig.tar.xz 352d4ff7915da293c1076e4cc8c25b64eb366dbd9ccf01f725805b49fe7dc334 52044 nfs-utils_2.6.4-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/nfs-utils"
   ],
   "Files": [
-    "eec4b65065114e7482701ba0c4ffef30 2567 nfs-utils_2.6.4-5.dsc 907f95977ccf7a522ee32af1534f0e4c 728280 nfs-utils_2.6.4.orig.tar.xz 392c11066234b7cdbfd33cf01588ade7 50348 nfs-utils_2.6.4-5.debian.tar.xz"
+    "51b11a720a3fed6f04709d17decc646e 2633 nfs-utils_2.6.4-6.dsc 907f95977ccf7a522ee32af1534f0e4c 728280 nfs-utils_2.6.4.orig.tar.xz f3b75642e959487d032c8bd4724f4c2d 52044 nfs-utils_2.6.4-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "keyutils, krb5-admin-server, krb5-kdc, krb5-user"
+  ],
   "Uploaders": [
     "Anibal Monsalve Salazar \u003canibal@debian.org\u003e, Ben Hutchings \u003cbenh@debian.org\u003e, Steve Langasek \u003cvorlon@debian.org\u003e, Salvatore Bonaccorso \u003ccarnil@debian.org\u003e"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/kernel-team/nfs-utils.git"
   ],
   "Version": [
-    "1:2.6.4-5"
+    "1:2.6.4-6"
   ]
 }
