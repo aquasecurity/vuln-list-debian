@@ -9,16 +9,16 @@
     "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-pycryptodome, python3-pytest, python3-pytest-asyncio, python3-ruff"
+    "python3-aiohttp, python3-pycryptodome, python3-pytest, python3-pytest-asyncio"
   ],
   "Checksums-Sha256": [
-    "d55aee4d5ccb7ea17c69eabc7cf3d5162e49b97c50977bb839d04a0eea421377 2201 python-aioairq_0.4.2-2.dsc 504275018fed7d5dbc3ef07562b902675e66e27bf17d5f35f62df5c0fc20198d 14324 python-aioairq_0.4.2.orig.tar.xz a0930569cffdf1e00208945e2cbb642913dc12df9f760ebac29a4d4a05574e55 2012 python-aioairq_0.4.2-2.debian.tar.xz"
+    "7961a808fb91fef635ebfd774a2fb3c111504fda3d8da5adbf19adf290645bdd 2270 python-aioairq_0.4.2-3.dsc 504275018fed7d5dbc3ef07562b902675e66e27bf17d5f35f62df5c0fc20198d 14324 python-aioairq_0.4.2.orig.tar.xz 8ac590f26b25667a989af0c99ca3023a757d3c2f148cb73c918fcc02a0f769e4 2168 python-aioairq_0.4.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-aioairq"
   ],
   "Files": [
-    "0b1214a7def95dee26af549ba324a7b1 2201 python-aioairq_0.4.2-2.dsc 3f9ad38c2d6096e8a2e3384f924208a4 14324 python-aioairq_0.4.2.orig.tar.xz 0c336391d4b6636b58e4932c461318cb 2012 python-aioairq_0.4.2-2.debian.tar.xz"
+    "6d45a72d60ccecfa13e9aa939c7ebc86 2270 python-aioairq_0.4.2-3.dsc 3f9ad38c2d6096e8a2e3384f924208a4 14324 python-aioairq_0.4.2.orig.tar.xz 7327381cd8d740f2e195df6495ac4119 2168 python-aioairq_0.4.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.6.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, pybuild-plugin-autopkgtest"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-aioairq.git"
   ],
   "Version": [
-    "0.4.2-2"
+    "0.4.2-3"
   ]
 }

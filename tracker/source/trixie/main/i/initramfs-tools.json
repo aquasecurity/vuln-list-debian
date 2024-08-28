@@ -6,16 +6,16 @@
     "initramfs-tools, initramfs-tools-core"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), bash-completion"
+    "bash-completion, debhelper-compat (= 13), shunit2 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2d3a1a14169e1a98600007d3f60400a5ee72fc153aeea32a3452441e70bd73b8 1915 initramfs-tools_0.142.dsc e566929d02f53efcea7851aa9120bba417c320c60405b84d8774de01765e9882 96844 initramfs-tools_0.142.tar.xz"
+    "6c9fda5896b927f541891cf232ccf840c5abeea3d985e526846b600278a1be46 1991 initramfs-tools_0.145.dsc a9111ba80d825d2e4baa66d32609900ef25e11e13a15c8d3abee4b235155ca0f 106024 initramfs-tools_0.145.tar.xz"
   ],
   "Directory": [
     "pool/main/i/initramfs-tools"
   ],
   "Files": [
-    "d75dbcfd3acfefcc1d0b39c1bbeec42b 1915 initramfs-tools_0.142.dsc c327c1944175e07994f489fedf37d6a2 96844 initramfs-tools_0.142.tar.xz"
+    "502d9b2bd6ed9c928842d0ccf153bff3 1991 initramfs-tools_0.145.dsc b3dab25fb9f721b9190d927aeeaef68d 106024 initramfs-tools_0.145.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -36,13 +36,13 @@
     "utils"
   ],
   "Standards-Version": [
-    "4.1.5"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "busybox, busybox-initramfs, genext2fs, klibc-utils, linux-image-amd64, linux-image-generic, qemu-system-x86, zstd"
+    "busybox, busybox-initramfs, genext2fs, iproute2, ipxe-qemu, klibc-utils, linux-image-generic, procps, python3, qemu-efi-aarch64, qemu-efi-arm, qemu-kvm, seabios, zstd"
   ],
   "Uploaders": [
     "Michael Prokop \u003cmika@debian.org\u003e, Ben Hutchings \u003cbenh@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/kernel-team/initramfs-tools.git"
   ],
   "Version": [
-    "0.142"
+    "0.145"
   ]
 }
