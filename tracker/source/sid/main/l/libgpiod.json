@@ -3,22 +3,22 @@
     "linux-any all"
   ],
   "Binary": [
-    "libgpiod-dev, libgpiod-doc, libgpiod2t64, gpiod, python3-libgpiod"
+    "libgpiod-dev, libgpiod-doc, libgpiod3, gpiod, python3-libgpiod"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), autoconf-archive, automake, dh-sequence-python3 \u003c!nopython\u003e, help2man \u003c!cross\u003e, pkg-config, m4, python3-dev:any \u003c!nopython\u003e, libpython3-dev \u003c!nopython\u003e, python3-setuptools \u003c!nopython\u003e, linux-libc-dev (\u003e= 4.8)"
+    "debhelper-compat (= 13), autoconf-archive, automake, dh-sequence-python3 \u003c!nopython\u003e, help2man \u003c!cross\u003e, pkgconf, m4, graphviz, python3-all-dev:any \u003c!nopython\u003e, libpython3-dev \u003c!nopython\u003e, python3-setuptools \u003c!nopython\u003e, linux-libc-dev (\u003e= 4.8)"
   ],
   "Build-Depends-Indep": [
     "doxygen"
   ],
   "Checksums-Sha256": [
-    "efc8980c2920483c20921c51f1ff5e6821995f2d32eed5475c2feac689ffeb8b 2396 libgpiod_1.6.3-1.1.dsc 841be9d788f00bab08ef22c4be5c39866f0e46cb100a3ae49ed816ac9c5dddc7 326068 libgpiod_1.6.3.orig.tar.xz 47d12013f67956a5942f036f7548d291bd3d09310b7838ada1bd1d72c5147793 8728 libgpiod_1.6.3-1.1.debian.tar.xz"
+    "6ef882480123e0d0d0527fa50e220239add6284a7e3cdadefa27a5e17da69989 2482 libgpiod_2.1.3-1.dsc 2f1c250412abb05f154cb52f80afa56e1462d6f67da2ba47baa8b167ffe52e5e 164624 libgpiod_2.1.3.orig.tar.xz 3dc6aaefb968e3f3107b1ef877fab738129d4df51a355e49a9f30caea1786c5f 15476 libgpiod_2.1.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libg/libgpiod"
   ],
   "Files": [
-    "2742a1197eae8930aa4dc67313f3eee3 2396 libgpiod_1.6.3-1.1.dsc 28e79f6f70fee1da9079558d8b7b3736 326068 libgpiod_1.6.3.orig.tar.xz c7b26520d33138e7d117d8544c736391 8728 libgpiod_1.6.3-1.1.debian.tar.xz"
+    "c7ccdd1f7ca9d700f3c17d931141403a 2482 libgpiod_2.1.3-1.dsc 087def9481dc61d0a192f0a872c4ec67 164624 libgpiod_2.1.3.orig.tar.xz 938824bd8b2f3fa8242e9edaf7be9175 15476 libgpiod_2.1.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,13 +27,13 @@
     "https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git"
   ],
   "Maintainer": [
-    "SZ Lin (林上智) \u003cszlin@debian.org\u003e"
+    "Gavin Lai (賴建宇) \u003cgavin09@gmail.com\u003e"
   ],
   "Package": [
     "libgpiod"
   ],
   "Package-List": [
-    "gpiod deb misc optional arch=linux-any libgpiod-dev deb libdevel optional arch=linux-any libgpiod-doc deb doc optional arch=all libgpiod2t64 deb libs optional arch=linux-any python3-libgpiod deb python optional arch=linux-any profile=!nopython"
+    "gpiod deb misc optional arch=linux-any libgpiod-dev deb libdevel optional arch=linux-any libgpiod-doc deb doc optional arch=all libgpiod3 deb libs optional arch=linux-any python3-libgpiod deb python optional arch=linux-any profile=!nopython"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
+  ],
+  "Uploaders": [
+    "SZ Lin (林上智) \u003cszlin@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/libgpiod"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/debian/libgpiod.git"
   ],
   "Version": [
-    "1.6.3-1.1"
+    "2.1.3-1"
   ]
 }
