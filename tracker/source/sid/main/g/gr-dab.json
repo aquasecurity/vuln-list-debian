@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "gr-dab, libgnuradio-dab3.8.0, gr-dab-dev"
+    "gr-dab, libgnuradio-dab3.10.0, gr-dab-dev, gr-dab-doc"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), gnuradio-dev, cmake, libfaad-dev, doxygen, pkg-config, python3-six, swig, libgmp-dev, liborc-0.4-dev, txt2man"
+    "cmake, debhelper (\u003e= 12), dh-python, gnuradio-dev, libfaad-dev, libgmp-dev, liborc-0.4-dev, pkgconf, python3-dev, python3-numpy, txt2man"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen-latex, graphviz"
   ],
   "Checksums-Sha256": [
-    "4a731f214ab4869be435cf75b798f081ea3883c8617cf277e1fdd0be1c55623d 2192 gr-dab_0.4-2.dsc aab72801bcbe4e0ddaa8f72c30db1070668f69fbb24f6bd529d7aa0666f636ff 406389 gr-dab_0.4.orig.tar.gz 0e14441d5d57d98c185829bfb49cf1091180081887a82db665ccbc48c2b12e7c 6468 gr-dab_0.4-2.debian.tar.xz"
-  ],
-  "Dgit": [
-    "837c08c1cae0b84b24d3e50eeb72fc4c525b74fb debian archive/debian/0.4-2 https://git.dgit.debian.org/gr-dab"
+    "b06b172990fb7c0dbc40fec80d910c7813424579f7f5917e57b50fb9d1b4c711 2210 gr-dab_0.5-1.dsc ceb27ab5db635ec71279850c12641df194675142432e414cf98c826f1b429263 392052 gr-dab_0.5.orig.tar.gz 294278dd0d8d86639bc653cd1ddc3791efb26071e84cd6e1ad0579ee0e4da92b 7356 gr-dab_0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gr-dab"
   ],
   "Files": [
-    "5e7c2a480fe61ba3a951198daec3223f 2192 gr-dab_0.4-2.dsc 0f4e9175396818f15e2ceb4b75f3b370 406389 gr-dab_0.4.orig.tar.gz 521ae09297dd4a9114bd9e48ad16f0d2 6468 gr-dab_0.4-2.debian.tar.xz"
+    "a47119776ed53441752703152c8917c6 2210 gr-dab_0.5-1.dsc 348342a8c0f2a16fec3087622b484c2e 392052 gr-dab_0.5.orig.tar.gz e605a2998fc17caa4b1949b67543d468 7356 gr-dab_0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gr-dab"
   ],
   "Package-List": [
-    "gr-dab deb hamradio optional arch=any gr-dab-dev deb libdevel optional arch=any libgnuradio-dab3.8.0 deb libs optional arch=any"
+    "gr-dab deb hamradio optional arch=any gr-dab-dev deb libdevel optional arch=any gr-dab-doc deb doc optional arch=all libgnuradio-dab3.10.0 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.0"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Uploaders": [
+    "A. Maitland Bottoms \u003cbottoms@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rubund/gr-dab"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rubund/gr-dab.git"
   ],
   "Version": [
-    "0.4-2"
+    "0.5-1"
   ]
 }
