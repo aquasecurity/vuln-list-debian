@@ -6,22 +6,22 @@
     "python3-applicationinsights"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, python3-all, python3-django \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "244476d58ba115f4ac3b0e13dde3ef3aaeeca6f0cb998719490624276e847f2d 2304 python-applicationinsights_0.11.10-1.dsc 47581c4d055dcce2a350f864520d29bfee6c3489c5bc9bd879774566a664a693 71163 python-applicationinsights_0.11.10.orig.tar.gz 51cca7204f30cb4698a365dc9b11867c6ccab60c2a2a91a3a1fc4f5d64d8e56d 3112 python-applicationinsights_0.11.10-1.debian.tar.xz"
+    "51963b0d2da1a816166abe466dee6b3c6fe3dd1d371caeb445c30347096b0e27 2371 python-applicationinsights_0.11.10-2.dsc 47581c4d055dcce2a350f864520d29bfee6c3489c5bc9bd879774566a664a693 71163 python-applicationinsights_0.11.10.orig.tar.gz dc9f2b0aafb8edf8f8ea2df7af39df3c2e0d7d1e3091420dc0dfdc35b37423a2 3260 python-applicationinsights_0.11.10-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-applicationinsights"
   ],
   "Files": [
-    "de92f987453779f6e17bed6ba8f0fc8e 2304 python-applicationinsights_0.11.10-1.dsc 0437300dfb9561b7a0f1d63ad295aa15 71163 python-applicationinsights_0.11.10.orig.tar.gz 89872633ad70b9d6e3501b61d7528e70 3112 python-applicationinsights_0.11.10-1.debian.tar.xz"
+    "90c8ac747ae4ac8a80d2794b97997d8a 2371 python-applicationinsights_0.11.10-2.dsc 0437300dfb9561b7a0f1d63ad295aa15 71163 python-applicationinsights_0.11.10.orig.tar.gz 3d5865bc6d6be8d4beaeb9050f143e65 3260 python-applicationinsights_0.11.10-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://pypi.python.org/pypi/applicationinsights/"
+    "https://github.com/Microsoft/ApplicationInsights-Python"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3-django"
+    "@builddeps@, python3-all, python3-django"
   ],
   "Uploaders": [
     "Luca Boccassi \u003cbluca@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-applicationinsights.git"
   ],
   "Version": [
-    "0.11.10-1"
+    "0.11.10-2"
   ]
 }
