@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "python3-cysignals-pari, python3-cysignals-bare, cysignals-tools, python-cysignals-doc"
+    "python3-cysignals-bare, cysignals-tools, python-cysignals-doc, python3-cysignals-pari"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-sequence-python3, help2man, python3-setuptools, python3-all, libpython3-all-dev, cython3 (\u003e= 0.28), libpari-dev (\u003e= 2.9), gdb"
+    "debhelper-compat (= 13), dh-sequence-python3, help2man, python3-setuptools, python3-all, libpython3-all-dev, cython3 (\u003e= 0.28), gdb"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-sphinxdoc, python3-docutils, python3-sphinx, latexmk, texlive-latex-base, texlive-latex-recommended, texlive-fonts-recommended, texlive-latex-extra, tex-gyre"
   ],
   "Checksums-Sha256": [
-    "47bd0f8f1f3bc57bba8a750303b32f95d471e4243ae4fa9577656ad42dd102c2 2636 cysignals_1.11.4+ds-3.dsc 7b087d3a635f58c37831cdf8fa42188c8543f11867e333fcc70d0823abc85735 51724 cysignals_1.11.4+ds.orig.tar.xz 425245820c0c5cca243333225b92ca3393b328ce8bdbe7560308a0d1fda916f6 13724 cysignals_1.11.4+ds-3.debian.tar.xz"
+    "897fc64417cc3c938ff13ce1356bf8bf7adca1ec920e2e3df021bb221caf099b 3369 cysignals_1.12.0~rc2+ds-2.dsc fd3fa9b45bc3daf32ce851eaeb14dff47cb0a122c7d3df29fab4b40c552d2b22 51160 cysignals_1.12.0~rc2+ds.orig.tar.xz b9fdb9897c40757568d3e27ad09dd7d398e5435a901d70f12a6e48244232dc01 8088 cysignals_1.12.0~rc2+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/cysignals"
   ],
   "Files": [
-    "4b6d452414ee97989fae62af9e71fadf 2636 cysignals_1.11.4+ds-3.dsc 99edbcc761786c87c9805d89ec4c3e2f 51724 cysignals_1.11.4+ds.orig.tar.xz fcc24d12b03d7cccb7b11d957b7e9ef9 13724 cysignals_1.11.4+ds-3.debian.tar.xz"
+    "af13a713287b267c30480bdbb15dd4b1 3369 cysignals_1.12.0~rc2+ds-2.dsc 2b34d5ab58d6a35fcfe67b2dad307f48 51160 cysignals_1.12.0~rc2+ds.orig.tar.xz f04ed044f6afebb1d2c9d9469c40594d 8088 cysignals_1.12.0~rc2+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "cysignals"
   ],
   "Package-List": [
-    "cysignals-tools deb devel optional arch=all python-cysignals-doc deb doc optional arch=all python3-cysignals-bare deb python optional arch=any python3-cysignals-pari deb python optional arch=any"
+    "cysignals-tools deb devel optional arch=all python-cysignals-doc deb doc optional arch=all python3-cysignals-bare deb python optional arch=any python3-cysignals-pari deb oldlibs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, cython3, libpari-dev, libpython3-dev, python3-setuptools"
+    "build-essential, cython3, libpython3-dev, python3-cysignals, python3-setuptools"
   ],
   "Uploaders": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/cysignals.git"
   ],
   "Version": [
-    "1.11.4+ds-3"
+    "1.12.0~rc2+ds-2"
   ]
 }
