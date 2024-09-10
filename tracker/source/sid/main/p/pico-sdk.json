@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "pico-sdk-source"
+    "pico-sdk-source, pioasm"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), doxygen, gcc-arm-none-eabi, graphviz, libnewlib-arm-none-eabi, libstdc++-arm-none-eabi-newlib, python3, tinyusb-source"
+    "cmake, debhelper-compat (= 13)"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen, gcc-arm-none-eabi, graphviz, libnewlib-arm-none-eabi, libstdc++-arm-none-eabi-newlib, python3, tinyusb-source"
   ],
   "Checksums-Sha256": [
-    "6479c6b75165e21e9df1fe9ed3188f0b6573a1157b8fdaa78edf198b5c3afcd8 2258 pico-sdk_1.5.1-4.dsc 95f5e522be3919e36a47975ffd3b208c38880c14468bd489ac672cfe3cec803c 1024817 pico-sdk_1.5.1.orig.tar.gz 638420c8163836402fdfca1c2f3c8ff184af6d4faadbea299bcb9be29fa140be 11872 pico-sdk_1.5.1-4.debian.tar.xz"
-  ],
-  "Dgit": [
-    "7e68d5616b03a536ad8703cf8530f4601d07834c debian archive/debian/1.5.1-4 https://git.dgit.debian.org/pico-sdk"
+    "9e908b9471ee8616b79cf990d8b139571dde64272576aa0655f7be05b50944fa 2132 pico-sdk_2.0.0-1.dsc 626db87779fa37f7f9c7cfe3e152f7e828fe19c486730af2e7c80836b6b57e1d 2345905 pico-sdk_2.0.0.orig.tar.gz 909f257015b670b65d46213887f2f2274db436bcccb2d3ecd6611ed1282f1821 10228 pico-sdk_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pico-sdk"
   ],
   "Files": [
-    "2249b043d399b05f1dc2684d63487b59 2258 pico-sdk_1.5.1-4.dsc bcd2c153574b7bb29a6a07b771593f43 1024817 pico-sdk_1.5.1.orig.tar.gz 49dc83acf3a5b55051e9068daa211503 11872 pico-sdk_1.5.1-4.debian.tar.xz"
+    "491646060b27cd5783930ed7903b999e 2132 pico-sdk_2.0.0-1.dsc 9c37b7484a1ba436c5fe9c56ac0a48d9 2345905 pico-sdk_2.0.0.orig.tar.gz 9d467070b832d1b426a36ed71fbc8293 10228 pico-sdk_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "pico-sdk"
   ],
   "Package-List": [
-    "pico-sdk-source deb libdevel optional arch=all"
+    "pico-sdk-source deb libdevel optional arch=all pioasm deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, cmake, gcc-arm-none-eabi, libnewlib-arm-none-eabi, libstdc++-arm-none-eabi-newlib"
+    "build-essential"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/pico-sdk"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/pico-sdk.git"
   ],
   "Version": [
-    "1.5.1-4"
+    "2.0.0-1"
   ]
 }

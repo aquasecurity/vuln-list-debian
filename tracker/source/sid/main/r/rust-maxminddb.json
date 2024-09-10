@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-maxminddb-dev, librust-maxminddb+memmap-dev, librust-maxminddb+mmap-dev"
+    "librust-maxminddb-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-derive-1+default-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ipnetwork-0.17+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d8f6f3dac537169ad69eac0d8e625f931dee5e6c145cd88cd7afc6e957e7d841 2432 rust-maxminddb_0.13.0-1.dsc 9412a854bf1355d1ff92ef6ffe557dcc4a866e20cdffc7d3fc082174dba7436e 11916 rust-maxminddb_0.13.0.orig.tar.gz ea1e70714664165bc659ca33acfca24a8b35b69c8d3d65975a9249480950cc00 2364 rust-maxminddb_0.13.0-1.debian.tar.xz"
+    "509a1391d5440b119355eb069aa26d98bf15c7eb59d8df2eb4442e84a8ccd606 1874 rust-maxminddb_0.24.0-1.dsc d6087e5d8ea14861bb7c7f573afbc7be3798d3ef0fae87ec4fd9a4de9a127c3c 20232 rust-maxminddb_0.24.0.orig.tar.gz 248f92ca03ee52d8eb7ee373368ea589e571d0f2b354d5e9ceddfc002e53cc34 3372 rust-maxminddb_0.24.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-maxminddb"
   ],
   "Files": [
-    "cf669e22939afe4a215c487fea03ecdb 2432 rust-maxminddb_0.13.0-1.dsc cd9663318a12b2f2e645942af25b41da 11916 rust-maxminddb_0.13.0.orig.tar.gz 04431f150997c0014974e84cfade5943 2364 rust-maxminddb_0.13.0-1.debian.tar.xz"
+    "2be2d5aa29503b112249f341dd3e4d6c 1874 rust-maxminddb_0.24.0-1.dsc 745862e32895b36bbc98cd7c9ef1c278 20232 rust-maxminddb_0.24.0.orig.tar.gz 9f4f65ab0d1758f775d017775cff919c 3372 rust-maxminddb_0.24.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-maxminddb"
   ],
   "Package-List": [
-    "librust-maxminddb+memmap-dev deb rust optional arch=any librust-maxminddb+mmap-dev deb rust optional arch=any librust-maxminddb-dev deb rust optional arch=any"
+    "librust-maxminddb-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-env-logger-0.10+default-dev, librust-rayon-1+default-dev"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/maxminddb]"
   ],
   "Version": [
-    "0.13.0-1"
+    "0.24.0-1"
   ]
 }
