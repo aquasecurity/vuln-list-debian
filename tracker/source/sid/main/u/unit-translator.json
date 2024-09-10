@@ -6,16 +6,16 @@
     "utrans, utrans-rc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), groff-base"
+    "debhelper-compat (= 13), groff-base, rpcbind \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a0263671458901143b2887b62f4bf76f1552a7c4d1ca6b00a3e5dd37bd3bd9f8 1995 unit-translator_0.2.1-1.dsc 25fed60749ab00cf4b9d5547e3c4233b87d40d60b32e6cf98f44ded9fd1bf38e 23827 unit-translator_0.2.1.orig.tar.gz a0d7154978fbbe59c343c93a4d1e22da9ff778fb9947fec13cc56e5199e1973a 2872 unit-translator_0.2.1-1.debian.tar.xz"
+    "10762b2753c6252a00a13596ca8930cbac113cfb87e26d05fb3b16a7c7ee810c 2029 unit-translator_0.3-1.dsc 5e81e93844e0be287e32a13e02aef0fbbb0f02fe987ec350a6fb19342d181173 30493 unit-translator_0.3.orig.tar.gz 785d627ab2de4df574c8d4fc34e6ef3df066b356821d053d9d89f1742988f1cb 3064 unit-translator_0.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/unit-translator"
   ],
   "Files": [
-    "bb7080f228139ffeac24a90196682cc4 1995 unit-translator_0.2.1-1.dsc dd478a81f1fbdd73c78a1d18e4ccb1b6 23827 unit-translator_0.2.1.orig.tar.gz 187e6358d07257d1870806b93ac15db5 2872 unit-translator_0.2.1-1.debian.tar.xz"
+    "2639942982ed61a21dd2ddafc2d61df7 2029 unit-translator_0.3-1.dsc 674856f81994ed08e38819dca0e204d7 30493 unit-translator_0.3.orig.tar.gz 69b9587d023ad9d5dc569810455d7776 3064 unit-translator_0.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "rpcbind"
+  ],
   "Vcs-Browser": [
     "https://git.devuan.org/leepen/unit-translator/src/branch/main"
   ],
@@ -51,6 +54,6 @@
     "https://git.devuan.org/leepen/unit-translator.git -b debian"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.3-1"
   ]
 }
