@@ -6,19 +6,19 @@
     "aardvark-dns"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, librust-anyhow-dev, librust-async-broadcast-dev, librust-chrono-dev, librust-clap-4+derive-dev, librust-futures-util-dev, librust-nix-dev, librust-resolv-conf-dev, librust-signal-hook-dev, librust-strsim-dev, librust-syslog-dev, librust-termcolor-dev, librust-textwrap-dev, librust-tokio+full-dev, librust-hickory-client-dev, librust-hickory-proto-dev, librust-hickory-server-dev, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, debhelper-compat (= 13), dh-cargo (\u003e= 25), librust-anyhow-dev, librust-arc-swap-dev, librust-async-broadcast-dev, librust-chrono-dev, librust-clap-4+derive-dev, librust-flume-dev, librust-futures-util-dev, librust-hickory-client-dev, librust-hickory-proto-dev, librust-hickory-server-dev, librust-nix-dev, librust-resolv-conf-dev, librust-signal-hook-dev, librust-strsim-dev, librust-syslog-dev, librust-termcolor-dev, librust-textwrap-dev, librust-tokio+full-dev, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cb96fa1aa7f61cde3698479bccb9f9e34319b8fb49591454b697925162ea5988 2498 aardvark-dns_1.9.0-2.dsc ca3f0b09aa1c9b3ced225b3ac09843abeba1e4467480b2c8fcf13b465c7a21f9 55061 aardvark-dns_1.9.0.orig.tar.gz 40aa8be3a2e5c59077022179c9f39b360d5b7a6c9b18c0f9f4b54c90b9a7ae36 2812 aardvark-dns_1.9.0-2.debian.tar.xz"
+    "89e578c19d9409820bc31e54685c9edd420c102604e384027cf1847775ba9df3 2719 aardvark-dns_1.12.2-1.dsc 4d140f6700003330fdddf7d4b02eb0f40351c5d8cc403a253601187f95547b90 60221 aardvark-dns_1.12.2.orig.tar.gz de6eeb16507583a6e31a9ca487bee4662ad720cfd4ca0854a138bf1ab960b25d 4732 aardvark-dns_1.12.2-1.debian.tar.xz"
   ],
   "Dgit": [
-    "c0072b352b43231f7f43cd0c3ee8024c50dcd2e6 debian archive/debian/1.9.0-2 https://git.dgit.debian.org/aardvark-dns"
+    "abcdbca9759ae0eb6ee8e9f4b8972dc7b8bb7907 debian archive/debian/1.12.2-1 https://git.dgit.debian.org/aardvark-dns"
   ],
   "Directory": [
     "pool/main/a/aardvark-dns"
   ],
   "Files": [
-    "e6bf3f6989cbe84efc996608fb5a7ce9 2498 aardvark-dns_1.9.0-2.dsc d6693dccde9d111480197fa1e7041376 55061 aardvark-dns_1.9.0.orig.tar.gz d6569f077e9e713556f013e4a10e8471 2812 aardvark-dns_1.9.0-2.debian.tar.xz"
+    "6fca95cc6a32c870b84e17f69e799acb 2719 aardvark-dns_1.12.2-1.dsc 48c518a4225b7ad53bdaedea29a63534 60221 aardvark-dns_1.12.2.orig.tar.gz a4f62cfb24519a67d3deae1a4379fb1d 4732 aardvark-dns_1.12.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "bats, bind9-dnsutils, firewalld, ipcalc, iproute2, iptables, iputils-ping, jq, ncat, netavark, nftables, slirp4netns, util-linux"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/aardvark-dns"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/aardvark-dns.git"
   ],
   "Version": [
-    "1.9.0-2"
+    "1.12.2-1"
   ]
 }
