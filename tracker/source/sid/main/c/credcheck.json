@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-credcheck"
+    "postgresql-17-credcheck"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libkrb5-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libkrb5-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "0e008d2987ad777f0ce42061655f476def46340063ccddcac11e5002a41f8e05 2027 credcheck_2.8-1.dsc ddc64b6b6b6ee5badc5948c3e699ea0f1a39f0f3e1b46d554c7509977f8a7a40 32503 credcheck_2.8.orig.tar.gz b9af62bfc46e64c975814b8069318e03acfe8f69e7c7ce9ee2e63242d9806834 2308 credcheck_2.8-1.debian.tar.xz"
+    "3b0b927e9951eed656cd6476625d8f51c0b02a019007561647129030f09b9fbd 2114 credcheck_2.8-2.dsc ddc64b6b6b6ee5badc5948c3e699ea0f1a39f0f3e1b46d554c7509977f8a7a40 32503 credcheck_2.8.orig.tar.gz f355776ecd4e457016279691ea7b30fd99e7a52bb35a5a413ad6c2224c6305f1 2380 credcheck_2.8-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/credcheck"
   ],
   "Files": [
-    "8d7600a6f0a4dfac4f280aa85516ca12 2027 credcheck_2.8-1.dsc c2938e8b82b7fc6747a6ed82355419f6 32503 credcheck_2.8.orig.tar.gz 3a4dd60bbd08beda83cc157f9a2891c3 2308 credcheck_2.8-1.debian.tar.xz"
+    "28907602be59f995e3c93913f43574f9 2114 credcheck_2.8-2.dsc c2938e8b82b7fc6747a6ed82355419f6 32503 credcheck_2.8.orig.tar.gz d02cdd8d8dccb8354dc3e8450ae81df8 2380 credcheck_2.8-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "credcheck"
   ],
   "Package-List": [
-    "postgresql-16-credcheck deb database optional arch=any"
+    "postgresql-17-credcheck deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/credcheck.git"
   ],
   "Version": [
-    "2.8-1"
+    "2.8-2"
   ]
 }

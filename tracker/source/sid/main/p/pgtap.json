@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "pgtap, pgtap-doc, postgresql-16-pgtap"
+    "pgtap, pgtap-doc, postgresql-17-pgtap"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~), libtap-parser-sourcehandler-pgtap-perl, libtext-multimarkdown-perl"
+    "debhelper-compat (= 13), libtap-parser-sourcehandler-pgtap-perl, libtext-multimarkdown-perl, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "7b2244ec94b267d7a25f1c49136815d52df5cdf4b5bda6fd716ccbbc45c11be0 2267 pgtap_1.3.3-1.dsc 325ea79d0d2515bce96bce43f6823dcd3effbd6c54cb2a4d6c2384fffa3a14c7 276924 pgtap_1.3.3.orig.tar.gz 067eab7e8a9cf20da25664e535ed600cded0a2a45dfd038c29d368e6c5e228d2 6012 pgtap_1.3.3-1.debian.tar.xz"
+    "a35fdd6e5a8614d7433f9fc6dc21e2f053915930d35815fb7e00d792c6aef9da 2307 pgtap_1.3.3-2.dsc 325ea79d0d2515bce96bce43f6823dcd3effbd6c54cb2a4d6c2384fffa3a14c7 276924 pgtap_1.3.3.orig.tar.gz 42b3d00c17235a258efed67451cbb99e4d66e6af3466744bc74d7accbf3b9077 6048 pgtap_1.3.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgtap"
   ],
   "Files": [
-    "d863ebfab0e9fb0d2bb689b2162df3e1 2267 pgtap_1.3.3-1.dsc de23b1aa05f3289531a4f4278512a40e 276924 pgtap_1.3.3.orig.tar.gz d3ff75a5184dd7f13aee03060019e502 6012 pgtap_1.3.3-1.debian.tar.xz"
+    "fe1ade9908cd3c35f67e844c81b7e3b2 2307 pgtap_1.3.3-2.dsc de23b1aa05f3289531a4f4278512a40e 276924 pgtap_1.3.3.orig.tar.gz 23981858a51a7ff249e46d949045ef2b 6048 pgtap_1.3.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgtap"
   ],
   "Package-List": [
-    "pgtap deb database optional arch=all pgtap-doc deb doc optional arch=all postgresql-16-pgtap deb database optional arch=all"
+    "pgtap deb database optional arch=all pgtap-doc deb doc optional arch=all postgresql-17-pgtap deb database optional arch=all"
   ],
   "Priority": [
     "source"
@@ -39,16 +39,16 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "libtap-parser-sourcehandler-pgtap-perl, make, patch, postgresql-contrib-16"
+    "libtap-parser-sourcehandler-pgtap-perl, make, patch, postgresql-contrib-17"
   ],
   "Uploaders": [
-    "Pierre Chifflier \u003cpollux@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e, Markus Wanner \u003cmarkus@bluegap.ch\u003e"
+    "Pierre Chifflier \u003cpollux@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e, Markus Wanner \u003cmarkus@bluegap.ch\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pgtap"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgtap.git"
   ],
   "Version": [
-    "1.3.3-1"
+    "1.3.3-2"
   ]
 }
