@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-hypopg"
+    "postgresql-17-hypopg"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "b045d08e6b82298a6bf60619459091f256a094c79a5b5db37eba1afbf6b8bcf5 1957 hypopg_1.4.1-1.dsc 9afe6357fd389d8d33fad81703038ce520b09275ec00153c6c89282bcdedd6bc 67754 hypopg_1.4.1.orig.tar.gz 8c6d96fe7e3824fbd94c6ad520d0aee3f1f1866360a08b68cbda536e33e9dddb 2592 hypopg_1.4.1-1.debian.tar.xz"
+    "9b2d46b097deeed45424e09dd4ed685bc3f48097e08585e05520e8fe13c6d3ad 2085 hypopg_1.4.1-2.dsc 9afe6357fd389d8d33fad81703038ce520b09275ec00153c6c89282bcdedd6bc 67754 hypopg_1.4.1.orig.tar.gz c8959be8b7f618670c268f3eb9869bd04c45bfcb0f2e0012de8a34a1ea7c9c40 2768 hypopg_1.4.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hypopg"
   ],
   "Files": [
-    "51f1d5ad7f300dee12daf207aff4dd20 1957 hypopg_1.4.1-1.dsc 12677e907cf743252718ffdc7f7bde71 67754 hypopg_1.4.1.orig.tar.gz 92a0a2c53fa586a607f514def91dbfae 2592 hypopg_1.4.1-1.debian.tar.xz"
+    "2dd64e159ed398326d7be29b914b0126 2085 hypopg_1.4.1-2.dsc 12677e907cf743252718ffdc7f7bde71 67754 hypopg_1.4.1.orig.tar.gz 8f9aca7cccb6ab9ebfe86989f0aee5fe 2768 hypopg_1.4.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://hypopg.readthedocs.io/"
   ],
   "Maintainer": [
-    "Julien Rouhaud \u003crjuju123@gmail.com\u003e"
+    "Debian PostgreSQL Maintainers \u003cteam+postgresql@tracker.debian.org\u003e"
   ],
   "Package": [
     "hypopg"
   ],
   "Package-List": [
-    "postgresql-16-hypopg deb database optional arch=any"
+    "postgresql-17-hypopg deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,24 +39,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-contrib-16"
+    "make, postgresql-contrib-17"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
-    "https://github.com/HypoPG/hypopg"
+    "https://salsa.debian.org/postgresql/hypopg"
   ],
   "Vcs-Git": [
-    "https://github.com/HypoPG/hypopg.git"
+    "https://salsa.debian.org/postgresql/hypopg.git"
   ],
   "Version": [
-    "1.4.1-1"
+    "1.4.1-2"
   ]
 }

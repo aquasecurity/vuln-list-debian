@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-h3"
+    "postgresql-17-h3"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.20), debhelper-compat (= 13), libh3-dev, postgresql-all (\u003e= 256~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, cmake (\u003e= 3.20), debhelper-compat (= 13), libh3-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 256~)"
   ],
   "Checksums-Sha256": [
-    "26d4f7dc54732d68f6f9ae726b8d85cde2f2b2ce8968a00ce472462d9421215c 2068 h3-pg_4.1.3-3.dsc 5c17f09a820859ffe949f847bebf1be98511fb8f1bd86f94932512c00479e324 93039 h3-pg_4.1.3.orig.tar.gz 2dbc71dc0eaac809672322412e79c41417a23049306520209f69e8bf6352edab 2620 h3-pg_4.1.3-3.debian.tar.xz"
+    "4afd0f8cf353de88f94ed816d1e85d72640bcb4b85effa9c99ff381e6a64ec31 2155 h3-pg_4.1.3-4.dsc 5c17f09a820859ffe949f847bebf1be98511fb8f1bd86f94932512c00479e324 93039 h3-pg_4.1.3.orig.tar.gz c3ec227e743975f86131d37a9fc887bd0694d998f1caef4da0121f5c8b49cc01 2844 h3-pg_4.1.3-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/h3-pg"
   ],
   "Files": [
-    "84c2855bbc86ced19269736ece1b056b 2068 h3-pg_4.1.3-3.dsc c458fa2858aab32a6abae79fb9efa45a 93039 h3-pg_4.1.3.orig.tar.gz 57f3bcddd29723d266e459aa00219b6b 2620 h3-pg_4.1.3-3.debian.tar.xz"
+    "cf15f32112e83e738edbc8ce4da875ad 2155 h3-pg_4.1.3-4.dsc c458fa2858aab32a6abae79fb9efa45a 93039 h3-pg_4.1.3.orig.tar.gz 7fdf3bb6668b61fba87bbbf91e2c1c11 2844 h3-pg_4.1.3-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "h3-pg"
   ],
   "Package-List": [
-    "postgresql-16-h3 deb database optional arch=any"
+    "postgresql-17-h3 deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, cmake, postgresql-16-postgis-3, postgresql-server-dev-16"
+    "build-essential, cmake, postgresql-17-postgis-3, postgresql-server-dev-17"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/h3-pg.git"
   ],
   "Version": [
-    "4.1.3-3"
+    "4.1.3-4"
   ]
 }
