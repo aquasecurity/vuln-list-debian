@@ -6,16 +6,22 @@
     "python3-maison"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-click \u003c!nocheck\u003e, python3-poetry-core, python3-pydantic \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
+  ],
+  "Build-Depends-Indep": [
+    "furo \u003c!nodoc\u003e, python3-click \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pydantic (\u003e= 2.0~) \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autobuild \u003c!nodoc\u003e, python3-sphinx-click \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "f5fd70b6ad89bb18e0fdb164f6eb10f06e5b808d8eec29e1693c3e7589c58699 2201 python-maison_1.4.2-1.dsc 44b401c1d21752f7260d92709f418e96f83a8807298319b7007b66f18dcd65f9 61193 python-maison_1.4.2.orig.tar.gz 979ca3adc644456dd4589a444cd9a72294fc21cccc93f27942f5ff6093ca7fdd 2628 python-maison_1.4.2-1.debian.tar.xz"
+    "9e55f21c0d6e94b9b3268cc870b8edf6206dd28fe6e904943391b1391370082b 2568 python-maison_2.0.0-2.dsc 30e050e598cd3f9b1bd0a629c68e1481eba764e97ad9332a34bbb8e98777331f 68803 python-maison_2.0.0.orig.tar.gz 2d51e03fdf79560480beb2ca31ce82c2843350ed56006634bb260a12afb74f20 3520 python-maison_2.0.0-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "875d918905355355a62707c65fd7b7d4799343c5 debian archive/debian/2.0.0-2 https://git.dgit.debian.org/python-maison"
   ],
   "Directory": [
     "pool/main/p/python-maison"
   ],
   "Files": [
-    "cf8722dc41544f530975b5837bc312b5 2201 python-maison_1.4.2-1.dsc 601534d9bbe6bdeebb879a29c240e181 61193 python-maison_1.4.2.orig.tar.gz 4a4800b610ee3dc80b3bf03b4013e12a 2628 python-maison_1.4.2-1.debian.tar.xz"
+    "2086140650fd499c0d733d43b84841d3 2568 python-maison_2.0.0-2.dsc f13ea57c07154c811a727b8e9ac094eb 68803 python-maison_2.0.0.orig.tar.gz f0bce12b776bc78bba70b1bd662a078d 3520 python-maison_2.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +45,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "python3-all, python3-pydantic, python3-pytest"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-maison"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/python-team/packages/python-maison.git"
   ],
   "Version": [
-    "1.4.2-1"
+    "2.0.0-2"
   ]
 }

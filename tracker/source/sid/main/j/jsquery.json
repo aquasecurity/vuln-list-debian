@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-jsquery"
+    "postgresql-17-jsquery"
   ],
   "Build-Depends": [
-    "bison, debhelper-compat (= 13), flex, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, bison, debhelper-compat (= 13), flex, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "d473fab2404e8f086b70d01cf283604056db9cd35a364be4f1e368eec44f5c65 2004 jsquery_1.2-1.dsc a5cd7dbb475ba9974f832fa01d4867febd703d23a9284ef6b162cd1c2f8e6bc5 112451 jsquery_1.2.orig.tar.gz bddbd896b4a6883721be21dc25acbf1356219badd7e8b914ded6b9bb89aaada3 2524 jsquery_1.2-1.debian.tar.xz"
+    "17d0e871dc1f94d2d6e630fdd47ee7f5c5fcb2086c41ab69ca375c55dfacd021 2093 jsquery_1.2-2.dsc a5cd7dbb475ba9974f832fa01d4867febd703d23a9284ef6b162cd1c2f8e6bc5 112451 jsquery_1.2.orig.tar.gz d5b208b6b7b28e5a657b168b6dc382eb077525467f4095634aba04f3d6111e17 2636 jsquery_1.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jsquery"
   ],
   "Files": [
-    "8d383282fb315c8c9d12012883befd71 2004 jsquery_1.2-1.dsc 07ebfc5e29ce263063a92eca2fae2732 112451 jsquery_1.2.orig.tar.gz 8c0bc761e7e0e3ba3c769609ec6d3d14 2524 jsquery_1.2-1.debian.tar.xz"
+    "79a417454b5026f69ccd653cfea8661d 2093 jsquery_1.2-2.dsc 07ebfc5e29ce263063a92eca2fae2732 112451 jsquery_1.2.orig.tar.gz c8f9a5bb5021cceeaeabeb60e8cb7424 2636 jsquery_1.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "jsquery"
   ],
   "Package-List": [
-    "postgresql-16-jsquery deb database optional arch=any"
+    "postgresql-17-jsquery deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/jsquery"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/jsquery.git"
   ],
   "Version": [
-    "1.2-1"
+    "1.2-2"
   ]
 }
