@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pg-failover-slots"
+    "postgresql-17-pg-failover-slots"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~), libkrb5-dev"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libkrb5-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "cdd2e7f1994b08e2e6f75c8e6d1fb9cbd07217a1150b6870f0d6c825ddf61c25 2199 pg-failover-slots_1.1.0-1.dsc e0ab5b794f35d8aea863ed8399a5978aff0641a0ab60779f28553e80b0e0e968 19251 pg-failover-slots_1.1.0.orig.tar.gz 1eaa84fa49b7c167abe138b296e3334e3e454b1b15cf0ea8bc070f405d2cf38e 3064 pg-failover-slots_1.1.0-1.debian.tar.xz"
+    "56ad5827981c1c2123a48cb776a51f0ff39538bb1f0ead8afbd17a2ef077b99c 2278 pg-failover-slots_1.1.0-2.dsc e0ab5b794f35d8aea863ed8399a5978aff0641a0ab60779f28553e80b0e0e968 19251 pg-failover-slots_1.1.0.orig.tar.gz 4e74ebd213d54948bb1a3ef27e4ec4b2dac1d8ffd6cc2d69b1aa391600bb01a5 3180 pg-failover-slots_1.1.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-failover-slots"
   ],
   "Files": [
-    "b8664fb928a983f3bf67f95a4d098c87 2199 pg-failover-slots_1.1.0-1.dsc c97f82babbce909fb9199606311e706e 19251 pg-failover-slots_1.1.0.orig.tar.gz 50f88a68cdb3f82f9053ff2630f96bb2 3064 pg-failover-slots_1.1.0-1.debian.tar.xz"
+    "42ce2a5971ddf6d80d6f273d6036cdac 2278 pg-failover-slots_1.1.0-2.dsc c97f82babbce909fb9199606311e706e 19251 pg-failover-slots_1.1.0.orig.tar.gz 1d5d33e2db59b7455864e4ffde6afb4d 3180 pg-failover-slots_1.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-failover-slots"
   ],
   "Package-List": [
-    "postgresql-16-pg-failover-slots deb database optional arch=any"
+    "postgresql-17-pg-failover-slots deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "libipc-run-perl, libtap-parser-sourcehandler-pgtap-perl, make"
   ],
   "Uploaders": [
-    "Marco Nenciarini \u003cmnencia@debian.org\u003e"
+    "Marco Nenciarini \u003cmnencia@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-failover-slots"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-failover-slots.git"
   ],
   "Version": [
-    "1.1.0-1"
+    "1.1.0-2"
   ]
 }

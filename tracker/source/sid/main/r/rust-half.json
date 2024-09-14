@@ -6,16 +6,16 @@
     "librust-half-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-crunchy-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f4e51a3ea1368df90c8d5fa839d0e0e2906b9cf8f5d2dfe3a75a67107756bda1 2243 rust-half_1.8.2-4.dsc eabb4a44450da02c90444cf74558da904edde8fb4e9035a9a6a4e15445af0bd7 41874 rust-half_1.8.2.orig.tar.gz 025567ecaed1042d620ebe05a974f78b693d4e44728920fbb404683030ac7593 4464 rust-half_1.8.2-4.debian.tar.xz"
+    "e54b42a3e515b8e2f9a6908a7cc211730a3096d4675889a8449b6d264d3b055e 2381 rust-half_2.4.1-1.dsc 6dd08c532ae367adf81c312a4580bc67f1d0fe8bc9c460520283f4c0ff277888 50892 rust-half_2.4.1.orig.tar.gz a27bf8c8a735524538c7fffb47b225d8f974ba7b2735497b0a4f7a0deff029c2 4080 rust-half_2.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-half"
   ],
   "Files": [
-    "c50e036c16b9c8bd15eef7bae0b2cf91 2243 rust-half_1.8.2-4.dsc fea840ce07a32bdace46c59c41362f3b 41874 rust-half_1.8.2.orig.tar.gz 94c28e4bc4077e69cad93e9432f76fe7 4464 rust-half_1.8.2-4.debian.tar.xz"
+    "806e41dc3b4509da74728c92694416c1 2381 rust-half_2.4.1-1.dsc 704678dbf71dfc4800fa39d9e8a42ce0 50892 rust-half_2.4.1.orig.tar.gz 6719126ca513fe211d72ac33931d8654 4080 rust-half_2.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.4+default-dev, librust-crunchy-0.2+default-dev, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, librust-rand-0.8+default-dev"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/half]"
   ],
   "Version": [
-    "1.8.2-4"
+    "2.4.1-1"
   ]
 }
