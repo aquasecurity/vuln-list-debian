@@ -1,27 +1,30 @@
 {
   "Architecture": [
-    "any"
+    "all amd64 arm64 mips64el ppc64el riscv64 alpha hurd-amd64 loong64"
   ],
   "Binary": [
-    "python3-msgspec"
+    "python-msgspec-doc, python3-msgspec"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libpython3-all-dev, python3-all-dev:any, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, libpython3-all-dev, pybuild-plugin-pyproject, python3-all, python3-pytest \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "furo \u003c!nodoc\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-ipython \u003c!nodoc\u003e, python-attr-doc \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "421ee627544ffa342cb3f477e5499f47cfac3da4fe14d708a32c41d965f9d600 2125 python-msgspec_0.18.6-1.dsc f9a370ff1ad2832e0b0be003b598419b11c40f95b3af5fe3c05a44f4ad4d4f2d 216454 python-msgspec_0.18.6.orig.tar.gz a560778a93d637a61e39c7fc2067326a7c114ed72c865679eb9179d7448a54a8 3416 python-msgspec_0.18.6-1.debian.tar.xz"
+    "a46346311b994e69471217bfa9a83577f3c0417aa2449fdd738c4b1c595c7be5 2684 python-msgspec_0.18.6+1-6.dsc 5bff8c3f9303eb589516e02de4141ce31be09a0fdf4980734b020b64c120295e 1311867 python-msgspec_0.18.6+1.orig.tar.gz 26782c796d3fe70908480ea281af212bdc051053e83fb6a02b9e47dd2d03290b 249816 python-msgspec_0.18.6+1-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-msgspec"
   ],
   "Files": [
-    "c3716347dda33925ab8bd87f770986ef 2125 python-msgspec_0.18.6-1.dsc d0fea789fc4f1bf430cdd1ee876f23e2 216454 python-msgspec_0.18.6.orig.tar.gz e69a1b669e6024ee867456dcde0ee060 3416 python-msgspec_0.18.6-1.debian.tar.xz"
+    "8e6d206ff546a16d6db5ea2e3939ac80 2684 python-msgspec_0.18.6+1-6.dsc a3e4d236f6cc238b2d65f82fd44c3423 1311867 python-msgspec_0.18.6+1.orig.tar.gz e302654c9b47a39b5320c1fd3d1c6a04 249816 python-msgspec_0.18.6+1-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://jcristharif.com/msgspec/"
+    "https://github.com/jcrist/msgspec"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -30,7 +33,7 @@
     "python-msgspec"
   ],
   "Package-List": [
-    "python3-msgspec deb python optional arch=any"
+    "python-msgspec-doc deb doc optional arch=all python3-msgspec deb python optional arch=amd64,arm64,mips64el,ppc64el,riscv64,alpha,hurd-amd64,loong64"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2.0"
+    "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
-    "Stein Magnus Jodal \u003cjodal@debian.org\u003e"
+    "Stein Magnus Jodal \u003cjodal@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-msgspec"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-msgspec.git"
   ],
   "Version": [
-    "0.18.6-1"
+    "0.18.6+1-6"
   ]
 }

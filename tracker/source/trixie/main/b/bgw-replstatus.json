@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-bgw-replstatus"
+    "postgresql-17-bgw-replstatus"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), netcat-openbsd, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), netcat-openbsd, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "d0e29f78597b9ef65f3f888b036e2518d3cb2bcbfc195fe5a8d9dc26598543e5 2139 bgw-replstatus_1.0.7-2.dsc dca4e5bfe4eb4769dc7b8b47abac6a8c29c50b769812624414fadbdb5e8d0d9a 6353 bgw-replstatus_1.0.7.orig.tar.gz e016e0303e8e8f4615a06d0c975149c83ba031a1cb35e508d7da3914c64ebffa 2576 bgw-replstatus_1.0.7-2.debian.tar.xz"
+    "548b4b62a5ccef373f01be16d66510e6a553ce339b1e93c7f93822ce393b3875 2227 bgw-replstatus_1.0.7-3.dsc dca4e5bfe4eb4769dc7b8b47abac6a8c29c50b769812624414fadbdb5e8d0d9a 6353 bgw-replstatus_1.0.7.orig.tar.gz eaacdff7d0dec6f4d72026cf58ad49ac0a7dc7613f5e5dc143396ddea8bf2642 2644 bgw-replstatus_1.0.7-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/bgw-replstatus"
   ],
   "Files": [
-    "c1f11e5b31f3fe87805050c55f837051 2139 bgw-replstatus_1.0.7-2.dsc ed3e5d3a7558c7d87b039a930a144255 6353 bgw-replstatus_1.0.7.orig.tar.gz 11d29b195cc43e62e7e892c5c5c6faa3 2576 bgw-replstatus_1.0.7-2.debian.tar.xz"
+    "b1429374328830ad80c14f739e8c76bd 2227 bgw-replstatus_1.0.7-3.dsc ed3e5d3a7558c7d87b039a930a144255 6353 bgw-replstatus_1.0.7.orig.tar.gz 2b4feb589a84baa27cf9141471550952 2644 bgw-replstatus_1.0.7-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "bgw-replstatus"
   ],
   "Package-List": [
-    "postgresql-16-bgw-replstatus deb database optional arch=any"
+    "postgresql-17-bgw-replstatus deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://github.com/mhagander/bgw_replstatus.git"
   ],
   "Version": [
-    "1.0.7-2"
+    "1.0.7-3"
   ]
 }
