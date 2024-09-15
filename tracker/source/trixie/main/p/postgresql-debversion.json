@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-debversion"
+    "postgresql-17-debversion"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libapt-pkg-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libapt-pkg-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "be7fe410967c6416a4745686f160ce229ac3026a499982c115d5698269e79630 2207 postgresql-debversion_1.1.2-3.dsc a3126b23dad788e64195eab8e691c9ad39496e4ebf1d540023c8338fda628aab 20225 postgresql-debversion_1.1.2.orig.tar.bz2 ecf2209882022f9a40d399071ea571090e236e51a4cb69b68153da005e7938fd 4356 postgresql-debversion_1.1.2-3.debian.tar.xz"
+    "c3b0dff698a2bb2b7a9213885f4fe2350aa9eb94e82c98c05b3b0183ee788d79 2286 postgresql-debversion_1.2.0-1.dsc 56a63c794755a0111f5dc06ebd8ff07d4d08f9ed61454be0637e1eae8c999283 20452 postgresql-debversion_1.2.0.orig.tar.bz2 21623d4f92dac66a5a18e7b6947021c5829bc6d97984767e902e7cad5ef4dea1 4272 postgresql-debversion_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-debversion"
   ],
   "Files": [
-    "c12cccf4f0dfe9bd204fb402281dd636 2207 postgresql-debversion_1.1.2-3.dsc a5162cac58625762b4bf3ff28d2d9146 20225 postgresql-debversion_1.1.2.orig.tar.bz2 841352af2c7e6d92d53dd84f33290939 4356 postgresql-debversion_1.1.2-3.debian.tar.xz"
+    "5cfa200b24c85d85ecb3cbb5decc0613 2286 postgresql-debversion_1.2.0-1.dsc 119b9b7dcf63093247cb1d10a3318d53 20452 postgresql-debversion_1.2.0.orig.tar.bz2 edf4a291cfb9c42141f2094be256a51c 4272 postgresql-debversion_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-debversion"
   ],
   "Package-List": [
-    "postgresql-16-debversion deb database optional arch=any"
+    "postgresql-17-debversion deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Michael Banck \u003cmbanck@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e"
+    "Michael Banck \u003cmbanck@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/postgresql-debversion"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-debversion.git"
   ],
   "Version": [
-    "1.1.2-3"
+    "1.2.0-1"
   ]
 }
