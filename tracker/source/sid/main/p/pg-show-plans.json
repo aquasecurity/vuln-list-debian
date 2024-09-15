@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-show-plans"
+    "postgresql-17-show-plans"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "b9bc69d3b5059b34bf0c734e71679f241922fa61b893ebf4412c187dd135dc91 2058 pg-show-plans_2.1.2-1.dsc fb8a23163e7f95adda919c45cb86537ea47a3489244b7c44980164b790ec625d 13458 pg-show-plans_2.1.2.orig.tar.gz 07acdc3996c5c14347432afe0599ff9df129a57202b4838ce9cb7e2f053b5b65 2100 pg-show-plans_2.1.2-1.debian.tar.xz"
+    "6c7d602be7385529754666deb883304a68ea0c9e9d31d93bacd58633c4e32dfd 2155 pg-show-plans_2.1.2-2.dsc fb8a23163e7f95adda919c45cb86537ea47a3489244b7c44980164b790ec625d 13458 pg-show-plans_2.1.2.orig.tar.gz 28a101a7e72b14093301ee582b377e3070cc225989165f1e16a32ee32ee4498b 2196 pg-show-plans_2.1.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-show-plans"
   ],
   "Files": [
-    "16c83556027c8032693fadfa222287ad 2058 pg-show-plans_2.1.2-1.dsc f3c3fb4698c16bcd64b157fa7b664dec 13458 pg-show-plans_2.1.2.orig.tar.gz 5a5489816bc544f519a59a32393e12a0 2100 pg-show-plans_2.1.2-1.debian.tar.xz"
+    "5024f9514b747d3e9331517dd6f1068b 2155 pg-show-plans_2.1.2-2.dsc f3c3fb4698c16bcd64b157fa7b664dec 13458 pg-show-plans_2.1.2.orig.tar.gz 3a4c193d9275c2641a3bf969c9262b8c 2196 pg-show-plans_2.1.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/cybertec-postgresql/pg_show_plans"
   ],
   "Maintainer": [
-    "CYBERTEC PostgreSQL \u003coffice@cybertec.at\u003e"
+    "Debian PostgreSQL Maintainers \u003cteam+postgresql@tracker.debian.org\u003e"
   ],
   "Package": [
     "pg-show-plans"
   ],
   "Package-List": [
-    "postgresql-16-show-plans deb database optional arch=any"
+    "postgresql-17-show-plans deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -51,12 +51,12 @@
     "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
-    "https://github.com/cybertec-postgresql/pg_show_plans"
+    "https://salsa.debian.org/postgresql/pg-show-plans"
   ],
   "Vcs-Git": [
-    "https://github.com/cybertec-postgresql/pg_show_plans.git"
+    "https://salsa.debian.org/postgresql/pg-show-plans.git"
   ],
   "Version": [
-    "2.1.2-1"
+    "2.1.2-2"
   ]
 }

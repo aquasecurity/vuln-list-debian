@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pgextwlist"
+    "postgresql-17-pgextwlist"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 219~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "3f89ba31b1357d49eab2d48d067e2ce693634065c0c59c280fb3692a23235ae8 2066 pgextwlist_1.17-2.dsc 183eae8b80e61431f0950b29a2552dd20ceebc9cb63f8fe40e48c84d6e6c033b 19234 pgextwlist_1.17.orig.tar.gz c2f3a5e577b21e30488e2e9ec14b984742692707abe29d901e2a7f30ccecea89 3148 pgextwlist_1.17-2.debian.tar.xz"
+    "2f2daf55be7c685376d8fefa020ee908aed3f2d6a19c2ab4bb988b5ca4d024dd 2143 pgextwlist_1.17-3.dsc 183eae8b80e61431f0950b29a2552dd20ceebc9cb63f8fe40e48c84d6e6c033b 19234 pgextwlist_1.17.orig.tar.gz 290a66f85cc626a04281c0009145bead7983eda3768fcd4d5a250e8c43a43ef1 3272 pgextwlist_1.17-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgextwlist"
   ],
   "Files": [
-    "c27c58371a4a8c5f33585cdb0f71c263 2066 pgextwlist_1.17-2.dsc 77e52bd69764a2e17f27c5a486ced5b1 19234 pgextwlist_1.17.orig.tar.gz 8b69a20bdbdaf6f2927db905c54f687b 3148 pgextwlist_1.17-2.debian.tar.xz"
+    "15eb4dea34d59dcc93f9f4883e462138 2143 pgextwlist_1.17-3.dsc 77e52bd69764a2e17f27c5a486ced5b1 19234 pgextwlist_1.17.orig.tar.gz e060ac01b9599bb8a2b470b1f86fa244 3272 pgextwlist_1.17-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgextwlist"
   ],
   "Package-List": [
-    "postgresql-16-pgextwlist deb libs optional arch=any"
+    "postgresql-17-pgextwlist deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-contrib-16"
+    "make, postgresql-contrib-17"
   ],
   "Uploaders": [
     "Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://github.com/dimitri/pgextwlist.git"
   ],
   "Version": [
-    "1.17-2"
+    "1.17-3"
   ]
 }

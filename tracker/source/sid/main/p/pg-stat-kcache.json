@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pg-stat-kcache"
+    "postgresql-17-pg-stat-kcache"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "270526a1ff975c5923dea3c11d6dce5dadc4c11ef745145d46865993ab121791 2003 pg-stat-kcache_2.2.3-1.dsc a58032deb0267e6b6648120cd62f1baa10c2b9e97b2728ff7c99b2ebaac9ffb4 23508 pg-stat-kcache_2.2.3.orig.tar.gz 52225a07ec6d45871189d5290085a679a8387ad331f1f1c3b5bdbc2fc1c31e76 2484 pg-stat-kcache_2.2.3-1.debian.tar.xz"
+    "76dd98c4936bd252cdf31cf1ce86d166fe45671fb348e46303169d584977077f 2157 pg-stat-kcache_2.2.3-2.dsc a58032deb0267e6b6648120cd62f1baa10c2b9e97b2728ff7c99b2ebaac9ffb4 23508 pg-stat-kcache_2.2.3.orig.tar.gz 2bafef2dd7ea9f27c71dbd9cf4910cf82dd49253169b28a7690590788ec6b61c 3280 pg-stat-kcache_2.2.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-stat-kcache"
   ],
   "Files": [
-    "81342dfc7cd548a9231558dc7d48e636 2003 pg-stat-kcache_2.2.3-1.dsc 04f68136a1f015c9c9c9dd3eee6ffcb2 23508 pg-stat-kcache_2.2.3.orig.tar.gz 4ba8d9a210dc0432287b815ddd15538c 2484 pg-stat-kcache_2.2.3-1.debian.tar.xz"
+    "52f498d998af177a528fc51d7e400a2f 2157 pg-stat-kcache_2.2.3-2.dsc 04f68136a1f015c9c9c9dd3eee6ffcb2 23508 pg-stat-kcache_2.2.3.orig.tar.gz 133fade43016c0ae1add56916de97495 3280 pg-stat-kcache_2.2.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://powa.readthedocs.io/"
   ],
   "Maintainer": [
-    "Julien Rouhaud \u003crjuju123@gmail.com\u003e"
+    "Debian PostgreSQL Maintainers \u003cteam+postgresql@tracker.debian.org\u003e"
   ],
   "Package": [
     "pg-stat-kcache"
   ],
   "Package-List": [
-    "postgresql-16-pg-stat-kcache deb database optional arch=any"
+    "postgresql-17-pg-stat-kcache deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-contrib-16"
+    "make, postgresql-contrib-17"
+  ],
+  "Uploaders": [
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/powa-team/pg_stat_kcache"
@@ -54,6 +57,6 @@
     "https://github.com/powa-team/pg_stat_kcache.git"
   ],
   "Version": [
-    "2.2.3-1"
+    "2.2.3-2"
   ]
 }

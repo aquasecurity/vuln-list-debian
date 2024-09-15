@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pgfincore"
+    "postgresql-17-pgfincore"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "f157318ac217140708ea3b015ef517986c099989d0e33bf0e2b7ff828f872b27 2100 pgfincore_1.3.1-1.dsc 4163ed8d3095cf9b73255c2c4ac84238527ad087eefddfd9923a43a6f64bf184 18248 pgfincore_1.3.1.orig.tar.gz e89f5867107dc8d10244691eb4641c3250b912f53ce3c71a866241667c176fea 2892 pgfincore_1.3.1-1.debian.tar.xz"
+    "6bef8ada095ca533479f595163725df1180043cccf6c44052d5235c7b49be507 2179 pgfincore_1.3.1-2.dsc 4163ed8d3095cf9b73255c2c4ac84238527ad087eefddfd9923a43a6f64bf184 18248 pgfincore_1.3.1.orig.tar.gz 41910f3d1a331ab1fd0fe1e242c885480c108f5fc15dc03b0f06f8c61969355e 2972 pgfincore_1.3.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgfincore"
   ],
   "Files": [
-    "c67f9ee4b198a380437793ccf8934367 2100 pgfincore_1.3.1-1.dsc 55e9063a5a1d24d1abc4c9c935c7b3c5 18248 pgfincore_1.3.1.orig.tar.gz ea57b972f02b9c0c93bae8d63afdad68 2892 pgfincore_1.3.1-1.debian.tar.xz"
+    "bb5cb314a95f8fa4398a79fb527e2085 2179 pgfincore_1.3.1-2.dsc 55e9063a5a1d24d1abc4c9c935c7b3c5 18248 pgfincore_1.3.1.orig.tar.gz 68a330a8460739d327c23d3dc540ec7d 2972 pgfincore_1.3.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgfincore"
   ],
   "Package-List": [
-    "postgresql-16-pgfincore deb database optional arch=any"
+    "postgresql-17-pgfincore deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Cédric Villemain \u003ccedric@villemain.org\u003e, Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e"
+    "Cédric Villemain \u003ccedric@villemain.org\u003e, Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "http://git.postgresql.org/gitweb/?p=pgfincore.git"
@@ -57,6 +57,6 @@
     "git://git.postgresql.org/git/pgfincore.git"
   ],
   "Version": [
-    "1.3.1-1"
+    "1.3.1-2"
   ]
 }

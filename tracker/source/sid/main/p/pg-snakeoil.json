@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-snakeoil"
+    "postgresql-17-snakeoil"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libclamav-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libclamav-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "081186bb6f675b11f9e63eecf3bcc16a0c0fdf8a92a8c1f792cf9b4593d39c67 2020 pg-snakeoil_1.4-1.dsc d314b6fdf637709d34848a0e88533017091996fece4705559b4a7d81dec285bc 121835 pg-snakeoil_1.4.orig.tar.gz 13828965bfefa3dfb0ee2296fe09966fa1ec7026bf1683cdc3c7f82f9ccbd4e4 2352 pg-snakeoil_1.4-1.debian.tar.xz"
+    "a3bda4cd4f63c2d7bc03ce53aff33ca75e8a3d1ebcd9490bb1085d3b65d499b0 2099 pg-snakeoil_1.4-2.dsc d314b6fdf637709d34848a0e88533017091996fece4705559b4a7d81dec285bc 121835 pg-snakeoil_1.4.orig.tar.gz c6257d658c878c7b064c76e189711bad33060f114df704539a850d3bb8fd3be4 2420 pg-snakeoil_1.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-snakeoil"
   ],
   "Files": [
-    "2b1d5d1f8f5d439a78948c4fca61d4ab 2020 pg-snakeoil_1.4-1.dsc 45040a11ff351d0c4053e145b5080120 121835 pg-snakeoil_1.4.orig.tar.gz 9e682e0bf685a1dad58015e03b93ea9d 2352 pg-snakeoil_1.4-1.debian.tar.xz"
+    "c213bef1a96ad627e069daaa6a5d0179 2099 pg-snakeoil_1.4-2.dsc 45040a11ff351d0c4053e145b5080120 121835 pg-snakeoil_1.4.orig.tar.gz e32afe04ae7170873c047ca460a4bcac 2420 pg-snakeoil_1.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-snakeoil"
   ],
   "Package-List": [
-    "postgresql-16-snakeoil deb database optional arch=any"
+    "postgresql-17-snakeoil deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/df7cb/pg_snakeoil"
@@ -57,6 +57,6 @@
     "https://github.com/df7cb/pg_snakeoil.git"
   ],
   "Version": [
-    "1.4-1"
+    "1.4-2"
   ]
 }

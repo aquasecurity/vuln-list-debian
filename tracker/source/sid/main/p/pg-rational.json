@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-rational"
+    "postgresql-17-rational"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "5d38e762be0ae038ed86cbaf9697074bb31573b8c91032164b2f98af6d61821a 2041 pg-rational_0.0.2-6.dsc 49f123c05d6ee04ce66474e2656ffc21ae1642e317dcd7e4e357d41903c497eb 10776 pg-rational_0.0.2.orig.tar.gz 7a73661987b1eb6a262b3fa1dbf327486fa247f4130569eb7709936812d1f3d1 2824 pg-rational_0.0.2-6.debian.tar.xz"
+    "7658d713eb1f2839d1ba4a7bb78a662ad7ca568bc91cdbaa9d42ac0d1c8fec97 2120 pg-rational_0.0.2-7.dsc 49f123c05d6ee04ce66474e2656ffc21ae1642e317dcd7e4e357d41903c497eb 10776 pg-rational_0.0.2.orig.tar.gz ee809e4e6ef130e944082ec26e44040b0df5937ed47f10515005eb3bc0e1642e 2900 pg-rational_0.0.2-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-rational"
   ],
   "Files": [
-    "f5c82fef64a91e1384e6c3e4e4217ae5 2041 pg-rational_0.0.2-6.dsc e4c5b4c1e5576ce9ce7486b37879bc9b 10776 pg-rational_0.0.2.orig.tar.gz 39d84ca93f9156a7816f8f90dbe2d26f 2824 pg-rational_0.0.2-6.debian.tar.xz"
+    "8223828a86929b12ea9b5cc429f3a908 2120 pg-rational_0.0.2-7.dsc e4c5b4c1e5576ce9ce7486b37879bc9b 10776 pg-rational_0.0.2.orig.tar.gz 2edfba7728af70d2113daf0f0f6323af 2900 pg-rational_0.0.2-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-rational"
   ],
   "Package-List": [
-    "postgresql-16-rational deb database optional arch=any"
+    "postgresql-17-rational deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-rational"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-rational.git"
   ],
   "Version": [
-    "0.0.2-6"
+    "0.0.2-7"
   ]
 }

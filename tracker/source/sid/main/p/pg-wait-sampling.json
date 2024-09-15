@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pg-wait-sampling"
+    "postgresql-17-pg-wait-sampling"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "41e98c210e69a885944fc296eff5ea0e0575e1831243efebec7c4972a75b81a2 2112 pg-wait-sampling_1.1.6-1.dsc c0dbe4af85b64aef5af2cb57126cf8a3959a8931f1fbab9bb11caa8ad1369fd7 17912 pg-wait-sampling_1.1.6.orig.tar.gz 721f9769cd32cc0c71213083a3671ce84e82f4b7a2f9274288e4f821e4c5ec40 2280 pg-wait-sampling_1.1.6-1.debian.tar.xz"
+    "7e376c9de4bbe2653c6f19cd0254f72285c68f25c56b4116cd5cc2a3d0549a10 2189 pg-wait-sampling_1.1.6-2.dsc c0dbe4af85b64aef5af2cb57126cf8a3959a8931f1fbab9bb11caa8ad1369fd7 17912 pg-wait-sampling_1.1.6.orig.tar.gz fcf59a8c99f91cad5010f39673b3bbbfb7ed23b4a3efd25b30143521b0a63357 2364 pg-wait-sampling_1.1.6-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-wait-sampling"
   ],
   "Files": [
-    "c5b0ff1875e78075a919336c180728f4 2112 pg-wait-sampling_1.1.6-1.dsc d1b3ba66082bb7a0bd007dda5a1ce790 17912 pg-wait-sampling_1.1.6.orig.tar.gz c7bdfb3c7345800ea391d30878626a75 2280 pg-wait-sampling_1.1.6-1.debian.tar.xz"
+    "1d0d47d4d3288b9b836fffb33185f898 2189 pg-wait-sampling_1.1.6-2.dsc d1b3ba66082bb7a0bd007dda5a1ce790 17912 pg-wait-sampling_1.1.6.orig.tar.gz 6442b9c44d700800f72f9842405b60d3 2364 pg-wait-sampling_1.1.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-wait-sampling"
   ],
   "Package-List": [
-    "postgresql-16-pg-wait-sampling deb database optional arch=any"
+    "postgresql-17-pg-wait-sampling deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-wait-sampling.git"
   ],
   "Version": [
-    "1.1.6-1"
+    "1.1.6-2"
   ]
 }
