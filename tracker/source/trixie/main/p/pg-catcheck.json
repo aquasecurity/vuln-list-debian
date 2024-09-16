@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pg-catcheck"
+    "postgresql-17-pg-catcheck"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "d1faca6e4149431f9b64a55095c92b59ab382c1ac114be1dddc27284ac1e3f89 2061 pg-catcheck_1.4.0-1.dsc 31a9c70c259ab979acf01bfd5707852e0e704d8ec53deab8a0ec62e10ea7aba0 33015 pg-catcheck_1.4.0.orig.tar.gz 6e85b89a114a8a78768555086a00d86001c7d83e325a706f357da4283ffda152 2924 pg-catcheck_1.4.0-1.debian.tar.xz"
+    "220da02d751b77790d97a97abd77a6eb1bdf33df42845d21563c7146958a83c1 2140 pg-catcheck_1.4.0-2.dsc 31a9c70c259ab979acf01bfd5707852e0e704d8ec53deab8a0ec62e10ea7aba0 33015 pg-catcheck_1.4.0.orig.tar.gz 777f4bdabce364e8ca98d080ab8eb90cc6a70c79faadf6adb9c86b3a85ac1ff2 3088 pg-catcheck_1.4.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-catcheck"
   ],
   "Files": [
-    "dd84b6ac850572e6f62f9172eceb3505 2061 pg-catcheck_1.4.0-1.dsc da1b2ca89170238a23c268c8a26dcb15 33015 pg-catcheck_1.4.0.orig.tar.gz 81176b9f392f67ae66bc08db84b631cc 2924 pg-catcheck_1.4.0-1.debian.tar.xz"
+    "d19b5fca62c4e8043addef4c8716011b 2140 pg-catcheck_1.4.0-2.dsc da1b2ca89170238a23c268c8a26dcb15 33015 pg-catcheck_1.4.0.orig.tar.gz 0933b6fe1a051b03179514c5701bfd94 3088 pg-catcheck_1.4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-catcheck"
   ],
   "Package-List": [
-    "postgresql-16-pg-catcheck deb database optional arch=any"
+    "postgresql-17-pg-catcheck deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Michael Banck \u003cmichael.banck@credativ.de\u003e"
+    "Michael Banck \u003cmichael.banck@credativ.de\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-catcheck"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-catcheck.git"
   ],
   "Version": [
-    "1.4.0-1"
+    "1.4.0-2"
   ]
 }

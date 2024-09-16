@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-dirtyread"
+    "postgresql-17-dirtyread"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "0aaf633cdb4a178997aa219427dbf6f5bdf991125e46a2dd6e4928c6a70bf6a7 1966 pg-dirtyread_2.7-1.dsc c14983d7a0da70a0568ddb81dd9bade4f5db3fbb2fb664e3c553ffa37721344e 21879 pg-dirtyread_2.7.orig.tar.gz 69abfc1e895d729938a1c6c5deb8feaf366841dcb15143e63c9eeac774fd7cc4 2916 pg-dirtyread_2.7-1.debian.tar.xz"
+    "cc9e41fe25c8a3c3994fe45f6a4761fb815f204b14d1691b0e1bf992155647ad 2045 pg-dirtyread_2.7-2.dsc c14983d7a0da70a0568ddb81dd9bade4f5db3fbb2fb664e3c553ffa37721344e 21879 pg-dirtyread_2.7.orig.tar.gz 71be1f83afd3c91edf9a7b107f6af0bf1e344ae7bf09efa5a3f83be35036f544 2984 pg-dirtyread_2.7-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-dirtyread"
   ],
   "Files": [
-    "f4a85a9b7fa31a77e4b95c937c842b6a 1966 pg-dirtyread_2.7-1.dsc 68d424212e337f5994c303ff52e8cd87 21879 pg-dirtyread_2.7.orig.tar.gz f60eba1aad24e781507b239195486666 2916 pg-dirtyread_2.7-1.debian.tar.xz"
+    "ac2de01d2d17fd0493e3b069cfd7e92b 2045 pg-dirtyread_2.7-2.dsc 68d424212e337f5994c303ff52e8cd87 21879 pg-dirtyread_2.7.orig.tar.gz 6d883bcace85be383cee2420e4209987 2984 pg-dirtyread_2.7-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "pg-dirtyread"
   ],
   "Package-List": [
-    "postgresql-16-dirtyread deb database optional arch=any"
+    "postgresql-17-dirtyread deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,7 +36,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -45,7 +45,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/df7cb/pg_dirtyread"
@@ -54,6 +54,6 @@
     "https://github.com/df7cb/pg_dirtyread.git"
   ],
   "Version": [
-    "2.7-1"
+    "2.7-2"
   ]
 }
