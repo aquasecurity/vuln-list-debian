@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "rtpengine-daemon, rtpengine-recording-daemon, rtpengine-iptables, rtpengine, rtpengine-kernel-dkms, rtpengine-utils, rtpengine-perftest, rtpengine-perftest-data"
+    "rtpengine-daemon, rtpengine-recording-daemon, rtpengine, rtpengine-kernel-dkms, rtpengine-utils, rtpengine-perftest, rtpengine-perftest-data"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-libmysqlclient-dev, dh-sequence-dkms, discount, gperf, libavcodec-dev (\u003e= 6:10), libavfilter-dev (\u003e= 6:10), libavformat-dev (\u003e= 6:10), libavutil-dev (\u003e= 6:10), libbcg729-dev \u003c!pkg.rtpengine.nobcg729\u003e, libbencode-perl, libcrypt-openssl-rsa-perl, libcrypt-rijndael-perl, libcurl4-openssl-dev | libcurl4-gnutls-dev, libdigest-crc-perl, libdigest-hmac-perl, libevent-dev (\u003e= 2.0), libglib2.0-dev (\u003e= 2.40), libhiredis-dev, libio-multiplex-perl, libio-socket-inet6-perl, libio-socket-ip-perl, libiptc-dev, libjson-glib-dev, libjson-perl, libmosquitto-dev, libncurses-dev, libnet-interface-perl, libopus-dev, libpcap0.8-dev, libpcre2-dev, libsocket6-perl, libspandsp-dev, libssl-dev (\u003e= 1.0.1), libswresample-dev (\u003e= 6:10), libsystemd-dev, libtest2-suite-perl, libwebsockets-dev, libxmlrpc-core-c3-dev (\u003e= 1.16.07), libxtables-dev (\u003e= 1.4) | iptables-dev (\u003e= 1.4), pandoc, pkgconf, python3, python3-websockets, systemd-dev | systemd, zlib1g-dev"
+    "debhelper-compat (= 13), default-libmysqlclient-dev, dh-sequence-dkms, discount, gperf, libavcodec-dev (\u003e= 6:10), libavfilter-dev (\u003e= 6:10), libavformat-dev (\u003e= 6:10), libavutil-dev (\u003e= 6:10), libbcg729-dev \u003c!pkg.rtpengine.nobcg729\u003e, libbencode-perl, libcrypt-openssl-rsa-perl, libcrypt-rijndael-perl, libcurl4-openssl-dev | libcurl4-gnutls-dev, libdigest-crc-perl, libdigest-hmac-perl, libevent-dev (\u003e= 2.0), libglib2.0-dev (\u003e= 2.44), libhiredis-dev, libio-multiplex-perl, libio-socket-inet6-perl, libio-socket-ip-perl, libiptc-dev, libjson-glib-dev, libjson-perl, libmnl-dev, libmosquitto-dev, libncurses-dev, libnet-interface-perl, libnftnl-dev, libopus-dev, libpcap0.8-dev, libpcre2-dev, libsocket6-perl, libspandsp-dev, libssl-dev (\u003e= 1.0.1), libswresample-dev (\u003e= 6:10), libsystemd-dev, libtest2-suite-perl, liburing-dev (\u003e= 2.3) \u003c!pkg.rtpengine.nouring\u003e, libwebsockets-dev, libxmlrpc-core-c3-dev (\u003e= 1.16.07), libxtables-dev (\u003e= 1.4) | iptables-dev (\u003e= 1.4), pandoc, pkgconf, python3, python3-websockets, systemd-dev | systemd, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "c94fe35831231d580b4708aabd40d430fd8b385074f334d1553538f461cc2a1c 3028 rtpengine_11.5.1.27-1.dsc 77f69072cf9c0ec552e2d8032425a201a2a02621a68497981ebb4349f74e69b0 6492070 rtpengine_11.5.1.27.orig.tar.gz 4bd7b47023aa7ad586f21ca216fd9cb09bfa87f54ab4fca6da20245fa57e93e4 9552 rtpengine_11.5.1.27-1.debian.tar.xz"
+    "72a0b8c3ee2a0abab5cc1b2424f2d31f52c1544e953bfd67e027d1bc3d877bbb 3029 rtpengine_12.5.1.6-1.dsc e806c1618877e92fe0ae15acff3eb10e4cc6a2accefed2cae17055864d4f69b2 6568063 rtpengine_12.5.1.6.orig.tar.gz 98418c15d4fd78726317230312fc305414af1fb72a42fe0634b418e42abe9cb4 8684 rtpengine_12.5.1.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rtpengine"
   ],
   "Files": [
-    "f64d02644036897faf99eff8dce8c5fd 3028 rtpengine_11.5.1.27-1.dsc 72724c688669841242518f48544dc1fc 6492070 rtpengine_11.5.1.27.orig.tar.gz 5b3f0141d5e5e8915d8fbb0ce308222f 9552 rtpengine_11.5.1.27-1.debian.tar.xz"
+    "35c384b7cda53e13cb356001840ebb73 3029 rtpengine_12.5.1.6-1.dsc 213eff36b6f1871550a6f572e311f619 6568063 rtpengine_12.5.1.6.orig.tar.gz 609bae1ff5ffe5f7242961e05cec4a4f 8684 rtpengine_12.5.1.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rtpengine"
   ],
   "Package-List": [
-    "rtpengine deb net optional arch=all rtpengine-daemon deb net optional arch=any rtpengine-iptables deb net optional arch=any rtpengine-kernel-dkms deb kernel optional arch=all rtpengine-perftest deb net optional arch=any profile=!pkg.rtpengine.no-transcoding rtpengine-perftest-data deb net optional arch=all profile=!pkg.rtpengine.no-transcoding rtpengine-recording-daemon deb net optional arch=any profile=!pkg.rtpengine.no-transcoding rtpengine-utils deb net optional arch=all"
+    "rtpengine deb net optional arch=all rtpengine-daemon deb net optional arch=any rtpengine-kernel-dkms deb kernel optional arch=all rtpengine-perftest deb net optional arch=any profile=!pkg.rtpengine.no-transcoding rtpengine-perftest-data deb net optional arch=all profile=!pkg.rtpengine.no-transcoding rtpengine-recording-daemon deb net optional arch=any profile=!pkg.rtpengine.no-transcoding rtpengine-utils deb net optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/pkg-voip-team/rtpengine.git"
   ],
   "Version": [
-    "11.5.1.27-1"
+    "12.5.1.6-1"
   ]
 }

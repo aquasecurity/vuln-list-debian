@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-similarity"
+    "postgresql-17-similarity"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "42f1621bff3896ed85a48079dea1cb6ae4316cefa517ae47df21298534cb86a7 2050 pg-similarity_1.0-7.dsc 0d74e5c6ba3dd753da8bb55293ebb0f05484eab342af5c2ee1fd03a1cd876276 57558 pg-similarity_1.0.orig.tar.gz 5294586ed949d5b8ac5ac7a7eb375590559f9d7f4d0c3ec33d2522f71884a706 4768 pg-similarity_1.0-7.debian.tar.xz"
+    "fbf9e066d678bd71286857e3edfce0185b9c3b51f088fb86e728da0653268fd4 2129 pg-similarity_1.0-8.dsc 0d74e5c6ba3dd753da8bb55293ebb0f05484eab342af5c2ee1fd03a1cd876276 57558 pg-similarity_1.0.orig.tar.gz 152ae3a2b2251aca8e975b55029c27bc877bd0519853013c20072cf00c308f65 4872 pg-similarity_1.0-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-similarity"
   ],
   "Files": [
-    "d798395efd57c898f1515f4ccb3ce52c 2050 pg-similarity_1.0-7.dsc e8b67f4a4092c19ec10c05bf1f1b157b 57558 pg-similarity_1.0.orig.tar.gz c0207f5591f1e1b420823855924e8f7a 4768 pg-similarity_1.0-7.debian.tar.xz"
+    "7b96db019584a1cff9f001ef757744fb 2129 pg-similarity_1.0-8.dsc e8b67f4a4092c19ec10c05bf1f1b157b 57558 pg-similarity_1.0.orig.tar.gz 434d34654dbd4e278c668dac8794599d 4872 pg-similarity_1.0-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-similarity"
   ],
   "Package-List": [
-    "postgresql-16-similarity deb database optional arch=any"
+    "postgresql-17-similarity deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-similarity"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-similarity.git"
   ],
   "Version": [
-    "1.0-7"
+    "1.0-8"
   ]
 }
