@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-plpgsql-check"
+    "postgresql-17-plpgsql-check"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libicu-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libicu-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "221c5aa922f9b12299c97f61728ec34f9da40bc1d5ad020acd526baf5af4954c 2132 plpgsql-check_2.7.8-1.dsc 082ff90c5e4c24355dd6a35815c6f82bcb04456465ca656921df6b95b8b8b23a 254977 plpgsql-check_2.7.8.orig.tar.gz 8eff58fd18616ffc20cf05820c48f1539fe7c64e39b56b063db86253cdd3355a 3524 plpgsql-check_2.7.8-1.debian.tar.xz"
+    "10b2ed7aea7dba9038dffc61aa25b05c5687aa6ed3f8ced7f40d0272bf489ade 2216 plpgsql-check_2.7.10-1.dsc 50f0e90f181854354af260eb79ce5cdaa49580c19544ba468e151bdbdad60426 292742 plpgsql-check_2.7.10.orig.tar.gz 66c996c439e2984d56866f6aa41f1f0346bbd556293dae09ff02bfe437097d64 3596 plpgsql-check_2.7.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/plpgsql-check"
   ],
   "Files": [
-    "1da6ecd7d6a8bdf50e2c38a6b66acdfe 2132 plpgsql-check_2.7.8-1.dsc 08693f941489cad8bd6bd8c3bac59606 254977 plpgsql-check_2.7.8.orig.tar.gz 478e83372d83b8226426184b7cee5379 3524 plpgsql-check_2.7.8-1.debian.tar.xz"
+    "afda5a1d3e06da8a7e45e535250856d1 2216 plpgsql-check_2.7.10-1.dsc 352d0d39e58d2ca1449d063ff74280dd 292742 plpgsql-check_2.7.10.orig.tar.gz 9d8cd3380bd74e7e626a50dd64716312 3596 plpgsql-check_2.7.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "plpgsql-check"
   ],
   "Package-List": [
-    "postgresql-16-plpgsql-check deb database optional arch=any"
+    "postgresql-17-plpgsql-check deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/plpgsql-check.git"
   ],
   "Version": [
-    "2.7.8-1"
+    "2.7.10-1"
   ]
 }

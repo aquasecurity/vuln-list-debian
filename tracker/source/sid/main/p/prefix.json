@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-prefix"
+    "postgresql-17-prefix"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "9a0d252c3e6ff15ae34399016f6b431c4d8a04d7039815bf676aff27de44eb00 1967 prefix_1.2.10-2.dsc 4342f251432a5f6fb05b8597139d3ccde8dcf87e8ca1498e7ee931ca057a8575 75654 prefix_1.2.10.orig.tar.gz b82d83057986d31ab3c4a109048ea882914e2f16bb9cd35cb843e50a733a6676 3936 prefix_1.2.10-2.debian.tar.xz"
+    "8ed6c4d95376dec0a0b6cbca5fa96330b58b0928ba5aebbf0d96ce31e2db55b6 2046 prefix_1.2.10-3.dsc 4342f251432a5f6fb05b8597139d3ccde8dcf87e8ca1498e7ee931ca057a8575 75654 prefix_1.2.10.orig.tar.gz 9f262fd1951b69daf131ca138a39d8a12fd7b5dc56e67ad28781b33931d0ab71 3988 prefix_1.2.10-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/prefix"
   ],
   "Files": [
-    "af080de9256405e0fb3355bf58ec9946 1967 prefix_1.2.10-2.dsc b9c85fdc034700c47455bfe88581a5f6 75654 prefix_1.2.10.orig.tar.gz 7e7d4f0e33d4a1510dac08fc93c31b38 3936 prefix_1.2.10-2.debian.tar.xz"
+    "1a98e4b214110b109aabe7f49332ab8d 2046 prefix_1.2.10-3.dsc b9c85fdc034700c47455bfe88581a5f6 75654 prefix_1.2.10.orig.tar.gz 5a44427d77e6ee37c1d2fcfbc0a840e8 3988 prefix_1.2.10-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "prefix"
   ],
   "Package-List": [
-    "postgresql-16-prefix deb database optional arch=any"
+    "postgresql-17-prefix deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -36,7 +36,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -45,7 +45,7 @@
     "make"
   ],
   "Uploaders": [
-    "Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e"
+    "Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/dimitri/prefix"
@@ -54,6 +54,6 @@
     "https://github.com/dimitri/prefix.git"
   ],
   "Version": [
-    "1.2.10-2"
+    "1.2.10-3"
   ]
 }

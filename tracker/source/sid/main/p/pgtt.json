@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pgtt"
+    "postgresql-17-pgtt"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "e2f75bcab939ffd9ecf20bd17536b76d347bba39a5f214f8dacb1fe29a5b5b35 1950 pgtt_4.0-1.dsc a502e3dc5d45c9dfab7d03c296795541768f8ccd1ca7cb56ac88edacdec14456 37435 pgtt_4.0.orig.tar.gz 372ab73d5982c9d59878aa762ed7d0ca893ae6084c62d2a7043c7cd6eb58f728 2472 pgtt_4.0-1.debian.tar.xz"
+    "43832d8fe7a1f41cf370f42e6348ed25b97d2dc9f0e801bc180caedfc83b5e12 2027 pgtt_4.0-2.dsc a502e3dc5d45c9dfab7d03c296795541768f8ccd1ca7cb56ac88edacdec14456 37435 pgtt_4.0.orig.tar.gz 1cb45fad52e3637ec5aa00015cebaa0299ec1008a2f00a3d7feef65f24005979 2828 pgtt_4.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgtt"
   ],
   "Files": [
-    "66808ecf8fd51434460f8176c91249f2 1950 pgtt_4.0-1.dsc bff70bd95f5e529bccc9ef25c9603483 37435 pgtt_4.0.orig.tar.gz aabe1feb716ef16c8a291906dc8ac4b5 2472 pgtt_4.0-1.debian.tar.xz"
+    "b0ffd04535d93e56466e2cf7fad9c24f 2027 pgtt_4.0-2.dsc bff70bd95f5e529bccc9ef25c9603483 37435 pgtt_4.0.orig.tar.gz 5d0590cdaf1da2c577cb48c86dafd3d0 2828 pgtt_4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgtt"
   ],
   "Package-List": [
-    "postgresql-16-pgtt deb database optional arch=any"
+    "postgresql-17-pgtt deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgtt.git"
   ],
   "Version": [
-    "4.0-1"
+    "4.0-2"
   ]
 }

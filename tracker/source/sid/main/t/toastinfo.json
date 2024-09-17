@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-toastinfo"
+    "postgresql-17-toastinfo"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "8ed9e34e203ce53f18d068fd0752d7fd6e3a627436df489469f31039e5fb8c38 1981 toastinfo_1.5-1.dsc 194170742df51d25e280b5ec87c5eb8149c51152c5f00ad25947d288c0d28dff 7939 toastinfo_1.5.orig.tar.gz 473dcd314ce049019fec94346b50bc5aca690535e8cd0555aef0dff43b6232ec 2580 toastinfo_1.5-1.debian.tar.xz"
+    "d0ecbe68c4ea69d10b5abe6e2794a39fa79ba99a49cd783d78169ef8f7ad5dd9 2060 toastinfo_1.5-2.dsc 194170742df51d25e280b5ec87c5eb8149c51152c5f00ad25947d288c0d28dff 7939 toastinfo_1.5.orig.tar.gz 36cc7354c742a1d55507d53b86f074c56ef30dca119fc3d2460791c2372fa40d 2640 toastinfo_1.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/toastinfo"
   ],
   "Files": [
-    "d0a238e98c6fd64d06965ab82957410f 1981 toastinfo_1.5-1.dsc 8882ff56d6fb8e8d8edef46810d0040a 7939 toastinfo_1.5.orig.tar.gz c0014a4169ab921375b6710fd5d58455 2580 toastinfo_1.5-1.debian.tar.xz"
+    "b988b7c7c9840830f6d9c85d2985d1d9 2060 toastinfo_1.5-2.dsc 8882ff56d6fb8e8d8edef46810d0040a 7939 toastinfo_1.5.orig.tar.gz e3647d059dfc72b64d6e255ffd055587 2640 toastinfo_1.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "toastinfo"
   ],
   "Package-List": [
-    "postgresql-16-toastinfo deb database optional arch=any"
+    "postgresql-17-toastinfo deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/df7cb/toastinfo"
@@ -57,6 +57,6 @@
     "https://github.com/df7cb/toastinfo.git"
   ],
   "Version": [
-    "1.5-1"
+    "1.5-2"
   ]
 }

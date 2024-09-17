@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-prioritize"
+    "postgresql-17-prioritize"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "8a2ace4b25f2376736d8990e874113550b56a2aa534d7234be4f0ccb82b6ba19 2129 postgresql-prioritize_1.0.4-11.dsc 7fe2975bf90bafafcd18b2e3fd9b98334c97771778ec957278a0d8739d751000 3978 postgresql-prioritize_1.0.4.orig.tar.gz 971d70e56380bf782dc291bcc03bc874db666b76b5c198eac422c8c7f9d7e37d 3356 postgresql-prioritize_1.0.4-11.debian.tar.xz"
+    "7e1462bfe11cf4915fd650fd1efcb954b8a6356bf6e8f3b0b477f3eb9203acd5 2208 postgresql-prioritize_1.0.4-12.dsc 7fe2975bf90bafafcd18b2e3fd9b98334c97771778ec957278a0d8739d751000 3978 postgresql-prioritize_1.0.4.orig.tar.gz 2b60efbad7b38fa1cc52ea4c0dbb6a0f94c3e4824557e407dc51cea970b72d73 3420 postgresql-prioritize_1.0.4-12.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-prioritize"
   ],
   "Files": [
-    "70a1c7e2c98fcbe9967e55b066a18789 2129 postgresql-prioritize_1.0.4-11.dsc b4281307572af7cd6111d9dcc62bc569 3978 postgresql-prioritize_1.0.4.orig.tar.gz 3ee9301fc704ddb88573953062b4584a 3356 postgresql-prioritize_1.0.4-11.debian.tar.xz"
+    "f5e70408d2d8ce95dcbb3a42b073040f 2208 postgresql-prioritize_1.0.4-12.dsc b4281307572af7cd6111d9dcc62bc569 3978 postgresql-prioritize_1.0.4.orig.tar.gz 82ed94bd6f4f4acd1efce8ac00018722 3420 postgresql-prioritize_1.0.4-12.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-prioritize"
   ],
   "Package-List": [
-    "postgresql-16-prioritize deb database optional arch=any"
+    "postgresql-17-prioritize deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/postgresql-prioritize"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-prioritize.git"
   ],
   "Version": [
-    "1.0.4-11"
+    "1.0.4-12"
   ]
 }

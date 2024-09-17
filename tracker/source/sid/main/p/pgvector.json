@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pgvector"
+    "postgresql-17-pgvector"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "777259bdd88e00e6187a2142c1a5a6ee8b08e4c1ff38ce28c5aead2e64a56fed 2030 pgvector_0.7.4-1.dsc 0341edf89b1924ae0d552f617e14fb7f8867c0194ed775bcc44fa40288642583 115088 pgvector_0.7.4.orig.tar.gz 228047bf1bfa2e70733b72d8dde924caf8bfa15dac9a0119176e4e8fc53e6ba8 3600 pgvector_0.7.4-1.debian.tar.xz"
+    "5b7b2d5a0175e15edd5e3e01df56e22fa5df6b17cf3db472f495ed5cda37ecec 2107 pgvector_0.7.4-2.dsc 0341edf89b1924ae0d552f617e14fb7f8867c0194ed775bcc44fa40288642583 115088 pgvector_0.7.4.orig.tar.gz 4f33ca2360ca8dacf11b0f6a5d62f1130400d1fd721271bf5c533785cc72bde4 3680 pgvector_0.7.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgvector"
   ],
   "Files": [
-    "9eb8b418769cdcd3d304c085532810b7 2030 pgvector_0.7.4-1.dsc c619239639ae562c7c46dc81493379d0 115088 pgvector_0.7.4.orig.tar.gz eefc69b9df92721f0eceea2188555afb 3600 pgvector_0.7.4-1.debian.tar.xz"
+    "e27393f94fdef995e2a3736296cfc7d3 2107 pgvector_0.7.4-2.dsc c619239639ae562c7c46dc81493379d0 115088 pgvector_0.7.4.orig.tar.gz 851acd7aa952a00ee4c3e63f7838f5c7 3680 pgvector_0.7.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgvector"
   ],
   "Package-List": [
-    "postgresql-16-pgvector deb database optional arch=any"
+    "postgresql-17-pgvector deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgvector.git"
   ],
   "Version": [
-    "0.7.4-1"
+    "0.7.4-2"
   ]
 }

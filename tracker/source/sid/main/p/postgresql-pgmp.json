@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pgmp"
+    "postgresql-17-pgmp"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libgmp-dev, postgresql-all (\u003e= 217~), python3, python3-six"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libgmp-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all, python3, python3-six"
   ],
   "Checksums-Sha256": [
-    "f888a4523d1388f2c232520da726ac849130dcf9c359cdb4d752e7516fb9f099 2097 postgresql-pgmp_1.0.5-2.dsc 0fafb70c48aa8cadee63f4f302cce1ac8324393b229cec58f60f9a9c226b01cf 70694 postgresql-pgmp_1.0.5.orig.tar.gz 41c9eeefaa99aecae8f556177b4086cf8d397cf72a0c93897de95ad98d3198b1 3964 postgresql-pgmp_1.0.5-2.debian.tar.xz"
+    "1feebbdc564e69288196bd9d00e01b028fa48d73b35c5a2d5ff5d51d9a024d68 2176 postgresql-pgmp_1.0.5-3.dsc 0fafb70c48aa8cadee63f4f302cce1ac8324393b229cec58f60f9a9c226b01cf 70694 postgresql-pgmp_1.0.5.orig.tar.gz f50f67bae5feb8c41be09dd7cf869a41a60fd4ffce2b32c3fecca0c6ff94fed2 4044 postgresql-pgmp_1.0.5-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-pgmp"
   ],
   "Files": [
-    "318e3a17008e31055169297317cdec1e 2097 postgresql-pgmp_1.0.5-2.dsc fb4e61caf974c439bbb620230522b196 70694 postgresql-pgmp_1.0.5.orig.tar.gz 9676c48b756edaa0e906f94cd901a77f 3964 postgresql-pgmp_1.0.5-2.debian.tar.xz"
+    "d2d25ee20b27ebc89b885fef9b59b90f 2176 postgresql-pgmp_1.0.5-3.dsc fb4e61caf974c439bbb620230522b196 70694 postgresql-pgmp_1.0.5.orig.tar.gz 2b9aebeadc39496d666ae40416c2a4ce 4044 postgresql-pgmp_1.0.5-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-pgmp"
   ],
   "Package-List": [
-    "postgresql-16-pgmp deb database optional arch=any"
+    "postgresql-17-pgmp deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/postgresql-pgmp"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-pgmp.git"
   ],
   "Version": [
-    "1.0.5-2"
+    "1.0.5-3"
   ]
 }

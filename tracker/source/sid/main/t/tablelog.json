@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-tablelog"
+    "postgresql-17-tablelog"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "87ea34651957fba0c7c931a536fc4687319c708e870fc010c0dea80fa41b5436 1989 tablelog_0.6.4-2.dsc 80c5fbfa162d2e856609468867474440006025b055c523cf03d383e7138aacb2 25637 tablelog_0.6.4.orig.tar.gz 110cd12fe851bce01274e24433daa41a3f345a9e61855b49562896f9452efe88 1776 tablelog_0.6.4-2.debian.tar.xz"
+    "0859fc85e28481ee9b39d77610bc70f5d4638cdd4a7f2537fa78077bca5ab167 2068 tablelog_0.6.4-3.dsc 80c5fbfa162d2e856609468867474440006025b055c523cf03d383e7138aacb2 25637 tablelog_0.6.4.orig.tar.gz 56a0c85a5930937b12885129930bea09ed46d77607c0c3d4c6e6bc2b022b8548 1856 tablelog_0.6.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tablelog"
   ],
   "Files": [
-    "a1ee40c1c2508106872888e0e1b3bc03 1989 tablelog_0.6.4-2.dsc 163b2101684079c1dde2f1b1f655087e 25637 tablelog_0.6.4.orig.tar.gz 2c46749b03962be5e5a580b17b5b39de 1776 tablelog_0.6.4-2.debian.tar.xz"
+    "98c4af05ae88d3317bd7750614d9bffa 2068 tablelog_0.6.4-3.dsc 163b2101684079c1dde2f1b1f655087e 25637 tablelog_0.6.4.orig.tar.gz 064d824a2a7fcd5ed6c47bf45ead1431 1856 tablelog_0.6.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "tablelog"
   ],
   "Package-List": [
-    "postgresql-16-tablelog deb database optional arch=any"
+    "postgresql-17-tablelog deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/df7cb/table_log"
@@ -57,6 +57,6 @@
     "https://github.com/df7cb/table_log.git"
   ],
   "Version": [
-    "0.6.4-2"
+    "0.6.4-3"
   ]
 }

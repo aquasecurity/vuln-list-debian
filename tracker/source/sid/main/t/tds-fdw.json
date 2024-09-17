@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-tds-fdw"
+    "postgresql-17-tds-fdw"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), freetds-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), freetds-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "0bcae30a7e98c283380641d71e0401fb63e7748fc88318e207707d229680313c 1988 tds-fdw_2.0.3-3.dsc fa51ca481ec5f53c6f53be65a958aa229faf5fcd5d089b7807583318a40dae6a 72527 tds-fdw_2.0.3.orig.tar.gz 2a636a55eae9905f0229d2642f5e79df16e8a137506353bea267bab04de6f73c 3284 tds-fdw_2.0.3-3.debian.tar.xz"
+    "5c0321cc1bc2625c51aa325a3e1cad55849df77242f682b2e5cb76a2770dac5d 2065 tds-fdw_2.0.3-4.dsc fa51ca481ec5f53c6f53be65a958aa229faf5fcd5d089b7807583318a40dae6a 72527 tds-fdw_2.0.3.orig.tar.gz 4167295792328c0310732b21eb3584ebccbd02ad529697b04ed5b66003eba4ca 4080 tds-fdw_2.0.3-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tds-fdw"
   ],
   "Files": [
-    "84852816933768e558bbf5cb9adc8ed7 1988 tds-fdw_2.0.3-3.dsc 16f9bf5b26b4861bb24ea48f2da8fbca 72527 tds-fdw_2.0.3.orig.tar.gz 1e9b0a497e01ff19af65f7bbe08db25b 3284 tds-fdw_2.0.3-3.debian.tar.xz"
+    "3b3622a6c477801fe93725c116350e3c 2065 tds-fdw_2.0.3-4.dsc 16f9bf5b26b4861bb24ea48f2da8fbca 72527 tds-fdw_2.0.3.orig.tar.gz 6f700ff8d50e3955d81f7a09a2077756 4080 tds-fdw_2.0.3-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "tds-fdw"
   ],
   "Package-List": [
-    "postgresql-16-tds-fdw deb database optional arch=any"
+    "postgresql-17-tds-fdw deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/postgresql/tds-fdw.git"
   ],
   "Version": [
-    "2.0.3-3"
+    "2.0.3-4"
   ]
 }

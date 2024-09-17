@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-plsh"
+    "postgresql-17-plsh"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libpq-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libpq-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "60cb53411d8c8329c4a6a9044e7e9e924fef0a5386674dcecf4b10f08b9ae31c 2112 postgresql-plsh_1.20220917-2.dsc 4fc926c8a98756fd40a93cf14005b2b408363338775466a9672e8ec810afcadb 11609 postgresql-plsh_1.20220917.orig.tar.gz 72d682b2d80026d016f49d8df3c1037e1abcfe2f45fd54072d826c5744191613 3528 postgresql-plsh_1.20220917-2.debian.tar.xz"
+    "922761e892556881ec85d206c38115811ecccbb00ba620b7547e6e323e1f811a 2191 postgresql-plsh_1.20220917-3.dsc 4fc926c8a98756fd40a93cf14005b2b408363338775466a9672e8ec810afcadb 11609 postgresql-plsh_1.20220917.orig.tar.gz 537cb2f8bd3910981fc2153b89291bb2ee9bdbba2c02aa32c984f7d0616c436c 3580 postgresql-plsh_1.20220917-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-plsh"
   ],
   "Files": [
-    "cdd24b91e4ac6e336002a4962f70bc20 2112 postgresql-plsh_1.20220917-2.dsc 229b109905f9a53f3cf1d130c0ee8678 11609 postgresql-plsh_1.20220917.orig.tar.gz 8772aaebf7e95e92774fa4fae6b4c557 3528 postgresql-plsh_1.20220917-2.debian.tar.xz"
+    "1512120d273dad3e49a6bed301243591 2191 postgresql-plsh_1.20220917-3.dsc 229b109905f9a53f3cf1d130c0ee8678 11609 postgresql-plsh_1.20220917.orig.tar.gz 4ac784c76c735f782687600042d20d90 3580 postgresql-plsh_1.20220917-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-plsh"
   ],
   "Package-List": [
-    "postgresql-16-plsh deb database optional arch=any"
+    "postgresql-17-plsh deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/postgresql-plsh"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-plsh.git"
   ],
   "Version": [
-    "1.20220917-2"
+    "1.20220917-3"
   ]
 }
