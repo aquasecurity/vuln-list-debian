@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pg-rrule"
+    "postgresql-17-pg-rrule"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~), pkgconf, libical-dev"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libical-dev, pkgconf, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "a97b9504d114a0a669d6e663562ce8e4f6dc1f45c66878a30060a0831657ab81 2182 pg-rrule_0.2.0+git20211101.d7d10f2-2.dsc ee8f1c78f139081fd82cdc1f0493afd0fa93d6098a97844d32df75c7cba08346 8704 pg-rrule_0.2.0+git20211101.d7d10f2.orig.tar.gz 7964a9b3d00e470e8b0179b69c7379a201398f3f53425190651bd95e2c61c825 3480 pg-rrule_0.2.0+git20211101.d7d10f2-2.debian.tar.xz"
+    "03c2194dc65d0db00409c0a6ac8a90a657c61bac8a5c5c6ccaaa7a92750cfb56 2261 pg-rrule_0.2.0+git20211101.d7d10f2-3.dsc ee8f1c78f139081fd82cdc1f0493afd0fa93d6098a97844d32df75c7cba08346 8704 pg-rrule_0.2.0+git20211101.d7d10f2.orig.tar.gz 9284e83c9a372ee8ae5128704c903774c080bb1e7b0a55abff7141c3f3630437 3580 pg-rrule_0.2.0+git20211101.d7d10f2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-rrule"
   ],
   "Files": [
-    "5488f100fe2bcbe4d616640f02be424f 2182 pg-rrule_0.2.0+git20211101.d7d10f2-2.dsc 54ad79a352ab6d5d71682b61a156d1f0 8704 pg-rrule_0.2.0+git20211101.d7d10f2.orig.tar.gz 80c7efcf218e2fb53c1091161151e459 3480 pg-rrule_0.2.0+git20211101.d7d10f2-2.debian.tar.xz"
+    "d77370433e368106937d6029fbaa0c65 2261 pg-rrule_0.2.0+git20211101.d7d10f2-3.dsc 54ad79a352ab6d5d71682b61a156d1f0 8704 pg-rrule_0.2.0+git20211101.d7d10f2.orig.tar.gz ae70631eb924305e1e6f7f131aa0d231 3580 pg-rrule_0.2.0+git20211101.d7d10f2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-rrule"
   ],
   "Package-List": [
-    "postgresql-16-pg-rrule deb database optional arch=any"
+    "postgresql-17-pg-rrule deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Dominik George \u003cnatureshadow@debian.org\u003e"
+    "Dominik George \u003cnatureshadow@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-rrule"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-rrule.git"
   ],
   "Version": [
-    "0.2.0+git20211101.d7d10f2-2"
+    "0.2.0+git20211101.d7d10f2-3"
   ]
 }
