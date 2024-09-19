@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pgl-ddl-deploy"
+    "postgresql-17-pgl-ddl-deploy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libpq-dev, postgresql-16-pglogical, postgresql-all (\u003e= 256~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libpq-dev, postgresql-17-pglogical, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "82d1ad8219211540c76b2cf2086ba7ad899d4f540f45d3fb46b459ef4dc27486 2204 pgl-ddl-deploy_2.2.1-1.dsc e8b43c2549e586eb24365926c5c128749c0ec13cf8609b744ceabb2d14ef4620 359998 pgl-ddl-deploy_2.2.1.orig.tar.gz 16370ded1514bfdc03897f7884fb5d266070c47104c888d81b20841e16d9da0c 3772 pgl-ddl-deploy_2.2.1-1.debian.tar.xz"
+    "be0d671dc5905e01dbedc7891cf8d2b4d923da132576136c4adce9da0f352438 2281 pgl-ddl-deploy_2.2.1-2.dsc e8b43c2549e586eb24365926c5c128749c0ec13cf8609b744ceabb2d14ef4620 359998 pgl-ddl-deploy_2.2.1.orig.tar.gz 2860b5b1855a1fdf85f1e998b5cb52778b609ab3e5a58ec27f300789a897d29c 3840 pgl-ddl-deploy_2.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgl-ddl-deploy"
   ],
   "Files": [
-    "d7845c72b414ecf78a1d1d610a1445df 2204 pgl-ddl-deploy_2.2.1-1.dsc b82d6c4cbc2b23e03d4487dc1471464b 359998 pgl-ddl-deploy_2.2.1.orig.tar.gz 634c98aac849bcd423ad97ad3870acf5 3772 pgl-ddl-deploy_2.2.1-1.debian.tar.xz"
+    "b0dda68c9dd02ffc1652701ab6580c73 2281 pgl-ddl-deploy_2.2.1-2.dsc b82d6c4cbc2b23e03d4487dc1471464b 359998 pgl-ddl-deploy_2.2.1.orig.tar.gz b184ed5ef8412307c9e7a209752ca142 3840 pgl-ddl-deploy_2.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgl-ddl-deploy"
   ],
   "Package-List": [
-    "postgresql-16-pgl-ddl-deploy deb database optional arch=any"
+    "postgresql-17-pgl-ddl-deploy deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-16-pglogical, postgresql-contrib-16"
+    "make, postgresql-17-pglogical, postgresql-contrib-17"
   ],
   "Uploaders": [
     "Jeremy Finzel \u003cjfinzel@enova.com\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgl-ddl-deploy.git"
   ],
   "Version": [
-    "2.2.1-1"
+    "2.2.1-2"
   ]
 }
