@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-preprepare"
+    "postgresql-17-preprepare"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "5d6a995b38a35854e6cbc7e8b09c772d11b7722a5ca63135f975f1973db4030c 2000 preprepare_0.9-8.dsc 77c03cc0159bfba37e70620185cd383c83c956558a663996df4bee3a439b365e 15731 preprepare_0.9.orig.tar.gz 7e83072a1b0f63945c776788aad1379ba5a0c8dab3e8b0f63b2a8394d2846374 3004 preprepare_0.9-8.debian.tar.xz"
+    "5c910833ed2eba271b573a6cec8afc18172dfc897425da69e3a2893527cba39c 2079 preprepare_0.9-9.dsc 77c03cc0159bfba37e70620185cd383c83c956558a663996df4bee3a439b365e 15731 preprepare_0.9.orig.tar.gz 01935714c68e1ab648c2a74431ceb76bb3b711046644da25c79c25b0bcd71a2a 3092 preprepare_0.9-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/preprepare"
   ],
   "Files": [
-    "f74b0d0afca9b554e11465cb14a1dfbe 2000 preprepare_0.9-8.dsc ee36e1e93193bf05777bfa51783054aa 15731 preprepare_0.9.orig.tar.gz 332ac8331ddfd3fd61920aef43d1b19d 3004 preprepare_0.9-8.debian.tar.xz"
+    "727915dabc1377225db14a96d336ecdf 2079 preprepare_0.9-9.dsc ee36e1e93193bf05777bfa51783054aa 15731 preprepare_0.9.orig.tar.gz f58133343e41bb0010278649108ade9b 3092 preprepare_0.9-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "preprepare"
   ],
   "Package-List": [
-    "postgresql-16-preprepare deb database optional arch=any"
+    "postgresql-17-preprepare deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -36,7 +36,7 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -45,7 +45,7 @@
     "make"
   ],
   "Uploaders": [
-    "Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e"
+    "Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/dimitri/preprepare"
@@ -54,6 +54,6 @@
     "https://github.com/dimitri/preprepare.git -b debian"
   ],
   "Version": [
-    "0.9-8"
+    "0.9-9"
   ]
 }

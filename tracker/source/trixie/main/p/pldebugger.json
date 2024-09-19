@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pldebugger"
+    "postgresql-17-pldebugger"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libkrb5-dev | krb5-multidev, libssl-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libkrb5-dev | krb5-multidev, libssl-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "ab3c7471e703065baacb684d45b30b9a73c50114f26840f734c0ed6fb7b37d5a 2077 pldebugger_1.8-1.dsc ce5c7d27cb7dcf23ce975692a58b1a5cd0581a3a1686d7aa2c10e298e85cf395 49135 pldebugger_1.8.orig.tar.gz d5f59deacff51b9748591a2c59a738a22e3de9f4fd371c9795582260c39e28a6 2540 pldebugger_1.8-1.debian.tar.xz"
+    "d71c7088c337d36e7b07a9b5f5b9e0979f468772baeaa17a31cfc4c31ebede59 2156 pldebugger_1.8-2.dsc ce5c7d27cb7dcf23ce975692a58b1a5cd0581a3a1686d7aa2c10e298e85cf395 49135 pldebugger_1.8.orig.tar.gz 291dff1e35f664895941670b9f049dd685327ae01f19970e378fa25313f7dc35 2620 pldebugger_1.8-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pldebugger"
   ],
   "Files": [
-    "deba2e51dc910eddfac248d04b1bf961 2077 pldebugger_1.8-1.dsc 1409910a7512f96b17207e18eeb49a1f 49135 pldebugger_1.8.orig.tar.gz 300f120acc6f93446c6b1919ec2432f5 2540 pldebugger_1.8-1.debian.tar.xz"
+    "420c4fff01f5642c2ab344bb2090e4a3 2156 pldebugger_1.8-2.dsc 1409910a7512f96b17207e18eeb49a1f 49135 pldebugger_1.8.orig.tar.gz 0f9c67cc317f3db05d0b50b994c23cef 2620 pldebugger_1.8-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pldebugger"
   ],
   "Package-List": [
-    "postgresql-16-pldebugger deb database optional arch=any"
+    "postgresql-17-pldebugger deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pldebugger"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pldebugger.git"
   ],
   "Version": [
-    "1:1.8-1"
+    "1:1.8-2"
   ]
 }

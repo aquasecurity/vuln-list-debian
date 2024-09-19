@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-http"
+    "postgresql-17-http"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libcurl4-openssl-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libcurl4-openssl-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "32ad7d007295247b213481ef969f8e061401b02d32d77fbc5e54e1dc4d921fee 2052 pgsql-http_1.6.0-4.dsc add8b5734cd7271e07a15ad42a970138f50b3911e397b27be78b8e488f42be92 23567 pgsql-http_1.6.0.orig.tar.gz cb97e52687b62a7dbb6354d9a5ca04c87aaff6e84b33932d1c38e6e66763f433 2140 pgsql-http_1.6.0-4.debian.tar.xz"
+    "727383b5ba06d89b3bd4204e78a1e4a15913dc40bc38689265ebcfe227885ed2 2129 pgsql-http_1.6.0-5.dsc add8b5734cd7271e07a15ad42a970138f50b3911e397b27be78b8e488f42be92 23567 pgsql-http_1.6.0.orig.tar.gz c8d6206118197fdbd91e62d7010ad7f1f51e472b64974b18dc09e13afb11ebfd 2224 pgsql-http_1.6.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgsql-http"
   ],
   "Files": [
-    "821ee11845240f17169df49bbb42fb66 2052 pgsql-http_1.6.0-4.dsc c0b66273ae41589076e50603e56e02e3 23567 pgsql-http_1.6.0.orig.tar.gz f1ca6e75c9bcb1d5a82d987b096cc9b6 2140 pgsql-http_1.6.0-4.debian.tar.xz"
+    "c73f68a67f03b112093a63fdafb9a07e 2129 pgsql-http_1.6.0-5.dsc c0b66273ae41589076e50603e56e02e3 23567 pgsql-http_1.6.0.orig.tar.gz 95bc64f866d9d3f84212a1c8012cf62a 2224 pgsql-http_1.6.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgsql-http"
   ],
   "Package-List": [
-    "postgresql-16-http deb database optional arch=any"
+    "postgresql-17-http deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgsql-http.git"
   ],
   "Version": [
-    "1.6.0-4"
+    "1.6.0-5"
   ]
 }

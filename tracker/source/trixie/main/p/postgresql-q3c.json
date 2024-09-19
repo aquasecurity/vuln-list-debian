@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-q3c"
+    "postgresql-17-q3c"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 219~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "8de300701dd47d7082035019bc7da0b7f1b5280f98029e3e60bec41f42bcf307 2193 postgresql-q3c_2.0.1-3.dsc 24dff49a91db07e96bada90f457aaec405b69b752fdacd792817e22c5953e569 1073845 postgresql-q3c_2.0.1.orig.tar.gz 7ac976e7937a4991f5ec092c6e98d310f999650bccaa9545f579b50784a2e7d2 4836 postgresql-q3c_2.0.1-3.debian.tar.xz"
+    "3441a60cc907c6ea9c56da42b0ba80ff59dff3632cc239fb0c835ef92093d5a8 2271 postgresql-q3c_2.0.1-4.dsc 24dff49a91db07e96bada90f457aaec405b69b752fdacd792817e22c5953e569 1073845 postgresql-q3c_2.0.1.orig.tar.gz bfd02d22a9d312ea9c58ce6ea6198cabdf9d2bee3229ec46d2c78e710c134e65 4920 postgresql-q3c_2.0.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-q3c"
   ],
   "Files": [
-    "5c33b747b55fc0f8bc9825df945e4af3 2193 postgresql-q3c_2.0.1-3.dsc d5f409deff32c1ceeb9dff47cde99676 1073845 postgresql-q3c_2.0.1.orig.tar.gz 0b732b0e4e661f2bd1a3d1efe502bf1e 4836 postgresql-q3c_2.0.1-3.debian.tar.xz"
+    "fbf9f469bd8b9ec921875092ec8542e7 2271 postgresql-q3c_2.0.1-4.dsc d5f409deff32c1ceeb9dff47cde99676 1073845 postgresql-q3c_2.0.1.orig.tar.gz 63dbba0212a591d6d59ffc0564c94ac3 4920 postgresql-q3c_2.0.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-q3c"
   ],
   "Package-List": [
-    "postgresql-16-q3c deb database optional arch=any"
+    "postgresql-17-q3c deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-q3c.git"
   ],
   "Version": [
-    "2.0.1-3"
+    "2.0.1-4"
   ]
 }

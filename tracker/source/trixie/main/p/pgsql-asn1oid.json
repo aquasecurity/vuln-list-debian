@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-asn1oid"
+    "postgresql-17-asn1oid"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "38f7aa592fc13b302e5c43fba69fc2fca5d9fd2b6f0957b46c3148dd8458868a 2017 pgsql-asn1oid_1.6-1.dsc 6807071368c9ee5499da3b8a3225bcf9924afc0f5a07901c495fa592748c8e6f 5816 pgsql-asn1oid_1.6.orig.tar.gz c4a51341db9b9b5087d30ab5d0e3a6db8be58367982c4f11f9ff2f4cd5f6fea7 2520 pgsql-asn1oid_1.6-1.debian.tar.xz"
+    "7816cfe18d8c1d322520d1380c48997cb1c21893dd576908769b7f06d15fdde7 2096 pgsql-asn1oid_1.6-2.dsc 6807071368c9ee5499da3b8a3225bcf9924afc0f5a07901c495fa592748c8e6f 5816 pgsql-asn1oid_1.6.orig.tar.gz ea8f4e2fb3085ce732d84e4132993c50266aa1bf8d55655d2bc1d2ba20a75a6f 2596 pgsql-asn1oid_1.6-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgsql-asn1oid"
   ],
   "Files": [
-    "e640e51bedba454a7e8dcf60e245c805 2017 pgsql-asn1oid_1.6-1.dsc 9452284aded9a5c2ab44e354ddee891a 5816 pgsql-asn1oid_1.6.orig.tar.gz 316f888255f09d9199b3f096a8f4be36 2520 pgsql-asn1oid_1.6-1.debian.tar.xz"
+    "991a43ff30fad22c1dbb464dd33bd4ad 2096 pgsql-asn1oid_1.6-2.dsc 9452284aded9a5c2ab44e354ddee891a 5816 pgsql-asn1oid_1.6.orig.tar.gz 806d0f2bdec74e8179a4f1af8fd1fce3 2596 pgsql-asn1oid_1.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgsql-asn1oid"
   ],
   "Package-List": [
-    "postgresql-16-asn1oid deb database optional arch=any"
+    "postgresql-17-asn1oid deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "database"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://github.com/df7cb/pgsql-asn1oid"
@@ -57,6 +57,6 @@
     "https://github.com/df7cb/pgsql-asn1oid.git"
   ],
   "Version": [
-    "1.6-1"
+    "1.6-2"
   ]
 }
