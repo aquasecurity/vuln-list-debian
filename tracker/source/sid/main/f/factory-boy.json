@@ -3,22 +3,22 @@
     "all"
   ],
   "Binary": [
-    "python3-factory-boy, python-factory-boy-doc"
+    "python-factory-boy-doc, python3-factory-boy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-sphinx, python3-sphinx-rtd-theme, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-sqlalchemy, python3-mongoengine, python3-django, python3-wheel, python3-fake-factory"
+    "python-mongoengine-doc \u003c!nodoc\u003e, python-sqlalchemy-doc \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-django \u003c!nocheck\u003e, python3-mongoengine \u003c!nocheck\u003e, python3-mongomock \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-sqlalchemy \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "096b464deae954ef30fcc91543fdf9120935326709d5e37047d2ef49cb6113f2 2330 factory-boy_2.11.1-8.dsc 7d1038051d3bf468a4ec05a7e9e584985ad827e8af2badeefc93121f0e1a5633 137220 factory-boy_2.11.1.orig.tar.gz 9f8a92bb303074c0fdbb7fec7d4c9ff21647b6661b1d58471a4be5fb2a34fd31 14920 factory-boy_2.11.1-8.debian.tar.xz"
+    "ec2618a91b9f0bcb834410dd7d6c7d007854050752b7b0fc1c940ad16ea7b282 2663 factory-boy_3.3.1-1.dsc 21994730047f0046c67c5f34dd816f70ef7ca3034ae37505ddc51707b3be7873 146933 factory-boy_3.3.1.orig.tar.gz 81ada9040f161c19bc1ec54259df8725978a52eb761a44313f5970fd5fd16524 14632 factory-boy_3.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/factory-boy"
   ],
   "Files": [
-    "8f55e03bf2648169ba8af80cabb3b2e7 2330 factory-boy_2.11.1-8.dsc 87464c0cbd13645ca781465251f90da5 137220 factory-boy_2.11.1.orig.tar.gz 7f4825a9ab89da4412ec43eb2a753b62 14920 factory-boy_2.11.1-8.debian.tar.xz"
+    "4e2a3668f4162777c136b9ff8bcad2fc 2663 factory-boy_3.3.1-1.dsc a95ca855d5dbf850bafc338f193d94d6 146933 factory-boy_3.3.1.orig.tar.gz c85a4cdfc14161c6007b172b3ed87e1d 14632 factory-boy_3.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest"
+    "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "python3-django"
+    "python3-all, python3-django, python3-mongoengine, python3-mongomock, python3-pytest, python3-sqlalchemy"
   ],
   "Uploaders": [
-    "Brian May \u003cbam@debian.org\u003e"
+    "Brian May \u003cbam@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/factory-boy"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/factory-boy.git"
   ],
   "Version": [
-    "2.11.1-8"
+    "3.3.1-1"
   ]
 }
