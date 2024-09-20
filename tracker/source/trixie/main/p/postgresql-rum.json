@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-rum"
+    "postgresql-17-rum"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~), systemtap-sdt-dev"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all, systemtap-sdt-dev"
   ],
   "Checksums-Sha256": [
-    "d3b20b068ef6f4605c021598821b498bdaf0ce4fb7d46ac6fe05e59e64d7d523 2082 postgresql-rum_1.3.13-2.dsc 6ab370532c965568df6210bd844ac6ba649f53055e48243525b0b7e5c4d69a7d 565701 postgresql-rum_1.3.13.orig.tar.gz e34e3338d5e80cda40fead58e3c5a1e5631f7e9a309be9d990aaa56a532ede19 2764 postgresql-rum_1.3.13-2.debian.tar.xz"
+    "d0d1795e736a9d2dfb0d3b944bba72a226b81697ea0148d5cbd4a0124c1c3516 2161 postgresql-rum_1.3.13-3.dsc 6ab370532c965568df6210bd844ac6ba649f53055e48243525b0b7e5c4d69a7d 565701 postgresql-rum_1.3.13.orig.tar.gz d385e02872064a3cb9a5f8856756b71c2f1c7e4b2420e8c9c479c0fda2052fcc 5788 postgresql-rum_1.3.13-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-rum"
   ],
   "Files": [
-    "542a5960fda728b30608076f4e15bfe2 2082 postgresql-rum_1.3.13-2.dsc 66936bae40eaba63f613a9d1f14dd9ec 565701 postgresql-rum_1.3.13.orig.tar.gz 989f997ca16a8700e065fd84cb292f17 2764 postgresql-rum_1.3.13-2.debian.tar.xz"
+    "a81085a765ee4e4c1b69bb276211b943 2161 postgresql-rum_1.3.13-3.dsc 66936bae40eaba63f613a9d1f14dd9ec 565701 postgresql-rum_1.3.13.orig.tar.gz c4454316ac290aa367c7d41d790026c5 5788 postgresql-rum_1.3.13-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-rum"
   ],
   "Package-List": [
-    "postgresql-16-rum deb database optional arch=any"
+    "postgresql-17-rum deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/postgresql-rum"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-rum.git"
   ],
   "Version": [
-    "1.3.13-2"
+    "1.3.13-3"
   ]
 }
