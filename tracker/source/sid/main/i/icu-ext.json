@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-icu-ext"
+    "postgresql-17-icu-ext"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libicu-dev, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libicu-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "982ac74f52b2cfdc80e5720abc7a4a4039c37b5fd7328de5eef627f7a02554d2 2012 icu-ext_1.8.0-1.dsc c214f875db28840fb8476386ae9d1d4f42794ae7b9d4ca3a83c38af3e8def9f9 40248 icu-ext_1.8.0.orig.tar.gz 713a0895a0d5dea70daee284cb975e3eb633d5c5e17f9da4e4a5a8762ba182e2 2656 icu-ext_1.8.0-1.debian.tar.xz"
+    "672df281440c4dd924b0f03b6269eaa643eba4237534f82432551933cb900143 2089 icu-ext_1.9.0-1.dsc 76bc1622af52ca8d6b4eeb5d5ab2f15a077e4d6f5e48954e42c05df876c14388 42128 icu-ext_1.9.0.orig.tar.gz 34946fe0550963bc2bc3f98576b9606d2cd347e8af1b7be5e83b832d47f2b98f 2368 icu-ext_1.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/icu-ext"
   ],
   "Files": [
-    "692971d53fc685bb84cd24811502510b 2012 icu-ext_1.8.0-1.dsc 640e5537772187921229cc2533ea9cc2 40248 icu-ext_1.8.0.orig.tar.gz 519958bc99268cf6c1d61b9cd5ef4607 2656 icu-ext_1.8.0-1.debian.tar.xz"
+    "29de7373c8a33e5b18fc20e459070d9d 2089 icu-ext_1.9.0-1.dsc 798dc34615eb04eeed62d419a7bbae63 42128 icu-ext_1.9.0.orig.tar.gz 198ffe7b461288bd81c8dc116ad786d6 2368 icu-ext_1.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "icu-ext"
   ],
   "Package-List": [
-    "postgresql-16-icu-ext deb database optional arch=any"
+    "postgresql-17-icu-ext deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/icu-ext.git"
   ],
   "Version": [
-    "1.8.0-1"
+    "1.9.0-1"
   ]
 }
