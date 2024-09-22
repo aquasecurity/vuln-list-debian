@@ -1,33 +1,36 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "architecture-properties"
+    "architecture-properties, native-architecture, native-architecture-is, cross-exe-wrapper"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "debhelper-compat (= 13), perl:any"
   ],
   "Checksums-Sha256": [
-    "f4b7f6c429be0814cf3626a46f022cd488b8030fbe3988e2449e4fbb529ddf0d 1743 architecture-properties_0.1.1.dsc 4ea4da56ff0ca87a4cf57a2edddfce2451f74f34aec0cc3c6fc37726585267a4 1204 architecture-properties_0.1.1.tar.xz"
+    "aa914bfd5882df0b245cb1f526b03a835d3914afbed0b588208649441917dc48 1803 architecture-properties_0.2.3.dsc 3fcd4f7735c09991deb67777958a6aa0526c60907824f9c33b4573ffb0dff27d 5180 architecture-properties_0.2.3.tar.xz"
+  ],
+  "Dgit": [
+    "6f6adc0fcd99e330e3c08fc961a768faad59fbff debian archive/debian/0.2.3 https://git.dgit.debian.org/architecture-properties"
   ],
   "Directory": [
     "pool/main/a/architecture-properties"
   ],
   "Files": [
-    "fb8341c10e834194697151872e3c940a 1743 architecture-properties_0.1.1.dsc e1f57039ccc9814f9d3fd02700216f4c 1204 architecture-properties_0.1.1.tar.xz"
+    "795bc2c06950b511b4ccf29ba1765c5f 1803 architecture-properties_0.2.3.dsc 2671b1b20b24df81344a819d61f82d2e 5180 architecture-properties_0.2.3.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
   ],
   "Maintainer": [
-    "Architecture Properties Maintainers \u003cachitecture-properties@packages.debian.org\u003e"
+    "Architecture Properties Maintainers \u003carchitecture-properties@packages.debian.org\u003e"
   ],
   "Package": [
     "architecture-properties"
   ],
   "Package-List": [
-    "architecture-properties deb devel optional arch=any"
+    "architecture-properties deb devel optional arch=any cross-exe-wrapper deb devel optional arch=any native-architecture deb devel optional arch=all native-architecture-is deb devel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -37,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.6.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dpkg-dev"
   ],
   "Uploaders": [
     "Niels Thykier \u003cniels@thykier.net\u003e,"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/debian/architecture-properties.git"
   ],
   "Version": [
-    "0.1.1"
+    "0.2.3"
   ]
 }
