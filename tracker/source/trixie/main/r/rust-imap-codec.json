@@ -6,16 +6,16 @@
     "librust-imap-types-dev, librust-imap-codec-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust, librust-abnf-core-0.6+default-dev \u003c!nocheck\u003e, librust-arbitrary-1+default-dev \u003c!nocheck\u003e, librust-arbitrary-1+derive-dev \u003c!nocheck\u003e, librust-base64-0.21+default-dev \u003c!nocheck\u003e, librust-bounded-static-0.8+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+alloc-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nom-7+default-dev \u003c!nocheck\u003e, librust-rand-0.8+small-rng-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-abnf-core-0.6+default-dev, librust-arbitrary-1+derive-dev, librust-base64-0.21+alloc-dev, librust-bounded-static-0.8-dev, librust-bounded-static-derive-0.8-dev, librust-chrono-0.4-dev, librust-log-0.4+default-dev, librust-nom-7+default-dev, librust-rand-0.8+small-rng-dev, librust-rand-0.8+std-dev, librust-rand-0.8+std-rng-dev, librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1-dev, librust-thiserror-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "c4124c19a49783e5d44c9ef0fef7bd3879409ed79db96c53ee14a76deb3eea8d 3633 rust-imap-codec_1.0.0-7.dsc 18146e3af091e9afd3834df2ee066e3908269406d4d17c861a556249649fc612 173906 rust-imap-codec_1.0.0.orig.tar.gz 7c660bb362a0f2e3cdf2810e49b8b05f43d3f082bff440b5e122dfe4ad820623 5648 rust-imap-codec_1.0.0-7.debian.tar.xz"
+    "77c3806027c73f0fee5efdb9430b652b44ba107a7f1fe674f3f998645e8b015b 4034 rust-imap-codec_2.0.0~alpha5+20240908-7.dsc deed7e38e052f05065b8eda5fd5e9211e82e87bd7e0d125ac0ad265a2ee5afc9 176176 rust-imap-codec_2.0.0~alpha5+20240908.orig.tar.xz 20a14e146927518d35aadc80c114d41d2ed096dbca97b3dacbddd645dcb79c50 6708 rust-imap-codec_2.0.0~alpha5+20240908-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-imap-codec"
   ],
   "Files": [
-    "f598dab11434aba6113bb6040875d531 3633 rust-imap-codec_1.0.0-7.dsc 69787abf3b93cc220a189cd9d176c80f 173906 rust-imap-codec_1.0.0.orig.tar.gz c4a5e6f0e326d84874ea05ae35092d3c 5648 rust-imap-codec_1.0.0-7.debian.tar.xz"
+    "e3616de25caccbc0acf239dd1164961a 4034 rust-imap-codec_2.0.0~alpha5+20240908-7.dsc 7a1b612eb7e04391fa40658e6b99e0da 176176 rust-imap-codec_2.0.0~alpha5+20240908.orig.tar.xz c991009184adb2d2d6a5b0168c02cf76 6708 rust-imap-codec_2.0.0~alpha5+20240908-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-imap-codec-1+arbitrary-dev, librust-imap-codec-1+bounded-static-dev, librust-imap-codec-1+default-dev, librust-imap-codec-1+ext-condstore-qresync-dev, librust-imap-codec-1+ext-login-referrals-dev, librust-imap-codec-1+ext-mailbox-referrals-dev, librust-imap-codec-1+quirk-crlf-relaxed-dev, librust-imap-codec-1+quirk-missing-text-dev, librust-imap-codec-1+quirk-rectify-numbers-dev, librust-imap-codec-1+serde-dev, librust-imap-codec-1+starttls-dev, librust-imap-codec-1-dev, librust-imap-types-1+arbitrary-dev, librust-imap-types-1+bounded-static-dev, librust-imap-types-1+default-dev, librust-imap-types-1+ext-condstore-qresync-dev, librust-imap-types-1+ext-login-referrals-dev, librust-imap-types-1+ext-mailbox-referrals-dev, librust-imap-types-1+serde-dev, librust-imap-types-1+starttls-dev, librust-imap-types-1+unvalidated-dev, librust-imap-types-1-dev, librust-rand-0.8+small-rng-dev, librust-regex-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-rust, librust-imap-codec-2+arbitrary-dev, librust-imap-codec-2+arbitrary-simplified-dev, librust-imap-codec-2+default-dev, librust-imap-codec-2+ext-condstore-qresync-dev, librust-imap-codec-2+ext-id-dev, librust-imap-codec-2+ext-login-referrals-dev, librust-imap-codec-2+ext-mailbox-referrals-dev, librust-imap-codec-2+ext-metadata-dev, librust-imap-codec-2+fuzz-dev, librust-imap-codec-2+quirk-crlf-relaxed-dev, librust-imap-codec-2+quirk-dev, librust-imap-codec-2+quirk-id-empty-to-nil-dev, librust-imap-codec-2+quirk-missing-text-dev, librust-imap-codec-2+quirk-rectify-numbers-dev, librust-imap-codec-2+quirk-spaces-between-addresses-dev, librust-imap-codec-2+quirk-trailing-space-dev, librust-imap-codec-2+serde-dev, librust-imap-codec-2+starttls-dev, librust-imap-codec-2+tag-generator-dev, librust-imap-codec-2-dev, librust-imap-types-2+arbitrary-dev, librust-imap-types-2+arbitrary-simplified-dev, librust-imap-types-2+default-dev, librust-imap-types-2+ext-condstore-qresync-dev, librust-imap-types-2+ext-id-dev, librust-imap-types-2+ext-login-referrals-dev, librust-imap-types-2+ext-mailbox-referrals-dev, librust-imap-types-2+ext-metadata-dev, librust-imap-types-2+serde-dev, librust-imap-types-2+starttls-dev, librust-imap-types-2+tag-generator-dev, librust-imap-types-2-dev, librust-rand-0.8+small-rng-dev, librust-regex-1+default-dev, librust-serde-json-1-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-imap-codec"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-imap-codec.git"
   ],
   "Version": [
-    "1.0.0-7"
+    "2.0.0~alpha5+20240908-7"
   ]
 }
