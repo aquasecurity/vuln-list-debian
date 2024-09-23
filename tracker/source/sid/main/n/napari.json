@@ -6,16 +6,16 @@
     "python3-napari"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-app-model, python3-cachey, python3-certifi, python3-dask, python3-docstring-parser, python3-imageio, python3-ipython, python3-jsonschema, python3-lazy-loader, python3-lxml, python3-lxml-html-clean, python3-magicgui, python3-napari-plugin-engine, python3-npe2, python3-numpy, python3-numpydoc, python3-opengl, python3-pandas, python3-pil, python3-pint, python3-platformdirs, python3-psutil, python3-psygnal, python3-pydantic, python3-pygments, python3-pytest, python3-pytest-xvfb, python3-qtpy, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-skimage, python3-sphinx, python3-superqt, python3-tifffile, python3-toolz, python3-tqdm, python3-typing-extensions, python3-vispy (\u003e= 0.13), python3-wrapt, python3-xarray, python3-yaml, python3-zarr"
+    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-app-model (\u003e= 0.2.8), python3-cachey, python3-certifi, python3-dask, python3-docstring-parser, python3-hypothesis, python3-imageio, python3-ipython, python3-jsonschema, python3-lazy-loader, python3-lxml, python3-lxml-html-clean, python3-magicgui, python3-napari-console, python3-napari-plugin-engine, python3-napari-plugin-manager, python3-napari-svg, python3-npe2, python3-numpy, python3-numpydoc, python3-opengl, python3-pandas, python3-pil, python3-pint, python3-platformdirs, python3-pretend, python3-psutil, python3-psygnal, python3-pyautogui, python3-pydantic, python3-pygments, python3-pytest, python3-pytest-pretty, python3-pytest-xvfb, python3-pytestqt, python3-qtpy, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-skimage, python3-sphinx, python3-superqt, python3-tifffile, python3-toolz, python3-tqdm, python3-typing-extensions, python3-vispy (\u003e= 0.13), python3-wrapt, python3-xarray, python3-yaml, python3-zarr"
   ],
   "Checksums-Sha256": [
-    "2febbfc250a08d71b8aac871c10237139358ff9c2526473abfd5aa7271e46899 2833 napari_0.5.0~a5-1.dsc 9c53bfd04ab76744be3f62e6f2eaf976be03a8b421683a88aa3ffa00b6688a35 2530538 napari_0.5.0~a5.orig.tar.gz f85864031ac33e45fc6d91a90ebd0cddff3a438b65513bf8bffda16790c8ca36 4020 napari_0.5.0~a5-1.debian.tar.xz"
+    "9c81c25049173b515eafecbdba938c2df4696c8f97e03c7a3c9ab0ac199a5a0f 3065 napari_0.5.3~rc1-1.dsc bb2e4420269339b09dd3d831986d87f23e4c0ea2687bdf9d5dd7d40853976d0f 2948107 napari_0.5.3~rc1.orig.tar.gz 42d802639066c39731b1e869c6932b6af72294e963d779131f91c4800d19526d 4856 napari_0.5.3~rc1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/napari"
   ],
   "Files": [
-    "8001ca2db820189171cfa039f729d4cf 2833 napari_0.5.0~a5-1.dsc c5800de045936bbc3b8075d14c9e33a2 2530538 napari_0.5.0~a5.orig.tar.gz 56f4208bed7177c0413518104d0b5b73 4020 napari_0.5.0~a5-1.debian.tar.xz"
+    "fe76d6e3b5d490ac7f4f4c1fb8c89ec5 3065 napari_0.5.3~rc1-1.dsc 031486c0bc204b53a4ac0fd46ba18265 2948107 napari_0.5.3~rc1.orig.tar.gz 51fdb02e81dd410b48fd536fe08af082 4856 napari_0.5.3~rc1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "4.6.2.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pytest, python3-pytestqt"
   ],
   "Uploaders": [
-    "Debian PaN Maintainers \u003cdebian-pan-maintainers@alioth-lists.debian.net\u003e, Roland Mas \u003clolando@debian.org\u003e"
+    "Debian PaN Maintainers \u003cdebian-pan-maintainers@alioth-lists.debian.net\u003e, Roland Mas \u003clolando@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/napari"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/napari.git"
   ],
   "Version": [
-    "0.5.0~a5-1"
+    "0.5.3~rc1-1"
   ]
 }
