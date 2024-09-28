@@ -3,25 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "libjmagick6-java, jmagick6-docs, libjmagick6-jni"
+    "libjmagick7-java, jmagick7-docs, libjmagick7-jni"
   ],
   "Build-Depends": [
-    "cdbs, chrpath, debhelper (\u003e= 10), default-jdk, libmagickcore-dev, maven-repo-helper, autoconf"
+    "chrpath, debhelper-compat (= 13), default-jdk, libmagickcore-dev, maven-repo-helper, javahelper, libmagickwand-dev, junit4 \u003c!nocheck\u003e, imagemagick \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b45678a7d70bda925ca33d0872ab80bde937dc60e1d9e8f267093f634796fa18 2251 jmagick_6.6.9~20130201-svn99-5.dsc 6832bec3a415840323630fa4b7687c412aa9284e61cd071a3a0bac6df51b97ce 344812 jmagick_6.6.9~20130201-svn99.orig.tar.xz be179fe2a6275b021f76d5e0dff87aa129e41cabfaf769bc9b0e449859a6b9d0 8892 jmagick_6.6.9~20130201-svn99-5.debian.tar.xz"
+    "2c05abc5ca204ea1a1de90818acc364e1d5a5333b4b1a339a2fae1606a02c00a 2234 jmagick_6.7.8-1.dsc 0d57574faebece516973587637a5de5b7cccbc7f431b3298a054161400248fa1 248371 jmagick_6.7.8.orig.tar.gz c1475bbb85896a9df34a3e64e799525db7fc6adf335ccebf9d7d31c6ea6a3668 15328 jmagick_6.7.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jmagick"
   ],
   "Files": [
-    "c045757d2de6988a471e8b703c2abc5c 2251 jmagick_6.6.9~20130201-svn99-5.dsc df56fcbbfc5935c9198450c15d452b44 344812 jmagick_6.6.9~20130201-svn99.orig.tar.xz 2cf487f356d306e4cf382a83a7916bd7 8892 jmagick_6.6.9~20130201-svn99-5.debian.tar.xz"
+    "23caba26f70ae434670a41e11e038e7d 2234 jmagick_6.7.8-1.dsc bdb4daf46cc6641492e494c272d2618a 248371 jmagick_6.7.8.orig.tar.gz d0dd7345187ed29644eaabe616e2a0e0 15328 jmagick_6.7.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://sourceforge.net/projects/jmagick/"
+    "https://github.com/techblue/jmagick"
   ],
   "Maintainer": [
     "Debian Java Maintainers \u003cpkg-java-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "jmagick"
   ],
   "Package-List": [
-    "jmagick6-docs deb doc optional arch=all libjmagick6-java deb java optional arch=all libjmagick6-jni deb graphics optional arch=any"
+    "jmagick7-docs deb doc optional arch=all libjmagick7-java deb java optional arch=all libjmagick7-jni deb graphics optional arch=any"
   ],
   "Priority": [
     "source"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.1.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "default-jdk"
   ],
   "Uploaders": [
     "Varun Hiremath \u003cvarun@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/java-team/jmagick.git"
   ],
   "Version": [
-    "6.6.9~20130201-svn99-5"
+    "6.7.8-1"
   ]
 }
