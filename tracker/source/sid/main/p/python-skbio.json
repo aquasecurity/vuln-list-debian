@@ -6,7 +6,7 @@
     "python-skbio-doc, python3-skbio"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cython3-legacy, dh-sequence-python3, python3-all-dev, python3-biom-format, python3-setuptools, python3-numpy, python3-matplotlib, python3-cachecontrol, python3-decorator, python3-h5py, python3-pandas, python3-scipy (\u003e= 1.9), python3-ipython, python3-hdmedians, python3-sklearn, python3-natsort, python3-statsmodels, libssw-dev, sphinx-common, libsimde-dev"
+    "debhelper-compat (= 13), cython3 (\u003e= 3), dh-sequence-python3, python3-all-dev, python3-biom-format, python3-setuptools, python3-numpy, python3-matplotlib, python3-cachecontrol, python3-decorator, python3-h5py, python3-pandas, python3-scipy (\u003e= 1.9), python3-ipython, python3-hdmedians, python3-sklearn, python3-natsort, python3-statsmodels, libssw-dev, sphinx-common, libsimde-dev"
   ],
   "Build-Depends-Arch": [
     "python3-pytest \u003c!nocheck\u003e, architecture-is-64-bit"
@@ -15,13 +15,13 @@
     "python3-sphinx \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python-scipy-doc \u003c!nodoc\u003e, python-biom-format-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "b30a96bd2ba1b3fe17373702f3a12b84dc6a15fdc3b0bf1d621d424fdf4e8fa7 2945 python-skbio_0.6.2-2.dsc c996ce6f0203c9db67f041131e024d2aba1319b6adfc7450e4f417cc52e4300a 2204062 python-skbio_0.6.2.orig.tar.gz d15f68e29eb5c768d03c275212f849c31bb78b4a61f42e571583472b97f2bc0f 12372 python-skbio_0.6.2-2.debian.tar.xz"
+    "89bf5b66a9e3e124f700fab0fadf6194280e64e00511f34af0ffcf72a23f124d 2897 python-skbio_0.6.2-3.dsc c996ce6f0203c9db67f041131e024d2aba1319b6adfc7450e4f417cc52e4300a 2204062 python-skbio_0.6.2.orig.tar.gz 075c89d632096bbe0be598949808550d3b11ec40825eb76dcb9453fad31374f2 11076 python-skbio_0.6.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-skbio"
   ],
   "Files": [
-    "c21b2a5eb9f4c683e43e560395d807a7 2945 python-skbio_0.6.2-2.dsc f7ea4d244ea949e10c8cd2d8217048ed 2204062 python-skbio_0.6.2.orig.tar.gz a56cc6f0aabc389015b4fa75f6fed28b 12372 python-skbio_0.6.2-2.debian.tar.xz"
+    "e748b05fa8a0dd87d10d394f435f073f 2897 python-skbio_0.6.2-3.dsc f7ea4d244ea949e10c8cd2d8217048ed 2204062 python-skbio_0.6.2.orig.tar.gz 2df3e1569ba27c02c1e0d42ec3fd1013 11076 python-skbio_0.6.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,10 +48,7 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e, Kevin Murray \u003ckdmfoss@gmail.com\u003e, Étienne Mollier \u003cemollier@debian.org\u003e"
@@ -63,6 +60,6 @@
     "https://salsa.debian.org/med-team/python-skbio.git"
   ],
   "Version": [
-    "0.6.2-2"
+    "0.6.2-3"
   ]
 }
