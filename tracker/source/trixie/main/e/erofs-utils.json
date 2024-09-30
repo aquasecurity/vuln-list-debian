@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any"
+    "any"
   ],
   "Binary": [
     "erofs-utils, erofsfuse"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 10), libdeflate-dev, liblz4-dev, liblzma-dev, libselinux1-dev, libzstd-dev, pkgconf, uuid-dev, zlib1g-dev, libfuse-dev \u003c!pkg.erofs-utils.no-erofsfuse\u003e"
+    "debhelper-compat (= 10), libdeflate-dev, liblz4-dev, liblzma-dev, libselinux1-dev [linux-any], libzstd-dev, pkgconf, uuid-dev, zlib1g-dev, libfuse-dev [linux-any] \u003c!pkg.erofs-utils.no-erofsfuse\u003e"
   ],
   "Checksums-Sha256": [
-    "e45951583e6253da34fe69fa139420aa2856f1c65d5ef47dd3ab9a3794996968 1442 erofs-utils_1.8.1-1.dsc 5dbf7b492f7682462b97a77121d43ca7609cd90e65f8c96931aefc820a6f0da3 184385 erofs-utils_1.8.1.orig.tar.gz ff3748773aca0a5f55c331fbe8659f16d4e9a86c71a35e5db7eff14581d718b8 4100 erofs-utils_1.8.1-1.debian.tar.xz"
+    "63c3c8b29c1f97f501586595b38ade65188d2d78da4f6a691882ed4da7795de5 1454 erofs-utils_1.8.2-2.dsc 64b6ff7e899f62480283cee63787f37f0f9c4be7a6bc7a23d734aaa873a6cff4 185971 erofs-utils_1.8.2.orig.tar.gz a40d0b5d0ecc87eb846c6d009577a171572e3b780c93bb5799ac6e20be4968aa 4152 erofs-utils_1.8.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/erofs-utils"
   ],
   "Files": [
-    "2d4ef0666c3973d78614c7725736bc8a 1442 erofs-utils_1.8.1-1.dsc 117da850614cb77b5ac0e0d97494fcfa 184385 erofs-utils_1.8.1.orig.tar.gz 45497539c7e54b976b204b473bf4e8d6 4100 erofs-utils_1.8.1-1.debian.tar.xz"
+    "ddab03652a0e2216e37d0c0deeb66015 1454 erofs-utils_1.8.2-2.dsc 38ae282a2d190c258c9686d6e7618313 185971 erofs-utils_1.8.2.orig.tar.gz af96a26bed60458590c59d36445a58cb 4152 erofs-utils_1.8.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "erofs-utils"
   ],
   "Package-List": [
-    "erofs-utils deb admin optional arch=linux-any erofsfuse deb admin optional arch=linux-any profile=!pkg.erofs-utils.no-erofsfuse"
+    "erofs-utils deb admin optional arch=any erofsfuse deb admin optional arch=linux-any profile=!pkg.erofs-utils.no-erofsfuse"
   ],
   "Priority": [
     "extra"
@@ -42,6 +42,6 @@
     "4.7.0"
   ],
   "Version": [
-    "1.8.1-1"
+    "1.8.2-2"
   ]
 }
