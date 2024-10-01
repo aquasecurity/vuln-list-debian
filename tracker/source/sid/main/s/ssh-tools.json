@@ -1,24 +1,27 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "ssh-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), help2man"
+    "debhelper-compat (= 13), dh-golang, golang-any, golang-golang-x-crypto-dev, golang-k8s-sigs-yaml-dev"
   ],
   "Checksums-Sha256": [
-    "320dc726598b4d8d00039ef8003f6e2c59e9330f0ff69b73111f5f0fc584bd57 1675 ssh-tools_1.8-1.dsc d39ca805da5e0458b9cf309e70a5ac899eb9ec3d9eb98e6a8656b6a80b124de9 42336 ssh-tools_1.8.orig.tar.gz c74fe094723a94cd0b74a006131418974e996ab9580a12d058ada2914eedb131 3260 ssh-tools_1.8-1.debian.tar.xz"
+    "52215efef60ce4df744aa70a90cc00082740a9d59baa334692c4aa8e1a7775c5 1822 ssh-tools_1.9-1.dsc 6cbfcdb50af3661feb3528132b5321ad5a1fd3f5ac57939c9f9ea8e3337b9892 814560 ssh-tools_1.9.orig.tar.gz 65225cca9ef4482bee557eb4764733d2d0dd7bbe7aa2eadd73f0da32096adf71 4064 ssh-tools_1.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/ssh-tools"
   ],
   "Files": [
-    "babe66240b0295988e5c655e2b0b10ee 1675 ssh-tools_1.8-1.dsc 10ca72357514b1be61afdd8b81a3b866 42336 ssh-tools_1.8.orig.tar.gz 86cdcb0a9959f686314fa7905f72ed43 3260 ssh-tools_1.8-1.debian.tar.xz"
+    "5b944e337f1b241841c343324f4b803e 1822 ssh-tools_1.9-1.dsc 49e2711224223b98e466916bddd3d259 814560 ssh-tools_1.9.orig.tar.gz 7f2b6df3b95a339bb1e2a59541c11c29 4064 ssh-tools_1.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Go-Import-Path": [
+    "codeberg.org/vaporup/ssh-tools"
   ],
   "Homepage": [
     "https://codeberg.org/vaporup/ssh-tools"
@@ -30,7 +33,7 @@
     "ssh-tools"
   ],
   "Package-List": [
-    "ssh-tools deb utils optional arch=all"
+    "ssh-tools deb utils optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-go"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/ssh-tools"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/ssh-tools.git"
   ],
   "Version": [
-    "1.8-1"
+    "1.9-1"
   ]
 }
