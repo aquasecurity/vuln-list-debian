@@ -6,7 +6,7 @@
     "python3-psycopg, python3-psycopg-c, python3-psycopg-pool, python-psycopg-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, dh-python, libpq-dev, postgresql, cmake, python3-all-dev, python3-setuptools, pybuild-plugin-pyproject, python3-typing-extensions, python3-pytest \u003c!nocheck\u003e, python3-dnspython \u003c!nocheck\u003e, python3-shapely \u003c!nocheck\u003e, python3-tenacity \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, dh-python, libpq-dev, postgresql, cmake, python3-all-dev, python3-setuptools, pybuild-plugin-pyproject, python3-typing-extensions, python3-anyio \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-dnspython \u003c!nocheck\u003e, python3-shapely \u003c!nocheck\u003e, python3-tenacity \u003c!nocheck\u003e"
   ],
   "Build-Depends-Arch": [
     "cython3"
@@ -15,13 +15,13 @@
     "python3-doc \u003c!nodoc\u003e, python-psycopg2-doc \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autodoc-typehints \u003c!nodoc\u003e, furo \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "261dde468f2d9462cebf6db1289a38b86af0153b43a6710004c42cf1058ec30c 2651 psycopg3_3.2.1-3.dsc 9aa47afff6f16aff04a4df3d61d69e959bc9de8841a1dec0aa0b83e0db8452d5 396136 psycopg3_3.2.1.orig.tar.xz d563bcc92943bf047e4fcb5d7820b451052fb2ef3ea53ee56d6d15722e67b5d9 9736 psycopg3_3.2.1-3.debian.tar.xz"
+    "63e08a760dd03bf3d4cb3cf678d357fd3d5276dfe58e5bbc7ee292ff219afe31 2834 psycopg3_3.2.2-1.dsc f3fd877b6d023f61359e7346d9c9124111f255a7a71482b3c5aab55699993496 396636 psycopg3_3.2.2.orig.tar.xz 9df591042f980d14fa2e0e9e22314a3adb0ae593aecc124f788c8f1ead260687 10432 psycopg3_3.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/psycopg3"
   ],
   "Files": [
-    "2fbf7b8094b4b390084045ea3071e989 2651 psycopg3_3.2.1-3.dsc 518871f4f5457673944d0204b56a6853 396136 psycopg3_3.2.1.orig.tar.xz 23d0c3d5912175b76e3359ae1bc6b860 9736 psycopg3_3.2.1-3.debian.tar.xz"
+    "f1e5aa899ca885198b5a4d4b677444e8 2834 psycopg3_3.2.2-1.dsc 89201de808bb80158d81e2a9a18a308a 396636 psycopg3_3.2.2.orig.tar.xz e0b3ca25b90d7d8e261c85a682415f9a 10432 psycopg3_3.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/python-team/packages/psycopg3.git"
   ],
   "Version": [
-    "3.2.1-3"
+    "3.2.2-1"
   ]
 }
