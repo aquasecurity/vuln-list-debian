@@ -6,16 +6,16 @@
     "librust-trybuild2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-basic-toml-0.1+default-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.166-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.166-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.99-~~) \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-basic-toml-0.1+default-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.166-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.166-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.99-~~) \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b59375c8b0436511e249c4018f1b1a940cdbc459841f721435113bcdf433bd8e 2536 rust-trybuild2_1.1.0-2.dsc 11ed4105fe57ee3543bbe4f386a03647435ff56959e7a5c969e4ff3ab5d9b67c 41402 rust-trybuild2_1.1.0.orig.tar.gz 20cd45a4e2545818d0bdaace544e9661f8578b65c1163cea912351be41382406 2788 rust-trybuild2_1.1.0-2.debian.tar.xz"
+    "3589dd4cad6c5340f9dcd557846df531b22bf416834c2a8db52ca99df7b5e71b 1989 rust-trybuild2_1.2.0-1.dsc 9e7ab1c31cd9e92e56b63f4d85a6c6a854880aaf433191623f5d50e152dcdbc2 42260 rust-trybuild2_1.2.0.orig.tar.gz b761fe9caebbb750272bd37bef8763e8f22cb74df5b4ec631c2bc7cab25b453b 2836 rust-trybuild2_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-trybuild2"
   ],
   "Files": [
-    "7a788ee903774f5fc2ff39553b1fad7b 2536 rust-trybuild2_1.1.0-2.dsc 2f058cd06634d792a9ae8183e0444e84 41402 rust-trybuild2_1.1.0.orig.tar.gz 8603990d911199af3f617b934c21967b 2788 rust-trybuild2_1.1.0-2.debian.tar.xz"
+    "4b106526e4eaccc8f32404663238d93f 1989 rust-trybuild2_1.2.0-1.dsc a19f282bc50d9295f5b091d0e9184e19 42260 rust-trybuild2_1.2.0.orig.tar.gz 3a4abc08eb1f07654eccb16745057880 2836 rust-trybuild2_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-automod-1+default-dev"
+    "dh-cargo, librust-automod-1+default-dev, librust-rustversion-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/trybuild2]"
   ],
   "Version": [
-    "1.1.0-2"
+    "1.2.0-1"
   ]
 }
