@@ -6,16 +6,16 @@
     "librust-home-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+shlobj-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+shlobj-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a9706a033834c7af77f8cb24c561da7abb672f16289e68724c98f5cc723c73c2 2262 rust-home_0.5.5-1.dsc 5444c27eef6923071f7ebcc33e3444508466a76f7a2b93da00ed6e19f30c1ddb 8557 rust-home_0.5.5.orig.tar.gz afd2fd8aba2ebe70067fc7b268442f04b183a97d3c7d1dfb1197945abc2046ec 3228 rust-home_0.5.5-1.debian.tar.xz"
+    "18586d1b27b39db66a4af8e17369656be33f9dcd425a6e7a4c051bb8ae86961f 2287 rust-home_0.5.9-1.dsc e3d1354bf6b7235cb4a0576c2619fd4ed18183f689b12b006a0ee7329eeff9a5 8760 rust-home_0.5.9.orig.tar.gz d82af52d648bd6742afb419e9a48aec2477a38526c811da196e46c62a1f94ad5 4028 rust-home_0.5.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-home"
   ],
   "Files": [
-    "70ca1b47d2f5cfc33ad63c79ee059ed0 2262 rust-home_0.5.5-1.dsc 11681ec4554f1f934b25eeba3f558ea7 8557 rust-home_0.5.5.orig.tar.gz d5f1ff1b2f834712d3c97fcf966592d8 3228 rust-home_0.5.5-1.debian.tar.xz"
+    "f30a96a0cae4df1cc9b3a3f9585c208e 2287 rust-home_0.5.9-1.dsc d81f9251921f8a289dcf69fe4ccc3788 8760 rust-home_0.5.9.orig.tar.gz a7860a0005117b0693fed8ba21e82fb1 4028 rust-home_0.5.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/home]"
   ],
   "Version": [
-    "0.5.5-1"
+    "0.5.9-1"
   ]
 }
