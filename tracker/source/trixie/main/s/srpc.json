@@ -6,16 +6,16 @@
     "libsrpc0t64, libsrpc-dev, libsrpc-bin"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 13), libworkflow-dev, libssl-dev, libsnappy-dev, libprotobuf-dev, protobuf-compiler, liblz4-dev"
+    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 13), libworkflow-dev, libssl-dev, libgtest-dev, libsnappy-dev, libprotobuf-dev, protobuf-compiler, liblz4-dev"
   ],
   "Checksums-Sha256": [
-    "57942cff38676e65491b130e4fa9b8ffe05aaed95ab6bb81de5238a1ac5b67ae 2016 srpc_0.10.3-1.dsc ba8a4de11dad92662a71000b585217fa724d1cdb7a5d511463ec798cbfe632b5 424988 srpc_0.10.3.orig.tar.gz 87851a252018781a30796aa2203a6220047b48dd57a4d13fbe8ea4ccfec5a43a 4128 srpc_0.10.3-1.debian.tar.xz"
+    "822eef0d7f90402d2c2b0097d69ebd0ccb2318da5cc97d2f0bc3ea232c649824 2085 srpc_0.10.3-2.dsc ba8a4de11dad92662a71000b585217fa724d1cdb7a5d511463ec798cbfe632b5 424988 srpc_0.10.3.orig.tar.gz 659a46f55a9a3acb8a3c393b5ab2c2dc7d72c1cc1f502c3bbbc955b8c3c9ddaa 5108 srpc_0.10.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/srpc"
   ],
   "Files": [
-    "731bc5ef1bb7a7c69fc5f0b30796615a 2016 srpc_0.10.3-1.dsc 88ffd98c5f3c722cffa356fff59d0669 424988 srpc_0.10.3.orig.tar.gz 67e064b5bd0907cda75b8dee23b4fa80 4128 srpc_0.10.3-1.debian.tar.xz"
+    "c349e34bb5cdeae2ae710f60be94660f 2085 srpc_0.10.3-2.dsc 88ffd98c5f3c722cffa356fff59d0669 424988 srpc_0.10.3.orig.tar.gz 834aed97cc3ebdc1a08dbd8d6fdb42a1 5108 srpc_0.10.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/srpc"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/srpc.git"
   ],
   "Version": [
-    "0.10.3-1"
+    "0.10.3-2"
   ]
 }
