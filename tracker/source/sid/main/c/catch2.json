@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "catch2"
+    "libcatch2-dev, catch2"
   ],
   "Build-Depends": [
     "cmake, debhelper-compat (= 13), python3"
   ],
   "Checksums-Sha256": [
-    "b00c7c6a82e72116dc51ba389045aff9f104183f8b086fc00813d84e84be0e7b 1844 catch2_3.4.0-1.dsc 151e7532aeab57f876c670562801fbf64c8545d88a4b843cb1f6ad75c174b8d2 1112781 catch2_3.4.0.orig.tar.gz c4b06cb45582ce707ea5afe9c996f0f2ef582542b757cc87a9894c2b660f9b67 4252 catch2_3.4.0-1.debian.tar.xz"
+    "d6165f300c2fca27e1a37b04c7c2c830c988bc16ae00add9f94d2b1f4c6ee9c6 1960 catch2_3.7.1-0.1.dsc c991b247a1a0d7bb9c39aa35faf0fe9e19764213f28ffba3109388e62ee0269c 1193290 catch2_3.7.1.orig.tar.gz 788b1680c16be5de45e568fa670039109480a926f4439c7f1cf3b4b058e22ba7 5408 catch2_3.7.1-0.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/catch2"
   ],
   "Files": [
-    "50f0e3fc4f0e57ab78cf72092f8b13e0 1844 catch2_3.4.0-1.dsc fd60c0c1afecf12bbd2521580edd6386 1112781 catch2_3.4.0.orig.tar.gz ee7f5cda953f25cc5c6e87b4f40ea3e5 4252 catch2_3.4.0-1.debian.tar.xz"
+    "0cf42b1f0442337b88ae0db16f4b297b 1960 catch2_3.7.1-0.1.dsc 9fcbec1dc95edcb31c6a0d6c5320e098 1193290 catch2_3.7.1.orig.tar.gz 1014823c6317b70357569633a2afdd5e 5408 catch2_3.7.1-0.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "catch2"
   ],
   "Package-List": [
-    "catch2 deb devel optional arch=any"
+    "catch2 deb oldlibs optional arch=all libcatch2-dev deb devel optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "cmake, g++, make, pkgconf"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/catch2"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/catch2.git"
   ],
   "Version": [
-    "3.4.0-1"
+    "3.7.1-0.1"
   ]
 }
