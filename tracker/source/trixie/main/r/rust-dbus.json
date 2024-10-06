@@ -6,16 +6,16 @@
     "librust-dbus-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66-~~) \u003c!nocheck\u003e, librust-libdbus-sys-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66-~~) \u003c!nocheck\u003e, librust-libdbus-sys-0.2+default-dev (\u003e= 0.2.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2f553e8cd5063d09944fc832758ddcf5ba5ae1ee289594f92c226791c1d0eba9 2320 rust-dbus_0.9.6-1.dsc 6f8bcdd56d2e5c4ed26a529c5a9029f5db8290d433497506f958eae3be148eb6 103402 rust-dbus_0.9.6.orig.tar.gz e4ff5e277005f2c057166210f24130f007fdf1964fcca1dd59e723c1e7ce7210 3396 rust-dbus_0.9.6-1.debian.tar.xz"
+    "41d4bc0c0161fddca5315f7258c4e0bf04f4e79b1eacb818293966d6c121c811 1654 rust-dbus_0.9.7-1.dsc 1bb21987b9fb1613058ba3843121dd18b163b254d8a6e797e144cbac14d96d1b 104206 rust-dbus_0.9.7.orig.tar.gz 9a8c1ffb4f87b79581f8ccb9a605cdc1899df322fcf4951ffdcfc1b631c1edd6 4152 rust-dbus_0.9.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dbus"
   ],
   "Files": [
-    "67ccfb313daa4deb690ea05df556f728 2320 rust-dbus_0.9.6-1.dsc eb1e014c417a0d7f2e843c868188af55 103402 rust-dbus_0.9.6.orig.tar.gz 7a1071964d587303fa54dacd7e4854b5 3396 rust-dbus_0.9.6-1.debian.tar.xz"
+    "81d5e0a28e5842321e236f14161358be 1654 rust-dbus_0.9.7-1.dsc b170c380ee4d59e4ed866afaa26a86c7 104206 rust-dbus_0.9.7.orig.tar.gz 001f2ea874344bcf5a8c6ec5ab381283 4152 rust-dbus_0.9.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dbus-daemon, dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dbus]"
   ],
   "Version": [
-    "0.9.6-1"
+    "0.9.7-1"
   ]
 }
