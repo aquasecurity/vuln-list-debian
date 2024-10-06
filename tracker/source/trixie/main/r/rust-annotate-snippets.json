@@ -6,16 +6,16 @@
     "librust-annotate-snippets-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e34f9e1696c84623964fc9668a2ec3b950bf8e9e17f6de7c2d064e53ff2d889f 2486 rust-annotate-snippets_0.9.1-1.dsc c3b9d411ecbaf79885c6df4d75fff75858d5995ff25385657a28af47e82f9c36 31829 rust-annotate-snippets_0.9.1.orig.tar.gz 1355b0c70da472876dd5ae4209fb45e65f86b2c746bbac971f1bf305920fd9f5 2736 rust-annotate-snippets_0.9.1-1.debian.tar.xz"
+    "c80f01037b222face3762285371a979e13a6f26d35317e6232f0ca31c4ed86c7 2614 rust-annotate-snippets_0.11.4-1.dsc 24e35ed54e5ea7997c14ed4c70ba043478db1112e98263b3b035907aa197d991 46876 rust-annotate-snippets_0.11.4.orig.tar.gz 80fe3a7f7bfceb46d8f7504a19559242df7cefefaae809a38f27b79970f32f98 3236 rust-annotate-snippets_0.11.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-annotate-snippets"
   ],
   "Files": [
-    "16dda14faddc4291e29c8f9aa86a7383 2486 rust-annotate-snippets_0.9.1-1.dsc 8394c7150144eb738530ffbb24d96806 31829 rust-annotate-snippets_0.9.1.orig.tar.gz 84589b6c7fb6a574a3d86e7dfec98b6b 2736 rust-annotate-snippets_0.9.1-1.debian.tar.xz"
+    "dac81a9c9cbaebd5d2bf79cb288f8f66 2614 rust-annotate-snippets_0.11.4-1.dsc f8c5610f871d7985ed467fd18ecb2b05 46876 rust-annotate-snippets_0.11.4.orig.tar.gz c102ca0b380821fa9afc7feebe477eb4 3236 rust-annotate-snippets_0.11.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-difference-2+default-dev, librust-glob-0.3+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml-0.5+default-dev, librust-yansi-term-0.1+default-dev"
+    "dh-cargo, librust-anstream-0.6+default-dev, librust-criterion-0.5+default-dev, librust-difference-2+default-dev, librust-glob-0.3+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/annotate-snippets]"
   ],
   "Version": [
-    "0.9.1-1"
+    "0.11.4-1"
   ]
 }

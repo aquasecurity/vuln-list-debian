@@ -6,16 +6,16 @@
     "librust-wycheproof-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.21+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "da441e630f18bb64947b451f176a4405c89fefc84228f8f9f031724013326457 2363 rust-wycheproof_0.5.0-1.dsc ccaef718f69c19f7f66faacc10f747180ceb4883a53c35548be4cac4cec1591c 17539502 rust-wycheproof_0.5.0.orig.tar.gz f512a3f0e6d2f1c6208a619852238eeea9a0e43b67325ba96e5b133c53049f29 2468 rust-wycheproof_0.5.0-1.debian.tar.xz"
+    "2412d3fd19296405efc62f8a7406d7c5ed2fce1c725865160d439c13b53ccabe 2431 rust-wycheproof_0.5.0-2.dsc ccaef718f69c19f7f66faacc10f747180ceb4883a53c35548be4cac4cec1591c 17539502 rust-wycheproof_0.5.0.orig.tar.gz 254c425bd8db5f7d3fb5622ff1e6f57b4a69633c9b8c01df9433206b9780b846 2524 rust-wycheproof_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wycheproof"
   ],
   "Files": [
-    "98375bef1385fe4868b9068326cc3fe7 2363 rust-wycheproof_0.5.0-1.dsc 8ec164d2ac40740b1cb4460646220150 17539502 rust-wycheproof_0.5.0.orig.tar.gz a98036ffe40f0f264665b726166d5fe0 2468 rust-wycheproof_0.5.0-1.debian.tar.xz"
+    "99892128d8d07e55b7aa628b210f813b 2431 rust-wycheproof_0.5.0-2.dsc 8ec164d2ac40740b1cb4460646220150 17539502 rust-wycheproof_0.5.0.orig.tar.gz bcbf81b50a4f963f143511314446d23e 2524 rust-wycheproof_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wycheproof]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.0-2"
   ]
 }
