@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "amd64 arm64 mips64el ppc64el s390x loong64 ppc64 riscv64 sparc64 all"
+    "any all"
   ],
   "Binary": [
     "gromacs, gromacs-data, libgromacs9, libgromacs-dev, libnblib-gmx0, libnblib-gmx-dev"
   ],
   "Build-Depends": [
-    "bash-completion, chrpath, cmake (\u003e= 3.13), debhelper-compat (= 13), dh-python, libblas-dev, libboost-dev, libfftw3-dev, libhwloc-dev, liblapack-dev, libmuparser-dev (\u003e= 2.3.4), lsb-release, mpi-default-bin, mpi-default-dev, pkgconf, python3-dev, python3-mpi4py, python3-networkx, python3-numpy, python3-pybind11, python3-pytest, zlib1g-dev"
+    "architecture-is-64-bit, bash-completion, chrpath, cmake (\u003e= 3.13), debhelper-compat (= 13), dh-python, libblas-dev, libboost-dev, libfftw3-dev, libhwloc-dev, liblapack-dev, libmuparser-dev (\u003e= 2.3.4), lsb-release, mpi-default-bin, mpi-default-dev, pkgconf, python3-dev, python3-mpi4py, python3-networkx, python3-numpy, python3-pybind11, python3-pytest, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
     "doxygen, furo, ghostscript, graphicsmagick, graphviz, mscgen, python3-pygments, python3-sphinx, python3-sphinx-argparse, python3-sphinx-copybutton, python3-sphinx-inline-tabs, python3-sphinxcontrib.autoprogram, python3-sphinxcontrib.plantuml, rdfind, symlinks, tex-gyre, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra"
   ],
   "Checksums-Sha256": [
-    "2ddebaf952db19748c81821f32b8572b2841cca8d56215f491d5622f9beb9e94 3648 gromacs_2024.2-1.dsc a748292ef4f2da916e28a8e091c7237ed398ee4e08dd9b796a3880d5e9494e7a 48131919 gromacs_2024.2.orig-regressiontests.tar.gz 802a7e335f2e895770f57b159e4ec368ebb0ff2ce6daccf706c6e8025c36852b 42367929 gromacs_2024.2.orig.tar.gz 76766887335aed21540bb4151fc1c37f1dc3dab7d251a8942f7504e2157fb1f6 37792 gromacs_2024.2-1.debian.tar.xz"
+    "1f2fc0148260deb08e493ee39b22bde92fe4e31a7ea392bd8667bd79783f8e1d 3305 gromacs_2024.3-2.dsc 14a8ea18198fcbb5bcbf464df784f0f4385d66f5a32f41889e4efedffc3fbaa4 32776961 gromacs_2024.3.orig-regressiontests.tar.gz bbda056ee59390be7d58d84c13a9ec0d4e3635617adf2eb747034922cba1f029 42373103 gromacs_2024.3.orig.tar.gz 80fcc277cde2f6b3f234fa9245697121ccfa2fe41e888fda0e48f50ffd643747 38184 gromacs_2024.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gromacs"
   ],
   "Files": [
-    "75b1deda142f2a7cce939ea116908f7d 3648 gromacs_2024.2-1.dsc c640de481d78b6c4c418663af94f65ee 48131919 gromacs_2024.2.orig-regressiontests.tar.gz b1caec2a81e221d68b3a58c53f1add40 42367929 gromacs_2024.2.orig.tar.gz 83107bcb1b676f51a6868e18721b2a8c 37792 gromacs_2024.2-1.debian.tar.xz"
+    "60b79ed08aa646a66c6f3b8c0f40c888 3305 gromacs_2024.3-2.dsc 65e1f062b64362606ac03705269e7a8f 32776961 gromacs_2024.3.orig-regressiontests.tar.gz 2eb4cd478cc5178fc9f67d66fcf48ed6 42373103 gromacs_2024.3.orig.tar.gz 4651fb0b064dd1eb1ac5b7bf1119d86f 38184 gromacs_2024.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gromacs"
   ],
   "Package-List": [
-    "gromacs deb science optional arch=amd64,arm64,mips64el,ppc64el,s390x,loong64,ppc64,riscv64,sparc64 gromacs-data deb science optional arch=all libgromacs-dev deb libdevel optional arch=amd64,arm64,mips64el,ppc64el,s390x,loong64,ppc64,riscv64,sparc64 libgromacs9 deb libs optional arch=amd64,arm64,mips64el,ppc64el,s390x,loong64,ppc64,riscv64,sparc64 libnblib-gmx-dev deb libdevel optional arch=amd64,arm64,mips64el,ppc64el,s390x,loong64,ppc64,riscv64,sparc64 libnblib-gmx0 deb libs optional arch=amd64,arm64,mips64el,ppc64el,s390x,loong64,ppc64,riscv64,sparc64"
+    "gromacs deb science optional arch=any gromacs-data deb science optional arch=all libgromacs-dev deb libdevel optional arch=any libgromacs9 deb libs optional arch=any libnblib-gmx-dev deb libdevel optional arch=any libnblib-gmx0 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -42,7 +42,7 @@
     "science"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debichem-team/gromacs.git"
   ],
   "Version": [
-    "2024.2-1"
+    "2024.3-2"
   ]
 }
