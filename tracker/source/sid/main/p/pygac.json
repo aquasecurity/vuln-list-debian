@@ -9,7 +9,7 @@
     "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-bottleneck, python3-docutils, python3-geotiepoints, python3-h5py, python3-hatchling, python3-hatch-vcs, python3-numpy, python3-packaging, python3-pyorbital, python3-pytest \u003c!nocheck\u003e, python3-scipy"
   ],
   "Checksums-Sha256": [
-    "208ac3de0c7ac12600016e088bdcc24471958748ee7336e4de6f39543b591975 3284 pygac_1.7.4-1.dsc 53d2bb23a6670891956726c54f39a51218789d5e80a7214716b6b57de886e404 516773 pygac_1.7.4.orig.tar.gz cce9577c7dacd41f2bae405fadbad282337a688d98009a619a70f9bf4dd4d0fc 6092 pygac_1.7.4-1.debian.tar.xz"
+    "b9808e324e2c545cacc635c93c971c307bcdca8e75b58c5a7063bfcbf879c1ab 3284 pygac_1.7.4-2.dsc 53d2bb23a6670891956726c54f39a51218789d5e80a7214716b6b57de886e404 516773 pygac_1.7.4.orig.tar.gz 8579155c341d99652121b54566359a6c155ef6ee347baa564c2baf670513683e 6512 pygac_1.7.4-2.debian.tar.xz"
   ],
   "Description": [
     "Python package to read and calibrate NOAA AVHRR GAC data pygac reads NOAA AVHRR Global Area Coverage (GAC) data, and performs state of the art calibration and navigation. . It must be noted that pygac expects Level 1b file to contain normal GAC header and data records, the format of which are mentioned in the official NOAA POD and KLM Data User Guides. The user should not prepend any other header (e.g. when downloading GAC data from CLASS archive etc) to the L1b file. In the first pre-processing step, pygac determines whether the GAC data comes from the second (i.e. NOAA-14 and before) or the third generation (NOAA-15 and onwards) AVHRR instrument by \"pygac-run\". This is done by reading the first three bytes of the data set. If they contain the any of the following values, [\"CMS\", \"NSS\", \"UKM\", \"DSS\"], then the KLM reader from \"gac_klm.py\" file is invoked, otherwise the POD reader is invoked (gac_pod.py)."
@@ -18,7 +18,7 @@
     "pool/main/p/pygac"
   ],
   "Files": [
-    "d15756a53a19d02a65083f538681fe47 3284 pygac_1.7.4-1.dsc eb80d895278a3bda884d81a6bcce30a8 516773 pygac_1.7.4.orig.tar.gz 6a21e8f403e8f2af4fad962188761468 6092 pygac_1.7.4-1.debian.tar.xz"
+    "020453c16b00741be57eacf1cbc83c7c 3284 pygac_1.7.4-2.dsc eb80d895278a3bda884d81a6bcce30a8 516773 pygac_1.7.4.orig.tar.gz d701bbdd35a17d5cb66fdaadef9e89dd 6512 pygac_1.7.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/pygac.git"
   ],
   "Version": [
-    "1.7.4-1"
+    "1.7.4-2"
   ]
 }
