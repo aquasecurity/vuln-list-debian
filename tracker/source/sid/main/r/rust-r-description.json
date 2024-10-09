@@ -6,22 +6,22 @@
     "librust-r-description-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-deb822-lossless+default-dev (\u003e= 0.1.22-~~) \u003c!nocheck\u003e, librust-deb822-lossless+derive-dev (\u003e= 0.1.22-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-deb822-lossless+default-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-deb822-lossless+derive-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-rowan+default-dev (\u003e= 0.15.16-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "038b53ba80d9718f717bd2e5e9629bb57ae0b2601927b89d591f145e1bd1e638 2050 rust-r-description_0.1.2-2.dsc c563814ace27b1f4c91e1f48ab86c395f2e07ac13e29491cd3a63b8b27b34d94 3869 rust-r-description_0.1.2.orig.tar.gz e6921a209aac179fe579cd7b0f42a6cd8d837e34b04aff8654780bccc090c025 2032 rust-r-description_0.1.2-2.debian.tar.xz"
+    "5800a572c6d9521ae412e176537dc0a83bfebea283fb8856a59dc0e175ba7c1d 2137 rust-r-description_0.2.1-1.dsc a527e5ca2837912452d9e0698d97354344398266d00008225c30379327e4a121 18408 rust-r-description_0.2.1.orig.tar.gz 2dbace525ce9be404d571cc4876187af72f9506a19cda813d1e148d215e98201 2112 rust-r-description_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-r-description"
   ],
   "Files": [
-    "4dd948f11442b2b2ef13ffe71b4dada9 2050 rust-r-description_0.1.2-2.dsc 714c984f67221707755b3ec30764fd6e 3869 rust-r-description_0.1.2.orig.tar.gz 807366ae757f8b2ca2e7af8f77d5b2bf 2032 rust-r-description_0.1.2-2.debian.tar.xz"
+    "735ab9cffae4f99ae663be8500918492 2137 rust-r-description_0.2.1-1.dsc c8b64dac36237e0e4a967384c3414161 18408 rust-r-description_0.2.1.orig.tar.gz 15f03493126d693f224a71e330719da6 2112 rust-r-description_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/jelmer/deb822-lossless"
+    "https://github.com/jelmer/r-description-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/r-description]"
   ],
   "Version": [
-    "0.1.2-2"
+    "0.2.1-1"
   ]
 }
