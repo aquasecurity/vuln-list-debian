@@ -6,16 +6,16 @@
     "libvhdi-dev, libvhdi1, libvhdi-utils, python3-libvhdi"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libbfio-dev, libfuse-dev, pkgconf, python3-dev"
+    "debhelper-compat (= 13), dh-python, libbfio-dev, libfuse3-dev, pkgconf, python3-dev, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "22d0c55d9013dea96099bb21dd7aa9868bd2b146960b66dc58aee2beff55cc97 2248 libvhdi_20240509-1.dsc 9efebe54a7ae6cf8b49103a3a0c37553f3f22d7526303a654aeb59eca58ccec7 1556130 libvhdi_20240509.orig.tar.gz 3b664a402e7315ce6a749d425fb44c53d6e44bec92cfbb5c86608b1f23f3967a 7236 libvhdi_20240509-1.debian.tar.xz"
+    "3890c614e2c90107b2d9da6706b554f6bc7404085b4496259ab735df9e662630 2323 libvhdi_20240509-2.dsc 9efebe54a7ae6cf8b49103a3a0c37553f3f22d7526303a654aeb59eca58ccec7 1556130 libvhdi_20240509.orig.tar.gz 3685e66db26384c332c9f6f07056aa9d1af209583600b8ceeb1b88b7df56c153 7444 libvhdi_20240509-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libv/libvhdi"
   ],
   "Files": [
-    "bc181cc12b8c73f1c781120506624288 2248 libvhdi_20240509-1.dsc a355b620b3e1c4a2e31465b877149dcd 1556130 libvhdi_20240509.orig.tar.gz 799e81a48871d99a95a2df87b87a957c 7236 libvhdi_20240509-1.debian.tar.xz"
+    "234378460c68898083ff75f4ef848e61 2323 libvhdi_20240509-2.dsc a355b620b3e1c4a2e31465b877149dcd 1556130 libvhdi_20240509.orig.tar.gz d812c32c9c66325204cb3c943df478f4 7444 libvhdi_20240509-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "qemu-utils"
+  ],
   "Uploaders": [
     "Hilko Bengen \u003cbengen@debian.org\u003e, Francisco Vilmar Cardoso Ruviaro \u003cvilmar@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/pkg-security-team/libvhdi.git"
   ],
   "Version": [
-    "20240509-1"
+    "20240509-2"
   ]
 }
