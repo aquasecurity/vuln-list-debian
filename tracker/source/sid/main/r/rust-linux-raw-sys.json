@@ -6,16 +6,16 @@
     "librust-linux-raw-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e825bcfefc4b3dd664f559a6274e8b77b43824d53b2bd3d856cb2fae16d909aa 2294 rust-linux-raw-sys_0.4.12-1.dsc c4cd1a83af159aa67994778be9070f0ae1bd732942279cabb14f86f986a21456 1465800 rust-linux-raw-sys_0.4.12.orig.tar.gz 7a8ac8098dfeb92d7177cadea214ac0f7fad2e8f8b24968452c59df0b086139c 4224 rust-linux-raw-sys_0.4.12-1.debian.tar.xz"
+    "710291227e832380a4b786b469fdfee1f252aff8ed9cb62e4a44446ee80344d8 1674 rust-linux-raw-sys_0.4.14-1.dsc 78b3ae25bc7c8c38cec158d1f2757ee79e9b3740fbc7ccf0e59e4b08d793fa89 1826665 rust-linux-raw-sys_0.4.14.orig.tar.gz 95eec6ef60bd322a6066eb9f7232381b126dfc37009bda9d443fdf09a6948b94 4348 rust-linux-raw-sys_0.4.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-linux-raw-sys"
   ],
   "Files": [
-    "f01d1bcbb108867b31b992ca72bfa9e9 2294 rust-linux-raw-sys_0.4.12-1.dsc 1d1b2033b4272a22654e55447ae7f404 1465800 rust-linux-raw-sys_0.4.12.orig.tar.gz 8529f0a53fb1e1ad6125809ea36ba06e 4224 rust-linux-raw-sys_0.4.12-1.debian.tar.xz"
+    "2dbc206dbd6decebeaf32a006e066837 1674 rust-linux-raw-sys_0.4.14-1.dsc 6d16890925497732bdbedd7636c9546f 1826665 rust-linux-raw-sys_0.4.14.orig.tar.gz 079f8f07be90511bb3e741d2af156fad 4348 rust-linux-raw-sys_0.4.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-libc-0.2+default-dev, librust-static-assertions-1+default-dev"
+    "dh-cargo, librust-libc-0.2+default-dev, librust-static-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "John Goerzen \u003cjgoerzen@complete.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/linux-raw-sys]"
   ],
   "Version": [
-    "0.4.12-1"
+    "0.4.14-1"
   ]
 }

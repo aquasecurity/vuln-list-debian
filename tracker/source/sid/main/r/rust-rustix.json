@@ -6,16 +6,16 @@
     "librust-rustix-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+std-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-bitflags-2-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-errno-0.3+std-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-errno-0.3-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.153-~~) \u003c!nocheck\u003e, librust-libc-0.2+std-dev (\u003e= 0.2.153-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+elf-dev (\u003e= 0.4.12-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+errno-dev (\u003e= 0.4.12-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+general-dev (\u003e= 0.4.12-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+ioctl-dev (\u003e= 0.4.12-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+no-std-dev (\u003e= 0.4.12-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+std-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-bitflags-2-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-errno-0.3+std-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-errno-0.3-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.156-~~) \u003c!nocheck\u003e, librust-libc-0.2+std-dev (\u003e= 0.2.156-~~) \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.156-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+elf-dev (\u003e= 0.4.14-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+errno-dev (\u003e= 0.4.14-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+general-dev (\u003e= 0.4.14-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+ioctl-dev (\u003e= 0.4.14-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+no-std-dev (\u003e= 0.4.14-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6d0f099d0c8d27938d9a4eb513a103a8a2a860991b61defe28c78b40ea089cb2 3044 rust-rustix_0.38.32-1.dsc 65e04861e65f21776e67888bfbea442b3642beaa0138fdb1dd7a84a52dffdb89 376999 rust-rustix_0.38.32.orig.tar.gz 1a0926dcf17f2ac76cd117fcefcc9c42ba8ca9d4fc0648555f41723ec73d8eee 6156 rust-rustix_0.38.32-1.debian.tar.xz"
+    "2f2d13fdaf008972a2e80b431888e09fb817f1af4f9de5e3caa107becd27cd11 2438 rust-rustix_0.38.37-1.dsc 8acb788b847c24f28525660c4d7758620a7210875711f79e7f663cc152726811 371243 rust-rustix_0.38.37.orig.tar.gz 93d8caaf569e0b5cafcecd32f868231842e2aa1132c0133efc8f9e96dc7c53bb 6192 rust-rustix_0.38.37-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustix"
   ],
   "Files": [
-    "6b17cb62b2a0dc437c1c23c6dfa57e23 3044 rust-rustix_0.38.32-1.dsc c74beacbda25822857d315b64c167575 376999 rust-rustix_0.38.32.orig.tar.gz 437ca40e8266f69096bbfb7ea6015ffb 6156 rust-rustix_0.38.32-1.debian.tar.xz"
+    "56715db3f2421dc08ac00eab69d8b4d9 2438 rust-rustix_0.38.37-1.dsc 6bb54e2ed8584e03a7bd2a688a601406 371243 rust-rustix_0.38.37.orig.tar.gz 59038ead339beb87a4a4c75feb584325 6192 rust-rustix_0.38.37-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-errno-0.3-dev, librust-flate2-1+default-dev, librust-libc-0.2+default-dev, librust-memoffset-0.6+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-errno-0.3-dev, librust-flate2-1+default-dev, librust-libc-0.2+default-dev, librust-memoffset-0.8+default-dev, librust-serial-test-2+default-dev, librust-static-assertions-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "John Goerzen \u003cjgoerzen@complete.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustix]"
   ],
   "Version": [
-    "0.38.32-1"
+    "0.38.37-1"
   ]
 }
