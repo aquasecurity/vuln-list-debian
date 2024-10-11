@@ -6,16 +6,16 @@
     "librust-uom-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.13-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.13-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0691f9a48670616815e856d7e6c21d26eab65232a8f7ca0d070a38951c844f4c 2391 rust-uom_0.35.0-1.dsc 8362194c7a9845a7a7f3562173d6e1da3f24f7132018cb78fe77a5b4474187b2 149914 rust-uom_0.35.0.orig.tar.gz 70e1fb3339b4892e2c390492e43b4aad0173abd82d3934f5461922df80d2f16a 3820 rust-uom_0.35.0-1.debian.tar.xz"
+    "16b0f995d9898890e0b2243fac120361aece0ea649d98a27d46641b85a5aea08 1783 rust-uom_0.36.0-1.dsc ffd36e5350a65d112584053ee91843955826bf9e56ec0d1351214e01f6d7cd9c 151847 rust-uom_0.36.0.orig.tar.gz a7d2e7b141e22abd75cf5df350df0d156467e1f320152076e6f1af75da538920 3856 rust-uom_0.36.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-uom"
   ],
   "Files": [
-    "f90924c07b172ae1b85afbae35449d22 2391 rust-uom_0.35.0-1.dsc 67ad63ed9ad0650b65f50f90af5a72b1 149914 rust-uom_0.35.0.orig.tar.gz 05469408135e875ce38214b146d260ad 3820 rust-uom_0.35.0-1.debian.tar.xz"
+    "c476729e717019ab5ee539937d9e0fe8 1783 rust-uom_0.36.0-1.dsc 9897e8e39d85fc50df8477ef807b8726 151847 rust-uom_0.36.0.orig.tar.gz 95e3e6ac1076fd432cad36b394328dd1 3856 rust-uom_0.36.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-approx-0.5+default-dev, librust-quickcheck-1+default-dev, librust-serde-json-1+default-dev, librust-static-assertions-1+default-dev"
+    "dh-cargo, librust-approx-0.5+default-dev, librust-quickcheck-1+default-dev, librust-serde-json-1+default-dev, librust-static-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/uom]"
   ],
   "Version": [
-    "0.35.0-1"
+    "0.36.0-1"
   ]
 }
