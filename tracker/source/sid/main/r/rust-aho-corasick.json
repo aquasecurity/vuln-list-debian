@@ -6,16 +6,16 @@
     "librust-aho-corasick-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-memchr-2-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-memchr-2-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b5ea7fe3261b80e170481b7b79b79812df94901d51fbed2d9ea3dbe88740b679 2399 rust-aho-corasick_1.1.2-1.dsc b2969dcb958b36655471fc61f7e416fa76033bdd4bfed0678d8fee1e2d07a1f0 183136 rust-aho-corasick_1.1.2.orig.tar.gz 88ab15b63b9488c2d5ab3c360cfae433dfc1059182e0af9d53efb99d7e6e3750 3868 rust-aho-corasick_1.1.2-1.debian.tar.xz"
+    "cbf161d93f0afe1eab4799e264ef8923f06de313e1a3b63d1b80103d69c21443 1820 rust-aho-corasick_1.1.3-1.dsc 8e60d3430d3a69478ad0993f19238d2df97c507009a52b3c10addcd7f6bcb916 183311 rust-aho-corasick_1.1.3.orig.tar.gz 88f32007e98ea9aa3aa204bc77fd9bf675a16e2e867e19c569cac46174e25073 3900 rust-aho-corasick_1.1.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-aho-corasick"
   ],
   "Files": [
-    "96615932fca0e3ab6105c5d48cf45e2a 2399 rust-aho-corasick_1.1.2-1.dsc 95e5f8d0b7ab37171b8d3118542ba06a 183136 rust-aho-corasick_1.1.2.orig.tar.gz a0e0129a43ead54d8ad4b2adab4f8eff 3868 rust-aho-corasick_1.1.2-1.debian.tar.xz"
+    "b34ba944372392583fd14cad058ade30 1820 rust-aho-corasick_1.1.3-1.dsc 03b2d126766ed746706241b4c7487654 183311 rust-aho-corasick_1.1.3.orig.tar.gz 786c06fc8c01812ba8893e821d2552e9 3900 rust-aho-corasick_1.1.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/aho-corasick]"
   ],
   "Version": [
-    "1.1.2-1"
+    "1.1.3-1"
   ]
 }
