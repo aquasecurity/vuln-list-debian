@@ -6,16 +6,16 @@
     "librust-debian-control-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-deb822-lossless+default-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.3-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-rowan+default-dev (\u003e= 0.15-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-deb822-lossless+default-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-deb822-lossless+derive-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.3-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-rowan+default-dev (\u003e= 0.15-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f95afe381e861de03cba71b2bb5639e0a9e39c4aa6b92961cfa79b30c17881b3 2516 rust-debian-control_0.1.18-1.dsc ce8a0b4ae16c79a9320638edbf142b395c967b19773c0c5c4f263d4f523836bc 19572 rust-debian-control_0.1.18.orig.tar.gz cd6064e92e828061e9e8ebb65ec0b6846d0de0109710de907e481d2286220073 2196 rust-debian-control_0.1.18-1.debian.tar.xz"
+    "3a53a6abbf2b58fe437eb011eb8187360e6c07050e0c688fc0c3303e7066c53c 2289 rust-debian-control_0.1.38-1.dsc eaf55e0dedfa829500f3d707d7e3689cf4101be13e23536a47e0cee56d868093 85434 rust-debian-control_0.1.38.orig.tar.gz 562abe7c112a5c4b12a4852d0807e08aebeafa73d86a38a7671a7efe56f62948 2396 rust-debian-control_0.1.38-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-debian-control"
   ],
   "Files": [
-    "a60966526f55dc2a0ad8702ca51d8ecc 2516 rust-debian-control_0.1.18-1.dsc 9432f901369ebaf41dd7f683c4777fb9 19572 rust-debian-control_0.1.18.orig.tar.gz 57c2349d50872164eee026e2c090f2da 2196 rust-debian-control_0.1.18-1.debian.tar.xz"
+    "f28f7dc3cbc8a26948196b89bb279c23 2289 rust-debian-control_0.1.38-1.dsc 3e0d4ef4d8c946f24f428054fa6dd64c 85434 rust-debian-control_0.1.38.orig.tar.gz 3ebc956716287807eccf6659614b38fa 2396 rust-debian-control_0.1.38-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/debian-control]"
   ],
   "Version": [
-    "0.1.18-1"
+    "0.1.38-1"
   ]
 }

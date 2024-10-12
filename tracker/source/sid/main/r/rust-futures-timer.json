@@ -6,16 +6,16 @@
     "librust-futures-timer-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust, librust-async-std-1+attributes-dev \u003c!nocheck\u003e, librust-async-std-1+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-async-std-1+attributes-dev \u003c!nocheck\u003e, librust-async-std-1+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-gloo-timers-0.3+default-dev, librust-gloo-timers-0.3+futures-dev, librust-send-wrapper-0.6+default-dev"
   ],
   "Checksums-Sha256": [
-    "abdcfbc4c4b92d66f516aef6c8d47ee193bbb7811b58bd334b71d8955cff7330 2319 rust-futures-timer_3.0.3-2.dsc 342f7a29042faeb254fcf91fa479761c7fc313c0c5ab7f2cc2d5f330ee16fffb 19554 rust-futures-timer_3.0.3.orig.tar.gz 6fce5cf0505ad66de8f5f6aa3bfa7e5ae0c509eec346683ed9535f9064f51472 4004 rust-futures-timer_3.0.3-2.debian.tar.xz"
+    "d3586081fade57d79ffab57bfc46452261432b39615177b1b9f3fb0329aaaeb7 2489 rust-futures-timer_3.0.3-3.dsc 342f7a29042faeb254fcf91fa479761c7fc313c0c5ab7f2cc2d5f330ee16fffb 19554 rust-futures-timer_3.0.3.orig.tar.gz 9af950bd64726976f8e958b10e4a51760069bcdc94cfa34732c88f1203802565 4108 rust-futures-timer_3.0.3-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-futures-timer"
   ],
   "Files": [
-    "75a9dcb82e8a8a7a85dbd476cbcafe74 2319 rust-futures-timer_3.0.3-2.dsc 16769646197ee66b9d2a9b7eb351ad1a 19554 rust-futures-timer_3.0.3.orig.tar.gz 95bb52f8eb14e3d6dc5f5b3ad2d333ea 4004 rust-futures-timer_3.0.3-2.debian.tar.xz"
+    "6cbd7281bddee543239a42d19d57f9dc 2489 rust-futures-timer_3.0.3-3.dsc 16769646197ee66b9d2a9b7eb351ad1a 19554 rust-futures-timer_3.0.3.orig.tar.gz 68eb0155031bd7cdc661959c545d18f7 4108 rust-futures-timer_3.0.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-futures-0.3+default-dev, librust-futures-timer-3+default-dev, librust-futures-timer-3-dev"
+    "dh-rust, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-futures-0.3+default-dev, librust-futures-timer-3+default-dev, librust-futures-timer-3+wasm-bindgen-dev, librust-futures-timer-3-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-futures-timer"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-futures-timer.git"
   ],
   "Version": [
-    "3.0.3-2"
+    "3.0.3-3"
   ]
 }

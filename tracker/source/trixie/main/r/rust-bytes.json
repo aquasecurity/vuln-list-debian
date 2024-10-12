@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-bytes-dev, librust-bytes+serde-dev"
+    "librust-bytes-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.39) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "64d337c010d920cf99c8f0de488a9a66b1dff77a185be8c2646b33fd8f529ea9 2408 rust-bytes_1.5.0-1.dsc a2bd12c1caf447e69cd4528f47f94d203fd2582878ecb9e9465484c4148a8223 58909 rust-bytes_1.5.0.orig.tar.gz 82fbddced7fb749f4489d3f99b287631fa49435417652601e9cdf2fb6946254a 3080 rust-bytes_1.5.0-1.debian.tar.xz"
+    "7703e02e07025245d2b8f8919b41481d65cb7fea1ce0878f73d86f56634faffe 1590 rust-bytes_1.7.2-1.dsc 428d9aa8fbc0670b7b8d6030a7fadd0f86151cae55e4dbbece15f3780a3dfaf3 64287 rust-bytes_1.7.2.orig.tar.gz 0fa587e3d5067ec3577ce08d01ddbcfdb13becbc851e4ad5a4390383822dcec1 3292 rust-bytes_1.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bytes"
   ],
   "Files": [
-    "c975ee6a817bf4a866e77e4cfb82caf2 2408 rust-bytes_1.5.0-1.dsc 51ed49380bb7d086c005208e805983b2 58909 rust-bytes_1.5.0.orig.tar.gz fa5c1a909ca93e5afe786e77167e4d96 3080 rust-bytes_1.5.0-1.debian.tar.xz"
+    "caea5d3294c0c9c4e5f6d614af3a2eb3 1590 rust-bytes_1.7.2-1.dsc 4e6eee04ea524393c2de1d5aa92691c1 64287 rust-bytes_1.7.2.orig.tar.gz d8d99a62186c44ece1fed8908d156a55 3292 rust-bytes_1.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "rust-bytes"
   ],
   "Package-List": [
-    "librust-bytes+serde-dev deb rust optional arch=any librust-bytes-dev deb rust optional arch=any"
+    "librust-bytes-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-loom-0.5+default-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e, Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytes]"
   ],
   "Version": [
-    "1.5.0-1"
+    "1.7.2-1"
   ]
 }
