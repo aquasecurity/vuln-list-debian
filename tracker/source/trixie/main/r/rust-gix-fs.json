@@ -6,16 +6,16 @@
     "librust-gix-fs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gix-features-0.38+default-dev (\u003e= 0.38.1-~~) \u003c!nocheck\u003e, librust-gix-features-0.38+fs-read-dir-dev (\u003e= 0.38.1-~~) \u003c!nocheck\u003e, librust-gix-utils-0.1+default-dev (\u003e= 0.1.12-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand-2+std-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-gix-features-0.38+default-dev (\u003e= 0.38.2-~~) \u003c!nocheck\u003e, librust-gix-features-0.38+fs-read-dir-dev (\u003e= 0.38.2-~~) \u003c!nocheck\u003e, librust-gix-utils-0.1+default-dev (\u003e= 0.1.12-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a0d825bdb03a9fb9f5e983ca87561c851df4538781adac5cbbdf4ff304536155 2375 rust-gix-fs_0.10.2-1.dsc e2184c40e7910529677831c8b481acf788ffd92427ed21fad65b6aa637e631b8 14372 rust-gix-fs_0.10.2.orig.tar.gz 93ca81005efee742c16edc15a24c839838e44fd911a6945048a070da18ff2c53 2708 rust-gix-fs_0.10.2-1.debian.tar.xz"
+    "7f67179060f7279a677c7860369b1a7e4fdf4b250beeecc98c591e695894de24 2500 rust-gix-fs_0.11.3-1.dsc f2bfe6249cfea6d0c0e0990d5226a4cb36f030444ba9e35e0639275db8f98575 14867 rust-gix-fs_0.11.3.orig.tar.gz af9a57307575d3fb554d0fb2b197afa8bb253329ff51bddcaaf6ad656227055e 2792 rust-gix-fs_0.11.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-fs"
   ],
   "Files": [
-    "c1b3b92208880c535f9ac3f7e6d9e99a 2375 rust-gix-fs_0.10.2-1.dsc a54b547b14359df46e6a059c7d955b42 14372 rust-gix-fs_0.10.2.orig.tar.gz b826eefb0293c34bfe11c7172f538197 2708 rust-gix-fs_0.10.2-1.debian.tar.xz"
+    "33aec425d5d63fae8252b661767fc9d5 2500 rust-gix-fs_0.11.3-1.dsc 128cb74306ddaca878559397ac1e4270 14867 rust-gix-fs_0.11.3.orig.tar.gz a0296a86a172bbba068ea32e4e54eecc 2792 rust-gix-fs_0.11.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-crossbeam-channel-0.5+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-fs]"
   ],
   "Version": [
-    "0.10.2-1"
+    "0.11.3-1"
   ]
 }

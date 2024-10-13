@@ -6,19 +6,22 @@
     "librust-rustfix-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.199-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.199-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.116-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.59-~~) \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.40-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "266c738ed8a94dff509317600c2db4da95726a808a5ba99c2e66883b74118f50 1897 rust-rustfix_0.6.0-1.dsc 6f0be05fc0675ef4f47119dc39cfc46636bb77d4fc4ef1bd851b9c3f7697f32a 18128 rust-rustfix_0.6.0.orig.tar.gz 53f1535ba5d7c2540bfd5aba8df44926627e236ed425f1ef4e149311904d5597 2836 rust-rustfix_0.6.0-1.debian.tar.xz"
+    "93b9f7c6e4ad03be8a9463f1634684064b02e7309083e995b2e050bc0feb8606 2703 rust-rustfix_0.8.5-1.dsc 70f5b7fc8060f4f8373f9381a630304b42e1183535d9beb1d3f596b236c9106a 18521 rust-rustfix_0.8.5.orig.tar.gz 67370f5b943fa6bc591383ccb2497b0188c204f32f0155e45ea355d9e9d8ed41 2888 rust-rustfix_0.8.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustfix"
   ],
   "Files": [
-    "995cef60e076ff177b7fd6b2cbec882c 1897 rust-rustfix_0.6.0-1.dsc de4b131a4672d04234ed5af5d001b18e 18128 rust-rustfix_0.6.0.orig.tar.gz 36176bbe21c4e2764702aa01c700c0b2 2836 rust-rustfix_0.6.0-1.debian.tar.xz"
+    "e7ae3460a91e5ff51ae6d0e1d2de23ff 2703 rust-rustfix_0.8.5-1.dsc 070b856c03d3baed2cc372b743df48f8 18521 rust-rustfix_0.8.5.orig.tar.gz 9dad874d29c407c1a9a170a209974560 2888 rust-rustfix_0.8.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/cargo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-duct-0.9+default-dev, librust-env-logger-0.5+default-dev, librust-log-0.4+default-dev, librust-proptest-0.7+default-dev, librust-similar-0.4+default-dev, librust-tempdir-0.3+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-proptest-1+default-dev, librust-similar-2+default-dev, librust-tempfile-3+default-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustfix]"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.8.5-1"
   ]
 }

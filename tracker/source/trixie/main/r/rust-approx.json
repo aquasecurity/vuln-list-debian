@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-approx-dev, librust-approx+num-complex-dev"
+    "librust-approx-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6ab2822ab17cee3f873f785706e8cce9f1419e3c31e8b83566aae2b6ae96c341 2302 rust-approx_0.5.0-1.dsc 072df7202e63b127ab55acfe16ce97013d5b97bf160489336d3f1840fd78e99e 14359 rust-approx_0.5.0.orig.tar.gz f1da8574aff408e62897a36d6c9ee216858ab84ec3ec8af5b6fef524c73a87ba 2416 rust-approx_0.5.0-1.debian.tar.xz"
+    "99b159a8168b2c8ca9f1e03f683cc3710ac6f15528b28256d741c2c7e2259627 1591 rust-approx_0.5.1-1.dsc cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6 15100 rust-approx_0.5.1.orig.tar.gz 6b7d520eb000723d405e6cad09afe17a36dcef9045fe3a6c213764d1fea8ae8f 2308 rust-approx_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-approx"
   ],
   "Files": [
-    "81fd07af49149c3c1f6fdc6101d6c002 2302 rust-approx_0.5.0-1.dsc dc0bbac4c4424a44499bb8c0a7a31425 14359 rust-approx_0.5.0.orig.tar.gz dc89fc85edea23632e824534a27fe615 2416 rust-approx_0.5.0-1.debian.tar.xz"
+    "d29916ca934a7b87b7010f1de9478e52 1591 rust-approx_0.5.1-1.dsc 9071f5790b873b983105cc5b2917caff 15100 rust-approx_0.5.1.orig.tar.gz c01573288a96d9bbf3b7163c3dc76e6f 2308 rust-approx_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-approx"
   ],
   "Package-List": [
-    "librust-approx+num-complex-dev deb rust optional arch=any librust-approx-dev deb rust optional arch=any"
+    "librust-approx-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/approx]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.1-1"
   ]
 }
