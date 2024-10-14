@@ -9,16 +9,16 @@
     "libmpich-dev, libopenmpi-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), dh-fortran-mod (\u003e= 0.31), debhelper-compat (= 13), libevent-dev, libpmix-dev [amd64 arm64 mips64el ppc64el riscv64 s390x alpha ia64 loong64 ppc64 sparc64], libucx-dev [amd64 arm64 ppc64el], zlib1g-dev, libhwloc-dev, pkg-config, libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libfabric-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 !sh4 !powerpc !x32], libnuma-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libpsm-infinipath1-dev [amd64 i386], libpsm2-dev [amd64], default-jdk [!hppa !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !alpha !ppc64 !sparc64] \u003c!nojava\u003e, flex"
+    "dpkg-dev (\u003e= 1.22.5), architecture-is-64-bit, dh-sequence-fortran-mod, debhelper-compat (= 13), libevent-dev, libpmix-dev, libucx-dev [amd64 arm64 ppc64el], zlib1g-dev, gfortran, libhwloc-dev, pkg-config, libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libfabric-dev [!kfreebsd-amd64 !hurd-any], libnuma-dev [!kfreebsd-amd64 !hurd-any], libpsm-infinipath1-dev [amd64], libpsm2-dev [amd64], python3-sphinx-rtd-theme, python3-recommonmark, default-jdk [!hurd-any !kfreebsd-amd64 !alpha !ppc64 !sparc64] \u003c!nojava\u003e, flex"
   ],
   "Checksums-Sha256": [
-    "5a15e11566748775fdfebd8fef1d92f37b557c04185e6b8bc18a252171761fce 2841 openmpi_4.1.6-13.3.dsc 3008e56128e73579019200887a7eb641e5d3fc31a4b409f883955b42794c5aaf 6912088 openmpi_4.1.6.orig.tar.xz 1eaf4bfff499a4db541be51775b520d84ac81537ab298dc8c77cabcf193ebe53 69876 openmpi_4.1.6-13.3.debian.tar.xz"
+    "9f71185aa2c09305ea10be1d14f985f7b4a130fbe8197414f012780d011cfe8a 2834 openmpi_5.0.5-2.dsc 8624936ee08e12e41a2d2917942241e5f7e04cfd433c0aa698f78863f30d1959 25413440 openmpi_5.0.5.orig.tar.xz b7c29ee2b9b34c97e922a6cdb4c78f23af4b7a2e29556636485d0fa73e33f602 67896 openmpi_5.0.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openmpi"
   ],
   "Files": [
-    "86d8ee731d1c348444c8950bcd57b8a7 2841 openmpi_4.1.6-13.3.dsc f4129c753f45b88e4dc571b0c03ac142 6912088 openmpi_4.1.6.orig.tar.xz 595d6eaa033fb625ff69c4a49f92976c 69876 openmpi_4.1.6-13.3.debian.tar.xz"
+    "8913a865399e419f1216c0efa7b0667c 2834 openmpi_5.0.5-2.dsc 9751575db38d07d44affbfd6853545ed 25413440 openmpi_5.0.5.orig.tar.xz 6f6c2673d5615629d223424e309e690b 67896 openmpi_5.0.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "https://www.open-mpi.org/"
   ],
   "Maintainer": [
-    "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
+    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "openmpi"
@@ -42,16 +42,16 @@
     "net"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gcc, gfortran, pkg-config"
+    "gcc, gfortran, pkgconf"
   ],
   "Uploaders": [
-    "Manuel Prinz \u003cmanuel@debian.org\u003e"
+    "Alastair McKinstry \u003cmckinstry@debian.org\u003e, Manuel Prinz \u003cmanuel@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/hpc-team/openmpi"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/hpc-team/openmpi.git -b debian/latest"
   ],
   "Version": [
-    "4.1.6-13.3"
+    "5.0.5-2"
   ]
 }

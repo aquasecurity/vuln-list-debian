@@ -6,16 +6,16 @@
     "librust-os-info-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.5-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+libloaderapi-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+ntdef-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+ntstatus-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+sysinfoapi-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winnt-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winreg-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winuser-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f02df2303617b600b2eff89850fb7af9cb1997332821ea08a88f3cac4209bcac 3054 rust-os-info_3.7.0-1.dsc 006e42d5b888366f1880eda20371fedde764ed2213dc8496f49622fa0c99cd5e 24133 rust-os-info_3.7.0.orig.tar.gz 087ea5532dca2d1bce759320ab200ee0f9489637a5c8dfba3a4589b5eb39c08c 2976 rust-os-info_3.7.0-1.debian.tar.xz"
+    "18cefe97bd3759232b003ff6a36e93be8e508b4b5cb73544bebae60aa4761242 1776 rust-os-info_3.8.2-1.dsc ae99c7fa6dd38c7cafe1ec085e804f8f555a2f8659b0dbe03f1f9963a9b51092 26400 rust-os-info_3.8.2.orig.tar.gz a589e141fb6d8d1f21da1961848f73d3be10bb28f70213d897000e06d906ef87 3128 rust-os-info_3.8.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-os-info"
   ],
   "Files": [
-    "2d80312bbace056753498a84318469b0 3054 rust-os-info_3.7.0-1.dsc 0aa601dab19b62c32def2e7be85d50b3 24133 rust-os-info_3.7.0.orig.tar.gz 1864151e9f6e39c724bd1fc6d13577a2 2976 rust-os-info_3.7.0-1.debian.tar.xz"
+    "6e66ef99c2d1db8411f1c351c15642da 1776 rust-os-info_3.8.2-1.dsc 936913c779b00c6355ffbbb53023dcae 26400 rust-os-info_3.8.2.orig.tar.gz 9248cbf3e20afd02e254bb33977e8a6b 3128 rust-os-info_3.8.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-pretty-assertions-1+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/os-info]"
   ],
   "Version": [
-    "3.7.0-1"
+    "3.8.2-1"
   ]
 }

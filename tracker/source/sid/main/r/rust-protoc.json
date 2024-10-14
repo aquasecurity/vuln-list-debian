@@ -6,16 +6,16 @@
     "librust-protoc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0+default-dev \u003c!nocheck\u003e, librust-which-4+default-dev \u003c!nocheck\u003e, protobuf-compiler \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0+default-dev \u003c!nocheck\u003e, librust-which+default-dev (\u003e= 4.0-~~) \u003c!nocheck\u003e, protobuf-compiler \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "11985a7dcd5985e620e00b331dbbe836181306c8142c41238f8d4915755986ba 2293 rust-protoc_2.27.1-1.dsc c2ef1dc036942fac2470fdb8a911f125404ee9129e9e807f3d12d8589001a38f 4697 rust-protoc_2.27.1.orig.tar.gz 6e2ae71eac4143a7dbb2885472b90e3f9284123c39bca40568794f97981e19f6 2576 rust-protoc_2.27.1-1.debian.tar.xz"
+    "2a2bec28018cd78557f2b2362939956833790aff9812f715498d96845407fb65 2345 rust-protoc_2.27.1-2.dsc c2ef1dc036942fac2470fdb8a911f125404ee9129e9e807f3d12d8589001a38f 4697 rust-protoc_2.27.1.orig.tar.gz 4711e677b548c559e76fef71bd8c7bee3ef4d46d5545b1b84b51d81a69f62aba 2768 rust-protoc_2.27.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-protoc"
   ],
   "Files": [
-    "6065dad986508f27efa64f03677934ac 2293 rust-protoc_2.27.1-1.dsc 309c49130d810265dd6c99d33cef42a7 4697 rust-protoc_2.27.1.orig.tar.gz 7f5da732c895e64820831f17839b781d 2576 rust-protoc_2.27.1-1.debian.tar.xz"
+    "54dc66f513727feef374d121b07e501b 2345 rust-protoc_2.27.1-2.dsc 309c49130d810265dd6c99d33cef42a7 4697 rust-protoc_2.27.1.orig.tar.gz 9242a50eca9bd95676144ea0b0c16fe3 2768 rust-protoc_2.27.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/protoc]"
   ],
   "Version": [
-    "2.27.1-1"
+    "2.27.1-2"
   ]
 }
