@@ -6,16 +6,16 @@
     "libnsync1t64, libnsync-cpp1t64, libnsync-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 13)"
+    "debhelper-compat (= 13), cmake, ninja-build, pkg-kde-tools"
   ],
   "Checksums-Sha256": [
-    "22bbb83c22a8dc151dca0c3d7a95342dc797fd21b0f388e04a51129caeb5c8eb 1976 nsync_1.29.2-1.dsc 1d63e967973733d2c97e841e3c05fac4d3fa299f01d14c86f2695594c7a4a2ec 157190 nsync_1.29.2.orig.tar.gz e63d585ca7a89e0a1b2a48c3118303959b5944d448b92242d3559f5179fe03b9 4428 nsync_1.29.2-1.debian.tar.xz"
+    "0968c0d74cda801b55adae9b7e4c0e420f395cd5768c4754a628e84ec004f911 1692 nsync_1.29.2-3.dsc 1d63e967973733d2c97e841e3c05fac4d3fa299f01d14c86f2695594c7a4a2ec 157190 nsync_1.29.2.orig.tar.gz 09bd893dccbc2dca1965e888d58a0ec654d8b073ddb2be4a8209dc771d919778 4600 nsync_1.29.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/nsync"
   ],
   "Files": [
-    "fc609a1d6583fe12d2f666bd136c479e 1976 nsync_1.29.2-1.dsc 03f5d03c9cf7d13478420601b46816fd 157190 nsync_1.29.2.orig.tar.gz 7846c10cb239ccef86127b45555e63c2 4428 nsync_1.29.2-1.debian.tar.xz"
+    "78fbfe68d4aa45e8a036997bd0108e1b 1692 nsync_1.29.2-3.dsc 03f5d03c9cf7d13478420601b46816fd 157190 nsync_1.29.2.orig.tar.gz 173ccf8cdb84bea270d3fc41e1463405 4600 nsync_1.29.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/nsync"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/science-team/nsync.git"
   ],
   "Version": [
-    "1.29.2-1"
+    "1.29.2-3"
   ]
 }
