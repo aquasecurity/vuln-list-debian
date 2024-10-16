@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-mobilitydb"
+    "postgresql-17-mobilitydb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 256~), cmake, libgeos-dev, libgsl-dev, libjson-c-dev, libproj-dev, postgresql-16-postgis-3"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, cmake, debhelper-compat (= 13), libgeos-dev, libgsl-dev, libjson-c-dev, libproj-dev, postgresql-17-postgis-3, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "010e3535d3030e5994a3454b08cea71175f95f606bb8dfe275ea5847590a3657 2233 mobilitydb_1.1.1-1.dsc aebfed4bea05dc0160606b81af1bb67906e7c3f3712495aa4cf0de48c2b5cfb7 35975517 mobilitydb_1.1.1.orig.tar.gz a17a7ad21a37c52934bbbb070627fcd0491997b6fbadef2c95a384e626137c7b 18568 mobilitydb_1.1.1-1.debian.tar.xz"
+    "3ee823fc02faef4e6ffbd4438d4aa2dcfcf2ec75c24184fd6cdfcdad83c5e7eb 2338 mobilitydb_1.2.0~rc1-1.dsc e99325f82f2208edbb2d96bcf2114b77846dfbc9c769054b4edc063f3ce7a9ea 25558852 mobilitydb_1.2.0~rc1.orig.tar.gz bc2c3638db7db00b7db98b16f203b0b9965a942f4a2506e047e3f9bcaa0b51fb 16744 mobilitydb_1.2.0~rc1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mobilitydb"
   ],
   "Files": [
-    "89bebdf02fc00700c7f24daaec5d0359 2233 mobilitydb_1.1.1-1.dsc c6556ee27fb441a4b537a5ca27bdec2b 35975517 mobilitydb_1.1.1.orig.tar.gz 8216e22e4c9ef4cbecc36f1163d44dfc 18568 mobilitydb_1.1.1-1.debian.tar.xz"
+    "1a7efd0bdc86f24d88e5c70272c59015 2338 mobilitydb_1.2.0~rc1-1.dsc a7435d9e9eb2d73069534249d9345154 25558852 mobilitydb_1.2.0~rc1.orig.tar.gz ea72569278e1b81395c080268f4d7e09 16744 mobilitydb_1.2.0~rc1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mobilitydb"
   ],
   "Package-List": [
-    "postgresql-16-mobilitydb deb database optional arch=any"
+    "postgresql-17-mobilitydb deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, g++, libgeos-dev, libgsl-dev, libjson-c-dev, libproj-dev, make, postgresql-16-postgis-3, xz-utils"
+    "cmake, g++, libgeos-dev, libgsl-dev, libjson-c-dev, libproj-dev, make, postgresql-17-postgis-3, xz-utils"
   ],
   "Uploaders": [
     "Bradford D. Boyle \u003cbradford.d.boyle@gmail.com\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/MobilityDB.git"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.2.0~rc1-1"
   ]
 }
