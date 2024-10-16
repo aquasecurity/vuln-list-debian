@@ -6,16 +6,16 @@
     "librust-dep3-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono+default-dev (\u003e= 0.4-~~) \u003c!nocheck\u003e, librust-deb822-lossless+default-dev (\u003e= 0.1.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono+default-dev (\u003e= 0.4-~~) \u003c!nocheck\u003e, librust-deb822-lossless+default-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-deb822-lossless+derive-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "119dbaf6f17a131529b9eeb4670e7aded7c969962d4598bd1f89ee188f62557b 1895 rust-dep3_0.1.13-1.dsc a755dbddee2d3a2af806ad7a305bda8630891ac4b2edbe354b0243c2ef867ec3 7759 rust-dep3_0.1.13.orig.tar.gz 15122fab22fab47bb869770cf9c3fee17147f145053378831050efa7791477c0 2020 rust-dep3_0.1.13-1.debian.tar.xz"
+    "34f7b3d1dc515d612b0855f46e4f8ea6ca0a428a81005f0cf25d4c6de8c90bdc 2007 rust-dep3_0.1.28-1.dsc 22009dcff95c439fb3317f9726556e9e3e5ece2ec7c249b667a66f8f35e05018 10029 rust-dep3_0.1.28.orig.tar.gz 3eb65408f26d62b3c2e9a3c642498c67379c14b83ce5fa871bf52cd1b2f1135b 2204 rust-dep3_0.1.28-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dep3"
   ],
   "Files": [
-    "e77aa96cfe1859a3bcdec83d5e1c8989 1895 rust-dep3_0.1.13-1.dsc fb9c674e6b22e64c6ddaa597c98b892d 7759 rust-dep3_0.1.13.orig.tar.gz da1316b50b649bc230e628ea82e461ee 2020 rust-dep3_0.1.13-1.debian.tar.xz"
+    "85fa85d0611ce380de319bd3d4ca3e1d 2007 rust-dep3_0.1.28-1.dsc 7f7936b37f24482d3f5fbbb02d87f09a 10029 rust-dep3_0.1.28.orig.tar.gz 0857537c3b8755d60e186f015fcf9b67 2204 rust-dep3_0.1.28-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dep3]"
   ],
   "Version": [
-    "0.1.13-1"
+    "0.1.28-1"
   ]
 }
