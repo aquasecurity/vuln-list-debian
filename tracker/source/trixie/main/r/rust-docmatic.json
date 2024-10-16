@@ -6,16 +6,16 @@
     "librust-docmatic-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-which-4+default-dev \u003c!nocheck\u003e | librust-which-3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-which+default-dev (\u003e= 2.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3e1781660ebdd3a10510257b29303d3cfe3c383449ea29b5d3eca64f8806057f 2328 rust-docmatic_0.1.2-2.dsc 8d58ebceaf539cb79420fb3046da9396e11021c536ae953be6ba5363842da8c3 9986 rust-docmatic_0.1.2.orig.tar.gz 69f0b2b2b1adf1246200bc447dc5229a9ff83fd591674da7f6b7d0175db953fa 2844 rust-docmatic_0.1.2-2.debian.tar.xz"
+    "a096a3992d2283719947efa062f267e7a70bea3ca55b3a12280a96302d58d2e2 2209 rust-docmatic_0.1.2-3.dsc 8d58ebceaf539cb79420fb3046da9396e11021c536ae953be6ba5363842da8c3 9986 rust-docmatic_0.1.2.orig.tar.gz ea8bce93a68f438ebcf3aff4d24984068ff81ae5c6d82132ea23e3fdfa4d0abd 2852 rust-docmatic_0.1.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-docmatic"
   ],
   "Files": [
-    "a37917f006506c5fb0dbb7d927aea097 2328 rust-docmatic_0.1.2-2.dsc b4f238bbc389038ff1cfcbda61fb8ed0 9986 rust-docmatic_0.1.2.orig.tar.gz cae45e1459afa0b8c52c286636767abb 2844 rust-docmatic_0.1.2-2.debian.tar.xz"
+    "f13a11362119e693e93eb860dbb67fa0 2209 rust-docmatic_0.1.2-3.dsc b4f238bbc389038ff1cfcbda61fb8ed0 9986 rust-docmatic_0.1.2.orig.tar.gz c38d0b21fe7435a5e410a862ca94a49f 2852 rust-docmatic_0.1.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/docmatic]"
   ],
   "Version": [
-    "0.1.2-2"
+    "0.1.2-3"
   ]
 }

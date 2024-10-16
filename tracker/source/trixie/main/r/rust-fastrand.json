@@ -6,16 +6,16 @@
     "librust-fastrand-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f44cfb0170f7c1476c6b917d982195bba66ee1b3784f14202f21d364729f37d0 2220 rust-fastrand_2.1.0-1.dsc 9fc0510504f03c51ada170672ac806f1f105a88aa97a5281117e1ddc3368e51a 14907 rust-fastrand_2.1.0.orig.tar.gz 92b5bf186ec409fb52bfe3a3e2e56141ab369405ceef84e8da26b77e11445666 4428 rust-fastrand_2.1.0-1.debian.tar.xz"
+    "9a892c200d0f0f60a3a6f474dbe3c005a43e8f63598c657e9c984767cb53683b 1600 rust-fastrand_2.1.1-1.dsc e8c02a5121d4ea3eb16a80748c74f5549a5665e4c21333c6098f283870fbdea6 14983 rust-fastrand_2.1.1.orig.tar.gz 983e68e236659ba3eb4035a1dd9ce0d595bf62ea32c194bf64decb35ddc95124 3768 rust-fastrand_2.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fastrand"
   ],
   "Files": [
-    "2975e3643bafd9f615e200df8568511a 2220 rust-fastrand_2.1.0-1.dsc b27485fa46bf04821c8c08402b708432 14907 rust-fastrand_2.1.0.orig.tar.gz f0125733c7fe48a8d6039533afa8e031 4428 rust-fastrand_2.1.0-1.debian.tar.xz"
+    "3e5a374a0da95ac9b5e54d41e96ab696 1600 rust-fastrand_2.1.1-1.dsc 3ef10447881b00471497237c64f44ac2 14983 rust-fastrand_2.1.1.orig.tar.gz 467d1ec056b9d02657ba7ddad13e0b11 3768 rust-fastrand_2.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-getrandom-0.2+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-getrandom-0.2+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fastrand]"
   ],
   "Version": [
-    "2.1.0-1"
+    "2.1.1-1"
   ]
 }
