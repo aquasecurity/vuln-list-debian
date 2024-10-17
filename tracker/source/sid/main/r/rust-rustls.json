@@ -6,16 +6,16 @@
     "librust-rustls-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust, librust-bencher-0.1+default-dev \u003c!nocheck\u003e, librust-docopt-1+default-dev \u003c!nocheck\u003e, librust-env-logger-0.10+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-mio-dev (\u003c\u003c 2) \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-ring-0.17+default-dev \u003c!nocheck\u003e, librust-rustls-native-certs-0.6+default-dev \u003c!nocheck\u003e, librust-rustls-pemfile-1+default-dev \u003c!nocheck\u003e, librust-rustls-webpki-0.101+alloc-dev \u003c!nocheck\u003e, librust-rustls-webpki-0.101+default-dev (\u003e= 0.101.7) \u003c!nocheck\u003e, librust-rustls-webpki-0.101+std-dev \u003c!nocheck\u003e, librust-sct-0.7+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-derive-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-base64-0.22+default-dev, librust-bencher-0.1+default-dev, librust-docopt-1+default-dev, librust-env-logger-0.10+default-dev, librust-log-0.4+default-dev, librust-mio-dev (\u003c\u003c 2), librust-regex-1+default-dev, librust-ring-0.17+default-dev, librust-rustls-native-certs-0.6+default-dev, librust-rustls-pemfile-1+default-dev, librust-rustls-webpki-0.101+alloc-dev, librust-rustls-webpki-0.101+default-dev (\u003e= 0.101.7), librust-rustls-webpki-0.101+std-dev, librust-sct-0.7+default-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "0dc6846248059a313938faf1d89df1a74ec1d0175367f0fb7a5bfd304142c518 3306 rust-rustls_0.21.12-5.dsc b22000803cb9ad439400a509eef786e9eb603b483eed30978e69bc4572be253b 769817 rust-rustls_0.21.12.orig.tar.gz ed771dba01a37f708c77791b8618feb9355e88fcfe97391241e2eeb3e01a4132 16072 rust-rustls_0.21.12-5.debian.tar.xz"
+    "a99d51a249b9bd51ae241948e21886fda58c60fc3fe82e8a318340e1794e2015 3174 rust-rustls_0.21.12-6.dsc b22000803cb9ad439400a509eef786e9eb603b483eed30978e69bc4572be253b 769817 rust-rustls_0.21.12.orig.tar.gz 9431878a05c7a4ccb69767a6f5dc0211c61e5320e6ab7336fa1b125de3c990ed 16184 rust-rustls_0.21.12-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustls"
   ],
   "Files": [
-    "8179d8d4bf1b805acac68ac611335c93 3306 rust-rustls_0.21.12-5.dsc 6c6e69d506c4837a8531adf4ab21783e 769817 rust-rustls_0.21.12.orig.tar.gz 4a390e060dc7bd534d1986c8fbd1f82b 16072 rust-rustls_0.21.12-5.debian.tar.xz"
+    "4541b5c979e40bc25964844aa721651d 3174 rust-rustls_0.21.12-6.dsc 6c6e69d506c4837a8531adf4ab21783e 769817 rust-rustls_0.21.12.orig.tar.gz e0123a670f0faf2cf6c31d60abac8a2d 16184 rust-rustls_0.21.12-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-base64-0.21+default-dev, librust-bencher-0.1+default-dev, librust-docopt-1+default-dev, librust-env-logger-0.10+default-dev, librust-log-0.4+default-dev, librust-mio-dev, librust-regex-1+default-dev, librust-rustls-0.21+dangerous-configuration-dev, librust-rustls-0.21+default-dev, librust-rustls-0.21+logging-dev, librust-rustls-0.21+quic-dev, librust-rustls-0.21+secret-extraction-dev, librust-rustls-0.21+tls12-dev, librust-rustls-0.21-dev, librust-rustls-native-certs-0.6+default-dev, librust-rustls-pemfile-1+default-dev, librust-rustls-pemfile-dev, librust-rustversion-1-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev"
+    "dh-rust, librust-base64-0.22+default-dev, librust-bencher-0.1+default-dev, librust-docopt-1+default-dev, librust-env-logger-0.10+default-dev, librust-log-0.4+default-dev, librust-mio-dev, librust-regex-1+default-dev, librust-rustls-0.21+dangerous-configuration-dev, librust-rustls-0.21+default-dev, librust-rustls-0.21+logging-dev, librust-rustls-0.21+quic-dev, librust-rustls-0.21+secret-extraction-dev, librust-rustls-0.21+tls12-dev, librust-rustls-0.21-dev, librust-rustls-native-certs-0.6+default-dev, librust-rustls-pemfile-1+default-dev, librust-rustls-pemfile-dev, librust-rustversion-1-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-rustls"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-rustls.git"
   ],
   "Version": [
-    "0.21.12-5"
+    "0.21.12-6"
   ]
 }
