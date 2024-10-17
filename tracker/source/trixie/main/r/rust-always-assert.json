@@ -6,16 +6,16 @@
     "librust-always-assert-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ba34c8af6b79a191893512bb1171c806d12a047a4d106fb9259ad2de3967e748 1822 rust-always-assert_0.1.3-1.dsc 4436e0292ab1bb631b42973c61205e704475fe8126af845c8d923c0996328127 7063 rust-always-assert_0.1.3.orig.tar.gz eb48ce3d3f9d6ea89bd38e7ba35ff32c5eb96351bcd2168b5601e2c7cf142523 2600 rust-always-assert_0.1.3-1.debian.tar.xz"
+    "5e41e25a41184f8f06321524b36c997d6075b9b9e6437bbf0941af0325a779a4 1836 rust-always-assert_0.2.0-1.dsc a1078fa1ce1e34b1872d8611ad921196d76bdd7027e949fbe31231abde201892 7068 rust-always-assert_0.2.0.orig.tar.gz 2a9ee4ed7f9dde6b4ba88197ae775d6449b69ec2cab2294a04775adbfe9e6001 2856 rust-always-assert_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-always-assert"
   ],
   "Files": [
-    "ad42116ab7306a71b79cb4cbb4eecaae 1822 rust-always-assert_0.1.3-1.dsc 94eabeb23d14e963823e6c2848374872 7063 rust-always-assert_0.1.3.orig.tar.gz 41fab34dc03bbf0d01a794af8e5ceee3 2600 rust-always-assert_0.1.3-1.debian.tar.xz"
+    "50e77d5d3a05cb983d147a2f443d7745 1836 rust-always-assert_0.2.0-1.dsc 95cf4cadeea1387b7385bdfd5ad49e6d 7068 rust-always-assert_0.2.0.orig.tar.gz d394eb799467e090f315922cf003a0a4 2856 rust-always-assert_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/always-assert]"
   ],
   "Version": [
-    "0.1.3-1"
+    "0.2.0-1"
   ]
 }
