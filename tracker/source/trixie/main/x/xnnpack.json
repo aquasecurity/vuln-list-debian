@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "amd64 i386 x32 armhf arm64 riscv64"
   ],
   "Binary": [
     "libxnnpack-dev, libxnnpack0"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), googletest, libcpuinfo-dev (\u003e= 0.0~git20200422.a1e0b95-2~), libfp16-dev, libfxdiv-dev, libpsimd-dev, libpthreadpool-dev, ninja-build"
+    "cmake, debhelper-compat (= 13), googletest, libcpuinfo-dev (\u003e= 0.0~git20231104.d6860c4~), libfp16-dev, libfxdiv-dev, libpsimd-dev, libpthreadpool-dev (\u003e= 0.0~git20240616.560c60d~), ninja-build, python3"
   ],
   "Checksums-Sha256": [
-    "5affb9587950b8d068446f597f6e4a695cb1e3f9fb5e0ee3206d87d4ac57b1ae 2256 xnnpack_0.0~git20221221.51a9875-1.dsc 6d9b373d1038cb440d6d454a656237bd10312748acfd87c6fa9f1c874da8c43f 3223924 xnnpack_0.0~git20221221.51a9875.orig.tar.xz 3cc0295481d4e2d238518a8af5df01efef7570246c55bac141751967d8c8a717 4368 xnnpack_0.0~git20221221.51a9875-1.debian.tar.xz"
+    "eb0c4b86723bebb33d93deef3557e9f783d40f4cceded344db80c2f050383610 2050 xnnpack_0.0~git20240821.87ee0b4-2.dsc a4fb82c9370179bd2fb7971b6e533af5b6b39603c9c95488e1c820dc44c8d015 3558204 xnnpack_0.0~git20240821.87ee0b4.orig.tar.xz 02d5031e422c97a7615edf5e8b8c8cd0ac351a11e57c89d0c89da7c6bbf6cee0 4920 xnnpack_0.0~git20240821.87ee0b4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/x/xnnpack"
   ],
   "Files": [
-    "7674ce74ea1962240d1b22c362e5fc3f 2256 xnnpack_0.0~git20221221.51a9875-1.dsc 7e23ef36cf2dc853a74fb62475a70c7c 3223924 xnnpack_0.0~git20221221.51a9875.orig.tar.xz f5f6f4e0f81487df4cff2e061179f9b0 4368 xnnpack_0.0~git20221221.51a9875-1.debian.tar.xz"
+    "5e321e5e0d33dd399439368b22167623 2050 xnnpack_0.0~git20240821.87ee0b4-2.dsc 15a2c73cdf62031961c909a0061ab471 3558204 xnnpack_0.0~git20240821.87ee0b4.orig.tar.xz 55d1daba0c3097e2922cdf65683f0607 4920 xnnpack_0.0~git20240821.87ee0b4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "xnnpack"
   ],
   "Package-List": [
-    "libxnnpack-dev deb libdevel optional arch=any libxnnpack0 deb libs optional arch=any"
+    "libxnnpack-dev deb libdevel optional arch=amd64,i386,x32,armhf,arm64,riscv64 libxnnpack0 deb libs optional arch=amd64,i386,x32,armhf,arm64,riscv64"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.0.1"
   ],
   "Uploaders": [
     "Mo Zhou \u003clumin@debian.org\u003e"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/deeplearning-team/xnnpack.git"
   ],
   "Version": [
-    "0.0~git20221221.51a9875-1"
+    "0.0~git20240821.87ee0b4-2"
   ]
 }
