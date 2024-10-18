@@ -3,7 +3,7 @@
     "any all"
   ],
   "Binary": [
-    "libmbedtls-dev, libmbedcrypto7t64, libmbedtls14t64, libmbedx509-1t64, libmbedtls-doc"
+    "libmbedtls-dev, libmbedcrypto16, libmbedtls21, libmbedx509-7, libmbedtls-doc"
   ],
   "Build-Depends": [
     "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 13)"
@@ -15,13 +15,16 @@
     "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, python3"
   ],
   "Checksums-Sha256": [
-    "40dc28f22291e73ecf5bc72c713fece29243ab23ac429103d851b55d1c33497d 1825 mbedtls_2.28.8-1.dsc edfe26dbc923a1d94aa53153d25b74f5dd51e89bfd222a6945eadec031fc9eb2 4041565 mbedtls_2.28.8.orig.tar.gz 4c4cb0d60049b5848b1332afa3567ef75c3f015db5d56eeca9a68d6cb7c54833 16000 mbedtls_2.28.8-1.debian.tar.xz"
+    "2049b10dcea479a0a14d784ad77f061de30a9ff44100a72cbddf25548268a536 1937 mbedtls_3.6.0-3.dsc 3ecf94fcfdaacafb757786a01b7538a61750ebd85c4b024f56ff8ba1490fcd38 4811255 mbedtls_3.6.0.orig.tar.bz2 9dae88b353be4cb59491b7cae48268f5ae8e1333f81e29efbc4240bdc0e6f656 17292 mbedtls_3.6.0-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "0a00bf2583157f820e000caf798879ea4575766f debian archive/debian/3.6.0-3 https://git.dgit.debian.org/mbedtls"
   ],
   "Directory": [
     "pool/main/m/mbedtls"
   ],
   "Files": [
-    "128c87ad22301dfab86b87499d4eac56 1825 mbedtls_2.28.8-1.dsc 9fbf05d89942d7a25fce5c1127d56bfc 4041565 mbedtls_2.28.8.orig.tar.gz a362aaf0fa8d8f1515bd5f8f5eb3a794 16000 mbedtls_2.28.8-1.debian.tar.xz"
+    "d682c4252980acc31345db8644fdfeb8 1937 mbedtls_3.6.0-3.dsc 6b5a45b10e7d1c768ecec69ecf8e7abd 4811255 mbedtls_3.6.0.orig.tar.bz2 24b6c1b3896a5c51895ee120c350e6c0 17292 mbedtls_3.6.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +39,7 @@
     "mbedtls"
   ],
   "Package-List": [
-    "libmbedcrypto7t64 deb libs optional arch=any libmbedtls-dev deb libdevel optional arch=any libmbedtls-doc deb doc optional arch=all libmbedtls14t64 deb libs optional arch=any libmbedx509-1t64 deb libs optional arch=any"
+    "libmbedcrypto16 deb libs optional arch=any libmbedtls-dev deb libdevel optional arch=any libmbedtls-doc deb doc optional arch=all libmbedtls21 deb libs optional arch=any libmbedx509-7 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gcc, libc-dev, libc6-dev"
+    "cmake, gcc, libc-dev, libc6-dev, pkg-config"
   ],
   "Uploaders": [
     "Andrea Pappacoda \u003candrea@pappacoda.it\u003e"
@@ -63,6 +66,6 @@
     "https://salsa.debian.org/debian-iot-team/mbedtls.git"
   ],
   "Version": [
-    "2.28.8-1"
+    "3.6.0-3"
   ]
 }

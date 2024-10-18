@@ -6,16 +6,16 @@
     "librust-sequoia-policy-config-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1-dev (\u003e= 1.11-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1-dev (\u003e= 1.17-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6cac2f95855cb1b347d0746a692166c861d1685454a3f6d738ae874f09671bc3 2783 rust-sequoia-policy-config_0.6.0-4.dsc 757d45d308f2bd9c0d6fdd640f320998ad24856bdf2890ddd28d3c3b85808274 42529 rust-sequoia-policy-config_0.6.0.orig.tar.gz 61a4de5b882a5e5c3e17f6096559ad6305f506aa040157e7f7401475a7f68958 2800 rust-sequoia-policy-config_0.6.0-4.debian.tar.xz"
+    "8394b991ec6e8bcafea03679eb9a93ce4fce640f7de381ab05b25206c33d8229 2972 rust-sequoia-policy-config_0.7.0-1.dsc 617d5f0043e630871080fb5a70317cd4f2b7417d6c21b6be11eda5e75bc2549d 106066 rust-sequoia-policy-config_0.7.0.orig.tar.gz b8b304d0ef056d7865112e7afe56c23425a8b0d15245710a4a44d6e7e02e7946 2888 rust-sequoia-policy-config_0.7.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-policy-config"
   ],
   "Files": [
-    "dc8ff7f0cc2de7438766e350ec55366e 2783 rust-sequoia-policy-config_0.6.0-4.dsc 2f239b6a6ed41222f4aaf63f8840fa68 42529 rust-sequoia-policy-config_0.6.0.orig.tar.gz 77fa46108e6c67a88cb0e4b01e62dffb 2800 rust-sequoia-policy-config_0.6.0-4.debian.tar.xz"
+    "96a6987040d3651ff3c2c89d1e55e3cf 2972 rust-sequoia-policy-config_0.7.0-1.dsc 8b2580384eebdd4cf2c27d0b3a1b2f86 106066 rust-sequoia-policy-config_0.7.0.orig.tar.gz dd51c40c8650c70d78351f692090e344 2888 rust-sequoia-policy-config_0.7.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-cmd-2+default-dev, librust-lazy-static-1+default-dev, librust-sequoia-openpgp-1+crypto-nettle-dev"
+    "dh-cargo, librust-assert-cmd-2+default-dev, librust-quickcheck-1-dev, librust-sequoia-openpgp-1+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-1+crypto-nettle-dev, rustc"
   ],
   "Uploaders": [
-    "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
+    "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Holger Levsen \u003cholger@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/sequoia-policy-config"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-policy-config]"
   ],
   "Version": [
-    "0.6.0-4"
+    "0.7.0-1"
   ]
 }
