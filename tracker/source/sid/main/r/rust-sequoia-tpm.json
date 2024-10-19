@@ -6,16 +6,16 @@
     "librust-sequoia-tpm-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-env-logger-0.10+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-sequoia-openpgp-1+crypto-nettle-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-yaml-0.9+default-dev \u003c!nocheck\u003e, librust-structopt-0.3+default-dev (\u003e= 0.3.22-~~) \u003c!nocheck\u003e, librust-tss-esapi-7+default-dev \u003c!nocheck\u003e, librust-tss-esapi-sys-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-tss-esapi-7+default-dev \u003c!nocheck\u003e, librust-tss-esapi-sys-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0ec81a7d89e71cfdace58bb5eacb85ce884e42e6700ca8cb7921a6d1209e0013 2832 rust-sequoia-tpm_0.1.0-3.dsc 31b7da89a305c6e995846540e69aa65b2881fc11aaa1821c6097cfe5fda90076 51461 rust-sequoia-tpm_0.1.0.orig.tar.gz 268a5d4a4351762c78661a6ad28f105439064d8373d1928c87a96a70c0bda37e 3484 rust-sequoia-tpm_0.1.0-3.debian.tar.xz"
+    "944093d4fe5477cbb199e4f4501c6b3c96f4db5501fbbd07210074b00d975fae 2538 rust-sequoia-tpm_0.1.1-1.dsc 332f347252752709faa136ea0d2896c734e960630fe7b342151561dd6751d858 32617 rust-sequoia-tpm_0.1.1.orig.tar.gz d992720b18d6dfcd9b4bf8cfd8280faf5ad4f92896cb6022c93781895f0b2cbb 2380 rust-sequoia-tpm_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-tpm"
   ],
   "Files": [
-    "5a4ebaa4affb85f13908fb34a5b9c497 2832 rust-sequoia-tpm_0.1.0-3.dsc 5cf859c8343fa84619418512eb9b37e7 51461 rust-sequoia-tpm_0.1.0.orig.tar.gz a96c845f8bc536a184112a28ab80468b 3484 rust-sequoia-tpm_0.1.0-3.debian.tar.xz"
+    "8bd2fae7b5b08964d3393a931059026a 2538 rust-sequoia-tpm_0.1.1-1.dsc 094eac6dc54295972eeac6947fb349f5 32617 rust-sequoia-tpm_0.1.1.orig.tar.gz 4558e1becda88cc560deaf114842bc4e 2380 rust-sequoia-tpm_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-sequoia-openpgp-1+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-1+crypto-nettle-dev, rustc"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-tpm]"
   ],
   "Version": [
-    "0.1.0-3"
+    "0.1.1-1"
   ]
 }
