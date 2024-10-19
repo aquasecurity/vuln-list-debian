@@ -6,19 +6,19 @@
     "golang-github-containers-storage-dev, containers-storage"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-golang, ffjson, go-md2man, golang-github-burntsushi-toml-dev, golang-github-containerd-btrfs-dev (\u003e= 1.0.0), golang-github-containerd-stargz-snapshotter-dev (\u003e= 0.8.0-3), golang-github-cyphar-filepath-securejoin-dev, golang-github-docker-go-units-dev, golang-github-google-go-intervals-dev, golang-github-gotestyourself-gotest.tools-dev, golang-github-hashicorp-go-multierror-dev, golang-github-json-iterator-go-dev, golang-github-klauspost-compress-dev, golang-github-klauspost-pgzip-dev, golang-github-mattn-go-shellwords-dev, golang-github-moby-sys-dev, golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-runc-dev, golang-github-opencontainers-selinux-dev (\u003e= 1.5.0), golang-github-opencontainers-specs-dev, golang-github-pkg-errors-dev, golang-github-sirupsen-logrus-dev, golang-github-stretchr-testify-dev, golang-github-ulikunitz-xz-dev, golang-github-vbatts-tar-split-dev, golang-go (\u003e\u003e 2:1.14~~), golang-go-patricia-dev, golang-go-zfs-dev, golang-gocapability-dev, golang-golang-x-net-dev, golang-golang-x-sys-dev (\u003e\u003e 0.0~git20201223), libbtrfs-dev, libdevmapper-dev"
+    "debhelper-compat (= 11), dh-golang, ffjson, go-md2man, golang-github-burntsushi-toml-dev, golang-github-containerd-btrfs-dev (\u003e= 1.0.0), golang-github-containerd-stargz-snapshotter-dev (\u003e= 0.8.0-3), golang-github-cyphar-filepath-securejoin-dev (\u003e= 0.3.4), golang-github-docker-go-units-dev, golang-github-google-go-intervals-dev, golang-github-gotestyourself-gotest.tools-dev, golang-github-hashicorp-go-multierror-dev, golang-github-json-iterator-go-dev, golang-github-klauspost-compress-dev, golang-github-klauspost-pgzip-dev, golang-github-mattn-go-shellwords-dev, golang-github-moby-sys-dev, golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-runc-dev, golang-github-opencontainers-selinux-dev (\u003e= 1.5.0), golang-github-opencontainers-specs-dev, golang-github-pkg-errors-dev, golang-github-sirupsen-logrus-dev, golang-github-stretchr-testify-dev, golang-github-ulikunitz-xz-dev, golang-github-vbatts-tar-split-dev, golang-go (\u003e\u003e 2:1.14~~), golang-go-patricia-dev, golang-go-zfs-dev, golang-gocapability-dev, golang-golang-x-net-dev, golang-golang-x-sys-dev (\u003e\u003e 0.0~git20201223), libbtrfs-dev, libdevmapper-dev"
   ],
   "Checksums-Sha256": [
-    "6f6bdff9c095ac3837287c03d61fcd64a7113bf5507886180d88658fde07b677 3739 golang-github-containers-storage_1.55.0+ds1-3.dsc 52a60163c53b73a7247d014a697489bb6ca9682f3d374e62f9ef68e289e77238 406076 golang-github-containers-storage_1.55.0+ds1.orig.tar.xz 548fcd58083a8edfffa0950065cac28212a90fa18c855560c32ea0b0d88a476a 7880 golang-github-containers-storage_1.55.0+ds1-3.debian.tar.xz"
+    "6440467267b9623985b4818a51c3c1744075420f0ce9f40b39bb61b39b49ec46 3770 golang-github-containers-storage_1.55.1+ds1-1.dsc ddc51525d4948abc4d9f7dbd41b33d900d4de4e50971e895f3070676a8ba5032 407200 golang-github-containers-storage_1.55.1+ds1.orig.tar.xz 468b8ed64ad83ba134a856f20016422b310a7e40d2c25877e43c76b31f865d78 8104 golang-github-containers-storage_1.55.1+ds1-1.debian.tar.xz"
   ],
   "Dgit": [
-    "aed15428f404386579e61bc4277911c534b4b618 debian archive/debian/1.55.0+ds1-3 https://git.dgit.debian.org/golang-github-containers-storage"
+    "c728fb3fdcfd28b04d31ff594e9d28a0314b132d debian archive/debian/1.55.1+ds1-1 https://git.dgit.debian.org/golang-github-containers-storage"
   ],
   "Directory": [
     "pool/main/g/golang-github-containers-storage"
   ],
   "Files": [
-    "0d65a5997f2f855fa794bb0c13c2232e 3739 golang-github-containers-storage_1.55.0+ds1-3.dsc 2391d475e5a3bab14e34668bdce9cc5e 406076 golang-github-containers-storage_1.55.0+ds1.orig.tar.xz 8697d3a85530ef3fab6bd053ce341fd7 7880 golang-github-containers-storage_1.55.0+ds1-3.debian.tar.xz"
+    "9b566bf7ae1b1882c0b4821c8f9105e1 3770 golang-github-containers-storage_1.55.1+ds1-1.dsc 1402844321c59b843007205c25e25083 407200 golang-github-containers-storage_1.55.1+ds1.orig.tar.xz 26c1c3fe3c15f9bc56f7f36f3cc66cb3 8104 golang-github-containers-storage_1.55.1+ds1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,7 +51,7 @@
     "autopkgtest, autopkgtest-pkg-go"
   ],
   "Testsuite-Triggers": [
-    "dh-golang, golang-any"
+    "@recommends@, bats, dh-golang, golang-any"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e, Dmitry Smirnov \u003conlyjob@debian.org\u003e"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/go-team/packages/golang-github-containers-storage.git"
   ],
   "Version": [
-    "1.55.0+ds1-3"
+    "1.55.1+ds1-1"
   ]
 }

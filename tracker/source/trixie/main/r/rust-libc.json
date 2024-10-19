@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-libc-dev, librust-libc+rustc-dep-of-std-dev, librust-libc+rustc-std-workspace-core-dev"
+    "librust-libc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, dpkg-dev (\u003e= 1.22.5) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, dpkg-dev (\u003e= 1.22.5) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6ce423dbb5dbca63de4a3125cf4472d1437914ccfd455504e81ce4d157c0e587 2450 rust-libc_0.2.155-1.dsc 97b3888a4aecf77e811145cadf6eef5901f4782c53886191b2f693f24761847c 743539 rust-libc_0.2.155.orig.tar.gz 23ea29b9427417e38a32f659c744082d75d40e52347b349fd6192c42c2f94f11 17708 rust-libc_0.2.155-1.debian.tar.xz"
+    "5b69ea0d5272873f9de26ed67950acfa5221bf6d080171281793763ad05af61a 1620 rust-libc_0.2.159-1.dsc 561d97a539a36e26a9a5fad1ea11a3039a67714694aaa379433e580854bc3dc5 755366 rust-libc_0.2.159.orig.tar.gz eb7b7d0078ab261698c9525ae70ea1b494f11b0c45a11e1fc02677ddbf44a84c 15588 rust-libc_0.2.159-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libc"
   ],
   "Files": [
-    "6262cf79b766658e36580637371c7240 2450 rust-libc_0.2.155-1.dsc ecf7bef276ea5d9ad71d141572f96737 743539 rust-libc_0.2.155.orig.tar.gz 4ffc518f70f318ba63af92bca6610007 17708 rust-libc_0.2.155-1.debian.tar.xz"
+    "0d02749ce3e71e41afd40c1f1221312c 1620 rust-libc_0.2.159-1.dsc 4b2ae24ffea6c80e5eddeab16b0dbea8 755366 rust-libc_0.2.159.orig.tar.gz 812acc9b2b804063cf19a9e26201c488 15588 rust-libc_0.2.159-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-libc"
   ],
   "Package-List": [
-    "librust-libc+rustc-dep-of-std-dev deb rust optional arch=any librust-libc+rustc-std-workspace-core-dev deb rust optional arch=any librust-libc-dev deb rust optional arch=any"
+    "librust-libc-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libc]"
   ],
   "Version": [
-    "0.2.155-1"
+    "0.2.159-1"
   ]
 }

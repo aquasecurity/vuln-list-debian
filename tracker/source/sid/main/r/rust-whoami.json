@@ -6,22 +6,22 @@
     "librust-whoami-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+default-dev \u003c!nocheck\u003e, librust-web-sys-0.3+default-dev \u003c!nocheck\u003e, librust-web-sys-0.3+document-dev \u003c!nocheck\u003e, librust-web-sys-0.3+location-dev \u003c!nocheck\u003e, librust-web-sys-0.3+navigator-dev \u003c!nocheck\u003e, librust-web-sys-0.3+window-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.40) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "115c2a27e460034a1e420eddce1bcfe3cb8daffd030a7a9779b6289423193af7 2544 rust-whoami_1.4.1-2.dsc 22fc3756b8a9133049b26c7f61ab35416c130e8c09b660f5b3958b446f52cc50 19677 rust-whoami_1.4.1.orig.tar.gz dd0c06689bca9527124f406b4e5537bbd468cac8d903bd80442bb2d70c5fa743 11184 rust-whoami_1.4.1-2.debian.tar.xz"
+    "efe903482c8c6b71d5a42e3f77eaf1be19df9fcbc49e9eafc0872ed8d42ee287 1588 rust-whoami_1.5.2-1.dsc 372d5b87f58ec45c384ba03563b03544dc5fadc3983e434b286913f5b4a9bb6d 24204 rust-whoami_1.5.2.orig.tar.gz 8637f37cb3a75b82f2df7da609e6261b64a27ae49bd2f3c914d6caafcbfe9052 11396 rust-whoami_1.5.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-whoami"
   ],
   "Files": [
-    "ff17475f0cb456194070c348c50f2bc7 2544 rust-whoami_1.4.1-2.dsc cd9af84eb3044b7fdfe2ef003d6d50f7 19677 rust-whoami_1.4.1.orig.tar.gz 13655cb3356f4c417a67f246075dc6ba 11184 rust-whoami_1.4.1-2.debian.tar.xz"
+    "ae5914e9fcfa4755ed31559d1ef72566 1588 rust-whoami_1.5.2-1.dsc ff99b131ed5e36ee4b070653724d7586 24204 rust-whoami_1.5.2.orig.tar.gz 8239590076b8aa9bd772e45d8ace1d0f 11396 rust-whoami_1.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/ardaku/whoami/blob/stable/CHANGELOG.md"
+    "https://github.com/ardaku/whoami/blob/v1/CHANGELOG.md"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/whoami]"
   ],
   "Version": [
-    "1.4.1-2"
+    "1.5.2-1"
   ]
 }
