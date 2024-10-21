@@ -6,16 +6,16 @@
     "libfips203-0, libfips203-dev, python3-fips203"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13), dh-cargo (\u003e= 25), dh-sequence-python3, cargo:native, rustc:native (\u003e= 1.70), python3-all, libstd-rust-dev, librust-fips203-0.2+default-dev (\u003e= 0.2.1-~~)"
+    "debhelper-compat (= 13), dh-sequence-cargo, dh-sequence-python3, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, python3-all, libstd-rust-dev \u003c!nocheck\u003e, librust-fips203-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev (\u003e= 0.6.4-~~) \u003c!nocheck\u003e, librust-rand-core-0.6+getrandom-dev (\u003e= 0.6.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "39a97f16124bd15f3d3622370f393cd4d3a0f9fb4791e663d96861a263bb1002 1862 rust-fips203-ffi_0.2.1-4.dsc 07e614092c77575b19c4d015bcc6a27cef165a974bb9ccecc4ab9dc42ef4050a 6887 rust-fips203-ffi_0.2.1.orig.tar.gz 627d71e201a4079756ed0f36cf6a07bc0d97ee2e59b72f0c758f29e8dcbdf177 5308 rust-fips203-ffi_0.2.1-4.debian.tar.xz"
+    "1c953230a8442b0641c4876504083ba4c68c08f0d934d2fb0b15bff0b65ec235 2059 rust-fips203-ffi_0.4.1-2.dsc a837f2411e752fd3ab0124a9a75f903d7df8476f9c3456b2f5b8fdc6e82d04c4 10302 rust-fips203-ffi_0.4.1.orig.tar.gz 1175fcec92b7c6f17925d592e1a4c50952e282178adc17dffc8a36d531b0e740 4652 rust-fips203-ffi_0.4.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fips203-ffi"
   ],
   "Files": [
-    "5992d394fe4eda8a3c8e04ee2b4d61c9 1862 rust-fips203-ffi_0.2.1-4.dsc a7b7c3f7985954f0e98672a8e0aec34d 6887 rust-fips203-ffi_0.2.1.orig.tar.gz 14b053b2e983ddefc616038f17b45584 5308 rust-fips203-ffi_0.2.1-4.debian.tar.xz"
+    "ebf18c6fcac38d0f0f78b2fdad6c2cc4 2059 rust-fips203-ffi_0.4.1-2.dsc 906f8b5468044b454c62a7a81de5415b 10302 rust-fips203-ffi_0.4.1.orig.tar.gz 0c11bb314190868023f94018e7eb6b7a 4652 rust-fips203-ffi_0.4.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential"
+    "build-essential, librust-fips203-dev"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fips203-ffi]"
   ],
   "Version": [
-    "0.2.1-4"
+    "0.4.1-2"
   ]
 }
