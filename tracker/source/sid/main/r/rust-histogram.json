@@ -6,16 +6,16 @@
     "librust-histogram-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.47-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.47-~~) \u003c!nocheck\u003e, architecture-is-64-bit"
   ],
   "Checksums-Sha256": [
-    "8185d30fd35c9113cfa196fc92df81958972b0b14556a095c44405480c57063b 2310 rust-histogram_0.11.0-1.dsc b62b8d85713ddc62e5e78db13bf9f9305610d0419276faa845076a68b7165872 12604 rust-histogram_0.11.0.orig.tar.gz 3979545a1740ec6656bc121f321f698b6db4e5b1749f3db70f1c4cb2c919699a 2620 rust-histogram_0.11.0-1.debian.tar.xz"
+    "3a9ed8768e558748edcf28fd75e6464247fc249a07b9ac912672633a063a5c01 2348 rust-histogram_0.11.0-2.dsc b62b8d85713ddc62e5e78db13bf9f9305610d0419276faa845076a68b7165872 12604 rust-histogram_0.11.0.orig.tar.gz f74da4b0065ea35219d7a0dd38ed39a4ed6c9d8ef0d36d2f0a19cf7bbf56f9c5 2692 rust-histogram_0.11.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-histogram"
   ],
   "Files": [
-    "8b23f908e7458ef10a28c7d04e5821a3 2310 rust-histogram_0.11.0-1.dsc b185dbb1a870eb1db70801adfabe50a5 12604 rust-histogram_0.11.0.orig.tar.gz a9c6ff1d67e14d3313522daa72b05922 2620 rust-histogram_0.11.0-1.debian.tar.xz"
+    "f427ec682ba006a7e4f9aa91474c7ab2 2348 rust-histogram_0.11.0-2.dsc b185dbb1a870eb1db70801adfabe50a5 12604 rust-histogram_0.11.0.orig.tar.gz 9c1c65462ac43fc23ffb3597a7f98392 2692 rust-histogram_0.11.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/histogram]"
   ],
   "Version": [
-    "0.11.0-1"
+    "0.11.0-2"
   ]
 }
