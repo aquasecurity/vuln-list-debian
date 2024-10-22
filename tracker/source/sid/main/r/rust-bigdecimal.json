@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-bigdecimal-dev, librust-bigdecimal+serde-dev"
+    "librust-bigdecimal-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-bigint-0.4+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-libm-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-num-bigint-0.4+std-dev \u003c!nocheck\u003e, librust-num-bigint-0.4-dev \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev \u003c!nocheck\u003e, librust-num-integer-0.1-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "afec95a4ea0d47c021991369e927351025836f2c8d5804190d3df1261cfcdf57 2460 rust-bigdecimal_0.3.0-1.dsc 6aaf33151a6429fe9211d1b276eafdf70cdff28b071e76c0b0e1503221ea3744 26679 rust-bigdecimal_0.3.0.orig.tar.gz 7633cebc8832ecc36b096a9191991cf6b34947a2739a226f819c6da6d02687a8 2920 rust-bigdecimal_0.3.0-1.debian.tar.xz"
+    "2947459335cfb8aca13ddb0f67d63a3c6ce1e4e12c2089dcaf4d7925471a6044 2014 rust-bigdecimal_0.4.5-1.dsc 51d712318a27c7150326677b321a5fa91b55f6d9034ffd67f20319e147d40cee 79843 rust-bigdecimal_0.4.5.orig.tar.gz d37fb6ef4e578295b14261ab2a32c7bc594b77dee94f5f570e17afe012a8e95b 3036 rust-bigdecimal_0.4.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bigdecimal"
   ],
   "Files": [
-    "b5659f96f1028383cef964ab6ded4f97 2460 rust-bigdecimal_0.3.0-1.dsc 30be1cb364022e2f2819b524a26b2ba0 26679 rust-bigdecimal_0.3.0.orig.tar.gz fb0be107ae7234c37f448926b8bd6d36 2920 rust-bigdecimal_0.3.0-1.debian.tar.xz"
+    "46f2822a3b17fe520b7bcdb5aa74c06f 2014 rust-bigdecimal_0.4.5-1.dsc 612f63f79196a64f592dbac990cd52c5 79843 rust-bigdecimal_0.4.5.orig.tar.gz 9972314bfc3c96a82ebf50e3ac30ed26 3036 rust-bigdecimal_0.4.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-bigdecimal"
   ],
   "Package-List": [
-    "librust-bigdecimal+serde-dev deb rust optional arch=any librust-bigdecimal-dev deb rust optional arch=any"
+    "librust-bigdecimal-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-paste-1+default-dev, librust-serde-test+default-dev, librust-siphasher-0.3-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bigdecimal]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.4.5-1"
   ]
 }
