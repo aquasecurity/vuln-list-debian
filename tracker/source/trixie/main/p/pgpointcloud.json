@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pointcloud"
+    "postgresql-17-pointcloud"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libxml2-dev, postgresql-all (\u003e= 219~), zlib1g-dev"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libxml2-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "e479b59dc4eb1ab61d50dc9c1f9cc2da10bb1756c12581e1adb01799e1fdc2f3 2086 pgpointcloud_1.2.5-1.dsc f3924f283345f2da46a971e65f0c6ce602640ecf88a2057293443ec2a7a56774 348678 pgpointcloud_1.2.5.orig.tar.gz 29315a35995a6911101045410c9c50c17a47740d9e5fdcb4a3ae0d306b2723a9 3824 pgpointcloud_1.2.5-1.debian.tar.xz"
+    "f5edc34a502c19137a796c2c71562d9b7840c1a101b142861edd9c99742cd264 2164 pgpointcloud_1.2.5-2.dsc f3924f283345f2da46a971e65f0c6ce602640ecf88a2057293443ec2a7a56774 348678 pgpointcloud_1.2.5.orig.tar.gz c862ee1eadb563fbac88504559bba6ea627c97b1d4b4794b9415d30c53a52a79 3912 pgpointcloud_1.2.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgpointcloud"
   ],
   "Files": [
-    "fd6c1add5ab5747a468ba6c1541338ee 2086 pgpointcloud_1.2.5-1.dsc 64b7f14fa4f087bd743aebc3c8605f47 348678 pgpointcloud_1.2.5.orig.tar.gz 258aac43b2daf4fc590732dfa3223a8f 3824 pgpointcloud_1.2.5-1.debian.tar.xz"
+    "6cb101178d5ae88811e0fa6880053f99 2164 pgpointcloud_1.2.5-2.dsc 64b7f14fa4f087bd743aebc3c8605f47 348678 pgpointcloud_1.2.5.orig.tar.gz 6c7fb3d27c2a9b24a75bc594f42f9e7d 3912 pgpointcloud_1.2.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgpointcloud"
   ],
   "Package-List": [
-    "postgresql-16-pointcloud deb database optional arch=any"
+    "postgresql-17-pointcloud deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgpointcloud.git"
   ],
   "Version": [
-    "1.2.5-1"
+    "1.2.5-2"
   ]
 }

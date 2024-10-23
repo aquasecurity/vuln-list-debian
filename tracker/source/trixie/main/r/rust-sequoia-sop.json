@@ -6,16 +6,16 @@
     "librust-sequoia-sop-dev, sqop, sqopv"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~), librust-sequoia-openpgp-1+default-dev (\u003e= 1.20-~~), librust-sequoia-openpgp-1-dev (\u003e= 1.20-~~), librust-sop-0.7+default-dev (\u003e= 0.7.2-~~), bash-completion"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~), librust-sequoia-openpgp-1+default-dev (\u003e= 1.20-~~), librust-sequoia-openpgp-1-dev (\u003e= 1.20-~~), librust-sop-0.7+default-dev (\u003e= 0.7.2-~~), bash-completion"
   ],
   "Checksums-Sha256": [
-    "052c3fcde4913710ad2c9dafcb0021fc3fbc8fb4f1fbd8c102df774c1e504202 2022 rust-sequoia-sop_0.35.0-5.dsc d624d0e60c22c1581acd7b824afb265b412602c2565fbcd5a030bac3f47e282d 34757 rust-sequoia-sop_0.35.0.orig.tar.gz 068ef837552b7c949b8386a69409acba46040c7fac7cad8a6a4f3280a272958e 4400 rust-sequoia-sop_0.35.0-5.debian.tar.xz"
+    "430f246df050dce940d1365df5d93368bbf509ac81637c5ae467179910d8be2f 2642 rust-sequoia-sop_0.35.0-6.dsc d624d0e60c22c1581acd7b824afb265b412602c2565fbcd5a030bac3f47e282d 34757 rust-sequoia-sop_0.35.0.orig.tar.gz 3c162b59a1d465e40024c4c0ec3daa3a9745760dd14f0455c917977ebe3b4c19 4416 rust-sequoia-sop_0.35.0-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-sop"
   ],
   "Files": [
-    "91116412e9a9a7a39408a2d1f7af7af5 2022 rust-sequoia-sop_0.35.0-5.dsc 4f39393d7471f9fbba4ff49d179c408d 34757 rust-sequoia-sop_0.35.0.orig.tar.gz 1565124a29ead9f5d517ad5833ce0855 4400 rust-sequoia-sop_0.35.0-5.debian.tar.xz"
+    "258612eb6f5aff87e961fb0eb61c9216 2642 rust-sequoia-sop_0.35.0-6.dsc 4f39393d7471f9fbba4ff49d179c408d 34757 rust-sequoia-sop_0.35.0.orig.tar.gz 1e7cb25d59b6ce627b8c15e0ae894e4c 4416 rust-sequoia-sop_0.35.0-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-sop]"
   ],
   "Version": [
-    "0.35.0-5"
+    "0.35.0-6"
   ]
 }

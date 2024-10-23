@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-pglogical-ticker"
+    "postgresql-17-pglogical-ticker"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libpq-dev, postgresql-all (\u003e= 256~), postgresql-16-pglogical"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libpq-dev, postgresql-17-pglogical, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "e9a6036e2fa77d802c708f0d04273ab8aca42837f207803e19589d29f779d6f8 2177 pglogical-ticker_1.4.1-7.dsc 11cbdf8d11b992a816d4422f17911507dee65b6826768f1de128cc877a62d2b2 20373 pglogical-ticker_1.4.1.orig.tar.gz a1acc0695ca70c119f8fff5461aad2b8f1e1de406b3ea4d10736e14c73f036cb 3516 pglogical-ticker_1.4.1-7.debian.tar.xz"
+    "a39753e0cfa32ebaed5d308819ccb45fca446f47e1b2b8a96269d4b80544da93 2254 pglogical-ticker_1.4.1-8.dsc 11cbdf8d11b992a816d4422f17911507dee65b6826768f1de128cc877a62d2b2 20373 pglogical-ticker_1.4.1.orig.tar.gz 5849c7b1c89dc2a82a01a6bdef28ed04cc591f9dfbbd06cbdfe78114f37bfd6f 3716 pglogical-ticker_1.4.1-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pglogical-ticker"
   ],
   "Files": [
-    "78389ba10f0e9f4376c00e6870e05a0a 2177 pglogical-ticker_1.4.1-7.dsc ef845131d1037f3830c42db2f2474e33 20373 pglogical-ticker_1.4.1.orig.tar.gz 0ea5bad11b9102cb792151ee8866d227 3516 pglogical-ticker_1.4.1-7.debian.tar.xz"
+    "de632111ec95f22e385824e08bdf8347 2254 pglogical-ticker_1.4.1-8.dsc ef845131d1037f3830c42db2f2474e33 20373 pglogical-ticker_1.4.1.orig.tar.gz dd5b4dc9b48e9db6064ae80ef989a9e9 3716 pglogical-ticker_1.4.1-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pglogical-ticker"
   ],
   "Package-List": [
-    "postgresql-16-pglogical-ticker deb database optional arch=any"
+    "postgresql-17-pglogical-ticker deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pglogical-ticker.git"
   ],
   "Version": [
-    "1.4.1-7"
+    "1.4.1-8"
   ]
 }

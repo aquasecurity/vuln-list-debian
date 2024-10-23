@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-tdigest"
+    "postgresql-17-tdigest"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "d1f9f386b2f04fd299f5413529f145dcb04833fc4b671827ee63b0a2ba4e20cb 2041 tdigest_1.4.1-1.dsc 2ac8d3944f4b62717cab23d9ec8c58cf912d2802086616136374695f2e13dbf1 46387 tdigest_1.4.1.orig.tar.gz a15f786dd4821bc1cffcd382d471d17e109dc479f3ec4adfab48e83185d9b548 2708 tdigest_1.4.1-1.debian.tar.xz"
+    "2f8e52c7d3d777c5789a5e83198d2b92ce39ab42352e13c165ececd3b04c8bdd 2119 tdigest_1.4.1-2.dsc 2ac8d3944f4b62717cab23d9ec8c58cf912d2802086616136374695f2e13dbf1 46387 tdigest_1.4.1.orig.tar.gz c15443d4618bbd5ca90cf811bb52e34c9204888953ea724b88a5c80f4c640d90 5144 tdigest_1.4.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tdigest"
   ],
   "Files": [
-    "59d16ece38cbf1d84355d6b6302cb88d 2041 tdigest_1.4.1-1.dsc 0deee2de85c846f14132dad002f6b7f4 46387 tdigest_1.4.1.orig.tar.gz 645aff78fbad669f406fabb08e718032 2708 tdigest_1.4.1-1.debian.tar.xz"
+    "11362ae0a56e069564ba2d48495bd3af 2119 tdigest_1.4.1-2.dsc 0deee2de85c846f14132dad002f6b7f4 46387 tdigest_1.4.1.orig.tar.gz 7e72502d17098d2ae1b090adc5427aed 5144 tdigest_1.4.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "tdigest"
   ],
   "Package-List": [
-    "postgresql-16-tdigest deb database optional arch=any"
+    "postgresql-17-tdigest deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/tdigest.git"
   ],
   "Version": [
-    "1.4.1-1"
+    "1.4.1-2"
   ]
 }

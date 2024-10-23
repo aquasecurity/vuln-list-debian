@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-repack"
+    "postgresql-17-repack"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "35679a5596770b051256fd5af623e73a3b8580fad467c924dd3ca8569420cba0 2071 pg-repack_1.5.0-1.dsc 9a14d6a95bfa29f856aa10538238622c1f351d38eb350b196c06720a878ccc52 97088 pg-repack_1.5.0.orig.tar.gz 6c8143f4083c6d9cb3390f1cdd7ce062255e6e6216c90debf5f3e86a18fc5b5d 4604 pg-repack_1.5.0-1.debian.tar.xz"
+    "e049a0cc22fd522f06d58ac334e8aca38e155b898f26bc27bb2f10039512ed42 2150 pg-repack_1.5.1-1.dsc aafbcb5d3dabd8135944692265abf7c67f579fed5bb4694ec9a75348e2d214a1 99661 pg-repack_1.5.1.orig.tar.gz fe010845af6ba2cd04717cfa8bd1fb485bbeb59bb1f98b06ad336b66a00625a6 4636 pg-repack_1.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-repack"
   ],
   "Files": [
-    "587814fbc2a7067933ad8ce201ac464e 2071 pg-repack_1.5.0-1.dsc 9f4a1e3113f05767b8fc7d554b4abea5 97088 pg-repack_1.5.0.orig.tar.gz cfaf9e40915d3d696a7084be4a906860 4604 pg-repack_1.5.0-1.debian.tar.xz"
+    "2431dedc2e65af4b67c4f730d271583a 2150 pg-repack_1.5.1-1.dsc 3b2a43577806d341c91dfc498c29f1d8 99661 pg-repack_1.5.1.orig.tar.gz 193771386acd5f843b03d63e72768325 4636 pg-repack_1.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-repack"
   ],
   "Package-List": [
-    "postgresql-16-repack deb database optional arch=any"
+    "postgresql-17-repack deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "make"
   ],
   "Uploaders": [
-    "Christoph Berg \u003cmyon@debian.org\u003e, Adrian Vondendriesch \u003cadrian.vondendriesch@credativ.de\u003e"
+    "Christoph Berg \u003cmyon@debian.org\u003e, Adrian Vondendriesch \u003cadrian.vondendriesch@credativ.de\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-repack"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-repack.git"
   ],
   "Version": [
-    "1.5.0-1"
+    "1.5.1-1"
   ]
 }
