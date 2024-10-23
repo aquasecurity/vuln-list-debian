@@ -6,16 +6,16 @@
     "librust-semver-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8d6ea92d5e1a207a9dbaa6f5c7b4808054155065e83c6ff8286ef1f0ede8626b 2136 rust-semver_1.0.21-1.dsc b97ed7a9823b74f99c7742f5336af7be5ecd3eeafcb1507d1fa93347b1d589b0 30445 rust-semver_1.0.21.orig.tar.gz 9f1eb94f76b5e6daf66e9ab0287c80a1425d561387bbdf33e17fa9eed12b2e1d 2860 rust-semver_1.0.21-1.debian.tar.xz"
+    "1e7fe2a243703ac7cc6a2c29991996bce9998b1d98cb7730e0bedfe24d264327 2166 rust-semver_1.0.23-1.dsc 61697e0a1c7e512e84a621326239844a24d8207b4669b41bc18b32ea5cbf988b 30622 rust-semver_1.0.23.orig.tar.gz 1a7136f19f1dff63c71f26a858f6b4242db4511e446cd30d90bebbfaf6f12ce8 2912 rust-semver_1.0.23-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-semver"
   ],
   "Files": [
-    "943c5e19ba27e4a6e4c75f79180a1ad7 2136 rust-semver_1.0.21-1.dsc d5a0497966ae82c3135c35dcb4adb2ce 30445 rust-semver_1.0.21.orig.tar.gz fd954263b0968749a32f9c4a2fe948aa 2860 rust-semver_1.0.21-1.debian.tar.xz"
+    "64cbcd753a4e8a36e92eb8ea61c18093 2166 rust-semver_1.0.23-1.dsc d3ccccba78e5375faf8e543884f9e84e 30622 rust-semver_1.0.23.orig.tar.gz 5995b335a7587a49817f83ecac170a7f 2912 rust-semver_1.0.23-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/semver]"
   ],
   "Version": [
-    "1.0.21-1"
+    "1.0.23-1"
   ]
 }

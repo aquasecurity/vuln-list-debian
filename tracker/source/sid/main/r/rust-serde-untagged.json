@@ -6,16 +6,16 @@
     "librust-serde-untagged-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-erased-serde-0.3+alloc-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-erased-serde-0.3+alloc-dev (\u003e= 0.3.31-~~) \u003c!nocheck\u003e, librust-serde-1+alloc-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e, librust-typeid-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b706d3eda8a4468bd639b5578e633e4bd5f8847bf7278ffbe2bc9836a3a32afe 2455 rust-serde-untagged_0.1.1-1.dsc 0ba3ac59c62f51b75a6bfad8840b2ede4a81ff5cc23c200221ef479ae75a4aa3 15679 rust-serde-untagged_0.1.1.orig.tar.gz 43ca1c89ad4d9881b5dc835df9b0a66d843b42cff7a6437c6988de84c51b78d1 2568 rust-serde-untagged_0.1.1-1.debian.tar.xz"
+    "b1f0f5c1ea9eb091feddc0c5aa2ca8e67cb1057c96c47e5c81ee810f75b43d1f 2526 rust-serde-untagged_0.1.6-1.dsc 2676ba99bd82f75cae5cbd2c8eda6fa0b8760f18978ea840e980dd5567b5c5b6 15741 rust-serde-untagged_0.1.6.orig.tar.gz faaf44bd62f3967ffbec8afe42f3f607521e130cc9681795071506bb1d9b3ef8 2780 rust-serde-untagged_0.1.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-untagged"
   ],
   "Files": [
-    "a59e9cd057f3bdc526bdf7b6db9430d9 2455 rust-serde-untagged_0.1.1-1.dsc 90821207319765a7d7467b1cb12b204b 15679 rust-serde-untagged_0.1.1.orig.tar.gz 2b056fb95905b58cca567c6f285c2af7 2568 rust-serde-untagged_0.1.1-1.debian.tar.xz"
+    "9eeb35d21b243768367fcbc65c087a43 2526 rust-serde-untagged_0.1.6-1.dsc 5736abfbc0096d2328905124eaeeb331 15741 rust-serde-untagged_0.1.6.orig.tar.gz 750810108e159ef80a1696c631922f59 2780 rust-serde-untagged_0.1.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-toml-0.7+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-toml-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-untagged]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.6-1"
   ]
 }
