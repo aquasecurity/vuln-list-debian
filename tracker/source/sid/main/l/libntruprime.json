@@ -6,16 +6,16 @@
     "libntruprime-dev, libntruprime1, ntruprime"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, libcpucycles-dev, librandombytes-dev, python3, valgrind-if-available"
+    "debhelper-compat (= 13), dh-python, libcpucycles-dev, librandombytes-dev, python3, python3-capstone, valgrind-if-available"
   ],
   "Checksums-Sha256": [
-    "913a728704a186590c87ced6e1c96959c3b110b0b87fbbbe99ed06a0d8fb65f8 1585 libntruprime_0~20241008-2.dsc e23ab762f0e9353673d54d73801513b0c62075b4a62603887bb1fc4868fdceca 2611914 libntruprime_0~20241008.orig.tar.gz 561327cc704b13bfe1182d7decf5df9905591d63cf1f0d4efc4b9ffab565d8ed 8440 libntruprime_0~20241008-2.debian.tar.xz"
+    "ac63842fc22cd0caadbc943a5b8fbf377a3451283db2f23ee2ff04a7ac825ee8 1710 libntruprime_0~20241021-1.dsc 1b027c1420554ab8282db309815f3265196d24bad89cf3bf7ee67915fa47e3dc 2576601 libntruprime_0~20241021.orig.tar.gz 28c8cdfe63ebbe6e84a5ce3c2f70cff8c76d7fa59ef3b2bcce18e1f38c9d9c2c 8864 libntruprime_0~20241021-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libn/libntruprime"
   ],
   "Files": [
-    "44b73eb98f35d3c26bb0d21842c3508d 1585 libntruprime_0~20241008-2.dsc be51a57231e98caeb76c0e04f089d4a5 2611914 libntruprime_0~20241008.orig.tar.gz 06c78a0e55aedd8faf32b4ff6adba992 8440 libntruprime_0~20241008-2.debian.tar.xz"
+    "714f4e668991e723b553a2a15a14fcdc 1710 libntruprime_0~20241021-1.dsc 99a121f9d869985a754aaa3b046ba6d8 2576601 libntruprime_0~20241021.orig.tar.gz 28fdbda40407dc1ab663e1683ab97c82 8864 libntruprime_0~20241021-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@recommends@, python3"
+    "@recommends@, build-essential, dpkg-dev, librandombytes-dev, python3, valgrind"
+  ],
+  "Uploaders": [
+    "Jan Mojžíš \u003cjan.mojzis@gmail.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/jas/libntruprime"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/jas/libntruprime.git"
   ],
   "Version": [
-    "0~20241008-2"
+    "0~20241021-1"
   ]
 }
