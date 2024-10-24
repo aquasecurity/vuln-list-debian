@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libzip-dev, libzip4t64, zipcmp, zipmerge, ziptool"
+    "libzip-dev, libzip5, zipcmp, zipmerge, ziptool"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 12), libbz2-dev, libssl-dev, mandoc, unzip, zlib1g-dev"
+    "cmake, debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), libbz2-dev, libssl-dev, mandoc, unzip, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "f7baf8fee0ce512412bed0a6866800021fd2336b171b890ae3da50db39ea50f2 2147 libzip_1.7.3-1.1.dsc a60473ffdb7b4260c08bfa19c2ccea0438edac11193c3afbbb1f17fbcf6c6132 747372 libzip_1.7.3.orig.tar.xz 195e4780107267806493290f9d67e0dd55585dd6061eac63d7d055df514accea 8332 libzip_1.7.3-1.1.debian.tar.xz"
+    "64c79c529c57ffa22f99a7acf92091c25c7546f2e2b9d8c8de0a875f88d3ce71 2221 libzip_1.11.1-1.dsc 721e0e4e851073b508c243fd75eda04e4c5006158a900441de10ce274cc3b633 786592 libzip_1.11.1.orig.tar.xz 35d6cff9fdc879a55b8c48c691fe36d5b1e8bb247f7385f35f00dab7b0a269ff 7652 libzip_1.11.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libz/libzip"
   ],
   "Files": [
-    "d92c52d1800d1828918d380323fc0e0f 2147 libzip_1.7.3-1.1.dsc c0185e10023963bbec0e0002ab39d981 747372 libzip_1.7.3.orig.tar.xz 18edd4b99c92ebf600d3872855a44711 8332 libzip_1.7.3-1.1.debian.tar.xz"
+    "91bef9ff935a808f1a63f0b808cb7ccc 2221 libzip_1.11.1-1.dsc ce7db66aebd0e1ad052b2966adb4f565 786592 libzip_1.11.1.orig.tar.xz f37646678e36aeb74f53a9211611f931 7652 libzip_1.11.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://libzip.org"
   ],
   "Maintainer": [
-    "Stefan Schörghofer \u003camd1212@4md.gr\u003e"
+    "Debian Libzip Maintainers \u003clibzip@tracker.debian.org\u003e"
   ],
   "Package": [
     "libzip"
   ],
   "Package-List": [
-    "libzip-dev deb libdevel optional arch=any libzip4t64 deb libs optional arch=any zipcmp deb utils optional arch=any zipmerge deb utils optional arch=any ziptool deb utils optional arch=any"
+    "libzip-dev deb libdevel optional arch=any libzip5 deb libs optional arch=any zipcmp deb utils optional arch=any zipmerge deb utils optional arch=any ziptool deb utils optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,10 +39,16 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.3.0.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
-    "Ondřej Surý \u003condrej@debian.org\u003e"
+    "Ondřej Surý \u003condrej@debian.org\u003e, Florian Ernst \u003cflorian@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/libzip"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/libzip.git"
   ],
   "Version": [
-    "1.7.3-1.1"
+    "1.11.1-1"
   ]
 }
