@@ -6,16 +6,16 @@
     "librust-gix-sec-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.123-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.123-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "af06ce7b244a5dfd4a55c59c32304f315a93d4c0100164695b7ca52c8394c584 2288 rust-gix-sec_0.10.6-1.dsc fddc27984a643b20dd03e97790555804f98cf07404e0e552c0ad8133266a79a1 9356 rust-gix-sec_0.10.6.orig.tar.gz c57c460c5469f13598275c728aea530f5ced30d0f20c5a9dbad5f8bae49c9d9b 3012 rust-gix-sec_0.10.6-1.debian.tar.xz"
+    "88cf67b867a11daa31cc669cbf8b8d7e08333d6cf3a695147881c7dc72eb8bd0 2318 rust-gix-sec_0.10.7-1.dsc 1547d26fa5693a7f34f05b4a3b59a90890972922172653bcb891ab3f09f436df 9406 rust-gix-sec_0.10.7.orig.tar.gz 5c7d6bfcec606bce8c7b909f34bc2eacb6f987240121731deeaab6675a027e7f 3060 rust-gix-sec_0.10.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-sec"
   ],
   "Files": [
-    "1839e22622c21b50d400aac3bbc69c99 2288 rust-gix-sec_0.10.6-1.dsc a865ed2b74e73c390f769b702aa02713 9356 rust-gix-sec_0.10.6.orig.tar.gz 71e2589d27741f83c9089b47ee7fdba0 3012 rust-gix-sec_0.10.6-1.debian.tar.xz"
+    "1f40716932b88cd895151383d565c3bc 2318 rust-gix-sec_0.10.7-1.dsc 5ea3f577a4614961e3b9be97916c09ae 9406 rust-gix-sec_0.10.7.orig.tar.gz 0d61e3d00d790fbbbd0c6c5b6c283798 3060 rust-gix-sec_0.10.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-sec]"
   ],
   "Version": [
-    "0.10.6-1"
+    "0.10.7-1"
   ]
 }

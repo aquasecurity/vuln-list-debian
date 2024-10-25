@@ -6,16 +6,16 @@
     "librust-serde-ignored-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ecdf48d708bd760e085d88080c190a52a1d84d3f8128daae937d35a418f7f6e7 2407 rust-serde-ignored_0.1.2-1.dsc 1c2c7d39d14f2f2ea82239de71594782f186fd03501ac81f0ce08e674819ff2f 12179 rust-serde-ignored_0.1.2.orig.tar.gz 591578a8f856ee5af09b2ce439eae8c9dd6d97584d7de18e776294908c0adeac 2692 rust-serde-ignored_0.1.2-1.debian.tar.xz"
+    "47c084d0eb3bbcc3e623fc5f599e83feb22f9c2f101488dfb9958bff94936b4b 2367 rust-serde-ignored_0.1.10-1.dsc a8e319a36d1b52126a0d608f24e93b2d81297091818cd70625fcf50a15d84ddf 11789 rust-serde-ignored_0.1.10.orig.tar.gz 5293254560a8f759014f40c3d554a5740a835d7db08eff912b795fb9963ec73c 2712 rust-serde-ignored_0.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-ignored"
   ],
   "Files": [
-    "e716a97d5bd3c106672fda48680be09f 2407 rust-serde-ignored_0.1.2-1.dsc a20d745661fd5e97f78dfcaec50a21fd 12179 rust-serde-ignored_0.1.2.orig.tar.gz 8bec39ad9417c130947e60c45c7fd93d 2692 rust-serde-ignored_0.1.2-1.debian.tar.xz"
+    "c7232491a40102454400a875a1af4c78 2367 rust-serde-ignored_0.1.10-1.dsc 597586743b4769a8f6c169803ad3bb2a 11789 rust-serde-ignored_0.1.10.orig.tar.gz 846cea8fc20a75e83e85ca3a2f7cab0c 2712 rust-serde-ignored_0.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-ignored]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.1.10-1"
   ]
 }
