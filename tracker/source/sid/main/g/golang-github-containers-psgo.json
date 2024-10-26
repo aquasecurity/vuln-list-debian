@@ -12,16 +12,16 @@
     "golang-any, golang-github-containers-storage-dev (\u003e\u003e 1.37.2), golang-github-opencontainers-runc-dev, golang-github-pkg-errors-dev, golang-github-sirupsen-logrus-dev, golang-github-stretchr-testify-dev, golang-golang-x-sys-dev"
   ],
   "Checksums-Sha256": [
-    "a84392c318889a063dc41a9335804a3cb03d002b71bd8fb122f065dcc8aeb29e 2677 golang-github-containers-psgo_1.7.1+ds1-1.dsc f491f6fc1783f7d3a05d33937bffae42667154c11949c922aac91717fc517025 30184 golang-github-containers-psgo_1.7.1+ds1.orig.tar.xz d79b40704caf61297c6d048a5659a9044dbac6fe070504c6ce5632034e2e4c82 5844 golang-github-containers-psgo_1.7.1+ds1-1.debian.tar.xz"
+    "821d83ccc28652daf2486138f0c38c87ccc140cbf87de724d377c0532d7a634e 2793 golang-github-containers-psgo_1.9.0-1.dsc af9088996263165169143ef3d64c7754f6c6222852770ca307228b60294ccdcc 28220 golang-github-containers-psgo_1.9.0.orig.tar.xz 6c77c59ef7bc2688d61d4d02a54c722e1bfb14e3e825ea77f9ceab858787f605 4168 golang-github-containers-psgo_1.9.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "4c13817755dc299e3506886436c9e6aa47bf2ecf debian archive/debian/1.7.1+ds1-1 https://git.dgit.debian.org/golang-github-containers-psgo"
+    "49f5ca937688df066a3140e07a507896f5935037 debian archive/debian/1.9.0-1 https://git.dgit.debian.org/golang-github-containers-psgo"
   ],
   "Directory": [
     "pool/main/g/golang-github-containers-psgo"
   ],
   "Files": [
-    "2adb5404edb890784ad83cc92042d54a 2677 golang-github-containers-psgo_1.7.1+ds1-1.dsc 1eb18bc8142a1d23cdfef55263a00236 30184 golang-github-containers-psgo_1.7.1+ds1.orig.tar.xz 2e7cc03c3da99a4ce2dda0b3ad8a13d4 5844 golang-github-containers-psgo_1.7.1+ds1-1.debian.tar.xz"
+    "ad2fcbc11d1def547add67b949cc66c2 2793 golang-github-containers-psgo_1.9.0-1.dsc 2d5040c23c0bf62219db344a9c96bf5d 28220 golang-github-containers-psgo_1.9.0.orig.tar.xz e6ca0fabd2a6133ca38b4ce29849262b 4168 golang-github-containers-psgo_1.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,7 +51,10 @@
     "4.5.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-go"
+    "autopkgtest, autopkgtest-pkg-go"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, @recommends@, bats, ca-certificates, catatonit, docker-cli, docker.io, make, podman, sudo, util-linux"
   ],
   "Uploaders": [
     "Dmitry Smirnov \u003conlyjob@debian.org\u003e,"
@@ -63,6 +66,6 @@
     "https://salsa.debian.org/go-team/packages/golang-github-containers-psgo.git"
   ],
   "Version": [
-    "1.7.1+ds1-1"
+    "1.9.0-1"
   ]
 }

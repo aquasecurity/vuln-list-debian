@@ -6,16 +6,16 @@
     "librust-bk-tree-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-triple-accel-0.4+default-dev \u003c!nocheck\u003e | librust-triple-accel-0.3+default-dev (\u003e= 0.3.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-triple-accel-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "56e1ae7265c0cf984aa8b6fd0b41a8367825807bb069bf195fcf7c50c45f4ebf 2292 rust-bk-tree_0.4.0-1.dsc 6121f6e107e94d717b5ca2631d56e7c2ed1542a21b2eb87b4bda1d6c1420ef3f 11919 rust-bk-tree_0.4.0.orig.tar.gz 981e3c154363f62719991b5af44441d1ae89181fbe30f7d2d462ff749e249ffc 2996 rust-bk-tree_0.4.0-1.debian.tar.xz"
+    "6090f3f1cd844ce772ee25b82332c1d35f32f075b1b323ff9d37ffe51222a11d 1668 rust-bk-tree_0.5.0-1.dsc a8283fb8e64b873918f8bc527efa6aff34956296e48ea750a9c909cd47c01546 12292 rust-bk-tree_0.5.0.orig.tar.gz af6e94134fb5a72e1170970047aa1b17806497e821d81f85c782adc9b613553e 3164 rust-bk-tree_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bk-tree"
   ],
   "Files": [
-    "b2a13cc8fa9bd67d72313c60f9091768 2292 rust-bk-tree_0.4.0-1.dsc a93f7f32f879b5c5cd052089b910ee05 11919 rust-bk-tree_0.4.0.orig.tar.gz 602ac0aada02fc5bb49499eddfa3840a 2996 rust-bk-tree_0.4.0-1.debian.tar.xz"
+    "c7a76ed58f21411797d5c3f5c30566f3 1668 rust-bk-tree_0.5.0-1.dsc 5e30e141dbde7ffee499e40bd7609c4f 12292 rust-bk-tree_0.5.0.orig.tar.gz b7d42a12d895d9c08cc72944ee404ffa 3164 rust-bk-tree_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bk-tree]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.5.0-1"
   ]
 }
