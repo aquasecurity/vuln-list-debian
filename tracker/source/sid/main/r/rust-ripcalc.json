@@ -6,16 +6,16 @@
     "librust-ripcalc-dev, ripcalc"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-csv-1+default-dev, librust-getopts-0.2+default-dev, librust-nix-0.27+default-dev, librust-nix-0.27+net-dev, librust-nix-0.27+poll-dev, librust-nix-0.27+signal-dev"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-csv-1+default-dev, librust-getopts-0.2+default-dev, librust-nix+default-dev (\u003e= 0.27-~~), librust-nix+fs-dev (\u003e= 0.27-~~), librust-nix+net-dev (\u003e= 0.27-~~), librust-nix+signal-dev (\u003e= 0.27-~~)"
   ],
   "Checksums-Sha256": [
-    "cec31a72993775d4c317e265488ebb39205c1146445ed50fff5c2b5aceaa7122 2378 rust-ripcalc_0.1.11-2.dsc 9b6f43b6d16f6760c25672053968b934bec5815ee3088f06bb18310602bbb843 30023 rust-ripcalc_0.1.11.orig.tar.gz 76bd50b729adda23be9908d2ee43c59269fa9a0bd24271ee285628b7f8b99ef0 2860 rust-ripcalc_0.1.11-2.debian.tar.xz"
+    "f0f68e28d776fd3f23e73889ba3b1063be0f1ff1ea44da2b3049ec7422dfd0fc 2421 rust-ripcalc_0.1.12-1.dsc 04e5333961b650cefb87a13c16ff98ad3a3054a425858eb39a2cf302d8216ce4 31130 rust-ripcalc_0.1.12.orig.tar.gz 38527c0d4aea6f4eac805bd7b5e7e28400d8b7b5bda82e43590478ca61fd3d2a 2444 rust-ripcalc_0.1.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ripcalc"
   ],
   "Files": [
-    "123154f441d92cf80c0fc627b51abe33 2378 rust-ripcalc_0.1.11-2.dsc ec405b5cb8782d3b4996aff1022fd6d3 30023 rust-ripcalc_0.1.11.orig.tar.gz 9943e0e61496ce724621d1fc74e602a8 2860 rust-ripcalc_0.1.11-2.debian.tar.xz"
+    "af7b202af740525730798af83ede8819 2421 rust-ripcalc_0.1.12-1.dsc 52c3e3afe5794eaed9f9e42796d30dfe 31130 rust-ripcalc_0.1.12.orig.tar.gz 2b0d9bc1bda4899b0939b8cb156ca584 2444 rust-ripcalc_0.1.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ed Neville \u003ced-debian@s5h.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ripcalc]"
   ],
   "Version": [
-    "0.1.11-2"
+    "0.1.12-1"
   ]
 }

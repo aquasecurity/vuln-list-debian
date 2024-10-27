@@ -6,16 +6,16 @@
     "librust-indefinite-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9f0a2b88b1c9690c4ee333be0264d0c6d6cc820439227ee7ca4cd48dfd91022e 2336 rust-indefinite_0.1.7-1.dsc aaff78b1cd5ef411ae4b8928617ede4a41bba36afd1aa97c59f462a1307b9196 5925 rust-indefinite_0.1.7.orig.tar.gz a7c38fc1dfde3b440e0037e10c9e59e353885d437153efcdc9dcce60e2aeae89 2772 rust-indefinite_0.1.7-1.debian.tar.xz"
+    "4092b7f1a1e9bcfb9b5f9736b048149c3d122576167d6aee88c86a66c2dde6fd 1615 rust-indefinite_0.1.8-1.dsc c3c8a5d9f8177c15e773c9f2eaf7c0963b3c56e64a46e252140c97bd960059f9 5925 rust-indefinite_0.1.8.orig.tar.gz 914f6306eccfa3f8d13c63aa510e5b57eba0e7a48750197b574490a16dd5aa6a 2800 rust-indefinite_0.1.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-indefinite"
   ],
   "Files": [
-    "3788e46ca4d2324240a78fa4ebbf36f9 2336 rust-indefinite_0.1.7-1.dsc 2dca0e94b8e31d141a53bf3ecf299c69 5925 rust-indefinite_0.1.7.orig.tar.gz 55dc8ebfc86c8b31413688399f7c127f 2772 rust-indefinite_0.1.7-1.debian.tar.xz"
+    "54199f242b0783bd00c87739f4a8b838 1615 rust-indefinite_0.1.8-1.dsc 0cc37dd8355833f52f3132bbb39b15c2 5925 rust-indefinite_0.1.8.orig.tar.gz b2fdd50e3bc70fa1085eb1344419c733 2800 rust-indefinite_0.1.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/indefinite]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.1.8-1"
   ]
 }
