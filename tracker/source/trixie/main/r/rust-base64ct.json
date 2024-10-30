@@ -6,16 +6,16 @@
     "librust-base64ct-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fa5c31ff951675eb399aa200e7ccd0c8c0211f5dc30cf5d56d781ded98a149c8 2189 rust-base64ct_1.5.1-1.dsc 71b00485470862583ec9c04bdb8e75578a35d2edaa6220bf5025cf3b790e3e64 27701 rust-base64ct_1.5.1.orig.tar.gz 32217859464dea1039c825e7b7e6ed0a22edc61b3532474d3b95eda2e9383bd5 2836 rust-base64ct_1.5.1-1.debian.tar.xz"
+    "bfb531d6a73c41ce44eb7e948c46a212bb0391d37d8ba68a890b4f1097290c81 1645 rust-base64ct_1.6.0-1.dsc 52fcc144b1509866fe6645354b9ad3ea3b84fabe665fdf83c572b1cf2c339566 28372 rust-base64ct_1.6.0.orig.tar.gz 5ab1a5f8a40de29dfd287e1ef044d372cbd961460ffec0f5b162e6d66e266f55 3060 rust-base64ct_1.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-base64ct"
   ],
   "Files": [
-    "50b853bfee261ca408c071ce76268d6b 2189 rust-base64ct_1.5.1-1.dsc 392485cd2e5403e64d18e47fa0c21672 27701 rust-base64ct_1.5.1.orig.tar.gz 1badba6416946612da0c7122ff62f74e 2836 rust-base64ct_1.5.1-1.debian.tar.xz"
+    "435d07cb8fea33037506cfad9e5c713f 1645 rust-base64ct_1.6.0-1.dsc ba3cea810744600e7085911c14ec364e 28372 rust-base64ct_1.6.0.orig.tar.gz 3639f6558156aefc4a46c4beb8dcc115 3060 rust-base64ct_1.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-base64-0.13+default-dev, librust-proptest-1+default-dev"
+    "dh-cargo, librust-base64-0.22+default-dev, librust-proptest-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/base64ct]"
   ],
   "Version": [
-    "1.5.1-1"
+    "1.6.0-1"
   ]
 }
