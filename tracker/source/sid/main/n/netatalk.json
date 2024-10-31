@@ -3,7 +3,7 @@
     "any all"
   ],
   "Binary": [
-    "netatalk, netatalk-tools, netatalk-doc, libatalk, libatalk-dev, atalkd, a2boot, macipgw, papd, timelord"
+    "netatalk, netatalk-tools, netatalk-tests, netatalk-doc, libatalk, libatalk-dev, atalkd, a2boot, macipgw, papd, timelord"
   ],
   "Build-Conflicts": [
     "libavahi-compat-libdnssd-dev"
@@ -12,13 +12,13 @@
     "bison, cmark-gfm \u003c!nodoc\u003e, cracklib-runtime, debhelper-compat (= 13), docbook-xsl \u003c!nodoc\u003e, flex, libacl1-dev, libavahi-client-dev, libcrack2-dev, libcups2-dev, libdb-dev, libevent-dev, libgcrypt20-dev, libkrb5-dev, libldap2-dev, libltdl-dev, libmariadb-dev, libpam0g-dev, libtalloc-dev, libtirpc-dev, libtracker-sparql-3.0-dev, libwrap0-dev, meson, ninja-build, pkgconf, systemtap-sdt-dev, tracker, unicode-data, xsltproc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "9a6d361581a85c58495a3e794b71b3592104b17d05f66e9e6fc4a3ab28f9d78d 2903 netatalk_4.0.2~ds-2.dsc 7aa390f7e0c0b6f414ad052d5cdad5e195bc87424e180e3c548513223dda9f68 841948 netatalk_4.0.2~ds.orig.tar.xz 19ca9212f5e026460787b0b93542a05c5ae0054547a7bf6d35073bd2f97dff4b 43176 netatalk_4.0.2~ds-2.debian.tar.xz"
+    "8a2535f2d9771a2cb524289f378affe89cc2477beb6826dcee0007c075a69de8 3015 netatalk_4.0.3~ds-2.dsc 52ba692c340397b603a94af0111ba0eb7823881084a989ab834067e917aefaeb 836284 netatalk_4.0.3~ds.orig.tar.xz 675ce1e11d91662e4adb2268752c9c069b3d061bd88144c550026f298e302612 43104 netatalk_4.0.3~ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/netatalk"
   ],
   "Files": [
-    "ef055d44c093dfbd2afd72caa44655db 2903 netatalk_4.0.2~ds-2.dsc db75feb9f0ad5ed0d9aae17c51c3f957 841948 netatalk_4.0.2~ds.orig.tar.xz 3c59c8399cc07a1655d37fa751f72d85 43176 netatalk_4.0.2~ds-2.debian.tar.xz"
+    "c303baba4e5c3c8732d7334961a43a79 3015 netatalk_4.0.3~ds-2.dsc f82a85661ea81e6176d1ae36ee686635 836284 netatalk_4.0.3~ds.orig.tar.xz 86474ca90d57e3234251d661a8284023 43104 netatalk_4.0.3~ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "netatalk"
   ],
   "Package-List": [
-    "a2boot deb net optional arch=any atalkd deb net optional arch=any libatalk deb libs optional arch=any libatalk-dev deb libdevel optional arch=any macipgw deb net optional arch=any netatalk deb net optional arch=any netatalk-doc deb doc optional arch=all netatalk-tools deb net optional arch=any papd deb net optional arch=any timelord deb net optional arch=any"
+    "a2boot deb net optional arch=any atalkd deb net optional arch=any libatalk deb libs optional arch=any libatalk-dev deb libdevel optional arch=any macipgw deb net optional arch=any netatalk deb net optional arch=any netatalk-doc deb doc optional arch=all netatalk-tests deb net optional arch=any netatalk-tools deb net optional arch=any papd deb net optional arch=any timelord deb net optional arch=any"
   ],
   "Priority": [
     "source"
@@ -47,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "libtest-command-simple-perl, perl"
+  ],
   "Uploaders": [
     "Daniel Markstedt \u003cdaniel@mindani.net\u003e, Jonas Smedegaard \u003cdr@jones.dk\u003e,"
   ],
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/netatalk-team/netatalk.git"
   ],
   "Version": [
-    "4.0.2~ds-2"
+    "4.0.3~ds-2"
   ]
 }

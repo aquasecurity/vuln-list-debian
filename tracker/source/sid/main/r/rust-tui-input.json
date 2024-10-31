@@ -6,16 +6,16 @@
     "librust-tui-input-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ratatui-0.28+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ratatui-0.28+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.14-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d8d219c54c07c0849fdcfe424e91fed763b8e9b41e91ea784cee1177c80f20bb 2252 rust-tui-input_0.10.1-1.dsc bd137780d743c103a391e06fe952487f914b299a4fe2c3626677f6a6339a7c6b 12364 rust-tui-input_0.10.1.orig.tar.gz 44d3eea920e1a8bc09730c60e219ad6e41d2f3dd5cff694bdb1dabc1e17b7e54 2904 rust-tui-input_0.10.1-1.debian.tar.xz"
+    "a190635b7e98448e9f6ea325a75bc6cc9c2a8210aec8dc63b3819dc4142f0c67 2266 rust-tui-input_0.11.0-1.dsc ffde6d8fcffe86b617018ca9b2171d673b41def44ebf802de203d2f2c598d3de 11896 rust-tui-input_0.11.0.orig.tar.gz fe641e1b2565bb967d3bd1f7583224f91d0ccfa601e5256f6d182001d7dc8cd2 2960 rust-tui-input_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tui-input"
   ],
   "Files": [
-    "bce27bc2b87a2b4b95bfeb06a565681d 2252 rust-tui-input_0.10.1-1.dsc 65c289cdd5ac6a769382d56f5cb5dfd4 12364 rust-tui-input_0.10.1.orig.tar.gz 12edd7166d4062b697b380f63d8e1f95 2904 rust-tui-input_0.10.1-1.debian.tar.xz"
+    "d86cbde0f6d72595c564051da1ab6d6e 2266 rust-tui-input_0.11.0-1.dsc 7e29f8163bd9e219e97083b9e2e12dec 11896 rust-tui-input_0.11.0.orig.tar.gz 9b390ec97da4ca697b54472b40ab72c1 2960 rust-tui-input_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sudip Mukherjee \u003csudipm.mukherjee@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tui-input]"
   ],
   "Version": [
-    "0.10.1-1"
+    "0.11.0-1"
   ]
 }
