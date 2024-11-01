@@ -6,16 +6,19 @@
     "qbs, qbs-common, libqbscore2.4, qbs-dev, qbs-examples, qbs-doc, qbs-doc-html"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dpkg-build-api (= 1), pkg-kde-tools, python3-bs4, python3-lxml, qt6-5compat-dev, qt6-base-dev (\u003e= 6.4.2+dfsg-12~), qt6-base-private-dev, qt6-declarative-dev, qt6-tools-dev"
+    "cmake, debhelper-compat (= 13), dpkg-build-api (= 1), pkg-kde-tools, qt6-5compat-dev, qt6-base-dev (\u003e= 6.4.2+dfsg-12~), qt6-base-private-dev, qt6-declarative-dev \u003c!nocheck\u003e, qt6-tools-dev \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "python3-bs4, python3-lxml, qt6-tools-dev"
   ],
   "Checksums-Sha256": [
-    "33cdf05355ecb25f541ba262bce8b9402939ead3fbaf329573793e9f77f19336 2413 qbs_2.4.2-2.dsc 0e158433c57c8089e1bc15497eb121d3010f6bdbf5210c1f5cff5018da0e86d1 5718110 qbs_2.4.2.orig.tar.gz 7c00b659bc3ae02c7c1f4134ddb94600c6aca6973a18dc49ff171fcedb07d06a 80804 qbs_2.4.2-2.debian.tar.xz"
+    "507174616dd374bc9f230f39a46b72845a44d31ed5633cb0aa41e0101e74d258 2402 qbs_2.4.2-3.dsc 0e158433c57c8089e1bc15497eb121d3010f6bdbf5210c1f5cff5018da0e86d1 5718110 qbs_2.4.2.orig.tar.gz 9056dd84eea35ea0ae63500110149b06a64a4bb5a7bdb8a58b278eec00ea7fe1 81524 qbs_2.4.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qbs"
   ],
   "Files": [
-    "0c3ef139b96b73dedbed5916c5b931f7 2413 qbs_2.4.2-2.dsc ff88ca0a9bc4efb13b2da2047dfa8f1a 5718110 qbs_2.4.2.orig.tar.gz 379852efa4ddef08ac3e50d93d160937 80804 qbs_2.4.2-2.debian.tar.xz"
+    "f24b7b1b1356867ac18b638f4f07a180 2402 qbs_2.4.2-3.dsc ff88ca0a9bc4efb13b2da2047dfa8f1a 5718110 qbs_2.4.2.orig.tar.gz 9fa532dc7e3ac6c7a1632e82aaf02f6b 81524 qbs_2.4.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +45,7 @@
     "4.7.0"
   ],
   "Uploaders": [
-    "Dmitry Shachnev \u003cmitya57@debian.org\u003e, Adam Majer \u003cadamm@zombino.com\u003e, Simon Quigley \u003ctsimonq2@debian.org\u003e"
+    "Dmitry Shachnev \u003cmitya57@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/qt-kde-team/qt/qbs/"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/qt-kde-team/qt/qbs.git"
   ],
   "Version": [
-    "2.4.2-2"
+    "2.4.2-3"
   ]
 }
