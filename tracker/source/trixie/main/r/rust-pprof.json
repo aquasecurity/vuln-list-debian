@@ -6,16 +6,16 @@
     "librust-pprof-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-backtrace-0.3+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-findshlibs-0.10+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nix-0.27+fs-dev \u003c!nocheck\u003e, librust-nix-0.27+signal-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.7-~~) \u003c!nocheck\u003e, librust-symbolic-demangle-12+cpp-dev (\u003e= 12.1-~~) \u003c!nocheck\u003e, librust-symbolic-demangle-12+rust-dev (\u003e= 12.1-~~) \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-backtrace-0.3+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-findshlibs-0.10+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nix-0+fs-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix-0+signal-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.7-~~) \u003c!nocheck\u003e, librust-symbolic-demangle-12+cpp-dev (\u003e= 12.1-~~) \u003c!nocheck\u003e, librust-symbolic-demangle-12+rust-dev (\u003e= 12.1-~~) \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eba7d4f21e661546832efc1dbc76d509563f2e13b4a7cd23eace4b7e6865ca7d 2895 rust-pprof_0.13.0-4.dsc ef5c97c51bd34c7e742402e216abdeb44d415fbe6ae41d56b114723e953711cb 44693 rust-pprof_0.13.0.orig.tar.gz daececf29bba61faa54c72b7964f991cce1b048ae1a40927aa317dc9476e2f8d 6628 rust-pprof_0.13.0-4.debian.tar.xz"
+    "a91704b97508e3cdb96cdcfb1d05b64e73845eb30d5fbcd4b74b4a59acbc6fc4 2928 rust-pprof_0.13.0-5.dsc ef5c97c51bd34c7e742402e216abdeb44d415fbe6ae41d56b114723e953711cb 44693 rust-pprof_0.13.0.orig.tar.gz 73774159d1714ccb35d9e6937cb1d49e001c6623a25fcce5155630cb03d99842 6892 rust-pprof_0.13.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pprof"
   ],
   "Files": [
-    "f6b4d735cf4f85ab127d53249f05c374 2895 rust-pprof_0.13.0-4.dsc 0dc07d521699c301ac53659ba4b00599 44693 rust-pprof_0.13.0.orig.tar.gz 90b18f9a5617f8fde8cdaf90602d848a 6628 rust-pprof_0.13.0-4.debian.tar.xz"
+    "da11ddbdc2354a6ec57319d9d319d4d6 2928 rust-pprof_0.13.0-5.dsc 0dc07d521699c301ac53659ba4b00599 44693 rust-pprof_0.13.0.orig.tar.gz 5a9acfd46df80bb80791038f13f3d017 6892 rust-pprof_0.13.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pprof]"
   ],
   "Version": [
-    "0.13.0-4"
+    "0.13.0-5"
   ]
 }
