@@ -6,16 +6,16 @@
     "librust-pretty-assertions-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-diff-0.1+default-dev (\u003e= 0.1.12-~~) \u003c!nocheck\u003e, librust-yansi-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-diff-0.1+default-dev (\u003e= 0.1.12-~~) \u003c!nocheck\u003e, librust-yansi-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2cb1cfce75940a9f9a651858594a880df7c2653d03e8a1fb9bc440153453b473 2387 rust-pretty-assertions_1.4.0-1.dsc af7cee1a6c8a5b9208b3cb1061f10c0cb689087b3d8ce85fb9d2dd7a29b6ba66 78846 rust-pretty-assertions_1.4.0.orig.tar.gz ae3af0f1300db60422e264428ad16912ef289f4e75cfaad492eebd5aa5a527ac 3320 rust-pretty-assertions_1.4.0-1.debian.tar.xz"
+    "28231e6526d17ea5537af63aa1117c9b57701cb64fff9fae135f45194478db48 1765 rust-pretty-assertions_1.4.0-2.dsc af7cee1a6c8a5b9208b3cb1061f10c0cb689087b3d8ce85fb9d2dd7a29b6ba66 78846 rust-pretty-assertions_1.4.0.orig.tar.gz f286834c7f636b364273806982d6b15ca7f4550cdd7495727a473b2743396e01 4504 rust-pretty-assertions_1.4.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pretty-assertions"
   ],
   "Files": [
-    "5cfc9d39b67a04d5d40203c55403a8b5 2387 rust-pretty-assertions_1.4.0-1.dsc 20bc0926b659e86cc5ea66cf928caec9 78846 rust-pretty-assertions_1.4.0.orig.tar.gz 482c933d2bc517583dc61d64ce20e4de 3320 rust-pretty-assertions_1.4.0-1.debian.tar.xz"
+    "dc5690688ed80c43d96d6f920821872c 1765 rust-pretty-assertions_1.4.0-2.dsc 20bc0926b659e86cc5ea66cf928caec9 78846 rust-pretty-assertions_1.4.0.orig.tar.gz c603b36c4bee958c17a9de51b7db980c 4504 rust-pretty-assertions_1.4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pretty-assertions]"
   ],
   "Version": [
-    "1.4.0-1"
+    "1.4.0-2"
   ]
 }
