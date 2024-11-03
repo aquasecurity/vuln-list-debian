@@ -6,16 +6,16 @@
     "librust-tokio-socks-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-either-1+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+net-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-either-1+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+net-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1af31c33be539026a58e85cf3e052535f471403033cc574e346d5a67561ce578 2651 rust-tokio-socks_0.5.1-1.dsc 51165dfa029d2a65969413a6cc96f354b86b464498702f174a4efa13608fd8c0 16137 rust-tokio-socks_0.5.1.orig.tar.gz d54392cbb1efbee8745fb59690edd247ae1973b31e420c92c41ff63467f9bd4f 2700 rust-tokio-socks_0.5.1-1.debian.tar.xz"
+    "7edf269d4b7e5644101b7301e5b22d2e21052177d8f54ab49ec8b860726546fb 2089 rust-tokio-socks_0.5.2-1.dsc 0d4770b8024672c1101b3f6733eab95b18007dbe0847a8afe341fcf79e06043f 22102 rust-tokio-socks_0.5.2.orig.tar.gz a0ff34a9767445f9141545cb42ef9504de68ce0f92dd177a12b55434f9fc8bb7 2860 rust-tokio-socks_0.5.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokio-socks"
   ],
   "Files": [
-    "18307c793fc38df0c5a116f6edbdc25c 2651 rust-tokio-socks_0.5.1-1.dsc 689860532c98ecbb55405aa9b1e7ba36 16137 rust-tokio-socks_0.5.1.orig.tar.gz 4abfc1271f5ebc045099a005beda4f8c 2700 rust-tokio-socks_0.5.1-1.debian.tar.xz"
+    "6c2984b58844d1e09df54c8b5e4986a8 2089 rust-tokio-socks_0.5.2-1.dsc ec0287f00b1ee53c8846100cb618bebf 22102 rust-tokio-socks_0.5.2.orig.tar.gz ed63b9cf5ce0a3552a30a0cef2557574 2860 rust-tokio-socks_0.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-executor-0.3+default-dev, librust-hyper-0.14+default-dev, librust-once-cell-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-util-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-futures-executor-0.3+default-dev, librust-futures-util-0.3+io-dev, librust-once-cell-1+default-dev, librust-smol-2+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-util-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokio-socks]"
   ],
   "Version": [
-    "0.5.1-1"
+    "0.5.2-1"
   ]
 }

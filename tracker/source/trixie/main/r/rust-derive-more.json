@@ -6,16 +6,16 @@
     "librust-derive-more-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-convert-case-0.6+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-syn-1+extra-traits-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-derive-more-impl-1.0.0+debug-dev \u003c!nocheck\u003e, librust-derive-more-impl-1.0.0+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "219cf7bca27f6d70dafebc3034a6dc355fb6e4b138eef7d9f3bfaa0551c20902 2494 rust-derive-more_0.99.17-1.dsc 4fb810d30a7c1953f91334de7244731fc3f3c10d7fe163338a35b9f640960321 55771 rust-derive-more_0.99.17.orig.tar.gz 4505241608371e0d94d35bac54dab523618c70695ecd428d7f5198336b354fdd 4400 rust-derive-more_0.99.17-1.debian.tar.xz"
+    "ce7cd18e11a090efedc86ad36868f37adbd8b12a748bc01a6354f9b59559493e 1937 rust-derive-more_1.0.0-2.dsc 4a9b99b9cbbe49445b21764dc0625032a89b145a2642e67603e1c936f5458d05 64854 rust-derive-more_1.0.0.orig.tar.gz 6a25c828923295f1884659cec9e988bc275f6e03ed91f34523f62a2978e46b6b 5040 rust-derive-more_1.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-derive-more"
   ],
   "Files": [
-    "2760f7d91de34d96b28cc3b32622fe3b 2494 rust-derive-more_0.99.17-1.dsc b4585736b4551ce939e025bce98973fc 55771 rust-derive-more_0.99.17.orig.tar.gz 96c223e277a0e7cbd0dbbf9961c58cf8 4400 rust-derive-more_0.99.17-1.debian.tar.xz"
+    "7aa492fd98a1538b3e127293750490b8 1937 rust-derive-more_1.0.0-2.dsc c89091ae8e11fa25dc5be77b5cd6baf4 64854 rust-derive-more_1.0.0.orig.tar.gz 6a8d0ffae18b0016c426e64986e871f8 5040 rust-derive-more_1.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,16 +36,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-static-assertions-1+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
+    "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/derive-more"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/derive-more]"
   ],
   "Version": [
-    "0.99.17-1"
+    "1.0.0-2"
   ]
 }
