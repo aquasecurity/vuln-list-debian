@@ -6,16 +6,16 @@
     "librust-pyproject-toml-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indexmap+default-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-indexmap+serde-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-pep440-rs-0.6+default-dev \u003c!nocheck\u003e, librust-pep440-rs-0.6+serde-dev \u003c!nocheck\u003e, librust-pep508-rs-0.6+default-dev \u003c!nocheck\u003e, librust-pep508-rs-0.6+serde-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.125-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.125-~~) \u003c!nocheck\u003e, librust-toml-0.8+parse-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.2-~~) \u003c!nocheck\u003e, librust-indexmap-2+serde-dev (\u003e= 2.2-~~) \u003c!nocheck\u003e, librust-pep440-rs-0.7+default-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e, librust-pep508-rs-0.9+default-dev (\u003e= 0.9.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.210-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.210-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.59-~~) \u003c!nocheck\u003e, librust-toml-0.8+parse-dev (\u003e= 0.8.19-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "32a41191a90b9429530b10cece71eb6b2e12c20143f939e9d5d9de43b3266749 2297 rust-pyproject-toml_0.11.0-1.dsc ef7061023bcb58a0fc4a4bbe9819c13b0dca7c2abc14da14f5ecc1532ab3a36a 6083 rust-pyproject-toml_0.11.0.orig.tar.gz 0ed39cb81566fa64bb57b8f15e5fe465ff84ac12710560d460fff7e1dd3cf0f6 3336 rust-pyproject-toml_0.11.0-1.debian.tar.xz"
+    "84561ed2d56971c3ae79eb7a56982472b10c2e51a914543e8270643254fee59a 2348 rust-pyproject-toml_0.13.4-1.dsc 643af57c3f36ba90a8b53e972727d8092f7408a9ebfbaf4c3d2c17b07c58d835 10535 rust-pyproject-toml_0.13.4.orig.tar.gz 531c6965f0e4ea0f0656d78338b89f7502d4757d03723943bc6ffcb7994fe311 3292 rust-pyproject-toml_0.13.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pyproject-toml"
   ],
   "Files": [
-    "2c40ef218f36a32618b99b9baf7155ba 2297 rust-pyproject-toml_0.11.0-1.dsc 7cd7cdcc2565635920ae0cbb5c9279f7 6083 rust-pyproject-toml_0.11.0.orig.tar.gz 57b5c040d8bf4203032b7d937deb684c 3336 rust-pyproject-toml_0.11.0-1.debian.tar.xz"
+    "e7eddf5d1dc1d13fce1e3c7bceb0e386 2348 rust-pyproject-toml_0.13.4-1.dsc 519a8576d61de0cceebd9b09505432df 10535 rust-pyproject-toml_0.13.4.orig.tar.gz 80b14c57438f49e5972215d226fcbaa5 3292 rust-pyproject-toml_0.13.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pyproject-toml]"
   ],
   "Version": [
-    "0.11.0-1"
+    "0.13.4-1"
   ]
 }
