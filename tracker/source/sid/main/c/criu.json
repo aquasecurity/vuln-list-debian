@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armhf ppc64el s390x"
+    "amd64 arm64 ppc64el s390x"
   ],
   "Binary": [
     "criu"
   ],
   "Build-Depends": [
-    "asciidoc, debhelper-compat (= 13), dh-python, libbsd-dev, libcap-dev, libgnutls28-dev, libnet1-dev, libnftables-dev, libnl-3-dev, libprotobuf-c-dev, libprotobuf-dev, pkg-config, protobuf-c-compiler, protobuf-compiler, python3-all, xmlto"
+    "asciidoc, debhelper-compat (= 13), dh-python, libbsd-dev, libcap-dev, libgnutls28-dev, libnet1-dev, libnftables-dev, libnl-3-dev, libprotobuf-c-dev, libprotobuf-dev, pkgconf, protobuf-c-compiler, protobuf-compiler, pybuild-plugin-pyproject, python3-googleapis-common-protos, python3-all, xmlto"
   ],
   "Checksums-Sha256": [
-    "bfac987b51d8829db344601734d438a2fddea144004628b5e0d0f91b03fd5465 2206 criu_3.17.1-3.dsc 55b222688ede3f75b375bade1e9d5caab6bde3ee64fbf6ede024498405188a25 949012 criu_3.17.1.orig.tar.xz 62fecbc2cc5f22a8687c00b007961cc17b48e886402cf2e39448be80bec52566 11648 criu_3.17.1-3.debian.tar.xz"
+    "48758c8990118716cd53d78b3f89e2542b9e1ef208e3b76375b16c776cd22c22 2370 criu_3.19-2.dsc 3645d77972529fc3d3ce802479ac3b87da797f95844582714b8c6cfb01710a54 983732 criu_3.19.orig.tar.xz bf68db49d25afaee8f8f6bd5107a42b779e3ca3e5f8e91fff3979595c4209540 8692 criu_3.19-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/criu"
   ],
   "Files": [
-    "571e4bcea026241be3b382f1ffc810f2 2206 criu_3.17.1-3.dsc a2bb99b00f7cb34d98fb09ffe5590e4e 949012 criu_3.17.1.orig.tar.xz 385e8b6150836f9d39986da602d217eb 11648 criu_3.17.1-3.debian.tar.xz"
+    "3941ceacc4a4c6aeb5e1168beee9547c 2370 criu_3.19-2.dsc 0af4e7b49833099aeaaa13c15887fb2b 983732 criu_3.19.orig.tar.xz 3ba6f081ec524ded8e5d9daf66c76754 8692 criu_3.19-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "criu"
   ],
   "Package-List": [
-    "criu deb admin optional arch=amd64,arm64,armhf,ppc64el,s390x"
+    "criu deb admin optional arch=amd64,arm64,ppc64el,s390x"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, @recommends@, iptables, libaio-dev, libbsd-dev, libnl-route-3-dev, python3-yaml"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/criu"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/criu.git"
   ],
   "Version": [
-    "3.17.1-3"
+    "3.19-2"
   ]
 }
