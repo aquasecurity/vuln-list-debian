@@ -6,16 +6,16 @@
     "librust-udev-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-io-lifetimes+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-libudev-sys-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-io-lifetimes-2+default-dev (\u003e= 2.0.3-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-libudev-sys-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5a689a3742ba94e377839b3f781f9aa13f531904cf214fa6182f8419703b07e9 2375 rust-udev_0.9.0-2.dsc 8ba005bcd5b1158ae3cd815905990e8b6ee4ba9ee7adbab6d7b58d389ad09c93 21267 rust-udev_0.9.0.orig.tar.gz 57d2f5559049daea1d2f0ec72a8c2c6899c066e85e39a9ca646bb5ff59a280d2 3972 rust-udev_0.9.0-2.debian.tar.xz"
+    "6e501d8e78dc88fce7506c773488ee9abf72cb0dde0a3742ac6196eee1b58c3f 2362 rust-udev_0.9.1-1.dsc e3d5c197b95f1769931c89f85c33c407801d1fb7a311113bc0b39ad036f1bd81 21469 rust-udev_0.9.1.orig.tar.gz 42171ab8163bf354789570f697379129b0438252860212c7ee19aca2ed9888c8 3888 rust-udev_0.9.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-udev"
   ],
   "Files": [
-    "3d29a8cc355ede1a0e384863338d978d 2375 rust-udev_0.9.0-2.dsc 309f5e7b07696c9d404f64b120055262 21267 rust-udev_0.9.0.orig.tar.gz 3558776cfdbfee2a910abc9421013b87 3972 rust-udev_0.9.0-2.debian.tar.xz"
+    "058c46991ea80ae069e499298de0b815 2362 rust-udev_0.9.1-1.dsc cd5419820175f04aa2a5d2f0a22bfcae 21469 rust-udev_0.9.1.orig.tar.gz cfa41c47610eb260d8d1be820f5bc8b4 3888 rust-udev_0.9.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Maytham Alsudany \u003cmaytha8thedev@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/udev]"
   ],
   "Version": [
-    "0.9.0-2"
+    "0.9.1-1"
   ]
 }
