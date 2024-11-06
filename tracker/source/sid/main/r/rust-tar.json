@@ -6,16 +6,16 @@
     "librust-tar-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-filetime-0.2+default-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-xattr-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-filetime-0.2+default-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-xattr-1+default-dev (\u003e= 1.1.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5a48cd19f34c6c945af9aeea3579548ee783c9e2cdd5f410ad5c259ec4b71601 2360 rust-tar_0.4.40-1.dsc b16afcea1f22891c49a00c751c7b63b2233284064f11a200fc624137c51e2ddb 51844 rust-tar_0.4.40.orig.tar.gz e15a0e0cfc39327938944401941c7b51d98ecd643c7fca628287ebea34274601 5036 rust-tar_0.4.40-1.debian.tar.xz"
+    "80dd016ff9a488de0f7e7f35d60c8dcea51e4eeee978d08ba587c8ae79aaf080 2404 rust-tar_0.4.43-1.dsc c65998313f8e17d0d553d28f91a0df93e4dbbbf770279c7bc21ca0f09ea1a1f6 60181 rust-tar_0.4.43.orig.tar.gz a2d9c60cb00497c5ab6d8c2ee24ac0d1c834015caa5010fa4b5a9f04ec5cdcd3 4848 rust-tar_0.4.43-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tar"
   ],
   "Files": [
-    "29a51bac66daa93a689b9934385e1a10 2360 rust-tar_0.4.40-1.dsc 08a17e86dfb5bf21d557636f2a545ebe 51844 rust-tar_0.4.40.orig.tar.gz 7280b670a8061ca546d34f1b59895ee5 5036 rust-tar_0.4.40-1.debian.tar.xz"
+    "c120b23c851a60ca74a065f6bd495cf6 2404 rust-tar_0.4.43-1.dsc e55b563ae89a326b0e2986feb52c363f 60181 rust-tar_0.4.43.orig.tar.gz aa39b5ab80478b8ff43954e7e3205c3f 4848 rust-tar_0.4.43-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tar]"
   ],
   "Version": [
-    "0.4.40-1"
+    "0.4.43-1"
   ]
 }

@@ -6,16 +6,16 @@
     "librust-xkbcommon-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.148-~~) \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-xkeysym-0.2+default-dev \u003c!nocheck\u003e, libxkbcommon-dev \u003c!nocheck\u003e, libxkbcommon-x11-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.148-~~) \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-xkeysym-0.2+default-dev \u003c!nocheck\u003e, libxkbcommon-dev \u003c!nocheck\u003e, libxkbcommon-x11-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b9a994acf6c9bf58c9347265fe6fa231f574a36b9049ab235776ea039b8b0d1d 2466 rust-xkbcommon_0.7.0-2.dsc 13867d259930edc7091a6c41b4ce6eee464328c6ff9659b7e4c668ca20d4c91e 58896 rust-xkbcommon_0.7.0.orig.tar.gz 88bc1c5cb467418c2dbc80743e467af62d453369db5ae794fb47df7de1d6f86e 3672 rust-xkbcommon_0.7.0-2.debian.tar.xz"
+    "cad50ba13ae27890cde0e23acbc4ca5ea5ff41199c9fab74df621941ce37e15c 2379 rust-xkbcommon_0.8.0-1.dsc 8d66ca9352cbd4eecbbc40871d8a11b4ac8107cfc528a6e14d7c19c69d0e1ac9 59098 rust-xkbcommon_0.8.0.orig.tar.gz 898a8c23dcb5314f7f026321371b3fc6b26ed2c19e464698d01e291ed35b7bb2 3644 rust-xkbcommon_0.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-xkbcommon"
   ],
   "Files": [
-    "98d642d12e69f005df248b443391baac 2466 rust-xkbcommon_0.7.0-2.dsc dc40d2dd1bc2eac31fdc9c2696671342 58896 rust-xkbcommon_0.7.0.orig.tar.gz 1953cf77ecdc49657d55f793eb5634f6 3672 rust-xkbcommon_0.7.0-2.debian.tar.xz"
+    "1e349c7fad5429ee6cd92b4eab21d6ac 2379 rust-xkbcommon_0.8.0-1.dsc a1c3748905e5eb503604091e23c0a8a9 59098 rust-xkbcommon_0.8.0.orig.tar.gz 6ca95b1bdd617459e3c5884fbc5d656a 3644 rust-xkbcommon_0.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/xkbcommon]"
   ],
   "Version": [
-    "0.7.0-2"
+    "0.8.0-1"
   ]
 }
