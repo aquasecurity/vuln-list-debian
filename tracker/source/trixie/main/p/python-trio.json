@@ -6,16 +6,19 @@
     "python-trio-doc, python3-trio"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python-openssl-doc, python-sniffio-doc, python3-all, python3-astor, python3-async-generator, python3-attr, python3-doc, python3-exceptiongroup, python3-idna, python3-jedi, python3-openssl, python3-outcome, python3-pytest, python3-setuptools, python3-sniffio (\u003e= 1.3), python3-sortedcontainers, python3-sphinx, python3-sphinx-rtd-theme, python3-sphinxcontrib.trio, python3-trustme, python3-yapf"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python-openssl-doc, python-sniffio-doc, python3-all, python3-astor, python3-async-generator, python3-attr, python3-doc, python3-idna, python3-jedi, python3-openssl, python3-outcome, python3-pytest, python3-setuptools, python3-sniffio (\u003e= 1.3), python3-sortedcontainers, python3-sphinx, python3-sphinx-codeautolink, python3-sphinx-hoverxref, python3-sphinx-rtd-theme (\u003e= 2), python3-sphinxcontrib.trio, python3-trustme, python3-yapf"
   ],
   "Checksums-Sha256": [
-    "f3045b9196249a30ca2e827ff190ef8b186dabc22e21a775dd28df48bfe10520 2594 python-trio_0.25.0-1.dsc 99b5f28f7b94444fd48479fa0b2b79643a89ab33f06ef573ce4401e28f102497 599079 python-trio_0.25.0.orig.tar.gz 5912b2659aa2f1305c196f06e86bd0e4986da1f5bafa21fff5e61cef0255bbeb 5456 python-trio_0.25.0-1.debian.tar.xz"
+    "53cefac95596cb48ff24ec177d53711ab14e4ac8d28cc7fe8bc59947c35ff744 2716 python-trio_0.27.0-1.dsc aea7889ddcc7a5ad62910138fabb0f3e3cd7a00f01c3ddaf0cb94a458dc85c45 617781 python-trio_0.27.0.orig.tar.gz d95438934e4858f22c77fbd13042645552ae13c77daf6101404e37dfd5490b36 5620 python-trio_0.27.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "08a389811c0af5ec3155bafbc9e685023ad5004c debian archive/debian/0.27.0-1 https://git.dgit.debian.org/python-trio"
   ],
   "Directory": [
     "pool/main/p/python-trio"
   ],
   "Files": [
-    "fe328cf5bbfb5e768ada3c4e49b07d06 2594 python-trio_0.25.0-1.dsc d80a734a199213156e8fcb506ba5d9aa 599079 python-trio_0.25.0.orig.tar.gz acedb1fa6758c5691a2569953b2ec309 5456 python-trio_0.25.0-1.debian.tar.xz"
+    "1149f2932ed7cf9f70436c6eeab8f7b3 2716 python-trio_0.27.0-1.dsc 933a117922909038a3d9f6b1a5923062 617781 python-trio_0.27.0.orig.tar.gz 6df72d505d4380a42ff79f1f6ae06c40 5620 python-trio_0.27.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Robie Basak \u003crobie@justgohome.co.uk\u003e, Michael Fladischer \u003cfladi@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-trio.git"
   ],
   "Version": [
-    "0.25.0-1"
+    "0.27.0-1"
   ]
 }

@@ -6,16 +6,16 @@
     "librust-triomphe-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1-dev \u003c!nocheck\u003e, librust-stable-deref-trait-1-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1-dev \u003c!nocheck\u003e, librust-stable-deref-trait-1-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "828bfa8ba920851eaec864e1f9cdf35442543247bdfc225b4cc03028bfea63b7 2239 rust-triomphe_0.1.9-1.dsc 0eee8098afad3fb0c54a9007aab6804558410503ad676d4633f9c2559a00ac0f 26674 rust-triomphe_0.1.9.orig.tar.gz 0581c18a7b6f5f6c69fbaf54d8d13d8b2f03e2d2700ff5d085539cccdff22ab8 3000 rust-triomphe_0.1.9-1.debian.tar.xz"
+    "95892e9508828b1e0d9a74bb525baa421482969666fdeac4dbb0c541c0b8a359 2270 rust-triomphe_0.1.14-1.dsc ef8f7726da4807b58ea5c96fdc122f80702030edc33b35aff9190a51148ccc85 30292 rust-triomphe_0.1.14.orig.tar.gz 0606fab309c37a12f02e19262bcaac476d0ea336a78fccbb7e9e6b763f0f1eb1 3036 rust-triomphe_0.1.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-triomphe"
   ],
   "Files": [
-    "96625981b8349eaf61f8a9ebea430091 2239 rust-triomphe_0.1.9-1.dsc 38a75bc92e5e137525c71bfa8de8b2a4 26674 rust-triomphe_0.1.9.orig.tar.gz b09ec5ae8e723600d90d58239ca7db48 3000 rust-triomphe_0.1.9-1.debian.tar.xz"
+    "79730544b2901af57b04196c75bce285 2270 rust-triomphe_0.1.14-1.dsc 9af4c43f1990c74b8382c4e9fadb0824 30292 rust-triomphe_0.1.14.orig.tar.gz 9b3997a79c8f25f730c86607a35f9d67 3036 rust-triomphe_0.1.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/triomphe]"
   ],
   "Version": [
-    "0.1.9-1"
+    "0.1.14-1"
   ]
 }

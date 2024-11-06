@@ -6,16 +6,16 @@
     "librust-archery-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1511503f9820c1c9b664decf4e607420cd30c7edf40993abde9f459480188cfb 2366 rust-archery_1.1.0-1.dsc 487955f60962765486ce000015a3492ca45c34a2ebbf12bc0aa2b5110ca6e7d2 22240 rust-archery_1.1.0.orig.tar.gz ab9780211c9a3258b6e36fb7d723a0da168be51f1a9dcb8f424f361581d370e7 2096 rust-archery_1.1.0-1.debian.tar.xz"
+    "d11878ab66a40675d56bc131f6a115ed5b951f1ae2536f629c7bce071225cc1b 2357 rust-archery_1.2.1-1.dsc eae2ed21cd55021f05707a807a5fc85695dafb98832921f6cfa06db67ca5b869 21224 rust-archery_1.2.1.orig.tar.gz c148cf24b0592f8cdf2654d4528897cc479b1ae6bf2e195ee49715424d3999be 2160 rust-archery_1.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-archery"
   ],
   "Files": [
-    "d5f92738421f19fbb5445bf5a69e5440 2366 rust-archery_1.1.0-1.dsc f59d901d4631fcb7e1183dc968f4b453 22240 rust-archery_1.1.0.orig.tar.gz 53d264406d133c003daa4bef19175d62 2096 rust-archery_1.1.0-1.debian.tar.xz"
+    "4348744fa267b87ce495b5d29d2eed20 2357 rust-archery_1.2.1-1.dsc e23302cc23196a4340f2354819cba0cd 21224 rust-archery_1.2.1.orig.tar.gz 96a535ff6fcdb6cbc0855cfaa0650654 2160 rust-archery_1.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-compiletest-rs-0.10+default-dev, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-pretty-assertions-1+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-pretty-assertions-1+default-dev, librust-static-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Roland Mas \u003clolando@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/archery]"
   ],
   "Version": [
-    "1.1.0-1"
+    "1.2.1-1"
   ]
 }
