@@ -6,10 +6,13 @@
     "liblerc4, liblerc-dev, python3-lerc"
   ],
   "Build-Depends": [
-    "architecture-is-little-endian, cmake, debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-pkgkde-symbolshelper, dh-sequence-python3, pkg-kde-tools, python3-all, python3-numpy, python3-setuptools"
+    "architecture-is-little-endian, cmake, debhelper-compat (= 13), dh-sequence-pkgkde-symbolshelper, pkg-kde-tools, python3-numpy \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-numpy3, dh-sequence-python3, python3-all, python3-numpy, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "1f5758010599f9fd8b52ecea0541addeb0ea968f37d383a747abaa2a956f717e 2638 lerc_4.0.0+ds-4.dsc acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723 348140 lerc_4.0.0+ds.orig.tar.xz 513db93f198180d601bba09356bd447c57d3a6360119e289cba897bf9054e5ac 8280 lerc_4.0.0+ds-4.debian.tar.xz"
+    "84de8dac3dd5f5edc005c5c02be58c1f549f9365ad4147c138c85e07d624cc12 2673 lerc_4.0.0+ds-5.dsc acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723 348140 lerc_4.0.0+ds.orig.tar.xz 28ab2b1c19c845cd493e804bb9c43b47f72d5852281ebf832ed68a7576afbf6d 8576 lerc_4.0.0+ds-5.debian.tar.xz"
   ],
   "Description": [
     "Limited Error Raster Compression library LERC is an open-source image or raster format which supports rapid encoding and decoding for any pixel type (not just RGB or Byte). Users set the maximum compression error per pixel while encoding, so the precision of the original input image is preserved (within user defined error bounds)."
@@ -18,7 +21,7 @@
     "pool/main/l/lerc"
   ],
   "Files": [
-    "552ade65bdf5bb45c103b6f395f87c19 2638 lerc_4.0.0+ds-4.dsc 587b5ce9cad1e4b32c43a73f9a66d512 348140 lerc_4.0.0+ds.orig.tar.xz 87aa247e198a654239d4bc26472d9e76 8280 lerc_4.0.0+ds-4.debian.tar.xz"
+    "66c5c0524e2fb1fa080432f753db9dcc 2673 lerc_4.0.0+ds-5.dsc 587b5ce9cad1e4b32c43a73f9a66d512 348140 lerc_4.0.0+ds.orig.tar.xz 727b8cd1ec94d773c438b272afb5d362 8576 lerc_4.0.0+ds-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +45,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian-gis-team/lerc.git"
   ],
   "Version": [
-    "4.0.0+ds-4"
+    "4.0.0+ds-5"
   ]
 }
