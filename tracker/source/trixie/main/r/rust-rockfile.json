@@ -6,16 +6,16 @@
     "librust-rockfile-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "57702ff069dc467e19d5cca64086d26c7b34b09e99eefc338b020ada09c4aadb 2358 rust-rockfile_0.1.1-1.dsc 7e89194db9752ec1f052472debd3990f77bec4ca0732d9dd28163f95fed1455a 5180 rust-rockfile_0.1.1.orig.tar.gz 093f7c5c3662ccc4b8ee2e934410bf52730d94b6f902c5f4f0e48653ad0359ea 2792 rust-rockfile_0.1.1-1.debian.tar.xz"
+    "2673db4ee3b258d3c402b45470488cd5c8be0b4ee6f09cc07c54f1c61e69fdf8 2372 rust-rockfile_0.1.2-1.dsc 1ff09b2bb83cbea829c1903c8356af61d75919ed2ccd05c6ff9ffc9c21bb84bd 5355 rust-rockfile_0.1.2.orig.tar.gz 33277a028b6a58be594491596cdc42ab8413839516aee43c338b504fa7208801 2820 rust-rockfile_0.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rockfile"
   ],
   "Files": [
-    "476e92b12d6d883175dbecee2be4d6f0 2358 rust-rockfile_0.1.1-1.dsc 2a5fe45c744e992f135811833b7068f3 5180 rust-rockfile_0.1.1.orig.tar.gz 508a3e4b1bd89f84a0bbe62621c5b496 2792 rust-rockfile_0.1.1-1.debian.tar.xz"
+    "2348ef263f497613bbbb959f7c5e16e5 2372 rust-rockfile_0.1.2-1.dsc 1f9bd3f8446efbce2785297d30dd46ef 5355 rust-rockfile_0.1.2.orig.tar.gz f9f424a27cd447885c87029634f129de 2820 rust-rockfile_0.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-crc-3+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-crc-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rockfile]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.2-1"
   ]
 }
