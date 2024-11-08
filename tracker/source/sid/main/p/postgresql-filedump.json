@@ -6,16 +6,16 @@
     "postgresql-filedump"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), liblz4-dev, postgresql, postgresql-server-dev-all"
+    "debhelper-compat (= 13), libipc-run-perl \u003c!nocheck\u003e, liblz4-dev, postgresql, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "dea54695fe40c821f524105a3148672d2776187d830140cb23b459ec64efcf3f 2180 postgresql-filedump_16.0-1.dsc 9ed1a30f719a5215ad5807c9094b987becc3ea6680979c20b874155c226075d7 40518 postgresql-filedump_16.0.orig.tar.gz 834fbd6c6fafb0fd20c05aae75392823cc093609ae2ec3e0b0b2e87900ff8103 3672 postgresql-filedump_16.0-1.debian.tar.xz"
+    "5fb2c3c62824c44d3bf6fd296b340f3b698fab608c4739bbec48b60df63f1685 2225 postgresql-filedump_17.1-1.dsc be8ebc532a37e425bb0775e689e56f1fa7524587f0399a968f0d39b806b7afb1 44467 postgresql-filedump_17.1.orig.tar.gz 9687d3f742d5cc23f89f500cd2969f70c17db1c305794ae6326d075c6c2a1158 4028 postgresql-filedump_17.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-filedump"
   ],
   "Files": [
-    "cf51262602ada2a5a2bc8c5e9bfb042e 2180 postgresql-filedump_16.0-1.dsc 7edace06c476a4e57275ede2cccc27ad 40518 postgresql-filedump_16.0.orig.tar.gz 31c2917b9797532b00e86e8af6414264 3672 postgresql-filedump_16.0-1.debian.tar.xz"
+    "80848e6a5e8b96da26add9b072c153f6 2225 postgresql-filedump_17.1-1.dsc dbcea38fa3040d3093e1f9c9498590ad 44467 postgresql-filedump_17.1.orig.tar.gz ceddbf0bf7b0c0953f270396f70396d5 4028 postgresql-filedump_17.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql"
+    "libipc-run-perl, make, postgresql"
   ],
   "Uploaders": [
     "Michael Meskes \u003cmeskes@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-filedump.git"
   ],
   "Version": [
-    "16.0-1"
+    "17.1-1"
   ]
 }
