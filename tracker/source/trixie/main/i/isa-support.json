@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any-i386 any-amd64 armel armhf powerpc"
+    "any-amd64 any-arm any-i386 arm64 powerpc ppc64 ppc64el"
   ],
   "Binary": [
-    "isa-support, sse2-support, amd64-baseline-support, x86-64-v2-support, sse3-support, sse4.1-support, sse4.2-support, x86-64-v3-support, altivec-support, neon-support, armv6-support, armv6k-support, armv7-support, armv8-support, vfp-support, vfpv2-support, vfpv3-support"
+    "isa-support, sse2-support, amd64-baseline-support, x86-64-v2-support, sse3-support, sse4.1-support, sse4.2-support, x86-64-v3-support, altivec-support, neon-support, armv6-support, armv6k-support, armv7-support, armv8-support, vfp-support, vfpv2-support, vfpv3-support, armv8crc-support"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), po-debconf"
+    "debhelper-compat (= 13), po-debconf, libtext-trim-perl, liblist-moreutils-perl:native"
   ],
   "Checksums-Sha256": [
-    "2ec86c66e2ddb909b978b3d20bb19a3ad398eb1906d9444b34b27a68e82f914a 2785 isa-support_24.dsc f1507c702656fa4d8fca50b969bd6d81922e5c1b595aab9bdce22c8e82748ed1 16168 isa-support_24.tar.xz"
+    "62494cd008a91f0d9736ffdaaf4afe23114b31037d00c54a87c7d776a1df3b8c 2931 isa-support_26.dsc 9087c2bf22f8e787cfee7260f2e74be9e454a7b17806607c3703256eedcc6aa4 16772 isa-support_26.tar.xz"
   ],
   "Directory": [
     "pool/main/i/isa-support"
   ],
   "Files": [
-    "f31d0dc823cbdc3882c11d148bf17bc6 2785 isa-support_24.dsc e488649a4f1a6d0fc8c37d499c19de9b 16168 isa-support_24.tar.xz"
+    "9392ce22887347c06b5f6c07110ebf07 2931 isa-support_26.dsc 510440c83074f6a0ac36bd1f49635093 16772 isa-support_26.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -27,7 +27,7 @@
     "isa-support"
   ],
   "Package-List": [
-    "altivec-support deb misc optional arch=powerpc amd64-baseline-support deb misc optional arch=any-i386 armv6-support deb misc optional arch=armel armv6k-support deb misc optional arch=armel armv7-support deb misc optional arch=armel armv8-support deb misc optional arch=armel,armhf isa-support deb misc optional arch=any-i386,any-i386,any-amd64,armel,armel,armhf,armhf,powerpc neon-support deb misc optional arch=armhf sse2-support deb misc optional arch=any-i386 sse3-support deb misc optional arch=any-i386,any-amd64 sse4.1-support deb misc optional arch=any-i386,any-amd64 sse4.2-support deb misc optional arch=any-i386,any-amd64 vfp-support deb misc optional arch=armel vfpv2-support deb misc optional arch=armel vfpv3-support deb misc optional arch=armel x86-64-v2-support deb misc optional arch=any-i386,any-amd64 x86-64-v3-support deb misc optional arch=any-i386,any-amd64"
+    "altivec-support deb misc optional arch=powerpc,ppc64,ppc64el amd64-baseline-support deb misc optional arch=any-i386 armv6-support deb misc optional arch=armel armv6k-support deb misc optional arch=armel armv7-support deb misc optional arch=armel armv8-support deb misc optional arch=any-arm armv8crc-support deb misc optional arch=any-arm,arm64 isa-support deb misc optional arch=any-amd64,any-arm,any-i386,arm64,powerpc,ppc64,ppc64el neon-support deb misc optional arch=any-arm sse2-support deb misc optional arch=any-i386 sse3-support deb misc optional arch=any-i386,any-amd64 sse4.1-support deb misc optional arch=any-i386,any-amd64 sse4.2-support deb misc optional arch=any-i386,any-amd64 vfp-support deb misc optional arch=armel vfpv2-support deb misc optional arch=armel vfpv3-support deb misc optional arch=armel x86-64-v2-support deb misc optional arch=any-i386,any-amd64 x86-64-v3-support deb misc optional arch=any-i386,any-amd64"
   ],
   "Priority": [
     "extra"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/isa-support.git"
   ],
   "Version": [
-    "24"
+    "26"
   ]
 }
