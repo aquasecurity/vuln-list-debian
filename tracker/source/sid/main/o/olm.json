@@ -1,18 +1,15 @@
 {
   "Architecture": [
-    "any all"
+    "any"
   ],
   "Binary": [
-    "libolm3, libolm-dev, python3-olm, libjs-olm"
+    "libolm3, libolm-dev, python3-olm"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-sequence-python3, doctest-dev \u003c!nocheck\u003e, node-jasmine [!alpha !armel !hppa !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32] \u003c!nocheck\u003e, pandoc, pkg-kde-tools, python3-all-dev, python3-cffi, python3-docutils, python3-pygments, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
-  ],
-  "Build-Depends-Indep": [
-    "brotli, dpkg (\u003e= 1.20.1), emscripten (\u003e= 3.1.4~), pigz, uglifyjs (\u003e= 3)"
+    "cmake, debhelper-compat (= 13), dh-sequence-python3, doctest-dev \u003c!nocheck\u003e, pandoc, pkg-kde-tools, python3-all-dev, python3-cffi, python3-docutils, python3-pygments, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "a0991d5f506feb9be7125c2eb4e35fb7106b72a1c4d76eec424f5fce5879c190 3265 olm_3.2.16+dfsg-2.dsc 049655f24e4b18beb62b5a4147c0e18c2b3600b56d6db86ab2c8893f8a3810d9 326924 olm_3.2.16+dfsg.orig.tar.xz 8dfa7bd9a6f97397b8c1d403ab448ab0d7a8db2d06b690ec67c978d645a4cb8f 14792 olm_3.2.16+dfsg-2.debian.tar.xz"
+    "62d37822dda98de8755fe0ff769af4b4a78ecaad81ed63cc3360741502712b3b 2641 olm_3.2.16+dfsg-3.dsc 049655f24e4b18beb62b5a4147c0e18c2b3600b56d6db86ab2c8893f8a3810d9 326924 olm_3.2.16+dfsg.orig.tar.xz d78bb4343bb58264484ca3f7f8ca5c76f82ba9901f3a1463c3b5f2753b8ec83f 14000 olm_3.2.16+dfsg-3.debian.tar.xz"
   ],
   "Description": [
     "implementation of the Double Ratchet cryptographic ratchet Olm is an implementation of the Double Ratchet cryptographic ratchet described by https://whispersystems.org/docs/specifications/doubleratchet/, written in C and C++11 and exposed as a C API. . This library also includes an implementation of the Megolm cryptographic ratchet which is intended for encrypted messaging applications where there may be a large number of recipients of each message, thus precluding the use of peer-to-peer encryption systems such as Olm. . Megolm is the end-to-end encryption system for the Matrix communications protocol."
@@ -21,7 +18,7 @@
     "pool/main/o/olm"
   ],
   "Files": [
-    "6485837372469c6ae3607997c52fe795 3265 olm_3.2.16+dfsg-2.dsc 6e91f282c02d39d21b5eaae28b8015a4 326924 olm_3.2.16+dfsg.orig.tar.xz 315baf3436b411d48010d2d677884a0a 14792 olm_3.2.16+dfsg-2.debian.tar.xz"
+    "b19627096e9e55f459377c1fda74f62b 2641 olm_3.2.16+dfsg-3.dsc 6e91f282c02d39d21b5eaae28b8015a4 326924 olm_3.2.16+dfsg.orig.tar.xz d54a7fe505c035eb778f2464301c2f9e 14000 olm_3.2.16+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +33,7 @@
     "olm"
   ],
   "Package-List": [
-    "libjs-olm deb javascript optional arch=all libolm-dev deb libdevel optional arch=any libolm3 deb libs optional arch=any python3-olm deb python optional arch=any"
+    "libolm-dev deb libdevel optional arch=any libolm3 deb libs optional arch=any python3-olm deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -51,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "eslint, node-domino, node-jasmine, node-js-yaml, node-matrix-org-olm, nodejs"
+    "eslint, libjs-olm, node-domino, node-jasmine, node-js-yaml, node-matrix-org-olm, nodejs"
   ],
   "Uploaders": [
     "Hubert Chathi \u003cuhoreg@debian.org\u003e,"
@@ -63,6 +60,6 @@
     "https://salsa.debian.org/matrix-team/olm.git"
   ],
   "Version": [
-    "3.2.16+dfsg-2"
+    "3.2.16+dfsg-3"
   ]
 }

@@ -6,16 +6,16 @@
     "librust-qrencode-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-checked-int-cast-1+default-dev \u003c!nocheck\u003e, librust-image-0.24-dev (\u003e= 0.24.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-checked-int-cast-1+default-dev \u003c!nocheck\u003e, librust-image-0.25-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5d775a274ed0f6130d58699bf7d7cef1c4731fc3083398527e59d07288a98c64 2287 rust-qrencode_0.14.0-1.dsc a60db121a642f869443a5d7461fa7978e74248b5299d21d3e97f5c0b1905f7c1 59765 rust-qrencode_0.14.0.orig.tar.gz 5fde60a46270eaaae5ade951afe328ac39ec299e8f98fdfa6e54f383ec296f8a 3308 rust-qrencode_0.14.0-1.debian.tar.xz"
+    "11530044b3b53ed0c84b6fa7d223195448333a46d9b47aa685ca0d3413122079 1652 rust-qrencode_0.14.0-2.dsc a60db121a642f869443a5d7461fa7978e74248b5299d21d3e97f5c0b1905f7c1 59765 rust-qrencode_0.14.0.orig.tar.gz a380c1b1b32e73b025284c2a32db883d4a8f225090ea0b99ebc0edb7a2a2917f 3432 rust-qrencode_0.14.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-qrencode"
   ],
   "Files": [
-    "abe1952c480be22198810989305e4c97 2287 rust-qrencode_0.14.0-1.dsc 0d994a7f40f4c3d8550818333fa95716 59765 rust-qrencode_0.14.0.orig.tar.gz e2f00a90e2de8d696f8ed9a1a94ef7e0 3308 rust-qrencode_0.14.0-1.debian.tar.xz"
+    "9e4f399477ad1d4c79a3916843f37473 1652 rust-qrencode_0.14.0-2.dsc 0d994a7f40f4c3d8550818333fa95716 59765 rust-qrencode_0.14.0.orig.tar.gz 33ffb32d41fa2a160296c2dc7e677c91 3432 rust-qrencode_0.14.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-image-0.24+default-dev"
+    "dh-cargo, librust-image-0.25+default-dev, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/qrencode]"
   ],
   "Version": [
-    "0.14.0-1"
+    "0.14.0-2"
   ]
 }
