@@ -6,16 +6,16 @@
     "librust-xattr-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.44-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.150-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+std-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.29-~~) \u003c!nocheck\u003e, librust-rustix-0.38+std-dev (\u003e= 0.38.29-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7a8dbfb75b41341450a3fa0bf3c49db3bf56a2131c73cfe0af3bc31a8111e8ea 2154 rust-xattr_1.0.0-1.dsc ea263437ca03c1522846a4ddafbca2542d0ad5ed9b784909d4b27b76f62bc34a 11987 rust-xattr_1.0.0.orig.tar.gz 496ef3080daf36edd5ee8eda88670bbc708acad05a0e99b9a12b23a122bb1619 2704 rust-xattr_1.0.0-1.debian.tar.xz"
+    "5a9ad5bd345dd3950e2436e8a959d1027700298b3c7c76743437d05e57252194 2415 rust-xattr_1.3.1-1.dsc 8da84f1a25939b27f6820d92aed108f83ff920fdf11a7b19366c27c4cda81d4f 12580 rust-xattr_1.3.1.orig.tar.gz f983c86ae813da5e632cb5ed7941f129bbfa8f3e94846b8e31df708899f5d761 2804 rust-xattr_1.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-xattr"
   ],
   "Files": [
-    "7b3fb8b5aaf04c3c839c07c0e10b13b5 2154 rust-xattr_1.0.0-1.dsc eb025ecd608c6a3106037845fab905ab 11987 rust-xattr_1.0.0.orig.tar.gz 392ecb17e71c71398f1c3b8f11c14b2b 2704 rust-xattr_1.0.0-1.debian.tar.xz"
+    "bac4da5a7e11f840b1df317c66e647ec 2415 rust-xattr_1.3.1-1.dsc c0c9fb0065f11496c222ba3cd7212b08 12580 rust-xattr_1.3.1.orig.tar.gz ca54e4bd935b9ba6f87a24492a1b7c96 2804 rust-xattr_1.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-rustix-0.38+net-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/xattr]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.3.1-1"
   ]
 }
