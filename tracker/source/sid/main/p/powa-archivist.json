@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-powa"
+    "postgresql-17-powa"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "5127e00b66b089b6d47940990ce77afe55a3670c44b1e7227c1a69676a2b3ff3 2100 powa-archivist_4.2.2-1.dsc b8b632f822ee90ed6c2d67d623b7942123650660886b27616c60439cd02ff9a0 260530 powa-archivist_4.2.2.orig.tar.gz 658f9fac79927c09add0c39040f8dc9b946bb26f4a013851b8f002969c77e5dc 3172 powa-archivist_4.2.2-1.debian.tar.xz"
+    "f72fb6bb69fcfc98075cfb5056bf9a6c65c6e717c3bfa9cfdcd02d5beeb91734 2191 powa-archivist_5.0.0-1.dsc a222a632dfa17d19f21a0453ff45fbc68ecde5319734c23e259cf4854ebd6ee3 312327 powa-archivist_5.0.0.orig.tar.gz 9bc3c429c047e0faeb0f498b75324c8221903a430aa82f5961012278dc64a280 3604 powa-archivist_5.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/powa-archivist"
   ],
   "Files": [
-    "3cbedf343bb44eaee5614a5b2876c42f 2100 powa-archivist_4.2.2-1.dsc 08b956d1c8a5cbab77bd9ac47274e85d 260530 powa-archivist_4.2.2.orig.tar.gz 4979ed990d896321019f176f8d828c62 3172 powa-archivist_4.2.2-1.debian.tar.xz"
+    "9985665267f7276757cc135b43da9140 2191 powa-archivist_5.0.0-1.dsc cb8537836424d038376a130605ead1f4 312327 powa-archivist_5.0.0.orig.tar.gz 573f071c88f9a49289863c8cd24c82fb 3604 powa-archivist_5.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "powa-archivist"
   ],
   "Package-List": [
-    "postgresql-16-powa deb database optional arch=any"
+    "postgresql-17-powa deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,24 +39,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-contrib-16"
+    "make, postgresql-contrib-17"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e, Julien Rouhaud \u003crjuju123@gmail.com\u003e,"
   ],
   "Vcs-Browser": [
-    "https://github.com/powa-team/powa-archivist"
+    "https://salsa.debian.org/postgresql/powa-archivist"
   ],
   "Vcs-Git": [
-    "https://github.com/powa-team/powa-archivist.git"
+    "https://salsa.debian.org/postgresql/powa-archivist.git"
   ],
   "Version": [
-    "4.2.2-1"
+    "5.0.0-1"
   ]
 }
