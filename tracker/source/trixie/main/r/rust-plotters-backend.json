@@ -6,16 +6,16 @@
     "librust-plotters-backend-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "de75d33d0ac576241a96c9fa934ada1f733bdeb190419ae8d8814a5d90cb37a7 2382 rust-plotters-backend_0.3.5-1.dsc 9e76628b4d3a7581389a35d5b6e2139607ad7c75b17aed325f210aa91f4a9609 13440 rust-plotters-backend_0.3.5.orig.tar.gz ee163e461d40b7549f0ac3fcf6466a1c639990405bcc4565fe37d7d25000fe9a 2592 rust-plotters-backend_0.3.5-1.debian.tar.xz"
+    "59d8c84e3f27f475abfc449f266a26d21eab030b1bdf91e64b787f4ec5925827 1661 rust-plotters-backend_0.3.7-1.dsc df42e13c12958a16b3f7f4386b9ab1f3e7933914ecea48da7139435263a4172a 13709 rust-plotters-backend_0.3.7.orig.tar.gz 2918b48dc1cdc48d6dcf97590541c6d624579507b740e03293ee561edff48c56 2620 rust-plotters-backend_0.3.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-plotters-backend"
   ],
   "Files": [
-    "14f455ebaee35d26ac2b9a95881657eb 2382 rust-plotters-backend_0.3.5-1.dsc bd8a914851fd9e6351082f98b7e7fa84 13440 rust-plotters-backend_0.3.5.orig.tar.gz 4bc44606f8a10faad7cd3c9f366469c9 2592 rust-plotters-backend_0.3.5-1.debian.tar.xz"
+    "25a28932f719a6e8accecb8206a77f69 1661 rust-plotters-backend_0.3.7-1.dsc 654c2b6ec12a0ab1f52e2c625e72161a 13709 rust-plotters-backend_0.3.7.orig.tar.gz de27a067ddb917c29089eee814bab5d0 2620 rust-plotters-backend_0.3.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/plotters-backend]"
   ],
   "Version": [
-    "0.3.5-1"
+    "0.3.7-1"
   ]
 }
