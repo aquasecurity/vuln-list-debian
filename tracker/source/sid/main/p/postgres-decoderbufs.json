@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-16-decoderbufs"
+    "postgresql-17-decoderbufs"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libprotobuf-c-dev, pkgconf, postgresql-all (\u003e= 217~)"
+    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libprotobuf-c-dev, pkgconf, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "c4c3fa72c27db9985c35c2cabde39b3357877cbcb9152979877a35c14225ae9f 2167 postgres-decoderbufs_2.7.0-1.dsc 48d0d6f6449a2467dd0d907401a7e8eae9644cddaaa6adb9dc097eea8233ea31 14236 postgres-decoderbufs_2.7.0.orig.tar.gz e20a1c6cc4bd7fc589729b74f813efdaed78a24a8900a9ca97583db73ac27dba 2932 postgres-decoderbufs_2.7.0-1.debian.tar.xz"
+    "bd51ee08cf875a6869addd287d9db8c45944535e8a665e8d257f872d64b6a588 2244 postgres-decoderbufs_3.0.1-1.dsc 2e3c840c000e287a355af8044a52b70d9447e64466dc1f9edfbc0384cd7a6378 14269 postgres-decoderbufs_3.0.1.orig.tar.gz ccb8225b4610be1fcd679d7a6586b840e5df116581208671c9a307b675ea90d8 3940 postgres-decoderbufs_3.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgres-decoderbufs"
   ],
   "Files": [
-    "71bcd803475ef83f8f5bd98f94c102d6 2167 postgres-decoderbufs_2.7.0-1.dsc 0262de3a3461d2c74a7e91d3073fcc24 14236 postgres-decoderbufs_2.7.0.orig.tar.gz 59bc7b9cdb0e25c543ff1f5c4144fc91 2932 postgres-decoderbufs_2.7.0-1.debian.tar.xz"
+    "0f53004f89dd966aa84755dad1e54e60 2244 postgres-decoderbufs_3.0.1-1.dsc f536a853f61b20e753cd804716ab903d 14269 postgres-decoderbufs_3.0.1.orig.tar.gz 94b113d1992c63857523ce843dba9f6c 3940 postgres-decoderbufs_3.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgres-decoderbufs"
   ],
   "Package-List": [
-    "postgresql-16-decoderbufs deb database optional arch=any"
+    "postgresql-17-decoderbufs deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgres-decoderbufs.git"
   ],
   "Version": [
-    "2.7.0-1"
+    "3.0.1-1"
   ]
 }
