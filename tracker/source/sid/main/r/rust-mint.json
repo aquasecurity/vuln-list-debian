@@ -6,16 +6,16 @@
     "librust-mint-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d91b866ef44c62bb8c586a4dcad428cad7141dbaea2f53c7fdeca02f21bd89d1 2110 rust-mint_0.5.5-1.dsc d42e54f364a39ad5238e3072db2e8747785b37655368da756987d3b09ada91e0 6166 rust-mint_0.5.5.orig.tar.gz ef3bf0cb9cb23fb4392e7d47d1c210e659ccf5e1d28e96c86446d03106ecd33d 2652 rust-mint_0.5.5-1.debian.tar.xz"
+    "8a4da1619d796c74f70e477e0f319951d0b16e71eeb19170c504c6fea6a304a2 2255 rust-mint_0.5.9-1.dsc e53debba6bda7a793e5f99b8dacf19e626084f525f7829104ba9898f367d85ff 8399 rust-mint_0.5.9.orig.tar.gz de50e80d6adbae2c31a8c6f176f46c7a2a0d43daf44a7e0db78c9fd57242d647 2848 rust-mint_0.5.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-mint"
   ],
   "Files": [
-    "29f25980f8dccf8bf7f43f0ec66f9d07 2110 rust-mint_0.5.5-1.dsc 3a8c4a928e493838ff16f2491e2bc523 6166 rust-mint_0.5.5.orig.tar.gz dea91504cbb12b1a4db74ca2130a5365 2652 rust-mint_0.5.5-1.debian.tar.xz"
+    "0f0eb967e96358a2fcd2b62289ff9095 2255 rust-mint_0.5.9-1.dsc 0f7f257b6c4a2f47ffe82eea57874fca 8399 rust-mint_0.5.9.orig.tar.gz 9232a16720a321c936f3650df9048f27 2848 rust-mint_0.5.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/mint]"
   ],
   "Version": [
-    "0.5.5-1"
+    "0.5.9-1"
   ]
 }
