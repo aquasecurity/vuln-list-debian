@@ -6,16 +6,16 @@
     "librust-sop-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memsec-dev (\u003e= 0.5-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memsec-dev (\u003e= 0.5-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "35a36e14bdc81d135adcf6d1a906582f60e8ef12df330dec70c1cdb82f284e05 1683 rust-sop_0.7.2-1.dsc 77468b8c590d65730f3b3905427612439f0e0cd5b967a48615a444546f2ed9e0 21688 rust-sop_0.7.2.orig.tar.gz 9a9b76438bb95309a30a292e8f60bf18389c3bf19239cb0412f81da024ca4d27 2864 rust-sop_0.7.2-1.debian.tar.xz"
+    "860cb8fdee2662c0d498b632edb73cb17efc58f9656ac165912aa70a6e85b1b1 1821 rust-sop_0.8.0-1.dsc 9776fddf2d2fa7dda4b74ef1967cf5fe81774ee3bee6154fadf2e70dbc3356f4 25415 rust-sop_0.8.0.orig.tar.gz 40a51fdd7f2fc6fe467de6b5df5444f7b8494c85a84ac9fe87f751da068d93df 3052 rust-sop_0.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sop"
   ],
   "Files": [
-    "125523943caebb68a37b81316ffdefea 1683 rust-sop_0.7.2-1.dsc b894e352eed4b921c4b37a59aba897b4 21688 rust-sop_0.7.2.orig.tar.gz 014f419214d1edf675dc1060d46eda32 2864 rust-sop_0.7.2-1.debian.tar.xz"
+    "9b3dd42088703c273d41725fb678f1bb 1821 rust-sop_0.8.0-1.dsc 880321441b8caf148cc443c98572bc11 25415 rust-sop_0.8.0.orig.tar.gz cd0a8b7fcbf29bfd1998f154ab9e556f 3052 rust-sop_0.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sop]"
   ],
   "Version": [
-    "0.7.2-1"
+    "0.8.0-1"
   ]
 }

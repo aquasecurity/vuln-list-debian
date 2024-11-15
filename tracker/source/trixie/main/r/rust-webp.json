@@ -6,16 +6,16 @@
     "librust-webp-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-image-0.24-dev \u003c!nocheck\u003e, librust-libwebp-sys-0.9+default-dev (\u003e= 0.9.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-image-0.25-dev \u003c!nocheck\u003e, librust-libwebp-sys-0.9+default-dev (\u003e= 0.9.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6f4092fd965e3e81d5f431cde5eb7ef6d73c02718fd55b4716cb565789f9154a 2283 rust-webp_0.2.6-1.dsc 4bb5d8e7814e92297b0e1c773ce43d290bef6c17452dafd9fc49e5edb5beba71 1853066 rust-webp_0.2.6.orig.tar.gz e1c09b92dc66d081f55a4426de85998e91d666f3bf0c1e024045b3ba34db740f 2764 rust-webp_0.2.6-1.debian.tar.xz"
+    "823315c691490f1ee581f2d467c4b8cf8947cd75d171758c92b0ef8f08a7b6b9 1663 rust-webp_0.3.0-1.dsc 8f53152f51fb5af0c08484c33d16cca96175881d1f3dec068c23b31a158c2d99 1855854 rust-webp_0.3.0.orig.tar.gz 1af2d5d27ee20da0806ab4342c174ba4a7622d6952ca275be3274e4f7a3a4a76 2824 rust-webp_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-webp"
   ],
   "Files": [
-    "a7eba4348730b2d9f1cf492a9cd8a69d 2283 rust-webp_0.2.6-1.dsc ff0b065ffdbe5b666789f0b0499abea0 1853066 rust-webp_0.2.6.orig.tar.gz d742fff76ef2e3119cc838a8c48e9491 2764 rust-webp_0.2.6-1.debian.tar.xz"
+    "40ace93b9a1721104bbfbe678275eecf 1663 rust-webp_0.3.0-1.dsc a2e2df22393aec286b1075d86771216f 1855854 rust-webp_0.3.0.orig.tar.gz 25c4ab5f0bbedea6be50c21c0dd2ae68 2824 rust-webp_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-image-0.24+default-dev"
+    "dh-cargo, librust-image-0.25+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/webp]"
   ],
   "Version": [
-    "0.2.6-1"
+    "0.3.0-1"
   ]
 }
