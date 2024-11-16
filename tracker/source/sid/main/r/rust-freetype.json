@@ -6,16 +6,16 @@
     "librust-freetype-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-freetype-sys-0.13+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-freetype-sys-0.20+default-dev (\u003e= 0.20.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bdc28469e5fb0264f8dc0af3c026d6eb1538512b9087ea51f81ccae72a12b473 1862 rust-freetype_0.7.0-4.dsc bee38378a9e3db1cc693b4f88d166ae375338a0ff75cb8263e1c601d51f35dc6 20257 rust-freetype_0.7.0.orig.tar.gz 9d6cf0625f72eb24413fc5411050d56f7e9506d30110748196c97f9730913a2d 2892 rust-freetype_0.7.0-4.debian.tar.xz"
+    "1dcd97c7fe7e8c1becf9fc2be59cb8041ee57eb876dc241803a74857465c4dda 2265 rust-freetype_0.7.2-1.dsc 5a440748e063798e4893ceb877151e84acef9bea9a8c6800645cf3f1b3a7806e 20368 rust-freetype_0.7.2.orig.tar.gz 7a194cca6f411cc3123f8648bf870708cae47d7a01d229fd774009a13a5edb67 4096 rust-freetype_0.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-freetype"
   ],
   "Files": [
-    "5592ef7b9d97c3703b1fcc0cd165b2d0 1862 rust-freetype_0.7.0-4.dsc b47fa5cebaa5e90ed1228ccbd5a337ed 20257 rust-freetype_0.7.0.orig.tar.gz 5268381eb221840d1771ac9ad4a98d0b 2892 rust-freetype_0.7.0-4.debian.tar.xz"
+    "278ecaadc4a535c6076392358280c62d 2265 rust-freetype_0.7.2-1.dsc b6a5f8edd6c346ab958aa68a0d5af20f 20368 rust-freetype_0.7.2.orig.tar.gz 46f96cb78c7840ce3792510457f564b6 4096 rust-freetype_0.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/freetype]"
   ],
   "Version": [
-    "0.7.0-4"
+    "0.7.2-1"
   ]
 }

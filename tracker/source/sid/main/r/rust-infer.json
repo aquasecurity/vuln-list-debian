@@ -6,16 +6,16 @@
     "librust-infer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfb-0.7+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfb-0.7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fcbe3bf4a276dafa7079855901895322230dae4b2cca35bf90d45cfdc52f24b0 2160 rust-infer_0.15.0-1.dsc cb33622da908807a06f9513c19b3c1ad50fab3e4137d82a78107d502075aa199 18734 rust-infer_0.15.0.orig.tar.gz 829c0e64e16ebef43eb614fd7720ee18bdf00766a9870aee8ab3d985f36acd43 2900 rust-infer_0.15.0-1.debian.tar.xz"
+    "8e12e479b58541974d61bc212bd3c4d3308c9a58bc10d63f4d30d53eea594fce 2174 rust-infer_0.16.0-1.dsc bc150e5ce2330295b8616ce0e3f53250e53af31759a9dbedad1621ba29151847 18830 rust-infer_0.16.0.orig.tar.gz 286573e32ec897b566f8558864b1e32b12f2170174762f8e0f836489eaceba92 2920 rust-infer_0.16.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-infer"
   ],
   "Files": [
-    "c7852610a4aced837ecbb61efe486cc5 2160 rust-infer_0.15.0-1.dsc c4c0259f944faa0475c3375f04f2a062 18734 rust-infer_0.15.0.orig.tar.gz 61a05b7f31a45a3c86d8070806eba341 2900 rust-infer_0.15.0-1.debian.tar.xz"
+    "b6e2d6b9d55a4e8230e0a867a49a989e 2174 rust-infer_0.16.0-1.dsc 4a303a6a35fea39ab1bac5de0e1261d5 18830 rust-infer_0.16.0.orig.tar.gz 1030175ba082e736571d507f097b2691 2920 rust-infer_0.16.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cn@sail.ng\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/infer]"
   ],
   "Version": [
-    "0.15.0-1"
+    "0.16.0-1"
   ]
 }
