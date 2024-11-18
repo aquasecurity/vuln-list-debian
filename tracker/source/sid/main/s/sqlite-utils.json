@@ -6,16 +6,19 @@
     "sqlite-utils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, furo, python3-all, python3-click \u003c!nocheck\u003e, python3-click-default-group \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-rtd-theme, python3-sqlite-fts4 \u003c!nocheck\u003e, python3-tabulate \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "furo, python3-click \u003c!nocheck\u003e, python3-beanbag-docutils, python3-click-default-group \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-rtd-theme, python3-sqlite-fts4 \u003c!nocheck\u003e, python3-tabulate \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9d5fa2a15c71896252958d748fe1a9c29bc08937c2d0c400f71b59e537d3eb39 2410 sqlite-utils_3.36-1.dsc eddf30e678589798f6d43256ab53e92e743a138fa442f651948771690ad1a6e1 460207 sqlite-utils_3.36.orig.tar.gz 7c789decb66b26269cff27088d4bc7f72ab7f8a2f3500ea8e838a4731f64b057 4340 sqlite-utils_3.36-1.debian.tar.xz"
+    "062d0890453cfe04627602f0bba35f18f63478703dc5f901a16649db8cc8d4d3 2476 sqlite-utils_3.38~a0-1.dsc bf4c97b0b341c28732af7b94c16b4ea18275f057ba611768aeaecb255ed6e0c5 461510 sqlite-utils_3.38~a0.orig.tar.gz cdb1bdd2126db1cdba3d314cbb046304f567edc93cee9e21f194fdfb7401a1e6 4172 sqlite-utils_3.38~a0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sqlite-utils"
   ],
   "Files": [
-    "df5d6d6010c952814849220c6a7adea3 2410 sqlite-utils_3.36-1.dsc 8d26cb57a69357579a7959d99c9a8451 460207 sqlite-utils_3.36.orig.tar.gz 18c27aade970cc050b3530a053028092 4340 sqlite-utils_3.36-1.debian.tar.xz"
+    "5355bc4a08c7409e87cf087c3ac8264f 2476 sqlite-utils_3.38~a0-1.dsc 79fef6a200176f690e4b67a79a12b9f3 461510 sqlite-utils_3.38~a0.orig.tar.gz 679e8eb2443c4b33bf905250b3cef278 4172 sqlite-utils_3.38~a0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-click-default-group, python3-hypothesis, python3-pytest"
+    "python3-all, python3-hypothesis, python3-pytest"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/sqlite-utils"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/sqlite-utils.git"
   ],
   "Version": [
-    "3.36-1"
+    "3.38~a0-1"
   ]
 }
