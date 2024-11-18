@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64el s390x"
+    "amd64 arm64 ppc64el s390x all"
   ],
   "Binary": [
-    "criu"
+    "criu, libcriu2, libcriu-dev, python3-pycriu, libcompel1, libcompel-dev"
   ],
   "Build-Depends": [
     "asciidoc, debhelper-compat (= 13), dh-python, libbsd-dev, libcap-dev, libgnutls28-dev, libnet1-dev, libnftables-dev, libnl-3-dev, libprotobuf-c-dev, libprotobuf-dev, pkgconf, protobuf-c-compiler, protobuf-compiler, pybuild-plugin-pyproject, python3-googleapis-common-protos, python3-all, xmlto"
   ],
   "Checksums-Sha256": [
-    "48758c8990118716cd53d78b3f89e2542b9e1ef208e3b76375b16c776cd22c22 2370 criu_3.19-2.dsc 3645d77972529fc3d3ce802479ac3b87da797f95844582714b8c6cfb01710a54 983732 criu_3.19.orig.tar.xz bf68db49d25afaee8f8f6bd5107a42b779e3ca3e5f8e91fff3979595c4209540 8692 criu_3.19-2.debian.tar.xz"
+    "99560782249dd0734eebb40dc3d4f8d3c2ef1970cca6ab235823b1f2b4ce1e91 2767 criu_3.19-3.dsc 3645d77972529fc3d3ce802479ac3b87da797f95844582714b8c6cfb01710a54 983732 criu_3.19.orig.tar.xz d53a498524cb187decc6513d9d089cd76c5a6246a437633ebd8391c0970aec86 11408 criu_3.19-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/criu"
   ],
   "Files": [
-    "3941ceacc4a4c6aeb5e1168beee9547c 2370 criu_3.19-2.dsc 0af4e7b49833099aeaaa13c15887fb2b 983732 criu_3.19.orig.tar.xz 3ba6f081ec524ded8e5d9daf66c76754 8692 criu_3.19-2.debian.tar.xz"
+    "0677bb43e295ca797f85db609eb9b331 2767 criu_3.19-3.dsc 0af4e7b49833099aeaaa13c15887fb2b 983732 criu_3.19.orig.tar.xz 2689fea75349af76d13672e2f8a045d1 11408 criu_3.19-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "criu"
   ],
   "Package-List": [
-    "criu deb admin optional arch=amd64,arm64,ppc64el,s390x"
+    "criu deb admin optional arch=amd64,arm64,ppc64el,s390x libcompel-dev deb libdevel optional arch=amd64,arm64,ppc64el,s390x libcompel1 deb libs optional arch=amd64,arm64,ppc64el,s390x libcriu-dev deb libdevel optional arch=amd64,arm64,ppc64el,s390x libcriu2 deb libs optional arch=amd64,arm64,ppc64el,s390x python3-pycriu deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest"
+    "autopkgtest, autopkgtest-pkg-python3"
   ],
   "Testsuite-Triggers": [
     "@builddeps@, @recommends@, iptables, libaio-dev, libbsd-dev, libnl-route-3-dev, python3-yaml"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/criu.git"
   ],
   "Version": [
-    "3.19-2"
+    "3.19-3"
   ]
 }
