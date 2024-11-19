@@ -6,16 +6,19 @@
     "libwireplumber-0.5-0, libwireplumber-0.5-dev, wireplumber, wireplumber-doc, gir1.2-wp-0.5"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, doxygen \u003c!nodoc\u003e, gobject-introspection, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.68), liblua5.4-dev, libpipewire-0.3-dev (\u003e= 1.0.2), libspa-0.2-dev, libsystemd-dev, meson (\u003e= 0.59.0), pkgconf, systemd-dev, dbus \u003c!nocheck\u003e, pipewire (\u003e= 1.0.2) \u003c!nocheck\u003e, python3-breathe \u003c!nodoc\u003e, python3-lxml \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-exec, dh-sequence-gir, doxygen \u003c!nodoc\u003e, gobject-introspection \u003c!nogir\u003e, libgirepository1.0-dev \u003c!nogir\u003e, libglib2.0-dev (\u003e= 2.68), liblua5.4-dev, libpipewire-0.3-dev (\u003e= 1.0.2), libspa-0.2-dev, libsystemd-dev, meson (\u003e= 0.59.0), pkgconf, systemd-dev, dbus \u003c!nocheck\u003e, pipewire (\u003e= 1.0.2) \u003c!nocheck\u003e, python3-lxml:native \u003c!nogir\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "78dc87d14b59edd453ba2518b669dd2b38b64e1da2fdb7f9a0bdd201a5dce657 2785 wireplumber_0.5.6-2.dsc 4029445a454ad6b230021a81be0f9959c3afb3317ebc755d59b34d26f15ae855 415566 wireplumber_0.5.6.orig.tar.bz2 19b2fc905b0add4131ab6397f0c652c5e8bd6589f993cba2045bdda6a6367e90 10848 wireplumber_0.5.6-2.debian.tar.xz"
+    "30f47fa605bdd2d0fa9d601b0589daafa2aaf8e5cf3fc15bc08abbfdb98497d8 2854 wireplumber_0.5.6-3.dsc 4029445a454ad6b230021a81be0f9959c3afb3317ebc755d59b34d26f15ae855 415566 wireplumber_0.5.6.orig.tar.bz2 c017e464b37e9cfc797e256e6891be6628ec60fe290576ee77fd15d141ce6801 11136 wireplumber_0.5.6-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/wireplumber"
   ],
   "Files": [
-    "fc4ec70d6317792602e21fcf22c4f744 2785 wireplumber_0.5.6-2.dsc 044a94903b020eeb8247510e394cd3f3 415566 wireplumber_0.5.6.orig.tar.bz2 33f261b8eec7ef135f89df47c92265ab 10848 wireplumber_0.5.6-2.debian.tar.xz"
+    "6df56faf776074d98552430cd596df4b 2854 wireplumber_0.5.6-3.dsc 044a94903b020eeb8247510e394cd3f3 415566 wireplumber_0.5.6.orig.tar.bz2 48e06475a00376fca9c8be2eac5e8332 11136 wireplumber_0.5.6-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "wireplumber"
   ],
   "Package-List": [
-    "gir1.2-wp-0.5 deb introspection optional arch=linux-any libwireplumber-0.5-0 deb libs optional arch=linux-any libwireplumber-0.5-dev deb libdevel optional arch=linux-any wireplumber deb video optional arch=linux-any wireplumber-doc deb doc optional arch=all profile=!nodoc"
+    "gir1.2-wp-0.5 deb introspection optional arch=linux-any profile=!nogir libwireplumber-0.5-0 deb libs optional arch=linux-any libwireplumber-0.5-dev deb libdevel optional arch=linux-any wireplumber deb video optional arch=linux-any wireplumber-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "extra"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/utopia-team/wireplumber.git"
   ],
   "Version": [
-    "0.5.6-2"
+    "0.5.6-3"
   ]
 }
