@@ -6,16 +6,16 @@
     "librust-freetype-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-freetype-sys-0.13+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-freetype-sys-0.20+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2d90b438a96a1b29ebb6efb67d45ec298cea32e5506085ab850a59406fee4934 2418 rust-freetype-rs_0.26.0-1.dsc 74eadec9d0a5c28c54bb9882e54787275152a4e36ce206b45d7451384e5bf5fb 105825 rust-freetype-rs_0.26.0.orig.tar.gz 52bc33b1dc5482374131d858c6c9873fc4b5a7dd6c76d59e876619cb8f24e748 3988 rust-freetype-rs_0.26.0-1.debian.tar.xz"
+    "de63e3c5342aabcc15aa9d051f0b3be544131570b3b6ac848a04ab40dd326ad5 2461 rust-freetype-rs_0.26.0-2.dsc 74eadec9d0a5c28c54bb9882e54787275152a4e36ce206b45d7451384e5bf5fb 105825 rust-freetype-rs_0.26.0.orig.tar.gz bcb57c1c3b848754073195eaba6371e92df238b76bbe5854c513ae4adea52ef9 4208 rust-freetype-rs_0.26.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-freetype-rs"
   ],
   "Files": [
-    "d0aca455e051b8668724216f16aab4ec 2418 rust-freetype-rs_0.26.0-1.dsc 186129dddd732f4fa1845915d8995091 105825 rust-freetype-rs_0.26.0.orig.tar.gz 75ee4efc23fda37231575a46ece68c49 3988 rust-freetype-rs_0.26.0-1.debian.tar.xz"
+    "34cbb971c0834866a31cbd72ab1af868 2461 rust-freetype-rs_0.26.0-2.dsc 186129dddd732f4fa1845915d8995091 105825 rust-freetype-rs_0.26.0.orig.tar.gz 5e48cea433a2dcc7c9e048f9761cf8bb 4208 rust-freetype-rs_0.26.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-unicode-normalization-0.1+default-dev"
+    "dh-cargo, librust-unicode-normalization-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabio Rafael da Rosa \u003cfdr@fabiodarosa.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/freetype-rs]"
   ],
   "Version": [
-    "0.26.0-1"
+    "0.26.0-2"
   ]
 }
