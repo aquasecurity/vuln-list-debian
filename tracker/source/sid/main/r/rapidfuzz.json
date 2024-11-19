@@ -6,7 +6,7 @@
     "python3-rapidfuzz, python-rapidfuzz-doc"
   ],
   "Build-Depends": [
-    "cython3, debhelper-compat (= 13), dh-sequence-python3, librapidfuzz-cpp-dev (\u003e= 3.0.5), libtaskflow-cpp-dev, pybuild-plugin-pyproject, python3-all-dev, python3-setuptools, python3-skbuild"
+    "cmake, cython3, debhelper-compat (= 13), dh-sequence-python3, librapidfuzz-cpp-dev (\u003e= 3.1.1), libtaskflow-cpp-dev, pybuild-plugin-pyproject, python3-all-dev, python3-scikit-build-core"
   ],
   "Build-Depends-Arch": [
     "python3-hypothesis \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
@@ -15,7 +15,7 @@
     "dh-sequence-sphinxdoc \u003c!nodoc\u003e, furo \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.bibtex \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "8d90a81712919cc30ce5b7770198a903c16a3c6338cf7d8c129e0af1021399a5 3206 rapidfuzz_3.9.4+ds-1.dsc 3cbab410cb02dce19d9e585ac33f870f273ca6b6f91d0ef6d140e26238c880df 165956 rapidfuzz_3.9.4+ds.orig.tar.xz 45e901336a4a30a9f2f69a2b4ca82ea7e4533d675c548ed865dbdb72e3f145ce 3564 rapidfuzz_3.9.4+ds-1.debian.tar.xz"
+    "f8008f8ae8e7b30f052489b7ed58cdc55509a7eb00d9716fa677694df79ec9e5 3273 rapidfuzz_3.10.1+ds-1.dsc 39625a26afc6882f0aa21e9c6899b38fb767a8f2d4863e0c7f75cca148fb5abf 165304 rapidfuzz_3.10.1+ds.orig.tar.xz 4a94626d8203dd1fd8d5bfc1471645caa3ddc0427e28da2f1becf47d8b2d1131 3684 rapidfuzz_3.10.1+ds-1.debian.tar.xz"
   ],
   "Description": [
     "Rapid fuzzy string matching library RapidFuzz is a fast string matching library for Python and C++, providing Levenshtein and other distances.  This is similar to the functionality of the python3-fuzzywuzzy package.  There are a few significant differences between these packages: . 1) RapidFuzz is MIT licensed. 2) RapidFuzz provides many string metrics, such as Hamming and Jaro-Winkler, which are not included in FuzzyWuzzy. 3) RapidFuzz is mostly written in C++, and has further algorithmic improvements to make string matching even faster. 4) RapidFuzz fixes multiple bugs in the `partial_ratio` implementation."
@@ -24,7 +24,7 @@
     "pool/main/r/rapidfuzz"
   ],
   "Files": [
-    "89297250e045d797e96fd164cdc43378 3206 rapidfuzz_3.9.4+ds-1.dsc a9396f073607430614a00ad10d088f97 165956 rapidfuzz_3.9.4+ds.orig.tar.xz a68aa0a8a33698c165c26a4a03bf7375 3564 rapidfuzz_3.9.4+ds-1.debian.tar.xz"
+    "6de71de7625cbbbdc900cf85ec972b55 3273 rapidfuzz_3.10.1+ds-1.dsc cb7cb0f2ba9ae836e222160e40a6f004 165304 rapidfuzz_3.10.1+ds.orig.tar.xz d2d1ef5f6b9d9b8b74ccb9bc3f2f56c0 3684 rapidfuzz_3.10.1+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "https://github.com/maxbachmann/RapidFuzz"
   ],
   "Maintainer": [
-    "Julian Gilbey \u003cjdg@debian.org\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "rapidfuzz"
@@ -56,6 +56,9 @@
   "Testsuite-Triggers": [
     "python3-all, python3-hypothesis, python3-numpy, python3-pandas, python3-pytest"
   ],
+  "Uploaders": [
+    "Julian Gilbey \u003cjdg@debian.org\u003e"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/rapidfuzz"
   ],
@@ -63,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/rapidfuzz.git"
   ],
   "Version": [
-    "3.9.4+ds-1"
+    "3.10.1+ds-1"
   ]
 }
