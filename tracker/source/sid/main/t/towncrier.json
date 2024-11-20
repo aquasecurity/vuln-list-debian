@@ -9,16 +9,16 @@
     "dh-python, debhelper-compat (= 13)"
   ],
   "Build-Depends-Indep": [
-    "furo, git, pybuild-plugin-pyproject, python3-click, python3-click-default-group, python3-hatchling, python3-incremental, python3-jinja2, python3-mock, python3-pytest, python3-toml, python3-twisted, python3"
+    "furo, git, pybuild-plugin-pyproject, python3-click, python3-click-default-group, python3-hatchling, python3-incremental, python3-jinja2, python3-pytest, python3-tomli, python3-twisted \u003c!nocheck\u003e, python3"
   ],
   "Checksums-Sha256": [
-    "0dd52b15fd2247aacf8d4cbf7c85cf8e7662a50476b11a8ec6cc04519af12250 2111 towncrier_24.8.0-1.dsc 013423ee7eed102b2f393c287d22d95f66f1a3ea10a4baa82d298001a7f18af3 61635 towncrier_24.8.0.orig.tar.gz eb6c9013b6a1e35a606cafd9233f2eea0199b39de64d425aec9ba3f66a9349a8 14252 towncrier_24.8.0-1.debian.tar.xz"
+    "4dc50d06e94006a2387a971c249e64b4e890f44215ef4177cebe9d8c1770500f 2169 towncrier_24.8.0-2.dsc 013423ee7eed102b2f393c287d22d95f66f1a3ea10a4baa82d298001a7f18af3 61635 towncrier_24.8.0.orig.tar.gz 7fa7728625a38390e8f98f955742227c720de57b24f95f23096091ed343ce61a 14296 towncrier_24.8.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/towncrier"
   ],
   "Files": [
-    "351c4104e386dcadd561e687e7de3e0b 2111 towncrier_24.8.0-1.dsc c0fbdf0458671ceadfd17dc16185d4a0 61635 towncrier_24.8.0.orig.tar.gz 6913e91537023b607ccbe87b83cc1359 14252 towncrier_24.8.0-1.debian.tar.xz"
+    "b28908e90b69f45ffccfccf14b479dcc 2169 towncrier_24.8.0-2.dsc c0fbdf0458671ceadfd17dc16185d4a0 61635 towncrier_24.8.0.orig.tar.gz 530e0bd8051eb2cd47b70afd3253c1e0 14296 towncrier_24.8.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-package-smoke-test"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/pkg-towncrier/"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian/pkg-towncrier.git"
   ],
   "Version": [
-    "24.8.0-1"
+    "24.8.0-2"
   ]
 }
