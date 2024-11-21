@@ -6,16 +6,16 @@
     "mantis-xray"
   ],
   "Build-Depends": [
-    "dh-python, python3-setuptools, python3-all, debhelper-compat (= 13), python3-numpy, python3-scipy, python3-h5py, python3-pil, python3-netcdf4"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-h5py \u003c!nocheck\u003e, python3-mda-xdrlib \u003c!nocheck\u003e, python3-netcdf4 \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pil \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "95fee6773094443be8e12d3fb41b821f2c98119a41734729723ce2ea97b7f0a5 2143 mantis-xray_3.1.15-1.dsc 9d98e471ab1e382d6173b7646bfe67100a23aa558c77ecefdd5c1d965de3f96c 1541278 mantis-xray_3.1.15.orig.tar.gz dc35a6cc54427767530373132219625bd7a32867572b5aae7fdb51011a1db577 2588 mantis-xray_3.1.15-1.debian.tar.xz"
+    "6cda3d1cdef3d60aa9ca094f93128294643e5490f5a2b07b48bb47f7e4275a3f 2300 mantis-xray_3.1.15-3.dsc 9d98e471ab1e382d6173b7646bfe67100a23aa558c77ecefdd5c1d965de3f96c 1541278 mantis-xray_3.1.15.orig.tar.gz 5fa371f2d9c6a0852680fe3de0a39631c25dd6ff4ba390c0b916ec916a2a9784 10452 mantis-xray_3.1.15-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mantis-xray"
   ],
   "Files": [
-    "6452c1aa033911c9bd9c0bc68d6e519f 2143 mantis-xray_3.1.15-1.dsc 090634134f27cf1fd5c237c81f13214a 1541278 mantis-xray_3.1.15.orig.tar.gz 46f4476cecf04ba928c5b4dbca06f856 2588 mantis-xray_3.1.15-1.debian.tar.xz"
+    "306329fa6c27a5317b70f758fe3708b7 2300 mantis-xray_3.1.15-3.dsc 090634134f27cf1fd5c237c81f13214a 1541278 mantis-xray_3.1.15.orig.tar.gz 466bec728e91e0575053e3b5e5cfa002 10452 mantis-xray_3.1.15-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,8 +41,14 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "mesa-utils, xauth, xvfb"
+  ],
   "Uploaders": [
-    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/mantis-xray"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/mantis-xray.git"
   ],
   "Version": [
-    "3.1.15-1"
+    "3.1.15-3"
   ]
 }

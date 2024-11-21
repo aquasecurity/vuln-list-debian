@@ -6,16 +6,16 @@
     "python3-mongomock"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-packaging \u003c!nocheck\u003e, python3-pbr, python3-pkg-resources, python3-sentinels \u003c!nocheck\u003e, python3-setuptools, python3-tz \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-hatch-vcs, python3-hatchling, python3-packaging \u003c!nocheck\u003e, python3-pbr, python3-pkg-resources, python3-sentinels \u003c!nocheck\u003e, python3-setuptools, python3-tz \u003c!nocheck\u003e, python3-pymongo \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8420d284be6677c075c848b83426af0ccf8fa0a2596a4ddf82fc4b54adf92333 2234 python-mongomock_4.1.3-1.dsc 4add823c432738c4b52f99fb842a71f54247ad80b00d9d3d37e40f649408b141 135074 python-mongomock_4.1.3.orig.tar.gz a30db34189783d1640a137ebd805ba8c1056e27b841bc4ff4a5fdbafa5035a20 2584 python-mongomock_4.1.3-1.debian.tar.xz"
+    "28d15aef4ac8d797299eb2fd93410e808bc6d4df8011030369e1e6ee8ad88318 2371 python-mongomock_4.3.0-1.dsc 21a61c40c0e3cddf262fbe894c579d43065e68165fc53225c259e23b230d7436 108240 python-mongomock_4.3.0.orig.tar.xz 415b492451f4705b3ccf6c837f4392fa060dd51a06c36e288acbb532cf2912c9 3060 python-mongomock_4.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-mongomock"
   ],
   "Files": [
-    "3fc5a799c676c86973ef63caf8d40b73 2234 python-mongomock_4.1.3-1.dsc f17e93faf8607f5fa6fb399db1913562 135074 python-mongomock_4.1.3.orig.tar.gz fb5414442db6481f475733adbad1f3b0 2584 python-mongomock_4.1.3-1.debian.tar.xz"
+    "b73edfc75e7cea4a2676a255637b7ffb 2371 python-mongomock_4.3.0-1.dsc 3c1f5df74cf0ee95e79c03b0f211beaf 108240 python-mongomock_4.3.0.orig.tar.xz d195bd7335731f3c3ea5d899516e7083 3060 python-mongomock_4.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.6.1"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
   ],
   "Uploaders": [
     "Andrius Merkys \u003cmerkys@debian.org\u003e,"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-mongomock.git"
   ],
   "Version": [
-    "4.1.3-1"
+    "4.3.0-1"
   ]
 }
