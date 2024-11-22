@@ -6,16 +6,19 @@
     "j4-dmenu-desktop"
   ],
   "Build-Depends": [
-    "catch, cmake, debhelper-compat (= 13)"
+    "debhelper-compat (= 13), libcatch2-dev \u003c!nocheck\u003e, libfmt-dev, libspdlog-dev, meson, pkgconf, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f7a25d87dd186eba33f37f6b54f11c2ae5a4fe6bc4f383eb7c58e5762e95c777 1971 j4-dmenu-desktop_2.16-2.dsc cce03564227677ffbf0d1a15588247904c4fce997bc21bb92e1147a916b6c520 32553 j4-dmenu-desktop_2.16.orig.tar.gz 2a862f8a21ae2c3b7c8f1bd12153cba94b6fd034797101185612f790dcd83ffe 11660 j4-dmenu-desktop_2.16-2.debian.tar.xz"
+    "75d77cd8c8fabf390a113329239d91cebd954eac03b08f614b4a545dc4f5a337 2252 j4-dmenu-desktop_3.1-1.dsc 0e6cf25663cc220e3e3e2bc013fe957c3e4a44f900b5ee6a7609cd501021652d 108974 j4-dmenu-desktop_3.1.orig.tar.gz f395ec4fd5bb4027b6257dbe5376edbf384bfd4f5a9556854faf41b25ca75ee4 11016 j4-dmenu-desktop_3.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "20980bab020761935739633e0dd1f1412c3f528d debian archive/debian/3.1-1 https://git.dgit.debian.org/j4-dmenu-desktop"
   ],
   "Directory": [
     "pool/main/j/j4-dmenu-desktop"
   ],
   "Files": [
-    "eb6bbcedc9eecf3ddd8eb2fe548b0f28 1971 j4-dmenu-desktop_2.16-2.dsc 0598ce84481bc671ed3877edad02d264 32553 j4-dmenu-desktop_2.16.orig.tar.gz dd0bb15ca5407767e0dbac02768587f7 11660 j4-dmenu-desktop_2.16-2.debian.tar.xz"
+    "e888361794d6ee5313790fb94a8186a7 2252 j4-dmenu-desktop_3.1-1.dsc 423309bc7e6b0246bdabc143695e3ec0 108974 j4-dmenu-desktop_3.1.orig.tar.gz 76b1c813fce5d73aa125a333bc27a8e7 11016 j4-dmenu-desktop_3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pytest"
   ],
   "Uploaders": [
     "Otto Kekäläinen \u003cotto@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/debian/j4-dmenu-desktop.git"
   ],
   "Version": [
-    "2.16-2"
+    "3.1-1"
   ]
 }

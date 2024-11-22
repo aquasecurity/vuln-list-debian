@@ -6,16 +6,16 @@
     "librust-font-kit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-dirs-next-2+default-dev \u003c!nocheck\u003e, librust-float-ord-0.3+default-dev \u003c!nocheck\u003e, librust-freetype-0.7+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-pathfinder-geometry-0.5+default-dev \u003c!nocheck\u003e, librust-pathfinder-simd-0.5+default-dev (\u003e= 0.5.1-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-yeslogic-fontconfig-sys-3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.6-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e, librust-dirs-5+default-dev \u003c!nocheck\u003e, librust-float-ord-0.3+default-dev \u003c!nocheck\u003e, librust-freetype-sys-0.20+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-pathfinder-geometry-0.5+default-dev \u003c!nocheck\u003e, librust-pathfinder-simd-0.5+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-yeslogic-fontconfig-sys-3+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "78587f96f6b7b12b4b86e78342d913bb457121a2f45947d4b2cdaf1d8ddab98f 3044 rust-font-kit_0.11.0-2.dsc 21fe28504d371085fae9ac7a3450f0b289ab71e07c8e57baa3fb68b9e57d6ce5 72782 rust-font-kit_0.11.0.orig.tar.gz 1e5202767c7a65e16773f0f088b236b7c1255c3ae0aab7763410dfecb058d9b6 9796 rust-font-kit_0.11.0-2.debian.tar.xz"
+    "c3c3f04a6dc35c6c2f70485189b08c7cc3ebcf4765973502909b073294720cc6 2966 rust-font-kit_0.14.2-1.dsc b64b34f4efd515f905952d91bc185039863705592c0c53ae6d979805dd154520 73040 rust-font-kit_0.14.2.orig.tar.gz 79fbc416b6cb1980ca1ea8c2a8bd69b9ec82a40fcfc95913c895ca7847a8c07b 9972 rust-font-kit_0.14.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-font-kit"
   ],
   "Files": [
-    "b0b330ef600031066bc837812a313020 3044 rust-font-kit_0.11.0-2.dsc ce8ace2f7e0fe11eed319da441200972 72782 rust-font-kit_0.11.0.orig.tar.gz 9a88dc707c2b3b22c337705fc8bba877 9796 rust-font-kit_0.11.0-2.debian.tar.xz"
+    "5510d754d27fe23b8ac72c1507694238 2966 rust-font-kit_0.14.2-1.dsc 663de9a612e147f6e775b566efb081ec 73040 rust-font-kit_0.14.2.orig.tar.gz b7ac29b9e163d11e44c4d6de7f4eb244 9972 rust-font-kit_0.14.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-clap-2+default-dev, librust-colored-2+default-dev, librust-pbr-1+default-dev, librust-prettytable-rs-0.8+default-dev"
+    "dh-cargo, librust-clap-4+default-dev, librust-colored-2+default-dev, librust-pbr-1+default-dev, librust-prettytable-rs-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/font-kit]"
   ],
   "Version": [
-    "0.11.0-2"
+    "0.14.2-1"
   ]
 }
