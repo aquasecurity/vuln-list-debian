@@ -6,19 +6,22 @@
     "librust-fts-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.66+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.70+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f80afc510de5fb101c4eb0993a48e1874956ec4884052787e7fc183270170f5d 2190 rust-fts-sys_0.2.7-1.dsc 7a109b6f5a4ef4ce7f3acb412c7583ffd0f53cf1e4a66061ccd22cc606feb1fd 3892 rust-fts-sys_0.2.7.orig.tar.gz d547fd51f0a7c0ec6b935576d07537ebc059fc7936ebcb14a0b9f085f6626e6e 2860 rust-fts-sys_0.2.7-1.debian.tar.xz"
+    "77628009443200313834acbe2ac61abaf47975fe42daec0b0b301003411340d9 2292 rust-fts-sys_0.2.11-1.dsc 28ab6a6dfd9184fe8a5097924dea6e7648f499121b3e933bb8486a17f817122e 4419 rust-fts-sys_0.2.11.orig.tar.gz 13dd78759a6c03ec9165a8c0bfdff864c7a755153ccf521f90ddef02a6ad1223 2760 rust-fts-sys_0.2.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fts-sys"
   ],
   "Files": [
-    "7a2f06748f09b93f8b090258ca51489a 2190 rust-fts-sys_0.2.7-1.dsc 95ea5ad4a5b3eb6e832f666bdb6f1fe8 3892 rust-fts-sys_0.2.7.orig.tar.gz 216b73a4e177bad266953065f51f7897 2860 rust-fts-sys_0.2.7-1.debian.tar.xz"
+    "5eeae66dd153f57a35aaea7c8d135a2b 2292 rust-fts-sys_0.2.11-1.dsc a68d1383ee0b5cdfdbd570437b535d1b 4419 rust-fts-sys_0.2.11.orig.tar.gz 2822c09753368be800e3442be71f9416 2760 rust-fts-sys_0.2.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://codeberg.org/koutheir/fts-sys.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fts-sys]"
   ],
   "Version": [
-    "0.2.7-1"
+    "0.2.11-1"
   ]
 }
