@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "puppet-agent, puppet"
+    "puppet-agent, puppet-doc, puppet"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), facter (\u003e= 4.3.0), po-debconf, rake \u003c!nodoc\u003e, ronn \u003c!nodoc\u003e, ruby-concurrent, ruby-deep-merge, ruby-semantic-puppet, yard \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), facter (\u003e= 4.3.0), gem2deb, pandoc \u003c!nodoc\u003e, po-debconf, rake \u003c!nodoc\u003e, ronn \u003c!nodoc\u003e, ruby-concurrent, ruby-deep-merge, ruby-fast-gettext, ruby-locale, ruby-multi-json, ruby-puppet-resource-api, ruby-scanf, ruby-semantic-puppet, yard \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "99cbda28db5e4452bf2004b6ed07de0f676f0fa2c7301b276ba9c67652b0cdea 1951 puppet-agent_8.10.0-1.dsc 2a0170be0bbef7cf5f9a04829602b47cca710be5ba5bb24ebbbc7b32bcbab041 382224 puppet-agent_8.10.0.orig-modules.tar.gz 927598183ab5f603f997a2eb55ddde0d42c55a3f3adcad056346641aee44b563 3542702 puppet-agent_8.10.0.orig.tar.gz 68b1101d2d44315a9cebe353a4058ecc012eb760b3e145fffe6b799092a7f967 24992 puppet-agent_8.10.0-1.debian.tar.xz"
+    "fa3fb7c542c51a88e17f341d252a49a2190a38fc0249f1807e3f2721b91c73b5 2120 puppet-agent_8.10.0-2.dsc 2a0170be0bbef7cf5f9a04829602b47cca710be5ba5bb24ebbbc7b32bcbab041 382224 puppet-agent_8.10.0.orig-modules.tar.gz 927598183ab5f603f997a2eb55ddde0d42c55a3f3adcad056346641aee44b563 3542702 puppet-agent_8.10.0.orig.tar.gz d88d6dafebb9602c038857a4eeb5cac858bc1f7376bc8712185f8b8d1c0d3dcd 28032 puppet-agent_8.10.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/puppet-agent"
   ],
   "Files": [
-    "79bf700d9809384cd8d146babd3d09d5 1951 puppet-agent_8.10.0-1.dsc dc9e8bb3c859d1dce1629b59735239aa 382224 puppet-agent_8.10.0.orig-modules.tar.gz acd0830b52bf61cb29441ea7c1e93b63 3542702 puppet-agent_8.10.0.orig.tar.gz df64e6b18856abdc23b21c268be16713 24992 puppet-agent_8.10.0-1.debian.tar.xz"
+    "7dbaf918539923133e1d5ab8d5b05832 2120 puppet-agent_8.10.0-2.dsc dc9e8bb3c859d1dce1629b59735239aa 382224 puppet-agent_8.10.0.orig-modules.tar.gz acd0830b52bf61cb29441ea7c1e93b63 3542702 puppet-agent_8.10.0.orig.tar.gz f674d4113c6e47e0078f9c9a4a2f816f 28032 puppet-agent_8.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "puppet-agent"
   ],
   "Package-List": [
-    "puppet deb oldlibs optional arch=all puppet-agent deb admin optional arch=all"
+    "puppet deb oldlibs optional arch=all puppet-agent deb admin optional arch=all puppet-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cron, gem2deb, ruby-all-dev, ruby-rubygems, ruby-serverspec, systemd-sysv"
+    "cron, gem2deb, gem2deb-test-runner, ruby-all-dev, ruby-serverspec, systemd-sysv"
   ],
   "Uploaders": [
     "Jérôme Charaoui \u003cjerome@riseup.net\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/puppet-team/puppet-agent.git"
   ],
   "Version": [
-    "8.10.0-1"
+    "8.10.0-2"
   ]
 }
