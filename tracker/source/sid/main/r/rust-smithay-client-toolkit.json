@@ -9,13 +9,13 @@
     "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.13.0-~~) \u003c!nocheck\u003e, librust-calloop-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-calloop-wayland-source-0.2+default-dev \u003c!nocheck\u003e, librust-cursor-icon-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.148-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.15-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.15-~~) \u003c!nocheck\u003e, librust-rustix-0.38+pipe-dev (\u003e= 0.38.15-~~) \u003c!nocheck\u003e, librust-rustix-0.38+shm-dev (\u003e= 0.38.15-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev \u003c!nocheck\u003e, librust-wayland-client-0.31+default-dev (\u003e= 0.31.1-~~) \u003c!nocheck\u003e, librust-wayland-csd-frame-0.3+default-dev \u003c!nocheck\u003e, librust-wayland-cursor-0.31+default-dev \u003c!nocheck\u003e, librust-wayland-protocols-0.31+client-dev \u003c!nocheck\u003e, librust-wayland-protocols-0.31+default-dev \u003c!nocheck\u003e, librust-wayland-protocols-0.31+staging-dev \u003c!nocheck\u003e, librust-wayland-protocols-0.31+unstable-dev \u003c!nocheck\u003e, librust-wayland-protocols-wlr-0.2+client-dev \u003c!nocheck\u003e, librust-wayland-protocols-wlr-0.2+default-dev \u003c!nocheck\u003e, librust-wayland-scanner-0.31+default-dev \u003c!nocheck\u003e, librust-xkbcommon-0.8+default-dev \u003c!nocheck\u003e, librust-xkbcommon-0.8+wayland-dev \u003c!nocheck\u003e, librust-xkeysym-0.2+bytemuck-dev \u003c!nocheck\u003e, librust-xkeysym-0.2+default-dev \u003c!nocheck\u003e, libxkbcommon-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ff82b9a561fbf75882122998692270424f2996647b59686788e99e7ecb939d02 4089 rust-smithay-client-toolkit_0.18.1-2.dsc 922fd3eeab3bd820d76537ce8f582b1cf951eceb5475c28500c7457d9d17f53a 129920 rust-smithay-client-toolkit_0.18.1.orig.tar.gz 3925f7464f38b3f29e823a08ce8d387dc96417e5fbb29797807c9e098524554e 3988 rust-smithay-client-toolkit_0.18.1-2.debian.tar.xz"
+    "ba67440e7d9527468c371a30ede7028aab78438e8206915cb609fab5786b0016 3455 rust-smithay-client-toolkit_0.18.1-3.dsc 922fd3eeab3bd820d76537ce8f582b1cf951eceb5475c28500c7457d9d17f53a 129920 rust-smithay-client-toolkit_0.18.1.orig.tar.gz 420340c7325f40eb068282494ad0ec166c21494abca1ce7e7e4b5465734fa1a2 4076 rust-smithay-client-toolkit_0.18.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-smithay-client-toolkit"
   ],
   "Files": [
-    "5b4ead63ec2ad0d855f9713ad1653c57 4089 rust-smithay-client-toolkit_0.18.1-2.dsc 1c636a4973414fa9b34d51157583717f 129920 rust-smithay-client-toolkit_0.18.1.orig.tar.gz fdb04bc421979d73a195efa874bdb582 3988 rust-smithay-client-toolkit_0.18.1-2.debian.tar.xz"
+    "b637dfa15da65031cf4c48db2d69b0df 3455 rust-smithay-client-toolkit_0.18.1-3.dsc 1c636a4973414fa9b34d51157583717f 129920 rust-smithay-client-toolkit_0.18.1.orig.tar.gz ddd9c615d1ff8a7a5de3f77d3574533d 4076 rust-smithay-client-toolkit_0.18.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bytemuck-1+default-dev, librust-env-logger-0.10+default-dev, librust-font-kit-0.11+default-dev, librust-image-0.24+default-dev, librust-raw-window-handle-0.5+default-dev, rustc"
+    "dh-cargo, librust-bytemuck-1+default-dev, librust-env-logger-0.10+default-dev, librust-font-kit-0.14+default-dev, librust-image-0.25+default-dev, librust-raw-window-handle-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/smithay-client-toolkit]"
   ],
   "Version": [
-    "0.18.1-2"
+    "0.18.1-3"
   ]
 }

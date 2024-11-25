@@ -6,19 +6,22 @@
     "librust-foreign-types-0.3-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-foreign-types-shared-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-foreign-types-shared-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0891c0b516d2da4e755cacb6f036b42c04001e044aa3e866067b103edb24bb99 2265 rust-foreign-types-0.3_0.3.2-1.dsc f6f339eb8adc052cd2ca78910fda869aefa38d22d5cb648e6485e4d3fc06f3b1 7504 rust-foreign-types-0.3_0.3.2.orig.tar.gz 21d48d4781a75d92e04566d04ef860cbb068d38b6da498b7e6b367301ad569a4 2704 rust-foreign-types-0.3_0.3.2-1.debian.tar.xz"
+    "8610fa69ce786c12b43dbe18225878680a28ad7f1bb2a4da75578a2378950d78 2376 rust-foreign-types-0.3_0.3.2-2.dsc f6f339eb8adc052cd2ca78910fda869aefa38d22d5cb648e6485e4d3fc06f3b1 7504 rust-foreign-types-0.3_0.3.2.orig.tar.gz 21c1fd69552f771414925f7d753426f3d816fdae2d9c8a3b8d1fb7705179f565 2840 rust-foreign-types-0.3_0.3.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-foreign-types-0.3"
   ],
   "Files": [
-    "61c6bf31525b4609117b0b11b84ecabf 2265 rust-foreign-types-0.3_0.3.2-1.dsc 78c898fdaa3968e23904bf8538c4a271 7504 rust-foreign-types-0.3_0.3.2.orig.tar.gz 246963d1b00b5e1f7f884eb1a2d2f26e 2704 rust-foreign-types-0.3_0.3.2-1.debian.tar.xz"
+    "40bfca9ddad493320b03303126dd3dc3 2376 rust-foreign-types-0.3_0.3.2-2.dsc 78c898fdaa3968e23904bf8538c4a271 7504 rust-foreign-types-0.3_0.3.2.orig.tar.gz 853015949bfcd5e034f885f78721a3fd 2840 rust-foreign-types-0.3_0.3.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sfackler/foreign-types"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/foreign-types-0.3]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.2-2"
   ]
 }

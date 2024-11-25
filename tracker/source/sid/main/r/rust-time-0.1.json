@@ -6,16 +6,16 @@
     "librust-time-0.1-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.69-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwinbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev \u003c!nocheck\u003e, librust-winapi-0.3+ntdef-dev \u003c!nocheck\u003e, librust-winapi-0.3+profileapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+sysinfoapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+timezoneapi-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.69-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwinbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev \u003c!nocheck\u003e, librust-winapi-0.3+ntdef-dev \u003c!nocheck\u003e, librust-winapi-0.3+profileapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+sysinfoapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+timezoneapi-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4c1f80f56048c38c2bd6857d132180005b4fda44f5d955b0791a66368108577a 2771 rust-time-0.1_0.1.45-1.dsc 1b797afad3f312d1c66a56d11d0316f916356d11bd158fbc6ca6389ff6bf805a 28911 rust-time-0.1_0.1.45.orig.tar.gz 133d57e2464b9193f247135a6330c2b66e2788474321851f5e4cd1daac0b211b 3208 rust-time-0.1_0.1.45-1.debian.tar.xz"
+    "9d1e44161e394bb08d425591bef61a67554bb6ce316d0e2a4bff0d44c93d8888 2801 rust-time-0.1_0.1.45-2.dsc 1b797afad3f312d1c66a56d11d0316f916356d11bd158fbc6ca6389ff6bf805a 28911 rust-time-0.1_0.1.45.orig.tar.gz 114cf3f5ee4d8c5984a09a33d79409647949d8c65309bbceff59652cb65ec8af 3264 rust-time-0.1_0.1.45-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-time-0.1"
   ],
   "Files": [
-    "5279b2b1394424e31d9b9d6f6daebae3 2771 rust-time-0.1_0.1.45-1.dsc dc9491aba5e393b587f4bbffab58ed52 28911 rust-time-0.1_0.1.45.orig.tar.gz 5fdc533146352b0ee4702e186ddc410f 3208 rust-time-0.1_0.1.45-1.debian.tar.xz"
+    "923c65a3b4e345719f61bc32c5160fbd 2801 rust-time-0.1_0.1.45-2.dsc dc9491aba5e393b587f4bbffab58ed52 28911 rust-time-0.1_0.1.45.orig.tar.gz d8eafd48fbd8baf46a2266feb5ae176f 3264 rust-time-0.1_0.1.45-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-log-0.4+default-dev, librust-winapi-0.3+default-dev, librust-winapi-0.3+processthreadsapi-dev, librust-winapi-0.3+std-dev, librust-winapi-0.3+winbase-dev"
+    "dh-cargo, librust-log-0.4+default-dev, librust-winapi-0.3+default-dev, librust-winapi-0.3+processthreadsapi-dev, librust-winapi-0.3+std-dev, librust-winapi-0.3+winbase-dev, rustc"
   ],
   "Uploaders": [
     "Peter Michael Green \u003cplugwash@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/time-0.1]"
   ],
   "Version": [
-    "0.1.45-1"
+    "0.1.45-2"
   ]
 }

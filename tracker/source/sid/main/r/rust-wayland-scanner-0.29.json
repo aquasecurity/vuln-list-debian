@@ -6,19 +6,22 @@
     "librust-wayland-scanner-0.29-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.11-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-xml-rs-0.8+default-dev \u003c!nocheck\u003e | librust-xml-rs-0.7+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.11-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-xml-rs-0.8+default-dev \u003c!nocheck\u003e | librust-xml-rs-0.7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9ee8a0bd2a8c0e27afdf6e610333f66034a190452a7525d4c4d11491c509a238 2501 rust-wayland-scanner-0.29_0.29.5-2.dsc 8f4303d8fa22ab852f789e75a967f0a2cdc430a607751c0499bada3e451cbd53 17248 rust-wayland-scanner-0.29_0.29.5.orig.tar.gz 4bb227c7b16c2cbf0340e28a5fc9e158a42ddc27bde612bac15e3793a3e01342 2880 rust-wayland-scanner-0.29_0.29.5-2.debian.tar.xz"
+    "401e7de6741b43c0801bc0709bce748e3504da3ddfebcb571f19b8371f5bf6af 2563 rust-wayland-scanner-0.29_0.29.5-3.dsc 8f4303d8fa22ab852f789e75a967f0a2cdc430a607751c0499bada3e451cbd53 17248 rust-wayland-scanner-0.29_0.29.5.orig.tar.gz 42e79464047a97657897237acb8dbabd5c12f3b1dc92e0e96f10c23484411a81 2940 rust-wayland-scanner-0.29_0.29.5-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wayland-scanner-0.29"
   ],
   "Files": [
-    "99f6764bcbedddbd164aba4a03853ce8 2501 rust-wayland-scanner-0.29_0.29.5-2.dsc 089d99f8286e47aec45e2783c214d383 17248 rust-wayland-scanner-0.29_0.29.5.orig.tar.gz 8f5717baa0d1e26d285c39c5b8977935 2880 rust-wayland-scanner-0.29_0.29.5-2.debian.tar.xz"
+    "d6b04264fb4e34eb1e0b9f1ccf6e5f8e 2563 rust-wayland-scanner-0.29_0.29.5-3.dsc 089d99f8286e47aec45e2783c214d383 17248 rust-wayland-scanner-0.29_0.29.5.orig.tar.gz 2b4c6fa6516a121454374478455d2f90 2940 rust-wayland-scanner-0.29_0.29.5-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smithay/wayland-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-scanner-0.29]"
   ],
   "Version": [
-    "0.29.5-2"
+    "0.29.5-3"
   ]
 }

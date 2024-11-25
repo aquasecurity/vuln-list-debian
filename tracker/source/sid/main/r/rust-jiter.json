@@ -6,16 +6,16 @@
     "librust-jiter-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8+default-dev \u003c!nocheck\u003e, librust-bitvec-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-lexical-parse-float-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-lexical-parse-float-0.8+format-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-num-bigint-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.16-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8+default-dev \u003c!nocheck\u003e, librust-bitvec-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-lexical-parse-float-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-lexical-parse-float-0.8+format-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-num-bigint-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.16-~~) \u003c!nocheck\u003e, librust-pyo3-0.22+num-bigint-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "85fc613c57543b5a7b1231a86a69418cc291de45f6736ee8e414bb208eabcd0b 2871 rust-jiter_0.5.0-3.dsc 02e23549143ef50eddffd46ba8cd0229b0a4500aef7518cf2eb0f41c9a09d22b 141152 rust-jiter_0.5.0.orig.tar.gz 0ab0bcb26080a4be4009343db72b0337b3497c44bc216d556180326a7e965f6b 3224 rust-jiter_0.5.0-3.debian.tar.xz"
+    "2b2301bfaf4f894c2f43b2fed3e66ad10c639c29ca6fdb42fe41d1076a11fd19 2896 rust-jiter_0.7.1-1.dsc 07f69a121b68af57bc10f151f3f67444a64d1d3a0eb48b042801ea917a38dd25 143767 rust-jiter_0.7.1.orig.tar.gz 98ab688c9795c2db9e96e13f2b0bdb6b257f0918c72e1d2f81d26bcdbf1b5f3d 4532 rust-jiter_0.7.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jiter"
   ],
   "Files": [
-    "b8051c69b9b2efd47b7a1e03f17b3a13 2871 rust-jiter_0.5.0-3.dsc 9995dc5c77c308e58c2bfb2b93cc071f 141152 rust-jiter_0.5.0.orig.tar.gz 2e726852e2817776d09aa7a00d89a64b 3224 rust-jiter_0.5.0-3.debian.tar.xz"
+    "b06bc0a79cc5a37b78ae02a9931eb57f 2896 rust-jiter_0.7.1-1.dsc 8b405c3f1cf19cbc0e890f6d0896fa8c 143767 rust-jiter_0.7.1.orig.tar.gz 0647e85fbe747235439baeb3b16d5651 4532 rust-jiter_0.7.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-paste-1+default-dev, librust-pyo3-0.22+auto-initialize-dev, librust-pyo3-0.22+default-dev, librust-pyo3-0.22+num-bigint-dev, librust-serde-1+default-dev, librust-serde-json-1+arbitrary-precision-dev, librust-serde-json-1+default-dev, librust-serde-json-1+float-roundtrip-dev, librust-serde-json-1+preserve-order-dev"
+    "dh-cargo, librust-paste-1+default-dev, librust-pyo3-0.22+auto-initialize-dev, librust-pyo3-0.22+default-dev, librust-serde-1+default-dev, librust-serde-json-1+arbitrary-precision-dev, librust-serde-json-1+default-dev, librust-serde-json-1+float-roundtrip-dev, librust-serde-json-1+preserve-order-dev, rustc"
   ],
   "Uploaders": [
     "Colin Watson \u003ccjwatson@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jiter]"
   ],
   "Version": [
-    "0.5.0-3"
+    "0.7.1-1"
   ]
 }

@@ -6,16 +6,16 @@
     "librust-regex-syntax-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "efabdcb4698f66adb30bf82c87bebc95b52e4237e34b4a49751ed410c3ef41b2 2279 rust-regex-syntax_0.8.2-1.dsc ef7cd035b1ec748c16b3827024af5e3083671cc03e34e49410dbf8128a39899d 346823 rust-regex-syntax_0.8.2.orig.tar.gz ea324c151c249115ac509b0662f021fde72b5e4c3800fbd5613b2d860fd9b580 4364 rust-regex-syntax_0.8.2-1.debian.tar.xz"
+    "8eb84d33a84041bb0b21b3de8afb24ba1310a8bebab2d8452afe43dba4269155 2274 rust-regex-syntax_0.8.5-1.dsc a2f15dee26d2376c65b5d90ba8289ac685df876df4b4ab0968f4d9287861d2f6 357304 rust-regex-syntax_0.8.5.orig.tar.gz e91be4261db59d435539bbfc47911f69ddb6391a1700c78506a3b3bef266f7ef 4656 rust-regex-syntax_0.8.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-regex-syntax"
   ],
   "Files": [
-    "0f290b9493639ec80c3aeac98c8264cc 2279 rust-regex-syntax_0.8.2-1.dsc f31a991549e8c4fb8b0efab42568013d 346823 rust-regex-syntax_0.8.2.orig.tar.gz 91b0ec28741e1a7ec5361cfe1f6fc1af 4364 rust-regex-syntax_0.8.2-1.debian.tar.xz"
+    "d27bcc7b6e0933d60525f50318cf6cf5 2274 rust-regex-syntax_0.8.5-1.dsc f9f17e15f3779462a51abe1178a0d539 357304 rust-regex-syntax_0.8.5.orig.tar.gz 764e558980a54654f1816f7da1c45ce2 4656 rust-regex-syntax_0.8.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/regex-syntax]"
   ],
   "Version": [
-    "0.8.2-1"
+    "0.8.5-1"
   ]
 }

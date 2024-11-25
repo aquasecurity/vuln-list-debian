@@ -6,16 +6,16 @@
     "librust-rust-embed-utils-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-sha2-0.10+default-dev (\u003e= 0.10.5-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-sha2-0.10+default-dev (\u003e= 0.10.5-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "287ef319c20024d6f0909246d75f8fca243278399b0b239082650f6eafe3d111 2327 rust-rust-embed-utils_8.2.0-1.dsc 8cb0a25bfbb2d4b4402179c2cf030387d9990857ce08a32592c6238db9fa8665 3397 rust-rust-embed-utils_8.2.0.orig.tar.gz 4e4e8d0cf59168a9b65d543fa0de178465c850e0c9db279591d7c7935e7ed93d 2884 rust-rust-embed-utils_8.2.0-1.debian.tar.xz"
+    "a4c4690faed425c5448d1a65a77683cd30eaabaf4e6db2ffa8d2c4642eb9cc8e 1736 rust-rust-embed-utils_8.5.0-1.dsc 2e5347777e9aacb56039b0e1f28785929a8a3b709e87482e7442c72e7c12529d 3445 rust-rust-embed-utils_8.5.0.orig.tar.gz 29cdf960f58fe07d2982fc05890724f2ba9592708f9701ff21f499467728c0b9 2900 rust-rust-embed-utils_8.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rust-embed-utils"
   ],
   "Files": [
-    "3d2eec3cb06a4336afeb57301692e95e 2327 rust-rust-embed-utils_8.2.0-1.dsc 98ecbef2d441e9982ed703633356acbd 3397 rust-rust-embed-utils_8.2.0.orig.tar.gz 31898373aadee6f962f21de9322d2911 2884 rust-rust-embed-utils_8.2.0-1.debian.tar.xz"
+    "f9ded427b3a1dab8dc5538aebec30eb9 1736 rust-rust-embed-utils_8.5.0-1.dsc 88e55dda1cd8bc9712d87dc0d7c5ff65 3445 rust-rust-embed-utils_8.5.0.orig.tar.gz 983f2dc52afa5248ac9a3f14930b96d3 2900 rust-rust-embed-utils_8.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rust-embed-utils]"
   ],
   "Version": [
-    "8.2.0-1"
+    "8.5.0-1"
   ]
 }

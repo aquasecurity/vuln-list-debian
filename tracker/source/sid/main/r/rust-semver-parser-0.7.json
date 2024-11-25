@@ -6,16 +6,16 @@
     "librust-semver-parser-0.7-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 10), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a19139f5ffd69a69f4cfa95cfec5a013472afc735097d7328fbe689754735c30 2202 rust-semver-parser-0.7_0.7.0-1.dsc a5fad28a3cc072dc1da595ec723754b7275c40573664499c47b7c11bc21f4b24 10583 rust-semver-parser-0.7_0.7.0.orig.tar.gz 0e0b155b841617df8420da04380afeb6440249e2c4cb0a72de719bc57df32b38 2400 rust-semver-parser-0.7_0.7.0-1.debian.tar.xz"
+    "696110404b14e8d80da39370340b8bbbe7c9c02dfb07ae0941e1ad7c02857ebe 2313 rust-semver-parser-0.7_0.7.0-2.dsc a5fad28a3cc072dc1da595ec723754b7275c40573664499c47b7c11bc21f4b24 10583 rust-semver-parser-0.7_0.7.0.orig.tar.gz cf4a5fec5e1a1589c63344efd7042a831ef653097bba2e1f82bfa65306c0f5b9 2688 rust-semver-parser-0.7_0.7.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-semver-parser-0.7"
   ],
   "Files": [
-    "265157cca2bb15e542263c5db1c07a87 2202 rust-semver-parser-0.7_0.7.0-1.dsc e146e4e019013efc6664483789d2ac98 10583 rust-semver-parser-0.7_0.7.0.orig.tar.gz 85c67f54c1c165282034b2fe68e1dbe9 2400 rust-semver-parser-0.7_0.7.0-1.debian.tar.xz"
+    "26626483d575e136dc0691a258dea96d 2313 rust-semver-parser-0.7_0.7.0-2.dsc e146e4e019013efc6664483789d2ac98 10583 rust-semver-parser-0.7_0.7.0.orig.tar.gz b06a02b8aa0905321dfe78b356ee3d20 2688 rust-semver-parser-0.7_0.7.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/semver-parser-0.7]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.7.0-2"
   ]
 }

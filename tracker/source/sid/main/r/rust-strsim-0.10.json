@@ -6,16 +6,16 @@
     "librust-strsim-0.10-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b7c684a3d7b41c858b78d97221e2d8069e868b873da03fe50a8e918cd74d5d54 1700 rust-strsim-0.10_0.10.0-3.dsc 73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623 11355 rust-strsim-0.10_0.10.0.orig.tar.gz 1f645a6aef58e472ecbf431bee79908d3f29c33eedb5b10c10c757fd16214704 3076 rust-strsim-0.10_0.10.0-3.debian.tar.xz"
+    "8fad57c67c078cb9e35633711521c2905760bc0d147703e48ee53fbcff8df5a0 2266 rust-strsim-0.10_0.10.0-4.dsc 73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623 11355 rust-strsim-0.10_0.10.0.orig.tar.gz b4618954cdee560f90529fafa7215a3f9ce8cb371ecfa8894507d204da61ac62 3132 rust-strsim-0.10_0.10.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-strsim-0.10"
   ],
   "Files": [
-    "a58612d26e02b6e3652ec04033aa9eae 1700 rust-strsim-0.10_0.10.0-3.dsc 82d98dc87dc8503400aa095f5aa70f13 11355 rust-strsim-0.10_0.10.0.orig.tar.gz 2e1a6a61fb13e704ff46aa2a39b3e958 3076 rust-strsim-0.10_0.10.0-3.debian.tar.xz"
+    "f805da1999d56b8ef54a8bbed321ce1c 2266 rust-strsim-0.10_0.10.0-4.dsc 82d98dc87dc8503400aa095f5aa70f13 11355 rust-strsim-0.10_0.10.0.orig.tar.gz 6ad3e467344d715ca3fa4c0207ffe728 3132 rust-strsim-0.10_0.10.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/strsim-0.10]"
   ],
   "Version": [
-    "0.10.0-3"
+    "0.10.0-4"
   ]
 }
