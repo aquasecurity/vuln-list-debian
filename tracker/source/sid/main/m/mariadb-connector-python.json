@@ -6,16 +6,16 @@
     "python3-mariadb-connector"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-setuptools-scm, pybuild-plugin-pyproject, libpython3-dev, libpython3-all-dev, libpython3.13-dev, mariadb-server, libmariadb-dev"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-all-dev:native, libpython3-all-dev, python3-setuptools, python3-setuptools-scm, pybuild-plugin-pyproject, mariadb-server \u003c!nocheck\u003e, libmariadb-dev"
   ],
   "Checksums-Sha256": [
-    "71e29de21826893338f6f5086ff1145a282592cbb5b1cf36375a42ed8571ddc2 2317 mariadb-connector-python_1.1.10-2.dsc 190f0a710ce87a74f6a63fa19cc354d5f1921c09294182c8e487c27a5a040ef4 109281 mariadb-connector-python_1.1.10.orig.tar.gz 2019a90e08bfc5443f6cc44c673ca8b76fa6eead0daa5b1e8d3be2dff8be54c1 3260 mariadb-connector-python_1.1.10-2.debian.tar.xz"
+    "5db6f1bea76b6444e423ba8a343089eca072e1090f8c3365a15163da97481ffc 2376 mariadb-connector-python_1.1.11-1.dsc 4a62a471608e2415dd3c5989e8d9608127631f931ce13fe2b8036fd8f1476f2d 111084 mariadb-connector-python_1.1.11.orig.tar.gz 8627091f691002ba769025003178fd45b16fdadc5758dcd0a245c881db97f06b 4988 mariadb-connector-python_1.1.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mariadb-connector-python"
   ],
   "Files": [
-    "40280ae1b61a4db9b03361f899f3cdf8 2317 mariadb-connector-python_1.1.10-2.dsc ef082b24eccbe2146b2d2ec8e3cae365 109281 mariadb-connector-python_1.1.10.orig.tar.gz ea6061116df69ba1306bdf1fd47cb630 3260 mariadb-connector-python_1.1.10-2.debian.tar.xz"
+    "70d6f904e86182bcdf5d248a4ad02695 2376 mariadb-connector-python_1.1.11-1.dsc f224de553fcb1d1f24dd6bb07bcf5399 111084 mariadb-connector-python_1.1.11.orig.tar.gz ff9eaf9e234610d711dd3426e4f2e3be 4988 mariadb-connector-python_1.1.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,9 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Mechtilde Stehmann \u003cmechtilde@debian.org\u003e"
   ],
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/mariadb-connector-python.git"
   ],
   "Version": [
-    "1.1.10-2"
+    "1.1.11-1"
   ]
 }
