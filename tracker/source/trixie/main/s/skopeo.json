@@ -9,19 +9,19 @@
     "golang-github-dnephin-cobra-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11~), dh-golang, go-md2man, golang-any, golang-github-containers-common-dev (\u003e\u003e 0.49.1), golang-github-containers-image-dev (\u003e\u003e 5.28.0-3~), golang-github-containers-storage-dev (\u003e\u003e 1.42), golang-github-docker-docker-dev (\u003e\u003e 20.10), golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-image-spec-dev, golang-github-pkg-errors-dev, golang-github-sigstore-sigstore-dev, golang-github-sirupsen-logrus-dev, golang-github-spf13-cobra-dev (\u003e\u003e 1.2.1), golang-github-stretchr-testify-dev, golang-github-urfave-cli-dev, golang-gopkg-check.v1-dev"
+    "debhelper (\u003e= 11~), dh-golang, go-md2man, golang-any, golang-github-containers-common-dev (\u003e\u003e 0.49.1), golang-github-containers-image-dev (\u003e\u003e 5.28.0-3~), golang-github-containers-storage-dev (\u003e\u003e 1.42), golang-github-docker-docker-dev (\u003e\u003e 20.10), golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-image-spec-dev, golang-github-pkg-errors-dev, golang-github-sigstore-sigstore-dev, golang-github-sirupsen-logrus-dev, golang-github-spf13-cobra-dev (\u003e\u003e 1.2.1), golang-github-stretchr-testify-dev, golang-github-urfave-cli-dev, golang-gopkg-check.v1-dev, gpg"
   ],
   "Checksums-Sha256": [
-    "4357975015fc239767e8ee8ad42e8f6b7032c99cb74da1d21392f653cd687cf6 2761 skopeo_1.16.1+ds1-1.dsc b3969685f697d01eab37bf0d5584dc4e6bd804acd65a4a37ac02afa70fff14a6 882880 skopeo_1.16.1+ds1.orig.tar.xz 48373827b6a2ca3eedc72111d074a6f02933dbf22092d5cab80af720ce63f84a 4236 skopeo_1.16.1+ds1-1.debian.tar.xz"
+    "e366b884a755f79df0330d9f5e79fab34213fb0b1e031a43fbc6317ebae46933 2888 skopeo_1.17.0+ds1-1.dsc 2a5974c55f8d7393685da6b8e4c067e405740d3ef4a937b0a1873d63c011d9ca 883804 skopeo_1.17.0+ds1.orig.tar.xz 99935cbda1a970bb6d7cdd9e3740cccc3dfa53d4e6bed776a280fa705f3275ad 4472 skopeo_1.17.0+ds1-1.debian.tar.xz"
   ],
   "Dgit": [
-    "cd4f7d0d5d3ecae88c2545ab9c12c43df985927d debian archive/debian/1.16.1+ds1-1 https://git.dgit.debian.org/skopeo"
+    "3f256f6dd44d565db25bb402ed372f91abc52ef0 debian archive/debian/1.17.0+ds1-1 https://git.dgit.debian.org/skopeo"
   ],
   "Directory": [
     "pool/main/s/skopeo"
   ],
   "Files": [
-    "d1221ddccca6ba401d71a33ed76f6e8a 2761 skopeo_1.16.1+ds1-1.dsc b53ef38071e933eac6013826cba71783 882880 skopeo_1.16.1+ds1.orig.tar.xz c628e055a7f23615601e9776d7ea7bc3 4236 skopeo_1.16.1+ds1-1.debian.tar.xz"
+    "964cd35fcd51acfd34bc3fadd83d883d 2888 skopeo_1.17.0+ds1-1.dsc 4059e7698a422633269bec2aa42e6f14 883804 skopeo_1.17.0+ds1.orig.tar.xz 5863b86c7fc5b7a5b32c8104599a1486 4472 skopeo_1.17.0+ds1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -53,6 +53,9 @@
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-go"
   ],
+  "Testsuite-Triggers": [
+    "apache2-utils, bats, ca-certificates, fuse-overlayfs, golang-any, gpg, gpg-agent, jq, openssl, podman"
+  ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
   ],
@@ -63,6 +66,6 @@
     "https://salsa.debian.org/go-team/packages/skopeo.git"
   ],
   "Version": [
-    "1.16.1+ds1-1"
+    "1.17.0+ds1-1"
   ]
 }
