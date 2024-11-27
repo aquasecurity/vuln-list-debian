@@ -6,16 +6,16 @@
     "librust-rle-decode-fast-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2ca9b4d702fee99960b860c7838a9373d263023a82f392cb4c030922aabc55f4 1796 rust-rle-decode-fast_1.0.1-3.dsc cb0dcc3a192368397a809a17c3814055704f7a58ba7849f80c0d463cfc793033 62500 rust-rle-decode-fast_1.0.1.orig.tar.gz 924c4b3d08a8720c615af7ee36c6ce16288dc34f38c8efe5760d3868c53cb6f3 2860 rust-rle-decode-fast_1.0.1-3.debian.tar.xz"
+    "2c9203f6ae6d1f3686d61bab5bc7da97070ddf952a6348f3661a282fddac322c 1602 rust-rle-decode-fast_1.0.3-1.dsc 3582f63211428f83597b51b2ddb88e2a91a9d52d12831f9d08f5e624e8977422 62086 rust-rle-decode-fast_1.0.3.orig.tar.gz 30cc78b869ac2dc3003706199dd3b59a79a01cd3ce8b81c4502d192b1410e805 3152 rust-rle-decode-fast_1.0.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rle-decode-fast"
   ],
   "Files": [
-    "d4183fdff741836126e14eaa4fccfc2b 1796 rust-rle-decode-fast_1.0.1-3.dsc 509a9926ec47dd1142fc6e6949ec04bd 62500 rust-rle-decode-fast_1.0.1.orig.tar.gz bdb1bb5c66522c4c2e54dd1bee49487d 2860 rust-rle-decode-fast_1.0.1-3.debian.tar.xz"
+    "578b903b9ff18f2b96d7793ba03429ae 1602 rust-rle-decode-fast_1.0.3-1.dsc 836969c6cd8387b8937800288ebe8e91 62086 rust-rle-decode-fast_1.0.3.orig.tar.gz 0d4b60fb0e8e0542ccaf9672558f5275 3152 rust-rle-decode-fast_1.0.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rle-decode-fast]"
   ],
   "Version": [
-    "1.0.1-3"
+    "1.0.3-1"
   ]
 }
