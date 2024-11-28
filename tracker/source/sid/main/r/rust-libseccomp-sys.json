@@ -6,19 +6,22 @@
     "librust-libseccomp-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libseccomp-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libseccomp-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5321fa4591189c583541d71dac9acac0e4b9c80b06563a8b195d4999bdb5f943 1902 rust-libseccomp-sys_0.2.1-1.dsc 9a7cbbd4ad467251987c6e5b47d53b11a5a05add08f2447a9e2d70aef1e0d138 11601 rust-libseccomp-sys_0.2.1.orig.tar.gz fe93aef0526841728ff472162dae53b100a64fd2e1455279395a926e089dc5dd 2640 rust-libseccomp-sys_0.2.1-1.debian.tar.xz"
+    "e11e549ce272bccb889d743d05311310b37dcec123a0a33cdeca3422802d0509 2343 rust-libseccomp-sys_0.2.1-2.dsc 9a7cbbd4ad467251987c6e5b47d53b11a5a05add08f2447a9e2d70aef1e0d138 11601 rust-libseccomp-sys_0.2.1.orig.tar.gz 17de0fd78de0113310cb0e45066a4db92fe4b5a41cd42a4fd406eab350ab723e 2980 rust-libseccomp-sys_0.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libseccomp-sys"
   ],
   "Files": [
-    "ddc4008b9199e19a538a4b89d341c6be 1902 rust-libseccomp-sys_0.2.1-1.dsc 4f78376b1378deff1d33ea248cfab29b 11601 rust-libseccomp-sys_0.2.1.orig.tar.gz 71371b1a4395209599ae157949784636 2640 rust-libseccomp-sys_0.2.1-1.debian.tar.xz"
+    "1be753127f34731a812382c5d2f249c6 2343 rust-libseccomp-sys_0.2.1-2.dsc 4f78376b1378deff1d33ea248cfab29b 11601 rust-libseccomp-sys_0.2.1.orig.tar.gz cde7da286f47ccd09c81f8058e4673ee 2980 rust-libseccomp-sys_0.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/libseccomp-rs/libseccomp-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libseccomp-sys]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.1-2"
   ]
 }

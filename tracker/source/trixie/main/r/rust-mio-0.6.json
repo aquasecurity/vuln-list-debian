@@ -6,16 +6,16 @@
     "librust-mio-0.6-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-0.1+default-dev (\u003e= 0.1.9-~~) \u003c!nocheck\u003e, librust-fuchsia-zircon-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e, librust-fuchsia-zircon-sys-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e, librust-iovec-0.1+default-dev (\u003e= 0.1.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.54-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-miow-0.3+default-dev \u003c!nocheck\u003e, librust-net2-0.2+default-dev (\u003e= 0.2.36-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-0.1+default-dev (\u003e= 0.1.9-~~) \u003c!nocheck\u003e, librust-fuchsia-zircon-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e, librust-fuchsia-zircon-sys-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e, librust-iovec-0.1+default-dev (\u003e= 0.1.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.54-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-miow-0.3+default-dev \u003c!nocheck\u003e, librust-net2-0.2+default-dev (\u003e= 0.2.36-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "43b1e54817cbd8b28f646a28b6b7430cd84698155b7bc555219e643cd1d4d289 2714 rust-mio-0.6_0.6.23-4.dsc 4afd66f5b91bf2a3bc13fad0e21caedac168ca4c707504e75585648ae80e4cc4 103554 rust-mio-0.6_0.6.23.orig.tar.gz d5fd8fdb87f26abaa0d4f540568fda30568bfa42d48e8cd40400785b94a007cb 4232 rust-mio-0.6_0.6.23-4.debian.tar.xz"
+    "5200df5db32ad45432539e96c75e7b9024eaa2b833e1777e976b69406c9df019 2744 rust-mio-0.6_0.6.23-5.dsc 4afd66f5b91bf2a3bc13fad0e21caedac168ca4c707504e75585648ae80e4cc4 103554 rust-mio-0.6_0.6.23.orig.tar.gz 5772069b20c98267d53223edb1d11be1de964fd863e854d594bd4b0957a4a45b 4212 rust-mio-0.6_0.6.23-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-mio-0.6"
   ],
   "Files": [
-    "5e64b42fd5b75c6ace0827cdccf89067 2714 rust-mio-0.6_0.6.23-4.dsc 257e573f323c639630b31f147671b627 103554 rust-mio-0.6_0.6.23.orig.tar.gz c64fdc533b45bd1e0a27d6a3c58fb645 4232 rust-mio-0.6_0.6.23-4.debian.tar.xz"
+    "6b533bc707decf1c27827963f7eb846b 2744 rust-mio-0.6_0.6.23-5.dsc 257e573f323c639630b31f147671b627 103554 rust-mio-0.6_0.6.23.orig.tar.gz c660a01e4e04215e1562c00fbe6fa93f 4212 rust-mio-0.6_0.6.23-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/mio-0.6]"
   ],
   "Version": [
-    "0.6.23-4"
+    "0.6.23-5"
   ]
 }
