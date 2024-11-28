@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-linktree, dh-sequence-pkgkde-symbolshelper, fonts-urw-base35, freeglut3-dev, libcups2-dev [!kfreebsd-any], libcupsimage2-dev [!kfreebsd-any], libexpat-dev, libfontconfig-dev, libfreetype-dev, libice-dev, libidn-dev, libijs-dev, libjbig2dec0-dev (\u003e= 0.19), libjpeg-dev, liblcms2-dev, libopenjp2-7-dev, libpaper-dev, libpng-dev, libsm-dev, libtiff-dev, libx11-dev, libxext-dev, libxt-dev, pkgconf, rename, zlib1g-dev:native"
   ],
   "Build-Depends-Indep": [
-    "python3-sphinx, python3-sphinx-rtd-theme, python3-sphinx-copybutton, rst2pdf"
+    "python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, rst2pdf \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "e70b3239f862a9c71c94004810b8dbe0f53f94f89581e35a3aa856ff7af554ea 2817 ghostscript_10.04.0~dfsg-1.dsc 7ceed73ec73179acd192c1b4513673bc529fd083b705735a73466824c220004e 30067180 ghostscript_10.04.0~dfsg.orig.tar.xz 80349c567265f0b21aeb16c912ce57798b2693a37f25ab0f1cf2186bd01fcb5f 84216 ghostscript_10.04.0~dfsg-1.debian.tar.xz"
+    "6e8eadf48582e91bad446ba0e7044867862f46097dea55c9cd694903a6f6db9a 2868 ghostscript_10.04.0~dfsg-2.dsc 7ceed73ec73179acd192c1b4513673bc529fd083b705735a73466824c220004e 30067180 ghostscript_10.04.0~dfsg.orig.tar.xz d4eaca41d431f2e9742f0ff4c76611567b7513c12a8cf84408ba9fa5f41b5760 84516 ghostscript_10.04.0~dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/ghostscript"
   ],
   "Files": [
-    "381d9dd657a5009a3441037b8dabd6b2 2817 ghostscript_10.04.0~dfsg-1.dsc 9ab539f08a6a0c8a4aa20f29e10714e6 30067180 ghostscript_10.04.0~dfsg.orig.tar.xz 82563871d43f27c30f54ecdcb7bb8f00 84216 ghostscript_10.04.0~dfsg-1.debian.tar.xz"
+    "cfdf600ffb83642f5570aa5dba6cecc7 2868 ghostscript_10.04.0~dfsg-2.dsc 9ab539f08a6a0c8a4aa20f29e10714e6 30067180 ghostscript_10.04.0~dfsg.orig.tar.xz 0458c0396571b7c760ef93ba5850edb6 84516 ghostscript_10.04.0~dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "ghostscript"
   ],
   "Package-List": [
-    "ghostscript deb text optional arch=any ghostscript-doc deb doc optional arch=all libgs-common deb libs optional arch=all libgs-dev deb libdevel optional arch=any libgs10 deb libs optional arch=any libgs10-common deb libs optional arch=all"
+    "ghostscript deb text optional arch=any ghostscript-doc deb doc optional arch=all profile=!nodoc libgs-common deb libs optional arch=all libgs-dev deb libdevel optional arch=any libgs10 deb libs optional arch=any libgs10-common deb libs optional arch=all"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/ghostscript.git"
   ],
   "Version": [
-    "10.04.0~dfsg-1"
+    "10.04.0~dfsg-2"
   ]
 }
