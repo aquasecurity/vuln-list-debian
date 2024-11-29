@@ -6,16 +6,16 @@
     "librust-asahi-bless-dev, asahi-bless"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-apple-nvram-0.3+default-dev, librust-clap-4+default-dev (\u003e= 4.4.11-~~), librust-clap-4+derive-dev (\u003e= 4.4.11-~~), librust-gpt-3+default-dev, librust-uuid-1+default-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native, libstd-rust-dev, librust-apple-nvram-0.3+default-dev, librust-clap-4+default-dev (\u003e= 4.4.11-~~), librust-clap-4+derive-dev (\u003e= 4.4.11-~~), librust-gpt-3+default-dev, librust-uuid-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "308de4989a3708183eb8d3837b7f5e5b90bc01bc5a8f2a567caafd13ce5ce307 2414 rust-asahi-bless_0.4.0-2.dsc 462b94cdb29dc7061e59d779d906e56aad07bf976e2355f7d7d9fcd42e88dd2d 10924 rust-asahi-bless_0.4.0.orig.tar.gz 91d0573afd3cdc31a8c1f60b93cabedaad7eef17186238fe356b5e7f0267f6c3 2900 rust-asahi-bless_0.4.0-2.debian.tar.xz"
+    "b7674074735f7d350b84115e1c3c703ec838b13b68cf5ccebcba4ef39f88303c 2428 rust-asahi-bless_0.4.1-1.dsc 39ed2e55d8e74c93c06fabd674b61e09555c6d341910b8553a5dac1a0d8ec6d1 11186 rust-asahi-bless_0.4.1.orig.tar.gz 4f0d78f4af35a7102f869b92d0182bf21b48e44e3bf06ec9060eb0d552f22cd8 2924 rust-asahi-bless_0.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-asahi-bless"
   ],
   "Files": [
-    "36671e63534be16314c69eb5ad78fbea 2414 rust-asahi-bless_0.4.0-2.dsc cae06e3c8f120793168fcac66211ccee 10924 rust-asahi-bless_0.4.0.orig.tar.gz 500db9144df1a9bea77d4a563314c308 2900 rust-asahi-bless_0.4.0-2.debian.tar.xz"
+    "07ece9ba7c990c8976f954030cee8a56 2428 rust-asahi-bless_0.4.1-1.dsc ef2d3a2bfa7d53a7b3d9bb3d0fc09b9f 11186 rust-asahi-bless_0.4.1.orig.tar.gz 99b8c06a5d510148888e887feb85d56e 2924 rust-asahi-bless_0.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andreas Henriksson \u003candreas@fatal.se\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/asahi-bless]"
   ],
   "Version": [
-    "0.4.0-2"
+    "0.4.1-1"
   ]
 }

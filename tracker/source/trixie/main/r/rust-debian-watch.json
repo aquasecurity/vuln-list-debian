@@ -6,16 +6,16 @@
     "librust-debian-watch-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.3-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0.4+default-dev \u003c!nocheck\u003e, librust-rowan-0.15+default-dev (\u003e= 0.15.11-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.3-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0.4+default-dev \u003c!nocheck\u003e, librust-rowan-0.16+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d589978d3f98a53d11bf759f59eb8a69f79ef7fa7cdd9cb9817e7e0a4f593ee2 2108 rust-debian-watch_0.2.7-2.dsc 506bd868882fe7b6d5dbaaeb001174aa01fb267563f019ceaa6f31a8b6e9639f 10200 rust-debian-watch_0.2.7.orig.tar.gz 508cc8223363bacac40e0f914d649ddf8541a89756807e02dd41a46fe78fb155 2016 rust-debian-watch_0.2.7-2.debian.tar.xz"
+    "d4bf6f41ec5dd3781bf959566bf8d5820b698ca1b1d9a55040c84355083521c4 2116 rust-debian-watch_0.2.8-1.dsc f692668701f5382bea79960cad4798f97689de3e22af638ee43552887c180f4f 12507 rust-debian-watch_0.2.8.orig.tar.gz 5633d8eaf4385a267e74f8205171f7d3ce0e5f1d0924f1988039cfb3a9a1ad85 2152 rust-debian-watch_0.2.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-debian-watch"
   ],
   "Files": [
-    "e2a54e6cdb757a406c2ae4fe21bc6bba 2108 rust-debian-watch_0.2.7-2.dsc a7b4d434eca26fe36deb2012970acc55 10200 rust-debian-watch_0.2.7.orig.tar.gz 9e1feee77888282dceef3d0e1445e613 2016 rust-debian-watch_0.2.7-2.debian.tar.xz"
+    "0ad5fbbaaea05a3b190b5fea62f17f9a 2116 rust-debian-watch_0.2.8-1.dsc a971e9354114168daf54440b0ed7ca36 12507 rust-debian-watch_0.2.8.orig.tar.gz e4bc0fe68048a9461516b174d2b197cf 2152 rust-debian-watch_0.2.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-maplit-1+default-dev"
+    "dh-cargo, librust-maplit-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/debian-watch]"
   ],
   "Version": [
-    "0.2.7-2"
+    "0.2.8-1"
   ]
 }
