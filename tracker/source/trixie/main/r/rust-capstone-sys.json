@@ -6,16 +6,16 @@
     "librust-capstone-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.59-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.59-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5dc6eee94dce1623e5992a476050317ba50dcd515436b8a4a5ddd4e889eaf966 2288 rust-capstone-sys_0.15.0-2.dsc ccf2d9506dcd6cc2da58d9932905a267605a0849b8d06298cb789521cd0263b1 4596487 rust-capstone-sys_0.15.0.orig.tar.gz 4b0c492d2086e98d59dcc7b01b06cfacc488a870693899c1cec8990e61ae3acf 4684 rust-capstone-sys_0.15.0-2.debian.tar.xz"
+    "b53b535a0f3fdaed9c6dd5b25fa4580010a4fc4eb15ae0fd9287c7f15d07095f 2305 rust-capstone-sys_0.15.0-3.dsc ccf2d9506dcd6cc2da58d9932905a267605a0849b8d06298cb789521cd0263b1 4596487 rust-capstone-sys_0.15.0.orig.tar.gz 183c54a307beb058f887b3278853e6953f40fc5a7e8e0c5be9de615644baa6e2 4676 rust-capstone-sys_0.15.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-capstone-sys"
   ],
   "Files": [
-    "6df2fbcb2ed66b711caa326fb62e3e3c 2288 rust-capstone-sys_0.15.0-2.dsc bf70b5c5008d13934164145e48d0d766 4596487 rust-capstone-sys_0.15.0.orig.tar.gz 34d0f3b2afcab0de897798cc632348aa 4684 rust-capstone-sys_0.15.0-2.debian.tar.xz"
+    "f554123735ab9437476861c8beb61698 2305 rust-capstone-sys_0.15.0-3.dsc bf70b5c5008d13934164145e48d0d766 4596487 rust-capstone-sys_0.15.0.orig.tar.gz f876861b37125d70830bc32d0113adfb 4676 rust-capstone-sys_0.15.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/capstone-sys]"
   ],
   "Version": [
-    "0.15.0-2"
+    "0.15.0-3"
   ]
 }

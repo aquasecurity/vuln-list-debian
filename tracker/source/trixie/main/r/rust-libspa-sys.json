@@ -6,16 +6,16 @@
     "librust-libspa-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.66+experimental-dev \u003c!nocheck\u003e, librust-bindgen-0.66+runtime-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libpipewire-0.3-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.70+experimental-dev \u003c!nocheck\u003e, librust-bindgen-0.70+runtime-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libpipewire-0.3-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6049fb3a6ee3443a9e10161de377512911c43752ed745d5fa60970a89a6719ba 2378 rust-libspa-sys_0.8.0-4.dsc bf0d9716420364790e85cbb9d3ac2c950bde16a7dd36f3209b7dfdfc4a24d01f 5248 rust-libspa-sys_0.8.0.orig.tar.gz d15461453ed67373c354ee5441419978ef2b20fa741649fa1b2692bbdb3691b4 3816 rust-libspa-sys_0.8.0-4.debian.tar.xz"
+    "d57f17e640aec6edc40447f093b5ecb1d5e3afe12f723b643657946a434dab79 2421 rust-libspa-sys_0.8.0-5.dsc bf0d9716420364790e85cbb9d3ac2c950bde16a7dd36f3209b7dfdfc4a24d01f 5248 rust-libspa-sys_0.8.0.orig.tar.gz f98f2f78eeb201eebee12636d2f5ae5918e74f5f8c461a68941c73644a036c2b 3652 rust-libspa-sys_0.8.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libspa-sys"
   ],
   "Files": [
-    "6558486f8563c45df09452e1dc998283 2378 rust-libspa-sys_0.8.0-4.dsc 1681a89ed90e1f7edf0a970564abd51d 5248 rust-libspa-sys_0.8.0.orig.tar.gz e023db1f300d0207529f37aa7f70c2d7 3816 rust-libspa-sys_0.8.0-4.debian.tar.xz"
+    "66fcc06922c5792f4ad75e3837763624 2421 rust-libspa-sys_0.8.0-5.dsc 1681a89ed90e1f7edf0a970564abd51d 5248 rust-libspa-sys_0.8.0.orig.tar.gz 2823c87c45bab60af52bfb4c5c273f4b 3652 rust-libspa-sys_0.8.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libspa-sys]"
   ],
   "Version": [
-    "0.8.0-4"
+    "0.8.0-5"
   ]
 }

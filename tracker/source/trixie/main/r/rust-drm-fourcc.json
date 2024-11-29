@@ -6,16 +6,16 @@
     "librust-drm-fourcc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "91f81b1ca2923e6eb76a3f53e3ee0d5d76dce12510fe175e9b328f23019dd79b 2139 rust-drm-fourcc_2.2.0-1.dsc 0aafbcdb8afc29c1a7ee5fbe53b5d62f4565b35a042a662ca9fecd0b54dae6f4 12192 rust-drm-fourcc_2.2.0.orig.tar.gz c9265f97f7bd69ccc5774c5c688d5c711e37425d4c5452b6d2be8e15f2a65a16 3048 rust-drm-fourcc_2.2.0-1.debian.tar.xz"
+    "2407ef5fa03039d10d572a7137c48fa5ba43c7246da6458298c6724f39b0bc58 2182 rust-drm-fourcc_2.2.0-2.dsc 0aafbcdb8afc29c1a7ee5fbe53b5d62f4565b35a042a662ca9fecd0b54dae6f4 12192 rust-drm-fourcc_2.2.0.orig.tar.gz 66242e83219162e223aeead9fd8e82fc356a55558a5fb357a0383c30c5e975ab 3120 rust-drm-fourcc_2.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-drm-fourcc"
   ],
   "Files": [
-    "500615c62d13d86c9f20946774b1bb7b 2139 rust-drm-fourcc_2.2.0-1.dsc e1ae31d06599fcf4fe9dedf0def700ef 12192 rust-drm-fourcc_2.2.0.orig.tar.gz a503bfff8fd40188180a5b693bde1139 3048 rust-drm-fourcc_2.2.0-1.debian.tar.xz"
+    "84a88f9e94f311c124a6177cedcf3e08 2182 rust-drm-fourcc_2.2.0-2.dsc e1ae31d06599fcf4fe9dedf0def700ef 12192 rust-drm-fourcc_2.2.0.orig.tar.gz f0589468f20542782716f67a4606f7c3 3120 rust-drm-fourcc_2.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andreas Henriksson \u003candreas@fatal.se\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/drm-fourcc]"
   ],
   "Version": [
-    "2.2.0-1"
+    "2.2.0-2"
   ]
 }

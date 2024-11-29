@@ -6,16 +6,16 @@
     "librust-lmdb-master-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-doxygen-rs-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.155-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, liblmdb-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-doxygen-rs-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.155-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, liblmdb-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "03ed5c28613b41f884a1e9aa009bc55884226f4d7ba514085324e45cb4af7906 2456 rust-lmdb-master-sys_0.2.4-1.dsc 689e002c8f7f133de134fa986ee8ef11cef52728bfc596ff83173683c7e7af3a 20216 rust-lmdb-master-sys_0.2.4.orig.tar.gz d2642f75230cbfdeb805b18362b3cddd7fdff776a549a5ac3cb971a3300ae6cc 3744 rust-lmdb-master-sys_0.2.4-1.debian.tar.xz"
+    "1aaf9839047cc7028ecbdeae0435a72713ad9f8b0db0f5ed95af3f61c1f88f5e 2489 rust-lmdb-master-sys_0.2.4-2.dsc 689e002c8f7f133de134fa986ee8ef11cef52728bfc596ff83173683c7e7af3a 20216 rust-lmdb-master-sys_0.2.4.orig.tar.gz eec2b542be0786e2b3957f13bb4daf1c7883434f329d7f15ba4b7281db803992 4900 rust-lmdb-master-sys_0.2.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lmdb-master-sys"
   ],
   "Files": [
-    "76f98d4cd126e6c03d7829286652b00b 2456 rust-lmdb-master-sys_0.2.4-1.dsc eb8c4eb8eb3c3b55077fbb4edd7b755c 20216 rust-lmdb-master-sys_0.2.4.orig.tar.gz 24f4985a62fe2a3c8d7defd472e5248c 3744 rust-lmdb-master-sys_0.2.4-1.debian.tar.xz"
+    "b1a3f301e0286d3615a195788bcd8613 2489 rust-lmdb-master-sys_0.2.4-2.dsc eb8c4eb8eb3c3b55077fbb4edd7b755c 20216 rust-lmdb-master-sys_0.2.4.orig.tar.gz 94e44afbbdc78f3010a09c3ca3007fda 4900 rust-lmdb-master-sys_0.2.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cstr-0.2+default-dev, rustc"
+    "dh-cargo, librust-cstr-0.2+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lmdb-master-sys]"
   ],
   "Version": [
-    "0.2.4-1"
+    "0.2.4-2"
   ]
 }

@@ -6,16 +6,16 @@
     "librust-input-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libinput-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libinput-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e89a4b0e95c20aa8357c3865175d0db4e6384948376633de190094e35f5c8c59 1563 rust-input-sys_1.18.0-2.dsc bd4f5b4d1c00331c5245163aacfe5f20be75b564c7112d45893d4ae038119eb0 365567 rust-input-sys_1.18.0.orig.tar.gz aa9903667769cbb68e5e86af0a6d258f88623e36040466ec5e7d1b3d510ea2e5 3196 rust-input-sys_1.18.0-2.debian.tar.xz"
+    "f6ac29e1cb99b1046e4265ee1878a5b9e470932ff614f89bbfc6190bcc66d5bc 2211 rust-input-sys_1.18.0-3.dsc bd4f5b4d1c00331c5245163aacfe5f20be75b564c7112d45893d4ae038119eb0 365567 rust-input-sys_1.18.0.orig.tar.gz 8628f2ef92188cf4da224c0fd593d936059607884a91357d54acf9ad06e79c06 3252 rust-input-sys_1.18.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-input-sys"
   ],
   "Files": [
-    "08ab9500279d9300efeafee840dfbdf2 1563 rust-input-sys_1.18.0-2.dsc 389fd882b82693feda5271e01196e623 365567 rust-input-sys_1.18.0.orig.tar.gz cc22bf8c0752b118d4c4dfb92732ade6 3196 rust-input-sys_1.18.0-2.debian.tar.xz"
+    "d8a2537706667e590cf92848fead05ea 2211 rust-input-sys_1.18.0-3.dsc 389fd882b82693feda5271e01196e623 365567 rust-input-sys_1.18.0.orig.tar.gz ac73f1e65f27001c38b0b7bba465d2ec 3252 rust-input-sys_1.18.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Maytham Alsudany \u003cmaytha8thedev@gmail.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/input-sys]"
   ],
   "Version": [
-    "1.18.0-2"
+    "1.18.0-3"
   ]
 }

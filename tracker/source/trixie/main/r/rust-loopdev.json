@@ -6,16 +6,16 @@
     "librust-loopdev-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.66+runtime-dev \u003c!nocheck\u003e, librust-errno-0.3+default-dev \u003c!nocheck\u003e | librust-errno-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.105-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.70+runtime-dev \u003c!nocheck\u003e, librust-errno-0.3+default-dev \u003c!nocheck\u003e | librust-errno-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.105-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a6b2c578780a1ccae8271875acb479efca9ae4e338a8cfc9f1a7bfb242255136 2492 rust-loopdev_0.4.0-4.dsc 5bfa0855b04611e38acaff718542e9e809cddfc16535d39f9d9c694ab19f7388 8992 rust-loopdev_0.4.0.orig.tar.gz 989fa7045a3c8c77eb89f8046f3c7ede69e4ef29d557b277bd1b63d859e6041e 4416 rust-loopdev_0.4.0-4.debian.tar.xz"
+    "62d5b22947a81215707c44d537344d168cd610fc27f77ae45d1139b31d60b2c1 2506 rust-loopdev_0.4.0-5.dsc 5bfa0855b04611e38acaff718542e9e809cddfc16535d39f9d9c694ab19f7388 8992 rust-loopdev_0.4.0.orig.tar.gz 3956fd7b047c287dd8176f14a67809766d4ea9ffc4bb0bcb6538ac774baf562f 4472 rust-loopdev_0.4.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-loopdev"
   ],
   "Files": [
-    "04f2080a43f795624e3992b208376cd4 2492 rust-loopdev_0.4.0-4.dsc 45c71f48cda609107963e4e9ac501540 8992 rust-loopdev_0.4.0.orig.tar.gz dd097d41ca3f2e7314c64c26b454904d 4416 rust-loopdev_0.4.0-4.debian.tar.xz"
+    "401677b354ced45207701596b9ff18df 2506 rust-loopdev_0.4.0-5.dsc 45c71f48cda609107963e4e9ac501540 8992 rust-loopdev_0.4.0.orig.tar.gz 00a4f574e3d2c6728e25e31f1abe3c01 4472 rust-loopdev_0.4.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/loopdev]"
   ],
   "Version": [
-    "0.4.0-4"
+    "0.4.0-5"
   ]
 }

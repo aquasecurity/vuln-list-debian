@@ -6,19 +6,22 @@
     "librust-selinux-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.66-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-dunce-1+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, libselinux1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.70-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-dunce-1+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e, libselinux1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ad14e4456261108e42f8212e65cf7f3ea9cd7100a91aaa6b761d8cb4586a7d15 2391 rust-selinux-sys_0.6.7-3.dsc 90fc55e8a855264b2816b4c932a581aada4ab5c77d8ff618010021d5ad7c512b 8609 rust-selinux-sys_0.6.7.orig.tar.gz 6f509833defd58a06d3ec80e792b4e6d98ff1657accf11d0c76021670362d021 3696 rust-selinux-sys_0.6.7-3.debian.tar.xz"
+    "9190dbfbd3e89be82802dbe9dea615796321b6add1f126516f5bc0f70181539e 1822 rust-selinux-sys_0.6.12-2.dsc 8d557667087c5b4791e180b80979cd1a92fdb9bfd92cfd4b9ab199c4d7402423 8792 rust-selinux-sys_0.6.12.orig.tar.gz 42f5dc299a195c6411d1e7a48d963c29c05df2d6d7b1f9a2360dc2b8dbe6bdcc 3896 rust-selinux-sys_0.6.12-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-selinux-sys"
   ],
   "Files": [
-    "7660fc672760f5d9f20768a54e5e7def 2391 rust-selinux-sys_0.6.7-3.dsc 880ecb39c376a3aedf40aa785401bff2 8609 rust-selinux-sys_0.6.7.orig.tar.gz 388413b81bc89607192bb1bdbefa2cca 3696 rust-selinux-sys_0.6.7-3.debian.tar.xz"
+    "78f5c676437f46003fd0f8f48bec8fcc 1822 rust-selinux-sys_0.6.12-2.dsc b431835bd0c6db4abc2241dadb3fc7d8 8792 rust-selinux-sys_0.6.12.orig.tar.gz 4b05afb854d209eb416c572b35a0fab4 3896 rust-selinux-sys_0.6.12-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://codeberg.org/koutheir/selinux-sys.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/selinux-sys]"
   ],
   "Version": [
-    "0.6.7-3"
+    "0.6.12-2"
   ]
 }
