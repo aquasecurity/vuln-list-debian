@@ -6,19 +6,22 @@
     "python3-asgi-csrf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-asgi-lifespan \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-itsdangerous \u003c!nocheck\u003e, python3-multipart \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-starlette \u003c!nocheck\u003e"
+    "python3-asgi-lifespan \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-itsdangerous \u003c!nocheck\u003e, python3-multipart (\u003e= 0.0.13) | python3-python-multipart \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-starlette \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a489e22252ee226d524ef3a0977f578791a388c04a5557271b9a3f94b9940578 2415 asgi-csrf_0.10-1.dsc ded6da8af126de3c323c4f4dd8cef087e72db5705f8cae73066f0be8c63b6238 13357 asgi-csrf_0.10.orig.tar.gz b9ed66f165bf583ad2b9ae43edbd35ca10cf9b316fa6727d3d1378a08991d3ab 3384 asgi-csrf_0.10-1.debian.tar.xz"
+    "fe764f24adf21a99811f647054b77729c2b130c5d6e96c2840c1fd593360d5a0 2619 asgi-csrf_0.11-1.dsc 619ac21095a5a5b7d02e6a047390408837b4a792a0e8a9030bd68e60a5448d9b 13735 asgi-csrf_0.11.orig.tar.gz f6c891efb3753064d86c294f257cc4bbb5a9f911e97c83f6a98f469ef2b29118 2640 asgi-csrf_0.11-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "3e58fb7aeff3d69a09e57cf4bcee944406a18d14 debian archive/debian/0.11-1 https://git.dgit.debian.org/asgi-csrf"
   ],
   "Directory": [
     "pool/main/a/asgi-csrf"
   ],
   "Files": [
-    "f647076a2daaf75d97e50091bef6a83d 2415 asgi-csrf_0.10-1.dsc a856b1c9cbd1d0d6febcba19795db3fa 13357 asgi-csrf_0.10.orig.tar.gz 5172d66143e40b8483947346df018ef2 3384 asgi-csrf_0.10-1.debian.tar.xz"
+    "3f1b606fe11436b3a880299247805858 2619 asgi-csrf_0.11-1.dsc 01d4041b25f53131fe421a2e42628923 13735 asgi-csrf_0.11.orig.tar.gz 7a57e0b9d9530884a58cc01f5d23ffa7 2640 asgi-csrf_0.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-asgi-lifespan, python3-httpx, python3-itsdangerous, python3-multipart, python3-pytest, python3-pytest-asyncio, python3-starlette"
+    "python3-all, python3-asgi-lifespan, python3-httpx, python3-itsdangerous, python3-multipart, python3-pytest, python3-pytest-asyncio, python3-python-multipart, python3-starlette"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -60,6 +63,6 @@
     "https://salsa.debian.org/python-team/packages/asgi-csrf.git"
   ],
   "Version": [
-    "0.10-1"
+    "0.11-1"
   ]
 }
