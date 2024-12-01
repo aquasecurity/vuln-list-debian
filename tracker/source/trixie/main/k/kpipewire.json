@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "libkpipewire-dev, libkpipewire5, libkpipewiredmabuf5, libkpipewirerecord5, qml-module-org-kde-pipewire"
+    "libkpipewire-data, libkpipewire-dev, libkpipewire6, libkpipewiredmabuf6, libkpipewirerecord6, qml6-module-org-kde-pipewire"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.16~), debhelper-compat (= 13), dh-sequence-kf5, dh-sequence-pkgkde-symbolshelper, extra-cmake-modules (\u003e= 5.102.0~), gettext, libavcodec-dev, libavformat-dev, libavutil-dev, libdrm-dev (\u003e= 2.4.62~), libegl-dev, libegl1-mesa-dev, libepoxy-dev (\u003e= 1.3~), libgbm-dev, libkf5coreaddons-dev (\u003e= 5.102.0~), libkf5i18n-dev (\u003e= 5.102.0~), libkf5wayland-dev (\u003e= 4:5.102.0~), libpipewire-0.3-dev, libqt5waylandclient5-dev, libswscale-dev, libwayland-dev, pkg-config, pkg-kde-tools, plasma-wayland-protocols (\u003e= 1.9.0~), qtbase5-dev, qtbase5-private-dev, qtdeclarative5-dev, qtwayland5-dev-tools"
+    "cmake (\u003e= 3.16~), debhelper-compat (= 13), dh-sequence-kf6, dh-sequence-pkgkde-symbolshelper, dh-sequence-qmldeps, extra-cmake-modules (\u003e= 6.5.0~), gettext, libavcodec-dev, libavfilter-dev, libavformat-dev, libavutil-dev, libdrm-dev (\u003e= 2.4.62~), libegl-dev, libegl1-mesa-dev, libepoxy-dev (\u003e= 1.3~), libgbm-dev, libkf6coreaddons-dev (\u003e= 6.2.0~), libkf6i18n-dev (\u003e= 6.2.0~), libpipewire-0.3-dev, libswscale-dev, libva-dev, libwayland-dev, libxkbcommon-dev, pipewire-bin, pkgconf, plasma-wayland-protocols, qt6-base-dev (\u003e= 6.6.0+dfsg~), qt6-base-private-dev (\u003e= 6.6.0+dfsg~), qt6-declarative-dev (\u003e= 6.6.0+dfsg~), qt6-declarative-private-dev (\u003e= 6.6.0+dfsg~), qt6-wayland-dev (\u003e= 6.6.0~)"
   ],
   "Checksums-Sha256": [
-    "25828ac6a82e07bf59f83dd7afbfe67577f6db830ca2e8d5668833a03ef920a9 3174 kpipewire_5.27.11-1.dsc ac9a0f24942eb8dc2521376f234a2e37485223b68e4ed1227e46808f8bff4cc0 60076 kpipewire_5.27.11.orig.tar.xz 17bde0dfddfde162a877e04ed982c3e9fc05ee0ec8a9909b330bfc12920ba9c8 833 kpipewire_5.27.11.orig.tar.xz.asc 2f3c60482b9b1d520610456c18550a7afa76c6e541287e3618ed5f8db68c7ea5 15472 kpipewire_5.27.11-1.debian.tar.xz"
+    "9223532ddd1f8e5e7f75f8d640861aad3c09767695d96095ebc6b7353c6726a6 3388 kpipewire_6.2.3-1.dsc bb473f15b4d4f59479cbbaba6ef781d9bc48813b97c35edfb3982d0ac8f030f7 149944 kpipewire_6.2.3.orig.tar.xz 83f76821e387e7ba291cbbd15e134e62c2cdcf5faa3669731558b5502cd27db1 833 kpipewire_6.2.3.orig.tar.xz.asc 234e4ed0498bcb257be2bce82639a8568dc715170346933fd24e419fb91e751c 17584 kpipewire_6.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kpipewire"
   ],
   "Files": [
-    "03f4b226ee865c676cad40deaad52c47 3174 kpipewire_5.27.11-1.dsc 68766176438b330222a3b5e14b5ac503 60076 kpipewire_5.27.11.orig.tar.xz 57e0a01b133aa6da775912f08726b85e 833 kpipewire_5.27.11.orig.tar.xz.asc fb708681800fb35fdf01e57dd35d80f2 15472 kpipewire_5.27.11-1.debian.tar.xz"
+    "0a5c9c6fc4f2a7b463954476560200dc 3388 kpipewire_6.2.3-1.dsc f2a70f77f66d1c4fb14f384217f0ce09 149944 kpipewire_6.2.3.orig.tar.xz b81230e875ee6f956392b3b490569c5c 833 kpipewire_6.2.3.orig.tar.xz.asc f6bdd4e16c8a8c212cac1468320a1b14 17584 kpipewire_6.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "kpipewire"
   ],
   "Package-List": [
-    "libkpipewire-dev deb libdevel optional arch=linux-any libkpipewire5 deb libs optional arch=linux-any libkpipewiredmabuf5 deb libs optional arch=linux-any libkpipewirerecord5 deb libs optional arch=linux-any qml-module-org-kde-pipewire deb libs optional arch=linux-any"
+    "libkpipewire-data deb libs optional arch=all libkpipewire-dev deb libdevel optional arch=linux-any libkpipewire6 deb libs optional arch=linux-any libkpipewiredmabuf6 deb libs optional arch=linux-any libkpipewirerecord6 deb libs optional arch=linux-any qml6-module-org-kde-pipewire deb libs optional arch=linux-any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/qt-kde-team/kde/kpipewire.git"
   ],
   "Version": [
-    "5.27.11-1"
+    "6.2.3-1"
   ]
 }
