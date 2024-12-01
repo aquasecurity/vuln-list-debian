@@ -6,19 +6,22 @@
     "librust-wayland-sys-0.29-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e, libwayland-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e, libwayland-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "85d88dc4efc33da36948e610065e5521552ce9ae5c26a75a685b689ce4e04616 2338 rust-wayland-sys-0.29_0.29.5-3.dsc be12ce1a3c39ec7dba25594b97b42cb3195d54953ddb9d3d95a7c3902bc6e9d4 7926 rust-wayland-sys-0.29_0.29.5.orig.tar.gz 95c2066177957a045c17ba66e446e773cdb9908839eb32c0bff4545351b7cfdf 3380 rust-wayland-sys-0.29_0.29.5-3.debian.tar.xz"
+    "74882fea128f70da69270bdcc159157cfbdb42853228a99e3e261fbe943d6120 2416 rust-wayland-sys-0.29_0.29.5-4.dsc be12ce1a3c39ec7dba25594b97b42cb3195d54953ddb9d3d95a7c3902bc6e9d4 7926 rust-wayland-sys-0.29_0.29.5.orig.tar.gz c232770576098d17c7385a4e066e009b12129233651401008312dd2dc103b98e 3404 rust-wayland-sys-0.29_0.29.5-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wayland-sys-0.29"
   ],
   "Files": [
-    "bbbb0acafbef8431a21d2beda4fe8c20 2338 rust-wayland-sys-0.29_0.29.5-3.dsc e2c4b4a8ff4c3c788d37468b249fe9bc 7926 rust-wayland-sys-0.29_0.29.5.orig.tar.gz 033082c2c27e1c9bfcc8f075f4f359ed 3380 rust-wayland-sys-0.29_0.29.5-3.debian.tar.xz"
+    "02ff88c32c1f330581c1c34b548050a5 2416 rust-wayland-sys-0.29_0.29.5-4.dsc e2c4b4a8ff4c3c788d37468b249fe9bc 7926 rust-wayland-sys-0.29_0.29.5.orig.tar.gz 96eea4278edf6b274d587db26cba9522 3404 rust-wayland-sys-0.29_0.29.5-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smithay/wayland-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-sys-0.29]"
   ],
   "Version": [
-    "0.29.5-3"
+    "0.29.5-4"
   ]
 }
