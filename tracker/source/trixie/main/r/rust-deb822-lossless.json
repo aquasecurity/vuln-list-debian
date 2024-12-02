@@ -6,16 +6,16 @@
     "librust-deb822-lossless-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-rowan+default-dev (\u003e= 0.15.16-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-rowan-0.16+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "277c6934e69fd20ebf30c62fef8f8e8b980d07b75464561aaee51f442c9a413a 2086 rust-deb822-lossless_0.2.1-1.dsc 607abd8f5e3d131f03a1f351f5a5c8426ba4bf820ad10a2c59a1d4fd6d8eb1d9 20619 rust-deb822-lossless_0.2.1.orig.tar.gz 1194279c52667ceee22399b5f6ebd2334c91582df06c63c0df747f804cc2927d 2324 rust-deb822-lossless_0.2.1-1.debian.tar.xz"
+    "c4c25bba0b26790b4615dc502a30347391202a7042e6cf3592105c0292356086 2145 rust-deb822-lossless_0.2.3-1.dsc aa97e4203c48920d02bdfc0cc5db80eb39785f03e88c2b27c024e6a1ffce02c4 595573 rust-deb822-lossless_0.2.3.orig.tar.gz e77e5e8222e359f0889be96f4b1b9e083a8f41c4011edbf3f9209eb71b2b1104 2344 rust-deb822-lossless_0.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-deb822-lossless"
   ],
   "Files": [
-    "9fb7d536e70c5c7fe9c5afed95148528 2086 rust-deb822-lossless_0.2.1-1.dsc 879bc9c6e61c3ad565dea2ccee150bd9 20619 rust-deb822-lossless_0.2.1.orig.tar.gz 06257ea6fcfb7e40ac655ec121b36e3f 2324 rust-deb822-lossless_0.2.1-1.debian.tar.xz"
+    "956ebdb3c99ac9306a294f687283a3d7 2145 rust-deb822-lossless_0.2.3-1.dsc 4a16c2166393a16e37ad992554f68874 595573 rust-deb822-lossless_0.2.3.orig.tar.gz 46889c9202df9f1afaf182ada6fdfcff 2344 rust-deb822-lossless_0.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-criterion+default-dev, librust-criterion+html-reports-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/deb822-lossless]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.3-1"
   ]
 }
