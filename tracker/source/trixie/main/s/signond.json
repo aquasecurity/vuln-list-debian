@@ -3,19 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "libsignon-extension1, libsignon-plugins-common1, libsignon-plugins-doc, libsignon-qt-doc, libsignon-qt5-1, libsignon-qt5-dev, signon-plugin-password, signon-plugin-ssotest, signon-plugins-dev, signond, signond-dev, signond-doc"
+    "libsignon-extension1, libsignon-plugins-common1, libsignon-plugins-doc, libsignon-qt-doc, libsignon-qt6-1, libsignon-qt6-dev, signon-plugin-password, signon-plugin-ssotest, signon-plugins-dev, signond, signond-dev, signond-doc"
   ],
   "Build-Depends": [
-    "dbus-test-runner \u003c!nocheck\u003e, debhelper-compat (= 13), doxygen, graphviz, libdbus-1-dev, libproxy-dev, libqt5sql5-sqlite, pkg-config, pkg-kde-tools (\u003e= 0.14), qt5-qmake, qtbase5-dev, qttools5-dev-tools"
+    "dbus-test-runner \u003c!nocheck\u003e, debhelper-compat (= 13), doxygen, graphviz, libdbus-1-dev, libproxy-dev, libqt6sql6-sqlite \u003c!nocheck\u003e, pkg-kde-tools (\u003e= 0.14), pkgconf, qmake6, qt6-base-dev"
+  ],
+  "Build-Depends-Indep": [
+    "qt6-documentation-tools"
   ],
   "Checksums-Sha256": [
-    "cca8ec5b42558d42a672fa75936d0adba78e0d4d31288380273c026d3be7481a 2862 signond_8.61-1.dsc 3dd57c25e1bf1583b2cb857f96831e38e73d40264ff66ca43e63bb7233f76828 282965 signond_8.61.orig.tar.gz 929491cd23995966ebc5b28355cd817ae07741e353abbbb8a1abd3b68d502b9b 14536 signond_8.61-1.debian.tar.xz"
+    "e68b0b4ece4fb4f53a086f3592f42a60449fd044e57c9d138db5ec074f332d88 3063 signond_8.61+git20231015.c8ad982-6.dsc f579e0561ceb836b2ec57c62e3cf22ba403793fba6608135905ccdd466d1bac1 284680 signond_8.61+git20231015.c8ad982.orig.tar.gz 9f1622f4b59cb1c42862c5e5b642817911883351698818cc0c412679be89b7f8 15872 signond_8.61+git20231015.c8ad982-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/signond"
   ],
   "Files": [
-    "709ea6a646546fcdc56e827c7dfba08a 2862 signond_8.61-1.dsc ae03d7663f29d070e5909f5d649c15a4 282965 signond_8.61.orig.tar.gz 1a039d152ff39c23b088ed6df95855fd 14536 signond_8.61-1.debian.tar.xz"
+    "8bc2fab727a989b1fc87eaf490a5a624 3063 signond_8.61+git20231015.c8ad982-6.dsc 10140a6687718a6b83455dd129cad503 284680 signond_8.61+git20231015.c8ad982.orig.tar.gz 7d4c2a9932afdf6977c131d206a02f02 15872 signond_8.61+git20231015.c8ad982-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "signond"
   ],
   "Package-List": [
-    "libsignon-extension1 deb libs optional arch=any libsignon-plugins-common1 deb libs optional arch=any libsignon-plugins-doc deb doc optional arch=all libsignon-qt-doc deb doc optional arch=all libsignon-qt5-1 deb libs optional arch=any libsignon-qt5-dev deb libdevel optional arch=any signon-plugin-password deb libs optional arch=any signon-plugin-ssotest deb libs optional arch=any signon-plugins-dev deb libdevel optional arch=any signond deb utils optional arch=any signond-dev deb libdevel optional arch=any signond-doc deb doc optional arch=all"
+    "libsignon-extension1 deb libs optional arch=any libsignon-plugins-common1 deb libs optional arch=any libsignon-plugins-doc deb doc optional arch=all libsignon-qt-doc deb doc optional arch=all libsignon-qt6-1 deb libs optional arch=any libsignon-qt6-dev deb libdevel optional arch=any signon-plugin-password deb libs optional arch=any signon-plugin-ssotest deb libs optional arch=any signon-plugins-dev deb libdevel optional arch=any signond deb utils optional arch=any signond-dev deb libdevel optional arch=any signond-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
   ],
   "Uploaders": [
-    "Diane Trout \u003cdiane@debian.org\u003e, Scarlett Moore \u003csgmoore@kde.org\u003e"
+    "Diane Trout \u003cdiane@debian.org\u003e, Scarlett Moore \u003csgmoore@kde.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/qt-kde-team/extras/signond"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/qt-kde-team/extras/signond.git"
   ],
   "Version": [
-    "8.61-1"
+    "8.61+git20231015.c8ad982-6"
   ]
 }
