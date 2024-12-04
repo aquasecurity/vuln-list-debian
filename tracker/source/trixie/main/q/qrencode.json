@@ -6,16 +6,16 @@
     "qrencode, libqrencode4, libqrencode-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13~), pkg-config, libpng-dev, libsdl2-dev"
+    "debhelper (\u003e= 13~), pkgconf, libpng-dev, libsdl2-dev, debhelper-compat (= 13)"
   ],
   "Checksums-Sha256": [
-    "97439930171a11d0dbbdc18ba3c2cbea9bb974a08638e01a7c8fd6f09962dfc2 1643 qrencode_4.1.1-1.dsc e455d9732f8041cf5b9c388e345a641fd15707860f928e94507b1961256a6923 461562 qrencode_4.1.1.orig.tar.bz2 18d6cc8b6aa3261173938a618fef8f70598496c2f36dfa9c74b9677cfd8a09a4 5504 qrencode_4.1.1-1.debian.tar.xz"
+    "cb1ebd09c6e1eb0d93f5344aecaa8c518760ab388890f8588070faff49e2d260 1483 qrencode_4.1.1-2.dsc e455d9732f8041cf5b9c388e345a641fd15707860f928e94507b1961256a6923 461562 qrencode_4.1.1.orig.tar.bz2 3f97d63aac63706ecbbc8024549161a824d83303a462203e25a1ed7571a309e4 6184 qrencode_4.1.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qrencode"
   ],
   "Files": [
-    "3b6aa2581b8a96ed4883576af86f506f 1643 qrencode_4.1.1-1.dsc de7185bcab635a34730e1b73d4efa705 461562 qrencode_4.1.1.orig.tar.bz2 9a0998abb2066160cc681f2fa3031224 5504 qrencode_4.1.1-1.debian.tar.xz"
+    "68f8e008f2478be8c786b6ab2aef1b24 1483 qrencode_4.1.1-2.dsc de7185bcab635a34730e1b73d4efa705 461562 qrencode_4.1.1.orig.tar.bz2 abff7436aba4ac22665eefa04b042078 6184 qrencode_4.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.5.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, cmake, libpng-dev"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/qrencode"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/qrencode.git"
   ],
   "Version": [
-    "4.1.1-1"
+    "4.1.1-2"
   ]
 }

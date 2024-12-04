@@ -6,19 +6,22 @@
     "librust-enumset-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumset-derive-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumset-derive-0.10+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ea70a37a85d1385da0764dc5f2de33f3883a3a05b0536940d77bd5c29bd6ce3a 2389 rust-enumset_1.1.2-1.dsc e875f1719c16de097dee81ed675e2d9bb63096823ed3f0ca827b7dea3028bbbb 26785 rust-enumset_1.1.2.orig.tar.gz 4f76e1fe95f5b48d327eba8632e1c9eff620b3ad779d06d2ab9e80cdd0184cd5 2916 rust-enumset_1.1.2-1.debian.tar.xz"
+    "88ad5dbcc5335b5ba15deb29dbb7e657027b7993c3f5a847840c4b0e03dfa197 2390 rust-enumset_1.1.5-1.dsc d07a4b049558765cef5f0c1a273c3fc57084d768b44d2f98127aef4cceb17293 26442 rust-enumset_1.1.5.orig.tar.gz 293646502fa87560c3870f000990246b83b1e0aae00d4aa04b21225046ff97ae 2960 rust-enumset_1.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-enumset"
   ],
   "Files": [
-    "b566f717a3765a98903ad9d7d6ce69e2 2389 rust-enumset_1.1.2-1.dsc 1e1e62aaad18053fe21a5b8f3da4c2bf 26785 rust-enumset_1.1.2.orig.tar.gz 8086f4ee13f959953d11a278f1faf345 2916 rust-enumset_1.1.2-1.debian.tar.xz"
+    "99d72e1cf814c7e2b895d98188bdb998 2390 rust-enumset_1.1.5-1.dsc bc86b0ef13ab18c4ac77dfc27c8efb14 26442 rust-enumset_1.1.5.orig.tar.gz c2b7e3c0c0ed7ecfa5da43187f400cfd 2960 rust-enumset_1.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Lymia/enumset"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-bincode-1+i128-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-bincode-1+i128-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/enumset]"
   ],
   "Version": [
-    "1.1.2-1"
+    "1.1.5-1"
   ]
 }
