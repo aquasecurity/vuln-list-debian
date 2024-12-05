@@ -6,16 +6,16 @@
     "libcoarrays-dev, libcoarrays-openmpi-dev, libcaf-openmpi-3t64, libcoarrays-mpich-dev, libcaf-mpich-3t64"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), dh-buildinfo, dh-sequence-fortran-mod, gfortran | fortran-compiler, libopenmpi-dev, libmpich-dev, cmake (\u003e= 3.3.1), openssh-client"
+    "debhelper-compat (= 13), dh-buildinfo, mpi-default-dev, dh-sequence-fortran-mod, gfortran | fortran-compiler, libopenmpi-dev [alpha amd64 arm64 hurd-amd64 ia64 kfreebsd-amd64 loong64 mips64el ppc64 ppc64el riscv64 s390x sparc64], libmpich-dev [alpha amd64 arm64 armel armhf hppa hurd-amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 loong64 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el riscv64 s390x sh4 sparc64 x32], cmake (\u003e= 3.3.1), openssh-client"
   ],
   "Checksums-Sha256": [
-    "2ba8604ab613256133104ea34e934ef76adc70f715be63dae0e5bf155fa42b33 2403 open-coarrays_2.10.2+ds-2.1.dsc 840cd63695f50e9f8963126cec317b420b3a0251db010778682d1979fb863887 217468 open-coarrays_2.10.2+ds.orig.tar.xz 46ece43b831487632454ec979c37b10039a8af807e520052407b84121f7176b8 14816 open-coarrays_2.10.2+ds-2.1.debian.tar.xz"
+    "06e981db5bdd0a2413c5e833c81099b66d104d696c6ad3d22d0ec50f898f3226 3351 open-coarrays_2.10.2+ds-3.dsc 840cd63695f50e9f8963126cec317b420b3a0251db010778682d1979fb863887 217468 open-coarrays_2.10.2+ds.orig.tar.xz 88fba6a4e258e387da0f743af4fc540e82744a823ad7fa6d00d4dcd1a133fbb3 15388 open-coarrays_2.10.2+ds-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/open-coarrays"
   ],
   "Files": [
-    "99c656e133c6fd9064b96a89e7d4752b 2403 open-coarrays_2.10.2+ds-2.1.dsc e2bbd5d7afabfd8e487f939331ababe4 217468 open-coarrays_2.10.2+ds.orig.tar.xz 8ff79b8ec6c5ea38e7414e49f9953a33 14816 open-coarrays_2.10.2+ds-2.1.debian.tar.xz"
+    "d53b3de34e48e74d1e7eaa8e598c78a7 3351 open-coarrays_2.10.2+ds-3.dsc e2bbd5d7afabfd8e487f939331ababe4 217468 open-coarrays_2.10.2+ds.orig.tar.xz e14b3f31c92c59f01c486061cda4d62b 15388 open-coarrays_2.10.2+ds-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://www.opencoarrays.org/"
   ],
   "Maintainer": [
-    "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
+    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "open-coarrays"
   ],
   "Package-List": [
-    "libcaf-mpich-3t64 deb libs optional arch=any libcaf-openmpi-3t64 deb libs optional arch=any libcoarrays-dev deb libdevel optional arch=any libcoarrays-mpich-dev deb libdevel optional arch=any libcoarrays-openmpi-dev deb libdevel optional arch=any"
+    "libcaf-mpich-3t64 deb libs optional arch=alpha,amd64,arm64,armel,armhf,hppa,hurd-amd64,hurd-i386,i386,ia64,kfreebsd-amd64,kfreebsd-i386,loong64,m68k,mips,mips64el,mipsel,powerpc,powerpcspe,ppc64,ppc64el,riscv64,s390x,sh4,sparc64,x32 libcaf-openmpi-3t64 deb libs optional arch=alpha,amd64,arm64,hurd-amd64,ia64,kfreebsd-amd64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sparc64 libcoarrays-dev deb libdevel optional arch=any libcoarrays-mpich-dev deb libdevel optional arch=alpha,amd64,arm64,armel,armhf,hppa,hurd-amd64,hurd-i386,i386,ia64,kfreebsd-amd64,kfreebsd-i386,loong64,m68k,mips,mips64el,mipsel,powerpc,powerpcspe,ppc64,ppc64el,riscv64,s390x,sh4,sparc64,x32 libcoarrays-openmpi-dev deb libdevel optional arch=alpha,amd64,arm64,hurd-amd64,ia64,kfreebsd-amd64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sparc64"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Uploaders": [
+    "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org:/science-team/open-coarrays"
@@ -48,6 +51,6 @@
     "https://salsa.debian.org:/science-team/open-coarrays.git -b debian/latest"
   ],
   "Version": [
-    "2.10.2+ds-2.1"
+    "2.10.2+ds-3"
   ]
 }
