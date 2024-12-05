@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "matomo-device-detector"
+    "php-matomo-device-detector"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-phpcomposer, phpab, phpunit, pkg-php-tools"
+    "debhelper-compat (= 13), dh-sequence-phpcomposer, php-spyc, php-symfony-yaml, phpab, phpunit, pkg-php-tools"
   ],
   "Checksums-Sha256": [
-    "0896435fe0472a06ba9f4013efc59d476d70a51b59effc213bc7fc7c894968a4 2304 matomo-device-detector_6.3.0-1.dsc c3f96f7314d8ffa5af40fe972eab459851015df465f161c286a50dccbbc12e5c 391646 matomo-device-detector_6.3.0.orig.tar.gz 73eba0c3f1235088403109ccc7f4120414558de37a911d74bc066a485af728c3 2020 matomo-device-detector_6.3.0-1.debian.tar.xz"
+    "6bc662614e7e751d6ccb65990489216075dc8b1a781902bea8aa9079a9c0a20d 2296 matomo-device-detector_6.3.2-1.dsc a0f69612d227e0137815b8a6635f2fc102ec522b966ac1223c76bc1b6ac4dbdb 1155672 matomo-device-detector_6.3.2.orig.tar.xz b3bb959ddb3e14b85057dcfe6c12cd3fea622d6eb748f6b8015e375097d611d7 6032 matomo-device-detector_6.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/matomo-device-detector"
   ],
   "Files": [
-    "4f6a2f50509fd1755c04571e7a45120a 2304 matomo-device-detector_6.3.0-1.dsc 3c25dca84b655b8b290270f118ef833d 391646 matomo-device-detector_6.3.0.orig.tar.gz 1202cfd170049cbbb4ff930e68195b66 2020 matomo-device-detector_6.3.0-1.debian.tar.xz"
+    "bf12fe0d4c5f3094562b0e78b72157ed 2296 matomo-device-detector_6.3.2-1.dsc 2276b14b93f3f99f76405b2689fdd4b0 1155672 matomo-device-detector_6.3.2.orig.tar.xz 7a084a1896fe25a0a66f2744ee3c5113 6032 matomo-device-detector_6.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "matomo-device-detector"
   ],
   "Package-List": [
-    "matomo-device-detector deb php optional arch=all"
+    "php-matomo-device-detector deb php optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "php-symfony-yaml, phpab, phpunit"
   ],
   "Uploaders": [
-    "Thorsten Alteholz \u003cdebian@alteholz.de\u003e"
+    "Thorsten Alteholz \u003cdebian@alteholz.de\u003e, Utkarsh Gupta \u003cutkarsh@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/matomo-team/matomo-device-detector"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/matomo-team/matomo-device-detector.git"
   ],
   "Version": [
-    "6.3.0-1"
+    "6.3.2-1"
   ]
 }
