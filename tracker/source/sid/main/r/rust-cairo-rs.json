@@ -6,16 +6,16 @@
     "librust-cairo-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-cairo-sys-rs-0.20+default-dev \u003c!nocheck\u003e, librust-cairo-sys-rs-0.20+use-glib-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.6-~~) \u003c!nocheck\u003e, librust-cairo-sys-rs-0.20+default-dev \u003c!nocheck\u003e, librust-cairo-sys-rs-0.20+use-glib-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev (\u003e= 0.20.3-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ab5d40ab232aa5c029dec1d0d9c9acf2d4455ada3a6b838a00a47f25f6969525 2468 rust-cairo-rs_0.20.1-2.dsc e8a0ea147c94108c9613235388f540e4d14c327f7081c9e471fc8ee8a2533e69 52730 rust-cairo-rs_0.20.1.orig.tar.gz a2c5d7fbd56ce19bce288d5dce6fcd11c1cfadbce882c6c53ab42ec0ebbfdd3d 4304 rust-cairo-rs_0.20.1-2.debian.tar.xz"
+    "d8b5455cb385b7ad959be20d8df77d5bf03ef07389c2cbca39f9ee80b9b386d1 1892 rust-cairo-rs_0.20.5-1.dsc d7fa699e1d7ae691001a811dda5ef0e3e42e1d4119b26426352989df9e94e3e6 52741 rust-cairo-rs_0.20.5.orig.tar.gz 70a43d0d992c38de2700f57f1723d43723257648a5d1643f82a6e0c6ac622400 4316 rust-cairo-rs_0.20.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cairo-rs"
   ],
   "Files": [
-    "d1943e4c7ede3666d781ba96e96ee9a3 2468 rust-cairo-rs_0.20.1-2.dsc 64b98bb39a03150b67b526eee30afe0f 52730 rust-cairo-rs_0.20.1.orig.tar.gz 384767f4947d98faa0b8dd07bfcbaa19 4304 rust-cairo-rs_0.20.1-2.debian.tar.xz"
+    "6832ac125a33622f513e515f7181e90a 1892 rust-cairo-rs_0.20.5-1.dsc a6cbd61692c118d3af9e2498e234a459 52741 rust-cairo-rs_0.20.5.orig.tar.gz 348127deb268a4ca6d4a115701bfd7a0 4316 rust-cairo-rs_0.20.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-float-eq-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-float-eq-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cairo-rs]"
   ],
   "Version": [
-    "0.20.1-2"
+    "0.20.5-1"
   ]
 }

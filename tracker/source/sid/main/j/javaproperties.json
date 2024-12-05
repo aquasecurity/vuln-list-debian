@@ -6,16 +6,16 @@
     "python3-javaproperties"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-dateutil \u003c!nocheck\u003e, python3-hatchling, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3c9c8a79a222d97fa54b710bfd86e9898025eaa505cf73d127c09632aa8ce6b1 2139 javaproperties_0.8.1-2.dsc 654af7b3620ac647675ff92299be693dcdd8be5e60cfcdcf7da1a263969d732b 41266 javaproperties_0.8.1.orig.tar.gz e16855f68777844c5f267a8a16c0bc1d740a91935e58f9931ed472a1a6de93f3 2776 javaproperties_0.8.1-2.debian.tar.xz"
+    "c0e7e76a50ea748c8cd269bfa6bcd35444476400adf63eb2aca77e925647c9fb 2325 javaproperties_0.8.2-1.dsc a13629c715e97f97173f87d8a12c4a41e9dd97eaef7aad112c1846ad9ad5b49c 41482 javaproperties_0.8.2.orig.tar.gz 4f5badb8b9ef04c2063fd0f9f25b18dc2c3b4912517d0f6683b363b73c4d3aa0 3024 javaproperties_0.8.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/javaproperties"
   ],
   "Files": [
-    "03948e9b3dd4078fd9cba2bc48623a95 2139 javaproperties_0.8.1-2.dsc e9495bf23ffad42f9ce9195e1437a31e 41266 javaproperties_0.8.1.orig.tar.gz 2e919ac84c893c55a146be6b7506f1fe 2776 javaproperties_0.8.1-2.debian.tar.xz"
+    "bbf9a8aa5f456b0742142099b66fe911 2325 javaproperties_0.8.2-1.dsc 5cc7aaf9b0b3415160deb66039feedbd 41482 javaproperties_0.8.2.orig.tar.gz 7724c0ebfb20957e173e13432f655d59 3024 javaproperties_0.8.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-dateutil, python3-pytest, python3-pytest-mock"
   ],
   "Uploaders": [
     "Luca Boccassi \u003cbluca@debian.org\u003e,"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/javaproperties.git"
   ],
   "Version": [
-    "0.8.1-2"
+    "0.8.2-1"
   ]
 }
