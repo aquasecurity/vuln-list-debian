@@ -6,16 +6,16 @@
     "librust-parity-wasm-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ef3fa8cc5857a49e348491f14b6d5fa93926def035a90f1e112764818e52f017 2313 rust-parity-wasm_0.41.0-1.dsc ddfc878dac00da22f8f61e7af3157988424567ab01d9920b962ef7dcbd7cd865 68813 rust-parity-wasm_0.41.0.orig.tar.gz 986982465b110fbf13af328b17872779de25d8ee998cf8145d69198e05dc1c72 2876 rust-parity-wasm_0.41.0-1.debian.tar.xz"
+    "6eeca83d4d63ba5c3d6d4a82d5da1acb055647a4076802e7b187064f3556184a 1701 rust-parity-wasm_0.45.0-1.dsc e1ad0aff30c1da14b1254fcb2af73e1fa9a28670e584a626f53a369d0e157304 62872 rust-parity-wasm_0.45.0.orig.tar.gz e37a564027ed186f41efbf09f9940fe200aeb41c60a75f0912e7f5066be58fb5 3160 rust-parity-wasm_0.45.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-parity-wasm"
   ],
   "Files": [
-    "363194b5a023985c36c61f7e683434ed 2313 rust-parity-wasm_0.41.0-1.dsc afd625b72cdc9ce13f44619608af1a19 68813 rust-parity-wasm_0.41.0.orig.tar.gz 3706a310fb11b80b890d503f172f6325 2876 rust-parity-wasm_0.41.0-1.debian.tar.xz"
+    "4f795c1776d6bc0056ac267cfb911013 1701 rust-parity-wasm_0.45.0-1.dsc e69f3d275a97a988789a10e13971fe73 62872 rust-parity-wasm_0.45.0.orig.tar.gz 6e69fc184ac00ae0803eebb82753ae8b 3160 rust-parity-wasm_0.45.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-time-0.1+default-dev"
+    "dh-cargo, librust-time-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/parity-wasm]"
   ],
   "Version": [
-    "0.41.0-1"
+    "0.45.0-1"
   ]
 }
