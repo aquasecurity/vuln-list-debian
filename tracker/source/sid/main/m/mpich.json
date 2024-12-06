@@ -9,19 +9,19 @@
     "libamdhip64-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-fortran-mod, gfortran | fortran-compiler, hwloc-nox, libhwloc-dev, librdmacm-dev [!hurd-any], libslurm-dev (\u003e= 23.11) [!hurd-any], libibverbs-dev (\u003e= 1.1.7) [!hurd-any], libfabric-dev [!hurd-any !powerpc !sh4], libnuma-dev [!hurd-any], libucx-dev [amd64 arm64 ppc64el riscv64 loong64], libxt-dev, procps, python3, quilt, txt2man, valgrind-if-available, x11proto-core-dev"
+    "debhelper-compat (= 13), dh-sequence-fortran-mod, gfortran | fortran-compiler, chrpath, hwloc-nox, libhwloc-dev, librdmacm-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libslurm-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libfabric-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any !powerpc !sh4 !x32], libnuma-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libucx-dev [amd64 ppc64el arm64], libpmix-dev [amd64 arm64 mips64el ppc64el riscv64 s390x loong64 alpha ia64 ppc64 sparc64], libxt-dev, procps, python3, txt2man, valgrind [i386 arm64 ppc64el ppc64 amd64 powerpc armhf], x11proto-core-dev"
   ],
   "Build-Depends-Indep": [
     "texlive-latex-extra, texlive-latex-recommended, doxygen-latex"
   ],
   "Checksums-Sha256": [
-    "8b21feb182c28fab21732473b73088b76ab5f4e5e569d205ff2eadf64a2f6a98 2758 mpich_4.2.0-14.dsc 9543d342f407c9b0f25b21f53a5996b3d357a7559c47c05302353adf0b92b055 23050052 mpich_4.2.0.orig.tar.xz 42a3c9c08515b4e7630a137b75375161cc0bc52a027bfb02c49e55a96082a8b1 343844 mpich_4.2.0-14.debian.tar.xz"
+    "c6ed6be5e0fbb04d5e624614b1f4185393b973ec6ed936d157115dbb83d93cda 2989 mpich_4.2.1-2.dsc 9d200ce993a870be4d4682acb1fd367f3507b49c3465bf4fc8b81c717e0e798f 23208980 mpich_4.2.1.orig.tar.xz 14182cf2839e3e274d6bf05f3e946fd12df58bfef21373aa6319721a0e43b9e7 339952 mpich_4.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mpich"
   ],
   "Files": [
-    "846debc1fe1ee328e2827d610b2f8b52 2758 mpich_4.2.0-14.dsc 51feed07b3abacf6ff66016eab4647b2 23050052 mpich_4.2.0.orig.tar.xz 3bbd9dd043f2591726b8ee44ee586aa4 343844 mpich_4.2.0-14.debian.tar.xz"
+    "ae31884ce3dc09371d67cf96e86b2a2f 2989 mpich_4.2.1-2.dsc 98a2d2ffb7da22c988fd8d2286ca74f1 23208980 mpich_4.2.1.orig.tar.xz 90793fb64e934801e66e1595ac3b6fb9 339952 mpich_4.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/science-team/mpich.git -b debian/latest"
   ],
   "Version": [
-    "4.2.0-14"
+    "4.2.1-2"
   ]
 }
