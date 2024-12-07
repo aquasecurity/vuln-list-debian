@@ -6,16 +6,16 @@
     "librust-tungstenite-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.3.2-~~) \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-data-encoding-2+default-dev \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e, librust-httparse-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-sha1-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.23-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-utf-8-0.7+default-dev (\u003e= 0.7.5-~~) \u003c!nocheck\u003e, librust-rustls-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.3.2-~~) \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-data-encoding-2+default-dev \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e, librust-httparse-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-sha1-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.23-~~) \u003c!nocheck\u003e, librust-utf-8-0.7+default-dev (\u003e= 0.7.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0052a1030bf0da7e31291ee0b6378f0ac1a41ddc5f430e80525d3389eb311d22 2946 rust-tungstenite_0.20.1-2.dsc eb5222b16b704c8221d8eaf9d1ba3f20b07723643b623aecd789f2d8ab75db9f 58926 rust-tungstenite_0.20.1.orig.tar.gz ada1946f59f1ab9fcd4328181fac7dfdea14e6a9b4dd4e3cbe9862a40b8b4131 3948 rust-tungstenite_0.20.1-2.debian.tar.xz"
+    "c3e53af2574c7d488b814cbf3bef09840e40076f1285252936ba9a5a0fae4f05 2259 rust-tungstenite_0.24.0-2.dsc 18e5b8366ee7a95b16d32197d0b2604b43a0be89dc5fac9f8e96ccafbaedda8a 61527 rust-tungstenite_0.24.0.orig.tar.gz 8c7866936110ef4fd69a39e558bae4ff5e5938c6ed834df24d359944c205fc82 4288 rust-tungstenite_0.24.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tungstenite"
   ],
   "Files": [
-    "88fbb4a48244a1f434e93c61a4563854 2946 rust-tungstenite_0.20.1-2.dsc 4032be3054107eaff7808d84c624418c 58926 rust-tungstenite_0.20.1.orig.tar.gz 460db62ec4da62cbec0f64c11158f70e 3948 rust-tungstenite_0.20.1-2.debian.tar.xz"
+    "49ec04432b996253c3825dfcbd2d3925 2259 rust-tungstenite_0.24.0-2.dsc 805c827281e3184bb5fa7e0c6e15dc4c 61527 rust-tungstenite_0.24.0.orig.tar.gz 6b26929477a6fc7923440c63eb68ba22 4288 rust-tungstenite_0.24.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-env-logger-0.10+default-dev, librust-net2-0.2+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-env-logger-0.10+default-dev, librust-rand-0.8+default-dev, librust-socket2-0.5+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/tungstenite"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tungstenite]"
   ],
   "Version": [
-    "0.20.1-2"
+    "0.24.0-2"
   ]
 }

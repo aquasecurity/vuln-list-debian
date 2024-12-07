@@ -6,16 +6,16 @@
     "librust-termbg-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossterm-0.27+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-scopeguard-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossterm-0.27+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-mockall-0.13+default-dev \u003c!nocheck\u003e, librust-scopeguard-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-simplelog-0.12+default-dev (\u003e= 0.12.2-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "83c2a2f76b6c0e9b076cfb87b9ef485b55c814536e513afb7695521a867d5373 2339 rust-termbg_0.6.0-1.dsc 0a89303fd1e127e84c66ccb9326f102466810affc17b344fb9decd435d9ecc7a 15635 rust-termbg_0.6.0.orig.tar.gz 4e365a656c9fcad1bc8e442ba0099ef13248f75e6094b1b2b53a69e31493a3dd 2912 rust-termbg_0.6.0-1.debian.tar.xz"
+    "31ea4360ad3a4550ad3835101e61d0d3ec016fa6c99b605d2df7080b519438c9 2431 rust-termbg_0.6.1-1.dsc 03426a16336dea313354e389c5ad318fe7e2fd5fb9b3d3584397e8d586cc5bd1 20616 rust-termbg_0.6.1.orig.tar.gz 8e9feefd6ee0f6d603f7fc1ba015b1d862720422b66c0ef8179c3e1eddfa73e4 3008 rust-termbg_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-termbg"
   ],
   "Files": [
-    "2958d6887a34d2b6e5d7062d816116dc 2339 rust-termbg_0.6.0-1.dsc dc883a34553e105269c65f8091ef098f 15635 rust-termbg_0.6.0.orig.tar.gz 7395e1e00db232f02eb7d261ede5fed3 2912 rust-termbg_0.6.0-1.debian.tar.xz"
+    "f47350478e3f2816d67efd2729aaa122 2431 rust-termbg_0.6.1-1.dsc a3978fdb95c890b6dc9ee8c520ab2072 20616 rust-termbg_0.6.1.orig.tar.gz c648d3168840ab1e0636001b5de9b9f3 3008 rust-termbg_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-either-1+default-dev, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/termbg]"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.6.1-1"
   ]
 }
