@@ -6,19 +6,22 @@
     "librust-event-listener-strategy-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-event-listener-5+std-dev \u003c!nocheck\u003e, librust-event-listener-5-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.12-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-event-listener-5+std-dev \u003c!nocheck\u003e, librust-event-listener-5-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.12-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0850f43d1ad438ee60a7d453166a212d95ac4daada9f05ea50eff7389731a340 1906 rust-event-listener-strategy_0.5.2-3.dsc 0f214dc438f977e6d4e3500aaa277f5ad94ca83fbbd9b1a15713ce2344ccc5a1 10697 rust-event-listener-strategy_0.5.2.orig.tar.gz 26a63731004057f112108d9f84dbfc895aa606a92a8a67043f7ffd55b8832a8b 2956 rust-event-listener-strategy_0.5.2-3.debian.tar.xz"
+    "008dc3fce65d78bf2b267f849b2483be8c2fdfbddc29bac1f1ed089fb24c457f 1953 rust-event-listener-strategy_0.5.3-1.dsc 3c3e4e0dd3673c1139bf041f3008816d9cf2946bbfac2945c09e523b8d7b05b2 10920 rust-event-listener-strategy_0.5.3.orig.tar.gz bf90bfaf22529978f42ff875b670cfb7e7e4f627f9ef30c6bfd4d397f91af9fb 3032 rust-event-listener-strategy_0.5.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-event-listener-strategy"
   ],
   "Files": [
-    "ae3f7cf06e939cad65bfe9deaf75ae56 1906 rust-event-listener-strategy_0.5.2-3.dsc f7e39a817594c22ef2609187c43dff9c 10697 rust-event-listener-strategy_0.5.2.orig.tar.gz 0865e78d5f6c580f995a61835ffaa2c5 2956 rust-event-listener-strategy_0.5.2-3.debian.tar.xz"
+    "ea232c50c9aef330122936e62aaf4d2b 1953 rust-event-listener-strategy_0.5.3-1.dsc f721e0f2dd9dfdaf715b2e4661bb3e4a 10920 rust-event-listener-strategy_0.5.3.orig.tar.gz ad9a84793a4121783ee8c331a27c266f 3032 rust-event-listener-strategy_0.5.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smol-rs/event-listener-strategy"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-lite-1+default-dev"
+    "dh-cargo, librust-futures-lite-2+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/event-listener-strategy"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/event-listener-strategy]"
   ],
   "Version": [
-    "0.5.2-3"
+    "0.5.3-1"
   ]
 }
