@@ -6,19 +6,19 @@
     "python3-podman"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-setuptools-scm, python3-sphinx"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-fixtures, python3-setuptools, python3-setuptools-scm, python3-sphinx"
   ],
   "Build-Depends-Indep": [
     "python3-xdg, python3-testtools, python3-requests-mock"
   ],
   "Checksums-Sha256": [
-    "a30ca40b6c99958c5d8bd828a6965ab831a3dddb76f0f0961b6f5b244d9246e3 2176 python-podman_4.7.0-2.dsc c00e81395210cd88078f297b8e2dda8650d9ebe33e73244dd1f79e1857dbf538 153728 python-podman_4.7.0.orig.tar.xz 0fbb164b1e0cfc7b469dfa7d64684e6905a5dc5b1b8c93f9ec6cd956bbad1f24 2332 python-podman_4.7.0-2.debian.tar.xz"
+    "aee030257f550ea3e9db59f5e2a13d407501bc8a6d4971c60b7a8c294bece1d9 2017 python-podman_5.3.0-3.dsc 077666eede952ba7db5415c1a95927d392f2f3fa6506ee3db2f472d5483455ef 189992 python-podman_5.3.0.orig.tar.gz d4ad7e4d87ca7633f6767b0aca980fafc276c6a6c7a902fc482a5dfd02e0a318 6148 python-podman_5.3.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-podman"
   ],
   "Files": [
-    "aebc23734d73ac481ce632feae5b1227 2176 python-podman_4.7.0-2.dsc cbef724a1131e40bb9232c40db030bfa 153728 python-podman_4.7.0.orig.tar.xz 64ef3f9027132c45e3be188fc7deac31 2332 python-podman_4.7.0-2.debian.tar.xz"
+    "d74e2deecae865cbaf47a9428710ca39 2017 python-podman_5.3.0-3.dsc 28cbc231cedc2eb0578175e979c502c4 189992 python-podman_5.3.0.orig.tar.gz 75ad528fd58f45d2d40b0aa042628b1d 6148 python-podman_5.3.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,10 @@
     "4.6.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, buildah, catatonit, dbus-user-session, fuse-overlayfs, podman, python3-pytest, python3-requests-mock, slirp4netns, uidmap"
   ],
   "Uploaders": [
     "Michal Arbet \u003cmichal.arbet@ultimum.io\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-podman.git"
   ],
   "Version": [
-    "4.7.0-2"
+    "5.3.0-3"
   ]
 }

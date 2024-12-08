@@ -6,19 +6,19 @@
     "python3-zope.configuration"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-zope.i18nmessageid, python3-zope.schema (\u003e= 4.9.0), python3-zope.testing, python3-zope.testrunner"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-repoze.sphinx.autointerface \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nocheck\u003e, python3-zope.i18nmessageid, python3-zope.interface, python3-zope.schema (\u003e= 4.9.0), python3-zope.testing \u003c!nocheck\u003e, python3-zope.testrunner \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "55b54a81e75d2b48f78d7d538c300e957bc0977d8a3612936493f2247f3efdbd 2422 zope.configuration_5.0.1-1.dsc f35877ead5e998036385d2ddc46919eabc998e699c05987964f171ad8dd9271b 83327 zope.configuration_5.0.1.orig.tar.gz 3768319313c21a41158e8ab78d11e4038f305b3fb1cb409afae80b9660719930 4608 zope.configuration_5.0.1-1.debian.tar.xz"
+    "5fc5ed82cfedbae5a363f6ffa1b967d248529c43f5e4ac61212ecd312ddbf0eb 2505 zope.configuration_6.0-1.dsc da1b879bd41138fb809e341b3cbd1e38f32b88f0cc88ee7e0f80a5aa25e68cfe 84258 zope.configuration_6.0.orig.tar.gz d417c66dc3c7693bd601506ecb51d7eec0130679901fe3858dda03f2f7f2cd57 4996 zope.configuration_6.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "62d67168e228ef17ee6849ba77d75b6fc3d54d60 debian archive/debian/5.0.1-1 https://git.dgit.debian.org/zope.configuration"
+    "d1b18f56929c18da36dfcf85e89397c3ec70071f debian archive/debian/6.0-1 https://git.dgit.debian.org/zope.configuration"
   ],
   "Directory": [
     "pool/main/z/zope.configuration"
   ],
   "Files": [
-    "dd278d75179ce7416e1293247955ad83 2422 zope.configuration_5.0.1-1.dsc 7fe73dae84f8e4433f8c13e806afc226 83327 zope.configuration_5.0.1.orig.tar.gz ded9038616c2cedfa404ba924d66f504 4608 zope.configuration_5.0.1-1.debian.tar.xz"
+    "7bb3ed3dfb64ec3f24e032db89bfc32a 2505 zope.configuration_6.0-1.dsc 3e894fa3a615b79159acdaa1b25c14da 84258 zope.configuration_6.0.orig.tar.gz 77adc732b7e290327566c705ce5384f9 4996 zope.configuration_6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,7 @@
     "4.6.1"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest, python3-zope.testing"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Colin Watson \u003ccjwatson@debian.org\u003e"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/zope.configuration.git"
   ],
   "Version": [
-    "5.0.1-1"
+    "6.0-1"
   ]
 }

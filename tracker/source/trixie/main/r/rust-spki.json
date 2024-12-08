@@ -6,19 +6,22 @@
     "librust-spki-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-der-0.7+default-dev \u003c!nocheck\u003e, librust-der-0.7+oid-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-der-0.7+default-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e, librust-der-0.7+oid-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "31a050380c24ce1b509ec4457acb75967a301b3249ca6b5dde662d0b552145f6 2212 rust-spki_0.7.2-1.dsc 9d1e996ef02c474957d681f1b05213dfb0abab947b446a62d37770b23500184a 16270 rust-spki_0.7.2.orig.tar.gz dbe597f66604fc389035118889adc5215f2402104b16c7dbf9f51779f4981def 3228 rust-spki_0.7.2-1.debian.tar.xz"
+    "2a53e9e5b6f11568d6726b0e4afb9cc03862fa560d0dbf3e841461332c5b96aa 1822 rust-spki_0.7.3-1.dsc d91ed6c858b01f942cd56b37a94b3e0a1798290327d1236e4d9cf4eaca44d29d 16409 rust-spki_0.7.3.orig.tar.gz ac99e382654e5fb5a3efd04e617e0d877860845f172375a1488fd8138495e459 3024 rust-spki_0.7.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-spki"
   ],
   "Files": [
-    "95376399152d09f3898292610f07dd44 2212 rust-spki_0.7.2-1.dsc e737e0ae0d5dc2a6a1559f788b2bb5fa 16270 rust-spki_0.7.2.orig.tar.gz 69e2af8768f2770d9770fe6666f37722 3228 rust-spki_0.7.2-1.debian.tar.xz"
+    "54ffdbb12722ec1886103994e81dd050 1822 rust-spki_0.7.3-1.dsc ae35a16ea73fc405f1cf50fa35b70ddd 16409 rust-spki_0.7.3.orig.tar.gz 16b170e9f07032d0b94038d2dfaf89b3 3024 rust-spki_0.7.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/formats/tree/master/spki"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/spki]"
   ],
   "Version": [
-    "0.7.2-1"
+    "0.7.3-1"
   ]
 }
