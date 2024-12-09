@@ -6,19 +6,22 @@
     "librust-getrandom-dev, librust-getrandom+compiler-builtins-dev, librust-getrandom+core-dev, librust-getrandom+rustc-dep-of-std-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.149-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.154-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2b9d629d54ca8ba6cdfe447e642d53dfe9035cbe0baa7d5b28b7f2190b4e9b19 2535 rust-getrandom_0.2.12-1.dsc 190092ea657667030ac6a35e305e62fc4dd69fd98ac98631e5d3a2b1575a12b5 36163 rust-getrandom_0.2.12.orig.tar.gz ca01062360f02588704799f91e4d8f592b4dead041b95604a5c3a19cef06d45c 4292 rust-getrandom_0.2.12-1.debian.tar.xz"
+    "ca16c8fbb30859dd0b0f3889b1718faaf6c23e48e4b3dbdf54fef12c2d3ae10e 2588 rust-getrandom_0.2.15-1.dsc c4567c8db10ae91089c99af84c68c38da3ec2f087c3f82960bcdbf3656b6f4d7 37163 rust-getrandom_0.2.15.orig.tar.gz fa89dfd27641747cce731997e2614fec6f2b62f0fd01211e38db467871c196e0 4368 rust-getrandom_0.2.15-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-getrandom"
   ],
   "Files": [
-    "57a888fa10b1f30540e8cc8d115e7d64 2535 rust-getrandom_0.2.12-1.dsc ba5684833f6b40a3aa32ae4989c40f79 36163 rust-getrandom_0.2.12.orig.tar.gz 190caa06be1e1bba06cc67f5cfaed760 4292 rust-getrandom_0.2.12-1.debian.tar.xz"
+    "6afb8205515c5e6bb9cb08a2d8157396 2588 rust-getrandom_0.2.15-1.dsc 3c67481b4433a3219846e41d09aaeaa9 37163 rust-getrandom_0.2.15.orig.tar.gz ab9c5e18684666ef91032eccdca9ee57 4368 rust-getrandom_0.2.15-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-random/getrandom"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/getrandom]"
   ],
   "Version": [
-    "0.2.12-1"
+    "0.2.15-1"
   ]
 }

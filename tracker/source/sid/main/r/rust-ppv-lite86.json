@@ -6,19 +6,22 @@
     "librust-ppv-lite86-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-zerocopy-0.7+default-dev \u003c!nocheck\u003e, librust-zerocopy-0.7+derive-dev \u003c!nocheck\u003e, librust-zerocopy-0.7+simd-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0813927cd3518adb8f7c763e4e6e2941d6722ce071c914876349a040f5bb5919 2157 rust-ppv-lite86_0.2.16-1.dsc eb9f9e6e233e5c4a35559a617bf40a4ec447db2e84c20b55a6f83167b7e57872 22245 rust-ppv-lite86_0.2.16.orig.tar.gz a4155880b0863050a594e901a024555c30988084bcc0fb65aa114ea9df54a385 3120 rust-ppv-lite86_0.2.16-1.debian.tar.xz"
+    "26b76089ad08ec1c1b0716615fdb554998328488739f4541faf444921a44be2c 2361 rust-ppv-lite86_0.2.20-1.dsc 77957b295656769bb8ad2b6a6b09d897d94f05c41b069aede1fcdaa675eaea04 22478 rust-ppv-lite86_0.2.20.orig.tar.gz d84184d00dc218c435ba221330f6c97b1b1d21f14890102f795d06705859139e 3200 rust-ppv-lite86_0.2.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ppv-lite86"
   ],
   "Files": [
-    "8a54f58afa8396a3ac36e9d6193b2f2e 2157 rust-ppv-lite86_0.2.16-1.dsc ae91c97885d67994a342820cf7d59fb2 22245 rust-ppv-lite86_0.2.16.orig.tar.gz dc44ee7571d066bdf9d15daa0b97b4b9 3120 rust-ppv-lite86_0.2.16-1.debian.tar.xz"
+    "82441be02821e4d694320b80be418efc 2361 rust-ppv-lite86_0.2.20-1.dsc 60ddef23e68d8cbb9f9f33b747fe1734 22478 rust-ppv-lite86_0.2.20.orig.tar.gz 8d343fd1b89186d39bc11266239561a9 3200 rust-ppv-lite86_0.2.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cryptocorrosion/cryptocorrosion"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ppv-lite86]"
   ],
   "Version": [
-    "0.2.16-1"
+    "0.2.20-1"
   ]
 }
