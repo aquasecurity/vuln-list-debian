@@ -6,19 +6,22 @@
     "librust-easy-ext-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "02cddf1b5b596204b4c0b363a95624206b75be471b85e435ffaa1f5d290dc543 2363 rust-easy-ext_1.0.1-1.dsc 49457524c7e65648794c98283282a0b7c73b10018e7091f1cdcfff314fd7ae59 27914 rust-easy-ext_1.0.1.orig.tar.gz 5f2cae8657aebaa98eaddd17a873d594843387e6c106a5304989a272fe801d4e 2552 rust-easy-ext_1.0.1-1.debian.tar.xz"
+    "8c98d34aa27701f7e1c37f0b6520a5d39a4308dcba0083ab6ed0795d0ef73a0c 1655 rust-easy-ext_1.0.2-1.dsc cc5d6d6a8504f8caedd7de14576464383900cd3840b7033a7a3dce5ac00121ca 28996 rust-easy-ext_1.0.2.orig.tar.gz cbb6d49a36fb7dd25fc1ec7f748fbcf3ab87b26e74ee912d4d59918a0dcce99d 2608 rust-easy-ext_1.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-easy-ext"
   ],
   "Files": [
-    "43fa1a98685f3bb0181ee6bb39827bf1 2363 rust-easy-ext_1.0.1-1.dsc bfeb2d573f805c880123e2d7b211d2e1 27914 rust-easy-ext_1.0.1.orig.tar.gz 452273b0d59b83ea03d8301fa0cde011 2552 rust-easy-ext_1.0.1-1.debian.tar.xz"
+    "89bb70ef83155bcce2984d61a20ebea3 1655 rust-easy-ext_1.0.2-1.dsc b749f1500b9856b93b38a50830f0cde8 28996 rust-easy-ext_1.0.2.orig.tar.gz b73ceae0abba0a1504f09e45490c1dea 2608 rust-easy-ext_1.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/taiki-e/easy-ext"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-trait-0.1+default-dev, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-async-trait-0.1+default-dev, librust-rustversion-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/easy-ext"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/easy-ext]"
   ],
   "Version": [
-    "1.0.1-1"
+    "1.0.2-1"
   ]
 }
