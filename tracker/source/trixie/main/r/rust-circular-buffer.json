@@ -6,19 +6,22 @@
     "librust-circular-buffer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9e6a1aba9d2260b459312c53244f86e2b967e87ad9d136eb4dedc1a117ad5df5 2354 rust-circular-buffer_0.1.7-1.dsc da987586004ae7c43b7df5e3f7693775068522e1086f8d9b2d74c778a0f43313 31734 rust-circular-buffer_0.1.7.orig.tar.gz d76c79fe78c81bb9acb75bc2c23fc2e808d390b66902fea491801ca2945b92ea 2912 rust-circular-buffer_0.1.7-1.debian.tar.xz"
+    "a01ce31eb2d2287ff289235533a9b64174a9aa343e1ae89673790f522501b017 2469 rust-circular-buffer_0.1.9-1.dsc b67261db007b5f4cf8cba393c1a5c511a5cc072339ce16e12aeba1d7b9b77946 34164 rust-circular-buffer_0.1.9.orig.tar.gz 87578b76db53addd8dc30b294cc2474d4c7a5f5503f1b2806eb2166b561db30c 3260 rust-circular-buffer_0.1.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-circular-buffer"
   ],
   "Files": [
-    "9b3dd9983e89b828101e59ee6b34c73c 2354 rust-circular-buffer_0.1.7-1.dsc 36b690fd7edb170b702395a7a6099e25 31734 rust-circular-buffer_0.1.7.orig.tar.gz 13ee5e51aab8cc1a629f0c88258ec068 2912 rust-circular-buffer_0.1.7-1.debian.tar.xz"
+    "6863db4d7329aa6222288d7cbfff8a8a 2469 rust-circular-buffer_0.1.9-1.dsc 7396517fd2397242879e55683482f59c 34164 rust-circular-buffer_0.1.9.orig.tar.gz 24a5f6ec7f81d391e5e9b810e4538133 3260 rust-circular-buffer_0.1.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/andreacorbellini/rust-circular-buffer"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-criterion-0.3+html-reports-dev, librust-drop-tracker-0.1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-drop-tracker-0.1+default-dev, librust-futures-lite+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Sudip Mukherjee \u003csudipm.mukherjee@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/circular-buffer]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.1.9-1"
   ]
 }
