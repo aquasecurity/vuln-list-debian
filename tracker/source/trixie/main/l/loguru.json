@@ -6,16 +6,19 @@
     "python3-loguru"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-all, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-colorama \u003c!nocheck\u003e, python3-isort \u003c!nocheck\u003e, python3-flake8 \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-mypy \u003c!nocheck\u003e, python3-toolz \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, flit, mypy, pybuild-plugin-pyproject, python3-all, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-mypy \u003c!nocheck\u003e, python3-colorama \u003c!nocheck\u003e, python3-isort \u003c!nocheck\u003e, python3-flake8 \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-mypy \u003c!nocheck\u003e, python3-toolz \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51b5525c258436c419e05f953a4df8ca526965fc0c077e9ecaabc30dbe3bf560 2372 loguru_0.7.2-3.dsc 2b3517ef6941a3bb24ed108074194041b3de429d5d43fe9d51359f4abdd8bad5 443643 loguru_0.7.2.orig.tar.gz acc98efe7f82a518fa50c85823c8f4482d1283f400cf13a17ae1510e233bc743 4080 loguru_0.7.2-3.debian.tar.xz"
+    "80a0ec318ecd00b55580fa6a1164bfe4c6ebe065a39508865a990e16503a482e 2536 loguru_0.7.3-1.dsc 1cad8860aa0ecf9567125381e4430046526246e075224350a6a624addac05f5e 459102 loguru_0.7.3.orig.tar.gz ae87420d9d5ed8da1d554fcf19d7007f796f80c22aed9efbfd6f02f16531adfc 4172 loguru_0.7.3-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "6a93a7827c162aa0d1a09bcbb752fb397956ae72 debian archive/debian/0.7.3-1 https://git.dgit.debian.org/loguru"
   ],
   "Directory": [
     "pool/main/l/loguru"
   ],
   "Files": [
-    "12781d3377c6f229f4938de18e3d7daf 2372 loguru_0.7.2-3.dsc 80197a16d2c6ad9a8d5f6e63de91dcc8 443643 loguru_0.7.2.orig.tar.gz 40c6c45ff7aaa451360fec192179cb94 4080 loguru_0.7.2-3.debian.tar.xz"
+    "4e65b099a3ab1208f436a09a2f07b506 2536 loguru_0.7.3-1.dsc 9b525e1306e0b377dbd13ed4194818a6 459102 loguru_0.7.3.orig.tar.gz 9103a1f2f236a320805cc772e0f17c64 4172 loguru_0.7.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-freezegun, python3-mypy, python3-pytest"
+    "mypy, python3-all, python3-freezegun, python3-mypy, python3-pytest, python3-pytest-mypy"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e, Nilesh Patra \u003cnilesh@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/loguru.git"
   ],
   "Version": [
-    "0.7.2-3"
+    "0.7.3-1"
   ]
 }

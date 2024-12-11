@@ -6,19 +6,22 @@
     "librust-pam-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pam-sys-0.5+default-dev \u003c!nocheck\u003e, librust-users-0.11+default-dev \u003c!nocheck\u003e | librust-users-0.10+default-dev \u003c!nocheck\u003e | librust-users-0.9+default-dev \u003c!nocheck\u003e | librust-users-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pam-sys-0.5+default-dev \u003c!nocheck\u003e, librust-uzers-0.12+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7a4e3923928d8d249ad8c7fe7efb07f0d64cb9b40faaa13f7ddd73c58c13f29d 2393 rust-pam_0.7.0-2.dsc fa2bdc959c201c047004a1420a92aaa1dd1a6b64d5ef333aa3a4ac764fb93097 12600 rust-pam_0.7.0.orig.tar.gz 3f4b868a8f96b207dedf21687d8a49d7ed87c2062bab7880d210b78f1cf6e14e 2868 rust-pam_0.7.0-2.debian.tar.xz"
+    "d2d50500e902b80492deda004d481cccb50babf683d4e7d907984d44b6737f7f 1653 rust-pam_0.7.0-3.dsc fa2bdc959c201c047004a1420a92aaa1dd1a6b64d5ef333aa3a4ac764fb93097 12600 rust-pam_0.7.0.orig.tar.gz 7fbe59bea441d3cb59af1bc864ecb6b757cfc858bbab7c6d9d5b9e0f6a374934 3352 rust-pam_0.7.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pam"
   ],
   "Files": [
-    "326b3c297b3d71ea4d83f6c8c3fa9b87 2393 rust-pam_0.7.0-2.dsc 716ee924d46c549d103f4f664186637f 12600 rust-pam_0.7.0.orig.tar.gz e014a028265bbef95e0074d23c48f1cf 2868 rust-pam_0.7.0-2.debian.tar.xz"
+    "4ca319e66c4287c72d1c7c9626a3c796 1653 rust-pam_0.7.0-3.dsc 716ee924d46c549d103f4f664186637f 12600 rust-pam_0.7.0.orig.tar.gz 8b52ccaba13ec1fe4e5b0e223e3d0a3c 3352 rust-pam_0.7.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/1wilkens/pam/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rpassword-2+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pam]"
   ],
   "Version": [
-    "0.7.0-2"
+    "0.7.0-3"
   ]
 }

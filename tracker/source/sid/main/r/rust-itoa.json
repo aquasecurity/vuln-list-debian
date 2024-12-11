@@ -6,19 +6,22 @@
     "librust-itoa-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dbeca6a473228e0078dfeef210c803a0506b5db4a7a11efe3164da3b688b6884 2097 rust-itoa_1.0.9-1.dsc af150ab688ff2122fcef229be89cb50dd66af9e01a4ff320cc137eecc9bacc38 10492 rust-itoa_1.0.9.orig.tar.gz ac86273e629a5fd7b59b815a30af0726fe0ec68d286d6c4177936fc01031b198 3420 rust-itoa_1.0.9-1.debian.tar.xz"
+    "5acc1ae13bec1a4f801eefc03ddc973e3fcab82e5b62b304fe0acf8a4ba7ff40 2179 rust-itoa_1.0.14-1.dsc d75a2a4b1b190afb6f5425f10f6a8f959d2ea0b9c2b1d79553551850539e4674 11210 rust-itoa_1.0.14.orig.tar.gz 87fffd98e437760a9ea1fece191bef1097d70dc3728045020edb492aca0d37ea 3464 rust-itoa_1.0.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-itoa"
   ],
   "Files": [
-    "2806e3cad3b4b9720b867e6f8191400d 2097 rust-itoa_1.0.9-1.dsc c6e20d23948f86627f5d4668e7ca43e3 10492 rust-itoa_1.0.9.orig.tar.gz 5917e11290d327d777f4344ddafd563f 3420 rust-itoa_1.0.9-1.debian.tar.xz"
+    "97a97e693c43bdef5c99d49a5050c8d0 2179 rust-itoa_1.0.14-1.dsc c125f6c48f6f09ad96e234ff25a1c198 11210 rust-itoa_1.0.14.orig.tar.gz 16548831c4e893e79cfe5008ca2a9e1c 3464 rust-itoa_1.0.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/itoa"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Ximin Luo \u003cinfinity0@debian.org\u003e"
+    "Ximin Luo \u003cinfinity0@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/itoa"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/itoa]"
   ],
   "Version": [
-    "1.0.9-1"
+    "1.0.14-1"
   ]
 }

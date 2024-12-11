@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libarpack2t64, libarpack2-dev, libparpack2t64, libparpack2-dev"
+    "libarpack2t64, libarpack2-dev, libparpack2t64, libparpack2-dev, libarpack64-2, libarpack64-2-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), gfortran, libblas-dev, liblapack-dev, mpi-default-dev, libeigen3-dev"
+    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), gfortran, cmake, libblas-dev, liblapack-dev, libblas64-dev [!armel !armhf !i386 !hppa !hurd-i386 !m68k !powerpc !sh4 !x32], liblapack64-dev [!armel !armhf !i386 !hppa !hurd-i386 !m68k !powerpc !sh4 !x32], mpi-default-dev, libeigen3-dev"
   ],
   "Checksums-Sha256": [
-    "23e22d9cf9686c06ed4e40a06c896315cd33663871cc8641f4e58f1109edfbc6 2219 arpack_3.9.1-1.2.dsc f6641deb07fa69165b7815de9008af3ea47eb39b2bb97521fbf74c97aba6e844 1020208 arpack_3.9.1.orig.tar.gz 3d22af231fa45d9fc82d1e785043e0991558c8757b78ef87ddc5044ff4b208b4 10416 arpack_3.9.1-1.2.debian.tar.xz"
+    "1f6557761064f7c6ee4d31f25baf04aca2c4193374954043436eadd1ee422a77 2504 arpack_3.9.1-4.dsc f6641deb07fa69165b7815de9008af3ea47eb39b2bb97521fbf74c97aba6e844 1020208 arpack_3.9.1.orig.tar.gz 597e9b0caa95543234ab4dc7c5c241a0e2268f74139b8af8603d13519abee096 10928 arpack_3.9.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/arpack"
   ],
   "Files": [
-    "825ec0852411eaa110557da280d79960 2219 arpack_3.9.1-1.2.dsc 8f66485ae9d7e676b42aeead2bf5757e 1020208 arpack_3.9.1.orig.tar.gz 70d29a467826b787a68735ea4b0e7b7f 10416 arpack_3.9.1-1.2.debian.tar.xz"
+    "c55fcb464efce1a210d24ad7dd41d801 2504 arpack_3.9.1-4.dsc 8f66485ae9d7e676b42aeead2bf5757e 1020208 arpack_3.9.1.orig.tar.gz 81abfb0ca507e13e0cbc89176d2d5d41 10928 arpack_3.9.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "arpack"
   ],
   "Package-List": [
-    "libarpack2-dev deb libdevel optional arch=any libarpack2t64 deb libs optional arch=any libparpack2-dev deb libdevel optional arch=any libparpack2t64 deb libs optional arch=any"
+    "libarpack2-dev deb libdevel optional arch=any libarpack2t64 deb libs optional arch=any libarpack64-2 deb libs optional arch=any libarpack64-2-dev deb libdevel optional arch=any libparpack2-dev deb libdevel optional arch=any libparpack2t64 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "math"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/science-team/arpack.git"
   ],
   "Version": [
-    "3.9.1-1.2"
+    "3.9.1-4"
   ]
 }
