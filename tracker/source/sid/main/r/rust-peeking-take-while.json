@@ -6,19 +6,22 @@
     "librust-peeking-take-while-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 10), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "484a5aac9888a1d4544c140a9b7011812265248032b366780a326380949d1a56 2154 rust-peeking-take-while_0.1.2-1.dsc 76f0afa882b7cf8cb2938e21a926a31db737807bc574e1f7c855656709d762bc 7010 rust-peeking-take-while_0.1.2.orig.tar.gz 33a5b2455a524f2f4a1f6a7a3a7d12d81f4d5dbe3dd5a86a5f0cdf30ea51161e 2488 rust-peeking-take-while_0.1.2-1.debian.tar.xz"
+    "7610098723f6dbd6b7412530bf4e17c5d09efd892860542064678c24ffbab61b 2293 rust-peeking-take-while_1.0.0-1.dsc 9e9ed2178b0575fff8e1b83b58ba6f75e727aafac2e1b6c795169ad3b17eb518 7754 rust-peeking-take-while_1.0.0.orig.tar.gz cd26496473c9f1975fd256536a6ce581747f6526fe953f5129748780f5a326a7 2748 rust-peeking-take-while_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-peeking-take-while"
   ],
   "Files": [
-    "9dd1edf3ff622a8eb3f8fe2b75d882ae 2154 rust-peeking-take-while_0.1.2-1.dsc 1d067a9494356a485af7672db078d274 7010 rust-peeking-take-while_0.1.2.orig.tar.gz 3eca1f9d9147748e736375291e3b860c 2488 rust-peeking-take-while_0.1.2-1.debian.tar.xz"
+    "d6376a7116ab4455345e9e1dbf3bd55c 2293 rust-peeking-take-while_1.0.0-1.dsc 3100e0a388f2df4281863ac5868ead85 7754 rust-peeking-take-while_1.0.0.orig.tar.gz 3f925093b200a4fdeb3a4ccef1576098 2748 rust-peeking-take-while_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/fitzgen/peeking_take_while"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/peeking-take-while]"
   ],
   "Version": [
-    "0.1.2-1"
+    "1.0.0-1"
   ]
 }

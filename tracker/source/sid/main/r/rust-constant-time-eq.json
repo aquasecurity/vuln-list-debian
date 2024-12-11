@@ -6,19 +6,22 @@
     "librust-constant-time-eq-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "36139b4c5900e3e070ed7483c9cd98837d2a53bc3fb5b04417e8c67eb67391a5 2228 rust-constant-time-eq_0.3.0-1.dsc f7144d30dcf0fafbce74250a3963025d8d52177934239851c917d29f1df280c2 11369 rust-constant-time-eq_0.3.0.orig.tar.gz b841090eda54faf9b652d121d4202848004bf22924dabe8e9ac4a9c61e270d00 3084 rust-constant-time-eq_0.3.0-1.debian.tar.xz"
+    "914f0e789c18587e0b4f30c1c7189f05c35df332f43b9d8a0ec9373b9e1f55b0 2283 rust-constant-time-eq_0.3.1-1.dsc 7c74b8349d32d297c9134b8c88677813a227df8f779daa29bfc29c183fe3dca6 11561 rust-constant-time-eq_0.3.1.orig.tar.gz c6e1e49c07e92524438b1f9800be770d443540ecbb6679c291465333d7327a7b 3108 rust-constant-time-eq_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-constant-time-eq"
   ],
   "Files": [
-    "aabf7f0eaa355de8937e65c04bb8a073 2228 rust-constant-time-eq_0.3.0-1.dsc fe4f0be265b356c40895d1a163b92e78 11369 rust-constant-time-eq_0.3.0.orig.tar.gz 83516ad2bbd7e320dbe7e935c93d20d6 3084 rust-constant-time-eq_0.3.0-1.debian.tar.xz"
+    "194cccd4f8557ff0c00e12ff32575dcc 2283 rust-constant-time-eq_0.3.1-1.dsc a420be1752eb4ac451ef963031b2332e 11561 rust-constant-time-eq_0.3.1.orig.tar.gz 47969d5e3a785333fdbf470276e583d5 3108 rust-constant-time-eq_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cesarb/constant_time_eq"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/constant-time-eq]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1-1"
   ]
 }
