@@ -6,16 +6,16 @@
     "librust-manifest-dir-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b6fd29840c3b304774b925d93f09b7042f291f7677812cc0b09b04564325fb93 2473 rust-manifest-dir-macros_0.1.16-1.dsc f08150cf2bab1fc47c2196f4f41173a27fcd0f684165e5458c0046b53a472e2f 6160 rust-manifest-dir-macros_0.1.16.orig.tar.gz 122b7946c51f62de127bad1cba59eced711294f1b1b1e7ece761e1f5e99b3bca 2784 rust-manifest-dir-macros_0.1.16-1.debian.tar.xz"
+    "05ca47c5f5f82ba5afa45586636cc8432f4a3cf97144567a00ee703a03b06a43 1881 rust-manifest-dir-macros_0.1.18-1.dsc 9c6d40de1ccdbf8bde2eaa0750595478a368f7b3a3f89c426e3454f64e29f593 6144 rust-manifest-dir-macros_0.1.18.orig.tar.gz 622de7a0af927d2bd0b77833cc3730c5078af7a56cb24c2e84c4c45a76fa43db 2844 rust-manifest-dir-macros_0.1.18-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-manifest-dir-macros"
   ],
   "Files": [
-    "347e69b257e51bea98ea7978290cc10d 2473 rust-manifest-dir-macros_0.1.16-1.dsc a0826f855a0e8eea3dfc9dae16138877 6160 rust-manifest-dir-macros_0.1.16.orig.tar.gz e250f0c4e501882a3d8b0209a91fd311 2784 rust-manifest-dir-macros_0.1.16-1.debian.tar.xz"
+    "1ddd58157bfa8552ba51556feb3eab08 1881 rust-manifest-dir-macros_0.1.18-1.dsc 955b7e49123f9a9e08506ba31e11bb6f 6144 rust-manifest-dir-macros_0.1.18.orig.tar.gz d410f1dd25b84cce24ac70b33fe9843d 2844 rust-manifest-dir-macros_0.1.18-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/manifest-dir-macros"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/manifest-dir-macros]"
   ],
   "Version": [
-    "0.1.16-1"
+    "0.1.18-1"
   ]
 }
