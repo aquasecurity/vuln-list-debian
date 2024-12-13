@@ -6,19 +6,22 @@
     "librust-data-encoding-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.48) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.48) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f1076422124fda86c4135d0f4547ab6945bf302f3a54b926dbdbce8ebcaa641a 2193 rust-data-encoding_2.5.0-1.dsc 7e962a19be5cfc3f3bf6dd8f61eb50107f356ad6270fbb3ed41476571db78be5 20632 rust-data-encoding_2.5.0.orig.tar.gz b4ea498814d3c78d415860e846582cea7218879c3d127648e1db2a873d5105f2 2820 rust-data-encoding_2.5.0-1.debian.tar.xz"
+    "9ec5db50dbfd9201e138c77ffe42fe0adbfd58585ab74a7d9623ba22ee1d718f 2242 rust-data-encoding_2.6.0-1.dsc e8566979429cf69b49a5c740c60791108e86440e8be149bbea4fe54d2c32d6e2 20769 rust-data-encoding_2.6.0.orig.tar.gz b457f7bdd8898efa8ff04b1ff88643c747d4a01e1fa984d07e3561f72c4b1bdf 2844 rust-data-encoding_2.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-data-encoding"
   ],
   "Files": [
-    "255d4d9fb0a5f2ff779907d7f151452c 2193 rust-data-encoding_2.5.0-1.dsc 51773970fa42f802815cb95b727d368d 20632 rust-data-encoding_2.5.0.orig.tar.gz 29683a0705196d48c915654d02288f8f 2820 rust-data-encoding_2.5.0-1.debian.tar.xz"
+    "9272c26f8135dadc502587307184c3f8 2242 rust-data-encoding_2.6.0-1.dsc 26ee9e33b6eadfd3166cdc94d48c7dfe 20769 rust-data-encoding_2.6.0.orig.tar.gz cdffa1b4b9aa5f0b92fb0375fbddae97 2844 rust-data-encoding_2.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ia0/data-encoding"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/data-encoding]"
   ],
   "Version": [
-    "2.5.0-1"
+    "2.6.0-1"
   ]
 }

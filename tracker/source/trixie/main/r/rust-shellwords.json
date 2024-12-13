@@ -6,16 +6,16 @@
     "librust-shellwords-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 10), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.3.9-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "014bcf629012042b97f8fb2e29a347329893c4c6e5362a928847dde624403dd7 2237 rust-shellwords_1.0.0-1.dsc 685f0e9b0efe23d26e60a780d8dcd3ac95e90975814de9bc6f48e5d609b5d0f5 3901 rust-shellwords_1.0.0.orig.tar.gz 13195ce7188fb5d945d5bc2f9e74c23a2b1ad19b9fad8da7852ce95215fd84b9 2352 rust-shellwords_1.0.0-1.debian.tar.xz"
+    "b458226102f196a4ed36fe83beb5cd88f567ee977b7a1e4d50014ad22024d376 2320 rust-shellwords_1.1.0-1.dsc 89e515aa4699a88148ed5ef96413ceef0048ce95b43fbc955a33bde0a70fcae6 3965 rust-shellwords_1.1.0.orig.tar.gz 8da63797ecc1f72524d3dc9be93605a6bc9e38f2b6092efafb97c773380e7df1 2588 rust-shellwords_1.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-shellwords"
   ],
   "Files": [
-    "2f1c7f01a540512fdf819ecfc1ceeaa6 2237 rust-shellwords_1.0.0-1.dsc c6c016571c221746fe53e53608cfdc29 3901 rust-shellwords_1.0.0.orig.tar.gz 0c8482735ffaae071609e4800118d983 2352 rust-shellwords_1.0.0-1.debian.tar.xz"
+    "7c238abca21b3c0330f59ba28fa5ac35 2320 rust-shellwords_1.1.0-1.dsc f6eeafec802ce9ef73b714d7317c0e05 3965 rust-shellwords_1.1.0.orig.tar.gz 1502d67a4ffb1bdcd084b84a60794b08 2588 rust-shellwords_1.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/shellwords]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.1.0-1"
   ]
 }
