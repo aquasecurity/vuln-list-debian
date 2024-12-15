@@ -6,10 +6,10 @@
     "python3-stream-zip"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-pycryptodome, python3-pytest \u003c!nocheck\u003e, python3-pyzipper \u003c!nocheck\u003e, 7zip \u003c!nocheck\u003e, 7zip-standalone \u003c!nocheck\u003e, libarchive-tools \u003c!nocheck\u003e, unzip \u003c!nocheck\u003e"
+    "architecture-is-64-bit, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-pycryptodome, python3-pytest \u003c!nocheck\u003e, 7zip \u003c!nocheck\u003e, 7zip-standalone \u003c!nocheck\u003e, libarchive-tools \u003c!nocheck\u003e, unzip \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51d3cd3728538184e4543791000badcf2bbbec273b90509bf766106f937ec661 3623 stream-zip_0.0.83-2.dsc fa97c7517a1467d10849f3cb8771576f95e7e1cd517542c704e4daf08666bf59 126386 stream-zip_0.0.83.orig.tar.gz afedb42998a6f68fc7d0b2334077b3642ccd7eba3c04089cef81e9f4cb58921a 4508 stream-zip_0.0.83-2.debian.tar.xz"
+    "5bb75df005859dd9becc986392d7e14f4aa0ba21807d34867643371f4ef8f300 3635 stream-zip_0.0.83-3.dsc fa97c7517a1467d10849f3cb8771576f95e7e1cd517542c704e4daf08666bf59 126386 stream-zip_0.0.83.orig.tar.gz 6374d45714e2f02fb19e729a9a3bb60a8b3f4dc3b00f12bd9a719eca9759512b 4716 stream-zip_0.0.83-3.debian.tar.xz"
   ],
   "Description": [
     "Python function to construct a ZIP archive on the fly Python function to construct a ZIP archive on the fly - without having to store the entire ZIP in memory or disk. This is useful in memory-constrained environments, or when you would like to start returning compressed data before you've even retrieved all the uncompressed data. Generating ZIPs on-demand in a web server is a typical use case for stream-zip. . In addition to being memory efficient (with some limitations) stream-zip: . - Constructs ZIP files that can be stream unzipped, for example by stream-unzip - Can construct Zip64 ZIP files. Zip64 ZIP files allow sizes far beyond the approximate 4GiB limit of the original ZIP format - Can construct ZIP files that contain symbolic links - Can construct ZIP files that contain directories, including empty directories - Can construct password protected / AES-256 encrypted ZIP files adhering to the WinZip AE-2 specification - Allows the specification of permissions on the member files and directories (although not all clients respect them) - By default stores modification time as an extended timestamp. An extended timestamp is a more accurate timestamp than the original ZIP format allows - Provides an async interface (that uses threads under the hood)"
@@ -18,7 +18,7 @@
     "pool/main/s/stream-zip"
   ],
   "Files": [
-    "1b00b1e0cd77855eb619fa5d47568941 3623 stream-zip_0.0.83-2.dsc 74c329d3804e99b50daec1af0d8c7e86 126386 stream-zip_0.0.83.orig.tar.gz 3122248f6b6ea67616b96e18717f40b9 4508 stream-zip_0.0.83-2.debian.tar.xz"
+    "541df69f5b5277d08c114b260999dfde 3635 stream-zip_0.0.83-3.dsc 74c329d3804e99b50daec1af0d8c7e86 126386 stream-zip_0.0.83.orig.tar.gz c4964f0a70308a25b636c606310a8e45 4716 stream-zip_0.0.83-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/stream-zip.git"
   ],
   "Version": [
-    "0.0.83-2"
+    "0.0.83-3"
   ]
 }
