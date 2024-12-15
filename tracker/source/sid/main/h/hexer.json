@@ -6,19 +6,19 @@
     "hexer"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gcc (\u003e\u003e 4:9.2.1~), libncurses-dev"
+    "debhelper (\u003e\u003e 13.15.2~), dh-package-notes, dh-sequence-single-binary, dpkg-build-api (= 1), libncurses-dev, python3-libtmux \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3:any \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2fb75d69da94e7e1a444e3585f8e7e569260a6b383d0d8a7926a444b1dc7a153 2222 hexer_1.0.6-1.dsc e6b84ace5283825943f88ce7ec4ae836ec15ba41978b3a858d6d478cfe09ff94 93572 hexer_1.0.6.orig.tar.xz 673070313a375e5868bb9675e1bf7a59b8cde8af66304c7464250a58de003821 833 hexer_1.0.6.orig.tar.xz.asc ff01c015a3d77fcf8ae13e1374459be2ce8e72910c9aa8fff0ead0bebeed7755 8828 hexer_1.0.6-1.debian.tar.xz"
+    "cafef1c12c2d07af0c69851ceb445bce772998addea0a6ee43e091f17a606b3b 2436 hexer_1.0.6-2.dsc e6b84ace5283825943f88ce7ec4ae836ec15ba41978b3a858d6d478cfe09ff94 93572 hexer_1.0.6.orig.tar.xz 673070313a375e5868bb9675e1bf7a59b8cde8af66304c7464250a58de003821 833 hexer_1.0.6.orig.tar.xz.asc 82cd0b398a2eb53ae423586c27e8578bce0f60bcee1d531363046b0481bb692d 12340 hexer_1.0.6-2.debian.tar.xz"
   ],
   "Dgit": [
-    "fe367e756d1627fb31c8ba5851f64714af8d299b debian archive/debian/1.0.6-1 https://git.dgit.debian.org/hexer"
+    "94565f8c6c1779ed52c63f384f86db1934274b07 debian archive/debian/1.0.6-2 https://git.dgit.debian.org/hexer"
   ],
   "Directory": [
     "pool/main/h/hexer"
   ],
   "Files": [
-    "949dba2252ba1453ea94554d9a196184 2222 hexer_1.0.6-1.dsc 516d37a8f027cd556e98c4b81dfcf79a 93572 hexer_1.0.6.orig.tar.xz 8b02e7a65cdf93500fcc387f1c8e3139 833 hexer_1.0.6.orig.tar.xz.asc 9e194a582d9f1c1b6295206d70c530b5 8828 hexer_1.0.6-1.debian.tar.xz"
+    "b25a57c1bd8a785ad5d73ef747783117 2436 hexer_1.0.6-2.dsc 516d37a8f027cd556e98c4b81dfcf79a 93572 hexer_1.0.6.orig.tar.xz 8b02e7a65cdf93500fcc387f1c8e3139 833 hexer_1.0.6.orig.tar.xz.asc f7c3ab381588d44c4be75535e9df9051 12340 hexer_1.0.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,13 @@
     "utils"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3, python3-libtmux, python3-pytest"
   ],
   "Vcs-Browser": [
     "https://gitlab.com/hexer/hexer/tree/debian/master"
@@ -51,6 +57,6 @@
     "https://gitlab.com/hexer/hexer.git -b debian/master"
   ],
   "Version": [
-    "1.0.6-1"
+    "1.0.6-2"
   ]
 }
