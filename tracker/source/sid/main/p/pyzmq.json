@@ -6,16 +6,19 @@
     "python3-zmq"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, dh-python, libzmq3-dev, cython3, python3-all-dev, python3-cffi \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-tornado \u003c!nocheck\u003e"
+    "cmake, cython3 (\u003e= 3.0.0), debhelper-compat (= 13), dh-python, libzmq3-dev, pybuild-plugin-pyproject, python3-all-dev, python3-cffi \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-rerunfailures \u003c!nocheck\u003e, python3-scikit-build-core, python3-tornado \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9996d1877877243e065c3e4cfdf0f2905b68341eb039ff5fb177776d24889ad1 1726 pyzmq_24.0.1-5.dsc ce8ea133817947828852847e7b940df41e7672183411ca7175102c05d5dbffad 404000 pyzmq_24.0.1.orig.tar.gz f6fcdca410d9fef7200f6dde2fc8e1962fd1d1f3c9168f41441c944b30e4c994 10820 pyzmq_24.0.1-5.debian.tar.xz"
+    "a8288fbd0d9f6a97749376a43b92d0aed9f0ca1e279185f9d65f6017ff330d76 2570 pyzmq_26.2.0-1.dsc 76aa595fab623a3250b2d3bf4139b8eafcbb527cd08e4632abad4e814f903493 272883 pyzmq_26.2.0.orig.tar.gz 6ab70a1bb3ac36a353d5dfd22165c81618a9c5603aac3dbfd5dbc02afa43e00c 10328 pyzmq_26.2.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "13b5cb2f062a822da6a556f57defd20e535ab969 debian archive/debian/26.2.0-1 https://git.dgit.debian.org/pyzmq"
   ],
   "Directory": [
     "pool/main/p/pyzmq"
   ],
   "Files": [
-    "00f4dae395df1f2c233c1d00d6df7388 1726 pyzmq_24.0.1-5.dsc b5e80d8d41d20850038c9bf006da3123 404000 pyzmq_24.0.1.orig.tar.gz 5825c6c57d993b519b91d653e8000ddd 10820 pyzmq_24.0.1-5.debian.tar.xz"
+    "5741ae2b770b6588bc1bc5fe55e899c3 2570 pyzmq_26.2.0-1.dsc 2c90f672ece6f35e1dacff7ae38ebacb 272883 pyzmq_26.2.0.orig.tar.gz d0b7cb862775083cf4ffdec02e913c20 10328 pyzmq_26.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-numpy, python3-pytest, python3-tornado"
+    "python3-all, python3-numpy, python3-pytest, python3-pytest-asyncio, python3-pytest-rerunfailures, python3-tornado"
   ],
   "Uploaders": [
     "Julian Taylor \u003cjtaylor.debian@googlemail.com\u003e, Vincent Bernat \u003cbernat@debian.org\u003e, Laszlo Boszormenyi (GCS) \u003cgcs@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/pyzmq.git"
   ],
   "Version": [
-    "24.0.1-5"
+    "26.2.0-1"
   ]
 }

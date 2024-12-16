@@ -6,16 +6,16 @@
     "librust-statrs-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+default-dev \u003c!nocheck\u003e, librust-nalgebra-0.33+default-dev \u003c!nocheck\u003e, librust-nalgebra-0.33+rand-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+default-dev \u003c!nocheck\u003e, librust-nalgebra-0.33+rand-dev \u003c!nocheck\u003e, librust-nalgebra-0.33+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "69dc899fd6a9fbc8170ba0ce6611ec2491a9f9c2f60a9a3c5b5e3131ac7e987a 2436 rust-statrs_0.17.1-3.dsc f697a07e4606a0a25c044de247e583a330dbb1731d11bc7350b81f48ad567255 139729 rust-statrs_0.17.1.orig.tar.gz a73b1cb0d4cb9d1dd83b1c14c990ae4fec3a0e42b727abf7fa8c925302b87f94 4076 rust-statrs_0.17.1-3.debian.tar.xz"
+    "5e491e52b4d3c02a35100a21ef7b2958e819dd3e749584351057a01e671657e1 2509 rust-statrs_0.18.0-2.dsc 2a3fe7c28c6512e766b0874335db33c94ad7b8f9054228ae1c2abd47ce7d335e 156842 rust-statrs_0.18.0.orig.tar.gz 99992062923480fcf51df116dfa4a381270b98a122a8d4f8bbdc41b161c42c9c 4048 rust-statrs_0.18.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-statrs"
   ],
   "Files": [
-    "7b1b21d396f1b666f2245aac64d30400 2436 rust-statrs_0.17.1-3.dsc 67427833b64b2578b045b1c593fed2a1 139729 rust-statrs_0.17.1.orig.tar.gz 6e7c03aee415a1217d1359c8f49a4e37 4076 rust-statrs_0.17.1-3.debian.tar.xz"
+    "3a2c79ffd6f86e2ef168186d1ddc2527 2509 rust-statrs_0.18.0-2.dsc f57aed35e4c0e83ab12b4a481d64994a 156842 rust-statrs_0.18.0.orig.tar.gz 4fc422c8b26c5e93fc4893f4acba6ad7 4048 rust-statrs_0.18.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, rustc"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-criterion-0.5+default-dev, librust-nalgebra-0.33+macros-dev, rustc"
   ],
   "Uploaders": [
     "Yogeswaran Umasankar \u003cyogu@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/statrs]"
   ],
   "Version": [
-    "0.17.1-3"
+    "0.18.0-2"
   ]
 }
