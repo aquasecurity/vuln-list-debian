@@ -9,19 +9,19 @@
     "libamdhip64-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-fortran-mod, gfortran | fortran-compiler, chrpath, hwloc-nox, libhwloc-dev, librdmacm-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libslurm-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libibverbs-dev (\u003e= 1.1.7) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libfabric-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any !powerpc !sh4 !x32], libnuma-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-any], libucx-dev [amd64 ppc64el arm64], libpmix-dev [amd64 arm64 mips64el ppc64el riscv64 s390x loong64 alpha ia64 ppc64 sparc64], libxt-dev, procps, python3, txt2man, valgrind [i386 arm64 ppc64el ppc64 amd64 powerpc armhf], x11proto-core-dev"
+    "debhelper-compat (= 13), gfortran, dh-sequence-fortran-mod, hwloc-nox, libhwloc-dev, librdmacm-dev [!hurd-any], libslurm-dev (\u003e= 23.11) [!hurd-any], libibverbs-dev (\u003e= 1.1.7) [!hurd-any], libfabric-dev [!hurd-any !powerpc !sh4], libnuma-dev [!hurd-any], libucx-dev [amd64 arm64 ppc64el riscv64 loong64], libpmix-dev [amd64 arm64 mips64el ppc64el riscv64 s390x loong64 alpha ia64 ppc64 sparc64], libxt-dev, procps, python3, quilt, txt2man, valgrind-if-available, x11proto-core-dev"
   ],
   "Build-Depends-Indep": [
     "texlive-latex-extra, texlive-latex-recommended, doxygen-latex"
   ],
   "Checksums-Sha256": [
-    "c6ed6be5e0fbb04d5e624614b1f4185393b973ec6ed936d157115dbb83d93cda 2989 mpich_4.2.1-2.dsc 9d200ce993a870be4d4682acb1fd367f3507b49c3465bf4fc8b81c717e0e798f 23208980 mpich_4.2.1.orig.tar.xz 14182cf2839e3e274d6bf05f3e946fd12df58bfef21373aa6319721a0e43b9e7 339952 mpich_4.2.1-2.debian.tar.xz"
+    "72f7f24fe9d535d415573c6a6bcff8f30d32ad85f17e6b6ef54afd637d8d17d9 2813 mpich_4.2.1-4.dsc 9d200ce993a870be4d4682acb1fd367f3507b49c3465bf4fc8b81c717e0e798f 23208980 mpich_4.2.1.orig.tar.xz 5eb50fd67ee7cdaee7939a18bcedeb4560bdf6fb816f400e149a5db851b3536a 344508 mpich_4.2.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mpich"
   ],
   "Files": [
-    "ae31884ce3dc09371d67cf96e86b2a2f 2989 mpich_4.2.1-2.dsc 98a2d2ffb7da22c988fd8d2286ca74f1 23208980 mpich_4.2.1.orig.tar.xz 90793fb64e934801e66e1595ac3b6fb9 339952 mpich_4.2.1-2.debian.tar.xz"
+    "a14c463af1b7f20010cc1eec930bd953 2813 mpich_4.2.1-4.dsc 98a2d2ffb7da22c988fd8d2286ca74f1 23208980 mpich_4.2.1.orig.tar.xz 4dd4ad76e2fbaf923c24264f2a0f60a5 344508 mpich_4.2.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gcc, gfortran"
+    "gcc, gfortran, pkg-config"
   ],
   "Uploaders": [
     "Torquil Macdonald Sørensen \u003ctorquil@gmail.com\u003e, \"Adam C. Powell, IV\" \u003chazelsct@debian.org\u003e, Alastair McKinstry \u003cmckinstry@debian.org\u003e"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/science-team/mpich.git -b debian/latest"
   ],
   "Version": [
-    "4.2.1-2"
+    "4.2.1-4"
   ]
 }
