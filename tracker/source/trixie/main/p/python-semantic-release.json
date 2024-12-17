@@ -9,19 +9,19 @@
     "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "furo \u003c!nodoc\u003e, git \u003c!nocheck\u003e, python3-click \u003c!nocheck\u003e, python3-click-log \u003c!nocheck\u003e, python3-click-option-group \u003c!nocheck\u003e, python3-dotty-dict \u003c!nocheck\u003e, python3-git \u003c!nocheck\u003e, python3-gitlab \u003c!nocheck\u003e, python3-importlib-resources \u003c!nocheck\u003e, python3-invoke \u003c!nocheck\u003e, python3-pydantic (\u003e= 2.0), python3-pytest \u003c!nocheck\u003e, python3-pytest-lazy-fixtures \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-requests-mock \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-semver \u003c!nocheck\u003e, python3-shellingham \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.apidoc \u003c!nodoc\u003e, python3-tomlkit \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e, twine \u003c!nocheck\u003e"
+    "furo \u003c!nodoc\u003e, git \u003c!nocheck\u003e, python3-click \u003c!nocheck\u003e, python3-click-log \u003c!nocheck\u003e, python3-click-option-group \u003c!nocheck\u003e, python3-dotty-dict \u003c!nocheck\u003e, python3-filelock \u003c!nocheck\u003e, python3-flatdict \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-git \u003c!nocheck\u003e, python3-gitlab \u003c!nocheck\u003e, python3-importlib-resources \u003c!nocheck\u003e, python3-invoke \u003c!nocheck\u003e, python3-pydantic (\u003e= 2.0), python3-pytest \u003c!nocheck\u003e, python3-pytest-env \u003c!nocheck\u003e, python3-pytest-lazy-fixtures \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-pytest-order \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-requests-mock \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-semver \u003c!nocheck\u003e, python3-shellingham \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.apidoc \u003c!nodoc\u003e, python3-tomlkit \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e, twine \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a95504c12abf5471384e41858fbe74b7d4e0a5e539a15cc552047babcd24e476 3469 python-semantic-release_9.14.0-1.dsc 5d012441f988b2204dea9fe96846770edf45ab4f671a669d7d4657be13123ef7 289981 python-semantic-release_9.14.0.orig.tar.gz 77181fdce3db50e05a57f44d780cf57a2a9ce5612d66b0f9850a919a3a97dc34 4484 python-semantic-release_9.14.0-1.debian.tar.xz"
+    "f5ff83ff7e2b31e17b3e84a0f5069521f9dd6f9205f8ae441245eb2dfc2adf24 3267 python-semantic-release_9.15.1-1.dsc d680a232d606e7f7701c8608d621aa3fbd60b1554253c1d9a7516d966242c795 315359 python-semantic-release_9.15.1.orig.tar.gz acf7512f8a25d0746d8dabbc09f334bddc909efab0186a8d4f2db528aa0f7c20 4264 python-semantic-release_9.15.1-1.debian.tar.xz"
   ],
   "Dgit": [
-    "28ed9ebd363b35e7e2d7cc511eb91cfbcb7bad83 debian archive/debian/9.14.0-1 https://git.dgit.debian.org/python-semantic-release"
+    "9809212ced09d14de35efb1761fe6ac860ab686c debian archive/debian/9.15.1-1 https://git.dgit.debian.org/python-semantic-release"
   ],
   "Directory": [
     "pool/main/p/python-semantic-release"
   ],
   "Files": [
-    "b1b105bbc49a9dbab836514f8e21fda1 3469 python-semantic-release_9.14.0-1.dsc 4da3877ed9b840cd6821672932e4bce1 289981 python-semantic-release_9.14.0.orig.tar.gz 259cb5f29290aa081505eaa40a4b5dad 4484 python-semantic-release_9.14.0-1.debian.tar.xz"
+    "7897a1a53ba379e4270f4fafb54b1f5f 3267 python-semantic-release_9.15.1-1.dsc a85f8dceb9d046458cdfe4fe0aa5ff6a 315359 python-semantic-release_9.15.1.orig.tar.gz d08f2a05ec0879813ea58498fdd04621 4264 python-semantic-release_9.15.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,10 +48,7 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "git, python3-all, python3-click, python3-click-log, python3-click-option-group, python3-dotty-dict, python3-git, python3-gitlab, python3-importlib-resources, python3-invoke, python3-pydantic, python3-pytest, python3-pytest-lazy-fixtures, python3-pytest-mock, python3-requests, python3-requests-mock, python3-responses, python3-semver, python3-shellingham, python3-tomlkit, twine"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -63,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-semantic-release.git"
   ],
   "Version": [
-    "9.14.0-1"
+    "9.15.1-1"
   ]
 }

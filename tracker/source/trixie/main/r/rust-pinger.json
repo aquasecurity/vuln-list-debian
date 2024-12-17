@@ -6,19 +6,22 @@
     "librust-pinger-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.81-~~) \u003c!nocheck\u003e, librust-lazy-regex+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.58-~~) \u003c!nocheck\u003e, iputils-ping \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.81-~~) \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev (\u003e= 3.1.0-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.58-~~) \u003c!nocheck\u003e, iputils-ping \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8cf4c2417c6531bcc8fba1333a95b7c35cc8fc108d7bd9dcff1a4246f54297b1 1772 rust-pinger_1.2.3-1.dsc e0b58ce2c20c9c0d95be0e89cda8062d5e3a4ffd7952c9fb1549687d5df82360 10693 rust-pinger_1.2.3.orig.tar.gz 9525488f15fcfc003620c4e4c6e3ebcc254412ca879b23eebf2b2c62167860f8 3208 rust-pinger_1.2.3-1.debian.tar.xz"
+    "aa8aa4dcc7e6bcff89d813328ea39a9b2fca7e59d4baa7d31e13af69f2d961ca 1831 rust-pinger_1.2.3-2.dsc e0b58ce2c20c9c0d95be0e89cda8062d5e3a4ffd7952c9fb1549687d5df82360 10693 rust-pinger_1.2.3.orig.tar.gz c3e951db46214bf9de074ca4632f63d91e55cec2630f113ca457c833dba29117 3224 rust-pinger_1.2.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pinger"
   ],
   "Files": [
-    "6f0354b9fb5382f63b556720310ec5e7 1772 rust-pinger_1.2.3-1.dsc 52e89fdfc3e000f61698bc764f0de522 10693 rust-pinger_1.2.3.orig.tar.gz 36edc808567a6171b1ddc20340ad0860 3208 rust-pinger_1.2.3-1.debian.tar.xz"
+    "2ccec39c30f048d27bdadfe5d40b255b 1831 rust-pinger_1.2.3-2.dsc 52e89fdfc3e000f61698bc764f0de522 10693 rust-pinger_1.2.3.orig.tar.gz be4eb97d0879f67138d31d3e349cba33 3224 rust-pinger_1.2.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/orf/pinger/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-os-info-3+default-dev"
+    "dh-cargo, librust-os-info-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pinger]"
   ],
   "Version": [
-    "1.2.3-1"
+    "1.2.3-2"
   ]
 }

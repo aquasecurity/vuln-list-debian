@@ -6,19 +6,22 @@
     "librust-termimad-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-coolor-0.9+crossterm-dev \u003c!nocheck\u003e, librust-coolor-0.9+default-dev \u003c!nocheck\u003e, librust-crokey-1+default-dev \u003c!nocheck\u003e, librust-crossbeam-0.8+default-dev \u003c!nocheck\u003e, librust-lazy-regex+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-minimad-0.13+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-coolor-0.9+crossterm-dev \u003c!nocheck\u003e, librust-coolor-0.9+default-dev \u003c!nocheck\u003e, librust-crokey-1+default-dev \u003c!nocheck\u003e, librust-crossbeam-0.8+default-dev \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev \u003c!nocheck\u003e, librust-minimad-0.13+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "75a73302d1ff1293a7fba03b9c4d27fbc01b4d0a881acb65790a80a5ad64c6c5 2843 rust-termimad_0.29.4-1.dsc eff854b510d076163c3b8628ebfe6bfbe6f01c3254b8b8e77cac7ad2d8c72b06 441288 rust-termimad_0.29.4.orig.tar.gz a4bf35074f6405b59b0449a33882e13c6a9c1b7eb5bcd061c7813e0d901f5c2f 2984 rust-termimad_0.29.4-1.debian.tar.xz"
+    "6904622ab14cfe5639f6f4d4e0b927b1d7d70cd0a68c5aa440a3b39c1da88590 2259 rust-termimad_0.29.4-2.dsc eff854b510d076163c3b8628ebfe6bfbe6f01c3254b8b8e77cac7ad2d8c72b06 441288 rust-termimad_0.29.4.orig.tar.gz ed4139607b8a54e53488c4548f64610cc8ebf54bdbd0fe5aa76fe23d090c0273 2892 rust-termimad_0.29.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-termimad"
   ],
   "Files": [
-    "d409ed32fcb565628d15fe706c1f8ddf 2843 rust-termimad_0.29.4-1.dsc ec27beb8d66174f599501494b1b6c540 441288 rust-termimad_0.29.4.orig.tar.gz eff6d46cc99bfc461f91b746aadcaff5 2984 rust-termimad_0.29.4-1.debian.tar.xz"
+    "98679da3e900500c8e4c7fe270e0650c 2259 rust-termimad_0.29.4-2.dsc ec27beb8d66174f599501494b1b6c540 441288 rust-termimad_0.29.4.orig.tar.gz 381302b0d6dde5e14d55dba33b81ffa9 2892 rust-termimad_0.29.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Canop/termimad"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-cli-log-2+default-dev, librust-deser-hjson-2+default-dev, librust-pretty-assertions-1+default-dev, librust-serde-json-1+default-dev, librust-terminal-clipboard-0.4+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-cli-log-2+default-dev, librust-deser-hjson-2+default-dev, librust-pretty-assertions-1+default-dev, librust-serde-json-1+default-dev, librust-terminal-clipboard-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/termimad]"
   ],
   "Version": [
-    "0.29.4-1"
+    "0.29.4-2"
   ]
 }

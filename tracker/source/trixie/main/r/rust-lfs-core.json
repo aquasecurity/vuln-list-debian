@@ -6,19 +6,22 @@
     "librust-lfs-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-regex-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-snafu-0.7+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev (\u003e= 3.0.2-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-snafu-0.7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3c853e0d066b4e9973987ac38f4ce0036056cde4465af5a635a7a01ca03d1d11 1657 rust-lfs-core_0.11.2-1.dsc 75aa9f1a56e1178a04270bdd6f28b3a9cc34bc5429a3139cd03e2eae2ecb455a 8568 rust-lfs-core_0.11.2.orig.tar.gz cd518445176bb8354908d32ca12af7cb0a28ce6786eb23f757e378bdccbc2fa7 2808 rust-lfs-core_0.11.2-1.debian.tar.xz"
+    "dbc8b52a315605baf6b9540ddae0dcd72108fabd1ba911920f7b1461ed961095 1717 rust-lfs-core_0.11.2-2.dsc 75aa9f1a56e1178a04270bdd6f28b3a9cc34bc5429a3139cd03e2eae2ecb455a 8568 rust-lfs-core_0.11.2.orig.tar.gz 5b71320d120a419b61e52c3efdd145793803a5458021ad866abc3eca2156fe47 2748 rust-lfs-core_0.11.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lfs-core"
   ],
   "Files": [
-    "f006c8c193682dabd055c2266a733de0 1657 rust-lfs-core_0.11.2-1.dsc 7764f43064514569ae3e5499794c9ecc 8568 rust-lfs-core_0.11.2.orig.tar.gz 10610153e401d6c5e80b1f6ad4de8bfa 2808 rust-lfs-core_0.11.2-1.debian.tar.xz"
+    "62435717128f7d7bd5a9cc6649dacde0 1717 rust-lfs-core_0.11.2-2.dsc 7764f43064514569ae3e5499794c9ecc 8568 rust-lfs-core_0.11.2.orig.tar.gz c9128a837cd6924fbcd49638d0b2803b 2748 rust-lfs-core_0.11.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Canop/lfs-core"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lfs-core]"
   ],
   "Version": [
-    "0.11.2-1"
+    "0.11.2-2"
   ]
 }
