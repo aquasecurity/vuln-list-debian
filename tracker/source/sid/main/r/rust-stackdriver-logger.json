@@ -6,19 +6,22 @@
     "librust-stackdriver-logger-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+clock-dev \u003c!nocheck\u003e, librust-env-logger-0.10+humantime-dev \u003c!nocheck\u003e, librust-env-logger-0.10+regex-dev \u003c!nocheck\u003e, librust-env-logger-0.10-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pretty-env-logger-0.5+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+clock-dev \u003c!nocheck\u003e, librust-env-logger-0.10+humantime-dev \u003c!nocheck\u003e, librust-env-logger-0.10+regex-dev \u003c!nocheck\u003e, librust-env-logger-0.10-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pretty-env-logger-0.5+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5b3e964e3475226fc9b2288b169417c092dd5ef50ee899b3dd6d38e35b55b913 2608 rust-stackdriver-logger_0.8.2-2.dsc f7935e3a17a0164bf9b908908b07514326119a677aab39370e957a4cd76d8dd7 5739 rust-stackdriver-logger_0.8.2.orig.tar.gz f1c8481aa85d3cfb4076b3156189f813493e1aa0bf9ff1165276b32f8d8bccfe 3384 rust-stackdriver-logger_0.8.2-2.debian.tar.xz"
+    "d8298ca7394fd8ccbf0a7d8e2cac1818f0a67f9fad189d3570024a6820fdbf9d 2046 rust-stackdriver-logger_0.8.2-3.dsc f7935e3a17a0164bf9b908908b07514326119a677aab39370e957a4cd76d8dd7 5739 rust-stackdriver-logger_0.8.2.orig.tar.gz 4fdc650924c86bc0120235786a60704173830d37cbc1745924c856a3aac85a0a 3640 rust-stackdriver-logger_0.8.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-stackdriver-logger"
   ],
   "Files": [
-    "73dec1937a741fd18ed7b9fff4027a91 2608 rust-stackdriver-logger_0.8.2-2.dsc 50b30ff97fbaebf65c5816e2f91fcc4d 5739 rust-stackdriver-logger_0.8.2.orig.tar.gz 526b83295d6746004ec10da97bfb1ca2 3384 rust-stackdriver-logger_0.8.2-2.debian.tar.xz"
+    "204f1d508666e4e2f65ab96f034d478b 2046 rust-stackdriver-logger_0.8.2-3.dsc 50b30ff97fbaebf65c5816e2f91fcc4d 5739 rust-stackdriver-logger_0.8.2.orig.tar.gz 5c3a3a68f77e789adacf065080caa8db 3640 rust-stackdriver-logger_0.8.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kamek-pf/stackdriver-logger/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/stackdriver-logger]"
   ],
   "Version": [
-    "0.8.2-2"
+    "0.8.2-3"
   ]
 }
