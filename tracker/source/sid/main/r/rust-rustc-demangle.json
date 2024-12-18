@@ -6,22 +6,22 @@
     "librust-rustc-demangle-dev, librust-rustc-demangle+compiler-builtins-dev, librust-rustc-demangle+core-dev, librust-rustc-demangle+rustc-dep-of-std-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "243c28a35d68ac443ca59cdcae2c640b9f9bcd3feffa944097304af9b04a853d 2633 rust-rustc-demangle_0.1.21-1.dsc 7ef03e0a2b150c7a90d01faf6254c9c48a41e95fb2a8c2ac1c6f0d2b9aefc342 27920 rust-rustc-demangle_0.1.21.orig.tar.gz ce23d8f13718c0657d5ec536bc02dc398bf66dba3b7e2a9e5b19805d36e26d0d 3376 rust-rustc-demangle_0.1.21-1.debian.tar.xz"
+    "1875732051854ae1087e5780f36bd5b098be9559b0a7a7ffcdf32e5a7dc79360 2644 rust-rustc-demangle_0.1.24-1.dsc 719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f 29047 rust-rustc-demangle_0.1.24.orig.tar.gz e146bfa2c32e215d54ada686d1a0a9695228956942736bfb239bb1784a14b572 3432 rust-rustc-demangle_0.1.24-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustc-demangle"
   ],
   "Files": [
-    "9faafe60d879531368baa05d8129efaf 2633 rust-rustc-demangle_0.1.21-1.dsc 6eb014e73f66bc13226e0ef6d815d375 27920 rust-rustc-demangle_0.1.21.orig.tar.gz 3735f1ac365b5b05f5bcb0bdb6b59ff0 3376 rust-rustc-demangle_0.1.21-1.debian.tar.xz"
+    "b253d041db3dfa58014567cc4c9863c4 2644 rust-rustc-demangle_0.1.24-1.dsc b400c455aaf7d3e6a216261f07c4bc93 29047 rust-rustc-demangle_0.1.24.orig.tar.gz b8cc95d40159d7054bdd8373337019a8 3432 rust-rustc-demangle_0.1.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/alexcrichton/rustc-demangle"
+    "https://github.com/rust-lang/rustc-demangle"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustc-demangle]"
   ],
   "Version": [
-    "0.1.21-1"
+    "0.1.24-1"
   ]
 }
