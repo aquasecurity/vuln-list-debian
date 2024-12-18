@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "postfix, postfix-ldap, postfix-lmdb, postfix-cdb, postfix-pcre, postfix-mongodb, postfix-mysql, postfix-pgsql, postfix-sqlite, postfix-doc"
+    "postfix, postfix-doc, postfix-ldap, postfix-lmdb, postfix-cdb, postfix-pcre, postfix-mongodb, postfix-mysql, postfix-pgsql, postfix-sqlite"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-libmysqlclient-dev, dpkg-dev (\u003e= 1.16.1~), groff-base, html2text, libcdb-dev, libdb-dev (\u003e= 4.6.19), libicu-dev, libldap-dev, liblmdb-dev, libmongoc-dev, libnsl-dev | libc6-dev (\u003c\u003c 2.37-15.1), libpcre2-dev, libpq-dev, libsasl2-dev, libsqlite3-dev, libssl-dev (\u003e= 1.0.2), lsb-release, patch, pkgconf, po-debconf (\u003e= 0.5.0), systemd-dev, txt2man"
+    "debhelper-compat (= 13), default-libmysqlclient-dev, groff-base, html2text, libcdb-dev, libdb-dev, libicu-dev, libldap-dev, liblmdb-dev, libmongoc-dev [linux-any], libnsl-dev | libc6-dev (\u003c\u003c 2.37-15.1), libpcre2-dev, libpq-dev, libsasl2-dev, libsqlite3-dev, libssl-dev, lsb-release, patch, pkgconf, po-debconf, systemd-dev, txt2man"
   ],
   "Checksums-Sha256": [
-    "73ed64b9eeb0e26cb01de072078dab8911dff428e085e9726e0cec69d4511d89 3190 postfix_3.9.1-3.dsc c488944eb0362576d18f5f8cc4b9b32a35bcb35d71b947daac9764af4770f643 4953855 postfix_3.9.1.orig.tar.gz 26fa5a24c91bd4ad3abaebb5ecaf509877344e036f36801c93dc83311a018028 220 postfix_3.9.1.orig.tar.gz.asc d790b464587cb8bb831167e1614c7ddfcc698997f2963bb2b734cf761867a90e 195696 postfix_3.9.1-3.debian.tar.xz"
+    "70712b0ec620ed85ee1206640b2f3d75a54669e0249c846bb17c14c19ec85dcd 3161 postfix_3.9.1-6.dsc c488944eb0362576d18f5f8cc4b9b32a35bcb35d71b947daac9764af4770f643 4953855 postfix_3.9.1.orig.tar.gz 26fa5a24c91bd4ad3abaebb5ecaf509877344e036f36801c93dc83311a018028 220 postfix_3.9.1.orig.tar.gz.asc d9186307be60101265c2ffe39de643709be0103c4fa29d2cb14379a9a5ad2d0d 199608 postfix_3.9.1-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postfix"
   ],
   "Files": [
-    "8a7ac5e72abbb171ee863b4d181503b9 3190 postfix_3.9.1-3.dsc b2fe7ab1a37a05b24b595d441aa1247f 4953855 postfix_3.9.1.orig.tar.gz 02c6ce084c9fb3316debe9b8751ac9a5 220 postfix_3.9.1.orig.tar.gz.asc c778c36cce7840b01f7fb5e086816771 195696 postfix_3.9.1-3.debian.tar.xz"
+    "99524b38456539452a96ea28e4321a52 3161 postfix_3.9.1-6.dsc b2fe7ab1a37a05b24b595d441aa1247f 4953855 postfix_3.9.1.orig.tar.gz 02c6ce084c9fb3316debe9b8751ac9a5 220 postfix_3.9.1.orig.tar.gz.asc 173d99d329f3b7160dbc9c5935d5f9da 199608 postfix_3.9.1-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postfix"
   ],
   "Package-List": [
-    "postfix deb mail optional arch=any postfix-cdb deb mail optional arch=any postfix-doc deb doc optional arch=all postfix-ldap deb mail optional arch=any postfix-lmdb deb mail optional arch=any postfix-mongodb deb mail optional arch=any postfix-mysql deb mail optional arch=any postfix-pcre deb mail optional arch=any postfix-pgsql deb mail optional arch=any postfix-sqlite deb mail optional arch=any"
+    "postfix deb mail optional arch=any postfix-cdb deb mail optional arch=any postfix-doc deb doc optional arch=all postfix-ldap deb mail optional arch=any postfix-lmdb deb mail optional arch=any postfix-mongodb deb mail optional arch=linux-any postfix-mysql deb mail optional arch=any postfix-pcre deb mail optional arch=any postfix-pgsql deb mail optional arch=any postfix-sqlite deb mail optional arch=any"
   ],
   "Priority": [
     "source"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "libsasl2-modules, lsb-release, procmail, python3, python3-pexpect, sasl2-bin"
+    "libsasl2-modules, lsb-release, procmail, python3, python3-pexpect, sasl2-bin, ssl-cert"
   ],
   "Uploaders": [
     "LaMont Jones \u003clamont@debian.org\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e, Scott Kitterman \u003cscott@kitterman.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postfix-team/postfix-dev.git"
   ],
   "Version": [
-    "3.9.1-3"
+    "3.9.1-6"
   ]
 }
