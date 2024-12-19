@@ -6,16 +6,19 @@
     "beancount, python3-beancount"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, gnupg, help2man \u003c!nodoc\u003e, ledger, python3-all, python3-all-dev, python3-bottle, python3-bs4, python3-chardet, python3-dateutil, python3-googleapi, python3-google-auth-oauthlib, python3-lxml, python3-magic, python3-pdfminer \u003c!nocheck\u003e, python3-ply, python3-pytest \u003c!nocheck\u003e, python3-requests, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, gnupg, help2man \u003c!nodoc\u003e, ledger, pkgconf, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-bottle, python3-bs4, python3-click (\u003e= 7.0), python3-dateutil (\u003e= 2.6.0), python3-google-auth-oauthlib, python3-googleapi, python3-lxml, python3-magic, python3-mesonpy, python3-pdfminer \u003c!nocheck\u003e, python3-ply, python3-pytest \u003c!nocheck\u003e, python3-regex, python3-requests, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "af01baa33c0a950aa2d8b5461d3db934aa8601d38d0f32ad69bff4fa50c3c4d5 2372 beancount_2.3.6-2.dsc d02819a18fcf2974287a8d2d0949a47b3d2bc4a1b27642cb0424e773207a03e5 1720239 beancount_2.3.6.orig.tar.gz 40859c1be0a7457dcb865e88dea6ffc2d3136d1258a817dc85a94bc5d7048617 10884 beancount_2.3.6-2.debian.tar.xz"
+    "af4be9431e503e25ef31d80586639594e701f1791a851d5f2b0eeb6ee91334ca 2989 beancount_3.0.0-1.dsc 1f260ababb58d5976c7e51aacf54fa8bac0f89dca9365669eea1ec18a3bf3864 1277638 beancount_3.0.0.orig.tar.gz 893fdba35d783a63a30b2e856bb9f96bfbcecab6da5e619bcf2ff7570299f794 11124 beancount_3.0.0-1.debian.tar.xz"
+  ],
+  "Description": [
+    "Double-entry accounting from text files A double-entry bookkeeping computer language that lets you define financial transaction records in a text file, read them in memory, generate a variety of reports from them, and provides a web interface. . The following features require the following extra dependencies to be installed: - Beancount Web [python3-bottle] - OFX import [python3-bs4] - Google Sheets upload [python3-googleapi python3-google-auth-oauthlib] - External price imports [python3-requests]"
   ],
   "Directory": [
     "pool/main/b/beancount"
   ],
   "Files": [
-    "a31b0ec9a3b066d3f4dcb32a036be20d 2372 beancount_2.3.6-2.dsc 6af3368a1c33af5d3413b8aeb12db83b 1720239 beancount_2.3.6.orig.tar.gz 85c11fcf92995656917c7e54cbf86680 10884 beancount_2.3.6-2.debian.tar.xz"
+    "a7fc847a281a9141685739c272210bc2 2989 beancount_3.0.0-1.dsc a851f148eff0bcea9ac8a70449a093d5 1277638 beancount_3.0.0.orig.tar.gz 6e7e05e11a2bff3d744f4708c80d3631 11124 beancount_3.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +45,7 @@
     "4.7.0"
   ],
   "Uploaders": [
-    "Nicolas Dandrimont \u003colasd@debian.org\u003e, Stefano Zacchiroli \u003czack@debian.org\u003e"
+    "Nicolas Dandrimont \u003colasd@debian.org\u003e, Stefano Zacchiroli \u003czack@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/beancount"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/beancount.git"
   ],
   "Version": [
-    "2.3.6-2"
+    "3.0.0-1"
   ]
 }

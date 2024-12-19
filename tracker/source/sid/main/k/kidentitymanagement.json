@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libkf5identitymanagement-dev, libkf5identitymanagement5, libkf5identitymanagementwidgets5"
+    "libkidentitymanagement-data, libkidentitymanagement-dev, libkpim6identitymanagementcore6, libkpim6identitymanagementquick6, libkpim6identitymanagementwidgets6, qml6-module-org-kde-kidentitymanagement"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.16~), debhelper-compat (= 13), extra-cmake-modules (\u003e= 5.99.0~), gettext, libkf5codecs-dev (\u003e= 5.99.0~), libkf5config-dev (\u003e= 5.99.0~), libkf5coreaddons-dev (\u003e= 5.99.0~), libkf5kio-dev (\u003e= 5.99.0~), libkf5pimtextedit-dev (\u003e= 22.12.3~), libkf5textwidgets-dev (\u003e= 5.99.0~), libkf5xmlgui-dev (\u003e= 5.99.0~), pkg-kde-tools (\u003e\u003e 0.15.15), qtbase5-dev (\u003e= 5.15.2~), xauth, xvfb"
+    "cmake (\u003e= 3.16~), debhelper-compat (= 13), dh-sequence-kf6, dh-sequence-qmldeps, extra-cmake-modules (\u003e= 6.6.0~), gettext, kirigami-addons-dev (\u003e= 1.0.0), libkf6codecs-dev (\u003e= 6.6.0~), libkf6config-dev (\u003e= 6.6.0~), libkf6coreaddons-dev (\u003e= 6.6.0~), libkf6i18n-dev (\u003e= 6.6.0~), libkf6kio-dev (\u003e= 6.6.0~), libkf6xmlgui-dev (\u003e= 6.6.0~), libkpimtextedit-dev (\u003e= 24.12.0~), libktextaddons-dev (\u003e= 1.5.4~), qt6-base-dev (\u003e= 6.7.0~), qt6-declarative-dev (\u003e= 6.6.0+dfsg~), qt6-declarative-private-dev, xauth, xvfb"
   ],
   "Checksums-Sha256": [
-    "070284b3a2e3765281c5b5d0b43831a3c90a21a20130fb1e2f523350ccd15ab7 2937 kidentitymanagement_22.12.3-1.dsc ee86fd79a5801dbf56da3a565a41f12cb3aadd0fadb7337f029658a9c409215b 162656 kidentitymanagement_22.12.3.orig.tar.xz bfd023dcd62b0433e6481cce8d85fd4029af6ec5592a86a0baf71838c7cc2f5b 833 kidentitymanagement_22.12.3.orig.tar.xz.asc b483999d66b0f5802dee8f5883dd8b7b05725d96a6d19e9732f1ca2bc0345728 14808 kidentitymanagement_22.12.3-1.debian.tar.xz"
+    "8bafc5cc8b8c8a0e62734c03dbbd1ad7000c067dffd3f8046bb648aec0699d8a 3366 kidentitymanagement_24.12.0-2.dsc 7bd3add4cdf1b0c8a99af076e4c98a41fb937375b909518d930a451a192b9217 196792 kidentitymanagement_24.12.0.orig.tar.xz 1d2339d4c9a406534603998288ab7ec976233ba511e72e7a3301bb5b69086cf0 833 kidentitymanagement_24.12.0.orig.tar.xz.asc 28190b6a0c134331d981600d6fdafca37b311bd9ef0476b40893a4d7a8060178 16760 kidentitymanagement_24.12.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kidentitymanagement"
   ],
   "Files": [
-    "647ee9f608f9a5b0e8f4cd25322d5557 2937 kidentitymanagement_22.12.3-1.dsc 3f6bec58e0463754c9a6d6dc6ed71e18 162656 kidentitymanagement_22.12.3.orig.tar.xz f6c8c9e2205b01600b036ddf39054dcd 833 kidentitymanagement_22.12.3.orig.tar.xz.asc 22f5f7588cdcf60f1ccedccbc690d63d 14808 kidentitymanagement_22.12.3-1.debian.tar.xz"
+    "d61a6acb4fe66c6a5ff60e519d166398 3366 kidentitymanagement_24.12.0-2.dsc 71a6eca23f263cf6eb9110d874507c81 196792 kidentitymanagement_24.12.0.orig.tar.xz 24ea1e263afa058111e52a3e253b3ad0 833 kidentitymanagement_24.12.0.orig.tar.xz.asc 3c38d850d3fced55475b09c90c3d55a4 16760 kidentitymanagement_24.12.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "kidentitymanagement"
   ],
   "Package-List": [
-    "libkf5identitymanagement-dev deb libdevel optional arch=any libkf5identitymanagement5 deb libs optional arch=any libkf5identitymanagementwidgets5 deb libs optional arch=any"
+    "libkidentitymanagement-data deb libs optional arch=all libkidentitymanagement-dev deb libdevel optional arch=any libkpim6identitymanagementcore6 deb libs optional arch=any libkpim6identitymanagementquick6 deb libs optional arch=any libkpim6identitymanagementwidgets6 deb libs optional arch=any qml6-module-org-kde-kidentitymanagement deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Uploaders": [
     "Sandro Knauß \u003chefee@debian.org\u003e, Patrick Franz \u003cdeltaone@debian.org\u003e,"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/qt-kde-team/kde/kidentitymanagement.git"
   ],
   "Version": [
-    "22.12.3-1"
+    "24.12.0-2"
   ]
 }
