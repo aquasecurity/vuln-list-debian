@@ -6,19 +6,22 @@
     "librust-memmap2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.143-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.151-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f03ef772a70001cf7c30db5b6bd849d22d7343b033e6cd494e81427b98cce555 2261 rust-memmap2_0.9.3-1.dsc 45fd3a57831bf88bc63f8cebc0cf956116276e97fef3966103e96416209f7c92 33125 rust-memmap2_0.9.3.orig.tar.gz 404e2255ced797df85b55d87807d5d7f7ccfb89646f680ecaaec7c763062b8a4 3204 rust-memmap2_0.9.3-1.debian.tar.xz"
+    "665e2adb2f50185bb69c113257539c9a7fa26237ee5dbb14e9d8e47ebabf378a 2326 rust-memmap2_0.9.5-1.dsc fd3f7eed9d3848f8b98834af67102b720745c4ec028fcd0aa0239277e7de374f 33280 rust-memmap2_0.9.5.orig.tar.gz bb1eff973211c999317e9802bc384b58d4d1edbea0fcc47a8af89bc688b81d91 3228 rust-memmap2_0.9.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-memmap2"
   ],
   "Files": [
-    "5ac6fd8e2141b2f6cefe6fbd9d3d2b45 2261 rust-memmap2_0.9.3-1.dsc 8c7d4897baee5e346d2184d46422ec49 33125 rust-memmap2_0.9.3.orig.tar.gz 40385d58e99ee148ac6853d6fc066903 3204 rust-memmap2_0.9.3-1.debian.tar.xz"
+    "0b1006034a7be646d7b10f91fe2b3fc5 2326 rust-memmap2_0.9.5-1.dsc 0a3a2f336488cd08462fa4c48a547096 33280 rust-memmap2_0.9.5.orig.tar.gz 732969cf108876b8eee3983e239db00c 3228 rust-memmap2_0.9.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RazrFalcon/memmap2-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-owning-ref-0.4+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-owning-ref-0.4+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/memmap2]"
   ],
   "Version": [
-    "0.9.3-1"
+    "0.9.5-1"
   ]
 }

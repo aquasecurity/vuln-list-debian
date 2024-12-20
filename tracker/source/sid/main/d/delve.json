@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 i386"
+    "amd64 arm64 i386 ppc64el riscv64"
   ],
   "Binary": [
     "delve"
   ],
   "Build-Depends": [
-    "clang [amd64], debhelper-compat (= 13), dh-golang, golang-any, golang-github-cilium-ebpf-dev (\u003e= 0.7.0~), golang-github-cosiner-argv-dev, golang-github-creack-pty-dev, golang-github-derekparker-trie-dev, golang-github-go-delve-liner-dev, golang-github-google-go-dap-dev (\u003e= 0.10.0~), golang-github-hashicorp-golang-lru-dev, golang-github-mattn-go-isatty-dev, golang-github-sirupsen-logrus-dev, golang-github-spf13-cobra-dev (\u003e= 1.1.1~), golang-golang-x-arch-dev, golang-golang-x-sys-dev, golang-gopkg-yaml.v2-dev, golang-starlark-dev (\u003e= 0.0~git20240725~), libbpf-dev [amd64], libc6-dev-i386 [amd64], llvm [amd64], lsof \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e"
+    "clang [amd64], debhelper-compat (= 13), dh-golang, golang-any, golang-github-cilium-ebpf-dev (\u003e= 0.7.0~), golang-github-cosiner-argv-dev, golang-github-creack-pty-dev, golang-github-derekparker-trie-dev, golang-github-go-delve-liner-dev, golang-github-google-go-dap-dev (\u003e= 0.10.0~), golang-github-hashicorp-golang-lru-dev, golang-github-mattn-go-isatty-dev, golang-github-sirupsen-logrus-dev, golang-github-spf13-cobra-dev (\u003e= 1.1.1~), golang-golang-x-arch-dev (\u003e= 0.11.0~), golang-golang-x-sys-dev, golang-gopkg-yaml.v2-dev, golang-starlark-dev (\u003e= 0.0~git20240725~), libbpf-dev [amd64], libc6-dev-i386 [amd64], llvm [amd64], lsof \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8f13bd83ccdcd9a3bc1513d410d1ba6b7cfc50d6ff5038b6509f89cc6d7f38cb 2302 delve_1.23.1-2.dsc f1220d10cad3b10f921a7e27ebc5c3e7c134a5d499569900588aaba06c9fea37 6652292 delve_1.23.1.orig.tar.xz fc517f85f6fe73cafa296a3d45d04fb1541cc5fec1e49ae17b0c9d5828c0b671 8256 delve_1.23.1-2.debian.tar.xz"
+    "e165c846783222449688ce438583f7f339bc686c3dce75e52541110ff3c9bebf 2347 delve_1.24.0-1.dsc 71687725248d5969ba8aa46e899ecccb90231b1b315c00e8e831bb23c9d7fc92 6664700 delve_1.24.0.orig.tar.xz 166c51669c9ce7bc474a970f86a7ace64c304b03dd5a7520e269d0d88bfe5c4e 6844 delve_1.24.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/delve"
   ],
   "Files": [
-    "5a1a8634ae811af28ced0dd48a4d8be0 2302 delve_1.23.1-2.dsc 070ec923fe5b4e388b7724db200ee7ac 6652292 delve_1.23.1.orig.tar.xz 0a17bf877ea70bba8975d94b37a36310 8256 delve_1.23.1-2.debian.tar.xz"
+    "88d8242bb0c818006f6869fed7e19e24 2347 delve_1.24.0-1.dsc e3ad7f09a64b2f32b12dea81b3141406 6664700 delve_1.24.0.orig.tar.xz 698ebd1bd03b982a09a435db98de1a68 6844 delve_1.24.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "delve"
   ],
   "Package-List": [
-    "delve deb golang optional arch=amd64,arm64,i386"
+    "delve deb golang optional arch=amd64,arm64,i386,ppc64el,riscv64"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest-pkg-go"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/go-team/packages/delve.git"
   ],
   "Version": [
-    "1.23.1-2"
+    "1.24.0-1"
   ]
 }
