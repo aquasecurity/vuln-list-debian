@@ -6,19 +6,22 @@
     "librust-zerocopy-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-zerocopy-derive-0.7.32+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-zerocopy-derive-0.7.34+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "624def00ad40ae281415b13b75db9260257ada9ebc436a7c4d0826e1f615c14c 2630 rust-zerocopy_0.7.32-1.dsc 74d4d3961e53fa4c9a25a8637fc2bfaf2595b3d3ae34875568a5cf64787716be 151096 rust-zerocopy_0.7.32.orig.tar.gz ed83deced2362b3bf4aaebe715efed036bd854c213d5eb0e599fe9186f6c32e9 4672 rust-zerocopy_0.7.32-1.debian.tar.xz"
+    "53d2a99adc32cd3995f1ed51ee35d252a1999b2b0e5632aba84422d8726fce49 2660 rust-zerocopy_0.7.34-1.dsc ae87e3fcd617500e5d106f0380cf7b77f3c6092aae37191433159dda23cfb087 151177 rust-zerocopy_0.7.34.orig.tar.gz cdba433e54d5fee14ea4e9fe8e9010c6a3448082adef6b2fb3371e4e33f610eb 4624 rust-zerocopy_0.7.34-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zerocopy"
   ],
   "Files": [
-    "7658f889c21225b91fb99ed100afa039 2630 rust-zerocopy_0.7.32-1.dsc ae2ca148274c581aa6ee8a8e292ca2af 151096 rust-zerocopy_0.7.32.orig.tar.gz 8ee72c9810a61e4aed638cafa0fa10b7 4672 rust-zerocopy_0.7.32-1.debian.tar.xz"
+    "96da3cc8943f3a30fabe80e452911a42 2660 rust-zerocopy_0.7.34-1.dsc bcfc5a71fb6f68251e902c25965cb543 151177 rust-zerocopy_0.7.34.orig.tar.gz 13851cf7709ff95b31aab40535f60493 4624 rust-zerocopy_0.7.34-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/google/zerocopy"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-elain-0.3+default-dev, librust-itertools-0.11+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-rustversion-1+default-dev, librust-static-assertions-1+default-dev, librust-trybuild-1.0.85+default-dev, librust-trybuild-1.0.85+diff-dev, librust-zerocopy-derive-0.7.32+default-dev"
+    "dh-cargo, librust-assert-matches-1+default-dev, librust-elain-0.3+default-dev, librust-itertools-0.11+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-rustversion-1+default-dev, librust-static-assertions-1+default-dev, librust-trybuild-1.0.85+default-dev, librust-trybuild-1.0.85+diff-dev, librust-zerocopy-derive-0.7.34+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zerocopy]"
   ],
   "Version": [
-    "0.7.32-1"
+    "0.7.34-1"
   ]
 }

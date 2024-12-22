@@ -6,16 +6,16 @@
     "librust-rst-parser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-document-tree-0.4+default-dev \u003c!nocheck\u003e, librust-pest-2+default-dev (\u003e= 2.1.2-~~) \u003c!nocheck\u003e, librust-pest-derive-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.86-~~) \u003c!nocheck\u003e, librust-document-tree-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-pest-2+default-dev (\u003e= 2.1.2-~~) \u003c!nocheck\u003e, librust-pest-derive-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1c2bac85688aaedf06ad2be4fd97e5c39407c4f24e752da21116859bedfcc495 2071 rust-rst-parser_0.4.0-3.dsc d17bab4d5d74e0ec6d96f438cae821506d05f56ffe54f6f0a181cc139272fc80 20450 rust-rst-parser_0.4.0.orig.tar.gz 22851aea4749ad79f8aa388dbc215d00d1953aea1de439e8dd17733e548e06fb 8508 rust-rst-parser_0.4.0-3.debian.tar.xz"
+    "00733eb44abe9f011996638e0290e19f79cd6382d21d6b8dbcc12f4ceaab60b0 2090 rust-rst-parser_0.4.1-1.dsc 49fe726da4471dd290dd89606966a55faf92dcbcbc3d65956030797d13773468 21378 rust-rst-parser_0.4.1.orig.tar.gz d59868432191a94b4f23dba0d60affd28104a2443fb478b4e825d7eeb2ba98fc 3516 rust-rst-parser_0.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rst-parser"
   ],
   "Files": [
-    "38f3f7dc30fb562105309aab60b2f325 2071 rust-rst-parser_0.4.0-3.dsc da1f2b20e982d5b11c995f66709bc45d 20450 rust-rst-parser_0.4.0.orig.tar.gz 65652de8d0e1b42331eb5975b5fcf65a 8508 rust-rst-parser_0.4.0-3.debian.tar.xz"
+    "8ba1053a3f3210e3eac9219b9ea78acc 2090 rust-rst-parser_0.4.1-1.dsc 4e6d5c3946cb34aeb9f5d622fe0a8311 21378 rust-rst-parser_0.4.1.orig.tar.gz c77c8fe93cc8dd9474383bfa6659f7b9 3516 rust-rst-parser_0.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rst-parser]"
   ],
   "Version": [
-    "0.4.0-3"
+    "0.4.1-1"
   ]
 }
