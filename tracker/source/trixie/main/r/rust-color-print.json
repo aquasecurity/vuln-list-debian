@@ -6,19 +6,22 @@
     "librust-color-print-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-color-print-proc-macro-0.3+default-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-color-print-proc-macro-0.3+default-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "df96350d243c6eb7087c9e2d563b6c56a9877003f7a94f4adb4a3cb4fed56224 2253 rust-color-print_0.3.6-1.dsc 1ee543c60ff3888934877a5671f45494dd27ed4ba25c6670b9a7576b7ed7a8c0 11242 rust-color-print_0.3.6.orig.tar.gz 2b2e8b755585e07ea19cb76dfc3f39b739bcf0eec2783b89b10547a4fdcaf6bf 2968 rust-color-print_0.3.6-1.debian.tar.xz"
+    "51f77dc575eafd496cc1b492824f3ab990cffb2b73e63be932f74af1562b6bf0 1681 rust-color-print_0.3.7-1.dsc 3aa954171903797d5623e047d9ab69d91b493657917bdfb8c2c80ecaf9cdb6f4 11586 rust-color-print_0.3.7.orig.tar.gz 346564efbcc773faa01a555c9c262c74f0de97da68b70c260a8f69b56688f148 3008 rust-color-print_0.3.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-color-print"
   ],
   "Files": [
-    "06cdf3d9b14417ba94b333ccdbe2d1eb 2253 rust-color-print_0.3.6-1.dsc 603dc8e08934ea5ae9025f5456fa6679 11242 rust-color-print_0.3.6.orig.tar.gz 2c4d0511b1f377a2f0bcff9e17023bea 2968 rust-color-print_0.3.6-1.debian.tar.xz"
+    "76f891aa3a068e6b35e849bc9a7e1137 1681 rust-color-print_0.3.7-1.dsc e0d923764896bf9120ee2e2f16ce1a42 11586 rust-color-print_0.3.7.orig.tar.gz fcc37ca9f26502914ba266eed491be32 3008 rust-color-print_0.3.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/dajoha/color-print"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/color-print]"
   ],
   "Version": [
-    "0.3.6-1"
+    "0.3.7-1"
   ]
 }

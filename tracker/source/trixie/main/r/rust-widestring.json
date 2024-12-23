@@ -6,19 +6,22 @@
     "librust-widestring-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.58) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f8ff64523be5b4e5599f3d8493e1418b6b815db703800a4adaa8fcda0e604ff2 2185 rust-widestring_1.0.2-1.dsc 653f141f39ec16bba3c5abe400a0c60da7468261cc2cbf36805022876bc721a8 79706 rust-widestring_1.0.2.orig.tar.gz 2102a0ac6f874ba6628628d79c3d7bc9e3b0a641aa6bcf7db54108af92d35064 2852 rust-widestring_1.0.2-1.debian.tar.xz"
+    "fbf0878a5aa89ae40dec63af9aa5aa183b7011317c36bbddd37ac678a0b4cbb3 1593 rust-widestring_1.1.0-1.dsc 7219d36b6eac893fa81e84ebe06485e7dcbb616177469b142df14f1f4deb1311 85046 rust-widestring_1.1.0.orig.tar.gz 26b51bde0618954eb70cbe04330fdac50d393254a67dc37e60cb8f337b357363 3596 rust-widestring_1.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-widestring"
   ],
   "Files": [
-    "185c3663b4078bae9050f2889b7ebcfe 2185 rust-widestring_1.0.2-1.dsc 923b0b8738e502839b45fceb53a51a3e 79706 rust-widestring_1.0.2.orig.tar.gz 8b9d0558c885ba589d7c4ba09c2d9824 2852 rust-widestring_1.0.2-1.debian.tar.xz"
+    "093fa9361f4c67068697b589a5ce19bd 1593 rust-widestring_1.1.0-1.dsc f40013c24943b651746cf5da5b881c22 85046 rust-widestring_1.1.0.orig.tar.gz d55e5bb97203cab50933bed6d67a439d 3596 rust-widestring_1.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/starkat99/widestring-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-winapi-0.3+default-dev, librust-winapi-0.3+winbase-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/widestring]"
   ],
   "Version": [
-    "1.0.2-1"
+    "1.1.0-1"
   ]
 }
