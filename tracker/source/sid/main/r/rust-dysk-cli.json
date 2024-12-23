@@ -6,16 +6,16 @@
     "librust-dysk-cli-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bet-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-clap-4+cargo-dev (\u003e= 4.4-~~) \u003c!nocheck\u003e, librust-clap-4+default-dev (\u003e= 4.4-~~) \u003c!nocheck\u003e, librust-clap-4+derive-dev (\u003e= 4.4-~~) \u003c!nocheck\u003e, librust-clap-help-1+default-dev \u003c!nocheck\u003e, librust-file-size-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-lfs-core-0.11+default-dev (\u003e= 0.11.2-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-termimad-0.29+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bet-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-clap-4+cargo-dev (\u003e= 4.4-~~) \u003c!nocheck\u003e, librust-clap-4+default-dev (\u003e= 4.4-~~) \u003c!nocheck\u003e, librust-clap-4+derive-dev (\u003e= 4.4-~~) \u003c!nocheck\u003e, librust-clap-help-1+default-dev \u003c!nocheck\u003e, librust-file-size-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-lfs-core-0.12+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-termimad-0.31+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "895d0bc08aca6dd66dc189f35f47c2cbd9e75304677a0835db30cbc265108370 2043 rust-dysk-cli_2.9.1-1.dsc a20666eef3d30d45616948f5b4ba82819e07ec8f49b624d57e1fa79bf93aec29 14940 rust-dysk-cli_2.9.1.orig.tar.gz 31a0069726c26ec9da04cdddad5e6ddd9d92bdfbf01dd7df864e4221f87b8447 3092 rust-dysk-cli_2.9.1-1.debian.tar.xz"
+    "656b0cddd7de4aa2c204ca3d631fc5bbc7ac76379371ae2f5919258ecbcb981e 2021 rust-dysk-cli_2.10.0-1.dsc a3a1ea18dc27b6eca1130ad8ab0b97fce53409d0bfa37777db83dbe81734a9ae 15147 rust-dysk-cli_2.10.0.orig.tar.gz 7305eeba1ad6c9e7c481a19c924ecef1fd972687b8ac0fc2a73a80b73bb40223 3380 rust-dysk-cli_2.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dysk-cli"
   ],
   "Files": [
-    "8550a58d59842dd050fe7695f7221941 2043 rust-dysk-cli_2.9.1-1.dsc 89358d1774f7552b28aa330de7130a25 14940 rust-dysk-cli_2.9.1.orig.tar.gz 8c4d0a49230d54129d6efc4587ef4b35 3092 rust-dysk-cli_2.9.1-1.debian.tar.xz"
+    "eff0c270f9b8cab5f8efd2d8db47fdfd 2021 rust-dysk-cli_2.10.0-1.dsc 8740d2f98aa4304d131bff1a3164d783 15147 rust-dysk-cli_2.10.0.orig.tar.gz e8938d9e5f2e8bed8290440edc865aab 3380 rust-dysk-cli_2.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dysk-cli]"
   ],
   "Version": [
-    "2.9.1-1"
+    "2.10.0-1"
   ]
 }
