@@ -6,19 +6,19 @@
     "apt, libapt-pkg6.0t64, apt-doc, libapt-pkg-dev, libapt-pkg-doc, apt-utils, apt-transport-https"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5) \u003c!pkg.apt.ci\u003e, cmake (\u003e= 3.4), debhelper-compat (= 12), docbook-xml \u003c!nodoc\u003e, docbook-xsl \u003c!nodoc\u003e, dpkg-dev (\u003e= 1.20.8), gettext (\u003e= 0.12), googletest \u003c!nocheck\u003e | libgtest-dev \u003c!nocheck\u003e, libbz2-dev, libdb-dev, libgnutls28-dev (\u003e= 3.4.6), libgcrypt20-dev, liblz4-dev (\u003e= 0.0~r126), liblzma-dev, libseccomp-dev (\u003e= 2.4.2) [amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x hppa powerpc powerpcspe ppc64 x32], libsystemd-dev [linux-any], libudev-dev [linux-any], libxxhash-dev (\u003e= 0.8), libzstd-dev (\u003e= 1.0), ninja-build, pkg-config, po4a (\u003e= 0.34-2) \u003c!nodoc\u003e, triehash, xsltproc \u003c!nodoc\u003e, zlib1g-dev"
+    "dpkg-dev (\u003e= 1.22.5) \u003c!pkg.apt.ci\u003e, cmake (\u003e= 3.4), debhelper-compat (= 12), docbook-xml \u003c!nodoc\u003e, docbook-xsl \u003c!nodoc\u003e, dpkg-dev (\u003e= 1.20.8), gettext (\u003e= 0.12), googletest \u003c!nocheck\u003e | libgtest-dev \u003c!nocheck\u003e, libbz2-dev, libdb-dev, libssl-dev, liblz4-dev (\u003e= 0.0~r126), liblzma-dev, libseccomp-dev (\u003e= 2.4.2) [amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x hppa powerpc powerpcspe ppc64 x32], libsystemd-dev [linux-any], libudev-dev [linux-any], libxxhash-dev (\u003e= 0.8), libzstd-dev (\u003e= 1.0), ninja-build, pkg-config, po4a (\u003e= 0.34-2) \u003c!nodoc\u003e, sqv [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x hurd-amd64 hurd-i386 loong64 powerpc ppc64 sparc64] \u003c!pkg.apt.nosqv\u003e | gpgv, triehash, xsltproc \u003c!nodoc\u003e, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
     "doxygen \u003c!nodoc !pkg.apt.nodoxygen\u003e, graphviz \u003c!nodoc !pkg.apt.nodoxygen\u003e, w3m \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "9b99b30c3b937d2cc842d26e7bbe1b67a2aa108f633aa227197cc5b89588df4b 3011 apt_2.9.18.dsc 9903bbbbc89bb6a4687a080a1bf90bb8ba36802ec196b3549a4c1fd0502d1a3a 2392352 apt_2.9.18.tar.xz"
+    "2b72a74d0172c445c51cab673c86706dd078254b74c63492f22f170985dbfd06 3181 apt_2.9.19.dsc 3fb7b9afd29759d3a54888f8f606f6735f0fa3d62491dac9ea9b2ab0bb3b5a91 2387424 apt_2.9.19.tar.xz"
   ],
   "Directory": [
     "pool/main/a/apt"
   ],
   "Files": [
-    "4189a3de069b4a350115b7704aba1fc5 3011 apt_2.9.18.dsc 4db0c0e23b8c102ae33e76b4f84b04bb 2392352 apt_2.9.18.tar.xz"
+    "81124ad994b26d5fe5c2fed702958a67 3181 apt_2.9.19.dsc f2955db7f2283c1f2785d1a5712dad96 2387424 apt_2.9.19.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, aptitude, db-util, dpkg, expect, fakeroot, g++, gdb, gdb-minimal, gnupg, gnupg1, gnupg2, gpgv, gpgv-sq, gpgv1, gpgv2, jq, libfile-fcntllock-perl, lsof, pkg-config, python3-apt, stunnel4, valgrind-if-available, wget"
+    "@builddeps@, aptitude, db-util, dpkg, expect, fakeroot, g++, gdb, gdb-minimal, gpgv, gpgv-sq, jq, libfile-fcntllock-perl, lsof, moreutils, pkg-config, python3-apt, sq, sqv, stunnel4, valgrind-if-available, wget"
   ],
   "Uploaders": [
     "Michael Vogt \u003cmvo@debian.org\u003e, Julian Andres Klode \u003cjak@debian.org\u003e, David Kalnischkies \u003cdonkult@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/apt-team/apt.git"
   ],
   "Version": [
-    "2.9.18"
+    "2.9.19"
   ]
 }
