@@ -6,16 +6,16 @@
     "librust-sys-info-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.29-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.29-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c43f9987fd8ff222b037bbceef5229b456c9ee441f20ba5dd64ca746f2da55e6 2280 rust-sys-info_0.9.1-6.dsc eedc8ca36dd7c6c3a5bab1e38bc701581ecc84fec82d2996d36e1fdda01823f7 15089 rust-sys-info_0.9.1.orig.tar.gz 23f7db7d9af9da9899988e32b2142e1ea14738e46aadb0d1a4e365900f81b2ef 3492 rust-sys-info_0.9.1-6.debian.tar.xz"
+    "a44475d0149666e2279e8294c3e6a3fe5988e9f5601c85774267e7eff5cf7dfc 2294 rust-sys-info_0.9.1-7.dsc eedc8ca36dd7c6c3a5bab1e38bc701581ecc84fec82d2996d36e1fdda01823f7 15089 rust-sys-info_0.9.1.orig.tar.gz 5a602c5b2725f208b772e81b1a5838bad714e5d739a03d7c9c7241a675581eea 3828 rust-sys-info_0.9.1-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sys-info"
   ],
   "Files": [
-    "a96b3be273dd2390d82b4684ebea937a 2280 rust-sys-info_0.9.1-6.dsc 2ebb8b4f179cbd54a71e10ec703ea7ad 15089 rust-sys-info_0.9.1.orig.tar.gz 4281316dfdf4ddfb479e293e349ed12f 3492 rust-sys-info_0.9.1-6.debian.tar.xz"
+    "af873ffdb4ccbd68a2bbfaa5113f8181 2294 rust-sys-info_0.9.1-7.dsc 2ebb8b4f179cbd54a71e10ec703ea7ad 15089 rust-sys-info_0.9.1.orig.tar.gz ef7af247d37d2926446bae3b542da100 3828 rust-sys-info_0.9.1-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Daniele Tricoli \u003ceriol@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sys-info]"
   ],
   "Version": [
-    "0.9.1-6"
+    "0.9.1-7"
   ]
 }
