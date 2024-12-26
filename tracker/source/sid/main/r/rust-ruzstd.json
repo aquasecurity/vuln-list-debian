@@ -6,16 +6,16 @@
     "librust-ruzstd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e, librust-derive-more-0.99+display-dev \u003c!nocheck\u003e, librust-derive-more-0.99+error-dev \u003c!nocheck\u003e, librust-derive-more-0.99+from-dev \u003c!nocheck\u003e, librust-twox-hash-1-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-twox-hash-1-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "304868ad8be749d58aab9011620bc6020c0417a5541ceb2838aee04f01469c23 2541 rust-ruzstd_0.5.0-1.dsc 58c4eb8a81997cf040a091d1f7e1938aeab6749d3a0dfa73af43cdc32393483d 52393 rust-ruzstd_0.5.0.orig.tar.gz 7bafca7be019836b4c15323244dbce8e68e9b59841ab8428a3684cff1d4d681e 3308 rust-ruzstd_0.5.0-1.debian.tar.xz"
+    "30cfe09be786897beff080456d6863b2927c1a5338045593190b0b6319686035 2365 rust-ruzstd_0.7.3-2.dsc fad02996bfc73da3e301efe90b1837be9ed8f4a462b6ed410aa35d00381de89f 67611 rust-ruzstd_0.7.3.orig.tar.gz 165b4124ab88976682882df289ed535d969af762bd5ffdc2cb25c31a720b41c0 4100 rust-ruzstd_0.7.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ruzstd"
   ],
   "Files": [
-    "df12a7541d46fd51547744592dbbd093 2541 rust-ruzstd_0.5.0-1.dsc e42751fa1cd02ccde492a0ccc8108c05 52393 rust-ruzstd_0.5.0.orig.tar.gz bab924b66c0cede6ddb074843b4b6e97 3308 rust-ruzstd_0.5.0-1.debian.tar.xz"
+    "2005804d394e49b3f0271e4c20026df8 2365 rust-ruzstd_0.7.3-2.dsc 6517e052935aaa265c786ddb3fc56c83 67611 rust-ruzstd_0.7.3.orig.tar.gz 89d87990ebae1cde63d201267a60c4e9 4100 rust-ruzstd_0.7.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ruzstd]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.7.3-2"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-object-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.13-~~) \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-memchr-2-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-ruzstd-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.13-~~) \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-memchr-2-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-ruzstd-0.7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c262e0f404e070f13a0bf3fca64b21bd55f828046b2c17721e8f0d62a750b5b 2382 rust-object_0.32.2-1.dsc a6a622008b6e321afc04970976f62ee297fdbaa6f95318ca343e3eebb9648441 286994 rust-object_0.32.2.orig.tar.gz 2fedc5439a36fb4a9525a403c05a369ee097a5c1fbbed82a3444229db09ce363 5196 rust-object_0.32.2-1.debian.tar.xz"
+    "4b46ad20f852a78c42dcf73384255abc017ba8f6b85922525c8188a94c293c29 2441 rust-object_0.36.5-2.dsc aedf0a2d09c573ed1d8d85b30c119153926a2b36dce0ab28322c09a117a4683e 327435 rust-object_0.36.5.orig.tar.gz 5e6311e2ce6a9e90ac019cab95df93ec2ffd65cf06b210a23fee91eb8f2a3573 5988 rust-object_0.36.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-object"
   ],
   "Files": [
-    "2389fa920b528aae89d86da12792f474 2382 rust-object_0.32.2-1.dsc 0d98aaf27d3cace75f9959c04b910891 286994 rust-object_0.32.2.orig.tar.gz c89997a7926c24498e4c26ed25138233 5196 rust-object_0.32.2-1.debian.tar.xz"
+    "4eda497edd983a499779e173a452f9fd 2441 rust-object_0.36.5-2.dsc c34a4cc09b18124bae1e1c6e5dcbdda0 327435 rust-object_0.36.5.orig.tar.gz c612aacfa44e36c2c4131eb3548a9d6c 5988 rust-object_0.36.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/gimli-rs/object"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/object]"
   ],
   "Version": [
-    "0.32.2-1"
+    "0.36.5-2"
   ]
 }
