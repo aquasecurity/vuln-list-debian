@@ -6,19 +6,22 @@
     "librust-bytemuck-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1efc6d66d06a2e8dd376240ae3efa7023207a2daa637e6588b2e732df1ad4c0b 2253 rust-bytemuck_1.14.0-1.dsc 374d28ec25809ee0e23827c2ab573d729e293f281dfe393500e7ad618baa61c6 44933 rust-bytemuck_1.14.0.orig.tar.gz bcbadfccb808b4604a49369b817cb125f4ea631110ff628907668aa5881308b0 3896 rust-bytemuck_1.14.0-1.debian.tar.xz"
+    "717b102777135d57f812cedba09da57510865047730526f38e6f7b3fa40dae96 2213 rust-bytemuck_1.21.0-1.dsc ef657dfab802224e671f5818e9a4935f9b1957ed18e58292690cc39e7a4092a3 51553 rust-bytemuck_1.21.0.orig.tar.gz 2ede645f70b89c57f9d2904b3b261c99cd03872eb3bfdfd43d357c491e78146a 4168 rust-bytemuck_1.21.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bytemuck"
   ],
   "Files": [
-    "18f9ebe735a864302f3396b7dce06e3c 2253 rust-bytemuck_1.14.0-1.dsc 9dd8e437188fced85429d9d0d9db145f 44933 rust-bytemuck_1.14.0.orig.tar.gz 13d28fea3e76d5ec427a60fafa912e4a 3896 rust-bytemuck_1.14.0-1.debian.tar.xz"
+    "88dc73f779b45182552a578c13cbfd10 2213 rust-bytemuck_1.21.0-1.dsc d98809baa47149e5ff7224037cdf8e86 51553 rust-bytemuck_1.21.0.orig.tar.gz c07563c40f541890d625cf070f9a2ba7 4168 rust-bytemuck_1.21.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Lokathor/bytemuck"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytemuck]"
   ],
   "Version": [
-    "1.14.0-1"
+    "1.21.0-1"
   ]
 }

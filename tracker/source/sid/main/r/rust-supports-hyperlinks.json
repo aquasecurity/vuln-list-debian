@@ -6,19 +6,22 @@
     "librust-supports-hyperlinks-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-is-terminal-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d7c978b667f0bac2d541670fc4a49f79b140b199df7457192c269d678b7503af 2345 rust-supports-hyperlinks_2.1.0-1.dsc f84231692eb0d4d41e4cdd0cabfdd2e6cd9e255e65f80c9aa7c98dd502b4233d 8035 rust-supports-hyperlinks_2.1.0.orig.tar.gz 812f68ae79082fddf66459c8caa7d3fe258364096292190a01db5e98f40153a0 1956 rust-supports-hyperlinks_2.1.0-1.debian.tar.xz"
+    "728dff2946925d8437074c4ea37a4898150849025397d62ab7d5b1a5514ec403 2361 rust-supports-hyperlinks_3.1.0-1.dsc 804f44ed3c63152de6a9f90acbea1a110441de43006ea51bcce8f436196a288b 8235 rust-supports-hyperlinks_3.1.0.orig.tar.gz 9a5e4516687c0d136c5cbd95d94dcdc5dfd85872327b49f3be1399b7deacc784 2032 rust-supports-hyperlinks_3.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-supports-hyperlinks"
   ],
   "Files": [
-    "d184e4e87ae52700ad033728988c5814 2345 rust-supports-hyperlinks_2.1.0-1.dsc 9e3cf5ff1c239a3583482452f07f1085 8035 rust-supports-hyperlinks_2.1.0.orig.tar.gz de5f6d9a35ab4785799e0c7a7000317f 1956 rust-supports-hyperlinks_2.1.0-1.debian.tar.xz"
+    "c06ba619defaa1843902aafe6e225278 2361 rust-supports-hyperlinks_3.1.0-1.dsc 78d621c88ccab5f944c17c49ebf02020 8235 rust-supports-hyperlinks_3.1.0.orig.tar.gz b10fbdd999f69cf4124fe36bf33723a8 2032 rust-supports-hyperlinks_3.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/zkat/supports-hyperlinks"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/supports-hyperlinks]"
   ],
   "Version": [
-    "2.1.0-1"
+    "3.1.0-1"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-supports-color-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-is-ci-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e, librust-is-terminal-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "723f60c671aed518b15dfd45da5119fd5295e104aee1a9ff3f533299dea8547b 2289 rust-supports-color_2.0.0-1.dsc 4950e7174bffabe99455511c39707310e7e9b440364a2fcb1cc21521be57b354 9887 rust-supports-color_2.0.0.orig.tar.gz 83617f270572d597a4939426daead44d895cd4421d8c80d844e09bb34b477d10 2188 rust-supports-color_2.0.0-1.debian.tar.xz"
+    "0526cc3bef415a06a8316387e9ed904583cf1a0ff4925645a70ddf0784f60428 2294 rust-supports-color_3.0.2-1.dsc c64fc7232dd8d2e4ac5ce4ef302b1d81e0b80d055b9d77c7c4f51f6aa4c867d6 10445 rust-supports-color_3.0.2.orig.tar.gz d6c100a398faeb40183dce68474bee582840d2f107feb54fb9bd880796fd0b2c 2596 rust-supports-color_3.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-supports-color"
   ],
   "Files": [
-    "f96b233776b77677d1f079764997a879 2289 rust-supports-color_2.0.0-1.dsc 9990b224cb8303bddaaea552c0ac680e 9887 rust-supports-color_2.0.0.orig.tar.gz ff8cabeedfa5109e6ebc42c4e4cd7b82 2188 rust-supports-color_2.0.0-1.debian.tar.xz"
+    "775c071f238f87b1573756864d9a5353 2294 rust-supports-color_3.0.2-1.dsc 1937abfbd586bf29f846652577e8a09e 10445 rust-supports-color_3.0.2.orig.tar.gz 2fe8f0538a82e4cc33723e2b2137ca99 2596 rust-supports-color_3.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/zkat/supports-color"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/supports-color]"
   ],
   "Version": [
-    "2.0.0-1"
+    "3.0.2-1"
   ]
 }
