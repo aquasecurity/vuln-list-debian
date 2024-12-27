@@ -6,19 +6,22 @@
     "librust-phf-shared-dev, librust-phf-shared+uncased-dev, librust-phf-shared+unicase-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-siphasher-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-siphasher-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9d9452c198739a9e5c1b5bfefc042d369411a6d95101ed1e96a765abb453e935 2385 rust-phf-shared_0.11.2-1.dsc 90fcb95eef784c2ac79119d1dd819e162b5da872ce6f3c3abe1e8ca1c082f72b 14284 rust-phf-shared_0.11.2.orig.tar.gz c3abb8f29bbe4e19aaabacebdf5d7f60532c4492430b05253ab62fbb213c898d 3184 rust-phf-shared_0.11.2-1.debian.tar.xz"
+    "6fb426bc9696a42ad40019c4beef3b16f56290a8007717b48799a7773b5f0c70 2454 rust-phf-shared_0.11.2-2.dsc 90fcb95eef784c2ac79119d1dd819e162b5da872ce6f3c3abe1e8ca1c082f72b 14284 rust-phf-shared_0.11.2.orig.tar.gz 3b4d41c964b57c635c1ae73504161f247b070fbfc990b5547f20c4c99b757669 3352 rust-phf-shared_0.11.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-phf-shared"
   ],
   "Files": [
-    "f534a2270dac68ac2d7d9c5b35bf1edd 2385 rust-phf-shared_0.11.2-1.dsc 3cbb110e799c18366fd19d05c66df6d7 14284 rust-phf-shared_0.11.2.orig.tar.gz c4d2d9d226dc57c15d02c41d3cb1e5a6 3184 rust-phf-shared_0.11.2-1.debian.tar.xz"
+    "a286b068b5721fcfc1a784a3bf5ae46a 2454 rust-phf-shared_0.11.2-2.dsc 3cbb110e799c18366fd19d05c66df6d7 14284 rust-phf-shared_0.11.2.orig.tar.gz d9cf82fbd9534717efd9943f2db16ac0 3352 rust-phf-shared_0.11.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-phf/rust-phf"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/phf-shared]"
   ],
   "Version": [
-    "0.11.2-1"
+    "0.11.2-2"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-svgtypes-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-kurbo-0.7+default-dev \u003c!nocheck\u003e, librust-siphasher-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-kurbo-0.7+default-dev \u003c!nocheck\u003e, librust-siphasher-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d55933b958b902ffe50f437d740d91aa9d73bb3d9f97335191a9c9ff4f30e1f0 2240 rust-svgtypes_0.15.1-2.dsc fae3064df9b89391c9a76a0425a69d124aee9c5c28455204709e72c39868a43c 41744 rust-svgtypes_0.15.1.orig.tar.gz dddac5c2d40dde74efb9870389fb21578a29e860384c08886b5193d721b36341 3556 rust-svgtypes_0.15.1-2.debian.tar.xz"
+    "fb2b791840988c931ccd2ee0993e392669bc1825f69ed4f6dcbf982b32c0dc63 2301 rust-svgtypes_0.15.2-1.dsc 794de53cc48eaabeed0ab6a3404a65f40b3e38c067e4435883a65d2aa4ca000e 42150 rust-svgtypes_0.15.2.orig.tar.gz b64e4573c500bf2227394d9543c68391b8d7e711049ec9c69451e6431362dc81 3580 rust-svgtypes_0.15.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-svgtypes"
   ],
   "Files": [
-    "8a9884d1eb10b7dcfda3a12b8ed67280 2240 rust-svgtypes_0.15.1-2.dsc ff00b108c0829c337fefc6caf0df24c9 41744 rust-svgtypes_0.15.1.orig.tar.gz 77e81c1343856c33442d51d087d8b405 3556 rust-svgtypes_0.15.1-2.debian.tar.xz"
+    "62e01f801cc7f5ef2b812ca7e51a226c 2301 rust-svgtypes_0.15.2-1.dsc bfbd15ebbbab0b780f3b474d7e03d851 42150 rust-svgtypes_0.15.2.orig.tar.gz 2b6a9ff64ee99a0ce1a79141ed5a44ff 3580 rust-svgtypes_0.15.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RazrFalcon/svgtypes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/svgtypes]"
   ],
   "Version": [
-    "0.15.1-2"
+    "0.15.2-1"
   ]
 }

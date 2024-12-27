@@ -6,19 +6,22 @@
     "librust-numtoa-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bba8540e4f159b0f6e47d980cc62bb658ee9e33a4ba393428f4060881251ef4e 1482 rust-numtoa_0.2.3-1.dsc e521b6adefa0b2c1fa5d2abdf9a5216288686fe6146249215d884c0e5ab320b0 8978 rust-numtoa_0.2.3.orig.tar.gz 4797c1be5189dd13ab8239a8bca56fbc73eb47e51a688258939d57d05b341844 2520 rust-numtoa_0.2.3-1.debian.tar.xz"
+    "f6f1d5eb800ff21d9ef84e9b0f72e4fc6c6652a95eb393815aac911133d43e23 2174 rust-numtoa_0.2.4-1.dsc 6aa2c4e539b869820a2b82e1aef6ff40aa85e65decdd5185e83fb4b1249cd00f 9167 rust-numtoa_0.2.4.orig.tar.gz 0b3abf520eff6956dd8b134fc7054c3a856b9e680770966e8a3f28fa3e51796c 2636 rust-numtoa_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-numtoa"
   ],
   "Files": [
-    "2485edde65003af55313f54b64898154 1482 rust-numtoa_0.2.3-1.dsc 28a4e2e962d9723f131cdd5acb140b6d 8978 rust-numtoa_0.2.3.orig.tar.gz 7abfcdaf1558f47f261095bc47f65591 2520 rust-numtoa_0.2.3-1.debian.tar.xz"
+    "5aaf795bd3e16f3611e5eada32891df7 2174 rust-numtoa_0.2.4-1.dsc 6361a447cdbc285fce46c8a090428167 9167 rust-numtoa_0.2.4.orig.tar.gz 553f16ccda1e0c9543238e05a9e69d76 2636 rust-numtoa_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/mmstick/numtoa"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/numtoa]"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.2.4-1"
   ]
 }
