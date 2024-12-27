@@ -6,19 +6,22 @@
     "librust-bs58-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+grab-spare-slice-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+std-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+grab-spare-slice-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+std-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "163b5c0910a801d8305da7ddea6b6607808537a8f230f375b0e856207d9857a4 2320 rust-bs58_0.5.0-1.dsc f5353f36341f7451062466f0b755b96ac3a9547e4d7f6b70d603fc721a7d7896 27263 rust-bs58_0.5.0.orig.tar.gz 2936b8b33bab737db16bda4c9949a4abcba6ed8f18280d92dc3bc6e01c5b8038 3876 rust-bs58_0.5.0-1.debian.tar.xz"
+    "377de20b4ebb12ce3171861167bb131fb69f38454541a30a7f39114f6eb9fd36 2381 rust-bs58_0.5.1-1.dsc bf88ba1141d185c399bee5288d850d63b8369520c1eafc32a0430b5b6c287bf4 28483 rust-bs58_0.5.1.orig.tar.gz 620f4b8d7bcb282197b13eaafdce59f0572f8f730c7132cfa5d488b8e7c83852 3896 rust-bs58_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bs58"
   ],
   "Files": [
-    "6477921ac55e88172f3f5a5a9b188f16 2320 rust-bs58_0.5.0-1.dsc bde7853c15ba477f39c191f542750007 27263 rust-bs58_0.5.0.orig.tar.gz 00e70835401576ecee2386fc6f6bd094 3876 rust-bs58_0.5.0-1.debian.tar.xz"
+    "c96c627298a33deda2d8e983de68b4d2 2381 rust-bs58_0.5.1-1.dsc 7881a6a23f0ad1482a3b20bf6ba2b61a 28483 rust-bs58_0.5.1.orig.tar.gz 034c82648a6202977d29a503e11cc96d 3896 rust-bs58_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Nullus157/bs58-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tinyvec-1+default-dev, librust-tinyvec-1+rustc-1-55-dev"
+    "dh-cargo, librust-tinyvec-1+default-dev, librust-tinyvec-1+rustc-1-55-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bs58]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.1-1"
   ]
 }

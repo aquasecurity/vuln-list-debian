@@ -6,19 +6,22 @@
     "librust-openssl-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.2.1-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-foreign-types-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.5.2-~~) \u003c!nocheck\u003e, librust-openssl-macros-0.1+default-dev \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev (\u003e= 0.9.100-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.2.1-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-foreign-types-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.5.2-~~) \u003c!nocheck\u003e, librust-openssl-macros-0.1+default-dev \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev (\u003e= 0.9.104-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "407b1a14e77433f9ce64d05aff40edd427529b58e8df8908fb9a54b052ccfa5b 2552 rust-openssl_0.10.64-1.dsc 95a0481286a310808298130d22dd1fef0fa571e05a8f44ec801801e84b216b1f 272306 rust-openssl_0.10.64.orig.tar.gz 99f5523a19705ae0225fde43523055b9ea5ff93820005e7fb2156766ac8138a5 2840 rust-openssl_0.10.64-1.debian.tar.xz"
+    "fbecf32841abd07a73a62baf05edfa079ddddb991b0a1a782ccd23abfc00a2c9 2629 rust-openssl_0.10.68-1.dsc 6174bc48f102d208783c2c84bf931bb75927a617866870de8a4ea85597f871f5 276578 rust-openssl_0.10.68.orig.tar.gz cf53593465c83b6252b0549ab2247cc2eff7b40780c74c1b3ef9fc3b32e0b1b7 2848 rust-openssl_0.10.68-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-openssl"
   ],
   "Files": [
-    "efbc58552bf912764c4b778a3f5150b3 2552 rust-openssl_0.10.64-1.dsc f4c1fe0f183ec61db569aeb437c6f9cd 272306 rust-openssl_0.10.64.orig.tar.gz 97e08e466daa6e9ce33fc7a52c5fe64d 2840 rust-openssl_0.10.64-1.debian.tar.xz"
+    "5e38a67de5718bdd5a243101dbbb9920 2629 rust-openssl_0.10.68-1.dsc 513851486fe21348ce3e5428e8d7808c 276578 rust-openssl_0.10.68.orig.tar.gz 58877a51ad197e216886b4e0ca8d047d 2848 rust-openssl_0.10.68-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sfackler/rust-openssl"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-0.4+default-dev"
+    "dh-cargo, librust-hex-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/openssl]"
   ],
   "Version": [
-    "0.10.64-1"
+    "0.10.68-1"
   ]
 }

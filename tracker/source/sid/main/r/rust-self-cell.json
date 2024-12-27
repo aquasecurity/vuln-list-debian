@@ -6,19 +6,22 @@
     "librust-self-cell-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b3383bfc248c69dac767b664bb9a915e836ac6028569f6d35cef376e62d52f39 2162 rust-self-cell_1.0.3-1.dsc 58bf37232d3bb9a2c4e641ca2a11d83b5062066f88df7fed36c28772046d65ba 15147 rust-self-cell_1.0.3.orig.tar.gz 9d26c7883a37432080c8aea94b6a7b1c92bb74a023f5f11f3751230bfd834817 2324 rust-self-cell_1.0.3-1.debian.tar.xz"
+    "1fd496983ff4d70b475e7f514059c1e45a11ca1e7a020e2fd1c02b979952a645 2255 rust-self-cell_1.1.0-1.dsc c2fdfc24bc566f839a2da4c4295b82db7d25a24253867d5c64355abb5799bdbe 16636 rust-self-cell_1.1.0.orig.tar.gz 0a3d222c19ee62e3a7c3e19b58cb061135fd688a0ab8a1e6e81646edb4340ed5 2356 rust-self-cell_1.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-self-cell"
   ],
   "Files": [
-    "e0b077bfcb395edfe02aef9240bbc8af 2162 rust-self-cell_1.0.3-1.dsc 7b26cabc765a4e79f860f5bea618f22f 15147 rust-self-cell_1.0.3.orig.tar.gz f263b6f83f38ca18f00898cf0ea992fb 2324 rust-self-cell_1.0.3-1.debian.tar.xz"
+    "b22047ef36ff34bd183f0583b6397e42 2255 rust-self-cell_1.1.0-1.dsc f7296faafc60985a84de757e6012f92a 16636 rust-self-cell_1.1.0.orig.tar.gz dfd6b3c58eedeb174ab72ae498c849ea 2356 rust-self-cell_1.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Voultapher/self_cell"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-once-cell-1+default-dev"
+    "dh-cargo, librust-once-cell-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/self-cell]"
   ],
   "Version": [
-    "1.0.3-1"
+    "1.1.0-1"
   ]
 }
