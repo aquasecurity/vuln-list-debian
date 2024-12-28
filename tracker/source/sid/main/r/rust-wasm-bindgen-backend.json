@@ -6,16 +6,16 @@
     "librust-wasm-bindgen-backend-dev, librust-wasm-bindgen-backend+extra-traits-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bumpalo-3+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-wasm-bindgen-shared-0.2.87+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bumpalo-3+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-wasm-bindgen-shared-0.2.99+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "58dcbfad292d9dd0f60031fb6cbf97d473a2899617299ef196a93b02a3078a46 2842 rust-wasm-bindgen-backend_0.2.87-1.dsc 5ef2b6d3c510e9625e5fe6f509ab07d66a760f0885d858736483c32ed7809abd 26821 rust-wasm-bindgen-backend_0.2.87.orig.tar.gz 3d3590d9eba93cfd40d6057ee1b2b7ad1fcd891bb92b6f9879ab709e13b68f71 3188 rust-wasm-bindgen-backend_0.2.87-1.debian.tar.xz"
+    "d93af1d02a9179b7c6916ee773b4bb3557741d47b34d82222aafa0d06ed35512 2809 rust-wasm-bindgen-backend_0.2.99-1.dsc 5f89bb38646b4f81674e8f5c3fb81b562be1fd936d84320f3264486418519c79 30928 rust-wasm-bindgen-backend_0.2.99.orig.tar.gz 3aac139c03b02b966b64a831a4f481c692154b33268ecdd03b34b63910a57ceb 3216 rust-wasm-bindgen-backend_0.2.99-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wasm-bindgen-backend"
   ],
   "Files": [
-    "b9e44f6af79ccb8252df832e75302f53 2842 rust-wasm-bindgen-backend_0.2.87-1.dsc e1aaf0d487ef02def77307a74ee35606 26821 rust-wasm-bindgen-backend_0.2.87.orig.tar.gz d0ae10fa670bbebc1e960a4448d2c719 3188 rust-wasm-bindgen-backend_0.2.87-1.debian.tar.xz"
+    "d279c97c761a0625b77d1bc290dd1a9e 2809 rust-wasm-bindgen-backend_0.2.99-1.dsc d34c04f9c9c7e410d8c87cdfb3c32759 30928 rust-wasm-bindgen-backend_0.2.99.orig.tar.gz 44583e1b9e06b020be3497a342ddd3d0 3216 rust-wasm-bindgen-backend_0.2.99-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wasm-bindgen-backend]"
   ],
   "Version": [
-    "0.2.87-1"
+    "0.2.99-1"
   ]
 }

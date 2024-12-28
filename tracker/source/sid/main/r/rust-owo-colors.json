@@ -6,19 +6,22 @@
     "librust-owo-colors-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f53ef7c93c4fa6e492a9d652a45a0a2633d3d0ec894c12301abe092b8feba655 2146 rust-owo-colors_3.5.0-1.dsc c1b04fb49957986fdce4d6ee7a65027d55d4b6d2265e5848bbb507b58ccfdb6f 30310 rust-owo-colors_3.5.0.orig.tar.gz e2383fbf3cf4316494b91a54186c3c90c4422f5c74b598ddbde479a483fc5801 2872 rust-owo-colors_3.5.0-1.debian.tar.xz"
+    "99cd83fca31ef42482cf0cfa7127651319efd044a22def330d76018933b952a8 2250 rust-owo-colors_3.5.0-2.dsc c1b04fb49957986fdce4d6ee7a65027d55d4b6d2265e5848bbb507b58ccfdb6f 30310 rust-owo-colors_3.5.0.orig.tar.gz f2a8fb2a5fa79245a7e3165945640b16589c9895e0f07a2a4b7bf4ebb1065b07 2944 rust-owo-colors_3.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-owo-colors"
   ],
   "Files": [
-    "8d953dc18c1ef7ee66d2e68be43ee61b 2146 rust-owo-colors_3.5.0-1.dsc aa7024f7b3b6cc9c16f218c076a31ccc 30310 rust-owo-colors_3.5.0.orig.tar.gz 33f379619caae9a960d4afc7cb563e90 2872 rust-owo-colors_3.5.0-1.debian.tar.xz"
+    "f02c0d79e4a869638aa2ca11bafe1b0b 2250 rust-owo-colors_3.5.0-2.dsc aa7024f7b3b6cc9c16f218c076a31ccc 30310 rust-owo-colors_3.5.0.orig.tar.gz 44716f4abf93e9075629aab6571ac97d 2944 rust-owo-colors_3.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/jam1garner/owo-colors"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/owo-colors]"
   ],
   "Version": [
-    "3.5.0-1"
+    "3.5.0-2"
   ]
 }
