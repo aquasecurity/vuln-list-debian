@@ -6,19 +6,22 @@
     "librust-time-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-time-core-0.1.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-conv-0.1+default-dev \u003c!nocheck\u003e, librust-time-core-0.1.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f253faa9530e6faadea6c3146013ba0c673ccb5efc999c70030ddb865f5d36bd 2233 rust-time-macros_0.2.16-1.dsc 26197e33420244aeb70c3e8c78376ca46571bc4e701e4791c2cd9f57dcb3a43f 24356 rust-time-macros_0.2.16.orig.tar.gz 4cf5c283b7f89b01172bc28420d74838522ccff7de535bb4de0a6f3412cb7afc 2992 rust-time-macros_0.2.16-1.debian.tar.xz"
+    "a8e6cbe8187ad2e468ce71d128c4d8c26c69dd2c2a134473b0b5624695ff3277 1700 rust-time-macros_0.2.19-1.dsc 2834e6017e3e5e4b9834939793b282bc03b37a3336245fa820e35e233e2a85de 24268 rust-time-macros_0.2.19.orig.tar.gz 7ca893c6e471f37d80b728a29d55dca1d2f3e4ff0d66aa60ae5bb1ce73625c71 2988 rust-time-macros_0.2.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-time-macros"
   ],
   "Files": [
-    "95924ff27219cda7d55b50327ed343b1 2233 rust-time-macros_0.2.16-1.dsc 7f9da8cc19556449a240e51ed4dc16fd 24356 rust-time-macros_0.2.16.orig.tar.gz 569266d6f98cc47cb45c8ffd9864bb57 2992 rust-time-macros_0.2.16-1.debian.tar.xz"
+    "1267c9059902fb7dd4bf67ee4ba4cd52 1700 rust-time-macros_0.2.19-1.dsc 504da2c69a717cf18a048a88864fb728 24268 rust-time-macros_0.2.19.orig.tar.gz 059f688e08154441d32b28744812314b 2988 rust-time-macros_0.2.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/time-rs/time"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Liang Yan \u003cly@xryan.net\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/time-macros]"
   ],
   "Version": [
-    "0.2.16-1"
+    "0.2.19-1"
   ]
 }
