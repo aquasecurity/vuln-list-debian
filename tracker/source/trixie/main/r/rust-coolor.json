@@ -6,19 +6,22 @@
     "librust-coolor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "01656839379c2d01f1005efdfb469cb70b17564df10c3fabab767656ae4fe2b6 2331 rust-coolor_0.9.0-1.dsc 37e93977247fb916abeee1ff8c6594c9b421fd9c26c9b720a3944acb2a7de27b 135277 rust-coolor_0.9.0.orig.tar.gz 9cacd17140802812d6967d0fc3187106a9cc1d745fc82096e1b97b0e66b8f830 2560 rust-coolor_0.9.0-1.debian.tar.xz"
+    "6eb05d8b6a21047eb8c2ab1d17d03d761aeb5690521cb53bf1ab366f3f2394b8 1652 rust-coolor_1.0.0-1.dsc 691defa50318376447a73ced869862baecfab35f6aabaa91a4cd726b315bfe1a 136158 rust-coolor_1.0.0.orig.tar.gz 09dd2b0b1d8cff17f9b890b892b30f363dc90cfb5b166fa4a5401cdc8a91bb39 2784 rust-coolor_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-coolor"
   ],
   "Files": [
-    "6e692b750103bd5afb684051343cedec 2331 rust-coolor_0.9.0-1.dsc 3b5905cb1ed128579b8db06e6435b408 135277 rust-coolor_0.9.0.orig.tar.gz 8283f52489def299a1a56d0e4b17d21b 2560 rust-coolor_0.9.0-1.debian.tar.xz"
+    "9b7cdcec6089aee9c16bd6cadf844831 1652 rust-coolor_1.0.0-1.dsc f2cf0ceb31386f4a9933099b4bb9b16d 136158 rust-coolor_1.0.0.orig.tar.gz 45d1c90e66098d6fdd99634ba993481c 2784 rust-coolor_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Canop/coolor"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-crossterm-0.27+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+std-rng-dev"
+    "dh-cargo, librust-crossterm-0.27+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+std-rng-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/coolor]"
   ],
   "Version": [
-    "0.9.0-1"
+    "1.0.0-1"
   ]
 }

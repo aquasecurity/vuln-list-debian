@@ -6,19 +6,22 @@
     "librust-clap-lex-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cf8b5d9c3de11262be2c1b715f2dfbcf52aa7280478db0a8b70056168467f4fb 2188 rust-clap-lex_0.7.2-2.dsc 1462739cb27611015575c0c11df5df7601141071f07518d56fcc1be504cbec97 12805 rust-clap-lex_0.7.2.orig.tar.gz 550cff2392a40fa92028c19fe5a271b65e0565cd862b1bd0830e86a6e7a6efd1 2776 rust-clap-lex_0.7.2-2.debian.tar.xz"
+    "de53d2ba1aed0f5eb646184767c3bb64140d035e2fc96cb3743b0092df1b1158 2244 rust-clap-lex_0.7.4-1.dsc f46ad14479a25103f283c0f10005961cf086d8dc42205bb44c46ac563475dca6 12858 rust-clap-lex_0.7.4.orig.tar.gz cd65a4da9b6f2d7c184341bdf043877ce81663b1e34a9b0b56f90ac3673b28d3 2816 rust-clap-lex_0.7.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-clap-lex"
   ],
   "Files": [
-    "9edf8e96521398b16a70bf33c81c4bbd 2188 rust-clap-lex_0.7.2-2.dsc 8a3db8ec4d6912594fb2599bf2d6feba 12805 rust-clap-lex_0.7.2.orig.tar.gz 839281759d0a6cdea011fe74f19cacc9 2776 rust-clap-lex_0.7.2-2.debian.tar.xz"
+    "81f3fc87deba661a9f6fa4acdc4a78e5 2244 rust-clap-lex_0.7.4-1.dsc a3ae20980b5ce5831255acfe0d77d1ee 12858 rust-clap-lex_0.7.4.orig.tar.gz 76e27e7e12491812afe9834d49da9c41 2816 rust-clap-lex_0.7.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/clap-rs/clap"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-automod-1+default-dev"
+    "dh-cargo, librust-automod-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/clap-lex]"
   ],
   "Version": [
-    "0.7.2-2"
+    "0.7.4-1"
   ]
 }
