@@ -6,19 +6,22 @@
     "librust-kvm-ioctls-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-kvm-bindings+default-dev (\u003e= 0.1.0-~~) \u003c!nocheck\u003e, librust-libc+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-kvm-bindings-0.10+default-dev \u003c!nocheck\u003e, librust-kvm-bindings-0.10+fam-wrappers-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e, librust-vmm-sys-util-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "25f66d4ddd540a6c0cfb930e52faa682ce187cde38198148cb226a8a3a30e218 2201 rust-kvm-ioctls_0.2.0-1.dsc 86be25826f1e499a1731f3a851e01a9600c96b0dca153becd9f1a65eeedb2d61 41616 rust-kvm-ioctls_0.2.0.orig.tar.gz eab839ce1165c0494837a597b8b647319c8251c4b79b1f46659d085fbb1174cf 3080 rust-kvm-ioctls_0.2.0-1.debian.tar.xz"
+    "f421aac00edcc5f6a99d88ab5fa75eb45ee5b41c2b69bff2bf2fbfd6adff6148 2541 rust-kvm-ioctls_0.19.1-1.dsc e013ae7fcd2c6a8f384104d16afe7ea02969301ea2bb2a56e44b011ebc907cab 65716 rust-kvm-ioctls_0.19.1.orig.tar.gz dc84e2817038ec9eaf68a5d7d774a334f1e803a0fd66989ef6c144e1406368e2 7612 rust-kvm-ioctls_0.19.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-kvm-ioctls"
   ],
   "Files": [
-    "c390a85d1b0c76ae2b70158f4681a345 2201 rust-kvm-ioctls_0.2.0-1.dsc 5e9bd0bd8263d1809d635003b16b8449 41616 rust-kvm-ioctls_0.2.0.orig.tar.gz 20d5b670f64f65b83fae482996fe9593 3080 rust-kvm-ioctls_0.2.0-1.debian.tar.xz"
+    "5d2387f30caacf96b5d667834702cc9a 2541 rust-kvm-ioctls_0.19.1-1.dsc 427f3ce4f7a750a865d443cfc92cedd3 65716 rust-kvm-ioctls_0.19.1.orig.tar.gz 979c3a267ab6f595a7301380f32dad1e 7612 rust-kvm-ioctls_0.19.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-vmm/kvm-ioctls"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-byteorder-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Nicolas Braud-Santoni \u003cnicoo@debian.org\u003e"
+    "nicoo \u003cnicoo@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/kvm-ioctls"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/kvm-ioctls]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.19.1-1"
   ]
 }

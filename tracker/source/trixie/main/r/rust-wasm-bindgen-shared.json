@@ -6,16 +6,16 @@
     "librust-wasm-bindgen-shared-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "30889cd8de13809dbb1d94c105cd652581a6920bbd57285ddd169960f230757c 2350 rust-wasm-bindgen-shared_0.2.87-1.dsc ca6ad05a4870b2bf5fe995117d3728437bd27d7cd5f06f13c17443ef369775a1 7248 rust-wasm-bindgen-shared_0.2.87.orig.tar.gz 9ec7cd09550fc2937921e200b7de698167693d3f3f97f30f65ef6a8b74e192ef 2904 rust-wasm-bindgen-shared_0.2.87-1.debian.tar.xz"
+    "98cd5fb1399d26d0101be14423eb2d9f90abde7bde66e5e5a445f51fba4e3e6d 2374 rust-wasm-bindgen-shared_0.2.99-1.dsc 943aab3fdaaa029a6e0271b35ea10b72b943135afe9bffca82384098ad0e06a6 7773 rust-wasm-bindgen-shared_0.2.99.orig.tar.gz 3a85da4924d0ec0010ff6083fc7f7ec13b631e8239d1b1c2a9b2bcce82a232cd 2880 rust-wasm-bindgen-shared_0.2.99-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wasm-bindgen-shared"
   ],
   "Files": [
-    "dc0327ba128844a1d4f07b68e748a99e 2350 rust-wasm-bindgen-shared_0.2.87-1.dsc 4185de0682e5e5f3a9f13285218e59aa 7248 rust-wasm-bindgen-shared_0.2.87.orig.tar.gz 3fa62bbc69f7fa995c2151f45735a974 2904 rust-wasm-bindgen-shared_0.2.87-1.debian.tar.xz"
+    "2ece591055198593abc151aaff4097b7 2374 rust-wasm-bindgen-shared_0.2.99-1.dsc 09e5e23866dd421df94d176aa03bfc61 7773 rust-wasm-bindgen-shared_0.2.99.orig.tar.gz a288ba0d90887f2fa0973a5983e973e5 2880 rust-wasm-bindgen-shared_0.2.99-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wasm-bindgen-shared]"
   ],
   "Version": [
-    "0.2.87-1"
+    "0.2.99-1"
   ]
 }
