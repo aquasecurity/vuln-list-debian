@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armhf i386 riscv64 loong64"
+    "amd64 arm64 armhf i386 riscv64 loong64 mips64el"
   ],
   "Binary": [
-    "ldc, libphobos2-ldc-shared106, libphobos2-ldc-shared-dev"
+    "ldc, libphobos2-ldc-shared110, libphobos2-ldc-shared-dev"
   ],
   "Build-Depends": [
-    "bash-completion, cmake, debhelper-compat (= 13), dh-exec, gdmd, libconfig++-dev, libconfig-dev, libcurl4-gnutls-dev, libedit-dev, libffi-dev, libncurses-dev, llvm, llvm-dev (\u003e= 1:16), pkgconf, quilt, zlib1g-dev"
+    "bash-completion, cmake, debhelper-compat (= 13), dh-exec, gdmd | ldc (\u003e= 1.28.0), libconfig++-dev, libconfig-dev, libcurl4-gnutls-dev, libedit-dev, libffi-dev, libncurses-dev, llvm, llvm-dev (\u003e= 1:19), pkgconf, quilt, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "24b57cca92072263d6d9e954e625183cca3bccc5c6b35fca8c49a6d3f63341bc 2396 ldc_1.36.0-2.1.dsc 2a72e4d8bd61afe24d100cdd468d1e1fe5bbf75e62f88d4e8a8af674988ae98b 8670692 ldc_1.36.0.orig.tar.gz d32b79015aad605866534751fe726d90ea4bf56e7238b40d397b98c98e369fcd 27108 ldc_1.36.0-2.1.debian.tar.xz"
+    "3da02a967964128dfcd461e1ba78a316f39189194a461ff4af9f891f23225b72 2442 ldc_1.40.0-1.dsc 80a3ddd7b7292818cdf6c130e55f1246a19b5fce96139a49b45ccf4e2be99e5f 8672131 ldc_1.40.0.orig.tar.gz 95c1e636f8ee775dfbb7730f0c295d0256ad96c2cfc75312c4819defefe5275a 19812 ldc_1.40.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/ldc"
   ],
   "Files": [
-    "f3c22dd738e02d2821da6fff3a253424 2396 ldc_1.36.0-2.1.dsc ebd89f5f002aefe4025549252eb83c1f 8670692 ldc_1.36.0.orig.tar.gz 4232c591b250c853709db29c4b422cd6 27108 ldc_1.36.0-2.1.debian.tar.xz"
+    "ceb56d100668c8affe32e700d5245321 2442 ldc_1.40.0-1.dsc b38edf8f02ecd6208679c603668d416d 8672131 ldc_1.40.0.orig.tar.gz c2b3a2660b75d35fba83148d0d621611 19812 ldc_1.40.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ldc"
   ],
   "Package-List": [
-    "ldc deb devel optional arch=amd64,arm64,armhf,i386,riscv64,loong64 libphobos2-ldc-shared-dev deb libdevel optional arch=amd64,arm64,armhf,i386,riscv64,loong64 libphobos2-ldc-shared106 deb libs optional arch=amd64,arm64,armhf,i386,riscv64,loong64"
+    "ldc deb devel optional arch=amd64,arm64,armhf,i386,riscv64,loong64,mips64el libphobos2-ldc-shared-dev deb libdevel optional arch=amd64,arm64,armhf,i386,riscv64,loong64,mips64el libphobos2-ldc-shared110 deb libs optional arch=amd64,arm64,armhf,i386,riscv64,loong64,mips64el"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Uploaders": [
     "Konstantinos Margaritis \u003cmarkos@debian.org\u003e, Matthias Klumpp \u003cmak@debian.org\u003e"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/d-team/ldc.git"
   ],
   "Version": [
-    "1:1.36.0-2.1"
+    "1:1.40.0-1"
   ]
 }
