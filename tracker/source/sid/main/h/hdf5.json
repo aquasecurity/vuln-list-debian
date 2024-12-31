@@ -6,19 +6,19 @@
     "libhdf5-310, libhdf5-fortran-310, libhdf5-hl-310, libhdf5-hl-fortran-310, libhdf5-cpp-310, libhdf5-hl-cpp-310, libhdf5-dev, libhdf5-openmpi-310, libhdf5-openmpi-fortran-310, libhdf5-openmpi-hl-310, libhdf5-openmpi-hl-fortran-310, libhdf5-openmpi-cpp-310, libhdf5-openmpi-hl-cpp-310, libhdf5-openmpi-dev, libhdf5-mpich-310, libhdf5-mpich-fortran-310, libhdf5-mpich-hl-310, libhdf5-mpich-hl-fortran-310, libhdf5-mpich-cpp-310, libhdf5-mpich-hl-cpp-310, libhdf5-mpich-dev, libhdf5-mpi-dev, libhdf5-doc, hdf5-helpers, hdf5-tools, libhdf5-java, libhdf5-jni"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 10~), mpi-default-dev, libopenmpi-dev [!armel !armhf !any-i386 !hppa !m68k !powerpc !sh4 !x32], libmpich-dev, zlib1g-dev, libjpeg-dev, gfortran, sharutils, chrpath, libaec-dev, default-jdk-headless (\u003e= 2:1.7) [!hppa !hurd-any], libcurl4-openssl-dev, libssl-dev, javahelper [!hppa !hurd-any], junit4 [!hppa !hurd-any], libslf4j-java [!hppa !hurd-any]"
+    "debhelper (\u003e= 10~), mpi-default-dev, libopenmpi-dev [!armel !armhf !any-i386 !hppa !m68k !powerpc !sh4 !x32], libmpich-dev, zlib1g-dev, libjpeg-dev, gfortran, sharutils, chrpath, libaec-dev, libcurl4-openssl-dev, libssl-dev, default-jdk-headless (\u003e= 2:1.7) [!hppa !hurd-any] \u003c!nojava\u003e, javahelper [!hppa !hurd-any] \u003c!nojava\u003e, junit4 [!hppa !hurd-any] \u003c!nojava\u003e, libslf4j-java [!hppa !hurd-any] \u003c!nojava\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen, php-cli"
   ],
   "Checksums-Sha256": [
-    "f66177ed070a3c193eb222c4bdf847527cf5947a1b76313877556e50baf79715 3714 hdf5_1.14.5+repack-1.dsc 71cdb04c151ef4e8a7f88907adfc4f3b75afd44e96fbd55775e1c9d7c4e7c112 36853741 hdf5_1.14.5+repack.orig.tar.gz 39d03a5afa2a8bcb349aa1b49836c6bd2ddc3856b424b22f4965d3086dbe1718 166912 hdf5_1.14.5+repack-1.debian.tar.xz"
+    "29ba901cb4a99821d87a529c30a49572f2421c53a014292374a4531c7442a1f0 3786 hdf5_1.14.5+repack-2.dsc 71cdb04c151ef4e8a7f88907adfc4f3b75afd44e96fbd55775e1c9d7c4e7c112 36853741 hdf5_1.14.5+repack.orig.tar.gz 62649de32bbabf8cf67cf3f998369a5df81d9316f25899afde31c40b56c75afd 167180 hdf5_1.14.5+repack-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hdf5"
   ],
   "Files": [
-    "04eb1f6d627fd3da4aa0c8534b895416 3714 hdf5_1.14.5+repack-1.dsc e01faccbffa22ca7a0df3c312647e4ce 36853741 hdf5_1.14.5+repack.orig.tar.gz 15203ed1ee02c93a10a75f5b73793b9f 166912 hdf5_1.14.5+repack-1.debian.tar.xz"
+    "5199c649b688ce65c7179ed1855902d3 3786 hdf5_1.14.5+repack-2.dsc e01faccbffa22ca7a0df3c312647e4ce 36853741 hdf5_1.14.5+repack.orig.tar.gz f14ca3254a4d71ea49b5cbedd4bf6e57 167180 hdf5_1.14.5+repack-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "hdf5"
   ],
   "Package-List": [
-    "hdf5-helpers deb science optional arch=any hdf5-tools deb science optional arch=any libhdf5-310 deb libs optional arch=any libhdf5-cpp-310 deb libs optional arch=any libhdf5-dev deb libdevel optional arch=any libhdf5-doc deb doc optional arch=all libhdf5-fortran-310 deb libs optional arch=any libhdf5-hl-310 deb libs optional arch=any libhdf5-hl-cpp-310 deb libs optional arch=any libhdf5-hl-fortran-310 deb libs optional arch=any libhdf5-java deb java optional arch=all libhdf5-jni deb science optional arch=any libhdf5-mpi-dev deb libdevel optional arch=any libhdf5-mpich-310 deb libs optional arch=any libhdf5-mpich-cpp-310 deb libs optional arch=any libhdf5-mpich-dev deb libdevel optional arch=any libhdf5-mpich-fortran-310 deb libs optional arch=any libhdf5-mpich-hl-310 deb libs optional arch=any libhdf5-mpich-hl-cpp-310 deb libs optional arch=any libhdf5-mpich-hl-fortran-310 deb libs optional arch=any libhdf5-openmpi-310 deb libs optional arch=any libhdf5-openmpi-cpp-310 deb libs optional arch=any libhdf5-openmpi-dev deb libdevel optional arch=any libhdf5-openmpi-fortran-310 deb libs optional arch=any libhdf5-openmpi-hl-310 deb libs optional arch=any libhdf5-openmpi-hl-cpp-310 deb libs optional arch=any libhdf5-openmpi-hl-fortran-310 deb libs optional arch=any"
+    "hdf5-helpers deb science optional arch=any hdf5-tools deb science optional arch=any libhdf5-310 deb libs optional arch=any libhdf5-cpp-310 deb libs optional arch=any libhdf5-dev deb libdevel optional arch=any libhdf5-doc deb doc optional arch=all libhdf5-fortran-310 deb libs optional arch=any libhdf5-hl-310 deb libs optional arch=any libhdf5-hl-cpp-310 deb libs optional arch=any libhdf5-hl-fortran-310 deb libs optional arch=any libhdf5-java deb java optional arch=all profile=!nojava libhdf5-jni deb science optional arch=any profile=!nojava libhdf5-mpi-dev deb libdevel optional arch=any libhdf5-mpich-310 deb libs optional arch=any libhdf5-mpich-cpp-310 deb libs optional arch=any libhdf5-mpich-dev deb libdevel optional arch=any libhdf5-mpich-fortran-310 deb libs optional arch=any libhdf5-mpich-hl-310 deb libs optional arch=any libhdf5-mpich-hl-cpp-310 deb libs optional arch=any libhdf5-mpich-hl-fortran-310 deb libs optional arch=any libhdf5-openmpi-310 deb libs optional arch=any libhdf5-openmpi-cpp-310 deb libs optional arch=any libhdf5-openmpi-dev deb libdevel optional arch=any libhdf5-openmpi-fortran-310 deb libs optional arch=any libhdf5-openmpi-hl-310 deb libs optional arch=any libhdf5-openmpi-hl-cpp-310 deb libs optional arch=any libhdf5-openmpi-hl-fortran-310 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/hdf5.git"
   ],
   "Version": [
-    "1.14.5+repack-1"
+    "1.14.5+repack-2"
   ]
 }
