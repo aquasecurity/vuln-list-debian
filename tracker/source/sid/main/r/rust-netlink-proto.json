@@ -6,16 +6,16 @@
     "librust-netlink-proto-dev, librust-netlink-proto+smol-socket-dev, librust-netlink-proto+tokio-socket-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-netlink-packet-core-0.7+default-dev \u003c!nocheck\u003e, librust-netlink-sys-0.8+tokio-socket-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-netlink-sys-0.8-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+time-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-netlink-packet-core-0.7+default-dev \u003c!nocheck\u003e, librust-netlink-sys-0.8+tokio-socket-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-netlink-sys-0.8-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+time-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "90719d1ea19027fcaebae672f0c8ce2aa5c837f3b880ddfe9253c254e6854287 3192 rust-netlink-proto_0.11.2-2.dsc bc321725b8c60732af780181cfa4249ff10c3ece56aee57465f7754ef030925f 20802 rust-netlink-proto_0.11.2.orig.tar.gz 332806912e143ec46635dbe6c8d1f7f0ecc188c384479165036420e9cf875348 3456 rust-netlink-proto_0.11.2-2.debian.tar.xz"
+    "0a86a43f7caf732ce7aa0d6966eb0005523d8f4065e9b4f873e880aa2aedc84d 2572 rust-netlink-proto_0.11.2-3.dsc bc321725b8c60732af780181cfa4249ff10c3ece56aee57465f7754ef030925f 20802 rust-netlink-proto_0.11.2.orig.tar.gz 6e115b8ef11731d625b2a6a16554ccc0365b0504b26ebcd72f7c389a920d3dc7 3512 rust-netlink-proto_0.11.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-netlink-proto"
   ],
   "Files": [
-    "88d3d19e44a99ef7782f509f37d90beb 3192 rust-netlink-proto_0.11.2-2.dsc 92248dbb10b363072d1cc9010a2ad552 20802 rust-netlink-proto_0.11.2.orig.tar.gz 3f0fa6dd8f39de508f761eefd6446c46 3456 rust-netlink-proto_0.11.2-2.debian.tar.xz"
+    "b53e5619aff8efbcae152a4b1235e2ba 2572 rust-netlink-proto_0.11.2-3.dsc 92248dbb10b363072d1cc9010a2ad552 20802 rust-netlink-proto_0.11.2.orig.tar.gz 32be3c30db7b78c2f814d00d92c33042 3512 rust-netlink-proto_0.11.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-env-logger-0.10+default-dev, librust-netlink-packet-audit-0.5+default-dev, librust-netlink-packet-route-0.17+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-env-logger-0.11+default-dev, librust-netlink-packet-audit-0.5+default-dev, librust-netlink-packet-route-0.17+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/netlink-proto]"
   ],
   "Version": [
-    "0.11.2-2"
+    "0.11.2-3"
   ]
 }

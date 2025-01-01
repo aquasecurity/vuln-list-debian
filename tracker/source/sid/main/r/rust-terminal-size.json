@@ -6,16 +6,16 @@
     "librust-terminal-size-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+termios-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+termios-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a360b02b0d900daf6ccba64013d0656107597aa98e6d0e1c554f26a50883a2d8 2312 rust-terminal-size_0.3.0-2.dsc 21bebf2b7c9e0a515f6e0f8c51dc0f8e4696391e6f1ff30379559f8365fb0df7 10096 rust-terminal-size_0.3.0.orig.tar.gz 09f9d51f5903150af39bd1e829852aff24705a68c0e83b6533f4ff4bc7bd72c4 4472 rust-terminal-size_0.3.0-2.debian.tar.xz"
+    "1f079a41f0f186a2f9e31452075a79dab6aba393ed775bb0422d8514875872af 2307 rust-terminal-size_0.4.1-1.dsc 5352447f921fda68cf61b4101566c0bdb5104eff6804d0678e5227580ab6a4e9 10037 rust-terminal-size_0.4.1.orig.tar.gz 0503eeb7f945f97e5fcbaf63f11fbc6fd2bda0ed27cb9425d212edfc1f0c22ef 4524 rust-terminal-size_0.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-terminal-size"
   ],
   "Files": [
-    "88bcfb92359254a52bb8e3e4823e2fb6 2312 rust-terminal-size_0.3.0-2.dsc b7eae58d7a80112442643ee2ff481ef7 10096 rust-terminal-size_0.3.0.orig.tar.gz 3084030f39d168bc95c015537c103e8f 4472 rust-terminal-size_0.3.0-2.debian.tar.xz"
+    "597f9c6ebb2a640fbf3a103a9d7b7253 2307 rust-terminal-size_0.4.1-1.dsc 83ad5fb704a59701efc6764ed2524f73 10037 rust-terminal-size_0.4.1.orig.tar.gz 9c65cbd4f1a3a451c1382332bdeca5d9 4524 rust-terminal-size_0.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-libc-0.2+default-dev"
+    "dh-cargo, librust-libc-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Alois Micard \u003calois@micard.lu\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/terminal-size]"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.4.1-1"
   ]
 }

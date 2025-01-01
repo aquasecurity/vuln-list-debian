@@ -6,16 +6,16 @@
     "librust-test-log-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-env-logger-0.10-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+default-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+log-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-env-logger-0.11-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+default-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+log-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a4d266a27bafcf24f178dd369acd92e34b6550f114f18b31a42c255fef8dbd92 2534 rust-test-log_0.2.15-1.dsc 7b319995299c65d522680decf80f2c108d85b861d81dfe340a10d16cee29d9e6 9739 rust-test-log_0.2.15.orig.tar.gz 06ccf4e80c7746b325d3c396289beb2cb259c143449f867033a5236628f4b7ac 3464 rust-test-log_0.2.15-1.debian.tar.xz"
+    "a9c2afa32643c450170841eb451e46a17f03c01f7c9e4a964731bc0e042e093e 1918 rust-test-log_0.2.15-2.dsc 7b319995299c65d522680decf80f2c108d85b861d81dfe340a10d16cee29d9e6 9739 rust-test-log_0.2.15.orig.tar.gz f1102ec24dad8540b1224fa7ff44f7a573abafd52b9e9b2017a3e0acdd90371d 3516 rust-test-log_0.2.15-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-test-log"
   ],
   "Files": [
-    "b4b5ae49cf5a7b170155ddae68fe9567 2534 rust-test-log_0.2.15-1.dsc fe9c1b02fcdfb1b09ab7f2bf9195460f 9739 rust-test-log_0.2.15.orig.tar.gz 3283d218cea2684621967bc0ad3b5161 3464 rust-test-log_0.2.15-1.debian.tar.xz"
+    "a889b72f74eb0b80c85127d515767451 1918 rust-test-log_0.2.15-2.dsc fe9c1b02fcdfb1b09ab7f2bf9195460f 9739 rust-test-log_0.2.15.orig.tar.gz bba0e030f8d469286908893a4fe7676b 3516 rust-test-log_0.2.15-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev, librust-log-0.4+default-dev, librust-test-case-3+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tracing-0.1+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, librust-log-0.4+default-dev, librust-test-case-3+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tracing-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/test-log]"
   ],
   "Version": [
-    "0.2.15-1"
+    "0.2.15-2"
   ]
 }

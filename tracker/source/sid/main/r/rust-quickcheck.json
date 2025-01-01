@@ -6,16 +6,16 @@
     "librust-quickcheck-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-env-logger-0.10+regex-dev \u003c!nocheck\u003e, librust-env-logger-0.10-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-rand-0.8+getrandom-dev \u003c!nocheck\u003e, librust-rand-0.8+small-rng-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-env-logger-0.11+regex-dev \u003c!nocheck\u003e, librust-env-logger-0.11-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-rand-0.8+getrandom-dev \u003c!nocheck\u003e, librust-rand-0.8+small-rng-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b59c8a040d6821349a48e8491b686ecac5fb229810e0681b2d316342e4c3b838 2459 rust-quickcheck_1.0.3-3.dsc 588f6378e4dd99458b60ec275b4477add41ce4fa9f64dcba6f15adccb19b50d6 28069 rust-quickcheck_1.0.3.orig.tar.gz 9dd7686ae9faf866b8c25b3cbf1de596a7f3dbaa8d8e416895e41408a686cf15 3972 rust-quickcheck_1.0.3-3.debian.tar.xz"
+    "52cb6af8dce2ac5095bdfec998062594e415d63b2a7b56552461d6f2b6620ba9 1839 rust-quickcheck_1.0.3-5.dsc 588f6378e4dd99458b60ec275b4477add41ce4fa9f64dcba6f15adccb19b50d6 28069 rust-quickcheck_1.0.3.orig.tar.gz 6cd38336b0cc926b3a0882a07906c624a3b26b1b0b64ef75b99e03f9b7e87205 4020 rust-quickcheck_1.0.3-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-quickcheck"
   ],
   "Files": [
-    "e1616ce980a8ebd23037fd8fce1903d2 2459 rust-quickcheck_1.0.3-3.dsc 08fb966593abcba7e24aced65041140c 28069 rust-quickcheck_1.0.3.orig.tar.gz 278af156cf4afc8a07b2261bc653920f 3972 rust-quickcheck_1.0.3-3.debian.tar.xz"
+    "f4c0294970c0241e2a9778d9836728c9 1839 rust-quickcheck_1.0.3-5.dsc 08fb966593abcba7e24aced65041140c 28069 rust-quickcheck_1.0.3.orig.tar.gz 3d7ec309841ea92ab170baf3cb0b89f5 4020 rust-quickcheck_1.0.3-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/quickcheck]"
   ],
   "Version": [
-    "1.0.3-3"
+    "1.0.3-5"
   ]
 }

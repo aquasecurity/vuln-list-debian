@@ -6,19 +6,22 @@
     "librust-env-logger-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-humantime-2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-log-0.4+std-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-regex-1+perf-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-regex-1+std-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstream-0.6+auto-dev (\u003e= 0.6.7-~~) \u003c!nocheck\u003e, librust-anstream-0.6-dev (\u003e= 0.6.7-~~) \u003c!nocheck\u003e, librust-anstyle-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-env-filter-0.1+regex-dev \u003c!nocheck\u003e, librust-env-filter-0.1-dev \u003c!nocheck\u003e, librust-humantime-2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.21-~~) \u003c!nocheck\u003e, librust-log-0.4+std-dev (\u003e= 0.4.21-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "94dcb3005ec897a9b4b2c6ab45058e45cfda23ddc0b4dcb22ac0cb3caf35a80f 2517 rust-env-logger_0.10.2-2.dsc 4cd405aab171cb85d6735e5c8d9db038c17d3ca007a4d2c25f337935c3d90580 36402 rust-env-logger_0.10.2.orig.tar.gz 200f2f156690ff77cacf655011c44388111c8354eb093ea158e1a39b06e6e0c1 4248 rust-env-logger_0.10.2-2.debian.tar.xz"
+    "6d7f7ed51d2dcf86c5fc1a5353df94da9206ccc46c238210ec9060b986d9fd4a 2018 rust-env-logger_0.11.5-2.dsc e13fa619b91fb2381732789fc5de83b45675e882f66623b7d8cb4f643017018d 30683 rust-env-logger_0.11.5.orig.tar.gz 2b9fadec92549b551132c9b0277cbb7f6cd478330f2deac45a746bf30e8b67d4 3916 rust-env-logger_0.11.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-env-logger"
   ],
   "Files": [
-    "ad7a1186469d1e3d7eda36ba0ffa490a 2517 rust-env-logger_0.10.2-2.dsc 955bb3f01413f4ea8fbaf6a523890178 36402 rust-env-logger_0.10.2.orig.tar.gz a8c3919b60209232c39913c9e9e1029e 4248 rust-env-logger_0.10.2-2.debian.tar.xz"
+    "40ea9b21763a5512b272ea7ed23f1ff9 2018 rust-env-logger_0.11.5-2.dsc ceeb73ceadea87eaec5261dc3fbed216 30683 rust-env-logger_0.11.5.orig.tar.gz 88014e1b413ac60a3205a5a6cf0642fa 3916 rust-env-logger_0.11.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-cli/env_logger"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/env-logger]"
   ],
   "Version": [
-    "0.10.2-2"
+    "0.11.5-2"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-dircpy-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-jwalk-0.8+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-jwalk-0.8+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "550f81dc62497a463543852e0409e551a11704bed5bdfc3ca41f4d9ba7833173 2439 rust-dircpy_0.3.16-1.dsc 29259db751c34980bfc44100875890c507f585323453b91936960ab1104272ca 6756 rust-dircpy_0.3.16.orig.tar.gz 01be5015f46e556f1db42a92c6c4a3a317a5503e2900e32433e037794d9ad307 3288 rust-dircpy_0.3.16-1.debian.tar.xz"
+    "26b41444163ec5a8f59894e8aff8b1307ac8480f2cfe58a506ee822a64e92e80 1837 rust-dircpy_0.3.16-2.dsc 29259db751c34980bfc44100875890c507f585323453b91936960ab1104272ca 6756 rust-dircpy_0.3.16.orig.tar.gz e06fb973bfb7e9e96b1643beb5127d3dabcd48815d4fd630fec71ff41d694ad4 3516 rust-dircpy_0.3.16-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dircpy"
   ],
   "Files": [
-    "c960f0a4fa9043db0d2ba0af66b8b780 2439 rust-dircpy_0.3.16-1.dsc c3667fbc9f4b7d22984ccf898e445aaf 6756 rust-dircpy_0.3.16.orig.tar.gz 5d1bb3fc441ac6b92b4bdfcbf6834838 3288 rust-dircpy_0.3.16-1.debian.tar.xz"
+    "0297f1e45710c167e36b5491d8804b40 1837 rust-dircpy_0.3.16-2.dsc c3667fbc9f4b7d22984ccf898e445aaf 6756 rust-dircpy_0.3.16.orig.tar.gz 5d843a2a6633269d3b5c3cfbfbfef684 3516 rust-dircpy_0.3.16-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/woelper/dircpy/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-env-logger-0.10+default-dev, librust-reqwest-0.11+blocking-dev, librust-reqwest-0.11+default-dev, librust-unzip-0.1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-env-logger-0.11+default-dev, librust-reqwest-0.11+blocking-dev, librust-reqwest-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dircpy]"
   ],
   "Version": [
-    "0.3.16-1"
+    "0.3.16-2"
   ]
 }

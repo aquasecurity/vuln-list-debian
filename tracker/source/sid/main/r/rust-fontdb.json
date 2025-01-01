@@ -6,19 +6,22 @@
     "librust-fontdb-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fontconfig-parser-0.5-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-slotmap-1-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-ttf-parser-0.24+apple-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+glyph-names-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+no-std-float-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+opentype-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+std-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+variable-fonts-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fontconfig-parser-0.5-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-slotmap-1-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-ttf-parser-0.24+apple-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+glyph-names-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+no-std-float-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+opentype-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+std-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+variable-fonts-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4fab9a5c193aee07fcb815ef067f21ece359239099e14a00450bd44fe5775a9b 2755 rust-fontdb_0.22.0-1.dsc a3a6f9af55fb97ad673fb7a69533eb2f967648a06fa21f8c9bb2cd6d33975716 108279 rust-fontdb_0.22.0.orig.tar.gz 5a2080d1dbc820c1aa93b3b28d14ef53aa709cbdba059a2feb38ac9865c0305a 3040 rust-fontdb_0.22.0-1.debian.tar.xz"
+    "92687c400438a57b3890f359925206fbe951efc4e42d945cfc3a4e169a3a61aa 2198 rust-fontdb_0.22.0-2.dsc a3a6f9af55fb97ad673fb7a69533eb2f967648a06fa21f8c9bb2cd6d33975716 108279 rust-fontdb_0.22.0.orig.tar.gz 2e9bc87058f093dbaad70692bfefec76482d27235b422cbb90fe5b2694b2dcc5 3212 rust-fontdb_0.22.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fontdb"
   ],
   "Files": [
-    "25087ad9d42f77565abf91648c01e1e9 2755 rust-fontdb_0.22.0-1.dsc 22e2859b850d6415f673c4e236615a7c 108279 rust-fontdb_0.22.0.orig.tar.gz c4e1adc6c781f2cd48d83b3f6c6cf3da 3040 rust-fontdb_0.22.0-1.debian.tar.xz"
+    "ccc51ce3bb16e2dccbf447c5f7556ff9 2198 rust-fontdb_0.22.0-2.dsc 22e2859b850d6415f673c4e236615a7c 108279 rust-fontdb_0.22.0.orig.tar.gz d595979b518802068dd06e1e037627ad 3212 rust-fontdb_0.22.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RazrFalcon/fontdb"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.10-dev, rustc"
+    "dh-cargo, librust-env-logger-0.11-dev, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fontdb]"
   ],
   "Version": [
-    "0.22.0-1"
+    "0.22.0-2"
   ]
 }

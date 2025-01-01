@@ -6,16 +6,16 @@
     "librust-webbrowser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-home-0.5+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-home-0.5+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b0c9d16cd406d7ecf17af6e26e5c505ed0ce6dba8e647255b549d4f710b13520 2587 rust-webbrowser_0.8.10-1.dsc fd222aa310eb7532e3fd427a5d7db7e44bc0b0cf1c1e21139c345325511a85b6 38766 rust-webbrowser_0.8.10.orig.tar.gz 6fc24e2be9329f7457065ba5932b37eec010b90a01a1214d0d0fe929596837fa 5056 rust-webbrowser_0.8.10-1.debian.tar.xz"
+    "bd9948c0e3323ed6f7408b1631aa29d330183f4d0b3ce803aa187677a3888eab 1966 rust-webbrowser_0.8.10-2.dsc fd222aa310eb7532e3fd427a5d7db7e44bc0b0cf1c1e21139c345325511a85b6 38766 rust-webbrowser_0.8.10.orig.tar.gz 03a7e62dd0d08afb1ecc71f7fc0f8540095fd0ca546ccc291ce31610028f0557 5112 rust-webbrowser_0.8.10-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-webbrowser"
   ],
   "Files": [
-    "8a36e5a9af00d1b3d90b3f8a838ae43b 2587 rust-webbrowser_0.8.10-1.dsc c6d47ad3602da94f95e0befe19a4989a 38766 rust-webbrowser_0.8.10.orig.tar.gz 8c247e26ed0a3e19a66c6a0475b0bed6 5056 rust-webbrowser_0.8.10-1.debian.tar.xz"
+    "a03f4884b59dc473fc49a7e9346f701a 1966 rust-webbrowser_0.8.10-2.dsc c6d47ad3602da94f95e0befe19a4989a 38766 rust-webbrowser_0.8.10.orig.tar.gz 3d8d531e7611dddd8e32564caa34848d 5112 rust-webbrowser_0.8.10-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, firefox-esr, librust-crossbeam-channel-0.5+default-dev, librust-env-logger-0.9+default-dev, librust-rand-0.8+default-dev, librust-serial-test-0.9+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-urlencoding-2+default-dev"
+    "dh-cargo, firefox-esr, librust-crossbeam-channel-0.5+default-dev, librust-env-logger-0.11+default-dev, librust-rand-0.8+default-dev, librust-serial-test-2+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-urlencoding-2+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/webbrowser]"
   ],
   "Version": [
-    "0.8.10-1"
+    "0.8.10-2"
   ]
 }
