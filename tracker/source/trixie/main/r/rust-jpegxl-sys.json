@@ -6,19 +6,22 @@
     "librust-jpegxl-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libjxl-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libjxl-dev (\u003e= 0.10) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0e4ec680efebb9e004179ee85e1a2a035584c253810ff0c66c359d775bf853b1 2238 rust-jpegxl-sys_0.9.0-1.dsc c409a4497165346620fe58ca6811195fa5427d53cfd4c7d76897ede7e2a7298e 22201 rust-jpegxl-sys_0.9.0.orig.tar.gz 8ada0b1b877a6038f4813070aa2194bb53ec0a61018735758fee211bc0eddcfd 2852 rust-jpegxl-sys_0.9.0-1.debian.tar.xz"
+    "2f2b8ea8a810f624a66b3a4d2841f4c340fa0b881e395814a1fa127883c2efce 1766 rust-jpegxl-sys_0.10.4-1.dsc b8b759db2808767bb744dc780ceb76a235759855e94ff59d98372065abd6ac01 22379 rust-jpegxl-sys_0.10.4.orig.tar.gz 8e13c9fdd59b2ea1bc195a6d6c44725e69a56770fafd21c92cfdf489f54bc658 3076 rust-jpegxl-sys_0.10.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jpegxl-sys"
   ],
   "Files": [
-    "3c94f2450ee603dea5bc8fb08b7cdba9 2238 rust-jpegxl-sys_0.9.0-1.dsc 6293c2e86ed351c501ac08c6e995b7d9 22201 rust-jpegxl-sys_0.9.0.orig.tar.gz 83ed52ff3f7d508e84d56ae678049ec3 2852 rust-jpegxl-sys_0.9.0-1.debian.tar.xz"
+    "31cbdf430bdd811c38912a21fbeeb829 1766 rust-jpegxl-sys_0.10.4-1.dsc 5e937aedc0bc937fc0d5b973ea6a000c 22379 rust-jpegxl-sys_0.10.4.orig.tar.gz acbed2204cac8fa145160f79104bf97d 3076 rust-jpegxl-sys_0.10.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/inflation/jpegxl-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-image-0.24+png-dev"
+    "dh-cargo, librust-image-0.25+png-dev, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/jpegxl-sys"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jpegxl-sys]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.10.4-1"
   ]
 }
