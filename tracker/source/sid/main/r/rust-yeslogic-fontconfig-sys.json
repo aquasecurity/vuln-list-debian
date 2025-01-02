@@ -6,16 +6,16 @@
     "librust-yeslogic-fontconfig-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-const-cstr-0.3+default-dev \u003c!nocheck\u003e, librust-dlib-0.5+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libfontconfig-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cstr-0.2+default-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e, librust-dlib-0.5+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libfontconfig-dev"
   ],
   "Checksums-Sha256": [
-    "4633cf286f0337e202328bd4673e5c0be7a33e698e65cec2f50dd44f863c7614 2550 rust-yeslogic-fontconfig-sys_3.0.1-1.dsc cb3f5a91c31bef6650d3a1b69192b4217fd88e4cfedc8101813e4dc3394ecbb8 6621 rust-yeslogic-fontconfig-sys_3.0.1.orig.tar.gz ba83a5893207092537ab2f012b5ab2e629a104a6f3f258ebb2b3e5d1e5fe0d77 2756 rust-yeslogic-fontconfig-sys_3.0.1-1.debian.tar.xz"
+    "afeef9734c9912b50fe04f238df2b36f832a0f9713762e48097077ebde9b5f5d 2713 rust-yeslogic-fontconfig-sys_5.0.0-1.dsc ffb6b23999a8b1a997bf47c7bb4d19ad4029c3327bb3386ebe0a5ff584b33c7a 6718 rust-yeslogic-fontconfig-sys_5.0.0.orig.tar.gz f59982c05cdb5cc55a342ba2f88b5a739dde394642b3abb19cca8148f18e5f57 2836 rust-yeslogic-fontconfig-sys_5.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-yeslogic-fontconfig-sys"
   ],
   "Files": [
-    "53b6625c1e559d750b71ea09b7cb8b23 2550 rust-yeslogic-fontconfig-sys_3.0.1-1.dsc 0462fa181706c4f882190f9f62186ab7 6621 rust-yeslogic-fontconfig-sys_3.0.1.orig.tar.gz fb17f20bd98a768f9078004998baec1f 2756 rust-yeslogic-fontconfig-sys_3.0.1-1.debian.tar.xz"
+    "f478ce118586fab02673eb3e0aa98989 2713 rust-yeslogic-fontconfig-sys_5.0.0-1.dsc 9bf8775a90c2be0ddd78eb44eee351cd 6718 rust-yeslogic-fontconfig-sys_5.0.0.orig.tar.gz a782ae9c5ea72abfd8bb2795b19a1563 2836 rust-yeslogic-fontconfig-sys_5.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/yeslogic-fontconfig-sys]"
   ],
   "Version": [
-    "3.0.1-1"
+    "5.0.0-1"
   ]
 }
