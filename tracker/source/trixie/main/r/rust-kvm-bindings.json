@@ -6,19 +6,22 @@
     "librust-kvm-bindings-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "45f91af2e5b5727364829c983b663a776231dff2686de6a58c64167fe7afbbc5 2177 rust-kvm-bindings_0.7.0-1.dsc 081fbd8164229a990fbf24a1f35d287740db110c2b5d42addf460165f1b0e032 74838 rust-kvm-bindings_0.7.0.orig.tar.gz 2f26234be4449ce6b1bc2289b75416ac72450531dd315d76660a5928a6c8ae00 2448 rust-kvm-bindings_0.7.0-1.debian.tar.xz"
+    "612975a64c6cb6074b27ce8e5b407f21e7b7e6e935fe560ba03e2b995eba732b 2314 rust-kvm-bindings_0.10.0-2.dsc fa4933174d0cc4b77b958578cd45784071cc5ae212c2d78fbd755aaaa6dfa71a 90037 rust-kvm-bindings_0.10.0.orig.tar.gz 20a758387638f7e1c4487eb804d64a688a4d4bde484644c450128932ed6e16af 2868 rust-kvm-bindings_0.10.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-kvm-bindings"
   ],
   "Files": [
-    "d5d96c5aa504c4a32eeee2ac34d6cea5 2177 rust-kvm-bindings_0.7.0-1.dsc e8cea7b8ff29ce3d02bb8f5151b30ca3 74838 rust-kvm-bindings_0.7.0.orig.tar.gz 6d78f802f592451f027d52e1c8886319 2448 rust-kvm-bindings_0.7.0-1.debian.tar.xz"
+    "542a267b5985135ffa6b394af63c648d 2314 rust-kvm-bindings_0.10.0-2.dsc ebe05b72eb7e46991be3f7529d0cee3f 90037 rust-kvm-bindings_0.10.0.orig.tar.gz feb5a6037583346add1a4f74b2d34543 2868 rust-kvm-bindings_0.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-vmm/kvm-bindings"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-bincode-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "nicoo \u003cnicoo@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/kvm-bindings]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.10.0-2"
   ]
 }

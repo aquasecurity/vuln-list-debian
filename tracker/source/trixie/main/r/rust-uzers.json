@@ -6,19 +6,22 @@
     "librust-uzers-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8243c3f0bef24d510e181aaf16db9fa058c7dc6af6134a9e4d59053b5870be26 1691 rust-uzers_0.12.1-1.dsc 4df81ff504e7d82ad53e95ed1ad5b72103c11253f39238bcc0235b90768a97dd 29272 rust-uzers_0.12.1.orig.tar.gz fca73266e8602836a3c7786b75fcc22b1516e1bc60fea0cac07dd52fd2d370ac 3432 rust-uzers_0.12.1-1.debian.tar.xz"
+    "1af219b258728b742fbdf977ebda16ff1ccee12f0f6cbca3092241816b680022 1729 rust-uzers_0.12.1-2.dsc 4df81ff504e7d82ad53e95ed1ad5b72103c11253f39238bcc0235b90768a97dd 29272 rust-uzers_0.12.1.orig.tar.gz 0c4153ed0d13d3757e56381692386294a3b983eb1ee6c4af59bffba31223276b 3520 rust-uzers_0.12.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-uzers"
   ],
   "Files": [
-    "13d411db7e1fabad8005245afa23980d 1691 rust-uzers_0.12.1-1.dsc ff6d386db6f4b232ac3f29f43dfc841e 29272 rust-uzers_0.12.1.orig.tar.gz c64d9a00fc7d6a43e8825adb8526b664 3432 rust-uzers_0.12.1-1.debian.tar.xz"
+    "3f3377d2f73eb5cebb97bcbae3aa96e9 1729 rust-uzers_0.12.1-2.dsc ff6d386db6f4b232ac3f29f43dfc841e 29272 rust-uzers_0.12.1.orig.tar.gz 0f9a18d5e98703e7affa5419291b9cec 3520 rust-uzers_0.12.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rustadopt/uzers-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, libnss-wrapper, librust-env-logger-0.10-dev, librust-serial-test-2+default-dev, librust-serial-test-2-dev"
+    "dh-cargo, libnss-wrapper, librust-env-logger-0.11-dev, librust-serial-test-2+default-dev, librust-serial-test-2-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/uzers]"
   ],
   "Version": [
-    "0.12.1-1"
+    "0.12.1-2"
   ]
 }

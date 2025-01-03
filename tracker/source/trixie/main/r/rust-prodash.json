@@ -6,19 +6,22 @@
     "librust-prodash-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "45929532bf83ac189b25f6a72095719350a5a59f32e1171788a9e14faf07e9cb 2620 rust-prodash_28.0.0-2.dsc 744a264d26b88a6a7e37cbad97953fa233b94d585236310bcbc88474b4092d79 90695 rust-prodash_28.0.0.orig.tar.gz a26bcc0107a858986cbca4bda902a746d4a1ab886d0821222085746d0c72c173 5524 rust-prodash_28.0.0-2.debian.tar.xz"
+    "342c0e58c9993175749c27ec972410c2858438268b196af541fa39e1fc964db1 2043 rust-prodash_28.0.0-3.dsc 744a264d26b88a6a7e37cbad97953fa233b94d585236310bcbc88474b4092d79 90695 rust-prodash_28.0.0.orig.tar.gz 3e91956cc48328d108cdb28d3b7de38ad42d8f27c6dd7b32ca763855a3c3abda 5620 rust-prodash_28.0.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-prodash"
   ],
   "Files": [
-    "9072a1257f0090ff439ebcba93fc59fc 2620 rust-prodash_28.0.0-2.dsc 533608bb3b2587c0aa148dc36cc16429 90695 rust-prodash_28.0.0.orig.tar.gz b7395c68fdb125879b488807024bf66d 5524 rust-prodash_28.0.0-2.debian.tar.xz"
+    "b9f6965b890fcf953447b743b2039d37 2043 rust-prodash_28.0.0-3.dsc 533608bb3b2587c0aa148dc36cc16429 90695 rust-prodash_28.0.0.orig.tar.gz 64a0cb0b332886b8ed9dd9040705b9c3 5620 rust-prodash_28.0.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Byron/prodash"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-argh-0.1+default-dev, librust-async-executor-1+default-dev, librust-async-io-2+default-dev, librust-blocking-1+default-dev, librust-criterion-0.5-dev, librust-env-logger-0.10+humantime-dev, librust-futures-0.3+default-dev, librust-futures-util-0.3-dev, librust-is-terminal-0.4+default-dev, librust-once-cell-1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-argh-0.1+default-dev, librust-async-executor-1+default-dev, librust-async-io-2+default-dev, librust-blocking-1+default-dev, librust-criterion-0.5-dev, librust-env-logger-0.11+humantime-dev, librust-futures-0.3+default-dev, librust-futures-util-0.3-dev, librust-is-terminal-0.4+default-dev, librust-once-cell-1+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/prodash]"
   ],
   "Version": [
-    "28.0.0-2"
+    "28.0.0-3"
   ]
 }

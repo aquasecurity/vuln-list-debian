@@ -6,19 +6,22 @@
     "librust-assorted-debian-utils-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev \u003c!nocheck\u003e, librust-hex-0.4+std-dev \u003c!nocheck\u003e, librust-rfc822-like-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-yaml-0.9+default-dev \u003c!nocheck\u003e, librust-smallvec-1+serde-dev \u003c!nocheck\u003e, librust-smallvec-1+union-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev \u003c!nocheck\u003e, librust-hex-0.4+std-dev \u003c!nocheck\u003e, librust-rfc822-like-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-yaml-0.9+default-dev \u003c!nocheck\u003e, librust-smallvec-1+serde-dev \u003c!nocheck\u003e, librust-smallvec-1+union-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f62e06784ee648fde55e84219e23ae81cbb238593532498e59392ea6c30e95da 2023 rust-assorted-debian-utils_0.7.3-1.dsc 8863f777dd0d51b34a6b97339b9d7339bd430c17b76d0f9dc3c16f146ffbc012 227077 rust-assorted-debian-utils_0.7.3.orig.tar.gz 87a0fd36086734f87396cfeae38723c63a35b4e6752611bff25613b7e417ad53 2788 rust-assorted-debian-utils_0.7.3-1.debian.tar.xz"
+    "2e3d6c34315848ff1eea99a345f92fb7351db8202fd09e6268ee7b191092da5b 2087 rust-assorted-debian-utils_0.7.5-1.dsc a2ef384a81f66ab5c772efe221c5c00ce5091e60e1a48caf2c5ead405ff0b74c 227181 rust-assorted-debian-utils_0.7.5.orig.tar.gz 76297e65511255d410c211c411dffd21a7e99b58b6e928a19a505f42f6a9fd8a 2924 rust-assorted-debian-utils_0.7.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-assorted-debian-utils"
   ],
   "Files": [
-    "19f8deeff8e0a47a1b16b2c8e3e8b334 2023 rust-assorted-debian-utils_0.7.3-1.dsc a0597922ec8758385b1738ed7d657f4d 227077 rust-assorted-debian-utils_0.7.3.orig.tar.gz e0adbc5c78dd4861b71f2805b39d0440 2788 rust-assorted-debian-utils_0.7.3-1.debian.tar.xz"
+    "6eaff7cbe13d44edf0be2c4b91e6bcd2 2087 rust-assorted-debian-utils_0.7.5-1.dsc 57939536a5e66ed05dccb0d184ad2cc4 227181 rust-assorted-debian-utils_0.7.5.orig.tar.gz 79d906ae74758af450af04be98e8157a 2924 rust-assorted-debian-utils_0.7.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sebastinas/drt-tools"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/assorted-debian-utils]"
   ],
   "Version": [
-    "0.7.3-1"
+    "0.7.5-1"
   ]
 }
