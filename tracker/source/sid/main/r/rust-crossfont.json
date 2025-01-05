@@ -3,22 +3,25 @@
     "any"
   ],
   "Binary": [
-    "librust-crossfont-dev, librust-crossfont+force-system-fontconfig-dev"
+    "librust-crossfont-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-foreign-types-0.5+default-dev \u003c!nocheck\u003e, librust-freetype-rs-0.26+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, librust-servo-fontconfig-0.5+default-dev (\u003e= 0.5.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-foreign-types-0.5+default-dev \u003c!nocheck\u003e, librust-freetype-rs-0.36+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, librust-yeslogic-fontconfig-sys-5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0369f85fa5149e6c7b8959784e19259b374eb582a44b336820fa4ee3bfaa3161 2690 rust-crossfont_0.7.0-2.dsc e89c65306ecd118368d875f48d69394b5c3ff6bb7c57ae6deb638782735a093c 32167 rust-crossfont_0.7.0.orig.tar.gz f3a0ef2698aea1bd425d9c2d592b0ba5fea4262a2e04d0848466c1506c858924 2776 rust-crossfont_0.7.0-2.debian.tar.xz"
+    "709903153b43a8fae13037210e45333b5b478edc8112c4d7a9dbaf357d006997 2627 rust-crossfont_0.8.0-2.dsc c44e28d120f3c9254800ea53349b09cbb45ac1f15f09215011a16241ae0289bc 32259 rust-crossfont_0.8.0.orig.tar.gz 1afa5a56d6c96d518194f3fea7f15fce474ae2e695dc0ca4010a516c702c01ae 2596 rust-crossfont_0.8.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-crossfont"
   ],
   "Files": [
-    "44dab793744eb04909ba587851a1f714 2690 rust-crossfont_0.7.0-2.dsc b98796f70d39efaf11e6489c1c266d56 32167 rust-crossfont_0.7.0.orig.tar.gz 42754c503becb9eca6455c8ac4f670e8 2776 rust-crossfont_0.7.0-2.debian.tar.xz"
+    "2dbb92485e31ca55d400182f2171d650 2627 rust-crossfont_0.8.0-2.dsc 9bbc901dc12a82f02364c83c70dafea5 32259 rust-crossfont_0.8.0.orig.tar.gz 4565413bd510d34bfef9dac82ef4e244 2596 rust-crossfont_0.8.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alacritty/crossfont.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +30,7 @@
     "rust-crossfont"
   ],
   "Package-List": [
-    "librust-crossfont+force-system-fontconfig-dev deb rust optional arch=any librust-crossfont-dev deb rust optional arch=any"
+    "librust-crossfont-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabio Rafael da Rosa \u003cfdr@fabiodarosa.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/crossfont]"
   ],
   "Version": [
-    "0.7.0-2"
+    "0.8.0-2"
   ]
 }
