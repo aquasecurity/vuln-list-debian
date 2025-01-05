@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "sg3-utils, libsgutils2-1.46-2, libsgutils2-dev, sg3-utils-udev"
+    "sg3-utils, libsgutils2-1.48, libsgutils2-dev, sg3-utils-udev"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), libtool, libcam-dev [kfreebsd-any], dpkg-dev (\u003e= 1.16.1~)"
   ],
   "Checksums-Sha256": [
-    "f6dfc5b0e46d2241eb862dbf4381aeb82d066edc8b5050e672165b415090fa39 2155 sg3-utils_1.46-3.1.dsc 59c268b10b93ce31a517af13e19c88f285c12b7dd065f50e36b16a7b6fa7b9a0 1031800 sg3-utils_1.46.orig.tar.xz 4119d6c3eaf8242c85576e4395e4eebe1bceb6449ce8d8448fe030d8855bf9f5 11272 sg3-utils_1.46-3.1.debian.tar.xz"
+    "ae7f280fc5cb9dd4a4aff0949a957f0966afa884dd950b3e7433185e10a4a1bb 1614 sg3-utils_1.48-2.dsc d6b9a41690d540e58d1e99c26ac8db37336c849ef6a03f96ea48ca2fe334dbfa 1211028 sg3-utils_1.48.orig.tar.xz 697fa8a159692dfad01041394fb54debf2304a58501fc51da645fe359f1e22a0 13808 sg3-utils_1.48-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sg3-utils"
   ],
   "Files": [
-    "e536d8e45eec4eca36a7e9b30f6a241b 2155 sg3-utils_1.46-3.1.dsc 11854fedf831adfd39438dc5ac9202e9 1031800 sg3-utils_1.46.orig.tar.xz 71c6e5a54e33e198e23108075aad46cf 11272 sg3-utils_1.46-3.1.debian.tar.xz"
+    "b0601a3dc9e99fa57b499924b49bcdd5 1614 sg3-utils_1.48-2.dsc 0024393d2d2942cc081ce613d98db68a 1211028 sg3-utils_1.48.orig.tar.xz b9ce0335e34a3f9c845da929b15991a4 13808 sg3-utils_1.48-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "sg3-utils"
   ],
   "Package-List": [
-    "libsgutils2-1.46-2 deb libs optional arch=any libsgutils2-dev deb libdevel optional arch=any sg3-utils deb admin optional arch=any sg3-utils-udev deb admin optional arch=all"
+    "libsgutils2-1.48 deb libs optional arch=any libsgutils2-dev deb libdevel optional arch=any sg3-utils deb admin optional arch=any sg3-utils-udev deb admin optional arch=all"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "lsscsi, open-iscsi, targetcli-fb"
   ],
   "Uploaders": [
     "Jonathan McDowell \u003cnoodles@earth.li\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/linux-blocks-team/sg3-utils.git"
   ],
   "Version": [
-    "1.46-3.1"
+    "1.48-2"
   ]
 }
