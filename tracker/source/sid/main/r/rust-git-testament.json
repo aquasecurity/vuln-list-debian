@@ -6,19 +6,22 @@
     "librust-git-testament-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-git-testament-derive-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-git-testament-derive-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c0c22870b9da1ae1b01f6d79e0e4fd86d1c4842dbb2515bba452363e094e8e36 2382 rust-git-testament_0.2.5-1.dsc 710c78d2b68e46e62f5ba63ba0a7a2986640f37f9ecc07903b9ad4e7b2dbfc8e 9312 rust-git-testament_0.2.5.orig.tar.gz 75f82d5a6f31d0445105dd0876499a5e4b8bb5cf37e208aafe89e4d7e213e4d7 2808 rust-git-testament_0.2.5-1.debian.tar.xz"
+    "0ce8274648feaec60ce41d095f129ebc10fa83a86336b22a941047f424214a6d 1829 rust-git-testament_0.2.6-1.dsc 5a74999c921479f919c87a9d2e6922a79a18683f18105344df8e067149232e51 9576 rust-git-testament_0.2.6.orig.tar.gz 375cde36cca796331b150244a26b1fee1e5e4a44c60b15c1a1667f636651404e 2840 rust-git-testament_0.2.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-git-testament"
   ],
   "Files": [
-    "3ad0f6edfea8e3cedbfff3422acd4fb7 2382 rust-git-testament_0.2.5-1.dsc f949c56a0682e929b89e159c05cb3980 9312 rust-git-testament_0.2.5.orig.tar.gz 7216fdaca097067e5d31851a6b1137bc 2808 rust-git-testament_0.2.5-1.debian.tar.xz"
+    "1d4f57671b86c7e83c0470ac23874307 1829 rust-git-testament_0.2.6-1.dsc 862d9cd2d101b818fe267c2166e779a6 9576 rust-git-testament_0.2.6.orig.tar.gz 6e3791140eb89e6ffe354a47150eb144 2840 rust-git-testament_0.2.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kinnison/git-testament/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev, librust-rand-0.8+default-dev, librust-regex-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, librust-rand-0.8+default-dev, librust-regex-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/git-testament"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/git-testament]"
   ],
   "Version": [
-    "0.2.5-1"
+    "0.2.6-1"
   ]
 }
