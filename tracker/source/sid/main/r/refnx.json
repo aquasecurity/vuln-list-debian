@@ -6,16 +6,16 @@
     "python3-refnx"
   ],
   "Build-Depends": [
-    "dh-python, python3-setuptools, python3-all-dev, debhelper (\u003e= 13), cython3, ipython3 \u003c!nocheck\u003e, python3-attr, python3-h5py, python3-ipywidgets \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-numpy, python3-pandas, python3-periodictable \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-qtpy \u003c!nocheck\u003e, python3-scipy, python3-traitlets \u003c!nocheck\u003e, python3-uncertainties \u003c!nocheck\u003e, texlive-latex-base, texlive-latex-extra, texlive-science"
+    "debhelper-compat (= 13), dh-python, cython3, ipython3 \u003c!nocheck\u003e, pybuild-plugin-pyproject, pyqt6-dev-tools \u003c!nocheck\u003e, python3-all-dev, python3-attr, python3-corner \u003c!nocheck\u003e, python3-h5py, python3-ipywidgets \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-numpy, python3-orsopy \u003c!nocheck\u003e, python3-pandas, python3-periodictable \u003c!nocheck\u003e, python3-pyqt6 \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytestqt \u003c!nocheck\u003e, python3-qtpy \u003c!nocheck\u003e, python3-scipy, python3-setuptools, python3-traitlets \u003c!nocheck\u003e, python3-uncertainties \u003c!nocheck\u003e, texlive-latex-base, texlive-latex-extra, texlive-science, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "55fad4986142bbb205bca0beb242673af3b46ff0c3ef29fecf80dfd0e6fec6a8 2320 refnx_0.1.38-1.dsc e12aa04f6792f731d54db901cbf7ec39b74b92e513bb9c4790d60f417a911e77 11083885 refnx_0.1.38.orig.tar.gz 66593787ed3b7147cdfbb1cf37410c58fa973f0770826c8661f24e3fb0128253 8512 refnx_0.1.38-1.debian.tar.xz"
+    "149a07f4e5da1f9b0c079e85ec65d303de252697f9880cfff7de84a91eb189bb 2736 refnx_0.1.51-1.dsc 45bc68d931455c9616204bfe279d9c48537abe14f06ded73a582e11f5d16a762 13128923 refnx_0.1.51.orig.tar.gz 4ce738361c213e6cd9b6924ade35502a4802ea3acaf359f66d8662c0987cbd60 9340 refnx_0.1.51-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/refnx"
   ],
   "Files": [
-    "0ee70ba6b61312737a5e96dbced0997a 2320 refnx_0.1.38-1.dsc 9674b5bb8877dd26e7c3c28ec1bb571a 11083885 refnx_0.1.38.orig.tar.gz c5b73b721ef3d5d46db9cff96f6a2e00 8512 refnx_0.1.38-1.debian.tar.xz"
+    "c60af34cd8d41d00ccd208f8af03317b 2736 refnx_0.1.51-1.dsc 8b5b42f314031d4c973bca1579e54b83 13128923 refnx_0.1.51.orig.tar.gz ac96120c0b8201f231d18ca3dee3e9fd 9340 refnx_0.1.51-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-corner, python3-h5py, python3-ipywidgets, python3-pandas, python3-pytest, python3-pytestqt, python3-traitlets, python3-uncertainties, xauth, xvfb"
   ],
   "Uploaders": [
-    "Roland Mas \u003clolando@debian.org\u003e"
+    "Roland Mas \u003clolando@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/refnx"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/refnx.git"
   ],
   "Version": [
-    "0.1.38-1"
+    "0.1.51-1"
   ]
 }
