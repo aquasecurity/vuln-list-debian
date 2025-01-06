@@ -6,16 +6,16 @@
     "librust-pango-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-0.20+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pango-sys-0.20+default-dev \u003c!nocheck\u003e, libpango1.0-dev, libgirepository1.0-dev, libharfbuzz-dev, gir-rust-code-generator (\u003e= 0.20), xmlstarlet"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-0.20+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev (\u003e= 0.20.3-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pango-sys-0.20+default-dev \u003c!nocheck\u003e, libpango1.0-dev, libgirepository1.0-dev, libharfbuzz-dev, gir-rust-code-generator (\u003e= 0.20), xmlstarlet"
   ],
   "Checksums-Sha256": [
-    "fa4ec771184d313edd1dd0804f187c00983bf7dccda44de8d6104797569afc8d 2467 rust-pango_0.20.1-2.dsc 5764e5a174a5a0ec054fe5962ce6d4fc7052e2d0dcc23bbc77202b40a4a403d3 45575 rust-pango_0.20.1.orig.tar.gz 589f0a8e081b02f9f732f9adee0a280fdf943432e23d969d55778be6160caf1c 4600 rust-pango_0.20.1-2.debian.tar.xz"
+    "a664a04092ab2fc45b91cd5fd7febd2244cd47a646824938fe4576611d63e653 1891 rust-pango_0.20.7-1.dsc 9e89bd74250a03a05cec047b43465469102af803be2bf5e5a1088f8b8455e087 45667 rust-pango_0.20.7.orig.tar.gz 1af3860119f7b197062bcccf97709dadaf7383e049cab4f091f3d830c9a3e165 4640 rust-pango_0.20.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pango"
   ],
   "Files": [
-    "10ae3c2872be3ed850c7979ff16f3282 2467 rust-pango_0.20.1-2.dsc 917b3baed648663a7fd0fbff33d0dc08 45575 rust-pango_0.20.1.orig.tar.gz 32005c0b1108e38256fab5311a9c04e8 4600 rust-pango_0.20.1-2.debian.tar.xz"
+    "8578b7a8b328a11ed42997e384993fce 1891 rust-pango_0.20.7-1.dsc cf0cd347f10e29611b747211eef4dcde 45667 rust-pango_0.20.7.orig.tar.gz f4e39b2426634d3f3ae3f922412f7f64 4640 rust-pango_0.20.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, libpango1.0-dev, librust-gir-format-check-0.1+default-dev"
+    "dh-cargo, libpango1.0-dev, librust-gir-format-check-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pango]"
   ],
   "Version": [
-    "0.20.1-2"
+    "0.20.7-1"
   ]
 }
