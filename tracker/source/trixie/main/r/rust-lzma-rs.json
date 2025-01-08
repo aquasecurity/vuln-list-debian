@@ -6,19 +6,22 @@
     "librust-lzma-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3-~~) \u003c!nocheck\u003e, librust-crc-3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3-~~) \u003c!nocheck\u003e, librust-crc-3+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d6519fa2f50ce49ab0cd1debb39baac4b6bee37050fb7f39ea9ac647597c59f8 2248 rust-lzma-rs_0.3.0-2.dsc 297e814c836ae64db86b36cf2a557ba54368d03f6afcd7d947c266692f71115e 29080 rust-lzma-rs_0.3.0.orig.tar.gz a9f0b84da646d0405a677d906a1801eaf9d8875eb9554023fbd5fa380771144e 2952 rust-lzma-rs_0.3.0-2.debian.tar.xz"
+    "8412f8d33e4638a13ab9deb5f7a25e340d9a5e3d4a1ab12d415cd524da350f73 1636 rust-lzma-rs_0.3.0-3.dsc 297e814c836ae64db86b36cf2a557ba54368d03f6afcd7d947c266692f71115e 29080 rust-lzma-rs_0.3.0.orig.tar.gz 4b96ecb9783650c943a52a79a90678e8c80c8c7c416f189dde3341d8b9bdf7fd 3600 rust-lzma-rs_0.3.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lzma-rs"
   ],
   "Files": [
-    "e81e105072b9da6c359b1eb7770d5d1a 2248 rust-lzma-rs_0.3.0-2.dsc 036bedc00476c489cb2db90bd767152c 29080 rust-lzma-rs_0.3.0.orig.tar.gz 8e84769bd5fb7d910daee20ba295d314 2952 rust-lzma-rs_0.3.0-2.debian.tar.xz"
+    "22e1fd1378e2e2f14b5e61cf1905c001 1636 rust-lzma-rs_0.3.0-3.dsc 036bedc00476c489cb2db90bd767152c 29080 rust-lzma-rs_0.3.0.orig.tar.gz b46d6b81ec953ae3893962d86afd15e4 3600 rust-lzma-rs_0.3.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/gendx/lzma-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rust-lzma-0.5+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lzma-rs]"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.3.0-3"
   ]
 }
