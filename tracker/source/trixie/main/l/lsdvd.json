@@ -6,16 +6,16 @@
     "lsdvd"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libdvdread-dev"
+    "debhelper-compat (= 13), libdvdread-dev, libxml2-dev, dvdauthor \u003c!nocheck\u003e, ffmpeg [!hppa !x32 !hurd-any] \u003c!nocheck\u003e, genisoimage \u003c!nocheck\u003e, jq \u003c!nocheck\u003e, k3b-data [!alpha !m68k !powerpc !sh4 !sparc64 !hurd-any] \u003c!nocheck\u003e, libxml2-utils \u003c!nocheck\u003e, python3-minimal \u003c!nocheck\u003e, ruby \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d52ceafc76ad6e60e3e24c372d98d5d2776162037964b57957c48d69c7402046 1928 lsdvd_0.17-2.dsc 7d2c5bd964acd266b99a61d9054ea64e01204e8e3e1a107abe41b1274969e488 99250 lsdvd_0.17.orig.tar.gz cd9a55bafd94747534c56731d025d75bb656eeaa80c4059ed9944c26288c5d07 3116 lsdvd_0.17-2.debian.tar.xz"
+    "2faad14e0ef221e4f8249a17091b35bfa6401681ef7092be32b4bfdb680c4c14 2250 lsdvd_0.19-5.dsc 1648fb7e35ae8166b74faf96fd0e70b3a437fea017e64dde037f7c196ba59286 123128 lsdvd_0.19.orig.tar.gz 099cbc7a46ba134070b1ccb3dbe8f0b7047014bfddfdb0626327a679cc448782 4792 lsdvd_0.19-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lsdvd"
   ],
   "Files": [
-    "31a2875608d02de63fa6dfdc46e55c14 1928 lsdvd_0.17-2.dsc 32e63ff932ee2867e023ad3e74e14dcb 99250 lsdvd_0.17.orig.tar.gz 4ff3a1c37590e59c79bf1a27a914fe50 3116 lsdvd_0.17-2.debian.tar.xz"
+    "502858302ba3d52f46048e7f31976061 2250 lsdvd_0.19-5.dsc 2812e7c2924d27fe24b22cd3e1093b87 123128 lsdvd_0.19.orig.tar.gz 127526c5f9e5f1412c357533478c28b0 4792 lsdvd_0.19-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dvdauthor, ffmpeg, genisoimage, jq, k3b-data"
+  ],
   "Uploaders": [
     "Laszlo Boszormenyi (GCS) \u003cgcs@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/multimedia-team/lsdvd.git"
   ],
   "Version": [
-    "0.17-2"
+    "0.19-5"
   ]
 }
