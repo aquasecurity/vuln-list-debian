@@ -6,16 +6,16 @@
     "librust-cairo-sys-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libcairo2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libcairo2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "702ba82050ecd8b0c2b2fe78cc990d868a14963ce301eb0229ff4fbc3f5b8191 2322 rust-cairo-sys-rs_0.20.0-2.dsc 428290f914b9b86089f60f5d8a9f6e440508e1bcff23b25afd51502b0a2da88f 11875 rust-cairo-sys-rs_0.20.0.orig.tar.gz 12fecdd8a270e3f0fc887f5fff47c3d748188d4471e22230d747870a5894882e 3864 rust-cairo-sys-rs_0.20.0-2.debian.tar.xz"
+    "063b788b813df3321ad65d5785ccf68dcf64d994875862d53133c05cf0bcc76d 1731 rust-cairo-sys-rs_0.20.7-1.dsc f18b6bb8e43c7eb0f2aac7976afe0c61b6f5fc2ab7bc4c139537ea56c92290df 11934 rust-cairo-sys-rs_0.20.7.orig.tar.gz 93ac28cce7f2bdc76c3a8a9e52ade16eb1d45b51bfe05276c9705725c3ff1638 3900 rust-cairo-sys-rs_0.20.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cairo-sys-rs"
   ],
   "Files": [
-    "a6096959f8e2a21232b434da3e051995 2322 rust-cairo-sys-rs_0.20.0-2.dsc 80e9ded9a9817ff912d13479941f448e 11875 rust-cairo-sys-rs_0.20.0.orig.tar.gz 1e42afbf0b1fb65f40401d01929a83ca 3864 rust-cairo-sys-rs_0.20.0-2.debian.tar.xz"
+    "de23551cc6742e669e4d7eab94fc01f7 1731 rust-cairo-sys-rs_0.20.7-1.dsc de38516afa82a22ac6c2d3bb3b3d4dc5 11934 rust-cairo-sys-rs_0.20.7.orig.tar.gz 3e641787e7d3ac323aab33b004e6abc7 3900 rust-cairo-sys-rs_0.20.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cairo-sys-rs"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cairo-sys-rs]"
   ],
   "Version": [
-    "0.20.0-2"
+    "0.20.7-1"
   ]
 }
