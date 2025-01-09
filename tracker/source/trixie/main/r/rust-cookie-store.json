@@ -6,19 +6,22 @@
     "librust-cookie-store-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cookie-0.18+default-dev \u003c!nocheck\u003e, librust-cookie-0.18+percent-encode-dev \u003c!nocheck\u003e, librust-idna-0+default-dev (\u003e= 0.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-publicsuffix-2+default-dev (\u003e= 2.2.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.147-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.147-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.87-~~) \u003c!nocheck\u003e, librust-time-0.3+default-dev (\u003e= 0.3.16-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cookie-0.18+default-dev \u003c!nocheck\u003e, librust-cookie-0.18+percent-encode-dev \u003c!nocheck\u003e, librust-document-features-0.2+default-dev (\u003e= 0.2.7-~~) \u003c!nocheck\u003e, librust-idna+default-dev (\u003e= 0.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-publicsuffix-2+default-dev (\u003e= 2.2.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.147-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.147-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.87-~~) \u003c!nocheck\u003e, librust-time-0.3+default-dev (\u003e= 0.3.16-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c1079d5c0a77e5c0b69eb5a641ebe4e4b9429dfe0a383f3b549926fb35ecfe13 2747 rust-cookie-store_0.21.0-1.dsc 4934e6b7e8419148b6ef56950d277af8561060b56afd59e2aadf98b59fce6baa 31495 rust-cookie-store_0.21.0.orig.tar.gz 41f7ad920c6a2f592f0122c57c0516a7fd329f7c7429a745434e16e34f32e98b 3584 rust-cookie-store_0.21.0-1.debian.tar.xz"
+    "460ae096a0bdea95c94819d1317e312c93e23dac84281397e988235a744b98fe 2889 rust-cookie-store_0.21.1-1.dsc 2eac901828f88a5241ee0600950ab981148a18f2f756900ffba1b125ca6a3ef9 34692 rust-cookie-store_0.21.1.orig.tar.gz bdf1b06b38502b7adea5660c463e26b5406735f8ae64344379aeb76b00de8c15 3760 rust-cookie-store_0.21.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cookie-store"
   ],
   "Files": [
-    "e8731d7a6353d31d5cb12113762081bc 2747 rust-cookie-store_0.21.0-1.dsc ae8cab082d8e9df363d04f91561712b4 31495 rust-cookie-store_0.21.0.orig.tar.gz cf42288aab9aab5bf909796e687ad582 3584 rust-cookie-store_0.21.0-1.debian.tar.xz"
+    "b5836cbfd8e7f2aa45c265fc88c54220 2889 rust-cookie-store_0.21.1-1.dsc 3285f5fe0a99e24761cfb61a7229c005 34692 rust-cookie-store_0.21.1.orig.tar.gz 9a5447487c9d82ce8afc18a5f01268d0 3760 rust-cookie-store_0.21.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pfernie/cookie_store"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cookie-store]"
   ],
   "Version": [
-    "0.21.0-1"
+    "0.21.1-1"
   ]
 }
