@@ -6,16 +6,16 @@
     "librust-laurel-dev, laurel"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native (\u003e= 1.70), libstd-rust-dev, librust-anyhow-1+default-dev, librust-bindgen+default-dev (\u003e= 0.60-~~), librust-caps-0.5+default-dev, librust-exacl+default-dev (\u003e= 0.6-~~), librust-faster-hex-0.9+default-dev, librust-getopts-0.2+default-dev, librust-indexmap-2+default-dev, librust-indexmap-2+serde-dev, librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-log-0.4+default-dev, librust-nix-0+default-dev (\u003e= 0.26-~~), librust-nix-0+fs-dev (\u003e= 0.26-~~), librust-nix-0+process-dev (\u003e= 0.26-~~), librust-nix-0+signal-dev (\u003e= 0.26-~~), librust-nix-0+time-dev (\u003e= 0.26-~~), librust-nix-0+user-dev (\u003e= 0.26-~~), librust-nom-7+default-dev, librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-json-1+preserve-order-dev, librust-signal-hook-0.3+default-dev, librust-simple-logger+default-dev (\u003e= 1-~~), librust-syslog-6+default-dev, librust-thiserror-1+default-dev, librust-tinyvec-1+alloc-dev, librust-tinyvec-1+default-dev, librust-tinyvec-1+serde-dev, librust-toml-0.5+default-dev, pandoc, libdebhelper-perl"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native (\u003e= 1.70), libstd-rust-dev, librust-anyhow-1+default-dev, librust-bindgen+default-dev (\u003e= 0.60-~~), librust-caps-0.5+default-dev, librust-exacl+default-dev (\u003e= 0.6-~~), librust-faster-hex-0.9+default-dev, librust-getopts-0.2+default-dev, librust-indexmap-2+default-dev, librust-indexmap-2+serde-dev, librust-lazy-static-1+default-dev, librust-libc-0.2+default-dev, librust-linux-audit-parser-0.2+default-dev (\u003e= 0.2.1-~~), librust-log-0.4+default-dev, librust-nix-0+default-dev (\u003e= 0.26-~~), librust-nix-0+fs-dev (\u003e= 0.26-~~), librust-nix-0+process-dev (\u003e= 0.26-~~), librust-nix-0+signal-dev (\u003e= 0.26-~~), librust-nix-0+time-dev (\u003e= 0.26-~~), librust-nix-0+user-dev (\u003e= 0.26-~~), librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-json-1+preserve-order-dev, librust-signal-hook-0.3+default-dev, librust-simple-logger+default-dev (\u003e= 1-~~), librust-syslog-6+default-dev, librust-thiserror+default-dev (\u003e= 1-~~), librust-tinyvec-1+alloc-dev, librust-tinyvec-1+default-dev, librust-tinyvec-1+serde-dev, librust-toml-0.5+default-dev, pandoc, libdebhelper-perl"
   ],
   "Checksums-Sha256": [
-    "c8fb24e6d6cf1bd9fd41c050ca4e8c51f9873aabd8d10f14efaeb9d46a6ca0ce 2660 rust-laurel_0.6.3-1.dsc 850663375c9e2cb0dbb08e5259d98bbfa9dca56b559bd2e6802624277f861e25 126105 rust-laurel_0.6.3.orig.tar.gz f069aecb1265eba3e74f14c41e31acf76ba9a58efd371c62be32728e1bd76ab3 4880 rust-laurel_0.6.3-1.debian.tar.xz"
+    "7c82e2db9fc27c3f240fc445d31be0453387aaf09617d6215947aad2e31b8e68 3294 rust-laurel_0.6.4-1.dsc 11f0f86c4835bbf6541a9008612b39c6371c2752d16f7645c8087d1a7852ba14 106361 rust-laurel_0.6.4.orig.tar.gz 059b69cca7db2f257df09b7aafd7b1ebed8ef8d0a9264989aca1cb9c4c348485 5016 rust-laurel_0.6.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-laurel"
   ],
   "Files": [
-    "e1e194846cd802dce1cdd09803cd7964 2660 rust-laurel_0.6.3-1.dsc 73c6ec7da92990cc2414e12d4c0f0df6 126105 rust-laurel_0.6.3.orig.tar.gz fbfc8682b759a3d32bfbb0a91e68ca81 4880 rust-laurel_0.6.3-1.debian.tar.xz"
+    "e8d463a682b787ef74b9be90b728a6a1 3294 rust-laurel_0.6.4-1.dsc 8cb12563e5544ca7047e0e3273284148 106361 rust-laurel_0.6.4.orig.tar.gz 6f06e3167a3129a1946dc5b1bde7db67 5016 rust-laurel_0.6.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Hilko Bengen \u003cbengen@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/laurel]"
   ],
   "Version": [
-    "0.6.3-1"
+    "0.6.4-1"
   ]
 }
