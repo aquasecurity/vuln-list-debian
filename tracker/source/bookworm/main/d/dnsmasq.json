@@ -6,22 +6,22 @@
     "dnsmasq, dnsmasq-base, dnsmasq-base-lua, dnsmasq-utils"
   ],
   "Build-Depends": [
-    "gettext, libnetfilter-conntrack-dev [linux-any], libidn2-dev, libdbus-1-dev (\u003e= 0.61), libgmp-dev, nettle-dev (\u003e= 2.4-3), libbsd-dev [kfreebsd-any], liblua5.2-dev, dh-runit, debhelper-compat (= 10), pkg-config, libnftables-dev"
+    "dh-exec, gettext, libnetfilter-conntrack-dev [linux-any], libidn2-dev, libdbus-1-dev (\u003e= 0.61), libgmp-dev, nettle-dev (\u003e= 2.4-3), libbsd-dev [kfreebsd-any], liblua5.4-dev, dh-runit, debhelper-compat (= 13), pkgconf, libnftables-dev"
   ],
   "Checksums-Sha256": [
-    "0db918e2668b9d8ff3a8f9ca8f3928cbfc31aeefd57abf608e1115589c2d0d98 2184 dnsmasq_2.89-1.dsc 1567d5824ccead4dae8a23dd2f4d0dc8cbc8a4a416d019ba4329d3cd37196856 842936 dnsmasq_2.89.orig.tar.gz 11cf0cff81bcbed02c02e43e0078299ae7cb9161d70363cc76cf1781ec64612a 27181 dnsmasq_2.89-1.diff.gz"
+    "8e476c41f828e3f187f0cde0e7baf0cbd198ccc2545e8bf69876dca730c7b610 3312 dnsmasq_2.90-4~deb12u1.dsc 8e50309bd837bfec9649a812e066c09b6988b73d749b7d293c06c57d46a109e4 570672 dnsmasq_2.90.orig.tar.xz 2e3f407edb90caafecb64096d6f4cdba6a995dbbd014af5ad153ac83cace5da8 833 dnsmasq_2.90.orig.tar.xz.asc 9c15112ce94f54d910688db5e5434f3d65ae4b4460e2b2b6ff023b75d12e8109 31608 dnsmasq_2.90-4~deb12u1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dnsmasq"
   ],
   "Files": [
-    "8da898a62f8fe765846257304b4f200b 2184 dnsmasq_2.89-1.dsc b32b1f17ddc08199b96610c7fcf02454 842936 dnsmasq_2.89.orig.tar.gz 00225cd0991991cb92d63653b5401cad 27181 dnsmasq_2.89-1.diff.gz"
+    "bb17f279860abef67b8eac0abc27d5de 3312 dnsmasq_2.90-4~deb12u1.dsc 58b511a118301b8fe4e89f9734957937 570672 dnsmasq_2.90.orig.tar.xz d14d9c701bf5ed0812756eb4fe730e5a 833 dnsmasq_2.90.orig.tar.xz.asc 7c68bc09291e3eaa2b13a75f322717bc 31608 dnsmasq_2.90-4~deb12u1.debian.tar.xz"
   ],
   "Format": [
-    "1.0"
+    "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.thekelleys.org.uk/dnsmasq/doc.html"
+    "https://www.thekelleys.org.uk/dnsmasq/doc.html"
   ],
   "Maintainer": [
     "Simon Kelley \u003csimon@thekelleys.org.uk\u003e"
@@ -39,15 +39,24 @@
     "net"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "bind9, bind9-dnsutils"
+  ],
+  "Uploaders": [
+    "Sven Geuer \u003cdebmaint@g-e-u-e-r.de\u003e"
   ],
   "Vcs-Browser": [
-    "http://thekelleys.org.uk/gitweb/?p=dnsmasq.git"
+    "https://thekelleys.org.uk/gitweb/?p=dnsmasq-debian.git"
   ],
   "Vcs-Git": [
-    "http://thekelleys.org.uk/git/dnsmasq.git"
+    "https://thekelleys.org.uk/git/dnsmasq-debian.git"
   ],
   "Version": [
-    "2.89-1"
+    "2.90-4~deb12u1"
   ]
 }
