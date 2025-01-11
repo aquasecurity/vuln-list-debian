@@ -6,19 +6,22 @@
     "librust-calloop-wayland-source-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-calloop-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-rustix-0.38+std-dev (\u003e= 0.38.4-~~) \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev \u003c!nocheck\u003e, librust-wayland-client-0.31+default-dev (\u003e= 0.31.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-calloop-0.13+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+std-dev (\u003e= 0.38.4-~~) \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev \u003c!nocheck\u003e, librust-wayland-client-0.31+default-dev (\u003e= 0.31.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "74819aef1e9662742f46a074e5c7e2c943d24b631712f88bc92e04cd0d365bea 2762 rust-calloop-wayland-source_0.2.0-2.dsc 0f0ea9b9476c7fad82841a8dbb380e2eae480c21910feba80725b46931ed8f02 11304 rust-calloop-wayland-source_0.2.0.orig.tar.gz 9cfe2e28c0260cc4da3b814f9e0c121cf650b03b84638f8ac55b2f3079d50863 2700 rust-calloop-wayland-source_0.2.0-2.debian.tar.xz"
+    "ad9651edccb03c10e36625bd4e9224e0cab7fc8e3678842266fc8324c5755d18 2821 rust-calloop-wayland-source_0.3.0-1.dsc 95a66a987056935f7efce4ab5668920b5d0dac4a7c99991a67395f13702ddd20 11300 rust-calloop-wayland-source_0.3.0.orig.tar.gz 64224b1fc0dc0354c7f891a87532c236ae66ee4baf678d3f85a0c99acf1e9d32 2740 rust-calloop-wayland-source_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-calloop-wayland-source"
   ],
   "Files": [
-    "76862a0d816ee972bd73b5f981dec102 2762 rust-calloop-wayland-source_0.2.0-2.dsc b760bf4a1a3fc54c76e9d042131a7acc 11304 rust-calloop-wayland-source_0.2.0.orig.tar.gz 7be6686df461ad2044f1a66b876f8a1c 2700 rust-calloop-wayland-source_0.2.0-2.debian.tar.xz"
+    "6097f7e4e1725e503a3426e0bf0baa8a 2821 rust-calloop-wayland-source_0.3.0-1.dsc bd1ea4f70c9d121a381b37d88a237c5d 11300 rust-calloop-wayland-source_0.3.0.orig.tar.gz 0ee0b7899b3e98bea5388eab76753749 2740 rust-calloop-wayland-source_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smithay/calloop-wayland-source"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev, librust-wayland-protocols-0.31+client-dev, librust-wayland-protocols-0.31+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, librust-wayland-protocols-0.31+client-dev, librust-wayland-protocols-0.31+default-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/calloop-wayland-source]"
   ],
   "Version": [
-    "0.2.0-2"
+    "0.3.0-1"
   ]
 }
