@@ -3,22 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "libtag1-dev, libtag1-doc, libtag1v5, libtag1v5-vanilla, libtagc0, libtagc0-dev"
+    "libtag-dev, libtag-c-dev, libtag-c2, libtag-doc, libtag2, libtag1-dev, libtagc0-dev"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libboost-dev, libcppunit-dev \u003c!nocheck\u003e, libutfcpp-dev, pkg-kde-tools, zlib1g-dev"
+    "cmake, debhelper-compat (= 13), dh-sequence-pkgkde-symbolshelper, libcppunit-dev \u003c!nocheck\u003e, libutfcpp-dev, pkgconf, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
     "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "85c8344b5539918a429edb05ff04880a43a8ece141b9aebf88dfc26e16e96a60 2344 taglib_1.13.1-2.dsc c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b 1372618 taglib_1.13.1.orig.tar.gz 9bd255b0e0e89e02fc4de41d0107c45237ddca072535e83d0739289dd00e96f5 33976 taglib_1.13.1-2.debian.tar.xz"
+    "95e06005a5a255a55fc58d77d9d4e2adb4e97d54337b8695c064f6fd4d05b41c 3173 taglib_2.0.2-1.dsc 0de288d7fe34ba133199fd8512f19cc1100196826eafcb67a33b224ec3a59737 1446419 taglib_2.0.2.orig.tar.gz 9a5491086eff2a1eb626b3182686a4db676a412dc99117eaddf1ae006d534c00 34312 taglib_2.0.2-1.debian.tar.xz"
+  ],
+  "Description": [
+    "audio meta-data library TagLib is a library for reading and editing audio meta data, commonly know as tags. . - A clean, high level, C++ API to handling audio meta data. - Format specific APIs for advanced API users. - ID3v1, ID3v2, APE, FLAC, Xiph, iTunes-style MP4 and WMA tag formats. - MP3, MPC, FLAC, MP4, ASF, AIFF, WAV, TrueAudio, WavPack, Ogg FLAC, Ogg Vorbis, Speex and Opus file formats. - Basic audio file properties such as length, sample rate, etc. - Long term binary and source compatibility. - Extensible design, notably the ability to add other formats or extend - current formats as a library user. - Full support for unicode and internationalized tags. - Dual MPL and LGPL licenses. - No external toolkit dependencies."
   ],
   "Directory": [
     "pool/main/t/taglib"
   ],
   "Files": [
-    "061d761d80f230aca43939581a29dd7f 2344 taglib_1.13.1-2.dsc 2fe6089da73ad414aa1b982b83415362 1372618 taglib_1.13.1.orig.tar.gz 407adfebf27e9081a91905be4280d460 33976 taglib_1.13.1-2.debian.tar.xz"
+    "c08c977cfa695404b3db2cfb1d4c7d6e 3173 taglib_2.0.2-1.dsc 95edea13107ac4cc07b7ad4bd1cb5cd1 1446419 taglib_2.0.2.orig.tar.gz e860564ce5f87dcc07c72f4431f87089 34312 taglib_2.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "taglib"
   ],
   "Package-List": [
-    "libtag1-dev deb libdevel optional arch=any libtag1-doc deb doc optional arch=all profile=!nodoc libtag1v5 deb libs optional arch=any libtag1v5-vanilla deb libs optional arch=any libtagc0 deb libs optional arch=any libtagc0-dev deb libdevel optional arch=any"
+    "libtag-c-dev deb libdevel optional arch=any libtag-c2 deb libs optional arch=any libtag-dev deb libdevel optional arch=any libtag-doc deb doc optional arch=all profile=!nodoc libtag1-dev deb oldlibs optional arch=any libtag2 deb libs optional arch=any libtagc0-dev deb oldlibs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/multimedia-team/taglib.git"
   ],
   "Version": [
-    "1.13.1-2"
+    "2.0.2-1"
   ]
 }
