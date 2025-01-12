@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libspdlog-dev, libspdlog1.12"
+    "libspdlog-dev, libspdlog1.15"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, pkg-config, libsystemd-dev [linux-any], libfmt-dev (\u003e= 9.0.0), pkg-kde-tools, catch2 (\u003e= 3.0.0)"
+    "debhelper-compat (= 13), cmake, ninja-build, pkgconf, libfmt-dev (\u003e= 10), pkg-kde-tools, libsystemd-dev [linux-any] \u003c!nocheck\u003e, catch2 (\u003e= 3.0.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0a5ef05f50088ec357e60842078278bcc206efc44c24ee9bc624d46d39dc4394 2174 spdlog_1.12.0+ds-2.dsc b74b560d021ce4d49a4e68e320a6044e7af91124aa2e12a93357ed888c4cf328 90352 spdlog_1.12.0+ds.orig.tar.xz e3e3c59682a6071708360dcb59cec4cf1c4a51fc43fd90df27a115222130f639 7540 spdlog_1.12.0+ds-2.debian.tar.xz"
+    "1de1d8620e32e74b50622d2cd9d5c3b438607b2e2c5618014a90b69634712a2b 1917 spdlog_1.15.0+ds-2.dsc f9652251b7ec7a00a20303d37d0e8ac76a9e9d0ad220d564185f9e1edb856e17 105132 spdlog_1.15.0+ds.orig.tar.xz d33ba885fd15673383ab9f583a26a5edb0c22652420f6ab485cb2ca725c4aee0 7736 spdlog_1.15.0+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/spdlog"
   ],
   "Files": [
-    "5a0612d233c2694b15b2c308b3f3de90 2174 spdlog_1.12.0+ds-2.dsc 3d1f07fa49d443a4b20e5c4edfd16005 90352 spdlog_1.12.0+ds.orig.tar.xz ec6f05295041c004cb55aef918f461ca 7540 spdlog_1.12.0+ds-2.debian.tar.xz"
+    "68309358e3bd4077b47b9748abaf265d 1917 spdlog_1.15.0+ds-2.dsc e9b81d7c330e1aaa32be4a283c190f1c 105132 spdlog_1.15.0+ds.orig.tar.xz a6415501b701644f1c38a7c522cc2d0e 7736 spdlog_1.15.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "spdlog"
   ],
   "Package-List": [
-    "libspdlog-dev deb libdevel optional arch=any libspdlog1.12 deb libs optional arch=any"
+    "libspdlog-dev deb libdevel optional arch=any libspdlog1.15 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, g++"
+    "catch2, cmake, g++, libfmt-dev, libsystemd-dev, ninja-build"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/spdlog.git"
   ],
   "Version": [
-    "1:1.12.0+ds-2"
+    "1:1.15.0+ds-2"
   ]
 }
