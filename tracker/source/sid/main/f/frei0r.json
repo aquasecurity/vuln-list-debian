@@ -6,22 +6,22 @@
     "frei0r-plugins, frei0r-plugins-dev, frei0r-plugins-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-buildinfo, pkg-config, libgavl-dev, libcairo2-dev, libopencv-dev"
+    "debhelper-compat (= 13), dh-buildinfo, cmake, libcairo2-dev, libgavl-dev, libopencv-dev, pkgconf"
   ],
   "Build-Depends-Indep": [
     "doxygen"
   ],
   "Checksums-Sha256": [
-    "e6a0776b2029ac771f0b81d811c3b862ee1f75093db3d3f4e59d7bbca6b68f80 2519 frei0r_1.8.0-1.dsc 45a28655caf057227b442b800ca3899e93490515c81e212d219fdf4a7613f5c4 823119 frei0r_1.8.0.orig.tar.gz 8d3d857b0ad2bfd445b5679030dfc3d382a19c4ffe02d1a8c9248b91e1672034 1528 frei0r_1.8.0.orig.tar.gz.asc d1b2804049f741f3fc16a0f3eb5e4727595f19c960b59beec76e92e2df7c11a1 15408 frei0r_1.8.0-1.debian.tar.xz"
+    "cb9bed9c889d03ee0d8143db3e8ffc3f53a2de65b4a6f2308e2e4fd65c803849 2380 frei0r_2.3.3-1.dsc aeeefe3a9b44761b2cf110017d2b1dfa2ceeb873da96d283ba5157380c5d0ce5 921452 frei0r_2.3.3.orig.tar.gz 18ee09eb1c428b406d49c16ca920cc21d6eff176ff15ad0131821eeaf8199b93 16420 frei0r_2.3.3-1.debian.tar.xz"
   ],
   "Dgit": [
-    "01e4d06d331fc6a977b58737e38613cf1505c045 debian archive/debian/1.8.0-1 https://git.dgit.debian.org/frei0r"
+    "40c0800238743f83eac0fe63565f7911b71c615c debian archive/debian/2.3.3-1 https://git.dgit.debian.org/frei0r"
   ],
   "Directory": [
     "pool/main/f/frei0r"
   ],
   "Files": [
-    "fbb8a6897d9a04b469c1f98e524c6eca 2519 frei0r_1.8.0-1.dsc 45ffe53925ce0a90ce1d838c05e0a3c0 823119 frei0r_1.8.0.orig.tar.gz 393c3797620ea305065674390a1add1d 1528 frei0r_1.8.0.orig.tar.gz.asc 4da4e3180eb1b265451af1f0dceadcfe 15408 frei0r_1.8.0-1.debian.tar.xz"
+    "9a72b0e66326bbda11faad4000e3299d 2380 frei0r_2.3.3-1.dsc f96f73cbf3270cbce1a22e12aeb8fb1e 921452 frei0r_2.3.3.orig.tar.gz ce7f1ebca1d52ac0c00041b5a6514995 16420 frei0r_2.3.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,13 @@
     "video"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, pkgconf"
   ],
   "Uploaders": [
     "IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e,"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/multimedia-team/frei0r.git"
   ],
   "Version": [
-    "1.8.0-1"
+    "2.3.3-1"
   ]
 }
