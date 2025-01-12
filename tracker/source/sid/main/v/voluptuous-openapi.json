@@ -6,16 +6,19 @@
     "python3-voluptuous-openapi"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-pytest \u003c!nocheck\u003e, python3-voluptuous \u003c!nocheck\u003e, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-openapi-schema-validator \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-voluptuous \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "70874d3f864a7e2a990e98ea1e35b3100323f9a779a91e2f6508c57f47953721 2256 voluptuous-openapi_0.0.5-1.dsc 1619cd298da0024fa01338ac5a9ce3b3b7059205ce3c69230c24803b11308fb0 10621 voluptuous-openapi_0.0.5.orig.tar.gz 3b546292c039dccafbde3925a649c1b778264f001abb0921e6d46804e615da24 2148 voluptuous-openapi_0.0.5-1.debian.tar.xz"
+    "9e8852bb8c70bfe41f5d4ee42e7555fedc63c9035b7e7c84c67d381bd36a7f42 2357 voluptuous-openapi_0.0.6-1.dsc 1cec0355edeaff24a7af131d1a919edb11158e90582adbf0d19ed06a19e2e55a 14666 voluptuous-openapi_0.0.6.orig.tar.gz b374697c09dffd42b38870ec0ee5da1b4d6e71372ace2c6f35628ed1a8afb01d 2164 voluptuous-openapi_0.0.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/v/voluptuous-openapi"
   ],
   "Files": [
-    "efded8fae6a128265181bf82c9a8c329 2256 voluptuous-openapi_0.0.5-1.dsc 4ea5817cc2f27c9e3c6b32f4f0fdb479 10621 voluptuous-openapi_0.0.5.orig.tar.gz 1c29de02d3fc875426e44d3a0ead7082 2148 voluptuous-openapi_0.0.5-1.debian.tar.xz"
+    "922219edef959a79d10515e79606fc8b 2357 voluptuous-openapi_0.0.6-1.dsc 4d361a608682f7a58f76b9d1b392bca1 14666 voluptuous-openapi_0.0.6.orig.tar.gz 8fd9f089165e10b70e15bbccc2b15403 2164 voluptuous-openapi_0.0.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +48,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "python3-all, python3-openapi-schema-validator, python3-pytest"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/voluptuous-openapi"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/voluptuous-openapi.git"
   ],
   "Version": [
-    "0.0.5-1"
+    "0.0.6-1"
   ]
 }
