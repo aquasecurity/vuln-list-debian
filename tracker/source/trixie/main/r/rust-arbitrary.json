@@ -6,19 +6,22 @@
     "librust-arbitrary-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "75f46793c46fbebdfc687ca9a5fc9e7f05ef3da367f4ce41a24f53062a4f8978 2170 rust-arbitrary_1.3.2-1.dsc 7d5a26814d8dcb93b0e5a0ff3c6d80a8843bafb21b39e8e18a6f05471870e110 32037 rust-arbitrary_1.3.2.orig.tar.gz 1179ebfa89bc328fa9adabbbc9a83c3de95e2b8ef689a22fb316c0f8e2b5845d 3896 rust-arbitrary_1.3.2-1.debian.tar.xz"
+    "3f663cf569aa00d813b6bb4d5d9c0b9ef73851978e816ddba0a2a5e9a3b16137 2234 rust-arbitrary_1.4.1-1.dsc dde20b3d026af13f561bdd0f15edf01fc734f0dafcedbaf42bba506a9517f223 36816 rust-arbitrary_1.4.1.orig.tar.gz ef3c873c6e442843b9f8c455d5c82b93e68c0a9544e4dc87b0a3b225de6a3010 3792 rust-arbitrary_1.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-arbitrary"
   ],
   "Files": [
-    "ad830f89efd6f944b717ac9dc7c9bda4 2170 rust-arbitrary_1.3.2-1.dsc c1a0202e60c31330720a70210f0d0080 32037 rust-arbitrary_1.3.2.orig.tar.gz 451e8083ff43aa053f9d438fce97f689 3896 rust-arbitrary_1.3.2-1.debian.tar.xz"
+    "73f29dd33554db3a57a86dfd2707291d 2234 rust-arbitrary_1.4.1-1.dsc da82510ef455c94807d8ab0c38ea096f 36816 rust-arbitrary_1.4.1.orig.tar.gz 832cb086e5111e8011f3bf659d4dccdf 3792 rust-arbitrary_1.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-fuzz/arbitrary/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/arbitrary]"
   ],
   "Version": [
-    "1.3.2-1"
+    "1.4.1-1"
   ]
 }
