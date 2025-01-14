@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-encoding-rs-dev, librust-encoding-rs+fast-legacy-encode-dev, librust-encoding-rs+serde-dev"
+    "librust-encoding-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f68072e6145db02ba1f8a9c5bc945e62674c966529a22e4416c2f612a7891588 2645 rust-encoding-rs_0.8.33-1.dsc 7268b386296a025e474d5140678f75d6de9493ae55a5d709eeb9dd08149945e1 1370071 rust-encoding-rs_0.8.33.orig.tar.gz 7061bed299031ba132f207620f5d24b3c78d4a69d172405c1e4eb6296aca7112 4852 rust-encoding-rs_0.8.33-1.debian.tar.xz"
+    "91f2a23f05403b71cd18e7d51952c7c8f37973635fd683fadc1b78b6a3131bfc 1831 rust-encoding-rs_0.8.35-1.dsc 75030f3c4f45dafd7586dd6780965a8c7e8e285a5ecb86713e63a79c5b2766f3 1381050 rust-encoding-rs_0.8.35.orig.tar.gz 20ba8bc84035697aa779dfce7c7ae5c4a89afab3cd72e174abb87a19efc64587 4632 rust-encoding-rs_0.8.35-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-encoding-rs"
   ],
   "Files": [
-    "59f87a49db51b8d041a72bac50773aed 2645 rust-encoding-rs_0.8.33-1.dsc 5f9a3a8b7213c055342b2f423a213b3a 1370071 rust-encoding-rs_0.8.33.orig.tar.gz e5fe57f74fa28a4bcc5843933c7f0cb3 4852 rust-encoding-rs_0.8.33-1.debian.tar.xz"
+    "4479d48893b3ddeeb67e7c1951c6bcb5 1831 rust-encoding-rs_0.8.35-1.dsc 916cd597e92b97a987a1a8f8f2d40805 1381050 rust-encoding-rs_0.8.35.orig.tar.gz 4d1fe434d55103071609e715a048365a 4632 rust-encoding-rs_0.8.35-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-encoding-rs"
   ],
   "Package-List": [
-    "librust-encoding-rs+fast-legacy-encode-dev deb rust optional arch=any librust-encoding-rs+serde-dev deb rust optional arch=any librust-encoding-rs-dev deb rust optional arch=any"
+    "librust-encoding-rs-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/encoding-rs]"
   ],
   "Version": [
-    "0.8.33-1"
+    "0.8.35-1"
   ]
 }

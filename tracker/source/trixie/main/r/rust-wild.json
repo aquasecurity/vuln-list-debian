@@ -6,16 +6,16 @@
     "librust-wild-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ac477bc4ea4387cba2cf774929e31429925a8be0bd5b8239fceb629e9af9085d 2171 rust-wild_2.1.0-1.dsc 05b116685a6be0c52f5a103334cbff26db643826c7b3735fc0a3ba9871310a74 7548 rust-wild_2.1.0.orig.tar.gz 887d66974c71c4e189536155919d77bc8a093649479d3407d188e668db4caa5b 2684 rust-wild_2.1.0-1.debian.tar.xz"
+    "e16c0c7841d56b24160c3741faae4a1b418e6681c34a0a7993df1fb2743227a3 1594 rust-wild_2.2.1-1.dsc a3131afc8c575281e1e80f36ed6a092aa502c08b18ed7524e86fbbb12bb410e1 8080 rust-wild_2.2.1.orig.tar.gz 5082b8e8e3be6bd23abb33f7e6711cb9d2e08a86cef79088315e9c5afca4efea 2768 rust-wild_2.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wild"
   ],
   "Files": [
-    "65ee23cb028b20148ae6596fc75715a3 2171 rust-wild_2.1.0-1.dsc b3af058bfd9d161843f176f76b117d02 7548 rust-wild_2.1.0.orig.tar.gz 9f1e95ce54bc8df0e7589b1999308660 2684 rust-wild_2.1.0-1.debian.tar.xz"
+    "4872968c477a86f185878a7dd5127dd8 1594 rust-wild_2.2.1-1.dsc d4e26a11bf1874084a43635a9f4967b5 8080 rust-wild_2.2.1.orig.tar.gz 2fd3c3788e1ad8e181c92b25d91734ec 2768 rust-wild_2.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-glob-0.3+default-dev"
+    "dh-cargo, librust-glob-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Helen Koike \u003chelen@koikeco.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wild]"
   ],
   "Version": [
-    "2.1.0-1"
+    "2.2.1-1"
   ]
 }
