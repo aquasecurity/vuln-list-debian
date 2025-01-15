@@ -6,19 +6,22 @@
     "librust-aes-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c8f40279ea2bf8c89eff9e71f23172fd7456ea8f1ca279ba4f0966444ed1f77e 2332 rust-aes_0.8.3-2.dsc 45378d60b207f1050365e581abdf845d0dac3a144342ae4a437d4f264a8841ca 124437 rust-aes_0.8.3.orig.tar.gz 85775b67e2b99f2f3f563090b43a1cb7baefcbf08991da0036888ceeb42d260b 3212 rust-aes_0.8.3-2.debian.tar.xz"
+    "dc6f5ce1a8657748180d540eeb8b4d5873c6cd91c2fafd968a21cf64ff054863 1874 rust-aes_0.8.4-1.dsc 5422cff1bcb6d6379d02773a355f7462a7f6ef34c1daf30286d00e88c53659d6 124576 rust-aes_0.8.4.orig.tar.gz ccba0bff083647fd1e32318bbc0d2f6e5d3ec1e7c9261ebe657024ae98bd4c5c 3248 rust-aes_0.8.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-aes"
   ],
   "Files": [
-    "1c5ec12736fae8c2fd1121b7ed5032a3 2332 rust-aes_0.8.3-2.dsc 5ccdd15499063749838fd823586e5716 124437 rust-aes_0.8.3.orig.tar.gz 888730508f76875b291431a1f53e5628 3212 rust-aes_0.8.3-2.debian.tar.xz"
+    "4643d607b9d1b8fcb113264fb349f3a4 1874 rust-aes_0.8.4-1.dsc 2c0f670a5c2465227281ab823815c345 124576 rust-aes_0.8.4.orig.tar.gz c98e33067bf2ec88da8adf637df9f090 3248 rust-aes_0.8.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/block-ciphers"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cipher-0.4+default-dev, librust-cipher-0.4+dev-dev, librust-hex-literal-0.3+default-dev"
+    "dh-cargo, librust-cipher-0.4+default-dev, librust-cipher-0.4+dev-dev, librust-hex-literal-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/aes]"
   ],
   "Version": [
-    "0.8.3-2"
+    "0.8.4-1"
   ]
 }

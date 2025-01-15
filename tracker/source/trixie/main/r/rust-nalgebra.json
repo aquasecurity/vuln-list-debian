@@ -6,16 +6,16 @@
     "librust-nalgebra-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+std-dev \u003c!nocheck\u003e, librust-approx-0.5-dev \u003c!nocheck\u003e, librust-matrixmultiply-0.3+default-dev \u003c!nocheck\u003e, librust-nalgebra-macros-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e, librust-num-complex-0.4+std-dev \u003c!nocheck\u003e, librust-num-complex-0.4-dev \u003c!nocheck\u003e, librust-num-rational-0.4+std-dev \u003c!nocheck\u003e, librust-num-rational-0.4-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-simba-0.9+std-dev \u003c!nocheck\u003e, librust-simba-0.9-dev \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+std-dev \u003c!nocheck\u003e, librust-approx-0.5-dev \u003c!nocheck\u003e, librust-matrixmultiply-0.3+default-dev \u003c!nocheck\u003e, librust-nalgebra-macros-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e, librust-num-complex-0.4+std-dev \u003c!nocheck\u003e, librust-num-complex-0.4-dev \u003c!nocheck\u003e, librust-num-rational-0.4+std-dev \u003c!nocheck\u003e, librust-num-rational-0.4-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-simba-0.9+std-dev \u003c!nocheck\u003e, librust-simba-0.9-dev \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8ad2ca762b42c6597aff3b0ff9ad562b7db76b4465d15006d98fd494ba6cd3ba 2404 rust-nalgebra_0.33.0-2.dsc 3c4b5f057b303842cf3262c27e465f4c303572e7f6b0648f60e16248ac3397f4 385140 rust-nalgebra_0.33.0.orig.tar.gz d3860b7477cf8153477d03f30b7750fc4154f725e1666738bf2331f4b2f0de75 4604 rust-nalgebra_0.33.0-2.debian.tar.xz"
+    "661d640fc6e47b81272ed0e544268c90dd2d1553206887f34f592db56ca4ae9f 2390 rust-nalgebra_0.33.2-1.dsc 26aecdf64b707efd1310e3544d709c5c0ac61c13756046aaaba41be5c4f66a3b 385768 rust-nalgebra_0.33.2.orig.tar.gz 5ba2b75b062265cc353184fd2ddbac7f6bcfe2058160e6553b5040c3aad623d9 4888 rust-nalgebra_0.33.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nalgebra"
   ],
   "Files": [
-    "c363ec1563a9c36facb5579a36bd2282 2404 rust-nalgebra_0.33.0-2.dsc 158197087fb759f11ccfd95504b3c0af 385140 rust-nalgebra_0.33.0.orig.tar.gz 82e2782168fd47567b62cc69684cb730 4604 rust-nalgebra_0.33.0-2.debian.tar.xz"
+    "706032388f872d7764e5a3947592353f 2390 rust-nalgebra_0.33.2-1.dsc e7361e6e7a5f612d89ca7e91851b2d35 385768 rust-nalgebra_0.33.2.orig.tar.gz a0b2c3ec92a651caf217ef3500fd66d0 4888 rust-nalgebra_0.33.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-itertools-0.10+default-dev, librust-rand-isaac-0.3+default-dev, librust-rand-xorshift-0.3+default-dev, librust-serde-json-1+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-itertools-0.13+default-dev, librust-rand-isaac-0.3+default-dev, librust-rand-xorshift-0.3+default-dev, librust-serde-json-1+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/nalgebra"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nalgebra]"
   ],
   "Version": [
-    "0.33.0-2"
+    "0.33.2-1"
   ]
 }

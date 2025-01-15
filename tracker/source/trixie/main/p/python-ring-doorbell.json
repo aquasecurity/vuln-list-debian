@@ -6,16 +6,19 @@
     "python3-ring-doorbell"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-sphinx, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-aiofiles \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-all, python3-asyncclick \u003c!nocheck\u003e, python3-firebase-messaging \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-hatchling, python3-myst-parser \u003c!nocheck\u003e, python3-oauthlib \u003c!nocheck\u003e, python3-poetry-core \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-freezer \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-pytest-socket \u003c!nocheck\u003e, python3-requests-oauthlib, python3-sphinx, python3-sphinx-rtd-theme, python3-tz \u003c!nocheck\u003e, python3-websockets \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "65e5f98ca40546328df552e146fb6b985b76c0b4bee7500e01dfcd0be4afb012 2346 python-ring-doorbell_0.8.12-1.dsc 15a49b7633d8356c4da4cd55188d420b7005ca00dab0349811e6a97e83bf3a9b 82853 python-ring-doorbell_0.8.12.orig.tar.gz d5cdfba881d2cc881f7362200aed1faed692b6ded7f243a04598223d1e70cade 5172 python-ring-doorbell_0.8.12-1.debian.tar.xz"
+    "f4cb9d050608926fc5001c17770986019e902a11d2ab814ab674963b0ba5d886 2922 python-ring-doorbell_0.9.12-3.dsc 37099b3e10c4ca23cdf2deacccc657d881e8e2deb8f6b27dc6140caf7be2aa8c 172934 python-ring-doorbell_0.9.12.orig.tar.gz 87f180b0f84faf90aa613d7e69d0c81801b1bf04654559b7b0104cf89a73f68e 4720 python-ring-doorbell_0.9.12-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "19d320f6a35eea47b406d006017f19969c91b0f1 debian archive/debian/0.9.12-3 https://git.dgit.debian.org/python-ring-doorbell"
   ],
   "Directory": [
     "pool/main/p/python-ring-doorbell"
   ],
   "Files": [
-    "485356d77c354a5dcef4ee570ddf73c7 2346 python-ring-doorbell_0.8.12-1.dsc 40b53f40890e7bfdb57e29be1bed03cb 82853 python-ring-doorbell_0.8.12.orig.tar.gz 1bd81ef924e79fdc892b1644729773dc 5172 python-ring-doorbell_0.8.12-1.debian.tar.xz"
+    "2d83f72821f52ff6871c59911ca7f6bc 2922 python-ring-doorbell_0.9.12-3.dsc eaf8289574b18d743409bdc3c15c5e01 172934 python-ring-doorbell_0.9.12.orig.tar.gz 96a19330ad657de57916c4dc13817430 4720 python-ring-doorbell_0.9.12-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +45,10 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest-asyncio, python3-pytest-mock, python3-requests-mock"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Carles Pina i Estany \u003ccarles@pina.cat\u003e"
+    "Carles Pina i Estany \u003ccarles@pina.cat\u003e, Roland Mas \u003clolando@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-ring-doorbell"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-ring-doorbell.git"
   ],
   "Version": [
-    "0.8.12-1"
+    "0.9.12-3"
   ]
 }

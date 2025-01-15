@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "python3-fitz"
+    "python3-fitz, python3-pymupdf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all-dev:any, libpython3-all-dev, libmupdf-dev (\u003e= 1.23), libmujs-dev, libjbig2dec-dev, libjpeg-dev, libfreetype-dev, libpng-dev, libopenjp2-7-dev, libharfbuzz-dev, swig, libgumbo-dev"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all-dev:any, libpython3-all-dev, libmupdf-dev (\u003e= 1.25), swig, python3-mupdf"
   ],
   "Checksums-Sha256": [
-    "4e35036afe73cdd421d2f12033dcc7812bf7e121020d811d8af054cc7281d3d9 2069 pymupdf_1.24.2+ds1-3.dsc 72d9371e903d654d2e9ba5009df309230a71e4819fc3663c23669653f9159863 27191696 pymupdf_1.24.2+ds1.orig.tar.xz c2c4bf1a28ec54070b46da9121ed45be3a52de107b508abf5c16235ede2e0eb3 16360 pymupdf_1.24.2+ds1-3.debian.tar.xz"
+    "00e1f1e4795e767da7fe655c512b1d699235429998db8a5c9c6f0b8375afd9ae 2053 pymupdf_1.25.0+ds1-2.dsc 26821436104549fe7bdfe51897c86e3a25538994287605d132ae018e1bd56ac8 62068408 pymupdf_1.25.0+ds1.orig.tar.xz 6eced7e2ef80b09e47ee4c5dc0c784c94b9502645fed5a182b53719544dcbf7a 16328 pymupdf_1.25.0+ds1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pymupdf"
   ],
   "Files": [
-    "d4528728798103a831ba693b16d49b72 2069 pymupdf_1.24.2+ds1-3.dsc f2dd96beb46c5a1c02868b2c3208774c 27191696 pymupdf_1.24.2+ds1.orig.tar.xz 9e20f51d3adae8d8962f356fba2d19a6 16360 pymupdf_1.24.2+ds1-3.debian.tar.xz"
+    "f225d3b9d55d8f999c9ce1afb349f83e 2053 pymupdf_1.25.0+ds1-2.dsc 8afe338183c7386e591fd5dc9de515a9 62068408 pymupdf_1.25.0+ds1.orig.tar.xz a759fdaa6d40add28f8d32b1fdd21857 16328 pymupdf_1.25.0+ds1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pymupdf"
   ],
   "Package-List": [
-    "python3-fitz deb python optional arch=any"
+    "python3-fitz deb python optional arch=all python3-pymupdf deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -44,8 +44,8 @@
   "Testsuite": [
     "autopkgtest"
   ],
-  "Uploaders": [
-    "Johannes 'josch' Schauer \u003cjosch@debian.org\u003e"
+  "Testsuite-Triggers": [
+    "python3-all, python3-mupdf, python3-psutil, python3-pytest"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pymupdf"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/pymupdf.git"
   ],
   "Version": [
-    "1.24.2+ds1-3"
+    "1.25.0+ds1-2"
   ]
 }
