@@ -6,19 +6,22 @@
     "librust-rkyv-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "053fec52ba4cd83634dacdcf4bd93713bbd866165e3e7afe8e4b73f9e4b05e77 2311 rust-rkyv-derive_0.7.44-1.dsc a7dddfff8de25e6f62b9d64e6e432bf1c6736c57d20323e15ee10435fbda7c65 18912 rust-rkyv-derive_0.7.44.orig.tar.gz 387ed41b2d2908ab50ac8d46517d04d0f779baff9505026676453ec31280975f 2856 rust-rkyv-derive_0.7.44-1.debian.tar.xz"
+    "bec08d931221f6ff1b90efd608051f89438f2b4b64d284084e9365f9b485848a 1765 rust-rkyv-derive_0.7.45-1.dsc 503d1d27590a2b0a3a4ca4c94755aa2875657196ecbf401a42eff41d7de532c0 18972 rust-rkyv-derive_0.7.45.orig.tar.gz ce21c24a71f7dd7d2ab0bfb35f9ed0e571185305378693b343e6eb7a892ad578 3048 rust-rkyv-derive_0.7.45-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rkyv-derive"
   ],
   "Files": [
-    "737750b6a8bb4fb6d6f2856bed40ff13 2311 rust-rkyv-derive_0.7.44-1.dsc 8b04dec2fde98cfb9f9b76645927728f 18912 rust-rkyv-derive_0.7.44.orig.tar.gz 286540ad69b88a4f63a2f5ef2e107f84 2856 rust-rkyv-derive_0.7.44-1.debian.tar.xz"
+    "e973622ca740a0849e3a37ad5bffeb4c 1765 rust-rkyv-derive_0.7.45-1.dsc c163af07877d0d655ba9a80078ff07c8 18972 rust-rkyv-derive_0.7.45.orig.tar.gz ba7d7517d191064d5ff2b6417e430cbe 3048 rust-rkyv-derive_0.7.45-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rkyv/rkyv"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rkyv-derive]"
   ],
   "Version": [
-    "0.7.44-1"
+    "0.7.45-1"
   ]
 }
