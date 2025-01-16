@@ -6,16 +6,19 @@
     "python3-aioimaplib"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-imaplib2 \u003c!nocheck\u003e, python3-mock \u003c!nocheck\u003e, python3-openssl \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-tz \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0007b0ff2ca750585067b32e15fbeb3e25675cc41c3193fc7aebbe3c078e59a0 2010 aioimaplib_1.1.0-2.dsc dedf23e11292f7e9565ae3603a6b9733eac449e301c384422d46fa06a6b35bb9 384806 aioimaplib_1.1.0.orig.tar.gz f6cd85b392757005d99a1a3c5241110c0f5ee3c38ab7461839f76e3862d94baa 2168 aioimaplib_1.1.0-2.debian.tar.xz"
+    "54e16885c969ca6a19ea745a092a756d04ae7424dc15435b405799d5810046e4 2402 aioimaplib_2.0.0-1.dsc 26f8904e4e28a58ab18b45d09f9b0b36a69275f6fd4ebf0a733d40e1da8a097b 403992 aioimaplib_2.0.0.orig.tar.gz 8422588f4d549e50c493224f94d198966ba5dc4f8a01432b562bd439e5dc0c66 3264 aioimaplib_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/aioimaplib"
   ],
   "Files": [
-    "025bc13b9150b54ea0a2860f86a1b2ff 2010 aioimaplib_1.1.0-2.dsc ea264b4ed3f7bfb944ac264c822d201b 384806 aioimaplib_1.1.0.orig.tar.gz b8286fd1806bc7610c53c8497503aa63 2168 aioimaplib_1.1.0-2.debian.tar.xz"
+    "bf76032c730e77a9a893c4c211c40071 2402 aioimaplib_2.0.0-1.dsc 3497986bb7fb9694f6360d4f4bc7e5d7 403992 aioimaplib_2.0.0.orig.tar.gz be06c35f01fa138da0348847d84996ed 3264 aioimaplib_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,8 +44,14 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-imaplib2, python3-mock, python3-openssl, python3-pytest, python3-pytest-asyncio, python3-tz"
+  ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/aioimaplib"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/aioimaplib.git"
   ],
   "Version": [
-    "1.1.0-2"
+    "2.0.0-1"
   ]
 }
