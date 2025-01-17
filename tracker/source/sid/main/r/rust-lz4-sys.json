@@ -6,19 +6,22 @@
     "librust-lz4-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.25-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.44-~~) \u003c!nocheck\u003e, liblz4-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, liblz4-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6b5cd707f58fdcd74a1508ee25c749025982fcc4a5450bbaf5fb77cec055f7aa 2228 rust-lz4-sys_1.9.4-1.dsc a514e6433ccb25ff1b78414d8db6240c13764315574ac948fa9bcad22bd91e98 6024 rust-lz4-sys_1.9.4.orig.tar.gz 634887b1ad7e4e9dd4a415f154100800cdb911db75774300959c2ad139491850 3744 rust-lz4-sys_1.9.4-1.debian.tar.xz"
+    "652f5822895f3c07b45ec5da9de561eb635a51c1769eb0712745127ad8b9c7ff 1674 rust-lz4-sys_1.11.1-1.dsc 1b294e3d0bf745bf97f9523a6b93dfc4906b611c4ea8aba976625cc891693895 8503 rust-lz4-sys_1.11.1.orig.tar.gz 752ff939b0c32d86ee1994150deb30c43423d46198ed5b68d4ab9774e8badb7d 2884 rust-lz4-sys_1.11.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lz4-sys"
   ],
   "Files": [
-    "18648e8b5ce01793441a2f9cbe04c6f7 2228 rust-lz4-sys_1.9.4-1.dsc d3abad13d19940fdcbc5102a58622159 6024 rust-lz4-sys_1.9.4.orig.tar.gz 7befcf7ae83ec5436c484f7155d8036f 3744 rust-lz4-sys_1.9.4-1.debian.tar.xz"
+    "2ed4c551ea3215150f98e74fba6d0cfa 1674 rust-lz4-sys_1.11.1-1.dsc bd8851b589febeb920ce68d1cc83638a 8503 rust-lz4-sys_1.11.1.orig.tar.gz 19b53f6cc68807ccd5ad215b6d050142 2884 rust-lz4-sys_1.11.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/10xGenomics/lz4-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Roland Mas \u003clolando@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lz4-sys]"
   ],
   "Version": [
-    "1.9.4-1"
+    "1.11.1-1"
   ]
 }

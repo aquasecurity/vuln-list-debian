@@ -6,19 +6,22 @@
     "librust-lz4-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-lz4-sys-1+default-dev (\u003e= 1.9.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lz4-sys-1+default-dev (\u003e= 1.11.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fd13d99d40372f6b8b4047a07aba490081f015012f2d3cdbc743705b800789a1 2254 rust-lz4_1.24.0-1.dsc 7e9e2dd86df36ce760a60f6ff6ad526f7ba1f14ba0356f8254fb6905e6494df1 13361 rust-lz4_1.24.0.orig.tar.gz 0f523f69e30f31675bae686f3d7dff64af310d2b2f63500e498f14580a3208eb 2812 rust-lz4_1.24.0-1.debian.tar.xz"
+    "8a63f2c99966a8166f5365b3ce2d5d788f45712b8507847350b2bc76a143aba7 1637 rust-lz4_1.28.1-1.dsc a20b523e860d03443e98350ceaac5e71c6ba89aea7d960769ec3ce37f4de5af4 13585 rust-lz4_1.28.1.orig.tar.gz d125d7159de67404127f14ae70f26efa5b74e6be8073cf97657980cf540f7c96 2744 rust-lz4_1.28.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lz4"
   ],
   "Files": [
-    "2ed4c774bd32c86783d45e4e645b0fe4 2254 rust-lz4_1.24.0-1.dsc a4224da617c44d8d967052fecf24512a 13361 rust-lz4_1.24.0.orig.tar.gz 30bac368039780a7bb65050e8edfb60e 2812 rust-lz4_1.24.0-1.debian.tar.xz"
+    "ef9ba9f41e10b28fefb3cb05ffbe2e8a 1637 rust-lz4_1.28.1-1.dsc a770e448c05f8218a194cc8b0780b186 13585 rust-lz4_1.28.1.orig.tar.gz ed502fa91c33ed0febee54495273fbaa 2744 rust-lz4_1.28.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/10xGenomics/lz4-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-docmatic-0.1+default-dev, librust-rand-0.7+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.7+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Roland Mas \u003clolando@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lz4]"
   ],
   "Version": [
-    "1.24.0-1"
+    "1.28.1-1"
   ]
 }
