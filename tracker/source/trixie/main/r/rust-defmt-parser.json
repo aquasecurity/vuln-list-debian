@@ -6,19 +6,22 @@
     "librust-defmt-parser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror+default-dev (\u003e= 1.0.65-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f0d23290a52ccdd979839e1cf707dff51d4c2705ec101422d77b9fad37e76b4b 1653 rust-defmt-parser_0.3.4-1.dsc ff4a5fefe330e8d7f31b16a318f9ce81000d8e35e69b93eae154d16d2278f70f 9439 rust-defmt-parser_0.3.4.orig.tar.gz 11285e73d68d9ba6ebfab1622efaed3d7ad015a011af0ff09272e8108581e5f6 2656 rust-defmt-parser_0.3.4-1.debian.tar.xz"
+    "7f07c321824e3085057ba6e77ae828492f55ad8b5ed84f3e45ccb5d17c9a5888 2334 rust-defmt-parser_0.4.1-1.dsc 3983b127f13995e68c1e29071e5d115cd96f215ccb5e6812e3728cd6f92653b3 9128 rust-defmt-parser_0.4.1.orig.tar.gz 020970b8043a316a87d6c142967c9df5b5256c70514a377f26df5cc36b2d6d4f 2892 rust-defmt-parser_0.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-defmt-parser"
   ],
   "Files": [
-    "4027de024b42e1986eaa1c25c028abed 1653 rust-defmt-parser_0.3.4-1.dsc d6bdcc11507063ae2becf3d66303fe33 9439 rust-defmt-parser_0.3.4.orig.tar.gz a10d9751e3c8d1f1613158546f692ba5 2656 rust-defmt-parser_0.3.4-1.debian.tar.xz"
+    "17cedee08a67d15982a6c5e298e4cf3c 2334 rust-defmt-parser_0.4.1-1.dsc 7d82f7429a00b4ced0ac08232e12ded9 9128 rust-defmt-parser_0.4.1.orig.tar.gz 5a7c3f304ded759a0289dceefb3d398f 2892 rust-defmt-parser_0.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/knurling-rs/defmt"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rstest-0.17-dev"
+    "dh-cargo, librust-rstest-0-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/defmt-parser]"
   ],
   "Version": [
-    "0.3.4-1"
+    "0.4.1-1"
   ]
 }

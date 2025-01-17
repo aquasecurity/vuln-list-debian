@@ -6,19 +6,22 @@
     "librust-criterion-cycles-per-byte-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-criterion-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-criterion-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "05c0efb452c89d21d5fb42fcf48c7ec4c8cb9dfb4d8402db6c1dad4af9804dae 2345 rust-criterion-cycles-per-byte_0.5.0-1.dsc 13929cb9262ca80bcd63a664f74e9ca958bef631c3e50a3117c4069119fd9628 7475 rust-criterion-cycles-per-byte_0.5.0.orig.tar.gz d6dd9d7be89aaa8f450e4d66bf677b7779602e0ff1162b47285f1cfe41d1f905 2580 rust-criterion-cycles-per-byte_0.5.0-1.debian.tar.xz"
+    "3a6ff053ed56986eb5a70711dd51b8407a41444eff0c367eb98196fa833a69fe 2499 rust-criterion-cycles-per-byte_0.6.1-1.dsc 1029452fa751c93f8834962dd74807d69f0a6c7624d5b06625b393aeb6a14fc2 8932 rust-criterion-cycles-per-byte_0.6.1.orig.tar.gz 1973153c844b5fe36eed4ba3ab54830d85083dff70b3e88ed44b657e647fd13d 2660 rust-criterion-cycles-per-byte_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-criterion-cycles-per-byte"
   ],
   "Files": [
-    "111f7589b71126abd60cd90a149577a5 2345 rust-criterion-cycles-per-byte_0.5.0-1.dsc 336a2c5dffbac431c9d3f32511dfd741 7475 rust-criterion-cycles-per-byte_0.5.0.orig.tar.gz a6cf46cdeb5e0c4b44d634d3c921577b 2580 rust-criterion-cycles-per-byte_0.5.0-1.debian.tar.xz"
+    "83bed615a6dad79d39a3b9e7d3d93c67 2499 rust-criterion-cycles-per-byte_0.6.1-1.dsc c770a4f191e48372eeada93b1a7bd47b 8932 rust-criterion-cycles-per-byte_0.6.1.orig.tar.gz 3efbe7573dd440c4e5527fc3359f6311 2660 rust-criterion-cycles-per-byte_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/wainwrightmark/criterion-cycles-per-byte"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/criterion-cycles-per-byte]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.6.1-1"
   ]
 }

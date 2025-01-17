@@ -6,19 +6,22 @@
     "librust-http-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.49.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.49.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7ebe30814e18ef0e56a7227dbcbd2466c756d0609b35da5d5ea116d6b7f8b913 2392 rust-http_0.2.11-2.dsc 8947b1a6fad4393052c7ba1f4cd97bed3e953a95c79c92ad9b051a04611d9fbb 100478 rust-http_0.2.11.orig.tar.gz f89c751f036966d04b141b92e290c09fa72e3e02f431569a239a64b5aa893de6 4152 rust-http_0.2.11-2.debian.tar.xz"
+    "54ae19cdeb3383d59680aef5e324755474781581a55908780e9f84304c3b31bf 2476 rust-http_1.2.0-1.dsc f16ca2af56261c99fba8bac40a10251ce8188205a4c448fbb745a2e4daa76fea 105932 rust-http_1.2.0.orig.tar.gz ce487e15693dc5b46032e38c4ea7a3c2a6019a1097015547d768ca92b0a36dde 3820 rust-http_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-http"
   ],
   "Files": [
-    "71e15240c0c683927eee100c5562e708 2392 rust-http_0.2.11-2.dsc de2b70e20ea3a85c7b92b356869a47f1 100478 rust-http_0.2.11.orig.tar.gz b464e9eb77be07f01363af292b88fdf9 4152 rust-http_0.2.11-2.debian.tar.xz"
+    "1221a3a29df79b1c5e802c2aa539c482 2476 rust-http_1.2.0-1.dsc 314beccb54e85829d11e3e1de0cb8e25 105932 rust-http_1.2.0.orig.tar.gz fc1019e249ba3d20de3622556af2017d 3820 rust-http_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/hyperium/http"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-indexmap+default-dev, librust-serde-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-serde-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/http]"
   ],
   "Version": [
-    "0.2.11-2"
+    "1.2.0-1"
   ]
 }
