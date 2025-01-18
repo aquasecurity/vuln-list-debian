@@ -6,19 +6,22 @@
     "librust-data-url-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 6), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-matches-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "55e8b2ad8e85b439f87dd1b16779b738fffbbf46735832d866cfaebefa432eeb 2105 rust-data-url_0.1.0-1.dsc d33fe99ccedd6e84bc035f1931bb2e6be79739d6242bd895e7311c886c50dc9c 19783 rust-data-url_0.1.0.orig.tar.gz 634b637478b43ca199ec981b6047a04236539e90977a1afc1093e8cca98edea4 2392 rust-data-url_0.1.0-1.debian.tar.xz"
+    "b0ca51a180c53df92891aef75f0f72765dc57261de259bca54982777e50abe80 2335 rust-data-url_0.3.1-2.dsc 5c297a1c74b71ae29df00c3e22dd9534821d60eb9af5a0192823fa2acea70c2a 21109 rust-data-url_0.3.1.orig.tar.gz bd952a53b70c7172c78964d55a60414b8d4fbc09df8b68999b6c01aad8275b42 2880 rust-data-url_0.3.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-data-url"
   ],
   "Files": [
-    "76c21ccdff9cc8e208927453295b00b4 2105 rust-data-url_0.1.0-1.dsc 0b752675a0acee19600410edc9ba3bfe 19783 rust-data-url_0.1.0.orig.tar.gz 02aa57d44d3ae178979318257e351a06 2392 rust-data-url_0.1.0-1.debian.tar.xz"
+    "4b27088a348b0bcb54573b68b7782b7c 2335 rust-data-url_0.3.1-2.dsc 358fe1b3e28a599502a9f4815174f50d 21109 rust-data-url_0.3.1.orig.tar.gz 0a4ac82d765fd477ed6be60f21943daf 2880 rust-data-url_0.3.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/rust-url"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.1.5"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tester-0.9+default-dev, rustc"
   ],
   "Uploaders": [
-    "Paride Legovini \u003cpl@ninthfloor.org\u003e"
+    "Paride Legovini \u003cparide@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/data-url"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/data-url]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.3.1-2"
   ]
 }

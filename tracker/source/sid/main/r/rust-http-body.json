@@ -6,19 +6,22 @@
     "librust-http-body-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.49) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "60bde085df5d0ba5f95402bfe373bfbbcbe7ac1aad41ea0d8c1b855768c84917 1733 rust-http-body_0.4.5-1.dsc d5f38f16d184e36f2408a55281cd658ecbd3ca05cce6d6510a176eca393e26d1 9242 rust-http-body_0.4.5.orig.tar.gz 1b20853ce143a4939e7eaaa8bccb35120f66f45f858530514c61bf899313fd06 2784 rust-http-body_0.4.5-1.debian.tar.xz"
+    "f2197ab72e055927eb3e3bda563010389313418d54748a157bed84feda2322e0 1669 rust-http-body_1.0.1-1.dsc 1efedce1fb8e6913f23e0c92de8e62cd5b772a67e7b3946df930a62566c93184 6125 rust-http-body_1.0.1.orig.tar.gz 5d32f43d136bdd514f5a802aad3dd6ef50ca50136ca3b88a1f744460d451a7db 2884 rust-http-body_1.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-http-body"
   ],
   "Files": [
-    "f2bdae4f51808d372f77a128710fe515 1733 rust-http-body_0.4.5-1.dsc c21c16e3bdc619cf65a31b23136d62ce 9242 rust-http-body_0.4.5.orig.tar.gz 3354bcd9519f60e5ac51cb2476d00812 2784 rust-http-body_0.4.5-1.debian.tar.xz"
+    "3826865dc3ce126d69a73c95d826cd30 1669 rust-http-body_1.0.1-1.dsc 9f891783a0726303d8827598b7f4dcbe 6125 rust-http-body_1.0.1.orig.tar.gz 0677b59bd545df6893567a49657cfcfc 2884 rust-http-body_1.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/hyperium/http-body"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/http-body]"
   ],
   "Version": [
-    "0.4.5-1"
+    "1.0.1-1"
   ]
 }
