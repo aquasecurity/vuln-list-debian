@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "kalgebra, kalgebra-common, kalgebramobile"
+    "kalgebra, kalgebra-common, kalgebra-plasmoid, kalgebramobile"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.16~), debhelper-compat (= 13), dh-sequence-kf5, extra-cmake-modules (\u003e= 5.90.0~), libanalitza-dev (\u003e= 4:20.08.0~), libgl-dev, libglu-dev, libkf5configwidgets-dev (\u003e= 5.90.0~), libkf5coreaddons-dev (\u003e= 5.90.0~), libkf5doctools-dev (\u003e= 5.90.0~), libkf5i18n-dev (\u003e= 5.90.0~), libkf5kio-dev (\u003e= 5.90.0~), libkf5widgetsaddons-dev (\u003e= 5.90.0~), libncurses-dev, libqt5svg5-dev (\u003e= 5.15~), libreadline-dev, pkg-config, qtbase5-dev (\u003e= 5.15~), qtdeclarative5-dev (\u003e= 5.15~), qtwebengine5-dev [amd64 arm64 armhf i386]"
+    "cmake (\u003e= 3.16~), debhelper-compat (= 13), dh-sequence-kf6, dh-sequence-qmldeps, extra-cmake-modules (\u003e= 6.3.0~), libanalitza-dev (\u003e= 4:24.08.2~), libgl-dev, libglu-dev, kirigami-addons-dev, libkf6configwidgets-dev (\u003e= 6.3.0~), libkf6coreaddons-dev (\u003e= 6.3.0~), libkf6doctools-dev (\u003e= 6.3.0~), libkf6i18n-dev (\u003e= 6.3.0~), libkf6kio-dev (\u003e= 6.3.0~), libkf6xmlgui-dev (\u003e= 6.3.0~), libkf6widgetsaddons-dev (\u003e= 6.3.0~), libncurses-dev, libplasma-dev, qt6-svg-dev (\u003e= 6.5.0~), libreadline-dev, pkgconf, qt6-base-dev (\u003e= 6.5.0~), qt6-declarative-dev (\u003e= 6.5.0~), qt6-webengine-dev (\u003e= 6.5.0~) [amd64 arm64 armhf i386]"
   ],
   "Checksums-Sha256": [
-    "79f8193b78a22ac092e61cb06effdefe8907bfc25a2e72d172412535087cd4f2 2838 kalgebra_22.12.3-2.dsc de34313947c62e4dad97e9f107e598cb406d6b9aa1d54c49f58bfff0071367e7 1035488 kalgebra_22.12.3.orig.tar.xz afa708ba85b524062b8ff909a3ea0c36df671746b82e9996387d6ae14feda4e5 833 kalgebra_22.12.3.orig.tar.xz.asc 3a38c30819b0c7fc6a2f1a5f2b0c526deccc2560f26eef9b28c4f205df4e9a06 15500 kalgebra_22.12.3-2.debian.tar.xz"
+    "1fb04f151d88a7bd26e9bb7757dc40e5d769ec2bfe2b409e17fb63f81ba6d716 3000 kalgebra_24.12.1-2.dsc 401974eae2476b5f987badcf9832f1df9f6af2c33bb9507fd6deb2c2da908833 948828 kalgebra_24.12.1.orig.tar.xz 5e63fcab313a9d9b53c7c343125c31ce74b8cf38795edcd47df926182533539f 833 kalgebra_24.12.1.orig.tar.xz.asc 8990c4641e3bfb9c78a7e1eaab1719a0453417084ec12189c67739045dd0c752 16592 kalgebra_24.12.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kalgebra"
   ],
   "Files": [
-    "0f334b6fdd9d4939c49223b093613b48 2838 kalgebra_22.12.3-2.dsc 249f47b7ccef21cb5aad1904e9360ee0 1035488 kalgebra_22.12.3.orig.tar.xz df141bd6f4b76c8d8ef73da8cf6df611 833 kalgebra_22.12.3.orig.tar.xz.asc 47e6f2db5d4c3f51ed265de12e8bdebf 15500 kalgebra_22.12.3-2.debian.tar.xz"
+    "16ae94748291f2af26810e07fd61b5bc 3000 kalgebra_24.12.1-2.dsc ad667ad142bc2535c0bf056ac5aef137 948828 kalgebra_24.12.1.orig.tar.xz 52b05120ee15a849a862c6d098e42bf1 833 kalgebra_24.12.1.orig.tar.xz.asc 10d572f86cba486e651aa97e81ebaa67 16592 kalgebra_24.12.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "kalgebra"
   ],
   "Package-List": [
-    "kalgebra deb math optional arch=amd64,arm64,armhf,i386 kalgebra-common deb math optional arch=amd64,arm64,armhf,i386 kalgebramobile deb math optional arch=any"
+    "kalgebra deb math optional arch=amd64,arm64,armhf,i386 kalgebra-common deb math optional arch=all kalgebra-plasmoid deb kde optional arch=any kalgebramobile deb math optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "math"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Uploaders": [
     "Aurélien COUDERC \u003ccoucouf@debian.org\u003e,"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/qt-kde-team/kde/kalgebra.git"
   ],
   "Version": [
-    "4:22.12.3-2"
+    "4:24.12.1-2"
   ]
 }
