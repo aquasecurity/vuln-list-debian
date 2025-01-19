@@ -3,22 +3,22 @@
     "all"
   ],
   "Binary": [
-    "ovmf, ovmf-ia32, qemu-efi-arm, qemu-efi-aarch64, qemu-efi-riscv64, efi-shell-ia32, efi-shell-x64, efi-shell-arm, efi-shell-aa64, efi-shell-riscv64"
+    "ovmf, ovmf-ia32, qemu-efi-arm, qemu-efi-aarch64, qemu-efi-riscv64, qemu-efi-loongarch64, efi-shell-ia32, efi-shell-x64, efi-shell-arm, efi-shell-aa64, efi-shell-riscv64, efi-shell-loongarch64"
   ],
   "Build-Depends": [
-    "bc, debhelper-compat (= 12), dh-exec, dosfstools, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], gcc-riscv64-linux-gnu, iasl, lsb-release, mtools, nasm, python3, python3-pexpect, qemu-utils, qemu-system-arm (\u003e= 1:2.12+dfsg), qemu-system-x86 (\u003e= 1:2.12+dfsg), uuid-dev, xorriso"
+    "bc, debhelper-compat (= 12), dh-exec, dosfstools, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], gcc-riscv64-linux-gnu, gcc-loongarch64-linux-gnu, iasl, lsb-release, mtools, nasm, python3, python3-pexpect, qemu-utils, qemu-system-arm (\u003e= 1:2.12+dfsg), qemu-system-x86 (\u003e= 1:2.12+dfsg), uuid-dev, xorriso"
   ],
   "Build-Indep-Architecture": [
     "amd64"
   ],
   "Checksums-Sha256": [
-    "d4dc2231f5385e2757c2bdfd2fb7e470e9ce6cf768353367c3320e04ad0857f7 2430 edk2_2024.11-2.dsc a0b210e4dcf62103fa37021e72de3955f5c54cea3d34318489b6b58959a8f1aa 27382804 edk2_2024.11.orig.tar.xz a73d05d356ab2b96eacd966fb664ad258533785ffdbe609578adb0e76bda9c9d 42380 edk2_2024.11-2.debian.tar.xz"
+    "3ff2420f7b12a5367c05e2aadfac0731161f60a1845e59b67b68af1ec40ec92a 2626 edk2_2024.11-4.dsc a0b210e4dcf62103fa37021e72de3955f5c54cea3d34318489b6b58959a8f1aa 27382804 edk2_2024.11.orig.tar.xz 74140b43a47a903949cf4008a0ec1a72819029a399e7f46f43404b1ed33192a9 45072 edk2_2024.11-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/edk2"
   ],
   "Files": [
-    "4bdb94674eac8f22d41386cd0b3dd10b 2430 edk2_2024.11-2.dsc 722a577af22244adfa38909a42693ce2 27382804 edk2_2024.11.orig.tar.xz d564af20a691c600b37555d29b056747 42380 edk2_2024.11-2.debian.tar.xz"
+    "44a1b065b85c47a4bb530c1b92ce6aa6 2626 edk2_2024.11-4.dsc 722a577af22244adfa38909a42693ce2 27382804 edk2_2024.11.orig.tar.xz 34b940b543a2d92e07873c65cd755fc6 45072 edk2_2024.11-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "edk2"
   ],
   "Package-List": [
-    "efi-shell-aa64 deb misc optional arch=all efi-shell-arm deb misc optional arch=all efi-shell-ia32 deb misc optional arch=all efi-shell-riscv64 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-ia32 deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-arm deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
+    "efi-shell-aa64 deb misc optional arch=all efi-shell-arm deb misc optional arch=all efi-shell-ia32 deb misc optional arch=all efi-shell-loongarch64 deb misc optional arch=all efi-shell-riscv64 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-ia32 deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-arm deb misc optional arch=all qemu-efi-loongarch64 deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dosfstools, grub-efi-amd64-signed, grub-efi-arm64-signed, mtools, openssl, python3-pexpect, qemu-system-arm, qemu-system-riscv64, qemu-system-x86, sbsigntool, shim-signed, xorriso"
+    "dosfstools, grub-efi-amd64-signed, grub-efi-arm64-signed, mtools, openssl, python3-pexpect, qemu-system-arm, qemu-system-loongarch64, qemu-system-riscv64, qemu-system-x86, sbsigntool, shim-signed, xorriso"
   ],
   "Uploaders": [
     "Steve Langasek \u003cvorlon@debian.org\u003e, Serge Hallyn \u003cserge.hallyn@ubuntu.com\u003e, dann frazier \u003cdannf@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/qemu-team/edk2.git"
   ],
   "Version": [
-    "2024.11-2"
+    "2024.11-4"
   ]
 }

@@ -6,16 +6,16 @@
     "librust-console-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-encode-unicode-0.3+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.99-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.99-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d9bb26029122425e4566957626abc4e817f76fd75522a50141c4fc4867b7080e 2562 rust-console_0.15.8-1.dsc ec5cc741a438f8502b07076f8219af95c86a1e9ed4a9b53395d42ace7ad8531c 35582 rust-console_0.15.8.orig.tar.gz 683a3eee897e2a10754c325c960e7c8f382d734fedabfcf53a557ee0d93ea531 3900 rust-console_0.15.8-1.debian.tar.xz"
+    "7fbbbbb9a3dfe55785f47b6f63483f42d246550068a7fbee53736ec73779def3 1857 rust-console_0.15.10-1.dsc 107a7f2260a280e54a3dc2c04fee2202c1343292752c3944a5ca8190b7ea22aa 35678 rust-console_0.15.10.orig.tar.gz ada05ee18ee51f3e4674e1872e82ed3cb7aedfd198ddb272c47e648598913c96 4084 rust-console_0.15.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-console"
   ],
   "Files": [
-    "64360758e9ebab5af0abaf85a37cffbb 2562 rust-console_0.15.8-1.dsc cc98b8981070233819c13ede5701c574 35582 rust-console_0.15.8.orig.tar.gz 258299ad0bde770b9fb475a78bada2c2 3900 rust-console_0.15.8-1.debian.tar.xz"
+    "9b4b6925b93418deb0fdfa7872901352 1857 rust-console_0.15.10-1.dsc 4ab0a390842f9d4ac63a79997eab486b 35678 rust-console_0.15.10.orig.tar.gz 7c332726a8ef2450bf72a5b5258842a1 4084 rust-console_0.15.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-proptest-1+bit-set-dev, librust-proptest-1+std-dev, librust-regex-1+default-dev"
+    "dh-cargo, librust-proptest-1+bit-set-dev, librust-proptest-1+std-dev, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/console]"
   ],
   "Version": [
-    "0.15.8-1"
+    "0.15.10-1"
   ]
 }
