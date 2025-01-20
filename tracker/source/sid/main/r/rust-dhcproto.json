@@ -3,22 +3,25 @@
     "any"
   ],
   "Binary": [
-    "librust-dhcproto-dev, librust-dhcproto+serde-dev"
+    "librust-dhcproto-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dhcproto-macros-0.1+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-ipnet-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-trust-dns-proto-0.22-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dhcproto-macros-0.1+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-hickory-proto-0.24-dev \u003c!nocheck\u003e, librust-ipnet-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8ddd08550b3f235829321ce373e007c841faba07b5d1134f0201c59768b1faf3 2639 rust-dhcproto_0.9.0-2.dsc dcee045385d5f7819022821f41209b9945d17550760b0b2349aaef4ecfa14bc3 45505 rust-dhcproto_0.9.0.orig.tar.gz 98178cb75215d57c058a196d0d88a5bb0c52f040c87da9d7362b8bc8682b2d7f 3824 rust-dhcproto_0.9.0-2.debian.tar.xz"
+    "61d7c8150646b616209de3399590fa85ec463a9fbc63f5f7a09a20e0e19d43ee 1963 rust-dhcproto_0.12.0-1.dsc f6794294f2c4665aae452e950c2803a1e487c5672dc8448f0bfa3f52ff67e270 50721 rust-dhcproto_0.12.0.orig.tar.gz 34e71a860778074b5533f5f8ce136690290cf13c451d70124034b8def9867098 3200 rust-dhcproto_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dhcproto"
   ],
   "Files": [
-    "0e3d5584af85ab1045a5974e7aabb25b 2639 rust-dhcproto_0.9.0-2.dsc 00edfa43a8a43cb38ad9c2778dd42005 45505 rust-dhcproto_0.9.0.orig.tar.gz f6709568a19766b7e0e5bed5d6f06cf5 3824 rust-dhcproto_0.9.0-2.debian.tar.xz"
+    "ca1fa60a63c6214a38e261c8b0a30244 1963 rust-dhcproto_0.12.0-1.dsc 7c2d960097d5962038e6e74c2a71de3d 50721 rust-dhcproto_0.12.0.orig.tar.gz faf981d1a15eacbbd4f6bd52f2306198 3200 rust-dhcproto_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/bluecatengineering/dhcproto"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +30,7 @@
     "rust-dhcproto"
   ],
   "Package-List": [
-    "librust-dhcproto+serde-dev deb rust optional arch=any librust-dhcproto-dev deb rust optional arch=any"
+    "librust-dhcproto-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dhcproto]"
   ],
   "Version": [
-    "0.9.0-2"
+    "0.12.0-1"
   ]
 }
