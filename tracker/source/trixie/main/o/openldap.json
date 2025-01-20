@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "slapd, slapd-contrib, ldap-utils, libldap-2.5-0, libldap-common, libldap-dev, libldap2-dev, slapi-dev"
+    "slapd, slapd-contrib, ldap-utils, libldap2, libldap-common, libldap-dev, libldap2-dev, slapi-dev"
   ],
   "Build-Conflicts": [
-    "autoconf2.13, bind-dev, libbind-dev"
+    "autoconf2.13, libbind-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.17.14), groff-base, heimdal-multidev (\u003e= 7.4.0.dfsg.1-1~) \u003c!pkg.openldap.noslapd\u003e, libargon2-dev \u003c!pkg.openldap.noslapd\u003e, libcrack2-dev \u003c!pkg.openldap.noslapd\u003e, libgnutls28-dev, libltdl-dev \u003c!pkg.openldap.noslapd\u003e, libperl-dev (\u003e= 5.8.0) \u003c!pkg.openldap.noslapd\u003e, libsasl2-dev, libwrap0-dev \u003c!pkg.openldap.noslapd\u003e, nettle-dev \u003c!pkg.openldap.noslapd\u003e, openssl \u003c!nocheck\u003e, perl:any, pkgconf, po-debconf, unixodbc-dev \u003c!pkg.openldap.noslapd\u003e, krb5-admin-server \u003c!nocheck\u003e, krb5-user \u003c!nocheck\u003e, krb5-kdc \u003c!nocheck\u003e, libsasl2-modules-gssapi-mit \u003c!nocheck\u003e, sasl2-bin \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), groff-base, heimdal-multidev \u003c!pkg.openldap.noslapd\u003e, libargon2-dev \u003c!pkg.openldap.noslapd\u003e, libcrack2-dev \u003c!pkg.openldap.noslapd\u003e, libltdl-dev \u003c!pkg.openldap.noslapd\u003e, libperl-dev \u003c!pkg.openldap.noslapd\u003e, libsasl2-dev, libssl-dev, libwrap0-dev \u003c!pkg.openldap.noslapd\u003e, openssl \u003c!nocheck\u003e, perl:any, pkgconf, po-debconf, unixodbc-dev \u003c!pkg.openldap.noslapd\u003e, krb5-admin-server \u003c!nocheck\u003e, krb5-user \u003c!nocheck\u003e, krb5-kdc \u003c!nocheck\u003e, libsasl2-modules-gssapi-mit \u003c!nocheck\u003e, sasl2-bin \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c2819be9061fe0752ef8bd1e1df4c1fbcc494fce95d504c6614f6a8e64ce5d10 3312 openldap_2.5.19+dfsg-1.dsc 8a81909c9a816f8a0eb374d290a540b82e9331e4a7b3e4cf7de75bc6437a723c 3718696 openldap_2.5.19+dfsg.orig.tar.xz 610de35516d759e47ac81b6158b09b52b4f952bb564cba1fb9eec6bb50b1d10f 170420 openldap_2.5.19+dfsg-1.debian.tar.xz"
+    "73ecdf22c5c1a2eb46c8724f418881426585dc7a0719911d1dae6c735795d7aa 3146 openldap_2.6.9+dfsg-1.dsc dfce3ca171b4036b371455314dd35176b700ee988d3b556f156f37088516ef93 3753260 openldap_2.6.9+dfsg.orig.tar.xz f12a08b62e8fa13d68e935611b248ce30bf4575e58e874b4906066250821747e 171288 openldap_2.6.9+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openldap"
   ],
   "Files": [
-    "d513dcdd886e9e70a3bee1f9fa60b8d7 3312 openldap_2.5.19+dfsg-1.dsc 3aa3f7e55050e9028feec7523c53b96e 3718696 openldap_2.5.19+dfsg.orig.tar.xz 15ffb7c773914392a7ede8d063be4ed2 170420 openldap_2.5.19+dfsg-1.debian.tar.xz"
+    "df892598d6f500dc56044d8dad74d3fb 3146 openldap_2.6.9+dfsg-1.dsc 88aedcb863236b29aecb060863a6364c 3753260 openldap_2.6.9+dfsg.orig.tar.xz 21d3f1990cc6bc422bc8f0eb4110f73d 171288 openldap_2.6.9+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "openldap"
   ],
   "Package-List": [
-    "ldap-utils deb net optional arch=any libldap-2.5-0 deb libs optional arch=any libldap-common deb libs optional arch=all libldap-dev deb libdevel optional arch=any libldap2-dev deb oldlibs optional arch=all slapd deb net optional arch=any profile=!pkg.openldap.noslapd slapd-contrib deb net optional arch=any profile=!pkg.openldap.noslapd slapi-dev deb libdevel optional arch=any profile=!pkg.openldap.noslapd"
+    "ldap-utils deb net optional arch=any libldap-common deb libs optional arch=all libldap-dev deb libdevel optional arch=any libldap2 deb libs optional arch=any libldap2-dev deb oldlibs optional arch=all slapd deb net optional arch=any profile=!pkg.openldap.noslapd slapd-contrib deb net optional arch=any profile=!pkg.openldap.noslapd slapi-dev deb libdevel optional arch=any profile=!pkg.openldap.noslapd"
   ],
   "Priority": [
     "source"
@@ -42,7 +42,7 @@
     "net"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -51,7 +51,7 @@
     "heimdal-kdc, openssl, samba, schema2ldif, ssl-cert"
   ],
   "Uploaders": [
-    "Steve Langasek \u003cvorlon@debian.org\u003e, Torsten Landschoff \u003ctorsten@debian.org\u003e, Ryan Tandy \u003cryan@nardis.ca\u003e, Sergio Durigan Junior \u003csergiodj@debian.org\u003e"
+    "Ryan Tandy \u003cryan@nardis.ca\u003e, Sergio Durigan Junior \u003csergiodj@debian.org\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/openldap-team/openldap"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/openldap-team/openldap.git"
   ],
   "Version": [
-    "2.5.19+dfsg-1"
+    "2.6.9+dfsg-1"
   ]
 }

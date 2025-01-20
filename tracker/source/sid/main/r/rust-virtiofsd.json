@@ -6,16 +6,16 @@
     "librust-virtiofsd-dev, virtiofsd"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-bitflags-1+default-dev (\u003e= 1.2-~~), librust-capng-0.2+default-dev (\u003e= 0.2.2-~~), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+humantime-dev, librust-env-logger-0.11+regex-dev, librust-futures-0.3+default-dev, librust-futures-0.3+thread-pool-dev, librust-libc-0.2+default-dev (\u003e= 0.2.155-~~), librust-libseccomp-sys-0.2+default-dev, librust-log-0.4+default-dev, librust-postcard-1+default-dev, librust-postcard-1+use-std-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-syslog-6+default-dev, librust-vhost-0.13+default-dev, librust-vhost-user-backend-0.17+default-dev, librust-virtio-bindings-0.2+default-dev (\u003e= 0.2.1-~~), librust-virtio-queue-0.14+default-dev, librust-vm-memory-0.16+backend-atomic-dev, librust-vm-memory-0.16+backend-mmap-dev, librust-vm-memory-0.16+default-dev, librust-vmm-sys-util-0.12+default-dev (\u003e= 0.12.1-~~), architecture-is-64-bit"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native, libstd-rust-dev, librust-bitflags-1+default-dev (\u003e= 1.2-~~), librust-btree-range-map-0.7+default-dev, librust-capng-0.2+default-dev (\u003e= 0.2.2-~~), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+humantime-dev, librust-env-logger-0.11+regex-dev, librust-futures-0.3+default-dev, librust-futures-0.3+thread-pool-dev, librust-libc-0.2+default-dev (\u003e= 0.2.155-~~), librust-libseccomp-sys-0.2+default-dev, librust-log-0.4+default-dev, librust-postcard-1+default-dev, librust-postcard-1+use-std-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-syslog-6+default-dev, librust-vhost-0.13+default-dev, librust-vhost-user-backend-0.17+default-dev, librust-virtio-bindings-0.2+default-dev (\u003e= 0.2.1-~~), librust-virtio-queue-0.14+default-dev, librust-vm-memory-0.16+backend-atomic-dev, librust-vm-memory-0.16+backend-mmap-dev, librust-vm-memory-0.16+default-dev, librust-vmm-sys-util-0.12+default-dev (\u003e= 0.12.1-~~), architecture-is-64-bit"
   ],
   "Checksums-Sha256": [
-    "c941662a62b3ea044a9d1fc8c506c2c2170f9fdf2ca026c74642aa54c24827ab 3180 rust-virtiofsd_1.13.0-2.dsc dbb030d21fbbca232f865ddebc02f040649e5fd24e5a94677f52818cde5276d3 178838 rust-virtiofsd_1.13.0.orig.tar.gz f9d7c26ff3bd0cb4c09ef505d90cba56e3c19ed4faeac0be75ef34170690a76c 14316 rust-virtiofsd_1.13.0-2.debian.tar.xz"
+    "dabd03f8f83255bfb347ca1a3d0008d25979ad6358498bdc2d737a6609e02fbe 3544 rust-virtiofsd_1.13.0-3.dsc dbb030d21fbbca232f865ddebc02f040649e5fd24e5a94677f52818cde5276d3 178838 rust-virtiofsd_1.13.0.orig.tar.gz f017caa1301aee5019ee5f3f88c1112d9ed522b6f411693950bf7e0f3d09aec5 7656 rust-virtiofsd_1.13.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-virtiofsd"
   ],
   "Files": [
-    "fd38ad4a3ae9596c82aa8a88bc256717 3180 rust-virtiofsd_1.13.0-2.dsc b3845abf860b7ab965ec8217b8395346 178838 rust-virtiofsd_1.13.0.orig.tar.gz b33275bd8db81ac3bd3071051e9bb8ae 14316 rust-virtiofsd_1.13.0-2.debian.tar.xz"
+    "0b5c91937ac56ef32df2ba4f4e2725a3 3544 rust-virtiofsd_1.13.0-3.dsc b3845abf860b7ab965ec8217b8395346 178838 rust-virtiofsd_1.13.0.orig.tar.gz d1bf9c3d81d02c5aa62870f89e16ebd5 7656 rust-virtiofsd_1.13.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "bsdutils, dh-cargo, dosfstools, linux-image-amd64, linux-image-arm64, linux-image-generic, linux-image-loong64, linux-image-riscv64, mkosi, mtools, ovmf, qemu-efi-aarch64, qemu-efi-loongarch64, qemu-efi-riscv64, qemu-system-amd64, qemu-system-arm64, qemu-system-loong64, qemu-system-riscv64, rustc, systemd-boot, systemd-repart"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/virtiofsd]"
   ],
   "Version": [
-    "1.13.0-2"
+    "1.13.0-3"
   ]
 }
