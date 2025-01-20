@@ -6,19 +6,22 @@
     "librust-simba-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5-dev \u003c!nocheck\u003e, librust-num-complex-0.4-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-wide-0.7+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5-dev \u003c!nocheck\u003e, librust-num-complex-0.4-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-wide-0.7+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "003f4cc4df6eb88134ab04604acb3c62dca11bd71f976ed6525a41b02ac3ceec 1714 rust-simba_0.9.0-2.dsc b3a386a501cd104797982c15ae17aafe8b9261315b5d07e3ec803f2ea26be0fa 52680 rust-simba_0.9.0.orig.tar.gz 66af762b871316372e00a1863476329fad1387de477a50f12b4bb8d2254aff42 2832 rust-simba_0.9.0-2.debian.tar.xz"
+    "073edda5ea8fcf01fcde52e3d0bc9dec888eeb5cfedc675ed411875c40278078 1744 rust-simba_0.9.0-3.dsc b3a386a501cd104797982c15ae17aafe8b9261315b5d07e3ec803f2ea26be0fa 52680 rust-simba_0.9.0.orig.tar.gz 3046208c0d871f93f4170ccc105d92e281e09e779d3975dc7fbb161a129c69f6 3052 rust-simba_0.9.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-simba"
   ],
   "Files": [
-    "1d2acba992f45fb1e75dc420fb6e74c8 1714 rust-simba_0.9.0-2.dsc 710697d53d358e5acda6041f53d624b2 52680 rust-simba_0.9.0.orig.tar.gz 343643df2015dc842695f05ac82f1338 2832 rust-simba_0.9.0-2.debian.tar.xz"
+    "03d209ae1b3d5943cf5a0a9d8be684f0 1744 rust-simba_0.9.0-3.dsc 710697d53d358e5acda6041f53d624b2 52680 rust-simba_0.9.0.orig.tar.gz 6fcb01603b5180ef3158c70c0183d169 3052 rust-simba_0.9.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dimforge/simba"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/simba]"
   ],
   "Version": [
-    "0.9.0-2"
+    "0.9.0-3"
   ]
 }
