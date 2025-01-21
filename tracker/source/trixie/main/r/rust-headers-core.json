@@ -6,16 +6,16 @@
     "librust-headers-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "399e40dc011c93f282e6eb75d549ce995e8743c4c2eea11ff3cc5689001feea2 2256 rust-headers-core_0.2.0-1.dsc e7f66481bfee273957b1f20485a4ff3362987f85b2c236580d81b4eb7a326429 2380 rust-headers-core_0.2.0.orig.tar.gz e79cafddc5fb945ae1afa9b71061f1b44de05825eb484aec9fd3432cc00553dc 2532 rust-headers-core_0.2.0-1.debian.tar.xz"
+    "4889489bde50ae0aa84f120179667848442ab71e54a52c2c7330424573e4f9ee 1634 rust-headers-core_0.3.0-1.dsc 54b4a22553d4242c49fddb9ba998a99962b5cc6f22cb5a3482bec22522403ce4 2333 rust-headers-core_0.3.0.orig.tar.gz 6a009682021015a178aea545fcef15d85e2fa74223477462341f1b70f16a3a64 2632 rust-headers-core_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-headers-core"
   ],
   "Files": [
-    "30c012c3481aa7289b4940d45e99da3c 2256 rust-headers-core_0.2.0-1.dsc 0372a8de508e57da4d4869f058bcb630 2380 rust-headers-core_0.2.0.orig.tar.gz ab53bd16714bd9948c1f17c5295ec058 2532 rust-headers-core_0.2.0-1.debian.tar.xz"
+    "a6a19f10374a75c9f4ffe4ca6358137a 1634 rust-headers-core_0.3.0-1.dsc fdaf12e6f55939ce24b7f6b03d64a044 2333 rust-headers-core_0.3.0.orig.tar.gz 5a733dfe41d927cea3976f526faa41ca 2632 rust-headers-core_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/headers-core]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.3.0-1"
   ]
 }
