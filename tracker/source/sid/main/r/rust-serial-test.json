@@ -6,19 +6,22 @@
     "librust-serial-test-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dashmap-5+default-dev \u003c!nocheck\u003e, librust-futures-0.3+executor-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-serial-test-derive-2.0+async-dev \u003c!nocheck\u003e, librust-serial-test-derive-2.0+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dashmap+default-dev (\u003e= 5-~~) \u003c!nocheck\u003e, librust-futures-0.3+executor-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-serial-test-derive-2.0+async-dev \u003c!nocheck\u003e, librust-serial-test-derive-2.0+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0507e46792704a5196dbd926644d9e51a210e1f571be62fab0c5f6a073688fc8 2636 rust-serial-test_2.0.0-1.dsc 0e56dd856803e253c8f298af3f4d7eb0ae5e23a737252cd90bb4f3b435033b2d 7946 rust-serial-test_2.0.0.orig.tar.gz 352fed256acd2e0233ac685780c904fe24535cb2c4d8dd54700ea3f24ef524ce 3548 rust-serial-test_2.0.0-1.debian.tar.xz"
+    "86f1bab9e1b627a4d15351f40f93cafec51f7820b25efabdfec6e27f874cb7d0 2708 rust-serial-test_2.0.0-3.dsc 0e56dd856803e253c8f298af3f4d7eb0ae5e23a737252cd90bb4f3b435033b2d 7946 rust-serial-test_2.0.0.orig.tar.gz 24fb56f14a4ed6b0800f60c3aab84f8330b0ff892a0aa788ab8960302227638d 3820 rust-serial-test_2.0.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serial-test"
   ],
   "Files": [
-    "cd7d3130484322bb2f5c565719bb7e48 2636 rust-serial-test_2.0.0-1.dsc 91c634c89b4e4de7688885c95466de49 7946 rust-serial-test_2.0.0.orig.tar.gz dcd814848388d9b5842b2e2275c3952d 3548 rust-serial-test_2.0.0-1.debian.tar.xz"
+    "a34e8ba5e34f4152aebccd867456dc4a 2708 rust-serial-test_2.0.0-3.dsc 91c634c89b4e4de7688885c95466de49 7946 rust-serial-test_2.0.0.orig.tar.gz 35e86f74c293c53d989343635c810023 3820 rust-serial-test_2.0.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/palfrey/serial_test/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-itertools-0.10+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev"
+    "dh-cargo, librust-itertools-0.13+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serial-test]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.0.0-3"
   ]
 }

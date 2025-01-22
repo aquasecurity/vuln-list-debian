@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "all amd64 arm64 i386 armhf s390x riscv64 loong64 ppc64el x32"
+    "all amd64 arm64 i386 armhf s390x riscv64 loong64 ppc64el x32 mips64el"
   ],
   "Binary": [
     "dh-dlang, default-d-compiler"
@@ -9,13 +9,13 @@
     "debhelper-compat (= 13), flake8"
   ],
   "Checksums-Sha256": [
-    "69e656e988f28851cc5f0359a42eed24d32979cd82199f955a5520ab74059bde 1758 dh-dlang_0.6.7.dsc b98570e8e54e2a5b26e0f794c2bb3a4e4eda4ffd9abe743ddb18eb69fd76ae0b 4604 dh-dlang_0.6.7.tar.xz"
+    "53adf0adfe9ece3c025433058ba2e6ae59b3da128424b8aac461c448d73943e2 1830 dh-dlang_0.6.8.dsc 69ffc7111fa73e109da7e01e140ff5ea0c6b99bec2fb669c4536532eac956678 5292 dh-dlang_0.6.8.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dh-dlang"
   ],
   "Files": [
-    "485c55854c29ccee8243827c90982bca 1758 dh-dlang_0.6.7.dsc 6de548c93c468e71412797665914584d 4604 dh-dlang_0.6.7.tar.xz"
+    "fe3fd2120239701ce4265193696f85d2 1830 dh-dlang_0.6.8.dsc 424f97efae3af6891e595a6cb964248d 5292 dh-dlang_0.6.8.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -27,7 +27,7 @@
     "dh-dlang"
   ],
   "Package-List": [
-    "default-d-compiler deb devel optional arch=amd64,arm64,i386,armhf,s390x,riscv64,loong64,ppc64el,x32 dh-dlang deb devel optional arch=all"
+    "default-d-compiler deb devel optional arch=amd64,arm64,i386,armhf,s390x,riscv64,loong64,ppc64el,x32,mips64el dh-dlang deb devel optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -37,6 +37,12 @@
   ],
   "Standards-Version": [
     "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "zlib1g-dev"
   ],
   "Uploaders": [
     "Matthias Klumpp \u003cmak@debian.org\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/d-team/dh-dlang.git"
   ],
   "Version": [
-    "0.6.7"
+    "0.6.8"
   ]
 }
