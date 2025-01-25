@@ -6,16 +6,16 @@
     "librust-glob-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.23.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e5dab823bbc89e0198e8e71b11b082705ad9b89aa37f177f541ef4c48a3e3e9e 2220 rust-glob_0.3.1-1.dsc d2fabcfbdc87f4758337ca535fb41a6d701b65693ce38287d856d1674551ec9b 18880 rust-glob_0.3.1.orig.tar.gz 934849fb3e26b4957b1089641782c39a2f7b56c5b28ba7f07e6a42b0f24fb64d 2716 rust-glob_0.3.1-1.debian.tar.xz"
+    "7b12cad0df863f34217704b7eb7c9c4bfdd6ec3a9ca4864d4ea930afa7369f0a 2229 rust-glob_0.3.2-1.dsc a8d1add55171497b4705a648c6b583acafb01d58050a51727785f0b2c8e0a2b2 22359 rust-glob_0.3.2.orig.tar.gz 0e44151c2eef52c1c1f9267a3a02df925bbc27ea204dffd6304a4cd8d20bf588 2780 rust-glob_0.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-glob"
   ],
   "Files": [
-    "3c6cd42f278b5b9093dfc5702d7bb7ee 2220 rust-glob_0.3.1-1.dsc 2d6d28ec311884da69bcaf320ada8ad5 18880 rust-glob_0.3.1.orig.tar.gz 3639488668988dd656c83eef23a4f4ec 2716 rust-glob_0.3.1-1.debian.tar.xz"
+    "be6ff4fcbb633244400e3441135b5686 2229 rust-glob_0.3.2-1.dsc b9f68e232bd2799fbe6567c6c3d108bf 22359 rust-glob_0.3.2.orig.tar.gz 29378d9a2a26bef206ca9d758f4d85e3 2780 rust-glob_0.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-tempdir-0.3+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-tempdir-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/glob]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.3.2-1"
   ]
 }

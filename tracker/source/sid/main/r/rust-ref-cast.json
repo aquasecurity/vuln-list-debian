@@ -6,19 +6,22 @@
     "librust-ref-cast-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ref-cast-impl-1.0.18+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ref-cast-impl-1.0.23+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eb74520c462a883e5b860d1f60b3b11aacd822cf09d7d3227567cf9165202c31 2305 rust-ref-cast_1.0.18-1.dsc 1641819477c319ef452a075ac34a4be92eb9ba09f6841f62d594d50fdcf0bf6b 12398 rust-ref-cast_1.0.18.orig.tar.gz b11f1e5a2d8d09a6731b13186c3f3f28c5d8a0c5285be8e0d5ea65acde60525e 2868 rust-ref-cast_1.0.18-1.debian.tar.xz"
+    "0f2ae9ae9bf139e812de0aadca615e2a42eb25061f15a5282943760387adf523 2346 rust-ref-cast_1.0.23-1.dsc ccf0a6f84d5f1d581da8b41b47ec8600871962f2a528115b542b362d4b744931 12795 rust-ref-cast_1.0.23.orig.tar.gz e0c178c6ac9529b4dc576c5af95af70f7d7b509350b3ce10b03b9b4879c9257a 2912 rust-ref-cast_1.0.23-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ref-cast"
   ],
   "Files": [
-    "2c453824d255437fe17074a3da07720f 2305 rust-ref-cast_1.0.18-1.dsc 0998ac59bc6d453773c8547963d69a21 12398 rust-ref-cast_1.0.18.orig.tar.gz 561ddc89183dea5a322a8fefe2126344 2868 rust-ref-cast_1.0.18-1.debian.tar.xz"
+    "78d89ba619943dd4feeca33929f25308 2346 rust-ref-cast_1.0.23-1.dsc 736d7a2ce0b12c8767fdfd8b3c6f2b1b 12795 rust-ref-cast_1.0.23.orig.tar.gz e89f6425cada9c4068236ee9ba4b2ec9 2912 rust-ref-cast_1.0.23-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/ref-cast"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ref-cast]"
   ],
   "Version": [
-    "1.0.18-1"
+    "1.0.23-1"
   ]
 }
