@@ -6,19 +6,22 @@
     "librust-nucleo-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nucleo-matcher-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+arc-lock-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+send-guard-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.7.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nucleo-matcher-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+arc-lock-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+send-guard-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-portable-atomic-1+default-dev (\u003e= 1.10-~~) \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.7.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cdccb9af61815250ca131fef7a0c7d60763896282cb5ea7005c2f6c929073592 2440 rust-nucleo_0.5.0-1.dsc 5262af4c94921c2646c5ac6ff7900c2af9cbb08dc26a797e18130a7019c039d4 35547 rust-nucleo_0.5.0.orig.tar.gz c2e050921da62977cd33f2d05d46c5ae8da30a18f8440531a1cb2af0c7adb0a8 2872 rust-nucleo_0.5.0-1.debian.tar.xz"
+    "0afacef4483ae9ca62aa61fcefcc62fbdae559c4cf2649068908dcf6adf4ab2c 1932 rust-nucleo_0.5.0-2.dsc 5262af4c94921c2646c5ac6ff7900c2af9cbb08dc26a797e18130a7019c039d4 35547 rust-nucleo_0.5.0.orig.tar.gz 106420e4257ba556026a0c5361fa3d9c5f7a7bb4d36a00002f6982e393b30644 3352 rust-nucleo_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nucleo"
   ],
   "Files": [
-    "4dae085c05c18fa63cad343482304673 2440 rust-nucleo_0.5.0-1.dsc 52adeaf75005093ea1affea21028c245 35547 rust-nucleo_0.5.0.orig.tar.gz 39148c6c57323394d90a3ae17a3c3749 2872 rust-nucleo_0.5.0-1.debian.tar.xz"
+    "fd2d6ac8961dba6fe51667775699439c 1932 rust-nucleo_0.5.0-2.dsc 52adeaf75005093ea1affea21028c245 35547 rust-nucleo_0.5.0.orig.tar.gz 27e93697169c608cf0c177502d6a2213 3352 rust-nucleo_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/helix-editor/nucleo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nucleo]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.0-2"
   ]
 }

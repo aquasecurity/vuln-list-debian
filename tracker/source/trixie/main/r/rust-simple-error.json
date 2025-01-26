@@ -6,19 +6,22 @@
     "librust-simple-error-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.58.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9f574f2e2cd1f5117a9daf005a36a4af999783b46bb8b011021f0942a696138d 2289 rust-simple-error_0.3.0-1.dsc 8542b68b8800c3cda649d2c72d688b6907b30f1580043135d61669d4aad1c175 9817 rust-simple-error_0.3.0.orig.tar.gz 563a963efea5e765d2710e6f93cc7b33749eb285d74c0f93fcf849a3c968bc8c 2656 rust-simple-error_0.3.0-1.debian.tar.xz"
+    "31bb1f0c2451626f51d79cb7614ce96c4c4b5cbd35bc6a126cdbcd94ac4d87c5 2268 rust-simple-error_0.3.1-1.dsc 7e2accd2c41a0e920d2abd91b2badcfa1da784662f54fbc47e0e3a51f1e2e1cf 9862 rust-simple-error_0.3.1.orig.tar.gz 461383d7f43b9997b3b39e0056eb45f09fb505a17f323cc2f5c889ac857824ac 2716 rust-simple-error_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-simple-error"
   ],
   "Files": [
-    "5c0486116505118f06d1798addac4497 2289 rust-simple-error_0.3.0-1.dsc 0a91986fc7f0d211357b2310729bdf7d 9817 rust-simple-error_0.3.0.orig.tar.gz 94a1aa5b72e9ace1b9112937b228d85c 2656 rust-simple-error_0.3.0-1.debian.tar.xz"
+    "469ae66952d24a3a99de52d9beed75cf 2268 rust-simple-error_0.3.1-1.dsc 686301167d94e3fedbd3d3172afa35d4 9862 rust-simple-error_0.3.1.orig.tar.gz 4c58005e332777a90c469d59b1188cde 2716 rust-simple-error_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/WiSaGaN/simple-error.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/simple-error]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1-1"
   ]
 }

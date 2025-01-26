@@ -6,16 +6,16 @@
     "librust-tikv-jemallocator-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, librust-tikv-jemalloc-sys-0.5+background-threads-runtime-support-dev \u003c!nocheck\u003e, librust-tikv-jemalloc-sys-0.5-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, librust-tikv-jemalloc-sys-0.6+background-threads-runtime-support-dev \u003c!nocheck\u003e, librust-tikv-jemalloc-sys-0.6-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bbb34cc1c49f994e994babf81e099ade8f940748d5c368561e30547cfd33773b 2637 rust-tikv-jemallocator_0.5.4-2.dsc 965fe0c26be5c56c94e38ba547249074803efd52adfb66de62107d95aab3eaca 13101 rust-tikv-jemallocator_0.5.4.orig.tar.gz 3b092d57c7f24b934ad65cc04a395875543022a2e4223aaf024b4d7a53884df9 3488 rust-tikv-jemallocator_0.5.4-2.debian.tar.xz"
+    "9c566644cc94500f1599a1e690443617632882dc34b47eb74b2d0f92665c81c1 1873 rust-tikv-jemallocator_0.6.0-2.dsc 4cec5ff18518d81584f477e9bfdf957f5bb0979b0bac3af4ca30b5b3ae2d2865 13700 rust-tikv-jemallocator_0.6.0.orig.tar.gz 838f9a75266b35bb479010ce485894230839252c957b3cb734c738df4c8474ce 3872 rust-tikv-jemallocator_0.6.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tikv-jemallocator"
   ],
   "Files": [
-    "0c50a86c08a3dbfca51fe0be36fe0c69 2637 rust-tikv-jemallocator_0.5.4-2.dsc 7cfe6ffcc16a950adf263708c2e022e1 13101 rust-tikv-jemallocator_0.5.4.orig.tar.gz 52ce56d27b997e506229b9d49912ec3c 3488 rust-tikv-jemallocator_0.5.4-2.debian.tar.xz"
+    "a698170189ad00fd8c14eecef6002c39 1873 rust-tikv-jemallocator_0.6.0-2.dsc afc33dfae76fa67cfa860d8e8098c867 13700 rust-tikv-jemallocator_0.6.0.orig.tar.gz c0fdbb6cfd15ae5536ca0296cc7ef300 3872 rust-tikv-jemallocator_0.6.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-paste-1+default-dev, librust-tikv-jemalloc-ctl-0.5+default-dev"
+    "dh-cargo, librust-paste-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tikv-jemallocator]"
   ],
   "Version": [
-    "0.5.4-2"
+    "0.6.0-2"
   ]
 }

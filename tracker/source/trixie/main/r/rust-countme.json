@@ -6,19 +6,22 @@
     "librust-countme-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0bf063f00a51a4787a23c7a653ab69915bcc2eb628389e84964df89877a6d689 1759 rust-countme_3.0.1-1.dsc 7704b5fdd17b18ae31c4c1da5a2e0305a2bf17b5249300a9ee9ed7b72114c636 10784 rust-countme_3.0.1.orig.tar.gz fe6370f7b2950d9bddf2a30452e037379143e303bd1d75f478d9c62a35226450 2716 rust-countme_3.0.1-1.debian.tar.xz"
+    "3fb34a45caa9fa370601644dc039c1fceba8ebaeadbfe9d1771a04785540d5fd 2192 rust-countme_3.0.1-2.dsc 7704b5fdd17b18ae31c4c1da5a2e0305a2bf17b5249300a9ee9ed7b72114c636 10784 rust-countme_3.0.1.orig.tar.gz c20fd259a95b67006dcd582a5e7af9bc373f2d1c7184aa76a838a0c462e86487 2960 rust-countme_3.0.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-countme"
   ],
   "Files": [
-    "a6665db1bf2bf98fb4edac4fed0e3176 1759 rust-countme_3.0.1-1.dsc c5d3155353824fd1e4abde55b06d1a6c 10784 rust-countme_3.0.1.orig.tar.gz d912847119de192eeafbc240596ebd9e 2716 rust-countme_3.0.1-1.debian.tar.xz"
+    "b22e81ca49a7c93d4597ced011006855 2192 rust-countme_3.0.1-2.dsc c5d3155353824fd1e4abde55b06d1a6c 10784 rust-countme_3.0.1.orig.tar.gz ea0905cbaf27d6623dc66222bdb1b353 2960 rust-countme_3.0.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/matklad/countme"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/countme]"
   ],
   "Version": [
-    "3.0.1-1"
+    "3.0.1-2"
   ]
 }
