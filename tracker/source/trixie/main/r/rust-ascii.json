@@ -3,22 +3,25 @@
     "any"
   ],
   "Binary": [
-    "librust-ascii-dev, librust-ascii+serde-dev, librust-ascii+serde-test-dev"
+    "librust-ascii-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4788e848738a59ea116b81b753a8520daa34a9fc45f46146175b32a59ba50764 2385 rust-ascii_1.0.0-2.dsc bbf56136a5198c7b01a49e3afcbef6cf84597273d298f54432926024107b0109 31727 rust-ascii_1.0.0.orig.tar.gz 6108c1e0da4680176ca03b445dd6112933fc088ddbc1633b7a0d4876528e382a 3884 rust-ascii_1.0.0-2.debian.tar.xz"
+    "e84465a7a82ab18d9d78197fc71c276d87e4d0e37b71734188b6049c36b72d79 2188 rust-ascii_1.1.0-2.dsc d92bec98840b8f03a5ff5413de5293bfcd8bf96467cf5452609f939ec6f5de16 36075 rust-ascii_1.1.0.orig.tar.gz 6fff69a9136ae034c8c09c0ddc893f3387631c2b289a4f6f447788166a7b2d28 4376 rust-ascii_1.1.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ascii"
   ],
   "Files": [
-    "9cc828e6e4c9c662185637dd60cffcda 2385 rust-ascii_1.0.0-2.dsc 5ddc3e28a0592a544efefb0d053a1849 31727 rust-ascii_1.0.0.orig.tar.gz 2beb0a92cf60a4fa73d90b9911434701 3884 rust-ascii_1.0.0-2.debian.tar.xz"
+    "2f163938ba9f5be90ece3e9f43eb0c4c 2188 rust-ascii_1.1.0-2.dsc 4fb264cde0f88a533504ae9b77a925cc 36075 rust-ascii_1.1.0.orig.tar.gz 813a923444e08871acb1caefe7dc9418 4376 rust-ascii_1.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tomprogrammer/rust-ascii"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +30,7 @@
     "rust-ascii"
   ],
   "Package-List": [
-    "librust-ascii+serde-dev deb rust optional arch=any librust-ascii+serde-test-dev deb rust optional arch=any librust-ascii-dev deb rust optional arch=any"
+    "librust-ascii-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ascii]"
   ],
   "Version": [
-    "1.0.0-2"
+    "1.1.0-2"
   ]
 }
