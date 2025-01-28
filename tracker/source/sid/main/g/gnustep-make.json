@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "gnustep-common, gnustep-make, gnustep-make-doc"
+    "gnustep-common, gnustep-multiarch, gnustep-make, gnustep-make-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gobjc++, pkgconf"
+    "debhelper-compat (= 13), gobjc++ \u003c!cross\u003e, gobjc++-for-host \u003ccross\u003e, pkgconf"
   ],
   "Build-Depends-Indep": [
     "texinfo \u003c!nodoc\u003e, texlive-base \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "f96f1f5efb4c42b4e6b6ed2e92ae281875829acb2a52529fdfa51d1ddb2780b7 2650 gnustep-make_2.9.2-4.dsc f540df9f0e1daeb3d23b08e14b204b2a46f1d0a4005cb171c95323413806e4e1 611483 gnustep-make_2.9.2.orig.tar.gz 92357bcadc8dacf93f043cf690d2933e91866bc18d034ecd9e7c35a36dd7b2a8 232 gnustep-make_2.9.2.orig.tar.gz.asc e2b636f8d464129577c79ebb7ae615c121f6b94def8aa59a4d77b031bd6f3397 81992 gnustep-make_2.9.2-4.debian.tar.xz"
+    "48f614c61965344b120b4a4bbb8ab5c2c09aa78d619b718cb93ec69ae7cfb84f 2755 gnustep-make_2.9.2-6.dsc f540df9f0e1daeb3d23b08e14b204b2a46f1d0a4005cb171c95323413806e4e1 611483 gnustep-make_2.9.2.orig.tar.gz 92357bcadc8dacf93f043cf690d2933e91866bc18d034ecd9e7c35a36dd7b2a8 232 gnustep-make_2.9.2.orig.tar.gz.asc 3548d31c4064fd083cfa447f7f4965fa85206cc74cc5c756f9386563a3c7e8e1 84916 gnustep-make_2.9.2-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnustep-make"
   ],
   "Files": [
-    "fae33292b1dcf76890e5eed48fd9f248 2650 gnustep-make_2.9.2-4.dsc 456a8d51528f575b49a2c280cb5fe8ef 611483 gnustep-make_2.9.2.orig.tar.gz 3e6fb1eae13ddfb0ca735ea622e9deab 232 gnustep-make_2.9.2.orig.tar.gz.asc 4917a73a9c1f5fbb5a6346fca2224e20 81992 gnustep-make_2.9.2-4.debian.tar.xz"
+    "f77858864afb7cfc42c05622beb4ebfa 2755 gnustep-make_2.9.2-6.dsc 456a8d51528f575b49a2c280cb5fe8ef 611483 gnustep-make_2.9.2.orig.tar.gz 3e6fb1eae13ddfb0ca735ea622e9deab 232 gnustep-make_2.9.2.orig.tar.gz.asc cf3458427da7ae92b34114207cf35f50 84916 gnustep-make_2.9.2-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gnustep-make"
   ],
   "Package-List": [
-    "gnustep-common deb gnustep optional arch=any gnustep-make deb gnustep optional arch=all gnustep-make-doc deb doc optional arch=all profile=!nodoc"
+    "gnustep-common deb gnustep optional arch=any gnustep-make deb gnustep optional arch=all gnustep-make-doc deb doc optional arch=all profile=!nodoc gnustep-multiarch deb gnustep optional arch=any"
   ],
   "Priority": [
     "source"
@@ -51,7 +51,7 @@
     "adequate, file, libgnustep-gui-dev, shunit2, texinfo, texlive-latex-base"
   ],
   "Uploaders": [
-    "Eric Heintzmann \u003cheintzmann.eric@free.fr\u003e, Alex Myczko \u003ctar@debian.org\u003e, Yavor Doganov \u003cyavor@gnu.org\u003e"
+    "Eric Heintzmann \u003cheintzmann.eric@free.fr\u003e, Alex Myczko \u003ctar@debian.org\u003e, Yavor Doganov \u003cyavor@gnu.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/gnustep-team/gnustep-make"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/gnustep-team/gnustep-make.git"
   ],
   "Version": [
-    "2.9.2-4"
+    "2.9.2-6"
   ]
 }
