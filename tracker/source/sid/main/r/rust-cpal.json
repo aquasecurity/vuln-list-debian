@@ -6,19 +6,22 @@
     "librust-cpal-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-alsa-0.8+default-dev \u003c!nocheck\u003e, librust-dasp-sample-0.11+default-dev \u003c!nocheck\u003e, librust-js-sys-0.3+default-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-web-sys-0.3+audiobuffer-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+audiobuffersourcenode-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+audiocontext-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+audiocontextoptions-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+audiocontextstate-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+audiodestinationnode-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+audionode-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+default-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e, librust-web-sys-0.3+window-dev (\u003e= 0.3.35-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-alsa-0.9+default-dev \u003c!nocheck\u003e, librust-dasp-sample-0.11+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "02ae4585aeeae3b551e832fb10c0c21f608e75148b05b1d7d3064e1fc0cbeddf 3054 rust-cpal_0.15.2-3.dsc 6d959d90e938c5493000514b446987c07aed46c668faaa7d34d6c7a67b1a578c 98128 rust-cpal_0.15.2.orig.tar.gz 5c913bfecbf973953413d3b0dd025fcb7a7623dea62e4f8de24076a2c82231d9 3620 rust-cpal_0.15.2-3.debian.tar.xz"
+    "63c16928c1c16f6feca668bd8ba5df4a599c79cc4bab10f887474755fde2b2b1 1794 rust-cpal_0.15.3-1.dsc 873dab07c8f743075e57f524c583985fbaf745602acbe916a01539364369a779 100083 rust-cpal_0.15.3.orig.tar.gz 0c83a7505848e7ffd4bd5244994efa3f4c1ac3bb9d331a1f7c1a5efc34615279 3532 rust-cpal_0.15.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cpal"
   ],
   "Files": [
-    "71e76aced0ac0642a73135fd4888ddbe 3054 rust-cpal_0.15.2-3.dsc 3cfde4d096c25648f9e63bba1012059e 98128 rust-cpal_0.15.2.orig.tar.gz 392144bc66819e42d963c912dabe2880 3620 rust-cpal_0.15.2-3.debian.tar.xz"
+    "6f9a7cb58ac6298cef1c90e719f9b1ac 1794 rust-cpal_0.15.3-1.dsc d6089a8a99e113da78ab74fa56290b00 100083 rust-cpal_0.15.3.orig.tar.gz a0be3aaa9fbfeae7dd7e39ece5b921c7 3532 rust-cpal_0.15.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rustaudio/cpal"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-ringbuf-0.3+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-ringbuf-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cpal]"
   ],
   "Version": [
-    "0.15.2-3"
+    "0.15.3-1"
   ]
 }
