@@ -6,16 +6,16 @@
     "librust-proptest-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bit-set-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-bit-vec-0.6+default-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+libm-dev (\u003e= 0.2.15-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.15-~~) \u003c!nocheck\u003e, librust-rand-0.8+alloc-dev \u003c!nocheck\u003e, librust-rand-0.8+std-dev \u003c!nocheck\u003e, librust-rand-chacha-0.3-dev \u003c!nocheck\u003e, librust-rand-xorshift-0.3+default-dev \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev \u003c!nocheck\u003e, librust-rusty-fork-0.3+timeout-dev \u003c!nocheck\u003e, librust-rusty-fork-0.3-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-unarray-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bit-set-0.8+default-dev \u003c!nocheck\u003e, librust-bit-vec-0.8+default-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.15-~~) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.15-~~) \u003c!nocheck\u003e, librust-rand-0.8+alloc-dev \u003c!nocheck\u003e, librust-rand-0.8+std-dev \u003c!nocheck\u003e, librust-rand-chacha-0.3-dev \u003c!nocheck\u003e, librust-rand-xorshift-0.3+default-dev \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev \u003c!nocheck\u003e, librust-rusty-fork-0.3+timeout-dev \u003c!nocheck\u003e, librust-rusty-fork-0.3-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-unarray-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7c66d5d7b2010d8c099074ed387564031eb072a853c0c9f47e5901d9fc2b4033 3027 rust-proptest_1.5.0-2.dsc b4c2511913b88df1637da85cc8d96ec8e43a3f8bb8ccb71ee1ac240d6f3df58d 201381 rust-proptest_1.5.0.orig.tar.gz 6d5903592d2e1bcfc8e415441ed55d1d3cec2c5f72d34ecacc81977e2e631b37 6400 rust-proptest_1.5.0-2.debian.tar.xz"
+    "c32b62cf18596c9d25d569ccd81ad0211c5a3558e7bbcbebadfafae6d3dfe161 3022 rust-proptest_1.6.0-1.dsc 14cae93065090804185d3b75f0bf93b8eeda30c7a9b4a33d3bdb3988d6229e50 203276 rust-proptest_1.6.0.orig.tar.gz fffbd23ba4bd47d5c468414310b0b023a71f98318d46d47a6f80af3d6f8323e1 6476 rust-proptest_1.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-proptest"
   ],
   "Files": [
-    "f279ee8ee81075c5298153914238c856 3027 rust-proptest_1.5.0-2.dsc 9c079ed19e9fc486cb3fb1b529064ad4 201381 rust-proptest_1.5.0.orig.tar.gz ed6e0ec110e4a35c7a954ac8e7d90ca5 6400 rust-proptest_1.5.0-2.debian.tar.xz"
+    "8dbf77c04a455f6b62e653f1421d4586 3022 rust-proptest_1.6.0-1.dsc fe8631ad13c0a97ebfce62ddc6df83dd 203276 rust-proptest_1.6.0.orig.tar.gz c61bc2d3fe92b451ac2377511d7bfd47 6476 rust-proptest_1.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-regex-1+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-regex-1+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/proptest]"
   ],
   "Version": [
-    "1.5.0-2"
+    "1.6.0-1"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-postgres-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck-0.4+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck-0+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fd3407fc5ada6fe2fcb677b5f832ef363251d43bbd91e32d697533a665bc75fa 2375 rust-postgres-derive_0.4.5-1.dsc 83145eba741b050ef981a9a1838c843fa7665e154383325aa8b440ae703180a2 11753 rust-postgres-derive_0.4.5.orig.tar.gz 17ad3569f9dc17e712acc5e420f9ba3dc7bb2292bc4571482f76d03b8d845946 2684 rust-postgres-derive_0.4.5-1.debian.tar.xz"
+    "aa20c3902bb799a3c1eb8fea9cab913f8de0ae562e6d978648bc4d3462253431 2453 rust-postgres-derive_0.4.6-1.dsc 69700ea4603c5ef32d447708e6a19cd3e8ac197a000842e97f527daea5e4175f 11768 rust-postgres-derive_0.4.6.orig.tar.gz 6e59fc043a11a8d4707d9ac96e56d771ebabc93b910e89de7ad8b4d26fbef373 2884 rust-postgres-derive_0.4.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-postgres-derive"
   ],
   "Files": [
-    "7455343ea6dcef7cba489593d9985db6 2375 rust-postgres-derive_0.4.5-1.dsc ff99ae3c12b82eb357f2a7ae23ed796f 11753 rust-postgres-derive_0.4.5.orig.tar.gz 4fa2de4ed6c0a4921baf8b6e90974e5f 2684 rust-postgres-derive_0.4.5-1.debian.tar.xz"
+    "ae68b1d18c8a3a710ef0e51455891c92 2453 rust-postgres-derive_0.4.6-1.dsc 3c8c29e24c7f079207b566ba590ebec2 11768 rust-postgres-derive_0.4.6.orig.tar.gz 60accb836d0b18f4de477f622fc529cf 2884 rust-postgres-derive_0.4.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sfackler/rust-postgres"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cn@sail.ng\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/postgres-derive]"
   ],
   "Version": [
-    "0.4.5-1"
+    "0.4.6-1"
   ]
 }
