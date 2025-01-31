@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "tina"
+    "tina, python3-tina-mgr"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-single-binary, libncurses-dev"
+    "debhelper (\u003e\u003e 13.15.2~), dh-sequence-python3, dpkg-build-api (= 1), libncurses-dev, pybuild-plugin-pyproject, python3-all, python3-click \u003c!nocheck\u003e, python3-hatch-requirements-txt, python3-hatchling, python3-libtmux (\u003e\u003e 0.39.0-2~) \u003c!nocheck\u003e, python3-pyparsing \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "47da9d2a91f6b90176ea9314ad4bf6e0345013f07c4014513df793e1082c0820 1997 tina_0.1.12-4.dsc 108cec9d1dbd938c67f3fae2e4238e12d064f1d12bd0d9debd0ee3ac79553edf 80272 tina_0.1.12.orig.tar.xz 8a6b162514d5303b4126a94219021e087be1cab8487f3394a242d6296487d608 7248 tina_0.1.12-4.debian.tar.xz"
+    "beca09fdab5ac657eb0fb9a3304e7f6bcc5ca550aee8a44c223f055b1a4ca823 2703 tina_0.1.14-4.dsc eae5b5dfe71005c8ec24cee0b69c4b2da8fb45061a543e48a6599e4b54a8fcec 114940 tina_0.1.14.orig.tar.xz a8681631fa32ff133158cfa4ea775edc3793f38a700e5dbaa610a3c3394c7970 833 tina_0.1.14.orig.tar.xz.asc cf3407a00e6618e3778ee8c73e272eb0523f4575b505698c086603e87beeda14 10756 tina_0.1.14-4.debian.tar.xz"
   ],
   "Dgit": [
-    "db6d186bead921474be8e59d5f0e2982ca810151 debian archive/debian/0.1.12-4 https://git.dgit.debian.org/tina"
+    "98ed16b4368b3864ecd5d747652871533cc56010 debian archive/debian/0.1.14-4 https://git.dgit.debian.org/tina"
   ],
   "Directory": [
     "pool/main/t/tina"
   ],
   "Files": [
-    "ba9e98437866c349dcfffb41d6479a0b 1997 tina_0.1.12-4.dsc d4ee539ac318d2f1c1e353a0caac15b1 80272 tina_0.1.12.orig.tar.xz c7a0cb98b2fe7b0e1651b87cebb641d6 7248 tina_0.1.12-4.debian.tar.xz"
+    "b0de80d99b6ca70dfbf1157e2dda5436 2703 tina_0.1.14-4.dsc 3b774d7b8de1e9ac7779be8c49530880 114940 tina_0.1.14.orig.tar.xz 86c13bfe58aa1bafa896ffe8c562f20b 833 tina_0.1.14.orig.tar.xz.asc a3d782f118f76eef7d8178c336498a79 10756 tina_0.1.14-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "tina"
   ],
   "Package-List": [
-    "tina deb misc optional arch=any"
+    "python3-tina-mgr deb python optional arch=all tina deb misc optional arch=any"
   ],
   "Priority": [
     "source"
@@ -42,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-click, python3-libtmux, python3-pyparsing, python3-pytest, python3-yaml"
   ],
   "Vcs-Browser": [
     "https://gitlab.com/tina-mgr/tina-mgr/tree/debian/master"
@@ -51,6 +57,6 @@
     "https://gitlab.com/tina-mgr/tina-mgr.git -b debian/master"
   ],
   "Version": [
-    "0.1.12-4"
+    "0.1.14-4"
   ]
 }
