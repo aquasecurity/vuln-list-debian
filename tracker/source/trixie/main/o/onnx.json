@@ -6,16 +6,16 @@
     "python3-onnx, libonnx1t64, libonnx-dev, libonnx-testdata"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 12), dh-exec, dh-python, libprotobuf-dev, protobuf-compiler, pybind11-dev, python3-pybind11, python3-all, python3-all-dev, python3-protobuf \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-runner, python3-tabulate \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e"
+    "debhelper-compat (= 12), dh-exec, dh-python, dpkg-dev (\u003e= 1.22.5), cmake, libprotobuf-dev, protobuf-compiler, pybind11-dev, python3-all, python3-all-dev, python3-numpy \u003c!nocheck\u003e, python3-protobuf \u003c!nocheck\u003e, python3-pybind11, python3-pytest \u003c!nocheck\u003e, python3-pytest-runner, python3-tabulate \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1b6d258eab8dac6cfc63484caaf7cea7793fd99eb67577e7cf112603be442e3c 2443 onnx_1.16.2-1.dsc 84fc1c3d6133417f8a13af6643ed50983c91dacde5ffba16cc8bb39b22c2acbb 12429500 onnx_1.16.2.orig.tar.gz ec3e59c31625ebacecb58b1936487740307176393a88dfc41d63c9b2658bd8b8 12540 onnx_1.16.2-1.debian.tar.xz"
+    "f269c0e5ca4167a86b96deed42cd6a5af115dcd3c5ed3c58ba6fdcfee403680b 2454 onnx_1.17.0-3.dsc 8d5e983c36037003615e5a02d36b18fc286541bf52de1a78f6cf9f32005a820e 12475304 onnx_1.17.0.orig.tar.gz 4594b7ae3d8a2c3ad8e9b697b24a21f0a282aabd3c6ce10c5601805e22ef9d8a 13460 onnx_1.17.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/onnx"
   ],
   "Files": [
-    "b5e0cc4a80d54667bd0e6f7f5c4ed002 2443 onnx_1.16.2-1.dsc a1e03ca05dc0ca9a10240d4ede94b13b 12429500 onnx_1.16.2.orig.tar.gz 4996761a1809130f263d636e86d9801c 12540 onnx_1.16.2-1.debian.tar.xz"
+    "8cd8cc570f502ee6ce0a7a749d32fd65 2454 onnx_1.17.0-3.dsc 29dd1def16d9a3f7589357c9a06bc021 12475304 onnx_1.17.0.orig.tar.gz 2e8c24ed7de7aa1674ca3a58db222ac8 13460 onnx_1.17.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "onnx"
   ],
   "Package-List": [
-    "libonnx-dev deb science optional arch=any libonnx-testdata deb science optional arch=all libonnx1t64 deb science optional arch=any python3-onnx deb science optional arch=any"
+    "libonnx-dev deb libdevel optional arch=any libonnx-testdata deb science optional arch=all libonnx1t64 deb libs optional arch=any python3-onnx deb science optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-parameterized, python3-pytest"
+    "python3-parameterized, python3-pil, python3-pytest"
   ],
   "Uploaders": [
     "Mo Zhou \u003clumin@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/onnx.git"
   ],
   "Version": [
-    "1.16.2-1"
+    "1.17.0-3"
   ]
 }

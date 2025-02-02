@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libonnxruntime1.19.2, libonnxruntime-dev, onnxruntime-tools"
+    "libonnxruntime1.19.2, libonnxruntime-dev, onnxruntime-tools, python3-onnxruntime"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libboost-dev, libbenchmark-dev, libcpuinfo-dev (\u003e= 0.0~git20240830.fa1c679), libeigen3-dev (\u003e= 3.4.0), libflatbuffers-dev, libgmock-dev, libgtest-dev, libhowardhinnant-date-dev, libmsgsl-dev, libnsync-dev, libonnx-dev, libonnx-testdata, libpng-dev, libprotobuf-dev, libpthreadpool-dev, libsafeint-dev, libre2-dev, libxnnpack-dev (\u003e= 0.0~git20240821.87ee0b4), ninja-build, nlohmann-json3-dev, protobuf-compiler, pkgconf, python3-all, python3-all-dev, python3-numpy, python3-onnx, python3-setuptools, python3-wheel, zlib1g-dev"
+    "debhelper-compat (= 13), dh-exec, dh-sequence-python3, dh-sequence-numpy3, cmake, libboost-dev, libbenchmark-dev, libcpuinfo-dev (\u003e= 0.0~git20240830.fa1c679), libeigen3-dev (\u003e= 3.4.0), libflatbuffers-dev, libgmock-dev, libgtest-dev, libhowardhinnant-date-dev, libmsgsl-dev, libonnx-dev, libonnx-testdata, libpng-dev, libprotobuf-dev, libpthreadpool-dev, libsafeint-dev, libre2-dev, libdnnl-dev [amd64 arm64 ppc64el s390x], libxnnpack-dev (\u003e= 0.0~git20240821.87ee0b4) [amd64 arm64 armhf i386 riscv64 x32], ninja-build, nlohmann-json3-dev, protobuf-compiler, pkgconf, python3-all, python3-all-dev, python3-numpy, python3-onnx, python3-packaging, python3-protobuf, python3-pybind11, python3-setuptools, python3-wheel, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "482f0a8bf7ff3cb478d3fa3119722695fdbf71646f08720ea76c94d4b9e92446 2784 onnxruntime_1.19.2+dfsg-2.dsc 97982a09a7b7aad4f61313c491b4256f8e7ad41e07381204fb99cb9706eb3589 37603160 onnxruntime_1.19.2+dfsg.orig.tar.xz c2650728ade844c900ca8cebaa849dad215e2f48fd2c5c19dc12745e8e5d08f2 20504 onnxruntime_1.19.2+dfsg-2.debian.tar.xz"
+    "969dc237407e240adf4d65981cd5a95f62f45234e3dd5b9f921236b3150ba9ea 3072 onnxruntime_1.19.2+dfsg-9.dsc 97982a09a7b7aad4f61313c491b4256f8e7ad41e07381204fb99cb9706eb3589 37603160 onnxruntime_1.19.2+dfsg.orig.tar.xz 2be257ceba0ec52a6cd32bfe406fd5641540177d29802b37a58165bb2c0267cc 24608 onnxruntime_1.19.2+dfsg-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/onnxruntime"
   ],
   "Files": [
-    "fc8023b8172242c4e696190483653ec1 2784 onnxruntime_1.19.2+dfsg-2.dsc 8ec8236d8369b49715e966d2112c2306 37603160 onnxruntime_1.19.2+dfsg.orig.tar.xz 0ad5505a73c58d233eb10942d4b0567b 20504 onnxruntime_1.19.2+dfsg-2.debian.tar.xz"
+    "ea187dce7cae99f396604eb0270cfb15 3072 onnxruntime_1.19.2+dfsg-9.dsc 8ec8236d8369b49715e966d2112c2306 37603160 onnxruntime_1.19.2+dfsg.orig.tar.xz bbf4b546d38cdd7bc256c4213b19edec 24608 onnxruntime_1.19.2+dfsg-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "onnxruntime"
   ],
   "Package-List": [
-    "libonnxruntime-dev deb libdevel optional arch=any libonnxruntime1.19.2 deb libs optional arch=any onnxruntime-tools deb science optional arch=any"
+    "libonnxruntime-dev deb libdevel optional arch=any libonnxruntime1.19.2 deb libs optional arch=any onnxruntime-tools deb science optional arch=all python3-onnxruntime deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkgconf"
+    "build-essential, pkgconf, python3-numpy, python3-onnx, python3-torch"
   ],
   "Uploaders": [
     "Mo Zhou \u003clumin@debian.org\u003e, Dylan Aïssi \u003cdaissi@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/onnxruntime.git"
   ],
   "Version": [
-    "1.19.2+dfsg-2"
+    "1.19.2+dfsg-9"
   ]
 }

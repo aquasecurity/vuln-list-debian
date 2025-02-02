@@ -6,19 +6,22 @@
     "librust-r2d2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-scheduled-thread-pool-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-scheduled-thread-pool-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c89649665f8a5a910b6defe11e0709cf2f798a8084477d7f5f01e4bab4af359b 2284 rust-r2d2_0.8.10-6.dsc 51de85fb3fb6524929c8a2eb85e6b6d363de4e8c48f9e2c2eac4944abc181c93 17888 rust-r2d2_0.8.10.orig.tar.gz f0f05b9bc1240af59d7f63da428cc3a6e6e3d2a4cdf71373a283deb5428ccb4c 3100 rust-r2d2_0.8.10-6.debian.tar.xz"
+    "7e1f718daf217b1d6ebe9f6d987fa2d51fc758e58cf56b61584dde0f4e273f7b 1680 rust-r2d2_0.8.10-7.dsc 51de85fb3fb6524929c8a2eb85e6b6d363de4e8c48f9e2c2eac4944abc181c93 17888 rust-r2d2_0.8.10.orig.tar.gz 1e92409730e01fb14688e490383a1c22d6da88a1913ccb698f39dc63de2f7629 3140 rust-r2d2_0.8.10-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-r2d2"
   ],
   "Files": [
-    "92d51d3594f64d43e42ff9d274a285e0 2284 rust-r2d2_0.8.10-6.dsc 1fbd74fb9add2c09a4434e8d97cb17c2 17888 rust-r2d2_0.8.10.orig.tar.gz c858668dde3aeab206d784dfc452026b 3100 rust-r2d2_0.8.10-6.debian.tar.xz"
+    "1cfe0a0bff3251ebe387f0a5635e8000 1680 rust-r2d2_0.8.10-7.dsc 1fbd74fb9add2c09a4434e8d97cb17c2 17888 rust-r2d2_0.8.10.orig.tar.gz ec00107e01acce44f1e6d7b2e7b06c66 3140 rust-r2d2_0.8.10-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sfackler/r2d2"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/r2d2"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/r2d2]"
   ],
   "Version": [
-    "0.8.10-6"
+    "0.8.10-7"
   ]
 }
