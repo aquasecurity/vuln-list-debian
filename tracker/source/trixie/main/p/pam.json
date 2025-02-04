@@ -8,23 +8,23 @@
   "Build-Conflicts": [
     "libdb4.2-dev, libxcrypt-dev"
   ],
-  "Build-Conflicts-Indep": [
-    "fop"
-  ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, flex, libcrypt-dev, libdb-dev, libselinux1-dev [linux-any], libsystemd-dev [linux-any] \u003c!stage1\u003e, po-debconf, autopoint, libaudit-dev [linux-any] \u003c!stage1\u003e, pkg-config, libfl-dev, libfl-dev:native, docbook-xsl-ns, docbook5-xml, xsltproc, libxml2-utils, w3m"
+    "debhelper-compat (= 13), dh-exec, flex, libcrypt-dev, libdb-dev, libselinux1-dev [linux-any], libsystemd-dev [linux-any] \u003c!stage1\u003e, po-debconf, meson, libaudit-dev [linux-any] \u003c!stage1\u003e, pkgconf, libfl-dev, libfl-dev:native"
+  ],
+  "Build-Depends-Indep": [
+    "docbook-xsl-ns, docbook5-xml, xsltproc, libxml2-utils, w3m, fop"
   ],
   "Checksums-Sha256": [
-    "05666dde2c8057ff436975a5da7dad91210ab5a5dfdaea43976ac4a6bc75b1e7 2253 pam_1.5.3-7.dsc 7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283 1020076 pam_1.5.3.orig.tar.xz ce5690766060d60a8f0fba447f480d8d49988821740698cbdf2ecfd84dc8895c 801 pam_1.5.3.orig.tar.xz.asc 494106a8f40a5436b82f8955e04a83598439b48636f16a30d0b6a32d86d0fc61 139288 pam_1.5.3-7.debian.tar.xz"
+    "a23cc1dfcefd59505f72d6c78cf1001b1f54dd161f906d961c8697e3e40a9b2d 2210 pam_1.7.0-2.dsc 57dcd7a6b966ecd5bbd95e1d11173734691e16b68692fa59661cdae9b13b1697 507824 pam_1.7.0.orig.tar.xz 7a8ea18ec7d9dd1f8cbf9055c32128cbca8241aa63e9fea44d56ce6f0e15e441 801 pam_1.7.0.orig.tar.xz.asc a3ea5de6e35bc62da51ea2ddbf2bc214cb26da84175e9bb8e2e7b63d3849a19d 132012 pam_1.7.0-2.debian.tar.xz"
   ],
   "Dgit": [
-    "50131c6234b9c8da15bb8a0446ea2b3944e296d0 debian archive/debian/1.5.3-7 https://git.dgit.debian.org/pam"
+    "da0113015df265db6e851c6c30f68c705bb790a9 debian archive/debian/1.7.0-2 https://git.dgit.debian.org/pam"
   ],
   "Directory": [
     "pool/main/p/pam"
   ],
   "Files": [
-    "9406826b530ee14d1a3e8e4aca318b13 2253 pam_1.5.3-7.dsc a913bd5fbf9edeafaacf3eb1eb86fd83 1020076 pam_1.5.3.orig.tar.xz 97d5a43bc7ea97d3a2782962ded545b4 801 pam_1.5.3.orig.tar.xz.asc f66385657f2875b74d0b5c82084f8e57 139288 pam_1.5.3-7.debian.tar.xz"
+    "f2510512c9930f05782eb90374245010 2210 pam_1.7.0-2.dsc c1e41d59d6852e45d0f953c8c8f869d6 507824 pam_1.7.0.orig.tar.xz 9a57369709c01169ecc6b2ff59a43db6 801 pam_1.7.0.orig.tar.xz.asc 3b578560bc73f42598cb36b830634404 132012 pam_1.7.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,7 @@
     "pam"
   ],
   "Package-List": [
-    "libpam-doc deb doc optional arch=all libpam-modules deb admin required arch=any libpam-modules-bin deb admin required arch=any libpam-runtime deb admin required arch=all libpam0g deb libs optional arch=any libpam0g-dev deb libdevel optional arch=any"
+    "libpam-doc deb doc optional arch=all profile=!nodoc libpam-modules deb admin required arch=any libpam-modules-bin deb admin required arch=any libpam-runtime deb admin required arch=all libpam0g deb libs optional arch=any libpam0g-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "source"
@@ -56,9 +56,6 @@
   "Testsuite-Triggers": [
     "python3-pam"
   ],
-  "Uploaders": [
-    "Steve Langasek \u003cvorlon@debian.org\u003e"
-  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/vorlon/pam"
   ],
@@ -66,6 +63,6 @@
     "https://salsa.debian.org/vorlon/pam.git"
   ],
   "Version": [
-    "1.5.3-7"
+    "1.7.0-2"
   ]
 }
