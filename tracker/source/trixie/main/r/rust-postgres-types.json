@@ -6,19 +6,22 @@
     "librust-postgres-types-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fallible-iterator-0.3+default-dev \u003c!nocheck\u003e, librust-postgres-protocol-0.6+default-dev (\u003e= 0.6.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fallible-iterator-0.3+default-dev \u003c!nocheck\u003e, librust-postgres-protocol-0.6+default-dev (\u003e= 0.6.7-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4a6d1d7f437a584f47590d8a4f87122a0c156574e705929ad44780963457d681 2361 rust-postgres-types_0.2.6-2.dsc 8d2234cdee9408b523530a9b6d2d6b373d1db34f6a8e51dc03ded1828d7fb67c 29521 rust-postgres-types_0.2.6.orig.tar.gz a17c18c2b481acdde4899941cb31963facd70c5684f2af04dccb40bfd1a9fd2b 4124 rust-postgres-types_0.2.6-2.debian.tar.xz"
+    "1e32d19a778f9d3ecc273b99b2f67a1f80f6915c334f9689b1b3e187ee531662 2427 rust-postgres-types_0.2.8-1.dsc f66ea23a2d0e5734297357705193335e0a957696f34bed2f2faefacb2fec336f 30328 rust-postgres-types_0.2.8.orig.tar.gz 40a0aad420ab394cf68581c6e59cd28ff927d32e86c313aad9c7a2d48a6ab608 4332 rust-postgres-types_0.2.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-postgres-types"
   ],
   "Files": [
-    "02990eda552ad02ac7157163e18a6409 2361 rust-postgres-types_0.2.6-2.dsc 719079a8167245c99629d03f04e03f82 29521 rust-postgres-types_0.2.6.orig.tar.gz f3af434390f8f61fb2783573aa7b7163 4124 rust-postgres-types_0.2.6-2.debian.tar.xz"
+    "63ac6f4995c025d61fabc4d2d1e1a4b4 2427 rust-postgres-types_0.2.8-1.dsc 29f50046b88e47cb6c58fc6884112513 30328 rust-postgres-types_0.2.8.orig.tar.gz 0bd7b5d20d01e73c7a8a002fa26c5a71 4332 rust-postgres-types_0.2.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sfackler/rust-postgres"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cn@sail.ng\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/postgres-types]"
   ],
   "Version": [
-    "0.2.6-2"
+    "0.2.8-1"
   ]
 }
