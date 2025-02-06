@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "all i386 amd64 arm64"
   ],
   "Binary": [
-    "ipxe, ipxe-qemu"
+    "ipxe, ipxe-qemu, grub-ipxe"
   ],
   "Build-Depends": [
-    "binutils-dev, debhelper-compat (= 13), dh-exec, dosfstools, gcc-aarch64-linux-gnu, isolinux, liblzma-dev, mtools, syslinux-common, syslinux-utils, xorriso, zlib1g-dev"
+    "debhelper-compat (= 13), dh-exec, dosfstools:native, gcc-x86-64-linux-gnu, gcc-aarch64-linux-gnu, isolinux, liblzma-dev:native, mtools, syslinux-common, xorriso, xxd, zlib1g-dev:native"
   ],
   "Checksums-Sha256": [
-    "9bb3de2780788902318c07d2404c4c5e1ba069969ce328eb2102148404064cd0 2171 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-2.dsc 138a4985df9100702f53db13d45fbb55837eb902f6633d77a703e734ab39e9af 2633800 ipxe_1.21.1+git20220113.fbbdc3926+dfsg.orig.tar.xz 96c21957ff97fb4e55e60593cea3bc882c150fc932183dbecc89c36e2df644db 17808 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-2.debian.tar.xz"
+    "4dfb9362df815102ffef6c44c0d36f9eb1d21e509629b9117b5c9c4519b525d9 2423 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-4.dsc 138a4985df9100702f53db13d45fbb55837eb902f6633d77a703e734ab39e9af 2633800 ipxe_1.21.1+git20220113.fbbdc3926+dfsg.orig.tar.xz 97afdbc3fa05b94b9a2aa9c971ac05061e876d46b9f4fee42970407e05b9ad30 22060 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/ipxe"
   ],
   "Files": [
-    "f11076318ec527a322ba9346f6b80fad 2171 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-2.dsc da7b89f485e03b7e086b848d1f3f3803 2633800 ipxe_1.21.1+git20220113.fbbdc3926+dfsg.orig.tar.xz 44861d565e3f28dcf66ded442cd39072 17808 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-2.debian.tar.xz"
+    "60042b648a88f3f7ba940b04b4732394 2423 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-4.dsc da7b89f485e03b7e086b848d1f3f3803 2633800 ipxe_1.21.1+git20220113.fbbdc3926+dfsg.orig.tar.xz 757cdaa7d2ee115c0f6739e565079a13 22060 ipxe_1.21.1+git20220113.fbbdc3926+dfsg-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://ipxe.org/"
   ],
   "Maintainer": [
-    "Sven Geuer \u003csge@debian.org\u003e"
+    "Miao Wang \u003cshankerwangmiao@gmail.com\u003e"
   ],
   "Package": [
     "ipxe"
   ],
   "Package-List": [
-    "ipxe deb admin optional arch=all ipxe-qemu deb admin optional arch=all"
+    "grub-ipxe deb admin optional arch=i386,amd64,arm64 ipxe deb admin optional arch=all ipxe-qemu deb admin optional arch=all"
   ],
   "Priority": [
     "source"
@@ -41,6 +41,15 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "expect, ovmf, qemu-efi-aarch64, qemu-system-arm, qemu-system-x86, seabios, xxd"
+  ],
+  "Uploaders": [
+    "Shengqi Chen \u003charry@debian.org\u003e"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/ipxe"
   ],
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/debian/ipxe.git"
   ],
   "Version": [
-    "1.21.1+git20220113.fbbdc3926+dfsg-2"
+    "1.21.1+git20220113.fbbdc3926+dfsg-4"
   ]
 }
