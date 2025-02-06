@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-bit-set-dev, librust-bit-set+std-dev"
+    "librust-bit-set-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bit-vec-0.6+std-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e, librust-bit-vec-0.6-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bit-vec-0.8+std-dev \u003c!nocheck\u003e, librust-bit-vec-0.8-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d913d11e169377b86f23d84e2b100fbf36c19f0e6b7a7d98fe9d62427126df26 2389 rust-bit-set_0.5.2-1.dsc 6e11e16035ea35e4e5997b393eacbf6f63983188f7a2ad25bfb13465f5ad59de 14093 rust-bit-set_0.5.2.orig.tar.gz 14e330e3a629c1e013babc41f93d35108bd49b500a5473923c47c5d78c68f4c9 3040 rust-bit-set_0.5.2-1.debian.tar.xz"
+    "3e3e03de929b6bf273a82191573f0b7c52a37d0e898b5c404828000afdf853fe 2332 rust-bit-set_0.8.0-1.dsc 08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3 16289 rust-bit-set_0.8.0.orig.tar.gz 16d8486f44abf2b19bcc25f28a836024ad91b13202f5e9dcc526cf2125c365a3 2848 rust-bit-set_0.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bit-set"
   ],
   "Files": [
-    "82c40cc54fb88317de283444bbb4c279 2389 rust-bit-set_0.5.2-1.dsc 8f8acc3c1caff2043085a0cc28a92757 14093 rust-bit-set_0.5.2.orig.tar.gz b98515a921b9762dfae19f4696d1b667 3040 rust-bit-set_0.5.2-1.debian.tar.xz"
+    "655b9c92ad88a398a3a43a5a74d7c0e1 2332 rust-bit-set_0.8.0-1.dsc fa4e40913159dd05959a52a5dff270fc 16289 rust-bit-set_0.8.0.orig.tar.gz 46b6a93355738435d43445014f00f636 2848 rust-bit-set_0.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-bit-set"
   ],
   "Package-List": [
-    "librust-bit-set+std-dev deb rust optional arch=any librust-bit-set-dev deb rust optional arch=any"
+    "librust-bit-set-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bit-set]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.8.0-1"
   ]
 }
