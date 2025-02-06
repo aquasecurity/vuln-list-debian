@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-sasdata"
+    "python3-sasdata, python-sasdata-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-h5py, python3-lxml, python3-numpy, python3-pytest, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, dh-sequence-sphinxdoc, libjs-jquery, libjs-mathjax, python3-all, python3-h5py, python3-lxml, python3-numpy, python3-pytest, python3-setuptools, python3-sphinx"
   ],
   "Checksums-Sha256": [
-    "9919819a6e9d6b25331a0f00af71eddbead0b16828901942fc85ad0ddf48951e 2137 sasdata_0.8.1-5.dsc 9545c54d393def224ed231cae179b1fff0cd379f3a1c9828d39d20b9a65f52b1 5410567 sasdata_0.8.1.orig.tar.gz f27821854a7d27aab76fda027c4b9cebbbb9d90fa8b796f412d7e2dc7b1da153 3636 sasdata_0.8.1-5.debian.tar.xz"
+    "70ae7c6b98a0331382f1fb049b49e008537927368579fa65e558a0db272078fa 2312 sasdata_0.9.0-3.dsc 313ce2d1007b73c53433ec01ba6ea013ebf29f4e916a15944b3bf2d017c181ce 26244177 sasdata_0.9.0.orig.tar.gz 9caca58d8d4562e5a859a13cfd5d26c3292f572d62a86333eefcac43837cf4bc 6532 sasdata_0.9.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sasdata"
   ],
   "Files": [
-    "c897ce632db2cfbfa7c1c95b3434ce33 2137 sasdata_0.8.1-5.dsc b7058a34a0ae19180c812a0af7b88cf4 5410567 sasdata_0.8.1.orig.tar.gz 63f41feaa503ca62d21e41cbe5529829 3636 sasdata_0.8.1-5.debian.tar.xz"
+    "9526465eb630d67a6b64103961054481 2312 sasdata_0.9.0-3.dsc 7e54e1afaee66172b6f391c089adbb4a 26244177 sasdata_0.9.0.orig.tar.gz 259fe70ab008838362872c12e20875cf 6532 sasdata_0.9.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "sasdata"
   ],
   "Package-List": [
-    "python3-sasdata deb python optional arch=all"
+    "python-sasdata-doc deb doc optional arch=all python3-sasdata deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "ca-certificates, python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Stuart Prescott \u003cstuart@debian.org\u003e, Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/sasdata.git"
   ],
   "Version": [
-    "0.8.1-5"
+    "0.9.0-3"
   ]
 }
