@@ -6,16 +6,16 @@
     "python3-pyfftw, python-pyfftw-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, cython3-legacy, libfftw3-dev, python3-all-dev, python3-numpy, python3-pkgconfig, python3-scipy, python3-dask, python3-setuptools, pybuild-plugin-pyproject, python3-sphinx, sphinx-common"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, cython3, libfftw3-dev, python3-all-dev, python3-numpy (\u003e= 1:2), python3-pkgconfig, python3-scipy, python3-dask, python3-setuptools, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, sphinx-common \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e, python-scipy-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "24b23dc2607c4d3a15b283dd7812d85dbd5e28deb311df82ca9bc64ea3f0a394 2341 pyfftw_0.13.1-2.dsc ffc1b3e7f4f74ee38716d668d7606b5fbfded58343655c160c3644fc4acf5d55 159314 pyfftw_0.13.1.orig.tar.gz 14f33d74a77b535ec8595c3c3ad434cc96d536aa9b8c7e9cb0536ef5e31e226e 7208 pyfftw_0.13.1-2.debian.tar.xz"
+    "f7393c08d464da9fd24e772a2e83cf06252a182d256e777f055e09c53793e065 2507 pyfftw_0.15.0-1.dsc e73f30803272f7fda0952a2e6368358ed15b985ae2e9fe2d63937790b56b5607 184669 pyfftw_0.15.0.orig.tar.gz fb64e44f7c12baf627a4184c55ae81b5310b6d06f840627873115434d5423261 7584 pyfftw_0.15.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyfftw"
   ],
   "Files": [
-    "c2eff3aac5a93fff3f55aa0789bf80ef 2341 pyfftw_0.13.1-2.dsc 1e6c37d9d0d8e037908cf89ca3c0232b 159314 pyfftw_0.13.1.orig.tar.gz 9110eb22046ea2212c13e9f397860166 7208 pyfftw_0.13.1-2.debian.tar.xz"
+    "133e8d3721f0d95f91fb432bb139d848 2507 pyfftw_0.15.0-1.dsc db47a7fb6365675502673bee3a241d6b 184669 pyfftw_0.15.0.orig.tar.gz 75a60fb83a2454ece19a81fd1b60e1e5 7584 pyfftw_0.15.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pyfftw"
   ],
   "Package-List": [
-    "python-pyfftw-doc deb python optional arch=all python3-pyfftw deb python optional arch=any"
+    "python-pyfftw-doc deb doc optional arch=all profile=!nodoc python3-pyfftw deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/pyfftw.git"
   ],
   "Version": [
-    "0.13.1-2"
+    "0.15.0-1"
   ]
 }

@@ -6,16 +6,16 @@
     "python3-orange3"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-setuptools, cython3, python3-all-dev, python3-numpy, python3-scipy, python3-bottleneck, python3-openpyxl, python3-pandas, python3-sklearn, python3-chardet, python3-xlrd, python3-xlsxwriter, dh-exec"
+    "cython3, debhelper-compat (= 13), dh-exec, pybuild-plugin-pyproject, python3-all-dev, python3-bottleneck, python3-chardet, python3-louvain (\u003e= 0.13), python3-numpy, python3-openpyxl, python3-pandas, python3-scipy, python3-setuptools, python3-sklearn, python3-trubar, python3-xlrd, python3-xlsxwriter"
   ],
   "Checksums-Sha256": [
-    "5b479fe0190787d33edf59697c269ecaac8d4f6be173e3e586472a18c0cb5d0c 2327 orange3_3.37.0-1.dsc 3b4b944ac2128ac14d4f6ddb845d4bca6f453cb1c51af586f5a180b5c1e67d09 29109000 orange3_3.37.0.orig.tar.xz c911651570c4d22e3cdccc03d9b1e78af7230b68516b2be535990cae3f0ac40e 3024 orange3_3.37.0-1.debian.tar.xz"
+    "bd89daafb4e0cbc0b30f054d1f43a1dbf82493185ead8ee5faa0440fa5803a7e 2439 orange3_3.38.1-2.dsc d77ded59f39a4196c2e842e06c30e9c7e6921eced2d1bf79665a0b53f8bf0355 29599912 orange3_3.38.1.orig.tar.xz dcec991899e1d50a31039ac38dc0e670ea2425d332bbb84519910a6e3ff2f759 3860 orange3_3.38.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/orange3"
   ],
   "Files": [
-    "141525d152b740e68c7f1523d10e1dc1 2327 orange3_3.37.0-1.dsc aa29e23383f3bde050a29dd2ad504fb8 29109000 orange3_3.37.0.orig.tar.xz 6e2bae563ab33230f81622aad2be62f3 3024 orange3_3.37.0-1.debian.tar.xz"
+    "23066294c8283c5642b4b97cfeedddbe 2439 orange3_3.38.1-2.dsc 666e1def0e4e344d6325af1920832915 29599912 orange3_3.38.1.orig.tar.xz 30d2aa5620ef6ea16ef8796aa4752951 3860 orange3_3.38.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "4.6.2.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "debhelper, mesa-utils, xauth, xvfb"
   ],
   "Uploaders": [
-    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e"
+    "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/orange3"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/science-team/orange3.git"
   ],
   "Version": [
-    "3.37.0-1"
+    "3.38.1-2"
   ]
 }
