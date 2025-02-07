@@ -6,19 +6,22 @@
     "librust-lofty-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e, librust-data-encoding-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev \u003c!nocheck\u003e, librust-lofty-attr-0.11+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.22-~~) \u003c!nocheck\u003e, librust-ogg-pager-0.6+default-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e, librust-paste-1+default-dev (\u003e= 1.0.15-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e, librust-data-encoding-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev \u003c!nocheck\u003e, librust-lofty-attr-0.11+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.22-~~) \u003c!nocheck\u003e, librust-ogg-pager-0.7+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev (\u003e= 1.0.15-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ff8981ea34113ea6411b36dc4a0c3eedbd159c57bdc2eee31879ce3882c36cb8 2615 rust-lofty_0.21.1-1.dsc c8bc4717ff10833a623b009e9254ae8667c7a59edc3cfb01c37aeeef4b6d54a7 235924 rust-lofty_0.21.1.orig.tar.gz 7e2ad5273efcd83342d9431a97106c995924893b2048118f1f3142a9cfd3fc9c 2920 rust-lofty_0.21.1-1.debian.tar.xz"
+    "1b04b26330207502a2ea7958a72e1fc93b66933016923ab63e9b28c2a6606dba 2685 rust-lofty_0.22.1-1.dsc b7c45b1baaa65506d6f6fe3a7dce7efae02d7d7fbe89907731686a39ab247a49 244305 rust-lofty_0.22.1.orig.tar.gz 32bc0d521fba43e9635d9b279f79c4a500d0bf0dc64c9e24764cbd2c55a8a2ed 2956 rust-lofty_0.22.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lofty"
   ],
   "Files": [
-    "fc6048d889e4ef015242aad2205bb254 2615 rust-lofty_0.21.1-1.dsc f8f097861ce4205c68e2dac2eb9b5052 235924 rust-lofty_0.21.1.orig.tar.gz 17a538c6b9d30be3e3712165cb2d86df 2920 rust-lofty_0.21.1-1.debian.tar.xz"
+    "aa5a35e5aa3b0d2ca47e6ce6b36580c4 2685 rust-lofty_0.22.1-1.dsc a9a786a91620be6e7c1111f5b6d2702e 244305 rust-lofty_0.22.1.orig.tar.gz 3b180d1d709f9c7b976bc1efc10e3353 2956 rust-lofty_0.22.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Serial-ATA/lofty-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-iai-callgrind-0.12+default-dev, librust-structopt-0.3-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-iai-callgrind-0.14+default-dev, librust-structopt-0.3-dev, librust-tempfile-3+default-dev, librust-test-log-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lofty]"
   ],
   "Version": [
-    "0.21.1-1"
+    "0.22.1-1"
   ]
 }

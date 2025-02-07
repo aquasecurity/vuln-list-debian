@@ -6,16 +6,16 @@
     "librust-usb-ids-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-7-dev \u003c!nocheck\u003e, librust-phf-0.11+default-dev \u003c!nocheck\u003e, librust-phf-codegen-0.11+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, usb.ids"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-7-dev \u003c!nocheck\u003e, librust-phf-0.11+default-dev \u003c!nocheck\u003e, librust-phf-codegen-0.11+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, usb.ids"
   ],
   "Checksums-Sha256": [
-    "9393228bd4898b67e6d4ebe83ef7f24c4b328a68a0f2c1c7e74d273a9a2b64c4 2422 rust-usb-ids_1.2024.4-1.dsc 0aa86db47ab2bf7e70f20807f9f45cc87842d9013023bd0436b53c713f9f8ee8 12958 rust-usb-ids_1.2024.4.orig.tar.gz 8f69f6ffe6772f121c5c28cc883d6d5fae09ef8cc05a0254383911eb5b6054aa 3184 rust-usb-ids_1.2024.4-1.debian.tar.xz"
+    "762bb41de71100bf02b8466e1079b19a9818981000e39d1adc3f7c0e78b350a2 2436 rust-usb-ids_1.2025.1-1.dsc eee63639ce62720d3af79960595ae8fe5aace2e6970aaacc02111b54e0e148b3 13057 rust-usb-ids_1.2025.1.orig.tar.gz 49bc23fe5962caf4f4af74d97e58c87787896306fabdc198cd36b3b2ce1c3e3e 3204 rust-usb-ids_1.2025.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-usb-ids"
   ],
   "Files": [
-    "30ebb572ce21d0d72d67c654fc4a7b3c 2422 rust-usb-ids_1.2024.4-1.dsc 9c9b912e982e51ce0416d1cd39bbbe17 12958 rust-usb-ids_1.2024.4.orig.tar.gz 34b2f122bd560b44d47fceb58574cc20 3184 rust-usb-ids_1.2024.4-1.debian.tar.xz"
+    "ce8106c97dada386637ab2bcc7704a34 2436 rust-usb-ids_1.2025.1-1.dsc 8496ff5a6c33f2f12a5b8882c2249146 13057 rust-usb-ids_1.2025.1.orig.tar.gz 734a294deafe2fa2e55a7c31cff4f925 3204 rust-usb-ids_1.2025.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/usb-ids]"
   ],
   "Version": [
-    "1.2024.4-1"
+    "1.2025.1-1"
   ]
 }

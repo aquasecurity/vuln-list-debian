@@ -6,19 +6,22 @@
     "librust-ogg-pager-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1bf0e137e969b974b1b7d32510e411c469e43b09bebc44c24081a674f09a0541 2216 rust-ogg-pager_0.6.1-1.dsc 87b0bef808533c5890ab77279538212efdbbbd9aa4ef1ccdfcfbf77a42f7e6fa 10883 rust-ogg-pager_0.6.1.orig.tar.gz ee26118d2e61e3af9cae037aeb4c950f322b9340716354b132e299fd3dc8c586 2592 rust-ogg-pager_0.6.1-1.debian.tar.xz"
+    "7480a2aaad28db24e612c8473705ed257a9c39f9bf240302d992d17ff2ce596c 2279 rust-ogg-pager_0.7.0-1.dsc e034c10fb5c1c012c1b327b85df89fb0ef98ae66ec28af30f0d1eed804a40c19 11507 rust-ogg-pager_0.7.0.orig.tar.gz 4dfeba9854eaa8c7e9ffd4d724d24540db40ed33141b88a4273274f337b5360d 2992 rust-ogg-pager_0.7.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ogg-pager"
   ],
   "Files": [
-    "88787df2c69278f9474aa3d9d6b7c4bf 2216 rust-ogg-pager_0.6.1-1.dsc 8652a132a3b1d5e38bce34e22f85789f 10883 rust-ogg-pager_0.6.1.orig.tar.gz fe4b7345ccdc725c34fc107e8ba976b2 2592 rust-ogg-pager_0.6.1-1.debian.tar.xz"
+    "5556be7527e00ae9be9fd99266335491 2279 rust-ogg-pager_0.7.0-1.dsc 9857c20b6e534deee287afe969de08a6 11507 rust-ogg-pager_0.7.0.orig.tar.gz 57a9cbcc4a2a2a6cb80f6312bd7ed30b 2992 rust-ogg-pager_0.7.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Serial-ATA/lofty-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ogg-pager]"
   ],
   "Version": [
-    "0.6.1-1"
+    "0.7.0-1"
   ]
 }

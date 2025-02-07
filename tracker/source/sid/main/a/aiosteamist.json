@@ -6,16 +6,19 @@
     "python3-aiosteamist"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-myst-parser \u003c!nodoc\u003e, python3-poetry-core, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-aiohttp \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pytest \u003c!nodoc\u003e, python3-pytest-asyncio \u003c!nodoc\u003e, python3-pytest-cov \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-xmltodict \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "f92d0c30a6510f839b7c15c934a051dc6eae926a2f646635244b66411606b63d 2179 aiosteamist_1.0.0-2.dsc ae2e4cc9785de62f7ab589121a447bcbba76071ea230f1e79fa5b1218f6f0f98 49833 aiosteamist_1.0.0.orig.tar.gz 6644f67d7fce778eb2e2cbf36863b1bce656724bec7bc64ae70271eda7bbcce3 3640 aiosteamist_1.0.0-2.debian.tar.xz"
+    "98a65d6e70714e83360f1be3066c70234490d16458d223a9b0001fd76d6d8da8 2437 aiosteamist_1.0.1-1.dsc f6c1c4a82cd24591de1d1eff90819755f2cc2d951cd49b4fecd9e4430544c66d 66436 aiosteamist_1.0.1.orig.tar.gz 3870316ae062e1162a2a07545ddaff13c420bc87bb0b924a2f49b7a1ff756816 3960 aiosteamist_1.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/aiosteamist"
   ],
   "Files": [
-    "7bc951e9f60fe0a17851ad8803fb0a94 2179 aiosteamist_1.0.0-2.dsc 0b01ba6038059ff470f4c33509df25b6 49833 aiosteamist_1.0.0.orig.tar.gz 15d80553d8eced4ffff1cdddadb85b2c 3640 aiosteamist_1.0.0-2.debian.tar.xz"
+    "ebb9f4e51b3737591f62d2e1db66e50b 2437 aiosteamist_1.0.1-1.dsc 547b4e8e7c2c07aff2181ef842e695ef 66436 aiosteamist_1.0.1.orig.tar.gz 48c21a40e6a215d9072fdf22ba7dd892 3960 aiosteamist_1.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,8 +44,14 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest, python3-pytest-asyncio"
+  ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/aiosteamist"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/aiosteamist.git"
   ],
   "Version": [
-    "1.0.0-2"
+    "1.0.1-1"
   ]
 }
