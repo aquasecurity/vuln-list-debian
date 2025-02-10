@@ -3,7 +3,7 @@
     "alpha amd64 arc armel armhf arm64 hppa i386 ia64 loong64 mips mipsel mips64 mips64el powerpc ppc64 ppc64el m68k riscv64 sh4 sparc sparc64 s390x x32 all"
   ],
   "Binary": [
-    "openjdk-25-jdk-headless, openjdk-25-jre-headless, openjdk-25-jdk, openjdk-25-jre, openjdk-25-demo, openjdk-25-source, openjdk-25-doc, openjdk-25-dbg, openjdk-25-testsupport, openjdk-25-jre-zero"
+    "openjdk-25-jdk-headless, openjdk-25-jre-headless, openjdk-25-jdk, openjdk-25-jre, openjdk-25-demo, openjdk-25-source, openjdk-25-doc, openjdk-25-dbg, openjdk-25-testsupport, openjdk-25-jvmci-jdk, openjdk-25-jre-zero"
   ],
   "Build-Depends": [
     "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, procps, wdiff, pkgconf, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), jtreg7 (\u003e= 7.4+1~) \u003c!nocheck\u003e, libtestng7-java \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xfonts-base \u003c!nocheck\u003e, libgl1-mesa-dri [!x32] \u003c!nocheck\u003e, xfwm4 \u003c!nocheck\u003e, x11-xkb-utils \u003c!nocheck\u003e, dbus-x11 \u003c!nocheck\u003e, libasmtools-java \u003c!nocheck\u003e, autoconf, automake, ant, ant-optional, g++-14 \u003c!cross\u003e, openjdk-24-jdk-headless:native | openjdk-25-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, systemtap-sdt-dev [!powerpc !ppc64 !ppc64el !sh4 !s390x], libnss3-dev (\u003e= 2:3.17.1), openjdk-25-jdk-headless \u003ccross\u003e"
@@ -12,13 +12,13 @@
     "graphviz, pandoc"
   ],
   "Checksums-Sha256": [
-    "84141ca27799e3236ae873c05bcd18b9128e3c69a9be08ce6d64de153285a4fe 5236 openjdk-25_25~8ea-1.dsc c2013181c6fbd98d7aa2b868ee6dec7ca24f0ebee05f6b074a420b0910866f38 616652 openjdk-25_25~8ea.orig-googletest.tar.xz d2fb5828d3b1987cdde801f5f60ce8dbb164137e569dcf9418c580eff15ca6a0 75399488 openjdk-25_25~8ea.orig.tar.xz 7ec34350220051256541497669d9a3daccdd557cb79f809835248cbda65fcf13 205676 openjdk-25_25~8ea-1.debian.tar.xz"
+    "bf6cbe2847dd809128a9aeb0d3c0b39883169d37bcbf3ebef44fed430d39e2b0 5310 openjdk-25_25~9ea-1.dsc 65165bc0ee3e518916f7374f71c4bce6071090f5c5bcd665fa5aea23cd73131d 616784 openjdk-25_25~9ea.orig-googletest.tar.xz 894559981b29f5af6af6a497bae1bec01526e24441d6d46c9e6b843b5ec76698 73369940 openjdk-25_25~9ea.orig.tar.xz c3848bf1c31346d3b41fcef7a2add645101aa7b067c43bc3d616b9c8e58a6b7f 206020 openjdk-25_25~9ea-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openjdk-25"
   ],
   "Files": [
-    "11a90a3b5b3b60920fcf9eb5dffb1670 5236 openjdk-25_25~8ea-1.dsc edcb7552a0ef4a3f0261203a675ad342 616652 openjdk-25_25~8ea.orig-googletest.tar.xz c64e8e75a43c2c00d67adf9feedbd2ec 75399488 openjdk-25_25~8ea.orig.tar.xz 48d8a8491ce77485bda87542c69cf863 205676 openjdk-25_25~8ea-1.debian.tar.xz"
+    "bca5996f167d8ac8b45756b61b3b7842 5310 openjdk-25_25~9ea-1.dsc b685050366e61b66f7693c8a883c182b 616784 openjdk-25_25~9ea.orig-googletest.tar.xz d38cb2c51c99295ad88ff8310b08e11a 73369940 openjdk-25_25~9ea.orig.tar.xz 30f7ed81dd1e4b3c5bc71b7a90a79d30 206020 openjdk-25_25~9ea-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "openjdk-25"
   ],
   "Package-List": [
-    "openjdk-25-dbg deb debug optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-demo deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-doc deb doc optional arch=all openjdk-25-jdk deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jdk-headless deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jre deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jre-headless deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jre-zero deb java optional arch=amd64,arm64,ppc64,ppc64el,riscv64,s390x openjdk-25-source deb java optional arch=all openjdk-25-testsupport deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32"
+    "openjdk-25-dbg deb debug optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-demo deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-doc deb doc optional arch=all openjdk-25-jdk deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jdk-headless deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jre deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jre-headless deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32 openjdk-25-jre-zero deb java optional arch=amd64,arm64,ppc64,ppc64el,riscv64,s390x openjdk-25-jvmci-jdk deb java optional arch=amd64 openjdk-25-source deb java optional arch=all openjdk-25-testsupport deb java optional arch=alpha,amd64,arc,armel,armhf,arm64,hppa,i386,ia64,loong64,mips,mipsel,mips64,mips64el,powerpc,ppc64,ppc64el,m68k,riscv64,sh4,sparc,sparc64,s390x,x32"
   ],
   "Priority": [
     "optional"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/openjdk-team/openjdk.git"
   ],
   "Version": [
-    "25~8ea-1"
+    "25~9ea-1"
   ]
 }
