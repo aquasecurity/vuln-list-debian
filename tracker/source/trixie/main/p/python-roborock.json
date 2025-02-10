@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-async-timeout \u003c!nocheck\u003e, python3-construct \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-paho-mqtt \u003c!nocheck\u003e, python3-pycryptodome \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-vacuum-map-parser-base \u003c!nocheck\u003e, python3-vacuum-map-parser-roborock \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "26afaad77515a0557a2225e3a4f64dee5515e7892a93d55cbc10b98ca3498b21 2280 python-roborock_2.9.1-1.dsc 62d1ce5c77c5a02eddc542a47125e131f70ef1afb15cbb2b9eeba71c6c23680d 143749 python-roborock_2.9.1.orig.tar.gz cef9182c37cf4fdf9f7dfba6bb7945fdbd988ecad23cf7ad18a6ad05e5b26ab5 2344 python-roborock_2.9.1-1.debian.tar.xz"
+    "bc057b1dc5ff7ff94c9966a065f35b3d5cfcffad1eaaebf9ba466ffe65e9f8c5 2782 python-roborock_2.9.8-1.dsc 0668188cfe1d12c24600a5b1997aec488c397e8f28486f3dcbd335c8e6efca99 149204 python-roborock_2.9.8.orig.tar.gz 3f9f3e45d3ba5272abcd8254eb645242762f88af7d545b97da474d53776d3aea 3484 python-roborock_2.9.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-roborock"
   ],
   "Files": [
-    "06879fb618a850f723aee2548dbcec8c 2280 python-roborock_2.9.1-1.dsc cbfb931eb08cd3080c6eef0f4d23564f 143749 python-roborock_2.9.1.orig.tar.gz d2171b57326cda1197c278c369e63fce 2344 python-roborock_2.9.1-1.debian.tar.xz"
+    "076f8afadfed855d4ae2d6dfaab262f1 2782 python-roborock_2.9.8-1.dsc d187f05276e48dc6dc711549e0ace175 149204 python-roborock_2.9.8.orig.tar.gz 2786933309df283eb1630cc47a4d3f75 3484 python-roborock_2.9.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-aioresponses, python3-all, python3-freezegun, python3-pytest, python3-pytest-asyncio, python3-pytest-timeout"
+  ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-roborock.git"
   ],
   "Version": [
-    "2.9.1-1"
+    "2.9.8-1"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-wayland-server-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-downcast-rs-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-io-lifetimes-2+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.14-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.14-~~) \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev \u003c!nocheck\u003e, librust-wayland-scanner-0.31+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-downcast-rs-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.14-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.14-~~) \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-wayland-scanner-0.31+default-dev (\u003e= 0.31.6-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "00b700ff5d313a849d60cef7e8d814fdd5218582029b9f3e983bf41ed604bbb7 2705 rust-wayland-server_0.31.1-2.dsc 00e6e4d5c285bc24ba4ed2d5a4bd4febd5fd904451f465973225c8e99772fdb7 51990 rust-wayland-server_0.31.1.orig.tar.gz 20ab5ba9fbf2c1a4b4dcd9a21525d8b325ae7d078e29327a7a3952480a797ea6 3364 rust-wayland-server_0.31.1-2.debian.tar.xz"
+    "958b3ca423d972450de85525e9e4fdc64f63ce026d1b8faee29aabedc2e96d9d 2749 rust-wayland-server_0.31.7-1.dsc 97fabd7ed68cff8e7657b8a8a1fbe90cb4a3f0c30d90da4bf179a7a23008a4cb 55413 rust-wayland-server_0.31.7.orig.tar.gz 8ce27af26382fc79b0cd5722ca4e1b72a6278a7cb2b9c715c21f2911ff33e3ee 3380 rust-wayland-server_0.31.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wayland-server"
   ],
   "Files": [
-    "06293adb073798eb63d71b5b7c13fc6a 2705 rust-wayland-server_0.31.1-2.dsc b6f67889088d98612459ee0cc93d965b 51990 rust-wayland-server_0.31.1.orig.tar.gz 0cf03353e22444949ea6a3c068a568ff 3364 rust-wayland-server_0.31.1-2.debian.tar.xz"
+    "76cde7fd67dc45bb9dc24cd6823df9f4 2749 rust-wayland-server_0.31.7-1.dsc b79bdd196dda9d2a61cdfd6132753957 55413 rust-wayland-server_0.31.7.orig.tar.gz bc283146b0499066fe205cda074a596a 3380 rust-wayland-server_0.31.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smithay/wayland-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-server]"
   ],
   "Version": [
-    "0.31.1-2"
+    "0.31.7-1"
   ]
 }

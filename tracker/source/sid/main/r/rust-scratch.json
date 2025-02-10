@@ -6,19 +6,22 @@
     "librust-scratch-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51ec7b7935afff0c21b593dbc288a7bcf54d31341e0b3115de9512daaeb4c057 2189 rust-scratch_1.0.3-1.dsc ddccb15bcce173023b3fedd9436f882a0739b8dfb45e4f6b6002bee5929f61b2 8198 rust-scratch_1.0.3.orig.tar.gz 054ddfc4c73b9e4067991541b10c745314da2545713ec98d3f27980cc237b520 2612 rust-scratch_1.0.3-1.debian.tar.xz"
+    "0edffc7c4c18c8f94d91df8ac58ffad7b1382b046202c7e3de6a7a5315229f4f 2241 rust-scratch_1.0.7-1.dsc a3cf7c11c38cb994f3d40e8a8cde3bbd1f72a435e4c49e85d6553d8312306152 7997 rust-scratch_1.0.7.orig.tar.gz 1dbcc0253668c16df4aa32d93fd82ae0655adc1274598d769d0e9c06869ab974 2672 rust-scratch_1.0.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-scratch"
   ],
   "Files": [
-    "5fe4bc5b9359a2b21dbdfbc2a4a522e4 2189 rust-scratch_1.0.3-1.dsc a661bb863762e9f20761215a7650e6d5 8198 rust-scratch_1.0.3.orig.tar.gz f4481296573afc1ac1f54a64f60fd325 2612 rust-scratch_1.0.3-1.debian.tar.xz"
+    "a9f61adce7eba592b315130997cbf8b2 2241 rust-scratch_1.0.7-1.dsc bb56e53d09b09eb11536cb69734564de 7997 rust-scratch_1.0.7.orig.tar.gz 8ae2d4826e7feb7d8b60a2b8976771ec 2672 rust-scratch_1.0.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/scratch"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-fs2-0.4+default-dev"
+    "dh-cargo, librust-fs2-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/scratch]"
   ],
   "Version": [
-    "1.0.3-1"
+    "1.0.7-1"
   ]
 }
