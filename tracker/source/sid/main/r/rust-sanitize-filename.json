@@ -6,19 +6,22 @@
     "librust-sanitize-filename-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-regex-1+std-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e, librust-regex-1+unicode-case-dev (\u003e= 1.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+std-dev (\u003e= 1.11-~~) \u003c!nocheck\u003e, librust-regex-1+unicode-case-dev (\u003e= 1.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5c923060e1154efdaee660d2af93df42169846ce13d8edc3975f11bcafe7e85c 2394 rust-sanitize-filename_0.5.0-1.dsc 2ed72fbaf78e6f2d41744923916966c4fbe3d7c74e3037a8ee482f1115572603 4043 rust-sanitize-filename_0.5.0.orig.tar.gz 203872dfad7843441c759172fbab8a53e4716c3c4d08c8f4232c738a4ed3adea 2780 rust-sanitize-filename_0.5.0-1.debian.tar.xz"
+    "ba53e2afbe1cb40cc8e5101aa5b35c05d02ee955ddca5511ece2f66cf5319d5c 1797 rust-sanitize-filename_0.6.0-1.dsc bc984f4f9ceb736a7bb755c3e3bd17dc56370af2600c9780dcc48c66453da34d 4819 rust-sanitize-filename_0.6.0.orig.tar.gz 137dc0b9640d5eeb26dedb701ab603772a768eabc17e7cb57b3747e346260cd2 2840 rust-sanitize-filename_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sanitize-filename"
   ],
   "Files": [
-    "e99c000281ba60dbd445cbdc3596d8dc 2394 rust-sanitize-filename_0.5.0-1.dsc 5f4af4c2b6cbe89a999726e65cd83d12 4043 rust-sanitize-filename_0.5.0.orig.tar.gz 45153071cb2b5fcf326220ce323df96e 2780 rust-sanitize-filename_0.5.0-1.debian.tar.xz"
+    "4b4480e22d9f44ca32c83d31667551cb 1797 rust-sanitize-filename_0.6.0-1.dsc 036a448b68ede8fa8f82352671381a4d 4819 rust-sanitize-filename_0.6.0.orig.tar.gz 084e0040d9277987e8d3fd4736485e10 2840 rust-sanitize-filename_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kardeiz/sanitize-filename"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/sanitize-filename"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sanitize-filename]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.6.0-1"
   ]
 }

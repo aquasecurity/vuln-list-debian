@@ -6,16 +6,16 @@
     "librust-ureq-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-brotli-decompressor-4+default-dev \u003c!nocheck\u003e, librust-chunked-transfer-1+default-dev \u003c!nocheck\u003e, librust-cookie-0.18-dev \u003c!nocheck\u003e, librust-cookie-store-0.21+preserve-order-dev \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev \u003c!nocheck\u003e, librust-env-logger-0.11+humantime-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.22) \u003c!nocheck\u003e, librust-http-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-native-tls-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-rustls-0.21+default-dev \u003c!nocheck\u003e, librust-rustls-native-certs-dev (\u003c\u003c 0.8) \u003c!nocheck\u003e, librust-rustls-pemfile-1+default-dev \u003c!nocheck\u003e, librust-rustls-webpki-0.101+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.97) \u003c!nocheck\u003e, librust-socks-0.3+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-rust, librust-base64-0.22+default-dev, librust-brotli-decompressor-4+default-dev, librust-chunked-transfer-1+default-dev, librust-cookie-0.18-dev, librust-cookie-store-0.21+preserve-order-dev, librust-encoding-rs-0.8+default-dev, librust-env-logger-0.11+humantime-dev, librust-flate2-1+default-dev (\u003e= 1.0.22), librust-http-0.2+default-dev, librust-http-1+default-dev, librust-log-0.4+default-dev, librust-native-tls-0.2+default-dev, librust-once-cell-1+default-dev, librust-rustls-0.21+default-dev, librust-rustls-native-certs-dev (\u003c\u003c 0.8), librust-rustls-pemfile-1+default-dev, librust-rustls-webpki-0.101+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev (\u003e= 1.0.97), librust-socks-0.3+default-dev, librust-url-2+default-dev"
   ],
   "Checksums-Sha256": [
-    "445fda7f7a9d744ca070e231a67d5e7dac86ed46b04f4ee46b9e36e2dd7b4d41 3521 rust-ureq_2.12.1-2.dsc d7ccbe5a333c94f40abd498a7fe42fd8a5d656fe484950beed26df0922c3f821 118452 rust-ureq_2.12.1.orig.tar.gz ea1d77d129e34def2576f9972d7971579a5434d50848e13e436c6177f2173c3a 10156 rust-ureq_2.12.1-2.debian.tar.xz"
+    "6d2b2ca32152c7f405e07700a0d3f548ce7b35daec62267ed53502325b06cbef 3394 rust-ureq_2.12.1-3.dsc d7ccbe5a333c94f40abd498a7fe42fd8a5d656fe484950beed26df0922c3f821 118452 rust-ureq_2.12.1.orig.tar.gz 761a7f4e491701b07cc84cb5f3e441667af8d572e66dcfb9f9440f5f09077b56 11692 rust-ureq_2.12.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ureq"
   ],
   "Files": [
-    "0ba2ed59d47832d4afdbca324b7d26ea 3521 rust-ureq_2.12.1-2.dsc eb467119635aa08a369a8ce882ee9c05 118452 rust-ureq_2.12.1.orig.tar.gz 9c5d92a41cc88e17f79e6637176ecae7 10156 rust-ureq_2.12.1-2.debian.tar.xz"
+    "b67da3b28558718bbf8220e269dc7914 3394 rust-ureq_2.12.1-3.dsc eb467119635aa08a369a8ce882ee9c05 118452 rust-ureq_2.12.1.orig.tar.gz 762d40430e8cf820c482f383d61bb48d 11692 rust-ureq_2.12.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-env-logger-0.11+humantime-dev, librust-rustls-0.21+dangerous-configuration-dev, librust-rustls-pemfile-1+default-dev, librust-serde-1+derive-dev, librust-ureq-2+brotli-dev, librust-ureq-2+charset-dev, librust-ureq-2+cookies-dev, librust-ureq-2+default-dev, librust-ureq-2+gzip-dev, librust-ureq-2+http-interop-dev, librust-ureq-2+json-dev, librust-ureq-2+native-certs-dev, librust-ureq-2+native-tls-dev, librust-ureq-2+proxy-from-env-dev, librust-ureq-2+socks-proxy-dev, librust-ureq-2+tls-dev, librust-ureq-2-dev"
+    "ca-certificates, dh-rust, librust-env-logger-0.11+humantime-dev, librust-rustls-0.21+dangerous-configuration-dev, librust-rustls-pemfile-1+default-dev, librust-serde-1+derive-dev, librust-ureq-2+brotli-dev, librust-ureq-2+charset-dev, librust-ureq-2+cookies-dev, librust-ureq-2+default-dev, librust-ureq-2+gzip-dev, librust-ureq-2+http-crate-dev, librust-ureq-2+http-interop-dev, librust-ureq-2+json-dev, librust-ureq-2+native-certs-dev, librust-ureq-2+native-tls-dev, librust-ureq-2+proxy-from-env-dev, librust-ureq-2+socks-proxy-dev, librust-ureq-2+tls-dev, librust-ureq-2-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-ureq"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-ureq.git"
   ],
   "Version": [
-    "2.12.1-2"
+    "2.12.1-3"
   ]
 }

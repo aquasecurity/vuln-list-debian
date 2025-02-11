@@ -6,16 +6,16 @@
     "librust-bitstream-io-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c21e37eccad8eaaef2eeb22565040fb35948c6caeaaa35592cc42c8c1f90386 1618 rust-bitstream-io_2.5.0-1.dsc 3dcde5f311c85b8ca30c2e4198d4326bc342c76541590106f5fa4a50946ea499 37723 rust-bitstream-io_2.5.0.orig.tar.gz 95dde8c8a1e5365988798508d4de6eddba21571292ef4c2bb4c2074969423e3c 2936 rust-bitstream-io_2.5.0-1.debian.tar.xz"
+    "867988e7f8fbd88b6edfec304797c0873ca72d71a7f1fd208a8a1ddb73fd144d 1632 rust-bitstream-io_2.6.0-1.dsc 6099cdc01846bc367c4e7dd630dc5966dccf36b652fae7a74e17b640411a91b2 38256 rust-bitstream-io_2.6.0.orig.tar.gz c8f3dd9d9ff11036deac664915df93642c1df2af7296af3104868cbd44a29647 2948 rust-bitstream-io_2.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bitstream-io"
   ],
   "Files": [
-    "d4a83c5779f87dfb657bfe85385fee6f 1618 rust-bitstream-io_2.5.0-1.dsc 53e90325b5e730d1936f58319d2c9def 37723 rust-bitstream-io_2.5.0.orig.tar.gz 518fbb5cbd3c33e4c236054c81a036c9 2936 rust-bitstream-io_2.5.0-1.debian.tar.xz"
+    "541ed34c070edc616629bb301286d1d8 1632 rust-bitstream-io_2.6.0-1.dsc 1ca8acb45b776dac565601f92662c74d 38256 rust-bitstream-io_2.6.0.orig.tar.gz a9ebcfd30c6b01815087376e8bda4706 2948 rust-bitstream-io_2.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitstream-io]"
   ],
   "Version": [
-    "2.5.0-1"
+    "2.6.0-1"
   ]
 }
