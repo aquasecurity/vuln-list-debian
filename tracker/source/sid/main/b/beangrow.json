@@ -6,10 +6,10 @@
     "python3-beangrow"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, beancount, protobuf-compiler, pybuild-plugin-pyproject, python3, python3-beancount, python3-beanprice, python3-matplotlib, python3-numpy, python3-pandas, python3-protobuf, python3-scipy"
+    "debhelper-compat (= 13), dh-sequence-python3, beancount, protobuf-compiler, pybuild-plugin-pyproject, python3, python3-beancount, python3-beanprice, python3-matplotlib, python3-numpy, python3-pandas, python3-protobuf, python3-pytest \u003c!nocheck\u003e, python3-scipy"
   ],
   "Checksums-Sha256": [
-    "c792739d9cf727c3777b96a644c202cc7b1e4a4afa94a2ec4fb2ce911020137f 3142 beangrow_1.0.0+git20250126-1.dsc d39f924e97260373cd1666bfa35b31b8714d2322a6f932642065117cf3bef1f1 94705 beangrow_1.0.0+git20250126.orig.tar.gz 9e8fcb1f6d78f0c59b650ea4a6f3e47636cc0da4182a6623f6560246d367eb9e 2112 beangrow_1.0.0+git20250126-1.debian.tar.xz"
+    "e7ce649e2ae12224202c0da4bb0d8c446ef12ad8a8b9fc8cfd92ffc8923b26e0 3169 beangrow_1.0.0+git20250207-1.dsc 2228a2b485b9278f15760a0b26fc87472b424ce8b0d176920d80746d6725392f 95415 beangrow_1.0.0+git20250207.orig.tar.gz f00af9ef28046368244792f390fccf4bb0a3c28b22ce86620320b018c595ff65 2148 beangrow_1.0.0+git20250207-1.debian.tar.xz"
   ],
   "Description": [
     "Calculating portfolio returns for Beancount Beangrow contains code which computes investment returns on a variety of assets, as recorded by Beancount, fed directly from a Beancount file. . There are three related scripts: - configure.py: This attempts to automatically infer and generate configuration to compute returns from an existing Beancount ledger. - compute_returns.py: This extracts data for each of the investments defined in the configuration and computes the returns and generates output for each requested returns report. - download_prices.py: The compute_returns.py script outputs a list of missing (or inadequately dated) price directives to properly do its job as a side-product. This script can read that file and fetch those missing dates, which you can insert in your ledger and then rerun compute_returns.py for a more precise calculation."
@@ -18,7 +18,7 @@
     "pool/main/b/beangrow"
   ],
   "Files": [
-    "c234ff0954402910ad5fa37762d2aa23 3142 beangrow_1.0.0+git20250126-1.dsc 18f522b79d62c3ef848479b21d959735 94705 beangrow_1.0.0+git20250126.orig.tar.gz 3d8caf9395b74780131f539c00702e62 2112 beangrow_1.0.0+git20250126-1.debian.tar.xz"
+    "247b99b9448ec85647426b5ee562db2d 3169 beangrow_1.0.0+git20250207-1.dsc 0343906e92fc721c6fb09d22a07bb4bf 95415 beangrow_1.0.0+git20250207.orig.tar.gz 7eb22348a2895e43fb9aa63fd0f94c20 2148 beangrow_1.0.0+git20250207-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/beangrow.git"
   ],
   "Version": [
-    "1.0.0+git20250126-1"
+    "1.0.0+git20250207-1"
   ]
 }
