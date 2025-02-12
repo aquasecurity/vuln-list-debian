@@ -6,19 +6,22 @@
     "librust-ryu-dev, librust-ryu+no-panic-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "01844c36ea7291cee8b7bc85cece4f701f529df3faa55aea533061158b198ba9 2295 rust-ryu_1.0.15-1.dsc 1ad4cc8da4ef723ed60bced201181d83791ad433213d8c24efffda1eec85d741 46906 rust-ryu_1.0.15.orig.tar.gz 919486e10a52ee784a00100d47aba6363d7861d7d83e19b75c42f1665075737e 3332 rust-ryu_1.0.15-1.debian.tar.xz"
+    "ab5f6966d0f385131ffea25d4ff9b47ec5dfdfa69bb3f58d7c0ba34212ff392e 2341 rust-ryu_1.0.19-1.dsc 6ea1a2d0a644769cc99faa24c3ad26b379b786fe7c36fd3c546254801650e6dd 48770 rust-ryu_1.0.19.orig.tar.gz 44a79893719b5525c89408012f3bdffa3338a484f4de1474914880483a88f5b3 3808 rust-ryu_1.0.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ryu"
   ],
   "Files": [
-    "eb1a8e74a5c30dd923a4d33d219e22bf 2295 rust-ryu_1.0.15-1.dsc 254042a2a29ae1d79b96a283c8cc251f 46906 rust-ryu_1.0.15.orig.tar.gz 876209ae42156d61bdce559bf0521a7f 3332 rust-ryu_1.0.15-1.debian.tar.xz"
+    "f74282d7edebc794f59845433f7922b7 2341 rust-ryu_1.0.19-1.dsc 5e82082f200d92871797832f98a81e50 48770 rust-ryu_1.0.19.orig.tar.gz 83fdce297c67c575cda9958ff562c098 3808 rust-ryu_1.0.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/ryu"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-num-cpus-1+default-dev, librust-rand-0.8+default-dev, librust-rand-xorshift-0.3+default-dev"
+    "dh-cargo, librust-num-cpus-1+default-dev, librust-rand-0.8+default-dev, librust-rand-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ryu]"
   ],
   "Version": [
-    "1.0.15-1"
+    "1.0.19-1"
   ]
 }

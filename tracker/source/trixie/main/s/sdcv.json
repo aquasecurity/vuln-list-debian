@@ -6,10 +6,10 @@
     "sdcv"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), gettext, jq, libglib2.0-dev, libreadline-dev, pkgconf, zlib1g-dev"
+    "dh-sequence-zz-debputy, cmake, debhelper-compat (= 13), gettext, jq \u003c!nocheck\u003e, libglib2.0-dev, libreadline-dev, pkgconf, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "847f6aa55b6d6d18c08f8e2de2e08881679e009bf5e87ce550df08ccb15633b0 2063 sdcv_0.5.5-1.dsc f08bb4a5c91060e34fe557ae11a2d4eae5a6000946bf6656e2bd3964a930e06b 67046 sdcv_0.5.5.orig.tar.gz bb10845fde9101f32bf65ef3b2e8479ba20327115ef777d278d2bcce41115f88 4736 sdcv_0.5.5-1.debian.tar.xz"
+    "3e2ade145daf60e3bf495d3f9143057dbe7f8e078d35c247231f96b52b2525a3 2219 sdcv_0.5.5-3.dsc f08bb4a5c91060e34fe557ae11a2d4eae5a6000946bf6656e2bd3964a930e06b 67046 sdcv_0.5.5.orig.tar.gz bfc12e905df1d4a3a73f908ff0fb5ee8e48a8a4187e9b16aee83c6ded894bb5b 4920 sdcv_0.5.5-3.debian.tar.xz"
   ],
   "Description": [
     "StarDict Console Version sdcv is simple text-based utility for work with dictionaries in StarDict's format. . It supports command line interaction as well as interactive mode using readline."
@@ -18,7 +18,7 @@
     "pool/main/s/sdcv"
   ],
   "Files": [
-    "74d6a55ddf60f5dc4633f13e29505e36 2063 sdcv_0.5.5-1.dsc e76b8226144bbb2a6eb8f225bbddac0d 67046 sdcv_0.5.5.orig.tar.gz d42dc82d00e982484c3cb1efc19bf8e1 4736 sdcv_0.5.5-1.debian.tar.xz"
+    "f40a40b4d20bc2764d960406bc1282e7 2219 sdcv_0.5.5-3.dsc e76b8226144bbb2a6eb8f225bbddac0d 67046 sdcv_0.5.5.orig.tar.gz c72f81f5f9556924bb6483d30ebf0125 4920 sdcv_0.5.5-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "http://dushistov.github.io/sdcv/"
   ],
   "Maintainer": [
-    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
+    "Andrey Rakhmatullin \u003cwrar@debian.org\u003e"
   ],
   "Package": [
     "sdcv"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, cmake, jq, libglib2.0-dev, libreadline-dev, pkgconf, zlib1g-dev"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/sdcv"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/sdcv.git"
   ],
   "Version": [
-    "0.5.5-1"
+    "0.5.5-3"
   ]
 }
