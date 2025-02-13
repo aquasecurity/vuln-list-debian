@@ -6,19 +6,22 @@
     "librust-zbus-names-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-zvariant-4+enumflags2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.200-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.200-~~) \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-winnow-0.6+default-dev \u003c!nocheck\u003e, librust-zvariant-5+enumflags2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f2a38d3668e0367ba0a5a5c91ad1d0fd6bc87f5d0b8ba155e025f075c6a8dc18 1764 rust-zbus-names_3.0.0-3.dsc 4b9b1fef7d021261cc16cba64c351d291b715febe0fa10dc3a443ac5a5022e6c 10650 rust-zbus-names_3.0.0.orig.tar.gz 58c21cbe4961becfd3cafab9435b1032e61ef55054cf1a08639ae522a3e40677 2828 rust-zbus-names_3.0.0-3.debian.tar.xz"
+    "fed71b1badfe02a9feca726754f6c77083f177dabe0c69c1d3f7f79d7646440c 2506 rust-zbus-names_4.1.1-2.dsc 519629a3f80976d89c575895b05677cbc45eaf9f70d62a364d819ba646409cc8 16955 rust-zbus-names_4.1.1.orig.tar.gz 82f7cb1dac410f3ccfb635ba02831fa4686e7c323a349567694b4050cafcade6 3000 rust-zbus-names_4.1.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zbus-names"
   ],
   "Files": [
-    "3e7c8c868ab311da75e79b78bad0f845 1764 rust-zbus-names_3.0.0-3.dsc 9804ba2a6ac5353c7a651d09ad899374 10650 rust-zbus-names_3.0.0.orig.tar.gz 0c7c0c552fd1f3db41f58baa0713a038 2828 rust-zbus-names_3.0.0-3.debian.tar.xz"
+    "b24d23cc23d7363b0000765564e5435f 2506 rust-zbus-names_4.1.1-2.dsc 6641274a662e650f20bb64f7e795be21 16955 rust-zbus-names_4.1.1.orig.tar.gz cc4bdf1475f389e0dac4fdc7f85c0c95 3000 rust-zbus-names_4.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dbus2/zbus/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zbus-names]"
   ],
   "Version": [
-    "3.0.0-3"
+    "4.1.1-2"
   ]
 }
