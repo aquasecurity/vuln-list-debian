@@ -6,19 +6,22 @@
     "librust-wayland-protocols-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev \u003c!nocheck\u003e, librust-wayland-scanner-0.31+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-wayland-backend-0.3+default-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, librust-wayland-scanner-0.31+default-dev (\u003e= 0.31.6-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "93944aa203d3dc55c8fdfe02ab6f227107356e10d7710509f811693625292cf3 2521 rust-wayland-protocols_0.31.2-1.dsc 8f81f365b8b4a97f422ac0e8737c438024b5951734506b0e1d775c73030561f4 147062 rust-wayland-protocols_0.31.2.orig.tar.gz f52862641a530bc2ef758dc1c8822177c881f0090d69108983186e1440a9ffec 4668 rust-wayland-protocols_0.31.2-1.debian.tar.xz"
+    "68b2e5a7d5060af3e0d6907b3d0cc2448226937c0c079bdc8f617a2c4ca92194 2612 rust-wayland-protocols_0.32.6-1.dsc 0781cf46869b37e36928f7b432273c0995aa8aed9552c556fb18754420541efc 187909 rust-wayland-protocols_0.32.6.orig.tar.gz 1de716f2564edde2822db65ce670fd3539d237c00b380522b9c15afe6858b94b 5088 rust-wayland-protocols_0.32.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wayland-protocols"
   ],
   "Files": [
-    "c17bb03b3be0f05f091d6e15bf13b982 2521 rust-wayland-protocols_0.31.2-1.dsc 4c9b7fd62dd6099a9a0e583bbdfea1cf 147062 rust-wayland-protocols_0.31.2.orig.tar.gz 4f02e71cd0885170343c8b2a5e0bb35c 4668 rust-wayland-protocols_0.31.2-1.debian.tar.xz"
+    "edac193aedc93fd19a47fc5f3d7c3ec2 2612 rust-wayland-protocols_0.32.6-1.dsc 869f0ccf587b8faa8c3de6d918586b9f 187909 rust-wayland-protocols_0.32.6.orig.tar.gz 505f1af81d792079df7c4e3d964477d7 5088 rust-wayland-protocols_0.32.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smithay/wayland-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-protocols]"
   ],
   "Version": [
-    "0.31.2-1"
+    "0.32.6-1"
   ]
 }
