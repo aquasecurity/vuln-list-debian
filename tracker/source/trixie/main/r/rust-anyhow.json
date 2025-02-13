@@ -6,19 +6,22 @@
     "librust-anyhow-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.39) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.39) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ee4dd7d1a7b955aee6831f44a624d9542c161797b6e6e79dfb4459b00e5cf125 1719 rust-anyhow_1.0.86-1.dsc b3d1d046238990b9cf5bcde22a3fb3584ee5cf65fb2765f454ed428c7a0063da 46741 rust-anyhow_1.0.86.orig.tar.gz 32d77cadaceaaa7b5c828d4fab6b34d23b8448f73f53ecc9b3340c327532bfa1 3468 rust-anyhow_1.0.86-1.debian.tar.xz"
+    "759b1929aa692d8a5f433a9ef03a5034695ee7016f895c96a6006f01268b8e45 1777 rust-anyhow_1.0.95-1.dsc 34ac096ce696dc2fcabef30516bb13c0a68a11d30131d3df6f04711467681b04 52155 rust-anyhow_1.0.95.orig.tar.gz bcdc9c5144c95c22c7e098ca29e8227fe36a273701d531e19498aa334135d9b9 3452 rust-anyhow_1.0.95-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-anyhow"
   ],
   "Files": [
-    "ec560b7704047299e00e6f4ab29c7bce 1719 rust-anyhow_1.0.86-1.dsc 19bd0fc50aacf1d2af60bd5908442db6 46741 rust-anyhow_1.0.86.orig.tar.gz 15b114f3ea316f9926a329ba460e3d72 3468 rust-anyhow_1.0.86-1.debian.tar.xz"
+    "b247d12719eb2d4adcb4c4938ffba9c0 1777 rust-anyhow_1.0.95-1.dsc cdb79bf66833d3cfa9fd022e47910c93 52155 rust-anyhow_1.0.95.orig.tar.gz 3470ec0330953c8af20edb97818ae36e 3452 rust-anyhow_1.0.95-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/anyhow"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3-dev, librust-rustversion-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-thiserror-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-futures-0.3-dev, librust-rustversion-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-thiserror-2+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/anyhow]"
   ],
   "Version": [
-    "1.0.86-1"
+    "1.0.95-1"
   ]
 }
