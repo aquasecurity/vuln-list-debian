@@ -6,16 +6,16 @@
     "librust-dashmap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-hashbrown-0.14-dev \u003c!nocheck\u003e, librust-lock-api-0.4+default-dev (\u003e= 0.4.10-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-parking-lot-core-0.9+default-dev (\u003e= 0.9.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+default-dev \u003c!nocheck\u003e, librust-hashbrown-0.14+raw-dev \u003c!nocheck\u003e, librust-lock-api-0.4+default-dev (\u003e= 0.4.10-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-parking-lot-core-0.9+default-dev (\u003e= 0.9.8-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4989b0d68d7962da43001ca4c048becaf9fc32ac2fdc8f227e9ee638d9009904 2444 rust-dashmap_5.5.3-2.dsc 978747c1d849a7d2ee5e8adc0159961c48fb7e5db2f06af6723b80123bb53856 24061 rust-dashmap_5.5.3.orig.tar.gz 2c5232e1a88f9e23c06395ec227abb3eb7b94c1b38bbe6aebdda77f6f92e4f39 2992 rust-dashmap_5.5.3-2.debian.tar.xz"
+    "c6448f0c6063f47bec2152de98a47e6e14bef05cafc016c6b20b02e4542b58aa 2514 rust-dashmap_6.1.0-1.dsc 5041cc499144891f3790297212f32a74fb938e5136a14943f338ef9e0ae276cf 24828 rust-dashmap_6.1.0.orig.tar.gz daa1b7756fe168679d3970f9648632f601df98f148e739fc66584498798ce16d 3256 rust-dashmap_6.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dashmap"
   ],
   "Files": [
-    "164fe8e282378c29c49926a1052fc73a 2444 rust-dashmap_5.5.3-2.dsc 7bb48920721b07af916c63b6c594012f 24061 rust-dashmap_5.5.3.orig.tar.gz 466fd50714f762d786577fca07955179 2992 rust-dashmap_5.5.3-2.debian.tar.xz"
+    "404f4aa4eb872b0f7393541852258fef 2514 rust-dashmap_6.1.0-1.dsc 87b6473f5edcf8d9ac8acd81f0b32dee 24828 rust-dashmap_6.1.0.orig.tar.gz 0ae57f2b42970c1794eea991cbb665a2 3256 rust-dashmap_6.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cn@sail.ng\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dashmap]"
   ],
   "Version": [
-    "5.5.3-2"
+    "6.1.0-1"
   ]
 }
