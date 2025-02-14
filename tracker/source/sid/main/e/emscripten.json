@@ -6,19 +6,19 @@
     "emscripten, emscripten-doc"
   ],
   "Build-Depends": [
-    "binaryen \u003c!nocheck\u003e, clang-18 \u003c!nocheck\u003e, cmake \u003c!nocheck\u003e, cmark-gfm \u003c!nodoc\u003e, debhelper-compat (= 13), dh-sequence-python3, eslint \u003c!nocheck\u003e, fonts-liberation \u003c!nocheck\u003e, help2man, htmlmin \u003c!nocheck\u003e, jq, libjs-source-map, libsimde-dev, lld-18 \u003c!nocheck\u003e, llvm-18 \u003c!nocheck\u003e, node-acorn \u003c!nocheck\u003e, node-source-map \u003c!nocheck\u003e, nodejs (\u003e= 12.16) \u003c!nocheck\u003e, python3, python3-numpy \u003c!nocheck\u003e, python3-ply \u003c!nocheck\u003e, scons \u003c!nocheck\u003e, wabt (\u003e= 1.0.24-2~) \u003c!nocheck\u003e"
+    "binaryen (\u003e= 120~) \u003c!nocheck\u003e, ccache, clang-19 \u003c!nocheck\u003e, cmake \u003c!nocheck\u003e, cmark-gfm \u003c!nodoc\u003e, debhelper-compat (= 13), dh-sequence-python3, esbuild \u003c!nocheck\u003e, fonts-liberation \u003c!nocheck\u003e, help2man, htmlmin \u003c!nocheck\u003e, jq, libjs-source-map, libsimde-dev, lld-19 \u003c!nocheck\u003e, llvm-19 \u003c!nocheck\u003e, node-acorn \u003c!nocheck\u003e, node-source-map \u003c!nocheck\u003e, nodejs (\u003e= 12.16) \u003c!nocheck\u003e, dh-nodejs \u003c!nocheck\u003e, python3, python3-numpy \u003c!nocheck\u003e, python3-ply \u003c!nocheck\u003e, scons \u003c!nocheck\u003e, wabt (\u003e= 1.0.24-2~) \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "d72a37ea050e7f417416b6ecfe54247d8c7bd30269bc9681ef3c14d9b99b3b54 2199 emscripten_3.1.66~dfsg-2.dsc 124c22ee291c12bab9041aa36b72f350ddc6c9f44c0b2b79c631acb9b4113759 5480 emscripten_3.1.66~dfsg.orig-Xtypes.tar.xz bc13eba02929fd4410e6b55aeb16d7b1fb6145305aedb2b83cd823d348354d2e 19176192 emscripten_3.1.66~dfsg.orig.tar.xz 216e4330d3b3370010f62797606eb734dcc30512d3d9d3b64f4cf39ea68e0415 82612 emscripten_3.1.66~dfsg-2.debian.tar.xz"
+    "e624fe6b68032bcaa47a73e4f9aad3de3348b73ed1d2b288afc4e7b6fd10269c 3017 emscripten_3.1.69+dfsg-1.dsc 274d9ff5686f7e28fd00873fe04202f07fb8f5c950c978842f9e43c35d9baf03 5504 emscripten_3.1.69+dfsg.orig-Xtypes.tar.xz 394804c47d38ca3f1fa37b0b12beba60c2b03e6d7d3140a4e658b6dc6fee4481 19363704 emscripten_3.1.69+dfsg.orig.tar.xz d1d6e09c27b4cf715f238213c20b07a222a09ee3a9f6e3cf4af3bdbd385ab277 83532 emscripten_3.1.69+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/emscripten"
   ],
   "Files": [
-    "a5409aee1030255c6dec1fa3a9006b46 2199 emscripten_3.1.66~dfsg-2.dsc 784e5604eb7d102555fdc8a8f8b6241e 5480 emscripten_3.1.66~dfsg.orig-Xtypes.tar.xz 8ec310d8b06140f601d5fd6a3a8d4c59 19176192 emscripten_3.1.66~dfsg.orig.tar.xz bb83b246b278ad91b309cec05907466d 82612 emscripten_3.1.66~dfsg-2.debian.tar.xz"
+    "53ca5d88c817e9b811215089d55c67af 3017 emscripten_3.1.69+dfsg-1.dsc 0bd105977cbfdf748cde9df40c63d408 5504 emscripten_3.1.69+dfsg.orig-Xtypes.tar.xz 50e8e18bb13e220109be79282df84eb6 19363704 emscripten_3.1.69+dfsg.orig.tar.xz 7876e0c9c2946b109c12dd7bc8426f93 83532 emscripten_3.1.69+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "http://emscripten.org/"
   ],
   "Maintainer": [
-    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
+    "Debian Javascript Maintainers \u003cpkg-javascript-devel@alioth-lists.debian.net\u003e"
   ],
   "Package": [
     "emscripten"
@@ -42,13 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "eslint"
+    "dh-nodejs, esbuild"
+  ],
+  "Uploaders": [
+    "Jérémy Lal \u003ckapouer@melix.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/emscripten"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian/emscripten.git"
   ],
   "Version": [
-    "3.1.66~dfsg-2"
+    "3.1.69+dfsg-1"
   ]
 }
