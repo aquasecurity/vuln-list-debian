@@ -6,19 +6,22 @@
     "librust-yaxpeax-x86-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-derive-1+default-dev \u003c!nocheck\u003e, librust-yaxpeax-arch-0.2+colors-dev (\u003e= 0.2.7-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.2+std-dev (\u003e= 0.2.7-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.2+use-serde-dev (\u003e= 0.2.7-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.2-dev (\u003e= 0.2.7-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-derive-1+default-dev \u003c!nocheck\u003e, librust-yaxpeax-arch-0.3+alloc-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.3+colors-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.3+std-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.3+use-serde-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-yaxpeax-arch-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9913a556aec8d2cf39e67a33b8ca6095e3cba404f6baec41e10eac6ce008f3e2 2592 rust-yaxpeax-x86_1.2.2-1.dsc 9107477944697db42c41326f82d4c65b769b32512cdad1e086f36f0e0f25ff45 640348 rust-yaxpeax-x86_1.2.2.orig.tar.gz 478c04ab9af80a6bc716009f9eea108f712fdb9782a83a9a2da3d575cf899995 2672 rust-yaxpeax-x86_1.2.2-1.debian.tar.xz"
+    "4fd3687ecf8829d5e603e455e5bdca2151ccbc1842dd102ced679d2a1227e798 2759 rust-yaxpeax-x86_2.0.0-1.dsc 9a9a30b7dd533c7b1a73eaf7c4ea162a7a632a2bb29b9fff47d8f2cc8513a883 648564 rust-yaxpeax-x86_2.0.0.orig.tar.gz 1a3dd0937596ebda439220608d7479e155aaa7b70c7117496b55faf5c5cd1d01 3828 rust-yaxpeax-x86_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-yaxpeax-x86"
   ],
   "Files": [
-    "9404f7bb02da80d4696be0c69b8754f4 2592 rust-yaxpeax-x86_1.2.2-1.dsc 354afe68028424b38cfc1008bf43750b 640348 rust-yaxpeax-x86_1.2.2.orig.tar.gz ee7c0b8ee228e8de641744eb41d22bc1 2672 rust-yaxpeax-x86_1.2.2-1.debian.tar.xz"
+    "37ba41506f3f26f14e0ee040d23c875c 2759 rust-yaxpeax-x86_2.0.0-1.dsc 1eb660a98d218ac741f9a2cbd5155c26 648564 rust-yaxpeax-x86_2.0.0.orig.tar.gz ed374e9a6d37985c71e7563a0a153c5a 3828 rust-yaxpeax-x86_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "http://git.iximeow.net/yaxpeax-x86/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, libcapstone-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/yaxpeax-x86]"
   ],
   "Version": [
-    "1.2.2-1"
+    "2.0.0-1"
   ]
 }
