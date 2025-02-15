@@ -6,19 +6,22 @@
     "librust-gix-chunk-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.34-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fddf09d9a3115b45a805339afbd04643968f112e68f3cfdccf6e3ca3e591917d 2230 rust-gix-chunk_0.4.8-1.dsc 45c8751169961ba7640b513c3b24af61aa962c967aaf04116734975cd5af0c52 9358 rust-gix-chunk_0.4.8.orig.tar.gz 8bd787ab5069a063f75952c01a92a26541ed5b334cf0119db6cf1c02d8d65528 2752 rust-gix-chunk_0.4.8-1.debian.tar.xz"
+    "f3de9c8b5a3201d24c5b8746a0460d11b31e5ab4465064aa026f6f518a991db4 2306 rust-gix-chunk_0.4.10-1.dsc c6ffbeb3a5c0b8b84c3fe4133a6f8c82fa962f4caefe8d0762eced025d3eb4f7 10131 rust-gix-chunk_0.4.10.orig.tar.gz b18049d1f2c045351743c321ca5c683c6a9d189a556ab9e9c3bde5427119c193 2824 rust-gix-chunk_0.4.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-chunk"
   ],
   "Files": [
-    "727723eef943ea63a8f2d5a31aa7afab 2230 rust-gix-chunk_0.4.8-1.dsc 0f5f5b1f9ebc3d31770c7ae2e33d409c 9358 rust-gix-chunk_0.4.8.orig.tar.gz 73162d033d4efa8961ca4ea55422969d 2752 rust-gix-chunk_0.4.8-1.debian.tar.xz"
+    "4d2a765f20d62b0ff97ed419ebadab0a 2306 rust-gix-chunk_0.4.10-1.dsc 34392477e15b026b7ef1b91b4f2a2d95 10131 rust-gix-chunk_0.4.10.orig.tar.gz da8b1c22d3e19d6f3f194bc7db5870fb 2824 rust-gix-chunk_0.4.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/GitoxideLabs/gitoxide"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-chunk]"
   ],
   "Version": [
-    "0.4.8-1"
+    "0.4.10-1"
   ]
 }

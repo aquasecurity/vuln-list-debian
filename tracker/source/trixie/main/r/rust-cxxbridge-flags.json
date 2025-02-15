@@ -6,19 +6,22 @@
     "librust-cxxbridge-flags-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1bee38b184d34168c25ba6536a8b1dec906871fa57e4293fecd1f33228a826e3 2255 rust-cxxbridge-flags_1.0.87-1.dsc 43c7119ce3a3701ed81aca8410b9acf6fc399d2629d057b87e2efa4e63a3aaea 5251 rust-cxxbridge-flags_1.0.87.orig.tar.gz 885ccf06081986eda853b7540def5b5ffaa377963b7ad5496d434700ef37f186 2916 rust-cxxbridge-flags_1.0.87-1.debian.tar.xz"
+    "3cf0208bf1b90b7d3b6b974db9cff692d24482d0dcf4bad8dbb54b59efb439c6 2311 rust-cxxbridge-flags_1.0.130-1.dsc aa7ed7d30b289e2592cc55bc2ccd89803a63c913e008e6eb59f06cddf45bb52f 5315 rust-cxxbridge-flags_1.0.130.orig.tar.gz 10e7ab81ef8e2ce233226fa9b6a3abf6c72e2a5f5fe68509a8e188d0d2183915 2964 rust-cxxbridge-flags_1.0.130-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cxxbridge-flags"
   ],
   "Files": [
-    "5a0c2d58f3c5c4d9cb5a56a11d006e65 2255 rust-cxxbridge-flags_1.0.87-1.dsc c6995a95a254e134f6325bba126c9560 5251 rust-cxxbridge-flags_1.0.87.orig.tar.gz c4d9150bf72b91a47f3a9b317544e7d9 2916 rust-cxxbridge-flags_1.0.87-1.debian.tar.xz"
+    "93965476a940a9990865adc70bcb1a80 2311 rust-cxxbridge-flags_1.0.130-1.dsc a8bef500053e1a45e7a78d785e7472fc 5315 rust-cxxbridge-flags_1.0.130.orig.tar.gz 2f96ba1cde5913f73ac4609aa28a510f 2964 rust-cxxbridge-flags_1.0.130-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/cxx"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cxxbridge-flags]"
   ],
   "Version": [
-    "1.0.87-1"
+    "1.0.130-1"
   ]
 }

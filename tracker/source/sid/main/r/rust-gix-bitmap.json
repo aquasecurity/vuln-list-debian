@@ -6,19 +6,22 @@
     "librust-gix-bitmap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.38-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d0f32eb943565e0c63a8f88a8a82cb3c30c1fec0526533023d87bba16d79eab5 2264 rust-gix-bitmap_0.2.11-1.dsc a371db66cbd4e13f0ed9dc4c0fea712d7276805fccc877f77e96374d317e87ae 6920 rust-gix-bitmap_0.2.11.orig.tar.gz e7b500edef3523c89e482ad537474fa099ae0e56cb08ab5e4d8f75ffbd1f058b 2648 rust-gix-bitmap_0.2.11-1.debian.tar.xz"
+    "b655d110a4725a1f111a60e13c1712d9e3dfcb8a040e7e22ed909c9be245abd7 2314 rust-gix-bitmap_0.2.13-1.dsc d48b897b4bbc881aea994b4a5bbb340a04979d7be9089791304e04a9fbc66b53 7689 rust-gix-bitmap_0.2.13.orig.tar.gz ed4b2558cee9d683a264225f17e1acca5810f77eff0fd52ae6cbce320c91e4ac 2680 rust-gix-bitmap_0.2.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-bitmap"
   ],
   "Files": [
-    "874aada0a8ed83d64c444ae95b1bd946 2264 rust-gix-bitmap_0.2.11-1.dsc 101226d32a04adc0a4232050dbf85056 6920 rust-gix-bitmap_0.2.11.orig.tar.gz a6ca8c4ae7e74371c87bf8e2371be8f9 2648 rust-gix-bitmap_0.2.11-1.debian.tar.xz"
+    "fa0b3b9a571c92a0c085874c5dd3572b 2314 rust-gix-bitmap_0.2.13-1.dsc bbd104490d9f5c553bad83e0ccfd3d43 7689 rust-gix-bitmap_0.2.13.orig.tar.gz 88068b0b548d68538657a51e37e9f758 2680 rust-gix-bitmap_0.2.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/GitoxideLabs/gitoxide"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-bitmap]"
   ],
   "Version": [
-    "0.2.11-1"
+    "0.2.13-1"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-gix-utils-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-unicode-normalization-0.1-dev (\u003e= 0.1.19-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-unicode-normalization-0.1-dev (\u003e= 0.1.19-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9a9c5845b25462286e6a5b68dd26d282c3c8ad3a87bcecde15fdaa6b1cd2bd23 2298 rust-gix-utils_0.1.12-3.dsc 35192df7fd0fa112263bad8021e2df7167df4cc2a6e6d15892e1e55621d3d4dc 9418 rust-gix-utils_0.1.12.orig.tar.gz 175a25c2c52a338db0eea46eb5222d453e0ab7abd37733a4e109a209bf4adf43 2928 rust-gix-utils_0.1.12-3.debian.tar.xz"
+    "675f1aa7f95f3c3f77f9b180f9094e5f8a6cdcd283e0fabda9c590d4a2c95158 2382 rust-gix-utils_0.1.13-1.dsc ba427e3e9599508ed98a6ddf8ed05493db114564e338e41f6a996d2e4790335f 10194 rust-gix-utils_0.1.13.orig.tar.gz 2129bb484d269d00c679369f72c36ddc6fa4128d0e7436164c1ba5dfed745cd2 2996 rust-gix-utils_0.1.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-utils"
   ],
   "Files": [
-    "7a7597885cb1b0a23d71548691b129c6 2298 rust-gix-utils_0.1.12-3.dsc 102dd5ccf7f0e35f281febc864643590 9418 rust-gix-utils_0.1.12.orig.tar.gz 6275427e251e683a1b5ee9becfd6d605 2928 rust-gix-utils_0.1.12-3.debian.tar.xz"
+    "6aefa06c4b97a8dbef4dc68f9df94079 2382 rust-gix-utils_0.1.13-1.dsc 8041edbe7d41846082ff6f13182dcf97 10194 rust-gix-utils_0.1.13.orig.tar.gz 259b3c0971bfca12a8057c1199f0e61c 2996 rust-gix-utils_0.1.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/GitoxideLabs/gitoxide"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-utils]"
   ],
   "Version": [
-    "0.1.12-3"
+    "0.1.13-1"
   ]
 }

@@ -6,16 +6,16 @@
     "python3-pyvirtualdisplay"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-python, python3-all, python3-easyprocess, python3-setuptools"
+    "debhelper-compat (= 12), dh-python, python3-all, python3-easyprocess, python3-pil \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, vncdotool \u003c!nocheck\u003e, x11-utils \u003c!nocheck\u003e, xserver-xephyr \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f9b0aed3d334125c4d08e802a30471b6168a91e9f815f4804dd09a26746dc2a5 2028 pyvirtualdisplay_2.2-2.dsc 673268bc387fc08cd1889df4f38de3e1afa3ca1905266781896377112d026cad 36848 pyvirtualdisplay_2.2.orig.tar.xz f2f211d7268be0dac1d50a789c63c6ff148e10353c8098544067ca4cc0e5483c 2504 pyvirtualdisplay_2.2-2.debian.tar.xz"
+    "ab75d393eaa1f7629dd437cb196f9b348b9a612f9fe5440f7d72a737910573bd 2292 pyvirtualdisplay_3.0-1.dsc eb0072e7d2b35910689cb4f8702693c54cf1fd6d180337533e2525871b873593 41134 pyvirtualdisplay_3.0.orig.tar.gz a152c15d121fccbb3513ecf47e2a516ea29b6d9692a658cecfff15ef7a3259de 2744 pyvirtualdisplay_3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyvirtualdisplay"
   ],
   "Files": [
-    "eb98fecaa69d137399ba467e154671bb 2028 pyvirtualdisplay_2.2-2.dsc 36dab274e64609a1503a5c4930993771 36848 pyvirtualdisplay_2.2.orig.tar.xz de517e6f108386d04f1227edf0e6ec9d 2504 pyvirtualdisplay_2.2-2.debian.tar.xz"
+    "59d224410440c1b80387b384f3404b0b 2292 pyvirtualdisplay_3.0-1.dsc 33e2a2803cb60d396ee64e5c9f86cc77 41134 pyvirtualdisplay_3.0.orig.tar.gz 48565a27388baccb9573fd196667b958 2744 pyvirtualdisplay_3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Scott Talbert \u003cswt@techie.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pyvirtualdisplay"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/pyvirtualdisplay.git"
   ],
   "Version": [
-    "2.2-2"
+    "3.0-1"
   ]
 }
