@@ -6,16 +6,16 @@
     "librust-rustls-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust, librust-asn1-dev (\u003c\u003c 0.21), librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-brotli-dev (\u003c\u003c 8), librust-brotli-decompressor-4+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-env-logger-0.11+default-dev, librust-hashbrown-0.14+ahash-dev, librust-hashbrown-0.14+inline-more-dev, librust-hex-0.4+default-dev, librust-log-0.4+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-once-cell-1+alloc-dev, librust-once-cell-1+race-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-ring-0.17+default-dev, librust-rustls-pki-types-1+alloc-dev, librust-rustls-pki-types-1+default-dev, librust-rustls-native-certs-dev (\u003c\u003c 0.9), librust-rustls-webpki-0.102+alloc-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-subtle-2-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev, librust-zeroize-1+default-dev"
+    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-rust, librust-asn1-dev (\u003c\u003c 0.21), librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-brotli-dev (\u003c\u003c 8), librust-brotli-decompressor-4+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-env-logger-0.11+default-dev, librust-hashbrown-0.14+ahash-dev, librust-hashbrown-0.14+inline-more-dev, librust-hex-0.4+default-dev, librust-log-0.4+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-once-cell-1+alloc-dev, librust-once-cell-1+race-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-ring-0.17+default-dev, librust-rustls-pki-types-1+alloc-dev, librust-rustls-pki-types-1+default-dev, librust-rustls-native-certs-0.6+default-dev, librust-rustls-webpki-0.102+alloc-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-subtle-2-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev, librust-zeroize-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "407c8b6516094afd9624e945cfb317746a8dd76b3884c22bc4a354770d3f2f5a 4062 rust-rustls_0.23.20+ds-5.dsc d006e58707a0ef6acd63a08d79022204d2d9af2e9b26f9508c62d675d0444180 2209024 rust-rustls_0.23.20+ds.orig.tar.xz 594b3333d94c67379019fba9c641fb7db25cc662f2da7cad33cd5df40b82d164 24484 rust-rustls_0.23.20+ds-5.debian.tar.xz"
+    "fc357a583f645c28c225568dd6da106ed765e162b6dfa94aa675d5e3556d1dfa 4122 rust-rustls_0.23.20+ds-7.dsc d006e58707a0ef6acd63a08d79022204d2d9af2e9b26f9508c62d675d0444180 2209024 rust-rustls_0.23.20+ds.orig.tar.xz 6da6d54f9345bb5b931bf2b6faae0a7c81913f1447f361178c0dc7d0bda8fb97 25544 rust-rustls_0.23.20+ds-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustls"
   ],
   "Files": [
-    "ecb1aed4c6c699a2eee283114c541859 4062 rust-rustls_0.23.20+ds-5.dsc 3395759f7d75d5646e8fb001a19775a2 2209024 rust-rustls_0.23.20+ds.orig.tar.xz 62e795ac95ce27b47c10a14140be0a86 24484 rust-rustls_0.23.20+ds-5.debian.tar.xz"
+    "787fa316d5a1f12da47fc86f79a97327 4122 rust-rustls_0.23.20+ds-7.dsc 3395759f7d75d5646e8fb001a19775a2 2209024 rust-rustls_0.23.20+ds.orig.tar.xz 647b2e4df1aea2f9c9a839be01f7fc5d 25544 rust-rustls_0.23.20+ds-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-asn1-dev, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-bencher-0.1+default-dev, librust-env-logger-0.11+default-dev, librust-hex-0.4+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-rustls-0.23+brotli-dev, librust-rustls-0.23+custom-provider-dev, librust-rustls-0.23+hashbrown-dev, librust-rustls-0.23+logging-dev, librust-rustls-0.23+ring-dev, librust-rustls-0.23+std-dev, librust-rustls-0.23+tls12-dev, librust-rustls-0.23-dev, librust-rustls-native-certs-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev"
+    "ca-certificates, dh-rust, librust-asn1-dev, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-bencher-0.1+default-dev, librust-env-logger-0.11+default-dev, librust-hex-0.4+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-rustls-0.23+brotli-dev, librust-rustls-0.23+custom-provider-dev, librust-rustls-0.23+hashbrown-dev, librust-rustls-0.23+logging-dev, librust-rustls-0.23+ring-dev, librust-rustls-0.23+std-dev, librust-rustls-0.23+tls12-dev, librust-rustls-0.23-dev, librust-rustls-native-certs-0.6+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-rustls"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-rustls.git"
   ],
   "Version": [
-    "0.23.20+ds-5"
+    "0.23.20+ds-7"
   ]
 }
