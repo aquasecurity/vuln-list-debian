@@ -6,19 +6,22 @@
     "librust-toml-edit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indexmap+default-dev (\u003e= 1.9.1-~~) \u003c!nocheck\u003e, librust-indexmap+std-dev (\u003e= 1.9.1-~~) \u003c!nocheck\u003e, librust-toml-datetime-0.6+default-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-winnow-0.6+default-dev (\u003e= 0.6.18-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e, librust-indexmap-2+std-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e, librust-toml-datetime-0.6+default-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-winnow-0.6+default-dev (\u003e= 0.6.18-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2f5d430aac6048498bd7548b14ec34b29d42746b5381c94c42ec8436bedfc7d2 2554 rust-toml-edit_0.22.20-1.dsc 583c44c02ad26b0c3f3066fe629275e50627026c51ac2e595cca4c230ce1ce1d 106726 rust-toml-edit_0.22.20.orig.tar.gz 26475246b5792a58b5bf10a9e6665c47b2a6304c81b7e7236aa5d0327af9b7e3 4572 rust-toml-edit_0.22.20-1.debian.tar.xz"
+    "1aa7a75e2e801b539cdd84dfde96f56ecad84b3e74e2c2c72bf081fd6cb1d59f 2676 rust-toml-edit_0.22.22-1.dsc 4ae48d6208a266e853d946088ed816055e556cc6028c5e8e2b84d9fa5dd7c7f5 106387 rust-toml-edit_0.22.22.orig.tar.gz 5607be936b41666a61766406846d36fba78bbb7941757e13f8b84cbc59569acc 4504 rust-toml-edit_0.22.22-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-toml-edit"
   ],
   "Files": [
-    "6c532fbaf7031c957b54eb9b465f6c73 2554 rust-toml-edit_0.22.20-1.dsc a709158ea763bd3ec7f7e26ab8c9c82f 106726 rust-toml-edit_0.22.20.orig.tar.gz 4d99373e4c6c83a14da0be320a14901c 4572 rust-toml-edit_0.22.20-1.debian.tar.xz"
+    "7a32837b7dd52649b49c3d4ef501c1a5 2676 rust-toml-edit_0.22.22-1.dsc 969d3409280334473b7ea971b8efc809 106387 rust-toml-edit_0.22.22.orig.tar.gz f8c3dd829c1f5f7c497f3cb587041c24 4504 rust-toml-edit_0.22.22-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/toml-rs/toml"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-libtest-mimic-0.6+default-dev, librust-libtest-mimic-0.7+default-dev, librust-proptest-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-libtest-mimic-0.7+default-dev, librust-proptest-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/toml-edit]"
   ],
   "Version": [
-    "0.22.20-1"
+    "0.22.22-1"
   ]
 }
