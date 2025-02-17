@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "librust-prometheus-dev, librust-prometheus+libc-dev, librust-prometheus+process-dev, librust-prometheus+procfs-dev, librust-prometheus+protobuf-dev, librust-prometheus+push-dev, librust-prometheus+reqwest-dev"
+    "librust-prometheus-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-protobuf-2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-protobuf-2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3e3a71d8e88e81181a70864a7eb6e52a5b4c13f762e915b90a0c898fb7c5bf2b 3366 rust-prometheus_0.13.4-2.dsc 3d33c28a30771f7f96db69893f78b857f7450d7e0237e9c8fc6427a81bae7ed1 84650 rust-prometheus_0.13.4.orig.tar.gz 57d5ec99260c6196a4efdd751418f3018bd2726020efc6888ba665423b1ef4ac 4600 rust-prometheus_0.13.4-2.debian.tar.xz"
+    "90fb5defdc709089187e087a7b82ef4e15e6cdddfc6c7b08877d710ff670df84 2862 rust-prometheus_0.13.4-3.dsc 3d33c28a30771f7f96db69893f78b857f7450d7e0237e9c8fc6427a81bae7ed1 84650 rust-prometheus_0.13.4.orig.tar.gz 4a109785aa7b0c37ad010b12a4e7740add0185a0432b634b294d96b2f163ae92 4256 rust-prometheus_0.13.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-prometheus"
   ],
   "Files": [
-    "ed82202235740712c16999bc35532a1e 3366 rust-prometheus_0.13.4-2.dsc 4b067044c16fb0b00b31660968b6ab1d 84650 rust-prometheus_0.13.4.orig.tar.gz 679715cb3726bcb05d547325d47b4a05 4600 rust-prometheus_0.13.4-2.debian.tar.xz"
+    "df882b3276e14e8a603353647846e620 2862 rust-prometheus_0.13.4-3.dsc 4b067044c16fb0b00b31660968b6ab1d 84650 rust-prometheus_0.13.4.orig.tar.gz 7eff490a16a10aaa890fe534fba804d6 4256 rust-prometheus_0.13.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rust-prometheus"
   ],
   "Package-List": [
-    "librust-prometheus+libc-dev deb rust optional arch=any librust-prometheus+process-dev deb rust optional arch=any librust-prometheus+procfs-dev deb rust optional arch=any librust-prometheus+protobuf-dev deb rust optional arch=any librust-prometheus+push-dev deb rust optional arch=any librust-prometheus+reqwest-dev deb rust optional arch=any librust-prometheus-dev deb rust optional arch=any"
+    "librust-prometheus-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-getopts-0.2+default-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+http1-dev, librust-hyper-0.14+server-dev, librust-hyper-0.14+tcp-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-getopts-0.2+default-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+http1-dev, librust-hyper-0.14+server-dev, librust-hyper-0.14+tcp-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/prometheus]"
   ],
   "Version": [
-    "0.13.4-2"
+    "0.13.4-3"
   ]
 }
