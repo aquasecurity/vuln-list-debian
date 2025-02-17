@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "gdb, gdbserver, gdb-source"
+    "gdb, gdb-multiarch, gdb-minimal, gdbserver, gdb-source"
   ],
   "Build-Depends": [
     "debhelper (\u003e= 10), xz-utils, autoconf, libtool, gettext, bison, dejagnu, flex, procps, gobjc, mig [hurd-any], texinfo (\u003e= 4.7-2.2), texlive-base \u003c!nodoc\u003e, libexpat1-dev, libncurses-dev, libreadline-dev, zlib1g-dev, liblzma-dev, libzstd-dev, libbabeltrace-dev, libipt-dev [amd64 i386 x32], libsource-highlight-dev, libxxhash-dev, libmpfr-dev, pkgconf, python3-dev, libunwind-dev [ia64], libdebuginfod-dev [linux-any], faketime"
   ],
   "Checksums-Sha256": [
-    "e9b981afccfd6c0c4eb25936f5e56ee1b549ae4d960dafac904487cfc8a55948 2707 gdb_16.2-1.dsc dc16d9b01021e63a59e8c4dac13248c128b5a1cc7ed3566b2d5cc464388a3765 25608664 gdb_16.2.orig.tar.xz 6ce58b1ad8e43cb66a2362f4d1a37ee22c40f8819f415a2c1a4cb4a5a914a0d6 195 gdb_16.2.orig.tar.xz.asc 5c47367d94d68a7c49b328dc1947839b4e97cfe5280ae78d41d2392fa05f5a11 45996 gdb_16.2-1.debian.tar.xz"
+    "bf81a6185a5b63a909bb14513f3c6aea9c20cf30ff1a7c1c35d7b6498a214649 2821 gdb_16.2-2.dsc dc16d9b01021e63a59e8c4dac13248c128b5a1cc7ed3566b2d5cc464388a3765 25608664 gdb_16.2.orig.tar.xz 6ce58b1ad8e43cb66a2362f4d1a37ee22c40f8819f415a2c1a4cb4a5a914a0d6 195 gdb_16.2.orig.tar.xz.asc ba15dd8f0297acecd84b177e153e2e86f5f81c3dfe15c35d51d86663c7df71ff 54428 gdb_16.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gdb"
   ],
   "Files": [
-    "5ce9988ebce7124d73d104c6eb61f55c 2707 gdb_16.2-1.dsc ee66dd608cc20eedf7771fa98e78f6f2 25608664 gdb_16.2.orig.tar.xz e015a9e7bfc3152220822a621b336200 195 gdb_16.2.orig.tar.xz.asc c30589a654c5132eb8db4ea40beda053 45996 gdb_16.2-1.debian.tar.xz"
+    "d4ae07bdcd2643d442ee815af1a633c3 2821 gdb_16.2-2.dsc ee66dd608cc20eedf7771fa98e78f6f2 25608664 gdb_16.2.orig.tar.xz e015a9e7bfc3152220822a621b336200 195 gdb_16.2.orig.tar.xz.asc a3e3b17a1b7d0e4f7d3db0aff1929c79 54428 gdb_16.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "gdb"
   ],
   "Package-List": [
-    "gdb deb devel optional arch=any gdb-source deb devel optional arch=all gdbserver deb devel optional arch=amd64,armel,armhf,arm64,i386,ia64,m68k,mips,mipsel,mips64el,powerpc,powerpcspe,ppc64,ppc64el,riscv64,s390,s390x,x32"
+    "gdb deb devel optional arch=any gdb-minimal deb oldlibs optional arch=all gdb-multiarch deb devel optional arch=any gdb-source deb devel optional arch=all gdbserver deb devel optional arch=amd64,armel,armhf,arm64,i386,ia64,m68k,mips,mipsel,mips64el,powerpc,powerpcspe,ppc64,ppc64el,riscv64,s390,s390x,x32"
   ],
   "Priority": [
     "source"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/gdb-team/gdb.git"
   ],
   "Version": [
-    "16.2-1"
+    "16.2-2"
   ]
 }
