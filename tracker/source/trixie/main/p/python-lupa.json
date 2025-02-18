@@ -6,16 +6,16 @@
     "python3-lupa"
   ],
   "Build-Depends": [
-    "cython3, debhelper-compat (= 13), dh-sequence-python3, libluajit-5.1-dev [!s390x !alpha !hppa !ia64 !m68k !powerpcspe !sh4 !sparc64] | liblua5.1-0-dev, pkgconf, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, cython3, libluajit-5.1-dev [!s390x !alpha !hppa !ia64 !m68k !powerpcspe !sh4 !sparc64] | liblua5.1-0-dev, pkgconf, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "6119b83df579c2e77ce2e9ec911eb64e76ff2fd17d2c6d89d79b35abfe68fa3f 2331 python-lupa_2.2+dfsg-1.dsc 2f19d2a906bfe891b58e5686a7ec7bb7a1a8b323874cc083316fab7d9294d891 347244 python-lupa_2.2+dfsg.orig.tar.xz 4899f31b3a9fa523b745d34dcfde94e0f7e0aeebe72c89e40675ab0cfedc3a08 3780 python-lupa_2.2+dfsg-1.debian.tar.xz"
+    "4f6cc4bc72e07353183769293061df6db9795efd6661e28f35daaae2275d81aa 2334 python-lupa_2.4+dfsg-1.dsc ec237da49c11b06beb4f89d781be046f1d6fc5fd9e5d1f6f79aa4d4bfdf0ef32 345688 python-lupa_2.4+dfsg.orig.tar.xz 453133f844c8f28ff50537afda59ff82883ac522e366d1b6e63ce5aa1daf053e 4032 python-lupa_2.4+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-lupa"
   ],
   "Files": [
-    "89b29e7cc7803f1d4479bf61a6c5cd7a 2331 python-lupa_2.2+dfsg-1.dsc f3b0a320ac1f8c7ad0edbfd6de9635f9 347244 python-lupa_2.2+dfsg.orig.tar.xz 45d47545f5225575bf6dbb8fa031576c 3780 python-lupa_2.2+dfsg-1.debian.tar.xz"
+    "b5037e40e0c02bf0a52ab6be193bf6c9 2334 python-lupa_2.4+dfsg-1.dsc fe148158393355d1704d55b623288871 345688 python-lupa_2.4+dfsg.orig.tar.xz 0a96a14cac8f33b9762d2e654305552a 4032 python-lupa_2.4+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Michael Fladischer \u003cfladi@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-lupa.git"
   ],
   "Version": [
-    "2.2+dfsg-1"
+    "2.4+dfsg-1"
   ]
 }
