@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-pydata-sphinx-theme"
+    "python3-pydata-sphinx-theme, python-pydata-sphinx-theme-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, node-bootstrap (\u003e= 5.3.3+dfsg-3~), node-compare-versions, node-fortawesome-fontawesome-free, node-html-webpack-plugin, node-popper2, pybuild-plugin-pyproject, python3-accessible-pygments \u003c!nocheck\u003e, python3-all, python3-babel, python3-bs4 \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-regressions \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx (\u003e= 6.1) \u003c!nocheck\u003e, python3-typing-extensions, webpack"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, node-bootstrap (\u003e= 5.3.3+dfsg-3~), node-compare-versions, node-fortawesome-fontawesome-free, node-html-webpack-plugin, node-popper2, pybuild-plugin-pyproject, python3-accessible-pygments \u003c!nocheck\u003e, python3-all, python3-babel, python3-bs4, python3-linkify-it \u003c!nodoc\u003e, python3-matplotlib \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-regressions \u003c!nocheck\u003e, python3-recommonmark \u003c!nodoc\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx (\u003e= 6.1), python3-sphinx-autoapi (\u003e= 3.0.0) \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-sphinx-favicon (\u003e= 1.0.1) \u003c!nodoc\u003e, python3-sphinx-sitemap \u003c!nodoc\u003e, python3-sphinxext-rediraffe \u003c!nodoc\u003e, python3-typing-extensions, webpack"
   ],
   "Checksums-Sha256": [
-    "07e3b23c348cbb4c91afcefe722af247c0a2c465a936d315669d16044d8b5e36 2794 pydata-sphinx-theme_0.16.1+dfsg-1.dsc 9d0302a812a7614ecafabb7969894d9bd59f99e28830e74dfcaa68041ba1e6e4 2355764 pydata-sphinx-theme_0.16.1+dfsg.orig.tar.xz dd6122c0b181346bedeb33eed911a6008cfa26f730f3e3bfc297c86e94635ce0 242524 pydata-sphinx-theme_0.16.1+dfsg-1.debian.tar.xz"
+    "cfe4aefde14fea7a1995812a6c4e5a33f214d9916f2d2f536da850035bc5c760 3284 pydata-sphinx-theme_0.16.1+dfsg-2.dsc 9d0302a812a7614ecafabb7969894d9bd59f99e28830e74dfcaa68041ba1e6e4 2355764 pydata-sphinx-theme_0.16.1+dfsg.orig.tar.xz b232a4a8d52e45345127d0c266b958be7aee671525d00e7c32cc4217ba44920e 246744 pydata-sphinx-theme_0.16.1+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pydata-sphinx-theme"
   ],
   "Files": [
-    "5c0fd3ad0f6a96a1f132595e841d982a 2794 pydata-sphinx-theme_0.16.1+dfsg-1.dsc dc10a89ad7d5d4a3aa9ff85961d294c0 2355764 pydata-sphinx-theme_0.16.1+dfsg.orig.tar.xz da8792f6e70e0f9a72cf6296b33e5315 242524 pydata-sphinx-theme_0.16.1+dfsg-1.debian.tar.xz"
+    "f73fa02ee93a981b98c3601e8ba43dd3 3284 pydata-sphinx-theme_0.16.1+dfsg-2.dsc dc10a89ad7d5d4a3aa9ff85961d294c0 2355764 pydata-sphinx-theme_0.16.1+dfsg.orig.tar.xz 5443d098d044e09b811d835c04154d9b 246744 pydata-sphinx-theme_0.16.1+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pydata-sphinx-theme"
   ],
   "Package-List": [
-    "python3-pydata-sphinx-theme deb python optional arch=all"
+    "python-pydata-sphinx-theme-doc deb doc optional arch=all profile=!nodoc python3-pydata-sphinx-theme deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -48,7 +48,7 @@
     "python3-accessible-pygments, python3-pytest, python3-pytest-regressions"
   ],
   "Uploaders": [
-    "Alexandre Detiste \u003ctchet@debian.org\u003e, Josenilson Ferreira da Silva \u003cnilsnfsilva@hotmail.com\u003e"
+    "Alexandre Detiste \u003ctchet@debian.org\u003e, Josenilson Ferreira da Silva \u003cnilsnfsilva@hotmail.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pydata-sphinx-theme"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pydata-sphinx-theme.git"
   ],
   "Version": [
-    "0.16.1+dfsg-1"
+    "0.16.1+dfsg-2"
   ]
 }
