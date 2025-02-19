@@ -6,16 +6,16 @@
     "python3-lti"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-django, python3-httmock, python3-lxml, python3-pytest, python3-requests, python3-requests-oauthlib, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-django \u003c!nocheck\u003e, python3-httmock \u003c!nocheck\u003e, python3-lxml, python3-pytest \u003c!nocheck\u003e, python3-requests, python3-requests-oauthlib, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "64ffcbcd194047db19966358b3b7ad179531758039f8343408d53e5c7773d40d 2202 python-lti_0.9.5-4.dsc 215b08a697d1402838e330051e0eda4ce14445e08875e9e34bfb68fd53b1ec53 26160 python-lti_0.9.5.orig.tar.gz 98631ba2ec151667422d50b1593a13198806ba0f2e97b8717cc8e278c29997a2 4764 python-lti_0.9.5-4.debian.tar.xz"
+    "d57d83cd476f819d9555e8d7f1808f100ef5ca8b7d4a89e609429da5ea98e1a9 2284 python-lti_0.9.5-5.dsc 215b08a697d1402838e330051e0eda4ce14445e08875e9e34bfb68fd53b1ec53 26160 python-lti_0.9.5.orig.tar.gz 656fbf3d623c85338ec884fb3798c5d61b418f98ba4f29607827c06382f0aca0 4844 python-lti_0.9.5-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-lti"
   ],
   "Files": [
-    "93ea639af659f698eae1224238227a56 2202 python-lti_0.9.5-4.dsc 8e2f72c7eca99f88c595d890da008cd9 26160 python-lti_0.9.5.orig.tar.gz f00baf6c65dd15e54b26d1703311475f 4764 python-lti_0.9.5-4.debian.tar.xz"
+    "6c6d0cfbbe38ca68a90893cee08f9bb8 2284 python-lti_0.9.5-5.dsc 8e2f72c7eca99f88c595d890da008cd9 26160 python-lti_0.9.5.orig.tar.gz fa7a150e7a2c9311398bd17c5b41b436 4844 python-lti_0.9.5-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@"
+    "python3-all, python3-django, python3-httmock, python3-pytest"
   ],
   "Uploaders": [
     "Michael Fladischer \u003cfladi@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-lti.git"
   ],
   "Version": [
-    "0.9.5-4"
+    "0.9.5-5"
   ]
 }

@@ -6,19 +6,22 @@
     "librust-procfs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.48) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.2.3-~~) \u003c!nocheck\u003e, librust-byteorder-1+i128-dev (\u003e= 1.2.3-~~) \u003c!nocheck\u003e, librust-chrono-0.4+clock-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+param-dev \u003c!nocheck\u003e, librust-rustix-0.38+process-dev \u003c!nocheck\u003e, librust-rustix-0.38+system-dev \u003c!nocheck\u003e, librust-rustix-0.38+thread-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.48) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2-dev \u003c!nocheck\u003e, librust-chrono-0.4+clock-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-procfs-core-0.17+default-dev \u003c!nocheck\u003e, librust-procfs-core-0.17-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.19-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.19-~~) \u003c!nocheck\u003e, librust-rustix-0.38+param-dev (\u003e= 0.38.19-~~) \u003c!nocheck\u003e, librust-rustix-0.38+process-dev (\u003e= 0.38.19-~~) \u003c!nocheck\u003e, librust-rustix-0.38+system-dev (\u003e= 0.38.19-~~) \u003c!nocheck\u003e, librust-rustix-0.38+thread-dev (\u003e= 0.38.19-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5874628365cd432b7277522960c8f6495fe7d3ba35d4c4d6e01d5570a01855f5 2818 rust-procfs_0.14.2-7.dsc b1de8dacb0873f77e6aefc6d71e044761fcc68060290f5b1089fcdf84626bb69 116068 rust-procfs_0.14.2.orig.tar.gz d2fbd017a1bd7a9d20210fa91d6b050acebcde88d91a1309f53bcf151cdc7ea9 7252 rust-procfs_0.14.2-7.debian.tar.xz"
+    "69e2572759a83278dad4f94d9700d337c5579f57add1f212bf20b169d7af2745 2913 rust-procfs_0.17.0-2.dsc cc5b72d8145275d844d4b5f6d4e1eef00c8cd889edb6035c21675d1bb1f45c9f 73252 rust-procfs_0.17.0.orig.tar.gz d86a009aff4e55d69140f441b0f54780234100109bee9f23d36afa1fe79b017f 7120 rust-procfs_0.17.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-procfs"
   ],
   "Files": [
-    "68f4239703c95367f8e9c0fe62ba2e1e 2818 rust-procfs_0.14.2-7.dsc b9a44d0fe763fcd6b171a9ac8598e330 116068 rust-procfs_0.14.2.orig.tar.gz 6d404e10467e3afd06807dc6f4cc626a 7252 rust-procfs_0.14.2-7.debian.tar.xz"
+    "aa380a1cbe907724fe092153df76c28a 2913 rust-procfs_0.17.0-2.dsc 93ba12bf1746856d441400842fb777d2 73252 rust-procfs_0.17.0.orig.tar.gz 305a6258dcb9cb468ef46fa05e529766 7120 rust-procfs_0.17.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/eminence/procfs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-libc-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Joshua Peisach \u003citzswirlz2020@outlook.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/procfs]"
   ],
   "Version": [
-    "0.14.2-7"
+    "0.17.0-2"
   ]
 }
