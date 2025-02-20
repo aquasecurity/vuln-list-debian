@@ -6,16 +6,16 @@
     "librust-nftables-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.203-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.203-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.117-~~) \u003c!nocheck\u003e, librust-serde-path-to-error-0.1+default-dev \u003c!nocheck\u003e, librust-strum-0.26+default-dev (\u003e= 0.26.2-~~) \u003c!nocheck\u003e, librust-strum-macros-0.26+default-dev (\u003e= 0.26.2-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.213-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.213-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.132-~~) \u003c!nocheck\u003e, librust-serde-path-to-error-0.1+default-dev \u003c!nocheck\u003e, librust-strum-0.26+default-dev (\u003e= 0.26.3-~~) \u003c!nocheck\u003e, librust-strum-macros-0.26+default-dev (\u003e= 0.26.4-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.65-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "26bbcc4f9fe3ebc557e151eab2ef3437d402dbecee8d7571f97ccc10c72e833b 2605 rust-nftables_0.4.1-1.dsc 3b5081f5cae4d24af558828494371be6672d02a693e9b4cbca4a0cbae5443e6f 31603 rust-nftables_0.4.1.orig.tar.gz 8566763d5eb1f14646b7b48577957d79df2a90b73df0266addb0225592216d4c 2916 rust-nftables_0.4.1-1.debian.tar.xz"
+    "2e9501e1e2a425f674e4cad69b007973e89cbc970286de9f1dd0be76d54b370e 2634 rust-nftables_0.5.0-1.dsc 6c7288de9ee11086e792d89ee45adf490a5a778ff0fddc7e086ce1521989e657 40139 rust-nftables_0.5.0.orig.tar.gz 17e098363c1865ae9aeff3148fc7b839f67462275f085fbf70f60a4d993125d0 2964 rust-nftables_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nftables"
   ],
   "Files": [
-    "88faf700ff76b0a66aef7da39fb320ae 2605 rust-nftables_0.4.1-1.dsc db5a9dbcea4c1603cbb03b534acf4c85 31603 rust-nftables_0.4.1.orig.tar.gz e0e20eb29fa1e79867e84b965c07aff0 2916 rust-nftables_0.4.1-1.debian.tar.xz"
+    "b26f89b5e6b490330a98c87bf3b3e39f 2634 rust-nftables_0.5.0-1.dsc 0fe66b707415915d63d0615365fcbfa2 40139 rust-nftables_0.5.0.orig.tar.gz 4209815a51c3b698966d94709ddd7394 2964 rust-nftables_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serial-test-2+default-dev"
+    "dh-cargo, librust-serial-test-2+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nftables]"
   ],
   "Version": [
-    "0.4.1-1"
+    "0.5.0-1"
   ]
 }

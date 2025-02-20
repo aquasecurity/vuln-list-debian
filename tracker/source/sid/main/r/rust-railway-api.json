@@ -6,16 +6,16 @@
     "librust-railway-api-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev \u003c!nocheck\u003e, librust-chrono-tz-0.8+default-dev \u003c!nocheck\u003e, librust-railway-api-derive-0.1+default-dev \u003c!nocheck\u003e, librust-railway-core-0.1+default-dev \u003c!nocheck\u003e, librust-railway-provider-hafas-0.1-dev \u003c!nocheck\u003e, librust-railway-provider-motis-0.1-dev \u003c!nocheck\u003e, librust-railway-provider-search-ch-0.1-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev \u003c!nocheck\u003e, librust-chrono-tz-0.8+default-dev \u003c!nocheck\u003e, librust-railway-api-derive-0.1+default-dev \u003c!nocheck\u003e, librust-railway-provider-db-movas-0.1-dev \u003c!nocheck\u003e, librust-railway-core-0.1+default-dev \u003c!nocheck\u003e, librust-railway-provider-hafas-0.1-dev \u003c!nocheck\u003e, librust-railway-provider-motis-0.1-dev \u003c!nocheck\u003e, librust-railway-provider-search-ch-0.1-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3ab1a051e50c211c07e6bc37e86bd83060fdf4f167ce3c54f150b9847f891291 2071 rust-railway-api_0.1.0-3.dsc ec7572a414e3774b31fbe5271b056fdd288429ecbe432b854d7add498bf5592e 4740 rust-railway-api_0.1.0.orig.tar.gz 219b4c7135f27bfc836c40d0eee566877b53536be72efbd779c7ca373fcc2cf9 19112 rust-railway-api_0.1.0-3.debian.tar.xz"
+    "f5b9d30031217e5a2b61c132925813f079d63889facc65b376b437170945f5d5 2212 rust-railway-api_0.1.1-1.dsc d8dc25491ab7914f25ed6c696d783a15c01691eb86b1cc6407d1707e5fcb4145 5279 rust-railway-api_0.1.1.orig.tar.gz 372ae3a6b05817b933c9d0e2e2beddbef04d824607c28f41eabbcf22e684ba50 19252 rust-railway-api_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-railway-api"
   ],
   "Files": [
-    "9f3d602ce42ed6ebc3b37b6b841ec2a8 2071 rust-railway-api_0.1.0-3.dsc a68e382b621d1946e93360ffd0b73e22 4740 rust-railway-api_0.1.0.orig.tar.gz 9482d7a7f4014a66a805c8c07c2568b2 19112 rust-railway-api_0.1.0-3.debian.tar.xz"
+    "17ce071085ce90872791c94b7d74fd54 2212 rust-railway-api_0.1.1-1.dsc b269a7701258733cf94c0ba2a73146aa 5279 rust-railway-api_0.1.1.orig.tar.gz 825721f3ee797f551c9bcb7e7f4d4426 19252 rust-railway-api_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e, Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/railway-api]"
   ],
   "Version": [
-    "0.1.0-3"
+    "0.1.1-1"
   ]
 }
