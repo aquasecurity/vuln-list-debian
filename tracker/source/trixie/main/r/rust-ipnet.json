@@ -6,19 +6,22 @@
     "librust-ipnet-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6671077af27eda7f9646f31250975acfabc7b5729443583d53198d7a4ffe6e08 2143 rust-ipnet_2.9.0-1.dsc 8f518f335dce6725a761382244631d86cf0ccb2863413590b31338feb467f9c3 27627 rust-ipnet_2.9.0.orig.tar.gz 352ba1a9fcd9222ea5ae83b239a82cf112f630e4bbf0bb874262356536168e96 3284 rust-ipnet_2.9.0-1.debian.tar.xz"
+    "b049f4cf13fa8699a30242c8935ec675de1a06a058de590ac1c010f08f975591 2209 rust-ipnet_2.11.0-1.dsc 469fb0b9cefa57e3ef31275ee7cacb78f2fdca44e4765491884a2b119d4eb130 29718 rust-ipnet_2.11.0.orig.tar.gz 266c11404e71c92370c57516840a5ff3e6cddf0e6b3a5494422e007021e218c5 3340 rust-ipnet_2.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ipnet"
   ],
   "Files": [
-    "7fabeae4dca7441894a7c8c7aaa6d8af 2143 rust-ipnet_2.9.0-1.dsc 411fc2fb6b6fac5d46a936f2d3001478 27627 rust-ipnet_2.9.0.orig.tar.gz 38b562b5cf5c31958b785f6e34161c30 3284 rust-ipnet_2.9.0-1.debian.tar.xz"
+    "0b96bf2b91b1fbc420d2f0b2ff3b0d23 2209 rust-ipnet_2.11.0-1.dsc a184d54ca99f3af8f5afc00b6c64c0b5 29718 rust-ipnet_2.11.0.orig.tar.gz 40bb019666eec81f3c224a1bf8d6bba6 3340 rust-ipnet_2.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/krisprice/ipnet"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "David Bürgin \u003cdbuergin@gluet.ch\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ipnet]"
   ],
   "Version": [
-    "2.9.0-1"
+    "2.11.0-1"
   ]
 }
