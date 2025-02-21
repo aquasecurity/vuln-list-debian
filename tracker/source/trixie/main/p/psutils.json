@@ -1,24 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "all"
   ],
   "Binary": [
-    "psutils"
+    "python3-psutils, psutils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libpaper-dev"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-argparse-manpage, python3-puremagic, python3-pypdf, python3-setuptools, libpaper-utils, libpaper-dev"
   ],
   "Checksums-Sha256": [
-    "bca4ccaa41654c4892a5929c791236d12df55de2319c629f4cd8646c2a06219a 2007 psutils_1.17.dfsg-5.dsc 53e24aff04895b47fb2178dc9df3acb78d91c33c2d6bd524c49e9641479c4f6c 40296 psutils_1.17.dfsg.orig.tar.gz de982c07ca25981d131f58327f77400d226c2ce1a8e1c4875bb618fb5646ae06 25352 psutils_1.17.dfsg-5.debian.tar.xz"
-  ],
-  "Dgit": [
-    "ff530783e4822f43a1b6a012cd5a01246d13013d debian archive/debian/1.17.dfsg-5 https://git.dgit.debian.org/psutils"
+    "abd63fa7c7c564bd224615e0efc3bfc7eff7fe878774ae33f2b9d47f52427d95 1951 psutils_3.3.8-1.dsc 56aad427ac73f9d977bae27bfff62240cea3b656995767ef9317c7172be91183 184384 psutils_3.3.8.orig.tar.xz bdaf1293d432ced25a00ca19dd9d388ffc1d5335c5d8dff1455ee315c2883276 7528 psutils_3.3.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/psutils"
   ],
   "Files": [
-    "31051b50e2d4e531111e50b656cc7f7c 2007 psutils_1.17.dfsg-5.dsc 23776009133d428f9217818298a2e4f4 40296 psutils_1.17.dfsg.orig.tar.gz 94d4bb1de44e8b6313b306fa0c36271d 25352 psutils_1.17.dfsg-5.debian.tar.xz"
+    "e320bbe889efb57d6fb1c3986c0d4a43 1951 psutils_3.3.8-1.dsc a87c40b956ffeff9eb90cb4c86a254e3 184384 psutils_3.3.8.orig.tar.xz 35eb960eaebcbf3b0a872acb7b54e851 7528 psutils_3.3.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "psutils"
   ],
   "Package-List": [
-    "psutils deb text optional arch=any"
+    "psutils deb text optional arch=all python3-psutils deb python optional arch=all"
   ],
   "Priority": [
     "source"
@@ -44,6 +41,9 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Uploaders": [
+    "Bastian Germann \u003cbage@debian.org\u003e"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/psutils"
   ],
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/psutils.git"
   ],
   "Version": [
-    "1.17.dfsg-5"
+    "3.3.8-1"
   ]
 }
