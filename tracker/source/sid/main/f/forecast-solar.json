@@ -6,19 +6,19 @@
     "python3-forecast-solar"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
   ],
   "Build-Depends-Indep": [
-    "python3-aiodns \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
+    "python3-aiodns \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-aresponses \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-freezer \u003c!nocheck\u003e, python3-syrupy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "558aa4e76b5726826aeff34e0ab973e5ae3cce3ee47c3ca1757df18d7d87e6b9 2274 forecast-solar_3.1.0-3.dsc d2a2a2d5e13c7cc83758033aea05c4e276530055d87341be3387ef5050e5bc21 13762 forecast-solar_3.1.0.orig.tar.gz c00b120768fccadd7a5413c73d2a8634ad05fd40663b12998f33b0dec67032ae 2548 forecast-solar_3.1.0-3.debian.tar.xz"
+    "c4897c718e0530940f698ec5dc0724f14f9c7768c020c0a32baace02a1a66464 2518 forecast-solar_4.0.0-1.dsc b5dc1bbd6644c50d9916af6b212e8fd630f09f273ed7828cb942865d43afba5a 68579 forecast-solar_4.0.0.orig.tar.gz 427cbc8f730b074f5e3bb961d4096699b48fa6f41423174cc78f9061f4f54dfa 2692 forecast-solar_4.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/forecast-solar"
   ],
   "Files": [
-    "c731aedf301792c3ec9b3c25794d2084 2274 forecast-solar_3.1.0-3.dsc b4ab38d8ab3b19be69f2f5507f6fe08c 13762 forecast-solar_3.1.0.orig.tar.gz 918eb39c040502e0912973441b32fd08 2548 forecast-solar_3.1.0-3.debian.tar.xz"
+    "1b58f29f4f4cdffb516aa8922c096e7f 2518 forecast-solar_4.0.0-1.dsc d8f1bbe5a2b588a740455ee4bc8ba2a7 68579 forecast-solar_4.0.0.orig.tar.gz b6e8471bc30d82ac716de1100e1d74c4 2692 forecast-solar_4.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "python3-all, python3-aresponses, python3-pytest, python3-pytest-asyncio, python3-pytest-freezer, python3-syrupy"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/forecast-solar.git"
   ],
   "Version": [
-    "3.1.0-3"
+    "4.0.0-1"
   ]
 }
