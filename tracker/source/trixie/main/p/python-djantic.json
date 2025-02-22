@@ -6,16 +6,16 @@
     "python-djantic-doc, python3-djantic"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, mkdocs (\u003e= 1.0.4), mkdocs-material, pybuild-plugin-pyproject, python3-all, python3-django, python3-factory-boy, python3-mkautodoc, python3-poetry-core, python3-psycopg2, python3-pydantic (\u003e= 2.0~), python3-pymdownx, python3-pytest, python3-pytest-django, python3-sphinx"
+    "debhelper-compat (= 13), dh-sequence-python3, mkdocs (\u003e= 1.0.4), mkdocs-material \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-django, python3-factory-boy \u003c!nocheck\u003e, python3-mkautodoc, python3-poetry-core, python3-psycopg2 \u003c!nocheck\u003e, python3-pydantic (\u003e= 2.0~), python3-pymdownx, python3-pytest \u003c!nocheck\u003e, python3-pytest-django \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "36518c447fa451f8bf8829ab86834012222adbe68454526a439cbf56782116f4 2443 python-djantic_0.7.0-5.dsc c7ecd6d4cada54b2e4892a02a4c5f95a8929b402dc071d0c050f8c8a700577d6 54551 python-djantic_0.7.0.orig.tar.gz ad4abce7d945abf116d8d877c5e84e81eb44471e1e677ff4688986606b93f7d6 4244 python-djantic_0.7.0-5.debian.tar.xz"
+    "8ed5a940ab0682bbb1e0f6207fce72e654402e71fc28d0066b4223fb948570cb 2588 python-djantic_0.7.0-6.dsc c7ecd6d4cada54b2e4892a02a4c5f95a8929b402dc071d0c050f8c8a700577d6 54551 python-djantic_0.7.0.orig.tar.gz 9d1490a5d5b21bfa154afe9d6692d2f91b654273071c63e686032a16532b8abe 4336 python-djantic_0.7.0-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-djantic"
   ],
   "Files": [
-    "985ec5fcd98448aa206c4522bf859b66 2443 python-djantic_0.7.0-5.dsc fc43715683f2d05d3966020433f683d5 54551 python-djantic_0.7.0.orig.tar.gz 4ac6a844eabaf729d6bad3452befd6c7 4244 python-djantic_0.7.0-5.debian.tar.xz"
+    "ba338ddf375ecbb9e83a28dc227765a2 2588 python-djantic_0.7.0-6.dsc fc43715683f2d05d3966020433f683d5 54551 python-djantic_0.7.0.orig.tar.gz cd958ef28d7822982d8326028842e842 4336 python-djantic_0.7.0-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "python3-all, python3-factory-boy, python3-psycopg2, python3-pydantic, python3-pytest, python3-pytest-django"
   ],
   "Uploaders": [
     "Michael Fladischer \u003cfladi@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-djantic.git"
   ],
   "Version": [
-    "0.7.0-5"
+    "0.7.0-6"
   ]
 }

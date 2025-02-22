@@ -6,19 +6,22 @@
     "librust-gufo-common-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.19.0-~~) \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.80) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "26e2da86630442f6f7087e12bfc11fdb6c24057070307ccff303900f56174102 1683 rust-gufo-common_0.1.3-1.dsc 269bc5c70016d1e90449d71263a72dd2035a2ecbf9cda6305774fa44844bd662 18700 rust-gufo-common_0.1.3.orig.tar.gz 793244a97d7e94777443b6a02a4e175f85962b3fb82c286b483d30686ef5e21e 2224 rust-gufo-common_0.1.3-1.debian.tar.xz"
+    "d2a5bc4126feda99cd10158b9656f5e220be4e9cd347efb40144dc1dfb92726c 2371 rust-gufo-common_0.2.0~alpha.1-2.dsc 34b07b8af7ba58b6c455183ca059e6e39e461996582ec6b140a374b3201c3c05 24980 rust-gufo-common_0.2.0~alpha.1.orig.tar.gz fc19442144059ec13a519843cf942b3c6e844b81a41ab369f9b1032b96206a4d 2444 rust-gufo-common_0.2.0~alpha.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gufo-common"
   ],
   "Files": [
-    "80eff7d332b12d24caae96e3ed643ea5 1683 rust-gufo-common_0.1.3-1.dsc f40369559bab4dc0f63b3f351bd58763 18700 rust-gufo-common_0.1.3.orig.tar.gz cfa47fe0e2acec3eacfc0bd5102b0163 2224 rust-gufo-common_0.1.3-1.debian.tar.xz"
+    "f54c72ecacee6c8bf56cd604110256e2 2371 rust-gufo-common_0.2.0~alpha.1-2.dsc 547597cc265ae7172458a35ae17a8e0b 24980 rust-gufo-common_0.2.0~alpha.1.orig.tar.gz 77980f0dfa34d5e42ed96f8feffae44b 2444 rust-gufo-common_0.2.0~alpha.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/gufo-rs/gufo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gufo-common]"
   ],
   "Version": [
-    "0.1.3-1"
+    "0.2.0~alpha.1-2"
   ]
 }

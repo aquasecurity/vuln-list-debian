@@ -6,16 +6,16 @@
     "librust-search-provider-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-zbus-4+async-io-dev \u003c!nocheck\u003e, librust-zbus-4-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-zbus-5+async-io-dev \u003c!nocheck\u003e, librust-zbus-5-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1fbf57a296e90aea6c09b2c0c4a9c2b2333e57c59dbab568f4369b76c57ae86c 2476 rust-search-provider_0.10.0-2.dsc f8de586207b4f0b88883d27791ea2e8663900fdc78bffb36660bd1eb79f129ba 17571 rust-search-provider_0.10.0.orig.tar.gz de5098c549eb3882f3cd2e06f99ddb7f9a3e0303ff7decb0294854ddd8c8b2cc 2528 rust-search-provider_0.10.0-2.debian.tar.xz"
+    "fc25e467b16d799c5ae4d42d6682921c2e56b8a112eef00f8b4ac37f09dd3098 1885 rust-search-provider_0.10.0-4.dsc f8de586207b4f0b88883d27791ea2e8663900fdc78bffb36660bd1eb79f129ba 17571 rust-search-provider_0.10.0.orig.tar.gz a5b620893307e6b28dd062651ac7680f65ded08b9edcb6cd3818c02bc6dfd62c 3148 rust-search-provider_0.10.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-search-provider"
   ],
   "Files": [
-    "c3881917da36489f622af969b66efb3f 2476 rust-search-provider_0.10.0-2.dsc 5cc0974ade177155081d3de3ec723cae 17571 rust-search-provider_0.10.0.orig.tar.gz f3761d476fc80e778c95ffe080dabaa6 2528 rust-search-provider_0.10.0-2.debian.tar.xz"
+    "f587956a4b87dfd716e479b7854c40d1 1885 rust-search-provider_0.10.0-4.dsc 5cc0974ade177155081d3de3ec723cae 17571 rust-search-provider_0.10.0.orig.tar.gz e76e28d83cb9fcb17c0afa032a4ef58f 3148 rust-search-provider_0.10.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/search-provider]"
   ],
   "Version": [
-    "0.10.0-2"
+    "0.10.0-4"
   ]
 }
