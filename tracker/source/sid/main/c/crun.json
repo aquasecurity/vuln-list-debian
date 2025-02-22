@@ -6,16 +6,16 @@
     "crun"
   ],
   "Build-Depends": [
-    "automake, debhelper-compat (= 13), go-md2man, golang-github-opencontainers-image-spec-dev, golang-github-opencontainers-specs-dev (\u003e= 1.2.0-2~), gperf, libcap-dev, libcriu-dev, libseccomp-dev, libsystemd-dev, libwasmedge-dev [amd64 arm64], libyajl-dev, pkgconf, python3"
+    "automake, debhelper-compat (= 13), go-md2man, golang-github-opencontainers-image-spec-dev, golang-github-opencontainers-specs-dev (\u003e= 1.2.0-2~), gperf, libcap-dev, libcriu-dev [amd64 arm64 ppc64el s390x], libseccomp-dev, libsystemd-dev, libwasmedge-dev [amd64 arm64], libyajl-dev, pkgconf, python3"
   ],
   "Checksums-Sha256": [
-    "e1079c61316cf3c009cbbce38be3496a31eb727d070afcc31244ff0703415333 2430 crun_1.19.1-1.dsc 32a9f283066640141a0f4401ac7ec7b5dd076b9632ab7e2eb53ff2c4e77bc8c1 1786019 crun_1.19.1.orig.tar.gz f66cee84098a11230dc98a567fb865e78c6f6eca7393ce5ad5c0e65393a0d3a2 488 crun_1.19.1.orig.tar.gz.asc 889dae4432ccd13a96ea8cef4a86750c5731de6e7dc8cd2c19c2c7e2a80592c3 18796 crun_1.19.1-1.debian.tar.xz"
+    "e52554c56bcef2bcc256dc4f22c1d3b193db6598036d51f371893485cf8cd936 2425 crun_1.20-1.dsc 3746ac699d457070de6b460f35f5d9fea5fbdb9e826d4b9d1ca694a58f0ca465 1787750 crun_1.20.orig.tar.gz dadc45611ff792a35f72698a16119d29db4640cad4dedef3b83801439ccd18d3 488 crun_1.20.orig.tar.gz.asc 0058c8c8ce188517ada61421cf02aac4cc85d6db04ea37407332b6cbe111da2f 19608 crun_1.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/crun"
   ],
   "Files": [
-    "0abe65ec1ab9429960624e51f1f1436a 2430 crun_1.19.1-1.dsc 653ba687aed4179df71e40a6978fe2c9 1786019 crun_1.19.1.orig.tar.gz af76fe2388c1e63d354af903cbe370b2 488 crun_1.19.1.orig.tar.gz.asc d4f8f2b86eb3cc60acd86a4f6dcb3bbd 18796 crun_1.19.1-1.debian.tar.xz"
+    "c6f337d3afefe90e81c11ad8db394d99 2425 crun_1.20-1.dsc f54d1a1a3eaa7ff600a8ffd1ad10c3ca 1787750 crun_1.20.orig.tar.gz 0daf2fbf9da25879f82506a05233df2b 488 crun_1.20.orig.tar.gz.asc ecdf5ca0a579a86586f3a99d22d52876 19608 crun_1.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python-is-python3"
+    "@recommends@, iptables, python-is-python3"
   ],
   "Uploaders": [
-    "Dmitry Smirnov \u003conlyjob@debian.org\u003e, Reinhard Tartler \u003csiretart@tauware.de\u003e,"
+    "Reinhard Tartler \u003csiretart@tauware.de\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/crun"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/crun.git"
   ],
   "Version": [
-    "1.19.1-1"
+    "1.20-1"
   ]
 }
