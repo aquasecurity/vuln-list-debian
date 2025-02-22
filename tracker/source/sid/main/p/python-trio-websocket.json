@@ -6,19 +6,19 @@
     "python-trio-websocket-doc, python3-trio-websocket"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, dh-sequence-sphinxdoc, python3-all"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-all"
   ],
   "Build-Depends-Indep": [
-    "pybuild-plugin-pyproject, python-trio-doc \u003c!nodoc\u003e, python3-async-generator, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.trio \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-trio, python3-trustme, python3-wsproto"
+    "pybuild-plugin-pyproject, python-trio-doc \u003c!nodoc\u003e, python3-async-generator, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-trio \u003c!nocheck\u003e, python3-pytest-twisted \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinxcontrib.trio \u003c!nodoc\u003e, python3-trio, python3-trustme, python3-wsproto"
   ],
   "Checksums-Sha256": [
-    "f0072559deda99cf81a1a0e22e44ff7cbd3dd957ae50f2736e5b87c40b26f0d8 2529 python-trio-websocket_0.11.1-1.dsc 4725cba483dd3db8c69ba8de34edebb48f5349154e275d62b7c184753ab60674 45205 python-trio-websocket_0.11.1.orig.tar.gz 68ce43006db8a20a2f05bfae6d84c60c42602a68642e3cf5d6d42c0e7cfe0a02 5416 python-trio-websocket_0.11.1-1.debian.tar.xz"
+    "f148d52aeaa1baa10a2493c1b00dac30910b8d36dff63dce2720881d1ec02883 2796 python-trio-websocket_0.12.1-1.dsc 8c7fcd7c74e1f6b282bfa3c7f23a114cccda0d78250d3a25ba251c74ea39d2be 52132 python-trio-websocket_0.12.1.orig.tar.gz b077575485e735108d865af4ab0c9beae6f687082d95b985c713c90fa8119cdd 5776 python-trio-websocket_0.12.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-trio-websocket"
   ],
   "Files": [
-    "46a22a256d1870f6c10fa1a7baf33bc0 2529 python-trio-websocket_0.11.1-1.dsc 7b25bb6bd839b64fa919034d118649dc 45205 python-trio-websocket_0.11.1.orig.tar.gz 12d1f9e03f5ab9f5a8bd1e91d4ca0e7b 5416 python-trio-websocket_0.11.1-1.debian.tar.xz"
+    "95747fde6a0e8a4b3b5942074f853ec3 2796 python-trio-websocket_0.12.1-1.dsc b2ebb8f9dd9c733237925db7eabbb5fe 52132 python-trio-websocket_0.12.1.orig.tar.gz a2e1a985223a6ecfc11ae2556cfea841 5776 python-trio-websocket_0.12.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest, python3-pytest-asyncio, python3-pytest-trio, python3-pytest-twisted"
   ],
   "Uploaders": [
     "Carsten Schoenert \u003cc.schoenert@t-online.de\u003e,"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-trio-websocket.git"
   ],
   "Version": [
-    "0.11.1-1"
+    "0.12.1-1"
   ]
 }
