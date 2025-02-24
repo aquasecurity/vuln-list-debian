@@ -6,16 +6,16 @@
     "python3-pywayland, python3-pywayland-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, pybuild-plugin-pyproject, python3-setuptools, python3-cffi, libwayland-dev, libpython3-all-dev, pkgconf, python3-pytest, python3-sphinx, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-sequence-python3, libpython3-all-dev, libwayland-dev, pkgconf, pybuild-plugin-pyproject, python3-all, python3-cffi, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "b4969f69e448846abcff922cfcffed0b12ac21e73c5db3403f81f9a2e1918e4c 2363 pywayland_0.4.18-2.dsc b1d3e87646650af06c8f0a96ac5a5cf1db80c1feae7ffb6c358dd37e98b5a051 60021 pywayland_0.4.18.orig.tar.gz 44fd3c222b4c38d0e57e177067bbd52a21f6941afcb7002d11e636b8e5d1e4ce 5232 pywayland_0.4.18-2.debian.tar.xz"
+    "0b23c2a8644325df8040532b615ff99c9d5dd85a4952fb558c490426b4635dd3 2456 pywayland_0.4.18-3.dsc b1d3e87646650af06c8f0a96ac5a5cf1db80c1feae7ffb6c358dd37e98b5a051 60021 pywayland_0.4.18.orig.tar.gz 52fa5245f898bbee07bc438bd60eca70c88ff50ccd96e910121383d2d4e9c3d3 5380 pywayland_0.4.18-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pywayland"
   ],
   "Files": [
-    "397ce6e63e737036fa8de544055eae92 2363 pywayland_0.4.18-2.dsc e1698cb6e289bf109ee6894ae3a5bcaa 60021 pywayland_0.4.18.orig.tar.gz ff88b17fd4a556b6ccbe0a4db3414624 5232 pywayland_0.4.18-2.debian.tar.xz"
+    "334564dee6dd8ca0e3b5010decd1e533 2456 pywayland_0.4.18-3.dsc e1698cb6e289bf109ee6894ae3a5bcaa 60021 pywayland_0.4.18.orig.tar.gz 4affe792c1788cd627b12e5db2f8d292 5380 pywayland_0.4.18-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://github.com/flacjacket/pywayland"
   ],
   "Maintainer": [
-    "Daniel Echeverri \u003cepsilon@debian.org\u003e"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
   ],
   "Package": [
     "pywayland"
@@ -45,10 +45,10 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, pybuild-plugin-autopkgtest"
+    "libpython3-all-dev, libwayland-dev, pybuild-plugin-autopkgtest, python3-all, python3-cffi, python3-pytest"
   ],
   "Uploaders": [
-    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
+    "Daniel Echeverri \u003cepsilon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pywayland"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pywayland.git"
   ],
   "Version": [
-    "0.4.18-2"
+    "0.4.18-3"
   ]
 }
