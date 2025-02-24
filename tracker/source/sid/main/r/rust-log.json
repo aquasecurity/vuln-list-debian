@@ -6,19 +6,22 @@
     "librust-log-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5b7fae05852d57258bdd52063bf15c88a89ff4a3a3d0a20752a77b17b9cd0739 2389 rust-log_0.4.22-1.dsc a7a70ba024b9dc04c27ea2f0c0548feb474ec5c54bba33a7f72f873a39d07b24 44027 rust-log_0.4.22.orig.tar.gz 4f7d5b3250bd61db19099f4003bfd7eb21ea0adeac4eb23de5ea936b211d4023 4832 rust-log_0.4.22-1.debian.tar.xz"
+    "e057eaa0fe06c587b4503ad7c5c378101c110e8b7d1abfcff3974c65cf41a66c 2446 rust-log_0.4.24-1.dsc 3d6ea2a48c204030ee31a7d7fc72c93294c92fe87ecb1789881c9543516e1a0d 44882 rust-log_0.4.24.orig.tar.gz 7b932f737a11149688359076b28933ca7ee604556a2732c3fa314448f480777b 4572 rust-log_0.4.24-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-log"
   ],
   "Files": [
-    "0e2573ac646bfd01ed1bcad91a2653e1 2389 rust-log_0.4.22-1.dsc efeb260cf6b2a13607ee12321e39cc8d 44027 rust-log_0.4.22.orig.tar.gz 5de2ebf00be6eb22d95e3e7ba93c582f 4832 rust-log_0.4.22-1.debian.tar.xz"
+    "cc4fadd367fe2f589d8ae781615cfd20 2446 rust-log_0.4.24-1.dsc 0a50bdb6052c9f0662b093c28d0be599 44882 rust-log_0.4.24.orig.tar.gz 3bda876500b41332090e9a165f4cd900 4572 rust-log_0.4.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/log"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proc-macro2-1-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-sval-2+default-dev, librust-sval-derive-2+default-dev, librust-value-bag-1+default-dev, librust-value-bag-1+test-dev"
+    "dh-cargo, librust-proc-macro2-1-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-sval-2+default-dev, librust-sval-derive-2+default-dev, librust-value-bag-1+default-dev, librust-value-bag-1+test-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/log]"
   ],
   "Version": [
-    "0.4.22-1"
+    "0.4.24-1"
   ]
 }
