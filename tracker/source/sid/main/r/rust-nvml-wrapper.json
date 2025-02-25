@@ -6,19 +6,22 @@
     "librust-nvml-wrapper-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-libloading-0+default-dev (\u003e= 0.7.0-~~) \u003c!nocheck\u003e, librust-nvml-wrapper-sys-0.7+default-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-wrapcenum-derive-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-libloading-0.8+default-dev (\u003e= 0.8.1-~~) \u003c!nocheck\u003e, librust-nvml-wrapper-sys-0.8+default-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-wrapcenum-derive-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a6b09ec1549ef11fc03de1370b0a6104d8a22d288525083d1a194af8ce3853e5 2617 rust-nvml-wrapper_0.9.0-2.dsc 7cd21b9f5a1cce3c3515c9ffa85f5c7443e07162dae0ccf4339bb7ca38ad3454 74530 rust-nvml-wrapper_0.9.0.orig.tar.gz 12efa58e48b8c2d7f9d7b3a91f3481259c29938997341bc05f885ffc3a9db97c 3004 rust-nvml-wrapper_0.9.0-2.debian.tar.xz"
+    "8699803c0c85700e68225bbcad9a8dc5b130f4fd94ff4bafa9ec0220bde714d9 2010 rust-nvml-wrapper_0.10.0-1.dsc 0c9bff0aa1d48904a1385ea2a8b97576fbdcbc9a3cfccd0d31fe978e1c4038c5 77841 rust-nvml-wrapper_0.10.0.orig.tar.gz c0f5f12a979aaedccebf9b46bbb6e2dc253e536c472e44faacf3cfa15376f8f9 3084 rust-nvml-wrapper_0.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nvml-wrapper"
   ],
   "Files": [
-    "a79f2363fae6b7b77b77362340c3b4dd 2617 rust-nvml-wrapper_0.9.0-2.dsc 9b2b23b34109d6bd354191473e47c533 74530 rust-nvml-wrapper_0.9.0.orig.tar.gz 2530e70b16b20c1a5963dcdbc9254095 3004 rust-nvml-wrapper_0.9.0-2.debian.tar.xz"
+    "abf611ae14cf847bb8fb67593542b3e6 2010 rust-nvml-wrapper_0.10.0-1.dsc e48fcc7a9a2aef92a7cebe769f785fd5 77841 rust-nvml-wrapper_0.10.0.orig.tar.gz 745cc1070cb8df75f8d22f0abb9d806a 3084 rust-nvml-wrapper_0.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Cldfire/nvml-wrapper"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-bytes-0.2+default-dev, librust-rusty-hook-0.11+default-dev"
+    "dh-cargo, librust-pretty-bytes-0.2+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/nvml-wrapper"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nvml-wrapper]"
   ],
   "Version": [
-    "0.9.0-2"
+    "0.10.0-1"
   ]
 }
