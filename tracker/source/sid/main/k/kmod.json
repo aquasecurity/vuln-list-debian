@@ -6,16 +6,16 @@
     "kmod, libkmod2, libkmod-dev, kmod-udeb, libkmod2-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), autoconf, automake, libtool, pkgconf, liblzma-dev (\u003e= 5.4.5-0.2), libssl-dev, libzstd-dev, zstd \u003c!nocheck\u003e, gtk-doc-tools, xsltproc, scdoc"
+    "debhelper-compat (= 13), meson, pahole \u003c!nocheck\u003e, pkgconf, liblzma-dev (\u003e= 5.4.5-0.2), libssl-dev, libzstd-dev, zstd \u003c!nocheck\u003e, linux-headers-generic [!armel !i386 !mips64el] \u003c!nocheck\u003e, linux-headers-mips64r6el [mips64el] \u003c!nocheck\u003e, linux-headers-rpi [armel] \u003c!nocheck\u003e, gtk-doc-tools \u003c!nodoc\u003e, scdoc"
   ],
   "Checksums-Sha256": [
-    "adcfb953544f040c68496280014eadbfd8d0d77e18cfa12d506851666a364761 1646 kmod_33+20240816-2.dsc 62869d2eaf047b9f6d6ff30dbfa9a3dbe6622a7a009c2d19f71af84cd0d83265 297820 kmod_33+20240816.orig.tar.xz 8242463b1a5c030f693cbdafbcf41c2e76b302015ad21d6d9de49595ca792592 10664 kmod_33+20240816-2.debian.tar.xz"
+    "cc95e1c7f7d007602f48f93564c28386b4cd6a0284c301fedbc22581800adfcf 1753 kmod_34-1.dsc a09057aa9d964aae7902e60b29b4afb4f2cd2fb9f4080afb17a3deaaa2ce9e1d 192304 kmod_34.orig.tar.xz 6d6c548792bcf93706c8daa92a27d1cee884576942f0bacbbf445fd327811041 10224 kmod_34-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kmod"
   ],
   "Files": [
-    "b29de6e1324aeffe9da9340f43e96d57 1646 kmod_33+20240816-2.dsc b4d5063fcd529a65ccde9483eb6db908 297820 kmod_33+20240816.orig.tar.xz b8ef0f307f9dee268dd333477f8a5538 10664 kmod_33+20240816-2.debian.tar.xz"
+    "c36f6ed18323c794750f303ef4cd2f55 1753 kmod_34-1.dsc b569e71bc1387168987ac7cbafdba282 192304 kmod_34.orig.tar.xz 67e42c663350970897c4d07b322af817 10224 kmod_34-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "kmod"
   ],
   "Package-List": [
-    "kmod deb admin important arch=linux-any kmod-udeb udeb debian-installer important arch=linux-any libkmod-dev deb libdevel optional arch=linux-any libkmod2 deb libs optional arch=linux-any libkmod2-udeb udeb debian-installer important arch=linux-any"
+    "kmod deb admin important arch=linux-any kmod-udeb udeb debian-installer important arch=linux-any profile=!noudeb libkmod-dev deb libdevel optional arch=linux-any libkmod2 deb libs optional arch=linux-any libkmod2-udeb udeb debian-installer important arch=linux-any profile=!noudeb"
   ],
   "Priority": [
     "source"
@@ -36,13 +36,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.7.0.0"
+    "4.7.1.1"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkg-config"
+    "build-essential, pkgconf"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/md/kmod"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/md/kmod.git"
   ],
   "Version": [
-    "33+20240816-2"
+    "34-1"
   ]
 }

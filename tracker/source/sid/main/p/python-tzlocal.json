@@ -6,16 +6,19 @@
     "python3-tzlocal"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-tz"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-setuptools, python3-tz"
   ],
   "Checksums-Sha256": [
-    "5a2a5659b543584ade17ef8ba478c0125f5d1e481df362fd7c64a5e1a8587a58 2144 python-tzlocal_5.2-1.1.dsc 1fa51b954955ff1228244f8f1d52ab9261546ce34de3558b6afa7f94e0791971 25734 python-tzlocal_5.2.orig.tar.gz 8fd55a13bdba2c00a2e4cb22e85c036eff1b51c1d36cd36adb683262791084ea 3468 python-tzlocal_5.2-1.1.debian.tar.xz"
+    "67f5db8c9ad4c611185422016965befaa62ca59bef72f05ef36b2e786b9647ce 2268 python-tzlocal_5.3-1.dsc cf43ee673849721be06408ceb773261290e50db580093c92d63e8172af7c7b27 26080 python-tzlocal_5.3.orig.tar.gz f12d981520766f6c381541f7b6744827f33ca8cbe0adfdfe3a37b160a45251d3 3508 python-tzlocal_5.3-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "f19cf4befcd5ef14910b447d941ad3fc5a728a46 debian archive/debian/5.3-1 https://git.dgit.debian.org/python-tzlocal"
   ],
   "Directory": [
     "pool/main/p/python-tzlocal"
   ],
   "Files": [
-    "3f4c010a56d514e005e6edd1ee7d2743 2144 python-tzlocal_5.2-1.1.dsc e69b1a0362a2f2f4f0d0b0d0c87bac99 25734 python-tzlocal_5.2.orig.tar.gz 563d11b7c06d8a5d7eb39f45f59f24c7 3468 python-tzlocal_5.2-1.1.debian.tar.xz"
+    "33f1b8dd4c45a70fe2599e4849bb3744 2268 python-tzlocal_5.3-1.dsc 37eadcd643aed300223fedeb4e9d49ab 26080 python-tzlocal_5.3.orig.tar.gz 622bce30b7f7908e4775be12a0449048 3508 python-tzlocal_5.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-tzlocal.git"
   ],
   "Version": [
-    "5.2-1.1"
+    "5.3-1"
   ]
 }
