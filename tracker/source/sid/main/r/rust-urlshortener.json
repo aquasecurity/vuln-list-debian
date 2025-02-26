@@ -6,19 +6,22 @@
     "librust-urlshortener-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-reqwest-0.11+blocking-dev \u003c!nocheck\u003e, librust-reqwest-0.11+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-reqwest-0.12+blocking-dev \u003c!nocheck\u003e, librust-reqwest-0.12+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fea941db887f70c418f2d48ccb8c095f7cfce9312788f031d9c3fd9ec2fe5707 2331 rust-urlshortener_3.0.2-2.dsc 45f52f28eac462823cdf5ad746c2fd1355498e3450e8854c22e9da61a1fbe572 17465 rust-urlshortener_3.0.2.orig.tar.gz 4f9b756291d070608760ef58dd5a346fd55bf15776d24cfde17647d183266ef7 3016 rust-urlshortener_3.0.2-2.debian.tar.xz"
+    "407d8a4ff39f65da6afc57b6b1d14de90531e8d588448ca98a1a37392e3fdb40 1750 rust-urlshortener_3.2.1-1.dsc 4e7800d67708bc6638bb0db0e6725168793d9863ff1c43812708cfee6cfecfb6 19095 rust-urlshortener_3.2.1.orig.tar.gz 0eaec7dfb7a150ea1365257bffafc800e496826e0341ea430a551748e4eef49c 3080 rust-urlshortener_3.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-urlshortener"
   ],
   "Files": [
-    "8042d72009c71ac06930e1d0a415d5d8 2331 rust-urlshortener_3.0.2-2.dsc 065b728a06093c545f1379e2d11936ff 17465 rust-urlshortener_3.0.2.orig.tar.gz 886d94b5f7dbe32acc0ebf3e86a63ea0 3016 rust-urlshortener_3.0.2-2.debian.tar.xz"
+    "6b841b680a8edd8d80586b48c2619027 1750 rust-urlshortener_3.2.1-1.dsc fe944f3de2ee2ce026b5342b6bee4399 19095 rust-urlshortener_3.2.1.orig.tar.gz 55ac54c99e601530b4913241ee924a7f 3080 rust-urlshortener_3.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/iddm/urlshortener-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/urlshortener"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/urlshortener]"
   ],
   "Version": [
-    "3.0.2-2"
+    "3.2.1-1"
   ]
 }
