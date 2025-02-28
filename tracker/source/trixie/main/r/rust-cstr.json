@@ -6,19 +6,22 @@
     "librust-cstr-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4183407eef8269fa54b8eacee3ac696148878515f9d17ce03002ab2497254ac3 1601 rust-cstr_0.2.11-1.dsc 8aa998c33a6d3271e3678950a22134cd7dd27cef86dee1b611b5b14207d1d90b 5867 rust-cstr_0.2.11.orig.tar.gz 9f7349608850bb3d06c0ea953c67aeaa391b0a8b6600db7f0d8a99ec76bbbb6c 2500 rust-cstr_0.2.11-1.debian.tar.xz"
+    "a2542b4912b9dd9d000573c68bcbf638367eb78525cdebab3f5686b549013346 1657 rust-cstr_0.2.12-1.dsc 68523903c8ae5aacfa32a0d9ae60cadeb764e1da14ee0d26b1f3089f13a54636 6078 rust-cstr_0.2.12.orig.tar.gz c48e2966e9fa559db5d42e2f418af492cf89019be39c5f4210f949f737af6992 2560 rust-cstr_0.2.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cstr"
   ],
   "Files": [
-    "e9db8ae7cde6eac1e9970a1b725cd29e 1601 rust-cstr_0.2.11-1.dsc e413c1207b1664c31ba54c65004c9f92 5867 rust-cstr_0.2.11.orig.tar.gz cde8c9f80ed67e9e43b53605b7e16829 2500 rust-cstr_0.2.11-1.debian.tar.xz"
+    "31cd970a8efef6cd3e1ae7d1dcb5724d 1657 rust-cstr_0.2.12-1.dsc 6229f8a99d4200573a730b24ad471d94 6078 rust-cstr_0.2.12.orig.tar.gz 1c9f1b2a5ccb73053f4dcd8c16cde611 2560 rust-cstr_0.2.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/upsuper/cstr"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cstr"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cstr]"
   ],
   "Version": [
-    "0.2.11-1"
+    "0.2.12-1"
   ]
 }
