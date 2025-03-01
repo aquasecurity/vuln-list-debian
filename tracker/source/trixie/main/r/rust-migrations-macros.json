@@ -6,16 +6,16 @@
     "librust-migrations-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-migrations-internals-2.0+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.78.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-migrations-internals-2+default-dev (\u003e= 2.2.0-~~), librust-migrations-internals-2+default-dev (\u003c\u003c 2.3-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8c080e2b557de864b1d26d1f4f385a9f4324fc6190472198f503ab14fe39917e 2537 rust-migrations-macros_2.0.0-1.dsc 8a8ff27a350511de30cdabb77147501c36ef02e0451d957abea2f30caffb2b58 8702 rust-migrations-macros_2.0.0.orig.tar.gz 1337d5c1f0114609f6775db465a3d3f74516ab5531fd7e454ee0b9eed91cd944 2976 rust-migrations-macros_2.0.0-1.debian.tar.xz"
+    "6e4f29bb56d7ad27745dd1525604851b457aca9c77ed6446b56eca106163d26f 1991 rust-migrations-macros_2.2.0-1.dsc ffb161cc72176cb37aa47f1fc520d3ef02263d67d661f44f05d05a079e1237fd 8896 rust-migrations-macros_2.2.0.orig.tar.gz e1194e945c5c57c15bd0ce44cf3aa2dbdeaa9a7d5435912d431b61fa6c9ab8f6 3004 rust-migrations-macros_2.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-migrations-macros"
   ],
   "Files": [
-    "101ff571373a41af2934a149e8f28a4a 2537 rust-migrations-macros_2.0.0-1.dsc e0d898f6c4e2f3c12b9b22da26ae845c 8702 rust-migrations-macros_2.0.0.orig.tar.gz fedbe75e20d7755e91f229ebb8b008ea 2976 rust-migrations-macros_2.0.0-1.debian.tar.xz"
+    "7137857438b61af1a7f50363b7bac770 1991 rust-migrations-macros_2.2.0-1.dsc 7efa2a9529b81c851d2e8da88536e3ac 8896 rust-migrations-macros_2.2.0.orig.tar.gz 4a239ce16cd614edfefada4b1f573208 3004 rust-migrations-macros_2.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cfg-if-1+default-dev, librust-diesel-2.0-dev, librust-dotenvy-0.15+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-cfg-if-1+default-dev, librust-dotenvy-0.15+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
-    "kpcyrd \u003cgit@rxv.cc\u003e, Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "kpcyrd \u003cgit@rxv.cc\u003e, Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/migrations-macros"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/migrations-macros]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.2.0-1"
   ]
 }

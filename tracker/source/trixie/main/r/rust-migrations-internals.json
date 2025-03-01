@@ -6,16 +6,16 @@
     "librust-migrations-internals-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.78.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9136d219b1de35d84719d1f3d34f9218246d8fcbb2e2ff892cfd9d8060869313 2427 rust-migrations-internals_2.0.0-1.dsc c493c09323068c01e54c685f7da41a9ccf9219735c3766fbfd6099806ea08fbc 6094 rust-migrations-internals_2.0.0.orig.tar.gz 7d7c011725355369e10428293d9161ca270266a28bb19b469218fec38b4bc4a2 2764 rust-migrations-internals_2.0.0-1.debian.tar.xz"
+    "25f19e65a65630951af584daa8e666ac1e55b7e91b35ea5fc730fd907a753e28 1837 rust-migrations-internals_2.2.0-1.dsc fd01039851e82f8799046eabbb354056283fb265c8ec0996af940f4e85a380ff 6205 rust-migrations-internals_2.2.0.orig.tar.gz 91087a48030afb4de86132a3b141ff599169acac2d2961ce0e19e97cf805d3b2 2812 rust-migrations-internals_2.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-migrations-internals"
   ],
   "Files": [
-    "dda529a1801f8b0303f95b25b66101c4 2427 rust-migrations-internals_2.0.0-1.dsc 66a324e5415beedf4b9d18cf1710db53 6094 rust-migrations-internals_2.0.0.orig.tar.gz 4e0ebfda1b9017e3c569ead4eabaec27 2764 rust-migrations-internals_2.0.0-1.debian.tar.xz"
+    "15d081ff81db97005fc9fe6ef4789b3e 1837 rust-migrations-internals_2.2.0-1.dsc f10525c1a8ba8ec8a10ad87394f34e39 6205 rust-migrations-internals_2.2.0.orig.tar.gz 781e9733c58fe3d02f9adf2bd339b3b9 2812 rust-migrations-internals_2.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "kpcyrd \u003cgit@rxv.cc\u003e, Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "kpcyrd \u003cgit@rxv.cc\u003e, Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/migrations-internals"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/migrations-internals]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.2.0-1"
   ]
 }

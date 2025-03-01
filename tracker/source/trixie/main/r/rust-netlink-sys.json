@@ -6,16 +6,16 @@
     "librust-netlink-sys-dev, librust-netlink-sys+async-io-dev, librust-netlink-sys+futures-dev, librust-netlink-sys+mio-dev, librust-netlink-sys+smol-socket-dev, librust-netlink-sys+tokio-dev, librust-netlink-sys+tokio-socket-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.164-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "25b499705ee9b8586e4016c5e8eec0577041b41fa5cac7ad0866992892fec94f 3106 rust-netlink-sys_0.8.6-1.dsc 416060d346fbaf1f23f9512963e3e878f1a78e707cb699ba9215761754244307 23580 rust-netlink-sys_0.8.6.orig.tar.gz 2358f76984fc9e39ce750627ea043d7ea7ba11f243764ece1ab935fcdbcb95ef 5612 rust-netlink-sys_0.8.6-1.debian.tar.xz"
+    "1ec0e48b6bcae94efcad2a389c99b796eed613301a7991f18178dfd39909fe37 3133 rust-netlink-sys_0.8.7-1.dsc 16c903aa70590cb93691bf97a767c8d1d6122d2cc9070433deb3bbf36ce8bd23 23701 rust-netlink-sys_0.8.7.orig.tar.gz 2b35f16433aee091964eebd905f274a9a2f88cc257564a6d53b9300ab5e010b9 4880 rust-netlink-sys_0.8.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-netlink-sys"
   ],
   "Files": [
-    "7d1f4075f05c83aa8476eb8b257aef92 3106 rust-netlink-sys_0.8.6-1.dsc 2205b6cfb403e8a2aeaeb6a5ddb264f6 23580 rust-netlink-sys_0.8.6.orig.tar.gz 2e9d7debf57753c00d2096298ca25049 5612 rust-netlink-sys_0.8.6-1.debian.tar.xz"
+    "80fc9316fce4b2d3198ce2cede8761a7 3133 rust-netlink-sys_0.8.7-1.dsc a9ee827067c21dc2ad9e9a193f5d356c 23701 rust-netlink-sys_0.8.7.orig.tar.gz c90ee2cb0c43edbb1ef8a960d416969e 4880 rust-netlink-sys_0.8.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/netlink-sys]"
   ],
   "Version": [
-    "0.8.6-1"
+    "0.8.7-1"
   ]
 }
