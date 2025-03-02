@@ -6,16 +6,16 @@
     "librust-profiling-procmacros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e10a9370dd93427ec9d847bff0a02f86b6bf0d7e653593b64ff74a2321294090 1804 rust-profiling-procmacros_1.0.14-1.dsc ce97fecd27bc49296e5e20518b5a1bb54a14f7d5fe6228bc9686ee2a74915cc8 5958 rust-profiling-procmacros_1.0.14.orig.tar.gz 9a311db2890e6a53a2998cd67640b535d5e78eb8197d3cd61dca477ef517f687 2760 rust-profiling-procmacros_1.0.14-1.debian.tar.xz"
+    "c0ea5f15e49e363bc39c5349b6aca71962e503c5e6191bd1e86e5e1a93d04c5c 2463 rust-profiling-procmacros_1.0.16-1.dsc a65f2e60fbf1063868558d69c6beacf412dc755f9fc020f514b7955fc914fe30 5893 rust-profiling-procmacros_1.0.16.orig.tar.gz 10abe5b08cf4083d196c00b54fb548c3838a6ab8e745811f898d88ec92dfda83 2828 rust-profiling-procmacros_1.0.16-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-profiling-procmacros"
   ],
   "Files": [
-    "3722e6ea1661baabfd5d25e094a49424 1804 rust-profiling-procmacros_1.0.14-1.dsc 53c557236d89aee8968e1881a6c54119 5958 rust-profiling-procmacros_1.0.14.orig.tar.gz 90bf8b43093cfbf7fc79845b1a287cf6 2760 rust-profiling-procmacros_1.0.14-1.debian.tar.xz"
+    "ec65e96702dd9b308cc11c8f87cbf8bf 2463 rust-profiling-procmacros_1.0.16-1.dsc 375db7693b99301d71e68bfcf987ee51 5893 rust-profiling-procmacros_1.0.16.orig.tar.gz 1aa09a5d684b0f233932dd02dca8035d 2828 rust-profiling-procmacros_1.0.16-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/profiling-procmacros]"
   ],
   "Version": [
-    "1.0.14-1"
+    "1.0.16-1"
   ]
 }
