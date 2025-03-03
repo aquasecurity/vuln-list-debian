@@ -6,16 +6,16 @@
     "libkf5parts-data, libkf5parts-dev, libkf5parts-doc, libkf5parts-plugins, libkf5parts5"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.16~), debhelper-compat (= 13), doxygen, extra-cmake-modules (\u003e= 5.115.0~), libkf5config-dev (\u003e= 5.115.0~), libkf5coreaddons-dev (\u003e= 5.115.0~), libkf5i18n-dev (\u003e= 5.115.0~), libkf5iconthemes-dev (\u003e= 5.115.0~), libkf5jobwidgets-dev (\u003e= 5.115.0~), libkf5kio-dev (\u003e= 5.115.0~), libkf5service-dev (\u003e= 5.115.0~), libkf5textwidgets-dev (\u003e= 5.115.0~), libkf5widgetsaddons-dev (\u003e= 5.115.0~), libkf5windowsystem-dev (\u003e= 5.115.0~), libkf5xmlgui-dev (\u003e= 5.115.0~), libqt5sql5-sqlite, pkg-kde-tools (\u003e= 0.15.15ubuntu1~), qtbase5-dev (\u003e= 5.15.2~), qttools5-dev, qttools5-dev-tools, xauth, xvfb"
+    "cmake (\u003e= 3.16~), debhelper-compat (= 13), doxygen, dh-sequence-kf5, dh-sequence-pkgkde-symbolshelper, extra-cmake-modules (\u003e= 5.115.0~), libkf5config-dev (\u003e= 5.115.0~), libkf5coreaddons-dev (\u003e= 5.115.0~), libkf5i18n-dev (\u003e= 5.115.0~), libkf5iconthemes-dev (\u003e= 5.115.0~), libkf5jobwidgets-dev (\u003e= 5.115.0~), libkf5kio-dev (\u003e= 5.115.0~), libkf5service-dev (\u003e= 5.115.0~), libkf5textwidgets-dev (\u003e= 5.115.0~), libkf5widgetsaddons-dev (\u003e= 5.115.0~), libkf5windowsystem-dev (\u003e= 5.115.0~), libkf5xmlgui-dev (\u003e= 5.115.0~), libqt5sql5-sqlite, qtbase5-dev (\u003e= 5.15.2~), qttools5-dev, qttools5-dev-tools, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6986162c0532a2beb9bd9ad21e0b468776d0ae901d1021739cab1a6990eadd46 3073 kparts_5.115.0-2.dsc a2ad3379d71843d3efeac3e98b6416509c024eff1135e45724fe5c1722cb7d94 2473780 kparts_5.115.0.orig.tar.xz c636a1e8e2a1944489469be5f8d454a5d1cdb08aca9b0046d4ee6181ac8358e6 488 kparts_5.115.0.orig.tar.xz.asc 2def7a0fe8904e2f8e1edee94edeb8403a3f51a8362864ce953e48759eb58dd7 16400 kparts_5.115.0-2.debian.tar.xz"
+    "b2e0688e92cc36c45f1d4f72aedafa6c9c9c003880db577231c9dd686845d243 3084 kparts_5.115.0-3.dsc a2ad3379d71843d3efeac3e98b6416509c024eff1135e45724fe5c1722cb7d94 2473780 kparts_5.115.0.orig.tar.xz c636a1e8e2a1944489469be5f8d454a5d1cdb08aca9b0046d4ee6181ac8358e6 488 kparts_5.115.0.orig.tar.xz.asc 823b59413e1e593efb522bdc2921d8b23a6caebfdfb566b8ce949a03b1ec162a 14156 kparts_5.115.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kparts"
   ],
   "Files": [
-    "82c58288902e42e39cd23765d95ffbf6 3073 kparts_5.115.0-2.dsc a1593f1c8024c1287b44e0035d00f2c6 2473780 kparts_5.115.0.orig.tar.xz bb7400fbe3e909b05233a8b34ef1bd84 488 kparts_5.115.0.orig.tar.xz.asc c55ecc1bf71abb5c7b427503b48bae5f 16400 kparts_5.115.0-2.debian.tar.xz"
+    "8c8c40ed80a08f4976b1d1f6fc5f089f 3084 kparts_5.115.0-3.dsc a1593f1c8024c1287b44e0035d00f2c6 2473780 kparts_5.115.0.orig.tar.xz bb7400fbe3e909b05233a8b34ef1bd84 488 kparts_5.115.0.orig.tar.xz.asc dbf01902fa93901d97297acc8cbba8bd 14156 kparts_5.115.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "kparts"
   ],
   "Package-List": [
-    "libkf5parts-data deb libs optional arch=all libkf5parts-dev deb libdevel optional arch=any libkf5parts-doc deb doc optional arch=all libkf5parts-plugins deb libs optional arch=any libkf5parts5 deb libs optional arch=any"
+    "libkf5parts-data deb libs optional arch=all libkf5parts-dev deb libdevel optional arch=any libkf5parts-doc deb doc optional arch=all libkf5parts-plugins deb oldlibs optional arch=all libkf5parts5 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.1"
   ],
   "Uploaders": [
     "Aurélien COUDERC \u003ccoucouf@debian.org\u003e, Patrick Franz \u003cdeltaone@debian.org\u003e,"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/qt-kde-team/kde/kparts.git"
   ],
   "Version": [
-    "5.115.0-2"
+    "5.115.0-3"
   ]
 }
