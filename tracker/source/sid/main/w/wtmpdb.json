@@ -6,16 +6,16 @@
     "libwtmpdb0, libwtmpdb-dev, libpam-wtmpdb, wtmpdb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-package-notes, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), docbook-xml, docbook-xsl, docbook-xsl-ns, libaudit-dev, libpam0g-dev, libsqlite3-dev, libsystemd-dev [linux-any], meson, pkgconf, systemd-dev [linux-any], xsltproc"
+    "debhelper-compat (= 13), dh-package-notes, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), docbook-xml, docbook-xsl, docbook-xsl-ns, libaudit-dev [linux-any], libpam0g-dev, libsqlite3-dev, libsystemd-dev [linux-any], meson, pkgconf, systemd-dev [linux-any], xsltproc"
   ],
   "Checksums-Sha256": [
-    "d1da19935a931f754666a63750056b751f4b3a4dcec9e55cd09b3c22dbc489bf 2205 wtmpdb_0.13.0-6.dsc 81fb1767838631fe50788408c2c86c3bf26af42c6ed2e11d454f7b14a9a648da 25912 wtmpdb_0.13.0.orig.tar.gz 2c5dceb887508939715c1a70d36b8998284062786d0c45f8bc75d36bde02118e 6416 wtmpdb_0.13.0-6.debian.tar.xz"
+    "6669b391b84d7d2bfe1cb3a27677103f2c060f1410220c11008962883290c6b8 2422 wtmpdb_0.71.0+git20250228.4e4b54e-1.dsc af82ce3a403dd422f36d8034fa95ea2cdc64b4846c61c7713aaaf25f084531d6 40699 wtmpdb_0.71.0+git20250228.4e4b54e.orig.tar.gz d407df1c502e9e80d79060542887bee5fcbf396b9292fbe77ef28464d61d8294 8216 wtmpdb_0.71.0+git20250228.4e4b54e-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/wtmpdb"
   ],
   "Files": [
-    "ff7df6e8250ecda7afc1d6b2f02fa2f0 2205 wtmpdb_0.13.0-6.dsc 0990d9dca73a3c469fd111e9c635011f 25912 wtmpdb_0.13.0.orig.tar.gz ac4f6c1f0f4f3a0016cf5e32e9d12ffb 6416 wtmpdb_0.13.0-6.debian.tar.xz"
+    "f03e8e50b0854287c59b10714c6e3c6c 2422 wtmpdb_0.71.0+git20250228.4e4b54e-1.dsc b533d816f7742665aeb8ef3212d62ac6 40699 wtmpdb_0.71.0+git20250228.4e4b54e.orig.tar.gz eda3d152d6bc7ca63943b4e912d8aee9 8216 wtmpdb_0.71.0+git20250228.4e4b54e-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +24,7 @@
     "https://github.com/thkukuk/wtmpdb/"
   ],
   "Maintainer": [
-    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
+    "Andrew Bower \u003candrew@bower.uk\u003e"
   ],
   "Package": [
     "wtmpdb"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, meson, pkgconf"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/wtmpdb"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/wtmpdb.git"
   ],
   "Version": [
-    "0.13.0-6"
+    "0.71.0+git20250228.4e4b54e-1"
   ]
 }

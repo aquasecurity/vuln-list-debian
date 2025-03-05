@@ -6,16 +6,16 @@
     "librust-clock-steering-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.145-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.145-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d392dabf7fea9db1bd72e1b8f394dcb05b11c2bc5827d37b6304beb988bfe688 2316 rust-clock-steering_0.2.1-1.dsc 2410abf030f2eb46cba840d343455078538e7c8755507b37ffd4074064f08f62 13782 rust-clock-steering_0.2.1.orig.tar.gz 5d4715842cf8c58923925d754e21a6911719a4482eaeeaab09afb7019d6b3b93 2612 rust-clock-steering_0.2.1-1.debian.tar.xz"
+    "4f216e9ca532678a21de8324dcd193a05ca4f48df01e8924a6533979e6c83457 2359 rust-clock-steering_0.2.1-2.dsc 2410abf030f2eb46cba840d343455078538e7c8755507b37ffd4074064f08f62 13782 rust-clock-steering_0.2.1.orig.tar.gz d235eafe5af5adb53d3db9c5e8142f98174389e1c6a70c928113fa83fc2d43d7 3492 rust-clock-steering_0.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-clock-steering"
   ],
   "Files": [
-    "ad50ef44cbb1e5eba8527195a5f3d1eb 2316 rust-clock-steering_0.2.1-1.dsc 6a6a043efd0e622544d95af46142d508 13782 rust-clock-steering_0.2.1.orig.tar.gz eeba0fb8c9f45794fc37c28869f6dcdc 2612 rust-clock-steering_0.2.1-1.debian.tar.xz"
+    "1e680ab17dfc160633e102a80bd108c4 2359 rust-clock-steering_0.2.1-2.dsc 6a6a043efd0e622544d95af46142d508 13782 rust-clock-steering_0.2.1.orig.tar.gz d5cb4b6510c0aa03bfd010a0f44ade38 3492 rust-clock-steering_0.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/clock-steering]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.1-2"
   ]
 }
