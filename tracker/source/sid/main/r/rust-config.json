@@ -6,22 +6,22 @@
     "librust-config-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-nom-7+default-dev \u003c!nocheck\u003e, librust-rust-ini-0.21+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.8-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-toml-0.5+default-dev \u003c!nocheck\u003e, librust-yaml-rust-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev \u003c!nocheck\u003e, librust-convert-case-0.6+default-dev \u003c!nocheck\u003e, librust-json5-0.4+default-dev \u003c!nocheck\u003e, librust-pathdiff-0.2+default-dev \u003c!nocheck\u003e, librust-ron-0.7+default-dev \u003c!nocheck\u003e, librust-rust-ini-0.21+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-toml-0.8+parse-dev \u003c!nocheck\u003e, librust-winnow-0.6+default-dev \u003c!nocheck\u003e, librust-yaml-rust-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f3a8d7a29ebb11cb231699954d3021e152cf42d93c43caf554190b4dc5a91322 2662 rust-config_0.11.0-5.dsc 1b1b9d958c2b1368a663f05538fc1b5975adce1e19f435acceae987aceeeb369 32062 rust-config_0.11.0.orig.tar.gz da72724e60c95660233e349dda5ca95ba9a7ea3a4e9f32dccb8021f3dbaf2450 6588 rust-config_0.11.0-5.debian.tar.xz"
+    "fddc0dfb3a97ff6bd036b7c415d967308c7f397d10a564e191a480dadbd238c3 2620 rust-config_0.15.8-1.dsc 8cf9dc8d4ef88e27a8cb23e85cb116403dedd57f7971964dc4b18ccead548901 57649 rust-config_0.15.8.orig.tar.gz 1abbdaa0da1a5dab8440d4e0c908e551149ecae6b2090aaa4a7a09eed42b07f1 4204 rust-config_0.15.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-config"
   ],
   "Files": [
-    "03cfe43eae82b871c0b60967aab57eae 2662 rust-config_0.11.0-5.dsc 214e74a4be6a2b8cf59a644574217d7a 32062 rust-config_0.11.0.orig.tar.gz a4ca9c309334c69733a7611f90f7f1e6 6588 rust-config_0.11.0-5.debian.tar.xz"
+    "b93e6bce7304fd6ada33736901572a53 2620 rust-config_0.15.8-1.dsc e710383de97944575868af60aff6df50 57649 rust-config_0.15.8.orig.tar.gz 3e99e5a209bce4110930dda58af8f954 4204 rust-config_0.15.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/mehcode/config-rs"
+    "https://github.com/rust-cli/config-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-chrono-0.4+default-dev, librust-chrono-0.4+serde-dev, librust-float-cmp-0.9+default-dev, librust-serde-derive-1+default-dev, rustc"
+    "dh-cargo, librust-chrono-0.4+default-dev, librust-chrono-0.4+serde-dev, librust-float-cmp-0.9+default-dev, librust-futures-0.3+default-dev, librust-glob-0.3+default-dev, librust-log-0.4+default-dev, librust-log-0.4+serde-dev, librust-notify-6+default-dev, librust-reqwest-0.12+default-dev, librust-serde-derive-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-warp-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/config]"
   ],
   "Version": [
-    "0.11.0-5"
+    "0.15.8-1"
   ]
 }
