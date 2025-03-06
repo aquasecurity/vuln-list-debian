@@ -3,22 +3,28 @@
     "any all"
   ],
   "Binary": [
-    "librenaissance0, librenaissance0-dev, renaissance-doc"
+    "librenaissance0, librenaissance-dev, librenaissance0-dev, renaissance-dev-tools, renaissance-doc"
   ],
   "Build-Depends": [
-    "cdbs, debhelper (\u003e= 7), libgnustep-gui-dev (\u003e= 0.24)"
+    "debhelper-compat (= 13), dpkg-build-api (= 1), gnustep-make (\u003e= 2.9.3-2), libgnustep-gui-dev (\u003e= 0.31.1-9)"
+  ],
+  "Build-Depends-Indep": [
+    "latex2html \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "90783aae61c974f90372e827b01a68500d7427030c2f0f04ec53aec91ba124bd 1937 renaissance_0.9.0-4.3.dsc 5c2078d211dd9d9de48c8d26d3dde3f7fae18fadeac1ff4049e5996a29ce342b 404888 renaissance_0.9.0.orig.tar.gz 494247e368ffb8619244a00487492cf788b7249f77bde8924c838641b7227932 8924 renaissance_0.9.0-4.3.debian.tar.xz"
+    "dc7ec69e88417aef6339e9cc7b7474d4a8c8287fce48fbffc80b316a0a4de86b 2368 renaissance_0.9.0-6.dsc 5c2078d211dd9d9de48c8d26d3dde3f7fae18fadeac1ff4049e5996a29ce342b 404888 renaissance_0.9.0.orig.tar.gz c499569839d4d5cac249d168721867ff124ae2ecf70068489d701784f63f8e8d 10512 renaissance_0.9.0-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/renaissance"
   ],
   "Files": [
-    "22d8421d0fd6fe955eb12f3a347d5dae 1937 renaissance_0.9.0-4.3.dsc 2209c96543ed0a03b1b8ee22bf3a8f35 404888 renaissance_0.9.0.orig.tar.gz b5f102f8ec7f5842da602d849c129776 8924 renaissance_0.9.0-4.3.debian.tar.xz"
+    "4551a267e9f4306bfd8546f2a383f187 2368 renaissance_0.9.0-6.dsc 2209c96543ed0a03b1b8ee22bf3a8f35 404888 renaissance_0.9.0.orig.tar.gz b5191c0310e1b9467a0528b59d6808a1 10512 renaissance_0.9.0-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gnustep.org"
   ],
   "Maintainer": [
     "Debian GNUstep maintainers \u003cpkg-gnustep-maintainers@lists.alioth.debian.org\u003e"
@@ -27,7 +33,7 @@
     "renaissance"
   ],
   "Package-List": [
-    "librenaissance0 deb libs optional arch=any librenaissance0-dev deb libdevel optional arch=any renaissance-doc deb doc optional arch=all"
+    "librenaissance-dev deb libdevel optional arch=any librenaissance0 deb libs optional arch=any librenaissance0-dev deb oldlibs optional arch=all renaissance-dev-tools deb devel optional arch=any renaissance-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "source"
@@ -36,10 +42,10 @@
     "devel"
   ],
   "Standards-Version": [
-    "3.9.5"
+    "4.7.2"
   ],
   "Uploaders": [
-    "Yavor Doganov \u003cyavor@gnu.org\u003e"
+    "Yavor Doganov \u003cyavor@gnu.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/gnustep-team/renaissance"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/gnustep-team/renaissance.git"
   ],
   "Version": [
-    "0.9.0-4.3"
+    "0.9.0-6"
   ]
 }
