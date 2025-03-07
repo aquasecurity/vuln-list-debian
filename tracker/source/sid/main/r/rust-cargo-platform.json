@@ -6,16 +6,16 @@
     "librust-cargo-platform-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.73) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.204-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4bfdea70df01410c8195757dbf929b10dea1010b7a6ccbbcae420ddb428496c8 2334 rust-cargo-platform_0.1.8-1.dsc 24b1f0365a6c6bb4020cd05806fd0d33c44d38046b8bd7f0e40814b9763cabfc 11813 rust-cargo-platform_0.1.8.orig.tar.gz b82c605832732c404c60bfad656b3c5ec173f8c6ece600c060c95516fc74046a 2640 rust-cargo-platform_0.1.8-1.debian.tar.xz"
+    "ba42dd6db3855577a63b5607657fcfeb4fc8a074ac63f6373a093d8cac306081 2349 rust-cargo-platform_0.2.0-1.dsc 84982c6c0ae343635a3a4ee6dedef965513735c8b183caa7289fa6e27399ebd4 13373 rust-cargo-platform_0.2.0.orig.tar.gz a990f198d2e03035ebae99e2c53424abf516b3efba5dc8c2acb8541638cb0b22 2660 rust-cargo-platform_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cargo-platform"
   ],
   "Files": [
-    "03e962b93fc20db006d44580192a8393 2334 rust-cargo-platform_0.1.8-1.dsc 704a72387b69a38dd7c18a6ebf85448d 11813 rust-cargo-platform_0.1.8.orig.tar.gz e5766f42789f0ca2156adb8ab81540d2 2640 rust-cargo-platform_0.1.8-1.debian.tar.xz"
+    "391b0e7fc2b91a85d44149a8163879cd 2349 rust-cargo-platform_0.2.0-1.dsc c2381e3520fe80b4a4f445b4544db390 13373 rust-cargo-platform_0.2.0.orig.tar.gz 6a0fb0d0f604bea20bcb09fbc5f657b1 2660 rust-cargo-platform_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-platform]"
   ],
   "Version": [
-    "0.1.8-1"
+    "0.2.0-1"
   ]
 }
