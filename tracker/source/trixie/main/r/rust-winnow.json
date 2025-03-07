@@ -6,19 +6,22 @@
     "librust-winnow-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1cf8a029d5c440ebc9a7804993c7346fbb613c616a143e079a83ed5cfc3279bb 2509 rust-winnow_0.6.18-1.dsc 68a9bda4691f099d435ad181000724da8e5899daa10713c2d432552b9ccd3a6f 163357 rust-winnow_0.6.18.orig.tar.gz ccb4debb321de08605f251e730aed83e480217d0de41cacb9e7e151fb40efc41 3932 rust-winnow_0.6.18-1.debian.tar.xz"
+    "92992e257a4cfffaaa84528c762000330c9b2da4fe825ff67c9581832bc90fce 1936 rust-winnow_0.6.26-1.dsc 1e90edd2ac1aa278a5c4599b1d89cf03074b610800f866d4026dc199d7929a28 167349 rust-winnow_0.6.26.orig.tar.gz e3694e4b929375f506077118f9c0fed6fed49fbf3e3a4f2b82491a456b54b858 3904 rust-winnow_0.6.26-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-winnow"
   ],
   "Files": [
-    "0b30030e518c292cbaa5ae3c2f47d6fd 2509 rust-winnow_0.6.18-1.dsc 0967e0df46d1af4eec8dab6b12241600 163357 rust-winnow_0.6.18.orig.tar.gz f784211206ad47998c7c8e8be7436493 3932 rust-winnow_0.6.18-1.debian.tar.xz"
+    "25e521b1ecf5265700b4e8e466c783da 1936 rust-winnow_0.6.26-1.dsc a6c871186214d3e8b886a1a184a7fe77 167349 rust-winnow_0.6.26.orig.tar.gz 9ca398a16ce17e40bc10e809f32db83b 3904 rust-winnow_0.6.26-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/winnow-rs/winnow"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-automod-1+default-dev, librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev, librust-doc-comment-0.3+default-dev, librust-lexopt-0.3+default-dev, librust-proptest-1+default-dev, librust-rustc-hash-1+default-dev, librust-snapbox-0.4+default-dev, librust-snapbox-0.4+examples-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-automod-1+default-dev, librust-circular-0.3+default-dev, librust-criterion-0.5+default-dev, librust-doc-comment-0.3+default-dev, librust-lexopt-0.3+default-dev, librust-proptest-1+default-dev, librust-rustc-hash-1+default-dev, librust-snapbox-0.4+default-dev, librust-snapbox-0.4+examples-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/winnow]"
   ],
   "Version": [
-    "0.6.18-1"
+    "0.6.26-1"
   ]
 }
