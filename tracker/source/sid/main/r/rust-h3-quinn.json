@@ -6,19 +6,25 @@
     "librust-h3-quinn-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-h3-0.0.3+default-dev \u003c!nocheck\u003e, librust-quinn-0.10+futures-io-dev \u003c!nocheck\u003e, librust-quinn-proto-0.10-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-util-0.7+default-dev (\u003e= 0.7.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-h3-0.0+default-dev (\u003c\u003c 0.0.7-~~) \u003c!nocheck\u003e, librust-h3-0.0+default-dev (\u003e= 0.0.6-~~) \u003c!nocheck\u003e, librust-quinn-0.11+futures-io-dev \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-util-0.7+default-dev (\u003e= 0.7.9-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5059b7d5cb46a5799b8d0f5c2211753f45732d5884878fe47850f47d9f913d92 2484 rust-h3-quinn_0.0.4-1.dsc ac9675014d703c3d516a121757bbc02e53f1ee838e0729fc7534b35024a81ae4 7252 rust-h3-quinn_0.0.4.orig.tar.gz d1a79e590db3a2e0abeece2fff5015bd2acfa4d5ac8a29b3af842472aa1b5dfc 2556 rust-h3-quinn_0.0.4-1.debian.tar.xz"
+    "f9d457dcbbc9435170e37b4e70f0f236a017fafc32023886ae21ab9597bcce96 2586 rust-h3-quinn_0.0.7-1.dsc 17c799f413fceeea505236c4d8132f084ff4b55a652288d91439ee93dc24d855 8131 rust-h3-quinn_0.0.7.orig.tar.gz 479806e1ee7de518030d459c9ab9c2975d94ffb984baa67c55123e389e3a14a3 2792 rust-h3-quinn_0.0.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-h3-quinn"
   ],
   "Files": [
-    "9d6efee92112f3d3b203ba9ea4fdab45 2484 rust-h3-quinn_0.0.4-1.dsc 9c3d9a3e1b951cee2e7b25a3f1912b20 7252 rust-h3-quinn_0.0.4.orig.tar.gz 0c6dd8a3106b600f0d12ee13924885f9 2556 rust-h3-quinn_0.0.4-1.debian.tar.xz"
+    "d25dd287ad59b5249a52c5c1e82b7109 2586 rust-h3-quinn_0.0.7-1.dsc 236c37c5bc018463c7ac31f4c54ed51d 8131 rust-h3-quinn_0.0.7.orig.tar.gz ecea32964ad011da4ead7ad5a2f3e91e 2792 rust-h3-quinn_0.0.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/hyperium/h3"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/h3-quinn]"
   ],
   "Version": [
-    "0.0.4-1"
+    "0.0.7-1"
   ]
 }

@@ -6,16 +6,19 @@
     "python3-ml-collections"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-flit-scm, python3-six, python3-absl \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-flit-scm, python3-six, python3-absl \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c99c52de8b0573dcbbd175a6e016c5662cc21a0570bb8dc7279ffe0a2f7b904 2361 python-ml-collections_1.0.0-1.dsc 00b11a1a339dd6c2d9b7f0daab47ab17e10e29ca1b2a656058605e2b7210897f 61151 python-ml-collections_1.0.0.orig.tar.gz 0d056b5444600dce9807f86d3009cc0d3b7e0b8a1dd7db05276408b4c0781b92 4588 python-ml-collections_1.0.0-1.debian.tar.xz"
+    "eaf5f13bab36c6efcbd1031fa1decbca78b991756a3fd8bf3766ef6364b673b5 2460 python-ml-collections_1.0.0+ds1-1.dsc 12e3348f2a27da30e4219e90666b889c24f03c39e51bff3ed81015a8fe58f5f0 86007 python-ml-collections_1.0.0+ds1.orig.tar.gz 90acdd71732f8d9fc11f68ddafc1a1545f31787df6bfe965d50019eb94e54228 3404 python-ml-collections_1.0.0+ds1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "3a61a18344dbed0f78db5d5c3e88686dd5943405 debian archive/debian/1.0.0+ds1-1 https://git.dgit.debian.org/python-ml-collections"
   ],
   "Directory": [
     "pool/main/p/python-ml-collections"
   ],
   "Files": [
-    "a7827e4abb5088ad3294f981c56aceee 2361 python-ml-collections_1.0.0-1.dsc a2921141e4794c898b5757d1d090ef9e 61151 python-ml-collections_1.0.0.orig.tar.gz e5a785895ed861f76c67b479aef15d65 4588 python-ml-collections_1.0.0-1.debian.tar.xz"
+    "bf1be287d849e031816cd5b09d1f5f7c 2460 python-ml-collections_1.0.0+ds1-1.dsc f82feecebe531d17a91815f0c4e6de96 86007 python-ml-collections_1.0.0+ds1.orig.tar.gz c43c59863349931c6df4ef2356beff34 3404 python-ml-collections_1.0.0+ds1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +45,7 @@
     "4.6.2"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "bazel-bootstrap, python-is-python3, python3-absl, python3-yaml"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-ml-collections.git"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.0+ds1-1"
   ]
 }
