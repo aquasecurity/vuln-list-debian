@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 powerpc ppc64 ppc64el riscv64"
+    "amd64 arm64 riscv64"
   ],
   "Binary": [
     "mimic, mimic-dkms"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-dkms, dh-sequence-dlopenlibdeps, dh-exec, clang, python3, bpftool, ronn, libbpf-dev, libffi-dev, libxdp-dev, linux-source, linux-headers-generic"
+    "debhelper-compat (= 13), dh-sequence-dkms, dh-sequence-dlopenlibdeps, dh-sequence-installsysusers, dh-exec, clang, python3, bpftool, ronn, libbpf-dev, libffi-dev, libxdp-dev, linux-source"
   ],
   "Checksums-Sha256": [
-    "a7d90da068e500e45ca0e51179a6e188f60ece46636462c9cb8fa48fc9be0589 2144 mimic_0.6.3+ds-1.dsc 11dc75290037ab7ebbee9d5515d0069d2b84f9010bbdcaf8b92bddb71d4d1434 380764 mimic_0.6.3+ds.orig.tar.xz 32dd449115f4fd6d7b608125f852d7f0103f6766ea4f97a151bbaf1b83a3fb8f 3288 mimic_0.6.3+ds-1.debian.tar.xz"
+    "803f43712b031f9ec17ee95417d9e699233abbba4232cd9d36ded109bc4614ca 2263 mimic_0.7.0+ds-1.dsc d699fb57a093f1a81a07bd33d3b3d0493c8ce8ab5a9c8b51a83809cb8673c753 385208 mimic_0.7.0+ds.orig.tar.xz 6107cbfdecad9e83aaaf084dc891dfe80bad139ce78a67ecb69b9b4939a13522 5672 mimic_0.7.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mimic"
   ],
   "Files": [
-    "63f6dd50492333a28bc264e9cb405ff8 2144 mimic_0.6.3+ds-1.dsc 3c6e67905da2b5015b683a0483d14017 380764 mimic_0.6.3+ds.orig.tar.xz 108b62a63d019fdaf3d4939b75be96d5 3288 mimic_0.6.3+ds-1.debian.tar.xz"
+    "fc9cdb0d9734238f09d31dc52d64a5c4 2263 mimic_0.7.0+ds-1.dsc 79e330dc14f2496f17d749c62c00ad7a 385208 mimic_0.7.0+ds.orig.tar.xz af549d048582cf617cbcb515611b0cf7 5672 mimic_0.7.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mimic"
   ],
   "Package-List": [
-    "mimic deb net optional arch=amd64,arm64,powerpc,ppc64,ppc64el,riscv64 mimic-dkms deb kernel optional arch=amd64,arm64,powerpc,ppc64,ppc64el,riscv64"
+    "mimic deb net optional arch=amd64,arm64,riscv64 mimic-dkms deb kernel optional arch=amd64,arm64,riscv64"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-dkms"
+  ],
+  "Testsuite-Triggers": [
+    "bats, bc, conntrack, ethtool, jq, linux-headers-generic, linux-image-generic, socat, tshark, wireguard-tools"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/hacker/mimic"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/hacker/mimic.git"
   ],
   "Version": [
-    "0.6.3+ds-1"
+    "0.7.0+ds-1"
   ]
 }

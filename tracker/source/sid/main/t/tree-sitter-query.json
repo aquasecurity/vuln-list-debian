@@ -1,30 +1,30 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "tree-sitter-query-src"
+    "tree-sitter-query-src, librust-tree-sitter-query-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), nodejs, tree-sitter-cli"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-cc-1+default-dev (\u003e= 1.0.89), librust-tree-sitter-0+default-dev (\u003e= 0.21), nodejs, tree-sitter-cli (\u003e= 0.21)"
   ],
   "Checksums-Sha256": [
-    "2a0f9ba6601ba620c73c6f963ac44ed82b3162c58885cc98ff7f4971c31c4ff1 2397 tree-sitter-query_0.1.0-2.dsc b51797d21bad28ea03df29d1e8a02a292a01c1f73b34cca8f7692cafc7f1faa9 24988 tree-sitter-query_0.1.0.orig.tar.xz 512ee2881d3a856471ebe27f742fee23e44ff1e878447bed0089916f74b5a581 2628 tree-sitter-query_0.1.0-2.debian.tar.xz"
+    "508acaa6167c5106b44459459abd84deb6255f3da51d4c027bb8986e0c2dfe8d 2755 tree-sitter-query_0.4.0-2.dsc 74f5f056ba441607cee3258af9f88825d8572f5bc312859702166c5069c1733e 33940 tree-sitter-query_0.4.0.orig.tar.xz 3c7a36cb19aac13db786bfd726ece0163f7640e181d324d83f0205ff1ccd67e9 3348 tree-sitter-query_0.4.0-2.debian.tar.xz"
   ],
   "Dgit": [
-    "464b12b152277aa420f4c3861afed89dd2291fc9 debian archive/debian/0.1.0-2 https://git.dgit.debian.org/tree-sitter-query"
+    "d22bc26094694dbe99e16ab82b918e7d8719dd5e debian archive/debian/0.4.0-2 https://git.dgit.debian.org/tree-sitter-query"
   ],
   "Directory": [
     "pool/main/t/tree-sitter-query"
   ],
   "Files": [
-    "e14751542aaee40ba77e078b556f05a3 2397 tree-sitter-query_0.1.0-2.dsc edc460113197f6714240b1a0c2374d20 24988 tree-sitter-query_0.1.0.orig.tar.xz 84b756f4791d21bbabbf86e8f579088c 2628 tree-sitter-query_0.1.0-2.debian.tar.xz"
+    "dd3011449dec356924c5a77f8fbfb658 2755 tree-sitter-query_0.4.0-2.dsc 7dc0783207a7b9ad3edcea5a108e1e85 33940 tree-sitter-query_0.4.0.orig.tar.xz c5107b364f2b92501c7037d3271c9517 3348 tree-sitter-query_0.4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/nvim-treesitter/tree-sitter-query/"
+    "https://github.com/tree-sitter-grammars/tree-sitter-query/"
   ],
   "Maintainer": [
     "Tree-sitter Team \u003cteam+tree-sitter@tracker.debian.org\u003e"
@@ -33,7 +33,7 @@
     "tree-sitter-query"
   ],
   "Package-List": [
-    "tree-sitter-query-src deb libs optional arch=all"
+    "librust-tree-sitter-query-dev deb rust optional arch=any tree-sitter-query-src deb libs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "tree-sitter-cli"
+    "dh-rust, librust-cc-1+default-dev, librust-tree-sitter-0+default-dev, librust-tree-sitter-query-0.4+default-dev, librust-tree-sitter-query-0.4-dev, tree-sitter-cli"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/tree-sitter-team/tree-sitter-query.git"
   ],
   "Version": [
-    "0.1.0-2"
+    "0.4.0-2"
   ]
 }

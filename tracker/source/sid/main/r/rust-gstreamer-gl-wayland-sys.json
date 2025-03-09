@@ -6,16 +6,19 @@
     "librust-gstreamer-gl-wayland-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-gl-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-gl-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "558d730d4cbee906673776e3c1beb5e8d5625ee379cac4c20d4c9d4be583eb26 2688 rust-gstreamer-gl-wayland-sys_0.23.0-2.dsc 558b96fbba96b96ced4cea976fcb159f0aef66c963ca3507cc04b9f9c5e57c35 33240 rust-gstreamer-gl-wayland-sys_0.23.0.orig.tar.gz dc2708ce0e47d155efeb7b0abb5f8917895bef6479a3db2fd0d5e04a8eb84ec3 3096 rust-gstreamer-gl-wayland-sys_0.23.0-2.debian.tar.xz"
+    "625bd5392b16cac342564ebc43fb70f48778a86875a88d5d2b60a3991268c50a 2117 rust-gstreamer-gl-wayland-sys_0.23.5-1.dsc 9701def285d8cdf69664c44ac759b92d18254e1faa5cfadea18810cc289e5cb9 37672 rust-gstreamer-gl-wayland-sys_0.23.5.orig.tar.gz b09d30303115cfbaab18f39b6a55161226d3ce5bd3d9c9b453f02c38737b416e 3132 rust-gstreamer-gl-wayland-sys_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer-gl-wayland-sys"
   ],
   "Files": [
-    "94a0a532c95a19eac7dffcf5efe743ef 2688 rust-gstreamer-gl-wayland-sys_0.23.0-2.dsc 580411e04429315145f7f8a5fbfb9689 33240 rust-gstreamer-gl-wayland-sys_0.23.0.orig.tar.gz 64d883ae395093f14e052d8565371a63 3096 rust-gstreamer-gl-wayland-sys_0.23.0-2.debian.tar.xz"
+    "fdf8060a87a23d8a6623ac6a2f519a62 2117 rust-gstreamer-gl-wayland-sys_0.23.5-1.dsc ca79f6e8ff45b3fb078b010ca50f1c92 37672 rust-gstreamer-gl-wayland-sys_0.23.5.orig.tar.gz 4b27d04172a9e93dba1cc59e77d19b8a 3132 rust-gstreamer-gl-wayland-sys_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer-gl-wayland-sys]"
   ],
   "Version": [
-    "0.23.0-2"
+    "0.23.5-1"
   ]
 }

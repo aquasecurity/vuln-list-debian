@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "tree-sitter-c-src"
+    "tree-sitter-c-src, librust-tree-sitter-c-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), nodejs, tree-sitter-cli"
+    "debhelper-compat (= 13), dh-sequence-rust, nodejs, librust-cc-1+default-dev (\u003e= 1.0.90), librust-tree-sitter-0+default-dev (\u003e= 0.21), tree-sitter-cli (\u003e= 0.22.6)"
   ],
   "Checksums-Sha256": [
-    "7ecf9401be38cb897a74a6f5c90ef72b6aeae14f1ba0f151d0ca4d069a41d7c4 2352 tree-sitter-c_0.20.5-2.dsc 1c834a8df8a2c55fafa741c8bce83299b40264dec1cc162c37e34ea39127207d 181460 tree-sitter-c_0.20.5.orig.tar.xz 8a5bc8e59cb1d4a7d4ef36adba8055996b0661faba2eed342a097eee60264793 3172 tree-sitter-c_0.20.5-2.debian.tar.xz"
+    "4a65aa71deb561bf7a00b75afa3a6c20c77c84df02aeefecd5ce7106697948cd 2693 tree-sitter-c_0.21.3-3.dsc 076290ed27fbd1eb95d190d94cae56329289a3e888d25d7526135eb6f05d3639 195048 tree-sitter-c_0.21.3.orig.tar.xz f1788c91f6dfac7166e6989ec362cfb0bd82605b39b83fc29f6428df481af28b 4000 tree-sitter-c_0.21.3-3.debian.tar.xz"
   ],
   "Dgit": [
-    "f5af4393d20dc959d181c4183bbccf3d8bf67e0f debian archive/debian/0.20.5-2 https://git.dgit.debian.org/tree-sitter-c"
+    "765384f76f828724689a03f557c771b50b0688e2 debian archive/debian/0.21.3-3 https://git.dgit.debian.org/tree-sitter-c"
   ],
   "Directory": [
     "pool/main/t/tree-sitter-c"
   ],
   "Files": [
-    "dcf6962b4b7d67016e58fea1d37b0ff4 2352 tree-sitter-c_0.20.5-2.dsc 50dc7b405855cecf03d4d5e0cc9b0b3e 181460 tree-sitter-c_0.20.5.orig.tar.xz bb24e5a2b804ba2b9f6b3ea01a45d9bb 3172 tree-sitter-c_0.20.5-2.debian.tar.xz"
+    "c5fd0112518899664f12ab91f772ad23 2693 tree-sitter-c_0.21.3-3.dsc 4fd7570d01149090837c40826e4a4126 195048 tree-sitter-c_0.21.3.orig.tar.xz e57fc6271584a2bbf98b6183a9f50144 4000 tree-sitter-c_0.21.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "tree-sitter-c"
   ],
   "Package-List": [
-    "tree-sitter-c-src deb libs optional arch=all"
+    "librust-tree-sitter-c-dev deb rust optional arch=any tree-sitter-c-src deb libs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "tree-sitter-cli"
+    "dh-rust, librust-cc-1+default-dev, librust-tree-sitter-0+default-dev, librust-tree-sitter-c-0.21+default-dev, librust-tree-sitter-c-0.21-dev, tree-sitter-cli"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/tree-sitter-team/tree-sitter-c.git"
   ],
   "Version": [
-    "0.20.5-2"
+    "0.21.3-3"
   ]
 }

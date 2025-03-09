@@ -1,30 +1,30 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "tree-sitter-lua-src"
+    "tree-sitter-lua-src, librust-tree-sitter-lua-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), nodejs, tree-sitter-cli"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-cc-1+default-dev (\u003e= 1.0.89), librust-tree-sitter-0+default-dev (\u003e= 0.21), nodejs, tree-sitter-cli (\u003e= 0.21)"
   ],
   "Checksums-Sha256": [
-    "369feaf7608f64a175ddd3ac455b357be92eecbf943fdae0583fbc3559bf3ef3 2375 tree-sitter-lua_0.0.18-2.dsc a48cb13c4036bd24d6266bac36ef89c4b751845b7d239ca03b76888947e6ca1b 34588 tree-sitter-lua_0.0.18.orig.tar.xz 3eafa0a39a2ba5eb96ec89e5ba61544a0a51ce030260635fc0a220ed7b5932b0 2588 tree-sitter-lua_0.0.18-2.debian.tar.xz"
+    "ec037520876a019d98473520abe5809560da4a63439535b8f5bdf90649a2cce6 2721 tree-sitter-lua_0.1.0-2.dsc f3ee12f0aa81283a2e57661ed16547f1b82edc95aa7a3c297dedf9325a851808 43816 tree-sitter-lua_0.1.0.orig.tar.xz 216bf29089eb1f331c202aebab572c835d81bf94923dd5ff6334c0d8fb319195 3288 tree-sitter-lua_0.1.0-2.debian.tar.xz"
   ],
   "Dgit": [
-    "99835f03f056f33ac1c31cca408380856342c12a debian archive/debian/0.0.18-2 https://git.dgit.debian.org/tree-sitter-lua"
+    "c94f536ac4bdf22f4fd46a461671ca4f4d919641 debian archive/debian/0.1.0-2 https://git.dgit.debian.org/tree-sitter-lua"
   ],
   "Directory": [
     "pool/main/t/tree-sitter-lua"
   ],
   "Files": [
-    "8aab17a8fc5466a65f507e9539fb16e0 2375 tree-sitter-lua_0.0.18-2.dsc b02a7d643ec0ef5cd93602fc87b3dc78 34588 tree-sitter-lua_0.0.18.orig.tar.xz 80af563c51a57774591de73b49865c8d 2588 tree-sitter-lua_0.0.18-2.debian.tar.xz"
+    "8baaa6f22ad7bbe668a0b65e442708bc 2721 tree-sitter-lua_0.1.0-2.dsc 853e0c023dccb67ac4de91ee18e4c302 43816 tree-sitter-lua_0.1.0.orig.tar.xz b4062b3b9d27eb550ddc244d83e5fb99 3288 tree-sitter-lua_0.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/MunifTanjim/tree-sitter-lua/"
+    "https://github.com/tree-sitter-grammars/tree-sitter-lua/"
   ],
   "Maintainer": [
     "Tree-sitter Team \u003cteam+tree-sitter@tracker.debian.org\u003e"
@@ -33,7 +33,7 @@
     "tree-sitter-lua"
   ],
   "Package-List": [
-    "tree-sitter-lua-src deb libs optional arch=all"
+    "librust-tree-sitter-lua-dev deb rust optional arch=any tree-sitter-lua-src deb libs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "tree-sitter-cli"
+    "dh-rust, librust-cc-1+default-dev, librust-tree-sitter-0+default-dev, librust-tree-sitter-lua-0.1+default-dev, librust-tree-sitter-lua-0.1-dev, tree-sitter-cli"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/tree-sitter-team/tree-sitter-lua.git"
   ],
   "Version": [
-    "0.0.18-2"
+    "0.1.0-2"
   ]
 }
