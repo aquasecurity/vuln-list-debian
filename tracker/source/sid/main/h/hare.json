@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "any"
+    "amd64 arm64 riscv64"
   ],
   "Binary": [
     "hare"
@@ -9,13 +9,13 @@
     "debhelper-compat (= 13), harec, scdoc \u003c!nodoc\u003e, tzdata \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0e6663b8aa67c495b05ff42386521cb92fcc1cdee2e89b38d17bee5a3acd4dc6 1875 hare_0.24.2-2.dsc afba69fd537a63442da53d115d9b50f525918159b395843ede2a5473323e0776 912808 hare_0.24.2.orig.tar.gz 2013fe0bc652280aad3838b44e342a863b68b90ed5e74e49e349521122318c7a 5596 hare_0.24.2-2.debian.tar.xz"
+    "d1ded5ecef172d6dc38adee6081a025b91ee561c20e9cc5e567f3174aace83da 2051 hare_0.24.2-3.dsc afba69fd537a63442da53d115d9b50f525918159b395843ede2a5473323e0776 912808 hare_0.24.2.orig.tar.gz f367e22e26a54347a3fe6e833f779ba46bb15eeff80191200f99f1ce065211c1 6328 hare_0.24.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hare"
   ],
   "Files": [
-    "e76e517d42ec48e154a9d0fcddfec52f 1875 hare_0.24.2-2.dsc b0dcac9cfee0da536e3b2d148ee2d4de 912808 hare_0.24.2.orig.tar.gz 5cb0d7213bde856f3ad6cefe091ca313 5596 hare_0.24.2-2.debian.tar.xz"
+    "bc64b9a730dbb7e536f37011037dffb1 2051 hare_0.24.2-3.dsc b0dcac9cfee0da536e3b2d148ee2d4de 912808 hare_0.24.2.orig.tar.gz 4e3f890bafddd24e3a55b6a5dcfe7152 6328 hare_0.24.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "hare"
   ],
   "Package-List": [
-    "hare deb devel optional arch=any"
+    "hare deb devel optional arch=amd64,arm64,riscv64"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "binutils-aarch64-linux-gnu, binutils-riscv64-linux-gnu, binutils-x86-64-linux-gnu, qemu-user, tzdata"
   ],
   "Uploaders": [
     "Guilherme Puida Moreira \u003cguilherme@puida.xyz\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/hare.git"
   ],
   "Version": [
-    "0.24.2-2"
+    "0.24.2-3"
   ]
 }
