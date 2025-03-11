@@ -6,19 +6,22 @@
     "python3-moto"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aws-xray-sdk, python3-boto3, python3-botocore, python3-build, python3-click, python3-cryptography, python3-dateutil, python3-docker, python3-flask, python3-flask-cors, python3-freezegun, python3-graphql-core, python3-inflection, python3-jinja2, python3-joserfc, python3-jsondiff, python3-jsonpath-ng, python3-lxml, python3-multipart, python3-mypy, python3-openapi-spec-validator, python3-packaging, python3-prompt-toolkit, python3-pyparsing, python3-pytest, python3-requests, python3-responses, python3-ruff, python3-typing-extensions, python3-werkzeug, python3-xmltodict, python3-yaml"
+    "python3-aws-xray-sdk, python3-boto3, python3-botocore, python3-build, python3-click, python3-cryptography, python3-dateutil, python3-docker, python3-flask, python3-flask-cors, python3-freezegun, python3-graphql-core, python3-inflection, python3-jinja2, python3-joserfc, python3-jsondiff, python3-jsonpath-ng, python3-lxml, python3-multipart, python3-mypy, python3-openapi-spec-validator, python3-packaging, python3-prompt-toolkit, python3-pycognito, python3-pyotp, python3-pyparsing, python3-pytest, python3-requests, python3-responses, python3-typing-extensions, python3-werkzeug, python3-xmltodict, python3-yaml"
   ],
   "Checksums-Sha256": [
-    "0cb4fc2af1604b7ec29846d8536f5c5325ce3c846025c8770b0d4f2beee32fa4 2711 python-moto_5.1.1-1.dsc 5b25dbc62cccd9f36ef062c870db49d976b241129024fab049e2d3d1296e2a57 6647375 python-moto_5.1.1.orig.tar.gz 05c1f43728f16f79fb89d164d61cb46f2d472e60f8ff84161e4590bd8abba14d 2520 python-moto_5.1.1-1.debian.tar.xz"
+    "13e0692039baca0145f4ddb25ee97264cd3b56eb49d6a4bf9bb4685c002cc572 2837 python-moto_5.1.1-2.dsc 5b25dbc62cccd9f36ef062c870db49d976b241129024fab049e2d3d1296e2a57 6647375 python-moto_5.1.1.orig.tar.gz ba812a1979571beebe26d54655760d0533408d1a1085f1625cae28ee648458fc 3532 python-moto_5.1.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "9a979bd7ce7fe0d7f90a609425af34eede5d3b69 debian archive/debian/5.1.1-2 https://git.dgit.debian.org/python-moto"
   ],
   "Directory": [
     "pool/main/p/python-moto"
   ],
   "Files": [
-    "da14fd583e6f619424b0e3910f560604 2711 python-moto_5.1.1-1.dsc 5cad8c67efcd943d4610ab64425d7324 6647375 python-moto_5.1.1.orig.tar.gz f8b48a1a59c99cdba5db53b7fdd37cef 2520 python-moto_5.1.1-1.debian.tar.xz"
+    "b87b0815e65968a7ad9c92cbdc9a87fa 2837 python-moto_5.1.1-2.dsc 5cad8c67efcd943d4610ab64425d7324 6647375 python-moto_5.1.1.orig.tar.gz de031ad620ac1c21f3922101936231f8 3532 python-moto_5.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +48,7 @@
     "4.6.1"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-moto.git"
   ],
   "Version": [
-    "5.1.1-1"
+    "5.1.1-2"
   ]
 }
