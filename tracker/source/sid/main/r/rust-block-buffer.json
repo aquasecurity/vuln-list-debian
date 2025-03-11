@@ -6,19 +6,25 @@
     "librust-block-buffer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-generic-array-0.14+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-generic-array-0.14+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b769d30f130b72726d3014b70a3e7d3c8adf2112200ceb225135d9ce623d7d9c 2201 rust-block-buffer_0.10.2-2.dsc 0bf7fe51849ea569fd452f37822f606a5cabb684dc918707a0193fd4664ff324 10258 rust-block-buffer_0.10.2.orig.tar.gz 44542c08e145ca744da487b0dd45910cc8fbfa6bffbbff583d0473afe8059838 2920 rust-block-buffer_0.10.2-2.debian.tar.xz"
+    "825e1ba1d84ac9c8e06eecfddf93c6e36c1eeba2741873a4790866afb5f36157 1676 rust-block-buffer_0.10.4-1.dsc 3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71 10538 rust-block-buffer_0.10.4.orig.tar.gz 5977232a486753e7570377614ebb98cffb079d2a8c9993282c0d8e73091f48aa 3012 rust-block-buffer_0.10.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-block-buffer"
   ],
   "Files": [
-    "da70ca8708bc1720ceca74bb6ad8382c 2201 rust-block-buffer_0.10.2-2.dsc 2d4d81d5a0b77bd9e7a88a728bfb9bfc 10258 rust-block-buffer_0.10.2.orig.tar.gz 163097804801feea03c7f1b3d292fba0 2920 rust-block-buffer_0.10.2-2.debian.tar.xz"
+    "aaa0d8ca33ea9e40d166bd30afa9766d 1676 rust-block-buffer_0.10.4-1.dsc 023b03cf9968b29253a5dfe62051008d 10538 rust-block-buffer_0.10.4.orig.tar.gz a4f9948feab16d6a2379b06c209c73bb 3012 rust-block-buffer_0.10.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/utils"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/block-buffer]"
   ],
   "Version": [
-    "0.10.2-2"
+    "0.10.4-1"
   ]
 }
