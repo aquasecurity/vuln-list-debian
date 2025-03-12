@@ -6,16 +6,19 @@
     "librust-gstreamer-pbutils-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-audio-sys-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-sys-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-audio-sys-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-sys-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "052e859579c05e8d827b6b47a4875f11f57720063ae71e8d68fe415e25efac55 2815 rust-gstreamer-pbutils-sys_0.23.0-2.dsc 5a1711616229f46a5767b79eb3bf15cb5ab9be9a721dc00b857f1cd6454387ac 39036 rust-gstreamer-pbutils-sys_0.23.0.orig.tar.gz e6cfa6f4781b405d2b1356278280300162ef581c4f36c3e2d1d9f6d963ed3520 3100 rust-gstreamer-pbutils-sys_0.23.0-2.debian.tar.xz"
+    "c08026e1f9bd4bfb5f688d4eea57c847ccb9a2c3ffe6fa580a4480e041734c57 2244 rust-gstreamer-pbutils-sys_0.23.5-1.dsc 304101f5fccbbe41e0169536777ddb7680c2c837e18575c22b30fc20cedfb76f 43666 rust-gstreamer-pbutils-sys_0.23.5.orig.tar.gz 91c40df7e0c0e1ed7d94b7247bb8dfffbcfc8656928b72be9239c6b85f8eb5d5 3140 rust-gstreamer-pbutils-sys_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer-pbutils-sys"
   ],
   "Files": [
-    "7d80e20554ddaee983a5e4fecef071b9 2815 rust-gstreamer-pbutils-sys_0.23.0-2.dsc 6176827832bc541619cf1e9448f3030b 39036 rust-gstreamer-pbutils-sys_0.23.0.orig.tar.gz 98a7219138fcf8de03a398bb245df26a 3100 rust-gstreamer-pbutils-sys_0.23.0-2.debian.tar.xz"
+    "ddaf848ccca149c2a5c95d5cdba7f3f2 2244 rust-gstreamer-pbutils-sys_0.23.5-1.dsc 0ef050b67b4ed770c138dddd3a634df9 43666 rust-gstreamer-pbutils-sys_0.23.5.orig.tar.gz 61ec9b573f4ba7d11a5aa7aabcb59771 3140 rust-gstreamer-pbutils-sys_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer-pbutils-sys]"
   ],
   "Version": [
-    "0.23.0-2"
+    "0.23.5-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-gstreamer-allocators-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ffac2d4c2e45f8341ada8cb27fd8be00d955498fc39c0e9555277d582ed0516c 2702 rust-gstreamer-allocators-sys_0.23.0-2.dsc 05c49cf4d560666db1d83afa3aa3200d6dff3675ab672746260514e8583f4b68 34266 rust-gstreamer-allocators-sys_0.23.0.orig.tar.gz e4c0849803be165e1e54b3eca66ec85bf017c87e351b3983897cfa6cf4b1dd1e 3008 rust-gstreamer-allocators-sys_0.23.0-2.debian.tar.xz"
+    "26f582f40465c2a1e1e26f72bef600e0f2349bebfff406d2ee7482a5f7c834a0 2131 rust-gstreamer-allocators-sys_0.23.5-1.dsc c005b6cfae0c7e97b0ea95921f561fc8a8786b734cec25c29363a52305074a10 38536 rust-gstreamer-allocators-sys_0.23.5.orig.tar.gz 7679c66805caa2f0dd20a521921464bd266d1cead593c523d757cb39dc61cb7a 3056 rust-gstreamer-allocators-sys_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer-allocators-sys"
   ],
   "Files": [
-    "895c274ae26daa72245b293b32f98b71 2702 rust-gstreamer-allocators-sys_0.23.0-2.dsc 98f7d65bc1eb0134182430cdbc1aa2df 34266 rust-gstreamer-allocators-sys_0.23.0.orig.tar.gz 0d85cc6c72fcd509f21e761cb13f1151 3008 rust-gstreamer-allocators-sys_0.23.0-2.debian.tar.xz"
+    "f25202ada803d6c80b2dbcddefca7c36 2131 rust-gstreamer-allocators-sys_0.23.5-1.dsc dd10c605301b92cc100b2d6f9d1744d8 38536 rust-gstreamer-allocators-sys_0.23.5.orig.tar.gz ef00421fe88c03314b1e9b4aa32c2a30 3056 rust-gstreamer-allocators-sys_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer-allocators-sys]"
   ],
   "Version": [
-    "0.23.0-2"
+    "0.23.5-1"
   ]
 }

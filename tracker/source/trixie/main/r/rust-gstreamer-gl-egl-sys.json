@@ -6,16 +6,19 @@
     "librust-gstreamer-gl-egl-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-gl-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-gl-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgstreamer-plugins-base1.0-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8c2324e3878ea6cda6146a594ffdd4086804470487a24ff70612e44ab3db4f29 2644 rust-gstreamer-gl-egl-sys_0.23.0-2.dsc f5b75c95d1c4ddb23018e01db2103c1012c66bf35771fae00d5cce6270cb5cbe 33301 rust-gstreamer-gl-egl-sys_0.23.0.orig.tar.gz 28e97d49cf9157cf4c9328a2be2abae8b830407a41957e334477bdb6b76930d5 3084 rust-gstreamer-gl-egl-sys_0.23.0-2.debian.tar.xz"
+    "4186d31c8b0674320f1336e06336046f1c67806c520c4e91206c45cc3efcb571 2073 rust-gstreamer-gl-egl-sys_0.23.5-1.dsc f7ebdc94dc34e2b135b2610676b47d30ce88b80862f01e2acf7e29b9b42a14e4 37727 rust-gstreamer-gl-egl-sys_0.23.5.orig.tar.gz 6ec0fc4871947e268239ec8ef7a7500e43498ec9f82555fdd1de2f1e81023939 3116 rust-gstreamer-gl-egl-sys_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer-gl-egl-sys"
   ],
   "Files": [
-    "2534242bb55fd9d8ab001b73f2cb6ee7 2644 rust-gstreamer-gl-egl-sys_0.23.0-2.dsc 8ae065f6baba33c944a30101d97e5e6b 33301 rust-gstreamer-gl-egl-sys_0.23.0.orig.tar.gz ad7e6e804d8e791df4a5de62f87075c1 3084 rust-gstreamer-gl-egl-sys_0.23.0-2.debian.tar.xz"
+    "a0dc8666a2e801437c6a4a7d99532349 2073 rust-gstreamer-gl-egl-sys_0.23.5-1.dsc 49f1dd1ef86fc58529f763be588b0bbc 37727 rust-gstreamer-gl-egl-sys_0.23.5.orig.tar.gz 64cf700e323ae7dcf2c378ae36e963e9 3116 rust-gstreamer-gl-egl-sys_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer-gl-egl-sys]"
   ],
   "Version": [
-    "0.23.0-2"
+    "0.23.5-1"
   ]
 }
