@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "amd64 arm64"
+    "amd64 arm64 all"
   ],
   "Binary": [
-    "xenstore-utils, xen-utils-common, xen-hypervisor-common, xen-doc, xen-utils-4.19, xen-utils-4.19-dbg, xen-hypervisor-4.19-amd64, xen-hypervisor-4.19-amd64-dbg, xen-system-amd64, xen-hypervisor-4.19-arm64, xen-hypervisor-4.19-arm64-dbg, xen-system-arm64, libxen-dev, libxenmisc4.19, libxencall1, libxendevicemodel1, libxenevtchn1, libxenforeignmemory1, libxengnttab1, libxenstore4, libxentoolcore1, libxentoollog1, libxenhypfs1"
+    "xenstore-utils, xen-utils-common, xen-hypervisor-common, xen-doc, xen-utils-4.20, xen-utils-4.20-dbg, xen-hypervisor-4.20-amd64, xen-hypervisor-4.20-amd64-dbg, xen-system-amd64, xen-hypervisor-4.20-arm64, xen-hypervisor-4.20-arm64-dbg, xen-system-arm64, libxen-dev, libxenmisc4.20, libxencall1, libxendevicemodel1, libxenevtchn1, libxenforeignmemory1, libxengnttab1, libxenstore4, libxentoolcore1, libxentoollog1, libxenhypfs1"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.22.5), file, rdfind, lsb-release, flex, bison, python3-dev:any, libpython3-dev, dh-python, python3-setuptools, bcc [amd64], gcc-multilib [amd64], libext2fs-dev, iasl, seabios [amd64], libaio-dev, libfdt-dev [arm64], libglib2.0-dev, liblzma-dev, libncurses-dev, libpixman-1-dev, libyajl-dev, pkgconf, uuid-dev, zlib1g-dev, libzstd-dev, pandoc, ocaml, ocaml-findlib"
+    "debhelper-compat (= 13), dh-exec, file, rdfind, lsb-release, flex, bison, python3-dev:any, libpython3-dev, dh-python, python3-setuptools, bcc [amd64], gcc-multilib [amd64], libext2fs-dev, iasl, seabios [amd64], libaio-dev, libfdt-dev [arm64], libglib2.0-dev, liblzma-dev, libncurses-dev, libpixman-1-dev, libyajl-dev, pkgconf, uuid-dev, zlib1g-dev, libzstd-dev, pandoc, ocaml, ocaml-findlib"
   ],
   "Checksums-Sha256": [
-    "2c41e486c4d27fe5a866f014dc9ac1af7c5f2a5be74545b421b3469945689352 4052 xen_4.19.1-1.dsc e6fe38d136d8e0e0844da859498bac2243f4859c05d9d4b888f667b99d143660 4842464 xen_4.19.1.orig.tar.xz 34fae8347ddaa3f2a277f1aae5b5a335a79a28f57ab0e757edacc78607140357 140568 xen_4.19.1-1.debian.tar.xz"
+    "242df67730cd2ed966bba1a4cd657eac72a203e971d1d4f5e7bd9edce89fbcaa 4026 xen_4.20.0-1.dsc 5e5e548c08331ed91abeab0ec6b6e809bccab924084e7db8d546e0dd0ef96b51 4897576 xen_4.20.0.orig.tar.xz 50c3239457c558ee661e99a653a12b4b488bdf44b8523a3f0cffc4b7fc58ba65 138636 xen_4.20.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "dee562d233bc8ff74745995dd37a3a1acd310213 debian archive/debian/4.19.1-1 https://git.dgit.debian.org/xen"
+    "680845262e9fbf4e6977601e2002a4ec08aa60bb debian archive/debian/4.20.0-1 https://git.dgit.debian.org/xen"
   ],
   "Directory": [
     "pool/main/x/xen"
   ],
   "Files": [
-    "8bed5e8829570c4f3f1a4b460ea05dc0 4052 xen_4.19.1-1.dsc 39338c4558e7c3414914b688a8cd0797 4842464 xen_4.19.1.orig.tar.xz b1fe28131bbdbf6ef45540cd420ff04f 140568 xen_4.19.1-1.debian.tar.xz"
+    "6777f9a1263b10752ab113bd62bd8114 4026 xen_4.20.0-1.dsc 883dd3c202493310ebff3feccc582c22 4897576 xen_4.20.0.orig.tar.xz 2484d40bf507bf5d729ba7913f488ff9 138636 xen_4.20.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "xen"
   ],
   "Package-List": [
-    "libxen-dev deb libdevel optional arch=amd64,arm64 libxencall1 deb libs optional arch=amd64,arm64 libxendevicemodel1 deb libs optional arch=amd64,arm64 libxenevtchn1 deb libs optional arch=amd64,arm64 libxenforeignmemory1 deb libs optional arch=amd64,arm64 libxengnttab1 deb libs optional arch=amd64,arm64 libxenhypfs1 deb libs optional arch=amd64,arm64 libxenmisc4.19 deb libs optional arch=amd64,arm64 libxenstore4 deb libs optional arch=amd64,arm64 libxentoolcore1 deb libs optional arch=amd64,arm64 libxentoollog1 deb libs optional arch=amd64,arm64 xen-doc deb doc optional arch=amd64,arm64 xen-hypervisor-4.19-amd64 deb kernel optional arch=amd64 xen-hypervisor-4.19-amd64-dbg deb debug optional arch=amd64 xen-hypervisor-4.19-arm64 deb kernel optional arch=arm64 xen-hypervisor-4.19-arm64-dbg deb debug optional arch=arm64 xen-hypervisor-common deb kernel optional arch=amd64,arm64 xen-system-amd64 deb admin optional arch=amd64 xen-system-arm64 deb admin optional arch=arm64 xen-utils-4.19 deb admin optional arch=amd64,arm64 xen-utils-4.19-dbg deb debug optional arch=amd64,arm64 xen-utils-common deb admin optional arch=amd64,arm64 xenstore-utils deb admin optional arch=amd64,arm64"
+    "libxen-dev deb libdevel optional arch=amd64,arm64 libxencall1 deb libs optional arch=amd64,arm64 libxendevicemodel1 deb libs optional arch=amd64,arm64 libxenevtchn1 deb libs optional arch=amd64,arm64 libxenforeignmemory1 deb libs optional arch=amd64,arm64 libxengnttab1 deb libs optional arch=amd64,arm64 libxenhypfs1 deb libs optional arch=amd64,arm64 libxenmisc4.20 deb libs optional arch=amd64,arm64 libxenstore4 deb libs optional arch=amd64,arm64 libxentoolcore1 deb libs optional arch=amd64,arm64 libxentoollog1 deb libs optional arch=amd64,arm64 xen-doc deb doc optional arch=all xen-hypervisor-4.20-amd64 deb kernel optional arch=amd64 xen-hypervisor-4.20-amd64-dbg deb debug optional arch=amd64 xen-hypervisor-4.20-arm64 deb kernel optional arch=arm64 xen-hypervisor-4.20-arm64-dbg deb debug optional arch=arm64 xen-hypervisor-common deb kernel optional arch=amd64,arm64 xen-system-amd64 deb admin optional arch=amd64 xen-system-arm64 deb admin optional arch=arm64 xen-utils-4.20 deb admin optional arch=amd64,arm64 xen-utils-4.20-dbg deb debug optional arch=amd64,arm64 xen-utils-common deb admin optional arch=amd64,arm64 xenstore-utils deb admin optional arch=amd64,arm64"
   ],
   "Priority": [
     "source"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/xen-team/debian-xen.git"
   ],
   "Version": [
-    "4.19.1-1"
+    "4.20.0-1"
   ]
 }

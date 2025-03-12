@@ -6,19 +6,22 @@
     "librust-cargo-metadata-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-camino-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-camino-1+serde1-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-cargo-platform-0.1+default-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-semver-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-semver-1+serde-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.79-~~) \u003c!nocheck\u003e, librust-serde-json-1+unbounded-depth-dev (\u003e= 1.0.79-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.31-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.42.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-camino-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-camino-1+serde1-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-cargo-platform-0.2+default-dev \u003c!nocheck\u003e, librust-semver-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-semver-1+serde-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.79-~~) \u003c!nocheck\u003e, librust-serde-json-1+unbounded-depth-dev (\u003e= 1.0.79-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.31-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d8e1eedcdf0a6bfe52075ac75b8f0ca83c691e053e08f6fc9e96a41cbc44df2e 2828 rust-cargo-metadata_0.15.4-2.dsc eee4243f1f26fc7a42710e7439c149e2b10b05472f88090acce52632f231a73a 19993 rust-cargo-metadata_0.15.4.orig.tar.gz cb687d695fe90839cc288d4cfda6b3704461ebe72d06d4a814f242101c61cf8a 3396 rust-cargo-metadata_0.15.4-2.debian.tar.xz"
+    "3e85234410c93d930674c0df7957dfb8f0ac62c7f7e143647729e3875676e8c5 2878 rust-cargo-metadata_0.15.4-3.dsc eee4243f1f26fc7a42710e7439c149e2b10b05472f88090acce52632f231a73a 19993 rust-cargo-metadata_0.15.4.orig.tar.gz 95515ae22d85dabe6376a5f56dd0f131b6f53ff7aeaf6089d3ab5a616a6b4517 3460 rust-cargo-metadata_0.15.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cargo-metadata"
   ],
   "Files": [
-    "d6a879c530203c47f5c1d369fc0404c4 2828 rust-cargo-metadata_0.15.4-2.dsc 272297b9e981f57ce81bf6f238f13588 19993 rust-cargo-metadata_0.15.4.orig.tar.gz b424b51fe5c7f3f771e1766176a4cf1d 3396 rust-cargo-metadata_0.15.4-2.debian.tar.xz"
+    "6842924c8dc615b2b218c410d9ceb81c 2878 rust-cargo-metadata_0.15.4-3.dsc 272297b9e981f57ce81bf6f238f13588 19993 rust-cargo-metadata_0.15.4.orig.tar.gz 60169f4a734889b3effedd433e8e7628 3460 rust-cargo-metadata_0.15.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/oli-obk/cargo_metadata"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matt Kraai \u003ckraai@debian.org\u003e, Robin Krahl \u003crobin.krahl@ireas.org\u003e"
+    "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cargo-metadata"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-metadata]"
   ],
   "Version": [
-    "0.15.4-2"
+    "0.15.4-3"
   ]
 }
