@@ -6,22 +6,22 @@
     "u-boot, u-boot-amlogic-binaries, u-boot-asahi, u-boot-imx, u-boot-qemu, u-boot-qcom, u-boot-tegra, u-boot-omap, u-boot-sunxi, u-boot-exynos, u-boot-exynos-binaries, u-boot-mvebu, u-boot-rockchip, u-boot-rpi, u-boot-stm32, u-boot-sifive, u-boot-sitara-binaries, u-boot-starfive, u-boot-tools"
   ],
   "Build-Depends": [
-    "bc, bison, debhelper-compat (= 13), device-tree-compiler, flex, libpython3-dev:native [linux-any], libssl-dev, python3:any [linux-any], python3-libfdt:native, python3-pyelftools [linux-any], python3-setuptools [linux-any], swig [linux-any]"
+    "bc, bison, debhelper-compat (= 13), device-tree-compiler, flex, libgnutls28-dev, libpython3-dev:native [linux-any], libssl-dev, python3:any [linux-any], python3-libfdt:native, python3-pyelftools [linux-any], python3-setuptools [linux-any], swig [linux-any]"
   ],
   "Build-Depends-Arch": [
-    "arm-trusted-firmware (\u003e= 2.10.10) [arm64], crust-firmware (\u003e= 0.3-2~) [arm64], gcc-arm-linux-gnueabihf [arm64], libfdt-dev:native [arm64], libgnutls28-dev, libgnutls28-dev:native [arm64], libncurses-dev, libncurses-dev:native, libssl-dev:native, lzop [armhf], opensbi (\u003e= 1.3) [riscv64], python3-jsonschema:native [arm64], python3-yaml:native [arm64], uuid-dev, uuid-dev:native [arm64]"
+    "arm-trusted-firmware (\u003e= 2.9~) [arm64], crust-firmware (\u003e= 0.3-2~) [arm64], gcc-arm-linux-gnueabihf [arm64], libfdt-dev:native [arm64], libgnutls28-dev:native [arm64 armel armhf], libncurses-dev, libncurses-dev:native, libssl-dev:native, lzop [armhf], opensbi (\u003e= 1.3) [riscv64], python3-jsonschema:native [arm64], python3-yaml:native [arm64], uuid-dev, uuid-dev:native [arm64], xxd [arm64]"
   ],
   "Build-Depends-Indep": [
     "gcc-i686-linux-gnu [!i386], gcc-arm-linux-gnueabihf [!armhf], gcc-aarch64-linux-gnu [!arm64], gcc-riscv64-linux-gnu [!riscv64], gcc-x86-64-linux-gnu [!amd64], gcc-powerpc-linux-gnu [!powerpc], gcc-mips64el-linux-gnuabi64 [!mips64el], gcc-mipsel-linux-gnu [!mipsel]"
   ],
   "Checksums-Sha256": [
-    "9b575c26a38008aeab51600870c3785e692cad6392206cef9c9f253fc32540aa 3480 u-boot_2024.01+dfsg-7.dsc cd9f4c204fdd1157de8c812ded9b12b819d044f7b5ed340565b46653ae05a17d 16768668 u-boot_2024.01+dfsg.orig.tar.xz fd17ee12237dcbf73c22eb4e06b3c14c453de52e699c37136c605f422146c73a 105888 u-boot_2024.01+dfsg-7.debian.tar.xz"
+    "9cdf13473763f98994821ad9d41f48d253966d355317eb0aa2f3a8ac49018993 3720 u-boot_2025.01-2.dsc cdef7d507c93f1bbd9f015ea9bc21fa074268481405501945abc6f854d5b686f 32890299 u-boot_2025.01.orig.tar.bz2 8a25ad74cd740a6e89a212bd8d7412d2e65882fecf8bc56ed806da999bb26c4a 687 u-boot_2025.01.orig.tar.bz2.asc b61d2695fe709be15bde2c9d5377c727962f132f91901d23ad67a9039a341e51 167488 u-boot_2025.01-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/u-boot"
   ],
   "Files": [
-    "6799baf1041a5d3b7e328e12dae1ff27 3480 u-boot_2024.01+dfsg-7.dsc 42a989d18bc8d9f5cbcf9f96bc1b7c05 16768668 u-boot_2024.01+dfsg.orig.tar.xz d2242dbc0f4c997354ff242092559f91 105888 u-boot_2024.01+dfsg-7.debian.tar.xz"
+    "f33f47dea3d410171d6f2351b09212aa 3720 u-boot_2025.01-2.dsc a9b03ef9a6a0fce2f913abc97a6f4bc5 32890299 u-boot_2025.01.orig.tar.bz2 748fdffefb540d3e84e005b61449a4ba 687 u-boot_2025.01.orig.tar.bz2.asc d3289e1916670748baf8ee38bfa4059c 167488 u-boot_2025.01-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Uploaders": [
     "Loïc Minier \u003clool@debian.org\u003e, Clint Adams \u003cclint@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/u-boot.git"
   ],
   "Version": [
-    "2024.01+dfsg-7"
+    "2025.01-2"
   ]
 }

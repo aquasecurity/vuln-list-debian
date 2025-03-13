@@ -6,16 +6,19 @@
     "librust-async-std-resolver-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-std-1+default-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-async-std-1+unstable-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev (\u003e= 0.1.43-~~) \u003c!nocheck\u003e, librust-futures-io-0.3+std-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-hickory-resolver-0.24+system-config-dev \u003c!nocheck\u003e, librust-hickory-resolver-0.24-dev \u003c!nocheck\u003e, librust-pin-utils-0.1+default-dev \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-std-1+default-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-async-std-1+unstable-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev (\u003e= 0.1.43-~~) \u003c!nocheck\u003e, librust-futures-io-0.3+std-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-hickory-resolver-0.24+system-config-dev \u003c!nocheck\u003e, librust-hickory-resolver-0.24-dev \u003c!nocheck\u003e, librust-pin-utils-0.1+default-dev \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "077c01ffb8415992ca7eb308633aadc69f80b06fe9a112844caf31304ded4129 2922 rust-async-std-resolver_0.24.0-1.dsc 3c0ed2b6671c13d2c28756c5a64e04759c1e0b5d3d7ac031f521c3561e21fbcb 12321 rust-async-std-resolver_0.24.0.orig.tar.gz 94455cdec0b5b8fd2c0666d99c8983720fef3c9c3c17c2310280816a8c665738 3196 rust-async-std-resolver_0.24.0-1.debian.tar.xz"
+    "1c1597b84553b106f23254fcdc4c993703bf6befebd43122139ceebe3dda484f 2311 rust-async-std-resolver_0.24.4-1.dsc b766684a183c8a439f2ca24d6973cf8bfdc1353ae9c54b2b91e81d2630dd034e 22414 rust-async-std-resolver_0.24.4.orig.tar.gz b6f80199a1dd035e44566785e97dbea446063c43e1b0e585cb6bb365319690f1 3748 rust-async-std-resolver_0.24.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-std-resolver"
   ],
   "Files": [
-    "47df3f919e512d048252e03cf785d39b 2922 rust-async-std-resolver_0.24.0-1.dsc b3f01f46d53b2d73edc7c12054948c91 12321 rust-async-std-resolver_0.24.0.orig.tar.gz d8d5047c230047d5ce52d07ecd81fbad 3196 rust-async-std-resolver_0.24.0-1.debian.tar.xz"
+    "3301eba2970da728331ec456066124c4 2311 rust-async-std-resolver_0.24.4-1.dsc 2d8854122189db0ec0f5fa1b9050216e 22414 rust-async-std-resolver_0.24.4.orig.tar.gz 919cdb02d8bbc0344aec364883543b8a 3748 rust-async-std-resolver_0.24.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-hickory-resolver-0.24+testing-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-hickory-resolver-0.24+testing-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/async-std-resolver"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-std-resolver]"
   ],
   "Version": [
-    "0.24.0-1"
+    "0.24.4-1"
   ]
 }
