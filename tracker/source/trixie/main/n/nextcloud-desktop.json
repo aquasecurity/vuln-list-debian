@@ -6,25 +6,25 @@
     "nextcloud-desktop, caja-nextcloud, dolphin-nextcloud, libnextcloudsync-dev, libnextcloudsync0t64, nautilus-nextcloud, nemo-nextcloud, nextcloud-desktop-cmd, nextcloud-desktop-common, nextcloud-desktop-doc, nextcloud-desktop-l10n"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), appstream, cmake (\u003e= 3.16~), doxygen, extra-cmake-modules (\u003e= 5.240.0), libcloudproviders-dev (\u003e= 0.3.3), libcmocka-dev, libdbus-1-dev, libinotify-dev [kfreebsd-any], libkf6archive-dev, libkf6coreaddons-dev, libkf6guiaddons-dev, libkf6kio-dev, librsvg2-bin, libsqlite3-dev (\u003e= 3.9.0~), libssl-dev (\u003e= 1.1~), pkgconf, python3-sphinx, qml6-module-qt5compat-graphicaleffects, qml6-module-qtmultimedia, qt6-5compat-dev, qt6-base-dev (\u003e= 6.7.0~), qt6-declarative-dev (\u003e= 6.7.0~), qt6-svg-dev, qt6-tools-dev, qt6-websockets-dev, qtkeychain-qt6-dev, texlive-latex-base, zlib1g-dev"
+    "debhelper-compat (= 13), cmake (\u003e= 3.16~)"
   ],
   "Build-Depends-Arch": [
-    "dh-sequence-qmldeps, qt6-webengine-dev [amd64 arm64 armhf i386], xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "dh-sequence-qmldeps, doxygen, extra-cmake-modules (\u003e= 5.240.0), libcloudproviders-dev (\u003e= 0.3.3), libcmocka-dev, libdbus-1-dev, libinotify-dev [kfreebsd-any], libkf6archive-dev, libkf6coreaddons-dev, libkf6guiaddons-dev, libkf6kio-dev, libp11-dev, librsvg2-bin, libsqlite3-dev (\u003e= 3.9.0~), libssl-dev (\u003e= 1.1~), pkgconf, python3-sphinx, qml6-module-qt5compat-graphicaleffects, qml6-module-qtmultimedia, qt6-5compat-dev, qt6-base-dev (\u003e= 6.7.0~), qt6-declarative-dev (\u003e= 6.7.0~), qt6-svg-dev, qt6-tools-dev, qt6-webengine-dev [amd64 arm64 armhf i386], qt6-websockets-dev, qtkeychain-qt6-dev, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc, jdupes"
+    "dh-sequence-sphinxdoc, appstream, jdupes, libkf6archive-dev, libkf6guiaddons-dev, libp11-dev, librsvg2-bin, libsqlite3-dev (\u003e= 3.9.0~), libssl-dev (\u003e= 1.1~), pkgconf, python3-sphinx, qt6-5compat-dev, qt6-base-dev (\u003e= 6.7.0~), qt6-declarative-dev (\u003e= 6.7.0~), qt6-svg-dev, qt6-tools-dev, qt6-websockets-dev, qtkeychain-qt6-dev, texlive-latex-base, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "af9f8192e76965e362041a626a4058532b5a387d68272c92e9beb8b0a632900b 3686 nextcloud-desktop_3.15.3-1.dsc 5a4b12604c84b8986f2aee7462bb9683fb01f4ae28ee9d6882068cb9cac45773 15683038 nextcloud-desktop_3.15.3.orig.tar.gz ab4cb385e6716f5fc1a17319416698250660e2cd138034ff9385abc80ff04635 18172 nextcloud-desktop_3.15.3-1.debian.tar.xz"
+    "283c30fc942a94396a4bef108bfeeeffe171ca4229ad1eaf5cfb2544a37cf812 3996 nextcloud-desktop_3.16.0-1.dsc 9935c63903105ad1d23d82a09af9d832b0cbc4a1b664b0d5f0846c49f695b398 15566707 nextcloud-desktop_3.16.0.orig.tar.gz 5d5095725aa9d34d6bd6c66d76e7c42b243e0d5615c4c0d852f8b44ee6b74610 18608 nextcloud-desktop_3.16.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "9c00495cf943d17b9dbd6caffdafc53f18a3c327 debian archive/debian/3.15.3-1 https://git.dgit.debian.org/nextcloud-desktop"
+    "c256b20f795829a7025764d5d76dfbd5d7e61157 debian archive/debian/3.16.0-1 https://git.dgit.debian.org/nextcloud-desktop"
   ],
   "Directory": [
     "pool/main/n/nextcloud-desktop"
   ],
   "Files": [
-    "6f25950391297dab3a95cb2d491fb1c1 3686 nextcloud-desktop_3.15.3-1.dsc fa04ca532046b324abe0bb64ea250dce 15683038 nextcloud-desktop_3.15.3.orig.tar.gz fee672a09d1dcc07251bbb6bac4535cd 18172 nextcloud-desktop_3.15.3-1.debian.tar.xz"
+    "6ad14d045f9ba81ffe26ac4af2bdc609 3996 nextcloud-desktop_3.16.0-1.dsc 39f34dfc96349ea6188edc8d75218d52 15566707 nextcloud-desktop_3.16.0.orig.tar.gz de208dd218b1b261f34082c737b7b980 18608 nextcloud-desktop_3.16.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Uploaders": [
     "Sandro Knauß \u003chefee@debian.org\u003e, Alf Gaida \u003cagaida@siduction.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/owncloud-team/nextcloud-desktop.git"
   ],
   "Version": [
-    "3.15.3-1"
+    "3.16.0-1"
   ]
 }
