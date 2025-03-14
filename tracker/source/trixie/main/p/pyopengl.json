@@ -6,19 +6,19 @@
     "python3-opengl"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, libgl1, libglu1-mesa | libglu1, pybuild-plugin-pyproject, python3-all, python3-pygame \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-tk \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, libegl1, libgl1, libglu1-mesa | libglu1, pybuild-plugin-pyproject, python3-all, python3-psutil \u003c!nocheck\u003e, python3-pygame \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-xvfb \u003c!nocheck\u003e, python3-setuptools, python3-tk \u003c!nocheck\u003e, python3-xlib \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2968dae6431d242962a0ef6a4adddd22fdca0e4c29730230f763f498dc2e47af 2455 pyopengl_3.1.7+dfsg-1.dsc e6ca7b7e31db955c086efcc37e32897443bfedb83ef1a9410e7c2383dee895b5 636452 pyopengl_3.1.7+dfsg.orig.tar.xz a67be5de331f581f7361902aa0239b9bff4b9e8fb3f9ae82bb581dd7d0b07a81 11404 pyopengl_3.1.7+dfsg-1.debian.tar.xz"
+    "2b2fbc5c9998b2c22453a11bdfcdbc0b559601a6bf4b2679fcb6b561182207b4 2605 pyopengl_3.1.9+dfsg-1.dsc 64bcb39eb00e5d22a50808b80b6fbf8bb4dc2993752b2af9dc0784bcc0e53aee 647196 pyopengl_3.1.9+dfsg.orig.tar.xz 3ef252b4cd66ac7ed1449b02dbb9639f3622e1f10cdf6a5bb6d4f5afbc33aa80 12064 pyopengl_3.1.9+dfsg-1.debian.tar.xz"
   ],
   "Dgit": [
-    "506b1a01bf6b547d0dc765bb23ee4094160f01ac debian archive/debian/3.1.7+dfsg-1 https://git.dgit.debian.org/pyopengl"
+    "7a809c4971d390139f724f48cc4f6e7d7414e2d0 debian archive/debian/3.1.9+dfsg-1 https://git.dgit.debian.org/pyopengl"
   ],
   "Directory": [
     "pool/main/p/pyopengl"
   ],
   "Files": [
-    "eaa5759509728456f55637e8f49adf2d 2455 pyopengl_3.1.7+dfsg-1.dsc 35b22c1ac16f0022899a9d64add80d91 636452 pyopengl_3.1.7+dfsg.orig.tar.xz 3083b28f34603c39b10d02b6ace65c27 11404 pyopengl_3.1.7+dfsg-1.debian.tar.xz"
+    "bfcd272a733863a8749d2470adc185e0 2605 pyopengl_3.1.9+dfsg-1.dsc 4cf2556c69b38328d499a586557d5d99 647196 pyopengl_3.1.9+dfsg.orig.tar.xz 645641d055448f2622d043572dbe6c73 12064 pyopengl_3.1.9+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pygame, python3-pytest, python3-tk, xauth, xvfb"
+    "libglvnd-dev, mesa-utils, python3-all, python3-psutil, python3-pygame, python3-pytest, python3-tk, python3-xlib, xauth, xvfb"
   ],
   "Uploaders": [
     "Torsten Marek \u003cshlomme@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/pyopengl.git"
   ],
   "Version": [
-    "3.1.7+dfsg-1"
+    "3.1.9+dfsg-1"
   ]
 }
