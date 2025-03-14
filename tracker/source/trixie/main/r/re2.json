@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libre2-11, libre2-dev"
+    "libre2-11, libre2-dev, python3-re2"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libabsl-dev, libbenchmark-dev, libgtest-dev, pkgconf, python3, python3-absl, unicode-data"
+    "debhelper-compat (= 13), dh-python, libabsl-dev (\u003e= 20240116.2), libbenchmark-dev, libgtest-dev, pkgconf, pybuild-plugin-pyproject, python3, python3-absl, python3-all-dev, python3-pybind11, python3-setuptools, unicode-data"
   ],
   "Checksums-Sha256": [
-    "d3b9978874b0158307e635dd1d767b4569892262fdcf6af37e9766cb41a7f96d 1413 re2_20240501-3.dsc fef2f366578401eada34f5603679fb2aebe9b409de8d275a482ce5f2cbac2492 390188 re2_20240501.orig.tar.gz bcfbd7bfc54c42090aa251c9570bdb5e3fd012335b9ac8958f564fd752c65a30 9540 re2_20240501-3.debian.tar.xz"
+    "2021430e93176817d300d424e363c073ddc4655e45b86d42193c3714b40238e9 1615 re2_20240702-3.dsc eb2df807c781601c14a260a507a5bb4509be1ee626024cb45acbd57cb9d4032b 390672 re2_20240702.orig.tar.gz ebe0bb1b9f14a9b16bb40a8729f9c5c7df98ef9a7883a5e78716fd377ec194ef 11096 re2_20240702-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/re2"
   ],
   "Files": [
-    "4413da004d9d3532413e81886432cc92 1413 re2_20240501-3.dsc ad0d8b0639b84b89095e3ea583c89125 390188 re2_20240501.orig.tar.gz a9ab0ad60ddcf39696bcae3337374bde 9540 re2_20240501-3.debian.tar.xz"
+    "8ab14d00eabc736da52db10fb89232e1 1615 re2_20240702-3.dsc 73c94c78678bd2d641beaf8d5a3fd352 390672 re2_20240702.orig.tar.gz 7f04ecfc2bc63022075399665406e819 11096 re2_20240702-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "re2"
   ],
   "Package-List": [
-    "libre2-11 deb libs optional arch=any libre2-dev deb libdevel optional arch=any"
+    "libre2-11 deb libs optional arch=any libre2-dev deb libdevel optional arch=any python3-re2 deb python optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "g++"
+    "g++, pkgconf, python3-absl, python3-all"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/re2"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/re2.git"
   ],
   "Version": [
-    "20240501-3"
+    "20240702-3"
   ]
 }
