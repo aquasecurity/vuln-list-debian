@@ -6,19 +6,25 @@
     "librust-asn1-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.59.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.59.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e2b7b58164d853352c8df76ddd1f013d18aea2384c0f732ceb69446cb79aefdc 1714 rust-asn1-derive_0.17.0-1.dsc 3df30ecdcaf8338675a1413460a1b11df89789e1fcc6a10dc52f6e38b6982aa2 6210 rust-asn1-derive_0.17.0.orig.tar.gz b737a1f99f21ca5996a10bd0660917586e4aeb140dd5383a8c834f34d4b88926 2840 rust-asn1-derive_0.17.0-1.debian.tar.xz"
+    "6b86b967954f460aa081596475395db88c487aefa27c94122e74dc8ee9599d80 2372 rust-asn1-derive_0.20.0-1.dsc a200809d0138620b3dba989f1d08d0620e76248bc1e62a2ec1b2df5eb1ee08ad 6998 rust-asn1-derive_0.20.0.orig.tar.gz a37092489c6bbb6fb5c7b77b4d66b62673682701368be469305bfb58f31944c6 2880 rust-asn1-derive_0.20.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-asn1-derive"
   ],
   "Files": [
-    "5b06b3d5e47ce2ccbf5ef4f67fdb00aa 1714 rust-asn1-derive_0.17.0-1.dsc 4cf6533f6011bbf7816e8cc8ef9d8643 6210 rust-asn1-derive_0.17.0.orig.tar.gz aab8f70bfd8b9cd990feb98e7749705d 2840 rust-asn1-derive_0.17.0-1.debian.tar.xz"
+    "4a3b498b5f1c73a2ed91d135a5a685f4 2372 rust-asn1-derive_0.20.0-1.dsc eba3adcc971f57714bd6c589672a626c 6998 rust-asn1-derive_0.20.0.orig.tar.gz e9fc914ae3eb0612bd4d1109be9be091 2880 rust-asn1-derive_0.20.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alex/rust-asn1"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Claudius Heine \u003cch@denx.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/asn1-derive]"
   ],
   "Version": [
-    "0.17.0-1"
+    "0.20.0-1"
   ]
 }

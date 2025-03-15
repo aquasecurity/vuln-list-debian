@@ -6,16 +6,19 @@
     "librust-freedesktop-icons-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-5+default-dev (\u003e= 5.0.1-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.19.0-~~) \u003c!nocheck\u003e, librust-rust-ini-0.21+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-xdg-2+default-dev (\u003e= 2.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-5+default-dev (\u003e= 5.0.1-~~) \u003c!nocheck\u003e, librust-ini-core-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.19.0-~~) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-tracing-0.1+default-dev \u003c!nocheck\u003e, librust-xdg-2+default-dev (\u003e= 2.5.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cec3fae21a39f45767698d5e51d4371eb5a997e4ca2d55b01c4898780bfc54d2 2755 rust-freedesktop-icons_0.2.6-2.dsc 74d7c804952059c8deed619851f8e2ada4be154188e3eaed3afc1ea4ec792ae0 8758 rust-freedesktop-icons_0.2.6.orig.tar.gz 915c81614ac817c551dc366b2b1f180475c6c5dd9b29098bc07b8f0a4813f0fe 4732 rust-freedesktop-icons_0.2.6-2.debian.tar.xz"
+    "4b8d11b75c723583f1c651f5b204ea4be9c94b5b28fd895e0a2296085224e960 2121 rust-freedesktop-icons_0.3.1-1.dsc 26b8bd67034c3d74bd6c1fcfb461e55cdeddfcad02f8dd6ae2f411d07b2ccd6a 20727 rust-freedesktop-icons_0.3.1.orig.tar.gz 7e4ea52ab00894560ada72318c2be36406f5f16f2309b832e63186bfeca097be 4872 rust-freedesktop-icons_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-freedesktop-icons"
   ],
   "Files": [
-    "34673506fb0969e3194f32e19e069fc9 2755 rust-freedesktop-icons_0.2.6-2.dsc e7b061d3b5d4414f44f55072c69500b2 8758 rust-freedesktop-icons_0.2.6.orig.tar.gz 002319d2562177ed2e019b6052723778 4732 rust-freedesktop-icons_0.2.6-2.debian.tar.xz"
+    "5bd913849e140f12a3b4831b013a2cfd 2121 rust-freedesktop-icons_0.3.1-1.dsc 7f17b0a740b93e7c9ee8303b54586b68 20727 rust-freedesktop-icons_0.3.1.orig.tar.gz 1ac274a710852c5652a63b3f7f59037b 4872 rust-freedesktop-icons_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "desktop-base, dh-cargo, gnome-accessibility-themes, librust-anyhow-1+default-dev, librust-criterion-0.5+default-dev, librust-gtk4-0.9+default-dev, librust-speculoos-0.11+default-dev, papirus-icon-theme, rustc"
+    "desktop-base, dh-cargo, gnome-accessibility-themes, librust-gtk4-0.9+default-dev, librust-speculoos-0.11+default-dev, papirus-icon-theme, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/freedesktop-icons]"
   ],
   "Version": [
-    "0.2.6-2"
+    "0.3.1-1"
   ]
 }

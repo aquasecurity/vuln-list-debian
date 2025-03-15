@@ -6,16 +6,19 @@
     "python3-pydantic-extra-types"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-pendulum \u003c!nocheck\u003e, python3-phonenumbers \u003c!nocheck\u003e, python3-pycountry \u003c!nocheck\u003e, python3-pydantic \u003c!nocheck\u003e, python3-pymongo \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytz \u003c!nocheck\u003e, python3-semver (\u003e= 3.0.2) \u003c!nocheck\u003e, python3-typing-extensions \u003c!nocheck\u003e, python3-ulid \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2904b748ba23eaa634cab404d9cc967862e7a63a8aa6a366bfdace31c150672e 1557 pydantic-extra-types_2.10.2-3.dsc a39c10401327042820d9cf484f84e0b6d4eccaba94b6aa1bba489758ec891dbf 73088 pydantic-extra-types_2.10.2.orig.tar.xz 3c9fb2ebcd953b804435aa917f7635f623baa572c0f2d6b21b7a5d8667e077d9 2232 pydantic-extra-types_2.10.2-3.debian.tar.xz"
+    "2e0ec506eea5d6a6daf52722c674edfefffc8931407b4fb0353d13c6f3c8c81c 2644 pydantic-extra-types_2.10.3-2.dsc 421f15d8dceebc4225f4b6b3d752ca064818c0a21722e1175fbb4faa2ead9e63 95161 pydantic-extra-types_2.10.3.orig.tar.gz 8cb0b54bbd5c5b93d7f2e68232640a3fd5f32ec98c0b9b90997e17b0fa6b03d8 2576 pydantic-extra-types_2.10.3-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "5296ac328bb688fe0be93ed247ff7630ef8ef527 debian archive/debian/2.10.3-2 https://git.dgit.debian.org/pydantic-extra-types"
   ],
   "Directory": [
     "pool/main/p/pydantic-extra-types"
   ],
   "Files": [
-    "c551f651a897a3ebd347c61a655ffde6 1557 pydantic-extra-types_2.10.2-3.dsc 7e41c3c1dd16d45e0f103a47e299b8ed 73088 pydantic-extra-types_2.10.2.orig.tar.xz e963d5e6a5a3b9c333e5fac4cd64f4a7 2232 pydantic-extra-types_2.10.2-3.debian.tar.xz"
+    "1f3e9bc8c6dfdb174112a5a32599789d 2644 pydantic-extra-types_2.10.3-2.dsc e2c4545c335793a87991f669344023a0 95161 pydantic-extra-types_2.10.3.orig.tar.gz 23730a5e31007ea5d4e5fb1c6285ae82 2576 pydantic-extra-types_2.10.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +44,9 @@
   "Standards-Version": [
     "4.7.1"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Colin Watson \u003ccjwatson@debian.org\u003e,"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pydantic-extra-types.git"
   ],
   "Version": [
-    "2.10.2-3"
+    "2.10.3-2"
   ]
 }
