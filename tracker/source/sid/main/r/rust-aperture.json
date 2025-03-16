@@ -6,19 +6,25 @@
     "librust-aperture-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-gst-plugin-gtk4-0.13+dmabuf-dev \u003c!nocheck\u003e, librust-gst-plugin-gtk4-0.13+gtk-v4-14-dev \u003c!nocheck\u003e, librust-gst-plugin-gtk4-0.13+wayland-dev \u003c!nocheck\u003e, librust-gst-plugin-gtk4-0.13+x11egl-dev \u003c!nocheck\u003e, librust-gst-plugin-gtk4-0.13+x11glx-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+v1-20-dev \u003c!nocheck\u003e, librust-gstreamer-pbutils-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-0.23+default-dev \u003c!nocheck\u003e, librust-gtk4-0.9+default-dev \u003c!nocheck\u003e, librust-gtk4-0.9+gnome-45-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.19-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-gstreamer-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+v1-20-dev \u003c!nocheck\u003e, librust-gstreamer-base-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-pbutils-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-0.23+default-dev \u003c!nocheck\u003e, librust-gtk4-0.9+default-dev \u003c!nocheck\u003e, librust-gtk4-0.9+gnome-46-dev \u003c!nocheck\u003e, librust-gtk4-0.9+v4-16-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-rqrr-0.9-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c75cf4935acdb9fb03be96c3943e651ccd3374d945dc37c1cf0135129e471ab9 2839 rust-aperture_0.7.0-2.dsc 9c3771ab803f9ce7c7b3e624ccc0abc6a920bc23340d045cd2b8909ded9fb4bd 30250 rust-aperture_0.7.0.orig.tar.gz 4980206c072f2c332637da7decd1b5f830f9e998a32bcb8eb978fdc824cf08dc 2392 rust-aperture_0.7.0-2.debian.tar.xz"
+    "5c70c60dfd431b012904a42898c18d17f9fa2aaad72cc4c971e7bd2161a31d2b 2121 rust-aperture_0.9.2-1.dsc e2fdbb761a57876510cac81eb0b91fb5546bc20f082076c96a69868e4d94b6ef 39896 rust-aperture_0.9.2.orig.tar.gz d81670a7282ac0968e717855f1fb558088fd245e230b8b81b9633bd6111b3a51 2324 rust-aperture_0.9.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-aperture"
   ],
   "Files": [
-    "90dfcb18a35fe437e90410e0ae0a795b 2839 rust-aperture_0.7.0-2.dsc cb9dacf527f00f466f9cc90bcbfedaae 30250 rust-aperture_0.7.0.orig.tar.gz aeda9ab042af458a0c43cd51f08dc81f 2392 rust-aperture_0.7.0-2.debian.tar.xz"
+    "a897db1d0ff66bc14bb0ccc10721fe50 2121 rust-aperture_0.9.2-1.dsc a539cf196f565981ba0db3e522862bee 39896 rust-aperture_0.9.2.orig.tar.gz d7d3d733bd602746b2c2b82e04846ba4 2324 rust-aperture_0.9.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.gnome.org/GNOME/snapshot"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/aperture]"
   ],
   "Version": [
-    "0.7.0-2"
+    "0.9.2-1"
   ]
 }
