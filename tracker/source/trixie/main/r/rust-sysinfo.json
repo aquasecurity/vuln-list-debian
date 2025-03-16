@@ -6,19 +6,25 @@
     "librust-sysinfo-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-core-foundation-sys-0.8+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.153-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18-~~) \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.153-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18-~~) \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c641c163fbf1bb65b7e05dcb3c94d5c9ab8aad00449ae67cb1ee6970c8d3fd65 2498 rust-sysinfo_0.30.13-6.dsc 0a5b4ddaee55fb2bea2bf0e5000747e5f5c0de765e5a5ff87f4cd106439f4bb3 173400 rust-sysinfo_0.30.13.orig.tar.gz ab4a37594405f3a1cc03dff5142bf7c44f4939c793cfe279d7551d807cf093c3 7100 rust-sysinfo_0.30.13-6.debian.tar.xz"
+    "8f304978810c5cafb2b393a48379ebce8e15718575da5a3e525603645c4cecc1 1894 rust-sysinfo_0.30.13-7.dsc 0a5b4ddaee55fb2bea2bf0e5000747e5f5c0de765e5a5ff87f4cd106439f4bb3 173400 rust-sysinfo_0.30.13.orig.tar.gz 59f823ef3662d5dffbe51bdae09342df23b8f950c474d25242d3740ee4af6cf6 7288 rust-sysinfo_0.30.13-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sysinfo"
   ],
   "Files": [
-    "d68beb88309e9d608e4ac82e7be6193d 2498 rust-sysinfo_0.30.13-6.dsc 5a925150e73f82fb347ee3eee54cc0d9 173400 rust-sysinfo_0.30.13.orig.tar.gz ae299e4456581db73bbab0d8e6fec892 7100 rust-sysinfo_0.30.13-6.debian.tar.xz"
+    "eeeb3c985006b5e8cc003e628ccfcaa2 1894 rust-sysinfo_0.30.13-7.dsc 5a925150e73f82fb347ee3eee54cc0d9 173400 rust-sysinfo_0.30.13.orig.tar.gz f793f6ebb92cad13b9e00cdc061f0f8f 7288 rust-sysinfo_0.30.13-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/GuillaumeGomez/sysinfo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sysinfo]"
   ],
   "Version": [
-    "0.30.13-6"
+    "0.30.13-7"
   ]
 }

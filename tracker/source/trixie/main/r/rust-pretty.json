@@ -6,19 +6,25 @@
     "librust-pretty-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.5+default-dev \u003c!nocheck\u003e, librust-typed-arena-2+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev \u003c!nocheck\u003e, librust-typed-arena-2+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "981f81cf99ae6914cbbc00ae79d00777536b56a5244f15093a83415d3db32245 2415 rust-pretty_0.12.3-1.dsc b55c4d17d994b637e2f4daf6e5dc5d660d209d5642377d675d7a1c3ab69fa579 29644 rust-pretty_0.12.3.orig.tar.gz 67432e10582e78e0d07fb4cbc8f94ced4cb9e208c4658c83eeff298f749edea0 2684 rust-pretty_0.12.3-1.debian.tar.xz"
+    "139954e43d908bbcc02b5603c3f14b0e92b010b19b65c5522839e8f64e3e359d 1816 rust-pretty_0.12.3-2.dsc b55c4d17d994b637e2f4daf6e5dc5d660d209d5642377d675d7a1c3ab69fa579 29644 rust-pretty_0.12.3.orig.tar.gz 5d0ca89a12d980a526758ab23bcb92324d6de4d26bfd2532f4a7fa1fbb248283 3420 rust-pretty_0.12.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pretty"
   ],
   "Files": [
-    "94b1413a5d93b5b56092331d76b0c650 2415 rust-pretty_0.12.3-1.dsc f711ae7ff8717fdc71b9680913ba5863 29644 rust-pretty_0.12.3.orig.tar.gz 5a5bbec6aaeb69ca6714cba23528a689 2684 rust-pretty_0.12.3-1.debian.tar.xz"
+    "174989347076a1e03ebaf4e595dcf9ee 1816 rust-pretty_0.12.3-2.dsc f711ae7ff8717fdc71b9680913ba5863 29644 rust-pretty_0.12.3.orig.tar.gz 23857c697feaf8670a53ba9c5a98b1eb 3420 rust-pretty_0.12.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Marwes/pretty.rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.4+default-dev, librust-difference-2+default-dev, librust-expect-test-1+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-difference-2+default-dev, librust-expect-test-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrius Merkys \u003cmerkys@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pretty]"
   ],
   "Version": [
-    "0.12.3-1"
+    "0.12.3-2"
   ]
 }
