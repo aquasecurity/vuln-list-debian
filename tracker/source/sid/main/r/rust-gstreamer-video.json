@@ -6,16 +6,19 @@
     "librust-gstreamer-video-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-base-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.49-~~) \u003c!nocheck\u003e, gstreamer1.0-plugins-base \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-base-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, gstreamer1.0-plugins-base \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1bb71605afd6ab36e25f388eb54b9aaf54c0e7e538b9104e7ab0d8e69843c511 2846 rust-gstreamer-video_0.23.0-5.dsc 57332bca1ae7825a53fe57d993b63389f132d335aed691ac76f0ffe4304548e3 127099 rust-gstreamer-video_0.23.0.orig.tar.gz f0f14371a33009bcd5c2af6df8431a40233039ccf4c483e3e3af20400968d05b 4648 rust-gstreamer-video_0.23.0-5.debian.tar.xz"
+    "af7e9f507012737e6fe71ab4aa2b61356c7c39a528d64645b7ff74f27d478d19 2260 rust-gstreamer-video_0.23.5-1.dsc ad242d388b63c91652c8157de3b0c1f709e49c941a0aae1952455f6ee326ca2d 134393 rust-gstreamer-video_0.23.5.orig.tar.gz d133cc8d530ea2ba1a0dfe2f51396bc0bce8819edb54fa8b59ebe916e9a90e31 4528 rust-gstreamer-video_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer-video"
   ],
   "Files": [
-    "d0c87c325e8c5368a05eddd25a9725a4 2846 rust-gstreamer-video_0.23.0-5.dsc d8ac047f8f691c087a7f62c9816f824f 127099 rust-gstreamer-video_0.23.0.orig.tar.gz 72578ac03784694813b56479a130f7b3 4648 rust-gstreamer-video_0.23.0-5.debian.tar.xz"
+    "80db27d52085488cecf421df78bd4597 2260 rust-gstreamer-video_0.23.5-1.dsc 5018e64880a724c2c680fc6e7c434d0c 134393 rust-gstreamer-video_0.23.5.orig.tar.gz 14725d40c5900ed49b2e42101dceb481 4528 rust-gstreamer-video_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-gir-format-check-0.1+default-dev, librust-itertools-0.10+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-gir-format-check-0.1+default-dev, librust-itertools-0.13+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer-video]"
   ],
   "Version": [
-    "0.23.0-5"
+    "0.23.5-1"
   ]
 }
