@@ -6,19 +6,25 @@
     "librust-link-cplusplus-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fd4cfb7578432f6271c74312ef16d004bbe46f275cc92a9ffba51e631e652552 2252 rust-link-cplusplus_1.0.9-1.dsc 9d240c6f7e1ba3a28b0249f774e6a9dd0175054b52dfbb61b16eb8505c3785c9 7484 rust-link-cplusplus_1.0.9.orig.tar.gz feea9ed2768980cad62df15cb9522b3a38c5b3a8466a13ed1cc6cfe05bc76b9e 3268 rust-link-cplusplus_1.0.9-1.debian.tar.xz"
+    "384e8cb6831127829ea653b9682ccaf6c1b85c775fce507b0be18e65b6200743 1721 rust-link-cplusplus_1.0.10-1.dsc 4a6f6da007f968f9def0d65a05b187e2960183de70c160204ecfccf0ee330212 8054 rust-link-cplusplus_1.0.10.orig.tar.gz abadca31ba1c903c857768a7830e90a446489bca59487e274d03a28ecd8e014c 3292 rust-link-cplusplus_1.0.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-link-cplusplus"
   ],
   "Files": [
-    "00ead51642d60801588fcffcde1452e2 2252 rust-link-cplusplus_1.0.9-1.dsc d6c6a27e29d9270a2ac318eacdf8e436 7484 rust-link-cplusplus_1.0.9.orig.tar.gz 9cb1c083ca17cea41573f72f6b090150 3268 rust-link-cplusplus_1.0.9-1.debian.tar.xz"
+    "c8c320e989dcea72b6804ae77a1a0ae2 1721 rust-link-cplusplus_1.0.10-1.dsc b5f8b0f69ec724b6e349a12b1ee69500 8054 rust-link-cplusplus_1.0.10.orig.tar.gz 77ebcd3256440c610f645e97cbabe694 3292 rust-link-cplusplus_1.0.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/link-cplusplus"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, g++"
+    "dh-cargo, g++, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/link-cplusplus"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/link-cplusplus]"
   ],
   "Version": [
-    "1.0.9-1"
+    "1.0.10-1"
   ]
 }
