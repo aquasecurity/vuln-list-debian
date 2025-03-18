@@ -6,19 +6,25 @@
     "librust-syntect-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bincode-1+default-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-onig-6-dev \u003c!nocheck\u003e, librust-plist-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e, librust-yaml-rust-0.4+default-dev (\u003e= 0.4.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bincode-1+default-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-onig-6-dev \u003c!nocheck\u003e, librust-plist-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-derive-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e, librust-yaml-rust-0.4+default-dev (\u003e= 0.4.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "87a061a7b7a795c5fc2769f301122f865f0530bbedd5738c88c7d1e073129727 2979 rust-syntect_5.1.0-2.dsc e02b4b303bf8d08bfeb0445cba5068a3d306b6baece1d5582171a9bf49188f91 809732 rust-syntect_5.1.0.orig.tar.gz 3fb8ea29f49b0a9014b947543a818c15f2daa7a503c2f2c130e21c5298734291 8000 rust-syntect_5.1.0-2.debian.tar.xz"
+    "de8b3b491f5a802a4d8307fe64e0de628695d93acf0e54e7942a57d899be4d8d 3101 rust-syntect_5.2.0-1.dsc 874dcfa363995604333cf947ae9f751ca3af4522c60886774c4963943b4746b1 822671 rust-syntect_5.2.0.orig.tar.gz cad86d02acef9542ca1a8c63149db221685e1988d27cda3ffed4f0ce8ccecdee 8444 rust-syntect_5.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-syntect"
   ],
   "Files": [
-    "c5b9be0ab658d48072b5cf3efd89d85f 2979 rust-syntect_5.1.0-2.dsc e917758a18bea5fb96a21e446887ceda 809732 rust-syntect_5.1.0.orig.tar.gz 8011cb348f47d3593be38047deeb24ea 8000 rust-syntect_5.1.0-2.debian.tar.xz"
+    "01faadb18cdfee5cb7468e0cc46b0dce 3101 rust-syntect_5.2.0-1.dsc 65768b623e909ebb906a5f5e6083e062 822671 rust-syntect_5.2.0.orig.tar.gz 4c8ad951c7a09ec0f0aff38f21a0e4e8 8444 rust-syntect_5.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/trishume/syntect"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-criterion-0.3+html-reports-dev, librust-getopts-0.2+default-dev, librust-pretty-assertions-1+default-dev, librust-rayon-1+default-dev, librust-regex-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-expect-test-1+default-dev, librust-getopts-0.2+default-dev, librust-pretty-assertions-1+default-dev, librust-rayon-1+default-dev, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/syntect]"
   ],
   "Version": [
-    "5.1.0-2"
+    "5.2.0-1"
   ]
 }

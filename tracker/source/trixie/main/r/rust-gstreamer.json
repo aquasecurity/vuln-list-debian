@@ -6,16 +6,19 @@
     "librust-gstreamer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-sys-0.23+default-dev \u003c!nocheck\u003e, librust-itertools-0+default-dev (\u003e= 0.10-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-muldiv-1+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1-dev \u003c!nocheck\u003e, librust-num-rational-0.4-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-option-operations-0.5+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+write-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-sys-0.23+default-dev \u003c!nocheck\u003e, librust-itertools-0.13+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-muldiv-1+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1-dev \u003c!nocheck\u003e, librust-num-rational-0.4-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-option-operations-0.5+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+write-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, libgstreamer1.0-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "68418cc9b39b380882161a49911dc03eebbe0bde673094e8ad7d77b86a7599f1 3189 rust-gstreamer_0.23.1-1.dsc 683e15f8cc3a1a2646d9fe2181a58b7abb4c166256d8d15cce368e420c741140 340975 rust-gstreamer_0.23.1.orig.tar.gz 5e28dbf20e34eee78801dd6e7f076de916b94237fc5bc886230286ee986a02df 4292 rust-gstreamer_0.23.1-1.debian.tar.xz"
+    "4beda94b278035fcfdab56d1d3015308c2027ce8c72390ad2f705429ff26d6c8 2608 rust-gstreamer_0.23.5-1.dsc 2188fe829b0ebe12e4cf2bbcf6658470a936269daba7afae92847a2af32c9105 351050 rust-gstreamer_0.23.5.orig.tar.gz c8d825d382c33769c63d5530f9233d3803511612b7fd8a76a95eb3a527e76daf 4284 rust-gstreamer_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer"
   ],
   "Files": [
-    "dd71d435d6cf5bbd0122011b13ae1d90 3189 rust-gstreamer_0.23.1-1.dsc b49dd27a7184b05a9eb61e79ad1bea58 340975 rust-gstreamer_0.23.1.orig.tar.gz 7718038f08680cacd06c83fc2f8d1bda 4292 rust-gstreamer_0.23.1-1.debian.tar.xz"
+    "ac2a454243fb17a2c8d5a140d6d3dcf5 2608 rust-gstreamer_0.23.5-1.dsc e98550d0980cc8a490aa0feaba9da6a1 351050 rust-gstreamer_0.23.5.orig.tar.gz 74c7c0f9193a6482a74e110075040952 4284 rust-gstreamer_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-executor-0.3+default-dev, librust-gir-format-check-0.1+default-dev, librust-ron-0.7+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-futures-executor-0.3+default-dev, librust-gir-format-check-0.1+default-dev, librust-ron-0.7+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer]"
   ],
   "Version": [
-    "0.23.1-1"
+    "0.23.5-1"
   ]
 }

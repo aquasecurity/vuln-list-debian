@@ -6,19 +6,25 @@
     "librust-drm-ffi-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-drm-sys-0.6+default-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.22-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-drm-sys-0.8+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.22-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4ff7432b709786e5e152b4df270b5fad565799b94d7eaae0f288eb66a747e719 2231 rust-drm-ffi_0.7.1-1.dsc 41334f8405792483e32ad05fbb9c5680ff4e84491883d2947a4757dc54cb2ac6 9581 rust-drm-ffi_0.7.1.orig.tar.gz 2bde07fe9bfdc13efbd70009aa9fe289f77b40bab01a51a43b026d56a2eb07e0 2920 rust-drm-ffi_0.7.1-1.debian.tar.xz"
+    "b0c6e71680364f3a3dde26e2d9f6b67a23d33b898815e4b6d8ae17de6711ea6f 2360 rust-drm-ffi_0.9.0-1.dsc d8e41459d99a9b529845f6d2c909eb9adf3b6d2f82635ae40be8de0601726e8b 9949 rust-drm-ffi_0.9.0.orig.tar.gz 4354091b2d18e1f750260128efdbeaefb21450919a61bd7305e041e9753985ee 2764 rust-drm-ffi_0.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-drm-ffi"
   ],
   "Files": [
-    "0e130ade63ef07a419da5a8718c620d5 2231 rust-drm-ffi_0.7.1-1.dsc e5ce735a63bd9982a99c63a46e8154c8 9581 rust-drm-ffi_0.7.1.orig.tar.gz dac6740aeeaf0a3d0d489b6238972bb7 2920 rust-drm-ffi_0.7.1-1.debian.tar.xz"
+    "de1d87921689c8eb5aeb6d2159b7f433 2360 rust-drm-ffi_0.9.0-1.dsc 8fb2fef36bc35de4880149ce280eb428 9949 rust-drm-ffi_0.9.0.orig.tar.gz 2dbe57c3fa4ffce41ea2cbb62ad80dfb 2764 rust-drm-ffi_0.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Smithay/drm-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Andreas Henriksson \u003candreas@fatal.se\u003e"
+    "Andreas Henriksson \u003candreas@fatal.se\u003e, NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/drm-ffi"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/drm-ffi]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.9.0-1"
   ]
 }
