@@ -6,22 +6,25 @@
     "vitables"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, pyqt6-dev-tools, python3, python3-hatchling, python3-numpy, python3-pkg-resources, python3-pyqt6, python3-pytest, python3-pytest-xvfb, python3-qtpy, python3-sphinx, python3-sphinxcontrib.qthelp, python3-tables"
+    "debhelper-compat (= 13), dh-sequence-numpy3, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, pyqt6-dev-tools, python3, python3-hatchling, python3-numpy, python3-pkg-resources, python3-pyqt6, python3-pytest \u003c!nocheck\u003e, python3-pytest-xvfb \u003c!nocheck\u003e, python3-qtpy, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.qthelp \u003c!nodoc\u003e, python3-tables"
   ],
   "Checksums-Sha256": [
-    "c0aa766d9c06a2482013f0253d98ccfd52f98b612caed825eda5c2b1d313177f 2247 vitables_3.0.3-1.dsc 9f1747ff3ccc2963ece3252519bbc88216c85b66c12c819e96b8d71d92aab31e 2105578 vitables_3.0.3.orig.tar.gz debf7915420fc9de61bdf6e44f7d494b6a73a2927271bd5a31f484dcb4a5fb35 4892 vitables_3.0.3-1.debian.tar.xz"
+    "403abef9333182e62cbac9316013eed51004482e264b2e6a7fc0db0cb5a61cf3 2569 vitables_3.1.0-1.dsc 5397e5143dd2153a57c099375a483340fd6ad701a9b972080226836b4b1bdaf9 2131194 vitables_3.1.0.orig.tar.gz 7655e000db73e31cd1c0b7588c2da592bd9094e53ce161f698be5c27b5972f81 5344 vitables_3.1.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "918674eb7e20ae88ef833c8e173d5f4c8ff1a101 debian archive/debian/3.1.0-1 https://git.dgit.debian.org/vitables"
   ],
   "Directory": [
     "pool/main/v/vitables"
   ],
   "Files": [
-    "95db4077d58f0d3ee7f7552ed12bd8b0 2247 vitables_3.0.3-1.dsc aa97bd8744d95bf3e76740c838267b76 2105578 vitables_3.0.3.orig.tar.gz 7f72618f9365e482c5381fc41ea59535 4892 vitables_3.0.3-1.debian.tar.xz"
+    "35a1250fa251b123c4ddcb66d27c1765 2569 vitables_3.1.0-1.dsc ca46fda66e62c6e32c61b424fab77215 2131194 vitables_3.1.0.orig.tar.gz d35490a389659566d1a9edf38b4098bd 5344 vitables_3.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://vitables.org/"
+    "https://vitables.org/"
   ],
   "Maintainer": [
     "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
@@ -41,8 +44,14 @@
   "Standards-Version": [
     "4.7.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "debhelper, mesa-utils, xauth, xvfb"
+  ],
   "Uploaders": [
-    "Dmitrijs Ledkovs \u003cdmitrij.ledkov@gmail.com\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e, Benda Xu \u003corv@debian.org\u003e"
+    "Dmitrijs Ledkovs \u003cdmitrij.ledkov@gmail.com\u003e, Picca Frédéric-Emmanuel \u003cpicca@debian.org\u003e, Benda Xu \u003corv@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/vitables"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/science-team/vitables.git"
   ],
   "Version": [
-    "3.0.3-1"
+    "3.1.0-1"
   ]
 }

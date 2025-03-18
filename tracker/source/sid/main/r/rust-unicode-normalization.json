@@ -6,16 +6,19 @@
     "librust-unicode-normalization-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev \u003c!nocheck\u003e, librust-tinyvec-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ff81a85295c7081f9b58a631fce92260d20c6964d5ba62f1c770d90ba2bea155 2545 rust-unicode-normalization_0.1.22-1.dsc 5c5713f0fc4b5db668a2ac63cdb7bb4469d8c9fed047b1d0292cc7b0ce2ba921 122604 rust-unicode-normalization_0.1.22.orig.tar.gz e2f4bf8c9a82ee6b6d852457499167383906fb6c1b2ebb41cb62f1c0a601fc8f 4844 rust-unicode-normalization_0.1.22-1.debian.tar.xz"
+    "a609654c7be16c4203500e7a3d3e4bc8deb2a79007d928b50f4b301eb7ea79a9 1893 rust-unicode-normalization_0.1.24-1.dsc 5033c97c4262335cded6d6fc3e5c18ab755e1a3dc96376350f3d8e9f009ad956 126536 rust-unicode-normalization_0.1.24.orig.tar.gz f40802d74715eb7e2d93d018187d386b5cd04b60fa8e40b55f99253d62333d5c 3728 rust-unicode-normalization_0.1.24-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-normalization"
   ],
   "Files": [
-    "be987b5570a7df521a1e7d01e05c145c 2545 rust-unicode-normalization_0.1.22-1.dsc c12d182417999fc365f952e701f6071f 122604 rust-unicode-normalization_0.1.22.orig.tar.gz c7f59f32feca675f8f5be277c17e353b 4844 rust-unicode-normalization_0.1.22-1.debian.tar.xz"
+    "3446b895503abbe9b7c06fd61ac7faf7 1893 rust-unicode-normalization_0.1.24-1.dsc ffd4e6af580c4c4183723e1a858551dd 126536 rust-unicode-normalization_0.1.24.orig.tar.gz dfc1fa88e09c812763ab91eb130a70a9 3728 rust-unicode-normalization_0.1.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-normalization]"
   ],
   "Version": [
-    "0.1.22-1"
+    "0.1.24-1"
   ]
 }
