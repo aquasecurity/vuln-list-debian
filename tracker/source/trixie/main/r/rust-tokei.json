@@ -6,16 +6,19 @@
     "librust-tokei-dev, tokei"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native, libstd-rust-dev, librust-aho-corasick-1+default-dev (\u003e= 1.1-~~), librust-clap-2+default-dev (\u003e= 2.33.3-~~), librust-crossbeam-channel-0.5+default-dev, librust-dashmap+default-dev (\u003e= 4.0.1-~~), librust-dashmap+serde-dev (\u003e= 4.0.1-~~), librust-dirs-5+default-dev, librust-encoding-rs-io-0.1+default-dev (\u003e= 0.1.7-~~), librust-env-logger-0+default-dev (\u003e= 0.8.2-~~), librust-grep-searcher-0.1+default-dev (\u003e= 0.1.7-~~), librust-ignore-0.4+default-dev (\u003e= 0.4.17-~~), librust-log-0.4+default-dev (\u003e= 0.4.11-~~), librust-num-format-0.4+default-dev, librust-once-cell-1+default-dev (\u003e= 1.5.2-~~), librust-parking-lot-0.12+default-dev, librust-rayon-1+default-dev (\u003e= 1.5.0-~~), librust-regex-1+default-dev (\u003e= 1.4.3-~~), librust-serde-1+default-dev (\u003e= 1.0.118-~~), librust-serde-1+derive-dev (\u003e= 1.0.118-~~), librust-serde-1+rc-dev (\u003e= 1.0.118-~~), librust-serde-json-1+default-dev (\u003e= 1.0.61-~~), librust-tera-1+default-dev (\u003e= 1.6.1-~~), librust-terminal-size-0+default-dev (\u003e= 0.3-~~), librust-toml-0.5+default-dev (\u003e= 0.5.8-~~), help2man"
+    "debhelper-compat (= 13), dh-sequence-cargo, help2man"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev, librust-aho-corasick-1+default-dev (\u003e= 1.1-~~), librust-clap-2+default-dev (\u003e= 2.33.3-~~), librust-crossbeam-channel-0.5+default-dev, librust-dashmap+default-dev (\u003e= 4.0.1-~~), librust-dashmap+serde-dev (\u003e= 4.0.1-~~), librust-dirs-5+default-dev, librust-encoding-rs-io-0.1+default-dev (\u003e= 0.1.7-~~), librust-env-logger-0+default-dev (\u003e= 0.8.2-~~), librust-grep-searcher-0.1+default-dev (\u003e= 0.1.7-~~), librust-ignore-0.4+default-dev (\u003e= 0.4.17-~~), librust-log-0.4+default-dev (\u003e= 0.4.11-~~), librust-num-format-0.4+default-dev, librust-once-cell-1+default-dev (\u003e= 1.5.2-~~), librust-parking-lot-0.12+default-dev, librust-rayon-1+default-dev (\u003e= 1.5.0-~~), librust-regex-1+default-dev (\u003e= 1.4.3-~~), librust-serde-1+default-dev (\u003e= 1.0.118-~~), librust-serde-1+derive-dev (\u003e= 1.0.118-~~), librust-serde-1+rc-dev (\u003e= 1.0.118-~~), librust-serde-json-1+default-dev (\u003e= 1.0.61-~~), librust-tera-1+default-dev (\u003e= 1.6.1-~~), librust-terminal-size-0+default-dev (\u003e= 0.3-~~), librust-toml-0.5+default-dev (\u003e= 0.5.8-~~)"
   ],
   "Checksums-Sha256": [
-    "060216d6a72be5073b07750b49b14b080b66b7e61cbfa92dcc946bec219ee045 3277 rust-tokei_12.1.2-5.dsc a41f915e075a8a98ad64a5f7be6b7cc1710fc835c5f07e4a3efcaeb013291c00 45185 rust-tokei_12.1.2.orig.tar.gz 4e49b123d7975eb5259caf385fe095a234526f18d6855318f575581a7259e3c3 5804 rust-tokei_12.1.2-5.debian.tar.xz"
+    "cd0aeb4947c70ebccd4b559a7614880dcf280d632df86cf280a1a756bdba41e3 3308 rust-tokei_12.1.2-6.dsc a41f915e075a8a98ad64a5f7be6b7cc1710fc835c5f07e4a3efcaeb013291c00 45185 rust-tokei_12.1.2.orig.tar.gz 1e58dec8fcd8d22d837c29ee4f2198ee2e140fdb32cbe5c740263402f16b8e2f 5956 rust-tokei_12.1.2-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokei"
   ],
   "Files": [
-    "fd1ce9d444380c75c0d2945bbe2ee413 3277 rust-tokei_12.1.2-5.dsc 1cacd081f5383ceb52e338c635b43fae 45185 rust-tokei_12.1.2.orig.tar.gz 5342ba4b3d641890841e0601e511ab80 5804 rust-tokei_12.1.2-5.debian.tar.xz"
+    "b032060b60f152c661e2f2e7dfdb9f6d 3308 rust-tokei_12.1.2-6.dsc 1cacd081f5383ceb52e338c635b43fae 45185 rust-tokei_12.1.2.orig.tar.gz 715f70b202ffdac9e0429ef0ff617696 5956 rust-tokei_12.1.2-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-git2-0.19-dev, librust-regex-1+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-git2-dev, librust-regex-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokei]"
   ],
   "Version": [
-    "12.1.2-5"
+    "12.1.2-6"
   ]
 }
