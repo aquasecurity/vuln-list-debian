@@ -6,19 +6,25 @@
     "librust-basic-toml-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bb5804d62c249892d2d80590051c70ae86089d700dac7f636fe1ef5bf2f7dd83 1779 rust-basic-toml_0.1.9-1.dsc 823388e228f614e9558c6804262db37960ec8821856535f5c3f59913140558f8 50234 rust-basic-toml_0.1.9.orig.tar.gz ed0d7d273e184334871b308d3514b6855f8ab96d6234578cf26df1dd49cb61c2 2736 rust-basic-toml_0.1.9-1.debian.tar.xz"
+    "d69860fdce17570fdf0333ee33e35d3626f0967e454921863384fc93e572f851 1868 rust-basic-toml_0.1.10-1.dsc ba62675e8242a4c4e806d12f11d136e626e6c8361d6b829310732241652a178a 50648 rust-basic-toml_0.1.10.orig.tar.gz d034fdaf6093e8f0829088a15261e4e92f0f62cadfcf333c40c71381a340eef4 2768 rust-basic-toml_0.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-basic-toml"
   ],
   "Files": [
-    "529ac9a3f88a76c17d74174252434cc5 1779 rust-basic-toml_0.1.9-1.dsc a4b3d0f1612f573654545942629125a8 50234 rust-basic-toml_0.1.9.orig.tar.gz f451c7400f30514a790ab12dcb01e4d1 2736 rust-basic-toml_0.1.9-1.debian.tar.xz"
+    "2c4e3f004ebdc32039d11ada0b472732 1868 rust-basic-toml_0.1.10-1.dsc 58fc2f16b4f0d324aa4664739b11ca26 50648 rust-basic-toml_0.1.10.orig.tar.gz f24a1619c5a34828ef324576e0928389 2768 rust-basic-toml_0.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/basic-toml"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-semver-1+default-dev, librust-semver-1+serde-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-semver-1+default-dev, librust-semver-1+serde-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/basic-toml]"
   ],
   "Version": [
-    "0.1.9-1"
+    "0.1.10-1"
   ]
 }
