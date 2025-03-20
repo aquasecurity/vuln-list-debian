@@ -6,16 +6,19 @@
     "librust-gstreamer-base-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atomic-refcell-0.1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-base-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atomic-refcell-0.1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.23+default-dev \u003c!nocheck\u003e, librust-gstreamer-base-sys-0.23+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0df9f7330a47df6f2457e58fa418651b7fefb2737034cf6020900f9ade208dde 2567 rust-gstreamer-base_0.23.1-1.dsc ed5d73cb5cbf229c8904fba5ff93b1863f186bccc062064c1b2a9000750cc06e 67833 rust-gstreamer-base_0.23.1.orig.tar.gz 28a5baa65014eb99bef24f1c5c01ad34a7a1a1ee8aa2fa8754612e497617181c 3560 rust-gstreamer-base_0.23.1-1.debian.tar.xz"
+    "15b24e258a22db001abee961feeeb54e74c98051e4aac723bc5c04d014853711 1996 rust-gstreamer-base_0.23.5-1.dsc ad33dd444db0d215ac363164f900f800ffb93361ad8a60840e95e14b7de985e8 73837 rust-gstreamer-base_0.23.5.orig.tar.gz 654bdc745b136a4fb09562e873aa666357f231a7419423920087ef816eee5ee8 3584 rust-gstreamer-base_0.23.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gstreamer-base"
   ],
   "Files": [
-    "744a4f79ef6bb3943174e68b6a2c0847 2567 rust-gstreamer-base_0.23.1-1.dsc 7fc87c1943624883aa083495fc0abb06 67833 rust-gstreamer-base_0.23.1.orig.tar.gz 13acbb5131637f5aa8d192b5143c25fc 3560 rust-gstreamer-base_0.23.1-1.debian.tar.xz"
+    "475198526c7775fd5b36e04407f8f4df 1996 rust-gstreamer-base_0.23.5-1.dsc 0c909544ada6caada285e61d2d9bdc81 73837 rust-gstreamer-base_0.23.5.orig.tar.gz 41594c156ddcab9efd424ba3bfc1d280 3584 rust-gstreamer-base_0.23.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-gir-format-check-0.1+default-dev"
+    "dh-cargo, librust-gir-format-check-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gstreamer-base]"
   ],
   "Version": [
-    "0.23.1-1"
+    "0.23.5-1"
   ]
 }

@@ -1,30 +1,30 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "tree-sitter-vim-src"
+    "tree-sitter-vim-src, librust-tree-sitter-vim-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), nodejs, tree-sitter-cli"
+    "cargo:native, debhelper-compat (= 13), dh-sequence-rust, librust-cc-1+default-dev (\u003e= 1.0.89), librust-tree-sitter-0+default-dev (\u003e= 0.21), nodejs, rustc:native, tree-sitter-cli (\u003e= 0.21)"
   ],
   "Checksums-Sha256": [
-    "315497e86686490693df13fa4389c1f65d698a009c6fb5afed6389362bd38029 2365 tree-sitter-vim_0.3.0-2.dsc 62f74acca89a2abfddc497ecea08e1e688c9bffdd76b2a8edbf48dfbbf5fd72c 207032 tree-sitter-vim_0.3.0.orig.tar.xz ab6de1d42f6027e4416d32e3f3fb5aa673028185ec5e37b36647f0479c03a36d 2632 tree-sitter-vim_0.3.0-2.debian.tar.xz"
+    "249467e09d0ab475986702f93d18d4d6265d8f877fc766a8b0560ca121a4e0f2 2752 tree-sitter-vim_0.4.0-3.dsc bd9564b707f1dd347793916d88580e62c5fbb988a92d65a66fe3b3e7d12d45d3 212912 tree-sitter-vim_0.4.0.orig.tar.xz 6d7f36924b6da01b1123b01f20912b212cd2fe6308ada42ff2492af23f660ca7 3420 tree-sitter-vim_0.4.0-3.debian.tar.xz"
   ],
   "Dgit": [
-    "6832ab52193a85c9b08c0d356e6dd1082064efba debian archive/debian/0.3.0-2 https://git.dgit.debian.org/tree-sitter-vim"
+    "6333533192e27f773b24dbd528b9a426bd676173 debian archive/debian/0.4.0-3 https://git.dgit.debian.org/tree-sitter-vim"
   ],
   "Directory": [
     "pool/main/t/tree-sitter-vim"
   ],
   "Files": [
-    "1901df8b9024c7340a6050dc82e2c7d2 2365 tree-sitter-vim_0.3.0-2.dsc 3681723d4c251775f7306673e1690e36 207032 tree-sitter-vim_0.3.0.orig.tar.xz abc2e609ae83410beba3b5f3f664b33d 2632 tree-sitter-vim_0.3.0-2.debian.tar.xz"
+    "80b19f5ea5bbc1c36fda63e8940eac6e 2752 tree-sitter-vim_0.4.0-3.dsc c2d3a3c0e6d2cf5b0b97312fc85dda14 212912 tree-sitter-vim_0.4.0.orig.tar.xz 3e99675f0d9f51674bf8799ddc0604c5 3420 tree-sitter-vim_0.4.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/neovim/tree-sitter-vim/"
+    "https://github.com/tree-sitter-grammars/tree-sitter-vim/"
   ],
   "Maintainer": [
     "Tree-sitter Team \u003cteam+tree-sitter@tracker.debian.org\u003e"
@@ -33,7 +33,7 @@
     "tree-sitter-vim"
   ],
   "Package-List": [
-    "tree-sitter-vim-src deb libs optional arch=all"
+    "librust-tree-sitter-vim-dev deb rust optional arch=any tree-sitter-vim-src deb libs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "tree-sitter-cli"
+    "dh-rust, librust-cc-1+default-dev, librust-tree-sitter-0+default-dev, librust-tree-sitter-vim-0.4+default-dev, librust-tree-sitter-vim-0.4-dev, tree-sitter-cli"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/tree-sitter-team/tree-sitter-vim.git"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.4.0-3"
   ]
 }

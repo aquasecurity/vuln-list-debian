@@ -6,16 +6,16 @@
     "librust-railway-provider-hafas-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev \u003c!nocheck\u003e, librust-chrono-tz-0.8+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-md-5-0.10+default-dev \u003c!nocheck\u003e, librust-railway-core-0.1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev \u003c!nocheck\u003e, librust-chrono-tz+default-dev (\u003c\u003c 0.11-~~) \u003c!nocheck\u003e, librust-chrono-tz+default-dev (\u003e= 0.8-~~) \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-md-5-0.10+default-dev \u003c!nocheck\u003e, librust-railway-core-0.1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "81b1fb0259b9216858ef2158cbdc8ef738ebdfc80aaa00a3fcddd6be43113649 2495 rust-railway-provider-hafas_0.1.2-1.dsc 290ef8d155d996f197cef4d857b7878c97f85a66926430cd7d9b60ea77a1fcd3 32211 rust-railway-provider-hafas_0.1.2.orig.tar.gz 3380981f1a7babbcf9ea92b045d1f0ef8963fa65cbf5ded9e616713fe4e1b606 18928 rust-railway-provider-hafas_0.1.2-1.debian.tar.xz"
+    "a9b250b8a3437126a961ee7089aa827a42d8e490ddaf4f6622b586e15f090dbc 3199 rust-railway-provider-hafas_0.1.2-2.dsc 290ef8d155d996f197cef4d857b7878c97f85a66926430cd7d9b60ea77a1fcd3 32211 rust-railway-provider-hafas_0.1.2.orig.tar.gz c774b2468f160d3b031df3f5a79a0fcffbc2d7321a7cbf6d3a05691a1e4c627e 19012 rust-railway-provider-hafas_0.1.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-railway-provider-hafas"
   ],
   "Files": [
-    "118d1e7de5cbf8cae56c0fbfacadd181 2495 rust-railway-provider-hafas_0.1.2-1.dsc 0b28559be6b89f99ad2792edb0491f16 32211 rust-railway-provider-hafas_0.1.2.orig.tar.gz 518991d46dacab7eb1cd1eff61776ca1 18928 rust-railway-provider-hafas_0.1.2-1.debian.tar.xz"
+    "e4233ba9327787e1a28bc7a0a922c70b 3199 rust-railway-provider-hafas_0.1.2-2.dsc 0b28559be6b89f99ad2792edb0491f16 32211 rust-railway-provider-hafas_0.1.2.orig.tar.gz 2f536b969b8c5dc3b59a43cd14f50583 19012 rust-railway-provider-hafas_0.1.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.11+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-env-logger-0.11+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e, Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/railway-provider-hafas]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.1.2-2"
   ]
 }
