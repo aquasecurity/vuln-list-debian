@@ -6,19 +6,19 @@
     "python3-pynvim"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-msgpack (\u003e= 0.5.0), python3-greenlet, neovim (\u003e= 0.2.1) \u003c!nocheck\u003e, python3-pytest (\u003e= 3.4.0) \u003c!nocheck\u003e, python3-pytest-runner"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-msgpack (\u003e= 0.5.0), python3-greenlet (\u003e= 3.0), python3-typing-extensions | python3 (\u003e= 3.12), neovim (\u003e= 0.10) \u003c!nocheck\u003e, python3-pytest (\u003e= 3.4.0) \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-runner"
   ],
   "Checksums-Sha256": [
-    "f5246bed9e4a37b19d723c06bc16c156a4ec29a740b9f3242fc3ea24a7cb8948 2570 python-pynvim_0.5.0-2.dsc e80a11f6f5d194c6a47bea4135b90b55faca24da3544da7cf4a5f7ba8fb09215 47584 python-pynvim_0.5.0.orig.tar.gz 3a2a798f05f48a0258e0ecbb63c84150e8c42b64694de5a5c457a3491b5de9d3 5284 python-pynvim_0.5.0-2.debian.tar.xz"
+    "715cb975b872a539d52de3679959cfed48df299227a8265e1ff0c96a1c969f4d 2617 python-pynvim_0.5.2-2.dsc 734a2432db8683519f58572617528ecb4a2f321bc7b27f034b3f9b2322c15615 50053 python-pynvim_0.5.2.orig.tar.gz cc1e900724a19e60b4b1d25c4a6268e59441c916c673756b62fa8a1329bfafc5 5736 python-pynvim_0.5.2-2.debian.tar.xz"
   ],
   "Dgit": [
-    "4bda0fe1e05f6f36f8950c9545fb4b216d6ea695 debian archive/debian/0.5.0-2 https://git.dgit.debian.org/python-pynvim"
+    "b1766197f7ca502a3ad4c3df2be65f09282aedf1 debian archive/debian/0.5.2-2 https://git.dgit.debian.org/python-pynvim"
   ],
   "Directory": [
     "pool/main/p/python-pynvim"
   ],
   "Files": [
-    "df1d6ca035200f3eee7b3d482aed1bac 2570 python-pynvim_0.5.0-2.dsc 3a0ccdfef8a25640a209ad4e691a6346 47584 python-pynvim_0.5.0.orig.tar.gz 999557775a3b400875e107cd53b6bab2 5284 python-pynvim_0.5.0-2.debian.tar.xz"
+    "148ccbac7a57b46cbf64877da9faed82 2617 python-pynvim_0.5.2-2.dsc b88c3de6718c3ae6f0b85acbe5edb950 50053 python-pynvim_0.5.2.orig.tar.gz 8727500b59321a18947ea8327ff311b2 5736 python-pynvim_0.5.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,7 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "neovim, python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e, Víctor Cuadrado Juan \u003cme@viccuad.me\u003e,"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-pynvim.git"
   ],
   "Version": [
-    "0.5.0-2"
+    "0.5.2-2"
   ]
 }
