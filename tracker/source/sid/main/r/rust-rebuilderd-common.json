@@ -6,16 +6,19 @@
     "librust-rebuilderd-common-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.58-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev (\u003e= 0.4.19-~~) \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev (\u003e= 0.4.19-~~) \u003c!nocheck\u003e, librust-clap-4+default-dev (\u003e= 4.5.21-~~) \u003c!nocheck\u003e, librust-clap-4+derive-dev (\u003e= 4.5.21-~~) \u003c!nocheck\u003e, librust-colored-2+default-dev \u003c!nocheck\u003e, librust-dirs-next-2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-reqwest-0.12+blocking-dev \u003c!nocheck\u003e, librust-reqwest-0.12+json-dev \u003c!nocheck\u003e, librust-reqwest-0.12+native-tls-dev \u003c!nocheck\u003e, librust-reqwest-0.12+stream-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.137-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.137-~~) \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.58-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev (\u003e= 0.4.19-~~) \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev (\u003e= 0.4.19-~~) \u003c!nocheck\u003e, librust-clap-4+default-dev (\u003e= 4.5.21-~~) \u003c!nocheck\u003e, librust-clap-4+derive-dev (\u003e= 4.5.21-~~) \u003c!nocheck\u003e, librust-colored-2+default-dev \u003c!nocheck\u003e, librust-dirs-next-2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-reqwest-0.12+blocking-dev \u003c!nocheck\u003e, librust-reqwest-0.12+json-dev \u003c!nocheck\u003e, librust-reqwest-0.12+rustls-tls-native-roots-dev \u003c!nocheck\u003e, librust-reqwest-0.12+stream-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.137-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.137-~~) \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "245d72676274e0cf9677ce36b1a64b277e7917989b3f751b11c0bdb629299395 3120 rust-rebuilderd-common_0.22.1-1.dsc 72e2f25b43fdcf1503b9cfb52019598f8aa1ef49d318147f3c14aaa801601c69 18735 rust-rebuilderd-common_0.22.1.orig.tar.gz b39e73669da77dbb6b0f7550dd657f0080a47432c384c44d51fbdbda26e8703a 2288 rust-rebuilderd-common_0.22.1-1.debian.tar.xz"
+    "4db923dd2027cb163ad6e2e25c9eac0446e668f8cf90fd8a3011af76a5e5b0d0 3170 rust-rebuilderd-common_0.22.1-2.dsc 72e2f25b43fdcf1503b9cfb52019598f8aa1ef49d318147f3c14aaa801601c69 18735 rust-rebuilderd-common_0.22.1.orig.tar.gz 7cd4cc0c513aa74767be014cf7c3004673eec67fc4d19c414cd617a57ca72351 2392 rust-rebuilderd-common_0.22.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rebuilderd-common"
   ],
   "Files": [
-    "ab279d4bc44f47abadbb07edfe85515b 3120 rust-rebuilderd-common_0.22.1-1.dsc 7ba33cff1e37e50a7121182322c0a85d 18735 rust-rebuilderd-common_0.22.1.orig.tar.gz 41c707f1f000afdfdeb1a78ec038ae6e 2288 rust-rebuilderd-common_0.22.1-1.debian.tar.xz"
+    "edad0be99fd25b06b9e3308e483a65d1 3170 rust-rebuilderd-common_0.22.1-2.dsc 7ba33cff1e37e50a7121182322c0a85d 18735 rust-rebuilderd-common_0.22.1.orig.tar.gz 59e9bc755c61860dc8fa2ca6c8656bbb 2392 rust-rebuilderd-common_0.22.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "ca-certificates, dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rebuilderd-common]"
   ],
   "Version": [
-    "0.22.1-1"
+    "0.22.1-2"
   ]
 }
