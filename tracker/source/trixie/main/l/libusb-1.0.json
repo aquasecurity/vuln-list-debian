@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "linux-any hurd-any all"
+    "hurd-any linux-any all"
   ],
   "Binary": [
     "libusb-1.0-0, libusb-1.0-0-dev, libusb-1.0-doc, libusb-1.0-0-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libudev-dev [linux-any], pkgconf, umockdev [linux-any] \u003c!nocheck\u003e, libumockdev-dev [linux-any] \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), libudev-dev [linux-any], libumockdev-dev [linux-any] \u003c!nocheck\u003e, pkgconf, umockdev [linux-any] \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen"
   ],
   "Checksums-Sha256": [
-    "9c6529de5ef9e6901d06d1018306e2cb5fd9938a7d33a10db5479e1fbab22183 2529 libusb-1.0_1.0.27-2.dsc ffaa41d741a8a3bee244ac8e54a72ea05bf2879663c098c82fc5757853441575 643680 libusb-1.0_1.0.27.orig.tar.bz2 1cd22bbfe4ce382ca9b091e2a6275c48f1c776253815cbb615da295ae0bfe687 833 libusb-1.0_1.0.27.orig.tar.bz2.asc c6bad7ae89ae3ec88ded78ea84bbff2047acaf010d2a599b370c8b110c2a50d1 17340 libusb-1.0_1.0.27-2.debian.tar.xz"
+    "be92b66ffc1784d592a78bf4ae1c5f5776fd3cd96ebbc677341cc71956d3611b 2643 libusb-1.0_1.0.28-1.dsc 966bb0d231f94a474eaae2e67da5ec844d3527a1f386456394ff432580634b29 658053 libusb-1.0_1.0.28.orig.tar.bz2 a92679aa89b24339f554c767cee6e4fb0c16802aef50f1280284f05edbf65d19 833 libusb-1.0_1.0.28.orig.tar.bz2.asc 4057d38b4b0766f1de2957f25c98e9e447748c08ba75bc15eb29094b67829f89 18108 libusb-1.0_1.0.28-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libu/libusb-1.0"
   ],
   "Files": [
-    "4f64266b1a92f0d0e6b8a6591930bd68 2529 libusb-1.0_1.0.27-2.dsc 1fb61afe370e94f902a67e03eb39c51f 643680 libusb-1.0_1.0.27.orig.tar.bz2 be3b4265eb0ba77ea2a4bbe78539e1d7 833 libusb-1.0_1.0.27.orig.tar.bz2.asc 1f7bec108becaa64bd3d17abee4cd0f6 17340 libusb-1.0_1.0.27-2.debian.tar.xz"
+    "39b6e8f9ad2ad5aa3963d1afbb22cdc2 2643 libusb-1.0_1.0.28-1.dsc 4022135a84975b292cf48381fbc8ffd8 658053 libusb-1.0_1.0.28.orig.tar.bz2 18cc9887083e93dadec1449c909ff8ee 833 libusb-1.0_1.0.28.orig.tar.bz2.asc 2af8a39dd1fd3c3afed6f048f568b8f1 18108 libusb-1.0_1.0.28-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "libusb-1.0"
   ],
   "Package-List": [
-    "libusb-1.0-0 deb libs optional arch=linux-any,hurd-any libusb-1.0-0-dev deb libdevel optional arch=linux-any,hurd-any libusb-1.0-0-udeb udeb debian-installer optional arch=linux-any,hurd-any profile=!noudeb libusb-1.0-doc deb doc optional arch=all"
+    "libusb-1.0-0 deb libs optional arch=hurd-any,linux-any libusb-1.0-0-dev deb libdevel optional arch=hurd-any,linux-any libusb-1.0-0-udeb udeb debian-installer optional arch=hurd-any,linux-any profile=!noudeb libusb-1.0-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -50,7 +50,13 @@
   "Testsuite-Triggers": [
     "build-essential, libudev-dev, libumockdev-dev, pkg-config, umockdev"
   ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/aurel32/libusb-1.0"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/aurel32/libusb-1.0.git"
+  ],
   "Version": [
-    "2:1.0.27-2"
+    "2:1.0.28-1"
   ]
 }
