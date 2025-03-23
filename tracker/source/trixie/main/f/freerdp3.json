@@ -6,16 +6,16 @@
     "freerdp3-x11, libfreerdp3-3, libfreerdp-client3-3, libfreerdp-server3-3, libwinpr3-3, libwinpr-tools3-3, libwinpr3-dev, freerdp3-dev, winpr3-utils, libfreerdp-shadow3-3, libfreerdp-shadow-subsystem3-3, freerdp3-shadow-x11, freerdp3-wayland, freerdp3-sdl, libfreerdp-server-proxy3-3, freerdp3-proxy-modules, freerdp3-proxy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, docbook-xsl, dpkg-dev (\u003e= 1.22.5), libasound2-dev, libavcodec-dev, libavutil-dev, libcairo2-dev, libcjson-dev, libcups2-dev, libfuse3-dev, libgsm1-dev, libicu-dev, libjpeg-dev, libkrb5-dev, libopus-dev, libpam0g-dev, libpcsclite-dev, libpkcs11-helper1-dev, libpng-dev, libpulse-dev, libsdl2-dev, libsdl2-image-dev, libsdl2-ttf-dev, libssl-dev, libv4l-dev [linux-any], libswresample-dev, libswscale-dev, libsystemd-dev [linux-any], libudev-dev [linux-any], libusb-1.0-0-dev [linux-any], liburiparser-dev, libwayland-dev [linux-any], libwebp-dev, libx11-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxinerama-dev, libxi-dev, libxkbcommon-dev, libxkbfile-dev, libxrandr-dev, libxrender-dev, libxtst-dev, libxv-dev, pkgconf, uuid-dev, xmlto, xsltproc"
+    "debhelper-compat (= 13), cmake, docbook-xsl, dpkg-dev (\u003e= 1.22.5), libasound2-dev, libavcodec-dev, libavutil-dev, libcairo2-dev, libcjson-dev, libcups2-dev, libfuse3-dev, libgsm1-dev, libicu-dev, libjpeg-dev, libkrb5-dev, libopus-dev, libpam0g-dev, libpcsclite-dev, libpkcs11-helper1-dev, libpng-dev, libpulse-dev, libsdl2-dev \u003cpkg.freerdp3.sdl2\u003e, libsdl2-image-dev \u003cpkg.freerdp3.sdl2\u003e, libsdl2-ttf-dev \u003cpkg.freerdp3.sdl2\u003e, libsdl3-dev \u003c!pkg.freerdp3.sdl2\u003e, libsdl3-image-dev \u003c!pkg.freerdp3.sdl2\u003e, libsdl3-ttf-dev \u003c!pkg.freerdp3.sdl2\u003e, libssl-dev, libv4l-dev [linux-any], libswresample-dev, libswscale-dev, libsystemd-dev [linux-any], libudev-dev [linux-any], libusb-1.0-0-dev [linux-any], liburiparser-dev, libwayland-dev [linux-any], libwebp-dev, libx11-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxinerama-dev, libxi-dev, libxkbcommon-dev, libxkbfile-dev, libxrandr-dev, libxrender-dev, libxtst-dev, libxv-dev, pkgconf, uuid-dev, xmlto, xsltproc"
   ],
   "Checksums-Sha256": [
-    "b12ae51b96f0afe16b23ceeef92a8840a568ecd1a890140313eb3bab8471d547 3910 freerdp3_3.12.0+dfsg-1.dsc c935ad53b234090a78ab6c9d0b7e0d505570c8d34c0695e7b12008e7b88f40d7 4446256 freerdp3_3.12.0+dfsg.orig.tar.xz 0786049e0ddd1a685746c976cb8155f6244bcdc2fac0d692e4ebc0af67d11022 50080 freerdp3_3.12.0+dfsg-1.debian.tar.xz"
+    "c3acb3e1c947dd2649e6233a7bf27590ed32040fd3d909fa9942d3bcc7e433d4 4116 freerdp3_3.14.0+dfsg-1.dsc 2d5fdea4f1fbddf2ee5b78589aeba832716d143e522e87ec705ac7691793abb4 4471584 freerdp3_3.14.0+dfsg.orig.tar.xz 555f5b8f07c01fea14ea95234babca5a46758202d6abf0a303b9d94d91ffa234 47580 freerdp3_3.14.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/freerdp3"
   ],
   "Files": [
-    "de058268a319bceaacbc93ed2eb75cd8 3910 freerdp3_3.12.0+dfsg-1.dsc 962dc55dd5077b9bdef3b86b1a84123d 4446256 freerdp3_3.12.0+dfsg.orig.tar.xz f3bf1b0e0140e23642a5f4d0dd75dd93 50080 freerdp3_3.12.0+dfsg-1.debian.tar.xz"
+    "0d6b215c671a2f59083791178760b2cb 4116 freerdp3_3.14.0+dfsg-1.dsc 376ed7f60bc2a14d05827684ff73c4dc 4471584 freerdp3_3.14.0+dfsg.orig.tar.xz 8bf076647f2ecf665aa283a14ba27641 47580 freerdp3_3.14.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "xauth, xrdp, xvfb"
   ],
   "Uploaders": [
-    "Mike Gabriel \u003csunweaver@debian.org\u003e, Bernhard Miklautz \u003cbernhard.miklautz@shacknet.at\u003e,"
+    "Mike Gabriel \u003csunweaver@debian.org\u003e, Bernhard Miklautz \u003cbernhard.miklautz@shacknet.at\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian-remote-team/freerdp3"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-remote-team/freerdp3.git"
   ],
   "Version": [
-    "3.12.0+dfsg-1"
+    "3.14.0+dfsg-1"
   ]
 }
