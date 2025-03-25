@@ -6,16 +6,19 @@
     "librust-pcre2-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.73-~~) \u003c!nocheck\u003e, librust-cc-1+parallel-dev (\u003e= 1.0.73-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.146-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.27-~~) \u003c!nocheck\u003e, libpcre2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.73-~~) \u003c!nocheck\u003e, librust-cc-1+parallel-dev (\u003e= 1.0.73-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.146-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.27-~~) \u003c!nocheck\u003e, libpcre2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "32c012b8cff4aed73bf8b39e5b9d65d9da63857af92bc2d873926c5c0428814c 2464 rust-pcre2-sys_0.2.7-1.dsc 1b71418011c2aa6daf44edf50e8e46f1978f060abea7e942dd2fdaf2db403a25 12606 rust-pcre2-sys_0.2.7.orig.tar.gz 1f028fdcac08794d4beed7673db01c296fcdc1b0c7de3dbc482ed357a2258e0b 3160 rust-pcre2-sys_0.2.7-1.debian.tar.xz"
+    "8ec5badff6b3341ec0a800f9e7d2b145f101f4b73717f49f18bbfd52c831b767 1864 rust-pcre2-sys_0.2.9-1.dsc 69aafd6a80555096346042722a1fb374e37721867d87c85e3661df93f36e5cbf 12761 rust-pcre2-sys_0.2.9.orig.tar.gz d858013b02e132f035d5b728e273656f1e33c7698da449bc63e8df263de58593 3236 rust-pcre2-sys_0.2.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pcre2-sys"
   ],
   "Files": [
-    "a284df14dd5c6ff62b4cf534514db137 2464 rust-pcre2-sys_0.2.7-1.dsc 5c113bc7f0ad14640eaf4f6171efd547 12606 rust-pcre2-sys_0.2.7.orig.tar.gz 9a01e3cd0d8e528e517363ee28c5ebbc 3160 rust-pcre2-sys_0.2.7-1.debian.tar.xz"
+    "1676a519e59efaefa64ae2c9a999352c 1864 rust-pcre2-sys_0.2.9-1.dsc 5bc3b6dd24d37f9c8af8a5c29ee4e45e 12761 rust-pcre2-sys_0.2.9.orig.tar.gz 348dbf669f383f0263549f3c3de82a36 3236 rust-pcre2-sys_0.2.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pcre2-sys]"
   ],
   "Version": [
-    "0.2.7-1"
+    "0.2.9-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-colored-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "98d770ffe0ce18942ea93ea497dbd5c64de54d554ae8942ae1b38eaf2079529c 2254 rust-colored_2.1.0-1.dsc cbf2150cce219b664a8a70df7a1f933836724b503f8a413af9365b4dcc4d90b8 23348 rust-colored_2.1.0.orig.tar.gz 087152d5021a78d9ff8b1a9f994f5a7dfa5f72a3497ae8a0f7e5358612ff88ee 3804 rust-colored_2.1.0-1.debian.tar.xz"
+    "cd8447842371f48609cbac266167225ef772dc16e74a3897d5d4bcb4ec6de67b 1683 rust-colored_2.2.0-1.dsc 117725a109d387c937a1533ce01b450cbde6b88abceea8473c4d7a85853cda3c 35062 rust-colored_2.2.0.orig.tar.gz cb3828250e7a54988cd38dc95617c0e3cdd3f2612c9e490eacf6d382572f2ef5 3872 rust-colored_2.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-colored"
   ],
   "Files": [
-    "a513c679ceaa92abb2f5db381a4ff778 2254 rust-colored_2.1.0-1.dsc a5027128be1d4cf8495c2a7465b4fa05 23348 rust-colored_2.1.0.orig.tar.gz f33b74467cf0b15e1f30b17a3df002a4 3804 rust-colored_2.1.0-1.debian.tar.xz"
+    "44867bcf9427ab3879652c6860079861 1683 rust-colored_2.2.0-1.dsc e3adf326272e84746b26a5f7c5f2a9ca 35062 rust-colored_2.2.0.orig.tar.gz f36ee93509163e5c4f6986bad061f461 3872 rust-colored_2.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-ansi-term-0.12+default-dev"
+    "dh-cargo, librust-ansi-term-0.12+default-dev, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/colored]"
   ],
   "Version": [
-    "2.1.0-1"
+    "2.2.0-1"
   ]
 }
