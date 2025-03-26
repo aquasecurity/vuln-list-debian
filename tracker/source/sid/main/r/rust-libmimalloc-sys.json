@@ -6,19 +6,25 @@
     "librust-libmimalloc-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libmimalloc-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, libmimalloc-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "91ef3f99569af71faeb2460ec645b69ddb78e1f63dc22898fa811905b7a07169 1871 rust-libmimalloc-sys_0.1.25-1.dsc 52adeac4040808e9e65708ae8bad3628a8e15fb26e65b1cde3a479470e041b2b 11198 rust-libmimalloc-sys_0.1.25.orig.tar.gz 7d183b57b45f10c040c41ae828fa68f1a204b4be2b36a63c2edd733c5989bf00 3264 rust-libmimalloc-sys_0.1.25-1.debian.tar.xz"
+    "7c41e74461732d880b7c9af5d3f94eadb8307f9a9ef25e22b97184e68f1eb33e 2405 rust-libmimalloc-sys_0.1.40-1.dsc 21043a151733546b0701e4fbfc1637618a273e565b8f8c54232ae9c8444cdc19 13154 rust-libmimalloc-sys_0.1.40.orig.tar.gz d68883fddd71019a0362e84fd6134bcdaae85bb815dc319316237add7dd6c2e8 3432 rust-libmimalloc-sys_0.1.40-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libmimalloc-sys"
   ],
   "Files": [
-    "845a3c4d795171d9ed5887f0e1fdffb3 1871 rust-libmimalloc-sys_0.1.25-1.dsc ae361eae5ffaaadeb4012f49ae0589bc 11198 rust-libmimalloc-sys_0.1.25.orig.tar.gz a12e6a4668f92b930be0ea809b36b4fc 3264 rust-libmimalloc-sys_0.1.25-1.debian.tar.xz"
+    "bb393c3e79b262ce6ecece3a1777d8d0 2405 rust-libmimalloc-sys_0.1.40-1.dsc fa68f8bb050e7feabcf8bf270e1fd08a 13154 rust-libmimalloc-sys_0.1.40.orig.tar.gz 4f1301d0a62648e4a0e315c78acf656e 3432 rust-libmimalloc-sys_0.1.40-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/purpleprotocol/mimalloc_rust/tree/master/libmimalloc-sys"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cn@sail.ng\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libmimalloc-sys]"
   ],
   "Version": [
-    "0.1.25-1"
+    "0.1.40-1"
   ]
 }
