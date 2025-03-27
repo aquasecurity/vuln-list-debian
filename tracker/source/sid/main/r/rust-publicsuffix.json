@@ -6,19 +6,25 @@
     "librust-publicsuffix-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-idna-0.4+default-dev \u003c!nocheck\u003e, librust-psl-types-2+default-dev (\u003e= 2.0.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-idna+default-dev (\u003e= 0.3-~~) \u003c!nocheck\u003e, librust-psl-types-2+default-dev (\u003e= 2.0.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7a0e3904764408fb440b6e02f8661f699aba16fa67a16266226af77e48b8fd2d 2307 rust-publicsuffix_2.2.3-3.dsc 96a8c1bda5ae1af7f99a2962e49df150414a43d62404644d98dd5c3a93d07457 87807 rust-publicsuffix_2.2.3.orig.tar.gz 0b672bccaca532bb6f61f56eba192b71bc8e1412ad86da3ee1a686293f327b3b 3468 rust-publicsuffix_2.2.3-3.debian.tar.xz"
+    "6e42a6832d984591bc2a431daf7591f82fcbf8908fd0c7fe8973cc51a1453364 2400 rust-publicsuffix_2.2.3-4.dsc 96a8c1bda5ae1af7f99a2962e49df150414a43d62404644d98dd5c3a93d07457 87807 rust-publicsuffix_2.2.3.orig.tar.gz 989a2dac86471c5f032a36eacc077ebfc68a6376ea4a420a16122458c20103c9 3500 rust-publicsuffix_2.2.3-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-publicsuffix"
   ],
   "Files": [
-    "3d0d5e4727f63d5c2811ffa67fbbffd4 2307 rust-publicsuffix_2.2.3-3.dsc 9e7bad2f5c9cfa7a498f24c67ed02cb6 87807 rust-publicsuffix_2.2.3.orig.tar.gz f99e2262715c5b00ab47ac4c69f74738 3468 rust-publicsuffix_2.2.3-3.debian.tar.xz"
+    "cf169c76dcb80799602925ebb655d616 2400 rust-publicsuffix_2.2.3-4.dsc 9e7bad2f5c9cfa7a498f24c67ed02cb6 87807 rust-publicsuffix_2.2.3.orig.tar.gz 7e3ea0d248c9e48c980e83cdc61ca55d 3500 rust-publicsuffix_2.2.3-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rushmorem/publicsuffix"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/publicsuffix]"
   ],
   "Version": [
-    "2.2.3-3"
+    "2.2.3-4"
   ]
 }

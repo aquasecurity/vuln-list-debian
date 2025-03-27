@@ -6,19 +6,19 @@
     "python3-scipy, python-scipy-doc"
   ],
   "Build-Depends": [
-    "cython3, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, gfortran, libblas-dev, liblapack-dev, liblbfgsb-dev, libsuitesparse-dev, python3-mesonpy (\u003e= 0.15.0~), pkgconf, python3-all-dev, python3-decorator, python3-numpy (\u003e= 1:1.26.0~), python3-pooch, python3-pybind11 (\u003e= 2.12.0~), python3-setuptools, python3-wheel, python3-pythran (\u003e= 0.15.0~), python3-pytest, python3-doit (\u003e= 0.36.0~) \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e"
+    "cython3, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, gfortran, libblas-dev, liblapack-dev, libsuitesparse-dev, python3-mesonpy (\u003e= 0.15.0~), pkgconf, python3-all-dev, python3-decorator, python3-numpy (\u003e= 1:1.26.0~), python3-pooch, python3-pybind11 (\u003e= 2.13.2~), python3-setuptools, python3-wheel, python3-pythran (\u003e= 0.15.0~), python3-pytest, python3-doit (\u003e= 0.36.0~) \u003c!nocheck\u003e, python3-hypothesis \u003c!nocheck\u003e, python3-yaml"
   ],
   "Build-Depends-Indep": [
-    "dvipng, dh-sequence-sphinxdoc, python3-doc \u003c!nodoc\u003e, python3-docutils, python3-matplotlib, python-matplotlib-doc \u003c!nodoc\u003e, python3-myst-nb \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-pydata-sphinx-theme, python3-sphinx, python3-sphinx-design, python3-sphinx-tabs, python-statsmodels-doc \u003c!nodoc\u003e, rdfind, symlinks, texlive-latex-base, texlive-latex-extra"
+    "dvipng, dh-sequence-sphinxdoc, python3-doc \u003c!nodoc\u003e, python3-docutils, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-jupytext \u003c!nodoc\u003e, python3-matplotlib, python-matplotlib-doc \u003c!nodoc\u003e, python-mpmath-doc \u003c!nodoc\u003e, python3-myst-nb \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-pydata-sphinx-theme, python3-sphinx, python3-sphinx-design, python3-sphinx-tabs, python-statsmodels-doc \u003c!nodoc\u003e, rdfind, symlinks, texlive-latex-base, texlive-latex-extra"
   ],
   "Checksums-Sha256": [
-    "a9278066fd83cfd5facda3b1249a3db35f380ae446f504d1cf49d606ccfe1e92 3424 scipy_1.14.1-4.dsc b70896f5c5fe52bab9d5b68336a769479c9583eca0fb6045810aed459b686414 33129626 scipy_1.14.1.orig-submodules.tar.gz 233b1d5a9a7740c247e2d677e10273727abe867a415bfb4b88030b29195c495d 26481171 scipy_1.14.1.orig.tar.gz 76bdb1dd4c8cecc432879aa0d09beb2f454d2320d12fe549c3c10b04afc5ee42 112324 scipy_1.14.1-4.debian.tar.xz"
+    "72bf5fabc11c36bcbd69bc59546aa5081d782c267ffb77df19ff573410a32f32 3526 scipy_1.15.2-7.dsc 5a9ab5037ec5990bbfa267f48298a6689eb0f3bc229910ca590697f0484ccdd3 35488959 scipy_1.15.2.orig-submodules.tar.gz 9d4af88b53442914c9e0beea7b09ae4cef39e4d1abfda55f0b76d11bc978a138 25206481 scipy_1.15.2.orig.tar.gz 6b0f2d437c038f8a8eaf6f55da71ad711d8b61ba4020356599682049e0080c1d 44964 scipy_1.15.2-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/scipy"
   ],
   "Files": [
-    "e7d362e2b7284eff2ad136e876c5dc6a 3424 scipy_1.14.1-4.dsc 525eaeeacb41e4908b01a47b2499ea3d 33129626 scipy_1.14.1.orig-submodules.tar.gz ed5b220eaa5a255f66849d1ea6e88788 26481171 scipy_1.14.1.orig.tar.gz a5656f18504f0bcaf50f5bfbf947fd10 112324 scipy_1.14.1-4.debian.tar.xz"
+    "995b7b9a8328beeb23559e6324c0ff1b 3526 scipy_1.15.2-7.dsc 7f024c137afde1331b5388532998e1e4 35488959 scipy_1.15.2.orig-submodules.tar.gz fae54c40d322d8ceba15bc0aa47a13b1 25206481 scipy_1.15.2.orig.tar.gz a9f841b78fc4a31f987c93c35b4c0aee 44964 scipy_1.15.2-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, libblis-dev, libopenblas-dev, python3, python3-all, python3-all-dev, python3-doit, python3-hypothesis, python3-pil, python3-pooch, python3-pytest"
+    "build-essential, libblis-dev, libopenblas-dev, python3, python3-all, python3-all-dev, python3-doit, python3-hypothesis, python3-pil, python3-pooch, python3-pytest, python3-yaml"
   ],
   "Uploaders": [
     "Drew Parsons \u003cdparsons@debian.org\u003e, Ondrej Certik \u003condrej@certik.cz\u003e, David Cournapeau \u003ccournape@gmail.com\u003e, Varun Hiremath \u003cvarun@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/scipy.git"
   ],
   "Version": [
-    "1.14.1-4"
+    "1.15.2-7"
   ]
 }
