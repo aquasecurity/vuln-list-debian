@@ -6,16 +6,19 @@
     "librust-strip-ansi-escapes-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-vte-0.13-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-vte-0.15-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ac65d20904bd5d7e0a6e1698142429ec5ab7afe049ab826e52e94de1bb7799e1 2372 rust-strip-ansi-escapes_0.2.0-1.dsc 55ff8ef943b384c414f54aefa961dd2bd853add74ec75e7ac74cf91dba62bcfa 8625 rust-strip-ansi-escapes_0.2.0.orig.tar.gz a98e63ea8ec858780cdd399f87edc6678c47529fafa3195a3929b5c769757e79 3096 rust-strip-ansi-escapes_0.2.0-1.debian.tar.xz"
+    "7e810ba1024d404265789c14774999201ee720fd0b566e5617a88a758e54552a 1771 rust-strip-ansi-escapes_0.2.1-1.dsc 2a8f8038e7e7969abb3f1b7c2a811225e9296da208539e0f79c5251d6cac0025 8273 rust-strip-ansi-escapes_0.2.1.orig.tar.gz 7d8744c58ba66702616de8e1f2d0e9e45ae99221fd7e97b867f88df27232cd1e 3116 rust-strip-ansi-escapes_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-strip-ansi-escapes"
   ],
   "Files": [
-    "ba68757a250f39b91ae3fe97ea76aea6 2372 rust-strip-ansi-escapes_0.2.0-1.dsc d5f693ec551342903ef08ce4eb1eccae 8625 rust-strip-ansi-escapes_0.2.0.orig.tar.gz 3d0b03544a17810c1e0263a96f3a08ce 3096 rust-strip-ansi-escapes_0.2.0-1.debian.tar.xz"
+    "524ba6f7c502ab0ae854c06f55af967f 1771 rust-strip-ansi-escapes_0.2.1-1.dsc 61e107c951535364f334286dea486723 8273 rust-strip-ansi-escapes_0.2.1.orig.tar.gz f4d1c858ea9b469a2d444e7943ea73a2 3116 rust-strip-ansi-escapes_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/strip-ansi-escapes]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.1-1"
   ]
 }

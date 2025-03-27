@@ -6,19 +6,25 @@
     "librust-fs-err-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7cccafe246cdd4c9df75d8a326f9feb0dde1768a848a9707d62deae13be6c670 2194 rust-fs-err_2.11.0-1.dsc 88a41f105fe1d5b6b34b2055e3dc59bb79b46b48b2040b9e6c7b4b5de097aa41 20449 rust-fs-err_2.11.0.orig.tar.gz 5ef408e9b7f4a98f6023cd5800f96b594e65ce114af0dc6c1002a4f2e51a3a88 2904 rust-fs-err_2.11.0-1.debian.tar.xz"
+    "b9b562e08c0b03f6050e4984bf900822a6e21bdcbad68ec12502be2a1884b5e1 1642 rust-fs-err_3.1.0-1.dsc 1f89bda4c2a21204059a977ed3bfe746677dfd137b83c339e702b0ac91d482aa 23055 rust-fs-err_3.1.0.orig.tar.gz 2db08271ad22c86a5feb5f5ca11b2e7501e5d2a280442ab55f95bf9075eec94a 2816 rust-fs-err_3.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fs-err"
   ],
   "Files": [
-    "50d7d760cefb69a3d0482d8e57ffbefb 2194 rust-fs-err_2.11.0-1.dsc 672419f07b74564a36d5c84bcd12658a 20449 rust-fs-err_2.11.0.orig.tar.gz b4da035de27470149800291e083d35b3 2904 rust-fs-err_2.11.0-1.debian.tar.xz"
+    "ab52e458a57a3382c7b00399f7bfae59 1642 rust-fs-err_3.1.0-1.dsc 8757f0b3978f3d4af0b30390f9c24f18 23055 rust-fs-err_3.1.0.orig.tar.gz 3e8a7b8196a1f6d2a5db50e4238e6bc3 2816 rust-fs-err_3.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/andrewhickman/fs-err"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/fs-err"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fs-err]"
   ],
   "Version": [
-    "2.11.0-1"
+    "3.1.0-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-fs4-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "531b0dd83b312b4d57e8299c9efe5eddab0c393362b9ca28904055ff6824c27d 1764 rust-fs4_0.11.1-1.dsc e871a4cfa68bb224863b53149d973df1ac8d1ed2fa1d1bfc37ac1bb65dd37207 19443 rust-fs4_0.11.1.orig.tar.gz 0a5fa72b55ab98f331055bb94958459d5bc76dc8149a3449863f7d8a1de4f8db 5004 rust-fs4_0.11.1-1.debian.tar.xz"
+    "4c128384dc480ef3639a667f6a64aef6b3e8507dce60f5f32e291682f6bc8154 1882 rust-fs4_0.11.1-2.dsc e871a4cfa68bb224863b53149d973df1ac8d1ed2fa1d1bfc37ac1bb65dd37207 19443 rust-fs4_0.11.1.orig.tar.gz 63bd0f8ce9808fcd604adff9fc5be356901b2b2a06f5a0d51024bc4aed2dec77 4620 rust-fs4_0.11.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fs4"
   ],
   "Files": [
-    "f8709e2df387d3e029276e910a781230 1764 rust-fs4_0.11.1-1.dsc 7ccfd840738cfd08f7b25421bdec3ccc 19443 rust-fs4_0.11.1.orig.tar.gz d334e1493f2ca4a9c06cf81b2b47cf6c 5004 rust-fs4_0.11.1-1.debian.tar.xz"
+    "2cb6d0ea643b2541d03cc7a90354f342 1882 rust-fs4_0.11.1-2.dsc 7ccfd840738cfd08f7b25421bdec3ccc 19443 rust-fs4_0.11.1.orig.tar.gz aec7f2f36c71440cc4862f4bd5777028 4620 rust-fs4_0.11.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/al8n/fs4-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-libc-0.2+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, rustc"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-fs-err-3+default-dev, librust-fs-err-3+tokio-dev, librust-libc-0.2+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, rustc"
   ],
   "Uploaders": [
     "Maytham Alsudany \u003cmaytha8thedev@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fs4]"
   ],
   "Version": [
-    "0.11.1-1"
+    "0.11.1-2"
   ]
 }

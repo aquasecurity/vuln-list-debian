@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-scroll-dev, librust-scroll+scroll-derive-dev"
+    "librust-scroll-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c6c92135d74ff1c992890e1f67ae158a7083d6a51600d070f7026518156af0f5 1955 rust-scroll_0.11.0-1.dsc 04c565b551bafbef4157586fa379538366e4385d42082f255bfd96e4fe8519da 27354 rust-scroll_0.11.0.orig.tar.gz a6cf85becd092cf3a7adf10bb54b511ea6b993393a1479cb2368ea45b1fb59fb 3200 rust-scroll_0.11.0-1.debian.tar.xz"
+    "d842fafbded27ea7a6e42d85e64ea42f7ba243eadbde8380e9f068330becf7f0 1621 rust-scroll_0.12.0-1.dsc 6ab8598aa408498679922eff7fa985c25d58a90771bd6be794434c5277eab1a6 24145 rust-scroll_0.12.0.orig.tar.gz 7bec85ad971d8ed3571ba60053f8756cc8846ba30b65cc97370fea0df6100b39 3032 rust-scroll_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-scroll"
   ],
   "Files": [
-    "fed233e387e86ee6e64a15d6500294d7 1955 rust-scroll_0.11.0-1.dsc 8b30fed89ef1779989a7283105291819 27354 rust-scroll_0.11.0.orig.tar.gz d4dc50bea46abfa7b847640f04f375eb 3200 rust-scroll_0.11.0-1.debian.tar.xz"
+    "dfb8376e174e769df1db97c705457baf 1621 rust-scroll_0.12.0-1.dsc 43f4081b2bfda846e761692c831e0280 24145 rust-scroll_0.12.0.orig.tar.gz ec631114b71b855d470e182bce1cd498 3032 rust-scroll_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/m4b/scroll"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-scroll"
   ],
   "Package-List": [
-    "librust-scroll+scroll-derive-dev deb rust optional arch=any librust-scroll-dev deb rust optional arch=any"
+    "librust-scroll-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-byteorder-1+default-dev, librust-rayon-1+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/scroll]"
   ],
   "Version": [
-    "0.11.0-1"
+    "0.12.0-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-auditable-serde-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-semver-1+default-dev \u003c!nocheck\u003e, librust-semver-1+serde-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+serde-derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.57-~~) \u003c!nocheck\u003e, librust-topological-sort-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-semver-1+default-dev \u003c!nocheck\u003e, librust-semver-1+serde-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+serde-derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.57-~~) \u003c!nocheck\u003e, librust-topological-sort-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "96ee1790aa650ef9d7d3f8cde1d0b683bf4478e05f7d7cd728d794497fd84eb4 2493 rust-auditable-serde_0.6.0-1.dsc ee9eb59fe3d21574d97501698729b10a15427d3461a6478e86735e2df5150224 11325 rust-auditable-serde_0.6.0.orig.tar.gz 5e3cec50d8ca4e440987cc6efa96e79f9933e7a9aee37fe5c264bbf29dccdaff 3256 rust-auditable-serde_0.6.0-1.debian.tar.xz"
+    "09e7079763291e8633f7ff0e245ef077342103a978fdec3858d972462f783aee 1980 rust-auditable-serde_0.8.0-1.dsc 5c7bf8143dfc3c0258df908843e169b5cc5fcf76c7718bd66135ef4a9cd558c5 5604 rust-auditable-serde_0.8.0.orig.tar.gz a3cb721bdae43954f12429922bae10d9f7a6ce6edd82de6bdea965e4aeb6d9f6 3972 rust-auditable-serde_0.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-auditable-serde"
   ],
   "Files": [
-    "dabdf61a5b6ef19463ae983e7b988924 2493 rust-auditable-serde_0.6.0-1.dsc e0c3c211ce2f8ee4703d7f1b253fbc4b 11325 rust-auditable-serde_0.6.0.orig.tar.gz 0cf42ce383cbc15b81c52020a929935a 3256 rust-auditable-serde_0.6.0-1.debian.tar.xz"
+    "59abd3c1af421eee599c3e92d5cc9aa3 1980 rust-auditable-serde_0.8.0-1.dsc f6f5027a7b41a74ed1dd206f1e64ad19 5604 rust-auditable-serde_0.8.0.orig.tar.gz 08efeb6f196929a82ec07e4c1d63f60a 3972 rust-auditable-serde_0.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-secure-code/cargo-auditable"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/auditable-serde]"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.8.0-1"
   ]
 }

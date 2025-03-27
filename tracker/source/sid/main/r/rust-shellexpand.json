@@ -6,19 +6,25 @@
     "librust-shellexpand-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f4fe7573fc21c31c4d0f0f1f2ef20256e31ee56f47435ee8bcf95f4335ae3954 2213 rust-shellexpand_3.1.0-3.dsc da03fa3b94cc19e3ebfc88c4229c49d8f08cdbd1228870a45f0ffdf84988e14b 25591 rust-shellexpand_3.1.0.orig.tar.gz f91356984252992bfc2827e3b4e0447a5c1e7fbcdd89f1ecb58c1777efacb14d 3388 rust-shellexpand_3.1.0-3.debian.tar.xz"
+    "ad08333c7f35421af8bce1d048c7c34ff9cd34f91daf45784e4cdce7a14332ff 1667 rust-shellexpand_3.1.0-4.dsc da03fa3b94cc19e3ebfc88c4229c49d8f08cdbd1228870a45f0ffdf84988e14b 25591 rust-shellexpand_3.1.0.orig.tar.gz adbbb1bf5c2cf65735e983c02289e37c115cfe851aa8775f82983e225f771bd4 3700 rust-shellexpand_3.1.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-shellexpand"
   ],
   "Files": [
-    "44af9828c048c16b0efcfd363a1a00d8 2213 rust-shellexpand_3.1.0-3.dsc 03d805fc02002df0c493c99b4a9547ab 25591 rust-shellexpand_3.1.0.orig.tar.gz 2f2f80cb3c0ca430e9e536a51b40239a 3388 rust-shellexpand_3.1.0-3.debian.tar.xz"
+    "cce6a352bc816c7dfbbd0df612f0ac69 1667 rust-shellexpand_3.1.0-4.dsc 03d805fc02002df0c493c99b4a9547ab 25591 rust-shellexpand_3.1.0.orig.tar.gz acb8f227795d5c8902d7063675a2d769 3700 rust-shellexpand_3.1.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/ijackson/rust-shellexpand"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Carlos F. Sanz \u003ccarlos@sanz.dev\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/shellexpand]"
   ],
   "Version": [
-    "3.1.0-3"
+    "3.1.0-4"
   ]
 }

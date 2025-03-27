@@ -6,19 +6,25 @@
     "cargo-auditable"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-auditable-serde-0.6+default-dev, librust-auditable-serde-0.6+from-metadata-dev, librust-cargo-metadata-0.15+default-dev, librust-miniz-oxide-0.7+default-dev, librust-object-0+write-dev (\u003e= 0.30-~~), librust-pico-args-0.5+default-dev, librust-serde-1+default-dev (\u003e= 1.0.147-~~), librust-serde-json-1+default-dev (\u003e= 1.0.57-~~)"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev, librust-auditable-serde-0.8+default-dev, librust-cargo-metadata-0.19+default-dev, librust-miniz-oxide-0.7+default-dev, librust-object-0.36+write-dev, librust-pico-args-0.5+default-dev, librust-pico-args-0.5+eq-separator-dev, librust-serde-1+default-dev (\u003e= 1.0.147-~~), librust-serde-json-1+default-dev (\u003e= 1.0.57-~~)"
   ],
   "Checksums-Sha256": [
-    "2b023d88b23525e2f2669def485b0dc484621d0c4e4b14bb0ac66dd30576ab9e 2458 rust-cargo-auditable_0.6.1-3.dsc 3ed29541db777e36f83799e70342bb6b2040f143a562ada978002675cc974d3c 19825 rust-cargo-auditable_0.6.1.orig.tar.gz 1d4aee5649da489da98938c862b9af3f03af6ec426829718118587b8021d14ce 5248 rust-cargo-auditable_0.6.1-3.debian.tar.xz"
+    "9dc1babcb0de14c87ec3a76057020c9753d0369f7cdb38d2bcb31ebc99920fee 1895 rust-cargo-auditable_0.6.6-1.dsc b72e5c02bed83b332cf270533cb5f14dfc66756f494aee7bbb54fe7edd14aa4c 28183 rust-cargo-auditable_0.6.6.orig.tar.gz 0b236962ae4e53357cc35d967c1fba3a67af825a72b58a75b3da88939fe40ae0 5380 rust-cargo-auditable_0.6.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cargo-auditable"
   ],
   "Files": [
-    "1f55d13c65a3cb78d075bb8b288338b5 2458 rust-cargo-auditable_0.6.1-3.dsc aa00d729760f8c916e2e33dd21569883 19825 rust-cargo-auditable_0.6.1.orig.tar.gz 011eab6d97c35804ddb579022287d5c5 5248 rust-cargo-auditable_0.6.1-3.debian.tar.xz"
+    "e4df0087169d0aac0a3eda215d05d740 1895 rust-cargo-auditable_0.6.6-1.dsc 866628caacdb93fe36392ed3a9e2e171 28183 rust-cargo-auditable_0.6.6.orig.tar.gz 54b1a861aeaab58d9f7e5b71822862b8 5380 rust-cargo-auditable_0.6.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-secure-code/cargo-auditable"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-auditable]"
   ],
   "Version": [
-    "0.6.1-3"
+    "0.6.6-1"
   ]
 }
