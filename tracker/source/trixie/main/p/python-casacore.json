@@ -6,16 +6,16 @@
     "python3-casacore"
   ],
   "Build-Depends": [
-    "casacore-dev (\u003e= 3.2~), debhelper-compat (= 13), dh-python, libboost-python-dev, libcfitsio-dev, python3-all, python3-all-dev, python3-numpy, python3-setuptools, python3-six, wcslib-dev"
+    "casacore-dev (\u003e= 3.6~), cmake, debhelper-compat (= 13), dh-python, libblas-dev, libboost-python-dev, liblapack-dev, libcfitsio-dev, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-numpy, python3-numpy-dev, python3-pytest \u003c!nocheck\u003e, python3-scikit-build-core, python3-setuptools, python3-setuptools-scm, python3-six, wcslib-dev"
   ],
   "Checksums-Sha256": [
-    "bd26f251175271b79f83e332c772d792b02d098fc579f80a7af0e1af14575ca0 2210 python-casacore_3.5.2-1.dsc eb65a6903ca956dc6dd0ad1d14f17ae622c7a6b83826c6aede42428ae7314c2e 286701 python-casacore_3.5.2.orig.tar.gz 239ae74eaccca49a1e0ce510b20a265b506a56f825aa52900612066ccd49a017 3528 python-casacore_3.5.2-1.debian.tar.xz"
+    "a27e0580176de6f437fc1fa29f2d14bfa2b4107d2b76cfa746694dbb1b31730e 2427 python-casacore_3.6.1-2.dsc 48ca6e8d09d2e822c2bf5286247362d1dfe6d99acbb381676c4b16574959bc03 288956 python-casacore_3.6.1.orig.tar.gz a9284c7ba02f9963e2cb0317495a19ab66aefed3d9d1ab242a3de3afb668b2df 3972 python-casacore_3.6.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-casacore"
   ],
   "Files": [
-    "674b5315fd7e22b7723a3795685d32f4 2210 python-casacore_3.5.2-1.dsc 0cb5aa575352bee10a583b5232f2ce38 286701 python-casacore_3.5.2.orig.tar.gz b9faa427f257951b4b282a6dc17f700e 3528 python-casacore_3.5.2-1.debian.tar.xz"
+    "dd0010c36f9efcc687466c9679d66b8c 2427 python-casacore_3.6.1-2.dsc 259166a3313610a98e9d1d1750879b76 288956 python-casacore_3.6.1.orig.tar.gz 940dc72ee23d3faba954f129e6253041 3972 python-casacore_3.6.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pytest"
   ],
   "Uploaders": [
     "Gijs Molenaar \u003cgijs@pythonic.nl\u003e, Ole Streicher \u003colebole@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian-astro-team/python-casacore.git"
   ],
   "Version": [
-    "3.5.2-1"
+    "3.6.1-2"
   ]
 }
