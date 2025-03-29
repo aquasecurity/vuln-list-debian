@@ -6,19 +6,25 @@
     "librust-lddtree-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fs-err-2+default-dev (\u003e= 2.6.0-~~) \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-goblin-0.7+default-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fs-err-3+default-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-goblin-0.9+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "164e81bed7383e8eb8ddadaf583be76139ad56ba194e082889dede766f8c6dad 1909 rust-lddtree_0.3.3-1.dsc b119e4508482a0e60fb2d8dadad3112c0e177ffcabfbfaab424918cf11dd78e8 8702 rust-lddtree_0.3.3.orig.tar.gz 5ef8ca8e5b132dd92ac67127da6b39e1a4123a1d40e1c53948ed3e80004f2fa7 3044 rust-lddtree_0.3.3-1.debian.tar.xz"
+    "a140ced0d23b45076a5903a5d1a272044fe446645c2157cdc3e358860181a185 1703 rust-lddtree_0.3.7-1.dsc 16b8203af5dc485f460558b3a6a6ca771782bbbd818e169d2e26abe13f9d35fc 8865 rust-lddtree_0.3.7.orig.tar.gz ef658abfc695b5a424df6fbd2f41207aca860badeaded9b6548f879bc2930082 2900 rust-lddtree_0.3.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lddtree"
   ],
   "Files": [
-    "d90c9587cbcaf8e956703454317e6963 1909 rust-lddtree_0.3.3-1.dsc 4e16dd04840219b2c28a9adac1e91c51 8702 rust-lddtree_0.3.3.orig.tar.gz 1f82a85dcc6e21ca8049d35ed2001032 3044 rust-lddtree_0.3.3-1.debian.tar.xz"
+    "4b2e67e6188e85b3620d9301b7e8006d 1703 rust-lddtree_0.3.7-1.dsc ee8ef92af7147ebf315b19bdf4365e1e 8865 rust-lddtree_0.3.7.orig.tar.gz 93b808a2f8b5cf0a1db183ae9892a339 2900 rust-lddtree_0.3.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/messense/lddtree-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lddtree]"
   ],
   "Version": [
-    "0.3.3-1"
+    "0.3.7-1"
   ]
 }

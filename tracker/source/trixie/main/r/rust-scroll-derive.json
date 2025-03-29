@@ -6,19 +6,25 @@
     "librust-scroll-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-scroll-0-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cc135392dc7bdc568c117ccad2788ce8cd7804099ff6a6dbc37b384de5172483 2016 rust-scroll-derive_0.11.1-1.dsc 1db149f81d46d2deba7cd3c50772474707729550221e69588478ebf9ada425ae 4802 rust-scroll-derive_0.11.1.orig.tar.gz 282479a1c1be06823b36b9edddd746e5b0c85d0bb07704e3b3288ad01af5e4e0 2880 rust-scroll-derive_0.11.1-1.debian.tar.xz"
+    "ac4fbc5604fc4751bb3d3cb6b0448b23063b60f936a100f2c12eccdb23ac419e 2430 rust-scroll-derive_0.12.0-2.dsc 7f81c2fde025af7e69b1d1420531c8a8811ca898919db177141a85313b1cb932 4693 rust-scroll-derive_0.12.0.orig.tar.gz 6eef6d34e849a6d93c58b4f819dfe458e4b2c998d26527e068d555e80190cb3e 2984 rust-scroll-derive_0.12.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-scroll-derive"
   ],
   "Files": [
-    "dac71494e170f590c2bad3d9e9178bf4 2016 rust-scroll-derive_0.11.1-1.dsc 0cae9331540ff10aa362671d526ef058 4802 rust-scroll-derive_0.11.1.orig.tar.gz bb2f77c2426cea0f765f4b277b87b9b3 2880 rust-scroll-derive_0.11.1-1.debian.tar.xz"
+    "596df34a5d30e901839d360394f35703 2430 rust-scroll-derive_0.12.0-2.dsc 4ed86418af1d7055862b16f4a530bd85 4693 rust-scroll-derive_0.12.0.orig.tar.gz 20687fb552582c162b631af858340ce2 2984 rust-scroll-derive_0.12.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/m4b/scroll"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-scroll-0.11+default-dev"
+    "dh-cargo, librust-scroll-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/scroll-derive]"
   ],
   "Version": [
-    "0.11.1-1"
+    "0.12.0-2"
   ]
 }

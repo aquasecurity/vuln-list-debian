@@ -6,19 +6,25 @@
     "librust-goblin-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4-dev \u003c!nocheck\u003e, librust-plain-0.2+default-dev (\u003e= 0.2.3-~~) \u003c!nocheck\u003e, librust-scroll-0.11+derive-dev \u003c!nocheck\u003e, librust-scroll-0.11+std-dev \u003c!nocheck\u003e, librust-scroll-0.11-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4-dev \u003c!nocheck\u003e, librust-plain-0.2+default-dev (\u003e= 0.2.3-~~) \u003c!nocheck\u003e, librust-scroll-0.12+derive-dev \u003c!nocheck\u003e, librust-scroll-0.12+std-dev \u003c!nocheck\u003e, librust-scroll-0.12-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3d8b4658f53488dc39f818d48bfbd68780defe88425c6d679e005b18066bf694 2001 rust-goblin_0.7.1-1.dsc f27c1b4369c2cd341b5de549380158b105a04c331be5db9110eef7b6d2742134 163953 rust-goblin_0.7.1.orig.tar.gz 4d5d6100cf3d0dada080490312f2165c4b2348ba29fdafa595fcc4c9e69b33b5 3588 rust-goblin_0.7.1-1.debian.tar.xz"
+    "a347c12b4dedd9d93885ea17919ae3a95342c6beb42e05cf584853fc4c143fe7 1861 rust-goblin_0.9.3-1.dsc daa0a64d21a7eb230583b4c5f4e23b7e4e57974f96620f42a7e75e08ae66d745 200536 rust-goblin_0.9.3.orig.tar.gz c8d78406d334a2539c4c7e9ea3dd3aa4c0f8251b3a7c86eeef6aaaf3354e365b 3640 rust-goblin_0.9.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-goblin"
   ],
   "Files": [
-    "21989f606d2c8ef5c6a3637b0d7ac3ad 2001 rust-goblin_0.7.1-1.dsc 41ff30e8da6a2508b6b16a6d7de7fa15 163953 rust-goblin_0.7.1.orig.tar.gz 3e7490e9bff304ea14c4f9cb4af8c02d 3588 rust-goblin_0.7.1-1.debian.tar.xz"
+    "d9aa5d6e5084971752dd0cb0f0bb1ff1 1861 rust-goblin_0.9.3-1.dsc d0c9061a017a2c6f9dc6e8cb7ed14752 200536 rust-goblin_0.9.3.orig.tar.gz 543a9754b575bc6630e582ed3106fabe 3640 rust-goblin_0.9.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/m4b/goblin"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-stderrlog-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/goblin]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.9.3-1"
   ]
 }
