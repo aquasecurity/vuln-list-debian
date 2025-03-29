@@ -6,16 +6,19 @@
     "librust-sequoia-autocrypt-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1+default-dev (\u003e= 1.13-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a970dd0babf28a0c1830fb49458d86e26dc99683d0a8593a2b0758df5280833e 2686 rust-sequoia-autocrypt_0.25.1-3.dsc e24fc0ec87c156a35f24fc153ab694e0f37cd6fa87c1cf5005c9f4fa5e10415b 41241 rust-sequoia-autocrypt_0.25.1.orig.tar.gz 4841685429d8ef5628bf5e10a301401a4217427115d33705919261efe8a3a856 2804 rust-sequoia-autocrypt_0.25.1-3.debian.tar.xz"
+    "e08f53870c2862bdc294fd4ece41626ff742098947e3d0ff5bffbda7863b12e6 2594 rust-sequoia-autocrypt_0.26.0-1.dsc 11d65ff1c8589a3e505d36c8e1919483bf4a2d8d6eb65f84c3922fbdcae6928b 54682 rust-sequoia-autocrypt_0.26.0.orig.tar.gz 54b220233c14b31e18f6e61853ca7aeb60ddfc89c267ca1ffb5b090d6f46576f 2852 rust-sequoia-autocrypt_0.26.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-autocrypt"
   ],
   "Files": [
-    "1c1440ff4579bd9dc21885ce6c67fff5 2686 rust-sequoia-autocrypt_0.25.1-3.dsc 409f0a4bb34eab83d0d6aab08e2baa22 41241 rust-sequoia-autocrypt_0.25.1.orig.tar.gz 3aa5179f69c5bec7ffb18ec0622962c8 2804 rust-sequoia-autocrypt_0.25.1-3.debian.tar.xz"
+    "501516c91edaa21c51d6a1db1204a4e6 2594 rust-sequoia-autocrypt_0.26.0-1.dsc e667a52b2434fd9538ac8105de77c14c 54682 rust-sequoia-autocrypt_0.26.0.orig.tar.gz 637ad73b345329c779ed61d9c97632f5 2852 rust-sequoia-autocrypt_0.26.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-sequoia-openpgp-1+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-1+crypto-nettle-dev, rustc"
+    "dh-cargo, librust-sequoia-openpgp-2+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-autocrypt]"
   ],
   "Version": [
-    "0.25.1-3"
+    "0.26.0-1"
   ]
 }

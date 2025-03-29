@@ -6,19 +6,19 @@
     "libdbuskit-dev, libdbuskit0, dbuskit-dev-tools, dbuskit-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dpkg-build-api (= 1), libdbus-1-dev, libgnustep-base-dev (\u003e= 1.30.0-10), pkgconf"
+    "dbus-test-runner \u003c!nocheck\u003e, debhelper-compat (= 13), dpkg-build-api (= 1), libdbus-1-dev, libgnustep-base-dev (\u003e= 1.30.0-10), pkgconf, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "gnustep-base-doc \u003c!nodoc\u003e, texinfo \u003c!nodoc\u003e, texlive-fonts-recommended \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "e6199436bf76d60d0398fafa1c332dad17aa89c2808367fed594e9dc16abc576 2637 dbuskit_0.1.1-8.dsc 3995867173148663cec6d98010b1c23e5fec827ff6b801f1ae6a4e9949b0f7b5 706783 dbuskit_0.1.1.orig.tar.gz bad6a3838c574cf107210f9265360562957240c4e5919366294a361e1eb12832 504 dbuskit_0.1.1.orig.tar.gz.asc 38418228a4a143c41484a78c511b56b920f8742753d4cb98e4c58eba41071bb8 15864 dbuskit_0.1.1-8.debian.tar.xz"
+    "93fa6a86b0a542cda14f144c1a6fa22db549a83ca1c5ea7eba246010c9fa3cff 2728 dbuskit_0.1.1-11.dsc 3995867173148663cec6d98010b1c23e5fec827ff6b801f1ae6a4e9949b0f7b5 706783 dbuskit_0.1.1.orig.tar.gz bad6a3838c574cf107210f9265360562957240c4e5919366294a361e1eb12832 504 dbuskit_0.1.1.orig.tar.gz.asc e2a8f8e26c44514349db1bfbbe1c1c182d677072699a696cc727b0a040185391 23692 dbuskit_0.1.1-11.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dbuskit"
   ],
   "Files": [
-    "fcf3c5a88f100e959e4d5f4465439cf4 2637 dbuskit_0.1.1-8.dsc 111ccad7024323d264cd3f756d7ddd20 706783 dbuskit_0.1.1.orig.tar.gz d977be44ec9f2ad625423263fb2e70a0 504 dbuskit_0.1.1.orig.tar.gz.asc 267287aa76c3100ccbf9a73201b83673 15864 dbuskit_0.1.1-8.debian.tar.xz"
+    "d4732c13be77afcf36478fe63dc0286c 2728 dbuskit_0.1.1-11.dsc 111ccad7024323d264cd3f756d7ddd20 706783 dbuskit_0.1.1.orig.tar.gz d977be44ec9f2ad625423263fb2e70a0 504 dbuskit_0.1.1.orig.tar.gz.asc b3741d2bab970301acbbfa7c0080da86 23692 dbuskit_0.1.1-11.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "adequate, debhelper, file, shunit2"
+    "@builddeps@, adequate, autoconf, debhelper, file, shunit2"
   ],
   "Uploaders": [
     "Yavor Doganov \u003cyavor@gnu.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/gnustep-team/dbuskit.git"
   ],
   "Version": [
-    "0.1.1-8"
+    "0.1.1-11"
   ]
 }

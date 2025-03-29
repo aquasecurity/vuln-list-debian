@@ -6,19 +6,25 @@
     "librust-auditable-extract-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-binfarce-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-binfarce-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7c5b3c07199e837d20543a72a44b1161a2636f77e261c9c53ec72023f4cfd2a3 2265 rust-auditable-extract_0.3.2-1.dsc f8a62a6f4a522a2ab30b5fca049b9587228d17e4ac648106aeaf7da9b70b5e2b 2576 rust-auditable-extract_0.3.2.orig.tar.gz c6189f864b60f4ae4fbd005d07ae944c464c0936e7acdd64a5a45845907df0d8 2552 rust-auditable-extract_0.3.2-1.debian.tar.xz"
+    "56d306393649b26b56355b4429b6a7c3535db5ac998f8a17cfb7447dc88577d5 1755 rust-auditable-extract_0.3.5-1.dsc 44371e9f9759dea49c42b6c6fe4c64ea216ee2af325a4524a7180823e00d3e7a 3587 rust-auditable-extract_0.3.5.orig.tar.gz 4757d0e60da7b0e5e76a752f86c4955ddda3b09e6ef884df71113a7e6066a601 2764 rust-auditable-extract_0.3.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-auditable-extract"
   ],
   "Files": [
-    "de7fb9440fe02b89334862a74ac08377 2265 rust-auditable-extract_0.3.2-1.dsc d30a3010b5c6b1aa1eddc0792c30461e 2576 rust-auditable-extract_0.3.2.orig.tar.gz 07dc468ea253c77ce6f48113bf30330b 2552 rust-auditable-extract_0.3.2-1.debian.tar.xz"
+    "831c6025ff87cfb3d8171e5fe7795110 1755 rust-auditable-extract_0.3.5-1.dsc 469dee2921d2e806813839355c461493 3587 rust-auditable-extract_0.3.5.orig.tar.gz aedc9025d80ccf9833761b8de55f3b8b 2764 rust-auditable-extract_0.3.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-secure-code/cargo-auditable"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/auditable-extract]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.5-1"
   ]
 }

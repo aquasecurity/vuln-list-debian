@@ -6,16 +6,19 @@
     "librust-ratatui-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-cassowary-0.3+default-dev \u003c!nocheck\u003e, librust-compact-str-0.8+default-dev \u003c!nocheck\u003e, librust-crossterm-0.27+default-dev \u003c!nocheck\u003e, librust-itertools-0.13+default-dev \u003c!nocheck\u003e, librust-lru-0.12+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-strum-0.26+default-dev \u003c!nocheck\u003e, librust-strum-0.26+derive-dev \u003c!nocheck\u003e, librust-strum-macros-0.26+default-dev (\u003e= 0.26.3-~~) \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev (\u003e= 1.10-~~) \u003c!nocheck\u003e, librust-unicode-truncate-2+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.13-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-cassowary-0.3+default-dev \u003c!nocheck\u003e, librust-compact-str-0.8+default-dev \u003c!nocheck\u003e, librust-crossterm-0.27+default-dev \u003c!nocheck\u003e, librust-itertools-0.13+default-dev \u003c!nocheck\u003e, librust-lru-0.12+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-strum-0.26+default-dev \u003c!nocheck\u003e, librust-strum-0.26+derive-dev \u003c!nocheck\u003e, librust-strum-macros-0.26+default-dev (\u003e= 0.26.3-~~) \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev (\u003e= 1.10-~~) \u003c!nocheck\u003e, librust-unicode-truncate-2+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.13-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8ca9803f2aaeb64d713182fdc21d95dec79ccb3d1e35303baafcd2cc7e974b10 3588 rust-ratatui_0.28.1-8.dsc 008042b07ae18ad9b048a3bd503cb624c77e2f9c65a7d3c000af3a8671c49aa4 510027 rust-ratatui_0.28.1.orig.tar.gz c4d3eae7336c731f2b2dbc2a104be1ad362647e42e432c89b016be5608eaa66f 7552 rust-ratatui_0.28.1-8.debian.tar.xz"
+    "8cd7cd6313139a253aab656866376cdc0a7d3b2af8e9f1f9439b47654f8e12dc 3662 rust-ratatui_0.28.1-9.dsc 008042b07ae18ad9b048a3bd503cb624c77e2f9c65a7d3c000af3a8671c49aa4 510027 rust-ratatui_0.28.1.orig.tar.gz ffdb0fa9d0eef0b40252119fb5e14bcec5c3a63030f6eb9df40b4aff54910db4 7564 rust-ratatui_0.28.1-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ratatui"
   ],
   "Files": [
-    "c073cd737913afca4df8d4627dc61ec9 3588 rust-ratatui_0.28.1-8.dsc d81d7ae99c750706d119a8877e07b91d 510027 rust-ratatui_0.28.1.orig.tar.gz 43b2ff397fc7ac27b124d5a6c84b004c 7552 rust-ratatui_0.28.1-8.debian.tar.xz"
+    "fc4390874d95589c7d39a39a12ca2ec6 3662 rust-ratatui_0.28.1-9.dsc d81d7ae99c750706d119a8877e07b91d 510027 rust-ratatui_0.28.1.orig.tar.gz ffb2c14409fa5017649837c6b0bc6632 7564 rust-ratatui_0.28.1-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-argh-0.1+default-dev, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-crossterm-0.27+default-dev, librust-crossterm-0.27+event-stream-dev, librust-derive-builder-0.20+default-dev, librust-futures-0.3+default-dev, librust-indoc-2+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, librust-rstest-0.17+default-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-tracing-0.1+default-dev, librust-tracing-appender-0.2+default-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev"
+    "dh-cargo, librust-argh-0.1+default-dev, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-crossterm-0.27+default-dev, librust-crossterm-0.27+event-stream-dev, librust-derive-builder-0.20+default-dev, librust-futures-0.3+default-dev, librust-indoc-2+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, librust-rstest-0.17+default-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-tracing-0.1+default-dev, librust-tracing-appender-0.2+default-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, rustc"
   ],
   "Uploaders": [
     "Johann Felix Soden \u003cjohfel@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ratatui]"
   ],
   "Version": [
-    "0.28.1-8"
+    "0.28.1-9"
   ]
 }

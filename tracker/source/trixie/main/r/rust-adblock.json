@@ -6,19 +6,25 @@
     "librust-adblock-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-addr-0.15+psl-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-idna-0.4+default-dev \u003c!nocheck\u003e, librust-itertools-0+default-dev (\u003e= 0.10-~~) \u003c!nocheck\u003e, librust-lifeguard-0.6+default-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-percent-encoding-2+default-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e, librust-rmp-serde-1+default-dev \u003c!nocheck\u003e, librust-seahash-4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-1+rc-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-addr-0.15+psl-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-idna+default-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-itertools-0+default-dev (\u003e= 0.10-~~) \u003c!nocheck\u003e, librust-lifeguard-0.6+default-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-percent-encoding-2+default-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e, librust-rmp-serde-1+default-dev \u003c!nocheck\u003e, librust-seahash-4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-1+rc-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e1a99cd1fc8e6a1ec8073564a60bd0fc3a664124298816e9de963f401b8b0081 2639 rust-adblock_0.8.12-3.dsc c38c2dd54639e86e42f6401271686385aef8380dba0f13096271955bb3b472c8 152450 rust-adblock_0.8.12.orig.tar.gz 5d0a173f11193b0b478750a080b4f3b6b8b946f90518095a091f54c675c22fe7 7492 rust-adblock_0.8.12-3.debian.tar.xz"
+    "5242348bdd36d4dd50b806e07e3eaa7fc2bad52f146a446aa4645fa771591d4f 3350 rust-adblock_0.8.12-4.dsc c38c2dd54639e86e42f6401271686385aef8380dba0f13096271955bb3b472c8 152450 rust-adblock_0.8.12.orig.tar.gz b82014cfa2e35d250d39cba61b6f121a2c4b76f3730f007f5ffcafb6d0e735ee 7564 rust-adblock_0.8.12-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-adblock"
   ],
   "Files": [
-    "7850605d4fd01896a5c006ab1d295d13 2639 rust-adblock_0.8.12-3.dsc f9ec24851f43f238c13bb49a0f431dae 152450 rust-adblock_0.8.12.orig.tar.gz 0249025afb7a988500c99d6bd835db3d 7492 rust-adblock_0.8.12-3.debian.tar.xz"
+    "21e983e6b3be0dc463256d423ce0bcee 3350 rust-adblock_0.8.12-4.dsc f9ec24851f43f238c13bb49a0f431dae 152450 rust-adblock_0.8.12.orig.tar.gz ae986d4f729d7ca82f9727f00e9780e7 7564 rust-adblock_0.8.12-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/brave/adblock-rust/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/adblock]"
   ],
   "Version": [
-    "0.8.12-3"
+    "0.8.12-4"
   ]
 }
