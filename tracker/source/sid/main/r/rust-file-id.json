@@ -6,16 +6,19 @@
     "librust-file-id-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.72) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9e53f4742b38a1530dec4934e42a6b1060f5bd3fd2d610b6fe4ca12cb9190de4 2325 rust-file-id_0.2.1-1.dsc 6584280525fb2059cba3db2c04abf947a1a29a45ddae89f3870f8281704fafc9 10240 rust-file-id_0.2.1.orig.tar.gz 3b312d758d13fec65f654d866aa37cdd2157f6276414d2e8aea7b2fa45e6a793 2904 rust-file-id_0.2.1-1.debian.tar.xz"
+    "a2e015a93406285b253fb22858214ec254bd76145ac13ae51ec325b1d1f280a8 1620 rust-file-id_0.2.2-1.dsc 6bc904b9bbefcadbd8e3a9fb0d464a9b979de6324c03b3c663e8994f46a5be36 9531 rust-file-id_0.2.2.orig.tar.gz ffcf7f84b22ea19264d695c63e5fea1cfb099ade65f67af0b31f46b142348024 2924 rust-file-id_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-file-id"
   ],
   "Files": [
-    "1029b7f40540e9493a54067da44b57fc 2325 rust-file-id_0.2.1-1.dsc e0b77a981eab03d2b70d7c9aa5f5d570 10240 rust-file-id_0.2.1.orig.tar.gz a12af5f24c37d5f0c18b0b22715c8e68 2904 rust-file-id_0.2.1-1.debian.tar.xz"
+    "d788513c9fe9c7ae0b8b991b78258571 1620 rust-file-id_0.2.2-1.dsc 94b22212d97d864572418067c251fda5 9531 rust-file-id_0.2.2.orig.tar.gz ad8b82e11274c39a4d9d3a17fc9ed4e4 2924 rust-file-id_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/file-id]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.2-1"
   ]
 }
