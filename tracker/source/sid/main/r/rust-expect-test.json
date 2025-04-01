@@ -6,19 +6,25 @@
     "librust-expect-test-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dissimilar-1+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dissimilar-1+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "733f4b1ed2551ad8793718660b2db4eeb805b9635efa4ba2729e55a126c65d54 2278 rust-expect-test_1.5.0-1.dsc 9e0be0a561335815e06dab7c62e50353134c796e7a6155402a64bcff66b6a5e0 13574 rust-expect-test_1.5.0.orig.tar.gz f8c637242b6528ef76190f46d2642b1036e027651136ca6c0c49e8e98010637f 2596 rust-expect-test_1.5.0-1.debian.tar.xz"
+    "fe15151e6186d1b21dd99a2b11c8a508caebb37c02ee4930a59a874f9361c519 1732 rust-expect-test_1.5.1-1.dsc 63af43ff4431e848fb47472a920f14fa71c24de13255a5692e93d4e90302acb0 13672 rust-expect-test_1.5.1.orig.tar.gz 7bf13df9123de81c2464db19f59c29a07f4888789ab24a41693708d146e1462b 2648 rust-expect-test_1.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-expect-test"
   ],
   "Files": [
-    "947cdeb03b58390ebe6e0aabe2acc7eb 2278 rust-expect-test_1.5.0-1.dsc 16a70e39be9c76cbe257c15a72a0b3bb 13574 rust-expect-test_1.5.0.orig.tar.gz d788447663087aabc8e2449fee52e2b8 2596 rust-expect-test_1.5.0-1.debian.tar.xz"
+    "db1c372abb04486bebd689e5e81392f3 1732 rust-expect-test_1.5.1-1.dsc 3b36692e37694701b126610309dee285 13672 rust-expect-test_1.5.1.orig.tar.gz d17c6443ab715b790790675de7e7c81c 2648 rust-expect-test_1.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-analyzer/expect-test"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/expect-test]"
   ],
   "Version": [
-    "1.5.0-1"
+    "1.5.1-1"
   ]
 }

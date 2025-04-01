@@ -6,19 +6,25 @@
     "librust-pathdiff-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f382556129d08bbb0b98649b0d6a0d2c940f8808a165a2d8aca6a51543947052 2126 rust-pathdiff_0.2.1-1.dsc 8835116a5c179084a830efb3adc117ab007512b535bc1a21c991d3b32a6b44dd 7142 rust-pathdiff_0.2.1.orig.tar.gz 3087fcda3a2193d29e03b8e869830974f744fa6fcfc5ca9bff45e64fe283b79d 2656 rust-pathdiff_0.2.1-1.debian.tar.xz"
+    "727321f9d544227d86723353b7a217e439ee8c1347d4a9086a24b7c638645ed7 1623 rust-pathdiff_0.2.3-1.dsc df94ce210e5bc13cb6651479fa48d14f601d9858cfe0467f43ae157023b938d3 7495 rust-pathdiff_0.2.3.orig.tar.gz 900aa1d45dd4a7f7d5515e6b9cdde47b312c37a1d3c3d26325b24b60ddb9776d 2704 rust-pathdiff_0.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pathdiff"
   ],
   "Files": [
-    "100dd88924ad955c00b0a12da06f0aae 2126 rust-pathdiff_0.2.1-1.dsc c40bb551772810d818857841ea389f1e 7142 rust-pathdiff_0.2.1.orig.tar.gz 881fb6a739df2bd9472b38e329b62d05 2656 rust-pathdiff_0.2.1-1.debian.tar.xz"
+    "9346c50d63233f87361e268dcb1c564f 1623 rust-pathdiff_0.2.3-1.dsc 2d2ee59e7cd5c7adb3ab4188a78182bf 7495 rust-pathdiff_0.2.3.orig.tar.gz 2adfbe970bafe38c3e320a5a31ae803a 2704 rust-pathdiff_0.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Manishearth/pathdiff"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-cfg-if-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/pathdiff"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pathdiff]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.3-1"
   ]
 }
