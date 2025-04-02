@@ -6,16 +6,19 @@
     "sq"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native (\u003e= 1.79), libstd-rust-dev, librust-aho-corasick-1+default-dev, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~), librust-buffered-reader-1+compression-dev (\u003e= 1.3.1-~~), librust-cfg-if-1+default-dev, librust-chrono-0.4+default-dev (\u003e= 0.4.38-~~), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-clap-4+string-dev, librust-clap-4+wrap-help-dev, librust-clap-complete-4+default-dev, librust-clap-lex-0.7-dev, librust-dirs-5+default-dev, librust-filetime-0.2+default-dev, librust-fs-extra-1+default-dev, librust-futures-util-0.3+default-dev, librust-gethostname-0.4+default-dev, librust-humantime-2+default-dev, librust-indicatif-0.17+default-dev, librust-once-cell-1+default-dev (\u003e= 1.17-~~), librust-regex-1+default-dev, librust-reqwest-0.12+default-dev, librust-reqwest-0.12+hickory-dns-dev, librust-reqwest-0.12+stream-dev, librust-roff-0.2+default-dev (\u003e= 0.2.1-~~), librust-rpassword-7+default-dev, librust-rusqlite-0.29+default-dev, librust-sequoia-autocrypt-0.25-dev, librust-sequoia-cert-store-0.6-dev, librust-sequoia-directories-0.1+default-dev, librust-sequoia-ipc-0.35-dev, librust-sequoia-keystore-0.6+default-dev, librust-sequoia-net-0.29-dev, librust-sequoia-openpgp-1+compression-dev, librust-sequoia-openpgp-1+crypto-nettle-dev (\u003e= 1.22-~~), librust-sequoia-openpgp-1-dev (\u003e= 1.22-~~), librust-sequoia-policy-config-0.7+default-dev, librust-sequoia-wot-0.13-dev (\u003e= 0.13.2-~~), librust-serde-1+default-dev (\u003e= 1.0.137-~~), librust-serde-1+derive-dev (\u003e= 1.0.137-~~), librust-tempfile-3+default-dev (\u003e= 3.1-~~), librust-termcolor-1+default-dev (\u003e= 1.2.0-~~), librust-terminal-size-0.4+default-dev, librust-textwrap-0.16+default-dev, librust-textwrap-0.16+smawk-dev, librust-textwrap-0.16+unicode-width-dev, librust-thiserror-2+default-dev, librust-tokio-1+default-dev (\u003e= 1.13.1-~~), librust-toml-edit-0.22+display-dev, librust-toml-edit-0.22+parse-dev, librust-typenum-1+default-dev, bash-completion"
+    "debhelper-compat (= 13), dh-sequence-cargo, bash-completion"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.79), libstd-rust-dev, librust-aho-corasick-1+default-dev, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~), librust-buffered-reader-1+compression-dev (\u003e= 1.3.1-~~), librust-cfg-if-1+default-dev, librust-chrono-0.4+default-dev (\u003e= 0.4.38-~~), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-clap-4+string-dev, librust-clap-4+wrap-help-dev, librust-clap-complete-4+default-dev, librust-clap-lex-0.7-dev, librust-dirs-5+default-dev, librust-filetime-0.2+default-dev, librust-fs-extra-1+default-dev, librust-futures-util-0.3+default-dev, librust-gethostname-0.4+default-dev, librust-humantime-2+default-dev, librust-indicatif-0.17+default-dev, librust-once-cell-1+default-dev (\u003e= 1.17-~~), librust-regex-1+default-dev, librust-reqwest-0.12+default-dev, librust-reqwest-0.12+hickory-dns-dev, librust-reqwest-0.12+stream-dev, librust-roff-0.2+default-dev (\u003e= 0.2.1-~~), librust-rpassword-7+default-dev, librust-rusqlite-0.29+default-dev, librust-sequoia-autocrypt-0.26-dev, librust-sequoia-cert-store-0.7-dev, librust-sequoia-directories-0.1+default-dev, librust-sequoia-ipc-0.36-dev, librust-sequoia-keystore-0.7+default-dev, librust-sequoia-man-0.3+default-dev, librust-sequoia-net-0.30-dev, librust-sequoia-openpgp-2+compression-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, librust-sequoia-policy-config-0.8+default-dev, librust-sequoia-wot-0.14-dev, librust-serde-1+default-dev (\u003e= 1.0.137-~~), librust-serde-1+derive-dev (\u003e= 1.0.137-~~), librust-tempfile-3+default-dev (\u003e= 3.1-~~), librust-termcolor-1+default-dev (\u003e= 1.2.0-~~), librust-terminal-size-0.4+default-dev, librust-textwrap-0.16+default-dev, librust-textwrap-0.16+smawk-dev, librust-textwrap-0.16+unicode-width-dev, librust-thiserror-2+default-dev, librust-tokio-1+default-dev (\u003e= 1.13.1-~~), librust-toml-edit-0.22+display-dev, librust-toml-edit-0.22+parse-dev, librust-typenum-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "10d871baf690a786dde11845972133b7f5cc84d85e3fd18ee0dfc7e96d13e174 4179 rust-sequoia-sq_1.2.0-1.dsc 871aecffd54e58b407c8d50674a543d97197660f6c482b3344dfb9f7a5357f5c 750156 rust-sequoia-sq_1.2.0.orig.tar.gz 4086e692092c46ea59ae02d155d1734951b31d18d2901df0dcca14b74c1c66be 5476 rust-sequoia-sq_1.2.0-1.debian.tar.xz"
+    "63b6a23e312314658d7e7d03c510c789f92492c871ebf3af833e118de8ac83f3 4064 rust-sequoia-sq_1.3.1-1.dsc 5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705 740320 rust-sequoia-sq_1.3.1.orig.tar.gz affd8d112cebecaf017aaaad9887ceaf280188f7429bfcdf7e7e0c09882cd477 5488 rust-sequoia-sq_1.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-sq"
   ],
   "Files": [
-    "d7443ec2627252cf50421d5923e78168 4179 rust-sequoia-sq_1.2.0-1.dsc cdaf6f6e0504648a4096673c2042e8b3 750156 rust-sequoia-sq_1.2.0.orig.tar.gz 73714bba5cfd1381a77be3c9e69167e9 5476 rust-sequoia-sq_1.2.0-1.debian.tar.xz"
+    "09147ffdd92bb5a44d2eeab35df78a37 4064 rust-sequoia-sq_1.3.1-1.dsc a6a356795595d59d2661e7157237eb4b 740320 rust-sequoia-sq_1.3.1.orig.tar.gz f32aca21635c33e0907d3b32fe7c336a 5488 rust-sequoia-sq_1.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-sq]"
   ],
   "Version": [
-    "1.2.0-1"
+    "1.3.1-1"
   ]
 }

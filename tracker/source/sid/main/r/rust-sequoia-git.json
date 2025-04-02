@@ -6,16 +6,19 @@
     "librust-sequoia-git-dev, sequoia-git"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, rustc:native (\u003e= 1.66), libstd-rust-dev, librust-anyhow-1+default-dev, librust-buffered-reader-1+default-dev, librust-clap-4+cargo-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-clap-4+string-dev, librust-clap-4+wrap-help-dev, librust-clap-complete-4+default-dev, librust-clap-mangen-0.2+default-dev, librust-dirs-5+default-dev, librust-git2-0.19+default-dev, librust-once-cell-1+default-dev, librust-sequoia-cert-store-0.6+default-dev, librust-sequoia-net-0.29+default-dev, librust-sequoia-openpgp-1+default-dev (\u003e= 1.15-~~), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev, librust-thiserror-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-toml-0.8+default-dev, librust-vergen-8+default-dev, librust-vergen-8+git-dev, librust-vergen-8+git2-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.79), libstd-rust-dev, librust-anyhow-1+default-dev, librust-buffered-reader-1+default-dev (\u003e= 1.3-~~), librust-clap-4+cargo-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-clap-4+string-dev, librust-clap-4+wrap-help-dev, librust-clap-complete-4+default-dev, librust-clap-mangen-0.2+default-dev, librust-dirs+default-dev (\u003c\u003c 7-~~), librust-dirs+default-dev (\u003e= 5-~~), librust-git2-dev (\u003c\u003c 0.21-~~), librust-git2-dev (\u003e= 0.19-~~), librust-once-cell-1+default-dev, librust-roff-0.2+default-dev (\u003e= 0.2.1-~~), librust-sequoia-cert-store-0.7-dev, librust-sequoia-directories-0.1+default-dev, librust-sequoia-man-0.3+default-dev, librust-sequoia-net-0.30+default-dev, librust-sequoia-openpgp-2+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev, librust-thiserror+default-dev (\u003c\u003c 3-~~), librust-thiserror+default-dev (\u003e= 1-~~), librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-toml-0.8+default-dev, librust-vergen-8+default-dev, librust-vergen-8+git-dev, librust-vergen-8+git2-dev"
   ],
   "Checksums-Sha256": [
-    "1f5c5640f95b40022767921244deb60fa21c9a6bb740058fe7cc1437d2a0deaf 3230 rust-sequoia-git_0.1.0-1.dsc 140d8c921063776e26c6a2b853e19f98edaa415b2cd0176ccecb6f262a39e137 170102 rust-sequoia-git_0.1.0.orig.tar.gz b1cada28bb825223eb23c1ae48ac1932bcec0d9f73fcfb2262baf71c4ff4e6c4 4468 rust-sequoia-git_0.1.0-1.debian.tar.xz"
+    "4b5aa94faeb7d2a2ce42be0da5fb6504b8033366caa986177efbb3eccc9d4e4c 3428 rust-sequoia-git_0.4.0-2.dsc b09db8fddf6dbd4445223a5d9c88e7114979eb85117dd5189289530d4863566b 634649 rust-sequoia-git_0.4.0.orig.tar.gz a9ded39895df57b4fdaa7716ba2c339212f882674afe0eb989138fd25a26c30a 5412 rust-sequoia-git_0.4.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-git"
   ],
   "Files": [
-    "b94d315d603a0fe9fec30edaf2c97609 3230 rust-sequoia-git_0.1.0-1.dsc dd8c463bd0817d32f75faaf8cf140ebc 170102 rust-sequoia-git_0.1.0.orig.tar.gz df55dc1d97f0edc1a112b71a2390f498 4468 rust-sequoia-git_0.1.0-1.debian.tar.xz"
+    "2de0e89b4846fd756d19566ab1b23724 3428 rust-sequoia-git_0.4.0-2.dsc 9d374d98f6ccd8b0eb5f67b4d73595aa 634649 rust-sequoia-git_0.4.0.orig.tar.gz 9b2e33ffe6102a7c88aea62e15ab3ceb 5412 rust-sequoia-git_0.4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, git, librust-chrono-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-git]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.4.0-2"
   ]
 }
