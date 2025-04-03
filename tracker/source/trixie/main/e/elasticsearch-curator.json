@@ -6,19 +6,19 @@
     "elasticsearch-curator, python3-elasticsearch-curator, python-elasticsearch-curator-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, asciidoc, docbook-xml, docbook-xsl, libxml2-utils, python-elasticsearch-doc, python3-all, python3-boto3 (\u003e= 1.9.142), python3-click, python3-doc, python3-elasticsearch (\u003e= 7.0.4), python3-requests, python3-setuptools, python3-six, python3-urllib3 (\u003e= 1.24.2), python3-voluptuous, python3-yaml, w3m, xsltproc"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, asciidoc, docbook-xml, docbook-xsl, libxml2-utils, pybuild-plugin-pyproject, python-click-doc, python-elasticsearch-doc, python3-all, python3-doc, python3-es-client, python3-hatchling, w3m, xsltproc"
   ],
   "Build-Depends-Indep": [
-    "libjs-jquery, python3-sphinx"
+    "libjs-jquery, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "9220cef99b8545b8fed07921a737208f078cf3966f208e95c76f996fdefc9dee 2765 elasticsearch-curator_5.8.1-6.dsc bbb329f59906af97357ea6694684318d00cca507f14cab4b3f70df59b6a1e345 231233 elasticsearch-curator_5.8.1.orig.tar.gz eb6f2440044524f8ca5ec41bffd763322f73cb94b9413217b5648f495a1ce482 9652 elasticsearch-curator_5.8.1-6.debian.tar.xz"
+    "c50509fbf9e8632c137ea2d6ea33a76651b01a0dd78f9cd21a7e2d4138580a12 2822 elasticsearch-curator_8.0.20-2.dsc c8c71544307ea2f7f36c0ab90dac32bb2498976d43b6082886779735ed3e342b 335985 elasticsearch-curator_8.0.20.orig.tar.gz 494f66066f72ece57d50250cd6b28ab89822db8bf8af3345b6f42868cba0fc06 7132 elasticsearch-curator_8.0.20-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/elasticsearch-curator"
   ],
   "Files": [
-    "10629f02e62bfceb7716e0f0c26f891b 2765 elasticsearch-curator_5.8.1-6.dsc 5313e7f366a5bb182dd8b30b61df6329 231233 elasticsearch-curator_5.8.1.orig.tar.gz 7d3020add71110616d903b4c3b5354fa 9652 elasticsearch-curator_5.8.1-6.debian.tar.xz"
+    "28b8c39feebfcb2f07d2604b0340d61c 2822 elasticsearch-curator_8.0.20-2.dsc f2db5b0a22f1d007c79fad66562c7241 335985 elasticsearch-curator_8.0.20.orig.tar.gz 19488faeecee555368f31be47cdad4ef 7132 elasticsearch-curator_8.0.20-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e, Aggelos Avgerinos \u003cevaggelos.avgerinos@gmail.com\u003e, Karsten Schöke \u003cKarsten.Schoeke@geobasis-bb.de\u003e,"
+    "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e, Aggelos Avgerinos \u003cevaggelos.avgerinos@gmail.com\u003e, Karsten Schöke \u003ckarsten.schoeke@geobasis-bb.de\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/elasticsearch-curator"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/elasticsearch-curator.git"
   ],
   "Version": [
-    "5.8.1-6"
+    "8.0.20-2"
   ]
 }
