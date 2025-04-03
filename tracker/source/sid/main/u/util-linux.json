@@ -9,16 +9,16 @@
     "libedit-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, dh-package-notes, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), asciidoctor \u003c!stage1 !nodoc\u003e, bc \u003c!stage1 !nocheck\u003e, bison, flex, gettext, libaudit-dev [linux-any] \u003c!stage1\u003e, libcap-ng-dev [linux-any] \u003c!stage1\u003e, libcrypt-dev \u003c!stage1\u003e, libcryptsetup-dev [linux-any] \u003c!pkg.util-linux.noverity\u003e, libncurses-dev, libpam0g-dev \u003c!stage1\u003e, libreadline-dev, libselinux1-dev [linux-any], libsqlite3-dev, libsystemd-dev [linux-any] \u003c!stage1\u003e, libtool, libudev-dev [linux-any] \u003c!stage1\u003e, netbase \u003c!stage1 !nocheck\u003e, pkgconf, po-debconf, po4a, socat \u003c!stage1 !nocheck\u003e, systemd [linux-any] \u003c!stage1\u003e, systemd-dev [linux-any] \u003c!stage1\u003e, zlib1g-dev"
+    "debhelper-compat (= 13), dh-exec, dh-package-notes, dh-sequence-installsysusers, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), asciidoctor \u003c!stage1 !nodoc\u003e, bc \u003c!stage1 !nocheck\u003e, bison, flex, gettext, libaudit-dev [linux-any] \u003c!stage1\u003e, libcap-ng-dev [linux-any] \u003c!stage1\u003e, libcrypt-dev \u003c!stage1\u003e, libcryptsetup-dev [linux-any] \u003c!pkg.util-linux.noverity\u003e, libncurses-dev, libpam0g-dev \u003c!stage1\u003e, libreadline-dev, libselinux1-dev [linux-any], libsqlite3-dev, libsystemd-dev [linux-any] \u003c!stage1\u003e, libtool, libudev-dev [linux-any] \u003c!stage1\u003e, netbase \u003c!stage1 !nocheck\u003e, pkgconf, po-debconf, po4a, socat \u003c!stage1 !nocheck\u003e, systemd [linux-any] \u003c!stage1\u003e, systemd-dev [linux-any] \u003c!stage1\u003e, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "beade6c6fe38be1e45e18ef20a830eb9e090ba75d3235f6feb53f8b310812a04 4994 util-linux_2.40.4-5.dsc 5c1daf733b04e9859afdc3bd87cc481180ee0f88b5c0946b16fdec931975fb79 8848216 util-linux_2.40.4.orig.tar.xz 1e76c71ae8adccf8b70473945e1ec6f8e88bc562447bcada5dfad0455fe11794 118424 util-linux_2.40.4-5.debian.tar.xz"
+    "7f94e770c585ea1d9ff6add283789701bd81e12fe2ded0d206008108434f11b2 4942 util-linux_2.41-3.dsc 81ee93b3cfdfeb7d7c4090cedeba1d7bbce9141fd0b501b686b3fe475ddca4c6 9535724 util-linux_2.41.orig.tar.xz 2236f0cca01aac1b9d01bc5106a9ca9626e65cfb33ace0bdbccdc787bf1fbb8c 104492 util-linux_2.41-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/util-linux"
   ],
   "Files": [
-    "6e019cf219874003fa97edc11dcad9ab 4994 util-linux_2.40.4-5.dsc f9cbb1c8315d8ccbeb0ec36d10350304 8848216 util-linux_2.40.4.orig.tar.xz c8047f41b1af3d68dcb61e0d7e4973f9 118424 util-linux_2.40.4-5.debian.tar.xz"
+    "f2091a6f39a90dbe1d95bc1d381fe759 4942 util-linux_2.41-3.dsc e666a34b03554c18a1073347b16661ce 9535724 util-linux_2.41.orig.tar.xz 5f849999bd780c61ceb001c8a794077f 104492 util-linux_2.41-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "https://github.com/util-linux/util-linux"
   ],
   "Maintainer": [
-    "util-linux packagers \u003cutil-linux@packages.debian.org\u003e"
+    "Chris Hofstaedtler \u003czeha@debian.org\u003e"
   ],
   "Package": [
     "util-linux"
@@ -50,9 +50,6 @@
   "Testsuite-Triggers": [
     "build-essential, expect, passwd, pkg-config"
   ],
-  "Uploaders": [
-    "Chris Hofstaedtler \u003czeha@debian.org\u003e,"
-  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/util-linux"
   ],
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/debian/util-linux.git"
   ],
   "Version": [
-    "2.40.4-5"
+    "2.41-3"
   ]
 }
