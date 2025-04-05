@@ -6,16 +6,19 @@
     "librust-hyper-timeout-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hyper-0.14+client-dev (\u003e= 0.14.2-~~) \u003c!nocheck\u003e, librust-hyper-0.14+default-dev (\u003e= 0.14.2-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-io-timeout-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hyper-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-hyper-util-0.1+client-legacy-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-hyper-util-0.1+default-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-hyper-util-0.1+http1-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.35-~~) \u003c!nocheck\u003e, librust-tower-service-0.3+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4685f9a3b65190fe727b8e92953320d25736d9efa389f410202371073e8f2f24 2793 rust-hyper-timeout_0.4.1-4.dsc bbb958482e8c7be4bc3cf272a766a2b0bf1a6755e7a6ae777f017a31d11b13b1 13805 rust-hyper-timeout_0.4.1.orig.tar.gz 9952afac005a65634086d895266bdf06bb971b059e2a2f3cad260160561a842f 3088 rust-hyper-timeout_0.4.1-4.debian.tar.xz"
+    "e1d7777520539f486a2f36a89287218b45a642db7a2397ce7c828e4723fb168f 3117 rust-hyper-timeout_0.5.2-3.dsc 2b90d566bffbce6a75bd8b09a05aa8c2cb1fabb6cb348f8840c9e4c90a0d83b0 19222 rust-hyper-timeout_0.5.2.orig.tar.gz 554b01ca62468550ad2a7d72f2bf3a7a9e0fc2cbfca7b24c199f93c00933f22d 3516 rust-hyper-timeout_0.5.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hyper-timeout"
   ],
   "Files": [
-    "3ecee0dc5eee356249c808230f172934 2793 rust-hyper-timeout_0.4.1-4.dsc 563daa114cdce26296c1f2d62b65eeb4 13805 rust-hyper-timeout_0.4.1.orig.tar.gz fa23e2ce79bff30dcceccfb57b93e028 3088 rust-hyper-timeout_0.4.1-4.debian.tar.xz"
+    "10db5e75a0f50b372f6df8d662f6a90a 3117 rust-hyper-timeout_0.5.2-3.dsc c0b01f9ecbe73d55a5bcc44146457039 19222 rust-hyper-timeout_0.5.2.orig.tar.gz bf8f0805bf7ac736de5fdafa540feb29 3516 rust-hyper-timeout_0.5.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hyper-0.14+client-dev, librust-hyper-0.14+default-dev, librust-hyper-0.14+http1-dev, librust-hyper-0.14+tcp-dev, librust-hyper-tls-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev"
+    "dh-cargo, librust-http-body-util-0.1+default-dev, librust-hyper-1+default-dev, librust-hyper-1+http1-dev, librust-hyper-tls-0.6+default-dev, librust-hyper-util-0.1+client-legacy-dev, librust-hyper-util-0.1+default-dev, librust-hyper-util-0.1+http1-dev, librust-hyper-util-0.1+server-dev, librust-hyper-util-0.1+server-graceful-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hyper-timeout]"
   ],
   "Version": [
-    "0.4.1-4"
+    "0.5.2-3"
   ]
 }

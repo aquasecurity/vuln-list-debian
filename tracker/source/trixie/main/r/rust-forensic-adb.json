@@ -6,19 +6,25 @@
     "librust-forensic-adb-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev (\u003e= 1.7-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-log-0.4+std-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-regex-1+perf-dev \u003c!nocheck\u003e, librust-regex-1+std-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.25-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-tokio-1+fs-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-uuid-1+default-dev \u003c!nocheck\u003e, librust-uuid-1+serde-dev \u003c!nocheck\u003e, librust-uuid-1+v4-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev (\u003e= 1.9.1-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-log-0.4+std-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-regex-1+perf-dev \u003c!nocheck\u003e, librust-regex-1+std-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-tokio-1+fs-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.26.0-~~) \u003c!nocheck\u003e, librust-uuid-1+default-dev \u003c!nocheck\u003e, librust-uuid-1+serde-dev \u003c!nocheck\u003e, librust-uuid-1+v4-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c6b4d5c062ff0ab9a223974295cc9280769999c3b9b47756b7e99efe0dafb21f 3123 rust-forensic-adb_0.7.0-1.dsc dc632830ccdc6fe45d37992e584317d899fe28960a2d9890077963d56e86dc60 26157 rust-forensic-adb_0.7.0.orig.tar.gz 262b1299fe2dba8b3d4e4ffebfd41c70b3ceb0c854ff4db7b0faeaf2676c3e7e 2520 rust-forensic-adb_0.7.0-1.debian.tar.xz"
+    "f9181d07ce7070de98a9ed5a6985fa5e169fc99c44a3b260d2711265f2509b46 3080 rust-forensic-adb_0.8.0-1.dsc 2e7b6dcd2d47395f86b2ca186998b74a0ce21d215ebafc5ffc06e659f2cb59ea 25593 rust-forensic-adb_0.8.0.orig.tar.gz 7cfa7aac1b2da9fca61075861de59fe68c83f51363045a20d41710f3697bc60c 2448 rust-forensic-adb_0.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-forensic-adb"
   ],
   "Files": [
-    "6fc28c40a51f5ce063f22a6872106f6b 3123 rust-forensic-adb_0.7.0-1.dsc 687568ac7dede91753748d50f3b7ed6a 26157 rust-forensic-adb_0.7.0.orig.tar.gz a19a9300f527a62fbfac4af456fca085 2520 rust-forensic-adb_0.7.0-1.debian.tar.xz"
+    "0b41c2a7b4ad0a2e29c3dc691342013a 3080 rust-forensic-adb_0.8.0-1.dsc 8fe763f387bf902d1325b87318b39e39 25593 rust-forensic-adb_0.8.0.orig.tar.gz 45a51b3fd163a15c79fac9cf31521736 2448 rust-forensic-adb_0.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kpcyrd/forensic-adb"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-futures-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/forensic-adb]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.8.0-1"
   ]
 }
