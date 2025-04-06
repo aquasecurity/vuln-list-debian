@@ -6,19 +6,25 @@
     "librust-curl-sys-dev, librust-curl-sys+http2-dev, librust-curl-sys+openssl-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev (\u003e= 0.9.64-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.3-~~) \u003c!nocheck\u003e, libcurl4-gnutls-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev (\u003e= 0.9.64-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.3-~~) \u003c!nocheck\u003e, libcurl4-openssl-dev \u003c!nocheck\u003e | libcurl4-gnutls-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9e454006cfde74304ba25ef00b7c259d16f8e2070cb5152f2f0dc158e947a347 2619 rust-curl-sys_0.4.67-2.dsc ef62a92fcc3f117d67abbd0fd31b932b874d54be51155486d2888f13d15d1a07 17251 rust-curl-sys_0.4.67.orig.tar.gz 86a531522ab03ecbfa850690ba978c79181b164cfadcb6005db5a9ad37aa0abe 5352 rust-curl-sys_0.4.67-2.debian.tar.xz"
+    "f292ee56488f05ab749d52e2b88fe9d1f8bd2d97cd9b76bb599315a2f8bf0383 2720 rust-curl-sys_0.4.67-3.dsc ef62a92fcc3f117d67abbd0fd31b932b874d54be51155486d2888f13d15d1a07 17251 rust-curl-sys_0.4.67.orig.tar.gz ed385953f1e4cd121d4ac6c6219c529102ec5c45e18b873dd08ae773e80d7126 10728 rust-curl-sys_0.4.67-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-curl-sys"
   ],
   "Files": [
-    "93b3f616da72c4f1b4f69859ae652ea2 2619 rust-curl-sys_0.4.67-2.dsc 8bb4bc7217e9bba72c11ce27c847e2bc 17251 rust-curl-sys_0.4.67.orig.tar.gz e370046d0c49bf6f7dbcf3ba6b85ecb2 5352 rust-curl-sys_0.4.67-2.debian.tar.xz"
+    "730cef273ee8c8f0913950f6e2f98b5b 2720 rust-curl-sys_0.4.67-3.dsc 8bb4bc7217e9bba72c11ce27c847e2bc 17251 rust-curl-sys_0.4.67.orig.tar.gz bdd7d74e1532e5420c1097c3e6ad631d 10728 rust-curl-sys_0.4.67-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alexcrichton/curl-rust"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/curl-sys]"
   ],
   "Version": [
-    "0.4.67-2"
+    "0.4.67-3"
   ]
 }
