@@ -6,19 +6,25 @@
     "librust-owned-ttf-parser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+apple-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+glyph-names-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+opentype-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+std-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24+variable-fonts-dev \u003c!nocheck\u003e, librust-ttf-parser-0.24-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+apple-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+glyph-names-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+opentype-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+std-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+variable-fonts-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "88b62b8f783d58af933dcb6826e844ab4f495781d8246227b6e373eada3eee3d 2548 rust-owned-ttf-parser_0.24.0-1.dsc 330eb0f2f047c1b38e0f834e614597bb02c704bbe4c976ec0a3380d42752fc44 137618 rust-owned-ttf-parser_0.24.0.orig.tar.gz 8024fc655d95fa1c9472d9bc0230d2625a4f80ac72e183cb73bf7b1f02a3886d 4764 rust-owned-ttf-parser_0.24.0-1.debian.tar.xz"
+    "196fffb13b088f769200967f3ef106a1d682855e72a2b30ff1f99a1e3a915635 2639 rust-owned-ttf-parser_0.25.0-1.dsc 427ddea984c425b082328653c01e12a38df64fb204f480e4b999703d58c20c44 137748 rust-owned-ttf-parser_0.25.0.orig.tar.gz 8d3a08b53966bdbf44777fb097eb5338a2f3d68e0072c4aa68d1e85d6ce049c2 5048 rust-owned-ttf-parser_0.25.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-owned-ttf-parser"
   ],
   "Files": [
-    "6469da54c719e9389d7a03b04c39ea87 2548 rust-owned-ttf-parser_0.24.0-1.dsc 43f5e3c3747bc06fe08549caf34beab6 137618 rust-owned-ttf-parser_0.24.0.orig.tar.gz 68d9db4c64ec426e13a3cb115ba75a8e 4764 rust-owned-ttf-parser_0.24.0-1.debian.tar.xz"
+    "dd589b1678fa75d42af093d7355c73e8 2639 rust-owned-ttf-parser_0.25.0-1.dsc 8ae2bdea5af94296c53dd95725f4d104 137748 rust-owned-ttf-parser_0.25.0.orig.tar.gz bea660837a49537eeecacac524bd54bf 5048 rust-owned-ttf-parser_0.25.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alexheretic/owned-ttf-parser"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Marc Dequènes (Duck) \u003cDuck@DuckCorp.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/owned-ttf-parser]"
   ],
   "Version": [
-    "0.24.0-1"
+    "0.25.0-1"
   ]
 }

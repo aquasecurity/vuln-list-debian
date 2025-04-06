@@ -6,19 +6,25 @@
     "librust-ab-glyph-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1+default-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-owned-ttf-parser-0.24+default-dev \u003c!nocheck\u003e, librust-owned-ttf-parser-0.24+variable-fonts-dev \u003c!nocheck\u003e, librust-owned-ttf-parser-0.24-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1+default-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-owned-ttf-parser-0.25+default-dev \u003c!nocheck\u003e, librust-owned-ttf-parser-0.25+variable-fonts-dev \u003c!nocheck\u003e, librust-owned-ttf-parser-0.25-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1be6c2ce9bfc3534175c4744bd1c240cf81c7f5d5ed40a1c7c21f61e3f08bea7 2442 rust-ab-glyph_0.2.28-1.dsc 79faae4620f45232f599d9bc7b290f88247a0834162c4495ab2f02d60004adfb 19965 rust-ab-glyph_0.2.28.orig.tar.gz 6765825f807329855aba4dfebc800d0934432650a0234f3b4b8eb0f0b858d828 2524 rust-ab-glyph_0.2.28-1.debian.tar.xz"
+    "8ee725ed9c45d531c71abb8f1dc1670c78afe74640d74abea55f846328212acd 2525 rust-ab-glyph_0.2.29-1.dsc ec3672c180e71eeaaac3a541fbbc5f5ad4def8b747c595ad30d674e43049f7b0 20011 rust-ab-glyph_0.2.29.orig.tar.gz 0cd30ec182edb9ccc09f1b17b62c1584af05619747c1fa850ab7132d1712b93f 2536 rust-ab-glyph_0.2.29-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ab-glyph"
   ],
   "Files": [
-    "57d635ec108583e0818a6629581a5d17 2442 rust-ab-glyph_0.2.28-1.dsc 8021cd887baffb0249dd7f82cc3f4e5c 19965 rust-ab-glyph_0.2.28.orig.tar.gz dcf6a02587d717ba0a9cbcb106af6c39 2524 rust-ab-glyph_0.2.28-1.debian.tar.xz"
+    "45cfe3de477ae08f06b24f0d4f347d36 2525 rust-ab-glyph_0.2.29-1.dsc 4d5a44dfe8d9406a9d898ddf167712d8 20011 rust-ab-glyph_0.2.29.orig.tar.gz e5f385820c296c72cc2aa3d99a17146b 2536 rust-ab-glyph_0.2.29-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alexheretic/ab-glyph"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ab-glyph]"
   ],
   "Version": [
-    "0.2.28-1"
+    "0.2.29-1"
   ]
 }

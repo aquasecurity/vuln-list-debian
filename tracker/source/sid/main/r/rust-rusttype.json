@@ -6,16 +6,19 @@
     "librust-rusttype-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1+default-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-owned-ttf-parser-0.24+default-dev \u003c!nocheck\u003e, librust-owned-ttf-parser-0.24-dev \u003c!nocheck\u003e, fonts-dejavu-core, librust-libm-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, fonts-dejavu-core, librust-libm-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1+default-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-ab-glyph-rasterizer-0.1-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-owned-ttf-parser-0+default-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e, librust-owned-ttf-parser-0-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8ae1212c02ec90f4d13c2c4e3f5704ca09d4faecda0f24b840e998070dc912fe 2475 rust-rusttype_0.9.3-4.dsc 3ff8374aa04134254b7995b63ad3dc41c7f7236f69528b28553da7d72efaa967 31309 rust-rusttype_0.9.3.orig.tar.gz 2541be7b681f3c34ca75aab2b54e96b2a730dc43aba21cf3f901cb56aa222780 4168 rust-rusttype_0.9.3-4.debian.tar.xz"
+    "2c75363c6039c9e35311f0b5e7b417f0c01934aefeeb0a02f65819566679efcc 2528 rust-rusttype_0.9.3-5.dsc 3ff8374aa04134254b7995b63ad3dc41c7f7236f69528b28553da7d72efaa967 31309 rust-rusttype_0.9.3.orig.tar.gz aeb71fe81ef3b7b46286d8bd1c30c29bba21509646efb2ca53234efc658d421d 4204 rust-rusttype_0.9.3-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rusttype"
   ],
   "Files": [
-    "6e5d96ce4b594ecc254eaadbda00b5da 2475 rust-rusttype_0.9.3-4.dsc 5e285fbb464fe6b51f9eebd5324a6366 31309 rust-rusttype_0.9.3.orig.tar.gz ecc4bb242c0389fcb748f24d2cef5a2e 4168 rust-rusttype_0.9.3-4.debian.tar.xz"
+    "b4f5ee5d1179a8357a9be41617051d0c 2528 rust-rusttype_0.9.3-5.dsc 5e285fbb464fe6b51f9eebd5324a6366 31309 rust-rusttype_0.9.3.orig.tar.gz 41f2778e2b2f78d76219fede12ca223c 4204 rust-rusttype_0.9.3-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Marc Dequènes (Duck) \u003cDuck@DuckCorp.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rusttype]"
   ],
   "Version": [
-    "0.9.3-4"
+    "0.9.3-5"
   ]
 }
