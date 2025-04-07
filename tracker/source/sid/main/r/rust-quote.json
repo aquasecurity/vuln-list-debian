@@ -6,19 +6,25 @@
     "librust-quote-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+proc-macro-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e, librust-proc-macro2-1-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+proc-macro-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e, librust-proc-macro2-1-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "082c7fcd17e378f78f0e98129ec949561be339a0e00ef98fd5ab5051e8f7d22d 2384 rust-quote_1.0.37-1.dsc b5b9d34b8991d19d98081b46eacdd8eb58c6f2b201139f7c5f643cc155a633af 28558 rust-quote_1.0.37.orig.tar.gz c138da2cecd37592eb0f67b58a629d8a0de1914bcd8e3ee49e08e9a665db0875 3232 rust-quote_1.0.37-1.debian.tar.xz"
+    "c41e165885bae376fe26bacc509dff608aa98b2e8dcf3740bd648bf0f842e9b6 1826 rust-quote_1.0.40-1.dsc 1885c039570dc00dcb4ff087a89e185fd56bae234ddc7f056a945bf36467248d 31063 rust-quote_1.0.40.orig.tar.gz fe41d3952ea246b7416583931571d92de4f425bcd51c5c6c44e874f1cedaefe3 3308 rust-quote_1.0.40-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-quote"
   ],
   "Files": [
-    "496f54535a829dbb11b02d374999c038 2384 rust-quote_1.0.37-1.dsc ec5466d73ce9285f92a1458cdc1b4046 28558 rust-quote_1.0.37.orig.tar.gz 3b8f79712566f58c8bcd68e531d02bff 3232 rust-quote_1.0.37-1.debian.tar.xz"
+    "a98d1375cfe99e2daf93e03247150188 1826 rust-quote_1.0.40-1.dsc f6471dc7b34a49fca3f64c3c2cb641a4 31063 rust-quote_1.0.40.orig.tar.gz 7400e47af8d1904d9531f23ff4d962e8 3308 rust-quote_1.0.40-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/quote"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/quote]"
   ],
   "Version": [
-    "1.0.37-1"
+    "1.0.40-1"
   ]
 }

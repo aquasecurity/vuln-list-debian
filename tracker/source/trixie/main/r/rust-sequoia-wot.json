@@ -6,16 +6,19 @@
     "librust-sequoia-wot-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-crossbeam-0.8+default-dev (\u003e= 0.8.1-~~) \u003c!nocheck\u003e, librust-num-cpus-1+default-dev \u003c!nocheck\u003e, librust-sequoia-cert-store-0.6-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1+crypto-nettle-dev (\u003e= 1.20-~~) \u003c!nocheck\u003e, librust-thiserror+default-dev (\u003e= 1-~~), librust-thiserror+default-dev (\u003c\u003c 3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.18-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-crossbeam-0.8+default-dev (\u003e= 0.8.1-~~) \u003c!nocheck\u003e, librust-num-cpus-1+default-dev \u003c!nocheck\u003e, librust-sequoia-cert-store-0.7-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-2+crypto-nettle-dev \u003c!nocheck\u003e, librust-thiserror+default-dev (\u003c\u003c 3-~~) \u003c!nocheck\u003e, librust-thiserror+default-dev (\u003e= 1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2fad51400b59fe5c65b116bc51d30e3e45e9889005931981100884e60aed709f 2966 rust-sequoia-wot_0.13.3-1.dsc 608352b8e9128ff838c4376746057815640455c25515f53551859df995442421 1041657 rust-sequoia-wot_0.13.3.orig.tar.gz 09f7c8b41d16f584d012a6222d1f05266be2eea411bd5847e258fae5dc03a530 4084 rust-sequoia-wot_0.13.3-1.debian.tar.xz"
+    "3fe6eca5c69568ecda2186f824a381b105a92ce355a4ee0696b4c284f07e270a 2884 rust-sequoia-wot_0.14.0-1.dsc 7725fa3249ea6f786362408e7fc9ebd86e9250633991d97a2bd64d1197dce490 1042167 rust-sequoia-wot_0.14.0.orig.tar.gz 6973bcb68f11459dd60f36c3b623a5464ff501838bf796d10f76804bf93ef3e1 4088 rust-sequoia-wot_0.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-wot"
   ],
   "Files": [
-    "44bc3d2faa576e83cfe8aeb176430655 2966 rust-sequoia-wot_0.13.3-1.dsc a3d7f79bbfb91ecb8cafe05423263d9a 1041657 rust-sequoia-wot_0.13.3.orig.tar.gz 005b0fcb55a11a1eb830199176499c87 4084 rust-sequoia-wot_0.13.3-1.debian.tar.xz"
+    "f21488eb9cf3ab739de7bd4638330e0b 2884 rust-sequoia-wot_0.14.0-1.dsc fd28e099084285f7de297fc26c609429 1042167 rust-sequoia-wot_0.14.0.orig.tar.gz 5442d2926661a7b0cc498051fbe02767 4088 rust-sequoia-wot_0.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, gnupg, librust-quickcheck-1-dev, librust-sequoia-openpgp-1+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-1+crypto-nettle-dev, rustc"
+    "dh-cargo, gnupg, librust-quickcheck-1-dev, librust-sequoia-openpgp-2+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-wot]"
   ],
   "Version": [
-    "0.13.3-1"
+    "0.14.0-1"
   ]
 }

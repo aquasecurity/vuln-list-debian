@@ -6,16 +6,19 @@
     "librust-sequoia-openpgp-mt-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-buffered-reader-1+default-dev \u003c!nocheck\u003e, librust-num-cpus-1+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-buffered-reader-1+default-dev \u003c!nocheck\u003e, librust-num-cpus-1+default-dev \u003c!nocheck\u003e, librust-sequoia-openpgp-2+crypto-nettle-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1b6be025edf45293472b98219236ecb7cc864eb17982f97c7f2069ca8e277b10 2620 rust-sequoia-openpgp-mt_0.1.0-3.dsc 02a86b047ba5a71263eb36a1baba6c3124ceb4a34c221592e878a82fc34e4445 29965 rust-sequoia-openpgp-mt_0.1.0.orig.tar.gz 1b50e4b4fa63c6ace1364d2003f1da21ac20ed06fbd6262835cf0112e0fd4e02 3052 rust-sequoia-openpgp-mt_0.1.0-3.debian.tar.xz"
+    "c375802b8c8ad4726895ed1a76cd0bc8ab46c8c8089b372c75aa690924ee47b1 2659 rust-sequoia-openpgp-mt_0.2.0-1.dsc 1fb256a02274bc6cb6b6b7f514b6cbcffbd30c2dbeee1533de6e1c573cbec72a 34080 rust-sequoia-openpgp-mt_0.2.0.orig.tar.gz a869cb76c4b0f3f903544bd78f0924957208ee39a7c8fa952e5736d8b29ad74d 2676 rust-sequoia-openpgp-mt_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-openpgp-mt"
   ],
   "Files": [
-    "cdcfe76fe4571f3d43d237a2e071cc8c 2620 rust-sequoia-openpgp-mt_0.1.0-3.dsc 7e29cd0ceff55f75b72182e740c8dc6c 29965 rust-sequoia-openpgp-mt_0.1.0.orig.tar.gz fc07c0f60ad85e6693b1aeef409de8ee 3052 rust-sequoia-openpgp-mt_0.1.0-3.debian.tar.xz"
+    "483a1a2a738659834a7c0007c91c3af2 2659 rust-sequoia-openpgp-mt_0.2.0-1.dsc 8cbe5c4305145302a1cc139df6c66cca 34080 rust-sequoia-openpgp-mt_0.2.0.orig.tar.gz 3fab6f0951a50cc00d00ab7fa3be7384 2676 rust-sequoia-openpgp-mt_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-sequoia-openpgp-2+--implicit-crypto-backend-for-tests-dev, librust-sequoia-openpgp-2+crypto-nettle-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-openpgp-mt]"
   ],
   "Version": [
-    "0.1.0-3"
+    "0.2.0-1"
   ]
 }
