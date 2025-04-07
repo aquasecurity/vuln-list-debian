@@ -1,15 +1,15 @@
 {
   "Architecture": [
-    "any all"
+    "alpha amd64 arm64 armel armhf hppa i386 loong64 m68k powerpc ppc64 ppc64el riscv64 s390x sh4 sparc64 x32 all"
   ],
   "Binary": [
-    "libloc1t64, libloc-dev, location, python3-location"
+    "libloc1t64, libloc-dev, location, python3-location, lua-location"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper (\u003e= 13.11.6), debhelper-compat (= 13), dh-sequence-bash-completion, dh-sequence-python3, asciidoc, intltool, libssl-dev, libsystemd-dev, pkgconf, python3-all-dev, systemd-dev (\u003e= 255~rc3-3), xsltproc, docbook-xsl"
+    "dpkg-dev (\u003e= 1.22.5), debhelper (\u003e= 13.11.6), debhelper-compat (= 13), dh-sequence-bash-completion, dh-sequence-python3, asciidoc, intltool, liblua5.4-dev, libssl-dev, libsystemd-dev, pkgconf, python3-all-dev, systemd-dev (\u003e= 255~rc3-3), xsltproc, docbook-xsl"
   ],
   "Checksums-Sha256": [
-    "eb7fa804caeef68aef3d3d77bac76b988c35d73d4e5dc9b51f15412a854a500b 2263 libloc_0.9.17-1.dsc 87f28415c0656351b27bc564cda1dd0ed7cb1dc3fd406492d2b6ad9a2cf1733c 11202214 libloc_0.9.17.orig.tar.gz 64aaaa56f75acbdad5d47c5d1a44dbe8ea68f821960caddb4d96af4cb759bca8 10196 libloc_0.9.17-1.debian.tar.xz"
+    "3330e0d990fd4cde4fb06ff6893d8ec1ce63b70280d62fc68e8a219ef29bc819 2838 libloc_0.9.18-3.dsc 16c76689fa0ea8ece4fca6abcf942f236c48440387bee1d9331ea937ccd7b87d 12637929 libloc_0.9.18.orig.tar.gz 56c510db4a15ddb020313794d2ae6164242bfc7ae95b7d74d7d2841f5e13d598 11240 libloc_0.9.18-3.debian.tar.xz"
   ],
   "Description": [
     "IP geolocation query library libloc is a lightweight library to query the IPFire Location database and determine the location of someone else on the Internet based on their IP address."
@@ -18,7 +18,7 @@
     "pool/main/libl/libloc"
   ],
   "Files": [
-    "d03e8255a0cff3e9745e6541b195cf3a 2263 libloc_0.9.17-1.dsc f365c83a4aebcf1816c2454982354af5 11202214 libloc_0.9.17.orig.tar.gz 418f802097c8e89a36e19b9bd7eef226 10196 libloc_0.9.17-1.debian.tar.xz"
+    "f7fbd3cb340dad5289e9f462469ba15e 2838 libloc_0.9.18-3.dsc add56bc1ac8d9c06d78aeea539d6aff3 12637929 libloc_0.9.18.orig.tar.gz e74655ce0ea008d88c313c2a4e0a24d4 11240 libloc_0.9.18-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "libloc"
   ],
   "Package-List": [
-    "libloc-dev deb libdevel optional arch=any libloc1t64 deb libs optional arch=any location deb net optional arch=all python3-location deb python optional arch=any"
+    "libloc-dev deb libdevel optional arch=alpha,amd64,arm64,armel,armhf,hppa,i386,loong64,m68k,powerpc,ppc64,ppc64el,riscv64,s390x,sh4,sparc64,x32 libloc1t64 deb libs optional arch=alpha,amd64,arm64,armel,armhf,hppa,i386,loong64,m68k,powerpc,ppc64,ppc64el,riscv64,s390x,sh4,sparc64,x32 location deb net optional arch=all lua-location deb libs optional arch=alpha,amd64,arm64,armel,armhf,hppa,i386,loong64,m68k,powerpc,ppc64,ppc64el,riscv64,s390x,sh4,sparc64,x32 python3-location deb python optional arch=alpha,amd64,arm64,armel,armhf,hppa,i386,loong64,m68k,powerpc,ppc64,ppc64el,riscv64,s390x,sh4,sparc64,x32"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/libloc.git"
   ],
   "Version": [
-    "0.9.17-1"
+    "0.9.18-3"
   ]
 }
