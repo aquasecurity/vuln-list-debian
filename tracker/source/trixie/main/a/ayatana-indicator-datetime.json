@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "ayatana-indicator-datetime"
+    "ayatana-indicator-datetime, lomiri-indicator-datetime, ayatana-indicator-datetime-common"
   ],
   "Build-Depends": [
-    "cmake, cmake-extras (\u003e= 0.10), dbus, debhelper-compat (= 13), intltool, libaccounts-glib-dev (\u003e= 1.18), libayatana-common-dev (\u003e= 0.9.3), libecal2.0-dev (\u003e= 3.16) | libecal1.2-dev (\u003e= 3.16), libedataserver1.2-dev (\u003e= 3.5), libglib2.0-dev (\u003e= 2.35.4), libgstreamer1.0-dev, libical-dev (\u003e= 1.0), libmessaging-menu-dev, libnotify-dev (\u003e= 0.7.6), libproperties-cpp-dev, uuid-dev, lomiri-schemas (\u003e= 0.1.1), lomiri-sounds (\u003e= 22.02), liblomiri-url-dispatcher-dev, dbus-test-runner \u003c!nocheck\u003e, libdbustest1-dev \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e, python3-dbusmock \u003c!nocheck\u003e, locales \u003c!nocheck\u003e, evolution-data-server \u003c!nocheck\u003e, gvfs-daemons \u003c!nocheck\u003e, systemd-dev [linux-any] \u003c!nocheck\u003e, ayatana-indicator-common \u003c!nocheck\u003e"
+    "cmake, cmake-extras (\u003e= 0.10), dbus, debhelper-compat (= 13), intltool, libaccounts-glib-dev (\u003e= 1.18), libayatana-common-dev (\u003e= 0.9.3), libglib2.0-dev (\u003e= 2.35.4), libgstreamer1.0-dev, libmessaging-menu-dev, libnotify-dev (\u003e= 0.7.6), libproperties-cpp-dev, uuid-dev, libecal2.0-dev (\u003e= 3.16), libical-dev (\u003e= 1.0), libedataserver1.2-dev (\u003e= 3.5), libkf5calendarcore-dev, libmkcal-qt5-dev, extra-cmake-modules, lomiri-schemas (\u003e= 0.1.1), lomiri-sounds (\u003e= 22.02), liblomiri-url-dispatcher-dev, dbus-test-runner \u003c!nocheck\u003e, libdbustest1-dev \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e, python3-dbusmock \u003c!nocheck\u003e, locales \u003c!nocheck\u003e, evolution-data-server \u003c!nocheck\u003e, gvfs-daemons \u003c!nocheck\u003e, mkcal-bin \u003c!nocheck\u003e, systemd-dev [linux-any] \u003c!nocheck\u003e, ayatana-indicator-common \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fc63418a72a5904a7aa6be61ccd0958b4a71e6f1f60fa94162bf977bdaa324c5 3248 ayatana-indicator-datetime_24.5.1-1.dsc 1ea65013d65104dd32de49b0b09b26855f1788f9f8738489993cd6be29dd6a3c 290805 ayatana-indicator-datetime_24.5.1.orig.tar.gz 84005f00cc030297730ad75cfb9bd52021b9ac386b0170ed1f6237abf851f90b 833 ayatana-indicator-datetime_24.5.1.orig.tar.gz.asc 7885c805b31d96367aba9b2f490faeee9511c6b750dd5e3967aa6ec931ced993 13824 ayatana-indicator-datetime_24.5.1-1.debian.tar.xz"
+    "d880317652f8751828cc7f7dcb96d2cbc51d9012a1a763ef90b61e540d9da7c6 3488 ayatana-indicator-datetime_25.4.0-2.dsc e4cf4a951f01244a208e5765052bd6002138249e534a3df6d5c1d22c6f63ff37 344675 ayatana-indicator-datetime_25.4.0.orig.tar.gz 3353bd4a57852ea40c7457676f9af0e4134c30f843aee71501272c6d539a6ec6 833 ayatana-indicator-datetime_25.4.0.orig.tar.gz.asc 994b9e3aafeb42d7c91729835b1f1b84f9b3fc82285cf5436ab0d6ef8917dd86 14724 ayatana-indicator-datetime_25.4.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/ayatana-indicator-datetime"
   ],
   "Files": [
-    "9f3f0d4c25ccf24f3321ea5935964588 3248 ayatana-indicator-datetime_24.5.1-1.dsc 6b9222666a1045f7eeedc69ec1dd5fe5 290805 ayatana-indicator-datetime_24.5.1.orig.tar.gz 0921f455d2d97d00701a6bcc48857024 833 ayatana-indicator-datetime_24.5.1.orig.tar.gz.asc 4db4c4853948aa5e7bcc2820c467d96e 13824 ayatana-indicator-datetime_24.5.1-1.debian.tar.xz"
+    "e2beb31fd699c405e4ab76784803faf3 3488 ayatana-indicator-datetime_25.4.0-2.dsc d15e522e4deddf9b02f82297089a2ada 344675 ayatana-indicator-datetime_25.4.0.orig.tar.gz 75e347936c12fd5e6a4b8acfb40b12f2 833 ayatana-indicator-datetime_25.4.0.orig.tar.gz.asc a26ad828fc91b9af7ff17ef3217fd7fe 14724 ayatana-indicator-datetime_25.4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ayatana-indicator-datetime"
   ],
   "Package-List": [
-    "ayatana-indicator-datetime deb misc optional arch=any"
+    "ayatana-indicator-datetime deb misc optional arch=any ayatana-indicator-datetime-common deb misc optional arch=all lomiri-indicator-datetime deb misc optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian-ayatana-team/ayatana-indicator-datetime.git"
   ],
   "Version": [
-    "24.5.1-1"
+    "25.4.0-2"
   ]
 }
