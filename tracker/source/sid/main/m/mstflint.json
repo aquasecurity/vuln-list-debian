@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "mstflint"
+    "mstflint, mstflint-dkms"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libboost-filesystem-dev, libboost-regex-dev, libboost-system-dev, libexpat1-dev, libibmad-dev, libjsoncpp-dev, liblzma-dev, libmuparser-dev, libsqlite3-dev, libssl-dev, pkgconf, zlib1g-dev"
+    "debhelper-compat (= 13), dh-sequence-dkms, libboost-filesystem-dev, libboost-regex-dev, libboost-system-dev, libexpat1-dev, libibmad-dev, libjsoncpp-dev, liblzma-dev, libmuparser-dev, libsqlite3-dev, libssl-dev, pkgconf, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "99b4d02d6c76d9f7ce9d58c94423bce8190cf1890ec020d722d79eea40ce1fc5 1972 mstflint_4.31.0+1-2.dsc 10f2611f9f60fbb9f74dfd33d08438d7f85418351b2d735947d4cd2165a50d98 7689210 mstflint_4.31.0+1.orig.tar.gz f8b11301d42f29ff7b40dacd977efb5c96b56198ce7ddc79a9bdb712a8ca958d 11392 mstflint_4.31.0+1-2.debian.tar.xz"
+    "7ffee6b986a8cdb75fbcb520affa9b4568e375b7d4ae7f34f08748daadf913bb 2053 mstflint_4.31.0+1-3.dsc 10f2611f9f60fbb9f74dfd33d08438d7f85418351b2d735947d4cd2165a50d98 7689210 mstflint_4.31.0+1.orig.tar.gz 8f7ffe420b72d520e98812914476068f6bd794d94bbdee74de6e8600689a1520 13324 mstflint_4.31.0+1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mstflint"
   ],
   "Files": [
-    "1bcc53fc6f9887bb75750e8f4432a447 1972 mstflint_4.31.0+1-2.dsc 938ad6208548decda8f6e4dd70fc1d31 7689210 mstflint_4.31.0+1.orig.tar.gz 72b20038de99c6fafebf23e157d92351 11392 mstflint_4.31.0+1-2.debian.tar.xz"
+    "b5593451b6c57778ee338d1352dba45c 2053 mstflint_4.31.0+1-3.dsc 938ad6208548decda8f6e4dd70fc1d31 7689210 mstflint_4.31.0+1.orig.tar.gz 3393b1e94d53150b829d779ec0761b2a 13324 mstflint_4.31.0+1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mstflint"
   ],
   "Package-List": [
-    "mstflint deb net optional arch=linux-any"
+    "mstflint deb net optional arch=linux-any mstflint-dkms deb kernel optional arch=all"
   ],
   "Priority": [
     "source"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/hpc-team/mstflint.git"
   ],
   "Version": [
-    "4.31.0+1-2"
+    "4.31.0+1-3"
   ]
 }
