@@ -6,19 +6,25 @@
     "librust-trybuild-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.110-~~) \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e, librust-dissimilar-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, librust-dissimilar-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glob-0.3+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.110-~~) \u003c!nocheck\u003e, librust-target-triple-0.1+default-dev \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "35228389135e39711ab2b433b2b5baa5e64faa86d1a030ca9064516e407e8f13 2009 rust-trybuild_1.0.99-1.dsc 207aa50d36c4be8d8c6ea829478be44a372c6a77669937bb39c698e52f1491e8 41414 rust-trybuild_1.0.99.orig.tar.gz b9ccd0afadf3ceb6d97f71ca3ff6e88678a974b5748146ef66b3321778f85b2f 3268 rust-trybuild_1.0.99-1.debian.tar.xz"
+    "d106540db73aaa34998ee5fa4c2470e1886606f9b8c21501318d0b162815edf2 2047 rust-trybuild_1.0.104-1.dsc 6ae08be68c056db96f0e6c6dd820727cca756ced9e1f4cc7fdd20e2a55e23898 44681 rust-trybuild_1.0.104.orig.tar.gz aee31f6cd7df2ab79c80e9aac507e38a26c8e935adb23c1c6cfc28b9f59c2ab9 3384 rust-trybuild_1.0.104-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-trybuild"
   ],
   "Files": [
-    "7e4e972628bff3346135a1a97b4fb0e2 2009 rust-trybuild_1.0.99-1.dsc 1177dd6e95d2e424b71548f4282d2bfe 41414 rust-trybuild_1.0.99.orig.tar.gz c1aa48e2c6748bb54a6cfb876196a0b2 3268 rust-trybuild_1.0.99-1.debian.tar.xz"
+    "45c424a6d9d4b0d2b55071a98c47378e 2047 rust-trybuild_1.0.104-1.dsc acf8d9109219d214694754a2a6de02f9 44681 rust-trybuild_1.0.104.orig.tar.gz e0a1dbe571008d0a7e07c5d9ac270642 3384 rust-trybuild_1.0.104-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/trybuild"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-automod-1+default-dev"
+    "dh-cargo, librust-automod-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/trybuild]"
   ],
   "Version": [
-    "1.0.99-1"
+    "1.0.104-1"
   ]
 }
