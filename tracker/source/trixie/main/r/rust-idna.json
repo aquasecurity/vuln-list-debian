@@ -6,19 +6,25 @@
     "librust-idna-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-unicode-bidi-0.3+hardcoded-data-dev (\u003e= 0.3.10-~~) \u003c!nocheck\u003e, librust-unicode-bidi-0.3+std-dev (\u003e= 0.3.10-~~) \u003c!nocheck\u003e, librust-unicode-normalization-0.1+std-dev (\u003e= 0.1.22-~~) \u003c!nocheck\u003e, librust-unicode-normalization-0.1-dev (\u003e= 0.1.22-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-idna-adapter-1+compiled-data-dev \u003c!nocheck\u003e, librust-idna-adapter-1+default-dev \u003c!nocheck\u003e, librust-smallvec-1+const-generics-dev (\u003e= 1.13.1-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.13.1-~~) \u003c!nocheck\u003e, librust-utf8-iter-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4c14683168736dcca9f8a32e2e3de22b596bcb137ca83552e4b31f8fa3c50dba 2473 rust-idna_0.4.0-1.dsc 7d20d6b07bfbc108882d88ed8e37d39636dcc260e15e30c45e6ba089610b917c 271429 rust-idna_0.4.0.orig.tar.gz cf923ed87c67674993099e74ecc9b4d1b7c49633a9bb0b30f138340eec154740 3796 rust-idna_0.4.0-1.debian.tar.xz"
+    "a4d7dd9f34208b36377c9e914d20097d8ff2bd46e78c92464dbb6bdbaa0bd3ce 2577 rust-idna_1.0.3-2.dsc 686f825264d630750a544639377bae737628043f20d38bbc029e8f29ea968a7e 142515 rust-idna_1.0.3.orig.tar.gz 204ea1ec73b198504c5bd2b49bb489225e31101c9aa12ea9f8129916a6c3e4d0 3692 rust-idna_1.0.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-idna"
   ],
   "Files": [
-    "dd817269736949de7c8b0db1aadeb924 2473 rust-idna_0.4.0-1.dsc 6099af3f71f8900bbb9bd06d84655495 271429 rust-idna_0.4.0.orig.tar.gz f71392a2ac727a54753d5f91ec183ea7 3796 rust-idna_0.4.0-1.debian.tar.xz"
+    "15ae7536f97e2ac0296e5e46d2169469 2577 rust-idna_1.0.3-2.dsc a4add356e295ad0f859ab8a53220ee77 142515 rust-idna_1.0.3.orig.tar.gz 9db65f23c535ddb7fac4dae3f87a7abc 3692 rust-idna_1.0.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/rust-url/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-bencher-0.1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-assert-matches-1+default-dev, librust-bencher-0.1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/idna]"
   ],
   "Version": [
-    "0.4.0-1"
+    "1.0.3-2"
   ]
 }
