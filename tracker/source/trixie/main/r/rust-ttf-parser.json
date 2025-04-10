@@ -6,19 +6,25 @@
     "librust-ttf-parser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "211c9fc8e7c16a53d6a956da34b5ec10a454d9cbec580162bbaeea367e816f4c 2292 rust-ttf-parser_0.24.1-1.dsc 5e2c27fb540c0e70ee0e3f734a4acaade0e168063d2963d0631ac7bd2a9dd3ec 189055 rust-ttf-parser_0.24.1.orig.tar.gz 102901de0d04e02a46b158d39c799716b0d2ab53e82dca1a7f176902898c5d30 3580 rust-ttf-parser_0.24.1-1.debian.tar.xz"
+    "97d84d41f88a4993178c211d1cb6155773b1dfa9eefebff2a5b691288e06aeaf 2386 rust-ttf-parser_0.25.1-1.dsc feb8b20d29f95eaa3a1050d4e832f7e1bd595a93fa9abc8eab650fe17d206ccf 192887 rust-ttf-parser_0.25.1.orig.tar.gz 09c1bb16e9a56efb40da0b7932c31689097dd56941e779b099f1b606792de99b 3736 rust-ttf-parser_0.25.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ttf-parser"
   ],
   "Files": [
-    "5ea391645ce165eee1890d4c105aa3a7 2292 rust-ttf-parser_0.24.1-1.dsc 1088cf71183324b9d4ea7dbe5dc53519 189055 rust-ttf-parser_0.24.1.orig.tar.gz e217374a19b41893cc05d4c5a98baaad 3580 rust-ttf-parser_0.24.1-1.debian.tar.xz"
+    "87db02ea264dfe53df28e290a8f47834 2386 rust-ttf-parser_0.25.1-1.dsc a07fbbf198b5fc31881e12c32cc3c862 192887 rust-ttf-parser_0.25.1.orig.tar.gz f6bddc36cc4667058ad1375b2ec86065 3736 rust-ttf-parser_0.25.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/harfbuzz/ttf-parser"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-base64-0.21+default-dev, librust-pico-args-0.5+default-dev, librust-tiny-skia-path-0.11+default-dev, librust-xmlwriter-0.1+default-dev"
+    "dh-cargo, librust-base64-0.21+default-dev, librust-pico-args-0.5+default-dev, librust-tiny-skia-path-0.11+default-dev, librust-xmlwriter-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ttf-parser]"
   ],
   "Version": [
-    "0.24.1-1"
+    "0.25.1-1"
   ]
 }

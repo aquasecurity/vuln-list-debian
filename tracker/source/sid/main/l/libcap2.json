@@ -1,24 +1,27 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "libcap2-bin, libcap2, libcap-dev, libpam-cap, libcap2-udeb"
+    "libcap2-bin, libcap2, libcap-dev, libpam-cap, libcap2-udeb, golang-kernel-pub-linux-libs-security-libcap-dev"
   ],
   "Build-Depends": [
-    "chrpath, debhelper-compat (= 13), gperf (\u003e= 3.1), indent, libpam0g-dev"
+    "chrpath, debhelper-compat (= 13), dh-golang, golang-any, gperf (\u003e= 3.1), indent, libpam0g-dev"
   ],
   "Checksums-Sha256": [
-    "122d050adc9896829461e0fdb13a08a34c7ae682c80efc73c2c1916a4743842e 2466 libcap2_2.75-4.dsc de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632 197868 libcap2_2.75.orig.tar.xz c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2 833 libcap2_2.75.orig.tar.xz.asc 131bbe80c3caadb417627cb5024ea5c36ed773e04f4bc64e8a5d2f72c6dc40b7 21304 libcap2_2.75-4.debian.tar.xz"
+    "e55593b7d11f72685ebd3a6df5f5a43f02cba1fe3483f68bcd60787629825135 2678 libcap2_2.75-5.dsc de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632 197868 libcap2_2.75.orig.tar.xz c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2 833 libcap2_2.75.orig.tar.xz.asc db621af77207866fd0ce8dd2bc409072caf5d8c137419532fff068085e2f6a56 22344 libcap2_2.75-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libc/libcap2"
   ],
   "Files": [
-    "5eff75f705a580dbf5608d2a9af55b83 2466 libcap2_2.75-4.dsc 9406193ddb794dfbf9e71490053085f9 197868 libcap2_2.75.orig.tar.xz b8b508155e1073651e2cdceec97d57ff 833 libcap2_2.75.orig.tar.xz.asc f854ee9c1cf27102c9fe1b2134496878 21304 libcap2_2.75-4.debian.tar.xz"
+    "2f87bda53a1e81c6690120dd0e28a1c9 2678 libcap2_2.75-5.dsc 9406193ddb794dfbf9e71490053085f9 197868 libcap2_2.75.orig.tar.xz b8b508155e1073651e2cdceec97d57ff 833 libcap2_2.75.orig.tar.xz.asc c06c1d690bac200184f6c6858d40bcc7 22344 libcap2_2.75-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Go-Import-Path": [
+    "kernel.org/pub/linux/libs/security/libcap"
   ],
   "Homepage": [
     "https://sites.google.com/site/fullycapable/"
@@ -30,7 +33,7 @@
     "libcap2"
   ],
   "Package-List": [
-    "libcap-dev deb libdevel optional arch=linux-any libcap2 deb libs optional arch=linux-any libcap2-bin deb utils important arch=linux-any libcap2-udeb udeb debian-installer optional arch=linux-any profile=!noudeb libpam-cap deb admin optional arch=linux-any"
+    "golang-kernel-pub-linux-libs-security-libcap-dev deb libs optional arch=all libcap-dev deb libdevel optional arch=linux-any libcap2 deb libs optional arch=linux-any libcap2-bin deb utils important arch=linux-any libcap2-udeb udeb debian-installer optional arch=linux-any profile=!noudeb libpam-cap deb admin optional arch=linux-any"
   ],
   "Priority": [
     "source"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian/libcap2.git"
   ],
   "Version": [
-    "1:2.75-4"
+    "1:2.75-5"
   ]
 }

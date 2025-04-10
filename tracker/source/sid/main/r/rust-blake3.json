@@ -6,19 +6,25 @@
     "librust-blake3-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayref-0.3+default-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.4-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.1.12-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-constant-time-eq-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayref-0.3+default-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.4-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.1.12-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-constant-time-eq-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a1ca75602904a7aa06ef2392387f80afce4cae19f5817f989ae7f2a17f1e8fbf 2024 rust-blake3_1.5.4-1.dsc d82033247fd8e890df8f740e407ad4d038debb9eb1f40533fffb32e7d17dc6f7 180240 rust-blake3_1.5.4.orig.tar.gz 3fe2b564247b87d7a37d0809cfef905f980ed684dca8487c19b0b4bddcde5eb4 8464 rust-blake3_1.5.4-1.debian.tar.xz"
+    "27569776b35910e317afdc333fcb59df13b8bda510b748f5dd0f4dac13692869 2087 rust-blake3_1.8.1-1.dsc 389a099b34312839e16420d499a9cad9650541715937ffbdd40d36f49e77eeb3 205653 rust-blake3_1.8.1.orig.tar.gz 507e6b49b9549c64d1ca0bb051c8b8c5ca5e3148e71992535e160196347c81ca 8364 rust-blake3_1.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-blake3"
   ],
   "Files": [
-    "5d16289a1cf46a186076c82e55374d89 2024 rust-blake3_1.5.4-1.dsc 4c0d5c6311a2bd14de6d258c124790fd 180240 rust-blake3_1.5.4.orig.tar.gz 7e93d493ef4a64fdc439f9bc37ae9d7a 8464 rust-blake3_1.5.4-1.debian.tar.xz"
+    "d4d39f271883ad78a91ef80d5d84aa75 2087 rust-blake3_1.8.1-1.dsc 5c505151db2f62298612e41906bbcbc0 205653 rust-blake3_1.8.1.orig.tar.gz a1e44896776d30011e94f3d2349735d1 8364 rust-blake3_1.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/BLAKE3-team/BLAKE3"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-ciborium-0.2+default-dev, librust-hex-0.4+default-dev, librust-hmac-0.12+default-dev, librust-page-size-0.6+default-dev, librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-ciborium-0.2+default-dev, librust-hex-0.4+default-dev, librust-hmac-0.12+default-dev, librust-page-size-0.6+default-dev, librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "karthek \u003cmail@karthek.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/blake3]"
   ],
   "Version": [
-    "1.5.4-1"
+    "1.8.1-1"
   ]
 }
