@@ -9,19 +9,19 @@
     "debhelper-compat (= 13), dh-exec, liblzma-dev:native, xxd, zlib1g-dev:native, expect \u003c!nocheck\u003e"
   ],
   "Build-Depends-Arch": [
-    "seabios [i386 amd64] \u003c!nocheck\u003e, ovmf [amd64] \u003c!nocheck\u003e, qemu-system-x86 [i386 amd64] \u003c!nocheck\u003e, qemu-efi-aarch64 [arm64] \u003c!nocheck\u003e, qemu-system-arm [arm64] \u003c!nocheck\u003e, qemu-efi-riscv64 [riscv64] \u003c!nocheck\u003e, qemu-system-riscv [riscv64] \u003c!nocheck\u003e, qemu-efi-loongarch64 [loong64] \u003c!nocheck\u003e, qemu-system-misc [loong64] \u003c!nocheck\u003e, dosfstools:native \u003c!nocheck\u003e, mtools \u003c!nocheck\u003e"
+    "seabios [i386 amd64] \u003c!nocheck\u003e, ovmf [amd64] \u003c!nocheck\u003e, qemu-system-i386 [i386] \u003c!nocheck\u003e, qemu-system-amd64 [amd64] \u003c!nocheck\u003e, qemu-efi-aarch64 [arm64] \u003c!nocheck\u003e, qemu-system-arm64 [arm64] \u003c!nocheck\u003e, qemu-efi-riscv64 [riscv64] \u003c!nocheck\u003e, qemu-system-riscv64 [riscv64] \u003c!nocheck\u003e, qemu-efi-loongarch64 [loong64] \u003c!nocheck\u003e, qemu-system-loong64 [loong64] \u003c!nocheck\u003e, dosfstools:native \u003c!nocheck\u003e, mtools \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "dosfstools:native, gcc-x86-64-linux-gnu, gcc-aarch64-linux-gnu, gcc-loongarch64-linux-gnu, gcc-riscv64-linux-gnu, isolinux, mtools, syslinux-common, xorriso, seabios \u003c!nocheck\u003e, ovmf \u003c!nocheck\u003e, qemu-efi-aarch64 \u003c!nocheck\u003e, qemu-efi-riscv64 \u003c!nocheck\u003e, qemu-efi-loongarch64 \u003c!nocheck\u003e, qemu-system-x86 \u003c!nocheck\u003e, qemu-system-arm \u003c!nocheck\u003e, qemu-system-riscv \u003c!nocheck\u003e, qemu-system-misc \u003c!nocheck\u003e"
+    "dosfstools:native, gcc-x86-64-linux-gnu, gcc-aarch64-linux-gnu, gcc-loongarch64-linux-gnu, gcc-riscv64-linux-gnu, isolinux, mtools, syslinux-common, xorriso, seabios \u003c!nocheck\u003e, ovmf \u003c!nocheck\u003e, qemu-efi-aarch64 \u003c!nocheck\u003e, qemu-efi-riscv64 \u003c!nocheck\u003e, qemu-efi-loongarch64 \u003c!nocheck\u003e, qemu-system-i386 \u003c!nocheck\u003e, qemu-system-amd64 \u003c!nocheck\u003e, qemu-system-arm64 \u003c!nocheck\u003e, qemu-system-riscv64 \u003c!nocheck\u003e, qemu-system-loong64 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "82c2db9e7e68923ca2f384cf57a085510c57664cc88e8ddd0672fb3091fb8b96 3316 ipxe_1.21.1+git20250317.42a29d56+dfsg-1.dsc 149ea7a227321eea0cb236107a20897c6d637fb9351adfd46c37d09fb980905a 2871940 ipxe_1.21.1+git20250317.42a29d56+dfsg.orig.tar.xz 0ba6af47e5cef41df370d4a2d6b3c92f12a2e944c727ae46f177608c18a8b79f 24508 ipxe_1.21.1+git20250317.42a29d56+dfsg-1.debian.tar.xz"
+    "8b0933602478102fa1546e3b42ae5a22b28e4d33e7959d0d7dd64a1d35904063 3398 ipxe_1.21.1+git20250317.42a29d56+dfsg-2.dsc 149ea7a227321eea0cb236107a20897c6d637fb9351adfd46c37d09fb980905a 2871940 ipxe_1.21.1+git20250317.42a29d56+dfsg.orig.tar.xz d80b41573cb50c8b7f5779cde258e221270034b18fe9a6d255091795fe147637 24700 ipxe_1.21.1+git20250317.42a29d56+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/ipxe"
   ],
   "Files": [
-    "7110b9c2b06ad06120ad24df529507bc 3316 ipxe_1.21.1+git20250317.42a29d56+dfsg-1.dsc d876d52bb4f4a277250eeb209888b8ee 2871940 ipxe_1.21.1+git20250317.42a29d56+dfsg.orig.tar.xz 0d88b8e9397765d4d395fe02dd2669da 24508 ipxe_1.21.1+git20250317.42a29d56+dfsg-1.debian.tar.xz"
+    "311d2bed8883dc0e3c21a6d13db42a36 3398 ipxe_1.21.1+git20250317.42a29d56+dfsg-2.dsc d876d52bb4f4a277250eeb209888b8ee 2871940 ipxe_1.21.1+git20250317.42a29d56+dfsg.orig.tar.xz 0d75c26f5591308cde85c8cf6f8e589f 24700 ipxe_1.21.1+git20250317.42a29d56+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "debian-installer-13-netboot-amd64, expect, ovmf, qemu-efi-aarch64, qemu-efi-loongarch64, qemu-efi-riscv64, qemu-system-arm, qemu-system-loongarch, qemu-system-misc, qemu-system-riscv, qemu-system-x86, seabios, xxd"
+    "debian-installer-13-netboot-amd64, expect, ovmf, qemu-efi-aarch64, qemu-efi-loongarch64, qemu-efi-riscv64, qemu-system-amd64, qemu-system-arm64, qemu-system-i386, qemu-system-loong64, qemu-system-riscv64, seabios, xxd"
   ],
   "Uploaders": [
     "Shengqi Chen \u003charry@debian.org\u003e"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/debian/ipxe.git"
   ],
   "Version": [
-    "1.21.1+git20250317.42a29d56+dfsg-1"
+    "1.21.1+git20250317.42a29d56+dfsg-2"
   ]
 }
