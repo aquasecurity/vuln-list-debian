@@ -6,16 +6,22 @@
     "ftdi-eeprom, libftdi1-2, libftdi1-dev, libftdi1-doc, libftdipp1-3, libftdipp1-dev, python3-ftdi1"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, dh-python, python3-setuptools, doxygen, libboost-test-dev (\u003e= 1.58), libconfuse-dev, libusb-1.0-0-dev, pkgconf, python3-all-dev, swig"
+    "debhelper-compat (= 13), cmake, libusb-1.0-0-dev, pkgconf"
+  ],
+  "Build-Depends-Arch": [
+    "dh-sequence-python3, libboost-test-dev, libconfuse-dev, libpython3-all-dev, python3-all:any, python3-setuptools, swig"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen"
   ],
   "Checksums-Sha256": [
-    "bdf620d734b888b9a49eef6edea981d400d624758fd2736abbd631f1eb403627 2555 libftdi1_1.5-8.dsc 7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049 116297 libftdi1_1.5.orig.tar.bz2 6504d3511c6d1f62f667370aa32619163264a58df0db663955b9ac3a16ffe0a5 232 libftdi1_1.5.orig.tar.bz2.asc 1e156c7bd4fadd7c5e9d93c244e68844655d9dc6890c75213f73b89bc4600986 12608 libftdi1_1.5-8.debian.tar.xz"
+    "a376d978df87cdda8b7583a3ab0fae1c241402a8bf83b6566a8e29174dc3a5bb 2728 libftdi1_1.5-10.dsc 7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049 116297 libftdi1_1.5.orig.tar.bz2 6504d3511c6d1f62f667370aa32619163264a58df0db663955b9ac3a16ffe0a5 232 libftdi1_1.5.orig.tar.bz2.asc 7ff9739a4f6a7eafa18e4fa77a32975abc0b7c3190344f171c543e2d59a05d60 14860 libftdi1_1.5-10.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libf/libftdi1"
   ],
   "Files": [
-    "d1601a72a4f761711df407a52d2b7501 2555 libftdi1_1.5-8.dsc f515d7d69170a9afc8b273e8f1466a80 116297 libftdi1_1.5.orig.tar.bz2 0c3d27081028858da0af550199449d25 232 libftdi1_1.5.orig.tar.bz2.asc cc4aeb8077a1b7ca5f462b54eaa026e2 12608 libftdi1_1.5-8.debian.tar.xz"
+    "403b4a1e85015bf34e70f8cb74bc9462 2728 libftdi1_1.5-10.dsc f515d7d69170a9afc8b273e8f1466a80 116297 libftdi1_1.5.orig.tar.bz2 0c3d27081028858da0af550199449d25 232 libftdi1_1.5.orig.tar.bz2.asc 09e6365d733114a153ee85fb442df949 14860 libftdi1_1.5-10.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +45,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -47,7 +53,13 @@
   "Testsuite-Triggers": [
     "build-essential, cmake, libboost-test-dev, pkg-config"
   ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/aurel32/libftdi1"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/aurel32/libftdi1.git"
+  ],
   "Version": [
-    "1.5-8"
+    "1.5-10"
   ]
 }
