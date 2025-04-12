@@ -6,16 +6,19 @@
     "librust-litemap-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9a33fa5a470613388be197a62b2673b9c5799170b712c75d1efb5fe8920eb529 2072 rust-litemap_0.7.4-1.dsc 4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104 28257 rust-litemap_0.7.4.orig.tar.gz 38a99b4e1c7f1b86ce4986a80aef77d3b9e6b2be2f58225d69d0370c65d012d7 3128 rust-litemap_0.7.4-1.debian.tar.xz"
+    "fe60b67fbe608187ad68d84e5e64586faba86c1effffe6ca2a2eca0f68627818 2394 rust-litemap_0.7.4-2.dsc 4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104 28257 rust-litemap_0.7.4.orig.tar.gz b2614c0cfa68eaeea430eedf81b24b3c879fac08e8d603b43cc05e45ade3abf7 3896 rust-litemap_0.7.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-litemap"
   ],
   "Files": [
-    "b522e8d61afe28aa72fa8ac2cd95ab62 2072 rust-litemap_0.7.4-1.dsc 108f8097d1c9653c4f8adc2439aa3a70 28257 rust-litemap_0.7.4.orig.tar.gz b7e74dfb5e9c8de5454fc8e76d0453bb 3128 rust-litemap_0.7.4-1.debian.tar.xz"
+    "23e4f1336ea0bc3fab9685c843c31f82 2394 rust-litemap_0.7.4-2.dsc 108f8097d1c9653c4f8adc2439aa3a70 28257 rust-litemap_0.7.4.orig.tar.gz 7c011eb4104117a3a3deff4bb0d684f4 3896 rust-litemap_0.7.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-postcard-1+use-std-dev, librust-rkyv-0.7+default-dev, librust-rkyv-0.7+validation-dev, librust-serde-1-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-postcard-1+use-std-dev, librust-serde-1-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/litemap]"
   ],
   "Version": [
-    "0.7.4-1"
+    "0.7.4-2"
   ]
 }
