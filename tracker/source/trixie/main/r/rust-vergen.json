@@ -6,16 +6,19 @@
     "librust-vergen-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.72-~~) \u003c!nocheck\u003e, librust-rustversion-1+default-dev (\u003e= 1.0.14-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.72-~~) \u003c!nocheck\u003e, librust-rustversion-1+default-dev (\u003e= 1.0.14-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "025ee7ee4c4e7946f47ea53d7ef66b59a809af15f77e9408633712fb5773f297 2462 rust-vergen_8.3.2-4.dsc 2990d9ea5967266ea0ccf413a4aa5c42a93dbcfda9cb49a97de6931726b12566 44740 rust-vergen_8.3.2.orig.tar.gz f95b788dd18868bcba70c1ba0139189a0efc5c68a921c4c1aff765af29b77012 6916 rust-vergen_8.3.2-4.debian.tar.xz"
+    "03722cb04bfc36fecca835c9ddb6c9bd0f35de7bcc5aa5fd7d377a7ad7190b94 2429 rust-vergen_8.3.2-6.dsc 2990d9ea5967266ea0ccf413a4aa5c42a93dbcfda9cb49a97de6931726b12566 44740 rust-vergen_8.3.2.orig.tar.gz 874a4c66aee897d946ea48763a70055752c188429fde3e88ab2851f65d7da411 6828 rust-vergen_8.3.2-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vergen"
   ],
   "Files": [
-    "60ee29309db1bea7925bfa5260a4a16d 2462 rust-vergen_8.3.2-4.dsc ec23e79d0d11b799b832d2f024967661 44740 rust-vergen_8.3.2.orig.tar.gz 26f7247b3974ca6c54069031f7f9865b 6916 rust-vergen_8.3.2-4.debian.tar.xz"
+    "b457410c2d71724c8467e41d1de1baf7 2429 rust-vergen_8.3.2-6.dsc ec23e79d0d11b799b832d2f024967661 44740 rust-vergen_8.3.2.orig.tar.gz 54c281ba936878072bffbd1587683675 6828 rust-vergen_8.3.2-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev, librust-regex-1+default-dev, librust-serial-test-2+default-dev, librust-serial-test-3+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, librust-regex-1+default-dev, librust-serial-test+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vergen]"
   ],
   "Version": [
-    "8.3.2-4"
+    "8.3.2-6"
   ]
 }
