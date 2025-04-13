@@ -6,16 +6,19 @@
     "librust-tint-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "240688c3552a3472bd6ad10d478665f4a56a31d0e696eaf2a1698be8891ef25b 2169 rust-tint_1.0.1-2.dsc 7af24570664a3074673dbbf69a65bdae0ae0b72f2949b1adfbacb736ee4d6896 20268 rust-tint_1.0.1.orig.tar.gz 6a5ffa453ca561ac92bbc76da292a9920b83418ad66c50752b4315f8fc6ddaf6 3416 rust-tint_1.0.1-2.debian.tar.xz"
+    "c21c550bfabf8d1e9ba1e7c681fc7f46df2d608d2b5dca34a5c9552dd34e8bc0 2247 rust-tint_1.0.1-3.dsc 7af24570664a3074673dbbf69a65bdae0ae0b72f2949b1adfbacb736ee4d6896 20268 rust-tint_1.0.1.orig.tar.gz 302f3baf353b2a7e26be9b46327e634e39b6ea9133d89ea827b3bef6e6ae9ea5 2820 rust-tint_1.0.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tint"
   ],
   "Files": [
-    "2dc693bbf14b0aa5995511c496e3f5e7 2169 rust-tint_1.0.1-2.dsc f90f98263a8bb0d55e5dbb124424b405 20268 rust-tint_1.0.1.orig.tar.gz 7693a72acaa07dff0e5e998ff228e7e5 3416 rust-tint_1.0.1-2.debian.tar.xz"
+    "79f41352c036d09ee7f5877532b4b3a8 2247 rust-tint_1.0.1-3.dsc f90f98263a8bb0d55e5dbb124424b405 20268 rust-tint_1.0.1.orig.tar.gz 39cf60cef2e4035a7c7d780a5abaf80c 2820 rust-tint_1.0.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tint]"
   ],
   "Version": [
-    "1.0.1-2"
+    "1.0.1-3"
   ]
 }
