@@ -6,19 +6,25 @@
     "librust-openssh-sftp-error-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-awaitable-error-0.1+default-dev \u003c!nocheck\u003e, librust-openssh-sftp-protocol-error-0.1+default-dev \u003c!nocheck\u003e, librust-ssh-format-error-0.1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.29-~~) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-awaitable-error-0.1+default-dev \u003c!nocheck\u003e, librust-openssh-sftp-protocol-error-0.1+default-dev \u003c!nocheck\u003e, librust-ssh-format-error-0.1+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4d20791d9fd303c6b38c2acbadcd0765a2c6c3b39ce9d13d07126d2e1907d85f 1956 rust-openssh-sftp-error_0.5.0-1.dsc 87ee6d9ea97e1fd08435222dd1eab26aa6a86674f0ff1a9583b48c98d1ef4801 3523 rust-openssh-sftp-error_0.5.0.orig.tar.gz e406d278cfe92b1f794918e698a37890f0ea6b75940084e9eb2624164964e288 2636 rust-openssh-sftp-error_0.5.0-1.debian.tar.xz"
+    "5cd99f17d57d8eb52f4cda0aecb19c58285aff65a5464cd2089a90e4ceebaf35 2670 rust-openssh-sftp-error_0.5.1-1.dsc 12a702f18f0595b4578b21fd120ae7aa45f4298a8b28ddcb2397ace6f5a8251a 3568 rust-openssh-sftp-error_0.5.1.orig.tar.gz 9948cb9c5c3c23a9665437cdf0cbce60e6416d4b11946710cdee30a3199c1c43 2712 rust-openssh-sftp-error_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-openssh-sftp-error"
   ],
   "Files": [
-    "d4432beb0e5d07ad88d99e3b953540f7 1956 rust-openssh-sftp-error_0.5.0-1.dsc e4d50054dd401b5235f16d5793e5292e 3523 rust-openssh-sftp-error_0.5.0.orig.tar.gz 714c47929bbe1631da6ed0200fc1242a 2636 rust-openssh-sftp-error_0.5.0-1.debian.tar.xz"
+    "d6bb63787bc8586d7026635421153de5 2670 rust-openssh-sftp-error_0.5.1-1.dsc d0090a829ef2c7b8a6a933b733c39b4d 3568 rust-openssh-sftp-error_0.5.1.orig.tar.gz 926239679a091c7ba5eed228ca306d70 2712 rust-openssh-sftp-error_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/openssh-rust/openssh-sftp-client"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/openssh-sftp-error]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.1-1"
   ]
 }

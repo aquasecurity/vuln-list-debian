@@ -6,16 +6,19 @@
     "python-billiard-doc, python3-billiard"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-psutil, python3-pytest, python3-setuptools, python3-sphinx"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-psutil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "6e51ab8c14819678c5e52931e76949982f8902e722ee68e0a777b8b8ec741ef9 1892 billiard_4.2.1-1.dsc 9b29768bc304433f4a4776219bfc854b868dcb2456cfdd06e6d60f0c3fe88afe 152894 billiard_4.2.1.orig.tar.gz 2be040c5ca31ac502f7568273dc851b121050d75fb00938aa85fa31f6c1fddec 7456 billiard_4.2.1-1.debian.tar.xz"
+    "d44b1c56f3af39efd012acf9aad88a0db17c2b572a32bf49d580f754043a2e2f 2410 billiard_4.2.1-2.dsc 9b29768bc304433f4a4776219bfc854b868dcb2456cfdd06e6d60f0c3fe88afe 152894 billiard_4.2.1.orig.tar.gz 0f06be2b81fa2c7ebb3dde0ac4971a50c803cb3a5e2964464654834465559a73 7968 billiard_4.2.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "48427f78079c34cf741644cb683a24f0e9003cc7 debian archive/debian/4.2.1-2 https://git.dgit.debian.org/billiard"
   ],
   "Directory": [
     "pool/main/b/billiard"
   ],
   "Files": [
-    "fe937eed593432b725236464ef64a7e0 1892 billiard_4.2.1-1.dsc 7b1a3a573f38ca663d6ed103daa4b087 152894 billiard_4.2.1.orig.tar.gz 6ee051d7ba6f9d875edd242c85f26102 7456 billiard_4.2.1-1.debian.tar.xz"
+    "9c8c225182a35850b5303e7f63bf59c7 2410 billiard_4.2.1-2.dsc 7b1a3a573f38ca663d6ed103daa4b087 152894 billiard_4.2.1.orig.tar.gz 92574a3bd65762375c5c358d827adbae 7968 billiard_4.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "python3-all, python3-psutil, python3-pytest"
   ],
   "Uploaders": [
     "Michael Fladischer \u003cfladi@debian.org\u003e, Brian May \u003cbam@debian.org\u003e, Sergio Durigan Junior \u003csergiodj@debian.org\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/billiard.git"
   ],
   "Version": [
-    "4.2.1-1"
+    "4.2.1-2"
   ]
 }
