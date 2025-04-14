@@ -6,16 +6,16 @@
     "modemmanager, modemmanager-dev, modemmanager-doc, libmm-glib0, libmm-glib-dev, libmm-glib-doc, gir1.2-modemmanager-1.0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), debhelper (\u003e= 13.11.6), dh-sequence-gir, bash-completion, gobject-introspection-bin, libdbus-1-dev, libgirepository1.0-dev, libglib2.0-dev, libgudev-1.0-dev, libmbim-glib-dev (\u003e= 1.31.95~), libpolkit-gobject-1-dev (\u003e= 0.97), libqmi-glib-dev (\u003e= 1.35.95~), libsystemd-dev (\u003e= 209), meson, polkitd, python3-dbus, python3-gi, systemd-dev, valac (\u003e= 0.22), gtk-doc-tools \u003c!nodoc\u003e, libglib2.0-doc \u003c!nodoc\u003e, dbus \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), debhelper (\u003e= 13.11.6), dh-sequence-gir, bash-completion, gettext, libdbus-1-dev, libgirepository1.0-dev, libglib2.0-dev, libgudev-1.0-dev, libmbim-glib-dev (\u003e= 1.32~), libpolkit-gobject-1-dev (\u003e= 0.97), libqmi-glib-dev (\u003e= 1.36~), libsystemd-dev (\u003e= 209), meson, polkitd, python3-dbus, python3-gi, systemd-dev, valac (\u003e= 0.22), xsltproc, gtk-doc-tools \u003c!nodoc\u003e, libglib2.0-doc \u003c!nodoc\u003e, dbus \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "28acd54626dffbc272ef2a0d366d78ddcee3fab6593f1074b31c6b80a7763df2 3063 modemmanager_1.23.95-2.dsc 178d03902057a1ac8bc5f2fe461ba92720fe90a3adf610510ebdc3701046222c 2105461 modemmanager_1.23.95.orig.tar.gz 414fefa5a826fd25a89f8f826659d26cb569f5c8a2453c6145f776c98e8c1d80 34468 modemmanager_1.23.95-2.debian.tar.xz"
+    "f2a0a21fdce6619bf874ab182385225c65b82d217d6b6ed20933ded5c375fa1c 3065 modemmanager_1.24.0-1.dsc 63ded4c0f3936bb0db5ae35ef1dfd57c5d5b4dd8a5cdaa7fb2182255218c9168 1361836 modemmanager_1.24.0.orig.tar.xz 7585e8cf6fb920e516372ed54d8f5c3d2faf1ffec920ec90fb550b9aaa11de12 36680 modemmanager_1.24.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/modemmanager"
   ],
   "Files": [
-    "bbb698b7fad87aa0f14b6fa44c9fc007 3063 modemmanager_1.23.95-2.dsc 4410e3a689c5d02dea6bc5d077a4c131 2105461 modemmanager_1.23.95.orig.tar.gz 872f443a58b2c565e4fd117ed440f636 34468 modemmanager_1.23.95-2.debian.tar.xz"
+    "1d9aadaa27faeb28fbcf2be99116a0f8 3065 modemmanager_1.24.0-1.dsc 288cdf074430ef95268c9fe04873f047 1361836 modemmanager_1.24.0.orig.tar.xz 97dce306035804a7bfb5e263febb1e98 36680 modemmanager_1.24.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "pkgconf"
+    "@builddeps@, dpkg-dev, pkgconf"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e, Guido Günther \u003cagx@sigxcpu.org\u003e, Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e, Martin \u003cdebacle@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/DebianOnMobile-team/modemmanager.git"
   ],
   "Version": [
-    "1.23.95-2"
+    "1.24.0-1"
   ]
 }
