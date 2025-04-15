@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "mstflint"
+    "mstflint, mstflint-dkms"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libboost-filesystem-dev, libboost-regex-dev, libboost-system-dev, libexpat1-dev, libibmad-dev, libjsoncpp-dev, liblzma-dev, libmuparser-dev, libsqlite3-dev, libssl-dev, pkgconf, zlib1g-dev"
+    "debhelper-compat (= 13), dh-sequence-dkms, libboost-filesystem-dev, libboost-regex-dev, libboost-system-dev, libexpat1-dev, libibmad-dev, libjsoncpp-dev, liblzma-dev, libmuparser-dev, libsqlite3-dev, libssl-dev, pkgconf, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "99b4d02d6c76d9f7ce9d58c94423bce8190cf1890ec020d722d79eea40ce1fc5 1972 mstflint_4.31.0+1-2.dsc 10f2611f9f60fbb9f74dfd33d08438d7f85418351b2d735947d4cd2165a50d98 7689210 mstflint_4.31.0+1.orig.tar.gz f8b11301d42f29ff7b40dacd977efb5c96b56198ce7ddc79a9bdb712a8ca958d 11392 mstflint_4.31.0+1-2.debian.tar.xz"
+    "c7d035b74f0e3aca0e03c01a56ea09ceee6b75399713976f443ff032ba9c6c82 2146 mstflint_4.31.0+1-4.dsc 10f2611f9f60fbb9f74dfd33d08438d7f85418351b2d735947d4cd2165a50d98 7689210 mstflint_4.31.0+1.orig.tar.gz 6176ce8d8a66aec8b24212fbad25ccf85b2ff98a8d01f64af41ac74aa5e87a4a 14076 mstflint_4.31.0+1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mstflint"
   ],
   "Files": [
-    "1bcc53fc6f9887bb75750e8f4432a447 1972 mstflint_4.31.0+1-2.dsc 938ad6208548decda8f6e4dd70fc1d31 7689210 mstflint_4.31.0+1.orig.tar.gz 72b20038de99c6fafebf23e157d92351 11392 mstflint_4.31.0+1-2.debian.tar.xz"
+    "532be428a5ae9a854db3cc9a84f3a363 2146 mstflint_4.31.0+1-4.dsc 938ad6208548decda8f6e4dd70fc1d31 7689210 mstflint_4.31.0+1.orig.tar.gz 7374b5e3f7c1553f775eb9a58d68231c 14076 mstflint_4.31.0+1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mstflint"
   ],
   "Package-List": [
-    "mstflint deb net optional arch=linux-any"
+    "mstflint deb net optional arch=linux-any mstflint-dkms deb kernel optional arch=all"
   ],
   "Priority": [
     "source"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "linux-headers-generic, linux-headers-rpi, openssl"
   ],
   "Uploaders": [
     "Mehdi Dogguy \u003cmehdi@debian.org\u003e, Tzafrir Cohen \u003ctzafrir@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/hpc-team/mstflint.git"
   ],
   "Version": [
-    "4.31.0+1-2"
+    "4.31.0+1-4"
   ]
 }
