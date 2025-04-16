@@ -6,19 +6,25 @@
     "librust-mime-guess-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-mime-0.3+default-dev \u003c!nocheck\u003e, librust-unicase-2+default-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-mime-0.3+default-dev \u003c!nocheck\u003e, librust-unicase-2+default-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1d4977ecd850c0fe3b015dc1b4d44dbf723e7ca54c6b6e149dc7f0aebe45a1cb 2282 rust-mime-guess_2.0.4-2.dsc 4192263c238a5f0d0c6bfd21f336a313a4ce1c450542449ca191bb657b4642ef 26399 rust-mime-guess_2.0.4.orig.tar.gz b076d01b57b2799862a7724f23f5cc0ea2201d06ad8ef6348f2ef4cd606d8de8 3152 rust-mime-guess_2.0.4-2.debian.tar.xz"
+    "cf5e7ade4d0fe0209f7d071c9d647e80e15fc7490a9a2670e37be737fd80fe73 2365 rust-mime-guess_2.0.5-1.dsc f7c44f8e672c00fe5308fa235f821cb4198414e1c77935c1ab6948d3fd78550e 27166 rust-mime-guess_2.0.5.orig.tar.gz 8b33e02c9413838111aa6b628728f41d7c3c8a53fffc4543e9d157e4f54ad060 3320 rust-mime-guess_2.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-mime-guess"
   ],
   "Files": [
-    "020a062075e4b7d5fb76f3a10d96c2d9 2282 rust-mime-guess_2.0.4-2.dsc 6b4eda909ad28591c70bd89045795e84 26399 rust-mime-guess_2.0.4.orig.tar.gz 78ad56c38e5f32de6fbf8a9fffdb9d0f 3152 rust-mime-guess_2.0.4-2.debian.tar.xz"
+    "866b3442cf0cc20936cb89ed18973369 2365 rust-mime-guess_2.0.5-1.dsc 55ce05da347f8d2edb9c9f5e14f2cd8a 27166 rust-mime-guess_2.0.5.orig.tar.gz b3b11e9af096ad989505f1cc9922ccfc 3320 rust-mime-guess_2.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/abonander/mime_guess"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/mime-guess]"
   ],
   "Version": [
-    "2.0.4-2"
+    "2.0.5-1"
   ]
 }

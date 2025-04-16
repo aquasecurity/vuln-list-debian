@@ -6,16 +6,19 @@
     "librust-test-log-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-env-logger-0.11-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+default-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+log-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-env-logger-0.11-dev \u003c!nocheck\u003e, librust-test-log-macros-0.2+default-dev (\u003e= 0.2.15-~~) \u003c!nocheck\u003e, librust-test-log-macros-0.2+log-dev (\u003e= 0.2.15-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a9c2afa32643c450170841eb451e46a17f03c01f7c9e4a964731bc0e042e093e 1918 rust-test-log_0.2.15-2.dsc 7b319995299c65d522680decf80f2c108d85b861d81dfe340a10d16cee29d9e6 9739 rust-test-log_0.2.15.orig.tar.gz f1102ec24dad8540b1224fa7ff44f7a573abafd52b9e9b2017a3e0acdd90371d 3516 rust-test-log_0.2.15-2.debian.tar.xz"
+    "bca2bb48ee9dd5ef296a734c9e66ecb8e88a284478972140e6d6cb98340ec9cd 2611 rust-test-log_0.2.15-3.dsc 7b319995299c65d522680decf80f2c108d85b861d81dfe340a10d16cee29d9e6 9739 rust-test-log_0.2.15.orig.tar.gz db10ff0441bdd73d6432b41c51e1289bbae2d49287709c94533b90e920ae7e6c 3416 rust-test-log_0.2.15-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-test-log"
   ],
   "Files": [
-    "a889b72f74eb0b80c85127d515767451 1918 rust-test-log_0.2.15-2.dsc fe9c1b02fcdfb1b09ab7f2bf9195460f 9739 rust-test-log_0.2.15.orig.tar.gz bba0e030f8d469286908893a4fe7676b 3516 rust-test-log_0.2.15-2.debian.tar.xz"
+    "17c97536d5efc5ba48ea39e6f00b1fbf 2611 rust-test-log_0.2.15-3.dsc fe9c1b02fcdfb1b09ab7f2bf9195460f 9739 rust-test-log_0.2.15.orig.tar.gz 69e702055107c8d05542625de878989a 3416 rust-test-log_0.2.15-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/test-log]"
   ],
   "Version": [
-    "0.2.15-2"
+    "0.2.15-3"
   ]
 }
