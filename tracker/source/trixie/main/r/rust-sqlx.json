@@ -6,16 +6,19 @@
     "librust-sqlx-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-sqlx-core-0.8.3+any-dev \u003c!nocheck\u003e, librust-sqlx-core-0.8.3+default-dev \u003c!nocheck\u003e, librust-sqlx-core-0.8.3+migrate-dev \u003c!nocheck\u003e, librust-sqlx-core-0.8.3+offline-dev \u003c!nocheck\u003e, librust-sqlx-macros-0.8.3+derive-dev \u003c!nocheck\u003e, librust-sqlx-macros-0.8.3+json-dev \u003c!nocheck\u003e, librust-sqlx-macros-0.8.3+macros-dev \u003c!nocheck\u003e, librust-sqlx-macros-0.8.3+migrate-dev \u003c!nocheck\u003e, librust-sqlx-mysql-0.8.3+any-dev \u003c!nocheck\u003e, librust-sqlx-mysql-0.8.3+json-dev \u003c!nocheck\u003e, librust-sqlx-mysql-0.8.3+migrate-dev \u003c!nocheck\u003e, librust-sqlx-postgres-0.8.3+any-dev \u003c!nocheck\u003e, librust-sqlx-postgres-0.8.3+json-dev \u003c!nocheck\u003e, librust-sqlx-postgres-0.8.3+migrate-dev \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8.3+any-dev \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8.3+json-dev \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8.3+migrate-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-sqlx-core-0.8+any-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+any-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+default-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+default-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+migrate-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+migrate-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+offline-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-core-0.8+offline-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+derive-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+derive-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+json-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+json-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+macros-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+macros-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+migrate-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-macros-0.8+migrate-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-mysql-0.8+any-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-mysql-0.8+any-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-mysql-0.8+json-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-mysql-0.8+json-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-mysql-0.8+migrate-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-mysql-0.8+migrate-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-postgres-0.8+any-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-postgres-0.8+any-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-postgres-0.8+json-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-postgres-0.8+json-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-postgres-0.8+migrate-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-postgres-0.8+migrate-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8+any-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8+any-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8+json-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8+json-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8+migrate-dev (\u003c\u003c 0.8.4-~~) \u003c!nocheck\u003e, librust-sqlx-sqlite-0.8+migrate-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be093399ad9cf07838a92288f1dd1074784a8cea5c3acaaef77c86364f21fa4c 3720 rust-sqlx_0.8.3-1.dsc 4410e73b3c0d8442c5f99b425d7a435b5ee0ae4167b3196771dd3f7a01be745f 179122 rust-sqlx_0.8.3.orig.tar.gz 2319316aec57bf90b48d5498eeb3e94c6f648920eed0e6a7342979d6e742ebab 10584 rust-sqlx_0.8.3-1.debian.tar.xz"
+    "f1a26211cf1d454b4c3131ed57727fb2fd1df77e9bbeecfeba25f06a4df77481 4962 rust-sqlx_0.8.3-2.dsc 4410e73b3c0d8442c5f99b425d7a435b5ee0ae4167b3196771dd3f7a01be745f 179122 rust-sqlx_0.8.3.orig.tar.gz dd440f36ddba287e9ec2694cfb609148d2d274ccfabe5aeaf01d9957485880b5 10868 rust-sqlx_0.8.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sqlx"
   ],
   "Files": [
-    "98400afbd637f6076d3e12a334de43ff 3720 rust-sqlx_0.8.3-1.dsc 35bc7eb7e459f5edc795e000026e4987 179122 rust-sqlx_0.8.3.orig.tar.gz e5f8382c3f1a6d705b2e5594ece58c04 10584 rust-sqlx_0.8.3-1.debian.tar.xz"
+    "ce434b35f8d98a94dda38b6237ebf9b1 4962 rust-sqlx_0.8.3-2.dsc 35bc7eb7e459f5edc795e000026e4987 179122 rust-sqlx_0.8.3.orig.tar.gz 2df88c60521a868355756fc44b5b4784 10868 rust-sqlx_0.8.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sqlx]"
   ],
   "Version": [
-    "0.8.3-1"
+    "0.8.3-2"
   ]
 }
