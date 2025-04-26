@@ -6,16 +6,19 @@
     "librust-cc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-shlex-1+default-dev (\u003e= 1.3.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-shlex-1+default-dev (\u003e= 1.3.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6e096870e61e841c61039e50827c3f26561b7d4fb2feeadcf786baca9d25bd8a 2375 rust-cc_1.1.14-1.dsc 50d2eb3cd3d1bf4529e31c215ee6f93ec5a3d536d9f578f93d9d33ee19562932 83005 rust-cc_1.1.14.orig.tar.gz ed2c88bb361c950469a70b7e9eb391cdd71c5d8537872b66915aa6375ab81edc 3696 rust-cc_1.1.14-1.debian.tar.xz"
+    "f223feb39c5d81ef3a5fd40469a9059245e21885bbdb633b9643cf170641e6b4 2310 rust-cc_1.2.19-1.dsc 8e3a13707ac958681c13b39b458c073d0d9bc8a22cb1b2f4c8e55eb72c13f362 105910 rust-cc_1.2.19.orig.tar.gz 00b40b4306af3bfe384b709a048349a334bb4f3c047577c2eb21a7569a04f415 3724 rust-cc_1.2.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cc"
   ],
   "Files": [
-    "8a2f00819274d9d28d4b74966fd278b1 2375 rust-cc_1.1.14-1.dsc c5071aeb2b6aa90fa0ebe9cfde125e54 83005 rust-cc_1.1.14.orig.tar.gz f5b280dee65f6b27e69516c5e7784c3b 3696 rust-cc_1.1.14-1.debian.tar.xz"
+    "3c8b5671f4f3b76ceaa031d7b3743f1d 2310 rust-cc_1.2.19-1.dsc 4cb538891f3cd9f945ae3679f11374f6 105910 rust-cc_1.2.19.orig.tar.gz 334fa08ed29d1a6ba8b248676bc3ee63 3724 rust-cc_1.2.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, g++, librust-tempfile-3+default-dev"
+    "dh-cargo, g++, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cc]"
   ],
   "Version": [
-    "1.1.14-1"
+    "1.2.19-1"
   ]
 }
