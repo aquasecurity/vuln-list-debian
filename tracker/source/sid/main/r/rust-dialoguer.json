@@ -6,16 +6,19 @@
     "librust-dialoguer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-0.15+default-dev \u003c!nocheck\u003e, librust-shell-words-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.40-~~) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-0.15+default-dev \u003c!nocheck\u003e, librust-shell-words-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.40-~~) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a1594b4dbf96fcf46395d0aeb971db256ac5e25d4b0f7604218d8b291f6ab788 2482 rust-dialoguer_0.11.0-2.dsc 658bce805d770f407bc62102fca7c2c64ceef2fbcb2b8bd19d2765ce093980de 31286 rust-dialoguer_0.11.0.orig.tar.gz 0de5721227bc3dc68f1ea7584c233bb6d31bd559cf51fc4c6f198d16b26fce74 3480 rust-dialoguer_0.11.0-2.debian.tar.xz"
+    "485ff95f18c4ba89c1bea7e0218cfe281b97a012ad6f5b940e1ca872c3a0d0ef 2616 rust-dialoguer_0.11.0-3.dsc 658bce805d770f407bc62102fca7c2c64ceef2fbcb2b8bd19d2765ce093980de 31286 rust-dialoguer_0.11.0.orig.tar.gz 102cc31e4c646d03825643ccee66e08f6e287e5ab9d6b7fa8ddd251d243edaa4 3440 rust-dialoguer_0.11.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dialoguer"
   ],
   "Files": [
-    "dfcda48841b1a346f8cb2ed69920a59b 2482 rust-dialoguer_0.11.0-2.dsc 7b3fa36d82d77fcc2f81f941c0b31fa5 31286 rust-dialoguer_0.11.0.orig.tar.gz 92d55309cfb0eada6b820bcd72fe4687 3480 rust-dialoguer_0.11.0-2.debian.tar.xz"
+    "412b388a8ef841f6e6e032afdb169925 2616 rust-dialoguer_0.11.0-3.dsc 7b3fa36d82d77fcc2f81f941c0b31fa5 31286 rust-dialoguer_0.11.0.orig.tar.gz d400f933242b94c7186f8fa59ca6b6d7 3440 rust-dialoguer_0.11.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Philip Rinn \u003crinni@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dialoguer]"
   ],
   "Version": [
-    "0.11.0-2"
+    "0.11.0-3"
   ]
 }
