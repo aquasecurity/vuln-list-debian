@@ -6,16 +6,19 @@
     "python3-leaone-ble"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, furo \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-myst-parser \u003c!nodoc\u003e, python3-poetry-core, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autobuild \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, furo \u003c!nodoc\u003e, python3-bleak \u003c!nocheck\u003e, python3-bluetooth-data-tools \u003c!nocheck\u003e, python3-bluetooth-sensor-state-data (\u003e= 1.8.0) \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-poetry-core, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-autobuild \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "45465b160c6c6107f3a43ce1af27010790cbc6f1a2dadf47da3a422372dcb9e0 2322 leaone-ble_0.1.0-2.dsc db9e66c85d235a5c2a138b3b615bc016a7d082401530100c89e08f686710b8a3 35103 leaone-ble_0.1.0.orig.tar.gz 282c63434f98a731b226c5a8adf21eb1d7b328585d05a36bcf4650f2b8cc0367 4172 leaone-ble_0.1.0-2.debian.tar.xz"
+    "2f6d313aa2db4d1f6d51301defea6916e98ab0299b9b06965cd0ef560d4ff427 2434 leaone-ble_0.3.0-1.dsc 9fe97864ba0365e4211565aa28ca5def10f6f9b4e33a39ee20ed59b5917e5b75 69062 leaone-ble_0.3.0.orig.tar.gz b69df746b5d2e3eab1593cfaedb58961ecc087e0965493f00da825f78984d6b6 4140 leaone-ble_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/leaone-ble"
   ],
   "Files": [
-    "0967cfb6d262eb7124016272a18f289a 2322 leaone-ble_0.1.0-2.dsc 3f04e79be8bd780410f5d96a06bdcf21 35103 leaone-ble_0.1.0.orig.tar.gz 2aab7204b9160731055cbd3ea5764fa4 4172 leaone-ble_0.1.0-2.debian.tar.xz"
+    "12037921b820574ecac6673a3bb83392 2434 leaone-ble_0.3.0-1.dsc e473dbd8b8e6e28902cce5fafe9d157e 69062 leaone-ble_0.3.0.orig.tar.gz 84717068a7baaacbfa63ac676e08b811 4140 leaone-ble_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/leaone-ble"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/leaone-ble.git"
   ],
   "Version": [
-    "0.1.0-2"
+    "0.3.0-1"
   ]
 }
