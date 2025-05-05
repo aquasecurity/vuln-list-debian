@@ -6,16 +6,19 @@
     "appstream, appstream-compose, libappstream5, libappstream-dev, gir1.2-appstream-1.0, libappstreamqt3, libappstreamqt-dev, libappstreamqt5-3, libappstreamqt5-dev, libappstream-compose0, libappstream-compose-dev, gir1.2-appstreamcompose-1.0, appstream-doc, apt-config-icons, apt-config-icons-hidpi, apt-config-icons-large, apt-config-icons-large-hidpi"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), docbook-xsl, gettext, gi-docgen, gobject-introspection, gobject-introspection-bin, gperf, itstool, libcairo2-dev, libcurl4-gnutls-dev | libcurl-dev (\u003e= 7.62), libfontconfig-dev, libgdk-pixbuf-2.0-dev, libgirepository1.0-dev (\u003e= 1.62), libglib2.0-dev (\u003e= 2.62), libjs-highlight.js, libpango1.0-dev, librsvg2-dev (\u003e= 2.48) [amd64 arm64 armel armhf i386 loong64 mips64el mipsel ppc64el s390x powerpc ppc64 riscv64 sparc64 x32], libstemmer-dev, libsystemd-dev (\u003e= 242) [linux-any], libxml2-dev, libxmlb-dev (\u003e= 0.3.13), libyaml-dev, meson (\u003e= 0.62), qt6-base-dev, qtbase5-dev, valac, xsltproc"
+    "debhelper-compat (= 13), dh-sequence-gir, docbook-xsl, gettext, gir1.2-gdkpixbuf-2.0-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gobject-introspection, gperf, itstool, libcairo2-dev, libcurl4-gnutls-dev | libcurl4-openssl-dev | libcurl-dev (\u003e= 7.62), libfontconfig-dev, libgdk-pixbuf-2.0-dev, libglib2.0-dev (\u003e= 2.62), libjs-highlight.js, libpango1.0-dev, librsvg2-dev (\u003e= 2.48) [amd64 arm64 armel armhf i386 loong64 mips64el mipsel ppc64el s390x powerpc ppc64 riscv64 sparc64 x32], libstemmer-dev, libsystemd-dev (\u003e= 242) [linux-any], libxml2-dev, libxmlb-dev (\u003e= 0.3.13), libyaml-dev, meson (\u003e= 0.62), qt6-base-dev, qtbase5-dev, valac, xsltproc"
+  ],
+  "Build-Depends-Indep": [
+    "gi-docgen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "e6ac3cbd74b3af7d687fd93f4bc865216ef1ad4e00cbcc102ab071e1710ca937 4335 appstream_1.0.4-1.dsc 2d218348067f98c4f34a3ffe2d8219ad9f504b1b2481f1872dec66c77bf37509 2719900 appstream_1.0.4.orig.tar.xz d19a647d601876392417d5be11bd4b57f5a6319b7e7733abbad3029cb610598d 833 appstream_1.0.4.orig.tar.xz.asc 09132e4e386b6a0870fb59218cca8396a9923c203b7c571a3061c41168e35c2a 18840 appstream_1.0.4-1.debian.tar.xz"
+    "93eab530a5ba96770cae19b93665173b21ce95afd16e5fe30312f269da77d6ba 4428 appstream_1.0.5-1.dsc ce0ed29e89abd5f0cf790ea87d792f1967c3413060beb30e63a979578d975121 2727088 appstream_1.0.5.orig.tar.xz 66131d10e2ec48b8c4e9d5a31938d203f93a973d01d45b0eac7726a83236ca20 833 appstream_1.0.5.orig.tar.xz.asc d5bd321ae8203d59d803b2bf002ab2236904757bd9bae26e4a9baf94c5355d18 19140 appstream_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/appstream"
   ],
   "Files": [
-    "55c3ffca45919e739039b68b415f19a4 4335 appstream_1.0.4-1.dsc a9f9b45b9a3b2125148821b42b218d77 2719900 appstream_1.0.4.orig.tar.xz 831fa55397f31aaa57f93ae4adcbdf0c 833 appstream_1.0.4.orig.tar.xz.asc fb07c1d00be734d54566b698dc5a4759 18840 appstream_1.0.4-1.debian.tar.xz"
+    "2b58a617b30545e1f5bb76e8ce34b4d3 4428 appstream_1.0.5-1.dsc c28c3e6d4b0f96812b6a1e2f99006e38 2727088 appstream_1.0.5.orig.tar.xz c4c10a4ee5058386fb3b140535a8e9a1 833 appstream_1.0.5.orig.tar.xz.asc 2ea77a6470c020d97f42813e80f5e5fb 19140 appstream_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "appstream"
   ],
   "Package-List": [
-    "appstream deb admin optional arch=any appstream-compose deb admin optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 appstream-doc deb doc optional arch=all apt-config-icons deb misc optional arch=all apt-config-icons-hidpi deb misc optional arch=all apt-config-icons-large deb misc optional arch=all apt-config-icons-large-hidpi deb misc optional arch=all gir1.2-appstream-1.0 deb introspection optional arch=any gir1.2-appstreamcompose-1.0 deb introspection optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libappstream-compose-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libappstream-compose0 deb libs optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libappstream-dev deb libdevel optional arch=any libappstream5 deb libs optional arch=any libappstreamqt-dev deb libdevel optional arch=any libappstreamqt3 deb libs optional arch=any libappstreamqt5-3 deb libs optional arch=any libappstreamqt5-dev deb libdevel optional arch=any"
+    "appstream deb admin optional arch=any appstream-compose deb admin optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 appstream-doc deb doc optional arch=all profile=!nodoc apt-config-icons deb misc optional arch=all apt-config-icons-hidpi deb misc optional arch=all apt-config-icons-large deb misc optional arch=all apt-config-icons-large-hidpi deb misc optional arch=all gir1.2-appstream-1.0 deb introspection optional arch=any gir1.2-appstreamcompose-1.0 deb introspection optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libappstream-compose-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libappstream-compose0 deb libs optional arch=amd64,arm64,armel,armhf,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc64,x32 libappstream-dev deb libdevel optional arch=any libappstream5 deb libs optional arch=any libappstreamqt-dev deb libdevel optional arch=any libappstreamqt3 deb libs optional arch=any libappstreamqt5-3 deb libs optional arch=any libappstreamqt5-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/pkgutopia-team/appstream.git"
   ],
   "Version": [
-    "1.0.4-1"
+    "1.0.5-1"
   ]
 }
