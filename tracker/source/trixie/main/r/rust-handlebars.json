@@ -6,16 +6,19 @@
     "librust-handlebars-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pest-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-pest-derive-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.39-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pest-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-pest-derive-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.39-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7b592aa46bb0bc04b4b46225e5d9d34a1d43caf001c0d54b54e69f108fa73a52 2274 rust-handlebars_5.1.2-2.dsc d08485b96a0e6393e9e4d1b8d48cf74ad6c063cd905eb33f42c1ce3f0377539b 98550 rust-handlebars_5.1.2.orig.tar.gz 24ce0e1f4253c21aa7ebaf6a6e1a8d525072b7e296c2c969ad3b5215c14070aa 3852 rust-handlebars_5.1.2-2.debian.tar.xz"
+    "c8ce7aa1bef711af6b81f207cb66a1df639c50ad6756cb5f609037c55ac4def2 2225 rust-handlebars_5.1.2-3.dsc d08485b96a0e6393e9e4d1b8d48cf74ad6c063cd905eb33f42c1ce3f0377539b 98550 rust-handlebars_5.1.2.orig.tar.gz ca66e29f7bf0b22a7d19755a1021928d7959edab2030e64863101c8256a766a6 3948 rust-handlebars_5.1.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-handlebars"
   ],
   "Files": [
-    "9335ad3b536107570072598e63a5fc0a 2274 rust-handlebars_5.1.2-2.dsc d38793b3326a5260e8f2e6e42da65ef8 98550 rust-handlebars_5.1.2.orig.tar.gz 2f381d8e88405ccf74722ac0efce9bed 3852 rust-handlebars_5.1.2-2.debian.tar.xz"
+    "dbd8241793ec8eb952623a835d5f6c3c 2225 rust-handlebars_5.1.2-3.dsc d38793b3326a5260e8f2e6e42da65ef8 98550 rust-handlebars_5.1.2.orig.tar.gz 9970fa5f7fc802c0f3718115e0f588af 3948 rust-handlebars_5.1.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-env-logger-0.11+default-dev, librust-pprof-0.13+default-dev, librust-pprof-0.13+prost-codec-dev, librust-serde-derive-1+default-dev, librust-tempfile-3+default-dev, librust-time-0.3+default-dev, librust-time-0.3+formatting-dev, librust-time-0.3+parsing-dev, librust-time-0.3+serde-dev, librust-tiny-http-0.12+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-env-logger-0.11+default-dev, librust-serde-derive-1+default-dev, librust-tempfile-3+default-dev, librust-time-0.3+default-dev, librust-time-0.3+formatting-dev, librust-time-0.3+parsing-dev, librust-time-0.3+serde-dev, librust-tiny-http-0.12+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/handlebars]"
   ],
   "Version": [
-    "5.1.2-2"
+    "5.1.2-3"
   ]
 }
