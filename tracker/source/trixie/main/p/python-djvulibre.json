@@ -6,19 +6,19 @@
     "python3-djvu, python-djvu-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, libdjvulibre-dev (\u003e= 3.5.26), djvulibre-bin, cython3 (\u003e= 0.20), pkgconf, python3-setuptools, python3-wheel, python3-pytest \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, cython3 (\u003e= 0.20), djvulibre-bin, ghostscript \u003c!nocheck\u003e, graphviz \u003c!nodoc\u003e, libdjvulibre-dev (\u003e= 3.5.26), pkgconf, pybuild-plugin-pyproject, python3-all-dev, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-wheel"
   ],
   "Checksums-Sha256": [
-    "99a31d2357974b68bf1fc6bc7fa6b2376c884648f5fbf2a6921688732d8b214a 2544 python-djvulibre_0.9.0-7.dsc 3e9763814d7671cc3f10dfa7cce50f44a642b19753e6d86bdbf3c0fbbeaa3031 86433 python-djvulibre_0.9.0.orig.tar.gz 917193fcbf9cd426dcaefc012ac1e8daa86ca75f64043accadb206d8714210d6 18128 python-djvulibre_0.9.0-7.debian.tar.xz"
+    "8c5c0a2cf3ff5135a72168c9aec660eb9251ea84f6a2e1a3f0151385cfa58090 2519 python-djvulibre_0.9.1-2.dsc aab3a7c3a13f5c5802252b58c988981e331e384d6cc8fad95a53df4e629187f7 90606 python-djvulibre_0.9.1.orig.tar.gz 0496e75232062530a13762f6c03697dfdd3d16ba59e33f10c7b6fe4d01590733 18708 python-djvulibre_0.9.1-2.debian.tar.xz"
   ],
   "Dgit": [
-    "764719b8120b82d9a46bf5657ea8dee4097c9322 debian archive/debian/0.9.0-7 https://git.dgit.debian.org/python-djvulibre"
+    "39a69a3ad83dedd4422c5b00b3340193062aa165 debian archive/debian/0.9.1-2 https://git.dgit.debian.org/python-djvulibre"
   ],
   "Directory": [
     "pool/main/p/python-djvulibre"
   ],
   "Files": [
-    "a2417387cb5810818efc80360cc27cf5 2544 python-djvulibre_0.9.0-7.dsc 3dad5a90363dd132228d26c94af05694 86433 python-djvulibre_0.9.0.orig.tar.gz b1c32710fbd635c942a13c9edad10b41 18128 python-djvulibre_0.9.0-7.debian.tar.xz"
+    "15954e1b72088a848feb97676e1c7a60 2519 python-djvulibre_0.9.1-2.dsc c77531a26cb89e526cbb6cfd72d96bcd 90606 python-djvulibre_0.9.1.orig.tar.gz 9fec4a3f32349307ddb5e1654915e590 18708 python-djvulibre_0.9.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,7 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Alexandre Detiste \u003ctchet@debian.org\u003e,"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-djvulibre.git"
   ],
   "Version": [
-    "0.9.0-7"
+    "0.9.1-2"
   ]
 }
