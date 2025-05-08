@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-hyphenation-dev, librust-hyphenation+embed-all-dev, librust-hyphenation+nfc-dev, librust-hyphenation+nfd-dev, librust-hyphenation+nfkc-dev, librust-hyphenation+nfkd-dev, librust-hyphenation+pocket-resources-dev, librust-hyphenation+unicode-normalization-dev"
+    "librust-hyphenation-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 10), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atlatl-0.1+default-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-atlatl-0.1+serde-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-bincode-1+default-dev \u003c!nocheck\u003e, librust-hyphenation-commons-0.7+default-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atlatl-0.1+default-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-atlatl-0.1+serde-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-bincode-1+default-dev \u003c!nocheck\u003e, librust-hyphenation-commons-0.7+default-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b3f89ca67af227cf2a4e0e0002ae19677693998efd5b26be0269d9b24da23391 2487 rust-hyphenation_0.7.1-1.dsc 0493c6fb308d367d0aed7acd341adbc1c2f216c135073e4b73b652c5d0d6b54c 3713410 rust-hyphenation_0.7.1.orig.tar.gz b169fae20199d20b2451f49e31bdf8657ef50df6bf45ec91787ccfab5f1d27cf 15136 rust-hyphenation_0.7.1-1.debian.tar.xz"
+    "9cb8c2ba4fa65d3a3ae0720bd6eee98e3e97209b3806752b179c2bf03b9190cd 2014 rust-hyphenation_0.7.1-2.dsc 0493c6fb308d367d0aed7acd341adbc1c2f216c135073e4b73b652c5d0d6b54c 3713410 rust-hyphenation_0.7.1.orig.tar.gz 55ee543f77e27f8d0b4443f955d8fd432ef47645f00bee238d65082a3f028300 16796 rust-hyphenation_0.7.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hyphenation"
   ],
   "Files": [
-    "84394cc08f7422f845a988ec9bd9ef8f 2487 rust-hyphenation_0.7.1-1.dsc 5a9bbc554e168aba944d9feea37689ad 3713410 rust-hyphenation_0.7.1.orig.tar.gz 7d3c7ce28a7decd683bf6af2630ea536 15136 rust-hyphenation_0.7.1-1.debian.tar.xz"
+    "0b0cf276b7b7aca0a3280c1b469b87b8 2014 rust-hyphenation_0.7.1-2.dsc 5a9bbc554e168aba944d9feea37689ad 3713410 rust-hyphenation_0.7.1.orig.tar.gz 240351cb0ee68e873f4b34af0a3676b0 16796 rust-hyphenation_0.7.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-hyphenation"
   ],
   "Package-List": [
-    "librust-hyphenation+embed-all-dev deb rust optional arch=any librust-hyphenation+nfc-dev deb rust optional arch=any librust-hyphenation+nfd-dev deb rust optional arch=any librust-hyphenation+nfkc-dev deb rust optional arch=any librust-hyphenation+nfkd-dev deb rust optional arch=any librust-hyphenation+pocket-resources-dev deb rust optional arch=any librust-hyphenation+unicode-normalization-dev deb rust optional arch=any librust-hyphenation-dev deb rust optional arch=any"
+    "librust-hyphenation-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-lazy-static-1+default-dev, librust-quickcheck-0.7+default-dev, librust-unicode-segmentation-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hyphenation]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.7.1-2"
   ]
 }

@@ -6,16 +6,19 @@
     "forgejo-cli"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native, librust-auth-git2-0.5+default-dev (\u003e= 0.5.4-~~), librust-base64ct-1+default-dev (\u003e= 1.6.0-~~), librust-base64ct-1+std-dev (\u003e= 1.6.0-~~), librust-cfg-if-1+default-dev, librust-clap-4+default-dev (\u003e= 4.5.11-~~), librust-clap-4+derive-dev (\u003e= 4.5.11-~~), librust-comrak-0.29+default-dev, librust-crossterm-0.27+default-dev, librust-directories-5+default-dev (\u003e= 5.0.1-~~), librust-eyre-0.6+default-dev (\u003e= 0.6.12-~~), librust-forgejo-api-0.5+default-dev, librust-futures-0.3+default-dev (\u003e= 0.3.30-~~), librust-git2-0.19+default-dev, librust-hyper-1+default-dev (\u003e= 1.4.1-~~), librust-hyper-util-0.1+default-dev (\u003e= 0.1.6-~~), librust-hyper-util-0.1+http1-dev (\u003e= 0.1.6-~~), librust-hyper-util-0.1+http2-dev (\u003e= 0.1.6-~~), librust-hyper-util-0.1+server-dev (\u003e= 0.1.6-~~), librust-hyper-util-0.1+tokio-dev (\u003e= 0.1.6-~~), librust-open-5+default-dev (\u003e= 5.3.0-~~), librust-rand-0.8+default-dev (\u003e= 0.8.5-~~), librust-serde-1+default-dev (\u003e= 1.0.204-~~), librust-serde-1+derive-dev (\u003e= 1.0.204-~~), librust-serde-json-1+default-dev (\u003e= 1.0.120-~~), librust-sha256-1+default-dev (\u003e= 1.5.0-~~), librust-soft-assert-0.1+default-dev (\u003e= 0.1.1-~~), librust-time-0.3+default-dev (\u003e= 0.3.36-~~), librust-time-0.3+formatting-dev (\u003e= 0.3.36-~~), librust-time-0.3+local-offset-dev (\u003e= 0.3.36-~~), librust-time-0.3+macros-dev (\u003e= 0.3.36-~~), librust-tokio-1+default-dev (\u003e= 1.39.1-~~), librust-tokio-1+full-dev (\u003e= 1.39.1-~~), librust-url-2+default-dev (\u003e= 2.5.2-~~), librust-uuid-1+default-dev (\u003e= 1.10.0-~~), librust-uuid-1+v4-dev (\u003e= 1.10.0-~~), libstd-rust-dev, rustc:native"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, librust-auth-git2-dev, librust-base64ct-dev, librust-cfg-if-dev, librust-clap-complete-dev, librust-clap-dev, librust-comrak-dev, librust-crossterm-dev, librust-directories-dev, librust-eyre-dev, librust-forgejo-api-dev, librust-futures-dev, librust-git2-dev, librust-hyper-dev, librust-hyper-util-dev, librust-open-dev, librust-rand-dev, librust-serde-dev, librust-serde-json-dev, librust-sha256-dev, librust-soft-assert-dev, librust-ssh2-config-dev, librust-time-dev, librust-tokio-dev, librust-url-dev, librust-uuid-dev, libstd-rust-dev, rustc:native"
   ],
   "Checksums-Sha256": [
-    "d096524e6d22aa037b5ef207a662dc4af102b92f7ed13384592c235c5c7ab3ab 2851 forgejo-cli_0.2.0-2.dsc c711cea141f0c5c98b7397c1ef43163c25e8450e5f1419b96feaa502f18a457d 56500 forgejo-cli_0.2.0.orig.tar.xz 08423c884e5a017760b23c7138ae80fea66194ede09a5d375070bc5eac0ba23b 2928 forgejo-cli_0.2.0-2.debian.tar.xz"
+    "4ffaf53770c5c696bbddddcf9509612988f69b84940bfbcd7561be25a47600c5 1863 forgejo-cli_0.3.0-2.dsc 8e856b223133bd924e4de97d0b2c3146d9a6c1d05094df32d7bb8f774b61de91 70484 forgejo-cli_0.3.0.orig.tar.xz 09c6385a4d30bab85643f2cae0f04bf1fe90d045ff5a1d199688218f5a4f8205 3672 forgejo-cli_0.3.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/forgejo-cli"
   ],
   "Files": [
-    "134befeded36c1132daf4ce5488c048e 2851 forgejo-cli_0.2.0-2.dsc 053972042f062a5e3ac26bcebdb3a3cf 56500 forgejo-cli_0.2.0.orig.tar.xz c82b159a797ed14c8f25be492449f54d 2928 forgejo-cli_0.2.0-2.debian.tar.xz"
+    "795ee2471c98dc80a08949b8233c4dd1 1863 forgejo-cli_0.3.0-2.dsc 37a5b1e97c278e157b3c0391a81c436c 70484 forgejo-cli_0.3.0.orig.tar.xz a6e96969551066226160cdd2505b1fdb 3672 forgejo-cli_0.3.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Vcs-Browser": [
     "https://forgejo.debian.net/forgejo/forgejo-cli"
@@ -48,6 +51,6 @@
     "https://forgejo.debian.net/forgejo/forgejo-cli"
   ],
   "Version": [
-    "0.2.0-2"
+    "0.3.0-2"
   ]
 }
