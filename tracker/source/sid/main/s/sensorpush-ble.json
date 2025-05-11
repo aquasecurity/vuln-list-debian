@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
   ],
   "Build-Depends-Indep": [
-    "python3-bluetooth-data-tools \u003c!nocheck\u003e, python3-bluetooth-sensor-state-data \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sensor-state-data \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "python3-bluetooth-data-tools \u003c!nocheck\u003e, python3-bluetooth-sensor-state-data (\u003e= 1.8.0) \u003c!nocheck\u003e, python3-habluetooth (\u003e= 3.42.0) \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sensor-state-data \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "2c356fea8eb8c50770457a2f51003c0388b91dc08aba71f040e3377bf96183aa 2541 sensorpush-ble_1.7.1-1.dsc 0df718682e4320a65278c938165643d55be3d503b70925a7f29dc63ba97b38ff 48046 sensorpush-ble_1.7.1.orig.tar.gz e3a49a59119a7b07f0fc554e2a1370d20da8a14572666ea398d8898e952bb87c 4192 sensorpush-ble_1.7.1-1.debian.tar.xz"
+    "f4533010aefc05bcd6717acc0e000842e503bdc4aeb7bde96852ebbaeeacc4ff 2523 sensorpush-ble_1.9.0-1.dsc a6ef858d1c0a665c5cfa2e1855573e523249a2222a18a44a89886337bcef76f4 67844 sensorpush-ble_1.9.0.orig.tar.gz c47bb543fce4d5a6fac3507351f56a676b3484baa3a6cb81db0edca54829898d 4124 sensorpush-ble_1.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sensorpush-ble"
   ],
   "Files": [
-    "656ba0bca8344e6ba3f471fc09eadeb8 2541 sensorpush-ble_1.7.1-1.dsc dab71bc09a6f734e9b262aea2bf529de 48046 sensorpush-ble_1.7.1.orig.tar.gz e4b0756edd5f868dc3781c2a29fb5a53 4192 sensorpush-ble_1.7.1-1.debian.tar.xz"
+    "34ed72f16490d667ec166dc5c985aecd 2523 sensorpush-ble_1.9.0-1.dsc e7d2c819804a43287dc3889c627e496f 67844 sensorpush-ble_1.9.0.orig.tar.gz 2fa2a5d6bf856ccbb80b7d49873e74e9 4124 sensorpush-ble_1.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-bluetooth-sensor-state-data, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/sensorpush-ble.git"
   ],
   "Version": [
-    "1.7.1-1"
+    "1.9.0-1"
   ]
 }
