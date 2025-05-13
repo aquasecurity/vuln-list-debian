@@ -6,16 +6,16 @@
     "libbtllib-dev, btllib-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, meson, ninja-build, libcpptoml-dev, libomp-dev, samtools"
+    "debhelper-compat (= 13), architecture-is-64-bit, dh-exec, meson, ninja-build, libcpptoml-dev, libsdsl-dev, libargparse-dev, samtools"
   ],
   "Checksums-Sha256": [
-    "d879b5ddb3436a376ef1ce05835b4a374a7ade69b4e09270db6e9611dc97d8dd 2161 btllib_1.4.10+dfsg-1.dsc 6eba5c5626680c3edf8dda9de6af05b401a560986ea77770c14c053e7ba9743c 209360 btllib_1.4.10+dfsg.orig.tar.xz cce781d2defaf1b8192af143662f5dc1fc172f3a44c3d977e08dc33bc57536ff 3268 btllib_1.4.10+dfsg-1.debian.tar.xz"
+    "79ac2f0f6bb31be32bafef29dd6976a85e2e17d73cd4d5fb91b1a9e23ca4bc3d 2150 btllib_1.7.5+dfsg-2.dsc af5381c1a310ef3ade771be2e28c22fe822976d73d1154c83a8f96827c65cbbd 252108 btllib_1.7.5+dfsg.orig.tar.xz 051d02bcaf22f286d7517b56714c57c2d89b978c438f9e75b4ece232149b26fd 4664 btllib_1.7.5+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/btllib"
   ],
   "Files": [
-    "33c708f37dfafabb6ad6ca63a8070ce2 2161 btllib_1.4.10+dfsg-1.dsc e3ce32eaf3f812264056fe26758b7483 209360 btllib_1.4.10+dfsg.orig.tar.xz 79076576244cd8561bfda4c8e55b5b45 3268 btllib_1.4.10+dfsg-1.debian.tar.xz"
+    "c77e415801f82522f1a9c551bf74bb52 2150 btllib_1.7.5+dfsg-2.dsc 25fe130dda560d85551b420e459e8ae9 252108 btllib_1.7.5+dfsg.orig.tar.xz 55b04fdeeb5a31de571c2cc4ff526e71 4664 btllib_1.7.5+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "btllib"
   ],
   "Package-List": [
-    "btllib-tools deb science optional arch=any libbtllib-dev deb libdevel optional arch=any-amd64,arm64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sparc64,alpha"
+    "btllib-tools deb science optional arch=any libbtllib-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "g++"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/med-team/btllib.git"
   ],
   "Version": [
-    "1.4.10+dfsg-1"
+    "1.7.5+dfsg-2"
   ]
 }
