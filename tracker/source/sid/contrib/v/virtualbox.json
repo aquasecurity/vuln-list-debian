@@ -6,16 +6,16 @@
     "virtualbox-qt, virtualbox, virtualbox-dkms, virtualbox-source, virtualbox-guest-x11, virtualbox-guest-utils, virtualbox-guest-x11-hwe, virtualbox-guest-utils-hwe"
   ],
   "Build-Depends": [
-    "bzip2, debhelper-compat (= 13), default-jdk, jaxws, dh-python, dh-sequence-dkms, docbook-xml, docbook-xsl, dpkg-dev (\u003e= 1.15.6~), g++-multilib, genisoimage, glslang-tools, gsoap, acpica-tools, kbuild (\u003e= 1:0.1.9998svn3589~), libasound2-dev, libcap-dev, libcurl4-gnutls-dev, libdevmapper-dev, libdrm-dev, libegl1-mesa-dev, libgl-dev, libglu1-mesa-dev, libgsoap-dev, liblzf-dev, liblzma-dev, libidl-dev, libogg-dev, libpam0g-dev, libpixman-1-dev, libpng-dev, libpulse-dev, libqt5x11extras5-dev, libqt5opengl5-dev, qttools5-dev, libsdl1.2-dev, libsdl2-dev, libssl-dev, libtpms-dev, libvncserver-dev, libvorbis-dev, libvpx-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxi-dev, libxinerama-dev, libxml2-dev, libxml2-utils, libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, lsb-release, lynx, makeself, module-assistant, nasm, python3-dev, texlive-fonts-extra, texlive-fonts-recommended, texlive-latex-extra, texlive-latex-recommended, uuid-dev, x11proto-gl-dev, x11proto-xf86dri-dev, xserver-xorg-dev, xsltproc, yasm, zlib1g-dev"
+    "bzip2, debhelper-compat (= 13), default-jdk, jaxws, dh-python, dh-sequence-dkms, docbook-xml, docbook-xsl, dpkg-dev (\u003e= 1.15.6~), g++-multilib, genisoimage, glslang-tools, gsoap, acpica-tools, kbuild (\u003e= 1:0.1.9998svn3589~), libasound2-dev, libcap-dev, libcurl4-gnutls-dev, libdevmapper-dev, libdrm-dev, libegl1-mesa-dev, libgl-dev, libglu1-mesa-dev, libgsoap-dev, liblzf-dev, liblzma-dev, libidl-dev, libogg-dev, libpam0g-dev, libpixman-1-dev, libpng-dev, libpulse-dev, libqt5x11extras5-dev, libqt5opengl5-dev, qttools5-dev, libsdl1.2-dev, libsdl2-dev, libssl-dev, libtpms-dev, libvncserver-dev, libvorbis-dev, libvpx-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxi-dev, libxinerama-dev, libxml2-dev, libxml2-utils, libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, lsb-release, lynx, makeself, module-assistant, nasm, python3-dev, python3-setuptools, texlive-fonts-extra, texlive-fonts-recommended, texlive-latex-extra, texlive-latex-recommended, uuid-dev, x11proto-gl-dev, x11proto-xf86dri-dev, xserver-xorg-dev, xsltproc, yasm, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "f10c64fa1c459336aa1752b610586e7b6f18bbcd9a0c0b6ebeb1085dbfb883f4 3744 virtualbox_7.0.20-dfsg-1.2.dsc 8dd8d60792626f7ac14faeda92ccc4df7e6f476dbfa834bb7a4084551a846c62 78634588 virtualbox_7.0.20-dfsg.orig.tar.xz 4a189976818ccbba3cdae4c72dc525778d044cadadf333392a740656682f11c1 78524 virtualbox_7.0.20-dfsg-1.2.debian.tar.xz"
+    "27a02a1549a31acc7a32b43537619b253ef277111a77b5fc62f51b61f95cf1b5 3829 virtualbox_7.0.26-dfsg-1.dsc dec277fa79e94ab5fa030f974fa2ef24ee88f827de639bdd4d1f12e64977b688 78522568 virtualbox_7.0.26-dfsg.orig.tar.xz 97b1bd0825f1288a1ca358fb021f8828da9ac3bad8b8f1d62bfcea6e7aae2732 79144 virtualbox_7.0.26-dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/contrib/v/virtualbox"
   ],
   "Files": [
-    "7f727c1f7266c49a2fdcf699a22e7318 3744 virtualbox_7.0.20-dfsg-1.2.dsc 99ae9c3a495cf449c61531a2e9ffff15 78634588 virtualbox_7.0.20-dfsg.orig.tar.xz 3902c230f6c0b0a7a589f5c002c03348 78524 virtualbox_7.0.20-dfsg-1.2.debian.tar.xz"
+    "1a67bf21df94761155adfa4248d01757 3829 virtualbox_7.0.26-dfsg-1.dsc 1ac9f57e7746c3ea4a63cbd03894a90c 78522568 virtualbox_7.0.26-dfsg.orig.tar.xz a77b238af878f4db45b38884c736e05c 79144 virtualbox_7.0.26-dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-dkms"
+    "autopkgtest, autopkgtest-pkg-dkms"
+  ],
+  "Testsuite-Triggers": [
+    "linux-doc, module-assistant-autopkgtest"
   ],
   "Uploaders": [
     "Ritesh Raj Sarraf \u003crrs@debian.org\u003e, Gianfranco Costamagna \u003clocutusofborg@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/pkg-virtualbox-team/virtualbox.git"
   ],
   "Version": [
-    "7.0.20-dfsg-1.2"
+    "7.0.26-dfsg-1"
   ]
 }
