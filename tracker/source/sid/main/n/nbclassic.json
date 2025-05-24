@@ -6,19 +6,19 @@
     "python3-nbclassic"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3, python3-jupyter-server, python3-notebook, python3-pytest \u003c!nocheck\u003e, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, python3, python3-jupyter-server, python3-notebook, python3-pytest \u003c!nocheck\u003e, python3-pytest-jupyter \u003c!nocheck\u003e, python3-pytest-tornasync \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "c4155d4736494c330c90ff8b603fc6d9fb3337aeadb89502f1eaf267359d88bb 2191 nbclassic_0.3.2-4.dsc 906786b5722cf9d11bec70e7c4eb9306705ca5015ffb9ae8dcacf37abd7e0bd6 25923 nbclassic_0.3.2.orig.tar.gz c07d0ad4c08d0b08ddb0257273e6a7945e751ca2604bd9cadada94a6106ddc2d 4708 nbclassic_0.3.2-4.debian.tar.xz"
+    "27b046f89dddcfef272d3345d8704f83c15c2758b07460fee4d41ba715f80741 2413 nbclassic_0.3.2-5.dsc 906786b5722cf9d11bec70e7c4eb9306705ca5015ffb9ae8dcacf37abd7e0bd6 25923 nbclassic_0.3.2.orig.tar.gz 3d54731614a5f93291bca88b5aa00855fb445b718818d0690d2d533f8cbda2e0 5280 nbclassic_0.3.2-5.debian.tar.xz"
   ],
   "Dgit": [
-    "256a120b60c3feff3fb92b0ebb1815ac9601505a debian archive/debian/0.3.2-4 https://git.dgit.debian.org/nbclassic"
+    "3e83f42756842d2b4926d7818eaa81a02c6fa91f debian archive/debian/0.3.2-5 https://git.dgit.debian.org/nbclassic"
   ],
   "Directory": [
     "pool/main/n/nbclassic"
   ],
   "Files": [
-    "f7910354a96c07b5d5d76e9b8887ee80 2191 nbclassic_0.3.2-4.dsc 9f02ac70027edadeae94c8887c024d96 25923 nbclassic_0.3.2.orig.tar.gz b79c106ec27b847fc90abac053bd4fe3 4708 nbclassic_0.3.2-4.debian.tar.xz"
+    "b7ae21d541402c9d7bd304cbac56696c 2413 nbclassic_0.3.2-5.dsc 9f02ac70027edadeae94c8887c024d96 25923 nbclassic_0.3.2.orig.tar.gz 474937bec27ff2160ae5913d16e2a180 5280 nbclassic_0.3.2-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.6.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "debhelper-compat, dh-python, python3-all, python3-pytest, python3-pytest-jupyter, python3-pytest-tornasync"
+  ],
   "Uploaders": [
     "Julien Puydt \u003cjpuydt@debian.org\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/nbclassic.git"
   ],
   "Version": [
-    "0.3.2-4"
+    "0.3.2-5"
   ]
 }
