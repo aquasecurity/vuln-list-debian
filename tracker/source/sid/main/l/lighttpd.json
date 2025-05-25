@@ -6,16 +6,16 @@
     "lighttpd, lighttpd-doc, lighttpd-modules-dbi, lighttpd-modules-ldap, lighttpd-modules-lua, lighttpd-modules-mysql, lighttpd-mod-webdav, lighttpd-mod-authn-gssapi, lighttpd-mod-authn-pam, lighttpd-mod-authn-sasl, lighttpd-mod-deflate, lighttpd-mod-maxminddb, lighttpd-mod-vhostdb-pgsql, lighttpd-mod-gnutls, lighttpd-mod-mbedtls, lighttpd-mod-nss, lighttpd-mod-openssl, lighttpd-mod-wolfssl"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.16.1~), debhelper-compat (= 13), dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), libdeflate-dev, libgnutls28-dev (\u003e= 3.6.5), libmbedtls-dev (\u003e= 2.14.0), libnss3-dev (\u003e= 2:3.26.2), libssl-dev, libwolfssl-dev (\u003e= 3.14.0~), zlib1g-dev, libbrotli-dev, libpcre2-dev, default-libmysqlclient-dev, libdbi-dev, libldap2-dev, liblua5.4-dev, libmaxminddb-dev, pkgconf, libsqlite3-dev, libxml2-dev, libkrb5-dev, libpam0g-dev, libpq-dev, libsasl2-dev, libunwind8-dev \u003cpkg.lighttpd.libunwind\u003e, libxxhash-dev, libzstd-dev, nettle-dev, perl:native"
+    "dpkg-dev (\u003e= 1.16.1~), debhelper-compat (= 13), dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), libdeflate-dev [!hurd-any], libgnutls28-dev (\u003e= 3.6.5) [!hurd-any], libmbedtls-dev (\u003e= 2.14.0), libnss3-dev (\u003e= 2:3.26.2), libssl-dev, libwolfssl-dev (\u003e= 3.14.0~) [!hurd-any], zlib1g-dev, libbrotli-dev, libpcre2-dev, default-libmysqlclient-dev [!hurd-any], libdbi-dev, libldap2-dev, liblua5.4-dev, libmaxminddb-dev, pkgconf, libsqlite3-dev, libxml2-dev, libkrb5-dev [!hurd-any], libpam0g-dev, libpq-dev, libsasl2-dev, libunwind8-dev \u003cpkg.lighttpd.libunwind\u003e, libxxhash-dev, libzstd-dev, nettle-dev, perl:native"
   ],
   "Checksums-Sha256": [
-    "7c4d89ab159996a46df8667e443cfbe9f574ef0f37ffb08711489d8c89973973 3430 lighttpd_1.4.79-1.dsc 3b29a625b3ad88702d1fea4f5f42bb7d87488f2e4efc977d7f185329ca6084bd 865428 lighttpd_1.4.79.orig.tar.xz 7a1918c83077bca689f823487eefea9c4c30ac3ab178381b82abfe425621b1d9 46376 lighttpd_1.4.79-1.debian.tar.xz"
+    "b250203b6326de5cf9f0892aac9b1edf08bc6e9bad6423befffa6a20a2013ade 4229 lighttpd_1.4.79-2.dsc 3b29a625b3ad88702d1fea4f5f42bb7d87488f2e4efc977d7f185329ca6084bd 865428 lighttpd_1.4.79.orig.tar.xz 9e0910d9f1cec6ff44f12a2827ce1094973354fed15fe118c88e57bb3df70d81 34133 lighttpd_1.4.79.orig.tar.xz.asc 5e37f78fcd67e8c9716cda5ebde0cb9c2ed2c403ddbfbf9cd55b062165991e1c 42280 lighttpd_1.4.79-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lighttpd"
   ],
   "Files": [
-    "9b6d464c0e95ac873e6176bdb2654988 3430 lighttpd_1.4.79-1.dsc c8535ec98814758f116c8b654cb92146 865428 lighttpd_1.4.79.orig.tar.xz 90516c3f94001e6d56199e9edf9d75d6 46376 lighttpd_1.4.79-1.debian.tar.xz"
+    "1f6bb960f5e4d114ffac117c39b88241 4229 lighttpd_1.4.79-2.dsc c8535ec98814758f116c8b654cb92146 865428 lighttpd_1.4.79.orig.tar.xz 4bae0abb7b117657db73f69f9ad40987 34133 lighttpd_1.4.79.orig.tar.xz.asc 84f2a0a26387f77b4cf7121d96ac6241 42280 lighttpd_1.4.79-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "lighttpd"
   ],
   "Package-List": [
-    "lighttpd deb httpd optional arch=any lighttpd-doc deb doc optional arch=all lighttpd-mod-authn-gssapi deb httpd optional arch=any lighttpd-mod-authn-pam deb httpd optional arch=any lighttpd-mod-authn-sasl deb httpd optional arch=any lighttpd-mod-deflate deb httpd optional arch=any lighttpd-mod-gnutls deb httpd optional arch=any lighttpd-mod-maxminddb deb httpd optional arch=any lighttpd-mod-mbedtls deb httpd optional arch=any lighttpd-mod-nss deb httpd optional arch=any lighttpd-mod-openssl deb httpd optional arch=any lighttpd-mod-vhostdb-pgsql deb httpd optional arch=any lighttpd-mod-webdav deb httpd optional arch=any lighttpd-mod-wolfssl deb httpd optional arch=any lighttpd-modules-dbi deb httpd optional arch=any lighttpd-modules-ldap deb httpd optional arch=any lighttpd-modules-lua deb httpd optional arch=any lighttpd-modules-mysql deb httpd optional arch=any"
+    "lighttpd deb httpd optional arch=any lighttpd-doc deb doc optional arch=all lighttpd-mod-authn-gssapi deb httpd optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,riscv64,s390x,alpha,hppa,loong64,m68k,powerpc,ppc64,sh4,sparc64,x32,linux-any lighttpd-mod-authn-pam deb httpd optional arch=any lighttpd-mod-authn-sasl deb httpd optional arch=any lighttpd-mod-deflate deb httpd optional arch=any lighttpd-mod-gnutls deb httpd optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,riscv64,s390x,alpha,hppa,loong64,m68k,powerpc,ppc64,sh4,sparc64,x32,linux-any lighttpd-mod-maxminddb deb httpd optional arch=any lighttpd-mod-mbedtls deb httpd optional arch=any lighttpd-mod-nss deb httpd optional arch=any lighttpd-mod-openssl deb httpd optional arch=any lighttpd-mod-vhostdb-pgsql deb httpd optional arch=any lighttpd-mod-webdav deb httpd optional arch=any lighttpd-mod-wolfssl deb httpd optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,riscv64,s390x,alpha,hppa,loong64,m68k,powerpc,ppc64,sh4,sparc64,x32,linux-any lighttpd-modules-dbi deb httpd optional arch=any lighttpd-modules-ldap deb httpd optional arch=any lighttpd-modules-lua deb httpd optional arch=any lighttpd-modules-mysql deb httpd optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,riscv64,s390x,alpha,hppa,loong64,m68k,powerpc,ppc64,sh4,sparc64,x32,linux-any"
   ],
   "Priority": [
     "source"
@@ -48,7 +48,7 @@
     "curl, gcc, libc-dev, media-types, perl"
   ],
   "Uploaders": [
-    "Glenn Strauss \u003cgstrauss@gluelogic.com\u003e, Stefan Bühler \u003cstbuehler@web.de\u003e"
+    "Glenn Strauss \u003cgstrauss@gluelogic.com\u003e, Stefan Bühler \u003csource@stbuehler.de\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/lighttpd"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/lighttpd.git"
   ],
   "Version": [
-    "1.4.79-1"
+    "1.4.79-2"
   ]
 }
