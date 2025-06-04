@@ -6,28 +6,34 @@
     "libimage-imlib2-perl"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 8), libmodule-build-perl, libimlib2-dev, libtest-simple-perl, quilt, libextutils-pkgconfig-perl"
+    "debhelper-compat (= 13), libextutils-pkgconfig-perl, libimlib2-dev (\u003e= 1.12.4-2~) | libimlib2-dev (\u003c\u003c 1.12.4), libmodule-build-perl, libtest-simple-perl \u003c!nocheck\u003e, perl-xs-dev, perl:native"
   ],
   "Checksums-Sha256": [
-    "53828fc0f153039bff68d70c0be0bc4353c8a245e7811257c361880fc93737bd 1984 libimage-imlib2-perl_2.03-1.2.dsc 97648385da1e9452fa9ee48f570020b45e449e5f11615320f39cb0b5c00951b0 36014 libimage-imlib2-perl_2.03.orig.tar.gz 06375f113cc64a3ee4060aa9cefc95599d580aaeea397738c7ce81613697eaba 4664 libimage-imlib2-perl_2.03-1.2.debian.tar.xz"
+    "1fea00e80a4d65fdf7e11163d5dd0642516a7393da274c14b10dbabc151c42ce 2547 libimage-imlib2-perl_2.03-3.dsc 97648385da1e9452fa9ee48f570020b45e449e5f11615320f39cb0b5c00951b0 36014 libimage-imlib2-perl_2.03.orig.tar.gz ae371e28f8617d290a77aef716ee7ff490671a71e1e146d1f092ff4b5b5b1441 5124 libimage-imlib2-perl_2.03-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "183906e5e1ba4c178dca505401dbe6225f702936 debian archive/debian/2.03-3 https://git.dgit.debian.org/libimage-imlib2-perl"
   ],
   "Directory": [
     "pool/main/libi/libimage-imlib2-perl"
   ],
   "Files": [
-    "33e2e76432e51a1cbbaf677f1adb2055 1984 libimage-imlib2-perl_2.03-1.2.dsc 303b91fae2b863903e41a3cac34fa0d3 36014 libimage-imlib2-perl_2.03.orig.tar.gz cb255799a081f08614c97f062fcfc794 4664 libimage-imlib2-perl_2.03-1.2.debian.tar.xz"
+    "cc9164807aebd71963ae532127b74fd6 2547 libimage-imlib2-perl_2.03-3.dsc 303b91fae2b863903e41a3cac34fa0d3 36014 libimage-imlib2-perl_2.03.orig.tar.gz 9d22e34968446fa86d48ed74fe999247 5124 libimage-imlib2-perl_2.03-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
+  "Homepage": [
+    "https://metacpan.org/pod/Image::Imlib2"
+  ],
   "Maintainer": [
-    "Don Armstrong \u003cdon@debian.org\u003e"
+    "Debian Perl Group \u003cpkg-perl-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "libimage-imlib2-perl"
   ],
   "Package-List": [
-    "libimage-imlib2-perl deb perl extra arch=any"
+    "libimage-imlib2-perl deb perl optional arch=any"
   ],
   "Priority": [
     "source"
@@ -36,9 +42,21 @@
     "perl"
   ],
   "Standards-Version": [
-    "3.9.2"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-perl"
+  ],
+  "Uploaders": [
+    "Don Armstrong \u003cdon@debian.org\u003e, Andreas Tille \u003ctille@debian.org\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/perl-team/modules/packages/libimage-imlib2-perl"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/perl-team/modules/packages/libimage-imlib2-perl.git"
   ],
   "Version": [
-    "2.03-1.2"
+    "2.03-3"
   ]
 }
