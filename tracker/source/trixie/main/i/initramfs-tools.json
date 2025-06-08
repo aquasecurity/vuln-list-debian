@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "initramfs-tools, initramfs-tools-core"
+    "initramfs-tools, initramfs-tools-core, initramfs-tools-bin"
   ],
   "Build-Depends": [
     "bash-completion, debhelper-compat (= 13), shunit2 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be1b8194b6a96b56a4747cf8cbb211b14ce28996edd5e13ec294a55a51015eea 2028 initramfs-tools_0.147.dsc 781bab004280914de7b5578901af8ce0bef36fd7aaea7da2a608773e922d5335 111888 initramfs-tools_0.147.tar.xz"
+    "c933cfee53bfccd03e2d4261699c8730c15322aee8381c70684e5a0903d3c8fe 2138 initramfs-tools_0.148.1.dsc ad196ab8bce0183cff1283f63dea8a8bbf37700b7ba58a4d4fddb8b23768b784 115916 initramfs-tools_0.148.1.tar.xz"
   ],
   "Directory": [
     "pool/main/i/initramfs-tools"
   ],
   "Files": [
-    "502640c0cba7baceebcf5e3efe978d37 2028 initramfs-tools_0.147.dsc 2ae9b6caf20489e62a366489c8157214 111888 initramfs-tools_0.147.tar.xz"
+    "3d8ed67d50e8fcccaf461739699ca327 2138 initramfs-tools_0.148.1.dsc f2fd4aafcd9a2d62cd2866edea2100ef 115916 initramfs-tools_0.148.1.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -27,7 +27,7 @@
     "initramfs-tools"
   ],
   "Package-List": [
-    "initramfs-tools deb utils optional arch=all initramfs-tools-core deb utils optional arch=all"
+    "initramfs-tools deb utils optional arch=all initramfs-tools-bin deb utils optional arch=any initramfs-tools-core deb utils optional arch=all"
   ],
   "Priority": [
     "source"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "busybox, busybox-initramfs, dnsmasq, e2fsprogs, genext2fs, iproute2, ipxe-qemu, klibc-utils, linux-image-generic, open-iscsi, procps, python3, qemu-efi-aarch64, qemu-efi-arm, qemu-kvm, seabios, tgt, zstd"
+    "busybox, busybox-initramfs, bzip2, dnsmasq, e2fsprogs, genext2fs, iproute2, ipxe-qemu, klibc-utils, linux-image-generic, lz4, lzop, open-iscsi, procps, python3, qemu-efi-aarch64, qemu-efi-arm, qemu-kvm, seabios, tgt, xz-utils, zstd"
   ],
   "Uploaders": [
     "Michael Prokop \u003cmika@debian.org\u003e, Ben Hutchings \u003cbenh@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/kernel-team/initramfs-tools.git"
   ],
   "Version": [
-    "0.147"
+    "0.148.1"
   ]
 }
