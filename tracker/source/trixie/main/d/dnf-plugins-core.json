@@ -6,16 +6,16 @@
     "dnf-plugins-core"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-python, gettext, libdnf-dev (\u003e= 0.73.0~), python3, python3-dnf, python3-sphinx"
+    "cmake, debhelper-compat (= 13), dh-python, gettext, libdnf-dev (\u003e= 0.73.0~), python3, python3-dbus \u003c!nocheck\u003e, python3-dnf, python3-sphinx, python3-systemd \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a00fbd233ed91623c29dc72dd672f56bb683dca847685eec0e289e70485c5c02 1755 dnf-plugins-core_4.10.0-1.dsc bbf8d11aace0862bf6ed86b4a172f232a05b0cb646474bb8e3f33b8c41033742 539436 dnf-plugins-core_4.10.0.orig.tar.gz e79f187a4a29de43d4c906988325b427cdeef85adb45a505093f95a5cfa8f5bc 4404 dnf-plugins-core_4.10.0-1.debian.tar.xz"
+    "1578432a15cddc36619847220d272d52efa505212ac9ac1f0fa03029a962c799 1863 dnf-plugins-core_4.10.1-3.dsc 0f6966a6cb62912cd3520ef2a09ddfcdb48aa3091009f9834526b04f6de9a70a 539807 dnf-plugins-core_4.10.1.orig.tar.gz b77762db1e6425f191892bed64577c79ae67e9b9d292ab354fce27ebb542f556 4532 dnf-plugins-core_4.10.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dnf-plugins-core"
   ],
   "Files": [
-    "01cf7758aabf50f8f82273e2a009a8f2 1755 dnf-plugins-core_4.10.0-1.dsc c5b128f9b8f4016c547aba9b99708f8d 539436 dnf-plugins-core_4.10.0.orig.tar.gz ce50c57aa248eb84cf474184559662c0 4404 dnf-plugins-core_4.10.0-1.debian.tar.xz"
+    "99446227941b03597bd89048e818da26 1863 dnf-plugins-core_4.10.1-3.dsc e9c3fb551b959111067a33d2be447aeb 539807 dnf-plugins-core_4.10.1.orig.tar.gz e0221af4f6ff1e413e8bb45c348e9738 4532 dnf-plugins-core_4.10.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.6.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Aron Xu \u003caron@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/pkg-rpm-team/dnf-plugins-core.git"
   ],
   "Version": [
-    "4.10.0-1"
+    "4.10.1-3"
   ]
 }
