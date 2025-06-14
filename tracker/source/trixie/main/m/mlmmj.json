@@ -6,16 +6,16 @@
     "mlmmj, mlmmj-php-web, mlmmj-php-web-admin"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dpkg-dev (\u003e= 1.16.1.1~)"
+    "debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.16.1.1~), atf-sh \u003c!nocheck\u003e, kyua \u003c!nocheck\u003e, libatf-dev \u003c!nocheck\u003e, pkgconf"
   ],
   "Checksums-Sha256": [
-    "4763d8cbfc2424ab53651113a6e2ad6711ae4a8bdffde7269a1c5e8a24fc4f96 1987 mlmmj_1.3.0-4.dsc 7609d0dd804f0c084c2e483eb58c60012b698bc76464537852a1ee1ff9c6f0e9 355298 mlmmj_1.3.0.orig.tar.gz 73fa26a1d678f9d15956e22166b7dcbd0247b19168bd831144aebce7c48c2ad1 24896 mlmmj_1.3.0-4.debian.tar.xz"
+    "6cf665084d75c7ef539ac61c440cb566f5bd9e7747187750d8300751142c0e49 2125 mlmmj_1.5.2-1.dsc de0be6c2910ac8bf8291dc86a3819a08b7cdb1019c54ede1791e166967bf1baa 278204 mlmmj_1.5.2.orig.tar.xz 57578396cf6fbd6edf53b258a27d5933e85af16e2c3a5d262163e1ecb85edece 28272 mlmmj_1.5.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mlmmj"
   ],
   "Files": [
-    "2deda7158a2688a2cb52d20314b6adf1 1987 mlmmj_1.3.0-4.dsc 365eff26063ddb87097bf2d93311f8a5 355298 mlmmj_1.3.0.orig.tar.gz a519afc67d5501fb01758b63e04c9a4e 24896 mlmmj_1.3.0-4.debian.tar.xz"
+    "4ce4e83d336569e6c3475a5ffc0c22f2 2125 mlmmj_1.5.2-1.dsc d2f3850755f16222745bb1e7264a0ded 278204 mlmmj_1.5.2.orig.tar.xz fcb5724ab8beb4e00ac0de40392c0917 28272 mlmmj_1.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "mail"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/mlmmj-team/mlmmj.git"
   ],
   "Version": [
-    "1.3.0-4"
+    "1.5.2-1"
   ]
 }
