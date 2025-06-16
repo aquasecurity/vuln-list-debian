@@ -6,22 +6,22 @@
     "python3-rq"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-click, python3-hatchling, python3-redis, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-click, python3-hatchling, python3-redis"
   ],
   "Checksums-Sha256": [
-    "2762c45efdbc813b11d68ba3f55e21d60eaa2df2403c392c6a3978daff7fe2da 2113 python-rq_2.3.2-1.dsc 1060cb5ace97c22e96d58ae20a6e50e8272014bf9a0e40419d05757440df0d43 652719 python-rq_2.3.2.orig.tar.gz 1b5dc4ca46cc442b350353d75c3a37dba9521322f74ab1e5552f9add3286a81a 5532 python-rq_2.3.2-1.debian.tar.xz"
+    "6210ef70b72c63e4d8674a05f0313d20f5c97b91daae80981565fcc72a131b74 2206 python-rq_2.3.3-2.dsc 00623d14fa79666f83a888b219355662e2c06f637bd856666ebd194cc9db6c94 652878 python-rq_2.3.3.orig.tar.gz dcf12944a696a0543f4632761ad107a3d48776aa692866447f52bd638cc7ecdb 6940 python-rq_2.3.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-rq"
   ],
   "Files": [
-    "343dd5a11aff0772af9b19bbb676a89a 2113 python-rq_2.3.2-1.dsc ee14ca8dc58138f1b969a40cf0f2bacb 652719 python-rq_2.3.2.orig.tar.gz 0674c2859739128973c7558182fa487c 5532 python-rq_2.3.2-1.debian.tar.xz"
+    "f3d0fb91e8de7df70b7d77db1c4bbd8c 2206 python-rq_2.3.3-2.dsc c4f24b9fc9cdbe4795db1e4dbda90e5a 652878 python-rq_2.3.3.orig.tar.gz 45ab9be1b501d6595251836a060b0bbf 6940 python-rq_2.3.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://python-rq.org/"
+    "https://github.com/rq/rq"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -42,7 +42,10 @@
     "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-psutil, python3-pytest, python3-pytest-cov, redis-server"
   ],
   "Uploaders": [
     "Marcos Fouces \u003cmarcos@debian.org\u003e,"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-rq.git"
   ],
   "Version": [
-    "2.3.2-1"
+    "2.3.3-2"
   ]
 }
