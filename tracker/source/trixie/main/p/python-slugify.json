@@ -6,16 +6,19 @@
     "python3-slugify, slugify"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools, python3-unidecode (\u003e= 1.1.1)"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-text-unidecode | python3-unidecode, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4f2b086e27b95ba6bbbeaa654737be8767b9df50c36dc24c086dc81053203269 2102 python-slugify_8.0.4-2.dsc 09c8faf36b5703d0d9492ca68af71f09bd3d7d9e6761bf945ae261788fbebeeb 14098 python-slugify_8.0.4.orig.tar.gz 75223b2c60ae8ad26702c4f1fdc57b9bfec1d1dc89bb8269120aff028713bfc7 3832 python-slugify_8.0.4-2.debian.tar.xz"
+    "8a7b708488c84fe5a8adc30512a0ff382403c1aef9cbe634812062d9135daeec 2206 python-slugify_8.0.4-4.dsc 09c8faf36b5703d0d9492ca68af71f09bd3d7d9e6761bf945ae261788fbebeeb 14098 python-slugify_8.0.4.orig.tar.gz ddadb698fab9e7174c56be0811b559a032fdb4f30ee3a8a771c7575939a9ca7c 4500 python-slugify_8.0.4-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-slugify"
   ],
   "Files": [
-    "773ab550ec0b137f0e00deb810b885cb 2102 python-slugify_8.0.4-2.dsc bd702e5c3fcc1dafe0d2dbb72ae14dd6 14098 python-slugify_8.0.4.orig.tar.gz 4316ba618cc254c456d16e58d0166522 3832 python-slugify_8.0.4-2.debian.tar.xz"
+    "85dafeed9e3f06c7f8c36dc7a8ebc4a0 2206 python-slugify_8.0.4-4.dsc bd702e5c3fcc1dafe0d2dbb72ae14dd6 14098 python-slugify_8.0.4.orig.tar.gz 3ffb47626f115c93d1ddbf0ce5cf904d 4500 python-slugify_8.0.4-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Arian Ott \u003carian.ott@ieee.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-slugify"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-slugify.git"
   ],
   "Version": [
-    "8.0.4-2"
+    "8.0.4-4"
   ]
 }
