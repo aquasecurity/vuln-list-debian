@@ -6,16 +6,16 @@
     "medusa"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libssl-dev, libsvn-dev, libpq-dev, libssh2-1-dev, libgcrypt-dev"
+    "debhelper-compat (= 13), libssl-dev, libsvn-dev, libpq-dev, libssh2-1-dev, libgcrypt-dev, libsmb2-dev, freerdp3-dev"
   ],
   "Checksums-Sha256": [
-    "6835af7db10d8cebd064a2d653889240aa76b269f192c0acecf7fe995cc63a5e 1966 medusa_2.3~rc1-2.dsc ccc7366b5adc30a1123a7500788d3ee1b8eab7749191adf99ac71d6c622d5c2b 410997 medusa_2.3~rc1.orig.tar.gz 23fbc2c8128e681a4fd882a181228e13b33c69394d8eef8a2ecf66a52f74ca73 6756 medusa_2.3~rc1-2.debian.tar.xz"
+    "1d09b9e97603a0eae0b4866e335e85cff2728135380f66ded383eb9d45566f8c 2063 medusa_2.3-2.dsc 7ad4b4ed8acecd42fa48fc31fad6e255a8ee894c66615509196f5b9173e3f891 417616 medusa_2.3.orig.tar.gz 5b12baf99732498ef0d380509426cf00e060f926d86d67a283802dfcfceff2a4 7252 medusa_2.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/medusa"
   ],
   "Files": [
-    "4174cb92bfdea957c67a27e6765ea2e8 1966 medusa_2.3~rc1-2.dsc 304042151c4dd05faa43bac3f467df06 410997 medusa_2.3~rc1.orig.tar.gz 396e95704614265315f5f6aa78b7ab93 6756 medusa_2.3~rc1-2.debian.tar.xz"
+    "29f91b24835d3cfd98a4f56eb7c74364 2063 medusa_2.3-2.dsc e345b96d46d846e0b76393af41aed300 417616 medusa_2.3.orig.tar.gz 84db4961c3335a1e623c5a3662901fbd 7252 medusa_2.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,16 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "openssh-server"
   ],
   "Uploaders": [
-    "Adrian Alves \u003caalves@gmail.com\u003e"
+    "Adrian Alves \u003caalves@gmail.com\u003e, Matheus Polkorny \u003cmpolkorny@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/pkg-security-team/medusa"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/pkg-security-team/medusa.git"
   ],
   "Version": [
-    "2.3~rc1-2"
+    "2.3-2"
   ]
 }

@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo, help2man"
   ],
   "Build-Depends-Arch": [
-    "cargo:native, rustc:native, libstd-rust-dev, librust-actix-web-4+default-dev (\u003e= 4.1.0-~~), librust-chrono-0.4+default-dev (\u003e= 0.4.19-~~), librust-chrono-0.4+serde-dev (\u003e= 0.4.19-~~), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-diesel-2+chrono-dev, librust-diesel-2+default-dev, librust-diesel-2+i-implement-a-third-party-backend-and-opt-into-breaking-changes-dev, librust-diesel-2+r2d2-dev, librust-diesel-2+sqlite-dev, librust-diesel-migrations-2+default-dev, librust-diesel-migrations-2+sqlite-dev, librust-dirs-next-2+default-dev, librust-dotenvy-0.15+default-dev, librust-env-logger-0.11+default-dev, librust-log-0.4+default-dev (\u003e= 0.4.17-~~), librust-rand-0.8+default-dev, librust-rebuilderd-common-0.23+default-dev (\u003c\u003c 0.23.1-~~), librust-serde-1+default-dev (\u003e= 1.0.137-~~), librust-serde-1+derive-dev (\u003e= 1.0.137-~~), librust-serde-json-1+default-dev (\u003e= 1.0.81-~~), librust-toml-0.8+default-dev"
+    "cargo:native, rustc:native, libstd-rust-dev, librust-actix-web-4+default-dev (\u003e= 4.1.0-~~), librust-chrono-0.4+default-dev (\u003e= 0.4.19-~~), librust-chrono-0.4+serde-dev (\u003e= 0.4.19-~~), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-diesel-2+chrono-dev, librust-diesel-2+default-dev, librust-diesel-2+i-implement-a-third-party-backend-and-opt-into-breaking-changes-dev, librust-diesel-2+r2d2-dev, librust-diesel-2+sqlite-dev, librust-diesel-migrations-2+default-dev, librust-diesel-migrations-2+sqlite-dev, librust-dirs-next-2+default-dev, librust-dotenvy-0.15+default-dev, librust-env-logger-0.11+default-dev, librust-log-0.4+default-dev (\u003e= 0.4.17-~~), librust-rand-0.8+default-dev, librust-rebuilderd-common-0.23+default-dev (\u003c\u003c 0.23.1-~~), librust-serde-1+default-dev (\u003e= 1.0.137-~~), librust-serde-1+derive-dev (\u003e= 1.0.137-~~), librust-serde-json-1+default-dev (\u003e= 1.0.81-~~), librust-tokio-1+default-dev, librust-toml-0.8+default-dev, librust-zstd-0.13+default-dev"
   ],
   "Checksums-Sha256": [
-    "aaf27b23a2f3f3d2114f6c558c1b51df9bb5ebb7ea40a073f89f0eb979a31f37 3167 rust-rebuilderd_0.23.1-1.dsc 0bb6faf6dadf5e0857715e242156cab9aeba54cc79ba09351f682ad380cc8419 37011 rust-rebuilderd_0.23.1.orig.tar.gz 1f8b3ac3e5039236bb4151b351b4a6f64b09709bd8ffe4f1cd1e9041f8bf39a8 4484 rust-rebuilderd_0.23.1-1.debian.tar.xz"
+    "5a0226e83dd8a172b439fbfe63181045d2e1457a359df2fe1ed9068b63d9366c 3263 rust-rebuilderd_0.24.0-1.dsc 7dc43f32d64cc9aec6410fecc888a3988cbd7bf552b1a509234db417b8510579 39685 rust-rebuilderd_0.24.0.orig.tar.gz f97a929cbff84afe951397fa61536cd1240179ee6169ac603bf494aa3870b8f7 4572 rust-rebuilderd_0.24.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rebuilderd"
   ],
   "Files": [
-    "f5c2e4c6200d867922af1c9c4ec393f6 3167 rust-rebuilderd_0.23.1-1.dsc b6c1b2093adce7cfd9b5ab169f364ea7 37011 rust-rebuilderd_0.23.1.orig.tar.gz 7ca212297b703d99e73952a30c4474d7 4484 rust-rebuilderd_0.23.1-1.debian.tar.xz"
+    "35dd366d98212daf0c368306f820f394 3263 rust-rebuilderd_0.24.0-1.dsc 0fcbbf0b7a3620a72711aaa1718255a0 39685 rust-rebuilderd_0.24.0.orig.tar.gz d85a8e2a1b6231369380f973b4f0de54 4572 rust-rebuilderd_0.24.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-tokio-test-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Holger Levsen \u003cholger@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rebuilderd]"
   ],
   "Version": [
-    "0.23.1-1"
+    "0.24.0-1"
   ]
 }
