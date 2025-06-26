@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "python3-rocm-docs"
+    "python3-rocm-docs, python-rocm-docs-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-breathe, python3-fastjsonschema, python3-git, python3-github, python3-json5, python3-myst-nb, python3-pydata-sphinx-theme, python3-pytest, python3-setuptools, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-design, python3-sphinx-notfound-page, python3-yaml"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-breathe, python3-fastjsonschema, python3-git, python3-github, python3-json5, python3-myst-nb, python3-pydata-sphinx-theme, python3-pytest, python3-setuptools, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-design, python3-sphinx-notfound-page, python3-yaml, python3-doxysphinx (\u003e= 3.3.12-6~exp1), python3-mpire, python3-sphinx-book-theme (\u003e= 1.1.4), python3-sphinx-external-toc, python3-doc"
   ],
   "Checksums-Sha256": [
-    "be21d37752cea34e970a40982f2e4b808b349a80bc9924200fa432eee0acd32b 2349 rocm-docs-core_1.17.1-9.dsc f24a287c06e7f8557922cd5923a52ed1a5d60b5ef223f9e41adae0dc7a36bfe1 1373081 rocm-docs-core_1.17.1.orig.tar.gz 34420c07382d58e668834df247e76f51ea3d26eaee130b51afaa6485d9844e50 11184 rocm-docs-core_1.17.1-9.debian.tar.xz"
+    "74c3ef2180f45d7250a7c209e6bb853d908db92863f039ceda239ff2d678b511 2554 rocm-docs-core_1.20.0-1.dsc 96c80410ab8a67553734b2ab7aa598676a88a9a969f919ccf012d1452b896399 1373574 rocm-docs-core_1.20.0.orig.tar.gz 09b2c43cc0bdb412ca68596d0bdf1ac6c6b1a23c70da8df8cc8c8818aed3512e 13592 rocm-docs-core_1.20.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocm-docs-core"
   ],
   "Files": [
-    "76465957154b88cf37354bb0b3a2356b 2349 rocm-docs-core_1.17.1-9.dsc 5f5fb67f3e9d21dd890f4b36a455fb57 1373081 rocm-docs-core_1.17.1.orig.tar.gz 123c07c45d1bca9b4f316eec365a4fd9 11184 rocm-docs-core_1.17.1-9.debian.tar.xz"
+    "0f4198fa411e8f1cdf6e0fcecedd66bb 2554 rocm-docs-core_1.20.0-1.dsc 268ad16472ead750f7a4fa51207d7bc7 1373574 rocm-docs-core_1.20.0.orig.tar.gz 3dc8d79445644683c87f0244eae24ceb 13592 rocm-docs-core_1.20.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rocm-docs-core"
   ],
   "Package-List": [
-    "python3-rocm-docs deb python optional arch=all"
+    "python-rocm-docs-doc deb doc optional arch=all python3-rocm-docs deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Christian Bayle \u003cbayle@debian.org\u003e,"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/rocm-team/rocm-docs-core.git"
   ],
   "Version": [
-    "1.17.1-9"
+    "1.20.0-1"
   ]
 }
