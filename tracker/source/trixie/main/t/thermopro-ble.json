@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
   ],
   "Build-Depends-Indep": [
-    "python3-bleak \u003c!nocheck\u003e, python3-bleak-retry-connector \u003c!nocheck\u003e, python3-bluetooth-data-tools \u003c!nocheck\u003e, python3-bluetooth-sensor-state-data \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sensor-state-data \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "python3-bleak \u003c!nocheck\u003e, python3-bleak-retry-connector \u003c!nocheck\u003e, python3-bluetooth-data-tools \u003c!nocheck\u003e, python3-bluetooth-sensor-state-data (\u003e= 1.8.0) \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sensor-state-data \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "083139c83aba2903487d161e82464e54d519fca871b7c7fe6daafe3d223133f2 2663 thermopro-ble_0.11.0-1.dsc a6dbbb4492f56f85b6c4eb4286edf2401453492303269a13fb9fda6758f168dd 62330 thermopro-ble_0.11.0.orig.tar.gz a4443be584f112199764884f0d203c51f24a15f408fde6cb8430e0b6a2f0c52e 4420 thermopro-ble_0.11.0-1.debian.tar.xz"
+    "bdfc80c912714ba9e9e825fb7afc1c3a6116ea8b5eed393fe4959920348ee0a1 2577 thermopro-ble_0.13.0-1.dsc 712ef7f93f347be1ee697c625c14280f784d8d1b131edb84ab40d5d7c6daf913 69497 thermopro-ble_0.13.0.orig.tar.gz 477aeb04d5e90579becc2912d4b9618d1bd7feb61a741756e80ca50dc6f49c12 4256 thermopro-ble_0.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/thermopro-ble"
   ],
   "Files": [
-    "4ed65c0dc9c43fc541b472962a2d3deb 2663 thermopro-ble_0.11.0-1.dsc a56f4251a89d29d87f566cf665d93042 62330 thermopro-ble_0.11.0.orig.tar.gz d26dfa2602f0c444868cb78c9b43a445 4420 thermopro-ble_0.11.0-1.debian.tar.xz"
+    "f101e46c5713b8def2a3ad1dc51700c1 2577 thermopro-ble_0.13.0-1.dsc 92c45fa0e66e4fe53ff4a81e654772e9 69497 thermopro-ble_0.13.0.orig.tar.gz 2fba6a621e4c1b7e021ec02629ddd5ed 4256 thermopro-ble_0.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-bluetooth-sensor-state-data, python3-pytest, python3-pytest-asyncio"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/thermopro-ble.git"
   ],
   "Version": [
-    "0.11.0-1"
+    "0.13.0-1"
   ]
 }
