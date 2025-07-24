@@ -6,16 +6,19 @@
     "librust-prometheus-client-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dtoa-1+default-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-prometheus-client-derive-encode-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dtoa-1+default-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-prometheus-client-derive-encode-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "219df05fa538902a206ef7f3338397011e9170eecb02387c635ad7219b1ac7e8 2860 rust-prometheus-client_0.22.2-1.dsc 4b52bc9d199bdb53bb562e7b0698923db9cd073dd2b086807e636af8560cc0f3 57886 rust-prometheus-client_0.22.2.orig.tar.gz 7a0c04f0b87380bf4d3d3284f5f4dacda2a746bfd7f01c618dae0f6868eeec94 3296 rust-prometheus-client_0.22.2-1.debian.tar.xz"
+    "a23e7bd265bcf5033d4feafb994c9a06d5d99f160576a9dd2d383cad19b5d980 2920 rust-prometheus-client_0.22.2-3.dsc 4b52bc9d199bdb53bb562e7b0698923db9cd073dd2b086807e636af8560cc0f3 57886 rust-prometheus-client_0.22.2.orig.tar.gz 41e9ccc0a099df5f8c8fc986506d83d3d369c20f20f05e9e9b428cda532d1b1d 5464 rust-prometheus-client_0.22.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-prometheus-client"
   ],
   "Files": [
-    "7351e41f37c9ccbadf70e485feb4df00 2860 rust-prometheus-client_0.22.2-1.dsc 6754e7d07e17ab049cc2f5987b8d38e9 57886 rust-prometheus-client_0.22.2.orig.tar.gz 65d6363cc86ee52de8592b96c5a96e59 3296 rust-prometheus-client_0.22.2-1.debian.tar.xz"
+    "726273541f74a91c70a856cb89e3ddf3 2920 rust-prometheus-client_0.22.2-3.dsc 6754e7d07e17ab049cc2f5987b8d38e9 57886 rust-prometheus-client_0.22.2.orig.tar.gz dd79cebd34f71091e5594cca8af7ce0c 5464 rust-prometheus-client_0.22.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-criterion-0.5+default-dev, librust-pyo3-0.20+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-criterion-0.5+default-dev, librust-pyo3-0.22+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, python3-prometheus-client, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/prometheus-client]"
   ],
   "Version": [
-    "0.22.2-1"
+    "0.22.2-3"
   ]
 }
