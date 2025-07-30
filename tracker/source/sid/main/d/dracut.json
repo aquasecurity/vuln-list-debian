@@ -6,16 +6,16 @@
     "dracut-core, dracut, dracut-install, dracut-network, dracut-squash, dracut-live, dracut-config-generic, dracut-config-rescue, dracut-test"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), asciidoc-base, docbook-xml, docbook-xsl, libkmod-dev, pkgconf, systemd-dev, xsltproc"
+    "debhelper-compat (= 13), asciidoc-base, bash-completion, docbook-xml, docbook-xsl, libkmod-dev, pkgconf, shellcheck [!i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, shfmt [!i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, systemd-dev, xsltproc"
   ],
   "Checksums-Sha256": [
-    "92dbde6b25e68d3b5812760fd8b3846944753325485eab810c57946bf758b6ca 2934 dracut_107-1.dsc 2849dce07a760e0677fdac9ad685ce99a54782b4b4af11a166184789a1312bfa 409092 dracut_107.orig.tar.xz fd98bf1d58e366ffdbbc02f4f7317782d62277bc7de305214185ca16a7081e29 19128 dracut_107-1.debian.tar.xz"
+    "c678526a11b347ed3d55545026ef136d9ecf976292da3e84724b865d38e92ca7 3049 dracut_107-2.dsc 2849dce07a760e0677fdac9ad685ce99a54782b4b4af11a166184789a1312bfa 409092 dracut_107.orig.tar.xz 0948e1b60ea15438646aa0333677e895052511780a02c8eebc707cd211ee6281 23736 dracut_107-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dracut"
   ],
   "Files": [
-    "a3c5ad7a98263b4ac734866f629185bf 2934 dracut_107-1.dsc f0988032242fec1539e3a11c4d3858a2 409092 dracut_107.orig.tar.xz be5db08cdfd73654cff6ed8cc2414d83 19128 dracut_107-1.debian.tar.xz"
+    "e926c1f6102ade5132d72835da5875c6 3049 dracut_107-2.dsc f0988032242fec1539e3a11c4d3858a2 409092 dracut_107.orig.tar.xz cfdfff94f43c12480ebf1cdd418a3e6f 23736 dracut_107-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "utils"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "btrfs-progs, busybox, cryptsetup, dbus, fdisk, iproute2, ipxe-qemu, isc-dhcp-client, isc-dhcp-server, kbd, linux-image-generic, lvm2, make, mdadm, mount, nbd-client, nbd-server, nfs-kernel-server, ovmf, parted, procps, qemu-efi-aarch64, qemu-efi-arm, qemu-kvm, seabios, squashfs-tools, systemd, systemd-boot-efi, systemd-container, systemd-coredump, systemd-cryptsetup, systemd-repart, systemd-sysv, systemd-ukify, sysvinit-utils, util-linux, zstd"
+    "btrfs-progs, busybox, cryptsetup, curl, dbus, fdisk, iproute2, ipxe-qemu, isc-dhcp-client, isc-dhcp-server, kbd, linux-image-generic, lvm2, make, mdadm, mount, nbd-client, nbd-server, nfs-kernel-server, ovmf, parted, procps, qemu-efi-aarch64, qemu-efi-arm, qemu-system-native, seabios, squashfs-tools, systemd, systemd-boot-efi, systemd-container, systemd-coredump, systemd-cryptsetup, systemd-repart, systemd-sysv, systemd-ukify, sysvinit-utils, util-linux, zstd"
   ],
   "Uploaders": [
     "Benjamin Drung \u003cbdrung@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/dracut.git"
   ],
   "Version": [
-    "107-1"
+    "107-2"
   ]
 }
