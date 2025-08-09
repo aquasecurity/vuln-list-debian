@@ -1,0 +1,65 @@
+{
+  "Architecture": [
+    "any all"
+  ],
+  "Binary": [
+    "rustc, libstd-rust-1.85, libstd-rust-dev, libstd-rust-dev-windows, libstd-rust-dev-wasm32, rust-gdb, rust-lldb, rust-llvm, rust-doc, rust-src, rust-clippy, rustfmt, rust-analyzer, rust-all, cargo, cargo-doc"
+  ],
+  "Build-Depends": [
+    "debhelper (\u003e= 9), debhelper-compat (= 13), dpkg-dev (\u003e= 1.17.14), python3:native, cargo:native (\u003e= 1.84.0+dfsg) \u003c!pkg.rustc.dlstage0\u003e, rustc:native (\u003e= 1.84.0+dfsg) \u003c!pkg.rustc.dlstage0\u003e, rustc:native (\u003c= 1.85.0+dfsg++) \u003c!pkg.rustc.dlstage0\u003e, llvm-19-dev:native, llvm-19-tools:native, gcc-mingw-w64-x86-64-posix:native [amd64] \u003cpkg.rustc.windows\u003e, gcc-mingw-w64-i686-posix:native [i386] \u003cpkg.rustc.windows\u003e, libllvm19 (\u003e= 1:19.0.0), libclang-rt-19-dev:native, libclang-rt-19-dev, cmake (\u003e= 3.0), pkgconf:native, pkgconf, zlib1g-dev:native, zlib1g-dev, liblzma-dev:native, bash-completion, libcurl4-openssl-dev | libcurl4-gnutls-dev, libssh2-1-dev, libssl-dev, libsqlite3-dev, libgit2-dev (\u003e= 1.9), libgit2-dev (\u003c\u003c 1.10~~), libhttp-parser-dev, libonig-dev, binutils (\u003e= 2.26) \u003c!nocheck\u003e | binutils-2.26 \u003c!nocheck\u003e, git \u003c!nocheck\u003e, procps \u003c!nocheck\u003e, gdb (\u003e= 7.12) \u003c!nocheck\u003e, curl \u003cpkg.rustc.dlstage0\u003e, ca-certificates \u003cpkg.rustc.dlstage0\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "wasi-libc (\u003e= 0.0~git20241209.574b88d~~) \u003c!nowasm\u003e, wasi-libc (\u003c= 0.0~git20241209.574b88d++) \u003c!nowasm\u003e, clang-19:native"
+  ],
+  "Checksums-Sha256": [
+    "d8221d3e2f3526b5911cb763a9afb2f2b3e6fc598b8279ca164c7db52022e56a 4366 rustc_1.85.0+dfsg3-1.dsc 664df803dead620ebe459dc37fae7a5bc4aabe09d9bae0dd81762ea18225a36d 230724 rustc_1.85.0+dfsg3.orig-extra.tar.xz 8cfaf52ab168a12c3082b5956bcc16c8969d8791b2fe54ed5192672b25518af2 83014324 rustc_1.85.0+dfsg3.orig.tar.xz aa398a4a046d266eb2fd22df96b43c01ce190e1e09175929e44881faedd73aa4 146724 rustc_1.85.0+dfsg3-1.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/main/r/rustc"
+  ],
+  "Files": [
+    "f28ab76fcc5e5191f8c0b1a82a12630f 4366 rustc_1.85.0+dfsg3-1.dsc 0697e6e2b9073ef65845af85971053f9 230724 rustc_1.85.0+dfsg3.orig-extra.tar.xz 109ccb63a6dde0ed2e5f3d81f78aa135 83014324 rustc_1.85.0+dfsg3.orig.tar.xz 403470dbbe83c4ed22410bd498d808d0 146724 rustc_1.85.0+dfsg3-1.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "http://www.rust-lang.org/"
+  ],
+  "Maintainer": [
+    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
+  ],
+  "Package": [
+    "rustc"
+  ],
+  "Package-List": [
+    "cargo deb devel optional arch=any cargo-doc deb doc optional arch=all profile=!nodoc libstd-rust-1.85 deb libs optional arch=any libstd-rust-dev deb libdevel optional arch=any libstd-rust-dev-wasm32 deb libdevel optional arch=all profile=!nowasm libstd-rust-dev-windows deb libdevel optional arch=amd64,i386 profile=pkg.rustc.windows rust-all deb devel optional arch=all rust-analyzer deb devel optional arch=any rust-clippy deb devel optional arch=any rust-doc deb doc optional arch=all profile=!nodoc rust-gdb deb devel optional arch=all rust-lldb deb devel optional arch=all rust-llvm deb devel optional arch=any rust-src deb devel optional arch=all rustc deb devel optional arch=any rustfmt deb devel optional arch=any"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "rust"
+  ],
+  "Standards-Version": [
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "ca-certificates"
+  ],
+  "Uploaders": [
+    "Ximin Luo \u003cinfinity0@debian.org\u003e, Sylvestre Ledru \u003csylvestre@debian.org\u003e, Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/rust-team/rust"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/rust-team/rust.git"
+  ],
+  "Version": [
+    "1.85.0+dfsg3-1"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "Architecture": [
+    "all i386 amd64 arm64 riscv64 loong64"
+  ],
+  "Binary": [
+    "ipxe, ipxe-qemu, grub-ipxe"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), dh-exec, liblzma-dev:native, xxd, zlib1g-dev:native, expect \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Arch": [
+    "seabios [i386 amd64] \u003c!nocheck\u003e, ovmf [amd64] \u003c!nocheck\u003e, qemu-system-i386 [i386] \u003c!nocheck\u003e, qemu-system-amd64 [amd64] \u003c!nocheck\u003e, qemu-efi-aarch64 [arm64] \u003c!nocheck\u003e, qemu-system-arm64 [arm64] \u003c!nocheck\u003e, qemu-efi-riscv64 [riscv64] \u003c!nocheck\u003e, qemu-system-riscv64 [riscv64] \u003c!nocheck\u003e, qemu-efi-loongarch64 [loong64] \u003c!nocheck\u003e, qemu-system-loong64 [loong64] \u003c!nocheck\u003e, dosfstools:native \u003c!nocheck\u003e, mtools \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "dosfstools:native, gcc-x86-64-linux-gnu, gcc-aarch64-linux-gnu, gcc-loongarch64-linux-gnu, gcc-riscv64-linux-gnu, isolinux, mtools, syslinux-common, xorriso, seabios \u003c!nocheck\u003e, ovmf \u003c!nocheck\u003e, qemu-efi-aarch64 \u003c!nocheck\u003e, qemu-efi-riscv64 \u003c!nocheck\u003e, qemu-efi-loongarch64 \u003c!nocheck\u003e, qemu-system-i386 \u003c!nocheck\u003e, qemu-system-amd64 \u003c!nocheck\u003e, qemu-system-arm64 \u003c!nocheck\u003e, qemu-system-riscv64 \u003c!nocheck\u003e, qemu-system-loong64 \u003c!nocheck\u003e"
+  ],
+  "Checksums-Sha256": [
+    "879bd5d656fb064bd60cd5fd4ca5803c1eae90c26bf1c95f8e641098fe8c6f57 3398 ipxe_1.21.1+git20250501.dad20602+dfsg-1.dsc d11c3fdca632eef46f877be0a0e059b2a6b25febbd51e632192260384871dc7c 2891228 ipxe_1.21.1+git20250501.dad20602+dfsg.orig.tar.xz 85d41a1587bf300f3b060d17516d6dc2b9efade2fc621e15d0ca1eb3e8de7f08 24844 ipxe_1.21.1+git20250501.dad20602+dfsg-1.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/main/i/ipxe"
+  ],
+  "Files": [
+    "cd3cc98374d974ee4dfb289cfe8791f9 3398 ipxe_1.21.1+git20250501.dad20602+dfsg-1.dsc bcc91e903af3e6ba26c4ee2793865e26 2891228 ipxe_1.21.1+git20250501.dad20602+dfsg.orig.tar.xz f50a957c20692ece5a38651d33748077 24844 ipxe_1.21.1+git20250501.dad20602+dfsg-1.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://ipxe.org/"
+  ],
+  "Maintainer": [
+    "Miao Wang \u003cshankerwangmiao@gmail.com\u003e"
+  ],
+  "Package": [
+    "ipxe"
+  ],
+  "Package-List": [
+    "grub-ipxe deb admin optional arch=i386,amd64,arm64,riscv64,loong64 ipxe deb admin optional arch=all ipxe-qemu deb admin optional arch=all"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "admin"
+  ],
+  "Standards-Version": [
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "debian-installer-13-netboot-amd64, expect, ovmf, qemu-efi-aarch64, qemu-efi-loongarch64, qemu-efi-riscv64, qemu-system-amd64, qemu-system-arm64, qemu-system-i386, qemu-system-loong64, qemu-system-riscv64, seabios, xxd"
+  ],
+  "Uploaders": [
+    "Shengqi Chen \u003charry@debian.org\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/debian/ipxe"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/debian/ipxe.git"
+  ],
+  "Version": [
+    "1.21.1+git20250501.dad20602+dfsg-1"
+  ]
+}
