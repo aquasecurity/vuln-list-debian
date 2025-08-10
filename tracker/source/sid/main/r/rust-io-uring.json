@@ -6,16 +6,19 @@
     "librust-io-uring-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.98-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen+default-dev (\u003c\u003c 0.72-~~) \u003c!nocheck\u003e, librust-bindgen+default-dev (\u003e= 0.69-~~) \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.98-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ecb7ba9391eabce33d14f92ff0e7ff02b15e141f7614a0ee36b5ae3e4b833ed8 1764 rust-io-uring_0.6.4-4.dsc 595a0399f411a508feb2ec1e970a4a30c249351e30208960d58298de8660b0e5 55060 rust-io-uring_0.6.4.orig.tar.gz b6cbd7bf4f6614685dcf82500514562cf7c152fd440eb9a907b45533a47b1247 5024 rust-io-uring_0.6.4-4.debian.tar.xz"
+    "34da832dc73f99ab31f3bcd44bb473621caa9aec39f7689d98817d46a0668493 2574 rust-io-uring_0.7.8-1.dsc b86e202f00093dcba4275d4636b93ef9dd75d025ae560d2521b45ea28ab49013 94958 rust-io-uring_0.7.8.orig.tar.gz fb17477f7196ce17890686046eeda99c8e9fa9c2c080e9844712ab631c4342bc 4716 rust-io-uring_0.7.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-io-uring"
   ],
   "Files": [
-    "959ec983bd3af695a87e725b96f76fb9 1764 rust-io-uring_0.6.4-4.dsc 574f1e391a79fd19c7fc49953c3ab8ad 55060 rust-io-uring_0.6.4.orig.tar.gz 192b1423db7a3ff1dcad76495d6c45de 5024 rust-io-uring_0.6.4-4.debian.tar.xz"
+    "331ab16f845e169f0e8737b3f72ff120 2574 rust-io-uring_0.7.8-1.dsc f635d9f40097497449c37269ada664bd 94958 rust-io-uring_0.7.8.orig.tar.gz 3154b2dba3dafe9124fa3d6987877ffa 4716 rust-io-uring_0.7.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/io-uring]"
   ],
   "Version": [
-    "0.6.4-4"
+    "0.7.8-1"
   ]
 }

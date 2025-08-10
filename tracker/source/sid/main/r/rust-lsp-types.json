@@ -6,19 +6,25 @@
     "librust-lsp-types-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.34-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.34-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.50-~~) \u003c!nocheck\u003e, librust-serde-repr-0.1+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e, librust-url-2+serde-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-fluent-uri-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.34-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.34-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.50-~~) \u003c!nocheck\u003e, librust-serde-repr-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4c5ebe3cf14de302bc944acac8ad3e339fe4dee3e1482e1b887e6ef5888617b2 2525 rust-lsp-types_0.94.1-2.dsc c66bfd44a06ae10647fe3f8214762e9369fd4248df1350924b4ef9e770a85ea1 66997 rust-lsp-types_0.94.1.orig.tar.gz f83ec607853aa5a85d90a23ed602709bedd32468b1c2a113182ad5eef3ce0f61 3260 rust-lsp-types_0.94.1-2.debian.tar.xz"
+    "60061cd8b9c2fc48731753841d24690176968145c29ffb310bfe48db30b17f9a 1945 rust-lsp-types_0.97.0-2.dsc 53353550a17c04ac46c585feb189c2db82154fc84b79c7a66c96c2c644f66071 70764 rust-lsp-types_0.97.0.orig.tar.gz 8b04dd5329c07b354a07616f1c8c0030816765142813a7f2051d50b9fc247560 2936 rust-lsp-types_0.97.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lsp-types"
   ],
   "Files": [
-    "cc5240495c51533e0cc3c2aa82193153 2525 rust-lsp-types_0.94.1-2.dsc d2e60fdd6c6da79797e5fae2ddba7c7f 66997 rust-lsp-types_0.94.1.orig.tar.gz f8b2426da34873b82729ca5fa76f09ef 3260 rust-lsp-types_0.94.1-2.debian.tar.xz"
+    "71fe03be611d89ca5aa47830b5d4d248 1945 rust-lsp-types_0.97.0-2.dsc df1e41cf47b1956ba7e38511610db9a7 70764 rust-lsp-types_0.97.0.orig.tar.gz 54f798cb8c396d21c284d0e42121e7d0 2936 rust-lsp-types_0.97.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/gluon-lang/lsp-types"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lsp-types]"
   ],
   "Version": [
-    "0.94.1-2"
+    "0.97.0-2"
   ]
 }

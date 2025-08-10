@@ -6,19 +6,25 @@
     "librust-serde-path-to-error-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a02363e5b58d84716ea977ae3f26654009842b8f0e3d5032119dab319b0ca13f 2405 rust-serde-path-to-error_0.1.9-1.dsc 26b04f22b563c91331a10074bda3dd5492e3cc39d56bd557e91c0af42b6c7341 16545 rust-serde-path-to-error_0.1.9.orig.tar.gz ae1317e1691fb1199154c7b9ca849a6fa4a608cf487bd4ce892ebd891b1fb99b 2580 rust-serde-path-to-error_0.1.9-1.debian.tar.xz"
+    "ea61f91af4e2cf7348b0a19220d093f62309b063322220e0acb8b376eac10321 1900 rust-serde-path-to-error_0.1.17-2.dsc 59fab13f937fa393d08645bf3a84bdfe86e296747b506ada67bb15f10f218b2a 17662 rust-serde-path-to-error_0.1.17.orig.tar.gz 32ce762ed5b3d257e88bd82842195f695f3e0c91be550800967dca769d1ec293 2716 rust-serde-path-to-error_0.1.17-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-path-to-error"
   ],
   "Files": [
-    "a9eb8787466dab79dc884c0174b510f1 2405 rust-serde-path-to-error_0.1.9-1.dsc 955507ef9c7e53e52f992f0b9dd1350c 16545 rust-serde-path-to-error_0.1.9.orig.tar.gz e3cff106d6307f1edcaaaadce902226b 2580 rust-serde-path-to-error_0.1.9-1.debian.tar.xz"
+    "f5e78657bd703c19c63da89eeae6ee2b 1900 rust-serde-path-to-error_0.1.17-2.dsc c289e49bd6bb7402a3ccdc85fa36f535 17662 rust-serde-path-to-error_0.1.17.orig.tar.gz a9e1b564a30d31d9b7b365380cd42483 2716 rust-serde-path-to-error_0.1.17-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/path-to-error"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/serde-path-to-error"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-path-to-error]"
   ],
   "Version": [
-    "0.1.9-1"
+    "0.1.17-2"
   ]
 }

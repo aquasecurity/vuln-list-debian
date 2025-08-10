@@ -6,19 +6,19 @@
     "reform-tools, reform-desktop-full, reform-desktop-minimal, reform2-lpc-dkms"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-dkms, help2man, python3-psutil, python3-usb1"
+    "debhelper-compat (= 13), dh-sequence-dkms, help2man, libglib2.0-bin \u003c!nocheck\u003e, python3-psutil, python3-usb1"
   ],
   "Checksums-Sha256": [
-    "a9698617165672de19180eaac245662915511f0b74c8d5491ee072c1d6c9672c 2408 reform-tools_1.71-2.dsc de8a7655413dbfd9b552a5031314f2a87623e5eade1e9ba489707f6ea3a02e00 618692 reform-tools_1.71.orig.tar.gz 44ec00f05859a3d3fe67504cc1fcca94edc9e0b65dbfadb97a0b05b54106ceac 11476 reform-tools_1.71-2.debian.tar.xz"
+    "6d035daaf759e5f83064ff4bc09a530409d54d0a04fe2d02849f44aabeea498e 2489 reform-tools_1.76-2.dsc fef8534ab05119bc0ce0c23a075da56f5b53e5c7484e5284362b2a48f171d536 3789647 reform-tools_1.76.orig.tar.gz 771856cc31d878cfc0adde04d312095658bdbda7a6a791f88dcb2c2875078bba 12768 reform-tools_1.76-2.debian.tar.xz"
   ],
   "Dgit": [
-    "bcf06c824512c155bf5abe1117a1801cb9b8af0a debian archive/debian/1.71-2 https://git.dgit.debian.org/reform-tools"
+    "08b1e96e0c73c2f9572054a87cac84c43380ae15 debian archive/debian/1.76-2 https://git.dgit.debian.org/reform-tools"
   ],
   "Directory": [
     "pool/main/r/reform-tools"
   ],
   "Files": [
-    "aa602178c41a56a5b7de9173df036f28 2408 reform-tools_1.71-2.dsc 20623b415ffe1cdd6f1098fdf4a81e57 618692 reform-tools_1.71.orig.tar.gz a5d58b44b37d1047f483d0e1b51d66e3 11476 reform-tools_1.71-2.debian.tar.xz"
+    "96b7904758f873bf066053b720ccb027 2489 reform-tools_1.76-2.dsc 58e6b88a5592d9e7ac4e62d206cf65fe 3789647 reform-tools_1.76.orig.tar.gz b808d11e564190f629cd58907b0aa4c4 12768 reform-tools_1.76-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,10 @@
     "4.7.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-dkms"
+    "autopkgtest, autopkgtest-pkg-dkms"
+  ],
+  "Testsuite-Triggers": [
+    "linux-image-arm64"
   ],
   "Uploaders": [
     "Johannes Schauer Marin Rodrigues \u003cjosch@debian.org\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/reform-team/reform-tools.git"
   ],
   "Version": [
-    "1.71-2"
+    "1.76-2"
   ]
 }
