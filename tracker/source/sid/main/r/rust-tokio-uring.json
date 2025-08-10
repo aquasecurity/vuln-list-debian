@@ -6,16 +6,19 @@
     "librust-tokio-uring-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-io-uring-0.6+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.80-~~) \u003c!nocheck\u003e, librust-scoped-tls-1+default-dev \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-socket2-0.5+all-dev \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.26-~~) \u003c!nocheck\u003e, librust-io-uring-0.7+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.80-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-socket2-0.5+all-dev \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e, librust-tokio-1+sync-dev (\u003e= 1.30-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "193cb2e37909a83ac43bf6744b8d1c6141e1dc0745884018f74952770fd95ff6 2842 rust-tokio-uring_0.4.0-3.dsc 0d5e02bb137e030b3a547c65a3bd2f1836d66a97369fdcc69034002b10e155ef 58580 rust-tokio-uring_0.4.0.orig.tar.gz f1b0da5874edde8bf2672b2fb006968981b2c7a768ee3db14df25d24420989df 4860 rust-tokio-uring_0.4.0-3.debian.tar.xz"
+    "f3ebcc881d9f96af25ff4afd0f421327e830f57402af3ef637c484d0bd91910d 2932 rust-tokio-uring_0.5.0-1.dsc 748482e3e13584a34664a710168ad5068e8cb1d968aa4ffa887e83ca6dd27967 90183 rust-tokio-uring_0.5.0.orig.tar.gz 18006425cb1af643962303ad894a7906368d6dc02de13a3f79ab53240f4eab66 5376 rust-tokio-uring_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokio-uring"
   ],
   "Files": [
-    "9d84a73c2e02ab147b2fdf4f452127ad 2842 rust-tokio-uring_0.4.0-3.dsc 71d538ebbfd3aebefaf53d284140afba 58580 rust-tokio-uring_0.4.0.orig.tar.gz 5a3e4f3f9707e276958113fc71299559 4860 rust-tokio-uring_0.4.0-3.debian.tar.xz"
+    "e494dcbaaffeab2999e94ed9df009871 2932 rust-tokio-uring_0.5.0-1.dsc d8519abdd257d5f86253602d0e44d164 90183 rust-tokio-uring_0.5.0.orig.tar.gz 46f596e705cdc448d3ecd4bbf4ce3f58 5376 rust-tokio-uring_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-futures-0.3+default-dev, librust-iai-0.1+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-test-0.4+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-iai-0.1+default-dev, librust-nix+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-test-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokio-uring]"
   ],
   "Version": [
-    "0.4.0-3"
+    "0.5.0-1"
   ]
 }

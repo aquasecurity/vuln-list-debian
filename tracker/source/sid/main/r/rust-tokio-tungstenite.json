@@ -6,16 +6,19 @@
     "librust-tokio-tungstenite-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-util-0.3+sink-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+net-dev \u003c!nocheck\u003e, librust-tungstenite-0.24+handshake-dev \u003c!nocheck\u003e, librust-tungstenite-0.24-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-util-0.3+sink-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev \u003c!nocheck\u003e, librust-tokio-1+net-dev \u003c!nocheck\u003e, librust-tungstenite-0.24+handshake-dev \u003c!nocheck\u003e, librust-tungstenite-0.24-dev \u003c!nocheck\u003e, librust-tungstenite-dev (\u003e= 0.24.0-4) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "48ba9851edbdeb113f34b4787a39b31750761f34c024777e44c7c92118a681b2 2326 rust-tokio-tungstenite_0.24.0-3.dsc edc5f74e248dc973e0dbb7b74c7e0d6fcc301c694ff50049504004ef4d0cdcd9 28904 rust-tokio-tungstenite_0.24.0.orig.tar.gz 94c0a9ea79d608fe68a0e5b1822f31d7c383af1f9577c8339a0109e389883eb6 4244 rust-tokio-tungstenite_0.24.0-3.debian.tar.xz"
+    "83eb2ac90d44e543dad295a142ee69bc9f8b076ef58476da0a9fc2585a8c3900 3133 rust-tokio-tungstenite_0.24.0-4.dsc edc5f74e248dc973e0dbb7b74c7e0d6fcc301c694ff50049504004ef4d0cdcd9 28904 rust-tokio-tungstenite_0.24.0.orig.tar.gz ada8478765594643a1c3197f0566b26cadd2063a9f49ebbb3a12733439d42924 4868 rust-tokio-tungstenite_0.24.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokio-tungstenite"
   ],
   "Files": [
-    "7a41b2cdffa2fcd4fd18d543618d6719 2326 rust-tokio-tungstenite_0.24.0-3.dsc 8bec7a7dfae60e36af46bad5bd2aafe1 28904 rust-tokio-tungstenite_0.24.0.orig.tar.gz d21f4995039c89df09afa16b842786d3 4244 rust-tokio-tungstenite_0.24.0-3.debian.tar.xz"
+    "a0af02477d9d6f5ed20548f842247688 3133 rust-tokio-tungstenite_0.24.0-4.dsc 8bec7a7dfae60e36af46bad5bd2aafe1 28904 rust-tokio-tungstenite_0.24.0.orig.tar.gz e47a33178e3f8fe9e8b9df24dab31d50 4868 rust-tokio-tungstenite_0.24.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.11+default-dev, librust-futures-channel-0.3+default-dev, librust-hyper-0.14+http1-dev, librust-hyper-0.14+server-dev, librust-tokio-1+io-std-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, rustc"
+    "dh-cargo, librust-env-logger-0.11+default-dev, librust-futures-channel-0.3+default-dev, librust-http-body-util-0.1+default-dev, librust-hyper-1+http1-dev, librust-hyper-1+server-dev, librust-hyper-util-0.1+default-dev, librust-hyper-util-0.1+tokio-dev, librust-tokio-1+io-std-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokio-tungstenite]"
   ],
   "Version": [
-    "0.24.0-3"
+    "0.24.0-4"
   ]
 }
