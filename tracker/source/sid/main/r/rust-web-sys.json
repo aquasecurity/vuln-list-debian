@@ -6,16 +6,19 @@
     "librust-web-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-js-sys-0.3+default-dev (\u003e= 0.3.64-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+default-dev (\u003e= 0.2.87-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-js-sys-0.3+std-dev (\u003c\u003c 0.3.78-~~) \u003c!nocheck\u003e, librust-js-sys-0.3+std-dev (\u003e= 0.3.77-~~) \u003c!nocheck\u003e, librust-js-sys-0.3-dev (\u003c\u003c 0.3.78-~~) \u003c!nocheck\u003e, librust-js-sys-0.3-dev (\u003e= 0.3.77-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+std-dev (\u003c\u003c 0.2.101-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+std-dev (\u003e= 0.2.100-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2-dev (\u003c\u003c 0.2.101-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2-dev (\u003e= 0.2.100-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "560b4089e416daf85f99253bf732b5e047f31dc42e0f2dcb2bf867792f779937 2469 rust-web-sys_0.3.64-2.dsc 9b85cbef8c220a6abc02aefd892dfc0fc23afb1c6a426316ec33253a3877249b 725584 rust-web-sys_0.3.64.orig.tar.gz 642f5cec3570b3d1b8a2906bf67d6d842cc7697726c9859f82a573418131040d 48984 rust-web-sys_0.3.64-2.debian.tar.xz"
+    "ba17e84f59ee4dedee699c7195ce3fc354402e9f676b5e92030d82efe680af94 2807 rust-web-sys_0.3.77-1.dsc 33b6dd2ef9186f1f2072e409e99cd22a975331a6b3591b12c764e0e55c60d5d2 638246 rust-web-sys_0.3.77.orig.tar.gz a315fd1121b68a7f637168c7b5e0510b7277c7f1831543e1c9024fc9ef608e4c 44684 rust-web-sys_0.3.77-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-web-sys"
   ],
   "Files": [
-    "d1470b05acc83af800cdf6dc6d704ab1 2469 rust-web-sys_0.3.64-2.dsc 1f1e8b52fa04ca808c0bf41caf93d1f0 725584 rust-web-sys_0.3.64.orig.tar.gz 199356a10c115080297c6c179c193886 48984 rust-web-sys_0.3.64-2.debian.tar.xz"
+    "9904e490d9b1ac6ef97694a47a271cc2 2807 rust-web-sys_0.3.77-1.dsc c63a57a84e0b51be7a819a7989a7a821 638246 rust-web-sys_0.3.77.orig.tar.gz 6ea7fff98750de27b510129a8d7bb504 44684 rust-web-sys_0.3.77-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-wasm-bindgen-futures-0.4+default-dev, librust-wasm-bindgen-test-0.3+default-dev"
+    "dh-cargo, librust-futures-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Nicolas Braud-Santoni \u003cnicoo@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/web-sys]"
   ],
   "Version": [
-    "0.3.64-2"
+    "0.3.77-1"
   ]
 }
