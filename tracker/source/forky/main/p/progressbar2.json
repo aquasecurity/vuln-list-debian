@@ -6,16 +6,19 @@
     "python3-progressbar2"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-dill, python3-freezegun \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-python-utils, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools, pybuild-plugin-pyproject"
+  ],
+  "Build-Depends-Indep": [
+    "python3-freezegun \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-dill \u003c!nocheck\u003e, python3-python-utils \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "36c064f9455fceedd7a4bfaef39a12eeb2ea69d97a6609b86d3aa8ccbde3b00a 2291 progressbar2_4.3b.0-2.dsc 6047c97aa1a8068bf58715417a4146cc84334d1fbee061cc5570cda6aa24fbe2 59638 progressbar2_4.3b.0.orig.tar.gz 60aa6e6fde17aa3eee58a7d07d3ef74c953b8937a7bf1e6e4b79acd4ffbe0984 15312 progressbar2_4.3b.0-2.debian.tar.xz"
+    "886504fc4c0ea1bcc5510faaa9ba557888db134187dd6265a80d11b0edb5ef63 2265 progressbar2_4.5.0-1.dsc 5a5faece158050d60ee36a7f61fd3890ffd1bdfde5c25171829bc6cecf9a45ad 91997 progressbar2_4.5.0.orig.tar.gz 53dd71f93d37ba8af7f0b2fcaf9ddc6e28c27694b348ae7d20e24eb845692cc1 19272 progressbar2_4.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/progressbar2"
   ],
   "Files": [
-    "ef87e13cac0015f2d549aec41afcc145 2291 progressbar2_4.3b.0-2.dsc 057cf4294de9988e521414c62449a5b2 59638 progressbar2_4.3b.0.orig.tar.gz f1c6c8c38ae9b12beec89e43ad7d8900 15312 progressbar2_4.3b.0-2.debian.tar.xz"
+    "995dbb828994a4e2a25886f5bde91bfe 2265 progressbar2_4.5.0-1.dsc b69d964631d63f9586245ec0b64423cf 91997 progressbar2_4.5.0.orig.tar.gz a91293ef9f47c3b8a805ee894c3998c7 19272 progressbar2_4.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-dill, python3-freezegun, python3-pytest, python3-pytest-cov"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e"
+    "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/progressbar2"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/progressbar2.git"
   ],
   "Version": [
-    "4.3b.0-2"
+    "4.5.0-1"
   ]
 }

@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-dateutil \u003c!nodoc\u003e, python3-django \u003c!nodoc\u003e, python3-psycopg2 \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "postgresql, python3-dateutil \u003c!nodoc\u003e, python3-django \u003c!nodoc\u003e, python3-freezegun \u003c!nocheck\u003e, python3-psycopg2, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-pytzdata \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1730b1ae7045140ce2721e5c6f9a50728fc2347c525257722184ee5d53139f6e 2285 django-auditlog_3.1.2-1.dsc a37dbefbc9809a5101edea876b455eb0dd16a3193691d9da4ab6ea78d68e150a 65316 django-auditlog_3.1.2.orig.tar.gz e0f953d495e6f09183288de2b12295b11dbf011655270af7fdb94859ec151214 2592 django-auditlog_3.1.2-1.debian.tar.xz"
+    "d8bd800f85af9c9dd14934e232e6048e7897e9fcbfec3e21a8f52eb34eb138b6 2524 django-auditlog_3.2.1-1.dsc 1ab6267464adb9f9d4a2690009e9824bada2be7fcbfa4e4aba9f294749c7bdf7 68634 django-auditlog_3.2.1.orig.tar.gz 1723f3702bfe2ebd02e5663ef8f83e1f3caf8017a9d78afc9c8bcefb78dba408 4996 django-auditlog_3.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/django-auditlog"
   ],
   "Files": [
-    "782ec2e313b254bc085e3dff7824057e 2285 django-auditlog_3.1.2-1.dsc 144ff1f2f0e571673f37504c3f3443d1 65316 django-auditlog_3.1.2.orig.tar.gz 7f520720cd5883f33a5a8df626af36d1 2592 django-auditlog_3.1.2-1.debian.tar.xz"
+    "91bc9be7a641cbc293f97b57202b8900 2524 django-auditlog_3.2.1-1.dsc fc7470cee401314e0b19297e08309a9c 68634 django-auditlog_3.2.1.orig.tar.gz 47b10c64b44d85750019bf4dba07be58 4996 django-auditlog_3.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.7.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "postgresql, python3-freezegun, python3-psycopg2, python3-pytzdata, tzdata, tzdata-legacy"
+  ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/django-auditlog.git"
   ],
   "Version": [
-    "3.1.2-1"
+    "3.2.1-1"
   ]
 }

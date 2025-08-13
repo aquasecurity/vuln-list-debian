@@ -6,16 +6,19 @@
     "librust-symphonia-codec-aac-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5bf85e0235337b18b4a9d26383833c4fbe6551f69d26ec7d3d066019b4d153d7 2118 rust-symphonia-codec-aac_0.5.2-1.dsc 6fcdd4a10695ca0528572360ec020586320357350eb62791693667e7de8c871a 24929 rust-symphonia-codec-aac_0.5.2.orig.tar.gz 95d4a396a03b1d37ca08cf6acd933571d7359cf9f1dc55a46d0794aa45b01b02 2284 rust-symphonia-codec-aac_0.5.2-1.debian.tar.xz"
+    "d27a740f10ec0d9cffaef997f2b5ab674564ecb096ffdf2a40eed54d2ecc4c1a 2486 rust-symphonia-codec-aac_0.5.4-1.dsc cdbf25b545ad0d3ee3e891ea643ad115aff4ca92f6aec472086b957a58522f70 25145 rust-symphonia-codec-aac_0.5.4.orig.tar.gz 0b8e49ba5bfbe7852f8b73bfc076b31d21c88ddbce1781aac86224dba5880a47 2212 rust-symphonia-codec-aac_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-codec-aac"
   ],
   "Files": [
-    "95a184604d395b2bbf8abaf293746e10 2118 rust-symphonia-codec-aac_0.5.2-1.dsc 66849f1a4e8897bb88fc2b9aff1c5728 24929 rust-symphonia-codec-aac_0.5.2.orig.tar.gz 46fa68576a0152ee3a4800328deaac7c 2284 rust-symphonia-codec-aac_0.5.2-1.debian.tar.xz"
+    "c471057d4958baca2eafe2880cdc1497 2486 rust-symphonia-codec-aac_0.5.4-1.dsc 8408f2e447a6c623fc3c864e8d05bfbf 25145 rust-symphonia-codec-aac_0.5.4.orig.tar.gz 06b2681965b7b10134af3deb3220b815 2212 rust-symphonia-codec-aac_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-codec-aac]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-symphonia-format-isomp4-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev (\u003e= 0.8.17-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-utils-xiph-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev (\u003e= 0.8.17-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-utils-xiph-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "09550e8bf7ebb51e71401664c620f966b1702f20246ba6d7980dabc110498b5d 2305 rust-symphonia-format-isomp4_0.5.2-1.dsc c1818f6f54b4eaba5ec004a8dbcca637c57e617eb1ff4c9addbd3fc065eba437 36184 rust-symphonia-format-isomp4_0.5.2.orig.tar.gz 295666edecaf38e236c0d423f96de23c048c55d84d51f2204fd7f0a8f0756697 2312 rust-symphonia-format-isomp4_0.5.2-1.debian.tar.xz"
+    "3cfdae4fb188c39311ee4f118948ff4e73820d918d5c060a8ad71350ba2e00ee 2673 rust-symphonia-format-isomp4_0.5.4-1.dsc abfdf178d697e50ce1e5d9b982ba1b94c47218e03ec35022d9f0e071a16dc844 36157 rust-symphonia-format-isomp4_0.5.4.orig.tar.gz 44335ac0cedeac9b9d57163784601c96a91d6c8c935f49fd86cdb734291195a1 2336 rust-symphonia-format-isomp4_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-format-isomp4"
   ],
   "Files": [
-    "0309d318541d6309dfe63a8026c5be89 2305 rust-symphonia-format-isomp4_0.5.2-1.dsc be63622f6b98ae4e4a28727232c5ad37 36184 rust-symphonia-format-isomp4_0.5.2.orig.tar.gz 7e36039959afac50befc0861069d39b7 2312 rust-symphonia-format-isomp4_0.5.2-1.debian.tar.xz"
+    "c1e50f76e57f091deefdda73720987e1 2673 rust-symphonia-format-isomp4_0.5.4-1.dsc 6972e67b40755582a476c77c22af333f 36157 rust-symphonia-format-isomp4_0.5.4.orig.tar.gz 1ee4b53722a24f434d654e03c10a7394 2336 rust-symphonia-format-isomp4_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-format-isomp4]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }

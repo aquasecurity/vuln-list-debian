@@ -6,16 +6,19 @@
     "librust-symphonia-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-symphonia-bundle-flac-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-codec-adpcm-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-codec-pcm-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-codec-vorbis-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-format-mkv-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-format-ogg-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-format-wav-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-symphonia-bundle-flac-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-codec-adpcm-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-codec-pcm-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-codec-vorbis-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-format-mkv-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-format-ogg-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-format-riff-0.5+wav-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9fd3e103dc123f36c99900d2841b4e8c87609717a035bc012880e24849b16e8b 2537 rust-symphonia_0.5.2-1.dsc 3671dd6f64f4f9d5c87179525054cfc1f60de23ba1f193bd6ceab812737403f1 10951 rust-symphonia_0.5.2.orig.tar.gz aaf34b1455417dedf4453b23db021394000bec86f83388f03ce36460ca7fb3de 2908 rust-symphonia_0.5.2-1.debian.tar.xz"
+    "f293bc1d69cde0a89b57812ea1829f9372239f5a3997f37840835dbee3637202 2902 rust-symphonia_0.5.4-1.dsc 815c942ae7ee74737bb00f965fa5b5a2ac2ce7b6c01c0cc169bbeaf7abd5f5a9 12039 rust-symphonia_0.5.4.orig.tar.gz 9d8d319ec70b11329ee1cafdc6b89f22740945f336f4b15a642fbd018984b4e7 3148 rust-symphonia_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia"
   ],
   "Files": [
-    "fd121431abbcab10c5e70d1194385c17 2537 rust-symphonia_0.5.2-1.dsc 4ed1a9ba93ba94becb328909e47e423f 10951 rust-symphonia_0.5.2.orig.tar.gz 1948b79dc34a3330c3175913bcb0ddc7 2908 rust-symphonia_0.5.2-1.debian.tar.xz"
+    "fe3cb84b240c825b4a22697704fd5019 2902 rust-symphonia_0.5.4-1.dsc e6572961d36976c2e24275220aea7567 12039 rust-symphonia_0.5.4.orig.tar.gz cd577330ec2f8cae66755f6da445abdf 3148 rust-symphonia_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }

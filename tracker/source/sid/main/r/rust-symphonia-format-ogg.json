@@ -6,16 +6,19 @@
     "librust-symphonia-format-ogg-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-utils-xiph-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-utils-xiph-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2a4a41e1a33978601ed1f724d2d8735687d5bb5cc0294c468328faf89f14b52e 2209 rust-symphonia-format-ogg_0.5.2-1.dsc 474df6e86b871dcb56913130bada1440245f483057c4a2d8a2981455494c4439 22466 rust-symphonia-format-ogg_0.5.2.orig.tar.gz 45a17c1e2f259c1cf2b956434e269a8c4405a163d97022c166ec31bb962a4ee3 2152 rust-symphonia-format-ogg_0.5.2-1.debian.tar.xz"
+    "14d5026c06b004618567a11d70b10f6739fa3007088738d2d107787ff30eeb88 2577 rust-symphonia-format-ogg_0.5.4-1.dsc ada3505789516bcf00fc1157c67729eded428b455c27ca370e41f4d785bfa931 23239 rust-symphonia-format-ogg_0.5.4.orig.tar.gz e826f74468526e191f094684b96e1d5e6c149a384267ef506ec09bf44063546a 2176 rust-symphonia-format-ogg_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-format-ogg"
   ],
   "Files": [
-    "5c8328846ec25a8747508cdf24bd8d1d 2209 rust-symphonia-format-ogg_0.5.2-1.dsc aeacb38e75f4323d7ffdec36856a081f 22466 rust-symphonia-format-ogg_0.5.2.orig.tar.gz 3e977d87cb0ca8752277897ec420ee70 2152 rust-symphonia-format-ogg_0.5.2-1.debian.tar.xz"
+    "494f1b16eb591fdad6ca070e26dcd462 2577 rust-symphonia-format-ogg_0.5.4-1.dsc 12d3ee236f93a38d3b5e0e6d47a8edaf 23239 rust-symphonia-format-ogg_0.5.4.orig.tar.gz be848fd737565045d6488c899401acb4 2176 rust-symphonia-format-ogg_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-format-ogg]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }
