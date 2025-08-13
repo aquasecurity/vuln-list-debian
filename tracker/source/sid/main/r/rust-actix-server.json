@@ -6,16 +6,19 @@
     "librust-actix-server-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-actix-rt-2-dev \u003c!nocheck\u003e, librust-actix-service-2+default-dev \u003c!nocheck\u003e, librust-actix-utils-3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+alloc-dev (\u003e= 0.3.17-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+alloc-dev (\u003e= 0.3.17-~~) \u003c!nocheck\u003e, librust-mio-1+default-dev \u003c!nocheck\u003e, librust-mio-1+net-dev \u003c!nocheck\u003e, librust-mio-1+os-poll-dev \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.23.1-~~) \u003c!nocheck\u003e, librust-tokio-1+sync-dev (\u003e= 1.23.1-~~) \u003c!nocheck\u003e, librust-tracing-0.1+log-dev (\u003e= 0.1.30-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-actix-rt-2-dev \u003c!nocheck\u003e, librust-actix-service-2+default-dev \u003c!nocheck\u003e, librust-actix-utils-3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+alloc-dev (\u003e= 0.3.17-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+alloc-dev (\u003e= 0.3.17-~~) \u003c!nocheck\u003e, librust-mio-1+default-dev \u003c!nocheck\u003e, librust-mio-1+net-dev \u003c!nocheck\u003e, librust-mio-1+os-poll-dev \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.44.2-~~) \u003c!nocheck\u003e, librust-tokio-1+sync-dev (\u003e= 1.44.2-~~) \u003c!nocheck\u003e, librust-tracing-0.1+log-dev (\u003e= 0.1.30-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "58c5ec48819f14117163ed86cae7c9241eb706a74612b080fe482d1978a8dcbc 3233 rust-actix-server_2.5.0-1.dsc 7ca2549781d8dd6d75c40cf6b6051260a2cc2f3c62343d761a969a0640646894 40938 rust-actix-server_2.5.0.orig.tar.gz aeb8440c1ae3efeb2c07855fa0e4a31ab0b123bb8b86f5e3779c3fadf8897eb3 3092 rust-actix-server_2.5.0-1.debian.tar.xz"
+    "41d6b2314e10fe6b77eb58188c9474378156daac222bef9dd6d61cb6e994b4db 3416 rust-actix-server_2.6.0-1.dsc a65064ea4a457eaf07f2fba30b4c695bf43b721790e9530d26cb6f9019ff7502 42816 rust-actix-server_2.6.0.orig.tar.gz c450954549aff92d09dca5fea1d46b881405f18f2d26154ce714036acbcd6a0e 3224 rust-actix-server_2.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-actix-server"
   ],
   "Files": [
-    "e95f27dd41e9b7e0a9e739e13ca0920d 3233 rust-actix-server_2.5.0-1.dsc cbd9f65c6ab818341e2fcb82825615f6 40938 rust-actix-server_2.5.0.orig.tar.gz 5649826f41dba24a7217cd394f841235 3092 rust-actix-server_2.5.0-1.debian.tar.xz"
+    "3ba544480a0fc9985a342cf8702ac650 3416 rust-actix-server_2.6.0-1.dsc 292a4a58633b56e16f50ba67a2d30314 42816 rust-actix-server_2.6.0.orig.tar.gz 35f159fa4ad60f94b4d4017ba4abbe60 3224 rust-actix-server_2.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-actix-codec-0.5+default-dev, librust-actix-rt-2+default-dev, librust-bytes-1+default-dev, librust-futures-util-0.3+async-await-macro-dev, librust-futures-util-0.3+sink-dev, librust-pretty-env-logger-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
+    "dh-cargo, librust-actix-codec-0.5+default-dev, librust-actix-rt-2+default-dev, librust-bytes-1+default-dev, librust-futures-util-0.3+async-await-macro-dev, librust-futures-util-0.3+sink-dev, librust-pretty-env-logger-0.5+default-dev, librust-static-assertions-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-tokio-util-0.7+default-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-tracing-subscriber-0.3+fmt-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/actix-server]"
   ],
   "Version": [
-    "2.5.0-1"
+    "2.6.0-1"
   ]
 }
