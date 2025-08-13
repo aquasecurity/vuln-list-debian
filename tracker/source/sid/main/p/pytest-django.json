@@ -3,25 +3,25 @@
     "all"
   ],
   "Binary": [
-    "python3-pytest-django"
+    "python-pytest-django-doc, python3-pytest-django"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, python3-setuptools-scm, python3-pytest (\u003e= 5.4), python3-django"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python-django-doc \u003c!nodoc\u003e, python-pytest-doc \u003c!nodoc\u003e, python3-all, python3-django \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, python3-pytest (\u003e= 7.0.0) \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "6bfb7b60ec71513bc816a3400cb78ad992b8c7b0e270a39f4e55210d85278a3a 2088 pytest-django_4.5.2-3.dsc 4a17ec8990f96bda94992cb57cf309345c42fd93813d53a077cc0cc7d89c23e4 75429 pytest-django_4.5.2.orig.tar.gz 867787c54c067b043989839ef6a297168c5b78e9baee5e3ba17d2a6d7a18b7dd 2932 pytest-django_4.5.2-3.debian.tar.xz"
+    "4d7c5159b8b00e8292c359e94a7ed0749e145cf6dd3a02236c602fa225096f37 2593 pytest-django_4.11.1-2.dsc d6f79fa864782a9679f60cd87b307e46c90d3aed18836d9667ac8261f4e306a0 80276 pytest-django_4.11.1.orig.tar.gz 9546bb0df9007e731eb1be28fb3b9f31575cd88d3ddf237f3603760638916c18 5592 pytest-django_4.11.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pytest-django"
   ],
   "Files": [
-    "d8826fd1b68935ea6a9c4b59fe54b256 2088 pytest-django_4.5.2-3.dsc 1a83add1d3a8efd45a09ea3fb3151938 75429 pytest-django_4.5.2.orig.tar.gz 8c04c1e89d43a5bc68f2abeb743aa48f 2932 pytest-django_4.5.2-3.debian.tar.xz"
+    "ddea75217f1364795f9c9777db1295a3 2593 pytest-django_4.11.1-2.dsc cb9f0d62e3706a8968d522128ce632be 80276 pytest-django_4.11.1.orig.tar.gz 9fc50c135ea0d0955c1bac1cf8ba44f5 5592 pytest-django_4.11.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://pytest-django.readthedocs.org/"
+    "https://github.com/pytest-dev/pytest-django"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -30,7 +30,7 @@
     "pytest-django"
   ],
   "Package-List": [
-    "python3-pytest-django deb python optional arch=all"
+    "python-pytest-django-doc deb doc optional arch=all python3-pytest-django deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-django, python3-pytest-xdist"
   ],
   "Uploaders": [
-    "Brian May \u003cbam@debian.org\u003e"
+    "Brian May \u003cbam@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pytest-django"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pytest-django.git"
   ],
   "Version": [
-    "4.5.2-3"
+    "4.11.1-2"
   ]
 }
