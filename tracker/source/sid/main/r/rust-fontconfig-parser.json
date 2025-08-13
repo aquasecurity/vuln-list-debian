@@ -6,16 +6,19 @@
     "librust-fontconfig-parser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-roxmltree-0.20+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-roxmltree-0.20+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0606d66540f7aaaad4e872557c38ee311b68bc7625610458a1e56e8991252f3c 2436 rust-fontconfig-parser_0.5.7-1.dsc 196bf5ccd80130dd1479d1adc08fe5ebf0b7f313beb86eafeebe1d59cb672778 37057 rust-fontconfig-parser_0.5.7.orig.tar.gz a44e7e7cb5b5359b87f2c65c7488cb588a716f5e95ca7e8c65f50ed81ae3a786 3288 rust-fontconfig-parser_0.5.7-1.debian.tar.xz"
+    "cdce17c3374153b92f190b53dae2da208636c413a50da5d952b4dd7903f0ad71 1804 rust-fontconfig-parser_0.5.8-1.dsc d91167fd8faa051bfc0e57d521de386ac1f17d860f18e13a98fb2597a295eb3d 38345 rust-fontconfig-parser_0.5.8.orig.tar.gz cf1b4e28985afe81ecd8d7b063bf36418ef91029ff71962b4021e3719f82c7d6 3376 rust-fontconfig-parser_0.5.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fontconfig-parser"
   ],
   "Files": [
-    "2e0bdd5315c653ee83b40b4c8e1407ed 2436 rust-fontconfig-parser_0.5.7-1.dsc c338f05e2efb04c866bdafb3c3219789 37057 rust-fontconfig-parser_0.5.7.orig.tar.gz 76b14db5941f0cb98d8ea5a38b84cd68 3288 rust-fontconfig-parser_0.5.7-1.debian.tar.xz"
+    "19cdee54bc712bdd9d964fcf8c96d2b5 1804 rust-fontconfig-parser_0.5.8-1.dsc e93526ab2e620ca8ee3b89f73530df20 38345 rust-fontconfig-parser_0.5.8.orig.tar.gz 056c65f69607176cc3b319f43c126f36 3376 rust-fontconfig-parser_0.5.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-glob-0.3+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-glob-0.3+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fontconfig-parser]"
   ],
   "Version": [
-    "0.5.7-1"
+    "0.5.8-1"
   ]
 }
