@@ -6,16 +6,19 @@
     "librust-rustyline-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-fd-lock+default-dev (\u003e= 3.0.0-~~) \u003c!nocheck\u003e, librust-home-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-nix-0.29+fs-dev \u003c!nocheck\u003e, librust-nix-0.29+ioctl-dev \u003c!nocheck\u003e, librust-nix-0.29+poll-dev \u003c!nocheck\u003e, librust-nix-0.29+signal-dev \u003c!nocheck\u003e, librust-nix-0.29+term-dev \u003c!nocheck\u003e, librust-radix-trie-0.2+default-dev \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e, librust-utf8parse-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.6-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-fd-lock+default-dev (\u003e= 3.0.0-~~) \u003c!nocheck\u003e, librust-home-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.172-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.22-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.7-~~) \u003c!nocheck\u003e, librust-nix-0.29+fs-dev \u003c!nocheck\u003e, librust-nix-0.29+ioctl-dev \u003c!nocheck\u003e, librust-nix-0.29+poll-dev \u003c!nocheck\u003e, librust-nix-0.29+signal-dev \u003c!nocheck\u003e, librust-nix-0.29+term-dev \u003c!nocheck\u003e, librust-radix-trie-0.2+default-dev \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e, librust-utf8parse-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c25c04e9dfe020dfb6b61ddc68660175db21152ad109157ea5c9a367cdc93eb3 3081 rust-rustyline_14.0.0-1.dsc 7803e8936da37efd9b6d4478277f4b2b9bb5cdb37a113e8d63222e58da647e63 116347 rust-rustyline_14.0.0.orig.tar.gz f188b242d783207dedc75804859d5554ccda219eb2e5bc8883b2f901b8306f86 5624 rust-rustyline_14.0.0-1.debian.tar.xz"
+    "2367750389db3d6a9d06e70038d07c805d71fed015570e08721ba5925fa3f1d5 3151 rust-rustyline_17.0.0-1.dsc ed34fbd08950d17f8297e738d5b76acd4baab50c8d45008d498b4327feb43ea1 121327 rust-rustyline_17.0.0.orig.tar.gz 4f8680899ad0755e59e2081aee0e359cc4d11f230cb2e79b878e72ad9a375ddb 7232 rust-rustyline_17.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustyline"
   ],
   "Files": [
-    "bcc1982c2bb68775f5ef94e8bb23cdcc 3081 rust-rustyline_14.0.0-1.dsc ef81555927661867e1293961b8ab540b 116347 rust-rustyline_14.0.0.orig.tar.gz ccf6d32ac0dd636698dd00b447957946 5624 rust-rustyline_14.0.0-1.debian.tar.xz"
+    "c5ab7bc11c40d577ad2b0be9dccf8090 3151 rust-rustyline_17.0.0-1.dsc db56314a11074a91136173e205e35dd7 121327 rust-rustyline_17.0.0.orig.tar.gz 95f5d5c8e9a64be78361f3ab0eca6a98 7232 rust-rustyline_17.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-doc-comment-0.3+default-dev, librust-env-logger-0.11-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-assert-matches-1+default-dev, librust-doc-comment-0.3+default-dev, librust-env-logger-0.11-dev, librust-rand+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustyline]"
   ],
   "Version": [
-    "14.0.0-1"
+    "17.0.0-1"
   ]
 }

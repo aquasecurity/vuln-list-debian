@@ -6,19 +6,25 @@
     "librust-rustc-std-workspace-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 10), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f2bcb205454a0f83b2583c56057f2a33b1c5c61a45cde37c4fb41a8c69b11049 2242 rust-rustc-std-workspace-core_1.0.0-1.dsc 1956f5517128a2b6f23ab2dadf1a976f4f5b27962e7724c2bf3d45e539ec098c 714 rust-rustc-std-workspace-core_1.0.0.orig.tar.gz 9b008887e602e0f50d3013209d7cddb93ae1821fab67163e584be0c02fe4dabe 2280 rust-rustc-std-workspace-core_1.0.0-1.debian.tar.xz"
+    "be71da2c8a9b0ef550145360dde591b082d04a9fb5c432bc55f53ede4887be90 2436 rust-rustc-std-workspace-core_1.0.1-1.dsc aa9c45b374136f52f2d6311062c7146bff20fec063c3f5d46a410bd937746955 935 rust-rustc-std-workspace-core_1.0.1.orig.tar.gz adc380c48722bb79595a99d6a6efc484972c4dd0777e101982bfc085553980a7 2584 rust-rustc-std-workspace-core_1.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustc-std-workspace-core"
   ],
   "Files": [
-    "6c7071039fe374f29a3de0d70594218a 2242 rust-rustc-std-workspace-core_1.0.0-1.dsc a16d07bc1e097941533c748b6e6a0570 714 rust-rustc-std-workspace-core_1.0.0.orig.tar.gz 5f717dd02780fbe9d6bb6a962b65cc11 2280 rust-rustc-std-workspace-core_1.0.0-1.debian.tar.xz"
+    "69f152cd92c44fe517dc83c2cc92f53d 2436 rust-rustc-std-workspace-core_1.0.1-1.dsc 7e2106a55b6dfafa45c608afd9127a8a 935 rust-rustc-std-workspace-core_1.0.1.orig.tar.gz 011ebe0b3c207ed84385f8b09680d29d 2584 rust-rustc-std-workspace-core_1.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/rust/tree/master/src/rustc-std-workspace"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -48,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustc-std-workspace-core]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.1-1"
   ]
 }
