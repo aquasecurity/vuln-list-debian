@@ -6,19 +6,25 @@
     "librust-fax-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fax-derive-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fax-derive-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6b2e5af132ac04acff3b194e2baaf1fcbc135aa33f37de47d41f8626ac4ef61f 2227 rust-fax_0.2.0-1.dsc 968f0dabb5d73ff77e2fe32c53ea05fef912c9eb80737ef017e220bb91ac447d 9047 rust-fax_0.2.0.orig.tar.gz 6e84dc3690dc6d3cc34ced1125db423a6600a6be402abd92ea6c8f5010429e74 2892 rust-fax_0.2.0-1.debian.tar.xz"
+    "c3ccd6b41df67ef09bf4e7d694eb5a338094f200e595be67095ba06a7dff09d6 2203 rust-fax_0.2.4-1.dsc b03e33ad0e71af414ef9d2b0a94d23ff59115bb068e6a6a06c0952f2c22ffd77 12554 rust-fax_0.2.4.orig.tar.gz 6b9c0e03d3c3cce9f833646b684dc25bb95c38efac5e8515f2b29e1d7f4824ca 3356 rust-fax_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fax"
   ],
   "Files": [
-    "2ffbe1ac7d24327604fc48432f072975 2227 rust-fax_0.2.0-1.dsc aa4af3a80df10f5db71f08e1a42c381d 9047 rust-fax_0.2.0.orig.tar.gz 7e2ea4c2e200dea49423869b2ac28337 2892 rust-fax_0.2.0-1.debian.tar.xz"
+    "40b27d081e40eae75fdf80420d1142ea 2203 rust-fax_0.2.4-1.dsc 5f45e0a99f7180c5fad98e8d75bd88aa 12554 rust-fax_0.2.4.orig.tar.gz d4a3ef3f92c58a44438e4aa71a3fd4e5 3356 rust-fax_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pdf-rs/fax"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-tiff-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fax]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.4-1"
   ]
 }
