@@ -6,19 +6,25 @@
     "librust-transpose-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-integer-0.1-dev \u003c!nocheck\u003e, librust-strength-reduce-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-integer-0.1-dev \u003c!nocheck\u003e, librust-strength-reduce-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0bf5d22e74e964330b92888c37be22ce82de4cbf8d69046fc8dbafa323c0736e 1696 rust-transpose_0.2.2-1.dsc e6522d49d03727ffb138ae4cbc1283d3774f0d10aa7f9bf52e6784c45daf9b23 10816 rust-transpose_0.2.2.orig.tar.gz c2bc5f1598356a71c4ed9de6270ade4bab58795fbe4868690dc76bd98757add3 2844 rust-transpose_0.2.2-1.debian.tar.xz"
+    "a07d4864a3f6a3829f78cdb528858c5669039a416dcd5ec942ab075447fa5eca 2341 rust-transpose_0.2.3-1.dsc 1ad61aed86bc3faea4300c7aee358b4c6d0c8d6ccc36524c96e4c92ccf26e77e 10913 rust-transpose_0.2.3.orig.tar.gz 09c31b0898636ad530dac3cf15be6e97ed095cfdd14b722d7f1da4d094245c94 3056 rust-transpose_0.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-transpose"
   ],
   "Files": [
-    "a1a8b29c492019e1ce409d7bd5cb2d4a 1696 rust-transpose_0.2.2-1.dsc 4c1f7278d8cad0a1087e3d9ac003ffe7 10816 rust-transpose_0.2.2.orig.tar.gz 3f17aed7325711bd42da0cac820da8c2 2844 rust-transpose_0.2.2-1.debian.tar.xz"
+    "8bc12cb7479b9b7b669efaeebd37ed4b 2341 rust-transpose_0.2.3-1.dsc 7a09da27776f41e64bc590c0c6aa0549 10913 rust-transpose_0.2.3.orig.tar.gz d7b4d0686977f3c19798274efab78a11 3056 rust-transpose_0.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ejmahler/transpose"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/transpose]"
   ],
   "Version": [
-    "0.2.2-1"
+    "0.2.3-1"
   ]
 }
