@@ -6,19 +6,25 @@
     "librust-type-map-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustc-hash-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustc-hash-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "96a7f1c76e82f77c0c6f3817919c12fc0bde15158d677336bba2b7dc08675c8f 2150 rust-type-map_0.5.0-1.dsc deb68604048ff8fa93347f02441e4487594adc20bb8a084f9e564d2b827a0a9f 3464 rust-type-map_0.5.0.orig.tar.gz ac633476e96a8b9fa40808813d905ef780a75bb56b637993c5b874b6c0d5f701 2624 rust-type-map_0.5.0-1.debian.tar.xz"
+    "4a9d5e17a47ec7729267ea60ec924e09bc37034df2a1d112eb31c0be6a5a5303 2229 rust-type-map_0.5.1-1.dsc cb30dbbd9036155e74adad6812e9898d03ec374946234fbcebd5dfc7b9187b90 8606 rust-type-map_0.5.1.orig.tar.gz 420f188fd62f98a0bea01dfa40e57f7b436b65781c83a078b5048362db0e5278 2704 rust-type-map_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-type-map"
   ],
   "Files": [
-    "783f6960a58ca7f31fa016b07e0a95e4 2150 rust-type-map_0.5.0-1.dsc c94453763751ed0b31f6c30515a22a60 3464 rust-type-map_0.5.0.orig.tar.gz 73837157d7c6a210fd1b4bb6c4667e7e 2624 rust-type-map_0.5.0-1.debian.tar.xz"
+    "a5e2f78d99d70482642d8664072a5c3e 2229 rust-type-map_0.5.1-1.dsc a0ca56df32f41ed0f81f997a80e783ff 8606 rust-type-map_0.5.1.orig.tar.gz 12ae19ea0fa44bd749a2a05c4be0b191 2704 rust-type-map_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kardeiz/type-map"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/type-map]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.1-1"
   ]
 }

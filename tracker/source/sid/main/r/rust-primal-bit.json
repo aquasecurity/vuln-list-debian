@@ -6,16 +6,19 @@
     "librust-primal-bit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hamming-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hamming-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "61cded59b400187f2e0f020f9474dbe84f9d43e5140bf5562652479e67856774 2346 rust-primal-bit_0.3.1-1.dsc 6ce4fe11b2a87850ca3bd5dc9c7cb9f66e32a09edab221be406ac5ff677f2241 10851 rust-primal-bit_0.3.1.orig.tar.gz 01a4d456b6763a3fb86155ff6ab5f57039b0b3fe1471e1b9676a73fcc6d7c67b 2668 rust-primal-bit_0.3.1-1.debian.tar.xz"
+    "46572ecdf79cf88ab47b41b7ba0e704d709d640f66fad3e297946236e7b0ac45 2249 rust-primal-bit_0.3.2-1.dsc 252429dbb8aeacc3233df500dc3a6a367bf28eb3a711272884d7540a7b636055 10888 rust-primal-bit_0.3.2.orig.tar.gz 2aa95b94efd029ce6462e2131d03f41a5840fc2810aeb5e10e93b9bf8ea6bd52 2712 rust-primal-bit_0.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-primal-bit"
   ],
   "Files": [
-    "21f216eb2d0ed9206216a3f39054673e 2346 rust-primal-bit_0.3.1-1.dsc 1d22e74663eea271d1cf93bca87370cf 10851 rust-primal-bit_0.3.1.orig.tar.gz 4b40aa43409d1972b7144c3f7ea980b5 2668 rust-primal-bit_0.3.1-1.debian.tar.xz"
+    "197b9810631d03d10cdd532b2ac1d983 2249 rust-primal-bit_0.3.2-1.dsc 33eaf1e75024d736715608dc8203c8a3 10888 rust-primal-bit_0.3.2.orig.tar.gz 0eddd61690f0c3c155db0a977e7ef497 2712 rust-primal-bit_0.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/primal-bit]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.3.2-1"
   ]
 }
