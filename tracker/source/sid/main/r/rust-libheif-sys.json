@@ -6,19 +6,25 @@
     "librust-libheif-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libheif-dev \u003c!nocheck\u003e, libsharpyuv-dev \u003c!nocheck\u003e, zlib1g-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.174-~~) \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libheif-dev \u003c!nocheck\u003e, libsharpyuv-dev \u003c!nocheck\u003e, zlib1g-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5b8dd87e7cbde7ec9d7517f9adcdab1a3ac0395b73f6f3deda6c90461f30a9ba 1787 rust-libheif-sys_2.1.0-2.dsc 01b9d5bf9cf5c3d24fd875f09817810cd33b7dd1e13d6c52a0148f221224cd22 285050 rust-libheif-sys_2.1.0.orig.tar.gz 877cf8e284d25250153503b8bbf82384460fde3e8991e92db2a43eee86f02297 10716 rust-libheif-sys_2.1.0-2.debian.tar.xz"
+    "073e2362d320a9d76b0f6f62a514edf0e15520ae43e460d69a44eadbc4156325 2526 rust-libheif-sys_5.0.0-1.dsc ac54e0e7aec29250401577eab200f755bb57d020dbbea086678972e25df79edd 120178 rust-libheif-sys_5.0.0.orig.tar.gz 6d4f771fa002166b7beb015fad71b6853830a94bb709ef3ff151a8052b9741bb 9488 rust-libheif-sys_5.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libheif-sys"
   ],
   "Files": [
-    "404d2214f61c66a6943a8e7554c6de2a 1787 rust-libheif-sys_2.1.0-2.dsc d22be968b21c8209d47ea1761599fc24 285050 rust-libheif-sys_2.1.0.orig.tar.gz 1678ce0c26e35caf293649e868aee1ce 10716 rust-libheif-sys_2.1.0-2.debian.tar.xz"
+    "3a7f2827950f81d351c6e3d8074313b3 2526 rust-libheif-sys_5.0.0-1.dsc 17d2d31faf7068e2ff6da3aa2477e95e 120178 rust-libheif-sys_5.0.0.orig.tar.gz d48aa4ffd0631fb199cb8433483f3aaf 9488 rust-libheif-sys_5.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cykooz/libheif-sys"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, libheif-dev, libsharpyuv-dev, zlib1g-dev"
+    "dh-cargo, libheif-dev, libsharpyuv-dev, rustc, zlib1g-dev"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e, Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libheif-sys]"
   ],
   "Version": [
-    "2.1.0-2"
+    "5.0.0-1"
   ]
 }
