@@ -6,16 +6,19 @@
     "librust-symphonia-codec-pcm-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2f93473c9b4cdb766ea7cda1ada994b4ed25e0f1ab736e9628e3028ca3a61bda 2055 rust-symphonia-codec-pcm_0.5.2-1.dsc 8cb9a9f0b9991cccf3217b74644af412d5d082a4815e5e2943f26e0ecabdf3c9 5649 rust-symphonia-codec-pcm_0.5.2.orig.tar.gz 7da6eaf0738012dfc7a4b231edba09240230ab1ef87a881e3d1f9175fbe1210a 2636 rust-symphonia-codec-pcm_0.5.2-1.debian.tar.xz"
+    "30c68deac9cbae85edc0d12b27d880b6e3244993d36c2adba4e61832456db774 2423 rust-symphonia-codec-pcm_0.5.4-1.dsc f395a67057c2ebc5e84d7bb1be71cce1a7ba99f64e0f0f0e303a03f79116f89b 6179 rust-symphonia-codec-pcm_0.5.4.orig.tar.gz 38e0c731b923b26390d586d312c82eebac5f74052dfeae138d7f6065b9e3a6d4 2668 rust-symphonia-codec-pcm_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-codec-pcm"
   ],
   "Files": [
-    "e0c1c461ee213f75285d1beaca00186a 2055 rust-symphonia-codec-pcm_0.5.2-1.dsc f339082aca2aa3a78af1198d03f05e02 5649 rust-symphonia-codec-pcm_0.5.2.orig.tar.gz d38280a9b957cadad551166ab3ef0245 2636 rust-symphonia-codec-pcm_0.5.2-1.debian.tar.xz"
+    "9917a3d0084126969f9d4e9522290ccc 2423 rust-symphonia-codec-pcm_0.5.4-1.dsc 17f732cedeb89a6000c4148542379894 6179 rust-symphonia-codec-pcm_0.5.4.orig.tar.gz 3d64260fbaeda4a40c3f170e5d00f8d0 2668 rust-symphonia-codec-pcm_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-codec-pcm]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }

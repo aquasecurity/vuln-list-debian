@@ -5,17 +5,20 @@
   "Binary": [
     "frr, frr-doc, frr-pythontools, frr-rpki-rtrlib, frr-snmp"
   ],
+  "Build-Conflicts": [
+    "libunwind-14-dev, libunwind-19-dev, libunwind-20-dev"
+  ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bison, chrpath, flex, gawk, install-info, libc-ares-dev, libcap-dev, libelf-dev:native, libjson-c-dev, liblua5.3-dev \u003c!pkg.frr.nolua\u003e, libpam0g-dev, libpcre2-dev, libprotobuf-c-dev, libpython3-dev:native, libreadline-dev, librtr-dev \u003c!pkg.frr.nortrlib\u003e, libsnmp-dev, libssh-dev \u003c!pkg.frr.nortrlib\u003e, libunwind-dev [!alpha !m68k !sparc64 !x32], libyang-dev, lua5.3 \u003c!pkg.frr.nolua\u003e, pkgconf, protobuf-c-compiler, python3-dev:native, python3-pytest:native \u003c!nocheck\u003e, python3-sphinx:native, python3:native, texinfo"
+    "debhelper-compat (= 13), bison, chrpath, flex, gawk, install-info, libc-ares-dev, libcap-dev, libcrypt-dev, libelf-dev:native, libjson-c-dev, liblua5.4-dev \u003c!pkg.frr.nolua\u003e, libpam0g-dev, libpcre2-dev, libprotobuf-c-dev, libpython3-dev:native, libreadline-dev, librtr-dev \u003c!pkg.frr.nortrlib\u003e, libsnmp-dev, libssh-dev \u003c!pkg.frr.nortrlib\u003e, libunwind-dev [!alpha !m68k !sparc64 !x32], libyang-dev, lua5.4 \u003c!pkg.frr.nolua\u003e, pkgconf, protobuf-c-compiler, python3-dev:native, python3-pytest:native \u003c!nocheck\u003e, python3-sphinx:native, python3:native, texinfo"
   ],
   "Checksums-Sha256": [
-    "26053bd284b0f2bb81c135dd7a77225ee76a0c4dfe02e4a9f5e27a086ed663f3 2043 frr_10.3-3.dsc 78b3f37de85af1e2cab87c3f831f0db66669e32540194ef55759f49ebdab0c10 8510764 frr_10.3.orig.tar.xz 25d546d22a38c9c3d224535b08caa31cd4625bdfd1831d1305484be46784a8db 32068 frr_10.3-3.debian.tar.xz"
+    "2b1a5f2255be20655a5b7e27d8e13411ee72fe5c4b03bb8f81e0c7a0b2acab31 2100 frr_10.4.1-3.dsc 61c49235488b169a57a2591f3ba031d4b43847c0ba9dd0b5eae92d105e207d97 8670168 frr_10.4.1.orig.tar.xz fee33ba855662cc4cc3cb926780662f9ef7a740ee373c63a69398e8750b466d3 31992 frr_10.4.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/frr"
   ],
   "Files": [
-    "9ae0eeb2bf6f2489a890b33f023e7cbb 2043 frr_10.3-3.dsc 127cb73afff5615ceb774ba621150d1e 8510764 frr_10.3.orig.tar.xz b0cef8d1d9f7e6e488aee67b1614d96f 32068 frr_10.3-3.debian.tar.xz"
+    "a897e99537b9c85d040ddf6753330b6f 2100 frr_10.4.1-3.dsc 99a0c5e4e682d119c06a52e49388807a 8670168 frr_10.4.1.orig.tar.xz f82a36fd7ca2e96964ea80eb05556d02 31992 frr_10.4.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +27,7 @@
     "https://www.frrouting.org"
   ],
   "Maintainer": [
-    "David Lamparter \u003cequinox-debian@diac24.net\u003e"
+    "Daniel Baumann \u003cdaniel@debian.org\u003e"
   ],
   "Package": [
     "frr"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Uploaders": [
-    "FRRouting-dev \u003cdev@lists.frrouting.org\u003e, Daniel Baumann \u003cdaniel@debian.org\u003e,"
+    "David Lamparter \u003cequinox-debian@diac24.net\u003e,"
   ],
   "Vcs-Browser": [
     "https://forgejo.debian.net/frr/frr"
@@ -54,6 +57,6 @@
     "https://forgejo.debian.net/frr/frr"
   ],
   "Version": [
-    "10.3-3"
+    "10.4.1-3"
   ]
 }

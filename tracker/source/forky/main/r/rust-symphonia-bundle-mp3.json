@@ -6,16 +6,19 @@
     "librust-symphonia-bundle-mp3-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.2.1-~~) \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "843b7c8714584860bc8a2c081519a314e993f65655838c60f8f200e2c29ba56d 2255 rust-symphonia-bundle-mp3_0.5.2-1.dsc 55a0846e7a2c9a8081ff799fc83a975170417ad2a143f644a77ec2e3e82a2b73 60005 rust-symphonia-bundle-mp3_0.5.2.orig.tar.gz d02c301b50819ecbd32c6a0f9c92e607113d3dd9f64d65f0fc48eb221b734ce6 2428 rust-symphonia-bundle-mp3_0.5.2-1.debian.tar.xz"
+    "86195bfaa0b7b4cc60a4e9b06e85c8a18809c373758e9f1ec4ca7a7acad83ead 2566 rust-symphonia-bundle-mp3_0.5.4-1.dsc c01c2aae70f0f1fb096b6f0ff112a930b1fb3626178fba3ae68b09dce71706d4 60104 rust-symphonia-bundle-mp3_0.5.4.orig.tar.gz 5f87e99e735121e9ea1a95598adae2ab79d12f44c48d8b77016df876cf81d383 2352 rust-symphonia-bundle-mp3_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-bundle-mp3"
   ],
   "Files": [
-    "389064b2a28b4759a5a29943163d0577 2255 rust-symphonia-bundle-mp3_0.5.2-1.dsc e89e00cc1ad0251b6a1b258ae2c233c0 60005 rust-symphonia-bundle-mp3_0.5.2.orig.tar.gz 42261a6c01628d9310e18b24d99aa852 2428 rust-symphonia-bundle-mp3_0.5.2-1.debian.tar.xz"
+    "1185d05f50c271947211ad574ef93ee8 2566 rust-symphonia-bundle-mp3_0.5.4-1.dsc 7a4f64bed60c2c058780234a08424168 60104 rust-symphonia-bundle-mp3_0.5.4.orig.tar.gz 4973bd04c45b0f3605940ec88a3bfc55 2352 rust-symphonia-bundle-mp3_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-bundle-mp3]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }

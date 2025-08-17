@@ -6,16 +6,19 @@
     "librust-symphonia-format-wav-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d21f2e1ca45d97471ae91f0a446606c6c670476bacacc17b89effaf6dcc78203 2138 rust-symphonia-format-wav_0.5.2-1.dsc 06679bd5646b3037300f88891dfc8a6e1cc4e1133206cc17a98e5d7c22f88296 11274 rust-symphonia-format-wav_0.5.2.orig.tar.gz 1a3414d8c907fb55a78279b12a4172756cb106f64e323717f111f6bff2adde13 2096 rust-symphonia-format-wav_0.5.2-1.debian.tar.xz"
+    "ebfa3bdc18852667f0d233cab020dd6f54e937746985dd08103fbac282ee69d4 2506 rust-symphonia-format-wav_0.5.4-1.dsc 9cf0f6fa9a5e82310e7c1b34f9597fb747f1b4436740574845b5fafe021b12ff 11719 rust-symphonia-format-wav_0.5.4.orig.tar.gz 14f32cc2d9efe94bb223e4738a95e6988f8e80264e7f9030293b7a0d1b9c6635 2124 rust-symphonia-format-wav_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-format-wav"
   ],
   "Files": [
-    "eb20b408efdebe0a68e934afd0db06dd 2138 rust-symphonia-format-wav_0.5.2-1.dsc 4ca317a7e1bf92973edd753d8ea139c3 11274 rust-symphonia-format-wav_0.5.2.orig.tar.gz 099accae3a720e56a406c937e3ffcf0e 2096 rust-symphonia-format-wav_0.5.2-1.debian.tar.xz"
+    "55865541fe18b48b459d042d588fd8d3 2506 rust-symphonia-format-wav_0.5.4-1.dsc b18467f8c790dbf9188cb6269b5b0ead 11719 rust-symphonia-format-wav_0.5.4.orig.tar.gz 7897f0a882d5f17afd5c49e046a28046 2124 rust-symphonia-format-wav_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-format-wav]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }

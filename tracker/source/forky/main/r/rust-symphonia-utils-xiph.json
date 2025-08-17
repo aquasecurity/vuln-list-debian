@@ -6,16 +6,19 @@
     "librust-symphonia-utils-xiph-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.53) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-symphonia-core-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e, librust-symphonia-metadata-0.5+default-dev (\u003e= 0.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1780dbab4446ddbc884cf0247a3e47679b77fb55726bebd0062e3a082afe93b8 2095 rust-symphonia-utils-xiph_0.5.2-1.dsc ce340a6c33ac06cb42de01220308ec056e8a2a3d5cc664aaf34567392557136b 6450 rust-symphonia-utils-xiph_0.5.2.orig.tar.gz e1659541fceeab62b755a171f016ab1fb51a57128f981234217d02b352cc5613 2100 rust-symphonia-utils-xiph_0.5.2-1.debian.tar.xz"
+    "17fbd227f73e8ce589ac73bfdf79748ab0173a087a7e3a4cf7362e7249a46568 2463 rust-symphonia-utils-xiph_0.5.4-1.dsc 484472580fa49991afda5f6550ece662237b00c6f562c7d9638d1b086ed010fe 5787 rust-symphonia-utils-xiph_0.5.4.orig.tar.gz 25cf8b2eb46690fed8b5e0dd6806013db18716bccc6f9640b24bc7266cace3a2 2120 rust-symphonia-utils-xiph_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-symphonia-utils-xiph"
   ],
   "Files": [
-    "94d482f8db6017f5f09923b2c49e177b 2095 rust-symphonia-utils-xiph_0.5.2-1.dsc 5ed77164ac7a8c2d84f42c0f8934d007 6450 rust-symphonia-utils-xiph_0.5.2.orig.tar.gz 9c3dbe07dcdfc5325215470b184615ca 2100 rust-symphonia-utils-xiph_0.5.2-1.debian.tar.xz"
+    "64796ee3b6e7273e08f14deaf91833bd 2463 rust-symphonia-utils-xiph_0.5.4-1.dsc d6763c4c349ee2f0b49be08b45864792 5787 rust-symphonia-utils-xiph_0.5.4.orig.tar.gz 18cbb6d17e6b65af6964fefcbd91d9cd 2120 rust-symphonia-utils-xiph_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/symphonia-utils-xiph]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.4-1"
   ]
 }
