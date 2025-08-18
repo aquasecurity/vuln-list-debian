@@ -6,16 +6,19 @@
     "librust-primal-check-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e8a95543cbc696023a4f68600cddd257c151c94248308586f27ffbfec55d8111 2401 rust-primal-check_0.3.3-1.dsc 9df7f93fd637f083201473dab4fee2db4c429d32e55e3299980ab3957ab916a0 8720 rust-primal-check_0.3.3.orig.tar.gz abde050222a0570f3f5b3b815253e914a9e71d0f0563cb582cfca325717566df 2572 rust-primal-check_0.3.3-1.debian.tar.xz"
+    "372d05907a1650746bde3bc24ce02d5b59a07f30082beebbd2ceb04688b41bbd 2304 rust-primal-check_0.3.4-1.dsc dc0d895b311e3af9902528fbb8f928688abbd95872819320517cc24ca6b2bd08 8743 rust-primal-check_0.3.4.orig.tar.gz c6f06c4041ad8870cbab71282e4ac2b01c9faa4129528a4f29cd112bf5a2094d 2616 rust-primal-check_0.3.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-primal-check"
   ],
   "Files": [
-    "375bafb6e995471afe3db4c3ca8c2280 2401 rust-primal-check_0.3.3-1.dsc 4182f509ffcf6eb58da13e0edd9bbeea 8720 rust-primal-check_0.3.3.orig.tar.gz 438843ba3128f58739b33f6ebf4dd1d2 2572 rust-primal-check_0.3.3-1.debian.tar.xz"
+    "ef08665d42ca8da7634cf1bed5f0ab51 2304 rust-primal-check_0.3.4-1.dsc c5fb9715346f6e1c7b84575e241803f0 8743 rust-primal-check_0.3.4.orig.tar.gz 926c2c355ebc2a6ed8845824249acaf6 2616 rust-primal-check_0.3.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-primal-0.3+default-dev"
+    "dh-cargo, librust-primal-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/primal-check]"
   ],
   "Version": [
-    "0.3.3-1"
+    "0.3.4-1"
   ]
 }

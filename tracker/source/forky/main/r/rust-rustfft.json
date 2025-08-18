@@ -6,19 +6,25 @@
     "librust-rustfft-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-complex-0.4+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev (\u003e= 0.1.40-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-primal-check-0.3+default-dev (\u003e= 0.3.3-~~) \u003c!nocheck\u003e, librust-strength-reduce-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-transpose-0.2+default-dev \u003c!nocheck\u003e, librust-version-check-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-complex-0.4+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev (\u003e= 0.1.40-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-primal-check-0.3+default-dev (\u003e= 0.3.3-~~) \u003c!nocheck\u003e, librust-strength-reduce-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-transpose-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a80483cb5dea07babaa29769c312df7feea5ed40209c1532d28a4231dd5a8cd7 2460 rust-rustfft_6.2.0-1.dsc 43806561bc506d0c5d160643ad742e3161049ac01027b5e6d7524091fd401d86 363170 rust-rustfft_6.2.0.orig.tar.gz c07b2c64b0a0678fb22a5e79ebfbb7c0d6a5d7433896cc8642749b7897b03531 3284 rust-rustfft_6.2.0-1.debian.tar.xz"
+    "73143c3c49f9cce8ec148cb1da5295bbc1c643728ab53ea7b5e6a76fa08a9f88 2721 rust-rustfft_6.4.0-1.dsc c6f140db74548f7c9d7cce60912c9ac414e74df5e718dc947d514b051b42f3f4 336667 rust-rustfft_6.4.0.orig.tar.gz 377b0fcf1d2120b7e482f0df15e88fcb5cd08097915bfe77edd03ff2ce959077 3528 rust-rustfft_6.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustfft"
   ],
   "Files": [
-    "2c914a0102e4462c9497867bb8147798 2460 rust-rustfft_6.2.0-1.dsc 27a43575a7591499438a42b9fbfec589 363170 rust-rustfft_6.2.0.orig.tar.gz 1d4c8382e2d41f830d435580652b86ea 3284 rust-rustfft_6.2.0-1.debian.tar.xz"
+    "7c6d208662e00ab242e4262b56f2ea02 2721 rust-rustfft_6.4.0-1.dsc 361ae3cbde3968178837f0e250ed401c 336667 rust-rustfft_6.4.0.orig.tar.gz e64c959aa04e7c39254224dacddeffc0 3528 rust-rustfft_6.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ejmahler/RustFFT"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -41,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-bumpalo-3+default-dev, librust-libc-0.2+default-dev, librust-once-cell-1.20+default-dev, librust-paste-1+default-dev, librust-rand-0.8+default-dev, librust-wasm-bindgen-test-0.3+default-dev, rustc"
+  ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
   ],
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustfft]"
   ],
   "Version": [
-    "6.2.0-1"
+    "6.4.0-1"
   ]
 }
