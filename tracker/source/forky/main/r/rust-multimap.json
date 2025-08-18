@@ -6,19 +6,25 @@
     "librust-multimap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1.0+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "707475a8d9bd2acfb9a3d3f7eb443974f595d64b31680c151cc1645dc6c63ade 2210 rust-multimap_0.8.3-2.dsc e5ce46fe64a9d73be07dcbe690a38ce1b293be448fd8ce1e6c1b8062c9f72c6a 13518 rust-multimap_0.8.3.orig.tar.gz ad20db179b7e63c6865c7402b960a77b837db7479cde5916a4f5296b98d82e0c 2704 rust-multimap_0.8.3-2.debian.tar.xz"
+    "6df1493f12be631184aad59fffdc0be1fb0c7140cf4406e376034b70f6055adc 2301 rust-multimap_0.10.1-1.dsc 1d87ecb2933e8aeadb3e3a02b828fed80a7528047e68b4f424523a0981a3a084 15232 rust-multimap_0.10.1.orig.tar.gz 302f6fcae0c09ad58f2dd116cc5090023aa0f79f449830745b79852d459c941b 2832 rust-multimap_0.10.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-multimap"
   ],
   "Files": [
-    "ecbd4287693f992cd86c229e24a677f7 2210 rust-multimap_0.8.3-2.dsc 5a4f0e9922683867565531089e3c417f 13518 rust-multimap_0.8.3.orig.tar.gz 6504e38896bf675695ecbe85d8df0d36 2704 rust-multimap_0.8.3-2.debian.tar.xz"
+    "32cccdaf5004ed77b5c888ec731682ec 2301 rust-multimap_0.10.1-1.dsc 20657ce5719d47cfc0dfe5664de8102f 15232 rust-multimap_0.10.1.orig.tar.gz fb27d89c0f0f7a2e1aedf4b0c1952f5b 2832 rust-multimap_0.10.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/havarnov/multimap"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-test-1.0+default-dev"
+    "dh-cargo, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/multimap]"
   ],
   "Version": [
-    "0.8.3-2"
+    "0.10.1-1"
   ]
 }
