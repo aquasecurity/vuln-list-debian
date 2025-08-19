@@ -6,19 +6,25 @@
     "librust-castaway-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustversion-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustversion-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "18e2b9de9c8ea508142f733fe53e92a2c39ad78fd8c70dd2d36e435a64eddc9e 1588 rust-castaway_0.2.3-1.dsc 0abae9be0aaf9ea96a3b1b8b1b55c602ca751eba1b1500220cea4ecbafe7c0d5 11509 rust-castaway_0.2.3.orig.tar.gz df4e73cb1046735f5e9b973ea6b36f6943be29030d0fdaf8049e1bcba5b0b90c 2656 rust-castaway_0.2.3-1.debian.tar.xz"
+    "8b1989f0872b0c9c975329c9541f872d9f7d897fd8e8d5dc9b11c1b4cb64c52b 1668 rust-castaway_0.2.4-1.dsc dec551ab6e7578819132c713a93c022a05d60159dc86e7a7050223577484c55a 12546 rust-castaway_0.2.4.orig.tar.gz c8f26b58d4df0e0e4c74e3094ca6b3097fe647d06beedb3cbe7262ebe85d16bb 2676 rust-castaway_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-castaway"
   ],
   "Files": [
-    "13f27cf633a03f2c119ed2f0f143dda0 1588 rust-castaway_0.2.3-1.dsc ea91d7405db9a7d5da936408bc538ea5 11509 rust-castaway_0.2.3.orig.tar.gz 85f4f21c1d986d0713f9c617614e12ad 2656 rust-castaway_0.2.3-1.debian.tar.xz"
+    "c8d34b4b1737389891bebe5f93a2e12a 1668 rust-castaway_0.2.4-1.dsc 4d032c3258a697860b4da7ae12bbd2f8 12546 rust-castaway_0.2.4.orig.tar.gz 6687334030a56036dda68e8aef519350 2676 rust-castaway_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sagebind/castaway"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-paste-1+default-dev"
+    "dh-cargo, librust-paste-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/castaway]"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.2.4-1"
   ]
 }
