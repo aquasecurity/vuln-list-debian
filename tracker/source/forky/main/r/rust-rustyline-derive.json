@@ -6,19 +6,25 @@
     "librust-rustyline-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1-dev \u003c!nocheck\u003e, librust-quote-1-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e, librust-syn-2+printing-dev \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1-dev (\u003e= 1.0.86-~~) \u003c!nocheck\u003e, librust-quote-1-dev (\u003e= 1.0.36-~~) \u003c!nocheck\u003e, librust-syn-2+derive-dev (\u003e= 2.0.72-~~) \u003c!nocheck\u003e, librust-syn-2+parsing-dev (\u003e= 2.0.72-~~) \u003c!nocheck\u003e, librust-syn-2+printing-dev (\u003e= 2.0.72-~~) \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev (\u003e= 2.0.72-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ad2dbd6d5107d4165906a67a82cad07177fc43aad5ba0cedd02ca3fdf14b5291 2439 rust-rustyline-derive_0.10.0-1.dsc e5af959c8bf6af1aff6d2b463a57f71aae53d1332da58419e30ad8dc7011d951 2456 rust-rustyline-derive_0.10.0.orig.tar.gz aa1468c8db865b0d79b13e11102efeb095ba2baf20274618cdb910e37d028ecf 2532 rust-rustyline-derive_0.10.0-1.debian.tar.xz"
+    "6d2206ed87c53a5ace21f1fcfcd01d915a08d65be0a5e6c4a75c0f296bdbe028 2639 rust-rustyline-derive_0.11.1-1.dsc 5d66de233f908aebf9cc30ac75ef9103185b4b715c6f2fb7a626aa5e5ede53ab 2928 rust-rustyline-derive_0.11.1.orig.tar.gz 4d6d04548ef2d435a5782b8886be741f64a079d0d21c93daa6445bfb45c9f8bd 2636 rust-rustyline-derive_0.11.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustyline-derive"
   ],
   "Files": [
-    "5930b425e681b87e407af9ff3abb34de 2439 rust-rustyline-derive_0.10.0-1.dsc 5f3fbb7c274c99ed4b2b892c956bd2b7 2456 rust-rustyline-derive_0.10.0.orig.tar.gz 1b1623c210205ec927119c83f3ec67c8 2532 rust-rustyline-derive_0.10.0-1.debian.tar.xz"
+    "69a0cf74aae31c70456c760f6f9dff72 2639 rust-rustyline-derive_0.11.1-1.dsc 2ea71d96d1ba181dd82e186144e0f039 2928 rust-rustyline-derive_0.11.1.orig.tar.gz 9f7e5a14bb81c15a8971fb48bf78ff72 2636 rust-rustyline-derive_0.11.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kkawakam/rustyline"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Maytham Alsudany \u003cmaytha8thedev@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustyline-derive]"
   ],
   "Version": [
-    "0.10.0-1"
+    "0.11.1-1"
   ]
 }
