@@ -6,19 +6,25 @@
     "librust-lexical-parse-integer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lexical-util-0.8+parse-integers-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-lexical-util-0.8+std-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-static-assertions-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lexical-util-1+parse-integers-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-lexical-util-1+std-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-static-assertions-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a360eb7bff5408adb9e2e783e22b12f29414159c86f16b5771e1202b3b20cbba 2129 rust-lexical-parse-integer_0.8.6-1.dsc 6d0994485ed0c312f6d965766754ea177d07f9c00c9b82a5ee62ed5b47945ee9 33647 rust-lexical-parse-integer_0.8.6.orig.tar.gz 143fe9750b6866b4f04bc915957bc59c42de2c7475207d8d03b6dd3f9f8347f7 2964 rust-lexical-parse-integer_0.8.6-1.debian.tar.xz"
+    "4fa8c7afd9ef6fab1f858e0ccba83d9ad335eff96edd04cfbe72b34da6811f8d 2627 rust-lexical-parse-integer_1.0.5-1.dsc 72207aae22fc0a121ba7b6d479e42cbfea549af1479c3f3a4f12c70dd66df12e 36912 rust-lexical-parse-integer_1.0.5.orig.tar.gz 14a140c4672a4ac70d5a33d906cb2edc387df37e167765fd61e4f10e1afe850f 3168 rust-lexical-parse-integer_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lexical-parse-integer"
   ],
   "Files": [
-    "436e34ea6b2039a6649b85880366f818 2129 rust-lexical-parse-integer_0.8.6-1.dsc c776c3a000965ed9bef2b1a2b5d8149d 33647 rust-lexical-parse-integer_0.8.6.orig.tar.gz 359bf963c2ffe4086c57e65b45a5d6c7 2964 rust-lexical-parse-integer_0.8.6-1.debian.tar.xz"
+    "bd36fb325478fa4bf69c8f2c40ad0969 2627 rust-lexical-parse-integer_1.0.5-1.dsc ba5ed45a024f16b8835c656c56da581f 36912 rust-lexical-parse-integer_1.0.5.orig.tar.gz 493d5e167a197da6f25bbbe39f43cd3c 3168 rust-lexical-parse-integer_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Alexhuszagh/rust-lexical"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proptest-0.10+default-dev"
+    "dh-cargo, librust-proptest+default-dev, librust-quickcheck-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lexical-parse-integer]"
   ],
   "Version": [
-    "0.8.6-1"
+    "1.0.5-1"
   ]
 }
