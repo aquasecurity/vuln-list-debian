@@ -6,19 +6,25 @@
     "librust-four-cc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c24161d1a7606e41e27e963effcd81f2188c3033f3e6d96eb11a63c1505abe18 2123 rust-four-cc_0.3.0-3.dsc 431a4c31778fde52b4400de34975f219eeca55cc829a9de157cd743a5b230ecb 8629 rust-four-cc_0.3.0.orig.tar.gz 93be6d82dbb265a21134e32f1f7bb7aa627b9899569674e96ea238543601e9c5 3208 rust-four-cc_0.3.0-3.debian.tar.xz"
+    "d5a47f02bb896148fe3901ed0c5f53dd5235b58fdcb500b37c0cbbc10dc57a89 2207 rust-four-cc_0.4.0-1.dsc 795cbfc56d419a7ce47ccbb7504dd9a5b7c484c083c356e797de08bd988d9629 9416 rust-four-cc_0.4.0.orig.tar.gz 414bc6f5a6d6c3f35409ebc789b891c9f739715f1572b50c460334dbead686b7 3368 rust-four-cc_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-four-cc"
   ],
   "Files": [
-    "fe476e36c62816fdc3ecfedf40da1d2f 2123 rust-four-cc_0.3.0-3.dsc 96b50c69be0057bb294f7b1922304930 8629 rust-four-cc_0.3.0.orig.tar.gz 2fc4357dabf3ed22a8812aca79589df3 3208 rust-four-cc_0.3.0-3.debian.tar.xz"
+    "24491571eace08712a980e5420856bb1 2207 rust-four-cc_0.4.0-1.dsc 72b8c180b683ca6c78f2f56261d20e5b 9416 rust-four-cc_0.4.0.orig.tar.gz 77a94d3638d94e3f5e45b8ba574146e2 3368 rust-four-cc_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dholroyd/four-cc"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/four-cc]"
   ],
   "Version": [
-    "0.3.0-3"
+    "0.4.0-1"
   ]
 }
