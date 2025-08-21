@@ -6,19 +6,25 @@
     "librust-hashbrown-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8-dev (\u003e= 0.8.7-~~) \u003c!nocheck\u003e, librust-allocator-api2-0.2+alloc-dev (\u003e= 0.2.9-~~) \u003c!nocheck\u003e, librust-ahash-dev (\u003e= 0.8.11-3) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-allocator-api2-0.2+alloc-dev (\u003e= 0.2.9-~~) \u003c!nocheck\u003e, librust-equivalent-1-dev \u003c!nocheck\u003e, librust-foldhash-0.1-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "161a804120021f68f0654db5119b5386c3aa34d4c883101d42f2091455fcbe66 2685 rust-hashbrown_0.14.5-5.dsc e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1 141498 rust-hashbrown_0.14.5.orig.tar.gz 25878a81de91d3639c68bb4e5b9534b5aab660f9982009f99ae6af0a5df8fc4a 5244 rust-hashbrown_0.14.5-5.debian.tar.xz"
+    "de37b07909eb31b7071019fa3f4222ed9c5096997fa01374e1b1f4a43895a9cf 2692 rust-hashbrown_0.15.5-1.dsc 9229cfe53dfd69f0609a49f65461bd93001ea1ef889cd5529dd176593f5338a1 140908 rust-hashbrown_0.15.5.orig.tar.gz efb9a7356677932324b332a0e138bbb666e59e0ccbcb696c0fda35bef1fa57be 5668 rust-hashbrown_0.15.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hashbrown"
   ],
   "Files": [
-    "79807433d8b3745c1b2ec43918106800 2685 rust-hashbrown_0.14.5-5.dsc 0339cc04f4471f002e421e2328a86bf5 141498 rust-hashbrown_0.14.5.orig.tar.gz d1c4aca60c478e8f1973b3acd9b3cef5 5244 rust-hashbrown_0.14.5-5.debian.tar.xz"
+    "3ec4bfb12d77f51530dee7eba813d7e2 2692 rust-hashbrown_0.15.5-1.dsc ff62c1415be32ef6642213c9ae175170 140908 rust-hashbrown_0.15.5.orig.tar.gz e1e192436105730e69b0e71090db3196 5668 rust-hashbrown_0.15.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/hashbrown"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bumpalo-3+allocator-api2-dev, librust-bumpalo-3+default-dev, librust-doc-comment-0.3+default-dev, librust-fnv-1+default-dev, librust-lazy-static-1+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-rayon-1+default-dev, librust-rkyv-0.7+default-dev, librust-rkyv-0.7+validation-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-bumpalo-3+allocator-api2-dev, librust-bumpalo-3+default-dev, librust-doc-comment-0.3+default-dev, librust-fnv-1+default-dev, librust-lazy-static-1+default-dev, librust-rand+default-dev, librust-rand+small-rng-dev, librust-rayon-1+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hashbrown]"
   ],
   "Version": [
-    "0.14.5-5"
+    "0.15.5-1"
   ]
 }
