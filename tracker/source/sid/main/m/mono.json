@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mipsel powerpc ppc64 ppc64el s390x all"
+    "amd64 arm64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 loong64 mipsel powerpc ppc64 ppc64el riscv64 s390x all"
   ],
   "Binary": [
-    "mono-runtime-common, mono-runtime, mono-runtime-sgen, mono-runtime-boehm, mono-runtime-dbg, mono-utils, ca-certificates-mono, mono-complete, libmono-2.0-1, libmono-2.0-dev, libmonosgen-2.0-1, libmonosgen-2.0-1-dbg, libmonosgen-2.0-dev, libmonoboehm-2.0-1, libmonoboehm-2.0-1-dbg, libmonoboehm-2.0-dev, libmono-profiler, libmono-cil-dev, libmono-corlib4.5-cil, mono-dbg, mono-mcs, mono-devel, mono-4.0-service, mono-xbuild, mono-gac, mono-4.0-gac, mono-csharp-shell, monodoc-base, monodoc-manual"
+    "mono-runtime, mono-libraries, mono-libraries-debug, mono-devel"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), dh-python, dpkg-dev (\u003e= 1.16.1~), bison, cmake, dc, libkrb5-dev, libx11-dev, libxml-dom-perl, libxslt1-dev, libxt-dev, lsb-release, procps, python3, tzdata, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "16d43d1f8d41233b76cf9a6dbfd643cf13d67628ab49ca2c1a2ca0c1a2e8918a 4741 mono_6.14.1+ds-2.dsc 8299b506005eed5d7d9a54b6a1ced34ad4f5ae68d91184b203a267b6e90b1bc7 120753804 mono_6.14.1+ds.orig.tar.xz 9f4c7e5ea3312c17cc6bf29c93d33f86cdf0c59dc39b774add0cba572f674647 130300 mono_6.14.1+ds-2.debian.tar.xz"
+    "9224765a1d21901c32718d8a7269200b232a66ed3c1ab04b519a69de7e69c741 1994 mono_6.14.1+ds-4.dsc 8299b506005eed5d7d9a54b6a1ced34ad4f5ae68d91184b203a267b6e90b1bc7 120753804 mono_6.14.1+ds.orig.tar.xz 4e3348a99ce2d89bae3c245afe5f3fd364b335ecaecff40331d2ba26e8d64ed8 116520 mono_6.14.1+ds-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mono"
   ],
   "Files": [
-    "08f9a154932470e5718d1eb64053fa07 4741 mono_6.14.1+ds-2.dsc dade6fb0c5c00ab5353fc9981ac19bea 120753804 mono_6.14.1+ds.orig.tar.xz c051a938bb28a7821552fd3e0816b118 130300 mono_6.14.1+ds-2.debian.tar.xz"
+    "a0ed42a8304cffe003737e3e3433e9fb 1994 mono_6.14.1+ds-4.dsc dade6fb0c5c00ab5353fc9981ac19bea 120753804 mono_6.14.1+ds.orig.tar.xz c168c141d75b98b7b98bcb91a8131191 116520 mono_6.14.1+ds-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mono"
   ],
   "Package-List": [
-    "ca-certificates-mono deb cli-mono optional arch=all libmono-2.0-1 deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmono-2.0-dev deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmono-cil-dev deb cli-mono optional arch=all libmono-corlib4.5-cil deb cli-mono optional arch=all libmono-profiler deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmonoboehm-2.0-1 deb cli-mono optional arch=amd64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmonoboehm-2.0-1-dbg deb debug optional arch=amd64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmonoboehm-2.0-dev deb cli-mono optional arch=amd64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmonosgen-2.0-1 deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmonosgen-2.0-1-dbg deb debug optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x libmonosgen-2.0-dev deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-4.0-gac deb cli-mono optional arch=all mono-4.0-service deb cli-mono optional arch=all mono-complete deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-csharp-shell deb shells optional arch=all mono-dbg deb debug optional arch=all mono-devel deb cli-mono optional arch=all mono-gac deb cli-mono optional arch=all mono-mcs deb cli-mono optional arch=all mono-runtime deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-runtime-boehm deb cli-mono optional arch=amd64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-runtime-common deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-runtime-dbg deb debug optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-runtime-sgen deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-utils deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mipsel,powerpc,ppc64,ppc64el,s390x mono-xbuild deb cli-mono optional arch=all monodoc-base deb cli-mono optional arch=all monodoc-manual deb doc optional arch=all"
+    "mono-devel deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,loong64,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x mono-libraries deb cli-mono optional arch=all mono-libraries-debug deb debug optional arch=all mono-runtime deb cli-mono optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,loong64,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x"
   ],
   "Priority": [
     "source"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "mono-csharp-shell, mono-utils"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/dotnet-team/mono"
   ],
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/dotnet-team/mono.git"
   ],
   "Version": [
-    "6.14.1+ds-2"
+    "6.14.1+ds-4"
   ]
 }
