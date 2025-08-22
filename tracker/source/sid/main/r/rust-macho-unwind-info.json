@@ -6,19 +6,25 @@
     "librust-macho-unwind-info-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.56-~~) \u003c!nocheck\u003e, librust-zerocopy-0.7+default-dev (\u003e= 0.7.32-~~) \u003c!nocheck\u003e, librust-zerocopy-derive-0.7+default-dev (\u003e= 0.7.32-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-zerocopy-0.8+default-dev \u003c!nocheck\u003e, librust-zerocopy-derive-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2e33ec670f344b8f5cfcd3af828e1f8a4739c340f206bb3caa1fe4d8e4ee7545 2436 rust-macho-unwind-info_0.4.0-1.dsc 6b6086acc74bc23f56b60e88bb082d505e23849d68d6c0f12bb6a7ad5c60e03e 20259 rust-macho-unwind-info_0.4.0.orig.tar.gz 9d5f6fa767848719df1b4b2aaf305d61c1876c3c3ebf204764e15c87682416f4 4204 rust-macho-unwind-info_0.4.0-1.debian.tar.xz"
+    "9c0635b182ed1ee41dcc5e8244d143e1cb732a98d494c87d6799039ea1ce5457 1874 rust-macho-unwind-info_0.5.0-1.dsc bb4bdc8b0ce69932332cf76d24af69c3a155242af95c226b2ab6c2e371ed1149 20151 rust-macho-unwind-info_0.5.0.orig.tar.gz 3fdb74a55911e12a2fb604bd26550a0a394ef7f0256cb81f8f3ec3ae6103456c 2888 rust-macho-unwind-info_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-macho-unwind-info"
   ],
   "Files": [
-    "ab3652e0343afb5e6efb32735c6e9674 2436 rust-macho-unwind-info_0.4.0-1.dsc 96538582e2e5defd5c4ee7d667d8e0d0 20259 rust-macho-unwind-info_0.4.0.orig.tar.gz b6d10599fe217cd71eb52401a015fad2 4204 rust-macho-unwind-info_0.4.0-1.debian.tar.xz"
+    "f7971fbeb67c63e31667c17778714a82 1874 rust-macho-unwind-info_0.5.0-1.dsc 888d66351f9a26d965ee4c20103a9122 20151 rust-macho-unwind-info_0.5.0.orig.tar.gz 68386c7abc44e96f2db462a4e0dbbd70 2888 rust-macho-unwind-info_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mstange/macho-unwind-info"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-object-0.32+default-dev"
+    "dh-cargo, librust-object-0.36+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/macho-unwind-info]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.5.0-1"
   ]
 }
