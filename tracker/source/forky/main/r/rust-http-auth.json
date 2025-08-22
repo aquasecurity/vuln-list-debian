@@ -6,19 +6,25 @@
     "librust-http-auth-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-md-5-0.10+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-md-5-0.10+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1d7eaba2d2e8194f8d555e71216c87db6659031491f8dd9747142a287613689d 2641 rust-http-auth_0.1.8-2.dsc 5430cacd7a1f9a02fbeb350dfc81a0e5ed42d81f3398cb0ba184017f85bdcfbc 38880 rust-http-auth_0.1.8.orig.tar.gz 56369e1cc2db6ac74a44e930336d0445124d322dfa641a74fe2cd74c5ad06e16 3800 rust-http-auth_0.1.8-2.debian.tar.xz"
+    "cf473eff81d2bdf1eeaf1a018a11f9ba2d3257d87ce85fb21b87242224ad090c 2701 rust-http-auth_0.1.10-1.dsc 150fa4a9462ef926824cf4519c84ed652ca8f4fbae34cb8af045b5cbcaf98822 41282 rust-http-auth_0.1.10.orig.tar.gz 3f3ff8f564daaf954562fde10c7824601e3b722dd044e7a847607396de6e89fd 3944 rust-http-auth_0.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-http-auth"
   ],
   "Files": [
-    "218d2c5158dd4161f3f8211af935d04a 2641 rust-http-auth_0.1.8-2.dsc 945cc7977d487230b6761cba86fdff23 38880 rust-http-auth_0.1.8.orig.tar.gz 04a129fd0c8aa7c25f4ae0c1024b14e0 3800 rust-http-auth_0.1.8-2.debian.tar.xz"
+    "749651adf6e19ae238b7d9f7a8421fa4 2701 rust-http-auth_0.1.10-1.dsc 791938196c6a3f4934408ae05f1cd5d8 41282 rust-http-auth_0.1.10.orig.tar.gz 5c195da5c8acd3f8fbc456d4d87479d6 3944 rust-http-auth_0.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/scottlamb/http-auth"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-reqwest-0.11+blocking-dev, librust-reqwest-0.11+default-dev, rustc"
+    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-reqwest-0.12+blocking-dev, librust-reqwest-0.12+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/http-auth]"
   ],
   "Version": [
-    "0.1.8-2"
+    "0.1.10-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-pythonize-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pyo3-0.22-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pyo3-0.25-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e07dabc3d11e63af7eb8f26a7bb3ccc434fda2ad0c784d91e70c7bf718ca6308 2157 rust-pythonize_0.21.1-1.dsc 9d0664248812c38cc55a4ed07f88e4df516ce82604b93b1ffdc041aa77a6cb3c 13357 rust-pythonize_0.21.1.orig.tar.gz 5a8d22345c9b833908a2149860e6e4fabea18444705c5cce1e27790cd1956f11 4268 rust-pythonize_0.21.1-1.debian.tar.xz"
+    "1bac17fb355b1294c4a7a57421901e5f47f72219fcaf7fa2fedc854cef04ef05 2602 rust-pythonize_0.25.0-1.dsc 597907139a488b22573158793aa7539df36ae863eba300c75f3a0d65fc475e27 18467 rust-pythonize_0.25.0.orig.tar.gz f4d41d589cdb460fd839b0e16e8aaeda5c139064134c7cc04d90885e3493f15b 2840 rust-pythonize_0.25.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pythonize"
   ],
   "Files": [
-    "db386f66dc6343abe4854d54d4509907 2157 rust-pythonize_0.21.1-1.dsc e9b6c9f790eb8e1dcb22b2c9690bec13 13357 rust-pythonize_0.21.1.orig.tar.gz b281bfe32cff3c0eacebd9ef916aec58 4268 rust-pythonize_0.21.1-1.debian.tar.xz"
+    "a0e5d8c86aa1bb50d7bb334ab1979871 2602 rust-pythonize_0.25.0-1.dsc 8be0cfac3c00c70034101d5e4a7139c9 18467 rust-pythonize_0.25.0.orig.tar.gz a7067a29e7fd3300a70a85f9002c4244 2840 rust-pythonize_0.25.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-maplit-1+default-dev, librust-pyo3-0.22+auto-initialize-dev, librust-pyo3-0.22+macros-dev, librust-pyo3-0.22+py-clone-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-serde-path-to-error-0.1+default-dev"
+    "dh-cargo, librust-maplit-1+default-dev, librust-pyo3-0.25+auto-initialize-dev, librust-pyo3-0.25+macros-dev, librust-pyo3-0.25+py-clone-dev, librust-serde-1+derive-dev, librust-serde-bytes-0.11+default-dev, librust-serde-json-1+default-dev, librust-serde-path-to-error-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Antonio Russo \u003caerusso@aerusso.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pythonize]"
   ],
   "Version": [
-    "0.21.1-1"
+    "0.25.0-1"
   ]
 }

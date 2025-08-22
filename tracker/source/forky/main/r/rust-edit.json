@@ -6,19 +6,25 @@
     "librust-edit-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.1.0-~~) \u003c!nocheck\u003e, librust-which-dev (\u003e= 4.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.1.0-~~) \u003c!nocheck\u003e, librust-which+default-dev (\u003e= 4.0-~~) \u003c!nocheck\u003e, librust-which+real-sys-dev (\u003e= 4.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6f3b5c219e59af9e9f952ab69cb38e1f3494af61e394767413796568c3bb01fa 2212 rust-edit_0.1.5-2.dsc f364860e764787163c8c8f58231003839be31276e821e2ad2092ddf496b1aa09 9327 rust-edit_0.1.5.orig.tar.gz bab536828f9d4f44892492656e98f6c0e4dd83fbb684c9581e2ef3954a9620e9 2248 rust-edit_0.1.5-2.debian.tar.xz"
+    "54b53441878387f1ded1c356efb9e45ee158991c158e02bd1914661e8666cd57 1704 rust-edit_0.1.5-3.dsc f364860e764787163c8c8f58231003839be31276e821e2ad2092ddf496b1aa09 9327 rust-edit_0.1.5.orig.tar.gz 35a00d0db7176e8eb6a6f260090e9868158d2a05a0431e1866b171a7f44716f4 2344 rust-edit_0.1.5-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-edit"
   ],
   "Files": [
-    "b1922bb1c4d36a9e1069961d4bdc1318 2212 rust-edit_0.1.5-2.dsc 260f846a52463806df4a3bf72e035b73 9327 rust-edit_0.1.5.orig.tar.gz 1698eee7714bfd3a01cbad073d2b897b 2248 rust-edit_0.1.5-2.debian.tar.xz"
+    "6b4f6e75d6852c7e1d0e373aeede37c7 1704 rust-edit_0.1.5-3.dsc 260f846a52463806df4a3bf72e035b73 9327 rust-edit_0.1.5.orig.tar.gz 3399a201e9d9c660e7f416c18f35e489 2344 rust-edit_0.1.5-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/milkey-mouse/edit"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/edit]"
   ],
   "Version": [
-    "0.1.5-2"
+    "0.1.5-3"
   ]
 }
