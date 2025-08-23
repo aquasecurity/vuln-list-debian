@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libpapi7.1t64, libsde1t64, libpapi-dev, papi-tools, papi-examples"
+    "libpapi7.2, libsde1t64, libpapi-dev, papi-tools, papi-examples"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, gfortran, libpfm4-dev (\u003e= 4.13.0+git16) [linux-any], librocm-smi-dev [!hppa !x32 !hurd-any !kfreebsd-any], mpi-default-dev, dpkg-dev (\u003e= 1.22.5)"
+    "debhelper-compat (= 13), dh-sequence-python3, gfortran, hipcc [amd64 arm64 ppc64el], libpfm4-dev (\u003e= 4.13.0+git101) [linux-any], librocm-smi-dev [!x32 !hurd-any], mpi-default-dev, dpkg-dev (\u003e= 1.22.5)"
   ],
   "Checksums-Sha256": [
-    "00f9d288c79292a1338d4c0b31634cecee11616265bfa3dabd4af58d8c3988e1 2397 papi_7.1.0-5.dsc 092c4be0295d7874a17f687ed3bcc71c5cad6b5bb269a6486b3c1078d12a1441 2650676 papi_7.1.0.orig.tar.xz d4f31ae6dc772cb94b3e89d6a499e0470f390915d24466b2bc6db58ceedce114 24672 papi_7.1.0-5.debian.tar.xz"
+    "e50e4cbb897dedb10702cdd9ad27bf2dc2be192dca77723a73bfa894ffebf9f1 2401 papi_7.2.0-2.dsc f806e77e8cd08a0d3e4c002d8a8d3fefc64840ff663c2ac46bd66398c779c6db 4274603 papi_7.2.0.orig.tar.gz 515ec05e3ec20adc64da2f6187fa9391bd0b34a3bbf0d3bbc72e3992aeb843e6 24684 papi_7.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/papi"
   ],
   "Files": [
-    "669f95e79c94f0ee63a7a422d7688dcd 2397 papi_7.1.0-5.dsc ea6a0dad60c04225ed50cc4dc5047744 2650676 papi_7.1.0.orig.tar.xz 7d7cd9a4133f0d5d01ec9a09bb3f1924 24672 papi_7.1.0-5.debian.tar.xz"
+    "1a511a9d29f5f64962a322387ef8e603 2401 papi_7.2.0-2.dsc 62bdd5f29ce6fa09934d29aff70bf87d 4274603 papi_7.2.0.orig.tar.gz 2c6d0e0ef785762a0a44f9a04850ccec 24684 papi_7.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "papi"
   ],
   "Package-List": [
-    "libpapi-dev deb libdevel optional arch=any libpapi7.1t64 deb libs optional arch=any libsde1t64 deb libs optional arch=any papi-examples deb devel optional arch=any papi-tools deb devel optional arch=any"
+    "libpapi-dev deb libdevel optional arch=any libpapi7.2 deb libs optional arch=any libsde1t64 deb libs optional arch=any papi-examples deb devel optional arch=any papi-tools deb devel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/hpc-team/papi.git"
   ],
   "Version": [
-    "7.1.0-5"
+    "7.2.0-2"
   ]
 }

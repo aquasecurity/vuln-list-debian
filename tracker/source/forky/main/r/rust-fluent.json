@@ -6,22 +6,25 @@
     "librust-fluent-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fluent-bundle-0.15+default-dev \u003c!nocheck\u003e, librust-unic-langid-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fluent-bundle-0.16+default-dev \u003c!nocheck\u003e, librust-unic-langid-0.9+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5c4ac65689f4d6fda61050969d327ce9ed75ab24b79f2f7502ed8fc01876952e 2228 rust-fluent_0.16.0-1.dsc 61f69378194459db76abd2ce3952b790db103ceb003008d3d50d97c41ff847a7 8321 rust-fluent_0.16.0.orig.tar.gz 4e35e4d306ea675ec1e90579aa3e50dd67cccee7e7a78c1da5d2760b0c6cacb6 2720 rust-fluent_0.16.0-1.debian.tar.xz"
+    "26dd854d4ef7ffae1911440f6b7c8ecad6fda6e6b158b12291e222d046ee2085 2277 rust-fluent_0.17.0-1.dsc 8137a6d5a2c50d6b0ebfcb9aaa91a28154e0a70605f112d30cb0cd4a78670477 10282 rust-fluent_0.17.0.orig.tar.gz e32f2c03cfba3217140501f3ee4b2851f026b95913ca22da2af7f183f226f7ac 2860 rust-fluent_0.17.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fluent"
   ],
   "Files": [
-    "db700fe56f5b85934572160cf225856a 2228 rust-fluent_0.16.0-1.dsc 6a8b1b68e64407e6b113b4ced124a775 8321 rust-fluent_0.16.0.orig.tar.gz e6f27e3f1cad9eaaad0abbb1c1ec4a97 2720 rust-fluent_0.16.0-1.debian.tar.xz"
+    "4fbedda16f5ee2f41666af1c71a2128a 2277 rust-fluent_0.17.0-1.dsc 007df2f4f1a2fd4c79d33d24e3ee1e1d 10282 rust-fluent_0.17.0.orig.tar.gz 132c5ab184dbb361f3bdcdd2392bbca6 2860 rust-fluent_0.17.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.projectfluent.org"
+    "https://www.projectfluent.org"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fluent]"
   ],
   "Version": [
-    "0.16.0-1"
+    "0.17.0-1"
   ]
 }

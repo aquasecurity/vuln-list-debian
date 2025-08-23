@@ -6,22 +6,25 @@
     "librust-jj-lib-proc-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.86-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.36-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.79-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2+default-dev (\u003e= 1.0.90-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.40-~~) \u003c!nocheck\u003e, librust-syn+default-dev (\u003e= 2.0.90-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cae6665da441000f4906a827bd637f0706c6538948f489c3fa94589fac35cfda 2434 rust-jj-lib-proc-macros_0.22.0-1.dsc ab42d72908eb4e125af210366256cae4fbd5690c53079046f94762516e9620bd 13228 rust-jj-lib-proc-macros_0.22.0.orig.tar.gz 7417a260e57b1903d257cf7776a947fff97882b943364dd42a2ea38b9f4f35e0 1952 rust-jj-lib-proc-macros_0.22.0-1.debian.tar.xz"
+    "1044e16ee765b9226f78f599925c27beaf8c2ddfea45f953ca6c2b449b835b76 2482 rust-jj-lib-proc-macros_0.32.0-1.dsc 8d3ce4182899d39998aec1821b4cd482a07c49af7afcc53d9c5d7253f3648204 14138 rust-jj-lib-proc-macros_0.32.0.orig.tar.gz c326b4da701680d1b27670fe598526a075cb34652540d599080c8febdf21bbe9 2192 rust-jj-lib-proc-macros_0.32.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jj-lib-proc-macros"
   ],
   "Files": [
-    "9b08e8b4260bc132d62a792f04d26859 2434 rust-jj-lib-proc-macros_0.22.0-1.dsc 0e796aeb5f560f22818761299853fbde 13228 rust-jj-lib-proc-macros_0.22.0.orig.tar.gz 568dfb8edeefece346a07d3bdf729d9d 1952 rust-jj-lib-proc-macros_0.22.0-1.debian.tar.xz"
+    "f745ed08046cbc7bfc6bd5e50f85965c 2482 rust-jj-lib-proc-macros_0.32.0-1.dsc 5b6d5b109c2856ef0cf2f1e0865f0b43 14138 rust-jj-lib-proc-macros_0.32.0.orig.tar.gz df4f9d8e050c4358db6eb9b4d18262cc 2192 rust-jj-lib-proc-macros_0.32.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/martinvonz/jj"
+    "https://github.com/jj-vcs/jj"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jj-lib-proc-macros]"
   ],
   "Version": [
-    "0.22.0-1"
+    "0.32.0-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-time-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-conv-0.1+default-dev \u003c!nocheck\u003e, librust-time-core-0.1.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-conv-0.1+default-dev \u003c!nocheck\u003e, librust-time-core-0.1+default-dev (\u003c\u003c 0.1.4-~~) \u003c!nocheck\u003e, librust-time-core-0.1+default-dev (\u003e= 0.1.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a8e6cbe8187ad2e468ce71d128c4d8c26c69dd2c2a134473b0b5624695ff3277 1700 rust-time-macros_0.2.19-1.dsc 2834e6017e3e5e4b9834939793b282bc03b37a3336245fa820e35e233e2a85de 24268 rust-time-macros_0.2.19.orig.tar.gz 7ca893c6e471f37d80b728a29d55dca1d2f3e4ff0d66aa60ae5bb1ce73625c71 2988 rust-time-macros_0.2.19-1.debian.tar.xz"
+    "71b8e719496faf07dfc11dfab356c9d0f5e2b827f8d85970873b67fef17fdd46 2396 rust-time-macros_0.2.20-1.dsc e8093bc3e81c3bc5f7879de09619d06c9a5a5e45ca44dfeeb7225bae38005c5c 24416 rust-time-macros_0.2.20.orig.tar.gz 8350216fa8b1d974958f92ddad3285f7ed2c3f62b14ac134177865c7507d916e 2984 rust-time-macros_0.2.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-time-macros"
   ],
   "Files": [
-    "1267c9059902fb7dd4bf67ee4ba4cd52 1700 rust-time-macros_0.2.19-1.dsc 504da2c69a717cf18a048a88864fb728 24268 rust-time-macros_0.2.19.orig.tar.gz 059f688e08154441d32b28744812314b 2988 rust-time-macros_0.2.19-1.debian.tar.xz"
+    "8d3b8002bc25d80ee94c521478b5596c 2396 rust-time-macros_0.2.20-1.dsc 0b262571202fe75b7f63187fbed91700 24416 rust-time-macros_0.2.20.orig.tar.gz 1d0844eaaca6eedd53839f38e0e35eb8 2984 rust-time-macros_0.2.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/time-macros]"
   ],
   "Version": [
-    "0.2.19-1"
+    "0.2.20-1"
   ]
 }
