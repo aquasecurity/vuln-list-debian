@@ -6,16 +6,19 @@
     "librust-av1-grain-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.59.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.58-~~) \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-nom-7+default-dev (\u003e= 7.1.1-~~) \u003c!nocheck\u003e, librust-num-rational-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-v-frame-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.62.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.58-~~) \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-nom-7+default-dev (\u003e= 7.1.1-~~) \u003c!nocheck\u003e, librust-num-rational-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-v-frame-0.3+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "60f0731b7b57ff8e9211d73f742e7f9afa596ec2a0a072aa6afc76320288bb7b 1990 rust-av1-grain_0.2.3-1.dsc 6678909d8c5d46a42abcf571271e15fdbc0a225e3646cf23762cd415046c78bf 34703 rust-av1-grain_0.2.3.orig.tar.gz 9a4d6381ab5a5ff64b5aec48d9ab6ec908fc4fa58b0e417d1cfa7228ffb79765 5344 rust-av1-grain_0.2.3-1.debian.tar.xz"
+    "7e98d1794d32dad2ea6bcb0c7b934ad9914b07eba34455b6750d1394836a8e1f 2023 rust-av1-grain_0.2.4-1.dsc 4f3efb2ca85bc610acfa917b5aaa36f3fcbebed5b3182d7f877b02531c4b80c8 37050 rust-av1-grain_0.2.4.orig.tar.gz 2325cc442239c4def59d4e05911bf7877e16a4e8f7aafca002b3b2d6119c6e8a 5368 rust-av1-grain_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-av1-grain"
   ],
   "Files": [
-    "04174961410ee166075993a33382d8af 1990 rust-av1-grain_0.2.3-1.dsc 897bb747c1bffb5f7fe96d70d4619d3c 34703 rust-av1-grain_0.2.3.orig.tar.gz 0a7490bbcc51314a4a12bf2d8c25ed5f 5344 rust-av1-grain_0.2.3-1.debian.tar.xz"
+    "a55a720f86185ebd7dbb15d313c93cf3 2023 rust-av1-grain_0.2.4-1.dsc 8a57f942d6a9a4f8953a536ce107d7fb 37050 rust-av1-grain_0.2.4.orig.tar.gz 84e07ea03ba7650eb4010566dedbcb9c 5368 rust-av1-grain_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev"
+    "dh-cargo, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/av1-grain]"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.2.4-1"
   ]
 }
