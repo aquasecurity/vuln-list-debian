@@ -6,16 +6,19 @@
     "librust-logos-codegen-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-beef-0.5+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.9-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev (\u003e= 0.8.2-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.13-~~) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.13-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-beef-0.5+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.9-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev (\u003e= 0.8.2-~~) \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.13-~~) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.13-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "017a598a818d604744e15e8dc460214b1220b11837b131c08522e0accd5fda53 2704 rust-logos-codegen_0.14.0-1.dsc 8e31badd9de5131fdf4921f6473d457e3dd85b11b7f091ceb50e4df7c3eeb12a 39888 rust-logos-codegen_0.14.0.orig.tar.gz 88a3f3b1706d0585afb7f9b6d89df58ac95cf94484b96bc56c591acd60e155ee 2744 rust-logos-codegen_0.14.0-1.debian.tar.xz"
+    "3e1fccbdfb2e5ec71f0ac1193a7ef1ed2002a34eff656838d9a55d69f6317551 2258 rust-logos-codegen_0.15.1-1.dsc 192a3a2b90b0c05b27a0b2c43eecdb7c415e29243acc3f89cc8247a5b693045c 56419 rust-logos-codegen_0.15.1.orig.tar.gz c3059730b65042f12cbc868f6887f634dfc5e83f7e89459c6e4041a41750d492 3216 rust-logos-codegen_0.15.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-logos-codegen"
   ],
   "Files": [
-    "e9008aa180bed0db930f50601393204a 2704 rust-logos-codegen_0.14.0-1.dsc 2799f523b2f60b75f20014f83f7d3e33 39888 rust-logos-codegen_0.14.0.orig.tar.gz ef1f282b374e7fc6c0882d8a5bb7447a 2744 rust-logos-codegen_0.14.0-1.debian.tar.xz"
+    "2be0475c04afe43fc41ab691e001b1ce 2258 rust-logos-codegen_0.15.1-1.dsc f96c005a6c182597f35f19fcd7cff14a 56419 rust-logos-codegen_0.15.1.orig.tar.gz 303214e56f15e0a9c5c4cef82e4ad0c5 3216 rust-logos-codegen_0.15.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev"
+    "dh-cargo, librust-insta-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rstest-0.17+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/logos-codegen]"
   ],
   "Version": [
-    "0.14.0-1"
+    "0.15.1-1"
   ]
 }
