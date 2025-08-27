@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-num-iter-dev, librust-num-iter+i128-dev, librust-num-iter+std-dev"
+    "librust-num-iter-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.42-~~) \u003c!nocheck\u003e, librust-num-integer-0.1-dev (\u003e= 0.1.42-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.46-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.46-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d454230280593dd014aabc79afa4ccd6f02ad5f64a75ae2aa581a6eefc33d25e 2600 rust-num-iter_0.1.42-1.dsc b2021c8337a54d21aca0d59a92577a029af9431cb59b909b03252b9c164fad59 10450 rust-num-iter_0.1.42.orig.tar.gz 8c55294275f41f0b1fb0c49201e2e8ef824aaba71b8b707ecc13840254ef9a95 3056 rust-num-iter_0.1.42-1.debian.tar.xz"
+    "d8301711bf477ca1c176090096322a826e81990b051a40de502c8e11c2a7dc03 1888 rust-num-iter_0.1.45-1.dsc 1429034a0490724d0075ebb2bc9e875d6503c3cf69e235a8941aa757d83ef5bf 10320 rust-num-iter_0.1.45.orig.tar.gz c271816f297a9dcdd2ac9d0397d0381f91af87690e8ceda0dc614a2936888e61 2872 rust-num-iter_0.1.45-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-iter"
   ],
   "Files": [
-    "ef0f13661e8dda5b71541eff2a8ec419 2600 rust-num-iter_0.1.42-1.dsc 4b9ee6818517941de3ad6d645b77af3a 10450 rust-num-iter_0.1.42.orig.tar.gz 88862f4f0453194f553c7641626eeda4 3056 rust-num-iter_0.1.42-1.debian.tar.xz"
+    "89338ddc5951c05271b330a89605f648 1888 rust-num-iter_0.1.45-1.dsc 0fbab0ba3ce58941898919fa3d0bae4b 10320 rust-num-iter_0.1.45.orig.tar.gz cdd1e4330e2bfb739951c04f66731558 2872 rust-num-iter_0.1.45-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-num-iter"
   ],
   "Package-List": [
-    "librust-num-iter+i128-dev deb rust optional arch=any librust-num-iter+std-dev deb rust optional arch=any librust-num-iter-dev deb rust optional arch=any"
+    "librust-num-iter-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-iter]"
   ],
   "Version": [
-    "0.1.42-1"
+    "0.1.45-1"
   ]
 }

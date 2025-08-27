@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armel armhf i386 ppc64el s390x"
+    "amd64 arm64 ppc64el riscv64"
   ],
   "Binary": [
-    "godot3, godot3-runner, godot3-server"
+    "godot, godot-template-debug, godot-template-release"
   ],
   "Build-Depends": [
-    "ca-certificates, debhelper-compat (= 13), libasound2-dev, libbullet-dev, libenet-dev, libfreetype-dev, libgl-dev, libglu1-mesa-dev, libminiupnpc-dev, libopus-dev, libopusfile-dev, libpcre2-dev, libpng-dev, libpulse-dev, librecast-dev, libsquish-dev, libtheora-dev, libudev-dev, libvorbis-dev, libvpx-dev, libwebp-dev, libwslay-dev, libx11-dev, libxcursor-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libzstd-dev, pkgconf, scons, zlib1g-dev"
+    "ca-certificates, debhelper-compat (= 13), libasound2-dev, libbrotli-dev, libbullet-dev, libembree-dev [amd64 arm64], libenet-dev, libfreetype-dev, libgl-dev, libglu1-mesa-dev, libgraphite2-dev, libharfbuzz-dev, libicu-dev, libmbedtls-dev, libminiupnpc-dev, libogg-dev, libpcre2-dev, libpng-dev, libpulse-dev, librecast-dev, libsquish-dev, libtheora-dev, libudev-dev, libvorbis-dev, libwayland-dev, libwebp-dev, libwslay-dev, libx11-dev, libxcursor-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libzstd-dev, pkgconf, scons, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "941c52d47e39706f69cb2f465b44d6e961009d496daeb5e1f4f4d9893d0858cd 2752 godot_3.6+ds-2.dsc 4d1b91067360e95eb2d3ecdd7835aad9d1bb07682b8bcad32c3b834ff50547b1 24293096 godot_3.6+ds.orig.tar.xz ea43372cd000f354294c791f1a27c8004e671cef2dc21b66fe9c6415f43abbe7 21912 godot_3.6+ds-2.debian.tar.xz"
+    "64f54a3c7d632cd3f463888ec33831b5dba6899dbe543d09b42419f8cc322290 2797 godot_4.4.1+ds-1.dsc ac67a9f1238f303030b691463f7350460ac0939ed4c66eeaee3019da36a01b89 28306912 godot_4.4.1+ds.orig.tar.xz b44ddeb1d1a19361d5069ff5d5657227ccc2421e490049adca386c778f0539de 22816 godot_4.4.1+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/godot"
   ],
   "Files": [
-    "f7f37ecfc72c6342e96683c10e264c52 2752 godot_3.6+ds-2.dsc ea3ba4acc5f82db1470f24db4df3cac3 24293096 godot_3.6+ds.orig.tar.xz 29745a1ca2146b8f0c9524bde9874780 21912 godot_3.6+ds-2.debian.tar.xz"
+    "edcf91667a4adbaca4b36a24cbf6d855 2797 godot_4.4.1+ds-1.dsc dc91ff2cbb12c74829584a4c8298e367 28306912 godot_4.4.1+ds.orig.tar.xz 08a24db9412074cc6fa6fb1de2b1a4fe 22816 godot_4.4.1+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "godot"
   ],
   "Package-List": [
-    "godot3 deb devel optional arch=amd64,arm64,armel,armhf,i386,ppc64el,s390x godot3-runner deb devel optional arch=amd64,arm64,armel,armhf,i386,ppc64el,s390x godot3-server deb devel optional arch=amd64,arm64,armel,armhf,i386,ppc64el,s390x"
+    "godot deb devel optional arch=amd64,arm64,ppc64el,riscv64 godot-template-debug deb devel optional arch=amd64,arm64,ppc64el,riscv64 godot-template-release deb devel optional arch=amd64,arm64,ppc64el,riscv64"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "xauth, xvfb"
   ],
   "Uploaders": [
     "Otto Kekäläinen \u003cotto@debian.org\u003e, Travis Wrightsman \u003ctravis@wrightsman.org\u003e, Federico Ceratto \u003cfederico@debian.org\u003e, Dominik George \u003cnatureshadow@debian.org\u003e,"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/games-team/godot3.git"
   ],
   "Version": [
-    "3.6+ds-2"
+    "4.4.1+ds-1"
   ]
 }
