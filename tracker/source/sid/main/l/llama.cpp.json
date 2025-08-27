@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "llama.cpp"
+    "llama.cpp, libllama0, libllama-dev, llama.cpp-tools, llama.cpp-tools-extra, llama.cpp-examples, llama.cpp-tests, python3-gguf"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libcurl4-openssl-dev, libggml-cpu (\u003e= 0.0~git20250712), libggml-cpu (\u003c\u003c 0.0~git20250713), pkgconf"
+    "dh-sequence-bash-completion, cmake, dh-python, debhelper-compat (= 13), help2man, libcurl4-openssl-dev, libggml-dev (\u003e= 0.0~git20250712), libggml-dev (\u003c\u003c 0.0~git20250713), pkgconf"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-python3, python3-all, pybuild-plugin-pyproject, python3-poetry-core, python3-numpy, python3-tqdm, python3-yaml, python3-sentencepiece, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "106836b964a8bbfbd8ad035f6ba3ce6927ab95d7a7fb781daeaacda91f5e0f09 2086 llama.cpp_5882+dfsg-2.dsc dbe51550622469a040db3502d69ccbdfed73854c229921dfa27c5c01ba40dc55 5040284 llama.cpp_5882+dfsg.orig.tar.xz 952a07142453583ec4c2d70d4213b5875e9cbdba51ec1b836365e601f5772fb8 9432 llama.cpp_5882+dfsg-2.debian.tar.xz"
+    "3ed8e3880d3b13c0a9fc9c97fb9eed07e839e38cecee520d27765e750eaf5d1f 2744 llama.cpp_5882+dfsg-3.dsc dbe51550622469a040db3502d69ccbdfed73854c229921dfa27c5c01ba40dc55 5040284 llama.cpp_5882+dfsg.orig.tar.xz aa6386ee82f50a591f4c652b1d19521964da796fdebab2c5c8b6c84405bd0fab 12232 llama.cpp_5882+dfsg-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/llama.cpp"
   ],
   "Files": [
-    "624230c1d9c61555a30e141198b5de33 2086 llama.cpp_5882+dfsg-2.dsc 364c120d08f8d98985a5f7151b55b1dd 5040284 llama.cpp_5882+dfsg.orig.tar.xz e0d661e44f9127a32f051bf13335c9da 9432 llama.cpp_5882+dfsg-2.debian.tar.xz"
+    "d4485817203d22e3825f107e1f0fdf86 2744 llama.cpp_5882+dfsg-3.dsc 364c120d08f8d98985a5f7151b55b1dd 5040284 llama.cpp_5882+dfsg.orig.tar.xz a47da260c1a20cfcaeb157481f4275c2 12232 llama.cpp_5882+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "llama.cpp"
   ],
   "Package-List": [
-    "llama.cpp deb science optional arch=any"
+    "libllama-dev deb libdevel optional arch=any libllama0 deb libs optional arch=any llama.cpp deb science optional arch=all llama.cpp-examples deb science optional arch=any llama.cpp-tests deb science optional arch=any llama.cpp-tools deb science optional arch=any llama.cpp-tools-extra deb science optional arch=any python3-gguf deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/deeplearning-team/llama.cpp.git"
   ],
   "Version": [
-    "5882+dfsg-2"
+    "5882+dfsg-3"
   ]
 }
