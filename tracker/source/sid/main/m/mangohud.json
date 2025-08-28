@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "mangohud, mangoapp, mangohudctl"
+    "mangohud, mangoapp, mangohudctl, mangoplot"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), meson, pkgconf, glslang-tools, mesa-common-dev, libdbus-1-dev, libdrm-dev, libvulkan-dev, libglew-dev, libopengl-dev, nlohmann-json3-dev, libglfw3-dev, libspdlog-dev, libx11-dev, libwayland-dev, libxnvctrl-dev, libxrandr-dev, python3-mako, python3-setuptools, libxkbcommon-dev"
+    "debhelper-compat (= 13), appstream \u003c!nocheck\u003e, meson, pkgconf, glslang-tools, mesa-common-dev, libdbus-1-dev, libdrm-dev, libvulkan-dev, libglew-dev, libopengl-dev, nlohmann-json3-dev, libglfw3-dev, libspdlog-dev, libx11-dev, libwayland-dev, libxnvctrl-dev, libxrandr-dev, python3-mako:native, python3-setuptools, libxkbcommon-dev"
   ],
   "Checksums-Sha256": [
-    "2ac7e38210a503803599c05aabbdccbeeb456c3faf85712945464f2fcb31c86a 2195 mangohud_0.8.1-2.dsc 40c024170eb57e55f7c602521f1fb385a44238ff87294de063dad3c36e6daa55 16224644 mangohud_0.8.1.orig.tar.xz fcfef64949fcba65daa50ad2a26a6c721c8c7eedaa101cac6354d54b63f2a932 11184 mangohud_0.8.1-2.debian.tar.xz"
+    "a9956f1edfcdb54eafd3bb7fb9a3d6c813b5a016bb4475158b6c4509b4ccf008 2502 mangohud_0.8.1-3.dsc 40c024170eb57e55f7c602521f1fb385a44238ff87294de063dad3c36e6daa55 16224644 mangohud_0.8.1.orig.tar.xz 6a19edd9fbc24e02a509ac6506e242197ce177d946c247a440a64350df2c73a7 11400 mangohud_0.8.1-3.debian.tar.xz"
+  ],
+  "Description": [
+    "Vulkan/OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more MangoHud is a highly customizable overlay for Vulkan and OpenGL application to monitoring FPS, temperatures, CPU/GPU load and more."
   ],
   "Directory": [
     "pool/main/m/mangohud"
   ],
   "Files": [
-    "6e687c3afba79ea0b7a00e2b73c806ef 2195 mangohud_0.8.1-2.dsc 9b146a021f3f78a2d762db4817bc0544 16224644 mangohud_0.8.1.orig.tar.xz 45f42f9b9c35b97c081615ba83987f49 11184 mangohud_0.8.1-2.debian.tar.xz"
+    "6a7544f1b8afa879660a42733765cbc2 2502 mangohud_0.8.1-3.dsc 9b146a021f3f78a2d762db4817bc0544 16224644 mangohud_0.8.1.orig.tar.xz c5eb9b4df84fe873d6f38fe8bd283a3f 11400 mangohud_0.8.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "mangohud"
   ],
   "Package-List": [
-    "mangoapp deb misc optional arch=any mangohud deb misc optional arch=any mangohudctl deb misc optional arch=any"
+    "mangoapp deb misc optional arch=any mangohud deb misc optional arch=any mangohudctl deb misc optional arch=any mangoplot deb misc optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/games-team/mangohud.git"
   ],
   "Version": [
-    "0.8.1-2"
+    "0.8.1-3"
   ]
 }
