@@ -6,16 +6,19 @@
     "librust-abscissa-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ident-case-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-synstructure-0.12+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ident-case-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-synstructure-0.12+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3139021ef92a4665376f7c91ee1109ec13cf92aec7769e033685cb2aee67fdab 2467 rust-abscissa-derive_0.7.0-1.dsc 55bfb86e57d13c06e482c570826ddcddcc8f07fab916760e8911141d4fda8b62 4817 rust-abscissa-derive_0.7.0.orig.tar.gz fc9525fc723eeb1fdcc3e03dd643921f5a056c3f635a196f0033f62f3e042eb4 2100 rust-abscissa-derive_0.7.0-1.debian.tar.xz"
+    "cad526645d94366327b434138af11994330f5bccdbe1b258240da2870657f9ee 1905 rust-abscissa-derive_0.8.2-1.dsc 08d914621d2ef4da433fe01907e323ee3f2807738d392d5a34c287b381f87fe2 5521 rust-abscissa-derive_0.8.2.orig.tar.gz d484f0b2eca060486ec0e5732a9a6e6b3cd13f294e7713c6eed442a33c3956a8 2124 rust-abscissa-derive_0.8.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-abscissa-derive"
   ],
   "Files": [
-    "6adcc6c0d819854ae4f93f74e26c0854 2467 rust-abscissa-derive_0.7.0-1.dsc e5d5822a1c710b84cd5e7dfd43005cbc 4817 rust-abscissa-derive_0.7.0.orig.tar.gz 4561e25f01112855b9a1f2c00607f40b 2100 rust-abscissa-derive_0.7.0-1.debian.tar.xz"
+    "3d83e21f0a70f193b9c69958ac94814f 1905 rust-abscissa-derive_0.8.2-1.dsc bb3e45590e82dc262d374825828604f3 5521 rust-abscissa-derive_0.8.2.orig.tar.gz f7f7e6e5718ae02d0f3607a5a0569614 2124 rust-abscissa-derive_0.8.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/abscissa-derive]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.8.2-1"
   ]
 }
