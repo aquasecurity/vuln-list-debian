@@ -6,19 +6,25 @@
     "librust-camino-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.34.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7dd532f46622d25f0ba15dbdb59e7f95201ee24cfff0123e91d83015ec5f9ccc 1826 rust-camino_1.1.6-1.dsc c59e92b5a388f549b863a7bea62612c09f24c8393560709a54558a9abdfb3b9c 30519 rust-camino_1.1.6.orig.tar.gz 094ae881cf85e40c4e918af625e17b72662ba5f3162d6b56e31fbedb5a307fad 2864 rust-camino_1.1.6-1.debian.tar.xz"
+    "01ba96c78b259270c18d9ac1164cb5e6a19a10dbbdb56fd45b770121253aac33 2305 rust-camino_1.1.12-1.dsc dd0b03af37dad7a14518b7691d81acb0f8222604ad3d1b02f6b4bed5188c0cd5 44284 rust-camino_1.1.12.orig.tar.gz 42353394819a64e1eccb2151b2d627efda97779d4244ad98883612972bae3cf7 2928 rust-camino_1.1.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-camino"
   ],
   "Files": [
-    "c6287a5e69d8d2b9ef9e7a950d0fd374 1826 rust-camino_1.1.6-1.dsc 86af8d8f378d997f6fde77fc5c33f557 30519 rust-camino_1.1.6.orig.tar.gz aaf43237760463f8bdd341d30c496e59 2864 rust-camino_1.1.6-1.debian.tar.xz"
+    "ef2fafed10a8c1b41ca2120cbce52bdd 2305 rust-camino_1.1.12-1.dsc 8754af536be019da182c8950dc94986f 44284 rust-camino_1.1.12.orig.tar.gz 912c0b1a8c1a307353647a780ec08a52 2928 rust-camino_1.1.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/camino-rs/camino"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-serde-bytes-0.11+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-serde-bytes-0.11+default-dev, librust-serde-derive-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/camino]"
   ],
   "Version": [
-    "1.1.6-1"
+    "1.1.12-1"
   ]
 }
