@@ -6,16 +6,16 @@
     "proftpd-core, proftpd-dev, proftpd-doc, proftpd-mod-mysql, proftpd-mod-pgsql, proftpd-mod-ldap, proftpd-mod-odbc, proftpd-mod-sqlite, proftpd-mod-geoip, proftpd-mod-snmp, proftpd-mod-crypto, proftpd-mod-wrap"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, libacl1-dev, libcap-dev [linux-any], libldap-dev, default-libmysqlclient-dev, libnsl-dev, libncurses-dev, libpam-dev, libpcre2-dev, libpq-dev, libsqlite3-dev, libssl-dev, libwrap0-dev, unixodbc-dev, zlib1g-dev, libgeoip-dev, libmemcached-dev, libhiredis-dev, libsodium-dev, libmd-dev, libidn2-dev"
+    "debhelper-compat (= 13), dh-exec, libacl1-dev, libcap-dev [linux-any], libldap-dev, default-libmysqlclient-dev, libnsl-dev, libcrypt-dev, libncurses-dev, libpam-dev, libpcre2-dev, libpq-dev, libsqlite3-dev, libssl-dev, openssl-provider-fips, libwrap0-dev, unixodbc-dev, zlib1g-dev, libgeoip-dev, libmemcached-dev, libhiredis-dev, libsodium-dev, libmd-dev, libidn2-dev"
   ],
   "Checksums-Sha256": [
-    "d3b9373302b7bab6ea6a324dc4f22bf103f75017b8a483bbe3f71db7729a8d79 3371 proftpd-dfsg_1.3.8.c+dfsg-4.dsc 97ed89452ed56dad5c1655eebb6ee81cf79e76872bb615d0d9df605273d48095 19446032 proftpd-dfsg_1.3.8.c+dfsg.orig.tar.gz 953ab3ea3c2c1497c60dc3e6e048f194b7acb0dd428292f6115d4f9f90b03d66 79940 proftpd-dfsg_1.3.8.c+dfsg-4.debian.tar.xz"
+    "0fb81fcc83f8e32695047ec621d8dbd1c574bfe7dab59f1bf13b86127fbd543a 3435 proftpd-dfsg_1.3.9~dfsg-2.dsc 639427cb4566e1d337b6a406cdb8c555c81277a53b019c58b847a75a602e19d3 19530464 proftpd-dfsg_1.3.9~dfsg.orig.tar.gz 29ecf54edc11d8e9adc114dd505f5bf711a2195d1e34afe3c285f1c26fb5e132 84612 proftpd-dfsg_1.3.9~dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/proftpd-dfsg"
   ],
   "Files": [
-    "21354a11d25b347b3744a28be0ca3a6e 3371 proftpd-dfsg_1.3.8.c+dfsg-4.dsc 79c328b10a44112d54545d50e8c12eda 19446032 proftpd-dfsg_1.3.8.c+dfsg.orig.tar.gz d1343961b1eedbd386c74f50e3f67774 79940 proftpd-dfsg_1.3.8.c+dfsg-4.debian.tar.xz"
+    "19fad56856b6058ac0dcedc0ab84389c 3435 proftpd-dfsg_1.3.9~dfsg-2.dsc b0e2d3c9b32415368afda705a9997724 19530464 proftpd-dfsg_1.3.9~dfsg.orig.tar.gz 6046621c0ce7dbf32569608554fd7bee 84612 proftpd-dfsg_1.3.9~dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, check, libhttp-message-perl, libnet-address-ip-local-perl, libnet-inet6glue-perl, libnet-telnet-perl, libtest-unit-perl, redis-server"
+    "@builddeps@, adduser, check, libhttp-message-perl, libnet-address-ip-local-perl, libnet-inet6glue-perl, libnet-telnet-perl, libtest-unit-perl, openssh-client, openssh-server, redis-server"
   ],
   "Uploaders": [
     "Francesco Paolo Lovergine \u003cfrankie@debian.org\u003e, Hilmar Preuße \u003chille42@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-proftpd-team/proftpd.git"
   ],
   "Version": [
-    "1.3.8.c+dfsg-4"
+    "1.3.9~dfsg-2"
   ]
 }
