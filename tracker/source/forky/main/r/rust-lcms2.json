@@ -6,16 +6,19 @@
     "librust-lcms2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e, librust-foreign-types-0.5+default-dev \u003c!nocheck\u003e, librust-lcms2-sys-4+default-dev (\u003e= 4.0.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+align-offset-dev (\u003e= 1.20-~~) \u003c!nocheck\u003e, librust-bytemuck-1+min-const-generics-dev (\u003e= 1.20-~~) \u003c!nocheck\u003e, librust-foreign-types-0.5+default-dev \u003c!nocheck\u003e, librust-lcms2-sys-4+default-dev (\u003e= 4.0.6-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "774b8320a5bf30fff2949bd211bd71671c5faaff98c66f04af22521881638510 2316 rust-lcms2_6.0.4-1.dsc 2249d276363ddd7591b2e049d61d3d2be5efe8acabd670f4e9480e5fecbb5a60 31152 rust-lcms2_6.0.4.orig.tar.gz e9905897da3a39569de407d45e1082b971ab68efcf55134278ca3572da226289 2960 rust-lcms2_6.0.4-1.debian.tar.xz"
+    "64ad4bbe61da2515f941b74e492590f84d78b3e7f6f0581bd1ec682ce58dbce6 2402 rust-lcms2_6.1.1-1.dsc b75877b724685dd49310bdbadbf973fc69b1d01992a6d4a861b928fc3943f87b 31954 rust-lcms2_6.1.1.orig.tar.gz 01c6e517402b7cd4fb151d1a7e2b316dadafb791b00ad20e163bcf275591a4be 2944 rust-lcms2_6.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lcms2"
   ],
   "Files": [
-    "07f45c7abc45a06abfb35205bf78201c 2316 rust-lcms2_6.0.4-1.dsc 677f0079ff86ac7c7370fedc674ad177 31152 rust-lcms2_6.0.4.orig.tar.gz bd2e19c54e8a31cf16f4a141e78e7182 2960 rust-lcms2_6.0.4-1.debian.tar.xz"
+    "8199bf6be5035d7e8e0f4ab400625edf 2402 rust-lcms2_6.1.1-1.dsc 1a2842714459c48b09462f704fb49391 31954 rust-lcms2_6.1.1.orig.tar.gz 192668d64fcdce4ba2836c48c9545fc6 2944 rust-lcms2_6.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lcms2]"
   ],
   "Version": [
-    "6.0.4-1"
+    "6.1.1-1"
   ]
 }

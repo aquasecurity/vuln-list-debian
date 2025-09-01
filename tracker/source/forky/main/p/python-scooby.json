@@ -6,16 +6,16 @@
     "python3-scooby"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-setuptools-scm, python3-all"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-bs4 \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm"
   ],
   "Checksums-Sha256": [
-    "6c6078093b14772b7922e292e4b4f4b0e8382174082d1dd812ca88e83da74f6a 2222 python-scooby_0.10.0-1.dsc b14342fb618655f43d35cfce57625dcfc3751611f3afbd16e4859b3900bdb9cc 185880 python-scooby_0.10.0.orig.tar.gz 39ec0477d67777ed8afd709f7b4ef78014e5e364fb26892b0477e0b3052d1c5a 3048 python-scooby_0.10.0-1.debian.tar.xz"
+    "fdcf6429443ba7b02ad3e994f7ec57ede32974e19ea1eb940ea9b8340b227538 2251 python-scooby_0.10.1-1.dsc 92f94f3306a516a464f260a5299a12b969d90e13520c1c6c6ff6c96ef666b062 185905 python-scooby_0.10.1.orig.tar.gz 0cff35ec7a482a49c0a1aa602bec06737f87683a58674627aed9128f14f8286f 2500 python-scooby_0.10.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-scooby"
   ],
   "Files": [
-    "9c0d87db6c011e50d484564f54e9c03c 2222 python-scooby_0.10.0-1.dsc ae09851d75264e0ea5641440db0f0d6a 185880 python-scooby_0.10.0.orig.tar.gz 5353f84d7210b29760bc1d73b8d66239 3048 python-scooby_0.10.0-1.debian.tar.xz"
+    "bf550dc493cb7a3c10a4862d2dd3a57d 2251 python-scooby_0.10.1-1.dsc 602604115aa74cde2e5e9a21467c6792 185905 python-scooby_0.10.1.orig.tar.gz 411c48e627e7c9ac6d81c06e0e4e3dbd 2500 python-scooby_0.10.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3, python3-bs4, python3-numpy, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Francesco Ballarin \u003cfrancesco.ballarin@unicatt.it\u003e, Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/python-scooby.git"
   ],
   "Version": [
-    "0.10.0-1"
+    "0.10.1-1"
   ]
 }
