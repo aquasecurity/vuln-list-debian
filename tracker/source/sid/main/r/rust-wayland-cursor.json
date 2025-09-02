@@ -6,19 +6,25 @@
     "librust-wayland-cursor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.15-~~) \u003c!nocheck\u003e, librust-rustix-0.38+shm-dev (\u003e= 0.38.15-~~) \u003c!nocheck\u003e, librust-wayland-client-0.31+default-dev \u003c!nocheck\u003e, librust-xcursor-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+shm-dev \u003c!nocheck\u003e, librust-wayland-client-0.31+default-dev (\u003e= 0.31.11-~~) \u003c!nocheck\u003e, librust-xcursor-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "077e906c7a8b3c7e6a74fa9563e71c488eb437d7024ca6f5fa730b41e81821df 2549 rust-wayland-cursor_0.31.3-1.dsc a206e8b2b53b1d3fcb9428fec72bc278ce539e2fa81fe2bfc1ab27703d5187b9 7520 rust-wayland-cursor_0.31.3.orig.tar.gz fb4f1b9b7b850fc99493b922c83be7e8215f060693fe35b79fa302b7a85512d2 3120 rust-wayland-cursor_0.31.3-1.debian.tar.xz"
+    "5f4f7f48503922ca342b0a6616cb319431667d37ebf22b0245dddb8db1f1fd15 2491 rust-wayland-cursor_0.31.11-1.dsc 447ccc440a881271b19e9989f75726d60faa09b95b0200a9b7eb5cc47c3eeb29 9785 rust-wayland-cursor_0.31.11.orig.tar.gz df14680b8e9251ab8efeb7b837028d541f5b5c3b276aef9ebedefb9ba6e01420 3632 rust-wayland-cursor_0.31.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wayland-cursor"
   ],
   "Files": [
-    "d34671aa2200e5ad613dbfe660f78045 2549 rust-wayland-cursor_0.31.3-1.dsc a8d2078068cf29a5875858ccef03f9bd 7520 rust-wayland-cursor_0.31.3.orig.tar.gz 3744874b521a614a605e9aacb24ef29b 3120 rust-wayland-cursor_0.31.3-1.debian.tar.xz"
+    "b1c7be3f9b6b52feca2446e11a06be94 2491 rust-wayland-cursor_0.31.11-1.dsc 160b953e6144728b9a6cb85a422782da 9785 rust-wayland-cursor_0.31.11.orig.tar.gz 25bb9698198ca91cebbbe78e4bc46fa4 3632 rust-wayland-cursor_0.31.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smithay/wayland-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wayland-cursor]"
   ],
   "Version": [
-    "0.31.3-1"
+    "0.31.11-1"
   ]
 }

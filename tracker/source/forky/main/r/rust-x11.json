@@ -6,19 +6,25 @@
     "librust-x11-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.8-~~) \u003c!nocheck\u003e, libx11-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.24-~~) \u003c!nocheck\u003e, libx11-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be9e47ce677d26c3cc77c8b8a56b74f7624e4cfebc4e41929f8dd844e954c65f 2331 rust-x11_2.19.1-1.dsc 6dd0565fa8bfba8c5efe02725b14dff114c866724eff2cfd44d76cea74bcd87a 65593 rust-x11_2.19.1.orig.tar.gz 97ca5b325b2c1a6df5ff8317a4c1a650f1677db13743773d61bdd47dd51fa221 3708 rust-x11_2.19.1-1.debian.tar.xz"
+    "6ad082a6a6526a9662a75f5ef2b6fde5b9d1b0891dfe658f64c1e6a05a7b45f4 2282 rust-x11_2.21.0-1.dsc 502da5464ccd04011667b11c435cb992822c2c0dbde1770c988480d312a0db2e 67810 rust-x11_2.21.0.orig.tar.gz b48c3825f42a7f34a3e61945f9191c64673d011047cc167ff7f31fa0c50adbf2 3772 rust-x11_2.21.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-x11"
   ],
   "Files": [
-    "654bac5c734d72aca3d468f59f78fe94 2331 rust-x11_2.19.1-1.dsc 2fb4fd1faba51c889ef6ccf2485256bf 65593 rust-x11_2.19.1.orig.tar.gz 6e3411945fab1ce154cef3a23c2bdf4b 3708 rust-x11_2.19.1-1.debian.tar.xz"
+    "06a09d4be53037cdf207678c9357060d 2282 rust-x11_2.21.0-1.dsc 95ac9eb53ba561546a5dce72778c99a4 67810 rust-x11_2.21.0.orig.tar.gz 20fae867e52941e1e106ecbde5a27bb9 3772 rust-x11_2.21.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/AltF02/x11-rs.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/x11]"
   ],
   "Version": [
-    "2.19.1-1"
+    "2.21.0-1"
   ]
 }

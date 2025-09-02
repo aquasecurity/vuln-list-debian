@@ -6,19 +6,25 @@
     "librust-argh-shared-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0b77e79bcf5f213ef93d77a1278a6ac4f7bbc57a5541b273fa4f5c5c743b4eaf 2274 rust-argh-shared_0.1.12-1.dsc 5693f39141bda5760ecc4111ab08da40565d1771038c4a0250f03457ec707531 5129 rust-argh-shared_0.1.12.orig.tar.gz 319fb0e0fbad81cd818ef7a9f09cefec3e39a341f9a29cb17cebf2af1a1d22a9 2860 rust-argh-shared_0.1.12-1.debian.tar.xz"
+    "8914f505cd23c24de37c4298686bf70b36f7ba7b8bd4542590533b4ceab18dd3 1624 rust-argh-shared_0.1.13-1.dsc a464143cc82dedcdc3928737445362466b7674b5db4e2eb8e869846d6d84f4f6 5230 rust-argh-shared_0.1.13.orig.tar.gz b97e189c770ff8400e87879c6ad7372b314f7e181ac9995f80366cca26d84d07 2968 rust-argh-shared_0.1.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-argh-shared"
   ],
   "Files": [
-    "1bb9095967f2810da2ac4b8e147234c6 2274 rust-argh-shared_0.1.12-1.dsc 60fe94737247ecd34237e50f5fabcdb9 5129 rust-argh-shared_0.1.12.orig.tar.gz b7ee2e864fa6198ba4bb63743d2e01e5 2860 rust-argh-shared_0.1.12-1.debian.tar.xz"
+    "cf6220a6c31288ddaa256f94c8ed5ba4 1624 rust-argh-shared_0.1.13-1.dsc 3052f0944e1f2756dc572142a9736e4b 5230 rust-argh-shared_0.1.13.orig.tar.gz c6d3c93434835b7b2a8e252e79d6460c 2968 rust-argh-shared_0.1.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/google/argh"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/argh-shared"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/argh-shared]"
   ],
   "Version": [
-    "0.1.12-1"
+    "0.1.13-1"
   ]
 }
