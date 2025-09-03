@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-inotify-dev, librust-inotify+futures-core-dev, librust-inotify+stream-dev, librust-inotify+tokio-dev"
+    "librust-inotify-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-inotify-sys-0.1+default-dev (\u003e= 0.1.3-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-inotify-sys-0.1+default-dev (\u003e= 0.1.3-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "098cfca85775b567ab4c68c1b1a3eaa360db705879a0c025d978a39e601361ca 2967 rust-inotify_0.9.6-1.dsc f8069d3ec154eb856955c1c0fbffefbf5f3c40a104ec912d4797314c1801abff 22971 rust-inotify_0.9.6.orig.tar.gz 7da18d4bd05f814ab107091a21d925f71302dd838312c398dee9e9e06dbbb291 2876 rust-inotify_0.9.6-1.debian.tar.xz"
+    "407023ee3615ece27c6b10105572df8ba847f0634448e662650766cfe19c5d16 2778 rust-inotify_0.11.0-2.dsc f37dccff2791ab604f9babef0ba14fbe0be30bd368dc541e2b08d07c8aa908f3 26241 rust-inotify_0.11.0.orig.tar.gz 6fc965fdd111a3505ec3ba727c17313f7eb521e267a60b6ae492d1b625ff9198 2812 rust-inotify_0.11.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-inotify"
   ],
   "Files": [
-    "0ffc9f11db1c3deb37f18ef6ee6358f3 2967 rust-inotify_0.9.6-1.dsc 1c69490f9cefc24e2119217039c61dda 22971 rust-inotify_0.9.6.orig.tar.gz d4c39d2903e09e0fdc7ff15cae695257 2876 rust-inotify_0.9.6-1.debian.tar.xz"
+    "1a7263139b57a1a2b88be2b1dd3e2095 2778 rust-inotify_0.11.0-2.dsc a9ec207d5fee884074333285d0858517 26241 rust-inotify_0.11.0.orig.tar.gz d682441c861cffb015ae62879384a51a 2812 rust-inotify_0.11.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/hannobraun/inotify"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-inotify"
   ],
   "Package-List": [
-    "librust-inotify+futures-core-dev deb rust optional arch=any librust-inotify+stream-dev deb rust optional arch=any librust-inotify+tokio-dev deb rust optional arch=any librust-inotify-dev deb rust optional arch=any"
+    "librust-inotify-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-util-0.3+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev"
+    "dh-cargo, librust-futures-util-0.3+default-dev, librust-maplit-1+default-dev, librust-rand-0.8+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
   ],
   "Uploaders": [
-    "Carlos F. Sanz \u003ccarlos@sanz.dev\u003e"
+    "Mitchell Augustin \u003cmitchell@mitchellaugustin.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/inotify"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/inotify]"
   ],
   "Version": [
-    "0.9.6-1"
+    "0.11.0-2"
   ]
 }
