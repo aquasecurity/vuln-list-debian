@@ -6,19 +6,25 @@
     "librust-rayon-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-deque-0.8+default-dev (\u003e= 0.8.1-~~) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.80) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-deque-0.8+default-dev (\u003e= 0.8.1-~~) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2230bf4d1d7cf543f02936b45229ad21782b47c7e585d2cc2b933527734cfbcb 2552 rust-rayon-core_1.12.1-1.dsc 1465873a3dfdaa8ae7cb14b4383657caab0b3e8a0aa9ae8e04b044854c8dfce2 70701 rust-rayon-core_1.12.1.orig.tar.gz 0f3c97768c034726ce6f792e34448e7accdcb2f7789c120f4e1ce8a75d6c7e63 4524 rust-rayon-core_1.12.1-1.debian.tar.xz"
+    "d976aa88a03b10f42572c5d5cd6f3921caa1d1ec94298bbf615f02f416925f06 1952 rust-rayon-core_1.13.0-1.dsc 22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91 73151 rust-rayon-core_1.13.0.orig.tar.gz 7a4881e7453c6e760c8ea0270ef45f5c1445e4a00b70074a0abac5e0fb6415e1 4876 rust-rayon-core_1.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rayon-core"
   ],
   "Files": [
-    "6cce9cf30e0db73ec2e43f77a16506e1 2552 rust-rayon-core_1.12.1-1.dsc 7604a19f6ff2021e9fc02f9bce604494 70701 rust-rayon-core_1.12.1.orig.tar.gz 865e3973f70a4c84c02914ad57f840c3 4524 rust-rayon-core_1.12.1-1.debian.tar.xz"
+    "4aded29bf1ee82c53a3e878e87cfc008 1952 rust-rayon-core_1.13.0-1.dsc 6e945b7625522326c4b07d5551d89102 73151 rust-rayon-core_1.13.0.orig.tar.gz 1a6aef64f2c08effd8c2314fbe8b3343 4876 rust-rayon-core_1.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rayon-rs/rayon"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-crossbeam-channel-0.5+default-dev, librust-libc-0.2+default-dev, librust-rand-0.8+default-dev, librust-rand-xorshift-0.3+default-dev, librust-scoped-tls-1+default-dev"
+    "dh-cargo, librust-libc-0.2+default-dev, librust-rand-0.8+default-dev, librust-rand-xorshift-0.3+default-dev, librust-scoped-tls-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rayon-core]"
   ],
   "Version": [
-    "1.12.1-1"
+    "1.13.0-1"
   ]
 }
