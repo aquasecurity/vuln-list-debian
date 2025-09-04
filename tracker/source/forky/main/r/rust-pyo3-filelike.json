@@ -6,16 +6,19 @@
     "librust-pyo3-filelike-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003e= 0.21.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003c\u003c 0.26-~~) \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f05d1bc9adad34f0567a453246d19c77ed81dcac9b9ff943164ce8ca5ce55713 2358 rust-pyo3-filelike_0.3.0-2.dsc e4d4ba4774757be317f112fb7b09f9d2c157a77f07d229a08144f275223f06e8 2928 rust-pyo3-filelike_0.3.0.orig.tar.gz a07180d909582ee3f3bba7a56e534d4108234202c7496a1779b0a7bf853fea4b 2280 rust-pyo3-filelike_0.3.0-2.debian.tar.xz"
+    "76dc13c67c6d58445a07f7bf66c5ed0e1dc040059224f8c916eea7744f503a4f 2112 rust-pyo3-filelike_0.5.0-1.dsc e09e283dc7f80e7deb37d06829a3e0e9e12ea4105f10388ebdd6178021567b62 8163 rust-pyo3-filelike_0.5.0.orig.tar.gz 66ebe7a6f673ac668ba147e7d268c0669648e04b9de9a7551058f3d0b628eed4 2212 rust-pyo3-filelike_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pyo3-filelike"
   ],
   "Files": [
-    "8b86f1076a5f14b3e30f5bb3552a9289 2358 rust-pyo3-filelike_0.3.0-2.dsc 7be7963a2227cf31cb262cfa2dbc7635 2928 rust-pyo3-filelike_0.3.0.orig.tar.gz 8436b73cfca27f9d727202f3fca730f4 2280 rust-pyo3-filelike_0.3.0-2.debian.tar.xz"
+    "213994bfbc2bad404dd0c062ff91fc1c 2112 rust-pyo3-filelike_0.5.0-1.dsc 8027fa305bb28c114a51f707fa1638ff 8163 rust-pyo3-filelike_0.5.0.orig.tar.gz 91497cf916b62bedeb9c9fb1c23bc202 2212 rust-pyo3-filelike_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pyo3+auto-initialize-dev, librust-pyo3+default-dev"
+    "dh-cargo, librust-pyo3+abi3-dev, librust-pyo3+auto-initialize-dev, librust-pyo3+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pyo3-filelike]"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.5.0-1"
   ]
 }

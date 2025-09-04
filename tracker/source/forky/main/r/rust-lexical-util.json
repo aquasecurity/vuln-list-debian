@@ -6,19 +6,25 @@
     "librust-lexical-util-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "03baa6807f6e5920bae5569c6bd7dd0c9c13ec575a3365cc6c9858df5b7b4b75 2246 rust-lexical-util_0.8.5-1.dsc 5255b9ff16ff898710eb9eb63cb39248ea8a5bb036bea8085b1a767ff6c4e3fc 85152 rust-lexical-util_0.8.5.orig.tar.gz 3f22e81942283bf5ac2047c0ef31285655cca1025f88fcd1637aedbc7118cf3d 3576 rust-lexical-util_0.8.5-1.debian.tar.xz"
+    "5ea0b41826cd4708ab552d998dab1b1758018459d788b8a8ccab906f332d315b 2406 rust-lexical-util_1.0.6-1.dsc 5a82e24bf537fd24c177ffbbdc6ebcc8d54732c35b50a3f28cc3f4e4c949a0b3 106117 rust-lexical-util_1.0.6.orig.tar.gz 4f17e44e8e173e5d62c98a6f258b2bd4b312166441657b2a7a932a36112d6d6c 3968 rust-lexical-util_1.0.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lexical-util"
   ],
   "Files": [
-    "7c3387b846315d351cd9d6f520a9c36a 2246 rust-lexical-util_0.8.5-1.dsc eb01ced1f5d193bfc80cd03e2298fa65 85152 rust-lexical-util_0.8.5.orig.tar.gz fcc1a06cce6c05940730fa9b4a3210a6 3576 rust-lexical-util_0.8.5-1.debian.tar.xz"
+    "d13332f7d910788b842b12934a76386d 2406 rust-lexical-util_1.0.6-1.dsc d3d327db700910d6db96a77d7fe886a9 106117 rust-lexical-util_1.0.6.orig.tar.gz 2fba0035eb2fe030a7d829880ffbc526 3968 rust-lexical-util_1.0.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Alexhuszagh/rust-lexical"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proptest-0.10+default-dev"
+    "dh-cargo, librust-proptest+default-dev, librust-quickcheck-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lexical-util]"
   ],
   "Version": [
-    "0.8.5-1"
+    "1.0.6-1"
   ]
 }

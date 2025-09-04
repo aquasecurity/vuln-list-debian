@@ -6,16 +6,19 @@
     "python3-jpype"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk, ant, python3-all-dev, python3-setuptools, python3-numpy, dh-python, javahelper"
+    "debhelper-compat (= 13), default-jdk, ant, python3-all-dev, python3-setuptools, python3-numpy, python3-pytest \u003c!nocheck\u003e, dh-sequence-python3, dh-sequence-javahelper, pybuild-plugin-pyproject"
   ],
   "Checksums-Sha256": [
-    "7084099e1b8a26f5a6d190ddef291f98a6af4b2f0f4abdd3fd03900d48d03aa6 2081 python-jpype_1.5.0-1.dsc 324ca8b8c40a74d54afecf1612446d49b2113d552fba18092dd44cf196ce9152 710586 python-jpype_1.5.0.orig.tar.gz d662ceb494ea028888505ccffa6d3babac10216cc5ba9c52423548d620c44f94 3804 python-jpype_1.5.0-1.debian.tar.xz"
+    "90f651af8138aa078eff87fc26aff218c029ac8bcf65af7d3321358a52e65e9a 2284 python-jpype_1.6.0-1.dsc 01673112fed9c8a16b33fcd87a8e4b116b55c4bfaf116ae8a0b2b68b496e0c26 801839 python-jpype_1.6.0.orig.tar.gz 7471ed19126861ba4bd7b92e6907e6eb997b8b0bdf1a00e63c894cee89518b46 4944 python-jpype_1.6.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "8dcbffaa0e3807cfd2c1edf9f2a29385950cff76 debian archive/debian/1.6.0-1 https://git.dgit.debian.org/python-jpype"
   ],
   "Directory": [
     "pool/main/p/python-jpype"
   ],
   "Files": [
-    "ad9fdda44c21597afb045fa94c53d811 2081 python-jpype_1.5.0-1.dsc 4e2a2580d4896fc9a4e2f28ebe04d3aa 710586 python-jpype_1.5.0.orig.tar.gz 5b994e5685e38bf4eb3ac2af541561be 3804 python-jpype_1.5.0-1.debian.tar.xz"
+    "bb1145057fced5bdb8d9826b84e07f25 2284 python-jpype_1.6.0-1.dsc 4039eb4a910ce866bc7e7ca0012a7d2f 801839 python-jpype_1.6.0.orig.tar.gz 8f9096473432e4ff5be8c1879b15deb5 4944 python-jpype_1.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +44,9 @@
   "Standards-Version": [
     "4.6.1"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "TANIGUCHI Takaki \u003ctakaki@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-jpype.git"
   ],
   "Version": [
-    "1.5.0-1"
+    "1.6.0-1"
   ]
 }
