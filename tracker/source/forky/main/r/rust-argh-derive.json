@@ -6,19 +6,25 @@
     "librust-argh-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-argh-shared-0.1+default-dev (\u003e= 0.1.12-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-argh-shared-0.1+default-dev (\u003e= 0.1.13-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "74a7789a9134839abe238614a236eaf51636078e229c3ad922e3c4893cab39e0 2385 rust-argh-derive_0.1.12-1.dsc 56df0aeedf6b7a2fc67d06db35b09684c3e8da0c95f8f27685cb17e08413d87a 21575 rust-argh-derive_0.1.12.orig.tar.gz 8f936f5234a2ef775cc0fcaf52d9b178cec746f9de963d46435c72802a57ea2f 3036 rust-argh-derive_0.1.12-1.debian.tar.xz"
+    "279b8b169e064532dff07e3435be1b9eb8ec9d8495b85c18377c25560a97899a 1825 rust-argh-derive_0.1.13-1.dsc adb7b2b83a50d329d5d8ccc620f5c7064028828538bdf5646acd60dc1f767803 23278 rust-argh-derive_0.1.13.orig.tar.gz 1fff2a4a043993036c46528c0616fd2bcc645e25dd925f901038fd940575f773 3116 rust-argh-derive_0.1.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-argh-derive"
   ],
   "Files": [
-    "cfb369154e614480b239b50abdc3f983 2385 rust-argh-derive_0.1.12-1.dsc 7e0ce9cf880da4aaa6ecf407857c8727 21575 rust-argh-derive_0.1.12.orig.tar.gz 84dad46365d47e492299f708c6336755 3036 rust-argh-derive_0.1.12-1.debian.tar.xz"
+    "32ee9e6e4c0e39ef52d4671e9dbb6109 1825 rust-argh-derive_0.1.13-1.dsc 9306f62558a3740fed25caf04da3114e 23278 rust-argh-derive_0.1.13.orig.tar.gz 145768b49a845b49ea22f423d453c33e 3116 rust-argh-derive_0.1.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/google/argh"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/argh-derive]"
   ],
   "Version": [
-    "0.1.12-1"
+    "0.1.13-1"
   ]
 }
