@@ -3,22 +3,22 @@
     "linux-any all"
   ],
   "Binary": [
-    "auditd, libauparse0t64, libauparse-dev, libaudit1, libaudit-common, libaudit-dev, python3-audit, golang-redhat-audit-dev, audispd-plugins"
+    "auditd, libauparse0t64, libauparse-dev, libaudit1, libaudit-common, libaudit-dev, python3-audit, golang-redhat-audit-dev, audispd-plugins, libauplugin1, libauplugin-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), dh-python \u003c!nopython\u003e, libcap-ng-dev, libkrb5-dev, libldap2-dev \u003c!pkg.audit.noldap\u003e, libwrap0-dev, linux-libc-dev (\u003e= 5.9~), python3-all-dev:any \u003c!nopython\u003e, libpython3-all-dev \u003c!nopython\u003e, swig"
+    "debhelper-compat (= 13), dh-exec, dh-python \u003c!nopython\u003e, dpkg-dev (\u003e= 1.22.5), libcap-ng-dev, libkrb5-dev, libldap2-dev \u003c!pkg.audit.noldap\u003e, libwrap0-dev, linux-libc-dev (\u003e= 5.9~), python3-all-dev:any \u003c!nopython\u003e, libpython3-all-dev \u003c!nopython\u003e, swig"
   ],
   "Build-Depends-Indep": [
     "golang-any"
   ],
   "Checksums-Sha256": [
-    "8260314a8062c988eeffa35d322005f28150275ac8c4bd966b9b7e966992cd13 2405 audit_4.0.5-1.dsc 76159def49df28f50353976bed52801af6039a15bd691e3bb216cb2dcaa78d86 622404 audit_4.0.5.orig.tar.gz 259417850e09ba16dbacd1816e0078c861fde01cbf3e7591d8667caa406fb6a4 19844 audit_4.0.5-1.debian.tar.xz"
+    "e3a3dc27c200b4f30b803932d3df0de7429c192dc7b90831c421a4b4fe87a85d 2546 audit_4.1.1-1.dsc c2dd5fe7c204a5725bc96e3a6eadc86ece4a13e4a4bb98e79f6fe104a09cd4c3 647606 audit_4.1.1.orig.tar.gz 515740585da840b18ada8848fc870fd83cb2de4b622e15c00e4be9ec1e74a735 19728 audit_4.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/audit"
   ],
   "Files": [
-    "c438f13e60c8ec448042a5336c876efb 2405 audit_4.0.5-1.dsc f2c059c2aa1fe2a14aaa7433ccc3f2c6 622404 audit_4.0.5.orig.tar.gz 99225fe56594a49241425ca91bd294dc 19844 audit_4.0.5-1.debian.tar.xz"
+    "b0571def7b85a417afea9bb5669ccdcd 2546 audit_4.1.1-1.dsc eea2068d91739907e3309c49ea6a68dd 647606 audit_4.1.1.orig.tar.gz 9861d1f478d3a1ba0a880bb9bb614030 19728 audit_4.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "audit"
   ],
   "Package-List": [
-    "audispd-plugins deb admin optional arch=linux-any profile=!pkg.audit.noldap auditd deb admin optional arch=linux-any golang-redhat-audit-dev deb golang optional arch=all libaudit-common deb libs optional arch=all libaudit-dev deb libdevel optional arch=linux-any libaudit1 deb libs optional arch=linux-any libauparse-dev deb libdevel optional arch=linux-any libauparse0t64 deb libs optional arch=linux-any python3-audit deb python optional arch=linux-any profile=!nopython"
+    "audispd-plugins deb admin optional arch=linux-any profile=!pkg.audit.noldap auditd deb admin optional arch=linux-any golang-redhat-audit-dev deb golang optional arch=all libaudit-common deb libs optional arch=all libaudit-dev deb libdevel optional arch=linux-any libaudit1 deb libs optional arch=linux-any libauparse-dev deb libdevel optional arch=linux-any libauparse0t64 deb libs optional arch=linux-any libauplugin-dev deb libdevel optional arch=linux-any libauplugin1 deb libs optional arch=linux-any python3-audit deb python optional arch=linux-any profile=!nopython"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/audit.git"
   ],
   "Version": [
-    "1:4.0.5-1"
+    "1:4.1.1-1"
   ]
 }
