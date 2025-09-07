@@ -6,16 +6,19 @@
     "librust-memchr-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2db87d79e45dbbc7838e26b866979b10f743c11d937de16f8e123cea0ec31d5e 2130 rust-memchr_2.7.4-1.dsc 78ca9ab1a0babb1e7d5695e3530886289c18cf2f87ec19a575a0abdce112e3a3 96670 rust-memchr_2.7.4.orig.tar.gz d0d8d6b046793cbe90e82318ff5d506cba427fa44ab4132d46ad1217d0086211 3740 rust-memchr_2.7.4-1.debian.tar.xz"
+    "96d0296428e76bdebeada1bf1096d1b48ecd53364bd963e3cb7285e6a55ee570 2212 rust-memchr_2.7.5-1.dsc 32a282da65faaf38286cf3be983213fcf1d2e2a58700e808f83f4ea9a4804bc0 97603 rust-memchr_2.7.5.orig.tar.gz 465af4a4c8b16b532616ef3b4fa20ac68e8184b79c0a759d02c8cfba3ea26bb6 3768 rust-memchr_2.7.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-memchr"
   ],
   "Files": [
-    "79cb06ac33908793415270bf03728d75 2130 rust-memchr_2.7.4-1.dsc c0aab5e6eaaa6a2f3c7ed44f123d1c7d 96670 rust-memchr_2.7.4.orig.tar.gz 21ffa2d6461c493619396ce8286bcb47 3740 rust-memchr_2.7.4-1.debian.tar.xz"
+    "1fcfd1eb26564d62b220d522d1ce5496 2212 rust-memchr_2.7.5-1.dsc c65373a26d6775e11ede985975460519 97603 rust-memchr_2.7.5.orig.tar.gz e0de5939819a405531b0e913172561dc 3768 rust-memchr_2.7.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-quickcheck-1-dev, rustc"
+  ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/memchr]"
   ],
   "Version": [
-    "2.7.4-1"
+    "2.7.5-1"
   ]
 }
