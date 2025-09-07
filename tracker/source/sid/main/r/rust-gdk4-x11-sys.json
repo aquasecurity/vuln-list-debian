@@ -6,16 +6,19 @@
     "librust-gdk4-x11-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gdk4-sys-0.9+default-dev (\u003e= 0.9.4-~~) \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+v2-66-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgtk-4-dev (\u003e= 4.16), libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.20), xmlstarlet"
+    "debhelper-compat (= 13), dh-sequence-cargo, libgtk-4-dev (\u003e= 4.16), libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.21), xmlstarlet"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gdk4-sys-0.10+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.21+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.21+v2-66-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "27b39854453a35339513f3dce3a7b42a5657e202acb044823fbee1458e5621b3 2030 rust-gdk4-x11-sys_0.9.6-1.dsc 070bd50a053f90d7fdf6be1d75672ea0f97c0e5da3a10dc6d02e5defcb0db32f 10330 rust-gdk4-x11-sys_0.9.6.orig.tar.gz b496826a6d281665e48de75374311d33cd41a41c9e9c52dbf2bec1448964401f 4728 rust-gdk4-x11-sys_0.9.6-1.debian.tar.xz"
+    "472ac674ecfd868d0bea8f2ce98d92124a3761c6a59ccbc8409879fadd806297 2648 rust-gdk4-x11-sys_0.10.0-2.dsc e387238aacc531f93d9031b69c74ce2236b5fd6438e55bc8b7b79a60c883c350 11034 rust-gdk4-x11-sys_0.10.0.orig.tar.gz 38bd6b3dce6e463bc362846922a531e40e3b6bc997b29dbc277a5e2f6979f5c5 4792 rust-gdk4-x11-sys_0.10.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gdk4-x11-sys"
   ],
   "Files": [
-    "c53f912d43e970b2bfcb462055f622cf 2030 rust-gdk4-x11-sys_0.9.6-1.dsc 3b99d312d2deb951010128d9599fdc32 10330 rust-gdk4-x11-sys_0.9.6.orig.tar.gz d2354d898c2c4a46521686410aa9f992 4728 rust-gdk4-x11-sys_0.9.6-1.debian.tar.xz"
+    "4a9243ae6360713e3efcfbdb6eba89f7 2648 rust-gdk4-x11-sys_0.10.0-2.dsc 31024df43784c276e931160d2455f1ef 11034 rust-gdk4-x11-sys_0.10.0.orig.tar.gz 19a0f4251f600a6c8fc4eaed5ef67643 4792 rust-gdk4-x11-sys_0.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gdk4-x11-sys]"
   ],
   "Version": [
-    "0.9.6-1"
+    "0.10.0-2"
   ]
 }

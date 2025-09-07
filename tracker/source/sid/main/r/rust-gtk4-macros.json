@@ -6,16 +6,19 @@
     "librust-gtk4-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-crate-3+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-crate-3+default-dev (\u003e= 3.2-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "13e7a9f865a7c0b07d5f9ac684231074d6b5835852b1425c72ee2ee3678d141c 1972 rust-gtk4-macros_0.9.5-1.dsc 0ed1786c4703dd196baf7e103525ce0cf579b3a63a0570fe653b7ee6bac33999 16721 rust-gtk4-macros_0.9.5.orig.tar.gz 39107aadc8fc6192cec1382b4f0427e80049a83e77db8e0801c4b7726913cb77 4068 rust-gtk4-macros_0.9.5-1.debian.tar.xz"
+    "53c1333c3a8a9dc0bcb6764c411285c56363c38fbb739f6891de5ccd9371affe 2616 rust-gtk4-macros_0.10.0-2.dsc 0912d2068695633002b92c5966edc108b2e4f54b58c509d1eeddd4cbceb7315c 16958 rust-gtk4-macros_0.10.0.orig.tar.gz f4bd97b6dd52aec526791922f367bd3c43b4140925514a916f7fda34ded8a035 4184 rust-gtk4-macros_0.10.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gtk4-macros"
   ],
   "Files": [
-    "0d4c31ece506e653bcfd5c40e3e9e182 1972 rust-gtk4-macros_0.9.5-1.dsc 2692914d1deb2d754beeb3b30ac3cb1c 16721 rust-gtk4-macros_0.9.5.orig.tar.gz b105e46b77433b930079e58d8542747d 4068 rust-gtk4-macros_0.9.5-1.debian.tar.xz"
+    "7ea93c0c55fc72229cba949ea6095758 2616 rust-gtk4-macros_0.10.0-2.dsc f32a48fa493b4c0bba09af6a7bb916ab 16958 rust-gtk4-macros_0.10.0.orig.tar.gz 73ff3c9ba2b3e2a487ad007babf1ac2c 4184 rust-gtk4-macros_0.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-channel-0.3+default-dev, librust-futures-util-0.3+default-dev, librust-gtk4-0.9+default-dev, librust-trybuild2-1+default-dev, rustc, xauth, xvfb"
+    "dh-cargo, librust-futures-channel-0.3+default-dev, librust-futures-util-0.3+default-dev, librust-gtk4-0.10+default-dev, librust-trybuild2-1+default-dev, rustc, xauth, xvfb"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gtk4-macros]"
   ],
   "Version": [
-    "0.9.5-1"
+    "0.10.0-2"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-khronos-egl-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c40e3f81ed452d333c211e5344eb62c3ccfeb6e186530a072f777a9221849076 2410 rust-khronos-egl_4.1.0-5.dsc 8c2352bd1d0bceb871cb9d40f24360c8133c11d7486b68b5381c1dd1a32015e3 27810 rust-khronos-egl_4.1.0.orig.tar.gz edc6816604d79ce1b359deb7eb0e090ec02da879756a055da91636992d31fe92 3408 rust-khronos-egl_4.1.0-5.debian.tar.xz"
+    "d384cc9acb951b8860120012ef62195b1930a60d982aac5c5e88c7854056c6ab 2475 rust-khronos-egl_6.0.0-2.dsc 6aae1df220ece3c0ada96b8153459b67eebe9ae9212258bb0134ae60416fdf76 29315 rust-khronos-egl_6.0.0.orig.tar.gz 3bd710f15f8c20467fb89e198ba79a93c5b2ab2d430d026c662e3a4806ab4491 3368 rust-khronos-egl_6.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-khronos-egl"
   ],
   "Files": [
-    "6a39ad20777e74b6cc7587311a7fca74 2410 rust-khronos-egl_4.1.0-5.dsc 745fea8e8615f34d15124c9b944ca413 27810 rust-khronos-egl_4.1.0.orig.tar.gz b18ccc094ba9c0514413837724a59f2a 3408 rust-khronos-egl_4.1.0-5.debian.tar.xz"
+    "f0b74a43c71ddaa5476b03133142feb5 2475 rust-khronos-egl_6.0.0-2.dsc 8d32bb26f7c1f0bc492745a5a6201c20 29315 rust-khronos-egl_6.0.0.orig.tar.gz 2649079a36ca5f2049cd71a5b0bd2117 3368 rust-khronos-egl_6.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/timothee-haudebourg/khronos-egl"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-gl-0.14+default-dev, librust-wayland-client-0.29+default-dev, librust-wayland-egl-0.29+default-dev, librust-wayland-protocols-0.29+client-dev, librust-wayland-protocols-0.29+default-dev"
+    "dh-cargo, librust-gl-0.14+default-dev, librust-wayland-client-0.31+default-dev, librust-wayland-egl-0.32+default-dev, librust-wayland-protocols-0.32+client-dev, librust-wayland-protocols-0.32+default-dev, rustc"
   ],
   "Uploaders": [
     "Jeremy Bicha \u003cjbicha@ubuntu.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/khronos-egl]"
   ],
   "Version": [
-    "4.1.0-5"
+    "6.0.0-2"
   ]
 }

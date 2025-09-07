@@ -6,16 +6,19 @@
     "librust-libseccomp-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libseccomp-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libseccomp-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e11e549ce272bccb889d743d05311310b37dcec123a0a33cdeca3422802d0509 2343 rust-libseccomp-sys_0.2.1-2.dsc 9a7cbbd4ad467251987c6e5b47d53b11a5a05add08f2447a9e2d70aef1e0d138 11601 rust-libseccomp-sys_0.2.1.orig.tar.gz 17de0fd78de0113310cb0e45066a4db92fe4b5a41cd42a4fd406eab350ab723e 2980 rust-libseccomp-sys_0.2.1-2.debian.tar.xz"
+    "483e53f0cb6fbde7642d01bda3c919bbfc7fdd48802358ed80af24516fa3978e 2327 rust-libseccomp-sys_0.3.0-2.dsc 60276e2d41bbb68b323e566047a1bfbf952050b157d8b5cdc74c07c1bf4ca3b6 12223 rust-libseccomp-sys_0.3.0.orig.tar.gz ec02dfccfc884a0e851e3d57d15b97abbd475bff608559791d82120764a0004c 2856 rust-libseccomp-sys_0.3.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libseccomp-sys"
   ],
   "Files": [
-    "1be753127f34731a812382c5d2f249c6 2343 rust-libseccomp-sys_0.2.1-2.dsc 4f78376b1378deff1d33ea248cfab29b 11601 rust-libseccomp-sys_0.2.1.orig.tar.gz cde7da286f47ccd09c81f8058e4673ee 2980 rust-libseccomp-sys_0.2.1-2.debian.tar.xz"
+    "0f02814f0fe5d719ce9a3add364e7722 2327 rust-libseccomp-sys_0.3.0-2.dsc 50aa479d323885f6d17427447a553277 12223 rust-libseccomp-sys_0.3.0.orig.tar.gz f21ab5f1f7df8b8244e1f9262218f9e0 2856 rust-libseccomp-sys_0.3.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libseccomp-sys]"
   ],
   "Version": [
-    "0.2.1-2"
+    "0.3.0-2"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-glib-build-tools-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-0.20+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-0.21+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e6ea4894c5f0d4cdbf4360c0e5822f77d121d15be55f196f73812a9426a23f58 2320 rust-glib-build-tools_0.20.0-1.dsc 7029c2651d9b5d5a3eea93ec8a1995665c6d3a69ce9bf6042ad9064d134736d8 2732 rust-glib-build-tools_0.20.0.orig.tar.gz 8b22849253a73ba590bee7d2caa771d181c6d786892e73691614010df81a219b 2476 rust-glib-build-tools_0.20.0-1.debian.tar.xz"
+    "a655f35745b11f4e3168e604e02b7ec2164100910b068fde2ddb203c98f2d87c 2324 rust-glib-build-tools_0.21.0-2.dsc 86aebe63bb050d4918cb1d629880cb35fcba7ccda6f6fc0ec1beffdaa1b9d5c3 6206 rust-glib-build-tools_0.21.0.orig.tar.gz 9be34f127053bc0102dcd12783f35e129e4d36207e8027922245263ec0731c87 2588 rust-glib-build-tools_0.21.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-glib-build-tools"
   ],
   "Files": [
-    "9660d10c5839fae983cac28c25b27ce9 2320 rust-glib-build-tools_0.20.0-1.dsc 802858e7da6b53beaab34db30ce62978 2732 rust-glib-build-tools_0.20.0.orig.tar.gz 662286991bd77b1c1d7b4db93ce73f4e 2476 rust-glib-build-tools_0.20.0-1.debian.tar.xz"
+    "04c9a6b88fa9d8cfc488e698c41cca8f 2324 rust-glib-build-tools_0.21.0-2.dsc b1492e325bbf4b45f19c99b891d017be 6206 rust-glib-build-tools_0.21.0.orig.tar.gz 6a2729ccfc595f8c3a9f670dec0d154a 2588 rust-glib-build-tools_0.21.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/glib-build-tools]"
   ],
   "Version": [
-    "0.20.0-1"
+    "0.21.0-2"
   ]
 }

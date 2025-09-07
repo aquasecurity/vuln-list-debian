@@ -6,16 +6,19 @@
     "librust-gobject-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev (\u003e= 0.20.6-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libglib2.0-dev (\u003e= 2.80) \u003c!nocheck\u003e, libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.20), xmlstarlet"
+    "debhelper-compat (= 13), dh-sequence-cargo, libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.21), xmlstarlet"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0.21+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libglib2.0-dev (\u003e= 2.80) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c04a2035bf3613b5e224347d9faa4706a55e871dfc2c9aeba45505199201d20 2535 rust-gobject-sys_0.20.9-1.dsc c773a3cb38a419ad9c26c81d177d96b4b08980e8bdbbf32dace883e96e96e7e3 22509 rust-gobject-sys_0.20.9.orig.tar.gz c78d2a5fdbe4871bfdc29c6bf013be7d842992f2bc74c62896823080e9d017e2 4616 rust-gobject-sys_0.20.9-1.debian.tar.xz"
+    "f73c449dec95a9c7f95ed4d8b8174601f61df2f5600b8e33e8d916b1ab3104b3 2539 rust-gobject-sys_0.21.1-2.dsc 3e9a190eef2bce144a6aa8434e306974c6062c398e0a33a146d60238f9062d5c 23364 rust-gobject-sys_0.21.1.orig.tar.gz 02aa9b60581dd6c11d0a42477694648ec3431bcdf33e7e0e52c3fc9a8d9bfe94 4704 rust-gobject-sys_0.21.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gobject-sys"
   ],
   "Files": [
-    "1454d0bbd40638e5eedc0e01bb678df4 2535 rust-gobject-sys_0.20.9-1.dsc f37fb273d023181d5f561fd4c811852f 22509 rust-gobject-sys_0.20.9.orig.tar.gz 4175041260e694b536b56d9b2cb3a775 4616 rust-gobject-sys_0.20.9-1.debian.tar.xz"
+    "bb365ae1aab81cf78feaf41b67b8b585 2539 rust-gobject-sys_0.21.1-2.dsc ade52caec2b45366df5304295ac38279 23364 rust-gobject-sys_0.21.1.orig.tar.gz fc315098d77e88da56387a523e255420 4704 rust-gobject-sys_0.21.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gobject-sys]"
   ],
   "Version": [
-    "0.20.9-1"
+    "0.21.1-2"
   ]
 }
