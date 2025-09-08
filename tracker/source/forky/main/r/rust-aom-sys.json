@@ -6,16 +6,19 @@
     "librust-aom-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.71+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libaom-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.69.1-~~) \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libaom-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0369cab5962570e36f7e81a64cc6a9bfe8c3dcb166d28389a91d28dbfe56f5e5 1674 rust-aom-sys_0.3.3-5.dsc 623675d7dbe1d65db81582231b0971384277a4dd2006763021ba2436e86f812d 3736 rust-aom-sys_0.3.3.orig.tar.gz 47d47fe7fefa721b56caf0a23b54b5728403e2b764c5cf1dbe7d7bfdc955e44d 3140 rust-aom-sys_0.3.3-5.debian.tar.xz"
+    "fd8024319bd420253f61d7bfb9389a38d6a4bf0e526730d9aa383036332d5080 1705 rust-aom-sys_0.3.3-6.dsc 623675d7dbe1d65db81582231b0971384277a4dd2006763021ba2436e86f812d 3736 rust-aom-sys_0.3.3.orig.tar.gz 724b5d70b784f7ec69b912187f51f4eaf459467219fe68e7d0b7607b716e0bb3 3192 rust-aom-sys_0.3.3-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-aom-sys"
   ],
   "Files": [
-    "7ada512b474f1d7ad471e627ec6e0b61 1674 rust-aom-sys_0.3.3-5.dsc bf22fd51c3068951104ac0aaaf1cb637 3736 rust-aom-sys_0.3.3.orig.tar.gz dbcaefa77812acd82a1318c30cf8b50a 3140 rust-aom-sys_0.3.3-5.debian.tar.xz"
+    "aafb9d4d3f0a25dddc5eb0f465f663f5 1705 rust-aom-sys_0.3.3-6.dsc bf22fd51c3068951104ac0aaaf1cb637 3736 rust-aom-sys_0.3.3.orig.tar.gz 931f6dbc34e3825d8158f353fbb45b17 3192 rust-aom-sys_0.3.3-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/aom-sys]"
   ],
   "Version": [
-    "0.3.3-5"
+    "0.3.3-6"
   ]
 }

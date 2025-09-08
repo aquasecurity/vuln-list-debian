@@ -6,19 +6,31 @@
     "libshumate-1.0-1, libshumate-dev, gir1.2-shumate-1.0, libshumate-common, libshumate-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, gi-docgen, gperf, libgirepository1.0-dev, gir1.2-freedesktop-dev, gir1.2-gdk-4.0-dev, gir1.2-gobject-2.0-dev, gir1.2-gsk-4.0-dev, gir1.2-gtk-4.0-dev, libcairo2-dev (\u003e= 1.4), libglib2.0-dev (\u003e= 2.74.0), libgtk-4-dev, libsoup-3.0-dev, libsqlite3-dev (\u003e= 1.12.0), libsysprof-capture-4-dev, libjson-glib-dev (\u003e= 1.6), libprotobuf-c-dev, meson (\u003e= 0.55.0), valac (\u003e= 0.11.0), xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-gir, gperf, gir1.2-freedesktop-dev, gir1.2-gdk-4.0-dev, gir1.2-gobject-2.0-dev, gir1.2-gsk-4.0-dev, gir1.2-gtk-4.0-dev, gobject-introspection (\u003e= 1.80), libcairo2-dev (\u003e= 1.4), libglib2.0-dev (\u003e= 2.74.0), libgtk-4-dev, libsoup-3.0-dev, libsqlite3-dev (\u003e= 1.12.0), libsysprof-capture-4-dev, libjson-glib-dev (\u003e= 1.6), libprotobuf-c-dev, meson (\u003e= 0.55.0), valac (\u003e= 0.11.0), xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "gi-docgen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "82849f495a2ccb1ff3c34b458eec7d89ce94edd08db3d98b92a29172ef20f139 2102 libshumate_1.5~beta-1.dsc c6e6f49803f508a0c941ab70cfc5518dcae837d69c8cd5b42ca3ba0e3e2bff64 5913064 libshumate_1.5~beta.orig.tar.xz 23ed102bc4c7b461da32efb9cc5ea3a552c23a03d07a4bb3341cc9152e6e9927 8728 libshumate_1.5~beta-1.debian.tar.xz"
+    "097df99b0a4855cc2e2cc3459a4a5dc8de80792a93934c050161cba08a370fa1 3031 libshumate_1.5~beta-2.dsc c6e6f49803f508a0c941ab70cfc5518dcae837d69c8cd5b42ca3ba0e3e2bff64 5913064 libshumate_1.5~beta.orig.tar.xz bd3e997850cb7f49d9de6f330f4e03e727af4c25fe35d94cf0aabf39a5729141 9216 libshumate_1.5~beta-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "503d44c0a279d84e6e608a3a04911b3f1b321121 debian archive/debian/1.5_beta-2 https://git.dgit.debian.org/libshumate"
   ],
   "Directory": [
     "pool/main/libs/libshumate"
   ],
   "Files": [
-    "31e9e8233ae70963b9528c7ea2c1ebc0 2102 libshumate_1.5~beta-1.dsc a35a9600443b69861355369264a28c73 5913064 libshumate_1.5~beta.orig.tar.xz b22de1e4aea84aca4b53b7cdc000db60 8728 libshumate_1.5~beta-1.debian.tar.xz"
+    "16e5f0507bc8a015639626473567a2cf 3031 libshumate_1.5~beta-2.dsc a35a9600443b69861355369264a28c73 5913064 libshumate_1.5~beta.orig.tar.xz f9a8b337bb7c9149fea4706bec766175 9216 libshumate_1.5~beta-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=54bebeea79623ba85ccc356baa7db54820fe13f8 fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
+  ],
+  "Git-Tag-Tagger": [
+    "Simon McVittie \u003csmcv@debian.org\u003e"
   ],
   "Homepage": [
     "https://gitlab.gnome.org/GNOME/libshumate"
@@ -30,7 +42,7 @@
     "libshumate"
   ],
   "Package-List": [
-    "gir1.2-shumate-1.0 deb introspection optional arch=any libshumate-1.0-1 deb libs optional arch=any libshumate-common deb libs optional arch=all libshumate-dev deb libdevel optional arch=any libshumate-doc deb doc optional arch=all"
+    "gir1.2-shumate-1.0 deb introspection optional arch=any libshumate-1.0-1 deb libs optional arch=any libshumate-common deb libs optional arch=all libshumate-dev deb libdevel optional arch=any libshumate-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -51,6 +63,6 @@
     "https://salsa.debian.org/gnome-team/libshumate.git"
   ],
   "Version": [
-    "1.5~beta-1"
+    "1.5~beta-2"
   ]
 }

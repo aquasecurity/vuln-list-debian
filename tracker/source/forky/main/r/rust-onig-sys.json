@@ -6,19 +6,25 @@
     "librust-onig-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.16-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.16-~~) \u003c!nocheck\u003e, libonig-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6623b55398c58d4f3732aa32f43079ec6a211002d721c0dd02ba69615209b4a6 2298 rust-onig-sys_69.8.1-1.dsc 7b829e3d7e9cc74c7e315ee8edb185bf4190da5acde74afd7fc59c35b1f086e7 638216 rust-onig-sys_69.8.1.orig.tar.gz ebc97b0aaac08e5ff572ad537937fb4cf734a2be069da1b51e7c65dc1d6b5f60 5812 rust-onig-sys_69.8.1-1.debian.tar.xz"
+    "7632ae4a474960b5a8a01723d1f16e013086ed2e0a6c5e45d57d4b5e0ed6eb88 2430 rust-onig-sys_69.9.1-1.dsc e2e224cc2d06beaa0c4da7c4551cf52e74da378364b707dc0e8478602bab00a5 16270 rust-onig-sys_69.9.1.orig.tar.gz 0e72eb1a6805de1aa644db6213200b038b26a1a4c85da83abaa7b231fc11d941 4560 rust-onig-sys_69.9.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-onig-sys"
   ],
   "Files": [
-    "bb35b9d3368c7153a42fef12715af833 2298 rust-onig-sys_69.8.1-1.dsc 75ae5e02e272143f29cddced22da760a 638216 rust-onig-sys_69.8.1.orig.tar.gz 266a55a395dbfe27173f36449f40b60e 5812 rust-onig-sys_69.8.1-1.debian.tar.xz"
+    "e79ce7cb6519978270ad4d10aec6bbf7 2430 rust-onig-sys_69.9.1-1.dsc a1abaeeb5e4996a9d2d058f5f3bf532c 16270 rust-onig-sys_69.9.1.orig.tar.gz 9bf733b80a93dfb70d8140f3d3cc3309 4560 rust-onig-sys_69.9.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/iwillspeak/rust-onig"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/onig-sys]"
   ],
   "Version": [
-    "69.8.1-1"
+    "69.9.1-1"
   ]
 }
