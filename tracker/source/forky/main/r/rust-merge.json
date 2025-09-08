@@ -6,19 +6,25 @@
     "librust-merge-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-merge-derive-0.1+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.12-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-merge-derive-0.2+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.12-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f0712bfb089df3e203b9e7c289eef03cbf73b5b09b57f5a75528703da77388da 2414 rust-merge_0.1.0-2.dsc 10bbef93abb1da61525bbc45eeaff6473a41907d19f8f9aa5168d214e10693e9 16946 rust-merge_0.1.0.orig.tar.gz 9712deccca9e390636a5dfb43f85167d32b7597456144de20df261b03b040b19 3160 rust-merge_0.1.0-2.debian.tar.xz"
+    "1c1b795c0e3b531f71dea5602295c42280e7a6fdf967ab6f860a88c376fe7fb2 1863 rust-merge_0.2.0-1.dsc 56e520ba58faea3487f75df198b1d079644ec226ea3b0507d002c6fa4b8cf93a 19607 rust-merge_0.2.0.orig.tar.gz 135d9811847db44a8acf68775a437144a6739eef88467a189418e7bc483d7b34 3428 rust-merge_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-merge"
   ],
   "Files": [
-    "ec38e4a8025e3f5f81d3be22bd771f59 2414 rust-merge_0.1.0-2.dsc fe994f0563c61263d5ba2632caaa90f1 16946 rust-merge_0.1.0.orig.tar.gz 5ed33017f15d221e985a73d7554234cd 3160 rust-merge_0.1.0-2.debian.tar.xz"
+    "cdcf581fcd3af8c530e1f756b2502ff3 1863 rust-merge_0.2.0-1.dsc 3668a9b2dfc83587750fb4c451b1889d 19607 rust-merge_0.2.0.orig.tar.gz 76c9e4256714e1a6081416faff3b38bc 3428 rust-merge_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://sr.ht/~ireas/merge-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-envy-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-structopt-0.3+default-dev, librust-toml-0.5+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-envy-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-structopt-0.3+default-dev, librust-toml-0.8+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003carnaud.ferraris@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/merge]"
   ],
   "Version": [
-    "0.1.0-2"
+    "0.2.0-1"
   ]
 }
