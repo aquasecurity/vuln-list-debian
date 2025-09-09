@@ -6,19 +6,31 @@
     "libdex-1-1, libdex-dev, libdex-doc, gir1.2-dex-1"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, gi-docgen, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.68), libsysprof-capture-4-dev [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x hppa powerpc ppc64 sh4] \u003c!pkg.libdex.nosysprof\u003e, liburing-dev [!i386], meson (\u003e= 0.62.0), valac"
+    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-gio-2.0-dev, gobject-introspection (\u003e= 1.80), libglib2.0-dev (\u003e= 2.68), libsysprof-capture-4-dev [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x hppa powerpc ppc64 sh4] \u003c!pkg.libdex.nosysprof\u003e, liburing-dev [!i386], meson (\u003e= 0.62.0), valac"
+  ],
+  "Build-Depends-Indep": [
+    "gi-docgen"
   ],
   "Checksums-Sha256": [
-    "d1d01448ea578edf16302c25ab34f458ad93d317fd3657bea0ae37463a77dc07 2367 libdex_0.10.1-1.dsc 7472e88090db2b228307505edeba4483e872681340cb0404ae64ac3da5bed0a6 102088 libdex_0.10.1.orig.tar.xz b0e45542fe4a8dcbcb663cfb406bb1e2cb512c8d6adcecbce23ee31f93da0d3f 6192 libdex_0.10.1-1.debian.tar.xz"
+    "394c555b30ea72023147077add926750726705ec8a4c8337d2a6c071f33348af 2696 libdex_0.10.1-2.dsc 7472e88090db2b228307505edeba4483e872681340cb0404ae64ac3da5bed0a6 102088 libdex_0.10.1.orig.tar.xz c8f5da5578f555757477cda13cc78992d77a7a1ca857c0cd55ca4836dc8ff02f 6560 libdex_0.10.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "3a0643f0fd02ea9bb293b0039b4e501dd34ad706 debian archive/debian/0.10.1-2 https://git.dgit.debian.org/libdex"
   ],
   "Directory": [
     "pool/main/libd/libdex"
   ],
   "Files": [
-    "02757cff5f6ecd094eff64b6cd426ec8 2367 libdex_0.10.1-1.dsc 86a541dc5852affe5c5921f709bfeded 102088 libdex_0.10.1.orig.tar.xz 6daf956228656f3271eca6a361170704 6192 libdex_0.10.1-1.debian.tar.xz"
+    "159c87f0a6a6dc78a60ad4cddd0fa0ef 2696 libdex_0.10.1-2.dsc 86a541dc5852affe5c5921f709bfeded 102088 libdex_0.10.1.orig.tar.xz a3ee4d8383a322f1453e09bdd4677bdd 6560 libdex_0.10.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=40c41f4b2962712e930e3ca3b440e78544f36a6a fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
+  ],
+  "Git-Tag-Tagger": [
+    "Simon McVittie \u003csmcv@debian.org\u003e"
   ],
   "Homepage": [
     "https://gitlab.gnome.org/GNOME/libdex"
@@ -30,7 +42,7 @@
     "libdex"
   ],
   "Package-List": [
-    "gir1.2-dex-1 deb introspection optional arch=linux-any libdex-1-1 deb libs optional arch=linux-any libdex-dev deb libdevel optional arch=linux-any libdex-doc deb doc optional arch=all"
+    "gir1.2-dex-1 deb introspection optional arch=linux-any libdex-1-1 deb libs optional arch=linux-any libdex-dev deb libdevel optional arch=linux-any libdex-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -39,7 +51,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e"
@@ -51,6 +63,6 @@
     "https://salsa.debian.org/gnome-team/libdex.git"
   ],
   "Version": [
-    "0.10.1-1"
+    "0.10.1-2"
   ]
 }

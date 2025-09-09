@@ -6,16 +6,19 @@
     "libgexiv2-2, gir1.2-gexiv2-0.10, libgexiv2-dev, libgexiv2-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, gtk-doc-tools, libexiv2-dev, libgirepository1.0-dev, libglib2.0-dev, libglib2.0-doc, meson, python3-gi, valac"
+    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gobject-introspection (\u003e= 1.80), libexiv2-dev, libglib2.0-dev, meson, python3-gi, valac"
+  ],
+  "Build-Depends-Indep": [
+    "gtk-doc-tools \u003c!nodoc\u003e, libglib2.0-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "eef2a4d84d0008def668ceeda66552173769d78a14748590462c376536495257 2424 gexiv2_0.14.6-1.dsc 606c28aaae7b1f3ef5c8eabe5e7dffd7c5a1c866d25b7671fb847fe287a72b8b 391436 gexiv2_0.14.6.orig.tar.xz c37a13e956df83451fd9b16c1ea03ce20b88df6387962c5c511ef6ee36f26e95 10692 gexiv2_0.14.6-1.debian.tar.xz"
+    "25f01acdaf5ad275ad6ba94d724b53868010dc532c7ba700feb781ef73f6b048 2530 gexiv2_0.14.6-2.dsc 606c28aaae7b1f3ef5c8eabe5e7dffd7c5a1c866d25b7671fb847fe287a72b8b 391436 gexiv2_0.14.6.orig.tar.xz 1ab8fa37a977d20593caefc65f79f817c03f02332cb01226ac50ea1d498e888a 10996 gexiv2_0.14.6-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gexiv2"
   ],
   "Files": [
-    "a93063966b20551a23fbae345dcb295c 2424 gexiv2_0.14.6-1.dsc 4139dfeca8e30288969233568c72e06e 391436 gexiv2_0.14.6.orig.tar.xz 0b3df251a961625ddba5888943a075f7 10692 gexiv2_0.14.6-1.debian.tar.xz"
+    "4c8238e64c732c27363192335ecf53dc 2530 gexiv2_0.14.6-2.dsc 4139dfeca8e30288969233568c72e06e 391436 gexiv2_0.14.6.orig.tar.xz e83472f94bfd6df023077b2cdea58f68 10996 gexiv2_0.14.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "gexiv2"
   ],
   "Package-List": [
-    "gir1.2-gexiv2-0.10 deb introspection optional arch=any libgexiv2-2 deb libs optional arch=any libgexiv2-dev deb libdevel optional arch=any libgexiv2-doc deb doc optional arch=all"
+    "gir1.2-gexiv2-0.10 deb introspection optional arch=any libgexiv2-2 deb libs optional arch=any libgexiv2-dev deb libdevel optional arch=any libgexiv2-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "source"
@@ -39,7 +42,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/gexiv2.git"
   ],
   "Version": [
-    "0.14.6-1"
+    "0.14.6-2"
   ]
 }
