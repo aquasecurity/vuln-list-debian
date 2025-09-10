@@ -6,16 +6,19 @@
     "librust-argmax-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.126-~~) \u003c!nocheck\u003e, librust-nix-0+feature-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.127-~~) \u003c!nocheck\u003e, librust-nix-0+feature-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.17-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "35789add18ec0bd3e3dc99fb3cac0eb3e1876129da8cf8d2d2c30e5b22a8a8d0 2293 rust-argmax_0.3.1-1.dsc 5b7e3ef5e3a7f2c5e5a49d90ad087c03d38258e75155daac64deb62c50972c66 11270 rust-argmax_0.3.1.orig.tar.gz c09125a0a1b20944c02a91cd7e945b71499a62286fc7881d2703ebb18a9ff76f 2760 rust-argmax_0.3.1-1.debian.tar.xz"
+    "f9cb0fe25c61845224b57817641b292cc29d6e112c763db6c1ebdddfd77b5944 2325 rust-argmax_0.4.0-1.dsc 0144c58b55af0133ec3963ce5e4d07aad866e3bbcfdcddbf4590dbd7ad6ff557 12059 rust-argmax_0.4.0.orig.tar.gz 5177fc5925453fce3c7bf60c599938bf7b50297c7ec69ae808001b884bde3cd5 2772 rust-argmax_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-argmax"
   ],
   "Files": [
-    "f0a18532870dd8681f477d94f8fbcf45 2293 rust-argmax_0.3.1-1.dsc 36efe34e07a8009f1965a786fab5aecb 11270 rust-argmax_0.3.1.orig.tar.gz 6ed6616ccc93fb917a0d93c32e907759 2760 rust-argmax_0.3.1-1.debian.tar.xz"
+    "10270abf557176bb5c0c2e2b529807f3 2325 rust-argmax_0.4.0-1.dsc cca897180e3af069b85561a8ae5f3dcb 12059 rust-argmax_0.4.0.orig.tar.gz ab9b25a84beb1a4f552af0d0790593db 2772 rust-argmax_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/argmax]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.4.0-1"
   ]
 }
