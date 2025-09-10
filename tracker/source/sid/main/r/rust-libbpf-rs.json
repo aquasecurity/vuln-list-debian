@@ -6,16 +6,19 @@
     "librust-libbpf-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-libbpf-sys-1-dev (\u003e= 1.4.5-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-vsprintf-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-libbpf-sys-1-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-vsprintf-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "66ffd3a563047064817edfe78eb0990b36904a9fe3f8bbe1bd30e9cf60687fbd 2751 rust-libbpf-rs_0.25.0~beta.1-1.dsc ca22b2e30d35ac1e84f7756868b26af9d3eb4035065c8279a9bf53da183d0cf5 92659 rust-libbpf-rs_0.25.0~beta.1.orig.tar.gz d8726c475c3b0f67de5ee63a3c496a9e07d7e34102e69de8da1cedb33b84b838 3752 rust-libbpf-rs_0.25.0~beta.1-1.debian.tar.xz"
+    "efeb1adc11b25870f2db7a6674a0adb99902fbdeef1db2dfb64d1e04422b0f6a 2805 rust-libbpf-rs_0.26.0~beta.1-1.dsc e3d920977abb5a092e0e0a6029aa831fd0e13fd8d84077f0403e7e49024f0e8b 108435 rust-libbpf-rs_0.26.0~beta.1.orig.tar.gz 195b972f2cb59e4c18b08e3b8215bdca7e84b8ced33fa6cfbf476d95c2c0331e 3648 rust-libbpf-rs_0.26.0~beta.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libbpf-rs"
   ],
   "Files": [
-    "abce3c5b8c69e72fec9c24cf77036bde 2751 rust-libbpf-rs_0.25.0~beta.1-1.dsc 63537d8df9647b2d1b402f9964171730 92659 rust-libbpf-rs_0.25.0~beta.1.orig.tar.gz f98e0495f3441e150fde236d7455fddf 3752 rust-libbpf-rs_0.25.0~beta.1-1.debian.tar.xz"
+    "29024b846a893d743a6463d9e58e353e 2805 rust-libbpf-rs_0.26.0~beta.1-1.dsc 4ac2232aa401d2d6617023b1630f65f4 108435 rust-libbpf-rs_0.26.0~beta.1.orig.tar.gz 3d4b97d16b2de45e7f11b8265867e8db 3648 rust-libbpf-rs_0.26.0~beta.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cc-1+default-dev, librust-log-0.4+default-dev, librust-memmem-0.1+default-dev, librust-pkg-config-0.3+default-dev, librust-plain-0.2+default-dev, librust-probe-0.3+default-dev, librust-scopeguard-1+default-dev, librust-serial-test-3-dev, librust-tempfile-3+default-dev, librust-test-tag-0.1+default-dev, rustc"
+    "dh-cargo, librust-cc-1+default-dev, librust-goblin-0.9+default-dev, librust-log-0.4+default-dev, librust-memmem-0.1+default-dev, librust-pkg-config-0.3+default-dev, librust-plain-0.2+default-dev, librust-probe-0.3+default-dev, librust-scopeguard-1+default-dev, librust-serial-test-3-dev, librust-tempfile-3+default-dev, librust-test-tag-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sudip Mukherjee \u003csudipm.mukherjee@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libbpf-rs]"
   ],
   "Version": [
-    "0.25.0~beta.1-1"
+    "0.26.0~beta.1-1"
   ]
 }

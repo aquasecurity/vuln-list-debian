@@ -6,19 +6,25 @@
     "librust-ipnetwork-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f244373a1dd9529abfd1ed1c91066f9d8b8d5bf2fe632315047996749aaca922 1917 rust-ipnetwork_0.17.0-1.dsc 02c3eaab3ac0ede60ffa41add21970a7df7d91772c03383aac6c2c3d53cc716b 15544 rust-ipnetwork_0.17.0.orig.tar.gz 413d2e17e172359cf113e55650651a181d317ce2f6dc24bb2775f480f136dfae 2768 rust-ipnetwork_0.17.0-1.debian.tar.xz"
+    "7ffd8be33a687d46a3e04ed3e62f7306a1f447e24b42c7a1d6a4595166b8e295 2335 rust-ipnetwork_0.21.1-1.dsc cf370abdafd54d13e54a620e8c3e1145f28e46cc9d704bc6d94414559df41763 19565 rust-ipnetwork_0.21.1.orig.tar.gz 1f84305477fc5c4c331ea83caf372bb1a4b63cabc65a52b0c95b5788d8878784 3632 rust-ipnetwork_0.21.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ipnetwork"
   ],
   "Files": [
-    "1c2e9ab0909957f5f67aa2d46ff8f968 1917 rust-ipnetwork_0.17.0-1.dsc da009e3aa5f85ba9f3f41f75f43889b9 15544 rust-ipnetwork_0.17.0.orig.tar.gz 9379107b4e42cb8c3a40e79a6cda4c3e 2768 rust-ipnetwork_0.17.0-1.debian.tar.xz"
+    "5f33b79e009ae480aadc72e127bde8ef 2335 rust-ipnetwork_0.21.1-1.dsc 8fe2ad483244b4f3fbfc37802f6b2069 19565 rust-ipnetwork_0.21.1.orig.tar.gz c9c03317a8c6fd4c94cba6ccb71864c0 3632 rust-ipnetwork_0.21.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/achanda/ipnetwork"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ipnetwork]"
   ],
   "Version": [
-    "0.17.0-1"
+    "0.21.1-1"
   ]
 }

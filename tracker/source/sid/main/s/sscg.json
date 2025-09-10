@@ -6,16 +6,16 @@
     "sscg"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), meson, help2man, libpath-utils-dev, libpopt-dev, libssl-dev, libtalloc-dev, pkgconf"
+    "debhelper-compat (= 13), meson, help2man, libpath-utils-dev, libpopt-dev, libssl-dev, libtalloc-dev, pkgconf, openssl \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8c6bca0b9ee52c20395598286db450dd30c5090734ecdfdd6159927ac5d4fff8 1932 sscg_3.0.8-1.dsc 6f089c886f9e6772955a962fe2c534812c96509948bfbb930f1cf7c758e3c287 61167 sscg_3.0.8.orig.tar.gz db975594e3b208f9943d3d24dd1cf6a1acc2254e725f29ef6297290df3b461bf 3004 sscg_3.0.8-1.debian.tar.xz"
+    "333f28e757b6253cc3d716d11f57954aa5044a1508deee0ef4eef128e04be9bd 1980 sscg_3.0.8-2.dsc 6f089c886f9e6772955a962fe2c534812c96509948bfbb930f1cf7c758e3c287 61167 sscg_3.0.8.orig.tar.gz 2897ceb02482845d7406ef72404dd762928786eab8b80475a58c613a49460d9d 3172 sscg_3.0.8-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sscg"
   ],
   "Files": [
-    "0713f0e1ad7435b2c9f7432466349153 1932 sscg_3.0.8-1.dsc d8b1ed2cef893643b1157a9c47249af5 61167 sscg_3.0.8.orig.tar.gz 76689fe5ef33b534ff529f4da0a9f220 3004 sscg_3.0.8-1.debian.tar.xz"
+    "a7f16323246c64f46c64d9d1db134fde 1980 sscg_3.0.8-2.dsc d8b1ed2cef893643b1157a9c47249af5 61167 sscg_3.0.8.orig.tar.gz da0db1aa16ffb62199bf290e4e0506f9 3172 sscg_3.0.8-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "openssl"
+  ],
   "Uploaders": [
     "Martin Pitt \u003cmpitt@debian.org\u003e"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian/sscg.git"
   ],
   "Version": [
-    "3.0.8-1"
+    "3.0.8-2"
   ]
 }
