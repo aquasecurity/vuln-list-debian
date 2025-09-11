@@ -6,19 +6,25 @@
     "librust-zstd-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.66-~~) \u003c!nocheck\u003e, librust-bindgen-0+runtime-dev (\u003e= 0.66-~~) \u003c!nocheck\u003e, librust-bindgen-0+which-rustfmt-dev (\u003e= 0.66-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libzstd-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.72-~~) \u003c!nocheck\u003e, librust-bindgen-0+runtime-dev (\u003e= 0.72-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libzstd-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9338653deab3c4fa124481dec0bb3d0057541414a39aa43882d230f239ed0a39 2456 rust-zstd-sys_2.0.13-2.dsc 93f7e75127d4e40b0f47a2b521ca54bd7848f48194ad41433a9b37685f67a2f7 14741 rust-zstd-sys_2.0.13.orig.tar.gz 7cff5b0995882cd37d11185d18069c55b9b09fa8b7b1ccc99aff7027d070af2c 5528 rust-zstd-sys_2.0.13-2.debian.tar.xz"
+    "f9832554b5ee7b10666bb7be2326887e577684a356a933641d94fbe612734c9a 1830 rust-zstd-sys_2.0.13-3.dsc 93f7e75127d4e40b0f47a2b521ca54bd7848f48194ad41433a9b37685f67a2f7 14741 rust-zstd-sys_2.0.13.orig.tar.gz 303f3ed8a439cd40860144766861d2a6b4dbc11994326d1428d03118c0a69ed7 5620 rust-zstd-sys_2.0.13-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zstd-sys"
   ],
   "Files": [
-    "423501068e8b646e4ee4f76f87c529da 2456 rust-zstd-sys_2.0.13-2.dsc c1f5b8fe2b8922daeccf3802538bc8f0 14741 rust-zstd-sys_2.0.13.orig.tar.gz b2c7aafd1a84701480af3eab7cc75498 5528 rust-zstd-sys_2.0.13-2.debian.tar.xz"
+    "8430e751f57eac19d69eb015f6d8957f 1830 rust-zstd-sys_2.0.13-3.dsc c1f5b8fe2b8922daeccf3802538bc8f0 14741 rust-zstd-sys_2.0.13.orig.tar.gz 76e4aee04e42a9e7254271d87886d741 5620 rust-zstd-sys_2.0.13-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/gyscos/zstd-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -45,7 +51,7 @@
     "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e, Blair Noctis \u003cn@sail.ng\u003e"
+    "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e, Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zstd-sys"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zstd-sys]"
   ],
   "Version": [
-    "2.0.13-2"
+    "2.0.13-3"
   ]
 }
