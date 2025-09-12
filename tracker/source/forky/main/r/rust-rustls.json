@@ -6,16 +6,16 @@
     "librust-rustls-dev"
   ],
   "Build-Depends": [
-    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-rust, librust-asn1-dev (\u003c\u003c 0.21), librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-brotli-dev (\u003c\u003c 8), librust-brotli-decompressor-4+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-env-logger-0.11+default-dev, librust-hashbrown-0.14+ahash-dev, librust-hashbrown-0.14+inline-more-dev, librust-hex-0.4+default-dev, librust-log-0.4+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-once-cell-1+alloc-dev, librust-once-cell-1+race-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-ring-0.17+default-dev, librust-rustls-pki-types-1+alloc-dev (\u003e= 1.12), librust-rustls-pki-types-1+default-dev (\u003e= 1.12), librust-rustls-native-certs-0.6+default-dev, librust-rustls-webpki-0.103+alloc-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-subtle-2-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev, librust-x509-parser-0.17+default-dev, librust-zeroize-1+default-dev"
+    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-rust, librust-asn1-dev (\u003c\u003c 0.23), librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-brotli-dev (\u003c\u003c 9), librust-brotli-decompressor-dev (\u003c\u003c 6), librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+env-dev, librust-env-logger-0.11+default-dev, librust-hashbrown-0.15+default-hasher-dev, librust-hashbrown-0.15+inline-more-dev, librust-hex-0.4+default-dev, librust-log-0.4+default-dev, librust-macro-rules-attribute-0.2+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-once-cell-1+alloc-dev, librust-once-cell-1+race-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-ring-0.17+default-dev, librust-rustls-pki-types-1+alloc-dev (\u003e= 1.12), librust-rustls-pki-types-1+default-dev (\u003e= 1.12), librust-rustls-native-certs-0.8+default-dev, librust-rustls-webpki-0.103+alloc-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-subtle-2-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev, librust-x509-parser-dev (\u003c\u003c 0.19), librust-zeroize-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "e027736c70f694bf454465aa41fe013a0f45c03f541bfce669fb11ce2b33de5e 4218 rust-rustls_0.23.31+ds-4.dsc 4267de0c89ffba702172776d9d0d6cc4f9760171b75f963eb8679018389aca01 2234240 rust-rustls_0.23.31+ds.orig.tar.xz 52a51574185ed9f35619688d3930ac3b170309f139365ef7d6426efd31913cb7 30712 rust-rustls_0.23.31+ds-4.debian.tar.xz"
+    "0cf9435a15ae07d42216a4679e113f4ea8e8349ca1a423ad30079678cf28c7cc 4302 rust-rustls_0.23.31+ds-7.dsc 4267de0c89ffba702172776d9d0d6cc4f9760171b75f963eb8679018389aca01 2234240 rust-rustls_0.23.31+ds.orig.tar.xz 773ddba79b2fef3105aaaf8557fa25d38272afa2b78aa65b0f18c5266d81d838 28708 rust-rustls_0.23.31+ds-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustls"
   ],
   "Files": [
-    "42846c6390aeb47cda4e5b11c0cff612 4218 rust-rustls_0.23.31+ds-4.dsc 87d2a8d921e8e159e9f28a0bbdb642bd 2234240 rust-rustls_0.23.31+ds.orig.tar.xz 2b88e83251df63e76057dba69fbb137d 30712 rust-rustls_0.23.31+ds-4.debian.tar.xz"
+    "51312fb5ec5e0ecc9eb9594421b799bb 4302 rust-rustls_0.23.31+ds-7.dsc 87d2a8d921e8e159e9f28a0bbdb642bd 2234240 rust-rustls_0.23.31+ds.orig.tar.xz 48a8197aaa49716abb0053f9cd9d4191 28708 rust-rustls_0.23.31+ds-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "ca-certificates, dh-rust, librust-asn1-dev, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-bencher-0.1+default-dev, librust-env-logger-0.11+default-dev, librust-hex-0.4+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-rustls-0.23+brotli-dev, librust-rustls-0.23+custom-provider-dev, librust-rustls-0.23+hashbrown-dev, librust-rustls-0.23+logging-dev, librust-rustls-0.23+ring-dev, librust-rustls-0.23+std-dev, librust-rustls-0.23+tls12-dev, librust-rustls-0.23-dev, librust-rustls-native-certs-0.6+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev, librust-x509-parser-0.17+default-dev"
+    "ca-certificates, dh-rust, librust-asn1-dev, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-base64-0.22+default-dev, librust-bencher-0.1+default-dev, librust-env-logger-0.11+default-dev, librust-hex-0.4+default-dev, librust-macro-rules-attribute-0.2+default-dev, librust-mio-1+net-dev, librust-mio-1+os-poll-dev, librust-num-bigint-0.4+default-dev, librust-openssl-0.10+default-dev, librust-rcgen-0.13+default-dev, librust-rcgen-0.13+pem-dev, librust-regex-1+default-dev, librust-rustls-0.23+brotli-dev, librust-rustls-0.23+custom-provider-dev, librust-rustls-0.23+hashbrown-dev, librust-rustls-0.23+logging-dev, librust-rustls-0.23+ring-dev, librust-rustls-0.23+std-dev, librust-rustls-0.23+tls12-dev, librust-rustls-0.23-dev, librust-rustls-native-certs-0.8+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tikv-jemallocator-0.6+default-dev, librust-time-0.3-dev, librust-x509-parser-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/rust-rustls"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rust-rustls.git"
   ],
   "Version": [
-    "0.23.31+ds-4"
+    "0.23.31+ds-7"
   ]
 }

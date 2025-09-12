@@ -6,16 +6,19 @@
     "librust-transmission-gobject-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-channel-2+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-gio-0.20+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-num-enum-0.5+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.19-~~) \u003c!nocheck\u003e, librust-transmission-client-0.1+default-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-channel+default-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-async-compat-0.2+default-dev \u003c!nocheck\u003e, librust-gio-0.21+default-dev \u003c!nocheck\u003e, librust-glib-0.21+default-dev \u003c!nocheck\u003e, librust-indexmap+default-dev (\u003e= 2.7-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-num-enum-0.5+default-dev \u003c!nocheck\u003e, librust-once-cell+default-dev (\u003e= 1.20-~~) \u003c!nocheck\u003e, librust-transmission-client-0.1+default-dev (\u003e= 0.1.1-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c416f1e8540a606abed194f76f8898b0c8a693c68db6f8e5e77b56087e196796 2217 rust-transmission-gobject_0.1.6-1.dsc 9451607e09aabcd53f5d390dc6604b3a966cc14046b8a48ae708abbc385e0be1 14754 rust-transmission-gobject_0.1.6.orig.tar.gz 3526eb7ca573c92f77ebccf4ad2a1ad13380cdf99dcce953538fd48328d47ce8 2900 rust-transmission-gobject_0.1.6-1.debian.tar.xz"
+    "2f699ea9bbb2a4aee3a538ca9858eaf419326f903bcdf88f92c7403e4b5441b3 2856 rust-transmission-gobject_0.1.7-2.dsc a71fe79dc9c6b6de0a20bd5c033b6ef0bd55f048496395d45e1ef20911d09f85 30265 rust-transmission-gobject_0.1.7.orig.tar.gz 79b26214c523fb10b9b78a33f280037223263331fc75a9bf8bd0198d59e2fbe3 2992 rust-transmission-gobject_0.1.7-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-transmission-gobject"
   ],
   "Files": [
-    "0af58121b1edacabe7b46cc3439b45b4 2217 rust-transmission-gobject_0.1.6-1.dsc 183b468dce80e9824a1fb5c220c1a735 14754 rust-transmission-gobject_0.1.6.orig.tar.gz 9737af8c583326a28f6be8318f0591e3 2900 rust-transmission-gobject_0.1.6-1.debian.tar.xz"
+    "3541b72ee7cdc9e25ba5c8ca5c6ae6d3 2856 rust-transmission-gobject_0.1.7-2.dsc 250f5e6a31850734779a2467b90a2393 30265 rust-transmission-gobject_0.1.7.orig.tar.gz 0a3056d584509fa64fc61caab95aa653 2992 rust-transmission-gobject_0.1.7-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/transmission-gobject]"
   ],
   "Version": [
-    "0.1.6-1"
+    "0.1.7-2"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-libshumate-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gdk-pixbuf-0.20+default-dev \u003c!nocheck\u003e, librust-gdk4-0.9+default-dev \u003c!nocheck\u003e, librust-gio-0.20+default-dev \u003c!nocheck\u003e, librust-glib-0.20+default-dev \u003c!nocheck\u003e, librust-gtk4-0.9+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-libshumate-sys-0.6+default-dev \u003c!nocheck\u003e, libshumate-dev, libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.19.1), xmlstarlet, libgraphene-1.0-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, libshumate-dev, libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.21), xmlstarlet, libgraphene-1.0-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gdk-pixbuf-0.21+default-dev \u003c!nocheck\u003e, librust-gdk4-0.10+default-dev \u003c!nocheck\u003e, librust-gio-0.21+default-dev \u003c!nocheck\u003e, librust-glib-0.21+default-dev \u003c!nocheck\u003e, librust-gtk4-0.10+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-libshumate-sys-0.7+default-dev \u003c!nocheck\u003e, libshumate-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "df658f0c216470316a473e5f8f79ae6a34f840a552c5e0dd454b3854037991b0 2622 rust-libshumate_0.6.0-2.dsc fc9921cc829fb2d546bd6a3a158a4134002098887e0bb01ceb4535521af610ec 31573 rust-libshumate_0.6.0.orig.tar.gz fe6989fb80afe0e1b8f0b0635d3961a2201fedd7b1d4fe323616bc32812de383 4028 rust-libshumate_0.6.0-2.debian.tar.xz"
+    "9b6c241233e979d974a08eae81b5bbc143d8adce5a660869a44d1c2826587358 2682 rust-libshumate_0.7.0-2.dsc 606b36a3e209108320570eb5878883fded7ae936e9fe4fd7fb78aff5503e0d0f 37649 rust-libshumate_0.7.0.orig.tar.gz d08a25023cebe870956a71f5f5e905276f66dc685af409cf7b66dab2691fd777 4228 rust-libshumate_0.7.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libshumate"
   ],
   "Files": [
-    "e0cb176813500afdfefd8760c2e9073e 2622 rust-libshumate_0.6.0-2.dsc ea17fdfcbc43575251146ecdb2d24ffc 31573 rust-libshumate_0.6.0.orig.tar.gz bcd812a4cf99230ce6963d846d7ae0f4 4028 rust-libshumate_0.6.0-2.debian.tar.xz"
+    "33d5f4111644a9a369a5e01d4fa6d08d 2682 rust-libshumate_0.7.0-2.dsc 48e77f84c5c83d2157508a527dc91667 37649 rust-libshumate_0.7.0.orig.tar.gz 78f46ef3209fe1925dcf2c4c95ea8321 4228 rust-libshumate_0.7.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/libshumate"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libshumate]"
   ],
   "Version": [
-    "0.6.0-2"
+    "0.7.0-2"
   ]
 }

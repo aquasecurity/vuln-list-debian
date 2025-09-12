@@ -6,16 +6,19 @@
     "librust-gdk-pixbuf-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-sys-0.20+default-dev (\u003e= 0.20.6-~~) \u003c!nocheck\u003e, librust-glib-sys-0.20+default-dev (\u003e= 0.20.6-~~) \u003c!nocheck\u003e, librust-gobject-sys-0.20+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgdk-pixbuf-2.0-dev, xmlstarlet, gir-rust-code-generator (\u003e= 0.20), libgirepository1.0-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, libgdk-pixbuf-2.0-dev, xmlstarlet, gir-rust-code-generator (\u003e= 0.21), libgirepository1.0-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-sys-0.21+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.21+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.21+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libgdk-pixbuf-2.0-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b007bc87a6541781c18783931362259914e16f64c6e08b75290157c792ec2b86 2055 rust-gdk-pixbuf-sys_0.20.7-1.dsc 67f2587c9202bf997476bbba6aaed4f78a11538a2567df002a5f57f5331d0b5c 9852 rust-gdk-pixbuf-sys_0.20.7.orig.tar.gz be69a6958cb82da189aa685cc84ffdf811f15f9742aac0addc2c58f68e6c4781 4300 rust-gdk-pixbuf-sys_0.20.7-1.debian.tar.xz"
+    "f7f8b495ce32607eb48af103f36834feee9e70efaa179f39671a5665765f2b95 2686 rust-gdk-pixbuf-sys_0.21.1-2.dsc e25899cc931dc28cba912ebec793b730f53d2d419f90a562fcb29b53bd10aa82 14021 rust-gdk-pixbuf-sys_0.21.1.orig.tar.gz 1f564858b0c9e8313016431ff620f89ea032ddf733f6bd9f0b3fa9d93473a0b6 4440 rust-gdk-pixbuf-sys_0.21.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gdk-pixbuf-sys"
   ],
   "Files": [
-    "b3d0115d50c1bde9ba126e6d408e224f 2055 rust-gdk-pixbuf-sys_0.20.7-1.dsc b097688321678eccdb5f2021d5c2a4df 9852 rust-gdk-pixbuf-sys_0.20.7.orig.tar.gz 126c5481b565e7835a7e33de88cbbf56 4300 rust-gdk-pixbuf-sys_0.20.7-1.debian.tar.xz"
+    "3140b00cd32d3033514498eba137ebbf 2686 rust-gdk-pixbuf-sys_0.21.1-2.dsc ea0ee497fc3973c01c222ba8431a9874 14021 rust-gdk-pixbuf-sys_0.21.1.orig.tar.gz 76c17db81e2c3bff22eede5777fc0e2b 4440 rust-gdk-pixbuf-sys_0.21.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gdk-pixbuf-sys]"
   ],
   "Version": [
-    "0.20.7-1"
+    "0.21.1-2"
   ]
 }
