@@ -6,19 +6,25 @@
     "librust-cvss-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "deb9b540eb30494786f789ba82364d140987ec27b6c058fd36b9ffb88e871575 2080 rust-cvss_2.0.0-1.dsc 7ec6a2f799b0e3103192800872de17ee1d39fe0c598628277b9b012f09b4010f 20012 rust-cvss_2.0.0.orig.tar.gz bd4a3c7bf8acb2a51899a506536af0be255e4042870ff10c32f74b693d4a2746 3660 rust-cvss_2.0.0-1.debian.tar.xz"
+    "8123399b53337639bdc59bff1c2f806c4cdfc33c8a36e48ce3aefa7b92867a80 1563 rust-cvss_2.1.1-1.dsc f4f643e062e9a8e26edea270945e05011c441ca6a56e9d9d4464c6b0be1352bd 55890 rust-cvss_2.1.1.orig.tar.gz 1b099fbeb7edd46daeb4731417b4751f28cca4a41dc3a97366a3d01bbe27a4bc 4116 rust-cvss_2.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cvss"
   ],
   "Files": [
-    "d3c9e3d6c676d37a06e97cb7184dc445 2080 rust-cvss_2.0.0-1.dsc 981e658d37da1e1a08ddc15cb4e52897 20012 rust-cvss_2.0.0.orig.tar.gz 27feb12f10369a6dce350794f044d0fb 3660 rust-cvss_2.0.0-1.debian.tar.xz"
+    "a028aeb720059c68eade6d5ede8f4eb6 1563 rust-cvss_2.1.1-1.dsc 7cf931e1529c02b256c5bf13e855c13f 55890 rust-cvss_2.1.1.orig.tar.gz 6d4507b71571c2cedb86b2429d9138c3 4116 rust-cvss_2.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rustsec/rustsec"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cvss]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.1.1-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-thiserror-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-impl-2.0.11+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-impl-2.0+default-dev (\u003c\u003c 2.0.17-~~) \u003c!nocheck\u003e, librust-thiserror-impl-2.0+default-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "93136745124b5bca68133f5cbf99fc13661c2fdc1fccb85ee2dc7ecef61bb65a 2499 rust-thiserror_2.0.11-1.dsc d452f284b73e6d76dd36758a0c8684b1d5be31f92b89d07fd5822175732206fc 28648 rust-thiserror_2.0.11.orig.tar.gz 8d9d8a7574de1b4bd2081552cd5badfbd840e0b904fee57cf62473352a5b4efb 3072 rust-thiserror_2.0.11-1.debian.tar.xz"
+    "5243cbea83dfe06d09e929d09418462be34d6657de357278302eef541ff03d16 1962 rust-thiserror_2.0.16-1.dsc 3467d614147380f2e4e374161426ff399c91084acd2363eaf549172b3d5e60c0 29095 rust-thiserror_2.0.16.orig.tar.gz 3b749831db770362b04efeda19a033a02e448210a656683b86666b95055d4389 3120 rust-thiserror_2.0.16-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-thiserror"
   ],
   "Files": [
-    "615635de148c3a6fa89fddc58b18a8a2 2499 rust-thiserror_2.0.11-1.dsc f3210ab639bb43104069f5ecb3f1a786 28648 rust-thiserror_2.0.11.orig.tar.gz 751011ff8a5377d99986686151d6685d 3072 rust-thiserror_2.0.11-1.debian.tar.xz"
+    "3972ae3d6c6927a1014994361319750b 1962 rust-thiserror_2.0.16-1.dsc df677c6ba8723b9f97b4eab1b57b579b 29095 rust-thiserror_2.0.16.orig.tar.gz 92c9e97129c6a3f1227b30676b7b8ced 3120 rust-thiserror_2.0.16-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/thiserror]"
   ],
   "Version": [
-    "2.0.11-1"
+    "2.0.16-1"
   ]
 }
