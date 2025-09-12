@@ -1,0 +1,62 @@
+{
+  "Architecture": [
+    "amd64 arm64 loong64 ppc64 ppc64el riscv64 s390x"
+  ],
+  "Binary": [
+    "libggml0, libggml-dev, libggml0-backend-cpu, libggml0-backend-blas, libggml0-backend-hip, libggml0-backend-vulkan, libggml0-backend-cuda"
+  ],
+  "Build-Depends": [
+    "cmake, debhelper-compat (= 13), libblas-dev \u003c!pkg.ggml.cuda\u003e, pkgconf \u003c!pkg.ggml.cuda\u003e, libvulkan-dev \u003c!pkg.ggml.cuda\u003e, glslc \u003c!pkg.ggml.cuda\u003e, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.cuda !pkg.ggml.nohip\u003e, hipcc [amd64 arm64 ppc64el] \u003c!pkg.ggml.cuda !pkg.ggml.nohip\u003e, libhipblas-dev [amd64 arm64 ppc64el] \u003c!pkg.ggml.cuda !pkg.ggml.nohip\u003e, librocblas-dev [amd64 arm64 ppc64el] \u003c!pkg.ggml.cuda !pkg.ggml.nohip\u003e, nvidia-cuda-toolkit-gcc \u003cpkg.ggml.cuda\u003e"
+  ],
+  "Checksums-Sha256": [
+    "c12c89dd88e51ee6d72cc205809e63d72ee47ef5fcc1e8069aea501293f2650b 3411 ggml_0.0~git20250712.d62df60-5.dsc 202079c976433881a3c1f20675bc5a4f9fdaabcab9901249310c810bbf37eb2b 1401372 ggml_0.0~git20250712.d62df60.orig.tar.xz dcd3fca117e1b193133e099ae0bc33597bac21bc002cc0a27bf32dcc356dc4d8 11740 ggml_0.0~git20250712.d62df60-5.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/main/g/ggml"
+  ],
+  "Files": [
+    "d2aed2bc1d937c984d0a608ecef45452 3411 ggml_0.0~git20250712.d62df60-5.dsc 7567a36fdc8a95851a417d89c1ed1130 1401372 ggml_0.0~git20250712.d62df60.orig.tar.xz c9c5931f6b75359c02cee05ffa1493c0 11740 ggml_0.0~git20250712.d62df60-5.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ggml-org/ggml"
+  ],
+  "Maintainer": [
+    "Debian Deep Learning Team \u003cdebian-ai@lists.debian.org\u003e"
+  ],
+  "Package": [
+    "ggml"
+  ],
+  "Package-List": [
+    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0-backend-cpu deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0-backend-cuda deb contrib/libs optional arch=amd64,arm64,ppc64el profile=pkg.ggml.cuda libggml0-backend-hip deb libs optional arch=amd64,arm64,ppc64el profile=!pkg.ggml.nohip,!pkg.ggml.cuda libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "misc"
+  ],
+  "Standards-Version": [
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "libopenblas0-pthread, pkg-rocm-tools"
+  ],
+  "Uploaders": [
+    "Christian Kastner \u003cckk@debian.org\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/deeplearning-team/ggml"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/deeplearning-team/ggml.git"
+  ],
+  "Version": [
+    "0.0~git20250712.d62df60-5"
+  ]
+}
