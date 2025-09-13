@@ -6,10 +6,10 @@
     "python3-libtiff, pylibtiff"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, libtiff-dev, pybuild-plugin-pyproject, python3-all-dev, python3-bitarray, python3-numpy, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, libtiff-dev, pybuild-plugin-pyproject, python3-all-dev, python3-bitarray, python3-numpy, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-numpy-dev"
   ],
   "Checksums-Sha256": [
-    "e5200d07b37f1c969c9d08c1f4acfe87fb09dea28d4c7c40b773d41d34f27f27 3546 pylibtiff_0.6.1-2.dsc 2aa867ac8f001927acee6599246acde47ec7fc60753a5326e65170fb08606bdf 89172 pylibtiff_0.6.1.orig.tar.gz 1c7d15d5b7be0a7f30e8f0ceebf2170ff381f8fbedcdc66eb11c90c1577414e2 9292 pylibtiff_0.6.1-2.debian.tar.xz"
+    "6ee7c920bd594e0b1e14a0bc64424dd70703c88f7dcbe3cc6eddfe86f0cb0827 3568 pylibtiff_0.6.1-3.dsc 2aa867ac8f001927acee6599246acde47ec7fc60753a5326e65170fb08606bdf 89172 pylibtiff_0.6.1.orig.tar.gz db5f67761d74d4d2a2f99c24e33fa187d128b07e6ded564eefe9f403876af8ce 10064 pylibtiff_0.6.1-3.debian.tar.xz"
   ],
   "Description": [
     "wrapper to the libtiff library to Python using ctypes PyLibTiff is a package that provides: . * a wrapper to the libtiff library to Python using ctypes. * a pure Python module for reading and writing TIFF and LSM files. The images are read as numpy.memmap objects so that it is possible to open images that otherwise would not fit to computers RAM. . There exists many Python packages such as PIL, FreeImagePy that support reading and writing TIFF files. The PyLibTiff project was started to have an efficient and direct way to read and write TIFF files using the libtiff library without the need to install any unnecessary packages or libraries. The pure Python module was created for reading \"broken\" TIFF files such as LSM files that in some places use different interpretation of TIFF tags than what specified in the TIFF specification document. The libtiff library would just fail reading such files. In addition, the pure Python module is more memory efficient as the arrays are returned as memory maps. Support for compressed files is not implemented yet. . Warning: pylibtiff currently supports reading and writing images that are stored using TIFF strips. Patches are welcome to support tiled TIFF images."
@@ -18,7 +18,7 @@
     "pool/main/p/pylibtiff"
   ],
   "Files": [
-    "cbb03acedbc1f81ce7d71cc564be8e4c 3546 pylibtiff_0.6.1-2.dsc a3cd57e74441266bc1556e6a55072605 89172 pylibtiff_0.6.1.orig.tar.gz 6224a8164c7b568283528d753a699dae 9292 pylibtiff_0.6.1-2.debian.tar.xz"
+    "ea95f6f1eeb4d0123530cf292acf8087 3568 pylibtiff_0.6.1-3.dsc a3cd57e74441266bc1556e6a55072605 89172 pylibtiff_0.6.1.orig.tar.gz bf424552751375523f9140e823ce5231 10064 pylibtiff_0.6.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "python"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/pylibtiff.git"
   ],
   "Version": [
-    "0.6.1-2"
+    "0.6.1-3"
   ]
 }
