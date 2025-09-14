@@ -6,19 +6,25 @@
     "librust-needletail-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-buffer-redux-1-dev \u003c!nocheck\u003e, librust-bytecount-0.6+default-dev \u003c!nocheck\u003e, librust-bytecount-0.6+runtime-dispatch-simd-dev \u003c!nocheck\u003e, librust-bzip2-0.4+default-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.2.1-~~) \u003c!nocheck\u003e, librust-xz2-0.1+default-dev (\u003e= 0.1.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-buffer-redux-1-dev \u003c!nocheck\u003e, librust-bytecount-0.6+default-dev \u003c!nocheck\u003e, librust-bytecount-0.6+runtime-dispatch-simd-dev \u003c!nocheck\u003e, librust-bzip2-0.4+default-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e, librust-liblzma-0.3+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.7.2-~~) \u003c!nocheck\u003e, librust-zstd-0.13+default-dev (\u003e= 0.13.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "63259f97ced95d3dc3e7cd5587ceeebe51902a09ebe8bc9f0a587bfe89ff587b 2689 rust-needletail_0.5.1-1.dsc 55e813d4a1e0e205fd209de63158487bacfb29c00af1d6faed8bc4aa2c139d1e 37509 rust-needletail_0.5.1.orig.tar.gz f152477438615032ef179cc3355c662193e5e68802ea6f63b40fda9b6102fa7b 3756 rust-needletail_0.5.1-1.debian.tar.xz"
+    "abfed932954db08b0ed3baa04fd029fdf477057b526ea172526ea956293db645 2818 rust-needletail_0.6.3-1.dsc 6aa22e1ae8bce4ecf257e2475ef2046026caea08d66b1848d073fe7bc77e4351 414735 rust-needletail_0.6.3.orig.tar.gz f99c8a683e1871dad06a08eed9bf0eb068b3eb144d225c9c1814e89e32a94dc1 4632 rust-needletail_0.6.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-needletail"
   ],
   "Files": [
-    "e1b2b417b4b0a27755529c3c69ad8df1 2689 rust-needletail_0.5.1-1.dsc 76f94db30a12782cdf6ff1e6c3ccec48 37509 rust-needletail_0.5.1.orig.tar.gz 843f6bfb6e04c99d1aa0640bcba54c03 3756 rust-needletail_0.5.1-1.debian.tar.xz"
+    "704dfa5f634841e6b1d73a743e70e0f9 2818 rust-needletail_0.6.3-1.dsc eb6f04e982fcd40c3f31e54e520d5cf6 414735 rust-needletail_0.6.3.orig.tar.gz a63c01e7a1859cbc723307da2d903217 4632 rust-needletail_0.6.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/onecodex/needletail"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-cmd-2+default-dev, librust-escargot-0.5+default-dev, librust-predicates-3+default-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-assert-cmd-2+default-dev, librust-predicates-3+default-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev, librust-tempfile-3+default-dev, librust-toml-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/needletail]"
   ],
   "Version": [
-    "0.5.1-1"
+    "0.6.3-1"
   ]
 }

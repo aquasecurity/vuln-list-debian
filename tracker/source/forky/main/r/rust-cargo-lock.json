@@ -6,16 +6,19 @@
     "librust-cargo-lock-dev, cargo-lock"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-semver-1+default-dev, librust-semver-1+serde-dev, librust-serde-1+default-dev, librust-serde-1+serde-derive-dev, librust-toml-0.5+default-dev, librust-url-2+default-dev, librust-gumdrop-0.8+default-dev, librust-petgraph-0.6+default-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, librust-gumdrop-0.8+default-dev, librust-petgraph-0.6+default-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.73), libstd-rust-dev, librust-semver-1+default-dev (\u003e= 1.0.23-~~), librust-semver-1+serde-dev (\u003e= 1.0.23-~~), librust-serde-1+default-dev, librust-serde-1+serde-derive-dev, librust-toml-0.8+default-dev, librust-url-2+default-dev"
   ],
   "Checksums-Sha256": [
-    "f766bbfe2e66da853f7145416615b415f55e9d9f18e1068086f37d66802ed73c 2118 rust-cargo-lock_9.0.0-1.dsc e11c675378efb449ed3ce8de78d75d0d80542fc98487c26aba28eb3b82feac72 40465 rust-cargo-lock_9.0.0.orig.tar.gz b4f678ee59653a8facb02e00546bd9957cebbdce6b20c291b83620ec15a0c935 3724 rust-cargo-lock_9.0.0-1.debian.tar.xz"
+    "2eed39f8b90fdd020382006b9344d5022852d207fa499a52d4445aafde0b158f 1918 rust-cargo-lock_10.1.0-1.dsc c06acb4f71407ba205a07cb453211e0e6a67b21904e47f6ba1f9589e38f2e454 44804 rust-cargo-lock_10.1.0.orig.tar.gz 95ad922c8f76a052be711e4968bfc0ec03bc61bb23a38944f2322b37cda47b07 3436 rust-cargo-lock_10.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cargo-lock"
   ],
   "Files": [
-    "efc7e1681fbd334d7646ff51247204c0 2118 rust-cargo-lock_9.0.0-1.dsc 4fce55b1cefed241126bae8592854d17 40465 rust-cargo-lock_9.0.0.orig.tar.gz d87b9c7d49082666bfa5ff077afceb15 3724 rust-cargo-lock_9.0.0-1.debian.tar.xz"
+    "d9aadc20e840b1a0219b1fc686a9def8 1918 rust-cargo-lock_10.1.0-1.dsc a59d2c91c8259162b857e1e3f2a8dad1 44804 rust-cargo-lock_10.1.0.orig.tar.gz a72fe31bfb33b22d82aff356a82547ff 3436 rust-cargo-lock_10.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-lock]"
   ],
   "Version": [
-    "9.0.0-1"
+    "10.1.0-1"
   ]
 }

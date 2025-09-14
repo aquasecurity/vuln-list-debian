@@ -6,16 +6,19 @@
     "librust-platforms-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6424d379a8921191793a869e6a0d3222aef7b372daa4a3331d4bd509b05448b6 2165 rust-platforms_3.1.2-1.dsc 4503fa043bf02cee09a9582e9554b4c6403b2ef55e4612e96561d294419429f8 28402 rust-platforms_3.1.2.orig.tar.gz 287cfc5fdfa9a8a48762fee32ca9b53358af85a8ea78809395e4596e070eb84c 2804 rust-platforms_3.1.2-1.debian.tar.xz"
+    "8e17ced2b59ac7071ec487e3a5a0d5ac4b247a9cc8695b25987565b99c6891e5 1593 rust-platforms_3.6.0-1.dsc 0b02ffed1bc8c2234bb6f8e760e34613776c5102a041f25330b869a78153a68c 32579 rust-platforms_3.6.0.orig.tar.gz 6f4618913323f9d60130f50c6965438071abac1cbfbb9ece76ff204ca0f20ac4 2828 rust-platforms_3.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-platforms"
   ],
   "Files": [
-    "2133fa4ef52ba8048db7d269c5d8d7dd 2165 rust-platforms_3.1.2-1.dsc 814447cdaa0ec78b2c2c672b1c398b01 28402 rust-platforms_3.1.2.orig.tar.gz 730303ef428a2c59e5852136bfa0c0ae 2804 rust-platforms_3.1.2-1.debian.tar.xz"
+    "e677cf93b8a077e907de1106379cebed 1593 rust-platforms_3.6.0-1.dsc 799eb98d526fe6f97c31c0cac64a1a18 32579 rust-platforms_3.6.0.orig.tar.gz 41eed050e976c769f9ec42733f6d1014 2828 rust-platforms_3.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/platforms]"
   ],
   "Version": [
-    "3.1.2-1"
+    "3.6.0-1"
   ]
 }
