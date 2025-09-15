@@ -6,19 +6,25 @@
     "librust-lock-api-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-scopeguard-1-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-scopeguard-1-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cddbc9c47ad2627aa822cdae3abe6368187f0dc4783fe81df4f522651c662a12 2319 rust-lock-api_0.4.12-1.dsc 07af8b9cdd281b7915f413fa73f29ebd5d55d0d3f0155584dade1ff18cea1b17 27591 rust-lock-api_0.4.12.orig.tar.gz 01e02c286be597df505b6d70d22cbab4503e7f1f22e7eb2dd9ac5a167a950a5f 3348 rust-lock-api_0.4.12-1.debian.tar.xz"
+    "534a828987230b6bc324b1501d8989877f288b78df2a774d751a0df947877371 1767 rust-lock-api_0.4.13-1.dsc 96936507f153605bddfcda068dd804796c84324ed2510809e5b2a624c81da765 28565 rust-lock-api_0.4.13.orig.tar.gz e1597764e09cf0e7663d71cb85911b99fcbc12ae149dab2291c15609a9000443 3396 rust-lock-api_0.4.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lock-api"
   ],
   "Files": [
-    "1133a03dd2bd93d1d1cb06d66488d827 2319 rust-lock-api_0.4.12-1.dsc eb44c81f81e4aecdbdbafeac9c0fdcab 27591 rust-lock-api_0.4.12.orig.tar.gz b84e37834c3634ec98aa2e8879479549 3348 rust-lock-api_0.4.12-1.debian.tar.xz"
+    "d4b6ebe396fe9d3378ad8627b003bc1d 1767 rust-lock-api_0.4.13-1.dsc 19a9faad553e60738ec21b0d36de26a1 28565 rust-lock-api_0.4.13.orig.tar.gz 27d081aca812eefc1fcee1e39ebd7fbd 3396 rust-lock-api_0.4.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Amanieu/parking_lot"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lock-api]"
   ],
   "Version": [
-    "0.4.12-1"
+    "0.4.13-1"
   ]
 }

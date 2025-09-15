@@ -6,16 +6,19 @@
     "librust-dolby-vision-dev, libdovi3, libdovi-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native, rustc:native (\u003e= 1.62.1), libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.81-~~), librust-bitvec-1+default-dev (\u003e= 1.0.1-~~), librust-bitvec-helpers-3+bitstream-io-dev (\u003e= 3.1.3-~~), librust-crc-3+default-dev (\u003e= 3.0.1-~~), cargo-c:native (\u003e= 0.9.29), librust-roxmltree-0.20+default-dev, librust-bitstream-io-dev, librust-criterion-0.5+default-dev (\u003e= 0.5.1)"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo-c:native (\u003e= 0.9.29), librust-roxmltree-0.20+default-dev, librust-bitstream-io-dev, librust-criterion-0.5+default-dev (\u003e= 0.5.1)"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.98-~~) \u003c!nocheck\u003e, librust-bitvec-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-bitvec-helpers-4+bitstream-io-dev \u003c!nocheck\u003e, librust-crc-3+default-dev (\u003e= 3.3.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+rustc-1-55-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e4c423bd53d4eee3dca11db9403606a1d286a014f149abd18942abae2a0b4d6d 2087 rust-dolby-vision_3.3.1-2.dsc 3074f03f3790777f1fcb29cd0ba1edc23fecbcb99121af5b3bacadd7f90147e0 58313 rust-dolby-vision_3.3.1.orig.tar.gz 93e33eebc58db046b291beda90909027eb701555aadeef79cf85c6e7b5097c6c 4180 rust-dolby-vision_3.3.1-2.debian.tar.xz"
+    "f7732d48322014af8c686718c46be6c51397e1adf0e789d5ee7a1b61a13e5552 2287 rust-dolby-vision_3.3.2-1.dsc 533d9f32336f4d03822e87fcee32277fd4a52e3f1278549bf42c8b28e3b0f798 65297 rust-dolby-vision_3.3.2.orig.tar.gz b54af03ceb3febdc45c7f1bea414f853475f1ea9dc5e1f896cc6b28fcfe30bf2 13432 rust-dolby-vision_3.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dolby-vision"
   ],
   "Files": [
-    "f11d6163de98409f0c5d03a3c7e4a616 2087 rust-dolby-vision_3.3.1-2.dsc 4e8e4430225529749f17919a7b1ef6e9 58313 rust-dolby-vision_3.3.1.orig.tar.gz ad1ee9ca97f7c397cc902c9ae0a9fdc0 4180 rust-dolby-vision_3.3.1-2.debian.tar.xz"
+    "5fbe44873ad001289f759a62f84c5986 2287 rust-dolby-vision_3.3.2-1.dsc 70defb31be50cbf7b79b806bf724fc72 65297 rust-dolby-vision_3.3.2.orig.tar.gz 40f4d74d239270805e1620ab3ead3e07 13432 rust-dolby-vision_3.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dolby-vision]"
   ],
   "Version": [
-    "3.3.1-2"
+    "3.3.2-1"
   ]
 }
