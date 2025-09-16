@@ -6,19 +6,25 @@
     "librust-roaring-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.7.3-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3-~~) \u003c!nocheck\u003e, librust-retain-mut-0.1.7+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.21.0-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0c4339c52e69848098739a81aabb30d6001bef693f60706a03acf9c8d38fd6fc 2381 rust-roaring_0.10.2-1.dsc 6106b5cf8587f5834158895e9715a3c6c9716c8aefab57f1f7680917191c7873 91257 rust-roaring_0.10.2.orig.tar.gz ce17c17ad348a65e6c2a676d6a0da4dcc194c31347d1762a23a294e2db17c70c 2920 rust-roaring_0.10.2-1.debian.tar.xz"
+    "19c2fd2b1fabd529812a16fad9d523dbb4574b9c83574d5e4da7b2b11b8f5e17 2445 rust-roaring_0.10.12-2.dsc 19e8d2cfa184d94d0726d650a9f4a1be7f9b76ac9fdb954219878dc00c1c1e7b 105938 rust-roaring_0.10.12.orig.tar.gz e6292bc1e28b8fb0a60f149134e7ee57de4bef2b39c3483b397ae0a36e910c5a 3200 rust-roaring_0.10.12-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-roaring"
   ],
   "Files": [
-    "9bf21bc2e77505183a98b607b5b5958e 2381 rust-roaring_0.10.2-1.dsc 8cdea87f171a5770ca676a04153ce500 91257 rust-roaring_0.10.2.orig.tar.gz 108cf4644f8d949e44ebd511734eac67 2920 rust-roaring_0.10.2-1.debian.tar.xz"
+    "745eca09a9953584186f970c9cdd496e 2445 rust-roaring_0.10.12-2.dsc 4ba5b15d1ade494b0ddce6852a016ac4 105938 rust-roaring_0.10.12.orig.tar.gz 9f65a8541511366f9dadfa282549030e 3200 rust-roaring_0.10.12-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RoaringBitmap/roaring-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-proptest-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-postcard-1+alloc-dev, librust-postcard-1+default-dev, librust-proptest-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/roaring"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/roaring]"
   ],
   "Version": [
-    "0.10.2-1"
+    "0.10.12-2"
   ]
 }
