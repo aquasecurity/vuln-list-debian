@@ -6,16 +6,19 @@
     "librust-niffler-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bgzip-0.3+rust-backend-dev \u003c!nocheck\u003e, librust-bzip2-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev \u003c!nocheck\u003e, librust-liblzma-0.3+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-zstd-0.13+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bgzip-0.3+rust-backend-dev \u003c!nocheck\u003e, librust-bzip2-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev \u003c!nocheck\u003e, librust-liblzma-0.4+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-zstd-0.13+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3e7c87bb699edfb539c5b174c63bcbcad3b2b2f15ccf58b8d187e664685060fe 2545 rust-niffler_2.6.0-1.dsc bd625dd485c2d20bdb98d7ec364f798b256ac09997ef18b4274be2168f53a647 20100 rust-niffler_2.6.0.orig.tar.gz d7c9e3dcf27a3748d1346c811511de30da5d522ff8235e1b92d0b7c753781cd8 3604 rust-niffler_2.6.0-1.debian.tar.xz"
+    "191f9222ef365d23be01d31b185439ce2bbb66c2dd0ac8e000674baa7d87eecb 2543 rust-niffler_2.6.0-2.dsc bd625dd485c2d20bdb98d7ec364f798b256ac09997ef18b4274be2168f53a647 20100 rust-niffler_2.6.0.orig.tar.gz fa0f74ed8ec15137475be3f635f90d9ad175369fc4776a6dd71d00ae45a549ab 5644 rust-niffler_2.6.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-niffler"
   ],
   "Files": [
-    "17aae19ea5ef4b1606986b1a9e162cb9 2545 rust-niffler_2.6.0-1.dsc 6f392b4a6fc94538f7386a2483d00b16 20100 rust-niffler_2.6.0.orig.tar.gz c8139541cc84557e6c8538e5dc8ca200 3604 rust-niffler_2.6.0-1.debian.tar.xz"
+    "e21a6f09d9c730c7e816b62a69ca164b 2543 rust-niffler_2.6.0-2.dsc 6f392b4a6fc94538f7386a2483d00b16 20100 rust-niffler_2.6.0.orig.tar.gz b2045c1cb5d3bd6646bd8cf519198814 5644 rust-niffler_2.6.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/niffler]"
   ],
   "Version": [
-    "2.6.0-1"
+    "2.6.0-2"
   ]
 }

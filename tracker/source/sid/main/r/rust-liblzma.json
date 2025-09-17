@@ -6,16 +6,19 @@
     "librust-liblzma-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-liblzma-sys-0.3+bindgen-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e, librust-liblzma-sys-0.3-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-liblzma-sys-0.4+bindgen-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-liblzma-sys-0.4-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f01b5776a3977fe96bd1889f05d0ab78589289bebf1a573002ba5dac7b5423ec 2351 rust-liblzma_0.3.4-1.dsc a7c45fc6fcf5b527d3cf89c1dee8c327943984b0dc8bfcf6e100473b00969e63 28392 rust-liblzma_0.3.4.orig.tar.gz aec71ee6e4ae37f34a0995a11ee0c4e6be71b0c88f5a4a78883939d4ab2834fe 4180 rust-liblzma_0.3.4-1.debian.tar.xz"
+    "dc1442d1cc2c5479d15f2dd794c6c3aee8c71bd60711988c1c6f4a90b53fd67e 2394 rust-liblzma_0.4.4-1.dsc 10bf66f4598dc77ff96677c8e763655494f00ff9c1cf79e2eb5bb07bc31f807d 36150 rust-liblzma_0.4.4.orig.tar.gz 332a82116ec75c964c9e117c552d74dac25dd91d4db02dd8ba9e9aa78f604a09 4132 rust-liblzma_0.4.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-liblzma"
   ],
   "Files": [
-    "9cfb7b425bbc642631d06c59a3359997 2351 rust-liblzma_0.3.4-1.dsc 16c6f100abd0c9fbacfa6be7a8ba77d7 28392 rust-liblzma_0.3.4.orig.tar.gz 67897f8e65daf1c32913b35451af52cc 4180 rust-liblzma_0.3.4-1.debian.tar.xz"
+    "cfcff64a0377e7c29464d6881c54897a 2394 rust-liblzma_0.4.4-1.dsc befb469372d2e087f79f7d3bf7c000eb 36150 rust-liblzma_0.4.4.orig.tar.gz e60b8f72e123a1e847821cf725705e74 4132 rust-liblzma_0.4.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/liblzma]"
   ],
   "Version": [
-    "0.3.4-1"
+    "0.4.4-1"
   ]
 }
