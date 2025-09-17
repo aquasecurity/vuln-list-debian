@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libproxy1v5, libproxy1-plugin-gsettings, libproxy1-plugin-kconfig, libproxy1-plugin-networkmanager, libproxy1-plugin-webkit, libproxy-dev, libproxy-tools"
+    "libproxy1v5, gir1.2-libproxy-1.0, libproxy1-plugin-gsettings, libproxy1-plugin-kconfig, libproxy1-plugin-networkmanager, libproxy1-plugin-webkit, libproxy-dev, libproxy-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gnome, duktape-dev, gsettings-desktop-schemas-dev, meson, netbase \u003c!nocheck\u003e, valac, zlib1g-dev, libnm-dev [linux-any], libcurl4-gnutls-dev, libdbus-1-dev, libkf5config-bin \u003c!nocheck !stage1\u003e, libwebkit2gtk-4.1-dev \u003c!nocheck !stage1\u003e, libjavascriptcoregtk-4.1-dev \u003c!stage1\u003e, libglib2.0-dev (\u003e= 2.26) \u003c!stage1\u003e, libxmu-dev \u003c!nocheck !stage1\u003e"
+    "debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, duktape-dev, gir1.2-gio-2.0-dev, gsettings-desktop-schemas-dev, libcurl4-gnutls-dev, libdbus-1-dev, libglib2.0-dev (\u003e= 2.26) \u003c!stage1\u003e, libjavascriptcoregtk-4.1-dev \u003c!stage1\u003e, libkf5config-bin \u003c!nocheck !stage1\u003e, libnm-dev [linux-any], libwebkit2gtk-4.1-dev \u003c!nocheck !stage1\u003e, libxmu-dev \u003c!nocheck !stage1\u003e, meson, netbase \u003c!nocheck\u003e, valac, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "ca3c6e1c3e025bb640b35da584372a86a74afdeb4c32b6c5e326add2b447f28d 2918 libproxy_0.5.10-1.dsc 84734a0b89c95f4834fd55c26b362be2fb846445383e37f5209691694ad2b5de 60453 libproxy_0.5.10.orig.tar.gz 7a1ee013f0b9858eab54f3d82b9861e3daa742d6ac193f36736dcc2a60db594f 15136 libproxy_0.5.10-1.debian.tar.xz"
+    "11169317053844287961dd72ad707738aab29726f945adba7b65c16d4cc321e5 3030 libproxy_0.5.11-2.dsc 9238ed0766e388142cf5b4228baa3b26704e2f9f48cbc10721b8881394766efd 60512 libproxy_0.5.11.orig.tar.gz a799344ce0c28c169a292dacf3f29c0e00349e6d018481763780354f0b983360 15324 libproxy_0.5.11-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libp/libproxy"
   ],
   "Files": [
-    "b66153d775cab1561bf0e54bb3c7402a 2918 libproxy_0.5.10-1.dsc efb82820b5b914ebff92c0c7b06cb1e0 60453 libproxy_0.5.10.orig.tar.gz 4503c000aecfd20969075f8f2296b592 15136 libproxy_0.5.10-1.debian.tar.xz"
+    "8ff73b5ba915ec1c2c2a3607858721af 3030 libproxy_0.5.11-2.dsc 123de429484cd1241cb73219c6ac7068 60512 libproxy_0.5.11.orig.tar.gz 0486d1b28aa1d09dd441815076063af0 15324 libproxy_0.5.11-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libproxy"
   ],
   "Package-List": [
-    "libproxy-dev deb libdevel optional arch=any libproxy-tools deb utils optional arch=any libproxy1-plugin-gsettings deb oldlibs optional arch=any libproxy1-plugin-kconfig deb oldlibs optional arch=any libproxy1-plugin-networkmanager deb oldlibs optional arch=linux-any libproxy1-plugin-webkit deb oldlibs optional arch=any libproxy1v5 deb libs optional arch=any"
+    "gir1.2-libproxy-1.0 deb introspection optional arch=any libproxy-dev deb libdevel optional arch=any libproxy-tools deb utils optional arch=any libproxy1-plugin-gsettings deb oldlibs optional arch=any libproxy1-plugin-kconfig deb oldlibs optional arch=any libproxy1-plugin-networkmanager deb oldlibs optional arch=linux-any libproxy1-plugin-webkit deb oldlibs optional arch=any libproxy1v5 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, gsettings-desktop-schemas, pkg-config"
+    "build-essential, gsettings-desktop-schemas, pkgconf"
   ],
   "Uploaders": [
     "Iain Lane \u003claney@debian.org\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/gnome-team/libproxy.git"
   ],
   "Version": [
-    "0.5.10-1"
+    "0.5.11-2"
   ]
 }

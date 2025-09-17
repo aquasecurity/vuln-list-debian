@@ -6,22 +6,25 @@
     "librust-half-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-crunchy-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-crunchy-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ac6d66c5a7b9fade899dd8ca265d284d9cb0ff80b094ad1e59fd770890150ce8 1777 rust-half_2.4.1-2.dsc 6dd08c532ae367adf81c312a4580bc67f1d0fe8bc9c460520283f4c0ff277888 50892 rust-half_2.4.1.orig.tar.gz 39c27b5669c8824e81558f8421688324fbc50ae0a8e180c1ef08e53b01d0abb1 4132 rust-half_2.4.1-2.debian.tar.xz"
+    "2c3f6f28a36ea9b0200f535ae17636244c4d79474c158f37f475ffe7d654f929 1833 rust-half_2.6.0-2.dsc 459196ed295495a68f7d7fe1d84f6c4b7ff0e21fe3017b2f283c6fac3ad803c9 59507 rust-half_2.6.0.orig.tar.gz c44b7fe4c0e2c5a7658db50dc1636592bc67bac16404acb8c2e8de7e03dab28f 5036 rust-half_2.6.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-half"
   ],
   "Files": [
-    "ac63103588239ed9a7287e9814c9df91 1777 rust-half_2.4.1-2.dsc 704678dbf71dfc4800fa39d9e8a42ce0 50892 rust-half_2.4.1.orig.tar.gz ed7f8f72985dc62316ab3408e1d1c1cf 4132 rust-half_2.4.1-2.debian.tar.xz"
+    "cedb71f7aafd8399aaf4cc821cca9e5e 1833 rust-half_2.6.0-2.dsc cf809921b6499718685f0a737ad13ce7 59507 rust-half_2.6.0.orig.tar.gz e5b57ed5b4b7329c2d40ca7d84330971 5036 rust-half_2.6.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/starkat99/half-rs"
+    "https://github.com/VoidStarKat/half-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-crunchy-0.2+default-dev, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, librust-rand-0.8+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-crunchy-0.2+default-dev, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/half]"
   ],
   "Version": [
-    "2.4.1-2"
+    "2.6.0-2"
   ]
 }
