@@ -6,16 +6,19 @@
     "librust-botan-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libbotan-2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, libbotan-3-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "25f18312aa99c0115f956fb6e3a33f08a643a2ebcbfd498b94ff573920ca193f 1600 rust-botan-sys_0.10.5-1.dsc 9f49dde1b8ebd2996cc41c55c39f6ef8b54e38148d8973aeba0792b87b1621ca 8245 rust-botan-sys_0.10.5.orig.tar.gz 01ea915b9707b755654046eb34d4dfee346a83f020b37b968ef33dd03b7a8e94 2964 rust-botan-sys_0.10.5-1.debian.tar.xz"
+    "624847e4e8dcfeac25e4e4f5302dc80a03ab26ef39e2b95ba29356d4e18d181b 2359 rust-botan-sys_1.20250506.0-2.dsc 9a68b2bca80766adc60e9d88e99d958bba278a99ed616bf92b9d266c89dd2a9e 11813 rust-botan-sys_1.20250506.0.orig.tar.gz 5558857d1d7c6f719eef2ddb4b62496462e6c53799ac5e9d0093b2956a7bfeb4 3188 rust-botan-sys_1.20250506.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-botan-sys"
   ],
   "Files": [
-    "be03cf84fec9fdfc9d46c1f8c1c5bd09 1600 rust-botan-sys_0.10.5-1.dsc fb4859a103809781d443a43ef57b54ad 8245 rust-botan-sys_0.10.5.orig.tar.gz 86d3a5cf6f88203354a7867cde4753c5 2964 rust-botan-sys_0.10.5-1.debian.tar.xz"
+    "3eecc7d9e17fa28074ad48e0f3254e5a 2359 rust-botan-sys_1.20250506.0-2.dsc b0e06bb7e717c37d413bf547937f1526 11813 rust-botan-sys_1.20250506.0.orig.tar.gz 31452250b7231203767f8508949f9697 3188 rust-botan-sys_1.20250506.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/botan-sys]"
   ],
   "Version": [
-    "0.10.5-1"
+    "1.20250506.0-2"
   ]
 }

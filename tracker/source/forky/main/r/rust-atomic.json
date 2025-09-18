@@ -6,19 +6,25 @@
     "librust-atomic-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.13.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytemuck-1+default-dev (\u003e= 1.13.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "32900947e66b499097ff33437625b45ff7fa4bc32fe7a3a2272a0adc5099cb0d 2358 rust-atomic_0.6.0-1.dsc 8d818003e740b63afc82337e3160717f4f63078720a810b7b903e70a5d1d2994 12919 rust-atomic_0.6.0.orig.tar.gz 74edd741bc5261f7cdb365c3f7fdefc33b48b2b35a6fc7f6053ac87bfd72fe7f 3676 rust-atomic_0.6.0-1.debian.tar.xz"
+    "1a52b80c6ad17e2142e296221c0e6e90a8c1ced24b935e5ed2b23c4e9b28fb6f 2399 rust-atomic_0.6.1-1.dsc a89cbf775b137e9b968e67227ef7f775587cde3fd31b0d8599dbd0f598a48340 15243 rust-atomic_0.6.1.orig.tar.gz e81653c228d0e3cd66a6dc70a7ab2e40b1efca5a52e06199dc81b87a43a20c22 3756 rust-atomic_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-atomic"
   ],
   "Files": [
-    "4cdd8440c141c915f1c904bf635d2014 2358 rust-atomic_0.6.0-1.dsc d5429345859ca55574fc016fa83c2fe7 12919 rust-atomic_0.6.0.orig.tar.gz 03a7dd87bb8cb82e67d4642a571a961e 3676 rust-atomic_0.6.0-1.debian.tar.xz"
+    "b4260746c9b2ac66aaa44f22d7997fd3 2399 rust-atomic_0.6.1-1.dsc f5c005d29a67dae8d9266225ecd40a74 15243 rust-atomic_0.6.1.orig.tar.gz 15bca6d9abb47aeade4d322de8926eea 3756 rust-atomic_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Amanieu/atomic-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev"
+    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/atomic]"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.6.1-1"
   ]
 }

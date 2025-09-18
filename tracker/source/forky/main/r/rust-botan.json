@@ -6,16 +6,19 @@
     "librust-botan-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-botan-sys-0.10+default-dev (\u003e= 0.10.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-botan-sys-1+default-dev (\u003e= 1.20250506-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3c097e54e1fd07341e00c9a74703fa39c379192821d452d9f57434a5ba5396b6 1659 rust-botan_0.10.7-1.dsc 350081af1a3c6883f8a1f863ac553bfe6922589aad60008a70947765ed57c53e 40376 rust-botan_0.10.7.orig.tar.gz d1d29a990ba8ab294d8234c2f467cf2daaa2900c36368fd1d8c639fe8e2a30aa 2836 rust-botan_0.10.7-1.debian.tar.xz"
+    "b8c229f92d2ff274de503e83e473c0fb4b20e4a3e42be430104a5bc141905eaa 2566 rust-botan_0.12.0-1.dsc f23e39f9dbdfec8b4b6ba8509c8202a573b5d52fe213349c385d86656c89d7b5 47303 rust-botan_0.12.0.orig.tar.gz 4cfc2e3e9ca9098fa13398ae16bb8ccab1c009c5e5b07ab3124401142c21ef21 2980 rust-botan_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-botan"
   ],
   "Files": [
-    "7c4735779632d43d22c9fad0cfa46064 1659 rust-botan_0.10.7-1.dsc b02a40e76dba2b489b8da00a42a7dedb 40376 rust-botan_0.10.7.orig.tar.gz d30466a7fcf723bcbe345c37b3fdb740 2836 rust-botan_0.10.7-1.debian.tar.xz"
+    "723e7117de541059f7ed9ca9bb18f834 2566 rust-botan_0.12.0-1.dsc 8b566296f761ec60c274972d18df13e7 47303 rust-botan_0.12.0.orig.tar.gz 1ae66e3ec0a302869ac29fd773986431 2980 rust-botan_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-0.4+default-dev, librust-wycheproof-0.5+default-dev"
+    "dh-cargo, librust-hex-0.4+default-dev, librust-wycheproof-0.6+aead-dev, librust-wycheproof-0.6+cipher-dev, librust-wycheproof-0.6+dsa-dev, librust-wycheproof-0.6+ecdh-dev, librust-wycheproof-0.6+ecdsa-dev, librust-wycheproof-0.6+eddsa-dev, librust-wycheproof-0.6+hkdf-dev, librust-wycheproof-0.6+keywrap-dev, librust-wycheproof-0.6+mac-dev, librust-wycheproof-0.6+primality-dev, librust-wycheproof-0.6+rsa-enc-dev, librust-wycheproof-0.6+rsa-sig-dev, librust-wycheproof-0.6+xdh-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/botan]"
   ],
   "Version": [
-    "0.10.7-1"
+    "0.12.0-1"
   ]
 }
