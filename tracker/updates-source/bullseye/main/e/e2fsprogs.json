@@ -1,0 +1,56 @@
+{
+  "Architecture": [
+    "any all"
+  ],
+  "Binary": [
+    "fuse2fs, logsave, e2fsck-static, e2fsprogs-l10n, libcom-err2, comerr-dev, libss2, ss-dev, e2fsprogs-udeb, libext2fs2, libext2fs-dev, e2fsprogs"
+  ],
+  "Build-Depends": [
+    "gettext, texinfo, pkg-config, libfuse-dev [linux-any kfreebsd-any] \u003c!pkg.e2fsprogs.no-fuse2fs\u003e, debhelper (\u003e= 12.0), dh-exec, libblkid-dev, uuid-dev, m4, udev [linux-any], systemd [linux-any], cron [linux-any]"
+  ],
+  "Checksums-Sha256": [
+    "18f4d571c97a50bf4f5139e707320b49973e1bd2131b38442784bacc8e080fd4 3103 e2fsprogs_1.46.2-2+deb11u1.dsc f79f26b4f65bdc059fca12e1ec6a3040c3ce1a503fb70eb915bee71903815cd5 9496954 e2fsprogs_1.46.2.orig.tar.gz 948552550f23a9e0223cecb51b5b85258c9d94895a20bce1180fce770628a55f 488 e2fsprogs_1.46.2.orig.tar.gz.asc 48b50e91479754043fe442c0bdd4ba7cddc8e5b2ff0b93ca001b1a6b05067b80 93408 e2fsprogs_1.46.2-2+deb11u1.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/updates/main/e/e2fsprogs"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "http://e2fsprogs.sourceforge.net"
+  ],
+  "Maintainer": [
+    "Theodore Y. Ts'o \u003ctytso@mit.edu\u003e"
+  ],
+  "Package": [
+    "e2fsprogs"
+  ],
+  "Package-List": [
+    "comerr-dev deb libdevel optional arch=any e2fsck-static deb admin optional arch=any profile=!pkg.e2fsprogs.no-static e2fsprogs deb admin required arch=any e2fsprogs-l10n deb localization optional arch=all e2fsprogs-udeb udeb debian-installer optional arch=any profile=!noudeb fuse2fs deb admin optional arch=linux-any,kfreebsd-any profile=!pkg.e2fsprogs.no-fuse2fs libcom-err2 deb libs optional arch=any libext2fs-dev deb libdevel optional arch=any libext2fs2 deb libs optional arch=any libss2 deb libs optional arch=any logsave deb admin optional arch=any ss-dev deb libdevel optional arch=any"
+  ],
+  "Priority": [
+    "extra"
+  ],
+  "Section": [
+    "admin"
+  ],
+  "Standards-Version": [
+    "4.5.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "fuse3"
+  ],
+  "Vcs-Browser": [
+    "https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git"
+  ],
+  "Vcs-Git": [
+    "https://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git -b debian/master"
+  ],
+  "Version": [
+    "1.46.2-2+deb11u1"
+  ]
+}

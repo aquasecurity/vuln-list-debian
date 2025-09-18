@@ -1,0 +1,59 @@
+{
+  "Architecture": [
+    "linux-any"
+  ],
+  "Binary": [
+    "systemd, systemd-sysv, systemd-container, systemd-journal-remote, systemd-coredump, systemd-timesyncd, systemd-tests, libpam-systemd, libnss-myhostname, libnss-mymachines, libnss-resolve, libnss-systemd, libsystemd0, libsystemd-dev, udev, libudev1, libudev-dev, udev-udeb, libudev1-udeb"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), pkg-config, xsltproc, docbook-xsl, docbook-xml, m4, meson (\u003e= 0.52.1), gettext, gperf, gnu-efi [amd64 i386 arm64 armhf], libcap-dev (\u003e= 1:2.24-9~), libpam0g-dev, libapparmor-dev (\u003e= 2.13) \u003c!stage1\u003e, libidn2-dev \u003c!stage1\u003e, libiptc-dev \u003c!stage1\u003e, libaudit-dev \u003c!stage1\u003e, libdbus-1-dev (\u003e= 1.3.2) \u003c!nocheck\u003e \u003c!noinsttest\u003e, libcryptsetup-dev (\u003e= 2:1.6.0) \u003c!stage1\u003e, libselinux1-dev (\u003e= 2.1.9), libacl1-dev, liblzma-dev, liblz4-dev (\u003e= 0.0~r125), liblz4-tool \u003c!nocheck\u003e, libbz2-dev \u003c!stage1\u003e, zlib1g-dev \u003c!stage1\u003e | libz-dev \u003c!stage1\u003e, libcurl4-gnutls-dev \u003c!stage1\u003e | libcurl-dev \u003c!stage1\u003e, libmicrohttpd-dev \u003c!stage1\u003e, libgnutls28-dev \u003c!stage1\u003e, libpcre2-dev \u003c!stage1\u003e, libgcrypt20-dev, libkmod-dev (\u003e= 15), libblkid-dev (\u003e= 2.24), libmount-dev (\u003e= 2.30), libseccomp-dev (\u003e= 2.3.1) [amd64 arm64 armel armhf i386 mips mipsel mips64 mips64el x32 powerpc ppc64 ppc64el riscv64 s390x], libdw-dev (\u003e= 0.158) \u003c!stage1\u003e, libpolkit-gobject-1-dev \u003c!stage1\u003e, libzstd-dev (\u003e= 1.4.0), linux-base \u003c!nocheck\u003e, acl \u003c!nocheck\u003e, python3:native, python3-lxml:native, python3-pyparsing \u003c!nocheck\u003e, python3-evdev \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e, libcap2-bin \u003c!nocheck\u003e, iproute2 \u003c!nocheck\u003e, zstd \u003c!nocheck\u003e"
+  ],
+  "Checksums-Sha256": [
+    "2521703c26bedac0ce9bddf6aee2d500d01bf12c3a80d5d62950a30a3fdfa497 5236 systemd_247.3-7+deb11u7.dsc 2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0 9895385 systemd_247.3.orig.tar.gz a175340e4b1341c2f614227de0ffd154073d56cc3ddba2a92668f7f5386f1366 207972 systemd_247.3-7+deb11u7.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/updates/main/s/systemd"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://www.freedesktop.org/wiki/Software/systemd"
+  ],
+  "Maintainer": [
+    "Debian systemd Maintainers \u003cpkg-systemd-maintainers@lists.alioth.debian.org\u003e"
+  ],
+  "Package": [
+    "systemd"
+  ],
+  "Package-List": [
+    "libnss-myhostname deb admin optional arch=linux-any libnss-mymachines deb admin optional arch=linux-any libnss-resolve deb admin optional arch=linux-any libnss-systemd deb admin standard arch=linux-any libpam-systemd deb admin standard arch=linux-any libsystemd-dev deb libdevel optional arch=linux-any libsystemd0 deb libs optional arch=linux-any libudev-dev deb libdevel optional arch=linux-any libudev1 deb libs optional arch=linux-any libudev1-udeb udeb debian-installer optional arch=linux-any profile=!noudeb systemd deb admin important arch=linux-any systemd-container deb admin optional arch=linux-any profile=!stage1 systemd-coredump deb admin optional arch=linux-any profile=!stage1 systemd-journal-remote deb admin optional arch=linux-any profile=!stage1 systemd-sysv deb admin important arch=linux-any systemd-tests deb admin optional arch=linux-any profile=!noinsttest systemd-timesyncd deb admin standard arch=linux-any udev deb admin important arch=linux-any udev-udeb udeb debian-installer optional arch=linux-any profile=!noudeb"
+  ],
+  "Priority": [
+    "extra"
+  ],
+  "Section": [
+    "admin"
+  ],
+  "Standards-Version": [
+    "4.5.1"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "acl, apparmor, build-essential, busybox-static, cron, cryptsetup-bin, dbus-user-session, dmeventd, dnsmasq-base, e2fsprogs, evemu-tools, fdisk, gcc, gdm3, iproute2, iputils-ping, isc-dhcp-client, kbd, less, libc-dev, libc6-dev, libcap2-bin, liblz4-tool, locales, make, net-tools, netcat-openbsd, network-manager, perl, pkg-config, plymouth, policykit-1, python3, qemu-system-arm, qemu-system-ppc, qemu-system-s390x, qemu-system-x86, quota, rsyslog, seabios, socat, squashfs-tools, strace, tree, util-linux, xserver-xorg, xserver-xorg-video-dummy, xz-utils, zstd"
+  ],
+  "Uploaders": [
+    "Michael Biebl \u003cbiebl@debian.org\u003e, Marco d'Itri \u003cmd@linux.it\u003e, Sjoerd Simons \u003csjoerd@debian.org\u003e, Martin Pitt \u003cmpitt@debian.org\u003e, Felipe Sateler \u003cfsateler@debian.org\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/systemd-team/systemd"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/systemd-team/systemd.git"
+  ],
+  "Version": [
+    "247.3-7+deb11u7"
+  ]
+}
