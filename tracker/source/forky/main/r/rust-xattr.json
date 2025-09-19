@@ -6,19 +6,25 @@
     "librust-xattr-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.150-~~) \u003c!nocheck\u003e, librust-linux-raw-sys-0.4+std-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.29-~~) \u003c!nocheck\u003e, librust-rustix-0.38+std-dev (\u003e= 0.38.29-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.150-~~) \u003c!nocheck\u003e, librust-rustix+fs-dev (\u003c\u003c 2.0-~~) \u003c!nocheck\u003e, librust-rustix+fs-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e, librust-rustix+std-dev (\u003c\u003c 2.0-~~) \u003c!nocheck\u003e, librust-rustix+std-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5a9ad5bd345dd3950e2436e8a959d1027700298b3c7c76743437d05e57252194 2415 rust-xattr_1.3.1-1.dsc 8da84f1a25939b27f6820d92aed108f83ff920fdf11a7b19366c27c4cda81d4f 12580 rust-xattr_1.3.1.orig.tar.gz f983c86ae813da5e632cb5ed7941f129bbfa8f3e94846b8e31df708899f5d761 2804 rust-xattr_1.3.1-1.debian.tar.xz"
+    "d07c0c8c1b2af9e7a7eb978c98f91576121b72583b4e74284e5195bef53f0c4d 2456 rust-xattr_1.5.1-1.dsc af3a19837351dc82ba89f8a125e22a3c475f05aba604acc023d62b2739ae2909 14565 rust-xattr_1.5.1.orig.tar.gz 84b9c11d780378e731fbfdc63a2e44efe46b4f435c30c75bd5e865f49dd0ddf5 3112 rust-xattr_1.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-xattr"
   ],
   "Files": [
-    "bac4da5a7e11f840b1df317c66e647ec 2415 rust-xattr_1.3.1-1.dsc c0c9fb0065f11496c222ba3cd7212b08 12580 rust-xattr_1.3.1.orig.tar.gz ca54e4bd935b9ba6f87a24492a1b7c96 2804 rust-xattr_1.3.1-1.debian.tar.xz"
+    "b20e68645e3808c46d28201c32ee821a 2456 rust-xattr_1.5.1-1.dsc b8d5604ca54c20c22b7c1d251a6ff208 14565 rust-xattr_1.5.1.orig.tar.gz 78758b5289cba399b0da0bbda2fffec6 3112 rust-xattr_1.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Stebalien/xattr"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustix-0.38+net-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/xattr]"
   ],
   "Version": [
-    "1.3.1-1"
+    "1.5.1-1"
   ]
 }

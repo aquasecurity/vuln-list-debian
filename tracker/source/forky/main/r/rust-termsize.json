@@ -6,16 +6,19 @@
     "librust-termsize-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atty-0.2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-termion-1+default-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "391203d9f1f28fb83140ed18a9e71724515247180c6f40dc290dfbe978bab4bd 2344 rust-termsize_0.1.6-3.dsc 5e86d824a8e90f342ad3ef4bd51ef7119a9b681b0cc9f8ee7b2852f02ccd2517 5616 rust-termsize_0.1.6.orig.tar.gz 8a4b8fd74ef0548e49d28ce4e0ccb1d2d309bfaecbaf3969674184b71a7f5d8f 3064 rust-termsize_0.1.6-3.debian.tar.xz"
+    "ea1b8e84393ec4641492a9bfef8ac6417986e464277ea9c2264df9b60c4d418c 2285 rust-termsize_0.1.9-1.dsc 6f11ff5c25c172608d5b85e2fb43ee9a6d683a7f4ab7f96ae07b3d8b590368fd 6216 rust-termsize_0.1.9.orig.tar.gz b4c2a4fc1d274474170f4dddbbe3dffedf5749eeeead88d0a7c436ebaffc1034 3044 rust-termsize_0.1.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-termsize"
   ],
   "Files": [
-    "e44675914030a9fbbd1d37a0a4fdc4c4 2344 rust-termsize_0.1.6-3.dsc 2f1314161ed4b5b129d988561d1f4265 5616 rust-termsize_0.1.6.orig.tar.gz e5781e1e1833e2ee110e21e6e160bcc5 3064 rust-termsize_0.1.6-3.debian.tar.xz"
+    "aac988ae1192e32de1ebd996f4a7c2df 2285 rust-termsize_0.1.9-1.dsc 3588cb8a6543962a8e520c05d0af6264 6216 rust-termsize_0.1.9.orig.tar.gz 96e7af2ac7783fde19caa38b74d222b0 3044 rust-termsize_0.1.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/termsize]"
   ],
   "Version": [
-    "0.1.6-3"
+    "0.1.9-1"
   ]
 }
