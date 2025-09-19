@@ -6,16 +6,19 @@
     "librust-rustdoc-stripper-dev, rustdoc-stripper"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native, rustc:native, libstd-rust-dev, help2man, librust-tempfile-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, help2man, librust-tempfile-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev"
   ],
   "Checksums-Sha256": [
-    "79f9298f610b33cff66a56dc30c90db3299a1083b8e7c858836038114e912678 2409 rust-rustdoc-stripper_0.1.12-1.dsc 0811c9f9aab37ff260cf12291b0aad21b7b57cb2615cab2ea849aeac7da91793 24725 rust-rustdoc-stripper_0.1.12.orig.tar.gz 26389f3257ad830dc7a1285796cac36e122956b8e952d37760246a51f8c8bcf3 2684 rust-rustdoc-stripper_0.1.12-1.debian.tar.xz"
+    "b496797338fff9f182c7a7d03701d6d6cc34b4de7f612f9fee24a52a70c21457 2409 rust-rustdoc-stripper_0.1.19-1.dsc 7ab2432ada69d3b404987a137436b0e475c6776f7a0c86ee00b356c0348ef40d 28908 rust-rustdoc-stripper_0.1.19.orig.tar.gz 1463ebc11835c0315da4e87559a848e9b27c82abb41815907da5895bcbf1a8f0 2736 rust-rustdoc-stripper_0.1.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustdoc-stripper"
   ],
   "Files": [
-    "f6d8c2901a3339d137709da8e942f87b 2409 rust-rustdoc-stripper_0.1.12-1.dsc ff250d16adb9dbf2b6007617ef38917f 24725 rust-rustdoc-stripper_0.1.12.orig.tar.gz edddb8a76b15651eb7752d8e829b25ba 2684 rust-rustdoc-stripper_0.1.12-1.debian.tar.xz"
+    "867ec14e6dc99887878523c9ab2892c5 2409 rust-rustdoc-stripper_0.1.19-1.dsc dfd2e5072efd809970f5d0909d768e36 28908 rust-rustdoc-stripper_0.1.19.orig.tar.gz 98d42983cd5fe42e0a4719418bda7310 2736 rust-rustdoc-stripper_0.1.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustdoc-stripper]"
   ],
   "Version": [
-    "0.1.12-1"
+    "0.1.19-1"
   ]
 }
