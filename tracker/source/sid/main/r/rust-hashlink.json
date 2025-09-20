@@ -6,19 +6,25 @@
     "librust-hashlink-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hashbrown-0.14+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hashbrown-0.15+default-hasher-dev \u003c!nocheck\u003e, librust-hashbrown-0.15+inline-more-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e4141cc48d96967160e045c27f48143575e8dba3d5863d2aea0c311d3052d777 2267 rust-hashlink_0.8.4-1.dsc e8094feaf31ff591f651a2664fb9cfd92bba7a60ce3197265e9482ebe753c8f7 26514 rust-hashlink_0.8.4.orig.tar.gz 47c1e2ce911f9398f3496c531a6abfeb7188a79f609185a6c3e3ec41aa8aac99 2748 rust-hashlink_0.8.4-1.debian.tar.xz"
+    "874af73402bc675e5a45ef376aeb699e3cdb89f92f082ac109ab606629f21408 2419 rust-hashlink_0.10.0-1.dsc 7382cf6263419f2d8df38c55d7da83da5c18aef87fc7a7fc1fb1e344edfe14c1 29402 rust-hashlink_0.10.0.orig.tar.gz 484af6da900400ad773669a49c8f683e59b9f26b6df18a6ee8358d8a6f428db2 2816 rust-hashlink_0.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hashlink"
   ],
   "Files": [
-    "bb8613eed4fd0514a2f765898c3fd161 2267 rust-hashlink_0.8.4-1.dsc 650b9bf73e72b2a66246459f60386307 26514 rust-hashlink_0.8.4.orig.tar.gz 3917a0c87252240085bdc8fecdbb7529 2748 rust-hashlink_0.8.4-1.debian.tar.xz"
+    "880ecd3cd18e648122a1f89c2ef87a8d 2419 rust-hashlink_0.10.0-1.dsc 6fe6b181928a9a50d6bd9b56d9c01427 29402 rust-hashlink_0.10.0.orig.tar.gz 9e61a52e1203c0f83123bf4d3b31a2d0 2816 rust-hashlink_0.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kyren/hashlink"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustc-hash-1+default-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-rustc-hash-2+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hashlink]"
   ],
   "Version": [
-    "0.8.4-1"
+    "0.10.0-1"
   ]
 }
