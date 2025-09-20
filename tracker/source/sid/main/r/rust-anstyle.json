@@ -6,22 +6,25 @@
     "librust-anstyle-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "07f24d2f671b035dd858eb88a6b134d58bd70a924226ec29470748152190ce23 2232 rust-anstyle_1.0.8-1.dsc 1bec1de6f59aedf83baf9ff929c98f2ad654b97c9510f4e70cf6f661d49fd5b1 15771 rust-anstyle_1.0.8.orig.tar.gz fdc6c688f98483253db68d934c4403c30bbf76aca4e52048060aa03996a88aff 2708 rust-anstyle_1.0.8-1.debian.tar.xz"
+    "3d5d8fb8c815844fa2e16ca33500340587730d42502725e856acf4b7476ca54f 2247 rust-anstyle_1.0.11-1.dsc 862ed96ca487e809f1c8e5a8447f6ee2cf102f846893800b20cebdf541fc6bbd 15880 rust-anstyle_1.0.11.orig.tar.gz b84e33b8ea357f27c7f543b93e309cbe290e2554fdd34feda5a9e2eb15258771 2712 rust-anstyle_1.0.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-anstyle"
   ],
   "Files": [
-    "5f4b655e83bae709cfce4f386628232e 2232 rust-anstyle_1.0.8-1.dsc 3d57cfa9d3c706404483c80170e1f7f9 15771 rust-anstyle_1.0.8.orig.tar.gz 35a7581771ac106fa3dca124b0b848df 2708 rust-anstyle_1.0.8-1.debian.tar.xz"
+    "7e86d05ce4bfffe7da00259a169fb453 2247 rust-anstyle_1.0.11-1.dsc 0457b6551cd4d7f4e6d19b6bda5cbcc5 15880 rust-anstyle_1.0.11.orig.tar.gz b2359f3bc8d43c5ef2ea948bb2ab9577 2712 rust-anstyle_1.0.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/rust-cli/anstyle"
+    "https://github.com/rust-cli/anstyle.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lexopt-0.3+default-dev"
+    "dh-cargo, librust-lexopt-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/anstyle]"
   ],
   "Version": [
-    "1.0.8-1"
+    "1.0.11-1"
   ]
 }
