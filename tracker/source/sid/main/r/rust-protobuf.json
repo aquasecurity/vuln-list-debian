@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-protobuf-dev, librust-protobuf+bytes-dev, librust-protobuf+serde-dev, librust-protobuf+serde-derive-dev, librust-protobuf+with-serde-dev"
+    "librust-protobuf-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-protobuf-support-3.7+default-dev (\u003c\u003c 3.7.3-~~) \u003c!nocheck\u003e, librust-protobuf-support-3.7+default-dev (\u003e= 3.7.2-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fe2bfa58439e0c2e2e397c84cb28fd6b953ac0d58b41d51ea789ff9d4a355fcb 2533 rust-protobuf_2.27.1-1.dsc cf7e6d18738ecd0902d30d1ad232c9125985a3422929b16c65517b38adc14f96 167497 rust-protobuf_2.27.1.orig.tar.gz 1122afd24d3e3460c80af1e059d0ee3bb46092eb9b6408f80095a49fd64820e0 3340 rust-protobuf_2.27.1-1.debian.tar.xz"
+    "98fb2406c2e66b890aa4b347e67557fd66887b6624c743e3835a97231587cc10 1900 rust-protobuf_3.7.2-1.dsc d65a1d4ddae7d8b5de68153b48f6aa3bba8cb002b243dbdbc55a5afbc98f99f4 211978 rust-protobuf_3.7.2.orig.tar.gz 5d6293b95d5ea205bdc1629cdea0f7211157110269221b07267f49f261f265dc 3212 rust-protobuf_3.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-protobuf"
   ],
   "Files": [
-    "6e7a89bfc21a1fdcd681c7540654d38b 2533 rust-protobuf_2.27.1-1.dsc 256e8677308aa17acc8c82b54d8a4fae 167497 rust-protobuf_2.27.1.orig.tar.gz 418d808247d8e964437bda84cd9a7cb1 3340 rust-protobuf_2.27.1-1.debian.tar.xz"
+    "567ee0e929b9d0880c00c056db981888 1900 rust-protobuf_3.7.2-1.dsc 9373fd904711d6f7bed781c1fab2d1b4 211978 rust-protobuf_3.7.2.orig.tar.gz 990c00e243b6c157da42efd4a6b664bc 3212 rust-protobuf_3.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-protobuf"
   ],
   "Package-List": [
-    "librust-protobuf+bytes-dev deb rust optional arch=any librust-protobuf+serde-derive-dev deb rust optional arch=any librust-protobuf+serde-dev deb rust optional arch=any librust-protobuf+with-serde-dev deb rust optional arch=any librust-protobuf-dev deb rust optional arch=any"
+    "librust-protobuf-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Ximin Luo \u003cinfinity0@debian.org\u003e"
+    "Ximin Luo \u003cinfinity0@debian.org\u003e, Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/protobuf"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/protobuf]"
   ],
   "Version": [
-    "2.27.1-1"
+    "3.7.2-1"
   ]
 }
