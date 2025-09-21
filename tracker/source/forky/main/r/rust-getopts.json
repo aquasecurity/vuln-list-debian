@@ -6,16 +6,19 @@
     "librust-getopts-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cfd12e7fba5e90da5926e5975e77297c3a154b882c38129a82ae3f9635e542f2 2260 rust-getopts_0.2.21-4.dsc 14dbbfd5c71d70241ecf9e6f13737f7b5ce823821063188d7e46c41d371eebd5 18457 rust-getopts_0.2.21.orig.tar.gz 63a4f714d1e75f97c7cad65b715acf18bd73c79e826a3ddfcf1adef93fc25d76 3364 rust-getopts_0.2.21-4.debian.tar.xz"
+    "53be640bffe7492a522fe9b8bbf0356426ba5bf671bf48804abda35cc18e0363 2289 rust-getopts_0.2.24-1.dsc cfe4fbac503b8d1f88e6676011885f34b7174f46e59956bba534ba83abded4df 21467 rust-getopts_0.2.24.orig.tar.gz 9df4c2317d2a750b594fcb644369a0d5d4e336c235695a13af9aca0fb493b113 3104 rust-getopts_0.2.24-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-getopts"
   ],
   "Files": [
-    "9a5ea291ecfbe375428080f99cef67c9 2260 rust-getopts_0.2.21-4.dsc c3ec5977ecc0f6244ef3be87f5325e72 18457 rust-getopts_0.2.21.orig.tar.gz 039eb45c04d403c3c48b39077a4afe42 3364 rust-getopts_0.2.21-4.debian.tar.xz"
+    "8573bc2d8fbe4cca185761cd282b0041 2289 rust-getopts_0.2.24-1.dsc 7c22e3d83319b899f8e5364f33192cd9 21467 rust-getopts_0.2.24.orig.tar.gz 9e14468854320f5ad91446644edd4a0a 3104 rust-getopts_0.2.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-log-0.4+default-dev"
+    "dh-cargo, librust-log-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/getopts]"
   ],
   "Version": [
-    "0.2.21-4"
+    "0.2.24-1"
   ]
 }

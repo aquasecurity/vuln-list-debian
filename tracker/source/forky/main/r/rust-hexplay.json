@@ -6,19 +6,25 @@
     "librust-hexplay-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atty-0.2+default-dev \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.1.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atty-0.2+default-dev \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ff92a952a4345de0707f24dc895718cab2e2d729e4fdb3ab21de8bbf6cd03cf1 2217 rust-hexplay_0.2.1-1.dsc 0962bea6731e28b5a443ba4aa00fe3e4fe7555dadf12012435efb738eeac5898 10043 rust-hexplay_0.2.1.orig.tar.gz 1f69065bde80729f459b963bbd6bd2ed93f8df9a2c9ff4b4111765a469f6c823 2692 rust-hexplay_0.2.1-1.debian.tar.xz"
+    "0ddb748c762e1f6ac50cba54b6f24e42a921bd6359f3c6990eaea00524c35bd7 2292 rust-hexplay_0.3.0-1.dsc 2da1f4f846e8dcc1b5225caf702924816cabd855e4b46115c334ba09d5254a21 10869 rust-hexplay_0.3.0.orig.tar.gz ae3adac43a149a41a42899666446a147d52c124636fa723af9205e74c145db18 2612 rust-hexplay_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hexplay"
   ],
   "Files": [
-    "54eb8c60c00188de012448895085fa49 2217 rust-hexplay_0.2.1-1.dsc 0fffb63010fa561506b9ecb3e2d72eca 10043 rust-hexplay_0.2.1.orig.tar.gz c50e9a8d90cb0633b95f272333cfbe40 2692 rust-hexplay_0.2.1-1.debian.tar.xz"
+    "4b5d9f468f184643c87158d84a1a10c8 2292 rust-hexplay_0.3.0-1.dsc 4c542fc4b1424dfcaf53dc660d6da517 10869 rust-hexplay_0.3.0.orig.tar.gz ab33ecfc1a13a3b4f394a46922403c11 2612 rust-hexplay_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tmoers/hexplay"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hexplay]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.3.0-1"
   ]
 }
