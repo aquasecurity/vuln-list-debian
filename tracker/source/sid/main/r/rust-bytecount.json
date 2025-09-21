@@ -6,19 +6,25 @@
     "librust-bytecount-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "30c2efd0f8dfd8c804599d9198b58d1917f6477adc15aa4613a74ea22c975360 2214 rust-bytecount_0.6.7-1.dsc e1e5f035d16fc623ae5f74981db80a439803888314e3a555fd6f04acd51a3205 14642 rust-bytecount_0.6.7.orig.tar.gz 5ad9788a6e780a2685e830c69587575efc79863942f16ab950e7d8d81d1db098 3448 rust-bytecount_0.6.7-1.debian.tar.xz"
+    "b702a50fd4b9aa29b68282bb38dfcb5885e59c2b994d57b13815c63c0bb57537 1688 rust-bytecount_0.6.9-1.dsc 175812e0be2bccb6abe50bb8d566126198344f707e304f45c648fd8f2cc0365e 18695 rust-bytecount_0.6.9.orig.tar.gz a503cf473ce53b40ea1ead74ac8739aee5d7cca16f17b85284c3a2dbc7081567 3396 rust-bytecount_0.6.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bytecount"
   ],
   "Files": [
-    "9a560788fcfa0b1dc8a993f7fb653f21 2214 rust-bytecount_0.6.7-1.dsc d2ff6bc07572bd5842794cc70cc0733a 14642 rust-bytecount_0.6.7.orig.tar.gz 7cac079cab2587d8e4c24435058dc25a 3448 rust-bytecount_0.6.7-1.debian.tar.xz"
+    "2fee6c9d07962dd6ee89b21ef5a7ba62 1688 rust-bytecount_0.6.9-1.dsc ca6afc2448c15bdf935a887f9b69d6f5 18695 rust-bytecount_0.6.9.orig.tar.gz d3ae422759ee12bc5a47b1a424621656 3396 rust-bytecount_0.6.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/llogiq/bytecount"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.5-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytecount]"
   ],
   "Version": [
-    "0.6.7-1"
+    "0.6.9-1"
   ]
 }
