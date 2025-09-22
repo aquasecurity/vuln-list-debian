@@ -6,19 +6,25 @@
     "librust-annotate-snippets-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c80f01037b222face3762285371a979e13a6f26d35317e6232f0ca31c4ed86c7 2614 rust-annotate-snippets_0.11.4-1.dsc 24e35ed54e5ea7997c14ed4c70ba043478db1112e98263b3b035907aa197d991 46876 rust-annotate-snippets_0.11.4.orig.tar.gz 80fe3a7f7bfceb46d8f7504a19559242df7cefefaae809a38f27b79970f32f98 3236 rust-annotate-snippets_0.11.4-1.debian.tar.xz"
+    "6ef7bd6d577e00d00785e41ea7ef2f2663743004e4b1828bec8ceba5606cfff2 2646 rust-annotate-snippets_0.11.5-1.dsc 710e8eae58854cdc1790fcb56cca04d712a17be849eeb81da2a724bf4bae2bc4 34687 rust-annotate-snippets_0.11.5.orig.tar.gz 56daff05fef018869f04d4a09dcfdcc7d4054339529e2fe6df3c96fb17c744b2 3308 rust-annotate-snippets_0.11.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-annotate-snippets"
   ],
   "Files": [
-    "dac81a9c9cbaebd5d2bf79cb288f8f66 2614 rust-annotate-snippets_0.11.4-1.dsc f8c5610f871d7985ed467fd18ecb2b05 46876 rust-annotate-snippets_0.11.4.orig.tar.gz c102ca0b380821fa9afc7feebe477eb4 3236 rust-annotate-snippets_0.11.4-1.debian.tar.xz"
+    "bacaefd19415de28a4f730beb0adf6e3 2646 rust-annotate-snippets_0.11.5-1.dsc 1d248121c088ca7cf68c8aabc19396da 34687 rust-annotate-snippets_0.11.5.orig.tar.gz b59d36a3a219f341b49bae3d9e5fae85 3308 rust-annotate-snippets_0.11.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/annotate-snippets-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anstream-0.6+default-dev, librust-criterion-0.5+default-dev, librust-difference-2+default-dev, librust-glob-0.3+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml-0.5+default-dev, rustc"
+    "dh-cargo, librust-anstream-0.6+default-dev, librust-difference-2+default-dev, librust-glob-0.3+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/annotate-snippets]"
   ],
   "Version": [
-    "0.11.4-1"
+    "0.11.5-1"
   ]
 }
