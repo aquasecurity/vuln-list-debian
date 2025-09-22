@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "nvchecker"
+    "nvchecker, python3-nvchecker, python-nvchecker-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-platformdirs, python3-pycurl, python3-setuptools, python3-structlog, python3-tornado"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-platformdirs, python3-pycurl, python3-setuptools, python3-structlog, python3-tornado, python3-sphinx, python3-sphinx-rtd-theme"
   ],
   "Checksums-Sha256": [
-    "54af040de6f61ef0a00abda14a1021cccfebd166a1b8ce1355d4742e3f703a49 2162 nvchecker_2.17-1.dsc 93272b05dfc215cd9e10c367041ac7ac422b26d9be2cba0a460d4ac7ce5e47fe 69395 nvchecker_2.17.orig.tar.gz 3b53e2d525a6d46688facc3543f9749ec09a012fba27059021a75e4182fe6c1c 3144 nvchecker_2.17-1.debian.tar.xz"
+    "252a25340ce9af9778467eb4a3d9e540fd326b7a850dede8bfe28d38e88d034f 2356 nvchecker_2.19-1.dsc 71969374d70c2b0379a480233bd1ba714e10ebc4eac9e4583ea59b088bd052c7 71397 nvchecker_2.19.orig.tar.gz 8446b8eafa8210a2a99082f70765d9e6d2fd50a5f6e8f50b3209a6ff543a35f2 4268 nvchecker_2.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/nvchecker"
   ],
   "Files": [
-    "90872f31391fd0a98b284b84cfd84a92 2162 nvchecker_2.17-1.dsc 6dc0fd84415bfb5012e3a627403e310c 69395 nvchecker_2.17.orig.tar.gz 7c0b90a58d02f5db6ad93ed20e70f93c 3144 nvchecker_2.17-1.debian.tar.xz"
+    "cdc0c007b1fdf430e32ec603964350c1 2356 nvchecker_2.19-1.dsc 475b72f24d2f75c92090850786faf31b 71397 nvchecker_2.19.orig.tar.gz 16903c6be1c819fc9496ea1bb0c551d4 4268 nvchecker_2.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "nvchecker"
   ],
   "Package-List": [
-    "nvchecker deb utils optional arch=all"
+    "nvchecker deb utils optional arch=all python-nvchecker-doc deb doc optional arch=all python3-nvchecker deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "git, jq, python3-flaky, python3-pytest, python3-pytest-asyncio, python3-pytest-httpbin, python3-pytest-xdist"
+    "git, jq, python3-pytest, python3-pytest-asyncio, python3-pytest-httpbin, python3-pytest-rerunfailures, python3-pytest-xdist"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/nvchecker"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/nvchecker.git"
   ],
   "Version": [
-    "2.17-1"
+    "2.19-1"
   ]
 }
