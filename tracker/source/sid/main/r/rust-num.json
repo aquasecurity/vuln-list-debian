@@ -6,16 +6,19 @@
     "librust-num-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-bigint-0.4+std-dev \u003c!nocheck\u003e, librust-num-complex-0.4+std-dev \u003c!nocheck\u003e, librust-num-complex-0.4-dev \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.44-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.44-~~) \u003c!nocheck\u003e, librust-num-iter-0.1+i128-dev (\u003e= 0.1.42-~~) \u003c!nocheck\u003e, librust-num-iter-0.1+std-dev (\u003e= 0.1.42-~~) \u003c!nocheck\u003e, librust-num-rational-0.4+num-bigint-std-dev \u003c!nocheck\u003e, librust-num-rational-0.4+std-dev \u003c!nocheck\u003e, librust-num-rational-0.4-dev \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-bigint-0.4+std-dev (\u003e= 0.4.5-~~) \u003c!nocheck\u003e, librust-num-bigint-0.4-dev (\u003e= 0.4.5-~~) \u003c!nocheck\u003e, librust-num-complex-0.4+std-dev (\u003e= 0.4.6-~~) \u003c!nocheck\u003e, librust-num-complex-0.4-dev (\u003e= 0.4.6-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.46-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.46-~~) \u003c!nocheck\u003e, librust-num-iter-0.1+i128-dev (\u003e= 0.1.45-~~) \u003c!nocheck\u003e, librust-num-iter-0.1+std-dev (\u003e= 0.1.45-~~) \u003c!nocheck\u003e, librust-num-rational-0.4+num-bigint-std-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-num-rational-0.4+std-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-num-rational-0.4-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.19-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.19-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4bf463c3e944af87256f8135389ce6607a21319dbd85f2d5c737f5ba67f71c47 2720 rust-num_0.4.0-1.dsc 43db66d1170d347f9a065114077f7dccb00c1b9478c89384490a3425279a4606 9490 rust-num_0.4.0.orig.tar.gz 2e3105a528bfc237887c9d69562230ec0a545be07e282cc9c48ea2b1b76f11da 3088 rust-num_0.4.0-1.debian.tar.xz"
+    "6b6e7fbddd18f486ceee6122b98877e85088deea1ac765572d0b3b20171145f5 2295 rust-num_0.4.3-1.dsc 35bd024e8b2ff75562e5f34e7f4905839deb4b22955ef5e73d2fea1b9813cb23 9575 rust-num_0.4.3.orig.tar.gz d780c0814727618b1536adb3d95672df3abf71a4b9b72c7416e0858a6785e2fc 3176 rust-num_0.4.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num"
   ],
   "Files": [
-    "1b84a7b6c005fce761033897b9d99526 2720 rust-num_0.4.0-1.dsc 1081c01b2d9b17a33c3d0156193be592 9490 rust-num_0.4.0.orig.tar.gz 139aafce2af6b1b5ca943fcf486ec4cc 3088 rust-num_0.4.0-1.debian.tar.xz"
+    "5495c7f4c6a54066597c880ee4816949 2295 rust-num_0.4.3-1.dsc 8927630752c4318c97736c12ed667301 9575 rust-num_0.4.3.orig.tar.gz c4598513dd0ea50cf62a29319b3a836d 3176 rust-num_0.4.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.4.3-1"
   ]
 }
