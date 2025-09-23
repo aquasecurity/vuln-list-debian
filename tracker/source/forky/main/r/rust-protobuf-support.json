@@ -6,16 +6,19 @@
     "librust-protobuf-support-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "60ec49728b2491c4dad964c5c74c0f35efcbe16077c3c2214d224f5cc1828eb7 2331 rust-protobuf-support_3.1.0-1.dsc 8ca157fe12fc7ee2e315f2f735e27df41b3d97cdd70ea112824dac1ffb08ee1c 10762 rust-protobuf-support_3.1.0.orig.tar.gz 8070b70c33ed9cffa50a2d9bc9f9f871794ae830562561e01e6d1f54010b7a74 2504 rust-protobuf-support_3.1.0-1.debian.tar.xz"
+    "3b815a0e0077218b9a45bf6944a99945037a506e57b530c4488c7d9d4ca2d81b 1759 rust-protobuf-support_3.7.2-1.dsc 3e36c2f31e0a47f9280fb347ef5e461ffcd2c52dd520d8e216b52f93b0b0d7d6 11725 rust-protobuf-support_3.7.2.orig.tar.gz 88e9010533d2dc7f150aecd634c3c1f8f5e2c7970e36d6a2d6d235d1d0ee6836 2688 rust-protobuf-support_3.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-protobuf-support"
   ],
   "Files": [
-    "eb67a8b71485115b4b57d2cdbf326779 2331 rust-protobuf-support_3.1.0-1.dsc db27fe9cfb31f0ad34bde49cfc547dfc 10762 rust-protobuf-support_3.1.0.orig.tar.gz 344b56d41a235021baf5455ce5650bc6 2504 rust-protobuf-support_3.1.0-1.debian.tar.xz"
+    "3719cf48c59d131d78ebd7b1d667cc15 1759 rust-protobuf-support_3.7.2-1.dsc 77209e2fbd92372a342ce4be73f6c3de 11725 rust-protobuf-support_3.7.2.orig.tar.gz a2e7a12f4d188141ac7b8ec22b1029d9 2688 rust-protobuf-support_3.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/protobuf-support]"
   ],
   "Version": [
-    "3.1.0-1"
+    "3.7.2-1"
   ]
 }

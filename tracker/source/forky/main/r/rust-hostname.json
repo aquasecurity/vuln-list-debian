@@ -6,19 +6,25 @@
     "librust-hostname-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-match-cfg-0.1+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+sysinfoapi-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c5cba85dc330d76c509f0c9e9416aa44c9778c4833de1fb5006a6e829920b77d 2339 rust-hostname_0.3.1-2.dsc 3c731c3e10504cc8ed35cfe2f1db4c9274c3d35fa486e3b31df46f068ef3e867 9272 rust-hostname_0.3.1.orig.tar.gz 2aa1e29c9c0421a22360be5128bbe94bd27575498bb8775c921fab8d5a557cff 2952 rust-hostname_0.3.1-2.debian.tar.xz"
+    "53644c8dd9dd3500c4ccdce2ab51fc3a578b7815a82d091a08f808bfb58b67b4 2338 rust-hostname_0.4.1-2.dsc a56f203cd1c76362b69e3863fd987520ac36cf70a8c92627449b2f64a8cf7d65 13819 rust-hostname_0.4.1.orig.tar.gz 239d9451f958036f42ce9025a3fbfdb762e043b86f7c4088f5a93b8092e8b418 3096 rust-hostname_0.4.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hostname"
   ],
   "Files": [
-    "856580ee1f2fe9eaa59d0607a3ab5d10 2339 rust-hostname_0.3.1-2.dsc d15066ccf2d33bbd8afdb9036ba47da5 9272 rust-hostname_0.3.1.orig.tar.gz 366a83b00876ecd11234b64b0bdef32d 2952 rust-hostname_0.3.1-2.debian.tar.xz"
+    "e3325e17abccd7010b91139fc3026090 2338 rust-hostname_0.4.1-2.dsc c5154a34714a472e257156416a8eeebe 13819 rust-hostname_0.4.1.orig.tar.gz b4f6cc99bce111992c68c527b83f52d9 3096 rust-hostname_0.4.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/svartalf/hostname"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-version-sync-0.9+default-dev"
+    "dh-cargo, librust-version-sync-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hostname]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.4.1-2"
   ]
 }

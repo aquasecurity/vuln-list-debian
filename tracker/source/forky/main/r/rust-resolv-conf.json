@@ -6,16 +6,19 @@
     "librust-resolv-conf-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quick-error-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quick-error-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dc607faa5dfc14d9e90cdb7709a4ec39022ca6347f7cb7f8c60815fd49b3f336 2275 rust-resolv-conf_0.7.0-1.dsc 52e44394d2086d010551b14b53b1f24e31647570cd1deb0379e2c21b329aba00 17352 rust-resolv-conf_0.7.0.orig.tar.gz 2fa5c79ebe9777916d56b17c58a5c1419f6d2697645a1dc2e7dd70487bb0553c 3352 rust-resolv-conf_0.7.0-1.debian.tar.xz"
+    "716863cdb5d3a00c4597bcc720ddd8874638ffc0463112dfc89b3a73aa15b28f 2308 rust-resolv-conf_0.7.0-2.dsc 52e44394d2086d010551b14b53b1f24e31647570cd1deb0379e2c21b329aba00 17352 rust-resolv-conf_0.7.0.orig.tar.gz aeab55e98d1c498755dd7b54eb2154606ac60d2260218a85d597bdaf7ae8c5f9 3572 rust-resolv-conf_0.7.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-resolv-conf"
   ],
   "Files": [
-    "8f250b0551224a7f859af17162e36016 2275 rust-resolv-conf_0.7.0-1.dsc 89c25e01f6bc91d965f1684d049b6ded 17352 rust-resolv-conf_0.7.0.orig.tar.gz 4066c5762108306c44c35d4350cf0b6f 3352 rust-resolv-conf_0.7.0-1.debian.tar.xz"
+    "bc717ca68387655e26231da945c7a248 2308 rust-resolv-conf_0.7.0-2.dsc 89c25e01f6bc91d965f1684d049b6ded 17352 rust-resolv-conf_0.7.0.orig.tar.gz 6582cdec47619257bf5771a4117e6f43 3572 rust-resolv-conf_0.7.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/resolv-conf]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.7.0-2"
   ]
 }

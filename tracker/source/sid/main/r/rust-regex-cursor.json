@@ -6,19 +6,25 @@
     "librust-regex-cursor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.6-~~) \u003c!nocheck\u003e, librust-regex-automata+default-dev (\u003e= 0.4.0-~~) \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev (\u003e= 0.8.2-~~) \u003c!nocheck\u003e, librust-ropey-1-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.22-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.7-~~) \u003c!nocheck\u003e, librust-regex-automata-0.4+default-dev (\u003e= 0.4.7-~~) \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev (\u003e= 0.8.4-~~) \u003c!nocheck\u003e, librust-ropey-1-dev (\u003e= 1.6.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1c204c54e92ea288ac24248366a26c6911eee309122edad5883cb0973d7a8f28 2580 rust-regex-cursor_0.1.4-1.dsc ae4327b5fde3ae6fda0152128d3d59b95a5aad7be91c405869300091720f7169 151904 rust-regex-cursor_0.1.4.orig.tar.gz 505ec76b94f475fab718531276f01375ae4288d78a52e4528a69ed1927d66e2b 3428 rust-regex-cursor_0.1.4-1.debian.tar.xz"
+    "7658995c4d21e8c071339dd6db5de4355ea4509faa9a2aa3070f4241c1c92e55 2037 rust-regex-cursor_0.1.5-1.dsc 0497c781d2f982ae8284d2932aee6a877e58a4541daa5e8fadc18cc75c23a61d 156899 rust-regex-cursor_0.1.5.orig.tar.gz ef0d7cdf5cdab688c8af1ff6dfab53ce4ac0c4b61f498a1b3d3d9f556954cf7c 3728 rust-regex-cursor_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-regex-cursor"
   ],
   "Files": [
-    "9e7cb63aad81a6bedb653249465ab41c 2580 rust-regex-cursor_0.1.4-1.dsc dc7285a567bae17b8313a448614194b6 151904 rust-regex-cursor_0.1.4.orig.tar.gz cf6c18296932e12b5fa3b5a10d5898ab 3428 rust-regex-cursor_0.1.4-1.debian.tar.xz"
+    "a93c863bf299f0bb277bb88befb7e947 2037 rust-regex-cursor_0.1.5-1.dsc ca6073e9daafe9b6fe3b82e6fbe70748 156899 rust-regex-cursor_0.1.5.orig.tar.gz d5a8c2c86e6f5ee7f6bb4e478eb63c56 3728 rust-regex-cursor_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pascalkuthe/regex-cursor"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-proptest-1+default-dev, librust-regex-test-0.1+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-proptest-1+default-dev, librust-regex-test-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/regex-cursor]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.1.5-1"
   ]
 }
