@@ -1,24 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "all"
   ],
   "Binary": [
     "librust-fontdb-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo"
-  ],
-  "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fontconfig-parser-0.5-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-slotmap-1-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-tinyvec-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-ttf-parser-0.25+apple-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+glyph-names-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+no-std-float-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+opentype-layout-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+std-dev \u003c!nocheck\u003e, librust-ttf-parser-0.25+variable-fonts-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-rust, librust-env-logger-0.11-dev, librust-fontconfig-parser-0.5-dev, librust-log-0.4+default-dev, librust-memmap2-0.9+default-dev, librust-slotmap-1-dev, librust-tinyvec-1+alloc-dev, librust-tinyvec-1+default-dev, librust-ttf-parser-0.25+apple-layout-dev, librust-ttf-parser-0.25+glyph-names-dev, librust-ttf-parser-0.25+no-std-float-dev, librust-ttf-parser-0.25+opentype-layout-dev, librust-ttf-parser-0.25+std-dev, librust-ttf-parser-0.25+variable-fonts-dev"
   ],
   "Checksums-Sha256": [
-    "f9ff82c289b4ecbab4af28ce7f01bb1c1d0d52963d157accf45795d82372d674 2217 rust-fontdb_0.22.0-3.dsc a3a6f9af55fb97ad673fb7a69533eb2f967648a06fa21f8c9bb2cd6d33975716 108279 rust-fontdb_0.22.0.orig.tar.gz 5c08478b1c6f41c025d9d8ae4158315fed7269e2645ab1230d2ec7c8726f2174 3288 rust-fontdb_0.22.0-3.debian.tar.xz"
+    "544863d537436723aea332359ee5aa88a84e813bb378900227bf4a8a6159a3ba 2786 rust-fontdb_0.23.0-2.dsc b8d797326984e662f60992c29a2fd3e25ff23839c988a11bb9044e531b65429c 107507 rust-fontdb_0.23.0.orig.tar.gz 70319fd8426c8d986e5b6b6f22cc06d4a50fa9d76e0906940b60512b870293aa 4344 rust-fontdb_0.23.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fontdb"
   ],
   "Files": [
-    "12cd8e6ad7704770f85bb0d1a00d1ba3 2217 rust-fontdb_0.22.0-3.dsc 22e2859b850d6415f673c4e236615a7c 108279 rust-fontdb_0.22.0.orig.tar.gz a6bd3dd3af6641dea64445ff62fdbf20 3288 rust-fontdb_0.22.0-3.debian.tar.xz"
+    "66107f6f0d74679ad71cb532e53bf77a 2786 rust-fontdb_0.23.0-2.dsc fbdef0374c454705718f7053ee16a3a6 107507 rust-fontdb_0.23.0.orig.tar.gz b8b2fd5253bfaccde6c0c13e4c5fcfab 4344 rust-fontdb_0.23.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,13 +24,13 @@
     "https://github.com/RazrFalcon/fontdb"
   ],
   "Maintainer": [
-    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
+    "Jonas Smedegaard \u003cdr@jones.dk\u003e"
   ],
   "Package": [
     "rust-fontdb"
   ],
   "Package-List": [
-    "librust-fontdb-dev deb rust optional arch=any"
+    "librust-fontdb-dev deb rust optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,24 +39,21 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.11-dev, rustc"
-  ],
-  "Uploaders": [
-    "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
+    "dh-rust, librust-env-logger-0.11-dev, librust-fontdb-0.23+default-dev, librust-fontdb-0.23+fontconfig-dev, librust-fontdb-0.23+fontconfig-parser-dev, librust-fontdb-0.23+fs-dev, librust-fontdb-0.23+memmap-dev, librust-fontdb-0.23+memmap2-dev, librust-fontdb-0.23+std-dev, librust-fontdb-0.23-dev"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/fontdb"
+    "https://salsa.debian.org/debian/rust-fontdb"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fontdb]"
+    "https://salsa.debian.org/debian/rust-fontdb.git"
   ],
   "Version": [
-    "0.22.0-3"
+    "0.23.0-2"
   ]
 }

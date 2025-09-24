@@ -6,19 +6,25 @@
     "librust-indoc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "73d1bf7defd5e13b301488d2e68eaeca776f357400657a21e1c48d3a3abdb777 2251 rust-indoc_2.0.5-1.dsc b248f5224d1d606005e02c97f5aa4e88eeb230488bcc03bc9ca4d7991399f2b5 14396 rust-indoc_2.0.5.orig.tar.gz c68ba284c95795238bb52e41f9ee244227aa38b03a115e9d0bc74d1a3e46f08e 2644 rust-indoc_2.0.5-1.debian.tar.xz"
+    "f8e97949a32ab7b545e64665a6dd75cf4f7e33e7a68aa26280ccb7c5ae2cce7f 1693 rust-indoc_2.0.6-1.dsc f4c7245a08504955605670dbf141fceab975f15ca21570696aebe9d2e71576bd 17164 rust-indoc_2.0.6.orig.tar.gz 868da48db82df97f68bab5fb23432b1baaac43759930151858a78af344f1f793 2712 rust-indoc_2.0.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-indoc"
   ],
   "Files": [
-    "9af385719019d57edbb8f232bb8eb8da 2251 rust-indoc_2.0.5-1.dsc 3081de27c16d004a798de20d4bb6d314 14396 rust-indoc_2.0.5.orig.tar.gz c099d4e43a303b03dada7c5273dd97f9 2644 rust-indoc_2.0.5-1.debian.tar.xz"
+    "412e2eec6ed9272f677f236f729d2d87 1693 rust-indoc_2.0.6-1.dsc c8afa984728b9caf848d2bf7191a9175 17164 rust-indoc_2.0.6.orig.tar.gz 372f1b56e07e16692ca2920c8cfa537a 2712 rust-indoc_2.0.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/indoc"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, librust-unindent-0.2+default-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, librust-unindent-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/indoc]"
   ],
   "Version": [
-    "2.0.5-1"
+    "2.0.6-1"
   ]
 }

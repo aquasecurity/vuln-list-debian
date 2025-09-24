@@ -6,16 +6,19 @@
     "librust-globset-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-aho-corasick-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.6.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-regex-automata-0.4+hybrid-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+meta-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+nfa-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+perf-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+std-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+syntax-dev \u003c!nocheck\u003e, librust-regex-syntax-0.8+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-aho-corasick-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.6.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-regex-automata-0.4+hybrid-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+meta-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+nfa-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+perf-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+std-dev \u003c!nocheck\u003e, librust-regex-automata-0.4+syntax-dev \u003c!nocheck\u003e, librust-regex-syntax-0.8+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7ec7113d36dbfae014885749a19f9854278c3a520392de3b92d060013d84ad07 2753 rust-globset_0.4.15-1.dsc 15f1ce686646e7f1e19bf7d5533fe443a45dbfb990e00629110797578b42fb19 25177 rust-globset_0.4.15.orig.tar.gz 39ed1e5036b447c7e4e83b27a19785b0e2236cc88662b4e76fa50f47d1c80795 3860 rust-globset_0.4.15-1.debian.tar.xz"
+    "5f3350d20017510ee04451f98ddd906085369fcc18b94fb98f72b86fdb356c0c 2181 rust-globset_0.4.16-1.dsc 54a1028dfc5f5df5da8a56a73e6c153c9a9708ec57232470703592a3f18e49f5 26533 rust-globset_0.4.16.orig.tar.gz 5b35ec8805a3932255b92576f87aa5b78a492c475549739612b301781a07c836 3908 rust-globset_0.4.16-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-globset"
   ],
   "Files": [
-    "330749403508288182cce81b92b319f0 2753 rust-globset_0.4.15-1.dsc 87002ccdb57a64535e56b11fe1d73eb9 25177 rust-globset_0.4.15.orig.tar.gz 7b5adccd091987f5c540187392205254 3860 rust-globset_0.4.15-1.debian.tar.xz"
+    "c0ecfbb5124448429b5e745ac48c97c8 2181 rust-globset_0.4.16-1.dsc 700102c8a187a153fe6c94ad2638b996 26533 rust-globset_0.4.16.orig.tar.gz 3978b8034c0f1f1f83c587a8fcf51a4f 3908 rust-globset_0.4.16-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-glob-0.3+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-glob-0.3+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/globset]"
   ],
   "Version": [
-    "0.4.15-1"
+    "0.4.16-1"
   ]
 }
