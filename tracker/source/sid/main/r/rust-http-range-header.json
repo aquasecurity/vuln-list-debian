@@ -6,16 +6,19 @@
     "librust-http-range-header-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eced4d664b0d28c0c0617982862236c9148e06ee05822487005082331150556e 2420 rust-http-range-header_0.4.0-1.dsc 3ce4ef31cda248bbdb6e6820603b82dfcd9e833db65a43e997a0ccec777d11fe 8016 rust-http-range-header_0.4.0.orig.tar.gz 5f2e754f1a24ff48f652c6c0becdd1a6b9f2abac8ee1d19574bfd8a36fbb2395 2756 rust-http-range-header_0.4.0-1.debian.tar.xz"
+    "a0d29ca072afb9283489fb85f291a9e57a93d8ad85a58f99e80c4d6d6235b942 2453 rust-http-range-header_0.4.2-1.dsc 9171a2ea8a68358193d15dd5d70c1c10a2afc3e7e4c5bc92bc9f025cebd7359c 8545 rust-http-range-header_0.4.2.orig.tar.gz ebfc8a194ef527f955715896edb081a2047e5df6868c16de9d9ac3b000c45f7c 2620 rust-http-range-header_0.4.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-http-range-header"
   ],
   "Files": [
-    "3cd5cd2516999340a231399272746dfe 2420 rust-http-range-header_0.4.0-1.dsc d44fe9b463d0a0276013221fc8086e87 8016 rust-http-range-header_0.4.0.orig.tar.gz b055b9125b930ff6205c912fd3bff266 2756 rust-http-range-header_0.4.0-1.debian.tar.xz"
+    "5ad993739112296325e1873dea50d36b 2453 rust-http-range-header_0.4.2-1.dsc a91a60d6ce99038a5ec046b648898901 8545 rust-http-range-header_0.4.2.orig.tar.gz 1da7d51a972a383c0a1bfd1fc0cefbdc 2620 rust-http-range-header_0.4.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, librust-regex-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-quickcheck-1+default-dev, librust-quickcheck-macros-1+default-dev, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/http-range-header]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.4.2-1"
   ]
 }

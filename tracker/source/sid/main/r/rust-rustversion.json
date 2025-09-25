@@ -6,19 +6,25 @@
     "librust-rustversion-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "93219a01a5119ef960acd202f7b1f5926227e8c1cd7c6f73b8e47b68dff59816 2254 rust-rustversion_1.0.14-1.dsc 7ffc183a10b4478d04cbbbfc96d0873219d962dd5accaff2ffbd4ceb7df837f4 17261 rust-rustversion_1.0.14.orig.tar.gz ccd5c938c38c61fb78d9cc54e022041b0935b10e0fd2db74016bc0f219ddc61b 2676 rust-rustversion_1.0.14-1.debian.tar.xz"
+    "998ad6c34f86b91702b8631dada3963ab85c8032db05daf8784eeab3c36c46b0 1712 rust-rustversion_1.0.22-1.dsc b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d 21096 rust-rustversion_1.0.22.orig.tar.gz b6925c824e7f9d027107507c02170a256620769efda9010d5295e161dc64d12f 2720 rust-rustversion_1.0.22-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustversion"
   ],
   "Files": [
-    "69d311b62da4f9695b361f58fb7016ed 2254 rust-rustversion_1.0.14-1.dsc a4363e082ec4ca1af8152bd344a5c771 17261 rust-rustversion_1.0.14.orig.tar.gz 62f8efcc1fd2a11c420f7d1e01b457ae 2676 rust-rustversion_1.0.14-1.debian.tar.xz"
+    "baa71e5eeb32f138c9cbc48fe86d3b3e 1712 rust-rustversion_1.0.22-1.dsc e662b1464700d377cb89a8a9b59bd8c0 21096 rust-rustversion_1.0.22.orig.tar.gz 2e24e8e7352e0f8c76735208614e9f82 2720 rust-rustversion_1.0.22-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/rustversion"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustversion]"
   ],
   "Version": [
-    "1.0.14-1"
+    "1.0.22-1"
   ]
 }
