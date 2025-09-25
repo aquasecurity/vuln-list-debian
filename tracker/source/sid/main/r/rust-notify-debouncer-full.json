@@ -6,16 +6,19 @@
     "librust-notify-debouncer-full-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-channel-0.5+default-dev \u003c!nocheck\u003e, librust-file-id-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-notify+crossbeam-channel-dev (\u003e= 5.2-~~) \u003c!nocheck\u003e, librust-notify+default-dev (\u003e= 5.2-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-file-id-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-notify-8+default-dev \u003c!nocheck\u003e, librust-notify-types-2+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3517854dd08d5eb91424631e544aaa4cf86b6a5f1004eb585b83de60affc180b 3078 rust-notify-debouncer-full_0.3.1-1.dsc 49f5dab59c348b9b50cf7f261960a20e389feb2713636399cd9082cd4b536154 18278 rust-notify-debouncer-full_0.3.1.orig.tar.gz 14c41da5012d5f53a164113e56e7450d687fcd07c94ec8232b84cac3bc9694d3 3072 rust-notify-debouncer-full_0.3.1-1.debian.tar.xz"
+    "ca3ec8bb4a568ab3c32660b89b0635b7995621bcae14568bc224dbeaa187ed8a 2230 rust-notify-debouncer-full_0.5.0-2.dsc d2d88b1a7538054351c8258338df7c931a590513fb3745e8c15eb9ff4199b8d1 18990 rust-notify-debouncer-full_0.5.0.orig.tar.gz 711efae8078886d09795d9e91d2b4c6331333124103a8602ce4689859ffb75d7 3240 rust-notify-debouncer-full_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-notify-debouncer-full"
   ],
   "Files": [
-    "86ef49db6997b1ead4c6a3a572279b87 3078 rust-notify-debouncer-full_0.3.1-1.dsc 61823a25ed8e4ce883bd4b0d93f72896 18278 rust-notify-debouncer-full_0.3.1.orig.tar.gz b962b113e7604c5464f7aa41a63c8fea 3072 rust-notify-debouncer-full_0.3.1-1.debian.tar.xz"
+    "3f6800bdab42924c5e1645dc4d0736bd 2230 rust-notify-debouncer-full_0.5.0-2.dsc 9c83dc687c95f350f56aa3fef1292572 18990 rust-notify-debouncer-full_0.5.0.orig.tar.gz bd15573824fef16ef6857b5f10c16721 3240 rust-notify-debouncer-full_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-deser-hjson+default-dev, librust-mock-instant-0.3+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-rstest-0.17+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev"
+    "dh-cargo, librust-deser-hjson-2+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-rstest-0.17+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/notify-debouncer-full]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.5.0-2"
   ]
 }

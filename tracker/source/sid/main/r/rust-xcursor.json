@@ -6,19 +6,25 @@
     "librust-xcursor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-7+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fbdb50729e4534c37c20372e4482a462a37bbfec2367bd5f030b0b0314dc5aae 2267 rust-xcursor_0.3.4-1.dsc 463705a63313cd4301184381c5e8042f0a7e9b4bb63653f216311d4ae74690b7 6069 rust-xcursor_0.3.4.orig.tar.gz 9955ea434c560b73b82aaa8ec7cf4d8eb3dbb380ff5147bc017a6ac1772121cc 2480 rust-xcursor_0.3.4-1.debian.tar.xz"
+    "228ced029a3cdea49e632ed439b12c28a5f414867078ae3100b44b6666474e17 2188 rust-xcursor_0.3.10-1.dsc bec9e4a500ca8864c5b47b8b482a73d62e4237670e5b5f1d6b9e3cae50f28f2b 7768 rust-xcursor_0.3.10.orig.tar.gz 92fca1d779927ebc68042e18e66d82fee55d0f8c2e5feb6a17fca808f4f6a145 2536 rust-xcursor_0.3.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-xcursor"
   ],
   "Files": [
-    "78428651053dcfb23b047183b3cee98c 2267 rust-xcursor_0.3.4-1.dsc c23bb6dcb67d06667e80614606df4144 6069 rust-xcursor_0.3.4.orig.tar.gz 05bbb7e33f49a6c2ab0816fc6e59b06b 2480 rust-xcursor_0.3.4-1.debian.tar.xz"
+    "bb7872c3dc972f38b7c7fc4b3a4e4122 2188 rust-xcursor_0.3.10-1.dsc 9c6dee441715a22d4aeee5fe9cbadcf4 7768 rust-xcursor_0.3.10.orig.tar.gz 0524eb56ca87bb8a6e8273e9b8add4e2 2536 rust-xcursor_0.3.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/esposm03/xcursor-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/xcursor]"
   ],
   "Version": [
-    "0.3.4-1"
+    "0.3.10-1"
   ]
 }

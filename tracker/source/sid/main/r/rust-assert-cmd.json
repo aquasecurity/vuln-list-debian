@@ -6,16 +6,19 @@
     "librust-assert-cmd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-doc-comment-0.3+default-dev \u003c!nocheck\u003e, librust-predicates-3+diff-dev (\u003e= 3.0.1-~~) \u003c!nocheck\u003e, librust-predicates-core-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-predicates-tree-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-wait-timeout-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-doc-comment-0.3+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.137-~~) \u003c!nocheck\u003e, librust-predicates-3+diff-dev (\u003e= 3.0.1-~~) \u003c!nocheck\u003e, librust-predicates-core-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-predicates-tree-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-wait-timeout-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3f7612c05e586e318e98040c0e0041871c5f65e02ab6eb74ca153c4460f8227b 2605 rust-assert-cmd_2.0.12-1.dsc 88903cb14723e4d4003335bb7f8a14f27691649105346a0f0957466c096adfe6 25347 rust-assert-cmd_2.0.12.orig.tar.gz 6214fb55f94e3206cf3e053485d1195d4fb73f1eaf4a21fa1fda31f785b3d9e6 3508 rust-assert-cmd_2.0.12-1.debian.tar.xz"
+    "3d2854724d2ea18e04d57aed868364bef05bae2c99f258da453cf591b0bf2ce3 2741 rust-assert-cmd_2.0.17-1.dsc 2bd389a4b2970a01282ee455294913c0a43724daedcd1a24c3eb0ec1c1320b66 26914 rust-assert-cmd_2.0.17.orig.tar.gz 3c59a88f62a186468774943ec8c09e2cc8eb97aee1b423307152e48d4f017712 3256 rust-assert-cmd_2.0.17-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-assert-cmd"
   ],
   "Files": [
-    "b80506e23b1b4910893b4029cb3db697 2605 rust-assert-cmd_2.0.12-1.dsc 74e97e374c0c05d2dffc9568b7e135b8 25347 rust-assert-cmd_2.0.12.orig.tar.gz d1ee5087926b91ed3ce7aa97e783caad 3508 rust-assert-cmd_2.0.12-1.debian.tar.xz"
+    "ed2987b5cf7918744ec58b09e003f23e 2741 rust-assert-cmd_2.0.17-1.dsc df2a93c50c7f1095dbfe831dbc41aadd 26914 rust-assert-cmd_2.0.17.orig.tar.gz cc1b4b3408f1a64b4af6c63723be3f7d 3256 rust-assert-cmd_2.0.17-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-automod-1+default-dev, librust-escargot-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/assert-cmd]"
   ],
   "Version": [
-    "2.0.12-1"
+    "2.0.17-1"
   ]
 }
