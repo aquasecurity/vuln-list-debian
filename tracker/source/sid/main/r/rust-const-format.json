@@ -6,19 +6,25 @@
     "librust-const-format-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-const-format-proc-macros-0.2.32+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-const-format-proc-macros-0.2+default-dev (\u003c\u003c 0.2.35-~~) \u003c!nocheck\u003e, librust-const-format-proc-macros-0.2+default-dev (\u003e= 0.2.34-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "47abcbac5a704b504830c0ee130f002b3b8aac0c2924d34ed48bfae64f9bcac2 1706 rust-const-format_0.2.32-2.dsc e3a214c7af3d04997541b18d432afaff4c455e79e2029079647e72fc2bd27673 77317 rust-const-format_0.2.32.orig.tar.gz c9ec5ad177c1a503f0d6fafe11ce467756b9e38903d7efad29d4f66cd62f4e77 4256 rust-const-format_0.2.32-2.debian.tar.xz"
+    "a62658645f3fb131be157a37f1862f1ef98336cfb57c88418278f9e5c724ff5b 1867 rust-const-format_0.2.34-1.dsc 126f97965c8ad46d6d9163268ff28432e8f6a1196a55578867832e3049df63dd 78068 rust-const-format_0.2.34.orig.tar.gz 92bd130b5d570cc805e742ec096be917a2de405176a97c8f542d8d2934ad8091 4724 rust-const-format_0.2.34-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-const-format"
   ],
   "Files": [
-    "f76b2f70d79a9a67b2705122e760e721 1706 rust-const-format_0.2.32-2.dsc ff24795f5c9198e26400c9a72b00c5eb 77317 rust-const-format_0.2.32.orig.tar.gz 5d3cc5ba5f516c26a5c6a12056b10644 4256 rust-const-format_0.2.32-2.debian.tar.xz"
+    "9273261bd9c493176ec778a8aa068e84 1867 rust-const-format_0.2.34-1.dsc 740de8b7584dff64b9556e62142c5e97 78068 rust-const-format_0.2.34.orig.tar.gz 349aa4e62a5d0f67cd9e3bc69352b9f3 4724 rust-const-format_0.2.34-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rodrimati1992/const_format_crates/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-arrayvec-0.7-dev, librust-fastrand-2-dev"
+    "dh-cargo, librust-arrayvec-0.7-dev, librust-fastrand-2-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/const-format]"
   ],
   "Version": [
-    "0.2.32-2"
+    "0.2.34-1"
   ]
 }
