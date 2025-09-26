@@ -6,19 +6,25 @@
     "librust-parking-lot-core-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.95-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.6.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.95-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.6.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "60235d17041d9bc42586e0ca1a54f52d836fc318f6fb6c6fc3cfadecf4c36a78 2467 rust-parking-lot-core_0.9.10-1.dsc 1e401f977ab385c9e4e3ab30627d6f26d00e2c73eef317493c4ec6d468726cf8 32406 rust-parking-lot-core_0.9.10.orig.tar.gz 6b38b66c7522d87edc4f46e4ea70c33bfaf9a021e74204b4560150f959f1a7bb 3952 rust-parking-lot-core_0.9.10-1.debian.tar.xz"
+    "dd703e48634d05e3cc4b495ec7ab6a5ea66d4ef4e803089b5596c972c52f6ee1 1902 rust-parking-lot-core_0.9.11-1.dsc bc838d2a56b5b1a6c25f55575dfc605fabb63bb2365f6c2353ef9159aa69e4a5 34773 rust-parking-lot-core_0.9.11.orig.tar.gz b0b91424655aa95f098192739a480878323a49043d79d4117f9d77a130f368ec 3992 rust-parking-lot-core_0.9.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-parking-lot-core"
   ],
   "Files": [
-    "626da55f99b087997c6a38be16793d66 2467 rust-parking-lot-core_0.9.10-1.dsc fe316e1d51e3dff1e0455d0142dd37e4 32406 rust-parking-lot-core_0.9.10.orig.tar.gz 4e26f1cc3d97b0b68e6ef88c98d3832c 3952 rust-parking-lot-core_0.9.10-1.debian.tar.xz"
+    "293946dc45a705bee6f10a60f446b3cf 1902 rust-parking-lot-core_0.9.11-1.dsc f7af56474756bf91a0b7181cea8f4ca4 34773 rust-parking-lot-core_0.9.11.orig.tar.gz e8152aee735699b2c97761f396d773c1 3992 rust-parking-lot-core_0.9.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Amanieu/parking_lot"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/parking-lot-core]"
   ],
   "Version": [
-    "0.9.10-1"
+    "0.9.11-1"
   ]
 }
