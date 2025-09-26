@@ -6,16 +6,19 @@
     "librust-pathfinder-simd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "925efde99d72e39da131496097af00b675783f6a75fa91c124b7e4776c8cba7b 2326 rust-pathfinder-simd_0.5.2-1.dsc 0444332826c70dc47be74a7c6a5fc44e23a7905ad6858d4162b658320455ef93 29990 rust-pathfinder-simd_0.5.2.orig.tar.gz 05401fb72f9e4b9d0834fc4d80423d85bb01b2150da78c0972e687a6fe3559a2 3640 rust-pathfinder-simd_0.5.2-1.debian.tar.xz"
+    "62a977dfa320af0d35954aa1296f0e1de98e7960d14e6d334abc876d548592e7 2330 rust-pathfinder-simd_0.5.5-1.dsc bf9027960355bf3afff9841918474a81a5f972ac6d226d518060bba758b5ad57 30388 rust-pathfinder-simd_0.5.5.orig.tar.gz 2457fc9c55eb64b8d1baa3e7e9ae7beaf86254b3fa68b5f9de271bf736f49619 3352 rust-pathfinder-simd_0.5.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pathfinder-simd"
   ],
   "Files": [
-    "27401ed617faf5f407909333b7e6f963 2326 rust-pathfinder-simd_0.5.2-1.dsc 100e8ab600088d460a97f34664754d27 29990 rust-pathfinder-simd_0.5.2.orig.tar.gz 509c563a8c4cca57394637b339c75553 3640 rust-pathfinder-simd_0.5.2-1.debian.tar.xz"
+    "3b4b23f6c860ba1122433598e6b72098 2330 rust-pathfinder-simd_0.5.5-1.dsc 529e8795238e63260b3ad429e4cbaca0 30388 rust-pathfinder-simd_0.5.5.orig.tar.gz 429b3706127b439843893cd5d1986f50 3352 rust-pathfinder-simd_0.5.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pathfinder-simd]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.5-1"
   ]
 }
