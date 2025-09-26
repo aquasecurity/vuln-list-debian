@@ -6,16 +6,19 @@
     "librust-dateparser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.75-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev (\u003e= 0.4.31-~~) \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.10.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be17916652f40dd48276b53b80996d22029a64e89db5f2feb90719490736a225 2480 rust-dateparser_0.2.0-1.dsc 18e537db44ee4822af930a9a2c9eedfcde9d47e01c6731fbf34ea01b5a7ccf7d 21377 rust-dateparser_0.2.0.orig.tar.gz 613c87dd61b4d1b099a0339dc6625742dfe30a41c1d616541ec3dda18465b21f 2768 rust-dateparser_0.2.0-1.debian.tar.xz"
+    "a8de76752a6c5b31b9bb79e77984dba1e509c0f4786a8a9d159f6141cd2bb671 2498 rust-dateparser_0.2.1-1.dsc c2ef451feee09ae5ecd8a02e738bd9adee9266b8fa9b44e22d3ce968d8694238 20775 rust-dateparser_0.2.1.orig.tar.gz 41a30831e18c64e3b46c4d22660a2812569a5231cc008da2e7ce1a1f32dda208 2936 rust-dateparser_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dateparser"
   ],
   "Files": [
-    "0d279fa7a172fb4efcb19ed9e916c9d9 2480 rust-dateparser_0.2.0-1.dsc dd0103433a3972c0e2b5299ed737637b 21377 rust-dateparser_0.2.0.orig.tar.gz 9e43f02347db0c8517671f1d5d8e6ec6 2768 rust-dateparser_0.2.0-1.debian.tar.xz"
+    "b65e7c54012d57271472cd1c36b08a7a 2498 rust-dateparser_0.2.1-1.dsc 285390266d2bdbfa920c8565535dfe9b 20775 rust-dateparser_0.2.1.orig.tar.gz 57b79aa2d1875a7ba19a96a1ced4d0e8 2936 rust-dateparser_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-chrono-tz-0.6+default-dev, librust-criterion-0.3+default-dev, librust-criterion-0.3+html-reports-dev"
+    "dh-cargo, librust-chrono-tz-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dateparser]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.1-1"
   ]
 }
