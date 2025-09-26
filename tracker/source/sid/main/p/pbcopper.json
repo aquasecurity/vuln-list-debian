@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any-amd64 arm64 loong64 mips64el ppc64el s390x ia64 ppc64 riscv64 sparc64 alpha"
+    "any"
   ],
   "Binary": [
     "libpbcopper2.3.0, libpbcopper-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), d-shlibs, meson, cmake, pkg-config, libboost-dev, googletest, libgtest-dev, libsimde-dev"
+    "debhelper-compat (= 13), architecture-is-64-bit, d-shlibs, meson, cmake, pkgconf, libboost-dev, googletest, libgtest-dev, libsimde-dev"
   ],
   "Checksums-Sha256": [
-    "86a503a090370e5b7601bef12b5c899b6ac252be1911ec6c1a46155129564203 2379 pbcopper_2.3.0+dfsg-2.dsc 778862e58f051159b8b35bdae7d3361011a1cbc674423e6a23992b094f76f162 736204 pbcopper_2.3.0+dfsg.orig.tar.xz 249fa94ccac19d58f1261847b2e11aa8c4c167b45ed7283ac8c772d18860dc6e 7728 pbcopper_2.3.0+dfsg-2.debian.tar.xz"
+    "e64d82c23991933b127a5e2f51f90902dab612263836dd5a04820783db0154cd 2295 pbcopper_2.3.0+dfsg-3.dsc 778862e58f051159b8b35bdae7d3361011a1cbc674423e6a23992b094f76f162 736204 pbcopper_2.3.0+dfsg.orig.tar.xz bf44e0b78ce6ecbdd8b649ae63842de5d42b42b87152f2f3c8faebdb8983e2b7 8172 pbcopper_2.3.0+dfsg-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "917095e4c5f461d0829fb0dd43ce534c29c5afa6 debian archive/debian/2.3.0+dfsg-3 https://git.dgit.debian.org/pbcopper"
   ],
   "Directory": [
     "pool/main/p/pbcopper"
   ],
   "Files": [
-    "d51fd4e4e2027e76e5d2f12c4f7c0037 2379 pbcopper_2.3.0+dfsg-2.dsc 2dad359fad146c0886f57c921055a49b 736204 pbcopper_2.3.0+dfsg.orig.tar.xz accfafab8a2cb6ccd40e84c7c839a6bd 7728 pbcopper_2.3.0+dfsg-2.debian.tar.xz"
+    "ef51e855915ca4102888d3d5bebbfb7c 2295 pbcopper_2.3.0+dfsg-3.dsc 2dad359fad146c0886f57c921055a49b 736204 pbcopper_2.3.0+dfsg.orig.tar.xz 5e4802efee378467d056202b2add9c07 8172 pbcopper_2.3.0+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "pbcopper"
   ],
   "Package-List": [
-    "libpbcopper-dev deb libdevel optional arch=any-amd64,arm64,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sparc64,alpha libpbcopper2.3.0 deb libs optional arch=any-amd64,arm64,loong64,mips64el,ppc64el,s390x,ia64,ppc64,riscv64,sparc64,alpha"
+    "libpbcopper-dev deb libdevel optional arch=any libpbcopper2.3.0 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/med-team/pbcopper.git"
   ],
   "Version": [
-    "2.3.0+dfsg-2"
+    "2.3.0+dfsg-3"
   ]
 }

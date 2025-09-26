@@ -6,16 +6,19 @@
     "librust-kamadak-exif-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-mutate-once-0.1+default-dev (\u003e= 0.1.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-mutate-once-0.1+default-dev (\u003e= 0.1.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "93db0e505fafb73353e8f6fe18ef48d840d7d880ad49690bf7f63888b55d03aa 2279 rust-kamadak-exif_0.5.5-1.dsc ef4fc70d0ab7e5b6bafa30216a6b48705ea964cdfc29c050f2412295eba58077 54457 rust-kamadak-exif_0.5.5.orig.tar.gz 79d07a39a712a0fff976521a134b3322f8b735b620a9f9ac0c4578c57e0e86a6 2872 rust-kamadak-exif_0.5.5-1.debian.tar.xz"
+    "081648ace3a4257b16e10ff15272a62cb49eb90c8b8c9fa45ab5560eee21497f 2293 rust-kamadak-exif_0.6.1-1.dsc 1130d80c7374efad55a117d715a3af9368f0fa7a2c54573afc15a188cd984837 57852 rust-kamadak-exif_0.6.1.orig.tar.gz 65bbbbd9fdb6e35ecd480646a65064e0a72d28ac81bcf751d1fe4715eac82a33 2904 rust-kamadak-exif_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-kamadak-exif"
   ],
   "Files": [
-    "4918ccaa6dbbaf1a8e6a7426d567cbb1 2279 rust-kamadak-exif_0.5.5-1.dsc 78325878bd9900cbb00b0379bca090fb 54457 rust-kamadak-exif_0.5.5.orig.tar.gz 9d8a191d1a4f6e05795164517a434ab1 2872 rust-kamadak-exif_0.5.5-1.debian.tar.xz"
+    "b254c2f2d32977a7ade6dae2ec2801e8 2293 rust-kamadak-exif_0.6.1-1.dsc 340cc806eb0d8bdee746ca0e9f19749a 57852 rust-kamadak-exif_0.6.1.orig.tar.gz c2316967e78e1452425a6f75cd19cbf0 2904 rust-kamadak-exif_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/kamadak-exif]"
   ],
   "Version": [
-    "0.5.5-1"
+    "0.6.1-1"
   ]
 }

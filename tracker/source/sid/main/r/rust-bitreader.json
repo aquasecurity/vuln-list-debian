@@ -6,16 +6,19 @@
     "librust-bitreader-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "09e442eb602264eccf28b52e3bb6e431e9760ed471d1fab99a5b608f62b168a3 2212 rust-bitreader_0.3.7-1.dsc f10043e4864d975e7f197f993ec4018636ad93946724b2571c4474d51845869b 11673 rust-bitreader_0.3.7.orig.tar.gz 1ef5e59c7af38c32056e45f74d7f7577a708a6dbebb6b840d46ee4c8c34f4ff1 2732 rust-bitreader_0.3.7-1.debian.tar.xz"
+    "703255f9aeb81f978dced1ba898fe2565abccecc0aae7c6b7015cf766f550a95 2252 rust-bitreader_0.3.11-1.dsc 886559b1e163d56c765bc3a985febb4eee8009f625244511d8ee3c432e08c066 12077 rust-bitreader_0.3.11.orig.tar.gz 74295b2bd619b240e4769c2a897d20d4544c3ba4fc3a0857311f5f72a1f35695 2776 rust-bitreader_0.3.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bitreader"
   ],
   "Files": [
-    "12531a07ed6ef074ff6309f39626c5e2 2212 rust-bitreader_0.3.7-1.dsc e54e04ccc225efd46415fb7eadef8ed5 11673 rust-bitreader_0.3.7.orig.tar.gz a711490d0502530507170def14548f5d 2732 rust-bitreader_0.3.7-1.debian.tar.xz"
+    "6fd48a75b64ee01916d6bd5366e3a4d6 2252 rust-bitreader_0.3.11-1.dsc 3d90160eebb397cb9f6cc4f31f736246 12077 rust-bitreader_0.3.11.orig.tar.gz 5d3d9d54e2faec2efd91719df85e516f 2776 rust-bitreader_0.3.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Junichi Uekawa \u003cdancer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitreader]"
   ],
   "Version": [
-    "0.3.7-1"
+    "0.3.11-1"
   ]
 }
