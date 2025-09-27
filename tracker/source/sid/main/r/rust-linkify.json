@@ -6,16 +6,19 @@
     "librust-linkify-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e0c19656f390fa0e1369f6386df62cfa0c4fed99b73c196d1d80621bba033eb0 2352 rust-linkify_0.9.0-1.dsc 96dd5884008358112bc66093362197c7248ece00d46624e2cf71e50029f8cff5 21261 rust-linkify_0.9.0.orig.tar.gz 7c4f282ed11bb7c47c1dd176ad9d263c6aebe89cea2c8438dab828b6c405432e 2908 rust-linkify_0.9.0-1.debian.tar.xz"
+    "4c988782a5d4392d7daee8208fbb6f0af8db00e47dd8101b5bd09617fd0d9885 1716 rust-linkify_0.10.0-1.dsc f1dfa36d52c581e9ec783a7ce2a5e0143da6237be5811a0b3153fedfdbe9f780 22010 rust-linkify_0.10.0.orig.tar.gz 94e5b3d008f2f7a443f96b1ff2a9f618401ee29174a29e5d2eaaa12e626ec69e 2980 rust-linkify_0.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-linkify"
   ],
   "Files": [
-    "c6ded5fee5049744f19979996c176c94 2352 rust-linkify_0.9.0-1.dsc ae5c11976353c9aaede62163363f30f2 21261 rust-linkify_0.9.0.orig.tar.gz 888b8bb3cf2a0dc4d4f67ad47b9246be 2908 rust-linkify_0.9.0-1.debian.tar.xz"
+    "f5a3ad9611df3e9843dfa0d5381fe79d 1716 rust-linkify_0.10.0-1.dsc 3bb003c77a96dc301d59d0c96930f368 22010 rust-linkify_0.10.0.orig.tar.gz 584720dee25be502a59149c25cb09b5c 2980 rust-linkify_0.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-doc-comment-0.3+default-dev, librust-plotters-backend-0.3+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-doc-comment-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/linkify]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.10.0-1"
   ]
 }
