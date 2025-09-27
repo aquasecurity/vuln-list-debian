@@ -6,22 +6,25 @@
     "librust-anstyle-parse-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-utf8parse-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-utf8parse-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b396f3b93bcdd3a0a53038627ca8620c5217d259b1ae38942c386684e581c9ae 2502 rust-anstyle-parse_0.2.1-1.dsc 938874ff5980b03a87c5524b3ae5b59cf99b1d6bc836848df7bc5ada9643c333 24802 rust-anstyle-parse_0.2.1.orig.tar.gz 11943a37abdafa1c97c3fbf3e69713da9d245e0f8ef135e074c33cd724e28969 2816 rust-anstyle-parse_0.2.1-1.debian.tar.xz"
+    "c1b332f213afedf793ef983bd2ccfbde3ee8b6a19ce6849e31b259cc7349084d 1856 rust-anstyle-parse_0.2.7-1.dsc 4e7644824f0aa2c7b9384579234ef10eb7efb6a0deb83f9630a49594dd9c15c2 21707 rust-anstyle-parse_0.2.7.orig.tar.gz 571e9a1d04186423ae89f0196378e1ba1d966179c2e1e501f825180e06e6d1d3 3244 rust-anstyle-parse_0.2.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-anstyle-parse"
   ],
   "Files": [
-    "a2e51ada241902b6f8353fc599a1f630 2502 rust-anstyle-parse_0.2.1-1.dsc a6c4e3f7eda9068fe0049c291e8e7d89 24802 rust-anstyle-parse_0.2.1.orig.tar.gz 341d80553fd9bd778d4da6fb773b98a7 2816 rust-anstyle-parse_0.2.1-1.debian.tar.xz"
+    "7ece5bb7cd72c6ce9d98db289cf3d7e3 1856 rust-anstyle-parse_0.2.7-1.dsc 27ce951824c9152083803a3f33f60d1c 21707 rust-anstyle-parse_0.2.7.orig.tar.gz e79af0906847c9584dd9db426f98929b 3244 rust-anstyle-parse_0.2.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/rust-cli/anstyle"
+    "https://github.com/rust-cli/anstyle.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-codegenrs-2-dev, librust-criterion-0.4+default-dev, librust-proptest-1+default-dev, librust-snapbox-0.4+default-dev, librust-snapbox-0.4+path-dev, librust-vte-generate-state-changes-0.1+default-dev"
+    "dh-cargo, librust-proptest-1+default-dev, librust-snapbox-0.6+default-dev, librust-vte-generate-state-changes-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/anstyle-parse]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.7-1"
   ]
 }

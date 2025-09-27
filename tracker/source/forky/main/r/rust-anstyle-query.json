@@ -6,19 +6,25 @@
     "librust-anstyle-query-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "27dbc0bf61bce902be1562aa57022bdedaf87a00059292676882f7640d90a901 2176 rust-anstyle-query_1.0.0-1.dsc 5ca11d4be1bab0c8bc8734a9aa7bf4ee8316d462a08c6ac5052f888fef5b494b 8620 rust-anstyle-query_1.0.0.orig.tar.gz a07155c10908d1a0411a97132d8e81c436c6fb997d78152d9268698ff9166314 2888 rust-anstyle-query_1.0.0-1.debian.tar.xz"
+    "b18ff97dc8f7d29bda858515cc3809c8052a316132c8e151a0ad8e0e805a5386 2274 rust-anstyle-query_1.1.4-1.dsc 9e231f6134f61b71076a3eab506c379d4f36122f2af15a9ff04415ea4c3339e2 10192 rust-anstyle-query_1.1.4.orig.tar.gz efe9d34a892df17f4739491d41830f68aed098b94ff9c8fddc1f2fe9b40a2d12 2784 rust-anstyle-query_1.1.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-anstyle-query"
   ],
   "Files": [
-    "6900d9a1194d26f59d85d3ecdb4817d2 2176 rust-anstyle-query_1.0.0-1.dsc d2453c99c7af98286c2dc9017a8dba6d 8620 rust-anstyle-query_1.0.0.orig.tar.gz 28028aca96455c7e1b2fb6e42d51d145 2888 rust-anstyle-query_1.0.0-1.debian.tar.xz"
+    "4dd354f04a0caedfd164ae05e45fa644 2274 rust-anstyle-query_1.1.4-1.dsc 5c218d354a98b69218c0bcf898fb87ed 10192 rust-anstyle-query_1.1.4.orig.tar.gz dae0817c68154810b93ea892f408d50d 2784 rust-anstyle-query_1.1.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-cli/anstyle.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/anstyle-query]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.1.4-1"
   ]
 }

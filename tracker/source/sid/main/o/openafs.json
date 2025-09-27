@@ -6,19 +6,19 @@
     "openafs-client, openafs-fuse, openafs-fileserver, openafs-dbserver, openafs-doc, openafs-krb5, libkopenafs2t64, libafsauthent2t64, libafsrpc2t64, libopenafs-dev, openafs-modules-source, openafs-modules-dkms"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper, debhelper-compat (= 12), autoconf, automake, bison, comerr-dev, cpio, flex, libfuse-dev, libkrb5-dev, libncurses-dev, libpam0g-dev, libxml2-utils, perl, pkgconf, libtool, heimdal-multidev (\u003e= 1.7~git20150920)"
+    "dpkg-dev (\u003e= 1.22.5), debhelper, debhelper-compat (= 12), autoconf, automake, bison, comerr-dev, cpio, flex, libcrypt-dev, libfuse-dev, libkrb5-dev, libncurses-dev, libpam0g-dev, libxml2-utils, perl, pkgconf, libtool, heimdal-multidev (\u003e= 1.7~git20150920)"
   ],
   "Build-Depends-Indep": [
     "dblatex, dh-dkms (\u003e= 3.0.3-4~), docbook-xsl, doxygen (\u003e= 1.8.4-1~), xsltproc"
   ],
   "Checksums-Sha256": [
-    "7bd9842807cb897d521ce091045b73806bb628fc93fe7b1ce8377bf1d2d6d826 3664 openafs_1.8.13.2-1.dsc 5bfbfa355fe07925e5fe71c72512a2f93d618cda516611f6b5f1bbd3caa9a56c 6768480 openafs_1.8.13.2.orig.tar.xz 5534b7bc71a752dd9a4be6b1e42277feba2c8d340c32fb237a3ff460afe2cb8c 140672 openafs_1.8.13.2-1.debian.tar.xz"
+    "2b1b9daba37902c318aadbc5fd35bb845fcabafc54e694d48fe6efed42fb4dca 3772 openafs_1.8.14~pre1-1.dsc 60e312f25414925c144f65d6e18808a28169e641768dd6d6be1c3492ef2eaf2e 6781840 openafs_1.8.14~pre1.orig.tar.xz 4a54d74d49899d1e70aa6b7700e5ec7a7ac0d5088456336752fd91a9f9c85ef0 140040 openafs_1.8.14~pre1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openafs"
   ],
   "Files": [
-    "24b507f41bad3bb5216e03cfced18558 3664 openafs_1.8.13.2-1.dsc 7ab1ec85b32a8cc1022ff30b043e22c3 6768480 openafs_1.8.13.2.orig.tar.xz 3120b9e653d4fa21c6059af148d37121 140672 openafs_1.8.13.2-1.debian.tar.xz"
+    "b7ea3f02e571aac6cae7f5035b84313f 3772 openafs_1.8.14~pre1-1.dsc 4e6651a05519992cc6ea67aa1fc20201 6781840 openafs_1.8.14~pre1.orig.tar.xz 55e165a658f224db174f364266db91af 140040 openafs_1.8.14~pre1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "net"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-dkms"
+    "autopkgtest, autopkgtest-pkg-dkms"
+  ],
+  "Testsuite-Triggers": [
+    "linux-doc, module-assistant-autopkgtest"
   ],
   "Uploaders": [
     "Sam Hartman \u003chartmans@debian.org\u003e, Anders Kaseorg \u003candersk@mit.edu\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian/openafs.git"
   ],
   "Version": [
-    "1.8.13.2-1"
+    "1.8.14~pre1-1"
   ]
 }

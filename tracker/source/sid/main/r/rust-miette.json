@@ -6,16 +6,19 @@
     "librust-miette-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-miette-derive-7.4.0+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.56-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-miette-derive-7.6+default-dev (\u003c\u003c 7.6.1-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4e4082be87777ba6bcd30e006e42bd4168c7ce708a2a791d727f25b89cf7192b 2843 rust-miette_7.4.0-1.dsc 317f146e2eb7021892722af37cf1b971f0a70c8406f487e24952667616192c64 111822 rust-miette_7.4.0.orig.tar.gz b5d3d4cc8a7b385e26846e8ca2ca16caf1ee3a01f5ae0203ab43158e84e48b78 3660 rust-miette_7.4.0-1.debian.tar.xz"
+    "491236e4d4c0ba161d8d6b1ae47ce022255d1e25549c6a5db929a72ebf7a76dd 2823 rust-miette_7.6.0-1.dsc 5f98efec8807c63c752b5bd61f862c165c115b0a35685bdcfd9238c7aeb592b7 114499 rust-miette_7.6.0.orig.tar.gz f0f1987b7b993489ff7575a689d556b2ec7a95bad626300edb67bd28e944a08c 3800 rust-miette_7.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-miette"
   ],
   "Files": [
-    "4a4e5a7e56a11d964f19601360b4007e 2843 rust-miette_7.4.0-1.dsc 808bb494bb80c80e39ad1d503e35f49a 111822 rust-miette_7.4.0.orig.tar.gz 9fb3275b69772d001fcb2ee5933f5927 3660 rust-miette_7.4.0-1.debian.tar.xz"
+    "6b92a4612b47f2b119273f34acb628de 2823 rust-miette_7.6.0-1.dsc c4f3c2c587e6d21f6a650e6a0fe1dcce 114499 rust-miette_7.6.0.orig.tar.gz ee3a5d8541b6cf8ce9eaec115339d032 3800 rust-miette_7.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3-dev, librust-indenter-0.3+default-dev, librust-lazy-static-1+default-dev, librust-regex-1+default-dev, librust-rustversion-1+default-dev, librust-semver-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-strip-ansi-escapes+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
+    "dh-cargo, librust-futures-0.3-dev, librust-indenter-0.3+default-dev, librust-lazy-static-1+default-dev, librust-regex-1+default-dev, librust-rustversion-1+default-dev, librust-semver-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-strip-ansi-escapes-0.2+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-thiserror-2+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/miette]"
   ],
   "Version": [
-    "7.4.0-1"
+    "7.6.0-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-bytelines-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e, librust-tokio-1+fs-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e, librust-tokio-1+fs-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e, librust-tokio-1+io-util-dev (\u003e= 1.14-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "960945e025c9dc39ea2806594445afa561c6ecfa99a4cb2132a8141bcb60b7b4 2408 rust-bytelines_2.4.0-1.dsc 784face321c535fcd9a1456632fa720aa53ea0640b57341d961c8c09de2da59f 5334 rust-bytelines_2.4.0.orig.tar.gz aec14b4e756fc67bc9fe36ef1a224516c19987f9282dc44024fc32f59f8d3959 2564 rust-bytelines_2.4.0-1.debian.tar.xz"
+    "f4ef30497e11f756654faa89801047238b710a775f74e7a585cad5c4e9e8b067 2456 rust-bytelines_2.5.0-2.dsc 1297656b3c221f5251560da47ce530d981345d3dabe822067c18ecb36e67aacb 6255 rust-bytelines_2.5.0.orig.tar.gz 7868a92849c65d3b7e962e1c93c46dd2a1fe76be136b45356f98c93b612ac90d 2744 rust-bytelines_2.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bytelines"
   ],
   "Files": [
-    "70d3d00a9ac6cf6375c5ff9695d640d1 2408 rust-bytelines_2.4.0-1.dsc d686a85cfbf295cde531b1d783673bd0 5334 rust-bytelines_2.4.0.orig.tar.gz 006137cc9c4402069d9f30e46cf39ece 2564 rust-bytelines_2.4.0-1.debian.tar.xz"
+    "d4828fbcfc2163c77cbea9ccb49f4043 2456 rust-bytelines_2.5.0-2.dsc c8d34c5e3371213df204cc772e1aafed 6255 rust-bytelines_2.5.0.orig.tar.gz ee08133bcd0f6626eff7239e6b529dab 2744 rust-bytelines_2.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/whitfin/bytelines"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+full-dev"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+full-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytelines]"
   ],
   "Version": [
-    "2.4.0-1"
+    "2.5.0-2"
   ]
 }

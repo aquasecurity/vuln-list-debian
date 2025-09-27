@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
     "python3-evdev, python-evdev-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-setuptools, python3-docutils, python3-all-dev, python3-pytest, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-setuptools, python3-docutils, python3-all-dev, python3-pytest"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-rtd-theme"
   ],
   "Checksums-Sha256": [
-    "063b8c5402c0e908857011f35b99caef4ade73571204540f42dfb5a97230c526 2160 python-evdev_1.9.1-1.dsc 958e8aad958250428a57ff6c6fb8e2c254737affaca654165d9222f5a279698b 48554 python-evdev_1.9.1.orig.tar.gz ad2d892f73473b330faa8f3548b8621f07d125d79651a4edbd7a7cbb5397aa6e 5180 python-evdev_1.9.1-1.debian.tar.xz"
+    "3a500abcf0792b037f6725c5224bdb0585e7e75e8a8615eb857c373d71cdb331 2201 python-evdev_1.9.2-1.dsc 1cfb65765b8c63e587110d9b42fa26806bd6dd76565c55c3618afd4c4c48c5a5 48925 python-evdev_1.9.2.orig.tar.gz f945d5a540e7fb9ab3652380441789b5250df1c97f16cb6fd39ec7b7d9941147 5504 python-evdev_1.9.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-evdev"
   ],
   "Files": [
-    "94398d984adf4124d4fcb7a4c0fa33dc 2160 python-evdev_1.9.1-1.dsc 31c98326639a9a282ab245c64a1951f1 48554 python-evdev_1.9.1.orig.tar.gz 9ef0de125a5ac6a588adda30fdd37704 5180 python-evdev_1.9.1-1.debian.tar.xz"
+    "43b514ee88bef1abbd0511b6ae3825a4 2201 python-evdev_1.9.2-1.dsc 4c488ba13e94765e48d4823db5078f27 48925 python-evdev_1.9.2.orig.tar.gz fa40343bfdbd58cec869079ba1265b5f 5504 python-evdev_1.9.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "python-evdev"
   ],
   "Package-List": [
-    "python-evdev-doc deb doc optional arch=linux-any python3-evdev deb python optional arch=linux-any"
+    "python-evdev-doc deb doc optional arch=all python3-evdev deb python optional arch=linux-any"
   ],
   "Priority": [
     "extra"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/debian/python-evdev.git"
   ],
   "Version": [
-    "1.9.1-1"
+    "1.9.2-1"
   ]
 }

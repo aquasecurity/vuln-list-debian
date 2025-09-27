@@ -6,22 +6,25 @@
     "librust-svgtypes-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-kurbo-0.11+default-dev \u003c!nocheck\u003e, librust-siphasher-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-kurbo-0.11+default-dev \u003c!nocheck\u003e, librust-siphasher-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "48c3118b6bef7cfc5bc30417ecb3f6aeba807532535203a92e89de0f58c89d0a 2302 rust-svgtypes_0.15.2-2.dsc 794de53cc48eaabeed0ab6a3404a65f40b3e38c067e4435883a65d2aa4ca000e 42150 rust-svgtypes_0.15.2.orig.tar.gz 8c3e7f3f158a06adaf32df3edceb39918853f7520a2f230e754b1d1bbb3120fc 3528 rust-svgtypes_0.15.2-2.debian.tar.xz"
+    "52eed94d296092031f7f783a5b7d6b1552c8f3499110811e1d2f5f2d47920f6b 2302 rust-svgtypes_0.15.3-1.dsc 68c7541fff44b35860c1a7a47a7cadf3e4a304c457b58f9870d9706ece028afc 43696 rust-svgtypes_0.15.3.orig.tar.gz 28e9884881874a9f80ca27f5494c2434af7b1b3b4d6a5c11cb00e203d74753e7 3472 rust-svgtypes_0.15.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-svgtypes"
   ],
   "Files": [
-    "5dbcd2eb66be0ffb24da25fce95c15e6 2302 rust-svgtypes_0.15.2-2.dsc bfbd15ebbbab0b780f3b474d7e03d851 42150 rust-svgtypes_0.15.2.orig.tar.gz d5d03bda64179af8d7e0d2316b3e4069 3528 rust-svgtypes_0.15.2-2.debian.tar.xz"
+    "75d400d679c39378532a8d9295a736ed 2302 rust-svgtypes_0.15.3-1.dsc 21e85a84b8ba39818b58613378035ae9 43696 rust-svgtypes_0.15.3.orig.tar.gz 2a352ecb2f5e893fdd7d0d14390a314c 3472 rust-svgtypes_0.15.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/RazrFalcon/svgtypes"
+    "https://github.com/linebender/svgtypes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/svgtypes]"
   ],
   "Version": [
-    "0.15.2-2"
+    "0.15.3-1"
   ]
 }

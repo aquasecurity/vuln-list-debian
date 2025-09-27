@@ -6,16 +6,19 @@
     "librust-insta-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-0.15-dev (\u003e= 0.15.4-~~) \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-linked-hash-map-0.5+default-dev (\u003e= 0.5.6-~~) \u003c!nocheck\u003e, librust-similar-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-similar-2+inline-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-0.15-dev (\u003e= 0.15.4-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.20.2-~~) \u003c!nocheck\u003e, librust-similar-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-similar-2+inline-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "99ab560cf7a409be9bf9a1a30e2314fdd1e1315d18afba66fb686f2b597e0722 2587 rust-insta_1.39.0-1.dsc 810ae6042d48e2c9e9215043563a58a80b877bc863228a74cf10c49d4620a6f5 87049 rust-insta_1.39.0.orig.tar.gz d202ac469d25b21014fa736e97045af354c740ba1fd4aa23f27f7d13f10e1778 3796 rust-insta_1.39.0-1.debian.tar.xz"
+    "c1aec67a59c0f6f211d3ba23e08feacba5680ff5a0793ecbee475838bce05752 2657 rust-insta_1.43.2-1.dsc 46fdb647ebde000f43b5b53f773c30cf9b0cb4300453208713fa38b2c70935a0 102183 rust-insta_1.43.2.orig.tar.gz ed5b0a31c841e8078f9b56c6bc130a9d9a8b8ec452f310872f03e16a22e197b3 3684 rust-insta_1.43.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-insta"
   ],
   "Files": [
-    "8726ed120035180bbbc8683435757584 2587 rust-insta_1.39.0-1.dsc 4bab6b6bf15a56287e4c36b9093d8591 87049 rust-insta_1.39.0.orig.tar.gz fbc8b8983f4aa0c88c398175c3105bd7 3796 rust-insta_1.39.0-1.debian.tar.xz"
+    "e8ed3cc6762db5eea0dfe0d70da36ec7 2657 rust-insta_1.43.2-1.dsc c621422fae3447790cd52c7c037b2895 102183 rust-insta_1.43.2.orig.tar.gz 3a398a279b691833699ca5a44a56c5d3 3684 rust-insta_1.43.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustc-version-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-similar-asserts-1+default-dev"
+    "dh-cargo, librust-rustc-version-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-similar-asserts-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/insta]"
   ],
   "Version": [
-    "1.39.0-1"
+    "1.43.2-1"
   ]
 }

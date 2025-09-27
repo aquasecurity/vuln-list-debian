@@ -6,19 +6,25 @@
     "librust-cached-proc-macro-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-darling-0.14+default-dev (\u003e= 0.14.2-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.49-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-syn-1+default-dev (\u003e= 1.0.27-~~) \u003c!nocheck\u003e, librust-syn-1+full-dev (\u003e= 1.0.27-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-darling-0.20+default-dev (\u003e= 0.20.8-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.49-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.52-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "981f6d647a31b0d69c601c9e45405ececa3061d4da89bcd665696e7809e33622 2627 rust-cached-proc-macro_0.20.0-1.dsc ad9f16c0d84de31a2ab7fdf5f7783c14631f7075cf464eb3bb43119f61c9cb2a 10235 rust-cached-proc-macro_0.20.0.orig.tar.gz 3b5dae021b60323c9bef0d69b0f7ab04006318f6f96f14f0ec3affd0935c9cc6 2616 rust-cached-proc-macro_0.20.0-1.debian.tar.xz"
+    "f23ccee8f9e2e72adb9ce85e41865a39cb4d08bcc7bb13fc9afc0abaeec99a8e 2522 rust-cached-proc-macro_0.25.0-1.dsc 9225bdcf4e4a9a4c08bf16607908eb2fbf746828d5e0b5e019726dbf6571f201 11890 rust-cached-proc-macro_0.25.0.orig.tar.gz d79f22900de30c9a38b7e342051a2d73b41a16d3e89c7ec1073619780f233113 2692 rust-cached-proc-macro_0.25.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cached-proc-macro"
   ],
   "Files": [
-    "1a06964ec356c893a327d22d093c64bf 2627 rust-cached-proc-macro_0.20.0-1.dsc aa96bce1fd20008df4b9e663115bf69f 10235 rust-cached-proc-macro_0.20.0.orig.tar.gz ec544b27268eb9b57cf42e8f9cf92b4b 2616 rust-cached-proc-macro_0.20.0-1.debian.tar.xz"
+    "fd76eb97039f76495d8cc12307d2f2cf 2522 rust-cached-proc-macro_0.25.0-1.dsc a2ba267c75d1abf634b686c99e34a4bb 11890 rust-cached-proc-macro_0.25.0.orig.tar.gz 71bfa99f7abf44956cb20abb77e13d23 2692 rust-cached-proc-macro_0.25.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/jaemk/cached"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Bernhard Dick \u003cbernhard@bdick.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cached-proc-macro]"
   ],
   "Version": [
-    "0.20.0-1"
+    "0.25.0-1"
   ]
 }
