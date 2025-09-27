@@ -6,16 +6,19 @@
     "librust-command-group-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0.29+fs-dev \u003c!nocheck\u003e, librust-nix-0.29+poll-dev \u003c!nocheck\u003e, librust-nix-0.29+signal-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+impl-default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+ioapiset-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+jobapi2-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+tlhelp32-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0.29+fs-dev \u003c!nocheck\u003e, librust-nix-0.29+poll-dev \u003c!nocheck\u003e, librust-nix-0.29+signal-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+impl-default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+ioapiset-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+jobapi2-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+tlhelp32-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3be48553f1e336e59abde566c1f33df9bf6e1c9d3d7610a9bf477c61568ac90c 3071 rust-command-group_2.1.0-3.dsc 5080df6b0f0ecb76cab30808f00d937ba725cebe266a3da8cd89dff92f2a9916 162533 rust-command-group_2.1.0.orig.tar.gz 5377cdb0a3836557377fbd823f74c9f890628c3c80e2bd0ffdb9ede2b168911c 3844 rust-command-group_2.1.0-3.debian.tar.xz"
+    "db34d4bb05b5582241347864b3820e461afe5214470745db80ed0477ec74a952 3062 rust-command-group_5.0.1-1.dsc a68fa787550392a9d58f44c21a3022cfb3ea3e2458b7f85d3b399d0ceeccf409 165222 rust-command-group_5.0.1.orig.tar.gz d3e74601d1dd983cbdf337f5bfa529bd9609dc7b6a352d1b29c7ffa0deaf12c3 3448 rust-command-group_5.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-command-group"
   ],
   "Files": [
-    "759d169478f6ed0fbf369fbf0fae4692 3071 rust-command-group_2.1.0-3.dsc 62e25ebad73fe2de9c86ac4d0ec0ce2a 162533 rust-command-group_2.1.0.orig.tar.gz 3edb812819c034011324cc7af3d4e8f5 3844 rust-command-group_2.1.0-3.debian.tar.xz"
+    "44e9dfeb786dd1871a32b30d5c0d4b52 3062 rust-command-group_5.0.1-1.dsc 543cf193e0f3ad611d9b30d96a7fad7b 165222 rust-command-group_5.0.1.orig.tar.gz 0a3c15457b28b7b91f4935f6293bca89 3448 rust-command-group_5.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/command-group]"
   ],
   "Version": [
-    "2.1.0-3"
+    "5.0.1-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-filedescriptor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "aefab94785f0541e490f752ee15e196f33d88582730a7fd3a747d0dcce7612de 2255 rust-filedescriptor_0.8.2-1.dsc 7199d965852c3bac31f779ef99cbb4537f80e952e2d6aa0ffeb30cce00f4f46e 10830 rust-filedescriptor_0.8.2.orig.tar.gz 3be9a1cd394c2e8ee03f1c148bcfb6fd4e97e4ff385bf261eed226dd398a4e1c 2708 rust-filedescriptor_0.8.2-1.debian.tar.xz"
+    "3586ab58d3cdf13f7fc5dcad7ffeb8ca2b2b1603ade1800653d133f315c787fb 2339 rust-filedescriptor_0.8.3-1.dsc e40758ed24c9b2eeb76c35fb0aebc66c626084edd827e07e1552279814c6682d 12635 rust-filedescriptor_0.8.3.orig.tar.gz 2a073e583e98ac2d4b0b36833df75b8d3f2dc1085eb4f4983edb4aa4dca3fd04 2816 rust-filedescriptor_0.8.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-filedescriptor"
   ],
   "Files": [
-    "9c13477c1909f67dfc4ffa293cf01f45 2255 rust-filedescriptor_0.8.2-1.dsc 3773f6b59265e41ac47d521bb2883b04 10830 rust-filedescriptor_0.8.2.orig.tar.gz 08b8f271dfb86c4ea2c2dc658c98404a 2708 rust-filedescriptor_0.8.2-1.debian.tar.xz"
+    "fa6f2ec37de0affa1b26785367b87da0 2339 rust-filedescriptor_0.8.3-1.dsc 22d6690738de6ad2602949be9e30e218 12635 rust-filedescriptor_0.8.3.orig.tar.gz b235ce2a35c65df88cda028aac514272 2816 rust-filedescriptor_0.8.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/wezterm/wezterm"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/filedescriptor"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/filedescriptor]"
   ],
   "Version": [
-    "0.8.2-1"
+    "0.8.3-1"
   ]
 }
