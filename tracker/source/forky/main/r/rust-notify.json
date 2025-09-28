@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-channel-0.5+default-dev \u003c!nocheck\u003e, librust-filetime-0.2+default-dev (\u003e= 0.2.22-~~) \u003c!nocheck\u003e, librust-inotify-0.11-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-mio+default-dev (\u003e= 0.8-~~) \u003c!nocheck\u003e, librust-mio+os-ext-dev (\u003e= 0.8-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.2.2-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-inotify-0.11-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-mio-1+default-dev \u003c!nocheck\u003e, librust-mio-1+os-ext-dev \u003c!nocheck\u003e, librust-notify-types-2+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cb3c9827342319ab102e65c985059d0035ceabb40c56a10277588d79b3330500 2707 rust-notify_6.1.1-5.dsc 6205bd8bb1e454ad2e27422015fb5e4f2bcc7e08fa8f27058670d208324a4d2d 40117 rust-notify_6.1.1.orig.tar.gz 0cc77e9ddfd63a77b47e26817883550c6e03c8dda6131056d72b2a9fc1dc074c 4412 rust-notify_6.1.1-5.debian.tar.xz"
+    "fd4dc4dc50980acfc2d1bbe8fe65e11053866be82e818ae21ba52ec95664a097 2025 rust-notify_8.2.0-2.dsc 4d3d07927151ff8575b7087f245456e549fea62edf0ec4e565a5ee50c8402bc3 39067 rust-notify_8.2.0.orig.tar.gz b8a32e17b48cb486ff249b6a756415d7838967f44b3952d47d88e3e3530aa3da 4480 rust-notify_8.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-notify"
   ],
   "Files": [
-    "4919842277a958a76bcaf724b8a87eae 2707 rust-notify_6.1.1-5.dsc 1be22bdbd81580965933512a89c00e25 40117 rust-notify_6.1.1.orig.tar.gz 8000145ef55215d3dcf2fafa9375f70b 4412 rust-notify_6.1.1-5.debian.tar.xz"
+    "ab74c06fc88192774500ecc3250a9165 2025 rust-notify_8.2.0-2.dsc 22f1c1f4e79ac72e9f95b166c08f92c9 39067 rust-notify_8.2.0.orig.tar.gz 31a046e78cd987680cef986e9235f64f 4480 rust-notify_8.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-nix-0+default-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-insta-1+default-dev, librust-nix-0.29+default-dev, librust-serde-json-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/notify]"
   ],
   "Version": [
-    "6.1.1-5"
+    "8.2.0-2"
   ]
 }

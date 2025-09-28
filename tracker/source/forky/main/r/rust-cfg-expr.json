@@ -6,16 +6,19 @@
     "librust-cfg-expr-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ed333b185ced475de9f26a613d2f7dbee7df5a0552ae54798cfdf9147e20074b 1681 rust-cfg-expr_0.15.8-1.dsc d067ad48b8650848b989a59a86c6c36a995d02d2bf778d45c3c5d57bc2718f02 42108 rust-cfg-expr_0.15.8.orig.tar.gz e895b7783b80e93d407bd318ad006a015f0068a22bbca71af97ed24e64fe3657 2892 rust-cfg-expr_0.15.8-1.debian.tar.xz"
+    "7b9210472ab2552233b15ceee004f7f60e4c6b3b293304214d02c9dc53546e03 2319 rust-cfg-expr_0.17.2-1.dsc 8d4ba6e40bd1184518716a6e1a781bf9160e286d219ccdb8ab2612e74cfe4789 44034 rust-cfg-expr_0.17.2.orig.tar.gz 56e4b83af1fb0fe397b2ffb89241be5c02f39de6df46271d4527d2fb0bec527d 2928 rust-cfg-expr_0.17.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cfg-expr"
   ],
   "Files": [
-    "a3363490fa3a7aede5d569835f6ee687 1681 rust-cfg-expr_0.15.8-1.dsc 0c1d8b083273d04346638fa4ce8ce85f 42108 rust-cfg-expr_0.15.8.orig.tar.gz c44e0614bca2032ce885916bd8ade885 2892 rust-cfg-expr_0.15.8-1.debian.tar.xz"
+    "906842ee29bcb136817d24b508519855 2319 rust-cfg-expr_0.17.2-1.dsc 94efd55d2b96829e2c6d516792cd8702 44034 rust-cfg-expr_0.17.2.orig.tar.gz 61b8dbcee182ab58f07083978c36ae3e 2928 rust-cfg-expr_0.17.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-similar-asserts-1+default-dev"
+    "dh-cargo, librust-similar-asserts-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cfg-expr]"
   ],
   "Version": [
-    "0.15.8-1"
+    "0.17.2-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-nasm-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, nasm \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, nasm \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "23f1ef1495822e72d30e7afd8a7650553ba2dd99414f766bd41e84a56adbd394 1562 rust-nasm-rs_0.2.5-1.dsc fe4d98d0065f4b1daf164b3eafb11974c94662e5e2396cf03f32d0bb5c17da51 9920 rust-nasm-rs_0.2.5.orig.tar.gz 3d6a7d49d9c9868c1dd71cb268b90a68546bbf115461f235b03bf8dd64e2c033 2844 rust-nasm-rs_0.2.5-1.debian.tar.xz"
+    "67f5174f6e6f030817d6c02d373c4900d6ae12b97d73a9106aa3ff3cb9cbd27a 1638 rust-nasm-rs_0.3.1-1.dsc 34f676553b60ccbb76f41f9ae8f2428dac3f259ff8f1c2468a174778d06a1af9 11550 rust-nasm-rs_0.3.1.orig.tar.gz dc12c78c6af1c0e7b33314383d8e3c8523be02eb99a8ef1558628bc839d2ffcf 2880 rust-nasm-rs_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nasm-rs"
   ],
   "Files": [
-    "457b61ff2dbd025b5a15ec598ea1c60d 1562 rust-nasm-rs_0.2.5-1.dsc 3a4b59ef1201a1a7e3d469f6a0d6281f 9920 rust-nasm-rs_0.2.5.orig.tar.gz f023580816e4a201e5bdf5a002e7428d 2844 rust-nasm-rs_0.2.5-1.debian.tar.xz"
+    "e16f157eacdb77ce81c293c6af5c9d74 1638 rust-nasm-rs_0.3.1-1.dsc c5454df9e083d4eb8b680ec4c4713987 11550 rust-nasm-rs_0.3.1.orig.tar.gz ed3fd18d090b8411b2b7d6275e90665f 2880 rust-nasm-rs_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nasm-rs]"
   ],
   "Version": [
-    "0.2.5-1"
+    "0.3.1-1"
   ]
 }

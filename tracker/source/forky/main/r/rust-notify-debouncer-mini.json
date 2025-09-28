@@ -6,16 +6,19 @@
     "librust-notify-debouncer-mini-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-channel-0.5+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-notify-6+crossbeam-channel-dev (\u003e= 6.1.1-~~) \u003c!nocheck\u003e, librust-notify-6+default-dev (\u003e= 6.1.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-notify-8+default-dev (\u003e= 8.2.0-~~) \u003c!nocheck\u003e, librust-notify-types-2+default-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.10.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d7d8823245d7faddf12f5dabf7fd04548d1279a5171f3483ff3fae135e404741 2671 rust-notify-debouncer-mini_0.4.1-2.dsc 5d40b221972a1fc5ef4d858a2f671fb34c75983eb385463dff3780eeff6a9d43 10227 rust-notify-debouncer-mini_0.4.1.orig.tar.gz 7db679141d12cf54a8a3ca9c60de844d8181e22287dee447c71710cdb23c8b80 2916 rust-notify-debouncer-mini_0.4.1-2.debian.tar.xz"
+    "8945ed69df95d27bf9ca413ce1aa5c986d280fc3f08164f0533c5d3a2597f7f9 1955 rust-notify-debouncer-mini_0.7.0-2.dsc 17849edfaabd9a5fef1c606d99cfc615a8e99f7ac4366406d86c7942a3184cf2 10187 rust-notify-debouncer-mini_0.7.0.orig.tar.gz b60a93d7995a01d7b4a672cbd6ed02276e81184e832fcc1f75f39454af5fab90 3292 rust-notify-debouncer-mini_0.7.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-notify-debouncer-mini"
   ],
   "Files": [
-    "46f8513034576a7316dea7cd17510782 2671 rust-notify-debouncer-mini_0.4.1-2.dsc 8aad09607e82db801c6f3a609f9c7679 10227 rust-notify-debouncer-mini_0.4.1.orig.tar.gz 163a0c16be4b31ef3304d218aa879ddb 2916 rust-notify-debouncer-mini_0.4.1-2.debian.tar.xz"
+    "5b610852d5c983102dbb48ff8ba8b332 1955 rust-notify-debouncer-mini_0.7.0-2.dsc c32ee52243769b67b3771890812aac8f 10187 rust-notify-debouncer-mini_0.7.0.orig.tar.gz 15cf3c68cb4a60871c33441e6fd4a833 3292 rust-notify-debouncer-mini_0.7.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/notify-debouncer-mini]"
   ],
   "Version": [
-    "0.4.1-2"
+    "0.7.0-2"
   ]
 }
