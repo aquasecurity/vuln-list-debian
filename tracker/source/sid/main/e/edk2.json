@@ -6,19 +6,19 @@
     "ovmf, ovmf-ia32, qemu-efi-arm, qemu-efi-aarch64, qemu-efi-riscv64, qemu-efi-loongarch64, efi-shell-ia32, efi-shell-x64, efi-shell-arm, efi-shell-aa64, efi-shell-riscv64, efi-shell-loongarch64"
   ],
   "Build-Depends": [
-    "bc, debhelper-compat (= 12), dh-exec, dosfstools, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], gcc-riscv64-linux-gnu, gcc-loongarch64-linux-gnu, iasl, lsb-release, mtools, nasm, python3, python3-virt-firmware, qemu-utils, qemu-system-arm (\u003e= 1:2.12+dfsg), qemu-system-x86 (\u003e= 1:2.12+dfsg), uuid-dev, xorriso"
+    "bc, debhelper-compat (= 12), dosfstools [amd64 arm64] \u003c!nocheck\u003e, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], gcc-riscv64-linux-gnu, gcc-loongarch64-linux-gnu, grub-efi-amd64-signed [amd64] \u003c!nocheck\u003e, grub-efi-arm64-signed [arm64] \u003c!nocheck\u003e, iasl, lsb-release, mtools [amd64 arm64] \u003c!nocheck\u003e, nasm, openssl [amd64 arm64] \u003c!nocheck\u003e, python3, python3-pexpect \u003c!nocheck\u003e, python3-virt-firmware, qemu-system-arm \u003c!nocheck\u003e, qemu-system-loongarch64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-riscv64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-x86 \u003c!nocheck\u003e, rsync, sbsigntool [amd64 arm64] \u003c!nocheck\u003e, shim-signed [amd64 arm64] \u003c!nocheck\u003e, uuid-dev, xorriso [amd64 arm64] \u003c!nocheck\u003e"
   ],
   "Build-Indep-Architecture": [
     "amd64"
   ],
   "Checksums-Sha256": [
-    "a7eac1ef65f2e44610a8c20e2d65f6593b8a82d8d5ca79eb5e188b2203032424 2630 edk2_2025.02-9.dsc b63b6053d6d89c74d9291f9e96fde1584be99e6fb9c169ba9511505129d6b049 29646336 edk2_2025.02.orig.tar.xz 37bbe74f35dc030f5cbc3250f6ba9a781dd5231a1372a459db848a24dee93471 71572 edk2_2025.02-9.debian.tar.xz"
+    "13757424ccd9b568a82d49af326c91e680f022cb0dd91e64e45dfb098717890d 3120 edk2_2025.02-10.dsc b63b6053d6d89c74d9291f9e96fde1584be99e6fb9c169ba9511505129d6b049 29646336 edk2_2025.02.orig.tar.xz bd163e85505c7b41ccebeff5880ae3c800364f0c568834e38b4bc953e1dbb40b 72832 edk2_2025.02-10.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/edk2"
   ],
   "Files": [
-    "7b0afdc61838cce49cd33bb7b081a330 2630 edk2_2025.02-9.dsc e56d64b473916304addf6e6f0b4574ff 29646336 edk2_2025.02.orig.tar.xz 8babbbfe95e1048cc2548e908a242061 71572 edk2_2025.02-9.debian.tar.xz"
+    "0519f44c7ac2c779d3518c748cb088d4 3120 edk2_2025.02-10.dsc e56d64b473916304addf6e6f0b4574ff 29646336 edk2_2025.02.orig.tar.xz 1a887482bccf0c5d84c52a5ed24e098c 72832 edk2_2025.02-10.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/qemu-team/edk2.git"
   ],
   "Version": [
-    "2025.02-9"
+    "2025.02-10"
   ]
 }
