@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "weston, weston-dev, libweston-14-0, libweston-14-dev"
+    "weston, weston-dev, weston-doc, libweston-14-0, libweston-14-dev"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), dh-exec, freerdp3-dev, libcairo2-dev (\u003e= 1.10.0), libcolord-dev (\u003e= 0.1.27), libdbus-1-dev, libdisplay-info-dev (\u003e= 0.2.0), libdrm-dev (\u003e= 2.4.108), libegl1-mesa-dev (\u003e= 9.0~), libgbm-dev (\u003e= 17.2), libgdk-pixbuf-2.0-dev, libgles2-mesa-dev (\u003e= 9.0~), libglu1-mesa-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libinput-dev (\u003e= 1.2.0), libjpeg-dev, liblcms2-dev, libneatvnc-dev (\u003e= 0.7.0) [!sparc64], libpam0g-dev, libpango1.0-dev, libpipewire-0.3-dev, libpixman-1-dev (\u003e= 0.25.2), libpng-dev, libseat-dev (\u003e= 0.4), libsystemd-dev, libudev-dev (\u003e= 136), libva-dev, libvpx-dev, libwayland-dev (\u003e= 1.22.0), libwebp-dev, libx11-dev, libx11-xcb-dev, libxcb-composite0-dev, libxcb-cursor-dev, libxcb-shape0-dev, libxcb-xfixes0-dev, libxcb-xkb-dev, libxcb1-dev, libxcursor-dev, libxkbcommon-dev (\u003e= 0.3.0), libxml2-dev, mesa-common-dev, meson (\u003e= 0.63.0), pkgconf, wayland-protocols (\u003e= 1.33), xwayland"
   ],
+  "Build-Depends-Indep": [
+    "python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "7c06118894b6274212f68e61c138a87ccbb869a5d3835aaa543570c004f8ec65 3444 weston_14.0.2-1.dsc b47216b3530da76d02a3a1acbf1846a9cd41d24caa86448f9c46f78f20b6e0ac 2043392 weston_14.0.2.orig.tar.xz a6bf2a435f9a629667c867e7983ed7d0ba88353e44354fdab708e5ea862d4ec6 833 weston_14.0.2.orig.tar.xz.asc f447cbea007d795d3d375c2ced9ce8a9e4ff8cdbc757fd8d028912d986197c3b 26472 weston_14.0.2-1.debian.tar.xz"
+    "ebaa724c0cd284438397eb84f9257547879b0567832f82cd3859c48c20740d06 3619 weston_14.0.2-3.dsc b47216b3530da76d02a3a1acbf1846a9cd41d24caa86448f9c46f78f20b6e0ac 2043392 weston_14.0.2.orig.tar.xz a6bf2a435f9a629667c867e7983ed7d0ba88353e44354fdab708e5ea862d4ec6 833 weston_14.0.2.orig.tar.xz.asc d60676465978d6de6f5b3122e66cdc1d785ce7889bc565fea7cf5f37b3896ec0 27088 weston_14.0.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/weston"
   ],
   "Files": [
-    "da6f747c314349d6c3e2dfcf03c59e04 3444 weston_14.0.2-1.dsc 4575a052e2ff3ea7819cfbf33868f8f5 2043392 weston_14.0.2.orig.tar.xz f3c67095231acc5d64fd5cd56bb1c41d 833 weston_14.0.2.orig.tar.xz.asc c69ec443873148b74f2fad482e61a524 26472 weston_14.0.2-1.debian.tar.xz"
+    "6bbbfcbfd26e62ec4626797987ba65f6 3619 weston_14.0.2-3.dsc 4575a052e2ff3ea7819cfbf33868f8f5 2043392 weston_14.0.2.orig.tar.xz f3c67095231acc5d64fd5cd56bb1c41d 833 weston_14.0.2.orig.tar.xz.asc 8e8fce5bfc62186790348372d75ef7ec 27088 weston_14.0.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "weston"
   ],
   "Package-List": [
-    "libweston-14-0 deb libs optional arch=linux-any libweston-14-dev deb libdevel optional arch=linux-any weston deb x11 optional arch=linux-any weston-dev deb x11 optional arch=linux-any"
+    "libweston-14-0 deb libs optional arch=linux-any libweston-14-dev deb libdevel optional arch=linux-any weston deb x11 optional arch=linux-any weston-dev deb x11 optional arch=linux-any weston-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "source"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/xorg-team/wayland/weston.git"
   ],
   "Version": [
-    "14.0.2-1"
+    "14.0.2-3"
   ]
 }
