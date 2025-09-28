@@ -9,16 +9,16 @@
     "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools, python3-sphinx"
   ],
   "Build-Depends-Indep": [
-    "python3-diskcache, python3-eventlet, python3-monotonic, python3-more-itertools, python3-pytest, python3-sphinx-rtd-theme, python3-testtools"
+    "python3-diskcache, python3-eventlet, python3-monotonic, python3-more-itertools, python3-pytest, python3-pytest-xdist, python3-sphinx-rtd-theme, python3-testtools"
   ],
   "Checksums-Sha256": [
-    "4bd87a62c92ee5fdf66b8481b3bbe4664b199b2aaa82c7fee72119cdafb71cba 2290 python-fasteners_0.18-2.dsc ff4d758d1457d4077df83826466b522b08946904235a1759cda861bd84277c8f 38132 python-fasteners_0.18.orig.tar.xz 527de81f2df4323b15a21affddb6c85bf500df7150affce63c7248687b5387fa 2576 python-fasteners_0.18-2.debian.tar.xz"
+    "90d12c418afeefac3f890cacb37ca1fa61156f2db0fcc837b81daee48180c1bd 2395 python-fasteners_0.19-2.dsc 993412edf0f1af71b0be5a776a1c296e5d1974912b30396345b642db5c684270 38852 python-fasteners_0.19.orig.tar.xz c09c8015746618d6750fc9ab59dabb6f506890d273aceff59c2358db8a34058c 2796 python-fasteners_0.19-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-fasteners"
   ],
   "Files": [
-    "32d66fa8f394beaeb96ea683253df0a7 2290 python-fasteners_0.18-2.dsc 6866031ea87943ab1dd4862916501363 38132 python-fasteners_0.18.orig.tar.xz 47d51cb16fffec85e9ce1d0b25f0a3de 2576 python-fasteners_0.18-2.debian.tar.xz"
+    "594fb73b2fafd0a144889368da9ff954 2395 python-fasteners_0.19-2.dsc f25dda6077701b31b6773cec8897be0b 38852 python-fasteners_0.19.orig.tar.xz c0620fa4791b691b92ddd1bee3cbefb7 2796 python-fasteners_0.19-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.1.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, pybuild-plugin-autopkgtest"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-fasteners.git"
   ],
   "Version": [
-    "0.18-2"
+    "0.19-2"
   ]
 }

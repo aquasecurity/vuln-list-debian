@@ -6,16 +6,19 @@
     "librust-ctrlc-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0.29+fs-dev \u003c!nocheck\u003e, librust-nix-0.29+signal-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix+signal-dev (\u003c\u003c 0.31-~~) \u003c!nocheck\u003e, librust-nix+signal-dev (\u003e= 0.29-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a65f41d46f0b2a8a8793158e60ddc738cd62c79a9243581c60f0dbbf7d59c0f4 2342 rust-ctrlc_3.4.5-3.dsc 90eeab0aa92f3f9b4e87f258c72b139c207d251f9cbc1080a0086b86a8870dd3 14592 rust-ctrlc_3.4.5.orig.tar.gz be932f5fb9c5b2a714678ee8fc171d20e330d0c4467fcb66088093c63c0d1977 3752 rust-ctrlc_3.4.5-3.debian.tar.xz"
+    "1cb85953d20b14bec0cb19c976d175d0bec6ebe0ef228a0deaa26694f9c3f494 2382 rust-ctrlc_3.5.0-1.dsc 881c5d0a13b2f1498e2306e82cbada78390e152d4b1378fb28a84f4dcd0dc4f3 13886 rust-ctrlc_3.5.0.orig.tar.gz 46183a1b47aa778ffcb609a207155e658f2bd31262433082e779b867826be788 4028 rust-ctrlc_3.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ctrlc"
   ],
   "Files": [
-    "7d25efc383fc54574c74f7093baf1276 2342 rust-ctrlc_3.4.5-3.dsc b52e480c8f7b8403da8763a5956d55b1 14592 rust-ctrlc_3.4.5.orig.tar.gz 46ff9857aba8c90191bf22a2d6445365 3752 rust-ctrlc_3.4.5-3.debian.tar.xz"
+    "ead38fe92475e10bfad8424931cacb59 2382 rust-ctrlc_3.5.0-1.dsc 6b7f49db7e73fc9534dc5420f631c1af 13886 rust-ctrlc_3.5.0.orig.tar.gz f8d0561247df9569c00761115bda2464 4028 rust-ctrlc_3.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ctrlc]"
   ],
   "Version": [
-    "3.4.5-3"
+    "3.5.0-1"
   ]
 }
