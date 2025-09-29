@@ -6,16 +6,19 @@
     "python3-geopy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-docutils, python3-geographiclib, python3-looseversion, python3-pytest, python3-setuptools, python3-tz"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-docutils, python3-geographiclib, python3-looseversion, python3-setuptools, python3-pytz"
+  ],
+  "Build-Depends-Indep": [
+    "python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "239ae364084fca8b27f7ca09b7c89256a5c0903ef053366f1a0288e141fdf7ea 2194 geopy_2.4.1-1.dsc 8ead40c1039459ae0a02a59482cc58925aea3c51cb3a2fa83d6f06a84d9eef94 117802 geopy_2.4.1.orig.tar.gz 167990717a9e05c6d7bb9d5e6be313c26490e9dd322f8596a854c3941bebc526 4768 geopy_2.4.1-1.debian.tar.xz"
+    "f2e80525b5444d01814dda3ee758a2bf4f7b9961c53bcfb31cdd5f1c2be0ffd6 2301 geopy_2.4.1-2.dsc 8ead40c1039459ae0a02a59482cc58925aea3c51cb3a2fa83d6f06a84d9eef94 117802 geopy_2.4.1.orig.tar.gz 95d6d8c0b036da0327a0c67b4be165aa94d2df709ab752aabb24deab9114d45f 4772 geopy_2.4.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/geopy"
   ],
   "Files": [
-    "53aec54d66ab16bdc93430efd110dc2c 2194 geopy_2.4.1-1.dsc c15ce0836e9d7f789a1cfe5395a5067a 117802 geopy_2.4.1.orig.tar.gz 5b4a60d2c12794e6cd644e8be71fdf31 4768 geopy_2.4.1-1.debian.tar.xz"
+    "792d2eb698ef24ee72949c13c1256851 2301 geopy_2.4.1-2.dsc c15ce0836e9d7f789a1cfe5395a5067a 117802 geopy_2.4.1.orig.tar.gz d4ea712a799349894d037d155bc3e809 4772 geopy_2.4.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.2.0"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-geographiclib, python3-looseversion, python3-pytest, python3-tz"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Daniele Tricoli \u003ceriol@debian.org\u003e"
+    "Daniele Tricoli \u003ceriol@debian.org\u003e, Manuel Guerra \u003car.manuelguerra@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/geopy"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/geopy.git"
   ],
   "Version": [
-    "2.4.1-1"
+    "2.4.1-2"
   ]
 }

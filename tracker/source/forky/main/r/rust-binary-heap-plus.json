@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-binary-heap-plus-dev, librust-binary-heap-plus+serde-dev"
+    "librust-binary-heap-plus-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-compare-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-compare-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1c751e0e1fe5aa4acee04dd0646ea3910ff4a6bf4c1d3980c2904e486cb48137 2432 rust-binary-heap-plus_0.4.1-1.dsc 4f068638f8ff9e118a9361e66a411eff410e7fb3ecaa23bf9272324f8fc606d7 17088 rust-binary-heap-plus_0.4.1.orig.tar.gz da8ce6b4cf9ffd971654cd0f4735e715bfdae3b7f6a9b603c506709af2ce9302 2976 rust-binary-heap-plus_0.4.1-1.debian.tar.xz"
+    "e16e157cc049e2f1583dcf17d24bae3fce192670f3fc584fa04c88241981e65b 2410 rust-binary-heap-plus_0.5.0-1.dsc e4551d8382e911ecc0d0f0ffb602777988669be09447d536ff4388d1def11296 20570 rust-binary-heap-plus_0.5.0.orig.tar.gz 2269f6129a18682000392c9a1caf6ff4d126f3659f02547ff67ed563faab965b 2728 rust-binary-heap-plus_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-binary-heap-plus"
   ],
   "Files": [
-    "9687e3f28744ea06747f291ee274beeb 2432 rust-binary-heap-plus_0.4.1-1.dsc 4cda8ca78fb8e7fad3d2e5077b87afd3 17088 rust-binary-heap-plus_0.4.1.orig.tar.gz f388f8cf3e920d7390e3d87bfc970920 2976 rust-binary-heap-plus_0.4.1-1.debian.tar.xz"
+    "41745472c023d1a3d0e15704a04ff5ff 2410 rust-binary-heap-plus_0.5.0-1.dsc 9ee54cba0d760b476dccf89f77eaa527 20570 rust-binary-heap-plus_0.5.0.orig.tar.gz 36e1c5c77882406338cc6651b751929f 2728 rust-binary-heap-plus_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sekineh/binary-heap-plus-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-binary-heap-plus"
   ],
   "Package-List": [
-    "librust-binary-heap-plus+serde-dev deb rust optional arch=any librust-binary-heap-plus-dev deb rust optional arch=any"
+    "librust-binary-heap-plus-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.7+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Dylan Aïssi \u003cdaissi@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/binary-heap-plus]"
   ],
   "Version": [
-    "0.4.1-1"
+    "0.5.0-1"
   ]
 }

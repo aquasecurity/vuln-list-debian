@@ -6,19 +6,25 @@
     "librust-home-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+shlobj-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "18586d1b27b39db66a4af8e17369656be33f9dcd425a6e7a4c051bb8ae86961f 2287 rust-home_0.5.9-1.dsc e3d1354bf6b7235cb4a0576c2619fd4ed18183f689b12b006a0ee7329eeff9a5 8760 rust-home_0.5.9.orig.tar.gz d82af52d648bd6742afb419e9a48aec2477a38526c811da196e46c62a1f94ad5 4028 rust-home_0.5.9-1.debian.tar.xz"
+    "00c9bc47109a671a4ab22589b9636566e204851de39044174d5557ec1f99a1e2 1555 rust-home_0.5.11-1.dsc 589533453244b0995c858700322199b2becb13b627df2851f64a2775d024abcf 9926 rust-home_0.5.11.orig.tar.gz 72e3eb0fe71206a1d515d139b7eeff002a0f1712ced06a3ca9fd1466b32be1cb 3016 rust-home_0.5.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-home"
   ],
   "Files": [
-    "f30a96a0cae4df1cc9b3a3f9585c208e 2287 rust-home_0.5.9-1.dsc d81f9251921f8a289dcf69fe4ccc3788 8760 rust-home_0.5.9.orig.tar.gz a7860a0005117b0693fed8ba21e82fb1 4028 rust-home_0.5.9-1.debian.tar.xz"
+    "783329ea347f3d48867dcb2759835dc0 1555 rust-home_0.5.11-1.dsc 050d875b4b8320ee1da724ef04b1d513 9926 rust-home_0.5.11.orig.tar.gz 34b13a23b1826ed22ea91bb794d2c49c 3016 rust-home_0.5.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/cargo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/home]"
   ],
   "Version": [
-    "0.5.9-1"
+    "0.5.11-1"
   ]
 }

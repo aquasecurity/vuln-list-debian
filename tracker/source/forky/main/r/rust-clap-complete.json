@@ -6,16 +6,19 @@
     "librust-clap-complete-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-4+std-dev (\u003e= 4.5.20-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-4+std-dev (\u003e= 4.5.20-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "26bfa833bcfc3127768d8fa238622623f37d79e441c8d97d913af0ad2a5f4eeb 3013 rust-clap-complete_4.5.40-1.dsc ac2e663e3e3bed2d32d065a8404024dad306e699a04263ec59919529f803aee9 47827 rust-clap-complete_4.5.40.orig.tar.gz dc7b00b36977c57a3b81f17ab46702f0d05821fd56de9f13f159d98ebc3cd95b 3924 rust-clap-complete_4.5.40-1.debian.tar.xz"
+    "4093a4ed13e79385e407db3953cd8898aebbfa5d39d6431d580390d1c168e8fe 2013 rust-clap-complete_4.5.58-1.dsc 75bf0b32ad2e152de789bb635ea4d3078f6b838ad7974143e99b99f45a04af4a 48645 rust-clap-complete_4.5.58.orig.tar.gz 7c2776cbb09d36d64691a70df53a6aa4928220cd49d728c4debb131bdeff2938 3856 rust-clap-complete_4.5.58-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-clap-complete"
   ],
   "Files": [
-    "d9046cde9aa38fd766d94187d0b47a89 3013 rust-clap-complete_4.5.40-1.dsc 506bf0cfe252e6887c31e9295f5e1df0 47827 rust-clap-complete_4.5.40.orig.tar.gz b2809f2bccc7815bb6b14e17a29543ec 3924 rust-clap-complete_4.5.40-1.debian.tar.xz"
+    "2e6f39df179027ab9eb3b52d5efbacd1 2013 rust-clap-complete_4.5.58-1.dsc d6831fb8b4620d3e4e05db6ec9d5f96c 48645 rust-clap-complete_4.5.58.orig.tar.gz 409862e6e3422a015907c7bfb4f2988a 3856 rust-clap-complete_4.5.58-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-automod-1+default-dev, librust-clap-4+derive-dev, librust-clap-4+help-dev, librust-clap-4+std-dev, librust-snapbox-0.4+default-dev, librust-snapbox-0.4+diff-dev, librust-snapbox-0.4+examples-dev, librust-snapbox-0.4+path-dev, librust-snapbox-0.5+default-dev, librust-snapbox-0.5+diff-dev, librust-snapbox-0.5+examples-dev, librust-snapbox-0.5+path-dev, librust-snapbox-0.6+default-dev, librust-snapbox-0.6+diff-dev, librust-snapbox-0.6+examples-dev, librust-snapbox-0.6+path-dev, librust-trycmd-0.14+color-auto-dev, librust-trycmd-0.14+diff-dev, librust-trycmd-0.14+examples-dev, librust-trycmd-0.15+color-auto-dev, librust-trycmd-0.15+diff-dev, librust-trycmd-0.15+examples-dev, rustc"
+    "dh-cargo, librust-automod-1+default-dev, librust-clap-4+derive-dev, librust-clap-4+help-dev, librust-clap-4+std-dev, librust-snapbox+default-dev, librust-snapbox+diff-dev, librust-snapbox+examples-dev, librust-snapbox+path-dev, librust-trycmd+color-auto-dev, librust-trycmd+diff-dev, librust-trycmd+examples-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/clap-complete]"
   ],
   "Version": [
-    "4.5.40-1"
+    "4.5.58-1"
   ]
 }
