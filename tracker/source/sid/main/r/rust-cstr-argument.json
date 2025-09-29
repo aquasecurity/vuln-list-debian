@@ -6,19 +6,25 @@
     "librust-cstr-argument-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-0.1+default-dev \u003c!nocheck\u003e, librust-memchr-2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-memchr-2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bfc4f9f2afa7ef339c51e2d5597da7daf439f4940f77e48e384274f15e01b6f3 2252 rust-cstr-argument_0.1.1-2.dsc 20bd4e8067c20c7c3a4dea759ef91d4b18418ddb5bd8837ef6e2f2f93ca7ccbb 4248 rust-cstr-argument_0.1.1.orig.tar.gz cdee93cc0cb526390c020b59990bf218bdf20af1ca6f5bf03cbb56470418d19d 2600 rust-cstr-argument_0.1.1-2.debian.tar.xz"
+    "89070fcf31ecb7ff013023d2da2e3738adb204abd6b52d327b3a6132dbd86c30 2336 rust-cstr-argument_0.1.2-1.dsc b6bd9c8e659a473bce955ae5c35b116af38af11a7acb0b480e01f3ed348aeb40 4204 rust-cstr-argument_0.1.2.orig.tar.gz 803a996ab2151b292c5a024120ae6f68154d3669720fc5b1004ad1e5899ff14c 2704 rust-cstr-argument_0.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cstr-argument"
   ],
   "Files": [
-    "b02316f8dce7067e15126fc7c13b392b 2252 rust-cstr-argument_0.1.1-2.dsc 4e37c68ba4c581abbdde984026e7b6fa 4248 rust-cstr-argument_0.1.1.orig.tar.gz 42ed14d8ba86c4faa9af98ff8f222332 2600 rust-cstr-argument_0.1.1-2.debian.tar.xz"
+    "4116cf6b6c5cba4c75be043a5200a6a4 2336 rust-cstr-argument_0.1.2-1.dsc c610f7672d8c9873701350fdd6805d63 4204 rust-cstr-argument_0.1.2.orig.tar.gz ab2253feb8553a03b95927af1c63c907 2704 rust-cstr-argument_0.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/johnschug/cstr-argument"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cstr-argument]"
   ],
   "Version": [
-    "0.1.1-2"
+    "0.1.2-1"
   ]
 }
