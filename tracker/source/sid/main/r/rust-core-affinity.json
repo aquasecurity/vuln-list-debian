@@ -6,16 +6,19 @@
     "librust-core-affinity-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.30-~~) \u003c!nocheck\u003e, librust-num-cpus-1+default-dev (\u003e= 1.14.0-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.30-~~) \u003c!nocheck\u003e, librust-num-cpus-1+default-dev (\u003e= 1.14.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "902c058a7bbfc9a4662e10e171657f976fa58a33350d06fc51c58995449a1a8a 2549 rust-core-affinity_0.8.1-1.dsc 622892f5635ce1fc38c8f16dfc938553ed64af482edb5e150bf4caedbfcb2304 9604 rust-core-affinity_0.8.1.orig.tar.gz 53efee9a40b80e8ebc4f52159e58a9e7f989a379cb44e89a0e0877561fc50524 2660 rust-core-affinity_0.8.1-1.debian.tar.xz"
+    "a3ecfcc28fee7eb2b1e2ceb1af4ee7553fde70feb58248860003bd43ec286b8b 2379 rust-core-affinity_0.8.3-1.dsc a034b3a7b624016c6e13f5df875747cc25f884156aad2abd12b6c46797971342 10314 rust-core-affinity_0.8.3.orig.tar.gz db6426897684ff29eb1951c7cf637d3797ada7644fd51c428f879e39320becd7 2876 rust-core-affinity_0.8.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-core-affinity"
   ],
   "Files": [
-    "1cb1d4dea113cf0b9871f2e9c10f1360 2549 rust-core-affinity_0.8.1-1.dsc 4f42be707256e9f34b5e03d8bc6e3ca3 9604 rust-core-affinity_0.8.1.orig.tar.gz 43c3a523d396a67c53167543a37c8eb1 2660 rust-core-affinity_0.8.1-1.debian.tar.xz"
+    "7874fd50726acfe39e501b03ca6b9bd9 2379 rust-core-affinity_0.8.3-1.dsc 4b2bfa3d33a670080a516f1b32259fe9 10314 rust-core-affinity_0.8.3.orig.tar.gz bd35fc62f0c92e13794098254df8e821 2876 rust-core-affinity_0.8.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/core-affinity]"
   ],
   "Version": [
-    "0.8.1-1"
+    "0.8.3-1"
   ]
 }

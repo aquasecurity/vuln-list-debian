@@ -6,16 +6,19 @@
     "librust-atty-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2-dev \u003c!nocheck\u003e, librust-winapi-0.3+consoleapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwinbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev \u003c!nocheck\u003e, librust-winapi-0.3+processenv-dev \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev \u003c!nocheck\u003e, bsdutils \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, bsdutils \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f5382935a24f1942550deb52968ceeb39807116f0c08393e5a1f96d4654df67b 2445 rust-atty_0.2.14-2.dsc d9b39be18770d11421cdb1b9947a45dd3f37e93092cbf377614828a319d5fee8 5470 rust-atty_0.2.14.orig.tar.gz ee4f1a474a06b682965e122c358d0f76ef6c9b80772c14e6a8237c3281d20107 3084 rust-atty_0.2.14-2.debian.tar.xz"
+    "dc09e13fa2f0a0bc9533e0864951733eceb1d6d94709ff3a49d3c2f467897d7a 2209 rust-atty_0.2.14-3.dsc d9b39be18770d11421cdb1b9947a45dd3f37e93092cbf377614828a319d5fee8 5470 rust-atty_0.2.14.orig.tar.gz 263a39e100f6baf6319c49f698c2268ce15026eafa01478b4dedcd515d0da927 3280 rust-atty_0.2.14-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-atty"
   ],
   "Files": [
-    "91fa4402734bd0c3f9c21ce36f413ef8 2445 rust-atty_0.2.14-2.dsc 142cb4b9a653e56e56311f0c883b8582 5470 rust-atty_0.2.14.orig.tar.gz 16ab2bf2351ae24579095914a1fa0b28 3084 rust-atty_0.2.14-2.debian.tar.xz"
+    "fc70f6284d54010448325ae8892969b9 2209 rust-atty_0.2.14-3.dsc 142cb4b9a653e56e56311f0c883b8582 5470 rust-atty_0.2.14.orig.tar.gz 306d4fa4870b023554846245b58a18ab 3280 rust-atty_0.2.14-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/atty]"
   ],
   "Version": [
-    "0.2.14-2"
+    "0.2.14-3"
   ]
 }

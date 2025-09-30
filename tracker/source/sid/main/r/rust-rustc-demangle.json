@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-rustc-demangle-dev, librust-rustc-demangle+compiler-builtins-dev, librust-rustc-demangle+core-dev, librust-rustc-demangle+rustc-dep-of-std-dev"
+    "librust-rustc-demangle-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1875732051854ae1087e5780f36bd5b098be9559b0a7a7ffcdf32e5a7dc79360 2644 rust-rustc-demangle_0.1.24-1.dsc 719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f 29047 rust-rustc-demangle_0.1.24.orig.tar.gz e146bfa2c32e215d54ada686d1a0a9695228956942736bfb239bb1784a14b572 3432 rust-rustc-demangle_0.1.24-1.debian.tar.xz"
+    "08f0492a8ed2d69a4319a46def1199f15fc8a3b6bed3cf714dc56cb296e312da 2350 rust-rustc-demangle_0.1.24-2.dsc 719b953e2095829ee67db738b3bfa9fa368c94900df327b3f07fe6e794d2fe1f 29047 rust-rustc-demangle_0.1.24.orig.tar.gz 9cee86877d6d0e965fbaf5e084f6531e85624458f4c830d48bd693ec0f444989 3320 rust-rustc-demangle_0.1.24-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustc-demangle"
   ],
   "Files": [
-    "b253d041db3dfa58014567cc4c9863c4 2644 rust-rustc-demangle_0.1.24-1.dsc b400c455aaf7d3e6a216261f07c4bc93 29047 rust-rustc-demangle_0.1.24.orig.tar.gz b8cc95d40159d7054bdd8373337019a8 3432 rust-rustc-demangle_0.1.24-1.debian.tar.xz"
+    "381b948d01a65c0feea94d3a2d411fd8 2350 rust-rustc-demangle_0.1.24-2.dsc b400c455aaf7d3e6a216261f07c4bc93 29047 rust-rustc-demangle_0.1.24.orig.tar.gz 1382762c3ba72c8240150ae8dc87abbb 3320 rust-rustc-demangle_0.1.24-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-rustc-demangle"
   ],
   "Package-List": [
-    "librust-rustc-demangle+compiler-builtins-dev deb rust optional arch=any librust-rustc-demangle+core-dev deb rust optional arch=any librust-rustc-demangle+rustc-dep-of-std-dev deb rust optional arch=any librust-rustc-demangle-dev deb rust optional arch=any"
+    "librust-rustc-demangle-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustc-demangle]"
   ],
   "Version": [
-    "0.1.24-1"
+    "0.1.24-2"
   ]
 }
