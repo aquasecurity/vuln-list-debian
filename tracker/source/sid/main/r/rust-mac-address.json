@@ -6,19 +6,25 @@
     "librust-mac-address-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0+default-dev (\u003e= 0.26-~~) \u003c!nocheck\u003e, librust-nix-0+net-dev (\u003e= 0.26-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+iphlpapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e, librust-winapi-0.3+ws2def-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0.29+default-dev \u003c!nocheck\u003e, librust-nix-0.29+net-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "035b8b6976fbc3d8f80fe90954f9966059aa1bffbfe6a99deb49abe758ddd8f7 2516 rust-mac-address_1.1.5-2.dsc 4863ee94f19ed315bf3bc00299338d857d4b5bc856af375cc97d237382ad3856 12191 rust-mac-address_1.1.5.orig.tar.gz cc372630ebb88dc7641b445bfae72c876dd32a598468029dcc425c407718f6a0 3848 rust-mac-address_1.1.5-2.debian.tar.xz"
+    "26c4b1cf4da5352bb34fb40a9d6b54fb823a3160085ebeab354ee488eb7056ef 2376 rust-mac-address_1.1.8-1.dsc c0aeb26bf5e836cc1c341c8106051b573f1766dfa05aa87f0b98be5e51b02303 12876 rust-mac-address_1.1.8.orig.tar.gz 2556b90555af5c201c453e3aafc3c38b8d005578be489157c8009fc0af42d3ba 3068 rust-mac-address_1.1.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-mac-address"
   ],
   "Files": [
-    "d26a618710a0fbc62f9b38e7acd036ed 2516 rust-mac-address_1.1.5-2.dsc fbf034d9ed86bbed64b0ab7c4828c26c 12191 rust-mac-address_1.1.5.orig.tar.gz 7f69bfef1d46bbf7fd24c1d56f9aaea0 3848 rust-mac-address_1.1.5-2.debian.tar.xz"
+    "5918bc40cc2ac8d0e4b0daf35d00f802 2376 rust-mac-address_1.1.8-1.dsc 8ca3be1a8c02624bcd319089afb6454c 12876 rust-mac-address_1.1.8.orig.tar.gz c0c889deab6b7502d0587329d4167c60 3068 rust-mac-address_1.1.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rep-nop/mac_address"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/mac-address]"
   ],
   "Version": [
-    "1.1.5-2"
+    "1.1.8-1"
   ]
 }

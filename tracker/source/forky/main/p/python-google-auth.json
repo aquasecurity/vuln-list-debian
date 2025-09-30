@@ -9,16 +9,16 @@
     "debhelper-compat (= 12), dh-python, openstack-pkg-tools, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-cachetools (\u003e= 2.0.0), python3-certifi, python3-cryptography, python3-flask, python3-mock, python3-openssl, python3-pyasn1, python3-pyasn1-modules (\u003e= 0.2.1), python3-pytest, python3-pytest-localserver, python3-pyu2f, python3-requests, python3-responses, python3-rsa, python3-urllib3"
+    "python3-aiohttp, python3-cachetools (\u003e= 2.0.0), python3-certifi, python3-cryptography, python3-flask, python3-jwt, python3-mock, python3-openssl, python3-pyasn1, python3-pyasn1-modules (\u003e= 0.2.1), python3-pytest, python3-pytest-asyncio, python3-pytest-localserver, python3-pytest-xdist, python3-pyu2f, python3-requests, python3-responses, python3-rsa, python3-urllib3"
   ],
   "Checksums-Sha256": [
-    "0abb184d5378399c0c7a340ad63f5480a46cf59f66bdee406a6790d6fbbd1f9c 2463 python-google-auth_2.28.2-3.dsc 8d0d13bae2b30b97f629b580f12d2a46a7dfd401e46979dba5bd429ad894dda1 263672 python-google-auth_2.28.2.orig.tar.xz 58075b1933a193f2e4db8d7c7acd482643ba21fb947219cf7db203c04d5ae936 2540 python-google-auth_2.28.2-3.debian.tar.xz"
+    "8ee13c08dab3b8079ed369621d464903dc0fb45facadf0efcc3510c6062b1b17 2605 python-google-auth_2.40.3-2.dsc 9132f9df1138732134254e1266a2f581b97f58139c0eea58e100dcd8030ca82d 276244 python-google-auth_2.40.3.orig.tar.xz 318e3cdbc708f3cf9e80ba5847f6986aa735f0bc2b94bedc104b175ab9fb0409 2776 python-google-auth_2.40.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-google-auth"
   ],
   "Files": [
-    "793e412d659277c02f4a66c840802bd2 2463 python-google-auth_2.28.2-3.dsc f888c6080cbce81a5dafe1d162f0d720 263672 python-google-auth_2.28.2.orig.tar.xz 8b180154ce8fdb7c5ff35452d0eec46d 2540 python-google-auth_2.28.2-3.debian.tar.xz"
+    "001cbf65c44757237c2a67e8c69c9d00 2605 python-google-auth_2.40.3-2.dsc e2ad799e513f3b8231e4ade9db4f744a 276244 python-google-auth_2.40.3.orig.tar.xz bc16432093569ec485ea93dfaa42f271 2776 python-google-auth_2.40.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.4.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, pybuild-plugin-autopkgtest"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e,"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/python/python-google-auth.git"
   ],
   "Version": [
-    "2.28.2-3"
+    "2.40.3-2"
   ]
 }
