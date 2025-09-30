@@ -1,27 +1,27 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "fractgen"
+    "fractgen, kfractgen, clifractgen, fractgen-common, fractgen-examples"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), qtbase5-dev, qttools5-dev, qtchooser"
+    "debhelper-compat (= 13), cmake, extra-cmake-modules, libkf6coreaddons-dev, libkf6xmlgui-dev, qt6-base-dev, qt6-l10n-tools"
   ],
   "Checksums-Sha256": [
-    "fb7174223c3fabddef59d1cf5391b1513b0ee4e5a49cf38294acd1660a156023 1626 fractgen_2.1.13-1.dsc 87c42028af6735c016d537565c10a664b793947288cc0e74c3bedb5b00dc1d53 315668 fractgen_2.1.13.orig.tar.xz dae5b7b57cca2b24a9eae97a14794a4315611f852341965db876ee0f0a33b29b 2913 fractgen_2.1.13.orig.tar.xz.asc 067381140d32b367b1e615fe352c31734e98773aecd49489f0954baac981a41b 78360 fractgen_2.1.13-1.debian.tar.xz"
+    "83c94fa1b63a0cde5cc05b4cdec52907efca7a37f00aaea3c6cb6a9d31b4de96 2025 fractgen_3.0.5-1.dsc e6144cfb556f38ffbf2fe29c2526155c0f5677e0e090bd22053fdc0dc00b355f 342408 fractgen_3.0.5.orig.tar.xz 752ef060054b56003c5b853baa92effa9a86e488f997e12629aeafe9511dac8d 2913 fractgen_3.0.5.orig.tar.xz.asc 6a4abefbcf693c456b2159c8636a1b69d7ae39c6552adc79d45b10d247f02b66 79588 fractgen_3.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fractgen"
   ],
   "Files": [
-    "0917304a777b5bcf8e0385f426ec8f50 1626 fractgen_2.1.13-1.dsc 9fa8fc98c1134e2f25bd6e9d0969823c 315668 fractgen_2.1.13.orig.tar.xz 593902e38c45d51b9ab25711cefa3d2c 2913 fractgen_2.1.13.orig.tar.xz.asc 237906f30326ff286c48f0fc40a0c57a 78360 fractgen_2.1.13-1.debian.tar.xz"
+    "22590e971984be6f0659bcf82c6b5aa4 2025 fractgen_3.0.5-1.dsc 35b7b4b44a80ba0c40515f887601e9cc 342408 fractgen_3.0.5.orig.tar.xz 305d7bddcd1b144b3cfa41ca797c5e32 2913 fractgen_3.0.5.orig.tar.xz.asc 6f3472bdd7ea53b6146b5c2f20405ab3 79588 fractgen_3.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://www.nntb.no/~dreibh/fractalgenerator"
+    "https://www.nntb.no/~dreibh/fractalgenerator/"
   ],
   "Maintainer": [
     "Debian Math Team \u003cteam+math@tracker.debian.org\u003e"
@@ -30,7 +30,7 @@
     "fractgen"
   ],
   "Package-List": [
-    "fractgen deb graphics optional arch=any"
+    "clifractgen deb graphics optional arch=any fractgen deb graphics optional arch=any fractgen-common deb graphics optional arch=all fractgen-examples deb graphics optional arch=all kfractgen deb graphics optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "graphicsmagick"
   ],
   "Uploaders": [
-    "Nilesh Patra \u003cnilesh@debian.org\u003e"
+    "Nilesh Patra \u003cnilesh@debian.org\u003e, Thomas Dreibholz \u003cthomas.dreibholz@gmail.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/math-team/fractgen"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/math-team/fractgen.git"
   ],
   "Version": [
-    "2.1.13-1"
+    "3.0.5-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-tr-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gettext-rs-0.7+default-dev \u003c!nocheck\u003e, librust-gettext-rs-0.7+gettext-system-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gettext-rs-0.7+default-dev \u003c!nocheck\u003e, librust-gettext-rs-0.7+gettext-system-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b2190b689f45401855712757f8eb04562c12f89d7be631ee7fbfc7e07d0ba418 2198 rust-tr_0.1.7-1.dsc 21111d9e56891e526f1acf8edc6d69a8a0434240319419d33911c182f1897a76 7906 rust-tr_0.1.7.orig.tar.gz 264efa3933261df16fc71cebf36c667447644ec800ceb4a23c976f86f71ab104 2656 rust-tr_0.1.7-1.debian.tar.xz"
+    "bc4b869933fa4d5f4609ec33d242bdaf96e692a3f5c76d3f064dcfa37dcd253a 2266 rust-tr_0.1.11-1.dsc 79d30c7e79732253d80e9d619007002c8f3a362b0816e37340af648d4e2c6092 20953 rust-tr_0.1.11.orig.tar.gz 2f75be894f787adb5b22388279bd1bc0f3c1ab03aea7884a3a6d3492165f1f6a 2900 rust-tr_0.1.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tr"
   ],
   "Files": [
-    "feef9e6ff2fcfef1afbcb460c5437046 2198 rust-tr_0.1.7-1.dsc fd668d38d7b99531b9c9e4d6e8fa892f 7906 rust-tr_0.1.7.orig.tar.gz d7099d831c4044b2ba98149087bcc67a 2656 rust-tr_0.1.7-1.debian.tar.xz"
+    "181f1538f3e8a1005b043ccc6eeef4be 2266 rust-tr_0.1.11-1.dsc 92ac1e8fecb78f6faa95c52547ecd0a6 20953 rust-tr_0.1.11.orig.tar.gz 5247c43f8f025ca01a65efbe974928f8 2900 rust-tr_0.1.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/woboq/tr"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tr]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.1.11-1"
   ]
 }
