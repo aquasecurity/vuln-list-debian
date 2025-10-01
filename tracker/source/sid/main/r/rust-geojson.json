@@ -6,19 +6,25 @@
     "librust-geojson-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-geo-types-0.7+default-dev \u003c!nocheck\u003e, librust-geo-types-0.7+serde-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-serde-1.0+default-dev \u003c!nocheck\u003e, librust-serde-1.0+derive-dev \u003c!nocheck\u003e, librust-serde-json-1.0+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.20-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-geo-types-0.7+default-dev (\u003e= 0.7.11-~~) \u003c!nocheck\u003e, librust-geo-types-0.7+serde-dev (\u003e= 0.7.11-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003c\u003c 1.1-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003c\u003c 1.1-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003c\u003c 1.1-~~) \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.6-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8b0f0a97d61fdd51efaf15fef503c74202227f5008b72b95eaa7ef0e26b0e4b0 2562 rust-geojson_0.24.1-1.dsc a5d728c1df1fbf328d74151efe6cb0586f79ee813346ea981add69bd22c9241b 177524 rust-geojson_0.24.1.orig.tar.gz 1574ed203c92763d868b8557af43bd17280c460f3437026725e7e2d90e0c8947 3492 rust-geojson_0.24.1-1.debian.tar.xz"
+    "76500911973d848fa627d63a4193c9035cfd78b1ad95867adb88b744170f6e3c 2728 rust-geojson_0.24.2-1.dsc e26f3c45b36fccc9cf2805e61d4da6bc4bbd5a3a9589b01afa3a40eff703bd79 181702 rust-geojson_0.24.2.orig.tar.gz 4f12e801a0b814bc93e38358c9b972129f29cbb430d8cb0e5e1e596c7e963393 3504 rust-geojson_0.24.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-geojson"
   ],
   "Files": [
-    "73a4099b287f0578c5de89321bf189cc 2562 rust-geojson_0.24.1-1.dsc dda118c6bc3362cc840d919505837be8 177524 rust-geojson_0.24.1.orig.tar.gz f9daace08970e46b511427c5a34e90b0 3492 rust-geojson_0.24.1-1.debian.tar.xz"
+    "2534c61464a3446823009ca9dde10e3d 2728 rust-geojson_0.24.2-1.dsc a868702b2fcaf102658e72ece1e326e2 181702 rust-geojson_0.24.2.orig.tar.gz 1e0fa39e2297792bbe3e05b002581170 3504 rust-geojson_0.24.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/georust/geojson"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-num-traits-0.2+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-num-traits-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e, Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/geojson]"
   ],
   "Version": [
-    "0.24.1-1"
+    "0.24.2-1"
   ]
 }
