@@ -6,19 +6,25 @@
     "librust-input-linux-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-nix-0.29+default-dev \u003c!nocheck\u003e, librust-nix-0.29+ioctl-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-nix-0+default-dev (\u003e= 0.29-~~) \u003c!nocheck\u003e, librust-nix-0+ioctl-dev (\u003e= 0.29-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "19b310dbe85217cd20cc53554561fedf1deadf681f53bea868d0da9466e3b123 2357 rust-input-linux-sys_0.9.0-1.dsc 7b91b2248b0eaf0a576ef5e60b7f2107a749e705a876bc0b9fe952ac8d83a724 14891 rust-input-linux-sys_0.9.0.orig.tar.gz 4ceab8f908215c5a5b6ea1d88ac48aa3317a3050a63cd9a7edde1b5fc4486377 2720 rust-input-linux-sys_0.9.0-1.debian.tar.xz"
+    "253f7063e491bbf275723497e10423aae5b1863d35672f1533ee8e874b65fc58 2452 rust-input-linux-sys_0.9.0-2.dsc 7b91b2248b0eaf0a576ef5e60b7f2107a749e705a876bc0b9fe952ac8d83a724 14891 rust-input-linux-sys_0.9.0.orig.tar.gz deeb59d43e23e3a7d38656a50643112f8b42887f9609dcbd38619292a06cb003 2940 rust-input-linux-sys_0.9.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-input-linux-sys"
   ],
   "Files": [
-    "5d1d42e221e6a007cf9ecf7bd9a4f978 2357 rust-input-linux-sys_0.9.0-1.dsc 93192160ab5d8db6af628051e5837509 14891 rust-input-linux-sys_0.9.0.orig.tar.gz 6d4c701bdb949da0393def338bdfe900 2720 rust-input-linux-sys_0.9.0-1.debian.tar.xz"
+    "2b29a3f0fb8e48420ef2bb286f149f19 2452 rust-input-linux-sys_0.9.0-2.dsc 93192160ab5d8db6af628051e5837509 14891 rust-input-linux-sys_0.9.0.orig.tar.gz fd5fee857dd2416a0fb8f0b5ddd05c9d 2940 rust-input-linux-sys_0.9.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/arcnmx/input-linux-sys-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/input-linux-sys]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.9.0-2"
   ]
 }
