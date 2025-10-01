@@ -6,16 +6,19 @@
     "librust-termcolor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-winapi-util-0.1+default-dev (\u003e= 0.1.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e28c536eebee56781c19f27b68e6467cc10a08228ff26eb08ac779cbe180ea6d 2270 rust-termcolor_1.4.1-1.dsc 06794f8f6c5c898b3275aebefa6b8a1cb24cd2c6c79397ab15774837a0bc5755 18773 rust-termcolor_1.4.1.orig.tar.gz cf952a8259011e44c45f9e24843522c6c7b5806f8507674da9373bb3672e7eea 3192 rust-termcolor_1.4.1-1.debian.tar.xz"
+    "4c69bd5d3bcc7210e42829c7639c200a402f9fe3e28e8d71c591e631a92f9646 2212 rust-termcolor_1.4.1-2.dsc 06794f8f6c5c898b3275aebefa6b8a1cb24cd2c6c79397ab15774837a0bc5755 18773 rust-termcolor_1.4.1.orig.tar.gz 7e61b5e50c2cb6fd6542818dbf9952f1876098078920eb1a6151df7eb2ae9a14 3348 rust-termcolor_1.4.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-termcolor"
   ],
   "Files": [
-    "87dee1f68700a8e4a779f3f23e0f2123 2270 rust-termcolor_1.4.1-1.dsc b83e3c4eee8862b3cd0dc8570da6d0c0 18773 rust-termcolor_1.4.1.orig.tar.gz aaf6c4b39d3982786b6df7ccd8c7c0e1 3192 rust-termcolor_1.4.1-1.debian.tar.xz"
+    "caf81b7a738e89965e0838e7d098281f 2212 rust-termcolor_1.4.1-2.dsc b83e3c4eee8862b3cd0dc8570da6d0c0 18773 rust-termcolor_1.4.1.orig.tar.gz 51b09a7d9699cfe7eadb1da57312e9fa 3348 rust-termcolor_1.4.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/termcolor]"
   ],
   "Version": [
-    "1.4.1-1"
+    "1.4.1-2"
   ]
 }

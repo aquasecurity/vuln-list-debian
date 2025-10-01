@@ -6,16 +6,19 @@
     "librust-proptest-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+extra-traits-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e, librust-syn-1+visit-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+extra-traits-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e, librust-syn-1+visit-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c7f2ac4cc5e53a1b01b2d09489ef911b0466850d3bfcd6f4a1cea95749f02956 2725 rust-proptest-derive_0.4.0-1.dsc 9cf16337405ca084e9c78985114633b6827711d22b9e6ef6c6c0d665eb3f0b6e 51540 rust-proptest-derive_0.4.0.orig.tar.gz 0cf9e177beb367d841f8f885bf9e7f49062552c5de4043d8ade8aec12ff1f3bf 5076 rust-proptest-derive_0.4.0-1.debian.tar.xz"
+    "32fe09b031cbaba702f5c967fa1ebdb21dd73550990f286d75686b00e41a3394 2733 rust-proptest-derive_0.4.0-2.dsc 9cf16337405ca084e9c78985114633b6827711d22b9e6ef6c6c0d665eb3f0b6e 51540 rust-proptest-derive_0.4.0.orig.tar.gz e1ba0ff14b8c14ab58c064a7425712fba8f36b773e7b94b1763a7e78ac3bbf6a 5156 rust-proptest-derive_0.4.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-proptest-derive"
   ],
   "Files": [
-    "c115f2af8856d16b36d05b9edf55ce48 2725 rust-proptest-derive_0.4.0-1.dsc 49e6a8dbeb1509487a04ac72d5da3c0d 51540 rust-proptest-derive_0.4.0.orig.tar.gz ea235a91297086126db03c820e889de6 5076 rust-proptest-derive_0.4.0-1.debian.tar.xz"
+    "7e764cb9c841fffd20e3c879c89f35ba 2733 rust-proptest-derive_0.4.0-2.dsc 49e6a8dbeb1509487a04ac72d5da3c0d 51540 rust-proptest-derive_0.4.0.orig.tar.gz 26761cf58c65bde283409a06ea7a6391 5156 rust-proptest-derive_0.4.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-compiletest-rs-0.10+default-dev, librust-compiletest-rs-0.10+stable-dev, librust-compiletest-rs-0.10+tmp-dev, librust-criterion-0.5+default-dev, librust-proptest-1+default-dev"
+    "dh-cargo, librust-compiletest-rs-0.11+default-dev, librust-compiletest-rs-0.11+stable-dev, librust-compiletest-rs-0.11+tmp-dev, librust-criterion-0.5+default-dev, librust-proptest-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/proptest-derive]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.4.0-2"
   ]
 }

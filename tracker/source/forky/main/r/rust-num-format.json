@@ -6,16 +6,19 @@
     "librust-num-format-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev \u003c!nocheck\u003e, librust-itoa-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e, librust-itoa-1-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c3def3792577cd06d65960169c3f1132269c4b79a814e6499f61b9eb0cf4585d 2461 rust-num-format_0.4.0-4.dsc bafe4179722c2894288ee77a9f044f02811c86af699344c498b0840c698a2465 59791 rust-num-format_0.4.0.orig.tar.gz afdb6dcf7ab562d4376217c2d73f638d80d36b883a48257a1264b36b112fdcd4 6172 rust-num-format_0.4.0-4.debian.tar.xz"
+    "8555a6d303046c063fc13dca6efad49d741ff1b3280b645083a097a1663b2628 2505 rust-num-format_0.4.4-1.dsc a652d9771a63711fd3c3deb670acfbe5c30a4072e664d7a3bf5a9e1056ac72c3 61509 rust-num-format_0.4.4.orig.tar.gz 9022626b73b133f598f63f8c72203bdb2f569fdcf8a708a380035b04d31c4fa3 4964 rust-num-format_0.4.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-format"
   ],
   "Files": [
-    "55487f9c9d60c245b50a79e50a155b0f 2461 rust-num-format_0.4.0-4.dsc 3b027e0552a23d034328df67ef782910 59791 rust-num-format_0.4.0.orig.tar.gz 9367bb9dd05bc75bf0f71b306ef41a5f 6172 rust-num-format_0.4.0-4.debian.tar.xz"
+    "2d0129057f42f6c71c1f03af7aad2cde 2505 rust-num-format_0.4.4-1.dsc 8ca0c760be72a54667baeb09fc5a0578 61509 rust-num-format_0.4.4.orig.tar.gz fef4750e1a8da41dc2c70f1c571cdc22 4964 rust-num-format_0.4.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cfg-if-0.1+default-dev, librust-lazy-static-1+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-cfg-if-1+default-dev, librust-lazy-static-1+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-format]"
   ],
   "Version": [
-    "0.4.0-4"
+    "0.4.4-1"
   ]
 }

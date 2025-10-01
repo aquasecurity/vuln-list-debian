@@ -6,19 +6,25 @@
     "librust-dirs-next-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-0+default-dev \u003c!nocheck\u003e, librust-dirs-sys-next-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-dirs-sys-next-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51275903fbfa35dba229c1314575e06d846567e7173cadb0dde75f4277a5cd01 2220 rust-dirs-next_2.0.0-1.dsc b98cf8ebf19c3d1b223e151f99a4f9f0690dca41414773390fc824184ac833e1 11689 rust-dirs-next_2.0.0.orig.tar.gz f169dbee3a600212ee7bd99d31986f4237e0910148f620b223910bb4c16b2d6d 2992 rust-dirs-next_2.0.0-1.debian.tar.xz"
+    "cdb9088d7226a98fcab7525d585c0ff6b36086a1610d778925cf4f391d18e2f5 2294 rust-dirs-next_2.0.0-2.dsc b98cf8ebf19c3d1b223e151f99a4f9f0690dca41414773390fc824184ac833e1 11689 rust-dirs-next_2.0.0.orig.tar.gz bd661330cf6ad757987ce61eaa6abee61b519ebd3598e501c0d3a34efdb76b7d 2704 rust-dirs-next_2.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dirs-next"
   ],
   "Files": [
-    "24e059901ca9eb279b063035042488aa 2220 rust-dirs-next_2.0.0-1.dsc 3681f813c502d911e9eea940dddd26a5 11689 rust-dirs-next_2.0.0.orig.tar.gz 140ba2a38a806a17f4af35275888d298 2992 rust-dirs-next_2.0.0-1.debian.tar.xz"
+    "d6660836f85c709bbe0cfaf7f536f359 2294 rust-dirs-next_2.0.0-2.dsc 3681f813c502d911e9eea940dddd26a5 11689 rust-dirs-next_2.0.0.orig.tar.gz 341e2eed9f9a64e0c5b1d29a82decc31 2704 rust-dirs-next_2.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/xdg-rs/dirs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dirs-next]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.0.0-2"
   ]
 }
