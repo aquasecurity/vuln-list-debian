@@ -6,16 +6,19 @@
     "librust-platform-info-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.154-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+libloaderapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+sysinfoapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winver-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.154-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "df864d5e478b3a7733389ddbdb756b3f1f8d38a9ba7c244ec820848493df5198 2616 rust-platform-info_2.0.4-1.dsc 91077ffd05d058d70d79eefcd7d7f6aac34980860a7519960f7913b6563a8c3a 28476 rust-platform-info_2.0.4.orig.tar.gz 527d7b1169c89c0cb10a793824ed51ef9402f57444685b08c107618bdabdee3f 2700 rust-platform-info_2.0.4-1.debian.tar.xz"
+    "13862c51522eb737894b06ce16b7943582cbbea925d0a3a91698044fe5894001 2342 rust-platform-info_2.0.5-1.dsc 7539aeb3fdd8cb4f6a331307cf71a1039cee75e94e8a71725b9484f4a0d9451a 28541 rust-platform-info_2.0.5.orig.tar.gz 5fa78d17e7ad2b94ef54160e7fc8fa39f1df19ad0452966bb6f6b47ef375bffe 2828 rust-platform-info_2.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-platform-info"
   ],
   "Files": [
-    "ffff5b78e4fa9eaa714e8318fad480c7 2616 rust-platform-info_2.0.4-1.dsc 0f58f43a85e3417d8338131ba6d82d45 28476 rust-platform-info_2.0.4.orig.tar.gz 6b18fa8103c3ceab04981453b1093f21 2700 rust-platform-info_2.0.4-1.debian.tar.xz"
+    "be8d20912deb0c9beeda710a993de402 2342 rust-platform-info_2.0.5-1.dsc 007417ccd1ebb10f20a14fc9bddfec5a 28541 rust-platform-info_2.0.5.orig.tar.gz cdd7ce367d9ab501a0931eb8a257fb0c 2828 rust-platform-info_2.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/platform-info]"
   ],
   "Version": [
-    "2.0.4-1"
+    "2.0.5-1"
   ]
 }

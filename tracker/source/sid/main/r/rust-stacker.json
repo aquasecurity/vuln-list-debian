@@ -6,16 +6,19 @@
     "librust-stacker-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.45-~~) \u003c!nocheck\u003e, librust-psm-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+fibersapi-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+memoryapi-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.1.22-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.156-~~) \u003c!nocheck\u003e, librust-psm-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3cf305856e9f9663b4e458f9e46b7ba299b6dd000a00e9dc1ba8b5e9b9937f54 2727 rust-stacker_0.1.15-2.dsc c886bd4480155fd3ef527d45e9ac8dd7118a898a46530b7b94c3e21866259fce 14656 rust-stacker_0.1.15.orig.tar.gz 9e100be3f4f0d13562def1a6a5f62f18b10e14382440a59fa1eb54adaa5411ef 3144 rust-stacker_0.1.15-2.debian.tar.xz"
+    "ccfdf3f09c133132f4ec09bb1b4e4e37d1544461d491cc6aa3bcd8eeec6c2e88 2414 rust-stacker_0.1.21-1.dsc cddb07e32ddb770749da91081d8d0ac3a16f1a569a18b20348cd371f5dead06b 17009 rust-stacker_0.1.21.orig.tar.gz 7ef7ad7ede09a63615590e574ee1bdf91e945b45ac3f80446770ce294e29f523 3140 rust-stacker_0.1.21-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-stacker"
   ],
   "Files": [
-    "42bc14231c15aee2944ec124faaf3529 2727 rust-stacker_0.1.15-2.dsc bb36e37ae6da8d8f7fd1927b22195030 14656 rust-stacker_0.1.15.orig.tar.gz 0e9fc0419b68e83e1cf1c6ef8d2640cd 3144 rust-stacker_0.1.15-2.debian.tar.xz"
+    "521f0a17de0a18056dec59aec5ff91e6 2414 rust-stacker_0.1.21-1.dsc f04fc0ac4c7aab1abe7e18e57b7da0da 17009 rust-stacker_0.1.21.orig.tar.gz 3b44cbffbcf536828461e4f185667324 3140 rust-stacker_0.1.21-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/stacker]"
   ],
   "Version": [
-    "0.1.15-2"
+    "0.1.21-1"
   ]
 }
