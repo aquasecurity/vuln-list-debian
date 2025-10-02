@@ -6,19 +6,25 @@
     "librust-is-executable-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b70d95b375c29829d7a19efd06a330cfa8ff7fe53663e9ff1e492541de237e1a 2315 rust-is-executable_1.0.1-3.dsc fa9acdc6d67b75e626ad644734e8bc6df893d9cd2a834129065d3dd6158ea9c8 9550 rust-is-executable_1.0.1.orig.tar.gz bbe95dff4121c35d5dadbbeff67abb2302c78d76aa82799f1d2f8395f1ac5842 3072 rust-is-executable_1.0.1-3.debian.tar.xz"
+    "74a0e5b7e8ff523ca09372e07a949d2c64be5cc28c4e1027d3f8d8a91d0a524c 2284 rust-is-executable_1.0.5-1.dsc baabb8b4867b26294d818bf3f651a454b6901431711abb96e296245888d6e8c4 9227 rust-is-executable_1.0.5.orig.tar.gz e2f85b875acc36a6f1743380735045db6099219a4ea4bdedf47880223ad5591f 2932 rust-is-executable_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-is-executable"
   ],
   "Files": [
-    "602f1f873d8f9c0c322a36d9a50127e0 2315 rust-is-executable_1.0.1-3.dsc 435eaa2ce8348b252e75e23dd5ef1db7 9550 rust-is-executable_1.0.1.orig.tar.gz 979f5f996a8f536140494466df1e5d6b 3072 rust-is-executable_1.0.1-3.debian.tar.xz"
+    "a610e09592d688a988054b4297676e72 2284 rust-is-executable_1.0.5-1.dsc bdf71f1d76db11308337275c39b6b820 9227 rust-is-executable_1.0.5.orig.tar.gz ce2f92e127a5c9779e1d0ed13761da5b 2932 rust-is-executable_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/fitzgen/is_executable"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-diff-0.1+default-dev"
+    "dh-cargo, librust-diff-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/is-executable]"
   ],
   "Version": [
-    "1.0.1-3"
+    "1.0.5-1"
   ]
 }

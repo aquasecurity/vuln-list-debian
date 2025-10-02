@@ -6,16 +6,19 @@
     "librust-net2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-0.1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.139-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev \u003c!nocheck\u003e, librust-winapi-0.3+ws2def-dev \u003c!nocheck\u003e, librust-winapi-0.3+ws2ipdef-dev \u003c!nocheck\u003e, librust-winapi-0.3+ws2tcpip-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.139-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "96c6286e26070cdeaaf5474a0f7fb9c0f894134d647561ffa91feca23dd78db7 2515 rust-net2_0.2.39-1.dsc b13b648036a2339d06de780866fbdfda0dde886de7b3af2ddeba8b14f4ee34ac 20696 rust-net2_0.2.39.orig.tar.gz dfd0f8c988430a907c65718be7685a979ea652aeb8d7cbe5016e20ea3353a2fe 3488 rust-net2_0.2.39-1.debian.tar.xz"
+    "f184113880e72823435a8e6a604d971b1af2dfb7430df5493f82e3bd944f0009 2255 rust-net2_0.2.39-3.dsc b13b648036a2339d06de780866fbdfda0dde886de7b3af2ddeba8b14f4ee34ac 20696 rust-net2_0.2.39.orig.tar.gz 11eb339db261f00368d04645d063411e87db33b88f93d5fe90a29649c41d0e73 3808 rust-net2_0.2.39-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-net2"
   ],
   "Files": [
-    "688fd57bad854f6d83e6bd686534cda7 2515 rust-net2_0.2.39-1.dsc 02f29fb17eeacc1ca623f6c9a980f2c1 20696 rust-net2_0.2.39.orig.tar.gz 0223195c9dadb99c2caf083db9a63ccf 3488 rust-net2_0.2.39-1.debian.tar.xz"
+    "66bf075a792877a532199bce34dd131c 2255 rust-net2_0.2.39-3.dsc 02f29fb17eeacc1ca623f6c9a980f2c1 20696 rust-net2_0.2.39.orig.tar.gz de0e232f116ebd70f655fb364aef2ad9 3808 rust-net2_0.2.39-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/net2]"
   ],
   "Version": [
-    "0.2.39-1"
+    "0.2.39-3"
   ]
 }

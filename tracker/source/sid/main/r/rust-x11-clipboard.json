@@ -6,19 +6,25 @@
     "librust-x11-clipboard-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.152-~~) \u003c!nocheck\u003e, librust-x11rb-0.13+default-dev \u003c!nocheck\u003e, librust-x11rb-0.13+xfixes-dev \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.152-~~) \u003c!nocheck\u003e, librust-x11rb-0.13+default-dev \u003c!nocheck\u003e, librust-x11rb-0.13+xfixes-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7afd3f9a194c93822e28e8cb2d0b1e0d374f79fa2038cc489c6c50afb1ea845f 2487 rust-x11-clipboard_0.9.2-2.dsc b98785a09322d7446e28a13203d2cae1059a0dd3dfb32cb06d0a225f023d8286 10334 rust-x11-clipboard_0.9.2.orig.tar.gz 12b69fa5864a54fc940d2bfdd65400cca9712393450e614540104989978e715f 3580 rust-x11-clipboard_0.9.2-2.debian.tar.xz"
+    "ef3dba09e5c864f6d688abf320f21ef17c83a1a74e73c5b8f309b5ede2ea56e1 2572 rust-x11-clipboard_0.9.3-1.dsc 662d74b3d77e396b8e5beb00b9cad6a9eccf40b2ef68cc858784b14c41d535a3 10507 rust-x11-clipboard_0.9.3.orig.tar.gz 71d8750aa727a8987b338ccd89592f604a2276f40eee08a0f8a773ff679d7b6c 3664 rust-x11-clipboard_0.9.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-x11-clipboard"
   ],
   "Files": [
-    "442134b311e33166618260bd49b52154 2487 rust-x11-clipboard_0.9.2-2.dsc 6debd70bca3c320090eab4677b0b2bb4 10334 rust-x11-clipboard_0.9.2.orig.tar.gz c06591c47a2a3e084a26e53c702a6664 3580 rust-x11-clipboard_0.9.2-2.debian.tar.xz"
+    "e0e17d86978b09f934770cdc1515204a 2572 rust-x11-clipboard_0.9.3-1.dsc 0aaa7d62951f6b3a01db571e8a9433a8 10507 rust-x11-clipboard_0.9.3.orig.tar.gz c466e37abc2d5299c6c134c8d3351496 3664 rust-x11-clipboard_0.9.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/quininer/x11-clipboard"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, xauth, xvfb"
+    "dh-cargo, rustc, xauth, xvfb"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/x11-clipboard]"
   ],
   "Version": [
-    "0.9.2-2"
+    "0.9.3-1"
   ]
 }

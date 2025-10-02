@@ -6,19 +6,25 @@
     "librust-mock-instant-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e7792ced8063b5a0e6d8551d085f6de5a293d574aaffeae76cf7bab172e90938 2289 rust-mock-instant_0.3.2-1.dsc 9366861eb2a2c436c20b12c8dbec5f798cea6b47ad99216be0282942e2c81ea0 4360 rust-mock-instant_0.3.2.orig.tar.gz 4d776e6ce04e86e43a5d1efa7464fe98bfb889670702020a9f25ba10340a1bb7 2488 rust-mock-instant_0.3.2-1.debian.tar.xz"
+    "c8106bdcccafde2fb5897662388fa5faf946643e78299b8525a031dee5be3a8e 2241 rust-mock-instant_0.6.0-1.dsc dce6dd36094cac388f119d2e9dc82dc730ef91c32a6222170d630e5414b956e6 6816 rust-mock-instant_0.6.0.orig.tar.gz 4900439e12b372c70ff36bb710d970ba33d83579f70e5b51ef6d677cbcc04ca0 2496 rust-mock-instant_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-mock-instant"
   ],
   "Files": [
-    "3e4c268ed8adba09bf6988f468588201 2289 rust-mock-instant_0.3.2-1.dsc 97892c200583886d23ba987d17f8f1f6 4360 rust-mock-instant_0.3.2.orig.tar.gz 665814d1da029d5c9a33eecc11260065 2488 rust-mock-instant_0.3.2-1.debian.tar.xz"
+    "a4fb0335dfab0c0aa50e40b8e282227b 2241 rust-mock-instant_0.6.0-1.dsc 18e594dda36a01d9f5ee24f214362748 6816 rust-mock-instant_0.6.0.orig.tar.gz c365ab2445b1bca2cd94ede2e406f982 2496 rust-mock-instant_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/museun/mock_instant"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/mock-instant]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.6.0-1"
   ]
 }

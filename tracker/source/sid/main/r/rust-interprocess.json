@@ -6,19 +6,25 @@
     "librust-interprocess-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-blocking-1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-futures-io-0.3+default-dev \u003c!nocheck\u003e, librust-intmap-2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.137-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.137-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.7-~~) \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e, librust-spinning-0.1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-to-method-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+fileapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+namedpipeapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.137-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.137-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "affcb7561f2f6a7ba36eb542de47340af4efef85f3a97274dd3464fcb0052438 3357 rust-interprocess_1.2.1-1.dsc 81f2533f3be42fffe3b5e63b71aeca416c1c3bc33e4e27be018521e76b1f38fb 115320 rust-interprocess_1.2.1.orig.tar.gz 47df4a5dbaf2c63c163552d333b14067219bf0c90cf4a987cc583c0cd4e0f4f7 3688 rust-interprocess_1.2.1-1.debian.tar.xz"
+    "92870e6bcd1ffa27731542419c6ddca5a0477f37510c0852e026bf3607f90f17 2570 rust-interprocess_2.2.3-1.dsc d941b405bd2322993887859a8ee6ac9134945a24ec5ec763a8a962fc64dfec2d 117702 rust-interprocess_2.2.3.orig.tar.gz 3e0e0e784172bba6f10d87bd11e5e591e9dad48af32d62d618dcd6e4b043277a 3792 rust-interprocess_2.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-interprocess"
   ],
   "Files": [
-    "3b0b0864cd521bae402570e5a0379d35 3357 rust-interprocess_1.2.1-1.dsc 8d0151ef820608a87c388b86620e977f 115320 rust-interprocess_1.2.1.orig.tar.gz 5bd55b1c9da5910ab33ab9c213467156 3688 rust-interprocess_1.2.1-1.debian.tar.xz"
+    "4525533d1ea9d89e2c7eb16ec3fac1e7 2570 rust-interprocess_2.2.3-1.dsc 0f2987b68f682cf519bb9ece4a2102cb 117702 rust-interprocess_2.2.3.orig.tar.gz 3508e8baa76892bdeae15480186b9a1e 3792 rust-interprocess_2.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kotauskas/interprocess"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-futures-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev"
+    "dh-cargo, librust-color-eyre-0.6+default-dev, librust-tokio-1+default-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/interprocess]"
   ],
   "Version": [
-    "1.2.1-1"
+    "2.2.3-1"
   ]
 }

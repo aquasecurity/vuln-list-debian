@@ -6,19 +6,25 @@
     "librust-thread-id-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.147-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "00825bafbe9ccf8955f5b14ed0bb7d040433f5c2ccf32a18abf0501452be2988 2277 rust-thread-id_4.0.0-1.dsc 5fdfe0627923f7411a43ec9ec9c39c3a9b4151be313e0922042581fb6c9b717f 8045 rust-thread-id_4.0.0.orig.tar.gz 1e88a99f9a0294e8a8ed0e498ac4ec35493f1ea3389c4664a58293242a501a4f 2960 rust-thread-id_4.0.0-1.debian.tar.xz"
+    "9ce0eb7d1db1d7831d507a0d91be521e1512f18dd5bfa1123868bd6b215e73b8 2264 rust-thread-id_5.0.0-1.dsc 99043e46c5a15af379c06add30d9c93a6c0e8849de00d244c4a2c417da128d80 10313 rust-thread-id_5.0.0.orig.tar.gz 57b80a642f95aa3b979af8cc28b101282e97ac17cc9bdc6566d0b357a8585468 2904 rust-thread-id_5.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-thread-id"
   ],
   "Files": [
-    "fd65de59eb282ab5c68ef16a04bdfe39 2277 rust-thread-id_4.0.0-1.dsc 66345b13fd97229fefe61ba6457dfe66 8045 rust-thread-id_4.0.0.orig.tar.gz ebfd8efab313dba563f3fa34b133a8e5 2960 rust-thread-id_4.0.0-1.debian.tar.xz"
+    "2023f9478c8952bdc8c15e20c09d2c24 2264 rust-thread-id_5.0.0-1.dsc fcc0b1eefbfc4fc1fb9206fc7488aa2f 10313 rust-thread-id_5.0.0.orig.tar.gz 81c68c52275684d8644aa2c78e451859 2904 rust-thread-id_5.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ruuda/thread-id"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/thread-id]"
   ],
   "Version": [
-    "4.0.0-1"
+    "5.0.0-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-rtoolbox-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+consoleapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+fileapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev \u003c!nocheck\u003e, librust-winapi-0.3+processenv-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+wincon-dev \u003c!nocheck\u003e, librust-winapi-0.3+winnt-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7905cf2b75530e384799962ea041003cd9f3fdf4d3c0fc87df41aab0da5d7bd2 2595 rust-rtoolbox_0.0.1-1.dsc 034e22c514f5c0cb8a10ff341b9b048b5ceb21591f31c8f44c43b960f9b3524a 9430 rust-rtoolbox_0.0.1.orig.tar.gz fffb8770691168e60c7e1b696efe57003f949f2d72d476b2a096c1c1d7a304c4 2764 rust-rtoolbox_0.0.1-1.debian.tar.xz"
+    "b61eab4616db64cfc39f62d1b01a54457a6dafea3740a07bfdcc75359716c7e1 2249 rust-rtoolbox_0.0.3-1.dsc a7cc970b249fbe527d6e02e0a227762c9108b2f49d81094fe357ffc6d14d7f6f 10149 rust-rtoolbox_0.0.3.orig.tar.gz 7a1b31b3c6a7159036885e484cae2238248b05d18aea1ae3c39ea6bd5b6a4a2d 2928 rust-rtoolbox_0.0.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rtoolbox"
   ],
   "Files": [
-    "f8621711f98e8691168c3f3524c2634f 2595 rust-rtoolbox_0.0.1-1.dsc 841f6139009a81565fe1078b163af278 9430 rust-rtoolbox_0.0.1.orig.tar.gz 9b5c8220161d3b78a25559fb815fc5f6 2764 rust-rtoolbox_0.0.1-1.debian.tar.xz"
+    "34075d3511168d24a164765a6a8a9174 2249 rust-rtoolbox_0.0.3-1.dsc 9777cc59a5b22e16b019162e63727099 10149 rust-rtoolbox_0.0.3.orig.tar.gz 87bbe6f663c7d7b91aab9e60142d2b67 2928 rust-rtoolbox_0.0.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/conradkleinespel/duck"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rtoolbox]"
   ],
   "Version": [
-    "0.0.1-1"
+    "0.0.3-1"
   ]
 }
