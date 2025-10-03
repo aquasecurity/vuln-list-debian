@@ -6,19 +6,25 @@
     "librust-dirs-sys-next-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+knownfolders-dev \u003c!nocheck\u003e, librust-winapi-0.3+objbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+shlobj-dev \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5bcf8eb829806414d2e36755c2e44cbef38306eb232bfe8bdccd7273b1dd2ad2 2477 rust-dirs-sys-next_0.1.1-1.dsc 99de365f605554ae33f115102a02057d4fc18b01f3284d6870be0938743cfe7d 10490 rust-dirs-sys-next_0.1.1.orig.tar.gz d90dca1ca083209d22d9f55cf0ef6b78be947337c0bcbd7e8a686954e80bc78f 2856 rust-dirs-sys-next_0.1.1-1.debian.tar.xz"
+    "b51d5652fc5ff100597edbb85df40f5ef45315c86d9abb2e35dcff63ae9d9f8f 2309 rust-dirs-sys-next_0.1.2-1.dsc 4ebda144c4fe02d1f7ea1a7d9641b6fc6b580adcfa024ae48797ecdeb6825b4d 10681 rust-dirs-sys-next_0.1.2.orig.tar.gz ef893bbb50bdcdb33b160252e051d36d318e5e7000ad5433a16d044243359010 2776 rust-dirs-sys-next_0.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dirs-sys-next"
   ],
   "Files": [
-    "56d53c4d5f77574e4f36479f0a5f407c 2477 rust-dirs-sys-next_0.1.1-1.dsc c1922365b80dcdf50342e7640eea27ce 10490 rust-dirs-sys-next_0.1.1.orig.tar.gz a7d834787129baf12f47c7ce03a77a0c 2856 rust-dirs-sys-next_0.1.1-1.debian.tar.xz"
+    "5c8312702cf834cf2c4ad5022c6f8cb6 2309 rust-dirs-sys-next_0.1.2-1.dsc 056c8d712ee146347c412b72f4077b2f 10681 rust-dirs-sys-next_0.1.2.orig.tar.gz d74b9064ec1bcd6db9db2f022aba1bd3 2776 rust-dirs-sys-next_0.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/xdg-rs/dirs/tree/master/dirs-sys"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dirs-sys-next]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.2-1"
   ]
 }

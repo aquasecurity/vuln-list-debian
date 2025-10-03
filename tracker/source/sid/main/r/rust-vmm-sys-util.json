@@ -6,19 +6,25 @@
     "librust-vmm-sys-util-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.39-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.127-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e5ab5ce3f8077125b7e5b6319db9d509e4e04c721bf2735468db30bf9e9ddcfa 2438 rust-vmm-sys-util_0.12.1-2.dsc 1d1435039746e20da4f8d507a72ee1b916f7b4b05af7a91c093d2c6561934ede 58520 rust-vmm-sys-util_0.12.1.orig.tar.gz 4b5c894249ce2d6a93fadfc27213035fcd41f6d6f246c343cdcc51f4d6f18484 5228 rust-vmm-sys-util_0.12.1-2.debian.tar.xz"
+    "90f2494020c18288944cef45882277d7cc9282ac6a705cd6396055a049b6b820 2494 rust-vmm-sys-util_0.15.0-1.dsc 506c62fdf617a5176827c2f9afbcf1be155b03a9b4bf9617a60dbc07e3a1642f 62687 rust-vmm-sys-util_0.15.0.orig.tar.gz ae1f3300c6de994c6425ee69a444774e39c12c7f02ec1fcb7b5d057107376500 5116 rust-vmm-sys-util_0.15.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vmm-sys-util"
   ],
   "Files": [
-    "b8fac9abcb852b4a1fd952ce69076a64 2438 rust-vmm-sys-util_0.12.1-2.dsc a7fac56b0fd43e22327d6879f82263fe 58520 rust-vmm-sys-util_0.12.1.orig.tar.gz 7e7304559c9956465020e2b437576b77 5228 rust-vmm-sys-util_0.12.1-2.debian.tar.xz"
+    "3b5818a8786413433f7fd34ffaa22edd 2494 rust-vmm-sys-util_0.15.0-1.dsc 454a38356db95b15d15df7b0f1513f01 62687 rust-vmm-sys-util_0.15.0.orig.tar.gz 4fc7a71b1614f93c964161459c58f078 5116 rust-vmm-sys-util_0.15.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-vmm/vmm-sys-util"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Liang Yan \u003cly@xryan.net\u003e, Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vmm-sys-util]"
   ],
   "Version": [
-    "0.12.1-2"
+    "0.15.0-1"
   ]
 }
