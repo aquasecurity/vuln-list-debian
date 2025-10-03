@@ -6,19 +6,25 @@
     "librust-utf8parse-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f73564c9054fec31a2a487f166c8806f508451bd005b2f15bd21032a401b4ddb 2110 rust-utf8parse_0.2.1-1.dsc 711b9620af191e0cdc7468a8d14e709c3dcdb115b36f838e601583af800a370a 13435 rust-utf8parse_0.2.1.orig.tar.gz 08e7fc92ad8d7c8517c1102201c005e23875f1f9d5729f0eb6aa5645b78c2a4e 2752 rust-utf8parse_0.2.1-1.debian.tar.xz"
+    "43fa2e1d09bc64296c2cd22994f502607d01e37f3bda7a8e479e5f3f33b1bdcb 2186 rust-utf8parse_0.2.2-1.dsc 06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821 13499 rust-utf8parse_0.2.2.orig.tar.gz 6a4626fec09e7d0f0e6f7a81d4c1915e9d585519e879e48dca5c4724862817d9 2760 rust-utf8parse_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-utf8parse"
   ],
   "Files": [
-    "9de1554d06d51d49401028e4e1d7349b 2110 rust-utf8parse_0.2.1-1.dsc ceee1159c41351d05f4cf705490867b3 13435 rust-utf8parse_0.2.1.orig.tar.gz d57518965dcb367a401983e9d546dc19 2752 rust-utf8parse_0.2.1-1.debian.tar.xz"
+    "68c1e82b2dc644c3e618862c9ffe6a7a 2186 rust-utf8parse_0.2.2-1.dsc 470f527a51d3921895bd2583fce8d9c4 13499 rust-utf8parse_0.2.2.orig.tar.gz 114c0a0cba2ec0ff40c8d255993a7556 2760 rust-utf8parse_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alacritty/vte"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/utf8parse]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.2-1"
   ]
 }

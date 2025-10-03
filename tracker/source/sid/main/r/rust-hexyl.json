@@ -6,16 +6,19 @@
     "librust-hexyl-dev, hexyl"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native, rustc:native, libstd-rust-dev, librust-ansi-term-0.12+default-dev, librust-atty-0.2+default-dev, librust-clap-2+color-dev, librust-clap-2+default-dev, librust-clap-2+suggestions-dev, librust-clap-2+wrap-help-dev, librust-libc-0.2+default-dev, help2man"
+    "debhelper-compat (= 13), dh-sequence-cargo, help2man"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.74), libstd-rust-dev, librust-anyhow-1+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-clap-4+wrap-help-dev, librust-const-format-0.2+default-dev, librust-libc-0.2+default-dev, librust-owo-colors-4+default-dev, librust-supports-color-3+default-dev, librust-terminal-size-0.4+default-dev, librust-thiserror-1+default-dev"
   ],
   "Checksums-Sha256": [
-    "e7d47510348e3d4d2d993d07d827dc143b03b9a38b143a5d88db982bdca1e7c7 2399 rust-hexyl_0.8.0-2.dsc 3713303deef288951ebfc11ffe0bfa18725a7099cbfed5e231c4a470ce53376a 22939 rust-hexyl_0.8.0.orig.tar.gz 513a06ac4c06008e70c1735aad578cdaa73984fdf39700b277cc27a8c0354024 3236 rust-hexyl_0.8.0-2.debian.tar.xz"
+    "3813ffe7c3b2bc7566588b214b7da1b622a8c533cc15eb8660c2e711c76972db 2640 rust-hexyl_0.16.0-1.dsc 43d56dd04872b6c6d429f18d2e03df95f853feb618c7cd8bf22d0e6851ce5ef8 42892 rust-hexyl_0.16.0.orig.tar.gz a8410390f8843d4aa01bad073ea8252947e3234c70dd08b91d87b28a5791184f 3468 rust-hexyl_0.16.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hexyl"
   ],
   "Files": [
-    "96c42c65b51d4bedb91a0a1cefd0cd9c 2399 rust-hexyl_0.8.0-2.dsc 850c21205e7cb32ce38c2ee4e94f2e57 22939 rust-hexyl_0.8.0.orig.tar.gz 507b5af80da0f877365a841251818e6d 3236 rust-hexyl_0.8.0-2.debian.tar.xz"
+    "950bd4aae74115bcc1d3baaeb494a8ed 2640 rust-hexyl_0.16.0-1.dsc 227042f187f0bb7c73878f97776f5ab9 42892 rust-hexyl_0.16.0.orig.tar.gz 8de50bd2f388ab80d01fa576289ba515 3468 rust-hexyl_0.16.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-assert-cmd-2+default-dev, librust-predicates-3+default-dev, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hexyl]"
   ],
   "Version": [
-    "0.8.0-2"
+    "0.16.0-1"
   ]
 }

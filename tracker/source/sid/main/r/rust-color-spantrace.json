@@ -6,19 +6,25 @@
     "librust-color-spantrace-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.4.1-~~) \u003c!nocheck\u003e, librust-owo-colors-3+default-dev (\u003e= 3.2.0-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1+default-dev (\u003e= 0.1.21-~~) \u003c!nocheck\u003e, librust-tracing-error-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-owo-colors-4+default-dev \u003c!nocheck\u003e, librust-tracing-core-0.1+default-dev (\u003e= 0.1.21-~~) \u003c!nocheck\u003e, librust-tracing-error-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "32bddfbf4a043c12b5ae2a939c0db4242f9cf5dd33f7874faef1a2ad0c336c14 2549 rust-color-spantrace_0.2.0-1.dsc 1ba75b3d9449ecdccb27ecbc479fdc0b87fa2dd43d2f8298f9bf0e59aacc8dce 185098 rust-color-spantrace_0.2.0.orig.tar.gz b788f6889a6195142514c1f14fe282d255b49a18c1a3c869565ef4c9c5a17ea0 2612 rust-color-spantrace_0.2.0-1.debian.tar.xz"
+    "8f6f86a961e6751a58198d46b102ea15e4458e869b365e617a42a771f3779b08 2618 rust-color-spantrace_0.3.0-1.dsc b8b88ea9df13354b55bc7234ebcce36e6ef896aca2e42a15de9e10edce01b427 12884 rust-color-spantrace_0.3.0.orig.tar.gz 615b8a0922625b7d0b954122a650a08912e32cd16f88051aea5a1b864d34af70 2808 rust-color-spantrace_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-color-spantrace"
   ],
   "Files": [
-    "bb4685d55108850f6133363c6e617dd7 2549 rust-color-spantrace_0.2.0-1.dsc ae6db40e9d17d3d6c53c66d7c90cc6e9 185098 rust-color-spantrace_0.2.0.orig.tar.gz f9c2d40eaf3974631d06a99d47d5a417 2612 rust-color-spantrace_0.2.0-1.debian.tar.xz"
+    "34b989296e5e849f853e0809aa9b25fa 2618 rust-color-spantrace_0.3.0-1.dsc ea153852d915e450c9927f8b930575f3 12884 rust-color-spantrace_0.3.0.orig.tar.gz dec24e7016e0446a123597e4bdfd21f5 2808 rust-color-spantrace_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/eyre-rs/eyre"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-ansi-parser-0.8+default-dev, librust-tracing-0.1+default-dev, librust-tracing-subscriber-0.3+default-dev"
+    "dh-cargo, librust-ansi-parser-0+default-dev, librust-tracing-0.1+default-dev, librust-tracing-subscriber-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/color-spantrace]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.3.0-1"
   ]
 }
