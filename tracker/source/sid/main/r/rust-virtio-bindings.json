@@ -6,19 +6,25 @@
     "librust-virtio-bindings-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, architecture-is-64-bit"
+    "debhelper-compat (= 13), dh-sequence-cargo, architecture-is-64-bit"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "593940c7899aebc53ef6f2237091de821d1528d4eda009fe8145714c5d731e8b 2213 rust-virtio-bindings_0.2.4-1.dsc 1711e61c00f8cb450bd15368152a1e37a12ef195008ddc7d0f4812f9e2b30a68 19048 rust-virtio-bindings_0.2.4.orig.tar.gz 5ecab5051c1baa967682c903c16a9ea1d123445e002517aec66e5d3876fdf4ab 3312 rust-virtio-bindings_0.2.4-1.debian.tar.xz"
+    "f83070dcca8dc8a30125fc98f93d43ef9ce43494d5a34410dee698f1605ce89f 2297 rust-virtio-bindings_0.2.6-1.dsc 804f498a26d5a63be7bbb8bdcd3869c3f286c4c4a17108905276454da0caf8cb 278172 rust-virtio-bindings_0.2.6.orig.tar.gz 6666d51b109ed48a4d456516255fa7242fb4e2c72da874b6a0efa7ce4bff2315 3288 rust-virtio-bindings_0.2.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-virtio-bindings"
   ],
   "Files": [
-    "587fc2d93ab92c8ae9cf25a1e616ecfc 2213 rust-virtio-bindings_0.2.4-1.dsc 539d3c72bdca93ded0636f4744934732 19048 rust-virtio-bindings_0.2.4.orig.tar.gz 324ac852f6e0b5304a358954229df5ca 3312 rust-virtio-bindings_0.2.4-1.debian.tar.xz"
+    "2c5114d6cb3edfa027997ba95f13aae4 2297 rust-virtio-bindings_0.2.6-1.dsc 1522958d0cbb3adfc9c487685f1af5e0 278172 rust-virtio-bindings_0.2.6.orig.tar.gz 71fef93e8d1539d5c93e933f87c3984e 3288 rust-virtio-bindings_0.2.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-vmm/vm-virtio"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/virtio-bindings]"
   ],
   "Version": [
-    "0.2.4-1"
+    "0.2.6-1"
   ]
 }
