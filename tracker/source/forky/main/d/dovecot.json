@@ -6,16 +6,16 @@
     "dovecot-core, dovecot-dev, dovecot-imapd, dovecot-pop3d, dovecot-lmtpd, dovecot-managesieved, dovecot-pgsql, dovecot-mysql, dovecot-sqlite, dovecot-ldap, dovecot-gssapi, dovecot-sieve, dovecot-flatcurve, dovecot-solr, dovecot-submissiond, dovecot-auth-lua"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-libmysqlclient-dev, krb5-multidev, libapparmor-dev [linux-any], libbz2-dev, libcap-dev [linux-any], libcdb-dev, libdb-dev, libexpat-dev, libexttextcat-dev, libicu-dev, libldap2-dev, liblua5.4-dev, liblz4-dev, liblzma-dev, libpam0g-dev, libpq-dev, libsasl2-dev, libsodium-dev, libsqlite3-dev, libssl-dev, libstemmer-dev, libsystemd-dev [linux-any], libtirpc-dev, libunwind-dev, libwrap0-dev, libxapian-dev, libzstd-dev, lsb-release, lua-json \u003c!nocheck\u003e, pkgconf, zlib1g-dev"
+    "debhelper-compat (= 13), default-libmysqlclient-dev, krb5-multidev, libapparmor-dev [linux-any], libbz2-dev, libcap-dev [linux-any], libcdb-dev, libcrypt-dev, libdb-dev, libexpat-dev, libexttextcat-dev, libicu-dev, libldap2-dev, liblua5.4-dev, liblz4-dev, liblzma-dev, libpam0g-dev, libpq-dev, libsasl2-dev, libsodium-dev, libsqlite3-dev, libssl-dev, libstemmer-dev, libsystemd-dev [linux-any], libtirpc-dev, libunwind-dev, libwrap0-dev, libxapian-dev, libzstd-dev, lsb-release, lua-json \u003c!nocheck\u003e, pkgconf, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "53b96f1457a17fcab9f39ab0d99e4b7f02f49d64a50c04c9f2a7a704687a7b72 3942 dovecot_2.4.1+dfsg1-6.dsc b014beb38600aad6b6b91ef5be5bedb353650dbf38c247b00eef95a5385dc1fb 1747776 dovecot_2.4.1+dfsg1.orig-pigeonhole.tar.gz fb188603f419ed7aaa07794a8692098c3ec2660bb9c67d0efe24948cbb32ae00 6288223 dovecot_2.4.1+dfsg1.orig.tar.gz ce2cd608c0362f10c89b0ec12ad79488c8c54e799375cd4a87c00baf666d7aca 228 dovecot_2.4.1+dfsg1.orig.tar.gz.asc 8ec63260c20e32f249a0166a8cb7f3d7e489c1bac18c8c90941165f88f471e6b 83152 dovecot_2.4.1+dfsg1-6.debian.tar.xz"
+    "a2cd6a8b282c499aa05cfe321345aa8654efbd76d97ee128cbe6bacd809587d6 4009 dovecot_2.4.1+dfsg1-9.dsc b014beb38600aad6b6b91ef5be5bedb353650dbf38c247b00eef95a5385dc1fb 1747776 dovecot_2.4.1+dfsg1.orig-pigeonhole.tar.gz fb188603f419ed7aaa07794a8692098c3ec2660bb9c67d0efe24948cbb32ae00 6288223 dovecot_2.4.1+dfsg1.orig.tar.gz ce2cd608c0362f10c89b0ec12ad79488c8c54e799375cd4a87c00baf666d7aca 228 dovecot_2.4.1+dfsg1.orig.tar.gz.asc f3b4531eb6423962976388ebe08228909beeb8e795903b78ccb5bd91434a6161 86656 dovecot_2.4.1+dfsg1-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dovecot"
   ],
   "Files": [
-    "934d15a611827544585e8591b0a3d735 3942 dovecot_2.4.1+dfsg1-6.dsc 5bbce59f692abe9bc8f5706b2e86c298 1747776 dovecot_2.4.1+dfsg1.orig-pigeonhole.tar.gz 59e513ee4ee4a10ebfb3e0ac7c508e70 6288223 dovecot_2.4.1+dfsg1.orig.tar.gz f9a5e9ae70244f750d40e0a867a9ddc6 228 dovecot_2.4.1+dfsg1.orig.tar.gz.asc 7577470b43498796e2cb6857f09fc900 83152 dovecot_2.4.1+dfsg1-6.debian.tar.xz"
+    "bde98519109b2671fc517a4fa14a5843 4009 dovecot_2.4.1+dfsg1-9.dsc 5bbce59f692abe9bc8f5706b2e86c298 1747776 dovecot_2.4.1+dfsg1.orig-pigeonhole.tar.gz 59e513ee4ee4a10ebfb3e0ac7c508e70 6288223 dovecot_2.4.1+dfsg1.orig.tar.gz f9a5e9ae70244f750d40e0a867a9ddc6 228 dovecot_2.4.1+dfsg1.orig.tar.gz.asc e5cb02bbee63ff816a14254f30ba8762 86656 dovecot_2.4.1+dfsg1-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "lsb-release, python3, python3-passlib, systemd-sysv"
+    "lsb-release, mariadb-server, postgresql, python3, python3-passlib, systemd-sysv"
   ],
   "Uploaders": [
     "Noah Meyerhans \u003cnoahm@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/dovecot.git"
   ],
   "Version": [
-    "1:2.4.1+dfsg1-6"
+    "1:2.4.1+dfsg1-9"
   ]
 }

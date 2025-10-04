@@ -6,16 +6,19 @@
     "librust-iovec-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 6), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+minwindef-dev \u003c!nocheck\u003e, librust-winapi-0.3+ws2def-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a3a59f55bdb4ccffdb378ab07d89d195f8ca17ac3e7067c00b6d9126fc2adcff 1634 rust-iovec_0.1.2-1.dsc dbe6e417e7d0975db6512b90796e8ce223145ac4e33c377e4a42882a0e88bb08 8565 rust-iovec_0.1.2.orig.tar.gz 5e098b854d0b6c736f43ad7050505702f6853d836bd960849bbf2d1149241114 2892 rust-iovec_0.1.2-1.debian.tar.xz"
+    "7d3b995f54ae5a4dd4b082a2607696d34169d1bd2010bfc3adcd92bc7c064b3f 2199 rust-iovec_0.1.4-1.dsc b2b3ea6ff95e175473f8ffe6a7eb7c00d054240321b84c57051175fe3c1e075e 8720 rust-iovec_0.1.4.orig.tar.gz 44b508d7bfed621ab0e66ec7100dc4e1be9d9471f70692c616ddcf6b71796439 2640 rust-iovec_0.1.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-iovec"
   ],
   "Files": [
-    "f09308b5e1f1950bd8553c4e8ee49536 1634 rust-iovec_0.1.2-1.dsc e3c41d159635384c1fcacb375d490ec1 8565 rust-iovec_0.1.2.orig.tar.gz f9c2948ab4a748edb5c2474dd9689f4d 2892 rust-iovec_0.1.2-1.debian.tar.xz"
+    "6c8ece2f8401d7a555f8626fdf317676 2199 rust-iovec_0.1.4-1.dsc f1c40b9836035b69e464df711a1d2950 8720 rust-iovec_0.1.4.orig.tar.gz 887fd7619922312ffa752b90bb33bdda 2640 rust-iovec_0.1.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.1.5"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Ximin Luo \u003cinfinity0@debian.org\u003e"
+    "Paride Legovini \u003cparide@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/iovec"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/iovec]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.1.4-1"
   ]
 }

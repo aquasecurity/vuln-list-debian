@@ -6,16 +6,19 @@
     "librust-clap-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23+color-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23+error-context-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23+help-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23+std-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23+suggestions-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23+usage-dev \u003c!nocheck\u003e, librust-clap-builder-4.5.23-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-builder-4.5+color-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+color-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+error-context-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+error-context-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+help-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+help-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+std-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+std-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+suggestions-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+suggestions-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+usage-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5+usage-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5-dev (\u003c\u003c 4.5.49-~~) \u003c!nocheck\u003e, librust-clap-builder-4.5-dev (\u003e= 4.5.48-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0e6ae09bdb82b280d058bfabdac5d4c163aa42c83322d4b3846bf7250a44293d 2990 rust-clap_4.5.23-1.dsc 3135e7ec2ef7b10c6ed8950f0f792ed96ee093fa088608f1c76e569722700c84 56460 rust-clap_4.5.23.orig.tar.gz 939705bdea4d10cb2963e451a2fe42eddf21ee34bb5e290c11b8e6c6bf8590c9 8764 rust-clap_4.5.23-1.debian.tar.xz"
+    "876e31be8e095187eefc72900c2dc5e432ca6a9ebff3f2d25ea0fb58ccd388d2 3398 rust-clap_4.5.48-3.dsc e2134bb3ea021b78629caa971416385309e0131b351b25e01dc16fb54e1b5fae 61935 rust-clap_4.5.48.orig.tar.gz 041b1431c3d7c21c13ac6bcd83e87e65b667bb0f27713c453a2e1562d13ae879 6044 rust-clap_4.5.48-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-clap"
   ],
   "Files": [
-    "b5daf2bdeb8df492e0cf34a95a8912fb 2990 rust-clap_4.5.23-1.dsc 600880619820a3fb4117673df4fbf044 56460 rust-clap_4.5.23.orig.tar.gz 689cd6ff13b39f0040be444622f339cd 8764 rust-clap_4.5.23-1.debian.tar.xz"
+    "6ea1ad00fab0ec99b106f1c1b3421370 3398 rust-clap_4.5.48-3.dsc d1a4fd534d400fad20ac749d057301cd 61935 rust-clap_4.5.48.orig.tar.gz b13b3c4b1cd96bc3b19377549950bc08 6044 rust-clap_4.5.48-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-automod-1+default-dev, librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev, librust-snapbox-0.4+default-dev, librust-snapbox-0.5+default-dev, librust-snapbox-0.6+default-dev, librust-trybuild-1+default-dev, librust-trycmd-0.14+color-auto-dev, librust-trycmd-0.14+diff-dev, librust-trycmd-0.14+examples-dev, librust-trycmd-0.15+color-auto-dev, librust-trycmd-0.15+diff-dev, librust-trycmd-0.15+examples-dev, rustc"
+    "dh-cargo, librust-automod-1+default-dev, librust-jiff-0.2+default-dev, librust-rustversion-1+default-dev, librust-semver-1+default-dev, librust-shlex-1+default-dev, librust-snapbox-0.6+default-dev, librust-snapbox-0.6+term-svg-dev, librust-trybuild-1+default-dev, librust-trycmd-0.15+color-auto-dev, librust-trycmd-0.15+diff-dev, librust-trycmd-0.15+examples-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/clap]"
   ],
   "Version": [
-    "4.5.23-1"
+    "4.5.48-3"
   ]
 }

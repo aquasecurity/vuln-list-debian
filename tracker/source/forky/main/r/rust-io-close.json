@@ -6,19 +6,25 @@
     "librust-io-close-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.80-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+std-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.80-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "83ab4b71d55b0405604a4ee734aefad4eef1d5f0e2ef0f621fa910eca2473419 2436 rust-io-close_0.3.7-1.dsc 9cadcf447f06744f8ce713d2d6239bb5bde2c357a452397a9ed90c625da390bc 8025 rust-io-close_0.3.7.orig.tar.gz 678952d9954f10b3d3d7009285ac42246361dc841b16d313e6d90adde575d0b1 2840 rust-io-close_0.3.7-1.debian.tar.xz"
+    "411a4847f55f1292b48eb79c048d9309f2945f5e304fe013b235e11a32ea5a7d 2285 rust-io-close_0.3.7-3.dsc 9cadcf447f06744f8ce713d2d6239bb5bde2c357a452397a9ed90c625da390bc 8025 rust-io-close_0.3.7.orig.tar.gz d19730402839b65e331733954cd55ad19be9157bd3dd1ccd0606bc26558f2d2e 2928 rust-io-close_0.3.7-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-io-close"
   ],
   "Files": [
-    "2c9bc296d5e2e10813397141b6024272 2436 rust-io-close_0.3.7-1.dsc 7d58a2a23cd19ed8e889afdbeb7986b1 8025 rust-io-close_0.3.7.orig.tar.gz 0509e164104a9169e1a2c32b46ec79a7 2840 rust-io-close_0.3.7-1.debian.tar.xz"
+    "cd401e527ccf3294c6d65c6820dd5c2a 2285 rust-io-close_0.3.7-3.dsc 7d58a2a23cd19ed8e889afdbeb7986b1 8025 rust-io-close_0.3.7.orig.tar.gz 45c9862d4b55e5546b608dbb6c6d4bb7 2928 rust-io-close_0.3.7-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/wufz/io-close"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/io-close]"
   ],
   "Version": [
-    "0.3.7-1"
+    "0.3.7-3"
   ]
 }

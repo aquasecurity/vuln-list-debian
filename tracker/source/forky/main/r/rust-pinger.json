@@ -6,16 +6,19 @@
     "librust-pinger-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev (\u003e= 3.3.0-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, iputils-ping \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev (\u003e= 3.4.1-~~) \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.11-~~) \u003c!nocheck\u003e, iputils-ping \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "35e2292c3d37a2c01276c27282ea04ccf740b4f7151d9a5f68db7a4d7d1d7d69 1766 rust-pinger_2.0.0-2.dsc dbc53a927954d81a867bd7e9163a4b5f13babdf1627863d5b0ab52587fdb02ad 12402 rust-pinger_2.0.0.orig.tar.gz b9328a17d6bc041f2ada243812caaf4ac028eda7e269ae9fc7e97802cf660110 3536 rust-pinger_2.0.0-2.debian.tar.xz"
+    "3e0635a9982e4a8286c51c09df99ba8e11405e437903e53cf1eb0816d8d12ca3 2405 rust-pinger_2.1.1-1.dsc ef60c267d880fa66dae4ba661e15176c83a2fd39509cb65de646c5391704423e 13230 rust-pinger_2.1.1.orig.tar.gz eba6d1ae2bc595a3927f36afde6f8e8846d4a39ab9c11a5334db16996476fca4 3888 rust-pinger_2.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pinger"
   ],
   "Files": [
-    "ef9698d92aea2341fdcf1304f67451bd 1766 rust-pinger_2.0.0-2.dsc 5532dcef3a034a7dbc752724abb84d6e 12402 rust-pinger_2.0.0.orig.tar.gz f0592c2c1fbc31a63f1f8d5d3a478ee9 3536 rust-pinger_2.0.0-2.debian.tar.xz"
+    "6a4f3fbce08d0692ff733c35efbf22c4 2405 rust-pinger_2.1.1-1.dsc 0ed5d696714a8f479e1431b81158f1a7 13230 rust-pinger_2.1.1.orig.tar.gz dc8d14ca7bdca943b2ca68de544e2a94 3888 rust-pinger_2.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pinger]"
   ],
   "Version": [
-    "2.0.0-2"
+    "2.1.1-1"
   ]
 }

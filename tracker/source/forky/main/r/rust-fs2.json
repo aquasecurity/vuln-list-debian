@@ -6,19 +6,25 @@
     "librust-fs2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 6), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.30~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev \u003c!nocheck\u003e, librust-winapi-0.3+fileapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+handleapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+processthreadsapi-dev \u003c!nocheck\u003e, librust-winapi-0.3+std-dev \u003c!nocheck\u003e, librust-winapi-0.3+winbase-dev \u003c!nocheck\u003e, librust-winapi-0.3+winerror-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.30-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2c0f68da3b7cd902ec5cb133cc61ee31438521f8ae03c6fcf24263aa6d7df18c 1763 rust-fs2_0.4.3-1.dsc 9564fc758e15025b46aa6643b1b77d047d1a56a1aea6e01002ac0c7026876213 13138 rust-fs2_0.4.3.orig.tar.gz fa3f3db00aeedef1425566925828bf44235dba9f2198efa78ccc9a91892f88a0 2396 rust-fs2_0.4.3-1.debian.tar.xz"
+    "5c731cd680e5bdd66153792c35e561f46532f6d0fa3daddc2ceaab6682ab5e49 2225 rust-fs2_0.4.3-2.dsc 9564fc758e15025b46aa6643b1b77d047d1a56a1aea6e01002ac0c7026876213 13138 rust-fs2_0.4.3.orig.tar.gz f4406d0da0efe2d342f8a2e32d3c1270a923c586a6eff8c824f96f37ffa58c39 4548 rust-fs2_0.4.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fs2"
   ],
   "Files": [
-    "f02f0288ec3bc065906b3c8ce55ccee4 1763 rust-fs2_0.4.3-1.dsc 29d2e692b75cceb9a2b2766408a307b7 13138 rust-fs2_0.4.3.orig.tar.gz 9fb90be6ad745273eae50913214f9613 2396 rust-fs2_0.4.3-1.debian.tar.xz"
+    "6bab0676a82647edd54739f8081eece5 2225 rust-fs2_0.4.3-2.dsc 29d2e692b75cceb9a2b2766408a307b7 13138 rust-fs2_0.4.3.orig.tar.gz 5d8bb57833857fbc178558c6b9ef0031 4548 rust-fs2_0.4.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/danburkert/fs2-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.1.5"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -48,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fs2]"
   ],
   "Version": [
-    "0.4.3-1"
+    "0.4.3-2"
   ]
 }
