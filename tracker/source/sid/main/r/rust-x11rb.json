@@ -6,19 +6,25 @@
     "librust-x11rb-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+event-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+net-dev \u003c!nocheck\u003e, librust-rustix-0.38+std-dev \u003c!nocheck\u003e, librust-rustix-0.38+system-dev \u003c!nocheck\u003e, librust-x11rb-protocol-0.13+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-1+event-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev \u003c!nocheck\u003e, librust-rustix-1+net-dev \u003c!nocheck\u003e, librust-rustix-1+std-dev \u003c!nocheck\u003e, librust-rustix-1+system-dev \u003c!nocheck\u003e, librust-x11rb-protocol-0.13+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a39e884e98ec238fcc2c42bac7a50cd6ce1335be308b57bcc031cc792415249a 2496 rust-x11rb_0.13.0-2.dsc f8f25ead8c7e4cba123243a6367da5d3990e0d3affa708ea19dce96356bd9f1a 222396 rust-x11rb_0.13.0.orig.tar.gz 56341ad98b5a3798dc88aec5e9c548597727984719d635a69c911ed5111decf9 5120 rust-x11rb_0.13.0-2.debian.tar.xz"
+    "322a832a08cf69b8817ad4f7732416499338446b87868aa3602b9ee68a17de72 2557 rust-x11rb_0.13.0-3.dsc f8f25ead8c7e4cba123243a6367da5d3990e0d3affa708ea19dce96356bd9f1a 222396 rust-x11rb_0.13.0.orig.tar.gz ae4a8f1c5d2cfc9b20891ae25c43271b17be843a73af783c08d23cb203634185 6140 rust-x11rb_0.13.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-x11rb"
   ],
   "Files": [
-    "905d4ec2e50c1f252631934fbd572830 2496 rust-x11rb_0.13.0-2.dsc ff16c9daa9afa7ba1d5334699700b042 222396 rust-x11rb_0.13.0.orig.tar.gz e952f370f2051f5349b62177bcf5dbe0 5120 rust-x11rb_0.13.0-2.debian.tar.xz"
+    "bf15d98bb8cc0777b77f6caea18ff6de 2557 rust-x11rb_0.13.0-3.dsc ff16c9daa9afa7ba1d5334699700b042 222396 rust-x11rb_0.13.0.orig.tar.gz 36d135e4de2f5177eca1696355b0e7ec 6140 rust-x11rb_0.13.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/psychon/x11rb"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-gethostname-0.4+default-dev, librust-polling-3+default-dev, librust-tracing-subscriber-0.3+default-dev"
+    "dh-cargo, librust-gethostname-0.4+default-dev, librust-polling-3+default-dev, librust-tracing-subscriber-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/x11rb]"
   ],
   "Version": [
-    "0.13.0-2"
+    "0.13.0-3"
   ]
 }

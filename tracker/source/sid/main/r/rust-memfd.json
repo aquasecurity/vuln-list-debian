@@ -6,19 +6,25 @@
     "librust-memfd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.8-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-1+default-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ca63ef954ccae7960f9c88fee9138335fb548cdc1d37d1e372897c9e2fc5f579 2227 rust-memfd_0.6.4-1.dsc b2cffa4ad52c6f791f4f8b15f0c05f9824b2ced1160e88cc393d64fff9a8ac64 12820 rust-memfd_0.6.4.orig.tar.gz 35a6a9b055882ec6e0daa584aa500e502dcac23edd3d069129e0bfda25989067 2776 rust-memfd_0.6.4-1.debian.tar.xz"
+    "81a046b8d1839a291774bb5c10b774fe302d7b685a1397dbaaf9c6fea68cf714 2268 rust-memfd_0.6.4-2.dsc b2cffa4ad52c6f791f4f8b15f0c05f9824b2ced1160e88cc393d64fff9a8ac64 12820 rust-memfd_0.6.4.orig.tar.gz 281b1e39dadb11225476971178d7fc5165bf027d98ba7c21e2d55db97b9ceefe 3124 rust-memfd_0.6.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-memfd"
   ],
   "Files": [
-    "613535d0684cd2b6589045ec4422618b 2227 rust-memfd_0.6.4-1.dsc 46c22a36e1169472c1d5a9db9c4f1000 12820 rust-memfd_0.6.4.orig.tar.gz 3a7829bad6729c7171b645e32ff8ccfc 2776 rust-memfd_0.6.4-1.debian.tar.xz"
+    "36749949e00e60ee2175b06804a165c0 2268 rust-memfd_0.6.4-2.dsc 46c22a36e1169472c1d5a9db9c4f1000 12820 rust-memfd_0.6.4.orig.tar.gz 8a539cde711aafbf8615480c32102bee 3124 rust-memfd_0.6.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/lucab/memfd-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/memfd]"
   ],
   "Version": [
-    "0.6.4-1"
+    "0.6.4-2"
   ]
 }

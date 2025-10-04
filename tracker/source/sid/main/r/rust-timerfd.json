@@ -6,19 +6,25 @@
     "librust-timerfd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+time-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-1+default-dev \u003c!nocheck\u003e, librust-rustix-1+time-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ad74c06d84c62096458a8f254009b3bf35057277e383b8ce73e12acb2c5be792 2224 rust-timerfd_1.5.0-1.dsc 3d3fd47d83ad0b5c7be2e8db0b9d712901ef6ce5afbcc6f676761004f5104ea2 5814 rust-timerfd_1.5.0.orig.tar.gz d69e7b755a341bce54796502a1741fe17f5d82e31f8dd05766c8d7b4e823d91f 2964 rust-timerfd_1.5.0-1.debian.tar.xz"
+    "c553306d6c9171ba8b368946a0b5a1f233fd2a0c9a37e4056e620112ada40ff2 2300 rust-timerfd_1.5.0-3.dsc 3d3fd47d83ad0b5c7be2e8db0b9d712901ef6ce5afbcc6f676761004f5104ea2 5814 rust-timerfd_1.5.0.orig.tar.gz 1bc85517e8c116a6a7da1faab3e9303d8bab9fe812d9e380f57487f0e9223d9e 3032 rust-timerfd_1.5.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-timerfd"
   ],
   "Files": [
-    "b76574ffac5076764b548363841b412f 2224 rust-timerfd_1.5.0-1.dsc 510ecb95d469e3be55d9eae68fc3a430 5814 rust-timerfd_1.5.0.orig.tar.gz 1baa941b382d25271ede2929b93fbf8a 2964 rust-timerfd_1.5.0-1.debian.tar.xz"
+    "134555a07f518612a527031d4812f44c 2300 rust-timerfd_1.5.0-3.dsc 510ecb95d469e3be55d9eae68fc3a430 5814 rust-timerfd_1.5.0.orig.tar.gz 51ee2c4189c03ef2e2ae647807b7dcc9 3032 rust-timerfd_1.5.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/main--/rust-timerfd"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/timerfd]"
   ],
   "Version": [
-    "1.5.0-1"
+    "1.5.0-3"
   ]
 }
