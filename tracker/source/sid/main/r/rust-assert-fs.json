@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-assert-fs-dev, librust-assert-fs+color-dev"
+    "librust-assert-fs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev \u003c!nocheck\u003e, librust-doc-comment-0.3+default-dev \u003c!nocheck\u003e, librust-globwalk-0.8+default-dev \u003c!nocheck\u003e, librust-predicates-3+diff-dev (\u003e= 3.0.1-~~) \u003c!nocheck\u003e, librust-predicates-core-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-predicates-tree-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anstyle-1+default-dev \u003c!nocheck\u003e, librust-doc-comment-0.3+default-dev \u003c!nocheck\u003e, librust-globwalk-0.9+default-dev \u003c!nocheck\u003e, librust-predicates-3+diff-dev (\u003e= 3.0.1-~~) \u003c!nocheck\u003e, librust-predicates-core-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-predicates-tree-1+default-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.8-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7cac4fcd3f949c7d5fd3deb392f3d160055aaea0c71a6cbd16aadfba52526f46 2667 rust-assert-fs_1.0.13-1.dsc f070617a68e5c2ed5d06ee8dd620ee18fb72b99f6c094bed34cf8ab07c875b48 19063 rust-assert-fs_1.0.13.orig.tar.gz ca0d6e81d28d9cf3efdf70b0456c34343fb78a7754e07470ed93427ea3e817b1 3828 rust-assert-fs_1.0.13-1.debian.tar.xz"
+    "0ec4df246a2ee994e1684e2a04da1f78284e85a0e85e6b215585c56b75277cf3 2632 rust-assert-fs_1.1.3-1.dsc a652f6cb1f516886fcfee5e7a5c078b9ade62cfcb889524efe5a64d682dd27a9 20176 rust-assert-fs_1.1.3.orig.tar.gz 2cec5066df59d4d871c21e8d6de37c45134edf72842c728c970750b2e870b5cc 3700 rust-assert-fs_1.1.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-assert-fs"
   ],
   "Files": [
-    "d43fd8ea5aae53b1704f75444f1c9d39 2667 rust-assert-fs_1.0.13-1.dsc 8dabccfbc5767922c72419b0e4b47f07 19063 rust-assert-fs_1.0.13.orig.tar.gz d1976114e645535860eba4d5a8971715 3828 rust-assert-fs_1.0.13-1.debian.tar.xz"
+    "287883d128a9ab8414a851aed4843977 2632 rust-assert-fs_1.1.3-1.dsc 91b3426f3a193ac042c27016019cdc47 20176 rust-assert-fs_1.1.3.orig.tar.gz a9df2b5cc9f368860f04c9e458e8031c 3700 rust-assert-fs_1.1.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-assert-fs"
   ],
   "Package-List": [
-    "librust-assert-fs+color-dev deb rust optional arch=any librust-assert-fs-dev deb rust optional arch=any"
+    "librust-assert-fs-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-automod-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/assert-fs]"
   ],
   "Version": [
-    "1.0.13-1"
+    "1.1.3-1"
   ]
 }
