@@ -6,16 +6,19 @@
     "librust-pcap-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.43-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.14-~~) \u003c!nocheck\u003e, librust-winapi-0.3+default-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-winapi-0.3+ws2def-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, libpcap-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.43-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.14-~~) \u003c!nocheck\u003e, libpcap-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7550c9ccab144a021e1797f3f3cc62820da0ad60b3e29fb7e02b660b268a8b12 1846 rust-pcap-sys_0.1.3-2.dsc bfefd9109d39e48a31c3ad7bdfa9135214bddaa002165ba7641e4c00c30bf926 5186 rust-pcap-sys_0.1.3.orig.tar.gz 1dedb8427e03225e4f6fcb6fa33f9a876ce19904ff6ea86db1c34b7ebdf856f7 2668 rust-pcap-sys_0.1.3-2.debian.tar.xz"
+    "5490d3888624156cd975be472e4fdb3d307f81dbecdf6dd26cb3962be87ad41d 2313 rust-pcap-sys_0.1.3-3.dsc bfefd9109d39e48a31c3ad7bdfa9135214bddaa002165ba7641e4c00c30bf926 5186 rust-pcap-sys_0.1.3.orig.tar.gz 7a8aa9745a4e19a0a1ae7355e16b7c40ebe317cf4ac973f7dde263cb17cb7df9 2816 rust-pcap-sys_0.1.3-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pcap-sys"
   ],
   "Files": [
-    "40fdcb4641d29e7797e948d6dc325c91 1846 rust-pcap-sys_0.1.3-2.dsc fe46c9e6a73e465c25048a8917adbb86 5186 rust-pcap-sys_0.1.3.orig.tar.gz 8a46894c854ce50029daed7d7cece6f2 2668 rust-pcap-sys_0.1.3-2.debian.tar.xz"
+    "7b6fb643e7cd3c779f67576834f68d18 2313 rust-pcap-sys_0.1.3-3.dsc fe46c9e6a73e465c25048a8917adbb86 5186 rust-pcap-sys_0.1.3.orig.tar.gz 228461a395de08fd8264e1c6b1d59911 2816 rust-pcap-sys_0.1.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pcap-sys]"
   ],
   "Version": [
-    "0.1.3-2"
+    "0.1.3-3"
   ]
 }

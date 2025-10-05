@@ -6,19 +6,25 @@
     "librust-lexopt-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e1e5d22a9f85c161087a2d9728ae75fabfd83a83329718a7c5e34004fa927a85 2102 rust-lexopt_0.3.0-1.dsc baff4b617f7df3d896f97fe922b64817f6cd9a756bb81d40f8883f2f66dcb401 24767 rust-lexopt_0.3.0.orig.tar.gz fb346033ccb97c30e4e8f23913382da819f531ecc6c66090847ba3f4f21a7027 2520 rust-lexopt_0.3.0-1.debian.tar.xz"
+    "9f1f5c94eb4589982ee8c2e52ee59b4ad9bcefb8bbbe29250251a073cbaacafc 2179 rust-lexopt_0.3.1-1.dsc 9fa0e2a1fcbe2f6be6c42e342259976206b383122fc152e872795338b5a3f3a7 26158 rust-lexopt_0.3.1.orig.tar.gz 080f5604f48f612efc227e610c1f31c0f012b31ffdf48dd5cd0342624643e089 2536 rust-lexopt_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lexopt"
   ],
   "Files": [
-    "2cb42fe94c5b2e04b41e1a44429a2591 2102 rust-lexopt_0.3.0-1.dsc d71093319a2c1efa90475bd45d34fab3 24767 rust-lexopt_0.3.0.orig.tar.gz b9d49299a713b9f516faa76aa0680ebb 2520 rust-lexopt_0.3.0-1.debian.tar.xz"
+    "f03ec26721d4707b8ccf63507dda3291 2179 rust-lexopt_0.3.1-1.dsc 2073767869c0dddcfb83cbf57612195d 26158 rust-lexopt_0.3.1.orig.tar.gz deaf44674d5284003e5593c14b80372c 2536 rust-lexopt_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/blyxxyz/lexopt"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lexopt]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1-1"
   ]
 }
