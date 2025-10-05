@@ -6,19 +6,25 @@
     "librust-globwalk-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-ignore-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-ignore-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "057f9c13af911c6bda5769f7588a5e8ea0c9ea96727ae0fd760b75a0b473d2b9 2376 rust-globwalk_0.8.1-2.dsc 93e3af942408868f6934a7b85134a3230832b9977cf66125df2f9edcfce4ddcc 13705 rust-globwalk_0.8.1.orig.tar.gz 163f6b6f5aa147c77af764ba56aae873f18e5985a4e7e63e858bbbeb6857ec09 3640 rust-globwalk_0.8.1-2.debian.tar.xz"
+    "774a2ba97d4dd5b8113339a88267241b4c005455de135cf2693db593a2232113 2407 rust-globwalk_0.9.1-1.dsc 0bf760ebf69878d9fd8f110c89703d90ce35095324d1f1edcb595c63945ee757 12572 rust-globwalk_0.9.1.orig.tar.gz e3f57ac0c6fa9befb598bb0a15917d2ac2a86cedbb7622ed7df86ca471e0245e 2756 rust-globwalk_0.9.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-globwalk"
   ],
   "Files": [
-    "1cf340176f1706f4cbdb4f9abd7c9289 2376 rust-globwalk_0.8.1-2.dsc 28fb2d3e8fbb4c9df2e53c8a6c7f3e88 13705 rust-globwalk_0.8.1.orig.tar.gz 44484157e81868fce3d446d03220489e 3640 rust-globwalk_0.8.1-2.debian.tar.xz"
+    "51ab6c0c0622fbb1c9d68e700fa698aa 2407 rust-globwalk_0.9.1-1.dsc 7b8257e056ddd1633f8526e8492fb831 12572 rust-globwalk_0.9.1.orig.tar.gz 6c6b314cc26a6702acd083908774f568 2756 rust-globwalk_0.9.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/gilnaa/globwalk"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-backtrace-0.3+default-dev, librust-docmatic-0.1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-docmatic-0.1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/globwalk]"
   ],
   "Version": [
-    "0.8.1-2"
+    "0.9.1-1"
   ]
 }
