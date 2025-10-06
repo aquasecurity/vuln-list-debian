@@ -6,19 +6,25 @@
     "librust-crc32fast-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c8f0d9ff4b61d379b6f7ebc2b20a2232c1ad7fa9626ee524bf805ec7d60ad805 1677 rust-crc32fast_1.4.2-1.dsc a97769d94ddab943e4510d138150169a2758b5ef3eb191a9ee688de3e23ef7b3 38491 rust-crc32fast_1.4.2.orig.tar.gz 462b4af3454faa9edf615acce364ecb0c687f7895869fe5141e33ef0e6297c5d 4048 rust-crc32fast_1.4.2-1.debian.tar.xz"
+    "538c0cee004ad6602e046e2cdebfb9cdb03e67adde5892e520ebb919415b8537 1779 rust-crc32fast_1.5.0-1.dsc 9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511 40723 rust-crc32fast_1.5.0.orig.tar.gz 7b4316fc6ea77ad19a1bdcd6eb6b7384c6259541824e7bd18748f55008d77cd7 4232 rust-crc32fast_1.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-crc32fast"
   ],
   "Files": [
-    "6574571feae3139186f4215d88f2b004 1677 rust-crc32fast_1.4.2-1.dsc f816d75ddc8831b6a300a739ddae267b 38491 rust-crc32fast_1.4.2.orig.tar.gz f823d77fc5d625f00eeaebd667aa97d2 4048 rust-crc32fast_1.4.2-1.debian.tar.xz"
+    "8d9f9883ecbcde28fb9389df212a315a 1779 rust-crc32fast_1.5.0-1.dsc b2a8b4dcf41563d959ae386da42eeb83 40723 rust-crc32fast_1.5.0.orig.tar.gz 1f849098fe536fd84e5bb1ad14963b37 4232 rust-crc32fast_1.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/srijs/rust-crc32fast"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-bencher-0.1+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/crc32fast]"
   ],
   "Version": [
-    "1.4.2-1"
+    "1.5.0-1"
   ]
 }
