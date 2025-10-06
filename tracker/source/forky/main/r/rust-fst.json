@@ -6,16 +6,19 @@
     "librust-fst-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "77a204ed5b2b455ae14e88ef5ce5c781de2e3bcbfb1d04ccb17dfda6732e29ca 2258 rust-fst_0.4.7-1.dsc 7ab85b9b05e3978cc9a9cf8fea7f01b494e1a09ed3037e16ba39edc7a29eb61a 1573393 rust-fst_0.4.7.orig.tar.gz 0de9f19b0127a88c3428c7ead9fa2311131d3443470d261d618b56d3a8637773 3716 rust-fst_0.4.7-1.debian.tar.xz"
+    "8b7bd68f78a1a28a91fb296939bd2e9bf3ac5e84b61227412553471770effa29 2261 rust-fst_0.4.7-2.dsc 7ab85b9b05e3978cc9a9cf8fea7f01b494e1a09ed3037e16ba39edc7a29eb61a 1573393 rust-fst_0.4.7.orig.tar.gz 00db1c5d630db5ee1b1cac9dc037f7d318365070e5c0036e59f5e5cb3344b425 4104 rust-fst_0.4.7-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fst"
   ],
   "Files": [
-    "4ccf02296578f357746bac01d12c7f0b 2258 rust-fst_0.4.7-1.dsc 5259cf708a270d8811edbe62dd17c579 1573393 rust-fst_0.4.7.orig.tar.gz d428d591993a5de746fe4c9141b3d104 3716 rust-fst_0.4.7-1.debian.tar.xz"
+    "b48779e8fee055253e1564169322dfeb 2261 rust-fst_0.4.7-2.dsc 5259cf708a270d8811edbe62dd17c579 1573393 rust-fst_0.4.7.orig.tar.gz 146a6f7c9243753da6797f7f7dfe0b82 4104 rust-fst_0.4.7-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-fnv-1+default-dev, librust-memmap-0.7+default-dev, librust-quickcheck-1-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-fnv-1+default-dev, librust-memmap2-0+default-dev, librust-quickcheck-1-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fst]"
   ],
   "Version": [
-    "0.4.7-1"
+    "0.4.7-2"
   ]
 }
