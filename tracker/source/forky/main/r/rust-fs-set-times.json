@@ -6,16 +6,19 @@
     "librust-fs-set-times-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-io-lifetimes-2-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+time-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-io-lifetimes-2-dev \u003c!nocheck\u003e, librust-rustix+default-dev (\u003c\u003c 2-~~) \u003c!nocheck\u003e, librust-rustix+default-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e, librust-rustix+fs-dev (\u003c\u003c 2-~~) \u003c!nocheck\u003e, librust-rustix+fs-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e, librust-rustix+time-dev (\u003c\u003c 2-~~) \u003c!nocheck\u003e, librust-rustix+time-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "47e6a9350e9676efbec026aa925a7b5b3b1d5c778a1befb0e171d01979c7896a 1800 rust-fs-set-times_0.20.1-1.dsc 033b337d725b97690d86893f9de22b67b80dcc4e9ad815f348254c38119db8fb 14607 rust-fs-set-times_0.20.1.orig.tar.gz 0525b4395c37a2e2740652f5b562b4f269756d0858a66eb54e11a1effa066be4 3268 rust-fs-set-times_0.20.1-1.debian.tar.xz"
+    "953ea6bca33a4714d7a6dabe224fe795f1ced6aa8a78b8a0d4c1b0d07325a0de 2625 rust-fs-set-times_0.20.3-2.dsc 94e7099f6313ecacbe1256e8ff9d617b75d1bcb16a6fddef94866d225a01a14a 15964 rust-fs-set-times_0.20.3.orig.tar.gz 19c20faebd5a6090a9a192789faa547f81e3211f72b317df626cde51ee93c1d6 3568 rust-fs-set-times_0.20.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fs-set-times"
   ],
   "Files": [
-    "fc5fa1f622d0d659321c144aefc1bfe4 1800 rust-fs-set-times_0.20.1-1.dsc 380bd5b80db2f5f2c221e9432dbd4cc6 14607 rust-fs-set-times_0.20.1.orig.tar.gz d6e1059079a360d7da5456540089946b 3268 rust-fs-set-times_0.20.1-1.debian.tar.xz"
+    "267bc306448942c03a28a88f7888fd14 2625 rust-fs-set-times_0.20.3-2.dsc 8d46bc1f9d253b45283a876f79daf5a8 15964 rust-fs-set-times_0.20.3.orig.tar.gz cd717a8c240ef6b6c73d9b4b43bc3b53 3568 rust-fs-set-times_0.20.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fs-set-times]"
   ],
   "Version": [
-    "0.20.1-1"
+    "0.20.3-2"
   ]
 }
