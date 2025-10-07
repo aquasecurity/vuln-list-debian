@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-ab-glyph-rasterizer-dev, librust-ab-glyph-rasterizer+libm-dev"
+    "librust-ab-glyph-rasterizer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3e8bfad993e2694bb639b39b4a7a1efe534522a34ce14890f5fe529bfe6551bd 2345 rust-ab-glyph-rasterizer_0.1.7-1.dsc 330223a1aecc308757b9926e9391c9b47f8ef2dbd8aea9df88312aea18c5e8d6 10786 rust-ab-glyph-rasterizer_0.1.7.orig.tar.gz bdc7d21aa5d42536402410600ad1deea2b45bdffa18ae903836d9bdc07a73d66 2424 rust-ab-glyph-rasterizer_0.1.7-1.debian.tar.xz"
+    "52c6f11514a9c7af085e3366c8a43371d92a0f619a9ed17ab9efe7bb0ea3beaf 2332 rust-ab-glyph-rasterizer_0.1.10-1.dsc 366ffbaa4442f4684d91e2cd7c5ea7c4ed8add41959a31447066e279e432b618 11206 rust-ab-glyph-rasterizer_0.1.10.orig.tar.gz ad8db08c7166edfac12d9bc252de72d5457c6fca8cf4d7b248372f30460fee8c 2344 rust-ab-glyph-rasterizer_0.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ab-glyph-rasterizer"
   ],
   "Files": [
-    "c78ff6c34618779d4f347ca5918f2e0a 2345 rust-ab-glyph-rasterizer_0.1.7-1.dsc 5d859c9a8836d7dcdfcfbe40f894c631 10786 rust-ab-glyph-rasterizer_0.1.7.orig.tar.gz 515e8659fb3b0a921ec6cec41434cdd9 2424 rust-ab-glyph-rasterizer_0.1.7-1.debian.tar.xz"
+    "20283ed608ce7a0b33a95958b5d833de 2332 rust-ab-glyph-rasterizer_0.1.10-1.dsc 1b44c125ef14f84aea92f7d95d663961 11206 rust-ab-glyph-rasterizer_0.1.10.orig.tar.gz b91e5af79487162bf857462ffdfa17ad 2344 rust-ab-glyph-rasterizer_0.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alexheretic/ab-glyph"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-ab-glyph-rasterizer"
   ],
   "Package-List": [
-    "librust-ab-glyph-rasterizer+libm-dev deb rust optional arch=any librust-ab-glyph-rasterizer-dev deb rust optional arch=any"
+    "librust-ab-glyph-rasterizer-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Marc Dequènes (Duck) \u003cDuck@DuckCorp.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ab-glyph-rasterizer]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.1.10-1"
   ]
 }

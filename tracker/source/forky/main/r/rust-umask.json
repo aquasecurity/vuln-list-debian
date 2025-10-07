@@ -6,19 +6,25 @@
     "librust-umask-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.38-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.40-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b50f6adc1975729c9afd10d8a18cfd875eac9d889f5b48ee0b7514a39b893b82 2138 rust-umask_2.1.0-1.dsc ec9a46c2549e35c054e0ffe281a3a6ec0007793db4df106604d37ed3f4d73d1c 6817 rust-umask_2.1.0.orig.tar.gz d2ae6d9f3f85274eb52d32f8157ff907dcad42ccf530a8530ec172d0a396d9b6 2916 rust-umask_2.1.0-1.debian.tar.xz"
+    "b8a5ffb3779a036359b7fe86ed76a10cc475e0a0ead398155f591d282ef8c0fe 2212 rust-umask_2.1.0-2.dsc ec9a46c2549e35c054e0ffe281a3a6ec0007793db4df106604d37ed3f4d73d1c 6817 rust-umask_2.1.0.orig.tar.gz 89557acd7d81138779f3f86222e08948fa3a01535733dd61f2c37b94e83a81d6 2792 rust-umask_2.1.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-umask"
   ],
   "Files": [
-    "9f90eca1a1f229dcec152fb22b8f86de 2138 rust-umask_2.1.0-1.dsc cbd9aaf2f29eb58ac60a11225bc4c1b1 6817 rust-umask_2.1.0.orig.tar.gz 91280761ce1345781b4fb1cb9189483a 2916 rust-umask_2.1.0-1.debian.tar.xz"
+    "65f38e8d0b291e1af4892c0deee69479 2212 rust-umask_2.1.0-2.dsc cbd9aaf2f29eb58ac60a11225bc4c1b1 6817 rust-umask_2.1.0.orig.tar.gz 7a0753ee21ecfb04445a04a4259020a7 2792 rust-umask_2.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Canop/umask"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Emmanuel Arias \u003ceamanu@yaerobi.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/umask]"
   ],
   "Version": [
-    "2.1.0-1"
+    "2.1.0-2"
   ]
 }

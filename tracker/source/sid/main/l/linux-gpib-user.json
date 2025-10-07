@@ -6,16 +6,16 @@
     "gpib-user-tools, libgpib-dev, libgpib0, libgpib-bin, libgpib-doc, gpib-user-doc, python3-gpib"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, flex, bison, python3-dev, python3-setuptools, docbook-utils, docbook-xml, docbook-xsl-ns, xsltproc, opensp"
+    "debhelper-compat (= 13), dh-sequence-python3, flex, bison, pybuild-plugin-pyproject, python3-all-dev, python3-setuptools, docbook-utils, docbook-xml, docbook-xsl-ns, xsltproc, opensp"
   ],
   "Checksums-Sha256": [
-    "cc7396d4a71f3271c84b431b2a66564901f348533fca1d6ea5f5460ebc6e6ba7 1886 linux-gpib-user_4.3.7-1.dsc 7d651211c5d106adf28dbfe1479f200d74a461437079de50b331cfa5f10d3d73 285056 linux-gpib-user_4.3.7.orig.tar.gz 6f55c4c6f5f25fe89a0fbe73ddf7d9a4b7e83c284296e3f6455fb4e567983b5b 7896 linux-gpib-user_4.3.7-1.debian.tar.xz"
+    "61e7c5f89feb86c31f048b0c59d7e6de308b6b8a7133209912504fc798b6a6b6 1971 linux-gpib-user_4.3.7-2.dsc 7d651211c5d106adf28dbfe1479f200d74a461437079de50b331cfa5f10d3d73 285056 linux-gpib-user_4.3.7.orig.tar.gz d0fed2837d659ed7c89ff58bf78308f959d1fb566d861fc469971b56be3c2c7c 7920 linux-gpib-user_4.3.7-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/linux-gpib-user"
   ],
   "Files": [
-    "f13749b7b934bbe87794f805acc91a86 1886 linux-gpib-user_4.3.7-1.dsc 0bc4e841fe965555de006a65b0a59c45 285056 linux-gpib-user_4.3.7.orig.tar.gz 33b1ae42990eca6a8b90f9858c7b7c65 7896 linux-gpib-user_4.3.7-1.debian.tar.xz"
+    "0a014d15928cb2f65fdd797432b56128 1971 linux-gpib-user_4.3.7-2.dsc 0bc4e841fe965555de006a65b0a59c45 285056 linux-gpib-user_4.3.7.orig.tar.gz 9a1d593f4af9e11a3f446dbeae562859 7920 linux-gpib-user_4.3.7-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
+  ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/electronics-team/linux-gpib-user.git"
   ],
   "Version": [
-    "4.3.7-1"
+    "4.3.7-2"
   ]
 }

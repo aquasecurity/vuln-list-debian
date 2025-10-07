@@ -6,19 +6,25 @@
     "librust-traitobject-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ff9dd2924380871e9937b169380511789f2a6125924c5e36f5fdb41a91acc259 2154 rust-traitobject_0.1.0-1.dsc 047d0cf408e32f4ce29971957e1259dd1ce95e6c65181a8412c25cc4bf9f1b7d 2218 rust-traitobject_0.1.0.orig.tar.gz 08eb5771038133536b820ac7ce1ce918b53b3a932f5e7de9fb80f648d58e3c0f 2512 rust-traitobject_0.1.0-1.debian.tar.xz"
+    "49b5766fe904191b6213fde56c82e351b5812cf5fa1702865b6140bbca1efbd2 2242 rust-traitobject_0.1.1-1.dsc 04a79e25382e2e852e8da874249358d382ebaf259d0d34e75d8db16a7efabbc7 2411 rust-traitobject_0.1.1.orig.tar.gz 670716a2076c027bce0227555a5be3643eddec7252b17877940cd6f8e2cb3aec 2532 rust-traitobject_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-traitobject"
   ],
   "Files": [
-    "0899d93db25b41bfa4b18f0c430d7d43 2154 rust-traitobject_0.1.0-1.dsc f2e90a44539db986db3b24d3f7949483 2218 rust-traitobject_0.1.0.orig.tar.gz 4b580ba82f69fc751739990190888bd7 2512 rust-traitobject_0.1.0-1.debian.tar.xz"
+    "7e858707099a36415575fa67cdaa49c1 2242 rust-traitobject_0.1.1-1.dsc d19b0356665f4831ec014346f4e73ae7 2411 rust-traitobject_0.1.1.orig.tar.gz 4204022b85861ffb5a628d7e042fd0f8 2532 rust-traitobject_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/reem/rust-traitobject.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/traitobject]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.1.1-1"
   ]
 }

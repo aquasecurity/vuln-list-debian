@@ -6,19 +6,25 @@
     "librust-wasm-bindgen-test-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-error-panic-hook-0.1+default-dev \u003c!nocheck\u003e, librust-js-sys-0.3+default-dev \u003c!nocheck\u003e, librust-scoped-tls-1+default-dev \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+default-dev \u003c!nocheck\u003e, librust-wasm-bindgen-futures-0.4+default-dev \u003c!nocheck\u003e, librust-wasm-bindgen-test-macro-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-js-sys-0.3+std-dev (\u003c\u003c 0.3.82-~~) \u003c!nocheck\u003e, librust-js-sys-0.3+std-dev (\u003e= 0.3.81-~~) \u003c!nocheck\u003e, librust-js-sys-0.3-dev (\u003c\u003c 0.3.82-~~) \u003c!nocheck\u003e, librust-js-sys-0.3-dev (\u003e= 0.3.81-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+std-dev (\u003c\u003c 0.2.105-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+std-dev (\u003e= 0.2.104-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2-dev (\u003c\u003c 0.2.105-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2-dev (\u003e= 0.2.104-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-futures-0.4+std-dev (\u003c\u003c 0.4.55-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-futures-0.4+std-dev (\u003e= 0.4.54-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-futures-0.4-dev (\u003c\u003c 0.4.55-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-futures-0.4-dev (\u003e= 0.4.54-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-test-macro-0.3+default-dev (\u003c\u003c 0.3.55-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-test-macro-0.3+default-dev (\u003e= 0.3.54-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ae986b700174b7644dcb0ffed432e873de37e55a222337ddcc26a524e58207d0 2001 rust-wasm-bindgen-test_0.3.37-1.dsc 6e6e302a7ea94f83a6d09e78e7dc7d9ca7b186bc2829c24a22d0753efd680671 16984 rust-wasm-bindgen-test_0.3.37.orig.tar.gz 5915eddc71382ddae767019d35613908b00784610c2c49916ef70c48dfecca9d 3072 rust-wasm-bindgen-test_0.3.37-1.debian.tar.xz"
+    "6defa8269237407ebfb7b3747ed9de7a03ae4727bb3d4bfe0c8587c2be7a09fe 3186 rust-wasm-bindgen-test_0.3.54-1.dsc 4e381134e148c1062f965a42ed1f5ee933eef2927c3f70d1812158f711d39865 21938 rust-wasm-bindgen-test_0.3.54.orig.tar.gz b35ca92ca9e1d7fed422cc313cf92dfafebbd95eb03728bdaca1022d0fc6ec7c 3288 rust-wasm-bindgen-test_0.3.54-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wasm-bindgen-test"
   ],
   "Files": [
-    "218c09e14d7a88a28943b9cf144dc793 2001 rust-wasm-bindgen-test_0.3.37-1.dsc b3aabcccad2834f44c4640cdbe31de98 16984 rust-wasm-bindgen-test_0.3.37.orig.tar.gz 6aea5ace69dca7a8b26e581c9055a4fa 3072 rust-wasm-bindgen-test_0.3.37-1.debian.tar.xz"
+    "20b1e7118e556287d4b90331ce1e78b2 3186 rust-wasm-bindgen-test_0.3.54-1.dsc b1eec8ee462cfb96138f03795384bb06 21938 rust-wasm-bindgen-test_0.3.54.orig.tar.gz af91e7185a1c1ecce13ceaab50eb5ed4 3288 rust-wasm-bindgen-test_0.3.54-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/wasm-bindgen/wasm-bindgen"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wasm-bindgen-test]"
   ],
   "Version": [
-    "0.3.37-1"
+    "0.3.54-1"
   ]
 }
