@@ -6,16 +6,19 @@
     "librust-colored-json-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ansi-term-0.12+default-dev \u003c!nocheck\u003e, librust-atty-0.2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-yansi-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a5e86a0ccb78e54bc23ccc97fea4a6f6505ebdd874168ba9b484ac4135f86eba 1862 rust-colored-json_2.1.0-1.dsc 1fd32eb54d016e203b7c2600e3a7802c75843a92e38ccc4869aefeca21771a64 12336 rust-colored-json_2.1.0.orig.tar.gz a5a0869a42fa50abcd6ded5d043a4e5c1aa186a587c641c914414eac77021bce 6980 rust-colored-json_2.1.0-1.debian.tar.xz"
+    "7699d1e64b19a409bb00ec24b621ad40b9bfb2d620259895606f3b81b3474624 2480 rust-colored-json_5.0.0-1.dsc e35980a1b846f8e3e359fd18099172a0857140ba9230affc4f71348081e039b6 12318 rust-colored-json_5.0.0.orig.tar.gz 4cda1aaf7ace6f4a12886f1663582b10a0d7d4ea89c764ccf12b5985516ab82a 7008 rust-colored-json_5.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-colored-json"
   ],
   "Files": [
-    "e636a77e6d4901b7ef712fd1f5fd469b 1862 rust-colored-json_2.1.0-1.dsc ad981580bdf4134a2f77f5c0e8b789cd 12336 rust-colored-json_2.1.0.orig.tar.gz 3527f82ad4fcd0b2fbda125cb08a67b3 6980 rust-colored-json_2.1.0-1.debian.tar.xz"
+    "d1a41ef0e640636a6483d1fb32cad8cf 2480 rust-colored-json_5.0.0-1.dsc 11ea90dcd7c1a15be2f471e70d8abd34 12318 rust-colored-json_5.0.0.orig.tar.gz f9e1ae0f411d7bb5cf265a7eb29a52ec 7008 rust-colored-json_5.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/colored-json]"
   ],
   "Version": [
-    "2.1.0-1"
+    "5.0.0-1"
   ]
 }

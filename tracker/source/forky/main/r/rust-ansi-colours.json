@@ -6,16 +6,19 @@
     "librust-ansi-colours-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rgb-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rgb-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "61f35b3e3bc6633bfd07dc94641cf90468a00775c3f94cf59b6b0f9ad995113f 1740 rust-ansi-colours_1.2.3-1.dsc 3bfc933be9f10785e7f22d0b8ce039f766fc65732922191070cc4df29fd3a1ca 20293 rust-ansi-colours_1.2.3.orig.tar.gz 4870f5c03ed0d146055925a6c356315cae9f3a417bcfc8f7880d92ecda1bde8a 3580 rust-ansi-colours_1.2.3-1.debian.tar.xz"
+    "e24d05d5127581225d6254b135de46c26ac857a0089c3e36264b47d94b873e32 2393 rust-ansi-colours_1.2.3-2.dsc 3bfc933be9f10785e7f22d0b8ce039f766fc65732922191070cc4df29fd3a1ca 20293 rust-ansi-colours_1.2.3.orig.tar.gz e2018eac4be34e290c49e53f53a89dd69b651752f35170bbf7804488cbcfe6f1 3420 rust-ansi-colours_1.2.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ansi-colours"
   ],
   "Files": [
-    "825472579dd68108f9d94f31d8ec7487 1740 rust-ansi-colours_1.2.3-1.dsc 3084e787a5b48967be2fae597af70f77 20293 rust-ansi-colours_1.2.3.orig.tar.gz 95b5e8822aba7369490c4ff51555aca7 3580 rust-ansi-colours_1.2.3-1.debian.tar.xz"
+    "21f2b23c392c2c2f244fc91f8fb0011e 2393 rust-ansi-colours_1.2.3-2.dsc 3084e787a5b48967be2fae597af70f77 20293 rust-ansi-colours_1.2.3.orig.tar.gz 596b5adecd13b5942bf33f5f9e51ea33 3420 rust-ansi-colours_1.2.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5-dev, librust-lab-0+default-dev, librust-rgb-0.8+default-dev, rustc"
+    "dh-cargo, librust-crc64-2+default-dev, librust-criterion-0.5-dev, librust-lab-0+default-dev, librust-rgb-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ansi-colours]"
   ],
   "Version": [
-    "1.2.3-1"
+    "1.2.3-2"
   ]
 }

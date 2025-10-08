@@ -6,19 +6,25 @@
     "librust-unarray-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ef181488f3d15512c31246acbe47f595c91873514047251fc6aa341cc8134ff0 2164 rust-unarray_0.1.4-1.dsc eaea85b334db583fe3274d12b4cd1880032beab409c0d774be044d4480ab9a94 12895 rust-unarray_0.1.4.orig.tar.gz 707c526b461ec2e6bb74815c01562b833797be5f53cb5f799eb1dead8fbb2ec1 2764 rust-unarray_0.1.4-1.debian.tar.xz"
+    "acf5c559a39a4370f1173c4eca2b54c333bbfe7de90b8694666c876d446a9778 2252 rust-unarray_0.1.4-2.dsc eaea85b334db583fe3274d12b4cd1880032beab409c0d774be044d4480ab9a94 12895 rust-unarray_0.1.4.orig.tar.gz e18d6af97ca7b67ef2042c768eea30b07ce5f6db3ab9d894793045e644879747 2776 rust-unarray_0.1.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unarray"
   ],
   "Files": [
-    "6153562f539003681cad901b463f1f56 2164 rust-unarray_0.1.4-1.dsc 00dda16f17b456d99fb1cafa9125ed22 12895 rust-unarray_0.1.4.orig.tar.gz 27d3e321310d4395a11ba869b900cfe6 2764 rust-unarray_0.1.4-1.debian.tar.xz"
+    "1dea45c50e30df21a32cd317b54cce3f 2252 rust-unarray_0.1.4-2.dsc 00dda16f17b456d99fb1cafa9125ed22 12895 rust-unarray_0.1.4.orig.tar.gz 27f6d60d6819236746be2cace56e07ad 2776 rust-unarray_0.1.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cameron1024/unarray"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proptest-1+default-dev, librust-test-strategy-0.3+default-dev"
+    "dh-cargo, librust-proptest-1+default-dev, librust-test-strategy-0.4+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/unarray"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unarray]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.1.4-2"
   ]
 }
