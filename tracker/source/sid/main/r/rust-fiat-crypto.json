@@ -6,16 +6,19 @@
     "librust-fiat-crypto-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "361c979a48c73e70d1d951296a5a3f105ae4b4d586e0916756d1db2d2eb0865c 2290 rust-fiat-crypto_0.2.2-1.dsc a481586acf778f1b1455424c343f71124b048ffa5f4fc3f8f6ae9dc432dcb3c7 494163 rust-fiat-crypto_0.2.2.orig.tar.gz 1b6124bc0aa9b465b33482e430cf602132faca616b947c6456b111eb564d6e9e 3320 rust-fiat-crypto_0.2.2-1.debian.tar.xz"
+    "1a88010f42554e909e1ddf6ef121c90a3c647a003760c229c2ea0d43f05122f2 2310 rust-fiat-crypto_0.3.0-1.dsc 64cd1e32ddd350061ae6edb1b082d7c54915b5c672c389143b9a63403a109f24 600542 rust-fiat-crypto_0.3.0.orig.tar.gz 1564cd04aaec038f0bda28e598bcb9600c591062fbd15663ebd9106a18b3f9ce 3340 rust-fiat-crypto_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fiat-crypto"
   ],
   "Files": [
-    "21a9a4a672780eae2386272f4eeed26e 2290 rust-fiat-crypto_0.2.2-1.dsc e11355b078970d4b490ad0ae99433232 494163 rust-fiat-crypto_0.2.2.orig.tar.gz c0ba6ce28c328f437a19ab3ced4f2183 3320 rust-fiat-crypto_0.2.2-1.debian.tar.xz"
+    "37515a657869969a531af64b717778d8 2310 rust-fiat-crypto_0.3.0-1.dsc 668ec7ac6575dceae0e296dfb8a3603a 600542 rust-fiat-crypto_0.3.0.orig.tar.gz 3d05a39a57a124337569454e68fa046f 3340 rust-fiat-crypto_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fiat-crypto]"
   ],
   "Version": [
-    "0.2.2-1"
+    "0.3.0-1"
   ]
 }
