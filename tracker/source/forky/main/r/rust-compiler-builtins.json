@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-compiler-builtins-dev, librust-compiler-builtins+c-dev, librust-compiler-builtins+core-dev, librust-compiler-builtins+rustc-dep-of-std-dev"
+    "librust-compiler-builtins-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bfd338b512c0499a22bbf13700acc3fce29fe8d8ce402366c82cb32e94a808e9 2630 rust-compiler-builtins_0.1.139-1.dsc 7925a77545f37a18e152a4aeaeb9a220309022067cafcfa2ecebe9ec55d36ccb 201042 rust-compiler-builtins_0.1.139.orig.tar.gz aa34415e98eacd950a507c86c1cf1e480189e9ab082db741519794bb8204140e 7092 rust-compiler-builtins_0.1.139-1.debian.tar.xz"
+    "a28315965dc1f47466f0e21d051eb0f1ef5cafc0b3276baa3ff2cf56bd0f79ee 2360 rust-compiler-builtins_0.1.158-3.dsc 164cdc689e4c6d69417f77a5f48be240c291e84fbef0b1281755dc754b19c809 245300 rust-compiler-builtins_0.1.158.orig.tar.gz ad832d0a08179f245a1678e87b97a03b6c44e0d90f73e8b8385aa1100a443d35 7080 rust-compiler-builtins_0.1.158-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-compiler-builtins"
   ],
   "Files": [
-    "9a193497859688834cd77b483a63f0f9 2630 rust-compiler-builtins_0.1.139-1.dsc 640731cf8bcbae5717820a085c18c3b8 201042 rust-compiler-builtins_0.1.139.orig.tar.gz 564f32b527e1020292a8aaaf1b41bb2f 7092 rust-compiler-builtins_0.1.139-1.debian.tar.xz"
+    "a7e73592c1c36e55ace683123c75e3de 2360 rust-compiler-builtins_0.1.158-3.dsc d5e3c26d0a39323c3308afa99260f530 245300 rust-compiler-builtins_0.1.158.orig.tar.gz 316d8f22450fc8dab8b4359415897f32 7080 rust-compiler-builtins_0.1.158-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-compiler-builtins"
   ],
   "Package-List": [
-    "librust-compiler-builtins+c-dev deb rust optional arch=any librust-compiler-builtins+core-dev deb rust optional arch=any librust-compiler-builtins+rustc-dep-of-std-dev deb rust optional arch=any librust-compiler-builtins-dev deb rust optional arch=any"
+    "librust-compiler-builtins-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/compiler-builtins]"
   ],
   "Version": [
-    "0.1.139-1"
+    "0.1.158-3"
   ]
 }

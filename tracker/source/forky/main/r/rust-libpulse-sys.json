@@ -6,16 +6,19 @@
     "librust-libpulse-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-num-derive-0.3+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.23-~~) \u003c!nocheck\u003e, librust-winapi-0.3+winsock2-dev \u003c!nocheck\u003e, libpulse-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-num-derive-0.4+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.23-~~) \u003c!nocheck\u003e, libpulse-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "aa333eaf0b871956de38bc3f03061e2ded3a133b96505e16d51918bb7815c75a 2519 rust-libpulse-sys_1.21.0-1.dsc bc19e110fbf42c17260d30f6d3dc545f58491c7830d38ecb9aaca96e26067a9b 35899 rust-libpulse-sys_1.21.0.orig.tar.gz e02e8cd591b219bd8622265de154e7b35eac453ca42f5428c756c4fbfb08f56d 3136 rust-libpulse-sys_1.21.0-1.debian.tar.xz"
+    "e56e20f10def92cd3be4988d1371ace8739ac1835d8471f3c0528a6b304da68f 2489 rust-libpulse-sys_1.23.0-1.dsc d74371848b22e989f829cc1621d2ebd74960711557d8b45cfe740f60d0a05e61 36914 rust-libpulse-sys_1.23.0.orig.tar.gz b52ca222540ff045a30244bed6ced43eb8a43e842eaa2c1171fe5ec01777690b 3308 rust-libpulse-sys_1.23.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libpulse-sys"
   ],
   "Files": [
-    "390dbd450e4ca32971a0a0ddac05eb85 2519 rust-libpulse-sys_1.21.0-1.dsc 7af851b9d8f8aa3b9bc26459d7395a81 35899 rust-libpulse-sys_1.21.0.orig.tar.gz df51fa724227ab926c4598d20cebf1fe 3136 rust-libpulse-sys_1.21.0-1.debian.tar.xz"
+    "e9609ace1d75a22709e32764e1bff2cc 2489 rust-libpulse-sys_1.23.0-1.dsc 1bb0605f15b680d3543158950a55ed62 36914 rust-libpulse-sys_1.23.0.orig.tar.gz b4b6a12763c23c0db6a7b0d45661be5e 3308 rust-libpulse-sys_1.23.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libpulse-sys]"
   ],
   "Version": [
-    "1.21.0-1"
+    "1.23.0-1"
   ]
 }

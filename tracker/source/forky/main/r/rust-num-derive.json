@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-num-derive-dev, librust-num-derive+full-syntax-dev"
+    "librust-num-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f5cb08e69f385b181a0498524c42160eea4b32cd326c8f50ab38c26034b0ae08 2113 rust-num-derive_0.3.0-1.dsc 0c8b15b261814f992e33760b1fca9fe8b693d8a65299f20c9901688636cfb746 12870 rust-num-derive_0.3.0.orig.tar.gz 37ef0226c5446bd7a0387d13101faabc0dd67e7cf20d32393f1f84b2b57678b4 2812 rust-num-derive_0.3.0-1.debian.tar.xz"
+    "da1a292de6f26b9b84ca7244a2bb1ca3904ff41a91ceb57a305750e2e64f5733 2418 rust-num-derive_0.4.2-1.dsc ed3955f1a9c7c0c15e092f9c887db08b1fc683305fdf6eb6684f22555355e202 14709 rust-num-derive_0.4.2.orig.tar.gz 8fc22e3fa6de8602e759e20cc64db427419016a75a69b51d1f047b7d6df4b8f8 2804 rust-num-derive_0.4.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-derive"
   ],
   "Files": [
-    "4db180dcb1b6c0c30375d458880094d1 2113 rust-num-derive_0.3.0-1.dsc fde25b4b3d49ec466335f2a6fab7a8d5 12870 rust-num-derive_0.3.0.orig.tar.gz a20bd5af8aec19cd4f7268e6e918a7e3 2812 rust-num-derive_0.3.0-1.debian.tar.xz"
+    "b5751ee9904da2db58427d16dc49f906 2418 rust-num-derive_0.4.2-1.dsc 3cf2c6451073b85f3075962a60bb90a0 14709 rust-num-derive_0.4.2.orig.tar.gz dbc7f8e9e4fac8a8d455c337fba30974 2804 rust-num-derive_0.4.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-num-derive"
   ],
   "Package-List": [
-    "librust-num-derive+full-syntax-dev deb rust optional arch=any librust-num-derive-dev deb rust optional arch=any"
+    "librust-num-derive-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-num-0.2+default-dev, librust-num-traits-0.2+default-dev"
+    "dh-cargo, librust-num-0.4+default-dev, librust-num-traits-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-derive]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.4.2-1"
   ]
 }

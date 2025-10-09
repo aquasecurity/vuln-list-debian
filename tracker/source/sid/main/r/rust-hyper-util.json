@@ -6,16 +6,19 @@
     "librust-hyper-util-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.7.1-~~) \u003c!nocheck\u003e, librust-futures-util-0.3-dev (\u003e= 0.3.16-~~) \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-1+default-dev \u003c!nocheck\u003e, librust-hyper-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.7.1-~~) \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-1+default-dev \u003c!nocheck\u003e, librust-hyper-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5c400603ebfb099d7005bce3bb158f92a2d3927944ba9b635f7873f4cea8731a 2266 rust-hyper-util_0.1.10-1.dsc df2dcfbe0677734ab2f3ffa7fa7bfd4706bfdc1ef393f2ee30184aed67e631b4 72887 rust-hyper-util_0.1.10.orig.tar.gz b0052a40567e2b2062814f8a17117181361c0c9abe5744566c5b362adbaddb56 3996 rust-hyper-util_0.1.10-1.debian.tar.xz"
+    "3628d57b971f800f0e3c8cfc9f85912efdf3c4a56618c748a8bcd1a8f595a909 2922 rust-hyper-util_0.1.17-1.dsc 3c6995591a8f1380fcb4ba966a252a4b29188d51d2b89e3a252f5305be65aea8 100999 rust-hyper-util_0.1.17.orig.tar.gz 299e0ebf19e6f203c304e7a90a81b747b5c1d006e1d8627cb8435b5a60c587d8 4908 rust-hyper-util_0.1.17-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hyper-util"
   ],
   "Files": [
-    "ab8fca6afd9283d42de3d0efc1483a99 2266 rust-hyper-util_0.1.10-1.dsc 9f9a0c026fdc5af23a1c3e8d5c6738c1 72887 rust-hyper-util_0.1.10.orig.tar.gz 061c987cd4bdf8532ce8e60352d46d99 3996 rust-hyper-util_0.1.10-1.debian.tar.xz"
+    "69b37defe3797dcc582f7634eea9f8d6 2922 rust-hyper-util_0.1.17-1.dsc 00020e50d1f3ff1d7e62a800a9bfb361 100999 rust-hyper-util_0.1.17.orig.tar.gz 08928d3e12722727f53c7d195994cca8 4908 rust-hyper-util_0.1.17-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bytes-1+default-dev, librust-http-body-util-0.1+default-dev, librust-hyper-1+default-dev, librust-hyper-1+full-dev, librust-pnet-datalink-0.35+default-dev, librust-pretty-env-logger-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+signal-dev, librust-tokio-1+test-util-dev, librust-tokio-test-0.4+default-dev, rustc"
+    "dh-cargo, librust-bytes-1+default-dev, librust-futures-util-0.3+alloc-dev, librust-http-body-util-0.1+default-dev, librust-hyper-1+default-dev, librust-hyper-1+full-dev, librust-pnet-datalink-0.35+default-dev, librust-pretty-env-logger-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+signal-dev, librust-tokio-1+test-util-dev, librust-tokio-test-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hyper-util]"
   ],
   "Version": [
-    "0.1.10-1"
+    "0.1.17-1"
   ]
 }

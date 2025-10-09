@@ -6,19 +6,25 @@
     "librust-form-urlencoded-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-percent-encoding-2+alloc-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e, librust-percent-encoding-2+std-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e, librust-percent-encoding-2-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-percent-encoding-2+alloc-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e, librust-percent-encoding-2+std-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e, librust-percent-encoding-2-dev (\u003e= 2.3.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "efabfea4426b5f26060db1874ecfa2f5bc5eddea04d8778c92853246fc935e96 2418 rust-form-urlencoded_1.2.1-1.dsc e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456 8969 rust-form-urlencoded_1.2.1.orig.tar.gz 69a077129cc8ed752aaff1249f73e08d436021bf4ddcaa73b5af891672656668 3048 rust-form-urlencoded_1.2.1-1.debian.tar.xz"
+    "3b7c0daa4f9c45bcb63d988dd72860a48661b2d85c42c73138b110f140d93d11 2466 rust-form-urlencoded_1.2.2-1.dsc cb4cb245038516f5f85277875cdaa4f7d2c9a0fa0468de06ed190163b1581fcf 9347 rust-form-urlencoded_1.2.2.orig.tar.gz afa4a836ecaa1a24172772d14f6c726bf1ba9d5001ce2c4cb82e20c11c2f5177 3072 rust-form-urlencoded_1.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-form-urlencoded"
   ],
   "Files": [
-    "7a608f72c5fd863b46a23671885e9cf0 2418 rust-form-urlencoded_1.2.1-1.dsc c3e51926c9853b714191ef1bec90e2ce 8969 rust-form-urlencoded_1.2.1.orig.tar.gz b864b1559954c8f3b9424c06ae3e98b4 3048 rust-form-urlencoded_1.2.1-1.debian.tar.xz"
+    "07993e37f6d76f4e1ffc5b412f93ee65 2466 rust-form-urlencoded_1.2.2-1.dsc 50f998a859c3e57218745ba77c370e2b 9347 rust-form-urlencoded_1.2.2.orig.tar.gz 7007b1b47af0fc20780b7adad7be2976 3072 rust-form-urlencoded_1.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/rust-url"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/form-urlencoded]"
   ],
   "Version": [
-    "1.2.1-1"
+    "1.2.2-1"
   ]
 }
