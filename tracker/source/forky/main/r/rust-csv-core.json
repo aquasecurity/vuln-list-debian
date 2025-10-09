@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-csv-core-dev, librust-csv-core+libc-dev"
+    "librust-csv-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "596308def408b558c60c96c41d7a1b7147c38728399c68d8417f1397988b6ad5 2441 rust-csv-core_0.1.11-1.dsc 5efa2b3d7902f4b634a20cae3c9c4e6209dc4779feb6863329607560143efa70 25852 rust-csv-core_0.1.11.orig.tar.gz 6e5d995e1a5106168cd65b934976c23604363c9e2679e253bf0d886d10765f51 3852 rust-csv-core_0.1.11-1.debian.tar.xz"
+    "18a89d6a20786f50f728db4e45634246732d5b1855ec0b6d4e01e59a3fd921b7 2263 rust-csv-core_0.1.12-1.dsc 7d02f3b0da4c6504f86e9cd789d8dbafab48c2321be74e9987593de5a894d93d 26298 rust-csv-core_0.1.12.orig.tar.gz c72ed8978db5f7ec3759deac9ddf4a3f694ff61f81c66053aa8e9e7c9c7c0648 3468 rust-csv-core_0.1.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-csv-core"
   ],
   "Files": [
-    "fc7d0f0eaf178769b2fbee771f81d10a 2441 rust-csv-core_0.1.11-1.dsc 78268e46c45706dae81c672ce95a1043 25852 rust-csv-core_0.1.11.orig.tar.gz 3963fb3374655937201dd19284dc9cd5 3852 rust-csv-core_0.1.11-1.debian.tar.xz"
+    "bb789c10541f6e89ae67563f0b5103e6 2263 rust-csv-core_0.1.12-1.dsc 89daa1f8714baf5febf9b5a5ebd98e6d 26298 rust-csv-core_0.1.12.orig.tar.gz bb7da88cd51bc2e1afda526430b5cdde 3468 rust-csv-core_0.1.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-csv-core"
   ],
   "Package-List": [
-    "librust-csv-core+libc-dev deb rust optional arch=any librust-csv-core-dev deb rust optional arch=any"
+    "librust-csv-core-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-arrayvec-0.5-dev"
+    "dh-cargo, librust-arrayvec-0.7-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/csv-core]"
   ],
   "Version": [
-    "0.1.11-1"
+    "0.1.12-1"
   ]
 }

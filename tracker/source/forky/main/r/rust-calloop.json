@@ -6,16 +6,19 @@
     "librust-calloop-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-polling-3+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+event-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+pipe-dev \u003c!nocheck\u003e, librust-rustix-0.38+std-dev \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-polling-3+default-dev \u003c!nocheck\u003e, librust-rustix-1+event-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev \u003c!nocheck\u003e, librust-rustix-1+pipe-dev \u003c!nocheck\u003e, librust-rustix-1+std-dev \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1070e2107f869fdc0afae9e7b6d1bca6f29435a1dbd07e6a1f2087cb6147b16d 2784 rust-calloop_0.13.0-1.dsc b99da2f8558ca23c71f4fd15dc57c906239752dd27ff3c00a1d56b685b7cbfec 69698 rust-calloop_0.13.0.orig.tar.gz 760f174ec17e9bcc4aa105bb6b35f21c11a9a7348481a73ef0cf202038a9dc58 4460 rust-calloop_0.13.0-1.debian.tar.xz"
+    "38198827c987f218cd634f3a05785cffd0ed07f29d97cd40374534d6b646866f 2687 rust-calloop_0.13.0-2.dsc b99da2f8558ca23c71f4fd15dc57c906239752dd27ff3c00a1d56b685b7cbfec 69698 rust-calloop_0.13.0.orig.tar.gz c1dc77b547d1e3fae1703653937fb64bb97535be2a2834182fee39d7027824a0 4780 rust-calloop_0.13.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-calloop"
   ],
   "Files": [
-    "b2a45140526f12e0ffe80dafe746c172 2784 rust-calloop_0.13.0-1.dsc fe3f318e17dfe5b994ee937777f197aa 69698 rust-calloop_0.13.0.orig.tar.gz c758a3f801a8629c31765965c63c1b5d 4460 rust-calloop_0.13.0-1.debian.tar.xz"
+    "df3e577854e37981cd229603e6eac67c 2687 rust-calloop_0.13.0-2.dsc fe3f318e17dfe5b994ee937777f197aa 69698 rust-calloop_0.13.0.orig.tar.gz a9b5085fd43a04f875d7aec06a81a37c 4780 rust-calloop_0.13.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3+default-dev, librust-rustix-0.38+net-dev, rustc"
+    "dh-cargo, librust-futures-0.3+default-dev, librust-rustix-1+net-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/calloop]"
   ],
   "Version": [
-    "0.13.0-1"
+    "0.13.0-2"
   ]
 }

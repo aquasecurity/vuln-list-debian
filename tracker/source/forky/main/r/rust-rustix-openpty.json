@@ -6,19 +6,25 @@
     "librust-rustix-openpty-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-errno-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.114-~~) \u003c!nocheck\u003e, librust-rustix-0.38+alloc-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e, librust-rustix-0.38+process-dev \u003c!nocheck\u003e, librust-rustix-0.38+pty-dev \u003c!nocheck\u003e, librust-rustix-0.38+stdio-dev \u003c!nocheck\u003e, librust-rustix-0.38+termios-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-errno-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.114-~~) \u003c!nocheck\u003e, librust-rustix-1+alloc-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev \u003c!nocheck\u003e, librust-rustix-1+process-dev \u003c!nocheck\u003e, librust-rustix-1+pty-dev \u003c!nocheck\u003e, librust-rustix-1+stdio-dev \u003c!nocheck\u003e, librust-rustix-1+termios-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2cc6530b9ac5ae150d1075f8f8218e7a880efd3ea02212cf6515ffff3072e4d1 2733 rust-rustix-openpty_0.1.1-1.dsc a25c3aad9fc1424eb82c88087789a7d938e1829724f3e4043163baf0d13cfc12 11478 rust-rustix-openpty_0.1.1.orig.tar.gz 103d2b76523a325c30380f494899e174a7ffd4529ca2d08477ae5897d00f5ddb 3044 rust-rustix-openpty_0.1.1-1.debian.tar.xz"
+    "869cfee1ed2a32b14394b939ef12a996dd751f2a1911f5f44c620de5d22c436e 2697 rust-rustix-openpty_0.1.1-2.dsc a25c3aad9fc1424eb82c88087789a7d938e1829724f3e4043163baf0d13cfc12 11478 rust-rustix-openpty_0.1.1.orig.tar.gz 824961df7a2d2e8ec0ed50a7e7ab134ce1a5b98b7e6454187f2dac9519a369f8 3376 rust-rustix-openpty_0.1.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustix-openpty"
   ],
   "Files": [
-    "520112b57bb83a1d7dcfacce436bb6d9 2733 rust-rustix-openpty_0.1.1-1.dsc e60c2f75a7c60276ba15dba4c1766286 11478 rust-rustix-openpty_0.1.1.orig.tar.gz 2a06b098b13197c1a5cb6b1a9c9fecad 3044 rust-rustix-openpty_0.1.1-1.debian.tar.xz"
+    "85157ae910d5b424796bf2f2b771d69c 2697 rust-rustix-openpty_0.1.1-2.dsc e60c2f75a7c60276ba15dba4c1766286 11478 rust-rustix-openpty_0.1.1.orig.tar.gz 4f6e5ee55a39d225a76949d6dcaf8c02 3376 rust-rustix-openpty_0.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sunfishcode/rustix-openpty"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustix-0.38+default-dev, librust-rustix-0.38+termios-dev"
+    "dh-cargo, librust-rustix-1+default-dev, librust-rustix-1+termios-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustix-openpty]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.1-2"
   ]
 }

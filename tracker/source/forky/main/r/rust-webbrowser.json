@@ -6,16 +6,19 @@
     "librust-webbrowser-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-home-0.5+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bd9948c0e3323ed6f7408b1631aa29d330183f4d0b3ce803aa187677a3888eab 1966 rust-webbrowser_0.8.10-2.dsc fd222aa310eb7532e3fd427a5d7db7e44bc0b0cf1c1e21139c345325511a85b6 38766 rust-webbrowser_0.8.10.orig.tar.gz 03a7e62dd0d08afb1ecc71f7fc0f8540095fd0ca546ccc291ce31610028f0557 5112 rust-webbrowser_0.8.10-2.debian.tar.xz"
+    "7013f5e9d7d9097e1a06621677fdb76d72c92eede9f4815f50fbf165e7267a50 2552 rust-webbrowser_1.0.5-1.dsc aaf4f3c0ba838e82b4e5ccc4157003fb8c324ee24c058470ffb82820becbde98 56190 rust-webbrowser_1.0.5.orig.tar.gz edc9d12001a9bc5ee4611916e16eef5d448df561c99aba28b852e67fdccecff1 5108 rust-webbrowser_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-webbrowser"
   ],
   "Files": [
-    "a03f4884b59dc473fc49a7e9346f701a 1966 rust-webbrowser_0.8.10-2.dsc c6d47ad3602da94f95e0befe19a4989a 38766 rust-webbrowser_0.8.10.orig.tar.gz 3d8d531e7611dddd8e32564caa34848d 5112 rust-webbrowser_0.8.10-2.debian.tar.xz"
+    "b800c8728fe22dc6358a73fcad4bfa3f 2552 rust-webbrowser_1.0.5-1.dsc 488700a7712849fa5fe4fe85f7d0f6ad 56190 rust-webbrowser_1.0.5.orig.tar.gz 4ba874228b802cc7c05f1312a5c9b367 5108 rust-webbrowser_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/webbrowser]"
   ],
   "Version": [
-    "0.8.10-2"
+    "1.0.5-1"
   ]
 }

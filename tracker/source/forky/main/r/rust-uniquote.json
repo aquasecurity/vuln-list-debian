@@ -6,19 +6,25 @@
     "librust-uniquote-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51d675f7fa1d36c8f1b150122e634a75e0ccdf19cad57e04d61deb7b82e06c23 2118 rust-uniquote_3.3.0-1.dsc 54a900eeb2aef304818fb781cf422a42c2f67f760c25927ccc83edc6b0fdfd0c 16962 rust-uniquote_3.3.0.orig.tar.gz 65e9058ff363659e043d2a233adc1f16fd8bbeccd4fb8aaef0e387c68a348376 3084 rust-uniquote_3.3.0-1.debian.tar.xz"
+    "c052072a8272906c32df0e2a0a2bd4363bad9bb4372ff08d0c65379e9bfbc48c 2207 rust-uniquote_4.0.0-1.dsc 1fd76d314b2276c3efba1c90e48135f1b8b8bd7f9fca39dd5e7425c0cef74c79 16906 rust-uniquote_4.0.0.orig.tar.gz cf382ffd9a3e400e1927dede68c756313ba10fb32aceb62e6f7f133ef107c0d0 3124 rust-uniquote_4.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-uniquote"
   ],
   "Files": [
-    "2e1cf5e5742048ef2d7f14be3cea65ab 2118 rust-uniquote_3.3.0-1.dsc cddc72cb69de141e11cb6e2084a9b860 16962 rust-uniquote_3.3.0.orig.tar.gz 8f773c856141092c93dc32434d0df1b5 3084 rust-uniquote_3.3.0-1.debian.tar.xz"
+    "d45fdfb2482af90f2118540936395b2d 2207 rust-uniquote_4.0.0-1.dsc b7881cd9b17ab746e6ff2d342d097919 16906 rust-uniquote_4.0.0.orig.tar.gz 2577a6273db786adb5b7b4e514ef612e 3124 rust-uniquote_4.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dylni/uniquote"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/uniquote]"
   ],
   "Version": [
-    "3.3.0-1"
+    "4.0.0-1"
   ]
 }

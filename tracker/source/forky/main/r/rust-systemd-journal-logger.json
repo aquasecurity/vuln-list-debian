@@ -6,22 +6,25 @@
     "librust-systemd-journal-logger-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-log-0.4+kv-dev \u003c!nocheck\u003e, librust-log-0.4+std-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e, librust-rustix-0.38+net-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e, librust-rustix-0.38+std-dev (\u003e= 0.38.37-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-log-0.4+kv-dev \u003c!nocheck\u003e, librust-log-0.4+std-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-rustix-1+net-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-rustix-1+std-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3ce00ac37b46e89c6f81766ce75255419405dd1b779698021640d3cb76304384 2910 rust-systemd-journal-logger_2.2.0-2.dsc c18918ae65f3d828ec9ab7f4714b8c564149045f47407e319dd25cadfaf9d0cf 24226 rust-systemd-journal-logger_2.2.0.orig.tar.gz 2040b5494b7f90d65568b5b1a9ca31f99e950bee3a7f502d9d51eee9e06682c7 2648 rust-systemd-journal-logger_2.2.0-2.debian.tar.xz"
+    "71b0f513470bd202de6ae61020ef37d4b37e532027473d610a79beb7c233282c 2886 rust-systemd-journal-logger_2.2.2-1.dsc 7266304d24ca5a4b230545fc558c80e18bd3e1d2eb1be149b6bcd04398d3e79c 31499 rust-systemd-journal-logger_2.2.2.orig.tar.gz 9ff0589d00701b4ff01b793caa2f4ee2c8b01fb5d2fdaab70e176843b3fc0252 3088 rust-systemd-journal-logger_2.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-systemd-journal-logger"
   ],
   "Files": [
-    "6ad9830a3baa6556667d101d94a28a8e 2910 rust-systemd-journal-logger_2.2.0-2.dsc 4b64548b22330a71a8451b1a81fb7685 24226 rust-systemd-journal-logger_2.2.0.orig.tar.gz df2e1f472cae61443705ef7aabbd921c 2648 rust-systemd-journal-logger_2.2.0-2.debian.tar.xz"
+    "703d9122cc8944c62f5d29066d3197ff 2886 rust-systemd-journal-logger_2.2.2-1.dsc dac9fad29659439bc4aea39781d3e70e 31499 rust-systemd-journal-logger_2.2.2.orig.tar.gz d046bd3b3e7a8a347fa587761b90ec9a 3088 rust-systemd-journal-logger_2.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/swsnr/systemd-journal-logger.rs"
+    "https://codeberg.org/swsnr/systemd-journal-logger.rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-log-0.4+default-dev, librust-log-0.4+kv-std-dev, librust-rand-0.8+default-dev, librust-retry-2+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-similar-asserts-1+default-dev, rustc"
+    "dh-cargo, librust-log-0.4+default-dev, librust-log-0.4+kv-std-dev, librust-retry-2+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-similar-asserts-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/systemd-journal-logger]"
   ],
   "Version": [
-    "2.2.0-2"
+    "2.2.2-1"
   ]
 }

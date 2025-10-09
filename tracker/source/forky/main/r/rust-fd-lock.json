@@ -6,19 +6,25 @@
     "librust-fd-lock-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-rustix-1+default-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ac7bce76a4d267fdadcc60a284e82d2b91d01283e3454572ef3a42cf8afe4b08 2304 rust-fd-lock_3.0.13-1.dsc ef033ed5e9bad94e55838ca0ca906db0e043f517adda0c8b79c7a8c66c93c1b5 13692 rust-fd-lock_3.0.13.orig.tar.gz 324ef33ac4103fdad4e7aeb639c8a5fec830d7768b1c47a27a65538d5143cc77 3184 rust-fd-lock_3.0.13-1.debian.tar.xz"
+    "ce0239733717a7caf51647ac061a9898d674dba54fe96bf988bcf402a55c04b3 2380 rust-fd-lock_3.0.13-2.dsc ef033ed5e9bad94e55838ca0ca906db0e043f517adda0c8b79c7a8c66c93c1b5 13692 rust-fd-lock_3.0.13.orig.tar.gz 69e73465540139d255ebc4baa2478732bc1b025670cdb7dd4748bfdd8536ea6d 3296 rust-fd-lock_3.0.13-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fd-lock"
   ],
   "Files": [
-    "22ee26f60f1f87fdbd5dc1f06dfd42ff 2304 rust-fd-lock_3.0.13-1.dsc 6ad85e7b9a5ee7372268dc460d880797 13692 rust-fd-lock_3.0.13.orig.tar.gz f00150aa0b20f4bcbcb8efc087349c8d 3184 rust-fd-lock_3.0.13-1.debian.tar.xz"
+    "85f8d2a2b9efc43377bf7afac3f3d39f 2380 rust-fd-lock_3.0.13-2.dsc 6ad85e7b9a5ee7372268dc460d880797 13692 rust-fd-lock_3.0.13.orig.tar.gz 21d71af067e943651e1107f860aa71be 3296 rust-fd-lock_3.0.13-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/yoshuawuyts/fd-lock"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fd-lock]"
   ],
   "Version": [
-    "3.0.13-1"
+    "3.0.13-2"
   ]
 }

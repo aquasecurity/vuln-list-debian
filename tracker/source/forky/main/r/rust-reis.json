@@ -6,16 +6,19 @@
     "librust-reis-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-0.38+default-dev (\u003e= 0.38.3-~~) \u003c!nocheck\u003e, librust-rustix-0.38+event-dev (\u003e= 0.38.3-~~) \u003c!nocheck\u003e, librust-rustix-0.38+fs-dev (\u003e= 0.38.3-~~) \u003c!nocheck\u003e, librust-rustix-0.38+net-dev (\u003e= 0.38.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustix-1+default-dev \u003c!nocheck\u003e, librust-rustix-1+event-dev \u003c!nocheck\u003e, librust-rustix-1+fs-dev \u003c!nocheck\u003e, librust-rustix-1+net-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4c99ac659e822f1efa4d7163ed7bb4d3b717bd006b2b1af619f79028fd7019aa 2017 rust-reis_0.4.0-2.dsc 827073dbe443c57fd72ae05491c6b94213218627ac6ac169850673b0cb7034f1 69364 rust-reis_0.4.0.orig.tar.gz 7070094837bfd26b046bb353b7e5441a50600731aee9585621ea33c4affbf3c9 3348 rust-reis_0.4.0-2.debian.tar.xz"
+    "d00de404b73bdaf9fcb893c365b3608f1a51dda913e5e757bfad6b993ca298a6 2598 rust-reis_0.4.0-3.dsc 827073dbe443c57fd72ae05491c6b94213218627ac6ac169850673b0cb7034f1 69364 rust-reis_0.4.0.orig.tar.gz 03f3329483e0c6461c45ae21b9cbcd92b4de58a5ac1c8441cf3d972f0cddbba7 4008 rust-reis_0.4.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-reis"
   ],
   "Files": [
-    "2363a75c115ed10e740a55d0a58366d0 2017 rust-reis_0.4.0-2.dsc 16cb68147e8b53963fb5ed6f74db00cd 69364 rust-reis_0.4.0.orig.tar.gz b8ae56e33a108a6a4bae7bfff3aefecf 3348 rust-reis_0.4.0-2.debian.tar.xz"
+    "d981a17b28dc30ceeea1e6dea6702a01 2598 rust-reis_0.4.0-3.dsc 16cb68147e8b53963fb5ed6f74db00cd 69364 rust-reis_0.4.0.orig.tar.gz 8334b57cca6c220c3fe5b29fae81a19e 4008 rust-reis_0.4.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-ashpd-0.10+default-dev, librust-futures-executor-0.3+default-dev, librust-once-cell-1+default-dev, librust-signal-hook-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-xkbcommon-0.8+default-dev, rustc"
+    "dh-cargo, librust-ashpd-0.12+default-dev, librust-futures-executor-0.3+default-dev, librust-once-cell-1+default-dev, librust-signal-hook-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-xkbcommon-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/reis]"
   ],
   "Version": [
-    "0.4.0-2"
+    "0.4.0-3"
   ]
 }

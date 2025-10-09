@@ -6,19 +6,25 @@
     "librust-normpath-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1c695340d0b6d2e26efd29cc75751fdadba3a4a964ce0da12f24a471707d7122 2211 rust-normpath_1.1.1-1.dsc ec60c60a693226186f5d6edf073232bfb6464ed97eb22cf3b01c1e8198fd97f5 19786 rust-normpath_1.1.1.orig.tar.gz 25dbbe12391efb9b93dcd468d1b2039d5ac3115e5b4c0a85fe1fbdad39674d1a 3312 rust-normpath_1.1.1-1.debian.tar.xz"
+    "18d34128f44953a5ca93531bffd022d6472a3f62e28263a145b065c3b80de34f 2300 rust-normpath_1.5.0-1.dsc bf23ab2b905654b4cb177e30b629937b3868311d4e1cba859f899c041046e69b 22940 rust-normpath_1.5.0.orig.tar.gz 760b1d307afb369d0dd4e7c6ed2f0d420645dcae4161f3df60c960f2aecfc612 3236 rust-normpath_1.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-normpath"
   ],
   "Files": [
-    "68bd42bc85b827cd7334130dc2fc6fc5 2211 rust-normpath_1.1.1-1.dsc 8d526535233ee01e0f1402b5e8f4e8e9 19786 rust-normpath_1.1.1.orig.tar.gz 0fe7dc71c6dbc200bcc037651513265e 3312 rust-normpath_1.1.1-1.debian.tar.xz"
+    "de91bf925adf1fba39844f1cdfe4bab0 2300 rust-normpath_1.5.0-1.dsc 6b240df8528ff4020da2f816560cab77 22940 rust-normpath_1.5.0.orig.tar.gz cf3e874bd8fb947f265a45ca75cc0a62 3236 rust-normpath_1.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dylni/normpath"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-libc-0.2+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-libc-0.2+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/normpath]"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.5.0-1"
   ]
 }
