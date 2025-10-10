@@ -6,16 +6,19 @@
     "librust-crossbeam-utils-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0e8d6f86d0c9083053dc189f9470aa3d21f742d46a13c023b4561dcc05d0ab6f 2453 rust-crossbeam-utils_0.8.19-1.dsc 248e3bacc7dc6baa3b21e405ee045c3047101a49145e7e9eca583ab4c2ca5345 42328 rust-crossbeam-utils_0.8.19.orig.tar.gz 56a5cd6fa1fb23b819557ab25ba39486d28b535d535a497497b7da862b60278a 3564 rust-crossbeam-utils_0.8.19-1.debian.tar.xz"
+    "28d88ea3ff778495d175a1a3f3357f39067e6828a0ea16001d26f366f6e57e77 2427 rust-crossbeam-utils_0.8.21-1.dsc d0a5c400df2834b80a4c3327b3aad3a4c4cd4de0629063962b03235697506a28 42691 rust-crossbeam-utils_0.8.21.orig.tar.gz 44d4dbd4c22690e268a6c03a5ab8c7d29f7ae65861e56f90c71b331f4fbaf1e9 3508 rust-crossbeam-utils_0.8.21-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-crossbeam-utils"
   ],
   "Files": [
-    "fae23142c6e3470a194c8a94c5aeb19a 2453 rust-crossbeam-utils_0.8.19-1.dsc 398f4cce1d3067cc7a56662e52a33384 42328 rust-crossbeam-utils_0.8.19.orig.tar.gz 103ffccb6e26949cfbd17b7fdbc027c2 3564 rust-crossbeam-utils_0.8.19-1.debian.tar.xz"
+    "de06e3097337db3a38cc9c3d02a6912b 2427 rust-crossbeam-utils_0.8.21-1.dsc 897be1152015ad66fa30dbdc224af39d 42691 rust-crossbeam-utils_0.8.21.orig.tar.gz a73154baf5941c56e172087105f6e6f3 3508 rust-crossbeam-utils_0.8.21-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.7+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/crossbeam-utils]"
   ],
   "Version": [
-    "0.8.19-1"
+    "0.8.21-1"
   ]
 }

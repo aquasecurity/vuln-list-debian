@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-bgw-replstatus"
+    "postgresql-18-bgw-replstatus"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), netcat-openbsd, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, netcat-openbsd, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "3c80dd842307558067f45ee7aba8cfc3cc030dfee7209e1f897289d55f362505 2227 bgw-replstatus_1.0.8-1.dsc 095fb86455f5c298d83ce871cabe698627b8837104672bf8c562205e269c9469 6483 bgw-replstatus_1.0.8.orig.tar.gz aad662a2d36071b043660ea43555d14c7bac5d089b167c2c2edfe8a43148ac96 2680 bgw-replstatus_1.0.8-1.debian.tar.xz"
+    "7b23e60f9141ee2bc3c168e36e956408f841d83c9b0cd033b360d4b129ce8065 2244 bgw-replstatus_1.0.8-2.dsc 095fb86455f5c298d83ce871cabe698627b8837104672bf8c562205e269c9469 6483 bgw-replstatus_1.0.8.orig.tar.gz 1bef55bbe2b468b55fb5859cb78f05261816ecd3543e1a7b21a230950aa5e771 2804 bgw-replstatus_1.0.8-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/bgw-replstatus"
   ],
   "Files": [
-    "4fe8ebb45f63c15a82a936d467c8d778 2227 bgw-replstatus_1.0.8-1.dsc 7b121bc210cbfda2d61bdf3029d4e419 6483 bgw-replstatus_1.0.8.orig.tar.gz 5a7e024f2827d42fca0e454d5ee6d97b 2680 bgw-replstatus_1.0.8-1.debian.tar.xz"
+    "5290045f2c4795130688d8cbeda1387b 2244 bgw-replstatus_1.0.8-2.dsc 7b121bc210cbfda2d61bdf3029d4e419 6483 bgw-replstatus_1.0.8.orig.tar.gz fce524bc0cac4b86751bfc6fc0e28852 2804 bgw-replstatus_1.0.8-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "bgw-replstatus"
   ],
   "Package-List": [
-    "postgresql-17-bgw-replstatus deb database optional arch=any"
+    "postgresql-18-bgw-replstatus deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, netcat-openbsd"
+    "netcat-openbsd, postgresql-common-dev"
   ],
   "Uploaders": [
     "Debian PostgreSQL Maintainers \u003cteam+postgresql@tracker.debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://github.com/mhagander/bgw_replstatus.git"
   ],
   "Version": [
-    "1.0.8-1"
+    "1.0.8-2"
   ]
 }
