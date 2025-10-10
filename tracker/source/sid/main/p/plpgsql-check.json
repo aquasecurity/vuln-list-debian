@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-plpgsql-check"
+    "postgresql-18-plpgsql-check"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libicu-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, libicu-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "604e6a0f5905f40ed6dee4728c2bf06f9029b0bcea2ca075378d8da8f6f8297a 2209 plpgsql-check_2.8.1-1.dsc 868cc064b4e66cb33b3c14e4409f699dab9a4055504cfa951cf8c1b24892ef34 258371 plpgsql-check_2.8.1.orig.tar.gz b104f5d5d4b69ed2952f8354cedd20146c2dc117947c6ece15fc1c1e158e5945 3676 plpgsql-check_2.8.1-1.debian.tar.xz"
+    "f0e227783f170bfaf7f2a7b9bc0e3c322595d958ed155f7a95983cbbf7f34731 2232 plpgsql-check_2.8.2-2.dsc 66cb840ab8b18d06077827e316800a2d92ed483f9bbacbfad6d4a2e8e26f4048 283505 plpgsql-check_2.8.2.orig.tar.gz 8b9b235dd2c3d09fdd077f424448dc419c1ef0bcf5042286ec285b0be4e8874d 3748 plpgsql-check_2.8.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/plpgsql-check"
   ],
   "Files": [
-    "ed04f7cb2448e87fe74db4f691f351f4 2209 plpgsql-check_2.8.1-1.dsc 646f59451f0589c236c92a1a1ab22942 258371 plpgsql-check_2.8.1.orig.tar.gz 6fa842634d4137de8bf9023dbc5613ff 3676 plpgsql-check_2.8.1-1.debian.tar.xz"
+    "6e2fafc7eff0e7ecce925a3cedcd083a 2232 plpgsql-check_2.8.2-2.dsc 2fdac8febc9c70322a5b3884dd803d94 283505 plpgsql-check_2.8.2.orig.tar.gz d0f85586d5071450685f572dd1f0210d 3748 plpgsql-check_2.8.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "plpgsql-check"
   ],
   "Package-List": [
-    "postgresql-17-plpgsql-check deb database optional arch=any"
+    "postgresql-18-plpgsql-check deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make"
+    "make, postgresql-common-dev"
   ],
   "Uploaders": [
     "Stefan Hühner \u003cstefan.huehner@openbravo.com\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/plpgsql-check.git"
   ],
   "Version": [
-    "2.8.1-1"
+    "2.8.2-2"
   ]
 }

@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-semver"
+    "postgresql-18-semver"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "a4e1ffcfdca6a7ee577267b81bfc4f6ae1c9394d0085bfb6dd912bcad5ee23cd 2190 postgresql-semver_0.40.0-2.dsc 3e50bcc29a0e2e481e7b6d2bc937cadc5f5869f55d983b5a1aafeb49f5425cfc 41778 postgresql-semver_0.40.0.orig.tar.gz 7b5ab1cd404c046bf1a87129d2ab6c6c36b69c136e1e06f1078039d38600dc65 3688 postgresql-semver_0.40.0-2.debian.tar.xz"
+    "2bcf520c25d31fa22e286d796a4d37e47f01ba0d902e92cc5ff4fc1c984bdabc 2207 postgresql-semver_0.40.0-3.dsc 3e50bcc29a0e2e481e7b6d2bc937cadc5f5869f55d983b5a1aafeb49f5425cfc 41778 postgresql-semver_0.40.0.orig.tar.gz f0bbdfab1d789e536b6879aa69a9217c58555f6793d3c436a2bcaada5232bb30 3748 postgresql-semver_0.40.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-semver"
   ],
   "Files": [
-    "0aef23c76a59df4172a35eee59c18a36 2190 postgresql-semver_0.40.0-2.dsc 9c8b4709fb7aa381a4601f4a9efb1aa0 41778 postgresql-semver_0.40.0.orig.tar.gz e345a31b3c302a01c6219add766c07a0 3688 postgresql-semver_0.40.0-2.debian.tar.xz"
+    "6d258383003064cc1f2e3306773eda02 2207 postgresql-semver_0.40.0-3.dsc 9c8b4709fb7aa381a4601f4a9efb1aa0 41778 postgresql-semver_0.40.0.orig.tar.gz ae9244c8b415fb3704766c78f597098f 3748 postgresql-semver_0.40.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-semver"
   ],
   "Package-List": [
-    "postgresql-17-semver deb database optional arch=any"
+    "postgresql-18-semver deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-all"
+    "postgresql-all, postgresql-common-dev"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/postgresql-semver.git"
   ],
   "Version": [
-    "0.40.0-2"
+    "0.40.0-3"
   ]
 }

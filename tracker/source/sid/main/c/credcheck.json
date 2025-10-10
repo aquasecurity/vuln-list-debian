@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-credcheck"
+    "postgresql-18-credcheck"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libkrb5-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, libkrb5-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "a88d483de0cddf02d223389a61e318628908d8397840abee583c6c0add08a6b1 2114 credcheck_3.0-2.dsc 3718ff683df713fc562ab932722276d410edcfa65c453f4bed2ad1245e390ff8 33159 credcheck_3.0.orig.tar.gz 2189f026585803947447c49adf2acce5ca067e4bec829a8f6aa7b8316bf8eff6 2980 credcheck_3.0-2.debian.tar.xz"
+    "a2c265abf3a19293e2df402cdd0e08ad07dfea8aef62be5538e0c7b119e52250 2131 credcheck_3.0-3.dsc 3718ff683df713fc562ab932722276d410edcfa65c453f4bed2ad1245e390ff8 33159 credcheck_3.0.orig.tar.gz c5b1213fc8cd47777deb67e318d05e5ad6679dd9e37396ee3b67a07a808b84e0 3028 credcheck_3.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/credcheck"
   ],
   "Files": [
-    "f8226e8607b4cdf0d17a66e9668cbe79 2114 credcheck_3.0-2.dsc a2c526c4db3545c3e96a47727df0aa42 33159 credcheck_3.0.orig.tar.gz 025ceb7bf502ca3f1f3021f1936f9645 2980 credcheck_3.0-2.debian.tar.xz"
+    "bcfcbbda1f410863d6526d72ed62bd58 2131 credcheck_3.0-3.dsc a2c526c4db3545c3e96a47727df0aa42 33159 credcheck_3.0.orig.tar.gz 488e80c2543c22885957258704c70338 3028 credcheck_3.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "credcheck"
   ],
   "Package-List": [
-    "postgresql-17-credcheck deb database optional arch=any"
+    "postgresql-18-credcheck deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make"
+    "postgresql-common-dev"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/credcheck.git"
   ],
   "Version": [
-    "3.0-2"
+    "3.0-3"
   ]
 }

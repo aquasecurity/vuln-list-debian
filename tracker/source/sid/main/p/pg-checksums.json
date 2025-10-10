@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "postgresql-17-pg-checksums, pg-checksums-doc"
+    "postgresql-18-pg-checksums, pg-checksums-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), docbook-xsl, postgresql-all (\u003e= 217~), xsltproc"
+    "debhelper-compat (= 13), docbook-xsl, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all, xsltproc"
   ],
   "Checksums-Sha256": [
-    "31b9496f2f419c9b698160e20fa0aa23822641dc7004f3fe8f5bbaf373aba69d 2152 pg-checksums_1.3-1.dsc 0e0fc83ba2ab8961bb700da75df6a2bafd2e145187f9cd72067b458e6438da11 36875 pg-checksums_1.3.orig.tar.gz 00d2874ad0e0092944035bb44464a5991b1cd17dbf08a87b1d9e643236db2ee7 5064 pg-checksums_1.3-1.debian.tar.xz"
+    "72af0c77147c04bdfe23717fdb4d4b0da77beadd77377cbcc3f91dd8ee91f5d5 2199 pg-checksums_1.3-2.dsc 0e0fc83ba2ab8961bb700da75df6a2bafd2e145187f9cd72067b458e6438da11 36875 pg-checksums_1.3.orig.tar.gz 99d0535cb1d632246aa72d097527ae078f40122f53167fa9ad765cc2122907ed 5056 pg-checksums_1.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pg-checksums"
   ],
   "Files": [
-    "08c7f600a8be4040a1d5b885325cb1bf 2152 pg-checksums_1.3-1.dsc b8470f64591a02648fcb45b3ff3162ce 36875 pg-checksums_1.3.orig.tar.gz f8d6c8aea1f35ec8989b2c88a818854f 5064 pg-checksums_1.3-1.debian.tar.xz"
+    "b8b48e4e74ef0fe284e8ebeaa24a4f23 2199 pg-checksums_1.3-2.dsc b8470f64591a02648fcb45b3ff3162ce 36875 pg-checksums_1.3.orig.tar.gz d8d63458694fa962002d948d55b61fe1 5056 pg-checksums_1.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pg-checksums"
   ],
   "Package-List": [
-    "pg-checksums-doc deb doc optional arch=all postgresql-17-pg-checksums deb database optional arch=any"
+    "pg-checksums-doc deb doc optional arch=all postgresql-18-pg-checksums deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "libipc-run-perl, make"
+    "libipc-run-perl, postgresql-common-dev"
   ],
   "Uploaders": [
-    "Michael Banck \u003cmbanck@debian.org\u003e"
+    "Michael Banck \u003cmbanck@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/pg-checksums"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pg-checksums.git"
   ],
   "Version": [
-    "1.3-1"
+    "1.3-2"
   ]
 }

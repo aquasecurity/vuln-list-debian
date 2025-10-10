@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any kfreebsd-any"
+    "kfreebsd-any linux-any"
   ],
   "Binary": [
-    "pgpool2, libpgpool2, libpgpool-dev, postgresql-17-pgpool2"
+    "pgpool2, libpgpool2, libpgpool-dev, postgresql-18-pgpool2"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, bison, chrpath, debhelper-compat (= 13), docbook, docbook-dsssl, docbook-xml, docbook-xsl, flex, libldap-dev, libmemcached-dev, libpam0g-dev, libpq-dev, libssl-dev, libxml2-utils, openjade, opensp, postgresql-server-dev-all, xsltproc"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, bison, chrpath, docbook, docbook-dsssl, docbook-xml, docbook-xsl, flex, libldap-dev, libmemcached-dev, libpam0g-dev, libpq-dev, libssl-dev, libxml2-utils, openjade, opensp, postgresql-server-dev-all, xsltproc"
   ],
   "Checksums-Sha256": [
-    "48e7955a0baab6dc475465696cb97514a4f3630b8987d683dd73baf77fc1d8e3 2694 pgpool2_4.6.3-2.dsc 46688668b2ace67d8161a320256252d98698bc7d9788cc6727269d5720299f2c 5602204 pgpool2_4.6.3.orig.tar.gz dfd49792eda6b2d079ee1e615ed16d32ad52da687754333742a5d3755df6f7d1 21388 pgpool2_4.6.3-2.debian.tar.xz"
+    "f3a370fb9af582ef05730d979d22eb5721a25bc7bf2238d9f3d9b64d9630914d 2711 pgpool2_4.6.3-3.dsc 46688668b2ace67d8161a320256252d98698bc7d9788cc6727269d5720299f2c 5602204 pgpool2_4.6.3.orig.tar.gz 915f4260297dfc2f4d25db7046a9d582dc031ef8fd87265fc0ec4849e9170971 21460 pgpool2_4.6.3-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgpool2"
   ],
   "Files": [
-    "ab226f1492aca55c69e64949a90244da 2694 pgpool2_4.6.3-2.dsc 58646b8146fc575aebe43a3ee3ff9238 5602204 pgpool2_4.6.3.orig.tar.gz 55c0d207bd4241805529f04495901680 21388 pgpool2_4.6.3-2.debian.tar.xz"
+    "3c5066d50b70b7aba3fb998eba77f1ef 2711 pgpool2_4.6.3-3.dsc 58646b8146fc575aebe43a3ee3ff9238 5602204 pgpool2_4.6.3.orig.tar.gz 1b9f214c2d5061124ea386da098cda3d 21460 pgpool2_4.6.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgpool2"
   ],
   "Package-List": [
-    "libpgpool-dev deb libdevel optional arch=linux-any,kfreebsd-any libpgpool2 deb libs optional arch=linux-any,kfreebsd-any pgpool2 deb database optional arch=linux-any,kfreebsd-any postgresql-17-pgpool2 deb database optional arch=linux-any,kfreebsd-any"
+    "libpgpool-dev deb libdevel optional arch=kfreebsd-any,linux-any libpgpool2 deb libs optional arch=kfreebsd-any,linux-any pgpool2 deb database optional arch=kfreebsd-any,linux-any postgresql-18-pgpool2 deb database optional arch=kfreebsd-any,linux-any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "database"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "default-jdk, libpostgresql-jdbc-java, locales-all, make, postgresql, postgresql-common"
+    "default-jdk, libpostgresql-jdbc-java, locales-all, postgresql, postgresql-common, postgresql-common-dev"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e, Marco Nenciarini \u003cmnencia@debian.org\u003e, Adrian Vondendriesch \u003cadrian.vondendriesch@credativ.de\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgpool2.git"
   ],
   "Version": [
-    "4.6.3-2"
+    "4.6.3-3"
   ]
 }
