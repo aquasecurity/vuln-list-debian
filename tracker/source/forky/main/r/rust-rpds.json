@@ -6,16 +6,19 @@
     "librust-rpds-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-archery-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-archery-1+triomphe-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-archery-1+default-dev (\u003e= 1.2.2-~~) \u003c!nocheck\u003e, librust-archery-1+triomphe-dev (\u003e= 1.2.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bbe97f12a708acfe0f6010db61da4469f48b143eaa69d98ee08c66178a92da09 2398 rust-rpds_1.1.0-1.dsc a0e15515d3ce3313324d842629ea4905c25a13f81953eadb88f85516f59290a4 69493 rust-rpds_1.1.0.orig.tar.gz 2578320513eda7cf56ce0f4283e4496c2c965a519d6dbab7a112f7277407f71d 2108 rust-rpds_1.1.0-1.debian.tar.xz"
+    "4b9998d39cc5ec143868c8cbc419d648abdf1cb1e51b8975197bb77fd02b5d27 2446 rust-rpds_1.1.2-1.dsc acb4efcdbf5d5489a878f48686e08e0e38da594e98295235b5aeeabe905fbff6 70377 rust-rpds_1.1.2.orig.tar.gz bfd2fa4cbfcc369f8501389ac563eab2f6580326cd08b33bd8772b63818237ca 3032 rust-rpds_1.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rpds"
   ],
   "Files": [
-    "d7ab515d0bf50bd66ac14a82ee3cc835 2398 rust-rpds_1.1.0-1.dsc f2ef1b754242ae335f2095ffa430aa42 69493 rust-rpds_1.1.0.orig.tar.gz 0cd1cc41def5a01821dec5cdf5013d87 2108 rust-rpds_1.1.0-1.debian.tar.xz"
+    "9a0a176a54cf1227e8fdda34328cc417 2446 rust-rpds_1.1.2-1.dsc 908c381f9c5aebae95a52f2b88335269 70377 rust-rpds_1.1.2.orig.tar.gz 2ba91c685c4492aa0ae51bc9e8648466 3032 rust-rpds_1.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-static-assertions-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, librust-static-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Roland Mas \u003clolando@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rpds]"
   ],
   "Version": [
-    "1.1.0-1"
+    "1.1.2-1"
   ]
 }

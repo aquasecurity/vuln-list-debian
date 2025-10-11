@@ -6,16 +6,19 @@
     "idevicerestore"
   ],
   "Build-Depends": [
-    "autoconf-archive, debhelper-compat (= 13), libcurl4-gnutls-dev, libimobiledevice-dev, libimobiledevice-glue-dev (\u003e= 1.2.0), libirecovery-1.0-dev (\u003e= 1.1.0), libplist-dev (\u003e= 2.6.0), libtatsu-dev (\u003e= 1.0.3), libusb-1.0-0-dev, libusbmuxd-dev (\u003e= 2.0.2), libzip-dev (\u003e= 1.0), pkgconf"
+    "autoconf-archive, debhelper-compat (= 13), libcurl4-gnutls-dev, libimobiledevice-dev, libimobiledevice-glue-dev (\u003e= 1.2.0), libirecovery-1.0-dev (\u003e= 1.3.0), libplist-dev (\u003e= 2.6.0), libtatsu-dev (\u003e= 1.0.4), libusb-1.0-0-dev, libusbmuxd-dev (\u003e= 2.0.2), libzip-dev (\u003e= 1.0), pkgconf"
   ],
   "Checksums-Sha256": [
-    "c799e3791f0b210c9908f5865a3b49d447720456cc6131d98164be3a2000f688 2331 idevicerestore_1.0.0+git20240709-1.dsc 348a9c10185a869ae25d33ec4e5b88a86a33740378284c0b1e982efb9415d2d6 111020 idevicerestore_1.0.0+git20240709.orig.tar.gz 5df6c9400c272b59f26c455b4786514a0dfb992c57f9ff3cead2cdd1b06dfb4a 3420 idevicerestore_1.0.0+git20240709-1.debian.tar.xz"
+    "18a0fe02b9cd3290f2714ebb055de78382471f3752a09c5994f69d4f14cf9526 3354 idevicerestore_1.0.0+git20251002-1.dsc 7f18c32f49342af0ec21341fe3437fde90287d16fc65cb520ad0c27a12582e6f 122788 idevicerestore_1.0.0+git20251002.orig.tar.gz de340f09196b8846ad57e5e88a538124e70a6497c7992f2f1d67dfff160196b6 3476 idevicerestore_1.0.0+git20251002-1.debian.tar.xz"
+  ],
+  "Description": [
+    "command-line application to restore firmware files to iOS devices The idevicerestore application is a full reimplementation of all granular steps which are performed during the restore of a firmware to a device. . In general, upgrades and downgrades are possible, however subject to availability of SHSH blobs from Apple for signing the firmare files. . Some key features are: - Restore: Update firmware on iOS devices - Firmware: Use official IPSW firmware archive file or a directory as source - Update: Allows updating the device by default or erasing all data - Download: On demand download of latest available firmware for a device - Cache: Downloaded firmware files are cached locally - Custom Firmware: Restore custom firmware files (requires bootrom exploit) - Baseband: Allows one to skip NOR/Baseband upgrade - SHSH: Fetch TSS records and save them as \".shsh\" files - DFU: Put devices in pwned DFU mode (limera1n devices only) - AP Ticket: Use custom AP ticket from a file"
   ],
   "Directory": [
     "pool/main/i/idevicerestore"
   ],
   "Files": [
-    "2a69e15c12d5b57649a9b1d4488ece1e 2331 idevicerestore_1.0.0+git20240709-1.dsc 35a4fb0c000ac759b53040976c23df1f 111020 idevicerestore_1.0.0+git20240709.orig.tar.gz cd278fbeb90603248bf9124eafb2807b 3420 idevicerestore_1.0.0+git20240709-1.debian.tar.xz"
+    "18b9314303c5b43857b829219bd3a455 3354 idevicerestore_1.0.0+git20251002-1.dsc 7e2b7833ae1bd22caac66d18c377f6a7 122788 idevicerestore_1.0.0+git20251002.orig.tar.gz de0d377ae3e2fc3d1cc9a0f3e50f6353 3476 idevicerestore_1.0.0+git20251002-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Uploaders": [
     "Yves-Alexis Perez \u003ccorsac@debian.org\u003e,"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/imobiledevice-team/idevicerestore.git"
   ],
   "Version": [
-    "1.0.0+git20240709-1"
+    "1.0.0+git20251002-1"
   ]
 }
