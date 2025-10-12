@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-tdigest"
+    "postgresql-18-tdigest"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "8b8b75c1a800bbf8ed19125a48e629de5f4450d3303ca7c1e6ae4f62c2057582 2119 tdigest_1.4.3-1.dsc c65a0fcbb66ca71a876d5ae215136757d9665a3a88f54cc753faf56709dae5d7 47561 tdigest_1.4.3.orig.tar.gz 66cc3de0b06768b121ae566b955d19732d5d62948192a3d3e45cbe33ea071781 2816 tdigest_1.4.3-1.debian.tar.xz"
+    "99c9340b08dc4694cfb39f9952fcdc111150f1b15532e031f93890f00881fe7e 2136 tdigest_1.4.3-2.dsc c65a0fcbb66ca71a876d5ae215136757d9665a3a88f54cc753faf56709dae5d7 47561 tdigest_1.4.3.orig.tar.gz 5f687d8b4a994cca8124b87fa2b5bc0b9995381a0c17942a192befae7666c6ad 2872 tdigest_1.4.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tdigest"
   ],
   "Files": [
-    "09a64e5781bc6f785dea9f71b1980ccd 2119 tdigest_1.4.3-1.dsc 7820866bfd522b6bdfac96db32e3300c 47561 tdigest_1.4.3.orig.tar.gz 94f0d2004d5d19597a0e846f22e074f7 2816 tdigest_1.4.3-1.debian.tar.xz"
+    "3c3fc4cc943a23cb6134efec4d062f55 2136 tdigest_1.4.3-2.dsc 7820866bfd522b6bdfac96db32e3300c 47561 tdigest_1.4.3.orig.tar.gz 45797d2fdfca2577111ea79d16bd1924 2872 tdigest_1.4.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "tdigest"
   ],
   "Package-List": [
-    "postgresql-17-tdigest deb database optional arch=any"
+    "postgresql-18-tdigest deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make"
+    "postgresql-common-dev"
   ],
   "Uploaders": [
     "Dominik George \u003cnatureshadow@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/tdigest.git"
   ],
   "Version": [
-    "1.4.3-1"
+    "1.4.3-2"
   ]
 }

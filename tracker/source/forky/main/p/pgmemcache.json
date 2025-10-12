@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-pgmemcache"
+    "postgresql-18-pgmemcache"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libmemcached-dev (\u003e= 0.38~), libsasl2-dev, memcached \u003c!nocheck\u003e, postgresql-all (\u003e= 217~)"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, libmemcached-dev (\u003e= 0.38~), libsasl2-dev, memcached \u003c!nocheck\u003e, postgresql-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "4265df4672aa2c25219613ad010adc1ad8f65772de0a63b641f2a1a2d8d026ba 2201 pgmemcache_2.3.0-14.dsc 7f9f545c02e13c842b20a1cb387e209ec0fb654ebb083828bcf08023ed6657e2 21135 pgmemcache_2.3.0.orig.tar.gz 7173ab5f6dbcce39b72de8137225ad4477a57445e7df9209a39d614dc9a7f067 4392 pgmemcache_2.3.0-14.debian.tar.xz"
+    "05ad36927dd2085096610e65dc6024f7d00285a1c65b8c1c651bfaa6f7882df6 2226 pgmemcache_2.3.0-15.dsc 7f9f545c02e13c842b20a1cb387e209ec0fb654ebb083828bcf08023ed6657e2 21135 pgmemcache_2.3.0.orig.tar.gz 26778ccb0c7e99d3dea961296251de9157951b1ac2f8f8d0cfc84f5de4fd38bc 4424 pgmemcache_2.3.0-15.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgmemcache"
   ],
   "Files": [
-    "420844ffae8c06fb1f4b05f93154ed94 2201 pgmemcache_2.3.0-14.dsc 7f598ec8261588d4cf824909527c8267 21135 pgmemcache_2.3.0.orig.tar.gz c24540d063634e95a65f8b415488dcfe 4392 pgmemcache_2.3.0-14.debian.tar.xz"
+    "6ce6573b3b792b5aabd65465fa08e440 2226 pgmemcache_2.3.0-15.dsc 7f598ec8261588d4cf824909527c8267 21135 pgmemcache_2.3.0.orig.tar.gz b5ea1b8fdc348d041ac4ae47db53b3b2 4424 pgmemcache_2.3.0-15.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgmemcache"
   ],
   "Package-List": [
-    "postgresql-17-pgmemcache deb database optional arch=any"
+    "postgresql-18-pgmemcache deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "database"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, memcached"
+    "memcached, postgresql-common-dev, procps"
   ],
   "Uploaders": [
     "Marco Nenciarini \u003cmnencia@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgmemcache.git"
   ],
   "Version": [
-    "2.3.0-14"
+    "2.3.0-15"
   ]
 }

@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "repmgr-common, repmgr, postgresql-17-repmgr"
+    "repmgr-common, repmgr, postgresql-18-repmgr"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-server-dev-all, libedit-dev, liblz4-dev, libreadline-dev, libpam-dev, libxml2-dev, libxslt1-dev, libssl-dev, libselinux1-dev [linux-any], libkrb5-dev, libzstd-dev, zlib1g-dev, flex, libcurl4-openssl-dev, libjson-c-dev"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, flex, libcurl4-openssl-dev, libedit-dev, libjson-c-dev, libkrb5-dev, liblz4-dev, libpam-dev, libnuma-dev [linux-any], libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libxml2-dev, libxslt1-dev, libzstd-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "d9a0ea912d5d3d6e47020a4ae395339c0a92c110af8e83e52fa9e5b15997ccee 2327 repmgr_5.5.0+debpgdg-1.dsc d847c650b6b62cadf3eaedda8e23ae00e55c5221c44b5c43fda9a0d679c799ae 463463 repmgr_5.5.0+debpgdg.orig.tar.gz 16fa88f8d4566a9e83a148360d4b7929b619e5c27e3bcf3f583f7fcbdebfd028 7500 repmgr_5.5.0+debpgdg-1.debian.tar.xz"
+    "dd29ed9715a1dec53b708b2229fef0918bfaae21024e5cb74e8116042072d55c 2396 repmgr_5.5.0+debpgdg-3.dsc d847c650b6b62cadf3eaedda8e23ae00e55c5221c44b5c43fda9a0d679c799ae 463463 repmgr_5.5.0+debpgdg.orig.tar.gz c10e74332a8decd1ab36dd0a3c5cd8bd56869200e875605e59d5dcefa8cdef9a 7664 repmgr_5.5.0+debpgdg-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/repmgr"
   ],
   "Files": [
-    "ef46f3277abe72e1ff81245f9bd802de 2327 repmgr_5.5.0+debpgdg-1.dsc 002e2d06b443672274a49c51ac75c745 463463 repmgr_5.5.0+debpgdg.orig.tar.gz bd4591f8d198fddfad703a95068adb28 7500 repmgr_5.5.0+debpgdg-1.debian.tar.xz"
+    "ee51e45c90831ca8a181ecb86675f6bc 2396 repmgr_5.5.0+debpgdg-3.dsc 002e2d06b443672274a49c51ac75c745 463463 repmgr_5.5.0+debpgdg.orig.tar.gz feb27ca8b6af3231f146130bcbd360a1 7664 repmgr_5.5.0+debpgdg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "repmgr"
   ],
   "Package-List": [
-    "postgresql-17-repmgr deb database optional arch=any repmgr deb database optional arch=all repmgr-common deb database optional arch=all"
+    "postgresql-18-repmgr deb database optional arch=any repmgr deb database optional arch=all repmgr-common deb database optional arch=all"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make"
+    "postgresql-common-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/repmgr"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/postgresql/repmgr.git"
   ],
   "Version": [
-    "5.5.0+debpgdg-1"
+    "5.5.0+debpgdg-3"
   ]
 }

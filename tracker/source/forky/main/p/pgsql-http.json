@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-http"
+    "postgresql-18-http"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libcurl4-openssl-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, gunicorn \u003c!nocheck\u003e, libcurl4-openssl-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all, python3-gevent \u003c!nocheck\u003e, python3-httpbin \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "25992b453ebc89e471dcf4c6b3d257e1554fd2f51c9efe47805d66974673ab2f 2129 pgsql-http_1.6.3-1.dsc 82917d694d7b1b4084584c991da62a76e935a060f18f7e5296b45027565f51fe 23842 pgsql-http_1.6.3.orig.tar.gz 5b02ccf09d6bc16cf9235408a83616db61f39a7f3ae148230064f0b993ee9c50 2284 pgsql-http_1.6.3-1.debian.tar.xz"
+    "a580b3eae3ba095e0d2b91a587ff517d54dcc0e99b00ca4102f82fe80c8ea8b2 2259 pgsql-http_1.7.0-3.dsc d0330cbf32b37be3bd7ce52919439c903a6f4e88e99e359de2db4050bc3ef726 27313 pgsql-http_1.7.0.orig.tar.gz 29ef3238f9334fce17463b8c571fd2fb8d949a1daca903ec91852ae62d915d9c 3396 pgsql-http_1.7.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pgsql-http"
   ],
   "Files": [
-    "4c8746ba1e9ca094b38a62b5f6ead209 2129 pgsql-http_1.6.3-1.dsc 0a9ba1db93f53c030c6553279bddc1dc 23842 pgsql-http_1.6.3.orig.tar.gz d10c9e9245133de185d44ff07325b050 2284 pgsql-http_1.6.3-1.debian.tar.xz"
+    "d7bfae5fae07405143b871410244393a 2259 pgsql-http_1.7.0-3.dsc f19289878ca5abf5c283367efc253bb2 27313 pgsql-http_1.7.0.orig.tar.gz 7e282b350518790cb3409f499b094d9f 3396 pgsql-http_1.7.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pgsql-http"
   ],
   "Package-List": [
-    "postgresql-17-http deb database optional arch=any"
+    "postgresql-18-http deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "curl, make"
+    "gunicorn, postgresql-common-dev, python3-gevent, python3-httpbin"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/pgsql-http.git"
   ],
   "Version": [
-    "1.6.3-1"
+    "1.7.0-3"
   ]
 }

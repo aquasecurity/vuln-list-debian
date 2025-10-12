@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-prefix"
+    "postgresql-18-prefix"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "8ed6c4d95376dec0a0b6cbca5fa96330b58b0928ba5aebbf0d96ce31e2db55b6 2046 prefix_1.2.10-3.dsc 4342f251432a5f6fb05b8597139d3ccde8dcf87e8ca1498e7ee931ca057a8575 75654 prefix_1.2.10.orig.tar.gz 9f262fd1951b69daf131ca138a39d8a12fd7b5dc56e67ad28781b33931d0ab71 3988 prefix_1.2.10-3.debian.tar.xz"
+    "df18761f77c1296fa42bae398685c78fbb8824c6818456f64f2d4d7a02674bc1 2069 prefix_1.2.10-4.dsc 4342f251432a5f6fb05b8597139d3ccde8dcf87e8ca1498e7ee931ca057a8575 75654 prefix_1.2.10.orig.tar.gz a2507cc0530651a99c1ff2391fd2feeebcf2c6f80e24daf85714a53006a0708c 4040 prefix_1.2.10-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/prefix"
   ],
   "Files": [
-    "1a98e4b214110b109aabe7f49332ab8d 2046 prefix_1.2.10-3.dsc b9c85fdc034700c47455bfe88581a5f6 75654 prefix_1.2.10.orig.tar.gz 5a44427d77e6ee37c1d2fcfbc0a840e8 3988 prefix_1.2.10-3.debian.tar.xz"
+    "17f85b96f3c4b705588afcd1491e7f11 2069 prefix_1.2.10-4.dsc b9c85fdc034700c47455bfe88581a5f6 75654 prefix_1.2.10.orig.tar.gz 6287326fe17d0acb2daa341b0fbf553e 4040 prefix_1.2.10-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +27,7 @@
     "prefix"
   ],
   "Package-List": [
-    "postgresql-17-prefix deb database optional arch=any"
+    "postgresql-18-prefix deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -36,13 +36,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make"
+    "make, postgresql-common-dev"
   ],
   "Uploaders": [
     "Dimitri Fontaine \u003cdim@tapoueh.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -54,6 +54,6 @@
     "https://github.com/dimitri/prefix.git"
   ],
   "Version": [
-    "1.2.10-3"
+    "1.2.10-4"
   ]
 }

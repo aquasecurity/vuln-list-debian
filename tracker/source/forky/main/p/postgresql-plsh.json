@@ -3,25 +3,25 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-plsh"
+    "postgresql-18-plsh"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), libpq-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, libpq-dev, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "922761e892556881ec85d206c38115811ecccbb00ba620b7547e6e323e1f811a 2191 postgresql-plsh_1.20220917-3.dsc 4fc926c8a98756fd40a93cf14005b2b408363338775466a9672e8ec810afcadb 11609 postgresql-plsh_1.20220917.orig.tar.gz 537cb2f8bd3910981fc2153b89291bb2ee9bdbba2c02aa32c984f7d0616c436c 3580 postgresql-plsh_1.20220917-3.debian.tar.xz"
+    "b001cc76361a6108b966b48785b7fe56e9d83044e9957a9188809caa59759082 2202 postgresql-plsh_1.20220917-4.dsc 4fc926c8a98756fd40a93cf14005b2b408363338775466a9672e8ec810afcadb 11609 postgresql-plsh_1.20220917.orig.tar.gz 2c6c869aa4b17a7028982f6d515a82470ff7797530ece8dac32d9f70dbc59fbb 3668 postgresql-plsh_1.20220917-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-plsh"
   ],
   "Files": [
-    "1512120d273dad3e49a6bed301243591 2191 postgresql-plsh_1.20220917-3.dsc 229b109905f9a53f3cf1d130c0ee8678 11609 postgresql-plsh_1.20220917.orig.tar.gz 4ac784c76c735f782687600042d20d90 3580 postgresql-plsh_1.20220917-3.debian.tar.xz"
+    "534eceacae62e9abe3f536e5ca16b0f0 2202 postgresql-plsh_1.20220917-4.dsc 229b109905f9a53f3cf1d130c0ee8678 11609 postgresql-plsh_1.20220917.orig.tar.gz 70393d2bfaaba22c094ec15eeca28ea0 3668 postgresql-plsh_1.20220917-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://plsh.projects.postgresql.org/"
+    "https://github.com/petere/plsh"
   ],
   "Maintainer": [
     "Debian PostgreSQL Maintainers \u003cteam+postgresql@tracker.debian.org\u003e"
@@ -30,7 +30,7 @@
     "postgresql-plsh"
   ],
   "Package-List": [
-    "postgresql-17-plsh deb database optional arch=any"
+    "postgresql-18-plsh deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "database"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make"
+    "postgresql-common-dev"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-plsh.git"
   ],
   "Version": [
-    "1.20220917-3"
+    "1.20220917-4"
   ]
 }

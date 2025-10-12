@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-wal2json"
+    "postgresql-18-wal2json"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all (\u003e= 217~)"
   ],
   "Checksums-Sha256": [
-    "fef5aa77ced12988d0d5c3a97e69d9686802d8ca84536ff31a073dd1df79e23a 2101 wal2json_2.6-2.dsc 18b4bdec28c74a8fc98a11c72de38378a760327ef8e5e42e975b0029eb96ba0d 94958 wal2json_2.6.orig.tar.gz b9a392fde5900d2d6ec726da182a605106c5d96fe9e0c96faa69b43029907201 3436 wal2json_2.6-2.debian.tar.xz"
+    "804d058c6a41dd5514e7ab5c39af2486e9bdb59c85e271b80672f69887140ae1 2118 wal2json_2.6-3.dsc 18b4bdec28c74a8fc98a11c72de38378a760327ef8e5e42e975b0029eb96ba0d 94958 wal2json_2.6.orig.tar.gz e06c52f08783c228fc103220bcfde6256c47a289de645c26bffd08294fbaa9ef 3496 wal2json_2.6-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/wal2json"
   ],
   "Files": [
-    "0133cffec5f6f597417b2a67407ea6e8 2101 wal2json_2.6-2.dsc d6ed07a8d43aee81b8b461a6f297c0d7 94958 wal2json_2.6.orig.tar.gz da6205782d963ca8ac1e7c67a54052e8 3436 wal2json_2.6-2.debian.tar.xz"
+    "a33372a5f52ba86bcfa555b57ab23c2d 2118 wal2json_2.6-3.dsc d6ed07a8d43aee81b8b461a6f297c0d7 94958 wal2json_2.6.orig.tar.gz 80679a33a50a43916ea168c6e3a7f9cd 3496 wal2json_2.6-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "wal2json"
   ],
   "Package-List": [
-    "postgresql-17-wal2json deb database optional arch=any"
+    "postgresql-18-wal2json deb database optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "make, postgresql-all"
+    "postgresql-all, postgresql-common-dev"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/wal2json.git"
   ],
   "Version": [
-    "2.6-2"
+    "2.6-3"
   ]
 }
