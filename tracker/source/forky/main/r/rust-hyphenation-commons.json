@@ -6,16 +6,19 @@
     "librust-hyphenation-commons-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 10), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atlatl-0.1+default-dev (\u003e= 0.1.2~~) \u003c!nocheck\u003e, librust-atlatl-0.1+serde-dev (\u003e= 0.1.2~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fst-0.4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6e77929f903c62fc9c4afa5d71e8e2ffc47f6d3cfb920568f1b0a1b64a99d81f 1802 rust-hyphenation-commons_0.7.1-1.dsc 9e3461ab51107f7beb8e0c46606d6eb7dfa48880014a29c170afad3ce6b25add 5004 rust-hyphenation-commons_0.7.1.orig.tar.gz db31e389d5a29bb6a873634a79add961bfec813c0dcc832a8fdaec2b2175256f 2340 rust-hyphenation-commons_0.7.1-1.debian.tar.xz"
+    "8e91760f2e2c9aa0c70964cfbc3d75b58bc2a9eb08438233277ab064c896f294 2422 rust-hyphenation-commons_0.8.4-1.dsc 5febe7a2ade5c7d98eb8b75f946c046b335324b06a14ea0998271504134c05bf 6987 rust-hyphenation-commons_0.8.4.orig.tar.gz 603827250f549e5a87eee8a78cbe3819197b6d174502ad21e2ae684080571238 2580 rust-hyphenation-commons_0.8.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hyphenation-commons"
   ],
   "Files": [
-    "0c78378f711ce98887eaf7730b4893db 1802 rust-hyphenation-commons_0.7.1-1.dsc 524de84c9457ac04907344c08a024157 5004 rust-hyphenation-commons_0.7.1.orig.tar.gz 6b558e1f79a55b5032862e94f140b965 2340 rust-hyphenation-commons_0.7.1-1.debian.tar.xz"
+    "d5464e7fdc5ca797abf1af90c228a78a 2422 rust-hyphenation-commons_0.8.4-1.dsc 57c4fcdb03923d1cbe734465804da9ac 6987 rust-hyphenation-commons_0.8.4.orig.tar.gz 84f380b1206e2aed30b1fcf2ab61464c 2580 rust-hyphenation-commons_0.8.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hyphenation-commons]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.8.4-1"
   ]
 }

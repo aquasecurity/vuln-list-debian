@@ -6,16 +6,19 @@
     "librust-codespan-reporting-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-termcolor-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-unicode-width+default-dev (\u003c\u003c 0.3-~~) \u003c!nocheck\u003e, librust-unicode-width+default-dev (\u003e= 0.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "004df75cc7a6fe83a61797e99599ddd90c1d911c685c8acca979e223b155a556 2581 rust-codespan-reporting_0.11.1-2.dsc 3538270d33cc669650c4b093848450d380def10c331d38c768e34cac80576e6e 48963 rust-codespan-reporting_0.11.1.orig.tar.gz 981e79129575c0aa8cc62251fcbe0db6ccab8815d96c3744da1e1ddd6589acc1 2664 rust-codespan-reporting_0.11.1-2.debian.tar.xz"
+    "e1bd477546c420a6194da1743373f7bd0e91c43600e1c5f4bffe1fb71d13f090 2183 rust-codespan-reporting_0.12.0-2.dsc fe6d2e5af09e8c8ad56c969f2157a3d4238cebc7c55f0a517728c38f7b200f81 55796 rust-codespan-reporting_0.12.0.orig.tar.gz 87bb07fef5d9ccabf49c2daefb255aaaf4d2e377e3763da784af96cee0d22fa0 3264 rust-codespan-reporting_0.12.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-codespan-reporting"
   ],
   "Files": [
-    "65b6983ae2a536496b22c3c803f9d3da 2581 rust-codespan-reporting_0.11.1-2.dsc faa32da3be14130a4525bb7ba601c62e 48963 rust-codespan-reporting_0.11.1.orig.tar.gz bc3e09e658e7f893238157b872137774 2664 rust-codespan-reporting_0.11.1-2.debian.tar.xz"
+    "c63d2100a93c52e1b2a88f7d64bafaba 2183 rust-codespan-reporting_0.12.0-2.dsc 96f65f1baa3e1f1026fb4313c80e16ed 55796 rust-codespan-reporting_0.12.0.orig.tar.gz 1123b21214ce37032c90804ad6c532b4 3264 rust-codespan-reporting_0.12.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-insta-1+default-dev, librust-lazy-static-1+default-dev, librust-structopt-0.3+default-dev, librust-unindent-0.1+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-insta-1+default-dev, librust-lazy-static-1+default-dev, librust-pico-args-0.5+default-dev, librust-unindent-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/codespan-reporting]"
   ],
   "Version": [
-    "0.11.1-2"
+    "0.12.0-2"
   ]
 }

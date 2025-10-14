@@ -6,19 +6,25 @@
     "librust-enum-as-inner-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck-0.4+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck+default-dev (\u003c\u003c 0.6-~~) \u003c!nocheck\u003e, librust-heck+default-dev (\u003e= 0.4-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7cb4ce72a13590ccca6df749f3a7130f42313e49596d4934ce9e862f15df4931 2348 rust-enum-as-inner_0.6.0-1.dsc 5ffccbb6966c05b32ef8fbac435df276c4ae4d3dc55a8cd0eb9745e6c12f546a 12079 rust-enum-as-inner_0.6.0.orig.tar.gz bf3de1764c23bb2c0f80e4cd0178de5d422af2615af26f6853cabb48e06a7156 2880 rust-enum-as-inner_0.6.0-1.debian.tar.xz"
+    "f783346a5fe3b15fed156677ec6ab30274e09cedfcd2dd365a0197a310b33a06 2561 rust-enum-as-inner_0.6.1-1.dsc a1e6a265c649f3f5979b601d26f1d05ada116434c87741c9493cb56218f76cbc 12190 rust-enum-as-inner_0.6.1.orig.tar.gz 66b1172ff11007bc51642c759a4f0a96569cee3748f8842f058bb1491ecaa561 3076 rust-enum-as-inner_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-enum-as-inner"
   ],
   "Files": [
-    "ac7a2d56df85df6446d430a68197da70 2348 rust-enum-as-inner_0.6.0-1.dsc 429609265ba719cb180d0fadebf509e0 12079 rust-enum-as-inner_0.6.0.orig.tar.gz 8c8d5aad871958f2676f8fcc491e08ff 2880 rust-enum-as-inner_0.6.0-1.debian.tar.xz"
+    "edc18cacc24b0f43925ce639fdee75b8 2561 rust-enum-as-inner_0.6.1-1.dsc b6df1fcdd7634aa9d3b84bbe107ea76d 12190 rust-enum-as-inner_0.6.1.orig.tar.gz 884f50fffa7c982e6b746972c22c310b 3076 rust-enum-as-inner_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/bluejekyll/enum-as-inner"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/enum-as-inner]"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.6.1-1"
   ]
 }
