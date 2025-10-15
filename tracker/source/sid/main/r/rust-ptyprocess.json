@@ -6,16 +6,19 @@
     "librust-ptyprocess-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0+default-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix-0+feature-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix-0+fs-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix-0+ioctl-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix-0+signal-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix-0+term-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nix-0.30+default-dev \u003c!nocheck\u003e, librust-nix-0.30+feature-dev \u003c!nocheck\u003e, librust-nix-0.30+fs-dev \u003c!nocheck\u003e, librust-nix-0.30+ioctl-dev \u003c!nocheck\u003e, librust-nix-0.30+signal-dev \u003c!nocheck\u003e, librust-nix-0.30+term-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ee963fea20e0eb7997adc5d6c474fb4305e07d88300c8544759d44f47b85f721 2531 rust-ptyprocess_0.4.1-4.dsc 7e05aef7befb11a210468a2d77d978dde2c6381a0381e33beb575e91f57fe8cf 12876 rust-ptyprocess_0.4.1.orig.tar.gz b62c249bf8fe396ddf683e08d43d4f45d6c69f45009307616a21800a69d90f24 4388 rust-ptyprocess_0.4.1-4.debian.tar.xz"
+    "086f88f215324751dfad0d2605d4a5a4ff36b8162f812c6b1a95527310f80205 2491 rust-ptyprocess_0.4.1-5.dsc 7e05aef7befb11a210468a2d77d978dde2c6381a0381e33beb575e91f57fe8cf 12876 rust-ptyprocess_0.4.1.orig.tar.gz 82221c84234a85822614c2ef689bf833ff8b9569b5526ab89d172dd8bec4b0f0 4932 rust-ptyprocess_0.4.1-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ptyprocess"
   ],
   "Files": [
-    "4da4acb9d925232f6cd1754f2ff2a8f7 2531 rust-ptyprocess_0.4.1-4.dsc b3f775cddf66e780697d7be2cc807ea6 12876 rust-ptyprocess_0.4.1.orig.tar.gz 133c245a69ee37b1fb62c33d04d6a3f5 4388 rust-ptyprocess_0.4.1-4.debian.tar.xz"
+    "621120de9ef34e899a50ca144be6ec07 2491 rust-ptyprocess_0.4.1-5.dsc b3f775cddf66e780697d7be2cc807ea6 12876 rust-ptyprocess_0.4.1.orig.tar.gz 9339a495fc405b68b69125fce77fca3a 4932 rust-ptyprocess_0.4.1-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ptyprocess]"
   ],
   "Version": [
-    "0.4.1-4"
+    "0.4.1-5"
   ]
 }

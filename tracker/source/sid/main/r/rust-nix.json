@@ -6,19 +6,25 @@
     "librust-nix-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e, librust-cfg-aliases-0.2+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.155-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.155-~~) \u003c!nocheck\u003e, librust-libc-dev (\u003e= 0.2.153-6) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.69) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.3.3-~~) \u003c!nocheck\u003e, librust-cfg-aliases-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.171-~~) \u003c!nocheck\u003e, librust-libc-0.2+extra-traits-dev (\u003e= 0.2.171-~~) \u003c!nocheck\u003e, librust-libc-dev (\u003e= 0.2.153-6) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "45997eb67861c7a63bbb1fd0b4549957cd40204f3366d571632f4ce5c03d4867 2730 rust-nix_0.29.0-2.dsc 71e2746dc3a24dd78b3cfcb7be93368c6de9963d30f43a6a73998a9cf4b17b46 318248 rust-nix_0.29.0.orig.tar.gz 31da1b9cfc53691e716c2043e9a0cccb28b69a82c3f465d3f874826be2df6976 18900 rust-nix_0.29.0-2.debian.tar.xz"
+    "c35f9cbed3de52afb4185c2ec1c00f49929fbb481ad550cfb8c93b65db48948c 2802 rust-nix_0.30.1-2.dsc 74523f3a35e05aba87a1d978330aef40f67b0304ac79c1c00b294c9830543db6 342015 rust-nix_0.30.1.orig.tar.gz 5fd0265aded084cadd4d623bc2b95439b28c30f7a57495754e62c01e8c8f0478 19688 rust-nix_0.30.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nix"
   ],
   "Files": [
-    "3c12d09629e385db0ffed9ff84a7abd3 2730 rust-nix_0.29.0-2.dsc ed4e44c8eeb59ccf02891681bd0a5f2d 318248 rust-nix_0.29.0.orig.tar.gz 932ad1c2fa2f655481818a56594c3603 18900 rust-nix_0.29.0-2.debian.tar.xz"
+    "1027ffc92869ef5545e28bb95879d48b 2802 rust-nix_0.30.1-2.dsc 87955f326fc2aa9627d446518454080f 342015 rust-nix_0.30.1.orig.tar.gz 8b2731fd1a70d520afed10fe2dca5231 19688 rust-nix_0.30.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/nix-rust/nix"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-impl-0.1+default-dev, librust-caps-0.5+default-dev, librust-parking-lot-0.12+default-dev, librust-rand-0.8+default-dev, librust-semver-1+default-dev, librust-sysctl-0.5+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-assert-impl-0.1+default-dev, librust-caps-0.5+default-dev, librust-parking-lot-0.12+default-dev, librust-rand+default-dev, librust-semver-1+default-dev, librust-sysctl-0.5+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nix]"
   ],
   "Version": [
-    "0.29.0-2"
+    "0.30.1-2"
   ]
 }
