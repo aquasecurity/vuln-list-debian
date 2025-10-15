@@ -6,19 +6,25 @@
     "librust-fax-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "197eca6fb30ac6746064f5c69ea9213e7631c87e3a186ab4a5aa628309d1a59f 2381 rust-fax-derive_0.1.0-1.dsc 3c1d7ffc9f2dc8316348c75281a99c8fdc60c1ddf4f82a366d117bf1b74d5a39 3974 rust-fax-derive_0.1.0.orig.tar.gz fea628e1777f9c6c13bbc33b6a66fa987c0681354eff0aa4734d1a5e597d71e3 2472 rust-fax-derive_0.1.0-1.debian.tar.xz"
+    "109232cef95a2b2749fbc63737f38dd9f7bcbe165eeff3f280a6ea9d34641b77 2324 rust-fax-derive_0.2.0-1.dsc a0aca10fb742cb43f9e7bb8467c91aa9bcb8e3ffbc6a6f7389bb93ffc920577d 4442 rust-fax-derive_0.2.0.orig.tar.gz 832a0dbaaea956dfa1983e4dc5b91f0bd331bf33c68615181cbaf3c2d9d5c441 2544 rust-fax-derive_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fax-derive"
   ],
   "Files": [
-    "f0f15e1afa106ea509774c5e87410805 2381 rust-fax-derive_0.1.0-1.dsc 447e1d40df2b2b0734de2f6fbe1cffbc 3974 rust-fax-derive_0.1.0.orig.tar.gz 1ce5a0ace6b0bc5f940e842eb3911324 2472 rust-fax-derive_0.1.0-1.debian.tar.xz"
+    "f1a2dd1da8cc37a487a52f0840bb14ea 2324 rust-fax-derive_0.2.0-1.dsc bd4165c4164a784dec5ecdd03ba7a0dc 4442 rust-fax-derive_0.2.0.orig.tar.gz 90c8b737dbb27360c647082eaa8ef868 2544 rust-fax-derive_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pdf-rs/fax"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fab Stz \u003cfabstz-it@yahoo.fr\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fax-derive]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.2.0-1"
   ]
 }

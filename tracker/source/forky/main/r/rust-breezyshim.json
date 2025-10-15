@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.86) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-ctor+default-dev (\u003e= 0.1-~~) \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-patchkit-0.2+default-dev \u003c!nocheck\u003e, librust-percent-encoding-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e, librust-pyo3-0.25+chrono-dev \u003c!nocheck\u003e, librust-pyo3-0.25+default-dev \u003c!nocheck\u003e, librust-pyo3-0.25+serde-dev \u003c!nocheck\u003e, librust-pyo3-filelike+default-dev (\u003e= 0.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e, librust-url-2+serde-dev \u003c!nocheck\u003e, python3-breezy \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.86) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-ctor+default-dev (\u003e= 0.1-~~) \u003c!nocheck\u003e, librust-lazy-regex-3+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-patchkit-0.2+default-dev \u003c!nocheck\u003e, librust-percent-encoding-2+default-dev (\u003e= 2.3.1-~~) \u003c!nocheck\u003e, librust-pyo3+chrono-dev (\u003c\u003c 0.27-~~) \u003c!nocheck\u003e, librust-pyo3+chrono-dev (\u003e= 0.25-~~) \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003c\u003c 0.27-~~) \u003c!nocheck\u003e, librust-pyo3+default-dev (\u003e= 0.25-~~) \u003c!nocheck\u003e, librust-pyo3+serde-dev (\u003c\u003c 0.27-~~) \u003c!nocheck\u003e, librust-pyo3+serde-dev (\u003e= 0.25-~~) \u003c!nocheck\u003e, librust-pyo3-filelike+default-dev (\u003e= 0.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e, librust-url-2+serde-dev \u003c!nocheck\u003e, python3-breezy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d316fb04d7a95a1898e72f745124a067bf3936efc7728a19dd8f760d07294fdc 2767 rust-breezyshim_0.6.5-1.dsc 7fcb5a72aa85643f8325d5166c0f0f8dbc1456dce4ddc320591889abb5a31c67 139471 rust-breezyshim_0.6.5.orig.tar.gz a67e3788ba5404d185b2aa497dda5bad84b2a6ddaca33810642b922b2cd4388e 3336 rust-breezyshim_0.6.5-1.debian.tar.xz"
+    "42980618eed0061095e7b948f7e501f4206a85256465b54dfeef52fe8042827e 3249 rust-breezyshim_0.6.5-2.dsc 7fcb5a72aa85643f8325d5166c0f0f8dbc1456dce4ddc320591889abb5a31c67 139471 rust-breezyshim_0.6.5.orig.tar.gz 0d7172519407c0d294d6cd8100a98767389f538735749b42c6799eae1a2c3bee 3524 rust-breezyshim_0.6.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-breezyshim"
   ],
   "Files": [
-    "7c3af5d70a788ef656daf036da093013 2767 rust-breezyshim_0.6.5-1.dsc 0d821ddc0ebcbc288f040113ac0245c8 139471 rust-breezyshim_0.6.5.orig.tar.gz f7030d0a63d74a783320ef9adb72fcfe 3336 rust-breezyshim_0.6.5-1.debian.tar.xz"
+    "fead59b3aacdd5f2464df0af02634528 3249 rust-breezyshim_0.6.5-2.dsc 0d821ddc0ebcbc288f040113ac0245c8 139471 rust-breezyshim_0.6.5.orig.tar.gz 19947a9b1d8bf9700f02871605c706fa 3524 rust-breezyshim_0.6.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-maplit-1+default-dev, librust-pyo3-0.25+chrono-dev, librust-pyo3-0.25+default-dev, librust-serial-test-dev, rustc"
+    "dh-cargo, librust-maplit-1+default-dev, librust-pyo3+chrono-dev, librust-pyo3+default-dev, librust-serial-test-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/breezyshim]"
   ],
   "Version": [
-    "0.6.5-1"
+    "0.6.5-2"
   ]
 }

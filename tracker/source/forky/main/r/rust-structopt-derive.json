@@ -6,19 +6,25 @@
     "librust-structopt-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck-0.4+default-dev \u003c!nocheck\u003e, librust-proc-macro-error-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck+default-dev (\u003c\u003c 0.6-~~) \u003c!nocheck\u003e, librust-heck+default-dev (\u003e= 0.4-~~) \u003c!nocheck\u003e, librust-proc-macro-error-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2b69c0cbe578eb928127d34febaa46e67af994049b6a87c7cb8f59c99bc2a2cb 2519 rust-structopt-derive_0.4.18-2.dsc dcb5ae327f9cc13b68763b5749770cb9e048a99bd9dfdfa58d0cf05d5f64afe0 20996 rust-structopt-derive_0.4.18.orig.tar.gz 6107403bb01cfb347b42e40342287149faeb8d17a0a058fa6bdb397f13d4c04b 3800 rust-structopt-derive_0.4.18-2.debian.tar.xz"
+    "584abd1f3f99c0aa4d94361a671aa07a6287004ec6c7e1c09b5523415253b933 2757 rust-structopt-derive_0.4.18-3.dsc dcb5ae327f9cc13b68763b5749770cb9e048a99bd9dfdfa58d0cf05d5f64afe0 20996 rust-structopt-derive_0.4.18.orig.tar.gz ad2c49649f18213988250811b06481c394a4ad48790b0960497c3afb38bc5f91 3876 rust-structopt-derive_0.4.18-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-structopt-derive"
   ],
   "Files": [
-    "909f9a334814cfaa8750d14f28d04af1 2519 rust-structopt-derive_0.4.18-2.dsc 8e5f1eee55a9002adaf7c9c4f823ba9d 20996 rust-structopt-derive_0.4.18.orig.tar.gz 16b44815041a26f19aa889f33903903b 3800 rust-structopt-derive_0.4.18-2.debian.tar.xz"
+    "4b0c83430b20b131bd2983388ed04b87 2757 rust-structopt-derive_0.4.18-3.dsc 8e5f1eee55a9002adaf7c9c4f823ba9d 20996 rust-structopt-derive_0.4.18.orig.tar.gz 8ed2033b1dee27bea69b05584a33ac6a 3876 rust-structopt-derive_0.4.18-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/TeXitoi/structopt"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/structopt-derive]"
   ],
   "Version": [
-    "0.4.18-2"
+    "0.4.18-3"
   ]
 }

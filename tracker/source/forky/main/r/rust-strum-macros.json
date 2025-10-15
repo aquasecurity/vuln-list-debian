@@ -6,16 +6,19 @@
     "librust-strum-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck-0.4+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-rustversion-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-heck+default-dev (\u003c\u003c 0.6-~~) \u003c!nocheck\u003e, librust-heck+default-dev (\u003e= 0.4-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-rustversion-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2e9571da900202a4e5755ef96e08c4630bd17b01fdceb9d43a9fcac6f538c977 1884 rust-strum-macros_0.26.4-1.dsc 4c6bee85a5a24955dc440386795aa378cd9cf82acd5f764469152d2270e581be 27531 rust-strum-macros_0.26.4.orig.tar.gz 5454650ba7c482987f268ef4aa00854848f68f808a57ce5c9abf4a4d0bbc8433 3760 rust-strum-macros_0.26.4-1.debian.tar.xz"
+    "e97d39f290b4ab4378c5bee2f93096e30d2a9b3a5a29a6af2c1843e00531abe9 2709 rust-strum-macros_0.26.4-2.dsc 4c6bee85a5a24955dc440386795aa378cd9cf82acd5f764469152d2270e581be 27531 rust-strum-macros_0.26.4.orig.tar.gz b3dbe9a7ccabc6f3a11a8b5d27036be8ef0c998a7cec03f9f6593dbb4c499cc6 3824 rust-strum-macros_0.26.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-strum-macros"
   ],
   "Files": [
-    "8417b6063bb875644aa57336fd4a529e 1884 rust-strum-macros_0.26.4-1.dsc 567dd246bdcf0de25c37e4d80249d7c5 27531 rust-strum-macros_0.26.4.orig.tar.gz c7c44dd2f8ae386e760713e01a4208e5 3760 rust-strum-macros_0.26.4-1.debian.tar.xz"
+    "7199f9859457d075fe65307564ec4f8a 2709 rust-strum-macros_0.26.4-2.dsc 567dd246bdcf0de25c37e4d80249d7c5 27531 rust-strum-macros_0.26.4.orig.tar.gz 7aebe5231a456796e3fbb2a6402d114b 3824 rust-strum-macros_0.26.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/strum-macros]"
   ],
   "Version": [
-    "0.26.4-1"
+    "0.26.4-2"
   ]
 }
