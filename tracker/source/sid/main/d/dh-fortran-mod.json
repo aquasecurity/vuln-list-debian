@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "dh-fortran-mod"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-all, pybuild-plugin-pyproject, python3-setuptools, python3-magic, python3-pytest \u003c!nocheck\u003e, gfortran-for-host | fortran-compiler, click-man"
   ],
   "Checksums-Sha256": [
-    "952784caec670f8ee28d635bff6e9767646f11df9089d57eb72579a4946ffa2a 1769 dh-fortran-mod_0.45.dsc 53b30e4214ac1c04be5753724ae6982799524ebb8854f9763c3a92a2bc8317c7 43088 dh-fortran-mod_0.45.tar.xz"
+    "140d9506ac78fb4abab741505c594976704e436461031299c1f82f5ef06067d1 1944 dh-fortran-mod_0.46.dsc 46ddd6e702039deb57d89254a3ef16fa92c7edeae446f259d60ea2b1742d2765 89296 dh-fortran-mod_0.46.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dh-fortran-mod"
   ],
   "Files": [
-    "95c476f0d64544d7398e67f3f9c30aa7 1769 dh-fortran-mod_0.45.dsc d57d8a4d3176640d0cd70a94a559cd6f 43088 dh-fortran-mod_0.45.tar.xz"
+    "f63585c302f7dc679f5215aff7a79386 1944 dh-fortran-mod_0.46.dsc 0b4165409c638d9f1b3e548c117f7b89 89296 dh-fortran-mod_0.46.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -27,7 +27,7 @@
     "dh-fortran-mod"
   ],
   "Package-List": [
-    "dh-fortran-mod deb devel optional arch=all"
+    "dh-fortran-mod deb devel optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -42,18 +42,18 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gfortran"
+    "dh-fortran, gfortran"
   ],
   "Uploaders": [
     "Sébastien Villemot \u003csebastien@debian.org\u003e, Alastair McKinstry \u003cmckinstry@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/science-team/dh-fortran-mod"
+    "https://salsa.debian.org/science-team/dh-fortran"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/science-team/dh-fortran-mod.git -b debian/latest"
+    "https://salsa.debian.org/science-team/dh-fortran.git -b debian/latest"
   ],
   "Version": [
-    "0.45"
+    "0.46"
   ]
 }
