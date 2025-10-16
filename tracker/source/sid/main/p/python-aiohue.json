@@ -6,19 +6,19 @@
     "python3-aiohue"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-asyncio-throttle, python3-awesomeversion, python3-pytest, python3-pytest-aiohttp, python3-pytest-asyncio, python3-pytest-cov"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-asyncio-throttle \u003c!nocheck\u003e, python3-awesomeversion \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-aiohttp \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51834507a96b12b3b75c8c20088ab6de6f033344df137a282f6dcd6975c07007 2299 python-aiohue_4.7.2-4.dsc 49b15e07a784fb71ae3798e82739aa1c2ceac5b720ebed6359b414e17f8435f1 52004 python-aiohue_4.7.2.orig.tar.xz cd8fd404228e314f727c4238262d7926d048b70bff8ea27e3f4affb1e5d44728 2008 python-aiohue_4.7.2-4.debian.tar.xz"
+    "c997ab38194da1905e1711f3cec9d2536da71c88a99e428033cb740b6694858a 2455 python-aiohue_4.8.0-1.dsc 9967102d5bcde7b923d4f5f877f1909d09939f39c0184f254c9acf703fd96e16 56056 python-aiohue_4.8.0.orig.tar.xz 53ba73194de5eb119f776245f2b62b23ad86d833b985fa4752e0905a1ee2926d 2248 python-aiohue_4.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-aiohue"
   ],
   "Files": [
-    "bd31819263fde4963aec3883ced49452 2299 python-aiohue_4.7.2-4.dsc fefdf5778e0845c7de0f000993052281 52004 python-aiohue_4.7.2.orig.tar.xz 05fdd8e06dd1b4134df13e129b566ed5 2008 python-aiohue_4.7.2-4.debian.tar.xz"
+    "36483685807cd2427391222654c27a48 2455 python-aiohue_4.8.0-1.dsc 1f5a8fae1374f5fb530fd66c7a6da2b8 56056 python-aiohue_4.8.0.orig.tar.xz 3de75920a50e026c025feba35112e0ce 2248 python-aiohue_4.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e, Tianyu Chen \u003cbillchenchina2001@gmail.com\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Tianyu Chen \u003cbillchenchina2001@gmail.com\u003e, Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-aiohue"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-aiohue.git"
   ],
   "Version": [
-    "4.7.2-4"
+    "4.8.0-1"
   ]
 }
