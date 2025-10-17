@@ -6,16 +6,19 @@
     "librust-async-zip-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crc32fast-1+default-dev \u003c!nocheck\u003e, librust-futures-lite+std-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e, librust-pin-project-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crc32fast-1+default-dev \u003c!nocheck\u003e, librust-futures-lite-2+std-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-pin-project-1+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "88faf1ed4470411c86c26f86bb1b1771fd2abaeaaeabc5c05860a4a9db7245f5 2199 rust-async-zip_0.0.17-1.dsc 00b9f7252833d5ed4b00aa9604b563529dd5e11de9c23615de2dcdf91eb87b52 109081 rust-async-zip_0.0.17.orig.tar.gz af114186842a5bb8fc38d867695ced4d00e3ff48d1520cd8f6efc15b2977c75f 5636 rust-async-zip_0.0.17-1.debian.tar.xz"
+    "271da16871b9269da520c9183f043721914523781d98ecf48f3b1cca932c7cf7 2281 rust-async-zip_0.0.18-1.dsc 0d8c50d65ce1b0e0cb65a785ff615f78860d7754290647d3b983208daa4f85e6 66981 rust-async-zip_0.0.18.orig.tar.gz ab137dbaed1ee66c1529d959cb91b930e8f43ea6ae7487afd20913db579d2df4 5604 rust-async-zip_0.0.18-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-zip"
   ],
   "Files": [
-    "aaf9c9a83ed7d81ddab041164767098f 2199 rust-async-zip_0.0.17-1.dsc 003b008041a663228b9b0b7173e2a388 109081 rust-async-zip_0.0.17.orig.tar.gz 5340c43b19ff96d1330fbd2451858376 5636 rust-async-zip_0.0.17-1.debian.tar.xz"
+    "65738a373eccf495745a6646de01713f 2281 rust-async-zip_0.0.18-1.dsc 171bba7ad5eaa8aaf0ee822f05aaa05c 66981 rust-async-zip_0.0.18.orig.tar.gz b89be5663fe4b6c25346f8b61729dc6d 5604 rust-async-zip_0.0.18-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-derive-more-0.99+default-dev, librust-env-logger-0.11+default-dev, librust-futures-0.3+default-dev, librust-sanitize-filename-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-tokio-util-0.7+compat-dev, librust-tokio-util-0.7+default-dev, librust-uuid-1+default-dev, librust-uuid-1+serde-dev, librust-uuid-1+v4-dev, librust-zip-0.6+default-dev, rustc"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-derive-more-1+default-dev, librust-derive-more-1+display-dev, librust-derive-more-1+error-dev, librust-env-logger-0.11+default-dev, librust-futures-0.3+default-dev, librust-sanitize-filename-0.6+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-tokio-util-0.7+compat-dev, librust-tokio-util-0.7+default-dev, librust-uuid-1+default-dev, librust-uuid-1+serde-dev, librust-uuid-1+v4-dev, librust-zip-5+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-zip]"
   ],
   "Version": [
-    "0.0.17-1"
+    "0.0.18-1"
   ]
 }
