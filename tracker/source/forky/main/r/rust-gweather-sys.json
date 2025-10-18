@@ -6,19 +6,19 @@
     "librust-gweather-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, liblzma-dev, libgweather-4-dev, libgirepository1.0-dev, gir-rust-code-generator (\u003e= 0.21), xmlstarlet"
+    "debhelper-compat (= 13), dh-sequence-cargo, gir-rust-code-generator (\u003e= 0.21), gir1.2-gweather-4.0-dev, gobject-introspection (\u003e= 1.86.0-3~), xmlstarlet"
   ],
   "Build-Depends-Arch": [
     "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gio-sys-0.21+default-dev \u003c!nocheck\u003e, librust-glib-sys-0.21+default-dev \u003c!nocheck\u003e, librust-gobject-sys-0.21+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eda48189593c5975594d6883ac8cb339f75be579b9ec66dfcd99da78086841eb 2685 rust-gweather-sys_4.6.0-2.dsc 9cffbe67680461903bbc83915f28d957975998f7a2943db01752e08679fcd081 13711 rust-gweather-sys_4.6.0.orig.tar.gz 7bcc1a767d8f70c5b5e7afaec1df45809295d004292b8a2d77e364dcd4e9f499 3736 rust-gweather-sys_4.6.0-2.debian.tar.xz"
+    "4bf4a2329c49a372309a41b303e104822ffaea2d7de11cfc9d30e574707037e4 2679 rust-gweather-sys_4.6.0-3.dsc 9cffbe67680461903bbc83915f28d957975998f7a2943db01752e08679fcd081 13711 rust-gweather-sys_4.6.0.orig.tar.gz c8443a85425e50149e767480c4ddc0f689bdf7469cf3f144cb30c22da57bd8ff 3784 rust-gweather-sys_4.6.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gweather-sys"
   ],
   "Files": [
-    "81ca6d56d81f0ac6a2e301fba3fd4e3d 2685 rust-gweather-sys_4.6.0-2.dsc 71a95bef6a87e015e8b6d82968c0c8f6 13711 rust-gweather-sys_4.6.0.orig.tar.gz 177e93eebadd0c7aa13d5c7dba9d6023 3736 rust-gweather-sys_4.6.0-2.debian.tar.xz"
+    "dbb90198ec96b1df5fd87c4cb984c0a5 2679 rust-gweather-sys_4.6.0-3.dsc 71a95bef6a87e015e8b6d82968c0c8f6 13711 rust-gweather-sys_4.6.0.orig.tar.gz f781fca013eb6b59044c0c58d103d010 3784 rust-gweather-sys_4.6.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, libgweather-4-dev, liblzma-dev, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, libgweather-4-dev, librust-shell-words-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gweather-sys]"
   ],
   "Version": [
-    "4.6.0-2"
+    "4.6.0-3"
   ]
 }
