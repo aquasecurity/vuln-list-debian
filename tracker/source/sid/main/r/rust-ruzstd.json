@@ -6,16 +6,19 @@
     "librust-ruzstd-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-twox-hash-1-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-twox-hash-2+xxhash64-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "30cfe09be786897beff080456d6863b2927c1a5338045593190b0b6319686035 2365 rust-ruzstd_0.7.3-2.dsc fad02996bfc73da3e301efe90b1837be9ed8f4a462b6ed410aa35d00381de89f 67611 rust-ruzstd_0.7.3.orig.tar.gz 165b4124ab88976682882df289ed535d969af762bd5ffdc2cb25c31a720b41c0 4100 rust-ruzstd_0.7.3-2.debian.tar.xz"
+    "c93fb34420d9efc9dd6e8a7637b80a5d42dcc1a0e0f7f988b6cdb7354fd04325 1747 rust-ruzstd_0.7.3-4.dsc fad02996bfc73da3e301efe90b1837be9ed8f4a462b6ed410aa35d00381de89f 67611 rust-ruzstd_0.7.3.orig.tar.gz 92237f3031f689e996135d0893f055d28a4eea01b608b37b2ce3b98d00529a19 4316 rust-ruzstd_0.7.3-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ruzstd"
   ],
   "Files": [
-    "2005804d394e49b3f0271e4c20026df8 2365 rust-ruzstd_0.7.3-2.dsc 6517e052935aaa265c786ddb3fc56c83 67611 rust-ruzstd_0.7.3.orig.tar.gz 89d87990ebae1cde63d201267a60c4e9 4100 rust-ruzstd_0.7.3-2.debian.tar.xz"
+    "c4acd3590e7f0f15b363a543f6bac638 1747 rust-ruzstd_0.7.3-4.dsc 6517e052935aaa265c786ddb3fc56c83 67611 rust-ruzstd_0.7.3.orig.tar.gz 6e5773ea502afbce7dc4763bd3248f30 4316 rust-ruzstd_0.7.3-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ruzstd]"
   ],
   "Version": [
-    "0.7.3-2"
+    "0.7.3-4"
   ]
 }
