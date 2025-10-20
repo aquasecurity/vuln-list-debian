@@ -3,22 +3,28 @@
     "any all"
   ],
   "Binary": [
-    "python3-sklearn, python3-sklearn-lib, python-sklearn-doc"
+    "python3-sklearn, python-sklearn-doc, python3-sklearn-lib"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, cython3, python3-setuptools, python3-numpy, python3-scipy, python3-pytest, python3-pytest-xdist, python3-matplotlib, python3-joblib, python3-threadpoolctl, libsvm-dev, libblas-dev | libblas.so, python3-pandas \u003c!nocheck\u003e, python3-pil \u003c!nocheck\u003e, libjs-bootstrap4"
+    "debhelper-compat (= 13), dh-sequence-numpy3, dh-sequence-python3, cython3:native, libpython3-all-dev, pybuild-plugin-pyproject, python3-all-dev:any, python3-joblib:native, python3-mesonpy:native, python3-numpy-dev, python3-numpy:any, python3-scipy:native, python3-threadpoolctl:native"
+  ],
+  "Build-Depends-Arch": [
+    "python3-matplotlib \u003c!nocheck\u003e, python3-mypy \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-pil \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-skimage \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc, python3-sphinx, python3-sphinx-copybutton, python3-sphinx-gallery, python3-sphinx-prompt, python3-sphinxext-opengraph, python3-numpydoc, python3-pandas, python3-skimage, python3-seaborn, python3-pil, python3-pooch, libjs-jquery (\u003e= 3.6.1+dfsg+~3.5.14-1~), librsvg2-bin, graphviz, python3-doc, python-scipy-doc, python-pandas-doc, python-numpy-doc, python-matplotlib-doc"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, python-matplotlib-doc \u003c!nodoc\u003e, python-numpy-doc \u003c!nodoc\u003e, python-pandas-doc \u003c!nodoc\u003e, python-scipy-doc \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-matplotlib \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-pandas \u003c!nodoc\u003e, python3-pil \u003c!nodoc\u003e, python3-plotly \u003c!nodoc\u003e, python3-pooch \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-seaborn \u003c!nodoc\u003e, python3-skimage \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-sphinx-gallery \u003c!nodoc\u003e, python3-sphinx-prompt \u003c!nodoc\u003e, python3-sphinx-remove-toctrees \u003c!nodoc\u003e, python3-sphinxcontrib-sass \u003c!nodoc\u003e, python3-sphinxcontrib-towncrier \u003c!nodoc\u003e, python3-sphinxext-opengraph \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "7c4801fd85f9122998c42605408544e3d9f23658d83a0dc15bcee7047b073c59 3170 scikit-learn_1.4.2+dfsg-8.dsc 64e472c2405f967885642cd40cb4231daf09a8df14be3bc4cad786c89bd47391 6409200 scikit-learn_1.4.2+dfsg.orig.tar.xz 20f3d22759ff58bca2bf72695b4d227c182354d48141a050c4e1927b10c28f2b 24456 scikit-learn_1.4.2+dfsg-8.debian.tar.xz"
+    "ea13bf37f2088cb4439f3d7bb0484077ba44fe235ffb189aa21f1b42e32395ca 3712 scikit-learn_1.7.2+dfsg-3.dsc da140d7fe171f24dea82cf2162fd9f0d712844a4e08e66ce4b1333fc6dca6cff 5812892 scikit-learn_1.7.2+dfsg.orig.tar.xz d813d5fdc0234527b691d57ced167030127e2501f86d34289b04bea9c7dc5651 27024 scikit-learn_1.7.2+dfsg-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "b44e7cbe8aece944d39eb828e590d3c937aed82c debian archive/debian/1.7.2+dfsg-3 https://git.dgit.debian.org/scikit-learn"
   ],
   "Directory": [
     "pool/main/s/scikit-learn"
   ],
   "Files": [
-    "0477601758729fc5d78328b16d0ed5e1 3170 scikit-learn_1.4.2+dfsg-8.dsc 94e44163595afbed951cdd63e47d7e70 6409200 scikit-learn_1.4.2+dfsg.orig.tar.xz 5e4149bd35127bc2778e6c5abc4df3e7 24456 scikit-learn_1.4.2+dfsg-8.debian.tar.xz"
+    "9aec0055b0e25cc4fabcc5e268066b41 3712 scikit-learn_1.7.2+dfsg-3.dsc 4f195ee2876fe517c00e8ea9d3b66bf7 5812892 scikit-learn_1.7.2+dfsg.orig.tar.xz 7610320737df0ee03d759248c951ab1b 27024 scikit-learn_1.7.2+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,16 +48,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-joblib, python3-matplotlib, python3-numpy, python3-pytest, python3-pytest-xdist, python3-scipy, python3-setuptools"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Yaroslav Halchenko \u003cdebian@onerussian.com\u003e, Michael Hanke \u003cmichael.hanke@gmail.com\u003e, Christian Kastner \u003cckk@debian.org\u003e"
+    "Yaroslav Halchenko \u003cdebian@onerussian.com\u003e, Michael Hanke \u003cmichael.hanke@gmail.com\u003e, Christian Kastner \u003cckk@debian.org\u003e, Timo Röhling \u003croehling@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/scikit-learn"
@@ -60,6 +63,6 @@
     "https://salsa.debian.org/science-team/scikit-learn.git"
   ],
   "Version": [
-    "1.4.2+dfsg-8"
+    "1.7.2+dfsg-3"
   ]
 }

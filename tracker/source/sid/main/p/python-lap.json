@@ -6,16 +6,16 @@
     "python3-lap"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-numpy3, dh-sequence-python3, python3-all-dev, python3-numpy:any, python3-numpy-dev, pybuild-plugin-pyproject, python3-setuptools, python3-pytest, cython3"
+    "debhelper-compat (= 13), dh-sequence-numpy3, dh-sequence-python3, python3-all-dev, python3-numpy:any, python3-numpy-dev, pybuild-plugin-pyproject, python3-setuptools, python3-pytest, python3-pytest-timeout, cython3"
   ],
   "Checksums-Sha256": [
-    "33a062dfcdd2c7068389d4b1d98e5fe83d295ccf28537ffe3051dac5b099be92 2174 python-lap_0.5.12-1.dsc 608301ea8a45ed8fe50a63807f533a21096af620cc2475ee447c0e95ded8380c 1439220 python-lap_0.5.12.orig.tar.gz a41759bf21e1ab7e35e34431a6a8cfd41ed97b84dda4cc24edb5a850d4c345a2 4024 python-lap_0.5.12-1.debian.tar.xz"
+    "bed67c0f9cd491270c78d4cf28ff879f021da525a06b1c9ae077a51f109c3d7a 2085 python-lap_0.5.12-2.dsc 608301ea8a45ed8fe50a63807f533a21096af620cc2475ee447c0e95ded8380c 1439220 python-lap_0.5.12.orig.tar.gz 35bc289642631d5869203156e3a5918a04b66cb4a6f187cb2722a96b906c4f90 4260 python-lap_0.5.12-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-lap"
   ],
   "Files": [
-    "888183d87c410984fb004dd341e8a62e 2174 python-lap_0.5.12-1.dsc a2d774cdb7ba412f59e33e31fd3a5232 1439220 python-lap_0.5.12.orig.tar.gz 845ced85212cc961733d6c118fe6b7ab 4024 python-lap_0.5.12-1.debian.tar.xz"
+    "8de17a469129d8b1b21362789b995115 2085 python-lap_0.5.12-2.dsc a2d774cdb7ba412f59e33e31fd3a5232 1439220 python-lap_0.5.12.orig.tar.gz 6cb730f7fbd3cb3fa6d06036eba6e9b2 4260 python-lap_0.5.12-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.7.2"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-numpy, python3-pytest, python3-pytest-timeout"
   ],
   "Uploaders": [
     "Pieter Lenaerts \u003cplenae@disroot.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-lap.git"
   ],
   "Version": [
-    "0.5.12-1"
+    "0.5.12-2"
   ]
 }

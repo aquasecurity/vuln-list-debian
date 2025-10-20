@@ -6,16 +6,16 @@
     "dracut-core, dracut, dracut-install, dracut-network, dracut-squash, dracut-live, dracut-test"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), asciidoctor, bash-completion, cpio \u003c!nocheck\u003e, libkmod-dev, pkgconf, shellcheck [!i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, shfmt [!i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, systemd-dev"
+    "debhelper-compat (= 13), 3cpio [!alpha !hppa !m68k !sh4] \u003c!nocheck\u003e, asciidoctor, bash-completion, cpio [alpha hppa m68k sh4] \u003c!nocheck\u003e, libkmod-dev, pkgconf, shellcheck [!i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, shfmt [!alpha !hppa !i386 !m68k !powerpc !sh4 !sparc64 !x32] \u003c!nocheck\u003e, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "2ae244ba240c3c4c46104af292f13632901ab39c765244435917a027e354e33f 2840 dracut_108-3.dsc 46743e6da5008b938348145c8dcb622a26583e3efa548a26e81b317985c527fd 552761 dracut_108.orig.tar.gz c8b3b554f45cba1a1d732589c53a931dfd1528256ea24b10dd51e91aabe3a1f0 33676 dracut_108-3.debian.tar.xz"
+    "4ed05ece82ee18b7d0d8efb74e51a33592f46d420128686866a49540d1e80290 2817 dracut_108-8.dsc 46743e6da5008b938348145c8dcb622a26583e3efa548a26e81b317985c527fd 552761 dracut_108.orig.tar.gz 48d2d35fbd5f4664249e4b9b436556dacccbafcc877792ad8f1a09c281f95615 37164 dracut_108-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dracut"
   ],
   "Files": [
-    "db47643888548980085408aa58294758 2840 dracut_108-3.dsc c2400a7171fc91fa12b24f3b1decdedf 552761 dracut_108.orig.tar.gz a55d1deb571399f798c870924f403906 33676 dracut_108-3.debian.tar.xz"
+    "aa8bd280f6341026669ae64a8de52af3 2817 dracut_108-8.dsc c2400a7171fc91fa12b24f3b1decdedf 552761 dracut_108.orig.tar.gz 0cd8eb43eadc47f98510b62163460eec 37164 dracut_108-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "dracut"
   ],
   "Package-List": [
-    "dracut deb utils optional arch=all dracut-core deb utils optional arch=any dracut-install deb utils optional arch=any dracut-live deb utils optional arch=all dracut-network deb utils optional arch=all dracut-squash deb utils optional arch=all dracut-test deb utils optional arch=all"
+    "dracut deb utils optional arch=all dracut-core deb utils optional arch=any dracut-install deb utils optional arch=any dracut-live deb utils optional arch=all dracut-network deb utils optional arch=all dracut-squash deb utils optional arch=all dracut-test deb utils optional arch=any"
   ],
   "Priority": [
     "source"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "btrfs-progs, busybox, cryptsetup, curl, dbus, fdisk, ipxe-qemu, isc-dhcp-client, isc-dhcp-server, kbd, linux-image-generic, lvm2, make, mdadm, nbd-client, nbd-server, nfs-kernel-server, open-iscsi, ovmf, parted, procps, qemu-efi-aarch64, qemu-efi-arm, qemu-system-native, seabios, squashfs-tools, systemd, systemd-boot-efi, systemd-container, systemd-coredump, systemd-cryptsetup, systemd-repart, systemd-ukify, tgt, zstd"
+    "btrfs-progs, busybox, curl, dbus, fdisk, isc-dhcp-client, isc-dhcp-server, kbd, linux-image-generic, nbd-client, nbd-server, nfs-kernel-server, open-iscsi, parted, pkgconf, procps, squashfs-tools, systemd-boot-efi, systemd-container, systemd-coredump, systemd-repart, systemd-ukify, tgt, util-linux-extra, zstd"
   ],
   "Uploaders": [
     "Benjamin Drung \u003cbdrung@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/dracut.git"
   ],
   "Version": [
-    "108-3"
+    "108-8"
   ]
 }

@@ -6,19 +6,19 @@
     "python3-aioshelly"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-bluetooth-data-tools, python3-habluetooth, python3-orjson, python3-yarl"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-bluetooth-data-tools \u003c!nocheck\u003e, python3-habluetooth \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-yarl \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "38fddb40cdfaeca0a4fb61fa3024b40be26103f6ba70632506d3451416736a7e 2246 python-aioshelly_11.2.0-3.dsc 3ba72630344e3a6d14cbfd38cf6612c5f475655b1d8abe65e0cf68b9aba9df41 38852 python-aioshelly_11.2.0.orig.tar.xz cd696c567b26df82316488ba97f7dc2989f3048fde3768d701f558c9dad5ef52 1784 python-aioshelly_11.2.0-3.debian.tar.xz"
+    "28dc5c42f9009dd65900ceaa8eac4bdd940af0956e5c172c2b5f1b350835726e 2482 python-aioshelly_13.14.0-1.dsc 1f48adc78c0269b489f1aae8fb24bb839f1303abad874bb9d55a237e46ee52c7 69308 python-aioshelly_13.14.0.orig.tar.gz ef748314d78964e33a686be68213b1947ec4dfdf0d967879fa8c21571124e2da 2044 python-aioshelly_13.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-aioshelly"
   ],
   "Files": [
-    "b488de08873861f04a438013b80172dd 2246 python-aioshelly_11.2.0-3.dsc 050fe16972ffae7ce0e0a82c9b32dd1d 38852 python-aioshelly_11.2.0.orig.tar.xz 11088f6080e1a77d8fe065db0bc93fbd 1784 python-aioshelly_11.2.0-3.debian.tar.xz"
+    "efc08cc0471c2d6e522edf1447ed0b1e 2482 python-aioshelly_13.14.0-1.dsc 217c1ceac21b88077507af8bfde79367 69308 python-aioshelly_13.14.0.orig.tar.gz 4b6ba958db6c4fe4fceed1900ecf608f 2044 python-aioshelly_13.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-aioshelly"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-aioshelly.git"
   ],
   "Version": [
-    "11.2.0-3"
+    "13.14.0-1"
   ]
 }
