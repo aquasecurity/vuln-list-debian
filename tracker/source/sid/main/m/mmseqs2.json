@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "amd64 arm64 mips64el ppc64el ia64 kfreebsd-amd64 riscv64 loong64 all"
+    "any all"
   ],
   "Binary": [
     "mmseqs2, mmseqs2-examples"
@@ -9,16 +9,16 @@
     "debhelper-compat (= 13)"
   ],
   "Build-Depends-Arch": [
-    "cmake, libgzstream-dev, libzstd-dev, zlib1g-dev, libbz2-dev, libsimde-dev, libxxhash-dev"
+    "cmake, architecture-is-64-bit, architecture-is-little-endian, libgzstream-dev, libzstd-dev, zlib1g-dev, libbz2-dev, libsimde-dev, libxxhash-dev"
   ],
   "Checksums-Sha256": [
-    "e7d46b9fa9983b97806adfa1c3724870287bc47e63cc7572177a8d211f25f95f 2284 mmseqs2_15-6f452+ds-2.dsc 030ba32d58b8a34016c25d953ff3067c63705e346d02ee15df09b73c8efdea2e 6770980 mmseqs2_15-6f452+ds.orig.tar.xz 3d6d0fc44c4728a7df6f35dc9afc08c774533e809e843aa00112c28bc2efcc15 6548600 mmseqs2_15-6f452+ds-2.debian.tar.xz"
+    "77a39541ec0d9098af002313380650242b4d8c563293c4c934a3d54a646ee6f6 2244 mmseqs2_18-8cc5c+ds-1.dsc 368e23bc4ba98290bee71bb17db4a53945ab1b0921ea723a477a908f5541e41f 7036572 mmseqs2_18-8cc5c+ds.orig.tar.xz 8fddd12d099583dc63bc5aff4a9437a8fa100aec59c20a8fd31b34a3c541965c 6548736 mmseqs2_18-8cc5c+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mmseqs2"
   ],
   "Files": [
-    "5db56cc7979c4196aa72de77b319ace9 2284 mmseqs2_15-6f452+ds-2.dsc f072939874061057828878e97a85c92e 6770980 mmseqs2_15-6f452+ds.orig.tar.xz fdb34d0ef47202ac056418b248817ffb 6548600 mmseqs2_15-6f452+ds-2.debian.tar.xz"
+    "2419ae35d1b37e753816f8cad8948b8b 2244 mmseqs2_18-8cc5c+ds-1.dsc 5ea26d2dc4183e83bb15159d95f2b10b 7036572 mmseqs2_18-8cc5c+ds.orig.tar.xz e96d47c905bc8d952570f9d2e61051d4 6548736 mmseqs2_18-8cc5c+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "mmseqs2"
   ],
   "Package-List": [
-    "mmseqs2 deb science optional arch=amd64,arm64,mips64el,ppc64el,ia64,kfreebsd-amd64,riscv64,loong64 mmseqs2-examples deb science optional arch=all"
+    "mmseqs2 deb science optional arch=any mmseqs2-examples deb science optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Uploaders": [
-    "Shayan Doust \u003chello@shayandoust.me\u003e"
+    "Shayan Doust \u003chello@shayandoust.me\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/med-team/mmseqs2"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/mmseqs2.git"
   ],
   "Version": [
-    "15-6f452+ds-2"
+    "18-8cc5c+ds-1"
   ]
 }
