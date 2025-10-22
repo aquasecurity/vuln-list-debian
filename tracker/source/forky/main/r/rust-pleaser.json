@@ -6,16 +6,19 @@
     "librust-pleaser-dev, pleaser"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-chrono-0.4+default-dev, librust-getopts-0.2+default-dev, librust-libc-0.2+default-dev, librust-nix+default-dev (\u003e= 0.27-~~), librust-nix+fs-dev (\u003e= 0.27-~~), librust-nix+hostname-dev (\u003e= 0.27-~~), librust-nix+signal-dev (\u003e= 0.27-~~), librust-nix+term-dev (\u003e= 0.27-~~), librust-nix+user-dev (\u003e= 0.27-~~), librust-pam-0.7+default-dev, librust-rand-0.8+default-dev, librust-regex-1+default-dev (\u003e= 1.7-~~), librust-rpassword-7+default-dev, librust-syslog+default-dev (\u003e= 6.0-~~), librust-uzers+default-dev (\u003e= 0.10-~~), bash-completion"
+    "debhelper-compat (= 13), dh-sequence-cargo, bash-completion"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev, librust-chrono-0.4+default-dev, librust-getopts-0.2+default-dev, librust-libc-0.2+default-dev, librust-nix+default-dev (\u003e= 0.30-~~), librust-nix+fs-dev (\u003e= 0.30-~~), librust-nix+hostname-dev (\u003e= 0.30-~~), librust-nix+signal-dev (\u003e= 0.30-~~), librust-nix+term-dev (\u003e= 0.30-~~), librust-nix+user-dev (\u003e= 0.30-~~), librust-pam-0.7+default-dev, librust-rand-0.8+default-dev, librust-regex-1+default-dev (\u003e= 1.7-~~), librust-rpassword-7+default-dev, librust-syslog+default-dev (\u003e= 6.0-~~), librust-uzers+default-dev (\u003e= 0.10-~~)"
   ],
   "Checksums-Sha256": [
-    "e9f1c8a04245d004ae45eb8b014635b64770024abb265d1247158d7f9e6e6ea4 2740 rust-pleaser_0.5.6-1.dsc b5d9bee5511888e370c6e894d05f98f283de2a26669ec4e225d198505f9052d7 60896 rust-pleaser_0.5.6.orig.tar.gz 14d21475433fdbd97b00ddfea669495d51710f4656db3ce2ee90ce5f938f0787 4740 rust-pleaser_0.5.6-1.debian.tar.xz"
+    "908ba19a080a1985ddb7ff4677cb7fd97e6b3c6653b6125c7c2a16b7872e8b4e 2773 rust-pleaser_0.5.6-2.dsc b5d9bee5511888e370c6e894d05f98f283de2a26669ec4e225d198505f9052d7 60896 rust-pleaser_0.5.6.orig.tar.gz 735edc1bdd1d085a85a364b1ed5bbb6f862ac097ce8cb2211a60450356d43287 6068 rust-pleaser_0.5.6-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pleaser"
   ],
   "Files": [
-    "fce4208fbdce77d7926426272947bf1c 2740 rust-pleaser_0.5.6-1.dsc 55a72129e8f363218d4acf3ee987a808 60896 rust-pleaser_0.5.6.orig.tar.gz 2b71a519bbf071872cb5a94b288c01e9 4740 rust-pleaser_0.5.6-1.debian.tar.xz"
+    "7a00bcf71805a65b097d091d747a0ac6 2773 rust-pleaser_0.5.6-2.dsc 55a72129e8f363218d4acf3ee987a808 60896 rust-pleaser_0.5.6.orig.tar.gz c1e7a9a0c2a03b4e0b42e81d03607510 6068 rust-pleaser_0.5.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ed Neville \u003ced-debian@s5h.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pleaser]"
   ],
   "Version": [
-    "0.5.6-1"
+    "0.5.6-2"
   ]
 }

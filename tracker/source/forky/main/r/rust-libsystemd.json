@@ -6,19 +6,25 @@
     "librust-libsystemd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hmac-0.12+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nix-0+default-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e, librust-nix-0+fs-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e, librust-nix-0+process-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e, librust-nix-0+socket-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e, librust-nix-0+uio-dev (\u003e= 0.24-~~) \u003c!nocheck\u003e, librust-nom-7+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.91-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.91-~~) \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-uuid-1+default-dev \u003c!nocheck\u003e, librust-uuid-1+serde-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hmac-0.12+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-nix-0.30+default-dev \u003c!nocheck\u003e, librust-nix-0.30+fs-dev \u003c!nocheck\u003e, librust-nix-0.30+process-dev \u003c!nocheck\u003e, librust-nix-0.30+socket-dev \u003c!nocheck\u003e, librust-nix-0.30+uio-dev \u003c!nocheck\u003e, librust-nom-7+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.91-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.91-~~) \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-uuid-1+default-dev \u003c!nocheck\u003e, librust-uuid-1+serde-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e2c09add7a200d0beebc9063e3f4efc23070ae8f43c314a11219f6246e7c776e 3039 rust-libsystemd_0.5.0-1.dsc 8144587c71c16756b1055d3dcb0c75cb605a10ecd6523cc33702d5f90902bf6d 29268 rust-libsystemd_0.5.0.orig.tar.gz b02376824782c94db34e4f8adba49ae6d01d1aaf07198b14fefb088d1047e0ed 6740 rust-libsystemd_0.5.0-1.debian.tar.xz"
+    "56c025452cb6eac76e3c4e30f0218e6da5274e7729fe4a0a959aaae828f8400a 3071 rust-libsystemd_0.5.0-2.dsc 8144587c71c16756b1055d3dcb0c75cb605a10ecd6523cc33702d5f90902bf6d 29268 rust-libsystemd_0.5.0.orig.tar.gz 58fc2e537a2990e8149b88f4c75749c8c9fb5ded19147f76225ae24d6d3834dc 7280 rust-libsystemd_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libsystemd"
   ],
   "Files": [
-    "4b7faccf8f95e37f1a297cd7512b335d 3039 rust-libsystemd_0.5.0-1.dsc df3b2290955539042022b93f0284bde6 29268 rust-libsystemd_0.5.0.orig.tar.gz 128f692a395a85b9f37c6c05c1a9f6bd 6740 rust-libsystemd_0.5.0-1.debian.tar.xz"
+    "5fbcd532a6a94310f595f405a3d73072 3071 rust-libsystemd_0.5.0-2.dsc df3b2290955539042022b93f0284bde6 29268 rust-libsystemd_0.5.0.orig.tar.gz 32d5c2eb328bd80558742efc3ed78117 7280 rust-libsystemd_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/lucab/libsystemd-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libsystemd]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.5.0-2"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-input-linux-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-input-linux-sys-0.9+default-dev \u003c!nocheck\u003e, librust-nix-0.29+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-input-linux-sys-0.9+default-dev \u003c!nocheck\u003e, librust-nix-0.30+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "64a7fea1b1647acb4f7d557bab63160cf2de3f12677acf09d45a405b90916237 2285 rust-input-linux_0.7.1-2.dsc b7e8c4821c88b95582ca69234a1d233f87e44182c42e121f740efb0bec1142e0 32067 rust-input-linux_0.7.1.orig.tar.gz 9df21a9520e8d34578c93564628ffcc33e35e25b13cbd44e13a43d8910a6fbec 4488 rust-input-linux_0.7.1-2.debian.tar.xz"
+    "18dd714f9ad369f8dafa275e7360a3b6ac002c415fd30dc315e8efdf7cb57b80 2356 rust-input-linux_0.7.1-3.dsc b7e8c4821c88b95582ca69234a1d233f87e44182c42e121f740efb0bec1142e0 32067 rust-input-linux_0.7.1.orig.tar.gz 2153d3f768c4049a711929f536f3ed0de5495805a41a21830937709d32d8f10f 5004 rust-input-linux_0.7.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-input-linux"
   ],
   "Files": [
-    "018653e00533b4f06f8a200b52c6dd54 2285 rust-input-linux_0.7.1-2.dsc 43e0669862b226a6eb93bf2dd5f1a85b 32067 rust-input-linux_0.7.1.orig.tar.gz d2fed144a33ba3eb985d25e0ce32e854 4488 rust-input-linux_0.7.1-2.debian.tar.xz"
+    "2ec40297987a82d1664b8217dda9a967 2356 rust-input-linux_0.7.1-3.dsc 43e0669862b226a6eb93bf2dd5f1a85b 32067 rust-input-linux_0.7.1.orig.tar.gz 168c194fc99ea54cba5d52c90782fd4b 5004 rust-input-linux_0.7.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/arcnmx/input-linux-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/input-linux]"
   ],
   "Version": [
-    "0.7.1-2"
+    "0.7.1-3"
   ]
 }

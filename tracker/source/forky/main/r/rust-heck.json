@@ -6,16 +6,19 @@
     "librust-heck-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "32e3f29af4dedcb24f6366ee6f19a70cc85be74cd007d4c85690460e446f7c0a 1620 rust-heck_0.5.0-1+really0.4.1-2.dsc 95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8 11567 rust-heck_0.5.0-1+really0.4.1.orig.tar.gz 76f1149cbd073cec574935271021f1dda8839435e3d0daa1a87103a10113f7b8 2956 rust-heck_0.5.0-1+really0.4.1-2.debian.tar.xz"
+    "0879e07cae2e46dd5bded6c6bfd5f5d3ce77b62c4085b6bd000aa6a95b4697bf 2398 rust-heck_0.5.0-1+really0.5.0-2.dsc 2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea 11517 rust-heck_0.5.0-1+really0.5.0.orig.tar.gz c8d0eaffdd73b3a635a0210dafba91ca05bf5c2e1f7edd28414a6f4f44713ce5 2988 rust-heck_0.5.0-1+really0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-heck"
   ],
   "Files": [
-    "af44d853fe8d09ee9482b7c31be6cbf7 1620 rust-heck_0.5.0-1+really0.4.1-2.dsc b92fa50f56a1e06a7f1bf665442d4a73 11567 rust-heck_0.5.0-1+really0.4.1.orig.tar.gz 081bdcc721f0dd91cad7c2bfdf5c41f8 2956 rust-heck_0.5.0-1+really0.4.1-2.debian.tar.xz"
+    "991231cf2c87a365495cae12ba9b1f58 2398 rust-heck_0.5.0-1+really0.5.0-2.dsc ce5935e8063a452913a61e5405b33cb9 11517 rust-heck_0.5.0-1+really0.5.0.orig.tar.gz c7c0a0e63a43e87ca2805823e4f56d7f 2988 rust-heck_0.5.0-1+really0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/heck]"
   ],
   "Version": [
-    "0.5.0-1+really0.4.1-2"
+    "0.5.0-1+really0.5.0-2"
   ]
 }
