@@ -6,19 +6,28 @@
     "lsb-release"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bats \u003c!nocheck\u003e, bats-assert \u003c!nocheck\u003e, podlators-perl \u003c!nodoc\u003e, shellcheck \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), bats \u003c!nocheck\u003e, bats-assert \u003c!nocheck\u003e, bsdutils \u003c!nocheck\u003e, podlators-perl \u003c!nodoc\u003e, shellcheck \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1fdb0c54b258534c104ec9f9b10ed8ca27e1b6d21f5622e29ace1390f7e0b335 2132 lsb-release-minimal_12.1-1.dsc 1dcf4ba318203db771bd0f2e47442f84e36241c8aa4633f1e8431a6d74a49071 5033 lsb-release-minimal_12.1.orig.tar.gz 5cec37d541a7401e0037767f28f2358775f207a7c32501917c5a2de6fdc884f6 3404 lsb-release-minimal_12.1-1.debian.tar.xz"
+    "c5e596485ba8a9582774c982724ad1d76a6e49abe4f5d71765264b6defa0d494 2451 lsb-release-minimal_12.1-2.dsc 1dcf4ba318203db771bd0f2e47442f84e36241c8aa4633f1e8431a6d74a49071 5033 lsb-release-minimal_12.1.orig.tar.gz c4be71bbe13be97d22d510c564d8b916b92a85e8a41667d5771a1e90227723ed 3564 lsb-release-minimal_12.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "d7719f37cff5d771730994baaf77b152dcd390da debian archive/debian/12.1-2 https://git.dgit.debian.org/lsb-release-minimal"
   ],
   "Directory": [
     "pool/main/l/lsb-release-minimal"
   ],
   "Files": [
-    "3132e24dd1722f6f5081e49eb3365fff 2132 lsb-release-minimal_12.1-1.dsc 07b98f8f769836cd528109b39e724123 5033 lsb-release-minimal_12.1.orig.tar.gz cf489f1953a758fd321030968761d809 3404 lsb-release-minimal_12.1-1.debian.tar.xz"
+    "ee22a8d3cb40c26420f638ed35f94c0c 2451 lsb-release-minimal_12.1-2.dsc 07b98f8f769836cd528109b39e724123 5033 lsb-release-minimal_12.1.orig.tar.gz 35b7610ee5c6b529d2997a3156c6225f 3564 lsb-release-minimal_12.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=a4b87244c22a55ce1ccf7e5a615bfa0973b407c7 fp=02988a8f528fa493e1b98e388f89871cdb75972e"
+  ],
+  "Git-Tag-Tagger": [
+    "Gioele Barabucci \u003cgioele@svario.it\u003e"
   ],
   "Homepage": [
     "https://gioele.io/lsb-release-minimal"
@@ -30,7 +39,7 @@
     "lsb-release-minimal"
   ],
   "Package-List": [
-    "lsb-release deb misc optional arch=all"
+    "lsb-release deb misc unknown arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,13 +48,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "bash, bats, bats-assert, busybox, dash, mksh, shellcheck"
+    "base-files, bash, bats, bats-assert, bsdutils, busybox, coreutils, dash, mksh, shellcheck, util-linux"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/gioele/lsb-release-minimal"
@@ -54,6 +63,6 @@
     "https://salsa.debian.org/gioele/lsb-release-minimal.git"
   ],
   "Version": [
-    "12.1-1"
+    "12.1-2"
   ]
 }

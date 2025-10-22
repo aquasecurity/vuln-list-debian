@@ -1,0 +1,62 @@
+{
+  "Architecture": [
+    "any"
+  ],
+  "Binary": [
+    "libcritnib-dev, libcritnib1"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), cmake"
+  ],
+  "Checksums-Sha256": [
+    "7148151c3046c995ae8434cce11e9071c19b89313fa7c76aa5d58cddd0c0f399 2742 critnib_1.1-2.1.dsc 1e5b65f815b0c23f74ce70cfcc2d8c9570cebc17a70e2a2e6e894c1b68297354 15210 critnib_1.1.orig.tar.gz d84abf303aaf65f4b54d18910cbe770eae0fc05bd7c8a44821e1dfa7bdc05826 3608 critnib_1.1-2.1.debian.tar.xz"
+  ],
+  "Description": [
+    "ordered map data structure with lock-free reads Critnib is a data structure that provides a very fast equal and less-than/greater-than searches; it is a mix between DJBerstein's critbit and radix trees.  While in bad cases it has worse memory use than binary trees, it works well on real-life data which tends to have a limited number of \"decision bits\": * fully random: divergence happens immediately * malloc addresses: clumps of distinct bits in the middle * sequences: only lowest bits are filled . This library ships only uintptr_t→uintptr_t mappings, optimized for reads from a very critical section but not so frequent writes.  Other variants also exist (such as fully lock-free writes, keys of arbitrary length), and can be added upon request."
+  ],
+  "Directory": [
+    "pool/main/c/critnib"
+  ],
+  "Files": [
+    "3b383105b59e1f7e6b1f3a66ae26d5f7 2742 critnib_1.1-2.1.dsc 1f7519c96e73b3df693541cf03fa17b5 15210 critnib_1.1.orig.tar.gz 6bf0d1c13ab1c82fed07f603cd400b71 3608 critnib_1.1-2.1.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kilobyte/critnib"
+  ],
+  "Maintainer": [
+    "Adam Borowski \u003ckilobyte@angband.pl\u003e"
+  ],
+  "Package": [
+    "critnib"
+  ],
+  "Package-List": [
+    "libcritnib-dev deb libdevel optional arch=any libcritnib1 deb libs optional arch=any"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "misc"
+  ],
+  "Standards-Version": [
+    "4.6.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "gcc, libc-dev, valgrind"
+  ],
+  "Vcs-Browser": [
+    "https://github.com/kilobyte/critnib/tree/debian"
+  ],
+  "Vcs-Git": [
+    "https://github.com/kilobyte/critnib -b debian"
+  ],
+  "Version": [
+    "1.1-2.1"
+  ]
+}

@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "rsyslog, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-elasticsearch, rsyslog-kafka, rsyslog-gssapi, rsyslog-gnutls, rsyslog-openssl, rsyslog-relp, rsyslog-czmq, rsyslog-hiredis, rsyslog-snmp, rsyslog-kubernetes, rsyslog-docker, rsyslog-clickhouse"
+    "rsyslog, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-elasticsearch, rsyslog-kafka, rsyslog-gssapi, rsyslog-gnutls, rsyslog-openssl, rsyslog-relp, rsyslog-czmq, rsyslog-hiredis, rsyslog-snmp, rsyslog-kubernetes, rsyslog-docker, rsyslog-clickhouse, rsyslog-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, autoconf-archive, zlib1g-dev, libzstd-dev (\u003e= 1.4.0), libhiredis-dev, libevent-dev, default-libmysqlclient-dev, libpq-dev, libmongoc-dev, libcurl4-openssl-dev, librdkafka-dev (\u003e= 0.9.1), libkrb5-dev, libgnutls28-dev, libssl-dev, librelp-dev (\u003e= 1.4.0), libestr-dev (\u003e= 0.1.9), liblognorm-dev (\u003e= 2.0.3), libfastjson-dev (\u003e= 0.99.8), libczmq-dev (\u003e= 3.0.2), libsnmp-dev, uuid-dev, libsystemd-dev (\u003e= 209) [linux-any], pkgconf, bison, flex, procps \u003c!nocheck\u003e, python3 \u003c!nocheck\u003e, libfaketime \u003c!nocheck\u003e, lsof [linux-any] \u003c!nocheck\u003e, logrotate \u003c!nocheck\u003e, iproute2 [linux-any] \u003c!nocheck\u003e, curl \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-exec, autoconf-archive, zlib1g-dev, libzstd-dev (\u003e= 1.4.0), libhiredis-dev, libevent-dev, default-libmysqlclient-dev, libpq-dev, libmongoc-dev, libcurl4-openssl-dev, librdkafka-dev (\u003e= 0.9.1), libkrb5-dev, libgnutls28-dev, libssl-dev, librelp-dev (\u003e= 1.4.0), libestr-dev (\u003e= 0.1.9), liblognorm-dev (\u003e= 2.0.3), libfastjson-dev (\u003e= 0.99.8), libczmq-dev (\u003e= 3.0.2), libsnmp-dev, uuid-dev, libsystemd-dev (\u003e= 209) [linux-any], pkgconf, bison, flex, procps \u003c!nocheck\u003e, python3 \u003c!nocheck\u003e, libfaketime \u003c!nocheck\u003e, lsof [linux-any] \u003c!nocheck\u003e, logrotate \u003c!nocheck\u003e, iproute2 [linux-any] \u003c!nocheck\u003e, curl \u003c!nocheck\u003e, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinxcontrib-mermaid \u003c!nodoc\u003e, git \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "cff2f2fb694ae9598e5156efd9028aa71b6d21cdec2137f80a0988fcd3b6794c 3420 rsyslog_8.2506.0-6.dsc 6d6fd0257c95e756765d4d585a833d54dd3a0e5eeb8308b862a81b368a74bb7b 3484506 rsyslog_8.2506.0.orig.tar.gz b9415b239749c8aaa334de818c75d1786c8512531ddf06cb7059931a4ee74d3f 34288 rsyslog_8.2506.0-6.debian.tar.xz"
+    "312a353cc50dd48b39f7e6560425e4a067b408d2d6b5d903dc83325a81010b62 3637 rsyslog_8.2510.0-1.dsc a70a9834186859539a6a4d1c7b3f68c23897e805829b764a45e92cb0cc95e66a 5748617 rsyslog_8.2510.0.orig.tar.gz bd624757edb1238c1608a05a3ce59aaf9fb32cba9f2b0b0dd5895e905040a10d 33552 rsyslog_8.2510.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rsyslog"
   ],
   "Files": [
-    "0354fb6632bebb3770bcc6e0a2743c00 3420 rsyslog_8.2506.0-6.dsc 945faf8cce6302f28534b7c131cc1e7e 3484506 rsyslog_8.2506.0.orig.tar.gz d145a37024359ffc64adc7eeb1cc3cbb 34288 rsyslog_8.2506.0-6.debian.tar.xz"
+    "5ba6f9253ee292b138451cab43963bc5 3637 rsyslog_8.2510.0-1.dsc 8dbf9f37344f987dd7472856a69bb782 5748617 rsyslog_8.2510.0.orig.tar.gz c5a696270a99c95e9fdb43c7b9986324 33552 rsyslog_8.2510.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rsyslog"
   ],
   "Package-List": [
-    "rsyslog deb admin optional arch=any rsyslog-clickhouse deb admin optional arch=any rsyslog-czmq deb admin optional arch=any rsyslog-docker deb admin optional arch=any rsyslog-elasticsearch deb admin optional arch=any rsyslog-gnutls deb admin optional arch=any rsyslog-gssapi deb admin optional arch=any rsyslog-hiredis deb admin optional arch=any rsyslog-kafka deb admin optional arch=any rsyslog-kubernetes deb admin optional arch=any rsyslog-mongodb deb admin optional arch=any rsyslog-mysql deb admin optional arch=any rsyslog-openssl deb admin optional arch=any rsyslog-pgsql deb admin optional arch=any rsyslog-relp deb admin optional arch=any rsyslog-snmp deb admin optional arch=any"
+    "rsyslog deb admin optional arch=any rsyslog-clickhouse deb admin optional arch=any rsyslog-czmq deb admin optional arch=any rsyslog-doc deb doc optional arch=all profile=!nodoc rsyslog-docker deb admin optional arch=any rsyslog-elasticsearch deb admin optional arch=any rsyslog-gnutls deb admin optional arch=any rsyslog-gssapi deb admin optional arch=any rsyslog-hiredis deb admin optional arch=any rsyslog-kafka deb admin optional arch=any rsyslog-kubernetes deb admin optional arch=any rsyslog-mongodb deb admin optional arch=any rsyslog-mysql deb admin optional arch=any rsyslog-openssl deb admin optional arch=any rsyslog-pgsql deb admin optional arch=any rsyslog-relp deb admin optional arch=any rsyslog-snmp deb admin optional arch=any"
   ],
   "Priority": [
     "source"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rsyslog.git"
   ],
   "Version": [
-    "8.2506.0-6"
+    "8.2510.0-1"
   ]
 }
