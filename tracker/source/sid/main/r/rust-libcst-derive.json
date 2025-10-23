@@ -6,16 +6,19 @@
     "librust-libcst-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0955e814115b4c06b64d6f11f15cd6bbbf884961a078032f95319f7ac8c8fd72 1978 rust-libcst-derive_0.1.0-1.dsc 520197c50ba477f258cd7005ec5ed3a7393693ae6bec664990c7c8d9306a7c0d 9250 rust-libcst-derive_0.1.0.orig.tar.gz 7b67aa8128b62f9ad2d762b145d15a74e6a85454a010fd11f41cc7861b913685 3932 rust-libcst-derive_0.1.0-1.debian.tar.xz"
+    "cb291b1e5685e355bfe944d2cbf8f78cc3dcf822585f9c55eea0146e547a2788 2359 rust-libcst-derive_1.8.5-1.dsc 3fcf5a725c4db703660124fe0edb98285f1605d0b87b7ee8684b699764a4f01a 11340 rust-libcst-derive_1.8.5.orig.tar.gz 541f825f7f673f58cadf531dfe07a6647af87558042856c0e8076093b0e670a1 2680 rust-libcst-derive_1.8.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libcst-derive"
   ],
   "Files": [
-    "6418d0ab93f1c933632a423c85475454 1978 rust-libcst-derive_0.1.0-1.dsc e7ef7abd8754c4c55edc9c6d581790f2 9250 rust-libcst-derive_0.1.0.orig.tar.gz 54d371ec8a605c16d711bef08b8213c6 3932 rust-libcst-derive_0.1.0-1.debian.tar.xz"
+    "22e74a241808483d7d6b800295e7863f 2359 rust-libcst-derive_1.8.5-1.dsc e966f661c2c1ddaaf7cc76749e3c8c21 11340 rust-libcst-derive_1.8.5.orig.tar.gz ae063ddf8267f96b258d64efcad3993b 2680 rust-libcst-derive_1.8.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libcst-derive]"
   ],
   "Version": [
-    "0.1.0-1"
+    "1.8.5-1"
   ]
 }
