@@ -6,16 +6,16 @@
     "rrdtool, rrdcached, librrd8t64, librrd-dev, librrds-perl, librrdp-perl, rrdtool-tcl, python3-rrdtool, ruby-rrd, lua-rrd, lua-rrd-dev"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), dc, debhelper-compat (= 13), dh-lua, dh-python, gem2deb, libdbi-dev, libpango1.0-dev, libpng-dev, libxml2-dev, perl (\u003e= 5.8.0), python3-all-dev, python3-setuptools, tcl-dev (\u003c= 9), tcl-dev (\u003e= 8)"
+    "dpkg-dev (\u003e= 1.22.5), dc, debhelper-compat (= 13), dh-lua, dh-python, gem2deb, libdbi-dev, libpango1.0-dev, libpng-dev, libxml2-dev, perl, python3-all-dev, python3-setuptools, tcl-dev"
   ],
   "Checksums-Sha256": [
-    "1a2e16da17d3344614b1cec8ad26e03941c1441c396c49ddca032515c018ff8e 2116 rrdtool_1.7.2-4.2.dsc b26afc012dc0f2ade149bcb771e8b7d9b86922f5f9e4096c1c12e6d80061b61a 1164048 rrdtool_1.7.2.orig.tar.gz 99f2ab053f660456837b9889483487ddeca6f3ea7f0910227134f77183828b80 30876 rrdtool_1.7.2-4.2.debian.tar.xz"
+    "f78875d5fc5ac6ee45610e5e10eccec9a202fcc70b61e2ef244081f11f137328 2739 rrdtool_1.9.0-1.dsc c2fd5c587fccdb9e747202f7614b44f46b049a13958305df8eb460d8981df07b 625872 rrdtool_1.9.0.orig.tar.xz e6725ddfc142ccef2707c4b2330d0ed7a208a358897632f53addb91dc8ca8e63 36488 rrdtool_1.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rrdtool"
   ],
   "Files": [
-    "b88f5581331dc689c89829fb0f93cd79 2116 rrdtool_1.7.2-4.2.dsc 546f0d790f739ac941dcd97151097f9c 1164048 rrdtool_1.7.2.orig.tar.gz eabb510cc0d9f2c3e92444efab9dfd9e 30876 rrdtool_1.7.2-4.2.debian.tar.xz"
+    "e946d79ba79996f8d6ba044693295856 2739 rrdtool_1.9.0-1.dsc 82b85d53f67cd0a7056aec3f3f89f9a8 625872 rrdtool_1.9.0.orig.tar.xz d398a2540b23752884c558f168d7113a 36488 rrdtool_1.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.4.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dc, procps, python3"
+  ],
   "Uploaders": [
     "Alexander Wirt \u003cformorer@debian.org\u003e, Jean-Michel Vourgère \u003cnirgal@debian.org\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rrdtool-team/rrdtool.git"
   ],
   "Version": [
-    "1.7.2-4.2"
+    "1.9.0-1"
   ]
 }
