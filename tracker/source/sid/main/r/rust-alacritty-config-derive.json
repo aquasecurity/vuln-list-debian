@@ -6,16 +6,19 @@
     "librust-alacritty-config-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.24-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-syn-2+derive-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e, librust-syn-2+parsing-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e, librust-syn-2+printing-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.24-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-syn-2+derive-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e, librust-syn-2+parsing-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e, librust-syn-2+printing-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev (\u003e= 2.0.16-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4b0cdaf1dce7721a0878d9b76a020d68ddfb5e7604e273fb13b9a2d0b8c83566 2954 rust-alacritty-config-derive_0.2.4-2.dsc 78a41595637b357839fc66bf5c7741a7b0041a772e568cf9a02902814d806ea0 11679 rust-alacritty-config-derive_0.2.4.orig.tar.gz 9042f084fbef3f5b97dfabfd92baa74dd3accc75dc1eee9ecd9cecb3ffa75670 3028 rust-alacritty-config-derive_0.2.4-2.debian.tar.xz"
+    "a0f0903bbcc42170ea5af689f1f8537ef193f5a4b62b2e80cf23083b4227b35c 2969 rust-alacritty-config-derive_0.2.5-1.dsc 8299bd172dd720176a3f3df44127b7b3532bb8db92a2cec48fc25a383f1803f4 13163 rust-alacritty-config-derive_0.2.5.orig.tar.gz 6fd209db3cf816432ed1ada87b91219b894d0fc1dc0e23f8081cad95d3d24e56 3172 rust-alacritty-config-derive_0.2.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-alacritty-config-derive"
   ],
   "Files": [
-    "d5a80c9b4749e96c247c3ca658720bf7 2954 rust-alacritty-config-derive_0.2.4-2.dsc d8d0a39a8a9629531744bd377ae3965e 11679 rust-alacritty-config-derive_0.2.4.orig.tar.gz af52727d53eaab497d235921f20c2a76 3028 rust-alacritty-config-derive_0.2.4-2.debian.tar.xz"
+    "0d711cd7214ff235c07c956acb6976b4 2969 rust-alacritty-config-derive_0.2.5-1.dsc 905ab244781a3c5a9248537391bc2e6b 13163 rust-alacritty-config-derive_0.2.5.orig.tar.gz 37d32f8e70ba508c3ee6213e48cf8ab4 3172 rust-alacritty-config-derive_0.2.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-alacritty-config-0.2+default-dev, librust-log-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml-0.8+default-dev, rustc"
+    "dh-cargo, librust-alacritty-config-0.2+default-dev, librust-log-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-toml+default-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/alacritty-config-derive]"
   ],
   "Version": [
-    "0.2.4-2"
+    "0.2.5-1"
   ]
 }
