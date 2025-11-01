@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "postgresql-17-timescaledb"
+    "postgresql-18-timescaledb"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit, architecture-is-little-endian, cmake, debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit, architecture-is-little-endian, cmake, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "8225baa91b9685d0e2e1b2510f8dd6e52034e5fdb582efca1b2414586e045387 2271 timescaledb_2.22.0+dfsg-1.dsc 09fc00a1a869280df99187ba6dffe2f45056ef933fbe4005bc8c2d6eaf98e0a5 1360432 timescaledb_2.22.0+dfsg.orig.tar.xz 2e2d0abc0c1b26eba672c6a55d35d870dda3753f4dbf8dbc9bb2693f86bb2c0e 4292 timescaledb_2.22.0+dfsg-1.debian.tar.xz"
+    "dbfb241bcf0f51b0915f021f1a4140a62319a4dca684e0fc7c114395c4aa4a3a 2288 timescaledb_2.23.0+dfsg-1.dsc e022dd08a039c217cd644174e877a197a23b3bc25fadb981d09efb6b7e09a58c 1356048 timescaledb_2.23.0+dfsg.orig.tar.xz 8689fe45ef4c7c03c17980e048df3b4d97a103078b9faa34dd0160aa558e6a4d 4384 timescaledb_2.23.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/timescaledb"
   ],
   "Files": [
-    "53eebd929c7be7a818b190f4ee03758b 2271 timescaledb_2.22.0+dfsg-1.dsc fa837a2ae7b64d0cbbffc14204e22e60 1360432 timescaledb_2.22.0+dfsg.orig.tar.xz 5c3acd34260c4107ec3183eb8e09bb7e 4292 timescaledb_2.22.0+dfsg-1.debian.tar.xz"
+    "87d669d2c6cd404dbb5e5d4e9f46494d 2288 timescaledb_2.23.0+dfsg-1.dsc 67e0676cbdbc8eee4ac7b9eae3a01db3 1356048 timescaledb_2.23.0+dfsg.orig.tar.xz 9b923a33a136d119978441096cd18346 4384 timescaledb_2.23.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "timescaledb"
   ],
   "Package-List": [
-    "postgresql-17-timescaledb deb database optional arch=any"
+    "postgresql-18-timescaledb deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, cmake, libipc-run-perl, make, postgresql-server-dev-all, tzdata-legacy"
+    "build-essential, cmake, libipc-run-perl, postgresql-common-dev, postgresql-server-dev-all, tzdata-legacy"
   ],
   "Uploaders": [
     "Christoph Berg \u003cmyon@debian.org\u003e,"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/timescaledb.git"
   ],
   "Version": [
-    "2.22.0+dfsg-1"
+    "2.23.0+dfsg-1"
   ]
 }

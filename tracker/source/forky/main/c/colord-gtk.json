@@ -6,16 +6,19 @@
     "libcolord-gtk1t64, libcolord-gtk4-1t64, libcolord-gtk-dev, libcolord-gtk4-dev, libcolord-gtk-headers, libcolord-gtk-doc, gir1.2-colordgtk-1.0, colord-gtk-utils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, dpkg-dev (\u003e= 1.22.5), docbook-xsl-ns, gtk-doc-tools, libglib2.0-dev, libgtk-3-dev, libgtk-4-dev, libcolord-dev, meson, liblcms2-dev, valac, libgirepository1.0-dev, xsltproc"
+    "debhelper-compat (= 13), dh-sequence-gir, dpkg-dev (\u003e= 1.22.5), docbook-xsl-ns, gir1.2-colord-1.0-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gir1.2-gtk-3.0-dev, libglib2.0-dev, libgtk-3-dev, libgtk-4-dev, libcolord-dev, meson, liblcms2-dev, valac, xsltproc"
+  ],
+  "Build-Depends-Indep": [
+    "gtk-doc-tools \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "7058fa021209ef1cd5f3d0183586319789da42141229981bae092450487a80ab 2848 colord-gtk_0.3.1-1.dsc c176b889b75630a17f4e3d7ef24c09a3e12368e633496087459c8b53ac3a122d 22132 colord-gtk_0.3.1.orig.tar.xz cca4356e9f4bf1941d19d4ae72881ce144a547944f2263fe6cdd9eab04e24257 488 colord-gtk_0.3.1.orig.tar.xz.asc 606c645002e3be281b95b7c4193ffae64ba5cc2dcf5eb12262bc6c3fe2002481 15616 colord-gtk_0.3.1-1.debian.tar.xz"
+    "abac91a9270611ba238e19048db3aa7b66f1a0eef5d3a2966fa1c5a72a4aa095 3075 colord-gtk_0.3.1-2.dsc c176b889b75630a17f4e3d7ef24c09a3e12368e633496087459c8b53ac3a122d 22132 colord-gtk_0.3.1.orig.tar.xz cca4356e9f4bf1941d19d4ae72881ce144a547944f2263fe6cdd9eab04e24257 488 colord-gtk_0.3.1.orig.tar.xz.asc cb3a35c0074c1ebff8e131519d6f3b3d2904e5fae51e62f94f77c89c9d9c4e9e 15604 colord-gtk_0.3.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/colord-gtk"
   ],
   "Files": [
-    "ef52def170e5f3e5084bc21bb9a6c032 2848 colord-gtk_0.3.1-1.dsc d436740c06e42af421384f16b2a9a0a7 22132 colord-gtk_0.3.1.orig.tar.xz 12094a9384bc713e06446205f01a08db 488 colord-gtk_0.3.1.orig.tar.xz.asc 54e33bd25ea74adbe04fc74f276a5397 15616 colord-gtk_0.3.1-1.debian.tar.xz"
+    "8e05f952047cca11708ac279d3d2dafa 3075 colord-gtk_0.3.1-2.dsc d436740c06e42af421384f16b2a9a0a7 22132 colord-gtk_0.3.1.orig.tar.xz 12094a9384bc713e06446205f01a08db 488 colord-gtk_0.3.1.orig.tar.xz.asc a40f7f4b307407dfa30a8c1e48ef2299 15604 colord-gtk_0.3.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +27,7 @@
     "https://www.freedesktop.org/software/colord/"
   ],
   "Maintainer": [
-    "Christopher James Halse Rogers \u003craof@ubuntu.com\u003e"
+    "Debian freedesktop.org maintainers \u003cpkg-freedesktop-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "colord-gtk"
@@ -39,7 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
+  ],
+  "Uploaders": [
+    "Christopher James Halse Rogers \u003craof@ubuntu.com\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/colord-gtk"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/colord-gtk.git"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.3.1-2"
   ]
 }
