@@ -6,16 +6,19 @@
     "librust-predicates-tree-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-predicates-core-1+default-dev \u003c!nocheck\u003e, librust-termtree-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-predicates-core-1+default-dev \u003c!nocheck\u003e, librust-termtree-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fada4765920f3ccb66a982823347a717f9a5f9d3a52c57b4f2347a0cdd3d5a48 1833 rust-predicates-tree_1.0.7-1.dsc 54ff541861505aabf6ea722d2131ee980b8276e10a1297b94e896dd8b621850d 8145 rust-predicates-tree_1.0.7.orig.tar.gz c12d1b7dc41318c61b84ebc94a418e97df8e60efd94b678f7f4474a0ccee49b9 2708 rust-predicates-tree_1.0.7-1.debian.tar.xz"
+    "f919dea2714f21cf0ba05d570f012349cba3c00a9e4717294d683739549bb24b 1878 rust-predicates-tree_1.0.12-1.dsc 72dd2d6d381dfb73a193c7fca536518d7caee39fc8503f74e7dc0be0531b425c 8392 rust-predicates-tree_1.0.12.orig.tar.gz 8e2365d79f1bbee5f191145327cabe21328f52c551aa71aa17e5ce357acfde67 2724 rust-predicates-tree_1.0.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-predicates-tree"
   ],
   "Files": [
-    "44ba1c74e2edf4e18319f01a55c91799 1833 rust-predicates-tree_1.0.7-1.dsc 98831da8291f37d49c8d2d7807aaa0f7 8145 rust-predicates-tree_1.0.7.orig.tar.gz bda5965b330677bbaa73c2ce364163d1 2708 rust-predicates-tree_1.0.7-1.debian.tar.xz"
+    "2b9bbde255fe8ef72434415829bdfe03 1878 rust-predicates-tree_1.0.12-1.dsc 2e570a7a6c02a1339e603f7722ae7d03 8392 rust-predicates-tree_1.0.12.orig.tar.gz 1c575b847d6ce2e85cd594ffab58ad6d 2724 rust-predicates-tree_1.0.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-predicates-2+color-auto-dev, librust-predicates-2+default-dev"
+    "dh-cargo, librust-predicates-3+color-dev, librust-predicates-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/predicates-tree]"
   ],
   "Version": [
-    "1.0.7-1"
+    "1.0.12-1"
   ]
 }
