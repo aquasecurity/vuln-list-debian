@@ -6,16 +6,19 @@
     "librust-protobuf-codegen-dev, protobuf-codegen"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-protobuf-2.27.1+default-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.53-~~), librust-once-cell-1+default-dev (\u003e= 1.10.0-~~), librust-protobuf-3.7+default-dev (\u003c\u003c 3.7.3-~~), librust-protobuf-3.7+default-dev (\u003e= 3.7.2-~~), librust-protobuf-parse-3.7+default-dev (\u003c\u003c 3.7.3-~~), librust-protobuf-parse-3.7+default-dev (\u003e= 3.7.2-~~), librust-regex-1+default-dev (\u003e= 1.5.5-~~), librust-tempfile-3+default-dev, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~)"
   ],
   "Checksums-Sha256": [
-    "380d42fa3b470b20ead6876b30146534e24e04bd857f30ff2f36a56aa6887481 2330 rust-protobuf-codegen_2.27.1-1.dsc aec1632b7c8f2e620343439a7dfd1f3c47b18906c4be58982079911482b5d707 40830 rust-protobuf-codegen_2.27.1.orig.tar.gz b213ee5269bcd91b639e3c68039b2c043a931d9a965d008a34ff601cead7f964 2856 rust-protobuf-codegen_2.27.1-1.debian.tar.xz"
+    "761c8e84b8afb4959993f68eb0775b496231fd4e0a5c5a2361cdf68e08fae8fb 2768 rust-protobuf-codegen_3.7.2-1.dsc 5d3976825c0014bbd2f3b34f0001876604fe87e0c86cd8fa54251530f1544ace 58021 rust-protobuf-codegen_3.7.2.orig.tar.gz 92e92c1af48ddff6012c871f78e792374731ad94748c65cd62fb621c9abb452a 2976 rust-protobuf-codegen_3.7.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-protobuf-codegen"
   ],
   "Files": [
-    "bb554b0f0e18331df5cff7219725edad 2330 rust-protobuf-codegen_2.27.1-1.dsc 1810d970f84683a419d7b9aa6740f8a6 40830 rust-protobuf-codegen_2.27.1.orig.tar.gz d2ee2fdc3bf4d944a4c69b322d09380d 2856 rust-protobuf-codegen_2.27.1-1.debian.tar.xz"
+    "0b62b11b917725c8b5aaef332e34a832 2768 rust-protobuf-codegen_3.7.2-1.dsc 78e4fa9ba1efbc86c72245c6fed01224 58021 rust-protobuf-codegen_3.7.2.orig.tar.gz b15820128ca0ac9866f2765644cde7a9 2976 rust-protobuf-codegen_3.7.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/protobuf-codegen]"
   ],
   "Version": [
-    "2.27.1-1"
+    "3.7.2-1"
   ]
 }
