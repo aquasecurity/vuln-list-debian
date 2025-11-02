@@ -6,19 +6,25 @@
     "librust-tiff-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.20-~~) \u003c!nocheck\u003e, librust-jpeg-decoder-0.3-dev \u003c!nocheck\u003e, librust-weezl-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fax-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-flate2-1+default-dev (\u003e= 1.0.20-~~) \u003c!nocheck\u003e, librust-half-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-quick-error-2+default-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-weezl-0.1+default-dev (\u003e= 0.1.8-~~) \u003c!nocheck\u003e, librust-zune-jpeg-0.5+default-dev (\u003e= 0.5.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d263a0ce67b37fee873c3cebcef10a1f686a08608dc4036958929d70e270e35c 2229 rust-tiff_0.9.0-1.dsc 6d172b0f4d3fba17ba89811858b9d3d97f928aece846475bbda076ca46736211 1418215 rust-tiff_0.9.0.orig.tar.gz 0773246573b93e8fce725e6ff348f5d164f341c8c8a3bdeb1b1f48ed25b6e739 4412 rust-tiff_0.9.0-1.debian.tar.xz"
+    "3dd6797e4a14765659ca85c56b29b55d8ed35be0717be52317ac4100de0a552d 2534 rust-tiff_0.10.3-1.dsc af9605de7fee8d9551863fd692cce7637f548dbd9db9180fcc07ccc6d26c336f 1444592 rust-tiff_0.10.3.orig.tar.gz 554869e6ec71363fa51c972edba75db309e3a6a04d1d1115a8b6be0c01cf0bce 5948 rust-tiff_0.10.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tiff"
   ],
   "Files": [
-    "50e0637832e30d947e6f8d96dbf8bab7 2229 rust-tiff_0.9.0-1.dsc 4a9c9f7d6e764b4abefee62fe610edab 1418215 rust-tiff_0.9.0.orig.tar.gz 3bb9696b2a8c06759d1aa3558cdd51e1 4412 rust-tiff_0.9.0-1.debian.tar.xz"
+    "67f8f78311779fac551e2f351f2541de 2534 rust-tiff_0.10.3-1.dsc e1c15499b1b0a91934884f81117ff3e7 1444592 rust-tiff_0.10.3.orig.tar.gz d2bd1dfdabdd1bc6f4be0f3f5b427e93 5948 rust-tiff_0.10.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/image-rs/image-tiff"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-crc32fast-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tiff]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.10.3-1"
   ]
 }
