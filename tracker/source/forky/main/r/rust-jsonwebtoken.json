@@ -6,16 +6,19 @@
     "librust-jsonwebtoken-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-pem-3+default-dev \u003c!nocheck\u003e, librust-ring-0.17+default-dev (\u003e= 0.17.3-~~) \u003c!nocheck\u003e, librust-ring-0.17+std-dev (\u003e= 0.17.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-simple-asn1-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.73.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-js-sys-0.3+default-dev \u003c!nocheck\u003e, librust-pem-3+default-dev \u003c!nocheck\u003e, librust-ring-0.17+default-dev (\u003e= 0.17.4-~~) \u003c!nocheck\u003e, librust-ring-0.17+std-dev (\u003e= 0.17.4-~~) \u003c!nocheck\u003e, librust-ring-0.17+wasm32-unknown-unknown-js-dev (\u003e= 0.17.4-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-simple-asn1-0.6+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5da0412e73f11d43f6f30f648cf2e55060f0f08fbdcb5e4b53ab5520c7ef9498 2737 rust-jsonwebtoken_8.3.0-5.dsc 6971da4d9c3aa03c3d8f3ff0f4155b534aad021292003895a469716b2a230378 45747 rust-jsonwebtoken_8.3.0.orig.tar.gz 44915c7f91f27314606621c99a564debf615bef4ff4da8b500af4ce59028ffb8 4592 rust-jsonwebtoken_8.3.0-5.debian.tar.xz"
+    "8e768c4f3036b2b34d07c63203383de7a22b11502dd86e1823fa472f7dbc2f95 2838 rust-jsonwebtoken_9.3.1-1.dsc 5a87cc7a48537badeae96744432de36f4be2b4a34a05a5ef32e9dd8a1c169dde 49398 rust-jsonwebtoken_9.3.1.orig.tar.gz 59000eac65bce25be05a900da430511a12d9abf8d650edc1c4265d6200bb08a6 3304 rust-jsonwebtoken_9.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jsonwebtoken"
   ],
   "Files": [
-    "9ef65839743a37c587c4f9d78318d3c6 2737 rust-jsonwebtoken_8.3.0-5.dsc fad2a133d4d836af76418e72e077804b 45747 rust-jsonwebtoken_8.3.0.orig.tar.gz 3513defd5314efc5dccde90fb64a15ff 4592 rust-jsonwebtoken_8.3.0-5.debian.tar.xz"
+    "1875a7a948f23c5552d3d71f475ce426 2838 rust-jsonwebtoken_9.3.1-1.dsc 3e0090108e293a2f798aea22f98c9cb5 49398 rust-jsonwebtoken_9.3.1.orig.tar.gz 8d97bb687e9cc5ccc622863d5f74216a 3304 rust-jsonwebtoken_9.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-criterion-0.4+default-dev, librust-time-0.3+default-dev, rustc"
+    "dh-cargo, librust-time-0.3+default-dev, librust-time-0.3+wasm-bindgen-dev, librust-wasm-bindgen-test-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Jan Niehusmann \u003cjan@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jsonwebtoken]"
   ],
   "Version": [
-    "8.3.0-5"
+    "9.3.1-1"
   ]
 }

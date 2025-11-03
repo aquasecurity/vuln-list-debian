@@ -6,16 +6,19 @@
     "librust-tiny-bench-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "332514976b7199ce674adb8475cca5d38f29b062756faca0e9a57bb47006c04c 2200 rust-tiny-bench_0.3.0-1.dsc cfda840d8557c12ecdde25485f7dc85152339a61b759f98d4f682e7cb5d75948 17290 rust-tiny-bench_0.3.0.orig.tar.gz 89a691d24ce4037150f5e88a7f52cd0a7762d1c9236e0e6862c7e9a04b9aa54d 3088 rust-tiny-bench_0.3.0-1.debian.tar.xz"
+    "1e334949509e50d93998da4bd12ba3bc7cb83fcc501439fca3dc1928ca1b4dda 1628 rust-tiny-bench_0.4.0-1.dsc 72b0a1b520125a81e27ea0dab5c8b070fdc24d93c62f1ae12da12aa60a6f1d3c 17484 rust-tiny-bench_0.4.0.orig.tar.gz 175a374b87b24de981b6f673c924dd7fd4bd174ad2cdf9878cdfa25bc8f39e76 2696 rust-tiny-bench_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tiny-bench"
   ],
   "Files": [
-    "ed695859004e91d112d57c82e680e431 2200 rust-tiny-bench_0.3.0-1.dsc 82e7c39b52b0e447c3b6fe64c5fc21d5 17290 rust-tiny-bench_0.3.0.orig.tar.gz d81d1da5a45c6b6c090c58443b4e8388 3088 rust-tiny-bench_0.3.0-1.debian.tar.xz"
+    "b7c9a805c89bcb5e8111070f251cfaa9 1628 rust-tiny-bench_0.4.0-1.dsc 25951807d46a9afcafa3ad23b453b12b 17484 rust-tiny-bench_0.4.0.orig.tar.gz ca2574bf090f912d8feef69b5f6ce0bc 2696 rust-tiny-bench_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tiny-bench]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.4.0-1"
   ]
 }
