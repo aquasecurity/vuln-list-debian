@@ -6,16 +6,19 @@
     "librust-brotli-dev, brotli-rs"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native (\u003e= 1.56.0), libstd-rust-dev, librust-alloc-no-stdlib-2+default-dev, librust-alloc-stdlib-0.2+default-dev, librust-brotli-decompressor-4.0+std-dev, librust-brotli-decompressor-4.0-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.59.0), libstd-rust-dev, librust-alloc-no-stdlib-2+default-dev, librust-alloc-stdlib-0.2+default-dev, librust-brotli-decompressor-5+std-dev (\u003c\u003c 5.1-~~), librust-brotli-decompressor-5-dev (\u003c\u003c 5.1-~~)"
   ],
   "Checksums-Sha256": [
-    "9542ed5f3e394e2ebd66fc6ea042d05e1263ce04fcfc426f712a9340916e6f3e 2386 rust-brotli_6.0.0-1.dsc 74f7971dbd9326d58187408ab83117d8ac1bb9c17b085fdacd1cf2f598719b6b 1359183 rust-brotli_6.0.0.orig.tar.gz f0dedcdea82f0774917dba7b0bed250899912d28970f04b82dd004440dcb99cd 6212 rust-brotli_6.0.0-1.debian.tar.xz"
+    "842947dfd7b1ae60c4190e0c418fc32ecc240eaad41e99080cc07bbfc6df348b 2420 rust-brotli_8.0.2-2.dsc 4bd8b9603c7aa97359dbd97ecf258968c95f3adddd6db2f7e7a5bef101c84560 741739 rust-brotli_8.0.2.orig.tar.gz 04ef3a64659ccbabf7d80ce3a3445e68d419a85df56d79332ee42eecef2dc6b3 9168 rust-brotli_8.0.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-brotli"
   ],
   "Files": [
-    "73bd1e09db45f3b6523fbcbb1adc80ef 2386 rust-brotli_6.0.0-1.dsc d184bd0bb5fb5461152086da84fa45a8 1359183 rust-brotli_6.0.0.orig.tar.gz 4372298d639fbd5ab519ac1354a375e7 6212 rust-brotli_6.0.0-1.debian.tar.xz"
+    "9b5c40936f004430e69d98e77147cb49 2420 rust-brotli_8.0.2-2.dsc 5820a6683af6afc727711806211dd8b2 741739 rust-brotli_8.0.2.orig.tar.gz 598743d826378e3d369d998d427a6f44 9168 rust-brotli_8.0.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/brotli]"
   ],
   "Version": [
-    "6.0.0-1"
+    "8.0.2-2"
   ]
 }

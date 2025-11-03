@@ -6,19 +6,25 @@
     "librust-async-compression-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e1a7214af078afd37aa203ed20d5cee6f57bd80cf4c480ad88df62ed139e3afe 2157 rust-async-compression_0.4.13-1.dsc 7e614738943d3f68c628ae3dbce7c3daffb196665f82f8c8ea6b65de73c79429 110211 rust-async-compression_0.4.13.orig.tar.gz 1970f84ce3ef005ce64c06fe5d4b1af47efb071cd9df1eaebdb94610eebe4dee 4208 rust-async-compression_0.4.13-1.debian.tar.xz"
+    "75f4c01495648e36cac197068f73b184dbc1ac7305f88cb3908dbbe7bfed9ea6 2864 rust-async-compression_0.4.27-1.dsc ddb939d66e4ae03cee6091612804ba446b12878410cfa17f785f4dd67d4014e8 118487 rust-async-compression_0.4.27.orig.tar.gz 808b1bc9799b04fbfbcf6c9347884fe87c820c6892cf014c95ceed24a401cd30 4532 rust-async-compression_0.4.27-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-compression"
   ],
   "Files": [
-    "9ff9dbcdb713cbfc16134b050cfc105b 2157 rust-async-compression_0.4.13-1.dsc 8d39b59394af5b60457cb912fdc97693 110211 rust-async-compression_0.4.13.orig.tar.gz 2876ad95c4492151fe5e8779ca05c667 4208 rust-async-compression_0.4.13-1.debian.tar.xz"
+    "3e535d7ecd80ba6a4f544c60e667bb20 2864 rust-async-compression_0.4.27-1.dsc f26ebe74cef2a6bbc80298240df5d153 118487 rust-async-compression_0.4.27.orig.tar.gz 7a89ed55b921466cf5b2aee9a8cc9f6e 4532 rust-async-compression_0.4.27-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Nullus157/async-compression"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bytes-1+default-dev, librust-futures-0.3+default-dev, librust-futures-test-0.3+default-dev, librust-ntest-0.9+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-util-0.7+io-dev, rustc"
+    "dh-cargo, librust-bytes-1+default-dev, librust-futures-0.3+default-dev, librust-futures-test-0.3+default-dev, librust-ntest-0.9+default-dev, librust-proptest-1+default-dev, librust-proptest-derive-0.4+default-dev, librust-rand+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-util-0.7+io-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-compression]"
   ],
   "Version": [
-    "0.4.13-1"
+    "0.4.27-1"
   ]
 }

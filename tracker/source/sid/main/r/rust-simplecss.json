@@ -6,19 +6,25 @@
     "librust-simplecss-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+std-dev (\u003e= 0.4.22-~~) \u003c!nocheck\u003e, librust-log-0.4-dev (\u003e= 0.4.22-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "69d224b2c2e82185cc563c36a05aff44b795dfe3d95db823e0b8575f1384cab4 1899 rust-simplecss_0.2.0-1.dsc 596554e63596d556a0dbd681416342ca61c75f1a45203201e7e77d3fa2fa9014 19076 rust-simplecss_0.2.0.orig.tar.gz 9762667a510a696b9086b97ff1386d6ba40aed935b852e26bbfd916766d664f2 2548 rust-simplecss_0.2.0-1.debian.tar.xz"
+    "6c4c8fe50c0c2fc8bf344eb82a065939f8aa3e14e856773fc7b114efead9ff13 2412 rust-simplecss_0.2.2-1.dsc 7a9c6883ca9c3c7c90e888de77b7a5c849c779d25d74a1269b0218b14e8b136c 22136 rust-simplecss_0.2.2.orig.tar.gz 1a680fe5685ed5dafe0d8fe6b68a2e7ab3ea2b3905dafa7894996416bb9213ac 3152 rust-simplecss_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-simplecss"
   ],
   "Files": [
-    "29e3fbffa5c04ea22b31c5f8e480350e 1899 rust-simplecss_0.2.0-1.dsc 09428942015d7b2dbbe8519c51ff176e 19076 rust-simplecss_0.2.0.orig.tar.gz fc7d5ac2603d68637d221a67ab88e7ac 2548 rust-simplecss_0.2.0-1.debian.tar.xz"
+    "2bda9b5df03480da9039e79baa9b86c5 2412 rust-simplecss_0.2.2-1.dsc a4cbfa67b2bb1d5504ead8e10ac2abde 22136 rust-simplecss_0.2.2.orig.tar.gz 14cc4031f480b8296a0685dbca8db131 3152 rust-simplecss_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/linebender/simplecss"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.6-dev, librust-roxmltree-0.7+default-dev"
+    "dh-cargo, librust-env-logger-0.11-dev, librust-roxmltree-0.20+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/simplecss]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.2-1"
   ]
 }
