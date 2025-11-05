@@ -3,19 +3,19 @@
     "arm64 amd64"
   ],
   "Binary": [
-    "libxrt2, python3-xrt, libxrt-dev, libxrt-utils"
+    "libxrt2, libxrt-npu2, libxrt-alveo2, python3-xrt, libxrt-dev, libxrt-utils, libxrt-utils-npu, libxrt-utils-alveo, xrt-xocl-dkms"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), bash-completion, doxygen [amd64], git, help2man, libboost-filesystem-dev, libboost-program-options-dev, libboost-system-dev, libdrm-dev, libncurses-dev, libprotobuf-dev, libssl-dev, libudev-dev, libyaml-dev, lsb-release [amd64], ocl-icd-opencl-dev, ocl-icd-dev, pkgconf, protobuf-compiler, pybind11-dev, rapidjson-dev, systemtap-sdt-dev, uuid-dev"
+    "cmake, debhelper-compat (= 13), appstream, bash-completion, dh-dkms, dh-python, doxygen [amd64], git, libboost-filesystem-dev, libboost-program-options-dev, libboost-system-dev, libcurl4-openssl-dev, libdrm-dev, libncurses-dev, libprotobuf-dev, libssl-dev, libudev-dev, libyaml-dev, lsb-release [amd64], ocl-icd-opencl-dev, ocl-icd-dev, pkgconf, protobuf-compiler, pybind11-dev, python3-dev, rapidjson-dev, systemtap-sdt-dev, uuid-dev"
   ],
   "Checksums-Sha256": [
-    "d0537a4a904309f1bd58f31227abd26a25d1361b42e097219f9f49195b86d47f 2652 xrt_202520.2.20.172-1.dsc 6406229357b36abb8e6255b8f7173b1481670e921dcc10df5ed518301a57dc49 43129733 xrt_202520.2.20.172.orig.tar.gz 70e0d353dfb657264959283d591cda731a4f3b28d347a24a4f9891fa4fb081dd 8116 xrt_202520.2.20.172-1.debian.tar.xz"
+    "18bf3174c62b1f7a4fe6cc9b2003379792d70455dc81eb91d824c088de6306cc 3037 xrt_202610.2.21.21-1.dsc 7fb091ca5635015b2db30b9222fa8c686290d4ea7ffb70708ec5490491f39d6a 27238064 xrt_202610.2.21.21.orig.tar.xz 62ff7ef5a05369c18bc8496698aa56b8b81d6d77a54b94ad7187c6927660f6b8 13480 xrt_202610.2.21.21-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/x/xrt"
   ],
   "Files": [
-    "48251b59b0245226a2767af12981e4b2 2652 xrt_202520.2.20.172-1.dsc 98c6697661e27f7cb4a4fe486008e82e 43129733 xrt_202520.2.20.172.orig.tar.gz d4aa896e1396972d8e0bfebc51caa263 8116 xrt_202520.2.20.172-1.debian.tar.xz"
+    "c66b75208afa2b1551dec3dd6a6d3f19 3037 xrt_202610.2.21.21-1.dsc 35c7ea030e59b9180b4c5b49e607c985 27238064 xrt_202610.2.21.21.orig.tar.xz 7d45b640cd7b53ac378e31ef0ca51d7b 13480 xrt_202610.2.21.21-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "xrt"
   ],
   "Package-List": [
-    "libxrt-dev deb libdevel optional arch=arm64,amd64 libxrt-utils deb utils optional arch=arm64,amd64 libxrt2 deb libs optional arch=arm64,amd64 python3-xrt deb python optional arch=arm64,amd64"
+    "libxrt-alveo2 deb libs optional arch=arm64,amd64 libxrt-dev deb libdevel optional arch=arm64,amd64 libxrt-npu2 deb libs optional arch=arm64,amd64 libxrt-utils deb utils optional arch=arm64,amd64 libxrt-utils-alveo deb utils optional arch=arm64,amd64 libxrt-utils-npu deb utils optional arch=arm64,amd64 libxrt2 deb libs optional arch=arm64,amd64 python3-xrt deb python optional arch=arm64,amd64 xrt-xocl-dkms deb libs optional arch=amd64"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/xilinx-packages-team/xrt.git"
   ],
   "Version": [
-    "202520.2.20.172-1"
+    "202610.2.21.21-1"
   ]
 }

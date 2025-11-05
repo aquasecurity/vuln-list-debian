@@ -6,19 +6,25 @@
     "librust-version-ranges-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.13.2-~~) \u003c!nocheck\u003e, librust-smallvec-1+union-dev (\u003e= 1.13.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.13.2-~~) \u003c!nocheck\u003e, librust-smallvec-1+union-dev (\u003e= 1.13.2-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "de201fe8725cecb0139c800eb76dffb3c5bfd081a21f9f25ec17a9a31ef35763 2027 rust-version-ranges_0.1.0-1.dsc 284649eba55872c1253f3f6ec15f22303a784e60684babd01d01e4c6ebb85b91 11180 rust-version-ranges_0.1.0.orig.tar.gz 89f6e6b5f795a401fb8a9f601188c4756c4efc22618e1d71a916fe6201152447 2064 rust-version-ranges_0.1.0-1.debian.tar.xz"
+    "3b170cdd78891fadd5054e43fe1220d7f2db03c2d1188f94c3ba4035af899c09 2112 rust-version-ranges_0.1.1-1.dsc f8d079415ceb2be83fc355adbadafe401307d5c309c7e6ade6638e6f9f42f42d 13740 rust-version-ranges_0.1.1.orig.tar.gz 6cd43a2164fc74b4139bda90ecef9836ddb8624322b8062c94e734feadd32e4d 2244 rust-version-ranges_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-version-ranges"
   ],
   "Files": [
-    "172f2319dd7168ccae52549048237920 2027 rust-version-ranges_0.1.0-1.dsc e9b8c84355fc3ddadf71ad3713c7aec2 11180 rust-version-ranges_0.1.0.orig.tar.gz 31115a23d551bba1ac44440e0f0d6408 2064 rust-version-ranges_0.1.0-1.debian.tar.xz"
+    "6471d77b86413a7df38b17607b2114ac 2112 rust-version-ranges_0.1.1-1.dsc fd58ae059e55aa3c06e36a844f261e43 13740 rust-version-ranges_0.1.1.orig.tar.gz 08d6a7252571aa389e4368ae0dd87e33 2244 rust-version-ranges_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pubgrub-rs/pubgrub"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proptest-1+default-dev, librust-ron-0.9.0+default-dev, rustc"
+    "dh-cargo, librust-proptest-1+default-dev, librust-ron+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/version-ranges]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.1.1-1"
   ]
 }
