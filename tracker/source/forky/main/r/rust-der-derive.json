@@ -6,19 +6,25 @@
     "librust-der-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-error-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "69f2531143e7786180fe392a57b5c0b57d894c0f15770804e8d95e220b749f72 2351 rust-der-derive_0.7.1-1.dsc 114792ba6b7545d3f3dd693794aed3a312a67795cd577fcc725c148d84fabe32 24309 rust-der-derive_0.7.1.orig.tar.gz f1c327c530e59066d874473abc3a8b94a4187882c4850244c38723f5c17e89a5 2640 rust-der-derive_0.7.1-1.debian.tar.xz"
+    "257334cbf1367d26f573f1119eeb6d3a93e8d823c259ea273cc80ef658dbdcc6 2443 rust-der-derive_0.7.3-1.dsc 8034092389675178f570469e6c3b0465d3d30b4505c294a6550db47f3c17ad18 24657 rust-der-derive_0.7.3.orig.tar.gz 2929a425f770c48824f4fc45f60b168df71809948ceecef6596448f98cc003db 2692 rust-der-derive_0.7.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-der-derive"
   ],
   "Files": [
-    "3390ee87025e190929d063553b5f850e 2351 rust-der-derive_0.7.1-1.dsc 3a23737f72a12e3e4843dd9e8f495c72 24309 rust-der-derive_0.7.1.orig.tar.gz df5b6a42147c4d56a195f8c7e3d64bc2 2640 rust-der-derive_0.7.1-1.debian.tar.xz"
+    "75a0813bcdcd2d54c9fa3c523434df83 2443 rust-der-derive_0.7.3-1.dsc 4b45bbb174c27fedaa1cb9ba1c404bc4 24657 rust-der-derive_0.7.3.orig.tar.gz 5268672c697d26cc5dfb3d12a7148276 2692 rust-der-derive_0.7.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/formats/tree/master/der/derive"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/der-derive]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.7.3-1"
   ]
 }

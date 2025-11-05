@@ -6,16 +6,19 @@
     "librust-futures-lite-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand-2+std-dev \u003c!nocheck\u003e, librust-fastrand-2-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-io-0.3+default-dev \u003c!nocheck\u003e, librust-parking-2+default-dev (\u003e= 2.2.0-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand-2+std-dev \u003c!nocheck\u003e, librust-fastrand-2-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-io-0.3+default-dev \u003c!nocheck\u003e, librust-parking-2+default-dev (\u003e= 2.2.0-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5c6ed72902e8c4aef5e79f675ecaff3672eac059a3436a891f198860e33b7503 2556 rust-futures-lite_2.3.0-2.dsc 52527eb5074e35e9339c6b4e8d12600c7128b68fb25dcb9fa9dec18f7c25f3a5 39181 rust-futures-lite_2.3.0.orig.tar.gz c90c601da477d13b92f237e8b0ebdc29fdbcf6d6523e00c6b471c4323fd22d7d 5512 rust-futures-lite_2.3.0-2.debian.tar.xz"
+    "0ea809c8bc70df05a1f7e864923efdc8dbff4355a2d6932bd5339bc826f42b4f 2589 rust-futures-lite_2.6.1-1.dsc f78e10609fe0e0b3f4157ffab1876319b5b0db102a2c60dc4626306dc46b44ad 46095 rust-futures-lite_2.6.1.orig.tar.gz 351509ee4acadce6950583e805092f160602b71b92602589444dc7641899a798 4544 rust-futures-lite_2.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-futures-lite"
   ],
   "Files": [
-    "6983cbed86c63f7409f7cbc74c58fb8c 2556 rust-futures-lite_2.3.0-2.dsc f0af2a791144dfe21d284bcc00f7fa38 39181 rust-futures-lite_2.3.0.orig.tar.gz e9b55d15774504d39e81fa12fc45684c 5512 rust-futures-lite_2.3.0-2.debian.tar.xz"
+    "901bf588177f57135f8e1753e79a87ad 2589 rust-futures-lite_2.6.1-1.dsc 29262ad47afbf8db117fd581e958b96b 46095 rust-futures-lite_2.6.1.orig.tar.gz 75f4a11c7c1ce950959ad075f16085ec 4544 rust-futures-lite_2.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-waker-fn-1+default-dev"
+    "dh-cargo, librust-waker-fn-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/futures-lite]"
   ],
   "Version": [
-    "2.3.0-2"
+    "2.6.1-1"
   ]
 }
