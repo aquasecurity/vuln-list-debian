@@ -6,19 +6,25 @@
     "librust-bytemuck-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2f889e4b72b06d7c10dda1bbdfa21d109d50af021b3e2b15a968f028a55b5670 2536 rust-bytemuck-derive_1.5.0-2.dsc 965ab7eb5f8f97d2a083c799f3a1b994fc397b2fe2da5d1da1626ce15a39f2b1 17323 rust-bytemuck-derive_1.5.0.orig.tar.gz 2edda66e81bdeb0531a4b12bb7c55e2c6b9d8e0a733d8e907e4c60fe8ba09f4e 3124 rust-bytemuck-derive_1.5.0-2.debian.tar.xz"
+    "cfc245a35767e456e383ee64b6477980aa3831374d673b27efac5b26661efbd2 2633 rust-bytemuck-derive_1.10.2-1.dsc f9abbd1bc6865053c427f7198e6af43bfdedc55ab791faed4fbd361d789575ff 25678 rust-bytemuck-derive_1.10.2.orig.tar.gz 5267fc2faef38ca7391b49cf0075b088000a55a8d354f573b9536d63723c61bc 3172 rust-bytemuck-derive_1.10.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bytemuck-derive"
   ],
   "Files": [
-    "e9ea7dd0384ee4538bf83e39a44a8e24 2536 rust-bytemuck-derive_1.5.0-2.dsc 888aa57b8e44b519111814536f8e09bf 17323 rust-bytemuck-derive_1.5.0.orig.tar.gz 843010db7c354403590dab768d3ecf63 3124 rust-bytemuck-derive_1.5.0-2.debian.tar.xz"
+    "cbb0b109b76242ad25a0e80fb15a4e51 2633 rust-bytemuck-derive_1.10.2-1.dsc 97a85db121e60d673d165734fb6ce0f0 25678 rust-bytemuck-derive_1.10.2.orig.tar.gz 6c017a104d843f837234c505c65b712e 3172 rust-bytemuck-derive_1.10.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Lokathor/bytemuck"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev"
+    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytemuck-derive]"
   ],
   "Version": [
-    "1.5.0-2"
+    "1.10.2-1"
   ]
 }
