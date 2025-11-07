@@ -6,19 +6,25 @@
     "librust-virtio-queue-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-virtio-bindings-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-vm-memory-0.16+default-dev \u003c!nocheck\u003e, librust-vmm-sys-util-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, architecture-is-64-bit"
+    "debhelper-compat (= 13), dh-sequence-cargo, architecture-is-64-bit"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-virtio-bindings-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-vm-memory-0.16+default-dev \u003c!nocheck\u003e, librust-vmm-sys-util-0.15+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "700e82709adf0f31f9b777336ec0202834bc52cd54be8a373baa2e4fc8f76f0a 2634 rust-virtio-queue_0.14.0-1.dsc 872e2f3fbd70a7e6f01689720cce3d5c2c5efe52b484dd07b674246ada0e9a8d 153316 rust-virtio-queue_0.14.0.orig.tar.gz 83b864f85400e2ed0fed0bf189a53abbcee02a02446bb381a582975d163967ff 3972 rust-virtio-queue_0.14.0-1.debian.tar.xz"
+    "5691316fdfd1289897ffe98c6769e9637dece012c13c9c599fee01a1732374fb 2700 rust-virtio-queue_0.16.0-1.dsc fb0479158f863e59323771a1f684d843962f76960b86fecfec2bfa9c8f0f9180 164790 rust-virtio-queue_0.16.0.orig.tar.gz e6b11c4093c410d287d9f5b6fa4899ae55311392fa558ed0a3d410722307dbf2 4004 rust-virtio-queue_0.16.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-virtio-queue"
   ],
   "Files": [
-    "bd25c9649def76af42d486079b1b704c 2634 rust-virtio-queue_0.14.0-1.dsc 00fffe5b6d128a0986efa910535de1d2 153316 rust-virtio-queue_0.14.0.orig.tar.gz e81920b4c9a37e20b62cf560a35a11c6 3972 rust-virtio-queue_0.14.0-1.debian.tar.xz"
+    "2c5413f0cea45ed8fdcd46d3d2117249 2700 rust-virtio-queue_0.16.0-1.dsc 3e2c954fccc12e5bad98c748bbe690ee 164790 rust-virtio-queue_0.16.0.orig.tar.gz 12bea04a901c43ba2ce6316d7ee62626 4004 rust-virtio-queue_0.16.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-vmm/vm-virtio"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-memoffset-0.8+default-dev, librust-vm-memory-0.16+backend-atomic-dev, librust-vm-memory-0.16+backend-mmap-dev, librust-vm-memory-0.16+default-dev"
+    "dh-cargo, librust-memoffset-0.8+default-dev, librust-vm-memory-0.16+backend-atomic-dev, librust-vm-memory-0.16+backend-mmap-dev, librust-vm-memory-0.16+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/virtio-queue]"
   ],
   "Version": [
-    "0.14.0-1"
+    "0.16.0-1"
   ]
 }
