@@ -6,19 +6,25 @@
     "librust-pin-project-lite-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.37) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f53ff3ecfd781122cde0fe40b3e84ef6eb9c747f221d8f3f2d01c97c546a0811 2516 rust-pin-project-lite_0.2.13-1.dsc 8afb450f006bf6385ca15ef45d71d2288452bc3683ce2e2cacc0d18e4be60b58 29141 rust-pin-project-lite_0.2.13.orig.tar.gz 79049e2b3930002a1b5275334c43cd07109394f039258d0c1c77ce1be94f422d 3508 rust-pin-project-lite_0.2.13-1.debian.tar.xz"
+    "38897dbdd250f85f70783b7863bb1e849854e2e1c079345d442fa594d95ce90c 2425 rust-pin-project-lite_0.2.16-1.dsc 3b3cff922bd51709b605d9ead9aa71031d81447142d828eb4a6eba76fe619f9b 30504 rust-pin-project-lite_0.2.16.orig.tar.gz 57845de82a010cfa3fd854291b0d8acf4b07e95b032be84a54c0451f932d7a9b 2876 rust-pin-project-lite_0.2.16-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pin-project-lite"
   ],
   "Files": [
-    "2b41a198bfc6485573efee4c76c66d14 2516 rust-pin-project-lite_0.2.13-1.dsc ffc7c4e1b2639ba6c8579a1c47c5f97c 29141 rust-pin-project-lite_0.2.13.orig.tar.gz 780130367462b688cb9238dc4ac87716 3508 rust-pin-project-lite_0.2.13-1.debian.tar.xz"
+    "e5c21cdde940f5a53443ba94d7acaac0 2425 rust-pin-project-lite_0.2.16-1.dsc f6c8ce4c412ca548e42dfd896c92112e 30504 rust-pin-project-lite_0.2.16.orig.tar.gz 807932f5188840117cfa08e0773904b7 2876 rust-pin-project-lite_0.2.16-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/taiki-e/pin-project-lite"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-once-cell-1+default-dev, librust-proc-macro2-1+default-dev, librust-quote-1+default-dev, librust-rustversion-1+default-dev, librust-serde-1+default-dev, librust-static-assertions-1+default-dev, librust-toml-0.5+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-static-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pin-project-lite]"
   ],
   "Version": [
-    "0.2.13-1"
+    "0.2.16-1"
   ]
 }
