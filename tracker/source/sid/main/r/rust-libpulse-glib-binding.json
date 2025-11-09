@@ -6,16 +6,19 @@
     "librust-libpulse-glib-binding-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-0-dev \u003c!nocheck\u003e, librust-glib-sys-0-dev \u003c!nocheck\u003e, librust-libpulse-binding-2+pa-v6-dev (\u003e= 2.28-~~) \u003c!nocheck\u003e, librust-libpulse-binding-2+pa-v8-dev (\u003e= 2.28-~~) \u003c!nocheck\u003e, librust-libpulse-binding-2-dev (\u003e= 2.28-~~) \u003c!nocheck\u003e, librust-libpulse-mainloop-glib-sys-1+pa-v6-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e, librust-libpulse-mainloop-glib-sys-1+pa-v8-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e, librust-libpulse-mainloop-glib-sys-1-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-0-dev \u003c!nocheck\u003e, librust-glib-sys-0-dev \u003c!nocheck\u003e, librust-libpulse-binding-2+pa-v6-dev (\u003e= 2.29-~~) \u003c!nocheck\u003e, librust-libpulse-binding-2+pa-v8-dev (\u003e= 2.29-~~) \u003c!nocheck\u003e, librust-libpulse-binding-2-dev (\u003e= 2.29-~~) \u003c!nocheck\u003e, librust-libpulse-mainloop-glib-sys-1+pa-v6-dev (\u003e= 1.22-~~) \u003c!nocheck\u003e, librust-libpulse-mainloop-glib-sys-1+pa-v8-dev (\u003e= 1.22-~~) \u003c!nocheck\u003e, librust-libpulse-mainloop-glib-sys-1-dev (\u003e= 1.22-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c627472b14256d086a912c838ab84913d0ac5a242e0833c7764750484f7f3c8e 2808 rust-libpulse-glib-binding_2.28.1-1.dsc 72bb604d4f32d4c60e02581a67f9d9fd7500cb963ad984cee032013edeaf6bee 11315 rust-libpulse-glib-binding_2.28.1.orig.tar.gz 97c9169fd9cdac8cf8b406d6f5dfce6fa4eb33b7ede588a92dbe76e4a7c04f3f 2884 rust-libpulse-glib-binding_2.28.1-1.debian.tar.xz"
+    "500b3262198c225f16d2e6e1d9a089791007182413b2249bf2bcc1d23773f7ca 2851 rust-libpulse-glib-binding_2.29.0-1.dsc 85be2d534f777c9c2eab62df9d69328c9e1b3099a4834c788bbdb9bec580def5 14760 rust-libpulse-glib-binding_2.29.0.orig.tar.gz 81cfe3a485ed5673173b5cb6ecf98714338b9f43d8ceccf71d5d2289d2878c54 2896 rust-libpulse-glib-binding_2.29.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libpulse-glib-binding"
   ],
   "Files": [
-    "a987e32669255050d801b7afd45737e2 2808 rust-libpulse-glib-binding_2.28.1-1.dsc e9ef73afee0bb2fee60826ae7196c90d 11315 rust-libpulse-glib-binding_2.28.1.orig.tar.gz 4966788052110c15d2749466ddadf234 2884 rust-libpulse-glib-binding_2.28.1-1.debian.tar.xz"
+    "8fc9ebcc104fe342812102fb56596070 2851 rust-libpulse-glib-binding_2.29.0-1.dsc 1cd7253756b13480374d3ecb6b403190 14760 rust-libpulse-glib-binding_2.29.0.orig.tar.gz 651f4e5ae306d108706e74874f69d844 2896 rust-libpulse-glib-binding_2.29.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libpulse-glib-binding]"
   ],
   "Version": [
-    "2.28.1-1"
+    "2.29.0-1"
   ]
 }
