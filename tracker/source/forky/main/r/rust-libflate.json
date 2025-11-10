@@ -6,16 +6,19 @@
     "librust-libflate-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 15), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-adler32-1+default-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev \u003c!nocheck\u003e, librust-crc32fast-1+default-dev \u003c!nocheck\u003e, librust-rle-decode-fast-1+default-dev \u003c!nocheck\u003e, librust-take-mut-0.2+default-dev (\u003e= 0.2.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-adler32-1-dev \u003c!nocheck\u003e, librust-core2-0.4+alloc-dev \u003c!nocheck\u003e, librust-core2-0.4+std-dev \u003c!nocheck\u003e, librust-crc32fast-1-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e, librust-dary-heap-0.3+default-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-libflate-lz77-2+std-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-libflate-lz77-2-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "382abe1de212f794e24dd778011a5f7f5f17f0d70539605474209fbfca560864 2029 rust-libflate_0.1.25-1.dsc f617fbee4e93a24bb726095ae1d746eaf2ff2502db8b9284b3c07f16176cafd4 36152 rust-libflate_0.1.25.orig.tar.gz 3737c61009075cd5fa46a559a371df0380393a259baeddc2491e70fef81efdda 2508 rust-libflate_0.1.25-1.debian.tar.xz"
+    "c54a2c22dcf12c81e9d833ca2ce941a009884f2e91e94f751ffa99a8742dede0 1997 rust-libflate_2.1.0-1.dsc 45d9dfdc14ea4ef0900c1cddbc8dcd553fbaacd8a4a282cf4018ae9dd04fb21e 43366 rust-libflate_2.1.0.orig.tar.gz 14ac4c8afb4c42252538c6e74f6a1eaf0f6e53ede1dccc9159fb9116b70e0f10 2796 rust-libflate_2.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libflate"
   ],
   "Files": [
-    "8b5f85ddd1a4e056457d0495ee92233c 2029 rust-libflate_0.1.25-1.dsc 4133f8a57d6a4969dfecdb3eb87f6a72 36152 rust-libflate_0.1.25.orig.tar.gz d506b5b6f4a0bbdcd15b45da631f3913 2508 rust-libflate_0.1.25-1.debian.tar.xz"
+    "9e5aa20c1b6ad6f3aba949de7af01d7e 1997 rust-libflate_2.1.0-1.dsc a028df130380282b79cc609b6f240533 43366 rust-libflate_2.1.0.orig.tar.gz bd80d25894ab0f90c4d3de99178b883c 2796 rust-libflate_2.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-clap-4+default-dev, librust-clap-4+derive-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libflate]"
   ],
   "Version": [
-    "0.1.25-1"
+    "2.1.0-1"
   ]
 }

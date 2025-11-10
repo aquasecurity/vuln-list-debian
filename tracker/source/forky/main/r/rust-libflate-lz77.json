@@ -6,16 +6,19 @@
     "librust-libflate-lz77-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rle-decode-fast-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-core2-0.4+alloc-dev \u003c!nocheck\u003e, librust-core2-0.4+std-dev \u003c!nocheck\u003e, librust-hashbrown-0.14+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "78839b2edf5db67f58a7505949c4d2e10c071c6664561f05c8250a6945656708 2301 rust-libflate-lz77_1.1.0-1.dsc 39a734c0493409afcd49deee13c006a04e3586b9761a03543c6272c9c51f2f5a 5729 rust-libflate-lz77_1.1.0.orig.tar.gz c55b1242379bf963b2ae39d66a0e6ae7b997c2c2cbafaf8837574637c2e1826c 2532 rust-libflate-lz77_1.1.0-1.debian.tar.xz"
+    "797bb6d182fff525e02f0d1421e9484c9fbea71c16e1c5510715f70947d4f563 1772 rust-libflate-lz77_2.1.0-1.dsc e6e0d73b369f386f1c44abd9c570d5318f55ccde816ff4b562fa452e5182863d 5918 rust-libflate-lz77_2.1.0.orig.tar.gz 0438983b739688d3e7489fd6a17b70b5ea19d071b022527a3002980387a996cf 3240 rust-libflate-lz77_2.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libflate-lz77"
   ],
   "Files": [
-    "1167f11bc2c66a177dcd71738a7c5b4e 2301 rust-libflate-lz77_1.1.0-1.dsc db4020c5e708a86f69142babada39b77 5729 rust-libflate-lz77_1.1.0.orig.tar.gz 52be30af09eb88f4897863ef20c32335 2532 rust-libflate-lz77_1.1.0-1.debian.tar.xz"
+    "b20c3f2a26f78dff97637dfc31da6017 1772 rust-libflate-lz77_2.1.0-1.dsc fbe393818d7f5143d5345abdecf80cf6 5918 rust-libflate-lz77_2.1.0.orig.tar.gz 33f6a868f769188c424769a5d4fca9e0 3240 rust-libflate-lz77_2.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-libflate-1+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libflate-lz77]"
   ],
   "Version": [
-    "1.1.0-1"
+    "2.1.0-1"
   ]
 }
