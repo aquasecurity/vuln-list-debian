@@ -6,16 +6,19 @@
     "librust-libpulse-mainloop-glib-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0-dev \u003c!nocheck\u003e, librust-libpulse-sys-1+pa-v6-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e, librust-libpulse-sys-1+pa-v8-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e, librust-libpulse-sys-1-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.23-~~) \u003c!nocheck\u003e, libpulse-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, libpulse-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-glib-sys-0-dev \u003c!nocheck\u003e, librust-libpulse-sys-1+pa-v6-dev (\u003e= 1.22-~~) \u003c!nocheck\u003e, librust-libpulse-sys-1+pa-v8-dev (\u003e= 1.22-~~) \u003c!nocheck\u003e, librust-libpulse-sys-1-dev (\u003e= 1.22-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.23-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "446f0fe2801b697befb2c80f29e0ceca89b73f8f546631b514e0e87d2c2c9f24 2686 rust-libpulse-mainloop-glib-sys_1.21.1-1.dsc 00f9e6fbee0a60ac3f5751e3cc68eeaf9bff9d2687502df17b5c726220217531 10518 rust-libpulse-mainloop-glib-sys_1.21.1.orig.tar.gz bd654d19a6733639d7e705c60b2feddf4e0f5b01819d79f4b33cdfaab2f822b9 2892 rust-libpulse-mainloop-glib-sys_1.21.1-1.debian.tar.xz"
+    "b0fe90ae2bcf9da829a3fa8173d69e35c4d3499b7bad4c99b867c42d915e6964 2729 rust-libpulse-mainloop-glib-sys_1.22.0-1.dsc f8f0126756ef34be1acc91a0533d329c1d6eebf69a3bea1a2a9475fa86dbf6cb 12942 rust-libpulse-mainloop-glib-sys_1.22.0.orig.tar.gz 93bfeeb0be9a878b16cbf7fa1e18521537aa5ba8d565086fb4c6e9dfffcd66d5 2904 rust-libpulse-mainloop-glib-sys_1.22.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libpulse-mainloop-glib-sys"
   ],
   "Files": [
-    "337a1529d136318068c8c06067ab4e99 2686 rust-libpulse-mainloop-glib-sys_1.21.1-1.dsc 4648969476e146241db3210cbbc07ed0 10518 rust-libpulse-mainloop-glib-sys_1.21.1.orig.tar.gz e338e10d486f0a44482d83e4ac00863f 2892 rust-libpulse-mainloop-glib-sys_1.21.1-1.debian.tar.xz"
+    "1bcb72d726c9332e3cb86fa7aa0c6402 2729 rust-libpulse-mainloop-glib-sys_1.22.0-1.dsc f5c3584c11c5781128069b4f12befbdf 12942 rust-libpulse-mainloop-glib-sys_1.22.0.orig.tar.gz 63f45c9d24ff9f501a2179f21e5064b2 2904 rust-libpulse-mainloop-glib-sys_1.22.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libpulse-mainloop-glib-sys]"
   ],
   "Version": [
-    "1.21.1-1"
+    "1.22.0-1"
   ]
 }
