@@ -6,16 +6,19 @@
     "librust-tracing-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.9-~~) \u003c!nocheck\u003e, librust-tracing-attributes-0.1+default-dev (\u003e= 0.1.27-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1+std-dev (\u003e= 0.1.32-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1-dev (\u003e= 0.1.32-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.9-~~) \u003c!nocheck\u003e, librust-tracing-attributes-0.1+default-dev (\u003e= 0.1.28-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1+std-dev (\u003e= 0.1.33-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1-dev (\u003e= 0.1.33-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6108d2713fd606265b65f8d80a79cb946ed388690245a97055f9d73b8927678c 2522 rust-tracing_0.1.40-1.dsc c3523ab5a71916ccf420eebdf5521fcef02141234bbc0b8a49f2fdc4544364ef 79459 rust-tracing_0.1.40.orig.tar.gz b0e96318afb47d690b3465154198efc1c3ed0d41f78990c6015c689354509a1e 4468 rust-tracing_0.1.40-1.debian.tar.xz"
+    "f426677baad9f1aee363b4f422adbbba620b40a42d07cb1be6419db35727c3b2 2555 rust-tracing_0.1.41-1.dsc 784e0ac535deb450455cbfa28a6f0df145ea1bb7ae51b821cf5e7927fdcfbdd0 82448 rust-tracing_0.1.41.orig.tar.gz 1b72499ca7a09128a77f250a18bcbf17c736c5b863a8b5053375a4a27625fad2 4800 rust-tracing_0.1.41-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tracing"
   ],
   "Files": [
-    "7d3e2bcf791ae19e0ee60570c7596ec8 2522 rust-tracing_0.1.40-1.dsc 0a906c03436ec2dcc4c311c21fee0da2 79459 rust-tracing_0.1.40.orig.tar.gz 3ffd81648a2f50cb6ff3363ffbf8fd57 4468 rust-tracing_0.1.40-1.debian.tar.xz"
+    "35734849f0b073e1135eae145a1ea2fd 2555 rust-tracing_0.1.41-1.dsc 7017e24adcde4f4411e9d9585a71e409 82448 rust-tracing_0.1.41.orig.tar.gz 1b809763249661026ffd849e77a180ff 4800 rust-tracing_0.1.41-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3-dev, librust-futures-0.3-dev, librust-log-0.4+default-dev"
+    "dh-cargo, librust-criterion-0.5-dev, librust-futures-0.3-dev, librust-log-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tracing]"
   ],
   "Version": [
-    "0.1.40-1"
+    "0.1.41-1"
   ]
 }
