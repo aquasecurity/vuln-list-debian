@@ -6,16 +6,19 @@
     "librust-rust-decimal-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+std-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev \u003c!nocheck\u003e, librust-bytes-1+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev \u003c!nocheck\u003e, librust-rand-0.8+std-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e, librust-serde-1-dev \u003c!nocheck\u003e, librust-serde-json-1+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+std-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev \u003c!nocheck\u003e, librust-bytes-1+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev \u003c!nocheck\u003e, librust-rand-0.8+std-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e, librust-serde-1-dev \u003c!nocheck\u003e, librust-serde-json-1+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3cbef1baeeb4fe2681f4823b465b7142cd650b8e9ede10944eb24740aeafc98a 2273 rust-rust-decimal_1.36.0-2.dsc b082d80e3e3cc52b2ed634388d436fe1f4de6af5786cc2de9ba9737527bdf555 129249 rust-rust-decimal_1.36.0.orig.tar.gz db47af9c7b5da7bdf51623c9f6c8696034895b0474334b8e1bbd484422ca5c08 5536 rust-rust-decimal_1.36.0-2.debian.tar.xz"
+    "0455e9f25667d05e00da246af4906660c2206c79759ce67c75eaf582f3e201f2 3017 rust-rust-decimal_1.39.0-1.dsc 35affe401787a9bd846712274d97654355d21b2a2c092a3139aabe31e9022282 154142 rust-rust-decimal_1.39.0.orig.tar.gz e4947dcd05605dabfee27187611e16ce2f0018eab8e8b2810fcb14a2ba4a4fdb 6300 rust-rust-decimal_1.39.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rust-decimal"
   ],
   "Files": [
-    "14146889d6e511b0bc2d905ce7da4b21 2273 rust-rust-decimal_1.36.0-2.dsc 9fa15e26309d04874950ab24b1083e77 129249 rust-rust-decimal_1.36.0.orig.tar.gz 3401640cedac6764c9b06be223d9d4a2 5536 rust-rust-decimal_1.36.0-2.debian.tar.xz"
+    "c63f898a93a6869440802f32aadcb460 3017 rust-rust-decimal_1.39.0-1.dsc 80d784b9c909c835530ce0003e68a956 154142 rust-rust-decimal_1.39.0.orig.tar.gz 87149995e534870a67b6bb7d58a96e94 6300 rust-rust-decimal_1.39.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1-dev, librust-bytes-1-dev, librust-csv-1+default-dev, librust-postgres-0.19-dev, librust-rand-0.8+getrandom-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tokio-postgres-0.7-dev, librust-version-sync-0.9+html-root-url-updated-dev, librust-version-sync-0.9+markdown-deps-updated-dev, rustc"
+    "dh-cargo, librust-bincode-1-dev, librust-bytes-1-dev, librust-csv-1+default-dev, librust-diesel-2+mysql-dev, librust-diesel-2+postgres-dev, librust-postgres-0.19-dev, librust-rand-0.8+getrandom-dev, librust-rkyv-0.8+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tokio-postgres-0.7-dev, librust-version-sync-0.9+html-root-url-updated-dev, librust-version-sync-0.9+markdown-deps-updated-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rust-decimal]"
   ],
   "Version": [
-    "1.36.0-2"
+    "1.39.0-1"
   ]
 }
