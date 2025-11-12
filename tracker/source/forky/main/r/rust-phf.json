@@ -6,19 +6,25 @@
     "librust-phf-dev, librust-phf+phf-macros-dev, librust-phf+serde-dev, librust-phf+std-dev, librust-phf+uncased-dev, librust-phf+unicase-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-phf-shared-0.11+std-dev (\u003e= 0.11.2-~~) \u003c!nocheck\u003e, librust-phf-shared-0.11-dev (\u003e= 0.11.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-phf-shared-0.11+std-dev (\u003e= 0.11.3-~~) \u003c!nocheck\u003e, librust-phf-shared-0.11-dev (\u003e= 0.11.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eadea616ffbf1c8b9ed3b64c1c96ea7e0c9138126b50090f0dfa881b48635e3d 2573 rust-phf_0.11.2-1.dsc ade2d8b8f33c7333b51bcf0428d37e217e9f32192ae4772156f65063b8ce03dc 21569 rust-phf_0.11.2.orig.tar.gz 49dc501e1bf62d89be8325c05e9d0c9cd3d11d8949e158212e0dd1f3bd23772f 3536 rust-phf_0.11.2-1.debian.tar.xz"
+    "27937abb51c53b7417b3bc6c11c7fded94d33ccbff691b7d9435de4ead0cba2b 2663 rust-phf_0.11.3-1.dsc 1fd6780a80ae0c52cc120a26a1a42c1ae51b247a253e4e06113d23d2c2edd078 23231 rust-phf_0.11.3.orig.tar.gz 72cd3c5953b2eaad9d412868286b60565a9617d9a1be13959bb00777f4cdf038 3564 rust-phf_0.11.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-phf"
   ],
   "Files": [
-    "9bd79774d83631de0960b0306518a770 2573 rust-phf_0.11.2-1.dsc 12613f90aab930b5317557b1b0a21e30 21569 rust-phf_0.11.2.orig.tar.gz 40a5a10a34d5295dd0007c3f194e4e65 3536 rust-phf_0.11.2-1.debian.tar.xz"
+    "008f84fce6405e0c366616344b2f18b9 2663 rust-phf_0.11.3-1.dsc 4de3a172ec67d4233c28a0458dd49ae4 23231 rust-phf_0.11.3.orig.tar.gz 713b0d33304d3897abeb4c35414b1cff 3564 rust-phf_0.11.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-phf/rust-phf"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/phf]"
   ],
   "Version": [
-    "0.11.2-1"
+    "0.11.3-1"
   ]
 }
