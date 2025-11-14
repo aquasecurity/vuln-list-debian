@@ -6,16 +6,19 @@
     "librust-tracing-subscriber-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nu-ansi-term-0+default-dev \u003c!nocheck\u003e, librust-sharded-slab-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-thread-local-1+default-dev (\u003e= 1.1.4-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1+std-dev (\u003e= 0.1.30-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1-dev (\u003e= 0.1.30-~~) \u003c!nocheck\u003e, librust-tracing-log-0.2+log-tracer-dev \u003c!nocheck\u003e, librust-tracing-log-0.2+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nu-ansi-term-0.50+default-dev \u003c!nocheck\u003e, librust-sharded-slab-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-thread-local-1+default-dev (\u003e= 1.1.4-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1+std-dev (\u003e= 0.1.33-~~) \u003c!nocheck\u003e, librust-tracing-core-0.1-dev (\u003e= 0.1.33-~~) \u003c!nocheck\u003e, librust-tracing-log-0.2+log-tracer-dev \u003c!nocheck\u003e, librust-tracing-log-0.2+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "adbbe53c304008213c423cf59a2baac9d980d15288d85d0953685e342cba0ef6 3148 rust-tracing-subscriber_0.3.18-4.dsc ad0f048c97dbd9faa9b7df56362b8ebcaa52adb06b498c050d2f4e32f90a7a8b 196312 rust-tracing-subscriber_0.3.18.orig.tar.gz 6c168de6da5a0e24d419e273182209f23d1137ea256c48d1825424a59aa44899 9748 rust-tracing-subscriber_0.3.18-4.debian.tar.xz"
+    "a127942429bf206524f120c6b59ba8958feb71131c0742b41fec4eb6419b4d31 3187 rust-tracing-subscriber_0.3.20-1.dsc 2054a14f5307d601f88daf0553e1cbf472acc4f2c51afab632431cdcd72124d5 212274 rust-tracing-subscriber_0.3.20.orig.tar.gz 5feb7ecfe62f96014f6e59e91bd1c1263e7936a05c10f3345e9591c9b0f34db6 10032 rust-tracing-subscriber_0.3.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tracing-subscriber"
   ],
   "Files": [
-    "f8c14746a11358b8265e89a94b959406 3148 rust-tracing-subscriber_0.3.18-4.dsc 7e2eeef14bb62adaf15f1e921538adaa 196312 rust-tracing-subscriber_0.3.18.orig.tar.gz 2f7b82f0d946ee6475dbbc9aad0c2496 9748 rust-tracing-subscriber_0.3.18-4.debian.tar.xz"
+    "513d40ca19f6a9aa289606182a5d50ab 3187 rust-tracing-subscriber_0.3.20-1.dsc 4fe6fa51a45f9ee81eefaa5f44194302 212274 rust-tracing-subscriber_0.3.20.orig.tar.gz 1e42b82d18d73aeb027b20d6c7a93530 10032 rust-tracing-subscriber_0.3.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3-dev, librust-log-0.4+default-dev, librust-regex-1+std-dev, librust-time-0.3+default-dev, librust-time-0.3+formatting-dev, librust-time-0.3+macros-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tracing-0.1+default-dev, librust-tracing-futures-0.2+std-dev, librust-tracing-futures-0.2+std-future-dev, librust-tracing-log-0.2+default-dev"
+    "dh-cargo, librust-criterion-0.5-dev, librust-log-0.4+default-dev, librust-regex-1+std-dev, librust-time-0.3+default-dev, librust-time-0.3+formatting-dev, librust-time-0.3+macros-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tracing-0.1+default-dev, librust-tracing-futures-0.2+std-dev, librust-tracing-futures-0.2+std-future-dev, librust-tracing-log-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "John Goerzen \u003cjgoerzen@complete.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tracing-subscriber]"
   ],
   "Version": [
-    "0.3.18-4"
+    "0.3.20-1"
   ]
 }
