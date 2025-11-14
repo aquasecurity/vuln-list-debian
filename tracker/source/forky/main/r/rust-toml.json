@@ -6,16 +6,19 @@
     "librust-toml-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.145-~~) \u003c!nocheck\u003e, librust-serde-spanned-0.6+default-dev (\u003e= 0.6.7-~~) \u003c!nocheck\u003e, librust-serde-spanned-0.6+serde-dev (\u003e= 0.6.7-~~) \u003c!nocheck\u003e, librust-toml-datetime-0.6+default-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-toml-datetime-0.6+serde-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-toml-edit-0.22+display-dev (\u003e= 0.22.20-~~) \u003c!nocheck\u003e, librust-toml-edit-0.22+parse-dev (\u003e= 0.22.20-~~) \u003c!nocheck\u003e, librust-toml-edit-0.22+serde-dev (\u003e= 0.22.20-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.145-~~) \u003c!nocheck\u003e, librust-serde-spanned-0.6+default-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-serde-spanned-0.6+serde-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-toml-datetime-0.6+default-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-toml-datetime-0.6+serde-dev (\u003e= 0.6.8-~~) \u003c!nocheck\u003e, librust-toml-edit-0.22+display-dev (\u003e= 0.22.23-~~) \u003c!nocheck\u003e, librust-toml-edit-0.22+parse-dev (\u003e= 0.22.23-~~) \u003c!nocheck\u003e, librust-toml-edit-0.22+serde-dev (\u003e= 0.22.23-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "054a0ae17b7624ca772c1f7a0594715ab4a47a02b747a6fd8923f95d9dfa42eb 2727 rust-toml_0.8.19-1.dsc a1ed1f98e3fdc28d6d910e6737ae6ab1a93bf1985935a1193e68f93eeb68d24e 50974 rust-toml_0.8.19.orig.tar.gz be8abae348ed053c04f3bf43451af4648244028666273456798c822b498a1f53 4204 rust-toml_0.8.19-1.debian.tar.xz"
+    "351ccc276cde28d8b8ee0e8b745fbabc5a1131d63a4501d66d7a65305914b253 2760 rust-toml_0.8.20-1.dsc cd87a5cdd6ffab733b2f74bc4fd7ee5fff6634124999ac278c35fc78c6120148 51095 rust-toml_0.8.20.orig.tar.gz 1391cd4a333501a91635713fe59d3543438840b70045018fa4206ccc2453207e 4172 rust-toml_0.8.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-toml"
   ],
   "Files": [
-    "af1124f45f4cd21897a81666fccbd85a 2727 rust-toml_0.8.19-1.dsc fcc6926cb92e9a4a8aa57e2614fda0ec 50974 rust-toml_0.8.19.orig.tar.gz 199e8d5c789891e5a16d039e6fd6d652 4204 rust-toml_0.8.19-1.debian.tar.xz"
+    "9cacdcb084309406c68211d56a059736 2760 rust-toml_0.8.20-1.dsc a18f0ebdfb018b2e648fe9831c3ce568 51095 rust-toml_0.8.20.orig.tar.gz f8221a16c4d91fb330564dc6774008ad 4172 rust-toml_0.8.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/toml]"
   ],
   "Version": [
-    "0.8.19-1"
+    "0.8.20-1"
   ]
 }
