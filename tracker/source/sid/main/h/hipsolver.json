@@ -6,19 +6,19 @@
     "libhipsolver0, libhipsolver-dev, libhipsolver0-tests, libhipsolver-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, rocm-cmake, gfortran, rocm-device-libs-17, librocblas-dev, librocsolver-dev, liblapack-dev \u003c!nocheck\u003e, libgtest-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), cmake (\u003e= 3.22~), gfortran, libgtest-dev \u003c!nocheck\u003e, libhipsparse-dev \u003c!nocheck\u003e, liblapack-dev \u003c!nocheck\u003e, librocblas-dev (\u003e= 6.4.0~), librocsolver-dev (\u003e= 6.4.0~), rocm-cmake"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-rocm-docs (\u003e= 1.20.0-1~) \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "98fd2742194d048e3d47bf60911f930120f4ae24898ee7c6054945fde47e6a21 2747 hipsolver_5.5.1-8.dsc 826bd64a4887176595bb7319d9a3612e7327602efe1f42aa3f2ad0e783d1a180 414567 hipsolver_5.5.1.orig.tar.gz d02a3d06e3e969189899ad662ffff238d6ba06910dcdd9aa09b17bef596f5e57 9692 hipsolver_5.5.1-8.debian.tar.xz"
+    "7466137c784f2c1cb00cc1721cd04aee9aaddce3bc7b2ffa4bccb46870bd4a7a 2888 hipsolver_6.4.1-1.dsc 86ac30d5cf741a254485ed54c7f51e4c9bc9803cda31dab8e86f11b39742b28e 2577495 hipsolver_6.4.1.orig.tar.gz 068381cd820741889abe384d76e9c39c8831dd214eacc38eec384056e5307c95 7000 hipsolver_6.4.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hipsolver"
   ],
   "Files": [
-    "fe60c3515d0f05b1174204028e467e74 2747 hipsolver_5.5.1-8.dsc c27aec7f7b71daab2d099e5f1de51a7b 414567 hipsolver_5.5.1.orig.tar.gz 0198f4c7fbfa54bb1da57b72616d0201 9692 hipsolver_5.5.1-8.debian.tar.xz"
+    "57a2d3c0d395c360e890cf4501f2bc8f 2888 hipsolver_6.4.1-1.dsc 73a3e6dd5dbbd2cb06c1b3c80683e061 2577495 hipsolver_6.4.1.orig.tar.gz 40bf017f1d640b76dd11b167c15e9dc4 7000 hipsolver_6.4.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "libopenblas0-pthread, pkg-rocm-tools"
+    "libcholmod5, libhipsparse1, libopenblas0-pthread, pkg-rocm-tools"
   ],
   "Uploaders": [
-    "Maxime Chambonnet \u003cmaxzor@maxzor.eu\u003e, Cordell Bloor \u003ccgmb@slerp.xyz\u003e, Christian Kastner \u003cckk@debian.org\u003e,"
+    "Cordell Bloor \u003ccgmb@debian.org\u003e, Christian Kastner \u003cckk@debian.org\u003e, Christian Bayle \u003cbayle@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rocm-team/hipsolver"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rocm-team/hipsolver.git"
   ],
   "Version": [
-    "5.5.1-8"
+    "6.4.1-1"
   ]
 }
