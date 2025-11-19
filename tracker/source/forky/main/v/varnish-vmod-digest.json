@@ -6,25 +6,25 @@
     "varnish-vmod-digest"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libmhash-dev, libvarnishapi-dev (\u003e= 7.6.0-2~), pkgconf, python3-docutils"
+    "debhelper-compat (= 13), architecture-is-64-bit, libmhash-dev, libvarnishapi-dev (\u003e= 7.6.0-2~), pkgconf, python3-docutils, varnish \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a0b830fbe6f1b62a771d1516480e922153b7d87de71f5687dc8f78cd9e5f7b2a 2489 varnish-vmod-digest_6.4+20230816-6.dsc a23c4b15d2c2098f9f42c14e1c4fcecd75fd470b912011a1bb27027e5dab94b8 15852 varnish-vmod-digest_6.4+20230816.orig.tar.xz f9605b91b847266d46b182804be31e469215d541cdbcbb2961a89c656716c6e7 3232 varnish-vmod-digest_6.4+20230816-6.debian.tar.xz"
+    "383bbc839ebfbb0b96fe173396e3e4d72a9c51c7313fb615deb5515ae1fb29c8 2526 varnish-vmod-digest_6.4+20230816-8.dsc a23c4b15d2c2098f9f42c14e1c4fcecd75fd470b912011a1bb27027e5dab94b8 15852 varnish-vmod-digest_6.4+20230816.orig.tar.xz 37947c49de361dedeeefccbacd83840600e55894ae92a91b7e9233726b93766f 3656 varnish-vmod-digest_6.4+20230816-8.debian.tar.xz"
   ],
   "Dgit": [
-    "1fab4674bd4fec8c5006a329702052318749fff8 debian archive/debian/6.4+20230816-6 https://git.dgit.debian.org/varnish-vmod-digest"
+    "6ab5b4806462332b4259b2edfef117afd5f361a0 debian archive/debian/6.4+20230816-8 https://git.dgit.debian.org/varnish-vmod-digest"
   ],
   "Directory": [
     "pool/main/v/varnish-vmod-digest"
   ],
   "Files": [
-    "e8a34cb5d02c444665a7eed1347b4cab 2489 varnish-vmod-digest_6.4+20230816-6.dsc 3941faae317c653355933af9521fb75e 15852 varnish-vmod-digest_6.4+20230816.orig.tar.xz 02fb8ba2bdd92ed590da2a41536afe90 3232 varnish-vmod-digest_6.4+20230816-6.debian.tar.xz"
+    "4fbf83fd29950a8faf4a3723df7f3b53 2526 varnish-vmod-digest_6.4+20230816-8.dsc 3941faae317c653355933af9521fb75e 15852 varnish-vmod-digest_6.4+20230816.orig.tar.xz 2ac2d0efe796e7d70d68e5065d158881 3656 varnish-vmod-digest_6.4+20230816-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=dd3c420d6e0b161354c2111473a046b5529aff06 fp=272945cd836d38dfb7427e86cb3ec33ae1ded781"
+    "tag=41484ef9dea67438ed0520429b1c714250550b2d fp=272945cd836d38dfb7427e86cb3ec33ae1ded781"
   ],
   "Git-Tag-Tagger": [
     "Marco d'Itri \u003cmd@linux.it\u003e"
@@ -54,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "perl, sharness"
+    "varnish"
   ],
   "Uploaders": [
     "Marco d'Itri \u003cmd@linux.it\u003e"
@@ -66,6 +66,6 @@
     "https://salsa.debian.org/varnish-team/varnish-vmod-digest.git"
   ],
   "Version": [
-    "6.4+20230816-6"
+    "6.4+20230816-8"
   ]
 }
