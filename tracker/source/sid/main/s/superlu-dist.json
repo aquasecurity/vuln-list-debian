@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libsuperlu-dist-dev, libsuperlu-dist8"
+    "libsuperlu-dist-dev, libsuperlu-dist9, libsuperlu-dist-examples"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-fortran-mod, cmake (\u003e= 2.8.12), mpi-default-dev, mpi-default-bin, gfortran, libblas-dev | libopenblas-dev | libblis-dev | libatlas-base-dev | libblas.so, liblapack-dev | libopenblas-dev | libatlas-base-dev | liblapack.so, libcombblas-dev (\u003e= 1.6.2-3), libscotchparmetis-dev, libmetis-dev"
+    "debhelper-compat (= 13), dh-fortran-mod, cmake, mpi-default-dev, mpi-default-bin, gfortran, libblas-dev | libopenblas-dev | libblis-dev | libatlas-base-dev | libblas.so, liblapack-dev | libopenblas-dev | libatlas-base-dev | liblapack.so, libcombblas-dev, libscotchparmetis-dev, libmetis-dev, python3-mpi4py \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4f8e914ab2b6fa6f0de28f8a4442805170d4cacd6542d9ce8e9f19f39228e6b2 2481 superlu-dist_8.2.1+dfsg1-5.1.dsc 805c7d123fc237323966ea01a4d0efd8c4893a564116da136e55591fc2aa3b35 666136 superlu-dist_8.2.1+dfsg1.orig.tar.xz e15085aa972f7d4ebcd621e320e80cf9d0df3a5b8242cee784fc7ff95c78915b 11044 superlu-dist_8.2.1+dfsg1-5.1.debian.tar.xz"
+    "a69c88a431929f1be01a20591889fdfa1d42d7dacd8484e43e15c1cfba9b0858 2632 superlu-dist_9.2.0+dfsg1-4.dsc 9398dd82f87111439e03ab99b4bd33900e449cb948908c343b3e54f78fb019c5 1522088 superlu-dist_9.2.0+dfsg1.orig.tar.xz de8c6ac6f9a654e5df3a23cc916103520ab18394be0b6da2a9c426c9780e0aba 17480 superlu-dist_9.2.0+dfsg1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/superlu-dist"
   ],
   "Files": [
-    "b2c19c25c0f8925dd2dbe2537f57791e 2481 superlu-dist_8.2.1+dfsg1-5.1.dsc 9c144af3e1c7d44ed8615332cf3669fd 666136 superlu-dist_8.2.1+dfsg1.orig.tar.xz 620a9aa30d0c557415d5b1c2e268d1ae 11044 superlu-dist_8.2.1+dfsg1-5.1.debian.tar.xz"
+    "09dc5f3d559f61bdfe3d1526678fb85c 2632 superlu-dist_9.2.0+dfsg1-4.dsc 5aafdf9233d8f829f2225f24ce3504f5 1522088 superlu-dist_9.2.0+dfsg1.orig.tar.xz 19b3543c1b7a66b63116725ef4490855 17480 superlu-dist_9.2.0+dfsg1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "superlu-dist"
   ],
   "Package-List": [
-    "libsuperlu-dist-dev deb libdevel optional arch=any libsuperlu-dist8 deb libs optional arch=any"
+    "libsuperlu-dist-dev deb libs optional arch=any libsuperlu-dist-examples deb libs optional arch=any libsuperlu-dist9 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "@builddeps@"
   ],
   "Uploaders": [
-    "Drew Parsons \u003cdparsons@debian.org\u003e"
+    "Drew Parsons \u003cdparsons@debian.org\u003e, Francesco Ballarin \u003cfrancesco.ballarin@unicatt.it\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/superlu-dist"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/superlu-dist.git"
   ],
   "Version": [
-    "8.2.1+dfsg1-5.1"
+    "9.2.0+dfsg1-4"
   ]
 }

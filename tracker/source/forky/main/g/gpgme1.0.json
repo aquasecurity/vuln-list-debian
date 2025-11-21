@@ -1,24 +1,21 @@
 {
   "Architecture": [
-    "any all"
+    "any"
   ],
   "Binary": [
-    "gpgme-json, libgpgme-dev, libgpgme11t64, python3-gpg, libqgpgme15t64, libqgpgmeqt6-15, libgpgmepp6t64, libgpgmepp-dev, libqgpgme-dev, libqgpgmeqt6-dev, libgpgmepp-doc"
+    "gpgme-json, libgpgme-dev, libgpgme45"
   ],
   "Build-Depends": [
-    "automake (\u003e= 1.14), debhelper-compat (= 13), dh-python, dpkg-dev (\u003e= 1.22.5), gnupg-agent, gnupg2 | gnupg (\u003e= 2), gpgrt-tools, gpgsm, libassuan-dev (\u003e= 2.4.2), libgpg-error-dev (\u003e= 1.36), libpython3-all-dev, pkgconf, python3-all-dev:any, python3-setuptools, qt6-base-dev, qtbase5-dev, scdaemon, swig, texinfo"
-  ],
-  "Build-Depends-Indep": [
-    "doxygen, graphviz"
+    "automake (\u003e= 1.14), debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), gnupg-agent, gnupg2 | gnupg (\u003e= 2), gpgrt-tools, gpgsm, libassuan-dev (\u003e= 2.4.2), libgpg-error-dev (\u003e= 1.36), pkgconf, scdaemon, texinfo"
   ],
   "Checksums-Sha256": [
-    "822672941458bfd0953527b53899fd88e38f84b16220bbade2bab598f8435d46 3255 gpgme1.0_1.24.2-3.dsc e11b1a0e361777e9e55f48a03d89096e2abf08c63d84b7017cfe1dce06639581 1891804 gpgme1.0_1.24.2.orig.tar.bz2 15aa105622d8ea60a205c5b07a346f87e30acc8fe2fcffa1889912e6f0d8edae 228 gpgme1.0_1.24.2.orig.tar.bz2.asc c4afd253b39b51cf8af26d6a87e18017ef79a27d4c02048f66b572c6dcb2fe11 27984 gpgme1.0_1.24.2-3.debian.tar.xz"
+    "3b1af32d0c24422d4c6c606334bef191470e7f796eb776e190ad8d5a908a34b7 2621 gpgme1.0_2.0.1-2.dsc 821ab0695c842eab51752a81980c92b0410c7eadd04103f791d5d2a526784966 1392080 gpgme1.0_2.0.1.orig.tar.bz2 278ce6f814c584972775702357640429da8364e609fd1a866549c089497fbcab 265 gpgme1.0_2.0.1.orig.tar.bz2.asc f6680da2829c61c8dc0e10613877a4bce1d00f15b3c70aa288f47b5ca502492f 21204 gpgme1.0_2.0.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gpgme1.0"
   ],
   "Files": [
-    "badd9391ea980bff0132377d4087ad25 3255 gpgme1.0_1.24.2-3.dsc 2e0cc1df9f3da8c2a7d7c9dc33b7f0bf 1891804 gpgme1.0_1.24.2.orig.tar.bz2 0d7120b636ea41de6f33bac3ee71982e 228 gpgme1.0_1.24.2.orig.tar.bz2.asc 3fe4cfdba93ee8f1f5193b2809f55d22 27984 gpgme1.0_1.24.2-3.debian.tar.xz"
+    "955ae508ffce2d5b70ce3fd37b0ac302 2621 gpgme1.0_2.0.1-2.dsc 73b6d337d02e1829323ef44830e92117 1392080 gpgme1.0_2.0.1.orig.tar.bz2 8b0b9e85a084a943c92504457d4c9c8d 265 gpgme1.0_2.0.1.orig.tar.bz2.asc fb3adfbc3e84c4fb7872818927988a60 21204 gpgme1.0_2.0.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "gpgme1.0"
   ],
   "Package-List": [
-    "gpgme-json deb utils optional arch=any libgpgme-dev deb libdevel optional arch=any libgpgme11t64 deb libs optional arch=any libgpgmepp-dev deb libdevel optional arch=any libgpgmepp-doc deb doc optional arch=all libgpgmepp6t64 deb libs optional arch=any libqgpgme-dev deb libdevel optional arch=any libqgpgme15t64 deb libs optional arch=any libqgpgmeqt6-15 deb libs optional arch=any libqgpgmeqt6-dev deb libdevel optional arch=any python3-gpg deb python optional arch=any"
+    "gpgme-json deb utils optional arch=any libgpgme-dev deb libdevel optional arch=any libgpgme45 deb libs optional arch=any"
   ],
   "Priority": [
     "source"
@@ -48,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gcc, libc6-dev, python3-all"
+    "gcc, libc6-dev, python3-all, python3-gpg"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Andreas Metzler \u003cametzler@debian.org\u003e,"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/debian/gpgme.git -b debian/unstable"
   ],
   "Version": [
-    "1.24.2-3"
+    "2.0.1-2"
   ]
 }
