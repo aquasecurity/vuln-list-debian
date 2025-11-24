@@ -6,16 +6,19 @@
     "librust-debian-watch-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.3-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0.4+default-dev \u003c!nocheck\u003e, librust-rowan-0.16+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-debversion+default-dev (\u003c\u003c 0.6-~~) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.4.7-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0+default-dev (\u003c\u003c 0.0.5-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0+default-dev (\u003e= 0.0.4-~~) \u003c!nocheck\u003e, librust-rowan-0.16+default-dev \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d4bf6f41ec5dd3781bf959566bf8d5820b698ca1b1d9a55040c84355083521c4 2116 rust-debian-watch_0.2.8-1.dsc f692668701f5382bea79960cad4798f97689de3e22af638ee43552887c180f4f 12507 rust-debian-watch_0.2.8.orig.tar.gz 5633d8eaf4385a267e74f8205171f7d3ce0e5f1d0924f1988039cfb3a9a1ad85 2152 rust-debian-watch_0.2.8-1.debian.tar.xz"
+    "b4e78658b5ff194024c64e9b93f2afbd020aaedc5147101e910bb3efe9a772ad 2281 rust-debian-watch_0.2.12-1.dsc 5757fa3876bf2468b31b988fc7c5061651aff4b417bdd732ea9c9717ee8026cb 21792 rust-debian-watch_0.2.12.orig.tar.gz fed8f0d3d22084eaafefbdd97a8b3b7fbc75eea70028c0dfc255393b25a271f0 2168 rust-debian-watch_0.2.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-debian-watch"
   ],
   "Files": [
-    "0ad5fbbaaea05a3b190b5fea62f17f9a 2116 rust-debian-watch_0.2.8-1.dsc a971e9354114168daf54440b0ed7ca36 12507 rust-debian-watch_0.2.8.orig.tar.gz e4bc0fe68048a9461516b174d2b197cf 2152 rust-debian-watch_0.2.8-1.debian.tar.xz"
+    "1ac0efcdee61d2639d0ea19fc2969a1c 2281 rust-debian-watch_0.2.12-1.dsc f441ab49c61ec09bbc70373266aa4603 21792 rust-debian-watch_0.2.12.orig.tar.gz 851972d93fe25c3b2e486ccf79cd19cd 2168 rust-debian-watch_0.2.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/debian-watch]"
   ],
   "Version": [
-    "0.2.8-1"
+    "0.2.12-1"
   ]
 }
