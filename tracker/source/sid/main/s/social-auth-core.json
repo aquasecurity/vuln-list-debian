@@ -6,16 +6,16 @@
     "python3-social-auth-core"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-oauthlib \u003c!nocheck\u003e, python3-openid \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-requests-oauthlib \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "5af9dde442fc938aed0ccc64c1dfc4026bcaf8e52fd1eebff8243c8fa785c9d3 2148 social-auth-core_4.6.1-1.dsc d6fef6143ab7ddcd092fa8ff7cd49d7888253315d6fcad70202ffe1685c0d76f 217452 social-auth-core_4.6.1.orig.tar.gz f6114a6da151509d73911d384ea807dae37e560cd4b215a513d543e50bdc360e 5392 social-auth-core_4.6.1-1.debian.tar.xz"
+    "1c9f08796b548f221325c55ac7771012be326bcdcac5fc37467b940b49089e73 2496 social-auth-core_4.8.1-1.dsc 29038965570e5923675010aa4b7676693c549e80136d9597dd9e26f847a2526f 226385 social-auth-core_4.8.1.orig.tar.gz 9cccf897a88cf4d5b1d88a011014fc52d58572fbca47a72c68e2d84d57f93f23 5760 social-auth-core_4.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/social-auth-core"
   ],
   "Files": [
-    "2a7b64019f115947d007d0d7b3516251 2148 social-auth-core_4.6.1-1.dsc 6d14a191dfa439c436d59771aa00117a 217452 social-auth-core_4.6.1.orig.tar.gz fb92786f2ba3ac40535fdcacf197b83c 5392 social-auth-core_4.6.1-1.debian.tar.xz"
+    "1041574ca45d9f75e9f92302aace3483 2496 social-auth-core_4.8.1-1.dsc 603342f52f265b903152470d1d49c3de 226385 social-auth-core_4.8.1.orig.tar.gz a155297c593f394954339b0b6306554d 5760 social-auth-core_4.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest, python3-pytest-cov, python3-responses, python3-typing-extensions"
+  ],
   "Uploaders": [
     "Andre Bianchi \u003cdrebs@riseup.net\u003e,"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/social-auth-core.git"
   ],
   "Version": [
-    "4.6.1-1"
+    "4.8.1-1"
   ]
 }
