@@ -6,16 +6,19 @@
     "librust-tiny-bip39-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.57-~~) \u003c!nocheck\u003e, librust-hmac-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.12.0-~~) \u003c!nocheck\u003e, librust-pbkdf2-0.12-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-rustc-hash-1+default-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-sha2-0.10+default-dev (\u003e= 0.10.2-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.31-~~) \u003c!nocheck\u003e, librust-unicode-normalization-0.1+default-dev (\u003e= 0.1.19-~~) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.5.5-~~) \u003c!nocheck\u003e, librust-zeroize-1+zeroize-derive-dev (\u003e= 1.5.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.57-~~) \u003c!nocheck\u003e, librust-hmac-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.12.0-~~) \u003c!nocheck\u003e, librust-pbkdf2-0.12-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev (\u003e= 0.8.5-~~) \u003c!nocheck\u003e, librust-rustc-hash-2+default-dev \u003c!nocheck\u003e, librust-sha2-0.10+default-dev (\u003e= 0.10.2-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.31-~~) \u003c!nocheck\u003e, librust-unicode-normalization-0.1+default-dev (\u003e= 0.1.19-~~) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.5.5-~~) \u003c!nocheck\u003e, librust-zeroize-1+zeroize-derive-dev (\u003e= 1.5.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "55db6a16cd330ae64c548bf9b6f1fa252038611c0a00bb4ee00c83fc149c6f59 2263 rust-tiny-bip39_1.0.0-1.dsc 62cc94d358b5a1e84a5cb9109f559aa3c4d634d2b1b4de3d0fa4adc7c78e2861 83178 rust-tiny-bip39_1.0.0.orig.tar.gz 3be7824b90f98b4c9ec114a1744181f025f00c0025604bb410698c1f58cd5326 3344 rust-tiny-bip39_1.0.0-1.debian.tar.xz"
+    "e99e0c9d00ee75ae6ed9ae3e917c632e0efc360a495b17610df08ce3e79d26ba 2908 rust-tiny-bip39_1.0.0-2.dsc 62cc94d358b5a1e84a5cb9109f559aa3c4d634d2b1b4de3d0fa4adc7c78e2861 83178 rust-tiny-bip39_1.0.0.orig.tar.gz 673100d74ee2c5641c6d1999ace2b2d37dc2adb2721e7c697a9cb717f0b57765 3476 rust-tiny-bip39_1.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tiny-bip39"
   ],
   "Files": [
-    "f3647a2697456ea73084ec2b200c1c9b 2263 rust-tiny-bip39_1.0.0-1.dsc e34559dc06d84212b83e4d2fb94d6673 83178 rust-tiny-bip39_1.0.0.orig.tar.gz 435c2fddac413f28da1e934e677f0d8d 3344 rust-tiny-bip39_1.0.0-1.debian.tar.xz"
+    "809fb66693f62d794745d99130575e9a 2908 rust-tiny-bip39_1.0.0-2.dsc e34559dc06d84212b83e4d2fb94d6673 83178 rust-tiny-bip39_1.0.0.orig.tar.gz 4e1913fbe4c577470d66146eec759867 3476 rust-tiny-bip39_1.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-0.4+default-dev"
+    "dh-cargo, librust-hex-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tiny-bip39]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.0-2"
   ]
 }
