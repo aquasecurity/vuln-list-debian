@@ -6,16 +6,19 @@
     "librust-ron-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.0.4-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.181-~~) \u003c!nocheck\u003e, librust-serde-1+serde-derive-dev (\u003e= 1.0.181-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+serde-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-once-cell-1+alloc-dev (\u003e= 1.20-~~) \u003c!nocheck\u003e, librust-once-cell-1+race-dev (\u003e= 1.20-~~) \u003c!nocheck\u003e, librust-serde-1+alloc-dev (\u003e= 1.0.181-~~) \u003c!nocheck\u003e, librust-serde-1+std-dev (\u003e= 1.0.181-~~) \u003c!nocheck\u003e, librust-serde-derive-1-dev (\u003e= 1.0.181-~~) \u003c!nocheck\u003e, librust-typeid-1-dev (\u003e= 1.0.1-~~) \u003c!nocheck\u003e, librust-unicode-ident-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bb7bb1e5a7905533dddcff06b6ba8ae24b5072667f1d7874e58b25dacc5446b1 1809 rust-ron_0.7.1-6.dsc 88073939a61e5b7680558e6be56b419e208420c2adb92be54921fa6b72283f1a 53572 rust-ron_0.7.1.orig.tar.gz 5e4c29268e41bc9178ad927c518df3969bfeb2ac80ba03aa6f5421780ce61024 5624 rust-ron_0.7.1-6.debian.tar.xz"
+    "a913d5085c55086363e04d3098ff71002969cbdcf8ffd80c99636cbbf66aceff 2167 rust-ron_0.12.0-1.dsc fd490c5b18261893f14449cbd28cb9c0b637aebf161cd77900bfdedaff21ec32 119892 rust-ron_0.12.0.orig.tar.gz 2573cf70c679a5d90493dd27174a75c908f095186023a6d026b9ed0054eb1ab0 4368 rust-ron_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ron"
   ],
   "Files": [
-    "4d2b6db971a2a7859febb440d1f26ea9 1809 rust-ron_0.7.1-6.dsc c6405a9cf543fbff4bd6bf24c85ac575 53572 rust-ron_0.7.1.orig.tar.gz f4fb48dc45eb71c0070e433eede78de3 5624 rust-ron_0.7.1-6.debian.tar.xz"
+    "cbc819bdbbce50fbf0566370d0d450ef 2167 rust-ron_0.12.0-1.dsc 7e69c977e4e3e384d62259a9a752dc10 119892 rust-ron_0.12.0.orig.tar.gz eb7cdd57f8d3a1be989f1a20f50a640a 4368 rust-ron_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-bytes-0.11+default-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-base64-0.22+std-dev, librust-bytes-1+serde-dev, librust-serde-1+derive-dev, librust-serde-1+std-dev, librust-serde-bytes-0.11+std-dev, librust-serde-json-1+std-dev, librust-typetag-0.2-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ron]"
   ],
   "Version": [
-    "0.7.1-6"
+    "0.12.0-1"
   ]
 }
