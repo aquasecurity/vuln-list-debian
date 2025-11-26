@@ -6,16 +6,19 @@
     "librust-grep-searcher-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.6.2-~~) \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev (\u003e= 0.8.33-~~) \u003c!nocheck\u003e, librust-encoding-rs-io-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e, librust-grep-matcher-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.6.3-~~) \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-grep-regex-dev (\u003e= 0.1.9)"
+    "debhelper-compat (= 13), dh-sequence-cargo, librust-grep-regex-dev (\u003e= 0.1.9)"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.6.2-~~) \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev (\u003e= 0.8.33-~~) \u003c!nocheck\u003e, librust-encoding-rs-io-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e, librust-grep-matcher-0.1+default-dev (\u003e= 0.1.8-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.6.3-~~) \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "31bbff719142dd254728e6da7abe0eee43371f62a48ca58e1cbb62f71d9f9cae 2750 rust-grep-searcher_0.1.14-1.dsc b9b6c14b3fc2e0a107d6604d3231dec0509e691e62447104bc385a46a7892cda 45073 rust-grep-searcher_0.1.14.orig.tar.gz 75e087b2366d9e1454db77f4c89437ef7cec75c387ced39c2ef525e5df5063a5 3792 rust-grep-searcher_0.1.14-1.debian.tar.xz"
+    "ae0a96468d3ba6c2c57c5487d9da031fb91211750f5b39e8214e548f4201ee26 2828 rust-grep-searcher_0.1.16-1.dsc ac63295322dc48ebb20a25348147905d816318888e64f531bfc2a2bc0577dc34 46048 rust-grep-searcher_0.1.16.orig.tar.gz 60192acce8e859cee2b13d7bc9045ddb64f6f75e5072e67b9c88006e7d2931fe 3856 rust-grep-searcher_0.1.16-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-grep-searcher"
   ],
   "Files": [
-    "f649f7dba1c38b6aeadf98915d4dec16 2750 rust-grep-searcher_0.1.14-1.dsc 09ecd572c3407a452bb7d0f7a2d3f228 45073 rust-grep-searcher_0.1.14.orig.tar.gz 5fe9a038ca77566dc01c491239be0290 3792 rust-grep-searcher_0.1.14-1.debian.tar.xz"
+    "6ff96d16b53d15f2b0bc8c72384c5b3f 2828 rust-grep-searcher_0.1.16-1.dsc 142ccbca0a848debca04f3416f1b2900 46048 rust-grep-searcher_0.1.16.orig.tar.gz 75064f305f5b0ffe4c33644ed438f21b 3856 rust-grep-searcher_0.1.16-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-grep-regex-0.1+default-dev, librust-regex-1+default-dev"
+    "dh-cargo, librust-grep-regex-0.1+default-dev, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/grep-searcher]"
   ],
   "Version": [
-    "0.1.14-1"
+    "0.1.16-1"
   ]
 }
