@@ -6,19 +6,25 @@
     "librust-percent-encoding-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7604a6a38de17115fba3ebabe0cf682e6ccce5386f5f22eb7fb5bafa4a6f5c79 2197 rust-percent-encoding_2.3.1-1.dsc e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e 10235 rust-percent-encoding_2.3.1.orig.tar.gz 6de1f5ae3f3d8a8fb51181d9bf4621514e1b7f7b315dac5c524a2ac0dd201dd9 2876 rust-percent-encoding_2.3.1-1.debian.tar.xz"
+    "8209f5b400bcf5c13d7e78b07c70e50e61951d257a1abfe908e04b9f3d91397c 2405 rust-percent-encoding_2.3.2-1.dsc 9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220 11583 rust-percent-encoding_2.3.2.orig.tar.gz 86b549599e22989586bc3c0a73fbcf202296d929d23440a468da1024372a221d 2940 rust-percent-encoding_2.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-percent-encoding"
   ],
   "Files": [
-    "558a3372a66530eed15e5c0bce332c69 2197 rust-percent-encoding_2.3.1-1.dsc 0ba30a94d7b8865c23e86d4d64e5b91e 10235 rust-percent-encoding_2.3.1.orig.tar.gz f054819583927c1345d3dcedddbeefce 2876 rust-percent-encoding_2.3.1-1.debian.tar.xz"
+    "c584888a6e4534d00c7f6f95e7aa0f8b 2405 rust-percent-encoding_2.3.2-1.dsc ef8998050cc1339f2187fcb43e927f1b 11583 rust-percent-encoding_2.3.2.orig.tar.gz 093273fcd28ba0e0d32cd7da7e919cd3 2940 rust-percent-encoding_2.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/rust-url/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/percent-encoding]"
   ],
   "Version": [
-    "2.3.1-1"
+    "2.3.2-1"
   ]
 }
