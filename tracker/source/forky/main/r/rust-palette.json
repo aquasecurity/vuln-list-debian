@@ -6,19 +6,25 @@
     "librust-palette-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+std-dev \u003c!nocheck\u003e, librust-approx-0.5-dev \u003c!nocheck\u003e, librust-fast-srgb8-1+default-dev \u003c!nocheck\u003e, librust-palette-derive-0.7+default-dev (\u003e= 0.7.6-~~) \u003c!nocheck\u003e, librust-phf-0.11+macros-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+std-dev \u003c!nocheck\u003e, librust-approx-0.5-dev \u003c!nocheck\u003e, librust-fast-srgb8-1+default-dev \u003c!nocheck\u003e, librust-palette-derive-0.7+default-dev (\u003e= 0.7.6-~~) \u003c!nocheck\u003e, librust-phf-0.11+macros-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d82f4c700a844d038e6b197b9215627a36817dc8f80f6dbfaca03ae7d710235d 2323 rust-palette_0.7.6-1.dsc 4cbf71184cc5ecc2e4e1baccdb21026c20e5fc3dcf63028a086131b3ab00b6e6 230913 rust-palette_0.7.6.orig.tar.gz c4cb25162f9908bde0137c4b0236a55e88983958d8e96b547de253e0a7189780 3284 rust-palette_0.7.6-1.debian.tar.xz"
+    "8cbfc20c9645b082aa990bc577042714926b803395db47f1a5cf1b3a8b9ae9ba 1909 rust-palette_0.7.6-2.dsc 4cbf71184cc5ecc2e4e1baccdb21026c20e5fc3dcf63028a086131b3ab00b6e6 230913 rust-palette_0.7.6.orig.tar.gz 40fac3786c8c3b5e1d40849d42935c5629b364e3f1dcef77f79dcb1bb89f88bd 5232 rust-palette_0.7.6-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-palette"
   ],
   "Files": [
-    "9c665a9ef90077e9cf810bb7089f5930 2323 rust-palette_0.7.6-1.dsc bfa45fa4722dd5ed3317049d3717a5c7 230913 rust-palette_0.7.6.orig.tar.gz b88c53c3bdfec0ba205f995dcb4b376f 3284 rust-palette_0.7.6-1.debian.tar.xz"
+    "69a14b5ec5d4c597f33443fbe2216570 1909 rust-palette_0.7.6-2.dsc bfa45fa4722dd5ed3317049d3717a5c7 230913 rust-palette_0.7.6.orig.tar.gz b10e7e32554efe75b85b8b814b741e33 5232 rust-palette_0.7.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Ogeon/palette"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-image-0.25+png-dev, librust-ron-0.12+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/palette]"
   ],
   "Version": [
-    "0.7.6-1"
+    "0.7.6-2"
   ]
 }
