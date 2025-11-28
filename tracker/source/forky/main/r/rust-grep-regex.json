@@ -6,16 +6,19 @@
     "librust-grep-regex-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev (\u003e= 1.6.2-~~) \u003c!nocheck\u003e, librust-grep-matcher-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-regex-automata-0.4+default-dev \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev (\u003e= 1.6.2-~~) \u003c!nocheck\u003e, librust-grep-matcher-0.1+default-dev (\u003e= 0.1.8-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-regex-automata-0.4+default-dev \u003c!nocheck\u003e, librust-regex-syntax-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2fd483105831f86f371a49ff4e6972e2cc63d868fbf526ac7e29ec2945a3dadd 2491 rust-grep-regex_0.1.13-1.dsc 9edd147c7e3296e7a26bd3a81345ce849557d5a8e48ed88f736074e760f91f7e 28030 rust-grep-regex_0.1.13.orig.tar.gz dbbf2f86988cc57d6dcc86d38afa5f503d200fbc66434994e3073cc768b8ab59 3320 rust-grep-regex_0.1.13-1.debian.tar.xz"
+    "fa377cac9bd734b23d9f7aeee778cce64893f1e38e16d8c71e76b86a5312455e 2569 rust-grep-regex_0.1.14-1.dsc 0ce0c256c3ad82bcc07b812c15a45ec1d398122e8e15124f96695234db7112ef 29273 rust-grep-regex_0.1.14.orig.tar.gz 7de8ec716f439b142d1eb7c086e53ca5b77c8ba3ad714f77515bd64a72b14f3c 3380 rust-grep-regex_0.1.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-grep-regex"
   ],
   "Files": [
-    "acdb20947fafba9f9159a2aaa99898bb 2491 rust-grep-regex_0.1.13-1.dsc 384bc35910b570d2844ab0814086a554 28030 rust-grep-regex_0.1.13.orig.tar.gz b30f839ce7b257e574783540bea490a1 3320 rust-grep-regex_0.1.13-1.debian.tar.xz"
+    "7cfd42dc81224523d308fb78987c632f 2569 rust-grep-regex_0.1.14-1.dsc 87ebd172c9c8b17562b53c85237cc29c 29273 rust-grep-regex_0.1.14.orig.tar.gz bff190ce1f0dca8841e331c598bf6c1d 3380 rust-grep-regex_0.1.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/grep-regex]"
   ],
   "Version": [
-    "0.1.13-1"
+    "0.1.14-1"
   ]
 }

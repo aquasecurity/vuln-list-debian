@@ -6,16 +6,19 @@
     "librust-grep-matcher-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.6.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.6.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "42d16155da4edd767f1bf8cd176ab187873cfa7424efe7c7d13a6a2c0ae28c72 2331 rust-grep-matcher_0.1.7-1.dsc 47a3141a10a43acfedc7c98a60a834d7ba00dfe7bec9071cbfc19b55b292ac02 15609 rust-grep-matcher_0.1.7.orig.tar.gz f9809446062a113252b33bdc9fd7d6d2b4c90ae051980e57b77e8305a3085bbe 3392 rust-grep-matcher_0.1.7-1.debian.tar.xz"
+    "f1963a875336e1875fac0c5ac7acca37ee138672e12746b928cf905fb09bc5e7 2380 rust-grep-matcher_0.1.8-1.dsc 36d7b71093325ab22d780b40d7df3066ae4aebb518ba719d38c697a8228a8023 16232 rust-grep-matcher_0.1.8.orig.tar.gz 3fe207f701ea4efeaf552adb1c00c25bea486dea8f562e73ae4d090d6c986774 3444 rust-grep-matcher_0.1.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-grep-matcher"
   ],
   "Files": [
-    "044d7d9e262e075cbee1e9afec9e88fa 2331 rust-grep-matcher_0.1.7-1.dsc 52e4d5b6fce415c934024ccc29647223 15609 rust-grep-matcher_0.1.7.orig.tar.gz 7cfa3930d4f90281ca6049edc19bd2e4 3392 rust-grep-matcher_0.1.7-1.debian.tar.xz"
+    "fee67c08509ba5ef4e006dea58a7bfb7 2380 rust-grep-matcher_0.1.8-1.dsc 1be0c50e806033bd8415d97d78fedbdc 16232 rust-grep-matcher_0.1.8.orig.tar.gz 7e5b13b841abace7df1694db20cfc7bb 3444 rust-grep-matcher_0.1.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-regex-1+default-dev"
+    "dh-cargo, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/grep-matcher]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.1.8-1"
   ]
 }
