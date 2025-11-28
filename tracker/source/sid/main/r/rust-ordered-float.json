@@ -6,19 +6,25 @@
     "librust-ordered-float-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.9-~~) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.9-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6906a2a4a1b122c6334aea6c4d735e45ffcc6b52bed79e78e2d53dff9f849a8b 2356 rust-ordered-float_4.2.2-2.dsc 4a91171844676f8c7990ce64959210cd2eaef32c2612c50f9fae9f8aaa6065a6 21190 rust-ordered-float_4.2.2.orig.tar.gz 1c32941809c15f9237660b4bd2b60662608e71dfab6f7867fc1f6ef9d8bc9014 3600 rust-ordered-float_4.2.2-2.debian.tar.xz"
+    "4fd4cfe82b16f2452633326fbbbb0a3185c625ae5a17bfc54be75267c0e256c3 2413 rust-ordered-float_4.6.0-1.dsc 7bb71e1b3fa6ca1c61f383464aaf2bb0e2f8e772a1f01d486832464de363b951 23633 rust-ordered-float_4.6.0.orig.tar.gz 4ca3466ab4cba851419eee8ce528af6788a1625259801a89dfae152b607eed3f 3724 rust-ordered-float_4.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ordered-float"
   ],
   "Files": [
-    "ba103e09f26230c9dc356d26f2f661be 2356 rust-ordered-float_4.2.2-2.dsc ef2dd47fdbe5bf5bf83b55d76b77442b 21190 rust-ordered-float_4.2.2.orig.tar.gz 3042bdbf5c2ff296a3a06e7d53b0fb71 3600 rust-ordered-float_4.2.2-2.debian.tar.xz"
+    "ff620ca4ecb84cdbcc64e20359fae10e 2413 rust-ordered-float_4.6.0-1.dsc e9877281560c00f010c067d58ba45844 23633 rust-ordered-float_4.6.0.orig.tar.gz b12daf4dd6d08208e42fa746f0f5410c 3724 rust-ordered-float_4.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/reem/rust-ordered-float"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ordered-float]"
   ],
   "Version": [
-    "4.2.2-2"
+    "4.6.0-1"
   ]
 }
