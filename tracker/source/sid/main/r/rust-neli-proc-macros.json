@@ -6,19 +6,25 @@
     "librust-neli-proc-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-either-1+default-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+extra-traits-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-either-1+default-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d36c0d14d4d276158c1a98fc01273e375ae2e140ac23322071108f857a348e39 2534 rust-neli-proc-macros_0.1.1-1.dsc 7fd8cb6bcd1e9652fa45b7cf83c117ff5b9d6dbd02842af324b1802e19680411 10042 rust-neli-proc-macros_0.1.1.orig.tar.gz ceebbb031ebc8b8faa90516a143f4728a9d6f64f9de9f7f389d480b01d14894a 2664 rust-neli-proc-macros_0.1.1-1.debian.tar.xz"
+    "4d9cb92920cf1ad685870259c7400386db4305e2e7b2601e887e61534ded59cc 2611 rust-neli-proc-macros_0.2.1-1.dsc 90e502fe5db321c6e0ae649ccda600675680125a8e8dee327744fe1910b19332 11432 rust-neli-proc-macros_0.2.1.orig.tar.gz b03a430588794841cd7136fc11c128c73607fa6a07567f5f5738439567004aec 2780 rust-neli-proc-macros_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-neli-proc-macros"
   ],
   "Files": [
-    "2c04dd13510d75e344be65816b0deb0e 2534 rust-neli-proc-macros_0.1.1-1.dsc d9d4d11426825e6b4cd31cf95ed31f1a 10042 rust-neli-proc-macros_0.1.1.orig.tar.gz 194878c5800cf5d5633a24ee4b91d993 2664 rust-neli-proc-macros_0.1.1-1.debian.tar.xz"
+    "830a7cc6ebf1d99769ca18ba67eb2adf 2611 rust-neli-proc-macros_0.2.1-1.dsc 7022fa579336439271c5267867414d16 11432 rust-neli-proc-macros_0.2.1.orig.tar.gz ad6c79793f0fef885228f8dc9f454c9b 2780 rust-neli-proc-macros_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/jbaublitz/neli"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Carlos F. Sanz \u003ccarlos@sanz.dev\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/neli-proc-macros]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.2.1-1"
   ]
 }
