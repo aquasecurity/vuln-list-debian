@@ -6,16 +6,19 @@
     "librust-http-body-util-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.49) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-1+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-1+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "306e2fb0a6885b3b8c6432a2e86a15090d1b26ed77216242026d4b7b3326f2ea 2012 rust-http-body-util_0.1.2-1.dsc 793429d76616a256bcb62c2a2ec2bed781c8307e797e2598c50010f2bee2544f 12821 rust-http-body-util_0.1.2.orig.tar.gz 619af2c4b534d1b09eb01c03092f90aba55166b6ff80f573da4acce70c8751ed 2776 rust-http-body-util_0.1.2-1.debian.tar.xz"
+    "1d1a36e5b6a75d77cc0eecaed95e8c2cbf992d0a374b6d1b0d164d60e278d204 2061 rust-http-body-util_0.1.3-1.dsc b021d93e26becf5dc7e1b75b1bed1fd93124b374ceb73f43d4d4eafec896a64a 16975 rust-http-body-util_0.1.3.orig.tar.gz b0bd4b197e96d267f13f42f8f98a3e25c7c23560dc39dd298e7328528b8078b3 2928 rust-http-body-util_0.1.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-http-body-util"
   ],
   "Files": [
-    "4c61aeaa1b8740942ca6421c5edd55c4 2012 rust-http-body-util_0.1.2-1.dsc ff4d5f0e7155017add510cdfa1689737 12821 rust-http-body-util_0.1.2.orig.tar.gz 2ab768efb36954969bc37bde0581113b 2776 rust-http-body-util_0.1.2-1.debian.tar.xz"
+    "c4f9e0b70eeef8a3ffc16c1a1f17ac0d 2061 rust-http-body-util_0.1.3-1.dsc c059b75a48188c6b09d6a877caecc556 16975 rust-http-body-util_0.1.3.orig.tar.gz 3f67bd63f6888a3f4eba95c28a07b676 2928 rust-http-body-util_0.1.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, rustc"
+    "dh-cargo, librust-futures-util-0.3-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/http-body-util]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.1.3-1"
   ]
 }
