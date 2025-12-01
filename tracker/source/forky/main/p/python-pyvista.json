@@ -6,16 +6,16 @@
     "python3-pyvista"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all-dev, python3-colorcet \u003c!nocheck\u003e, python3-imageio \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-meshio \u003c!nocheck\u003e, python3-pil \u003c!nocheck\u003e, python3-pooch \u003c!nocheck\u003e, python3-scooby \u003c!nocheck\u003e, python3-vtk9 | python3-paraview \u003c!nocheck\u003e, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, python3-aiohttp \u003c!nocheck\u003e, python3-colorcet \u003c!nocheck\u003e, python3-imageio \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-meshio \u003c!nocheck\u003e, python3-pil \u003c!nocheck\u003e, python3-pooch \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-scooby \u003c!nocheck\u003e, python3-vtk9 | python3-paraview \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "64f2781aa6012b65b365c5f6794ac72e259f8da4fbf7fe55a43f7215e51292b4 2618 python-pyvista_0.44.1-11.dsc c2372b18eb5a4d3121b34dbe8d23d7486223015e08f3131224ab88e1f1f55660 139132470 python-pyvista_0.44.1.orig.tar.gz 95d5d8956c15d9139beaf3747fb08bfc3967fa1892064378c316c003cd16941f 15272 python-pyvista_0.44.1-11.debian.tar.xz"
+    "8cc0f41af16e10649c09c8e68c624058e3b98cc934b58d25f0ab292ab218961b 2790 python-pyvista_0.46.4-3.dsc 36d957842d5a73baafde03694c79a5dacaa9ae65403593317c566abfbb5cf48d 150240862 python-pyvista_0.46.4.orig.tar.gz 69ce3bf5c88d6d0f43a73eb652cc1aa4a7f505036fcc3c53a476f0f7cd4369b9 16584 python-pyvista_0.46.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-pyvista"
   ],
   "Files": [
-    "f106ee2f87e810ee88fccb5848568081 2618 python-pyvista_0.44.1-11.dsc 958031f64663bcb21bace6bc1584b712 139132470 python-pyvista_0.44.1.orig.tar.gz 18aee22b114a91f1ca50355f426dfa21 15272 python-pyvista_0.44.1-11.debian.tar.xz"
+    "5dff2be7a7a790ddbd31121e178c6b75 2790 python-pyvista_0.46.4-3.dsc f983084ad6fdc25d45e5bc28d99e3b6f 150240862 python-pyvista_0.46.4.orig.tar.gz 5f9253a0ebdaebfba742216008679b27 16584 python-pyvista_0.46.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python-pyvista"
   ],
   "Package-List": [
-    "python3-pyvista deb science optional arch=all"
+    "python3-pyvista deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3, python3-hypothesis, python3-ipython, python3-pytest, python3-pytest-random-order, python3-tqdm, x11-xserver-utils, xauth, xvfb"
+    "@builddeps@, ffmpeg, python3-aiohttp, python3-all, python3-hypothesis, python3-imageio-ffmpeg, python3-ipython, python3-pandas, python3-pytest, python3-pytest-mock, python3-pytest-random-order, python3-scipy, python3-tqdm, x11-xserver-utils, xauth, xvfb"
   ],
   "Uploaders": [
-    "Andreas Tille \u003ctille@debian.org\u003e, Francesco Ballarin \u003cfrancesco.ballarin@unicatt.it\u003e, Drew Parsons \u003cdparsons@debian.org\u003e"
+    "Andreas Tille \u003ctille@debian.org\u003e, Francesco Ballarin \u003cballarin@debian.org\u003e, Drew Parsons \u003cdparsons@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/python-pyvista"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/python-pyvista.git"
   ],
   "Version": [
-    "0.44.1-11"
+    "0.46.4-3"
   ]
 }

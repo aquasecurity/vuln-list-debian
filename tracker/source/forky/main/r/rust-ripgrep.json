@@ -6,16 +6,19 @@
     "ripgrep"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native (\u003e= 1.70), libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.75-~~), librust-bstr-1+default-dev (\u003e= 1.7.0-~~), librust-grep-0.3+default-dev (\u003e= 0.3.2-~~), librust-ignore-0.4+default-dev (\u003e= 0.4.23-~~), librust-lexopt-0.3+default-dev, librust-log-0.4+default-dev (\u003e= 0.4.5-~~), librust-serde-json-1+default-dev (\u003e= 1.0.23-~~), librust-termcolor-1+default-dev (\u003e= 1.4.0-~~), librust-textwrap-0.16-dev, asciidoc, bash-completion, xsltproc, docbook-xsl, librust-grep-dev (\u003e= 0.2.8-3)"
+    "debhelper-compat (= 13), dh-sequence-cargo, asciidoc, bash-completion, xsltproc, docbook-xsl"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.85), libstd-rust-dev, librust-anyhow-1+default-dev (\u003e= 1.0.75-~~), librust-bstr-1+default-dev (\u003e= 1.7.0-~~), librust-grep-0.4+default-dev (\u003e= 0.4.1-~~), librust-ignore-0.4+default-dev (\u003e= 0.4.24-~~), librust-lexopt-0.3+default-dev, librust-log-0.4+default-dev (\u003e= 0.4.5-~~), librust-serde-json-1+default-dev (\u003e= 1.0.23-~~), librust-termcolor-1+default-dev (\u003e= 1.4.0-~~), librust-textwrap-0.16-dev"
   ],
   "Checksums-Sha256": [
-    "b95adec59f113444b16f4b8f28bfb0208ad842ccdb175583ec0fa8ce9771d5c3 2524 rust-ripgrep_14.1.1-1.dsc f77b8032dc584527975f34aa5a897d0ef5a785573fda778771a614ff9da501d9 213636 rust-ripgrep_14.1.1.orig.tar.gz 8f02ab0099a2828683e87c836a4fb03e5362859fc463e91440d302b3aa5f2984 6524 rust-ripgrep_14.1.1-1.debian.tar.xz"
+    "00aee8f9cb56b82aa3a8cadb267a28d88a8678e6c8f9be0c6a58d766bfc4e827 2564 rust-ripgrep_15.1.0-1.dsc f388c4955f85477c28a8667355819844a06614b083c23517f0e86bd1d6d82b73 222357 rust-ripgrep_15.1.0.orig.tar.gz c3fa48cae38f250f520bb3c652463e202fd18c2361663107e1c03be21cdeb625 6488 rust-ripgrep_15.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ripgrep"
   ],
   "Files": [
-    "cb795af9bcd2e9984a8acbfd4bbe1428 2524 rust-ripgrep_14.1.1-1.dsc 312ce0955a8593ebd334237b70c7ffb4 213636 rust-ripgrep_14.1.1.orig.tar.gz 1d379bfa39193051a41367d3a90c9de5 6524 rust-ripgrep_14.1.1-1.debian.tar.xz"
+    "9bf00ca3738c2e2a4c57d903cb457880 2564 rust-ripgrep_15.1.0-1.dsc f6bdffb75a1576e5e4410750f28e4197 222357 rust-ripgrep_15.1.0.orig.tar.gz f30c0d33295bf8483b66333bc2c23d7b 6488 rust-ripgrep_15.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ripgrep]"
   ],
   "Version": [
-    "14.1.1-1"
+    "15.1.0-1"
   ]
 }
