@@ -6,16 +6,19 @@
     "papers, papers-common, libppsdocument-4.0-6, libppsview-4.0-5, libpapers-dev, libpapers-doc, gir1.2-papers-4.0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-apparmor, dh-cargo, dh-sequence-gir, dh-sequence-gnome, appstream, blueprint-compiler, desktop-file-utils, gi-docgen (\u003e= 2021.1) \u003c!nodoc\u003e, gir-rust-code-generator, gir1.2-gdk-4.0-dev, gir1.2-gdkpixbuf-2.0-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gir1.2-gtk-4.0-dev, gobject-introspection (\u003e= 1.86.0-5), gsettings-desktop-schemas-dev, itstool, libadwaita-1-dev (\u003e= 1.8~alpha), libarchive-dev (\u003e= 3.6.0), libcairo2-dev (\u003e= 1.14.0), libdjvulibre-dev (\u003e= 2.0), libexempi-dev (\u003e= 2.0), libgdk-pixbuf-2.0-dev (\u003e= 2.40), libglib2.0-dev (\u003e= 2.75), libgtk-4-dev (\u003e= 4.17.1), libnautilus-extension-dev (\u003e= 43), libpoppler-glib-dev (\u003e= 25.03), librust-bitflags-2-dev, librust-env-logger-0.11-dev, librust-futures-0.3-dev, librust-gettext-rs-0.7+gettext-system-dev, librust-gtk4+gnome-45-dev, librust-image-0.25+png-dev, librust-libadwaita-0.8+v1-7-dev, librust-libc-0.2-dev, librust-log-0.4-dev, librust-lru-0.12-dev, librust-oo7-0.5-dev, librust-shell-words-1-dev, librust-system-deps-7-dev, librust-tempfile-3-dev \u003c!nocheck\u003e, libspelling-1-dev, libsysprof-capture-4-dev (\u003e= 3.38.0) [amd64 arm64 armel armhf i386 loong64 mips64el ppc64el riscv64 s390x powerpc ppc64], libtiff-dev (\u003e= 4), meson (\u003e= 1.8.0), rustfmt, xmlstarlet, zlib1g-dev"
+    "debhelper-compat (= 13), dh-apparmor, dh-cargo, dh-sequence-gir, dh-sequence-gnome, appstream, blueprint-compiler, cargo:native, desktop-file-utils, gir-rust-code-generator, gir1.2-gdk-4.0-dev, gir1.2-gdkpixbuf-2.0-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gir1.2-gtk-4.0-dev, gobject-introspection (\u003e= 1.86.0-5), gsettings-desktop-schemas-dev, itstool, libadwaita-1-dev (\u003e= 1.8~alpha), libarchive-dev (\u003e= 3.6.0), libcairo2-dev (\u003e= 1.14.0), libdjvulibre-dev (\u003e= 2.0), libexempi-dev (\u003e= 2.0), libgdk-pixbuf-2.0-dev (\u003e= 2.40), libglib2.0-dev (\u003e= 2.75), libgtk-4-dev (\u003e= 4.17.1), libnautilus-extension-dev (\u003e= 43), libpoppler-glib-dev (\u003e= 25.03), librust-bitflags-2+default-dev (\u003e= 2.2-~~), librust-cairo-rs-0.21+default-dev, librust-cairo-sys-rs-0.21+default-dev, librust-env-logger-0.11+default-dev, librust-futures-0.3+default-dev, librust-gdk-pixbuf-0.21+default-dev, librust-gdk-pixbuf-sys-0.21+default-dev, librust-gdk4-0.10+default-dev, librust-gdk4-sys-0.10+default-dev, librust-gettext-rs-0.7+default-dev, librust-gettext-rs-0.7+gettext-system-dev, librust-gio-0.21+default-dev, librust-gio-sys-0.21+default-dev, librust-glib-0.21+default-dev, librust-glib-sys-0.21+default-dev, librust-gobject-sys-0.21+default-dev, librust-gtk4-0.10+default-dev, librust-gtk4-0.10+gnome-45-dev, librust-gtk4-sys-0.10+default-dev, librust-image-0.25+png-dev, librust-libadwaita-0.8+default-dev, librust-libadwaita-0.8+v1-7-dev, librust-libc-0.2+default-dev, librust-log-0.4+default-dev, librust-lru-0+default-dev (\u003e= 0.12-~~), librust-oo7-0.5-dev, librust-pango-0.21+default-dev, librust-pango-sys-0.21+default-dev, librust-shell-words-1+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev, libspelling-1-dev, libsysprof-capture-4-dev (\u003e= 3.38.0) [amd64 arm64 armel armhf i386 loong64 mips64el ppc64el riscv64 s390x powerpc ppc64], librust-tempfile-3+default-dev \u003c!nocheck\u003e, libtiff-dev (\u003e= 4), meson (\u003e= 1.8.0), rustc:native (\u003e= 1.83), rustfmt, xmlstarlet, zlib1g-dev"
+  ],
+  "Build-Depends-Indep": [
+    "gi-docgen (\u003e= 2021.1) \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "af45773a4acb8fe2ed887128f508ecfb4bec117a665149add5ae691592764411 3732 papers_49.1-1.dsc 4ab23a67897bddd6be2d6298210fff602cfec0f35688bc5bff270360b0784c29 4467132 papers_49.1.orig.tar.xz 1f33e4de4cf14a91f56eba9d3690d9ffde11999dd4a9848763e6e6721cdbc537 57476 papers_49.1-1.debian.tar.xz"
+    "3ec46846b5e8970860719b340fe7c40abb6df662acdc74216143602058a4b90d 4492 papers_49.2-1.dsc 49a9ca2f62c5598f8e6ca4e67c87f4f59c5ec0de704d3b299d5164c91d1f6a41 4470820 papers_49.2.orig.tar.xz 241bcae58621f36f31d08d05b1d480e83df4661c1d63c574894e4c77d0e6476d 57664 papers_49.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/papers"
   ],
   "Files": [
-    "47e6d4839c6b43ff612e76cb131f8ae6 3732 papers_49.1-1.dsc a756b3d2543aaf6e13fd5641383d770e 4467132 papers_49.1.orig.tar.xz 3cf2ff38f4254155a51d435e71397fe7 57476 papers_49.1-1.debian.tar.xz"
+    "5b65589e445a8e522a36a7997f8a0d02 4492 papers_49.2-1.dsc 0529e06a616cd69cac0f6e07773e4655 4470820 papers_49.2.orig.tar.xz a1a398c4975ba64ab23530e6c54cc61f 57664 papers_49.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/papers.git"
   ],
   "Version": [
-    "49.1-1"
+    "49.2-1"
   ]
 }
