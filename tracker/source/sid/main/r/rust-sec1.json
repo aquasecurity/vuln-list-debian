@@ -6,19 +6,25 @@
     "librust-sec1-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base16ct-0.2-dev \u003c!nocheck\u003e, librust-der-0.7+default-dev \u003c!nocheck\u003e, librust-der-0.7+oid-dev \u003c!nocheck\u003e, librust-der-0.7+zeroize-dev \u003c!nocheck\u003e, librust-generic-array-0.14-dev (\u003e= 0.14.7-~~) \u003c!nocheck\u003e, librust-zeroize-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base16ct-0.2-dev \u003c!nocheck\u003e, librust-der-0.7+default-dev \u003c!nocheck\u003e, librust-der-0.7+oid-dev \u003c!nocheck\u003e, librust-der-0.7+zeroize-dev \u003c!nocheck\u003e, librust-generic-array-0.14-dev (\u003e= 0.14.7-~~) \u003c!nocheck\u003e, librust-zeroize-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4685702647e67d07c3973b8d3792999a217116bf5f8d757f59e761f0c060c399 2404 rust-sec1_0.7.2-1.dsc f0aec48e813d6b90b15f0b8948af3c63483992dee44c03e9930b3eebdabe046e 17935 rust-sec1_0.7.2.orig.tar.gz c662dc13b4d8b649adff363b50dd3cd6f1d21bb462313fca6a6cdd4c57366e22 3220 rust-sec1_0.7.2-1.debian.tar.xz"
+    "15a1fe2ee64942802fa9e797513b215655260b497db88fd4f9c7f2c90ef944e6 1953 rust-sec1_0.7.3-1.dsc d3e97a565f76233a6003f9f5c54be1d9c5bdfa3eccfb189469f11ec4901c47dc 17979 rust-sec1_0.7.3.orig.tar.gz 82d1647ff91c29cb5aaa89c1126612e8e19c4ec5c846665a8a815a5cd9f327f7 3172 rust-sec1_0.7.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sec1"
   ],
   "Files": [
-    "3e0baf1b466182536e86261d0294b1de 2404 rust-sec1_0.7.2-1.dsc cfb648e1466d84cf7fb6eb42278c1f3c 17935 rust-sec1_0.7.2.orig.tar.gz 5da44a9f900b70a29fb67f8783ee7ff5 3220 rust-sec1_0.7.2-1.debian.tar.xz"
+    "0b98194c1f2ce3f35769dff8dec93d06 1953 rust-sec1_0.7.3-1.dsc 46e0a2b34b2a6108cad9e2b1da756cab 17979 rust-sec1_0.7.3.orig.tar.gz 19a19871a293b67232cf2d16c13aaba8 3172 rust-sec1_0.7.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/formats/tree/master/sec1"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
-    "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
+    "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/sec1"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sec1]"
   ],
   "Version": [
-    "0.7.2-1"
+    "0.7.3-1"
   ]
 }
