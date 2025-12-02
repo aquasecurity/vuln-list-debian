@@ -6,19 +6,25 @@
     "librust-email-address-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "daf086dbe70db6d38a942f5ca610c6dbae02d496b099ebc81ba8221a8ebe3032 2377 rust-email-address_0.2.4-1.dsc e2153bd83ebc09db15bcbdc3e2194d901804952e3dc96967e1cd3b0c5c32d112 12772 rust-email-address_0.2.4.orig.tar.gz 89360b30b02b05cd8ae743523ea3f17da7fef5305ee2f1e30c1f2d3aa4bb16ae 2604 rust-email-address_0.2.4-1.debian.tar.xz"
+    "9bc33c14f7a97b4a7d9b95d42d7b89851b8442b6e24dcadfc932a2e48cf0eb63 1770 rust-email-address_0.2.9-1.dsc e079f19b08ca6239f47f8ba8509c11cf3ea30095831f7fed61441475edd8c449 21579 rust-email-address_0.2.9.orig.tar.gz cda285b893bb11d6dc00fac5637f737bea52dde99d970fd853530575a526a632 2852 rust-email-address_0.2.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-email-address"
   ],
   "Files": [
-    "4872d753b0a8e2835e6d86ddc134c994 2377 rust-email-address_0.2.4-1.dsc 6ad09d86aa2da1c892786346cc34f50e 12772 rust-email-address_0.2.4.orig.tar.gz 514d584c30c80e59b8ed6391878e8f03 2604 rust-email-address_0.2.4-1.debian.tar.xz"
+    "b0b8fb005b25366b018ea9e1d3cbe5f2 1770 rust-email-address_0.2.9-1.dsc d52f954e7bacdfe7bb20ceb3caee4a1c 21579 rust-email-address_0.2.9.orig.tar.gz 9eedc0a7d935f0f3dc6895e2f60e2397 2852 rust-email-address_0.2.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/johnstonskj/rust-email_address.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-claims-0.8+default-dev, librust-serde-assert-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Bernhard Dick \u003cbernhard@bdick.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/email-address]"
   ],
   "Version": [
-    "0.2.4-1"
+    "0.2.9-1"
   ]
 }
