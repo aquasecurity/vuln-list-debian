@@ -1,24 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 ppc64el all"
+    "amd64 arm64 ppc64el"
   ],
   "Binary": [
-    "hipcc, libamdhip64-5, libamdhip64-dev, libhiprtc-builtins5, libamdhip64-doc, rocm-opencl-icd"
+    "libamdhip64-6, libamdhip64-dev, libhiprtc6, libhiprtc-builtins6, hip-utils, rocm-opencl-icd"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), clang-17, clang-tools-17 \u003c!nocheck\u003e, cmake, libamd-comgr-dev (\u003e= 5.6.0~), libclang-17-dev, libclang-rt-17-dev, libhsa-runtime-dev (\u003e= 5.6.0~), libnuma-dev, librocm-smi-dev (\u003e= 5.2.0~) \u003c!nocheck\u003e, lld-17 \u003c!nocheck\u003e, llvm-17-dev, mesa-common-dev, rocminfo (\u003e= 5.2.0~) \u003c!nocheck\u003e, rocm-device-libs-17 \u003c!nocheck\u003e, zlib1g-dev"
-  ],
-  "Build-Depends-Indep": [
-    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), clang-21, clang-tools-21, cmake, libamd-comgr-dev (\u003e= 6.4.3~), rocm-device-libs-21, libclang-21-dev, libclang-rt-21-dev, libhsa-runtime-dev (\u003e= 6.4.3~), libnuma-dev, lld-21, llvm-21-dev, mesa-common-dev, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "9a57209ab1b34230448e8d4c2f04b5c311d2ae4f187282b3b7a22740d52dbd49 3529 rocm-hipamd_5.7.1-7.dsc eaa0e14a9ae45c58ed37863797b683a7778b3cbbf92f5b6529ec65fd61d61f3e 553774 rocm-hipamd_5.7.1.orig-hip.tar.gz d47d27ef2b5de7f49cdfd8547832ac9b437a32e6fc6f0e9c1646f4b704c90aee 36589 rocm-hipamd_5.7.1.orig-hipcc.tar.gz c78490335233a11b4d8a5426ace7417c555f5e2325de10422df06c0f0f00f7eb 2008647 rocm-hipamd_5.7.1.orig.tar.gz 8d308f0aff7daa28584b2e593a88d712af7d7393af04a64fcd4fb77885dbbbee 30304 rocm-hipamd_5.7.1-7.debian.tar.xz"
+    "c4d328b6d31a0ba708a6eca4c7f494968fc1d6c68ffa6c6a85cb85ebfa1f5042 3119 rocm-hipamd_6.4.3-4.dsc 3def2459ca9258f04d35d1d3b0173237cea2b963814886bb8af6a0e317718d3d 1755257 rocm-hipamd_6.4.3.orig-hip.tar.gz aa7c9d9d7da3b5fc944b17ca7c032e8924a8dc327ec79eb8cb7f0c9df6fa76dc 2126045 rocm-hipamd_6.4.3.orig.tar.gz 24cff739dd9a6514ad21bddc3d7e51caa631a48ed3e38174f3fc06b8e2ad3e28 26288 rocm-hipamd_6.4.3-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocm-hipamd"
   ],
   "Files": [
-    "feb0244fdd89125e97c65652390d47de 3529 rocm-hipamd_5.7.1-7.dsc caaf72c7e91bc467714926471f43bd5d 553774 rocm-hipamd_5.7.1.orig-hip.tar.gz 65a9a3f6813814d7c41190b1d7d6bd7b 36589 rocm-hipamd_5.7.1.orig-hipcc.tar.gz a59a3effe9239ded9f1fa2cc8d31c44e 2008647 rocm-hipamd_5.7.1.orig.tar.gz 75738a4e37ac36618cc431b00bafabff 30304 rocm-hipamd_5.7.1-7.debian.tar.xz"
+    "b4e49592cf089631efc7d85ed3e0e5b9 3119 rocm-hipamd_6.4.3-4.dsc 42e1e06409228eba5f1f75439ccf9705 1755257 rocm-hipamd_6.4.3.orig-hip.tar.gz 6869fa999cef8828061b1ec61ba583b8 2126045 rocm-hipamd_6.4.3.orig.tar.gz 9b82c3b69f7b8015086a29433a317c2e 26288 rocm-hipamd_6.4.3-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "rocm-hipamd"
   ],
   "Package-List": [
-    "hipcc deb devel optional arch=amd64,arm64,ppc64el libamdhip64-5 deb libs optional arch=amd64,arm64,ppc64el libamdhip64-dev deb libdevel optional arch=amd64,arm64,ppc64el libamdhip64-doc deb doc optional arch=all profile=!nodoc libhiprtc-builtins5 deb libs optional arch=amd64,arm64,ppc64el rocm-opencl-icd deb libs optional arch=amd64,arm64,ppc64el"
+    "hip-utils deb libdevel optional arch=amd64,arm64,ppc64el libamdhip64-6 deb libs optional arch=amd64,arm64,ppc64el libamdhip64-dev deb libdevel optional arch=amd64,arm64,ppc64el libhiprtc-builtins6 deb libs optional arch=amd64,arm64,ppc64el libhiprtc6 deb libs optional arch=amd64,arm64,ppc64el rocm-opencl-icd deb libs optional arch=amd64,arm64,ppc64el"
   ],
   "Priority": [
     "optional"
@@ -42,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, g++, gcc, make, rocminfo"
+    "clang-21, cmake, dpkg-dev, g++, gcc, hipcc, make, rocm-device-libs-21, rocminfo"
   ],
   "Uploaders": [
-    "Maxime Chambonnet \u003cmaxzor@maxzor.eu\u003e, Étienne Mollier \u003cemollier@debian.org\u003e, Cordell Bloor \u003ccgmb@slerp.xyz\u003e, Christian Kastner \u003cckk@debian.org\u003e,"
+    "Étienne Mollier \u003cemollier@debian.org\u003e, Cordell Bloor \u003ccgmb@debian.org\u003e, Christian Kastner \u003cckk@debian.org\u003e, Xuanteng Huang \u003cxuanteng.huang@outlook.com\u003e, Christian Bayle \u003cbayle@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rocm-team/rocm-hipamd"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/rocm-team/rocm-hipamd.git"
   ],
   "Version": [
-    "5.7.1-7"
+    "6.4.3-4"
   ]
 }

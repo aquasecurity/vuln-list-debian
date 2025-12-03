@@ -3,22 +3,22 @@
     "amd64 arm64 ppc64el all"
   ],
   "Binary": [
-    "librocsparse0, librocsparse-dev, librocsparse0-tests, librocsparse0-tests-data, librocsparse-doc"
+    "librocsparse1, librocsparse-dev, librocsparse1-tests, librocsparse1-tests-data, librocsparse-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, gfortran, hipcc (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), rocm-cmake (\u003e= 5.3.0), librocprim-dev (\u003e= 5.5.1~), python3, python3-yaml, libgtest-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), cmake, gfortran, hipcc (\u003e= 5.6.1~), libamd-comgr-dev (\u003e= 6.0~), libhsa-runtime-dev (\u003e= 5.7.1~), libamdhip64-dev (\u003e= 5.7.1~), rocm-cmake (\u003e= 5.3.0), librocprim-dev (\u003e= 6.0~), pkg-rocm-tools (\u003e= 0.9.0~exp3), python3, python3-yaml, libgtest-dev \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, python3-breathe \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, python3-myst-nb \u003c!nodoc\u003e"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-doxysphinx \u003c!nodoc\u003e, python3-rocm-docs (\u003e= 1.20.0-1~) \u003c!nodoc\u003e, python3-sphinx-external-toc \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "903b92464a22751eb8fccf209ff9b98ebbf797621c17f1ed4607aff6e69901a4 3066 rocsparse_5.7.1-6.dsc 4c09b182b371124675d4057246021b5ed45e2833fdbf265b37a9b06b668baf0a 1167162 rocsparse_5.7.1.orig.tar.gz ed6151e45ad1fe729d268c35dacdbd5ad208bc1e17db8198a75aff77e1d0981b 10676 rocsparse_5.7.1-6.debian.tar.xz"
+    "70e9a715dd4315e610079073ffbbd7bdfc099e68daae97c1cce6a41d94234e23 3060 rocsparse_6.4.3-2.dsc fca59e70da33a046be36ea2fe83ba18ea8f0a5c9efd255e0427802ba3a134d0a 1539584 rocsparse_6.4.3.orig.tar.gz 0122cb71bb576455ebd2055c0332bf014b8b3b0140e64075b8109814acc77fd8 11584 rocsparse_6.4.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocsparse"
   ],
   "Files": [
-    "50ba691de6ee04a646782973dad3462a 3066 rocsparse_5.7.1-6.dsc 0da0005ef66b57ad3c2b0585aabf378b 1167162 rocsparse_5.7.1.orig.tar.gz 111f7d6e4a83550c65485fd19b2cda3c 10676 rocsparse_5.7.1-6.debian.tar.xz"
+    "34fe7ef7816cdd315bb3e39aac298264 3060 rocsparse_6.4.3-2.dsc 99a7a35eeeacd3728f573acb0a17662e 1539584 rocsparse_6.4.3.orig.tar.gz 9803c1b8ec568e2d82af7ae3e90082a6 11584 rocsparse_6.4.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "rocsparse"
   ],
   "Package-List": [
-    "librocsparse-dev deb libdevel optional arch=amd64,arm64,ppc64el librocsparse-doc deb doc optional arch=all profile=!nodoc librocsparse0 deb libs optional arch=amd64,arm64,ppc64el librocsparse0-tests deb libdevel optional arch=amd64,arm64,ppc64el profile=!nocheck librocsparse0-tests-data deb libdevel optional arch=all profile=!nocheck"
+    "librocsparse-dev deb libdevel optional arch=amd64,arm64,ppc64el librocsparse-doc deb doc optional arch=all profile=!nodoc librocsparse1 deb libs optional arch=amd64,arm64,ppc64el librocsparse1-tests deb libdevel optional arch=amd64,arm64,ppc64el profile=!nocheck librocsparse1-tests-data deb libdevel optional arch=all profile=!nocheck"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "pkg-rocm-tools"
+  ],
   "Uploaders": [
-    "Maxime Chambonnet \u003cmaxzor@maxzor.eu\u003e, Cordell Bloor \u003ccgmb@slerp.xyz\u003e, Étienne Mollier \u003cemollier@debian.org\u003e, Christian Kastner \u003cckk@debian.org\u003e, Xuanteng Huang \u003cxuanteng.huang@outlook.com\u003e, Kari Pahula \u003ckaol@debian.org\u003e,"
+    "Cordell Bloor \u003ccgmb@debian.org\u003e, Étienne Mollier \u003cemollier@debian.org\u003e, Christian Kastner \u003cckk@debian.org\u003e, Xuanteng Huang \u003cxuanteng.huang@outlook.com\u003e, Kari Pahula \u003ckaol@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rocm-team/rocsparse"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rocm-team/rocsparse.git"
   ],
   "Version": [
-    "5.7.1-6"
+    "6.4.3-2"
   ]
 }
