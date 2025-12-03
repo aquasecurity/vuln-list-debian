@@ -6,19 +6,25 @@
     "librust-either-dev, librust-either+serde-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.37) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "635f00032f19696081924e0a9503287c506bb9ec62a78359d286a35d12056b74 2249 rust-either_1.13.0-1.dsc 60b1af1c220855b6ceac025d3f6ecdd2b7c4894bfe9cd9bda4fbb4bc7c0d4cf0 19169 rust-either_1.13.0.orig.tar.gz cad3ba56f1217f3c27c36d03c4476bcb20ac6f0b72ef39f129495878f05c91c0 3056 rust-either_1.13.0-1.debian.tar.xz"
+    "45e440534f4e465630c4d83761a9603f42a6dc938c172e2457ceabba2bf73cfa 1695 rust-either_1.15.0-1.dsc 48c757948c5ede0e46177b7add2e67155f70e33c07fea8284df6576da70b3719 20114 rust-either_1.15.0.orig.tar.gz 13719b61608a87c9d59080d766f190003f594c7798ca416874a7d3e25fb9144e 3140 rust-either_1.15.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-either"
   ],
   "Files": [
-    "aaa3c7967883208ca263f40ada8dc708 2249 rust-either_1.13.0-1.dsc 6d28dbfa9d67ad11061716672a7a1519 19169 rust-either_1.13.0.orig.tar.gz ae72bc05038fee06d0f3f0d9d4ee5782 3056 rust-either_1.13.0-1.debian.tar.xz"
+    "f461681dba857deb95c5446789c47351 1695 rust-either_1.15.0-1.dsc 96c3c9f009928f02773032f341666861 20114 rust-either_1.15.0.orig.tar.gz e20aee96cdfcc1826c4069bb1daf9434 3140 rust-either_1.15.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rayon-rs/either"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/either]"
   ],
   "Version": [
-    "1.13.0-1"
+    "1.15.0-1"
   ]
 }

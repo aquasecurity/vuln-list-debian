@@ -5,20 +5,23 @@
   "Binary": [
     "podman, podman-docker, podman-remote"
   ],
+  "Build-Conflicts": [
+    "golang-github-opencontainers-specs-dev (\u003e\u003e 1.3.0)"
+  ],
   "Build-Depends": [
-    "bash-completion, conmon, debhelper-compat (= 13), dh-golang, go-md2man, golang-dbus-dev, golang-github-buger-goterm-dev, golang-github-checkpoint-restore-checkpointctl-dev (\u003e\u003e 1.3), golang-github-checkpoint-restore-go-criu-dev (\u003e\u003e 7.2), golang-github-containers-buildah-dev (\u003e= 1.41.5+ds1-2), golang-github-containers-common-dev (\u003e= 0.64), golang-github-containers-gvisor-tap-vsocks-dev (\u003e= 0.7.4), golang-github-containers-image-dev (\u003e= 5.36), golang-github-containers-ocicrypt-dev, golang-github-containers-psgo-dev, golang-github-containers-storage-dev (\u003e= 1.59), golang-github-coreos-bbolt-dev, golang-github-coreos-go-systemd-dev, golang-github-coreos-stream-metadata-go-dev, golang-github-crc-org-crc-dev, golang-github-cyphar-filepath-securejoin-dev, golang-github-digitalocean-go-qemu-dev, golang-github-docker-docker-dev (\u003e\u003e 27.5.1), golang-github-docker-go-connections-dev, golang-github-docker-go-plugins-helpers-dev, golang-github-docker-go-units-dev, golang-github-fullsailor-pkcs7-dev, golang-github-go-logr-logr-dev, golang-github-google-shlex-dev, golang-github-google-uuid-dev, golang-github-gorilla-schema-dev, golang-github-hashicorp-go-multierror-dev, golang-github-json-iterator-go-dev, golang-github-kevinburke-ssh-config-dev, golang-github-mattn-go-sqlite3-dev, golang-github-mdlayher-vsock-dev, golang-github-moby-term-dev, golang-github-nxadm-tail-dev, golang-github-onsi-ginkgo-v2-dev, golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-image-spec-dev (\u003e= 1.1.0), golang-github-opencontainers-runc-dev (\u003e= 1.3), golang-github-opencontainers-runtime-tools-dev (\u003e= 0.9.0+dfsg-3~), golang-github-opencontainers-selinux-dev (\u003e= 1.11~), golang-github-rootless-containers-rootlesskit-dev (\u003e\u003e 2), golang-github-shirou-gopsutil-dev, golang-github-vbauerster-mpb-dev (\u003e= 8), golang-github-vishvananda-netlink-dev, golang-go, golang-gopkg-inf.v0-dev, golang-gopkg-yaml.v3-dev, golang-k8s-sigs-yaml-dev, golang-toml-dev, libapparmor-dev, libbtrfs-dev, libdevmapper-dev, libglib2.0-dev, libsubid-dev"
+    "bash-completion, conmon, debhelper-compat (= 13), dh-golang, go-md2man, golang-dbus-dev, golang-github-buger-goterm-dev, golang-github-checkpoint-restore-checkpointctl-dev (\u003e\u003e 1.3), golang-github-checkpoint-restore-go-criu-dev (\u003e\u003e 7.2), golang-github-containers-buildah-dev (\u003e= 1.42), golang-github-containers-common-dev (\u003e= 0.66), golang-github-containers-gvisor-tap-vsocks-dev (\u003e= 0.7.4), golang-github-containers-image-dev (\u003e= 5.38), golang-github-containers-ocicrypt-dev, golang-github-containers-psgo-dev (\u003e= 1.10), golang-github-containers-storage-dev (\u003e= 1.61), golang-github-coreos-bbolt-dev, golang-github-coreos-go-systemd-dev, golang-github-coreos-stream-metadata-go-dev, golang-github-crc-org-crc-dev, golang-github-cyphar-filepath-securejoin-dev, golang-github-digitalocean-go-qemu-dev, golang-github-docker-docker-dev (\u003e\u003e 27.5.1), golang-github-docker-go-connections-dev, golang-github-docker-go-plugins-helpers-dev, golang-github-docker-go-units-dev, golang-github-fullsailor-pkcs7-dev, golang-github-go-logr-logr-dev, golang-github-google-shlex-dev, golang-github-google-uuid-dev, golang-github-gorilla-schema-dev, golang-github-hashicorp-go-multierror-dev, golang-github-json-iterator-go-dev, golang-github-kevinburke-ssh-config-dev, golang-github-mattn-go-sqlite3-dev, golang-github-mdlayher-vsock-dev, golang-github-moby-term-dev, golang-github-nxadm-tail-dev, golang-github-onsi-ginkgo-v2-dev, golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-image-spec-dev (\u003e= 1.1.0), golang-github-opencontainers-runc-dev (\u003e= 1.3), golang-github-opencontainers-runtime-tools-dev (\u003e= 0.9.0+dfsg-3~), golang-github-opencontainers-selinux-dev (\u003e= 1.11~), golang-github-rootless-containers-rootlesskit-dev (\u003e\u003e 2), golang-github-shirou-gopsutil-dev, golang-github-vbauerster-mpb-dev (\u003e= 8), golang-github-vishvananda-netlink-dev, golang-go, golang-gopkg-inf.v0-dev, golang-gopkg-yaml.v3-dev, golang-k8s-sigs-yaml-dev, golang-toml-dev, libapparmor-dev, libbtrfs-dev, libdevmapper-dev, libglib2.0-dev, libsubid-dev"
   ],
   "Checksums-Sha256": [
-    "12da51d084d11211cddd1bb54ff6ead0cff2b9626a8ae42f180939793cd5165b 4731 podman_5.6.2+ds1-4.dsc e4dc7bbe503937c318af539992be7d10d12d298644372f2529907c29b86d1e39 2854144 podman_5.6.2+ds1.orig.tar.xz cb979ce2fce424888d675d31941dfe32687b0be8be9c3233a8b31d55f848f443 41480 podman_5.6.2+ds1-4.debian.tar.xz"
+    "bd08d014d121c0b1697f65064f821e7c334256e02bda2b888c352d6541446510 4800 podman_5.7.0+ds2-2.dsc d5f4e3d2798d8dfa5caa24e3db878b3a0ee3d8748caf0b3c0fae2e7cda59bd79 2908912 podman_5.7.0+ds2.orig.tar.xz 32470b3a4800adf96bdbb7bc745d0786dda5298513913b0959ab52c72b3a14ce 31044 podman_5.7.0+ds2-2.debian.tar.xz"
   ],
   "Dgit": [
-    "13e935d45c68a5cb34f6e21f96a20231b46868f2 debian archive/debian/5.6.2+ds1-4 https://git.dgit.debian.org/podman"
+    "138abc88371e4be46728ce8e29682a51c81f2a6c debian archive/debian/5.7.0+ds2-2 https://git.dgit.debian.org/podman"
   ],
   "Directory": [
     "pool/main/p/podman"
   ],
   "Files": [
-    "483589def734d40b4edd8084d33d9af5 4731 podman_5.6.2+ds1-4.dsc a461361ea571a55c9c1d9a2fe9dcf89a 2854144 podman_5.6.2+ds1.orig.tar.xz 4315d2d3bb1faedff9d2ac773fb7a512 41480 podman_5.6.2+ds1-4.debian.tar.xz"
+    "d9916c586f552bf500bb299b67c984e5 4800 podman_5.7.0+ds2-2.dsc 91fe0a95cddcb9c4ca211bd03f8c9e24 2908912 podman_5.7.0+ds2.orig.tar.xz 8ed21603ca6c8db47972247337b5f945 31044 podman_5.7.0+ds2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -63,6 +66,6 @@
     "https://salsa.debian.org/go-team/packages/podman.git"
   ],
   "Version": [
-    "5.6.2+ds1-4"
+    "5.7.0+ds2-2"
   ]
 }
