@@ -6,16 +6,19 @@
     "librust-pest-meta-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.8.0-~~) \u003c!nocheck\u003e, librust-pest-2+default-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-sha2-0.10-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pest-2+default-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-sha2-0.10-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6345b0c5c069e1f161cc63542e4ff6f2837d7cb9f09291602aa29ef01da34910 2327 rust-pest-meta_2.7.4-1.dsc 1df74e9e7ec4053ceb980e7c0c8bd3594e977fde1af91daba9c928e8e8c6708d 40689 rust-pest-meta_2.7.4.orig.tar.gz 421e079504433d9c7af499f5750c35de8552c2d5bdb57b316da8e9bab22cc445 3492 rust-pest-meta_2.7.4-1.debian.tar.xz"
+    "6925943c09f0c93ef8b52136b8079ea389a5822eaf04cf1359be9446519ae0ab 1678 rust-pest-meta_2.8.4-1.dsc bf1d70880e76bdc13ba52eafa6239ce793d85c8e43896507e43dd8984ff05b82 42947 rust-pest-meta_2.8.4.orig.tar.gz 807c5af195703b0288751d814a6d14c6fb7ad5b16c32d236cedf672174b7d370 3528 rust-pest-meta_2.8.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pest-meta"
   ],
   "Files": [
-    "a5027a30cbbf71e8dc9384b30d24691a 2327 rust-pest-meta_2.7.4-1.dsc 2d163ffa385470b8bf82306f0c5ae7f7 40689 rust-pest-meta_2.7.4.orig.tar.gz a6fbcee1d49675f484b62efc168d4a62 3492 rust-pest-meta_2.7.4-1.debian.tar.xz"
+    "1ed6f1d49100e2ab300fa4b9d1ef239b 1678 rust-pest-meta_2.8.4-1.dsc 8fc9b8907440e951472d55cd528192ca 42947 rust-pest-meta_2.8.4.orig.tar.gz e50a3cbd1cb51077bebfec272f767f98 3528 rust-pest-meta_2.8.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pest-meta]"
   ],
   "Version": [
-    "2.7.4-1"
+    "2.8.4-1"
   ]
 }

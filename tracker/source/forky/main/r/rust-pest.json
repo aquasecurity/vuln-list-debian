@@ -6,16 +6,19 @@
     "librust-pest-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.37-~~) \u003c!nocheck\u003e, librust-ucd-trie-0.1+std-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-ucd-trie-0.1-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-ucd-trie-0.1+std-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-ucd-trie-0.1-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "37ab8649e9332004701024042bd912604c5100e064fe40209bf112d1f279f7b0 2414 rust-pest_2.7.4-1.dsc c022f1e7b65d6a24c0dbbd5fb344c66881bc01f3e5ae74a1c8100f2f985d98a4 117014 rust-pest_2.7.4.orig.tar.gz 594e40be6d72881e6938b0bc0a34a5c2b3903cb20ac3705a7a47923004ca929c 3136 rust-pest_2.7.4-1.debian.tar.xz"
+    "22ad4fdbecc017140fa2fcb62a61c40ae75b220ab3091aa445d030d11c3e8ec2 1822 rust-pest_2.8.4-1.dsc cbcfd20a6d4eeba40179f05735784ad32bdaef05ce8e8af05f180d45bb3e7e22 129758 rust-pest_2.8.4.orig.tar.gz e0a84fc9ff3d2475f78af33cb6310e791716aafda90a9c956af93838e7478392 3536 rust-pest_2.8.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pest"
   ],
   "Files": [
-    "5253606e37a432f06d22a3b9d4c0b5af 2414 rust-pest_2.7.4-1.dsc ce25796b2848c9e69b267784f5c43fbf 117014 rust-pest_2.7.4.orig.tar.gz 6451dbfaf0e58f4059bd62bf9ec28a95 3136 rust-pest_2.7.4-1.debian.tar.xz"
+    "ac629de284a5b37d4e229bb9a384502b 1822 rust-pest_2.8.4-1.dsc 7c4b65808efcddb3d2620a6926423183 129758 rust-pest_2.8.4.orig.tar.gz e6381b9cd5513a9a0abed672c59be69c 3536 rust-pest_2.8.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-miette-7+default-dev, librust-miette-7+fancy-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pest]"
   ],
   "Version": [
-    "2.7.4-1"
+    "2.8.4-1"
   ]
 }

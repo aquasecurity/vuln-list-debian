@@ -6,16 +6,19 @@
     "librust-pest-generator-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pest-2+std-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-pest-2-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-pest-meta-2+default-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pest-2+std-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-pest-2-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-pest-meta-2+default-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "63ec45cd9330e3aa24f3f0ebe5fb45758bf79a32e82cbe7f569468b16ebaf5eb 2513 rust-pest-generator_2.7.4-1.dsc bc9fc1b9e7057baba189b5c626e2d6f40681ae5b6eb064dc7c7834101ec8123a 17739 rust-pest-generator_2.7.4.orig.tar.gz 95c95d47f017fe8d4f80c5f580dd9c70b1218db224aec01b6378658b34d9059e 3148 rust-pest-generator_2.7.4-1.debian.tar.xz"
+    "cfb5796cc3111c5c345edec1ad18efe8e0b63ad67486e6381ef32e0f9fd3a036 1922 rust-pest-generator_2.8.4-1.dsc dee9efd8cdb50d719a80088b76f81aec7c41ed6d522ee750178f83883d271625 18650 rust-pest-generator_2.8.4.orig.tar.gz ed2eef2c111618f4d458b2a806e8ad5b64b1988f8ea81598b698831866d6e9bd 3228 rust-pest-generator_2.8.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pest-generator"
   ],
   "Files": [
-    "c955398aed17d32b6699f9c7f16a02ed 2513 rust-pest-generator_2.7.4-1.dsc a98ff5a38be6b2adfa3ea2a37359dfe7 17739 rust-pest-generator_2.7.4.orig.tar.gz 748b102e190bd789e711ade6c8206119 3148 rust-pest-generator_2.7.4-1.debian.tar.xz"
+    "b04de3d307d21953414a567b32f0f923 1922 rust-pest-generator_2.8.4-1.dsc 71a1c31c82cc7a6b674f4221be025b57 18650 rust-pest-generator_2.8.4.orig.tar.gz 2cd5d32810bd0beedd4f77c7ef1efe2c 3228 rust-pest-generator_2.8.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pest-generator]"
   ],
   "Version": [
-    "2.7.4-1"
+    "2.8.4-1"
   ]
 }

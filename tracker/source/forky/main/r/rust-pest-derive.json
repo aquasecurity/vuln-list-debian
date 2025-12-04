@@ -6,16 +6,19 @@
     "librust-pest-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pest-2+std-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-pest-2-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-pest-generator-2+std-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e, librust-pest-generator-2-dev (\u003e= 2.7.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pest-2+std-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-pest-2-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-pest-generator-2+std-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e, librust-pest-generator-2-dev (\u003e= 2.8.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "320ede1f003e260ff69b17cfe00fa50a8053e96beab88c55df3244cb7114d77b 2420 rust-pest-derive_2.7.4-1.dsc 35513f630d46400a977c4cb58f78e1bfbe01434316e60c37d27b9ad6139c66d8 35479 rust-pest-derive_2.7.4.orig.tar.gz 0e46267723a74fdc351b765853446813bcd6e3bdc85885397c2a77db65f61914 3244 rust-pest-derive_2.7.4-1.debian.tar.xz"
+    "138a386f5a49797efb92f66f2ce421661334f902be97c7825dd768eccb7221f2 1829 rust-pest-derive_2.8.4-1.dsc 51f72981ade67b1ca6adc26ec221be9f463f2b5839c7508998daa17c23d94d7f 43466 rust-pest-derive_2.8.4.orig.tar.gz 73203012845141a48932698220935da0251fb64d3259da4be6bd0e759645aa42 3268 rust-pest-derive_2.8.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pest-derive"
   ],
   "Files": [
-    "0fe68883bb81270164d8bd33177e5647 2420 rust-pest-derive_2.7.4-1.dsc 1065c909b826e95f27ad9b85c3eaedec 35479 rust-pest-derive_2.7.4.orig.tar.gz b45721c01ffc3cad58bf39073e0a141e 3244 rust-pest-derive_2.7.4-1.debian.tar.xz"
+    "610c5c7b0789a624256d373168872dbd 1829 rust-pest-derive_2.8.4-1.dsc fd94fc9a00da6a74bae8304481b0f5b8 43466 rust-pest-derive_2.8.4.orig.tar.gz f9daef8b4cccb5cc283a2fa62231f924 3268 rust-pest-derive_2.8.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003carnaud.ferraris@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pest-derive]"
   ],
   "Version": [
-    "2.7.4-1"
+    "2.8.4-1"
   ]
 }
