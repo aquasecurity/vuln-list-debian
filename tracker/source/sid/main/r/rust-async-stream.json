@@ -6,19 +6,25 @@
     "librust-async-stream-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-stream-impl-0.3.4+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-stream-impl-0.3+default-dev (\u003c\u003c 0.3.7-~~) \u003c!nocheck\u003e, librust-async-stream-impl-0.3+default-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "248fe9a856a53b47be5c4c9ab3bdd63dba89f13a07c581dfb91674d83fdd265e 2556 rust-async-stream_0.3.4-2.dsc ad445822218ce64be7a341abfb0b1ea43b5c23aa83902542a4542e78309d8e5e 12419 rust-async-stream_0.3.4.orig.tar.gz 8edff4cd6ce771f8febce56bdab6a7ad6cf01bace6dd139e05edd7e99a522c71 3236 rust-async-stream_0.3.4-2.debian.tar.xz"
+    "9fbf95d8e518b76541162b9b47e3d8222d9253adc62a5f90f912d1a86743ca32 2096 rust-async-stream_0.3.6-1.dsc 0b5a71a6f37880a80d1d7f19efd781e4b5de42c88f0722cc13bcb6cc2cfe8476 13823 rust-async-stream_0.3.6.orig.tar.gz c9ec43c237480215213e4b7cbc65385f39cef9a07d71d84b386ab56495671ea5 3420 rust-async-stream_0.3.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-stream"
   ],
   "Files": [
-    "4881b4f2918e365c8a929e729b2d672a 2556 rust-async-stream_0.3.4-2.dsc c800112f3d79ac0067f15ac9e162733f 12419 rust-async-stream_0.3.4.orig.tar.gz 77b07cfb98605492bb8dfd489593757a 3236 rust-async-stream_0.3.4-2.debian.tar.xz"
+    "21f20fde029b3f48e6a2bf67d9f0aa12 2096 rust-async-stream_0.3.6-1.dsc 6bc1f27d4513fdbab995cc8d471c7ee5 13823 rust-async-stream_0.3.6.orig.tar.gz 997aba90d209ed820d446ab30d8b7b91 3420 rust-async-stream_0.3.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tokio-rs/async-stream"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-util-0.3+default-dev, librust-rustversion-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-tokio-test-0.4+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-futures-util-0.3+default-dev, librust-rustversion-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-tokio-test-0.4+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-stream]"
   ],
   "Version": [
-    "0.3.4-2"
+    "0.3.6-1"
   ]
 }
