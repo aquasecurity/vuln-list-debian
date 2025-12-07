@@ -6,19 +6,25 @@
     "librust-tui-react-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.6-~~) \u003c!nocheck\u003e, librust-ratatui-dev (\u003e= 0.28-~~) \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.6-~~) \u003c!nocheck\u003e, librust-ratatui-dev (\u003e= 0.28-~~) \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev (\u003e= 1.6.0-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "447d0ba91df1b7a892b9fabc7545c3b2b424d73934ca2377913d2dc5778c1b7a 2400 rust-tui-react_0.23.2-4.dsc 2914a701e00f3311d869175d83dbb7da374ba9a22a6876f3aa6af2673d3accc6 8261 rust-tui-react_0.23.2.orig.tar.gz 68d8c4c9b43815351227a33ee28fe2c1608e627b969967fba36236f1581671cc 3388 rust-tui-react_0.23.2-4.debian.tar.xz"
+    "9ddee348d2c8cbe83a500dc0b0e44a100a0e41ad2b25007d2c4a0eda50358314 2453 rust-tui-react_0.23.3-1.dsc aefb69d822d1170fe1fbb50ec6cb2c534cdd20630a84ef5998e4c59a89a5b0e6 11048 rust-tui-react_0.23.3.orig.tar.gz 4f8c745275771a663d31811e5365a5bb465a1695abbca51d0df6fc07d0ac58c7 3436 rust-tui-react_0.23.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tui-react"
   ],
   "Files": [
-    "bdc74275b94a16a2cbdec6ab95ca9916 2400 rust-tui-react_0.23.2-4.dsc 9299ac86987bd6a7cabd988cfe981bd4 8261 rust-tui-react_0.23.2.orig.tar.gz e107b3341d21b464a65f1f90adede34d 3388 rust-tui-react_0.23.2-4.debian.tar.xz"
+    "db8c1a266cbb35428001becfd8e6b3f7 2453 rust-tui-react_0.23.3-1.dsc 275a7d37cf8b5611b1cbb36c3114a2b7 11048 rust-tui-react_0.23.3.orig.tar.gz a8dc546a08a2dc3b5d5eaa434b39553d 3436 rust-tui-react_0.23.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Byron/tui-crates"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tui-react]"
   ],
   "Version": [
-    "0.23.2-4"
+    "0.23.3-1"
   ]
 }
