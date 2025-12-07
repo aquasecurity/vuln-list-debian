@@ -6,19 +6,25 @@
     "librust-dyn-clone-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.45) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bc8bfbb3e33b18cb3ea6d71d52f5aa17e882f885a873208e12d35d10dbac075d 2276 rust-dyn-clone_1.0.16-1.dsc 545b22097d44f8a9581187cdf93de7a71e4722bf51200cfaba810865b49a495d 11766 rust-dyn-clone_1.0.16.orig.tar.gz 422661ef2b46eaeabab85d594725219e3359d50221846d25dfef14243de42372 2592 rust-dyn-clone_1.0.16-1.debian.tar.xz"
+    "3dad76452d39e36eb9ac9d39917d9b9736e7a58f07e6dbf363690772b45511b2 1722 rust-dyn-clone_1.0.20-1.dsc d0881ea181b1df73ff77ffaaf9c7544ecc11e82fba9b5f27b262a3c73a332555 13134 rust-dyn-clone_1.0.20.orig.tar.gz b1f7c59498487645fa6e797e01f5589c8834c18eade5ec5162576cb814c6f70f 2612 rust-dyn-clone_1.0.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dyn-clone"
   ],
   "Files": [
-    "a389804f091ed5e76ceccd9b0bb2ee27 2276 rust-dyn-clone_1.0.16-1.dsc d0c689ee4d96676134a942a3f543f025 11766 rust-dyn-clone_1.0.16.orig.tar.gz 850d01874108d7e3d774a358739bd2cd 2592 rust-dyn-clone_1.0.16-1.debian.tar.xz"
+    "428cd280fff66fb402ec830fb78d7f34 1722 rust-dyn-clone_1.0.20-1.dsc 5780fcd1ea46357609cc4f21b97fca1d 13134 rust-dyn-clone_1.0.20.orig.tar.gz c047191f22c0abb6127daf3ab87db75b 2612 rust-dyn-clone_1.0.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/dyn-clone"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dyn-clone]"
   ],
   "Version": [
-    "1.0.16-1"
+    "1.0.20-1"
   ]
 }
