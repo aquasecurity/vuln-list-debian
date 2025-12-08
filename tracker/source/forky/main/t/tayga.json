@@ -3,22 +3,22 @@
     "linux-any"
   ],
   "Binary": [
-    "tayga"
+    "tayga-core, tayga"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pkgconf, systemd-dev"
+    "debhelper-compat (= 13), dh-exec, pkgconf, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "5eda2f20cbb395ff88bdf20e1994451e745f1893ffbfb049fe34039b663bca8c 1412 tayga_0.9.2-10.dsc 2b1f7927a9d2dcff9095aff3c271924b052ccfd2faca9588b277431a44f0009c 86022 tayga_0.9.2.orig.tar.bz2 d304aa573fe1e4608e54aacfa130fcbfdcd889d798acc739ca257a2716fe78c4 11392 tayga_0.9.2-10.debian.tar.xz"
+    "f65ef55cf572d0936973884504f3cdb29cf49a9190b25fb53d40d5468405f753 2536 tayga_0.9.2-11.dsc 2b1f7927a9d2dcff9095aff3c271924b052ccfd2faca9588b277431a44f0009c 86022 tayga_0.9.2.orig.tar.bz2 aa21da3e83e43d1f1807c1e144bcdda2732851ef51fadfc54691a25154e0ac79 14596 tayga_0.9.2-11.debian.tar.xz"
   ],
-  "Dgit": [
-    "e243c9f3c4cf5367316998888af3dcf8205067e4 debian archive/debian/0.9.2-10 https://git.dgit.debian.org/tayga"
+  "Description": [
+    "Simple, no-fuss userspace IPv6-IPv4 translator TAYGA is a userspace IP/ICMP translator implemented using a virtual (TUN) device. It can be configured to act as a stateless IP/ICMP translator (SIIT, RFC 6145) with Explicit Address Mapping (EAM, RFC 7757) and even a stateful NAT64 (RFC 6146) with help from Linux kernel NAT44 (iptables). . As such it's useful as part of a 464XLAT (RFC 6146), IPv6-only or IPv6-mostly network architecture to establish IP-layer connectivity between IPv4-only and/or IPv6-only hosts."
   ],
   "Directory": [
     "pool/main/t/tayga"
   ],
   "Files": [
-    "fa3f250d0dd6f8773ece0a34e65e01b3 1412 tayga_0.9.2-10.dsc 7a7b24165ce008df772f398d86fa280e 86022 tayga_0.9.2.orig.tar.bz2 78bc705b5099b39cc49e362efe6a9c15 11392 tayga_0.9.2-10.debian.tar.xz"
+    "a99a93abe88d24eb257ac4d2cd001fc2 2536 tayga_0.9.2-11.dsc 7a7b24165ce008df772f398d86fa280e 86022 tayga_0.9.2.orig.tar.bz2 ed2f6113af77fd609d1022a8c3aa166b 14596 tayga_0.9.2-11.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,13 +27,13 @@
     "http://www.litech.org/tayga/"
   ],
   "Maintainer": [
-    "Andrej Shadura \u003candrewsh@debian.org\u003e"
+    "Debian Networking Team \u003cteam+networking@tracker.debian.org\u003e"
   ],
   "Package": [
     "tayga"
   ],
   "Package-List": [
-    "tayga deb net optional arch=linux-any"
+    "tayga deb net optional arch=linux-any tayga-core deb net optional arch=linux-any"
   ],
   "Priority": [
     "source"
@@ -42,10 +42,10 @@
     "net"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Uploaders": [
-    "Barak A. Pearlmutter \u003cbap@debian.org\u003e, Benda Xu \u003cheroxbd@gentoo.org\u003e"
+    "Andrej Shadura \u003candrewsh@debian.org\u003e, Daniel Gröber \u003cdxld@darkboxed.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/tayga"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/tayga.git"
   ],
   "Version": [
-    "0.9.2-10"
+    "0.9.2-11"
   ]
 }
