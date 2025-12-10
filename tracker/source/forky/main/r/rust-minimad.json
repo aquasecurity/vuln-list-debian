@@ -6,19 +6,25 @@
     "librust-minimad-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.17-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9aaac898143978f36aa0adbe494db567f2f215143f53839dd2d2462d26796893 2207 rust-minimad_0.13.0-1.dsc f6c4610f430e49b882fcaad0186134150d4d74fc76080b0a61f7000460c2e268 21049 rust-minimad_0.13.0.orig.tar.gz 94aed9dfaea2a15eeacc0c8a37e626da86ff931a26fe374910ccbb4271dce9a9 2672 rust-minimad_0.13.0-1.debian.tar.xz"
+    "23df2f6e39756ea98d08c9487a1f10dff5a8e77f759c63857a86a577119223e1 1653 rust-minimad_0.14.0-1.dsc df8b688969b16915f3ecadc7829d5b7779dee4977e503f767f34136803d5c06f 21568 rust-minimad_0.14.0.orig.tar.gz d5a4577fb79916120554c43d2888b9f555292ee8fd449e3d0124253404513924 2724 rust-minimad_0.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-minimad"
   ],
   "Files": [
-    "d1797d8a6932ab8f02fc7c49613ee452 2207 rust-minimad_0.13.0-1.dsc 95f40aa3e40e88ff28cdcc14c318c49d 21049 rust-minimad_0.13.0.orig.tar.gz bb2dfb8d7818d42c0063cf1c5008d5f3 2672 rust-minimad_0.13.0-1.debian.tar.xz"
+    "b500699af84ff08c2ac55d8f5f271c3f 1653 rust-minimad_0.14.0-1.dsc e3d6725924cf7f024f52d656e57faa83 21568 rust-minimad_0.14.0.orig.tar.gz 08f1db7e0560549a7e41e38d26c5b173 2724 rust-minimad_0.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Canop/minimad"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/minimad]"
   ],
   "Version": [
-    "0.13.0-1"
+    "0.14.0-1"
   ]
 }
