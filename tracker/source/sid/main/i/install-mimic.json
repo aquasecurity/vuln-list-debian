@@ -6,19 +6,19 @@
     "install-mimic"
   ],
   "Build-Depends": [
-    "debhelper (\u003e\u003e 13.15.2~), dh-package-notes, dh-sequence-single-binary, dpkg-build-api (= 1), perl"
+    "debhelper (\u003e\u003e 13.15.2~), dh-package-notes, dh-sequence-single-binary, dpkg-build-api (= 1), cargo, librust-camino-dev, librust-clap-derive-dev, librust-clap-dev, librust-eyre-dev, librust-shell-words-dev, perl \u003c!nocheck\u003e, rustc"
   ],
   "Checksums-Sha256": [
-    "9a2c09b16c83e4cc8715eb720f14e70c670f6fdf554db25b914edebcb8182e73 2426 install-mimic_0.4.3-1.dsc 59a720d05e8cc149b7a8d164cbe0c7c2cf6ab1213c8d14ef68ad2063005d4f6f 33948 install-mimic_0.4.3.orig.tar.xz ad64f38d70ef3ca8f3add68913023bbdc8642f7810e8ee6f291ac0796c8a705d 833 install-mimic_0.4.3.orig.tar.xz.asc 510d7c5382c7a3b9f66dcebb20395f62b9e0e394053da443053e25aa49aee58e 6596 install-mimic_0.4.3-1.debian.tar.xz"
+    "b1030e134798439187a50aa19b9d036a86b065e5adcf947e15e256626f335482 2589 install-mimic_0.4.3-2.dsc 59a720d05e8cc149b7a8d164cbe0c7c2cf6ab1213c8d14ef68ad2063005d4f6f 33948 install-mimic_0.4.3.orig.tar.xz ad64f38d70ef3ca8f3add68913023bbdc8642f7810e8ee6f291ac0796c8a705d 833 install-mimic_0.4.3.orig.tar.xz.asc c8e4f41eae0b85c76aea4ed74848a7e6544978be177a1b2d7ec1bc96a06ddebc 7000 install-mimic_0.4.3-2.debian.tar.xz"
   ],
   "Dgit": [
-    "63120724858d0720ca1b3aedd6143a6ccc19d42a debian archive/debian/0.4.3-1 https://git.dgit.debian.org/install-mimic"
+    "aee9160b413a4f31342879b8766e2d5435ca9278 debian archive/debian/0.4.3-2 https://git.dgit.debian.org/install-mimic"
   ],
   "Directory": [
     "pool/main/i/install-mimic"
   ],
   "Files": [
-    "badce5e38c049074badd8f023d8bf36b 2426 install-mimic_0.4.3-1.dsc b349af19b73737942c713c4e4b3d0f85 33948 install-mimic_0.4.3.orig.tar.xz 8bebf95eeb1d12b935ee33375dab4947 833 install-mimic_0.4.3.orig.tar.xz.asc f458989ed1fbaf188269a709cd894455 6596 install-mimic_0.4.3-1.debian.tar.xz"
+    "29206fbb310a1619104c26fb86e5d556 2589 install-mimic_0.4.3-2.dsc b349af19b73737942c713c4e4b3d0f85 33948 install-mimic_0.4.3.orig.tar.xz 8bebf95eeb1d12b935ee33375dab4947 833 install-mimic_0.4.3.orig.tar.xz.asc 8afaaaba526662289fc956c6d018fe7e 7000 install-mimic_0.4.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "feature-check, perl"
+    "dh-debputy, feature-check, perl, python3-lsprotocol"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/install-mimic"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/install-mimic.git"
   ],
   "Version": [
-    "0.4.3-1"
+    "0.4.3-2"
   ]
 }
