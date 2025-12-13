@@ -6,19 +6,25 @@
     "librust-imara-diff-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8+default-dev \u003c!nocheck\u003e, librust-hashbrown-0.14+inline-more-dev \u003c!nocheck\u003e, librust-hashbrown-0.14+raw-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hashbrown+default-hasher-dev (\u003c\u003c 0.17-~~) \u003c!nocheck\u003e, librust-hashbrown+default-hasher-dev (\u003e= 0.15-~~) \u003c!nocheck\u003e, librust-hashbrown+inline-more-dev (\u003c\u003c 0.17-~~) \u003c!nocheck\u003e, librust-hashbrown+inline-more-dev (\u003e= 0.15-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "424e1dfba0077a2a0b695df69e466e29a84467dde62c76cd3f4c678d1e3a9601 2372 rust-imara-diff_0.1.7-1.dsc fc9da1a252bd44cd341657203722352efc9bc0c847d06ea6d2dc1cd1135e0a01 155688 rust-imara-diff_0.1.7.orig.tar.gz a583844b0caee0e8eba794cb3632d299f9ca18ed71813bd920129f0a06300299 3240 rust-imara-diff_0.1.7-1.debian.tar.xz"
+    "79efaf7f16013ba308bcca2ba968e5481de7e40eaeabff5859a700248bdcd9c6 2566 rust-imara-diff_0.1.8-1.dsc 17d34b7d42178945f775e84bc4c36dde7c1c6cdfea656d3354d009056f2bb3d2 155787 rust-imara-diff_0.1.8.orig.tar.gz 9f40b1c44a4a891654d6b48adfd2f3770e2b743d7d0048d45cc4621fa5561c30 3424 rust-imara-diff_0.1.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-imara-diff"
   ],
   "Files": [
-    "44371fe667eedf4f2671e25ee8a32026 2372 rust-imara-diff_0.1.7-1.dsc 8173bf02cc3780acd693a76c8b2ef78b 155688 rust-imara-diff_0.1.7.orig.tar.gz 912d993e92af9c7af5b8819cf0bb5423 3240 rust-imara-diff_0.1.7-1.debian.tar.xz"
+    "0c77d4127ef62f331e3ef05eadb10430 2566 rust-imara-diff_0.1.8-1.dsc a1c2c6d256feec6af388d2b1348216cd 155787 rust-imara-diff_0.1.8.orig.tar.gz a6a77d6935fbab6d301b12597e5f8d39 3424 rust-imara-diff_0.1.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pascalkuthe/imara-diff"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/imara-diff]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.1.8-1"
   ]
 }
