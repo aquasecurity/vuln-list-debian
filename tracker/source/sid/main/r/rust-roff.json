@@ -6,16 +6,19 @@
     "librust-roff-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a7dffe9413c63921d803115467276495ada069d0c6c12eed79345fded418a003 1593 rust-roff_0.2.1-1.dsc b833d8d034ea094b1ea68aa6d5c740e0d04bad9d16568d08ba6f76823a114316 10605 rust-roff_0.2.1.orig.tar.gz 296d3c0e2c99e7214668cf488c97c3597eb0116a4d540b9c93f4e9fb708c56b2 2708 rust-roff_0.2.1-1.debian.tar.xz"
+    "837048c29cb2370163eb3223c617c0a3fadce3fa804a8b404ede81e29a41395a 1667 rust-roff_0.2.2-1.dsc 88f8660c1ff60292143c98d08fc6e2f654d722db50410e3f3797d40baaf9d8f3 11648 rust-roff_0.2.2.orig.tar.gz 4ac544d60efd1f2c6ecbb9998619306c95cc2e12284dc65f3760cea578de9e78 2668 rust-roff_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-roff"
   ],
   "Files": [
-    "6879958fe34e168b870caee35a25ed08 1593 rust-roff_0.2.1-1.dsc ca991859381ef2ddc2b3306de05c242c 10605 rust-roff_0.2.1.orig.tar.gz 2b6e0d2d7c3e4926ef440427ba00db3b 2708 rust-roff_0.2.1-1.debian.tar.xz"
+    "ea0e73ca4e625462d23dec9242929b4e 1667 rust-roff_0.2.2-1.dsc 2a194c1dc8c6637a908b37f63e5c637d 11648 rust-roff_0.2.2.orig.tar.gz ac5ce90dc55e20c713f3216cb37185c7 2668 rust-roff_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-duct-0.13+default-dev, librust-pretty-assertions-1+default-dev"
+    "dh-cargo, librust-automod-1+default-dev, librust-duct-0.13+default-dev, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/roff]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.2-1"
   ]
 }
