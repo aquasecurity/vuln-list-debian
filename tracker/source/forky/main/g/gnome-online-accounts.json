@@ -6,19 +6,19 @@
     "gnome-online-accounts, libgoa-1.0-0b, libgoa-1.0-dev, libgoa-backend-1.0-2, libgoa-backend-1.0-dev, libgoa-1.0-common, libgoa-1.0-doc, gir1.2-goa-1.0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, docbook-xsl, gir1.2-gio-2.0-dev, gobject-introspection (\u003e= 1.80), libadwaita-1-dev (\u003e= 1.6~beta), libdbus-1-dev, libgcr-4-dev, libglib2.0-dev (\u003e= 2.67.4), libgtk-4-dev (\u003e= 4.15.2), libjson-glib-dev, libkeyutils-dev (\u003e= 1.6.2) [linux-any], libkrb5-dev, libmsgraph-dev, librest-dev (\u003e= 0.9), libsecret-1-dev, libsoup-3.0-dev (\u003e= 2.42), meson (\u003e= 0.57.0), valac, xsltproc"
+    "debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, dh-exec, docbook-xsl, gir1.2-gio-2.0-dev, gobject-introspection (\u003e= 1.80), libadwaita-1-dev (\u003e= 1.6~beta) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x alpha hurd-amd64 hurd-i386 powerpc ppc64 sparc64] \u003c!pkg.gnome-online-accounts.nogtk4\u003e, libdbus-1-dev, libgcr-4-dev, libglib2.0-dev (\u003e= 2.67.4), libgtk-4-dev (\u003e= 4.15.2) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x alpha hurd-amd64 hurd-i386 powerpc ppc64 sparc64] \u003c!pkg.gnome-online-accounts.nogtk4\u003e, libjson-glib-dev, libkeyutils-dev (\u003e= 1.6.2) [!hurd-any !x32], libkrb5-dev, librest-dev (\u003e= 0.9), libsecret-1-dev, libsoup-3.0-dev (\u003e= 2.42), meson (\u003e= 0.57.0), valac, xsltproc"
   ],
   "Build-Depends-Indep": [
     "gi-docgen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "d44882f680fa7caa035183e796b02476b2e3a2876340880b47356979a88e2e0e 3216 gnome-online-accounts_3.56.2-1.dsc ce88df65457f0e63a0d8daff13322e29ecb584197a187f48a3a21be2fcd1c824 493696 gnome-online-accounts_3.56.2.orig.tar.xz b121248fcb87d971b58da392889927e44d6bd2597573178809276c4ea88f5b1e 16012 gnome-online-accounts_3.56.2-1.debian.tar.xz"
+    "732bbf8ada122b197673a7a59a50e7e4f9747685a5ebbaca88c4f7f8ed8e8b9c 3914 gnome-online-accounts_3.56.2-6.dsc ce88df65457f0e63a0d8daff13322e29ecb584197a187f48a3a21be2fcd1c824 493696 gnome-online-accounts_3.56.2.orig.tar.xz 877a34c057f96fdf9b54557e423a7b7db4325a0f205224bbea43240f2dd8aedd 17220 gnome-online-accounts_3.56.2-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnome-online-accounts"
   ],
   "Files": [
-    "d980b1a503a913314b6dc275c6bd11af 3216 gnome-online-accounts_3.56.2-1.dsc 4f44137f4e84e84a7800f7f09c6f973a 493696 gnome-online-accounts_3.56.2.orig.tar.xz 4e481b15c4ba6f9ac3a8d6e69f326338 16012 gnome-online-accounts_3.56.2-1.debian.tar.xz"
+    "1bf6bad2004914c99f7771e262fa4e60 3914 gnome-online-accounts_3.56.2-6.dsc 4f44137f4e84e84a7800f7f09c6f973a 493696 gnome-online-accounts_3.56.2.orig.tar.xz bf3c8506caeeeaac86ac9d39951c60e2 17220 gnome-online-accounts_3.56.2-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gnome-online-accounts"
   ],
   "Package-List": [
-    "gir1.2-goa-1.0 deb introspection optional arch=any gnome-online-accounts deb gnome optional arch=any libgoa-1.0-0b deb libs optional arch=any libgoa-1.0-common deb libs optional arch=all libgoa-1.0-dev deb libdevel optional arch=any libgoa-1.0-doc deb doc optional arch=all profile=!nodoc libgoa-backend-1.0-2 deb libs optional arch=any libgoa-backend-1.0-dev deb libdevel optional arch=any"
+    "gir1.2-goa-1.0 deb introspection optional arch=any gnome-online-accounts deb gnome optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,alpha,hurd-amd64,hurd-i386,powerpc,ppc64,sparc64 profile=!pkg.gnome-online-accounts.nogtk4 libgoa-1.0-0b deb libs optional arch=any libgoa-1.0-common deb libs optional arch=all libgoa-1.0-dev deb libdevel optional arch=any libgoa-1.0-doc deb doc optional arch=all profile=!nodoc libgoa-backend-1.0-2 deb libs optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,alpha,hurd-amd64,hurd-i386,powerpc,ppc64,sparc64 profile=!pkg.gnome-online-accounts.nogtk4 libgoa-backend-1.0-dev deb libdevel optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,alpha,hurd-amd64,hurd-i386,powerpc,ppc64,sparc64 profile=!pkg.gnome-online-accounts.nogtk4"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/gnome-online-accounts.git"
   ],
   "Version": [
-    "3.56.2-1"
+    "3.56.2-6"
   ]
 }
