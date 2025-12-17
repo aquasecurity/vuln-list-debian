@@ -6,16 +6,19 @@
     "librust-html2text-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-html5ever-0.27+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.12+default-dev \u003c!nocheck\u003e, librust-tendril-0.4+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.50-~~) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-html5ever-0.27+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.12+default-dev \u003c!nocheck\u003e, librust-tendril-0.4+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.50-~~) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "90566c3c31f27f24c3571e1de8063624c98dd66e22f6bb8a7ebb37b8ff5bdf88 1991 rust-html2text_0.12.6-2.dsc 042a9677c258ac2952dd026bb0cd21972f00f644a5a38f5a215cb22cdaf6834e 69917 rust-html2text_0.12.6.orig.tar.gz 8104eedf31ad7ffa330ad1fbf1d346619a8c25b4175c19b5403779dba5b658b7 3616 rust-html2text_0.12.6-2.debian.tar.xz"
+    "d1e4e0df420a1b885cbcf3b77303821dd2852d56da085ccf9837a02ab4c92fed 2641 rust-html2text_0.12.6-3.dsc 042a9677c258ac2952dd026bb0cd21972f00f644a5a38f5a215cb22cdaf6834e 69917 rust-html2text_0.12.6.orig.tar.gz 9da005f6ef75523201d8726e1f33b88013151f7909fc3eecde0d2f9f6ac440d2 3664 rust-html2text_0.12.6-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-html2text"
   ],
   "Files": [
-    "82d674151e776a4376063a687e2b23ba 1991 rust-html2text_0.12.6-2.dsc 62e13e3e554cf863c0b556370a194959 69917 rust-html2text_0.12.6.orig.tar.gz f4a51b4141ec1c3a2bce4d5c8bf9892e 3616 rust-html2text_0.12.6-2.debian.tar.xz"
+    "c06afd3a1066e952b1cc7fc09ed52703 2641 rust-html2text_0.12.6-3.dsc 62e13e3e554cf863c0b556370a194959 69917 rust-html2text_0.12.6.orig.tar.gz 01714a41099133459ed8dd16a403d328 3664 rust-html2text_0.12.6-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-argparse-0.2+default-dev, librust-env-logger-0.11+default-dev, librust-log-0.4+default-dev, librust-termion-1+default-dev, rustc"
+    "dh-cargo, librust-argparse-0.2+default-dev, librust-env-logger-0.11+default-dev, librust-log-0.4+default-dev, librust-termion+default-dev, rustc"
   ],
   "Uploaders": [
     "Marco Villegas \u003cmarco@marvil07.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/html2text]"
   ],
   "Version": [
-    "0.12.6-2"
+    "0.12.6-3"
   ]
 }
