@@ -1,39 +1,48 @@
 {
   "Architecture": [
-    "kfreebsd-any linux-any all"
+    "linux-any all"
   ],
   "Binary": [
     "bird2, bird2-doc"
   ],
   "Build-Depends": [
-    "bison, debhelper-compat (= 13), docbook-xsl, flex, libncurses-dev, libreadline-dev | libreadline6-dev | libreadline5-dev, libssh-dev, m4, quilt, xsltproc"
+    "bison, debhelper-compat (= 13), dh-sequence-installsysusers, docbook-xsl, flex, libncurses-dev, libreadline-dev, libssh-dev, m4, quilt, xsltproc"
   ],
   "Build-Depends-Indep": [
     "linuxdoc-tools-latex, opensp, texlive-latex-extra"
   ],
   "Checksums-Sha256": [
-    "413377acdf3ab613f024eae1eaa3d6ec66db9fa3f023fcf62b37ecbd2b6c4c8f 2103 bird2_2.17.2-1.dsc 440dd2d3aca64323b46fd45532e573accaf8bdde639ee4bfcd68ea9b13328cdd 1499113 bird2_2.17.2.orig.tar.gz b85e9f617bea14c602c4bf5b5f035de88151e56774869b8ca73e3c7d0c552f80 16144 bird2_2.17.2-1.debian.tar.xz"
+    "b2021538f73f9887216c36fc952d6895c1d7f32ff2285109da002a040d8bf70e 2334 bird2_2.17.3-1.dsc 80849f1c20b3966706ab9e57689a559be05988c787a5f323669820deb959122a 876672 bird2_2.17.3.orig.tar.xz c21431ef2c1ae28e8ad36b9c623274f4fd701254dc29ffcba6442a15bcca7829 15424 bird2_2.17.3-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "d8eeb88be35ec2317641e67ccdd352fcfb5b7446 debian archive/debian/2.17.3-1 https://git.dgit.debian.org/bird2"
   ],
   "Directory": [
     "pool/main/b/bird2"
   ],
   "Files": [
-    "08845bb6b5fceac39ccdcedf26d02a41 2103 bird2_2.17.2-1.dsc f61ee5c5460f232822fb4d04b48aa320 1499113 bird2_2.17.2.orig.tar.gz 89e51ea0f01d4cfa1159de0ba7495574 16144 bird2_2.17.2-1.debian.tar.xz"
+    "e4cf67aefe911c8d1afa15a33670a12a 2334 bird2_2.17.3-1.dsc 8a2953aa80a6f0e4ca7413857a94290a 876672 bird2_2.17.3.orig.tar.xz c10728f2db89bc8373a9d11b0c5bb899 15424 bird2_2.17.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=d97c7980854cd354900b5eeb15cc80feb10a3a7f fp=272945cd836d38dfb7427e86cb3ec33ae1ded781"
+  ],
+  "Git-Tag-Tagger": [
+    "Marco d'Itri \u003cmd@linux.it\u003e"
   ],
   "Homepage": [
     "https://bird.network.cz/"
   ],
   "Maintainer": [
-    "Jakub Ružička \u003cjru@debian.org\u003e"
+    "Marco d'Itri \u003cmd@linux.it\u003e"
   ],
   "Package": [
     "bird2"
   ],
   "Package-List": [
-    "bird2 deb net optional arch=kfreebsd-any,linux-any bird2-doc deb doc optional arch=all"
+    "bird2 deb net optional arch=linux-any bird2-doc deb doc optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,18 +51,18 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2.0"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/debian/bird2"
+    "https://salsa.debian.org/md/bird"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/debian/bird2.git"
+    "https://salsa.debian.org/md/bird.git -b debian/bird2/unstable"
   ],
   "Version": [
-    "2.17.2-1"
+    "2.17.3-1"
   ]
 }
