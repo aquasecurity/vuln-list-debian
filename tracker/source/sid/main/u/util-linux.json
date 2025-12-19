@@ -12,13 +12,13 @@
     "debhelper-compat (= 13), dh-exec, dh-package-notes, dh-sequence-installsysusers, dh-sequence-zz-debputy-rrr (\u003e= 0.1.23~), asciidoctor \u003c!stage1 !nodoc\u003e, bc \u003c!stage1 !nocheck\u003e, bison, flex, gettext, libaudit-dev [linux-any] \u003c!stage1\u003e, libcap-ng-dev [linux-any] \u003c!stage1\u003e, libcrypt-dev \u003c!stage1\u003e, libcryptsetup-dev [linux-any] \u003c!pkg.util-linux.noverity\u003e, libncurses-dev, libpam0g-dev \u003c!stage1\u003e, libreadline-dev, libselinux1-dev [linux-any], libsqlite3-dev, libsystemd-dev [linux-any] \u003c!stage1\u003e, libtool, libudev-dev [linux-any] \u003c!stage1\u003e, netbase \u003c!stage1 !nocheck\u003e, pkgconf, po-debconf, po4a, socat \u003c!stage1 !nocheck\u003e, systemd [linux-any] \u003c!stage1\u003e, systemd-dev [linux-any] \u003c!stage1\u003e, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "77444f0717295e4b9a5f65cdae21e8247abb69b31b151ef87d4dd4c00dba5298 4928 util-linux_2.41.3-1.dsc 3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b 9467224 util-linux_2.41.3.orig.tar.xz f686309e9d383c67b5b9c83cfbb5c2eecfd1de8be2da7274c3fa499feb94bcf2 104824 util-linux_2.41.3-1.debian.tar.xz"
+    "11b51f9e7f24cddcdb1ac8c3fabbcc5e8687f8a32c75f1280fca0f94a932dbf4 5332 util-linux_2.41.3-2.dsc 3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b 9467224 util-linux_2.41.3.orig.tar.xz 18bb3a07fbb3129d5ac0161f08d03833a11fc3089144de0e8318c062ea0a0364 104900 util-linux_2.41.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/util-linux"
   ],
   "Files": [
-    "154bc2903a513cc9a9e76fa749472bc7 4928 util-linux_2.41.3-1.dsc d2faa85303dea29e7f6ee40a9465e528 9467224 util-linux_2.41.3.orig.tar.xz e921159826fcd13b5a5e81187717449b 104824 util-linux_2.41.3-1.debian.tar.xz"
+    "5caf3efbfae61ca76d56ac06debb7fe8 5332 util-linux_2.41.3-2.dsc d2faa85303dea29e7f6ee40a9465e528 9467224 util-linux_2.41.3.orig.tar.xz c4bfb0b26fbb0dc02f28d67a6acd509b 104900 util-linux_2.41.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "util-linux"
   ],
   "Package-List": [
-    "bsdextrautils deb utils optional arch=any profile=!stage1 bsdutils deb utils standard arch=any profile=!stage1 eject deb utils optional arch=linux-any profile=!stage1 eject-udeb udeb debian-installer optional arch=linux-any profile=!stage1,!noudeb fdisk deb utils important arch=any fdisk-udeb udeb debian-installer optional arch=hurd-any,linux-any profile=!stage1,!noudeb lastlog2 deb utils optional arch=any profile=!stage1 libblkid-dev deb libdevel optional arch=any libblkid1 deb libs optional arch=any libblkid1-udeb udeb debian-installer optional arch=any profile=!noudeb libfdisk-dev deb libdevel optional arch=any libfdisk1 deb libs optional arch=any libfdisk1-udeb udeb debian-installer optional arch=any profile=!noudeb liblastlog2-2 deb libs optional arch=any liblastlog2-dev deb libdevel optional arch=any libmount-dev deb libdevel optional arch=linux-any libmount1 deb libs optional arch=any libmount1-udeb udeb debian-installer optional arch=linux-any profile=!noudeb libpam-lastlog2 deb admin optional arch=any profile=!stage1 libsmartcols-dev deb libdevel optional arch=any libsmartcols1 deb libs optional arch=any libsmartcols1-udeb udeb debian-installer optional arch=any profile=!noudeb libuuid1 deb libs optional arch=any libuuid1-udeb udeb debian-installer optional arch=any profile=!noudeb login deb admin required arch=any profile=!stage1 mount deb admin required arch=linux-any profile=!stage1 rfkill deb utils optional arch=linux-any profile=!stage1 util-linux deb utils required arch=any profile=!stage1 essential=yes util-linux-extra deb utils standard arch=any profile=!stage1 util-linux-locales deb localization optional arch=all profile=!stage1 util-linux-udeb udeb debian-installer optional arch=any profile=!stage1,!noudeb uuid-dev deb libdevel optional arch=any uuid-runtime deb utils optional arch=any profile=!stage1"
+    "bsdextrautils deb utils optional arch=any profile=!stage1 profile:v1=!stage1 bsdutils deb utils standard arch=any profile=!stage1 profile:v1=!stage1 eject deb utils optional arch=linux-any profile=!stage1 profile:v1=!stage1 eject-udeb udeb debian-installer optional arch=linux-any profile=!stage1,!noudeb profile:v1=!stage1\u0026!noudeb fdisk deb utils important arch=any fdisk-udeb udeb debian-installer optional arch=hurd-any,linux-any profile=!stage1,!noudeb profile:v1=!stage1\u0026!noudeb lastlog2 deb utils optional arch=any profile=!stage1 profile:v1=!stage1 libblkid-dev deb libdevel optional arch=any libblkid1 deb libs optional arch=any libblkid1-udeb udeb debian-installer optional arch=any profile=!noudeb profile:v1=!noudeb libfdisk-dev deb libdevel optional arch=any libfdisk1 deb libs optional arch=any libfdisk1-udeb udeb debian-installer optional arch=any profile=!noudeb profile:v1=!noudeb liblastlog2-2 deb libs optional arch=any liblastlog2-dev deb libdevel optional arch=any libmount-dev deb libdevel optional arch=linux-any libmount1 deb libs optional arch=any libmount1-udeb udeb debian-installer optional arch=linux-any profile=!noudeb profile:v1=!noudeb libpam-lastlog2 deb admin optional arch=any profile=!stage1 profile:v1=!stage1 libsmartcols-dev deb libdevel optional arch=any libsmartcols1 deb libs optional arch=any libsmartcols1-udeb udeb debian-installer optional arch=any profile=!noudeb profile:v1=!noudeb libuuid1 deb libs optional arch=any libuuid1-udeb udeb debian-installer optional arch=any profile=!noudeb profile:v1=!noudeb login deb admin required arch=any profile=!stage1 profile:v1=!stage1 mount deb admin required arch=linux-any profile=!stage1 profile:v1=!stage1 rfkill deb utils optional arch=linux-any profile=!stage1 profile:v1=!stage1 util-linux deb utils required arch=any profile=!stage1 profile:v1=!stage1 essential=yes util-linux-extra deb utils standard arch=any profile=!stage1 profile:v1=!stage1 util-linux-locales deb localization optional arch=all profile=!stage1 profile:v1=!stage1 util-linux-udeb udeb debian-installer optional arch=any profile=!stage1,!noudeb profile:v1=!stage1\u0026!noudeb uuid-dev deb libdevel optional arch=any uuid-runtime deb utils optional arch=any profile=!stage1 profile:v1=!stage1"
   ],
   "Priority": [
     "source"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/util-linux.git"
   ],
   "Version": [
-    "2.41.3-1"
+    "2.41.3-2"
   ]
 }
