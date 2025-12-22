@@ -6,16 +6,19 @@
     "librust-simdutf8-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4f07a6bdfe46c50d0608f9d3b46e36b764ea62c5a40bef843d69a56290816cb4 2208 rust-simdutf8_0.1.4-4.dsc f27f6278552951f1f2b8cf9da965d10969b2efdea95a6ec47987ab46edfe263a 28621 rust-simdutf8_0.1.4.orig.tar.gz f92356df2a7e2eafd4893f01ea7a7f0ff160a5d089019f3e375f8c6771eb4fc2 3488 rust-simdutf8_0.1.4-4.debian.tar.xz"
+    "702460ce323611bf7bb08aa632dca05b3cd8a8583802edf68d9b494c46719af9 1596 rust-simdutf8_0.1.5-1.dsc e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e 28488 rust-simdutf8_0.1.5.orig.tar.gz 1b79d17f408cb61c7e3f7055534400898fba8b88baa7caa914f587c8e3093844 3056 rust-simdutf8_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-simdutf8"
   ],
   "Files": [
-    "13405b02a084ecfbe58c0319199f9768 2208 rust-simdutf8_0.1.4-4.dsc 74001a70c31a649cd14282d0521a5f39 28621 rust-simdutf8_0.1.4.orig.tar.gz 2f04ffbaa829c9dd0294ede55d7f8700 3488 rust-simdutf8_0.1.4-4.debian.tar.xz"
+    "034ba5d3f30cdac42b21384dcec4da95 1596 rust-simdutf8_0.1.5-1.dsc 789440cccc83854c8e317313ed19a4d1 28488 rust-simdutf8_0.1.5.orig.tar.gz ab071faf955595e8127b88096dabfd40 3056 rust-simdutf8_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/simdutf8"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/simdutf8]"
   ],
   "Version": [
-    "0.1.4-4"
+    "0.1.5-1"
   ]
 }
