@@ -6,13 +6,13 @@
     "ibus, ibus-data, ibus-tests, libibus-1.0-5, libibus-1.0-dev, ibus-gtk, ibus-gtk3, ibus-gtk4, ibus-wayland, ibus-doc, gir1.2-ibus-1.0, python3-ibus-1.0"
   ],
   "Build-Depends": [
-    "dbus-x11 \u003c!nocheck\u003e, debhelper-compat (= 13), dh-exec, desktop-file-utils, dh-sequence-python3, gettext, gir1.2-gobject-2.0-dev \u003c!nogir\u003e, gir1.2-gio-2.0-dev \u003c!nogir\u003e, gnome-pkg-tools, gobject-introspection, gtk-doc-tools \u003c!nodoc\u003e, iso-codes, libdbusmenu-glib-dev, libdbusmenu-gtk3-dev, libdconf-dev, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.62.2-2), libgtk-3-bin, libgtk-3-dev, libgtk-4-bin, libgtk-4-dev, libgtk2.0-dev, libnotify-dev, libtool, libwayland-dev [linux-any], pkgconf, python-gi-dev, python3-all, systemd-dev [linux-any], unicode-cldr-core (\u003e= 44), unicode-data (\u003e= 15.1), valac, wayland-protocols [linux-any], xauth \u003c!nocheck\u003e, xkb-data (\u003e= 2.38), xvfb \u003c!nocheck\u003e"
+    "dbus-x11 \u003c!nocheck\u003e, debhelper-compat (= 13), dh-exec, desktop-file-utils, dh-sequence-python3, gettext, gir1.2-gobject-2.0-dev \u003c!nogir\u003e, gir1.2-gio-2.0-dev \u003c!nogir\u003e, gir1.2-gnomedesktop-4.0 \u003c!nogir\u003e, gnome-pkg-tools, gobject-introspection (\u003e= 1.80), gtk-doc-tools \u003c!nodoc\u003e, iso-codes, libdbusmenu-glib-dev, libdbusmenu-gtk3-dev, libdconf-dev, libglib2.0-dev (\u003e= 2.62.2-2), libgtk-3-bin, libgtk-3-dev, libgtk-4-bin, libgtk-4-dev, libgtk2.0-dev, libnotify-dev, libtool, libwayland-dev [linux-any], pkgconf, python-gi-dev, python-is-python3, python3-all, systemd-dev [linux-any], unicode-cldr-core (\u003e= 44), unicode-data (\u003e= 15.1), valac, wayland-protocols [linux-any], xauth \u003c!nocheck\u003e, xkb-data (\u003e= 2.38), xvfb \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "libglib2.0-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "a032bd54034203242cb3ad1037d450948a262ffd1f6d6b438ddec5bf9e02db1c 3605 ibus_1.5.32-2.dsc b24f41ae38b236b254c09f1a8f53c2354b69b0789e89cea888d0494b09d15d67 4192999 ibus_1.5.32.orig.tar.gz 37c4ea6b6014481df774d98b2ecca5172f66207edafbd555c317ba22f55577da 30756 ibus_1.5.32-2.debian.tar.xz"
+    "7c41f4582a8d6c6e1e5f2605998e58baeb14a6368d5909700d4671c615e212ae 3685 ibus_1.5.33-1.dsc 58941c9b8285891c776b67fb2039eebe0d61d63a51578519febfc5481b91e831 4350799 ibus_1.5.33.orig.tar.gz 23326a72b22820e132d5f973a9bba6e2a5db43b07cedfb40a5871f2ae250036f 29548 ibus_1.5.33-1.debian.tar.xz"
   ],
   "Description": [
     "Intelligent Input Bus IBus is an Intelligent Input Bus. It is a new input framework for the Linux OS. It provides full featured and user friendly input method user interface. It also may help developers to develop input method easily."
@@ -21,7 +21,7 @@
     "pool/main/i/ibus"
   ],
   "Files": [
-    "f5503089a319e2f461d093a6f4979282 3605 ibus_1.5.32-2.dsc 6fdec3c6caa189a616fcea9384f81182 4192999 ibus_1.5.32.orig.tar.gz bbda8bf0415fecfbdc5101a43634f9bd 30756 ibus_1.5.32-2.debian.tar.xz"
+    "cd181ba4ffdf5eec166f8f9123e03d8c 3685 ibus_1.5.33-1.dsc cee7596d2f21c86362775c3d6986fc7e 4350799 ibus_1.5.33.orig.tar.gz 08c830e14418ad3ec39218d419630a9a 29548 ibus_1.5.33-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "ibus"
   ],
   "Package-List": [
-    "gir1.2-ibus-1.0 deb introspection optional arch=any ibus deb utils optional arch=any ibus-data deb utils optional arch=all ibus-doc deb doc optional arch=all profile=!nodoc ibus-gtk deb utils optional arch=any ibus-gtk3 deb utils optional arch=any ibus-gtk4 deb utils optional arch=any ibus-tests deb utils optional arch=amd64,arm64,armhf,i386,mips64el,mipsel,ppc64el,s390x,riscv64 profile=!noinsttest ibus-wayland deb utils optional arch=linux-any libibus-1.0-5 deb libs optional arch=any libibus-1.0-dev deb libdevel optional arch=any python3-ibus-1.0 deb python optional arch=all"
+    "gir1.2-ibus-1.0 deb introspection optional arch=any ibus deb utils optional arch=any ibus-data deb utils optional arch=all ibus-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc ibus-gtk deb utils optional arch=any ibus-gtk3 deb utils optional arch=any ibus-gtk4 deb utils optional arch=any ibus-tests deb utils optional arch=amd64,arm64,armhf,i386,mips64el,mipsel,ppc64el,s390x,riscv64 profile=!noinsttest profile:v1=!noinsttest ibus-wayland deb utils optional arch=linux-any libibus-1.0-5 deb libs optional arch=any libibus-1.0-dev deb libdevel optional arch=any python3-ibus-1.0 deb python optional arch=all"
   ],
   "Priority": [
     "source"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/ibus.git"
   ],
   "Version": [
-    "1.5.32-2"
+    "1.5.33-1"
   ]
 }

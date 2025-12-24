@@ -3,19 +3,19 @@
     "amd64 arm64 loong64 ppc64 ppc64el riscv64 s390x"
   ],
   "Binary": [
-    "libggml0, libggml-dev, libggml0-backend-cpu, libggml0-backend-blas, libggml0-backend-hip, libggml0-backend-vulkan, libggml0-backend-cuda"
+    "libggml0, libggml-dev, libggml0-backend-blas, libggml0-backend-hip, libggml0-backend-vulkan"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libblas-dev \u003c!pkg.ggml.cuda\u003e, pkgconf \u003c!pkg.ggml.cuda\u003e, libvulkan-dev \u003c!pkg.ggml.cuda\u003e, glslc \u003c!pkg.ggml.cuda\u003e, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.cuda pkg.ggml.hip\u003e, libamdhip64-dev (\u003e= 5.7.1-7) [amd64 arm64] \u003c!pkg.ggml.cuda pkg.ggml.hip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64 arm64] \u003c!pkg.ggml.cuda pkg.ggml.hip\u003e, libhipblas-dev [amd64 arm64] \u003c!pkg.ggml.cuda pkg.ggml.hip\u003e, librocblas-dev [amd64 arm64] \u003c!pkg.ggml.cuda pkg.ggml.hip\u003e, nvidia-cuda-toolkit-gcc \u003cpkg.ggml.cuda\u003e"
+    "cmake, debhelper-compat (= 13), libblas-dev, pkgconf, libvulkan-dev, glslc, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.nohip\u003e, libamdhip64-dev (\u003e= 5.7.1-7) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, libhipblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, librocblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e"
   ],
   "Checksums-Sha256": [
-    "cf74d29b4996e86b2656e889401f321f44fe2f5f9772da555a96cd9128651bef 3314 ggml_0.9.4-6.dsc d8b7a192e43dbeb6c0ece9464156c5f50ecaba8f2edfe85ac36ee179af8da229 2193990 ggml_0.9.4.orig.tar.gz da9b3c1f96f9bb2134fdd2887a7a55080440bbe7856f1f2a7e86a68dc17bcf2b 12268 ggml_0.9.4-6.debian.tar.xz"
+    "ca222f71fd513122d37eb0da3c74a38da51aa124f08b6cc3f423c399a13a993c 2784 ggml_0.9.4-7.dsc d8b7a192e43dbeb6c0ece9464156c5f50ecaba8f2edfe85ac36ee179af8da229 2193990 ggml_0.9.4.orig.tar.gz 8bb2c8322c4c1c7cbe339f5de97c533c5231849260ad17413157f17d7991846b 13104 ggml_0.9.4-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/ggml"
   ],
   "Files": [
-    "dd8881c1b16cb3d9d2174e4e993fd217 3314 ggml_0.9.4-6.dsc 3f4910cf74bfa3eb0b221e3de3382a26 2193990 ggml_0.9.4.orig.tar.gz 5056b0b8ba505c2ac9ae0976f35883b4 12268 ggml_0.9.4-6.debian.tar.xz"
+    "e1687ccc63df9fffb6834c0ffa6bc119 2784 ggml_0.9.4-7.dsc 3f4910cf74bfa3eb0b221e3de3382a26 2193990 ggml_0.9.4.orig.tar.gz 32f9a6d48053af52d9f8172c839ddc0c 13104 ggml_0.9.4-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ggml"
   ],
   "Package-List": [
-    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0-backend-cpu deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda libggml0-backend-cuda deb contrib/libs optional arch=amd64,arm64,ppc64el profile=pkg.ggml.cuda libggml0-backend-hip deb libs optional arch=amd64,arm64 profile=pkg.ggml.hip,!pkg.ggml.cuda libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.cuda"
+    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-hip deb libs optional arch=amd64,arm64 profile=!pkg.ggml.nohip libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/ggml.git"
   ],
   "Version": [
-    "0.9.4-6"
+    "0.9.4-7"
   ]
 }
