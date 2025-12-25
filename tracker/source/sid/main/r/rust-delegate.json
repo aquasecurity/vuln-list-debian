@@ -6,19 +6,25 @@
     "librust-delegate-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e, librust-syn-1+visit-mut-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c91f61c458afedf964e2b7d6bec0f077897019402d31c87a94a675ed32d89862 2495 rust-delegate_0.9.0-1.dsc d358e0ec5c59a5e1603b933def447096886121660fc680dc1e64a0753981fe3c 9439 rust-delegate_0.9.0.orig.tar.gz 72e85e76ead3f4de70eea41913eb03c5490dfae2a6c34ded48d87ab545f22d8a 2696 rust-delegate_0.9.0-1.debian.tar.xz"
+    "82ac9dd064a30a9fd7074d59a4006cecaa77b639712b0d3247ba60c0eba759b9 1960 rust-delegate_0.13.5-1.dsc 780eb241654bf097afb00fc5f054a09b687dad862e485fdcf8399bb056565370 20690 rust-delegate_0.13.5.orig.tar.gz 6903ab9108099cebf8ef24134bc1937cfb1ee566cacc8af47879a63a69824e39 2740 rust-delegate_0.13.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-delegate"
   ],
   "Files": [
-    "5741d63d95258ac5e756adbcc3016ec4 2495 rust-delegate_0.9.0-1.dsc 6ad81b7ee8b352626384a30eeef4fca4 9439 rust-delegate_0.9.0.orig.tar.gz 0f917098c026d4870cf65c11309b8751 2696 rust-delegate_0.9.0-1.debian.tar.xz"
+    "5f7b8f3b662f9b24cb21118691f7e808 1960 rust-delegate_0.13.5-1.dsc 4e099f696063b42bbb064c996994264a 20690 rust-delegate_0.13.5.orig.tar.gz 5d336d2390840121aa6b2f1b57739f68 2740 rust-delegate_0.13.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kobzol/rust-delegate"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-trait-0.1+default-dev, librust-futures-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+sync-dev"
+    "dh-cargo, librust-async-trait-0.1+default-dev, librust-futures-0.3+default-dev, librust-macrotest-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+sync-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/delegate"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/delegate]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.13.5-1"
   ]
 }

@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "amd64 arm64 armel armhf hurd-amd64 hurd-i386 i386 loong64 m68k mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc sparc64 x32"
   ],
   "Binary": [
-    "llvm, llvm-runtime, llvm-dev, libllvm-ocaml-dev, clang, clang-tools, clang-tidy, clangd, clang-format, libclang-cpp-dev, libclang1, libclang-dev, libclang-rt-dev, libclang-rt-dev-wasm32, libclang-rt-dev-wasm64, libc++-dev-wasm32, liblldb-dev, lldb, lld, llvm-bolt, python3-clang, python3-lldb, libomp-dev, libomp5, libc++1, libc++-dev, libc++abi1, libc++abi-dev, liblld-dev, flang, libflang-dev, libbolt-dev"
+    "llvm, llvm-runtime, llvm-dev, libllvm-ocaml-dev, clang, clang-tools, clang-tidy, clangd, clang-format, libclang-cpp-dev, libclang-dev, libclang-rt-dev, libclang-rt-dev-wasm32, libclang-rt-dev-wasm64, libc++-dev-wasm32, libclang-rt-dev-win, liblldb-dev, lldb, lld, llvm-bolt, python3-clang, python3-lldb, libomp-dev, libc++-dev, libc++abi-dev, liblld-dev, flang, libflang-dev, libbolt-dev, libpolly-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.13.9), lsb-release, m4"
+    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.13.9), lsb-release, m4, llvm-21 (\u003e= 1:21.1.6-1), llvm-21-runtime, llvm-21-dev, clang-21, clang-tools-21, clangd-21, clang-tidy-21, clang-format-21, lld-21 [amd64 arm64 armel armhf i386 mipsel mips64el ppc64el s390x sparc m68k ppc64 sparc64 x32 riscv64 loong64], lldb-21 [amd64 arm64 armel armhf i386 loong64 m68k ppc64el riscv64 s390x x32], flang-21 [amd64 arm64 ppc64el ppc64 sparc64 riscv64 loong64], bolt-21 [amd64 arm64]"
   ],
   "Checksums-Sha256": [
-    "8fd4b054776e9c9f52c1bb3ce2fc9cd4a6701dd89d62a0ed23ef24fa640a8f94 3710 llvm-defaults_0.63.dsc e53a3e006ba796b6fc3ed0cb2cf909ae454c8d5b578d86cdb1139cf29a48cc1b 15804 llvm-defaults_0.63.tar.xz"
+    "b7d24319e9a0ddd735d159095ab6542e6b78496306e85337d7c5a3c34a5d2ac4 7037 llvm-defaults_0.69.dsc 7d694a4431640614b8d36113cfab62eeb1ad55db6e90b002514ea1c9f67e40f9 16460 llvm-defaults_0.69.tar.xz"
   ],
   "Directory": [
     "pool/main/l/llvm-defaults"
   ],
   "Files": [
-    "765c7f3c7b69ebafd0aec422feca1fd5 3710 llvm-defaults_0.63.dsc 23ef462e9583b0bd71569eb6ee0a0d98 15804 llvm-defaults_0.63.tar.xz"
+    "83934ad8fde71ab7bb5fbf7f96504c1f 7037 llvm-defaults_0.69.dsc d9fafcb63f08ef8b198987c36132975a 16460 llvm-defaults_0.69.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -27,7 +27,7 @@
     "llvm-defaults"
   ],
   "Package-List": [
-    "clang deb devel optional arch=any clang-format deb devel optional arch=any clang-tidy deb devel optional arch=any clang-tools deb devel optional arch=any clangd deb devel optional arch=any flang deb devel optional arch=amd64,arm64,ppc64el,ppc64,sparc64,riscv64,loong64 libbolt-dev deb libdevel optional arch=any libc++-dev deb libdevel optional arch=any libc++-dev-wasm32 deb libdevel optional arch=any libc++1 deb libs optional arch=any libc++abi-dev deb libdevel optional arch=any libc++abi1 deb libs optional arch=any libclang-cpp-dev deb libdevel optional arch=any libclang-dev deb libdevel optional arch=any libclang-rt-dev deb libdevel optional arch=any libclang-rt-dev-wasm32 deb libdevel optional arch=any libclang-rt-dev-wasm64 deb libdevel optional arch=any libclang1 deb libs optional arch=any libflang-dev deb devel optional arch=amd64,arm64,ppc64el,ppc64,sparc64,riscv64,loong64 liblld-dev deb libdevel optional arch=any liblldb-dev deb libdevel optional arch=any libllvm-ocaml-dev deb ocaml optional arch=amd64,arm64,ppc64el,riscv64,s390x libomp-dev deb libdevel optional arch=amd64,arm64,armhf,ppc64,ppc64el,hurd-amd64,loong64,mips64el,riscv64 libomp5 deb libs optional arch=amd64,arm64,armhf,ppc64,ppc64el,hurd-amd64,loong64,mips64el,riscv64 lld deb devel optional arch=any lldb deb devel optional arch=any llvm deb devel optional arch=any llvm-bolt deb devel optional arch=any llvm-dev deb devel optional arch=any llvm-runtime deb devel optional arch=any python3-clang deb python optional arch=any python3-lldb deb python optional arch=any"
+    "clang deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 clang-format deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 clang-tidy deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 clang-tools deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 clangd deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 flang deb devel optional arch=amd64,arm64,ppc64el,ppc64,sparc64,riscv64,loong64 libbolt-dev deb libdevel optional arch=amd64,arm64 libc++-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libc++-dev-wasm32 deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libc++abi-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libclang-cpp-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libclang-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libclang-rt-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libclang-rt-dev-wasm32 deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libclang-rt-dev-wasm64 deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libclang-rt-dev-win deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 libflang-dev deb devel optional arch=amd64,arm64,ppc64el,ppc64,sparc64,riscv64,loong64 liblld-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 liblldb-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,loong64,m68k,ppc64el,riscv64,s390x,x32 libllvm-ocaml-dev deb ocaml optional arch=amd64,arm64,ppc64el,riscv64,s390x libomp-dev deb libdevel optional arch=amd64,arm64,armhf,i386,loong64,mips64el,ppc64,ppc64el,riscv64,hurd-amd64 libpolly-dev deb libdevel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 lld deb devel optional arch=amd64,arm64,armel,armhf,i386,loong64,m68k,mips64el,mipsel,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 lldb deb devel optional arch=amd64,arm64,armel,armhf,i386,loong64,m68k,ppc64el,riscv64,s390x,x32 llvm deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 llvm-bolt deb devel optional arch=amd64,arm64 llvm-dev deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 llvm-runtime deb devel optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 python3-clang deb python optional arch=amd64,arm64,armel,armhf,hurd-amd64,hurd-i386,i386,loong64,m68k,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,sparc,sparc64,x32 python3-lldb deb python optional arch=amd64,arm64,armel,armhf,i386,loong64,m68k,ppc64el,riscv64,s390x,x32"
   ],
   "Priority": [
     "source"
@@ -36,7 +36,7 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Uploaders": [
     "Matthias Klose \u003cdoko@debian.org\u003e, Sylvestre Ledru \u003csylvestre@debian.org\u003e, Gianfranco Costamagna \u003clocutusofborg@debian.org\u003e"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org/pkg-llvm-team/llvm-defaults.git -b snapshot"
   ],
   "Version": [
-    "0.63"
+    "0.69"
   ]
 }
