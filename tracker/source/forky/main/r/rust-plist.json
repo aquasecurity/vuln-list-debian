@@ -6,19 +6,25 @@
     "librust-plist-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0+default-dev (\u003e= 0.21-~~) \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-quick-xml-0+default-dev (\u003e= 0.32-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-time-0.3+default-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-time-0.3+formatting-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-time-0.3+parsing-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.1.0-~~) \u003c!nocheck\u003e, librust-quick-xml-0.38+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.2-~~) \u003c!nocheck\u003e, librust-time-0.3+default-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-time-0.3+formatting-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e, librust-time-0.3+parsing-dev (\u003e= 0.3.30-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "289002f533a62ce1516c17a467cbab59789c791fc4b756e31799044cb98d7c69 2584 rust-plist_1.7.0-1.dsc 42cf17e9a1800f5f396bc67d193dc9411b59012a5876445ef450d449881e1016 101068 rust-plist_1.7.0.orig.tar.gz a03dc5ca97cb3717a2eaa05408161c020240d1ec023a85c7ff425c30f8f84d16 3500 rust-plist_1.7.0-1.debian.tar.xz"
+    "3a2a7a4daa676df415221a1c399877f15ec2cc085dba5610bd039bba40e36bde 2644 rust-plist_1.8.0-1.dsc 740ebea15c5d1428f910cd1a5f52cebf8d25006245ed8ade92702f4943d91e07 54623 rust-plist_1.8.0.orig.tar.gz 8891f22c8eadce77b7050782923eb51b24d3485ee2107498d40150533a528645 5108 rust-plist_1.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-plist"
   ],
   "Files": [
-    "ad6c907229662370ba9b9f4169861a58 2584 rust-plist_1.7.0-1.dsc c0c574b7924961973f6483c9258808fc 101068 rust-plist_1.7.0.orig.tar.gz 8f4f719ef67252e2633a1b0b2211b186 3500 rust-plist_1.7.0-1.debian.tar.xz"
+    "7dc760af4e26169502a43d75e62b1c67 2644 rust-plist_1.8.0-1.dsc 219314e2e3b57b8ed75fe71646a89e60 54623 rust-plist_1.8.0.orig.tar.gz 7ad7c373b27a6a6b7e86330fd60a07d1 5108 rust-plist_1.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ebarnard/rust-plist/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-yaml-0.9+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-yaml-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "Helen Koike \u003chelen@koikeco.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/plist]"
   ],
   "Version": [
-    "1.7.0-1"
+    "1.8.0-1"
   ]
 }

@@ -9,19 +9,19 @@
     "debhelper (\u003e= 13.3), debhelper-compat (= 13), dh-sequence-lua:native \u003c!nolua\u003e, python3, python3-sphinx:native \u003c!nodoc\u003e"
   ],
   "Build-Depends-Arch": [
-    "liblua5.4-dev \u003c!nolua\u003e, libfdisk-dev, libconfig-dev, libcurl4-openssl-dev, libarchive-dev, libblkid-dev, libudev-dev [linux-any], libbtrfsutil-dev [linux-any], libext2fs-dev, libgpiod-dev [linux-any], libjson-c-dev, librsync-dev, libsystemd-dev, uuid-dev, zlib1g-dev, libzstd-dev, libzck-dev (\u003e= 1.3), libssl-dev, libmtd-dev [linux-any], libubi-dev [linux-any], libwebsockets-dev (\u003e= 3.2.0) \u003c!pkg.swupdate.noswuforwarder\u003e, liburiparser-dev, libubootenv-dev (\u003e= 0.3.5) [linux-any], libebgenv-dev [any-amd64 any-i386 any-arm64 armhf any-loong64 any-riscv64 any-ia64], libcmocka-dev, pkgconf, gawk"
+    "liblua5.4-dev \u003c!nolua\u003e, libfdisk-dev, libconfig-dev, libcurl4-openssl-dev, libarchive-dev, libblkid-dev, libudev-dev [linux-any], libbtrfsutil-dev [linux-any], libext2fs-dev, libgpiod-dev [linux-any], libjson-c-dev, librsync-dev, libsystemd-dev, uuid-dev, liblzma-dev, zlib1g-dev, libzstd-dev, libzck-dev (\u003e= 1.3), libmbedtls-dev, libssl-dev, libgpgme-dev, libmtd-dev [linux-any], libubi-dev [linux-any], libwebsockets-dev (\u003e= 3.2.0) \u003c!pkg.swupdate.noswuforwarder\u003e, liburiparser-dev, libubootenv-dev (\u003e= 0.3.5) [linux-any], libebgenv-dev [any-amd64 any-i386 any-arm64 armhf any-loong64 any-riscv64 any-ia64], libcmocka-dev, pkgconf, gawk"
   ],
   "Build-Depends-Indep": [
-    "dh-nodejs, graphviz \u003c!nodoc\u003e, latexmk \u003c!nodoc\u003e, libjs-dropzone, node-bootstrap, node-jquery, sassc, texlive-latex-recommended \u003c!nodoc\u003e, texlive-fonts-recommended \u003c!nodoc\u003e, texlive-formats-extra \u003c!nodoc\u003e, tex-gyre \u003c!nodoc\u003e"
+    "dh-nodejs, graphviz \u003c!nodoc\u003e, latexmk \u003c!nodoc\u003e, libjs-dropzone, node-bootstrap, node-jquery, sassc, texlive-latex-recommended \u003c!nodoc\u003e, fonts-freefont-otf \u003c!nodoc\u003e, texlive-formats-extra \u003c!nodoc\u003e, tex-gyre \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "a89fc088aa5e2095de8f4823454c04d788510497cf30960ed3d040c86e1d4456 3120 swupdate_2025.05+dfsg-3.dsc 466d2ce19cf5e4bc84cbc633e5ec2923d4220cea849909715770c679abf33867 5564940 swupdate_2025.05+dfsg.orig.tar.xz 8e37ef9abd8de9a81bbc237fe41023515ceac113422fac9dcb06ad8f66f1744b 25368 swupdate_2025.05+dfsg-3.debian.tar.xz"
+    "bf0585cd41dcb7cd1c0d19251e72ef31be09b3c9107390dea7280ad700db9fc3 3192 swupdate_2025.12+dfsg-2.dsc 32211796c9dac40d0fb2bfa9c236f95076e71464f7c7f58f814a77509bdbd08b 5609884 swupdate_2025.12+dfsg.orig.tar.xz 22af4b849224fb1fde840ba32368a5e18b0f6e02ab3582b43ff14f7e8d7f315b 23764 swupdate_2025.12+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/swupdate"
   ],
   "Files": [
-    "c15b1cecc34a1a0f90152f7c6bc1dc2a 3120 swupdate_2025.05+dfsg-3.dsc 9f42bfb5317a2febf6c0492306dd655b 5564940 swupdate_2025.05+dfsg.orig.tar.xz 501e5faaa94d52d4c1dcc92eccaab062 25368 swupdate_2025.05+dfsg-3.debian.tar.xz"
+    "e6204a289303e291ca23d9d37fd71915 3192 swupdate_2025.12+dfsg-2.dsc 13480888df0ea36750f6fbf5c0c5a8dc 5609884 swupdate_2025.12+dfsg.orig.tar.xz 52df9eba0cd92a75648f73157d9028ad 23764 swupdate_2025.12+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "swupdate"
   ],
   "Package-List": [
-    "libswupdate-dev deb libdevel optional arch=any libswupdate0.1 deb libs optional arch=any lua-swupdate deb interpreters optional arch=linux-any profile=!nolua swupdate deb embedded optional arch=linux-any swupdate-doc deb doc optional arch=all profile=!nodoc swupdate-www deb embedded optional arch=all"
+    "libswupdate-dev deb libdevel optional arch=any libswupdate0.1 deb libs optional arch=any lua-swupdate deb interpreters optional arch=linux-any profile=!nolua profile:v1=!nolua swupdate deb embedded optional arch=linux-any swupdate-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc swupdate-www deb embedded optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/swupdate.git"
   ],
   "Version": [
-    "2025.05+dfsg-3"
+    "2025.12+dfsg-2"
   ]
 }

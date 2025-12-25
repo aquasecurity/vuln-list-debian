@@ -6,19 +6,25 @@
     "librust-quick-xml-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2fa5e331ec12cdd1f097ce558776275ec3e288c52f1e403b88afd3f9bd557fc9 2442 rust-quick-xml_0.36.1-2.dsc 96a05e2e8efddfa51a84ca47cec303fac86c8541b686d37cac5efc0e094417bc 185352 rust-quick-xml_0.36.1.orig.tar.gz c1a51f1b61b83bff1db301368ab54255b91976f59132bf7ebed687d29921cf38 5972 rust-quick-xml_0.36.1-2.debian.tar.xz"
+    "7443d74a2316a5fafe87047f72cccdbd2a758ed997eadd83848c85c77feb2b3c 2520 rust-quick-xml_0.38.4-1.dsc b66c2058c55a409d601666cffe35f04333cf1013010882cec174a7467cd4e21c 205035 rust-quick-xml_0.38.4.orig.tar.gz 4d4ac64ed8ef203684a928806a9fefb1a4bbb12d11b5d206c5f209b07f5c0d33 5620 rust-quick-xml_0.38.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-quick-xml"
   ],
   "Files": [
-    "f30b45bbf9c7b5157bbdb428d4d606f7 2442 rust-quick-xml_0.36.1-2.dsc 5a7d8835fdff76e83742ea2b580e66d0 185352 rust-quick-xml_0.36.1.orig.tar.gz 56fdb08078fa19c8e989578f0c4c9056 5972 rust-quick-xml_0.36.1-2.debian.tar.xz"
+    "43e4254593262554a3775566b537e9cf 2520 rust-quick-xml_0.38.4-1.dsc 6e8ee0c663ea76d166b80f3bd7889de3 205035 rust-quick-xml_0.38.4.orig.tar.gz 20dca0b87c31cf5df6407983fc9d8897 5620 rust-quick-xml_0.38.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tafia/quick-xml"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-pretty-assertions-1+default-dev, librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-pretty-assertions-1+default-dev, librust-regex-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/quick-xml]"
   ],
   "Version": [
-    "0.36.1-2"
+    "0.38.4-1"
   ]
 }
