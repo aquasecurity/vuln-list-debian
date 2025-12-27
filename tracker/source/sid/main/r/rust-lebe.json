@@ -6,19 +6,25 @@
     "librust-lebe-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.78.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9e2f262ce8f36e62889955d5539eeea7962b61ecd8377ea041a4810e6760073e 1546 rust-lebe_0.5.2-1.dsc 03087c2bad5e1034e8cace5926dec053fb3790248370865f5117a7d0213354c8 8422 rust-lebe_0.5.2.orig.tar.gz 89994e69051f6357c8677490a1e550a865754d09c70b9839789fdefdbe11c1d8 2988 rust-lebe_0.5.2-1.debian.tar.xz"
+    "7dddcdc1903f67b67c584d456dd737a7a61c0d4aa61e9c7857d211549a116b52 1594 rust-lebe_0.5.3-1.dsc 7a79a3332a6609480d7d0c9eab957bca6b455b91bb84e66d19f5ff66294b85b8 9439 rust-lebe_0.5.3.orig.tar.gz a21cf9bfa23274c4b4cbee5639a40f5748c6ed309de0c35bc2428e511ed5846a 2912 rust-lebe_0.5.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lebe"
   ],
   "Files": [
-    "09cc6a448929f7c756319231bd6fe175 1546 rust-lebe_0.5.2-1.dsc 2db26dd3b5201776a36e40217bfdfe26 8422 rust-lebe_0.5.2.orig.tar.gz c346ba559c3db0efe96bb44509ecf292 2988 rust-lebe_0.5.2-1.debian.tar.xz"
+    "2ab28d08046c781b3be5019e8c046657 1594 rust-lebe_0.5.3-1.dsc c4545aacff319e9282ce10a2cd986609 9439 rust-lebe_0.5.3.orig.tar.gz bac0ddc93d9fe314453239ca0fb967e9 2912 rust-lebe_0.5.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/johannesvollmer/lebe"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bencher-0.1+default-dev, librust-byteorder-1+default-dev, rustc"
+    "dh-cargo, librust-byteorder-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lebe]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.5.3-1"
   ]
 }
