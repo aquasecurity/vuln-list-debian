@@ -3,22 +3,22 @@
     "all"
   ],
   "Binary": [
-    "ovmf, ovmf-ia32, qemu-efi-arm, qemu-efi-aarch64, qemu-efi-riscv64, qemu-efi-loongarch64, efi-shell-ia32, efi-shell-x64, efi-shell-arm, efi-shell-aa64, efi-shell-riscv64, efi-shell-loongarch64"
+    "ovmf, ovmf-generic, ovmf-amdsev, ovmf-inteltdx, qemu-efi-aarch64, qemu-efi-riscv64, qemu-efi-loongarch64, efi-shell-x64, efi-shell-aa64, efi-shell-riscv64, efi-shell-loongarch64"
   ],
   "Build-Depends": [
-    "bc, debhelper-compat (= 12), dosfstools [amd64 arm64] \u003c!nocheck\u003e, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-arm-linux-gnueabi, gcc-multilib [i386], gcc-riscv64-linux-gnu, gcc-loongarch64-linux-gnu, grub-efi-amd64-signed [amd64] \u003c!nocheck\u003e, grub-efi-arm64-signed [arm64] \u003c!nocheck\u003e, iasl, lsb-release, mtools [amd64 arm64] \u003c!nocheck\u003e, nasm, openssl [amd64 arm64] \u003c!nocheck\u003e, python3, python3-pexpect \u003c!nocheck\u003e, python3-virt-firmware, qemu-system-arm \u003c!nocheck\u003e, qemu-system-loongarch64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-riscv64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-x86 \u003c!nocheck\u003e, rsync, sbsigntool [amd64 arm64] \u003c!nocheck\u003e, shim-signed [amd64 arm64] \u003c!nocheck\u003e, uuid-dev, xorriso [amd64 arm64] \u003c!nocheck\u003e"
+    "bc, debhelper-compat (= 12), dosfstools [amd64 arm64] \u003c!nocheck\u003e, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-multilib [i386], gcc-riscv64-linux-gnu, gcc-loongarch64-linux-gnu, grub-efi-amd64-signed [amd64] \u003c!nocheck\u003e, grub-efi-arm64-signed [arm64] \u003c!nocheck\u003e, iasl, lsb-release, mtools [amd64 arm64] \u003c!nocheck\u003e, nasm, openssl [amd64 arm64] \u003c!nocheck\u003e, python3, python3-pexpect \u003c!nocheck\u003e, python3-virt-firmware, qemu-system-aarch64, qemu-system-loongarch64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-riscv64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-x86-64 \u003c!nocheck\u003e, rsync, sbsigntool [amd64 arm64] \u003c!nocheck\u003e, shim-signed [amd64 arm64] \u003c!nocheck\u003e, uuid-dev, xorriso [amd64 arm64] \u003c!nocheck\u003e"
   ],
   "Build-Indep-Architecture": [
     "amd64"
   ],
   "Checksums-Sha256": [
-    "4c67fba3d906a34be01d1c40dedaf22056be5e6a6bfe78e10ca24cb14884004f 3164 edk2_2025.08.01-6.dsc 69260b8cbd2a4adc76ca88650fe72a39afa4991fc7710ade19706bd6822b6e6b 60401236 edk2_2025.08.01.orig.tar.xz 5c630ab324550b380bca927d8a0a9e702c8b3effcbfc16d5585522122add0993 68552 edk2_2025.08.01-6.debian.tar.xz"
+    "0eee2840eb5fe76ad8e98c1d8e020c1433bb30193d02efc93a4b5805cfb3bb51 2974 edk2_2025.11-1.dsc 926f148812c119a8d89b763ffd343ca99dd37c7b7e61e335ea51ef7db07d8c24 60617840 edk2_2025.11.orig.tar.xz c52d5613037e75b526460ef6596d3c82106a680a99e1fbcc738c743e73bb2a21 67696 edk2_2025.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/edk2"
   ],
   "Files": [
-    "28e70436206392f34eba49d9c1ce5cdc 3164 edk2_2025.08.01-6.dsc 6ff98286a5ed4170aba86c3e91427d7e 60401236 edk2_2025.08.01.orig.tar.xz d93d99c67375b8879cef6ff7e11d6d9f 68552 edk2_2025.08.01-6.debian.tar.xz"
+    "7a046cc8a959bd0c025ddd4d5fe6c5ab 2974 edk2_2025.11-1.dsc 1e434a676e9a8aa36eae6cff15752ed4 60617840 edk2_2025.11.orig.tar.xz 3a1f56d5411f1e7cef6d10c51e3bf528 67696 edk2_2025.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "edk2"
   ],
   "Package-List": [
-    "efi-shell-aa64 deb misc optional arch=all efi-shell-arm deb misc optional arch=all efi-shell-ia32 deb misc optional arch=all efi-shell-loongarch64 deb misc optional arch=all efi-shell-riscv64 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-ia32 deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-arm deb misc optional arch=all qemu-efi-loongarch64 deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
+    "efi-shell-aa64 deb misc optional arch=all efi-shell-loongarch64 deb misc optional arch=all efi-shell-riscv64 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-amdsev deb misc optional arch=all ovmf-generic deb misc optional arch=all ovmf-inteltdx deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-loongarch64 deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dosfstools, grub-efi-amd64-signed, grub-efi-arm64-signed, jq, mtools, openssl, python3-pexpect, python3-virt-firmware, qemu-system-arm, qemu-system-loongarch64, qemu-system-riscv64, qemu-system-x86, sbsigntool, shim-signed, xorriso"
+    "dosfstools, grub-efi-amd64-signed, grub-efi-arm64-signed, jq, mtools, openssl, python3-pexpect, python3-virt-firmware, qemu-system-loongarch64, qemu-system-riscv64, qemu-system-x86-64, sbsigntool, shim-signed, xorriso"
   ],
   "Uploaders": [
     "dann frazier \u003cdannf@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/qemu-team/edk2.git"
   ],
   "Version": [
-    "2025.08.01-6"
+    "2025.11-1"
   ]
 }
