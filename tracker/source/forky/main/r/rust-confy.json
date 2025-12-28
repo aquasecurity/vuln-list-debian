@@ -6,19 +6,25 @@
     "librust-confy-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-directories-5+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-directories+default-dev (\u003c\u003c 7-~~) \u003c!nocheck\u003e, librust-directories+default-dev (\u003e= 5-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-toml-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f12799003963e72d7f8c40d2d312c60fc69365d65c1464b7540575a0b5d76a75 1822 rust-confy_0.6.1-1.dsc 45b1f4c00870f07dc34adcac82bb6a72cc5aabca8536ba1797e01df51d2ce9a0 16697 rust-confy_0.6.1.orig.tar.gz 06849786039dc31b46eb6d82866f99a4e25bb483afacd3e2dec70dab345c14a8 3668 rust-confy_0.6.1-1.debian.tar.xz"
+    "a59b52769944ec46a67733e3646277ef05337751300e8a50e3ea5b959ffd8335 2497 rust-confy_0.6.1-2.dsc 45b1f4c00870f07dc34adcac82bb6a72cc5aabca8536ba1797e01df51d2ce9a0 16697 rust-confy_0.6.1.orig.tar.gz 773d068aa4c7640de5f63db9ee9a3db1d41e4b6473b700b8dd95656d750d2a5b 3872 rust-confy_0.6.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-confy"
   ],
   "Files": [
-    "71af311eb7e5e33d46f0566323c0f924 1822 rust-confy_0.6.1-1.dsc 46d970507291a24a2200d893b789cbfd 16697 rust-confy_0.6.1.orig.tar.gz 0d247135b22ea43becffa633d9dbda65 3668 rust-confy_0.6.1-1.debian.tar.xz"
+    "b7e7aafb7f00c63d85b23cbed5bcd085 2497 rust-confy_0.6.1-2.dsc 46d970507291a24a2200d893b789cbfd 16697 rust-confy_0.6.1.orig.tar.gz f178800a74186dd0a1c9e73ce8e8c4c1 3872 rust-confy_0.6.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-cli/confy"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/confy]"
   ],
   "Version": [
-    "0.6.1-1"
+    "0.6.1-2"
   ]
 }
