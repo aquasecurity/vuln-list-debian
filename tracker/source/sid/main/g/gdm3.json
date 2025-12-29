@@ -6,16 +6,16 @@
     "gdm3, libgdm1, libgdm-dev, gir1.2-gdm-1.0"
   ],
   "Build-Depends": [
-    "check (\u003e= 0.9.4), dconf-cli (\u003e= 0.19.90), debhelper-compat (= 13), dh-exec, dh-sequence-gir, dh-sequence-gnome, dh-sequence-installsysusers, docbook-xml, gettext (\u003e= 0.19.8), gir1.2-gio-2.0-dev, gir1.2-glib-2.0-dev, gir1.2-gobject-2.0-dev, gjs [amd64 arm64 armhf i386 loong64 mips64el mipsel ppc64el s390x riscv64], gnome-pkg-tools (\u003e= 0.16.3), gnome-settings-daemon-dev (\u003e= 3.24.0), gobject-introspection (\u003e= 1.80), intltool, iso-codes, itstool, libaccountsservice-dev (\u003e= 0.6.35), libaudit-dev [linux-any], libglib2.0-dev (\u003e= 2.44.0), libgtk-3-dev (\u003e= 2.91.1), libgudev-1.0-dev (\u003e= 232), libjson-glib-dev, libkeyutils-dev [linux-any], libpam0g-dev, libplymouth-dev [linux-any], libselinux1-dev [linux-any], libsystemd-dev [linux-any], libwrap0-dev, libx11-dev, libxau-dev, libxcb1-dev, libxdmcp-dev, meson (\u003e= 0.57), pkgconf, systemd-dev"
+    "check (\u003e= 0.9.4), dconf-cli (\u003e= 0.19.90), debhelper-compat (= 13), dh-exec, dh-sequence-gir, dh-sequence-gnome, dh-sequence-installsysusers, docbook-xml, gettext (\u003e= 0.19.8), gir1.2-gio-2.0-dev, gir1.2-glib-2.0-dev, gir1.2-gobject-2.0-dev, gjs [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x], gnome-settings-daemon-dev (\u003e= 3.24.0), gobject-introspection (\u003e= 1.80), intltool, iso-codes, itstool, libaccountsservice-dev (\u003e= 0.6.35), libaudit-dev [linux-any], libglib2.0-dev (\u003e= 2.44.0), libgtk-3-dev (\u003e= 2.91.1), libgudev-1.0-dev (\u003e= 232), libjson-glib-dev, libkeyutils-dev [linux-any], libpam0g-dev, libplymouth-dev [linux-any], libselinux1-dev [linux-any], libsystemd-dev [linux-any], libwrap0-dev, libx11-dev, libxau-dev, libxcb1-dev, libxdmcp-dev, meson (\u003e= 0.57), pkgconf, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "83dbe1ae7763a07a95e91e5e5a1dd989e19b2f82ab157e4de4c2777c6236aa9a 3152 gdm3_49.2-2.dsc 9813631f9f5f0f860ea14a437866e60efc7bed3023b7c3b765cc5de1de597a06 968944 gdm3_49.2.orig.tar.xz 510483f442a1c9a146a8a1fb5054a2b6c88a2c83725320fd9ae3da71274d545d 86180 gdm3_49.2-2.debian.tar.xz"
+    "f82e0b34851967573048e5755f8c7596cf8f474d0b1ffdb533083f08b5bf1128 3139 gdm3_49.2-3.dsc 9813631f9f5f0f860ea14a437866e60efc7bed3023b7c3b765cc5de1de597a06 968944 gdm3_49.2.orig.tar.xz 2dc307839227c1df22e80a8303726de5510b61be3c41b93d22c82d87f9705ed5 86692 gdm3_49.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gdm3"
   ],
   "Files": [
-    "cc9835787abd02fc2b093e053d4db6a4 3152 gdm3_49.2-2.dsc 14d92ca52faf7f18ce59a8f3f961a07c 968944 gdm3_49.2.orig.tar.xz 6bc1f91600f84a735a02e1a405560996 86180 gdm3_49.2-2.debian.tar.xz"
+    "570c0bddae711cc319b5ca2bc2a5a35d 3139 gdm3_49.2-3.dsc 14d92ca52faf7f18ce59a8f3f961a07c 968944 gdm3_49.2.orig.tar.xz 1937daa9a138a34d2bea84c1a0e7a73a 86692 gdm3_49.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "gdm3"
   ],
   "Package-List": [
-    "gdm3 deb gnome optional arch=amd64,arm64,armhf,i386,loong64,mips64el,mipsel,ppc64el,s390x,riscv64 gir1.2-gdm-1.0 deb introspection optional arch=linux-any libgdm-dev deb libdevel optional arch=linux-any libgdm1 deb libs optional arch=linux-any"
+    "gdm3 deb gnome optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x gir1.2-gdm-1.0 deb introspection optional arch=linux-any libgdm-dev deb libdevel optional arch=linux-any libgdm1 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "source"
@@ -39,13 +39,13 @@
     "gnome"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "bash, gnutls-bin, libpam-sss, openssl, pamtester, passwd, softhsm2, sssd, util-linux"
+    "bash, dpkg-dev, gir1.2-glib-2.0, gnutls-bin, libpam-sss, openssl, pamtester, passwd, python3, python3-gi, softhsm2, sssd, util-linux"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e, Marco Trevisan (Treviño) \u003cmarco@ubuntu.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/gnome-team/gdm.git"
   ],
   "Version": [
-    "49.2-2"
+    "49.2-3"
   ]
 }
