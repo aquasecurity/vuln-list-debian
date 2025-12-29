@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo, debhelper (\u003e= 13), pandoc, bash-completion, fish-common, pkgconf"
   ],
   "Build-Depends-Arch": [
-    "cargo:native, rustc:native (\u003e= 1.82.0), libstd-rust-dev, librust-ansi-width-0.1+default-dev, librust-backtrace-0.3+default-dev, librust-chrono-0.4+clock-dev, librust-dirs-5+default-dev, librust-git2-0-dev, librust-glob-0.3+default-dev, librust-libc-0.2+default-dev, librust-locale-0.2+default-dev, librust-log-0.4+default-dev, librust-natord-plus-plus-2+default-dev, librust-nu-ansi-term-0.50+default-dev (\u003e= 0.50.1-~~), librust-nu-ansi-term-0.50+derive-serde-style-dev (\u003e= 0.50.1-~~), librust-nu-ansi-term-0.50+serde-dev (\u003e= 0.50.1-~~), librust-number-prefix-0.4+default-dev, librust-palette-0.7+std-dev, librust-path-clean-1+default-dev (\u003e= 1.0.1-~~), librust-percent-encoding-2+default-dev (\u003e= 2.3.1-~~), librust-phf-0.11+default-dev, librust-phf-0.11+macros-dev, librust-plist-1-dev (\u003e= 1.7.0-~~), librust-proc-mounts-0.3+default-dev, librust-rayon-1+default-dev (\u003e= 1.10.0-~~), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-norway-0.9+default-dev, librust-terminal-size-0.4+default-dev, librust-timeago-0.4-dev, librust-unicode-width-0+default-dev, librust-uutils-term-grid-0.7+default-dev, librust-uzers-0.12+default-dev (\u003e= 0.12.1-~~)"
+    "cargo:native, rustc:native (\u003e= 1.82.0), libstd-rust-dev, librust-ansi-width-0.1+default-dev, librust-backtrace-0.3+default-dev, librust-chrono-0.4+clock-dev (\u003e= 0.4.40-~~), librust-dirs+default-dev (\u003c\u003c 7-~~), librust-dirs+default-dev (\u003e= 5.0.1-~~), librust-git2-0-dev, librust-glob-0.3+default-dev, librust-libc-0.2+default-dev, librust-locale-0.2+default-dev, librust-log-0.4+default-dev, librust-natord-plus-plus-2+default-dev, librust-nu-ansi-term-0.50+default-dev (\u003e= 0.50.1-~~), librust-nu-ansi-term-0.50+derive-serde-style-dev (\u003e= 0.50.1-~~), librust-nu-ansi-term-0.50+serde-dev (\u003e= 0.50.1-~~), librust-number-prefix-0.4+default-dev, librust-palette-0.7+std-dev, librust-path-clean-1+default-dev (\u003e= 1.0.1-~~), librust-percent-encoding-2+default-dev (\u003e= 2.3.1-~~), librust-phf-0.11+default-dev, librust-phf-0.11+macros-dev, librust-plist-1-dev (\u003e= 1.7.0-~~), librust-proc-mounts-0.3+default-dev, librust-rayon-1+default-dev (\u003e= 1.10.0-~~), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-norway-0.9+default-dev, librust-terminal-size-0.4+default-dev, librust-timeago-0.4-dev, librust-unicode-width-0+default-dev, librust-uutils-term-grid-0.7+default-dev, librust-uzers-0.12+default-dev (\u003e= 0.12.1-~~)"
   ],
   "Checksums-Sha256": [
-    "ceb863fa8cab0cbd153fb94f05fd7e2096ae2f5954a3d3749e7ded26a008f49a 3513 rust-eza_0.23.0-1.dsc 96554191eb3c6ce7cc2200dafd0f7cd30c7451f3381cca1d674d829722246307 216408 rust-eza_0.23.0.orig.tar.gz 4fb89da18b8dfc746bf375ccf3137fead90f0301c0a5fd85d36dcc2915bcbfc5 10552 rust-eza_0.23.0-1.debian.tar.xz"
+    "3f27fb75a76c0fd212dde4b0aa118ad0f26c741f5faa75af38977bf311cd7f1f 3605 rust-eza_0.23.4-1.dsc 52c71cb11f7aa50bf4fd56f4cf58d05acb087f09cb99258396aec12b18ab2e25 219364 rust-eza_0.23.4.orig.tar.gz d2f6dc9d232f57cd8c1ee9d7272021544b434a2709f46f02d6aa821a15452be5 10228 rust-eza_0.23.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-eza"
   ],
   "Files": [
-    "eda28cc37e628a1510b13d75b54550c2 3513 rust-eza_0.23.0-1.dsc 4a5c4f0712c0841956846890e791debd 216408 rust-eza_0.23.0.orig.tar.gz f02a6a43f5a1190af43a1e1c94c6c221 10552 rust-eza_0.23.0-1.debian.tar.xz"
+    "6b2e8c65c4b2eee5adf375ccb3f7bffb 3605 rust-eza_0.23.4-1.dsc e9300661296933cd1e886ff80639e28e 219364 rust-eza_0.23.4.orig.tar.gz f07d8acc4c2a95681c7284e21eca3707 10228 rust-eza_0.23.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-trycmd-0.14+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-trycmd-0.15+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Sylvestre Ledru \u003csylvestre@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/eza]"
   ],
   "Version": [
-    "0.23.0-1"
+    "0.23.4-1"
   ]
 }
