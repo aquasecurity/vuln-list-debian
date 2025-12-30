@@ -6,16 +6,19 @@
     "liblutok-dev, liblutok-doc, liblutok3"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), pkg-config, lua5.1, liblua5.1-0-dev"
+    "debhelper-compat (= 12), pkg-config, liblua5.4-dev"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "d470a6083c8d6f8fb767e87acc1a096fd91c278b405a29ea860b5314d028b548 1832 lutok_0.4+dfsg-4.1.dsc cd83159df159a1af574ff2696f38d0092795a890530ed9a25e9b0fc06f13d1a1 294456 lutok_0.4+dfsg.orig.tar.xz 81b639a7e24ffb8edb17a612d0185540946445fb2febd9dbaa6c32d4e49b8d39 5740 lutok_0.4+dfsg-4.1.debian.tar.xz"
+    "a15ef916cc08e0bd0292a933bbd3be2f91d28cb7053397c7f393d6538c0e55b2 1888 lutok_0.6.2-0.1.dsc ac49f4c67f6d9faafd15e4b64be42e38facf22cbd83bae37b0fd17b08a174859 38576 lutok_0.6.2.orig.tar.xz 0bfe6067c66ae3dd904de9da304acebca2c1d3bddffd2aba5509a65e516a68e8 3584 lutok_0.6.2-0.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lutok"
   ],
   "Files": [
-    "cbd74dcb463f7c906f78b0565a9f557c 1832 lutok_0.4+dfsg-4.1.dsc d20e9efbbc9d5cd7b672835980742b0c 294456 lutok_0.4+dfsg.orig.tar.xz 09b108f7272a2efb742e79173c913735 5740 lutok_0.4+dfsg-4.1.debian.tar.xz"
+    "825f99af17ea37a989916438033eb267 1888 lutok_0.6.2-0.1.dsc d885975fd29d88ddfb566394e0b03c51 38576 lutok_0.6.2.orig.tar.xz 03c7b999f2d27c75400686931176b1c7 3584 lutok_0.6.2-0.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "lutok"
   ],
   "Package-List": [
-    "liblutok-dev deb libdevel optional arch=any liblutok-doc deb doc optional arch=all liblutok3 deb libs optional arch=any"
+    "liblutok-dev deb libdevel optional arch=any liblutok-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc liblutok3 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -48,6 +51,6 @@
     "https://salsa.debian.org/debian/lutok.git"
   ],
   "Version": [
-    "0.4+dfsg-4.1"
+    "0.6.2-0.1"
   ]
 }

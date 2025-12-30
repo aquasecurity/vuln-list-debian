@@ -6,16 +6,19 @@
     "librust-serial-test-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+proc-macro-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1-dev \u003c!nocheck\u003e, librust-syn-2+clone-impls-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e, librust-syn-2+printing-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7698b8c76cfe828377dd554a8e6b1b71efc9af6c764490f10f39ebf2a8aae5d4 1953 rust-serial-test-derive_2.0.0-2.dsc 91d129178576168c589c9ec973feedf7d3126c01ac2bf08795109aa35b69fb8f 5638 rust-serial-test-derive_2.0.0.orig.tar.gz 151cb9d1da039114b992b118bf818bbaa73de8f8c05cdcb78ac31a722d6eb5a4 2944 rust-serial-test-derive_2.0.0-2.debian.tar.xz"
+    "c53b9f31b485e3cd194c2cac4e853abf5fb48f40d1e1da9588a282b6e5eb5808 2641 rust-serial-test-derive_3.2.0-2.dsc 5d69265a08751de7844521fd15003ae0a888e035773ba05695c5c759a6f89eef 6992 rust-serial-test-derive_3.2.0.orig.tar.gz 07adb71b16ea7bede7beb3d38560432f0ee43bcacab8295f8f40dcedeeb8844a 2924 rust-serial-test-derive_3.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serial-test-derive"
   ],
   "Files": [
-    "265eff3f784e171212f1bb0a2552abbd 1953 rust-serial-test-derive_2.0.0-2.dsc 79fb3b377741a5c6567478c5d672173d 5638 rust-serial-test-derive_2.0.0.orig.tar.gz 1838e6c689c0a166caeabf9ef6c9a332 2944 rust-serial-test-derive_2.0.0-2.debian.tar.xz"
+    "c4ddee7ecb28d9e6630ea8a8af22f620 2641 rust-serial-test-derive_3.2.0-2.dsc ec53968f7f475b7fb695859eb2b8837a 6992 rust-serial-test-derive_3.2.0.orig.tar.gz b1b870392de1c38c696b6203a06af60f 2924 rust-serial-test-derive_3.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.10+default-dev, librust-env-logger-0.11+default-dev, librust-env-logger-0.9+default-dev, rustc"
+    "dh-cargo, librust-env-logger-dev, librust-prettyplease-0.2-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serial-test-derive]"
   ],
   "Version": [
-    "2.0.0-2"
+    "3.2.0-2"
   ]
 }
