@@ -6,19 +6,25 @@
     "librust-arc-swap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustversion-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c222f9a8b5f57387afaa12fda31489733a1256450f67531ee8b0535fa97ab84f 2578 rust-arc-swap_1.7.1-1.dsc 69f7f8c3906b62b754cd5326047894316021dcfe5a194c8ea52bdd94934a3457 68512 rust-arc-swap_1.7.1.orig.tar.gz 78c31c1f55c783b2a6aa6f3f458eddf9ee74c031cbeb7f3e1b972ce986328ea1 4628 rust-arc-swap_1.7.1-1.debian.tar.xz"
+    "8eafa2701d30f463f06be2a4457ca7b69e0bdd382f1f5ba3409a3ac88379a30a 2589 rust-arc-swap_1.8.0-1.dsc 51d03449bb8ca2cc2ef70869af31463d1ae5ccc8fa3e334b307203fbf815207e 80580 rust-arc-swap_1.8.0.orig.tar.gz f5f4be28db9299b261fead1f0f6846eac2965834dab1dbfaa669f5be61f97aab 4632 rust-arc-swap_1.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-arc-swap"
   ],
   "Files": [
-    "60e290c45df81068b3ecafb9a56e0a87 2578 rust-arc-swap_1.7.1-1.dsc a5f88692dcd3b16eed2f184509dce05b 68512 rust-arc-swap_1.7.1.orig.tar.gz 4907ea01d18f9e35a9fe4ae600f2a7a1 4628 rust-arc-swap_1.7.1-1.debian.tar.xz"
+    "a3e4b47574c17a0e38ea9bf6208d0443 2589 rust-arc-swap_1.8.0-1.dsc a48aad29f4682d0733b83e0cbea555a6 80580 rust-arc-swap_1.8.0.orig.tar.gz 53a8f71f552540a008b8367bbc328116 4632 rust-arc-swap_1.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/vorner/arc-swap"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-crossbeam-utils-0.8+default-dev, librust-itertools-0.10+default-dev, librust-itertools-0.11+default-dev, librust-itertools-0.12+default-dev, librust-itertools-0.13+default-dev, librust-num-cpus-1+default-dev, librust-once-cell-1+default-dev, librust-parking-lot-0.12+default-dev, librust-proptest-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-crossbeam-utils-0.8+default-dev, librust-itertools+default-dev, librust-num-cpus-1+default-dev, librust-once-cell-1+default-dev, librust-parking-lot-0.12+default-dev, librust-proptest-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/arc-swap]"
   ],
   "Version": [
-    "1.7.1-1"
+    "1.8.0-1"
   ]
 }
