@@ -6,19 +6,19 @@
     "python3-aiobotocore"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 11), dh-python, dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "awscli, python3-aiohttp, python3-aioitertools, python3-boto3, python3-botocore, python3-coverage, python3-dill, python3-docker (\u003e= 7.1), python3-flask-cors, python3-moto, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-pytest-xdist, python3-wrapt"
+    "awscli, python3-aiohttp, python3-aioitertools, python3-anyio \u003c!nocheck\u003e, python3-boto3, python3-botocore, python3-coverage, python3-dill, python3-dateutil, python3-docker (\u003e= 7.1), python3-flask-cors, python3-jmespath, python3-multidict, python3-moto, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-time-machine \u003c!nocheck\u003e, python3-wrapt"
   ],
   "Checksums-Sha256": [
-    "360855d113d1f0ddeacd242f7bd111a606a52a5ed31502d94816704ba1bac5f4 2440 python-aiobotocore_2.13.1-1.1.dsc d7de7f51855b2c64a533dc4cc4624cb97b7f4a55aaeb7c57869ea8dfe20ce640 105380 python-aiobotocore_2.13.1.orig.tar.xz f7c264acbd2de5673810fba4b2a697890cb5f559d1589fc9e2cc3387993e7eb4 2244 python-aiobotocore_2.13.1-1.1.debian.tar.xz"
+    "062baa911b7b3a5ffe4f661f70eb9d5c3cc782a72af210f408d5614674a24b58 2680 python-aiobotocore_2.25.2-1.dsc 423219e1c9cd6c86c87421e183dcaa8375d7190571bb8aa195280e0dc1ec7901 424107 python-aiobotocore_2.25.2.orig.tar.gz d9bda650eae43e44bf7e0e39b5939c99e26cc17e5f00b83366c68afbfc403046 2692 python-aiobotocore_2.25.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-aiobotocore"
   ],
   "Files": [
-    "1ce22714d52edca3b9eb07c4b6d3052d 2440 python-aiobotocore_2.13.1-1.1.dsc 641c6a1e58f2d1bae3f120904a928b09 105380 python-aiobotocore_2.13.1.orig.tar.xz 4899ba5f9faf064db34751868a72d5c6 2244 python-aiobotocore_2.13.1-1.1.debian.tar.xz"
+    "a703a1d1ca84f3c52fbea9cf362e6b43 2680 python-aiobotocore_2.25.2-1.dsc bf1b9346fea10b733ac292dcb2ca1b8b 424107 python-aiobotocore_2.25.2.orig.tar.gz 1c6821d719ca56507d178f25cb474499 2692 python-aiobotocore_2.25.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-aiobotocore"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-aiobotocore.git"
   ],
   "Version": [
-    "2.13.1-1.1"
+    "2.25.2-1"
   ]
 }
