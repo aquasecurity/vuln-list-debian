@@ -6,13 +6,10 @@
     "libnarcissus-java, libnarcissus-jni"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
-  ],
-  "Build-Depends-Indep": [
-    "default-jdk, maven-debian-helper, libmaven-antrun-plugin-java"
+    "debhelper-compat (= 13), default-jdk, maven-debian-helper, libmaven-antrun-plugin-java"
   ],
   "Checksums-Sha256": [
-    "6031171442ceaaf86a9384f71f6e782ee0896811c834caffe4dfd0f603ceb0ea 2990 narcissus_1.0.7+ds-3.dsc 7fd6c8811457c7daa39fb0886f3cce7cc704634191ce65b83f013554ecdb51ab 809600 narcissus_1.0.7+ds.orig.tar.xz 38b34acb9ea072d7bd325bdc0d033b1337e8aeb7162f363369dc0d259b484fd5 4616 narcissus_1.0.7+ds-3.debian.tar.xz"
+    "3a923aa7f863c2c1a7959ec7e2c95f78e197ccb8860d01a2acc17d3b8da86889 2977 narcissus_1.0.11+ds-1.dsc a3faaaddd245e2939f671a53ba9700b6bd18da845af4d060a25658fe308fc641 234020 narcissus_1.0.11+ds.orig.tar.xz c2f556825bae3de5dc564458804303126c9899a2605a826be15aa6521dcc5a95 4752 narcissus_1.0.11+ds-1.debian.tar.xz"
   ],
   "Description": [
     "limited Java reflection library that bypasses security Narcissus is a JNI native code library that provides a small subset of the Java reflection API, while bypassing all of Java's access/visibility checks, security manager restrictions, and module strong encapsulation enforcement, by calling methods and accessing fields through the JNI API. This allows code that relies on reflective access to non-public classes, fields, and methods to keep working even now that strong encapsulation is being enforced in JDK 16+. . Narcissus works on JDK 7+, however it is most useful for suppressing reflective access warnings in JDK 9-15, and for circumventing strong encapsulation for JDK 16+, in order to keep legacy software running (for example, when legacy software depends upon setAccessible to access a needed private field of a class in some library)."
@@ -21,7 +18,7 @@
     "pool/main/n/narcissus"
   ],
   "Files": [
-    "45e1338cffc299960531ff14e5594255 2990 narcissus_1.0.7+ds-3.dsc be43922189ab2ed9447d8ca882d40dfe 809600 narcissus_1.0.7+ds.orig.tar.xz 267c66b417cfb4d5d1104aa6667eb779 4616 narcissus_1.0.7+ds-3.debian.tar.xz"
+    "a3ae70a651adbf3487d4d7c2f127ee27 2977 narcissus_1.0.11+ds-1.dsc 6d506e1dc028330f69fef71e7f3c267b 234020 narcissus_1.0.11+ds.orig.tar.xz 19099c67399560c727cc17815950ad1a 4752 narcissus_1.0.11+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/java-team/narcissus.git"
   ],
   "Version": [
-    "1.0.7+ds-3"
+    "1.0.11+ds-1"
   ]
 }

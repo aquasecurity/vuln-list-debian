@@ -6,19 +6,25 @@
     "librust-mockstream-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "88005516e919f0bca82ac597d061d5ecb915a348a5a2bbb9342123d65847b09a 2130 rust-mockstream_0.0.3-1.dsc 35bbe0c0c9d254b463b13734bc361d1423289547e052b1e77e5a77292496ba2e 4848 rust-mockstream_0.0.3.orig.tar.gz b913032c2da0825c91d898c3e3f4628428c943cd836ed0143692b1e42be925fd 2528 rust-mockstream_0.0.3-1.debian.tar.xz"
+    "107b2a18e27689348d0dc5edeeccbb5514b2f1ac617abb482e4fa9b14c97d985 2251 rust-mockstream_0.0.3-2.dsc 35bbe0c0c9d254b463b13734bc361d1423289547e052b1e77e5a77292496ba2e 4848 rust-mockstream_0.0.3.orig.tar.gz 8327364e27704988028fa9484999d09b9bd92d5f2fa354ed73c2295b572e8b3a 2932 rust-mockstream_0.0.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-mockstream"
   ],
   "Files": [
-    "609221ab08f742b0e9ae4ae9fd61db49 2130 rust-mockstream_0.0.3-1.dsc bf81287cb7399a5f7d8fe222ac50ac4c 4848 rust-mockstream_0.0.3.orig.tar.gz 08178a4fbbe29502b42a58589c218a7b 2528 rust-mockstream_0.0.3-1.debian.tar.xz"
+    "2e6eecb27d736df2810e29dce91c01e5 2251 rust-mockstream_0.0.3-2.dsc bf81287cb7399a5f7d8fe222ac50ac4c 4848 rust-mockstream_0.0.3.orig.tar.gz 70a3727ed0738db9a81270ba67855941 2932 rust-mockstream_0.0.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/lazy-bitfield/rust-mockstream"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/mockstream]"
   ],
   "Version": [
-    "0.0.3-1"
+    "0.0.3-2"
   ]
 }
