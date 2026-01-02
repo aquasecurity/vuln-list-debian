@@ -3,34 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "libopenshot-dev, libopenshot25t64, libopenshot-doc, python3-openshot"
+    "libopenshot-dev, libopenshot28, libopenshot-doc, python3-openshot"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), cmake, debhelper-compat (= 13), dh-sequence-python3, ffmpeg, libasound2-dev, libavcodec-dev, libavdevice-dev, libavformat-dev, libavutil-dev, libjsoncpp-dev, libmagick++-7.q16-dev, libopenshot-audio-dev (\u003e= 0.3.2), libqt5svg5-dev, libswresample-dev, libswscale-dev, libunittest++-dev, cppzmq-dev, pkgconf, python3-dev, python3-setuptools, qtbase5-dev, qtmultimedia5-dev, swig"
+    "cmake, cppzmq-dev, debhelper-compat (= 13), dh-sequence-python3, dpkg-dev (\u003e= 1.22.5), ffmpeg, libasound2-dev, libavcodec-dev, libavdevice-dev, libavformat-dev, libavutil-dev, libjsoncpp-dev, libmagick++-7.q16-dev, libopenshot-audio-dev (\u003e= 0.5.0), libqt5svg5-dev, libswresample-dev, libswscale-dev, libunittest++-dev, pkgconf, python3-dev, python3-setuptools, qtbase5-dev, qtmultimedia5-dev, ruby-dev, swig"
   ],
   "Build-Depends-Indep": [
     "doxygen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "f8c912d0c2d8ca79c201c44c50fa5d8398ee5ee6c7bd7e4304a47206c24bbc7f 2893 libopenshot_0.3.3+dfsg1-3.dsc b512fea00548abcf29a0ed9dfb9f2bc8c45c1d005ff492419929df9d961f7a65 25222156 libopenshot_0.3.3+dfsg1.orig.tar.xz 92340b26e58c083a51e0dee40e3288bd0774d423aba0bc67fbd400ba5ad17eec 6620 libopenshot_0.3.3+dfsg1-3.debian.tar.xz"
-  ],
-  "Dgit": [
-    "048b1f5bd3b207f9506564b9caf94808812bdcc9 debian archive/debian/0.3.3+dfsg1-3 https://git.dgit.debian.org/libopenshot"
+    "6067b54d842e18332f24ad2c45623e502b4198f3663ec2c64a53626fd05912eb 2861 libopenshot_0.5.0+dfsg1-1.dsc 5115d3323769f03cf7ef804cc514945c0872bebb49d88ddf705bcc76a25ec7ea 25343492 libopenshot_0.5.0+dfsg1.orig.tar.xz 3eab8d3e69b3e68e05c7236bfc04b2fd0cd0187e490e6a2bd11eedf02da45c4a 10764 libopenshot_0.5.0+dfsg1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libo/libopenshot"
   ],
   "Files": [
-    "622c2fcb5968d5c7c69338be35f5d152 2893 libopenshot_0.3.3+dfsg1-3.dsc 07744cc10102f7666a099e4a2d041607 25222156 libopenshot_0.3.3+dfsg1.orig.tar.xz d13de28ef5c50cc8bc2d742bbc69a40c 6620 libopenshot_0.3.3+dfsg1-3.debian.tar.xz"
+    "f4cb17a27cc9e5def1fa166840930ad8 2861 libopenshot_0.5.0+dfsg1-1.dsc b1f605349349c0c265d67fda61c22935 25343492 libopenshot_0.5.0+dfsg1.orig.tar.xz 9c65e2ed805c86f2a3afc0807a2cdd8d 10764 libopenshot_0.5.0+dfsg1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=83746c2ccf6dfab48cf2186dbb99190330ef6443 fp=bbbd45ea818ab86ff67e7285d3e17383cfa7ff06"
-  ],
-  "Git-Tag-Tagger": [
-    "Anton Gladky \u003cgladk@debian.org\u003e"
   ],
   "Homepage": [
     "https://www.openshot.org/"
@@ -42,7 +33,7 @@
     "libopenshot"
   ],
   "Package-List": [
-    "libopenshot-dev deb libdevel optional arch=any libopenshot-doc deb doc optional arch=all profile=!nodoc libopenshot25t64 deb libs optional arch=any python3-openshot deb python optional arch=any"
+    "libopenshot-dev deb libdevel optional arch=any libopenshot-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libopenshot28 deb libs optional arch=any python3-openshot deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -52,6 +43,12 @@
   ],
   "Standards-Version": [
     "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, cmake, cppzmq-dev, libavcodec-dev, libavformat-dev, libjsoncpp-dev, libswscale-dev, pkgconf, qtbase5-dev, qtmultimedia5-dev, quilt"
   ],
   "Uploaders": [
     "Anton Gladky \u003cgladk@debian.org\u003e,"
@@ -63,6 +60,6 @@
     "https://salsa.debian.org/multimedia-team/libopenshot.git"
   ],
   "Version": [
-    "0.3.3+dfsg1-3"
+    "0.5.0+dfsg1-1"
   ]
 }
