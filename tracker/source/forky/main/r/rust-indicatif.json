@@ -6,19 +6,25 @@
     "librust-indicatif-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-0.15+ansi-parsing-dev \u003c!nocheck\u003e, librust-console-0.15+unicode-width-dev \u003c!nocheck\u003e, librust-number-prefix-0.4+default-dev \u003c!nocheck\u003e, librust-portable-atomic-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-console-0.15+ansi-parsing-dev \u003c!nocheck\u003e, librust-console-0.15+unicode-width-dev \u003c!nocheck\u003e, librust-number-prefix-0.4+default-dev \u003c!nocheck\u003e, librust-portable-atomic-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "db812a93d771cf6463cb81990b7dc0711603549ab9724c2674815e68117ee1e2 2137 rust-indicatif_0.17.8-1.dsc 763a5a8f45087d6bcea4222e7b72c291a054edf80e4ef6efd2a4979878c7bea3 64869 rust-indicatif_0.17.8.orig.tar.gz 72c57f0f2e50033e5defa401a276dfdc039ac16b62bd8bea47e226e7e6185bfe 3892 rust-indicatif_0.17.8-1.debian.tar.xz"
+    "c5fb71abef6d00b7c6bcb8e8dcfcfb218ac0679f9b5d932d5cdacf9166455f9c 2833 rust-indicatif_0.17.11-1.dsc 183b3088984b400f4cfac3620d5e076c84da5364016b4f49473de574b2586235 66577 rust-indicatif_0.17.11.orig.tar.gz 40f1f53c7a964aab8b987cdb71f37b578c8fca8a0bd9e662da9c6d5b57c08087 5356 rust-indicatif_0.17.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-indicatif"
   ],
   "Files": [
-    "18a9ae9549f1bc1058e6b911c2a17970 2137 rust-indicatif_0.17.8-1.dsc 4b7419945c205889be1e2e2200f5ac25 64869 rust-indicatif_0.17.8.orig.tar.gz c80f3635c57b627589c5c4f9a976e34a 3892 rust-indicatif_0.17.8-1.debian.tar.xz"
+    "db918d48ec2480ad40e562b0050c18ea 2833 rust-indicatif_0.17.11-1.dsc 0efa370cba14d7a750927c01f0796588 66577 rust-indicatif_0.17.11.orig.tar.gz 3fb77598085cdd5d5f39d8f6e8efdd5f 5356 rust-indicatif_0.17.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/console-rs/indicatif"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-clap-4+color-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-futures-0.3+default-dev, librust-once-cell-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+rt-dev, librust-tokio-1+time-dev"
+    "dh-cargo, librust-clap-4+color-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-futures-0.3+default-dev, librust-once-cell-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rand+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+rt-dev, librust-tokio-1+time-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/indicatif]"
   ],
   "Version": [
-    "0.17.8-1"
+    "0.17.11-1"
   ]
 }
