@@ -6,22 +6,22 @@
     "libsdl3-0, libsdl3-dev, libsdl3-doc, libsdl3-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, fcitx-libs-dev, glslang-tools (\u003e= 12), libasound2-dev [linux-any], libdbus-1-dev, libdecor-0-dev (\u003e= 0.2.0) [linux-any], libdrm-dev [linux-any], libegl-dev, libgbm-dev [linux-any], libgl-dev, libgles-dev, libibus-1.0-dev, libpipewire-0.3-dev (\u003e= 0.3.44) [linux-any], libpulse-dev, libsndio-dev, libudev-dev [linux-any], liburing-dev [linux-any], libusb2-dev [kfreebsd-any], libusbhid-dev [kfreebsd-any], libvulkan-dev, libwayland-dev [linux-any], libx11-dev, libxcursor-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev, libxrandr-dev, libxss-dev, libxt-dev, libxv-dev, libxxf86vm-dev, ninja-build, pkgconf, wayland-protocols, xxd"
+    "debhelper-compat (= 13), dh-sequence-dlopenlibdeps, cmake, fcitx-libs-dev, glslang-tools (\u003e= 12), libasound2-dev [linux-any], libdbus-1-dev, libdecor-0-dev (\u003e= 0.2.0) [linux-any], libdrm-dev [linux-any], libegl-dev, libfribidi-dev, libgbm-dev [linux-any], libgl-dev, libgles-dev, libibus-1.0-dev, libopengl-dev, libpipewire-0.3-dev (\u003e= 0.3.44) [linux-any], libpulse-dev, libsndio-dev, libthai-dev, libudev-dev [linux-any], liburing-dev [linux-any], libvulkan-dev, libwayland-dev [linux-any], libx11-dev, libxcursor-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev, libxrandr-dev, libxss-dev, libxt-dev, libxtst-dev, libxv-dev, libxxf86vm-dev, ninja-build, pkgconf, wayland-protocols, xxd"
   ],
   "Build-Depends-Indep": [
     "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "b23a04519feef71efb35a6c59cee564f26e2e13ff055c247b56e3ff4a03367aa 3166 libsdl3_3.2.28+ds-1.dsc 9c25ded0bd2ed48fba8331d252160684958721fde2a6b8063c4bce87d907aa98 11743856 libsdl3_3.2.28+ds.orig.tar.xz e14328f05a15738735f4362511c5520c14f1141883e0913f3ecc2d712a9e6c68 48676 libsdl3_3.2.28+ds-1.debian.tar.xz"
+    "34533278c2925ea6eebc1c9a5378747dad05295a176000e6a8cc98b76bdf6987 3225 libsdl3_3.4.0+ds-1.dsc eb03420b14c8206d573c97a35eec18869e23ee82217f7b581d726c00ad5f8a5e 11491268 libsdl3_3.4.0+ds.orig.tar.xz 3f033313d19c5a15e53291c3bfb2a346e310cc4cf5ca6f317e80b2845fe4eb7f 49544 libsdl3_3.4.0+ds-1.debian.tar.xz"
   ],
   "Dgit": [
-    "f5bbd76d8c1da6071f0201b8e18d3b9f6bf520de debian archive/debian/3.2.28+ds-1 https://git.dgit.debian.org/libsdl3"
+    "682d5cae85d82fb50d64e312297019311dcb1e08 debian archive/debian/3.4.0+ds-1 https://git.dgit.debian.org/libsdl3"
   ],
   "Directory": [
     "pool/main/libs/libsdl3"
   ],
   "Files": [
-    "15e349fee55c451e2e37dd7a06ce8587 3166 libsdl3_3.2.28+ds-1.dsc b6282050d5871abec60671353cdb5d8f 11743856 libsdl3_3.2.28+ds.orig.tar.xz 2dc41b8499fd027681dcea1cc6069a8b 48676 libsdl3_3.2.28+ds-1.debian.tar.xz"
+    "a279c4632dd6b10582981723cce09031 3225 libsdl3_3.4.0+ds-1.dsc d35b1744f9b3cd74a385acaf2f1fc173 11491268 libsdl3_3.4.0+ds.orig.tar.xz a8d0192a0f27c633f15dc0475ed37516 49544 libsdl3_3.4.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "libsdl3"
   ],
   "Package-List": [
-    "libsdl3-0 deb libs optional arch=any libsdl3-dev deb libdevel optional arch=any libsdl3-doc deb doc optional arch=all profile=!nodoc libsdl3-tests deb misc optional arch=any profile=!noinsttest"
+    "libsdl3-0 deb libs optional arch=any libsdl3-dev deb libdevel optional arch=any libsdl3-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libsdl3-tests deb misc optional arch=any profile=!noinsttest profile:v1=!noinsttest"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/sdl-team/libsdl3.git"
   ],
   "Version": [
-    "3.2.28+ds-1"
+    "3.4.0+ds-1"
   ]
 }
