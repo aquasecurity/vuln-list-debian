@@ -9,13 +9,16 @@
     "debhelper-compat (= 13), dpkg-dev (\u003e= 1.16.1~), linux-libc-dev"
   ],
   "Checksums-Sha256": [
-    "ba2a40a3e9f95a99c7c70626cdd5b09e7d385e6ef95a031dc5d7c99c4cd5a559 1460 trinity_1.9+git20241022.ba2360ed84a8-1.dsc b03cf83b55d6b993b91883f0cba2fc625eddccb75b29eebe9d7bb2df1c58d760 203332 trinity_1.9+git20241022.ba2360ed84a8.orig.tar.xz 5d829f2990af69a91bcb9df62d22780dd268b07b71dc3cd4b7660ccebd3403a4 5316 trinity_1.9+git20241022.ba2360ed84a8-1.debian.tar.xz"
+    "8970ea2baaeb47df68a6c3992790510b5448a8c39629c968fc05635ac30ec36c 2998 trinity_1.9+git20250902.294c465-1.dsc bc38d5ca58a21ae4e3edcf396f566e0fb0c7effe64570db2e6f617ba6163abb4 203404 trinity_1.9+git20250902.294c465.orig.tar.xz eba293dd8b5137df15b6f4fde4a2b832feda88cbf35cecb9105460a48512d6c9 5600 trinity_1.9+git20250902.294c465-1.debian.tar.xz"
+  ],
+  "Description": [
+    "system call fuzz tester As 'fuzz testing' suggests, trinity calls syscalls at random, with random arguments. Where Trinity differs is that the arguments it passes are not purely random. . If a syscall took, for example, a file descriptor as an argument, one of the first things kernels does is validate that fd, if is not valid the kernel would just reject it as -EINVAL. . So on startup, Trinity creates a list of file descriptors, by opening pipes, scanning sysfs, procfs, /dev, and creates a bunch of sockets using random network protocols. Then when a syscall needs an fd, it gets passed one of these at random. . Trinity also shares those file descriptors between multiple threads, which causes havoc sometimes. . Warning: This program may seriously corrupt your files, including any of those that may be writable on mounted network file shares.  It may create network packets that may cause disruption on your local network. Run at your own risk."
   ],
   "Directory": [
     "pool/main/t/trinity"
   ],
   "Files": [
-    "fa11633a2ab15c2c7765f776644f1996 1460 trinity_1.9+git20241022.ba2360ed84a8-1.dsc 44a63f4df81b441c93971a3403fa4bdf 203332 trinity_1.9+git20241022.ba2360ed84a8.orig.tar.xz b481a641aea2e8ac2d663df21db663fc 5316 trinity_1.9+git20241022.ba2360ed84a8-1.debian.tar.xz"
+    "6ac721236a7bb43be63e5edc8f9b326d 2998 trinity_1.9+git20250902.294c465-1.dsc 68c170f2a4a42fbcbb2c778d2d6d8524 203404 trinity_1.9+git20250902.294c465.orig.tar.xz 6e3a415151f2e1912160dab8cb2031d7 5600 trinity_1.9+git20250902.294c465-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +27,7 @@
     "https://github.com/kernelslacker/trinity"
   ],
   "Maintainer": [
-    "gustavo panizzo \u003cgfa@zumbi.com.ar\u003e"
+    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
   ],
   "Package": [
     "trinity"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/debian/trinity.git"
   ],
   "Version": [
-    "1.9+git20241022.ba2360ed84a8-1"
+    "1.9+git20250902.294c465-1"
   ]
 }
