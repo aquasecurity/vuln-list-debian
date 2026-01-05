@@ -6,19 +6,25 @@
     "librust-directories-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-sys-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-sys-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ead63892c69eb53b03cf93047cbc1f251aaa4943ff0b342a6da6f185bc1884bb 2270 rust-directories_5.0.1-1.dsc 9a49173b84e034382284f27f1af4dcbbd231ffa358c0fe316541a7337f376a35 15833 rust-directories_5.0.1.orig.tar.gz f05a509ed53df777882c0e905d015a73d4979017e88f56ff4dee3df7253962d4 2752 rust-directories_5.0.1-1.debian.tar.xz"
+    "cb4d6a74476d5fb8c1f1ec25b82c58ebfa8395c2859ce68ab6874bc0e490d987 2337 rust-directories_6.0.0-2.dsc 16f5094c54661b38d03bd7e50df373292118db60b585c08a411c6d840017fe7d 17842 rust-directories_6.0.0.orig.tar.gz 88860ea20c2cb494ecc48927e112b00de9e3038bd4be6dd396057893bb1a39dc 2784 rust-directories_6.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-directories"
   ],
   "Files": [
-    "f14d61ac52dbfcee05f3aa7438ab9133 2270 rust-directories_5.0.1-1.dsc b3b1534addd3e670061631ac00fd3d7d 15833 rust-directories_5.0.1.orig.tar.gz aa68f19bc9b5278c1564085c63a1e589 2752 rust-directories_5.0.1-1.debian.tar.xz"
+    "92950108ec34499e80918bb9b19b8f45 2337 rust-directories_6.0.0-2.dsc 1337842531d2f98fdda6b877626205f7 17842 rust-directories_6.0.0.orig.tar.gz 1981aa9a9fd8d118dc7ffc7b8edfa9ca 2784 rust-directories_6.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/soc/directories-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bencher-0.1+default-dev"
+    "dh-cargo, librust-bencher-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/directories]"
   ],
   "Version": [
-    "5.0.1-1"
+    "6.0.0-2"
   ]
 }

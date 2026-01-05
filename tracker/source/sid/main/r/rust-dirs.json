@@ -6,19 +6,25 @@
     "librust-dirs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-sys-0.4+default-dev (\u003e= 0.4.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-dirs-sys-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0cf9d71e751c81832b37031dc0de3b85e6dd077574dbed9577deb77be1b6d9f7 2168 rust-dirs_5.0.1-1.dsc 44c45a9d03d6676652bcb5e724c7e988de1acad23a711b5217ab9cbecbec2225 12255 rust-dirs_5.0.1.orig.tar.gz f0b47059e2e1259426b5d377dd3e73c776fb970969563bd8ab738712a44943a6 2852 rust-dirs_5.0.1-1.debian.tar.xz"
+    "5b8ed4bad666a87c7c0df027767f787dc76e2be4cc6975e2ea2b7c04570f6b94 2240 rust-dirs_6.0.0-2.dsc c3e8aa94d75141228480295a7d0e7feb620b1a5ad9f12bc40be62411e38cce4e 14190 rust-dirs_6.0.0.orig.tar.gz 9b993afdd5df9e4194861d60349d9b76dcd82c67ba928ae2a09d6cab95536c3c 2912 rust-dirs_6.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dirs"
   ],
   "Files": [
-    "a61dadc5071bb17c19df775498e32be0 2168 rust-dirs_5.0.1-1.dsc 88c7bfadd3b04a713230597fe4c54e3d 12255 rust-dirs_5.0.1.orig.tar.gz 2ea43142ef9feb52f68b1c6e5a6435d8 2852 rust-dirs_5.0.1-1.debian.tar.xz"
+    "5792121eaeda3533d254a34924c758b9 2240 rust-dirs_6.0.0-2.dsc e78c924ecd8e323bea0db94cb63fe424 14190 rust-dirs_6.0.0.orig.tar.gz 7c011e56a94bf928e364a8377900ccf9 2912 rust-dirs_6.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/soc/dirs-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dirs]"
   ],
   "Version": [
-    "5.0.1-1"
+    "6.0.0-2"
   ]
 }
