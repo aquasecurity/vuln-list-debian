@@ -6,19 +6,25 @@
     "librust-endi-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f0c019a6f7ae8b30bfe2aee2aa8ecb67479010f28fd3ebbab32476a7b9e574e7 2110 rust-endi_1.1.0-2.dsc a3d8a32ae18130a3c84dd492d4215c3d913c3b07c6b63c2eb3eb7ff1101ab7bf 4872 rust-endi_1.1.0.orig.tar.gz db92fd2b4634b9dc1cd22e774a202784c017cdebba6facd50e7a96ae2639e2ec 2652 rust-endi_1.1.0-2.debian.tar.xz"
+    "4d8bb959436c77db3bb0a84c7b0f33c2a326106fddf03c8e06b8aeadaae19cc9 1550 rust-endi_1.1.1-1.dsc 66b7e2430c6dff6a955451e2cfc438f09cea1965a9d6f87f7e3b90decc014099 5045 rust-endi_1.1.1.orig.tar.gz 73b4a52a16b8f28a242e1af0aca64e7b55d343ea5c27d1b29d084d98e0d0b368 2584 rust-endi_1.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-endi"
   ],
   "Files": [
-    "bc73823886a6de29b9018ffede5ad31a 2110 rust-endi_1.1.0-2.dsc 4d130437f158a1172eea060632265cd5 4872 rust-endi_1.1.0.orig.tar.gz 9c23f365da2857a5374ab154d3d4fc1a 2652 rust-endi_1.1.0-2.debian.tar.xz"
+    "d83a3e35b4ad2a224cc056f7a693bfe2 1550 rust-endi_1.1.1-1.dsc d06735ef654a2e7b6459da715defe3ad 5045 rust-endi_1.1.1.orig.tar.gz d22d86d6aad1574dfd4ddd2f1981b116 2584 rust-endi_1.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/zeenix/endi"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/endi]"
   ],
   "Version": [
-    "1.1.0-2"
+    "1.1.1-1"
   ]
 }

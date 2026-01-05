@@ -6,19 +6,25 @@
     "librust-pin-project-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pin-project-internal-1.1.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pin-project-internal-1.1+default-dev (\u003c\u003c 1.1.11-~~) \u003c!nocheck\u003e, librust-pin-project-internal-1.1+default-dev (\u003e= 1.1.10-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "25262ee53713bd124e1a52cae90c538772afeaaf50331bf87ce56c1737fc3c47 2357 rust-pin-project_1.1.3-1.dsc fda4ed1c6c173e3fc7a83629421152e01d7b1f9b7f65fb301e490e8cfc656422 57740 rust-pin-project_1.1.3.orig.tar.gz c0dbe204ece85c06ff90cb2b78ca5097d48e25192c7fdc18ee5e47792b145e5e 3056 rust-pin-project_1.1.3-1.debian.tar.xz"
+    "60ddb4ae7ac56c8cfa0d735c6fb7e9860c5ee46b8a2aedcdd9720309f50136c6 1875 rust-pin-project_1.1.10-1.dsc 677f1add503faace112b9f1373e43e9e054bfdd22ff1a63c1bc485eaec6a6a8a 56348 rust-pin-project_1.1.10.orig.tar.gz 194c4483d188d8718dd5f031f66c58e80c7e83e242e49f594c03cd7a4686a963 3228 rust-pin-project_1.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pin-project"
   ],
   "Files": [
-    "c88b2e20a2de8218ab2420cb845c777b 2357 rust-pin-project_1.1.3-1.dsc c326add9fcdcc115eefa7db7eb61b6a4 57740 rust-pin-project_1.1.3.orig.tar.gz 2e18f2932700d6617c6aab3671c3a296 3056 rust-pin-project_1.1.3-1.debian.tar.xz"
+    "77919111fd06078da64488f2e2cd31f0 1875 rust-pin-project_1.1.10-1.dsc bba734ba9b9c23c96675e55d1eb3d785 56348 rust-pin-project_1.1.10.orig.tar.gz 7dfdf0ac581e64c7039a10e8e72c4573 3228 rust-pin-project_1.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/taiki-e/pin-project"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustversion-1+default-dev, librust-static-assertions-1+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-static-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pin-project]"
   ],
   "Version": [
-    "1.1.3-1"
+    "1.1.10-1"
   ]
 }

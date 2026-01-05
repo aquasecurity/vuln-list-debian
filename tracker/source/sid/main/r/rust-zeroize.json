@@ -6,19 +6,25 @@
     "librust-zeroize-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "aabbf38764da69eb3549743b7561959d2c753a7040722b8838b9204504777bd7 1520 rust-zeroize_1.8.1-1.dsc ced3678a2879b30306d323f4542626697a464a97c0a07c9aebf7ebca65cd4dde 20029 rust-zeroize_1.8.1.orig.tar.gz 873480bd715364290931bed159dc61f6bb0a26ac71fb27f51e0ea57b83624f16 3252 rust-zeroize_1.8.1-1.debian.tar.xz"
+    "d83c9b54b343971be57d1e7c298e09a6627ff37a274987570ba1a1dcff293d9e 1603 rust-zeroize_1.8.2-1.dsc b97154e67e32c85465826e8bcc1c59429aaaf107c1e4a9e53c8d8ccd5eff88d0 20907 rust-zeroize_1.8.2.orig.tar.gz 6142e4e7f2b1c37c52310ce49bb2d6bec80b5fdb6daf2976ad4735f2247f012d 3272 rust-zeroize_1.8.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zeroize"
   ],
   "Files": [
-    "7562ea7a22f26d42ce1929c414f381e1 1520 rust-zeroize_1.8.1-1.dsc fc484f491cd0c91e5d7343776e055a77 20029 rust-zeroize_1.8.1.orig.tar.gz 09a3ec27c517415fdcb436baa94cdedb 3252 rust-zeroize_1.8.1-1.debian.tar.xz"
+    "2fee407538bfd5874f55978b6993c9fb 1603 rust-zeroize_1.8.2-1.dsc 3ad9b60f64ac41b16a2d842a626a2973 20907 rust-zeroize_1.8.2.orig.tar.gz de8795a49a33f8a71853591c42e0d976 3272 rust-zeroize_1.8.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/utils/tree/master/zeroize"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Philip Rinn \u003crinni@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zeroize]"
   ],
   "Version": [
-    "1.8.1-1"
+    "1.8.2-1"
   ]
 }

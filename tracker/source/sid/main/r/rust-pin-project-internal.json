@@ -6,19 +6,25 @@
     "librust-pin-project-internal-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.25-~~) \u003c!nocheck\u003e, librust-syn-2+clone-impls-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+parsing-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+printing-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev (\u003e= 2.0.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a8210b288490f2d1bd971f568dba33d20953a23fa07022ff07c7495a8ae4291a 2576 rust-pin-project-internal_1.1.3-1.dsc 4359fd9c9171ec6e8c62926d6faaf553a8dc3f64e1507e76da7911b4f6a04405 27824 rust-pin-project-internal_1.1.3.orig.tar.gz 6ee220bc9f027942917876a45fc6ff5f7a672f544b0d9c7b0d1edd75acb0030d 3192 rust-pin-project-internal_1.1.3-1.debian.tar.xz"
+    "2b4d0d97cc94ea549000de1c2413d3a6ab64f1d331ecf3b268f8bb6d10aa5231 2185 rust-pin-project-internal_1.1.10-1.dsc 6e918e4ff8c4549eb882f14b3a4bc8c8bc93de829416eacf579f1207a8fbf861 29162 rust-pin-project-internal_1.1.10.orig.tar.gz d8e7e9d92082717856304c7a6ffccf69670d4b9af7c05e9f236194892e401359 3256 rust-pin-project-internal_1.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pin-project-internal"
   ],
   "Files": [
-    "b3e99228aa63443225c788ade558385a 2576 rust-pin-project-internal_1.1.3-1.dsc 55208828fb5cdcfff47deb45ec0526d7 27824 rust-pin-project-internal_1.1.3.orig.tar.gz f2bd81ceb931861137a94fc51905e9eb 3192 rust-pin-project-internal_1.1.3-1.debian.tar.xz"
+    "48f7b4641c72dd112b50b0ff4562b3c9 2185 rust-pin-project-internal_1.1.10-1.dsc a3a429a59ac5f418c8f4618bdb4fd37a 29162 rust-pin-project-internal_1.1.10.orig.tar.gz 913edc2f5114f2e729bcdc04d6e5916e 3256 rust-pin-project-internal_1.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/taiki-e/pin-project"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pin-project-1+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pin-project-internal]"
   ],
   "Version": [
-    "1.1.3-1"
+    "1.1.10-1"
   ]
 }
