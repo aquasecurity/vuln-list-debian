@@ -6,16 +6,16 @@
     "libei1, libeis1, liboeffis1, libei-dev, libeis-dev, liboeffis-dev, libei-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), black, libevdev-dev, libsystemd-dev, libxkbcommon-dev, meson, pkgconf, python3-attr, python3-dbusmock, python3-jinja2, python3-pytest, python3-structlog, python3-yaml"
+    "debhelper-compat (= 13), libevdev-dev, libsystemd-dev, libxkbcommon-dev, meson, pkgconf, python3-attr \u003c!nocheck\u003e \u003c!noinsttest\u003e, python3-dbusmock \u003c!nocheck\u003e \u003c!noinsttest\u003e, python3-jinja2:native, python3-pytest \u003c!nocheck\u003e \u003c!noinsttest\u003e, python3-structlog \u003c!nocheck\u003e \u003c!noinsttest\u003e, python3-yaml \u003c!nocheck\u003e \u003c!noinsttest\u003e"
   ],
   "Checksums-Sha256": [
-    "e9633e9734b9d2bb5cb3609495abf84e074b0c1791408b01bdd450bda7d7ab50 2708 libei_1.5.0-2.dsc 2407d9d6b6bb99c4c5c7dc0ba25b760faff952c3374b68c78802e8de91b610e9 24972 libei_1.5.0.orig-munit.tar.bz2 da1fba92daccd0667bc46c3ee952d4ae8cfc6bdb4c0bb4d34df26528fb240618 184499 libei_1.5.0.orig.tar.bz2 2bb0b562562c40af41ef4059c4542a16189ca838d4833a4ee28fa431fb173527 5976 libei_1.5.0-2.debian.tar.xz"
+    "fa92c96ffb0f83c507c8cc5d1f210e56b5e446045c91375a4fc7a3b5a8876522 2853 libei_1.5.0-3.dsc 2407d9d6b6bb99c4c5c7dc0ba25b760faff952c3374b68c78802e8de91b610e9 24972 libei_1.5.0.orig-munit.tar.bz2 da1fba92daccd0667bc46c3ee952d4ae8cfc6bdb4c0bb4d34df26528fb240618 184499 libei_1.5.0.orig.tar.bz2 be230ad4c73e43ef033e785580ed8d4fe8088cc4c61f72688febedee27b3aa4d 6144 libei_1.5.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libe/libei"
   ],
   "Files": [
-    "667e3a5c1f4ec85b3e340dbe4edb28bd 2708 libei_1.5.0-2.dsc 550841d8e90331ed679e0e8f1575c892 24972 libei_1.5.0.orig-munit.tar.bz2 3afe06351cfb6e47bd48f284b1213205 184499 libei_1.5.0.orig.tar.bz2 4b1c1664ba0bcba63c119458b04d0127 5976 libei_1.5.0-2.debian.tar.xz"
+    "1116cc0aa344651939511a96f438ef44 2853 libei_1.5.0-3.dsc 550841d8e90331ed679e0e8f1575c892 24972 libei_1.5.0.orig-munit.tar.bz2 3afe06351cfb6e47bd48f284b1213205 184499 libei_1.5.0.orig.tar.bz2 3ef5aeb1d699bcc1f1fc1b4bf6bb9c2b 6144 libei_1.5.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libei"
   ],
   "Package-List": [
-    "libei-dev deb libdevel optional arch=any libei-tests deb x11 optional arch=any libei1 deb libs optional arch=any libeis-dev deb libdevel optional arch=any libeis1 deb libs optional arch=any liboeffis-dev deb libdevel optional arch=any liboeffis1 deb libs optional arch=any"
+    "libei-dev deb libdevel optional arch=any libei-tests deb x11 optional arch=any profile=!noinsttest libei1 deb libs optional arch=any libeis-dev deb libdevel optional arch=any libeis1 deb libs optional arch=any liboeffis-dev deb libdevel optional arch=any liboeffis1 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/xorg-team/lib/libei.git"
   ],
   "Version": [
-    "1.5.0-2"
+    "1.5.0-3"
   ]
 }

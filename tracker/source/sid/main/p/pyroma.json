@@ -6,19 +6,22 @@
     "python3-pyroma"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject"
   ],
   "Build-Depends-Indep": [
-    "python3-all, python3-docutils, python3-pygments, python3-setuptools"
+    "python3-all, python3-docutils, python3-pygments, python3-pytest \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-setuptools, python3-trove-classifiers \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6b33bec6421a79ac93867c6c3a13dd08b14057745e981b3cecc69805dba7e0a2 2002 pyroma_5.0-1.dsc c7686fe93a58fe660c96f407be2c50c61f4aa9abe5e55d1057b7d99d7829984b 58430 pyroma_5.0.orig.tar.gz ede7e6b9df15c2d6b991c9d9496b5849fffff21221005fa4613ece2d2dcb40cd 3148 pyroma_5.0-1.debian.tar.xz"
+    "c98da42ea4a4ae09ee17bb20ee7625d29eeeec49cb0d8cf213aeaf175018adcf 2258 pyroma_5.0.1-1.dsc 286dd60702394f77f3cb4a0f2c2a2cb343b9aa0fa098d03eee2ed18192b35590 58761 pyroma_5.0.1.orig.tar.gz 67248e4a62c562fbb20024da93cccd90113835d22d5152be9a50b48cabd48b43 4684 pyroma_5.0.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "86a1cea6df70d308e384ee3793cf18f84185a70b debian archive/debian/5.0.1-1 https://git.dgit.debian.org/pyroma"
   ],
   "Directory": [
     "pool/main/p/pyroma"
   ],
   "Files": [
-    "64f61e1ecee59e237cfc217291453d67 2002 pyroma_5.0-1.dsc e98b84fea5cc730eec89c4cca3f191b5 58430 pyroma_5.0.orig.tar.gz c9d146b2e7676f38992b24305971faf0 3148 pyroma_5.0-1.debian.tar.xz"
+    "892ce3b51d57a9fe65fc2e5b19e2aa0b 2258 pyroma_5.0.1-1.dsc d0013b07ee7c2c4f3b44018c4d23a8b4 58761 pyroma_5.0.1.orig.tar.gz ec9623804e35ba1a44ab57f3f3baa930 4684 pyroma_5.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +47,9 @@
   "Standards-Version": [
     "4.7.2"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/debian/pyroma.git"
   ],
   "Version": [
-    "5.0-1"
+    "5.0.1-1"
   ]
 }
