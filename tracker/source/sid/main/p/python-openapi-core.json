@@ -6,19 +6,22 @@
     "python3-openapi-core, python-openapi-core-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, help2man, pybuild-plugin-pyproject, python3-aiohttp, python3-aioitertools, python3-all, python3-django, python3-djangorestframework \u003c!nocheck\u003e, python3-falcon, python3-fastapi, python3-flask, python3-httpx \u003c!nocheck\u003e, python3-isodate, python3-jsonschema, python3-jsonschema-path, python3-more-itertools, python3-multidict, python3-openapi-schema-validator, python3-openapi-spec-validator, python3-parse, python3-poetry-core, python3-pytest \u003c!nocheck\u003e, python3-pytest-aiohttp \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-requests, python3-responses \u003c!nocheck\u003e, python3-sphinx, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-starlette, python3-strict-rfc3339 \u003c!nocheck\u003e, python3-werkzeug"
+    "debhelper-compat (= 13), dh-sequence-python3, help2man, mkdocs \u003c!nodoc\u003e, mkdocs-material \u003c!nodoc\u003e, mkdocstrings \u003c!nodoc\u003e, mkdocstrings-python-handlers \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-aiohttp, python3-aioitertools, python3-all, python3-django, python3-djangorestframework \u003c!nocheck\u003e, python3-falcon, python3-fastapi, python3-flask, python3-griffe-typingdoc \u003c!nodoc\u003e, python3-httpx \u003c!nocheck\u003e, python3-isodate, python3-jsonschema (\u003e= 4.23.0), python3-jsonschema-path, python3-more-itertools, python3-multidict, python3-openapi-schema-validator, python3-openapi-spec-validator, python3-poetry-core, python3-pytest \u003c!nocheck\u003e, python3-pytest-aiohttp \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-requests, python3-responses \u003c!nocheck\u003e, python3-starlette, python3-strict-rfc3339 \u003c!nocheck\u003e, python3-typing-extensions, python3-werkzeug"
   ],
   "Checksums-Sha256": [
-    "0c15f349753d0ede64f0ae4e6fa7c30f7f123fd2be62560e8765211b09756f8c 3477 python-openapi-core_0.19.4-1.dsc d73074bdc7a4e71ef44d09683b3619fef48c611a273b2b5a1ab5f966878f3143 182567 python-openapi-core_0.19.4.orig.tar.gz d742927e7eb0fe4686b143bb3983562fd6f4f23d5e4396d154b10a16f8bccf62 4468 python-openapi-core_0.19.4-1.debian.tar.xz"
+    "78422b83f78e90f553b3d4500475d3340b5914ff4649c99b87c0451fa559b64f 3713 python-openapi-core_0.22.0-1.dsc 11f49aad655bc9063820a63f15a9072136373433534c081dd4f6073e1541560f 215157 python-openapi-core_0.22.0.orig.tar.gz 6562c38c9aedac11ed98c0ae65e4a46b82951fbc999b511ed137d274c2018444 3568 python-openapi-core_0.22.0-1.debian.tar.xz"
   ],
   "Description": [
     "Client- and server-side support for OpenAPI specification This Python library adds client-side and server-side support for the OpenAPI v3.0 and v3.1 specification. It offers: . * validation and unmarshalling of request and response data (including webhooks) * integration with popular libraries (Requests and Werkzeug) and frameworks (Django, Falcon, Flask, Starlette) * customization with media type deserializers and format unmarshallers * security data providers (API keys, Cookie, Basic and Bearer HTTP authentications)"
+  ],
+  "Dgit": [
+    "9ead42271f5ad92eb4cfb1077add1b3da0eec92b debian archive/debian/0.22.0-1 https://git.dgit.debian.org/python-openapi-core"
   ],
   "Directory": [
     "pool/main/p/python-openapi-core"
   ],
   "Files": [
-    "4a79c6e565c0633aec5853b1027512a0 3477 python-openapi-core_0.19.4-1.dsc be54d1a22cd3537a74d7f9746586a739 182567 python-openapi-core_0.19.4.orig.tar.gz 4865cc9081e541c67778469fe03ec9f4 4468 python-openapi-core_0.19.4-1.debian.tar.xz"
+    "1161d3705a46ba10e9ddb0b332c539eb 3713 python-openapi-core_0.22.0-1.dsc 8f7eed22da8f6caa0800d59716d08a4c 215157 python-openapi-core_0.22.0.orig.tar.gz 57dd25fff8d24807f1325fac94106553 3568 python-openapi-core_0.22.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "python-openapi-core"
   ],
   "Package-List": [
-    "python-openapi-core-doc deb doc optional arch=all profile=!nodoc python3-openapi-core deb python optional arch=all"
+    "python-openapi-core-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-openapi-core deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,7 +45,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-openapi-core.git"
   ],
   "Version": [
-    "0.19.4-1"
+    "0.22.0-1"
   ]
 }
