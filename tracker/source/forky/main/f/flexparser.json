@@ -6,10 +6,10 @@
     "python3-flexparser"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-pytest \u003c!nocheck\u003e, python3-pytest-mpl \u003c!nocheck\u003e, python3-pytest-subtests \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-typing-extensions"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-pytest (\u003e= 9) \u003c!nocheck\u003e, python3-pytest-mpl \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-typing-extensions"
   ],
   "Checksums-Sha256": [
-    "839992ec49b9d5c31c31bf4431ef18a9f69816d98d81205d4c2cfa217cf99bf5 2861 flexparser_0.4-1.dsc 38b5a443218560a807d3baad4d87ed35f6df1546f54e0e10a0ced60e733ad49d 42714 flexparser_0.4.orig.tar.gz cc45349c5ef3c5d9b1df6b6649d4434ff526d4f46a9f916468f1bb62ab8654e5 3496 flexparser_0.4-1.debian.tar.xz"
+    "80b4445c85fa42aedcc6dc3c84593128c18aa7b7780b60b93aa371b677c23d3c 2832 flexparser_0.4-2.dsc 38b5a443218560a807d3baad4d87ed35f6df1546f54e0e10a0ced60e733ad49d 42714 flexparser_0.4.orig.tar.gz c645866e076dd01a9629ed451b2c049bf43d08c6ab75c64b9704e54888407815 3596 flexparser_0.4-2.debian.tar.xz"
   ],
   "Description": [
     "Parsing using Python typing The idea behind flexparser is quite simple. To write a class for every type of content (called here `ParsedStatement`) one needs to parse. Each class have a `from_string` constructor. The `typing` module is used extensively to make the output structure easy to use and less error prone. . The fuse of frozen dataclass is not necessary but it convenient. Being a dataclass you get the init, str, repr, etc for free. Being frozen, sort of immutable, makes them easier to reason around. . The result is a collection of `ParsedStatement` or `ParsingError`."
@@ -18,7 +18,7 @@
     "pool/main/f/flexparser"
   ],
   "Files": [
-    "7f788dde6d84d60c72a2cf9c1f928272 2861 flexparser_0.4-1.dsc e46b492b67784543a02e3b64f65b8536 42714 flexparser_0.4.orig.tar.gz 9fe9c934d89c4031651f3514ed741820 3496 flexparser_0.4-1.debian.tar.xz"
+    "b9428b787a387ea7d1b7fd50e32e8c56 2832 flexparser_0.4-2.dsc e46b492b67784543a02e3b64f65b8536 42714 flexparser_0.4.orig.tar.gz 2544ed0c0bbdb1d6499a6948bb35ea89 3596 flexparser_0.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/flexparser.git"
   ],
   "Version": [
-    "0.4-1"
+    "0.4-2"
   ]
 }
