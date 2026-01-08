@@ -6,16 +6,19 @@
     "libcairo-gobject2, libcairo-script-interpreter2, libcairo2, libcairo2-dev, libcairo2-doc, libcairo2-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ghostscript, gtk-doc-tools, libfontconfig-dev, libfreetype-dev (\u003e= 2.13), libglib2.0-dev, liblzo2-dev, libpixman-1-dev, libpng-dev, libpoppler-glib-dev \u003c!nocheck\u003e, librsvg2-dev \u003c!nocheck\u003e, libspectre-dev \u003c!nocheck\u003e, libx11-dev, libxcb-render0-dev, libxcb-shm0-dev, libxcb1-dev, libxext-dev, libxrender-dev, meson, pkgconf, zlib1g-dev"
+    "debhelper-compat (= 13), ghostscript \u003c!nocheck\u003e, libfontconfig-dev, libfreetype-dev (\u003e= 2.13), libglib2.0-dev, liblzo2-dev, libpixman-1-dev, libpng-dev, libpoppler-glib-dev \u003c!nocheck\u003e, librsvg2-dev \u003c!nocheck\u003e, libspectre-dev \u003c!nocheck\u003e, libx11-dev, libxcb-render0-dev, libxcb-shm0-dev, libxcb1-dev, libxext-dev, libxrender-dev, meson, pkgconf, zlib1g-dev"
+  ],
+  "Build-Depends-Indep": [
+    "gtk-doc-tools \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "717ca0717208ae5ef1ab354e47328867ee7038fe65fb75e0ce366139b34bf67f 2763 cairo_1.18.4-1.dsc 445ed8208a6e4823de1226a74ca319d3600e83f6369f99b14265006599c32ccb 32578804 cairo_1.18.4.orig.tar.xz bf2d9ea10097fd06faf6b4ef2149677e7aa0eb8abf85aa5d46851ea11a713f68 29920 cairo_1.18.4-1.debian.tar.xz"
+    "5dfb99f2896a2f23810cde3e80e930bd917079b143e4e984feb44ba018590d2a 2784 cairo_1.18.4-3.dsc 445ed8208a6e4823de1226a74ca319d3600e83f6369f99b14265006599c32ccb 32578804 cairo_1.18.4.orig.tar.xz 25cb656a9c4165f36950b01710683efce6b5b0e30b80d81d519d7c3d1a2f7b2a 29988 cairo_1.18.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/cairo"
   ],
   "Files": [
-    "660473c3e7a127c9e40723d278504698 2763 cairo_1.18.4-1.dsc db575fb41bbda127e0147e401f36f8ac 32578804 cairo_1.18.4.orig.tar.xz c309eddd7c8c14c4839c2c34df7d9986 29920 cairo_1.18.4-1.debian.tar.xz"
+    "fbaa346d59b5495457e5d1bf12b21fa8 2784 cairo_1.18.4-3.dsc db575fb41bbda127e0147e401f36f8ac 32578804 cairo_1.18.4.orig.tar.xz c6ff813f4e07de7d183cdd1b81cd882e 29988 cairo_1.18.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "cairo"
   ],
   "Package-List": [
-    "libcairo-gobject2 deb libs optional arch=any libcairo-script-interpreter2 deb libs optional arch=any libcairo2 deb libs optional arch=any libcairo2-dev deb libdevel optional arch=any libcairo2-doc deb doc optional arch=all libcairo2-udeb udeb debian-installer optional arch=any"
+    "libcairo-gobject2 deb libs optional arch=any libcairo-script-interpreter2 deb libs optional arch=any libcairo2 deb libs optional arch=any libcairo2-dev deb libdevel optional arch=any libcairo2-doc deb doc optional arch=all profile=!nodoc libcairo2-udeb udeb debian-installer optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +42,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +51,7 @@
     "build-essential, pkg-config"
   ],
   "Uploaders": [
-    "Emilio Pozuelo Monfort \u003cpochu@debian.org\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e, Michael Biebl \u003cbiebl@debian.org\u003e"
+    "Emilio Pozuelo Monfort \u003cpochu@debian.org\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/gnome-team/cairo"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/cairo.git"
   ],
   "Version": [
-    "1.18.4-1"
+    "1.18.4-3"
   ]
 }
