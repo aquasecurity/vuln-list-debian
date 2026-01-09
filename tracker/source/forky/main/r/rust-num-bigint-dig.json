@@ -6,16 +6,19 @@
     "librust-num-bigint-dig-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.2.7-~~) \u003c!nocheck\u003e, librust-lazy-static-1+spin-no-std-dev (\u003e= 1.2.0-~~) \u003c!nocheck\u003e, librust-libm-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.39-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.39-~~) \u003c!nocheck\u003e, librust-num-iter-0.1-dev (\u003e= 0.1.37-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-rand-0.8+std-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e, librust-smallvec-1+write-dev (\u003e= 1.10.0-~~) \u003c!nocheck\u003e, librust-smallvec-1-dev (\u003e= 1.10.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+spin-no-std-dev (\u003e= 1.2.0-~~) \u003c!nocheck\u003e, librust-libm-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.39-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.39-~~) \u003c!nocheck\u003e, librust-num-iter-0.1-dev (\u003e= 0.1.37-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-rand-0.8+std-dev (\u003e= 0.8.3-~~) \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e, librust-smallvec-1+write-dev (\u003e= 1.10.0-~~) \u003c!nocheck\u003e, librust-smallvec-1-dev (\u003e= 1.10.0-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d1ba54640e6c70ecf4b8077f98b85b386fb221faff9a400ef245c3dbf9b45a85 2704 rust-num-bigint-dig_0.8.4-1.dsc dc84195820f291c7697304f3cbdadd1cb7199c0efc917ff5eafd71225c136151 123825 rust-num-bigint-dig_0.8.4.orig.tar.gz 8eedf326a957427307d634e8cd80cce4cb9e3e58a43f61ae44591f56fd335620 3464 rust-num-bigint-dig_0.8.4-1.debian.tar.xz"
+    "cd923b356fb32b54d6d960a0825182af4af77e7db67b680ac7a3a6cb7c20a97c 2673 rust-num-bigint-dig_0.8.6-1.dsc e661dda6640fad38e827a6d4a310ff4763082116fe217f279885c97f511bb0b7 126196 rust-num-bigint-dig_0.8.6.orig.tar.gz 2fb0a43fd8b377d79ec80666cc5ec002b613d8bb9b4d9a89f9ea343bf079b90e 3456 rust-num-bigint-dig_0.8.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-bigint-dig"
   ],
   "Files": [
-    "0dda1a911262ee7a091d9d179c2e43c9 2704 rust-num-bigint-dig_0.8.4-1.dsc a26d87582bd8f8a8ed433a6ca161cef2 123825 rust-num-bigint-dig_0.8.4.orig.tar.gz 47ed4bad4d2e5bfdd9e071534e36f4d9 3464 rust-num-bigint-dig_0.8.4-1.debian.tar.xz"
+    "b2a83949144a9c02831d285a9e561134 2673 rust-num-bigint-dig_0.8.6-1.dsc 4d33c780780e5617d413ef67ab1a02f3 126196 rust-num-bigint-dig_0.8.6.orig.tar.gz 29d78d191ed6347271be10370a713b69 3456 rust-num-bigint-dig_0.8.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-bigint-dig]"
   ],
   "Version": [
-    "0.8.4-1"
+    "0.8.6-1"
   ]
 }

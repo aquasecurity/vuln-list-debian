@@ -6,22 +6,22 @@
     "libmoox-role-cloneset-perl"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-single-binary, libmodule-build-tiny-perl, perl"
+    "debhelper (\u003e\u003e 13.15.2~), dh-sequence-single-binary, dpkg-build-api (= 1), libmodule-build-tiny-perl, perl"
   ],
   "Build-Depends-Indep": [
     "libmoo-perl, libmoox-buildargs-perl, libnamespace-clean-perl"
   ],
   "Checksums-Sha256": [
-    "48ddf29ca285985d084849d60bad8900f084f1f9e4d98b652493a4d875a2e200 2476 libmoox-role-cloneset-perl_0.1.1-2.dsc f4ab3da78c22bbbe24a7a1483dcde41e994b808d6a1a6f05b677758f1590f2d8 10754 libmoox-role-cloneset-perl_0.1.1.orig.tar.gz 66cf866c6c864a35e656255da1edb16eb4255cc7f0c74337093ac0973190bf76 2348 libmoox-role-cloneset-perl_0.1.1-2.debian.tar.xz"
+    "752e3e8c4daf9c60b365cc4dc86e375918612676cee7c8191c7f8aab72c403b7 2559 libmoox-role-cloneset-perl_0.1.2-1.dsc 7b63d242bd87d1e25170c50b8efc680956b7ed33b82f7376cd80b7247ea631f1 8595 libmoox-role-cloneset-perl_0.1.2.orig.tar.gz 606d3790a001873af2978711d57228bf24ef43015406212bc33097bb4a356c28 5780 libmoox-role-cloneset-perl_0.1.2-1.debian.tar.xz"
   ],
   "Dgit": [
-    "b0d6631d19a9267395f44a5f6a716cf2576413f6 debian archive/debian/0.1.1-2 https://git.dgit.debian.org/libmoox-role-cloneset-perl"
+    "152727d5b45b01c711512d3a864cc588b0eca321 debian archive/debian/0.1.2-1 https://git.dgit.debian.org/libmoox-role-cloneset-perl"
   ],
   "Directory": [
     "pool/main/libm/libmoox-role-cloneset-perl"
   ],
   "Files": [
-    "aed23e0d5f72ea532752f25cdaf91ff1 2476 libmoox-role-cloneset-perl_0.1.1-2.dsc 01a7c426846a246b001677ffb739e599 10754 libmoox-role-cloneset-perl_0.1.1.orig.tar.gz a6d4f02e59438673f95938e36e0aa948 2348 libmoox-role-cloneset-perl_0.1.1-2.debian.tar.xz"
+    "f77bb53c5ccbf1c597c33ccc9b5fc933 2559 libmoox-role-cloneset-perl_0.1.2-1.dsc 9b2acbc2ddaad29d3a2f9bdcae5761c8 8595 libmoox-role-cloneset-perl_0.1.2.orig.tar.gz 834c04e1d044a48a46736f24849373ee 5780 libmoox-role-cloneset-perl_0.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,10 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-perl"
+    "autopkgtest, autopkgtest-pkg-perl"
+  ],
+  "Testsuite-Triggers": [
+    "dh-debputy, python3-lsprotocol"
   ],
   "Uploaders": [
     "Peter Pentchev \u003croam@debian.org\u003e,"
@@ -60,6 +63,6 @@
     "https://salsa.debian.org/perl-team/modules/packages/libmoox-role-cloneset-perl.git"
   ],
   "Version": [
-    "0.1.1-2"
+    "0.1.2-1"
   ]
 }
