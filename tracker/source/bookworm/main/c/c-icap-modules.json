@@ -6,16 +6,16 @@
     "libc-icap-mod-virus-scan, libc-icap-mod-urlcheck, libc-icap-mod-contentfiltering"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libclamav-dev, libdb-dev, libicapapi-dev, libltdl-dev"
+    "debhelper-compat (= 13), libclamav-dev [!armel !mips !mips64el], libdb-dev, libssl-dev, libicapapi-dev, libltdl-dev"
   ],
   "Checksums-Sha256": [
-    "109aa44d8722c54b6bd090a43c6b99ca3150fed4063a65c9d1b9cd948c1f4e09 2153 c-icap-modules_0.5.5-2.dsc 6a42f1fdd8c35ad38d29f7d3c10f925471977f217086352e146cf95e45f2b5b5 450497 c-icap-modules_0.5.5.orig.tar.gz 82b88b29013836e427071c2579a141f8e214a42cdd10fd7e44fd3be4cdaf7094 6012 c-icap-modules_0.5.5-2.debian.tar.xz"
+    "f6e2538269c468119ca8c9166e0ae7ff3b6c6cd60dc04a45e35ec26be2fbe614 2081 c-icap-modules_0.5.5-2+deb12u1.dsc 6a42f1fdd8c35ad38d29f7d3c10f925471977f217086352e146cf95e45f2b5b5 450497 c-icap-modules_0.5.5.orig.tar.gz d50529e5ef6ba2c8d907336c682706444246315ada2cfaa46dfe42c5c926d185 6292 c-icap-modules_0.5.5-2+deb12u1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/c-icap-modules"
   ],
   "Files": [
-    "406cef77e8ff3e79e4f7703f9e68c325 2153 c-icap-modules_0.5.5-2.dsc ca6d5d124a4668d63affcaa5ab083e57 450497 c-icap-modules_0.5.5.orig.tar.gz 9b398b9853e6c63343ad46b17243806b 6012 c-icap-modules_0.5.5-2.debian.tar.xz"
+    "4ca85502c416ddb746369d66430a769c 2081 c-icap-modules_0.5.5-2+deb12u1.dsc ca6d5d124a4668d63affcaa5ab083e57 450497 c-icap-modules_0.5.5.orig.tar.gz f2c99c19613933beaac89deeb16d5369 6292 c-icap-modules_0.5.5-2+deb12u1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "c-icap-modules"
   ],
   "Package-List": [
-    "libc-icap-mod-contentfiltering deb net optional arch=any libc-icap-mod-urlcheck deb net optional arch=any libc-icap-mod-virus-scan deb net optional arch=any"
+    "libc-icap-mod-contentfiltering deb net optional arch=any libc-icap-mod-urlcheck deb net optional arch=any libc-icap-mod-virus-scan deb net optional arch=amd64,arm64,armhf,i386,ppc64el,s390x"
   ],
   "Priority": [
     "source"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/c-icap-modules.git"
   ],
   "Version": [
-    "1:0.5.5-2"
+    "1:0.5.5-2+deb12u1"
   ]
 }

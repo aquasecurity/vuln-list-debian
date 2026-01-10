@@ -6,16 +6,16 @@
     "rsync"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libacl1-dev, libpopt-dev, liblz4-dev, libxxhash-dev (\u003e= 0.8), libzstd-dev (\u003e= 1.4), zlib1g-dev, libssl-dev, python3:native, python3-cmarkgfm:native"
+    "debhelper-compat (= 13), libacl1-dev, libpopt-dev, liblz4-dev, libxxhash-dev (\u003e= 0.8), libzstd-dev (\u003e= 1.4), zlib1g-dev, libssl-dev, python3:native, python3-cmarkgfm:native, acl \u003c!nocheck\u003e, attr \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3d822f7e0df140b77aa27acecefe8500c8ff5f325b9a8b4737db877bb201aefe 2322 rsync_3.2.7-1+deb12u2.dsc 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb 1149787 rsync_3.2.7.orig.tar.gz 8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae 195 rsync_3.2.7.orig.tar.gz.asc 778ee982c2b340da1714a88adf7b3c92165c962cc765eacb12bca6ec7cafbc24 35820 rsync_3.2.7-1+deb12u2.debian.tar.xz"
+    "7cbce0ace45ce5911d6ba0626d26832a472c30ba0b2a1d78af29dd9f27a5480e 2401 rsync_3.2.7-1+deb12u4.dsc 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb 1149787 rsync_3.2.7.orig.tar.gz 8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae 195 rsync_3.2.7.orig.tar.gz.asc 0b478dd1666ad113f1c551bda83d5dba92b1f732eafd71b7aabd617bdd6b3128 38792 rsync_3.2.7-1+deb12u4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rsync"
   ],
   "Files": [
-    "a1cb97fe43295e5e527af73b4b1ef31c 2322 rsync_3.2.7-1+deb12u2.dsc f216f350ef56b9ba61bc313cb6ec2ed6 1149787 rsync_3.2.7.orig.tar.gz e133a77fbb1dca548863a7f0543b8087 195 rsync_3.2.7.orig.tar.gz.asc 9b66c9009bad527182ccead9b86203dd 35820 rsync_3.2.7-1+deb12u2.debian.tar.xz"
+    "5a6c3b8a8a92c49896ca7e05199a679c 2401 rsync_3.2.7-1+deb12u4.dsc f216f350ef56b9ba61bc313cb6ec2ed6 1149787 rsync_3.2.7.orig.tar.gz e133a77fbb1dca548863a7f0543b8087 195 rsync_3.2.7.orig.tar.gz.asc 84beff306717cba657fb188213d23008 38792 rsync_3.2.7-1+deb12u4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, build-essential"
+    "@builddeps@, adduser, build-essential, diffoscope, openssh-server, shunit2"
   ],
   "Uploaders": [
     "Samuel Henrique \u003csamueloph@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/rsync.git"
   ],
   "Version": [
-    "3.2.7-1+deb12u2"
+    "3.2.7-1+deb12u4"
   ]
 }
