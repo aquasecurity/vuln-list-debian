@@ -6,19 +6,19 @@
     "libvte-2.91-0, libvte-2.91-0-udeb, libvte-2.91-gtk4-0, gir1.2-vte-2.91, gir1.2-vte-3.91, libvte-2.91-dev, libvte-2.91-gtk4-dev, libvte-2.91-common, libvte-2.91-doc, libvte-2.91-gtk4-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, gettext, gir1.2-cairo-1.0-dev, gir1.2-gdk-3.0-dev, gir1.2-gdk-4.0-dev, gir1.2-graphene-1.0-dev, gir1.2-gsk-4.0-dev, gir1.2-gtk-3.0-dev, gir1.2-gtk-4.0-dev, gir1.2-pango-1.0-dev, gobject-introspection (\u003e= 1.80), libfast-float-dev (\u003e= 6), libglib2.0-dev (\u003e= 2.72.0), libgnutls28-dev, libgtk-3-dev, libgtk-4-dev (\u003e= 4.14), liblz4-dev, libpango1.0-dev, libpcre2-dev, libsimdutf-dev, libsystemd-dev [linux-any], libxml2-utils, meson, valac"
+    "debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, gettext, gir1.2-cairo-1.0-dev, gir1.2-gdk-3.0-dev, gir1.2-gdk-4.0-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x alpha hppa hurd-amd64 hurd-i386 m68k powerpc ppc64 sparc64], gir1.2-graphene-1.0-dev, gir1.2-gsk-4.0-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x alpha hppa hurd-amd64 hurd-i386 m68k powerpc ppc64 sparc64], gir1.2-gtk-3.0-dev, gir1.2-gtk-4.0-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x alpha hppa hurd-amd64 hurd-i386 m68k powerpc ppc64 sparc64], gir1.2-pango-1.0-dev, gobject-introspection (\u003e= 1.80), libfast-float-dev (\u003e= 6), libglib2.0-dev (\u003e= 2.72.0), libgnutls28-dev, libgtk-3-dev, libgtk-4-dev (\u003e= 4.14) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x alpha hppa hurd-amd64 hurd-i386 m68k powerpc ppc64 sparc64], liblz4-dev, libpango1.0-dev, libpcre2-dev, libsimdutf-dev, libsystemd-dev [linux-any], libxml2-utils, meson, valac"
   ],
   "Build-Depends-Indep": [
-    "gi-docgen"
+    "gi-docgen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "022ec8fb823016496169f14c344fa0ec9811d195567f0862924a1c092535400d 3169 vte2.91_0.82.2-1.dsc d3a36251e4fd4a24b82ba6c34a1eb8d660128fe391cb44538869d2be3447a582 1873164 vte2.91_0.82.2.orig.tar.xz eaa88f6db48082967287f6f724516c1e8890ba8925ea79fa8a3818e1433b57f4 31420 vte2.91_0.82.2-1.debian.tar.xz"
+    "ea6447c930768d27ff83fe9be267a25a4ef6f31465052499f485bdc2ec9f655e 3958 vte2.91_0.82.3-2.dsc a770d7bfb37a66d1857284a6012b2ac2aa0e2424d0eaba5d1258dfaa81eb16f7 1872984 vte2.91_0.82.3.orig.tar.xz ea37177ffbd168221b09e930de034a67af9650548ff08cc3c59f93e8c2fcf421 31620 vte2.91_0.82.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/v/vte2.91"
   ],
   "Files": [
-    "b4f673f85edeaceb9210770609be17f2 3169 vte2.91_0.82.2-1.dsc 84d02e5bf76dc160f8d87da7a2ad7648 1873164 vte2.91_0.82.2.orig.tar.xz e6f9474b7113186b7083d05b9c81ec99 31420 vte2.91_0.82.2-1.debian.tar.xz"
+    "705024884c94eb6b75edba4c2bfa7bb3 3958 vte2.91_0.82.3-2.dsc 4bdcbe58fc3ac81cd606ca04e77460b6 1872984 vte2.91_0.82.3.orig.tar.xz bb4ab7e96a5d8a0a6d1a3dc9834b7b0e 31620 vte2.91_0.82.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "vte2.91"
   ],
   "Package-List": [
-    "gir1.2-vte-2.91 deb introspection optional arch=any gir1.2-vte-3.91 deb introspection optional arch=any libvte-2.91-0 deb libs optional arch=any libvte-2.91-0-udeb udeb debian-installer optional arch=any profile=!noudeb libvte-2.91-common deb libs optional arch=any libvte-2.91-dev deb libdevel optional arch=any libvte-2.91-doc deb doc optional arch=all profile=!nodoc libvte-2.91-gtk4-0 deb libs optional arch=any libvte-2.91-gtk4-dev deb libdevel optional arch=any libvte-2.91-gtk4-doc deb doc optional arch=all profile=!nodoc"
+    "gir1.2-vte-2.91 deb introspection optional arch=any gir1.2-vte-3.91 deb introspection optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,alpha,hppa,hurd-amd64,hurd-i386,m68k,powerpc,ppc64,sparc64 libvte-2.91-0 deb libs optional arch=any libvte-2.91-0-udeb udeb debian-installer optional arch=any profile=!noudeb libvte-2.91-common deb libs optional arch=any libvte-2.91-dev deb libdevel optional arch=any libvte-2.91-doc deb doc optional arch=all profile=!nodoc libvte-2.91-gtk4-0 deb libs optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,alpha,hppa,hurd-amd64,hurd-i386,m68k,powerpc,ppc64,sparc64 libvte-2.91-gtk4-dev deb libdevel optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,alpha,hppa,hurd-amd64,hurd-i386,m68k,powerpc,ppc64,sparc64 libvte-2.91-gtk4-doc deb doc optional arch=all profile=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/vte2.91.git"
   ],
   "Version": [
-    "0.82.2-1"
+    "0.82.3-2"
   ]
 }

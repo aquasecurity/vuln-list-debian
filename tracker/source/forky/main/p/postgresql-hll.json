@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "alpha amd64 arm64 ia64 kfreebsd-amd64 loong64 mips64el ppc64el riscv64"
+    "any"
   ],
   "Binary": [
     "postgresql-18-hll"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
+    "debhelper-compat (= 13), architecture-is-64-bit \u003c!pkg.postgresql.32-bit\u003e, architecture-is-little-endian, postgresql-all \u003c!nocheck\u003e, postgresql-server-dev-all"
   ],
   "Checksums-Sha256": [
-    "de2b33d7fea846163fe9b0913237b0d28e8adcd39d7428a86696dc4c986e646b 2242 postgresql-hll_2.19-1.dsc d63d56522145f2d737e0d056c9cfdfe3e8b61008c12ca4c45bde7d9b942f9c46 2756222 postgresql-hll_2.19.orig.tar.gz 5c88372b880a8669f1a31a59667402184bf6618a7a4ae62d0d98300dedf5d26b 3636 postgresql-hll_2.19-1.debian.tar.xz"
+    "e73b0fe0357f8d44bc6c781f5b01969e81aa9d36f054acb070387c0e9d78d647 2188 postgresql-hll_2.19-2.dsc d63d56522145f2d737e0d056c9cfdfe3e8b61008c12ca4c45bde7d9b942f9c46 2756222 postgresql-hll_2.19.orig.tar.gz 574c0c78b0f8c03cb9239c7e612d54d01daac6637c23b2e6ac5158980a2f0988 3656 postgresql-hll_2.19-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-hll"
   ],
   "Files": [
-    "cac42a6f733e9134cd9242f25fd6def9 2242 postgresql-hll_2.19-1.dsc f6bc5624bab1c3b9c9f8c2f8aa2fcdf0 2756222 postgresql-hll_2.19.orig.tar.gz 25d52b2fe4cfa587ccc29f3f9c0ca238 3636 postgresql-hll_2.19-1.debian.tar.xz"
+    "19b598af079fa5ad23207c861ca87c9a 2188 postgresql-hll_2.19-2.dsc f6bc5624bab1c3b9c9f8c2f8aa2fcdf0 2756222 postgresql-hll_2.19.orig.tar.gz b56427731f8cc9713664058786f6592c 3656 postgresql-hll_2.19-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-hll"
   ],
   "Package-List": [
-    "postgresql-18-hll deb database optional arch=alpha,amd64,arm64,ia64,kfreebsd-amd64,loong64,mips64el,ppc64el,riscv64"
+    "postgresql-18-hll deb database optional arch=any"
   ],
   "Priority": [
     "source"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql-hll.git"
   ],
   "Version": [
-    "2.19-1"
+    "2.19-2"
   ]
 }
