@@ -6,19 +6,19 @@
     "libqrtr-glib0, libqrtr-glib-dev, libqrtr-glib-doc, gir1.2-qrtr-1.0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gobject-introspection (\u003e= 1.80), gtk-doc-tools, libglib2.0-dev (\u003e= 2.56), meson, pkgconf, python3:any"
+    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gobject-introspection (\u003e= 1.80), libglib2.0-dev (\u003e= 2.56), meson, pkgconf, python3:any"
   ],
   "Build-Depends-Indep": [
-    "libglib2.0-doc \u003c!nodoc\u003e"
+    "gi-docgen \u003c!nodoc\u003e, libglib2.0-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "b6844de3efe1e6978ced3c045da92cb223c2908ac3f22cfdc35597c18b9d59f3 2558 libqrtr-glib_1.2.2-2.dsc 69ec8883d887a426c6402440b200fa53c41e9da8e098333369f2388d3559e856 26398 libqrtr-glib_1.2.2.orig.tar.bz2 92929cf7881e7d981810f4293417b3bc2248478580f7e07485efcc095f4a4b07 4736 libqrtr-glib_1.2.2-2.debian.tar.xz"
+    "736ff0cf0aeb5e78f5d8fcf2858733b7ad5a2d06647b83a50dfb6d3b03d01659 2666 libqrtr-glib_1.4.0-1.dsc b57068934577b0070c2f180f3dfcd115ce19efec10aeaf877b8a99c9226aaa2c 29521 libqrtr-glib_1.4.0.orig.tar.gz 3feec39c03c29824a6ce30b3beff6188501e771abca44eff64d9a267f0598241 5084 libqrtr-glib_1.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libq/libqrtr-glib"
   ],
   "Files": [
-    "896bfc324c469e6456db7909b5634ed5 2558 libqrtr-glib_1.2.2-2.dsc ff475b280ce8cce31e4d5e41fd6d0c43 26398 libqrtr-glib_1.2.2.orig.tar.bz2 ad3c7f0ffb51ce5b0d7d7353a16944e7 4736 libqrtr-glib_1.2.2-2.debian.tar.xz"
+    "e84d696ef215d05bb83a28ca767bc6f1 2666 libqrtr-glib_1.4.0-1.dsc 08313a7983c619bdd8591d9efd32d415 29521 libqrtr-glib_1.4.0.orig.tar.gz e2750926376de90a0e6c9c55d276af1d 5084 libqrtr-glib_1.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "libqrtr-glib"
   ],
   "Package-List": [
-    "gir1.2-qrtr-1.0 deb introspection optional arch=linux-any libqrtr-glib-dev deb libdevel optional arch=linux-any libqrtr-glib-doc deb doc optional arch=all profile=!nodoc libqrtr-glib0 deb libs optional arch=linux-any"
+    "gir1.2-qrtr-1.0 deb introspection optional arch=linux-any libqrtr-glib-dev deb libdevel optional arch=linux-any libqrtr-glib-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libqrtr-glib0 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "optional"
@@ -43,6 +43,12 @@
   ],
   "Standards-Version": [
     "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, pkg-config"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e, Guido Günther \u003cagx@sigxcpu.org\u003e, Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e, Martin \u003cdebacle@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/DebianOnMobile-team/libqrtr-glib.git"
   ],
   "Version": [
-    "1.2.2-2"
+    "1.4.0-1"
   ]
 }
