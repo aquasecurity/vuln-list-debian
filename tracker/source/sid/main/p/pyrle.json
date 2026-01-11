@@ -6,16 +6,16 @@
     "python3-pyrle"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all-dev, python3-setuptools, cython3, python3-pandas, python3-tabulate (\u003e= 0.8.7-0.2~), python3-numpy, python3-natsort, python3-pytest, python3-hypothesis"
+    "debhelper-compat (= 13), dh-python, python3-all-dev, python3-setuptools, pybuild-plugin-pyproject, cython3, python3-pandas, python3-tabulate (\u003e= 0.8.7-0.2~), python3-numpy, python3-natsort, python3-pytest, python3-pytest-xdist, python3-hypothesis, python3-pyranges, r-base [!armhf !i386 !hppa !hurd-i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, r-bioc-s4vectors [!armhf !i386 !hppa !hurd-i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e, r-bioc-genomicranges [!armhf !i386 !hppa !hurd-i386 !m68k !powerpc !sh4 !x32] \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1e70ad84d9e67591a625b9a8466b6f7bd2efa7dd27eb73ed916e818af3ace7f1 1483 pyrle_0.0.33-5.dsc 76a4a1a86c7ec30adfec1d15068651eb8a68840f6c02d9b576c93b3f0799b228 25110 pyrle_0.0.33.orig.tar.gz c3a4a41725273ae9967ff0ad228c6e1ae85fc25d2bb402675e8378bac904a64b 4400 pyrle_0.0.33-5.debian.tar.xz"
+    "e3fbb00e8baef1faa1acad226289e4aeeea35f7ebd59d1946b956258c4f57962 2649 pyrle_0.0.42-1.dsc f0b1bb593947db965e229db6da3f2c29d0a52b535c2cca43f7cf6aed75f6f829 460233 pyrle_0.0.42.orig.tar.gz db43edf929d00347121db3eeda6d435ede1b79bd9018a7f8d50928e54c1031fe 5520 pyrle_0.0.42-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyrle"
   ],
   "Files": [
-    "c7cce79c571efe9f049de2591c4d902b 1483 pyrle_0.0.33-5.dsc 3c6d217ddb562b4b011b9d5a14ff603e 25110 pyrle_0.0.33.orig.tar.gz aa82af02e0106e5390f7b2640e2cfd52 4400 pyrle_0.0.33-5.debian.tar.xz"
+    "fe00d4aa1b8086491aafb008dee3cdf6 2649 pyrle_0.0.42-1.dsc 40dd7059103dc31caee99b7255b0add8 460233 pyrle_0.0.42.orig.tar.gz 273cf02be8d7661c07db85c4771b6e07 5520 pyrle_0.0.42-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-hypothesis, python3-pyranges, python3-pytest, python3-pytest-xdist, r-base, r-bioc-genomicranges, r-bioc-s4vectors"
+  ],
+  "Uploaders": [
+    "Aryan Karamtoth \u003cspaciouscoder78@disroot.org\u003e, Pieter Lenaerts \u003cplenae@disroot.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pyrle"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pyrle.git"
   ],
   "Version": [
-    "0.0.33-5"
+    "0.0.42-1"
   ]
 }
