@@ -6,19 +6,19 @@
     "python3-aioswitcher"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
+    "debhelper-compat (= 11), dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-assertpy, python3-freezegun, python3-pycryptodome, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-pytest-resource-path, python3-pytest-sugar, python3-time-machine"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-assertpy \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-pycryptodome \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-resource-path \u003c!nocheck\u003e, python3-pytest-sugar \u003c!nocheck\u003e, python3-pytz \u003c!nocheck\u003e, python3-time-machine \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fd62bbcc669dc353ddebebe86dd79e6f95972a470216be75e9ebd99619a57fe1 2479 python-aioswitcher_4.0.2-1.1.dsc a76102ae3e122a0e6f95117ddd7c1574cf80f8b285cc96ee316aa2610d89aef0 413872 python-aioswitcher_4.0.2.orig.tar.xz 0803f4c1e4cdae481d1a5affdfbc253fdb112b92d19039f71f143f06b073e811 2380 python-aioswitcher_4.0.2-1.1.debian.tar.xz"
+    "5e1cb7998fb837d95ca900b4ee641ef36eceb5f3357f1f86add8cb3adad44045 2601 python-aioswitcher_6.0.3-1.dsc 17ad998a724172c0e4accf924c4fb96216abeb67760b8f78e28333713a634a0a 414244 python-aioswitcher_6.0.3.orig.tar.xz 17f250547dbdaca30a628593f4f902aa995efee1d4a7830d79ae21cfa4d8dcf5 2528 python-aioswitcher_6.0.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-aioswitcher"
   ],
   "Files": [
-    "213c40a551888e435c0e6544384e8147 2479 python-aioswitcher_4.0.2-1.1.dsc 4c5e4dc21aa020a31081d66b0b8a3f15 413872 python-aioswitcher_4.0.2.orig.tar.xz 35914a2038c1b5863111bbda855d5cf3 2380 python-aioswitcher_4.0.2-1.1.debian.tar.xz"
+    "1405bf7b14a6d8929138828a8f23c2c3 2601 python-aioswitcher_6.0.3-1.dsc a247e44dc4e618443fd1f1d0bc7ec88e 414244 python-aioswitcher_6.0.3.orig.tar.xz 68885731289903e7e24079fd63f5e1c5 2528 python-aioswitcher_6.0.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,16 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, pybuild-plugin-autopkgtest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-aioswitcher"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-aioswitcher.git"
   ],
   "Version": [
-    "4.0.2-1.1"
+    "6.0.3-1"
   ]
 }
