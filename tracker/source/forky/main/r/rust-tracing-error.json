@@ -6,16 +6,19 @@
     "librust-tracing-error-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.12-~~) \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+fmt-dev \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+registry-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.35-~~) \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+fmt-dev \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+registry-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0028aa800bdbfd9bd6289f0ecd3a67aefb3003d92adc981cd158cf261ed0c74a 2404 rust-tracing-error_0.2.0-1.dsc d686ec1c0f384b1277f097b2f279a2ecc11afe8c133c1aabf036a27cb4cd206e 13938 rust-tracing-error_0.2.0.orig.tar.gz 99686b8561f56cb2b0c411f056644e1b152eab9e474ba86d4c466fd70d1bcb36 2900 rust-tracing-error_0.2.0-1.debian.tar.xz"
+    "22db3312c44932ec5aa88d2dc2b0ab8679a55f53b6e95a9c545035bff5608657 1844 rust-tracing-error_0.2.1-1.dsc 8b1581020d7a273442f5b45074a6a57d5757ad0a47dac0e9f0bd57b81936f3db 14135 rust-tracing-error_0.2.1.orig.tar.gz b435a54a3c2b78ed427a75e41d6c8dd44054085aedbc23763fb45d884f43e92f 2904 rust-tracing-error_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tracing-error"
   ],
   "Files": [
-    "38d26f6c3b3252eaab3b4134afbbf8eb 2404 rust-tracing-error_0.2.0-1.dsc 9863968e1eb068686c5be6f158969162 13938 rust-tracing-error_0.2.0.orig.tar.gz 2cca64cf815e146cb68d52a7e9bf28f4 2900 rust-tracing-error_0.2.0-1.debian.tar.xz"
+    "ade20dab7183899e131da3ca3b9edef5 1844 rust-tracing-error_0.2.1-1.dsc ca65e9543d27a466b3be548a4a009772 14135 rust-tracing-error_0.2.1.orig.tar.gz 80265605bb52ba2257995baa473195cd 2904 rust-tracing-error_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tracing-0.1+attributes-dev"
+    "dh-cargo, librust-tracing-0.1+attributes-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tracing-error]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.1-1"
   ]
 }

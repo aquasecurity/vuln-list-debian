@@ -6,19 +6,25 @@
     "librust-valuable-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1df3c202f516af4f442a93e0fa774eb4cd00240666856cc4a794b8a7aa35ffd2 2124 rust-valuable_0.1.0-4.dsc 830b7e5d4d90034032940e4ace0d9a9a057e7a45cd94e6c007832e39edb82f6d 27718 rust-valuable_0.1.0.orig.tar.gz 3dfb2f6ca10e6838bc7cd30215ade6eb4409bc874104a4e0fa08e601588ed891 6052 rust-valuable_0.1.0-4.debian.tar.xz"
+    "edb9ee712dd61d3c21da71f02ca5a821542b6a0e1110187763138c24ec77a82a 1644 rust-valuable_0.1.1-1.dsc ba73ea9cf16a25df0c8caa16c51acb937d5712a8429db78a3ee29d5dcacd3a65 28679 rust-valuable_0.1.1.orig.tar.gz fdb3f7e7ebfe45e1fbe9b795a94d0fd375f6cd6f42fa9dff68168640b0cb2c43 5884 rust-valuable_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-valuable"
   ],
   "Files": [
-    "8050957046c046f9b6d04fc56babcd47 2124 rust-valuable_0.1.0-4.dsc 4efc6e7a118524cecefa0023a18accf7 27718 rust-valuable_0.1.0.orig.tar.gz ba20b06143850e2cb79e1c78976b9e43 6052 rust-valuable_0.1.0-4.debian.tar.xz"
+    "4842bbc0d73e4303f9efb20e7f7f2615 1644 rust-valuable_0.1.1-1.dsc 4a1c91b24c3025dc6bb6e0eb9711772a 28679 rust-valuable_0.1.1.orig.tar.gz 5ad3628f2900c6e2d1d66ad41182b414 5884 rust-valuable_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tokio-rs/valuable"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/valuable]"
   ],
   "Version": [
-    "0.1.0-4"
+    "0.1.1-1"
   ]
 }
