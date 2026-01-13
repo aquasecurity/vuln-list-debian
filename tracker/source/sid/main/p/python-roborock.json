@@ -6,19 +6,19 @@
     "python3-roborock"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-async-timeout \u003c!nocheck\u003e, python3-asyncio-mqtt \u003c!nocheck\u003e, python3-construct \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-paho-mqtt \u003c!nocheck\u003e, python3-pycryptodome \u003c!nocheck\u003e, python3-pyrate-limiter \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-syrupy \u003c!nocheck\u003e, python3-vacuum-map-parser-base \u003c!nocheck\u003e, python3-vacuum-map-parser-roborock \u003c!nocheck\u003e"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-async-timeout \u003c!nocheck\u003e, python3-asyncio-mqtt \u003c!nocheck\u003e, python3-construct \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-paho-mqtt \u003c!nocheck\u003e, python3-pycryptodome \u003c!nocheck\u003e, python3-pyrate-limiter \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-syrupy \u003c!nocheck\u003e, python3-vacuum-map-parser-base \u003c!nocheck\u003e, python3-vacuum-map-parser-roborock \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fdcd7af69fdd15496f3172c172805870d3f2f7345f551d4b558d0a3dc5a7cc20 2750 python-roborock_3.8.5-1.dsc 9c1d946e83af179d30f5dc718c2607cc8954465165fb54575f7c696917d6a609 331131 python-roborock_3.8.5.orig.tar.gz 1a334369a6f6859a6f672daed1f3abb9765f02d5b515298b3c62ffa3494789b4 3408 python-roborock_3.8.5-1.debian.tar.xz"
+    "257499b66f2b9a001eebbfbbfb102c494bcaf2023c3daff83f5eb7b45ae09bb6 2850 python-roborock_4.3.0-1.dsc 6e55481bced766c7e162b3313494f8c0566eb4a62da509d7372d510a9a71d857 424845 python-roborock_4.3.0.orig.tar.gz c2169a91c032ca1e4a3b9a06bc5ccafef2fc847fc5857494ac4989653d635909 3700 python-roborock_4.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-roborock"
   ],
   "Files": [
-    "ca42c687b0f97276f27bcdd021f488c0 2750 python-roborock_3.8.5-1.dsc abcc3b7b465921e661a8c9d56b7e1f75 331131 python-roborock_3.8.5.orig.tar.gz b388cae7199578de6eb2fbf37cd5e4d5 3408 python-roborock_3.8.5-1.debian.tar.xz"
+    "c7d481c62f5eb949e39490a384791f10 2850 python-roborock_4.3.0-1.dsc 067dcbe73276d510974762f6cc16942b 424845 python-roborock_4.3.0.orig.tar.gz bc0dffb0a7e034b7c76a78b4c0a90c65 3700 python-roborock_4.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-aioresponses, python3-all, python3-freezegun, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-pytest-timeout, python3-syrupy"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-roborock.git"
   ],
   "Version": [
-    "3.8.5-1"
+    "4.3.0-1"
   ]
 }
