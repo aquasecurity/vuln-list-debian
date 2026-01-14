@@ -6,16 +6,19 @@
     "librust-ucd-trie-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "163371e47bfff330b2217d92743714fc3c3d45ed7c1d6d66b1100ee16b7cbb22 2233 rust-ucd-trie_0.1.5-1.dsc 9e79c4d996edb816c91e4308506774452e55e95c3c9de07b6729e17e15a5ef81 45391 rust-ucd-trie_0.1.5.orig.tar.gz 9241f8a420534236af46ac5732d7e32cd42047769d52c95acf2a366b4b832b44 2784 rust-ucd-trie_0.1.5-1.debian.tar.xz"
+    "47ad3c3bd43bcb2c408bf0ccd8e0845a16fcfdcd1446225c48df2e11c0d616dc 2237 rust-ucd-trie_0.1.7-1.dsc 2896d95c02a80c6d6a5d6e953d479f5ddf2dfdb6a244441010e373ac0fb88971 46795 rust-ucd-trie_0.1.7.orig.tar.gz 2067386165a64a6563b63e9ec8a277172ca6ee8c9caf076a779512630bf12fdb 2804 rust-ucd-trie_0.1.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ucd-trie"
   ],
   "Files": [
-    "74e9a739074337c32b90729dd74ba047 2233 rust-ucd-trie_0.1.5-1.dsc 11ad59bd731103e90d688afc5f35271b 45391 rust-ucd-trie_0.1.5.orig.tar.gz 0584b0cf7a6d5befd60df00198bd39e0 2784 rust-ucd-trie_0.1.5-1.debian.tar.xz"
+    "e2682b12538d263799a341bf46ee7b41 2237 rust-ucd-trie_0.1.7-1.dsc 61e33ccf8e6431a1234897698d177033 46795 rust-ucd-trie_0.1.7.orig.tar.gz 2ccedf4413d57ce63e457a015329ee10 2804 rust-ucd-trie_0.1.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-once-cell-1+default-dev"
+    "dh-cargo, librust-once-cell-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ucd-trie]"
   ],
   "Version": [
-    "0.1.5-1"
+    "0.1.7-1"
   ]
 }
