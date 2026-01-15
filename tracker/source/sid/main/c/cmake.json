@@ -12,19 +12,19 @@
     "dh-sequence-sphinxdoc"
   ],
   "Checksums-Sha256": [
-    "ae22023b7efa02cda6557e3f41fe64733cdebc15266308d9dc60e557d33c66d3 4253 cmake_4.1.1+really3.31.6-2.dsc 653427f0f5014750aafff22727fb2aa60c6c732ca91808cfb78ce22ddd9e55f0 11710589 cmake_4.1.1+really3.31.6.orig.tar.gz c5c195fe81defb9e5cfa9a53eca209bac94b57203256b9f71864305b91b4e373 35700 cmake_4.1.1+really3.31.6-2.debian.tar.xz"
+    "d096fb0524fc4d45f9f5b778ed7c40b16529fd32417f5cd18a12e4f6f7119f6c 3704 cmake_4.2.1-2.dsc 414aacfac54ba0e78e64a018720b64ed6bfca14b587047b8b3489f407a14a070 12341564 cmake_4.2.1.orig.tar.gz 30f58efc6071c43352f60e7d743a33e8aac375ba0ccef3127bf0c02fb939e4eb 34208 cmake_4.2.1-2.debian.tar.xz"
   ],
   "Description": [
     "cross-platform, open-source make system CMake is used to control the software compilation process using simple platform and compiler independent configuration files. CMake generates native makefiles and workspaces that can be used in the compiler environment of your choice. CMake is quite sophisticated: it is possible to support complex environments requiring system configuration, pre-processor generation, code generation, and template instantiation."
   ],
   "Dgit": [
-    "164453e685b9a0d7a20a56e40bf712cafb4762b4 debian archive/debian/4.1.1+really3.31.6-2 https://git.dgit.debian.org/cmake"
+    "be3f01b30648d5d2ed298278dc5575eb0e47f9dc debian archive/debian/4.2.1-2 https://git.dgit.debian.org/cmake"
   ],
   "Directory": [
     "pool/main/c/cmake"
   ],
   "Files": [
-    "61e5eda3c73b7a459064b45bbb135a20 4253 cmake_4.1.1+really3.31.6-2.dsc a9f42404b21654a29553a61078accd20 11710589 cmake_4.1.1+really3.31.6.orig.tar.gz b2feb82cde3781cebf50bee0540109e5 35700 cmake_4.1.1+really3.31.6-2.debian.tar.xz"
+    "f7f266a1a60d4d99494feaaab11f447e 3704 cmake_4.2.1-2.dsc 8a7f4ac3d2fc1d98096ed2928287e27b 12341564 cmake_4.2.1.orig.tar.gz a4fe30d8deaa158bd45345ac36049d99 34208 cmake_4.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,7 @@
     "cmake"
   ],
   "Package-List": [
-    "cmake deb devel optional arch=any cmake-curses-gui deb devel optional arch=any profile=!pkg.cmake.bootstrap,!pkg.cmake.nogui cmake-data deb devel optional arch=all cmake-doc deb doc optional arch=all profile=!pkg.cmake.bootstrap cmake-qt-gui deb devel optional arch=any profile=!pkg.cmake.bootstrap,!pkg.cmake.nogui"
+    "cmake deb devel optional arch=any cmake-curses-gui deb devel optional arch=any profile=!pkg.cmake.bootstrap,!pkg.cmake.nogui profile:v1=!pkg.cmake.bootstrap\u0026!pkg.cmake.nogui cmake-data deb devel optional arch=all cmake-doc deb doc optional arch=all profile=!pkg.cmake.bootstrap profile:v1=!pkg.cmake.bootstrap cmake-qt-gui deb devel optional arch=any profile=!pkg.cmake.bootstrap,!pkg.cmake.nogui profile:v1=!pkg.cmake.bootstrap\u0026!pkg.cmake.nogui"
   ],
   "Priority": [
     "source"
@@ -48,13 +48,13 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, bison, cvs, default-jdk, doxygen, flex, gettext, git, hspell, icoutils, imagemagick, libarchive-dev, libarmadillo-dev, libasound2-dev, libboost-dev, libbz2-dev, libcups2-dev, libcurl4-openssl-dev, libexpat1-dev, libfreetype6-dev, libgif-dev, libgnutls28-dev, libgtk2.0-dev, liblzma-dev, libmagick++-dev, libmagickcore-dev, libmagickwand-dev, libopenscenegraph-dev, libphysfs-dev, libprotobuf-dev, libtiff5-dev, libxml2-dev, libxslt1-dev, mercurial, ninja-build, perl, pkg-config, protobuf-compiler, python3-dev, ruby-dev, subversion, swig, zlib1g-dev"
+    "@builddeps@, gawk"
   ],
   "Uploaders": [
     "Lisandro Damián Nicanor Pérez Meyer \u003clisandro@debian.org\u003e, Felix Geyer \u003cfgeyer@debian.org\u003e, Timo Röhling \u003croehling@debian.org\u003e,"
@@ -66,6 +66,6 @@
     "https://salsa.debian.org/cmake-team/cmake.git"
   ],
   "Version": [
-    "4.1.1+really3.31.6-2"
+    "4.2.1-2"
   ]
 }
