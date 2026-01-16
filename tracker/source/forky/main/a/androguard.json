@@ -6,16 +6,19 @@
     "androguard"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-strip-nondeterminism, python3-all, python3-asn1crypto, python3-click, python3-colorama, python3-cryptography, python3-magic, python3-lxml, python3-mock, python3-networkx, python3-pydot, python3-pygments, python3-pytest, python3-setuptools, python3-oscrypto, python3-yaml"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-apkinspector \u003c!nocheck\u003e, python3-asn1crypto \u003c!nocheck\u003e, python3-cryptography \u003c!nocheck\u003e, python3-dataset \u003c!nocheck\u003e, python3-loguru \u003c!nocheck\u003e, python3-lxml \u003c!nocheck\u003e, python3-mutf8 \u003c!nocheck\u003e, python3-networkx \u003c!nocheck\u003e, python3-poetry-core, python3-prompt-toolkit \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "69055a8de11f664971947bed9e88d81d7e229326996592d9a84458dadcb99310 2352 androguard_3.4.0~a1-18.dsc 9af53333d3d69bc79bf353cd44876c5244d53398ec6857b1b191d63dc6ec04f5 45678301 androguard_3.4.0~a1.orig.tar.gz befa873f6bb3cef925c5ff31f4fad9cc3fee37cb9d5a484810da36b975623914 9204 androguard_3.4.0~a1-18.debian.tar.xz"
+    "f6468c5942f44abeb5b7f4f93d63c9d3f92daae3d52d78f879d3df332ee5f879 2490 androguard_4.1.3-3.dsc b06121a8b9a3bff06a06abb9a02da45969f1c51f6b0c8258a06e7ca2ea0b544a 46411503 androguard_4.1.3.orig.tar.gz 1afae0bef11e4c1844b9e3ada7f73d0359752dfd50563bc81edc506bc858a296 6424 androguard_4.1.3-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "033f51a29b163e9fb30492496eb8655b463830d3 debian archive/debian/4.1.3-3 https://git.dgit.debian.org/androguard"
   ],
   "Directory": [
     "pool/main/a/androguard"
   ],
   "Files": [
-    "c64669af4b3d20f9b318f3f44e6b5055 2352 androguard_3.4.0~a1-18.dsc 2298c9c211e318ef746e83c399cfb98a 45678301 androguard_3.4.0~a1.orig.tar.gz 7517a3e6a2006202044857c3d5eb5146 9204 androguard_3.4.0~a1-18.debian.tar.xz"
+    "22445db8a709b50b293632b2f75e3e69 2490 androguard_4.1.3-3.dsc 8e9b2ddb4a22c821a149b17a628aaf62 46411503 androguard_4.1.3.orig.tar.gz a7a767612625100b6570be96b9b3ac21 6424 androguard_4.1.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@"
+    "autopkgtest, autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Hans-Christoph Steiner \u003chans@eds.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/androguard.git"
   ],
   "Version": [
-    "3.4.0~a1-18"
+    "4.1.3-3"
   ]
 }
