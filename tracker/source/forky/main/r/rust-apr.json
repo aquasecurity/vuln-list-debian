@@ -6,16 +6,19 @@
     "librust-apr-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen+default-dev (\u003e= 0.60-~~) \u003c!nocheck\u003e, librust-ctor-0.1+default-dev \u003c!nocheck\u003e, librust-system-deps-7+default-dev \u003c!nocheck\u003e, libapr1-dev \u003c!nocheck\u003e, libaprutil1-dev \u003c!nocheck\u003e, pkg-config \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-apr-sys-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-ctor-0.1+default-dev \u003c!nocheck\u003e, libapr1-dev \u003c!nocheck\u003e, libaprutil1-dev \u003c!nocheck\u003e, pkg-config \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ee2d581bbc929a5a1861588128203d632d257e2e0963baa5ed0a73be4e8bfe5e 2367 rust-apr_0.1.16-1.dsc 512197dbe69965909173bdeba6fc77c4ccbadfec3eea32952b0861668ab046c0 15373 rust-apr_0.1.16.orig.tar.gz 85546e1a9dc3c1177c6a93d9fa21b25f55fcc63ed6234a57453bfe767dcbb137 2792 rust-apr_0.1.16-1.debian.tar.xz"
+    "4585a8d4efd21643647d5c75455efc957ee747912aa93a2ff12d9e9ea0671472 1989 rust-apr_0.3.4-1.dsc 064b8fd32de572fda53e9d8e20aa287951d98c000569a5e876df1996dacaa546 67104 rust-apr_0.3.4.orig.tar.gz 12ca1dbe4192bd6f0a6f04867f27cb3d5f62f1c37f1f1cb3d4d6f543f58512d1 2604 rust-apr_0.3.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-apr"
   ],
   "Files": [
-    "74fe1ac9b8850ab8232b3df7aeea2602 2367 rust-apr_0.1.16-1.dsc fff033c5f1fca294e7da5be38fade7c7 15373 rust-apr_0.1.16.orig.tar.gz b1ae09b39d7b92c995dc7425b2d9aa23 2792 rust-apr_0.1.16-1.debian.tar.xz"
+    "38a36d876d2b95e5768a25367100cd44 1989 rust-apr_0.3.4-1.dsc fcbf7533d9997e676098422ebcd5bd4e 67104 rust-apr_0.3.4.orig.tar.gz 684fc869244979b914da3f163f923998 2604 rust-apr_0.3.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/apr]"
   ],
   "Version": [
-    "0.1.16-1"
+    "0.3.4-1"
   ]
 }
