@@ -3,22 +3,22 @@
     "amd64"
   ],
   "Binary": [
-    "linux-image-6.18.3+deb14-amd64, linux-image-6.18.3+deb14-cloud-amd64, linux-image-6.18.3+deb14-rt-amd64, linux-image-6.18.3+deb14-test, kernel-image-6.18.3+deb14-amd64-di, kernel-image-6.18.3+deb14-test-di"
+    "linux-base-amd64, linux-base-cloud-amd64, linux-base-rt-amd64, linux-base-test, linux-headers-amd64, linux-headers-cloud-amd64, linux-headers-rt-amd64, linux-headers-test, linux-image-6.18.5+deb14-amd64, linux-image-6.18.5+deb14-cloud-amd64, linux-image-6.18.5+deb14-rt-amd64, linux-image-6.18.5+deb14-test, linux-image-amd64, linux-image-amd64-dbg, linux-image-cloud-amd64, linux-image-cloud-amd64-dbg, linux-image-rt-amd64, linux-image-rt-amd64-dbg, linux-image-test, linux-image-test-dbg, kernel-image-6.18.5+deb14-amd64-di, kernel-image-6.18.5+deb14-test-di"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), python3:any, sbsigntool [amd64 arm64]"
   ],
   "Build-Depends-Arch": [
-    "kernel-wedge (\u003e= 2.105~) [amd64] \u003c!pkg.linux.nokernel\u003e \u003cpkg.linux.quick !noudeb !pkg.linux.nokernel\u003e, kmod [amd64] \u003c!pkg.linux.nokernel\u003e \u003cpkg.linux.quick !noudeb !pkg.linux.nokernel\u003e, linux-image-6.18.3+deb14-amd64-unsigned (= 6.18.3-1) [amd64] \u003c!pkg.linux.nokernel !pkg.linux.quick\u003e, linux-image-6.18.3+deb14-cloud-amd64-unsigned (= 6.18.3-1) [amd64] \u003c!pkg.linux.nokernel !pkg.linux.quick\u003e, linux-image-6.18.3+deb14-rt-amd64-unsigned (= 6.18.3-1) [amd64] \u003c!pkg.linux.nokernel !pkg.linux.quick\u003e, linux-image-6.18.3+deb14-test-unsigned (= 6.18.3-1) [amd64] \u003cpkg.linux.quick !pkg.linux.nokernel\u003e, rsync [amd64] \u003c!pkg.linux.nokernel\u003e"
+    "kernel-wedge (\u003e= 2.105~) [amd64] \u003c!pkg.linux.nokernel\u003e \u003cpkg.linux.quick !noudeb !pkg.linux.nokernel\u003e, kmod [amd64] \u003c!pkg.linux.nokernel\u003e \u003cpkg.linux.quick !noudeb !pkg.linux.nokernel\u003e, linux-image-6.18.5+deb14-amd64-unsigned (= 6.18.5-1) [amd64] \u003c!pkg.linux.nokernel !pkg.linux.quick\u003e, linux-image-6.18.5+deb14-cloud-amd64-unsigned (= 6.18.5-1) [amd64] \u003c!pkg.linux.nokernel !pkg.linux.quick\u003e, linux-image-6.18.5+deb14-rt-amd64-unsigned (= 6.18.5-1) [amd64] \u003c!pkg.linux.nokernel !pkg.linux.quick\u003e, linux-image-6.18.5+deb14-test-unsigned (= 6.18.5-1) [amd64] \u003cpkg.linux.quick !pkg.linux.nokernel\u003e, rsync [amd64] \u003c!pkg.linux.nokernel\u003e"
   ],
   "Checksums-Sha256": [
-    "c87326a671d4a29cff6013cc22052060970b5235239687418d05686e7b68ba00 2720 linux-signed-amd64_6.18.3+1.dsc b77c5843202239a7cec111f5c6f3a285846b0a445ace4d091d513fdf1add72dc 696668 linux-signed-amd64_6.18.3+1.tar.xz"
+    "7ae1e13003f938b3db1aeaa27cb41e44b3621e93c2f9e39465079c3b28f23e2d 5041 linux-signed-amd64_6.18.5+1.dsc dae8e222867e39573d1da7a3b18402f094c2f72538cf9d7ea1b192ef6a0bc4ae 702828 linux-signed-amd64_6.18.5+1.tar.xz"
   ],
   "Directory": [
     "pool/main/l/linux-signed-amd64"
   ],
   "Files": [
-    "f568a9d80452e1eb18db79d74c3e6bf2 2720 linux-signed-amd64_6.18.3+1.dsc 749f0ffff9cd023c02fa6c4fa8ad04de 696668 linux-signed-amd64_6.18.3+1.tar.xz"
+    "b6268113a0f76dc40e497bbbbab8a873 5041 linux-signed-amd64_6.18.5+1.dsc b16bb6f3fc7521e8ca9915828c53bdf3 702828 linux-signed-amd64_6.18.5+1.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -33,7 +33,7 @@
     "linux-signed-amd64"
   ],
   "Package-List": [
-    "kernel-image-6.18.3+deb14-amd64-di udeb debian-installer standard arch=amd64 profile=!noudeb,!pkg.linux.nokernel,!pkg.linux.quick kernel-image-6.18.3+deb14-test-di udeb debian-installer standard arch=amd64 profile=pkg.linux.quick,!noudeb,!pkg.linux.nokernel linux-image-6.18.3+deb14-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.quick linux-image-6.18.3+deb14-cloud-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.quick linux-image-6.18.3+deb14-rt-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.quick linux-image-6.18.3+deb14-test deb kernel optional arch=amd64 profile=pkg.linux.quick,!pkg.linux.nokernel"
+    "kernel-image-6.18.5+deb14-amd64-di udeb debian-installer standard arch=amd64 profile=!noudeb,!pkg.linux.nokernel,!pkg.linux.quick kernel-image-6.18.5+deb14-test-di udeb debian-installer standard arch=amd64 profile=pkg.linux.quick,!noudeb,!pkg.linux.nokernel linux-base-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-base-cloud-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-base-rt-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-base-test deb kernel optional arch=amd64 profile=pkg.linux.quick,!pkg.linux.nokernel,!pkg.linux.nometa linux-headers-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-headers-cloud-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-headers-rt-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-headers-test deb kernel optional arch=amd64 profile=pkg.linux.quick,!pkg.linux.nokernel,!pkg.linux.nometa linux-image-6.18.5+deb14-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.quick linux-image-6.18.5+deb14-cloud-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.quick linux-image-6.18.5+deb14-rt-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.quick linux-image-6.18.5+deb14-test deb kernel optional arch=amd64 profile=pkg.linux.quick,!pkg.linux.nokernel linux-image-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-image-amd64-dbg deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nokerneldbg,!pkg.linux.nometa,!pkg.linux.quick linux-image-cloud-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-image-cloud-amd64-dbg deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nokerneldbg,!pkg.linux.nometa,!pkg.linux.quick linux-image-rt-amd64 deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nometa,!pkg.linux.quick linux-image-rt-amd64-dbg deb kernel optional arch=amd64 profile=!pkg.linux.nokernel,!pkg.linux.nokerneldbg,!pkg.linux.nometa,!pkg.linux.quick linux-image-test deb kernel optional arch=amd64 profile=pkg.linux.quick,!pkg.linux.nokernel,!pkg.linux.nometa linux-image-test-dbg deb kernel optional arch=amd64 profile=pkg.linux.quick,!pkg.linux.nokernel,!pkg.linux.nokerneldbg,!pkg.linux.nometa,!pkg.linux.quick"
   ],
   "Priority": [
     "extra"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/kernel-team/linux.git"
   ],
   "Version": [
-    "6.18.3+1"
+    "6.18.5+1"
   ]
 }

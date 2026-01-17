@@ -1,27 +1,27 @@
 {
   "Architecture": [
-    "i386"
+    "amd64 arm64"
   ],
   "Binary": [
     "pcsx2"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 2.8.5~), debhelper-compat (= 13), dpkg-dev (\u003e= 1.16.2~), libaio-dev [linux-any], libasound2-dev, libgl-dev, libgtk-3-dev, liblzma-dev, libpng++-dev, libpng-dev, libsdl2-dev, libsoundtouch-dev, libwxgtk3.2-dev, libx11-dev, portaudio19-dev, zlib1g-dev"
+    "debhelper-compat (= 13), cmake, extra-cmake-modules, googletest, libavcodec-dev, libavformat-dev, libavutil-dev, libbacktrace-dev, libchdr-dev (\u003e= 0.0~git20250608~), libcpuinfo-dev, libcubeb-dev, libcurl4-openssl-dev, libdiscord-rpc-dev, libfast-float-dev, libfreetype-dev, libfmt-dev, libicu-dev, libjpeg-dev, libkddockwidgets-qt6-dev, liblz4-dev, libpcap-dev, libplutovg-dev, libpng-dev, librcheevos-dev, libsdl3-dev, libshaderc-dev, libsimpleini-dev, libsoundtouch-dev, libspeex-dev, libswresample-dev, libswscale-dev, libvixl-dev [arm64], libvulkan-dev, libvulkan-memory-allocator-dev, libwebp-dev, libxbyak-dev, libzip-dev, libzstd-dev, libzydis-dev [amd64], qt6-base-private-dev, qt6-tools-dev, rapidjson-dev, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "1e6e3a99e1b479ed9481f3cbbef95313f175c3cb964ccb9ca752f9bd861fd301 2155 pcsx2_1.6.0+dfsg-3.1.dsc ab04af92b8a33a30b3c678068bf30b3966b3a67826da104f4772ea908e96bd93 4967436 pcsx2_1.6.0+dfsg.orig.tar.xz 751310f9dd55dfeea4a582cf2a1896350c6f9985263c906f5ac3170bbd4b08f1 12340 pcsx2_1.6.0+dfsg-3.1.debian.tar.xz"
+    "924dc4b86680cc028e729acca0e311f7b275a659744f07bddab7c36e69af46e9 2946 pcsx2_2.4.0+dfsg-1.dsc 627e2ceefec3a4fbab6ddfa250fc0ae713ad1261a3c9d65fc6899d7763364c1a 100864 pcsx2_2.4.0+dfsg.orig-plutosvg.tar.xz 2276b460f794683753945808fa8826512bd8e8054fa9fa3372eaa92d418f0a4e 7410204 pcsx2_2.4.0+dfsg.orig.tar.xz a2c686b1d4c73720f1671e23c802d698d0c3735cf56cafee856808a730f4d599 22836 pcsx2_2.4.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pcsx2"
   ],
   "Files": [
-    "3f536855556f5ee253879a94b4266ac5 2155 pcsx2_1.6.0+dfsg-3.1.dsc eab52d62d16ad9f328095ebfc39ee5ab 4967436 pcsx2_1.6.0+dfsg.orig.tar.xz 248ee8b7cea58c33efc05701c09eca80 12340 pcsx2_1.6.0+dfsg-3.1.debian.tar.xz"
+    "935d8b1a6884a645a234b993106e245b 2946 pcsx2_2.4.0+dfsg-1.dsc a67846584bdafb2ae035db2db46f29e9 100864 pcsx2_2.4.0+dfsg.orig-plutosvg.tar.xz e808837170a8b512bc975059153cc9e7 7410204 pcsx2_2.4.0+dfsg.orig.tar.xz 3083c0e39a859f85a045d57ef23e1b59 22836 pcsx2_2.4.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://pcsx2.net/"
+    "https://pcsx2.net/"
   ],
   "Maintainer": [
     "Debian Games Team \u003cpkg-games-devel@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "pcsx2"
   ],
   "Package-List": [
-    "pcsx2 deb games optional arch=i386"
+    "pcsx2 deb games optional arch=amd64,arm64"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Uploaders": [
-    "Miguel A. Colón Vélez \u003cdebian.micove@gmail.com\u003e"
+    "Sébastien Noel \u003csebastien@twolife.be\u003e, Miguel A. Colón Vélez \u003cdebian.micove@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/games-team/pcsx2"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/games-team/pcsx2.git"
   ],
   "Version": [
-    "1.6.0+dfsg-3.1"
+    "2.4.0+dfsg-1"
   ]
 }

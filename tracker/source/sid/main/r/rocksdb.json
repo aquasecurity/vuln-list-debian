@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armel armhf i386 loong64 mips mips64el mipsel ppc64el riscv64 s390x"
+    "any"
   ],
   "Binary": [
-    "librocksdb-dev, librocksdb9.10, rocksdb-tools"
+    "librocksdb-dev, librocksdb9.11, rocksdb-tools"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libbz2-dev, libgflags-dev, liblz4-dev, libsnappy-dev, libzstd-dev, zlib1g-dev"
+    "debhelper-compat (= 13), cmake, libbz2-dev, libgflags-dev, liblz4-dev, libsnappy-dev, libzstd-dev, zlib1g-dev, do-not-build-on-these-archs [sparc64 ppc64]"
   ],
   "Checksums-Sha256": [
-    "88eb2ce45e4f3f2067c0161a67be352cbc9d060cc4bcf8b8ed0af1269c155127 2440 rocksdb_9.10.0-2.dsc fdccab16133c9d927a183c2648bcea8d956fb41eb1df2aacaa73eb0b95e43724 13693440 rocksdb_9.10.0.orig.tar.gz 1874b9fee41454ef87a81e1591e347b0be31cad47b20d73af38cd756837c4d35 16620 rocksdb_9.10.0-2.debian.tar.xz"
+    "57a26ad3afd5c0bcc6ced813bfb8846e04cb7f67044e1b1d3941b54fc84053b0 2181 rocksdb_9.11.2-1.dsc 4005068f5099c54c39968f3466da216e0a7b97fc78e1c51c722e643763058a5c 13714738 rocksdb_9.11.2.orig.tar.gz a7a2cd2dc702fd7ee39b87d90950bbae78f137cc917b033016fc69645089da81 17140 rocksdb_9.11.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocksdb"
   ],
   "Files": [
-    "9575815a0bf06288f8ce007698fd1880 2440 rocksdb_9.10.0-2.dsc 66483ba712f807e6c674c97c4dc3dcc3 13693440 rocksdb_9.10.0.orig.tar.gz e45d1e03b2f7a3da7b8b2b488d3c5675 16620 rocksdb_9.10.0-2.debian.tar.xz"
+    "5853c1f43fc720dfd8a9811eee526368 2181 rocksdb_9.11.2-1.dsc 3226500f6410ccf06655031db1379af0 13714738 rocksdb_9.11.2.orig.tar.gz 16601a2d354cb79501d05879ce049f3c 17140 rocksdb_9.11.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rocksdb"
   ],
   "Package-List": [
-    "librocksdb-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,loong64,mips,mips64el,mipsel,ppc64el,riscv64,s390x librocksdb9.10 deb libs optional arch=amd64,arm64,armel,armhf,i386,loong64,mips,mips64el,mipsel,ppc64el,riscv64,s390x rocksdb-tools deb database optional arch=amd64,arm64,armel,armhf,i386,loong64,mips,mips64el,mipsel,ppc64el,riscv64,s390x"
+    "librocksdb-dev deb libdevel optional arch=any librocksdb9.11 deb libs optional arch=any rocksdb-tools deb database optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Uploaders": [
     "Laszlo Boszormenyi (GCS) \u003cgcs@debian.org\u003e, Otto Kekäläinen \u003cotto@debian.org\u003e,"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/rocksdb.git"
   ],
   "Version": [
-    "9.10.0-2"
+    "9.11.2-1"
   ]
 }
