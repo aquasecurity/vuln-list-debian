@@ -6,16 +6,16 @@
     "php-async-aws-ses"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-phpcomposer, php-async-aws-core, phpab, phpunit"
+    "debhelper-compat (= 13), dh-sequence-phpcomposer, php-async-aws-core \u003c!nocheck\u003e, php-symfony-error-handler \u003c!nocheck\u003e, php-symfony-phpunit-bridge \u003c!nocheck\u003e, phpab, phpunit \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2a937b027049418993e8e43c2a2bca15dd98c1754693d178485e2e17c75e371b 1832 php-async-aws-ses_1.13.0-1.dsc 69dcccb72c8ae4736232a622542fd266697201b7742715f3facfba556c472144 16628 php-async-aws-ses_1.13.0.orig.tar.xz 927a878e0852a81155b5ef7667e93cc9211baccc4bc73ec46135da2d89fa31f3 3552 php-async-aws-ses_1.13.0-1.debian.tar.xz"
+    "e074de215047c36f79cca01bb7c5289d15e448ed5bed6af2d4f5a000914edc60 1986 php-async-aws-ses_1.14.0-1.dsc 817001060f2933d68d8825065312a5d33a8c2ed74e31baf549e0ab96311e707c 16940 php-async-aws-ses_1.14.0.orig.tar.xz 0a055286466f63438e59349c783ab7f07043eae7c5f660d58a6cf5dcdc366a09 3724 php-async-aws-ses_1.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/php-async-aws-ses"
   ],
   "Files": [
-    "fefce2a1a53e9ccabeeac263fbe4409c 1832 php-async-aws-ses_1.13.0-1.dsc da9937329b6c6174b545fded0424ddc1 16628 php-async-aws-ses_1.13.0.orig.tar.xz 3c18aecb22dc68cdb959860975a1e82f 3552 php-async-aws-ses_1.13.0-1.debian.tar.xz"
+    "62eaa432dcbe753a0e51bdfdf5a97804 1986 php-async-aws-ses_1.14.0-1.dsc a44f4c8743f289549999a570e78f20b9 16940 php-async-aws-ses_1.14.0.orig.tar.xz 440c403bb6313668e08f905eca0e0785 3724 php-async-aws-ses_1.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "phpab, phpunit, pkg-php-tools"
+    "php-symfony-error-handler, php-symfony-phpunit-bridge, phpab, phpunit, pkg-php-tools"
   ],
   "Uploaders": [
     "David Prévot \u003ctaffit@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/php-team/pear/php-async-aws-ses.git"
   ],
   "Version": [
-    "1.13.0-1"
+    "1.14.0-1"
   ]
 }
