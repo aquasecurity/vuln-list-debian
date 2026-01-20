@@ -6,19 +6,25 @@
     "librust-enumflags2-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e, librust-syn-2+printing-dev \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e, librust-syn-2+printing-dev \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "961e69e7f77081d0a12d94a3b9b28e36c47789c281f3dc8d6284afaeb5bb337c 1865 rust-enumflags2-derive_0.7.10-1.dsc de0d48a183585823424a4ce1aa132d174a6a81bd540895822eb4c8373a8e49e8 8104 rust-enumflags2-derive_0.7.10.orig.tar.gz 020061b298de3e4cc0f4f87454c20caa08153cebb06dbfb815c5e3042c6297c9 3004 rust-enumflags2-derive_0.7.10-1.debian.tar.xz"
+    "9f611dd694d6a0deae99150e745e1d0f602d28856e8d470b90e97c7bd162ab54 1949 rust-enumflags2-derive_0.7.12-1.dsc 67c78a4d8fdf9953a5c9d458f9efe940fd97a0cab0941c075a813ac594733827 8573 rust-enumflags2-derive_0.7.12.orig.tar.gz 8a29a8d49455ed15b4a1e3ebd0dcc57224eef9ec75864e11d07b98c4af1b3828 3044 rust-enumflags2-derive_0.7.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-enumflags2-derive"
   ],
   "Files": [
-    "b86091fd3bddfe2d067589abcde167b1 1865 rust-enumflags2-derive_0.7.10-1.dsc 3265884988d3a02a326aedd8fbfee895 8104 rust-enumflags2-derive_0.7.10.orig.tar.gz 4504eb2a54bc5735b13b25ffba37cd1c 3004 rust-enumflags2-derive_0.7.10-1.debian.tar.xz"
+    "9e92eba1014820bbb594932eba3923fd 1949 rust-enumflags2-derive_0.7.12-1.dsc ff217450f24eee9b0f99514884e6eaf7 8573 rust-enumflags2-derive_0.7.12.orig.tar.gz d93ab09394199618c28cbf2db2ed8ac0 3044 rust-enumflags2-derive_0.7.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/meithecatte/enumflags2"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/enumflags2-derive]"
   ],
   "Version": [
-    "0.7.10-1"
+    "0.7.12-1"
   ]
 }
