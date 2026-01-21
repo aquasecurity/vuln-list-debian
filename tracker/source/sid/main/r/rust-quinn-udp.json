@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-aliases-0.2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.158-~~) \u003c!nocheck\u003e, librust-socket2-0.5+default-dev \u003c!nocheck\u003e, librust-tracing-0.1+log-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-aliases-0.2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.158-~~) \u003c!nocheck\u003e, librust-socket2+default-dev (\u003c\u003c 0.7-~~) \u003c!nocheck\u003e, librust-socket2+default-dev (\u003e= 0.5-~~) \u003c!nocheck\u003e, librust-tracing-0.1+log-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-tracing-0.1+std-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "df3fdf6d1e1da47672a358c43eb116775277b2292d40ecacae5d8c07807d9305 2695 rust-quinn-udp_0.5.9-1.dsc 1c40286217b4ba3a71d644d752e6a0b71f13f1b6a2c5311acfcbe0c2418ed904 25342 rust-quinn-udp_0.5.9.orig.tar.gz cdef5b18a0f443af8c2a1ecc62d020085c00a35bde37fc7d240a3a8bbd98e7bb 3432 rust-quinn-udp_0.5.9-1.debian.tar.xz"
+    "93eac344e794c88a894701170bb6e51f9e629dfb6ff8f695e6d4788835966f96 2079 rust-quinn-udp_0.5.14-1.dsc addec6a0dcad8a8d96a771f815f0eaf55f9d1805756410b39f5fa81332574cbd 33436 rust-quinn-udp_0.5.14.orig.tar.gz fc820cd28a99779d2c4df3a854d4e2a6aa6d873657e22fe1e0bb2b88f69d628d 3636 rust-quinn-udp_0.5.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-quinn-udp"
   ],
   "Files": [
-    "92b84f9c05a2b775f8bf65ce0f1648b2 2695 rust-quinn-udp_0.5.9-1.dsc 6574386c30a204536e0f06bbf54d366c 25342 rust-quinn-udp_0.5.9.orig.tar.gz 0ea8046a217f98c7fa590294020bc137 3432 rust-quinn-udp_0.5.9-1.debian.tar.xz"
+    "05b07c6965b5dc13c7679f9a67f1578c 2079 rust-quinn-udp_0.5.14-1.dsc 7ab76de34829eee75ebc205fceb9e3ba 33436 rust-quinn-udp_0.5.14.orig.tar.gz f6d2ee19b67373c57487aee2870e6cb9 3636 rust-quinn-udp_0.5.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+async-tokio-dev, librust-tokio-1+default-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, rustc"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/quinn-udp"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/quinn-udp]"
   ],
   "Version": [
-    "0.5.9-1"
+    "0.5.14-1"
   ]
 }
