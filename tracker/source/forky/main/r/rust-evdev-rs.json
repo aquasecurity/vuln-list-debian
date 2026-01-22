@@ -6,16 +6,19 @@
     "librust-evdev-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.2.1-~~) \u003c!nocheck\u003e, librust-evdev-sys-0.2+default-dev (\u003e= 0.2.5-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.67-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.9.1-~~) \u003c!nocheck\u003e, librust-evdev-sys-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.174-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.27-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1ca07d35acefba6e12826260da16764664f6694c7d4051150e9eb87531db7b29 2424 rust-evdev-rs_0.6.1-2.dsc 9812d5790fb6fcce449333eb6713dad335e8c979225ed98755c84a3987e06dba 40522 rust-evdev-rs_0.6.1.orig.tar.gz 8609781882b7cc659b8e14304c9991af85dca660ea98bb921f129acb05e61614 4504 rust-evdev-rs_0.6.1-2.debian.tar.xz"
+    "aab12fe8b8e8d6654e80a7442b1372d947bfc819f27b238aa840cac82905509d 1824 rust-evdev-rs_0.6.3-1.dsc d28ab5638ed883532ae91b8f0e8b5ffa6e7296c0127855d6f8f9c0a1f468889a 41430 rust-evdev-rs_0.6.3.orig.tar.gz b79dff9d5175ec8a36a8b480138888cd1690472d9f48aabb01abbf2c62edfc09 4532 rust-evdev-rs_0.6.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-evdev-rs"
   ],
   "Files": [
-    "d62b7fbc56ae66644a54425914fc6714 2424 rust-evdev-rs_0.6.1-2.dsc cdae288f9fe430cfab833bb02c2ef09b 40522 rust-evdev-rs_0.6.1.orig.tar.gz fdee1984ff661019e942bfa95cc19902 4504 rust-evdev-rs_0.6.1-2.debian.tar.xz"
+    "55b1c4205f22a471537db70b8b90960b 1824 rust-evdev-rs_0.6.3-1.dsc 19e3d9a37d907b95cae43f823cab97e2 41430 rust-evdev-rs_0.6.3.orig.tar.gz 341fdbed916576cc4e94b8f2a118ab36 4532 rust-evdev-rs_0.6.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Maytham Alsudany \u003cmaytha8thedev@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/evdev-rs]"
   ],
   "Version": [
-    "0.6.1-2"
+    "0.6.3-1"
   ]
 }

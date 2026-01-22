@@ -6,19 +6,25 @@
     "librust-enumflags2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumflags2-derive-0.7.10+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumflags2-derive-0.7+default-dev (\u003c\u003c 0.7.13-~~) \u003c!nocheck\u003e, librust-enumflags2-derive-0.7+default-dev (\u003e= 0.7.12-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2393ada18d1dfbcbf1b98fce4385f757135cccbc7fd6fad2a837acb33e13c340 1607 rust-enumflags2_0.7.10-1.dsc d232db7f5956f3f14313dc2f87985c58bd2c695ce124c8cdd984e08e15ac133d 16622 rust-enumflags2_0.7.10.orig.tar.gz 0607fdcc5e26f0e27a5e887c9d7c15764efe1b1ee8e0c410789142d103121694 3100 rust-enumflags2_0.7.10-1.debian.tar.xz"
+    "dc0b4792f718d625faf1443bb5362f3c86017b6a09aa7923a318a1885716a9ee 1772 rust-enumflags2_0.7.12-1.dsc 1027f7680c853e056ebcec683615fb6fbbc07dbaa13b4d5d9442b146ded4ecef 17544 rust-enumflags2_0.7.12.orig.tar.gz 6722acfaa9f1c3c38282dbf5adb57ee2f3e6b0267b65d46077465b4bc9880772 3144 rust-enumflags2_0.7.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-enumflags2"
   ],
   "Files": [
-    "78c56d3b81e6969f5865b0cbae27ef43 1607 rust-enumflags2_0.7.10-1.dsc 45919696c839b711cd17483911c4d9da 16622 rust-enumflags2_0.7.10.orig.tar.gz 467ccbf81142438b29531b52c7ad1dce 3100 rust-enumflags2_0.7.10-1.debian.tar.xz"
+    "3d653c0c480a477c876f4e7978cfd8fc 1772 rust-enumflags2_0.7.12-1.dsc 580acffb91fe8d66f7fb685bea66679b 17544 rust-enumflags2_0.7.12.orig.tar.gz 8e17712f3570507c77f6d1cdb03bbacc 3144 rust-enumflags2_0.7.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/meithecatte/enumflags2"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/enumflags2]"
   ],
   "Version": [
-    "0.7.10-1"
+    "0.7.12-1"
   ]
 }
