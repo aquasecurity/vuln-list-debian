@@ -3,19 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "libgit2-dev, libgit2-1.9, libgit2-fixtures"
+    "libgit2-dev, libgit2-1.9, libgit2-experimental-dev, libgit2-experimental1.9, libgit2-fixtures"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ca-certificates, cmake, libhttp-parser-dev, libkrb5-dev, libmbedtls-dev, libpcre2-dev, libssh2-1-dev, pkgconf, python3-minimal:any, zlib1g-dev"
+    "debhelper-compat (= 13), ca-certificates, cmake, libllhttp-dev, libkrb5-dev, libmbedtls-dev, libpcre2-dev, libssh2-1-dev, pkgconf, python3-minimal:any, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "00c7c4c0c04d5390eebdded6c179669256131fba3eb64bdaea600e0895dd16da 2319 libgit2_1.9.2+ds-2.dsc ff213b44ba086198b43b2da0d7a759c65721e70b8647f874e25c057e8823a676 4324408 libgit2_1.9.2+ds.orig.tar.xz 3e2efe6548aa2b3224e372688e5c0df6dd3cf93933c3a3d885b6e2b87e5615bc 18516 libgit2_1.9.2+ds-2.debian.tar.xz"
+    "e40579f3932b9eb2263127a5739dafcd3ff46c0b9792ee75a7b080a84472c4f7 2772 libgit2_1.9.2+ds-4.dsc ff213b44ba086198b43b2da0d7a759c65721e70b8647f874e25c057e8823a676 4324408 libgit2_1.9.2+ds.orig.tar.xz dda28bd5534479763f47973387724d8827aad05420c74e3ecd6da7cd2a536fc4 18952 libgit2_1.9.2+ds-4.debian.tar.xz"
+  ],
+  "Description": [
+    "low-level Git library libgit2 is a portable, pure C implementation of the Git distributed version control system core methods provided as a re-entrant link-able library with a solid API."
+  ],
+  "Dgit": [
+    "3e89e00f25e11f8c57d3b99766bf6d5b3921e1e2 debian archive/debian/1.9.2+ds-4 https://git.dgit.debian.org/libgit2"
   ],
   "Directory": [
     "pool/main/libg/libgit2"
   ],
   "Files": [
-    "2468fa82027d9747e9aaa491806784e3 2319 libgit2_1.9.2+ds-2.dsc 5d7288b9bbddd64401851685ec853785 4324408 libgit2_1.9.2+ds.orig.tar.xz 94b77031cd1d4ded15d0a50cd6f154e8 18516 libgit2_1.9.2+ds-2.debian.tar.xz"
+    "e7ac7b14475da1f1ff7cc00ab9a6d010 2772 libgit2_1.9.2+ds-4.dsc 5d7288b9bbddd64401851685ec853785 4324408 libgit2_1.9.2+ds.orig.tar.xz bd0d245956dd5f576f78c333b84f8f75 18952 libgit2_1.9.2+ds-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +36,7 @@
     "libgit2"
   ],
   "Package-List": [
-    "libgit2-1.9 deb libs optional arch=any libgit2-dev deb libdevel optional arch=any libgit2-fixtures deb libs optional arch=all"
+    "libgit2-1.9 deb libs optional arch=any libgit2-dev deb libdevel optional arch=any libgit2-experimental-dev deb libdevel optional arch=any libgit2-experimental1.9 deb libs optional arch=any libgit2-fixtures deb libs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, g++, gcc"
+    "cmake, g++, gcc, pkgconf"
   ],
   "Uploaders": [
     "Pirate Praveen \u003cpraveen@debian.org\u003e, Mohammed Bilal \u003cmdbilal@disroot.org\u003e, Timo Röhling \u003croehling@debian.org\u003e,"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/debian/libgit2.git"
   ],
   "Version": [
-    "1.9.2+ds-2"
+    "1.9.2+ds-4"
   ]
 }
