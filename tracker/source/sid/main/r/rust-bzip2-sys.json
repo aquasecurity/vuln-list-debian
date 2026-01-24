@@ -6,16 +6,19 @@
     "librust-bzip2-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, libbz2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.9-~~) \u003c!nocheck\u003e, libbz2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4b1328f2916f971d9395a4eca23449c8fffe63eea9b11e601dd2d543a2565a75 2375 rust-bzip2-sys_0.1.11-1.dsc c2691d7b017377d5a807ea9aec4adbaab96874f1ae0026ded4444c065870292e 6703 rust-bzip2-sys_0.1.11.orig.tar.gz 5a7a0b34501a197058ea4a80a3b680005d4528f2a6c84b68a00ad56db43680c7 3556 rust-bzip2-sys_0.1.11-1.debian.tar.xz"
+    "8919f8f6dffd06d2f4299e26950ce581620a6967187e6c464a791bab4ccde2b2 1831 rust-bzip2-sys_0.1.13-1.dsc f7ff5eac7f4ede173bc435e4ca0c4c7858ff569086c70269bdf093067f42f31a 7123 rust-bzip2-sys_0.1.13.orig.tar.gz 61fb4af7c718c1002614b7444e30247783b786d62d51bbdfa87a5b92a44c9f0b 3616 rust-bzip2-sys_0.1.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bzip2-sys"
   ],
   "Files": [
-    "d389bd582e26511eed08e3f913881e2a 2375 rust-bzip2-sys_0.1.11-1.dsc f24480bfaaa8f5e25f7bab76b3551b31 6703 rust-bzip2-sys_0.1.11.orig.tar.gz 516f7600fb7e88cd0dbb906366d00172 3556 rust-bzip2-sys_0.1.11-1.debian.tar.xz"
+    "e74d98306030f5f4de25e78d9b682ce8 1831 rust-bzip2-sys_0.1.13-1.dsc 5c8ca94c0663f83700eba43fec87b750 7123 rust-bzip2-sys_0.1.13.orig.tar.gz 4e0d34e0e0e964343ed4eceb8a8a65fd 3616 rust-bzip2-sys_0.1.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bzip2-sys]"
   ],
   "Version": [
-    "0.1.11-1"
+    "0.1.13-1"
   ]
 }

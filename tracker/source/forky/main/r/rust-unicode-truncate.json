@@ -6,16 +6,19 @@
     "librust-unicode-truncate-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itertools-0.13-dev \u003c!nocheck\u003e, librust-unicode-segmentation-1-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itertools-dev (\u003c\u003c 0.15-~~) \u003c!nocheck\u003e, librust-itertools-dev (\u003e= 0.13-~~) \u003c!nocheck\u003e, librust-unicode-segmentation-1-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e4219bba3a3e859a79ffc7761ade8bf097b6fe0d186b83c03b48fd52db03f415 2393 rust-unicode-truncate_2.0.0-1.dsc 8fbf03860ff438702f3910ca5f28f8dac63c1c11e7efb5012b8b175493606330 12904 rust-unicode-truncate_2.0.0.orig.tar.gz 1a37fe6bdbcadf294b1a4c84870b5dc94ac7dbe5e43cb828f4a3e9db6759d9bb 3196 rust-unicode-truncate_2.0.0-1.debian.tar.xz"
+    "732ce1dd74b00ee9e4cba137342c850259e9d518ad70c8c5bbe1fe71ab2749b7 2520 rust-unicode-truncate_2.0.1-1.dsc 16b380a1238663e5f8a691f9039c73e1cdae598a30e9855f541d29b08b53e9a5 18182 rust-unicode-truncate_2.0.1.orig.tar.gz 6e62f539b7086d943aa810e9fd4b6c732c02460c3721873061c6d0659672e94f 3228 rust-unicode-truncate_2.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-truncate"
   ],
   "Files": [
-    "e42986dc691a809b2f40d643ce0396a8 2393 rust-unicode-truncate_2.0.0-1.dsc a83e959f07cf0b7a317c52dfe9406d42 12904 rust-unicode-truncate_2.0.0.orig.tar.gz 82f91a2daeb6f985959a4141b1ed60cd 3196 rust-unicode-truncate_2.0.0-1.debian.tar.xz"
+    "1f54e60dfa0fd41c58af78bf174c230f 2520 rust-unicode-truncate_2.0.1-1.dsc 884b4e6ead60b1eef1c1f88b739b8092 18182 rust-unicode-truncate_2.0.1.orig.tar.gz 5ce4dd26fbe1aca3392a32bef4d24e97 3228 rust-unicode-truncate_2.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Johann Felix Soden \u003cjohfel@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-truncate]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.0.1-1"
   ]
 }
