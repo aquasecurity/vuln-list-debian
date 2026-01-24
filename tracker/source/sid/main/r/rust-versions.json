@@ -6,16 +6,19 @@
     "librust-versions-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itertools-0.13+default-dev \u003c!nocheck\u003e, librust-nom-7+default-dev (\u003e= 7.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itertools+default-dev (\u003c\u003c 0.15-~~) \u003c!nocheck\u003e, librust-itertools+default-dev (\u003e= 0.13-~~) \u003c!nocheck\u003e, librust-nom-7+default-dev (\u003e= 7.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "243e472885c2aa7570b310b71d8b6b780914bfb701b7fa0645e640642616b459 1770 rust-versions_6.3.2-1.dsc f25d498b63d1fdb376b4250f39ab3a5ee8d103957346abacd911e2d8b612c139 21553 rust-versions_6.3.2.orig.tar.gz aa1572b372ed7d8f0ba00d60ef77e05961f80c337bc5e923f429579a23403bec 2576 rust-versions_6.3.2-1.debian.tar.xz"
+    "3723938fc2abb71498bcc4f7954478f45bce08fb244caa93fc7748c29792917c 2486 rust-versions_6.3.2-2.dsc f25d498b63d1fdb376b4250f39ab3a5ee8d103957346abacd911e2d8b612c139 21553 rust-versions_6.3.2.orig.tar.gz 57c1c70dcd121510c16e0b26b5e264366be245c7e2e8c498a2ceeed599a5ed12 2800 rust-versions_6.3.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-versions"
   ],
   "Files": [
-    "5a2712e2d2d799bcfe02b6d77b437b62 1770 rust-versions_6.3.2-1.dsc 5bb85deb79f966c21ca77d4df4508add 21553 rust-versions_6.3.2.orig.tar.gz ed9dab5fc812d950085b2f8c8c646364 2576 rust-versions_6.3.2-1.debian.tar.xz"
+    "e8341511b2e05c67dde306856ba060cb 2486 rust-versions_6.3.2-2.dsc 5bb85deb79f966c21ca77d4df4508add 21553 rust-versions_6.3.2.orig.tar.gz aada5ba5f7ff742a6b8336dc6c69f08d 2800 rust-versions_6.3.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/versions]"
   ],
   "Version": [
-    "6.3.2-1"
+    "6.3.2-2"
   ]
 }
