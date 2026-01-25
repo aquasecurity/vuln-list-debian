@@ -6,25 +6,25 @@
     "shasta, python3-shasta, python3-shasta-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-exec, cmake, patchelf, chrpath, libboost-all-dev, libpng-dev, ncbi-blast+, python3-dev:native, python3-sphinx, libpython3-dev, libseqan2-dev, libspoa-dev, python3-pybind11, libcpu-features-dev [any-amd64], libcereal-dev, libblas-dev, liblapack-dev, gfortran"
+    "debhelper-compat (= 13), dh-exec, dh-sequence-python3, cmake, patchelf, chrpath, libboost-dev, libboost-system-dev, libboost-program-options-dev, libboost-chrono-dev, libboost-serialization-dev, libpng-dev, python3-dev:native, libpython3-dev, libseqan2-dev (\u003e= 2.5), libspoa-dev, python3-pybind11, libcpu-features-dev [any-amd64], libcereal-dev, libblas-dev, liblapack-dev"
+  ],
+  "Build-Depends-Indep": [
+    "python3-sphinx \u003c!nodoc\u003e, dh-sequence-sphinxdoc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "aeeb680d4b9092095028ab5e2f09bc20ebe037b454e91cdf7f5ba61143ff517c 2556 shasta_0.12.0-1.dsc 39a7fcc49df93d903d8a1ed21a57a7533fc44897cb58194bfd089356f36cfdc9 9602137 shasta_0.12.0.orig.tar.gz 2ed0b0cd1b6ac9960b92a3b26e7ab1be5e58c13fe65c4fdb20a75caeb2d07333 10120 shasta_0.12.0-1.debian.tar.xz"
-  ],
-  "Dgit": [
-    "77c67b611fa7811c48fd7ca1fafff3a53b31a816 debian archive/debian/0.12.0-1 https://git.dgit.debian.org/shasta"
+    "3853fd8377d59f5dcaa23ab5cae7fee8b5b552df6ddd33448bb0b12c875f057e 2582 shasta_0.14.0-1.dsc 0812aa2e9dffc03a0c4a9b9cce1d03cd6cb049cb20005aeeab1242b9a3f95977 17601516 shasta_0.14.0.orig.tar.gz 2f230b43f4cc89e2fd1d25824bfb3a95aaa3cb5e48589686f312dc0c72438f4d 11644 shasta_0.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/shasta"
   ],
   "Files": [
-    "76bc090d9edd419baf6c4c22516cd0c1 2556 shasta_0.12.0-1.dsc 6f61f2536ecadcb827b822af5d22f8a6 9602137 shasta_0.12.0.orig.tar.gz 52c1981c540bf79fc17ca6b60885c04c 10120 shasta_0.12.0-1.debian.tar.xz"
+    "74a50fb807cfe3dd94d26d418c28e083 2582 shasta_0.14.0-1.dsc 96d679a5bde418f345faa1c23679ebde 17601516 shasta_0.14.0.orig.tar.gz e2cacf502a41c6c4ff0b7fca854a607b 11644 shasta_0.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/chanzuckerberg/shasta"
+    "https://paoloshasta.github.io/shasta/"
   ],
   "Maintainer": [
     "Debian Med Packaging Team \u003cdebian-med-packaging@lists.alioth.debian.org\u003e"
@@ -33,7 +33,7 @@
     "shasta"
   ],
   "Package-List": [
-    "python3-shasta deb python optional arch=any-amd64,arm64 python3-shasta-doc deb doc optional arch=all shasta deb science optional arch=any-amd64,arm64"
+    "python3-shasta deb python optional arch=any-amd64,arm64 python3-shasta-doc deb doc optional arch=all profile=!nodoc shasta deb science optional arch=any-amd64,arm64"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/shasta.git"
   ],
   "Version": [
-    "0.12.0-1"
+    "0.14.0-1"
   ]
 }
