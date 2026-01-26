@@ -6,19 +6,25 @@
     "librust-snafu-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-doc-comment-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-snafu-derive-0.7+default-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e, librust-snafu-derive-0.7+rust-1-46-dev (\u003e= 0.7.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-doc-comment-0.3-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-snafu-derive-0.7+default-dev (\u003e= 0.7.5-~~) \u003c!nocheck\u003e, librust-snafu-derive-0.7+rust-1-39-dev (\u003e= 0.7.5-~~) \u003c!nocheck\u003e, librust-snafu-derive-0.7+rust-1-46-dev (\u003e= 0.7.5-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2d353cddaf13e48861d94ed0efaf5cab5f70bfeff66a878e82e3d88b946ff7bd 2302 rust-snafu_0.7.1-1.dsc 5177903bf45656592d9eb5c0e22f408fc023aae51dbe2088889b71633ba451f2 54759 rust-snafu_0.7.1.orig.tar.gz ec76b80f62e78717671d51e5fcebca3b591606f1e356914fff0fc3df852db8b3 5104 rust-snafu_0.7.1-1.debian.tar.xz"
+    "eabb9834d8a04e0d3989b0ed63f299a79f4a275f65b3e32a5c68d2f7b97e8f83 1910 rust-snafu_0.7.5-2.dsc e4de37ad025c587a29e8f3f5605c00f70b98715ef90b9061a815b9e59e9042d6 65229 rust-snafu_0.7.5.orig.tar.gz 7e56e3f1ab9cdcc8787e89802b5186ab55393f10c3c002582f603695c80d0c60 5372 rust-snafu_0.7.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-snafu"
   ],
   "Files": [
-    "3509cf99fdd567d37c50573098e5b05d 2302 rust-snafu_0.7.1-1.dsc 84c1ed42b0daa698d53042d6bd4d46e9 54759 rust-snafu_0.7.1.orig.tar.gz 3e5724c0faf9cd87fb7eccd770a6485b 5104 rust-snafu_0.7.1-1.debian.tar.xz"
+    "00696de04f595ac77f6b7823dff7bda2 1910 rust-snafu_0.7.5-2.dsc 4cab67779b03094272f3545474a632ad 65229 rust-snafu_0.7.5.orig.tar.gz c37a43fa5d0238d923ad71065d02c0b2 5372 rust-snafu_0.7.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/shepmaster/snafu"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/snafu]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.7.5-2"
   ]
 }
