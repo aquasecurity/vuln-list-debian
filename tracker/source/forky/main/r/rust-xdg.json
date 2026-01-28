@@ -6,16 +6,19 @@
     "librust-xdg-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3285f8aa2f159656ae28b120a2d052931d4dd190a007f6269610e6bd7f9af30a 2147 rust-xdg_2.5.2-3.dsc 213b7324336b53d2414b2db8537e56544d981803139155afa84f76eeebb7a546 14394 rust-xdg_2.5.2.orig.tar.gz 6af22e4164c4e826a5509f8fa6ecbc6a7cce167fdc5b1dcb219031353c41c23b 3304 rust-xdg_2.5.2-3.debian.tar.xz"
+    "a22ba9cca964315cd8c21ef975de4e71d28501529b9d9c131e12478420962dbd 1545 rust-xdg_2.5.2-5.dsc 213b7324336b53d2414b2db8537e56544d981803139155afa84f76eeebb7a546 14394 rust-xdg_2.5.2.orig.tar.gz 780f7374867344104ee08267a9d659a250111bb79d30ce17fa0ac25a5b12931e 3664 rust-xdg_2.5.2-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-xdg"
   ],
   "Files": [
-    "8435fc13aaf9a536a17a5f0b42865afd 2147 rust-xdg_2.5.2-3.dsc 1613d0f9e24d4b05e81748ea1f355f6c 14394 rust-xdg_2.5.2.orig.tar.gz 567b3285a40c55b53ced9ebbe2253655 3304 rust-xdg_2.5.2-3.debian.tar.xz"
+    "a241ade705ebe1c96799bed24569a009 1545 rust-xdg_2.5.2-5.dsc 1613d0f9e24d4b05e81748ea1f355f6c 14394 rust-xdg_2.5.2.orig.tar.gz 264d2ab9b3ba9cfef4a6839249d2f47f 3664 rust-xdg_2.5.2-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/xdg]"
   ],
   "Version": [
-    "2.5.2-3"
+    "2.5.2-5"
   ]
 }
