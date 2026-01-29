@@ -6,16 +6,16 @@
     "r-cran-profmem"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "6403173180d0b8fef7f009094c1cb7e23faa9c3bbcc1080e3378cb90a2b3003b 2078 r-cran-profmem_0.6.0+dfsg-1.dsc 879addaf09a78895556bfc4df974ba5bc0d63756b9a6cb8a366f24deabfaa43d 13968 r-cran-profmem_0.6.0+dfsg.orig.tar.xz 0269b92f4362d73291cf6a0abb9a4e1862020dc7f5db303e16ae5f29f76fed5e 2276 r-cran-profmem_0.6.0+dfsg-1.debian.tar.xz"
+    "9d89f6cb71486802c17e7f87afdd0038042c1cdd20e7b12de77305eed67ea69a 2231 r-cran-profmem_0.7.0+dfsg-1.dsc fdf5f4d0d5f9555d8a8a2447d5b7e8073101b4da6663a1b95ed976141c9ae8ae 14480 r-cran-profmem_0.7.0+dfsg.orig.tar.xz ff2e8a1c330b72d0c2d5fb11249256b4100a435b9e7e45c5763ead5e4a672eb9 2428 r-cran-profmem_0.7.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-profmem"
   ],
   "Files": [
-    "598ad7a9ac9f9a95e15a39b2f6b196b7 2078 r-cran-profmem_0.6.0+dfsg-1.dsc 2b39f5950e22d9d618c23f737e68dd88 13968 r-cran-profmem_0.6.0+dfsg.orig.tar.xz 62f3c2224a7df74751eef61c597a7ba1 2276 r-cran-profmem_0.6.0+dfsg-1.debian.tar.xz"
+    "4fe90aa06997ea294964aafc6250799d 2231 r-cran-profmem_0.7.0+dfsg-1.dsc dafcaad536fe9f17c23147ad1e06e0d6 14480 r-cran-profmem_0.7.0+dfsg.orig.tar.xz 10af5ed3cf13aaa0dc2472917d49ef3f 2428 r-cran-profmem_0.7.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-markdown, r-cran-microbenchmark, r-cran-r.rsp"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-profmem.git"
   ],
   "Version": [
-    "0.6.0+dfsg-1"
+    "0.7.0+dfsg-1"
   ]
 }

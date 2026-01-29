@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-installnss"
   ],
   "Build-Depends-Arch": [
-    "autoconf, bison, flex, libapparmor-dev [linux-any], libaudit-dev [linux-any], libldap2-dev, libpam0g-dev, libsasl2-dev, libselinux1-dev [linux-any], pkgconf, po-debconf, systemd-dev, tzdata, zlib1g-dev"
+    "autoconf, bison, flex, libapparmor-dev [linux-any], libaudit-dev [linux-any], libpam0g-dev, libsasl2-dev, libselinux1-dev [linux-any], pkgconf, po-debconf, systemd-dev, tzdata, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "e067cd940db1c394a5b3713e2bc72eca4dbce84509d7d770ae7e77511675081a 2670 sudo_1.9.17p2-1.dsc 4a38a1ab3adb1199257edc2a7c4a2bd714665eb605b04368843b06dada2cfcfb 5451682 sudo_1.9.17p2.orig.tar.gz 4605f51763a083ab1732da1ae8b28a28ddf8007f4d79d0de51b691a9fe4195ec 566 sudo_1.9.17p2.orig.tar.gz.asc e60b9a596a1e2225a6b91a04e9e19eed8bfcf11eec01ec835ebef5fb4f068a66 51944 sudo_1.9.17p2-1.debian.tar.xz"
+    "2cc9fb861317af19c4c10ae6bc48730b0a17266e2abaac817f4953068cd329f6 2716 sudo_1.9.17p2-2.dsc 4a38a1ab3adb1199257edc2a7c4a2bd714665eb605b04368843b06dada2cfcfb 5451682 sudo_1.9.17p2.orig.tar.gz 4605f51763a083ab1732da1ae8b28a28ddf8007f4d79d0de51b691a9fe4195ec 566 sudo_1.9.17p2.orig.tar.gz.asc b85f8b8fe098c51affc5168f909b7f4d32a8c79a43e5cac7ac8bb608aacc6b85 50284 sudo_1.9.17p2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sudo"
   ],
   "Files": [
-    "07424556802f085bd41cfb121cad73f4 2670 sudo_1.9.17p2-1.dsc dcbf46f739ae06b076e1a11cbb271a10 5451682 sudo_1.9.17p2.orig.tar.gz c3f05694e2a90a54c0a7000988df26ee 566 sudo_1.9.17p2.orig.tar.gz.asc f63758394b1857d81f62a286357878c8 51944 sudo_1.9.17p2-1.debian.tar.xz"
+    "45e371b1ac8b652e7e7b45868de0556a 2716 sudo_1.9.17p2-2.dsc dcbf46f739ae06b076e1a11cbb271a10 5451682 sudo_1.9.17p2.orig.tar.gz c3f05694e2a90a54c0a7000988df26ee 566 sudo_1.9.17p2.orig.tar.gz.asc 996339d20d7e8ac1d91cf707581f0dc8 50284 sudo_1.9.17p2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "sudo"
   ],
   "Package-List": [
-    "libnss-sudo deb admin optional arch=all sudo deb admin optional arch=any sudo-ldap deb admin optional arch=any"
+    "libnss-sudo deb oldlibs optional arch=all sudo deb admin optional arch=any sudo-ldap deb oldlibs optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,16 +42,16 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "adduser, cron, ldap-utils, slapd, sssd-common, sssd-ldap"
+    "adduser, cron, ldap-utils, procps, slapd, sssd-common, sssd-ldap"
   ],
   "Uploaders": [
-    "Marc Haber \u003cmh+debian-packages@zugschlus.de\u003e, Hanno Wagner \u003cwagner@debian.org\u003e, Hilko Bengen \u003cbengen@debian.org\u003e, Bastian Blank \u003cwaldi@debian.org\u003e"
+    "Marc Haber \u003cmh+debian-packages@zugschlus.de\u003e, Hanno Wagner \u003cwagner@debian.org\u003e, Hilko Bengen \u003cbengen@debian.org\u003e, Bastian Blank \u003cwaldi@debian.org\u003e, Alexander Reichle-Schmehl \u003ctolimar@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/sudo-team/sudo"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/sudo-team/sudo.git"
   ],
   "Version": [
-    "1.9.17p2-1"
+    "1.9.17p2-2"
   ]
 }
