@@ -6,22 +6,25 @@
     "librust-bzip2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bzip2-sys-0.1+default-dev (\u003e= 0.1.11-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libbz2-rs-sys-0.2+rust-allocator-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b1be4dc51b67b8e0931224b0924a0ce2d60d1b3a1f19ea12217e60466ed1e1df 2442 rust-bzip2_0.4.4-1.dsc bdb116a6ef3f6c3698828873ad02c3014b3c85cadb88496095628e3ef1e347f8 34197 rust-bzip2_0.4.4.orig.tar.gz 6c604bec6c24d5ce33f9bdcca464643bcc78b4d4a5eb021383f30296b8f1eb87 3184 rust-bzip2_0.4.4-1.debian.tar.xz"
+    "783d8c17bbaf27a2cef03053f6d1851c85bfa65e09e37836e07d1eacd0b2c601 1895 rust-bzip2_0.6.1-1.dsc f3a53fac24f34a81bc9954b5d6cfce0c21e18ec6959f44f56e8e90e4bb7c346c 38427 rust-bzip2_0.6.1.orig.tar.gz c415fee64965693079feb185991f0a3e516d7f98225db171e1c03821860d8db4 3216 rust-bzip2_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bzip2"
   ],
   "Files": [
-    "518f987141d0ef3da4db7e272aa0dfbb 2442 rust-bzip2_0.4.4-1.dsc b80c91663e5990a3770774abdce0f257 34197 rust-bzip2_0.4.4.orig.tar.gz e225f834c3633f89106a5ce1ca054e59 3184 rust-bzip2_0.4.4-1.debian.tar.xz"
+    "540806350d1d9b8d0eb7ddace630b0a4 1895 rust-bzip2_0.6.1-1.dsc b94ba0d6b221b4bac5bca01bce21181b 38427 rust-bzip2_0.6.1.orig.tar.gz 50e3e9e1aad931ac7991383c3fb2a511 3216 rust-bzip2_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/alexcrichton/bzip2-rs"
+    "https://github.com/trifectatechfoundation/bzip2-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-partial-io-0.3+default-dev, librust-partial-io-0.3+quickcheck-dev, librust-quickcheck-0.6+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-partial-io-0.5+default-dev, librust-partial-io-0.5+quickcheck1-dev, librust-quickcheck-1+default-dev, librust-rand-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bzip2]"
   ],
   "Version": [
-    "0.4.4-1"
+    "0.6.1-1"
   ]
 }

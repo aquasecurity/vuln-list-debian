@@ -6,19 +6,19 @@
     "imx-code-signing-tool"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libssl-dev, byacc, flex"
+    "bison, cmake, debhelper-compat (= 13), dh-exec, flex, libhidapi-dev, libjson-c-dev, libssl-dev, libudev-dev, libusb-1.0-0-dev, openssl, pkgconf"
   ],
   "Checksums-Sha256": [
-    "a4981b26c8edafc303adf24d9af291326f7d05613254ee5f0d388ea0ae85ef78 1663 imx-code-signing-tool_3.4.1+dfsg-6.dsc 342c0c028658a4a859fe70578b58c3b07e17bee0c7e3a13d063d4791e82c2dee 3065124 imx-code-signing-tool_3.4.1+dfsg.orig.tar.xz e52f36e4ba737f96f41639707eb42084fb038c37e40344122a670fa4d1edd0a2 9932 imx-code-signing-tool_3.4.1+dfsg-6.debian.tar.xz"
+    "dd12373e90ee1127a041860ebbed6272aa50bd8077c9e6ff38f4d85bf9ebc467 1861 imx-code-signing-tool_4.0.1+dfsg-1.dsc fd92a1a9faa10fb81bbf752c7ee1e257f17e1ec4c2964f8a47adf8a3eaa7df41 191500 imx-code-signing-tool_4.0.1+dfsg.orig.tar.xz 3f9b814df89f2af0266c30ee02c53b03f6997db51f2f1e92af1b6fd80a290346 18892 imx-code-signing-tool_4.0.1+dfsg-1.debian.tar.xz"
   ],
   "Dgit": [
-    "ad30dd1d9463870f8ec57fe52107d4270fce6d4d debian archive/debian/3.4.1+dfsg-6 https://git.dgit.debian.org/imx-code-signing-tool"
+    "21d69c17707ea267fef1b2c1746d032cf5ef2f37 debian archive/debian/4.0.1+dfsg-1 https://git.dgit.debian.org/imx-code-signing-tool"
   ],
   "Directory": [
     "pool/main/i/imx-code-signing-tool"
   ],
   "Files": [
-    "6dae627455a2352ebc93d08dcbcf0e2a 1663 imx-code-signing-tool_3.4.1+dfsg-6.dsc 72aeb8e0394c3117c5a19da0e7e4fa84 3065124 imx-code-signing-tool_3.4.1+dfsg.orig.tar.xz c78c5ec900440bc8c12fb23fdc7bdde2 9932 imx-code-signing-tool_3.4.1+dfsg-6.debian.tar.xz"
+    "b97fdc5d595236b809ba9eb656f4dd3e 1861 imx-code-signing-tool_4.0.1+dfsg-1.dsc 8662d7ca42312c1d4e47d6e95edfa9ea 191500 imx-code-signing-tool_4.0.1+dfsg.orig.tar.xz c8b06c82a01bc81efaaf485f2d2045fe 18892 imx-code-signing-tool_4.0.1+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "libengine-pkcs11-openssl, libsofthsm2, opensc, p11-kit, softhsm2, util-linux-extra"
+  ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e,"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/collabora-team/imx-code-signing-tool.git -b debian/unstable"
   ],
   "Version": [
-    "3.4.1+dfsg-6"
+    "4.0.1+dfsg-1"
   ]
 }
