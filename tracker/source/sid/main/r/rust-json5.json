@@ -6,19 +6,25 @@
     "librust-json5-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pest-2+default-dev \u003c!nocheck\u003e, librust-pest-derive-2+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-ucd-trie-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b12d0da27dde10871d2d92f98cf5e8f43ccc5dd0cadc0617e1d3a7d38d426448 2305 rust-json5_0.4.1-1.dsc 96b0db21af676c1ce64250b5f40f3ce2cf27e4e47cb91ed91eb6fe9350b430c1 15678 rust-json5_0.4.1.orig.tar.gz aae0e3cf945e5ad2527354a8f7ca870ca87738694999a34c053073f655ebb164 2896 rust-json5_0.4.1-1.debian.tar.xz"
+    "9ec74fecea07a19636ed67f0551a83ff90f6934a477f9b15785a414b77f05fbf 2430 rust-json5_1.3.0-1.dsc 56c86c72f9e1d3fe29baa32cab8896548eef9aae271fce4e796d16b583fdf6d5 68955 rust-json5_1.3.0.orig.tar.gz 57bf3ef0b466e948bfb83e7250578e8380a5e494364b9822fa3cfb187e3d6b32 2944 rust-json5_1.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-json5"
   ],
   "Files": [
-    "e381b0be3b67e56c8cceb8cb74d63820 2305 rust-json5_0.4.1-1.dsc acce388c35f19cef73cba1eb1d1d7fb2 15678 rust-json5_0.4.1.orig.tar.gz dd256b07489f4a10f72ff04914c64e7d 2896 rust-json5_0.4.1-1.debian.tar.xz"
+    "32626727681033dfe3959ecb3d23ab42 2430 rust-json5_1.3.0-1.dsc a32119f2d466e1ec4bec0bcbe44b7ac5 68955 rust-json5_1.3.0.orig.tar.gz 21d57c0c23f3d138cbab9d5030c4650b 2944 rust-json5_1.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/callum-oakley/json5-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-matches-0.1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-indexmap-2+default-dev, librust-indexmap-2+serde-dev, librust-serde-bytes-0.11+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Boyuan Yang \u003cbyang@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/json5]"
   ],
   "Version": [
-    "0.4.1-1"
+    "1.3.0-1"
   ]
 }
