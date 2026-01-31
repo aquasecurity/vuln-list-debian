@@ -6,19 +6,25 @@
     "librust-js-option-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.125-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-core-1+default-dev (\u003e= 1.0.221-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e04df1ff75ca062d21133810038990964eb13fd40239b89c9f5e826876f9de37 2284 rust-js-option_0.1.1-1.dsc 68421373957a1593a767013698dbf206e2b221eefe97a44d98d18672ff38423c 3624 rust-js-option_0.1.1.orig.tar.gz f92178dd863437f9dd2e1c596db6c1d9747528fc4d1ccc6fba9efa0a17754521 2612 rust-js-option_0.1.1-1.debian.tar.xz"
+    "5b0fa27b8669dc303cebe271529f6a2dfa0ddb3c3564ad92d8c55b9dd90583cf 1761 rust-js-option_0.2.0-1.dsc c7dd3e281add16813cf673bf74a32249b0aa0d1c8117519a17b3ada5e8552b3c 4527 rust-js-option_0.2.0.orig.tar.gz ed02afa6d481efcf9e8d4f87387143de5a0ef8134567baee242c8d5427f3c241 2692 rust-js-option_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-js-option"
   ],
   "Files": [
-    "2bff591d9c0a02c9fdc98af2b1d3bb0a 2284 rust-js-option_0.1.1-1.dsc 475494da92e085a995077aacacc57a68 3624 rust-js-option_0.1.1.orig.tar.gz 2e3e1a538f777a1ddd1035017b5bcc4d 2612 rust-js-option_0.1.1-1.debian.tar.xz"
+    "688105059caf6ef28d2daec26ee7fe39 1761 rust-js-option_0.2.0-1.dsc 8e21291e9208985a5826894b3f34c489 4527 rust-js-option_0.2.0.orig.tar.gz aee59ab1a599e18fbaf9a55ef427b71a 2692 rust-js-option_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ruma/js_option"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/js-option"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/js-option]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.2.0-1"
   ]
 }

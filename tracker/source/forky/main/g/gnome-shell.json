@@ -6,19 +6,28 @@
     "gnome-shell, gnome-shell-common, gnome-shell-extension-prefs"
   ],
   "Build-Depends": [
-    "appstream, bash-completion, debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, gjs (\u003e= 1.85.90), gir1.2-accountsservice-1.0 \u003c!nocheck\u003e, gir1.2-gcr-4-dev, gir1.2-gdkpixbuf-2.0-dev, gir1.2-gdm-1.0 \u003c!nocheck\u003e, gir1.2-geoclue-2.0 \u003c!nocheck\u003e, gir1.2-gnomebg-4.0 \u003c!nocheck\u003e, gir1.2-gnomedesktop-4.0 \u003c!nocheck\u003e, gir1.2-gweather-4.0 (\u003e= 4.1) \u003c!nocheck\u003e, gir1.2-nma4-1.0 (\u003e= 1.10.4) [linux-any] \u003c!nocheck\u003e, gir1.2-polkitagent-1.0-dev, gir1.2-rsvg-2.0 \u003c!nocheck\u003e, gir1.2-upowerglib-1.0 \u003c!nocheck\u003e, gnome-control-center-dev, gnome-settings-daemon-common (\u003e= 49) \u003c!nocheck\u003e, gsettings-desktop-schemas-dev (\u003e= 49~alpha), gtk-doc-tools, libasound2-dev, libatk-bridge2.0-dev, libecal2.0-dev (\u003e= 3.45), libedataserver1.2-dev (\u003e= 3.45), libgcr-4-dev (\u003e= 3.90.0), libgirepository-2.0-dev (\u003e= 2.86.0), libgjs-dev (\u003e= 1.85.90), libgl1-mesa-dri \u003c!nocheck\u003e, libglib2.0-dev (\u003e= 2.86.0), libgnome-autoar-0-dev, libgnome-bluetooth-3.0-dev (\u003e= 3.9.0) [linux-any], libgnome-desktop-4-dev (\u003e= 40), libgnome-menu-3-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev, libgtk-4-dev, libibus-1.0-dev, libjson-glib-dev, libmutter-17-dev (\u003e= 49.0), libxml2-utils, mutter-17-tests (\u003e= 49.0) \u003c!nocheck\u003e, libnm-dev [linux-any], libpipewire-0.3-dev (\u003e= 0.3.49) [linux-any], libpolkit-agent-1-dev, libpulse-dev, libsecret-1-dev, libsystemd-dev [linux-any], libx11-dev, libxext-dev, libxfixes-dev, libxml2-dev, mesa-common-dev, meson (\u003e= 1.3.0), mutter (\u003e= 49.0) \u003c!nocheck\u003e, pipewire \u003c!nocheck\u003e, pkgconf, python3-docutils, sassc, systemd-dev [linux-any], xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xwayland \u003c!nocheck\u003e"
+    "appstream, bash-completion, dbus-daemon \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, gjs (\u003e= 1.85.90), gir1.2-accountsservice-1.0 \u003c!nocheck\u003e, gir1.2-gcr-4-dev, gir1.2-gdkpixbuf-2.0-dev, gir1.2-gdm-1.0 \u003c!nocheck\u003e, gir1.2-geoclue-2.0 \u003c!nocheck\u003e, gir1.2-gnomebg-4.0 \u003c!nocheck\u003e, gir1.2-gnomedesktop-4.0 \u003c!nocheck\u003e, gir1.2-gweather-4.0 (\u003e= 4.1) \u003c!nocheck\u003e, gir1.2-nma4-1.0 (\u003e= 1.10.4) [linux-any] \u003c!nocheck\u003e, gir1.2-polkitagent-1.0-dev, gir1.2-rsvg-2.0 \u003c!nocheck\u003e, gir1.2-upowerglib-1.0 \u003c!nocheck\u003e, gnome-control-center-dev, gnome-settings-daemon-common (\u003e= 49) \u003c!nocheck\u003e, gsettings-desktop-schemas-dev (\u003e= 49~alpha), gtk-doc-tools, libasound2-dev, libatk-bridge2.0-dev, libecal2.0-dev (\u003e= 3.45), libedataserver1.2-dev (\u003e= 3.45), libgcr-4-dev (\u003e= 3.90.0), libgirepository-2.0-dev (\u003e= 2.86.0), libgjs-dev (\u003e= 1.85.90), libgl1-mesa-dri \u003c!nocheck\u003e, libglib2.0-dev (\u003e= 2.86.0), libgnome-autoar-0-dev, libgnome-bluetooth-3.0-dev (\u003e= 3.9.0) [linux-any], libgnome-desktop-4-dev (\u003e= 40), libgnome-menu-3-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev, libgtk-4-dev, libibus-1.0-dev, libjson-glib-dev, libmutter-17-dev (\u003e= 49.0), libxml2-utils, mutter-17-tests (\u003e= 49.0) \u003c!nocheck\u003e, libnm-dev [linux-any], libpipewire-0.3-dev (\u003e= 0.3.49) [linux-any], libpolkit-agent-1-dev, libpulse-dev, libsecret-1-dev, libsystemd-dev [linux-any], libx11-dev, libxext-dev, libxfixes-dev, libxml2-dev, mesa-common-dev, meson (\u003e= 1.3.0), mutter (\u003e= 49.0) \u003c!nocheck\u003e, pipewire \u003c!nocheck\u003e, pkgconf, python3-docutils, sassc, systemd-dev [linux-any], xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xwayland \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5d340801155b2fae166cb24f719434007f50f0bacfe2bb38cfe3d2698080c8db 3795 gnome-shell_49.2-2.dsc d13b855d8df99debf7eccf810b6e054fdb0aeb87ef8b131918a6e4c9197a02c7 2303460 gnome-shell_49.2.orig.tar.xz 5f122297f58ee87c4e68eddaaafcbcb7b3412153650403d992e0b08074801898 49948 gnome-shell_49.2-2.debian.tar.xz"
+    "71b31ae28a3d72a4f40cf472f69d766bef7e0d3a7666d96b59395a7c33259a2d 4087 gnome-shell_49.3-2.dsc 28f0dbd64452f0057129f226753c95d2726de07f1f5f473addc7c3c507a6d31a 2311880 gnome-shell_49.3.orig.tar.xz 3947c905c7bf5c68f3a69a7cc6f7012b8c904854651a1335a4146dfcb08c2b5b 57984 gnome-shell_49.3-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "f7d964485773d9ed570d3f00362f1b054daeb845 debian archive/debian/49.3-2 https://git.dgit.debian.org/gnome-shell"
   ],
   "Directory": [
     "pool/main/g/gnome-shell"
   ],
   "Files": [
-    "731cb4be987eca4bfc376b9a73a4eda7 3795 gnome-shell_49.2-2.dsc 533361098741fdfb2b6cad55c95b2266 2303460 gnome-shell_49.2.orig.tar.xz e21e09e501d0b62d3006494d78a44b4d 49948 gnome-shell_49.2-2.debian.tar.xz"
+    "f551d14bc02f19c76130303f20121671 4087 gnome-shell_49.3-2.dsc 5a0caa241f58b9dac00e60cd1ce330a5 2311880 gnome-shell_49.3.orig.tar.xz 9f3fa42a180aa93408f422e7dca0c1ed 57984 gnome-shell_49.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=124332d36ba1f07bef1e8c7d5779beae0a1e573c fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
+  ],
+  "Git-Tag-Tagger": [
+    "Simon McVittie \u003csmcv@debian.org\u003e"
   ],
   "Homepage": [
     "https://gitlab.gnome.org/GNOME/gnome-shell"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/gnome-team/gnome-shell.git"
   ],
   "Version": [
-    "49.2-2"
+    "49.3-2"
   ]
 }

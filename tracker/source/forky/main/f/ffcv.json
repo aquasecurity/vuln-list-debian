@@ -6,16 +6,16 @@
     "python3-ffcv"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3, python3-setuptools, python3-opencv, python3-sklearn, libpython3-dev, libopencv-dev, libturbojpeg0-dev"
+    "debhelper-compat (= 13), dh-python, python3, python3-setuptools, python3-opencv, python3-sklearn, libpython3-dev, libopencv-dev, libturbojpeg0-dev, python3-torch \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8333c77178440e0d3d5cef42f9ba4d8004165096434bed953abc34a52bf5d784 2100 ffcv_1.0.0+git20240202+ds-2.1.dsc 4e7332efec01c12c7151fc919fe6d591090f57674f74af7e1650487fcbce7e9d 2288812 ffcv_1.0.0+git20240202+ds.orig.tar.xz dc27b0722c83a517cb32f1a52f7d7695d0f2d5ed6faeb6145b392ee9c9ef583f 5708 ffcv_1.0.0+git20240202+ds-2.1.debian.tar.xz"
+    "1fa84f67f8edc6c015f62f796494849ce10662ba3289b0274543358749e762e9 2196 ffcv_1.0.0+git20240506.3a12966-1.dsc 34600c8c6976854bbac32128eff002f5879246a48f2a36023808357074276f8b 2267148 ffcv_1.0.0+git20240506.3a12966.orig.tar.xz d5273d93011d68be3908ac36ea511ceef2068948b590c4708ca0c9f9a7557333 6724 ffcv_1.0.0+git20240506.3a12966-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/ffcv"
   ],
   "Files": [
-    "6a22c49e73ea5ba5432a0541c717f0e4 2100 ffcv_1.0.0+git20240202+ds-2.1.dsc 0f4a4f71b9858e4f2185e3712e19b1cf 2288812 ffcv_1.0.0+git20240202+ds.orig.tar.xz 76e822a07a810a7097fd071f88eaa094 5708 ffcv_1.0.0+git20240202+ds-2.1.debian.tar.xz"
+    "341ec1497ccc89f4d04f186dbe9e18a0 2196 ffcv_1.0.0+git20240506.3a12966-1.dsc 0913277cccdb68f167aa039d8cd0b597 2267148 ffcv_1.0.0+git20240506.3a12966.orig.tar.xz 58c6795cbb2cb94c5df8e8eba2569d38 6724 ffcv_1.0.0+git20240506.3a12966-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://ffcv.io/"
   ],
   "Maintainer": [
-    "Debian Deep Learning Team \u003cdebian-ai@lists.debian.org\u003e"
+    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
   ],
   "Package": [
     "ffcv"
   ],
   "Package-List": [
-    "python3-ffcv deb science optional arch=any"
+    "python3-ffcv deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
-  "Uploaders": [
-    "Alex Myczko \u003ctar@debian.org\u003e"
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pytest, python3-torch"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/deeplearning-team/ffcv"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/deeplearning-team/ffcv.git"
   ],
   "Version": [
-    "1.0.0+git20240202+ds-2.1"
+    "1.0.0+git20240506.3a12966-1"
   ]
 }
