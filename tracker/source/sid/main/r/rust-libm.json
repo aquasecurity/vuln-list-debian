@@ -6,19 +6,25 @@
     "librust-libm-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f36c6a6edef497b772a62d6e0c1a0beca47c7a4b0c1719c78c5c3aa4e849de57 2151 rust-libm_0.2.8-1.dsc 4ec2a862134d2a7d32d7983ddcdd1c4923530833c9f2ea1a44fc5fa473989058 113450 rust-libm_0.2.8.orig.tar.gz 7969d5c9c3865ca4f2a6ba4645333449a112bac5ae72ac108eb2af50d2d0c29e 4140 rust-libm_0.2.8-1.debian.tar.xz"
+    "4df9972a5a09286fde7c014adcdf9fef23ddc65caee510f2bfe6bfb982876a7b 2216 rust-libm_0.2.15-1.dsc f9fbbcab51052fe104eb5e5d351cf728d30a5be1fe14d9be8a3b097481fb97de 156108 rust-libm_0.2.15.orig.tar.gz b6be8fc0209fc0db86da231d885b7e30a774dc602d72cbef0e6d8b91a122c9ca 4368 rust-libm_0.2.15-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libm"
   ],
   "Files": [
-    "e70359a4101333568fb14f662a20133d 2151 rust-libm_0.2.8-1.dsc 23fb13a7f6fb7b25a42d71c3bcaa5d7c 113450 rust-libm_0.2.8.orig.tar.gz 9263d31010f7799c4867634a88e94c01 4140 rust-libm_0.2.8-1.debian.tar.xz"
+    "520cb98318563869511dcef4f343356e 2216 rust-libm_0.2.15-1.dsc 4645e2cb8d118c1164054f6ea9dbaf7c 156108 rust-libm_0.2.15.orig.tar.gz 4c4035636575f342c611cb9988d5e96d 4368 rust-libm_0.2.15-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/compiler-builtins"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libm]"
   ],
   "Version": [
-    "0.2.8-1"
+    "0.2.15-1"
   ]
 }

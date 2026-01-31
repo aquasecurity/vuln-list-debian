@@ -6,22 +6,22 @@
     "notmuch, notmuch-git, notmuch-doc, libnotmuch5t64, libnotmuch-dev, python3-notmuch2, ruby-notmuch, elpa-notmuch, notmuch-vim, notmuch-mutt"
   ],
   "Build-Conflicts": [
-    "gdb [ia64 mips mips64el hppa], ruby1.8"
+    "gdb [ia64 mips mips64el hppa armhf], ruby1.8"
   ],
   "Build-Depends": [
-    "bash-completion (\u003e= 1.9.0~), debhelper-compat (= 13), dh-elpa (\u003e= 1.3), dh-python, dh-sequence-vim-addon, desktop-file-utils, doxygen, dpkg-dev (\u003e= 1.22.5), dtach (\u003e= 0.8) \u003c!nocheck\u003e, emacs-nox | emacs-gtk | emacs-lucid | emacs-pgtk | emacs25-nox | emacs25 (\u003e= 25~) | emacs25-lucid (\u003e= 25~) | emacs24-nox | emacs24 (\u003e= 24~) | emacs24-lucid (\u003e= 24~), emacs-el, gdb [!ia64 !mips !mips64el !kfreebsd-any !alpha !hppa] \u003c!nocheck\u003e, git \u003c!nocheck\u003e, gnupg \u003c!nocheck\u003e, gpgsm \u003c!nocheck\u003e, libgmime-3.0-dev (\u003e= 3.0.3~), libpython3-dev, libsexp-dev, libtalloc-dev, libxapian-dev, libz-dev, pkgconf, python3, python3-cffi, python3-pytest, python3-pytest-cov, python3-setuptools, python3-sphinx, ruby, ruby-dev (\u003e\u003e 1:1.9.3~), texinfo, xapian-tools \u003c!nocheck\u003e"
+    "bash-completion (\u003e= 1.9.0~), debhelper-compat (= 13), dh-elpa (\u003e= 1.3), dh-python, dh-sequence-vim-addon, desktop-file-utils, doxygen, dpkg-dev (\u003e= 1.22.5), dtach (\u003e= 0.8) \u003c!nocheck\u003e, emacs-nox | emacs-gtk | emacs-lucid | emacs-pgtk | emacs25-nox | emacs25 (\u003e= 25~) | emacs25-lucid (\u003e= 25~) | emacs24-nox | emacs24 (\u003e= 24~) | emacs24-lucid (\u003e= 24~), emacs-el, gdb [!ia64 !mips !mips64el !alpha !hppa !armhf] \u003c!nocheck\u003e, git \u003c!nocheck\u003e, gnupg \u003c!nocheck\u003e, gpgsm \u003c!nocheck\u003e, libgmime-3.0-dev (\u003e= 3.0.3~), libpython3-dev, libsexp-dev, libtalloc-dev, libxapian-dev, libz-dev, pkgconf, python3, python3-cffi, python3-pytest, python3-pytest-cov, python3-setuptools, python3-sphinx, ruby, ruby-dev (\u003e\u003e 1:1.9.3~), texinfo, xapian-tools \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "511e0191ef18b55bfb70b942f6036586214e2ee2e4d3c920cfd869f791cf98fc 2833 notmuch_0.39-1.dsc b88bb02a76c46bad8d313fd2bb4f8e39298b51f66fcbeb304d9f80c3eef704e3 811448 notmuch_0.39.orig.tar.xz fcecaddb53f82bf106f86050219e76808702d7346b40958186ccc32dacaa2a07 21724 notmuch_0.39-1.debian.tar.xz"
+    "aad1f9d9594dbac638143c241b23223adb99dafaff2315e0469c134751ff72e8 2831 notmuch_0.40-1.dsc 4b4314bbf1c2029fdf793637e6c7bb15c1b1730d22be9aa04803c98c5bbc446f 815476 notmuch_0.40.orig.tar.xz 18a974e216b8ac793b103878c02ff8ed3412be02794153090911b37fdda0dddd 21792 notmuch_0.40-1.debian.tar.xz"
   ],
   "Dgit": [
-    "14f7a8929abedc465e30e8ec77c1bea72db35d9d debian archive/debian/0.39-1 https://git.dgit.debian.org/notmuch"
+    "cee41bccc054617b0cffe12759b209ff66066563 debian archive/debian/0.40-1 https://git.dgit.debian.org/notmuch"
   ],
   "Directory": [
     "pool/main/n/notmuch"
   ],
   "Files": [
-    "c8fa070108396aab79927f448797f636 2833 notmuch_0.39-1.dsc edce1607f13ad8cb9ea6409b8e04c4d6 811448 notmuch_0.39.orig.tar.xz ef94ef09e3f3963af2f49a6453ead7e2 21724 notmuch_0.39-1.debian.tar.xz"
+    "2a35f74fc099fc8a521396029298882a 2831 notmuch_0.40-1.dsc 62b1d1595cc9495807ae594d6b735987 815476 notmuch_0.40.orig.tar.xz 26feff1bfac1232d97f271c1f10cc144 21792 notmuch_0.40-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -54,7 +54,7 @@
     "build-essential, dtach, emacs-nox, gdb, git, gnupg, gpgsm, libtalloc-dev, man, xapian-tools"
   ],
   "Uploaders": [
-    "Jameson Graef Rollins \u003cjrollins@finestructure.net\u003e, David Bremner \u003cbremner@debian.org\u003e,"
+    "Jameson Graef Rollins \u003cjrollins@finestructure.net\u003e, David Bremner \u003cbremner@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://git.notmuchmail.org/git/notmuch"
@@ -63,6 +63,6 @@
     "https://git.notmuchmail.org/git/notmuch -b release"
   ],
   "Version": [
-    "0.39-1"
+    "0.40-1"
   ]
 }
