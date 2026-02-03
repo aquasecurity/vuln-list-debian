@@ -6,16 +6,16 @@
     "python3-dulwich"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, git, gnupg, librust-pyo3-dev \u003c!norust\u003e, python3-all-dev, python3-fastimport, python3-gpg, python3-merge3 \u003c!nocheck\u003e, python3-urllib3 (\u003e= 1.25), python3-setuptools, python3-setuptools-rust, rustc \u003c!norust\u003e"
+    "debhelper-compat (= 13), dh-python, git, gnupg, librust-pyo3-dev \u003c!norust\u003e, openssh-client \u003c!nocheck\u003e, python3-all-dev, python3-fastimport, python3-gpg, python3-merge3 \u003c!nocheck\u003e, python3-sshsig \u003c!nocheck\u003e, python3-urllib3 (\u003e= 1.25), python3-setuptools, python3-setuptools-rust, rustc \u003c!norust\u003e, cargo:native, librust-memchr-2+default-dev, librust-pyo3+default-dev (\u003c\u003c 0.28-~~), librust-pyo3+default-dev (\u003e= 0.25-~~), librust-pyo3+extension-module-dev (\u003c\u003c 0.28-~~), librust-pyo3+extension-module-dev (\u003e= 0.25-~~), librust-similar-2+default-dev, libstd-rust-dev"
   ],
   "Checksums-Sha256": [
-    "8e4d795eeb4ff1885a4b25f9307951164a70a27780a3457659966baf782b6086 1905 dulwich_1.0.0-1.dsc 2be25a9648edad561b612383de0642df72599ec7ae8dad0fc7988b4d2de44a0a 1145596 dulwich_1.0.0.orig.tar.gz a6feb6daec19aa7ad2250d4b4a684ab467036191ba496efdf189dc351549a386 8724 dulwich_1.0.0-1.debian.tar.xz"
+    "3fd45048cb26b2b5740d064028340628718e9e29ed7697fc80b8e44548af2652 2257 dulwich_1.0.0-2.dsc 2be25a9648edad561b612383de0642df72599ec7ae8dad0fc7988b4d2de44a0a 1145596 dulwich_1.0.0.orig.tar.gz 1ea8c69c6c43dfa82c9068cd0925241102e1de14c3744331e47a28c2d3c43909 9360 dulwich_1.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dulwich"
   ],
   "Files": [
-    "c645b634c97a395fcdd159dbe54d984e 1905 dulwich_1.0.0-1.dsc 6b2df09bc29a6d32d2621acd017684c0 1145596 dulwich_1.0.0.orig.tar.gz ddca0aea518e8c18c710b46ddafcd3be 8724 dulwich_1.0.0-1.debian.tar.xz"
+    "f2b2c5bb7b9dce15209763b5d5c211dc 2257 dulwich_1.0.0-2.dsc 6b2df09bc29a6d32d2621acd017684c0 1145596 dulwich_1.0.0.orig.tar.gz f607b8a1abcaea1fbbd17d06c9969675 9360 dulwich_1.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "git, gnupg, python3-all, python3-gpg, python3-merge3"
+    "git, gnupg, openssh-client, python3-all, python3-gpg, python3-merge3, python3-sshsig"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/dulwich.git"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.0-2"
   ]
 }
