@@ -6,25 +6,25 @@
     "libdose3-ocaml-dev, dose-distcheck, dose-builddebcheck, dose-extra, apt-cudf, dose-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-ocaml, libbase64-ocaml-dev (\u003e= 3.1.0), libbz2-ocaml-dev (\u003e= 0.6.0-10~) \u003c!pkg.dose3.noextra\u003e, libcudf-ocaml-dev, libextlib-ocaml-dev (\u003e= 1.7.7), libocamlgraph-ocaml-dev (\u003e= 2.1.0), libre-ocaml-dev, libzip-ocaml-dev (\u003e= 1.08) \u003c!pkg.dose3.noextra\u003e, ocaml-dune (\u003e= 2.7.1), ocaml, pandoc"
+    "debhelper-compat (= 13), dh-ocaml, libbase64-ocaml-dev (\u003e= 3.1.0), libbz2-ocaml-dev (\u003e= 0.6.0-10~) \u003c!pkg.dose3.noextra\u003e, libcudf-ocaml-dev, libextlib-ocaml-dev (\u003e= 1.7.7), libocamlgraph-ocaml-dev (\u003e= 2.1.0), libre-ocaml-dev, libzip-ocaml-dev (\u003e= 1.08) \u003c!pkg.dose3.noextra\u003e, ocaml-dune (\u003e= 2.7.1), ocaml"
   ],
   "Build-Depends-Arch": [
     "grep-dctrl \u003c!nocheck\u003e, libounit-ocaml-dev \u003c!nocheck\u003e, libcamlp-streams-ocaml-dev \u003c!nocheck\u003e, libparmap-ocaml-dev \u003c!pkg.dose3.noextra\u003e, perl, python3-yaml \u003c!nocheck\u003e, xz-utils \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "graphviz \u003c!nodoc\u003e, hevea \u003c!nodoc\u003e, lmodern \u003c!nodoc\u003e, ocaml-odoc \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e, texlive-latex-extra \u003c!nodoc\u003e"
+    "graphviz \u003c!nodoc\u003e, hevea \u003c!nodoc\u003e, lmodern \u003c!nodoc\u003e, ocaml-odoc \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e, texlive-latex-extra \u003c!nodoc\u003e, pandoc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "ed4651abf0f937e3404df71bd44d6c832d197065e2b84f9adb84af97f15c0273 2846 dose3_7.0.0-6.dsc 02db6104db2683483f8309c76e77705b2606803fc5b58ea0a402f9da30a56029 1422990 dose3_7.0.0.orig.tar.gz af5e4af3daf8392288adebad47d75ef49b1e8012995097abef594e705835c82d 20664 dose3_7.0.0-6.debian.tar.xz"
+    "09e8ec638436a175a1fdc514a1dfc338ab849f5b4723c43aa6bd38fa43d1b327 2993 dose3_7.0.0-7.dsc 02db6104db2683483f8309c76e77705b2606803fc5b58ea0a402f9da30a56029 1422990 dose3_7.0.0.orig.tar.gz 2c84a5ca623e897b92f681a859ecd139c101dc84f851dcdecd19c8e0231afca8 20696 dose3_7.0.0-7.debian.tar.xz"
   ],
   "Dgit": [
-    "68d7d823a7465690bd232b751f13af0b271895ce debian archive/debian/7.0.0-6 https://git.dgit.debian.org/dose3"
+    "e9a7f7c0be4bc2edda07bc66a067324176458b66 debian archive/debian/7.0.0-7 https://git.dgit.debian.org/dose3"
   ],
   "Directory": [
     "pool/main/d/dose3"
   ],
   "Files": [
-    "dcf61ab2b9f16b52755ef3cbe4a40539 2846 dose3_7.0.0-6.dsc bc99cbcea8fca29dca3ebbee54be45e1 1422990 dose3_7.0.0.orig.tar.gz da46dd2028ba78b8b6c35506c2f2841f 20664 dose3_7.0.0-6.debian.tar.xz"
+    "87324d542228b5037689104d42123229 2993 dose3_7.0.0-7.dsc bc99cbcea8fca29dca3ebbee54be45e1 1422990 dose3_7.0.0.orig.tar.gz 8b5b4eb4198fc9a5856bc922d155e6bb 20696 dose3_7.0.0-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,7 @@
     "dose3"
   ],
   "Package-List": [
-    "apt-cudf deb admin optional arch=any profile=!pkg.dose3.noextra dose-builddebcheck deb devel optional arch=any profile=!pkg.dose3.noextra dose-distcheck deb devel optional arch=any profile=!pkg.dose3.noextra dose-doc deb doc optional arch=all profile=!nodoc dose-extra deb devel optional arch=any profile=!pkg.dose3.noextra libdose3-ocaml-dev deb ocaml optional arch=any"
+    "apt-cudf deb admin optional arch=any profile=!pkg.dose3.noextra profile:v1=!pkg.dose3.noextra dose-builddebcheck deb devel optional arch=any profile=!pkg.dose3.noextra profile:v1=!pkg.dose3.noextra dose-distcheck deb devel optional arch=any profile=!pkg.dose3.noextra profile:v1=!pkg.dose3.noextra dose-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc dose-extra deb devel optional arch=any profile=!pkg.dose3.noextra profile:v1=!pkg.dose3.noextra libdose3-ocaml-dev deb ocaml optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/ocaml-team/dose3.git"
   ],
   "Version": [
-    "7.0.0-6"
+    "7.0.0-7"
   ]
 }
