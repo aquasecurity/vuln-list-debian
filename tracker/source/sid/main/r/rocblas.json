@@ -6,19 +6,19 @@
     "librocblas4, librocblas-dev, librocblas4-bench, librocblas4-tests, librocblas4-tests-data, librocblas-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, gfortran, hipcc (\u003e= 7.0.1~), libamd-comgr-dev (\u003e= 7.0~), libblas-dev, libdrm-dev, libgtest-dev \u003c!nocheck\u003e, libhsa-runtime-dev (\u003e= 6.4.3~), libmsgpack-cxx-dev, librocm-smi-dev, libroctx-dev, llvm-21, pkg-rocm-tools (\u003e= 0.9.3~), python3-joblib, python3-msgpack, python3-venv, python3-yaml, rocm-cmake (\u003e= 5.3.0)"
+    "debhelper-compat (= 13), cmake, gfortran, hipcc (\u003e= 7.0.1~), libamd-comgr-dev (\u003e= 7.0~), libblas-dev, libdrm-dev, libgtest-dev \u003c!nocheck\u003e \u003c!noinsttest\u003e, libhsa-runtime-dev (\u003e= 6.4.3~), libmsgpack-cxx-dev, librocm-smi-dev, libroctx-dev, llvm-21, pkg-rocm-tools (\u003e= 0.9.3~), python3-joblib, python3-msgpack, python3-venv, python3-yaml, rocm-cmake (\u003e= 5.3.0)"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-doxysphinx \u003c!nodoc\u003e, python3-rocm-docs (\u003e= 1.20.0-1~) \u003c!nodoc\u003e, python3-sphinx-external-toc \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, libjs-mathjax \u003c!nodoc\u003e, libjs-sphinxdoc \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "6a49f1ecc67ad4ede59a24ce65fc69311431ecb36464b13b8e398c249a81ca5b 3350 rocblas_6.4.4-3.dsc 48ee6a9b33631625c7613e1fb8872290cb7c70977506c4f8b7ed102f293fdf38 12731812 rocblas_6.4.4.orig-tensile.tar.gz bc374b57579fa8458132f73d9a152517af63b9f411a2176b72829f4a1d6021c1 58793110 rocblas_6.4.4.orig.tar.gz 0dd2de08a2ea00594ce93bd5202c114b1c116ac00eba4a0c0c75563b0813381a 133044 rocblas_6.4.4-3.debian.tar.xz"
+    "f81f0cb2a22f14546c8a87f17cb9abeab9df06bd34d56ada62a1afe0304325b6 3373 rocblas_6.4.4-4.dsc 48ee6a9b33631625c7613e1fb8872290cb7c70977506c4f8b7ed102f293fdf38 12731812 rocblas_6.4.4.orig-tensile.tar.gz bc374b57579fa8458132f73d9a152517af63b9f411a2176b72829f4a1d6021c1 58793110 rocblas_6.4.4.orig.tar.gz b68bd406cf11771e47dcac25ee3dea1e36c10c10fca71bb27a1840a1d90c5eb7 132732 rocblas_6.4.4-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocblas"
   ],
   "Files": [
-    "f6bc89b5ca7ad985f42b13eded198941 3350 rocblas_6.4.4-3.dsc 60d910bb73867d99f486486e6cfb2836 12731812 rocblas_6.4.4.orig-tensile.tar.gz ae7699706dfbca18c697fc2c605e5657 58793110 rocblas_6.4.4.orig.tar.gz 9d7c164f61ad37c02a17bd8b9a7cc669 133044 rocblas_6.4.4-3.debian.tar.xz"
+    "bfe562d71dd820d3969af9f62c408c4b 3373 rocblas_6.4.4-4.dsc 60d910bb73867d99f486486e6cfb2836 12731812 rocblas_6.4.4.orig-tensile.tar.gz ae7699706dfbca18c697fc2c605e5657 58793110 rocblas_6.4.4.orig.tar.gz aa8a78a4eb152177b420a865dcfb6524 132732 rocblas_6.4.4-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "rocblas"
   ],
   "Package-List": [
-    "librocblas-dev deb libdevel optional arch=amd64,arm64 librocblas-doc deb doc optional arch=all profile=!nodoc librocblas4 deb libs optional arch=amd64,arm64 librocblas4-bench deb libdevel optional arch=amd64,arm64 profile=!nocheck librocblas4-tests deb libdevel optional arch=amd64,arm64 profile=!nocheck librocblas4-tests-data deb libdevel optional arch=all profile=!nocheck"
+    "librocblas-dev deb libdevel optional arch=amd64,arm64 librocblas-doc deb doc optional arch=all profile=!nodoc librocblas4 deb libs optional arch=amd64,arm64 librocblas4-bench deb libdevel optional arch=amd64,arm64 profile=!noinsttest librocblas4-tests deb libdevel optional arch=amd64,arm64 profile=!noinsttest librocblas4-tests-data deb libdevel optional arch=all profile=!noinsttest"
   ],
   "Priority": [
     "optional"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rocm-team/rocblas.git"
   ],
   "Version": [
-    "6.4.4-3"
+    "6.4.4-4"
   ]
 }

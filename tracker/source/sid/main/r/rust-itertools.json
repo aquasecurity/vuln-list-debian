@@ -6,19 +6,25 @@
     "librust-itertools-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.43.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-either-1+use-std-dev \u003c!nocheck\u003e, librust-either-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-either-1+use-std-dev \u003c!nocheck\u003e, librust-either-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0b12eb84ba420c332b67121888562a982bd0ac749cdd0d879d3a5caf9471ce6d 2420 rust-itertools_0.13.0-3.dsc 413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186 146261 rust-itertools_0.13.0.orig.tar.gz f5db71de649f81e15f256f0d520f5e399a93fd3eaa7795bfa03a7eb2dbb541b4 5904 rust-itertools_0.13.0-3.debian.tar.xz"
+    "45a4dcea8ee71c0ebaea41635aa800d475db927fcc1585b737eb3f6ef633a9d4 2534 rust-itertools_0.14.0-2.dsc 2b192c782037fadd9cfa75548310488aabdbf3d2da73885b31bd0abd03351285 152715 rust-itertools_0.14.0.orig.tar.gz c0672f96a3b9aba1e7bb397e0742623615219021605c25264dc69fc3a7aafdd2 5880 rust-itertools_0.14.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-itertools"
   ],
   "Files": [
-    "c1aa99ce63e94a898d99232f926f5c7d 2420 rust-itertools_0.13.0-3.dsc 22c9fb2659929f432d5fe217d1cb74cf 146261 rust-itertools_0.13.0.orig.tar.gz 2a333cc72e09b50b8d08430dbb5a5bbf 5904 rust-itertools_0.13.0-3.debian.tar.xz"
+    "fc644ed0c06f1d4d8aa4f838a11502a4 2534 rust-itertools_0.14.0-2.dsc 46ad4f3e5384660617259ff0e3ff902b 152715 rust-itertools_0.14.0.orig.tar.gz bb339a341f4c96691f758fe5202d138f 5880 rust-itertools_0.14.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-itertools/itertools"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-paste-1+default-dev, librust-permutohedron-0.2+default-dev, librust-quickcheck-1-dev, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/itertools]"
   ],
   "Version": [
-    "0.13.0-3"
+    "0.14.0-2"
   ]
 }
