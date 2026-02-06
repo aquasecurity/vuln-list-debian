@@ -6,19 +6,25 @@
     "librust-pq-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-vcpkg-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, libpq-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.100-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, librust-vcpkg-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, libpq-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "285a40052db84ce98b3aab8b72c3e20aa028e0af8a4eca44cce92186ec371169 2184 rust-pq-sys_0.4.8-2.dsc 31c0052426df997c0cbd30789eb44ca097e3541717a7b8fa36b1c464ee7edebd 13807 rust-pq-sys_0.4.8.orig.tar.gz 36f3e3bb09867774fdf6962a8dcbca2c2e42e1125ae8a87e2d780466d87493c3 3516 rust-pq-sys_0.4.8-2.debian.tar.xz"
+    "d13a0804ca17fdf5efbfafdfd91e1a2844bf7540a5481557579ee8f0217cd1e7 2444 rust-pq-sys_0.7.5-1.dsc 574ddd6a267294433f140b02a726b0640c43cf7c6f717084684aaa3b285aba61 34816 rust-pq-sys_0.7.5.orig.tar.gz dae57f8e05b6468dcebcad008ba613d97c311d0758509018bad1b7dcefc298c9 3352 rust-pq-sys_0.7.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pq-sys"
   ],
   "Files": [
-    "034a6f38f7e9386b3bb53f4853782895 2184 rust-pq-sys_0.4.8-2.dsc 704a7b4ea1decd99513df41edded270a 13807 rust-pq-sys_0.4.8.orig.tar.gz ea03a354b959e7336d9770d4bef0205f 3516 rust-pq-sys_0.4.8-2.debian.tar.xz"
+    "1d9eda4184a80487d983529e2c526315 2444 rust-pq-sys_0.7.5-1.dsc 224e704ef0466fa21ef8ce3fc7348e45 34816 rust-pq-sys_0.7.5.orig.tar.gz c38b2e3b7dad62f7516c6c7d1d06ba9b 3352 rust-pq-sys_0.7.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sgrif/pq-sys"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-bindgen-0.72+default-dev, librust-similar-asserts-1+default-dev, rustc, rustfmt"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pq-sys]"
   ],
   "Version": [
-    "0.4.8-2"
+    "0.7.5-1"
   ]
 }

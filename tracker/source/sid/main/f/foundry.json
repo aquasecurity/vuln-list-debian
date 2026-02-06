@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "any all"
+    "linux-any all"
   ],
   "Binary": [
     "foundry, foundry-common, gir1.2-foundry-1, gir1.2-foundrygtk-1, libfoundry-1-1, libfoundry-dev, libfoundry-doc, libfoundry-gtk-1-1, libfoundry-gtk-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-dex-1-dev, gir1.2-gio-2.0-dev, gir1.2-gtk-4.0-dev, gir1.2-gtksource-5-dev, gir1.2-json-1.0-dev, gir1.2-peas-2-dev, gobject-introspection, libcmark-dev, libdex-dev (\u003e= 0.11), libeditorconfig-dev, libflatpak-dev, libgit2-dev, libglib2.0-dev (\u003e= 2.82), libgom-1.0-dev, libgtksourceview-5-dev (\u003e= 5.14), libjson-glib-dev, libpeas-2-dev, libspelling-1-dev, libssh2-1-dev, libsysprof-capture-4-dev, libtemplate-glib-1.0-dev (\u003e= 3.37.0), libvte-2.91-gtk4-dev (\u003e= 0.80), libwebkitgtk-6.0-dev, libxml2-utils, libyaml-dev, meson"
+    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-dex-1-dev, gir1.2-gio-2.0-dev, gir1.2-gtk-4.0-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], gir1.2-gtksource-5-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], gir1.2-json-1.0-dev, gir1.2-peas-2-dev, gobject-introspection, libdex-dev (\u003e= 1.1~alpha), libeditorconfig-dev, libflatpak-dev [!alpha], libgit2-dev, libglib2.0-dev (\u003e= 2.82), libgom-1.0-dev, libgtk-4-dev (\u003e= 4.20) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libgtksourceview-5-dev (\u003e= 5.18) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libjson-glib-dev, libpeas-2-dev, libreadline-dev, libsecret-1-dev, libspelling-1-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libsoup-3.0-dev, libssh2-1-dev, libsysprof-capture-4-dev, libtemplate-glib-1.0-dev (\u003e= 3.37.0), libvte-2.91-gtk4-dev (\u003e= 0.80) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libxml2-utils, libyaml-dev, meson"
   ],
   "Build-Depends-Indep": [
     "gi-docgen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c7a3ab77c1db213374c4bd19a94275f746291af8e284d645e1bcbf25ecc279d9 3040 foundry_1.0.1-1.dsc c0768906feb34dd58199e28544739ea217bbd7883e58f24f12322986bc899339 703672 foundry_1.0.1.orig.tar.xz e6b3c10ac8fef40220f80679469662157564a0cb73e21dca73af539e62f86eee 12332 foundry_1.0.1-1.debian.tar.xz"
+    "725bab92e9079dd74a285f6aa8129ebdeec0d1e0ff8767c949bafbeda70e5a44 3675 foundry_1.1~beta-2.dsc 7928441f4d5299ddfa252711c0b7c2e2a45d14c71a67bd518e47776bf1190af1 943996 foundry_1.1~beta.orig.tar.xz 4bff8959a48edb987eceddcc4b00f78b015589dcce8cbbace1361cd10d266b55 12928 foundry_1.1~beta-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/foundry"
   ],
   "Files": [
-    "c4a88ef39457aab52c76c705a747bfed 3040 foundry_1.0.1-1.dsc 7fb6777a5c95327c0c8b62b1b3a43069 703672 foundry_1.0.1.orig.tar.xz 8e2b39a86fe91c5b49dc51cad2cf8185 12332 foundry_1.0.1-1.debian.tar.xz"
+    "0cc04c92f72af082d92faff5c5127ce1 3675 foundry_1.1~beta-2.dsc 8f274a09acca2887d541e7e12c77016d 943996 foundry_1.1~beta.orig.tar.xz 239574496b453c0dc871b5fc3110fc26 12928 foundry_1.1~beta-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "foundry"
   ],
   "Package-List": [
-    "foundry deb devel optional arch=any foundry-common deb libs optional arch=all gir1.2-foundry-1 deb introspection optional arch=any gir1.2-foundrygtk-1 deb introspection optional arch=any libfoundry-1-1 deb libs optional arch=any libfoundry-dev deb libdevel optional arch=any libfoundry-doc deb doc optional arch=all profile=!nodoc libfoundry-gtk-1-1 deb libs optional arch=any libfoundry-gtk-dev deb libdevel optional arch=any"
+    "foundry deb devel optional arch=linux-any foundry-common deb libs optional arch=all gir1.2-foundry-1 deb introspection optional arch=linux-any gir1.2-foundrygtk-1 deb introspection optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64 libfoundry-1-1 deb libs optional arch=linux-any libfoundry-dev deb libdevel optional arch=linux-any libfoundry-doc deb doc optional arch=all profile=!nodoc libfoundry-gtk-1-1 deb libs optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64 libfoundry-gtk-dev deb libdevel optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/gnome-team/foundry.git"
   ],
   "Version": [
-    "1.0.1-1"
+    "1.1~beta-2"
   ]
 }
