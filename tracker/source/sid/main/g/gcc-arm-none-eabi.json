@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "gcc-arm-none-eabi, gcc-arm-none-eabi-source"
+    "gcc-arm-none-eabi, gcc-aarch64-none-elf, gcc-arm-none-eabi-source"
   ],
   "Build-Depends": [
-    "autoconf2.69, autogen, autotools-dev, binutils-arm-none-eabi, bison, debhelper (\u003e= 9.0.0), dh-autoreconf, dejagnu, flex, gawk, gettext, libgmp-dev, libmpc-dev, libmpfr-dev, libtool, locales, lsb-release, lzma, m4, patchutils, sharutils, texinfo, xz-utils, zlib1g-dev, subversion, rename, libisl-dev"
+    "autoconf2.69, autogen, binutils-arm-none-eabi (\u003e= 2.45.50), binutils-aarch64-none-elf (\u003e= 2.45.50), bison, debhelper (\u003e= 10), dejagnu, flex, gawk, gettext, libgmp-dev, libmpc-dev, libmpfr-dev, libtool, locales, lsb-release, lzma, m4, patchutils, sharutils, texinfo, xz-utils, zlib1g-dev, subversion, rename, libisl-dev"
   ],
   "Checksums-Sha256": [
-    "dbc85c50eec80e8761b89deff4d986ef49f6c987fdc3ebcb5f860fd4db610ad8 2514 gcc-arm-none-eabi_14.2.rel1-1.dsc 3203172d6bb6e46f69224542e3ae021f19157bfc0e1e46e15f20a2d0d0c502c4 109882199 gcc-arm-none-eabi_14.2.rel1.orig.tar.bz2 7436c6e53eac335603568403a05d374bfe53864225894a688d8e85c8f94ebf92 18640 gcc-arm-none-eabi_14.2.rel1-1.debian.tar.xz"
+    "aac909ae92d921ab0c8db39c8897c1ae884c1ee69f1da42ac519f513722bd3c6 2530 gcc-arm-none-eabi_15.2.rel1.1-1.dsc 3f8fc98d1d2430a558aade89f9384cee0cd2df9ef9b38078f51e7e1924ad5457 104417485 gcc-arm-none-eabi_15.2.rel1.1.orig.tar.bz2 e6081d884d3f2ff394f140973229a42bbd98655e53ad4bd42d76076f92b8708a 16300 gcc-arm-none-eabi_15.2.rel1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gcc-arm-none-eabi"
   ],
   "Files": [
-    "3e17b9d099153bdc6896d2d837824067 2514 gcc-arm-none-eabi_14.2.rel1-1.dsc 192aae997013b0c8aea124b1620716df 109882199 gcc-arm-none-eabi_14.2.rel1.orig.tar.bz2 cfce84a5bdf3154d780bf975cf2994d4 18640 gcc-arm-none-eabi_14.2.rel1-1.debian.tar.xz"
+    "ecf8ea0c0c6548c7e3623719a0be801e 2530 gcc-arm-none-eabi_15.2.rel1.1-1.dsc 257ed304e5b53473bfb18b65a0dcde4c 104417485 gcc-arm-none-eabi_15.2.rel1.1.orig.tar.bz2 fd3e5cb070faae8740cc6a11415bf6f4 16300 gcc-arm-none-eabi_15.2.rel1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://developer.arm.com/open-source/gnu-toolchain/gnu-rm"
   ],
   "Maintainer": [
-    "Agustin Henze \u003ctin@debian.org\u003e"
+    "Keith Packard \u003ckeithp@keithp.com\u003e"
   ],
   "Package": [
     "gcc-arm-none-eabi"
   ],
   "Package-List": [
-    "gcc-arm-none-eabi deb devel optional arch=any gcc-arm-none-eabi-source deb devel optional arch=all"
+    "gcc-aarch64-none-elf deb devel optional arch=any gcc-arm-none-eabi deb devel optional arch=any gcc-arm-none-eabi-source deb devel optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -47,9 +47,6 @@
   "Testsuite-Triggers": [
     "libstdc++-arm-none-eabi-newlib"
   ],
-  "Uploaders": [
-    "Keith Packard \u003ckeithp@keithp.com\u003e, Thomas Preud'homme \u003cthomas.preudhomme@arm.com\u003e"
-  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/gcc-arm-none-eabi"
   ],
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/debian/gcc-arm-none-eabi.git"
   ],
   "Version": [
-    "15:14.2.rel1-1"
+    "15:15.2.rel1.1-1"
   ]
 }

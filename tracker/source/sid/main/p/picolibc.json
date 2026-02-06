@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "picolibc-riscv64-unknown-elf, picolibc-arm-none-eabi, picolibc-xtensa-lx106-elf, picolibc-aarch64-linux-gnu"
+    "picolibc-riscv64-unknown-elf, picolibc-arm-none-eabi, picolibc-xtensa-lx106-elf, picolibc-aarch64-none-elf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gcc-arm-none-eabi, gcc-riscv64-unknown-elf, gcc-xtensa-lx106, gcc-aarch64-linux-gnu, meson, ninja-build, qemu-system-arm, qemu-system-misc"
+    "debhelper-compat (= 13), gcc-arm-none-eabi, gcc-riscv64-unknown-elf, gcc-xtensa-lx106, gcc-aarch64-none-elf, meson, ninja-build, qemu-system-arm, qemu-system-riscv"
   ],
   "Checksums-Sha256": [
-    "7cf972ec5cac0a4b9dca9ebfdf390dfb1183998b7184704fcf620d096aaf0dac 2332 picolibc_1.8.10-3.dsc d1fc2a20f217472f8d9da084a519a25678e8d91852a41c7f3f1840d3508f7163 3702229 picolibc_1.8.10.orig.tar.gz c8a198eeb7fdc78c946fb00922c57fa5f24125a33fd1e48a54e7b83e9cab2c12 35108 picolibc_1.8.10-3.debian.tar.xz"
+    "d773ef183b2802e16b38756760e7d2ff6f89174552cec245fb11e1c7e681aa47 2352 picolibc_1.8.11-1.dsc 28e60a2d218da70c71278708887adc5ecb0843ed31579dcb691e82d7567c203f 4880873 picolibc_1.8.11.orig.tar.gz 3f6ea6d87d13f33fa93bade71f746a1b5836c12cc0e20269083d05f78976c2b0 33976 picolibc_1.8.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/picolibc"
   ],
   "Files": [
-    "0e4caf5d9cd5355ebfa7b75b18aa55b5 2332 picolibc_1.8.10-3.dsc db3a8caa4d3f210646422dde5def1613 3702229 picolibc_1.8.10.orig.tar.gz 810ecd191485844d0ef5a2e8ca6ca02c 35108 picolibc_1.8.10-3.debian.tar.xz"
+    "7e3a7a51dd5f16b637de7156bf2d2268 2352 picolibc_1.8.11-1.dsc 7d1eba4d15b95bb0b2447f4ea7e32aa6 4880873 picolibc_1.8.11.orig.tar.gz 935631fd5ad6e5b6c5c45142b607729d 33976 picolibc_1.8.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "picolibc"
   ],
   "Package-List": [
-    "picolibc-aarch64-linux-gnu deb devel optional arch=all picolibc-arm-none-eabi deb devel optional arch=all picolibc-riscv64-unknown-elf deb devel optional arch=all picolibc-xtensa-lx106-elf deb devel optional arch=all"
+    "picolibc-aarch64-none-elf deb devel optional arch=all picolibc-arm-none-eabi deb devel optional arch=all picolibc-riscv64-unknown-elf deb devel optional arch=all picolibc-xtensa-lx106-elf deb devel optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gcc-arm-none-eabi, gcc-riscv64-unknown-elf"
+    "gcc-aarch64-none-elf, gcc-arm-none-eabi, gcc-riscv64-unknown-elf"
   ],
   "Vcs-Browser": [
     "https://keithp.com/cgit/picolibc.git/"
@@ -54,6 +54,6 @@
     "git://keithp.com/git/picolibc.git -b debian"
   ],
   "Version": [
-    "1.8.10-3"
+    "1.8.11-1"
   ]
 }
