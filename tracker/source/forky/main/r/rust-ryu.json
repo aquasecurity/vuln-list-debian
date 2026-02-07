@@ -6,16 +6,19 @@
     "librust-ryu-dev, librust-ryu+no-panic-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ab5f6966d0f385131ffea25d4ff9b47ec5dfdfa69bb3f58d7c0ba34212ff392e 2341 rust-ryu_1.0.19-1.dsc 6ea1a2d0a644769cc99faa24c3ad26b379b786fe7c36fd3c546254801650e6dd 48770 rust-ryu_1.0.19.orig.tar.gz 44a79893719b5525c89408012f3bdffa3338a484f4de1474914880483a88f5b3 3808 rust-ryu_1.0.19-1.debian.tar.xz"
+    "bfc695f1fded02bee5c1be848eddc15498afb158518b6489277f91fa33479d55 2296 rust-ryu_1.0.22-1.dsc a50f4cf475b65d88e057964e0e9bb1f0aa9bbb2036dc65c64596b42932536984 51321 rust-ryu_1.0.22.orig.tar.gz e0c959d7a7c04119be9768dc206a1a52893a157f79bcd1314ab296bf1da86edd 4000 rust-ryu_1.0.22-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ryu"
   ],
   "Files": [
-    "f74282d7edebc794f59845433f7922b7 2341 rust-ryu_1.0.19-1.dsc 5e82082f200d92871797832f98a81e50 48770 rust-ryu_1.0.19.orig.tar.gz 83fdce297c67c575cda9958ff562c098 3808 rust-ryu_1.0.19-1.debian.tar.xz"
+    "6d6a5ccc6e2223d2b50dff0c6dca9cc6 2296 rust-ryu_1.0.22-1.dsc d6b56315bc77403fe4a3499dbb0fc8bc 51321 rust-ryu_1.0.22.orig.tar.gz 6462a963db3e0601e772f88ced34e136 4000 rust-ryu_1.0.22-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-num-cpus-1+default-dev, librust-rand-0.8+default-dev, librust-rand-0.9+default-dev, rustc"
+    "dh-cargo, librust-num-cpus-1+default-dev, librust-rand+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ryu]"
   ],
   "Version": [
-    "1.0.19-1"
+    "1.0.22-1"
   ]
 }

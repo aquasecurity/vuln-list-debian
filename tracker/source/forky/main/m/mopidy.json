@@ -6,19 +6,28 @@
     "mopidy, mopidy-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-sequence-movetousr, dh-sequence-python3, po-debconf, python3, python3-pygraphviz, python3-pykka, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-sequence-movetousr, dh-sequence-python3, gir1.2-gst-plugins-base-1.0 \u003c!nocheck\u003e, gir1.2-gstreamer-1.0 \u003c!nocheck\u003e, gstreamer1.0-plugins-good \u003c!nocheck\u003e, gstreamer1.0-plugins-ugly \u003c!nocheck\u003e, po-debconf, pybuild-plugin-pyproject, python3, python3-gst-1.0 \u003c!nocheck\u003e, python3-pygraphviz, python3-pykka, python3-pytest \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-tornado \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cc0abde9c68800eaf3a1935934dadffb0bd6d23d538768a8b1c3fe8d4216df2f 2120 mopidy_3.4.2-4.dsc ada9ecbfc09eecc8c9e6742a8a4fea1632a134a1ab060527d8aa3d36df0547b6 455608 mopidy_3.4.2.orig.tar.gz 52e338e08f995e2256937284e6daf3245cdb20606c5beedb1089eef8dcfa217a 18316 mopidy_3.4.2-4.debian.tar.xz"
+    "6a5253fc14c7e4ac718a95aeb3ee84848b9ae61c6d0245c531b179493f24d29e 2685 mopidy_3.4.2-5.dsc ada9ecbfc09eecc8c9e6742a8a4fea1632a134a1ab060527d8aa3d36df0547b6 455608 mopidy_3.4.2.orig.tar.gz 4531f60dbbb9565e66b5bfbd3397c6811cafee441b69252be3703623fe971422 21944 mopidy_3.4.2-5.debian.tar.xz"
+  ],
+  "Dgit": [
+    "a905ab1db4ce9906bee13707b4db173ef5065eb1 debian archive/debian/3.4.2-5 https://git.dgit.debian.org/mopidy"
   ],
   "Directory": [
     "pool/main/m/mopidy"
   ],
   "Files": [
-    "0b9f003e30b9a01f2c6850c9fd776118 2120 mopidy_3.4.2-4.dsc 000129df314183118c88df28284b5fb6 455608 mopidy_3.4.2.orig.tar.gz 67d5aa0eeca4a53ee974921dad851a91 18316 mopidy_3.4.2-4.debian.tar.xz"
+    "74da7d1e167a1db6ca01f6660ad4ef2c 2685 mopidy_3.4.2-5.dsc 000129df314183118c88df28284b5fb6 455608 mopidy_3.4.2.orig.tar.gz 12a6709f59494f3ea5448fa9e8fdfb5b 21944 mopidy_3.4.2-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=1ab2860936faf7a2ed4bb2eecd085c198e8be58f fp=ac0a4ff12611b6fccf01c111393587d97d86500b"
+  ],
+  "Git-Tag-Tagger": [
+    "Colin Watson \u003ccjwatson@debian.org\u003e"
   ],
   "Homepage": [
     "https://mopidy.com/"
@@ -41,8 +50,11 @@
   "Standards-Version": [
     "4.7.3"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
-    "Stein Magnus Jodal \u003cjodal@debian.org\u003e"
+    "Stein Magnus Jodal \u003cjodal@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/mopidy"
@@ -51,6 +63,6 @@
     "https://salsa.debian.org/python-team/packages/mopidy.git"
   ],
   "Version": [
-    "3.4.2-4"
+    "3.4.2-5"
   ]
 }
