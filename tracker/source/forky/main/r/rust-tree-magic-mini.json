@@ -6,16 +6,19 @@
     "librust-tree-magic-mini-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-nom-7+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-petgraph-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev \u003c!nocheck\u003e, librust-nom-7+default-dev (\u003e= 7.1.3-~~) \u003c!nocheck\u003e, librust-petgraph-dev (\u003c\u003c 0.9-~~) \u003c!nocheck\u003e, librust-petgraph-dev (\u003e= 0.6.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7717ffd632fb89d4e75e938e954aa75be18ffa036f0958aa10cf3b8c3a30de35 2634 rust-tree-magic-mini_3.1.6-1.dsc aac5e8971f245c3389a5a76e648bfc80803ae066a1243a75db0064d7c1129d63 14869 rust-tree-magic-mini_3.1.6.orig.tar.gz d1a3e96d42d8d5aa659610b4cc0816383389fdda76d666029cb468e6215d62f9 3232 rust-tree-magic-mini_3.1.6-1.debian.tar.xz"
+    "bf6a2988690d0ff03f9727135af098ad5f742f9697b2424ffa39e92706e0ff71 2541 rust-tree-magic-mini_3.2.2-1.dsc b8765b90061cba6c22b5831f675da109ae5561588290f9fa2317adab2714d5a6 16074 rust-tree-magic-mini_3.2.2.orig.tar.gz 5d9a6bee7400f1c7396e4f914ac8bc6f314c19ed37e56e44dca902ecbb1229da 4256 rust-tree-magic-mini_3.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tree-magic-mini"
   ],
   "Files": [
-    "f7bed01b492a531eff85ad040b92051e 2634 rust-tree-magic-mini_3.1.6-1.dsc 1d4579f3736b41d7cead711ba14cb562 14869 rust-tree-magic-mini_3.1.6.orig.tar.gz 1fad665d7f29b909fe12d36ab01cb5c8 3232 rust-tree-magic-mini_3.1.6-1.debian.tar.xz"
+    "77d316f15a7ab903d5490b22177f6610 2541 rust-tree-magic-mini_3.2.2-1.dsc 2a6415eaf83a2f45e600253f15a8957b 16074 rust-tree-magic-mini_3.2.2.orig.tar.gz a3064d8ec35e0dc2b102a4432bc7108c 4256 rust-tree-magic-mini_3.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tree-magic-mini]"
   ],
   "Version": [
-    "3.1.6-1"
+    "3.2.2-1"
   ]
 }

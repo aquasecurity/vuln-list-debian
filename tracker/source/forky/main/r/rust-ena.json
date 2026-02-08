@@ -3,25 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-ena-dev, librust-ena+congruence-closure-dev, librust-ena+dogged-dev"
+    "librust-ena-dev, librust-ena+dogged-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3ed956ae0496aecdfc61aafb335a79774e9bf883be74cceb7b799610881a434b 2355 rust-ena_0.14.0-2.dsc d7402b94a93c24e742487327a7cd839dc9d36fec9de9fb25b09f2dae459f36c3 23052 rust-ena_0.14.0.orig.tar.gz 8ddd215a432da48f4281e5e159fc742acda380f42a9c3606e5f77f02c16d2a95 3292 rust-ena_0.14.0-2.debian.tar.xz"
+    "bfc624b4e7405a92c78bab2e6b77e1e7c5029eb57faac9ede0ae6d5d3775aa99 2281 rust-ena_0.14.3-1.dsc 3d248bdd43ce613d87415282f69b9bb99d947d290b10962dd6c56233312c2ad5 22986 rust-ena_0.14.3.orig.tar.gz aea5bfa0be768d4a51669c3bea26e11f30cde1b4370b158b201c971eafd87be7 3248 rust-ena_0.14.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ena"
   ],
   "Files": [
-    "d0ea8ee235ef0ece57ac765bddbf31ac 2355 rust-ena_0.14.0-2.dsc 25e033b68503b1eb640318d93b08ccc2 23052 rust-ena_0.14.0.orig.tar.gz 9324bd71df1a65315f856f3add345b5c 3292 rust-ena_0.14.0-2.debian.tar.xz"
+    "36eed7fce98e8e4d5fb39f7bf962ef41 2281 rust-ena_0.14.3-1.dsc 805c76d3806e0b52a9837a6b15bfaed9 22986 rust-ena_0.14.3.orig.tar.gz 8b52a293be016243caf35f0e717a4521 3248 rust-ena_0.14.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/rust-lang-nursery/ena"
+    "https://github.com/rust-lang/ena"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -30,7 +33,7 @@
     "rust-ena"
   ],
   "Package-List": [
-    "librust-ena+congruence-closure-dev deb rust optional arch=any librust-ena+dogged-dev deb rust optional arch=any librust-ena-dev deb rust optional arch=any"
+    "librust-ena+dogged-dev deb rust optional arch=any librust-ena-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matt Kraai \u003ckraai@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ena]"
   ],
   "Version": [
-    "0.14.0-2"
+    "0.14.3-1"
   ]
 }

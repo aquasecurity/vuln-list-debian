@@ -3,19 +3,19 @@
     "linux-any all"
   ],
   "Binary": [
-    "pahole, dwarves"
+    "libdwarves-dev, dwarves, libdwarves1, pahole"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake (\u003e= 2.4.8), pkgconf, zlib1g-dev, libelf-dev, libdw-dev (\u003e= 0.141), libbpf-dev (\u003e= 1:1.0.1) [linux-any], linux-libc-dev (\u003e= 6.0~) [linux-any]"
+    "debhelper-compat (= 13), cmake (\u003e= 2.4.8), libbpf-dev (\u003e= 1:1.0.1) [linux-any], libdw-dev (\u003e= 0.141), libelf-dev, linux-libc-dev (\u003e= 6.0~) [linux-any], pkgconf, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "74a3c78c4611eb2041195a9a9c0e37cbda534f176260edbead76df3b990d5ae3 2186 dwarves_1.31-1.dsc 0a7f255ccacf8cc7f8cd119099eb327179b4b3c67cb015af646af6d0cb03054d 2350084 dwarves_1.31.orig.tar.xz d10726064a52c0524041f3884b9da59fb1e163c60a3a0b413fd4d50d185274b4 20880 dwarves_1.31-1.debian.tar.xz"
+    "6a3de0d72153bcb1950095957d66e4c04633c1aa24189531a978228b77b08547 2294 dwarves_1.31-2.dsc 0a7f255ccacf8cc7f8cd119099eb327179b4b3c67cb015af646af6d0cb03054d 2350084 dwarves_1.31.orig.tar.xz 92a6f76142be8051a5e4e12c7e68260e912124fbc82b3447df549e7c35e10e90 21192 dwarves_1.31-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dwarves"
   ],
   "Files": [
-    "b7c6f8f6d2e4fae4d38327971fa0c763 2186 dwarves_1.31-1.dsc 4f64e4a767745d6edbd696bb8a7b8c7f 2350084 dwarves_1.31.orig.tar.xz f0f7a60aa1ee1d67e1d93535e5dad3d4 20880 dwarves_1.31-1.debian.tar.xz"
+    "4018c02b395eb17d63fb7d95d60766b4 2294 dwarves_1.31-2.dsc 4f64e4a767745d6edbd696bb8a7b8c7f 2350084 dwarves_1.31.orig.tar.xz 81cfd96097ce6d80be5898b0fbffbfb9 21192 dwarves_1.31-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://git.kernel.org/pub/scm/devel/pahole/pahole.git"
   ],
   "Maintainer": [
-    "Domenico Andreoli \u003ccavok@debian.org\u003e"
+    "Håvard F. Aasen \u003chavard.f.aasen@pfft.no\u003e"
   ],
   "Package": [
     "dwarves"
   ],
   "Package-List": [
-    "dwarves deb oldlibs optional arch=all pahole deb utils optional arch=linux-any"
+    "dwarves deb oldlibs optional arch=all libdwarves-dev deb libdevel optional arch=linux-any libdwarves1 deb libs optional arch=linux-any pahole deb utils optional arch=linux-any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/dwarves.git"
   ],
   "Version": [
-    "1.31-1"
+    "1.31-2"
   ]
 }
