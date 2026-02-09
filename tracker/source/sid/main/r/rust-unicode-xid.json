@@ -6,16 +6,19 @@
     "librust-unicode-xid-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.17) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f882dfee5763a394b1a3c9ff147a64d9db37b6fc3ce83d09d8396c0cf10e497b 2261 rust-unicode-xid_0.2.4-1.dsc f962df74c8c05a667b5ee8bcf162993134c104e96440b663c8daa176dc772d8c 15352 rust-unicode-xid_0.2.4.orig.tar.gz f425f7c0c520b9ba6617905a5d2f646e68bc928978dbbb098c8598cb2118dc20 2968 rust-unicode-xid_0.2.4-1.debian.tar.xz"
+    "caf1245f84dc8ef416a7423a144fc1c26fca1be9d9a153be87ce212b12a6316c 1670 rust-unicode-xid_0.2.6-1.dsc ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853 15744 rust-unicode-xid_0.2.6.orig.tar.gz 7788a501181c15aa5c3823ad5b901d29df823bd5115fcb040cf287bdfc30fd8e 3168 rust-unicode-xid_0.2.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-xid"
   ],
   "Files": [
-    "092116cacea46f1ca28ae0ca5546d67a 2261 rust-unicode-xid_0.2.4-1.dsc 1fcc5c68ddd2899481f89c74a6f35ea6 15352 rust-unicode-xid_0.2.4.orig.tar.gz 3feeed18439e7bc324ac12a1ad9920d2 2968 rust-unicode-xid_0.2.4-1.debian.tar.xz"
+    "20952842c1b4c5f91ee6de032747fbf8 1670 rust-unicode-xid_0.2.6-1.dsc 41e2f0237e471d10d38bc7794d30f51a 15744 rust-unicode-xid_0.2.6.orig.tar.gz e034a62e26725e51d87efdaeb158566e 3168 rust-unicode-xid_0.2.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-xid]"
   ],
   "Version": [
-    "0.2.4-1"
+    "0.2.6-1"
   ]
 }
