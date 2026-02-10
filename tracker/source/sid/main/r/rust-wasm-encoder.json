@@ -6,16 +6,19 @@
     "librust-wasm-encoder-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-leb128-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-leb128fmt-0.1-dev \u003c!nocheck\u003e, librust-wasmparser-0.239+component-model-dev \u003c!nocheck\u003e, librust-wasmparser-0.239+simd-dev \u003c!nocheck\u003e, librust-wasmparser-0.239+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f00e97173915a415fa5db04846af786d6cf2db3175352d8e746a591a654131b4 1846 rust-wasm-encoder_0.217.0-1.dsc 7b88b0814c9a2b323a9b46c687e726996c255ac8b64aa237dd11c81ed4854760 62347 rust-wasm-encoder_0.217.0.orig.tar.gz 47ee1a794e0e6a590370a02d991ac3a46f22a0e2d0f0be63c68cc3d6216c0b61 3936 rust-wasm-encoder_0.217.0-1.debian.tar.xz"
+    "19b66f4f0edbeb5f93e298eff5b5fa27f27cfb1db153d8a37c45df40e8de2b4a 2064 rust-wasm-encoder_0.239.0-1.dsc 5be00faa2b4950c76fe618c409d2c3ea5a3c9422013e079482d78544bb2d184c 83923 rust-wasm-encoder_0.239.0.orig.tar.gz bf532facad9e52b84522845fa6ec588bc34658ea4130848e11aae78a9c3357b1 4244 rust-wasm-encoder_0.239.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wasm-encoder"
   ],
   "Files": [
-    "bd0e0ff4e85bba13e013d730b04178cf 1846 rust-wasm-encoder_0.217.0-1.dsc d21fa929bff463172a28b7975f653bb3 62347 rust-wasm-encoder_0.217.0.orig.tar.gz c7d2adb0c4d7aafc9c112305ae22c2ab 3936 rust-wasm-encoder_0.217.0-1.debian.tar.xz"
+    "e95d47560eafd0d67c0074529608484f 2064 rust-wasm-encoder_0.239.0-1.dsc c860f5b2684f9b8a8e42330852ecfabe 83923 rust-wasm-encoder_0.239.0.orig.tar.gz 18b33456f8f59e5d49c54231b779dd2b 4244 rust-wasm-encoder_0.239.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-tempfile-3+default-dev, librust-wasmparser-0.239+default-dev, librust-wasmparser-0.239+validate-dev, librust-wasmprinter-0.239-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wasm-encoder]"
   ],
   "Version": [
-    "0.217.0-1"
+    "0.239.0-1"
   ]
 }
