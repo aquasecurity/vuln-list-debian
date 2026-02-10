@@ -6,16 +6,19 @@
     "librust-wast-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bumpalo-3+default-dev (\u003e= 3.14.0-~~) \u003c!nocheck\u003e, librust-leb128-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.9-~~) \u003c!nocheck\u003e, librust-wasm-encoder-0.217+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bumpalo-3+default-dev (\u003e= 3.14.0-~~) \u003c!nocheck\u003e, librust-leb128fmt-0.1-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e, librust-wasm-encoder-0.239+component-model-dev \u003c!nocheck\u003e, librust-wasm-encoder-0.239+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "83e6aa46da95f756087b3901b0eeb91393596eec3fdccfe8c1985d16ba5f0933 2711 rust-wast_217.0.0-2.dsc 79004ecebded92d3c710d4841383368c7f04b63d0992ddd6b0c7d5029b7629b7 143570 rust-wast_217.0.0.orig.tar.gz 80cfa7a34088f3a60e3afaf90c7ac6374c4170bb47a326e4430811b49f9f4a22 4804 rust-wast_217.0.0-2.debian.tar.xz"
+    "82f8d3b6537dbd43959ef4d075afc25b5c025fc0dc1b223b2cd8604ca54eb498 2113 rust-wast_239.0.0-1.dsc 9139176fe8a2590e0fb174cdcaf373b224cb93c3dde08e4297c1361d2ba1ea5d 156209 rust-wast_239.0.0.orig.tar.gz de25f6f931c3796aeeffc379559526a85182f3b2a4015ed38bdfa8338ddbd0a6 5172 rust-wast_239.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wast"
   ],
   "Files": [
-    "0be9cc414667bb351f3f4fc85adb2518 2711 rust-wast_217.0.0-2.dsc 4cb6ea4c9f34a30d9b343852d838342a 143570 rust-wast_217.0.0.orig.tar.gz 611be0ceea19df818f56cab8fd28d6ab 4804 rust-wast_217.0.0-2.debian.tar.xz"
+    "174d79edfd27e02f088b2e546a708f6d 2113 rust-wast_239.0.0-1.dsc 5532df4f52189cf422a286e173654d03 156209 rust-wast_239.0.0.orig.tar.gz 7d0b4fdd91ea3e107616030d635ae79e 5172 rust-wast_239.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-libtest-mimic-0.7+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-wasmparser-0.217+default-dev, librust-wat-1+default-dev, rustc"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-libtest-mimic-0.7+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-wasmparser-0+default-dev, librust-wat-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wast]"
   ],
   "Version": [
-    "217.0.0-2"
+    "239.0.0-1"
   ]
 }
