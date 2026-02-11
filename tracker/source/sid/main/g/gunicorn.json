@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "gunicorn, gunicorn-examples, python3-gunicorn"
+    "gunicorn, gunicorn-examples, python-gunicorn-doc, python3-gunicorn"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-packaging, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-mkdocs \u003c!nodoc\u003e, dh-sequence-python3, help2man, mkdocs, mkdocs-gen-files, mkdocs-macros-plugin, mkdocs-material, pybuild-plugin-pyproject, python3-all, python3-eventlet, python3-gevent, python3-h2, python3-packaging, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "b5f194290ea1103782ebcac6ad476e31856974d5b269a5294962e389c4699e1c 1872 gunicorn_25.0.3-1.dsc e794496c245c82a14ec39c7d765f23a237b30f6160722693e9c91ccc9a074028 601510 gunicorn_25.0.3.orig.tar.gz 226d2127ee43ae37a8139e5914111274fc212d219ec2077a13647bbac9da88b2 14492 gunicorn_25.0.3-1.debian.tar.xz"
+    "5b52abdb2e9c43b34e87544e387dc8adc98f5e8fec8ad42c9f52733d66a3eed4 2189 gunicorn_25.0.3-2.dsc e794496c245c82a14ec39c7d765f23a237b30f6160722693e9c91ccc9a074028 601510 gunicorn_25.0.3.orig.tar.gz 33482e624cf3ea5fc828ad0aaf77810cc2e202cfc79bf8ab635de2fa4f75b0de 11672 gunicorn_25.0.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gunicorn"
   ],
   "Files": [
-    "9864db602669948d00898ce08d50f8d7 1872 gunicorn_25.0.3-1.dsc 137b04dd9c1284b895ec6792b02a9285 601510 gunicorn_25.0.3.orig.tar.gz f62cd469530ef931285de5c37c2ff461 14492 gunicorn_25.0.3-1.debian.tar.xz"
+    "4a9a20d409f9c50ece5c37bae1cd0512 2189 gunicorn_25.0.3-2.dsc 137b04dd9c1284b895ec6792b02a9285 601510 gunicorn_25.0.3.orig.tar.gz 1e3a7c02e25efaafec6aed4aa42be208 11672 gunicorn_25.0.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "gunicorn"
   ],
   "Package-List": [
-    "gunicorn deb httpd optional arch=all gunicorn-examples deb httpd optional arch=all python3-gunicorn deb python optional arch=all"
+    "gunicorn deb httpd optional arch=all gunicorn-examples deb httpd optional arch=all python-gunicorn-doc deb doc optional arch=all python3-gunicorn deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "curl, procps"
   ],
   "Uploaders": [
-    "Chris Lamb \u003clamby@debian.org\u003e"
+    "Chris Lamb \u003clamby@debian.org\u003e, Michael Fladischer \u003cfladi@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/gunicorn"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/gunicorn.git"
   ],
   "Version": [
-    "25.0.3-1"
+    "25.0.3-2"
   ]
 }
