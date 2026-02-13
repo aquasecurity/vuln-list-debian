@@ -6,16 +6,16 @@
     "r-cran-prodlim"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-rcpp, r-cran-data.table, r-cran-diagram, r-cran-survival, r-cran-kernsmooth, r-cran-lava"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-rcpp, r-cran-rlang, r-cran-data.table, r-cran-ggplot2, r-cran-diagram, r-cran-survival, r-cran-kernsmooth, r-cran-lava, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "892d104de8c85fc48c03c02909ed5ec1e53744e8e986cc583c8bb763fcaa2fc9 2185 r-cran-prodlim_2024.06.25-1.dsc 46961f654171aa7ef0ff94b23508ed59f6a438c3a3ba0d338cc3730224406764 129011 r-cran-prodlim_2024.06.25.orig.tar.gz e8d1445a01d7d8baab1f75f7ef322a46869d266e3c26e09f49a667eacc6ff935 2536 r-cran-prodlim_2024.06.25-1.debian.tar.xz"
+    "f99d5e583b560fed80655c006495780f119ec50d061c00479d4a0e3dd56372a1 2419 r-cran-prodlim_2025.04.28-1.dsc 62b7049aeb947dd54f1ccb210c111ae50eb7461b8c9942601e09a1a10721fc3a 135526 r-cran-prodlim_2025.04.28.orig.tar.gz 141cc892df86a623d8c82b1739af309913e3c09e1674104bcf21484bc2fe1b6b 2972 r-cran-prodlim_2025.04.28-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-prodlim"
   ],
   "Files": [
-    "3df68e8b4085f36b17cbada13a2cb8bf 2185 r-cran-prodlim_2024.06.25-1.dsc cf4cc7858664ad00a4e227aa544b6f0e 129011 r-cran-prodlim_2024.06.25.orig.tar.gz 3f564fb0528d7554f648de2675740635 2536 r-cran-prodlim_2024.06.25-1.debian.tar.xz"
+    "a034477eac14bee30e703c9208e760c8 2419 r-cran-prodlim_2025.04.28-1.dsc eca7064bb5d9fc2a36a792ab99b4ec69 135526 r-cran-prodlim_2025.04.28.orig.tar.gz 86cc2870cf6c5ce9f20bebfc9325007f 2972 r-cran-prodlim_2025.04.28-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-etm, r-cran-ggthemes, r-cran-pammtools, r-cran-riskregression, r-cran-survey, r-cran-testthat, r-cran-tibble"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-prodlim.git"
   ],
   "Version": [
-    "2024.06.25-1"
+    "2025.04.28-1"
   ]
 }
