@@ -9,13 +9,13 @@
     "cmake, debhelper-compat (= 13), libblas-dev, pkgconf, libvulkan-dev, glslc, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.nohip\u003e, libamdhip64-dev (\u003e= 5.7.1-6+deb13u1) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, libhipblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, librocblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e"
   ],
   "Checksums-Sha256": [
-    "52af53f9ef931f28c530e06aa97828f7d76c3cecbb4714aaf257b3f70810d953 2792 ggml_0.9.6-3.dsc c5a7c9d737c25bb080630f1285924ac006e1d909ebc3b2df946e72c6ae0bc222 2543001 ggml_0.9.6.orig.tar.gz 203497b7d4ef9767835a1b7ff95779b665f48861bc998126965e227d64064df5 16452 ggml_0.9.6-3.debian.tar.xz"
+    "b07930c3c6b25fccba54129c6c6b0cc2e4e776207e5c735c783cf03a2563d3a6 2855 ggml_0.9.6-4.dsc c5a7c9d737c25bb080630f1285924ac006e1d909ebc3b2df946e72c6ae0bc222 2543001 ggml_0.9.6.orig.tar.gz bfd7f37c7ffa8c853a93df7a650ef5e5e5b2ca1f9dd566da6448a36c343bcac7 18932 ggml_0.9.6-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/ggml"
   ],
   "Files": [
-    "d8cd783198bc7a76804d382437878b50 2792 ggml_0.9.6-3.dsc 49a69ffcffaec239eb33eb0bdd78f3c3 2543001 ggml_0.9.6.orig.tar.gz 106ae9aec6d97f67c118424cd4abbcc9 16452 ggml_0.9.6-3.debian.tar.xz"
+    "5431c2968dbaee03cb738d4739d5c4e0 2855 ggml_0.9.6-4.dsc 49a69ffcffaec239eb33eb0bdd78f3c3 2543001 ggml_0.9.6.orig.tar.gz 3b47fa280fa1bc514b91fa048a676466 18932 ggml_0.9.6-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "libopenblas0-pthread"
+    "libggml0-backend-cuda, libopenblas0-pthread, mesa-vulkan-drivers, nvidia-vulkan-icd"
   ],
   "Uploaders": [
     "Christian Kastner \u003cckk@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/ggml.git"
   ],
   "Version": [
-    "0.9.6-3"
+    "0.9.6-4"
   ]
 }
