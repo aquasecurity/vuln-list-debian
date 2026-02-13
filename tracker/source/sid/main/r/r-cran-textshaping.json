@@ -6,16 +6,16 @@
     "r-cran-textshaping"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-systemfonts, r-cran-cpp11, libharfbuzz-dev, libfribidi-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-lifecycle, r-cran-stringi, r-cran-systemfonts (\u003e= 1.3.0), r-cran-cpp11, libharfbuzz-dev, libfribidi-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "652b2bd8c7a9402799b67104a176004843e97db2a836be78fb8abd532599b337 2165 r-cran-textshaping_0.3.7-2.dsc fa924dbe1fb4138b80d6c26ee42f4203843f1d34f77e2a5e42514e6fcc97ec42 35100 r-cran-textshaping_0.3.7.orig.tar.gz 7fb3c610952e69028566d781f45936848620476cb4f9b4cc34ba2a91dc892064 2420 r-cran-textshaping_0.3.7-2.debian.tar.xz"
+    "ee6eb5c929ddcb69c4f5335fd80486cbc5e12e19c47c01daf7b39aeab9158a90 2359 r-cran-textshaping_1.0.4-1.dsc 34093bf6ec82840f6e80ec6dced1d5ead26637fae5abe63562958c7274e1b8fb 76738 r-cran-textshaping_1.0.4.orig.tar.gz 67937954cab11b125906fcd8926ef667dc04c42d3668eadd6f7ef326c643cadf 2900 r-cran-textshaping_1.0.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-textshaping"
   ],
   "Files": [
-    "221093073b7cf42c37af576b68aea540 2165 r-cran-textshaping_0.3.7-2.dsc 75e150aec896dd1807e84538456d22e3 35100 r-cran-textshaping_0.3.7.orig.tar.gz 1f3710130fcef3b67db3e95ea89df450 2420 r-cran-textshaping_0.3.7-2.debian.tar.xz"
+    "a11ad231ad112459fe83684bc62687ac 2359 r-cran-textshaping_1.0.4-1.dsc af5ff09d54c995fae896a3c578fbe8a2 76738 r-cran-textshaping_1.0.4.orig.tar.gz 6340ebb66e625b04d42ebe0d552dc238 2900 r-cran-textshaping_1.0.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-covr, r-cran-knitr, r-cran-rmarkdown, r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-textshaping.git"
   ],
   "Version": [
-    "0.3.7-2"
+    "1.0.4-1"
   ]
 }
