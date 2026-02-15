@@ -6,16 +6,19 @@
     "librust-cargo-util-schemas-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-semver-1+default-dev (\u003e= 1.0.23-~~) \u003c!nocheck\u003e, librust-semver-1+serde-dev (\u003e= 1.0.23-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.204-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.204-~~) \u003c!nocheck\u003e, librust-serde-untagged-0.1+default-dev (\u003e= 0.1.6-~~) \u003c!nocheck\u003e, librust-serde-value-0.7+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.63-~~) \u003c!nocheck\u003e, librust-toml-0.8+default-dev (\u003e= 0.8.19-~~) \u003c!nocheck\u003e, librust-unicode-xid-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-semver-1+default-dev (\u003e= 1.0.26-~~) \u003c!nocheck\u003e, librust-semver-1+serde-dev (\u003e= 1.0.26-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.219-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.219-~~) \u003c!nocheck\u003e, librust-serde-untagged-0.1+default-dev (\u003e= 0.1.7-~~) \u003c!nocheck\u003e, librust-serde-value-0.7+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.12-~~) \u003c!nocheck\u003e, librust-toml-0.9+serde-dev \u003c!nocheck\u003e, librust-unicode-xid-0.2+default-dev (\u003e= 0.2.4-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.4-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8825c5b800458964b59e4c8a4b3eb0e18f772555499de4ac7ec8878e9cd693cc 2897 rust-cargo-util-schemas_0.7.0-1.dsc a7a7801ec3ee336018f3f0e66680c3681e5eb58d283e1fad2809531dda7f1ed1 26449 rust-cargo-util-schemas_0.7.0.orig.tar.gz 42a72f025b4c26650fe7be4a81cc55430767895e327909bebbb607ff338ec212 3204 rust-cargo-util-schemas_0.7.0-1.debian.tar.xz"
+    "2a175b1f394037b9915d76fe9d61a23504571430347aacfdf899567ff93324df 3126 rust-cargo-util-schemas_0.10.0-1.dsc b45c9672203db3caf908423f25bc31f3b6a814a9d22f2380048236498a312e75 41684 rust-cargo-util-schemas_0.10.0.orig.tar.gz 6b1b04853e50afcb8ea3819284df10d3a1ad38a0014e79566357289815e0dfe2 3196 rust-cargo-util-schemas_0.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cargo-util-schemas"
   ],
   "Files": [
-    "9bccfbfdb6c2fe34cd08a5113b2913c7 2897 rust-cargo-util-schemas_0.7.0-1.dsc 1a7374312998177e65163f489c27b66e 26449 rust-cargo-util-schemas_0.7.0.orig.tar.gz 1f5109e3af44f03a2d4ba1fd1cf034a3 3204 rust-cargo-util-schemas_0.7.0-1.debian.tar.xz"
+    "fd2aee7778c1ca96ca11d56e1be8952d 3126 rust-cargo-util-schemas_0.10.0-1.dsc 21f1b622bc257f22e71b62dc4b85a3c6 41684 rust-cargo-util-schemas_0.10.0.orig.tar.gz 2c38e1e703aed219e9cd808e42f36000 3196 rust-cargo-util-schemas_0.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-serde-json-1+default-dev, librust-snapbox-0.6+default-dev, librust-snapbox-0.6+diff-dev, librust-snapbox-0.6+dir-dev, librust-snapbox-0.6+json-dev, librust-snapbox-0.6+regex-dev, librust-snapbox-0.6+term-svg-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-util-schemas]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.10.0-1"
   ]
 }
