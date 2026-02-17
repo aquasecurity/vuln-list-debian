@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytecheck-0.8+simdutf8-dev \u003c!nocheck\u003e, librust-bytes-1+std-dev \u003c!nocheck\u003e, librust-hashbrown-dev (\u003c\u003c 0.17-~~) \u003c!nocheck\u003e, librust-hashbrown-dev (\u003e= 0.15-~~) \u003c!nocheck\u003e, librust-indexmap-2+std-dev \u003c!nocheck\u003e, librust-munge-0.4-dev \u003c!nocheck\u003e, librust-ptr-meta-0.3+std-dev \u003c!nocheck\u003e, librust-ptr-meta-0.3-dev \u003c!nocheck\u003e, librust-rancor-0.1+alloc-dev \u003c!nocheck\u003e, librust-rancor-0.1-dev \u003c!nocheck\u003e, librust-rend-0.5+bytecheck-dev \u003c!nocheck\u003e, librust-rend-0.5-dev \u003c!nocheck\u003e, librust-rkyv-derive-0.8+bytecheck-dev (\u003c\u003c 0.8.13-~~) \u003c!nocheck\u003e, librust-rkyv-derive-0.8+bytecheck-dev (\u003e= 0.8.12-~~) \u003c!nocheck\u003e, librust-rkyv-derive-0.8-dev (\u003c\u003c 0.8.13-~~) \u003c!nocheck\u003e, librust-rkyv-derive-0.8-dev (\u003e= 0.8.12-~~) \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytecheck-0.8+simdutf8-dev \u003c!nocheck\u003e, librust-bytes-1+std-dev \u003c!nocheck\u003e, librust-hashbrown-0.16-dev \u003c!nocheck\u003e, librust-indexmap-2+std-dev \u003c!nocheck\u003e, librust-munge-0.4-dev \u003c!nocheck\u003e, librust-ptr-meta-0.3+std-dev \u003c!nocheck\u003e, librust-ptr-meta-0.3-dev \u003c!nocheck\u003e, librust-rancor-0.1+alloc-dev \u003c!nocheck\u003e, librust-rancor-0.1-dev \u003c!nocheck\u003e, librust-rend-0.5+bytecheck-dev \u003c!nocheck\u003e, librust-rend-0.5-dev \u003c!nocheck\u003e, librust-rkyv-derive-0.8+bytecheck-dev (\u003c\u003c 0.8.16-~~) \u003c!nocheck\u003e, librust-rkyv-derive-0.8+bytecheck-dev (\u003e= 0.8.15-~~) \u003c!nocheck\u003e, librust-rkyv-derive-0.8-dev (\u003c\u003c 0.8.16-~~) \u003c!nocheck\u003e, librust-rkyv-derive-0.8-dev (\u003e= 0.8.15-~~) \u003c!nocheck\u003e, librust-tinyvec-1+alloc-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2bf53266a321309a481caed8859954f219fafb3593c8cd53fb2dc500ffaefede 2401 rust-rkyv_0.8.12-3.dsc 35a640b26f007713818e9a9b65d34da1cf58538207b052916a83d80e43f3ffa4 169611 rust-rkyv_0.8.12.orig.tar.gz b6fcffce750e8bfd14874cb0e5b1fb3b1d6fe4bd415191dc1f8ddb229b7b40e1 6092 rust-rkyv_0.8.12-3.debian.tar.xz"
+    "6ebe5aec4a487bcb359a9c5660dedf80c89d45fe76da1a2b5edc8e87a6175a4f 2350 rust-rkyv_0.8.15-1.dsc 1a30e631b7f4a03dee9056b8ef6982e8ba371dd5bedb74d3ec86df4499132c70 165972 rust-rkyv_0.8.15.orig.tar.gz 0a682ed0e8297c27145ccdc2a4d0451813b1ce8f054e3ed011e12fa56e8ff7e8 5976 rust-rkyv_0.8.15-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rkyv"
   ],
   "Files": [
-    "6717ad48f67e2442f9c025d6a5d11a5b 2401 rust-rkyv_0.8.12-3.dsc bcd0bcc20d9368e05ece8894e24836c0 169611 rust-rkyv_0.8.12.orig.tar.gz 62427a7a1ed5d3e3015a06b5bc024db8 6092 rust-rkyv_0.8.12-3.debian.tar.xz"
+    "f43a7e371457ffcf21c26ffcad3cdf3f 2350 rust-rkyv_0.8.15-1.dsc 9ca7d970500ead69b0ce441093e87aa9 165972 rust-rkyv_0.8.15.orig.tar.gz 85a05f77ad81f4ca6ddb77061d744107 5976 rust-rkyv_0.8.15-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-foldhash+default-dev, librust-rustversion-1-dev, librust-trybuild-1-dev, rustc"
+    "dh-cargo, librust-foldhash-0.2+default-dev, librust-rustversion-1-dev, librust-trybuild-1-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rkyv]"
   ],
   "Version": [
-    "0.8.12-3"
+    "0.8.15-1"
   ]
 }
