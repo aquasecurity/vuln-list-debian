@@ -6,19 +6,25 @@
     "librust-polyline-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-geo-types-0.7+default-dev (\u003e= 0.7.8-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-geo-types-0.7+default-dev (\u003e= 0.7.8) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6266088cc421537774aa780e5460388db6c37c67ac298e9bf6234c8431e3f3cf 2319 rust-polyline_0.10.1-2.dsc 1ca7aef00a33f8fd8a4a2999f994f06fe61cd45bb7b7cf62e60b708922fe6952 29650 rust-polyline_0.10.1.orig.tar.gz 0d1927137b53bd6efc7c98321f3c9d2ee8dde1f52565acab99c94d0e08bc4e0a 2940 rust-polyline_0.10.1-2.debian.tar.xz"
+    "066521ac056da7a04ca72404a469063258bb29693f76cdcc07d550795003cccf 1760 rust-polyline_0.11.0+dfsg-1.dsc f19cbf429afe5a5186d4c6ca7b246b446b2d18919eefdddb521792d57c874f67 31680 rust-polyline_0.11.0+dfsg.orig.tar.gz fc84e91a5a14319bdc34b26c4dd7556c39ab2f0698a836a91e90f2808b7ed319 3064 rust-polyline_0.11.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-polyline"
   ],
   "Files": [
-    "b9b51dfd2d9545b108d44371b22594dd 2319 rust-polyline_0.10.1-2.dsc d41862575852417db842a342d286311c 29650 rust-polyline_0.10.1.orig.tar.gz aaed3c3d25cf0e2e92be10b78027b3ce 2940 rust-polyline_0.10.1-2.debian.tar.xz"
+    "9422995a9657ded8fcc8e0b3c3280df7 1760 rust-polyline_0.11.0+dfsg-1.dsc f44403034ff44154313a8ef615f4b215 31680 rust-polyline_0.11.0+dfsg.orig.tar.gz fc5ab1ef22ce88ada51fad637bc9b0ba 3064 rust-polyline_0.11.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/georust/polyline"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e, Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/polyline]"
   ],
   "Version": [
-    "0.10.1-2"
+    "0.11.0+dfsg-1"
   ]
 }

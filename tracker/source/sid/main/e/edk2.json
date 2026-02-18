@@ -3,7 +3,7 @@
     "all"
   ],
   "Binary": [
-    "ovmf, ovmf-generic, ovmf-amdsev, ovmf-inteltdx, qemu-efi-aarch64, qemu-efi-riscv64, qemu-efi-loongarch64, efi-shell-x64, efi-shell-aa64, efi-shell-riscv64, efi-shell-loongarch64"
+    "ovmf, ovmf-generic, ovmf-legacy, ovmf-amdsev, ovmf-inteltdx, qemu-efi-aarch64, qemu-efi-riscv64, qemu-efi-loongarch64, efi-shell-x64, efi-shell-aa64, efi-shell-riscv64, efi-shell-loongarch64"
   ],
   "Build-Depends": [
     "bc, debhelper-compat (= 12), dosfstools [amd64 arm64] \u003c!nocheck\u003e, dpkg (\u003e= 1.19.3), gcc-aarch64-linux-gnu, gcc-multilib [i386], gcc-riscv64-linux-gnu, gcc-loongarch64-linux-gnu, grub-efi-amd64-signed [amd64] \u003c!nocheck\u003e, grub-efi-arm64-signed [arm64] \u003c!nocheck\u003e, iasl, lsb-release, mtools [amd64 arm64] \u003c!nocheck\u003e, nasm, openssl [amd64 arm64] \u003c!nocheck\u003e, python3, python3-pexpect \u003c!nocheck\u003e, python3-virt-firmware, qemu-system-aarch64, qemu-system-loongarch64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-riscv64 [amd64 arm64 loong64 mips64 mips64el ppc64 ppc64el riscv64 s390x sparc64] \u003c!nocheck\u003e, qemu-system-x86-64 \u003c!nocheck\u003e, rsync, sbsigntool [amd64 arm64] \u003c!nocheck\u003e, shim-signed [amd64 arm64] \u003c!nocheck\u003e, uuid-dev, xorriso [amd64 arm64] \u003c!nocheck\u003e"
@@ -12,13 +12,13 @@
     "amd64"
   ],
   "Checksums-Sha256": [
-    "943968ae3c9bd723f0bd7d3f6fcae4fe657b58df6659b69783989afdf54093a1 3068 edk2_2025.11-3.dsc 926f148812c119a8d89b763ffd343ca99dd37c7b7e61e335ea51ef7db07d8c24 60617840 edk2_2025.11.orig.tar.xz 5debbdd0ffadfb47c742efa1160578d6eb6661fc2b8a35a724a1ef909ec54499 68048 edk2_2025.11-3.debian.tar.xz"
+    "74e17da17108cd61542051ad0c7bee3f1889ed8bffae13093c8a27c3b09e6f02 3048 edk2_2025.11-4.dsc 926f148812c119a8d89b763ffd343ca99dd37c7b7e61e335ea51ef7db07d8c24 60617840 edk2_2025.11.orig.tar.xz 7750de8b1609f4f125815eed7b7bd2eac3d2e0838256716ec7dec2159bd71866 69192 edk2_2025.11-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/edk2"
   ],
   "Files": [
-    "0ff147ae2794b839fceea6acf0710f0c 3068 edk2_2025.11-3.dsc 1e434a676e9a8aa36eae6cff15752ed4 60617840 edk2_2025.11.orig.tar.xz b98b84e191f84ba477366f2df05c55e7 68048 edk2_2025.11-3.debian.tar.xz"
+    "41039935d13eba8e4b693d1c2bc06f50 3048 edk2_2025.11-4.dsc 1e434a676e9a8aa36eae6cff15752ed4 60617840 edk2_2025.11.orig.tar.xz 965a8fba38e22de92009eaa5004409e1 69192 edk2_2025.11-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "edk2"
   ],
   "Package-List": [
-    "efi-shell-aa64 deb misc optional arch=all efi-shell-loongarch64 deb misc optional arch=all efi-shell-riscv64 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-amdsev deb misc optional arch=all ovmf-generic deb misc optional arch=all ovmf-inteltdx deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-loongarch64 deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
+    "efi-shell-aa64 deb misc optional arch=all efi-shell-loongarch64 deb misc optional arch=all efi-shell-riscv64 deb misc optional arch=all efi-shell-x64 deb misc optional arch=all ovmf deb misc optional arch=all ovmf-amdsev deb misc optional arch=all ovmf-generic deb misc optional arch=all ovmf-inteltdx deb misc optional arch=all ovmf-legacy deb misc optional arch=all qemu-efi-aarch64 deb misc optional arch=all qemu-efi-loongarch64 deb misc optional arch=all qemu-efi-riscv64 deb misc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/qemu-team/edk2.git"
   ],
   "Version": [
-    "2025.11-3"
+    "2025.11-4"
   ]
 }

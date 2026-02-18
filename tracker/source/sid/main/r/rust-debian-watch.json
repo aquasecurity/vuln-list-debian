@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-4+default-dev (\u003e= 4.5-~~) \u003c!nocheck\u003e, librust-clap-4+derive-dev (\u003e= 4.5-~~) \u003c!nocheck\u003e, librust-deb822-lossless-0.5+default-dev (\u003e= 0.5.7-~~) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003c\u003c 0.6-~~) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.4.7-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0+default-dev (\u003c\u003c 0.0.5-~~) \u003c!nocheck\u003e, librust-m-lexer-0.0+default-dev (\u003e= 0.0.4-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-rowan-0.16+default-dev (\u003e= 0.16.1-~~) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.7-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-4+default-dev (\u003e= 4.5) \u003c!nocheck\u003e, librust-clap-4+derive-dev (\u003e= 4.5) \u003c!nocheck\u003e, librust-deb822-lossless-0.5+default-dev (\u003e= 0.5.7) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003c\u003c 0.6) \u003c!nocheck\u003e, librust-debversion+default-dev (\u003e= 0.4.7) \u003c!nocheck\u003e, librust-m-lexer-0.0+default-dev (\u003c\u003c 0.0.5) \u003c!nocheck\u003e, librust-m-lexer-0.0+default-dev (\u003e= 0.0.4) \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-rowan-0.16+default-dev (\u003e= 0.16.1) \u003c!nocheck\u003e, librust-url-2+default-dev (\u003e= 2.5.7) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "833a3f9a6b7e13fccffedc8226cf0ee681a6eabbb9c014fe3991e219b22956c4 2497 rust-debian-watch_0.3.5-1.dsc 544d5af06ced78bbc9e9debc98c638ee5a59e01fa0996b0b1f2d9e961d1c520f 71883 rust-debian-watch_0.3.5.orig.tar.gz 9a3ee49244f08e482dafe963922f55957e8c26575702a308ae6cfee97700fdbb 2812 rust-debian-watch_0.3.5-1.debian.tar.xz"
+    "65e5ae224c5455c7d1b7ec4a46e31e2a96bb823923df815d7e35456ac832b019 2587 rust-debian-watch_0.3.7-1.dsc 2a5c78b4b7c4fe783dd35c8d8f078b803f9d0b84b2ee8ae4377890477fef0839 74461 rust-debian-watch_0.3.7.orig.tar.gz a54682edbeaa649ad0d74c2e6949eb27346f14a3324419f0280983dafbf192c9 2912 rust-debian-watch_0.3.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-debian-watch"
   ],
   "Files": [
-    "6914d869089ba5a2b21d665c078302b3 2497 rust-debian-watch_0.3.5-1.dsc 665f12428a451a5babaff36ae89b841a 71883 rust-debian-watch_0.3.5.orig.tar.gz d201dba859db290527e35afd2af3b290 2812 rust-debian-watch_0.3.5-1.debian.tar.xz"
+    "6c35d8c2aae5be1d3df58f8ae2333cf3 2587 rust-debian-watch_0.3.7-1.dsc ba0e1fdfeda9f4277b78b478aa46efc4 74461 rust-debian-watch_0.3.7.orig.tar.gz 4aa6e65ea5ddff6d6c27c24c6f1b0691 2912 rust-debian-watch_0.3.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-maplit-1+default-dev, rustc"
+    "dh-cargo, librust-maplit-1+default-dev, librust-tiny-http-0.12+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/debian-watch]"
   ],
   "Version": [
-    "0.3.5-1"
+    "0.3.7-1"
   ]
 }
