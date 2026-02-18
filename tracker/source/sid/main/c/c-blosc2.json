@@ -1,15 +1,15 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libblosc2-dev, libblosc2-6"
+    "libblosc2-dev, libblosc2-7, libblosc2-doc"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), cmake, dh-cmake-compat (= 1), dh-sequence-cmake, dh-sequence-sphinxdoc, dh-sequence-pkgkde-symbolshelper, liblz4-dev, pkg-kde-tools, zlib1g-dev, libzstd-dev, python3-breathe \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e"
+    "cmake, debhelper-compat (= 13), doxygen \u003c!nodoc\u003e, dh-cmake-compat (= 1), dh-sequence-cmake, dh-sequence-sphinxdoc, dh-sequence-pkgkde-symbolshelper, dpkg-dev (\u003e= 1.22.5), liblz4-dev, libzstd-dev, pkg-kde-tools, python3-breathe \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "627d25547b24ccb92c69153242c87b801e78bad30149b1b829a1facffcf48e31 3207 c-blosc2_2.22.0+ds-1.dsc 97afec9cc30b33c62a342abf311ec9a66576680f190c5ff816e1aea674152e82 1426412 c-blosc2_2.22.0+ds.orig.tar.xz 618a6e74fad323c13338d7df0ae5d02d96421127784d98f7a6cc4f031a1793df 7064 c-blosc2_2.22.0+ds-1.debian.tar.xz"
+    "3d364888387ff78bcb95479c8546d070c3c261a2013530135fca629aed9766f3 3285 c-blosc2_2.23.0+ds-1.dsc 8912d0ac6a3fc7642dfc00324f7d4b3b49dd44a5ee1c7340e7c2ad511cbed855 1426084 c-blosc2_2.23.0+ds.orig.tar.xz cae0fa42bf7f6b1edb86fd7313a534872f05aa4ed3d67f5cfa460b97163a03d7 8960 c-blosc2_2.23.0+ds-1.debian.tar.xz"
   ],
   "Description": [
     "Fast, compressed, persistent binary data store library for C Blosc is a high performance compressor optimized for binary data. It has been designed to transmit data to the processor cache faster than the traditional, non-compressed, direct memory fetch approach via a memcpy() OS call. Blosc main goal is not just to reduce the size of large datasets on-disk or in-memory, but also to accelerate memory-bound computations. . C-Blosc2 is the new major version of C-Blosc, and tries hard to be backward compatible with both the C-Blosc1 API and its in-memory format. However, the reverse thing is generally not true for the format; buffers generated with C-Blosc2 are not format-compatible with C-Blosc1 (i.e. forward compatibility is not supported). In case you want to ensure full API compatibility with C-Blosc1 API, define the BLOSC1_COMPAT symbol."
@@ -18,7 +18,7 @@
     "pool/main/c/c-blosc2"
   ],
   "Files": [
-    "31e392e29b175229ca022f3511cc046a 3207 c-blosc2_2.22.0+ds-1.dsc 496be9c5f43c40fbde970cb63489e4ae 1426412 c-blosc2_2.22.0+ds.orig.tar.xz f26087cdae8c58b0746489835b2d402d 7064 c-blosc2_2.22.0+ds-1.debian.tar.xz"
+    "b1e7f7fd3403d73709db7d4affa0257c 3285 c-blosc2_2.23.0+ds-1.dsc ada1a38a3d242477453fef2bbed69f65 1426084 c-blosc2_2.23.0+ds.orig.tar.xz 3a94793003dcad6f4a109a7b979f723b 8960 c-blosc2_2.23.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "c-blosc2"
   ],
   "Package-List": [
-    "libblosc2-6 deb libs optional arch=any libblosc2-dev deb libdevel optional arch=any"
+    "libblosc2-7 deb libs optional arch=any libblosc2-dev deb libdevel optional arch=any libblosc2-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Uploaders": [
     "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/science-team/c-blosc2.git"
   ],
   "Version": [
-    "2.22.0+ds-1"
+    "2.23.0+ds-1"
   ]
 }

@@ -3,19 +3,22 @@
     "all"
   ],
   "Binary": [
-    "python-cairocffi-doc, python3-cairocffi"
+    "python3-cairocffi, python-cairocffi-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, flit, libcairo2, libgdk-pixbuf-2.0-0, libgtk-3-dev, pybuild-plugin-pyproject, python3-all, python3-cffi, python3-coverage \u003c!nocheck\u003e, python3-flake8 \u003c!nocheck\u003e, python3-isort \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pikepdf \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-xcffib (\u003e= 0.3.2), shared-mime-info, xauth, xvfb"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc"
+  ],
+  "Build-Depends-Indep": [
+    "flit, libcairo2, libgdk-pixbuf-2.0-0, libgtk-3-dev, pybuild-plugin-pyproject, python3-all, python3-cffi, python3-coverage \u003c!nocheck\u003e, python3-flake8 \u003c!nocheck\u003e, python3-isort \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-pikepdf \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-xvfb \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-xcffib, shared-mime-info"
   ],
   "Checksums-Sha256": [
-    "999eb1ca6e94871cd51a34227c0bc7527dfa19da98151fb8ad559eb2a124edff 2392 cairocffi_1.7.1-4.dsc 6fb37d5ccd4de93e79203bb862a52aefbfb94924c0dd3ace41d8e020b608372d 87741 cairocffi_1.7.1.orig.tar.gz e977d3d36b06f9db79c354b9d0641713061dd4ae810baa21004c8b88fb64cb8d 150288 cairocffi_1.7.1-4.debian.tar.xz"
+    "89d7c341566b460962458ec59a76f816cf0d2f0bf74cec9e8b22ef6c6ff6c34c 2555 cairocffi_1.7.1-5.dsc 6fb37d5ccd4de93e79203bb862a52aefbfb94924c0dd3ace41d8e020b608372d 87741 cairocffi_1.7.1.orig.tar.gz fc249a9e1de80a9214645d58bf5567c1debe6c2af78ed8b600d12617273e6079 150660 cairocffi_1.7.1-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/cairocffi"
   ],
   "Files": [
-    "2024d70f6a86ab97db0580dba55b73dd 2392 cairocffi_1.7.1-4.dsc 90ca42f574320c8d95e9e30c1f62426a 87741 cairocffi_1.7.1.orig.tar.gz e1f98a6856f28cae5b6db14c481d6db8 150288 cairocffi_1.7.1-4.debian.tar.xz"
+    "b5b66e3c87e1d52f500935ba510b98bd 2555 cairocffi_1.7.1-5.dsc 90ca42f574320c8d95e9e30c1f62426a 87741 cairocffi_1.7.1.orig.tar.gz d16f2b97120d844d1e7b3a4d86a69ac7 150660 cairocffi_1.7.1-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Arian Ott \u003carian.ott@ieee.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/cairocffi"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/cairocffi.git"
   ],
   "Version": [
-    "1.7.1-4"
+    "1.7.1-5"
   ]
 }
