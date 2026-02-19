@@ -6,19 +6,25 @@
     "librust-num-cpus-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.26-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.26-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3a3a5fe6fea045a8412cf736ff91655fdb905aedd0bbe4c400f1c424d9422c02 2218 rust-num-cpus_1.16.0-1.dsc 4161fcb6d602d4d2081af7c3a45852d875a03dd337a6bfdd6e06407b61342a43 15713 rust-num-cpus_1.16.0.orig.tar.gz 610b0dcdc7d31d8c331408fd0e8d6821200b1c51b4f9a0520786bcde1d7e57c2 3104 rust-num-cpus_1.16.0-1.debian.tar.xz"
+    "77684f91123671b9c897b56d27c17877fc71e2aba035e06264adf49a39f4eb08 2301 rust-num-cpus_1.17.0-1.dsc 91df4bbde75afed763b708b7eee1e8e7651e02d97f6d5dd763e89367e957b23b 15874 rust-num-cpus_1.17.0.orig.tar.gz d1c71ba641ef6561935b5f1129a59ed9b21478e0dbaee5e0d211fdd229761da0 3080 rust-num-cpus_1.17.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-cpus"
   ],
   "Files": [
-    "b8767bdae88ad5e0fc45ca3c3ab0a012 2218 rust-num-cpus_1.16.0-1.dsc d443cbf9907b31a0f396fb13489d6cd0 15713 rust-num-cpus_1.16.0.orig.tar.gz 9d8ad98386844409dc88837160b86c97 3104 rust-num-cpus_1.16.0-1.debian.tar.xz"
+    "bc2cf01496ea083fa107b68992dc22e7 2301 rust-num-cpus_1.17.0-1.dsc 9b08761c5be54489cdd3d759005554a1 15874 rust-num-cpus_1.17.0.orig.tar.gz 8024b99c4a2796e39614c98a63b71ea8 3080 rust-num-cpus_1.17.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/seanmonstar/num_cpus"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e, Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-cpus]"
   ],
   "Version": [
-    "1.16.0-1"
+    "1.17.0-1"
   ]
 }
