@@ -6,16 +6,16 @@
     "r-cran-tufte"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-htmltools, r-cran-knitr, r-cran-rmarkdown (\u003e= 2.11), r-cran-xfun"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-htmltools, r-cran-knitr, r-cran-rmarkdown, r-cran-xfun, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "0e4af75df00bf5df69c56b3097789d97cf85da185759ccb5ccf0954e5a4e2818 2106 r-cran-tufte_0.13-1.dsc f1e3578afe85a006a11709471c84f9af71b439488d74f5398336de447e130f8c 251676 r-cran-tufte_0.13.orig.tar.gz 4e3d1ff1a2a34216a1160f91c67b0c2470128d709885349807d4aa7ed5934310 3056 r-cran-tufte_0.13-1.debian.tar.xz"
+    "70065c7dc40e2ec1225ab9a9eaca245d8510e56cfa391e54373ca9b41e551951 2241 r-cran-tufte_0.14.0-1.dsc 0b69dd5408858747e5180d0c2b06164583b66ae7c69e860dfe2f77740c48774a 251527 r-cran-tufte_0.14.0.orig.tar.gz 7085909d235878ff0fcef380e8c3669a064f424d86f9fa3a2820ecd080d8d47a 3496 r-cran-tufte_0.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-tufte"
   ],
   "Files": [
-    "5d310c38b5b707344941ebb687f0f83c 2106 r-cran-tufte_0.13-1.dsc bc40d5df8f6e7f0e20fd11db2b4bcad7 251676 r-cran-tufte_0.13.orig.tar.gz f1a89298d272fe6c964265c55b34157e 3056 r-cran-tufte_0.13-1.debian.tar.xz"
+    "cfcd21d06becff8544e9d74a23ff5b18 2241 r-cran-tufte_0.14.0-1.dsc 9ecf37e2b308ef5bf559c396b417b197 251527 r-cran-tufte_0.14.0.orig.tar.gz f9ceae7d295b6fc3c6df29d0a4826bc4 3496 r-cran-tufte_0.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-covr, r-cran-testthat, r-cran-withr"
   ],
   "Uploaders": [
     "Johannes 'josch' Schauer \u003cjosch@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-tufte.git"
   ],
   "Version": [
-    "0.13-1"
+    "0.14.0-1"
   ]
 }
