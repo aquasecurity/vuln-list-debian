@@ -6,16 +6,16 @@
     "pwndck"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, dh-python, python3 (\u003e= 3.9), python3-poetry, pandoc"
+    "debhelper-compat (= 13), pybuild-plugin-pyproject, dh-python, python3 (\u003e= 3.9), python3-poetry, pandoc, python3-pytest, python3-pytest-mock"
   ],
   "Checksums-Sha256": [
-    "1611c35eb19137192216799e5087a53a4d58c420a9131325989504589ed37c38 1893 pwndck_0.2-3.dsc 2cb9874f3b4d8d79ba3174fd5d7eacf2b8a7b3e6be8b4fa6215b206b917526bb 11321 pwndck_0.2.orig.tar.gz 483eb94fab8882f7b2a4a39cb96313fa2a2129f0fb666aaa2ec4fdc20bd87563 2268 pwndck_0.2-3.debian.tar.xz"
+    "92ea7e8f99c46538f85fccef764a2379a94923a0905ec71b4c9fe96240d85597 2009 pwndck_0.5-1.dsc 314bd18f267fb65a68a1611c50daf71c6d57c6a56dcda3cc2389d4d35d7fad47 15431 pwndck_0.5.orig.tar.gz ce9f7f81356b92f8cc069772fa835e7a1de0511cb9308cd1f2a5817db958d8af 2872 pwndck_0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pwndck"
   ],
   "Files": [
-    "0a91fd020d5a10b0a63522e63801bcbc 1893 pwndck_0.2-3.dsc 617c14a0baafab6496c02fc7347bc4c6 11321 pwndck_0.2.orig.tar.gz cef02db684405018e8366ae86b8a0343 2268 pwndck_0.2-3.debian.tar.xz"
+    "ceb90f0d023f55dd59e05df6b9d03a4c 2009 pwndck_0.5-1.dsc cd9ea3643afccbc831e6227310798cd4 15431 pwndck_0.5.orig.tar.gz 5e939d753da3d1c7f4dc08fd4319220e 2872 pwndck_0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.2"
   ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Vcs-Browser": [
     "https://github.com/davesteele/pwndck"
   ],
@@ -48,6 +54,6 @@
     "https://github.com/davesteele/pwndck.git -b debian"
   ],
   "Version": [
-    "0.2-3"
+    "0.5-1"
   ]
 }

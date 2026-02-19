@@ -6,16 +6,16 @@
     "python3-tomoscan"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-defusedxml \u003c!nocheck\u003e, python3-dicttoxml \u003c!nocheck\u003e, python3-h5py (\u003e= 3.0) \u003c!nocheck\u003e, python3-lxml \u003c!nocheck\u003e, python3-nxtomo \u003c!nocheck\u003e, python3-packaging, python3-pytest \u003c!nocheck\u003e, python3-pyunitsystem \u003c!nocheck\u003e, python3-setuptools, python3-silx \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-defusedxml \u003c!nocheck\u003e, python3-dicttoxml \u003c!nocheck\u003e, python3-h5py (\u003e= 3.0) \u003c!nocheck\u003e, python3-lxml \u003c!nocheck\u003e, python3-nxtomo \u003c!nocheck\u003e, python3-platformdirs, python3-pytest \u003c!nocheck\u003e, python3-pyunitsystem \u003c!nocheck\u003e, python3-setuptools, python3-silx \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5ec655b050e9b36912283a2d0e0de3931b465ea2fb75a64a53da4eecaa9e8536 2378 tomoscan_2.3.1-2.dsc d75777266dbf183401de13293e467ed2d29aac975fe734634f6d0f336b3e276e 180643 tomoscan_2.3.1.orig.tar.gz fb134898455d752eadb907758e69921b5c9e5ea8d00f3372bacc2ff2e2bf275e 3124 tomoscan_2.3.1-2.debian.tar.xz"
+    "b7eea306b7c8f1c435f55d2df3f69f7c5c3503dd807f3fba7e8d214102ca1463 2534 tomoscan_2.3.5-1.dsc 1c416c7cdaa0797da8a3b931aa07601e48041b5bf022711ac505f0f3ae92c4d3 177909 tomoscan_2.3.5.orig.tar.gz 74737753eea97321332eda549a905973ccd11eb71be5210ee30053e54316aebf 3452 tomoscan_2.3.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tomoscan"
   ],
   "Files": [
-    "45d14c494ee0980e6751bdc75e6f8898 2378 tomoscan_2.3.1-2.dsc e850ad36563842915bd9390cff8ddd71 180643 tomoscan_2.3.1.orig.tar.gz dabbe72b1d3932e41b26ed7667f49226 3124 tomoscan_2.3.1-2.debian.tar.xz"
+    "9e8a3efd4a9c6542316fbaf070c434e8 2534 tomoscan_2.3.5-1.dsc 1c69dae29a0728777418fa8554eec0f8 177909 tomoscan_2.3.5.orig.tar.gz 13ee407067f7f318d6cc78bc5f9c05d5 3452 tomoscan_2.3.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "4.6.2.0"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-fsspec, python3-gitlab, python3-glymur, python3-pytest, python3-tifffile, python3-tqdm, python3-zarr"
   ],
   "Uploaders": [
-    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e,"
+    "Debian Python Team \u003cteam+python@tracker.debian.org\u003e, Roland Mas \u003clolando@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/tomoscan"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/tomoscan.git"
   ],
   "Version": [
-    "2.3.1-2"
+    "2.3.5-1"
   ]
 }

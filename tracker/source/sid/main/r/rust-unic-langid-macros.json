@@ -6,19 +6,25 @@
     "librust-unic-langid-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-hack-0.5+default-dev \u003c!nocheck\u003e, librust-tinystr-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e, librust-unic-langid-impl-0.9+default-dev \u003c!nocheck\u003e, librust-unic-langid-macros-impl-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-hack-0.5+default-dev \u003c!nocheck\u003e, librust-tinystr-0.8+default-dev \u003c!nocheck\u003e, librust-unic-langid-impl-0.9+default-dev (\u003e= 0.9.6-~~) \u003c!nocheck\u003e, librust-unic-langid-macros-impl-0.9+default-dev (\u003e= 0.9.6-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8a965102dd8748c9031f397e1dd6fbfcccf6de5cade5fd568bb6a843a30d355e 2454 rust-unic-langid-macros_0.9.0-1.dsc 18f980d6d87e8805f2836d64b4138cc95aa7986fa63b1f51f67d5fbff64dd6e5 1855 rust-unic-langid-macros_0.9.0.orig.tar.gz 21166dcf3f1c24721b61114ef20cc0cc8de55ce7ff932cf3a854984d9a2dcaa4 2604 rust-unic-langid-macros_0.9.0-1.debian.tar.xz"
+    "2ccdb8e7388df2738fdf44f8b6f1cf9218999b2deeab708a1f97d59d5175db00 1947 rust-unic-langid-macros_0.9.6-1.dsc d5957eb82e346d7add14182a3315a7e298f04e1ba4baac36f7f0dbfedba5fc25 6517 rust-unic-langid-macros_0.9.6.orig.tar.gz 05b6569a2fb822d5e9996cadca9325a38206ad435a1abac0acb46f056cf12db3 2636 rust-unic-langid-macros_0.9.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unic-langid-macros"
   ],
   "Files": [
-    "0b77dca03eb68339548d56487fd866aa 2454 rust-unic-langid-macros_0.9.0-1.dsc 19ae41ceccb1f5aa8fc488fa020304df 1855 rust-unic-langid-macros_0.9.0.orig.tar.gz 9c64cdf93e0fd5b91ffcd34b4f21b0c6 2604 rust-unic-langid-macros_0.9.0-1.debian.tar.xz"
+    "39a4bea6306b0906b7cafcc2b1a8d281 1947 rust-unic-langid-macros_0.9.6-1.dsc d95e21b375ecd206010e315b8a8316d8 6517 rust-unic-langid-macros_0.9.6.orig.tar.gz f3d2980230ab3344222ba52993f741c4 2636 rust-unic-langid-macros_0.9.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/zbraniecki/unic-locale"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unic-langid-macros]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.9.6-1"
   ]
 }

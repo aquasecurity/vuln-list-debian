@@ -6,19 +6,25 @@
     "librust-tinystr-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-displaydoc-0.2-dev (\u003e= 0.2.3-~~) \u003c!nocheck\u003e, librust-serde-core-1+alloc-dev (\u003e= 1.0.220-~~) \u003c!nocheck\u003e, librust-zerovec-0.11+alloc-dev (\u003e= 0.11.3-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a432b5ed0496af73ec67e328506c66df6dfce18e23b5f50656b1bfb094b6a1f7 2148 rust-tinystr_0.3.2-2.dsc 4bac79c4b51eda1b090b1edebfb667821bbb51f713855164dc7cec2cb8ac2ba3 17495 rust-tinystr_0.3.2.orig.tar.gz 1b1e2c53e9327e26705d1ee50434cad9c224ff50600ceb1cd3509086994283ab 2520 rust-tinystr_0.3.2-2.debian.tar.xz"
+    "e8d0a4dff565167e1087824c91ca3147339645fcdcc3d7d513f76f1a1e04828d 1993 rust-tinystr_0.8.2-1.dsc 42d3e9c45c09de15d06dd8acf5f4e0e399e85927b7f00711024eb7ae10fa4869 23942 rust-tinystr_0.8.2.orig.tar.gz 237dc12cbc599633989326918a3873bd54cf46fe68665e16edec1e1f91491543 4084 rust-tinystr_0.8.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tinystr"
   ],
   "Files": [
-    "d4e05868e86f07a04073ffbc0ffefe6b 2148 rust-tinystr_0.3.2-2.dsc 20f423bc8cd98d10baba6a95775e0647 17495 rust-tinystr_0.3.2.orig.tar.gz 77164fed8e6d7ca6d758c3061bf67664 2520 rust-tinystr_0.3.2-2.debian.tar.xz"
+    "4fb1a0554cb251cd3f06347ae557b79a 1993 rust-tinystr_0.8.2-1.dsc 7134a4b036cb49118765602f8d954dcc 23942 rust-tinystr_0.8.2.orig.tar.gz 196a52ff97b657b95e6c27204c0031a8 4084 rust-tinystr_0.8.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/unicode-org/icu4x"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-postcard-1+use-std-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-serde-json-1+alloc-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tinystr]"
   ],
   "Version": [
-    "0.3.2-2"
+    "0.8.2-1"
   ]
 }

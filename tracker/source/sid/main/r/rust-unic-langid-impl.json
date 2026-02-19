@@ -6,19 +6,25 @@
     "librust-unic-langid-impl-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tinystr-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tinystr-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "76fe26a2d99486c76a225824998b778b1914a210014fa426085277c21d71a4a9 2491 rust-unic-langid-impl_0.9.0-1.dsc 1a4a8eeaf0494862c1404c95ec2f4c33a2acff5076f64314b465e3ddae1b934d 33921 rust-unic-langid-impl_0.9.0.orig.tar.gz 7d9221a98ac4a33fb0840dd37d21a772d43f1765260eb5fbe64d82603cace28d 8188 rust-unic-langid-impl_0.9.0-1.debian.tar.xz"
+    "b02df1a11b5e4432f66a86be8054d891d9688316f9aeee5a17f3e7494c4de868 1861 rust-unic-langid-impl_0.9.6-1.dsc dce1bf08044d4b7a94028c93786f8566047edc11110595914de93362559bc658 90020 rust-unic-langid-impl_0.9.6.orig.tar.gz 7cb9ffbfc94d83c9b973e0a8c2bab21c52c275cee4100bd863d3b11a9f09905d 3028 rust-unic-langid-impl_0.9.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unic-langid-impl"
   ],
   "Files": [
-    "76ae0b431ace26f1345ce13305fb1e00 2491 rust-unic-langid-impl_0.9.0-1.dsc 8ccae00ef1d6ab83dbd93330fe204dcb 33921 rust-unic-langid-impl_0.9.0.orig.tar.gz 16879b7e60beb6f5771b48bc18ee06f3 8188 rust-unic-langid-impl_0.9.0-1.debian.tar.xz"
+    "210ef394714cbd8d68617c5fcba5e213 1861 rust-unic-langid-impl_0.9.6-1.dsc a01b2ca379d293dc887c7501146c4ecd 90020 rust-unic-langid-impl_0.9.6.orig.tar.gz 87eaaec115bd2f05d2fae1454f7fb082 3028 rust-unic-langid-impl_0.9.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/zbraniecki/unic-locale"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.2"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unic-langid-impl]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.9.6-1"
   ]
 }
