@@ -9,22 +9,22 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+std-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.89) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-borsh-1+std-dev (\u003e= 1.4.0-~~) \u003c!nocheck\u003e, librust-serde-core-1+std-dev (\u003e= 1.0.220-~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "201c7f768f2999b9e732e9c0ec72ead6656c6fdcd0c5a9b986dd484ddc6586da 2413 rust-smol-str_0.2.2-1.dsc dd538fb6910ac1099850255cf94a94df6551fbdd602454387d0adb2d1ca6dead 15840 rust-smol-str_0.2.2.orig.tar.gz d4332e599a25e4235f619f6b6ba96c39db1b23b1320dc58daed43e82edcaf3f6 3012 rust-smol-str_0.2.2-1.debian.tar.xz"
+    "3c2cd36ede7fb7f61bfd247c3622169eb8777f480318b487b9aab026766e09fd 1899 rust-smol-str_0.3.5-2.dsc 0f7a918bd2a9951d18ee6e48f076843e8e73a9a5d22cf05bcd4b7a81bdd04e17 26311 rust-smol-str_0.3.5.orig.tar.gz e9bcd6b597c4a88eb85efafeb51428632ca7ef580cf58920f7491ec099cfc1df 4724 rust-smol-str_0.3.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-smol-str"
   ],
   "Files": [
-    "ebe4b007ceb04ab3d2c0b70bb04b7c04 2413 rust-smol-str_0.2.2-1.dsc 5d43e51d91d4f3c13779812d8c7526bd 15840 rust-smol-str_0.2.2.orig.tar.gz 6124ce7aa0a9527542fb94c6208ea89a 3012 rust-smol-str_0.2.2-1.debian.tar.xz"
+    "fbe7e076feaafcaba4fe20449e696469 1899 rust-smol-str_0.3.5-2.dsc 209f55fd6ed1b4366b183d8fea2a1e54 26311 rust-smol-str_0.3.5.orig.tar.gz b134a902a98aa5f3651f625c5b6d32be 4724 rust-smol-str_0.3.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/rust-analyzer/smol_str"
+    "https://github.com/rust-lang/rust-analyzer/tree/master/lib/smol_str"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proptest-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-proptest-1+default-dev, librust-rand-0.8+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/smol-str]"
   ],
   "Version": [
-    "0.2.2-1"
+    "0.3.5-2"
   ]
 }
