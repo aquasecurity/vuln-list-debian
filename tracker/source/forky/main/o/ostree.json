@@ -6,19 +6,19 @@
     "gir1.2-ostree-1.0, libostree-1-1, libostree-dev, libostree-doc, ostree, ostree-boot, ostree-tests"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13.11.6~), debhelper-compat (= 13), dh-sequence-gir, attr, autoconf, automake, bison, bsdextrautils \u003c!nocheck\u003e, ca-certificates, cpio, docbook-xml \u003c!nodoc\u003e, docbook-xsl \u003c!nodoc\u003e, elfutils, fuse3:native, gir1.2-gio-2.0-dev, gjs:native [!alpha !armel !hppa !ia64 !m68k !sh4 !sparc64 !x32], gnupg \u003c!nocheck\u003e, gobject-introspection, gobject-introspection (\u003e= 1.78.1-7~) \u003ccross\u003e, gtk-doc-tools \u003c!nodoc\u003e, jq \u003c!nocheck\u003e, libarchive-dev, libattr1-dev, libavahi-client-dev, libavahi-glib-dev, libcap-dev, libcurl4-openssl-dev | libcurl-dev, libext2fs-dev, libfuse3-dev, libglib2.0-dev, libgpgme-dev, liblzma-dev, libmount-dev, libselinux1-dev, libsoup-3.0-dev (\u003e= 3.0.0), libsystemd-dev, libtool, pkgconf, procps, python3 \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e, xsltproc \u003c!nodoc\u003e, zlib1g-dev"
+    "debhelper (\u003e= 13.11.6~), debhelper-compat (= 13), dh-sequence-gir, attr, autoconf, automake, bison, bsdextrautils \u003c!nocheck\u003e, ca-certificates, composefs [!alpha !hppa !m68k !sh4] \u003c!nocheck\u003e, cpio, docbook-xml \u003c!nodoc\u003e, docbook-xsl \u003c!nodoc\u003e, elfutils, fuse3:native, gir1.2-gio-2.0-dev, gjs:native [!alpha !hppa !m68k !powerpc !sh4 !sparc64 !x32], gnupg \u003c!nocheck\u003e, gobject-introspection, gobject-introspection (\u003e= 1.78.1-7~) \u003ccross\u003e, gtk-doc-tools \u003c!nodoc\u003e, jq \u003c!nocheck\u003e, libarchive-dev, libattr1-dev, libavahi-client-dev, libavahi-glib-dev, libcap-dev, libcomposefs-dev [!alpha !hppa !m68k !sh4], libcurl4-openssl-dev | libcurl-dev, libext2fs-dev, libfuse3-dev, libglib2.0-dev, libgpgme-dev, liblzma-dev, libmount-dev, libselinux1-dev, libsoup-3.0-dev (\u003e= 3.0.0), libsystemd-dev, libtool, pkgconf, procps, python3 \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e, xsltproc \u003c!nodoc\u003e, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
     "libglib2.0-doc"
   ],
   "Checksums-Sha256": [
-    "18f7d3c58cf457d7ca469712402abbb51cf5873ca97829e6ccca9ae59d383429 3319 ostree_2025.7-2.dsc af8d080b9585e7fd1faba8f022967e1c268ae62e20ecf32ee7b364c1e307570b 2134020 ostree_2025.7.orig.tar.xz 9b04ceceec74efa3370da851632ef829063fce89fa1d0e71c883ed5da7a93308 31460 ostree_2025.7-2.debian.tar.xz"
+    "dce589844ff8a2591bf1c3796b92594cceb253c0d93d76195925a8866eb85ff2 3418 ostree_2025.7-3.dsc af8d080b9585e7fd1faba8f022967e1c268ae62e20ecf32ee7b364c1e307570b 2134020 ostree_2025.7.orig.tar.xz d22d38a2bf8262e8beb6d8055ff2a6f749c131d6bbb1faced22b64e6495926ff 31548 ostree_2025.7-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/ostree"
   ],
   "Files": [
-    "18fe6ea0217de7f2af48a0c8c72034b1 3319 ostree_2025.7-2.dsc e1d52acbbada17252dfc42b5964abec8 2134020 ostree_2025.7.orig.tar.xz 588526b4b4a1a1fa594d1c3344d81e04 31460 ostree_2025.7-2.debian.tar.xz"
+    "8a18f7b1ee074ac223efcb8bfb3ea41b 3418 ostree_2025.7-3.dsc e1d52acbbada17252dfc42b5964abec8 2134020 ostree_2025.7.orig.tar.xz 01ffc63128dfd1b5e56d6c267bfcebea 31548 ostree_2025.7-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, gnome-desktop-testing, pkgconf"
+    "build-essential, composefs, gnome-desktop-testing, pkgconf"
   ],
   "Uploaders": [
     "Matthias Klumpp \u003cmak@debian.org\u003e, Simon McVittie \u003csmcv@debian.org\u003e, Sjoerd Simons \u003csjoerd@debian.org\u003e, Dylan Aïssi \u003cdaissi@debian.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/ostree.git"
   ],
   "Version": [
-    "2025.7-2"
+    "2025.7-3"
   ]
 }

@@ -6,16 +6,16 @@
     "r-cran-yulab.utils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-cli, r-cran-digest, r-cran-fs, r-cran-rlang"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-cli, r-cran-digest, r-cran-fs, r-cran-rappdirs, r-cran-rlang, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "f3fb15e9e83924beecfea6eb8d0cbea1d2822f7c10201ace78674b1235c07f02 2150 r-cran-yulab.utils_0.2.0-1.dsc e79cebefb1439ed68e2f9e613c3dd54230ad3b8a659792b2831dd57fb7105d6a 25030 r-cran-yulab.utils_0.2.0.orig.tar.gz 9fb840dfae7044630d5e21f9ec661174ea69b176411a775ad86fc673f865561d 4736 r-cran-yulab.utils_0.2.0-1.debian.tar.xz"
+    "7b1e82cb5fbaee92b38eb84bd5131db6fc49476c5782e6afb82a5e637367930a 2309 r-cran-yulab.utils_0.2.4-1.dsc 437055d75f7e81d1afd403c0eaae34780a8baf779f01fc5ef0b4b17e45407b81 34166 r-cran-yulab.utils_0.2.4.orig.tar.gz 67697e82a1bd0c2536e3e6a021d57764a62d7ec296127abf955306a3197b8486 5196 r-cran-yulab.utils_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-yulab.utils"
   ],
   "Files": [
-    "e7d6b8abae451b617a82ed18be5530d5 2150 r-cran-yulab.utils_0.2.0-1.dsc 14a3b22a16fbe3c822ec2d14d9535254 25030 r-cran-yulab.utils_0.2.0.orig.tar.gz d7bdd125485e0062977a623427e9a4fd 4736 r-cran-yulab.utils_0.2.0-1.debian.tar.xz"
+    "fe32b3a379c262decf432b88a626024d 2309 r-cran-yulab.utils_0.2.4-1.dsc 533d32dc0a1fe1654a6421560b2d23c2 34166 r-cran-yulab.utils_0.2.4.orig.tar.gz 6d81abde8616e49a8ac10dcacd1f00c0 5196 r-cran-yulab.utils_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-httr2, r-cran-jsonlite, r-cran-openssl, r-cran-r.utils, r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-yulab.utils.git"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.4-1"
   ]
 }
