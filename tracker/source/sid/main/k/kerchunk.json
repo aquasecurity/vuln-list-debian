@@ -1,0 +1,62 @@
+{
+  "Architecture": [
+    "all"
+  ],
+  "Binary": [
+    "python3-kerchunk, python-kerchunk-doc"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-astropy \u003c!nodoc\u003e, python3-dask \u003c!nocheck\u003e, python3-cfgrib, python3-cftime, python3-eccodes \u003c!nodoc\u003e, python3-fsspec, python3-h5netcdf \u003c!nocheck\u003e, python3-h5py, python3-netcdf4 \u003c!nocheck\u003e, python3-numcodecs, python3-numpy, python3-numpydoc \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-tifffile \u003c!nodoc\u003e, python3-ujson, python3-xarray, python3-zarr"
+  ],
+  "Checksums-Sha256": [
+    "f3181d2d00da6943bb3c764e4c901f74385c81141ed78c2c1b0036dd8ca618ca 4478 kerchunk_0.2.9-1.dsc c9f1d718c46272138d283487a04e1d23a9dd5efcd60ac68baec7059a88829ef7 124716963 kerchunk_0.2.9.orig.tar.gz b95bc61f807541adc780543b62c920ea0fec170520d5deabf572a98d86d6611d 6788 kerchunk_0.2.9-1.debian.tar.xz"
+  ],
+  "Description": [
+    "Cloud-friendly access to archival data Kerchunk is a library that provides a unified way to represent a variety of chunked, compressed data formats (e.g. NetCDF, HDF5, GRIB), allowing efficient access to the data from traditional file systems or cloud object storage.  It also provides a flexible way to create virtual datasets from multiple files.  It does this by extracting the byte ranges, compression information and other information about the data and storing this metadata in a new, separate object. This means that you can create a virtual aggregate dataset over potentially many source files, for efficient, parallel and cloud-friendly *in-situ* access without having to copy or translate the originals. It is a gateway to in-the-cloud massive data processing while the data providers still insist on using legacy formats for archival storage. . Features: . * completely serverless architecture * metadata consolidation, so you can understand a many-file dataset (metadata plus physical storage) in a single read * read from all of the storage backends supported by fsspec, including object storage (s3, gcs, abfs, alibaba), http, cloud user storage (dropbox, gdrive) and network protocols (ftp, ssh, hdfs, smb...) * loading of various file types (currently netcdf4/HDF, grib2, tiff, fits, zarr), potentially heterogeneous within a single dataset, without a need to go via the specific driver (e.g., no need for h5py) * asynchronous concurrent fetch of many data chunks in one go, amortizing the cost of latency * parallel access with a library like zarr without any locks * logical datasets viewing many (\u003e~millions) data files, and direct access/subselection to them via coordinate indexing across an arbitrary number of dimensions"
+  ],
+  "Directory": [
+    "pool/main/k/kerchunk"
+  ],
+  "Files": [
+    "ee239506897c27012cdc1c3ee4b81cd6 4478 kerchunk_0.2.9-1.dsc 37d48624e7e1c39a79f866204090a04c 124716963 kerchunk_0.2.9.orig.tar.gz 11ebcb233ec497e28816f9aa7d308b21 6788 kerchunk_0.2.9-1.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/fsspec/kerchunk"
+  ],
+  "Maintainer": [
+    "Debian GIS Project \u003cpkg-grass-devel@lists.alioth.debian.org\u003e"
+  ],
+  "Package": [
+    "kerchunk"
+  ],
+  "Package-List": [
+    "python-kerchunk-doc deb doc optional arch=all python3-kerchunk deb python optional arch=all"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "doc"
+  ],
+  "Standards-Version": [
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/debian-gis-team/kerchunk"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/debian-gis-team/kerchunk.git"
+  ],
+  "Version": [
+    "0.2.9-1"
+  ]
+}

@@ -6,16 +6,19 @@
     "librust-escargot-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.4-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.2.0-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.113-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.113-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.4) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.113) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.113) \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a64c3ea18422365a579a6811054bf002d3ca095b1cbfeeae341307aff1b5b796 2548 rust-escargot_0.5.12-1.dsc c000f23e9d459aef148b7267e02b03b94a0aaacf4ec64c65612f67e02f525fb6 20774 rust-escargot_0.5.12.orig.tar.gz 858552f0f3925c2a28a09474995af0387eafd49f540e0a012502f5f5fba4972d 5848 rust-escargot_0.5.12-1.debian.tar.xz"
+    "48f96db8e80a5894f036a6629d4ea1ddef4c0d20b067bc3327445cd21057285c 1879 rust-escargot_0.5.15-1.dsc 11c3aea32bc97b500c9ca6a72b768a26e558264303d101d3409cf6d57a9ed0cf 21657 rust-escargot_0.5.15.orig.tar.gz 397de7e0629ac3ad7fa57f717082e567d8515028e857f390955fc41263daa408 5840 rust-escargot_0.5.15-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-escargot"
   ],
   "Files": [
-    "5268596d710802b154b7e201348d5963 2548 rust-escargot_0.5.12-1.dsc cddefbd7d9f34f3ff2ea7cc147d3585a 20774 rust-escargot_0.5.12.orig.tar.gz 3df27ecd2374f7038c6803573a0750e8 5848 rust-escargot_0.5.12-1.debian.tar.xz"
+    "b182cce43a39485312b5ac15526e572e 1879 rust-escargot_0.5.15-1.dsc 41332f82f660a64f30c33ad5f78cf2e4 21657 rust-escargot_0.5.15.orig.tar.gz b4945042fdf92bda9e1c45b32e285357 5840 rust-escargot_0.5.15-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-automod-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-automod-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/escargot]"
   ],
   "Version": [
-    "0.5.12-1"
+    "0.5.15-1"
   ]
 }

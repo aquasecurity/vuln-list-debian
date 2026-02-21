@@ -6,19 +6,25 @@
     "librust-matches-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 8), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c551b0d33ea587051b61b32549e21ed13a992d8cab59b5243c0aa72081afe5bb 2050 rust-matches_0.1.8-1.dsc 7ffc5c5338469d4d3ea17d269fa8ea3512ad247247c30bd2df69e68309ed0a08 2216 rust-matches_0.1.8.orig.tar.gz 3859bd8de3cd4815e3c21303c16a2ecafe6614f29836e2b71dcd9027f3c93103 2400 rust-matches_0.1.8-1.debian.tar.xz"
+    "6eddde1aee4dde73857e11291a81e778178c7bce5c155961dbf96d2cd0415bdc 1598 rust-matches_0.1.10-1.dsc 2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5 2592 rust-matches_0.1.10.orig.tar.gz c2c2b37f9f30de8717ac134adf0fe8793740572f67647e45fb165dbb41ba33bc 2672 rust-matches_0.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-matches"
   ],
   "Files": [
-    "61a0eb1c9344d75efc69129d3f1b78f3 2050 rust-matches_0.1.8-1.dsc 7916dcd738a8fa6a2798754c20d6e146 2216 rust-matches_0.1.8.orig.tar.gz 929e8145a66885b95f231a90c0156f50 2400 rust-matches_0.1.8-1.debian.tar.xz"
+    "e3008c52e42ef7745d37985386053f7b 1598 rust-matches_0.1.10-1.dsc 1cf0db5ea492bd048cfac1327e8bfce0 2592 rust-matches_0.1.10.orig.tar.gz b91ae30454664853d1badb3db47cb571 2672 rust-matches_0.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/SimonSapin/rust-std-candidates"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.0"
+    "4.7.3"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -48,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/matches]"
   ],
   "Version": [
-    "0.1.8-1"
+    "0.1.10-1"
   ]
 }
