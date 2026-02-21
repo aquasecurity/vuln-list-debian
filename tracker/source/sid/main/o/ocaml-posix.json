@@ -6,22 +6,28 @@
     "libposix-bindings-ocaml, libposix-bindings-ocaml-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), ocaml-dune (\u003e= 2.8.0), dh-ocaml (\u003e= 1.2.2), ocaml-findlib, libctypes-ocaml-dev, libdune-ocaml-dev, libunix-errno-ocaml-dev, libounit-ocaml-dev, ocaml"
+    "debhelper-compat (= 13), ocaml-dune (\u003e= 2.8.0), dh-ocaml (\u003e= 1.2.2), ocaml-findlib, libctypes-ocaml-dev, libdune-ocaml-dev, libounit-ocaml-dev, liblwt-ocaml-dev \u003c!nocheck\u003e, ocaml"
   ],
   "Checksums-Sha256": [
-    "3573afb8b8ff41be23428c8cf7b890cfb87a0501f7ad344afed987c45bb9b679 2056 ocaml-posix_4.0.1-1.dsc 8087297bf33dfef3535b928d1316b91bd074218b093413aab58fb3d4df043c70 90284 ocaml-posix_4.0.1.orig.tar.gz 9a69591cd38aeb696dc138796b6f42f0edc57f73b1e94237b5bdebb02275589c 2592 ocaml-posix_4.0.1-1.debian.tar.xz"
+    "22d04447bd7414108a3889444a87ce0de6e515d3571a6193da3213c986243dd1 2594 ocaml-posix_4.0.1-2.dsc 8087297bf33dfef3535b928d1316b91bd074218b093413aab58fb3d4df043c70 90284 ocaml-posix_4.0.1.orig.tar.gz fc2b783ebeeb220a03b4dc430bcd7430ac19036aa11f1d5d349af811218f4d74 4212 ocaml-posix_4.0.1-2.debian.tar.xz"
   ],
   "Dgit": [
-    "9aa187d4b4ae7d51a4cac57d74b44b7dad59e251 debian archive/debian/4.0.1-1 https://git.dgit.debian.org/ocaml-posix"
+    "c86070523630b96b2f7db2bcc822c7e4d4cd507c debian archive/debian/4.0.1-2 https://git.dgit.debian.org/ocaml-posix"
   ],
   "Directory": [
     "pool/main/o/ocaml-posix"
   ],
   "Files": [
-    "15eb3a4a9a19a03859cc55103295754d 2056 ocaml-posix_4.0.1-1.dsc 464f431a8517dba4295286dd61f3ff2c 90284 ocaml-posix_4.0.1.orig.tar.gz f70d29601a60d8786c1bfb0f965b99db 2592 ocaml-posix_4.0.1-1.debian.tar.xz"
+    "0a91496c36767dc8839e324f5ee54d35 2594 ocaml-posix_4.0.1-2.dsc 464f431a8517dba4295286dd61f3ff2c 90284 ocaml-posix_4.0.1.orig.tar.gz 2a93c9ce383f210411f5c45d0d41925e 4212 ocaml-posix_4.0.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=1f0c665cf4c5541d22104c8689fef772ea7da48b fp=6de24e97eca886cc56e6250e21b8eef1b1893081"
+  ],
+  "Git-Tag-Tagger": [
+    "Stéphane Glondu \u003cglondu@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/savonet/ocaml-posix"
@@ -48,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "ocaml-dune"
+    "libdune-ocaml-dev, liblwt-ocaml-dev, libounit-ocaml-dev, ocaml-dune"
   ],
   "Uploaders": [
     "Kyle Robbertze \u003cpaddatrapper@debian.org\u003e"
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/ocaml-team/ocaml-posix.git"
   ],
   "Version": [
-    "4.0.1-1"
+    "4.0.1-2"
   ]
 }

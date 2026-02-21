@@ -6,19 +6,25 @@
     "librust-doc-comment-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 26), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5943a995f77219216c1624c7b194d6cc496b1e26229c61d2d534fafc403d0406 2187 rust-doc-comment_0.3.3-1.dsc fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10 4123 rust-doc-comment_0.3.3.orig.tar.gz 77df202b654d7c326b826a45bc6fb5a85327656b4a5e2d16c50f4d610440a794 2700 rust-doc-comment_0.3.3-1.debian.tar.xz"
+    "4e5fa38ff488f1d14f61adce6618081d9ef6e9d69d5990e0bcb846ecaf7d054a 1637 rust-doc-comment_0.3.4-1.dsc 780955b8b195a21ab8e4ac6b60dd1dbdcec1dc6c51c0617964b08c81785e12c9 4341 rust-doc-comment_0.3.4.orig.tar.gz 066056b1511e1e4f58eee852d3b9cfac553445f9422156ed6e88fdbaad238ab4 2776 rust-doc-comment_0.3.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-doc-comment"
   ],
   "Files": [
-    "6d4a91e49669f17e5a4130c97b022629 2187 rust-doc-comment_0.3.3-1.dsc dd1e49c76e9d5853e673a3b41ba02917 4123 rust-doc-comment_0.3.3.orig.tar.gz a772dfa9a4ca98bb1f9cbb74a71aba43 2700 rust-doc-comment_0.3.3-1.debian.tar.xz"
+    "ccdf432436f54ee65e82b03b01dbc9ff 1637 rust-doc-comment_0.3.4-1.dsc cfb8413e36520adc115e16cc21f6d3b2 4341 rust-doc-comment_0.3.4.orig.tar.gz 373a418df81986e35f8526a22028aea2 2776 rust-doc-comment_0.3.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/GuillaumeGomez/doc-comment"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/doc-comment]"
   ],
   "Version": [
-    "0.3.3-1"
+    "0.3.4-1"
   ]
 }
