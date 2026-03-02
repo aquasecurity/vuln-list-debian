@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any-amd64 any-i386 arm64 armel armhf mips mips64el mipsel ppc64el alpha hppa m68k powerpc powerpcspe ppc64 sh4 sparc64 all"
+    "any-amd64 any-i386 alpha arm64 armel armhf hppa m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el sh4 sparc64 all"
   ],
   "Binary": [
     "python3-cobra, python-cobra-data"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, libglpk-dev, python3-dev, python3-setuptools, python3-depinfo, python3-numpy, python3-optlang (\u003e= 1.7.0-1~), python3-ruamel.yaml, python3-pandas, python3-pip, python3-pipdeptree, python3-requests, python3-swiglpk (\u003e= 5.0.8-1~), python3-tabulate, python3-sbml5, cython3, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, libsbml5-dev \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-platformdirs \u003c!nocheck\u003e, python3-diskcache \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-pydantic \u003c!nocheck\u003e, python3-rich \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, cython3, libglpk-dev, libsbml5-dev \u003c!nocheck\u003e, python3-depinfo, python3-dev, python3-diskcache \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-numpy, python3-optlang (\u003e= 1.7.0-1~), python3-pandas, python3-pip, python3-pipdeptree, python3-platformdirs \u003c!nocheck\u003e, python3-pydantic \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-requests, python3-rich \u003c!nocheck\u003e, python3-ruamel.yaml, python3-sbml5, python3-setuptools, python3-swiglpk (\u003e= 5.0.8-1~), python3-tabulate"
   ],
   "Checksums-Sha256": [
-    "4c7904222bde3ae178d41261c4fd340bb6070c1ab40f23057bf1b4fb79ae7f76 3080 python-cobra_0.29.1-3.dsc 2c60269959e212525ca79e85d990dba48c92e30db5795446f48e777912fc92a2 3651233 python-cobra_0.29.1.orig.tar.gz 3bbec91aab04b021fa787a226b5c0b27627d92ac3f6f680d25853d819493fa2e 11104 python-cobra_0.29.1-3.debian.tar.xz"
+    "3b649bc1dcbc3bf19faa6cf3688c0baf266e1cf18ce3e89cbe07840b456caa13 3073 python-cobra_0.29.1-4.dsc 2c60269959e212525ca79e85d990dba48c92e30db5795446f48e777912fc92a2 3651233 python-cobra_0.29.1.orig.tar.gz d3b365126dc1a6df97997d80bac9e52685127175b10bd1b1fe3b1447f8fd2d62 10972 python-cobra_0.29.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-cobra"
   ],
   "Files": [
-    "1cecbc230219bfc54a18eca8ece6ac48 3080 python-cobra_0.29.1-3.dsc 2100d8959c33d2f04185dfcaab39c9e0 3651233 python-cobra_0.29.1.orig.tar.gz 8cd546abe5ed5e5f85eea1022b0148e0 11104 python-cobra_0.29.1-3.debian.tar.xz"
+    "ce59725b2207cd752329913a6e7d7509 3073 python-cobra_0.29.1-4.dsc 2100d8959c33d2f04185dfcaab39c9e0 3651233 python-cobra_0.29.1.orig.tar.gz fcabd4c7ded4fdb8ac730a1a9d5e6164 10972 python-cobra_0.29.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python-cobra"
   ],
   "Package-List": [
-    "python-cobra-data deb python optional arch=all python3-cobra deb python optional arch=any-amd64,arm64,armel,armhf,any-i386,mips,mips64el,mipsel,ppc64el,alpha,hppa,m68k,powerpc,powerpcspe,ppc64,sh4,sparc64,x32"
+    "python-cobra-data deb python optional arch=all python3-cobra deb python optional arch=any-amd64,any-i386,alpha,arm64,armel,armhf,hppa,m68k,mips,mips64el,mipsel,powerpc,powerpcspe,ppc64,ppc64el,sh4,sparc64,x32"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-jsonschema, python3-pytest, python3-pytest-benchmark, python3-pytest-mock, python3-sbml5, python3-scipy, quilt"
+    "python3-jsonschema, python3-pytest, python3-pytest-benchmark, python3-pytest-mock, python3-sbml5, python3-scipy"
   ],
   "Uploaders": [
     "Afif Elghraoui \u003cafif@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/python-cobra.git"
   ],
   "Version": [
-    "0.29.1-3"
+    "0.29.1-4"
   ]
 }
