@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "pinentry-curses, pinentry-tty, pinentry-qt, pinentry-gtk2, pinentry-fltk, pinentry-gnome3, pinentry-doc"
+    "pinentry-curses, pinentry-tty, pinentry-qt, pinentry-fltk, pinentry-gnome3, pinentry-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libassuan-dev, libfltk1.3-dev \u003c!pkg.pinentry.onlytty\u003e, libgcr-3-dev \u003c!pkg.pinentry.onlytty\u003e, libglib2.0-dev \u003c!pkg.pinentry.onlytty\u003e, libgpg-error-dev, libgtk2.0-dev \u003c!pkg.pinentry.onlytty\u003e, libkf6guiaddons-dev \u003c!pkg.pinentry.onlytty\u003e, libkf6windowsystem-dev \u003c!pkg.pinentry.onlytty\u003e, libncurses-dev \u003c!pkg.pinentry.onlytty\u003e, libsecret-1-dev \u003c!pkg.pinentry.onlytty\u003e, m4, pkgconf, qt6-base-dev \u003c!pkg.pinentry.onlytty\u003e, texinfo"
+    "debhelper-compat (= 13), libassuan-dev, libfltk1.4-dev \u003c!pkg.pinentry.onlytty\u003e, libgcr-3-dev \u003c!pkg.pinentry.onlytty\u003e, libglib2.0-dev \u003c!pkg.pinentry.onlytty\u003e, libgpg-error-dev, libkf6guiaddons-dev \u003c!pkg.pinentry.onlytty\u003e, libkf6windowsystem-dev \u003c!pkg.pinentry.onlytty\u003e, libncurses-dev \u003c!pkg.pinentry.onlytty\u003e, libsecret-1-dev \u003c!pkg.pinentry.onlytty\u003e, m4, pkgconf, qt6-base-dev \u003c!pkg.pinentry.onlytty\u003e, texinfo"
   ],
   "Checksums-Sha256": [
-    "500dfc87acaf1dcdd2c43beeacf3ebc9be4dd05a3b273eb9883ffe57dabda763 3206 pinentry_1.3.2-3.dsc 8e986ed88561b4da6e9efe0c54fa4ca8923035c99264df0b0464497c5fb94e9e 612858 pinentry_1.3.2.orig.tar.bz2 b95fc1c5ed983ca6c3376477d328010dce4a494fce491be02d4c5a1e018a516f 427 pinentry_1.3.2.orig.tar.bz2.asc 6c47584678c274890a648da4fb35138ffc13afec1e31884a4d882789f5b08cfb 19628 pinentry_1.3.2-3.debian.tar.xz"
+    "83960cadf15c5d1f570d15a8927f4bbeb11bc42704f1081a0c066143933cf4c3 3209 pinentry_1.3.2-4.dsc 8e986ed88561b4da6e9efe0c54fa4ca8923035c99264df0b0464497c5fb94e9e 612858 pinentry_1.3.2.orig.tar.bz2 b95fc1c5ed983ca6c3376477d328010dce4a494fce491be02d4c5a1e018a516f 427 pinentry_1.3.2.orig.tar.bz2.asc 144c662e85ca16c99fa22b270aa1c1744082c27e536f50b86fbd2804991357ed 20068 pinentry_1.3.2-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pinentry"
   ],
   "Files": [
-    "2f0066164fced056d3b62e2cb6f35d1f 3206 pinentry_1.3.2-3.dsc 5247373d2e9ac73b1ea662bd270e58a4 612858 pinentry_1.3.2.orig.tar.bz2 78eeb9eb16e65112b5f34a3f5e0adbac 427 pinentry_1.3.2.orig.tar.bz2.asc 19dff5f1f6451c82194544d6c2b6ea54 19628 pinentry_1.3.2-3.debian.tar.xz"
+    "f026b5b9909a935cab8618fe44a0200c 3209 pinentry_1.3.2-4.dsc 5247373d2e9ac73b1ea662bd270e58a4 612858 pinentry_1.3.2.orig.tar.bz2 78eeb9eb16e65112b5f34a3f5e0adbac 427 pinentry_1.3.2.orig.tar.bz2.asc 8476a9b3fa13d081c1013e1b35e489c5 20068 pinentry_1.3.2-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pinentry"
   ],
   "Package-List": [
-    "pinentry-curses deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-doc deb doc optional arch=all pinentry-fltk deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-gnome3 deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-gtk2 deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-qt deb utils optional arch=any profile=!pkg.pinentry.onlytty pinentry-tty deb utils optional arch=any"
+    "pinentry-curses deb utils optional arch=any profile=!pkg.pinentry.onlytty profile:v1=!pkg.pinentry.onlytty pinentry-doc deb doc optional arch=all pinentry-fltk deb utils optional arch=any profile=!pkg.pinentry.onlytty profile:v1=!pkg.pinentry.onlytty pinentry-gnome3 deb utils optional arch=any profile=!pkg.pinentry.onlytty profile:v1=!pkg.pinentry.onlytty pinentry-qt deb utils optional arch=any profile=!pkg.pinentry.onlytty profile:v1=!pkg.pinentry.onlytty pinentry-tty deb utils optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "python3"
   ],
   "Uploaders": [
-    "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Andreas Metzler \u003cametzler@debian.org\u003e,"
+    "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e, Andreas Metzler \u003cametzler@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/pinentry"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/pinentry.git"
   ],
   "Version": [
-    "1.3.2-3"
+    "1.3.2-4"
   ]
 }
