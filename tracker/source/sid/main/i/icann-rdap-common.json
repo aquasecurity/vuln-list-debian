@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, librust-buildstructor-dev, librust-chrono-dev \u003c!nocheck\u003e, librust-cidr-dev \u003c!nocheck\u003e, librust-const-format-dev \u003c!nocheck\u003e, librust-idna-dev \u003c!nocheck\u003e, librust-ipnet-dev \u003c!nocheck\u003e, librust-prefix-trie-dev \u003c!nocheck\u003e, librust-serde-dev \u003c!nocheck\u003e, librust-serde-json-dev \u003c!nocheck\u003e, librust-str-inflector-dev, librust-strum-dev \u003c!nocheck\u003e, librust-strum-macros-dev \u003c!nocheck\u003e, librust-thiserror-dev \u003c!nocheck\u003e, librust-try-match-dev, librust-try-match-inner-dev, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, librust-buildstructor-dev, librust-chrono-dev \u003c!nocheck\u003e, librust-cidr-dev \u003c!nocheck\u003e, librust-const-format-dev \u003c!nocheck\u003e, librust-idna-dev \u003c!nocheck\u003e, librust-indoc-dev, librust-ipnet-dev \u003c!nocheck\u003e, librust-prefix-trie-dev (\u003e= 0.2.4) \u003c!nocheck\u003e, librust-serde-dev \u003c!nocheck\u003e, librust-serde-json-dev \u003c!nocheck\u003e, librust-str-inflector-dev, librust-strum-dev \u003c!nocheck\u003e, librust-strum-macros-dev \u003c!nocheck\u003e, librust-thiserror-dev \u003c!nocheck\u003e, librust-try-match-dev, librust-try-match-inner-dev, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "84022e4d37e16af460ca42104cad5f74b59ecd870eae4ce1821d450cf5fece60 2015 icann-rdap-common_0.0.25-2.dsc 33193cba56f9d2f0cc823993ce456b613cb916130c8abf442152c159303f5b69 91384 icann-rdap-common_0.0.25.orig.tar.xz 69adee1f2e9518cbff959992e3e2486ed5d89ae740ba3afa342b74742f298857 2912 icann-rdap-common_0.0.25-2.debian.tar.xz"
+    "dfe3ab3e9f1aafeadc7d3048d13a320dfdb9123485e96659c4b1a9f05e0c5cdc 2077 icann-rdap-common_0.0.28-1.dsc cf088b97a2cb51bd259d4c0257334d1c9a48afc9ccfd3dea4611a0e27fb8eccd 106364 icann-rdap-common_0.0.28.orig.tar.xz 1d975efd4bb6bf8f52f5ec8230085b703331031265b47189b3768d23d922de99 3244 icann-rdap-common_0.0.28-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/icann-rdap-common"
   ],
   "Files": [
-    "f346ace5f3b6aa9f0be61fb0df4b3e64 2015 icann-rdap-common_0.0.25-2.dsc cbd568b2baa6c34f0cec9dd35d3642ea 91384 icann-rdap-common_0.0.25.orig.tar.xz c0b3955f3e2a713bec8b46ccdbc739f9 2912 icann-rdap-common_0.0.25-2.debian.tar.xz"
+    "9698665d1a84efa9b18df47f9841c79a 2077 icann-rdap-common_0.0.28-1.dsc 738ffd5ecc364d2246397f258b7ce1ae 106364 icann-rdap-common_0.0.28.orig.tar.xz 0d19862287ed380e695db5d26560b2f4 3244 icann-rdap-common_0.0.28-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rstest-0.17+default-dev, rustc"
+    "dh-cargo, librust-indoc-2+default-dev, librust-rstest-0.17+default-dev, rustc"
   ],
   "Vcs-Browser": [
     "https://forgejo.debian.net/icann/icann-rdap-common"
@@ -57,6 +57,6 @@
     "https://forgejo.debian.net/icann/icann-rdap-common"
   ],
   "Version": [
-    "0.0.25-2"
+    "0.0.28-1"
   ]
 }
