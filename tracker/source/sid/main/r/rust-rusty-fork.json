@@ -6,19 +6,25 @@
     "librust-rusty-fork-dev, librust-rusty-fork+wait-timeout-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-quick-error-2+default-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-wait-timeout-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev \u003c!nocheck\u003e, librust-quick-error-2+default-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-wait-timeout-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "97e18e3026fc43297e9a6d89586756bdefb2a748d06659761adb7916d19bd940 2440 rust-rusty-fork_0.3.0-1.dsc cb3dcc6e454c328bb824492db107ab7c0ae8fcffe4ad210136ef014458c1bc4f 19881 rust-rusty-fork_0.3.0.orig.tar.gz f8e33d4359b59bc74c0ce77e49c6d5375bf055c58023dccfbbf6278288e20e36 3376 rust-rusty-fork_0.3.0-1.debian.tar.xz"
+    "bd8145130302cd43fef14fb83331495cf50abfc019fa8485ee600fd359fd92f3 2493 rust-rusty-fork_0.3.1-1.dsc cc6bf79ff24e648f6da1f8d1f011e9cac26491b619e6b9280f2b47f1774e6ee2 21108 rust-rusty-fork_0.3.1.orig.tar.gz ee0181c301461c9ab5be948f05bf746365608158d2e384dbdab9c98d8ecdc6ea 3448 rust-rusty-fork_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rusty-fork"
   ],
   "Files": [
-    "4290add3c5c5581d37ecd4c2fb24ceff 2440 rust-rusty-fork_0.3.0-1.dsc 13268e6ab4023043e6dd8e993ce8b88a 19881 rust-rusty-fork_0.3.0.orig.tar.gz 7ed3fd5523ac1e832268f27892d4702b 3376 rust-rusty-fork_0.3.0-1.debian.tar.xz"
+    "5d0760106025b1b0b2a3c71b871a968f 2493 rust-rusty-fork_0.3.1-1.dsc 54d035e40bfafd11b214ae0ade4f2453 21108 rust-rusty-fork_0.3.1.orig.tar.gz 5286841b66373ca2e197b594ec9c5834 3448 rust-rusty-fork_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/altsysrq/rusty-fork"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rusty-fork]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1-1"
   ]
 }

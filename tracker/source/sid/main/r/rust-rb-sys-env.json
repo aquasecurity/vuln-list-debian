@@ -6,16 +6,19 @@
     "librust-rb-sys-env-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "de91f063ef4dc27076d72dd1e09d76a585c6f3d80fa1be49fa947370e443e7a2 2223 rust-rb-sys-env_0.1.2-1.dsc a35802679f07360454b418a5d1735c89716bde01d35b1560fc953c1415a0b3bb 9203 rust-rb-sys-env_0.1.2.orig.tar.gz 117194f2112868f0f8d96c49fbfee37430f605f1e35c01fbad5b45a6d8cbb720 2588 rust-rb-sys-env_0.1.2-1.debian.tar.xz"
+    "d0633299048d99f8a0d07161dd9e44289a84f4f4dc2804f174a6a0e85b4bf454 2227 rust-rb-sys-env_0.2.3-1.dsc cca7ad6a7e21e72151d56fe2495a259b5670e204c3adac41ee7ef676ea08117a 9303 rust-rb-sys-env_0.2.3.orig.tar.gz aca1692c5f57694ee1f072c479ac7b23b6ebe6b73882bc35a4e7154d46984166 2652 rust-rb-sys-env_0.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rb-sys-env"
   ],
   "Files": [
-    "14edcbeeccd712a058f92a91be81bf69 2223 rust-rb-sys-env_0.1.2-1.dsc 18a7c87d499053e1bd29d84a9dbe94bc 9203 rust-rb-sys-env_0.1.2.orig.tar.gz da3819ab9a2e1ed139e750c103434599 2588 rust-rb-sys-env_0.1.2-1.debian.tar.xz"
+    "43239a76e9dede975ffcad6410897233 2227 rust-rb-sys-env_0.2.3-1.dsc 3079bc183218d416490433efc25fa96f 9303 rust-rb-sys-env_0.2.3.orig.tar.gz b3160b0caaf1a8b21a15d04ddeaa8eef 2652 rust-rb-sys-env_0.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rb-sys-env]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.2.3-1"
   ]
 }
