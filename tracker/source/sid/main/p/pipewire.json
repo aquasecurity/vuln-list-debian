@@ -9,16 +9,16 @@
     "libfdk-aac-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), doxygen \u003c!nodoc\u003e, dpkg-dev (\u003e= 1.22.5), graphviz \u003c!nodoc\u003e, libapparmor-dev [linux-any], libasound2-dev (\u003e= 1.2.6), libavahi-client-dev, libbluetooth-dev [linux-any], libcamera-dev (\u003e= 0.2.0) [!m68k !hurd-any], libcanberra-dev, libdbus-1-dev, libebur128-dev, libffado-dev, libfftw3-dev, libfreeaptx-dev, libglib2.0-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libjack-jackd2-dev, liblc3-dev, libldacbt-abr-dev [!s390x !hppa !m68k !powerpc !ppc64 !sparc64], libldacbt-enc-dev [!s390x !hppa !m68k !powerpc !ppc64 !sparc64], liblilv-dev, libmysofa-dev, libncurses-dev, libopus-dev, libpulse-dev, libreadline-dev, libroc-dev (\u003e= 0.4.0), libsbc-dev, libsdl2-dev \u003c!noinsttest\u003e, libsnapd-glib-dev [amd64 arm64 armhf i386 powerpc ppc64el riscv64 s390x], libsndfile1-dev, libssl-dev, libsystemd-dev [linux-any], libudev-dev [linux-any], libusb-1.0-0-dev, libv4l-dev, libwebrtc-audio-processing-dev, libxfixes-dev (\u003e= 1:6.0.0), meson (\u003e= 0.61.1), modemmanager-dev, pkgconf, python3-docutils, systemd-dev"
+    "debhelper-compat (= 13), dh-sequence-installsysusers, doxygen \u003c!nodoc\u003e, dpkg-dev (\u003e= 1.22.5), graphviz \u003c!nodoc\u003e, libapparmor-dev [linux-any], libasound2-dev (\u003e= 1.2.6), libavahi-client-dev, libbluetooth-dev [linux-any], libcamera-dev (\u003e= 0.2.0) [!m68k !hurd-any], libcanberra-dev, libdbus-1-dev, libebur128-dev, libffado-dev, libfftw3-dev, libfreeaptx-dev, libglib2.0-dev, libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libjack-jackd2-dev, liblc3-dev, libldacbt-abr-dev [!s390x !hppa !m68k !powerpc !ppc64 !sparc64], libldacbt-enc-dev [!s390x !hppa !m68k !powerpc !ppc64 !sparc64], liblilv-dev, libmysofa-dev, libncurses-dev, libonnxruntime-dev [!alpha !hurd-any !m68k !powerpc !ppc64 !sh4 !x32], libopus-dev, libpulse-dev, libreadline-dev, libroc-dev (\u003e= 0.4.0), libsbc-dev, libsdl2-dev \u003c!noinsttest\u003e, libsnapd-glib-dev [amd64 arm64 armhf i386 powerpc ppc64el riscv64 s390x], libsndfile1-dev, libspandsp-dev, libssl-dev, libsystemd-dev [linux-any], libudev-dev [linux-any], libusb-1.0-0-dev, libv4l-dev, libwebrtc-audio-processing-dev, libxfixes-dev (\u003e= 1:6.0.0), meson (\u003e= 0.61.1), modemmanager-dev, pkgconf, python3-docutils, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "60b1b76dd8cb938d70fb8d125389a2db61072b813ebb3afc97aa697bb0ed6d57 4792 pipewire_1.4.10-1.dsc 3be5159b4fa09027f0f24fca153ced87a5619acc2e52c065200e7f51144d9f1e 1944899 pipewire_1.4.10.orig.tar.bz2 176bd52d3ebc7a310e828f266c8dfb650cbcaf13011d0b28d1b87b44f62982ca 29864 pipewire_1.4.10-1.debian.tar.xz"
+    "5f28ec77e6da0db4896c5650640c4c95f17acebec6a27c078a3968a29906d350 4895 pipewire_1.6.1-1.dsc c84bb782ca0e4b836b93a8634dbb39a380c3b65fcf08cc34a98fffc3b543671e 2742555 pipewire_1.6.1.orig.tar.gz feff89de9f12f631820585178a3d907ed2780d3871c48ab79fc769013e02f10d 30280 pipewire_1.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pipewire"
   ],
   "Files": [
-    "c9a862bdfa929ddc061c087c6d699716 4792 pipewire_1.4.10-1.dsc d607b900a046237d3549e0a0ac22366f 1944899 pipewire_1.4.10.orig.tar.bz2 78c1c3c0ca03d584065178b3a2e4f258 29864 pipewire_1.4.10-1.debian.tar.xz"
+    "bb9d90257de094823152bebd4ef0b16c 4895 pipewire_1.6.1-1.dsc a2b1d221145e2b60e74df31ead305729 2742555 pipewire_1.6.1.orig.tar.gz a37b0e14bf7135f53d4714e12dea2471 30280 pipewire_1.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "net"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, gnome-desktop-testing, gstreamer1.0-tools, pkg-config"
+    "build-essential, gnome-desktop-testing, gstreamer1.0-tools, pkgconf"
   ],
   "Uploaders": [
     "Jeremy Bicha \u003cjbicha@debian.org\u003e, Dylan Aïssi \u003cdaissi@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/utopia-team/pipewire.git"
   ],
   "Version": [
-    "1.4.10-1"
+    "1.6.1-1"
   ]
 }
