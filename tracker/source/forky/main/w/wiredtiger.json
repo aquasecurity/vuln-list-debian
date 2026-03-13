@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all amd64"
+    "all amd64 arm64 ppc64el s390x"
   ],
   "Binary": [
     "libwiredtiger-java, libwiredtiger-dev, libwiredtiger0, wiredtiger"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), javahelper, autoconf, automake, libtool, swig, doxygen, default-jdk, zlib1g-dev, liblz4-dev, libzstd-dev, libleveldb-dev, libsnappy-dev"
+    "debhelper-compat (= 13), javahelper, swig, doxygen, default-jdk-headless, zlib1g-dev, liblz4-dev, libzstd-dev, libleveldb-dev, libsnappy-dev"
   ],
   "Checksums-Sha256": [
-    "b0bfb022ca6bda448c019a9ab049e3f8c2c22bee5df8030e6d4e61088be764cc 2082 wiredtiger_3.2.1-1.dsc 1a8b4fcd1abc22d8cbe483e1c33c0937a603d3d33ad24d0fca61233a5dc29592 3661698 wiredtiger_3.2.1.orig.tar.bz2 30efbe2a7ba71abb3a4a63dce376a1d2ac0a2b0521757bc637399514a33b9fc3 6996 wiredtiger_3.2.1-1.debian.tar.xz"
+    "2a31eb4e6b6752477e7bc510f16c6d1a4f185d3b6c47e7a941585fde1846e38d 2254 wiredtiger_3.2.1-2.dsc 1a8b4fcd1abc22d8cbe483e1c33c0937a603d3d33ad24d0fca61233a5dc29592 3661698 wiredtiger_3.2.1.orig.tar.bz2 6703646530a9267c7b7bfe8bfa598353393d4065ddf8c21bf65ac7f5dce4efcd 8068 wiredtiger_3.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/wiredtiger"
   ],
   "Files": [
-    "ae1bc91713d4ce8d99cf7c12821b6e74 2082 wiredtiger_3.2.1-1.dsc db37ea31fd80b98c2d9bc7bcb74d5c9b 3661698 wiredtiger_3.2.1.orig.tar.bz2 55b6ff2b645e673100aaa013b6e99711 6996 wiredtiger_3.2.1-1.debian.tar.xz"
+    "a06991b4060bf60080a9a5870cc26085 2254 wiredtiger_3.2.1-2.dsc db37ea31fd80b98c2d9bc7bcb74d5c9b 3661698 wiredtiger_3.2.1.orig.tar.bz2 147c8ee4d55d10f801b429cc60aa99d0 8068 wiredtiger_3.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "wiredtiger"
   ],
   "Package-List": [
-    "libwiredtiger-dev deb libdevel optional arch=amd64 libwiredtiger-java deb java optional arch=all libwiredtiger0 deb libs optional arch=amd64 wiredtiger deb admin optional arch=amd64"
+    "libwiredtiger-dev deb libdevel optional arch=amd64,arm64,ppc64el,s390x libwiredtiger-java deb java optional arch=all libwiredtiger0 deb libs optional arch=amd64,arm64,ppc64el,s390x wiredtiger deb admin optional arch=amd64,arm64,ppc64el,s390x"
   ],
   "Priority": [
     "optional"
@@ -39,9 +39,15 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.3"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/debian/wiredtiger"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/debian/wiredtiger.git"
   ],
   "Version": [
-    "3.2.1-1"
+    "3.2.1-2"
   ]
 }
