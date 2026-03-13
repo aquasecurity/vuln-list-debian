@@ -6,16 +6,16 @@
     "r-cran-cmprsk"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-survival"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-survival, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "81dfee4fd2e1305c2757fe2080bae10d39e11e3b2d8d3a8ad86def7fef8b5ef8 2075 r-cran-cmprsk_2.2-12-1.dsc 773ecb93be0eac7bb5dfe9ea1480380da89ea95497b7b2febb08fd7c5104acdc 45824 r-cran-cmprsk_2.2-12.orig.tar.gz dc49d12e3d2372d0ebf35255471cad7df926a3eefa00bd03dc6bd75a3d0d4f17 3264 r-cran-cmprsk_2.2-12-1.debian.tar.xz"
+    "764a3d3424430b794109fc4ed2cb74c11020082694135193b1100a3e536e40f8 2166 r-cran-cmprsk_2.2-12-2.dsc 773ecb93be0eac7bb5dfe9ea1480380da89ea95497b7b2febb08fd7c5104acdc 45824 r-cran-cmprsk_2.2-12.orig.tar.gz 6c2c063813a7d66fa858b583e45bffa24fb401723bbf2c8d88ba3e416bf19ee3 3316 r-cran-cmprsk_2.2-12-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-cmprsk"
   ],
   "Files": [
-    "785aad58deae6fa6cde8298e82941978 2075 r-cran-cmprsk_2.2-12-1.dsc ae85888a4daf6417d48fc35cb306e909 45824 r-cran-cmprsk_2.2-12.orig.tar.gz cae616433ecf68372bf030ce022524ab 3264 r-cran-cmprsk_2.2-12-1.debian.tar.xz"
+    "d23f295661f6db8fe7b1be4ed4ebc716 2166 r-cran-cmprsk_2.2-12-2.dsc ae85888a4daf6417d48fc35cb306e909 45824 r-cran-cmprsk_2.2-12.orig.tar.gz 744857d7529ac79f05e98214a4c02a76 3316 r-cran-cmprsk_2.2-12-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-cmprsk.git"
   ],
   "Version": [
-    "2.2-12-1"
+    "2.2-12-2"
   ]
 }

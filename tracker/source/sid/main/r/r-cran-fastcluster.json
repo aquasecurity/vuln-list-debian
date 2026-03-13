@@ -6,16 +6,16 @@
     "r-cran-fastcluster, python3-fastcluster"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, dh-sequence-python3, python3-all-dev, python3-numpy, python3-setuptools, python3-scipy, python3-numpy-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, dh-sequence-python3, python3-all-dev, python3-numpy, python3-setuptools, python3-scipy, python3-numpy-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "81dc99b5af2a423e240db052fa56c68b50eadcd9ce3b93a30d1b8b2c0994a144 2283 r-cran-fastcluster_1.3.0-1.dsc fc214913eb804d05af7fdce53be30632220859203b6bb227be85b8a451b363fb 203457 r-cran-fastcluster_1.3.0.orig.tar.gz 2468a5b3a78ec17775bb1369e2e4dda8849ffd1a799a86793335b88d5afb81fd 5044 r-cran-fastcluster_1.3.0-1.debian.tar.xz"
+    "3338c8b93c1b1ed323f9c79b8bac4436c598c0aa89229da67700c3c2bb4e7110 2374 r-cran-fastcluster_1.3.0-2.dsc fc214913eb804d05af7fdce53be30632220859203b6bb227be85b8a451b363fb 203457 r-cran-fastcluster_1.3.0.orig.tar.gz e701087e80d08ae73c84a95e9e4dbb83b8a7e7724bb4887b47d78b2db7ba2292 5132 r-cran-fastcluster_1.3.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-fastcluster"
   ],
   "Files": [
-    "28175889e8d4f6fb174d6b53ce5bf008 2283 r-cran-fastcluster_1.3.0-1.dsc df9c300dce25b7755254f49ba6d69720 203457 r-cran-fastcluster_1.3.0.orig.tar.gz 4c9300b61514a9b63f70e239d706fb4a 5044 r-cran-fastcluster_1.3.0-1.debian.tar.xz"
+    "0591c31b6a7dbe07b665aa0f7cdbf14b 2374 r-cran-fastcluster_1.3.0-2.dsc df9c300dce25b7755254f49ba6d69720 203457 r-cran-fastcluster_1.3.0.orig.tar.gz cb31aab4199dbc886ba08dbbc223ab14 5132 r-cran-fastcluster_1.3.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-fastcluster.git"
   ],
   "Version": [
-    "1.3.0-1"
+    "1.3.0-2"
   ]
 }
