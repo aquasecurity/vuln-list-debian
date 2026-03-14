@@ -6,16 +6,16 @@
     "r-cran-setrng"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "fb5c8258d3991437d910a493d145926ae60fa06e6a673f9aac8862a58c322d42 2072 r-cran-setrng_2024.2-1-1.dsc e3b21b08b7db3c2c06543a21718e1c18a2b2d2ddf4c92f0e44841d10f55d5c40 37863 r-cran-setrng_2024.2-1.orig.tar.gz d5dac125b6bf448cda67c1451c1ab74648da5a7e3c50f1fd138529c3a639c338 2356 r-cran-setrng_2024.2-1-1.debian.tar.xz"
+    "c61786c2de044268b5b7ee49ac548524e357caaf3cfc8d6b46d40c75ae054f50 2163 r-cran-setrng_2024.2-1-2.dsc e3b21b08b7db3c2c06543a21718e1c18a2b2d2ddf4c92f0e44841d10f55d5c40 37863 r-cran-setrng_2024.2-1.orig.tar.gz 60611067a9c54956b0aca3a5d20a54a6ec41dc169aae97facb6ef03d5f82e33e 2452 r-cran-setrng_2024.2-1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-setrng"
   ],
   "Files": [
-    "72f9910012c89c5d812a7b1bf790ec8c 2072 r-cran-setrng_2024.2-1-1.dsc 0360795dcce8779f150ed6eefacf04b7 37863 r-cran-setrng_2024.2-1.orig.tar.gz 08dd7e28dbae3a7d1a9cf13d21e90b79 2356 r-cran-setrng_2024.2-1-1.debian.tar.xz"
+    "2239105b518f142eec1a6a58ffffc26d 2163 r-cran-setrng_2024.2-1-2.dsc 0360795dcce8779f150ed6eefacf04b7 37863 r-cran-setrng_2024.2-1.orig.tar.gz 252405d0fa2be6752420b66e967d8311 2452 r-cran-setrng_2024.2-1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-setrng.git"
   ],
   "Version": [
-    "2024.2-1-1"
+    "2024.2-1-2"
   ]
 }
