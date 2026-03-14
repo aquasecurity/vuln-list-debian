@@ -6,16 +6,19 @@
     "librust-tikv-jemalloc-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.13-~~) \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, libjemalloc-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, libjemalloc-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.13) \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.8) \u003c!nocheck\u003e, libjemalloc-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f4d0f9c95657bee829370b80cc20e44163b02f92677907400b99b4753a87d56d 1798 rust-tikv-jemalloc-sys_0.6.0-1.dsc bfa6097aaa3dc2ff6ed91cd4f437711a162e8b4983891d181bb62919c910b008 22774 rust-tikv-jemalloc-sys_0.6.0.orig.tar.gz 1c1403764ba288f71b642b2d6915a882bce39ec272ea8a80cc23c978d1f8e61c 4076 rust-tikv-jemalloc-sys_0.6.0-1.debian.tar.xz"
+    "88e9c032a96d0b8e250744df700357bee2cbd443d3667937685fad005d499f95 1873 rust-tikv-jemalloc-sys_0.6.1+dfsg-1.dsc 31ffe49317851d23a0c6322fb18d2bbe15cfaa427a298cdc939fbbf172c24630 25446 rust-tikv-jemalloc-sys_0.6.1+dfsg.orig.tar.gz 17e921bc7c933bbbba21f78ef01cce266f7a6f7764a618968822ced9efff6185 4216 rust-tikv-jemalloc-sys_0.6.1+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tikv-jemalloc-sys"
   ],
   "Files": [
-    "fdfc1e6613fcbbb48923bce5d269d7ec 1798 rust-tikv-jemalloc-sys_0.6.0-1.dsc 1f93516166e7a3a666fe7ad30a45c53b 22774 rust-tikv-jemalloc-sys_0.6.0.orig.tar.gz eea3d29f63bac2740c62da9feb6137a0 4076 rust-tikv-jemalloc-sys_0.6.0-1.debian.tar.xz"
+    "6df49ea147e96e540580df50dba5861a 1873 rust-tikv-jemalloc-sys_0.6.1+dfsg-1.dsc c819e2c4fe70d1b5a62a80466730a66a 25446 rust-tikv-jemalloc-sys_0.6.1+dfsg.orig.tar.gz e9303016a6188d99204b8f7d2218cb8c 4216 rust-tikv-jemalloc-sys_0.6.1+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tikv-jemalloc-sys]"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.6.1+dfsg-1"
   ]
 }
