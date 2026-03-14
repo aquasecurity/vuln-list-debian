@@ -6,16 +6,16 @@
     "r-cran-leaps"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "79f5018a4e97275f5a184ad1c54cba0ac378702b95d21c969e229249171ef779 2025 r-cran-leaps_3.2-1.dsc a0d6bebb676e5cdc0ecf3e3a07163ce0d60b6fe72a083d91f0413e11a8a96fad 29375 r-cran-leaps_3.2.orig.tar.gz f90ea191dcb420f44ec65da6bb39127181d58a8da18aed38099065322cbdc431 2396 r-cran-leaps_3.2-1.debian.tar.xz"
+    "1142adff6c5ea8416b8c4d52725959bd24b92a24f6025eb3a3fcb7d04ecff6ea 2116 r-cran-leaps_3.2-2.dsc a0d6bebb676e5cdc0ecf3e3a07163ce0d60b6fe72a083d91f0413e11a8a96fad 29375 r-cran-leaps_3.2.orig.tar.gz e3a4a0efe6b67c77ad59474416ebccd785cbc89a21034a319d84a04918bf3633 2488 r-cran-leaps_3.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-leaps"
   ],
   "Files": [
-    "d8469bb384717725faa32535d5de2a97 2025 r-cran-leaps_3.2-1.dsc b4432034faf4eeda50279acbaee4c63a 29375 r-cran-leaps_3.2.orig.tar.gz d2035940977ab98d0950e785bd33401d 2396 r-cran-leaps_3.2-1.debian.tar.xz"
+    "86fc1da9364fba553ce9a1303ca51c09 2116 r-cran-leaps_3.2-2.dsc b4432034faf4eeda50279acbaee4c63a 29375 r-cran-leaps_3.2.orig.tar.gz e06d76ed7aae3811f4e0fb34ac9b0946 2488 r-cran-leaps_3.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Dylan Aïssi \u003cdaissi@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-leaps.git"
   ],
   "Version": [
-    "3.2-1"
+    "3.2-2"
   ]
 }

@@ -6,16 +6,16 @@
     "r-cran-inum"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-libcoin"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-libcoin, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "78b29258649fe992355983926847dcbf4cf5820bc285e622167b1bddaea902c0 2043 r-cran-inum_1.0-5-1.dsc e696b7e0b31b3bbf405112e60691b6a72fedcaa02e08ee517c59f6bf9cd36bbd 12099 r-cran-inum_1.0-5.orig.tar.gz b2fa7aaae13a04868730391ca7cd33895d30282286169c56eb4842bd9356f74c 2180 r-cran-inum_1.0-5-1.debian.tar.xz"
+    "84eb83a0f82d571f6a3ede43fb4977db68b857225872f8998775b53fbf2ae092 2134 r-cran-inum_1.0-5-2.dsc e696b7e0b31b3bbf405112e60691b6a72fedcaa02e08ee517c59f6bf9cd36bbd 12099 r-cran-inum_1.0-5.orig.tar.gz a81296e9e7167ea7d29c30d5432babc21aff8c8841b27751cdc98ef2d3cb21ad 2308 r-cran-inum_1.0-5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-inum"
   ],
   "Files": [
-    "b5d3b918194e56da82c1b46b4b98365c 2043 r-cran-inum_1.0-5-1.dsc d639f582b8f3925f8c2ddc38febb2915 12099 r-cran-inum_1.0-5.orig.tar.gz b7521d80e453facc490f3cf7f026a3b9 2180 r-cran-inum_1.0-5-1.debian.tar.xz"
+    "d02175e7f859d0da883848b0be0c69bb 2134 r-cran-inum_1.0-5-2.dsc d639f582b8f3925f8c2ddc38febb2915 12099 r-cran-inum_1.0-5.orig.tar.gz eb78675df9dc3f01f62ba04d64510611 2308 r-cran-inum_1.0-5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-inum.git"
   ],
   "Version": [
-    "1.0-5-1"
+    "1.0-5-2"
   ]
 }

@@ -6,22 +6,31 @@
     "nextpnr-ice40, nextpnr-ice40-qt, nextpnr-ice40-chipdb, nextpnr-ecp5, nextpnr-ecp5-qt, nextpnr-ecp5-chipdb, nextpnr-gowin, nextpnr-gowin-qt, nextpnr-gowin-chipdb, nextpnr-himbaechel, nextpnr-himbaechel-qt, nextpnr-himbaechel-gowin-chipdb, nextpnr-generic"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, qtbase5-dev, libboost-filesystem-dev, libboost-thread-dev, libboost-program-options-dev, libboost-python-dev, libboost-iostreams-dev, libqt5opengl5-dev, libeigen3-dev, googletest, pybind11-dev, python3-dev, fpga-icestorm-chipdb, python3-apycula, python3-pytrellis, help2man"
+    "debhelper-compat (= 13), cmake, ninja-build, qtbase5-dev [alpha amd64 arm64 hppa ia64 loong64 mips64el ppc64 ppc64el riscv64 s390x sh4 sparc64] \u003c!pkg.nextpnr.nogui\u003e, libboost-filesystem-dev, libboost-thread-dev, libboost-program-options-dev, libboost-python-dev, libboost-iostreams-dev, libqt5opengl5-desktop-dev [alpha amd64 arm64 hppa ia64 loong64 mips64el ppc64 ppc64el riscv64 s390x sh4 sparc64] \u003c!pkg.nextpnr.nogui\u003e, libeigen3-dev, googletest, pybind11-dev, python3-dev, fpga-icestorm-chipdb, python3-apycula (\u003e= 0.29~), python3-pytrellis, help2man"
   ],
   "Checksums-Sha256": [
-    "dfeb2525a8c9dce2b33fbb121d4a69e640f4e3a9e06e9c5c24322de5b959da9b 3599 nextpnr_0.9-1.dsc 4fdb986f1a94e0d36684801b248fe5a4cd115b4096afddbab0b50419ec11895a 7147258 nextpnr_0.9.orig.tar.gz c646b8b1ff964ee9048d4e6ac7f7b545f811c2a528ba7aff193e2d4c9d746086 10724 nextpnr_0.9-1.debian.tar.xz"
+    "e45173ccf50922daa1ce6bdfc56f4b5dd7a6e4c5f41c36e3519f69bbffe3f037 4432 nextpnr_0.9-3.dsc 4fdb986f1a94e0d36684801b248fe5a4cd115b4096afddbab0b50419ec11895a 7147258 nextpnr_0.9.orig.tar.gz f45b29fd9c64f8edde848e76bc1e428c261b10a792fcfe5224537b2586f13037 12184 nextpnr_0.9-3.debian.tar.xz"
   ],
   "Description": [
     "FPGA place and route tool nextpnr is a FPGA place and route tool. Its purpose is to turn a topological description of digital hardware produced by an FPGA logic synthesis tool such as yosys into an elaborate map of connections between the hardwired functional units available inside the FPGA's fabric. . In order to verify the fully implemented design for proper operation at high speed timing-analysis of the design is also supported."
+  ],
+  "Dgit": [
+    "9338118522dafb0d5c238c8749d4699dcfb58f28 debian archive/debian/0.9-3 https://git.dgit.debian.org/nextpnr"
   ],
   "Directory": [
     "pool/main/n/nextpnr"
   ],
   "Files": [
-    "3d5119ac6b39432fffafa2382ba72305 3599 nextpnr_0.9-1.dsc 9a1127a2f30912ab0e81db069d9e85ab 7147258 nextpnr_0.9.orig.tar.gz 33e33da26b72eb5f921a4ba2ce67f4a1 10724 nextpnr_0.9-1.debian.tar.xz"
+    "3499b1a601b1b71f0356940a2389a294 4432 nextpnr_0.9-3.dsc 9a1127a2f30912ab0e81db069d9e85ab 7147258 nextpnr_0.9.orig.tar.gz 3097012a0d2c1d546ed4db02cfb4a809 12184 nextpnr_0.9-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=8a8a2d4c4c55f79814ff48764406de0013f72456 fp=b63baa38949798d8d2897dd37ebd387bb0990811"
+  ],
+  "Git-Tag-Tagger": [
+    "Simon Richter \u003csjr@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/YosysHQ/nextpnr"
@@ -33,7 +42,7 @@
     "nextpnr"
   ],
   "Package-List": [
-    "nextpnr-ecp5 deb electronics optional arch=any nextpnr-ecp5-chipdb deb electronics optional arch=any nextpnr-ecp5-qt deb electronics optional arch=any nextpnr-generic deb electronics optional arch=any nextpnr-gowin deb oldlibs optional arch=all nextpnr-gowin-chipdb deb oldlibs optional arch=all nextpnr-gowin-qt deb oldlibs optional arch=all nextpnr-himbaechel deb electronics optional arch=any nextpnr-himbaechel-gowin-chipdb deb electronics optional arch=any nextpnr-himbaechel-qt deb electronics optional arch=any nextpnr-ice40 deb electronics optional arch=any nextpnr-ice40-chipdb deb electronics optional arch=any nextpnr-ice40-qt deb electronics optional arch=any"
+    "nextpnr-ecp5 deb electronics optional arch=any nextpnr-ecp5-chipdb deb electronics optional arch=any nextpnr-ecp5-qt deb electronics optional arch=alpha,amd64,arm64,hppa,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sh4,sparc64 profile=!pkg.nextpnr.nogui nextpnr-generic deb electronics optional arch=any nextpnr-gowin deb oldlibs optional arch=all nextpnr-gowin-chipdb deb oldlibs optional arch=all nextpnr-gowin-qt deb oldlibs optional arch=all nextpnr-himbaechel deb electronics optional arch=any nextpnr-himbaechel-gowin-chipdb deb electronics optional arch=any nextpnr-himbaechel-qt deb electronics optional arch=alpha,amd64,arm64,hppa,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sh4,sparc64 profile=!pkg.nextpnr.nogui nextpnr-ice40 deb electronics optional arch=any nextpnr-ice40-chipdb deb electronics optional arch=any nextpnr-ice40-qt deb electronics optional arch=alpha,amd64,arm64,hppa,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sh4,sparc64 profile=!pkg.nextpnr.nogui"
   ],
   "Priority": [
     "extra"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/electronics-team/nextpnr.git"
   ],
   "Version": [
-    "0.9-1"
+    "0.9-3"
   ]
 }
