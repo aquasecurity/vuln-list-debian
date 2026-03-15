@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-nom-dev, librust-nom+std-dev"
+    "librust-nom-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-memchr-2-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-minimal-lexical-0.2+std-dev \u003c!nocheck\u003e, librust-minimal-lexical-0.2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-memchr-2-dev (\u003e= 2.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b76873e93c016ed749677584d76cbe33c71a476c8edc5afd93bfef8001ba6ff7 2450 rust-nom_7.1.3-1.dsc d273983c5a657a70a3e8f2a01329822f3b8c8172b73826411a55751e404a0a4a 117570 rust-nom_7.1.3.orig.tar.gz 990656d275bb202faa51550f7110551d428eae19e74609008a797d6e5cea603f 3508 rust-nom_7.1.3-1.debian.tar.xz"
+    "3a6ca532a8624a424059dd95fd442f080864966e4b117f7a24266bea57d322bf 1738 rust-nom_8.0.0-2.dsc df9761775871bdef83bee530e60050f7e54b1105350d6884eb0fb4f46c2f9405 135590 rust-nom_8.0.0.orig.tar.gz a4b6f0195e55fda656f13752fa4aeb8f92d1dd15d431a4ced820697e38c15b68 3392 rust-nom_8.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nom"
   ],
   "Files": [
-    "ef35f5814deb774b88130d5ce46da7b4 2450 rust-nom_7.1.3-1.dsc f17aecb8887cf0ecd823623160aed7db 117570 rust-nom_7.1.3.orig.tar.gz 6c4397ca65ef8896e923820b9b2ce211 3508 rust-nom_7.1.3-1.debian.tar.xz"
+    "d1eacee0af4922e0722b6f0d359824c7 1738 rust-nom_8.0.0-2.dsc 6c8d8924a13f7f3e91dbf4897b2e2f4d 135590 rust-nom_8.0.0.orig.tar.gz 723d001d325bff1bdb27b06f73f8a850 3392 rust-nom_8.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-bakery/nom"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-nom"
   ],
   "Package-List": [
-    "librust-nom+std-dev deb rust optional arch=any librust-nom-dev deb rust optional arch=any"
+    "librust-nom-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-proptest-1+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, librust-proptest-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Emmanouil Kampitakis \u003cinfo+debian@kampitakis.de\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nom]"
   ],
   "Version": [
-    "7.1.3-1"
+    "8.0.0-2"
   ]
 }
