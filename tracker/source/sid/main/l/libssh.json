@@ -6,19 +6,19 @@
     "libssh-4, libssh-dev, libssh-doc"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libcmocka-dev \u003c!nocheck\u003e, libkrb5-dev | heimdal-dev, libssl-dev, zlib1g-dev | libz-dev, openssh-client \u003c!nocheck\u003e, openssh-server \u003c!nocheck\u003e, pkgconf, python3:any \u003c!nocheck\u003e"
+    "cmake, debhelper-compat (= 13), libcmocka-dev \u003c!nocheck\u003e, libfido2-dev, libkrb5-dev | heimdal-dev, libssl-dev, zlib1g-dev | libz-dev, openssh-client \u003c!nocheck\u003e, openssh-server \u003c!nocheck\u003e, pkgconf, python3:any \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "92b0d2a6aef3a2431d2121ffc790e90a1006e7dff6eee7bf9def9db8cf61b9ec 2583 libssh_0.11.3-1.dsc 7d8a1361bb094ec3f511964e78a5a4dba689b5986e112afabe4f4d0d6c6125c3 622776 libssh_0.11.3.orig.tar.xz 2710f8785d21717097ee042884683ea14dd1be95c77d64e940ef7e58a9c8ca88 833 libssh_0.11.3.orig.tar.xz.asc 7e2702135ef710ebdeb5bffbf41afcf3422135da8cf427fbe7ce9f5674f5e84e 31520 libssh_0.11.3-1.debian.tar.xz"
+    "72aba33c68ba6b89d2c72c095f9e10d0252f31138feaf24086d72a3798ad8c27 2615 libssh_0.12.0-1.dsc 1a6af424d8327e5eedef4e5fe7f5b924226dd617ac9f3de80f217d82a36a7121 751928 libssh_0.12.0.orig.tar.xz 8eaf061c358ffc7ead729d6cd93da9286d831224e97b6fc6535669a2955d1be5 833 libssh_0.12.0.orig.tar.xz.asc 8f76de597989f3e4e0090467a244c2c57fd96f9ef5027218f67b26c744a3be36 31932 libssh_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libs/libssh"
   ],
   "Files": [
-    "569b2afa4783fec7738b82361c657dfd 2583 libssh_0.11.3-1.dsc b55bad6ad6fd6b1e191fbb495adcfe40 622776 libssh_0.11.3.orig.tar.xz 72d66ac3fac1b7df2782a13d619ea7c7 833 libssh_0.11.3.orig.tar.xz.asc c2c8615870e5f8d3f5b7ea9e75b9db16 31520 libssh_0.11.3-1.debian.tar.xz"
+    "7f16589a71ef85e166aa3b11d344e4bf 2615 libssh_0.12.0-1.dsc 244ff82e0902ba4bcd89e27f8cc2590c 751928 libssh_0.12.0.orig.tar.xz 3fe0c5318468835f0d89328d357ba261 833 libssh_0.12.0.orig.tar.xz.asc 602ebab4a69a485990ff559210fecdf8 31932 libssh_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "libssh"
   ],
   "Package-List": [
-    "libssh-4 deb libs optional arch=any libssh-dev deb libdevel optional arch=any libssh-doc deb doc optional arch=all profile=!nodoc"
+    "libssh-4 deb libs optional arch=any libssh-dev deb libdevel optional arch=any libssh-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/libssh.git"
   ],
   "Version": [
-    "0.11.3-1"
+    "0.12.0-1"
   ]
 }
