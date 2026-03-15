@@ -6,16 +6,16 @@
     "r-cran-exactranktests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "b7fdc812443eb074d98a6be18f54022ee48440c8ddc275b93deaf5addcd291fb 2154 r-cran-exactranktests_0.8-35-1.dsc 7eb4a9ff431a306f634a5feba39c381afb17573e24230976ece843c84e8969e3 46876 r-cran-exactranktests_0.8-35.orig.tar.gz d3fb67f3a23f4e6db5815c18f97d16392d468a57c24cb05e1bed4278cb1ac0ee 2716 r-cran-exactranktests_0.8-35-1.debian.tar.xz"
+    "165a7105b5cd23cf68a8d736e6c011b7c0ffff8f9863fbdcde288600ad1e5192 2262 r-cran-exactranktests_0.8-35-2.dsc 7eb4a9ff431a306f634a5feba39c381afb17573e24230976ece843c84e8969e3 46876 r-cran-exactranktests_0.8-35.orig.tar.gz fe5bd5e97440c7898302a55328eeed181fe8bf2843d232ba9cc619de7925dd3f 2860 r-cran-exactranktests_0.8-35-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-exactranktests"
   ],
   "Files": [
-    "b71ceb391ba4841907c924603637ee38 2154 r-cran-exactranktests_0.8-35-1.dsc 5c3767db5ff0c9d69b9990d4443f0cad 46876 r-cran-exactranktests_0.8-35.orig.tar.gz eeb7b4eabff2ac5ce05d7663a154a5e9 2716 r-cran-exactranktests_0.8-35-1.debian.tar.xz"
+    "256bd5674facdae7c2b6d5bfde8451b5 2262 r-cran-exactranktests_0.8-35-2.dsc 5c3767db5ff0c9d69b9990d4443f0cad 46876 r-cran-exactranktests_0.8-35.orig.tar.gz 4c73df79737aaa03eb408bea6de1fd99 2860 r-cran-exactranktests_0.8-35-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-survival, r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-exactranktests.git"
   ],
   "Version": [
-    "0.8-35-1"
+    "0.8-35-2"
   ]
 }
