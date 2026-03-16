@@ -6,16 +6,16 @@
     "r-cran-registry"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-r, r-base-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "2f36ba9712de94164791037485f3ab28782db5d743abbe90aa193d5cbc3e4051 2062 r-cran-registry_0.5-1-2.dsc dfea36edb0a703ec57e111016789b47a1ba21d9c8ff30672555c81327a3372cc 170969 r-cran-registry_0.5-1.orig.tar.gz 9f9dd173a7e0dd6acf3ffe46359233498dd5ef38ae145521b2a59e8f52688ea3 8276 r-cran-registry_0.5-1-2.debian.tar.xz"
+    "f31a16dadcf7a7fb0fc5f6fddd89a7b0ea6c127c1eee37b7db7152da2a7591f6 2178 r-cran-registry_0.5-1-3.dsc dfea36edb0a703ec57e111016789b47a1ba21d9c8ff30672555c81327a3372cc 170969 r-cran-registry_0.5-1.orig.tar.gz 3273873d1e454e183263cb99d829fe94294398805e9ce6a46b89f6ecbefc47de 8416 r-cran-registry_0.5-1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-registry"
   ],
   "Files": [
-    "a14b632c91d0df7aff46d0dfb8f49321 2062 r-cran-registry_0.5-1-2.dsc 7ae0c72093167cee00545d49511c4c0b 170969 r-cran-registry_0.5-1.orig.tar.gz 8ad080570072639686169ce110524452 8276 r-cran-registry_0.5-1-2.debian.tar.xz"
+    "5ca4b48524cca79fa3c028b2c9863fb8 2178 r-cran-registry_0.5-1-3.dsc 7ae0c72093167cee00545d49511c4c0b 170969 r-cran-registry_0.5-1.orig.tar.gz cd77d747f1aacc81bf10ffee14de6a1d 8416 r-cran-registry_0.5-1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Alba Crespi \u003ccrespialba+debian@gmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-registry.git"
   ],
   "Version": [
-    "0.5-1-2"
+    "0.5-1-3"
   ]
 }
