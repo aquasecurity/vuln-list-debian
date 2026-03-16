@@ -6,16 +6,16 @@
     "r-cran-magic"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-abind"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-abind, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "c2be78fc45e38d3e518f5570df058f160fa350ee1994165669f80e6ab084c437 2056 r-cran-magic_1.6-1-1.dsc ca79ec7ae92b736cb128556c081abf547f49956c326e053a76579889cbcb7976 190592 r-cran-magic_1.6-1.orig.tar.gz 7de86eb6e3340aa4557205a249284b53190c98f22d77a8ba6d761bb3d30cb95f 2916 r-cran-magic_1.6-1-1.debian.tar.xz"
+    "d22071d891f6a56da1cfd1dfcd0281dae87f9ba144660fc1b703a1d9e2a44535 2147 r-cran-magic_1.6-1-2.dsc ca79ec7ae92b736cb128556c081abf547f49956c326e053a76579889cbcb7976 190592 r-cran-magic_1.6-1.orig.tar.gz 51527b0b972746c4e05ee514e0a00f0cde293c03f4a128b42445bba592f2b80d 3040 r-cran-magic_1.6-1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-magic"
   ],
   "Files": [
-    "2135ee206671962f6ed86336d68a55bb 2056 r-cran-magic_1.6-1-1.dsc 8b5ae0549795f46eba07cbc71c04b4a7 190592 r-cran-magic_1.6-1.orig.tar.gz 08b9e9db6048341584fe23e18f5669c9 2916 r-cran-magic_1.6-1-1.debian.tar.xz"
+    "089c6b3746b9c281f97909bdbea1afe2 2147 r-cran-magic_1.6-1-2.dsc 8b5ae0549795f46eba07cbc71c04b4a7 190592 r-cran-magic_1.6-1.orig.tar.gz 6db32ee73ea30a1c77597f607da5fcc4 3040 r-cran-magic_1.6-1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-magic.git"
   ],
   "Version": [
-    "1.6-1-1"
+    "1.6-1-2"
   ]
 }
