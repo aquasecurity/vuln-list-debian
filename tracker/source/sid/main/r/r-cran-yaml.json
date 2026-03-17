@@ -6,16 +6,16 @@
     "r-cran-yaml"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "890ec254cbcea61f95a1e35414145418e3a69453adc6c148e5f84244642e76db 2023 r-cran-yaml_2.3.10-1.dsc e236d42d366e361d4855aa4f520260debd53a31e4786442b94770b045da02a6d 94556 r-cran-yaml_2.3.10.orig.tar.gz 345027847d3f87abb5c2b0ddc132e0e8af079cc8a0d4113d70a64ee4ce2561d4 7040 r-cran-yaml_2.3.10-1.debian.tar.xz"
+    "07571e68dfb07fc0b1e24bf2fbc80852fe4c44ee71433b8cd235db659f19ff9c 2162 r-cran-yaml_2.3.12-1.dsc 80ccf3dde851133ef3e333b818a817c296c6ccdacfc4709cd466995289cd556c 108975 r-cran-yaml_2.3.12.orig.tar.gz 9e24d1989e117fedc8ddda1d249eadca88aced95f81d65cac359460a03de5ef5 6920 r-cran-yaml_2.3.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-yaml"
   ],
   "Files": [
-    "0891f0525c479a859c71e2b40de3f138 2023 r-cran-yaml_2.3.10-1.dsc f5fad2fbfe3dd8ccb29125fa6361150d 94556 r-cran-yaml_2.3.10.orig.tar.gz 305bae2fde0325687197bb7c00619127 7040 r-cran-yaml_2.3.10-1.debian.tar.xz"
+    "e8ab03a8e0213719fe79a0d7fdc4be51 2162 r-cran-yaml_2.3.12-1.dsc 6beea9b09717960f6c79fcbc1e129c41 108975 r-cran-yaml_2.3.12.orig.tar.gz 790050a946c4e0937cf5ab27cb2e6a2b 6920 r-cran-yaml_2.3.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-r"
   ],
   "Testsuite-Triggers": [
-    "r-cran-runit"
+    "r-cran-knitr, r-cran-rmarkdown, r-cran-testthat"
+  ],
+  "Uploaders": [
+    "Charles Plessy \u003cplessy@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/r-pkg-team/r-cran-yaml"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-yaml.git"
   ],
   "Version": [
-    "2.3.10-1"
+    "2.3.12-1"
   ]
 }

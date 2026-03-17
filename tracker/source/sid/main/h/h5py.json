@@ -6,31 +6,22 @@
     "python3-h5py, python3-h5py-serial, python3-h5py-mpi, python-h5py-doc, hdf5-plugin-lzf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, cython3, dpkg-dev (\u003e= 1.17.14), libhdf5-dev, libhdf5-mpi-dev (\u003e= 1.10.6+repack-1), liblzf-dev, libpython3-all-dev, mpi-default-dev, pkgconf, python3-all-dev:any, python3-cached-property, python3-mpi4py (\u003e= 3.1.4), python3-numpy (\u003e= 2.0.0~), python3-numpy-dev, python3-pkgconfig, python3-pytest \u003c!nocheck\u003e, python3-pytest-mpi \u003c!nocheck\u003e, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, cython3, dpkg-dev (\u003e= 1.17.14), libhdf5-dev, libhdf5-mpi-dev (\u003e= 1.10.6+repack-1), liblzf-dev, libpython3-all-dev, mpi-default-dev, pkgconf, python3-all-dev:any, python3-cached-property, python3-mpi4py (\u003e= 3.1.4), python3-numpy (\u003e= 2.0.0~), python3-numpy-dev, python3-packaging, python3-pkgconfig (\u003e= 1.5.5~), python3-pytest \u003c!nocheck\u003e, python3-pytest-mpi \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-sphinxdoc \u003c!nodoc\u003e, libjs-mathjax, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "fb557d6c5797edf92235aa82c6b6c4f5debaa43400bb8415ee492ccc272d1a1a 3105 h5py_3.15.1-4.dsc c86e3ed45c4473564de55aa83b6fc9e5ead86578773dfbd93047380042e26b69 426236 h5py_3.15.1.orig.tar.gz daa3e26d55f5d4947c2fc1f47a855040d63d05ac0a614499232a56e3b5acccbb 21580 h5py_3.15.1-4.debian.tar.xz"
-  ],
-  "Dgit": [
-    "3a54c6b87683866191065781eea0c209df7dd210 debian archive/debian/3.15.1-4 https://git.dgit.debian.org/h5py"
+    "634f5bed9b38a687c2ab2f8eb9b04f5eaaea7167932e5dd90aa14079107a2a40 2888 h5py_3.16.0-2.dsc a0dbaad796840ccaa67a4c144a0d0c8080073c34c76d5a6941d6818678ef2738 446526 h5py_3.16.0.orig.tar.gz bd23c1f5448cf0f9e8de9539fb670bbddcd5755c409f084625e30c4e0e6b2fea 22144 h5py_3.16.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/h5py"
   ],
   "Files": [
-    "b6be5cc7e5df2c37dbb65b80daae530c 3105 h5py_3.15.1-4.dsc b300fcff17a56ecaa05e986db38dd0ac 426236 h5py_3.15.1.orig.tar.gz 400e64d5671724b96b8968978bd01b55 21580 h5py_3.15.1-4.debian.tar.xz"
+    "11c672cd9ef4f5dfd2b03df20d30e2d2 2888 h5py_3.16.0-2.dsc c4dfd49d4282fecd5eeff10f4cd388c7 446526 h5py_3.16.0.orig.tar.gz 9d0d357538e86e4cfd2182123c7137a0 22144 h5py_3.16.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=3e4c02517ef34b1e720b5fa08f618337bc506e97 fp=90e2d2c1ad146a1b7ebb891dbbc17ebb1396f2f7"
-  ],
-  "Git-Tag-Tagger": [
-    "Stuart Prescott \u003cstuart@debian.org\u003e"
   ],
   "Homepage": [
     "https://www.h5py.org/"
@@ -42,7 +33,7 @@
     "h5py"
   ],
   "Package-List": [
-    "hdf5-plugin-lzf deb python optional arch=any python-h5py-doc deb doc optional arch=all profile=!nodoc python3-h5py deb python optional arch=all python3-h5py-mpi deb python optional arch=any python3-h5py-serial deb python optional arch=any"
+    "hdf5-plugin-lzf deb python optional arch=any python-h5py-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-h5py deb python optional arch=all python3-h5py-mpi deb python optional arch=any python3-h5py-serial deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,7 +42,7 @@
     "python"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -69,6 +60,6 @@
     "https://salsa.debian.org/science-team/h5py.git"
   ],
   "Version": [
-    "3.15.1-4"
+    "3.16.0-2"
   ]
 }
