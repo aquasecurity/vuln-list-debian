@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "webtunnel"
+    "webtunnel, golang-webtunnel-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-golang, golang-any, golang-goptlib-dev"
+    "debhelper-compat (= 13), dh-exec, dh-sequence-golang, golang-any, golang-goptlib-dev"
   ],
   "Checksums-Sha256": [
-    "c7eae79dc31c068860a9be1e32f97087cc3bf68ac52de97a5b4e383aa9a8e6e6 1526 webtunnel_0.0.3-1.dsc 84b3d52fde42c3ba9a4bbb7ea0d74e82131868f04a9a0acd052fa28c788e4d37 9548 webtunnel_0.0.3.orig.tar.xz c202d0950b1af8c041d8cc02f7bf76e951a7c1068166c5ab60b462f38e9f8340 6248 webtunnel_0.0.3-1.debian.tar.xz"
+    "aafd06cb71d766ad268d99ed97c43970b0608e01b4bb0ee3f628fb7865021d08 2245 webtunnel_0.0.3-2.dsc 84b3d52fde42c3ba9a4bbb7ea0d74e82131868f04a9a0acd052fa28c788e4d37 9548 webtunnel_0.0.3.orig.tar.xz 062ed7ca4995514c87eb3a1b11ec9a3772e042b579a94969fa867f622cef3ac7 6436 webtunnel_0.0.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/webtunnel"
   ],
   "Files": [
-    "4c5601e17168504395297ab1957f0fd7 1526 webtunnel_0.0.3-1.dsc fe93e61a55431c9ad14978a374808403 9548 webtunnel_0.0.3.orig.tar.xz 864836f127189390d4b9fc6c4ce63a60 6248 webtunnel_0.0.3-1.debian.tar.xz"
+    "c0b585615f25aaae95d0bbb089fd50f1 2245 webtunnel_0.0.3-2.dsc fe93e61a55431c9ad14978a374808403 9548 webtunnel_0.0.3.orig.tar.xz 314365847c342b5322ed7f8d0c5e6b85 6436 webtunnel_0.0.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "webtunnel"
   ],
   "Package-List": [
-    "webtunnel deb net optional arch=any"
+    "golang-webtunnel-dev deb golang optional arch=all webtunnel deb net optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "net"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest-pkg-go"
   ],
   "Uploaders": [
-    "Yifei Zhan \u003cdebian@zhan.science\u003e,"
+    "Yifei Zhan \u003cdebian@zhan.science\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/go-team/packages/webtunnel"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/go-team/packages/webtunnel.git"
   ],
   "Version": [
-    "0.0.3-1"
+    "0.0.3-2"
   ]
 }
