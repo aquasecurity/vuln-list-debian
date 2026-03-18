@@ -6,16 +6,16 @@
     "r-cran-cyclocomp"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-callr, r-cran-crayon, r-cran-desc, r-cran-remotes, r-cran-withr"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-callr, r-cran-crayon, r-cran-desc, r-cran-remotes, r-cran-withr, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "b2bacf505892919d3d6bb6283a4255ca53137fd7d96362fd488337cb3f2d5dcb 2145 r-cran-cyclocomp_1.1.1-1.dsc 9aff06d58bb060e23ac64337a95aebb2c69371b9de5f2549626e3e66acb5b14d 8584 r-cran-cyclocomp_1.1.1.orig.tar.gz 94b4d72b6cdc30f7d34589e593bacb4fbe7088f887427665920d0a13af4b9e97 2312 r-cran-cyclocomp_1.1.1-1.debian.tar.xz"
+    "38eba574cf9283c6895e4e87cb8f9f61d4471d60f542022b47651e6a4adbfc83 2266 r-cran-cyclocomp_1.1.2-1.dsc 2e364dcacbdce4a4675eaeb2021a04c03913970e57c2a1d6185c87fdf58ed783 9246 r-cran-cyclocomp_1.1.2.orig.tar.gz 06c92345dc5a831bb3c132f6e05219237b604ca460b104ade02f71019483e0c4 2808 r-cran-cyclocomp_1.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-cyclocomp"
   ],
   "Files": [
-    "c8efdd0af07d7ae0316c1fd43908d422 2145 r-cran-cyclocomp_1.1.1-1.dsc 8e8d8ea42dea69952eecae52d4242e05 8584 r-cran-cyclocomp_1.1.1.orig.tar.gz c53e5f9abd9ef19c344a56e22f054627 2312 r-cran-cyclocomp_1.1.1-1.debian.tar.xz"
+    "33c45ae0e1cd6a6254d41f2cbda3008d 2266 r-cran-cyclocomp_1.1.2-1.dsc 563ef8c7cf2137b602dfea69b42ffe84 9246 r-cran-cyclocomp_1.1.2.orig.tar.gz ed1714ee63923c6bf710661b46135a25 2808 r-cran-cyclocomp_1.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-processx, r-cran-testthat"
   ],
   "Uploaders": [
     "Andrius Merkys \u003cmerkys@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-cyclocomp.git"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.1.2-1"
   ]
 }
