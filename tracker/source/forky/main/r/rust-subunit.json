@@ -6,19 +6,25 @@
     "librust-subunit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-crc32fast-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-stream-0.3+default-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev (\u003e= 0.1.81) \u003c!nocheck\u003e, librust-chrono-0.4+default-dev (\u003e= 0.4.38) \u003c!nocheck\u003e, librust-crc32fast-1+default-dev (\u003e= 1.3) \u003c!nocheck\u003e, librust-enumset-1+default-dev (\u003e= 1.1.3) \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.6) \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+full-dev \u003c!nocheck\u003e, librust-tokio-stream-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3ff926766d675b7191843db1f0c1e3bce684649c4f721e5554a19a1eab1a52d9 1953 rust-subunit_0.2.1-1.dsc 3872b812c8d09069f7de346f6a203d5354fbe444dd327f9d41ce4000531b686b 11319 rust-subunit_0.2.1.orig.tar.gz 3feb7ae96fee8b0ae065fa92e27ddfc0bc5e22a1c1a5482d1f8070ab8d41185d 1960 rust-subunit_0.2.1-1.debian.tar.xz"
+    "5c883a733d2188aae6ee0d51f8b5f727885f4f91844b70de72f0bc21bff4782e 2354 rust-subunit_0.3.1-1.dsc d5e04a231485ceb8501d711032d1b569d3956f6a062fe8b08df1ae2c96b0cf2e 36041 rust-subunit_0.3.1.orig.tar.gz 5c176975304acadd3aec3e987f0aa4c9e73a87896511e2d3a25e43f6978c2d93 2244 rust-subunit_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-subunit"
   ],
   "Files": [
-    "a1b95a26a372c15556129374e4d3318b 1953 rust-subunit_0.2.1-1.dsc 0a9b915e2c6740777c53deac7daec41a 11319 rust-subunit_0.2.1.orig.tar.gz 17a4dbda104dadf5b2d232857aa2a84e 1960 rust-subunit_0.2.1-1.debian.tar.xz"
+    "357ff3afbd50e1365beaa12f17cd1cbe 2354 rust-subunit_0.3.1-1.dsc 609272475b4e989c9292f80171a3bf7b 36041 rust-subunit_0.3.1.orig.tar.gz 7f39f9bf7234bc220b9c8aca4b4f52b1 2244 rust-subunit_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mtreinish/subunit-rust"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-tokio-util-0.7+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/subunit]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.3.1-1"
   ]
 }

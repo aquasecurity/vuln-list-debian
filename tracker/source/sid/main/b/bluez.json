@@ -6,16 +6,16 @@
     "libbluetooth3, libbluetooth-dev, bluetooth, bluez, bluez-cups, bluez-obexd, bluez-meshd, bluez-hcidump, bluez-test-tools, bluez-test-scripts, bluez-source"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bison, check \u003c!nocheck\u003e, flex, libasound2-dev, libdbus-1-dev (\u003e= 1.6), libdw-dev, libebook1.2-dev [!i386] \u003c!pkg.bluez.noeds\u003e, libell-dev (\u003e= 0.39), libglib2.0-dev, libical-dev, libjson-c-dev (\u003e= 0.13), libreadline-dev, libudev-dev, python3-docutils, python3-pygments, systemd-dev, udev"
+    "debhelper-compat (= 13), dh-sequence-installsysusers, bison, check \u003c!nocheck\u003e, flex, libasound2-dev, libdbus-1-dev (\u003e= 1.6), libdw-dev, libebook1.2-dev [!i386] \u003c!pkg.bluez.noeds\u003e, libell-dev (\u003e= 0.39), libglib2.0-dev, libical-dev, libjson-c-dev (\u003e= 0.13), libreadline-dev, libudev-dev, python3-docutils, python3-pygments, systemd-dev, udev"
   ],
   "Checksums-Sha256": [
-    "f4e635670ac3a7f8057f542bf3b746846a24145f08856636465f98465fb3463e 2884 bluez_5.85-3.dsc 7516f167f6aaabff9a48eac1515638fd349ecb884d254b558481b02520e7abe8 3307971 bluez_5.85.orig.tar.gz 7ef5bbe0003f3526b33c60d2741ea68fafe2d51860acbe2e4481178259364bfe 37372 bluez_5.85-3.debian.tar.xz"
+    "67efdc5b847bad72a7021cd7eb33e582090a5d0dd8564d3cb66479c1e6e8f785 2943 bluez_5.85-4.dsc 7516f167f6aaabff9a48eac1515638fd349ecb884d254b558481b02520e7abe8 3307971 bluez_5.85.orig.tar.gz 2dacc9500ee6bb21ca60d826ffee530ad361c93f0425933dd55dc7eccb14906b 37424 bluez_5.85-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/bluez"
   ],
   "Files": [
-    "2540e895ae966eaa3a4d9c8c0797ffcd 2884 bluez_5.85-3.dsc 17707d43b6766e3f52bb8fefaee73929 3307971 bluez_5.85.orig.tar.gz 7a36411ecb1bdfd16530f9dd4888afc1 37372 bluez_5.85-3.debian.tar.xz"
+    "cd3a2721da536868dda26dd6090b7fe2 2943 bluez_5.85-4.dsc 17707d43b6766e3f52bb8fefaee73929 3307971 bluez_5.85.orig.tar.gz 249c3b51b516c4f9be309ecb8affc142 37424 bluez_5.85-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "bluez"
   ],
   "Package-List": [
-    "bluetooth deb admin optional arch=all bluez deb admin optional arch=linux-any bluez-cups deb admin optional arch=linux-any bluez-hcidump deb admin optional arch=linux-any bluez-meshd deb admin optional arch=linux-any bluez-obexd deb admin optional arch=linux-any bluez-source deb admin optional arch=all bluez-test-scripts deb admin optional arch=all profile=!nodoc,!noinsttest bluez-test-tools deb admin optional arch=linux-any libbluetooth-dev deb libdevel optional arch=linux-any libbluetooth3 deb libs optional arch=linux-any"
+    "bluetooth deb admin optional arch=all bluez deb admin optional arch=linux-any bluez-cups deb admin optional arch=linux-any bluez-hcidump deb admin optional arch=linux-any bluez-meshd deb admin optional arch=linux-any bluez-obexd deb admin optional arch=linux-any bluez-source deb admin optional arch=all bluez-test-scripts deb admin optional arch=all profile=!nodoc,!noinsttest profile:v1=!nodoc\u0026!noinsttest bluez-test-tools deb admin optional arch=linux-any libbluetooth-dev deb libdevel optional arch=linux-any libbluetooth3 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/bluetooth-team/bluez.git"
   ],
   "Version": [
-    "5.85-3"
+    "5.85-4"
   ]
 }

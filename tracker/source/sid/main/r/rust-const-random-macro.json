@@ -6,19 +6,25 @@
     "librust-const-random-macro-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-getrandom-0.2+default-dev \u003c!nocheck\u003e, librust-once-cell-1+alloc-dev (\u003e= 1.15-~~) \u003c!nocheck\u003e, librust-once-cell-1+race-dev (\u003e= 1.15-~~) \u003c!nocheck\u003e, librust-tiny-keccak-2+default-dev (\u003e= 2.0.2-~~) \u003c!nocheck\u003e, librust-tiny-keccak-2+shake-dev (\u003e= 2.0.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-getrandom+default-dev (\u003c\u003c 0.5) \u003c!nocheck\u003e, librust-getrandom+default-dev (\u003e= 0.3) \u003c!nocheck\u003e, librust-once-cell-1+alloc-dev (\u003e= 1.15) \u003c!nocheck\u003e, librust-once-cell-1+race-dev (\u003e= 1.15) \u003c!nocheck\u003e, librust-tiny-keccak-2+default-dev (\u003e= 2.0.2) \u003c!nocheck\u003e, librust-tiny-keccak-2+shake-dev (\u003e= 2.0.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e04d436bba630a68c770ddcba10be2a9b252e9c9e12d0d8bb5390019a1115181 2540 rust-const-random-macro_0.1.16-2.dsc f9d839f2a20b0aee515dc581a6172f2321f96cab76c1a38a4c584a194955390e 6657 rust-const-random-macro_0.1.16.orig.tar.gz 37ab13bba7f70f2c37df2271ce7ba2c67bcf8c903f8a9a7a2566934a4787a454 5348 rust-const-random-macro_0.1.16-2.debian.tar.xz"
+    "d2901be35c2ed51cfbfd25381843800e7b020b60a49ab873329ee4e641ec2c4e 2669 rust-const-random-macro_0.1.16-4.dsc f9d839f2a20b0aee515dc581a6172f2321f96cab76c1a38a4c584a194955390e 6657 rust-const-random-macro_0.1.16.orig.tar.gz 7299e9003b5fa26f24e44d5d830d1d0bbffd356d61982e811d1b14f9dc18edc3 5600 rust-const-random-macro_0.1.16-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-const-random-macro"
   ],
   "Files": [
-    "7900c4c9fa789b56a69dce8e2ff5621d 2540 rust-const-random-macro_0.1.16-2.dsc d78e51dde3d0fe821efa4f3b55d894ee 6657 rust-const-random-macro_0.1.16.orig.tar.gz 44faf3927754e62c53a78407d4ba4e23 5348 rust-const-random-macro_0.1.16-2.debian.tar.xz"
+    "4c2af76e94ea2998b2d00ec8cc0fdef5 2669 rust-const-random-macro_0.1.16-4.dsc d78e51dde3d0fe821efa4f3b55d894ee 6657 rust-const-random-macro_0.1.16.orig.tar.gz 792f3ff3b16e7be16dd9544f84227747 5600 rust-const-random-macro_0.1.16-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tkaitchuck/constrandom"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/const-random-macro]"
   ],
   "Version": [
-    "0.1.16-2"
+    "0.1.16-4"
   ]
 }

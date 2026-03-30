@@ -6,10 +6,10 @@
     "python3-eodag, eodag"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-annotated-types, python3-boto3, python3-botocore, python3-cachetools, python3-click, python3-dateutil, python3-ecmwf-api-client, python3-fake-factory \u003c!nocheck\u003e, python3-fastapi, python3-geojson, python3-httpx \u003c!nocheck\u003e, python3-jsonpath-ng, python3-jwt, python3-lxml, python3-moto \u003c!nocheck\u003e, python3-orjson, python3-owslib, python3-pycryptodome, python3-pydantic, python3-pydantic-core, python3-pydantic-settings, python3-pygeofilter, python3-pyproj, python3-pyshp, python3-pystac, python3-pytest \u003c!nocheck\u003e, python3-pytest-instafail \u003c!nocheck\u003e, python3-pytest-socket \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-requests, python3-responses \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-shapely, python3-starlette, python3-stdlib-list \u003c!nocheck\u003e, python3-tqdm, python3-typing-extensions, python3-urllib3, python3-usgs, python3-uvicorn, python3-yaml, python3-zipstream-ng"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-annotated-types, python3-boto3, python3-botocore, python3-click, python3-dateutil, python3-ecmwf-api-client, python3-fake-factory \u003c!nocheck\u003e, python3-geojson, python3-jsonpath-ng, python3-jwt, python3-lxml, python3-moto \u003c!nocheck\u003e, python3-orjson, python3-owslib, python3-pycryptodome, python3-pydantic, python3-pydantic-core, python3-pyproj, python3-pyshp, python3-pystac, python3-pytest \u003c!nocheck\u003e, python3-pytest-instafail \u003c!nocheck\u003e, python3-pytest-socket \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-requests, python3-responses \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-shapely, python3-stac-pydantic, python3-stac-validator, python3-stdlib-list \u003c!nocheck\u003e, python3-tqdm, python3-typing-extensions, python3-urllib3, python3-usgs, python3-yaml, python3-zipstream-ng"
   ],
   "Checksums-Sha256": [
-    "adfe0d038c25400c71a96bdf94478743a42568e59d23f264ef059b34cb8cb832 4309 eodag_3.10.2+ds-1.dsc f7f59b160617d7b592e3f7b1c2aa4cb389ac9cd0e2a5973a78b91e2392aa3344 14896128 eodag_3.10.2+ds.orig.tar.xz 16aae5ad24e5c90c144d7d0165ab93b80c585d8449db169d5a214c0d778d5e13 9408 eodag_3.10.2+ds-1.debian.tar.xz"
+    "f502d430069b39a62e411e504d732dac4852553916cca69a2637aad3f39ddb16 4202 eodag_4.0.2+ds-1.dsc 2874f46b9fcecb3d6782e37ff395c54254fca11574115042a2234accbcd78e34 14729928 eodag_4.0.2+ds.orig.tar.xz 7ad60db4cbc445e74d64e32d5331b520a99a16530c42a7ce7aa7c37e47e504c1 9016 eodag_4.0.2+ds-1.debian.tar.xz"
   ],
   "Description": [
     "Earth Observation Data Access Gateway EODAG (Earth Observation Data Access Gateway) is a command line tool and a plugin-oriented Python framework for searching, aggregating results and downloading remote sensed images while offering a unified API for data access regardless of the data provider. The EODAG SDK is structured around three functions: * List product types: list of supported products and their description * Search products (by product type or uid) : searches products according to the search criteria provided * Download products : download product \"as is\" . EODAG is developed in Python. It is structured according to a modular plugin architecture, easily extensible and able to integrate new data providers. Three types of plugins compose the tool: * Catalog search plugins, responsible for searching data (OpenSearch, CSW, ...), building paths, retrieving quicklook, combining results * Download plugins, allowing to download and retrieve data locally (via FTP, HTTP, ..), always with the same directory organization * Authentication plugins, which are used to authenticate the user on the external services used (JSON Token, Basic Auth, OAUTH, ...). . Since v2.0 EODAG can be run as STAC client or server."
@@ -18,7 +18,7 @@
     "pool/main/e/eodag"
   ],
   "Files": [
-    "a92a1c4882141290a7291d786bd03d0d 4309 eodag_3.10.2+ds-1.dsc c49332394eb195380f9a96b668b652e6 14896128 eodag_3.10.2+ds.orig.tar.xz faae55f12c1c6a1bba6b4555718fae0f 9408 eodag_3.10.2+ds-1.debian.tar.xz"
+    "d995f348553b6b43191469734ba3cf95 4202 eodag_4.0.2+ds-1.dsc a259f34232c333914f81f625520d0b72 14729928 eodag_4.0.2+ds.orig.tar.xz 20b94f42f02e0d3b4a22c382a932dad5 9016 eodag_4.0.2+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/eodag.git"
   ],
   "Version": [
-    "3.10.2+ds-1"
+    "4.0.2+ds-1"
   ]
 }

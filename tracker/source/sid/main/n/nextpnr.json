@@ -3,34 +3,34 @@
     "any all"
   ],
   "Binary": [
-    "nextpnr-ice40, nextpnr-ice40-qt, nextpnr-ice40-chipdb, nextpnr-ecp5, nextpnr-ecp5-qt, nextpnr-ecp5-chipdb, nextpnr-gowin, nextpnr-gowin-qt, nextpnr-gowin-chipdb, nextpnr-himbaechel, nextpnr-himbaechel-qt, nextpnr-himbaechel-gowin-chipdb, nextpnr-generic"
+    "nextpnr-ice40, nextpnr-ice40-qt, nextpnr-ice40-chipdb, nextpnr-ecp5, nextpnr-ecp5-qt, nextpnr-ecp5-chipdb, nextpnr-gowin, nextpnr-gowin-qt, nextpnr-gowin-chipdb, nextpnr-himbaechel-gowin, nextpnr-himbaechel-gowin-qt, nextpnr-himbaechel-gowin-chipdb, nextpnr-himbaechel-gatemate, nextpnr-himbaechel-gatemate-qt, nextpnr-himbaechel-gatemate-chipdb, nextpnr-generic"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13)"
   ],
   "Build-Depends-Arch": [
-    "cmake, ninja-build, qtbase5-dev [alpha amd64 arm64 hppa ia64 loong64 mips64el ppc64 ppc64el riscv64 s390x sh4 sparc64] \u003c!pkg.nextpnr.nogui\u003e, libboost-filesystem-dev, libboost-thread-dev, libboost-program-options-dev, libboost-python-dev, libboost-iostreams-dev, libqt5opengl5-desktop-dev [alpha amd64 arm64 hppa ia64 loong64 mips64el ppc64 ppc64el riscv64 s390x sh4 sparc64] \u003c!pkg.nextpnr.nogui\u003e, libeigen3-dev, googletest, pybind11-dev, python3-dev, fpga-icestorm-chipdb, python3-apycula (\u003e= 0.31~), python3-pytrellis, help2man"
+    "cmake, ninja-build, libboost-filesystem-dev, libboost-thread-dev, libboost-program-options-dev, libboost-python-dev, libboost-iostreams-dev, qtbase5-dev [m68k] \u003c!pkg.nextpnr.nogui\u003e, libqt5opengl5-desktop-dev [m68k] \u003c!pkg.nextpnr.nogui\u003e, qt6-base-dev [!m68k] \u003c!pkg.nextpnr.nogui\u003e, libeigen3-dev, googletest, pybind11-dev, python3-dev, fpga-icestorm-chipdb, python3-apycula (\u003e= 0.31~), python3-pytrellis, python3-peppercorn (\u003e= 1.12~), python3-peppercorn (\u003c\u003c 1.13~), help2man"
   ],
   "Checksums-Sha256": [
-    "d89adb6c9dd9919a97848b3f25b20fc8877ce2c96364ada6f77ffad3e639be70 4459 nextpnr_0.10-1.dsc 83d37f547a7d55ca9f4f0941c47ec13f0fece71cb35409c10b05f2fce31f9cdb 3803044 nextpnr_0.10.orig.tar.xz a14f2a6d542887d2096edee24ba198920e799eb31cdad76a5af7adb29660eed2 10764 nextpnr_0.10-1.debian.tar.xz"
+    "565c98b511668090f9eec92ef1844c537db25149c893eab05e89485fb4f34f21 4570 nextpnr_0.10-4.dsc 83d37f547a7d55ca9f4f0941c47ec13f0fece71cb35409c10b05f2fce31f9cdb 3803044 nextpnr_0.10.orig.tar.xz 70e29f059e0fbca5b9696ca961f2f4ae78c568d429cf4666f7318eaf05d9bb0b 11436 nextpnr_0.10-4.debian.tar.xz"
   ],
   "Description": [
     "FPGA place and route tool nextpnr is a FPGA place and route tool. Its purpose is to turn a topological description of digital hardware produced by an FPGA logic synthesis tool such as yosys into an elaborate map of connections between the hardwired functional units available inside the FPGA's fabric. . In order to verify the fully implemented design for proper operation at high speed timing-analysis of the design is also supported."
   ],
   "Dgit": [
-    "b110f5478eca632be82a6d07bec547935c0fa010 debian archive/debian/0.10-1 https://git.dgit.debian.org/nextpnr"
+    "d9e752bb4908f888c6308cc68537ab93ab8e6436 debian archive/debian/0.10-4 https://git.dgit.debian.org/nextpnr"
   ],
   "Directory": [
     "pool/main/n/nextpnr"
   ],
   "Files": [
-    "ffc225665c56f68494285163f4ea1f0b 4459 nextpnr_0.10-1.dsc ffba4b96d8c830c3a8ad23b959701dfe 3803044 nextpnr_0.10.orig.tar.xz 5f8f6f55834d9d03c59b1048347f19fe 10764 nextpnr_0.10-1.debian.tar.xz"
+    "1aabca3511bb5460755554ae7f73e94c 4570 nextpnr_0.10-4.dsc ffba4b96d8c830c3a8ad23b959701dfe 3803044 nextpnr_0.10.orig.tar.xz 4fea7723e501085e5d39d6beb9c03366 11436 nextpnr_0.10-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=20c67383b5fcdc473906233d73d0feba622f2ba6 fp=b63baa38949798d8d2897dd37ebd387bb0990811"
+    "tag=b29525bdc774074e6f2e3870b18afe253f6703a2 fp=b63baa38949798d8d2897dd37ebd387bb0990811"
   ],
   "Git-Tag-Tagger": [
     "Simon Richter \u003csjr@debian.org\u003e"
@@ -45,7 +45,7 @@
     "nextpnr"
   ],
   "Package-List": [
-    "nextpnr-ecp5 deb electronics optional arch=any nextpnr-ecp5-chipdb deb electronics optional arch=any nextpnr-ecp5-qt deb electronics optional arch=alpha,amd64,arm64,hppa,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sh4,sparc64 profile=!pkg.nextpnr.nogui nextpnr-generic deb electronics optional arch=any nextpnr-gowin deb oldlibs optional arch=all nextpnr-gowin-chipdb deb oldlibs optional arch=all nextpnr-gowin-qt deb oldlibs optional arch=all nextpnr-himbaechel deb electronics optional arch=any nextpnr-himbaechel-gowin-chipdb deb electronics optional arch=any nextpnr-himbaechel-qt deb electronics optional arch=alpha,amd64,arm64,hppa,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sh4,sparc64 profile=!pkg.nextpnr.nogui nextpnr-ice40 deb electronics optional arch=any nextpnr-ice40-chipdb deb electronics optional arch=any nextpnr-ice40-qt deb electronics optional arch=alpha,amd64,arm64,hppa,ia64,loong64,mips64el,ppc64,ppc64el,riscv64,s390x,sh4,sparc64 profile=!pkg.nextpnr.nogui"
+    "nextpnr-ecp5 deb electronics optional arch=any nextpnr-ecp5-chipdb deb electronics optional arch=any nextpnr-ecp5-qt deb electronics optional arch=any profile=!pkg.nextpnr.nogui nextpnr-generic deb electronics optional arch=any nextpnr-gowin deb oldlibs optional arch=all nextpnr-gowin-chipdb deb oldlibs optional arch=all nextpnr-gowin-qt deb oldlibs optional arch=all nextpnr-himbaechel-gatemate deb electronics optional arch=any nextpnr-himbaechel-gatemate-chipdb deb electronics optional arch=any nextpnr-himbaechel-gatemate-qt deb electronics optional arch=any profile=!pkg.nextpnr.nogui nextpnr-himbaechel-gowin deb electronics optional arch=any nextpnr-himbaechel-gowin-chipdb deb electronics optional arch=any nextpnr-himbaechel-gowin-qt deb electronics optional arch=any profile=!pkg.nextpnr.nogui nextpnr-ice40 deb electronics optional arch=any nextpnr-ice40-chipdb deb electronics optional arch=any nextpnr-ice40-qt deb electronics optional arch=any profile=!pkg.nextpnr.nogui"
   ],
   "Priority": [
     "extra"
@@ -59,6 +59,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "nextpnr-himbaechel, nextpnr-himbaechel-qt"
+  ],
   "Uploaders": [
     "Daniel Gröber \u003cdxld@darkboxed.org\u003e, Simon Richter \u003csjr@debian.org\u003e"
   ],
@@ -69,6 +72,6 @@
     "https://salsa.debian.org/electronics-team/nextpnr.git"
   ],
   "Version": [
-    "0.10-1"
+    "0.10-4"
   ]
 }

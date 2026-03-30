@@ -6,28 +6,22 @@
     "gnome-settings-daemon, gnome-settings-daemon-common, gnome-settings-daemon-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, dh-sequence-gnome, gsettings-desktop-schemas-dev (\u003e= 46~beta), intltool, libasound2-dev [linux-any], libcanberra-dev, libcolord-dev [linux-any], libcups2-dev, libfontconfig-dev, libgcr-4-dev [linux-any], libgeoclue-2-dev, libgeocode-glib-dev (\u003e= 3.26.3), libgio-2.0-dev, libglib2.0-dev, libglib2.0-dev:native, libgnome-desktop-4-dev, libgudev-1.0-dev [linux-any], libgweather-4-dev (\u003e= 4.1), libibus-1.0-dev, liblcms2-dev, libmm-glib-dev [linux-any], libnm-dev [linux-any], libnotify-dev, libpolkit-gobject-1-dev (\u003e= 0.114), libpulse-dev, libsystemd-dev [linux-any], libupower-glib-dev (\u003e= 0.99.12), libx11-dev, libxext-dev, libxfixes-dev (\u003e= 1:6.0), libxi-dev, libxt-dev, meson, python3-dbusmock \u003c!nocheck\u003e, python3-gi \u003c!nocheck\u003e, systemd-dev [linux-any], xkb-data, xserver-xorg-input-wacom [!hurd-any !s390x]"
+    "debhelper-compat (= 13), dh-exec, dh-sequence-gnome, gnome-session-bin \u003c!nocheck\u003e, gsettings-desktop-schemas-dev (\u003e= 46~beta), intltool, libasound2-dev [linux-any], libcanberra-dev, libcolord-dev [linux-any], libcups2-dev, libfontconfig-dev, libgcr-4-dev [linux-any], libgeoclue-2-dev, libgeocode-glib-dev (\u003e= 3.26.3), libgio-2.0-dev, libglib2.0-dev, libglib2.0-dev:native, libgnome-desktop-4-dev, libgudev-1.0-dev [linux-any], libgweather-4-dev (\u003e= 4.1), libibus-1.0-dev, liblcms2-dev, libmm-glib-dev [linux-any], libnm-dev [linux-any], libnotify-dev (\u003e= 0.8.7), libpolkit-gobject-1-dev (\u003e= 0.114), libpulse-dev, libsystemd-dev [linux-any], libupower-glib-dev (\u003e= 0.99.12), libx11-dev, libxext-dev, libxfixes-dev (\u003e= 1:6.0), libxi-dev, libxt-dev, meson, mutter \u003c!nocheck\u003e, python3-dbusmock \u003c!nocheck\u003e, python3-gi \u003c!nocheck\u003e, systemd-dev [linux-any], xkb-data, xwayland \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8bd3353e0b77da5b041c28bcf3ecf3c1492fb521a5292f7a8d6e1ec2524d3592 3486 gnome-settings-daemon_49.1-5.dsc 2a9957fc4f91c3b9127b49484179bef485120d9c1c208e44d44e6a746e6cc1c1 1489824 gnome-settings-daemon_49.1.orig.tar.xz 914e639de52fee28c30cb91284d6e0de7517534c6251f290a29caa9997766e72 32316 gnome-settings-daemon_49.1-5.debian.tar.xz"
+    "da98bddb46810da07b6eb69d46e3ad52ce644d29c1dd724a3e4c184a8250905a 3409 gnome-settings-daemon_50.0-2.dsc d82b50336c98a2ed713e9716c372125bb31bdfc2dae9d95baaef4d769d614fb6 1497996 gnome-settings-daemon_50.0.orig.tar.xz decf0fb6ba7d9728658fe1490bea284fd51c3b25a088b3df3366e2dc28404067 24544 gnome-settings-daemon_50.0-2.debian.tar.xz"
   ],
   "Dgit": [
-    "45b17625e64ba54b489301bd760fd016e86a2308 debian archive/debian/49.1-5 https://git.dgit.debian.org/gnome-settings-daemon"
+    "583a4c9d504054b89a26f0f759e3e07f92d556a3 debian archive/debian/50.0-2 https://git.dgit.debian.org/gnome-settings-daemon"
   ],
   "Directory": [
     "pool/main/g/gnome-settings-daemon"
   ],
   "Files": [
-    "1cdb085de9f9b68bf93a5edce4917e8d 3486 gnome-settings-daemon_49.1-5.dsc 054a3deb8d4e1a0a854b62938ec0bcee 1489824 gnome-settings-daemon_49.1.orig.tar.xz 8ecc1bae5efa80f738b8bbfadba7cc29 32316 gnome-settings-daemon_49.1-5.debian.tar.xz"
+    "5d2a46b96d2e5d23bb24973d11c6d088 3409 gnome-settings-daemon_50.0-2.dsc 24728d4081095c930594396af52a6e09 1497996 gnome-settings-daemon_50.0.orig.tar.xz 9daeba12fe340e2ac3347d3f717034ed 24544 gnome-settings-daemon_50.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=88b9d311081064b7b0f867eacf9fd5df47485c3a fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
-  ],
-  "Git-Tag-Tagger": [
-    "Simon McVittie \u003csmcv@debian.org\u003e"
   ],
   "Homepage": [
     "https://gitlab.gnome.org/GNOME/gnome-settings-daemon"
@@ -48,7 +42,13 @@
     "gnome"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
     "Amin Bandali \u003cbandali@ubuntu.com\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e, Marco Trevisan (Treviño) \u003cmarco@ubuntu.com\u003e"
@@ -57,9 +57,9 @@
     "https://salsa.debian.org/gnome-team/gnome-settings-daemon"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/gnome-team/gnome-settings-daemon.git -b debian/forky"
+    "https://salsa.debian.org/gnome-team/gnome-settings-daemon.git"
   ],
   "Version": [
-    "49.1-5"
+    "50.0-2"
   ]
 }

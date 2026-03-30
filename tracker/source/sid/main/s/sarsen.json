@@ -6,10 +6,10 @@
     "python3-sarsen, sarsen"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-attr, python3-flox, python3-numpy, python3-pandas, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-rasterio, python3-rioxarray, python3-typer, python3-xarray, python3-xarray-sentinel, python3-numpy-dev"
+    "debhelper-compat (= 13), dh-python, dh-sequence-numpy3, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-attr, python3-dask \u003c!nocheck\u003e, python3-flox, python3-numpy, python3-pandas, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-rasterio, python3-rioxarray, python3-typer, python3-xarray, python3-xarray-sentinel, python3-numpy-dev"
   ],
   "Checksums-Sha256": [
-    "cf1b11238ab26d2e5a88885981fb8dae08c217123c0f295c19edc13fcd22a382 3584 sarsen_0.9.5+ds-1.dsc 556bd678d2f6f87a67249a69386692da383e82b81ad4ec63d4d32fc7fa42be3b 1696588 sarsen_0.9.5+ds.orig.tar.xz d6eeed6d0e774ae8d0c25ef15c8225d8fd47421a1b7f417da4df97b85095cc63 5056 sarsen_0.9.5+ds-1.debian.tar.xz"
+    "1672bce1cbcf6c562fc0fa6f9a50439f4aa946eaf62f62e7dbf92d9bfdc09a9b 3609 sarsen_0.9.5+ds-2.dsc 556bd678d2f6f87a67249a69386692da383e82b81ad4ec63d4d32fc7fa42be3b 1696588 sarsen_0.9.5+ds.orig.tar.xz 39815703d2604aa06959bb1718e22627520fa86db1e989022b7bac9dc72861e9 5196 sarsen_0.9.5+ds-2.debian.tar.xz"
   ],
   "Description": [
     "Algorithms and utilities for Synthetic Aperture Radar (SAR) sensors Enables cloud-native SAR processing via Xarray and Dask. . Sarsen is a Python library and command line tool with the following functionalities: . * provides algorithms to terrain-correct satellite SAR data - geometric terrain correction (geocoding) * fast mode: to terrain-correct images * accurate mode: for interferometric processing - radiometric terrain correction (gamma flattening) * accesses SAR data via xarray-sentinel: - supports most Sentinel-1 data products as distributed by ESA: * Sentinel-1 Single Look Complex (SLC) SM/IW/EW * Sentinel-1 Ground Range Detected (GRD) SM/IW/EW - reads uncompressed and compressed SAFE data products on the local computer or on a network via fsspec * accesses DEM data via rioxarray: - reads local and remote data in virtually any raster format via rasterio / GDAL * supports larger-than-memory and distributed data access and processing via Dask - efficient geometric terrain-correction for a full GRD - efficient radiometric terrain-correction for a full GRD."
@@ -18,7 +18,7 @@
     "pool/main/s/sarsen"
   ],
   "Files": [
-    "ffe580d594323b5e4979d68704a66537 3584 sarsen_0.9.5+ds-1.dsc 66b268d25f97fcf16bfcbf7c8fdc15ae 1696588 sarsen_0.9.5+ds.orig.tar.xz f143755d5122ffa14ea3fd54d78f3147 5056 sarsen_0.9.5+ds-1.debian.tar.xz"
+    "0769f792b6193e09456d1440226befc8 3609 sarsen_0.9.5+ds-2.dsc 66b268d25f97fcf16bfcbf7c8fdc15ae 1696588 sarsen_0.9.5+ds.orig.tar.xz 7af70f760bffb3246b13146973cadd4f 5196 sarsen_0.9.5+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/sarsen.git"
   ],
   "Version": [
-    "0.9.5+ds-1"
+    "0.9.5+ds-2"
   ]
 }

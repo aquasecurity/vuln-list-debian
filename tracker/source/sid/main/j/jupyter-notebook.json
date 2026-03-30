@@ -6,16 +6,16 @@
     "python3-notebook, python-notebook-doc, jupyter-notebook"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, fonts-font-awesome, libjs-backbone, libjs-bootstrap, libjs-bootstrap-tour, libjs-codemirror, libjs-es6-promise, libjs-jed, libjs-jquery, libjs-jquery-typeahead, libjs-jquery-ui, libjs-marked (\u003e= 4.0.9~), libjs-mathjax, libjs-moment, libjs-requirejs, libjs-requirejs-text, libjs-text-encoding, libjs-underscore, libjs-xterm, node-babel-loader, node-buffer, node-deepmerge, node-escape-string-regexp, node-fbjs, node-htmlparser2, node-is-plain-object, node-less, node-loose-envify, node-lumino, node-object-assign, node-po2json (\u003e= 0.4.5-2~), node-postcss, node-react, node-react-dom, node-requirejs, node-source-map, node-typescript, node-url, nodejs, pandoc, pkg-js-tools, python3-all, python3-argon2, python3-ipykernel \u003c!nocheck\u003e, python3-ipython \u003c!nocheck\u003e, python3-ipython-genutils, python3-jupyter-client \u003c!nocheck\u003e, python3-jupyter-core \u003c!nocheck\u003e, python3-nbconvert \u003c!nocheck\u003e, python3-nbformat \u003c!nocheck\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-nest-asyncio (\u003e= 1.5) \u003c!nocheck\u003e, python3-prometheus-client \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-requests-unixsocket \u003c!nocheck\u003e, python3-send2trash (\u003e= 1.8) \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-terminado \u003c!nocheck\u003e, python3-tornado \u003c!nocheck\u003e, python3-zmq \u003c!nocheck\u003e, webpack"
+    "debhelper-compat (= 13), dh-python, dh-nodejs, pybuild-plugin-pyproject, jupyter-core, jupyterlab, nodejs, node-find-root, node-vscode-ws-jsonrpc, node-duplicate-package-checker-webpack-plugin, node-typescript, pandoc, pkg-js-tools, python3-all, python3-jupyter-server, python3-tornado, python3-jupyterlab-server, python3-notebook-shim, python3-ipykernel \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-jupyter \u003c!nocheck\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-hatch-jupyter-builder, python3-hatchling, webpack"
   ],
   "Checksums-Sha256": [
-    "dea86ba8b8854a4be8776840001210f8e384ea9655c7fe16a96d3219792bcba5 3622 jupyter-notebook_6.4.13-5.dsc 6987230025659b478ecbbe921407c721a18082587994cb280bd131ad5853a15e 8501421 jupyter-notebook_6.4.13.orig.tar.gz 3eb15da84cbd12eb4c2e257d0893a5bf79d424fad0858170bc45028f39dddbb5 52184 jupyter-notebook_6.4.13-5.debian.tar.xz"
+    "5c0db6747552ebce263e53571706ecb2711bd1950bc57a0bf3a9c446fe9fc4aa 2962 jupyter-notebook_7.0.0-2.dsc 08a7d8eeca77b0896649cd45365e527240da80f217201f6f5c271f804d9d4b33 4596539 jupyter-notebook_7.0.0.orig.tar.gz b1875928507367e108697cc56fadf8fa507f63de144c4b3788c0c08f7c70f08b 12284 jupyter-notebook_7.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jupyter-notebook"
   ],
   "Files": [
-    "975854a4ea71d72ef3a7f4369a568f61 3622 jupyter-notebook_6.4.13-5.dsc 4d6131297f41de2bf2b451b57438fa11 8501421 jupyter-notebook_6.4.13.orig.tar.gz dfdea858443854a131a0cacbdece9d2c 52184 jupyter-notebook_6.4.13-5.debian.tar.xz"
+    "d6db533cc2d49fdd1e026529d76d44e6 2962 jupyter-notebook_7.0.0-2.dsc 5a8ad147639de38736f7ae8ad65eb385 4596539 jupyter-notebook_7.0.0.orig.tar.gz f4d84017aea871fa29a0bd63599eed4c 12284 jupyter-notebook_7.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "jupyter-notebook"
   ],
   "Package-List": [
-    "jupyter-notebook deb science optional arch=all python-notebook-doc deb doc optional arch=all profile=!nodoc python3-notebook deb python optional arch=all"
+    "jupyter-notebook deb science optional arch=all python-notebook-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-notebook deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest, python3-requests, python3-requests-unixsocket"
+    "python3-all, python3-ipykernel, python3-pytest, python3-pytest-jupyter, python3-pytest-timeout"
   ],
   "Uploaders": [
     "Gordon Ball \u003cgordon@chronitis.net\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/jupyter-notebook.git"
   ],
   "Version": [
-    "6.4.13-5"
+    "7.0.0-2"
   ]
 }

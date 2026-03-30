@@ -6,16 +6,16 @@
     "libggml0, libggml-dev, libggml0-backend-blas, libggml0-backend-hip, libggml0-backend-vulkan"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libblas-dev, pkgconf, libvulkan-dev, glslc, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.nohip\u003e, libamdhip64-dev (\u003e= 5.7.1-6+deb13u1) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, libhipblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, librocblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e"
+    "cmake, debhelper-compat (= 13), libblas-dev \u003c!pkg.ggml.noblas\u003e, pkgconf, libvulkan-dev \u003c!pkg.ggml.novulkan\u003e, glslc \u003c!pkg.ggml.novulkan\u003e, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.nohip\u003e, libamdhip64-dev (\u003e= 5.7.1-6+deb13u1) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, libhipblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, librocblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e"
   ],
   "Checksums-Sha256": [
-    "93a2a5fee227a650ceb3a28b35c55870259599927ba25ecf6af3b89538f30591 2876 ggml_0.9.7-2.dsc 5dc4d3878c44a7131ab87ed869d0accdc5b246bcfc8fe09fd0f4bebd37f81952 2570413 ggml_0.9.7.orig.tar.gz 538f7a0351d5694d3b47707b1a0ab2fa6851fa8094d78b9aa74723477bcf69e2 19532 ggml_0.9.7-2.debian.tar.xz"
+    "f015e92d28949f0b7ea1e7679ce93528d4cf3ddb791d106a0b1ecd4b76e06c38 3007 ggml_0.9.8-3.dsc 36fcaa8cfa9e224ff0e57b606bf2e6333c4d077a8a91014bc6c25d427fec0eba 2748873 ggml_0.9.8.orig.tar.gz c262ae204cedf945e11c502434cd47a0cb32db817d7f26762c511e849a668655 23972 ggml_0.9.8-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/ggml"
   ],
   "Files": [
-    "c64b19b63f890695b419d47a76d301b6 2876 ggml_0.9.7-2.dsc d4fbd1aa4b2789696d1c8f6fdeec5fda 2570413 ggml_0.9.7.orig.tar.gz e3b47bb124e878bcadeb10b7a9b3ef22 19532 ggml_0.9.7-2.debian.tar.xz"
+    "44a08a1bc444a2604eb15478ae30c4d3 3007 ggml_0.9.8-3.dsc cb12ae293c4bf4b3d6f9b0d8bdb49c75 2748873 ggml_0.9.8.orig.tar.gz b0209fb4b89cf141719b77e0429258e2 23972 ggml_0.9.8-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ggml"
   ],
   "Package-List": [
-    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-hip deb libs optional arch=amd64,arm64 profile=!pkg.ggml.nohip libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x"
+    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.noblas libggml0-backend-hip deb libs optional arch=amd64,arm64 profile=!pkg.ggml.nohip libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.novulkan"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "libggml0-backend-cuda, libopenblas0-pthread, mesa-vulkan-drivers, nvidia-vulkan-icd"
   ],
   "Uploaders": [
-    "Christian Kastner \u003cckk@debian.org\u003e"
+    "Christian Kastner \u003cckk@debian.org\u003e, Mathieu Baudier \u003cmbaudier@argeo.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/deeplearning-team/ggml"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/ggml.git"
   ],
   "Version": [
-    "0.9.7-2"
+    "0.9.8-3"
   ]
 }

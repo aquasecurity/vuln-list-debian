@@ -3,19 +3,19 @@
     "linux-any all"
   ],
   "Binary": [
-    "network-manager, network-manager-dev, network-manager-l10n, libnm0, libnm-dev, gir1.2-nm-1.0, network-manager-config-connectivity-debian"
+    "network-manager, network-manager-tui, network-manager-ovs, network-manager-team, network-manager-dev, network-manager-l10n, libnm0, libnm-dev, gir1.2-nm-1.0, network-manager-config-connectivity-debian"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), debhelper (\u003e= 13.11.6), dh-sequence-gir, meson (\u003e= 0.51.0), pkgconf, gettext (\u003e= 0.19.8), libglib2.0-dev (\u003e= 2.42), ppp-dev, libselinux1-dev, libaudit-dev, libgnutls28-dev (\u003e= 2.12), uuid-dev, systemd-dev, libsystemd-dev (\u003e= 209), libudev-dev (\u003e= 175), gir1.2-gio-2.0-dev, gobject-introspection, python3-gi, libpsl-dev (\u003e= 0.1), libcurl4-gnutls-dev (\u003e= 7.24.0), gtk-doc-tools, libglib2.0-doc, libmm-glib-dev (\u003e= 0.7.991), libndp-dev, libreadline-dev, libnewt-dev (\u003e= 0.52.15), libteam-dev (\u003e= 1.9), libjansson-dev (\u003e= 2.7), libbluetooth-dev (\u003e= 5), libdbus-1-dev, libpolkit-gobject-1-dev, mobile-broadband-provider-info, valac, dbus-daemon \u003c!nocheck\u003e, python3-dbus \u003c!nocheck\u003e, python3-pexpect \u003c!nocheck\u003e, iproute2 \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), debhelper (\u003e= 13.11.6), dh-sequence-gir, dh-sequence-installsysusers, meson (\u003e= 0.51.0), pkgconf, gettext (\u003e= 0.19.8), libglib2.0-dev (\u003e= 2.42), ppp-dev, libselinux-dev, libaudit-dev, libgnutls28-dev (\u003e= 2.12), uuid-dev, systemd-dev, libsystemd-dev (\u003e= 209), libudev-dev (\u003e= 175), gir1.2-gio-2.0-dev, gobject-introspection, python3-gi, libpsl-dev (\u003e= 0.1), libcurl4-gnutls-dev (\u003e= 7.24.0), gtk-doc-tools, libglib2.0-doc, libmm-glib-dev (\u003e= 0.7.991), libndp-dev, libreadline-dev, libnewt-dev (\u003e= 0.52.15), libteam-dev (\u003e= 1.9), libjansson-dev (\u003e= 2.7), libbluetooth-dev (\u003e= 5), libdbus-1-dev, libpolkit-gobject-1-dev, mobile-broadband-provider-info, valac, dbus-daemon \u003c!nocheck\u003e, python3-dbus \u003c!nocheck\u003e, python3-pexpect \u003c!nocheck\u003e, iproute2 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8d01d5b5c1bd9559b5f7ff0d4f0213c006c8414197734acd8c9fa8a47a875634 3273 network-manager_1.54.3-2.dsc e38d55611af8127e1a2b1a7b4952bded1f61917cbc49d4ee7a272ec3fcd7b51b 8437345 network-manager_1.54.3.orig.tar.bz2 b966d1a38552b5f064ab29b0a1d8e633ecc77fb7e0c38f00cf3ae0aa804d0a8c 59052 network-manager_1.54.3-2.debian.tar.xz"
+    "4b7bc45e54b62ff91cee35b5e0460c7860ac2abeca7e3991c016aa0a074ac86a 3525 network-manager_1.56.0-5.dsc 589281aed255b5872c0899240bb0ded1883cd7221aa5b54d42a90dffcb57fdec 8477850 network-manager_1.56.0.orig.tar.bz2 76a78aba4505ff9a6833d0068e90cb8a56a4cf15aaa33715811cb8a8a21e5219 59788 network-manager_1.56.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/network-manager"
   ],
   "Files": [
-    "61e8ed7f071defe0d32f2b7a8fae9721 3273 network-manager_1.54.3-2.dsc a771b1e3f3a1b65182a7070e15e75cc0 8437345 network-manager_1.54.3.orig.tar.bz2 6c0a5280ec6084b2abd5e972df58a95a 59052 network-manager_1.54.3-2.debian.tar.xz"
+    "5d600f15c6b05aac2c007c024453df4f 3525 network-manager_1.56.0-5.dsc a7f277231fd9f679c2dc89ed2b3cf53c 8477850 network-manager_1.56.0.orig.tar.bz2 1f215e3075686c268c3f1c7c9415f59c 59788 network-manager_1.56.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "network-manager"
   ],
   "Package-List": [
-    "gir1.2-nm-1.0 deb introspection optional arch=linux-any libnm-dev deb libdevel optional arch=linux-any libnm0 deb libs optional arch=linux-any network-manager deb net optional arch=linux-any network-manager-config-connectivity-debian deb net optional arch=all network-manager-dev deb devel optional arch=all network-manager-l10n deb localization optional arch=all"
+    "gir1.2-nm-1.0 deb introspection optional arch=linux-any libnm-dev deb libdevel optional arch=linux-any libnm0 deb libs optional arch=linux-any network-manager deb net optional arch=linux-any network-manager-config-connectivity-debian deb net optional arch=all network-manager-dev deb devel optional arch=all network-manager-l10n deb localization optional arch=all network-manager-ovs deb net optional arch=linux-any network-manager-team deb net optional arch=linux-any network-manager-tui deb net optional arch=linux-any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/utopia-team/network-manager.git"
   ],
   "Version": [
-    "1.54.3-2"
+    "1.56.0-5"
   ]
 }

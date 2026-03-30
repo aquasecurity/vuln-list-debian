@@ -6,16 +6,19 @@
     "librust-diesel-derives-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.78.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-diesel-table-macro-syntax-0.2+default-dev \u003c!nocheck\u003e, librust-dsl-auto-type-0.1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.27-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.9-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+fold-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.86.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-diesel-table-macro-syntax-0.3+default-dev \u003c!nocheck\u003e, librust-dsl-auto-type-0.2+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.27) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.9) \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+fold-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8f6a4c11d548407e41918811491322b93fb5f442525277a1896aa82edbdbadb7 2090 rust-diesel-derives_2.2.3-1.dsc e7f2c3de51e2ba6bf2a648285696137aaf0f5f487bcbea93972fe8a364e131a4 72770 rust-diesel-derives_2.2.3.orig.tar.gz 15eb4d4b6c932d4faf68b5de2103c12699a3542e3e44ab07155bc901f87db03a 3468 rust-diesel-derives_2.2.3-1.debian.tar.xz"
+    "d9f3f023d88cf97eb94edfaaec6b731e1f8c5133992dc337f3e2ae473e22e19b 2847 rust-diesel-derives_2.3.7-1.dsc 47618bf0fac06bb670c036e48404c26a865e6a71af4114dfd97dfe89936e404e 104709 rust-diesel-derives_2.3.7.orig.tar.gz cbecb8b574194b22a0b693fd75a062bb724dcb7e5d9aa4f413098fa59fedbf04 3576 rust-diesel-derives_2.3.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-diesel-derives"
   ],
   "Files": [
-    "3811c3cad839bb15723ab4c502894195 2090 rust-diesel-derives_2.2.3-1.dsc 42abedd8b014130902faf3bf110733d7 72770 rust-diesel-derives_2.2.3.orig.tar.gz a45d689377b1055ec11807301bc9c53b 3468 rust-diesel-derives_2.2.3-1.debian.tar.xz"
+    "bcb01e3e2a177a9c60711387a5f9dac7 2847 rust-diesel-derives_2.3.7-1.dsc bb18fee24a8d926a546e130dc4dcbbe5 104709 rust-diesel-derives_2.3.7.orig.tar.gz e749ebb6b897d386fc00abb33917c14e 3576 rust-diesel-derives_2.3.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cfg-if-1+default-dev, librust-dotenvy-0.15+default-dev, rustc"
+    "dh-cargo, librust-cfg-if-1+default-dev, librust-dotenvy-0.15+default-dev, librust-insta-1+default-dev, librust-prettyplease-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/diesel-derives]"
   ],
   "Version": [
-    "2.2.3-1"
+    "2.3.7-1"
   ]
 }
