@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "phosh-mobile-settings"
+    "phosh-mobile-settings, libpms-1.0-common, libpms-1.0-0, libpms-dev, gir1.2-pms-1.0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), appstream, dbus-daemon \u003c!nocheck\u003e, desktop-file-utils, feedbackd \u003c!nocheck\u003e, gnome-settings-daemon \u003c!nocheck\u003e, gsettings-desktop-schemas \u003c!nocheck\u003e, libadwaita-1-dev, libcellbroadcast-dev, libfeedback-dev (\u003e= 0.8.0), libgmobile-dev (\u003e= 0.4.0), libgnome-desktop-4-dev, libgsound-dev, libgtk-4-dev, libjson-glib-dev, libportal-dev, libportal-gtk4-dev, libpulse-dev, libsensors-dev, libxml2-utils, libyaml-dev, meson, phoc (\u003e= 0.47.0) \u003c!nocheck\u003e, phosh \u003c!nocheck\u003e, phosh-dev (\u003e= 0.40.0), xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xwayland \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-gir \u003c!nocheck\u003e, appstream, dbus-daemon \u003c!nocheck\u003e, desktop-file-utils, feedbackd-common (\u003e= 0.0.4) \u003c!nocheck\u003e, gir1.2-adw-1-dev \u003c!nogir\u003e, gir1.2-gio-2.0-dev \u003c!nogir\u003e, gir1.2-gtk-4.0-dev \u003c!nogir\u003e, gnome-settings-daemon \u003c!nocheck\u003e, gobject-introspection (\u003e= 1.80) \u003c!nogir\u003e, gsettings-desktop-schemas \u003c!nocheck\u003e, gstreamer1.0-plugins-good, libadwaita-1-dev, libcellbroadcast-dev, libfeedback-dev, libgmobile-dev (\u003e= 0.4.0), libgnome-desktop-4-dev, libgsound-dev, libgtk-4-dev, libjson-glib-dev, libportal-dev, libportal-gtk4-dev, libpulse-dev, libsensors-dev, libxml2-utils, libyaml-dev, meson, phoc (\u003e= 0.47.0) \u003c!nocheck\u003e, phosh \u003c!nocheck\u003e, phosh-dev (\u003e= 0.40.0), python3-docutils \u003c!nodoc\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xwayland \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "06e9a56f5585fa751084e8b3179ca3a727d507dc3087bba82f6bca2cbc42700d 2964 phosh-mobile-settings_0.53.0-2.dsc 64db449e029d94a91a6af68f599f0a71d6dba9e6687ecb4fc60506480211893a 409996 phosh-mobile-settings_0.53.0.orig.tar.xz c63df5b254381fc141c00fd7769cfaf9cff337ec46f95bb94fd890d3dad1c089 833 phosh-mobile-settings_0.53.0.orig.tar.xz.asc 4276ce1fa7ad27085d8d890758e5e17eabbb6e95ac942411da32c8789b2bb627 13512 phosh-mobile-settings_0.53.0-2.debian.tar.xz"
+    "b9a9a816912aa86e6770129d4048767ce4ce1e365714ddb82c11371387952f1a 3443 phosh-mobile-settings_0.54~rc1-1.dsc aabf5dc2930779c1a03ee1f8d6b657d6cccf976045f5d4cbf10d3b47aa43c6c4 463000 phosh-mobile-settings_0.54~rc1.orig.tar.xz 7a6a1cbd0ae7114a6261fd2221f1458d2ff53e3320503c264abb4edadae9d7d8 833 phosh-mobile-settings_0.54~rc1.orig.tar.xz.asc 481bbc8b7bd27807327c1a25924591f3d46565a8af012081ba851e3564d223d6 14896 phosh-mobile-settings_0.54~rc1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/phosh-mobile-settings"
   ],
   "Files": [
-    "4496ae059e76be7131019fca8bc288a0 2964 phosh-mobile-settings_0.53.0-2.dsc a0bc8532d20bfcb640ca03e142e02e9d 409996 phosh-mobile-settings_0.53.0.orig.tar.xz 94117b5488a7bb844b32661c326837d5 833 phosh-mobile-settings_0.53.0.orig.tar.xz.asc b5a27a32eed123f45197fb5a024b5479 13512 phosh-mobile-settings_0.53.0-2.debian.tar.xz"
+    "cef14caaea95aaa621603f15f3a91ecc 3443 phosh-mobile-settings_0.54~rc1-1.dsc 6043d2308034192fb7d42e7ac632cf18 463000 phosh-mobile-settings_0.54~rc1.orig.tar.xz 5c9f1a4ed7077a5a0edc711c050e8491 833 phosh-mobile-settings_0.54~rc1.orig.tar.xz.asc c029574f5d0c86f7d5dc1db6a250dc43 14896 phosh-mobile-settings_0.54~rc1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "phosh-mobile-settings"
   ],
   "Package-List": [
-    "phosh-mobile-settings deb x11 optional arch=any"
+    "gir1.2-pms-1.0 deb introspection optional arch=any libpms-1.0-0 deb libs optional arch=any libpms-1.0-common deb libs optional arch=any libpms-dev deb libdevel optional arch=any phosh-mobile-settings deb x11 optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/DebianOnMobile-team/phosh-mobile-settings.git"
   ],
   "Version": [
-    "0.53.0-2"
+    "0.54~rc1-1"
   ]
 }
