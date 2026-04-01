@@ -9,16 +9,19 @@
     "debhelper-compat (= 13), dh-sequence-gir, gir1.2-dex-1-dev, gir1.2-gio-2.0-dev, gir1.2-gtk-4.0-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], gir1.2-gtksource-5-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], gir1.2-json-1.0-dev, gir1.2-peas-2-dev, gobject-introspection, libdex-dev (\u003e= 1.1~alpha), libeditorconfig-dev, libflatpak-dev [!alpha], libgit2-dev, libglib2.0-dev (\u003e= 2.82), libgom-1.0-dev, libgtk-4-dev (\u003e= 4.20) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libgtksourceview-5-dev (\u003e= 5.18) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libjson-glib-dev, libpeas-2-dev, libreadline-dev, libsecret-1-dev, libsoup-3.0-dev, libspelling-1-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libssh2-1-dev, libsysprof-capture-4-dev, libtemplate-glib-1.0-dev (\u003e= 3.37.0), libvte-2.91-gtk4-dev (\u003e= 0.80) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x ppc64], libxml2-dev, libxml2-utils, libyaml-dev, meson"
   ],
   "Build-Depends-Indep": [
-    "gi-docgen \u003c!nodoc\u003e"
+    "gi-docgen \u003c!nodoc\u003e, gir1.2-gtk-4.0-dev \u003c!nodoc\u003e, gir1.2-gtksource-5-dev \u003c!nodoc\u003e, libgtk-4-dev (\u003e= 4.20) \u003c!nodoc\u003e, libgtksourceview-5-dev (\u003e= 5.18) \u003c!nodoc\u003e, libspelling-1-dev \u003c!nodoc\u003e, libvte-2.91-gtk4-dev (\u003e= 0.80) \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "65f367ba825078082a5bf7dbbf19672e807427c854cdc8127f510138db5e3151 3677 foundry_1.1~rc-1.dsc 39c22df83e471f08b76404ccb428fc7dcf3a5700e08327e1c6dc8f04db5823c4 1023344 foundry_1.1~rc.orig.tar.xz d99942c58d609ad98aa41e172aed5913bf0bdfb1d068ad57ba732e8cedcc2193 14976 foundry_1.1~rc-1.debian.tar.xz"
+    "d2f84982bb73e228911ca4a3233db9e559fc99962637d690be00a4838a76465c 4008 foundry_1.1.1-1.dsc 46db0d64436c313611cafdfb4ca0d5cec2b97be7d7a5f1be7ee8d0150d4f25c8 1079780 foundry_1.1.1.orig.tar.xz e79cc1b5826d29d550010da5cdbc60c9555acaa2dac0a30933eed4c246a2d7a8 15348 foundry_1.1.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "c22e22af8792c6e67672d929d196d82b16f93c51 debian archive/debian/1.1.1-1 https://git.dgit.debian.org/foundry"
   ],
   "Directory": [
     "pool/main/f/foundry"
   ],
   "Files": [
-    "344751620478bb30e590790726246c0a 3677 foundry_1.1~rc-1.dsc 489c93a84311fa008274e49ac635790d 1023344 foundry_1.1~rc.orig.tar.xz f47081d73cbcb16f9d816e8f7b92fcd1 14976 foundry_1.1~rc-1.debian.tar.xz"
+    "a189502b2367eea245d129e61f556cf9 4008 foundry_1.1.1-1.dsc 75ff5a9b145c7f51e1068e3d2a61ba60 1079780 foundry_1.1.1.orig.tar.xz 31764d7654dc472c87700a9e08593868 15348 foundry_1.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +36,7 @@
     "foundry"
   ],
   "Package-List": [
-    "foundry deb devel optional arch=linux-any foundry-common deb libs optional arch=all gir1.2-foundry-1 deb introspection optional arch=linux-any gir1.2-foundrygtk-1 deb introspection optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64 libfoundry-1-1 deb libs optional arch=linux-any libfoundry-dev deb libdevel optional arch=linux-any libfoundry-doc deb doc optional arch=all profile=!nodoc libfoundry-gtk-1-1 deb libs optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64 libfoundry-gtk-dev deb libdevel optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64"
+    "foundry deb devel optional arch=linux-any foundry-common deb libs optional arch=all gir1.2-foundry-1 deb introspection optional arch=linux-any gir1.2-foundrygtk-1 deb introspection optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64 libfoundry-1-1 deb libs optional arch=linux-any libfoundry-dev deb libdevel optional arch=linux-any libfoundry-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libfoundry-gtk-1-1 deb libs optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64 libfoundry-gtk-dev deb libdevel optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,ppc64"
   ],
   "Priority": [
     "optional"
@@ -42,7 +45,7 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/gnome-team/foundry.git"
   ],
   "Version": [
-    "1.1~rc-1"
+    "1.1.1-1"
   ]
 }
