@@ -6,16 +6,19 @@
     "libprocess-cpp3, libprocess-cpp-dev, libprocess-cpp-doc"
   ],
   "Build-Depends": [
-    "cmake, cmake-extras, debhelper-compat (= 13), doxygen, graphviz, googletest | google-mock, libboost-dev, libboost-iostreams-dev, libgmock-dev, libgtest-dev, libproperties-cpp-dev, pkgconf, rdfind, symlinks"
+    "debhelper-compat (= 13), cmake, cmake-extras, googletest, graphviz, libboost-dev, libboost-iostreams-dev, libgmock-dev, libgtest-dev, libproperties-cpp-dev, pkgconf, rdfind, symlinks"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "31757e97deaf231c27e21477f9248c941144a4c1423b0be2af6a28fcb530ea28 2313 process-cpp_3.0.3-2.dsc 43b8c0a8ea9f42de49d4b19ebae84d69d40574e7b86c16fd08b1ffe7b507ff36 57057 process-cpp_3.0.3.orig.tar.bz2 949ee6d421748bc3d3c004ef6b9a9c22b42c84696bf7921a03c66ff39cfb906a 7040 process-cpp_3.0.3-2.debian.tar.xz"
+    "0e85611ad89b12e030bffc456f9c3d3760c3830ec0a78c1eadc43a30368638d7 2359 process-cpp_3.1.0-2.dsc 9eed6bdfc331e9b6e68cfed00222eca08238623288967edd7037c8f05df45708 54264 process-cpp_3.1.0.orig.tar.bz2 f101deafc9d7ad6e8b949d844a21bdcabd58268f770613158fa565d86fa75219 7432 process-cpp_3.1.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/process-cpp"
   ],
   "Files": [
-    "9dffe8d3ed92f86c6b41c76ddfa2f58c 2313 process-cpp_3.0.3-2.dsc f634a217ec3ab6b5986705f79bb1a8f6 57057 process-cpp_3.0.3.orig.tar.bz2 ddfd986fa67967941177a801f139b490 7040 process-cpp_3.0.3-2.debian.tar.xz"
+    "8b40f3b17e3518cb1c421331f571e226 2359 process-cpp_3.1.0-2.dsc 83920433122d2058191d55668aedbf8d 54264 process-cpp_3.1.0.orig.tar.bz2 72aad068a2dc3e2ce4b36f23fd78206e 7432 process-cpp_3.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "process-cpp"
   ],
   "Package-List": [
-    "libprocess-cpp-dev deb libdevel optional arch=linux-any libprocess-cpp-doc deb doc optional arch=all libprocess-cpp3 deb libs optional arch=linux-any"
+    "libprocess-cpp-dev deb libdevel optional arch=linux-any libprocess-cpp-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libprocess-cpp3 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "extra"
@@ -39,10 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Uploaders": [
-    "Mike Gabriel \u003csunweaver@debian.org\u003e,"
+    "Mike Gabriel \u003csunweaver@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/ubports-team/process-cpp"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/ubports-team/process-cpp.git"
   ],
   "Version": [
-    "3.0.3-2"
+    "3.1.0-2"
   ]
 }

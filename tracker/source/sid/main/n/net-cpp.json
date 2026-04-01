@@ -6,16 +6,19 @@
     "libnet-cpp2, libnet-cpp-dev, libnet-cpp-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, cmake-extras, doxygen, googletest, graphviz, libboost-dev, libboost-serialization-dev, libcurl4-openssl-dev, libgtest-dev, libjsoncpp-dev, libprocess-cpp-dev (\u003e= 3.0.2), lsb-release, pkgconf, python3-httpbin, rdfind, symlinks"
+    "debhelper-compat (= 13), cmake, cmake-extras, googletest, graphviz, libboost-dev, libboost-serialization-dev, libcurl4-openssl-dev, libgtest-dev, libjsoncpp-dev, libprocess-cpp-dev (\u003e= 3.0.2), lsb-release, pkgconf, python3-httpbin, rdfind, symlinks"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "a9f87e51b76b4d96f64aa93c67740f174b3e2f5ae6d140bf46fe9a2fe8716943 2323 net-cpp_3.2.0-2.dsc e74d802f8f3f0f9a8274459de4b317e65ca85327c13f8248d38d4935fab850b7 62775 net-cpp_3.2.0.orig.tar.bz2 7467c8d9d1232e49f203ad3352f9e1beaa752e19ed8311714c3b8afb8e33a3a7 9400 net-cpp_3.2.0-2.debian.tar.xz"
+    "f7468664157eb0f74136139aef671b813a23974fa874e48edd7485eb48cfc396 2383 net-cpp_3.2.1-1.dsc cc60f1be98f4b358349d60a9f226eab15dc8691e526538cd4fc499720c5d2e18 63520 net-cpp_3.2.1.orig.tar.bz2 ad3f39e2d5d2a72505e8044eaec28747590c297d93d7af70574549c73ef0216b 8272 net-cpp_3.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/net-cpp"
   ],
   "Files": [
-    "d67a57f5bb05b26997fc39327cabec2f 2323 net-cpp_3.2.0-2.dsc 21611d0ed7c594c368a0d3d4d0030d89 62775 net-cpp_3.2.0.orig.tar.bz2 5515cf928db9889c738702c6032bdb99 9400 net-cpp_3.2.0-2.debian.tar.xz"
+    "d90b3cf132a5543760ebe1d6d05c42a2 2383 net-cpp_3.2.1-1.dsc 129eb8fde63185439a4f0545c4ab850a 63520 net-cpp_3.2.1.orig.tar.bz2 a62ff0c68cf96764d82a508c1b9ff38c 8272 net-cpp_3.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "net-cpp"
   ],
   "Package-List": [
-    "libnet-cpp-dev deb libdevel optional arch=any libnet-cpp-doc deb doc optional arch=all libnet-cpp2 deb libs optional arch=any"
+    "libnet-cpp-dev deb libdevel optional arch=any libnet-cpp-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libnet-cpp2 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,10 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Uploaders": [
-    "Mike Gabriel \u003csunweaver@debian.org\u003e, Marius Gripsgard \u003cmarius@ubports.com\u003e,"
+    "Mike Gabriel \u003csunweaver@debian.org\u003e, Marius Gripsgard \u003cmarius@ubports.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/ubports-team/net-cpp/"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/ubports-team/net-cpp.git"
   ],
   "Version": [
-    "3.2.0-2"
+    "3.2.1-1"
   ]
 }
