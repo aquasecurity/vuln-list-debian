@@ -6,16 +6,19 @@
     "librust-iptables-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-nix+default-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-nix+fs-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "206b2671f1a16f8ca1473d151efa2c0cfac54f9afbfb27473f9ca5413907101f 2373 rust-iptables_0.5.2-1.dsc 43b627935a2f5d654613bea2bcd677cc760b03ecf224ced0f1970c0d174813b9 6948 rust-iptables_0.5.2.orig.tar.gz d40eed1460e2b447296f94f847d17b4dde0f82cf5a6e23625b3edddc0fb74755 2976 rust-iptables_0.5.2-1.debian.tar.xz"
+    "228de7bffaafb075dbbd9f9d43742ebec7c24fd4c9f927edac7392fbbb765d14 2312 rust-iptables_0.6.0-1.dsc f30c9a636a0a728c67d1d420471c99b215708a17c222bb9afb16d0821e2d80d8 7453 rust-iptables_0.6.0.orig.tar.gz 94ee1b23927d5a8ee28199688600f409e75df07a90663469c3022a1963d9f8d1 2828 rust-iptables_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-iptables"
   ],
   "Files": [
-    "a094eb79c0436b72067acd9b66995bf0 2373 rust-iptables_0.5.2-1.dsc 720b57b1fcae9f7e58854354c2eda23a 6948 rust-iptables_0.5.2.orig.tar.gz 3c28de2a971f9c23affd63e94fa46e4b 2976 rust-iptables_0.5.2-1.debian.tar.xz"
+    "ba101aec75e932b57cfb132e29c89bd0 2312 rust-iptables_0.6.0-1.dsc 4b761b8466f9244b1294ec2c3632efc1 7453 rust-iptables_0.6.0.orig.tar.gz 79dfa53932845656961d52d5d6db2638 2828 rust-iptables_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/iptables]"
   ],
   "Version": [
-    "0.5.2-1"
+    "0.6.0-1"
   ]
 }
