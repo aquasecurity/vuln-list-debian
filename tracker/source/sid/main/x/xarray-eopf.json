@@ -1,0 +1,62 @@
+{
+  "Architecture": [
+    "all"
+  ],
+  "Binary": [
+    "python3-xarray-eopf"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-aiohttp, python3-dask, python3-dask-image, python3-fsspec, python3-numpy, python3-pyproj, python3-pytest \u003c!nocheck\u003e, python3-requests, python3-s3fs, python3-setuptools, python3-xarray, python3-xcube-resampling, python3-zarr"
+  ],
+  "Checksums-Sha256": [
+    "37e1776a408af4837b56287de8b72402480487f02107008ee47b709d8b10776b 3907 xarray-eopf_0.2.7-1.dsc 1eb842fcfb59fcb5e407d450b6e84ee07d3dc92c6efc48ced75d07ebd1e3c0a9 26792949 xarray-eopf_0.2.7.orig.tar.gz 43af90d7de2ffb4c635ae3913d04849304365b21037cb9b762fd3ff2290a58da 5000 xarray-eopf_0.2.7-1.debian.tar.xz"
+  ],
+  "Description": [
+    "EOPF Zarr backend for xarray An xarray backend implementation for ESA EOPF data products in Zarr format. . After installing this package, user can specify a new xarray backend named `\"eopf-zarr\"` to open EOPF sample products. The backend has two modes of operation, default analysis mode and the native mode. Both modes allow . * to open EOPF sample products from the local filesystem or from their original object storage using URLs with both `https` or `s3` protocols; * to open entire products as `xarray.DataTree` or `xarray.Dataset`; * to open a subgroup as `xarray.Dataset`. This works with local filesystem or `s3`-URLs. . The default analysis mode has the aim to represent the EOPF data products in an analysis-ready and convenient way. It provides the following features: . * Open the deeply nested EOPF products as flat `xarray.Dataset` objects. * All bands and quality images resampled to a single, user provided resolution, hence, spatial dimensions will be just `x` and `y`. * User-specified resampling by passing interpolation methods for up-scaling and aggregation methods for downscaling. * CF-compliant spatial referencing of datasets using a shared grid mapping variable `spatial_ref`. * Attach other CF-compliant metadata enhancements such as flag values and meanings for pixel quality information, such as the Sentinel-2 scene classification (variable `scl`). . The native mode does not modify any contents or data, instead it basically delegates to the built-in `zarr` backend."
+  ],
+  "Directory": [
+    "pool/main/x/xarray-eopf"
+  ],
+  "Files": [
+    "277e3a13582e3fc8445582354afd8935 3907 xarray-eopf_0.2.7-1.dsc 5b932651f102cd5f25ef5ab4b6190cac 26792949 xarray-eopf_0.2.7.orig.tar.gz 612777f6adab0d6ed3e1c44263f0017b 5000 xarray-eopf_0.2.7-1.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/EOPF-Sample-Service/xarray-eopf"
+  ],
+  "Maintainer": [
+    "Debian GIS Project \u003cpkg-grass-devel@lists.alioth.debian.org\u003e"
+  ],
+  "Package": [
+    "xarray-eopf"
+  ],
+  "Package-List": [
+    "python3-xarray-eopf deb python optional arch=all"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "python"
+  ],
+  "Standards-Version": [
+    "4.7.3"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
+  "Uploaders": [
+    "Antonio Valentino \u003cantonio.valentino@tiscali.it\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/debian-gis-team/xarray-eopf"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/debian-gis-team/xarray-eopf.git"
+  ],
+  "Version": [
+    "0.2.7-1"
+  ]
+}
