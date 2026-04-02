@@ -6,19 +6,19 @@
     "python3-cmd2, python-cmd2-doc"
   ],
   "Build-Depends": [
-    "debhelper, debhelper-compat (= 13)"
+    "debhelper, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-mkdocs, dh-sequence-python3, mkdocs \u003c!nodoc\u003e, mkdocs-macros-plugin \u003c!nodoc\u003e, mkdocs-material \u003c!nodoc\u003e, mkdocstrings \u003c!nodoc\u003e, mkdocstrings-python-handlers \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-attr, python3-pyperclip, python3-pytest, python3-pytest-cov, python3-pytest-mock, python3-rich, python3-rich-argparse, python3-setuptools, python3-setuptools-scm, python3-sphinx, python3-sphinx-rtd-theme, python3-wcwidth"
+    "dh-sequence-mkdocs, mkdocs \u003c!nodoc\u003e, mkdocs-macros-plugin \u003c!nodoc\u003e, mkdocs-material \u003c!nodoc\u003e, mkdocstrings \u003c!nodoc\u003e, mkdocstrings-python-handlers \u003c!nodoc\u003e, python3-pytest, python3-pytest-cov, python3-pytest-mock, python3-attr, python3-pyperclip, python3-rich, python3-rich-argparse, python3-sphinx, python3-sphinx-rtd-theme, python3-wcwidth"
   ],
   "Checksums-Sha256": [
-    "441482fcbe6a4f4ce3c7da0c2f1ba6a9022016a803e934b5295e77c76165b006 2594 cmd2_3.2.0+ds-2.dsc 0f58bbb899ec9c1f926a3150c8389dda0177892e3cc6e470d0ace3f3629a21a9 603340 cmd2_3.2.0+ds.orig.tar.xz 3078f7778fe9a2dcd639ea4d61862861dd97d792400c33c9c4ef6c77380ee3b6 6040 cmd2_3.2.0+ds-2.debian.tar.xz"
+    "407c8cde95698ba1d5b5cd00750d7d67a9aa8eca0a5d8c27cb68736fb1057d6b 2607 cmd2_3.4.0+ds-1.dsc 591551ba24c7db17e973a30c98b3fdc08a5ce710d9d592878cce18a1a31ff560 607180 cmd2_3.4.0+ds.orig.tar.xz 5cf8d3727ffe18845703bceae92dfbbf5f28b103b332b457c4c9a2686157759d 6288 cmd2_3.4.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/cmd2"
   ],
   "Files": [
-    "a0ba9b170f525d8282e183a96f1b3571 2594 cmd2_3.2.0+ds-2.dsc f9c7efe084232e8bf4155ecb94a29619 603340 cmd2_3.2.0+ds.orig.tar.xz 1d00f848b4c03ab75d38b5040d7b5e9b 6040 cmd2_3.2.0+ds-2.debian.tar.xz"
+    "ac4b480cc5d04a85168dc1b19dd7251e 2607 cmd2_3.4.0+ds-1.dsc ddf08d519d1a979ba03dcec48fac50bd 607180 cmd2_3.4.0+ds.orig.tar.xz 1c0aaeefad6761e090514d32621c6022 6288 cmd2_3.4.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "python"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@"
+    "@builddeps@, python3-all"
   ],
   "Uploaders": [
     "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e, Thomas Goirand \u003czigo@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-cmd2.git"
   ],
   "Version": [
-    "3.2.0+ds-2"
+    "3.4.0+ds-1"
   ]
 }

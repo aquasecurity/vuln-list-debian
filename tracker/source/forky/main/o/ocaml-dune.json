@@ -1,33 +1,33 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "ocaml-dune, libdune-ocaml-dev"
+    "ocaml-dune, libdune-core-ocaml-dev, libdune-core-ocaml, ocaml-dune-source"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libcsexp-ocaml-dev \u003c!pkg.ocaml-dune.bootstrap\u003e, libpp-ocaml-dev \u003c!pkg.ocaml-dune.bootstrap\u003e, ocaml, dh-ocaml"
+    "debhelper-compat (= 13), ocaml, dh-ocaml"
   ],
   "Checksums-Sha256": [
-    "81ef5959601938ffc53373b8595f74639975b4ed2f11bb1fbb4986940c1b56f6 2731 ocaml-dune_3.21.1-2.dsc 84f7a82c6d80a7124f3847e9a489e80cfbeafb7bed3573ac01286ef56fd08d94 2682568 ocaml-dune_3.21.1.orig.tar.bz2 959a19f9b7208aeacaa2a14b5244c8072ae10185c7841f60a63088e8131c1974 6040 ocaml-dune_3.21.1-2.debian.tar.xz"
+    "658ad4ffd9ad00d063e4508b5c85912268b351fd002acd87ac47011ccd2a31cb 2772 ocaml-dune_3.21.1-4.dsc 84f7a82c6d80a7124f3847e9a489e80cfbeafb7bed3573ac01286ef56fd08d94 2682568 ocaml-dune_3.21.1.orig.tar.bz2 cce065dba0f19f62b0bec743b3406b666444884f72b08d196ea85bf52d74298e 8336 ocaml-dune_3.21.1-4.debian.tar.xz"
   ],
   "Dgit": [
-    "a438eff80e5a64e3fa6d2e824f1c85d28fdb69d6 debian archive/debian/3.21.1-2 https://git.dgit.debian.org/ocaml-dune"
+    "d49c2960b3fd83959af2023ff82a554aeb78364e debian archive/debian/3.21.1-4 https://git.dgit.debian.org/ocaml-dune"
   ],
   "Directory": [
     "pool/main/o/ocaml-dune"
   ],
   "Files": [
-    "9a16b91f4a5a9b724241b47cd491a199 2731 ocaml-dune_3.21.1-2.dsc 060d6645130f91bd01468375972217fe 2682568 ocaml-dune_3.21.1.orig.tar.bz2 69c454fa1df402e400371d7988ed944d 6040 ocaml-dune_3.21.1-2.debian.tar.xz"
+    "1a3b1e1b094ce1bcbc4ce4447af9c8c5 2772 ocaml-dune_3.21.1-4.dsc 060d6645130f91bd01468375972217fe 2682568 ocaml-dune_3.21.1.orig.tar.bz2 d132191bb5eace033d50370a9165c142 8336 ocaml-dune_3.21.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=df7ef189d5f80998159c7db36aeee106bfdee598 fp=6de24e97eca886cc56e6250e21b8eef1b1893081"
+    "tag=6aab4d1d59f537fd43030a5e6c86f662016fda5e fp=6de24e97eca886cc56e6250e21b8eef1b1893081"
   ],
   "Git-Tag-Tagger": [
-    "Stephane Glondu \u003cglondu@debian.org\u003e"
+    "Stéphane Glondu \u003cglondu@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/ocaml/dune"
@@ -39,7 +39,7 @@
     "ocaml-dune"
   ],
   "Package-List": [
-    "libdune-ocaml-dev deb ocaml optional arch=any profile=!pkg.ocaml-dune.bootstrap ocaml-dune deb ocaml optional arch=any"
+    "libdune-core-ocaml deb ocaml optional arch=any libdune-core-ocaml-dev deb ocaml optional arch=any ocaml-dune deb ocaml optional arch=any ocaml-dune-source deb ocaml optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -54,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "curl, file, git, libcmdliner-ocaml-dev, libfindlib-ocaml-dev, liblwt-ocaml-dev, libppx-expect-ocaml-dev, libppx-inline-test-ocaml-dev, libre-ocaml-dev, libresult-ocaml-dev, libspawn-ocaml-dev, libuutf-ocaml-dev, menhir, ocaml-odoc, opam, patch, pkgconf, procps, strace"
+    "curl, file, git, libcmdliner-ocaml-dev, libdune-ocaml-dev, libfindlib-ocaml-dev, liblwt-ocaml-dev, libppx-expect-ocaml-dev, libppx-inline-test-ocaml-dev, libre-ocaml-dev, libresult-ocaml-dev, libspawn-ocaml-dev, libuutf-ocaml-dev, menhir, ocaml-odoc, opam, patch, pkgconf, procps, strace"
   ],
   "Uploaders": [
     "Stéphane Glondu \u003cglondu@debian.org\u003e"
@@ -66,6 +66,6 @@
     "https://salsa.debian.org/ocaml-team/ocaml-dune.git"
   ],
   "Version": [
-    "3.21.1-2"
+    "3.21.1-4"
   ]
 }
