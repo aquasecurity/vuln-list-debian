@@ -6,19 +6,25 @@
     "librust-derive-more-impl-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.45-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.45) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5daa14b7aa90988892c9b0a737f7144bea4d0ac5fc100d174bbe9aac85bda04e 1905 rust-derive-more-impl_1.0.0-1.dsc cb7330aeadfbe296029522e6c40f315320aba36fc43a5b3632f3795348f3bd22 76182 rust-derive-more-impl_1.0.0.orig.tar.gz 94c02bf0b9a2d8c21ea832b2f3e38bf78f8445a39c89f71e16fff1b4b45ff15e 3388 rust-derive-more-impl_1.0.0-1.debian.tar.xz"
+    "b04c8e22b760be63886bb909162e146c8bd82b3708a1cb39bace959fafde5e66 2500 rust-derive-more-impl_1.0.0-2.dsc cb7330aeadfbe296029522e6c40f315320aba36fc43a5b3632f3795348f3bd22 76182 rust-derive-more-impl_1.0.0.orig.tar.gz beb94771fa7de4ba41b82cfd79fa57f6e719b5bb089a5946e4ff741c18ce129d 3764 rust-derive-more-impl_1.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-derive-more-impl"
   ],
   "Files": [
-    "5c4d1924244f18f20c34487fd2dbe15f 1905 rust-derive-more-impl_1.0.0-1.dsc d85553d10057bc366d6332a9b43758e4 76182 rust-derive-more-impl_1.0.0.orig.tar.gz 46b0f732b0050aa66a98e38aecbb4c6f 3388 rust-derive-more-impl_1.0.0-1.debian.tar.xz"
+    "0a2e2e837397e39c1c79c109df3f5bbd 2500 rust-derive-more-impl_1.0.0-2.dsc d85553d10057bc366d6332a9b43758e4 76182 rust-derive-more-impl_1.0.0.orig.tar.gz c8c22637eb4663a1250cf2347397879c 3764 rust-derive-more-impl_1.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/JelteF/derive_more"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-itertools-0.13+default-dev, rustc"
+    "dh-cargo, librust-itertools+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/derive-more-impl]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.0-2"
   ]
 }
