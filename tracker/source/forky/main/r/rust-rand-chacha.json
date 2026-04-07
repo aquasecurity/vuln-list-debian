@@ -6,16 +6,19 @@
     "librust-rand-chacha-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ppv-lite86-0.2+simd-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, librust-ppv-lite86-0.2+std-dev (\u003e= 0.2.8-~~) \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ppv-lite86-0.2+simd-dev (\u003e= 0.2.14) \u003c!nocheck\u003e, librust-ppv-lite86-0.2+std-dev (\u003e= 0.2.14) \u003c!nocheck\u003e, librust-rand-core-0.10+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "96678aed0037dc8b0aabe108745c7488e2e11d68c4813152fadb79bfe53e04a5 2426 rust-rand-chacha_0.3.1-2.dsc e6c10a63a0fa32252be49d21e7709d4d4baf8d231c2dbce1eaa8141b9b127d88 15251 rust-rand-chacha_0.3.1.orig.tar.gz 11d8d05e2a44b3e8b3bc099c5ac4612165f8111068931911f3a28e3316e512bc 3032 rust-rand-chacha_0.3.1-2.debian.tar.xz"
+    "633a53b2ddc2b5050095e73f56732bf31d86d31455c650c08aea9d8ede8d40a5 2543 rust-rand-chacha_0.10.0-2.dsc 3e6af7f3e25ded52c41df4e0b1af2d047e45896c2f3281792ed68a1c243daedb 19763 rust-rand-chacha_0.10.0.orig.tar.gz 8a0259be788cdd8b5e0f94ff53b8be90b27624bc3a2ca74fd09d90004904ebf4 3360 rust-rand-chacha_0.10.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rand-chacha"
   ],
   "Files": [
-    "a995fbe86b7a8b75da1940e141fbe57c 2426 rust-rand-chacha_0.3.1-2.dsc e30085994bbeb4b7f4895d48216d5476 15251 rust-rand-chacha_0.3.1.orig.tar.gz 678f6700863a8a26fcbfbebcecee1289 3032 rust-rand-chacha_0.3.1-2.debian.tar.xz"
+    "e8e6ec174ff9de9adc77df195b3631db 2543 rust-rand-chacha_0.10.0-2.dsc 36dc4a151f210244e8f25fd3b57498ba 19763 rust-rand-chacha_0.10.0.orig.tar.gz f9868b486dc893707a84da6b48a2e1de 3360 rust-rand-chacha_0.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-getrandom-0.4+default-dev, librust-getrandom-0.4+sys-rng-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-chacha]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.10.0-2"
   ]
 }

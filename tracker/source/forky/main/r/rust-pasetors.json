@@ -6,16 +6,19 @@
     "librust-pasetors-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.80.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ct-codecs-1-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e, librust-ed25519-compact-2+random-dev (\u003e= 2.0.2-~~) \u003c!nocheck\u003e, librust-getrandom-0.2+default-dev \u003c!nocheck\u003e, librust-orion-0.17-dev \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.5.5-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.41-~~) \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-time-0.3+default-dev \u003c!nocheck\u003e, librust-time-0.3+formatting-dev \u003c!nocheck\u003e, librust-time-0.3+parsing-dev \u003c!nocheck\u003e, librust-zeroize-1-dev (\u003e= 1.4.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ct-codecs-1-dev (\u003e= 1.1.1) \u003c!nocheck\u003e, librust-ed25519-compact-2+random-dev (\u003e= 2.0.2) \u003c!nocheck\u003e, librust-getrandom-0.4+default-dev \u003c!nocheck\u003e, librust-orion-0.17-dev \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.5.5) \u003c!nocheck\u003e, librust-serde-json-1+default-dev (\u003e= 1.0.41) \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4.1) \u003c!nocheck\u003e, librust-time-0.3+default-dev \u003c!nocheck\u003e, librust-time-0.3+formatting-dev \u003c!nocheck\u003e, librust-time-0.3+parsing-dev \u003c!nocheck\u003e, librust-zeroize-1-dev (\u003e= 1.4.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "be1f942cbea8197bfdd0f7db104cc1fcc9ca0a1ff17b8f9b7c9cffe97151520a 2901 rust-pasetors_0.7.0-1.dsc b719f62f9b77cfadf01500984ab26c7bda71b3f1e497e9dbb055ff466dbe2a86 139017 rust-pasetors_0.7.0.orig.tar.gz 7621587a58466f27ab51b5e0b5c2bd66369b6b57cf1b24240ad6e455b728fe8f 3564 rust-pasetors_0.7.0-1.debian.tar.xz"
+    "371e2d9aaf3b57a6e96a43400206bca0b1d4b01f5ce9e23d9f5d00017a532afd 2894 rust-pasetors_0.7.8-1.dsc e838401fb2873bad417e6a03179014c748746f67311cb7317ab14fc0881fa9f0 153184 rust-pasetors_0.7.8.orig.tar.gz 53835205f7976973898d456d7762074109de4cd486cb5159a2784d96cb2e1aa1 3336 rust-pasetors_0.7.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pasetors"
   ],
   "Files": [
-    "460501f6fe0185a7a4b853bab6e20fb9 2901 rust-pasetors_0.7.0-1.dsc 1061d7e1df09d3d3571c36ac1f99862c 139017 rust-pasetors_0.7.0.orig.tar.gz 0e5ce12bb110ea9eb87059886e4fde6f 3564 rust-pasetors_0.7.0-1.debian.tar.xz"
+    "eed2a4db6f0b07e970fd421dfc726eaf 2894 rust-pasetors_0.7.8-1.dsc 24d1c93f54f09d05eadaf1e3e69666b2 153184 rust-pasetors_0.7.8.orig.tar.gz 779506557917ffa61eb379ea7fbe9f8f 3336 rust-pasetors_0.7.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-hex-0.4+default-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pasetors]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.7.8-1"
   ]
 }

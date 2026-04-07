@@ -6,16 +6,19 @@
     "librust-ed25519-compact-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ct-codecs-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-getrandom-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ct-codecs-1+default-dev (\u003e= 1.1) \u003c!nocheck\u003e, librust-getrandom-0.4+default-dev \u003c!nocheck\u003e, librust-getrandom-0.4+wasm-js-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ba372fd71fbbe7c382616374318758b51f7c68c75c727ebb722380269ce099f1 2440 rust-ed25519-compact_2.0.4-1.dsc 6a3d382e8464107391c8706b4c14b087808ecb909f6c15c34114bc42e53a9e4c 29897 rust-ed25519-compact_2.0.4.orig.tar.gz bd8493d056d247af55601f729a3cf3b4bc150b198ce932ef80c00ff4b6a8cfa7 3848 rust-ed25519-compact_2.0.4-1.debian.tar.xz"
+    "d31035c71581982ca67e2d25ec9e924ab4eab59c2dae4419302bbdb1e2bd9337 2580 rust-ed25519-compact_2.2.0-2.dsc 33ce99a9e19c84beb4cc35ece85374335ccc398240712114c85038319ed709bd 31919 rust-ed25519-compact_2.2.0.orig.tar.gz 6204e3734c25ba5a4b7c1ab253e4c6517aea59fa9f822585dd5e48d8576ab3f4 3668 rust-ed25519-compact_2.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ed25519-compact"
   ],
   "Files": [
-    "fb1570bc393646b173566234df340808 2440 rust-ed25519-compact_2.0.4-1.dsc df14066f562e566ef982f50f1c112286 29897 rust-ed25519-compact_2.0.4.orig.tar.gz 183637a993e74ca29d133d6df0eca0ff 3848 rust-ed25519-compact_2.0.4-1.debian.tar.xz"
+    "fd12a599a7853f27ff3008d660cb387b 2580 rust-ed25519-compact_2.2.0-2.dsc f79c7cf51f179534da00cb33c5861b0a 31919 rust-ed25519-compact_2.2.0.orig.tar.gz 7aa0bfdb4efa70eaa636c6ff56cc914e 3668 rust-ed25519-compact_2.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-ct-codecs-1+default-dev, librust-getrandom-0.2+default-dev"
+    "dh-cargo, librust-ct-codecs-1+default-dev, librust-getrandom-0.4+default-dev, librust-getrandom-0.4+wasm-js-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ed25519-compact]"
   ],
   "Version": [
-    "2.0.4-1"
+    "2.2.0-2"
   ]
 }

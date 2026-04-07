@@ -6,19 +6,25 @@
     "librust-memsec-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-getrandom-0.2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-getrandom-0.4+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f670ef3ef019a52622b9bef9b8ffeb7bc7b2c863830881c0a7b0f31da66f5b75 2284 rust-memsec_0.7.0-1.dsc c797b9d6bb23aab2fc369c65f871be49214f5c759af65bde26ffaaa2b646b492 6532 rust-memsec_0.7.0.orig.tar.gz ad6bc3bbb4eb4947a1aca008bbe9d9dd46c6eaa6342ab56003d0eaf9d110efb1 3380 rust-memsec_0.7.0-1.debian.tar.xz"
+    "56a30ebce9f493e6248cea95edb88ab09f5c2cd419f9c0c60999555c36e53dee 2292 rust-memsec_0.7.0-2.dsc c797b9d6bb23aab2fc369c65f871be49214f5c759af65bde26ffaaa2b646b492 6532 rust-memsec_0.7.0.orig.tar.gz 123c962355f0c28f9884b66aa8f12fa152b1e868e494433c8875be3a9586516f 3648 rust-memsec_0.7.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-memsec"
   ],
   "Files": [
-    "7fa123d51ce9065d234f843a44c304a4 2284 rust-memsec_0.7.0-1.dsc add58e24913979b6d6f435a77c39679d 6532 rust-memsec_0.7.0.orig.tar.gz b288a8b6e9f298994025b9f2282ad4be 3380 rust-memsec_0.7.0-1.debian.tar.xz"
+    "2ae5a0c05a8eb327ace637cb1df37a5b 2292 rust-memsec_0.7.0-2.dsc add58e24913979b6d6f435a77c39679d 6532 rust-memsec_0.7.0.orig.tar.gz 1141c0a4d9777ab6899235d1504251ce 3648 rust-memsec_0.7.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/quininer/memsec"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/memsec]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.7.0-2"
   ]
 }

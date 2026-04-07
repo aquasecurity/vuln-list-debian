@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-rand-core-dev, librust-rand-core+getrandom-dev, librust-rand-core+serde-dev, librust-rand-core+std-dev"
+    "librust-rand-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1f6938a4015b700fc497dd3c114a56abbcc7fddd12dee47442a88767ac9bb8e2 2468 rust-rand-core_0.6.4-2.dsc ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c 22666 rust-rand-core_0.6.4.orig.tar.gz 837d4c4b51f94a2174475dbb0fc8cbfd2ed7beced4da5459dacb329fa2c868e1 3692 rust-rand-core_0.6.4-2.debian.tar.xz"
+    "0de9bc4f092280f2c1b2764f694366b1da649f7f225ee320eedd824d2d22adfe 2259 rust-rand-core_0.10.0-2.dsc 0c8d0fd677905edcbeedbf2edb6494d676f0e98d54d5cf9bda0b061cb8fb8aba 22778 rust-rand-core_0.10.0.orig.tar.gz 3bf3200d57bfca8c0952abd914e6b3ff5d3eb1788a1f0363d18bd604c52a2bbb 3168 rust-rand-core_0.10.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rand-core"
   ],
   "Files": [
-    "189caebf28352235a8922a33270cac9c 2468 rust-rand-core_0.6.4-2.dsc a1626b8f4d165b1b60d960862eba4cf0 22666 rust-rand-core_0.6.4.orig.tar.gz a14c5ec8e7b3edf50ed26f8f7b733035 3692 rust-rand-core_0.6.4-2.debian.tar.xz"
+    "d76d83fe991e73ed37a147bffc61af71 2259 rust-rand-core_0.10.0-2.dsc 9355f947522b1e6f44d305d1385032eb 22778 rust-rand-core_0.10.0.orig.tar.gz ed1e6554be183412b3d315b4ea5e315d 3168 rust-rand-core_0.10.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-rand-core"
   ],
   "Package-List": [
-    "librust-rand-core+getrandom-dev deb rust optional arch=any librust-rand-core+serde-dev deb rust optional arch=any librust-rand-core+std-dev deb rust optional arch=any librust-rand-core-dev deb rust optional arch=any"
+    "librust-rand-core-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-core]"
   ],
   "Version": [
-    "0.6.4-2"
+    "0.10.0-2"
   ]
 }

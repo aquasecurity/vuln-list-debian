@@ -6,16 +6,19 @@
     "librust-bcrypt-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64+std-dev (\u003e= 0.21-~~) \u003c!nocheck\u003e, librust-base64-dev (\u003e= 0.21-~~) \u003c!nocheck\u003e, librust-blowfish-0.9+bcrypt-dev \u003c!nocheck\u003e, librust-blowfish-0.9+default-dev \u003c!nocheck\u003e, librust-getrandom-0.2+std-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.5.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64+std-dev (\u003e= 0.21) \u003c!nocheck\u003e, librust-base64-dev (\u003e= 0.21) \u003c!nocheck\u003e, librust-blowfish-0.9+bcrypt-dev \u003c!nocheck\u003e, librust-blowfish-0.9+default-dev \u003c!nocheck\u003e, librust-getrandom-0.4+std-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4.1) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.5.4) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f45ab0cf1447a27c3b7c28ae229baa1cb66356e52ef8da067ed96abb0ed2fa89 2347 rust-bcrypt_0.15.1-3.dsc e65938ed058ef47d92cf8b346cc76ef48984572ade631927e9937b5ffc7662c7 11628 rust-bcrypt_0.15.1.orig.tar.gz 32f927e6c8765411e14c0d4f7b06956533ec0afe2a8820c89d74d7e4cd732480 3384 rust-bcrypt_0.15.1-3.debian.tar.xz"
+    "dc905f7785e1d6c7b44f93c54230990db1c2dcf20fb65fc2ab3b8305fd76c07e 2547 rust-bcrypt_0.15.1-5.dsc e65938ed058ef47d92cf8b346cc76ef48984572ade631927e9937b5ffc7662c7 11628 rust-bcrypt_0.15.1.orig.tar.gz 254464a404d30cee6ce02b2abe9dc4ef30fe286caf19e58112d4ad19e33d48ed 3744 rust-bcrypt_0.15.1-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bcrypt"
   ],
   "Files": [
-    "2915b2caef89ddad99e71c42c421a9a6 2347 rust-bcrypt_0.15.1-3.dsc 22d36854f49eaf43d4c012b414632ceb 11628 rust-bcrypt_0.15.1.orig.tar.gz c567af8b3e47ac83d7b6d84585ef4594 3384 rust-bcrypt_0.15.1-3.debian.tar.xz"
+    "a321c5911af3c907bbb935aaa36aaee2 2547 rust-bcrypt_0.15.1-5.dsc 22d36854f49eaf43d4c012b414632ceb 11628 rust-bcrypt_0.15.1.orig.tar.gz 1c4fe9c4e9e159061c10f4ac06a6501c 3744 rust-bcrypt_0.15.1-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1-dev"
+    "dh-cargo, librust-quickcheck-1-dev, rustc"
   ],
   "Uploaders": [
     "Bastian Germann \u003cbage@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bcrypt]"
   ],
   "Version": [
-    "0.15.1-3"
+    "0.15.1-5"
   ]
 }
