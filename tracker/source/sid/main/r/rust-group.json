@@ -6,16 +6,19 @@
     "librust-group-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ff-0.13-dev \u003c!nocheck\u003e, librust-rand-core-0.6-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ff-0.13-dev \u003c!nocheck\u003e, librust-rand-core-0.6-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.2.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d5a4b57dd9a82160e04b5cbafb1c0266b8ee3b198a8f2d47ad6b47f6ef8dd8a8 2284 rust-group_0.13.0-1.dsc f0f9ef7462f7c099f518d754361858f86d8a07af53ba9af0fe635bbccb151a63 16526 rust-group_0.13.0.orig.tar.gz 67a7f6dfcd7e1f2109a75a88fa90029e7eff78c1eb085771f665f8d5895fd868 2796 rust-group_0.13.0-1.debian.tar.xz"
+    "1cf7c392a0033cc5dc5a353bb3ea712393c26ec5611419225489b8a8241793f8 2318 rust-group_0.13.0-3.dsc f0f9ef7462f7c099f518d754361858f86d8a07af53ba9af0fe635bbccb151a63 16526 rust-group_0.13.0.orig.tar.gz d2af5ef44b03c25f30f98fc5535dd7eb4b722c1d78cd8720fb94fe0cd723fbff 3956 rust-group_0.13.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-group"
   ],
   "Files": [
-    "c3c2fdfd6131e28e806cf43181c9f9c9 2284 rust-group_0.13.0-1.dsc 974e766c6583278ac82a83632b75b65e 16526 rust-group_0.13.0.orig.tar.gz b25a8f348a9e083e26755da681bcd7b5 2796 rust-group_0.13.0-1.debian.tar.xz"
+    "836696a18d53b6f5a7b5537677fb3056 2318 rust-group_0.13.0-3.dsc 974e766c6583278ac82a83632b75b65e 16526 rust-group_0.13.0.orig.tar.gz ec7462c9b8001e4f4e30c8d9a74105b5 3956 rust-group_0.13.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/group]"
   ],
   "Version": [
-    "0.13.0-1"
+    "0.13.0-3"
   ]
 }

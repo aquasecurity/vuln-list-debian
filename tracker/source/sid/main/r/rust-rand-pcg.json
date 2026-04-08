@@ -6,16 +6,19 @@
     "librust-rand-pcg-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.10+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "63c497e2fc76e13feb0340b18515cda7f6a63f68a179a6cb431566017f072848 2275 rust-rand-pcg_0.3.1-2.dsc 59cad018caf63deb318e5a4586d99a24424a364f40f1e5778c29aca23f4fc73e 11983 rust-rand-pcg_0.3.1.orig.tar.gz 4f9f95f702ccd8eda4fd3a60751cb93adcabb76962f2fd0794d9e9b49ccaffa8 2960 rust-rand-pcg_0.3.1-2.debian.tar.xz"
+    "52d3851f503882bca58f311a339d2a2aec153d9fa157a739539cd147a64a71a3 2295 rust-rand-pcg_0.10.1-2.dsc 2a36dd10a879f5c16e363eed24471b321b114ce3112c2d5d8df06545fcf48152 14754 rust-rand-pcg_0.10.1.orig.tar.gz ebd6655b88418549c2c87a9b2ba083ca02240def58f533e8a1fd63fcb13cf6c0 3532 rust-rand-pcg_0.10.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rand-pcg"
   ],
   "Files": [
-    "fa3d61519d7dcd7bfbe9dfd980673447 2275 rust-rand-pcg_0.3.1-2.dsc 6ad48173bbefb15b1bbf1a07416792e2 11983 rust-rand-pcg_0.3.1.orig.tar.gz 90d41fe9b50ccc6f7b5c162a89654a15 2960 rust-rand-pcg_0.3.1-2.debian.tar.xz"
+    "98d50845a39d89016f7d12c5f3503d59 2295 rust-rand-pcg_0.10.1-2.dsc 2c1b16dd93b534e8768c1ddd33b4b45b 14754 rust-rand-pcg_0.10.1.orig.tar.gz 4f6e1c2ee9ab5e171639e4738acd4ac3 3532 rust-rand-pcg_0.10.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-pcg]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.10.1-2"
   ]
 }
