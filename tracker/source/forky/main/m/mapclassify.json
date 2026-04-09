@@ -6,16 +6,16 @@
     "python3-mapclassify, python-mapclassify-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, jdupes, libjs-mathjax, libjs-requirejs, pybuild-plugin-pyproject, python3-all, python3-doc \u003c!nodoc\u003e, python3-geopandas, python3-libpysal, python-libpysal-doc \u003c!nodoc\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-networkx \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python-numpy-doc \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-palettable \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python-pandas-doc \u003c!nodoc\u003e, python3-pyogrio, python3-pytest, python3-pytest-xdist \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python-scipy-doc \u003c!nodoc\u003e, python3-setuptools, python3-setuptools-scm, python3-sklearn \u003c!nocheck\u003e \u003c!nodoc\u003e, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-gallery \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinxcontrib.bibtex \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, jdupes, libjs-mathjax, libjs-requirejs, pybuild-plugin-pyproject, python3-all, python3-doc \u003c!nodoc\u003e, python3-geopandas, python3-libpysal, python-libpysal-doc \u003c!nodoc\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-networkx \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python-numpy-doc \u003c!nodoc\u003e, python3-numpydoc \u003c!nodoc\u003e, python3-palettable \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python-pandas-doc \u003c!nodoc\u003e, python3-pyogrio, python3-pytest, python3-pytest-mpl \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python-scipy-doc \u003c!nodoc\u003e, python3-setuptools, python3-setuptools-scm, python3-sklearn \u003c!nocheck\u003e \u003c!nodoc\u003e, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-gallery \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinxcontrib.bibtex \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "4b556f8a300416479e431d6baca8d432dd3117b6f03941609b6391e62e29d582 2900 mapclassify_2.8.1-3.1.dsc dea58fa66b72eef7060ba3ac4079ca6e1cc59b7438383770cff30d061d97d5fc 4628352 mapclassify_2.8.1.orig.tar.gz eee9152cd5a76a58fc2bbfed252c1966413557b572df84bc9ef37576851f6058 186056 mapclassify_2.8.1-3.1.debian.tar.xz"
+    "60e4699e3d5a8c6598082898ac5e7103e77a4812af967d709bc6b9e73f1292d5 3062 mapclassify_2.10.0-1.dsc 2843597d7c70e891d13f568a403a4fb233b5338fe29af402912d5688632ec1c8 6192038 mapclassify_2.10.0.orig.tar.gz 7b769d0574b83cf21a5cddde4fdb043a1e90cee7b6b6e155024d06dbda711065 186848 mapclassify_2.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mapclassify"
   ],
   "Files": [
-    "89393e920931204999af2b2ef76e6094 2900 mapclassify_2.8.1-3.1.dsc 2ea39e2797107150a7c12e6c83c475f5 4628352 mapclassify_2.8.1.orig.tar.gz 8e459f88ad6dd928bd0abe3f64680c5c 186056 mapclassify_2.8.1-3.1.debian.tar.xz"
+    "117d17654482fa3d0cf08b07f819cd4a 3062 mapclassify_2.10.0-1.dsc 88394efe2636ae041d9dc1b66ce021ca 6192038 mapclassify_2.10.0.orig.tar.gz f813a3c0550e3edc18070dba369ac02e 186848 mapclassify_2.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-geopandas, python3-libpysal, python3-matplotlib, python3-networkx, python3-pytest, python3-pytest-xvfb"
   ],
   "Uploaders": [
     "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/science-team/mapclassify.git"
   ],
   "Version": [
-    "2.8.1-3.1"
+    "2.10.0-1"
   ]
 }

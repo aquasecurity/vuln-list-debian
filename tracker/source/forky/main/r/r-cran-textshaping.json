@@ -6,16 +6,16 @@
     "r-cran-textshaping"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-systemfonts, r-cran-cpp11, libharfbuzz-dev, libfribidi-dev"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-lifecycle, r-cran-stringi, r-cran-systemfonts (\u003e= 1.3.0), r-cran-cpp11, libfribidi-dev, libfreetype-dev, libharfbuzz-dev, pkgconf"
   ],
   "Checksums-Sha256": [
-    "652b2bd8c7a9402799b67104a176004843e97db2a836be78fb8abd532599b337 2165 r-cran-textshaping_0.3.7-2.dsc fa924dbe1fb4138b80d6c26ee42f4203843f1d34f77e2a5e42514e6fcc97ec42 35100 r-cran-textshaping_0.3.7.orig.tar.gz 7fb3c610952e69028566d781f45936848620476cb4f9b4cc34ba2a91dc892064 2420 r-cran-textshaping_0.3.7-2.debian.tar.xz"
+    "b568940b647bdee3d426fa08719fc342d205122553beccb32d93407ab2961c10 2330 r-cran-textshaping_1.0.5-1.dsc 12209d5535884b8b49bb56de10996cd797f806f44c691eefae2e8eb9786443dd 77066 r-cran-textshaping_1.0.5.orig.tar.gz 9507c8179ea43a6036bfbf2ffd3141a07a745466572b4ffc53937eaa9a0c27c6 2984 r-cran-textshaping_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-textshaping"
   ],
   "Files": [
-    "221093073b7cf42c37af576b68aea540 2165 r-cran-textshaping_0.3.7-2.dsc 75e150aec896dd1807e84538456d22e3 35100 r-cran-textshaping_0.3.7.orig.tar.gz 1f3710130fcef3b67db3e95ea89df450 2420 r-cran-textshaping_0.3.7-2.debian.tar.xz"
+    "6d554d08f432b9672b313efddb90a259 2330 r-cran-textshaping_1.0.5-1.dsc 93771d8cfc50a7ed021df061ce71e07f 77066 r-cran-textshaping_1.0.5.orig.tar.gz 8cde42d1dc1d5743814da8b7467d47cf 2984 r-cran-textshaping_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-covr, r-cran-knitr, r-cran-rmarkdown, r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-textshaping.git"
   ],
   "Version": [
-    "0.3.7-2"
+    "1.0.5-1"
   ]
 }

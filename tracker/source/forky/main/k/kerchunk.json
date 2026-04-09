@@ -6,10 +6,10 @@
     "python3-kerchunk, python-kerchunk-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-astropy \u003c!nodoc\u003e, python3-dask \u003c!nocheck\u003e, python3-cfgrib, python3-cftime, python3-eccodes \u003c!nodoc\u003e, python3-fsspec, python3-h5netcdf \u003c!nocheck\u003e, python3-h5py, python3-netcdf4 \u003c!nocheck\u003e, python3-numcodecs, python3-numpy, python3-numpydoc \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-s3fs \u003c!nocheck\u003e, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-tifffile \u003c!nodoc\u003e, python3-ujson, python3-xarray, python3-zarr"
+    "bitshuffle, debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, hdf5-filter-plugin, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-astropy \u003c!nodoc\u003e, python3-dask \u003c!nocheck\u003e, python3-cfgrib, python3-cftime, python3-eccodes \u003c!nodoc\u003e, python3-fsspec, python3-h5netcdf \u003c!nocheck\u003e, python3-h5py, python3-hdf5plugin, python3-netcdf4 \u003c!nocheck\u003e, python3-numcodecs, python3-numpy, python3-numpydoc \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-s3fs \u003c!nocheck\u003e, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-tifffile \u003c!nodoc\u003e, python3-ujson, python3-xarray, python3-zarr"
   ],
   "Checksums-Sha256": [
-    "10e3ae595e88538caa7a1288a85f1abe1e363887abe3b87e20f5d3ffb18026c9 4544 kerchunk_0.2.9-4.dsc c9f1d718c46272138d283487a04e1d23a9dd5efcd60ac68baec7059a88829ef7 124716963 kerchunk_0.2.9.orig.tar.gz 2d384ee9b2ccf01b35859f95b579c908f77a79387cd2c7e03188df37c4a163f6 7504 kerchunk_0.2.9-4.debian.tar.xz"
+    "22efc861e3567d785599169f70d2d66aaf3516541a6bec29b530f439cebf967a 4603 kerchunk_0.2.10-1.dsc cc1b646580d5dca57d76af3415b47af9cf891fc92ed33e658d4322cdb354d542 124793625 kerchunk_0.2.10.orig.tar.gz a3fadeb7aa936d5d298520453e96b5f1b8f73b4fbef30fdc9711844cc7354e70 7912 kerchunk_0.2.10-1.debian.tar.xz"
   ],
   "Description": [
     "Cloud-friendly access to archival data Kerchunk is a library that provides a unified way to represent a variety of chunked, compressed data formats (e.g. NetCDF, HDF5, GRIB), allowing efficient access to the data from traditional file systems or cloud object storage.  It also provides a flexible way to create virtual datasets from multiple files.  It does this by extracting the byte ranges, compression information and other information about the data and storing this metadata in a new, separate object. This means that you can create a virtual aggregate dataset over potentially many source files, for efficient, parallel and cloud-friendly *in-situ* access without having to copy or translate the originals. It is a gateway to in-the-cloud massive data processing while the data providers still insist on using legacy formats for archival storage. . Features: . * completely serverless architecture * metadata consolidation, so you can understand a many-file dataset (metadata plus physical storage) in a single read * read from all of the storage backends supported by fsspec, including object storage (s3, gcs, abfs, alibaba), http, cloud user storage (dropbox, gdrive) and network protocols (ftp, ssh, hdfs, smb...) * loading of various file types (currently netcdf4/HDF, grib2, tiff, fits, zarr), potentially heterogeneous within a single dataset, without a need to go via the specific driver (e.g., no need for h5py) * asynchronous concurrent fetch of many data chunks in one go, amortizing the cost of latency * parallel access with a library like zarr without any locks * logical datasets viewing many (\u003e~millions) data files, and direct access/subselection to them via coordinate indexing across an arbitrary number of dimensions"
@@ -18,7 +18,7 @@
     "pool/main/k/kerchunk"
   ],
   "Files": [
-    "d354d80f17749f0fdbebe77f0a4a1ba5 4544 kerchunk_0.2.9-4.dsc 37d48624e7e1c39a79f866204090a04c 124716963 kerchunk_0.2.9.orig.tar.gz c2ab4e1a66bbac7f3cb65f0ec53626ae 7504 kerchunk_0.2.9-4.debian.tar.xz"
+    "aa1463c4dfc876fd06fd6a3ed2b70128 4603 kerchunk_0.2.10-1.dsc f7e36dcfbe242a240cdc5b360fccc25f 124793625 kerchunk_0.2.10.orig.tar.gz 65f96a8cbfaf3b8965e4cd0428534872 7912 kerchunk_0.2.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "doc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/kerchunk.git"
   ],
   "Version": [
-    "0.2.9-4"
+    "0.2.10-1"
   ]
 }

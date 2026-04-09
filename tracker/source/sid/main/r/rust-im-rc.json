@@ -6,16 +6,19 @@
     "librust-im-rc-dev, librust-im-rc+proptest-dev, librust-im-rc+quickcheck-dev, librust-im-rc+rayon-dev, librust-im-rc+serde-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitmaps-2+default-dev \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e, librust-rand-xoshiro-0.6+default-dev \u003c!nocheck\u003e, librust-sized-chunks-0.6+default-dev (\u003e= 0.6.4-~~) \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e, librust-version-check-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.46.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitmaps-2+default-dev \u003c!nocheck\u003e, librust-rand-core-0.10+default-dev \u003c!nocheck\u003e, librust-rand-xoshiro-0.8+default-dev \u003c!nocheck\u003e, librust-sized-chunks-0.6+default-dev (\u003e= 0.6.4) \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.12) \u003c!nocheck\u003e, librust-version-check-0.9+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ac7e111b757fcfa33886b62f8342b2c6f6ff8ce655470d56461452e98b9fb4cf 3074 rust-im-rc_15.1.0-1.dsc af1955a75fa080c677d3972822ec4bad316169ab1cfc6c257a942c2265dbe5fe 194077 rust-im-rc_15.1.0.orig.tar.gz dea8567081f882ad3da76f4fae90f7fbb666d9683a7cc7cdf8b1abdcb08d3f7b 4632 rust-im-rc_15.1.0-1.debian.tar.xz"
+    "f23270e172627a5375f463c544748e43c4d99a2e82cf64cd210396664c386402 3083 rust-im-rc_15.1.0-2.dsc af1955a75fa080c677d3972822ec4bad316169ab1cfc6c257a942c2265dbe5fe 194077 rust-im-rc_15.1.0.orig.tar.gz 87bee492233e53a97cf80ee0d00e7d502e754489334f04fe9394164d2229c9f1 4792 rust-im-rc_15.1.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-im-rc"
   ],
   "Files": [
-    "bf37632699e4f0010d96039887887098 3074 rust-im-rc_15.1.0-1.dsc 25119b3f34f4d5298dade622e10a54c5 194077 rust-im-rc_15.1.0.orig.tar.gz 67d2925f472f5147b31343faedf9a183 4632 rust-im-rc_15.1.0-1.debian.tar.xz"
+    "aa81034e8518b61d78860647f6be9bc4 3083 rust-im-rc_15.1.0-2.dsc 25119b3f34f4d5298dade622e10a54c5 194077 rust-im-rc_15.1.0.orig.tar.gz 2117df7f54c30ef93cdf3e22e67b3646 4792 rust-im-rc_15.1.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-proptest-1+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, librust-rayon-1+default-dev, librust-serde-1+default-dev, librust-serde-json-1+default-dev, librust-tiny-keccak-2+default-dev, librust-tiny-keccak-2+keccak-dev"
+    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-proptest-1+default-dev, librust-rand-0.10+default-dev, librust-rayon-1+default-dev, librust-serde-1+default-dev, librust-serde-json-1+default-dev, librust-tiny-keccak-2+default-dev, librust-tiny-keccak-2+keccak-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/im-rc]"
   ],
   "Version": [
-    "15.1.0-1"
+    "15.1.0-2"
   ]
 }
