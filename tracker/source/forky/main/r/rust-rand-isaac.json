@@ -6,16 +6,19 @@
     "librust-rand-isaac-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.10+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51ada3b36f5f4eff600a02264997afdda0f270dad857b711a86da875fd6c5f1e 2297 rust-rand-isaac_0.3.0-2.dsc fac4373cd91b4f55722c553fb0f286edbb81ef3ff6eec7b99d1898a4110a0b28 16075 rust-rand-isaac_0.3.0.orig.tar.gz 34704b347057940a58752ce9ec6748486b05b75c0a62ae2ef2d308242746f6cc 2952 rust-rand-isaac_0.3.0-2.debian.tar.xz"
+    "abb9a1b04254d8ebc7f1e7fea096e7e21b2d68c191efdc7b80c77571c5f61847 2340 rust-rand-isaac_0.5.0-2.dsc 5a930ef0e44ee81c819efccd5044bfd8b7c94b7507154ac650b9fdd96cb5b42a 17298 rust-rand-isaac_0.5.0.orig.tar.gz ce18fea2c8ee4bb2190d3e06f9f8a0e8a4f8f898c96925df1ac7f2d7e247fbd6 3248 rust-rand-isaac_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rand-isaac"
   ],
   "Files": [
-    "e7cf3188c850de6fad9dcccf1033f0cc 2297 rust-rand-isaac_0.3.0-2.dsc eb436c662cd9b82266ca9a90d8362d62 16075 rust-rand-isaac_0.3.0.orig.tar.gz 54b4fdc5a82d12c942251fa1c9cdc63d 2952 rust-rand-isaac_0.3.0-2.debian.tar.xz"
+    "ddc05000bfb9d6f62e488a0a93479b90 2340 rust-rand-isaac_0.5.0-2.dsc 0d748ccbe69292cecbf7327c9fada228 17298 rust-rand-isaac_0.5.0.orig.tar.gz ecc814502893285f18533d3ecf809df9 3248 rust-rand-isaac_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev"
+    "dh-cargo, librust-postcard-1+alloc-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-isaac]"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.5.0-2"
   ]
 }

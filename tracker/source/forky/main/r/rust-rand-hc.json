@@ -6,16 +6,19 @@
     "librust-rand-hc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.10+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7423c1151080dc86852a31a3437eab5cd50d183945cae93e84a2e3e79a4d7fc0 2233 rust-rand-hc_0.3.1-2.dsc d51e9f596de227fda2ea6c84607f5558e196eeaf43c986b724ba4fb8fdf497e7 11891 rust-rand-hc_0.3.1.orig.tar.gz 3b2fa4cacab0349f297878e9d08e3a1b5018fd7615faa66fb843857a75c13951 2760 rust-rand-hc_0.3.1-2.debian.tar.xz"
+    "a3817b7954d3e67cbc0a2ccbc0efc1874b07960243ad3ec291de38cc959e94c8 2277 rust-rand-hc_0.5.0-2.dsc 2679e70798646edbc105ddf9d15c9d977936bdf033b8c834b83f144317c6f956 11952 rust-rand-hc_0.5.0.orig.tar.gz a93d9d0cf0f9eb583994c6511386e5f240ea5cbc809817f3c08cd16e0e7dc8e9 2852 rust-rand-hc_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rand-hc"
   ],
   "Files": [
-    "de5294c891b8b194562f75f2b0dc0245 2233 rust-rand-hc_0.3.1-2.dsc 792d44fd2c664a81c10d7b261c5fda06 11891 rust-rand-hc_0.3.1.orig.tar.gz b8d790e2134946bbc30ad578b3557f19 2760 rust-rand-hc_0.3.1-2.debian.tar.xz"
+    "6ec848a3823a0a428dcb3e048906f618 2277 rust-rand-hc_0.5.0-2.dsc 15e1c212bf99f93ace68d8cacb59175f 11952 rust-rand-hc_0.5.0.orig.tar.gz b4e1238602fd1492cb4f8e32aaccbad8 2852 rust-rand-hc_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-hc]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.5.0-2"
   ]
 }
