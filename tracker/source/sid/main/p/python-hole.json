@@ -6,19 +6,31 @@
     "python3-hole"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "12fe7e2ce72efa0cc749c5b83effed958f21e66451c687d11e8ee94a29ef39bd 2059 python-hole_0.9.0-1.dsc cf77e573a461c0cf7406e54f86580ad0549860f51796372cb0af4bfce73f6467 8936 python-hole_0.9.0.orig.tar.gz c3ae4a729143afdad13bf140722586c53706185f25c772f7d0c4e6be0777ec6e 2292 python-hole_0.9.0-1.debian.tar.xz"
+    "2758699da52c3ed8b54f010f8caf6c8609d6b80fb3a8461d3f375621be19c070 2471 python-hole_0.9.1-1.dsc 184183836bee5e4ff3336d40052eba70b92fb7982140b0af0246409c93113e84 9252 python-hole_0.9.1.orig.tar.xz ab6ad271f9c1111199dca1aa6c390362147d25ad075d4361782e939755273096 2472 python-hole_0.9.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "006ba09c5073a9319e13373afc6c4bd926b41901 debian archive/debian/0.9.1-1 https://git.dgit.debian.org/python-hole"
   ],
   "Directory": [
     "pool/main/p/python-hole"
   ],
   "Files": [
-    "cd442e7e8ebf6d51fec298ef14fdff44 2059 python-hole_0.9.0-1.dsc 241e52c2d48627905dc02b225279c8d4 8936 python-hole_0.9.0.orig.tar.gz 5590755044520a51d9665911605831f5 2292 python-hole_0.9.0-1.debian.tar.xz"
+    "38dd0fe26eef254515b9aa4e7fce9d9f 2471 python-hole_0.9.1-1.dsc badc0207e77da425ed6b5ed65b64ffec 9252 python-hole_0.9.1.orig.tar.xz 7611d58d7f86908000ba2d916e835533 2472 python-hole_0.9.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=65389866379b8788d96d1ca6cab292f4dc82c207 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/home-assistant-ecosystem/python-hole"
@@ -39,7 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -51,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-hole.git"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.9.1-1"
   ]
 }
