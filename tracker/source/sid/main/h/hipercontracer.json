@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libhipercontracer1, libhipercontracer-dev, hipercontracer, hipercontracer-trigger"
+    "hipercontracer, hipercontracer-common, hipercontracer-examples, libhpctio2, libhpctio-dev, libhipercontracer2, libhipercontracer-dev, libuniversalimporter2, libuniversalimporter-dev, hipercontracer-trigger, hipercontracer-sync, hipercontracer-rtunnel, hipercontracer-node, hipercontracer-collector, hipercontracer-importer, hipercontracer-query, hipercontracer-results, hipercontracer-viewer, hipercontracer-udp-echo-server, hipercontracer-dbshell, hipercontracer-dbeaver-tools, hipercontracer-all"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.0.2), debhelper-compat (= 13), libboost-date-time-dev, libboost-filesystem-dev, libboost-iostreams-dev, libboost-log-dev, libboost-program-options-dev, libboost-system-dev, libboost-thread-dev, pkg-config, python3"
+    "cmake (\u003e= 3.10), debhelper-compat (= 13), ghostscript, graphicsmagick, libboost-date-time-dev, libboost-filesystem-dev, libboost-iostreams-dev, libboost-log-dev, libboost-program-options-dev, libboost-thread-dev, libbz2-dev, liblzma-dev, libmariadb-dev, libmongoc-dev, libpqxx-dev, libzstd-dev, pdf2svg, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "d44ba4e3f21f6ffd73a1cd9d281ba68c88cdc96b4b8c4eb08f3f7cd84bcf597c 2338 hipercontracer_1.6.10-1.dsc 5af4497a1fe78b93050673a5a519be1d98e1e2c59532407193717b863b94f564 181536 hipercontracer_1.6.10.orig.tar.xz 295017e8784bc922e430de02900572f62ea3b0d4a3946934ffbf2488795d2a16 2913 hipercontracer_1.6.10.orig.tar.xz.asc 0cff4d71786b5a6dbba5fcbb7655b64a53fbdd672decee5f1561f47eb5f12e02 76052 hipercontracer_1.6.10-1.debian.tar.xz"
+    "f0a684978c1cbb95afe6cacd508c9b07735af5c450309bee7a4972045e246271 4018 hipercontracer_2.1.12-1.dsc b211994af5bc9e53cf7e32cc73f6a0a5ee9a79486d66c595ddeffdc174cec427 2562912 hipercontracer_2.1.12.orig.tar.xz 42ff29acd2a8313e73c64ee5c8d61a1b63946ce2ffa8367b4ba129a4bad2d095 2913 hipercontracer_2.1.12.orig.tar.xz.asc 85909b7f8914eed8d4a15aa57f6e01adaa8a7e6f9b016839b5349068a00c28f9 82224 hipercontracer_2.1.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hipercontracer"
   ],
   "Files": [
-    "f06765f555c42d8e71369ea9cdc3ad16 2338 hipercontracer_1.6.10-1.dsc 79ab9e17c93e5d7a77d88fc4b73db280 181536 hipercontracer_1.6.10.orig.tar.xz 56d6dd453fe7a94b148bf9750c87d932 2913 hipercontracer_1.6.10.orig.tar.xz.asc dfdf26c5f7595776bf879d72a8b907bf 76052 hipercontracer_1.6.10-1.debian.tar.xz"
+    "124c9804c23a548a97f8b2f00365a4d2 4018 hipercontracer_2.1.12-1.dsc d7fe819fea20772bc2e900f3a9fb5ea2 2562912 hipercontracer_2.1.12.orig.tar.xz 5c627ed29777340cd9c78d29ee0ab04a 2913 hipercontracer_2.1.12.orig.tar.xz.asc e5f052a6b08f0ea7dd6617507014851e 82224 hipercontracer_2.1.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://www.nntb.no/~dreibh/hipercontracer/"
   ],
   "Maintainer": [
-    "Thomas Dreibholz \u003cthomas.dreibholz@gmail.com\u003e"
+    "Thomas Dreibholz \u003cdreibh@simula.no\u003e"
   ],
   "Package": [
     "hipercontracer"
   ],
   "Package-List": [
-    "hipercontracer deb net optional arch=any hipercontracer-trigger deb net optional arch=any libhipercontracer-dev deb libdevel optional arch=any libhipercontracer1 deb libs optional arch=any"
+    "hipercontracer deb net optional arch=any hipercontracer-all deb net optional arch=all hipercontracer-collector deb net optional arch=all hipercontracer-common deb net optional arch=all hipercontracer-dbeaver-tools deb net optional arch=all hipercontracer-dbshell deb net optional arch=all hipercontracer-examples deb net optional arch=all hipercontracer-importer deb net optional arch=any hipercontracer-node deb net optional arch=all hipercontracer-query deb net optional arch=any hipercontracer-results deb net optional arch=any hipercontracer-rtunnel deb net optional arch=all hipercontracer-sync deb net optional arch=all hipercontracer-trigger deb net optional arch=any hipercontracer-udp-echo-server deb net optional arch=any hipercontracer-viewer deb net optional arch=all libhipercontracer-dev deb libdevel optional arch=any libhipercontracer2 deb libs optional arch=any libhpctio-dev deb libdevel optional arch=any libhpctio2 deb libs optional arch=any libuniversalimporter-dev deb libdevel optional arch=any libuniversalimporter2 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,9 +39,15 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "default-mysql-client, mariadb-client, postgresql-client, pwgen, python3-netifaces, rsync"
   ],
   "Version": [
-    "1.6.10-1"
+    "2.1.12-1"
   ]
 }

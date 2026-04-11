@@ -6,19 +6,31 @@
     "python3-opendata-transport"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3a71c26396a30e055ccbfdb66b8e363dd304368fcc77c0e3428dbc6993d95a31 2227 python-opendata-transport_0.5.0-1.dsc b7836ce41ed8e968dae754f0db53f2a028b211aae44aac454e586af95db5b4a7 6381 python-opendata-transport_0.5.0.orig.tar.gz 9abafdc1e067c71bf0e629b20728eacec4a19790ab295c293f1edddbaa5c5e21 2320 python-opendata-transport_0.5.0-1.debian.tar.xz"
+    "c0fc491f12943b87229b9fcf52e6216ce44255e057b339e744a28491e1f5689e 2653 python-opendata-transport_0.6.2-1.dsc 0d3880d21482153715882182fb9cae799ed050f860c21f3f8400345d91e6b3f0 7308 python-opendata-transport_0.6.2.orig.tar.xz 5c71b2828d97aea5a4ff38897f2915a79a98d9a2b07e89f83ca00bd58a41775f 2432 python-opendata-transport_0.6.2-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "6549516d44f1abfeb4495de4fd16e16f5e72dfd9 debian archive/debian/0.6.2-1 https://git.dgit.debian.org/python-opendata-transport"
   ],
   "Directory": [
     "pool/main/p/python-opendata-transport"
   ],
   "Files": [
-    "91b3895aab04c57c872808541cd3ab9a 2227 python-opendata-transport_0.5.0-1.dsc 5c988273d22c440ddb21839b60a0353b 6381 python-opendata-transport_0.5.0.orig.tar.gz af966ad70df63e016f9902fba506c3cc 2320 python-opendata-transport_0.5.0-1.debian.tar.xz"
+    "b6dd6b853334d9b323f04fdf77b2b8dc 2653 python-opendata-transport_0.6.2-1.dsc 83fbc4f54691cabf1abef81e3db80b9a 7308 python-opendata-transport_0.6.2.orig.tar.xz 76783b18d4fbee5f1b44725adaf94169 2432 python-opendata-transport_0.6.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=64f2afe7e1d45b5eab3cd175bbb8155ebbd88878 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/home-assistant-ecosystem/python-opendata-transport"
@@ -39,7 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e,"
@@ -51,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-opendata-transport.git"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.6.2-1"
   ]
 }
