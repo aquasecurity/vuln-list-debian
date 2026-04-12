@@ -3,19 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "liblomiri-api0, liblomiri-api-dev, liblomiri-api-doc"
+    "liblomiri-api0, liblomiri-api-dev, liblomiri-shell-api-dev, liblomiri-shell-api-qt6-0, liblomiri-shell-api-qt6-dev, liblomiri-api-doc"
   ],
   "Build-Depends": [
-    "cmake, cmake-extras, dbus-test-runner, debhelper-compat (= 13), devscripts, lsb-release, doxygen, graphviz, libglib2.0-dev, libgtest-dev, google-mock, libqtdbustest1-dev, pkgconf, python3:any, qtbase5-dev (\u003e= 5.5), qtdeclarative5-dev, qtdeclarative5-dev-tools, qml-module-qtquick2, qml-module-qttest, symlinks, rdfind, pkg-kde-tools"
+    "debhelper-compat (= 13), cmake, cmake-extras, dbus-test-runner \u003c!nocheck\u003e, devscripts, google-mock, libglib2.0-dev, libgtest-dev, libqtdbustest-qt6-dev \u003c!nocheck\u003e, libqtdbustest1-dev \u003c!nocheck\u003e, pkgconf, python3:any, qml-module-qtquick2, qml-module-qttest \u003c!nocheck\u003e, qml6-module-qtquick, qml6-module-qttest \u003c!nocheck\u003e, qt6-base-dev, qt6-declarative-dev, qt6-declarative-dev-tools, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools, rdfind, symlinks"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "9ee4700bd8071418ea2bba63ee016fde99f1efb641ef0c786e141f04cd449f66 2476 lomiri-api_0.2.3-1.dsc 5ec16d9662644beddfb0a86582b1a30c25650ea69c878030d6a0791d30ad19ac 123534 lomiri-api_0.2.3.orig.tar.bz2 ce452ed3b35539d01d1dbf6ee567f7f6ff780e5898799637d83afb26539e3122 12940 lomiri-api_0.2.3-1.debian.tar.xz"
+    "cb73139d8529a4a6d1c38b3ce0a141253f0c87853d741a8590530ab32af0cfe8 2910 lomiri-api_0.3.0-1.dsc 9fc83ded4471d8a0cd321610e702b229a99b6c45cd608432bfbbeb94050a1127 124865 lomiri-api_0.3.0.orig.tar.bz2 00b7014b6abc506867c8835f805df295382fd78ee1c6928ea6217941cd55b829 13392 lomiri-api_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lomiri-api"
   ],
   "Files": [
-    "3dceacef96dd2407144f098dc1b0899f 2476 lomiri-api_0.2.3-1.dsc 895a0bd63fcfd37346be753e92af366b 123534 lomiri-api_0.2.3.orig.tar.bz2 3ff6e155fce8e7e8b86f37364f709671 12940 lomiri-api_0.2.3-1.debian.tar.xz"
+    "bfa6f4eebae244630e29bfdcaf99dfc6 2910 lomiri-api_0.3.0-1.dsc d35cf7bdecd580338ff4aa1d9f91e45b 124865 lomiri-api_0.3.0.orig.tar.bz2 b1945216b70a59f8808888e353039650 13392 lomiri-api_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "lomiri-api"
   ],
   "Package-List": [
-    "liblomiri-api-dev deb libdevel optional arch=any liblomiri-api-doc deb doc optional arch=all liblomiri-api0 deb libs optional arch=any"
+    "liblomiri-api-dev deb libdevel optional arch=any liblomiri-api-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc liblomiri-api0 deb libs optional arch=any liblomiri-shell-api-dev deb libdevel optional arch=any liblomiri-shell-api-qt6-0 deb libs optional arch=any liblomiri-shell-api-qt6-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,18 +42,18 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Uploaders": [
-    "Mike Gabriel \u003csunweaver@debian.org\u003e, Marius Gripsgard \u003cmariogrip@debian.org\u003e,"
+    "Mike Gabriel \u003csunweaver@debian.org\u003e, Marius Gripsgard \u003cmariogrip@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/ubports-team/lomiri-api/"
+    "https://salsa.debian.org/ubports-team/lomiri-api"
   ],
   "Vcs-Git": [
     "https://salsa.debian.org/ubports-team/lomiri-api.git"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.3.0-1"
   ]
 }
