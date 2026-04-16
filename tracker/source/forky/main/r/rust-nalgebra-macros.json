@@ -6,22 +6,25 @@
     "librust-nalgebra-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f9a8a85a5dd00f0af7edc0c6ed3cc30120ed80892ad97aa5886824386887cc7e 1840 rust-nalgebra-macros_0.2.2-1.dsc 254a5372af8fc138e36684761d3c0cdb758a4410e938babcff1c860ce14ddbfc 7545 rust-nalgebra-macros_0.2.2.orig.tar.gz b326f861a59cd985d2d21928cd1a3d4947e7103ec2b36731dc972aa9932cd082 2012 rust-nalgebra-macros_0.2.2-1.debian.tar.xz"
+    "8d72678928bccd02255900c027bbe11b91141b40790d6a5953c566f63abeb28f 2481 rust-nalgebra-macros_0.3.0-2.dsc 973e7178a678cfd059ccec50887658d482ce16b0aa9da3888ddeab5cd5eb4889 13091 rust-nalgebra-macros_0.3.0.orig.tar.gz 123351548f3de941274622c71e32b8b52d805c9071d9f4346088177b9cb3e4f8 2308 rust-nalgebra-macros_0.3.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nalgebra-macros"
   ],
   "Files": [
-    "f66c92e8dd4d889ef8090237b2ae7cb2 1840 rust-nalgebra-macros_0.2.2-1.dsc 6b097f98cf600ea601006762cafd9a44 7545 rust-nalgebra-macros_0.2.2.orig.tar.gz b4f40e538a95185cf8653bca85245beb 2012 rust-nalgebra-macros_0.2.2-1.debian.tar.xz"
+    "1e9bc22808da739319ee79a993c1664a 2481 rust-nalgebra-macros_0.3.0-2.dsc a26300dfe8b360e1770e719646fb16f2 13091 rust-nalgebra-macros_0.3.0.orig.tar.gz 223261669d9ccf93566a368eaba5459b 2308 rust-nalgebra-macros_0.3.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://nalgebra.org"
+    "https://nalgebra.rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-nalgebra-0.32+default-dev"
+    "dh-cargo, librust-nalgebra-0.34+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nalgebra-macros]"
   ],
   "Version": [
-    "0.2.2-1"
+    "0.3.0-2"
   ]
 }
