@@ -6,19 +6,19 @@
     "gnome-software, gnome-software-common, gnome-software-plugin-deb, gnome-software-plugin-flatpak, gnome-software-plugin-fwupd, gnome-software-plugin-snap, gnome-software-dev, gnome-software-doc"
   ],
   "Build-Depends": [
-    "appstream, debhelper-compat (= 13), docbook-xsl, gsettings-desktop-schemas-dev (\u003e= 3.18), gtk-doc-tools, itstool, libadwaita-1-dev (\u003e= 1.8~alpha), libappstream-dev (\u003e= 1.0.0), libflatpak-dev (\u003e= 1.14.1) [amd64 arm64 armel armhf i386 loong64 mipsel mips64el ppc64el s390x hppa powerpc ppc64 riscv64 x32], libfwupd-dev (\u003e= 1.5.6) [linux-any], libglib-testing-0-dev, libglib2.0-dev (\u003e= 2.76.0), libgtk-4-dev (\u003e= 4.17.5), libgudev-1.0-dev [linux-any], libjson-glib-dev (\u003e= 1.6.0), libmalcontent-0-dev [amd64 arm64 armel armhf i386 loong64 mipsel mips64el ppc64el s390x hppa powerpc ppc64 riscv64 x32], libostree-dev (\u003e= 2022.5-2~) [linux-any], libpackagekit-glib2-dev (\u003e= 1.2.5), libpolkit-gobject-1-dev, libsnapd-glib-dev (\u003e= 1.64) [amd64 arm64 armel armhf i386 ppc64el s390x], libsoup-3.0-dev, libsysprof-capture-4-dev (\u003e= 3.38.0) [amd64 arm64 armel armhf i386 loong64 mips64el ppc64el riscv64 s390x powerpc ppc64], libxml2-utils, libxmlb-dev (\u003e= 0.3.4), meson (\u003e= 0.55.0), pkgconf, polkitd, xsltproc"
+    "debhelper-compat (= 13), appstream, docbook-xsl, gsettings-desktop-schemas-dev, gtk-doc-tools, itstool, libadwaita-1-dev (\u003e= 1.8~alpha), libappstream-dev (\u003e= 1.0.0), libflatpak-dev [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x hppa m68k powerpc ppc64 sh4 sparc64 x32], libfwupd-dev [linux-any], libglib-testing-0-dev, libglib2.0-dev (\u003e= 2.76.0), libgtk-4-dev (\u003e= 4.17.5), libgudev-1.0-dev [linux-any], libjson-glib-dev, libmalcontent-0-dev [amd64 arm64 armel armhf i386 loong64 mipsel mips64el ppc64el s390x hppa powerpc ppc64 riscv64 x32], libostree-dev [linux-any], libpackagekit-glib2-dev, libpolkit-gobject-1-dev, libsnapd-glib-dev (\u003e= 1.64) [linux-any], libsoup-3.0-dev, libsysprof-capture-4-dev [linux-any], libxml2-utils, libxmlb-dev, meson, pkgconf, polkitd, xsltproc"
   ],
   "Build-Depends-Indep": [
     "libgdk-pixbuf2.0-doc \u003c!nodoc\u003e, libglib2.0-doc \u003c!nodoc\u003e, libgtk-3-doc \u003c!nodoc\u003e, libjson-glib-doc \u003c!nodoc\u003e, libsoup-3.0-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "15c519a41299ba1bf11b89960e9d422301bc75264f8231dac0d962dcc55f1e00 3888 gnome-software_50.0-1.dsc 3515e2015f235b6abb7a342806008acb1f184c29d9c4ced3581f8ed4c1f1c241 3555948 gnome-software_50.0.orig.tar.xz db478051a4adb5986852a7a2b1adc8fe2c66ad567d4d6e20b6b99a03a7ddae3e 14764 gnome-software_50.0-1.debian.tar.xz"
+    "67fd67236df956a9571aa49c4151b4dcca235a36986b372361b12a94877689f4 3688 gnome-software_50.1-1.dsc 6967eefec69d51d34d200585c9edfe24f151803e49ed9284a3d74edb0e5340a8 3561636 gnome-software_50.1.orig.tar.xz 8070d72763f9e541c582234f2323a71eae6ffe71eada6e92c01feda175106b68 14624 gnome-software_50.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnome-software"
   ],
   "Files": [
-    "49372e5804b0ff99c8e42e92bfcd2b5e 3888 gnome-software_50.0-1.dsc 395487856c49b9fc9ea46e72a459efed 3555948 gnome-software_50.0.orig.tar.xz bdebf5ea8b51483cb0595bd31d8c11b0 14764 gnome-software_50.0-1.debian.tar.xz"
+    "6fa2a949efb6230d223688be96485e65 3688 gnome-software_50.1-1.dsc f9cad91ca050aa5e02774c8af5656fe5 3561636 gnome-software_50.1.orig.tar.xz 49a30255a1d99d86d28b97559c494829 14624 gnome-software_50.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "gnome-software"
   ],
   "Package-List": [
-    "gnome-software deb gnome optional arch=any gnome-software-common deb gnome optional arch=all gnome-software-dev deb libdevel optional arch=any gnome-software-doc deb doc optional arch=all profile=!nodoc gnome-software-plugin-deb deb gnome optional arch=any gnome-software-plugin-flatpak deb gnome optional arch=amd64,arm64,armel,armhf,hppa,i386,loong64,mips64el,mipsel,powerpc,ppc64,ppc64el,riscv64,s390x,x32 gnome-software-plugin-fwupd deb gnome optional arch=linux-any gnome-software-plugin-snap deb gnome optional arch=amd64,arm64,armel,armhf,i386,ppc64el,s390x"
+    "gnome-software deb gnome optional arch=any gnome-software-common deb gnome optional arch=all gnome-software-dev deb libdevel optional arch=any gnome-software-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc gnome-software-plugin-deb deb gnome optional arch=any gnome-software-plugin-flatpak deb gnome optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x,hppa,m68k,powerpc,ppc64,sh4,sparc64,x32 gnome-software-plugin-fwupd deb gnome optional arch=linux-any gnome-software-plugin-snap deb gnome optional arch=amd64,arm64,armhf,i386,ppc64el,riscv64,s390x"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e, Matthias Klumpp \u003cmak@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/gnome-team/gnome-software.git"
   ],
   "Version": [
-    "50.0-1"
+    "50.1-1"
   ]
 }
