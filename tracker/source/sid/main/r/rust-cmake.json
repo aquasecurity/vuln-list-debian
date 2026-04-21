@@ -6,22 +6,25 @@
     "librust-cmake-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 26), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.41-~~) \u003c!nocheck\u003e, cmake \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.2.46) \u003c!nocheck\u003e, cmake \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3c8c3f05c0710f4ff6ec94ba67bed93ce77551380d180e3da477ea62f605b034 2286 rust-cmake_0.1.45-1.dsc eb6210b637171dfba4cda12e579ac6dc73f5165ad56133e5d72ef3131f320855 14375 rust-cmake_0.1.45.orig.tar.gz 77a3b718f99d7be594598fc8bc4640904271400aea9b60b417292e2ca42fe7a1 2804 rust-cmake_0.1.45-1.debian.tar.xz"
+    "d6f15da8b6bcb3dd30c94546ba1357a51bf351aff2b5df933d55b2769d107597 1705 rust-cmake_0.1.58-1.dsc c0f78a02292a74a88ac736019ab962ece0bc380e3f977bf72e376c5d78ff0678 20474 rust-cmake_0.1.58.orig.tar.gz d4c50da3005d2d30de8b3eac9179df1711a367f5336ccf0f2371dcd632094e28 2880 rust-cmake_0.1.58-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cmake"
   ],
   "Files": [
-    "4aaf73a8a96af4c4cff0cfb55f3d7e98 2286 rust-cmake_0.1.45-1.dsc ae3599ccf3dc972aef3f1420eb5abdc0 14375 rust-cmake_0.1.45.orig.tar.gz df4ae7ceda4d520c190f4741cd651542 2804 rust-cmake_0.1.45-1.debian.tar.xz"
+    "3f33a8f239ecb453845bbbdae2eeeea4 1705 rust-cmake_0.1.58-1.dsc d1197f08e6b0ea45742e0153ece10f37 20474 rust-cmake_0.1.58.orig.tar.gz 5450950cabd490ec525537bd2e96be0a 2880 rust-cmake_0.1.58-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/alexcrichton/cmake-rs"
+    "https://github.com/rust-lang/cmake-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
+    "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cmake"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cmake]"
   ],
   "Version": [
-    "0.1.45-1"
+    "0.1.58-1"
   ]
 }
