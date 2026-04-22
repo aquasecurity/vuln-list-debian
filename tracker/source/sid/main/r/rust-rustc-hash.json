@@ -6,19 +6,25 @@
     "librust-rustc-hash-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b5a478d73170ae930aaac5ea97bd3b7ac6415a40ab0845019e5bd9996addea3f 2137 rust-rustc-hash_1.1.0-1.dsc 08d43f7aa6b08d49f382cde6a7982047c3426db949b1424bc4b7ec9ae12c6ce2 9331 rust-rustc-hash_1.1.0.orig.tar.gz 5e691db859b0a4c61d674399b36b27a1a425c66e245a9e3bff0ae3a3a6d0deb3 2568 rust-rustc-hash_1.1.0-1.debian.tar.xz"
+    "c0f09550b113ac3ed4843d3aa3d8740892d7302696c6f9c449761202d213fe11 2362 rust-rustc-hash_2.1.2-2.dsc 94300abf3f1ae2e2b8ffb7b58043de3d399c73fa6f4b73826402a5c457614dbe 14754 rust-rustc-hash_2.1.2.orig.tar.gz e4240109500817068619a7c5c252efa03c4ab3f28fd85706ac8da0bdab154d48 2800 rust-rustc-hash_2.1.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rustc-hash"
   ],
   "Files": [
-    "9b09f0122046fabdfbbd31e9b7630fc9 2137 rust-rustc-hash_1.1.0-1.dsc 7b1261ea730a9314bc9bcdf4a379bf98 9331 rust-rustc-hash_1.1.0.orig.tar.gz 6de1daebe2bad74487b0251fc351f351 2568 rust-rustc-hash_1.1.0-1.debian.tar.xz"
+    "d36077605243e2d7d17d2abf86a9e525 2362 rust-rustc-hash_2.1.2-2.dsc e3f6e9ab7d8108a8d0376889a974b293 14754 rust-rustc-hash_2.1.2.orig.tar.gz a99b69b6a39f10945d1cc4df5210e4eb 2800 rust-rustc-hash_2.1.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-lang/rustc-hash"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rustc-hash]"
   ],
   "Version": [
-    "1.1.0-1"
+    "2.1.2-2"
   ]
 }
