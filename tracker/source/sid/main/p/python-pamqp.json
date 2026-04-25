@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any all"
+    "all"
   ],
   "Binary": [
     "python-pamqp-doc, python3-pamqp"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-doc, python3-pytest, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme"
+    "debhelper-compat (= 13), dh-sequence-mkdocs, dh-sequence-python3, architecture-is-64-bit, mkdocs, mkdocs-material, mkdocstrings, mkdocstrings-python-handlers, pybuild-plugin-pyproject, python3-all, python3-doc, python3-hatchling, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "f6ebc7af048731e41984513cd912920d56cf7d4cf9343d661cb5cb31b489a0a2 1720 python-pamqp_3.3.0-3.dsc d205c2599029d2e3c95d3666013899d10300d380eb87580a0e8182003c31f7b3 68088 python-pamqp_3.3.0.orig.tar.gz 6856d51f9c39df1d6d4f7c72acdbd1732e08d1eec3d651901b7e22164290b0ef 4940 python-pamqp_3.3.0-3.debian.tar.xz"
+    "1408ec1a467a753ea4ad3b0b0e762a57306dd61581abad7e2aa994f30b7bd25e 1966 python-pamqp_4.0.0-1.dsc 9e315cd0f58c76bc0319bdc70883b27bcc192066c962c523dc586ba26494cd17 130440 python-pamqp_4.0.0.orig.tar.gz 6aefccd29bd99729ed6c659272954aea65a8d0aef18a330115b405e1d0822c2c 4296 python-pamqp_4.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-pamqp"
   ],
   "Files": [
-    "5c1829581965357a08bb132a593acd40 1720 python-pamqp_3.3.0-3.dsc 47694ad1c242f86400cf88ee31cfaf6c 68088 python-pamqp_3.3.0.orig.tar.gz d0931b38dd8aa01426a708cb8c48f852 4940 python-pamqp_3.3.0-3.debian.tar.xz"
+    "43bccf27b0a305eb8961be2cdda57272 1966 python-pamqp_4.0.0-1.dsc 537e35f640646f0ffee07b8605b3865b 130440 python-pamqp_4.0.0.orig.tar.gz 231d505d65c7e755ea05678ae84be4ad 4296 python-pamqp_4.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python-pamqp"
   ],
   "Package-List": [
-    "python-pamqp-doc deb doc optional arch=all python3-pamqp deb python optional arch=any"
+    "python-pamqp-doc deb doc optional arch=all python3-pamqp deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,16 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-python"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Georg Faerber \u003cgeorg@debian.org\u003e, Michael Fladischer \u003cfladi@debian.org\u003e,"
+    "Georg Faerber \u003cgeorg@debian.org\u003e, Michael Fladischer \u003cfladi@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-pamqp"
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/python-pamqp.git"
   ],
   "Version": [
-    "3.3.0-3"
+    "4.0.0-1"
   ]
 }
