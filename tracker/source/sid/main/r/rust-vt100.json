@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev (\u003e= 1.0.5-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.17-~~) \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.10-~~) \u003c!nocheck\u003e, librust-vte-0.15+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev (\u003e= 1.0.15) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev (\u003e= 0.2.1) \u003c!nocheck\u003e, librust-vte-0.15+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "926881361926690c75b7e1e0a9b5261fecc9d0e81aa407eb15845223f64c729d 2024 rust-vt100_0.15.2-4.dsc 84cd863bf0db7e392ba3bd04994be3473491b31e66340672af5d11943c6274de 30404 rust-vt100_0.15.2.orig.tar.gz 950efaad7ab9972ccca622504908eed2d5085ddaf68951187ff577f898a19c01 3164 rust-vt100_0.15.2-4.debian.tar.xz"
+    "9c9f070d0bc7d5cb1454cb47613dd4dde2516f02eecb624d921d65232e392baf 1970 rust-vt100_0.16.2-1.dsc 054ff75fb8fa83e609e685106df4faeffdf3a735d3c74ebce97ec557d5d36fd9 32355 rust-vt100_0.16.2.orig.tar.gz 95ca47fc6e3d97bae18f39aa3343b6134afe3f7bd9e90836138d0459736c00d4 3072 rust-vt100_0.16.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vt100"
   ],
   "Files": [
-    "850090baf51b52e409e61fb8967d3ace 2024 rust-vt100_0.15.2-4.dsc 661db847a704e22753f1401be3110c71 30404 rust-vt100_0.15.2.orig.tar.gz 0b182b64fc22c67376941b2716a0a0cd 3164 rust-vt100_0.15.2-4.debian.tar.xz"
+    "d41347c8830e0416e3c37d5b1c6ac3a2 1970 rust-vt100_0.16.2-1.dsc c54a4ad8959821f4344414996911b9fc 32355 rust-vt100_0.16.2.orig.tar.gz 5d2ae2179be2345d2d6619c481b4e708 3072 rust-vt100_0.16.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-nix-0.29+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-terminal-size-0.4+default-dev, librust-vte-0.15+default-dev, rustc"
+    "dh-cargo, librust-nix-0.30+default-dev, librust-nix-0.30+term-dev, librust-quickcheck-1+default-dev, librust-rand-0.10+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-terminal-size-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vt100]"
   ],
   "Version": [
-    "0.15.2-4"
+    "0.16.2-1"
   ]
 }
