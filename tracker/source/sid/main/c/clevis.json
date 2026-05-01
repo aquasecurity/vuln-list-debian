@@ -6,16 +6,16 @@
     "clevis, clevis-tpm2, clevis-dracut, clevis-initramfs, clevis-luks, clevis-systemd, clevis-udisks2"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), asciidoctor, bash-completion, cryptsetup-bin, curl, dracut-core, initramfs-tools, jose, jq, libaudit-dev, libglib2.0-dev, libjansson4, libjose-dev, libluksmeta-dev, libpwquality-tools, libssl-dev, libudisks2-dev, meson, pkgconf, systemd-dev, tang, tpm2-tools"
+    "debhelper-compat (= 13), asciidoctor, bash-completion, cryptsetup-bin, curl, dracut-core, initramfs-tools, jose, jq, keyutils, libaudit-dev, libglib2.0-dev, libjansson4, libjose-dev, libluksmeta-dev, libpwquality-tools, libssl-dev, libudisks2-dev, lsof, meson, opensc, pcscd, pkgconf, socat, systemd-dev, tang, tpm2-tools"
   ],
   "Checksums-Sha256": [
-    "ba577a1624d07ea3044bfaead46fd6ebe1318b7f2711952e90505034d16e17f4 2535 clevis_20-1.dsc e4c280b5b6cc8876d2e2e4d6ea864168be44c0cf0ad2bc2d2e065b896e4fab1e 68124 clevis_20.orig.tar.xz 53487c1682fd2d468317b03d047ea8dac9ae5b9149e0fe0b4b9c92c0b450b43b 6916 clevis_20-1.debian.tar.xz"
+    "28bd509dc6f9ecbca0330d41d3892258aca1b556ad21fce0ad607f6ace5e6cc3 2617 clevis_22-1.dsc fa43fb6c1496e3e8f885f2150f6cc4aab1f8fb3e73ce83bf92cd2b8343334076 112691 clevis_22.orig.tar.gz 256c3e719132d6c34d92a6bc6dceb0ac1f4ab8a960544d87cef6741432b67abb 8204 clevis_22-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/clevis"
   ],
   "Files": [
-    "ffbbaccc57542e2f8ade3f2958876217 2535 clevis_20-1.dsc a5307d8970db42929c5a619d0b51dd4d 68124 clevis_20.orig.tar.xz 933b72c24472494af0cc4dee1186eaf2 6916 clevis_20-1.debian.tar.xz"
+    "092d140e4040c8d0b7c717692073083f 2617 clevis_22-1.dsc 09161687faef86ade276531ebb6e0f7a 112691 clevis_22.orig.tar.gz 8d41970c7c90ac1a8cba280f02897e53 8204 clevis_22-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cryptsetup, jose, jq, moreutils, openssl, socat, systemd, tang"
+    "cryptsetup, jose, jq, keyutils, lsof, moreutils, opensc, openssl, pcscd, socat, softhsm2, systemd, tang"
   ],
   "Vcs-Browser": [
     "https://git.in-ulm.de/cbiedl/clevis"
@@ -54,6 +54,6 @@
     "https://git.in-ulm.de/cbiedl/clevis.git"
   ],
   "Version": [
-    "20-1"
+    "22-1"
   ]
 }

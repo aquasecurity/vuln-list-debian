@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
-    "librust-sha256+openssl-dev, librust-sha256+tokio-dev, librust-sha256-dev"
+    "librust-sha256-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, librust-async-trait-dev \u003c!nocheck\u003e, librust-bytes-dev \u003c!nocheck\u003e, librust-hex-dev \u003c!nocheck\u003e, librust-sha2-dev \u003c!nocheck\u003e, librust-tokio-dev \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, librust-async-trait-dev (\u003e= 0.1.68) \u003c!nocheck\u003e, librust-bytes-dev (\u003e= 1.4.0) \u003c!nocheck\u003e, librust-hex-dev (\u003e= 0.4.2) \u003c!nocheck\u003e, librust-sha2-dev (\u003e= 0.10.6) \u003c!nocheck\u003e, librust-tokio-dev (\u003e= 1.28.2) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a7e1008e57d59821ef98b9b83f1699e2ab134293a0ffa7e1595471ad5b8ff927 1822 rust-sha256_1.6.0-6.dsc 4650681abaf756f3735eb1c7f0d65008e6e9869d4740d5d5c9ceaf946a94b7a3 12644 rust-sha256_1.6.0.orig.tar.xz 43601d20fe9b6b471a7da40d2e9fc59113bfa8ca007f5c7bb2112983e3614b65 3268 rust-sha256_1.6.0-6.debian.tar.xz"
+    "dce2b354f47b3057c3bf21cc2893ad6b85d6ae19d35c7882f8594c5c8420bbee 1737 rust-sha256_1.6.0-7.dsc 4650681abaf756f3735eb1c7f0d65008e6e9869d4740d5d5c9ceaf946a94b7a3 12644 rust-sha256_1.6.0.orig.tar.xz e9eb454c01374d79d6b482e2b91d51aa88192bf0815172ab47312a8674257948 3116 rust-sha256_1.6.0-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sha256"
   ],
   "Files": [
-    "53c78ae71c939e23a3dee2c519908097 1822 rust-sha256_1.6.0-6.dsc d56d0a84dfba6193228009d27eca6a5f 12644 rust-sha256_1.6.0.orig.tar.xz 26f02d3682b5bf9d491526e4fd80ee17 3268 rust-sha256_1.6.0-6.debian.tar.xz"
+    "a804daa3298633671fdaa62c2b1b15dd 1737 rust-sha256_1.6.0-7.dsc d56d0a84dfba6193228009d27eca6a5f 12644 rust-sha256_1.6.0.orig.tar.xz 3e2b1271ee74e826fb6d22ddc2d4cdd2 3116 rust-sha256_1.6.0-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-sha256"
   ],
   "Package-List": [
-    "librust-sha256+openssl-dev deb rust optional arch=all librust-sha256+tokio-dev deb rust optional arch=all librust-sha256-dev deb rust optional arch=all"
+    "librust-sha256-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +57,6 @@
     "https://forgejo.debian.net/rust/rust-sha256"
   ],
   "Version": [
-    "1.6.0-6"
+    "1.6.0-7"
   ]
 }

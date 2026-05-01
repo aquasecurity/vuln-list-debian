@@ -6,19 +6,25 @@
     "librust-wildmatch-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "39f6f4b23a86c81f99804ce9813940bfd53b785d30548224a09bb14be1d80287 2262 rust-wildmatch_2.1.1-1.dsc ee583bdc5ff1cf9db20e9db5bb3ff4c3089a8f6b8b31aff265c9aba85812db86 6481 rust-wildmatch_2.1.1.orig.tar.gz 382d9078aee66c479e15c04bc21d4e59a53482c80c1010ccc350ef1cc6ae09ac 2540 rust-wildmatch_2.1.1-1.debian.tar.xz"
+    "1ba275e158108669698564a5ade2c462142756be748e505b8fce2361681354cc 2409 rust-wildmatch_2.6.1-1.dsc 29333c3ea1ba8b17211763463ff24ee84e41c78224c16b001cd907e663a38c68 12798 rust-wildmatch_2.6.1.orig.tar.gz d9c9966b5a0bcb8f1683957ffa2a67e223069d548b894144b391705e6bcbc54a 2732 rust-wildmatch_2.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wildmatch"
   ],
   "Files": [
-    "43c8f491650b0962187d20e0c585a5c9 2262 rust-wildmatch_2.1.1-1.dsc d60410655548bfe9a23125732030faa2 6481 rust-wildmatch_2.1.1.orig.tar.gz 83fcb31a3d908b9fd324457a57ac23fb 2540 rust-wildmatch_2.1.1-1.debian.tar.xz"
+    "5140ce6fd48f515e4b40f832421932ba 2409 rust-wildmatch_2.6.1-1.dsc 0672d50e9042692ffcde23a1ed755c37 12798 rust-wildmatch_2.6.1.orig.tar.gz 909992beb1b533e4ece0ae9314629fa2 2732 rust-wildmatch_2.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/becheran/wildmatch"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-glob-0.3+default-dev, librust-ntest-0.7+default-dev, librust-regex-1+default-dev"
+    "dh-cargo, librust-criterion-0.5-dev, librust-glob-0.3-dev, librust-ntest-0.9-dev, librust-rand-0.8+default-dev, librust-regex-1-dev, librust-regex-lite-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wildmatch]"
   ],
   "Version": [
-    "2.1.1-1"
+    "2.6.1-1"
   ]
 }

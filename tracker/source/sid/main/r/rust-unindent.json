@@ -6,19 +6,25 @@
     "librust-unindent-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8dd2116241f8feca76a119d47ec66ea2996f803a2013ddc62d64516c51060781 2144 rust-unindent_0.2.3-1.dsc c7de7d73e1754487cb58364ee906a499937a0dfabd86bcb980fa99ec8c8fa2ce 7306 rust-unindent_0.2.3.orig.tar.gz 8fb9bf23af7c3b2d81beebccfe794c1d570e51419f1fdd4b4c6f81c0806beb73 2700 rust-unindent_0.2.3-1.debian.tar.xz"
+    "cb05d693d37609f68271134bb62fbd13db0dd1afb6ebf88cb0270f91b8d4274c 2320 rust-unindent_0.2.4-1.dsc 7264e107f553ccae879d21fbea1d6724ac785e8c3bfc762137959b5802826ef3 7422 rust-unindent_0.2.4.orig.tar.gz 25eaf1457b899e9b00fe7dabe8fba0e08adf184f22939870ab0e89dc3e7ab181 2728 rust-unindent_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unindent"
   ],
   "Files": [
-    "7829c4fe4d739cedbf15f7ad05fc3306 2144 rust-unindent_0.2.3-1.dsc 812b2b925f9734bbc39717f284bc712b 7306 rust-unindent_0.2.3.orig.tar.gz ae25d97bd7d581d01f712d95f29895da 2700 rust-unindent_0.2.3-1.debian.tar.xz"
+    "7bbf0fae34509eb376bbebd1bbf44370 2320 rust-unindent_0.2.4-1.dsc 916099e0363f5e652be0e15d30613c99 7422 rust-unindent_0.2.4.orig.tar.gz 1dc1840ec954d8ffecc50471ff5558cd 2728 rust-unindent_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/indoc"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unindent]"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.2.4-1"
   ]
 }
