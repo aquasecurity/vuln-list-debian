@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "exim4-base, exim4-config, exim4-daemon-light, exim4, exim4-daemon-heavy, eximon4, exim4-dev"
+    "exim4-base, exim4-config, exim4-daemon-light, exim4, exim4-daemon-heavy, exim4-daemon-mod, eximon4, exim4-dev, exim4-mod-ldap, exim4-mod-cyrus-sasl, exim4-mod-mysql, exim4-mod-pam, exim4-mod-perl, exim4-mod-postgresql, exim4-mod-spf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-libmysqlclient-dev, docbook-xml, docbook-xsl, libfile-fcntllock-perl, libgnutls28-dev (\u003e= 3.5.7), libidn-dev, libidn2-dev, libldap2-dev, libnsl-dev, libpam0g-dev, libpcre2-dev, libperl-dev, libpq-dev, libsasl2-dev, libspf2-dev, libsqlite3-dev, libx11-dev, libxaw7-dev, libxext-dev, libxmu-dev, libxt-dev, lynx, po-debconf, xsltproc"
+    "debhelper-compat (= 13), dh-sequence-installsysusers, default-libmysqlclient-dev, docbook-xml, docbook-xsl, libfile-fcntllock-perl, libgnutls28-dev (\u003e= 3.5.7), libidn-dev, libidn2-dev, libldap2-dev, libpam0g-dev, libpcre2-dev, libperl-dev, libpq-dev, libsasl2-dev, libspf2-dev, libsqlite3-dev, libx11-dev, libxaw7-dev, libxext-dev, libxmu-dev, libxt-dev, lynx, po-debconf, xsltproc"
   ],
   "Checksums-Sha256": [
-    "ed806a3caa1ec3a5ded7c4b2f8b14651a0bc73018bd1a59db3e0838ee1ae0e72 2869 exim4_4.99.1-1.dsc eae967bd49a5f879933b8c6ec88c30475a1c6646232135f37f05b55dbc4e3447 1960984 exim4_4.99.1.orig.tar.xz 03aa3018e8fb6154f7969afa7b1b96733115b9c2215264f8918449830c441d96 833 exim4_4.99.1.orig.tar.xz.asc e3b9a2f8271ee22fa8e3af9b9cd874ea8c29943021bc344ed21d2805f2aa106d 495544 exim4_4.99.1-1.debian.tar.xz"
+    "ea466cb5b0018b749cd7bf96eae02d69129130a8b7b57a1883f3d397ab362c28 3382 exim4_4.99.2-1.dsc 25364f19988270d846965689dd29c662cf5de152639875d0d5352a69fd753a47 1962424 exim4_4.99.2.orig.tar.xz bd6dd537a25bb509c31f97b0558eaa7d7546dc216c04dc65daf0c90984e8872c 252 exim4_4.99.2.orig.tar.xz.asc d515128cd87773779ca33ffa83d5f27c475d49843c3e411b5a9b071c26bc5c26 494892 exim4_4.99.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/exim4"
   ],
   "Files": [
-    "d74f5974e5b56c072b4d695227221b3f 2869 exim4_4.99.1-1.dsc 281df763c79f1d68cb4f9ee9c9d8a2e1 1960984 exim4_4.99.1.orig.tar.xz 825b325addf08c4156c499d679f44a5c 833 exim4_4.99.1.orig.tar.xz.asc c81652ec9df0bd50ee3fcad6865c4e7e 495544 exim4_4.99.1-1.debian.tar.xz"
+    "af56f9a5bb53236bf4c72b2003235cf6 3382 exim4_4.99.2-1.dsc 8e8fa4ac154e29468b33db973b4d488b 1962424 exim4_4.99.2.orig.tar.xz f94cb1085596d263853a3eec0659e0f7 252 exim4_4.99.2.orig.tar.xz.asc 594c10931cd8bb6db27b92dfd337b0c7 494892 exim4_4.99.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "exim4"
   ],
   "Package-List": [
-    "exim4 deb mail optional arch=all exim4-base deb mail optional arch=any exim4-config deb mail optional arch=all exim4-daemon-heavy deb mail optional arch=any exim4-daemon-light deb mail optional arch=any exim4-dev deb mail optional arch=any eximon4 deb mail optional arch=any"
+    "exim4 deb mail optional arch=all exim4-base deb mail optional arch=any exim4-config deb mail optional arch=all exim4-daemon-heavy deb mail optional arch=any exim4-daemon-light deb mail optional arch=any exim4-daemon-mod deb mail optional arch=any exim4-dev deb mail optional arch=any exim4-mod-cyrus-sasl deb mail optional arch=any exim4-mod-ldap deb mail optional arch=any exim4-mod-mysql deb mail optional arch=any exim4-mod-pam deb mail optional arch=any exim4-mod-perl deb mail optional arch=any exim4-mod-postgresql deb mail optional arch=any exim4-mod-spf deb mail optional arch=any eximon4 deb mail optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "mail"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "libnet-ssleay-perl, swaks"
   ],
   "Uploaders": [
-    "Andreas Metzler \u003cametzler@debian.org\u003e,"
+    "Andreas Metzler \u003cametzler@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/exim-team/exim4"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/exim-team/exim4.git"
   ],
   "Version": [
-    "4.99.1-1"
+    "4.99.2-1"
   ]
 }

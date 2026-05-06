@@ -6,22 +6,22 @@
     "ruby-simplecov-html"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gem2deb, libjs-highlight.js, libjs-jquery, libjs-jquery-fancybox, libjs-jquery-ui, ruby-sprockets"
+    "debhelper-compat (= 13), gem2deb, libjs-highlight.js, libjs-jquery, libjs-jquery-fancybox, libjs-jquery-ui, ruby-simplecov \u003c!nocheck\u003e, ruby-sprockets, ruby-terser, ruby-sass"
   ],
   "Checksums-Sha256": [
-    "00ec89369f4fc89c93391e605e957bba064ea69739560607e40bddf41ec73816 2157 ruby-simplecov-html_0.13.2-1.dsc 63fc1b7345e802ed1091448e30a25a786d8fc39017422e7b21fbdd2d3b6b001d 53864 ruby-simplecov-html_0.13.2.orig.tar.xz 0062eefedcc05b5fd9db031e66a31eb119caab10f885715d290cbeca3d4a2622 96968 ruby-simplecov-html_0.13.2-1.debian.tar.xz"
+    "0e142fdb6d6b00375650c46d574b9918f2e9a6d58603b18153bfb50532ab9d45 2326 ruby-simplecov-html_0.13.2+git-1.dsc 8b095a0e2f95fa8b21761664fc87ede89532ef021515b657403f29143f82fa03 217640 ruby-simplecov-html_0.13.2+git.orig.tar.xz 14eb8aecb42eb8f84485a60d17f8b02a044d878e3f8780dbd59189692f47c479 5220 ruby-simplecov-html_0.13.2+git-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/ruby-simplecov-html"
   ],
   "Files": [
-    "cbeb75c0a868658e28e075ca481bf014 2157 ruby-simplecov-html_0.13.2-1.dsc ed2be1241264654654c0cd7c65dae220 53864 ruby-simplecov-html_0.13.2.orig.tar.xz c7132ee813ebb8a410e01bb882189cf5 96968 ruby-simplecov-html_0.13.2-1.debian.tar.xz"
+    "1ba89c2c1777f78442fe8a5b8754b423 2326 ruby-simplecov-html_0.13.2+git-1.dsc 445a8bb5c310cb41b0b9c25e94c141d8 217640 ruby-simplecov-html_0.13.2+git.orig.tar.xz 1bbf7640046d2eb3f6cee635bf62ae4c 5220 ruby-simplecov-html_0.13.2+git-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/colszowka/simplecov-html"
+    "https://github.com/simplecov-ruby/simplecov-html"
   ],
   "Maintainer": [
     "Debian Ruby Team \u003cpkg-ruby-extras-maintainers@lists.alioth.debian.org\u003e"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-ruby"
+  ],
+  "Testsuite-Triggers": [
+    "ruby, ruby-simplecov"
   ],
   "Uploaders": [
-    "Praveen Arimbrathodiyil \u003cpraveen@debian.org\u003e,"
+    "Praveen Arimbrathodiyil \u003cpraveen@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/ruby-team/ruby-simplecov-html"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/ruby-team/ruby-simplecov-html.git"
   ],
   "Version": [
-    "0.13.2-1"
+    "0.13.2+git-1"
   ]
 }
