@@ -6,19 +6,25 @@
     "librust-derive-builder-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-derive-builder-macro-0.20.1+default-dev \u003c!nocheck\u003e, librust-derive-builder-macro-0.20.1+lib-has-std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-derive-builder-macro-0.20+default-dev (\u003c\u003c 0.20.3) \u003c!nocheck\u003e, librust-derive-builder-macro-0.20+default-dev (\u003e= 0.20.2) \u003c!nocheck\u003e, librust-derive-builder-macro-0.20+lib-has-std-dev (\u003c\u003c 0.20.3) \u003c!nocheck\u003e, librust-derive-builder-macro-0.20+lib-has-std-dev (\u003e= 0.20.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4a43b5c8dcbbb820b0f864d06347d022c6f596e04cb02ac2444d4a5e1841f491 2540 rust-derive-builder_0.20.1-2.dsc cd33f37ee6a119146a1781d3356a7c26028f83d779b2e04ecd45fdc75c76877b 36977 rust-derive-builder_0.20.1.orig.tar.gz 7f3b412efd9f23bc19d7b6e2d0295908a95761dfaa2844d9f63605df1661946a 4164 rust-derive-builder_0.20.1-2.debian.tar.xz"
+    "3e0dacc56b243a985be1de52c1e3cf149c984ea66c9016943b9eb9d720d12342 2758 rust-derive-builder_0.20.2-1.dsc 507dfb09ea8b7fa618fcf76e953f4f5e192547945816d5358edffe39f6f94947 36661 rust-derive-builder_0.20.2.orig.tar.gz 91720a825f51bf61f45e30b3e8e288feab5cbed91d9675a36a4889ac9b41bc7e 4124 rust-derive-builder_0.20.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-derive-builder"
   ],
   "Files": [
-    "484075471b46f7ef136cfea76ef420c4 2540 rust-derive-builder_0.20.1-2.dsc af78b07fc348852e6133102eeeaccc05 36977 rust-derive-builder_0.20.1.orig.tar.gz 7dfcf65332f65cf76e98024b00b6ee2f 4164 rust-derive-builder_0.20.1-2.debian.tar.xz"
+    "6a4b5d51066c51d6357cb183625529db 2758 rust-derive-builder_0.20.2-1.dsc 4f3e6d806cfd6173f04167b10753738a 36661 rust-derive-builder_0.20.2.orig.tar.gz da63b0e22a63ed881d1cbf4c7d96f7f4 4124 rust-derive-builder_0.20.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/colin-kiegel/rust-derive-builder"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-rustversion-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/derive-builder]"
   ],
   "Version": [
-    "0.20.1-2"
+    "0.20.2-1"
   ]
 }
