@@ -6,19 +6,25 @@
     "librust-digest-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-block-buffer-0.10+default-dev \u003c!nocheck\u003e, librust-crypto-common-0.1+default-dev (\u003e= 0.1.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-block-buffer-0.12+default-dev \u003c!nocheck\u003e, librust-crypto-common-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "de6606d536131881a035dbab6e7343d9fc930b638bc9dd3a00a94388a69ec54c 2215 rust-digest_0.10.7-2.dsc 9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292 19557 rust-digest_0.10.7.orig.tar.gz 9586e225fec87efaf95ad11879e41a572e12592f583dbc71f31add9e91ec1548 3272 rust-digest_0.10.7-2.debian.tar.xz"
+    "d974a7664e412b07a89488a0e8a08d73ee786e5c1745a0ed2d3c59fe235177ea 2321 rust-digest_0.11.3-1.dsc f1dd6dbb5841937940781866fa1281a1ff7bd3bf827091440879f9994983d5c2 28955 rust-digest_0.11.3.orig.tar.gz 82a1ad9a2539039d08a02f0923a854d3ea5dd8c799f59f90c6fdf8ff975597f3 3248 rust-digest_0.11.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-digest"
   ],
   "Files": [
-    "553b1d93e1da195528fea940c11f9bd4 2215 rust-digest_0.10.7-2.dsc 3d62bfbbe08bdcee55fcb8cda85554d9 19557 rust-digest_0.10.7.orig.tar.gz 51941f987e6c88707ec71dd711740ddc 3272 rust-digest_0.10.7-2.debian.tar.xz"
+    "bbbd81493f1258f69a5e29224e0d2b83 2321 rust-digest_0.11.3-1.dsc e7100c52e3d6991f90fbf60d270b9a0b 28955 rust-digest_0.11.3.orig.tar.gz 16ac735afb0260ee39e14bd3b65ca289 3248 rust-digest_0.11.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/traits"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-sha2-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/digest]"
   ],
   "Version": [
-    "0.10.7-2"
+    "0.11.3-1"
   ]
 }
