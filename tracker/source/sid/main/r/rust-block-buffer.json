@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-generic-array-0.14+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hybrid-array-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "825e1ba1d84ac9c8e06eecfddf93c6e36c1eeba2741873a4790866afb5f36157 1676 rust-block-buffer_0.10.4-1.dsc 3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71 10538 rust-block-buffer_0.10.4.orig.tar.gz 5977232a486753e7570377614ebb98cffb079d2a8c9993282c0d8e73091f48aa 3012 rust-block-buffer_0.10.4-1.debian.tar.xz"
+    "513a40fd9fb103cd647920208969eb5c3a37e7474d930af841521cc86d2cb5d8 2341 rust-block-buffer_0.12.0-1.dsc cdd35008169921d80bc60d3d0ab416eecb028c4cd653352907921d95084790be 14926 rust-block-buffer_0.12.0.orig.tar.gz 1ee22bcc4594f72db64fb200e201b7b248d94da25d18ef41ba72f08b7dc03b40 3184 rust-block-buffer_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-block-buffer"
   ],
   "Files": [
-    "aaa0d8ca33ea9e40d166bd30afa9766d 1676 rust-block-buffer_0.10.4-1.dsc 023b03cf9968b29253a5dfe62051008d 10538 rust-block-buffer_0.10.4.orig.tar.gz a4f9948feab16d6a2379b06c209c73bb 3012 rust-block-buffer_0.10.4-1.debian.tar.xz"
+    "ca8f1e887ee00666df4e7fb3480c442e 2341 rust-block-buffer_0.12.0-1.dsc 04d0e2d13da3c2675721d7c91257261e 14926 rust-block-buffer_0.12.0.orig.tar.gz 7cc6e410a4d6b313e7d4b1dac0c2a60a 3184 rust-block-buffer_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-hex-literal-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/block-buffer]"
   ],
   "Version": [
-    "0.10.4-1"
+    "0.12.0-1"
   ]
 }
