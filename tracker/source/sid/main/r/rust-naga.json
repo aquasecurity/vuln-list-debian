@@ -9,22 +9,22 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev \u003c!nocheck\u003e, librust-bit-set-0.8+default-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.7) \u003c!nocheck\u003e, librust-cfg-aliases-0.2+default-dev (\u003e= 0.2.1) \u003c!nocheck\u003e, librust-codespan-reporting-0.12+default-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-rustc-hash-1+default-dev \u003c!nocheck\u003e, librust-strum-0.26+default-dev \u003c!nocheck\u003e, librust-strum-0.26+derive-dev \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.4.1) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.87) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.1) \u003c!nocheck\u003e, librust-bit-set-0.8-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.9) \u003c!nocheck\u003e, librust-cfg-aliases-0.2+default-dev (\u003e= 0.2.1) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-codespan-reporting-0.12-dev \u003c!nocheck\u003e, librust-half-2+num-traits-dev (\u003e= 2.5) \u003c!nocheck\u003e, librust-hashbrown-0.16+default-hasher-dev \u003c!nocheck\u003e, librust-hashbrown-0.16+inline-more-dev \u003c!nocheck\u003e, librust-indexmap-2-dev (\u003e= 2.11.4) \u003c!nocheck\u003e, librust-libm-0.2-dev (\u003e= 0.2.6) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.29) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.16) \u003c!nocheck\u003e, librust-once-cell-1+alloc-dev (\u003e= 1.21) \u003c!nocheck\u003e, librust-once-cell-1+race-dev (\u003e= 1.21) \u003c!nocheck\u003e, librust-rustc-hash-1-dev (\u003e= 1.1) \u003c!nocheck\u003e, librust-thiserror-2-dev (\u003e= 2.0.12) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b8c2353f4332af1f563fef46b39ffe9dbe24d2c5c337ee48e51946d2849d6577 2441 rust-naga_24.0.0-3.dsc e380993072e52eef724eddfcde0ed013b0c023c3f0417336ed041aa9f076994e 644372 rust-naga_24.0.0.orig.tar.gz a22193d80fd69da09aaa7ab1d717c282b175cbc9a17240fe5174d8b487553146 3964 rust-naga_24.0.0-3.debian.tar.xz"
+    "30073980b69652f4a318f8af704ff9eca730ddac30ff2f4ace8800618043dd1f 3424 rust-naga_29.0.3-1.dsc 0dd91265cc2454558f659b3b4b9640f0ddb8cc6521277f166b8a8c181c898079 842607 rust-naga_29.0.3.orig.tar.gz 1259227598512fa5255bc2778ecb9ae95477efc2c3ad1354d362ed8a1634ad27 6424 rust-naga_29.0.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-naga"
   ],
   "Files": [
-    "0186963135ce9d23aafde08f6dcccf2b 2441 rust-naga_24.0.0-3.dsc da6838dbccc8e72d1ee54501b3e67ee9 644372 rust-naga_24.0.0.orig.tar.gz 126927dc2dad418560527fb74ebd28ef 3964 rust-naga_24.0.0-3.debian.tar.xz"
+    "3c9c789dd6690bee8a47cd8563c0761e 3424 rust-naga_29.0.3-1.dsc 23c585f2f4a1e3d227bd78566b0e829c 842607 rust-naga_29.0.3.orig.tar.gz 94ed3595828e4f0796d3215f38975664 6424 rust-naga_29.0.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/gfx-rs/wgpu/tree/trunk/naga"
+    "https://github.com/gfx-rs/wgpu"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-diff-0.1+default-dev, librust-env-logger-0.11+default-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.12+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-spirv-0.3+default-dev, librust-spirv-0.3+deserialize-dev, rustc"
+    "dh-cargo, librust-diff-0.1+default-dev, librust-env-logger-0.11-dev, librust-hashbrown-0.16+default-hasher-dev, librust-hashbrown-0.16+inline-more-dev, librust-hashbrown-0.16+serde-dev, librust-itertools-0.14+default-dev, librust-ron-0.12+default-dev, librust-rspirv-0.13+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-spirv-0.4+default-dev, librust-strum+derive-dev, librust-walkdir-2+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/naga]"
   ],
   "Version": [
-    "24.0.0-3"
+    "29.0.3-1"
   ]
 }
