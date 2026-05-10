@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
-    "librust-auth-git2+log-dev, librust-auth-git2-dev"
+    "librust-auth-git2-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, librust-dirs-dev \u003c!nocheck\u003e, librust-git2-dev, librust-terminal-prompt-dev \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, librust-dirs-6+default-dev \u003c!nocheck\u003e, librust-git2-dev (\u003c\u003c 21.0) \u003c!nocheck\u003e, librust-git2-dev (\u003e= 0.15) \u003c!nocheck\u003e, librust-terminal-prompt-0.2+default-dev (\u003e= 0.2.2) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a1db4b53d059d5ccc4b3431478742290cc17e7b88e3f9220da8bd1481ca1dd1e 1772 rust-auth-git2_0.5.8-5.dsc 98a5458d64718ba04197621b3ee15d32e81a0a80e6766ec6d2732d2adb21e46c 20336 rust-auth-git2_0.5.8.orig.tar.xz 9beba9ca39f2453e50ac9f1f432103cf626ccff5db3a2ef91ebc910c5a4e7003 3400 rust-auth-git2_0.5.8-5.debian.tar.xz"
+    "6cc8ceca7380bfa6182e56cfc707aab7f383f7264bf22b2e3590bad9e22cb86d 1803 rust-auth-git2_0.5.8-6.dsc 98a5458d64718ba04197621b3ee15d32e81a0a80e6766ec6d2732d2adb21e46c 20336 rust-auth-git2_0.5.8.orig.tar.xz 3cad6f0083654d459af7e84f88b8fc09a36d57c9af23c1e41afd16dc02fa122f 3228 rust-auth-git2_0.5.8-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-auth-git2"
   ],
   "Files": [
-    "48875f5cb58d9b295875ab422e26a696 1772 rust-auth-git2_0.5.8-5.dsc 75867db1756b83adabb4189238d1b7c4 20336 rust-auth-git2_0.5.8.orig.tar.xz 2e20c3db598808d80f319b32325a5d5d 3400 rust-auth-git2_0.5.8-5.debian.tar.xz"
+    "77487bb4096f1d3ec4db9e8d6d8b89c8 1803 rust-auth-git2_0.5.8-6.dsc 75867db1756b83adabb4189238d1b7c4 20336 rust-auth-git2_0.5.8.orig.tar.xz 8934c08bf43f27590e84215b56443ee2 3228 rust-auth-git2_0.5.8-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-auth-git2"
   ],
   "Package-List": [
-    "librust-auth-git2+log-dev deb rust optional arch=all librust-auth-git2-dev deb rust optional arch=all"
+    "librust-auth-git2-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +57,6 @@
     "https://forgejo.debian.net/rust/rust-auth-git2"
   ],
   "Version": [
-    "0.5.8-5"
+    "0.5.8-6"
   ]
 }
