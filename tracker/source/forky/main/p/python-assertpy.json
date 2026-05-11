@@ -6,25 +6,34 @@
     "python3-assertpy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, pybuild-plugin-pyproject, openstack-pkg-tools, python3-setuptools, python3-all"
+    "debhelper-compat (= 13), dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-pytest"
+    "python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1bce2030a3e631f0b00cd927a7945dbb76fe6356bec6c6f332ed0368ddbb550d 2213 python-assertpy_1.1-1.1.dsc d5cede4f7fe8b9f4ad11ba97cb51a0444d48efba1a6c919d439b0fcb28d31821 48608 python-assertpy_1.1.orig.tar.xz 7117ba516da9580a2c1497992b10227db96f0ddd14880abf63a9b9f115cc2e3d 2184 python-assertpy_1.1-1.1.debian.tar.xz"
+    "f9f9066bfc90f613fb29513015210dd8a8680c22f409e46b2f183f872b186c3e 2479 python-assertpy_1.1-2.dsc d5cede4f7fe8b9f4ad11ba97cb51a0444d48efba1a6c919d439b0fcb28d31821 48608 python-assertpy_1.1.orig.tar.xz 2ab349ff1b2a93735b6be9e69164c80844e4d747f0bf7b648f16195375fbcfc3 2388 python-assertpy_1.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "6ab8523fb5c849306c9aea721b90bbd19cc1b5d3 debian archive/debian/1.1-2 https://git.dgit.debian.org/python-assertpy"
   ],
   "Directory": [
     "pool/main/p/python-assertpy"
   ],
   "Files": [
-    "0efdba5d52039d605b12d5f53feee42b 2213 python-assertpy_1.1-1.1.dsc dc71481e89228d1184194b289e684036 48608 python-assertpy_1.1.orig.tar.xz 322ef37e99570162c093c89c4794362c 2184 python-assertpy_1.1-1.1.debian.tar.xz"
+    "bafe3e71350decc5d87f19a684b92c4d 2479 python-assertpy_1.1-2.dsc dc71481e89228d1184194b289e684036 48608 python-assertpy_1.1.orig.tar.xz a1874a6fce3ef24b91a389c9d65a2c2a 2388 python-assertpy_1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
+  "Git-Tag-Info": [
+    "tag=72e89ed295f5a1e1c17038dce8c1028ea49d572f fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
+  ],
   "Homepage": [
-    "https://github.com/TomerFi/aioswitcher"
+    "https://github.com/assertpy/assertpy"
   ],
   "Maintainer": [
     "Home Assistant Team \u003cteam+homeassistant@tracker.debian.org\u003e"
@@ -42,16 +51,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, pybuild-plugin-autopkgtest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-assertpy"
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-assertpy.git"
   ],
   "Version": [
-    "1.1-1.1"
+    "1.1-2"
   ]
 }
