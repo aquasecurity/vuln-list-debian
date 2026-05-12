@@ -6,16 +6,19 @@
     "liblomiri-action-qt6-1, liblomiri-action-qt1, liblomiri-action-qt6-1-dev, liblomiri-action-qt1-dev, qml6-module-lomiri-action, qml-module-lomiri-action, lomiri-action-api-doc"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libglib2.0-dev, pkgconf, qt6-base-dev, qt6-tools-dev-tools, qt6-declarative-dev, qt6-declarative-dev-tools, qml6-module-qtquick, qml6-module-qttest, qtbase5-dev, qttools5-dev-tools, qtdeclarative5-dev, qtdeclarative5-dev-tools, qml-module-qtquick2, qml-module-qttest, dbus-test-runner, doxygen, graphviz, rdfind, symlinks"
+    "debhelper-compat (= 13), cmake, dbus-test-runner \u003c!nocheck\u003e, libglib2.0-dev, pkgconf, qml-module-qtquick2 \u003c!nocheck\u003e, qml-module-qttest \u003c!nocheck\u003e, qml6-module-qtquick \u003c!nocheck\u003e, qml6-module-qttest \u003c!nocheck\u003e, qt6-base-dev, qt6-declarative-dev, qt6-declarative-dev-tools, qt6-tools-dev-tools, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools, qttools5-dev-tools"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, rdfind \u003c!nodoc\u003e, symlinks \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "18e064c67e99812a61a9a943a41fa3ee1b6f9dd06502632f52f4aa7e0b0b1a46 2878 lomiri-action-api_1.2.1-2.dsc a14a35a2dbfe184ff1683757f4d8ee14619dff9a5203a8c2c86e858c6fff7612 438694 lomiri-action-api_1.2.1.orig.tar.bz2 c4334bda49544836e4743c728ba645ad554fc353f2cbca69e59a0b5c1b776b11 13244 lomiri-action-api_1.2.1-2.debian.tar.xz"
+    "5340aa5613775595e57a2f2b4926667d5fa4d678ee926ef45ab7e45a0218f238 2993 lomiri-action-api_1.2.1-4.dsc a14a35a2dbfe184ff1683757f4d8ee14619dff9a5203a8c2c86e858c6fff7612 438694 lomiri-action-api_1.2.1.orig.tar.bz2 cb3f9aa2b553f38bec6d8b75bf52409c9b89006e6d829facfe7b05159ee66bca 13944 lomiri-action-api_1.2.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lomiri-action-api"
   ],
   "Files": [
-    "9d5102e48ee826e96d39643a680f03f0 2878 lomiri-action-api_1.2.1-2.dsc 142491007f7fa5e9b3a2a6973eab576b 438694 lomiri-action-api_1.2.1.orig.tar.bz2 73602943877b42b7516d31fe120f5fdc 13244 lomiri-action-api_1.2.1-2.debian.tar.xz"
+    "6eb5aabf2b4f77f6c1c70577f59f9a37 2993 lomiri-action-api_1.2.1-4.dsc 142491007f7fa5e9b3a2a6973eab576b 438694 lomiri-action-api_1.2.1.orig.tar.bz2 199f4af181e702e9b88bc5ebb1d67952 13944 lomiri-action-api_1.2.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "lomiri-action-api"
   ],
   "Package-List": [
-    "liblomiri-action-qt1 deb libs optional arch=any liblomiri-action-qt1-dev deb libdevel optional arch=any liblomiri-action-qt6-1 deb libs optional arch=any liblomiri-action-qt6-1-dev deb libdevel optional arch=any lomiri-action-api-doc deb doc optional arch=all qml-module-lomiri-action deb libs optional arch=any qml6-module-lomiri-action deb libs optional arch=any"
+    "liblomiri-action-qt1 deb libs optional arch=any liblomiri-action-qt1-dev deb libdevel optional arch=any liblomiri-action-qt6-1 deb libs optional arch=any liblomiri-action-qt6-1-dev deb libdevel optional arch=any lomiri-action-api-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc qml-module-lomiri-action deb libs optional arch=any qml6-module-lomiri-action deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Uploaders": [
     "Mike Gabriel \u003csunweaver@debian.org\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/ubports-team/lomiri-action-api.git"
   ],
   "Version": [
-    "1.2.1-2"
+    "1.2.1-4"
   ]
 }
