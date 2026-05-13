@@ -3,28 +3,34 @@
     "any all"
   ],
   "Binary": [
-    "libsfml-dev, libsfml-audio3.0, libsfml-graphics3.0, libsfml-network3.0, libsfml-system3.0, libsfml-window3.0, libsfml-doc"
+    "libsfml-dev, libsfml-audio3.1, libsfml-graphics3.1, libsfml-network3.1, libsfml-system3.1, libsfml-window3.1, libsfml-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libcatch2-dev (\u003e= 3.7), libflac-dev, libfreetype-dev, libgl-dev, libminiaudio-dev, libopenal-dev, libstb-dev, libudev-dev [linux-any], libvorbis-dev, libvulkan-dev, libx11-dev, libxcursor-dev, libxi-dev, libxrandr-dev, pkgconf"
+    "debhelper-compat (= 13), ca-certificates \u003c!nocheck\u003e, cmake, libcatch2-dev (\u003e= 3.7), libflac-dev, libfreetype-dev, libgl-dev, libharfbuzz-dev, libmbedtls-dev, libminiaudio-dev, libopenal-dev, libqoi-dev, libsheenbidi-dev, libssh2-1-dev, libstb-dev, libudev-dev [linux-any], libvorbis-dev, libvulkan-dev, libx11-dev, libxcursor-dev, libxi-dev, libxrandr-dev, pkgconf"
   ],
   "Build-Depends-Indep": [
     "doxygen"
   ],
   "Checksums-Sha256": [
-    "86e40c8bdb6286c9a0fe6bcf3ee4384d294f656c68b2197d52e80d3f22b5ec85 2863 libsfml_3.0.2+dfsg-2.dsc 5cb5374226a3db31245e40555fd090cfb10846bef1e5b6f3e6e25b91231acd27 1872628 libsfml_3.0.2+dfsg.orig.tar.xz 3a16f9758c31f98cd430239361a985f2cdd0d9d14776798511650c89ff494166 19392 libsfml_3.0.2+dfsg-2.debian.tar.xz"
+    "2df664ba9f0682429ce631984519f4bb6344ba81463125e209cd5ce230e3d9ab 3109 libsfml_3.1.0+dfsg-3.dsc 3f27480097bcc8ce55e5d7c9e943efa7f0390cc91469e1485eeb159d6087065b 3157080 libsfml_3.1.0+dfsg.orig.tar.xz 83449df8ccf86872ccd2952d4767d05e239b3bc7d640e139714e3a5c753565fa 23204 libsfml_3.1.0+dfsg-3.debian.tar.xz"
   ],
   "Dgit": [
-    "1e31c8e15b4147caa43c7829128f4d5b535706aa debian archive/debian/3.0.2+dfsg-2 https://git.dgit.debian.org/libsfml"
+    "5e547d66ed433df4dfba0508c3192f1a15e2e457 debian archive/debian/3.1.0+dfsg-3 https://git.dgit.debian.org/libsfml"
   ],
   "Directory": [
     "pool/main/libs/libsfml"
   ],
   "Files": [
-    "a43331dc0008b7d9fd7e2f1e5aaf9a94 2863 libsfml_3.0.2+dfsg-2.dsc d76ceb9043b3233c10d4a56c58cfdf6d 1872628 libsfml_3.0.2+dfsg.orig.tar.xz eaf4691f64f8763b405e560b56f55341 19392 libsfml_3.0.2+dfsg-2.debian.tar.xz"
+    "e94e5a1532a90f5466ebd1b718b4d5cd 3109 libsfml_3.1.0+dfsg-3.dsc 3f30c78f662d4db302d423346be57bb1 3157080 libsfml_3.1.0+dfsg.orig.tar.xz e46a925e0ef719861154a4c00152e45c 23204 libsfml_3.1.0+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=9bd15e06eb4e36723395769f8589117bcd67419f fp=f88c6de43699e8f3b3b54c10c7f1676dea2d01ef"
+  ],
+  "Git-Tag-Tagger": [
+    "James Cowgill \u003cjcowgill@debian.org\u003e"
   ],
   "Homepage": [
     "https://www.sfml-dev.org/"
@@ -36,7 +42,7 @@
     "libsfml"
   ],
   "Package-List": [
-    "libsfml-audio3.0 deb libs optional arch=any libsfml-dev deb libdevel optional arch=any libsfml-doc deb doc optional arch=all libsfml-graphics3.0 deb libs optional arch=any libsfml-network3.0 deb libs optional arch=any libsfml-system3.0 deb libs optional arch=any libsfml-window3.0 deb libs optional arch=any"
+    "libsfml-audio3.1 deb libs optional arch=any libsfml-dev deb libdevel optional arch=any libsfml-doc deb doc optional arch=all libsfml-graphics3.1 deb libs optional arch=any libsfml-network3.1 deb libs optional arch=any libsfml-system3.1 deb libs optional arch=any libsfml-window3.1 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,13 +51,13 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, g++, libcatch2-dev, make, pkg-config, xserver-xorg-core, xserver-xorg-video-dummy"
+    "ca-certificates, cmake, g++, libcatch2-dev, make, pkgconf, xserver-xorg-core, xserver-xorg-video-dummy"
   ],
   "Uploaders": [
     "James Cowgill \u003cjcowgill@debian.org\u003e"
@@ -63,6 +69,6 @@
     "https://salsa.debian.org/games-team/libsfml.git"
   ],
   "Version": [
-    "3.0.2+dfsg-2"
+    "3.1.0+dfsg-3"
   ]
 }
