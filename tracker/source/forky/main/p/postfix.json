@@ -6,16 +6,16 @@
     "postfix, postfix-doc, postfix-ldap, postfix-lmdb, postfix-cdb, postfix-pcre, postfix-mongodb, postfix-mysql, postfix-pgsql, postfix-sqlite"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-libmysqlclient-dev, groff-base, html2text, libcdb-dev, libdb-dev, libicu-dev, libldap-dev, liblmdb-dev, libmongoc-dev [linux-any], libnsl-dev | libc6-dev (\u003c\u003c 2.37-15.1), libpcre2-dev, libpq-dev, libtlsrpt0-dev, libsasl2-dev, libsqlite3-dev, libssl-dev, patch, pkgconf, po-debconf, txt2man"
+    "debhelper-compat (= 13), default-libmysqlclient-dev, dh-sequence-installsysusers, groff-base, html2text, libcdb-dev, libdb-dev, libicu-dev, libldap-dev, liblmdb-dev, libmongoc-dev [linux-any], libnsl-dev | libc6-dev (\u003c\u003c 2.37-15.1), libpcre2-dev, libpq-dev, libtlsrpt0-dev, libsasl2-dev, libsqlite3-dev, libssl-dev, patch, pkgconf, po-debconf, txt2man"
   ],
   "Checksums-Sha256": [
-    "e4ef0eecb07a83e5f467786650b19b9b55e9d57ce0b59bd955649b721ad9f8a2 3259 postfix_3.11.0-4.dsc 6367dcc6b9d6b444c4a1d09e9fda3abf1479d88c9c434a31cd5cfe06f9c36627 5279929 postfix_3.11.0.orig.tar.gz cc1c8627618e510dec21abd714fb8fce9b6d73399ae798f15ecf1f178b6129e2 220 postfix_3.11.0.orig.tar.gz.asc a8d66786f38981f438adf945f9e7f81eb56f0724c160ed703ea6c30142385fec 202648 postfix_3.11.0-4.debian.tar.xz"
+    "16fd3ae492a025fc91ef7c98a9221df4336a272005b5ec6483b6a138a6037673 3294 postfix_3.11.2-4.dsc daed65b08c9288cdb386a914f3e52cdddd44935407b5ce5aee8bcc3aa4207778 5282053 postfix_3.11.2.orig.tar.gz 7deed0e6f2a77eade9656e7087ef3765b4460301408f794806f470c857ccbc86 220 postfix_3.11.2.orig.tar.gz.asc 42b5535adecda5d5d503f345267adac7b3ca306fbbfed25adce8b232604cc439 201888 postfix_3.11.2-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postfix"
   ],
   "Files": [
-    "defc0921cd9af6440df11d7079af1112 3259 postfix_3.11.0-4.dsc 626eb767c3e501de06be4930f2e184c8 5279929 postfix_3.11.0.orig.tar.gz 992fc05de40e9857bf3f5e4827ffcc73 220 postfix_3.11.0.orig.tar.gz.asc a7b83a6fed89599a08789267eb947e6d 202648 postfix_3.11.0-4.debian.tar.xz"
+    "968091f960b603fe5d72faf15dd51cca 3294 postfix_3.11.2-4.dsc 89b03d2e6c2c6278e3bbf2d07947d79a 5282053 postfix_3.11.2.orig.tar.gz 97229f24b15f12b6d48679282838ad16 220 postfix_3.11.2.orig.tar.gz.asc d00d2efb34c694c954e58bf0340489df 201888 postfix_3.11.2-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postfix"
   ],
   "Package-List": [
-    "postfix deb mail optional arch=any postfix-cdb deb mail optional arch=any postfix-doc deb doc optional arch=all postfix-ldap deb mail optional arch=any postfix-lmdb deb mail optional arch=any postfix-mongodb deb mail optional arch=linux-any postfix-mysql deb mail optional arch=any postfix-pcre deb mail optional arch=any postfix-pgsql deb mail optional arch=any postfix-sqlite deb mail optional arch=any"
+    "postfix deb mail optional arch=any postfix-cdb deb oldlibs optional arch=any postfix-doc deb doc optional arch=all postfix-ldap deb mail optional arch=any postfix-lmdb deb oldlibs optional arch=any postfix-mongodb deb mail optional arch=linux-any postfix-mysql deb mail optional arch=any postfix-pcre deb mail optional arch=any postfix-pgsql deb mail optional arch=any postfix-sqlite deb mail optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postfix-team/postfix-dev.git"
   ],
   "Version": [
-    "3.11.0-4"
+    "3.11.2-4"
   ]
 }
