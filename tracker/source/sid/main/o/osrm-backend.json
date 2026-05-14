@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "amd64 arm64 loong64 ppc64el riscv64 all"
+    "any all"
   ],
   "Binary": [
     "osrm-backend, osrm-backend-service, libosrm26, libosrm-dev"
@@ -9,22 +9,22 @@
     "debhelper-compat (= 13), cmake, libbz2-dev, libboost-date-time-dev, libboost-iostreams-dev, libboost-program-options-dev, libboost-thread-dev, libboost-test-dev, libexpat1-dev, flatbuffers-compiler, libflatbuffers-dev, libfmt-dev, liblua5.4-dev, libosmium2-dev, libprotozero-dev, libvtzero-dev, rapidjson-dev, libtbb-dev, pkgconf, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "a3de014ab3ae89dbd1ebade7adff347c39125731c6bfdf3985c3bbd445cfa840 2964 osrm-backend_26.4.1+dfsg2-2.dsc c725baa7d7675a290bb359f1c8ae05278df76ae6d9276bd1cb8cb02d76cc065d 4860220 osrm-backend_26.4.1+dfsg2.orig.tar.xz 6befc78b2faaf989473babd256aeb2c95c6fad5e5ee5cde78352f2fd8b5b01d0 692528 osrm-backend_26.4.1+dfsg2-2.debian.tar.xz"
+    "c5bdfb4590bdb7880fed4d434de42317487eb7f53f4056613979a927ae37f8f8 2840 osrm-backend_26.4.1+dfsg2-3.dsc c725baa7d7675a290bb359f1c8ae05278df76ae6d9276bd1cb8cb02d76cc065d 4860220 osrm-backend_26.4.1+dfsg2.orig.tar.xz a9ef5a4c91ff4c61ba12b7b7e78db247995402114935e765cd5115f09a9bbb05 692884 osrm-backend_26.4.1+dfsg2-3.debian.tar.xz"
   ],
   "Dgit": [
-    "521e9ce42ee163b778f498aff160029b72b173ba debian archive/debian/26.4.1+dfsg2-2 https://git.dgit.debian.org/osrm-backend"
+    "ee0d8187a0db34a56ae30a160558e9269e68a727 debian archive/debian/26.4.1+dfsg2-3 https://git.dgit.debian.org/osrm-backend"
   ],
   "Directory": [
     "pool/main/o/osrm-backend"
   ],
   "Files": [
-    "7bf6314c1b7a6f0fb065e88266172437 2964 osrm-backend_26.4.1+dfsg2-2.dsc 0cbdf742e740f1426c31c2f5f2734a41 4860220 osrm-backend_26.4.1+dfsg2.orig.tar.xz e6f55e3fb5169556d99172c919e7195c 692528 osrm-backend_26.4.1+dfsg2-2.debian.tar.xz"
+    "563d0b3159118e6d82e79a307bc05113 2840 osrm-backend_26.4.1+dfsg2-3.dsc 0cbdf742e740f1426c31c2f5f2734a41 4860220 osrm-backend_26.4.1+dfsg2.orig.tar.xz 62e5e7d2abaffce768b37e58b5bdbb4d 692884 osrm-backend_26.4.1+dfsg2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=1e5686797e88f15b1d083c0952495cf8f2076706 fp=bbbd45ea818ab86ff67e7285d3e17383cfa7ff06"
+    "tag=4124c07b0577b9dcc4067aee4a0c1ccf2cfbe8f2 fp=bbbd45ea818ab86ff67e7285d3e17383cfa7ff06"
   ],
   "Git-Tag-Tagger": [
     "Anton Gladky \u003cgladk@debian.org\u003e"
@@ -39,7 +39,7 @@
     "osrm-backend"
   ],
   "Package-List": [
-    "libosrm-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64el,riscv64 libosrm26 deb libs optional arch=amd64,arm64,loong64,ppc64el,riscv64 osrm-backend deb science optional arch=amd64,arm64,loong64,ppc64el,riscv64 osrm-backend-service deb science optional arch=all"
+    "libosrm-dev deb libdevel optional arch=any libosrm26 deb libs optional arch=any osrm-backend deb science optional arch=any osrm-backend-service deb science optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -54,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "curl"
+    "curl, jq"
   ],
   "Uploaders": [
     "Anton Gladky \u003cgladk@debian.org\u003e"
@@ -66,6 +66,6 @@
     "https://salsa.debian.org/science-team/osrm-backend.git"
   ],
   "Version": [
-    "26.4.1+dfsg2-2"
+    "26.4.1+dfsg2-3"
   ]
 }
