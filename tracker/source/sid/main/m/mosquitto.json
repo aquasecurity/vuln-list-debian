@@ -6,25 +6,25 @@
     "mosquitto, mosquitto-dev, libmosquitto1, libmosquitto-dev, libmosquittopp1, libmosquittopp-dev, mosquitto-clients"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-installsysusers, cmake, libcjson-dev, libdlt-dev, libpicohttpparser-dev, libssl-dev, libsystemd-dev, libwrap0-dev, libadns1-dev, libsqlite3-dev, libgtest-dev, libgmock-dev, libcunit1-dev, libargon2-dev, libmicrohttpd-dev, pkgconf, uthash-dev, xsltproc, docbook-xsl"
+    "cmake, debhelper-compat (= 13), dh-sequence-installsysusers, docbook-xsl, libadns1-dev, libargon2-dev, libc-ares-dev, libcjson-dev, libcunit1-dev, libdlt-dev, libedit-dev, libgmock-dev, libgtest-dev, libmicrohttpd-dev, libpicohttpparser-dev, libsqlite3-dev, libssl-dev, libsystemd-dev, libwrap0-dev, pkgconf, python3-all, python3-psutil, uthash-dev, xsltproc"
   ],
   "Checksums-Sha256": [
-    "f43635fb2e4cf2ec06632ea252842f9b73ecdeb6e88cceebe02692fce5d0ca99 3105 mosquitto_2.1.2-2.dsc a8e37cc4c1d4141e56c5a8729c5fa36b1f0b1ca95378a12131d68f0509de122a 2732027 mosquitto_2.1.2.orig.tar.gz 981c0312df84abf387a4016832fea1f37d26790e12b84149ac437df53c19a230 28908 mosquitto_2.1.2-2.debian.tar.xz"
+    "c63805a0498544c801b7f186718bf749f41525b01834d8a23e9405c2cd04d5df 3098 mosquitto_2.1.2-3.dsc a8e37cc4c1d4141e56c5a8729c5fa36b1f0b1ca95378a12131d68f0509de122a 2732027 mosquitto_2.1.2.orig.tar.gz ae5bfab0779668eaa1566ef0f8b342be0f8e4006f3630bcb82cd914740c29687 29640 mosquitto_2.1.2-3.debian.tar.xz"
   ],
   "Dgit": [
-    "b4e4cd75b91f5a24d94dcf197c280a605594ef94 debian archive/debian/2.1.2-2 https://git.dgit.debian.org/mosquitto"
+    "fa9ac70f714ad8e462c23446da257ce9dd604337 debian archive/debian/2.1.2-3 https://git.dgit.debian.org/mosquitto"
   ],
   "Directory": [
     "pool/main/m/mosquitto"
   ],
   "Files": [
-    "1c85c9e6d35779136eed3a7ba240e96e 3105 mosquitto_2.1.2-2.dsc a5c57593e38b78927001864dafdba2de 2732027 mosquitto_2.1.2.orig.tar.gz dda2be91ae6fc67c1381a9faf530d519 28908 mosquitto_2.1.2-2.debian.tar.xz"
+    "e9dee762407236df86cdcf32f9d6a6b5 3098 mosquitto_2.1.2-3.dsc a5c57593e38b78927001864dafdba2de 2732027 mosquitto_2.1.2.orig.tar.gz 139cd020c655698146dccfd0364ac865 29640 mosquitto_2.1.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=b6bfa59d702989bb0c2d08980f911a8a26fa5346 fp=1f2c95ccc17173ae68f06759fbe08da64bf78aa9"
+    "tag=4994025dc99b4d959f0069edb31f36bb60399c3e fp=1f2c95ccc17173ae68f06759fbe08da64bf78aa9"
   ],
   "Git-Tag-Tagger": [
     "Joachim Zobel \u003cjz-2017@heute-morgen.de\u003e"
@@ -54,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "g++, gcc, libc6-dev, libcjson-dev, libedit-dev, libssl-dev, openssl, python3, python3-psutil"
+    "@builddeps@, build-essential"
   ],
   "Uploaders": [
     "Philippe Coval \u003crzr@users.sf.net\u003e, Roger A. Light \u003croger@atchoo.org\u003e, Joachim Zobel \u003cjz-2017@heute-morgen.de\u003e"
@@ -66,6 +66,6 @@
     "https://salsa.debian.org/debian-iot-team/mosquitto/ -b debian/master"
   ],
   "Version": [
-    "2.1.2-2"
+    "2.1.2-3"
   ]
 }
