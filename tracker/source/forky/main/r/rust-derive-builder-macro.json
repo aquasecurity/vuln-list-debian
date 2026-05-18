@@ -6,19 +6,25 @@
     "librust-derive-builder-macro-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-derive-builder-core-0.20.1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.15-~~) \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev (\u003e= 2.0.15-~~) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.15-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-derive-builder-core-0.20+default-dev (\u003c\u003c 0.20.3) \u003c!nocheck\u003e, librust-derive-builder-core-0.20+default-dev (\u003e= 0.20.2) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.15) \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev (\u003e= 2.0.15) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.15) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0b25570aee34ba370fea2ffb9d3a40223d73a0ef8b3fbfe88afb25db1d72ffb5 1953 rust-derive-builder-macro_0.20.1-1.dsc 4abae7035bf79b9877b779505d8cf3749285b80c43941eda66604841889451dc 6363 rust-derive-builder-macro_0.20.1.orig.tar.gz 1a4f26b91d2bf321d7640905626f35a32ec87f20e51be17f4cfe9cb22441c329 2968 rust-derive-builder-macro_0.20.1-1.debian.tar.xz"
+    "eae90ea1803a227883ca05ab49c66dc1e41350552da6567965cfe30415f194c3 2660 rust-derive-builder-macro_0.20.2-1.dsc ab63b0e2bf4d5928aff72e83a7dace85d7bba5fe12dcc3c5a572d78caffd3f3c 6360 rust-derive-builder-macro_0.20.2.orig.tar.gz 14c4d7996a4f3c2c25ec657ba9025c1a54c186ac1f88253a08ff3d89d4142add 3064 rust-derive-builder-macro_0.20.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-derive-builder-macro"
   ],
   "Files": [
-    "0d83d949824133375db76b9506c6aa2c 1953 rust-derive-builder-macro_0.20.1-1.dsc 6a3c2ac363a70ac9423e270c7e40b0d3 6363 rust-derive-builder-macro_0.20.1.orig.tar.gz fed7ba4c9d02fdef02a58c8053f0d70c 2968 rust-derive-builder-macro_0.20.1-1.debian.tar.xz"
+    "2df0fea840429ae7dc406b7764315585 2660 rust-derive-builder-macro_0.20.2-1.dsc 0c7e87f9498c86b92988dc9f251f941b 6360 rust-derive-builder-macro_0.20.2.orig.tar.gz bc8a57bb486a17299800e0bd6fd85306 3064 rust-derive-builder-macro_0.20.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/colin-kiegel/rust-derive-builder"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/derive-builder-macro"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/derive-builder-macro]"
   ],
   "Version": [
-    "0.20.1-1"
+    "0.20.2-1"
   ]
 }

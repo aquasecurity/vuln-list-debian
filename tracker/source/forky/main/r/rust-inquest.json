@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev, librust-chrono-0.4+default-dev, librust-chrono-0.4+serde-dev, librust-clap-4+default-dev (\u003e= 4.5), librust-clap-4+derive-dev (\u003e= 4.5), librust-clap-4+env-dev (\u003e= 4.5), librust-clap-complete-4+default-dev, librust-console+default-dev (\u003c\u003c 0.17), librust-console+default-dev (\u003e= 0.15), librust-glob-0.3+default-dev, librust-indicatif+default-dev (\u003c\u003c 0.19), librust-indicatif+default-dev (\u003e= 0.17), librust-memmap2-0.9+default-dev, librust-num-cpus-1+default-dev (\u003e= 1.16), librust-regex-1+default-dev, librust-rusqlite+default-dev (\u003c\u003c 0.40), librust-rusqlite+default-dev (\u003e= 0.29), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-ini-0.2+default-dev, librust-subunit-0.3+default-dev, librust-tempfile-3+default-dev (\u003e= 3.13), librust-thiserror-2+default-dev, librust-toml+default-dev (\u003c\u003c 2), librust-toml+default-dev (\u003e= 0.9)"
+    "cargo:native, rustc:native, libstd-rust-dev, librust-anyhow-1+default-dev, librust-chrono-0.4+default-dev, librust-chrono-0.4+serde-dev, librust-clap-4+default-dev (\u003e= 4.5), librust-clap-4+derive-dev (\u003e= 4.5), librust-clap-4+env-dev (\u003e= 4.5), librust-clap-complete-4+default-dev, librust-console+default-dev (\u003c\u003c 0.17), librust-console+default-dev (\u003e= 0.15), librust-flate2-1+default-dev, librust-glob-0.3+default-dev, librust-indicatif+default-dev (\u003c\u003c 0.19), librust-indicatif+default-dev (\u003e= 0.17), librust-libc-0.2+default-dev, librust-memmap2-0.9+default-dev, librust-num-cpus-1+default-dev (\u003e= 1.16), librust-quick-junit+default-dev (\u003c\u003c 0.7), librust-quick-junit+default-dev (\u003e= 0.5), librust-regex-1+default-dev, librust-rusqlite+default-dev (\u003c\u003c 0.40), librust-rusqlite+default-dev (\u003e= 0.29), librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-ini-0.2+default-dev, librust-serde-json-1+default-dev, librust-subunit-0.3+default-dev, librust-tempfile-3+default-dev (\u003e= 3.13), librust-thiserror-2+default-dev, librust-toml+default-dev (\u003c\u003c 2), librust-toml+default-dev (\u003e= 0.9), librust-tracing-0.1+default-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-tracing-subscriber-0.3+fmt-dev"
   ],
   "Checksums-Sha256": [
-    "e79ea4d6cec29a100727e59f4e4ab686efad0c4056d371b5a8fc059c91551ad1 3149 rust-inquest_0.1.2-2.dsc 214aaf3a29b7313f8bebd2659f1ce6f15819019d6ddc19359a3064b08a9c10cd 132957 rust-inquest_0.1.2.orig.tar.gz e7fd1f953bea4ca3d3d76449c2e6ab8888d46dc0ba797667e2d2a4c5ba0d4b97 3840 rust-inquest_0.1.2-2.debian.tar.xz"
+    "86e375b02c120264ad362847bd4a782f21de1178f0bda241589d5e91ecbb8f39 3261 rust-inquest_0.1.5-2.dsc 78ab8892dbb44070ccec4d2ba9a76dd04cf37851ea6cb0ae23a4413db3a980a0 319520 rust-inquest_0.1.5.orig.tar.gz 81976a5abb098130af4194e310ee3f3cae19bd3af5d440ab3db90bee2c299c39 5028 rust-inquest_0.1.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-inquest"
   ],
   "Files": [
-    "db8c076dd7faa1c892e6644cd9c4b345 3149 rust-inquest_0.1.2-2.dsc 52744fc0230ddee4e9c9edd76652211a 132957 rust-inquest_0.1.2.orig.tar.gz 9cd3b2f16ea22c7feb21cc6a991271d0 3840 rust-inquest_0.1.2-2.debian.tar.xz"
+    "33de04fc01ff062ddc82ff4ffa86cc7f 3261 rust-inquest_0.1.5-2.dsc 71cd466e8c6ab7a772fbcfca0808a8a1 319520 rust-inquest_0.1.5.orig.tar.gz 8806d4630752fc0c8518e253e355fed1 5028 rust-inquest_0.1.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-http-body-util-0.1+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/inquest]"
   ],
   "Version": [
-    "0.1.2-2"
+    "0.1.5-2"
   ]
 }
