@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-util-0.1+default-dev (\u003e= 0.1.3) \u003c!nocheck\u003e, librust-reqsign-core-2+default-dev \u003c!nocheck\u003e, librust-reqwest-0.12-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-channel-0.3+default-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-util-0.1+default-dev (\u003e= 0.1.3) \u003c!nocheck\u003e, librust-reqsign-core-3+default-dev \u003c!nocheck\u003e, librust-reqwest-0.13-dev (\u003e= 0.13.1) \u003c!nocheck\u003e, librust-wasm-bindgen-futures-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "72bfd082c19a00d83dc64ec46aaab8798fafe7b1bce34d40ae4fe27e1b6e2b39 2242 rust-reqsign-http-send-reqwest_2.0.0-1.dsc 5ff9bb6507b23175dbda8a91ae1a0ad2317471f6ee117e500d1cf6b9ed1eeb0b 17496 rust-reqsign-http-send-reqwest_2.0.0.orig.tar.gz 9fab4b33252a110fa8865c2472c653c3f31d8be7a7e212de4a4603f5975ef1a8 2092 rust-reqsign-http-send-reqwest_2.0.0-1.debian.tar.xz"
+    "cc871bb4047de2e2826c8af3f0c6b2888dea2880cc03665207c4a5264da4ee69 2963 rust-reqsign-http-send-reqwest_4.0.0-1.dsc 46db7dfc9632310d2bdc7978c2e217187cd814842da66b3daf20a45f4e8a1e5e 22683 rust-reqsign-http-send-reqwest_4.0.0.orig.tar.gz e1df781c27659a9351d7e98cf4768dd231f542da435cc3a949e19012413be0a5 2160 rust-reqsign-http-send-reqwest_4.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-reqsign-http-send-reqwest"
   ],
   "Files": [
-    "e4296e87b333fd179a30ba2cd2032985 2242 rust-reqsign-http-send-reqwest_2.0.0-1.dsc 518c0abaf39407b65665860c08068080 17496 rust-reqsign-http-send-reqwest_2.0.0.orig.tar.gz cf4a6ed46c486138b8e7e2923b91e7b7 2092 rust-reqsign-http-send-reqwest_2.0.0-1.debian.tar.xz"
+    "3092e89abe915aeac9b27670520ade75 2963 rust-reqsign-http-send-reqwest_4.0.0-1.dsc 65bceb2beb002bb1a7382f348a5e879c 22683 rust-reqsign-http-send-reqwest_4.0.0.orig.tar.gz 74791d5e3b51485b5b2bd4318919a642 2160 rust-reqsign-http-send-reqwest_4.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-reqwest-0.12+default-tls-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, rustc"
+    "dh-cargo, librust-reqwest-0.13+default-tls-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-wasm-bindgen-test-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Antonin Delpeuch \u003cantonin@delpeuch.eu\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/reqsign-http-send-reqwest]"
   ],
   "Version": [
-    "2.0.0-1"
+    "4.0.0-1"
   ]
 }
