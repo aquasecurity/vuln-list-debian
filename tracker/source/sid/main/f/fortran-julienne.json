@@ -6,16 +6,16 @@
     "libfortran-julienne-dev, libfortran-julienne0, libfortran-julienne-utils"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-fortran, flang-21 [amd64 arm64 armhf i386 loong64 ppc64el riscv64 powerpc ppc64 sparc64 s390x], lfortran [amd64 arm64 armhf i386 loong64 ppc64el riscv64 powerpc ppc64 sparc64 s390x], gfortran, fortran-fpm, libfortran-assert-dev, libclang-rt-21-dev [amd64 arm64 loong64 ppc64el riscv64 ppc64 sparc64], ford"
+    "debhelper-compat (= 13), dh-fortran, dh-builtusing, flang-22 [amd64 arm64 loong64 ppc64el riscv64 ppc64 sparc64], lfortran [amd64 arm64 loong64 ppc64el riscv64 ppc64 sparc64], gfortran, fortran-fpm, libfortran-assert-dev, ford, patchelf, chrpath"
   ],
   "Checksums-Sha256": [
-    "a1e69d3bd56516adada9d4cb20336c791af6c98ce3358c472014974243886db7 2526 fortran-julienne_3.6.2-7.dsc ac5718748cd73c8adfb0f5f38c7c2474c692c448ff5233a3dfc1b4c131903c5c 53272 fortran-julienne_3.6.2.orig.tar.gz 7da4c2898539bfce11dca2587bd147c2a12c3e299f39df20bb1d9a9aa5ba3d25 224608 fortran-julienne_3.6.2-7.debian.tar.xz"
+    "7a3290caaa2540c6c1f60782ccf5d4d42c03946ceb19414ac072d8c4dc90a583 2461 fortran-julienne_3.6.2-8.dsc ac5718748cd73c8adfb0f5f38c7c2474c692c448ff5233a3dfc1b4c131903c5c 53272 fortran-julienne_3.6.2.orig.tar.gz 2f9b4b8c3da15f37a2b5dc509657701a9b0225f5c86129869bb30a7d7ec34ca4 224920 fortran-julienne_3.6.2-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fortran-julienne"
   ],
   "Files": [
-    "af779601c47b363d82ab67e28298a9c4 2526 fortran-julienne_3.6.2-7.dsc 49e9a3e83d484c9d331749ea84b273f6 53272 fortran-julienne_3.6.2.orig.tar.gz 7d9d5c0418776c1158436c162b2e84cd 224608 fortran-julienne_3.6.2-7.debian.tar.xz"
+    "36e80eb24d80c9d8166c92539d2fcb7c 2461 fortran-julienne_3.6.2-8.dsc 49e9a3e83d484c9d331749ea84b273f6 53272 fortran-julienne_3.6.2.orig.tar.gz 1e9732ebc50705e47eb926e9b12eccb4 224920 fortran-julienne_3.6.2-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,9 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
   "Uploaders": [
     "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
   ],
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/science-team/fortran-julienne.git -b debian/latest"
   ],
   "Version": [
-    "3.6.2-7"
+    "3.6.2-8"
   ]
 }
