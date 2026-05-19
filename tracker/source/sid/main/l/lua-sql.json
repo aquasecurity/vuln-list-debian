@@ -6,16 +6,16 @@
     "lua-sql-sqlite3, lua-sql-sqlite3-dev, lua-sql-postgres, lua-sql-postgres-dev, lua-sql-mysql, lua-sql-mysql-dev, lua-sql-odbc, lua-sql-odbc-dev, lua-sql-duckdb, lua-sql-duckdb-dev, lua-sql-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-lua, default-libmysqlclient-dev, libduckdb-dev, libpq-dev, libsqlite3-dev, unixodbc-dev"
+    "debhelper-compat (= 13), dh-lua, default-libmysqlclient-dev, libduckdb-dev [amd64 arm64 loong64 ppc64el riscv64], libpq-dev, libsqlite3-dev, unixodbc-dev"
   ],
   "Checksums-Sha256": [
-    "da32a4dfe796fd7de2c126cda26a01e9a0b3dc2ce4c4222cec8c08ce784cff99 2095 lua-sql_2.8.1-2.dsc 4c5c890b53c5c085329e6d152f1f711c4bbc79234f85ed4371646802c91093a4 118704 lua-sql_2.8.1.orig.tar.gz a8eb65837a887de9457779a92a4f100f5c2e47ed166a57aed6e489879f9a2887 5556 lua-sql_2.8.1-2.debian.tar.xz"
+    "8976cabd29aecd3417652980ca6826d9d6f78d61b54f91f54da5a70c46880e97 2197 lua-sql_2.8.1-3.dsc 4c5c890b53c5c085329e6d152f1f711c4bbc79234f85ed4371646802c91093a4 118704 lua-sql_2.8.1.orig.tar.gz fc842513c0207cf0c4ed68d0e1ea123280dd9312aa83653d4ff99d413b98d45c 5720 lua-sql_2.8.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lua-sql"
   ],
   "Files": [
-    "3e6f6fd67e3276f6711fe5454007e3eb 2095 lua-sql_2.8.1-2.dsc 2d122601a59e37148cad906205b95b36 118704 lua-sql_2.8.1.orig.tar.gz f72854ff0fd3d99410249c05075bfb5c 5556 lua-sql_2.8.1-2.debian.tar.xz"
+    "86ced3f35d5077df8344324d29db9c42 2197 lua-sql_2.8.1-3.dsc 2d122601a59e37148cad906205b95b36 118704 lua-sql_2.8.1.orig.tar.gz 758fb775b814ff6f6ef2488af4e83295 5720 lua-sql_2.8.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "lua-sql"
   ],
   "Package-List": [
-    "lua-sql-doc deb doc optional arch=all lua-sql-duckdb deb interpreters optional arch=any lua-sql-duckdb-dev deb libdevel optional arch=any lua-sql-mysql deb interpreters optional arch=any lua-sql-mysql-dev deb libdevel optional arch=any lua-sql-odbc deb interpreters optional arch=any lua-sql-odbc-dev deb libdevel optional arch=any lua-sql-postgres deb interpreters optional arch=any lua-sql-postgres-dev deb libdevel optional arch=any lua-sql-sqlite3 deb interpreters optional arch=any lua-sql-sqlite3-dev deb libdevel optional arch=any"
+    "lua-sql-doc deb doc optional arch=all lua-sql-duckdb deb interpreters optional arch=amd64,arm64,loong64,ppc64el,riscv64 lua-sql-duckdb-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64el,riscv64 lua-sql-mysql deb interpreters optional arch=any lua-sql-mysql-dev deb libdevel optional arch=any lua-sql-odbc deb interpreters optional arch=any lua-sql-odbc-dev deb libdevel optional arch=any lua-sql-postgres deb interpreters optional arch=any lua-sql-postgres-dev deb libdevel optional arch=any lua-sql-sqlite3 deb interpreters optional arch=any lua-sql-sqlite3-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/lua-team/lua-sql.git"
   ],
   "Version": [
-    "2.8.1-2"
+    "2.8.1-3"
   ]
 }
