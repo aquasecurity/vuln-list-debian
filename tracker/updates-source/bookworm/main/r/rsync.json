@@ -6,10 +6,10 @@
     "rsync"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libacl1-dev, libpopt-dev, liblz4-dev, libxxhash-dev (\u003e= 0.8), libzstd-dev (\u003e= 1.4), zlib1g-dev, libssl-dev, python3:native, python3-cmarkgfm:native"
+    "debhelper-compat (= 13), libacl1-dev, libpopt-dev, liblz4-dev, libxxhash-dev (\u003e= 0.8), libzstd-dev (\u003e= 1.4), zlib1g-dev, libssl-dev, python3:native, python3-cmarkgfm:native, acl \u003c!nocheck\u003e, attr \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3d822f7e0df140b77aa27acecefe8500c8ff5f325b9a8b4737db877bb201aefe 2322 rsync_3.2.7-1+deb12u2.dsc 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb 1149787 rsync_3.2.7.orig.tar.gz 8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae 195 rsync_3.2.7.orig.tar.gz.asc 778ee982c2b340da1714a88adf7b3c92165c962cc765eacb12bca6ec7cafbc24 35820 rsync_3.2.7-1+deb12u2.debian.tar.xz"
+    "c41380342e40579738251f538868a5d0c09134010f176d2d11b05e353f95b950 2556 rsync_3.2.7-1+deb12u5.dsc 4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb 1149787 rsync_3.2.7.orig.tar.gz 8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae 195 rsync_3.2.7.orig.tar.gz.asc cc31f8e90ff3e9f4553b501c3e2dec4b6b9017f189bbafdc2366d71fc783d5b3 99476 rsync_3.2.7-1+deb12u5.debian.tar.xz"
   ],
   "Directory": [
     "pool/updates/main/r/rsync"
@@ -42,7 +42,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, build-essential"
+    "@builddeps@, adduser, build-essential, diffoscope, openssh-server, shunit2"
   ],
   "Uploaders": [
     "Samuel Henrique \u003csamueloph@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/rsync.git"
   ],
   "Version": [
-    "3.2.7-1+deb12u2"
+    "3.2.7-1+deb12u5"
   ]
 }
