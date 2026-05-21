@@ -3,22 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "libzeroc-ice-dev, libzeroc-ice3.7-java, libzeroc-ice3.7t64, libzeroc-icestorm3.7t64, php-zeroc-ice, python3-zeroc-ice, zeroc-glacier2, zeroc-ice-all-dev, zeroc-ice-all-runtime, zeroc-ice-compilers, zeroc-ice-slice, zeroc-ice-utils, zeroc-icegridgui, zeroc-icebox, zeroc-icegrid, zeroc-icepatch2, zeroc-icebridge"
+    "libzeroc-ice-dev, libzeroc-ice3.8, zeroc-icestorm, php-zeroc-ice, python3-zeroc-ice, zeroc-glacier2, zeroc-ice-slice, zeroc-ice-utils, zeroc-dsnode, zeroc-icebox, zeroc-icegrid, zeroc-icebridge, zeroc-ice-compilers, zeroc-ice-all-dev, zeroc-ice-all-runtime"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper, debhelper-compat (= 10), dh-exec, dh-php (\u003e= 0.20), dh-python, javahelper, libbluetooth-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64], libbz2-dev, libcrypt-dev, libdbus-1-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64], libedit-dev, libexpat1-dev, liblmdb-dev, libmcpp-dev, libssl-dev, libsystemd-dev, locales-all, maven-repo-helper (\u003e= 1.8), openssl, php-all-dev (\u003e= 2:95~), php-cli, python3, python3-dev, python3-setuptools, python3-passlib"
-  ],
-  "Build-Depends-Indep": [
-    "default-jdk, gradle (\u003e= 2), gradle-ice-builder-plugin (\u003e= 1.3.13), libjgoodies-forms-java (\u003e= 1.6.0), libjgoodies-looks-java (\u003e= 2.5.2)"
+    "debhelper, debhelper-compat (= 13), dh-exec, dh-php (\u003e= 0.20), dh-python, libbluetooth-dev [!hurd-i386], libbz2-dev, libcrypt-dev, libdbus-1-dev [!hurd-i386], libedit-dev, libexpat1-dev, liblmdb-dev, libmcpp-dev, libssl-dev, libsystemd-dev, locales-all, openssl, php-all-dev, php-cli, python3 (\u003e= 3.12) \u003c!nopython\u003e, python3-dev (\u003e= 3.12) \u003c!nopython\u003e, python3-setuptools, python3-passlib"
   ],
   "Checksums-Sha256": [
-    "7f4bd04729a37f1748cf7f98b356a86133686fcf9f3c799c8d00bc2737021d46 3560 zeroc-ice_3.7.10-4.dsc eb1c545cf679facdd07ab45e85ad9f87f2ffc84d72687eeeea2e4e490a6d31c8 6414856 zeroc-ice_3.7.10.orig.tar.xz cb29a14dfac9b60b424caaf68999f2efe1f33940e21230af7988ba426df0679c 30604 zeroc-ice_3.7.10-4.debian.tar.xz"
+    "ae9e47daf1a11656ea9ad0150c7706279e842210621f0a192a95d98be23c9beb 3149 zeroc-ice_3.8.1-2.dsc 5ea31fa7dd87af2b36d5f200fa291c29e852ebb940464fe7e995c19929d6f7c8 4218495 zeroc-ice_3.8.1.orig.tar.gz f1282332d6f009f46837a0f783e1ab52b679180e68bcca042ef20036ae9b5123 25052 zeroc-ice_3.8.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/z/zeroc-ice"
   ],
   "Files": [
-    "f3f76755e42c9618a879e22d554bd59b 3560 zeroc-ice_3.7.10-4.dsc 4d107c30168ac707d380458ed5181ea2 6414856 zeroc-ice_3.7.10.orig.tar.xz ea701536a399b70f4c18647888d47729 30604 zeroc-ice_3.7.10-4.debian.tar.xz"
+    "b8f1399911c9806ccbd65ea4c1ad18e0 3149 zeroc-ice_3.8.1-2.dsc 7bf7e447286040b8c728cb655bf02cfb 4218495 zeroc-ice_3.8.1.orig.tar.gz f166aa4de981726c1c2f0e62859765c1 25052 zeroc-ice_3.8.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "zeroc-ice"
   ],
   "Package-List": [
-    "libzeroc-ice-dev deb libdevel optional arch=any libzeroc-ice3.7-java deb java optional arch=all libzeroc-ice3.7t64 deb libs optional arch=any libzeroc-icestorm3.7t64 deb net optional arch=any php-zeroc-ice deb php optional arch=any python3-zeroc-ice deb python optional arch=any zeroc-glacier2 deb net optional arch=any zeroc-ice-all-dev deb devel optional arch=all zeroc-ice-all-runtime deb net optional arch=all zeroc-ice-compilers deb devel optional arch=any zeroc-ice-slice deb devel optional arch=all zeroc-ice-utils deb admin optional arch=any zeroc-icebox deb net optional arch=any zeroc-icebridge deb net optional arch=any zeroc-icegrid deb net optional arch=any zeroc-icegridgui deb admin optional arch=all zeroc-icepatch2 deb net optional arch=any"
+    "libzeroc-ice-dev deb libdevel optional arch=any libzeroc-ice3.8 deb libs optional arch=any php-zeroc-ice deb php optional arch=any python3-zeroc-ice deb python optional arch=any profile=!nopython zeroc-dsnode deb net optional arch=any zeroc-glacier2 deb net optional arch=any zeroc-ice-all-dev deb oldlibs optional arch=all zeroc-ice-all-runtime deb oldlibs optional arch=all zeroc-ice-compilers deb oldlibs optional arch=all zeroc-ice-slice deb devel optional arch=all zeroc-ice-utils deb admin optional arch=any zeroc-icebox deb net optional arch=any zeroc-icebridge deb net optional arch=any zeroc-icegrid deb net optional arch=any zeroc-icestorm deb net optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,18 +39,18 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Uploaders": [
     "Ondřej Surý \u003condrej@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://github.com/zeroc-ice/ice-debian-packaging.git"
+    "https://github.com/zeroc-ice/ice"
   ],
   "Vcs-Git": [
-    "https://github.com/zeroc-ice/ice-debian-packaging.git"
+    "https://github.com/zeroc-ice/ice.git"
   ],
   "Version": [
-    "3.7.10-4"
+    "3.8.1-2"
   ]
 }
