@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossterm-0.28-dev \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossterm-dev (\u003c\u003c 0.30) \u003c!nocheck\u003e, librust-crossterm-dev (\u003e= 0.28) \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "23281d428313c570544ee24716db525525c108c565b36deaad88f03d7c263792 2645 rust-comfy-table_7.1.4-2.dsc 4a65ebfec4fb190b6f90e944a817d60499ee0744e582530e2c9900a22e591d9a 77044 rust-comfy-table_7.1.4.orig.tar.gz 540000aa04fb1f45691c56b12e8958205fa63543d8a9a8987678b833277a3f66 3372 rust-comfy-table_7.1.4-2.debian.tar.xz"
+    "bc92f18712beba8a2f458043fb82e11f9251ae5388bf5f6e1c319fbbf0bb6317 2579 rust-comfy-table_7.2.2-1.dsc 958c5d6ecf1f214b4c2bbbbf6ab9523a864bd136dcf71a7e8904799acfe1ad47 78788 rust-comfy-table_7.2.2.orig.tar.gz 2a994ab01011dbdb02e5584e554ff4e3b0f3a0d808677ffa32757e760d641b12 3688 rust-comfy-table_7.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-comfy-table"
   ],
   "Files": [
-    "077b590e5d098ab85c67453ea5d023d5 2645 rust-comfy-table_7.1.4-2.dsc 166673ddd96f3eabd732945b59a872fe 77044 rust-comfy-table_7.1.4.orig.tar.gz cefc17c2c4bee9ac99e66d3a97cbc069 3372 rust-comfy-table_7.1.4-2.debian.tar.xz"
+    "04ed89fdf3437b25fc1975308f0f8ace 2579 rust-comfy-table_7.2.2-1.dsc 6775dbaa797ccc8169bc5f822b83843b 78788 rust-comfy-table_7.2.2.orig.tar.gz bd040d5ebc71a31f1a0beb1cadb60fc3 3688 rust-comfy-table_7.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-proptest-1+default-dev, librust-rand-0.8+default-dev, librust-rstest-0.17+default-dev, rustc"
+    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-proptest-1+default-dev, librust-rand-0.10+default-dev, librust-rstest+default-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/comfy-table]"
   ],
   "Version": [
-    "7.1.4-2"
+    "7.2.2-1"
   ]
 }

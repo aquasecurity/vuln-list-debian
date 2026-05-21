@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "lava-dispatcher, lava-dispatcher-host, lava-server, lava-common, lava, lava-lxc-mocker, lava-coordinator, lava-dev, lava-server-doc"
+    "lava-dispatcher, lava-dispatcher-host, lava-server, lava-common, lava, lava-coordinator, lava-dev, lava-server-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), dh-python, libjs-bootstrap, libjs-jquery, libjs-jquery-flot, libjs-jquery-typeahead, po-debconf, python3, python3-setuptools, python3-sphinx, python3-sphinx-bootstrap-theme, python3-yaml"
+    "debhelper-compat (= 12), dh-python, libjs-bootstrap, libjs-jquery, libjs-jquery-flot, libjs-jquery-typeahead, mkdocs-material, po-debconf, python3, python3-setuptools, python3-sphinx, python3-yaml"
   ],
   "Checksums-Sha256": [
-    "a8c7e51c8bbd2176fafddcc005ca3bbe89227163a3e8ca3c236ae21abd94d4dc 2994 lava_2026.02-3.dsc 5712bde0b5a0c3e03cdc1e23489c816e876cc37710bd673ed9641d0389e2279f 7781385 lava_2026.02.orig.tar.bz2 44ae5473b9a99f7de4b8993b988fbcfc14cb7b3f428e538ef5db871fef724859 95892 lava_2026.02-3.debian.tar.xz"
+    "5320728f607665305769d4e3c6bc26fc2c9f22adfd8a40d2cefed82fd3843519 2948 lava_2026.04-5.dsc 6019fc2f5777fdf78997301176f8250cef306cc9f7a865388778d99d08ceefe1 8526734 lava_2026.04.orig.tar.gz cbed6d219677a4a2c58d08c881212b5ed2a2979c59dbd354b9d26563f5c363ea 98996 lava_2026.04-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lava"
   ],
   "Files": [
-    "80b5d2f6a3640773918e20a1bc19a662 2994 lava_2026.02-3.dsc 7c6e04eda4d71e30325b6007ca58693f 7781385 lava_2026.02.orig.tar.bz2 7b341b4450fcb044cba11ea81688af0e 95892 lava_2026.02-3.debian.tar.xz"
+    "c7b84310e02743c322668531e8783a6b 2948 lava_2026.04-5.dsc f189033a28e2f562f6c670d92a9607c6 8526734 lava_2026.04.orig.tar.gz 216021e7d0c3969756ac0484802f7cd0 98996 lava_2026.04-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "lava"
   ],
   "Package-List": [
-    "lava deb metapackages optional arch=all lava-common deb net optional arch=all lava-coordinator deb net optional arch=all lava-dev deb devel optional arch=all lava-dispatcher deb net optional arch=all lava-dispatcher-host deb net optional arch=all lava-lxc-mocker deb net optional arch=all lava-server deb net optional arch=all lava-server-doc deb doc optional arch=all"
+    "lava deb metapackages optional arch=all lava-common deb net optional arch=all lava-coordinator deb net optional arch=all lava-dev deb devel optional arch=any lava-dispatcher deb net optional arch=any lava-dispatcher-host deb net optional arch=any lava-server deb net optional arch=all lava-server-doc deb doc optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, apache2, dh-python, git, lxc, nfs-kernel-server, postgresql, python3-pymongo, python3-pytest, python3-pytest-asyncio, python3-pytest-django, python3-pytest-mock, python3-responses, python3-setuptools, python3-sphinx, python3-yaml, qemu-system-arm, qemu-system-x86, schroot, telnet, tftpd-hpa, u-boot-tools, unzip"
+    "@builddeps@, apache2, dh-python, git, nfs-kernel-server, openssh-client, postgresql, python3-guestfs, python3-pymongo, python3-pytest, python3-pytest-asyncio, python3-pytest-django, python3-pytest-mock, python3-responses, python3-setuptools, python3-sphinx, python3-yaml, qemu-system-arm, qemu-system-x86, schroot, telnet, tftpd-hpa, u-boot-tools, unzip"
   ],
   "Uploaders": [
     "Remi Duraffort \u003cremi.duraffort@linaro.org\u003e, Christopher Obbard \u003cobbardc@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/lava.git"
   ],
   "Version": [
-    "2026.02-3"
+    "2026.04-5"
   ]
 }
