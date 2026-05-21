@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
     "loggerhead, loggerhead-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-dulwich, python3-paste (\u003e= 1.6), python3-pkg-resources"
+    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native, librust-anyhow-1+default-dev, librust-askama-0.12+default-dev, librust-axum-0.8+default-dev, librust-breezyshim-0.7+default-dev (\u003e= 0.7.16), librust-chrono-0.4+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-httpdate-1+default-dev, librust-mime-guess-2+default-dev, librust-moka-0.12+default-dev, librust-moka-0.12+sync-dev, librust-num-cpus-1+default-dev, librust-percent-encoding-2+default-dev, librust-rusqlite-0.29+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-similar-2+default-dev, librust-syntect-5+default-syntaxes-dev, librust-syntect-5+default-themes-dev, librust-syntect-5+html-dev, librust-syntect-5+parsing-dev, librust-syntect-5+regex-fancy-dev, librust-thiserror-2+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+signal-dev, librust-tokio-1+sync-dev, librust-tower-0.5+default-dev, librust-tower-http-0.6+compression-br-dev, librust-tower-http-0.6+compression-gzip-dev, librust-tower-http-0.6+default-dev, librust-tower-http-0.6+fs-dev, librust-tower-http-0.6+trace-dev, librust-tracing-0.1+default-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-url-2+default-dev, libstd-rust-dev, python3-breezy (\u003e= 3.0.0~), rustc:native (\u003e= 1.83)"
   ],
   "Build-Depends-Indep": [
-    "brz (\u003e= 3.0.0~), python3-bleach, python3-breezy.tests, python3-chameleon, python3-fixtures, python3-setuptools, python3-sphinx, python3-subunit, python3-testtools"
+    "mdbook"
   ],
   "Checksums-Sha256": [
-    "a92b7e5eccf7ebf59e01cb8d562ebb5b764204498ad37a17f8e504087fcfe74e 2474 loggerhead_2.0.3+dfsg-1.dsc 5f7be07d3ceb7bca458233c79c895641b86b181bdf023e8801a79c3b78d1b131 111628 loggerhead_2.0.3+dfsg.orig.tar.xz 40fca6ffc6de05197989bf42844d9c7dcd0bfd520193968a3fba36a0058df865 8072 loggerhead_2.0.3+dfsg-1.debian.tar.xz"
+    "3799c6a4d15e24aefa2cf7ae524791801d0af89041264fb3fab944c70774b011 3269 loggerhead_3.0.1+dfsg-1.dsc 68fe34246d3e532bd172ba4311b228623f848a183b798263659dca9f5abe119c 103488 loggerhead_3.0.1+dfsg.orig.tar.xz 646bbd26c3cf601f5189cea1aeafe69e9c30292eba93b1e62db35b616a20decc 7900 loggerhead_3.0.1+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/loggerhead"
   ],
   "Files": [
-    "a078e73bfc21a01642283d739859e92f 2474 loggerhead_2.0.3+dfsg-1.dsc 3a9fd9fb6db12726f80588aef70782f4 111628 loggerhead_2.0.3+dfsg.orig.tar.xz 0bf044117a13e49546872cf324635230 8072 loggerhead_2.0.3+dfsg-1.debian.tar.xz"
+    "f3111b75a0c4775d449c1b4d82705f33 3269 loggerhead_3.0.1+dfsg-1.dsc 9e08fcf78f5d53a3162fd57ebd687e60 103488 loggerhead_3.0.1+dfsg.orig.tar.xz a05c326f690706097ac3abb3edad5da2 7900 loggerhead_3.0.1+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "loggerhead"
   ],
   "Package-List": [
-    "loggerhead deb devel optional arch=all loggerhead-doc deb doc optional arch=all"
+    "loggerhead deb devel optional arch=any loggerhead-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/breezy-team/loggerhead.git"
   ],
   "Version": [
-    "2.0.3+dfsg-1"
+    "3.0.1+dfsg-1"
   ]
 }
