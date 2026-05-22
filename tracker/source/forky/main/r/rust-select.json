@@ -6,16 +6,19 @@
     "librust-select-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bit-set-0.8+default-dev \u003c!nocheck\u003e, librust-html5ever-0.27+default-dev \u003c!nocheck\u003e, librust-markup5ever-rcdom-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bit-set-0.8+default-dev \u003c!nocheck\u003e, librust-html5ever+default-dev (\u003c\u003c 0.36) \u003c!nocheck\u003e, librust-html5ever+default-dev (\u003e= 0.26) \u003c!nocheck\u003e, librust-markup5ever-rcdom+default-dev (\u003c\u003c 0.36) \u003c!nocheck\u003e, librust-markup5ever-rcdom+default-dev (\u003e= 0.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2898791300cae36f39fae88ef1783d7dc891a2bbe531c12dbe90499386b3a323 2335 rust-select_0.6.0-3.dsc a7cf3d3574b48e5310e49cdc73a4ed88ca69caf77699951126a5a65c71affac3 33947 rust-select_0.6.0.orig.tar.gz 1025aa23c40109331a8c0d9f3afcef374115b72816f318f2e64adee37b8f98fe 3020 rust-select_0.6.0-3.debian.tar.xz"
+    "18dc0b019a136a8684a9a453b77a3850aa2ed00a723046f8f993ba46a3472c94 2511 rust-select_0.6.0+dfsg-2.dsc e18db370c6fc35d33b32961280413d20c2ce09a7a8474a74d4da1bc0a9f9fcb9 34073 rust-select_0.6.0+dfsg.orig.tar.gz daa8659742a43df26ab602ac2c91193d3761165c95af8b446f23e175b12fdbdd 3172 rust-select_0.6.0+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-select"
   ],
   "Files": [
-    "ccb3d5f2c6899f9570087dd34b0e9bef 2335 rust-select_0.6.0-3.dsc 217a5f09967932b386195ac8bea69cd6 33947 rust-select_0.6.0.orig.tar.gz fd53085adf938b36b4eedf8bf62de0b6 3020 rust-select_0.6.0-3.debian.tar.xz"
+    "cdc55b39749b1f871b8ba254d87e7b9d 2511 rust-select_0.6.0+dfsg-2.dsc 062028cdc3f563f292fae62afd38afde 34073 rust-select_0.6.0+dfsg.orig.tar.gz fe2c2541490765d41c2fff4e1ccd5cd5 3172 rust-select_0.6.0+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/select]"
   ],
   "Version": [
-    "0.6.0-3"
+    "0.6.0+dfsg-2"
   ]
 }
