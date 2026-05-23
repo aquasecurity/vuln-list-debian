@@ -6,16 +6,19 @@
     "librust-unicode-segmentation-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "83385ba604da83c76c521b3ddc6f8004a2adc9b0e1c3f288b28b44bcea2fb737 2398 rust-unicode-segmentation_1.12.0-1.dsc f6ccf251212114b54433ec949fd6a7841275f9ada20dddd2f29e9ceea4501493 106323 rust-unicode-segmentation_1.12.0.orig.tar.gz 791b3ea790f863c1974d542dd1570594817ab23f8faac32fcc3b7bb237b0cd79 3396 rust-unicode-segmentation_1.12.0-1.debian.tar.xz"
+    "a38aab73b744e3900951986126719c3175da56600bd7af2968e30347ef847933 2461 rust-unicode-segmentation_1.13.2-1.dsc 9629274872b2bfaf8d66f5f15725007f635594914870f65218920345aa11aa8c 111829 rust-unicode-segmentation_1.13.2.orig.tar.gz db2cacec2bf67a41c08ec8650ee084c1f5a0282d673a4aaa5d85724e2de511b6 3432 rust-unicode-segmentation_1.13.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-segmentation"
   ],
   "Files": [
-    "b204739ce2da77406fab6b0f75180705 2398 rust-unicode-segmentation_1.12.0-1.dsc f2a271be7934b762ed05523370bf14c5 106323 rust-unicode-segmentation_1.12.0.orig.tar.gz d0f22f5a3412242f464a7bbcebc11936 3396 rust-unicode-segmentation_1.12.0-1.debian.tar.xz"
+    "e3f096842fc516a61105767076218869 2461 rust-unicode-segmentation_1.13.2-1.dsc 2bb1c805605062830054cd91fbbd98c8 111829 rust-unicode-segmentation_1.13.2.orig.tar.gz cd2ecb1e31423edab11092ab4c3d435e 3432 rust-unicode-segmentation_1.13.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1+default-dev, rustc"
+    "dh-cargo, librust-proptest-1+default-dev, librust-quickcheck-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-segmentation]"
   ],
   "Version": [
-    "1.12.0-1"
+    "1.13.2-1"
   ]
 }
