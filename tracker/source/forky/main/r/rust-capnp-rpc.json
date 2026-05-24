@@ -6,19 +6,25 @@
     "librust-capnp-rpc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-capnp-0.19+default-dev \u003c!nocheck\u003e, librust-capnp-futures-0.19+default-dev \u003c!nocheck\u003e, librust-futures-0.3+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-capnp-0.25+default-dev \u003c!nocheck\u003e, librust-capnp-futures-0.25+default-dev \u003c!nocheck\u003e, librust-futures-0.3+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "47881ff88c88eb67336974f44472582ab533bf719b1d66a054fcfdd5f32c0850 2300 rust-capnp-rpc_0.19.0-1.dsc 171dba986cf6aaa4a2a86f1a2fb7372f456d3cb95f2cb27f4dc45ae9ea850a16 92481 rust-capnp-rpc_0.19.0.orig.tar.gz e9bbcf2cad8bd7baaee8def30bb4a62132a099f71d26e3cd2594145deca7ad53 2804 rust-capnp-rpc_0.19.0-1.debian.tar.xz"
+    "3e81dff27826f16ef84acdbce13e9ab6ae3ce6a5778b3ffba27989fb26fd1fd7 2381 rust-capnp-rpc_0.25.1-1.dsc e3c74c337e87f75f3174ffb3513738ab0acc631c04f64cc33b867c60f84771da 101633 rust-capnp-rpc_0.25.1.orig.tar.gz ab9f77f06dc10b9831fbbe54614b1ddd5cf329bb69c6aa464acf1c8deab8fdf0 2852 rust-capnp-rpc_0.25.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-capnp-rpc"
   ],
   "Files": [
-    "9b0be1f71984223350fe66c96f029cc8 2300 rust-capnp-rpc_0.19.0-1.dsc 4aa6afa19ea6daccc663c3fa5a2ace90 92481 rust-capnp-rpc_0.19.0.orig.tar.gz 61c1cd8f3c4d9b1e5f50c3a4fbaa2041 2804 rust-capnp-rpc_0.19.0-1.debian.tar.xz"
+    "5f3ab88a99197cd42edd4cd9ed20d2d0 2381 rust-capnp-rpc_0.25.1-1.dsc c610985dc8f763cb079fb13df6a76d91 101633 rust-capnp-rpc_0.25.1.orig.tar.gz ef9aae2d96a4e91f90a89ff0440cda89 2852 rust-capnp-rpc_0.25.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/capnproto/capnproto-rust"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/capnp-rpc]"
   ],
   "Version": [
-    "0.19.0-1"
+    "0.25.1-1"
   ]
 }
