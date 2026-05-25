@@ -6,19 +6,25 @@
     "librust-blobby-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "60e5954106e2aaf8beb101b873b110c7724dc5613893bb9e01f90d073ef4bae4 2103 rust-blobby_0.3.1-1.dsc 847495c209977a90e8aad588b959d0ca9f5dc228096d29a6bd3defd53f35eaec 9941 rust-blobby_0.3.1.orig.tar.gz d2099f3a06e5d9de5b4db0c13c2a2a6e827680d6fa5e45d6f1af4af06e532144 2580 rust-blobby_0.3.1-1.debian.tar.xz"
+    "fed3eef60684a57a7314bb94ffed6afc280a8573859d859264b23fafa8c54d48 2182 rust-blobby_0.4.0-1.dsc 89af0b093cc13baa4e51e64e65ec2422f7e73aea0e612e5ad3872986671622f1 12503 rust-blobby_0.4.0.orig.tar.gz 9345bad56abb137a9407632212a0f3491d32747d062e6181b05c7b5d27a54319 2884 rust-blobby_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-blobby"
   ],
   "Files": [
-    "716561f1ad936aa4956d9fb456ea1b28 2103 rust-blobby_0.3.1-1.dsc 92e2a3674eb82eb259849aeb63b0877d 9941 rust-blobby_0.3.1.orig.tar.gz 99f399fb0d2414bdb2d17f6783558ba3 2580 rust-blobby_0.3.1-1.debian.tar.xz"
+    "3e0f2b7e99e436ad5ae27f7e98daa9a2 2182 rust-blobby_0.4.0-1.dsc 96c8e735b00eecf4ac1d94aba5b8581c 12503 rust-blobby_0.4.0.orig.tar.gz cf43f162687395188e558cb8056e5f26 2884 rust-blobby_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/utils"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-0.4+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/blobby]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.4.0-1"
   ]
 }
