@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev (\u003e= 0.10.7-~~) \u003c!nocheck\u003e, librust-digest-0.10+std-dev (\u003e= 0.10.7-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev \u003c!nocheck\u003e, librust-digest-0.11+alloc-dev \u003c!nocheck\u003e, librust-digest-0.11+default-dev \u003c!nocheck\u003e, librust-digest-0.11+oid-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cce4ada844b0a3af6ad1452be55adc0a835baa3ecb648770f2feb7e9288c4210 2473 rust-sha2_0.10.9-1.dsc a7507d819769d01a365ab707794a4084392c824f54a7a6a7862f8c3d0892b283 29271 rust-sha2_0.10.9.orig.tar.gz 13778c5c5cb01b8a1035cb85cdc580a4602cb88f6499279dfd02a328dc382e07 3804 rust-sha2_0.10.9-1.debian.tar.xz"
+    "0f23016c1e1006b0c331b5980d1c192e7b80422f394fb9baecd086d12a46f4e9 2482 rust-sha2_0.11.0-1.dsc 446ba717509524cb3f22f17ecc096f10f4822d76ab5c0b9822c5f9c284e825f4 33969 rust-sha2_0.11.0.orig.tar.gz bf5b5cffa86247973181538e9958807f05bd20ba401084bf78fd55312a467db5 3808 rust-sha2_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sha2"
   ],
   "Files": [
-    "dc4abf2e4c34b883380eaad93cf0133d 2473 rust-sha2_0.10.9-1.dsc 295e503f197dd34556876b97c60b87c1 29271 rust-sha2_0.10.9.orig.tar.gz c96ce910923610dbb03d6e7fcfe99e7a 3804 rust-sha2_0.10.9-1.debian.tar.xz"
+    "d17249974fcedd0a2b30b4412e1a09c1 2482 rust-sha2_0.11.0-1.dsc 74efce16a3e9401c78c10b8156a560e3 33969 rust-sha2_0.11.0.orig.tar.gz 7819ea064d3f024b1626d057cfe2c45c 3808 rust-sha2_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-digest-0.10+default-dev, librust-digest-0.10+dev-dev, librust-hex-literal-0.4+default-dev, rustc"
+    "dh-cargo, librust-digest-0.11+default-dev, librust-digest-0.11+dev-dev, librust-hex-literal-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sha2]"
   ],
   "Version": [
-    "0.10.9-1"
+    "0.11.0-1"
   ]
 }
