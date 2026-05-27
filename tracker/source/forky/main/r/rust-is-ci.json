@@ -6,19 +6,25 @@
     "librust-is-ci-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "837c5a725764fbd07a6ab1062719133ff0fb13649908c18c24167f348ce8d0a3 2088 rust-is-ci_1.1.1-1.dsc 616cde7c720bb2bb5824a224687d8f77bfd38922027f01d825cd7453be5099fb 4143 rust-is-ci_1.1.1.orig.tar.gz a046dc61f90860c59106048a4056e1a97e8b5a1fbf0f25720d4036f23e8c3d8e 2340 rust-is-ci_1.1.1-1.debian.tar.xz"
+    "d649f3688e7de4a89e67edd4cea5ffc8ae0840e1ae21b26070d6d1fecbf95ea9 1555 rust-is-ci_1.2.0-1.dsc 7655c9839580ee829dfacba1d1278c2b7883e50a277ff7541299489d6bdfdc45 4521 rust-is-ci_1.2.0.orig.tar.gz b657181fd749637621b89ba35eadef3a1f591d7eb33746241eda728cc690b47e 2404 rust-is-ci_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-is-ci"
   ],
   "Files": [
-    "1b5849d2d6ce80db730cc6399bf65e9f 2088 rust-is-ci_1.1.1-1.dsc 89b393356ad4a8a3f69cf168f06c7dcb 4143 rust-is-ci_1.1.1.orig.tar.gz 6b09646ce87ca94109c6b89406fa8aa6 2340 rust-is-ci_1.1.1-1.debian.tar.xz"
+    "7b521556b3b900331e410e990815a154 1555 rust-is-ci_1.2.0-1.dsc 1a8725fbaf25abda88236a0a4e3d7663 4521 rust-is-ci_1.2.0.orig.tar.gz ca4ff0c42e914b19cae00776542939f8 2404 rust-is-ci_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/zkat/is_ci"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/is-ci]"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.2.0-1"
   ]
 }
