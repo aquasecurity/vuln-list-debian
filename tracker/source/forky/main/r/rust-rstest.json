@@ -6,16 +6,19 @@
     "librust-rstest-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-0.3+default-dev (\u003e= 0.3.21-~~) \u003c!nocheck\u003e, librust-futures-timer-3+default-dev (\u003e= 3.0.2-~~) \u003c!nocheck\u003e, librust-rstest-macros-0.17+async-timeout-dev \u003c!nocheck\u003e, librust-rstest-macros-0.17-dev \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-timer-3+default-dev (\u003e= 3.0.3) \u003c!nocheck\u003e, librust-futures-util-0.3+default-dev (\u003e= 0.3.30) \u003c!nocheck\u003e, librust-rstest-macros-0.26+async-timeout-dev (\u003e= 0.26.1) \u003c!nocheck\u003e, librust-rstest-macros-0.26+crate-name-dev (\u003e= 0.26.1) \u003c!nocheck\u003e, librust-rstest-macros-0.26-dev (\u003e= 0.26.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "da73ae46ca91cffdfb4bfd55dbb36bdb458fba7c06cfa77341e7e070aa28f66d 2849 rust-rstest_0.17.0-1.dsc de1bb486a691878cd320c2f0d319ba91eeaa2e894066d8b5f8f117c000e9d962 26737 rust-rstest_0.17.0.orig.tar.gz f32057f4d8d68c661ac924dbb6731034713f9a196fa85f9462dc891ecc241808 2816 rust-rstest_0.17.0-1.debian.tar.xz"
+    "d8316fd1a121ff2b9373165359c3cee7d425b848c4ad9a1a1e6db65e39d9cb5f 2874 rust-rstest_0.26.1-2.dsc f5a3193c063baaa2a95a33f03035c8a72b83d97a54916055ba22d35ed3839d49 56940 rust-rstest_0.26.1.orig.tar.gz 6fc78c494cbd18061a59afbdd83ebddcfbf0f1c566ecfee1d1dc1999f4135279 4476 rust-rstest_0.26.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rstest"
   ],
   "Files": [
-    "2f4748430e32f7eefdea521de82a7ed6 2849 rust-rstest_0.17.0-1.dsc 7dd8bb729f0dcfa46e9078b00c552e0e 26737 rust-rstest_0.17.0.orig.tar.gz 3fd591f622a59b0287a27375929d53df 2816 rust-rstest_0.17.0-1.debian.tar.xz"
+    "119674b6b1761e00c9e2efa41602016f 2874 rust-rstest_0.26.1-2.dsc ad22b73628f49cd23c5f8297aa6a4eee 56940 rust-rstest_0.26.1.orig.tar.gz ff3f1941daaf6e8d715bf7e7cc58da4e 4476 rust-rstest_0.26.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-actix-rt-2+default-dev, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-lazy-static-1+default-dev, librust-pretty-assertions-1+default-dev, librust-rstest-0.16-dev, librust-rstest-reuse-0.5+default-dev, librust-rstest-test-0.11+default-dev, librust-temp-testdir-0.2+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-unindent-0.2+default-dev"
+    "dh-cargo, librust-actix-rt-2+default-dev, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-lazy-static-1+default-dev, librust-macro-rules-attribute-0.2+default-dev, librust-smol-macros-0.1+default-dev, librust-temp-testdir-0.2+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-unindent-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rstest]"
   ],
   "Version": [
-    "0.17.0-1"
+    "0.26.1-2"
   ]
 }
