@@ -6,22 +6,25 @@
     "librust-human-format-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d520f8dd9d8fe8937e08351950f97a615f18abb336c37ea1fd1dd0e58b5e66c0 2218 rust-human-format_1.0.3-1.dsc 86cce260d758a9aa3d7c4b99d55c815a540f8a37514ba6046ab6be402a157cb0 6718 rust-human-format_1.0.3.orig.tar.gz 44c18198bcea4a9ab4c104bdf6935e0819c369eab108859a24295b37b91f547b 3660 rust-human-format_1.0.3-1.debian.tar.xz"
+    "6843446e1dc19b71fbfb20cea96ee6d378704f93a9232126d1c761b135f81aff 1648 rust-human-format_1.2.1-1.dsc eaec953f16e5bcf6b8a3cb3aa959b17e5577dbd2693e94554c462c08be22624b 18100 rust-human-format_1.2.1.orig.tar.gz 05d2d1609e66fd76ad644e480ded084604e14ad28b71d9d8d16fca761437999b 2780 rust-human-format_1.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-human-format"
   ],
   "Files": [
-    "2df2b83a9a926a3b65d9d62d0d294ffa 2218 rust-human-format_1.0.3-1.dsc dd81bd1965a999c6609d5cab209e5a15 6718 rust-human-format_1.0.3.orig.tar.gz d0fa5db9e1b42016abad646d7fae9de4 3660 rust-human-format_1.0.3-1.debian.tar.xz"
+    "e9c0821a8cdd23495a040a8be4b91f63 1648 rust-human-format_1.2.1-1.dsc b44b3a22112285bdca3e679224fc75a7 18100 rust-human-format_1.2.1.orig.tar.gz bfd31e8c766397f2205815aaa8a8a533 2780 rust-human-format_1.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/BobGneu/human-format-rs"
+    "https://bobgneu.github.io/human-format-rs/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/human-format]"
   ],
   "Version": [
-    "1.0.3-1"
+    "1.2.1-1"
   ]
 }
