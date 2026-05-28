@@ -6,19 +6,25 @@
     "librust-timeago-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-isolang-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-isolang-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8b51480623c6068e80c9d2ac65369b5d25b6f7769511f710e5752aafc0f0acfd 2192 rust-timeago_0.4.1-1.dsc 5082dc942361cdfb74eab98bf995762d6015e5bb3a20bf7c5c71213778b4fcb4 15419 rust-timeago_0.4.1.orig.tar.gz 9f00a4833f64eaae5ae6bc656d3616109dadaa994704673ff16831e9a5e8f9bb 2732 rust-timeago_0.4.1-1.debian.tar.xz"
+    "2784cab43dde92643ff806815192a71652282858e9de39389c63e96e9ce8f7cd 2274 rust-timeago_0.6.0-1.dsc e86660b0935ca5912eb155f5b3794e2f8f1a09d8c00c9efd5c1075ca26403638 22109 rust-timeago_0.6.0.orig.tar.gz d13fa73006b0b76ebce0b1a7192d5cdb8c21a186e5c9731467ebbd520513cbb9 2808 rust-timeago_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-timeago"
   ],
   "Files": [
-    "1977d0c87263db8074fe9213cc9dcea6 2192 rust-timeago_0.4.1-1.dsc 3af554d6012d9409863f035fdf3046c9 15419 rust-timeago_0.4.1.orig.tar.gz 7c0ddcd266b6685865adbb31d5ae41d7 2732 rust-timeago_0.4.1-1.debian.tar.xz"
+    "f2bdf03cdc28906a312cf3e6e871eb56 2274 rust-timeago_0.6.0-1.dsc ebd9c7f4debb0ca66a09a456953c1e5c 22109 rust-timeago_0.6.0.orig.tar.gz dc89cf4eb642bfd8d551bee6ac2c88c1 2808 rust-timeago_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/vi/timeago"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/timeago]"
   ],
   "Version": [
-    "0.4.1-1"
+    "0.6.0-1"
   ]
 }

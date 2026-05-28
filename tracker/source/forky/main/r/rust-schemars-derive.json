@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-serde-derive-internals-0.29+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.74) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.35) \u003c!nocheck\u003e, librust-serde-derive-internals-0.29+default-dev (\u003e= 0.29.1) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.46) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e9f1b2e3295818c57dc4ab772cad67955c8619771ff4cf7c4a64eef57046bbe3 2689 rust-schemars-derive_0.8.22-1.dsc 32e265784ad618884abaea0600a9adf15393368d840e0222d101a072f3f7534d 19542 rust-schemars-derive_0.8.22.orig.tar.gz 80b597c2271ebfe9cbd75cfb191f46e1cbc6ccd911ec8a1ec546c3b564a4d88e 2836 rust-schemars-derive_0.8.22-1.debian.tar.xz"
+    "784735c04b17d91d1fbdafe63ada4770f1a1a74f725b991cef7be0b9cfb47982 2010 rust-schemars-derive_1.2.1-2.dsc 7d115b50f4aaeea07e79c1912f645c7513d81715d0420f8bc77a18c6260b307f 31319 rust-schemars-derive_1.2.1.orig.tar.gz d4294a52f7974b8593c6fa12198b57d36e0ee602891822dba5402d29f21e01cb 2968 rust-schemars-derive_1.2.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-schemars-derive"
   ],
   "Files": [
-    "d3538c2031ed573c31838dd49aaa8782 2689 rust-schemars-derive_0.8.22-1.dsc a3f968c0e2f5681a829c2c2693ecee09 19542 rust-schemars-derive_0.8.22.orig.tar.gz 95339f76647c20f20be8b32c3b5fa31d 2836 rust-schemars-derive_0.8.22-1.debian.tar.xz"
+    "a05f155767fb0a9732427e987bde0e61 2010 rust-schemars-derive_1.2.1-2.dsc 7a394223f861604746a53a0328897a26 31319 rust-schemars-derive_1.2.1.orig.tar.gz 72c0c93ef531f03af8436be7c8b96580 2968 rust-schemars-derive_1.2.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev, rustc"
+    "dh-cargo, librust-pretty-assertions-1+default-dev, librust-syn-2+default-dev, librust-syn-2+extra-traits-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/schemars-derive]"
   ],
   "Version": [
-    "0.8.22-1"
+    "1.2.1-2"
   ]
 }
