@@ -6,19 +6,25 @@
     "librust-signal-hook-registry-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.26) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-errno+default-dev (\u003c\u003c 0.4) \u003c!nocheck\u003e, librust-errno+default-dev (\u003e= 0.2) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ebe056707ed5d3a14a6d16d884c1ad11130e4021fb0c8025b1f98cb8c6ad47e7 2334 rust-signal-hook-registry_1.4.0-1.dsc e51e73328dc4ac0c7ccbda3a494dfa03df1de2f46018127f60c693f2648455b0 17912 rust-signal-hook-registry_1.4.0.orig.tar.gz 488c37af260c27266a396dc0af985c95aa219da5ff186bc9840d98ec1060590e 2708 rust-signal-hook-registry_1.4.0-1.debian.tar.xz"
+    "a7b4a0a6dc5b70df1be55d787b53d99fbb0950d815b5e7413477470a36ff66fa 1913 rust-signal-hook-registry_1.4.8-1.dsc c4db69cba1110affc0e9f7bcd48bbf87b3f4fc7c61fc9155afd4c469eb3d6c1b 21668 rust-signal-hook-registry_1.4.8.orig.tar.gz b77b378b565cdf5a924753b912eb74863be69ff0497caf09bd700479b4bd7552 2880 rust-signal-hook-registry_1.4.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-signal-hook-registry"
   ],
   "Files": [
-    "37f4e1623b75bc09efda1772f11f5290 2334 rust-signal-hook-registry_1.4.0-1.dsc 21b43d5721b3a9c16059acb691f4314d 17912 rust-signal-hook-registry_1.4.0.orig.tar.gz 043297f249d16208f1de475565db2ba0 2708 rust-signal-hook-registry_1.4.0-1.debian.tar.xz"
+    "d8aae175ad61192b233394d706fc5450 1913 rust-signal-hook-registry_1.4.8-1.dsc 7a11a8c075b55ab9b8c7771520f95352 21668 rust-signal-hook-registry_1.4.8.orig.tar.gz e75db4c5be5aec2a58f42867e0ffdecf 2880 rust-signal-hook-registry_1.4.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/vorner/signal-hook"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-signal-hook-0.3+default-dev"
+    "dh-cargo, librust-signal-hook-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/signal-hook-registry]"
   ],
   "Version": [
-    "1.4.0-1"
+    "1.4.8-1"
   ]
 }
