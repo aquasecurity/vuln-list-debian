@@ -6,16 +6,16 @@
     "pdns-server, pdns-tools, pdns-ixfrdist, pdns-backend-bind, pdns-backend-pipe, pdns-backend-ldap, pdns-backend-lmdb, pdns-backend-lua2, pdns-backend-geoip, pdns-backend-mysql, pdns-backend-odbc, pdns-backend-pgsql, pdns-backend-sqlite3, pdns-backend-remote, pdns-backend-tinydns"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), architecture-is-64-bit [!x32], bind9-dnsutils, bison, curl, default-libmysqlclient-dev, flex, libboost-all-dev, libcdb-dev, libcurl4-openssl-dev, libgeoip-dev, libkrb5-dev, libldap2-dev, liblmdb-dev, libluajit-5.1-dev (\u003e= 2.1.0~beta3+dfsg-5.3) [amd64 arm64] | libluajit-5.1-dev [amd64] | liblua5.3-dev, libmaxminddb-dev, libp11-kit-dev, libpq-dev, libprotobuf-dev, libsodium-dev, libsqlite3-dev, libssl-dev, libsystemd-dev, libyaml-cpp-dev (\u003e= 0.5), pkgconf, po-debconf, protobuf-compiler, ragel, systemd, systemd-dev, unixodbc-dev (\u003e= 2.3.1)"
+    "debhelper-compat (= 13), architecture-is-64-bit [!x32], bind9-dnsutils, bison, curl, libmariadb-dev-compat | libmysqlclient-dev, flex, libboost-all-dev, libcdb-dev, libcurl4-openssl-dev, libgeoip-dev, libkrb5-dev, libldap2-dev, liblmdb-dev, libluajit-5.1-dev (\u003e= 2.1.0~beta3+dfsg-5.3) [amd64 arm64] | libluajit-5.1-dev [amd64] | liblua5.3-dev, libmaxminddb-dev, libp11-kit-dev, libpq-dev, libprotobuf-dev, libsodium-dev, libsqlite3-dev, libssl-dev, libsystemd-dev, libyaml-cpp-dev (\u003e= 0.5), pkgconf, po-debconf, protobuf-compiler, ragel, systemd, systemd-dev, unixodbc-dev (\u003e= 2.3.1)"
   ],
   "Checksums-Sha256": [
-    "9a491b45e96cdf5322569f50ef266eaae0d2db6d34ec45977276c5e025ebb5ae 3646 pdns_5.0.5-1.dsc c144feb23cfc2cd47ebf335132aea0afab605adb4ff4f30955be3445034e0def 1490386 pdns_5.0.5.orig.tar.bz2 1f6d2eb9ce2defbeb2fa8e43d242c8e53d2ae91674b83c4489a72b57db24afa1 488 pdns_5.0.5.orig.tar.bz2.asc 46f1600ca5c9f253001aedd24600fdfb5ed24bff1ab308291e79cd63bf834397 39092 pdns_5.0.5-1.debian.tar.xz"
+    "d1cb615f43ad27fc338f7d8baba3b3f5bf167a6d61d6b12249515e213b88bbf5 3677 pdns_5.0.5-2.dsc c144feb23cfc2cd47ebf335132aea0afab605adb4ff4f30955be3445034e0def 1490386 pdns_5.0.5.orig.tar.bz2 1f6d2eb9ce2defbeb2fa8e43d242c8e53d2ae91674b83c4489a72b57db24afa1 488 pdns_5.0.5.orig.tar.bz2.asc f02e6b2f77f2a4dad721efaa393acac1c9a9a7a240d50498a3654cf7f7e612c6 39156 pdns_5.0.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pdns"
   ],
   "Files": [
-    "5cff090f660cec58e0eb5b02ba9e9c02 3646 pdns_5.0.5-1.dsc b95d28d94d4f47b91d747944c88e96ed 1490386 pdns_5.0.5.orig.tar.bz2 2ec76a80d160890ecd103a5b42cf5124 488 pdns_5.0.5.orig.tar.bz2.asc 614ee0417a5a0bb7d813c739bc523053 39092 pdns_5.0.5-1.debian.tar.xz"
+    "dbb40f59de82dbf94c1f3b270a7a1a51 3677 pdns_5.0.5-2.dsc b95d28d94d4f47b91d747944c88e96ed 1490386 pdns_5.0.5.orig.tar.bz2 2ec76a80d160890ecd103a5b42cf5124 488 pdns_5.0.5.orig.tar.bz2.asc ef74f310df87237b7a660525d8cb68b1 39156 pdns_5.0.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "default-mysql-server, postgresql"
+    "mariadb-server-compat, mysql-server, postgresql"
   ],
   "Uploaders": [
     "Chris Hofstaedtler \u003czeha@debian.org\u003e, Marc Haber \u003cmh+debian-packages@zugschlus.de\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/pdns.git"
   ],
   "Version": [
-    "5.0.5-1"
+    "5.0.5-2"
   ]
 }
