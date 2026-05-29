@@ -6,16 +6,16 @@
     "barman, barman-cli, barman-cli-cloud, python3-barman"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, bash-completion"
+    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools, pybuild-plugin-pyproject, bash-completion"
   ],
   "Checksums-Sha256": [
-    "3ea3faf4ae1eb3423455306bb2ad392e102319051d52968133567e6a5778ea01 2055 barman_3.18.0-2.dsc 8e752ac93d2f3a61e86b8374185209cae477a638ece7e6f540070f36d28d6997 501517 barman_3.18.0.orig.tar.gz 56f3bfe6e60ec42b41b24460d61c8cf2e4c924aae38dbe6ba996c0ab8088f5d5 11592 barman_3.18.0-2.debian.tar.xz"
+    "95c45410dd50a61a1865698a4faaf0b0ab28bb83aa73c1cdd7ba109222f5eecf 2173 barman_3.19.1-1.dsc 2f71c4a1f1ba53f694cbdf838bb9906d8ba02b97d1fd3041196e8999bec7a1ee 539392 barman_3.19.1.orig.tar.gz ba8ce8d970864cf08e189221fd0b93942d1f1f22ed5bcabe9531d8a4a7e8fc20 10124 barman_3.19.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/barman"
   ],
   "Files": [
-    "b66aabbfe923ee955732b3da67f31ed4 2055 barman_3.18.0-2.dsc e0c5935f8b72664a1b841b151b053fac 501517 barman_3.18.0.orig.tar.gz 8ac33eae75e25914e2688093cb1a7ba8 11592 barman_3.18.0-2.debian.tar.xz"
+    "6a56d630f6138683f751149f7a082068 2173 barman_3.19.1-1.dsc fbdb6a63a80de38f3947e5479c8c4f8f 539392 barman_3.19.1.orig.tar.gz fa6f210ba82558ee505c7150df0ffaf1 10124 barman_3.19.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "postgresql, postgresql-client, postgresql-common"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/barman"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/postgresql/barman.git"
   ],
   "Version": [
-    "3.18.0-2"
+    "3.19.1-1"
   ]
 }

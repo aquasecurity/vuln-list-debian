@@ -6,16 +6,19 @@
     "librust-sequoia-tpm-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-tss-esapi-7+default-dev \u003c!nocheck\u003e, librust-tss-esapi-sys-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev (\u003e= 0.4.3) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-tss-esapi-7+default-dev \u003c!nocheck\u003e, librust-tss-esapi-sys+default-dev (\u003c\u003c 0.7) \u003c!nocheck\u003e, librust-tss-esapi-sys+default-dev (\u003e= 0.5) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "944093d4fe5477cbb199e4f4501c6b3c96f4db5501fbbd07210074b00d975fae 2538 rust-sequoia-tpm_0.1.1-1.dsc 332f347252752709faa136ea0d2896c734e960630fe7b342151561dd6751d858 32617 rust-sequoia-tpm_0.1.1.orig.tar.gz d992720b18d6dfcd9b4bf8cfd8280faf5ad4f92896cb6022c93781895f0b2cbb 2380 rust-sequoia-tpm_0.1.1-1.debian.tar.xz"
+    "9b3a889f69182b9eb5d66e798d363c49e2e486abd76677ca1943b6290fdc9728 2544 rust-sequoia-tpm_0.1.1-2.dsc 332f347252752709faa136ea0d2896c734e960630fe7b342151561dd6751d858 32617 rust-sequoia-tpm_0.1.1.orig.tar.gz b356ae5c247af445ec178b1406db7c908f27eee1a1126d7e929a25bfda5d8ae3 2640 rust-sequoia-tpm_0.1.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sequoia-tpm"
   ],
   "Files": [
-    "8bd2fae7b5b08964d3393a931059026a 2538 rust-sequoia-tpm_0.1.1-1.dsc 094eac6dc54295972eeac6947fb349f5 32617 rust-sequoia-tpm_0.1.1.orig.tar.gz 4558e1becda88cc560deaf114842bc4e 2380 rust-sequoia-tpm_0.1.1-1.debian.tar.xz"
+    "80c080124b462557a0c93a18a7698f31 2544 rust-sequoia-tpm_0.1.1-2.dsc 094eac6dc54295972eeac6947fb349f5 32617 rust-sequoia-tpm_0.1.1.orig.tar.gz bee8f68d49e928095336629feef89830 2640 rust-sequoia-tpm_0.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sequoia-tpm]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.1-2"
   ]
 }
