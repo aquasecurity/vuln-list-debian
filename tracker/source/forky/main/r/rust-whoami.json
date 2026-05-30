@@ -6,22 +6,25 @@
     "librust-whoami-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.40) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, systemd-dev"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+std-dev (\u003e= 0.2.186) \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.186) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "efe903482c8c6b71d5a42e3f77eaf1be19df9fcbc49e9eafc0872ed8d42ee287 1588 rust-whoami_1.5.2-1.dsc 372d5b87f58ec45c384ba03563b03544dc5fadc3983e434b286913f5b4a9bb6d 24204 rust-whoami_1.5.2.orig.tar.gz 8637f37cb3a75b82f2df7da609e6261b64a27ae49bd2f3c914d6caafcbfe9052 11396 rust-whoami_1.5.2-1.debian.tar.xz"
+    "6c3473019a6a27d11efce945b2d910433069527e8ee7a092822cab3f73555c41 2308 rust-whoami_2.1.2-2.dsc 998767ef88740d1f5b0682a9c53c24431453923962269c2db68ee43788c5a40d 28570 rust-whoami_2.1.2.orig.tar.gz c153c74686c3f57a91a5b46f928853d8f0d100e704a2a5268061d3690b826952 12024 rust-whoami_2.1.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-whoami"
   ],
   "Files": [
-    "ae5914e9fcfa4755ed31559d1ef72566 1588 rust-whoami_1.5.2-1.dsc ff99b131ed5e36ee4b070653724d7586 24204 rust-whoami_1.5.2.orig.tar.gz 8239590076b8aa9bd772e45d8ace1d0f 11396 rust-whoami_1.5.2-1.debian.tar.xz"
+    "2b2d7b6545b614c7524068bf1fcde0dc 2308 rust-whoami_2.1.2-2.dsc b02f5f15f4737de27a0ebf69b1526dd9 28570 rust-whoami_2.1.2.orig.tar.gz 842d2d613aee3d45209177b72deb7bcb 12024 rust-whoami_2.1.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/ardaku/whoami/blob/v1/CHANGELOG.md"
+    "https://github.com/ardaku/whoami/releases"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/whoami]"
   ],
   "Version": [
-    "1.5.2-1"
+    "2.1.2-2"
   ]
 }
