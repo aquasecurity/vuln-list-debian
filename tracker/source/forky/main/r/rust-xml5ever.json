@@ -6,16 +6,19 @@
     "librust-xml5ever-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-mac-0.1+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.12+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.35+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a0e10627f042f0cfc27fbcecff27026e9d465d26b52442ab2880bed676cbdafd 2408 rust-xml5ever_0.18.1-1.dsc 9bbb26405d8e919bc1547a5aa9abc95cbfa438f04844f5fdd9dc7596b748bf69 40190 rust-xml5ever_0.18.1.orig.tar.gz db8fe0b767249a5c0ef1200575ea3113fb8292415e040489db55e7d3ac72e0d8 2856 rust-xml5ever_0.18.1-1.debian.tar.xz"
+    "4f60ca32a3ecb0395ae9e9a333be8bb2cda4451fb34153059c730f3520d5925a 1764 rust-xml5ever_0.35.0-1.dsc ee3f1e41afb31a75aef076563b0ad3ecc24f5bd9d12a72b132222664eb76b494 40626 rust-xml5ever_0.35.0.orig.tar.gz 0dca4f3aac6e57e1d5366f6a17ad94e6d1d6ad2b2a9ce35cda21931e224a2c08 3092 rust-xml5ever_0.35.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-xml5ever"
   ],
   "Files": [
-    "44f472da057eb7faf98ba8372e85da07 2408 rust-xml5ever_0.18.1-1.dsc a67d417779fc15443ee5bff7d65f32c1 40190 rust-xml5ever_0.18.1.orig.tar.gz 7689cbdcec4ac54ad7f6ae5b07cf9561 2856 rust-xml5ever_0.18.1-1.debian.tar.xz"
+    "f44602f800fa6f2fe7112f84cdce990c 1764 rust-xml5ever_0.35.0-1.dsc 912f3ca7e5338284f45bf4862aaf1e64 40626 rust-xml5ever_0.35.0.orig.tar.gz 574a061cb6183cb1570ca9714b03880b 3092 rust-xml5ever_0.35.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/xml5ever]"
   ],
   "Version": [
-    "0.18.1-1"
+    "0.35.0-1"
   ]
 }
