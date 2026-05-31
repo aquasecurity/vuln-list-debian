@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crc32fast-1+default-dev (\u003e= 1.2.0) \u003c!nocheck\u003e, librust-miniz-oxide-0.7+simd-dev \u003c!nocheck\u003e, librust-miniz-oxide-0.7+with-alloc-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crc32fast-1+default-dev (\u003e= 1.2.0) \u003c!nocheck\u003e, librust-miniz-oxide+simd-dev (\u003c\u003c 0.10) \u003c!nocheck\u003e, librust-miniz-oxide+simd-dev (\u003e= 0.7) \u003c!nocheck\u003e, librust-miniz-oxide+with-alloc-dev (\u003c\u003c 0.10) \u003c!nocheck\u003e, librust-miniz-oxide+with-alloc-dev (\u003e= 0.7) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "afcd899193a811a3bcab8931aca417ecf8ff7cc31d1720458143127c6e05478a 1809 rust-flate2_1.1.9-1.dsc 843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c 82745 rust-flate2_1.1.9.orig.tar.gz 820b3eb31a9cf684def6f2898a0c191184ebe30723659c613a1cbd72422c46a9 5992 rust-flate2_1.1.9-1.debian.tar.xz"
+    "077c5c21088c5edde193acdd11a8e95ab3a41628da8539b4472b7b21f5014d53 2567 rust-flate2_1.1.9-2.dsc 843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c 82745 rust-flate2_1.1.9.orig.tar.gz f7dc70f71431d38ee9f4664625cfab57c8b3c9866bd31d64da48e0e37c7d6bc1 5848 rust-flate2_1.1.9-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-flate2"
   ],
   "Files": [
-    "e4c5ddb8fca5de9b8d5fbdf7da644567 1809 rust-flate2_1.1.9-1.dsc c9206a31d6f150dbb558bf9da78ec0e2 82745 rust-flate2_1.1.9.orig.tar.gz 617f8ad0187f5fd881da106f5194454b 5992 rust-flate2_1.1.9-1.debian.tar.xz"
+    "1c02a95c79272aaa0a28458f38e37ed6 2567 rust-flate2_1.1.9-2.dsc c9206a31d6f150dbb558bf9da78ec0e2 82745 rust-flate2_1.1.9.orig.tar.gz deff0425b2de9e28558eb00ea00a60b4 5848 rust-flate2_1.1.9-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3-dev, librust-quickcheck-1-dev, librust-rand+default-dev, rustc"
+    "dh-cargo, librust-futures-0.3-dev, librust-quickcheck-1-dev, librust-rand-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/flate2]"
   ],
   "Version": [
-    "1.1.9-1"
+    "1.1.9-2"
   ]
 }
