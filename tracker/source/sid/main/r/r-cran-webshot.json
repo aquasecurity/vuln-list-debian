@@ -6,16 +6,16 @@
     "r-cran-webshot"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-magrittr, r-cran-jsonlite, r-cran-callr"
+    "debhelper-compat (= 13), dh-r, r-base-dev, r-cran-magrittr, r-cran-jsonlite, r-cran-callr, architecture-is-64-bit, architecture-is-little-endian"
   ],
   "Checksums-Sha256": [
-    "0ac88bf5e55aa380b5fa4ae6738b844ad6591f06f0ab6335c81281a9922f0da1 2101 r-cran-webshot_0.5.5-1.dsc d675913ccac80e0af8ee396f95a24124eae6c42d80aed9f47f7a88218ecbb913 160015 r-cran-webshot_0.5.5.orig.tar.gz bf6ddfc0389260fd8a3d092cf1bde8b2aa1e8bcad59452cb1eb66d7ed071547f 2740 r-cran-webshot_0.5.5-1.debian.tar.xz"
+    "0b1771fbf0b19e0f66925c8ef0bc69444e802e40821e7890d20478cd206c9e1d 2241 r-cran-webshot_0.5.5-2.dsc d675913ccac80e0af8ee396f95a24124eae6c42d80aed9f47f7a88218ecbb913 160015 r-cran-webshot_0.5.5.orig.tar.gz edc4dbc7dac4a2b12db5128ec7ce474ee7d0199e31425b2e59ff270ba717b056 3220 r-cran-webshot_0.5.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-webshot"
   ],
   "Files": [
-    "f9178926c4a650562769d1c23f6c7add 2101 r-cran-webshot_0.5.5-1.dsc 72d833c018161458889af9d9aae8f399 160015 r-cran-webshot_0.5.5.orig.tar.gz d98c5235ceabe70d220911c60b9e6311 2740 r-cran-webshot_0.5.5-1.debian.tar.xz"
+    "c4a5595584aef469477f89703a98236e 2241 r-cran-webshot_0.5.5-2.dsc 72d833c018161458889af9d9aae8f399 160015 r-cran-webshot_0.5.5.orig.tar.gz ca7497adc2af350e3b91775e92fe3cc0 3220 r-cran-webshot_0.5.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-httpuv, r-cran-knitr, r-cran-rmarkdown, r-cran-shiny, r-cran-testthat"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-webshot.git"
   ],
   "Version": [
-    "0.5.5-1"
+    "0.5.5-2"
   ]
 }
