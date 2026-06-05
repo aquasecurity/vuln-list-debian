@@ -6,19 +6,25 @@
     "librust-spin-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.38) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lock-api-0.4+default-dev \u003c!nocheck\u003e, librust-criterion-0.5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, librust-criterion-0.5+default-dev \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lock-api-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5c487f4691a5ca6708037adefd9379d1f070856c680eca44147eba5fcecb5627 2266 rust-spin_0.9.8-4.dsc 5cf300d9b224637725a8b17ec392ef9277a7cac4fd2b25b779588eca7567f575 38893 rust-spin_0.9.8.orig.tar.gz 9628985c6656bc675eea372ff9b2c54355b9bb35c5526b59c8cb805727656ba8 4788 rust-spin_0.9.8-4.debian.tar.xz"
+    "888a81fdeccb53bcf3174b04bb70acee760cdba9640c9a747875805c8e10e9db 1754 rust-spin_0.10.0+dfsg-1.dsc b77a020f92a893be5a200b782336d7eaef6d5cd673353d8d729b784cf83aba24 39625 rust-spin_0.10.0+dfsg.orig.tar.gz 5a602ccea4a4ce55d78596d9179b152b87efe0732ebedbdac78ba47fc2c93ef8 4884 rust-spin_0.10.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-spin"
   ],
   "Files": [
-    "f42c1c251432d235dae9c6f9fd4fd8c7 2266 rust-spin_0.9.8-4.dsc 61bad5fda6dcb66865191ccff69e1bac 38893 rust-spin_0.9.8.orig.tar.gz 1991efbd9b69efd9a672d04f3dfb932e 4788 rust-spin_0.9.8-4.debian.tar.xz"
+    "63803fef2638efcacb9c223d7ded8e03 1754 rust-spin_0.10.0+dfsg-1.dsc aa52d7e5cba65f8454d3f787ca9ed695 39625 rust-spin_0.10.0+dfsg.orig.tar.gz 3643c882536aa7869950b86cfc34410d 4884 rust-spin_0.10.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mvdnes/spin-rs.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/spin]"
   ],
   "Version": [
-    "0.9.8-4"
+    "0.10.0+dfsg-1"
   ]
 }
