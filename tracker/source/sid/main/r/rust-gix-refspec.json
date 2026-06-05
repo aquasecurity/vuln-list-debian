@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0-~~) \u003c!nocheck\u003e, librust-gix-hash-0.19+default-dev \u003c!nocheck\u003e, librust-gix-revision-0.35-dev \u003c!nocheck\u003e, librust-gix-validate-0.10+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1-~~) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-error-0.2+default-dev (\u003e= 0.2.3) \u003c!nocheck\u003e, librust-gix-glob-0.26+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.25+default-dev \u003c!nocheck\u003e, librust-gix-revision-0.45-dev \u003c!nocheck\u003e, librust-gix-validate-0.11+default-dev (\u003e= 0.11.1) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3c968f981bfae04ac9f682aae6edbca8f1ee7678a9a9ea5ab7b5b3f38278cf23 2586 rust-gix-refspec_0.31.0-1.dsc 7d29cae1ae31108826e7156a5e60bffacab405f4413f5bc0375e19772cce0055 22732 rust-gix-refspec_0.31.0.orig.tar.gz 474716515fbd672943173180b2cebfd276db51e68fcfac08f97b56cfb70dd901 2752 rust-gix-refspec_0.31.0-1.debian.tar.xz"
+    "517a8b66b34d531dbb19f1cfe5b4d72a07d83c0f7d6a45b25e59960451edeafb 2086 rust-gix-refspec_0.41.0-1.dsc 61755b27d57edc8940a1b1593c8c61548ca8e4c02da1ed8d5bfeda9eb2a6b761 25570 rust-gix-refspec_0.41.0.orig.tar.gz b6e3aa3f2268306660ba1db17a242737f3f8599b8ddf52848058beb96e51cfed 3016 rust-gix-refspec_0.41.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-refspec"
   ],
   "Files": [
-    "daccf5b13d46c5c2560e7e64133762b6 2586 rust-gix-refspec_0.31.0-1.dsc f5b45a2f5a670d8099967f84d78bb3fe 22732 rust-gix-refspec_0.31.0.orig.tar.gz 2963ee1652f2de4910f5a7204f1531f8 2752 rust-gix-refspec_0.31.0-1.debian.tar.xz"
+    "be032370258167abf4c7e7322fd14593 2086 rust-gix-refspec_0.41.0-1.dsc b03335b62c8153fb01c8af6138f4ad15 25570 rust-gix-refspec_0.41.0.orig.tar.gz d3d72b948ad80e0e345fe475ad4808ab 3016 rust-gix-refspec_0.41.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-refspec]"
   ],
   "Version": [
-    "0.31.0-1"
+    "0.41.0-1"
   ]
 }

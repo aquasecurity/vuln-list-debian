@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gix-chunk-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-gix-diff-0.53-dev \u003c!nocheck\u003e, librust-gix-features-0.43+crc32-dev \u003c!nocheck\u003e, librust-gix-features-0.43+default-dev \u003c!nocheck\u003e, librust-gix-features-0.43+progress-dev \u003c!nocheck\u003e, librust-gix-features-0.43+zlib-dev \u003c!nocheck\u003e, librust-gix-hash-0.19+default-dev \u003c!nocheck\u003e, librust-gix-hashtable-0.9+default-dev \u003c!nocheck\u003e, librust-gix-object-0.50+default-dev \u003c!nocheck\u003e, librust-gix-path-0.10+default-dev (\u003e= 0.10.19-~~) \u003c!nocheck\u003e, librust-gix-tempfile-18-dev \u003c!nocheck\u003e, librust-gix-traverse-0.47+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12-dev (\u003e= 0.12.4-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1-~~) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gix-chunk-0.7+default-dev (\u003e= 0.7.1) \u003c!nocheck\u003e, librust-gix-diff-0.63-dev \u003c!nocheck\u003e, librust-gix-error-0.2+default-dev (\u003e= 0.2.3) \u003c!nocheck\u003e, librust-gix-features-0.48+crc32-dev \u003c!nocheck\u003e, librust-gix-features-0.48+default-dev \u003c!nocheck\u003e, librust-gix-features-0.48+progress-dev \u003c!nocheck\u003e, librust-gix-features-0.48+zlib-dev \u003c!nocheck\u003e, librust-gix-hash-0.25+default-dev \u003c!nocheck\u003e, librust-gix-hashtable-0.15+default-dev \u003c!nocheck\u003e, librust-gix-object-0.60+default-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev \u003c!nocheck\u003e, librust-gix-tempfile-23-dev \u003c!nocheck\u003e, librust-gix-traverse-0.57+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12-dev (\u003e= 0.12.4) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0df2e4c100e6d904922b17c36753090d7da76aed6bf2efce184db4f4d7f5866c 3059 rust-gix-pack_0.60.0-1.dsc d8571df89bfca5abb49c3e3372393f7af7e6f8b8dbe2b96303593cef5b263019 104780 rust-gix-pack_0.60.0.orig.tar.gz bab0d676454a023ca02525720b5e6a3bb8ce2959bc7d862f380b686420230816 3412 rust-gix-pack_0.60.0-1.debian.tar.xz"
+    "8cc51bd4797e0ce436dd78d42a0c407dd7c3373fba4abd4b97689a8650372d33 2522 rust-gix-pack_0.70.0-1.dsc daf02e6f5c8f07a069c9ea5245f40d9b14856ada4086091dc99941b49002b4fa 109659 rust-gix-pack_0.70.0.orig.tar.gz 25fc531c3c60ccb10b616217d44f77268bc8698c9f6bc744a4eb90cf67fcb2ed 3580 rust-gix-pack_0.70.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-pack"
   ],
   "Files": [
-    "9e875182cfd7228d96dddd3ef59ed388 3059 rust-gix-pack_0.60.0-1.dsc 5bed1e150944ae9e9f0aa05f2778e8b7 104780 rust-gix-pack_0.60.0.orig.tar.gz 6db866be6cbec776b6593f0a158da9d4 3412 rust-gix-pack_0.60.0-1.debian.tar.xz"
+    "b04864463f1c64ea0a80123f4167331f 2522 rust-gix-pack_0.70.0-1.dsc 7c4eeee9c8631ef33499e94b1c12ac8d 109659 rust-gix-pack_0.70.0.orig.tar.gz e981ec23a1e9f24b51f00879a974ed4b 3580 rust-gix-pack_0.70.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-gix-hash-0.25+default-dev, librust-gix-hash-0.25+sha256-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-pack]"
   ],
   "Version": [
-    "0.60.0-1"
+    "0.70.0-1"
   ]
 }
