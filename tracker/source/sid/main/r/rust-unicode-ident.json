@@ -6,19 +6,25 @@
     "librust-unicode-ident-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d30166bfa090ceedabbca6e08d3d8991546b5e4aa0a7bbe1a7a07cf0be159c97 2167 rust-unicode-ident_1.0.13-1.dsc e91b56cd4cadaeb79bbf1a5645f6b4f8dc5bde8834ad5894a8db35fda9efa1fe 43279 rust-unicode-ident_1.0.13.orig.tar.gz cf78eb5c66b75a14386b5ae4e8341d9d020bf8b9bdf0a38a9e71079cd021f10d 2904 rust-unicode-ident_1.0.13-1.debian.tar.xz"
+    "4425ecd0accedfb0be4cafcd4d4f13514cead1a98222dd518ff4e533cbcea048 2136 rust-unicode-ident_1.0.24-1.dsc e6e4313cd5fcd3dad5cafa179702e2b244f760991f45397d14d4ebf38247da75 49298 rust-unicode-ident_1.0.24.orig.tar.gz b1cd97c609df960648131acabb9d03e40a2758852548ebb0e9efe5ab2ba8d75c 3828 rust-unicode-ident_1.0.24-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-ident"
   ],
   "Files": [
-    "42cbc0bfed4474c72d2c027f4297440a 2167 rust-unicode-ident_1.0.13-1.dsc 7692382986a2373fe5b5574ffe03e927 43279 rust-unicode-ident_1.0.13.orig.tar.gz 52c3568981cff6686a8d50eed5445dd2 2904 rust-unicode-ident_1.0.13-1.debian.tar.xz"
+    "ca3d0a5494c5887eee27226779ed3e6c 2136 rust-unicode-ident_1.0.24-1.dsc 49fb2204154a5fe5320366aa88b84291 49298 rust-unicode-ident_1.0.24.orig.tar.gz 51675c85c068400f81be6ee46c6cce52 3828 rust-unicode-ident_1.0.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/unicode-ident"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-criterion-0.5-dev, librust-fst-0.4+default-dev, librust-rand-0.10+default-dev, librust-roaring-0.11+default-dev, librust-ucd-trie-0.1-dev, librust-unicode-xid-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-ident]"
   ],
   "Version": [
-    "1.0.13-1"
+    "1.0.24-1"
   ]
 }
