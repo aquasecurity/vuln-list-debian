@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ipnetwork+serde-dev (\u003c\u003c 0.22-~~) \u003c!nocheck\u003e, librust-ipnetwork+serde-dev (\u003e= 0.17-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ipnetwork-0.21+default-dev (\u003e= 0.21.1) \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f5a65219013203affd185443b4431e9d0879f29a0e09f675d4938d97708f80e5 2576 rust-maxminddb_0.24.0-3.dsc d6087e5d8ea14861bb7c7f573afbc7be3798d3ef0fae87ec4fd9a4de9a127c3c 20232 rust-maxminddb_0.24.0.orig.tar.gz 25bfee9ed43417ba5ae6b68ff39afdfee31babc6f32ca7d626b299817f882320 3672 rust-maxminddb_0.24.0-3.debian.tar.xz"
+    "39dcd6b0c9f7a56acafb723188b5fde6130597429309ae7bb8943fe6524fa11c 2604 rust-maxminddb_0.28.1-2.dsc faf6467428ad055b71e588bcedcbaf2ff605b3251deb0c52be4a04b674c546dd 51625 rust-maxminddb_0.28.1.orig.tar.gz 6cfa8556081eca56135069975da1cf756821bd4d6b22d7370fa24a6859ecf576 5308 rust-maxminddb_0.28.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-maxminddb"
   ],
   "Files": [
-    "41e38213ddfb141d98118f21e631746c 2576 rust-maxminddb_0.24.0-3.dsc 745862e32895b36bbc98cd7c9ef1c278 20232 rust-maxminddb_0.24.0.orig.tar.gz 1eed0510281cca627c9876279791a329 3672 rust-maxminddb_0.24.0-3.debian.tar.xz"
+    "8965d2f862ccbe570dcaa313317d8fd6 2604 rust-maxminddb_0.28.1-2.dsc 1a179a72e13ef3e1359c9504d7905a68 51625 rust-maxminddb_0.28.1.orig.tar.gz 0d69c800668feea4e5af0406e381210d 5308 rust-maxminddb_0.28.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.11+default-dev, librust-rayon-1+default-dev, rustc"
+    "dh-cargo, librust-env-logger-0.11+default-dev, librust-rayon-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/maxminddb]"
   ],
   "Version": [
-    "0.24.0-3"
+    "0.28.1-2"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-executable-path-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "beb8c350dc7149e695ebec1e905a5235cb40036aff8d2e69551c4eacb08a0192 2234 rust-executable-path_1.0.0-1.dsc 3ebc5a6d89e3c90b84e8f33c8737933dda8f1c106b5415900b38b9d433841478 3897 rust-executable-path_1.0.0.orig.tar.gz 11804a74f1aee88846811c6835f90696c7587da16bdf65e7bd186bbeef82d4af 1924 rust-executable-path_1.0.0-1.debian.tar.xz"
+    "13b9cea1e5ca45ce0bfa635717aaa4becbe5081f9a81e73d9c0436f470801a9b 2289 rust-executable-path_1.0.1-1.dsc ed24d6e921ad38aab6fd62771e8efb75ace61383312a663bcfcf268033d15d8b 4248 rust-executable-path_1.0.1.orig.tar.gz c24daade85a7e83ac6d85a71ad01aeb74a4a6d8be3483064b34d44713af29b5d 2028 rust-executable-path_1.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-executable-path"
   ],
   "Files": [
-    "e2fc593c23597f1a6230ee85c05a31f9 2234 rust-executable-path_1.0.0-1.dsc 2de45c278dcf906a40ec47f66ac132f2 3897 rust-executable-path_1.0.0.orig.tar.gz f94f1627b0efeff01466164c5ed9cba1 1924 rust-executable-path_1.0.0-1.debian.tar.xz"
+    "b20eadf37e8e4532b9d6dbae3543e2f7 2289 rust-executable-path_1.0.1-1.dsc 27e71be7693967d5bd0085ae9421e915 4248 rust-executable-path_1.0.1.orig.tar.gz b68ea4f06494d3e79fa0783260318dc2 2028 rust-executable-path_1.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/executable-path"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/executable-path]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.1-1"
   ]
 }

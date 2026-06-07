@@ -6,19 +6,25 @@
     "librust-simd-adler32-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "982fff993dbdf7818ee86611f461cfde3eaf846cc05cce854068b0ddbbad0a76 2403 rust-simd-adler32_0.3.7-1.dsc d66dc143e6b11c1eddc06d5c423cfc97062865baf299914ab64caa38182078fe 12086 rust-simd-adler32_0.3.7.orig.tar.gz c50be8740b32dc5460d266dfb9a4620fcb27d50a0d09a119e2e6435d6cadde36 2744 rust-simd-adler32_0.3.7-1.debian.tar.xz"
+    "59b6cb80cb5728285c1877cabcf105fc9b166ea2705218f8afe0be630e1b4def 2427 rust-simd-adler32_0.3.9-1.dsc 703d5c7ef118737c72f1af64ad2f6f8c5e1921f818cdcb97b8fe6fc69bf66214 18572 rust-simd-adler32_0.3.9.orig.tar.gz ba5a5511fdea1a0eebdbf2684e9e8b2ade3debace1b25504e835355c96d50539 2920 rust-simd-adler32_0.3.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-simd-adler32"
   ],
   "Files": [
-    "b284865c4a3de4722446640e49134582 2403 rust-simd-adler32_0.3.7-1.dsc d0116882bd495f2b993495a8cf01f6fe 12086 rust-simd-adler32_0.3.7.orig.tar.gz 578e41a7b0e04d91408bc29715c08e60 2744 rust-simd-adler32_0.3.7-1.debian.tar.xz"
+    "996e0782309fa72020851131990f359a 2427 rust-simd-adler32_0.3.9-1.dsc a6f26bdbe238d4ed4899016a1e958c69 18572 rust-simd-adler32_0.3.9.orig.tar.gz 14441af386f0a6d74c7dbebe5238bd1d 2920 rust-simd-adler32_0.3.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mcountryman/simd-adler32"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-adler-1+default-dev, librust-adler32-1+default-dev, librust-criterion-0.3+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-adler-1+default-dev, librust-adler32-1+default-dev, librust-criterion-0.5+default-dev, librust-rand-0.8+default-dev, librust-rand-0.8+small-rng-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/simd-adler32"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/simd-adler32]"
   ],
   "Version": [
-    "0.3.7-1"
+    "0.3.9-1"
   ]
 }
