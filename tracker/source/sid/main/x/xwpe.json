@@ -6,16 +6,16 @@
     "xwpe"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pkgconf, texinfo, libgpmg1-dev [linux-any], libncurses-dev, libx11-dev, libxft-dev, libfontconfig-dev, x11proto-core-dev, zlib1g-dev"
+    "debhelper-compat (= 13), pkgconf, texinfo, libgpmg1-dev [linux-any], libncurses-dev, libx11-dev, libxext-dev, libxft-dev, libfontconfig-dev, libfreetype-dev, libcairo2-dev, libpango1.0-dev, x11proto-core-dev, zlib1g-dev, librsvg2-bin"
   ],
   "Checksums-Sha256": [
-    "2371e8a5081c046bef7d588088339dc20f4e206cbfefdc723d0f8d15de36a422 2053 xwpe_1.6.2-1.dsc 8adf2adfd0ae335e03af0c735c8b3a37495dbe8ec8992d18f913cacc6b763297 372564 xwpe_1.6.2.orig.tar.xz 976f2506bbaa844272824b5e19e8e95bb5b051b7affcd090b72a4fde863b058e 7624 xwpe_1.6.2-1.debian.tar.xz"
+    "97fb114bb2cc399904e1c2af00e69d793366e9f5d35ee9f90ce0309818649181 2368 xwpe_1.6.3-1.dsc ec93a1712cee90c21c11e2c10db60895b1024bc61d85022701188c12514b2d37 617376 xwpe_1.6.3.orig.tar.xz 745050174357ccc392a79f768909c9897cdfba588f412c3d8b29131ae061d8dd 12112 xwpe_1.6.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/x/xwpe"
   ],
   "Files": [
-    "fd0034e6e99c448f65d15d84b14c5292 2053 xwpe_1.6.2-1.dsc 7e952a98307288d56640b33d656d7956 372564 xwpe_1.6.2.orig.tar.xz 3a7d38ff4c8c686d122e3054fd3339e8 7624 xwpe_1.6.2-1.debian.tar.xz"
+    "33fcdd4e7d8bec98ba9a7981fd5fa274 2368 xwpe_1.6.3-1.dsc 9d06499e9006fce80a9441fe394d366e 617376 xwpe_1.6.3.orig.tar.xz 82c2f8d46489f21d9a0a69b2eb6e3124 12112 xwpe_1.6.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,8 +41,14 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "fp-compiler, g++, gcc, gdb, gfortran, imagemagick, libc6-dev, locales-all, matchbox-window-manager, perl, python3-pil, python3-pyte, python3-pytest, x11-apps, x11-xserver-utils, xdotool, xvfb"
+  ],
   "Uploaders": [
-    "Francesco Paolo Lovergine \u003cfrankie@debian.org\u003e, Juan Manuel Mendez Rey \u003cjuan.mendezr@proton.me\u003e"
+    "Francesco Paolo Lovergine \u003cfrankie@debian.org\u003e, Juan Manuel Méndez Rey \u003cjuan.mendezr@proton.me\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/xwpe"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/xwpe.git"
   ],
   "Version": [
-    "1.6.2-1"
+    "1.6.3-1"
   ]
 }
