@@ -6,10 +6,10 @@
     "python3-s3fs"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-aiobotocore, python3-aiohttp, python3-all, python3-fsspec, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-aiobotocore, python3-aiohttp, python3-all, python3-fsspec, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "8f5d70deae1537bc88e90c5b2979d2dc40588a40225a9967c94a47bc7417d279 3102 python-s3fs_2026.3.0-1.dsc 3c5dfed167e10faa2b520dd72c7694cfd99953bf6bb7bf3b914c8b8a9fd6342f 98983 python-s3fs_2026.3.0.orig.tar.gz 82d0c5adff94596c3740f95aea877817c0cfdcb39bcfe4cd8351413379e2efa9 4896 python-s3fs_2026.3.0-1.debian.tar.xz"
+    "56222cb9f90cf9f57a0f51d3d947643c0c7bb472bab678e3bb811e22f5cced4b 3128 python-s3fs_2026.4.0-1.dsc e6624aff07c13717541c56e71b7b86efedbe106331a070bbd4fad31b9cde2ba8 98976 python-s3fs_2026.4.0.orig.tar.gz 18f1e7a53f40c748eb33e7a876c9edf24d2e9bea42bc3bbec5a87433443afbd2 5132 python-s3fs_2026.4.0-1.debian.tar.xz"
   ],
   "Description": [
     "Convenient Filesystem interface over S3 Pythonic file interface to S3, s3fs builds on top of botocore. . The top-level class S3FileSystem holds connection information and allows typical file-system style operations like cp, mv, ls, du, glob, etc., as well as put/get of local files to/from S3. . The connection can be anonymous - in which case only publicly-available, read-only buckets are accessible - or via credentials explicitly supplied or in configuration files. . Calling open() on a S3FileSystem (typically using a context manager) provides an S3File for read or write access to a particular key. The object emulates the standard File protocol (read, write, tell, seek), such that functions expecting a file can access S3. Only binary read and write modes are implemented, with blocked caching. . S3Fs uses and is based upon fsspec."
@@ -18,7 +18,7 @@
     "pool/main/p/python-s3fs"
   ],
   "Files": [
-    "84cd4912f582ca235b7222c892dd6551 3102 python-s3fs_2026.3.0-1.dsc 9057f9a37500c87b9302b450b324997e 98983 python-s3fs_2026.3.0.orig.tar.gz 865bf762bd559713b7f5faa88d8f6813 4896 python-s3fs_2026.3.0-1.debian.tar.xz"
+    "02c25d44812beaa55f7adde7f3c753be 3128 python-s3fs_2026.4.0-1.dsc 605a9f147ab1768ff2ab9bc672d992a3 98976 python-s3fs_2026.4.0.orig.tar.gz d8ae92e17566f73ac73d08bdad1b4f6a 5132 python-s3fs_2026.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian-gis-team/python-s3fs.git"
   ],
   "Version": [
-    "2026.3.0-1"
+    "2026.4.0-1"
   ]
 }
