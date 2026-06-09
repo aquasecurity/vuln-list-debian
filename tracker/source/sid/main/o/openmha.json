@@ -6,16 +6,16 @@
     "openmha"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pkgconf, portaudio19-dev, sfftw-dev, libasio-dev, libeigen3-dev, libgtest-dev, libgmock-dev, libjack-jackd2-dev | libjack-dev, liblo-dev, liblsl-dev, libsndfile1-dev"
+    "debhelper-compat (= 13), doxygen \u003c!nodoc\u003e, fig2dev \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, libasio-dev, libeigen3-dev, libgmock-dev, libgtest-dev, libjack-jackd2-dev | libjack-dev, liblo-dev, liblsl-dev, libsndfile1-dev, netpbm \u003c!nodoc\u003e, pkgconf, portaudio19-dev, sfftw-dev, texlive \u003c!nodoc\u003e, texlive-font-utils \u003c!nodoc\u003e, texlive-latex-extra \u003c!nodoc\u003e, texlive-plain-generic \u003c!nodoc\u003e, zip \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "3ff052b073740ed1c9fca6809c2347f17463db23ad8ca128007fa413731cd244 2114 openmha_4.18.0-3.dsc b0fff35464e86370bd757861e95f44226cc0f2830c08111e82447f28fd1ef17a 34545952 openmha_4.18.0.orig.tar.xz b14e89fdf20ca2411365de48e715bf5ef0a6025e86793edac97133796ce0c9d8 11964 openmha_4.18.0-3.debian.tar.xz"
+    "5a5564b754bae8a93928fe70439ffe175e4e8d91c4dcddb6ba3a553fe1d8573c 2412 openmha_4.18.1-1.dsc 1a15b415c6b49d63402c1b52a7b0c462941c28bd629ba0a1daa5b22b4645c885 34238308 openmha_4.18.1.orig.tar.xz 78c1b845e2c37154605c62951458f9f343ad66259c45eb7ceee6e55fd00ca904 10232 openmha_4.18.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openmha"
   ],
   "Files": [
-    "aca7875d5eba4edd50efebfc0b409e10 2114 openmha_4.18.0-3.dsc df412351495de4cc0fe92fe6cc662816 34545952 openmha_4.18.0.orig.tar.xz 93217b1479ec10ec092ff7a3b9c5a292 11964 openmha_4.18.0-3.debian.tar.xz"
+    "a5688c0030b9cb93dfb08fe37c973f43 2412 openmha_4.18.1-1.dsc 0e46ab3b1cb46c434dbcb62610fc8e90 34238308 openmha_4.18.1.orig.tar.xz c4595ac93b7dd411f022b3e333c0cc12 10232 openmha_4.18.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "default-jre-headless, netcat-openbsd, octave, octave-signal"
+  ],
   "Uploaders": [
     "Christopher Obbard \u003cobbardc@debian.org\u003e"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/multimedia-team/openmha.git"
   ],
   "Version": [
-    "4.18.0-3"
+    "4.18.1-1"
   ]
 }
