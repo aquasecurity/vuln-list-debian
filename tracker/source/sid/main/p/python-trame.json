@@ -6,16 +6,16 @@
     "python3-trame"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-msgpack \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-trame-common"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-msgpack \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-trame-client, python3-trame-common, python3-trame-server"
   ],
   "Checksums-Sha256": [
-    "99f7d9d0500d55879085f5bcb2912f6e3485064045d12129012915a7c3bcb2e0 2264 python-trame_3.12.0-2.dsc 394a10ef6565a8d0b67cb58209242c1e7f1b6f24644d907a6db6121ea016fa36 88011320 python-trame_3.12.0.orig.tar.gz f7bf4f181dd4e319b54c80cda387fea0553285069c61fe595d45695e338b38ab 1664 python-trame_3.12.0-2.debian.tar.xz"
+    "249c9b2414d8d99b41c43a33107c1a8e167737160209908a2244fb9f8b994123 2395 python-trame_3.13.2-1.dsc 12cf5a05664e9dfad53bd9980390264f38e178398bebe5206ba20ee1fd2eade0 78464300 python-trame_3.13.2.orig.tar.xz f0b77fab2bc75a57c9f7fd6d0129a9b5992cb48941d47a77e93f7e78bc7724f8 2612 python-trame_3.13.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-trame"
   ],
   "Files": [
-    "f2168da70a57deffac01b3034a82850c 2264 python-trame_3.12.0-2.dsc 36f861db139a0d8b134ea2970904b975 88011320 python-trame_3.12.0.orig.tar.gz c1a0437f98aac6c2c0e5fa69c86f69cf 1664 python-trame_3.12.0-2.debian.tar.xz"
+    "497b955ed1d43751a8d576c24b5db507 2395 python-trame_3.13.2-1.dsc fc94ed851b7bd52565433aa07e9acc55 78464300 python-trame_3.13.2.orig.tar.xz b6a6ca9ccdb54eba2aa016ecd07bf0bb 2612 python-trame_3.13.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.6"
+    "4.7.3"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, python3, python3-pytest"
   ],
   "Uploaders": [
-    "Debian PaN Maintainers \u003cdebian-pan-maintainers@alioth-lists.debian.net\u003e, Roland Mas \u003clolando@debian.org\u003e,"
+    "Debian PaN Maintainers \u003cdebian-pan-maintainers@alioth-lists.debian.net\u003e, Roland Mas \u003clolando@debian.org\u003e, Francesco Ballarin \u003cballarin@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-trame"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-trame.git"
   ],
   "Version": [
-    "3.12.0-2"
+    "3.13.2-1"
   ]
 }
