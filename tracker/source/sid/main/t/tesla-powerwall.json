@@ -8,17 +8,29 @@
   "Build-Depends": [
     "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aresponses \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
+  ],
   "Checksums-Sha256": [
-    "1fb71a3d9a36abc888075d2cd36121b24b046b608a8af68d35b0a8c3c58dd08f 2105 tesla-powerwall_0.5.2-2.dsc 6573d6fad944a3a28cd517d2cc4a6519bea7a1244f32c8c4dcb600dfdb45c4b3 24625 tesla-powerwall_0.5.2.orig.tar.gz e301eff7f3103eecefead418ff51749e082f7fbbc0a67fdbab6838ad7b75395a 2292 tesla-powerwall_0.5.2-2.debian.tar.xz"
+    "8e0675eb422b9b22d2a5780c1f516a6747f2864f062263b4b471fb18dc3d0896 2546 tesla-powerwall_0.5.3-1.dsc 38a86480ae1436eba39492220cd6ebe49b036b465a0201b2ff1e94e47bece118 22220 tesla-powerwall_0.5.3.orig.tar.xz 77f1a47ba7e94375ca49040eb407acb2c8cc355f468c6d9e978cea4cf9c523ce 2532 tesla-powerwall_0.5.3-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "db7fb19e03f3a48976406aac564fb2d7ea7ea826 debian archive/debian/0.5.3-1 https://git.dgit.debian.org/tesla-powerwall"
   ],
   "Directory": [
     "pool/main/t/tesla-powerwall"
   ],
   "Files": [
-    "d98ab19fb319d849cf1a68d7c80e6731 2105 tesla-powerwall_0.5.2-2.dsc 20d003d2fcca9627129ee2dc1edcc511 24625 tesla-powerwall_0.5.2.orig.tar.gz e62090d52961ee882eb4f855d49a03eb 2292 tesla-powerwall_0.5.2-2.debian.tar.xz"
+    "fbf2c8bb84dd6832fdba8434cf4536d2 2546 tesla-powerwall_0.5.3-1.dsc da6cea38bc849fa509935528e34aa406 22220 tesla-powerwall_0.5.3.orig.tar.xz 56c89361aa6cbcf1a3ef8dee38faee58 2532 tesla-powerwall_0.5.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=8d56c4b333d66247764477855d3b868b1a83ad67 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/jrester/tesla_powerwall"
@@ -39,7 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -51,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/tesla-powerwall.git"
   ],
   "Version": [
-    "0.5.2-2"
+    "0.5.3-1"
   ]
 }
