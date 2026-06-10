@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ratatui-0.29+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.1+default-dev (\u003e= 0.1.14-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ratatui-0.30+crossterm-dev \u003c!nocheck\u003e, librust-unicode-segmentation-1+default-dev (\u003e= 1.13) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev (\u003e= 0.2.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ea2e4349e7fdeb8a00d9c912e1315feb02d0f5d5b16c4f82980a5f174d110105 1731 rust-tui-input_0.11.1-2.dsc e5d1733c47f1a217b7deff18730ff7ca4ecafc5771368f715ab072d679a36114 12504 rust-tui-input_0.11.1.orig.tar.gz fa076cb490247792ffaded9b27d476dbf44d5e4f137d640d70654a36d575be32 3020 rust-tui-input_0.11.1-2.debian.tar.xz"
+    "1c432f5b19d9b3774d9c61cfb941c0554e15f5c4a6c5bbba3d14d25d1dad2bf9 2462 rust-tui-input_0.15.3-3.dsc 0bd014a652e31cf25ea68d11b10a7b09549863449b19387505c9933f11eb05fa 24785 rust-tui-input_0.15.3.orig.tar.gz e3e6b0749496a57b434b8ae278dfd8c13da6af89e5818d6f07ff4b17238d7335 3244 rust-tui-input_0.15.3-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tui-input"
   ],
   "Files": [
-    "bee321784b7a34af304c140399cd516f 1731 rust-tui-input_0.11.1-2.dsc ae4fa13ec665e748c74cab3dacb87a0d 12504 rust-tui-input_0.11.1.orig.tar.gz 46e6fb8039946de5858b462ff5046ee1 3020 rust-tui-input_0.11.1-2.debian.tar.xz"
+    "c5a97fcc74d7b5ecd56fc840b9d065cc 2462 rust-tui-input_0.15.3-3.dsc 7ad8dec53c8e408951ab9b82faebe723 24785 rust-tui-input_0.15.3.orig.tar.gz 7f14c3bed0552dcc5a9f25daa6c4977e 3244 rust-tui-input_0.15.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sudip Mukherjee \u003csudipm.mukherjee@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tui-input]"
   ],
   "Version": [
-    "0.11.1-2"
+    "0.15.3-3"
   ]
 }
