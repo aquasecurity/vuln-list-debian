@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native, rustc:native (\u003e= 1.85), libstd-rust-dev, librust-abscissa-core-0.9+default-dev, librust-cargo-lock-11+default-dev, librust-clap-4+default-dev, librust-display-error-chain-0.2+default-dev, librust-home-0.5+default-dev, librust-rustsec-0.32+binary-scanning-dev, librust-rustsec-0.32+default-dev, librust-rustsec-0.32+dependency-tree-dev, librust-serde-1+default-dev, librust-serde-1+serde-derive-dev, librust-serde-json-1+default-dev, librust-thiserror-2+default-dev"
+    "cargo:native, rustc:native (\u003e= 1.88), libstd-rust-dev, librust-abscissa-core-0.9+default-dev, librust-cargo-lock-11+default-dev, librust-clap-4+default-dev, librust-display-error-chain-0.2+default-dev, librust-home-0.5+default-dev, librust-object+read-dev (\u003c\u003c 0.40), librust-object+read-dev (\u003e= 0.36), librust-rustc-demangle-0.1+default-dev, librust-rustsec-0.33+binary-scanning-dev, librust-rustsec-0.33+default-dev, librust-rustsec-0.33+dependency-tree-dev, librust-serde-1+default-dev, librust-serde-1+serde-derive-dev, librust-serde-json-1+default-dev, librust-syn-2+default-dev, librust-syn-2+extra-traits-dev, librust-thiserror-2+default-dev"
   ],
   "Checksums-Sha256": [
-    "0dda158c83f90223ed639183a24fa25f240ebffff0d9800a6dc50b9c10a1aa8e 2249 rust-cargo-audit_0.22.1-1.dsc 2f4e27b0ab2d116c87c29db159ad42565cdcdccf77eb62ef0486ddd017a02da6 58017 rust-cargo-audit_0.22.1.orig.tar.gz 2cdd9b3371963df9221193e02b25d8a26a391d6f3b8aa7d2c4da245c0f9e2b6b 3380 rust-cargo-audit_0.22.1-1.debian.tar.xz"
+    "b040ccb608e334694893467928e8e952a568736932d43213434b73fb1d32fd3f 3050 rust-cargo-audit_0.22.2-1.dsc 700c2b240f7fd330c24b675fe429f73a5b676531fcc6300400b2b67f155ba12a 63768 rust-cargo-audit_0.22.2.orig.tar.gz 4a7d0eb8ae113e7e7bedcb6614749457851b6c4764b961f9bc6d26c3a16f1f29 4164 rust-cargo-audit_0.22.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cargo-audit"
   ],
   "Files": [
-    "b5a8d70b381cc15aa36d4cdb2eba2d00 2249 rust-cargo-audit_0.22.1-1.dsc fad8b93cd4b515549a1a4007f634354c 58017 rust-cargo-audit_0.22.1.orig.tar.gz 0bee66fe62ed1744efc1a9113c144b81 3380 rust-cargo-audit_0.22.1-1.debian.tar.xz"
+    "26060a096ef22c9c8002810f58f36d76 3050 rust-cargo-audit_0.22.2-1.dsc e2ebca79b0c0cb1a9792cc1714f64d41 63768 rust-cargo-audit_0.22.2.orig.tar.gz a389d2490902faa2129745f95153d90c 4164 rust-cargo-audit_0.22.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-abscissa-core-0.9+default-dev, librust-abscissa-core-0.9+testing-dev, librust-once-cell-1+default-dev, librust-tempfile-3+default-dev, librust-toml-0.9+default-dev, rustc"
+    "dh-cargo, librust-abscissa-core-0.9+default-dev, librust-abscissa-core-0.9+testing-dev, librust-once-cell-1+default-dev, librust-tempfile-3+default-dev, librust-toml-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cargo-audit]"
   ],
   "Version": [
-    "0.22.1-1"
+    "0.22.2-1"
   ]
 }

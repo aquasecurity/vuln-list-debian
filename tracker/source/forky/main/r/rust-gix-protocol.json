@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0-~~) \u003c!nocheck\u003e, librust-bstr-1+unicode-dev (\u003e= 1.12.0-~~) \u003c!nocheck\u003e, librust-gix-date-0.10+default-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e, librust-gix-features-0.43+default-dev \u003c!nocheck\u003e, librust-gix-features-0.43+progress-dev \u003c!nocheck\u003e, librust-gix-hash-0.19+default-dev \u003c!nocheck\u003e, librust-gix-ref-0.53+default-dev \u003c!nocheck\u003e, librust-gix-shallow-0.5+default-dev \u003c!nocheck\u003e, librust-gix-transport-0.48+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.3+default-dev \u003c!nocheck\u003e, librust-maybe-async-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-winnow-0.7+default-dev (\u003e= 0.7.10-~~) \u003c!nocheck\u003e, librust-winnow-0.7+simd-dev (\u003e= 0.7.10-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-bstr-1+unicode-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-date-0.15+default-dev (\u003e= 0.15.3) \u003c!nocheck\u003e, librust-gix-features-0.48+default-dev \u003c!nocheck\u003e, librust-gix-features-0.48+progress-dev \u003c!nocheck\u003e, librust-gix-hash-0.25+default-dev \u003c!nocheck\u003e, librust-gix-ref-0.63+default-dev \u003c!nocheck\u003e, librust-gix-shallow-0.12+default-dev \u003c!nocheck\u003e, librust-gix-transport-0.57+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.3+default-dev (\u003e= 0.3.2) \u003c!nocheck\u003e, librust-maybe-async-0.2+default-dev (\u003e= 0.2.6) \u003c!nocheck\u003e, librust-nonempty-0.11+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d1822645007ffc6d85d857c3ed1826b1ed077beb6816c8fde9bb35362a5055ac 3154 rust-gix-protocol_0.51.0-1.dsc 12b4b807c47ffcf7c1e5b8119585368a56449f3493da93b931e1d4239364e922 57539 rust-gix-protocol_0.51.0.orig.tar.gz 8cf3ce5be6dce2404d06d23cf33ccd54f10f8650d2b0835fa0decbbbda2731bb 3468 rust-gix-protocol_0.51.0-1.debian.tar.xz"
+    "82642a31a8b41a4ed0a7bbc76dd139eddd2c85198f23f5891f044116196ad68f 3083 rust-gix-protocol_0.61.0-2.dsc aa4bee82db63ec635996b96efae71cf467c155fa3f34a556184373224a26c4fd 59016 rust-gix-protocol_0.61.0.orig.tar.gz 844b626c6b36f0004983694d764247ce8873593a7bbfc335872c0526eca9247e 3852 rust-gix-protocol_0.61.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-protocol"
   ],
   "Files": [
-    "eb11289cf3e3021c9ef8631fd4c5e755 3154 rust-gix-protocol_0.51.0-1.dsc a4bc6f50d2856d9bf3b0d624150ecb1e 57539 rust-gix-protocol_0.51.0.orig.tar.gz 6c7497eb142a4c49ae9f3a5dea2a3d8b 3468 rust-gix-protocol_0.51.0-1.debian.tar.xz"
+    "d7cb8b1eebda6d3f8c70a080faea6fbe 3083 rust-gix-protocol_0.61.0-2.dsc 9ee2bd793fff93b9d1f4b111cd55a926 59016 rust-gix-protocol_0.61.0.orig.tar.gz cdaf3ad8af73579eda453aeb2f4e9422 3852 rust-gix-protocol_0.61.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-gix-packetline-0.19+default-dev, rustc"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-gix-packetline-0.21+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-protocol]"
   ],
   "Version": [
-    "0.51.0-1"
+    "0.61.0-2"
   ]
 }

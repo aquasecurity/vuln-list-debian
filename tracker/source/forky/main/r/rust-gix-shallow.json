@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1-dev (\u003e= 1.12.0-~~) \u003c!nocheck\u003e, librust-gix-hash-0.19+default-dev \u003c!nocheck\u003e, librust-gix-lock-18+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-hash-0.25+default-dev \u003c!nocheck\u003e, librust-gix-lock-23+default-dev \u003c!nocheck\u003e, librust-nonempty-0.11+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ebc27669f1cd3b16f9a4342b1a4b440dd9282b14604894f83a5bc103cbd6261c 2485 rust-gix-shallow_0.5.0-1.dsc d936745103243ae4c510f19e0760ce73fb0f08096588fdbe0f0d7fb7ce8944b7 12178 rust-gix-shallow_0.5.0.orig.tar.gz ef8370bd7a2db072bc21cdf29df3deb289e34afdd53dc3eae62fff0ee816c6ed 2664 rust-gix-shallow_0.5.0-1.debian.tar.xz"
+    "69ec80057c8fd25161c5ee4713535535c9b06d80023743019c3a04222b21576e 1929 rust-gix-shallow_0.12.0-1.dsc 29187305521bfacf4aefd284ab28dbfa9fb74abd39a5e63dd313b1baa5808c27 13754 rust-gix-shallow_0.12.0.orig.tar.gz a11e4bd02e5b2c5f71bf7b05478a1f59b891ee0dfb96f081387fc6984e109086 3132 rust-gix-shallow_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-shallow"
   ],
   "Files": [
-    "9eafddf45e8cb42864cb074e0c2e4f1f 2485 rust-gix-shallow_0.5.0-1.dsc 1aa139cf918670e02dd225075d1e5f35 12178 rust-gix-shallow_0.5.0.orig.tar.gz f2043c8cd60be2e879b9e4c290ab41a5 2664 rust-gix-shallow_0.5.0-1.debian.tar.xz"
+    "101165099750fc2c3ca6d7f40f53c423 1929 rust-gix-shallow_0.12.0-1.dsc 55cd7d4188b5fb5c66a7bf3af2f5cf3f 13754 rust-gix-shallow_0.12.0.orig.tar.gz 6cbd3952282742144319433df311a231 3132 rust-gix-shallow_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-shallow]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.12.0-1"
   ]
 }
