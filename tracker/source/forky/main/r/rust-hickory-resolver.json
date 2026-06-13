@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-hickory-proto-0.24+tokio-runtime-dev (\u003e= 0.24.3-~~) \u003c!nocheck\u003e, librust-hickory-proto-0.24-dev (\u003e= 0.24.3-~~) \u003c!nocheck\u003e, librust-lru-cache-0.1+default-dev (\u003e= 0.1.2-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-resolv-conf-0.7+default-dev \u003c!nocheck\u003e, librust-resolv-conf-0.7+system-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.20-~~) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.21-~~) \u003c!nocheck\u003e, librust-tracing-0.1+default-dev (\u003e= 0.1.30-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.5) \u003c!nocheck\u003e, librust-hickory-proto-0.25+std-dev \u003c!nocheck\u003e, librust-hickory-proto-0.25+tokio-dev \u003c!nocheck\u003e, librust-moka-0.12+default-dev \u003c!nocheck\u003e, librust-moka-0.12+sync-dev \u003c!nocheck\u003e, librust-once-cell-1+critical-section-dev (\u003e= 1.20.0) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-rand-0.10+alloc-dev \u003c!nocheck\u003e, librust-resolv-conf-0.7+default-dev \u003c!nocheck\u003e, librust-resolv-conf-0.7+system-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.6) \u003c!nocheck\u003e, librust-thiserror-2-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.21) \u003c!nocheck\u003e, librust-tokio-1+rt-dev (\u003e= 1.21) \u003c!nocheck\u003e, librust-tracing-0.1-dev (\u003e= 0.1.30) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ded564a17a2e238b9924bf1dd89a5c37fedd9b867d2eacb029bde003ec6a2f10 3336 rust-hickory-resolver_0.24.4-5.dsc cbb117a1ca520e111743ab2f6688eddee69db4e0ea242545a604dce8a66fd22e 89596 rust-hickory-resolver_0.24.4.orig.tar.gz 1b287e9ad48087cde3b82af8d082d3623fd7c7d6f8d9e21e30bda6c1a3a961d0 10688 rust-hickory-resolver_0.24.4-5.debian.tar.xz"
+    "e941c792c0baefa11a52d165cf09224b7a6650a0f85132bc6d57540742e0f90a 2764 rust-hickory-resolver_0.25.2-2.dsc dc62a9a99b0bfb44d2ab95a7208ac952d31060efc16241c87eaf36406fecf87a 91883 rust-hickory-resolver_0.25.2.orig.tar.gz ef7d36ba525a7cc82ce5dcba827b8c7e36ac856ea293230b52f61eba5e5107c4 7668 rust-hickory-resolver_0.25.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hickory-resolver"
   ],
   "Files": [
-    "8fec8b8ad35f7e3f83436c34e3e7cac7 3336 rust-hickory-resolver_0.24.4-5.dsc 79318b3f4b3b4aa03350bd581eb976eb 89596 rust-hickory-resolver_0.24.4.orig.tar.gz 00742c45e0258d69ff7984077ef49088 10688 rust-hickory-resolver_0.24.4-5.debian.tar.xz"
+    "f6c45cbbd3e458142e039569acd7922c 2764 rust-hickory-resolver_0.25.2-2.dsc 72aec3fd7894d66488602cca77af4915 91883 rust-hickory-resolver_0.25.2.orig.tar.gz f84ae1fed9f88ac7e61729d51f749744 7668 rust-hickory-resolver_0.25.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-executor-0.3+std-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+test-util-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+std-dev, rustc"
+    "dh-cargo, librust-futures-executor-0.3+std-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+test-util-dev, librust-toml-0.8+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+std-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hickory-resolver]"
   ],
   "Version": [
-    "0.24.4-5"
+    "0.25.2-2"
   ]
 }
