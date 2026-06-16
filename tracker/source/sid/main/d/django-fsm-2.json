@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "pybuild-plugin-pyproject, python3-hatchling, python3-poetry-core"
+    "pybuild-plugin-pyproject, python3-django \u003c!nocheck\u003e, python3-django-fsm-log \u003c!nocheck\u003e, python3-django-guardian \u003c!nocheck\u003e, python3-django-stubs-ext \u003c!nocheck\u003e, python3-graphviz \u003c!nocheck\u003e, python3-hatchling, python3-poetry-core, python3-pytest-django \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "92d0892b258e92dd35595f6712124ff018cdae0304e858d23388f5383a0992e5 2274 django-fsm-2_4.2.1-1.dsc 4ab78870de66ac5d6cb7ac87a7b9ca4722ecdfb42b898969e3f20d9d19972a7b 83695 django-fsm-2_4.2.1.orig.tar.gz dba33ada77a7c51a74639778ed2b17239f94d6c5b45a670dfd68bd5f1b735d10 2748 django-fsm-2_4.2.1-1.debian.tar.xz"
+    "1fce8042940f1e83ea9c810c1eb76cd32eaadf35566009a20ab9c3d0815d77f0 2550 django-fsm-2_4.2.3-1.dsc 9f3ec47a5d1fcb71f6a65894828ad37d51bcbec528aee2965f568fe22fc97663 84204 django-fsm-2_4.2.3.orig.tar.gz 20d3110b4b8cf52fdf05d620aa429fa41516adcf57e4d107c7321b10d8e77c57 2892 django-fsm-2_4.2.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/django-fsm-2"
   ],
   "Files": [
-    "629282da50915dcc4cad61f1a6679216 2274 django-fsm-2_4.2.1-1.dsc e720a43cde7fc4ea609e4e337e66a1f4 83695 django-fsm-2_4.2.1.orig.tar.gz a469efadd422c75bfe6498c97050b71b 2748 django-fsm-2_4.2.1-1.debian.tar.xz"
+    "b9e70af245bf368ce1ea824a856fab41 2550 django-fsm-2_4.2.3-1.dsc e5ee7ec78be19ea847d4a9c25fefdc76 84204 django-fsm-2_4.2.3.orig.tar.gz 257a2dec8aefb8e4b17c1f7793816f22 2892 django-fsm-2_4.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-django-fsm-log, python3-django-guardian, python3-graphviz, python3-pytest"
+    "python3-all, python3-django, python3-django-fsm-log, python3-django-guardian, python3-django-stubs-ext, python3-graphviz, python3-pytest, python3-pytest-django"
   ],
   "Uploaders": [
     "Jakob Haufe \u003csur5r@debian.org\u003e, Michael Fladischer \u003cfladi@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/django-fsm-2.git"
   ],
   "Version": [
-    "4.2.1-1"
+    "4.2.3-1"
   ]
 }
