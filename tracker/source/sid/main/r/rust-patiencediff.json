@@ -6,16 +6,19 @@
     "librust-patiencediff-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-clap-4+default-dev \u003c!nocheck\u003e, librust-clap-4+derive-dev \u003c!nocheck\u003e, librust-patchkit+default-dev (\u003c\u003c 0.4) \u003c!nocheck\u003e, librust-patchkit+default-dev (\u003e= 0.1.9) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "556a81da699ae4daf0f743c8981411e4d28fb9a587aa4229d4543f9afcc32f1c 1871 rust-patiencediff_0.1.2-1.dsc 394e807f00c3c5fef02f4761d6abcb30f40e6595fd7f7e44eeb6dd6cb26e1110 14302 rust-patiencediff_0.1.2.orig.tar.gz 38c4e0fd801de2a2694b5755cc8b4fbb0b8c240f370eb3fec637326caaa58205 2028 rust-patiencediff_0.1.2-1.debian.tar.xz"
+    "6add99b064cc0dc76bcfca94dc131ee8de18db5abe099e75d9d25733fcdbcafc 2106 rust-patiencediff_0.3.0-1.dsc 1203e98a093ed5712d443d24cc752267c6ba23162321aeaf4837c425d3a9a597 21921 rust-patiencediff_0.3.0.orig.tar.gz 41af2315942ec128d55de0f8603adfe035cdf3676aed49059780a96e48a7ba24 2196 rust-patiencediff_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-patiencediff"
   ],
   "Files": [
-    "8c1753d68c80afef4cb035a1ee4ea9aa 1871 rust-patiencediff_0.1.2-1.dsc cf03718802c9989d15257175e90a1d2e 14302 rust-patiencediff_0.1.2.orig.tar.gz 35203badaf71caf17a842ff025fa58d3 2028 rust-patiencediff_0.1.2-1.debian.tar.xz"
+    "2c83fd23087bff9831d77cc301aede77 2106 rust-patiencediff_0.3.0-1.dsc 348cfd4ce2f7da7406420b3ee7df9562 21921 rust-patiencediff_0.3.0.orig.tar.gz dd7d5b1aa875e886757621f9bc4d38e7 2196 rust-patiencediff_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/patiencediff]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.3.0-1"
   ]
 }

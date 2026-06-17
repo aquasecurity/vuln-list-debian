@@ -6,19 +6,25 @@
     "librust-merge3-dev, merge3"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-difflib-0.4+default-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-difflib-0.4+default-dev"
   ],
   "Checksums-Sha256": [
-    "3e92dd6ce62bb6d4c0d62e5e7596df5ae1b937ffc40dcac082c0b91d8f6acb50 1886 rust-merge3_0.2.0-1.dsc b4b277bc3c7e2bc163abc6c0069f53715b52dc34442c0e807cc8758c7113524f 13111 rust-merge3_0.2.0.orig.tar.gz cf1ca6a004956e30688c705d228c355e60d6150ba64776ad19083f542dcb5303 2144 rust-merge3_0.2.0-1.debian.tar.xz"
+    "21e457be8e4931824e307c3bd057783bb3e89fae244b59a88f6b1e0f14b2cc3a 1993 rust-merge3_0.2.1-1.dsc cd3e8ff44de522626e1cb360cdc0b29041f3a3d2694dddb90ecfdac59245a2bd 21882 rust-merge3_0.2.1.orig.tar.gz 31554656bba9b54898bf7598ffee34aed01ab81e443530e4bd754c9d2983a090 2196 rust-merge3_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-merge3"
   ],
   "Files": [
-    "4fc99089661ee0aca4832805693ad14d 1886 rust-merge3_0.2.0-1.dsc 1aa0b1bbc84c82e56ed198d374495613 13111 rust-merge3_0.2.0.orig.tar.gz b4e2fcb5bd425e08cc3f77c23e41023d 2144 rust-merge3_0.2.0-1.debian.tar.xz"
+    "d399dec7101783351405a773d267e298 1993 rust-merge3_0.2.1-1.dsc 9ff5c8c64e9ea420b0fd2653975e120f 21882 rust-merge3_0.2.1.orig.tar.gz d674bbf52402e4fe23e65b11f36a0fb2 2196 rust-merge3_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/breezy-team/merge3-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pretty-assertions-1+default-dev"
+    "dh-cargo, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/merge3]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.1-1"
   ]
 }
