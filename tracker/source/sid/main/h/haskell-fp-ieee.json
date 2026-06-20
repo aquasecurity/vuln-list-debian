@@ -1,0 +1,62 @@
+{
+  "Architecture": [
+    "any all"
+  ],
+  "Binary": [
+    "libghc-fp-ieee-dev, libghc-fp-ieee-prof, libghc-fp-ieee-doc"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13), haskell-devscripts-minimal | haskell-devscripts (\u003e= 0.16.42), dh-sequence-haskell, ghc, ghc-prof, libghc-doctest-dev (\u003e= 0.22.2) \u003c!nocheck\u003e, libghc-doctest-dev (\u003c\u003c 0.25) \u003c!nocheck\u003e, libghc-doctest-prof \u003c!nocheck\u003e, libghc-hspec-dev (\u003e= 2.11.7) \u003c!nocheck\u003e, libghc-hspec-dev (\u003c\u003c 2.12) \u003c!nocheck\u003e, libghc-hspec-prof, libghc-hspec-core-dev (\u003e= 2.11.7) \u003c!nocheck\u003e, libghc-hspec-core-dev (\u003c\u003c 2.12) \u003c!nocheck\u003e, libghc-hspec-core-prof, libghc-integer-logarithms-dev (\u003e= 1), libghc-integer-logarithms-dev (\u003c\u003c 1.1), libghc-integer-logarithms-prof, libghc-quickcheck2-dev (\u003e= 2.14.3) \u003c!nocheck\u003e, libghc-quickcheck2-dev (\u003c\u003c 2.18) \u003c!nocheck\u003e, libghc-quickcheck2-prof \u003c!nocheck\u003e, libghc-random-dev (\u003e= 1.2.1.1) \u003c!nocheck\u003e, libghc-random-dev (\u003c\u003c 1.4) \u003c!nocheck\u003e, libghc-random-prof"
+  ],
+  "Build-Depends-Indep": [
+    "ghc-doc, libghc-integer-logarithms-doc"
+  ],
+  "Checksums-Sha256": [
+    "029d8980bddb2d04ff7c50b779608a23791fbd2a67c973de3965c4ce10b730e8 3718 haskell-fp-ieee_0.1.0.6-1.dsc b17a5924e09e9795931ee1246e2d115b589d0a8ff62782a5d1479925528898a6 54499 haskell-fp-ieee_0.1.0.6.orig.tar.gz d6eed29c80f603705f22637bc7e57ae8e9d152fb2d0906860bd15027097f1226 2456 haskell-fp-ieee_0.1.0.6-1.debian.tar.xz"
+  ],
+  "Description": [
+    "IEEE 754-2019 compliant operations This library provides IEEE 754-compliant operations, including * fusedMultiplyAdd * correctly-rounding versions of fromInteger * realFloatToFrac, which correctly handles signed zeros, infinities, and NaNs (unlike realToFrac). . Some operations (e.g. fusedMultiplyAdd) can make use of the native instruction in the architecture via C FFI, or GHC 9.8's FMA primitives. . For non-native targets, \"Pure Haskell\" mode is supported via a package flag. . Most operations require only RealFloat constraint, but RealFloatNaN is needed by some operations that access the sign and payload of NaNs."
+  ],
+  "Directory": [
+    "pool/main/h/haskell-fp-ieee"
+  ],
+  "Files": [
+    "bfec5d1b0d5cf75082f2b5ffa132f114 3718 haskell-fp-ieee_0.1.0.6-1.dsc 0cd57e9ddd08987d9cbfd7975a292f90 54499 haskell-fp-ieee_0.1.0.6.orig.tar.gz ae4d42b098e788f1cf32037745234344 2456 haskell-fp-ieee_0.1.0.6-1.debian.tar.xz"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/minoki/haskell-floating-point#readme"
+  ],
+  "Maintainer": [
+    "Debian Haskell Group \u003cpkg-haskell-maintainers@lists.alioth.debian.org\u003e"
+  ],
+  "Package": [
+    "haskell-fp-ieee"
+  ],
+  "Package-List": [
+    "libghc-fp-ieee-dev deb haskell optional arch=any libghc-fp-ieee-doc deb doc optional arch=all libghc-fp-ieee-prof deb haskell optional arch=any"
+  ],
+  "Priority": [
+    "optional"
+  ],
+  "Section": [
+    "haskell"
+  ],
+  "Standards-Version": [
+    "4.7.4"
+  ],
+  "Uploaders": [
+    "Scott Talbert \u003cswt@techie.net\u003e"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-fp-ieee"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-fp-ieee]"
+  ],
+  "Version": [
+    "0.1.0.6-1"
+  ]
+}
