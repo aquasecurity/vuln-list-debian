@@ -6,16 +6,16 @@
     "urfkill, liburfkill-glib0, liburfkill-glib-dev, liburfkill-glib0-dbg, gir1.2-urfkill-0.5"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 9.20160709), dh-autoreconf (\u003e= 2), dh-exec (\u003e= 0.3), autotools-dev, libglib2.0-dev, libdbus-1-dev, libdbus-glib-1-dev, libudev-dev, libpolkit-gobject-1-dev, libexpat1-dev, intltool (\u003e= 0.40.0), gobject-introspection (\u003e= 0.6.7), libgirepository1.0-dev (\u003e= 0.6.7), gir1.2-gtk-3.0, autopoint, gtk-doc-tools"
+    "debhelper-compat (= 12), dpkg-dev (\u003e= 1.16.1~), pkg-config, libglib2.0-dev (\u003e= 2.30.1), libdbus-1-dev, libudev-dev, libpolkit-gobject-1-dev, libexpat1-dev, intltool (\u003e= 0.40.0), gobject-introspection (\u003e= 0.6.7), gir1.2-gtk-3.0, autopoint, gtk-doc-tools"
   ],
   "Checksums-Sha256": [
-    "03fda2a55f37bb876b8557dd7c1b24b23d00bff681b9654bd5fea3f86a4d517a 2334 urfkill_0.5.0-7.3.dsc 5f698222bb02cfa60404c2f83b840cd433c84b9e92acc19ac489cbd8ebde6983 74801 urfkill_0.5.0.orig.tar.gz b082107bc1e0ce8c5899ee32f8a823c2ba329fd9196a04909eadf28997894e93 4816 urfkill_0.5.0-7.3.debian.tar.xz"
+    "7947fe801ebb61c62a892949a0451695e03ed5875635fa6ab7dc0ab40703be32 2411 urfkill_0.5.0-8.dsc 5f698222bb02cfa60404c2f83b840cd433c84b9e92acc19ac489cbd8ebde6983 74801 urfkill_0.5.0.orig.tar.gz b025e6e7c0f9452c4691255b5641ca35bd872857a73361e7d9c49225ad4a1587 11252 urfkill_0.5.0-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/urfkill"
   ],
   "Files": [
-    "fff0777fc62a9e94d0868bed1747832e 2334 urfkill_0.5.0-7.3.dsc f94de5b1425eba433b35d16d2f5538ee 74801 urfkill_0.5.0.orig.tar.gz 6676456b08e5e733520d706a303113d0 4816 urfkill_0.5.0-7.3.debian.tar.xz"
+    "bfba0116f21b0a6e32fe04dd824af734 2411 urfkill_0.5.0-8.dsc f94de5b1425eba433b35d16d2f5538ee 74801 urfkill_0.5.0.orig.tar.gz 2fbbbdbeeffa170e977aa9be7d52a12c 11252 urfkill_0.5.0-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,9 +39,15 @@
     "net"
   ],
   "Standards-Version": [
-    "4.0.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, dbus, jq, kmod, pkg-config, python3-evdev, python3-gi, rfkill"
   ],
   "Version": [
-    "0.5.0-7.3"
+    "0.5.0-8"
   ]
 }

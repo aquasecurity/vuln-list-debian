@@ -6,19 +6,25 @@
     "librust-stable-deref-trait-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "988840091e8dde3d8fcee4c8271f055ce60a020ecbc2d25923a80a10bb77fb02 2235 rust-stable-deref-trait_1.2.0-1.dsc a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3 8054 rust-stable-deref-trait_1.2.0.orig.tar.gz d9c89fea1cf20f9d8c4bcd99893a7a103e297a037105036a4b47161dbef410ba 2780 rust-stable-deref-trait_1.2.0-1.debian.tar.xz"
+    "12f7b57127b7b37c3289514f171f84b8d539bf894e958609e6e8b6f75c1ca5b1 1693 rust-stable-deref-trait_1.2.1-1.dsc 6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596 8186 rust-stable-deref-trait_1.2.1.orig.tar.gz 308e2fd665a76b60fdf1f283bb0029a4bdb6e1e8803894dc0154894933d5285b 2888 rust-stable-deref-trait_1.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-stable-deref-trait"
   ],
   "Files": [
-    "b4e52725813d56ad0a072b3248c89207 2235 rust-stable-deref-trait_1.2.0-1.dsc 5988bad1543264a9f48b542192e7de9a 8054 rust-stable-deref-trait_1.2.0.orig.tar.gz 111e1c091969de34f98f47aca30a8d27 2780 rust-stable-deref-trait_1.2.0-1.debian.tar.xz"
+    "35c3e509afceb6ee4ff173b59eb6cc20 1693 rust-stable-deref-trait_1.2.1-1.dsc e504675031766787830ccf420f6d8ca2 8186 rust-stable-deref-trait_1.2.1.orig.tar.gz 12691074d23798eb16cc9320e53e6a4e 2888 rust-stable-deref-trait_1.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/storyyeller/stable_deref_trait"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/stable-deref-trait]"
   ],
   "Version": [
-    "1.2.0-1"
+    "1.2.1-1"
   ]
 }
