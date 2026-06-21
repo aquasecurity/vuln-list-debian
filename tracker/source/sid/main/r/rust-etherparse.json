@@ -6,19 +6,25 @@
     "librust-etherparse-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+default-dev (\u003e= 0.7.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7+std-dev (\u003e= 0.7.2) \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dcbe27cfe95a7d3a06442377c9b7e41e15d7add1972983d937c7a9b1ad5889f6 2308 rust-etherparse_0.13.0-2.dsc 827292ea592108849932ad8e30218f8b1f21c0dfd0696698a18b5d0aed62d990 180331 rust-etherparse_0.13.0.orig.tar.gz f130894d307f2442e54bb1caa616306c235af5543ea9865aa3868249bc9d414a 3244 rust-etherparse_0.13.0-2.debian.tar.xz"
+    "68cd743404412dacddb7ab504a0b48cb0ef8b02e997aa94c4c627a0fa0b37942 2408 rust-etherparse_0.19.0-1.dsc b119b9796ff800751a220394b8b3613f26dd30c48f254f6837e64c464872d1c7 451039 rust-etherparse_0.19.0.orig.tar.gz 2284611659154df4f3aaa39d7b77367a7da18c4da3c7e6f4ba447db95a290ad6 2932 rust-etherparse_0.19.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-etherparse"
   ],
   "Files": [
-    "5b42973f25fa6de9cba024d15971efaf 2308 rust-etherparse_0.13.0-2.dsc 38342058ea860b97be1ad5731572934d 180331 rust-etherparse_0.13.0.orig.tar.gz 794efadffbccda514db5497aec77dacb 3244 rust-etherparse_0.13.0-2.debian.tar.xz"
+    "fd594a2c268d130a3d954da1fb9d5855 2408 rust-etherparse_0.19.0-1.dsc 786572c998b63057665ac37ec6dee176 451039 rust-etherparse_0.19.0.orig.tar.gz 44a57a15a39a14b6e80d744adaddad9b 2932 rust-etherparse_0.19.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/JulianSchmid/etherparse"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-proptest-1+default-dev"
+    "dh-cargo, librust-proptest-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/etherparse]"
   ],
   "Version": [
-    "0.13.0-2"
+    "0.19.0-1"
   ]
 }
