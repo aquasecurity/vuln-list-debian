@@ -6,16 +6,19 @@
     "librust-netlink-packet-generic-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.39-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.2-~~) \u003c!nocheck\u003e, librust-netlink-packet-core-0.7+default-dev \u003c!nocheck\u003e, librust-netlink-packet-utils-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-netlink-packet-core-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ae6fe7fff2cc52b7313d191fafa4bfdb1d1afce25c94a167baefa45a370482d9 2644 rust-netlink-packet-generic_0.3.3-1.dsc 1cd7eb8ad331c84c6b8cb7f685b448133e5ad82e1ffd5acafac374af4a5a308b 14386 rust-netlink-packet-generic_0.3.3.orig.tar.gz 5692f592390228f57d067e6bdaeb2128142212ee695f2351d8a494f9fb1caf03 2528 rust-netlink-packet-generic_0.3.3-1.debian.tar.xz"
+    "1483de0c75b1698fbb10a2a9645720f9a22b0748ffa38923c2a2d04c513dc50b 2491 rust-netlink-packet-generic_0.4.0-1.dsc 2f891b2e0054cac5a684a06628f59568f841c93da4e551239da6e518f539e775 13866 rust-netlink-packet-generic_0.4.0.orig.tar.gz b2fec4bc40aebd5aa6b194fd33cc1a82a3542778c731e8a147b9e57081313ac3 2560 rust-netlink-packet-generic_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-netlink-packet-generic"
   ],
   "Files": [
-    "2b707c597f06a916f3b4fc2759922b90 2644 rust-netlink-packet-generic_0.3.3-1.dsc 31f2a7911a7271229789cbec1ce4cac8 14386 rust-netlink-packet-generic_0.3.3.orig.tar.gz 5c18e17af53db063dce2394049cb8682 2528 rust-netlink-packet-generic_0.3.3-1.debian.tar.xz"
+    "3cecd8b5cf09c3e4f014bf1e320a287a 2491 rust-netlink-packet-generic_0.4.0-1.dsc b32d4ac1f93a82fea5fb07eb0410ab73 13866 rust-netlink-packet-generic_0.4.0.orig.tar.gz 1c7ff69a0d697f5d1ca63afae32b33f7 2560 rust-netlink-packet-generic_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-netlink-sys-0.8+default-dev"
+    "dh-cargo, librust-netlink-sys-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/netlink-packet-generic]"
   ],
   "Version": [
-    "0.3.3-1"
+    "0.4.0-1"
   ]
 }

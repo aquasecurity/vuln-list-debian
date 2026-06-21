@@ -6,19 +6,25 @@
     "librust-nom-permutation-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-7-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-8-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1212fe1eed040edf7c4e00053a085f2995b8c288ce171d4f02cb5e9d12000807 2251 rust-nom-permutation_0.1.0-1.dsc f3c9d1f6d54a22e6c2d10d6c151526265347a53b3182053500ca00f3b36e6ed5 3322 rust-nom-permutation_0.1.0.orig.tar.gz 559ab525f1c35ef31e48531f1cbf01441fb4af3b55f4092a62bcec333e9f17da 2552 rust-nom-permutation_0.1.0-1.debian.tar.xz"
+    "13fceb4f9fed267350f5ad9fce2e55c6f4920cbb6b6b1b99dd0f21d518c838d7 1717 rust-nom-permutation_1.0.0-1.dsc 3bc970084781b339d2e1d1aa6458d27e5f18d480ca5a69c7135e3978b57e17c7 3714 rust-nom-permutation_1.0.0.orig.tar.gz c0459fe0320fad49dc54414352911dcd553c2b73a71617696184a015c4a7d0a4 2624 rust-nom-permutation_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nom-permutation"
   ],
   "Files": [
-    "2a29fc6b853c6bc783d713f0ccad0a41 2251 rust-nom-permutation_0.1.0-1.dsc b70980bd3596315f989e812eeb9142e4 3322 rust-nom-permutation_0.1.0.orig.tar.gz e29653583a94f9bf2b68d5ad41964525 2552 rust-nom-permutation_0.1.0-1.debian.tar.xz"
+    "57e014e0bc2c6e9209c37a1218b9b045 1717 rust-nom-permutation_1.0.0-1.dsc a5ef2eb21cf16d3625108aaf786e1c76 3714 rust-nom-permutation_1.0.0.orig.tar.gz a7d3b1e13e9dcfa7f3115462bdbc7c39 2624 rust-nom-permutation_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Stargateur/nom_permutation"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nom-permutation]"
   ],
   "Version": [
-    "0.1.0-1"
+    "1.0.0-1"
   ]
 }
