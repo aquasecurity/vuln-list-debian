@@ -3,22 +3,22 @@
     "all"
   ],
   "Binary": [
-    "elpa-company"
+    "elpa-company, elpa-company-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-elpa (\u003e= 1.16)"
+    "base-files (\u003e= 14.1), debhelper-compat (= 13), dh-elpa (\u003e= 1.16), texinfo"
   ],
   "Checksums-Sha256": [
-    "675c0c520af31496f5ff92484eb923d54ffa280b2f52eb62cd7e182fefc7ba2e 2113 company-mode_1.0.2-1.dsc 92b937636084dc910a3d04fac3e64d08df5444b34143ea903c8bd827fde8a8a6 2208454 company-mode_1.0.2.orig.tar.gz f7399dbef6d28bdffcb84646152401ad06f337647aa373f7528443bd3fde2791 3552 company-mode_1.0.2-1.debian.tar.xz"
+    "ee438e3a845c669ce751f79bc9a8cb63d47abf72c61798a72bac308899a658f4 2293 company-mode_1.0.2-5.dsc 92b937636084dc910a3d04fac3e64d08df5444b34143ea903c8bd827fde8a8a6 2208454 company-mode_1.0.2.orig.tar.gz eb6244c5240ad9586532adc68aad74902639304b0ad525d75868d5404c95a67c 5000 company-mode_1.0.2-5.debian.tar.xz"
   ],
   "Dgit": [
-    "e18d98af7488b1a9cc22870d1da5c3430c23eee0 debian archive/debian/1.0.2-1 https://git.dgit.debian.org/company-mode"
+    "7648848f1f1aad865304ba64ec4a3cc5680e6b42 debian archive/debian/1.0.2-5 https://git.dgit.debian.org/company-mode"
   ],
   "Directory": [
     "pool/main/c/company-mode"
   ],
   "Files": [
-    "278d9f27ef973145740018b4b1c670c9 2113 company-mode_1.0.2-1.dsc dc5a5c22b13d49d5e688948a603ccc90 2208454 company-mode_1.0.2.orig.tar.gz d8ffbfc932ee25f0c1f7eadae0130d92 3552 company-mode_1.0.2-1.debian.tar.xz"
+    "4b3a6664b3c7f5efecb8e4a5dca0b92f 2293 company-mode_1.0.2-5.dsc dc5a5c22b13d49d5e688948a603ccc90 2208454 company-mode_1.0.2.orig.tar.gz be836cd4fa785b045d71dbcf668a985d 5000 company-mode_1.0.2-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "company-mode"
   ],
   "Package-List": [
-    "elpa-company deb lisp optional arch=all"
+    "elpa-company deb editors optional arch=all elpa-company-doc deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,10 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
-    "David Bremner \u003cbremner@debian.org\u003e, Xiyue Deng \u003cmanphiz@gmail.com\u003e,"
+    "David Bremner \u003cbremner@debian.org\u003e, Xiyue Deng \u003cmanphiz@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/emacsen-team/company-mode"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/emacsen-team/company-mode.git"
   ],
   "Version": [
-    "1.0.2-1"
+    "1.0.2-5"
   ]
 }
