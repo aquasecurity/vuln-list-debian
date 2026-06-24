@@ -6,16 +6,19 @@
     "librust-zbar-rust-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enum-ordinalize-3+default-dev (\u003e= 3.1-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.43-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.14-~~) \u003c!nocheck\u003e, libzbar-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enum-ordinalize-4+default-dev (\u003e= 4.2) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.43) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.14) \u003c!nocheck\u003e, libzbar-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ec16f36188d56f16ce2333da93af8c6c8bd23185ae08c8b1fe6e4af154ed645f 2509 rust-zbar-rust_0.0.21-1.dsc b08712bd2e1020ab69e475ccd66afa8e508bf93393a262e2ba56c549cd0865eb 19885 rust-zbar-rust_0.0.21.orig.tar.gz d70cc38115fadca4304680c774adb118f1900f562876630f2224924404eb0ec4 2164 rust-zbar-rust_0.0.21-1.debian.tar.xz"
+    "bfef0832cdf6c1c48da7462ce7ec86a0e3ff4afc361c7afb10722c3b2676f909 2515 rust-zbar-rust_0.0.24-2.dsc f8f7bacc14b37fba9a631a76a5c87ba243ea31eebff12d592d320516472c4626 23066 rust-zbar-rust_0.0.24.orig.tar.gz 8390e90cbfb300d14a022cbe4ff604afb80fe773a8ff202346b24f0738afc7a3 2304 rust-zbar-rust_0.0.24-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zbar-rust"
   ],
   "Files": [
-    "46e4dd0a363b4f60a20b9b31cf6b6eb9 2509 rust-zbar-rust_0.0.21-1.dsc c0f21ed5ddb05c9d60baa2d29a52a063 19885 rust-zbar-rust_0.0.21.orig.tar.gz 0e18e7629b6f5e4c3359fc11173f2e90 2164 rust-zbar-rust_0.0.21-1.debian.tar.xz"
+    "2a8851322a6ca951186615f35a26cc51 2515 rust-zbar-rust_0.0.24-2.dsc c861047e84b2debfb1b58489a65555d0 23066 rust-zbar-rust_0.0.24.orig.tar.gz 1c229064e6927515eb68f09db30cd9f2 2304 rust-zbar-rust_0.0.24-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-image-0.24+default-dev, librust-qrcode-generator-4+default-dev"
+    "dh-cargo, librust-image-0.25+default-dev, librust-qrcode-generator-4+default-dev, rustc"
   ],
   "Uploaders": [
-    "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
+    "Matthias Geiger \u003cwerdahias@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zbar-rust"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zbar-rust]"
   ],
   "Version": [
-    "0.0.21-1"
+    "0.0.24-2"
   ]
 }

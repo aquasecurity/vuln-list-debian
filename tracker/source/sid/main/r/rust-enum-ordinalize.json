@@ -6,16 +6,19 @@
     "librust-enum-ordinalize-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-bigint-0.4+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enum-ordinalize-derive-4+traits-dev (\u003e= 4.3) \u003c!nocheck\u003e, librust-enum-ordinalize-derive-4-dev (\u003e= 4.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "77be770a1a8eb8c7f7b712017eb7ceb7fd03712743deda4bdfda210d04bdc224 2520 rust-enum-ordinalize_3.1.13-1.dsc e4f76552f53cefc9a7f64987c3701b99d982f7690606fd67de1d09712fbf52f1 5741 rust-enum-ordinalize_3.1.13.orig.tar.gz 6b40c03ede06eb5f5f4a173ec048ee5c7cf96d6b05a98e1e58a45de5d2aae569 2820 rust-enum-ordinalize_3.1.13-1.debian.tar.xz"
+    "69d93cb6c00f1515b66b499aa92f4584166d2dbc4929bf8a41065ed31d3d5d29 2444 rust-enum-ordinalize_4.3.2-2.dsc 4a1091a7bb1f8f2c4b28f1fe2cef4980ca2d410a3d727d67ecc3178c9b0800f0 4465 rust-enum-ordinalize_4.3.2.orig.tar.gz f94260b9a2ccb8ff5d42432b3249645d885ea2333f81d2e26632d3924d9d72bc 2964 rust-enum-ordinalize_4.3.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-enum-ordinalize"
   ],
   "Files": [
-    "523914cc7786754ea67e87c950cfb422 2520 rust-enum-ordinalize_3.1.13-1.dsc 3f36272077376cbe5233dc31f2d4b80c 5741 rust-enum-ordinalize_3.1.13.orig.tar.gz 52b3a7fbfc146319c2a221a6bb485b41 2820 rust-enum-ordinalize_3.1.13-1.debian.tar.xz"
+    "46c6195f648be63d1e33380e0b3ca348 2444 rust-enum-ordinalize_4.3.2-2.dsc 133979b26ce6692e6f08a6a9db443661 4465 rust-enum-ordinalize_4.3.2.orig.tar.gz 6da41a1f49cee4993e5a864a080145e4 2964 rust-enum-ordinalize_4.3.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/enum-ordinalize]"
   ],
   "Version": [
-    "3.1.13-1"
+    "4.3.2-2"
   ]
 }
