@@ -6,16 +6,22 @@
     "python3-nameparser"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-dill, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-pytest \u003c!nocheck\u003e, python3-dill \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "038909113cf01e60eb44197954d4107834490e5bbe27ba3324acc8ec529c5a85 2171 python-nameparser_1.2.0-1.dsc 3fc874495e6bd477afb8083b6c7b6447f9d10a3e6a872f9523bf4e144fba8a7c 37325 python-nameparser_1.2.0.orig.tar.gz a2efb6db6999a4637b2ca061d4e80a7049b59e6e3dc20af36ebde39fc180e725 2856 python-nameparser_1.2.0-1.debian.tar.xz"
+    "c8b46c7b7a41edef8407f7463bb12b9d639dbc652852b57f3a11fc196ec7cce2 2331 python-nameparser_1.2.1-1.dsc 62646ce9bc4961eb546b8bc8afb94227713682fa3568d0de1f56f9713a8062a7 40656 python-nameparser_1.2.1.orig.tar.gz a569177ef0f4e64aa84f81628c7ed81235d85b4ea02e0f54a1f02e01bd5c3b48 2784 python-nameparser_1.2.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "64f89fcedd7124452d9e175f9cc374db6ff9bd5c debian archive/debian/1.2.1-1 https://git.dgit.debian.org/python-nameparser"
   ],
   "Directory": [
     "pool/main/p/python-nameparser"
   ],
   "Files": [
-    "308e216b12ce98e2009ca7b19fd50206 2171 python-nameparser_1.2.0-1.dsc f2b1a852883dd686b379d4c3480596d8 37325 python-nameparser_1.2.0.orig.tar.gz a3e808c91144e423aaed8a4fd0b47ed2 2856 python-nameparser_1.2.0-1.debian.tar.xz"
+    "707178064ee82a71b86a52e55d160836 2331 python-nameparser_1.2.1-1.dsc aa3892892b3b90784850fe9efb390702 40656 python-nameparser_1.2.1.orig.tar.gz 783fce7a91cc59769eef398fa69fcee0 2784 python-nameparser_1.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +48,7 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-dill"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-nameparser.git"
   ],
   "Version": [
-    "1.2.0-1"
+    "1.2.1-1"
   ]
 }

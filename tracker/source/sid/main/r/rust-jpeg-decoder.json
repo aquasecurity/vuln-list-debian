@@ -6,19 +6,25 @@
     "librust-jpeg-decoder-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.6) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "218c46734916e03ca178dee19119dde732971aa44058057f6b88bd94fad0ef27 2288 rust-jpeg-decoder_0.3.0-1.dsc bc0000e42512c92e31c2252315bda326620a4e034105e900c98ec492fa077b3e 742671 rust-jpeg-decoder_0.3.0.orig.tar.gz 501076395212d6a97bb25aa1fd750bb703467e4e2a762faf8eab916fa758735c 4264 rust-jpeg-decoder_0.3.0-1.debian.tar.xz"
+    "9224fc12f29ab072be612fe4982f85e60cc3d90d41cd51370e9908a1c094a5da 2351 rust-jpeg-decoder_0.3.2-1.dsc 00810f1d8b74be64b13dbf3db89ac67740615d6c891f0e7b6179326533011a07 745371 rust-jpeg-decoder_0.3.2.orig.tar.gz 5d015e70f053a57003bcad161f21f89a91fcfd167fa403ff115c99d103979a90 4544 rust-jpeg-decoder_0.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jpeg-decoder"
   ],
   "Files": [
-    "962bbcd663e5b1bff5837b3c8d143029 2288 rust-jpeg-decoder_0.3.0-1.dsc ff05fe7b2fc0d772db7a63e5a66ed5ab 742671 rust-jpeg-decoder_0.3.0.orig.tar.gz 56ee321f39b542fe88c1f1a9f085ecf7 4264 rust-jpeg-decoder_0.3.0-1.debian.tar.xz"
+    "0852f24980a3de7699a4d769e71ea14a 2351 rust-jpeg-decoder_0.3.2-1.dsc 95964e84417c60eea3187ae513fb3050 745371 rust-jpeg-decoder_0.3.2.orig.tar.gz 2b0e900016c654fbe785fc9ceb48f0c7 4544 rust-jpeg-decoder_0.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/image-rs/jpeg-decoder"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-png-0.17+default-dev, librust-walkdir-2+default-dev"
+    "dh-cargo, librust-png-0.18+default-dev, librust-walkdir-2+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jpeg-decoder]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.2-1"
   ]
 }
