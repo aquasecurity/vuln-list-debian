@@ -6,19 +6,25 @@
     "librust-geo-types-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx-0.5+std-dev \u003c!nocheck\u003e | librust-approx-0.4+std-dev \u003c!nocheck\u003e, librust-num-traits-0.2+libm-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-approx+std-dev (\u003c\u003c 0.6.0) \u003c!nocheck\u003e, librust-approx+std-dev (\u003e= 0.4.0) \u003c!nocheck\u003e, librust-num-traits-0.2+libm-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c1c60d605a2072d64ef9df4c95e8fb63f67c49baca71cab45f889a75fb68c030 2494 rust-geo-types_0.7.11-2.dsc 9705398c5c7b26132e74513f4ee7c1d7dafd786004991b375c172be2be0eecaa 33649 rust-geo-types_0.7.11.orig.tar.gz 6b99fa0e0847c2e5e83f5db5f3644bd323218e7bb8e45a5bf70242297df51eb0 3492 rust-geo-types_0.7.11-2.debian.tar.xz"
+    "c6238447cef89004bdc2da52471e93ae95cf4aa5d148c7ad19183bd71d554649 2531 rust-geo-types_0.7.17-1.dsc 75a4dcd69d35b2c87a7c83bce9af69fd65c9d68d3833a0ded568983928f3fc99 45955 rust-geo-types_0.7.17.orig.tar.gz 23055bc11f7fa1b8175310450ddc0d1933c0088dae3ee57d9bff6069ab433da0 3608 rust-geo-types_0.7.17-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-geo-types"
   ],
   "Files": [
-    "a7162ae13872955ab5b3ddd19fa0dd95 2494 rust-geo-types_0.7.11-2.dsc e7fa07176f2376e684c7ec9b5bc4f521 33649 rust-geo-types_0.7.11.orig.tar.gz c55281f84744b410338716cc28038c0b 3492 rust-geo-types_0.7.11-2.debian.tar.xz"
+    "3d5564629144c880fb248acaa9b6ece9 2531 rust-geo-types_0.7.17-1.dsc 319b399251edcad26b65ea3c4e3b8a6f 45955 rust-geo-types_0.7.17.orig.tar.gz fc2af3dcfe88d9a79580ff289d69955c 3608 rust-geo-types_0.7.17-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/georust/geo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-approx-0.4+default-dev, librust-approx-0.5+default-dev"
+    "dh-cargo, librust-approx+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/geo-types"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/geo-types]"
   ],
   "Version": [
-    "0.7.11-2"
+    "0.7.17-1"
   ]
 }

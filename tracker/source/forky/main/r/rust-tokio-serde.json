@@ -6,16 +6,19 @@
     "librust-tokio-serde-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-futures-sink-0.3+default-dev \u003c!nocheck\u003e, librust-pin-project-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev \u003c!nocheck\u003e, librust-futures-sink-0.3+default-dev \u003c!nocheck\u003e, librust-pin-project-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "83c54f960a259b0e1e3bd0f147f74a540a98ce3e984e987d882a816e9c0ebe28 2731 rust-tokio-serde_0.8.0-2.dsc 911a61637386b789af998ee23f50aa30d5fd7edcec8d6d3dedae5e5815205466 15720 rust-tokio-serde_0.8.0.orig.tar.gz 9935fafa85b9f468b11e0225911246b7f96e6b4e9a333d616f5148eb8af8c039 3332 rust-tokio-serde_0.8.0-2.debian.tar.xz"
+    "0ee1472669d734cb153dd4e2def56815cd8371279d56578078fbbe4dc9ca312c 2668 rust-tokio-serde_0.9.0-2.dsc caf600e7036b17782571dd44fa0a5cea3c82f60db5137f774a325a76a0d6852b 16122 rust-tokio-serde_0.9.0.orig.tar.gz ea049d6bfa23fcdd8ecba5dd1a980f13d5a724539de94be2530f753cbcb7e630 3552 rust-tokio-serde_0.9.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokio-serde"
   ],
   "Files": [
-    "57953bf367c0c739b04fa39ea75f063c 2731 rust-tokio-serde_0.8.0-2.dsc 4b788ac818a4b3091bfcdec0bd9dc30d 15720 rust-tokio-serde_0.8.0.orig.tar.gz bacdebbf2c6ac62a59b8ca7214446d12 3332 rust-tokio-serde_0.8.0-2.debian.tar.xz"
+    "3d78ebc6d3a25643d906cca9542993ac 2668 rust-tokio-serde_0.9.0-2.dsc c15d32391120eae6fcae1e5f1c57cd90 16122 rust-tokio-serde_0.9.0.orig.tar.gz f28e76e68402c4c7c08ed1ae2c844cf7 3552 rust-tokio-serde_0.9.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3+default-dev, librust-impls-1+default-dev, librust-static-assertions-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-tokio-util-0.6+codec-dev, librust-tokio-util-0.6+default-dev"
+    "dh-cargo, librust-futures-0.3+default-dev, librust-impls-1+default-dev, librust-static-assertions-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, librust-tokio-util-0.7+codec-dev, librust-tokio-util-0.7+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/tokio-serde"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokio-serde]"
   ],
   "Version": [
-    "0.8.0-2"
+    "0.9.0-2"
   ]
 }
