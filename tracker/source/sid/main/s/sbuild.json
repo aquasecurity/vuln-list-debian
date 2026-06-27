@@ -6,22 +6,22 @@
     "libsbuild-perl, sbuild, sbuild-debian-developer-setup, buildd, sbuild-qemu, sbuild-schroot"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "debhelper-compat (= 13), dh-sequence-installsysusers"
   ],
   "Build-Depends-Indep": [
-    "apt \u003c!nocheck\u003e, dh-python, dh-sequence-python3, groff-base, libdpkg-perl (\u003e= 1.21.14), libexception-class-perl, libfilesys-df-perl, libmime-lite-perl, libyaml-tiny-perl, perltidy \u003c!nocheck\u003e, python3-all, shfmt \u003c!nocheck\u003e"
+    "apt \u003c!nocheck\u003e, dh-sequence-python3, groff-base, libdpkg-perl (\u003e= 1.21.14), libexception-class-perl, libfilesys-df-perl, libmime-lite-perl, libyaml-tiny-perl, perltidy \u003c!nocheck\u003e, python3-all, shfmt \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6ca63160297ec2165473d6f338dda19b07dd17ebdd1a28cfb7ce168af4badeab 2759 sbuild_0.91.9.dsc f8ab1c15011b7afc16d32b57349afff1a9a3f0b3f49b278d054e20e2159490e9 264396 sbuild_0.91.9.tar.xz"
+    "76d465d831f3ea546675880d6ee0987b1e94362973370f0ed2912a3a7d77791c 2784 sbuild_0.91.10.dsc 5568f5a87ece0669dfe3910e907ef63f0b75a3d7cab82e904e7ec97761ad8fb4 265004 sbuild_0.91.10.tar.xz"
   ],
   "Dgit": [
-    "ede79f7748dfcf14d170d7fe8224cf068c5b335c debian archive/debian/0.91.9 https://git.dgit.debian.org/sbuild"
+    "8b23e2f79107e3684e5e132d941f6fcbe02514c6 debian archive/debian/0.91.10 https://git.dgit.debian.org/sbuild"
   ],
   "Directory": [
     "pool/main/s/sbuild"
   ],
   "Files": [
-    "67c35b2a32ed2958aab4b7447003ba7a 2759 sbuild_0.91.9.dsc d26cac6009a0e53e2ceca1a5a6ec0172 264396 sbuild_0.91.9.tar.xz"
+    "8467f5143b9901d52e32bda1eaca1559 2784 sbuild_0.91.10.dsc 6f60bf3c7ee4465fd9ce40f6b69d6797 265004 sbuild_0.91.10.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -33,7 +33,7 @@
     "sbuild"
   ],
   "Package-List": [
-    "buildd deb devel optional arch=all libsbuild-perl deb perl optional arch=all sbuild deb devel optional arch=all sbuild-debian-developer-setup deb oldlibs optional arch=all sbuild-qemu deb devel optional arch=all sbuild-schroot deb devel optional arch=all"
+    "buildd deb oldlibs optional arch=all libsbuild-perl deb perl optional arch=all sbuild deb devel optional arch=all sbuild-debian-developer-setup deb oldlibs optional arch=all sbuild-qemu deb devel optional arch=all sbuild-schroot deb devel optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/sbuild.git"
   ],
   "Version": [
-    "0.91.9"
+    "0.91.10"
   ]
 }
