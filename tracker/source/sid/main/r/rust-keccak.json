@@ -6,19 +6,25 @@
     "librust-keccak-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cpufeatures+default-dev (\u003c\u003c 0.4) \u003c!nocheck\u003e, librust-cpufeatures+default-dev (\u003e= 0.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "890fb90a762572a6a8a605130f91391fd890dc7699fec95c32e3b144d3324e25 1663 rust-keccak_0.1.5-1.dsc ecc2af9a1119c51f12a14607e783cb977bde58bc069ff0c3da1095e635d70654 13120 rust-keccak_0.1.5.orig.tar.gz 56786ac9f166a20dc8d71daedb24bd9c79d18b3b8feae15a30a64bea31ee5588 2816 rust-keccak_0.1.5-1.debian.tar.xz"
+    "4492396892f61abaca8a5236597c0c7c01121f17fb218b842df30e64d3035e36 2388 rust-keccak_0.2.0-2.dsc 9e24a010dd405bd7ed803e5253182815b41bf2e6a80cc3bfc066658e03a198aa 16972 rust-keccak_0.2.0.orig.tar.gz 88e638f6696d76b0b9d8eac32031e8d69524d1a1468dfadd0f67cb3db9011e79 3188 rust-keccak_0.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-keccak"
   ],
   "Files": [
-    "d183f2d51fd559f1d471f9b06470247b 1663 rust-keccak_0.1.5-1.dsc e73229eba9b95aa4b9fcc7a07e5d7da3 13120 rust-keccak_0.1.5.orig.tar.gz 76ae56b0fdda61739fa692a82af55a1b 2816 rust-keccak_0.1.5-1.debian.tar.xz"
+    "d111f0a148d7ced91c5d2d087a57c22c 2388 rust-keccak_0.2.0-2.dsc f1f93d110533c0fd39cf3862d70fb2e5 16972 rust-keccak_0.2.0.orig.tar.gz 6428f24115b2292330932a2ed3ebe440 3188 rust-keccak_0.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/sponges"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/keccak]"
   ],
   "Version": [
-    "0.1.5-1"
+    "0.2.0-2"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-sha3-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev (\u003e= 0.10.4-~~) \u003c!nocheck\u003e, librust-digest-0.10+std-dev (\u003e= 0.10.4-~~) \u003c!nocheck\u003e, librust-keccak-0.1+default-dev (\u003e= 0.1.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.11+alloc-dev \u003c!nocheck\u003e, librust-digest-0.11+oid-dev \u003c!nocheck\u003e, librust-digest-0.11-dev \u003c!nocheck\u003e, librust-keccak-0.2+default-dev \u003c!nocheck\u003e, librust-sponge-cursor-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "71aa9042c051ef84401f493a0f20d0ee0581db8f6634906079a61ab0b24b97ad 1873 rust-sha3_0.10.8-1.dsc 75872d278a8f37ef87fa0ddbda7802605cb18344497949862c0d4dcb291eba60 858216 rust-sha3_0.10.8.orig.tar.gz d2b1c073255c50542fff73b3e7989d86af98d4117cabc709492464a831551d29 3204 rust-sha3_0.10.8-1.debian.tar.xz"
+    "2c7010555aaee0a76427c88d4bb747aa00aa6be097abbf13d405d9dee46f2803 2501 rust-sha3_0.12.0-1.dsc bc9bad02c26382724b2d2692c6f179285e4b54eeecd7968f52a50059c3c11759 196953 rust-sha3_0.12.0.orig.tar.gz c4ea1e7e2ee2257521e69b924bc1737514dbed6c6a2f0edba3c6db7cd6d0fe0f 3444 rust-sha3_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sha3"
   ],
   "Files": [
-    "3d4d93d90b19d3789328133a44786059 1873 rust-sha3_0.10.8-1.dsc d6bef2f8066b9e6d75ae00cdb75fa791 858216 rust-sha3_0.10.8.orig.tar.gz 55307d335da550f95fe1a73b2a9d3aa6 3204 rust-sha3_0.10.8-1.debian.tar.xz"
+    "5bd9bc11572af7b3729e13f192306abe 2501 rust-sha3_0.12.0-1.dsc fcff3013ef5114bf3fa3464edd70cf6a 196953 rust-sha3_0.12.0.orig.tar.gz a6afb81dc8994d3628b81ba957feb689 3444 rust-sha3_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/hashes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-digest-0.10+default-dev, librust-digest-0.10+dev-dev, librust-hex-literal-0.2+default-dev"
+    "dh-cargo, librust-digest-0.11+dev-dev, librust-hex-literal+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sha3]"
   ],
   "Version": [
-    "0.10.8-1"
+    "0.12.0-1"
   ]
 }
