@@ -6,10 +6,10 @@
     "python3-jupyter-events, python-jupyter-events-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-click, python3-fqdn, python3-hatchling, python3-idna, python3-isoduration, python3-json-pointer, python3-jsonschema (\u003e= 4.18.0), python3-myst-parser \u003c!nodoc\u003e, python3-packaging, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-console-scripts \u003c!nocheck\u003e, python3-pythonjsonlogger (\u003e= 3.0.0), python3-referencing, python3-rfc3339-validator, python3-rfc3986-validator, python3-rich, python3-sphinx, python3-sphinxcontrib.spelling \u003c!nodoc\u003e, python3-traitlets, python3-uritemplate, python3-webcolors, python3-yaml"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-click \u003c!ocheck\u003e, python3-fqdn \u003c!nocheck\u003e, python3-hatchling, python3-idna \u003c!nocheck\u003e, python3-isoduration \u003c!nocheck\u003e, python3-json-pointer \u003c!nocheck\u003e, python3-jsonschema (\u003e= 4.18.0) \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-packaging, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-console-scripts \u003c!nocheck\u003e, python3-pythonjsonlogger (\u003e= 3.0.0) \u003c!nocheck\u003e, python3-referencing \u003c!nocheck\u003e, python3-rfc3339-validator \u003c!nocheck\u003e, python3-rfc3986-validator \u003c!nocheck\u003e, python3-rich \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.spelling \u003c!nodoc\u003e, python3-traitlets \u003c!nocheck\u003e, python3-uritemplate \u003c!nocheck\u003e, python3-webcolors \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7dbb86202f6c633bab9bbc6d44fda8eea11d674ae3e3b7825eec5cfa5e88afda 3200 jupyter-events_0.12.0-2.dsc bc861cf753a8020cf2354b3a39af60489777fb9e522458866a075f2cb5b6e78a 62346 jupyter-events_0.12.0.orig.tar.gz cda88d102232075b47c23ebc61f3e5f057a280502ad75d4e2ee19c15a22aa80e 4596 jupyter-events_0.12.0-2.debian.tar.xz"
+    "4714def40da6f060ee2572018442a1bd6879b5431510c457245987ab3838c417 3405 jupyter-events_0.12.0-3.dsc bc861cf753a8020cf2354b3a39af60489777fb9e522458866a075f2cb5b6e78a 62346 jupyter-events_0.12.0.orig.tar.gz 9f1f80dc38378bf9bd034204068e909c30dda9ee6b9152beaaf28aea750f0a2c 4936 jupyter-events_0.12.0-3.debian.tar.xz"
   ],
   "Description": [
     "Event system for Jupyter applications and extensions Jupyter Events is a configurable event system that enables Jupyter Python Applications (e.g. Jupyter Server, JupyterLab Server, JupyterHub, etc.) to emit events-structured data describing things happening inside the application. Other software (e.g. client applications like JupyterLab) can listen and respond to these events."
@@ -18,13 +18,13 @@
     "pool/main/j/jupyter-events"
   ],
   "Files": [
-    "e6e0ab5b441cc18a15aaa77a092a91a7 3200 jupyter-events_0.12.0-2.dsc 8e7e061b0c13546358d0f2a035d5d0ce 62346 jupyter-events_0.12.0.orig.tar.gz c000a8379fed386b3f49303da65ecfa2 4596 jupyter-events_0.12.0-2.debian.tar.xz"
+    "91c82b3d4e4f7cf72253141d361afdc4 3405 jupyter-events_0.12.0-3.dsc 8e7e061b0c13546358d0f2a035d5d0ce 62346 jupyter-events_0.12.0.orig.tar.gz 64e62ba00775683c34e05d72d4840ab9 4936 jupyter-events_0.12.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://jupyter.org/"
+    "https://jupyter.org/"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -33,7 +33,7 @@
     "jupyter-events"
   ],
   "Package-List": [
-    "python-jupyter-events-doc deb doc optional arch=all profile=!nodoc python3-jupyter-events deb python optional arch=all"
+    "python-jupyter-events-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-jupyter-events deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/jupyter-events.git"
   ],
   "Version": [
-    "0.12.0-2"
+    "0.12.0-3"
   ]
 }
