@@ -6,16 +6,19 @@
     "librust-async-compat-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-futures-io-0.3+default-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.4.1-~~) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+rt-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev (\u003e= 0.3.5) \u003c!nocheck\u003e, librust-futures-io-0.3+default-dev (\u003e= 0.3.5) \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.4.1) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+rt-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0c8be60932da95f63d852d801b1c8bccb07fdf54b9ac80f9cb81bd41d968a66c 2784 rust-async-compat_0.2.3-1.dsc f68a707c1feb095d8c07f8a65b9f506b117d30af431cab89374357de7c11461b 10777 rust-async-compat_0.2.3.orig.tar.gz d68a5ac4d57c9205ea0a3946574a6e22d0ab3effe7988b263177e34e6402a4d4 2632 rust-async-compat_0.2.3-1.debian.tar.xz"
+    "49452fdb44033aedf140fd68d21bc599c9fb82201c19dd5f0a6576a4c5eaf8f6 2231 rust-async-compat_0.2.5-1.dsc a1ba85bc55464dcbf728b56d97e119d673f4cf9062be330a9a26f3acf504a590 26008 rust-async-compat_0.2.5.orig.tar.gz 1b5851ac03c6122b6631e74a8915397bc8707c3b23c4e7a07e66f74d343242f6 2960 rust-async-compat_0.2.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-compat"
   ],
   "Files": [
-    "b0eff5e39ee2c00e29c7c92926533ac3 2784 rust-async-compat_0.2.3-1.dsc 8370fa06dec1e43514153cf24807f151 10777 rust-async-compat_0.2.3.orig.tar.gz de50ea8e3bac4acd8fbfaa0b77013215 2632 rust-async-compat_0.2.3-1.debian.tar.xz"
+    "0cc7b56b60e9d744475e0ecfbe59fd30 2231 rust-async-compat_0.2.5-1.dsc a52742d3e79437effc6103df2d47a17f 26008 rust-async-compat_0.2.5.orig.tar.gz 005b8d76045a9b5c3aebd9e93ccc365f 2960 rust-async-compat_0.2.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-blocking-1+default-dev, librust-futures-0.3+default-dev, librust-reqwest-0.11+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-warp-0.3+default-dev"
+    "dh-cargo, librust-blocking-1+default-dev, librust-futures-0.3+default-dev, librust-reqwest-0.12+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-warp-0.4+default-dev, librust-warp-0.4+server-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-compat]"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.2.5-1"
   ]
 }
