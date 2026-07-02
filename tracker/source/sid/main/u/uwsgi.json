@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "uwsgi, uwsgi-core, uwsgi-dev, uwsgi-emperor, uwsgi-extra, uwsgi-plugin-alarm-curl, uwsgi-plugin-alarm-xmpp, uwsgi-plugin-curl-cron, uwsgi-plugin-emperor-pg, uwsgi-plugin-geoip, uwsgi-plugin-graylog2, uwsgi-plugin-ldap, uwsgi-plugin-router-access, uwsgi-plugin-sqlite3, uwsgi-plugin-xslt, uwsgi-src"
+    "uwsgi, uwsgi-core, uwsgi-initscripts, uwsgi-dev, uwsgi-emperor, uwsgi-extra, uwsgi-plugin-alarm-curl, uwsgi-plugin-alarm-xmpp, uwsgi-plugin-curl-cron, uwsgi-plugin-emperor-pg, uwsgi-plugin-geoip, uwsgi-plugin-graylog2, uwsgi-plugin-ldap, uwsgi-plugin-router-access, uwsgi-plugin-sqlite3, uwsgi-plugin-xslt, uwsgi-src"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), python3, help2man \u003c!nodoc\u003e, libacl1-dev, libcap-dev [linux-any], libcurl4-openssl-dev, libcrypt-dev, libgeoip-dev, libgloox-dev, libjansson-dev, libldap2-dev, libpam0g-dev, libpcre2-dev, libpq-dev, libsqlite3-dev, libssl-dev, libsystemd-dev [!hurd-any] | libsystemd-journal-dev [!hurd-any], libwrap0-dev, libxml2-dev, libxslt1-dev, libyajl-dev, libyaml-dev, libzmq5-dev | libzmq3-dev [!hurd-any] | libzmq-dev [!hurd-any], shellcheck \u003c!nocheck\u003e, uuid-dev, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "ddcaf0348d25c1c85d0b27909d1fb335a37f10ab0d65b7703d15f8a4c9e322b6 3453 uwsgi_2.0.31-4.dsc d5fb7b058a6e037cad1f0fb8841de56d673d80a3af036bba830143b60c67c3dc 822440 uwsgi_2.0.31.orig.tar.gz 7085dfc52b150a3a4946fcd6d598e4257d39d124dd65486982efec9323808413 57616 uwsgi_2.0.31-4.debian.tar.xz"
+    "7bc386c24ad36fac5ac80a7832c9f9271c2bcbb9018f7fe96daaecb0e60a4065 3521 uwsgi_2.0.31-5.dsc d5fb7b058a6e037cad1f0fb8841de56d673d80a3af036bba830143b60c67c3dc 822440 uwsgi_2.0.31.orig.tar.gz 0dc0730d72a985dc3d24746f3e11a0409f72a7ffc1f4fe973a4552729d262fea 58584 uwsgi_2.0.31-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/uwsgi"
   ],
   "Files": [
-    "ecaf57e4929fa66da4ce52ac27b598ca 3453 uwsgi_2.0.31-4.dsc a797a17fbf6f86d722ffa0948f6e1488 822440 uwsgi_2.0.31.orig.tar.gz 644e582eb92edbc6b3ef2a4f5f55754f 57616 uwsgi_2.0.31-4.debian.tar.xz"
+    "cc7f7c9df601bca8aba258e05e9f05c0 3521 uwsgi_2.0.31-5.dsc a797a17fbf6f86d722ffa0948f6e1488 822440 uwsgi_2.0.31.orig.tar.gz 3a9ec01aa2fea3809a0a8a900465a116 58584 uwsgi_2.0.31-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "uwsgi"
   ],
   "Package-List": [
-    "uwsgi deb httpd optional arch=any uwsgi-core deb httpd optional arch=any uwsgi-dev deb libdevel optional arch=any uwsgi-emperor deb httpd optional arch=all uwsgi-extra deb httpd optional arch=all uwsgi-plugin-alarm-curl deb httpd optional arch=any uwsgi-plugin-alarm-xmpp deb httpd optional arch=any uwsgi-plugin-curl-cron deb httpd optional arch=any uwsgi-plugin-emperor-pg deb httpd optional arch=any uwsgi-plugin-geoip deb httpd optional arch=any uwsgi-plugin-graylog2 deb httpd optional arch=any uwsgi-plugin-ldap deb httpd optional arch=any uwsgi-plugin-router-access deb httpd optional arch=any uwsgi-plugin-sqlite3 deb httpd optional arch=any uwsgi-plugin-xslt deb httpd optional arch=any uwsgi-src deb libdevel optional arch=all"
+    "uwsgi deb httpd optional arch=any uwsgi-core deb oldlibs optional arch=all uwsgi-dev deb libdevel optional arch=any uwsgi-emperor deb httpd optional arch=all uwsgi-extra deb httpd optional arch=all uwsgi-initscripts deb httpd optional arch=all uwsgi-plugin-alarm-curl deb httpd optional arch=any uwsgi-plugin-alarm-xmpp deb httpd optional arch=any uwsgi-plugin-curl-cron deb httpd optional arch=any uwsgi-plugin-emperor-pg deb httpd optional arch=any uwsgi-plugin-geoip deb httpd optional arch=any uwsgi-plugin-graylog2 deb httpd optional arch=any uwsgi-plugin-ldap deb httpd optional arch=any uwsgi-plugin-router-access deb httpd optional arch=any uwsgi-plugin-sqlite3 deb httpd optional arch=any uwsgi-plugin-xslt deb httpd optional arch=any uwsgi-src deb libdevel optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "web"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/uwsgi-team/uwsgi.git"
   ],
   "Version": [
-    "2.0.31-4"
+    "2.0.31-5"
   ]
 }
