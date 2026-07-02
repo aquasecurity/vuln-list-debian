@@ -9,22 +9,31 @@
     "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohappyeyeballs, python3-async-interrupt, python3-async-timeout, python3-chacha20poly1305-reuseable, python3-cryptography, python3-noiseprotocol, python3-protobuf, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-zeroconf"
+    "python3-aiohappyeyeballs \u003c!nocheck\u003e, python3-async-interrupt \u003c!nocheck\u003e, python3-async-timeout \u003c!nocheck\u003e, python3-chacha20poly1305-reuseable \u003c!nocheck\u003e, python3-cryptography \u003c!nocheck\u003e, python3-noiseprotocol \u003c!nocheck\u003e, python3-protobuf \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-tzlocal \u003c!nocheck\u003e, python3-zeroconf \u003c!nocheck\u003e, tzdata \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "43d76efd257749845ec43b38697e9d8c11557fb977040b5c79c68d8499061240 2519 python-aioesphomeapi_25.1.0-2.dsc 311448c497bae4890bcebb0a8b8ec9c1e453bbd2bbde67272518693c34cb0831 93028 python-aioesphomeapi_25.1.0.orig.tar.xz dcd553afde6b59db5786eda3eb0055e074fdef582c5a9772acf2647bccdda5fc 2748 python-aioesphomeapi_25.1.0-2.debian.tar.xz"
+    "da922cea4e4fa135c9e53203c2e6fc8737aedafd2c570253cdfa568d04bb27ca 2952 python-aioesphomeapi_45.5.2-1.dsc 3ade9a7120613bbf4d97721b09e7fecce2cf9941f8ede7a19e7d0cc8aa3d7d4d 208492 python-aioesphomeapi_45.5.2.orig.tar.xz cfefe0f8061e25797c6135996ff3a9555abb64188c91693a0793853d2b02545a 4476 python-aioesphomeapi_45.5.2-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "735cbd1db8f57b33c4d62b99234d735aa2f6076e debian archive/debian/45.5.2-1 https://git.dgit.debian.org/python-aioesphomeapi"
   ],
   "Directory": [
     "pool/main/p/python-aioesphomeapi"
   ],
   "Files": [
-    "73fbf3a812dcc23a10b53644d7c7491e 2519 python-aioesphomeapi_25.1.0-2.dsc 9fa10f033ae1f1633bdf71b456e820a0 93028 python-aioesphomeapi_25.1.0.orig.tar.xz fdbb01bdd564e31adfffac085010f720 2748 python-aioesphomeapi_25.1.0-2.debian.tar.xz"
+    "b6d476138977f6fb84f21364f5cef45b 2952 python-aioesphomeapi_45.5.2-1.dsc 7ed829d5e21eecca26ec50f458569f2c 208492 python-aioesphomeapi_45.5.2.orig.tar.xz 27d48cc86790b30179b36b5a9bf89ddf 4476 python-aioesphomeapi_45.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
+  "Git-Tag-Info": [
+    "tag=d0e078cd4ed30c6880fab61daed56e2c7e799ce4 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
+  ],
   "Homepage": [
-    "https://github.com/esphome/aioesphomeapi/"
+    "https://github.com/esphome/aioesphomeapi"
   ],
   "Maintainer": [
     "Home Assistant Team \u003cteam+homeassistant@tracker.debian.org\u003e"
@@ -42,16 +51,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@, pybuild-plugin-autopkgtest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-aioesphomeapi"
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-aioesphomeapi.git"
   ],
   "Version": [
-    "25.1.0-2"
+    "45.5.2-1"
   ]
 }
