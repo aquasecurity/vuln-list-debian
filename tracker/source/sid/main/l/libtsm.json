@@ -6,16 +6,19 @@
     "libtsm4, libtsm-dev"
   ],
   "Build-Depends": [
-    "check \u003c!nocheck\u003e, meson, debhelper-compat (= 13), libxkbcommon-dev, pkgconf"
+    "check \u003c!nocheck\u003e, meson, debhelper-compat (= 14), libxkbcommon-dev, pkgconf"
   ],
   "Checksums-Sha256": [
-    "63bdc04f8bd75d0f8ec62165bf96219564fd5647f98ad6c2bccd8997c9b51dca 1920 libtsm_4.5.0-0.2.dsc 2b83f0b49092e4fa93114df69d30cda86213bfec3bd9f3ade3a58a91de88c31b 153803 libtsm_4.5.0.orig.tar.gz d652a0c10d3514e2b8429183abb6493cf953f51e4f66ea7c177615f665ee962f 6544 libtsm_4.5.0-0.2.debian.tar.xz"
+    "5c9303b5da41bf2715a9338a537f4ebec5396090770449ab894beafde411819a 3016 libtsm_4.6.0-0.1.dsc 89af0a242a53a01968c651d1372bda8ab0a5a2e40d6a3a306d4ff0f08906e53f 155248 libtsm_4.6.0.orig.tar.gz d5c63d1641ca2150f5b30fd7873628fe5b3b4f0fbe3802bbeb1e961043410b94 9460 libtsm_4.6.0-0.1.debian.tar.xz"
+  ],
+  "Description": [
+    "Terminal-emulator State Machine TSM is a state machine for DEC VT100-VT520 compatible terminal emulators. It tries to support all common standards while keeping compatibility to existing emulators like xterm, gnome-terminal, konsole, .. . TSM itself does not provide any rendering nor window management. It is a simple plain state machine without any external dependencies. It can be used to implement terminal emulators, but also to implement other applications that need to interpret terminal escape sequences. . This library is very similar to libvte of the GNOME project. However, libvte is highly bound to GTK+, which makes it unsuitable for non-graphics projects that need to parse escape sequences. Instead, TSM tries to restrict its API to terminal emulation only. Furthermore, TSM does not try to establish a new terminal emulation standard, but instead keeps compatibility as close to xterm as possible. This is why the TERM variable can be set to xterm-color256 with any TSM based terminal emulator."
   ],
   "Directory": [
     "pool/main/libt/libtsm"
   ],
   "Files": [
-    "433de33d4547b7699ba3338872c3b710 1920 libtsm_4.5.0-0.2.dsc 786644885927e7cdc0db389b6dd0a72c 153803 libtsm_4.5.0.orig.tar.gz 16ad276d4e2f302a1e2c90e94859a057 6544 libtsm_4.5.0-0.2.debian.tar.xz"
+    "d3f4f9d00ca282c8190164314cf3fe3d 3016 libtsm_4.6.0-0.1.dsc 890ab41a5a3e450a582cfb3a27dcdc31 155248 libtsm_4.6.0.orig.tar.gz 47989182c96ac012cfa98872ac94f2d0 9460 libtsm_4.6.0-0.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +44,12 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/libtsm"
   ],
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/debian/libtsm.git"
   ],
   "Version": [
-    "4.5.0-0.2"
+    "4.6.0-0.1"
   ]
 }
