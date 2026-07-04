@@ -6,19 +6,25 @@
     "librust-block-padding-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-generic-array-0.14+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hybrid-array-0.4+default-dev (\u003e= 0.4.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1f96a22b87c1004fae10ad0db74b357591bd543c37883dfa2b347ca2c7ca7876 2248 rust-block-padding_0.3.3-1.dsc a8894febbff9f758034a5b8e12d87918f56dfc64a8e1fe757d65e29041538d93 8504 rust-block-padding_0.3.3.orig.tar.gz d4c826763f2f54907ec10146917063b0fd781ad711430c988470f94021572304 2856 rust-block-padding_0.3.3-1.debian.tar.xz"
+    "97b64c97f0fb62404028ee087dc06c789c8b9771af67689f66487db184b8abb0 2362 rust-block-padding_0.4.2-1.dsc 710f1dd022ef4e93f8a438b4ba958de7f64308434fa6a87104481645cc30068b 9764 rust-block-padding_0.4.2.orig.tar.gz 5b09ef9abe5ceb8d8d08257d87b329d61ef8248afc6aa7eac7057693a6052d4c 2876 rust-block-padding_0.4.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-block-padding"
   ],
   "Files": [
-    "284739dd6781a5b47c1b0a898dcf47b3 2248 rust-block-padding_0.3.3-1.dsc a493a60867a1202efa8d814280b54a2f 8504 rust-block-padding_0.3.3.orig.tar.gz 7720948612b45f3a82ba35cdad316718 2856 rust-block-padding_0.3.3-1.debian.tar.xz"
+    "8fbc05eb1fda02f0942e90928c01e0cf 2362 rust-block-padding_0.4.2-1.dsc 07238aee1a435719cae03503bee62631 9764 rust-block-padding_0.4.2.orig.tar.gz 2b7c9f8f63cc0c4d44fe75774cac0a1e 2876 rust-block-padding_0.4.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/utils"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/block-padding]"
   ],
   "Version": [
-    "0.3.3-1"
+    "0.4.2-1"
   ]
 }

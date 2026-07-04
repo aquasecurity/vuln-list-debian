@@ -1,15 +1,15 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "ibus-libpinyin"
+    "ibus-libpinyin-common, ibus-libpinyin, ibus-libbopomofo"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, gettext, libgtk-3-dev, libibus-1.0-dev, libjson-glib-dev, liblua5.4-dev, libnotify-dev, libopencc-dev (\u003e= 1.1.9~), libpinyin15-dev (\u003e= 2.10), libsoup-3.0-dev, libsqlite3-dev, libtool, pkgconf, python3-gi, python3:any, sqlite3, uuid-dev"
+    "debhelper-compat (= 14), dh-sequence-python3, gettext, libgtk-3-dev, libibus-1.0-dev, libjson-glib-dev, liblua5.4-dev, libnotify-dev, libopencc-dev (\u003e= 1.1.9~), libpinyin15-dev (\u003e= 2.10), libsoup-3.0-dev, libsqlite3-dev, libtool, pkgconf, python3-gi, python3:any, sqlite3, uuid-dev"
   ],
   "Checksums-Sha256": [
-    "fa3a78f6465d126bb1cca8e334be8b115bc830adb0e1589faad878b1a3c3f338 2494 ibus-libpinyin_1.16.5-3.dsc cc652d48e68b8b03afc5e9e08509676aee89f9d492b9a3897cd028bcc800ce31 1351562 ibus-libpinyin_1.16.5.orig.tar.gz 0316cafae380596bb802547cfd451e5076c7ca094db1c845fc5b685ec3cb655d 6600 ibus-libpinyin_1.16.5-3.debian.tar.xz"
+    "2cb37b08913c2da1ac0108f2c1ede11018240a63f53fd42b8b154df51b82f0fb 2639 ibus-libpinyin_1.16.5-4.dsc cc652d48e68b8b03afc5e9e08509676aee89f9d492b9a3897cd028bcc800ce31 1351562 ibus-libpinyin_1.16.5.orig.tar.gz a7c75c580a817f8b1a8d8cd6fa1ac5a220b4cf643a2cd6115ec5e45ca6b62bab 10260 ibus-libpinyin_1.16.5-4.debian.tar.xz"
   ],
   "Description": [
     "Intelligent Pinyin engine based on libpinyin for IBus It includes a Chinese Pinyin input method and a Chinese ZhuYin (Bopomofo) input method based on libpinyin for IBus."
@@ -18,7 +18,7 @@
     "pool/main/i/ibus-libpinyin"
   ],
   "Files": [
-    "74f1e9ec57727c5f7c9a59d8ef711d1e 2494 ibus-libpinyin_1.16.5-3.dsc bbdf41a37c16d62a2b91fe1afd5bc4e8 1351562 ibus-libpinyin_1.16.5.orig.tar.gz 738011b4dfa9e8c1eb8a12eefdac8610 6600 ibus-libpinyin_1.16.5-3.debian.tar.xz"
+    "cd343e407d3d59b40a906adccca74813 2639 ibus-libpinyin_1.16.5-4.dsc bbdf41a37c16d62a2b91fe1afd5bc4e8 1351562 ibus-libpinyin_1.16.5.orig.tar.gz e3376110ffafb373081eb3bb04c94fcf 10260 ibus-libpinyin_1.16.5-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "ibus-libpinyin"
   ],
   "Package-List": [
-    "ibus-libpinyin deb utils optional arch=any"
+    "ibus-libbopomofo deb utils optional arch=all ibus-libpinyin deb utils optional arch=all ibus-libpinyin-common deb utils optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/ibus-libpinyin.git"
   ],
   "Version": [
-    "1.16.5-3"
+    "1.16.5-4"
   ]
 }

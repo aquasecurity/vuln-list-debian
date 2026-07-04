@@ -6,19 +6,25 @@
     "librust-inout-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-generic-array-0.14+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hybrid-array-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "abed2bc2252612a470e4239beaa6f4f1275d950faa5640a0566750e6810238fc 2151 rust-inout_0.1.3-3.dsc a0c10553d664a4d0bcff9f4215d0aac67a639cc68ef660840afe309b807bc9f5 10743 rust-inout_0.1.3.orig.tar.gz 9ac1852be47b53569ca2f48d791e8ceef94ed7c888e32c24b4581a3ac686a17a 2960 rust-inout_0.1.3-3.debian.tar.xz"
+    "f1b35f10f0147c1b270ec8eaf4e28214040af38bfd169f4d98578614a4f638ed 2225 rust-inout_0.2.2-1.dsc 4250ce6452e92010fdf7268ccc5d14faa80bb12fc741938534c58f16804e03c7 12547 rust-inout_0.2.2.orig.tar.gz 9f0de68c4d25d42f0d64715ab9471d750fcc0c181e9bd3de716e389a20b2b7bf 2956 rust-inout_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-inout"
   ],
   "Files": [
-    "3f17fb8f6ece074c5223d09b178a020e 2151 rust-inout_0.1.3-3.dsc 5f3fd38b7aefc1ca48efe279994953f8 10743 rust-inout_0.1.3.orig.tar.gz b508f0f9fe679047a8e4a91ec7d1d81c 2960 rust-inout_0.1.3-3.debian.tar.xz"
+    "1cf36799410003cdb512871bd7389612 2225 rust-inout_0.2.2-1.dsc c93aadfecc517c3c2424106f3ebd01f3 12547 rust-inout_0.2.2.orig.tar.gz dc0bb0f968f3c7ae99f9f99b10014aad 2956 rust-inout_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/utils"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Liang Yan \u003cly@xryan.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/inout]"
   ],
   "Version": [
-    "0.1.3-3"
+    "0.2.2-1"
   ]
 }

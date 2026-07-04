@@ -6,31 +6,25 @@
     "frei0r-plugins, frei0r-plugins-dev, frei0r-plugins-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libcairo2-dev, libgavl-dev [linux-any], libopencv-dev, ninja-build, pkgconf"
+    "debhelper-compat (= 14), cmake, libcairo2-dev, libgavl-dev [linux-any], libopencv-dev, ninja-build, pkgconf"
   ],
   "Build-Depends-Indep": [
-    "doxygen"
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "628c9bfc3b929bff8f8c4431d3b6bef11d9e2ab2ea2d5cc865fccb4b79f5e914 2531 frei0r_3.1.3-2.dsc df3e7cf56d3a99075412e7b8f6630b0eff987a6ce1103a67b674a1b405a758a0 954652 frei0r_3.1.3.orig.tar.gz dea8d4ad1c7c9ffda6e3bd79a4557e2e34b289a12ddb525b2d2603ec7eb4db25 27824 frei0r_3.1.3-2.debian.tar.xz"
+    "e6001600ab7c00919e1f2599535e0d96d6209df8561e526d6d0e97f61da25e31 2421 frei0r_3.2.3-1.dsc 853605bfb51432631d4fa64769cab1493bbe701f2947f18a31a9f055c1275ad6 4189880 frei0r_3.2.3.orig.tar.gz f52353434d3dd9f8e7f93bf54c4b013635cb7b8c00ab50947cd7e0d4499c1a1b 29448 frei0r_3.2.3-1.debian.tar.xz"
   ],
   "Dgit": [
-    "0bb18055cd95d83dd9ea139da64953d4ce502262 debian archive/debian/3.1.3-2 https://git.dgit.debian.org/frei0r"
+    "78d5e622ebcbd37331fe22597d355531b31dc095 debian archive/debian/3.2.3-1 https://git.dgit.debian.org/frei0r"
   ],
   "Directory": [
     "pool/main/f/frei0r"
   ],
   "Files": [
-    "0532599a3a7bb7be258b773157f87bbe 2531 frei0r_3.1.3-2.dsc 0361c13713f2f056cc964c20c822c04a 954652 frei0r_3.1.3.orig.tar.gz f897d8d1b0d4b074974dc47e65a987e9 27824 frei0r_3.1.3-2.debian.tar.xz"
+    "23751c96b900d80f8e7aa582fa263b46 2421 frei0r_3.2.3-1.dsc 0fa60afa8bf467114bba38754acee2b1 4189880 frei0r_3.2.3.orig.tar.gz 3cd1fa27daaf2b0c6742faabf15da4a3 29448 frei0r_3.2.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=86538b11d1464b8befda69860a50e4a71dc14bba fp=7405e745574809734800156db65019c47f7a36f8"
-  ],
-  "Git-Tag-Tagger": [
-    "IOhannes m zmölnig (Debian/GNU) \u003cumlaeute@debian.org\u003e"
   ],
   "Homepage": [
     "https://frei0r.dyne.org/"
@@ -42,7 +36,7 @@
     "frei0r"
   ],
   "Package-List": [
-    "frei0r-plugins deb video optional arch=any frei0r-plugins-dev deb devel optional arch=all frei0r-plugins-doc deb doc optional arch=all"
+    "frei0r-plugins deb video optional arch=any frei0r-plugins-dev deb devel optional arch=all frei0r-plugins-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -69,6 +63,6 @@
     "https://salsa.debian.org/multimedia-team/frei0r.git"
   ],
   "Version": [
-    "3.1.3-2"
+    "3.2.3-1"
   ]
 }

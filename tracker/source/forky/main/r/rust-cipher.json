@@ -6,19 +6,25 @@
     "librust-cipher-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crypto-common-0.1+default-dev (\u003e= 0.1.6-~~) \u003c!nocheck\u003e, librust-inout-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crypto-common-0.2+default-dev (\u003e= 0.2.2) \u003c!nocheck\u003e, librust-inout-0.2+default-dev (\u003e= 0.2.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "98cf8b02e42253528aa149db07cca8814a393d2fa9a5343472241087a893d26b 2229 rust-cipher_0.4.4-3.dsc 773f3b9af64447d2ce9850330c473515014aa235e6a783b02db81ff39e4a3dad 19073 rust-cipher_0.4.4.orig.tar.gz 01642a2bdb94890e6d63923f85fc017cb6eddf7786b3c427fc9ea89eeaf99f46 3172 rust-cipher_0.4.4-3.debian.tar.xz"
+    "84b2d5ecc884f81e16643a22528b7960b6baef27a83d18bf7233653d3ef59d79 2349 rust-cipher_0.5.2-1.dsc e8cf2a2c93cd704877c0858356ed03480ff301ee950b43f1cbe4573b088bfa6c 28177 rust-cipher_0.5.2.orig.tar.gz e6ae1d3f83ec212b64abe38f1880ff2f4583b751433f3f3ab29b5c88a8491245 3296 rust-cipher_0.5.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cipher"
   ],
   "Files": [
-    "46de4c4f4e197b012efa4de449889638 2229 rust-cipher_0.4.4-3.dsc ef4cc5591659a050ca0de3363b6ab353 19073 rust-cipher_0.4.4.orig.tar.gz 82bb1ff4a2610b4bea6f0b2e856978c0 3172 rust-cipher_0.4.4-3.debian.tar.xz"
+    "4672f45a2d090646c5b53dd40af5ebc6 2349 rust-cipher_0.5.2-1.dsc e2f1a3668240b036ff6607af5b7bc398 28177 rust-cipher_0.5.2.orig.tar.gz ee14d546557e2adc22289630626d80cc 3296 rust-cipher_0.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/traits"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cipher]"
   ],
   "Version": [
-    "0.4.4-3"
+    "0.5.2-1"
   ]
 }
