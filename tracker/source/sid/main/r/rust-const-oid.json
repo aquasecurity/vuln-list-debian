@@ -6,16 +6,19 @@
     "librust-const-oid-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.57) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1d084a0171780048db1307208357e3a2387d3d9d4065dfc63ef78845a980ed79 1746 rust-const-oid_0.9.6-1.dsc c2459377285ad874054d797f3ccebf984978aa39129f6eafde5cdc8315b612f8 45382 rust-const-oid_0.9.6.orig.tar.gz 254c7532ee72b2fb603893002eaf4b4803c84ff2db3ed2bffbb738763ba090f6 2824 rust-const-oid_0.9.6-1.debian.tar.xz"
+    "da7efa607bf46822a2ab18e216c7a73aad29a5081d694fb9c87d83409e696ab8 2354 rust-const-oid_0.10.2-1.dsc a6ef517f0926dd24a1582492c791b6a4818a4d94e789a334894aa15b0d12f55c 61449 rust-const-oid_0.10.2.orig.tar.gz 6c51c652649120c7d3f9ab721088b7a94d4526523f41459428d6d28624c63253 2896 rust-const-oid_0.10.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-const-oid"
   ],
   "Files": [
-    "60710e23c9480fb052d559744b859c5b 1746 rust-const-oid_0.9.6-1.dsc 6ed0aab506ad1ec23e34c6aec4efd1d7 45382 rust-const-oid_0.9.6.orig.tar.gz 9a6ef02ff0179bc05801d81a6f4029da 2824 rust-const-oid_0.9.6-1.debian.tar.xz"
+    "d7daed0f436445a5c16e645e2756b9ac 2354 rust-const-oid_0.10.2-1.dsc 8e4822fb82d05c518512d0b7e7c685ff 61449 rust-const-oid_0.10.2.orig.tar.gz 24f3e5981693f6bbb9660b431a8e87a4 2896 rust-const-oid_0.10.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.3+default-dev, rustc"
+    "dh-cargo, librust-hex-literal-1+default-dev, librust-proptest-1+default-dev, librust-regex-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/const-oid]"
   ],
   "Version": [
-    "0.9.6-1"
+    "0.10.2-1"
   ]
 }

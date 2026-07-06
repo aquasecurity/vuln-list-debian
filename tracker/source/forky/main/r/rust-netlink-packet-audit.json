@@ -6,16 +6,19 @@
     "librust-netlink-packet-audit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-anyhow-1+default-dev (\u003e= 1.0.31-~~) \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.3.2-~~) \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8-~~) \u003c!nocheck\u003e, librust-netlink-packet-core-0.7+default-dev \u003c!nocheck\u003e, librust-netlink-packet-utils-0.5+default-dev (\u003e= 0.5.2-~~) \u003c!nocheck\u003e, librust-netlink-proto-0.11-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.8) \u003c!nocheck\u003e, librust-netlink-packet-core-0.8+default-dev \u003c!nocheck\u003e, librust-netlink-proto-0.12-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "96c313a07ac8f6db17a769adfec9d0eeeaa8d5df9d6d28469157a7e79679e2cd 2755 rust-netlink-packet-audit_0.5.1-1.dsc af2754802fc8722062c38128d0c5dffd86fe4462877db60e736ab58b0daf5144 18075 rust-netlink-packet-audit_0.5.1.orig.tar.gz d9d991668f8aa85c37ae34aaa412f994a64a6ad14c8dba19fa1d86baef40ee0f 2680 rust-netlink-packet-audit_0.5.1-1.debian.tar.xz"
+    "3bdd26c3a8552142c2a7491272b5afa51bc1dd27fcc97d3bcb7654f5f6919917 2599 rust-netlink-packet-audit_0.6.1-1.dsc ca9e80389b423ef073a74f393a57c37ffef7bcf058212c233412f19a026109b8 20079 rust-netlink-packet-audit_0.6.1.orig.tar.gz cc891bf83e2b978adbd7279c3cc1bbbefd0f65ee932e13d1729697aac1526b0e 2744 rust-netlink-packet-audit_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-netlink-packet-audit"
   ],
   "Files": [
-    "2c0ab635e6cc0710b7fbc823f0427fcd 2755 rust-netlink-packet-audit_0.5.1-1.dsc 0d9677a3dc8977a0e6228cdc965562c1 18075 rust-netlink-packet-audit_0.5.1.orig.tar.gz b21f65259a33a571a6f9d564fc2fb816 2680 rust-netlink-packet-audit_0.5.1-1.debian.tar.xz"
+    "377ffa9033796b442f8f064ae5039423 2599 rust-netlink-packet-audit_0.6.1-1.dsc e43468769a2db02e68ed5a1e5048c58d 20079 rust-netlink-packet-audit_0.6.1.orig.tar.gz 5864b4ebe2a9f510011ba71dea5dcaf1 2744 rust-netlink-packet-audit_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/netlink-packet-audit]"
   ],
   "Version": [
-    "0.5.1-1"
+    "0.6.1-1"
   ]
 }

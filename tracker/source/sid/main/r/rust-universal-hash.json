@@ -6,19 +6,25 @@
     "librust-universal-hash-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crypto-common-0.1+default-dev (\u003e= 0.1.6-~~) \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crypto-common-0.2+default-dev \u003c!nocheck\u003e, librust-ctutils-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cfcf4ce43fc5d94baf20f4e277b53edeb9fa554309eb6d503c2b074ff4279681 2317 rust-universal-hash_0.5.1-1.dsc fc1de2c688dc15305988b563c3854064043356019f97a4b46276fe734c4f07ea 9146 rust-universal-hash_0.5.1.orig.tar.gz a098d0db61f58d536d55f7eaf3b333e9ce7fd6ce4f30f7680bd05b9e2a3d3aa1 2852 rust-universal-hash_0.5.1-1.debian.tar.xz"
+    "11b36b8dce085f02136b3f91c91981ce54a87c01c96615eddac1b918ea3395ed 2379 rust-universal-hash_0.6.1-1.dsc f4987bdc12753382e0bec4a65c50738ffaabc998b9cdd1f952fb5f39b0048a96 9478 rust-universal-hash_0.6.1.orig.tar.gz 31a35c064b55edd12a22f91fe037fa63fffb7b9a2084fa123dca514227a8493e 2868 rust-universal-hash_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-universal-hash"
   ],
   "Files": [
-    "24241be02951bd79271a1ec911ffbaab 2317 rust-universal-hash_0.5.1-1.dsc 161cc60e750d6829434734ccecc44c64 9146 rust-universal-hash_0.5.1.orig.tar.gz 24e29b708af681a77e190ff841e6896c 2852 rust-universal-hash_0.5.1-1.debian.tar.xz"
+    "e95d6bfdb9ed581519df33c2d6a31ab1 2379 rust-universal-hash_0.6.1-1.dsc 3555eaa0fa41800270aa21039d27345d 9478 rust-universal-hash_0.6.1.orig.tar.gz de4c8b0ed6c8ba18f0f613a12d9bb4f1 2868 rust-universal-hash_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/traits"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/universal-hash]"
   ],
   "Version": [
-    "0.5.1-1"
+    "0.6.1-1"
   ]
 }
