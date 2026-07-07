@@ -6,19 +6,25 @@
     "librust-base16ct-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b7da032300503ec40734ce6c7aac321c7977d24cdca6f03498cbc581cb82f832 2124 rust-base16ct_0.2.0-1.dsc 66d57a43a1dc71e53d7eff75d82cbacbc6c100171dac46d320cef5bcda3927d0 10033 rust-base16ct_0.2.0.orig.tar.gz bbfb5cba56fccc2548a1098aa7e54fe4590169364905a50af6e48f98465344c6 2844 rust-base16ct_0.2.0-1.debian.tar.xz"
+    "3dc6b902cf2918dc6e8b93820b5bf2d76da92ac1528907b3364a7ddbec938d31 2252 rust-base16ct_1.0.0-1.dsc fd307490d624467aa6f74b0eabb77633d1f758a7b25f12bceb0b22e08d9726f6 10594 rust-base16ct_1.0.0.orig.tar.gz d3052f6682866a24359e0d0503d8b61aa862e3df7de7eff27ecd4c25e2ff9b82 2848 rust-base16ct_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-base16ct"
   ],
   "Files": [
-    "6c1593c631f757390bde9ec10a225b58 2124 rust-base16ct_0.2.0-1.dsc ad78886a3ee266513cd54fa562e75670 10033 rust-base16ct_0.2.0.orig.tar.gz 17da7b5a61d221037296b35b33f52446 2844 rust-base16ct_0.2.0-1.debian.tar.xz"
+    "1285a98a5d2292204975dd3c36e89c62 2252 rust-base16ct_1.0.0-1.dsc cae52d09c6ed04f13a8c6663243961a3 10594 rust-base16ct_1.0.0.orig.tar.gz d03b9f9d5d22ed7b7596ffc6ad516c06 2848 rust-base16ct_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/formats/tree/master/base16ct"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/base16ct]"
   ],
   "Version": [
-    "0.2.0-1"
+    "1.0.0-1"
   ]
 }

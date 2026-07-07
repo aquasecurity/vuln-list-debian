@@ -6,16 +6,19 @@
     "librust-flagset-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2b0cd9ad0b826d1e86a456e37378b46cd779e1c7042c195ff746860138cac671 2213 rust-flagset_0.4.3-1.dsc cda653ca797810c02f7ca4b804b40b8b95ae046eb989d356bce17919a8c25499 13054 rust-flagset_0.4.3.orig.tar.gz e155641f322aa8aea41c0eda5ca53852d168ef2ac43a546cefb258b43084b8e0 2072 rust-flagset_0.4.3-1.debian.tar.xz"
+    "86ed3f9fd8623a9764c09c2cad2d7ceaec736b46218dd81ed2bb9e910ceebed9 2272 rust-flagset_0.4.7-1.dsc b7ac824320a75a52197e8f2d787f6a38b6718bb6897a35142d749af3c0e8f4fe 13688 rust-flagset_0.4.7.orig.tar.gz 2290ca6f58c116c9d69df5ff2bf8760e0b8d6bf748b9ad578217ded8f5ccd2a0 2168 rust-flagset_0.4.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-flagset"
   ],
   "Files": [
-    "7220be433bd17d8c76b14db881c96346 2213 rust-flagset_0.4.3-1.dsc bc616c8a661bacf0b8bd0a23082780b8 13054 rust-flagset_0.4.3.orig.tar.gz 48832949c030148fc534d2f49180ccbb 2072 rust-flagset_0.4.3-1.debian.tar.xz"
+    "c9a909400402dcd8f05ac1d9967cbf98 2272 rust-flagset_0.4.7-1.dsc 7c0f201e9f4f00c96b637fc8da2fdbfa 13688 rust-flagset_0.4.7.orig.tar.gz 6200270ba1a6e7deb25f15c320da2d3b 2168 rust-flagset_0.4.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev, librust-serde-repr-0.1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, librust-serde-repr-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/flagset]"
   ],
   "Version": [
-    "0.4.3-1"
+    "0.4.7-1"
   ]
 }
