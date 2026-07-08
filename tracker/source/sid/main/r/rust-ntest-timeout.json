@@ -6,19 +6,25 @@
     "librust-ntest-timeout-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-crate-3+default-dev \u003c!nocheck\u003e | librust-proc-macro-crate-2+default-dev \u003c!nocheck\u003e | librust-proc-macro-crate-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro-crate+default-dev (\u003c\u003c 4) \u003c!nocheck\u003e, librust-proc-macro-crate+default-dev (\u003e= 1.1) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "74d1ea4a8941ebe97d794b638dbec9132d6504a41f228d60edcc3e7388323178 2531 rust-ntest-timeout_0.9.3-1.dsc fcc7c92f190c97f79b4a332f5e81dcf68c8420af2045c936c9be0bc9de6f63b5 3229 rust-ntest-timeout_0.9.3.orig.tar.gz a613ac315a878674f4c6ca0d1d6b435469e5029ac79fd50faacc58df61e9c1a6 2652 rust-ntest-timeout_0.9.3-1.debian.tar.xz"
+    "c24f95d298184dc54ea41f7fe98bfa2ff543c297c8d57a9641c159b86ee40927 2554 rust-ntest-timeout_0.9.5-1.dsc 9224be3459a0c1d6e9b0f42ab0e76e98b29aef5aba33c0487dfcf47ea08b5150 4693 rust-ntest-timeout_0.9.5.orig.tar.gz 9482417a337fd3427fa41e9095d2b4ef080835c0e1a80772bd00316e95be9d6f 2732 rust-ntest-timeout_0.9.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ntest-timeout"
   ],
   "Files": [
-    "637791e78948d75dd8f081115ed815e9 2531 rust-ntest-timeout_0.9.3-1.dsc 7032144050c13a73c998a86f0c798b9e 3229 rust-ntest-timeout_0.9.3.orig.tar.gz 8403d186bf748a05e8292dfc66fc42fa 2652 rust-ntest-timeout_0.9.3-1.debian.tar.xz"
+    "c40801c0eeea8ccef0bca5ad569026ce 2554 rust-ntest-timeout_0.9.5-1.dsc 5377085be5256b469a82703eee206812 4693 rust-ntest-timeout_0.9.5.orig.tar.gz 35eff7386ae57d5ef2daec76f9f07874 2732 rust-ntest-timeout_0.9.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/becheran/ntest"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ntest-timeout]"
   ],
   "Version": [
-    "0.9.3-1"
+    "0.9.5-1"
   ]
 }

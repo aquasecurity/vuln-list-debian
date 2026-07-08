@@ -6,19 +6,25 @@
     "librust-ntest-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ntest-test-cases-0.9+default-dev (\u003e= 0.9.3-~~) \u003c!nocheck\u003e, librust-ntest-timeout-0.9+default-dev (\u003e= 0.9.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ntest-test-cases-0.9+default-dev (\u003e= 0.9.5) \u003c!nocheck\u003e, librust-ntest-timeout-0.9+default-dev (\u003e= 0.9.5) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c2e1e5d9612ed84656a634199b6c5e414f56beff3c837015d13a8f5de2fecd99 2329 rust-ntest_0.9.3-1.dsc fb183f0a1da7a937f672e5ee7b7edb727bf52b8a52d531374ba8ebb9345c0330 4582 rust-ntest_0.9.3.orig.tar.gz 449d523e022bc82eb23a0e992c9cb29a18007b2fbb5dd0abe8ea1793466b241a 2684 rust-ntest_0.9.3-1.debian.tar.xz"
+    "23210bde3def22a56ccdb6400be9ae2706df25465448a973c6ca1b1fd5b741c0 2399 rust-ntest_0.9.5-1.dsc 54d1aa56874c2152c24681ed0df95ee155cc06c5c61b78e2d1e8c0cae8bc5326 6031 rust-ntest_0.9.5.orig.tar.gz 64950d5a6983de245cac2b57a4025b12b54ea83ee6d2e8b22d93df315b58073f 2768 rust-ntest_0.9.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ntest"
   ],
   "Files": [
-    "ce0d8caa7913fa3b98128ffaddc847cc 2329 rust-ntest_0.9.3-1.dsc 18b1c28c47a7f30c26de22b2b1c729b3 4582 rust-ntest_0.9.3.orig.tar.gz a136b29c91ba337191f41bc62f7bb22d 2684 rust-ntest_0.9.3-1.debian.tar.xz"
+    "6fda15476f71e65f7e135af0ea918e80 2399 rust-ntest_0.9.5-1.dsc 3166b839babcd84e5e409a27837735a9 6031 rust-ntest_0.9.5.orig.tar.gz edff6304146ab0f5e3a885e09daaaa57 2768 rust-ntest_0.9.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/becheran/ntest"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ntest]"
   ],
   "Version": [
-    "0.9.3-1"
+    "0.9.5-1"
   ]
 }

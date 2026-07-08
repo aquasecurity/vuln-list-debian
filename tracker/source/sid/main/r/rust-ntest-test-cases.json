@@ -6,19 +6,25 @@
     "librust-ntest-test-cases-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "906c65a39175d70795b5658892d9026abc156a2c541c8d63944549f45a67b983 2397 rust-ntest-test-cases_0.9.3-1.dsc 16d0d3f2a488592e5368ebbe996e7f1d44aa13156efad201f5b4d84e150eaa93 4804 rust-ntest-test-cases_0.9.3.orig.tar.gz 4ff8652d2ddc9d245e08fa6583d39bbe5f65f234b05277c4f222eb66192285c1 2556 rust-ntest-test-cases_0.9.3-1.debian.tar.xz"
+    "1130a42f890ccfb84ac0ebe5ecd636da38491e8b08a1efd19b75b149853cfbea 2473 rust-ntest-test-cases_0.9.5-1.dsc 6913433c6319ef9b2df316bb8e3db864a41724c2bb8f12555e07dc4ec69d3db1 5288 rust-ntest-test-cases_0.9.5.orig.tar.gz 05f1883c4959377875938c820a5b886c612d8d33c2279b9a64a236b41c800dbc 2660 rust-ntest-test-cases_0.9.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ntest-test-cases"
   ],
   "Files": [
-    "b77208cad52fd0065495d60bc712db78 2397 rust-ntest-test-cases_0.9.3-1.dsc 22edbe2b6010430ef44163ad03e219d2 4804 rust-ntest-test-cases_0.9.3.orig.tar.gz 8851f230ab903d385a26c66c7d5e3aaf 2556 rust-ntest-test-cases_0.9.3-1.debian.tar.xz"
+    "235dcd2effd3b10adbc616adf2f0d09b 2473 rust-ntest-test-cases_0.9.5-1.dsc cece822aed7e6472da624efb8a1b6f7f 5288 rust-ntest-test-cases_0.9.5.orig.tar.gz cad52e29f33f47a56db9412cc0f2ad6c 2660 rust-ntest-test-cases_0.9.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/becheran/ntest"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ntest-test-cases]"
   ],
   "Version": [
-    "0.9.3-1"
+    "0.9.5-1"
   ]
 }

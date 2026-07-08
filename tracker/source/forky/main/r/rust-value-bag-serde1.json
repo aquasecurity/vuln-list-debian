@@ -6,19 +6,25 @@
     "librust-value-bag-serde1-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-erased-serde-0.3+alloc-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-fmt-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-erased-serde-0.4+alloc-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-fmt-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e30aaa03babe4eb1cf3bfc2d54c0326aac2fa0007e1c5eb04b5a26e8bea45e11 2353 rust-value-bag-serde1_1.9.0-1.dsc ccacf50c5cb077a9abb723c5bcb5e0754c1a433f1e1de89edc328e2760b6328b 5504 rust-value-bag-serde1_1.9.0.orig.tar.gz 723b11cecef356958259674476bf5b2258996fcc4a09529ee0c7c0802c371969 3272 rust-value-bag-serde1_1.9.0-1.debian.tar.xz"
+    "d299d661fa148d5a92235e9e530ad8fac184b8e4aff753099510bda42cd68d7e 1809 rust-value-bag-serde1_1.9.0-2.dsc ccacf50c5cb077a9abb723c5bcb5e0754c1a433f1e1de89edc328e2760b6328b 5504 rust-value-bag-serde1_1.9.0.orig.tar.gz c675e250798d1ac2d1e7ecb0637bef923b2be6274a2937b5d3f7c8acefe0f6d1 3264 rust-value-bag-serde1_1.9.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-value-bag-serde1"
   ],
   "Files": [
-    "6b86878df5d8b8e30bdce869420674f7 2353 rust-value-bag-serde1_1.9.0-1.dsc 3f8c5368cbf817d54dc30f4012f1ccd8 5504 rust-value-bag-serde1_1.9.0.orig.tar.gz d03c459e7a9b0af4adc06698a997082c 3272 rust-value-bag-serde1_1.9.0-1.debian.tar.xz"
+    "25625ed820b8ab6e8edc14ee1739a961 1809 rust-value-bag-serde1_1.9.0-2.dsc 3f8c5368cbf817d54dc30f4012f1ccd8 5504 rust-value-bag-serde1_1.9.0.orig.tar.gz 6a5120c944b91b3337928a41a7504884 3264 rust-value-bag-serde1_1.9.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://crates.io/crates/value-bag-serde1/1.9.0"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/value-bag-serde1]"
   ],
   "Version": [
-    "1.9.0-1"
+    "1.9.0-2"
   ]
 }
