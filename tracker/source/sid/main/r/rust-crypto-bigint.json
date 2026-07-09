@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-core-0.6+std-dev (\u003e= 0.6.4-~~) \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cpubits-0.1+default-dev \u003c!nocheck\u003e, librust-ctutils-0.4+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.19) \u003c!nocheck\u003e, librust-rand-core-0.10-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "53b9cc09ac9bcaffab1969005f244275c8ac225d345fac4b518c81e275a7c969 2267 rust-crypto-bigint_0.5.5-2.dsc 0dc92fb57ca44df6db8059111ab3af99a63d5d0f8375d9972e319a379c6bab76 83384 rust-crypto-bigint_0.5.5.orig.tar.gz 010d1ade9519a2113a2228440f3eb80dd51ec4426c138fd2f1585288fa81e998 3612 rust-crypto-bigint_0.5.5-2.debian.tar.xz"
+    "a6d89b1c263e3162345b9befa91380240659b3fd86c12ede56ecdb4fc2631dc2 2848 rust-crypto-bigint_0.7.5-1.dsc 1a52aa3fcda4e6302a9f48734f234d35d4721b96f8fe07d073f07ce9df4f0271 300554 rust-crypto-bigint_0.7.5.orig.tar.gz c4c65984c752c573633d866ce6a2bcf3e482c3624745ba90175f7a9f38a49724 4192 rust-crypto-bigint_0.7.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-crypto-bigint"
   ],
   "Files": [
-    "1f74175278f377182f6181160b21d320 2267 rust-crypto-bigint_0.5.5-2.dsc d2695f81f5e7b7a44da337b59c56b363 83384 rust-crypto-bigint_0.5.5.orig.tar.gz e257a9f0e1cfc7211c02d1bf25946bae 3612 rust-crypto-bigint_0.5.5-2.debian.tar.xz"
+    "ca2ab6cef9f4f03e7cb794216ebf1ba6 2848 rust-crypto-bigint_0.7.5-1.dsc 89c3fb3f56e29cffb0add0be2b41570c 300554 rust-crypto-bigint_0.7.5.orig.tar.gz 42630fbb3f1301c5ac4d590ac92b4dbc 4192 rust-crypto-bigint_0.7.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-hex-literal-0.4+default-dev, librust-num-bigint-0.4+default-dev, librust-num-integer-0.1+default-dev, librust-num-traits-0.2+default-dev, librust-proptest-1+default-dev, librust-rand-chacha-0.3+default-dev, librust-rand-core-0.6+default-dev, librust-rand-core-0.6+std-dev, rustc"
+    "dh-cargo, librust-chacha20-0.10+rng-dev, librust-hex-literal-1+default-dev, librust-num-bigint-0.4+default-dev, librust-num-integer-0.1+default-dev, librust-num-modular-0.6+default-dev, librust-num-modular-0.6+num-bigint-dev, librust-num-modular-0.6+num-integer-dev, librust-num-modular-0.6+num-traits-dev, librust-proptest-1+default-dev, librust-rand-core-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/crypto-bigint]"
   ],
   "Version": [
-    "0.5.5-2"
+    "0.7.5-1"
   ]
 }

@@ -6,22 +6,31 @@
     "python3-iotawattpy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-hatchling"
   ],
   "Build-Depends-Indep": [
-    "python3-pytest \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e"
+    "python3-httpx \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-respx \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a2d3e00ceca1cfc3124df2abbcb34ba458322646a2b27ebe55d43592ee4bc397 2203 iotawattpy_0.1.2-2.dsc 3ca6e5cd81650e94a503858817ca2ea14679e543ad676b4d3006d6ea38f8f778 19534 iotawattpy_0.1.2.orig.tar.gz 96e7df84a25f62a8c6f98bd9bc5f976b1d4989d017db2d185d48423094d9b370 2184 iotawattpy_0.1.2-2.debian.tar.xz"
+    "9a9d998dbd7b668b72501830ec694488b4e76ad1826ab4dfcd38511a953f281c 2551 iotawattpy_0.2.1-1.dsc 823bca1929e746cae1ee8d2e6d9fa969a2d6b9a9db7f7e94ceca33f420ebcaa2 43056 iotawattpy_0.2.1.orig.tar.xz aeeca75705baa9b8bbda022e40ff5b243268137be4e1402f5c39eebdfe1cc12a 2308 iotawattpy_0.2.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "a055877b3f45c34854b434c11d6f5341976bc6fb debian archive/debian/0.2.1-1 https://git.dgit.debian.org/iotawattpy"
   ],
   "Directory": [
     "pool/main/i/iotawattpy"
   ],
   "Files": [
-    "7488a7515f151589b00c6cb94456970e 2203 iotawattpy_0.1.2-2.dsc a34e05b26a5a8f701eb3d1e7f671718f 19534 iotawattpy_0.1.2.orig.tar.gz 37661461ad0bd8232afd7d7a227861ed 2184 iotawattpy_0.1.2-2.debian.tar.xz"
+    "96b5c2105cf254cf98b24e37dcb563d1 2551 iotawattpy_0.2.1-1.dsc 1a714a6dd2691ca8be0c73d0e6537757 43056 iotawattpy_0.2.1.orig.tar.xz fe06953f42f0fce778a6bb5428046ed6 2308 iotawattpy_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=add8691a9fc58cf16972b01412ff81703f53906a fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/home-assistant-libs/iotawattpy"
@@ -42,16 +51,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e,"
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/iotawattpy"
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/iotawattpy.git"
   ],
   "Version": [
-    "0.1.2-2"
+    "0.2.1-1"
   ]
 }
