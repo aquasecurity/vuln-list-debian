@@ -6,16 +6,19 @@
     "librust-rangemap-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6aaff4d2f9a3c3b84a36a8cc0770037d5b719c46c03d884716539fa609e9ae46 2473 rust-rangemap_1.5.1-1.dsc f60fcc7d6849342eff22c4350c8b9a989ee8ceabc4b481253e8946b9fe83d684 57091 rust-rangemap_1.5.1.orig.tar.gz c84181318a12e79a48471b1ed6507612c0a0153952b79469353c18360554f4a9 2928 rust-rangemap_1.5.1-1.debian.tar.xz"
+    "bcd1ac0275e6c44f68e94f4968aeafe10bbc095ecae1324531d733bd121418fa 2451 rust-rangemap_1.7.1-1.dsc 973443cf09a9c8656b574a866ab68dfa19f0867d0340648c7d2f6a71b8a8ea68 58127 rust-rangemap_1.7.1.orig.tar.gz 709aad8c40123914a61190e86c803554fbb61d825b7c9f9639ebeaba97a793f9 4776 rust-rangemap_1.7.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rangemap"
   ],
   "Files": [
-    "c48043e7bee56a4a744ec02327b5ebd3 2473 rust-rangemap_1.5.1-1.dsc 787fa1a46edb4719d82214c3b0729ba1 57091 rust-rangemap_1.5.1.orig.tar.gz d0fdf7d90364dfd2d967b77c291fc2ce 2928 rust-rangemap_1.5.1-1.debian.tar.xz"
+    "19a6b9e0d6629f0f15f284736eec5e92 2451 rust-rangemap_1.7.1-1.dsc c54eda527e4a15244f32909eaabf823b 58127 rust-rangemap_1.7.1.orig.tar.gz b5ecbd9f08edbe91dd2b2c2545d23fcf 4776 rust-rangemap_1.7.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-chrono-0.4+default-dev, librust-criterion-0.3.5+default-dev, librust-permutator-0.4+default-dev, librust-proptest-1+default-dev, librust-rand-0.8+default-dev, librust-rustc-version-0.4+default-dev, librust-serde-json-1+default-dev, librust-test-strategy-0.3+default-dev, rustc"
+    "dh-cargo, librust-chrono-0.4+default-dev, librust-criterion-0.5+default-dev, librust-rand-0.10+default-dev, librust-rustc-version-0.4+default-dev, librust-serde-json-1+default-dev, librust-test-strategy-0.4+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rangemap]"
   ],
   "Version": [
-    "1.5.1-1"
+    "1.7.1-1"
   ]
 }

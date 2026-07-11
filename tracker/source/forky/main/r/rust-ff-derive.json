@@ -6,16 +6,19 @@
     "librust-ff-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-addchain-0.2+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-num-bigint-0.4+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-addchain-0.3+default-dev \u003c!nocheck\u003e, librust-num-bigint-0.4+default-dev \u003c!nocheck\u003e, librust-num-integer-0.1+default-dev \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a784737c44bd1479a22c0ee2268275f04f2a6de5742981d51e712ab18950fcab 2595 rust-ff-derive_0.13.0-1.dsc e9f54704be45ed286151c5e11531316eaef5b8f5af7d597b806fdb8af108d84a 11312 rust-ff-derive_0.13.0.orig.tar.gz 2bc7eae12edb9260c6becb191162f0f894c479966e4fb16c525924c40474d8ab 2884 rust-ff-derive_0.13.0-1.debian.tar.xz"
+    "4ddaac41e81a2c17d25a159adff093ded10b8fe9ff035cfdca7c659e3312d08e 2588 rust-ff-derive_0.14.0-1.dsc 241afe8c15ffa21933eaefe8a563af36fd9fc98a3e8a044e8f7db52eb1fae3d8 12048 rust-ff-derive_0.14.0.orig.tar.gz 26f07f8cfb2bdee8b5dcc68eba2c59d602ac439bf0e9307aba8545d174c0e83d 2804 rust-ff-derive_0.14.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ff-derive"
   ],
   "Files": [
-    "da7ca2c924bdd9dc0fb0f76046e7e1b0 2595 rust-ff-derive_0.13.0-1.dsc bb1d962c157eb9a712e9b99a066fafbc 11312 rust-ff-derive_0.13.0.orig.tar.gz d021efba46f502fd41cdb5d66fc2034d 2884 rust-ff-derive_0.13.0-1.debian.tar.xz"
+    "28d0a686cbe99541d028f5ed5bc28f27 2588 rust-ff-derive_0.14.0-1.dsc 751436699701774485c9ae1ddb8fa045 12048 rust-ff-derive_0.14.0.orig.tar.gz d88afc80e76416174b02fa0948ee709c 2804 rust-ff-derive_0.14.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ff-derive]"
   ],
   "Version": [
-    "0.13.0-1"
+    "0.14.0-1"
   ]
 }
