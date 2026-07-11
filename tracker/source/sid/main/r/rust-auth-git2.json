@@ -6,19 +6,19 @@
     "librust-auth-git2-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo"
+    "debhelper-compat (= 14), dh-sequence-cargo, dh-sequence-single-binary"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, librust-dirs-6+default-dev \u003c!nocheck\u003e, librust-git2-dev (\u003c\u003c 21.0) \u003c!nocheck\u003e, librust-git2-dev (\u003e= 0.15) \u003c!nocheck\u003e, librust-terminal-prompt-0.2+default-dev (\u003e= 0.2.2) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, librust-dirs-6+default-dev \u003c!nocheck\u003e, librust-git2-0.20+default-dev \u003c!nocheck\u003e, librust-terminal-prompt-0.2+default-dev (\u003e= 0.2.2) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6cc8ceca7380bfa6182e56cfc707aab7f383f7264bf22b2e3590bad9e22cb86d 1803 rust-auth-git2_0.5.8-6.dsc 98a5458d64718ba04197621b3ee15d32e81a0a80e6766ec6d2732d2adb21e46c 20336 rust-auth-git2_0.5.8.orig.tar.xz 3cad6f0083654d459af7e84f88b8fc09a36d57c9af23c1e41afd16dc02fa122f 3228 rust-auth-git2_0.5.8-6.debian.tar.xz"
+    "bcfdbbf015c402b914503f7e05a6c1ed32219bf2badca60fed518a82b3a42eb1 1817 rust-auth-git2_0.6.0-1.dsc c5773abd2d99308c70b2364ba9c1b8aa50f5a7f24b0a9fb9f0159fd99473141d 20032 rust-auth-git2_0.6.0.orig.tar.xz 1c98d5da8e8ad1126b418e31a64e54b22c83a8ef535fc04f0d32b51cfb76e84f 3292 rust-auth-git2_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-auth-git2"
   ],
   "Files": [
-    "77487bb4096f1d3ec4db9e8d6d8b89c8 1803 rust-auth-git2_0.5.8-6.dsc 75867db1756b83adabb4189238d1b7c4 20336 rust-auth-git2_0.5.8.orig.tar.xz 8934c08bf43f27590e84215b56443ee2 3228 rust-auth-git2_0.5.8-6.debian.tar.xz"
+    "f68c3594f4c736169c462ee473b880d6 1817 rust-auth-git2_0.6.0-1.dsc 3a5c3e4f68b1e714d709eaa5f4d22fd6 20032 rust-auth-git2_0.6.0.orig.tar.xz 961e8c2a360036d901b7a7ca73e19d33 3292 rust-auth-git2_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert2-0.3+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-git2+default-dev, rustc"
+    "dh-cargo, librust-assert2-0.3+default-dev, librust-clap-4+default-dev, librust-clap-4+derive-dev, librust-env-logger-0.11+default-dev, librust-git2+cred-dev, librust-git2+default-dev, rustc"
   ],
   "Vcs-Browser": [
     "https://forgejo.debian.net/rust/rust-auth-git2"
@@ -57,6 +57,6 @@
     "https://forgejo.debian.net/rust/rust-auth-git2"
   ],
   "Version": [
-    "0.5.8-6"
+    "0.6.0-1"
   ]
 }
