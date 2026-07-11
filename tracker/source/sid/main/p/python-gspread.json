@@ -6,19 +6,19 @@
     "python3-gspread"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, flit, pybuild-plugin-pyproject, python3-all"
+    "debhelper-compat (= 13), dh-sequence-python3, flit, pybuild-plugin-pyproject, python3-all"
   ],
   "Build-Depends-Indep": [
-    "python3-google-auth, python3-google-auth-oauthlib"
+    "python3-google-auth, python3-google-auth-oauthlib, python3-pytest \u003c!nocheck\u003e, python3-pytest-vcr \u003c!nocheck\u003e, python3-urllib3 \u003c!nocheck\u003e, python3-vcr \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "85c7097c76041195da13f4f7470976067132cc8c934006b158590603f6bacee7 2138 python-gspread_6.1.4-1.1.dsc 5458a1f21d74c8425ff646cc6a90b40c37c657a7d6d9feda80ba33a55356baab 74383 python-gspread_6.1.4.orig.tar.gz c222de368b002056b888595a02fa7fda35290da947252c979d44862e7bed8573 1968 python-gspread_6.1.4-1.1.debian.tar.xz"
+    "03b8509b8f71972af275e296b44b81aa42177fa77241f779f42842cce5edcc15 2286 python-gspread_6.2.1-1.dsc 22964ed94fd8683fd367ba5b638155ccab6856970c34f26fe947678d3e4b1f11 349065 python-gspread_6.2.1.orig.tar.gz 89b5190aa919b2dfc0b0659ecf3bad0b62e41841534eda7a70a696bb7646b018 2624 python-gspread_6.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-gspread"
   ],
   "Files": [
-    "18e39e0f148476f9919f9daa7d4421a0 2138 python-gspread_6.1.4-1.1.dsc f95601b107e13f670124d46e7dcc9452 74383 python-gspread_6.1.4.orig.tar.gz 4e6d76d98e3cb396ea4b4f6f187cd2f5 1968 python-gspread_6.1.4-1.1.debian.tar.xz"
+    "748ebb37a886a0fce7c10f6cc4c2212c 2286 python-gspread_6.2.1-1.dsc 1cd58e0f21a52942952999fc9c7afb8c 349065 python-gspread_6.2.1.orig.tar.gz 5e45f992370a5220c1216a5a1cac2857 2624 python-gspread_6.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Tianyu Chen \u003cbillchenchina2001@gmail.com\u003e,"
+    "Tianyu Chen \u003cbillchenchina2001@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-gspread"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-gspread.git"
   ],
   "Version": [
-    "6.1.4-1.1"
+    "6.2.1-1"
   ]
 }
