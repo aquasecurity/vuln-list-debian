@@ -6,19 +6,19 @@
     "libfwupd3, fwupd, fwupd-tests, fwupd-doc, libfwupd-dev, gir1.2-fwupd-2.0"
   ],
   "Build-Depends": [
-    "bash-completion, debhelper (\u003e= 12), dh-strip-nondeterminism, fontconfig, fonts-noto, fwupd-unsigned-dev [amd64 arm64 armhf i386], gettext (\u003e= 0.19.8.1), gir1.2-pango-1.0, gnu-efi [amd64 arm64 armhf i386], gnutls-bin, gnutls-dev, gobject-introspection, hwdata, libarchive-dev, libcairo-dev, libcairo-gobject2, libcbor-dev, libcurl4-gnutls-dev, libdrm-dev, libflashrom-dev [!ia64], libfreetype-dev, libftdi1-dev, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.45.8), libjaylink-dev [!ia64], libjcat-dev, libjson-glib-dev (\u003e= 1.1.1), liblzma-dev, libmbim-glib-dev, libmm-glib-dev, libpci-dev, libpolkit-gobject-1-dev, libprotobuf-c-dev, libqmi-glib-dev, libqrtr-glib-dev, libsqlite3-dev, libsystemd-dev, libtss2-dev, libusb-1.0-0-dev, libxmlb-dev (\u003e= 0.3.22), libzstd-dev, locales, meson, mingw-w64-tools [amd64 arm64 armhf i386], pkgconf, polkitd, protobuf-c-compiler, python3-gi-cairo, python3-jinja2, python3-packaging, python3-pefile, python3-requests, python3-toml, python3-typogrify, shared-mime-info, systemd-dev, udev, umockdev, valac, valgrind-if-available"
+    "bash-completion, debhelper (\u003e= 12), dh-strip-nondeterminism, fontconfig, fonts-noto, fwupd-unsigned-dev [amd64 arm64 armhf i386], gettext (\u003e= 0.19.8.1), gir1.2-pango-1.0, gnu-efi [amd64 arm64 armhf i386], gnutls-bin, gnutls-dev, gobject-introspection (\u003e= 1.80), hwdata, libarchive-dev, libblkid-dev, libcairo-dev, libcairo-gobject2, libcbor-dev, libcurl4-gnutls-dev, libdrm-dev, libflashrom-dev [!ia64], libfreetype-dev, libftdi1-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, libglib2.0-dev (\u003e= 2.45.8), libjaylink-dev [!ia64], libjcat-dev, libjson-glib-dev (\u003e= 1.1.1), liblzma-dev, libmbim-glib-dev, libmm-glib-dev, libmnl-dev, libpci-dev, libpolkit-gobject-1-dev, libprotobuf-c-dev, libqmi-glib-dev, libqrtr-glib-dev, libreadline-dev, libsqlite3-dev, libsystemd-dev, libtss2-dev, libusb-1.0-0-dev, libxmlb-dev (\u003e= 0.3.22), libzstd-dev, locales, meson, mingw-w64-tools [amd64 arm64 armhf i386], pkgconf, polkitd, protobuf-c-compiler, python3-gi-cairo, python3-jinja2, python3-packaging, python3-pefile, python3-requests, shared-mime-info, systemd-dev, udev, umockdev, valac, valgrind-if-available"
   ],
   "Build-Depends-Indep": [
     "gi-docgen \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "f8392513227a1f5e461af7753b1e3ab3cbf70d963375b34db36f3e8c250d1b48 3466 fwupd_2.0.8-3+deb13u1.dsc 354f2e217a5e87bb153815268430d7407c59a27f56acbfa8a3c7f34e6c5fd2da 6353050 fwupd_2.0.8.orig.tar.gz 6cf45358759c789c51d01a46b52c2889daa5553a493c0f41d3f0bcf90188f43f 33380 fwupd_2.0.8-3+deb13u1.debian.tar.xz"
+    "b70f58d2b40cf2330be6fe22e0ea7f5cab2afaba0c207618dc341d8b1ce88df2 3539 fwupd_2.0.20-1~deb13u1.dsc d1bb9b84031954f0c57a6caed93a21f0a3c1e05fb677a103ec0a79ba28fc3cea 6711276 fwupd_2.0.20.orig.tar.gz ce95da58d060727c897f2c0425b9fa4f5c558cd17490f11e3138f81df8b308c6 29152 fwupd_2.0.20-1~deb13u1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fwupd"
   ],
   "Files": [
-    "f6f99067595115954974d6438f1642d0 3466 fwupd_2.0.8-3+deb13u1.dsc 70cc603d6f77336f56243fbf9e0f8be9 6353050 fwupd_2.0.8.orig.tar.gz 81983b716a4b5d87782443945983bf93 33380 fwupd_2.0.8-3+deb13u1.debian.tar.xz"
+    "932b6d69c56e6ad1a104a3c18c015abc 3539 fwupd_2.0.20-1~deb13u1.dsc 4251f8f8b33eb92155f9c30433594c9b 6711276 fwupd_2.0.20.orig.tar.gz 443067c8151950ebd756e5d937d3044a 29152 fwupd_2.0.20-1~deb13u1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "fwupd"
   ],
   "Package-List": [
-    "fwupd deb admin optional arch=linux-any fwupd-doc deb doc optional arch=all profile=!nodoc fwupd-tests deb admin optional arch=linux-any gir1.2-fwupd-2.0 deb introspection optional arch=linux-any libfwupd-dev deb libdevel optional arch=linux-any libfwupd3 deb libs optional arch=linux-any"
+    "fwupd deb admin optional arch=linux-any fwupd-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc fwupd-tests deb admin optional arch=linux-any gir1.2-fwupd-2.0 deb introspection optional arch=linux-any libfwupd-dev deb libdevel optional arch=linux-any libfwupd3 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "optional"
@@ -48,10 +48,10 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkg-config"
+    "build-essential, jq, kmod, pkgconf"
   ],
   "Uploaders": [
-    "Steve McIntyre \u003c93sam@debian.org\u003e, Matthias Klumpp \u003cmak@debian.org\u003e, Mario Limonciello \u003csuperm1@gmail.com\u003e"
+    "Steve McIntyre \u003c93sam@debian.org\u003e, Matthias Klumpp \u003cmak@debian.org\u003e, Mario Limonciello \u003csuperm1@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/efi-team/fwupd"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/efi-team/fwupd.git"
   ],
   "Version": [
-    "2.0.8-3+deb13u1"
+    "2.0.20-1~deb13u1"
   ]
 }
