@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any all"
+    "all"
   ],
   "Binary": [
-    "golang-gir-generator, golang-gir-gio-2.0-dev, golang-gir-glib-2.0-dev, golang-gir-gobject-2.0-dev, golang-gir-gudev-1.0-dev"
+    "golang-gir-gobject-2.0-dev, golang-gir-gio-2.0-dev, golang-gir-glib-2.0-dev, golang-gir-gudev-1.0-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-golang, golang-check.v1-dev, golang-go, libgirepository-1.0-dev, libgtk-3-dev, libgudev-1.0-dev"
+    "debhelper-compat (= 13), dh-golang, gobject-introspection (\u003e= 1.80), libgirepository-1.0-dev, golang-go, libgtk-3-dev, libgudev-1.0-dev, golang-check.v1-dev"
   ],
   "Checksums-Sha256": [
-    "d1efa45cc9c65ca2d6a4c57f5eaabeff209ac6651c791a77a026cb72f700c017 2542 go-gir-generator_2.2.0-2.dsc c49bd39acf9eb9efc071c36ab5b0e9ed7211484ced4557b45b412a593a61979b 263451 go-gir-generator_2.2.0.orig.tar.gz 6bc9271b6951b220cc8f79807912bd6850528536a03bbfb914cce61744207a5a 5400 go-gir-generator_2.2.0-2.debian.tar.xz"
+    "a870407d31f7071e7c75959a665aa8d532b62e92460519b70e61bbe95f68aa08 2702 go-gir-generator_3.0.6-1.dsc 35fe05182dadd10c3d669583e390a84413a0a66ad4f6ce60e0cb80bc6aafa8c3 213452 go-gir-generator_3.0.6.orig.tar.gz ddf07f16f142881a8169e6bc4ddc35d728f947f39d165f6054302fed27ecb2c1 3140 go-gir-generator_3.0.6-1.debian.tar.xz"
+  ],
+  "Description": [
+    "Go bindings Go bindings for DDE (Deepin Desktop Environment) development."
   ],
   "Directory": [
     "pool/main/g/go-gir-generator"
   ],
   "Files": [
-    "49ff52f7c88295dc9541a02c50dc1d56 2542 go-gir-generator_2.2.0-2.dsc a3680ab4d54e3eeefedc2364f607869e 263451 go-gir-generator_2.2.0.orig.tar.gz f18d8e0286bccb56bb0e176fa4484e7e 5400 go-gir-generator_2.2.0-2.debian.tar.xz"
+    "3d6d682199d8608224198ed8f3c6f3a2 2702 go-gir-generator_3.0.6-1.dsc cb34a5065c240cf48ba781d3cf437950 213452 go-gir-generator_3.0.6.orig.tar.gz 52477dcfcca45fb4884ffa44ecef96e8 3140 go-gir-generator_3.0.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,7 +27,7 @@
     "github.com/linuxdeepin/go-gir"
   ],
   "Homepage": [
-    "https://github.com/linuxdeepin/go-gir-generator"
+    "https://github.com/linuxdeepin/go-gir"
   ],
   "Maintainer": [
     "Debian Deepin Packaging Team \u003cpkg-deepin-devel@lists.alioth.debian.org\u003e"
@@ -33,7 +36,7 @@
     "go-gir-generator"
   ],
   "Package-List": [
-    "golang-gir-generator deb golang optional arch=any golang-gir-gio-2.0-dev deb golang optional arch=all golang-gir-glib-2.0-dev deb golang optional arch=all golang-gir-gobject-2.0-dev deb golang optional arch=all golang-gir-gudev-1.0-dev deb golang optional arch=all"
+    "golang-gir-gio-2.0-dev deb golang optional arch=all golang-gir-glib-2.0-dev deb golang optional arch=all golang-gir-gobject-2.0-dev deb golang optional arch=all golang-gir-gudev-1.0-dev deb golang optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,10 +45,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Uploaders": [
-    "Boyuan Yang \u003cbyang@debian.org\u003e, Arun Kumar Pariyar \u003carun@debian.org\u003e,"
+    "Boyuan Yang \u003cbyang@debian.org\u003e, Arun Kumar Pariyar \u003copenarungeek@gmail.com\u003e, Clay Stan \u003cclaystan97@gmail.com\u003e, Han Gao \u003crabenda.cn@gmail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/pkg-deepin-team/go-gir-generator"
@@ -54,6 +63,6 @@
     "https://salsa.debian.org/pkg-deepin-team/go-gir-generator.git"
   ],
   "Version": [
-    "2.2.0-2"
+    "3.0.6-1"
   ]
 }
