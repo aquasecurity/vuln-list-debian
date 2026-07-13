@@ -6,19 +6,25 @@
     "librust-cbc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.4+block-padding-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e, librust-cipher-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.5+block-padding-dev (\u003e= 0.5.2) \u003c!nocheck\u003e, librust-cipher-0.5+default-dev (\u003e= 0.5.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a066a0497e861803580fe0e4ad9457bfc0f1ee10e7f6ab0f8044f26450284958 1996 rust-cbc_0.1.2-1.dsc 26b52a9543ae338f279b96b0b9fed9c8093744685043739079ce85cd58f289a6 23501 rust-cbc_0.1.2.orig.tar.gz 790cca7c9c33a865661075f0393a16c82bdb57a2225837ed29d23359a22bf7b9 3004 rust-cbc_0.1.2-1.debian.tar.xz"
+    "6988247b4365009c63d005c43f2ee0945522629058de44ae63296aa03fa4137e 2444 rust-cbc_0.2.1-1.dsc ce2dc9ee5f88d11e0beb842c88b33c8a5cf0d1329c4b19494af42b07dbfe8896 25642 rust-cbc_0.2.1.orig.tar.gz 4eef03d7baddda62f221dc5fc92d53811076ecbb33c5c08536c17851cf344e1c 2876 rust-cbc_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cbc"
   ],
   "Files": [
-    "8e13393a301d94fbb18732a03e0197fb 1996 rust-cbc_0.1.2-1.dsc deb3967a9eac100e195f389218ce2219 23501 rust-cbc_0.1.2.orig.tar.gz 6bdcf2fbfefccaccfe475dfacb022511 3004 rust-cbc_0.1.2-1.debian.tar.xz"
+    "5b5abbf8773f00b8e114984b115e829d 2444 rust-cbc_0.2.1-1.dsc 4f52cc9bba38f072230a0377e3f2ed9a 25642 rust-cbc_0.2.1.orig.tar.gz 92c2fe83c6524cd026fe1c10a4b29d65 2876 rust-cbc_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/block-modes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-aes-0.8+default-dev, librust-cipher-0.4+default-dev, librust-cipher-0.4+dev-dev, librust-hex-literal-0.4+default-dev"
+    "dh-cargo, librust-aes-0.9+default-dev, librust-cipher-0.5+default-dev, librust-cipher-0.5+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cn@sail.ng\u003e, Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cbc]"
   ],
   "Version": [
-    "0.1.2-1"
+    "0.2.1-1"
   ]
 }

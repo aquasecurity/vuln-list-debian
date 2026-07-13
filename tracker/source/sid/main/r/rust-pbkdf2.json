@@ -6,19 +6,25 @@
     "librust-pbkdf2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev (\u003e= 0.10.7-~~) \u003c!nocheck\u003e, librust-digest-0.10+mac-dev (\u003e= 0.10.7-~~) \u003c!nocheck\u003e, librust-hmac-0.12-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.11+default-dev \u003c!nocheck\u003e, librust-digest-0.11+mac-dev \u003c!nocheck\u003e, librust-hmac-0.13-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8888dd6876eec935a91575afbd08abd5394be9c17e872768414d401c6ae1d4e8 2404 rust-pbkdf2_0.12.2-1.dsc f8ed6a7761f76e3b9f92dfb0a60a6a6477c61024b775147ff0973a02653abaf2 13906 rust-pbkdf2_0.12.2.orig.tar.gz 3f6bf559d3bb7822bc03eb5c3aa03ffd3d69e49545911e3a7279cef4074d873c 3684 rust-pbkdf2_0.12.2-1.debian.tar.xz"
+    "ce7a7ab5a959c542a19c279b190fc8b2820cce533ef1574c16bee000ec182300 2477 rust-pbkdf2_0.13.0-1.dsc 112d82ceb8c5bf524d9af484d4e4970c9fd5a0cc15ba14ad93dccd28873b0629 22716 rust-pbkdf2_0.13.0.orig.tar.gz 10339e39e025d44a5f146ec9f53128a4188f828a601d47f4dfe75413a94739bd 3872 rust-pbkdf2_0.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pbkdf2"
   ],
   "Files": [
-    "bc37464d6935b18564511c54ad1b848b 2404 rust-pbkdf2_0.12.2-1.dsc 8dcc72ff75b917257f9e9bb29de4b9e1 13906 rust-pbkdf2_0.12.2.orig.tar.gz 0f286eb4b2f1814a3137af88c55e0fdd 3684 rust-pbkdf2_0.12.2-1.debian.tar.xz"
+    "bc86cd9399e2cade568521ce763173bf 2477 rust-pbkdf2_0.13.0-1.dsc 85a3439b7a303dd1bdd5bb141d907f90 22716 rust-pbkdf2_0.13.0.orig.tar.gz 946d8f972215f3c4d75cbf82a5b9deae 3872 rust-pbkdf2_0.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/password-hashes/tree/master/pbkdf2"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-hmac-0.12+default-dev, librust-sha1-0.10+default-dev, librust-sha2-0.10+default-dev"
+    "dh-cargo, librust-hex-literal-1+default-dev, librust-hmac-0.13+default-dev, librust-sha1-0.11+default-dev, librust-sha2-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pbkdf2]"
   ],
   "Version": [
-    "0.12.2-1"
+    "0.13.0-1"
   ]
 }

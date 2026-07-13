@@ -6,19 +6,25 @@
     "librust-sha1collisiondetection-dev, sha1cdsum"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-digest-0.10+default-dev, librust-digest-0.10+std-dev, librust-generic-array-0.14+default-dev | librust-generic-array-0.13+default-dev | librust-generic-array-0.12+default-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.60), libstd-rust-dev, librust-digest-0.10+default-dev, librust-digest-0.10+std-dev, librust-generic-array+default-dev (\u003c\u003c 2), librust-generic-array+default-dev (\u003e= 0.12)"
   ],
   "Checksums-Sha256": [
-    "96b9eef3ac0e24234f3c9918101d2e5b5b725cee459d6d982a3aa7d487015634 2584 rust-sha1collisiondetection_0.3.2-1.dsc 31c0b86a052106b16741199985c9ec2bf501f619f70c48fa479b44b093ad9a68 801440 rust-sha1collisiondetection_0.3.2.orig.tar.gz 0a148b3bba99111ba0032d8c7ff37eb1a9277d96cc01e300bb34e2cc723582da 4948 rust-sha1collisiondetection_0.3.2-1.debian.tar.xz"
+    "36796f611f7fcde668a7e93ae28bb1ed20b197b70d828430922c2a4b6e0ad69e 2050 rust-sha1collisiondetection_0.3.4-1.dsc 1f606421e4a6012877e893c399822a4ed4b089164c5969424e1b9d1e66e6964b 799321 rust-sha1collisiondetection_0.3.4.orig.tar.gz 05385fa3e89a30ab3768ddd8c3b3f9bb89518cacdcbe58203b3b2ff786afe641 5328 rust-sha1collisiondetection_0.3.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sha1collisiondetection"
   ],
   "Files": [
-    "534a2366465abab0764300e7ee10d06e 2584 rust-sha1collisiondetection_0.3.2-1.dsc f18dea20e0c8b6c008184430dd77ce50 801440 rust-sha1collisiondetection_0.3.2.orig.tar.gz 178e0795223a13edba59742c3b7af9c8 4948 rust-sha1collisiondetection_0.3.2-1.debian.tar.xz"
+    "cdbb30e5ac193f8c0756bf098010b890 2050 rust-sha1collisiondetection_0.3.4-1.dsc fa2a4362c45bf10890b0e97b2a406cdb 799321 rust-sha1collisiondetection_0.3.4.orig.tar.gz 8c48a76ef2b1f8477501de59e3e13639 5328 rust-sha1collisiondetection_0.3.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/sequoia-pgp/sha1collisiondetection"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-getrandom-0.2+default-dev, librust-hex-literal-0.4+default-dev, librust-sha1-0.10+default-dev"
+    "dh-cargo, librust-getrandom-0.4+default-dev, librust-hex-literal-0.4+default-dev, librust-sha1-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sha1collisiondetection]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.4-1"
   ]
 }

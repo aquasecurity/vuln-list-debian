@@ -6,19 +6,25 @@
     "librust-ghash-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-opaque-debug-0.3+default-dev \u003c!nocheck\u003e, librust-polyval-0.6+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-polyval-0.7+default-dev \u003c!nocheck\u003e, librust-polyval-0.7+hazmat-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8183921cb625fe12922e505973578d8e6d9566aa256411dc04dbb6137948e46f 2247 rust-ghash_0.5.0-1.dsc d930750de5717d2dd0b8c0d42c076c0e884c81a73e6cab859bbd2339c71e3e40 9244 rust-ghash_0.5.0.orig.tar.gz d3ec28d607a5eb6fd7130e4f4b6e6dbc2890094775cc16f030576c6ffc8d65a6 2956 rust-ghash_0.5.0-1.debian.tar.xz"
+    "67c2e98a1bbe26f61a9629471b0550b0bcc3db0bf2d3f946ac7900a0129b56c9 2329 rust-ghash_0.6.0-1.dsc 2eecf2d5dc9b66b732b97707a0210906b1d30523eb773193ab777c0c84b3e8d5 10780 rust-ghash_0.6.0.orig.tar.gz 36ab184f6841a5a303c5f3a192b3de8f3d55b688ebd167e1f1dae6c60aa54381 3180 rust-ghash_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ghash"
   ],
   "Files": [
-    "03bb20032fb3249f29ab6d375d846049 2247 rust-ghash_0.5.0-1.dsc b7ef1188fa026836864d3e631b91d060 9244 rust-ghash_0.5.0.orig.tar.gz 5cb6cc6d90bd57c3bb18b3d163e1cc96 2956 rust-ghash_0.5.0-1.debian.tar.xz"
+    "9eeee9d51c75f15a0379e0b4da1499e0 2329 rust-ghash_0.6.0-1.dsc 79d095862f2998a0c4c1be1bea5c67e6 10780 rust-ghash_0.6.0.orig.tar.gz e0f8f271b7a5d720d86a39ef2ab6ba4a 3180 rust-ghash_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/universal-hashes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.4+default-dev"
+    "dh-cargo, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ghash]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.6.0-1"
   ]
 }
