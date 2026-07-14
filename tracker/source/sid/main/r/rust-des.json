@@ -6,19 +6,25 @@
     "librust-des-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "efcd1b7ce6ca50d7913f3a1abc92b9c8a16482c83d2fce3c852fca58c50dc441 2172 rust-des_0.8.1-1.dsc ffdd80ce8ce993de27e9f063a444a4d53ce8e8db4c1f00cc03af5ad5a9867a1e 38783 rust-des_0.8.1.orig.tar.gz 3ab3328a703a9b21700ceb2409be6ccbd9d5a2c518a7421966e7b376e49fd567 2868 rust-des_0.8.1-1.debian.tar.xz"
+    "611c119328248e76b91956ecc1c98d19bde8d0c1a7f2ac1f2045b52d735258de 2320 rust-des_0.9.0-1.dsc 916a94e407b54f9034d71dd748234cd1e516ced6284009906ae246f177eafe5a 40194 rust-des_0.9.0.orig.tar.gz 13edda57cd7f1dcc66042164ea7fd1b9488ddb72e0dc4a7e2f035133332226e1 2768 rust-des_0.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-des"
   ],
   "Files": [
-    "136e0d7d3639f64aa5a3782868cc752b 2172 rust-des_0.8.1-1.dsc 56eecaa45410a91895d32243fbf8d37e 38783 rust-des_0.8.1.orig.tar.gz 88076d39623a28adbe905c272eecca31 2868 rust-des_0.8.1-1.debian.tar.xz"
+    "f6c80de82cf424ef40ca09a5eefc1080 2320 rust-des_0.9.0-1.dsc 3d7cc0c9c6fecff157e9286ab76166d1 40194 rust-des_0.9.0.orig.tar.gz ea048c7c2744ae4f8bb3b5b07f42004a 2768 rust-des_0.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/block-ciphers"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cipher-0.4+default-dev, librust-cipher-0.4+dev-dev"
+    "dh-cargo, librust-cipher-0.5+default-dev, librust-cipher-0.5+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/des]"
   ],
   "Version": [
-    "0.8.1-1"
+    "0.9.0-1"
   ]
 }

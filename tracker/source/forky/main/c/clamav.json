@@ -6,16 +6,19 @@
     "clamav-base, clamav-docs, clamav-doc, clamav, libclamav-dev, libclamav12, clamav-daemon, clamdscan, clamav-testfiles, clamav-freshclam, clamav-milter"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), automake, bindgen, cargo, check, cmake, debhelper-compat (= 12), dh-apparmor, dh-exec, dh-strip-nondeterminism, doxygen, libbz2-dev, libcurl4-openssl-dev, libjson-c-dev, libltdl-dev, libmilter-dev, libmspack-dev, libncurses-dev, libpcre2-dev, libssl-dev, libsystemd-dev [linux-any], systemd-dev [linux-any], libxml2-dev, perl:native, pkg-config, po-debconf, python3-pytest, rust-gdb, rustfmt, systemd [linux-any], zlib1g-dev"
+    "dpkg-dev (\u003e= 1.22.5), automake, dh-sequence-installsysusers, bindgen, cargo, check \u003c!nocheck\u003e, cmake, debhelper-compat (= 12), dh-apparmor, dh-exec, dh-strip-nondeterminism, libbz2-dev, libcurl4-openssl-dev, libjson-c-dev, libltdl-dev, libmilter-dev, libmspack-dev, libncurses-dev, libpcre2-dev, libssl-dev, libsystemd-dev [linux-any], systemd-dev [linux-any], libxml2-dev, perl:native, pkg-config, po-debconf, python3-pytest \u003c!nocheck\u003e, rust-gdb \u003c!nocheck\u003e, rustfmt, systemd [linux-any], zlib1g-dev"
+  ],
+  "Build-Depends-Indep": [
+    "check, doxygen, python3-pytest, rust-gdb"
   ],
   "Checksums-Sha256": [
-    "329d02293d8fd0211f8b193ab15cf5f5d8e0098914454a9843c5ee75369d95c5 2939 clamav_1.4.4+dfsg-1.dsc 7327fff75d5a927ec0ef7639e33e725a444ffaffecd037546c9c91f2d0bae972 27678616 clamav_1.4.4+dfsg.orig.tar.xz c9ee99becca3a8eb9ea32080efd5a55915375e17ec9fdc495c282105ec3aac26 511368 clamav_1.4.4+dfsg-1.debian.tar.xz"
+    "3f4955195e30fadbe0cdaf4819ca03d08ef3d879e97ef4b23cab2318e4afe677 3042 clamav_1.4.5+dfsg-3.dsc 61eaa197005878dcdbe4a368c7c7255cd104228f79669f0a998717ab9a0dbf9c 27685412 clamav_1.4.5+dfsg.orig.tar.xz de2c43901a540d3c0a13e29be29aa1a9c0b3601a597c40769de5ac7ead1324ff 521696 clamav_1.4.5+dfsg-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/clamav"
   ],
   "Files": [
-    "89572ce449c5fb3feee484d5691b4446 2939 clamav_1.4.4+dfsg-1.dsc d75e882267c7ab7b9bed90be654d5f84 27678616 clamav_1.4.4+dfsg.orig.tar.xz 4a6c623cc0f7e0940485d509bd98b87f 511368 clamav_1.4.4+dfsg-1.debian.tar.xz"
+    "c641cf2a9eb4a34fb0571fcfb0bfd5d6 3042 clamav_1.4.5+dfsg-3.dsc ddae5dfa89a3f90e03f8fa3f92a09517 27685412 clamav_1.4.5+dfsg.orig.tar.xz f7211860543e118c870f837404c9e5cb 521696 clamav_1.4.5+dfsg-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,8 +47,11 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "procps"
+  ],
   "Uploaders": [
-    "Michael Meskes \u003cmeskes@debian.org\u003e, Michael Tautschnig \u003cmt@debian.org\u003e, Scott Kitterman \u003cscott@kitterman.com\u003e, Sebastian Andrzej Siewior \u003csebastian@breakpoint.cc\u003e, Andreas Cadhalpun \u003cAndreas.Cadhalpun@googlemail.com\u003e"
+    "Michael Meskes \u003cmeskes@debian.org\u003e, Michael Tautschnig \u003cmt@debian.org\u003e, Sebastian Andrzej Siewior \u003csebastian@breakpoint.cc\u003e, Andreas Cadhalpun \u003cAndreas.Cadhalpun@googlemail.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/clamav-team/clamav"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/clamav-team/clamav.git"
   ],
   "Version": [
-    "1.4.4+dfsg-1"
+    "1.4.5+dfsg-3"
   ]
 }

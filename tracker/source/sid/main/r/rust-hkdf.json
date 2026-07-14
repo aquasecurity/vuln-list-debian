@@ -6,16 +6,19 @@
     "librust-hkdf-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hmac-0.12+default-dev (\u003e= 0.12.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hmac-0.13+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e8f3cd683caac573f79e057ce3b04eccaa8cdbf02efcf14adee6684c86b7de07 1716 rust-hkdf_0.12.4-1.dsc 7b5f8eb2ad728638ea2c7d47a21db23b7b58a72ed6a38256b8a1849f15fbbdf7 171163 rust-hkdf_0.12.4.orig.tar.gz 85cfecf5d94dd0297e9ff741b52d18d64031924df3d1027b8fcae33b72ec7e68 3100 rust-hkdf_0.12.4-1.debian.tar.xz"
+    "134d8414d8e95470ebefb4f73caece206285d75b9532824f42e5447d0c3bf939 2363 rust-hkdf_0.13.0-1.dsc 4aaa26c720c68b866f2c96ef5c1264b3e6f473fe5d4ce61cd44bbe913e553018 171610 rust-hkdf_0.13.0.orig.tar.gz 0bd5934cf62e056d682d396ee7a5231fe778c4f1cf9d933e61102b4304e10d34 3004 rust-hkdf_0.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hkdf"
   ],
   "Files": [
-    "676b4b6d6822bcf212cea1cf716deb74 1716 rust-hkdf_0.12.4-1.dsc 8cd6f472d6904b0c507a456dddb68eb6 171163 rust-hkdf_0.12.4.orig.tar.gz a6bc72f7ae979d3357cd69a721472a0e 3100 rust-hkdf_0.12.4-1.debian.tar.xz"
+    "0d4495890a0d3a68bddcfcf5a4fedf5a 2363 rust-hkdf_0.13.0-1.dsc 0b35ce805f04fc8ce26be0048ee8778d 171610 rust-hkdf_0.13.0.orig.tar.gz d8d4737ac3261c9305d47d8e13928dc9 3004 rust-hkdf_0.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-blobby-0.3+default-dev, librust-hex-literal-0.3+default-dev, librust-sha1-0.10-dev, librust-sha2-0.10-dev"
+    "dh-cargo, librust-blobby-0.4+default-dev, librust-hex-literal-1+default-dev, librust-sha1-0.11-dev, librust-sha2-0.11-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hkdf]"
   ],
   "Version": [
-    "0.12.4-1"
+    "0.13.0-1"
   ]
 }
