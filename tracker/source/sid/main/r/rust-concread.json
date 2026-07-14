@@ -6,16 +6,19 @@
     "librust-concread-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8+default-dev \u003c!nocheck\u003e, librust-crossbeam-epoch-0.9+default-dev (\u003e= 0.9.11-~~) \u003c!nocheck\u003e, librust-crossbeam-queue-0.3+default-dev (\u003e= 0.3.6-~~) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+default-dev (\u003e= 0.8.12-~~) \u003c!nocheck\u003e, librust-lru-0.12+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e, librust-sptr-0.3+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+sync-dev \u003c!nocheck\u003e, librust-tracing-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-epoch-0.9+default-dev (\u003e= 0.9.18) \u003c!nocheck\u003e, librust-crossbeam-queue-0.3+default-dev (\u003e= 0.3.11) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+default-dev (\u003e= 0.8.21) \u003c!nocheck\u003e, librust-foldhash-0.2+default-dev \u003c!nocheck\u003e, librust-lru-0.16+default-dev (\u003e= 0.16.3) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e, librust-sptr-0.3+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.49.0) \u003c!nocheck\u003e, librust-tokio-1+sync-dev (\u003e= 1.49.0) \u003c!nocheck\u003e, librust-tracing-0.1+default-dev (\u003e= 0.1.44) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6d11b86b95d860817fa98b288ecac77573aea5cd57faf1e4062574976b4fdda1 3142 rust-concread_0.4.6-1.dsc d12e4b28df8cea511676b6edbc9ea833e4a4c7b2cccfbe9e905ac11e0bc0794c 874004 rust-concread_0.4.6.orig.tar.gz 67da0031025104ef04bedec20e2d9dffbe3d6abf89785a1b175d7796b0f60bc6 3124 rust-concread_0.4.6-1.debian.tar.xz"
+    "dde9b0813ef56b9ef7205d65c3e9e2c59f2994659753a0374e079b74611058f9 2509 rust-concread_0.5.10-1.dsc 6588e9e68e11207fb9a5aabd88765187969e6bcba98763c40bcad87b2a73e9f5 894816 rust-concread_0.5.10.orig.tar.gz 95ecae3cfe3792351eb988b9dcca56124aa5e62c09a1294c44ef1fe69812b03d 5168 rust-concread_0.5.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-concread"
   ],
   "Files": [
-    "64b889d8f2f3e6f4dbf54b92e0f79e2b 3142 rust-concread_0.4.6-1.dsc 0c40f0c66543d8d31dc513b7838cfad6 874004 rust-concread_0.4.6.orig.tar.gz 362576eb6c740f8fbc63943eed6152c9 3124 rust-concread_0.4.6-1.debian.tar.xz"
+    "61753c685fa3d49f5260d87942db3270 2509 rust-concread_0.5.10-1.dsc 69129405d21f2f4269ba1061788b4fd5 894816 rust-concread_0.5.10.orig.tar.gz 3ae1a7c3341e6d08efa24c8bcc9b365c 5168 rust-concread_0.5.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-criterion-0.3+html-reports-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, librust-time-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+std-dev, librust-uuid-1+default-dev"
+    "dh-cargo, librust-proptest-1+default-dev, librust-rand+default-dev, librust-serde-json+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tracing-subscriber-0.3+default-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+std-dev, librust-uuid+default-dev, rustc"
   ],
   "Uploaders": [
     "Timo Aaltonen \u003ctjaalton@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/concread]"
   ],
   "Version": [
-    "0.4.6-1"
+    "0.5.10-1"
   ]
 }

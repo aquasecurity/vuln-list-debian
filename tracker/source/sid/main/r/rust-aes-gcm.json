@@ -6,19 +6,25 @@
     "librust-aes-gcm-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-aead-0.5+alloc-dev \u003c!nocheck\u003e, librust-aead-0.5+getrandom-dev \u003c!nocheck\u003e, librust-aead-0.5+rand-core-dev \u003c!nocheck\u003e, librust-aead-0.5-dev \u003c!nocheck\u003e, librust-aes-0.8+default-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev \u003c!nocheck\u003e, librust-ctr-0.9+default-dev \u003c!nocheck\u003e, librust-ghash-0.5-dev \u003c!nocheck\u003e, librust-subtle-2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-aead-0.6+alloc-dev \u003c!nocheck\u003e, librust-aead-0.6+getrandom-dev \u003c!nocheck\u003e, librust-aead-0.6-dev \u003c!nocheck\u003e, librust-aes-0.9+default-dev \u003c!nocheck\u003e, librust-cipher-0.5+default-dev \u003c!nocheck\u003e, librust-ctr-0.10+default-dev \u003c!nocheck\u003e, librust-ghash-0.6-dev \u003c!nocheck\u003e, librust-subtle-2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b24f90f5f494d1ff9102b4de72e6527f54543ee634c3254db383f44592c2e438 2607 rust-aes-gcm_0.10.3-2.dsc 831010a0f742e1209b3bcea8fab6a8e149051ba6099432c8cb2cc117dec3ead1 148991 rust-aes-gcm_0.10.3.orig.tar.gz 6c046f368dba68b49da18ef75d2a54dba90a73584582a46cbaa7505c52432bb6 3316 rust-aes-gcm_0.10.3-2.debian.tar.xz"
+    "765b377c276bdc7bd399cb8c772c5c87c9422ba0c3251f98d3d74e7c5dfae232 2657 rust-aes-gcm_0.11.0-1.dsc fdf011db2e21ce0d575593d749db5554b47fed37aff429e4dc50bc91ac93a028 155879 rust-aes-gcm_0.11.0.orig.tar.gz d527c4719e981e50d96684d027726a4ad100b1c1d207dff711901a12e2d16d0f 3244 rust-aes-gcm_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-aes-gcm"
   ],
   "Files": [
-    "4d41384aab8a5fd9da79c7ad6b51d195 2607 rust-aes-gcm_0.10.3-2.dsc a9d6416ce6e1c6b70a7c176802411b8b 148991 rust-aes-gcm_0.10.3.orig.tar.gz 784360ac9a4fd28c7fbaeaca6f7f39fa 3316 rust-aes-gcm_0.10.3-2.debian.tar.xz"
+    "959ccb7f650e925608176bd22e76ff5e 2657 rust-aes-gcm_0.11.0-1.dsc 45c117eec1ed7ba8a785ae0ca5bb9def 155879 rust-aes-gcm_0.11.0.orig.tar.gz d5c053f20bdc0f42371fdebab5bb0679 3244 rust-aes-gcm_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/AEADs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-aead-0.5+dev-dev, librust-hex-literal-0.4+default-dev"
+    "dh-cargo, librust-aead-0.6+alloc-dev, librust-aead-0.6+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e, Arnaud Ferraris \u003caferraris@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/aes-gcm]"
   ],
   "Version": [
-    "0.10.3-2"
+    "0.11.0-1"
   ]
 }
