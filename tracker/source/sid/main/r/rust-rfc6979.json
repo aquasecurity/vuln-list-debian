@@ -6,19 +6,25 @@
     "librust-rfc6979-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hmac-0.12+reset-dev \u003c!nocheck\u003e, librust-subtle-2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crypto-bigint-0.7-dev (\u003e= 0.7.5) \u003c!nocheck\u003e, librust-hmac-0.13-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9ed3bbd876e84ba11c3ab2ca6ae906bfe87653c71b7be4afa759136821942dde 2286 rust-rfc6979_0.4.0-1.dsc f8dd2a808d456c4a54e300a23e9f5a67e122c3024119acbfd73e3bf664491cb2 9140 rust-rfc6979_0.4.0.orig.tar.gz 4376f57980f7d1d15bc08a06d95d55d7da35d6c10f2fa543f35ab55af39172ef 2884 rust-rfc6979_0.4.0-1.debian.tar.xz"
+    "44f9c7be9632f7a9937c0121d35941daef315e1dd0aee377d9f09cde5748b174 2474 rust-rfc6979_0.6.0-1.dsc b4a459cddafb3fe76b31fd8f1108007566c40301feb64dc7b54656eb7388172b 15702 rust-rfc6979_0.6.0.orig.tar.gz f0e02ca661eeb586e6232f85ad0792d4df8918826741b413e57d6dd4a806045e 2832 rust-rfc6979_0.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rfc6979"
   ],
   "Files": [
-    "089ab9899d319f27ca7834ab17e10022 2286 rust-rfc6979_0.4.0-1.dsc 4320a9e82272686cb97d7af005f5360d 9140 rust-rfc6979_0.4.0.orig.tar.gz 474cccdb0955777a79fd5ec243c9da40 2884 rust-rfc6979_0.4.0-1.debian.tar.xz"
+    "09be2494b7dcd25fc01e4ffc9becfdbc 2474 rust-rfc6979_0.6.0-1.dsc 8d9f175a0910a91ba5570e3b3da19487 15702 rust-rfc6979_0.6.0.orig.tar.gz 86b22badb12e52cf4ae26dbc417305d9 2832 rust-rfc6979_0.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/signatures/tree/master/rfc6979"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-sha2-0.10+default-dev"
+    "dh-cargo, librust-crypto-bigint-0.7+alloc-dev, librust-hex-literal-1+default-dev, librust-sha2-0.11+default-dev, librust-sha3-0.12+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rfc6979]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.6.0-1"
   ]
 }

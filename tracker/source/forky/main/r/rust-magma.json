@@ -6,19 +6,25 @@
     "librust-magma-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f4c3c4c284006fbfd1e79db04a909feb5606a5834d1987905ebf82716177eda7 1701 rust-magma_0.9.0-1.dsc dee0a450431f1756bf2ae23e63202e59759d602957dfdf4382013b5fcc4ae60d 10203 rust-magma_0.9.0.orig.tar.gz bfdce6836a115ec6a5e765be36b76f089f1b760e87377d40f4125af4dfd53ea7 2812 rust-magma_0.9.0-1.debian.tar.xz"
+    "c88ee70e00a888e3e9e8dee27b392c6cd7d296c7f0ae7aa72cd6f54debce17a0 2349 rust-magma_0.10.0-1.dsc 84fcdd6a71a6af65297be074d9d26cda7a2e98b86294ee0de0732b00c2063a61 11173 rust-magma_0.10.0.orig.tar.gz 40528fec084b0c6650b7b886184f74eca57cde9b1d63b44db583a02198427b4b 2732 rust-magma_0.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-magma"
   ],
   "Files": [
-    "0306450d5fae9edb2b51f76a09d3cdea 1701 rust-magma_0.9.0-1.dsc 419ea6e3d3a652071935105b6d3ecd1b 10203 rust-magma_0.9.0.orig.tar.gz ab3bee8930fc254f467d75ecb0dc330b 2812 rust-magma_0.9.0-1.debian.tar.xz"
+    "9849c52fd27e03faf1bc6d416f8897bf 2349 rust-magma_0.10.0-1.dsc eba044645a215115228f2dbb991941d6 11173 rust-magma_0.10.0.orig.tar.gz f25db83ea09d4948cefe1c93769c14bb 2732 rust-magma_0.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/block-ciphers"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cipher-0.4+default-dev, librust-cipher-0.4+dev-dev, librust-hex-literal-0.4+default-dev, rustc"
+    "dh-cargo, librust-cipher-0.5+default-dev, librust-cipher-0.5+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/magma]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.10.0-1"
   ]
 }
