@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "courier-authlib, courier-authdaemon, courier-authlib-dev, courier-authlib-userdb, courier-authlib-mysql, courier-authlib-postgresql, courier-authlib-ldap, courier-authlib-sqlite, courier-authlib-pipe"
+    "courier-authdaemon, courier-authlib, courier-authlib-dev, libcourier-authlib0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), autoconf-archive, default-libmysqlclient-dev, expect, libcourier-unicode-dev (\u003e= 2.4.0), libcrypt-dev, libgdbm-dev, libidn2-dev, libldap-dev, libltdl-dev, libpam0g-dev, libpq-dev, libsasl2-dev, libsqlite3-dev, libtool, pkgconf, procps, locales-all \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-pkgkde-symbolshelper, autoconf-archive, dh-exec, expect, libcourier-unicode-dev (\u003e= 2.5.0.20260502), libcrypt-dev, libgdbm-dev, libidn2-dev, libldap-dev, libltdl-dev, libmariadb-dev-compat, libpam0g-dev, libpq-dev, libsasl2-dev, libsqlite3-dev, libtool, pkgconf, procps, sysconftool, locales-all \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "900fd10e5f35804d4780e40c5bccf354291aeb460ebac4337d855969a531c6fd 3082 courier-authlib_0.72.6-4.dsc c801f9da4bb40b5efcd89694ca56de0b10a2b8e275c3afc00f4d9aa378b0f95d 2802137 courier-authlib_0.72.6.orig.tar.bz2 6edf75c558e73edc7672a692dfcd31d02ef06a9268c604ed7a932cea774c82f2 260 courier-authlib_0.72.6.orig.tar.bz2.asc 06e967d5c85a888e540b058784a720005a1bd61a46b95d6e924a98334a968819 19824 courier-authlib_0.72.6-4.debian.tar.xz"
+    "7c82a708416b6a468c98f0f69b5981bac8edde8b1fdae40cfa81b86785f71033 2773 courier-authlib_0.73.1-1.dsc 2b65b6ef20de0ff0d8318bc3de7ccb4f77f8bf43e4f9adeacc7cad97fff3b297 2768636 courier-authlib_0.73.1.orig.tar.bz2 483c145f753fdb000f621288a2ce953a05981762c062f7dc187e98e1df41e04b 260 courier-authlib_0.73.1.orig.tar.bz2.asc 58e7c0f469d59201759628344483edb25f25722c52731ccd08681a7ea9191376 20764 courier-authlib_0.73.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/courier-authlib"
   ],
   "Files": [
-    "f599a3f67a6ffdc8e6907354d3a93485 3082 courier-authlib_0.72.6-4.dsc 8cab44f47039839c52db070b0aaf026e 2802137 courier-authlib_0.72.6.orig.tar.bz2 9aa08f27dd7095346b8887cf3a38f809 260 courier-authlib_0.72.6.orig.tar.bz2.asc 6a9fdcbc459637bc409ef3ae0f4127b1 19824 courier-authlib_0.72.6-4.debian.tar.xz"
+    "48da6ccfd6710526edc6d6316827674e 2773 courier-authlib_0.73.1-1.dsc a3af667709441eb4f5b32219451b98e4 2768636 courier-authlib_0.73.1.orig.tar.bz2 447e3f2c4972d0aec02352ad4a0ff6ce 260 courier-authlib_0.73.1.orig.tar.bz2.asc 545349da316ad0ef87282a3ea11bded5 20764 courier-authlib_0.73.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "courier-authlib"
   ],
   "Package-List": [
-    "courier-authdaemon deb mail optional arch=any courier-authlib deb mail optional arch=any courier-authlib-dev deb mail optional arch=any courier-authlib-ldap deb mail optional arch=any courier-authlib-mysql deb mail optional arch=any courier-authlib-pipe deb mail optional arch=any courier-authlib-postgresql deb mail optional arch=any courier-authlib-sqlite deb mail optional arch=any courier-authlib-userdb deb mail optional arch=any"
+    "courier-authdaemon deb mail optional arch=any courier-authlib deb mail optional arch=any courier-authlib-dev deb mail optional arch=any libcourier-authlib0 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "mail"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "bsdmainutils"
+    "adduser, bsdextrautils"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/courier-authlib"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/courier-authlib.git"
   ],
   "Version": [
-    "0.72.6-4"
+    "0.73.1-1"
   ]
 }
