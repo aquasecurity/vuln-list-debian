@@ -6,22 +6,22 @@
     "libvkd3d-doc, libvkd3d-headers, libvkd3d-dev, libvkd3d1, libvkd3d-utils1, libvkd3d-shader1, vkd3d-demos, vkd3d-compiler"
   ],
   "Build-Depends": [
-    "dpkg (\u003e= 1.19), debhelper-compat (= 13), pkg-config, spirv-headers, libvulkan-dev (\u003e= 1.1.70), libxcb-util0-dev, libxcb-icccm4-dev, libxcb-keysyms1-dev"
+    "bison, debhelper-compat (= 13), flex, pkgconf, spirv-headers, libjson-perl, libncurses-dev, libvulkan-dev (\u003e= 1.3.228), libxcb-util-dev, libxcb-icccm4-dev, libxcb-keysyms1-dev"
   ],
   "Build-Depends-Arch": [
-    "help2man, mingw-w64-tools, gcc-mingw-w64-i686 [i386 amd64], gcc-mingw-w64-x86-64 [i386 amd64]"
+    "help2man, mingw-w64-tools, gcc-mingw-w64-i686 [i386 amd64], gcc-mingw-w64-x86-64 [i386 amd64], libegl-mesa0 \u003c!nocheck\u003e, libglx-mesa0 \u003c!nocheck\u003e, mesa-vulkan-drivers \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen, graphviz, mingw-w64-tools, texlive-latex-extra, texlive-plain-generic, texlive-fonts-recommended"
   ],
   "Checksums-Sha256": [
-    "fbf648b649dd16fabf76949821f0b61bd4859999ac743bc4f30424b01f2dcfc0 3908 vkd3d_1.2-15.dsc e688ecfbcf4dd552b44761c2a45f4f944cd0618dc44bc4213c190ce783d641bf 364240 vkd3d_1.2.orig.tar.xz 1dabe845331c9fd4e22461cf60203141e422de081f3bf550e2b6d413941983c0 11800 vkd3d_1.2-15.debian.tar.xz"
+    "b0632f46b06511d65930effbb55d151a4849179ce74b8f53f1b745b906935e8a 3394 vkd3d_2.0+ds-1.dsc 7a5d631ca7794373a00049b86d55cc4764b9fe185f5fed25e41735fd31dc6419 1125120 vkd3d_2.0+ds.orig.tar.xz 45d8cf64df5a212da11690997cf1bd1e070a41bb804db0ef82ec2969c649f91a 11552 vkd3d_2.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/v/vkd3d"
   ],
   "Files": [
-    "25ee4c54bc376db942065d67af490d68 3908 vkd3d_1.2-15.dsc 3e2a791bd970561fef9df4c107de2fe2 364240 vkd3d_1.2.orig.tar.xz ad87bb84bfbeb0d88726238bb7f2ff5f 11800 vkd3d_1.2-15.debian.tar.xz"
+    "7f955cbf7431dc112f2f87bd72e40777 3394 vkd3d_2.0+ds-1.dsc 5fd965856479623c70629712b78cc67b 1125120 vkd3d_2.0+ds.orig.tar.xz 48b2d6a6995145db589b59e8f0ed1ebb 11552 vkd3d_2.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "xauth, xvfb"
   ],
   "Uploaders": [
     "Michael Gilbert \u003cmgilbert@debian.org\u003e,"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/wine-team/vkd3d.git"
   ],
   "Version": [
-    "1.2-15"
+    "2.0+ds-1"
   ]
 }
