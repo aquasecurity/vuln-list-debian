@@ -6,16 +6,19 @@
     "librust-unicode-script-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "16cbd88bc285549b0dd312ff23745a95b0f632469f3274f74cd911453688bd9b 1892 rust-unicode-script_0.5.2-4.dsc 79bf4d5fc96546fdb73f9827097810bbda93b11a6770ff3a54e1f445d4135787 36768 rust-unicode-script_0.5.2.orig.tar.gz bfd4ec7c7654deeec6036086bb618ce87e312eb41f7553e2b68bbfda1705d16d 3216 rust-unicode-script_0.5.2-4.debian.tar.xz"
+    "d107337787d13cb695c6454c6c79dddb0e6b13b2e961cda85c4305f89f5f12fd 1664 rust-unicode-script_0.5.8-1.dsc 383ad40bb927465ec0ce7720e033cb4ca06912855fc35db31b5755d0de75b1ee 48253 rust-unicode-script_0.5.8.orig.tar.gz f6fd2852926e11d82d7266da1cb6c01e86d15194e821f5114b421b1536cec8eb 3296 rust-unicode-script_0.5.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-script"
   ],
   "Files": [
-    "58dee4f54d777c2dbf8eee348a171f41 1892 rust-unicode-script_0.5.2-4.dsc 435b8200409dd12dc756baa1854bed01 36768 rust-unicode-script_0.5.2.orig.tar.gz f3fed778501cf25136a09a5c63aa9b33 3216 rust-unicode-script_0.5.2-4.debian.tar.xz"
+    "148565fa58c00488d927fee4a6cc6ff6 1664 rust-unicode-script_0.5.8-1.dsc caa4b7c1cfd6608d5f53ced62495fa62 48253 rust-unicode-script_0.5.8.orig.tar.gz 6c3ef761042d8f121d183bea193c0502 3296 rust-unicode-script_0.5.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-script]"
   ],
   "Version": [
-    "0.5.2-4"
+    "0.5.8-1"
   ]
 }
