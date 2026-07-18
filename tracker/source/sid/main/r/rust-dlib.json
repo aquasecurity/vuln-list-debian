@@ -6,19 +6,25 @@
     "librust-dlib-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libloading-0+default-dev (\u003e= 0.7-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libloading-0+default-dev (\u003e= 0.7) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e5ad9cbeaa700cb21a64c7c428854ccb5f6307aa5b0182071287b7c46bb5a48e 2161 rust-dlib_0.5.2-2.dsc 330c60081dcc4c72131f8eb70510f1ac07223e5d4163db481a04a0befcffa412 5806 rust-dlib_0.5.2.orig.tar.gz a58876697befbe6c014bdecef83291aeb3c32fac158bc0d71559aadf4883dced 2896 rust-dlib_0.5.2-2.debian.tar.xz"
+    "c121079e39dda55492c881458d1dc0e917dd9a9f4cf73fa99f7da3e36eb8ef12 2215 rust-dlib_0.5.3-1.dsc ab8ecd87370524b461f8557c119c405552c396ed91fc0a8eec68679eab26f94a 7120 rust-dlib_0.5.3.orig.tar.gz abfc44e3853f08ca8639fb6d0ac187d234677389c73f6c7eeaf1aaa955ce4c40 3024 rust-dlib_0.5.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dlib"
   ],
   "Files": [
-    "f8aa35f4a36172238b7dbd869ff93a28 2161 rust-dlib_0.5.2-2.dsc 7c8ef8b5fc652fa97d3629d1ec8b18e8 5806 rust-dlib_0.5.2.orig.tar.gz dbbb576551dcfe9a8403559986828cf3 2896 rust-dlib_0.5.2-2.debian.tar.xz"
+    "84f7a9bce2866dab98da9ea41f4d450b 2215 rust-dlib_0.5.3-1.dsc 2426470cc1c784e172b4e78f8ff158fa 7120 rust-dlib_0.5.3.orig.tar.gz 5977cce7d609e63bb4430c9bb2867454 3024 rust-dlib_0.5.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/elinorbgr/dlib"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabio Rafael da Rosa \u003cfdr@fabiodarosa.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dlib]"
   ],
   "Version": [
-    "0.5.2-2"
+    "0.5.3-1"
   ]
 }
