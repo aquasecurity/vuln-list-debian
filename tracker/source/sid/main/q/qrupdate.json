@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libqrupdate1, libqrupdate-dev"
+    "libqrupdate1, libqrupdate-dev, libqrupdate-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gfortran, libblas-dev, liblapack-dev, cmake"
+    "debhelper-compat (= 14), dh-sequence-fortran, gfortran, libblas-dev, liblapack-dev, cmake, doxygen"
   ],
   "Checksums-Sha256": [
-    "6039086676570b1a82b2d6ab4210467766a880a1c2753bda0fefa9c0f718bb70 2076 qrupdate_1.1.5-3.dsc d81523077586fec9dc26585c82a6c9c109f912f29d5ec9097822faf56297c4d2 598795 qrupdate_1.1.5.orig.tar.bz2 7f0bf10d7b59cf3436f1c62d01a714a7da1a7cc0ddd67797fb10af8a335968aa 5088 qrupdate_1.1.5-3.debian.tar.xz"
+    "de74493474318ac9c73562ece7f1b2d21681aa1767844d89417d1dca7ffb9880 2167 qrupdate_1.2.0-1.dsc 63a8bdc83b40b99f7ee2fd4132062092f15122e7916b265e174658f5950b77f3 914808 qrupdate_1.2.0.orig.tar.gz 251f24c7b786324bad590ad035858ef93e8bd8d25698f67228d625d71070c76d 5000 qrupdate_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qrupdate"
   ],
   "Files": [
-    "613745b5c017f56feb17846af10e8272 2076 qrupdate_1.1.5-3.dsc b1efe47803488e17f29f9b23fa6b1f11 598795 qrupdate_1.1.5.orig.tar.bz2 110071b853acdfd56ea6edb62cae9919 5088 qrupdate_1.1.5-3.debian.tar.xz"
+    "9a110a1c8c69f5eb7cb9c854d3ed8867 2167 qrupdate_1.2.0-1.dsc a9c9f4617938007478f84bba0e8db4a7 914808 qrupdate_1.2.0.orig.tar.gz e5b8b85f75bd0a4c6606b603edcd8ae2 5000 qrupdate_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "qrupdate"
   ],
   "Package-List": [
-    "libqrupdate-dev deb libdevel optional arch=any libqrupdate1 deb libs optional arch=any"
+    "libqrupdate-dev deb libdevel optional arch=any libqrupdate-doc deb doc optional arch=all libqrupdate1 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Uploaders": [
     "Sébastien Villemot \u003csebastien@debian.org\u003e"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/science-team/qrupdate.git"
   ],
   "Version": [
-    "1.1.5-3"
+    "1.2.0-1"
   ]
 }
