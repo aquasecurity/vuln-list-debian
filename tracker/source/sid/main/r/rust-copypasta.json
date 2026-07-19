@@ -6,19 +6,25 @@
     "librust-copypasta-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smithay-clipboard-0.7+default-dev \u003c!nocheck\u003e, librust-x11-clipboard-0.9+default-dev (\u003e= 0.9.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smithay-clipboard-0.7-dev \u003c!nocheck\u003e, librust-x11-clipboard-0.9+default-dev (\u003e= 0.9.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8c164ab3849b51ebbb0330495e59f28defab9d3f09a51faad0b2b941c6f5ac5a 2396 rust-copypasta_0.10.1-3.dsc deb85422867ca93da58b7f95fb5c0c10f6183ed6e1ef8841568968a896d3a858 15053 rust-copypasta_0.10.1.orig.tar.gz de8b8589e860400ecbf8fd4ce9077d87da4255ed229d6ae24001aa1089385e34 3468 rust-copypasta_0.10.1-3.debian.tar.xz"
+    "28ea70faada90a15b6ed5cbf1adaf0ab39c3bac4ca5e05f601e4b998bfd2b4ed 2466 rust-copypasta_0.10.2-1.dsc 3e6811e17f81fe246ef2bc553f76b6ee6ab41a694845df1d37e52a92b7bbd38a 15486 rust-copypasta_0.10.2.orig.tar.gz 0b6700364baab7053782e60d1c3560d286ea759c5657a16ebf9cfe6686c4fbe7 3952 rust-copypasta_0.10.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-copypasta"
   ],
   "Files": [
-    "8af752569c5c48a0149c2f6db8856ef9 2396 rust-copypasta_0.10.1-3.dsc e11e1dd3d9c75ee9bd19a8bb02e824db 15053 rust-copypasta_0.10.1.orig.tar.gz 65c5e6bed9cd12f8d56acc77057859c0 3468 rust-copypasta_0.10.1-3.debian.tar.xz"
+    "b0629299fbada8b7f72a25f1e3311757 2466 rust-copypasta_0.10.2-1.dsc 95fafaa9de387ea6470218f1bdbb5fb5 15486 rust-copypasta_0.10.2.orig.tar.gz adfc8947c151e78bd9de24fa45abd223 3952 rust-copypasta_0.10.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alacritty/copypasta"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/copypasta]"
   ],
   "Version": [
-    "0.10.1-3"
+    "0.10.2-1"
   ]
 }

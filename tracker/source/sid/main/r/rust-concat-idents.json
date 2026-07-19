@@ -6,19 +6,25 @@
     "librust-concat-idents-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.21-~~) \u003c!nocheck\u003e, librust-syn-1+default-dev (\u003e= 1.0.103-~~) \u003c!nocheck\u003e, librust-syn-1+full-dev (\u003e= 1.0.103-~~) \u003c!nocheck\u003e, librust-syn-1+visit-mut-dev (\u003e= 1.0.103-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.21) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.16) \u003c!nocheck\u003e, librust-syn-2+full-dev (\u003e= 2.0.16) \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev (\u003e= 2.0.16) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "87471fbffaeb72ab91bc52d6fec6605454ca68e29823fe5c5130608d15ec828e 2542 rust-concat-idents_1.1.4-1.dsc 0fe0e1d9f7de897d18e590a7496b5facbe87813f746cf4b8db596ba77e07e832 8675 rust-concat-idents_1.1.4.orig.tar.gz 9a697d6e98dbcc842c1ce62e3d09baee5a3bd9d792e052c90ef659d038e0a98a 2716 rust-concat-idents_1.1.4-1.debian.tar.xz"
+    "ec831e97fba42b6e193c81755b2be947a994ec7a6b0e0caff832c271b5336104 2614 rust-concat-idents_1.1.5-1.dsc f76990911f2267d837d9d0ad060aa63aaad170af40904b29461734c339030d4d 8676 rust-concat-idents_1.1.5.orig.tar.gz 050c57566831359d0c79f3c389e8d3ebd9d3f1694f42b5c6ac8a38b6fb49da1f 2764 rust-concat-idents_1.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-concat-idents"
   ],
   "Files": [
-    "3170e617be6627ba68cc63d14bc641c4 2542 rust-concat-idents_1.1.4-1.dsc 857821560278d58353d7e9536371d02c 8675 rust-concat-idents_1.1.4.orig.tar.gz 71a81a5f710696f36db07bb111b687cf 2716 rust-concat-idents_1.1.4-1.debian.tar.xz"
+    "0c15a215883dfe1c1ba7751f8a283e73 2614 rust-concat-idents_1.1.5-1.dsc 20a7af4f8eaaf0b337711604879b0910 8676 rust-concat-idents_1.1.5.orig.tar.gz 6f576427e32c5262dfe6aa661b1ffe4a 2764 rust-concat-idents_1.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/DzenanJupic/concat-idents"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/concat-idents]"
   ],
   "Version": [
-    "1.1.4-1"
+    "1.1.5-1"
   ]
 }
