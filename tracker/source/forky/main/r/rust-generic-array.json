@@ -6,19 +6,25 @@
     "librust-generic-array-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.12-~~) \u003c!nocheck\u003e, librust-version-check-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rustversion-1+default-dev \u003c!nocheck\u003e, librust-typenum-1+const-generics-dev (\u003e= 1.20.1) \u003c!nocheck\u003e, librust-typenum-1+default-dev (\u003e= 1.20.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f8d14ed8d7101327da9e1623a7b8868ea587e5000f52aeaf211fdd57d9840178 2006 rust-generic-array_0.14.7-1.dsc 85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a 15950 rust-generic-array_0.14.7.orig.tar.gz 2f2ef1c598c0895b02a21ec108496788cef4e56a3a3d45aaee4aab358934221f 2892 rust-generic-array_0.14.7-1.debian.tar.xz"
+    "77513b6043646876ee1c10b6a2de3c4b6e0bfb8cd9170c2d45f75f3f0b6d9eb1 2708 rust-generic-array_1.4.4-1.dsc ab4e5aa225bc56696909483320f0ff9b600f1a971b52e07a17d70f3d9b43254b 51747 rust-generic-array_1.4.4.orig.tar.gz 90a2c5c0a152365159177e0c89169c5b9d71432cf6800ce9d771d6dc43e3815e 3544 rust-generic-array_1.4.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-generic-array"
   ],
   "Files": [
-    "f144c554e919a5d5328a71b502e1be83 2006 rust-generic-array_0.14.7-1.dsc 64a6d8fe0c9a450bcefa41894e17d7ac 15950 rust-generic-array_0.14.7.orig.tar.gz 13407cc4cd295dc9a74de96b50a3c41c 2892 rust-generic-array_0.14.7-1.debian.tar.xz"
+    "0a632480bd153f3c3e311ed024041245 2708 rust-generic-array_1.4.4-1.dsc 55d17c61871941e213c11f02db211cdd 51747 rust-generic-array_1.4.4.orig.tar.gz 6e87662ebc179b9e99faea1001c85902 3544 rust-generic-array_1.4.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/fizyk20/generic-array.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-aes-0.8-dev, librust-bincode-1+default-dev, librust-bytecheck-0.8-dev, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-rand-0.10+default-dev, librust-rkyv-0.8+alloc-dev, librust-rkyv-0.8+bytecheck-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/generic-array]"
   ],
   "Version": [
-    "0.14.7-1"
+    "1.4.4-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-chunked-transfer-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "54f7f6ebca774352def60ff2c1b19b3a1e4d1340cee0e047842ace766f6acd65 2363 rust-chunked-transfer_1.4.0-1.dsc fff857943da45f546682664a79488be82e69e43c1a7a2307679ab9afb3a66d2e 9238 rust-chunked-transfer_1.4.0.orig.tar.gz baef72822c4d1b0802ebb1ac9e83a4b713594452b57c285f6e258beef1694045 2036 rust-chunked-transfer_1.4.0-1.debian.tar.xz"
+    "3c164c69f9b8deb9f6fedb6da749481d9c345e6efee9b7159ab140b9a203064c 2420 rust-chunked-transfer_1.5.0-1.dsc 6e4de3bc4ea267985becf712dc6d9eed8b04c953b3fcfb339ebc87acd9804901 9779 rust-chunked-transfer_1.5.0.orig.tar.gz 2bb68e44d5d8d7830fcf52a35da8f61eeea86f0b1197d9a7d6f5ae6f719b7a7f 2852 rust-chunked-transfer_1.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-chunked-transfer"
   ],
   "Files": [
-    "a58931aadd69396ffd990e43c1e9b76a 2363 rust-chunked-transfer_1.4.0-1.dsc 1f145acaad7dce34cd8c820655b99933 9238 rust-chunked-transfer_1.4.0.orig.tar.gz 9f88d1dfb5de95dacc0f7bfd8acc21cd 2036 rust-chunked-transfer_1.4.0-1.debian.tar.xz"
+    "16a45f4902fc52eab7d8f343b26e3b80 2420 rust-chunked-transfer_1.5.0-1.dsc 2eda76f74a7307b35eb09d5be9a6d64d 9779 rust-chunked-transfer_1.5.0.orig.tar.gz 1c33e58f9c3227a27e17a7b47a0d2eb8 2852 rust-chunked-transfer_1.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/frewsxcv/rust-chunked-transfer"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "James McCoy \u003cjamessan@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/chunked-transfer]"
   ],
   "Version": [
-    "1.4.0-1"
+    "1.5.0-1"
   ]
 }
