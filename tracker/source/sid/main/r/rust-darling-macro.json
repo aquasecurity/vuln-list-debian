@@ -6,19 +6,25 @@
     "librust-darling-macro-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-darling-core-0.20.10+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.18-~~) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.15-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-darling-core-0.23+default-dev (\u003c\u003c 0.23.1) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.18) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.15) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9ccf1b294aaed5c408630d98d8bb97f0d598ffebab4f9585b36bfcad920de2f9 1866 rust-darling-macro_0.20.10-1.dsc d336a2a514f6ccccaa3e09b02d41d35330c07ddf03a62165fcec10bb561c7806 1874 rust-darling-macro_0.20.10.orig.tar.gz 26660d15c0dbbb6cd4d069f8d92ff3087668cd6f14c94295adca40d371de22de 2916 rust-darling-macro_0.20.10-1.debian.tar.xz"
+    "69376bd8b7da42a743c7ad2be64aa2f6f1c5fb51746c5c23d6cee8dc647938c4 2450 rust-darling-macro_0.23.0-1.dsc ac3984ec7bd6cfa798e62b4a642426a5be0e68f9401cfc2a01e3fa9ea2fcdb8d 2480 rust-darling-macro_0.23.0.orig.tar.gz b6a22860901b893a93b3ac0b13c87601be35a059ec7d12d9d12a0d3f5b05c16d 3072 rust-darling-macro_0.23.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-darling-macro"
   ],
   "Files": [
-    "ee2b25efdbc2e04374dfbd8c42513fdb 1866 rust-darling-macro_0.20.10-1.dsc 9097394f9064208febb3ce36f9ad5343 1874 rust-darling-macro_0.20.10.orig.tar.gz 5fe1a119330df1ad711ec11720bc8e74 2916 rust-darling-macro_0.20.10-1.debian.tar.xz"
+    "80a77f371dcf96b03d3311b049c5eae1 2450 rust-darling-macro_0.23.0-1.dsc 8056a949aac022507b24c0fa358e7911 2480 rust-darling-macro_0.23.0.orig.tar.gz fc356f63bfc985d64fdcd039f3a467be 3072 rust-darling-macro_0.23.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/TedDriggs/darling"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/darling-macro]"
   ],
   "Version": [
-    "0.20.10-1"
+    "0.23.0-1"
   ]
 }

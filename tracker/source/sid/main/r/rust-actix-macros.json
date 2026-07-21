@@ -6,19 +6,25 @@
     "librust-actix-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.3-~~) \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "07bcf0ca36d811b10d5f7f036ad6871b5b64cd7a3a7f24ab7abe673cc596ee25 2292 rust-actix-macros_0.2.3-1.dsc 465a6172cf69b960917811022d8f29bc0b7fa1398bc4f78b3c466673db1213b6 8259 rust-actix-macros_0.2.3.orig.tar.gz c5b577bd1eccbe5d6959f6bd75db5ba41aed00094f38bb592c77bf27e41344e7 3368 rust-actix-macros_0.2.3-1.debian.tar.xz"
+    "e3ec384176e58bd75c49f2d767600708a437af3bd8de6c411b919e4416163ffc 2390 rust-actix-macros_0.2.4-1.dsc e01ed3140b2f8d422c68afa1ed2e85d996ea619c988ac834d255db32138655cb 8380 rust-actix-macros_0.2.4.orig.tar.gz ef1f6205d1c22d9ae45a6464f42560b4a1fdf66cf451bbd3410642c00e17d9ce 3572 rust-actix-macros_0.2.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-actix-macros"
   ],
   "Files": [
-    "ef6df7fe36e3a05df3bc7a9ddbd870c5 2292 rust-actix-macros_0.2.3-1.dsc 0d0c42f71c3cca4c82e3cd6d2506e5d3 8259 rust-actix-macros_0.2.3.orig.tar.gz ad0e731835e4a06157b36f5f92b30084 3368 rust-actix-macros_0.2.3-1.debian.tar.xz"
+    "49042658096efe1f11efe79f1d334899 2390 rust-actix-macros_0.2.4-1.dsc de01447e3388df75239275a62ee00295 8380 rust-actix-macros_0.2.4.orig.tar.gz d4c3ecdc5c7937b7fa8f24f8934964f4 3572 rust-actix-macros_0.2.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/actix/actix-net.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
+    "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/actix-macros"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/actix-macros]"
   ],
   "Version": [
-    "0.2.3-1"
+    "0.2.4-1"
   ]
 }
