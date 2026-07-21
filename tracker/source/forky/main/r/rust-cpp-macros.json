@@ -6,19 +6,25 @@
     "librust-cpp-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-aho-corasick-1+default-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev \u003c!nocheck\u003e, librust-cpp-common-0.5.9+default-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-aho-corasick-1+default-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev \u003c!nocheck\u003e, librust-cpp-common-0.5+default-dev (\u003c\u003c 0.5.12) \u003c!nocheck\u003e, librust-cpp-common-0.5+default-dev (\u003e= 0.5.11) \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b03bbfe65d56b590dadf7cd7e8b565235f4dfd95ff4c52c26b693b613cadee81 2547 rust-cpp-macros_0.5.9-1.dsc 47ec9cc90633446f779ef481a9ce5a0077107dd5b87016440448d908625a83fd 7103 rust-cpp-macros_0.5.9.orig.tar.gz 126c0b1c1b2e4a819d26c5c5d863210f3e29f1012aaf0892a3963e34218d8ffe 2800 rust-cpp-macros_0.5.9-1.debian.tar.xz"
+    "1910d6721d23a0a1fd94e4a18329b9f9db05bda56d91de142a25c040921e8c97 2635 rust-cpp-macros_0.5.11-1.dsc ffc7fd49a5b246251229ea4d4bf94c8d418689a1f9986ef96e00b64992922169 7903 rust-cpp-macros_0.5.11.orig.tar.gz 2b8abaf10e7c3876808186a464db7281f33920c719ef5e28759f9e3104ec1e70 2956 rust-cpp-macros_0.5.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cpp-macros"
   ],
   "Files": [
-    "c0de98fca7d1d69efd9481bddeb9e587 2547 rust-cpp-macros_0.5.9-1.dsc 8bd6354a5fbcf7aa145d2b4f1131b044 7103 rust-cpp-macros_0.5.9.orig.tar.gz 65c0b79ba99e1a1d55fcaf31b538d9eb 2800 rust-cpp-macros_0.5.9-1.debian.tar.xz"
+    "744d19e39af90fa9421bd5dc248af84b 2635 rust-cpp-macros_0.5.11-1.dsc 64c085db6aad578c8b2efc8aa44b42d6 7903 rust-cpp-macros_0.5.11.orig.tar.gz dc5bb27ecd662c4cfcf0816482c4c72d 2956 rust-cpp-macros_0.5.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mystor/rust-cpp"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cpp-macros]"
   ],
   "Version": [
-    "0.5.9-1"
+    "0.5.11-1"
   ]
 }

@@ -6,16 +6,16 @@
     "libayatana-common0, libayatana-common-dev, gir1.2-ayatanacommon-0.1, ayatana-indicator-common"
   ],
   "Build-Depends": [
-    "cmake, cmake-extras, debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.16.1.1), gobject-introspection, intltool, libgirepository1.0-dev, googletest, libgtest-dev, liblomiri-url-dispatcher-dev, libglib2.0-dev (\u003e= 2.36), pkgconf, systemd-dev [linux-any], valac"
+    "cmake, cmake-extras, debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.16.1.1), gir1.2-glib-2.0-dev, gobject-introspection (\u003e= 1.80), intltool, googletest, libgtest-dev, liblomiri-url-dispatcher-dev, libglib2.0-dev (\u003e= 2.36), pkgconf, systemd-dev [linux-any], valac"
   ],
   "Checksums-Sha256": [
-    "a68feb95d25109f9c38437313aec9ad63202920ee070b8436db84b4265d7954e 2895 libayatana-common_0.9.11-2.dsc 8e8d48602b8db1021f8dfd862cf3919aad80ff92bddf1abbecaf8269df3e83fa 45518 libayatana-common_0.9.11.orig.tar.gz 6c8973c039dd31ac46f2f184b711bb4c363aa58109790973d851a08cf8bc6d57 833 libayatana-common_0.9.11.orig.tar.gz.asc 0a5ba36b5e17238f126401c8ad388f3b8fcc3b4037424ada648f876215ed7f90 13764 libayatana-common_0.9.11-2.debian.tar.xz"
+    "c08091fd76101f68e8a62bbe7141caa813a50b46393ced32ce26e2cd89e48342 2965 libayatana-common_0.9.13-1.dsc e9ab2ee553703314bf0feb956cdd579fa99130ac821c4410c5bc4b05649995b3 45894 libayatana-common_0.9.13.orig.tar.gz 1f0676e1d6de61bc05c6c36b923ae5a2df1d92d0b805a3312ac1e02b062bdcdb 833 libayatana-common_0.9.13.orig.tar.gz.asc c1502a34ef99fd05bed178e3d6f36e10179832ed7e98fd48ccfa0dd8e5e999e8 14260 libayatana-common_0.9.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/liba/libayatana-common"
   ],
   "Files": [
-    "00b433e85178b16a0bd5580044483815 2895 libayatana-common_0.9.11-2.dsc cf9b5c24d9f9d7937dec9e566721e49a 45518 libayatana-common_0.9.11.orig.tar.gz bda5b08b52daaad1390e5812d382e6cc 833 libayatana-common_0.9.11.orig.tar.gz.asc bb7dd63aa3b9725ea8b038885069a3ec 13764 libayatana-common_0.9.11-2.debian.tar.xz"
+    "a375e9f4a903c82dcf3cb826ee72ae9e 2965 libayatana-common_0.9.13-1.dsc cbafbf8240c362f77ce0d69dcc8849d6 45894 libayatana-common_0.9.13.orig.tar.gz 0dd2a8ffee25699cf09d97eeda5f659c 833 libayatana-common_0.9.13.orig.tar.gz.asc d0bc843f1157404ef88c805378d4a625 14260 libayatana-common_0.9.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3, python3-gi"
   ],
   "Uploaders": [
     "Debian UBports Team \u003cteam+ubports@tracker.debian.org\u003e, Mike Gabriel \u003csunweaver@debian.org\u003e,"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian-ayatana-team/libayatana-common.git"
   ],
   "Version": [
-    "0.9.11-2"
+    "0.9.13-1"
   ]
 }

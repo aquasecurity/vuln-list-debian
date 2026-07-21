@@ -6,19 +6,19 @@
     "emscripten, emscripten-doc"
   ],
   "Build-Depends": [
-    "binaryen (\u003e= 120~) \u003c!nocheck\u003e, binaryen (\u003c\u003c 121~) \u003c!nocheck\u003e, ccache, clang-19, cmake \u003c!nocheck\u003e, cmark-gfm \u003c!nodoc\u003e, debhelper-compat (= 13), dh-sequence-python3, esbuild \u003c!nocheck\u003e, fonts-liberation \u003c!nocheck\u003e, help2man, jq, libjs-source-map, libsimde-dev, lld-19 \u003c!nocheck\u003e, llvm-19, node-acorn \u003c!nocheck\u003e, node-source-map \u003c!nocheck\u003e, nodejs (\u003e= 12.16), dh-nodejs \u003c!nocheck\u003e, python3, python3-numpy \u003c!nocheck\u003e, python3-ply \u003c!nocheck\u003e, scons \u003c!nocheck\u003e, wabt (\u003e= 1.0.24-2~) \u003c!nocheck\u003e"
+    "binaryen (\u003e= 130~) \u003c!nocheck\u003e, ccache, clang-21, cmake \u003c!nocheck\u003e, cmark-gfm \u003c!nodoc\u003e, debhelper-compat (= 13), dh-sequence-python3, esbuild \u003c!nocheck\u003e, fonts-liberation \u003c!nocheck\u003e, help2man, jq, libjs-source-map, libsimde-dev, lld-21 \u003c!nocheck\u003e, llvm-21, node-acorn \u003c!nocheck\u003e, node-acorn-import-phases \u003c!nocheck\u003e, node-source-map \u003c!nocheck\u003e, nodejs (\u003e= 18.3.0~), dh-nodejs \u003c!nocheck\u003e, python3, python3-numpy \u003c!nocheck\u003e, python3-ply \u003c!nocheck\u003e, python3-psutil \u003c!nocheck\u003e, scons \u003c!nocheck\u003e, wabt (\u003e= 1.0.24-2~) \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-sphinx-design \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "78442b7f376f92162af5506d6dca191089d9a56b5226bce8481e167052540aed 2625 emscripten_3.1.69+dfsg-4.dsc 274d9ff5686f7e28fd00873fe04202f07fb8f5c950c978842f9e43c35d9baf03 5504 emscripten_3.1.69+dfsg.orig-Xtypes.tar.xz 394804c47d38ca3f1fa37b0b12beba60c2b03e6d7d3140a4e658b6dc6fee4481 19363704 emscripten_3.1.69+dfsg.orig.tar.xz 849040ea912efab10f8b677220086d589d6b033bdc425d03383e074fbb4932b2 84632 emscripten_3.1.69+dfsg-4.debian.tar.xz"
+    "d82e27dd6bd69f84472763df90e1658231f2e6583756a0dd8ce29386b9c1c7fa 3132 emscripten_6.0.1+dfsg+~1.41.5-3.dsc 966e06e614b2a065a3e0a01d1c65fc5a04a7d319d103fd5699e25bab0424860c 5844 emscripten_6.0.1+dfsg+~1.41.5.orig-Xtypes.tar.xz 1fd9fe1c43835589344ec4f41572e9a96a1f79e04346cf391da21c8bd634d963 21182556 emscripten_6.0.1+dfsg+~1.41.5.orig.tar.xz 3d155d100ab40dfe45fe440b199a8568a2298aed0b1b3c9d22d008c6e435c97c 54460 emscripten_6.0.1+dfsg+~1.41.5-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/emscripten"
   ],
   "Files": [
-    "804820a9da6af80c9cfbe19cbbdf616b 2625 emscripten_3.1.69+dfsg-4.dsc 0bd105977cbfdf748cde9df40c63d408 5504 emscripten_3.1.69+dfsg.orig-Xtypes.tar.xz 50e8e18bb13e220109be79282df84eb6 19363704 emscripten_3.1.69+dfsg.orig.tar.xz eb79a40d331044270b3c6e8739a34b70 84632 emscripten_3.1.69+dfsg-4.debian.tar.xz"
+    "cd7902ce146bae04e1c2cacedbf13e5f 3132 emscripten_6.0.1+dfsg+~1.41.5-3.dsc 5c5afb9942c1af75f002870457968bac 5844 emscripten_6.0.1+dfsg+~1.41.5.orig-Xtypes.tar.xz c2d511c7078a8e292448f83564180a63 21182556 emscripten_6.0.1+dfsg+~1.41.5.orig.tar.xz 1a66fea38277d28993eb64bcb93857a7 54460 emscripten_6.0.1+dfsg+~1.41.5-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/emscripten.git"
   ],
   "Version": [
-    "3.1.69+dfsg-4"
+    "6.0.1+dfsg+~1.41.5-3"
   ]
 }

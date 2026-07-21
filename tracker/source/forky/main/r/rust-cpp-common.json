@@ -6,19 +6,25 @@
     "librust-cpp-common-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-lazy-static-1+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "103060e633cda71dcc8471c951ddc7584f0872cfe6bfdd11e3c4728e8eacf438 2374 rust-cpp-common_0.5.9-1.dsc 3e1a2532e4ed4ea13031c13bc7bc0dbca4aae32df48e9d77f0d1e743179f2ea1 4725 rust-cpp-common_0.5.9.orig.tar.gz 6ee55b3e6605051adfcd53930576faed1dca825eb0ac3db74a45011259a236a0 2680 rust-cpp-common_0.5.9-1.debian.tar.xz"
+    "15c0dd9924a404715621466a5f01babc53aa7c6ef48cd0455dda2b5bc1e10485 2393 rust-cpp-common_0.5.11-1.dsc f7280a73ef92e18d27d2ec3005b57fe0043b51d1b506be86b0bf66f588f9857b 5263 rust-cpp-common_0.5.11.orig.tar.gz c407786921f231dfe57c29116cd3316f51673dd70ba7a6b6c29b79bfbf32adfd 2808 rust-cpp-common_0.5.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cpp-common"
   ],
   "Files": [
-    "106a4a1cf92f140ef086a6b8e143b4b2 2374 rust-cpp-common_0.5.9-1.dsc 69a53ffc38559d273df02cd60ce5f9bb 4725 rust-cpp-common_0.5.9.orig.tar.gz a0ff49d3f5b15442d8690557dac77374 2680 rust-cpp-common_0.5.9-1.debian.tar.xz"
+    "615c8f7f79dcc989a4882d8cb6273836 2393 rust-cpp-common_0.5.11-1.dsc 03aef353726ae1d5de14f756dcaade93 5263 rust-cpp-common_0.5.11.orig.tar.gz 7aa1f8eed7dfb6672f86d6bae0635e98 2808 rust-cpp-common_0.5.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mystor/rust-cpp"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cpp-common]"
   ],
   "Version": [
-    "0.5.9-1"
+    "0.5.11-1"
   ]
 }

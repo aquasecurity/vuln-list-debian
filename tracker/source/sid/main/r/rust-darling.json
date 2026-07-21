@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-darling-dev, librust-darling+diagnostics-dev, librust-darling+suggestions-dev"
+    "librust-darling-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-darling-core-0.20.10+default-dev \u003c!nocheck\u003e, librust-darling-core-0.20.10+suggestions-dev \u003c!nocheck\u003e, librust-darling-macro-0.20.10+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-darling-core-0.23+default-dev (\u003c\u003c 0.23.1) \u003c!nocheck\u003e, librust-darling-core-0.23+suggestions-dev (\u003c\u003c 0.23.1) \u003c!nocheck\u003e, librust-darling-macro-0.23+default-dev (\u003c\u003c 0.23.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "00efe89d237a1ae77906fd3309101c67a7723fa3cca1a40329cf57168fa7fb02 2129 rust-darling_0.20.10-1.dsc 6f63b86c8a8826a49b8c21f08a2d07338eec8d900540f8630dc76284be802989 32031 rust-darling_0.20.10.orig.tar.gz 87780f25ca67b1408db5d825c810dcbfb5af549d4948361e8d18c4b5d723cec3 3176 rust-darling_0.20.10-1.debian.tar.xz"
+    "c1164d5cf1827258994e518b02e39f01635422aa21d1db8150ec9244328194f7 2551 rust-darling_0.23.0-1.dsc 25ae13da2f202d56bd7f91c25fba009e7717a1e4a1cc98a76d844b65ae912e9d 43298 rust-darling_0.23.0.orig.tar.gz e2ac52e63c3df8e3974ae4bb08924e71d0c4303625322dc8812170ac88125b24 3116 rust-darling_0.23.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-darling"
   ],
   "Files": [
-    "2d62e50638dc836f5d277774fa9348d7 2129 rust-darling_0.20.10-1.dsc 262b9632f6746310b13f3d605221570f 32031 rust-darling_0.20.10.orig.tar.gz 94efb9bcbf240240674aabe38203af4e 3176 rust-darling_0.20.10-1.debian.tar.xz"
+    "022c4e300adb09dd8f9616bbba3e92d5 2551 rust-darling_0.23.0-1.dsc e60d4c421669bb1bc08458af9dc210d2 43298 rust-darling_0.23.0.orig.tar.gz a916972426f8c7b9fe0330317f192eaf 3116 rust-darling_0.23.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/TedDriggs/darling"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-darling"
   ],
   "Package-List": [
-    "librust-darling+diagnostics-dev deb rust optional arch=any librust-darling+suggestions-dev deb rust optional arch=any librust-darling-dev deb rust optional arch=any"
+    "librust-darling-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-proc-macro2-1+default-dev, librust-quote-1+default-dev, librust-rustversion-1+default-dev, librust-syn-2+default-dev, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-proc-macro2-1+default-dev, librust-quote-1+default-dev, librust-rustversion-1+default-dev, librust-syn-2+default-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/darling]"
   ],
   "Version": [
-    "0.20.10-1"
+    "0.23.0-1"
   ]
 }

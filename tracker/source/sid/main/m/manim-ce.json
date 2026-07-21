@@ -6,22 +6,22 @@
     "python3-manim"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-sequence-single-binary, dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-audioop-lts, python3-av, python3-bs4, python3-cairo, python3-click, python3-cloup, python3-colour, python3-decorator, python3-hatchling, python3-isosurfaces, python3-manimpango, python3-mapbox-earcut, python3-moderngl, python3-moderngl-window, python3-networkx, python3-numpy, python3-pillow, python3-pydub, python3-pygments, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-rich, python3-scipy, python3-screeninfo, python3-skia-pathops, python3-srt, python3-svgelements, python3-tqdm, python3-typing-extensions, python3-watchdog, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, dvisvgm \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-all, python3-audioop-lts, python3-av, python3-bs4, python3-cairo, python3-click, python3-cloup, python3-colour, python3-decorator, python3-hatchling, python3-isosurfaces, python3-manimpango, python3-mapbox-earcut, python3-moderngl, python3-moderngl-window, python3-networkx, python3-numpy, python3-pillow, python3-pydub, python3-pygments, python3-pytest \u003c!nocheck\u003e, python3-rich, python3-scipy, python3-screeninfo, python3-skia-pathops, python3-srt, python3-svgelements, python3-tqdm, python3-typing-extensions, python3-watchdog, texlive-latex-extra \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b21427cd8e7f102f664232493a48eff0f6408cfe103a199d3b04dac92bebb5ee 3239 manim-ce_0.20.1-1.dsc ca3b23315174eaca063c3837812b506c6b01ea9d0177bcc4292a93b4491d9df0 6813159 manim-ce_0.20.1.orig.tar.gz 91f4f45e16564e5a528853725f857e8c01ee71f4aadccb1ab3d6f07f893e7ffd 2352 manim-ce_0.20.1-1.debian.tar.xz"
+    "2bf4052e003adcb1b35beca615e05ca21c154c947eec390b21abb6b398d4f9b5 3261 manim-ce_0.20.1-2.dsc ca3b23315174eaca063c3837812b506c6b01ea9d0177bcc4292a93b4491d9df0 6813159 manim-ce_0.20.1.orig.tar.gz 3ba781514afa829e97d6853c48edfe2082769586468323a3ef878f1917472940 3136 manim-ce_0.20.1-2.debian.tar.xz"
   ],
   "Description": [
-    "Animation engine for explanatory math videos Manim is used to create precise animations programmatically, as demonstrated in the videos of 3Blue1Brown. All animations are written as Python code and rendered with the manim CLI tool. . This is the Commmunity Edition of manim, which is a better maintained fork of Grant Sanderson's manim package. You will want this version unless you plan to re-render some old 3Blue1Brown Youtube videos from Grant's source code."
+    "Animation engine for explanatory math videos Manim is used to create precise animations programmatically, as demonstrated in the videos of 3Blue1Brown. All animations are written as Python code and rendered with the manim CLI tool. . This is the Community Edition of manim, which is a better maintained fork of Grant Sanderson's manim package. You will want this version unless you plan to re-render some old 3Blue1Brown Youtube videos from Grant's source code."
   ],
   "Dgit": [
-    "e494219e5579cee8291a83a89147692a1ff70105 debian archive/debian/0.20.1-1 https://git.dgit.debian.org/manim-ce"
+    "2b932c9e02e355fd465082ba0ea218000087fbaa debian archive/debian/0.20.1-2 https://git.dgit.debian.org/manim-ce"
   ],
   "Directory": [
     "pool/main/m/manim-ce"
   ],
   "Files": [
-    "afb0edfd0a20f7fc9a0cf1bdd370118a 3239 manim-ce_0.20.1-1.dsc 090c36fae9d627f89f3355c5fea57b46 6813159 manim-ce_0.20.1.orig.tar.gz 903dc569e0602acab3abe7e2ddae1d2d 2352 manim-ce_0.20.1-1.debian.tar.xz"
+    "e9a5e6a76a98723025511eca3657c0b2 3261 manim-ce_0.20.1-2.dsc 090c36fae9d627f89f3355c5fea57b46 6813159 manim-ce_0.20.1.orig.tar.gz 5bcb5939c085470f13033506b751f209 3136 manim-ce_0.20.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,9 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Timo Röhling \u003croehling@debian.org\u003e"
   ],
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/manim-ce.git"
   ],
   "Version": [
-    "0.20.1-1"
+    "0.20.1-2"
   ]
 }
