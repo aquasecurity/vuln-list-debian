@@ -6,16 +6,19 @@
     "librust-munge-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-munge-macro-0.4.1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-munge-macro-0.4-dev (\u003c\u003c 0.4.8) \u003c!nocheck\u003e, librust-munge-macro-0.4-dev (\u003e= 0.4.7) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "08e8dd2e5e2bc187f76d5ef44362bf8aa254f23169879f2ea04cb4fc2f926910 1621 rust-munge_0.4.1-1.dsc 64142d38c84badf60abf06ff9bd80ad2174306a5b11bd4706535090a30a419df 9483 rust-munge_0.4.1.orig.tar.gz 77420799594df30211cbe03ee582ad1fdeaab74bc16990f76dd1053de45d4e49 2492 rust-munge_0.4.1-1.debian.tar.xz"
+    "9dee35dc98a9660653e9a8683cdc0b88d6a5d9aabc01e1a343385b4538086125 2317 rust-munge_0.4.7-1.dsc 5e17401f259eba956ca16491461b6e8f72913a0a114e39736ce404410f915a0c 12463 rust-munge_0.4.7.orig.tar.gz 0b60da4b2ae15580445099b0fe6a856d49b545e32425f98d6b466832be062a9c 2688 rust-munge_0.4.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-munge"
   ],
   "Files": [
-    "f77eb816afbba5fdb5de6bc4bda75601 1621 rust-munge_0.4.1-1.dsc 2707736a66651cf3db5e992e0bfa6514 9483 rust-munge_0.4.1.orig.tar.gz ae0405dc09f2ebc3e455d9cfb47432e7 2492 rust-munge_0.4.1-1.debian.tar.xz"
+    "1ed8ad07a5559d7fe853bd15fed2de59 2317 rust-munge_0.4.7-1.dsc 9372ed94ea54ea2c9249132d04f91114 12463 rust-munge_0.4.7.orig.tar.gz 0620c26f7dc349666f9d4c38bb5e0f50 2688 rust-munge_0.4.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/munge]"
   ],
   "Version": [
-    "0.4.1-1"
+    "0.4.7-1"
   ]
 }

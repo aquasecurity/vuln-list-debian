@@ -6,19 +6,25 @@
     "librust-dsa-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev \u003c!nocheck\u003e, librust-num-bigint-dig-0.8+prime-dev \u003c!nocheck\u003e, librust-num-bigint-dig-0.8+rand-dev \u003c!nocheck\u003e, librust-num-bigint-dig-0.8+zeroize-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e, librust-pkcs8-0.10+alloc-dev \u003c!nocheck\u003e, librust-rfc6979-0.4+default-dev \u003c!nocheck\u003e, librust-sha2-0.10-dev \u003c!nocheck\u003e, librust-signature-2+alloc-dev \u003c!nocheck\u003e, librust-signature-2+digest-dev \u003c!nocheck\u003e, librust-signature-2+rand-core-dev \u003c!nocheck\u003e, librust-zeroize-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crypto-bigint-0.7+alloc-dev \u003c!nocheck\u003e, librust-crypto-bigint-0.7+zeroize-dev \u003c!nocheck\u003e, librust-crypto-common-0.2+rand-core-dev \u003c!nocheck\u003e, librust-crypto-primes-0.7-dev \u003c!nocheck\u003e, librust-der-0.8+alloc-dev \u003c!nocheck\u003e, librust-der-0.8+default-dev \u003c!nocheck\u003e, librust-digest-0.11+default-dev \u003c!nocheck\u003e, librust-pkcs8-0.11+alloc-dev \u003c!nocheck\u003e, librust-rfc6979-0.6+default-dev \u003c!nocheck\u003e, librust-sha2-0.11-dev \u003c!nocheck\u003e, librust-signature-3+alloc-dev \u003c!nocheck\u003e, librust-signature-3+digest-dev \u003c!nocheck\u003e, librust-signature-3+rand-core-dev \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c7524507c5a86ff680ef26012b20a86ddc9de009f91f2a29102a7c9f2cf6666 2213 rust-dsa_0.6.3-1.dsc 48bc224a9084ad760195584ce5abb3c2c34a225fa312a128ad245a6b412b7689 25991 rust-dsa_0.6.3.orig.tar.gz d242277e78ef03e41efaeafe2bb079114257890ed524f883f7bd24ec5079dcf9 3076 rust-dsa_0.6.3-1.debian.tar.xz"
+    "a59e47a13f7e672738d84fb263969185aee0439e914cd0cb610c37a4bcfa24d2 3183 rust-dsa_0.7.0-1.dsc 5c8573b60d07b5b5cecadc1f978c9b71d5504151e703cbb0439ee4ad301338f3 33476 rust-dsa_0.7.0.orig.tar.gz c076c45d99a4604e268e45217511e9f02fbb24638b0607a0d8d4744e7587c4cf 3080 rust-dsa_0.7.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dsa"
   ],
   "Files": [
-    "235841466de28861e238c400dfd27c96 2213 rust-dsa_0.6.3-1.dsc 936bd210bd99bf7b4a9ad09a68b1c0ac 25991 rust-dsa_0.6.3.orig.tar.gz 48906617652c1179704fc67dea20ebcd 3076 rust-dsa_0.6.3-1.debian.tar.xz"
+    "4c304cbfcd475b7a8b9d5c52d6174efd 3183 rust-dsa_0.7.0-1.dsc 3b049d0015dea5c8cd39892ada07cb51 33476 rust-dsa_0.7.0.orig.tar.gz 2ea56c3b17c4f61a116a5a86428e5448 3080 rust-dsa_0.7.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/signatures/tree/master/dsa"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-pkcs8-0.10+pem-dev, librust-rand-0.8+default-dev, librust-rand-chacha-0.3+default-dev, librust-sha1-0.10+default-dev"
+    "dh-cargo, librust-chacha20-0.10+default-dev, librust-chacha20-0.10+rng-dev, librust-der-0.8+default-dev, librust-der-0.8+derive-dev, librust-getrandom-0.4+default-dev, librust-getrandom-0.4+sys-rng-dev, librust-hex-0.4+default-dev, librust-hex-literal-1+default-dev, librust-pkcs8-0.11+pem-dev, librust-proptest-1+default-dev, librust-rand-core-0.10+default-dev, librust-sha1-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dsa]"
   ],
   "Version": [
-    "0.6.3-1"
+    "0.7.0-1"
   ]
 }
