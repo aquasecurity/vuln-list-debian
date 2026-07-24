@@ -6,19 +6,25 @@
     "librust-serde-ignored-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.36) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev (\u003e= 1.0.194-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1-dev (\u003e= 1.0.220) \u003c!nocheck\u003e, librust-serde-core-1+alloc-dev (\u003e= 1.0.220) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "47c084d0eb3bbcc3e623fc5f599e83feb22f9c2f101488dfb9958bff94936b4b 2367 rust-serde-ignored_0.1.10-1.dsc a8e319a36d1b52126a0d608f24e93b2d81297091818cd70625fcf50a15d84ddf 11789 rust-serde-ignored_0.1.10.orig.tar.gz 5293254560a8f759014f40c3d554a5740a835d7db08eff912b795fb9963ec73c 2712 rust-serde-ignored_0.1.10-1.debian.tar.xz"
+    "6f74a6b91522c32304fead87f059ba764f02ba8bb679498bf08a50222482557e 2467 rust-serde-ignored_0.1.14-1.dsc 115dffd5f3853e06e746965a20dcbae6ee747ae30b543d91b0e089668bb07798 13078 rust-serde-ignored_0.1.14.orig.tar.gz 7f3041ada9771b98f0b81d70a20552f7c9dabed98d82376f6d90a3bdbb9f3546 2940 rust-serde-ignored_0.1.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-ignored"
   ],
   "Files": [
-    "c7232491a40102454400a875a1af4c78 2367 rust-serde-ignored_0.1.10-1.dsc 597586743b4769a8f6c169803ad3bb2a 11789 rust-serde-ignored_0.1.10.orig.tar.gz 846cea8fc20a75e83e85ca3a2f7cab0c 2712 rust-serde-ignored_0.1.10-1.debian.tar.xz"
+    "4d371fd192f5a06473aba84258bd0e63 2467 rust-serde-ignored_0.1.14-1.dsc 82600f69c4d3a3f1d0f324403ee34530 13078 rust-serde-ignored_0.1.14.orig.tar.gz ace8b88a2358b44b1df3e0188f77557a 2940 rust-serde-ignored_0.1.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/serde-ignored"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-ignored]"
   ],
   "Version": [
-    "0.1.10-1"
+    "0.1.14-1"
   ]
 }

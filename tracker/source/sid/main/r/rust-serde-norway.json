@@ -6,19 +6,25 @@
     "librust-serde-norway-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.2.1-~~) \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-ryu-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.203-~~) \u003c!nocheck\u003e, librust-unsafe-libyaml-0.2+default-dev (\u003e= 0.2.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indexmap-2+default-dev (\u003e= 2.2.1) \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-ryu-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.203) \u003c!nocheck\u003e, librust-unsafe-libyaml-0.2+default-dev (\u003e= 0.2.11) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3a7f47554a96e742556a4bced20a9a47f6c4f7237eb4ae8236fe20ea861f35cc 2412 rust-serde-norway_0.9.38-1.dsc 46ed7109f6112481319ad20539e5c4411125c0e8133502a35dc0f80d19d9beb5 69181 rust-serde-norway_0.9.38.orig.tar.gz 02269fb3cf4e141ed7b400bc6938c4b12d9134cc21cf6b21787ccdbdc6ba78a4 2596 rust-serde-norway_0.9.38-1.debian.tar.xz"
+    "b89e540341203697942c396373690ee49ef3cb50f7b938fb43a09a015ed85e2d 2603 rust-serde-norway_0.9.42-1.dsc e408f29489b5fd500fab51ff1484fc859bb655f32c671f307dcd733b72e8168c 68918 rust-serde-norway_0.9.42.orig.tar.gz ba83daf7f151a5f75f92cd17ab53f68cabb7e07662385cbb58a2394c2029d59e 3428 rust-serde-norway_0.9.42-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-norway"
   ],
   "Files": [
-    "0809c9abcaa7d4ec4999dce3f3a51af7 2412 rust-serde-norway_0.9.38-1.dsc f612d5ae72705c5c0172b7eec89f8e5e 69181 rust-serde-norway_0.9.38.orig.tar.gz 353c47b45929134682c687ff2ad9d396 2596 rust-serde-norway_0.9.38-1.debian.tar.xz"
+    "82f21e934dd3d04159211a800738774c 2603 rust-serde-norway_0.9.42-1.dsc a8aa0646a20c60ca47395912c1e05058 68918 rust-serde-norway_0.9.42.orig.tar.gz 482e1be1a2f73ed4f82489e1738d29dd 3428 rust-serde-norway_0.9.42-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cafkafk/serde-yaml"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-anyhow-1+default-dev, librust-indoc-2+default-dev, librust-serde-derive-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-norway]"
   ],
   "Version": [
-    "0.9.38-1"
+    "0.9.42-1"
   ]
 }
