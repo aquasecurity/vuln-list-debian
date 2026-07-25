@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-crossbeam-epoch-dev, librust-crossbeam-epoch+std-dev"
+    "librust-crossbeam-epoch-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+std-dev (\u003e= 0.8.18-~~) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.18-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+std-dev (\u003e= 0.8.18) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "365bc4430a131312622f6d9f5f710adab4f0a17f7be25b028c8f940b0c71a683 2572 rust-crossbeam-epoch_0.9.18-1.dsc 5b82ac4a3c2ca9c3460964f020e1402edd5753411d7737aa39c3714ad1b5420e 46875 rust-crossbeam-epoch_0.9.18.orig.tar.gz 902ce9b320f42becde540305d616c17734fa6cd8d02f8e3fc045866ad08fba83 5336 rust-crossbeam-epoch_0.9.18-1.debian.tar.xz"
+    "f9a74b007765c635b4ed79855b89a063b3d2441c34c73b6699e92988f567c84c 2476 rust-crossbeam-epoch_0.9.20-1.dsc 2d6914041f254d6e9176c01941b21115dcfb7089e55135a35411081bd106ef3f 47545 rust-crossbeam-epoch_0.9.20.orig.tar.gz cacff335ea7d5f2f40afdce07bcab0f1720794f72bb75d5b7b4642bb67abc24b 5516 rust-crossbeam-epoch_0.9.20-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-crossbeam-epoch"
   ],
   "Files": [
-    "6bcfc48beb27a9a5a5321c7930b77260 2572 rust-crossbeam-epoch_0.9.18-1.dsc 44505199ec0964feb5488051b4ac92d5 46875 rust-crossbeam-epoch_0.9.18.orig.tar.gz 874a10902689697891dacc1c1761dedc 5336 rust-crossbeam-epoch_0.9.18-1.debian.tar.xz"
+    "a21e6d100d1a8c29c33516f1a96d4952 2476 rust-crossbeam-epoch_0.9.20-1.dsc 581342f2bc70d2c3604d6048b3e76c63 47545 rust-crossbeam-epoch_0.9.20.orig.tar.gz 5b23485220b77856fa4c4d9a566d4021 5516 rust-crossbeam-epoch_0.9.20-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-crossbeam-epoch"
   ],
   "Package-List": [
-    "librust-crossbeam-epoch+std-dev deb rust optional arch=any librust-crossbeam-epoch-dev deb rust optional arch=any"
+    "librust-crossbeam-epoch-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/crossbeam-epoch]"
   ],
   "Version": [
-    "0.9.18-1"
+    "0.9.20-1"
   ]
 }
