@@ -6,16 +6,19 @@
     "librust-deflate64-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0dfb0fcfd4b1ccbf664ea827c9e97408d870e469a491d83e1036f00ad9cdd3ff 2431 rust-deflate64_0.1.8-1.dsc 83ace6c86376be0b6cdcf3fb41882e81d94b31587573d1cfa9d01cd06bba210d 15000 rust-deflate64_0.1.8.orig.tar.gz 03fff4819c6986dda6793e4341c8183319bf7d1dfbc53803de183b697ee36630 2588 rust-deflate64_0.1.8-1.debian.tar.xz"
+    "9de973a758e549aa7f62bb3c682f2f3a7c41e6403f3056f4e26c2ca6be1dec7b 2476 rust-deflate64_0.1.12-1.dsc ac6b926516df9c60bfa16e107b21086399f8285a44ca9711344b9e553c5146e2 28110 rust-deflate64_0.1.12.orig.tar.gz 0e3c39b51d9b81157089962d5c8ee7c7518724b0ab8055a4d6075ea0c3d1b5af 3000 rust-deflate64_0.1.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-deflate64"
   ],
   "Files": [
-    "44a8b8d09d9368cd69ecb3f23147b7d2 2431 rust-deflate64_0.1.8-1.dsc 5e22ff2fe96d4c1e93de3798d5088753 15000 rust-deflate64_0.1.8.orig.tar.gz 0c23c13eb0c27d919698130764146a32 2588 rust-deflate64_0.1.8-1.debian.tar.xz"
+    "a0a0285bbb349996cbfc478ac3e148a4 2476 rust-deflate64_0.1.12-1.dsc 2db64720213c8873a61d05f5d63e3978 28110 rust-deflate64_0.1.12.orig.tar.gz 3fb99f684b14b6065252e74c464ca8a7 3000 rust-deflate64_0.1.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-proptest-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-proptest-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/deflate64"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/deflate64]"
   ],
   "Version": [
-    "0.1.8-1"
+    "0.1.12-1"
   ]
 }
