@@ -6,19 +6,25 @@
     "librust-range-traits-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8b931cdf6cf9b88b0be028b64c69c025fefb3366a869722716b98096cd79f883 2153 rust-range-traits_0.3.2-1.dsc d20581732dd76fa913c7dff1a2412b714afe3573e94d41c34719de73337cc8ab 4937 rust-range-traits_0.3.2.orig.tar.gz 57c9c72036b1bc2a301f4987a3f47366eccae93b168d939f6165319cb0d6c767 2676 rust-range-traits_0.3.2-1.debian.tar.xz"
+    "29cf9af495376aa02b9d9a909f7eb5e9ea4559cf6f774909300a1caa39995c31 2247 rust-range-traits_0.3.2-2.dsc d20581732dd76fa913c7dff1a2412b714afe3573e94d41c34719de73337cc8ab 4937 rust-range-traits_0.3.2.orig.tar.gz b84a4087d0049bc1e593fed4ee99dfd5a080910f04cd44791def6f38e1ca8c1e 2992 rust-range-traits_0.3.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-range-traits"
   ],
   "Files": [
-    "c5c8c1192cf294095c2d20dbcc8145e6 2153 rust-range-traits_0.3.2-1.dsc 40dcb93517daa36803062e951a3668d1 4937 rust-range-traits_0.3.2.orig.tar.gz 431611fc398c4028c77ada1d6135294a 2676 rust-range-traits_0.3.2-1.debian.tar.xz"
+    "e0683b37e30c106f8ea75cf5dea2351a 2247 rust-range-traits_0.3.2-2.dsc 40dcb93517daa36803062e951a3668d1 4937 rust-range-traits_0.3.2.orig.tar.gz 553c4be2edf20b3f142dfd8149e1bbc4 2992 rust-range-traits_0.3.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/timothee-haudebourg/range-traits"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/range-traits]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.2-2"
   ]
 }
