@@ -6,22 +6,31 @@
     "python3-pybravia"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-hatchling"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp \u003c!nocheck\u003e"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1fe3aefe9ed736cd62bf90fd2d507055e5277712721ff306ef31b68a65911b6b 2071 pybravia_0.4.1-1.dsc 7de5abf20c797fb24eb4bf6d2480b01db6e7fcb3cb7e9ff477166e024519f0a3 93224 pybravia_0.4.1.orig.tar.gz 9b3d5e650a9c9d73ae3d61a702da3f7916510fc1a7ea9547f781f3859392c95a 2412 pybravia_0.4.1-1.debian.tar.xz"
+    "3e300125d8d4152e431420dcb2bfc18fe0351cf99832fec5ab6da17fedaaed9b 2523 pybravia_0.5.1-1.dsc ed567b118b4dab206a3405cf2326f2a9235fb29db47a9c975088ffff3217f481 78300 pybravia_0.5.1.orig.tar.xz 55d50ba69027eb6e65d7f0dbe905c8b49bdeceb775478d5069259ace65e5a15f 2576 pybravia_0.5.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "5ab266c43314d6af413d72b71732e01e91eb5401 debian archive/debian/0.5.1-1 https://git.dgit.debian.org/pybravia"
   ],
   "Directory": [
     "pool/main/p/pybravia"
   ],
   "Files": [
-    "00a7909c2151ee3f447d145b506f8f36 2071 pybravia_0.4.1-1.dsc e7c3f0bc8c90056d010db84540b52532 93224 pybravia_0.4.1.orig.tar.gz 9228e158f8aab016e6b81fc1551de098 2412 pybravia_0.4.1-1.debian.tar.xz"
+    "b9d2caf7c505a4249d8a71c6d44dadd9 2523 pybravia_0.5.1-1.dsc d5e9eddb506c6859f2c7464a3f3f127b 78300 pybravia_0.5.1.orig.tar.xz edddf42a712d20dec46b47d5ed7635fb 2576 pybravia_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=603d5357696814b49e1f11de10436d3fa604a93d fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/Drafteed/pybravia"
@@ -42,10 +51,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e,"
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/pybravia"
@@ -54,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/pybravia.git"
   ],
   "Version": [
-    "0.4.1-1"
+    "0.5.1-1"
   ]
 }

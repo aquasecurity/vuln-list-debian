@@ -6,19 +6,25 @@
     "librust-cssparser-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.29) \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "40a5fd88bb919fbfc2cb18bbf335015bb11db254f3f343d60f8140c3624f47d3 2369 rust-cssparser-macros_0.6.1-1.dsc 13b588ba4ac1a99f7f2964d24b3d896ddc6bf847ee3855dbd4366f058cfcd331 7914 rust-cssparser-macros_0.6.1.orig.tar.gz c7a3a605d0da94acb687f617888af35186445f0ff87c2911cef652f4d9b2e9c1 2332 rust-cssparser-macros_0.6.1-1.debian.tar.xz"
+    "277f1f55fab1842285e0609731049ffe4797be754fe566ca0d4b0edcfe1ad300 2434 rust-cssparser-macros_0.7.0-1.dsc 10a2a99df6e410a8ff4245aa2006499ea662245f967cc7c0a38c83ef8eb44dbf 8167 rust-cssparser-macros_0.7.0.orig.tar.gz 2fd99ba45b3f8565b3e60334484517b91b189f515d211f6b4039dd7f6f418e3c 2528 rust-cssparser-macros_0.7.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cssparser-macros"
   ],
   "Files": [
-    "e05bb2d2ce4bc10df5ea959d5946097d 2369 rust-cssparser-macros_0.6.1-1.dsc 1ef80eed9e451efa86bf09bb3fd44bc2 7914 rust-cssparser-macros_0.6.1.orig.tar.gz 973f007f59c6f23d6fec0acfee365fef 2332 rust-cssparser-macros_0.6.1-1.debian.tar.xz"
+    "5557f387a467ecdce1d0604afd8fff7f 2434 rust-cssparser-macros_0.7.0-1.dsc 4b8a51af17c932d3191e5a6a13447866 8167 rust-cssparser-macros_0.7.0.orig.tar.gz 0ecd36b3d72e8eb9dba517206eb8bb3d 2528 rust-cssparser-macros_0.7.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/rust-cssparser"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cssparser-macros]"
   ],
   "Version": [
-    "0.6.1-1"
+    "0.7.0-1"
   ]
 }

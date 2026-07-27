@@ -6,19 +6,25 @@
     "librust-ego-tree-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e47256393fbcd2fd822e0f9653470a1ad5685561aabe22029cbc7dae0f98febf 1767 rust-ego-tree_0.6.2-1.dsc 3a68a4904193147e0a8dec3314640e6db742afd5f6e634f428a6af230d9b3591 8962 rust-ego-tree_0.6.2.orig.tar.gz dbd7291a12a275a10bdfbfb4380a7006c428b91f34d365628f357a1baa0ed116 2352 rust-ego-tree_0.6.2-1.debian.tar.xz"
+    "c5202cdde90baa96446d4a23ce21128a1d01400a8d31a7337eca3388df400823 2268 rust-ego-tree_0.11.0-1.dsc b04dc5a38e4f151a79d9f2451ae6037fb6eaf5cba34771f44781f80e508498e3 19643 rust-ego-tree_0.11.0.orig.tar.gz 86779152503dfc206202c0e68dffaff299466dcbb166b7a8c01303c9e5753c68 2636 rust-ego-tree_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ego-tree"
   ],
   "Files": [
-    "c3027041201765c5d020e382cfd4733d 1767 rust-ego-tree_0.6.2-1.dsc ce12e413aeed3a8d66ada06fb9cfe90f 8962 rust-ego-tree_0.6.2.orig.tar.gz 9e8ba9be0be6a522af4fab6df941b52b 2352 rust-ego-tree_0.6.2-1.debian.tar.xz"
+    "2e98b69d2487ef88bdf1f00c235abbd1 2268 rust-ego-tree_0.11.0-1.dsc 5a83853de6fc70e62f8414d25150df46 19643 rust-ego-tree_0.11.0.orig.tar.gz 401d88618ec7bff7ccc52af474e33f0c 2636 rust-ego-tree_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-scraper/ego-tree"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-serde-1+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ego-tree]"
   ],
   "Version": [
-    "0.6.2-1"
+    "0.11.0-1"
   ]
 }

@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-servo-arc-dev, librust-servo-arc+serde-dev"
+    "librust-servo-arc-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-stable-deref-trait-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-stable-deref-trait-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8b7dad9095e0b7aaac9cdac7ed967732458974be10be20a12e3bbb1daf3ac10b 2277 rust-servo-arc_0.3.0-1.dsc d036d71a959e00c77a63538b90a6c2390969f9772b096ea837205c6bd0491a44 12738 rust-servo-arc_0.3.0.orig.tar.gz f9ac7a1e2ce8b67895a3c05d289edb17747afe484f9c13f4358e1876c6019b5c 3084 rust-servo-arc_0.3.0-1.debian.tar.xz"
+    "85af32363eab1ec703f65ebc511a509c7726ca375ae130b4904a4ee7c60f7b0b 2236 rust-servo-arc_0.4.3-1.dsc 170fb83ab34de17dc69aa7c67482b22218ddb85da56546f9bd6b929e32a05930 17887 rust-servo-arc_0.4.3.orig.tar.gz 64ba2e741a073f27e927272c17ca8414b79ad9d40bdd45d865edd236ea754911 3104 rust-servo-arc_0.4.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-servo-arc"
   ],
   "Files": [
-    "c20cea3af3db28bd62b96c634affbd9c 2277 rust-servo-arc_0.3.0-1.dsc 04868cb318f0b3ce90fad7b1e50b7c7c 12738 rust-servo-arc_0.3.0.orig.tar.gz ed3eebb24a60b4f455e4748222959c81 3084 rust-servo-arc_0.3.0-1.debian.tar.xz"
+    "bf68a636bfb8681cbdd34b1bd7691819 2236 rust-servo-arc_0.4.3-1.dsc 3319b38e24104bf2f61ae741a515175b 17887 rust-servo-arc_0.4.3.orig.tar.gz 82d07cd58136deb6f76f4440b1cad18b 3104 rust-servo-arc_0.4.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/stylo"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-servo-arc"
   ],
   "Package-List": [
-    "librust-servo-arc+serde-dev deb rust optional arch=any librust-servo-arc-dev deb rust optional arch=any"
+    "librust-servo-arc-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/servo-arc]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.4.3-1"
   ]
 }
