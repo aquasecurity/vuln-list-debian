@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-tracing-appender-dev, librust-tracing-appender+parking-lot-dev"
+    "librust-tracing-appender-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-channel-0.5+default-dev \u003c!nocheck\u003e, librust-time-0.3+formatting-dev \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+fmt-dev \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-channel-0.5+default-dev (\u003e= 0.5.6) \u003c!nocheck\u003e, librust-symlink-0.1+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-time-0.3+formatting-dev (\u003e= 0.3.2) \u003c!nocheck\u003e, librust-time-0.3+parsing-dev (\u003e= 0.3.2) \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+fmt-dev (\u003e= 0.3.18) \u003c!nocheck\u003e, librust-tracing-subscriber-0.3+std-dev (\u003e= 0.3.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "efafe153f0e61306f6c24306a8326da9d1ce5bdca5e5eab919df0ddcaa61a5e3 2324 rust-tracing-appender_0.2.2-1.dsc 09d48f71a791638519505cefafe162606f706c25592e4bde4d97600c0195312e 17208 rust-tracing-appender_0.2.2.orig.tar.gz c7ad8884decab9a760f253148129b86cec241bc8d27a149a3a6e44e139718f37 2856 rust-tracing-appender_0.2.2-1.debian.tar.xz"
+    "e5cabfe247c134d9be6c8c0ddff22f43ba4975fa5318d560dd05785c4b1551b7 2725 rust-tracing-appender_0.2.5-1.dsc 050686193eb999b4bb3bc2acfa891a13da00f79734704c4b8b4ef1a10b368a3c 30794 rust-tracing-appender_0.2.5.orig.tar.gz 801d1272284f9e7298688140d324cb33219becd5d60150dffc8f24c113d94313 3156 rust-tracing-appender_0.2.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tracing-appender"
   ],
   "Files": [
-    "61148f01f0be4ae6e10f15bed3f183ba 2324 rust-tracing-appender_0.2.2-1.dsc 9014f820a12e8d071a961a17f1922cf2 17208 rust-tracing-appender_0.2.2.orig.tar.gz f9523614aa295e2334776c68cf235ea7 2856 rust-tracing-appender_0.2.2-1.debian.tar.xz"
+    "8140717d6cb39273437d2358c8cb5c8d 2725 rust-tracing-appender_0.2.5-1.dsc 9150859d5609e6b2d3567ba9dc7c0254 30794 rust-tracing-appender_0.2.5.orig.tar.gz 254bb74de9a74ea73a450c6b12a15879 3156 rust-tracing-appender_0.2.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-tracing-appender"
   ],
   "Package-List": [
-    "librust-tracing-appender+parking-lot-dev deb rust optional arch=any librust-tracing-appender-dev deb rust optional arch=any"
+    "librust-tracing-appender-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev, librust-time-0.3+formatting-dev, librust-time-0.3+parsing-dev, librust-tracing-0.1+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, librust-tracing-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tracing-appender]"
   ],
   "Version": [
-    "0.2.2-1"
+    "0.2.5-1"
   ]
 }
