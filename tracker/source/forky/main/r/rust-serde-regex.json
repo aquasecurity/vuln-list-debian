@@ -6,16 +6,19 @@
     "librust-serde-regex-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev (\u003e= 1.5.5) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "926cd45a06b51ecaea537fcc1041596022259e76b4a72bd878e1618fcbcc74e6 1757 rust-serde-regex_1.1.0-1.dsc a8136f1a4ea815d7eac4101cfd0b16dc0cb5e1fe1b8609dfd728058656b7badf 9710 rust-serde-regex_1.1.0.orig.tar.gz c51cce52f8c3fd9c67f065e0c392a82045c709f9e63ae858053e8cba2117e786 2608 rust-serde-regex_1.1.0-1.debian.tar.xz"
+    "e371690c5147d24eed9ab59b1e82f4b9f5cc2bbd0e3bd4e64a3b6593a6f05a74 2396 rust-serde-regex_1.2.0-1.dsc bafc8d0c5330cecff10f16b459b479fd9acaa5b4acd7167301414e21b0057012 11203 rust-serde-regex_1.2.0.orig.tar.gz fe50804d642e6d8680eab1f54c66d091f04075f1ff84687d804991765f6bf841 2836 rust-serde-regex_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-regex"
   ],
   "Files": [
-    "efa5c984424c560c7b3b27d8ac886f5f 1757 rust-serde-regex_1.1.0-1.dsc 155ad50cf49cebeeb1499397ac48de58 9710 rust-serde-regex_1.1.0.orig.tar.gz 0d28b1cd224b3acaa91ab5f738a63c60 2608 rust-serde-regex_1.1.0-1.debian.tar.xz"
+    "51bb9190626366aeead70bb290ec64d6 2396 rust-serde-regex_1.2.0-1.dsc 231b13bd1be7e3f77fe28b6733bb79ee 11203 rust-serde-regex_1.2.0.orig.tar.gz bb408d5bde7262d01b6a5284db07bda9 2836 rust-serde-regex_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/serde-regex"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-regex]"
   ],
   "Version": [
-    "1.1.0-1"
+    "1.2.0-1"
   ]
 }
