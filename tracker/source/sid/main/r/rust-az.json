@@ -6,19 +6,25 @@
     "librust-az-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a0696dd2eeda411024f5779b4e2715a2707cbf8817d00ad49e195f9e376f6ee1 2051 rust-az_1.2.1-1.dsc 7b7e4c2464d97fe331d41de9d5db0def0a96f4d823b8b32a2efd503578988973 27842 rust-az_1.2.1.orig.tar.gz 573d2312129032f20f4cfaf9374b34f3eee9b5cc52532a43ee0238e00c8d763e 2716 rust-az_1.2.1-1.debian.tar.xz"
+    "ce0396acd304c1517eba42f346702d904150fc8935810650d8d0c7a3b36340f8 2136 rust-az_1.3.0-1.dsc be5eb007b7cacc6c660343e96f650fedf4b5a77512399eb952ca6642cf8d13f7 29334 rust-az_1.3.0.orig.tar.gz 00215c95ebc3941f448f3d3885e7301fdc91c6d106fa48568a1ecd7e63135a72 2996 rust-az_1.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-az"
   ],
   "Files": [
-    "4a8693c3c29b93fdd3334d47810273bb 2051 rust-az_1.2.1-1.dsc a5835e403734b7b881048fc30a254454 27842 rust-az_1.2.1.orig.tar.gz 629cadf56a257c9583f37ba6248c1c2d 2716 rust-az_1.2.1-1.debian.tar.xz"
+    "476df2b256bc9c1a2b106b6d8233dad4 2136 rust-az_1.3.0-1.dsc 55723059006c95327410a467ac1576a0 29334 rust-az_1.3.0.orig.tar.gz d559eb259a58f730af12c3fb024c8646 2996 rust-az_1.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gitlab.com/tspiteri/az"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/az]"
   ],
   "Version": [
-    "1.2.1-1"
+    "1.3.0-1"
   ]
 }
