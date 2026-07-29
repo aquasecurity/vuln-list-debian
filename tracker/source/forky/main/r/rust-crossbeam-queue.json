@@ -6,16 +6,19 @@
     "librust-crossbeam-queue-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+std-dev (\u003e= 0.8.18-~~) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.18-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8+std-dev (\u003e= 0.8.18) \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "554d1ba27a7fec605c401bf56dd68bf1d993f9ce4bed4f4f9d609b52c322f4cf 2524 rust-crossbeam-queue_0.3.11-1.dsc df0346b5d5e76ac2fe4e327c5fd1118d6be7c51dfb18f9b7922923f287471e35 15581 rust-crossbeam-queue_0.3.11.orig.tar.gz 73f89f263f779728e973b32b75d97038d18fc87de664ea9c862e8f79ab883834 3776 rust-crossbeam-queue_0.3.11-1.debian.tar.xz"
+    "9db91a5ae57a96e0a0a4f6794628d245cd5e7f6a47213a39d80465617e0f1c11 2521 rust-crossbeam-queue_0.3.13-1.dsc 803d13fb3b09d88be9f4dbc29062c66b19bf7170867ceb746d2a8689bf6c7a26 18407 rust-crossbeam-queue_0.3.13.orig.tar.gz ca5fd1a89427d534033ad5fbaa1b01d5bd33f108131fe7675370f899d47bce6c 3924 rust-crossbeam-queue_0.3.13-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-crossbeam-queue"
   ],
   "Files": [
-    "1f8eadd8dd4aae92e59d69cc0fb829f4 2524 rust-crossbeam-queue_0.3.11-1.dsc 8479d87e6c3e396334e8701475e085bf 15581 rust-crossbeam-queue_0.3.11.orig.tar.gz 5dec58b8765f27f18580dab0b1b9c313 3776 rust-crossbeam-queue_0.3.11-1.debian.tar.xz"
+    "71d9fad7e9e1dd2069e08e40eec1f412 2521 rust-crossbeam-queue_0.3.13-1.dsc 110ba7e848e9709273b5880e91eaa33f 18407 rust-crossbeam-queue_0.3.13.orig.tar.gz de42dc77960ff9231ad47bbd67f3e537 3924 rust-crossbeam-queue_0.3.13-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e, Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/crossbeam-queue]"
   ],
   "Version": [
-    "0.3.11-1"
+    "0.3.13-1"
   ]
 }

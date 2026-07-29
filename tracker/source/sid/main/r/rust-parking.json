@@ -6,16 +6,19 @@
     "librust-parking-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ef6bfe6efb28dd634bef7282c0b1a828d015ccf57457b56a02e460380e66d786 2227 rust-parking_2.2.0-1.dsc bb813b8af86854136c6922af0598d719255ecb2179515e6e7730d468f05c9cae 9730 rust-parking_2.2.0.orig.tar.gz 4f45cefbbddf4472d7408af3ea782ba7672c9298815aa9ced89b192cb8b79235 2856 rust-parking_2.2.0-1.debian.tar.xz"
+    "5891653f913f58f7154c7db011046340a41b420f795731e7a3b19ce2fcd12bfe 2233 rust-parking_2.2.1-1.dsc f38d5652c16fde515bb1ecef450ab0f6a219d619a7274976324d5e377f7dceba 10685 rust-parking_2.2.1.orig.tar.gz 1e27e46bd9d0f319ebeece1e941405c0c46e0c9fd2d030ca915e640016a61460 2996 rust-parking_2.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-parking"
   ],
   "Files": [
-    "d6aaaf2e5f5729859ff6bff3b79590e1 2227 rust-parking_2.2.0-1.dsc 1c81a692573ebbe22b81c1107d0ab518 9730 rust-parking_2.2.0.orig.tar.gz 2942038f2dbd63bf074f05b4ca748c69 2856 rust-parking_2.2.0-1.debian.tar.xz"
+    "1f06457e6dbe5c02a029319941b44bb7 2233 rust-parking_2.2.1-1.dsc c98fa41bae9a9421fcf24801356ef5a8 10685 rust-parking_2.2.1.orig.tar.gz 493696ac630b9915f9cf8b054722526d 2996 rust-parking_2.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-easy-parallel-3+default-dev"
+    "dh-cargo, librust-easy-parallel-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/parking]"
   ],
   "Version": [
-    "2.2.0-1"
+    "2.2.1-1"
   ]
 }
