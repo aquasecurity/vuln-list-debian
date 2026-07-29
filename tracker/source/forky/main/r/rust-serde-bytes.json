@@ -6,19 +6,25 @@
     "librust-serde-bytes-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+std-dev (\u003e= 1.0.166-~~) \u003c!nocheck\u003e, librust-serde-1-dev (\u003e= 1.0.166-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1-dev (\u003e= 1.0.220) \u003c!nocheck\u003e, librust-serde-core-1+std-dev (\u003e= 1.0.220) \u003c!nocheck\u003e, librust-serde-core-1-dev (\u003e= 1.0.220) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a6e965bfa73aa67efad231f45dbe63b5063a045954d2e4ef6654e6f69208ae76 2401 rust-serde-bytes_0.11.12-1.dsc ab33ec92f677585af6d88c65593ae2375adde54efdbf16d597f2cbc7a6d368ff 10910 rust-serde-bytes_0.11.12.orig.tar.gz f44994c697e39ba6a5ab403a7f5123ca68dc61cd32989fce29d32bd05c61b95e 3384 rust-serde-bytes_0.11.12-1.debian.tar.xz"
+    "1124d1bca276434630e521c4cfa1494aaae3e9484d9f19beb686933e7e1ae00f 2536 rust-serde-bytes_0.11.19-1.dsc a5d440709e79d88e51ac01c4b72fc6cb7314017bb7da9eeff678aa94c10e3ea8 13427 rust-serde-bytes_0.11.19.orig.tar.gz 0d4ed8777090df95085e5a9d17409d4f23c638a8d052b279477327b1abb452dd 4316 rust-serde-bytes_0.11.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-bytes"
   ],
   "Files": [
-    "dea25c4b2389c5046c64e80cbd259fcb 2401 rust-serde-bytes_0.11.12-1.dsc f911110c5ab6f9331ad77fb2388c5f7b 10910 rust-serde-bytes_0.11.12.orig.tar.gz b80a943de1dab1006547d5fffd71bd42 3384 rust-serde-bytes_0.11.12-1.debian.tar.xz"
+    "8c65fb029f5f403fbe28b0590631072d 2536 rust-serde-bytes_0.11.19-1.dsc 06d60ccc831bdf352572712f7fc0e190 13427 rust-serde-bytes_0.11.19.orig.tar.gz e9347dd571c35c50698b439093657860 4316 rust-serde-bytes_0.11.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/serde-rs/bytes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-bincode-1+default-dev, librust-serde-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-bytes]"
   ],
   "Version": [
-    "0.11.12-1"
+    "0.11.19-1"
   ]
 }
