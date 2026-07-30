@@ -6,19 +6,25 @@
     "librust-prost-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1-dev \u003c!nocheck\u003e, librust-prost-derive-0.12+default-dev (\u003e= 0.12.6-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1-dev \u003c!nocheck\u003e, librust-prost-derive-0.14+default-dev (\u003e= 0.14.4) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b3e1bf1403fe3248568591381bb632d8a665439b8f83ad8f406474885f24ec0c 2310 rust-prost_0.12.6-1.dsc deb1435c188b76130da55f17a466d252ff7b1418b2ad3e037d127b94e3411f29 21552 rust-prost_0.12.6.orig.tar.gz 404071b05565302e1a181f8d758e568967be22d982345f17d935346d169d9cd8 2624 rust-prost_0.12.6-1.debian.tar.xz"
+    "ec11f9b1a8bdf922d6012aed2608df702e617cdcad7e0bf2bf160973e8463787 1723 rust-prost_0.14.4-1.dsc 528ac67416ff8646872a3c02cad9cc4ee5dc9f9540c9b10771855c95cb2e5ae1 35717 rust-prost_0.14.4.orig.tar.gz 8b71139629c07fa9562c7a34c0ee398aa986cc9a3ba00518a9581d4b85bdfa1a 3128 rust-prost_0.14.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-prost"
   ],
   "Files": [
-    "513bb8635b76037e03e0e2fde82e2811 2310 rust-prost_0.12.6-1.dsc d324a29dfb61a9718fe386aecb926009 21552 rust-prost_0.12.6.orig.tar.gz 6a496a1f613e0714348f485f2ab99da6 2624 rust-prost_0.12.6-1.debian.tar.xz"
+    "b8943224b6ebafe331b92f0f93a41c2a 1723 rust-prost_0.14.4-1.dsc cd26baf35ac0e0c5e71c6596b71bd763 35717 rust-prost_0.14.4.orig.tar.gz ec95fd45ddabd1ca27cb7d71ff507607 3128 rust-prost_0.14.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tokio-rs/prost"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5-dev, librust-proptest-1+default-dev, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-proptest-1+default-dev, librust-rand-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/prost]"
   ],
   "Version": [
-    "0.12.6-1"
+    "0.14.4-1"
   ]
 }
