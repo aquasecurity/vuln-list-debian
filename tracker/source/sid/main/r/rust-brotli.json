@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native, rustc:native (\u003e= 1.59.0), libstd-rust-dev, librust-alloc-no-stdlib-2+default-dev, librust-alloc-stdlib-0.2+default-dev, librust-brotli-decompressor-5+std-dev (\u003c\u003c 5.1-~~), librust-brotli-decompressor-5-dev (\u003c\u003c 5.1-~~)"
+    "cargo:native, rustc:native (\u003e= 1.59.0), libstd-rust-dev, librust-alloc-no-stdlib-2+default-dev (\u003e= 2.0.4), librust-alloc-stdlib-0.2+default-dev, librust-brotli-decompressor-5+std-dev (\u003c\u003c 5.1), librust-brotli-decompressor-5-dev (\u003c\u003c 5.1)"
   ],
   "Checksums-Sha256": [
-    "842947dfd7b1ae60c4190e0c418fc32ecc240eaad41e99080cc07bbfc6df348b 2420 rust-brotli_8.0.2-2.dsc 4bd8b9603c7aa97359dbd97ecf258968c95f3adddd6db2f7e7a5bef101c84560 741739 rust-brotli_8.0.2.orig.tar.gz 04ef3a64659ccbabf7d80ce3a3445e68d419a85df56d79332ee42eecef2dc6b3 9168 rust-brotli_8.0.2-2.debian.tar.xz"
+    "c05337c74718eda2a14bc85e6e3507d83e33c41529052025a3e1927e8aed7ce3 2472 rust-brotli_8.0.4-1.dsc 5cc91aac060a7a1e25823bdccbfb6af1875b88f17c6daac97894eed8207166b3 751794 rust-brotli_8.0.4.orig.tar.gz dc17f0d8b179fa213b41c14fb638829ff4be60528385811128dae9911e01f662 9552 rust-brotli_8.0.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-brotli"
   ],
   "Files": [
-    "9b5c40936f004430e69d98e77147cb49 2420 rust-brotli_8.0.2-2.dsc 5820a6683af6afc727711806211dd8b2 741739 rust-brotli_8.0.2.orig.tar.gz 598743d826378e3d369d998d427a6f44 9168 rust-brotli_8.0.2-2.debian.tar.xz"
+    "5430cd51a140b66785b5235277c544e8 2472 rust-brotli_8.0.4-1.dsc 032e9e9019f25172f3389635af1ed9fd 751794 rust-brotli_8.0.4.orig.tar.gz c359040a1d8aa9e7ff5f1e6a5c66501a 9552 rust-brotli_8.0.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-alloc-no-stdlib-2+default-dev, librust-alloc-no-stdlib-2+unsafe-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/brotli]"
   ],
   "Version": [
-    "8.0.2-2"
+    "8.0.4-1"
   ]
 }
