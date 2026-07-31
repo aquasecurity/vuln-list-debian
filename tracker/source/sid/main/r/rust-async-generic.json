@@ -6,16 +6,19 @@
     "librust-async-generic-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "280963b9cf67020323376b6a34335535553e77081529b4d6f9eb6ac9dff3a52a 2036 rust-async-generic_1.1.0-1.dsc 58a6914896b0907b4df8f696dea38ef8a2b75b32142f80fd5985eb39bcf07778 2963 rust-async-generic_1.1.0.orig.tar.gz 1b890577e07a9dded7a6e60b17f2c3969d37217503a994d83b16c453fa73eeda 2576 rust-async-generic_1.1.0-1.debian.tar.xz"
+    "bec27ac71d597c90a1cf3f49e6d1bd70023074f65905db93177cd2c3dc1c2991 2575 rust-async-generic_1.1.2-1.dsc ddf3728566eefa873833159754f5732fb0951d3649e6e5b891cc70d56dd41673 7441 rust-async-generic_1.1.2.orig.tar.gz ea6ef97794a533af455e1f637d81b49f94bd4601216c8467f7f1190db1acf188 2904 rust-async-generic_1.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-generic"
   ],
   "Files": [
-    "31f69f464f632240567f7eaf049daccd 2036 rust-async-generic_1.1.0-1.dsc 77fad7a537535d0743f62aa445735480 2963 rust-async-generic_1.1.0.orig.tar.gz 8a7acd8d5cd44b39546c5de889510df2 2576 rust-async-generic_1.1.0-1.debian.tar.xz"
+    "a5aef53a1b69f668ebc43561ecc03804 2575 rust-async-generic_1.1.2-1.dsc cacf093debcb1aa52de9dabb7128cf43 7441 rust-async-generic_1.1.2.orig.tar.gz 938fed8b7346316bf08f70c74b5cd285 2904 rust-async-generic_1.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-async-trait-0.1+default-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-async-trait-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-generic]"
   ],
   "Version": [
-    "1.1.0-1"
+    "1.1.2-1"
   ]
 }

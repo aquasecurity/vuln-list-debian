@@ -6,16 +6,19 @@
     "librust-async-mutex-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-event-listener-5+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-event-listener-5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ab1ef12bd81373e955b0678d86706af0a8a4b9ddb606967f5153fef246e5a01b 1887 rust-async-mutex_1.4.0-3.dsc 6e0230f8e6997a4081ac55eca8175579c4f23a62380652c45bd0fe6dad68562d 9469 rust-async-mutex_1.4.0.orig.tar.gz 14a7e4a57248a5c665c1f906e3c36eba4ba8a83805cd5efb9eea8bc558623156 2940 rust-async-mutex_1.4.0-3.debian.tar.xz"
+    "95693b63a27ef83991fe57f7b926920c5faa57cb4b2a6abf8854f99856c29845 2591 rust-async-mutex_1.4.1+ds-1.dsc e2d8ccf795e6caf9a0778508e47e76b3adc676f0ff626be8164ddeb686697815 9594 rust-async-mutex_1.4.1+ds.orig.tar.gz 7dac300a2b840cc91e4ed3467498d08b0d4741c8ba94bee0e9d6cce3944a91b9 3332 rust-async-mutex_1.4.1+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-mutex"
   ],
   "Files": [
-    "e5d19e505f5d1641e70801ec7832df5f 1887 rust-async-mutex_1.4.0-3.dsc ef32737877b4bf61b2596fcaf6076c85 9469 rust-async-mutex_1.4.0.orig.tar.gz 16d0725134fe6bfb9788b84e9d9a2038 2940 rust-async-mutex_1.4.0-3.debian.tar.xz"
+    "f917a7653a4cf0ce0af6c28c6204d472 2591 rust-async-mutex_1.4.1+ds-1.dsc 853c86a225ec8c2924fb4a1fd2a41c5d 9594 rust-async-mutex_1.4.1+ds.orig.tar.gz 89454241e2b69c9c94738c7a9bb25d24 3332 rust-async-mutex_1.4.1+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+default-dev, librust-futures-0.3+default-dev, librust-futures-lite-1+default-dev, librust-smol-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+parking-lot-dev, librust-tokio-1+sync-dev"
+    "dh-cargo, librust-async-executor-1+default-dev, librust-async-io-2+default-dev, librust-futures-0.3+default-dev, librust-futures-lite-2+default-dev, librust-num-cpus-1+default-dev, librust-once-cell-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+parking-lot-dev, librust-tokio-1+sync-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-mutex]"
   ],
   "Version": [
-    "1.4.0-3"
+    "1.4.1+ds-1"
   ]
 }
