@@ -6,16 +6,19 @@
     "librust-stderrlog-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atty-0.2+default-dev (\u003e= 0.2.6-~~) \u003c!nocheck\u003e, librust-chrono-0.4+clock-dev (\u003e= 0.4.10-~~) \u003c!nocheck\u003e, librust-chrono-0.4+std-dev (\u003e= 0.4.10-~~) \u003c!nocheck\u003e, librust-chrono-0.4+wasmbind-dev (\u003e= 0.4.10-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-log-0.4+std-dev (\u003e= 0.4.11-~~) \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-thread-local-1.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.48) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+clock-dev (\u003e= 0.4.10) \u003c!nocheck\u003e, librust-chrono-0.4+std-dev (\u003e= 0.4.10) \u003c!nocheck\u003e, librust-chrono-0.4+wasmbind-dev (\u003e= 0.4.10) \u003c!nocheck\u003e, librust-is-terminal-0.4+default-dev (\u003e= 0.4.7) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.11) \u003c!nocheck\u003e, librust-log-0.4+std-dev (\u003e= 0.4.11) \u003c!nocheck\u003e, librust-termcolor-1+default-dev (\u003e= 1.1) \u003c!nocheck\u003e, librust-thread-local-1+default-dev (\u003c\u003c 1.2) \u003c!nocheck\u003e, librust-thread-local-1+default-dev (\u003e= 1.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9134d19ed3a590d74ac1fdfe4a2ee21651906f3c6c754bc5c70d87cacccbe25f 2854 rust-stderrlog_0.5.4-1.dsc a297e76cff1c31ed16d5468ca9d6553351b3ee33908f778e57c50865fbbe966a 23016 rust-stderrlog_0.5.4.orig.tar.gz e732d1f69df4f45d5e96c8275557bfe7600125f2a945ee8b0c9b67cdd052f010 4640 rust-stderrlog_0.5.4-1.debian.tar.xz"
+    "185cb2673eb36496ba102b1a54f93e102eb99c128caddc8b0a13c76f16a3f67c 2937 rust-stderrlog_0.6.0+ds-1.dsc 345d51be8ef9f4a2130c3e2e7062eadeef6cf48a67bf402ebff5840b9d9ac5ae 24320 rust-stderrlog_0.6.0+ds.orig.tar.gz b63ce3817a827ab216f134e853b84e8a6adbfee6fdc52060e184603d19aea5fa 4840 rust-stderrlog_0.6.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-stderrlog"
   ],
   "Files": [
-    "758f16f5017062e925f91821f04a0194 2854 rust-stderrlog_0.5.4-1.dsc daaa88c311de8228143e8ae8c690da13 23016 rust-stderrlog_0.5.4.orig.tar.gz 106ed7233767e735c2d379128e457f9d 4640 rust-stderrlog_0.5.4-1.debian.tar.xz"
+    "62d3100f7c4757640bfd2c8f55c4d0ac 2937 rust-stderrlog_0.6.0+ds-1.dsc b3fd71770fcf13549dae337400dd6505 24320 rust-stderrlog_0.6.0+ds.orig.tar.gz d0a06d7b38d1c2ea94ab9a03c0e3dae7 4840 rust-stderrlog_0.6.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-clap-3+cargo-dev, librust-clap-3+default-dev, librust-docopt-1+default-dev, librust-libc-0.2+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-structopt-0.3+default-dev"
+    "dh-cargo, librust-clap-3+cargo-dev, librust-clap-3+default-dev, librust-docopt-1+default-dev, librust-libc-0.2+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-structopt-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/stderrlog]"
   ],
   "Version": [
-    "0.5.4-1"
+    "0.6.0+ds-1"
   ]
 }

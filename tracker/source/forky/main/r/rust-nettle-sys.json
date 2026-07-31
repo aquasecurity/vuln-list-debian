@@ -6,16 +6,19 @@
     "librust-nettle-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+runtime-dev (\u003e= 0.62.0-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, nettle-dev (\u003e= 3.5.1~~) \u003c!nocheck\u003e, llvm"
+    "debhelper-compat (= 13), dh-sequence-cargo, llvm"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.72+runtime-dev (\u003e= 0.72.1) \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, nettle-dev (\u003e= 3.5.1~~) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c18bdfa50fb184563e1bc0fc5a90d8bd5129d4067bbf2ec8de3b93ba7cc18b09 2528 rust-nettle-sys_2.3.1-1.dsc 61a3f5406064d310d59b1a219d3c5c9a49caf4047b6496032e3f930876488c34 81980 rust-nettle-sys_2.3.1.orig.tar.gz cc9e694f1d34c121fc0c7a2ebbb65418c95addeebb45ca4bc2225e6fd09530bf 3956 rust-nettle-sys_2.3.1-1.debian.tar.xz"
+    "c3f3bcfa55e33d9de43928952b6b7a00f13517f5b0e7380283e1b8a5be51da57 2520 rust-nettle-sys_2.3.2-1.dsc f35502358aa77e598570bbf9a79ad19c4985a1bcd157b5d70197688dafca9b48 115388 rust-nettle-sys_2.3.2.orig.tar.gz 2132022cfc0add60f42b6df63f3cc8d348987a075d82947c44cb7adeed425f3f 3836 rust-nettle-sys_2.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nettle-sys"
   ],
   "Files": [
-    "bd507de41f98f66195060eb268937805 2528 rust-nettle-sys_2.3.1-1.dsc 52b08748232ba7ab079ff1040fcc1c51 81980 rust-nettle-sys_2.3.1.orig.tar.gz 268deea76adf27fe2b80118aa492d107 3956 rust-nettle-sys_2.3.1-1.debian.tar.xz"
+    "545188095fba759722e50781d74eb763 2520 rust-nettle-sys_2.3.2-1.dsc aa2e2f958b0c1397d7cd7e3e05f8431e 115388 rust-nettle-sys_2.3.2.orig.tar.gz 041ca1c32431e5a5578560f7ba972acd 3836 rust-nettle-sys_2.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nettle-sys]"
   ],
   "Version": [
-    "2.3.1-1"
+    "2.3.2-1"
   ]
 }
