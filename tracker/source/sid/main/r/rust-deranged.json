@@ -6,19 +6,25 @@
     "librust-deranged-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.67.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7785fff853283be1ace2e0a8589d45aa1cd0201f5490278f678f57b0133155f4 2216 rust-deranged_0.3.11-1.dsc b42b6fa04a440b495c8b04d0e71b707c585f83cb9cb28cf8cd0d976c315e31b4 18043 rust-deranged_0.3.11.orig.tar.gz 2cfc1eeef79455cf80aa6231ebe70cbceeed3e31d886f4a8ceea05b1076650f7 2952 rust-deranged_0.3.11-1.debian.tar.xz"
+    "16cb11efb1a9b23bea82f84569271c7987ea1efcb15ea0ba9f21d19d6d2ef55d 2295 rust-deranged_0.5.8-1.dsc 7cd812cc2bc1d69d4764bd80df88b4317eaef9e773c75226407d9bc0876b211c 26885 rust-deranged_0.5.8.orig.tar.gz 16c9c678ee14cca070c3f16d6b2ef3ee73d0699d28ec999371bdbb3475dde6d7 3944 rust-deranged_0.5.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-deranged"
   ],
   "Files": [
-    "6e2d66eedab7827c97d1db55de18cde3 2216 rust-deranged_0.3.11-1.dsc d022bc79e1931c2bd4ebbe65cf3d2309 18043 rust-deranged_0.3.11.orig.tar.gz c09ced79ed68c97f295e2d55619fc447 2952 rust-deranged_0.3.11-1.debian.tar.xz"
+    "ad0a57e9b23ce6badc5fb5be304a86cd 2295 rust-deranged_0.5.8-1.dsc efb672eafdbbab56cc05a8fc08ed2fb3 26885 rust-deranged_0.5.8.orig.tar.gz 73d7da44d3c5806f4b6607b975c5e938 3944 rust-deranged_0.5.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/jhpratt/deranged"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-rand-0.10+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/deranged"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/deranged]"
   ],
   "Version": [
-    "0.3.11-1"
+    "0.5.8-1"
   ]
 }

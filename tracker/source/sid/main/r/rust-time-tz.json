@@ -6,16 +6,19 @@
     "librust-time-tz-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-parse-zoneinfo-0.3+default-dev \u003c!nocheck\u003e, librust-phf-0.11+default-dev (\u003e= 0.11.1-~~) \u003c!nocheck\u003e, librust-phf-codegen-0.11+default-dev (\u003e= 0.11.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-xml-rs-0.5+default-dev (\u003e= 0.5.1-~~) \u003c!nocheck\u003e, librust-time-0.3+default-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e, librust-time-0.3+macros-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e, librust-time-0.3+wasm-bindgen-dev (\u003e= 0.3.7-~~) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+default-dev (\u003e= 0.2.87-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-parse-zoneinfo+default-dev (\u003c\u003c 0.6) \u003c!nocheck\u003e, librust-parse-zoneinfo+default-dev (\u003e= 0.3) \u003c!nocheck\u003e, librust-phf-0.11+default-dev (\u003e= 0.11.1) \u003c!nocheck\u003e, librust-phf-codegen-0.11+default-dev (\u003e= 0.11.1) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.136) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.136) \u003c!nocheck\u003e, librust-serde-xml-rs-0.5+default-dev (\u003e= 0.5.1) \u003c!nocheck\u003e, librust-time-0.3+default-dev (\u003e= 0.3.7) \u003c!nocheck\u003e, librust-time-0.3+macros-dev (\u003e= 0.3.7) \u003c!nocheck\u003e, librust-time-0.3+wasm-bindgen-dev (\u003e= 0.3.7) \u003c!nocheck\u003e, librust-wasm-bindgen-0.2+default-dev (\u003e= 0.2.87) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eb0d0a2fcaca2ca1bb8daf03dcae9cb96025a19e570003269a41646c26dac799 2869 rust-time-tz_2.0.0-1.dsc fed7fa2301de72e9cd8f1c87d913e2acde68612d1ae153afdfbdc83918539622 516721 rust-time-tz_2.0.0.orig.tar.gz 94a4123745dd8b1b9c606fcccae23ffa2d61ade24ef8928fcb34f3fb63c42337 4164 rust-time-tz_2.0.0-1.debian.tar.xz"
+    "dd9d3c09187bdb999aafddeb57270597412d10a5901cfe51a486c4f68591eac4 2843 rust-time-tz_2.0.0+ds-1.dsc 451ba667ff177a9eabaab93a3f34da36843134c4e1a59d3b74bb0731c7f93b83 517543 rust-time-tz_2.0.0+ds.orig.tar.gz d2322129d6bf7ae2a06960d7d49fab5d17213665e0fd228ef739796c89267f6a 4916 rust-time-tz_2.0.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-time-tz"
   ],
   "Files": [
-    "46342404bd67adf8ea5274c0eddede3f 2869 rust-time-tz_2.0.0-1.dsc 982fef4cb2be04061e3a34090472ebe3 516721 rust-time-tz_2.0.0.orig.tar.gz 386d67723b131ef3fa3ca74ca2a8d8cf 4164 rust-time-tz_2.0.0-1.debian.tar.xz"
+    "f3d5348d5150c914107ffbf884fb802b 2843 rust-time-tz_2.0.0+ds-1.dsc f42aa6d603139ecc5085cbab1789daf8 517543 rust-time-tz_2.0.0+ds.orig.tar.gz dfde2eff5ef662c8973b99c33868ef91 4916 rust-time-tz_2.0.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/time-tz]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.0.0+ds-1"
   ]
 }

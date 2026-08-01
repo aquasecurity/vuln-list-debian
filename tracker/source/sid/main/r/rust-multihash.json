@@ -6,19 +6,25 @@
     "librust-multihash-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-core2-0.4-dev \u003c!nocheck\u003e, librust-unsigned-varint-0.8+std-dev \u003c!nocheck\u003e, librust-unsigned-varint-0.8-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-unsigned-varint-0.8+std-dev \u003c!nocheck\u003e, librust-unsigned-varint-0.8-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a0582c17dc3c5210842d0b15b99756f556120d17f084e6ec39465fe5df771b34 2497 rust-multihash_0.19.1-2.dsc 076d548d76a0e2a0d4ab471d0b1c36c577786dfc4471242035d97a12a735c492 17962 rust-multihash_0.19.1.orig.tar.gz b4c4ca494ef1192e9d8d8fbb9840821d2a395232778756a4dab409bc181be4ca 3304 rust-multihash_0.19.1-2.debian.tar.xz"
+    "f1efb463fe31ed7be0fc3f0e0d499f9b723448b92688af8a9c77d159d3e58460 2426 rust-multihash_0.19.5-1.dsc 577c63b00ad74d57e8c9aa870b5fccebf2fd64a308a5aee9f1bb88e4aea19447 22399 rust-multihash_0.19.5.orig.tar.gz 45b431db80bab9e83b4a6d7a46b8b07267edc845c4d0526560d50a5854337788 3304 rust-multihash_0.19.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-multihash"
   ],
   "Files": [
-    "6203d97d120bdb2bfca500e8eda6c0dd 2497 rust-multihash_0.19.1-2.dsc ebf2a4c1886f0ceb3b183eeeba83081a 17962 rust-multihash_0.19.1.orig.tar.gz c48781486e7340700a19d42102014667 3304 rust-multihash_0.19.1-2.debian.tar.xz"
+    "0ad946dcd8f72c318f26f3520e32197d 2426 rust-multihash_0.19.5-1.dsc d4a661dbb6160fb687868033aa3bf753 22399 rust-multihash_0.19.5.orig.tar.gz 623e1f088fa74cb1be509a115687d4d5 3304 rust-multihash_0.19.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/multiformats/rust-multihash"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-arbitrary-1+default-dev, librust-hex-0.4+default-dev, librust-quickcheck-1+default-dev, librust-rand-0.8+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-hex-0.4+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jochen Sprickerhof \u003cjspricke@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/multihash]"
   ],
   "Version": [
-    "0.19.1-2"
+    "0.19.5-1"
   ]
 }
