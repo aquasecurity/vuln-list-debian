@@ -6,16 +6,16 @@
     "basex"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk, javahelper, libmaven-exec-plugin-java, maven-debian-helper (\u003e= 1.5), maven-repo-helper"
+    "debhelper-compat (= 13), default-jdk, javahelper, junit5, libhtml5parser-java, libicu4j-java, libjline2-java, libmaven-exec-plugin-java, libtagsoup-java, maven-debian-helper (\u003e= 1.5), maven-repo-helper"
   ],
   "Checksums-Sha256": [
-    "e7f91697f57231f40c2cd7e37fc146f7f2b3805021cb8bc4801c662725ad2c08 1959 basex_10.5-2.dsc 3d5f867afb247bbe24d1103712980b1ac05f6ef14fa48476211d49504fb4173d 2309864 basex_10.5.orig.tar.xz 444c4790e76c8810103895f0139aa719056b225aea2861c6a0bc58848b22bbd2 102848 basex_10.5-2.debian.tar.xz"
+    "d98216fc70bcdd38c80f3a46864a187e86d8a583d2b725e2ba710945319d09c7 2116 basex_12.4+ds-1.dsc f7611b6a71348448ed8df0f2eef0b07c756ca27c71f9f2c01a70ede71d3e9eb9 2471204 basex_12.4+ds.orig.tar.xz ef6a422b0994f49dd48807aebb622d5e0d3e7c7017cfb6b85597b4d64f16b1d6 109224 basex_12.4+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/basex"
   ],
   "Files": [
-    "64bf4efc4fac3873575df06204143995 1959 basex_10.5-2.dsc b96612c2acb0ba3e11fc74504da3b775 2309864 basex_10.5.orig.tar.xz 485029fd08d1b08476bd0f24d2e35f90 102848 basex_10.5-2.debian.tar.xz"
+    "f8da2af6eef7341c338cb21546382a52 2116 basex_12.4+ds-1.dsc 01dce49320800cd1352ee8a7f1928092 2471204 basex_12.4+ds.orig.tar.xz 457efc952a201cc35c5e90661e17eeb7 109224 basex_12.4+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "database"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "libtagsoup-java"
   ],
   "Uploaders": [
     "tony mancill \u003ctmancill@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/basex.git"
   ],
   "Version": [
-    "10.5-2"
+    "12.4+ds-1"
   ]
 }
