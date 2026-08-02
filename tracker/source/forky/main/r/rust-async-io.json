@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-lock-3+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-concurrent-queue-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-futures-io-0.3+std-dev (\u003e= 0.3.28-~~) \u003c!nocheck\u003e, librust-futures-lite+default-dev (\u003e= 1.11.0-~~) \u003c!nocheck\u003e, librust-parking-2+default-dev \u003c!nocheck\u003e, librust-polling-3+default-dev (\u003e= 3.4.0-~~) \u003c!nocheck\u003e, librust-rustix-1+fs-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-rustix-1+net-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-rustix-1+std-dev (\u003e= 1.0.7-~~) \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-concurrent-queue-2+default-dev (\u003e= 2.5) \u003c!nocheck\u003e, librust-futures-io-0.3+std-dev (\u003e= 0.3.28) \u003c!nocheck\u003e, librust-futures-lite+default-dev (\u003e= 1.11.0) \u003c!nocheck\u003e, librust-parking-2+default-dev \u003c!nocheck\u003e, librust-polling-3+default-dev (\u003e= 3.4.0) \u003c!nocheck\u003e, librust-rustix-1+fs-dev (\u003e= 1.0.7) \u003c!nocheck\u003e, librust-rustix-1+net-dev (\u003e= 1.0.7) \u003c!nocheck\u003e, librust-rustix-1+std-dev (\u003e= 1.0.7) \u003c!nocheck\u003e, librust-slab-0.4+default-dev (\u003e= 0.4.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b2c5017fd2fea54d909de4b12dbdfa1881f63ee141e4f4dfc13d792bf579f9bd 3045 rust-async-io_2.5.0-2.dsc 19634d6336019ef220f09fd31168ce5c184b295cbf80345437cc36094ef223ca 50545 rust-async-io_2.5.0.orig.tar.gz 5917eed914a37c689344d3673bde6d02275cd10f49a9cc216ba4817f39e04220 4320 rust-async-io_2.5.0-2.debian.tar.xz"
+    "b1f6f65312e54dbfaf480ed00410d84cafa0b2cc31bc147d460d5a7ea31e9fe3 2990 rust-async-io_2.6.0-1.dsc 456b8a8feb6f42d237746d4b3e9a178494627745c3c56c6ea55d92ba50d026fc 51062 rust-async-io_2.6.0.orig.tar.gz 5a8d96ed6bc666581b91f08860eba034b8075e6176de5a93873a54b7300918dd 4520 rust-async-io_2.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-async-io"
   ],
   "Files": [
-    "b39f2c771dff628009425847f45c4bb7 3045 rust-async-io_2.5.0-2.dsc 69a016647874eddff6324ded986b1bd9 50545 rust-async-io_2.5.0.orig.tar.gz 01bba10064aa2852b81c6181ef710201 4320 rust-async-io_2.5.0-2.debian.tar.xz"
+    "4d1ebe3712b410c161784c4eadc9e444 2990 rust-async-io_2.6.0-1.dsc 0b5c8135b2921803b74acc1342b82b55 51062 rust-async-io_2.6.0.orig.tar.gz b48583a40cd4139e35cc336dc7a353a1 4520 rust-async-io_2.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-channel+default-dev, librust-async-net-2+default-dev, librust-blocking-1+default-dev, librust-getrandom-0.2+default-dev, librust-signal-hook-0.3+default-dev, librust-tempfile-3+default-dev, librust-timerfd-1+default-dev, rustc"
+    "dh-cargo, librust-async-channel-2+default-dev, librust-async-net-2+default-dev, librust-blocking-1+default-dev, librust-getrandom-0.4+default-dev, librust-signal-hook-0.3+default-dev, librust-tempfile-3+default-dev, librust-timerfd-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-io]"
   ],
   "Version": [
-    "2.5.0-2"
+    "2.6.0-1"
   ]
 }
