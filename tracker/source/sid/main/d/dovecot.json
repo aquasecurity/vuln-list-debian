@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "dovecot-core, dovecot-dev, dovecot-imapd, dovecot-pop3d, dovecot-lmtpd, dovecot-managesieved, dovecot-pgsql, dovecot-mysql, dovecot-sqlite, dovecot-ldap, dovecot-gssapi, dovecot-sieve, dovecot-flatcurve, dovecot-solr, dovecot-submissiond, dovecot-auth-lua"
+    "dovecot-core, dovecot-dev, dovecot-imapd, dovecot-pop3d, dovecot-lmtpd, dovecot-managesieved, dovecot-pgsql, dovecot-mariadb, dovecot-mysql, dovecot-sqlite, dovecot-ldap, dovecot-gssapi, dovecot-sieve, dovecot-flatcurve, dovecot-solr, dovecot-submissiond, dovecot-auth-lua"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-libmysqlclient-dev, dh-sequence-installsysusers, krb5-multidev, libapparmor-dev [linux-any], libbz2-dev, libcap-dev [linux-any], libcdb-dev, libcrypt-dev, libexpat-dev, libexttextcat-dev, libicu-dev, libldap2-dev, liblua5.4-dev, liblz4-dev, liblzma-dev, libpam0g-dev, libpcre2-dev, libpq-dev, libsasl2-dev, libsodium-dev, libsqlite3-dev, libssl-dev, libstemmer-dev, libsystemd-dev [linux-any], libtirpc-dev, libunwind-dev, libwrap0-dev, libxapian-dev, libzstd-dev, lsb-release, lua-json \u003c!nocheck\u003e, pkgconf, python3, zlib1g-dev"
+    "debhelper-compat (= 13), libmariadb-dev, dh-sequence-installsysusers, krb5-multidev, libapparmor-dev [linux-any], libbz2-dev, libcap-dev [linux-any], libcdb-dev, libcrypt-dev, libexpat-dev, libexttextcat-dev, libicu-dev, libldap2-dev, liblua5.4-dev, liblz4-dev, liblzma-dev, libpam0g-dev, libpcre2-dev, libpq-dev, libsasl2-dev, libsodium-dev, libsqlite3-dev, libssl-dev, libstemmer-dev, libsystemd-dev [linux-any], libtirpc-dev, libunwind-dev, libwrap0-dev, libxapian-dev, libzstd-dev, lsb-release, lua-json \u003c!nocheck\u003e, pkgconf, python3, rpcsvc-proto, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "f555a338653c4eacbe3e18f7ede481f88317660791a7f5175696c5574d48fde8 4066 dovecot_2.4.4+dfsg1-1.dsc 57cd7cbde02561622de42f281e52be8c31c50be49dd9a057a05718fc24b64e2d 1882495 dovecot_2.4.4+dfsg1.orig-pigeonhole.tar.gz 670f98d55a29b02ae6a97281e51374e553b94496480ab0a07439571ab30ca8c3 8250124 dovecot_2.4.4+dfsg1.orig.tar.gz 243d1fa56d12e99fd9c62fcc59f3271326082076c22e0fa091efe7effd52ba52 228 dovecot_2.4.4+dfsg1.orig.tar.gz.asc e78c0ad0f822e1db58bc58c6d3db01d53ba04c96dca404ae69fe265fb4c3db2c 87832 dovecot_2.4.4+dfsg1-1.debian.tar.xz"
+    "7658f9d4341384c0c867dd3b84b73c57763f63d25d7b98e4cdb4257e51869550 4181 dovecot_2.4.4+dfsg1-2.dsc 57cd7cbde02561622de42f281e52be8c31c50be49dd9a057a05718fc24b64e2d 1882495 dovecot_2.4.4+dfsg1.orig-pigeonhole.tar.gz 670f98d55a29b02ae6a97281e51374e553b94496480ab0a07439571ab30ca8c3 8250124 dovecot_2.4.4+dfsg1.orig.tar.gz 243d1fa56d12e99fd9c62fcc59f3271326082076c22e0fa091efe7effd52ba52 228 dovecot_2.4.4+dfsg1.orig.tar.gz.asc 4a24d73acc503a1a08acc546ae81c05580be97eec5850deb4a470fbb49d84051 90084 dovecot_2.4.4+dfsg1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dovecot"
   ],
   "Files": [
-    "daceaa6840140fd337cd0887c43e9aa9 4066 dovecot_2.4.4+dfsg1-1.dsc 2c72bf32b9bf6678afbc1d6cdf568d9d 1882495 dovecot_2.4.4+dfsg1.orig-pigeonhole.tar.gz 1cfdb796f726dff687b6431a3b6012c3 8250124 dovecot_2.4.4+dfsg1.orig.tar.gz b2529ec59b0e2c0412b1da91088b6e7d 228 dovecot_2.4.4+dfsg1.orig.tar.gz.asc 0684fe509d31af9cbbbcc5982c8fbe7f 87832 dovecot_2.4.4+dfsg1-1.debian.tar.xz"
+    "a27fa421353dc9068ddc0c2b7adc541f 4181 dovecot_2.4.4+dfsg1-2.dsc 2c72bf32b9bf6678afbc1d6cdf568d9d 1882495 dovecot_2.4.4+dfsg1.orig-pigeonhole.tar.gz 1cfdb796f726dff687b6431a3b6012c3 8250124 dovecot_2.4.4+dfsg1.orig.tar.gz b2529ec59b0e2c0412b1da91088b6e7d 228 dovecot_2.4.4+dfsg1.orig.tar.gz.asc 120cf8046946a0385e735a524ddbeef1 90084 dovecot_2.4.4+dfsg1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "dovecot"
   ],
   "Package-List": [
-    "dovecot-auth-lua deb mail optional arch=any dovecot-core deb mail optional arch=any dovecot-dev deb mail optional arch=any dovecot-flatcurve deb mail optional arch=any dovecot-gssapi deb mail optional arch=any dovecot-imapd deb mail optional arch=any dovecot-ldap deb mail optional arch=any dovecot-lmtpd deb mail optional arch=any dovecot-managesieved deb mail optional arch=any dovecot-mysql deb mail optional arch=any dovecot-pgsql deb mail optional arch=any dovecot-pop3d deb mail optional arch=any dovecot-sieve deb mail optional arch=any dovecot-solr deb mail optional arch=any dovecot-sqlite deb mail optional arch=any dovecot-submissiond deb mail optional arch=any"
+    "dovecot-auth-lua deb mail optional arch=any dovecot-core deb mail optional arch=any dovecot-dev deb mail optional arch=any dovecot-flatcurve deb mail optional arch=any dovecot-gssapi deb mail optional arch=any dovecot-imapd deb mail optional arch=any dovecot-ldap deb mail optional arch=any dovecot-lmtpd deb mail optional arch=any dovecot-managesieved deb mail optional arch=any dovecot-mariadb deb mail optional arch=any dovecot-mysql deb mail optional arch=any dovecot-pgsql deb mail optional arch=any dovecot-pop3d deb mail optional arch=any dovecot-sieve deb mail optional arch=any dovecot-solr deb mail optional arch=any dovecot-sqlite deb mail optional arch=any dovecot-submissiond deb mail optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "ldap-utils, lsb-release, mariadb-server, postgresql, python3, python3-passlib, sieve-connect, slapd, systemd-sysv, whois"
+    "gsasl, iproute2, krb5-admin-server, ldap-utils, lsb-release, mariadb-server, postgresql, python3, python3-gssapi, python3-passlib, sieve-connect, slapd, systemd-sysv, whois"
   ],
   "Uploaders": [
     "Noah Meyerhans \u003cnoahm@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/dovecot.git"
   ],
   "Version": [
-    "1:2.4.4+dfsg1-1"
+    "1:2.4.4+dfsg1-2"
   ]
 }

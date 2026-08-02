@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tls-codec-derive-0.4+std-dev (\u003c\u003c 0.4.3) \u003c!nocheck\u003e, librust-tls-codec-derive-0.4+std-dev (\u003e= 0.4.2) \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev (\u003e= 1.8) \u003c!nocheck\u003e, librust-zeroize-1+zeroize-derive-dev (\u003e= 1.8) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-tls-codec-derive-0.5+std-dev (\u003c\u003c 0.5.1) \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev (\u003e= 1.9) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6e6ba3a1ed59f5f4adb870a5cf7332ec8926a7001e85df6d261b5f15a79f2d32 2508 rust-tls-codec_0.4.2-1.dsc 0de2e01245e2bb89d6f05801c564fa27624dbd7b1846859876c7dad82e90bf6b 27213 rust-tls-codec_0.4.2.orig.tar.gz f6563b5437ae55456e0a4f50a9ed306fd9a003ee26d6081b6fc2348f304262a6 2916 rust-tls-codec_0.4.2-1.debian.tar.xz"
+    "db99ef15059b671256ce4ea1bb5b8d683de6db2b211ac94ba80d1277b9614acb 2430 rust-tls-codec_0.5.0-1.dsc 18cc98286004cea38f717e2b03d990fc774fbfd38a82720de40e5c94365067c8 40219 rust-tls-codec_0.5.0.orig.tar.gz a91433944e0ca85095949f4ce784c2b152c463c7b72b5f30b1be1c8a0765dc83 3316 rust-tls-codec_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tls-codec"
   ],
   "Files": [
-    "78ddb611235e86783b2638aeab5506e1 2508 rust-tls-codec_0.4.2-1.dsc e31690d543b539444cc077aae97a1a35 27213 rust-tls-codec_0.4.2.orig.tar.gz 2d7c73100f7c7c68f6b7a6713922162c 2916 rust-tls-codec_0.4.2-1.debian.tar.xz"
+    "6d95aa6db2c496b58f1200048a32d068 2430 rust-tls-codec_0.5.0-1.dsc 55beecb3afdcc6e7f779bde1a6c4c7d5 40219 rust-tls-codec_0.5.0.orig.tar.gz 80f642b0525e1166ba887f77ac598296 3316 rust-tls-codec_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5-dev, rustc"
+    "dh-cargo, librust-ciborium-0.2+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ben Westover \u003cbjw@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tls-codec]"
   ],
   "Version": [
-    "0.4.2-1"
+    "0.5.0-1"
   ]
 }

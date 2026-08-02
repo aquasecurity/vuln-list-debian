@@ -6,16 +6,19 @@
     "librust-clru-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hashbrown-0.16+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3f739a2c9ba15d7b167d30240b7300ee3c51bb9addc673346245a0c2f0d74d78 2143 rust-clru_0.6.2-1.dsc cbd0f76e066e64fdc5631e3bb46381254deab9ef1158292f27c8c57e3bf3fe59 16497 rust-clru_0.6.2.orig.tar.gz 9ba682bfb4dda89199d31a0ba2625a74fa5e7b3074b9a208c3ee53a6564b8ea7 2608 rust-clru_0.6.2-1.debian.tar.xz"
+    "d43b5832314a08e81bd85f74309a5704b13d87554560ac6541f6caf2e5f79384 2208 rust-clru_0.6.3-1.dsc 197fd99cb113a8d5d9b6376f3aa817f32c1078f2343b714fff7d2ca44fdf67d5 19012 rust-clru_0.6.3.orig.tar.gz b5aaedf1421c53ceea41ded995ea79349197493d4d8aeecb3f7fbf340c48f787 2804 rust-clru_0.6.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-clru"
   ],
   "Files": [
-    "df831dfbbd26cc812add3eb72775f334 2143 rust-clru_0.6.2-1.dsc 04baa08ff2d38dad4a10e7a27a9768d4 16497 rust-clru_0.6.2.orig.tar.gz 02f6846299440432466a98bc6577b5fa 2608 rust-clru_0.6.2-1.debian.tar.xz"
+    "a6e54896ee445545553fbfa195b20a40 2208 rust-clru_0.6.3-1.dsc 59f5947336fbdd161fc7164783617c53 19012 rust-clru_0.6.3.orig.tar.gz c2eb6125ef5e2682d24a55e2204e51a1 2804 rust-clru_0.6.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/clru]"
   ],
   "Version": [
-    "0.6.2-1"
+    "0.6.3-1"
   ]
 }
