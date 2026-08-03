@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-synstructure-dev, librust-synstructure+proc-macro-dev"
+    "librust-synstructure-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+proc-macro-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-proc-macro2-1-dev (\u003e= 1.0.60-~~) \u003c!nocheck\u003e, librust-quote-1+proc-macro-dev \u003c!nocheck\u003e, librust-quote-1-dev \u003c!nocheck\u003e, librust-syn-2+clone-impls-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e, librust-syn-2+printing-dev \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev \u003c!nocheck\u003e, librust-syn-2+visit-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+proc-macro-dev (\u003e= 1.0.60) \u003c!nocheck\u003e, librust-proc-macro2-1-dev (\u003e= 1.0.60) \u003c!nocheck\u003e, librust-quote-1+proc-macro-dev \u003c!nocheck\u003e, librust-quote-1-dev \u003c!nocheck\u003e, librust-syn-2+clone-impls-dev \u003c!nocheck\u003e, librust-syn-2+derive-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+parsing-dev \u003c!nocheck\u003e, librust-syn-2+printing-dev \u003c!nocheck\u003e, librust-syn-2+proc-macro-dev \u003c!nocheck\u003e, librust-syn-2+visit-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1bef7be0239d1915d621620913723495c0a08f6b0710e3be799254dc0e34b909 2828 rust-synstructure_0.13.1-1.dsc c8af7666ab7b6390ab78131fb5b0fce11d6b7a6951602017c35fa82800708971 18327 rust-synstructure_0.13.1.orig.tar.gz 4878d420871ddb54746e55d7034cb4347b7b2931081484167100f5717151591a 3152 rust-synstructure_0.13.1-1.debian.tar.xz"
+    "2f68ea1ad1bd4564074f8137b911c0fc014a92df8c347a0cee81a8ba44653032 2802 rust-synstructure_0.13.2-1.dsc 728a70f3dbaf5bab7f0c4b1ac8d7ae5ea60a4b5549c8a5914361c99147a709d2 18950 rust-synstructure_0.13.2.orig.tar.gz d82be3bcecd226d08686c88cad4c4961db040f1eafd5b398ad52fd7235b434bf 3116 rust-synstructure_0.13.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-synstructure"
   ],
   "Files": [
-    "57645bb2d6673a6b8a2c7bf7166634a7 2828 rust-synstructure_0.13.1-1.dsc 9b28f25fbaa21872ffe3de6c522071bd 18327 rust-synstructure_0.13.1.orig.tar.gz 61f7336eaf3d9c4fe1d3fd35b8537860 3152 rust-synstructure_0.13.1-1.debian.tar.xz"
+    "37dd848251f36c6ab0c7dcffb1a2bd44 2802 rust-synstructure_0.13.2-1.dsc 99f5ad699ad94698b60f39bba715ca45 18950 rust-synstructure_0.13.2.orig.tar.gz 60c0699b67ce7148b05543c625e8325d 3116 rust-synstructure_0.13.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mystor/synstructure"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-synstructure"
   ],
   "Package-List": [
-    "librust-synstructure+proc-macro-dev deb rust optional arch=any librust-synstructure-dev deb rust optional arch=any"
+    "librust-synstructure-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-synstructure-test-traits-0.1+default-dev"
+    "dh-cargo, librust-synstructure-test-traits-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e, Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/synstructure]"
   ],
   "Version": [
-    "0.13.1-1"
+    "0.13.2-1"
   ]
 }

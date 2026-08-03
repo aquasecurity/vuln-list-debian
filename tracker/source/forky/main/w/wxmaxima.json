@@ -6,19 +6,19 @@
     "wxmaxima, wxmaxima-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), lsb-release, libwxgtk3.2-dev, libwxgtk-webview3.2-dev, wx3.2-i18n, ibus-gtk, ibus-gtk3, maxima, maxima-doc, maxima-share, cmake, gettext, po4a, appstream, xvfb, unzip, libxml2-utils, netcat-openbsd, xauth, desktop-file-utils"
+    "debhelper-compat (= 13), lsb-release, libwxgtk3.2-dev, libwxgtk-webview3.2-dev, wx3.2-i18n, ibus-gtk, ibus-gtk3, maxima, maxima-doc, maxima-share, gnuplot-qt, cmake, gettext, po4a, appstream, xvfb, unzip, libxml2-utils, netcat-openbsd, xauth, desktop-file-utils"
   ],
   "Build-Depends-Indep": [
     "pandoc, imagemagick, texlive-latex-base, texlive-latex-extra, texlive-xetex, texlive-lang-all, lmodern, texlive-fonts-recommended, texlive-fonts-extra-links, fonts-noto-cjk"
   ],
   "Checksums-Sha256": [
-    "ce7eef71034983499aa859e8f7fade611f94f3be0cb64cff42857f20289d6cd3 3227 wxmaxima_26.07.1+ds-1.dsc 2d30deba5fa9ea8787c19bea5b7f7c7d91f0b5d2a8d5b65bda04b22fe5d15e7e 8110860 wxmaxima_26.07.1+ds.orig.tar.xz 20ebccadd61e73945d0bb3a751447665371c973a11cb91869958fb9ed920ee93 14996 wxmaxima_26.07.1+ds-1.debian.tar.xz"
+    "4c4e79847d674abb338a08b167970febb27d84f33ea248220ea3e9b2bd7a7582 3323 wxmaxima_26.07.1+ds-6.dsc 2d30deba5fa9ea8787c19bea5b7f7c7d91f0b5d2a8d5b65bda04b22fe5d15e7e 8110860 wxmaxima_26.07.1+ds.orig.tar.xz ef451f41b355b98a7b6cdce9992f05c77a4f53432bbd8dfdef64b610031712fb 4097296 wxmaxima_26.07.1+ds-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/wxmaxima"
   ],
   "Files": [
-    "6a0583957a012a08faa30ed2da43cccd 3227 wxmaxima_26.07.1+ds-1.dsc 884a63445189054aac35f6f3b46c00e7 8110860 wxmaxima_26.07.1+ds.orig.tar.xz fcc4b935f249b53b0a2a3100fdb21786 14996 wxmaxima_26.07.1+ds-1.debian.tar.xz"
+    "11c9d5e0a0e19d79da1621863ba345f5 3323 wxmaxima_26.07.1+ds-6.dsc 884a63445189054aac35f6f3b46c00e7 8110860 wxmaxima_26.07.1+ds.orig.tar.xz 4220fd75e170d4f265f2da137423f26f 4097296 wxmaxima_26.07.1+ds-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "at-spi2-core, gnuplot, xauth, xvfb"
+  ],
   "Uploaders": [
     "Jerome Benoit \u003ccalculus@rezozer.net\u003e, Gunter Königsmann \u003cwxmaxima@physikbuch.de\u003e"
   ],
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/science-team/wxmaxima.git"
   ],
   "Version": [
-    "26.07.1+ds-1"
+    "26.07.1+ds-6"
   ]
 }
