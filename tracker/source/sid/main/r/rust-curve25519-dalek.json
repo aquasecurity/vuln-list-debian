@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cpufeatures-0.2+default-dev (\u003e= 0.2.17) \u003c!nocheck\u003e, librust-curve25519-dalek-derive-0.1+default-dev \u003c!nocheck\u003e, librust-fiat-crypto-0.3-dev \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e, librust-subtle-2+const-generics-dev (\u003e= 2.6.0) \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev \u003c!nocheck\u003e, librust-zeroize-1-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-cpufeatures-0.3+default-dev \u003c!nocheck\u003e, librust-curve25519-dalek-derive-0.1+default-dev \u003c!nocheck\u003e, librust-fiat-crypto-0.3-dev \u003c!nocheck\u003e, librust-rustc-version-0.4+default-dev \u003c!nocheck\u003e, librust-subtle-2+const-generics-dev (\u003e= 2.6.0) \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev \u003c!nocheck\u003e, librust-zeroize-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1e63ec78727698d2f74cc00719feec75e4a35756e91a75c0a65aabb94446c8c1 2878 rust-curve25519-dalek_4.2.0+ds1-1.dsc 077a03c719fc8027ce28c7eeae1e06d32cdd3d45c4e4b9aa5779684ec34427a4 324093 rust-curve25519-dalek_4.2.0+ds1.orig.tar.gz 66c225204d00d888972e49e1164f1a53678078dd924bbba0835af0b903738655 6116 rust-curve25519-dalek_4.2.0+ds1-1.debian.tar.xz"
+    "8ce3658d9b939e5ca02a9a4a868962ccc5df358ba2830b09ec40fd020a08d2c8 2939 rust-curve25519-dalek_5.0.0+dfsg-1.dsc 095e81b37f473fb52a31b2b7ef0514794bd74c11fc9d98f0502cd2a8f788dde2 349872 rust-curve25519-dalek_5.0.0+dfsg.orig.tar.gz 5085c828d9648b9e93e61812c569cec73d05950c01b03b461790c305c069f701 6100 rust-curve25519-dalek_5.0.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-curve25519-dalek"
   ],
   "Files": [
-    "2678dc11d07bf81ddd6c0efa5fbd5c72 2878 rust-curve25519-dalek_4.2.0+ds1-1.dsc 681be6220fcb03a2513db891fd5e9ed4 324093 rust-curve25519-dalek_4.2.0+ds1.orig.tar.gz 6e5dd491a0b19772583434d0dc25a343 6116 rust-curve25519-dalek_4.2.0+ds1-1.debian.tar.xz"
+    "7a3eb1738a975a101fea86716eb4173b 2939 rust-curve25519-dalek_5.0.0+dfsg-1.dsc 69f23e1306374dea11b1d38b345961b5 349872 rust-curve25519-dalek_5.0.0+dfsg.orig.tar.gz 43efbac938d0e112074427a4e2061d6f 6100 rust-curve25519-dalek_5.0.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-hex-0.4+default-dev, librust-rand-0.8+default-dev, librust-rand-core-0.6+getrandom-dev, librust-sha2-0.10-dev, rustc"
+    "dh-cargo, librust-getrandom-0.4+default-dev, librust-getrandom-0.4+sys-rng-dev, librust-hex-0.4+default-dev, librust-postcard-1+alloc-dev, librust-postcard-1+default-dev, librust-proptest-1+default-dev, librust-sha2-0.11-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/curve25519-dalek]"
   ],
   "Version": [
-    "4.2.0+ds1-1"
+    "5.0.0+dfsg-1"
   ]
 }
