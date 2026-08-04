@@ -6,19 +6,25 @@
     "librust-ctor-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.20-~~) \u003c!nocheck\u003e, librust-syn-1+full-dev (\u003e= 1.0.98-~~) \u003c!nocheck\u003e, librust-syn-1+parsing-dev (\u003e= 1.0.98-~~) \u003c!nocheck\u003e, librust-syn-1+printing-dev (\u003e= 1.0.98-~~) \u003c!nocheck\u003e, librust-syn-1+proc-macro-dev (\u003e= 1.0.98-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.20) \u003c!nocheck\u003e, librust-syn-1+full-dev (\u003e= 1.0.98) \u003c!nocheck\u003e, librust-syn-1+parsing-dev (\u003e= 1.0.98) \u003c!nocheck\u003e, librust-syn-1+printing-dev (\u003e= 1.0.98) \u003c!nocheck\u003e, librust-syn-1+proc-macro-dev (\u003e= 1.0.98) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d62dd767ec9900f630ae867dbe8b1bbb0dd3f65f35570e3efff81a7def28282d 2411 rust-ctor_0.1.26-1.dsc 6d2301688392eb071b0bf1a37be05c469d3cc4dbbd95df672fe28ab021e6a096 10803 rust-ctor_0.1.26.orig.tar.gz 4de9b262be9d5a89c95e9b22f9b631f5f6ef80e5ad97410d45919466c5cb464e 2724 rust-ctor_0.1.26-1.debian.tar.xz"
+    "41787c6147d4e72e19c4e08c543f162d3ebd054dc51bc1fbc0d01b57139dcf3f 2122 rust-ctor_0.1.26-2.dsc 6d2301688392eb071b0bf1a37be05c469d3cc4dbbd95df672fe28ab021e6a096 10803 rust-ctor_0.1.26.orig.tar.gz d324db0e2b303480cbbfbcaef56e5676339080de8f505413072f68c1d938bb21 3164 rust-ctor_0.1.26-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ctor"
   ],
   "Files": [
-    "2a1db947870c1818afb766a1a33c50ea 2411 rust-ctor_0.1.26-1.dsc 39cd2aade20a2eab4779f1a3db530209 10803 rust-ctor_0.1.26.orig.tar.gz 99a4d06f740721184f8840fa83ccf039 2724 rust-ctor_0.1.26-1.debian.tar.xz"
+    "b787b4bcef3866445863847b49f4b66e 2122 rust-ctor_0.1.26-2.dsc 39cd2aade20a2eab4779f1a3db530209 10803 rust-ctor_0.1.26.orig.tar.gz 6169df0b7aa5c1a192ac96e1343c65d9 3164 rust-ctor_0.1.26-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mmastrac/rust-ctor"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-libc-print-0.1+default-dev"
+    "dh-cargo, librust-libc-print+default-dev, rustc"
   ],
   "Uploaders": [
     "Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ctor]"
   ],
   "Version": [
-    "0.1.26-1"
+    "0.1.26-2"
   ]
 }
