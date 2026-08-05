@@ -6,19 +6,25 @@
     "librust-sm3-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e, librust-digest-0.10+std-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.11+alloc-dev \u003c!nocheck\u003e, librust-digest-0.11+default-dev \u003c!nocheck\u003e, librust-digest-0.11+oid-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "89959fe570c836845e7f7aad5c8b994c82fbf44fba2e1c30b8c9e77736b7f163 2276 rust-sm3_0.4.2-1.dsc ebb9a3b702d0a7e33bc4d85a14456633d2b165c2ad839c5fd9a8417c1ab15860 10344 rust-sm3_0.4.2.orig.tar.gz ecafbaaa45ba93dcdda8ae4dc5da8c6cab4179e9e8a24c028caf1cbabe291a00 2636 rust-sm3_0.4.2-1.debian.tar.xz"
+    "68516e65f1c0be752804c9ccb75f05b58925f9416588a5993a67929ce1ea1d88 2375 rust-sm3_0.5.0-1.dsc da6a89ba31723d185fd7413b98c576a575f356d9b84729d8ecb6ead60000a5b6 11888 rust-sm3_0.5.0.orig.tar.gz aa02bb334ca9b087cf118c8c2a1a831fd461127c92b3014152a363b3b70d3754 2856 rust-sm3_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sm3"
   ],
   "Files": [
-    "acb4eed3b3c4ab2853bb6599ee92ef6e 2276 rust-sm3_0.4.2-1.dsc 7dd35b1578061e3e6928ea4e2c94ee43 10344 rust-sm3_0.4.2.orig.tar.gz 8b129cf845cc3ee0b4b53da6932bd4eb 2636 rust-sm3_0.4.2-1.debian.tar.xz"
+    "bed0f7316fd7e132d6c812e630dadf75 2375 rust-sm3_0.5.0-1.dsc 951dcd43d41a7108ffd962ffbe2bb62b 11888 rust-sm3_0.5.0.orig.tar.gz 29d93dcf4770743caaee1d70cacc06c4 2856 rust-sm3_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/hashes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-digest-0.10+default-dev, librust-digest-0.10+dev-dev, librust-hex-literal-0.2+default-dev"
+    "dh-cargo, librust-digest-0.11+default-dev, librust-digest-0.11+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sm3]"
   ],
   "Version": [
-    "0.4.2-1"
+    "0.5.0-1"
   ]
 }

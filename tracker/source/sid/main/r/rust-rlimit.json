@@ -6,19 +6,25 @@
     "librust-rlimit-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.180) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b6964d7f8fb4733b2b782ab363c698a80375ad95b20e61b0dfc017f9bc0d65bb 2137 rust-rlimit_0.8.3-1.dsc f7278a1ec8bfd4a4e07515c589f5ff7b309a373f987393aef44813d9dcf87aa3 16575 rust-rlimit_0.8.3.orig.tar.gz b0b96a234b472cb93fc5e971ec6367359314679b636b64b132c7b73b09c80c12 2692 rust-rlimit_0.8.3-1.debian.tar.xz"
+    "0e12d9399d671e788f22803e0ea49ff4fd94bb67eddd682024ca3ddba0ca5bff 2278 rust-rlimit_0.11.0-1.dsc f35ee2729c56bb610f6dba436bf78135f728b7373bdffae2ec815b2d3eb98cc3 23413 rust-rlimit_0.11.0.orig.tar.gz bc2ad3a6f1b75f29c5479af67c627ba093e208b2849470e5d0f8cc8d4df6865b 2912 rust-rlimit_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rlimit"
   ],
   "Files": [
-    "139579d8c2d253edde27fcc9206e17fe 2137 rust-rlimit_0.8.3-1.dsc d09c9de7675646ce0d17d8b77738aee3 16575 rust-rlimit_0.8.3.orig.tar.gz f785cbf2e6b8f0a0fb84efec81551321 2692 rust-rlimit_0.8.3-1.debian.tar.xz"
+    "da85ab51c7034e372b7e8a6fbb5861c9 2278 rust-rlimit_0.11.0-1.dsc d8e2eb49a7115b86d201b337c9f2a8b0 23413 rust-rlimit_0.11.0.orig.tar.gz 7896f55096331670d22187ad11ec3efa 2912 rust-rlimit_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Nugine/rlimit/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-once-cell-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rlimit]"
   ],
   "Version": [
-    "0.8.3-1"
+    "0.11.0-1"
   ]
 }

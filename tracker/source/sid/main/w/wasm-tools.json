@@ -6,10 +6,10 @@
     "librust-wasm-tools-dev, wasm-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-bash-completion, dh-sequence-rust, cmark-gfm \u003c!nodoc\u003e, help2man, librust-addr2line-dev, librust-anyhow-dev, librust-arbitrary-dev, librust-auditable-serde-dev, librust-bitflags-dev, librust-blake3-dev, librust-bytesize-dev, librust-clap-complete-dev, librust-clap-dev, librust-comfy-table-dev, librust-cpp-demangle-dev, librust-egg-dev, librust-env-logger-dev, librust-flagset-dev, librust-flate2-dev, librust-gimli-dev, librust-glob-dev, librust-heck-dev, librust-id-arena-dev, librust-im-rc-dev, librust-indexmap-dev, librust-indoc-dev, librust-is-executable-dev, librust-itertools-dev, librust-libtest-mimic-dev, librust-log-dev, librust-logos-dev, librust-petgraph-dev, librust-pretty-assertions-dev, librust-rand-dev, librust-rayon-dev, librust-regex-dev, librust-rustc-demangle-dev, librust-semver-dev, librust-serde-derive-dev, librust-serde-dev, librust-serde-json-dev, librust-serde-yaml-dev, librust-smallvec-dev, librust-spdx-dev, librust-tempfile-dev, librust-termcolor-dev, librust-thiserror-dev, librust-unicode-xid-dev, librust-url-dev, librust-wasm-encoder-dev, librust-wasmparser-dev, librust-wasmprinter-dev, librust-wast-dev, librust-wat-dev, libstring-shellquote-perl"
+    "debhelper-compat (= 14), dh-sequence-bash-completion, dh-sequence-rust, cmark-gfm \u003c!nodoc\u003e, help2man, librust-addr2line-0.25-dev, librust-anyhow-1-dev, librust-arbitrary-1-dev, librust-auditable-serde-0.9-dev, librust-bitflags-2-dev, librust-blake3-1-dev, librust-bytesize-2-dev, librust-clap-complete-4-dev, librust-clap-4-dev, librust-comfy-table-7-dev, librust-cpp-demangle-0.5-dev, librust-egg-0.6-dev, librust-env-logger-0.11-dev, librust-flagset-0.4-dev, librust-flate2-1-dev, librust-gimli-0.32-dev, librust-glob-0.3-dev, librust-heck-0.5-dev, librust-id-arena-2-dev, librust-im-rc-15-dev, librust-indexmap-2-dev, librust-indoc-2-dev, librust-is-executable-1-dev, librust-itertools-0.14-dev, librust-libtest-mimic-dev (\u003c\u003c 0.9), librust-log-0.4-dev, librust-logos-0.15-dev, librust-petgraph-0.6-dev, librust-pretty-assertions-1-dev, librust-rand-0.10-dev, librust-rayon-1-dev, librust-regex-1-dev, librust-rustc-demangle-0.1-dev, librust-semver-1-dev, librust-serde-derive-1-dev, librust-serde-1-dev, librust-serde-json-1-dev, librust-serde-yaml-0.9-dev, librust-smallvec-1-dev, librust-spdx-0.13-dev, librust-tempfile-3-dev, librust-termcolor-1-dev, librust-thiserror-2-dev, librust-unicode-xid-0.2-dev, librust-url-2-dev, librust-wasm-encoder-0.239-dev, librust-wasmparser-0.239-dev, librust-wasmprinter-0.239-dev, librust-wast-239-dev, librust-wat-1-dev, libstring-shellquote-perl"
   ],
   "Checksums-Sha256": [
-    "ffb056ed3d5f6d85bb8e3c1fbd95a046d68ba476025263e5e95adf96638878a7 5344 wasm-tools_1.239.0+ds-9.dsc b2916cad510b418273cb2bb5e842fa74f3c250df5ce401d79ee1276ea7bf7a2b 2124652 wasm-tools_1.239.0+ds.orig.tar.xz 11cf99bb6cd5b59db057b9781dc2c1126ed89db5a88d1037d3ed51684e6caa6b 13300 wasm-tools_1.239.0+ds-9.debian.tar.xz"
+    "285432e861d70cff60c56e576b085341559ce53461d025b93228ce3d32c27984 4006 wasm-tools_1.239.0+ds-10.dsc b2916cad510b418273cb2bb5e842fa74f3c250df5ce401d79ee1276ea7bf7a2b 2124652 wasm-tools_1.239.0+ds.orig.tar.xz 975142f82c494196ab92241bfa71e73e6800e518836372546dc9e5aef763d2f5 13800 wasm-tools_1.239.0+ds-10.debian.tar.xz"
   ],
   "Description": [
     "low-level manipulation of WebAssembly modules wasm-tools is a collection of routines for working with wasm modules and component."
@@ -18,7 +18,7 @@
     "pool/main/w/wasm-tools"
   ],
   "Files": [
-    "e46d3130a56439239c94d0e3e9c94c63 5344 wasm-tools_1.239.0+ds-9.dsc f18f76f111f3c5a57cddb51a2d0a079f 2124652 wasm-tools_1.239.0+ds.orig.tar.xz 23c0b0405c49eff13bce94a1b9b9195c 13300 wasm-tools_1.239.0+ds-9.debian.tar.xz"
+    "781577dba0d837c0c9da9bc7a76b0f66 4006 wasm-tools_1.239.0+ds-10.dsc f18f76f111f3c5a57cddb51a2d0a079f 2124652 wasm-tools_1.239.0+ds.orig.tar.xz 86b15f8487e2fc5024dea2a15f6fd663 13800 wasm-tools_1.239.0+ds-10.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-glob-dev, librust-indoc-dev, librust-json-from-wast-0.239+default-dev, librust-json-from-wast-dev, librust-libtest-mimic-dev, librust-wasm-compose-0.239+default-dev, librust-wasm-compose-dev, librust-wasm-metadata-0.239+default-dev, librust-wasm-metadata-0.239+oci-dev, librust-wasm-metadata-0.239+serde-dev, librust-wasm-metadata-dev, librust-wasm-mutate-0.239+default-dev, librust-wasm-mutate-dev, librust-wasm-shrink-0.239+default-dev, librust-wasm-shrink-dev, librust-wasm-smith-0.239+component-model-dev, librust-wasm-smith-0.239+default-dev, librust-wasm-smith-0.239+serde-dev, librust-wasm-smith-0.239+wasmparser-dev, librust-wasm-smith-dev, librust-wasm-tools-1+addr2line-dev, librust-wasm-tools-1+completion-dev, librust-wasm-tools-1+component-dev, librust-wasm-tools-1+compose-dev, librust-wasm-tools-1+default-dev, librust-wasm-tools-1+demangle-dev, librust-wasm-tools-1+dump-dev, librust-wasm-tools-1+json-from-wast-dev, librust-wasm-tools-1+metadata-dev, librust-wasm-tools-1+mutate-dev, librust-wasm-tools-1+objdump-dev, librust-wasm-tools-1+parse-dev, librust-wasm-tools-1+print-dev, librust-wasm-tools-1+shrink-dev, librust-wasm-tools-1+smith-dev, librust-wasm-tools-1+strip-dev, librust-wasm-tools-1+validate-dev, librust-wasm-tools-1+wast-dev, librust-wasm-tools-1+wit-smith-dev, librust-wasm-wave-0.239+default-dev, librust-wasm-wave-0.239+wit-dev, librust-wasm-wave-dev, librust-wasmprinter-dev, librust-wit-component-0.239+default-dev, librust-wit-component-0.239+dummy-module-dev, librust-wit-component-0.239+semver-check-dev, librust-wit-component-0.239+wat-dev, librust-wit-component-dev, librust-wit-encoder-0.239+default-dev, librust-wit-encoder-0.239+from-parser-dev, librust-wit-encoder-0.239+serde-dev, librust-wit-encoder-dev, librust-wit-parser-0.239+decoding-dev, librust-wit-parser-0.239+serde-dev, librust-wit-parser-0.239+wat-dev, librust-wit-parser-dev, librust-wit-smith-0.239+default-dev, librust-wit-smith-dev"
+    "dh-rust, librust-glob-0.3-dev, librust-indoc-dev, librust-json-from-wast-0.239+default-dev, librust-json-from-wast-dev, librust-libtest-mimic-dev, librust-wasm-compose-dev, librust-wasm-metadata-dev, librust-wasm-mutate-dev, librust-wasm-shrink-dev, librust-wasm-smith-dev, librust-wasm-wave-0.239+wit-dev, librust-wasm-wave-dev, librust-wasmprinter-0.239-dev, librust-wit-component-dev, librust-wit-encoder-dev, librust-wit-parser-dev, librust-wit-smith-dev"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/wasm-tools"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/wasm-tools.git"
   ],
   "Version": [
-    "1.239.0+ds-9"
+    "1.239.0+ds-10"
   ]
 }

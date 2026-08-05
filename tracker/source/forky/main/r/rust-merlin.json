@@ -6,16 +6,19 @@
     "librust-merlin-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+std-dev (\u003e= 1.2.4-~~) \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.2.4-~~) \u003c!nocheck\u003e, librust-keccak-0.1-dev \u003c!nocheck\u003e, librust-rand-core-0.6+std-dev \u003c!nocheck\u003e, librust-rand-core-0.6-dev \u003c!nocheck\u003e, librust-zeroize-1+zeroize-derive-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+std-dev (\u003e= 1.2.4) \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.2.4) \u003c!nocheck\u003e, librust-keccak-0.1-dev \u003c!nocheck\u003e, librust-rand-core-0.6+std-dev \u003c!nocheck\u003e, librust-rand-core-0.6-dev \u003c!nocheck\u003e, librust-zeroize-1+zeroize-derive-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bca15ff7478982feba841a2f757081084b7cf341c194b1f1108d4c09507c964a 1970 rust-merlin_3.0.0-1.dsc 58c38e2799fc0978b65dfff8023ec7843e2330bb462f19198840b34b6582397d 10964 rust-merlin_3.0.0.orig.tar.gz 0198df2affe90b2ade888d10cbd0173803d001ebe172a50e223541fd623fd56c 3248 rust-merlin_3.0.0-1.debian.tar.xz"
+    "473c4a8144c6da341359e26210181b62ec0d81db40f040a2cfc907308defd683 2573 rust-merlin_3.0.0-2.dsc 58c38e2799fc0978b65dfff8023ec7843e2330bb462f19198840b34b6582397d 10964 rust-merlin_3.0.0.orig.tar.gz 888f8539cbb2a21ff153129cea7e82ed7ec1251fd5ca2625418d55885e9405ef 4548 rust-merlin_3.0.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-merlin"
   ],
   "Files": [
-    "ed541ede9baccb822028e1dc3294b720 1970 rust-merlin_3.0.0-1.dsc 9a97ccb2321a40564f2ecea83edca866 10964 rust-merlin_3.0.0.orig.tar.gz dc7574576eb6cc9e4d824aac345c39f3 3248 rust-merlin_3.0.0-1.debian.tar.xz"
+    "de761bddf9c2143df829a344cb662139 2573 rust-merlin_3.0.0-2.dsc 9a97ccb2321a40564f2ecea83edca866 10964 rust-merlin_3.0.0.orig.tar.gz 9275d65dfb6312a2707a51a12ab39fca 4548 rust-merlin_3.0.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-curve25519-dalek-4+default-dev, librust-curve25519-dalek-4+rand-core-dev, librust-rand-chacha-0.3+default-dev, librust-strobe-rs-0.8+default-dev"
+    "dh-cargo, librust-curve25519-dalek-4+default-dev, librust-curve25519-dalek-4+rand-core-dev, librust-rand-chacha-0.3+default-dev, librust-strobe-rs-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/merlin]"
   ],
   "Version": [
-    "3.0.0-1"
+    "3.0.0-2"
   ]
 }

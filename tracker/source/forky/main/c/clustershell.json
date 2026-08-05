@@ -6,22 +6,22 @@
     "python3-clustershell, clustershell"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, bash-completion, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, bash-completion, python3-all, python3-setuptools, bc \u003c!nocheck\u003e, pdsh \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "835ff00ec2dbeaf56536a573340162bfa77b082cd95393965dcebba959746b93 2131 clustershell_1.9.3-2.dsc e284c0e6b3fe0a0cd6be67df71dfbf6aa321188973db683a057f5637552fbc8c 417135 clustershell_1.9.3.orig.tar.gz 84409923b727186674c4b2a781c603dcdd92ab6d13d9212844e7584feb401dc3 4392 clustershell_1.9.3-2.debian.tar.xz"
+    "95a862b67a9dcef2998d6550f554d6a055ec332dac05442953b9e604abbfd250 2208 clustershell_1.10.1-1.dsc b27af0baa9d1b10ac6a2729700b03e5a2796c838cbb6aaf1902698226ab9ea8a 440348 clustershell_1.10.1.orig.tar.gz 90e3614733d7a3c9f93ca857c43a4286dff97ea5c9c69446876e353af0f6970f 8912 clustershell_1.10.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/clustershell"
   ],
   "Files": [
-    "2252f2472cbba14148fefd76086681c2 2131 clustershell_1.9.3-2.dsc 2831b438df1734e072854d56b15aa401 417135 clustershell_1.9.3.orig.tar.gz a9571cb473062d287fbd365560158824 4392 clustershell_1.9.3-2.debian.tar.xz"
+    "c2e9c52d4f5cfd4ba15944bb8449566c 2208 clustershell_1.10.1-1.dsc b4216d481b88bd9be10164ef76aa8118 440348 clustershell_1.10.1.orig.tar.gz 319b673e9d4fb417d0439c456be23b17 8912 clustershell_1.10.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://cea-hpc.github.io/clustershell/"
+    "https://clustershell.github.io/clustershell/"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -30,7 +30,7 @@
     "clustershell"
   ],
   "Package-List": [
-    "clustershell deb net optional arch=all python3-clustershell deb python optional arch=all"
+    "clustershell deb net unknown arch=all python3-clustershell deb python unknown arch=all"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,9 @@
   ],
   "Standards-Version": [
     "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Stéphan Gorget \u003cphantez@gmail.com\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/clustershell.git"
   ],
   "Version": [
-    "1.9.3-2"
+    "1.10.1-1"
   ]
 }

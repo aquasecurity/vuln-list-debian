@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-curve25519-dalek-4+alloc-dev \u003c!nocheck\u003e, librust-curve25519-dalek-4+precomputed-tables-dev \u003c!nocheck\u003e, librust-curve25519-dalek-4+zeroize-dev \u003c!nocheck\u003e, librust-curve25519-dalek-4-dev \u003c!nocheck\u003e, librust-rand-core-0.6-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev \u003c!nocheck\u003e, librust-zeroize-1+zeroize-derive-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-curve25519-dalek-5+precomputed-tables-dev \u003c!nocheck\u003e, librust-curve25519-dalek-5+zeroize-dev \u003c!nocheck\u003e, librust-curve25519-dalek-5-dev \u003c!nocheck\u003e, librust-rand-core-0.10-dev \u003c!nocheck\u003e, librust-zeroize-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0f2d505f83a53f96b559419d0e6dea9177970be44fb89cfad802a0f8240e8005 2814 rust-x25519-dalek_2.0.1+dfsg-1.dsc 918102d924b2d87978f6b61ffeb22de5f66a516bf3f38d93a7a39bb21bfcd730 87468 rust-x25519-dalek_2.0.1+dfsg.orig.tar.gz 8291585cf28b48a01ba7c1b9aa2912b7e5806b156966e00282e9137498e75c65 3512 rust-x25519-dalek_2.0.1+dfsg-1.debian.tar.xz"
+    "dd290153512898c15dd41271fe80979b56a43f2179ac39c228409f1caae489ff 2698 rust-x25519-dalek_3.0.0+dfsg-1.dsc 71574c16e8831e6a8d35448b6826a723e03a02a04733dac4ad3e4a9826159ff7 95779 rust-x25519-dalek_3.0.0+dfsg.orig.tar.gz 0515e1828c8b866ba3fb0bd27821700ecd82d6d809c2ebab7e88732b1698c9a4 3500 rust-x25519-dalek_3.0.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-x25519-dalek"
   ],
   "Files": [
-    "c5c8d8835fdab2f8298c1667f9286849 2814 rust-x25519-dalek_2.0.1+dfsg-1.dsc e62f3f2b3aa0103937e5ed76f261c962 87468 rust-x25519-dalek_2.0.1+dfsg.orig.tar.gz a6ac59c8c2b013c044422161d94ecd73 3512 rust-x25519-dalek_2.0.1+dfsg-1.debian.tar.xz"
+    "52262ba630fa2506d60e113eef692ed2 2698 rust-x25519-dalek_3.0.0+dfsg-1.dsc 6db012054fb296ae553d8dba89193305 95779 rust-x25519-dalek_3.0.0+dfsg.orig.tar.gz 56a687d4a8bc8453fcd5f5bfc1a106b5 3500 rust-x25519-dalek_3.0.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-criterion-0.5+default-dev, librust-rand-core-0.6+getrandom-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-getrandom-0.4+default-dev, librust-getrandom-0.4+sys-rng-dev, librust-postcard-1+alloc-dev, librust-postcard-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/x25519-dalek]"
   ],
   "Version": [
-    "2.0.1+dfsg-1"
+    "3.0.0+dfsg-1"
   ]
 }

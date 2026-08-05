@@ -6,16 +6,19 @@
     "librust-selinux-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.70-~~) \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-dunce-1+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e, libselinux1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+default-dev (\u003e= 0.70) \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e, librust-dunce-1+default-dev \u003c!nocheck\u003e, librust-walkdir-2+default-dev \u003c!nocheck\u003e, libselinux1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9190dbfbd3e89be82802dbe9dea615796321b6add1f126516f5bc0f70181539e 1822 rust-selinux-sys_0.6.12-2.dsc 8d557667087c5b4791e180b80979cd1a92fdb9bfd92cfd4b9ab199c4d7402423 8792 rust-selinux-sys_0.6.12.orig.tar.gz 42f5dc299a195c6411d1e7a48d963c29c05df2d6d7b1f9a2360dc2b8dbe6bdcc 3896 rust-selinux-sys_0.6.12-2.debian.tar.xz"
+    "3bfd1164facd00c31e35436a8e21d9770dcd63a8a5a7db59a1fb1f85e2120f74 2448 rust-selinux-sys_0.7.0-1.dsc acf9f7ddcfd31f0558b246d6ddc4a34fb4550668f364a09dd51f28409157e754 12364 rust-selinux-sys_0.7.0.orig.tar.gz 2feebb8440c9eff8029fba5797075824b7ee90ff88b49375ab64d0cbcf61e6db 3540 rust-selinux-sys_0.7.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-selinux-sys"
   ],
   "Files": [
-    "78f5c676437f46003fd0f8f48bec8fcc 1822 rust-selinux-sys_0.6.12-2.dsc b431835bd0c6db4abc2241dadb3fc7d8 8792 rust-selinux-sys_0.6.12.orig.tar.gz 4b05afb854d209eb416c572b35a0fab4 3896 rust-selinux-sys_0.6.12-2.debian.tar.xz"
+    "db7c4f435bf51c86b7ada276604221bf 2448 rust-selinux-sys_0.7.0-1.dsc 00c232022021cefea05384e34fb6aeb9 12364 rust-selinux-sys_0.7.0.orig.tar.gz 79179851518ccb7c01b87cf370d5212e 3540 rust-selinux-sys_0.7.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/selinux-sys]"
   ],
   "Version": [
-    "0.6.12-2"
+    "0.7.0-1"
   ]
 }
