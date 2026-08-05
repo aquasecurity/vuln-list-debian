@@ -6,19 +6,25 @@
     "librust-tokio-openssl-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-util-0.3-dev \u003c!nocheck\u003e, librust-openssl-0.10+default-dev (\u003e= 0.10.32-~~) \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-openssl-0.10+default-dev (\u003e= 0.10.61) \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c831038380012430f6b58da2142974e4fe69ef942939e73325ca3507ff40295a 2447 rust-tokio-openssl_0.6.3-1.dsc c08f9ffb7809f1b20c1b398d92acf4cc719874b3b2b2d9ea2f09b4a80350878a 11970 rust-tokio-openssl_0.6.3.orig.tar.gz 055852e758c9baf6514ff69575833a6cd2cba096451545df159d8b4d3e88de7a 2620 rust-tokio-openssl_0.6.3-1.debian.tar.xz"
+    "7aa7df2d50a1fde363deee812c58287abfe88c0e7e0771d4d15c6cc035bc5bd0 2488 rust-tokio-openssl_0.6.5-1.dsc 59df6849caa43bb7567f9a36f863c447d95a11d5903c9cc334ba32576a27eadd 11977 rust-tokio-openssl_0.6.5.orig.tar.gz 7df53f38d53616c1e799fcdb7fa769dc011227a854276067e7891c603b41b707 2848 rust-tokio-openssl_0.6.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokio-openssl"
   ],
   "Files": [
-    "16ca3e75539be4c60f805aee383736a0 2447 rust-tokio-openssl_0.6.3-1.dsc 4be35a5d9dce30dbe3d9e069a7fd6d9a 11970 rust-tokio-openssl_0.6.3.orig.tar.gz d633104d5eb4fe7a381777b611bef666 2620 rust-tokio-openssl_0.6.3-1.debian.tar.xz"
+    "769f113245c575f7669898b08227f656 2488 rust-tokio-openssl_0.6.5-1.dsc cfb36aa3bfdd511976cac0a78484b9a5 11977 rust-tokio-openssl_0.6.5.orig.tar.gz 6ae60395de02c0a0bb2197cef598e1fe 2848 rust-tokio-openssl_0.6.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tokio-rs/tokio-openssl"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+full-dev"
+    "dh-cargo, librust-futures-util-0.3-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokio-openssl]"
   ],
   "Version": [
-    "0.6.3-1"
+    "0.6.5-1"
   ]
 }
