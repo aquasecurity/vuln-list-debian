@@ -6,16 +6,16 @@
     "libpmix-dev, libpmix2t64, libpmix-bin, python3-pmix"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), architecture-is-64-bit, dh-sequence-python3, chrpath, flex, bison, libfl-dev, python3-dev, cython3, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-recommonmark, libjs-jquery, libpsm-infinipath1-dev [amd64], libucx-dev [amd64 arm64 ppc64el], libpsm2-dev [amd64], libcurl4-gnutls-dev | libcurl-dev, libhwloc-dev, zlib1g-dev, libevent-dev, libjansson-dev, libltdl-dev, libmunge-dev [!hurd-any]"
+    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 14), architecture-is-64-bit, dh-sequence-python3, dh-sequence-sphinxdoc, chrpath, flex, bison, libfl-dev, libesmtp-dev, python3-all-dev, cython3, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-recommonmark, libjs-jquery, libucx-dev [amd64 arm64 ppc64el loong64 riscv64], libpsm2-dev [amd64], libcurl4-gnutls-dev | libcurl-dev, libhwloc-dev, zlib1g-dev, libevent-dev, libjansson-dev, libltdl-dev, libmunge-dev [!hurd-any]"
   ],
   "Checksums-Sha256": [
-    "33b709bbcdd47b4a9a19c74b2a5efa78b121bdc43c712c76616970bb4621f11a 2607 pmix_6.0.0+really5.0.9-3.dsc b03cecaeca15cf1c640b79ef4fe95ab4d4c24da776e5f0d821d9be72507bc216 1330456 pmix_6.0.0+really5.0.9.orig.tar.xz 5030f461f512da2b1e59d097a6917e14aaa1be9017c15a3a4de958d747605525 28268 pmix_6.0.0+really5.0.9-3.debian.tar.xz"
+    "26c768510b9e68fbb206804f126dd307f4e6c197d74b7777a586982addefa2af 2630 pmix_6.1.1~rc2-4.dsc cd92f0968c17d4b1c085584dffa88071f024eb5bb4ba88d1a4a32480666a3efd 2087598 pmix_6.1.1~rc2.orig.tar.gz 6059b55a8cf9d5fd27f7c9cbbe29b2c6ae059018fa984799416874c582fc240c 27648 pmix_6.1.1~rc2-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pmix"
   ],
   "Files": [
-    "ea9b039c17c93bb3e53424a8c648a965 2607 pmix_6.0.0+really5.0.9-3.dsc c1e2708a47dcd9714413b7e44cdb20be 1330456 pmix_6.0.0+really5.0.9.orig.tar.xz 8dc970431a49345e6ee6458f1be34390 28268 pmix_6.0.0+really5.0.9-3.debian.tar.xz"
+    "81a88bf5d18c2a555f8a6cc9e2c6b3e9 2630 pmix_6.1.1~rc2-4.dsc 6814f97add72100f89c3960117479b21 2087598 pmix_6.1.1~rc2.orig.tar.gz cdb916d11332e8a345edf3743ed26ce4 27648 pmix_6.1.1~rc2-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pmix"
   ],
   "Package-List": [
-    "libpmix-bin deb net optional arch=any libpmix-dev deb libdevel optional arch=any libpmix2t64 deb libs optional arch=any python3-pmix deb net optional arch=any"
+    "libpmix-bin deb net optional arch=any libpmix-dev deb libdevel optional arch=any libpmix2t64 deb libs optional arch=any python3-pmix deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,18 +39,24 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
   ],
   "Uploaders": [
     "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/science-team/pmix.git"
+    "https://salsa.debian.org/science-team/pmix"
   ],
   "Vcs-Git": [
     "https://salsa.debian.org/science-team/pmix.git -b debian/latest"
   ],
   "Version": [
-    "6.0.0+really5.0.9-3"
+    "6.1.1~rc2-4"
   ]
 }
