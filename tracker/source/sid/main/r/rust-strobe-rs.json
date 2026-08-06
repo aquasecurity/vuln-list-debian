@@ -6,19 +6,25 @@
     "librust-strobe-rs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e, librust-keccak-0.1+default-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e, librust-zeroize-1+derive-dev (\u003e= 1.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.10) \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.5) \u003c!nocheck\u003e, librust-keccak-0.2+default-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.6) \u003c!nocheck\u003e, librust-zeroize-1+default-dev (\u003e= 1.8) \u003c!nocheck\u003e, librust-zeroize-1+derive-dev (\u003e= 1.8) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ad9fec7fde1977df621c0703fdc51bc66a1141d58481d4d5cca529e4b3c8bc1e 2019 rust-strobe-rs_0.8.1-2.dsc fabb238a1cccccfa4c4fb703670c0d157e1256c1ba695abf1b93bd2bb14bab2d 63967 rust-strobe-rs_0.8.1.orig.tar.gz 9cd890c20047684317da99350c004ef76a4344fc19b89536e326d1c77a04a391 3100 rust-strobe-rs_0.8.1-2.debian.tar.xz"
+    "e0097555def1e0e7a3ac9d298ec73ba4133c0f9e36158d3d79171fd7f8357a7d 2695 rust-strobe-rs_0.13.0-1.dsc 83561175f0a962dea437885589480d216d8741debf853e0d36edd526344fd273 68329 rust-strobe-rs_0.13.0.orig.tar.gz 8e08a41e4d8a55e4ade1d0e88e2ae5668bdfdc456767ff44c011fe9950c930d9 3240 rust-strobe-rs_0.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-strobe-rs"
   ],
   "Files": [
-    "2091400ea0a876d451021387d8faa792 2019 rust-strobe-rs_0.8.1-2.dsc 11b219b2bff531d899759c7352193758 63967 rust-strobe-rs_0.8.1.orig.tar.gz d8ce99375902a036f2c8749db82e4861 3100 rust-strobe-rs_0.8.1-2.debian.tar.xz"
+    "ba91259503dcd50446946eeaa5e4ba95 2695 rust-strobe-rs_0.13.0-1.dsc 7f5c4d5683949e5998fd2707d4e1e609 68329 rust-strobe-rs_0.13.0.orig.tar.gz 17e5d85b6f62217364d50e05962aba0d 3240 rust-strobe-rs_0.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rozbb/strobe-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.4+default-dev, librust-criterion-0.4+html-reports-dev, librust-hex-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-hex-0.4+default-dev, librust-rand-0.10+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jochen Sprickerhof \u003cjspricke@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/strobe-rs]"
   ],
   "Version": [
-    "0.8.1-2"
+    "0.13.0-1"
   ]
 }
