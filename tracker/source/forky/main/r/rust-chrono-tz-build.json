@@ -6,16 +6,19 @@
     "librust-chrono-tz-build-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-parse-zoneinfo-0.3+default-dev \u003c!nocheck\u003e, librust-phf-codegen-0.11-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-parse-zoneinfo-0.5+default-dev \u003c!nocheck\u003e, librust-phf-codegen-dev (\u003c\u003c 0.13) \u003c!nocheck\u003e, librust-phf-codegen-dev (\u003e= 0.11) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7ac03782e2c1f2255818b50bc27b9d6225c1cd9e5bf213cd4f7c2a0806e95365 2355 rust-chrono-tz-build_0.4.0-1.dsc e94fea34d77a245229e7746bd2beb786cd2a896f306ff491fb8cecb3074b10a7 10660 rust-chrono-tz-build_0.4.0.orig.tar.gz 8e732f1e611d840196a82a8031b6dfde3a99698e592cf9635d63d67083024cd4 3020 rust-chrono-tz-build_0.4.0-1.debian.tar.xz"
+    "55eeb85aaf3a6d8c4cc1d86eee07719add7c966845ad703b54d6068592a4a5a0 2424 rust-chrono-tz-build_0.5.0-1.dsc c7d8d1efd5109b9c1cd3b7966bd071cdfb53bb6eb0b22a473a68c2f70a11a1eb 11381 rust-chrono-tz-build_0.5.0.orig.tar.gz bc3a04a1cc3af421ea3fbca05b39866ea91db2ac7a3e271cecb8139481083237 3708 rust-chrono-tz-build_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-chrono-tz-build"
   ],
   "Files": [
-    "22da67f765e5dcc2853b3e4d7cbc4353 2355 rust-chrono-tz-build_0.4.0-1.dsc 91404301db40bb9cf228e8962f99d282 10660 rust-chrono-tz-build_0.4.0.orig.tar.gz 3767733e0bb768888d1a550b613ad2b3 3020 rust-chrono-tz-build_0.4.0-1.debian.tar.xz"
+    "871e6de730001863e47181b919429192 2424 rust-chrono-tz-build_0.5.0-1.dsc 359b5b6d254814bf3d65320c9eb11eca 11381 rust-chrono-tz-build_0.5.0.orig.tar.gz 41721c0508ffbe3b3fa96850493158bb 3708 rust-chrono-tz-build_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/chrono-tz-build]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.5.0-1"
   ]
 }
