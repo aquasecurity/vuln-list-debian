@@ -6,19 +6,25 @@
     "librust-multihash-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-core2-0.4+std-dev \u003c!nocheck\u003e, librust-core2-0.4-dev \u003c!nocheck\u003e, librust-multihash-0.19+std-dev \u003c!nocheck\u003e, librust-multihash-0.19-dev \u003c!nocheck\u003e, librust-multihash-derive-impl-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.81) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-multihash-0.19+std-dev (\u003e= 0.19.2) \u003c!nocheck\u003e, librust-multihash-0.19-dev (\u003e= 0.19.2) \u003c!nocheck\u003e, librust-multihash-derive-impl-0.1+default-dev (\u003e= 0.1.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cb844f48b3f0a5a52e69bd9727fa9ead73ef64a37107d2267b3c27672bb0a9ce 2478 rust-multihash-derive_0.9.0-1.dsc 890e72cb7396cb99ed98c1246a97b243cc16394470d94e0bc8b0c2c11d84290e 3264 rust-multihash-derive_0.9.0.orig.tar.gz d916c127d95b94cc3745a58790ddb090b1beb13fcf3b545dd0dafa330788ee3c 2680 rust-multihash-derive_0.9.0-1.debian.tar.xz"
+    "d6905f25e757a4c041b78856e474068add203fb84f36a28d6165704485553df8 2511 rust-multihash-derive_0.9.3-1.dsc 4723acdce756db211a53f01b3419dbdf63cb48cef5df86260f55309364735fbf 5945 rust-multihash-derive_0.9.3.orig.tar.gz 4e541f876bc0b8c7511664ecd1e5a3c4d7446cc496823f2808c01653bf7bfba0 2836 rust-multihash-derive_0.9.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-multihash-derive"
   ],
   "Files": [
-    "5843fc0985346b131dff8fbe27e927de 2478 rust-multihash-derive_0.9.0-1.dsc 20c70575d1b0fc066a4c41293e8c77cd 3264 rust-multihash-derive_0.9.0.orig.tar.gz e9d8fa7bf7f5f676e9469353930f8e1b 2680 rust-multihash-derive_0.9.0-1.debian.tar.xz"
+    "d09b8eb9d357cbe2999b3cbce001260e 2511 rust-multihash-derive_0.9.3-1.dsc 4df4edfef5238061882495967d779f65 5945 rust-multihash-derive_0.9.3.orig.tar.gz c08189bcdf36e2edca9f8763ed008276 2836 rust-multihash-derive_0.9.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/multiformats/rust-multihash"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-trybuild-1+default-dev"
+    "dh-cargo, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jochen Sprickerhof \u003cjspricke@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/multihash-derive]"
   ],
   "Version": [
-    "0.9.0-1"
+    "0.9.3-1"
   ]
 }
