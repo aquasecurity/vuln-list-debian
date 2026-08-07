@@ -6,19 +6,25 @@
     "librust-input-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4-~~) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-11-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-14-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-15-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-19-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-21-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-input-sys-1-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e, librust-io-lifetimes-2+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20-~~) \u003c!nocheck\u003e, librust-udev-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-11-dev (\u003e= 1.19.0) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-14-dev (\u003e= 1.19.0) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-15-dev (\u003e= 1.19.0) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-19-dev (\u003e= 1.19.0) \u003c!nocheck\u003e, librust-input-sys-1+libinput-1-21-dev (\u003e= 1.19.0) \u003c!nocheck\u003e, librust-input-sys-1-dev (\u003e= 1.19.0) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.20) \u003c!nocheck\u003e, librust-udev-0.9+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51127b6d962a2d0760dcfb50b01a080458817ef3a254761ff335c1f99f1bc722 2797 rust-input_0.9.0-2.dsc 7911ce3db9c10c5ab4a35c49af778a5f9a827bd0f7371d9be56175d8dd2740d0 40668 rust-input_0.9.0.orig.tar.gz 5455bb4cd66892881ce21c9a8fa42e01abe4e211f72598a2ad37e086455c582c 3128 rust-input_0.9.0-2.debian.tar.xz"
+    "e50fc5360eb2d06ab8886f0ca7a85d905484cfb682eee91d0991409d67382556 2789 rust-input_0.10.0-1.dsc f9793345a65d71317763a33066b5d8351f8760dde8d4930fe9e39b5f14a7959d 49952 rust-input_0.10.0.orig.tar.gz 0b789717b8ccf0e6ed39612a607ad94ef8b5719ecd569ec352f3f235be4bc75d 3236 rust-input_0.10.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-input"
   ],
   "Files": [
-    "4b465861710188d109ec9623b930890d 2797 rust-input_0.9.0-2.dsc b25bae8478dd756124afa3ea33b2d6ab 40668 rust-input_0.9.0.orig.tar.gz 54b5f78dd1230748e54b74afee2ad723 3128 rust-input_0.9.0-2.debian.tar.xz"
+    "3b4d3f5b692ab6e05f9cdd560f5eb16b 2789 rust-input_0.10.0-1.dsc 19de2d4eb408f13a6ea0e1c87edca9de 49952 rust-input_0.10.0.orig.tar.gz 0823367a0e12608647e3ab6b07456237 3236 rust-input_0.10.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Drakulix/input.rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustix-0.38+default-dev, librust-rustix-0.38+event-dev"
+    "dh-cargo, librust-rustix-1+default-dev, librust-rustix-1+event-dev, rustc"
   ],
   "Uploaders": [
     "Maytham Alsudany \u003cmaytha8thedev@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/input]"
   ],
   "Version": [
-    "0.9.0-2"
+    "0.10.0-1"
   ]
 }
