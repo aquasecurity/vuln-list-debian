@@ -6,19 +6,25 @@
     "librust-minspan-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "32431f7564b65375d4493eda7f3c0e6ed18926916cdafe274f3330cc50decabd 1513 rust-minspan_0.1.1-1.dsc 1269a17ac308ae0b906ec1b0ff8062fd0c82f18cc2956faa367302ec3380f4e8 2282 rust-minspan_0.1.1.orig.tar.gz d51c435b31c0507d935d3265bbef528b0c7532ad1bcedabb2c367d52ccbc3a21 2448 rust-minspan_0.1.1-1.debian.tar.xz"
+    "76b6874e40f6fa1f653762bba4728e1ebbf7d55eb66735643bddf1b057aac888 2205 rust-minspan_0.1.5-1.dsc 20219d20b3b77f743358539a182e339a6f682e09bb5675f870f320c4a1058c44 4788 rust-minspan_0.1.5.orig.tar.gz 21ddc0a5aa18994becb00b794e511b18344ab733e6f60236fdd548e14a796667 2628 rust-minspan_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-minspan"
   ],
   "Files": [
-    "d0590dae310e39a9b587ca72955bdd86 1513 rust-minspan_0.1.1-1.dsc 38439a62e58cb9456e8f0936f62097e7 2282 rust-minspan_0.1.1.orig.tar.gz 8358c324b23a12a2df69b66c100b19fd 2448 rust-minspan_0.1.1-1.debian.tar.xz"
+    "351228e7301f1dd1e7ece0941b1b5f77 2205 rust-minspan_0.1.5-1.dsc c15d9afa477ecd9d9936269a231b9472 4788 rust-minspan_0.1.5.orig.tar.gz a7d988737d242a3f11a6090754bc6476 2628 rust-minspan_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mwotton/minspan"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-proptest-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/minspan"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/minspan]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.5-1"
   ]
 }

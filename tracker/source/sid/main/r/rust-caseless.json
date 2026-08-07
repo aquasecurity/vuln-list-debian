@@ -6,19 +6,25 @@
     "librust-caseless-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e, librust-unicode-normalization-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-unicode-normalization-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e7168c7808423308a353edfc322c113b4e438399405033ca48134d7746cded3f 1868 rust-caseless_0.2.1-1.dsc 808dab3318747be122cb31d36de18d4d1c81277a76f8332a02b81a3d73463d7f 18826 rust-caseless_0.2.1.orig.tar.gz f106d03c6a37415341b61d271d7f2bf9a7be6d8f1ea8ccc78daf94ea48ba753a 3324 rust-caseless_0.2.1-1.debian.tar.xz"
+    "7f24022995d99ead254524900ed129ed47177090f5f29db0b0e01a3a26dd8bda 2259 rust-caseless_0.2.2-1.dsc 8b6fd507454086c8edfd769ca6ada439193cdb209c7681712ef6275cccbfe5d8 29309 rust-caseless_0.2.2.orig.tar.gz b051a0367d1d13705648b09495800f4c0e0555928d6d87681966c97dc2777d80 3464 rust-caseless_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-caseless"
   ],
   "Files": [
-    "11d9fc965e8fe0c4c64ef31f74c58009 1868 rust-caseless_0.2.1-1.dsc 32fb83ed87b1e043dff4e3f30497a3c0 18826 rust-caseless_0.2.1.orig.tar.gz 79cb4afc50418bbb56203ea048d28aa0 3324 rust-caseless_0.2.1-1.debian.tar.xz"
+    "92f1bda49d16e16fbae3b9dfdd014e1d 2259 rust-caseless_0.2.2-1.dsc 93ee0943ce0a267a5fe38867ab262eb6 29309 rust-caseless_0.2.2.orig.tar.gz 75a198cb413f32ebed50e1405c1d6359 3464 rust-caseless_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/unicode-rs/rust-caseless"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/caseless]"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.2-1"
   ]
 }

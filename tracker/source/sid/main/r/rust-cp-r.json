@@ -6,19 +6,25 @@
     "librust-cp-r-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-filetime-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-filetime-0.2+default-dev (\u003e= 0.2.6) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a09466100635fa266f9105f5a4bcf20bb456e1a3ad742c8493799231821c91f5 1830 rust-cp-r_0.5.1-2.dsc f21d305efe161d2d3179950f5746837215197e774bf7424c12eafc191b63e88a 9891 rust-cp-r_0.5.1.orig.tar.gz b3e3506916454b141f89a3834ab3e960c9b95e19152cb833b483812be110118a 2836 rust-cp-r_0.5.1-2.debian.tar.xz"
+    "8cfb64f0db2f92b3e2f1bf6eed79be19800baa504ee3ab3d55402c6a85986fee 2276 rust-cp-r_0.5.2-1.dsc 837ca07dfd27a2663ac7c4701bb35856b534c2a61dd47af06ccf65d3bec79ebc 10695 rust-cp-r_0.5.2.orig.tar.gz 82abe8136f4d7c08608678d889fa8a9b33c5f7a16b29aaea2da81b1162706654 3064 rust-cp-r_0.5.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cp-r"
   ],
   "Files": [
-    "bb51c348fd2541673f699955f778f571 1830 rust-cp-r_0.5.1-2.dsc 1ea26c926191d7d8108db9e478357a37 9891 rust-cp-r_0.5.1.orig.tar.gz 57308237f33f282bc50fe22eb8d6e80e 2836 rust-cp-r_0.5.1-2.debian.tar.xz"
+    "58fe1b6ef3cc5065b1f7c4505140345a 2276 rust-cp-r_0.5.2-1.dsc a596aaba2783efbd4c6d58f75016d072 10695 rust-cp-r_0.5.2.orig.tar.gz c2e70688bef25eb87f85d022eba06ad1 3064 rust-cp-r_0.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sourcefrog/cp_r"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cp-r]"
   ],
   "Version": [
-    "0.5.1-2"
+    "0.5.2-1"
   ]
 }

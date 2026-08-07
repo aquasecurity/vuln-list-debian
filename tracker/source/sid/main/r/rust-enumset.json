@@ -6,16 +6,19 @@
     "librust-enumset-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumset-derive-0.10+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumset-derive-0.15+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "88ad5dbcc5335b5ba15deb29dbb7e657027b7993c3f5a847840c4b0e03dfa197 2390 rust-enumset_1.1.5-1.dsc d07a4b049558765cef5f0c1a273c3fc57084d768b44d2f98127aef4cceb17293 26442 rust-enumset_1.1.5.orig.tar.gz 293646502fa87560c3870f000990246b83b1e0aae00d4aa04b21225046ff97ae 2960 rust-enumset_1.1.5-1.debian.tar.xz"
+    "4d6382f8141e5f5cd30d99e182c3a4d65083b0b2be7a6e4cb723dd678e828578 2257 rust-enumset_1.1.14-1.dsc ccc5801fd11762e24d1e420d01d2ac518f2a2ca4329d4fbb6639f2412b6204e0 26458 rust-enumset_1.1.14.orig.tar.gz 371a187b4a341162ef46088304a733087653ec1665b160fadf45a200d7194703 3380 rust-enumset_1.1.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-enumset"
   ],
   "Files": [
-    "99d72e1cf814c7e2b895d98188bdb998 2390 rust-enumset_1.1.5-1.dsc bc86b0ef13ab18c4ac77dfc27c8efb14 26442 rust-enumset_1.1.5.orig.tar.gz c2b7e3c0c0ed7ecfa5da43187f400cfd 2960 rust-enumset_1.1.5-1.debian.tar.xz"
+    "4a2596e46c6cdb0d3e027fab64257939 2257 rust-enumset_1.1.14-1.dsc df23bfa41d55f57e42903f7ff41d83f6 26458 rust-enumset_1.1.14.orig.tar.gz f2434942b1a41301d2ba87d2522a46e7 3380 rust-enumset_1.1.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-bincode-1+i128-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/enumset]"
   ],
   "Version": [
-    "1.1.5-1"
+    "1.1.14-1"
   ]
 }

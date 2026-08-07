@@ -6,19 +6,25 @@
     "librust-dbus-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66-~~) \u003c!nocheck\u003e, librust-libdbus-sys-0.2+default-dev (\u003e= 0.2.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.66) \u003c!nocheck\u003e, librust-libdbus-sys-0.2+default-dev (\u003e= 0.2.7) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "41d4bc0c0161fddca5315f7258c4e0bf04f4e79b1eacb818293966d6c121c811 1654 rust-dbus_0.9.7-1.dsc 1bb21987b9fb1613058ba3843121dd18b163b254d8a6e797e144cbac14d96d1b 104206 rust-dbus_0.9.7.orig.tar.gz 9a8c1ffb4f87b79581f8ccb9a605cdc1899df322fcf4951ffdcfc1b631c1edd6 4152 rust-dbus_0.9.7-1.debian.tar.xz"
+    "0fa9a0af5563064d7aaeeeaf441cb1c4ea9ef7b9ca327e0b0b7056b49932418d 2322 rust-dbus_0.9.12-1.dsc 3ab69f03cc8c4340c9c8e315114e1658e6775a9b16a04357973aa21cec22b32e 105841 rust-dbus_0.9.12.orig.tar.gz 356b669d58f42739d40ce9d35c6ace62612c553be18a80cb4f16eb332a473d74 4276 rust-dbus_0.9.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dbus"
   ],
   "Files": [
-    "81d5e0a28e5842321e236f14161358be 1654 rust-dbus_0.9.7-1.dsc b170c380ee4d59e4ed866afaa26a86c7 104206 rust-dbus_0.9.7.orig.tar.gz 001f2ea874344bcf5a8c6ec5ab381283 4152 rust-dbus_0.9.7-1.debian.tar.xz"
+    "34be053d2655ba8d556dd6850054726c 2322 rust-dbus_0.9.12-1.dsc 64dbde5038b4fa3454f0fbee31c38854 105841 rust-dbus_0.9.12.orig.tar.gz 739c9c0e395012420d810cecdcbc3583 4276 rust-dbus_0.9.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/diwic/dbus-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dbus]"
   ],
   "Version": [
-    "0.9.7-1"
+    "0.9.12-1"
   ]
 }

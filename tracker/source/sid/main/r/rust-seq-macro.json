@@ -6,19 +6,25 @@
     "librust-seq-macro-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.45) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.45) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "44b3bdee3ff7fc5ca217099e942224c751417d9dd7717c2ff75ce6031837a9b0 2334 rust-seq-macro_0.3.5-1.dsc a3f0bf26fd526d2a95683cd0f87bf103b8539e2ca1ef48ce002d67aad59aa0b4 13332 rust-seq-macro_0.3.5.orig.tar.gz c1ab00e0b071809f5429fd6119cb5a80a26fd5b4178f3a87e97038aa1d137258 2532 rust-seq-macro_0.3.5-1.debian.tar.xz"
+    "b37c215d95e15e29e17ac077ccd5acec80a4a96b224118f254fb85b83b9f97d5 2314 rust-seq-macro_0.3.6-1.dsc 1bc711410fbe7399f390ca1c3b60ad0f53f80e95c5eb935e52268a0e2cd49acc 16031 rust-seq-macro_0.3.6.orig.tar.gz da59468c077bc91fb6d932e76a2d11a551e67f2759ff38cc09e6d1046a3070ce 2696 rust-seq-macro_0.3.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-seq-macro"
   ],
   "Files": [
-    "50d8b4e0618c0309f4a735c896c27a3c 2334 rust-seq-macro_0.3.5-1.dsc 9fc2ec26a528290c88eac6c21d7d74ac 13332 rust-seq-macro_0.3.5.orig.tar.gz c392d6709a3c8feead60cea137c34fe7 2532 rust-seq-macro_0.3.5-1.debian.tar.xz"
+    "8a8371f837f3343c0d4d6db1ad5a1b86 2314 rust-seq-macro_0.3.6-1.dsc 2a04ab55b8f1d968349d284c0635ac8d 16031 rust-seq-macro_0.3.6.orig.tar.gz 89ecda57957330eceaea7c3a02ff50c8 2696 rust-seq-macro_0.3.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/seq-macro"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/seq-macro]"
   ],
   "Version": [
-    "0.3.5-1"
+    "0.3.6-1"
   ]
 }
