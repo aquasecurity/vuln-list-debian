@@ -6,19 +6,25 @@
     "librust-iso8601-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-7+std-dev \u003c!nocheck\u003e, librust-nom-7-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-nom-8+std-dev \u003c!nocheck\u003e, librust-nom-8-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "991e94ac0a00bb03bf6152ad364b91df34ede14b82d0e0b08d94c683109ad3ef 2226 rust-iso8601_0.6.1-1.dsc 924e5d73ea28f59011fec52a0d12185d496a9b075d360657aed2a5707f701153 20898 rust-iso8601_0.6.1.orig.tar.gz 9c38fb1802ccfa2aac4a6542ba4345a207746e0f5e2e86d8c7bc75c92b41549d 3148 rust-iso8601_0.6.1-1.debian.tar.xz"
+    "32ccd3501d8f2810bcbe22395923d487b5a855af2bb8acdf9cdb9eb85b2213a0 2302 rust-iso8601_0.6.5-1.dsc 74a0559b45528cf0732d911524974977a5749f477d7dd99652830ffdaf53c4d1 25725 rust-iso8601_0.6.5.orig.tar.gz a8a520b4ff0fa49463c4ee01add821d6a283d03d0acd3d5e95e56ec8a65cd24b 3256 rust-iso8601_0.6.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-iso8601"
   ],
   "Files": [
-    "862239d369c92162149fb577a01c93b3 2226 rust-iso8601_0.6.1-1.dsc 81e71650e0039295beb9d02a8dca228a 20898 rust-iso8601_0.6.1.orig.tar.gz d90aaf9c4a4a629f319ff9efd3715cd8 3148 rust-iso8601_0.6.1-1.debian.tar.xz"
+    "305e17495b5f71bc674cb5b7c761683f 2302 rust-iso8601_0.6.5-1.dsc 036360a4c458b29df106cd025a181650 25725 rust-iso8601_0.6.5.orig.tar.gz d341391c2a88f8ccd9bca4cec05190d3 3256 rust-iso8601_0.6.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/badboy/iso8601"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/iso8601]"
   ],
   "Version": [
-    "0.6.1-1"
+    "0.6.5-1"
   ]
 }

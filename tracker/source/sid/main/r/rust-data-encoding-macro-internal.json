@@ -6,19 +6,25 @@
     "librust-data-encoding-macro-internal-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-data-encoding-2+alloc-dev (\u003e= 2.3-~~) \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.48) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-data-encoding-2+alloc-dev (\u003e= 2.11.1) \u003c!nocheck\u003e, librust-syn+parsing-dev (\u003c\u003c 4) \u003c!nocheck\u003e, librust-syn+parsing-dev (\u003e= 1) \u003c!nocheck\u003e, librust-syn+proc-macro-dev (\u003c\u003c 4) \u003c!nocheck\u003e, librust-syn+proc-macro-dev (\u003e= 1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "03080c398375e4dcae4d1146fb3b092740512f12baf1c4a36069d5c890512c32 2444 rust-data-encoding-macro-internal_0.1.10-1.dsc a5bbed42daaa95e780b60a50546aa345b8413a1e46f9a40a12907d3598f038db 3149 rust-data-encoding-macro-internal_0.1.10.orig.tar.gz f4b933f391521f5921421e1e1def73698ec7f7f7fb9ccc2edd7eb9e0bb6f6761 2696 rust-data-encoding-macro-internal_0.1.10-1.debian.tar.xz"
+    "5641ce402c8ad82939a03b6f85cd1a9f4203a63dc8bd6942c9b71d702cb97b7d 2648 rust-data-encoding-macro-internal_0.1.19-1.dsc c54e03a951783e8b327515db3f2a2fd0e3bed362a96b066f341ce66ed49b4ead 3708 rust-data-encoding-macro-internal_0.1.19.orig.tar.gz 6e22a8352c63f4528bc13771261cffbc12a93cb780177538ea01e2a4584c5cb8 2948 rust-data-encoding-macro-internal_0.1.19-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-data-encoding-macro-internal"
   ],
   "Files": [
-    "d05be05582f1186777391a5afca190ae 2444 rust-data-encoding-macro-internal_0.1.10-1.dsc 5fdd3c97be5e787c022fdf9a556e455c 3149 rust-data-encoding-macro-internal_0.1.10.orig.tar.gz 18d6fd1bec712183dd35ba8c9909fa1f 2696 rust-data-encoding-macro-internal_0.1.10-1.debian.tar.xz"
+    "cac7e17e1fafe65163348684a8edd1d2 2648 rust-data-encoding-macro-internal_0.1.19-1.dsc 6c31aae92b6449d5f97d365647518f58 3708 rust-data-encoding-macro-internal_0.1.19.orig.tar.gz aeefdf18487ba73cd1232b38b55e3de1 2948 rust-data-encoding-macro-internal_0.1.19-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/ia0/data-encoding"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/data-encoding-macro-internal]"
   ],
   "Version": [
-    "0.1.10-1"
+    "0.1.19-1"
   ]
 }

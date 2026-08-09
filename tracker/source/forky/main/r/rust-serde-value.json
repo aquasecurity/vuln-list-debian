@@ -6,19 +6,25 @@
     "librust-serde-value-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ordered-float-4+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ordered-float-5+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "340efc70cebe7ef48a8280dd5803051ee3b0c4d2c14c0dc284ea5347558cbd3f 2304 rust-serde-value_0.7.0-2.dsc f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c 10249 rust-serde-value_0.7.0.orig.tar.gz 1b2d4c413e14f9d4506a6d0ddcb58eafa24aed625e968e4722bd97aed6a3e6e9 2720 rust-serde-value_0.7.0-2.debian.tar.xz"
+    "80e33ab7a63a16302f601fe1fb1528e381f1002281ba9bb7bba2997ba2d38be2 2355 rust-serde-value_0.7.0-3.dsc f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c 10249 rust-serde-value_0.7.0.orig.tar.gz 41af33199186e59747cdec85f956296b0f59e1ad423623bffd67b15c64ecf598 3112 rust-serde-value_0.7.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-serde-value"
   ],
   "Files": [
-    "ed19703e328cc07b8666e655edd70d4b 2304 rust-serde-value_0.7.0-2.dsc eeda11db8ced625011d8b88d36765321 10249 rust-serde-value_0.7.0.orig.tar.gz 6e0c9a69ead6863a8a68985cdff86924 2720 rust-serde-value_0.7.0-2.debian.tar.xz"
+    "cb87d255c80da0b72bb93c4942534e1c 2355 rust-serde-value_0.7.0-3.dsc eeda11db8ced625011d8b88d36765321 10249 rust-serde-value_0.7.0.orig.tar.gz a6478a6d3a836d1b307a56402881936a 3112 rust-serde-value_0.7.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/arcnmx/serde-value"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-derive-1+default-dev"
+    "dh-cargo, librust-serde-derive-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/serde-value]"
   ],
   "Version": [
-    "0.7.0-2"
+    "0.7.0-3"
   ]
 }

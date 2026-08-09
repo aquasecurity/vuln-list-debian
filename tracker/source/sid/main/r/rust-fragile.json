@@ -6,16 +6,19 @@
     "librust-fragile-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futures-core-0.3+default-dev (\u003e= 0.3.11) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "003138bfba42f725bc0faebde4bbe3d16eaec8fbe334133df1710a3eff99c827 2189 rust-fragile_2.0.0-1.dsc 6c2141d6d6c8512188a7891b4b01590a45f6dac67afb4f255c4124dbb86d4eaa 14668 rust-fragile_2.0.0.orig.tar.gz 09b6027e1cd7dda048ca219b4dc41092f7533c6bc1fc95f9afd0422daa4ca5df 2336 rust-fragile_2.0.0-1.debian.tar.xz"
+    "cbf5c76edd645e00f3514fdfbfd6db6fe914ac46d24854bede284000754f781a 2345 rust-fragile_2.1.0-1.dsc 8878864ba14bb86e818a412bfd6f18f9eabd4ec0f008a28e8f7eb61db532fcf9 17876 rust-fragile_2.1.0.orig.tar.gz 0513f9b26ce87dbc586a08b21c834af58db1edaaf64fdf17dea98deee86f9b60 2420 rust-fragile_2.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fragile"
   ],
   "Files": [
-    "3bd19039f17844fc2d826486b6b9229d 2189 rust-fragile_2.0.0-1.dsc a6244eb71c3705f784f97961c25a80d5 14668 rust-fragile_2.0.0.orig.tar.gz 6b778dec3445646a7ad20bb4dbf92b9a 2336 rust-fragile_2.0.0-1.debian.tar.xz"
+    "1a55529c5f8e503ee2e9306b693d4410 2345 rust-fragile_2.1.0-1.dsc 35910678cf24d975900e9ca5eadaaadb 17876 rust-fragile_2.1.0.orig.tar.gz a8f10b2c96458d9dd5b7c1f5fc24423e 2420 rust-fragile_2.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-futures-executor-0.3+default-dev, librust-futures-util-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fragile]"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.1.0-1"
   ]
 }

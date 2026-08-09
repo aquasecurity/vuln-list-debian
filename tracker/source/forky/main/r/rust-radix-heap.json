@@ -6,19 +6,25 @@
     "librust-radix-heap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "24ecf72dfdf12dcc619896effc784a467a956c17770bece7187e21a8aff7c635 2232 rust-radix-heap_0.4.2-2.dsc 59ffec9df464013295b499298811e6a3de31bf8128092135826517db12dee601 9323 rust-radix-heap_0.4.2.orig.tar.gz f748980852d04fb0165d952622a7dc009f9f7f17e7bf2ceae927e2b7a9356fc7 2784 rust-radix-heap_0.4.2-2.debian.tar.xz"
+    "8104482c9abfafffe6f5e7b2a7b4ee4bfcc30f04af1530a5a958f107c6f9d9e8 2280 rust-radix-heap_0.4.2-3.dsc 59ffec9df464013295b499298811e6a3de31bf8128092135826517db12dee601 9323 rust-radix-heap_0.4.2.orig.tar.gz 8695cd019f6c98e6f46f7ee72be0323784a021245f8ce37a2127fd51a51eeb81 3184 rust-radix-heap_0.4.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-radix-heap"
   ],
   "Files": [
-    "07a7361b5695494636381f670312a9dd 2232 rust-radix-heap_0.4.2-2.dsc a08c470deeb4bbe558bb1ec8f375c5b0 9323 rust-radix-heap_0.4.2.orig.tar.gz caeea80c17b4d8d1cbcdcb2583aa998d 2784 rust-radix-heap_0.4.2-2.debian.tar.xz"
+    "00d0fb057f9d1d24f01a6ecce73a1634 2280 rust-radix-heap_0.4.2-3.dsc a08c470deeb4bbe558bb1ec8f375c5b0 9323 rust-radix-heap_0.4.2.orig.tar.gz 8040dd96bc37f61be357ed6af89b875c 3184 rust-radix-heap_0.4.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mpdn/radix-heap"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-quickcheck-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-quickcheck-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/radix-heap]"
   ],
   "Version": [
-    "0.4.2-2"
+    "0.4.2-3"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-lzxd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6af1194189c0b2100e95855b1dd57bcf5b4794c8168069bfc4c1f9de8d16cbd1 2115 rust-lzxd_0.2.5-1.dsc 5de7336a183103429ad66d11d56d8bdc9c4a2916f6b85a8f11e5b127bde12001 22728 rust-lzxd_0.2.5.orig.tar.gz 60efbaa0897e818881231250e44c8b0692988220d6f1e79d5d1f388b1013d5d2 2556 rust-lzxd_0.2.5-1.debian.tar.xz"
+    "a8a47e18a17e89825973eb49a52634dd8385a870e823dffa7f6af6698f6c5fa4 2147 rust-lzxd_0.2.7-1.dsc c17f346186eccb574ba5581acefc514f0c70a642db4f96e245034a0a158a7168 23145 rust-lzxd_0.2.7.orig.tar.gz 86783246a68b63a835f250c25306cd7b718b030decc457dbdb64ad543318b1f5 2684 rust-lzxd_0.2.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lzxd"
   ],
   "Files": [
-    "b5356f39f10d90fb64ba249bf2390181 2115 rust-lzxd_0.2.5-1.dsc d9eb818dfcc23915ca5a2547803bdd07 22728 rust-lzxd_0.2.5.orig.tar.gz b3dbe1cc01d800c06d48bfec92d96f19 2556 rust-lzxd_0.2.5-1.debian.tar.xz"
+    "ae623abcbe03e5c5c976694907879fc8 2147 rust-lzxd_0.2.7-1.dsc 2579401e585b48b495e1e0095983650f 23145 rust-lzxd_0.2.7.orig.tar.gz efd5b70cfe73f9d7891d0c7619c171fc 2684 rust-lzxd_0.2.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lzxd]"
   ],
   "Version": [
-    "0.2.5-1"
+    "0.2.7-1"
   ]
 }
