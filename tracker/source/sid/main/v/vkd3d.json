@@ -1,6 +1,6 @@
 {
   "Architecture": [
-    "all amd64 arm64 armel armhf i386 mips64el mipsel ppc64el alpha hppa ia64 m68k riscv64 sh4"
+    "all amd64 arm64 i386 loong64"
   ],
   "Binary": [
     "libvkd3d-doc, libvkd3d-headers, libvkd3d-dev, libvkd3d1, libvkd3d-utils1, libvkd3d-shader1, vkd3d-demos, vkd3d-compiler"
@@ -15,13 +15,13 @@
     "doxygen, graphviz, mingw-w64-tools, texlive-latex-extra, texlive-plain-generic, texlive-fonts-recommended"
   ],
   "Checksums-Sha256": [
-    "b0632f46b06511d65930effbb55d151a4849179ce74b8f53f1b745b906935e8a 3394 vkd3d_2.0+ds-1.dsc 7a5d631ca7794373a00049b86d55cc4764b9fe185f5fed25e41735fd31dc6419 1125120 vkd3d_2.0+ds.orig.tar.xz 45d8cf64df5a212da11690997cf1bd1e070a41bb804db0ef82ec2969c649f91a 11552 vkd3d_2.0+ds-1.debian.tar.xz"
+    "fc87d075f2328f57492ecbca1b6691ccb35d13164cc61a4410ebb1f5fc94c483 2993 vkd3d_2.0+ds-2.dsc 7a5d631ca7794373a00049b86d55cc4764b9fe185f5fed25e41735fd31dc6419 1125120 vkd3d_2.0+ds.orig.tar.xz 0a028e6c9db08d2f57f303343b32222cc83cd675f115c8705b3c104497f68a1f 11708 vkd3d_2.0+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/v/vkd3d"
   ],
   "Files": [
-    "7f955cbf7431dc112f2f87bd72e40777 3394 vkd3d_2.0+ds-1.dsc 5fd965856479623c70629712b78cc67b 1125120 vkd3d_2.0+ds.orig.tar.xz 48b2d6a6995145db589b59e8f0ed1ebb 11552 vkd3d_2.0+ds-1.debian.tar.xz"
+    "0a8534eeecd0c04f84bdc5f42e1c6aca 2993 vkd3d_2.0+ds-2.dsc 5fd965856479623c70629712b78cc67b 1125120 vkd3d_2.0+ds.orig.tar.xz 86ce189af23fe5e355d7c1258dfa509c 11708 vkd3d_2.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "vkd3d"
   ],
   "Package-List": [
-    "libvkd3d-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 libvkd3d-doc deb doc optional arch=all libvkd3d-headers deb libdevel optional arch=all libvkd3d-shader1 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 libvkd3d-utils1 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 libvkd3d1 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 vkd3d-compiler deb devel optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 vkd3d-demos deb devel optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4"
+    "libvkd3d-dev deb libdevel optional arch=amd64,arm64,i386,loong64 libvkd3d-doc deb doc optional arch=all libvkd3d-headers deb libdevel optional arch=all libvkd3d-shader1 deb libs optional arch=amd64,arm64,i386,loong64 libvkd3d-utils1 deb libs optional arch=amd64,arm64,i386,loong64 libvkd3d1 deb libs optional arch=amd64,arm64,i386,loong64 vkd3d-compiler deb devel optional arch=amd64,arm64,i386,loong64 vkd3d-demos deb devel optional arch=amd64,arm64,i386,loong64"
   ],
   "Priority": [
     "extra"
@@ -51,7 +51,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "xauth, xvfb"
+    "build-essential, pkgconf, xauth, xvfb"
   ],
   "Uploaders": [
     "Michael Gilbert \u003cmgilbert@debian.org\u003e,"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/wine-team/vkd3d.git"
   ],
   "Version": [
-    "2.0+ds-1"
+    "2.0+ds-2"
   ]
 }
