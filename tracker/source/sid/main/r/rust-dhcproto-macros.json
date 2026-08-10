@@ -6,19 +6,25 @@
     "librust-dhcproto-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.66) \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f007e7db0e649f3919723cc186c54897d32bdecff63045573ad66a4a959c553f 2221 rust-dhcproto-macros_0.1.0-1.dsc a7993efb860416547839c115490d4951c6d0f8ec04a3594d9dd99d50ed7ec170 2205 rust-dhcproto-macros_0.1.0.orig.tar.gz bd15d042811b75d384f5c4c5084ebe8f2b033c844eed19b317b7e7e317a255eb 2496 rust-dhcproto-macros_0.1.0-1.debian.tar.xz"
+    "cd5d1aa3d8105dcb7130e3b7abf3483ea4aa3513e2600026ee8dd71084fe5979 2452 rust-dhcproto-macros_0.2.0-1.dsc 3944d18b1889ce23702b0ea0230e87033cf5b4659e233419b5c00da3983a387b 3096 rust-dhcproto-macros_0.2.0.orig.tar.gz f26f7a632788dfe267757896e80aeb0fe7f83d73f111046188a388c5e1b71527 2756 rust-dhcproto-macros_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dhcproto-macros"
   ],
   "Files": [
-    "4f8fefb07b08cad2ec77b27e466abc62 2221 rust-dhcproto-macros_0.1.0-1.dsc fe9fc6e1fbf24ba152f0d3f6932de37b 2205 rust-dhcproto-macros_0.1.0.orig.tar.gz 8061d5bb77d0e6da0db6e00beb2420a2 2496 rust-dhcproto-macros_0.1.0-1.debian.tar.xz"
+    "18216a70da70849c024a963f911227ea 2452 rust-dhcproto-macros_0.2.0-1.dsc af060985ceb6321db345e5e4787e2da1 3096 rust-dhcproto-macros_0.2.0.orig.tar.gz 0b667dd963c1e00b73a358ac063431a6 2756 rust-dhcproto-macros_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/bluecatengineering/dhcproto"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dhcproto-macros]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.2.0-1"
   ]
 }

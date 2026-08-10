@@ -6,19 +6,25 @@
     "librust-deser-hjson-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d4e48d0c1b040509eb983cfdb802cbe09104d940a2add026dc8dc8e8ea0b3e86 2267 rust-deser-hjson_2.2.4-2.dsc 7d94aac4095c08ded7e4b9ba7fc2b2929f11b94bb96897ca188b0f64e01688e1 21068 rust-deser-hjson_2.2.4.orig.tar.gz f195fe2e3ab51c857ae949e44201574a395fa1b731512fcf471d72f2c5b93161 3752 rust-deser-hjson_2.2.4-2.debian.tar.xz"
+    "ea04eb91ab152d9cc34ba0af4a729bb14b1b6a05f9b11c9b84933995fad60752 2309 rust-deser-hjson_2.2.6-1.dsc a0d49a923edd92dc1ca5819822f540ea83f094ab5ac6940e4044e03c1d8e6576 32806 rust-deser-hjson_2.2.6.orig.tar.gz 4fd01e06c0a2d97f134f486fabba6e5a9180275a6ca7eac89686da229b861015 3944 rust-deser-hjson_2.2.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-deser-hjson"
   ],
   "Files": [
-    "1d87b32c060104af4a0dcec157d14a16 2267 rust-deser-hjson_2.2.4-2.dsc 405249138e72c0cc6debad36f0fe0cae 21068 rust-deser-hjson_2.2.4.orig.tar.gz 8b729d6c61bd954fa661e45c232570ff 3752 rust-deser-hjson_2.2.4-2.debian.tar.xz"
+    "1bd0246aa939b223b3cd58b838d03631 2309 rust-deser-hjson_2.2.6-1.dsc 65ce941dfece34d5c63f5710a960b052 32806 rust-deser-hjson_2.2.6.orig.tar.gz 8ceee4773d03626e1bfb8fa2fe98c890 3944 rust-deser-hjson_2.2.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Canop/deser-hjson"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/deser-hjson]"
   ],
   "Version": [
-    "2.2.4-2"
+    "2.2.6-1"
   ]
 }
