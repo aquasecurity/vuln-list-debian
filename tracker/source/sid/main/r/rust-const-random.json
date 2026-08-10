@@ -6,19 +6,25 @@
     "librust-const-random-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-const-random-macro-0.1+default-dev (\u003e= 0.1.16-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-const-random-macro-0.1+default-dev (\u003e= 0.1.16) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3dc67a85545e7a66eaad1c3e50940bd2b4a77bad5c4629986fd841695f5a3b94 2271 rust-const-random_0.1.17-2.dsc 5aaf16c9c2c612020bcfd042e170f6e32de9b9d75adb5277cdbbd2e2c8c8299a 6640 rust-const-random_0.1.17.orig.tar.gz 7e72490c07ece8f04141a3052e1fca6a20c8a9604b9cf41fa8dd616985ace1dd 2760 rust-const-random_0.1.17-2.debian.tar.xz"
+    "e20d944f59d23bd83ab1dd528306cc70d62af331c81a4cffc285febd1bec7ae4 2323 rust-const-random_0.1.18-1.dsc 87e00182fe74b066627d63b85fd550ac2998d4b0bd86bfed477a0ae4c7c71359 6646 rust-const-random_0.1.18.orig.tar.gz 8c584fa52dd9bfec2fb64c3621d838bbc6b29c54d01da1e1ccfc6acebfbd1691 2928 rust-const-random_0.1.18-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-const-random"
   ],
   "Files": [
-    "158f9554c6be78e3c7aa3fd406eaa808 2271 rust-const-random_0.1.17-2.dsc 2f2930f89d0823955a47579abeae569a 6640 rust-const-random_0.1.17.orig.tar.gz 4209497a10fabfd048870f226e22d64d 2760 rust-const-random_0.1.17-2.debian.tar.xz"
+    "ae582b5109d19a2bbced55d0a58ae429 2323 rust-const-random_0.1.18-1.dsc 62eedaf67c83ca22d82ea4285fc9e69f 6646 rust-const-random_0.1.18.orig.tar.gz ed082526c132a72d196228b3ddc8b907 2928 rust-const-random_0.1.18-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/tkaitchuck/constrandom"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/const-random]"
   ],
   "Version": [
-    "0.1.17-2"
+    "0.1.18-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-vm-superio-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "12dd9d7b5ecbdc82498d88df2b357116c7722648a0ee31c85550c5156bd217af 2224 rust-vm-superio_0.7.0-2.dsc 6de3dc0146d78558327419fac388850fc6cbf197e924c4659a4863db20b5af64 27644 rust-vm-superio_0.7.0.orig.tar.gz d4c440d1f728e2a2a540801250a3a10a3792a63a16372c92e24bf936582b692c 3856 rust-vm-superio_0.7.0-2.debian.tar.xz"
+    "19170f6877d2917342f3b5e71de304af4cf65db54e4313340504b8fb842d6536 2276 rust-vm-superio_0.8.1-1.dsc 69c376a9b84afdf97bddd2628096cf3554208b2a676cf06b4532e0f433a54e02 28807 rust-vm-superio_0.8.1.orig.tar.gz f8d1336f09150f9ab030bd842a4adb4745c8b9e7aafeb6e191021fe7252c71e8 3268 rust-vm-superio_0.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vm-superio"
   ],
   "Files": [
-    "0a88d64ed999923953f5c76d11f66bd7 2224 rust-vm-superio_0.7.0-2.dsc 2f02f6bbaf89eeb2f088a44b9f74b339 27644 rust-vm-superio_0.7.0.orig.tar.gz ba813c0c5cc902e1f0ff597a11e1be39 3856 rust-vm-superio_0.7.0-2.debian.tar.xz"
+    "1f515688f541da753864ac4a1eb380f5 2276 rust-vm-superio_0.8.1-1.dsc bc8d30c48d88b5b84af530578ce727f5 28807 rust-vm-superio_0.8.1.orig.tar.gz e7c45bd05a1812b4f320172982066270 3268 rust-vm-superio_0.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-vmm/vm-superio"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-libc-0.2+default-dev, librust-vmm-sys-util-0.11+default-dev"
+    "dh-cargo, librust-libc-0.2+default-dev, librust-vmm-sys-util-0.15+default-dev, rustc"
   ],
   "Uploaders": [
     "Liang Yan \u003cly@xryan.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vm-superio]"
   ],
   "Version": [
-    "0.7.0-2"
+    "0.8.1-1"
   ]
 }

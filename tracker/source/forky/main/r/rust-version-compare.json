@@ -6,16 +6,19 @@
     "librust-version-compare-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "83d0a91369ffefb921cf4ce9b111151474d1c7ea1653741f5bc3f1e115e8d187 2281 rust-version-compare_0.1.1-1.dsc 579a42fc0b8e0c63b76519a339be31bed574929511fa53c1a3acae26eb258f29 13224 rust-version-compare_0.1.1.orig.tar.gz 3c096573975a92d0c4ef0c813d288f44ed9b37a0f8f3f4fe66054184262c35cc 2812 rust-version-compare_0.1.1-1.debian.tar.xz"
+    "5a3d06447f0610d75b59972b376465ad3c0305af1844de7129dd2b19d3a5a1a2 1691 rust-version-compare_0.2.1-1.dsc 03c2856837ef78f57382f06b2b8563a2f512f7185d732608fd9176cb3b8edf0e 14245 rust-version-compare_0.2.1.orig.tar.gz 284f02c83f79525d7b8b1e452ecddc2ed49d2ce029f09ef6c822690070927c50 2996 rust-version-compare_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-version-compare"
   ],
   "Files": [
-    "8e2b25190b3a902cd8a07b478909a959 2281 rust-version-compare_0.1.1-1.dsc d4e6a3f2d7286408592d08defd7de156 13224 rust-version-compare_0.1.1.orig.tar.gz 3d23a659f96134c3cffc09277557ffc5 2812 rust-version-compare_0.1.1-1.debian.tar.xz"
+    "90a48f7423588ed20a67c747b489594f 1691 rust-version-compare_0.2.1-1.dsc 0159bb7db20d41d475884d3027377161 14245 rust-version-compare_0.2.1.orig.tar.gz 22b6b216d48591d35a192a2cbf55adc0 2996 rust-version-compare_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/version-compare]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.2.1-1"
   ]
 }
