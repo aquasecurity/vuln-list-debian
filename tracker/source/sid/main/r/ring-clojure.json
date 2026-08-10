@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "libring-core-clojure, libring-servlet-clojure, libring-jetty-adapter-clojure"
+    "libring-core-clojure, libring-jakarta-servlet-clojure, libring-jetty-adapter-clojure, libring-servlet-clojure"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk-headless, javahelper, maven-repo-helper, libclojure-java (\u003e= 1.11.1-2), libring-codec-clojure (\u003e= 1.1.2), libcommons-io-java, libcommons-fileupload-java, libclj-time-clojure (\u003e= 0.15.2) \u003c!nocheck\u003e, libcrypto-random-clojure (\u003e= 1.2.1), libcrypto-equality-clojure (\u003e= 1.0.0-2), libservlet-api-java, libjetty9-java, libclj-http-clojure, leiningen"
+    "debhelper-compat (= 14), default-jdk-headless, javahelper, jetty12, junit5, leiningen, libclj-http-clojure \u003c!nocheck\u003e, libclj-time-clojure (\u003e= 0.15.2) \u003c!nocheck\u003e, libclojure-java (\u003e= 1.11.1-2), libcommons-fileupload2-java, libcommons-io-java, libcrypto-equality-clojure (\u003e= 1.0.0-2), libcrypto-random-clojure (\u003e= 1.2.1), libjackson2-core-java, libjakarta-servlet-api-java, libjetty12-extra-java, libjetty12-java, libless-awful-ssl-clojure \u003c!nocheck\u003e, libnetty-java, libring-codec-clojure (\u003e= 1.3.0), libservlet-api-java, maven-debian-helper, maven-repo-helper"
   ],
   "Checksums-Sha256": [
-    "a4e063dee5667497d63d04e72947132334ecaca3209cc67dfe95528ca0cc1f1a 2006 ring-clojure_1.8.2-3.dsc 00a6c5e8f1259fc3cb2b78458e1ac5373195a2921bfd472ebfb12b6c0a481da2 58008 ring-clojure_1.8.2.orig.tar.xz 121c2c504b3066c942be0d6476f84469760a90555a8d53dfbbc6c229bb9aa986 6620 ring-clojure_1.8.2-3.debian.tar.xz"
+    "116d2bbd3bf468fe0109e4918700c3dcc789ec7a3c9024c2ffebaeb30ad34138 2433 ring-clojure_1.15.5-2.dsc 8dfc8db33145663d2393de5ef857363bd9ea38046c220fd229a1920997f5fc88 73988 ring-clojure_1.15.5.orig.tar.xz 5326cc03219c63df50f02c902450fd6618b71e1fff3a27a60ddfdd5291adb21f 9524 ring-clojure_1.15.5-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/ring-clojure"
   ],
   "Files": [
-    "af09eabca6ad88bd11d56e719fd38ccd 2006 ring-clojure_1.8.2-3.dsc 2af1c31cc502499f12f2e855b06bf4c8 58008 ring-clojure_1.8.2.orig.tar.xz cb64572d18450acd0f1b5f80b135a15d 6620 ring-clojure_1.8.2-3.debian.tar.xz"
+    "c2c0b28b99b1dff51afd8ca1f6f15c79 2433 ring-clojure_1.15.5-2.dsc 4eba2baefbec102d154471c004ce9aba 73988 ring-clojure_1.15.5.orig.tar.xz 99e05fb7ae2a0e7223020e1419172c00 9524 ring-clojure_1.15.5-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ring-clojure"
   ],
   "Package-List": [
-    "libring-core-clojure deb java optional arch=all libring-jetty-adapter-clojure deb java optional arch=all libring-servlet-clojure deb java optional arch=all"
+    "libring-core-clojure deb java optional arch=all libring-jakarta-servlet-clojure deb java optional arch=all libring-jetty-adapter-clojure deb java optional arch=all libring-servlet-clojure deb java optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "clojure, libbultitude-clojure"
+    "default-jre-headless, libclj-http-clojure, libclj-time-clojure, libcognitect-test-runner-clojure, libjetty12-extra-java, libjetty12-java, libless-awful-ssl-clojure, libslf4j2-java"
   ],
   "Uploaders": [
-    "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e, Jérôme Charaoui \u003cjerome@riseup.net\u003e,"
+    "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e, Jérôme Charaoui \u003cjerome@riseup.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/clojure-team/ring-clojure"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/clojure-team/ring-clojure.git"
   ],
   "Version": [
-    "1.8.2-3"
+    "1.15.5-2"
   ]
 }
