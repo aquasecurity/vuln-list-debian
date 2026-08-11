@@ -6,19 +6,25 @@
     "librust-dary-heap-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "982e1a7c269cebb4bbdfca21e26ed092466f6e303d93c6e5eba0be56502b11ba 1633 rust-dary-heap_0.3.6-1.dsc 7762d17f1241643615821a8455a0b2c3e803784b058693d990b11f2dce25a0ca 23683 rust-dary-heap_0.3.6.orig.tar.gz 97a5ad56460b7b31c90cfcd6e70770458bc1249b3ee8c0642108a7a9bc926355 2844 rust-dary-heap_0.3.6-1.debian.tar.xz"
+    "0d0020bc4dac36fdf51f80e970a87b52af6adf55e123efb38316f53bb27ca009 2307 rust-dary-heap_0.3.9-1.dsc 8b1e3a325bc115f096c8b77bbf027a7c2592230e70be2d985be950d3d5e60ebe 27054 rust-dary-heap_0.3.9.orig.tar.gz 47331bdc5f7b08f017ffeafd3f21ecf03e8e3a536a419ee04f24133d98e4b3b5 3500 rust-dary-heap_0.3.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dary-heap"
   ],
   "Files": [
-    "b6dbcd964e76a679fb4057cd29462857 1633 rust-dary-heap_0.3.6-1.dsc 7a48ed333e568a92a4e85bfb4923acf1 23683 rust-dary-heap_0.3.6.orig.tar.gz 640f1d3d8ef3ae8869db88b803a91039 2844 rust-dary-heap_0.3.6-1.debian.tar.xz"
+    "069533ad6ecfaf8c9320d7b777610974 2307 rust-dary-heap_0.3.9-1.dsc 1b4a690849e8374fbc1ccd98cf2aa845 27054 rust-dary-heap_0.3.9.orig.tar.gz c000553eb08c55e905f32d824b84dcec 3500 rust-dary-heap_0.3.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/hanmertens/dary_heap"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev, librust-rand-xorshift-0.3+default-dev, librust-serde-test-1+default-dev, rustc"
+    "dh-cargo, librust-rand-0.10+default-dev, librust-rand-xorshift-0.5+default-dev, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dary-heap]"
   ],
   "Version": [
-    "0.3.6-1"
+    "0.3.9-1"
   ]
 }

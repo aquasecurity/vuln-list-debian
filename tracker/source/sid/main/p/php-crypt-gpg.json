@@ -6,16 +6,16 @@
     "php-crypt-gpg"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gpg (\u003e= 2.1.13~) \u003c!nocheck\u003e, gpg-agent \u003c!nocheck\u003e, php-console-commandline \u003c!nocheck\u003e, php-mbstring \u003c!nocheck\u003e, php-pear \u003c!nocheck\u003e, phpunit (\u003e= 9~) \u003c!nocheck\u003e, pkg-php-tools"
+    "debhelper-compat (= 13), gpg (\u003e= 2.2~) \u003c!nocheck\u003e, gpg-agent \u003c!nocheck\u003e, phpab, php-console-commandline \u003c!nocheck\u003e, phpunit (\u003e= 9~) \u003c!nocheck\u003e, pkg-php-tools"
   ],
   "Checksums-Sha256": [
-    "c2b2a720e88bb0fb38a4df4a8716b5afdcb399b85dd0a6dec96ff4dc9c4aa5be 2263 php-crypt-gpg_1.9.0-1.dsc bff10d98fb97e6776d79f71ede4847f21c266d597fea9c83de7226bc076bebab 1223594 php-crypt-gpg_1.9.0.orig.tar.gz 610b960f8cf9d909af731b8ad277d764e935981e2b199276a190d4882fb0b450 9256 php-crypt-gpg_1.9.0-1.debian.tar.xz"
+    "bd25733e0811f9fdf2d44c8712173b05553884cd1d50e7518043d874005c13ec 2243 php-crypt-gpg_2.0.0-1.dsc 631ed856f10ff3b578f082ed55450b9e79c925e3412b57e2d649efda96da3740 1208082 php-crypt-gpg_2.0.0.orig.tar.gz d6df7b57fff4c88b947c243cef70a997a23fd5480afd2fe6a6c6ed2956baaf4d 9276 php-crypt-gpg_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/php-crypt-gpg"
   ],
   "Files": [
-    "3aff9b70c798fb245f59eed46e699189 2263 php-crypt-gpg_1.9.0-1.dsc 12dfa0ad2c215336024d12779a406e3b 1223594 php-crypt-gpg_1.9.0.orig.tar.gz 9baa503091718d1629c48567ad753a1d 9256 php-crypt-gpg_1.9.0-1.debian.tar.xz"
+    "c3cdf04478d99e2ec1652e2212f29e5e 2243 php-crypt-gpg_2.0.0-1.dsc 4a8ea5452e000a750102ae03d8d69ec4 1208082 php-crypt-gpg_2.0.0.orig.tar.gz 3426bb42fe3a57fe4a1baf7465a4f11d 9276 php-crypt-gpg_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "gpg-agent, phpunit"
+    "gpg-agent, phpab, phpunit, pkg-php-tools"
   ],
   "Uploaders": [
     "Prach Pongpanich \u003cprach@debian.org\u003e, Guilhem Moulin \u003cguilhem@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/php-team/pear/php-crypt-gpg.git -b debian/latest"
   ],
   "Version": [
-    "1.9.0-1"
+    "2.0.0-1"
   ]
 }

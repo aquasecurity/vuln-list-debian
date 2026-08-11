@@ -6,19 +6,25 @@
     "librust-num-modular-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1a9afc592240a99f4beedf82b2d40ac2bfefb695e9e3cc1e719ba9aee9a7fb63 2181 rust-num-modular_0.6.1-3.dsc 17bb261bf36fa7d83f4c294f834e91256769097b3cb505d44831e0a179ac647f 32328 rust-num-modular_0.6.1.orig.tar.gz 1953d8c8ac4c1ab6a7e8db7d54ac735867426691d74e9cf95c5202211a960b6a 2592 rust-num-modular_0.6.1-3.debian.tar.xz"
+    "64cf47e36c180ea6756bc776582d24737d38d37690511589cc64324d74d2eb26 2271 rust-num-modular_0.6.4-1.dsc fc41a1374056e9672221567958a66c16be12d0e2c1b408761e14d901c237d5e0 47263 rust-num-modular_0.6.4.orig.tar.gz d463412f788369cbbd7fc35ab9b00d1b011617111320b8248d8254b78306504c 2636 rust-num-modular_0.6.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-modular"
   ],
   "Files": [
-    "c9c22dc27f058f72049e00bcf7f963f9 2181 rust-num-modular_0.6.1-3.dsc 042de5029a86c8adbf416862d7273f88 32328 rust-num-modular_0.6.1.orig.tar.gz 1cb4f16a94cb57bc8a18b1a1d0ef0c46 2592 rust-num-modular_0.6.1-3.debian.tar.xz"
+    "6eb7fb17297b353d3be42ac3aecc545d 2271 rust-num-modular_0.6.4-1.dsc de7e8ed47a246d5639934e83f886cd73 47263 rust-num-modular_0.6.4.orig.tar.gz 6498b77d416eb4c9b4e2329c1dbf4b46 2636 rust-num-modular_0.6.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cmpute/num-modular"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-rand-0.8+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-modular]"
   ],
   "Version": [
-    "0.6.1-3"
+    "0.6.4-1"
   ]
 }

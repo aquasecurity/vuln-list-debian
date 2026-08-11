@@ -6,19 +6,25 @@
     "librust-noise-protocol-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.4) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "10965e149dcd4e38059f49b78e1e100795a9e1e4a765a6f5055476d7c6e1abc2 1658 rust-noise-protocol_0.2.0-1.dsc 2473d39689a839f5a363aaef7d99f76d5611bf352286682b25a6644fec18b1d3 11445 rust-noise-protocol_0.2.0.orig.tar.gz 73fef63ba1ed19f1a763a7573ad29b89a51cd02b02dbe8d87f991559c6638c87 2704 rust-noise-protocol_0.2.0-1.debian.tar.xz"
+    "b358eeba4ad29e323d28588edc20df8aeed6f09d7823353eb7042ce0b5c19e47 2311 rust-noise-protocol_0.2.1-1.dsc 0f226274a278d3d465c891db37e9a300e754f5344a33a62a2a8cd1cdadffb93a 11852 rust-noise-protocol_0.2.1.orig.tar.gz a135228d68891eac744d9b9560420bbb4c5ed812a480fd377c60363b405b1e42 2856 rust-noise-protocol_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-noise-protocol"
   ],
   "Files": [
-    "32d55488e72193d75090e5bd853ba984 1658 rust-noise-protocol_0.2.0-1.dsc 244117e5128299a7c3d3a4e3b3936104 11445 rust-noise-protocol_0.2.0.orig.tar.gz cbf8b3191f93f8a7621dc60a4efe6c7e 2704 rust-noise-protocol_0.2.0-1.debian.tar.xz"
+    "8b994928b8c304463d12c7b150f67bdc 2311 rust-noise-protocol_0.2.1-1.dsc c64830661287d61de02623c40fc6193a 11852 rust-noise-protocol_0.2.1.orig.tar.gz 66d88d80de17ec50a69966dd93c8d0d9 2856 rust-noise-protocol_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sopium/noise-rust"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/noise-protocol]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.1-1"
   ]
 }

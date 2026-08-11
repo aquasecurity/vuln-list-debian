@@ -6,19 +6,25 @@
     "librust-iri-string-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-serde-1+alloc-dev (\u003e= 1.0.103-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.103-~~) \u003c!nocheck\u003e, librust-serde-1+std-dev (\u003e= 1.0.103-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-memchr-2+std-dev (\u003e= 2.4.1) \u003c!nocheck\u003e, librust-serde-1+alloc-dev (\u003e= 1.0.103) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.103) \u003c!nocheck\u003e, librust-serde-1+std-dev (\u003e= 1.0.103) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0c2c73fe7e9820d6795d37fc8aa80e3785371d082166bb5e36dc38ed82a2b635 2395 rust-iri-string_0.7.0-1.dsc 21859b667d66a4c1dacd9df0863b3efb65785474255face87f5bca39dd8407c0 129307 rust-iri-string_0.7.0.orig.tar.gz 156582e20b0b8b4d8b24f60e4ea98aeade6797c630847dd14ab2ad111ffc3884 2764 rust-iri-string_0.7.0-1.debian.tar.xz"
+    "144088456a749c80fe4dbba1316af80b7491958abe2d256cd6ca026525bebea0 2480 rust-iri-string_0.7.14-1.dsc 1663ee7d8cf2900cc1414b1e1eec9f348d6eaa3bcab07579f4726a4b8499f447 163107 rust-iri-string_0.7.14.orig.tar.gz 469329c1685b7ceea29409e545dbb8dfc1ce749272f605b110b257ca141a69e4 2952 rust-iri-string_0.7.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-iri-string"
   ],
   "Files": [
-    "f19f415c560d7a582976594ebda47b34 2395 rust-iri-string_0.7.0-1.dsc 9c62e03d0d7bfd238cd63d1660f6e0d7 129307 rust-iri-string_0.7.0.orig.tar.gz 29b9b23cdf5169877eada25eae65c3ff 2764 rust-iri-string_0.7.0-1.debian.tar.xz"
+    "403eaabafaf1068690f42eb3872693a2 2480 rust-iri-string_0.7.14-1.dsc 861133a0084dadb838c98ccb4afd9875 163107 rust-iri-string_0.7.14.orig.tar.gz a208ea474fd6add701d87f81cbc4420f 2952 rust-iri-string_0.7.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/lo48576/iri-string"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-test-1+default-dev"
+    "dh-cargo, librust-serde-test-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/iri-string]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.7.14-1"
   ]
 }

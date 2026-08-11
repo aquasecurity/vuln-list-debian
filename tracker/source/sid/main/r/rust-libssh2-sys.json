@@ -6,19 +6,25 @@
     "librust-libssh2-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.25-~~) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-libz-sys-1+libc-dev (\u003e= 1.1.0-~~) \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev (\u003e= 0.9.35-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.11-~~) \u003c!nocheck\u003e, librust-vcpkg-0.2+default-dev \u003c!nocheck\u003e, libssh2-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.0.25) \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-libz-sys-1+libc-dev (\u003e= 1.1.0) \u003c!nocheck\u003e, librust-openssl-sys-0.9+default-dev (\u003e= 0.9.35) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.11) \u003c!nocheck\u003e, libssh2-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f41ebdf51f116422accb9e362156743ab90207c45c99cb83a5a00b0b37f5609b 2511 rust-libssh2-sys_0.3.0-1.dsc a60cc73790a951d8a11e282cb275cf65e19453725e3a1a5ad89cfb0ddf931255 8589 rust-libssh2-sys_0.3.0.orig.tar.gz 06211c96501272066edea8e3cf3380e1dbc5e18a1324805a598038068a6f5d49 3596 rust-libssh2-sys_0.3.0-1.debian.tar.xz"
+    "04b0abffeb15a6b05b5cdd49890bc73a11476234ab3b27065e2560d981f06df1 2534 rust-libssh2-sys_0.3.2+ds-1.dsc f5746b097238d805f657245aff27b013c0304b90628e1a1c4eb07238e910c531 14014 rust-libssh2-sys_0.3.2+ds.orig.tar.gz bb84c2392a4cf5a5477bae3eafe62d2d278a5c16ac6a37a699bc9eba75b1952e 4088 rust-libssh2-sys_0.3.2+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libssh2-sys"
   ],
   "Files": [
-    "6c65144530aecaea6650ef6fa42e14f6 2511 rust-libssh2-sys_0.3.0-1.dsc b3f2d43a3596f885b383977ec45ef985 8589 rust-libssh2-sys_0.3.0.orig.tar.gz 12157364a839756b103fb828bb4e429b 3596 rust-libssh2-sys_0.3.0-1.debian.tar.xz"
+    "71bab3143fc9431bca2d4737092d3a6f 2534 rust-libssh2-sys_0.3.2+ds-1.dsc a07c294c246dcb59b990d72a91e60862 14014 rust-libssh2-sys_0.3.2+ds.orig.tar.gz 152be11ac0409e28cb4045a1d3a5a133 4088 rust-libssh2-sys_0.3.2+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/alexcrichton/ssh2-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Ximin Luo \u003cinfinity0@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libssh2-sys]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.2+ds-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-tokio-io-timeout-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+time-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+time-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b3d8df937d2b9db6d8a86cbaad60160fae11568083d585a36adf707278fa6d67 2417 rust-tokio-io-timeout_1.2.0-1.dsc 30b74022ada614a1b4834de765f9bb43877f910cc8ce4be40e89042c9223a8bf 8993 rust-tokio-io-timeout_1.2.0.orig.tar.gz 6c20f52b167924e3d5f4751b244888efcf1261902635d789878184f6609c524b 2608 rust-tokio-io-timeout_1.2.0-1.debian.tar.xz"
+    "cdad6ca1402dc783c3d404b3496a8b36eb9e67b40e8082ee3b264d2f229c6e1d 2478 rust-tokio-io-timeout_1.2.1-1.dsc 0bd86198d9ee903fedd2f9a2e72014287c0d9167e4ae43b5853007205dda1b76 12164 rust-tokio-io-timeout_1.2.1.orig.tar.gz 7560fdae19b3b9b929579746dae08e661c239e86b98f23b2160ae64af48f975c 2832 rust-tokio-io-timeout_1.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tokio-io-timeout"
   ],
   "Files": [
-    "b123fa0198531e1f6abe5f57228749f9 2417 rust-tokio-io-timeout_1.2.0-1.dsc 8746b3757576b6f012b75479894c4815 8993 rust-tokio-io-timeout_1.2.0.orig.tar.gz 16939646fffa5c25b46941a452aa0302 2608 rust-tokio-io-timeout_1.2.0-1.debian.tar.xz"
+    "ec1c1c963b33ba200cc352fdb2eb90bf 2478 rust-tokio-io-timeout_1.2.1-1.dsc b060cf6df21889a5067bf8d833dc55ae 12164 rust-tokio-io-timeout_1.2.1.orig.tar.gz 02ee11bcc4ad39f75c249cd70dfea444 2832 rust-tokio-io-timeout_1.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sfackler/tokio-io-timeout"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+full-dev"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+full-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tokio-io-timeout]"
   ],
   "Version": [
-    "1.2.0-1"
+    "1.2.1-1"
   ]
 }
