@@ -6,19 +6,25 @@
     "librust-linux-perf-event-reader-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3-~~) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4.1-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3) \u003c!nocheck\u003e, librust-memchr-2+default-dev (\u003e= 2.4.1) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bda4a306a1085425c5c5654507c559f10b18534961d78596038a21e30ea8f734 2505 rust-linux-perf-event-reader_0.10.0-1.dsc 41064623ecf100db029bd29e4a1cdec25fc513d45c15619ecd03504e2ffb1687 32847 rust-linux-perf-event-reader_0.10.0.orig.tar.gz 4d842704e28cf8374ad69c820916cb7a419b4e8b0d81713930c13f6c63f8737f 2668 rust-linux-perf-event-reader_0.10.0-1.debian.tar.xz"
+    "16763505c451914647f64f1c5e4a55ba7f8317cef8d4a8e1afaba5960f7e90d2 2578 rust-linux-perf-event-reader_0.10.2-1.dsc aa8fc7e83909ea3b9e2784591655637d3401f2f16014f9d8d6e23ccd138e665f 33976 rust-linux-perf-event-reader_0.10.2.orig.tar.gz 704600037249ecebf0f2b1b127865ae57c07324d3e13e2fc48cc776b8f521414 2836 rust-linux-perf-event-reader_0.10.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-linux-perf-event-reader"
   ],
   "Files": [
-    "db4fbc4faab189d7667652eaae98199e 2505 rust-linux-perf-event-reader_0.10.0-1.dsc 30f936e2c5ee0b7f6269c72cfbe1c7ee 32847 rust-linux-perf-event-reader_0.10.0.orig.tar.gz 784eb8776bad26b3a7bf089b6ae5b2a4 2668 rust-linux-perf-event-reader_0.10.0-1.debian.tar.xz"
+    "bbec9db8c1bf24855dc0078aabe0d6ce 2578 rust-linux-perf-event-reader_0.10.2-1.dsc f424910d490d6c5d6cf0eba5af889289 33976 rust-linux-perf-event-reader_0.10.2.orig.tar.gz b6fd76a3d41f5cd7212e1612d2acab6a 2836 rust-linux-perf-event-reader_0.10.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mstange/linux-perf-event-reader/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/linux-perf-event-reader]"
   ],
   "Version": [
-    "0.10.0-1"
+    "0.10.2-1"
   ]
 }

@@ -6,19 +6,25 @@
     "librust-equivalent-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.6) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2b55ca2db20ba64b969f19f8b72d16762c33ae60c53325f1aaad0cd48c900652 2118 rust-equivalent_1.0.1-1.dsc 5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5 6615 rust-equivalent_1.0.1.orig.tar.gz 9ba5ecd1e147ecec58aebb3503ff21d2aac6d9fb1c8215492741bc41d18132d4 2560 rust-equivalent_1.0.1-1.debian.tar.xz"
+    "5e8dffbdfeb9fd30f4e164fbaa8725491cb1cf5a0347d47f4be7e4273ca4fef6 2211 rust-equivalent_1.0.2-1.dsc 877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f 7419 rust-equivalent_1.0.2.orig.tar.gz 988a4e58161e912d62414be0d7beb4ee380ab8146286c6e8023498a170b320d5 2732 rust-equivalent_1.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-equivalent"
   ],
   "Files": [
-    "bf8211a9ffade013e2d3190aa31fca41 2118 rust-equivalent_1.0.1-1.dsc bdf329a72ecd0605c296f25e53136706 6615 rust-equivalent_1.0.1.orig.tar.gz ca9a6d596a41826d1f7adfee89f71f9e 2560 rust-equivalent_1.0.1-1.debian.tar.xz"
+    "10b8c008c725bc800a87c13dcdb1c3f4 2211 rust-equivalent_1.0.2-1.dsc 8ea35f559a34b5a0ba1b063e001773ca 7419 rust-equivalent_1.0.2.orig.tar.gz cb9d7c46a2da8ee93ab4cc38abedcd26 2732 rust-equivalent_1.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/indexmap-rs/equivalent"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/equivalent]"
   ],
   "Version": [
-    "1.0.1-1"
+    "1.0.2-1"
   ]
 }

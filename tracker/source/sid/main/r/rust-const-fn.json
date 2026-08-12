@@ -6,19 +6,25 @@
     "librust-const-fn-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.31) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f73b7c6ce9530565213206da2bd8e4c6b6733be11910b49771d6f6306cdaff0b 2180 rust-const-fn_0.4.10-1.dsc 373e9fafaa20882876db20562275ff58d50e0caa2590077fe7ce7bef90211d0d 13385 rust-const-fn_0.4.10.orig.tar.gz dfb6a4f51d3ba8ee541b613dfeed69b91ed6e7ac1276112d9e2d4aa641d74597 2932 rust-const-fn_0.4.10-1.debian.tar.xz"
+    "a6ba96976d8ba75360b557ebf56f634b47ea1780fff649f8b99c48dd6a5a8eab 2213 rust-const-fn_0.4.12-1.dsc 413d67b29ef1021b4d60f4aa1e925ca031751e213832b4b1d588fae623c05c60 14458 rust-const-fn_0.4.12.orig.tar.gz 1030a63a2a0080d32c9588925dcdede9ac06e55099d527853c862bdcb990558f 3028 rust-const-fn_0.4.12-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-const-fn"
   ],
   "Files": [
-    "52a90dca9dbfbfd450dbf552fd3aee71 2180 rust-const-fn_0.4.10-1.dsc 068155666cd98b45cafc2ad8bea90dce 13385 rust-const-fn_0.4.10.orig.tar.gz 576176dc4a0c4792b62512bdb28b7602 2932 rust-const-fn_0.4.10-1.debian.tar.xz"
+    "e26fffe8270bd4c82924821f1f887076 2213 rust-const-fn_0.4.12-1.dsc a5ae12842b7c74ad64f25a298135784f 14458 rust-const-fn_0.4.12.orig.tar.gz 5ebf7f9536897962ed42c17feb684eda 3028 rust-const-fn_0.4.12-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/taiki-e/const_fn"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/const-fn]"
   ],
   "Version": [
-    "0.4.10-1"
+    "0.4.12-1"
   ]
 }

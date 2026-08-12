@@ -6,19 +6,25 @@
     "librust-colorchoice-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6f44847d13b52965603de503e5122ee9cd56c19774c53acffeb372c5ec9b4712 2164 rust-colorchoice_1.0.0-1.dsc acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7 6857 rust-colorchoice_1.0.0.orig.tar.gz ebd800843cb117e8baceaef09eeab36b7724c579d4372377cb51c576246abcb6 2524 rust-colorchoice_1.0.0-1.debian.tar.xz"
+    "f7b45ef8c15bd510878407a5ebb6c7c6875d72ed4dde25ad7039ffb6ba3fad0d 2258 rust-colorchoice_1.0.5-1.dsc 1d07550c9036bf2ae0c684c4297d503f838287c83c53686d05370d0e139ae570 8187 rust-colorchoice_1.0.5.orig.tar.gz 3eb30f5bf1e8f4c1259800ec106c4dff8159f0b8869fb97db175dc78f83af260 2676 rust-colorchoice_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-colorchoice"
   ],
   "Files": [
-    "e08b3ae1912e56f2c6b75e60002ca6c4 2164 rust-colorchoice_1.0.0-1.dsc 010f6d0e98cc2a2b99907a23c6cd6bbc 6857 rust-colorchoice_1.0.0.orig.tar.gz aa20fcd17f341b243d1b48aaa25c6870 2524 rust-colorchoice_1.0.0-1.debian.tar.xz"
+    "61e7a4232e77ff7fbabef69866a6daed 2258 rust-colorchoice_1.0.5-1.dsc e6f2680ca90acf70da79d58326698e44 8187 rust-colorchoice_1.0.5.orig.tar.gz 8ad111a563a47140a622d94b89edcda0 2676 rust-colorchoice_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/rust-cli/anstyle.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/colorchoice]"
   ],
   "Version": [
-    "1.0.0-1"
+    "1.0.5-1"
   ]
 }

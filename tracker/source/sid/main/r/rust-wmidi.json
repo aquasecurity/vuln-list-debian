@@ -6,19 +6,25 @@
     "librust-wmidi-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "63d279c16a47394327a173a076328899e7286008895f9b27e334aba0b2a7c9e7 2126 rust-wmidi_4.0.10-1.dsc 4e55f35b40ad0178422d06e9ba845041baf2faf04627b91fde928d0f6a21c712 20886 rust-wmidi_4.0.10.orig.tar.gz 2bed5dd03613d15cdd2863128c2f917169163a07e240d8bed2724be81591f8e1 2568 rust-wmidi_4.0.10-1.debian.tar.xz"
+    "265db8f61df1c9241a86a55a903cdb87a624dbb7e834f60b4d82e82cea067f2b 2203 rust-wmidi_4.0.11-1.dsc 2b1b1e28ac6301b1c097d21c11130090f7ecc5db9d5ef4e52595ab942f8d76d5 28510 rust-wmidi_4.0.11.orig.tar.gz 1457cc6088cc5d511d0300f66f156df062ff62a072628c967a2efd28d9bbcb39 2956 rust-wmidi_4.0.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-wmidi"
   ],
   "Files": [
-    "8d60f7688d80e4c06eb8c525f9d1395e 2126 rust-wmidi_4.0.10-1.dsc 2264db6e35911ca81aae8483e5aca8bf 20886 rust-wmidi_4.0.10.orig.tar.gz b22c569711d3a6df291ac6ca5fedfae5 2568 rust-wmidi_4.0.10-1.debian.tar.xz"
+    "b56c07d94550c30183fa65d30426a384 2203 rust-wmidi_4.0.11-1.dsc 0263c575a15ddb0c1c925899693fb98b 28510 rust-wmidi_4.0.11.orig.tar.gz 853554b4caa98a1e3c055500f1564de4 2956 rust-wmidi_4.0.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustAudio/wmidi"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Andreas Henriksson \u003candreas@fatal.se\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/wmidi]"
   ],
   "Version": [
-    "4.0.10-1"
+    "4.0.11-1"
   ]
 }

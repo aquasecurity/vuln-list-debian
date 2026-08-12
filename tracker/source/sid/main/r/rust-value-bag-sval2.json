@@ -6,19 +6,25 @@
     "librust-value-bag-sval2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-sval-2-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-sval-buffer-2-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-sval-dynamic-2-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-sval-fmt-2-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e, librust-sval-ref-2-dev (\u003e= 2.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-sval-2-dev (\u003e= 2.20) \u003c!nocheck\u003e, librust-sval-buffer-2-dev (\u003e= 2.20) \u003c!nocheck\u003e, librust-sval-dynamic-2-dev (\u003e= 2.20) \u003c!nocheck\u003e, librust-sval-fmt-2-dev (\u003e= 2.20) \u003c!nocheck\u003e, librust-sval-ref-2-dev (\u003e= 2.20) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "915a1657e7ab7ed0dc072464402ae1a80f0430bc5b82aee8912ce750d990ce22 2459 rust-value-bag-sval2_1.9.0-1.dsc 1785bae486022dfb9703915d42287dcb284c1ee37bd1080eeba78cc04721285b 5570 rust-value-bag-sval2_1.9.0.orig.tar.gz b62e3b241b984b6399f750e1b0758581d0a7bfb64f5e49e1c80fde828102ecda 3268 rust-value-bag-sval2_1.9.0-1.debian.tar.xz"
+    "8e73986ec043e4a2f6c043502aef668ed7e82937c5eb88e6de4ac53397019d67 2517 rust-value-bag-sval2_1.13.2-1.dsc c61f7251ecde2c9ed431bbe0659853e7991753447447bbf1ae59d8b31c578d4e 7086 rust-value-bag-sval2_1.13.2.orig.tar.gz fb5abf3e921326f348b07fc13a7c7c11fb0ec5b595849c87e01f49792e8b3269 3372 rust-value-bag-sval2_1.13.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-value-bag-sval2"
   ],
   "Files": [
-    "50e28a012b46a03fd47223df2e0453e5 2459 rust-value-bag-sval2_1.9.0-1.dsc 09e904b9bb07c8927dcb73096e971614 5570 rust-value-bag-sval2_1.9.0.orig.tar.gz a43fb5ab0f5b32a6debd34e8da4c7e4e 3268 rust-value-bag-sval2_1.9.0-1.debian.tar.xz"
+    "28c6e8eae4924363c36c57772dbb4e48 2517 rust-value-bag-sval2_1.13.2-1.dsc 87a9a1ad862856d8c564279a9aa178e8 7086 rust-value-bag-sval2_1.13.2.orig.tar.gz a4db7104b8103c1c1607d613c444b9a5 3372 rust-value-bag-sval2_1.13.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://crates.io/crates/value-bag-sval2/1.13.2"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/value-bag-sval2]"
   ],
   "Version": [
-    "1.9.0-1"
+    "1.13.2-1"
   ]
 }

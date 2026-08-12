@@ -6,19 +6,25 @@
     "librust-msvc-demangler-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3447208f0a5c49b7c7af724c59129104f9829c7e5899f5fae2bbf50840e346aa 2234 rust-msvc-demangler_0.10.1-1.dsc c4c25a3bb7d880e8eceab4822f3141ad0700d20f025991c1f03bd3d00219a5fc 51322 rust-msvc-demangler_0.10.1.orig.tar.gz 52de61e79df4d01c9a1f36c49a7bf8bad8ad5c4acc1128f774cf9f626bd1bbb8 3016 rust-msvc-demangler_0.10.1-1.debian.tar.xz"
+    "250a180d02b8f4646cb8ab2199924278bbdc89d2e43c8140c90f7e1544c17f67 2354 rust-msvc-demangler_0.11.0-1.dsc fbeff6bd154a309b2ada5639b2661ca6ae4599b34e8487dc276d2cd637da2d76 51440 rust-msvc-demangler_0.11.0.orig.tar.gz e33e86a78b97d1cb4c1707cdf1bcd1c57a4b9511325d697b6c59bd10b1565c00 3120 rust-msvc-demangler_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-msvc-demangler"
   ],
   "Files": [
-    "9e699ed8f918be06842a7e1e0ef012f8 2234 rust-msvc-demangler_0.10.1-1.dsc 62025b28883bbff3de7be0bd45e77cd4 51322 rust-msvc-demangler_0.10.1.orig.tar.gz e8fd673df719be7688f5f07b79b0d1c6 3016 rust-msvc-demangler_0.10.1-1.debian.tar.xz"
+    "1be40c88e69b945a0bfbb7c220f6721e 2354 rust-msvc-demangler_0.11.0-1.dsc 951aff56a7676fa0fa2d2acc45778e95 51440 rust-msvc-demangler_0.11.0.orig.tar.gz b991ae48b2f2c0eff0c7030858c665d6 3120 rust-msvc-demangler_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mstange/msvc-demangler-rust"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/msvc-demangler]"
   ],
   "Version": [
-    "0.10.1-1"
+    "0.11.0-1"
   ]
 }

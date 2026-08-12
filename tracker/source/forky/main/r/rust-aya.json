@@ -6,16 +6,19 @@
     "librust-aya-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-assert-matches-1-dev (\u003e= 1.5.0-~~) \u003c!nocheck\u003e, librust-aya-obj-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-aya-obj-0.2+std-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-bitflags-2-dev (\u003e= 2.2.1-~~) \u003c!nocheck\u003e, librust-bytes-1-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.105-~~) \u003c!nocheck\u003e, librust-log-0.4-dev \u003c!nocheck\u003e, librust-object-0.36+elf-dev \u003c!nocheck\u003e, librust-object-0.36+read-core-dev \u003c!nocheck\u003e, librust-object-0.36+std-dev \u003c!nocheck\u003e, librust-object-0.36+write-dev \u003c!nocheck\u003e, librust-once-cell-1-dev (\u003e= 1.20.1-~~) \u003c!nocheck\u003e, librust-thiserror-1-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.80.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-assert-matches-1-dev (\u003e= 1.5.0) \u003c!nocheck\u003e, librust-aya-obj-0.2+default-dev (\u003e= 0.2.1) \u003c!nocheck\u003e, librust-aya-obj-0.2+std-dev (\u003e= 0.2.1) \u003c!nocheck\u003e, librust-bitflags-2-dev (\u003e= 2.2.1) \u003c!nocheck\u003e, librust-bytes-1-dev \u003c!nocheck\u003e, librust-libc-0.2-dev (\u003e= 0.2.105) \u003c!nocheck\u003e, librust-log-0.4-dev \u003c!nocheck\u003e, librust-object-0.37+elf-dev \u003c!nocheck\u003e, librust-object-0.37+read-core-dev \u003c!nocheck\u003e, librust-object-0.37+std-dev \u003c!nocheck\u003e, librust-object-0.37+write-dev \u003c!nocheck\u003e, librust-once-cell-1-dev (\u003e= 1.20.1) \u003c!nocheck\u003e, librust-thiserror-1-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1b67787d9bd93c777d0a82d1468ed9073d7875d048c051c7909942404e7b4500 2730 rust-aya_0.13.1-2.dsc d18bc4e506fbb85ab7392ed993a7db4d1a452c71b75a246af4a80ab8c9d2dd50 196855 rust-aya_0.13.1.orig.tar.gz a0c5f7184a52f57a1f090b0df0b0c35546185c347edf91c39483e4061a76135b 2936 rust-aya_0.13.1-2.debian.tar.xz"
+    "a9ed77bb5eb932e543133d8437be7703fa0ff7e688080da6268913655c6bdc4d 2760 rust-aya_0.13.1-3.dsc d18bc4e506fbb85ab7392ed993a7db4d1a452c71b75a246af4a80ab8c9d2dd50 196855 rust-aya_0.13.1.orig.tar.gz f8f4241b30939e81b08fb881c69d889442cfb317f66345315f722ef14afd6fab 3220 rust-aya_0.13.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-aya"
   ],
   "Files": [
-    "66cf0940f6842154f95004f949cee97f 2730 rust-aya_0.13.1-2.dsc a799c649dfe7bb36047d72b640b49d8f 196855 rust-aya_0.13.1.orig.tar.gz 487e088c5eb2f6953900f03b599f4930 2936 rust-aya_0.13.1-2.debian.tar.xz"
+    "50783e1f24cf209fa2d88b8ff4937c3f 2760 rust-aya_0.13.1-3.dsc a799c649dfe7bb36047d72b640b49d8f 196855 rust-aya_0.13.1.orig.tar.gz 24744b20dbed7f63a2accf4444b69d22 3220 rust-aya_0.13.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3-dev"
+    "dh-cargo, librust-tempfile-3-dev, rustc"
   ],
   "Uploaders": [
     "Noah Meyerhans \u003cnoahm@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/aya]"
   ],
   "Version": [
-    "0.13.1-2"
+    "0.13.1-3"
   ]
 }

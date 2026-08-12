@@ -6,19 +6,25 @@
     "librust-str-stack-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1fe1852dcfc14b27ff97b9cedd02160cf52aebdf9f3575ab5738fd549ca6872f 2157 rust-str-stack_0.1.0-1.dsc e71c918e7965a3b7acd702d8e80c555fc1ef0fb44a031aa8b2235c19f5c13bc6 8239 rust-str-stack_0.1.0.orig.tar.gz f60c0dd17aecd9f9a91b1a1d6b09324bcbcc12a4fce5f65eaf4e27ac2c3c5d34 2660 rust-str-stack_0.1.0-1.debian.tar.xz"
+    "ca7503a36d381a581c44fff1cfe573cf69158c04667e1e89b1f3d7a6866f019b 2213 rust-str-stack_0.1.1-1.dsc 7f446288b699d66d0fd2e30d1cfe7869194312524b3b9252594868ed26ef056a 8550 rust-str-stack_0.1.1.orig.tar.gz a1c2f2e8e402c2f118dfeaa07c7f68d36a4df5e79e23cadcffdc9373b1508a2a 2816 rust-str-stack_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-str-stack"
   ],
   "Files": [
-    "dcfaa351d84c9b2efa56d0c114accd5f 2157 rust-str-stack_0.1.0-1.dsc 4bee37fab5125dec0816f98befcbd4a4 8239 rust-str-stack_0.1.0.orig.tar.gz 780be33adaeba6da69598166fb0af983 2660 rust-str-stack_0.1.0-1.debian.tar.xz"
+    "d10c389a53c1af0a2fcd617342b70a96 2213 rust-str-stack_0.1.1-1.dsc 347c2bcc67cfdf4a59d8a013ef9dbb48 8550 rust-str-stack_0.1.1.orig.tar.gz 70b5998b149ca2fb17b980b812132dff 2816 rust-str-stack_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Stebalien/str_stack"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/str-stack]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.1.1-1"
   ]
 }
