@@ -6,16 +6,19 @@
     "librust-pdb-addr2line-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-elsa-1+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-maybe-owned-0.3+default-dev (\u003e= 0.3.4-~~) \u003c!nocheck\u003e, librust-pdb2-0.9+default-dev \u003c!nocheck\u003e, librust-range-collections-0.4+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev \u003c!nocheck\u003e, librust-elsa-1+default-dev (\u003e= 1.9.0) \u003c!nocheck\u003e, librust-maybe-owned-0.3+default-dev (\u003e= 0.3.4) \u003c!nocheck\u003e, librust-pdb2-0.10+default-dev (\u003e= 0.10.1) \u003c!nocheck\u003e, librust-range-collections-0.4+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bbe9fc5fa5955d6250fea3d9e7080202e09b00701809858d9965810939d38a24 2505 rust-pdb-addr2line_0.11.1-1.dsc 6f4d9133f33529242bbc22aaaffbd05a7c61712833ecb3a23f50acc1055f2bd5 35346 rust-pdb-addr2line_0.11.1.orig.tar.gz 47e8d180c39dfdec6af08b1ed06413f077f4425cd3deaab08138765be604ee9e 2860 rust-pdb-addr2line_0.11.1-1.debian.tar.xz"
+    "d02897a5b1c108e20332826b055a43035940c64a832981a6a1fd6cbae2b1ad69 2702 rust-pdb-addr2line_0.12.1-1.dsc c3263467eb4f7871a8bd6650fe7230de816d1f744e32e9a9754df9898d0540ce 37563 rust-pdb-addr2line_0.12.1.orig.tar.gz e5b03df2c9795622d4be6e8b655642ecb8ce3a30a9e02015619015f0d64c8cee 2984 rust-pdb-addr2line_0.12.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pdb-addr2line"
   ],
   "Files": [
-    "07d2359df8219d2850624bffa50d66f0 2505 rust-pdb-addr2line_0.11.1-1.dsc 49cf880a222e83bf5edb670f9fa97365 35346 rust-pdb-addr2line_0.11.1.orig.tar.gz 28b6a71f4be16b3ab66c237216831971 2860 rust-pdb-addr2line_0.11.1-1.debian.tar.xz"
+    "d61fa723bdb1372d093abf0203618ad9 2702 rust-pdb-addr2line_0.12.1-1.dsc 28a1ccd73fa60b2d2af4bddad2e1930a 37563 rust-pdb-addr2line_0.12.1.orig.tar.gz ca3397aea48547c9c5b50e36f43fd058 2984 rust-pdb-addr2line_0.12.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-clap-4+default-dev, librust-getopts-0.2+default-dev, librust-memmap2-0.9+default-dev, librust-msvc-demangler-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pdb-addr2line]"
   ],
   "Version": [
-    "0.11.1-1"
+    "0.12.1-1"
   ]
 }

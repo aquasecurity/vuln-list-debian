@@ -6,19 +6,25 @@
     "librust-iter-read-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.58) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5bfd121ed1f3b8cbdb11432df10e1b7df0fc14b980c6608c77b15b03511c7c1f 1624 rust-iter-read_1.0.1-1.dsc a598c1abae8e3456ebda517868b254b6bc2a9bb6501ffd5b9d0875bf332e048b 8897 rust-iter-read_1.0.1.orig.tar.gz 10660582331fa52a55034e17c508758b72e2747237e0dedc674478684a0992bb 2628 rust-iter-read_1.0.1-1.debian.tar.xz"
+    "6a2c3a309f54189387798ef0a7a2b1452cca419301e1c0f2e44e58e3d9e749b9 2223 rust-iter-read_1.1.0-1.dsc 071ed4cc1afd86650602c7b11aa2e1ce30762a1c27193201cb5cee9c6ebb1294 9173 rust-iter-read_1.1.0.orig.tar.gz 8612a1c82cb44505b1075efe95b879a8a19fc3df01207b715b64ec0f7ba2667b 2828 rust-iter-read_1.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-iter-read"
   ],
   "Files": [
-    "47e7a8a5445223d9fa79264dfd302dbf 1624 rust-iter-read_1.0.1-1.dsc 1deea557a8ee3d0e76de4e29c212ecf1 8897 rust-iter-read_1.0.1.orig.tar.gz 87b8e0b1acc8fe5f7846eddc8d9f9758 2628 rust-iter-read_1.0.1-1.debian.tar.xz"
+    "4d202c13476f67e9494cd3ca1444cf40 2223 rust-iter-read_1.1.0-1.dsc 15b5c7eae3bf7cbee4f3fb2292840b82 9173 rust-iter-read_1.1.0.orig.tar.gz d02219f18bbe9923f173478001261ff3 2828 rust-iter-read_1.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/birkenfeld/iter-read"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/iter-read]"
   ],
   "Version": [
-    "1.0.1-1"
+    "1.1.0-1"
   ]
 }

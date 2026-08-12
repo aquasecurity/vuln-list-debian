@@ -6,19 +6,25 @@
     "librust-partition-identity-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev (\u003e= 1.0.30-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bf5c007d70a96281308c09b198c62c9d724e767ad9ae45ade2c58e774ba63edc 2284 rust-partition-identity_0.3.0-1.dsc 9fa925f9becb532d758b0014b472c576869910929cf4c3f8054b386f19ab9e21 6711 rust-partition-identity_0.3.0.orig.tar.gz bb63c9b6ef0bc9cbbe6d0ddf7de4951b64a13e0dd69db1650491af3f186f56b6 2544 rust-partition-identity_0.3.0-1.debian.tar.xz"
+    "589caa5224ab850f5e44cab34c9e8e3db7dca745f2d916dd0ee89f839a54ea9a 2356 rust-partition-identity_0.3.1-1.dsc 1b25ada56da40bd4266a924109037ec9a9c59306e002dd2c30b00c0c3d648b93 6728 rust-partition-identity_0.3.1.orig.tar.gz f5b7d5540498443c6e7bf65226aadc73aca3ece74785add3c293eafd74e76f2a 2692 rust-partition-identity_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-partition-identity"
   ],
   "Files": [
-    "c05e4e98e06f4db8dd825eb145832e66 2284 rust-partition-identity_0.3.0-1.dsc 675e7988057e9b0c22e3b3a2be51e0b7 6711 rust-partition-identity_0.3.0.orig.tar.gz 18808f63a63b3eac3c0a27c125fffb05 2544 rust-partition-identity_0.3.0-1.debian.tar.xz"
+    "78fea171776c7b5e29832257ce5e9a3c 2356 rust-partition-identity_0.3.1-1.dsc ee97d7f5872a53c0ee369ca75ffae1d9 6728 rust-partition-identity_0.3.1.orig.tar.gz 5a563d08fdccbb964ac03ee1719daca4 2692 rust-partition-identity_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pop-os/partition-identity"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/partition-identity]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1-1"
   ]
 }

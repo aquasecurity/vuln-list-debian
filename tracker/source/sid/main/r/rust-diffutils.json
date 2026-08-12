@@ -6,19 +6,25 @@
     "librust-diffutils-dev, rust-diffutils"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-chrono-0.4+default-dev, librust-diff-0.1+default-dev, librust-regex-1+default-dev (\u003e= 1.10-~~), librust-same-file-1+default-dev (\u003e= 1.0.6-~~), librust-unicode-width-0.1+default-dev (\u003e= 0.1.12-~~)"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native, libstd-rust-dev, librust-chrono-0.4+default-dev, librust-diff-0.1+default-dev, librust-itoa-1+default-dev (\u003e= 1.0.11), librust-regex-1+default-dev (\u003e= 1.10), librust-same-file-1+default-dev (\u003e= 1.0.6), librust-unicode-width-0.2+default-dev"
   ],
   "Checksums-Sha256": [
-    "7d812ecc080fb7e1823deb4360c0dbf82d1498109d8238f9a4fe81f821a988da 2503 rust-diffutils_0.4.2-1.dsc c8d7ce619b5c0e13f7543dc2c203a7e6fa37e0111d876339aada7ec9540a58d5 38003 rust-diffutils_0.4.2.orig.tar.gz 31e327837973587d0b652b7e31915f0e9738aa170da012640ac422365204aed4 3156 rust-diffutils_0.4.2-1.debian.tar.xz"
+    "462f9342364adeda375be2c1b556bf0ff97ace2668a38de304da0cf6cac5c662 2611 rust-diffutils_0.5.0-1.dsc ba6999910c01606653d73925f86a769a5920393b2baac5c85f87afa3a599b9f8 55755 rust-diffutils_0.5.0.orig.tar.gz f198fc542737f7eba941e05a591e6b5541de791900ce1bf07dd71c3ffc016cca 4600 rust-diffutils_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-diffutils"
   ],
   "Files": [
-    "9222c6328ecbf9bcc6d5bbbbb420350c 2503 rust-diffutils_0.4.2-1.dsc f7efdb5ee54ffc3d04841bb08995c724 38003 rust-diffutils_0.4.2.orig.tar.gz af0ed304470a9545ce737b0578c78f6f 3156 rust-diffutils_0.4.2-1.debian.tar.xz"
+    "cd23b5bdbc7bcc5961949e836387268e 2611 rust-diffutils_0.5.0-1.dsc 5ea3d2dd21c75b6bc58a5ada6b85a2ba 55755 rust-diffutils_0.5.0.orig.tar.gz 57c86cc69d93a872051df44533d7920b 4600 rust-diffutils_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/uutils/diffutils"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-cmd-2+default-dev, librust-predicates-3+default-dev, librust-pretty-assertions-1+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, ed, librust-assert-cmd-2+default-dev, librust-predicates-3+default-dev, librust-pretty-assertions-1+default-dev, librust-tempfile-3+default-dev, patch, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/diffutils]"
   ],
   "Version": [
-    "0.4.2-1"
+    "0.5.0-1"
   ]
 }

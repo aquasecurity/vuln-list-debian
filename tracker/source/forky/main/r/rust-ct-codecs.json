@@ -6,16 +6,19 @@
     "librust-ct-codecs-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "26271b96c295bf60963ed22c7193c1859e5202b7a6f709a7a7fc985c2774a010 2195 rust-ct-codecs_1.1.1-1.dsc f3b7eb4404b8195a9abb6356f4ac07d8ba267045c8d6d220ac4dc992e6cc75df 5388 rust-ct-codecs_1.1.1.orig.tar.gz 50b97d547f2913122ff8594f0725b7919e035e5ec77a3b9452edc95764e84280 2584 rust-ct-codecs_1.1.1-1.debian.tar.xz"
+    "d51c01c710b015957e235e7700058aa12cf7b7921e0f39f9c1918daaf5d626b3 2230 rust-ct-codecs_1.1.7-1.dsc 49fb0c6640b4507ebd99ff67677009e381ba5eee1d14df78de4a3d16eb123c39 11450 rust-ct-codecs_1.1.7.orig.tar.gz 2ed0210201ebf44204528502bb68a0f4a9df46b505673d27073cfe84f548e97e 2720 rust-ct-codecs_1.1.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ct-codecs"
   ],
   "Files": [
-    "3c11b9ad1ed37d066cec0a45bcfba084 2195 rust-ct-codecs_1.1.1-1.dsc 1fcb16ff3093c34c7265bb1be892096c 5388 rust-ct-codecs_1.1.1.orig.tar.gz 103ee5089432fb8c87b2786b520fe246 2584 rust-ct-codecs_1.1.1-1.debian.tar.xz"
+    "529ddbdec55c3c3ad3071a8f206b25f3 2230 rust-ct-codecs_1.1.7-1.dsc 305cece8a13a12af57f54a9f49aba406 11450 rust-ct-codecs_1.1.7.orig.tar.gz a2443e965f240f8e096bfe1c0ae6a0af 2720 rust-ct-codecs_1.1.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ct-codecs]"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.1.7-1"
   ]
 }
