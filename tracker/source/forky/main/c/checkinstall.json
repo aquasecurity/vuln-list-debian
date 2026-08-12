@@ -6,22 +6,22 @@
     "checkinstall"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), docbook-to-man, gettext, libc0.1-dev (\u003e= 2.10) [kfreebsd-i386 kfreebsd-amd64], libc0.3 (\u003e= 2.10) [hurd-i386 hurd-amd64], libc6-dev (\u003e= 2.10) [i386 amd64 armel hppa mips mipsel powerpc s390 sparc], libc6.1-dev (\u003e= 2.10) [alpha ia64]"
+    "debhelper-compat (= 14), cmake \u003c!nocheck\u003e, docbook-to-man, file, gettext, libc0.3 (\u003e= 2.10) [hurd-i386 hurd-amd64], libc6-dev (\u003e= 2.10) [i386 amd64 armel hppa mips mipsel powerpc s390 sparc], libc6.1-dev (\u003e= 2.10) [alpha ia64]"
   ],
   "Checksums-Sha256": [
-    "61bb456cb2a906cc3c53060dca9ece17e610e4806f141ee7e1446d28bf4f5e5a 1924 checkinstall_1.6.2+git20170426.d24a630-5.1.dsc 9a4441f4483298e8e12fc0de5a8fa262a991d5be56fbb93dcb7a378ebbcf91ef 105924 checkinstall_1.6.2+git20170426.d24a630.orig.tar.xz 62942bef02e0cb656cde0e585f24079521ffd04b9ca69faa0d9b8341c94aae90 19628 checkinstall_1.6.2+git20170426.d24a630-5.1.debian.tar.xz"
+    "8778bfe3a93d63aa2f04fe980179111a8346153874dacf2b4aee13c8d30806cf 2168 checkinstall_1.8.3-1.dsc 4d5f6524bb6bbc48db905f1023a442851faad5ade40cf01ef52573a4d0ffa413 230264 checkinstall_1.8.3.orig.tar.gz 5869bc16148210340c12a9e0be688f5fdb339589eb995ab7d2659fba3d53943b 13288 checkinstall_1.8.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/checkinstall"
   ],
   "Files": [
-    "0e9f98a6df327799939ab50b16413d77 1924 checkinstall_1.6.2+git20170426.d24a630-5.1.dsc a90c1f537eb4194137a193b5516857df 105924 checkinstall_1.6.2+git20170426.d24a630.orig.tar.xz 8e0acc319da55daee3e03ff47457ce81 19628 checkinstall_1.6.2+git20170426.d24a630-5.1.debian.tar.xz"
+    "58685ce59c35683a112f199f2c058fda 2168 checkinstall_1.8.3-1.dsc 581faa50c78fe4da5e9454b576a4839c 230264 checkinstall_1.8.3.orig.tar.gz c8d9092380216366e04c19ba540cf007 13288 checkinstall_1.8.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://checkinstall.izto.org"
+    "https://github.com/ssgelm/checkinstall"
   ],
   "Maintainer": [
     "Stephen Gelman \u003cssgelm@debian.org\u003e"
@@ -39,7 +39,13 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, cmake"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/checkinstall"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/checkinstall.git"
   ],
   "Version": [
-    "1.6.2+git20170426.d24a630-5.1"
+    "1.8.3-1"
   ]
 }

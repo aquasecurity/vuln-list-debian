@@ -6,19 +6,19 @@
     "python3-xmltodict"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-coverage, python3-nose2"
+    "python3-coverage, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "033f4c3bd7856a3f327cf2534dab88521c89829c48cad36f7b7014089a889b4c 2030 python-xmltodict_0.13.0-1.1.dsc d74f4099d42bcca273ffd3bc9766abaa8765960eabc4399f2a6ad48cb4f58ce0 19569 python-xmltodict_0.13.0.orig.tar.gz 871f4beee9d9fb2a9d7d0d9274fb8ad5384fbb8c3de4cc2f3a005bdceb7567c4 5976 python-xmltodict_0.13.0-1.1.debian.tar.xz"
+    "ef676c4befd1616c1fceecb5d3fc2a7d06c90dec0ce0bd3891d13b6da17e996d 2158 python-xmltodict_1.0.3-1.1.dsc 2646e5b3201dd57a3e6c2d9f391ee7886246b7efb5c0c48ea94eb3975db35c38 28902 python-xmltodict_1.0.3.orig.tar.gz 0d269cba53dec1742d06177556549d3f4bf36e5fbc34f1030323524a16646b8d 3160 python-xmltodict_1.0.3-1.1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-xmltodict"
   ],
   "Files": [
-    "996f978d03d6aeeeb50f458a6e426d60 2030 python-xmltodict_0.13.0-1.1.dsc 20344fa3fe582e5cb412ee92b03c8c5f 19569 python-xmltodict_0.13.0.orig.tar.gz 452bbaf26ecac849ef7037e5bd0bb6ac 5976 python-xmltodict_0.13.0-1.1.debian.tar.xz"
+    "8787c6bfaac3bf894e5bc06dd5a979cb 2158 python-xmltodict_1.0.3-1.1.dsc 6cdf1f5c76d8356bd2248597f8e3d852 28902 python-xmltodict_1.0.3.orig.tar.gz 4f7842b007bafaa032116ecf4c11ff5c 3160 python-xmltodict_1.0.3-1.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -44,6 +44,12 @@
   "Standards-Version": [
     "4.6.1"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, pybuild-plugin-autopkgtest"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/python-xmltodict"
   ],
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/python-xmltodict.git"
   ],
   "Version": [
-    "0.13.0-1.1"
+    "1.0.3-1.1"
   ]
 }
