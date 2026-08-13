@@ -6,16 +6,19 @@
     "librust-utf8-width-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7754879ea7ae704cc8b67fad3ed1de177528a37a65927220b7604ecc6a0a9a8b 2235 rust-utf8-width_0.1.5-2.dsc 7cf7d77f457ef8dfa11e4cd5933c5ddb5dc52a94664071951219a97710f0a32b 2941 rust-utf8-width_0.1.5.orig.tar.gz ca07c31db949ac40ac36afd6c7ab59e33359c5b12ab025263addd77a9c0f7a68 2876 rust-utf8-width_0.1.5-2.debian.tar.xz"
+    "d89d5e46d93bbcfae9df00c3c41f6e6e62371350c4c6c8f912fa8835ab5aeea0 2248 rust-utf8-width_0.1.9-1.dsc 159a7cadce548703edd50d24069bc294c5415ecab0a480e0cd1ca06d112dc94a 2628 rust-utf8-width_0.1.9.orig.tar.gz 4b0cd2e73075639bd44da3ae89ca5467ad6cb307cab00ff70bce1046f7db60a0 2796 rust-utf8-width_0.1.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-utf8-width"
   ],
   "Files": [
-    "b4c9bd9388b95125039c8fc674345d18 2235 rust-utf8-width_0.1.5-2.dsc 11c238f8f5f02efe1b6575f89edf63c9 2941 rust-utf8-width_0.1.5.orig.tar.gz 0faebc239b121d90825ff5de46f11579 2876 rust-utf8-width_0.1.5-2.debian.tar.xz"
+    "9e7dadddb29964c93d1f9036726d8d01 2248 rust-utf8-width_0.1.9-1.dsc 36cdfe88f665a98686ddb2ee12da06e6 2628 rust-utf8-width_0.1.9.orig.tar.gz 65eb9a0aad13b5a17cd0015f38de951c 2796 rust-utf8-width_0.1.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bencher-0.1+default-dev"
+    "dh-cargo, librust-bencher-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Dylan Aïssi \u003cdaissi@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/utf8-width]"
   ],
   "Version": [
-    "0.1.5-2"
+    "0.1.9-1"
   ]
 }

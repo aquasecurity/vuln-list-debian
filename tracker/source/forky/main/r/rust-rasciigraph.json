@@ -6,16 +6,19 @@
     "librust-rasciigraph-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "158f6962a9e6e9f4be9c767d5fda513124c92a617e1e21312cd35311b84dbbea 2188 rust-rasciigraph_0.2.0-2.dsc 89a3273d76a0cdbb09ecead2f6007d6d169211f3c9c6dd30cd8a2e8175adcb74 6507 rust-rasciigraph_0.2.0.orig.tar.gz 20141d58e5776367c1a8bba81e12133da8ba00d341e632d203a265f332e922c1 2488 rust-rasciigraph_0.2.0-2.debian.tar.xz"
+    "f838da6de51584d1a47a90a7dcf3bd14e8a763c77847b6f6ba1802a2bdb69bb2 2220 rust-rasciigraph_0.3.0-1.dsc b7d4b4f6be8decb01c72dc816cd58d0a9896a3c78f0ca9ba53aafea55cc9844b 8933 rust-rasciigraph_0.3.0.orig.tar.gz 069d7c6075449f73e29ed10e7de3007340ddd3f1b6d535b5bfc960f91f7531a1 2956 rust-rasciigraph_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rasciigraph"
   ],
   "Files": [
-    "8c8c36eeb27ccd47af684b8af6490608 2188 rust-rasciigraph_0.2.0-2.dsc 192ba97a22a24278df4a405579c45fd1 6507 rust-rasciigraph_0.2.0.orig.tar.gz ea77913a776a9c7c8403f8b641fd906a 2488 rust-rasciigraph_0.2.0-2.debian.tar.xz"
+    "39be5e6aecfb4707094fa4501d91fada 2220 rust-rasciigraph_0.3.0-1.dsc e119743df16f829dbc47ca683022f5d1 8933 rust-rasciigraph_0.3.0.orig.tar.gz 766023589db642bb0d1ab9071178bd8b 2956 rust-rasciigraph_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Yogeswaran Umasankar \u003cyogu@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rasciigraph]"
   ],
   "Version": [
-    "0.2.0-2"
+    "0.3.0-1"
   ]
 }
