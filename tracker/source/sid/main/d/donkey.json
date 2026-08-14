@@ -6,22 +6,28 @@
     "donkey"
   ],
   "Build-Depends": [
-    "debhelper (\u003e\u003e 13.15~), dh-package-notes, dh-sequence-single-binary, dpkg-build-api (= 1), libmd-dev | libssl-dev, python3, python3-ddt, tmux"
+    "debhelper-compat (= 14), dh-package-notes, dh-sequence-single-binary, dpkg-build-api (= 1), libmd-dev | libssl-dev, python3 \u003c!nocheck\u003e, python3-ddt \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "dd94119c5427ac4740479a1973b4cd3402aa1396291783eef39a8fa25b218bed 2446 donkey_1.2.0-10.dsc c72ba554743eb228a37d0e6d0f49256a3a989f20215fbd2c670724c60ec55603 46988 donkey_1.2.0.orig.tar.xz 92c1055897afe47ba89e3f5ef5fffdc0059a23422a58aeef64a30cbbf469dfc9 833 donkey_1.2.0.orig.tar.xz.asc f78ad7ad37e0c0d627a64cce8497a0d654e2ecf7a21643b4ff8358c76bb868b7 11848 donkey_1.2.0-10.debian.tar.xz"
+    "98d18c6857f481b643fde05b59ca62e5ea64db735a416abbf1f292f85d4431f0 2553 donkey_1.2.0-11.dsc c72ba554743eb228a37d0e6d0f49256a3a989f20215fbd2c670724c60ec55603 46988 donkey_1.2.0.orig.tar.xz 92c1055897afe47ba89e3f5ef5fffdc0059a23422a58aeef64a30cbbf469dfc9 833 donkey_1.2.0.orig.tar.xz.asc 59239129e4181f82340240c670b79395d53503b114e68fdfc5a37ec2da95796f 12636 donkey_1.2.0-11.debian.tar.xz"
   ],
   "Dgit": [
-    "e4401fc8803558d64af5921ba440ff7d0a7a412d debian archive/debian/1.2.0-10 https://git.dgit.debian.org/donkey"
+    "6cd944460a33ab65d449458f95a67c247ab4f3ef debian archive/debian/1.2.0-11 https://git.dgit.debian.org/donkey"
   ],
   "Directory": [
     "pool/main/d/donkey"
   ],
   "Files": [
-    "e699918bf020cfe9d3f207bad7f1846b 2446 donkey_1.2.0-10.dsc adf303392b296e09e399847598c454b0 46988 donkey_1.2.0.orig.tar.xz 3063304d10b63675f0edd754dfacd451 833 donkey_1.2.0.orig.tar.xz.asc acaf1469d513e3d0078c700dc19990c9 11848 donkey_1.2.0-10.debian.tar.xz"
+    "cfba5b021185b5510d73db5282063eec 2553 donkey_1.2.0-11.dsc adf303392b296e09e399847598c454b0 46988 donkey_1.2.0.orig.tar.xz 3063304d10b63675f0edd754dfacd451 833 donkey_1.2.0.orig.tar.xz.asc 634e64d9268f0efa2c9584cc78266a5b 12636 donkey_1.2.0-11.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=f44ab7ecab7d00f854de3c4155f68af754ad22b6 fp=2ee7a7a517fc124cf115c354651eefb02527df13"
+  ],
+  "Git-Tag-Tagger": [
+    "Peter Pentchev \u003croam@debian.org\u003e"
   ],
   "Homepage": [
     "https://devel.ringlet.net/security/donkey/"
@@ -42,13 +48,13 @@
     "net"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-debputy, feature-check, python3, python3-ddt, python3-lsprotocol, tmux"
+    "feature-check, python3, python3-ddt"
   ],
   "Vcs-Browser": [
     "https://gitlab.com/donkey/donkey/tree/debian/master"
@@ -57,6 +63,6 @@
     "https://gitlab.com/donkey/donkey.git -b debian/master"
   ],
   "Version": [
-    "1.2.0-10"
+    "1.2.0-11"
   ]
 }

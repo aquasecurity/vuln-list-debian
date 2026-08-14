@@ -9,7 +9,7 @@
     "autoconf, bison, clang [!alpha !hppa !hurd-amd64 !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32] \u003c!pkg.postgresql.nollvm\u003e, debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libpam0g-dev | libpam-dev, libperl-dev, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [!alpha !hppa !hurd-amd64 !hurd-i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !loong64 !m68k !powerpc !riscv64 !sh4 !sparc64 !x32] \u003c!pkg.postgresql.nollvm\u003e, lz4 | liblz4-tool, mawk, openssl, perl (\u003e= 5.8), pkgconf, postgresql-common-dev, python3-dev, systemtap-sdt-dev [linux-any], tcl-dev, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
   ],
   "Checksums-Sha256": [
-    "5bc74b90b27b78101b93d04645fc5db8671713ae88b4836decacc7204464b708 4522 postgresql-17_17.10-0+deb13u1.dsc 078a03516dcdbdb705fecaf415ea3d13a956c589e46f09fed68a06fb00598c90 21664720 postgresql-17_17.10.orig.tar.bz2 fa9f5903f1b0ad94a07c50f1d2997419ef6e8cbc7dd27b651060b7e19f630392 31488 postgresql-17_17.10-0+deb13u1.debian.tar.xz"
+    "bf148ae423a982707c3f60672c3a072ef62b701bd9f5df847d9f4b8c9b3e3b18 4284 postgresql-17_17.11-0+deb13u1.dsc dd27f2b3c59e73ed14aa3324901242bf69a032a6347805f274e6260322d42979 21787224 postgresql-17_17.11.orig.tar.bz2 82851f4dfeb372c99b94b412e2e3046a8eee7771098e42ac1fa234bef2611cbd 37348 postgresql-17_17.11-0+deb13u1.debian.tar.xz"
   ],
   "Directory": [
     "pool/updates/main/p/postgresql-17"
@@ -27,7 +27,7 @@
     "postgresql-17"
   ],
   "Package-List": [
-    "libecpg-compat3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libecpg-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libecpg6 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpgtypes3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq5 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs postgresql-17 deb database optional arch=any postgresql-client-17 deb database optional arch=any postgresql-doc-17 deb doc optional arch=all profile=!nodoc profile:v1=!nodoc postgresql-plperl-17 deb database optional arch=any postgresql-plpython3-17 deb database optional arch=any postgresql-pltcl-17 deb database optional arch=any postgresql-server-dev-17 deb libdevel optional arch=any"
+    "libecpg-compat3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs libecpg-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs libecpg6 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs libpgtypes3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs libpq-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs libpq5 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs postgresql-17 deb database optional arch=any postgresql-client-17 deb database optional arch=any postgresql-doc-17 deb doc optional arch=all profile=!nodoc postgresql-plperl-17 deb database optional arch=any postgresql-plpython3-17 deb database optional arch=any postgresql-pltcl-17 deb database optional arch=any postgresql-server-dev-17 deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "build-essential, debhelper, fakeroot, hunspell-en-us, iproute2, locales-all, logrotate, netcat-openbsd, perl, procps, tzdata, tzdata-legacy"
   ],
   "Uploaders": [
-    "Martin Pitt \u003cmpitt@debian.org\u003e, Peter Eisentraut \u003cpetere@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e"
+    "Martin Pitt \u003cmpitt@debian.org\u003e, Peter Eisentraut \u003cpetere@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/postgresql/postgresql"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/postgresql/postgresql.git -b 17"
   ],
   "Version": [
-    "17.10-0+deb13u1"
+    "17.11-0+deb13u1"
   ]
 }
