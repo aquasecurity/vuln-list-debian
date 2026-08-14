@@ -6,16 +6,19 @@
     "ucd-generate"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native, rustc:native, libstd-rust-dev, librust-clap-2+suggestions-dev (\u003e= 2.34.0-~~), librust-fst-0.4+default-dev, librust-ucd-parse-0.1+default-dev (\u003e= 0.1.10-~~), librust-ucd-trie-0.1+default-dev (\u003e= 0.1.5-~~), librust-ucd-util-0.2+default-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native, rustc:native (\u003e= 1.70), libstd-rust-dev, librust-clap-2+suggestions-dev (\u003e= 2.34.0), librust-fst-0.4+default-dev, librust-ucd-parse-0.1+default-dev (\u003e= 0.1.10), librust-ucd-trie-0.1+default-dev (\u003e= 0.1.7), librust-ucd-util-0.2+default-dev (\u003e= 0.2.2)"
   ],
   "Checksums-Sha256": [
-    "bab29453b0f205398db17773695e36eee321866828a06221af93cc05d25ef884 2347 rust-ucd-generate_0.3.0-1.dsc b2f7d0755d95e7476edac5c7c4aac44e5e748414ee40ae60df39e6bf4ea5e9a5 526020 rust-ucd-generate_0.3.0.orig.tar.gz 90519d0259c54a149af8a88727a00392f0c4bd54370680fe66628fef6baeba11 2808 rust-ucd-generate_0.3.0-1.debian.tar.xz"
+    "ad92420b0fbcd8332ecf1eae4b655e52b517ca4c6bf34e65b7bf6caac21f7198 2355 rust-ucd-generate_0.3.1-1.dsc 3a1a792412c6bf3cd714750a2595c4cdf609c6a12a0f805c77c7d3b1181ff85b 562878 rust-ucd-generate_0.3.1.orig.tar.gz a5bf708ad2009c2d18891a144506eab3097af3c518d316c2592a558ebdde1355 2960 rust-ucd-generate_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ucd-generate"
   ],
   "Files": [
-    "a08cd4ab40b013648cec8f2db6136379 2347 rust-ucd-generate_0.3.0-1.dsc 7c112134e1fd4214ead54f6b851ddd7f 526020 rust-ucd-generate_0.3.0.orig.tar.gz 3f696937ee03e42f4baa425c28698f0b 2808 rust-ucd-generate_0.3.0-1.debian.tar.xz"
+    "a21cc21732957df287dfe208c12d2daa 2355 rust-ucd-generate_0.3.1-1.dsc a82fcb9cd813f79f3d8b35a697dcca26 562878 rust-ucd-generate_0.3.1.orig.tar.gz ac1dae96bfe36d583cdc640a32d518fb 2960 rust-ucd-generate_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ucd-generate]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1-1"
   ]
 }
