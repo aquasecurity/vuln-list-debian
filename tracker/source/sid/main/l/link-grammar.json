@@ -6,16 +6,19 @@
     "link-grammar, liblink-grammar5t64, liblink-grammar-dev, liblink-grammar-java, python3-link-grammar, python-link-grammar-examples, link-grammar-dictionaries-en, link-grammar-dictionaries-all"
   ],
   "Build-Depends": [
-    "ant [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x], autoconf-archive, d-shlibs (\u003e= 0.106~), debhelper-compat (= 13), default-jdk [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x], dh-sequence-python3, flex, hunspell, libedit-dev, libhunspell-dev, libpcre2-dev, libsqlite3-dev, locales-all \u003c!nocheck\u003e, pkgconf, python3-dev, swig, zlib1g-dev"
+    "ant [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x], autoconf-archive, d-shlibs (\u003e= 0.106~), debhelper-compat (= 14), default-jdk [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x], dh-sequence-python3, flex, hunspell, libedit-dev, libhunspell-dev, libpcre2-dev, libsqlite3-dev, locales-all \u003c!nocheck\u003e, pkgconf, python3-dev, swig, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "3e51f31ad1d2bf5682df2f0035dfb309cd101fdfe35c9f3e1b667c4bf67f66fe 3100 link-grammar_5.13.0+dfsg-1.dsc e6e1e50935c7989f52f35ecc5fbaf24a1012d0f55f10a1451040975ad5e55022 3615312 link-grammar_5.13.0+dfsg.orig.tar.xz a4ed865e6a43a0b1ec50a387b7e43e0f4109232d36aaeef2e784f4ad3bf47599 31568 link-grammar_5.13.0+dfsg-1.debian.tar.xz"
+    "d04f85f20da603fd6d698980c549a39ca851d4a25ab04b556b9b40d380d0823a 3722 link-grammar_5.13.0+dfsg-2.dsc e6e1e50935c7989f52f35ecc5fbaf24a1012d0f55f10a1451040975ad5e55022 3615312 link-grammar_5.13.0+dfsg.orig.tar.xz 98fbd0f07d35ac0418940677642f799394d2ebd237eb5bcf3adc53fc42fff9e0 33288 link-grammar_5.13.0+dfsg-2.debian.tar.xz"
+  ],
+  "Description": [
+    "CMU's link grammar parser In Sleator, D. and Temperley, D. \"Parsing English with a Link Grammar\" (1991), the authors defined a new formal grammatical system called a \"link grammar\". A sequence of words is in the language of a link grammar if there is a way to draw \"links\" between words in such a way that the local requirements of each word are satisfied, the links do not cross, and the words form a connected graph. The authors encoded English grammar into such a system, and wrote this program to parse English using this grammar. . link-grammar can be used for linguistic parsing for information retrieval or extraction from natural language documents. It can also be used as a grammar checker."
   ],
   "Directory": [
     "pool/main/l/link-grammar"
   ],
   "Files": [
-    "9ba08de8f84e57a1d42913e6b14d7923 3100 link-grammar_5.13.0+dfsg-1.dsc c0608f87db913cee198a13feb23835d0 3615312 link-grammar_5.13.0+dfsg.orig.tar.xz 4989158d89eb8cc347f64a6db917a076 31568 link-grammar_5.13.0+dfsg-1.debian.tar.xz"
+    "ff17340b6158f590f05e595a2eab5da1 3722 link-grammar_5.13.0+dfsg-2.dsc c0608f87db913cee198a13feb23835d0 3615312 link-grammar_5.13.0+dfsg.orig.tar.xz 36b03bb2ecdcc231a4116072713a8928 33288 link-grammar_5.13.0+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "link-grammar"
   ],
   "Package-List": [
-    "liblink-grammar-dev deb libdevel optional arch=any liblink-grammar-java deb java optional arch=amd64,arm64,armel,armhf,i386,mips64el,ppc64el,riscv64,s390x liblink-grammar5t64 deb libs optional arch=any link-grammar deb text optional arch=any link-grammar-dictionaries-all deb text optional arch=all link-grammar-dictionaries-en deb text optional arch=all python-link-grammar-examples deb python optional arch=all python3-link-grammar deb python optional arch=any"
+    "liblink-grammar-dev deb libdevel optional arch=any liblink-grammar-java deb java optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x liblink-grammar5t64 deb libs optional arch=any link-grammar deb text optional arch=any link-grammar-dictionaries-all deb text optional arch=all link-grammar-dictionaries-en deb text optional arch=all python-link-grammar-examples deb python optional arch=all python3-link-grammar deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "text"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian/link-grammar.git"
   ],
   "Version": [
-    "5.13.0+dfsg-1"
+    "5.13.0+dfsg-2"
   ]
 }
