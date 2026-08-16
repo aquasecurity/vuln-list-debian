@@ -1,27 +1,27 @@
 {
   "Architecture": [
-    "all amd64 arm64 armel armhf i386 mips64el mipsel ppc64el alpha hppa ia64 m68k riscv64 sh4"
+    "all amd64 arm64 i386 loong64"
   ],
   "Binary": [
     "libvkd3d-doc, libvkd3d-headers, libvkd3d-dev, libvkd3d1, libvkd3d-utils1, libvkd3d-shader1, vkd3d-demos, vkd3d-compiler"
   ],
   "Build-Depends": [
-    "dpkg (\u003e= 1.19), debhelper-compat (= 13), pkg-config, spirv-headers, libvulkan-dev (\u003e= 1.1.70), libxcb-util0-dev, libxcb-icccm4-dev, libxcb-keysyms1-dev"
+    "bison, debhelper-compat (= 13), flex, pkgconf, spirv-headers, libjson-perl, libncurses-dev, libvulkan-dev (\u003e= 1.3.228), libxcb-util-dev, libxcb-icccm4-dev, libxcb-keysyms1-dev"
   ],
   "Build-Depends-Arch": [
-    "help2man, mingw-w64-tools, gcc-mingw-w64-i686 [i386 amd64], gcc-mingw-w64-x86-64 [i386 amd64]"
+    "help2man, mingw-w64-tools, gcc-mingw-w64-i686 [i386 amd64], gcc-mingw-w64-x86-64 [i386 amd64], libegl-mesa0 \u003c!nocheck\u003e, libglx-mesa0 \u003c!nocheck\u003e, mesa-vulkan-drivers \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "doxygen, graphviz, mingw-w64-tools, texlive-latex-extra, texlive-plain-generic, texlive-fonts-recommended"
   ],
   "Checksums-Sha256": [
-    "fbf648b649dd16fabf76949821f0b61bd4859999ac743bc4f30424b01f2dcfc0 3908 vkd3d_1.2-15.dsc e688ecfbcf4dd552b44761c2a45f4f944cd0618dc44bc4213c190ce783d641bf 364240 vkd3d_1.2.orig.tar.xz 1dabe845331c9fd4e22461cf60203141e422de081f3bf550e2b6d413941983c0 11800 vkd3d_1.2-15.debian.tar.xz"
+    "fc87d075f2328f57492ecbca1b6691ccb35d13164cc61a4410ebb1f5fc94c483 2993 vkd3d_2.0+ds-2.dsc 7a5d631ca7794373a00049b86d55cc4764b9fe185f5fed25e41735fd31dc6419 1125120 vkd3d_2.0+ds.orig.tar.xz 0a028e6c9db08d2f57f303343b32222cc83cd675f115c8705b3c104497f68a1f 11708 vkd3d_2.0+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/v/vkd3d"
   ],
   "Files": [
-    "25ee4c54bc376db942065d67af490d68 3908 vkd3d_1.2-15.dsc 3e2a791bd970561fef9df4c107de2fe2 364240 vkd3d_1.2.orig.tar.xz ad87bb84bfbeb0d88726238bb7f2ff5f 11800 vkd3d_1.2-15.debian.tar.xz"
+    "0a8534eeecd0c04f84bdc5f42e1c6aca 2993 vkd3d_2.0+ds-2.dsc 5fd965856479623c70629712b78cc67b 1125120 vkd3d_2.0+ds.orig.tar.xz 86ce189af23fe5e355d7c1258dfa509c 11708 vkd3d_2.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "vkd3d"
   ],
   "Package-List": [
-    "libvkd3d-dev deb libdevel optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 libvkd3d-doc deb doc optional arch=all libvkd3d-headers deb libdevel optional arch=all libvkd3d-shader1 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 libvkd3d-utils1 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 libvkd3d1 deb libs optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 vkd3d-compiler deb devel optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4 vkd3d-demos deb devel optional arch=amd64,arm64,armel,armhf,i386,mips64el,mipsel,ppc64el,alpha,hppa,ia64,m68k,riscv64,sh4"
+    "libvkd3d-dev deb libdevel optional arch=amd64,arm64,i386,loong64 libvkd3d-doc deb doc optional arch=all libvkd3d-headers deb libdevel optional arch=all libvkd3d-shader1 deb libs optional arch=amd64,arm64,i386,loong64 libvkd3d-utils1 deb libs optional arch=amd64,arm64,i386,loong64 libvkd3d1 deb libs optional arch=amd64,arm64,i386,loong64 vkd3d-compiler deb devel optional arch=amd64,arm64,i386,loong64 vkd3d-demos deb devel optional arch=amd64,arm64,i386,loong64"
   ],
   "Priority": [
     "extra"
@@ -45,7 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, pkgconf, xauth, xvfb"
   ],
   "Uploaders": [
     "Michael Gilbert \u003cmgilbert@debian.org\u003e,"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/wine-team/vkd3d.git"
   ],
   "Version": [
-    "1.2-15"
+    "2.0+ds-2"
   ]
 }
