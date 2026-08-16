@@ -6,16 +6,19 @@
     "librust-trim-in-place-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7d857c04ff8bfcc0ce867801041d62fa7ff6878496e09d70115083cb6ec282d0 2262 rust-trim-in-place_0.1.7-1.dsc 343e926fc669bc8cde4fa3129ab681c63671bae288b1f1081ceee6d9d37904fc 2485 rust-trim-in-place_0.1.7.orig.tar.gz 40275c8310aa04ad18b920066e45b6273cb7d0a003a0e29d3a0495330af76c81 2484 rust-trim-in-place_0.1.7-1.debian.tar.xz"
+    "bb2307993b4d8b7f1193c4909e33d1ea3ce28dab9345bc1beb4fb366193c24d6 2290 rust-trim-in-place_0.2.0-1.dsc e7d6719f139c2eebdc67eb3c1bae4fe8f70923492acac034c2d425742e08f80d 3666 rust-trim-in-place_0.2.0.orig.tar.gz 5563e864f468ae9ca18db2680ebae5c95ee52b77336d66fde632778c95dab759 2648 rust-trim-in-place_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-trim-in-place"
   ],
   "Files": [
-    "ad8b2fefd81529084d3c037aa2c36922 2262 rust-trim-in-place_0.1.7-1.dsc 6dddfbb68606565f2b70414d85db3622 2485 rust-trim-in-place_0.1.7.orig.tar.gz e064ad09549f25d7c13072209944b577 2484 rust-trim-in-place_0.1.7-1.debian.tar.xz"
+    "54ef4e92cd389124152239649b020e34 2290 rust-trim-in-place_0.2.0-1.dsc 5b110682801c8a7973101c9d81b8c74f 3666 rust-trim-in-place_0.2.0.orig.tar.gz 7c0f5716de6bc7f7793fa31dc6dc340d 2648 rust-trim-in-place_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/trim-in-place]"
   ],
   "Version": [
-    "0.1.7-1"
+    "0.2.0-1"
   ]
 }

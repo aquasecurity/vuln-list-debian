@@ -6,16 +6,19 @@
     "librust-unicode-bidi-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.47.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.47.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1d8db1deafc8185d69389b943985eb34c7e5d251ecf0878ff6bb119e2abbc631 2346 rust-unicode-bidi_0.3.17-1.dsc 5ab17db44d7388991a428b2ee655ce0c212e862eff1768a455c58f9aad6e7893 58120 rust-unicode-bidi_0.3.17.orig.tar.gz a7f688bb9eb70eef08afe64142fec7aacb8a6b0bda852debb5255b95693e26f1 3568 rust-unicode-bidi_0.3.17-1.debian.tar.xz"
+    "3ef098f9f519031c3cf532f96043923f20c2f0a0729085e1a2b23c825520e659 2311 rust-unicode-bidi_0.3.18-1.dsc 5c1cb5db39152898a79168971543b1cb5020dff7fe43c8dc468b0885f5e29df5 58300 rust-unicode-bidi_0.3.18.orig.tar.gz 782a9dd03ed3f1fc9a827ed93006007624754f39595a03b6d20e2c9f7169ac54 3660 rust-unicode-bidi_0.3.18-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unicode-bidi"
   ],
   "Files": [
-    "4aa9563ce63810561325f26e45a03017 2346 rust-unicode-bidi_0.3.17-1.dsc 0d8c8185b5ced274098729521a5a11dd 58120 rust-unicode-bidi_0.3.17.orig.tar.gz cec4bd03a39ce8e1b3afbc0b37cfcada 3568 rust-unicode-bidi_0.3.17-1.debian.tar.xz"
+    "691e371351489dc25cb82f0542607934 2311 rust-unicode-bidi_0.3.18-1.dsc 46b0af45d7e5fa4e81f6ed5811ad3c01 58300 rust-unicode-bidi_0.3.18.orig.tar.gz aa5c3f080f53afe63bd46d0bbd2578fe 3660 rust-unicode-bidi_0.3.18-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-test-0+default-dev, librust-serde-test-1+default-dev, rustc"
+    "dh-cargo, librust-serde-test+default-dev, rustc"
   ],
   "Uploaders": [
     "Paride Legovini \u003cparide@debian.org\u003e, kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unicode-bidi]"
   ],
   "Version": [
-    "0.3.17-1"
+    "0.3.18-1"
   ]
 }

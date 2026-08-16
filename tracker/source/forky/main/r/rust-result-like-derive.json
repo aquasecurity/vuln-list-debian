@@ -6,19 +6,25 @@
     "librust-result-like-derive-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pmutil-0.6+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.29-~~) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.10-~~) \u003c!nocheck\u003e, librust-syn-1+default-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e, librust-syn-1+extra-traits-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e, librust-syn-1+full-dev (\u003e= 1.0.80-~~) \u003c!nocheck\u003e, librust-syn-ext-0.4+default-dev \u003c!nocheck\u003e, librust-syn-ext-0.4+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-pmutil-0.6+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.29) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.10) \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5c0e2af333ccd0b932c812eda6f1320fd2030cbc4f2a98d2fe419a372623468d 2282 rust-result-like-derive_0.4.6-1.dsc 1fabf0a2e54f711c68c50d49f648a1a8a37adcb57353f518ac4df374f0788f42 5814 rust-result-like-derive_0.4.6.orig.tar.gz 7ecc14ed805c6ff678bdc6b40843309e29ecf65ec1e92a8b48d5650fcec8d9db 2792 rust-result-like-derive_0.4.6-1.debian.tar.xz"
+    "b6f1db27316ddf700bbac0652bef9d774d1546fe8644935363b2a264c7ec124e 2587 rust-result-like-derive_0.5.1-1.dsc 01d3b03471c9700a3a6bd166550daaa6124cb4a146ea139fb028e4edaa8f4277 7343 rust-result-like-derive_0.5.1.orig.tar.gz f55577727a792bb8dde643ae73a630cb4e2585bbf55153b62f7d6896a54a7c2f 2900 rust-result-like-derive_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-result-like-derive"
   ],
   "Files": [
-    "e366a91e64ac2aa23932fa0e755ae8a5 2282 rust-result-like-derive_0.4.6-1.dsc db34f473cd57f13319c40aa0fbde5ee5 5814 rust-result-like-derive_0.4.6.orig.tar.gz 3d287b95d280d0290591532f32000e20 2792 rust-result-like-derive_0.4.6-1.debian.tar.xz"
+    "80c5fdf2736f78e017bbefd4ddfa13cf 2587 rust-result-like-derive_0.5.1-1.dsc 2761a9c3f40c8e732c71a36f178ec6ca 7343 rust-result-like-derive_0.5.1.orig.tar.gz 0ce83b6f7a38b22922a0c39a11ad7f75 2900 rust-result-like-derive_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/youknowone/result-like"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/result-like-derive]"
   ],
   "Version": [
-    "0.4.6-1"
+    "0.5.1-1"
   ]
 }

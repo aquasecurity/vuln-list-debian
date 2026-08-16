@@ -6,19 +6,25 @@
     "librust-maybe-async-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-1+default-dev \u003c!nocheck\u003e, librust-syn-1+full-dev \u003c!nocheck\u003e, librust-syn-1+visit-mut-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e, librust-syn-2+visit-mut-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8da9cd0ad32ab541d90013740399696bc57ee48cfb1524eaa30997ec489c94e1 2617 rust-maybe-async_0.2.7-1.dsc 0f1b8c13cb1f814b634a96b2c725449fe7ed464a7b8781de8688be5ffbd3f305 19186 rust-maybe-async_0.2.7.orig.tar.gz 840e0925256a7f7cff4978e6306b68bb86966d1def524d5cfec2c31126b883ce 2676 rust-maybe-async_0.2.7-1.debian.tar.xz"
+    "bf7a7d01265eb751246ba96862cdcc5363946d5014dbb48844022c7b2e554d7d 2706 rust-maybe-async_0.2.11-1.dsc 746873a384ad60adc5db74471dfaba74bd278afbdcfd81db93fafcdfc8b5ca0c 22858 rust-maybe-async_0.2.11.orig.tar.gz aebf8de12a8c5db80953e29e6752d0406822036ee60b1865d8c88cde2e1f8079 2828 rust-maybe-async_0.2.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-maybe-async"
   ],
   "Files": [
-    "64e7af650030a0ed70e01ffed9fc49b1 2617 rust-maybe-async_0.2.7-1.dsc 04f2c7d779358087ee3036303638258d 19186 rust-maybe-async_0.2.7.orig.tar.gz bd1b02f50ea0d57e0d9aea72d08fefa9 2676 rust-maybe-async_0.2.7-1.debian.tar.xz"
+    "6238972da8c09bfc53eb249b3006e788 2706 rust-maybe-async_0.2.11-1.dsc 3bf84bac824770860841b7c5c29c8abf 22858 rust-maybe-async_0.2.11.orig.tar.gz af65fe3c60c92435a07e270da4bf1590 2828 rust-maybe-async_0.2.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/fMeow/maybe-async-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-async-trait-0.1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-async-trait-0.1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/maybe-async]"
   ],
   "Version": [
-    "0.2.7-1"
+    "0.2.11-1"
   ]
 }
