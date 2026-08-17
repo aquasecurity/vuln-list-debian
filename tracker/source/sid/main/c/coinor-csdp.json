@@ -6,16 +6,16 @@
     "coinor-csdp, coinor-csdp-doc, libsdp0, libsdp-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), doxygen-latex, gfortran, libblas-dev, libgfortran5, libgomp1, liblapack-dev"
+    "debhelper-compat (= 13), doxygen-latex, libblas-dev | libblas.so, liblapack-dev | liblapack.so"
   ],
   "Checksums-Sha256": [
-    "a2b3e142b63a5463f4117af9550de74097a6ce6556c1bd4213f79715eb33cdb0 2240 coinor-csdp_6.2.0-6.dsc 7f202a15f33483ee205dcfbd0573fdbd74911604bb739a04f8baa35f8a055c5b 526179 coinor-csdp_6.2.0.orig.tar.gz 60a3a39105b42b16b1145403c4e184c34525007aee976920a8c2b2aaa5cad699 23928 coinor-csdp_6.2.0-6.debian.tar.xz"
+    "1cec245610d5e91d32fb73c26561f434e57d9d9529f462a61a444672db865c69 2239 coinor-csdp_6.2.0-8.dsc 7f202a15f33483ee205dcfbd0573fdbd74911604bb739a04f8baa35f8a055c5b 526179 coinor-csdp_6.2.0.orig.tar.gz 277dbd0ef331b6aa7e46c28db1561989b180795936ec4d830ff90d6acce3f44d 17628 coinor-csdp_6.2.0-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/coinor-csdp"
   ],
   "Files": [
-    "d04763b7e96cdf3acbfeffa018981986 2240 coinor-csdp_6.2.0-6.dsc c91f72018c15d89e6706818e72807fcb 526179 coinor-csdp_6.2.0.orig.tar.gz 765ef8379d9f8dce821701c59b4a42d2 23928 coinor-csdp_6.2.0-6.debian.tar.xz"
+    "87a5898dbc43cf39dd0be8bec8d8e93e 2239 coinor-csdp_6.2.0-8.dsc c91f72018c15d89e6706818e72807fcb 526179 coinor-csdp_6.2.0.orig.tar.gz 220163c75ea6191b9f90a46b76b7e331 17628 coinor-csdp_6.2.0-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "coinor-csdp"
   ],
   "Package-List": [
-    "coinor-csdp deb science optional arch=any coinor-csdp-doc deb doc optional arch=all libsdp-dev deb libdevel optional arch=any libsdp0 deb libs optional arch=any"
+    "coinor-csdp deb science unknown arch=any coinor-csdp-doc deb doc unknown arch=all libsdp-dev deb libdevel unknown arch=any libsdp0 deb libs unknown arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "science"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential"
+    "build-essential, pkgconf"
   ],
   "Uploaders": [
     "Doug Torrance \u003cdtorrance@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/math-team/csdp.git"
   ],
   "Version": [
-    "6.2.0-6"
+    "6.2.0-8"
   ]
 }

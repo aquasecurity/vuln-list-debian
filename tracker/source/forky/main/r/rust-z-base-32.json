@@ -6,19 +6,25 @@
     "librust-z-base-32-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "26c5f39fedd405d08b5092dd2d25f8c90809215c86c3b31fdd3c879896db784d 2186 rust-z-base-32_0.1.4-1.dsc 21bf7b4a78668416e1e8a332334e26fb2f377afe707f0c6feaf6ed5f9100133b 14008 rust-z-base-32_0.1.4.orig.tar.gz ba6a6052acf49202864335be68910bfbb24ab9662f8ee91c309035cfdccfb01c 3132 rust-z-base-32_0.1.4-1.debian.tar.xz"
+    "dc5585fb4007b01400657ecfe877d6323c8660a615f891a38e0e7370435df79c 2235 rust-z-base-32_0.1.5-1.dsc 44f94003b56f8f812c88dd188d9bafc71d8e3786fd04812c2d8cdb176810ceb4 16652 rust-z-base-32_0.1.5.orig.tar.gz c2c4be32464ae8b728ea69beea269ea46713eaf40241f11be04c0810d5a06ea6 3352 rust-z-base-32_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-z-base-32"
   ],
   "Files": [
-    "466a4a554a6568a943f2c537fef78ad1 2186 rust-z-base-32_0.1.4-1.dsc df56f3abe1daa88f6a2b7d2c442f4fd3 14008 rust-z-base-32_0.1.4.orig.tar.gz a255bdbef69d946bce63bf14ff61bb94 3132 rust-z-base-32_0.1.4-1.debian.tar.xz"
+    "5f0f90aacf9e3c1a40f7f3eac7df1770 2235 rust-z-base-32_0.1.5-1.dsc 999ff61004aa1be5155dab8abe489573 16652 rust-z-base-32_0.1.5.orig.tar.gz 6ce301a2e660740c3907ef64729cea2b 3352 rust-z-base-32_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/matusf/z-base-32"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1+default-dev"
+    "dh-cargo, librust-quickcheck-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Dylan Aïssi \u003cdaissi@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/z-base-32]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.1.5-1"
   ]
 }

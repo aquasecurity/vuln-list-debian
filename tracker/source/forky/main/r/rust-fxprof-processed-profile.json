@@ -6,19 +6,25 @@
     "librust-fxprof-processed-profile-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.5-~~) \u003c!nocheck\u003e, librust-debugid-0.8+default-dev \u003c!nocheck\u003e, librust-fxhash-0.2+default-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.197-~~) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.188-~~) \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.5) \u003c!nocheck\u003e, librust-debugid-0.8+default-dev \u003c!nocheck\u003e, librust-rustc-hash-2+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.204) \u003c!nocheck\u003e, librust-serde-derive-1+default-dev (\u003e= 1.0.188) \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2477c3db86b786fefb0e529c9295b53cc6f431b23570e4e92661bc28621be18e 2664 rust-fxprof-processed-profile_0.7.0-1.dsc ce20bbb48248608ba4908b45fe36e17e40f56f8c6bb385ecf5d3c4a1e8b05a22 35215 rust-fxprof-processed-profile_0.7.0.orig.tar.gz 9803f2db360d786db6679820c39316ba200067a179a4fb7247662ed1fcdcd172 2724 rust-fxprof-processed-profile_0.7.0-1.debian.tar.xz"
+    "5feb3dc3c18ea44da62c4045fffa5ef9cfbec2fb8300230c753a12d245190bdd 2720 rust-fxprof-processed-profile_0.8.1-1.dsc 25234f20a3ec0a962a61770cfe39ecf03cb529a6e474ad8cff025ed497eda557 45896 rust-fxprof-processed-profile_0.8.1.orig.tar.gz 26111d9a566ef766f147b76b383a52f37d10d7672004b31999cb3a2f242997ba 2800 rust-fxprof-processed-profile_0.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fxprof-processed-profile"
   ],
   "Files": [
-    "e19cdd398a424eb444448b340bb9ade1 2664 rust-fxprof-processed-profile_0.7.0-1.dsc 9f47002323563caa25faebf1591abbbf 35215 rust-fxprof-processed-profile_0.7.0.orig.tar.gz aec40a33bfb736dff421b36759ac398f 2724 rust-fxprof-processed-profile_0.7.0-1.debian.tar.xz"
+    "ec33e2f4e70925dc90b3fe26c1328a2d 2720 rust-fxprof-processed-profile_0.8.1-1.dsc 58aa47a0d28e6140e99f90ef49d0f059 45896 rust-fxprof-processed-profile_0.8.1.orig.tar.gz 05afba811f62b766e2fc8ee66f8eea0b 2800 rust-fxprof-processed-profile_0.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mstange/samply/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-json-diff-2+default-dev"
+    "dh-cargo, librust-assert-json-diff-2+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fxprof-processed-profile]"
   ],
   "Version": [
-    "0.7.0-1"
+    "0.8.1-1"
   ]
 }

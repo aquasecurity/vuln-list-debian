@@ -6,16 +6,16 @@
     "libcompojure-clojure"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), javahelper, maven-repo-helper, clojure, libtext-markdown-perl | markdown, libtools-macro-clojure, libclout-clojure, libmedley-clojure, libring-core-clojure, libring-codec-clojure, libring-mock-clojure, libservlet3.1-java, default-jdk-headless"
+    "debhelper-compat (= 14), default-jdk-headless, dh-clojure, javahelper, libclout-clojure, libmedley-clojure (\u003e= 1.10.0-3), libring-codec-clojure (\u003e= 1.3.0-3), libring-core-clojure (\u003e= 1.15.5-2), libring-mock-clojure (\u003e= 0.6.2-2) \u003c!nocheck\u003e, libtools-macro-clojure"
   ],
   "Checksums-Sha256": [
-    "c1380a4594a28dd66c57ff3bf63c04bab48a825603277122f9f57e25af8066d2 2292 compojure-clojure_1.6.0-2.dsc 5e838a9433805a84a684c188fb290ede0f1b2038dc35bd9b34262df22ae4beef 17475 compojure-clojure_1.6.0.orig.tar.gz e18d5170c9c870be8ec2248af9d4407b37d678308902a40a58aa4a356f358554 7244 compojure-clojure_1.6.0-2.debian.tar.xz"
+    "9f7d852ca6e885a3f842bd83b76245677c415fe44b3bdbe5e71502263193aba3 1777 compojure-clojure_1.7.2-2.dsc 4498b5215c9df57c49e90512c74b086d7f2854f25826cd26a13de9b564d36cec 18331 compojure-clojure_1.7.2.orig.tar.gz 2a3606951b0adf1281fb9a520b8ee118d90e3a0d96e81ac4deca63b3243bc6bd 6784 compojure-clojure_1.7.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/compojure-clojure"
   ],
   "Files": [
-    "7c14ad4921f6978d1d65c2bda6e21573 2292 compojure-clojure_1.6.0-2.dsc 37ed890097c5f60a6be07a597256bddb 17475 compojure-clojure_1.6.0.orig.tar.gz a1de46fca905f0375bd03bc9fcf29d24 7244 compojure-clojure_1.6.0-2.debian.tar.xz"
+    "afee2781ca3a1e8d65444c19d405a897 1777 compojure-clojure_1.7.2-2.dsc 5fae73757494190b7fcf371a6e95a14c 18331 compojure-clojure_1.7.2.orig.tar.gz a37d5d0cce3cd9c44d047550883d49f3 6784 compojure-clojure_1.7.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "default-jre-headless, libcognitect-test-runner-clojure, libring-mock-clojure"
   ],
   "Uploaders": [
     "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/clojure-team/compojure-clojure.git"
   ],
   "Version": [
-    "1.6.0-2"
+    "1.7.2-2"
   ]
 }

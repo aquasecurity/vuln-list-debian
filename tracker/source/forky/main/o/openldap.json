@@ -12,13 +12,13 @@
     "debhelper-compat (= 13), dh-sequence-installsysusers, groff-base, heimdal-multidev \u003c!pkg.openldap.noslapd\u003e, libargon2-dev \u003c!pkg.openldap.noslapd\u003e, libcrack2-dev \u003c!pkg.openldap.noslapd\u003e, libltdl-dev \u003c!pkg.openldap.noslapd\u003e, libperl-dev \u003c!pkg.openldap.noslapd\u003e, libsasl2-dev, libssl-dev, libwrap0-dev \u003c!pkg.openldap.noslapd\u003e, openssl \u003c!nocheck !pkg.openldap.noslapd\u003e, perl:any, pkgconf, po-debconf, unixodbc-dev \u003c!pkg.openldap.noslapd\u003e, krb5-admin-server \u003c!nocheck !pkg.openldap.noslapd\u003e, krb5-user \u003c!nocheck !pkg.openldap.noslapd\u003e, krb5-kdc \u003c!nocheck !pkg.openldap.noslapd\u003e, libsasl2-modules-gssapi-mit \u003c!nocheck !pkg.openldap.noslapd\u003e, sasl2-bin \u003c!nocheck !pkg.openldap.noslapd\u003e"
   ],
   "Checksums-Sha256": [
-    "c4fc20d12262cecedfaf5b416cfb5fb747899999a7d8189dd5838ede7a138b4f 3281 openldap_2.6.13+dfsg-1.dsc 61baeca1b41cd0620a8c40899fbc11657898e99ba4ba0e9328fac8e58c58effa 3801012 openldap_2.6.13+dfsg.orig.tar.xz c3f462528e5ae3f1e0918a5eabfb4e3e550baf8ddabf374baa2f5ca09b7a1eb8 177256 openldap_2.6.13+dfsg-1.debian.tar.xz"
+    "3d97135e085a02b54ae855029d1956df58c9d87efaa0f3578c38591eba6ab047 3413 openldap_2.6.14+dfsg-1.dsc f8e1b8ed7343667b124ecf872bf9f1f38cf36da65f652d77d95ce6995f39a131 3803392 openldap_2.6.14+dfsg.orig.tar.xz 6d18db7e91db9eff03f1376cdcba89d657d61ed5a6ba2f9aadebb184df96412e 175840 openldap_2.6.14+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openldap"
   ],
   "Files": [
-    "e90d2688cc17ac1814618cbbe660f964 3281 openldap_2.6.13+dfsg-1.dsc 7d9c4602c20bb59fcdd25bd7528a0a10 3801012 openldap_2.6.13+dfsg.orig.tar.xz 50e6d56aa4418d426b6bff9ac1e81513 177256 openldap_2.6.13+dfsg-1.debian.tar.xz"
+    "b4b31db6f6aea6f969a6f16d28c904a3 3413 openldap_2.6.14+dfsg-1.dsc 0d17b8829d6b2226bf090e60acd4bfc7 3803392 openldap_2.6.14+dfsg.orig.tar.xz fe7ab648265f2dfbf18421f09f91c220 175840 openldap_2.6.14+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "openldap"
   ],
   "Package-List": [
-    "ldap-utils deb net optional arch=any libldap-common deb libs optional arch=all libldap-dev deb libdevel optional arch=any libldap2 deb libs optional arch=any libldap2-dev deb oldlibs optional arch=any slapd deb net optional arch=any profile=!pkg.openldap.noslapd slapd-contrib deb net optional arch=any profile=!pkg.openldap.noslapd slapi-dev deb libdevel optional arch=any profile=!pkg.openldap.noslapd"
+    "ldap-utils deb net optional arch=any libldap-common deb libs optional arch=all libldap-dev deb libdevel optional arch=any libldap2 deb libs optional arch=any libldap2-dev deb oldlibs optional arch=any slapd deb net optional arch=any profile=!pkg.openldap.noslapd profile:v1=!pkg.openldap.noslapd slapd-contrib deb net optional arch=any profile=!pkg.openldap.noslapd profile:v1=!pkg.openldap.noslapd slapi-dev deb libdevel optional arch=any profile=!pkg.openldap.noslapd profile:v1=!pkg.openldap.noslapd"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "openssl, ssl-cert"
+    "heimdal-kdc, openssl, samba, schema2ldif, ssl-cert"
   ],
   "Uploaders": [
     "Ryan Tandy \u003cryan@nardis.ca\u003e, Sergio Durigan Junior \u003csergiodj@debian.org\u003e, Michael Tokarev \u003cmjt@tls.msk.ru\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/openldap-team/openldap.git"
   ],
   "Version": [
-    "2.6.13+dfsg-1"
+    "2.6.14+dfsg-1"
   ]
 }

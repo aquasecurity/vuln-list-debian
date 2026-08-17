@@ -6,19 +6,25 @@
     "librust-caps-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e440f9451fff7a33fbde61133145adfbb665f89c5dc5230f319f307713857254 1849 rust-caps_0.5.5-1.dsc 190baaad529bcfbde9e1a19022c42781bdb6ff9de25721abdb8fd98c0807730b 17575 rust-caps_0.5.5.orig.tar.gz 99c24cde2987bb043af2596ebaa63837aa4ca98fd9f31827580504d7a1b3e051 2876 rust-caps_0.5.5-1.debian.tar.xz"
+    "b053f1153035e25f0ffa8bdc088d89006c7fa8723c4ac0bcd1704a6ddf43698c 2215 rust-caps_0.5.6-1.dsc fd1ddba47aba30b6a889298ad0109c3b8dcb0e8fc993b459daa7067d46f865e0 17964 rust-caps_0.5.6.orig.tar.gz 16e5d7e9d7739602d393a8ae902338a867a0f0ff2379bb6b2ca0715c431d9cfa 3056 rust-caps_0.5.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-caps"
   ],
   "Files": [
-    "0b066b73234251d22029e12a62d4dcdd 1849 rust-caps_0.5.5-1.dsc 3ba10297f2c984321f74cfb613e63da0 17575 rust-caps_0.5.5.orig.tar.gz fd09baae85eac669130c40ca1daff412 2876 rust-caps_0.5.5-1.debian.tar.xz"
+    "d6721dab04458eee253cfb5621b6c545 2215 rust-caps_0.5.6-1.dsc 684a7432388856f58ce8422a0d336fa9 17964 rust-caps_0.5.6.orig.tar.gz 85281d8d68ba4dd5cf71959f5b990141 3056 rust-caps_0.5.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/lucab/caps-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/caps]"
   ],
   "Version": [
-    "0.5.5-1"
+    "0.5.6-1"
   ]
 }
