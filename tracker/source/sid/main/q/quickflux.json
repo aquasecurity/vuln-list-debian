@@ -6,16 +6,19 @@
     "qml-module-quickflux, quickflux-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, qdoc-qt5, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools"
+    "debhelper-compat (= 13), cmake, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools"
+  ],
+  "Build-Depends-Indep": [
+    "qdoc-qt5 \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "414fe258e8395245a83e02ecf9d800d992395f7225ac242217f05ad27dd507f3 2238 quickflux_1.1.3+git20201110.2a37acf-5.dsc 2f00cdf68da1aa17e1807e108512486cdb23d40a6877ade720a5dc2537bb8125 99512 quickflux_1.1.3+git20201110.2a37acf.orig.tar.xz c39f49545a4f64ad1add2e21b7df8896ac9bbc93e560fa36a4cc291f7bc42107 5252 quickflux_1.1.3+git20201110.2a37acf-5.debian.tar.xz"
+    "d01ab674d51225bf7588c2e45e077e5ffe3340e24fc6f6eba3e03431de7c9b63 2270 quickflux_1.1.3+git20201110.2a37acf-7.dsc 2f00cdf68da1aa17e1807e108512486cdb23d40a6877ade720a5dc2537bb8125 99512 quickflux_1.1.3+git20201110.2a37acf.orig.tar.xz fcf3d2e842ce07d364e4ef0798e4f2c8a2c82e670e3fa77ac8da89c9f86abeb0 5228 quickflux_1.1.3+git20201110.2a37acf-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/quickflux"
   ],
   "Files": [
-    "d602cdb8fcad7dbc276734b6d666ce8c 2238 quickflux_1.1.3+git20201110.2a37acf-5.dsc 164ba1a6346b5feeea7cffbc304bf3a3 99512 quickflux_1.1.3+git20201110.2a37acf.orig.tar.xz 5277bf7d1977f9b37b0bb03a37989ff3 5252 quickflux_1.1.3+git20201110.2a37acf-5.debian.tar.xz"
+    "209726f5c639fb04fb49659c8cee5e4b 2270 quickflux_1.1.3+git20201110.2a37acf-7.dsc 164ba1a6346b5feeea7cffbc304bf3a3 99512 quickflux_1.1.3+git20201110.2a37acf.orig.tar.xz 48044611b77db7025b2bed9bb7abec1c 5228 quickflux_1.1.3+git20201110.2a37acf-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "quickflux"
   ],
   "Package-List": [
-    "qml-module-quickflux deb libs optional arch=any quickflux-doc deb doc optional arch=all"
+    "qml-module-quickflux deb libs optional arch=any quickflux-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -39,10 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Uploaders": [
-    "Mike Gabriel \u003csunweaver@debian.org\u003e,"
+    "Mike Gabriel \u003csunweaver@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/ubports-team/quickflux/"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/ubports-team/quickflux.git"
   ],
   "Version": [
-    "1.1.3+git20201110.2a37acf-5"
+    "1.1.3+git20201110.2a37acf-7"
   ]
 }
