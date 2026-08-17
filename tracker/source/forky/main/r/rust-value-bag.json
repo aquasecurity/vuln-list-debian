@@ -6,19 +6,25 @@
     "librust-value-bag-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d37f7b93ed15c7930d856abab462553b58ec8725f5412940774945f1aaca62fd 2158 rust-value-bag_1.9.0-1.dsc 5a84c137d37ab0142f0f2ddfe332651fdbf252e7b7dbb4e67b6c1f1b2e925101 39936 rust-value-bag_1.9.0.orig.tar.gz 81b56794dacfa9a36c68061e8be7b72eb0a4a1fc1cff07defc77243b3f778bea 4600 rust-value-bag_1.9.0-1.debian.tar.xz"
+    "47fc331bc3344d7fd698f25bd4dbf70d4d2c04324da6e2a4d3eae8602af8944e 2250 rust-value-bag_1.13.2-1.dsc 068e763e8279de7ab94b6afebded2cb701678af094feb1c12ccb061b4783c1be 50758 rust-value-bag_1.13.2.orig.tar.gz c080eb8d5ed7e6b4e304ac61125d95df1f51de0ce065715608c5907beb73f238 5128 rust-value-bag_1.13.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-value-bag"
   ],
   "Files": [
-    "13108c62f76204709521a94812cc111d 2158 rust-value-bag_1.9.0-1.dsc d77c1ed9235f3583a1d2ae11cb3ac752 39936 rust-value-bag_1.9.0.orig.tar.gz 577853b0a9fa08d4a787375d005c8c6c 4600 rust-value-bag_1.9.0-1.debian.tar.xz"
+    "7b24e800871af4f736f0909daa875535 2250 rust-value-bag_1.13.2-1.dsc c257453a07ad2be23a18f4dac87615e3 50758 rust-value-bag_1.13.2.orig.tar.gz 5f28785f2f141d6f8ff5aebd34634a5b 5128 rust-value-bag_1.13.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/sval-rs/value-bag"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-criterion-0.5+default-dev, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/value-bag]"
   ],
   "Version": [
-    "1.9.0-1"
+    "1.13.2-1"
   ]
 }

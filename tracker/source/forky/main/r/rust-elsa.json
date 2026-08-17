@@ -6,19 +6,25 @@
     "librust-elsa-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-stable-deref-trait-1+default-dev (\u003e= 1.1.1-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-stable-deref-trait-1+default-dev (\u003e= 1.1.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "eb780635ff7ecdd60c94dfde1fb16f2dc8269acf44a3af9a580a1e23b0cf12c2 2177 rust-elsa_1.10.0-1.dsc d98e71ae4df57d214182a2e5cb90230c0192c6ddfcaa05c36453d46a54713e10 20322 rust-elsa_1.10.0.orig.tar.gz 9a38557f1afa383dc8ee8621fb65e3901a3e6ae86be60aca6cb22f8007a5bf0e 2704 rust-elsa_1.10.0-1.debian.tar.xz"
+    "250b534cd996391ebdc71650efa603a97f70421da475972217900060200fcda9 2223 rust-elsa_1.11.2-1.dsc 9abf33c656a7256451ebb7d0082c5a471820c31269e49d807c538c252352186e 21055 rust-elsa_1.11.2.orig.tar.gz cf80508a34431eea8ed60e6ab9d0943f0af13cc8f5a9760b3d03dfbc6bfe4da0 2752 rust-elsa_1.11.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-elsa"
   ],
   "Files": [
-    "5053eac4c2eb58b6f5c74935551fe1a3 2177 rust-elsa_1.10.0-1.dsc 24c8cb6fa9c4c32d69385905e97f8f83 20322 rust-elsa_1.10.0.orig.tar.gz 986146d2bb56faa7bba063de8712ddab 2704 rust-elsa_1.10.0-1.debian.tar.xz"
+    "e7c4c810e75a8e10be0446e457098210 2223 rust-elsa_1.11.2-1.dsc 0b26b8f1c5caeb2faf4acb321be1f19c 21055 rust-elsa_1.11.2.orig.tar.gz 59f9c9ecc504ba1304f83828fcde8008 2752 rust-elsa_1.11.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/manishearth/elsa"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.3"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/elsa]"
   ],
   "Version": [
-    "1.10.0-1"
+    "1.11.2-1"
   ]
 }
