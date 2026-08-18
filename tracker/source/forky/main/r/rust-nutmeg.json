@@ -6,16 +6,19 @@
     "librust-nutmeg-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atty-0.2+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-terminal-size-0+default-dev (\u003e= 0.2-~~) \u003c!nocheck\u003e, librust-yansi-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-terminal-size-0.4+default-dev \u003c!nocheck\u003e, librust-yansi-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a74f2bfa86af43319de17a5f41d3353c8eb7c3beb2d531ec85e754c2858f363f 2480 rust-nutmeg_0.1.4-3.dsc 210b363fa6901c372f264fa32ef3710c0e86328901deaed31294fecfd51e848b 29178 rust-nutmeg_0.1.4.orig.tar.gz 6c796320aaf623aeae03ac4d1fe88fbbfac96ce3834a63da63c4f5c1d1392950 3480 rust-nutmeg_0.1.4-3.debian.tar.xz"
+    "edcd14f2f426553651c8b9f133b2a9754261ff577433b7537ab35d5487db8f27 2379 rust-nutmeg_0.1.7-1.dsc c89f27eaed136bd11b2a9f2fa941f9721d33d714ce65c28fb3d6d20e688c8798 30219 rust-nutmeg_0.1.7.orig.tar.gz fc75d96b8c7f660111b3c757a252e6a0c28821e4f11706c3b50b1864daf29f69 3576 rust-nutmeg_0.1.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-nutmeg"
   ],
   "Files": [
-    "fa348ece9631071280859003b9c22420 2480 rust-nutmeg_0.1.4-3.dsc e5ed554701523a4969b50465f982f87f 29178 rust-nutmeg_0.1.4.orig.tar.gz 96d1431da255886b0845fb809b6bc1f9 3480 rust-nutmeg_0.1.4-3.debian.tar.xz"
+    "d909719373352b9a9aeaaeaa990a349a 2379 rust-nutmeg_0.1.7-1.dsc a570711bba136be1158539c14c936365 30219 rust-nutmeg_0.1.7.orig.tar.gz 85b3f21e54e9f23056b25930729d8e00 3576 rust-nutmeg_0.1.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/nutmeg]"
   ],
   "Version": [
-    "0.1.4-3"
+    "0.1.7-1"
   ]
 }
