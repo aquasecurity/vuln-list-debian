@@ -6,16 +6,19 @@
     "librust-svg-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1616c00c8f9ebf78261e6b534fb106047c9281c4fc07680a6d1faa1f331d5574 2121 rust-svg_0.16.0-1.dsc 583e1c5c326fd6fede8797006de3b95ad6bcd60a592952952c5ba7ddd7e84c83 18708 rust-svg_0.16.0.orig.tar.gz 84cae1bf44b8d8851356cb7168a1be37f5c249da97b13cef77aa0b89fccabb1d 3072 rust-svg_0.16.0-1.debian.tar.xz"
+    "7bd90d96aef0a366c60581ee7086fa563ae39f04df0a9205532b6ebe7c57cfad 2134 rust-svg_0.18.0-1.dsc 94afda9cd163c04f6bee8b4bf2501c91548deae308373c436f36aeff3cf3c4a3 18998 rust-svg_0.18.0.orig.tar.gz 66f70d2eac9b0d3e00aff8f5b4fdf3d2fd6c4c160698a80f9366e83d0af54925 3272 rust-svg_0.18.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-svg"
   ],
   "Files": [
-    "eb9222e3b0d223f4ec0b6b2cb4998d3d 2121 rust-svg_0.16.0-1.dsc a53f4365d23c24677b2239d06d439ae6 18708 rust-svg_0.16.0.orig.tar.gz 9ec8a8a3048e48a2aba7e3a5ab8836b0 3072 rust-svg_0.16.0-1.debian.tar.xz"
+    "61e5004882e8a9548cea38028d092b05 2134 rust-svg_0.18.0-1.dsc 3ea3f56febac3e0d8d7351486cadaf5e 18998 rust-svg_0.18.0.orig.tar.gz a823ba2b4ad8f1e76dc311ccbb4aee12 3272 rust-svg_0.18.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/svg"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/svg]"
   ],
   "Version": [
-    "0.16.0-1"
+    "0.18.0-1"
   ]
 }

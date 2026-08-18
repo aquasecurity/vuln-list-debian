@@ -6,19 +6,25 @@
     "librust-fomat-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ee5c8ea7761b1d6ea9412fd5261b9d5ae3d0cceffcd9d60dc5ee09b1165b0dda 2252 rust-fomat-macros_0.3.1-2.dsc fe56556a8c9f9f556150eb6b390bc1a8b3715fd2ddbb4585f36b6a5672c6a833 12182 rust-fomat-macros_0.3.1.orig.tar.gz 463994e53eab26fa9068c018ecd5ec4db2bdfa16272dd9c9f8f434eef986eeeb 4068 rust-fomat-macros_0.3.1-2.debian.tar.xz"
+    "016db14984c13aa4eb738d7ce0c2c835b3faa213752abd30b243a420510b9637 2303 rust-fomat-macros_0.3.2-1.dsc 3f722aa875298d34a0ebb6004699f6f4ea830d36dec8ac2effdbbc840248a096 11798 rust-fomat-macros_0.3.2.orig.tar.gz 61d79db1b351887d5da563a24d991fa29b4152deb677438a2de1f2478eb2dce3 3940 rust-fomat-macros_0.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-fomat-macros"
   ],
   "Files": [
-    "9351f7c7546b271f8595ea2a4b396f62 2252 rust-fomat-macros_0.3.1-2.dsc 4c7a50a26e637dacddaaefe0b8098be9 12182 rust-fomat-macros_0.3.1.orig.tar.gz 0baca36c3de12f210d81b41ca000af92 4068 rust-fomat-macros_0.3.1-2.debian.tar.xz"
+    "6352c06c60e4af4f38782d2204eb91f0 2303 rust-fomat-macros_0.3.2-1.dsc c94f331804fce7e2be6f6a685b4bc642 11798 rust-fomat-macros_0.3.2.orig.tar.gz ad9b7617a808e0b18812c990fff35937 3940 rust-fomat-macros_0.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/krdln/fomat-macros"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tar-0.4+default-dev, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tar-0.4+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/fomat-macros]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.3.2-1"
   ]
 }

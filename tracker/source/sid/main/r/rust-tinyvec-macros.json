@@ -6,19 +6,25 @@
     "librust-tinyvec-macros-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b05d835aaf76a4f3f8a6aabf71c00c51b7524ddaa1e9f2e6e4c515e81884c0d3 2210 rust-tinyvec-macros_0.1.0-1.dsc cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c 1817 rust-tinyvec-macros_0.1.0.orig.tar.gz b65ff96734b066508731ae64ccf12cff7ccc9756641d7d827b623472d0e77ad8 2884 rust-tinyvec-macros_0.1.0-1.debian.tar.xz"
+    "dade3b2a7f9154bd46047d5f145759325258c46bad8dc5d73725535516623930 2263 rust-tinyvec-macros_0.1.1-1.dsc 1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20 5865 rust-tinyvec-macros_0.1.1.orig.tar.gz 0119605f7646529ab80646d44ee0d3df75f2d4f769727ac0495cf32b3c0111ce 3092 rust-tinyvec-macros_0.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tinyvec-macros"
   ],
   "Files": [
-    "9b0eacea3f9c026c8e2011165e8980be 2210 rust-tinyvec-macros_0.1.0-1.dsc 7bfcad253aff26bc26c5e3521f3ba891 1817 rust-tinyvec-macros_0.1.0.orig.tar.gz f440c0981a979c021bb6d19adf68c33a 2884 rust-tinyvec-macros_0.1.0-1.debian.tar.xz"
+    "a3ea3c06e07061abac20ac373a34f807 2263 rust-tinyvec-macros_0.1.1-1.dsc c678a7da0ee4b850ebde0474144a0415 5865 rust-tinyvec-macros_0.1.1.orig.tar.gz b84ba7c3fc7ba2c3da926aadb6bea9b7 3092 rust-tinyvec-macros_0.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Soveu/tinyvec_macros"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tinyvec-macros]"
   ],
   "Version": [
-    "0.1.0-1"
+    "0.1.1-1"
   ]
 }

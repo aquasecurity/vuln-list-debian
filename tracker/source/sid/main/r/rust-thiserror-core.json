@@ -6,19 +6,25 @@
     "librust-thiserror-core-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-core-impl-1.0.38+default-dev \u003c!nocheck\u003e, librust-thiserror-core-impl-1.0.38+std-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-core-impl-1.0+default-dev (\u003c\u003c 1.0.51) \u003c!nocheck\u003e, librust-thiserror-core-impl-1.0+default-dev (\u003e= 1.0.50) \u003c!nocheck\u003e, librust-thiserror-core-impl-1.0+std-dev (\u003c\u003c 1.0.51) \u003c!nocheck\u003e, librust-thiserror-core-impl-1.0+std-dev (\u003e= 1.0.50) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2c4e7dd165e56ad6a2834e52853d628c3de307a5062faf9eb9315935737e2aac 2502 rust-thiserror-core_1.0.38-2.dsc 0d97345f6437bb2004cd58819d8a9ef8e36cdd7661c2abc4bbde0a7c40d9f497 18128 rust-thiserror-core_1.0.38.orig.tar.gz 756a9b7d83e45a32c4189278b8934b8bcafd7b2fd7b8cc5efbcdfc3137942298 3708 rust-thiserror-core_1.0.38-2.debian.tar.xz"
+    "2585157ff3bf25e219eee6b53afbfab15c0346e80d4a5e40a22f28f6f2358838 2733 rust-thiserror-core_1.0.50-1.dsc c001ee18b7e5e3f62cbf58c7fe220119e68d902bb7443179c0c8aef30090e999 18892 rust-thiserror-core_1.0.50.orig.tar.gz ae74ff2271e5b06c7e07c009530ffd79ebd22335fae700b834dbf79f9e1b9309 4108 rust-thiserror-core_1.0.50-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-thiserror-core"
   ],
   "Files": [
-    "7991fcceaacf245225e57cfdf0ca2e37 2502 rust-thiserror-core_1.0.38-2.dsc 8563367ecd8c9d429b3891e00805c304 18128 rust-thiserror-core_1.0.38.orig.tar.gz 73ffe3812711066227853550998f905d 3708 rust-thiserror-core_1.0.38-2.debian.tar.xz"
+    "dcdcb002e60e4115fa9ffac91b876e94 2733 rust-thiserror-core_1.0.50-1.dsc 76cda786e4510f7d6fe15b13d5dd0598 18892 rust-thiserror-core_1.0.50.orig.tar.gz fd216dcab7af78e343facfe8f0196a1d 4108 rust-thiserror-core_1.0.50-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/FlorianUekermann/thiserror/tree/1.0.50"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-ref-cast-1+default-dev, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-ref-cast-1+default-dev, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cf.gruenbichler@proxmox.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/thiserror-core]"
   ],
   "Version": [
-    "1.0.38-2"
+    "1.0.50-1"
   ]
 }

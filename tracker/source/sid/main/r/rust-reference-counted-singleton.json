@@ -6,19 +6,25 @@
     "librust-reference-counted-singleton-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8bb18c3a1fe8eca2bfe223016b2624d5b59f2972b2439ed15a5aa15397d4baeb 2399 rust-reference-counted-singleton_0.1.1-1.dsc ef445213a92fdddc4bc69d9111156d20ffd50704a86ad82b372aab701a0d3a9a 6145 rust-reference-counted-singleton_0.1.1.orig.tar.gz c4c205d5e12bf0d578c581769d89430d38b38f00b64528efa1878f32d91dcb25 2600 rust-reference-counted-singleton_0.1.1-1.debian.tar.xz"
+    "7f1874095ff9c8faa64435fd489e4371643cadffd30c5fb89b004684c527cdc7 2501 rust-reference-counted-singleton_0.1.5-1.dsc 5daffa8f5ca827e146485577fa9dba9bd9c6921e06e954ab8f6408c10f753086 6309 rust-reference-counted-singleton_0.1.5.orig.tar.gz fff3336221cccb70cb7757c173dfb7ad24bd5ab613fadd5c35ed34e345864888 2724 rust-reference-counted-singleton_0.1.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-reference-counted-singleton"
   ],
   "Files": [
-    "ca3b16236cb473d9cec5133eadf764c1 2399 rust-reference-counted-singleton_0.1.1-1.dsc ba868504c1715ca50054ab25eb4604d1 6145 rust-reference-counted-singleton_0.1.1.orig.tar.gz 22387ddb98ecb61725199e27736b4a97 2600 rust-reference-counted-singleton_0.1.1-1.debian.tar.xz"
+    "ecf1671a08f06495466167d07e1bd005 2501 rust-reference-counted-singleton_0.1.5-1.dsc 2f3b34aabf0cae16e92fcc8436e91212 6309 rust-reference-counted-singleton_0.1.5.orig.tar.gz ec7b089b164528be84894267b3db647a 2724 rust-reference-counted-singleton_0.1.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://codeberg.org/koutheir/reference-counted-singleton.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-serial-test-0.5+default-dev"
+    "dh-cargo, librust-assert-matches-1+default-dev, librust-serial-test-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/reference-counted-singleton]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.1.5-1"
   ]
 }

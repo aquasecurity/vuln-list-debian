@@ -6,16 +6,19 @@
     "librust-lexiclean-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f5257916cf251566023053d6dc2a93f2c9ee9972f7cab1b42d4b5b74a4828d38 2157 rust-lexiclean_0.0.1-1.dsc 441225017b106b9f902e97947a6d31e44ebcf274b91bdbfb51e5c477fcd468e5 5362 rust-lexiclean_0.0.1.orig.tar.gz 81376f2169468c71b79378f85708eb981d62b860d7f90c2cc4fe0f66fd716d11 1908 rust-lexiclean_0.0.1-1.debian.tar.xz"
+    "129d0d8bf050cabaf6d89183439aaabd7d05a60298e1ab10f06a47d9f210bb5e 2195 rust-lexiclean_0.0.2-1.dsc ddd8ed82c150ca245d90866523e598895b0ebfcad69dc5aac269df69278cd614 6056 rust-lexiclean_0.0.2.orig.tar.gz be094e0333eca2df18d087266580cad261a01e4c681cd257609064fecc9433b3 2068 rust-lexiclean_0.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lexiclean"
   ],
   "Files": [
-    "a8fedeb2346241d026628f5dd8a580f3 2157 rust-lexiclean_0.0.1-1.dsc e1586d7b1a85c2a777e8a07e59768aed 5362 rust-lexiclean_0.0.1.orig.tar.gz b6da4dc3059221580e41178d371e265a 1908 rust-lexiclean_0.0.1-1.debian.tar.xz"
+    "d5e16f5b63ae946d5db09c2df81038c4 2195 rust-lexiclean_0.0.2-1.dsc c83473f5b64d76d5e92fb227e33c8d3c 6056 rust-lexiclean_0.0.2.orig.tar.gz eebe9e9f20d0606316e1b4eac17a2d98 2068 rust-lexiclean_0.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
-    "Blair Noctis \u003cn@sail.ng\u003e"
+    "Blair Noctis \u003cncts@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/lexiclean"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lexiclean]"
   ],
   "Version": [
-    "0.0.1-1"
+    "0.0.2-1"
   ]
 }
