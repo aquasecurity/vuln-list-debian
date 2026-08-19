@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-itertools-0.14+default-dev \u003c!nocheck\u003e, librust-raw-cpuid-11+default-dev (\u003e= 11.6) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.89.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+alloc-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-1+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "558f98540a2a42fe150f7ad795dc26bf85bdb8faf0155407fb706158d1eb1fb7 1814 rust-frizbee_0.9.0+dfsg-1.dsc ca1f7b0dce1c25254457f2edcfcf611bf207113564b96f90659a3f54506016b2 52940 rust-frizbee_0.9.0+dfsg.orig.tar.gz 8ebf32f34c9787312ea55280dedfc54a67140e1e2effa6cd4ba10e031699a819 3312 rust-frizbee_0.9.0+dfsg-1.debian.tar.xz"
+    "73734c22f60144935c17e994c3afdaf7d404b51700c728005c0f7831eba8e706 1861 rust-frizbee_0.13.0+ds-1.dsc 19435f276a44d90570cb403d22fbe4b20c80eabc134f718d6ec0ae888eb47edc 147549 rust-frizbee_0.13.0+ds.orig.tar.gz e24c4b20aa964cdffb663ca0b0289495688b647a4bde1fd664caf4295da69042 3736 rust-frizbee_0.13.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-frizbee"
   ],
   "Files": [
-    "cbcfa7396ac93987c61a4c9266699c50 1814 rust-frizbee_0.9.0+dfsg-1.dsc 60db561385011deae913145f5bfee48b 52940 rust-frizbee_0.9.0+dfsg.orig.tar.gz d74b7a5572e464afe6ce93b9e1894855 3312 rust-frizbee_0.9.0+dfsg-1.debian.tar.xz"
+    "c18178c4e4e0026d47f3cd1a729b8ebe 1861 rust-frizbee_0.13.0+ds-1.dsc 7c59e8f944d8e899b32ee99fd0697554 147549 rust-frizbee_0.13.0+ds.orig.tar.gz e2d9e6bcdd6d53adf5b6c29f484b3f29 3736 rust-frizbee_0.13.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-nucleo-0.5+default-dev, librust-rand-0.10+default-dev, librust-rand-distr-0.4+default-dev, rustc"
+    "dh-cargo, librust-nucleo-0.5+default-dev, librust-proptest-1+std-dev, librust-rand-0.10+default-dev, librust-rand-distr-0.6+default-dev, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/frizbee]"
   ],
   "Version": [
-    "0.9.0+dfsg-1"
+    "0.13.0+ds-1"
   ]
 }
