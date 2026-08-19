@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-cssparser-dev, librust-cssparser+serde-dev"
+    "librust-cssparser-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cssparser-macros-0.6+default-dev (\u003e= 0.6.1-~~) \u003c!nocheck\u003e, librust-dtoa-short-0.3+default-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-phf-0+default-dev (\u003e= 0.8-~~) \u003c!nocheck\u003e, librust-phf-0+macros-dev (\u003e= 0.8-~~) \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cssparser-macros-0.7+default-dev \u003c!nocheck\u003e, librust-dtoa-short-0.3+default-dev \u003c!nocheck\u003e, librust-itoa-1+default-dev \u003c!nocheck\u003e, librust-phf+default-dev (\u003c\u003c 0.14.0) \u003c!nocheck\u003e, librust-phf+default-dev (\u003e= 0.11.3) \u003c!nocheck\u003e, librust-phf+macros-dev (\u003c\u003c 0.14.0) \u003c!nocheck\u003e, librust-phf+macros-dev (\u003e= 0.11.3) \u003c!nocheck\u003e, librust-smallvec-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "304e128be064f8a641aab7c11cb50a899744224c806c905f4e2917a973cabf36 2631 rust-cssparser_0.31.2-2.dsc 5b3df4f93e5fbbe73ec01ec8d3f68bba73107993a5b1e7519273c32db9b0d5be 60602 rust-cssparser_0.31.2.orig.tar.gz a3f871b14760bda126b9d08f937bebb175c147f379062fb6b4d1967531499828 3252 rust-cssparser_0.31.2-2.debian.tar.xz"
+    "5c17c57b770d8f5e63263a66958cd25f8a3770209395463241b2500a22a5a1de 2686 rust-cssparser_0.37.0-1.dsc 8c9cdaae01d5ed7882b04d795e7f752f46ff52d2fa3b50a20d28c464510bba98 56860 rust-cssparser_0.37.0.orig.tar.gz b6050a0b2169446da9e54d0513c3c8e3fd404f0275808716f51c86872f9ba0e2 3984 rust-cssparser_0.37.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cssparser"
   ],
   "Files": [
-    "e243c6f9efab0b96e6ea4b7f4bf55932 2631 rust-cssparser_0.31.2-2.dsc 93c0cc4a57ec6f10b318d2959ff0d2cc 60602 rust-cssparser_0.31.2.orig.tar.gz 9d8ac07f8323f81b90aa86ed5a8c858d 3252 rust-cssparser_0.31.2-2.debian.tar.xz"
+    "7b3693ef4f021920cd8c15e88bde43ce 2686 rust-cssparser_0.37.0-1.dsc d57343ba3d7ef9ecad5c172f0463368a 56860 rust-cssparser_0.37.0.orig.tar.gz 9460a302d508dab696f3d362203760af 3984 rust-cssparser_0.37.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/rust-cssparser"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-cssparser"
   ],
   "Package-List": [
-    "librust-cssparser+serde-dev deb rust optional arch=any librust-cssparser-dev deb rust optional arch=any"
+    "librust-cssparser-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-difference-2+default-dev, librust-encoding-rs-0.8+default-dev, librust-serde-json-1+default-dev"
+    "dh-cargo, librust-difference-2+default-dev, librust-encoding-rs-0.8+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cssparser]"
   ],
   "Version": [
-    "0.31.2-2"
+    "0.37.0-1"
   ]
 }

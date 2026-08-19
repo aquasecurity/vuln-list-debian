@@ -6,19 +6,25 @@
     "librust-tendril-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-futf-0.1+default-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-mac-0.1+default-dev \u003c!nocheck\u003e, librust-utf-8-0.7+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-new-debug-unreachable-1+default-dev (\u003e= 1.0.2) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f49f234c40b8c04a08d6dd5832c62eacf7f24b6df92ebfeeb21dccbdb6edab9a 2284 rust-tendril_0.4.3-1.dsc d24a120c5fc464a3458240ee02c299ebcb9d67b5249c8848b09d639dca8d7bb0 37210 rust-tendril_0.4.3.orig.tar.gz 56138a6d85acb7335d1ad7ed7b7a40dcb1db82a96ceb9a19b4a8bd3a6bdb64a1 4120 rust-tendril_0.4.3-1.debian.tar.xz"
+    "d3a2a4f1332fcd9136dd6fd227fff2ec24ff376e4274f489bb66f09c292da91a 2310 rust-tendril_0.5.1-1.dsc 5fed54709c5b3a53d09bb1c113ea4f5ceafd1e772ddcb0030a82e1d56c087b08 45663 rust-tendril_0.5.1.orig.tar.gz 0b685e96327b07d5cce11856c2c3a3d7b6ac8ca889ac7a0d18e0221d212b429d 3436 rust-tendril_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tendril"
   ],
   "Files": [
-    "a3f817968d0506907cc883d5d4944fa4 2284 rust-tendril_0.4.3-1.dsc 216e0c4a9cff62b07ef888e911560e11 37210 rust-tendril_0.4.3.orig.tar.gz c3335f4f0d75f1e5f3968e761f36a1e5 4120 rust-tendril_0.4.3-1.debian.tar.xz"
+    "8987be2c6fdce08ee05b9f25c3310901 2310 rust-tendril_0.5.1-1.dsc 4f2ebcb10dc919fe4e96d94ab28dc6e4 45663 rust-tendril_0.5.1.orig.tar.gz bf8d564abef3981d0f6928432464bb48 3436 rust-tendril_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/html5ever"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.8+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-rand-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tendril]"
   ],
   "Version": [
-    "0.4.3-1"
+    "0.5.1-1"
   ]
 }
