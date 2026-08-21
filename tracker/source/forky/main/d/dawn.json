@@ -6,16 +6,16 @@
     "libwebgpu-dawn0, tint-tools, libwebgpu-dawn-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, libabsl-dev (\u003e= 20260107), libglfw3-dev, libvulkan-dev, libegl-dev, libx11-xcb-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libwayland-dev, glslang-dev, glslang-tools, python3"
+    "debhelper-compat (= 14), cmake, ninja-build, libabsl-dev (\u003e= 20260107), libglfw3-dev, libvulkan-dev, libegl-dev, libx11-xcb-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libwayland-dev, glslang-dev, glslang-tools, python3"
   ],
   "Checksums-Sha256": [
-    "4eb2ea9f67b3bb811611c640d3da3900c84f817bb50076e581dae721ba26f961 2586 dawn_0.0~git20260724.1e897275-2.dsc 823a7a180c3f794550812932059cf3bc0c9d9f1c7d2233e52761f4a80ee39ef9 8085680 dawn_0.0~git20260724.1e897275.orig.tar.xz ad06df81f9e12e0f61eacae275c251f0c150c11458d1b736053a2eb24e7e88f9 10688 dawn_0.0~git20260724.1e897275-2.debian.tar.xz"
+    "9612f00e0c99aec4b047a5fcc01a5cb3e04c4062fa7bcf73d2851fbe0e7dfb61 2649 dawn_0.0~git20260724.1e897275-4.dsc 823a7a180c3f794550812932059cf3bc0c9d9f1c7d2233e52761f4a80ee39ef9 8085680 dawn_0.0~git20260724.1e897275.orig.tar.xz 483538bb4c11fce8707711a091916641990509468475f59a4a9c0b3b75d6f4af 14664 dawn_0.0~git20260724.1e897275-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dawn"
   ],
   "Files": [
-    "40f279501e53439736323baf96cc1e1a 2586 dawn_0.0~git20260724.1e897275-2.dsc a028b0fbb0abf735bf56dfa083c62577 8085680 dawn_0.0~git20260724.1e897275.orig.tar.xz 0851b605327a05e1616093aa623e4793 10688 dawn_0.0~git20260724.1e897275-2.debian.tar.xz"
+    "f7d4c4e42765499b4114b8afd258809f 2649 dawn_0.0~git20260724.1e897275-4.dsc a028b0fbb0abf735bf56dfa083c62577 8085680 dawn_0.0~git20260724.1e897275.orig.tar.xz 6859bbad804126b0757eb3a81f1a65aa 14664 dawn_0.0~git20260724.1e897275-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, g++, gcc, libc-dev, libvulkan-dev, mesa-vulkan-drivers"
+    "cmake, g++, gcc, glslang-tools, libc-dev, libvulkan-dev, mesa-vulkan-drivers, ninja-build, python3, spirv-tools"
   ],
   "Uploaders": [
     "Dominique Belhachemi \u003cdomibel@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/dawn.git"
   ],
   "Version": [
-    "0.0~git20260724.1e897275-2"
+    "0.0~git20260724.1e897275-4"
   ]
 }
