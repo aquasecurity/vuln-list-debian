@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "phosh-osk-stevia, phosh-osk-stevia-uim, phosh-osk-stevia-doc"
+    "phosh-osk-stevia, phosh-osk-stevia-uim, phosh-osk-stevia-common, phosh-osk-stevia-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), gi-docgen \u003c!nodoc\u003e, gobject-introspection \u003c!nodoc\u003e, json-glib-tools, libdconf-dev, libfeedback-dev, libgirepository1.0-dev \u003c!nodoc\u003e, libgmobile-dev, libgnome-desktop-3-dev, libgovarnam-dev [!mips64el], libgtk-3-dev, libhandy-1-dev (\u003e= 1.1.90), libhunspell-dev, libjson-glib-dev, libpresage-dev, libsystemd-dev, libuim-dev, libwayland-dev, libxml2-utils, meson, presage \u003c!nocheck\u003e, python3-docutils \u003c!nodoc\u003e, systemd-dev, uim \u003c!nocheck\u003e, uim-anthy \u003c!nocheck\u003e, varnam-schemes-ml \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), gi-docgen \u003c!nodoc\u003e, gir1.2-gio-2.0-dev \u003c!nodoc\u003e, gir1.2-gtk-3.0-dev \u003c!nodoc\u003e, gir1.2-handy-1-dev \u003c!nodoc\u003e, gobject-introspection (\u003e= 1.80) \u003c!nodoc\u003e, json-glib-tools, libdconf-dev, libfeedback-dev, libgmobile-dev, libgnome-desktop-3-dev, libgovarnam-dev [!mips64el], libgtk-3-dev, libhandy-1-dev (\u003e= 1.1.90), libhunspell-dev, libjson-glib-dev, libpresage-dev, libsystemd-dev, libuim-dev, libwayland-dev, libxml2-utils, meson, presage \u003c!nocheck\u003e, python3-docutils \u003c!nodoc\u003e, systemd-dev, uim \u003c!nocheck\u003e, uim-anthy \u003c!nocheck\u003e, varnam-schemes-ml \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fe05c6026c29a79a7b5685f4e97e2cbe3de4ad53b53280fab6d019b6122e8ca2 2971 phosh-osk-stevia_0.57~rc1-1.dsc cd8a42f3762ad585d92680e087653537768389cbe28bc378bde5ab7c53f73a22 317092 phosh-osk-stevia_0.57~rc1.orig.tar.xz 4fd3f15c87a0492306a6fa9277c5b2a64632e750c42c60ef3f267c6545a85b71 833 phosh-osk-stevia_0.57~rc1.orig.tar.xz.asc 4a852393b89c59495c92553ed4fd896f09ea1dc4589ded6ea279bf352136ccf7 14672 phosh-osk-stevia_0.57~rc1-1.debian.tar.xz"
+    "bd1dc3d7b441e2a8eb87d71f9c132a6a484318ad1a7a98ac96cb270b470d3494 3091 phosh-osk-stevia_0.57.0-2.dsc df39f9ebe9c61b7f7bdddcaf1087cb7f65986b35cb005456e70259db821206d0 319100 phosh-osk-stevia_0.57.0.orig.tar.xz 75d49372e7d22abedd91f0e536bd8bcfdabf2f501410c82d07b94cf513ee6868 833 phosh-osk-stevia_0.57.0.orig.tar.xz.asc 0693a99c842b6c59307c51cb603c0f2d83f6d3234b1b969f6b22b3d6d1ac338d 14996 phosh-osk-stevia_0.57.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/phosh-osk-stevia"
   ],
   "Files": [
-    "506fef69d89b407dfae79edad9bad910 2971 phosh-osk-stevia_0.57~rc1-1.dsc ab7239157ec5912da4e01b076a540ab2 317092 phosh-osk-stevia_0.57~rc1.orig.tar.xz 02bf5893c8b6427261bce158814f55ba 833 phosh-osk-stevia_0.57~rc1.orig.tar.xz.asc 42a48e6ec75f4699bb7bd45f3deb690a 14672 phosh-osk-stevia_0.57~rc1-1.debian.tar.xz"
+    "d6b2abb1864b74a13981fa5485d929a4 3091 phosh-osk-stevia_0.57.0-2.dsc d41bb8d966fbe26b57fdee0d5171e842 319100 phosh-osk-stevia_0.57.0.orig.tar.xz 4ff9b5aa351cc5ef644c306b0a3b559a 833 phosh-osk-stevia_0.57.0.orig.tar.xz.asc 943851f96b6028e7ac7390e114a1dd0d 14996 phosh-osk-stevia_0.57.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "phosh-osk-stevia"
   ],
   "Package-List": [
-    "phosh-osk-stevia deb x11 optional arch=any phosh-osk-stevia-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc phosh-osk-stevia-uim deb x11 optional arch=any"
+    "phosh-osk-stevia deb x11 optional arch=any phosh-osk-stevia-common deb x11 optional arch=all phosh-osk-stevia-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc phosh-osk-stevia-uim deb x11 optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/DebianOnMobile-team/phosh-osk-stevia.git"
   ],
   "Version": [
-    "0.57~rc1-1"
+    "0.57.0-2"
   ]
 }
