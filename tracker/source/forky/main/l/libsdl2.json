@@ -6,28 +6,28 @@
     "libsdl2-classic, libsdl2-doc, libsdl2-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), fcitx-libs-dev, libasound2-dev [linux-any], libdbus-1-dev, libdecor-0-dev (\u003e= 0.1.1-2~) [linux-any], libdrm-dev [linux-any], libegl-dev [!hurd-any], libgbm-dev [linux-any], libgl-dev, libgles-dev [!hurd-any], libibus-1.0-dev, libpipewire-0.3-dev (\u003e= 0.3.20) [linux-any] \u003c!pkg.libsdl2.nopipewire\u003e, libpulse-dev, libsamplerate0-dev, libsndio-dev \u003c!pkg.libsdl2.nosndio\u003e, libudev-dev [linux-any], libvulkan-dev [linux-any], libwayland-dev (\u003e= 1.18) [linux-any], libx11-dev, libxcursor-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev (\u003e= 0.5.0), libxrandr-dev, libxss-dev, libxt-dev, libxv-dev, libxxf86vm-dev, pkgconf, wayland-protocols"
+    "debhelper-compat (= 14), dpkg-build-api (= 1), libasound2-dev [linux-any], libdbus-1-dev, libdecor-0-dev (\u003e= 0.1.1-2~) [linux-any], libdrm-dev [linux-any], libegl-dev [!hurd-any], libgbm-dev [linux-any], libgl-dev, libgles-dev [!hurd-any], libibus-1.0-dev, libpipewire-0.3-dev (\u003e= 0.3.20) [linux-any] \u003c!pkg.libsdl2.nopipewire\u003e, libpulse-dev, libsamplerate0-dev, libsndio-dev \u003c!pkg.libsdl2.nosndio\u003e, libudev-dev [linux-any], libvulkan-dev [linux-any], libwayland-dev (\u003e= 1.18) [linux-any], libx11-dev, libxcursor-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev (\u003e= 0.5.0), libxrandr-dev, libxss-dev, libxt-dev, libxv-dev, libxxf86vm-dev, pkgconf, wayland-protocols"
   ],
   "Build-Depends-Indep": [
-    "graphviz \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e"
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "ae143dca816c8cdaf1d6b40636dba8ac3ce0bfd9c8f1e52e6162442d6a830b78 3237 libsdl2_2.32.10+dfsg-7.dsc 31bac5add36f98b55e3fcf4456f0dab50a06cf06bbcde283be567f64b05b95f3 5233512 libsdl2_2.32.10+dfsg.orig.tar.gz 259903cdce8b19b53f4c4ec36db3f4c6d916a4be40e3f1665dae4e853c67159a 44456 libsdl2_2.32.10+dfsg-7.debian.tar.xz"
+    "73611ae23d9d2259eeabcf2d6478e7bb576ff4c76a436460b65fa3ee801275db 3261 libsdl2_2.32.10+dfsg-8.dsc 31bac5add36f98b55e3fcf4456f0dab50a06cf06bbcde283be567f64b05b95f3 5233512 libsdl2_2.32.10+dfsg.orig.tar.gz cf4b3c0d3970701f8b8a9d471e362487bdce68ec8cc30bc20bd97a2621ba47ab 44700 libsdl2_2.32.10+dfsg-8.debian.tar.xz"
   ],
   "Dgit": [
-    "11e4022ca06f00e093d7196d32614e515e2eb001 debian archive/debian/2.32.10+dfsg-7 https://git.dgit.debian.org/libsdl2"
+    "5664554cba3d7438087eca8a28635125477bfa5e debian archive/debian/2.32.10+dfsg-8 https://git.dgit.debian.org/libsdl2"
   ],
   "Directory": [
     "pool/main/libs/libsdl2"
   ],
   "Files": [
-    "f29dedd976dd878c46899d0e51d7f8c7 3237 libsdl2_2.32.10+dfsg-7.dsc 0ba2eef8afb2fa0746c571b47b132e05 5233512 libsdl2_2.32.10+dfsg.orig.tar.gz 822712cd88562fbab1c2a4899773e7dd 44456 libsdl2_2.32.10+dfsg-7.debian.tar.xz"
+    "e0ad0c43ea45132dafd16479706d953f 3261 libsdl2_2.32.10+dfsg-8.dsc 0ba2eef8afb2fa0746c571b47b132e05 5233512 libsdl2_2.32.10+dfsg.orig.tar.gz 82c16d7d4a94eb52e0f7391ccc289e26 44700 libsdl2_2.32.10+dfsg-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=4b95b1e614bd7423f7108a48878ea74bd8e4f403 fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
+    "tag=b22ca31cbb6ff4ab128e96b7993d4b4761771a70 fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
   ],
   "Git-Tag-Tagger": [
     "Simon McVittie \u003csmcv@debian.org\u003e"
@@ -42,7 +42,7 @@
     "libsdl2"
   ],
   "Package-List": [
-    "libsdl2-classic deb oldlibs optional arch=any libsdl2-doc deb oldlibs optional arch=all profile=!nodoc libsdl2-tests deb misc optional arch=any"
+    "libsdl2-classic deb oldlibs optional arch=any libsdl2-doc deb oldlibs optional arch=all profile=!nodoc profile:v1=!nodoc libsdl2-tests deb misc optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -69,6 +69,6 @@
     "https://salsa.debian.org/sdl-team/libsdl2.git"
   ],
   "Version": [
-    "2.32.10+dfsg-7"
+    "2.32.10+dfsg-8"
   ]
 }
