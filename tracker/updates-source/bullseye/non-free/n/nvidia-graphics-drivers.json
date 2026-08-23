@@ -1,0 +1,65 @@
+{
+  "Architecture": [
+    "amd64 arm64 i386 ppc64el armhf"
+  ],
+  "Autobuild": [
+    "yes"
+  ],
+  "Binary": [
+    "nvidia-driver, nvidia-driver-full, nvidia-alternative, firmware-nvidia-gsp, nvidia-kernel-support, nvidia-kernel-dkms, nvidia-kernel-source, xserver-xorg-video-nvidia, nvidia-suspend-common, nvidia-legacy-check, nvidia-driver-bin, libnvidia-cfg1, nvidia-driver-libs, libglx-nvidia0, libgl1-nvidia-glvnd-glx, libnvidia-glcore, libegl-nvidia0, libgles-nvidia1, libgles-nvidia2, libnvidia-eglcore, nvidia-egl-common, nvidia-egl-icd, nvidia-vdpau-driver, nvidia-vulkan-common, nvidia-vulkan-icd, libnvidia-glvkspirv, libnvidia-rtcore, nvidia-smi, libnvidia-ml1, nvidia-powerd, nvidia-cuda-mps, libcuda1, libnvidia-pkcs11-openssl3, libcudadebugger1, libnvidia-ptxjitcompiler1, libnvidia-nvvm4, libnvcuvid1, libnvidia-encode1, libnvidia-fbc1, libnvoptix1, libnvidia-opticalflow1, libnvidia-allocator1, libnvidia-ngx1, libnvidia-api1, nvidia-opencl-common, nvidia-opencl-icd, nvidia-libopencl1, nvidia-detect"
+  ],
+  "Build-Depends": [
+    "debhelper-compat (= 13)"
+  ],
+  "Build-Depends-Arch": [
+    "dh-sequence-dkms, dh-exec, libnvidia-egl-wayland1, libvulkan1 (\u003e= 1.0.42), libxext6, po-debconf, quilt, xz-utils, zstd, linux-headers-amd64 [amd64] \u003c!nocheck\u003e, linux-headers-arm64 [arm64] \u003c!nocheck\u003e, libglvnd-dev"
+  ],
+  "Checksums-Sha256": [
+    "5a6584dac1968e74e9c4d2504e4538e6e9bf16299f4c837c79dea714e910d7e1 7205 nvidia-graphics-drivers_535.309.01-0+deb11u1.dsc 69c228f7ffbc65778ce7821219ecfb5c13198d8cf6dd37f13fbb5f2785e5c80a 340547996 nvidia-graphics-drivers_535.309.01.orig-amd64.tar.gz 488a0a145f555ee098aa8a7630cae4b8b66c5bd25fe6c7b7f8360bc07c0dc8be 269540049 nvidia-graphics-drivers_535.309.01.orig-arm64.tar.gz c4cc639e703b16517e398bef8efd1b666c0fba3f336a683a752f1c6addef5a88 141 nvidia-graphics-drivers_535.309.01.orig.tar.gz 471db7bb1499cad6cf076888e54623754d9c16e9dd27f41617e1219f0f3fa95e 236172 nvidia-graphics-drivers_535.309.01-0+deb11u1.debian.tar.xz"
+  ],
+  "Directory": [
+    "pool/updates/non-free/n/nvidia-graphics-drivers"
+  ],
+  "Format": [
+    "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://www.nvidia.com"
+  ],
+  "Maintainer": [
+    "Debian NVIDIA Maintainers \u003cpkg-nvidia-devel@lists.alioth.debian.org\u003e"
+  ],
+  "Package": [
+    "nvidia-graphics-drivers"
+  ],
+  "Package-List": [
+    "firmware-nvidia-gsp deb non-free/kernel optional arch=amd64,arm64 libcuda1 deb non-free/libs optional arch=i386,amd64,arm64 libcudadebugger1 deb non-free/libs optional arch=amd64,arm64 libegl-nvidia0 deb non-free/libs optional arch=i386,amd64,arm64 libgl1-nvidia-glvnd-glx deb non-free/libs optional arch=i386,amd64,arm64 libgles-nvidia1 deb non-free/libs optional arch=i386,amd64,arm64 libgles-nvidia2 deb non-free/libs optional arch=i386,amd64,arm64 libglx-nvidia0 deb non-free/libs optional arch=i386,amd64,arm64 libnvcuvid1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-allocator1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-api1 deb non-free/libs optional arch=amd64,arm64 libnvidia-cfg1 deb non-free/libs optional arch=amd64,arm64 libnvidia-eglcore deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-encode1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-fbc1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-glcore deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-glvkspirv deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-ml1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-ngx1 deb non-free/libs optional arch=amd64 libnvidia-nvvm4 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-opticalflow1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-pkcs11-openssl3 deb non-free/libs optional arch=amd64 libnvidia-ptxjitcompiler1 deb non-free/libs optional arch=i386,amd64,arm64 libnvidia-rtcore deb non-free/libs optional arch=amd64,arm64 libnvoptix1 deb non-free/libs optional arch=amd64,arm64 nvidia-alternative deb non-free/libs optional arch=i386,amd64,arm64 nvidia-cuda-mps deb non-free/utils optional arch=amd64,arm64 nvidia-detect deb non-free/x11 optional arch=amd64,arm64 nvidia-driver deb non-free/x11 optional arch=amd64,arm64 nvidia-driver-bin deb non-free/x11 optional arch=amd64,arm64 nvidia-driver-full deb non-free/x11 optional arch=amd64,arm64 nvidia-driver-libs deb non-free/libs optional arch=i386,amd64,arm64 nvidia-egl-common deb non-free/libs optional arch=i386,amd64,arm64,ppc64el,armhf nvidia-egl-icd deb non-free/libs optional arch=i386,amd64,arm64 nvidia-kernel-dkms deb non-free/kernel optional arch=amd64,arm64 nvidia-kernel-source deb non-free/kernel optional arch=amd64,arm64 nvidia-kernel-support deb non-free/kernel optional arch=amd64,arm64 nvidia-legacy-check deb non-free/libs optional arch=amd64,arm64 nvidia-libopencl1 deb non-free/libs optional arch=i386,amd64,arm64 nvidia-opencl-common deb non-free/libs optional arch=i386,amd64,arm64,ppc64el nvidia-opencl-icd deb non-free/libs optional arch=i386,amd64,arm64 nvidia-powerd deb non-free/utils optional arch=amd64 nvidia-smi deb non-free/utils optional arch=amd64,arm64 nvidia-suspend-common deb non-free/x11 optional arch=amd64,arm64,ppc64el nvidia-vdpau-driver deb non-free/video optional arch=i386,amd64,arm64 nvidia-vulkan-common deb non-free/libs optional arch=i386,amd64,arm64,ppc64el nvidia-vulkan-icd deb non-free/libs optional arch=i386,amd64,arm64 xserver-xorg-video-nvidia deb non-free/x11 optional arch=amd64,arm64"
+  ],
+  "Priority": [
+    "extra"
+  ],
+  "Section": [
+    "non-free/x11"
+  ],
+  "Standards-Version": [
+    "4.7.2"
+  ],
+  "Testsuite": [
+    "autopkgtest, autopkgtest-pkg-dkms"
+  ],
+  "Testsuite-Triggers": [
+    "linux-doc, linux-headers-generic, module-assistant-autopkgtest"
+  ],
+  "Uploaders": [
+    "Andreas Beckmann \u003canbe@debian.org\u003e,"
+  ],
+  "Vcs-Browser": [
+    "https://salsa.debian.org/nvidia-team/nvidia-graphics-drivers"
+  ],
+  "Vcs-Git": [
+    "https://salsa.debian.org/nvidia-team/nvidia-graphics-drivers.git -b 535"
+  ],
+  "Version": [
+    "535.309.01-0+deb11u1"
+  ]
+}

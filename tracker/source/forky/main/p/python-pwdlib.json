@@ -6,16 +6,19 @@
     "python3-pwdlib, python-pwdlib-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-hatchling, python3-hatch-regex-commit, pybuild-plugin-pyproject, python3-argon2 (\u003e= 23.1.0), python3-bcrypt (\u003e= 4.1.2), python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, mkdocs \u003c!nodoc\u003e, mkdocs-material \u003c!nodoc\u003e, mkdocs-autorefs \u003c!nodoc\u003e, mkdocstrings \u003c!nodoc\u003e, mkdocstrings-python-handlers \u003c!nodoc\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-argon2 (\u003e= 23.1.0), python3-bcrypt (\u003e= 4.1.2), python3-hatch-regex-commit, python3-hatchling, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "mkdocs \u003c!nodoc\u003e, mkdocs-autorefs \u003c!nodoc\u003e, mkdocs-material \u003c!nodoc\u003e, mkdocstrings \u003c!nodoc\u003e, mkdocstrings-python-handlers \u003c!nodoc\u003e, python3-doc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "109124af8c67768f69cc9e42a4e62b2ca6088d9083c8ee9a63d32e3886b0a7db 2449 python-pwdlib_0.3.0-2.dsc 008904ade82bd5aa6bccf00237e8e83f91d8357b76c28164e5131b8d45f83e51 202740 python-pwdlib_0.3.0.orig.tar.xz fdc16316d1ec175832616fd4ae3b1cc36cec059fd3cdccc6773c3f2b0cca2b96 6388 python-pwdlib_0.3.0-2.debian.tar.xz"
+    "8e5eb12678eed5e6732bbb8ebf3d3a6af0a698c9d26574089dd96279d2bcb0d4 1897 python-pwdlib_0.3.1-1.dsc 0fd25d1883272f1749c871c310c00026451206f99ae70bd7dc2d3d2e987a020f 203708 python-pwdlib_0.3.1.orig.tar.xz 9a1b1260589acf16cdf116d51125487e7d33c7dfecb2c8223e57ef267fa48b34 6924 python-pwdlib_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-pwdlib"
   ],
   "Files": [
-    "09ae20dce76266321fe5b0a54cddf120 2449 python-pwdlib_0.3.0-2.dsc cba43d92da2c600c398d5f133ef52454 202740 python-pwdlib_0.3.0.orig.tar.xz 7bff30f135e1f98d848875bfeca1ffa2 6388 python-pwdlib_0.3.0-2.debian.tar.xz"
+    "ca3b88a096f682dfc0008d7988dbc7dd 1897 python-pwdlib_0.3.1-1.dsc a30bce27930527501cc869815434eccf 203708 python-pwdlib_0.3.1.orig.tar.xz 5c22b47b2f7cdb0662be0d3c386bfc67 6924 python-pwdlib_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "python-pwdlib"
   ],
   "Package-List": [
-    "python-pwdlib-doc deb doc optional arch=all python3-pwdlib deb python optional arch=all"
+    "python-pwdlib-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-pwdlib deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-pwdlib.git"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.3.1-1"
   ]
 }

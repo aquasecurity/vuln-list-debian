@@ -6,16 +6,16 @@
     "swtpm, swtpm-dev, swtpm-libs, swtpm-tools"
   ],
   "Build-Depends": [
-    "autoconf, automake, debhelper-compat (= 13), dh-package-notes, dh-sequence-installsysusers, expect \u003c!nocheck\u003e, gawk \u003c!nocheck\u003e, gnutls-bin, gnutls-dev, libglib2.0-dev, libgmp-dev, libjson-glib-dev, libseccomp-dev, libssl-dev, libtasn1-dev, libtool, libtpms-dev (\u003e= 0.10~), net-tools \u003c!nocheck\u003e, python3-twisted \u003c!nocheck\u003e, socat \u003c!nocheck\u003e, softhsm2 \u003c!nocheck\u003e"
+    "autoconf, automake, debhelper-compat (= 14), dh-package-notes, dh-sequence-cruft, dh-sequence-installsysusers, expect \u003c!nocheck\u003e, gawk \u003c!nocheck\u003e, gnutls-bin, gnutls-dev, iproute2 \u003c!nocheck\u003e, libglib2.0-dev, libgmp-dev, libjson-glib-dev, libseccomp-dev, libssl-dev, libtasn1-dev, libtool, libtpms-dev (\u003e= 0.10~), net-tools \u003c!nocheck\u003e, python3-twisted \u003c!nocheck\u003e, socat \u003c!nocheck\u003e, softhsm2 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "992dcae43c8e0dc1da070d274d60c683d9d8a8f5da9af4a22b63ecdc4a70dd0a 2405 swtpm_0.10.1+ds-1.dsc bbecbe844fa84b1db0c26ade347374e5073e10c59df226066e04ce0ee09f105f 309776 swtpm_0.10.1+ds.orig.tar.xz e8d3211b02c3722fa7dfd37b05fe32341dca57681b0ebadb0f127d4583430422 10000 swtpm_0.10.1+ds-1.debian.tar.xz"
+    "98cb369130f014972d9f6f2e2defa7319e6fc9d7ae33f8415963cd536c5e8bb7 2450 swtpm_0.10.2-1.dsc 314f2b09c75b1327ee079f81b58e732fdee46c9c3b3a3358a6f3b92a1e85ca83 309384 swtpm_0.10.2.orig.tar.xz adb38919c5ffc727b3a2ed5ab6225a79e2d75a9c24bc46c74a064204f2c0d037 9732 swtpm_0.10.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/swtpm"
   ],
   "Files": [
-    "c79e0e6d86efd8ac3f1e30b24bfe1a97 2405 swtpm_0.10.1+ds-1.dsc 4e970efb7da8a190436823e0b6661e32 309776 swtpm_0.10.1+ds.orig.tar.xz 35376292d4f26ff49f5906d82ec0f5f0 10000 swtpm_0.10.1+ds-1.debian.tar.xz"
+    "755d4262e7b860b145454fd9a66dc2f7 2450 swtpm_0.10.2-1.dsc 1450781416cc556d6c16f63b59490536 309384 swtpm_0.10.2.orig.tar.xz bcf36d7d5faa4867169ecfca509adec1 9732 swtpm_0.10.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "iproute2"
   ],
   "Uploaders": [
     "Seunghun Han \u003ckkamagui@gmail.com\u003e,"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/debian/swtpm.git"
   ],
   "Version": [
-    "0.10.1+ds-1"
+    "0.10.2-1"
   ]
 }
