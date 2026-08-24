@@ -6,19 +6,25 @@
     "librust-pem-rfc7468-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64ct-1+default-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64ct-1+default-dev (\u003e= 1.4) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "24fff135cc4cb88f4a697774728670a37ad4233f757a6e9f70062f3d60cce5c1 2199 rust-pem-rfc7468_0.7.0-1.dsc 88b39c9bfcfc231068454382784bb460aae594343fb030d46e9f50a645418412 24159 rust-pem-rfc7468_0.7.0.orig.tar.gz 631cfce123cfb46c99276a83076794dbf3bbfcf2e615e089b1c65f220f7663af 2732 rust-pem-rfc7468_0.7.0-1.debian.tar.xz"
+    "2012584d78531959d2c21d77b37d7b29018035cf25ec68ac09e38bb448d741f5 2327 rust-pem-rfc7468_1.0.0-1.dsc a6305423e0e7738146434843d1694d621cce767262b2a86910beab705e4493d9 25267 rust-pem-rfc7468_1.0.0.orig.tar.gz 1a1ce27a9b1f109920679a5df4395ec8851ab5729124ef67f988fd01a8aec0ba 2820 rust-pem-rfc7468_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-pem-rfc7468"
   ],
   "Files": [
-    "e9cc461470a3cc1df36f7df9d2216055 2199 rust-pem-rfc7468_0.7.0-1.dsc a37720d4e4cbebd28ac9c7930137a9d6 24159 rust-pem-rfc7468_0.7.0.orig.tar.gz e3d3bfa7b3b3d4823b692b8f1c4b2360 2732 rust-pem-rfc7468_0.7.0-1.debian.tar.xz"
+    "5c92f2bd3e66d31a9836978a32d84d87 2327 rust-pem-rfc7468_1.0.0-1.dsc fb5fb873f97f3646d3676542fd2c5320 25267 rust-pem-rfc7468_1.0.0.orig.tar.gz ad80ef8b2ab7ff6a8aafa217554efdc9 2820 rust-pem-rfc7468_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/formats/tree/master/pem-rfc7468"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/pem-rfc7468]"
   ],
   "Version": [
-    "0.7.0-1"
+    "1.0.0-1"
   ]
 }
