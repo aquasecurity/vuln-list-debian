@@ -6,19 +6,25 @@
     "librust-sw-composite-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "706111ee48a19fcc666af4ebbded5b1b697c7587c2d50fd339c3046128d10c83 2157 rust-sw-composite_0.7.2-2.dsc 50a36f1738c7e57fec506df8c94719b2210816ab9de4d3dadeb9efb6bc71f1d2 8370 rust-sw-composite_0.7.2.orig.tar.gz 8b571f58d303f55a6b8e02325af8790ecb526a42b6411c6776001c51f3cd91ca 2688 rust-sw-composite_0.7.2-2.debian.tar.xz"
+    "467363379b3018329ec2d0bbb74a02f2ba61cfa8f0db0e740de7824ae196e53c 2251 rust-sw-composite_0.7.16-1.dsc 9ac8fb7895b4afa060ad731a32860db8755da3449a47e796d5ecf758db2671d4 12322 rust-sw-composite_0.7.16.orig.tar.gz 424de6f5b9a6cc6640ce10d74601c7f515545b058b6fd8fb5db281e5ba4c5c7b 3168 rust-sw-composite_0.7.16-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sw-composite"
   ],
   "Files": [
-    "d21b9f1b20c81c768b92afde7654ee84 2157 rust-sw-composite_0.7.2-2.dsc 0415ad8c1564731d60b8431fdf77c286 8370 rust-sw-composite_0.7.2.orig.tar.gz 6b78aae2f746c7b4d92f6be2e7256918 2688 rust-sw-composite_0.7.2-2.debian.tar.xz"
+    "92485ac5b33549276a498a6d50a92721 2251 rust-sw-composite_0.7.16-1.dsc d5eadeb02112603713c860cec0b75878 12322 rust-sw-composite_0.7.16.orig.tar.gz feb467bb6ea58eeae4b194a3efa81754 3168 rust-sw-composite_0.7.16-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/jrmuizel/sw-composite/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sw-composite]"
   ],
   "Version": [
-    "0.7.2-2"
+    "0.7.16-1"
   ]
 }

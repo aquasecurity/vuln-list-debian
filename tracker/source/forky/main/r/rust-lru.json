@@ -6,16 +6,19 @@
     "librust-lru-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hashbrown-0.14+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hashbrown-0.16+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "93dc7e8524cc90c52463bd9240dcbc3b55af01a12e5a96b8c3b924904b1accaf 2233 rust-lru_0.12.3-2.dsc d3262e75e648fce39813cb56ac41f3c3e3f65217ebf3844d818d1f9398cfb0dc 15009 rust-lru_0.12.3.orig.tar.gz d8b48c4520f4b6070d258c02183d953171c22a5ab50334d5f46bc5f6b5fe8a24 3068 rust-lru_0.12.3-2.debian.tar.xz"
+    "37da66d2bb89047492985cf816bb6291dde1fdbf4613870c01cfbe336b68c0bd 1643 rust-lru_0.16.4-2.dsc 7f66e8d5d03f609abc3a39e6f08e4164ebf1447a732906d39eb9b99b7919ef39 17470 rust-lru_0.16.4.orig.tar.gz 5b3cfb8b3ac48501fed95aa9a582cff7570d021e63e6887c28e7f271fa7f8d4a 3220 rust-lru_0.16.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-lru"
   ],
   "Files": [
-    "23f21bef2788b89495a7bf7a9690bfb5 2233 rust-lru_0.12.3-2.dsc bdbe1ee7461db86e420a2064f73b64ec 15009 rust-lru_0.12.3.orig.tar.gz 4f8f6e83a8a7e20c0625bddf9b1a9446 3068 rust-lru_0.12.3-2.debian.tar.xz"
+    "4fabec5b3ffcce0679a23440fd1cb9d3 1643 rust-lru_0.16.4-2.dsc ae7b5f5c26c4ea8a7796bf8b2fae8e82 17470 rust-lru_0.16.4.orig.tar.gz 6c210c589d495bf84a3d2451fc272513 3220 rust-lru_0.16.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-scoped-threadpool-0.1+default-dev"
+    "dh-cargo, librust-scoped-threadpool-0.1+default-dev, rustc"
   ],
   "Uploaders": [
     "Timo Aaltonen \u003ctjaalton@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/lru]"
   ],
   "Version": [
-    "0.12.3-2"
+    "0.16.4-2"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-statsd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ae026e4d2f6318aefadffc58f0d2d167fc600b43edde54ee702ca65483ac04d5 2257 rust-statsd_0.16.0-1.dsc 9033ee26c7f426551c18ecc4ff6a7dd24ef81b7e62cfb0304984123b75af6f8b 7159 rust-statsd_0.16.0.orig.tar.gz e347cc7588f0e3038a7f2e12a2b5f490e19db4cd1fee72b78daa83bfe90125fb 2476 rust-statsd_0.16.0-1.debian.tar.xz"
+    "120115591ef4a128fcf43508f0b7c86543ffd1ef798f51a6ce1256609780a9df 2255 rust-statsd_0.16.1-1.dsc 45f3555365baa1897e38b8765dcc13bbafa409086ce3473cccbbe8d9ee05551a 7705 rust-statsd_0.16.1.orig.tar.gz f647742ff7cc093e8017550e775e9c21ab08f10a619283c3086aea2968851d57 2908 rust-statsd_0.16.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-statsd"
   ],
   "Files": [
-    "b94ff5e6a9874d4483526929cf639de1 2257 rust-statsd_0.16.0-1.dsc d53cde12fcf9739717ecf76087c4c661 7159 rust-statsd_0.16.0.orig.tar.gz 7b6676c8a337d28e7f80fc28864ba252 2476 rust-statsd_0.16.0-1.debian.tar.xz"
+    "b6ba5515ea1eea16042250ea0da3866d 2255 rust-statsd_0.16.1-1.dsc f7ba321aa71d649c3eddd29feb50f418 7705 rust-statsd_0.16.1.orig.tar.gz 7c7e7e56bd2813b9199a70219cd5abd3 2908 rust-statsd_0.16.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-itertools-0.10+default-dev"
+    "dh-cargo, librust-itertools+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/statsd]"
   ],
   "Version": [
-    "0.16.0-1"
+    "0.16.1-1"
   ]
 }

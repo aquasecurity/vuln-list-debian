@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-recursion-1+default-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev (\u003e= 0.1.43) \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-enum-as-inner-0.6+default-dev \u003c!nocheck\u003e, librust-futures-util-0.3+std-dev (\u003e= 0.3.5) \u003c!nocheck\u003e, librust-hickory-proto-0.25+std-dev \u003c!nocheck\u003e, librust-hickory-resolver-0.25+tokio-dev \u003c!nocheck\u003e, librust-ipnet-2-dev (\u003e= 2.3.0) \u003c!nocheck\u003e, librust-lru-cache-0.1+default-dev (\u003e= 0.1.2) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev \u003c!nocheck\u003e, librust-prefix-trie+default-dev (\u003c\u003c 0.11) \u003c!nocheck\u003e, librust-prefix-trie+default-dev (\u003e= 0.7) \u003c!nocheck\u003e, librust-thiserror-2-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.21) \u003c!nocheck\u003e, librust-tokio-1+net-dev (\u003e= 1.21) \u003c!nocheck\u003e, librust-tracing-0.1-dev (\u003e= 0.1.30) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-hickory-resolver-0.26+recursor-dev \u003c!nocheck\u003e, librust-hickory-resolver-0.26+tokio-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2054457e2c6e17954af27228cfacdd096a2f6efdde118fbcb53ceff6e9585430 3361 rust-hickory-recursor_0.25.2-4.dsc 2f9ec7f3d578a10e8f67a30b3668a324b49c2583e47f04b69ebb32fb735fee41 41532 rust-hickory-recursor_0.25.2.orig.tar.gz df71c0a06790b2c09bebe02f3f143c87148b441a3663ab8976c2d1f9392fe9ce 4520 rust-hickory-recursor_0.25.2-4.debian.tar.xz"
+    "1d2beaabcf17f932ca917525c8c6980093de8c8633917b30e44a41aa1e5694ac 2428 rust-hickory-recursor_0.25.2-6.dsc 2f9ec7f3d578a10e8f67a30b3668a324b49c2583e47f04b69ebb32fb735fee41 41532 rust-hickory-recursor_0.25.2.orig.tar.gz 949ef0b1ef6fab280d79364ef1706fe9b766d91aa2f0ca0f78d672bffb2e9a85 7324 rust-hickory-recursor_0.25.2-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hickory-recursor"
   ],
   "Files": [
-    "ed69cbbf94587e15dedf402aa023308a 3361 rust-hickory-recursor_0.25.2-4.dsc 30167c92c70858fabdae1c91a0138089 41532 rust-hickory-recursor_0.25.2.orig.tar.gz 70e5169dab9fe6745ee04785f7c12b4a 4520 rust-hickory-recursor_0.25.2-4.debian.tar.xz"
+    "a857faed8fc66209a5b9e0cc85fd0705 2428 rust-hickory-recursor_0.25.2-6.dsc 30167c92c70858fabdae1c91a0138089 41532 rust-hickory-recursor_0.25.2.orig.tar.gz 56970d00c422609f8166c99baf18aad6 7324 rust-hickory-recursor_0.25.2-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tracing-subscriber-0.3+env-filter-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+std-dev, rustc"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Reinhard Tartler \u003csiretart@tauware.de\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hickory-recursor]"
   ],
   "Version": [
-    "0.25.2-4"
+    "0.25.2-6"
   ]
 }
