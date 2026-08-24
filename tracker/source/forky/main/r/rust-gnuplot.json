@@ -6,19 +6,25 @@
     "librust-gnuplot-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev (\u003e= 1.4.3) \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.9) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "867100fb43e624cb67596a2bc8cfc4989208c119294bbd1a279ec306680af733 1856 rust-gnuplot_0.0.39-1.dsc 2529467b8aef62bdf0c97dc984ca33244b84f8b5eb9517328f24bbb9afa0fb31 71868 rust-gnuplot_0.0.39.orig.tar.gz 6b8528a74887c594c8efe3fd032d8b1add42756a28e0e09e47aae74d2e35c59c 8184 rust-gnuplot_0.0.39-1.debian.tar.xz"
+    "4c0d6f32da34e15257cfeb7091e16981861d6d4283996c458954e2f43a7cdf5c 2333 rust-gnuplot_0.0.46-1.dsc ca6d93295d3f751f0cb4055953bfd5c55b50a1c83b10f105c2c8e616d011f252 83029 rust-gnuplot_0.0.46.orig.tar.gz 79cdf89241faefbe4338650aa3084fd0985376a6e481b3148a1ec8d27a745240 3404 rust-gnuplot_0.0.46-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gnuplot"
   ],
   "Files": [
-    "18519779017ba70208100f9562c273ba 1856 rust-gnuplot_0.0.39-1.dsc a3eced0f8153efa3924cc1204ac65301 71868 rust-gnuplot_0.0.39.orig.tar.gz 7dd187bed82325d04da7315d64bf7547 8184 rust-gnuplot_0.0.39-1.debian.tar.xz"
+    "85e6b5dd9f9a66cc6926cecef2e4358d 2333 rust-gnuplot_0.0.46-1.dsc b914384832dcc042d8f3566e7b2bf496 83029 rust-gnuplot_0.0.46.orig.tar.gz 105fd31d47628ef72fe1ab03eee68d7c 3404 rust-gnuplot_0.0.46-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/SiegeLord/RustGnuplot"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tempfile-3+default-dev"
+    "dh-cargo, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gnuplot]"
   ],
   "Version": [
-    "0.0.39-1"
+    "0.0.46-1"
   ]
 }

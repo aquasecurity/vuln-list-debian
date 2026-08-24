@@ -6,16 +6,19 @@
     "librust-hmac-sha256-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f93fca15c9767c830e37c02a104fafce155e04a3ae2d40bfd020ef53c665c901 2223 rust-hmac-sha256_1.1.7-2.dsc 3688e69b38018fec1557254f64c8dc2cc8ec502890182f395dbb0aa997aa5735 6283 rust-hmac-sha256_1.1.7.orig.tar.gz 24c56d34fd722dfc40653437631ab06adb95a7fbf21bcfd01a86fc510df551f8 2924 rust-hmac-sha256_1.1.7-2.debian.tar.xz"
+    "c06e6319500c80f22d90cbea51539d8358997da1d26abbcacae577b182c6418d 2240 rust-hmac-sha256_1.1.14-1.dsc ec9d92d097f4749b64e8cc33d924d9f40a2d4eb91402b458014b781f5733d60f 10732 rust-hmac-sha256_1.1.14.orig.tar.gz 88c367e915e4cbc29917be132b73103a1735b383e7d00ab45e4371c5a7e8746c 3148 rust-hmac-sha256_1.1.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hmac-sha256"
   ],
   "Files": [
-    "a76b63cc999b4aa9da7f43c30d10b62f 2223 rust-hmac-sha256_1.1.7-2.dsc 15ef31b51a86c7de6e49bdfe54197091 6283 rust-hmac-sha256_1.1.7.orig.tar.gz 3257e1ebc947c53b5be3f6d2ede01bca 2924 rust-hmac-sha256_1.1.7-2.debian.tar.xz"
+    "789d822c943575782a4fe35edd209371 2240 rust-hmac-sha256_1.1.14-1.dsc 85c5783c29f1ee6e615368a8c9242fea 10732 rust-hmac-sha256_1.1.14.orig.tar.gz cb6520d5e3c443c4cc55407a7ae6c99c 3148 rust-hmac-sha256_1.1.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Noah Meyerhans \u003cnoahm@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hmac-sha256]"
   ],
   "Version": [
-    "1.1.7-2"
+    "1.1.14-1"
   ]
 }
