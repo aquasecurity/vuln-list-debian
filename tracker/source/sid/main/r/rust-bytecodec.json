@@ -6,16 +6,19 @@
     "librust-bytecodec-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev \u003c!nocheck\u003e, librust-trackable-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+default-dev \u003c!nocheck\u003e, librust-trackable-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "27d75ca9445ee8e1311c356dc037f8f93db6b16af8825a7d85e62b1bd06c6bc7 2308 rust-bytecodec_0.4.15-2.dsc adf4c9d0bbf32eea58d7c0f812058138ee8edaf0f2802b6d03561b504729a325 32435 rust-bytecodec_0.4.15.orig.tar.gz 7f0f34aede8b457f9fb3311d00f783a44c3afa01d6b9747223c7c1eb6c4f4690 3692 rust-bytecodec_0.4.15-2.debian.tar.xz"
+    "17c3e63ceae4748cc87c06473b835ddd43743f8f404be0224489df8bb4030d2b 2304 rust-bytecodec_0.5.0-1.dsc f1016c00ae68a934cd21f6e3837555ffdc977c0bd8e7df3093ca35c3d726789e 34597 rust-bytecodec_0.5.0.orig.tar.gz 068f3f85aba04935d233b4ade6460907d5abe4dfe90622cf57a6ae61e3b14f96 3780 rust-bytecodec_0.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bytecodec"
   ],
   "Files": [
-    "b27ad2d81901f4ecbc6a09226203b79d 2308 rust-bytecodec_0.4.15-2.dsc c4528335852c69d2c24c53c5686dab96 32435 rust-bytecodec_0.4.15.orig.tar.gz 52de249b140524fd64b562fca0f0dd2e 3692 rust-bytecodec_0.4.15-2.debian.tar.xz"
+    "8fac04c4c23c619471edf55735c78c05 2304 rust-bytecodec_0.5.0-1.dsc 35290d4bf039c91b645e38b0767f9cb0 34597 rust-bytecodec_0.5.0.orig.tar.gz f99df3f84ca7b0fcbefabaee970f3810 3780 rust-bytecodec_0.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytecodec]"
   ],
   "Version": [
-    "0.4.15-2"
+    "0.5.0-1"
   ]
 }
