@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fastrand+default-dev (\u003e= 1.9.0-~~) \u003c!nocheck\u003e, librust-futures-util-0.3+io-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+sync-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-fastrand+default-dev (\u003e= 1.9.0) \u003c!nocheck\u003e, librust-futures-util-0.3+io-dev \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+sync-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "718ef3dad3a51d36b467d763a8634de5cdcc9597b6a4a4197834c901f8005025 3206 rust-h3_0.0.6-2.dsc 5e7675a0963b47a6d12fe44c279918b4ffb19baee838ac37f48d2722ad5bc6ab 109673 rust-h3_0.0.6.orig.tar.gz 61f951a745e6de08cdcadb916327d7886230c7e803b75f6b703e119e96e48417 4604 rust-h3_0.0.6-2.debian.tar.xz"
+    "02e56d4d496374f07b76f2d4f434a93ecc016ae347abb8de2a3688f87b1b3d07 3168 rust-h3_0.0.8-1.dsc 10872b55cfb02a821b69dc7cf8dc6a71d6af25eb9a79662bec4a9d016056b3be 124655 rust-h3_0.0.8.orig.tar.gz 331fcf7342c7b8629407c7adcd71f6390d322592e668d394d39618c30ca87787 4368 rust-h3_0.0.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-h3"
   ],
   "Files": [
-    "81d496dcd10e337bc9e59c6d5217fc01 3206 rust-h3_0.0.6-2.dsc 77c0c89abc8e9091bc0ee8f937fe200f 109673 rust-h3_0.0.6.orig.tar.gz 200e3e5aae3ceb27518faecaca16ce75 4604 rust-h3_0.0.6-2.debian.tar.xz"
+    "50ac22191cbedf271abdb162295f82a1 3168 rust-h3_0.0.8-1.dsc eabc0e02f350409c03e617dea43b6a86 124655 rust-h3_0.0.8.orig.tar.gz 6568d92578d1c7d420b84ccb954558ec 4368 rust-h3_0.0.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-futures-0.3+default-dev, librust-futures-util-0.3+io-dev, librust-proptest-1+default-dev, librust-quinn-0.11+ring-dev, librust-quinn-0.11+runtime-tokio-dev, librust-quinn-0.11+rustls-dev, librust-quinn-proto-0.11-dev, librust-rcgen-0.13+default-dev, librust-rustls-0.23+logging-dev, librust-rustls-0.23+ring-dev, librust-rustls-0.23+std-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-util-0.7+default-dev, librust-tracing-subscriber-0.3+ansi-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+time-dev, librust-tracing-subscriber-0.3+tracing-log-dev, rustc"
+    "dh-cargo, librust-assert-matches-1+default-dev, librust-futures-0.3+default-dev, librust-futures-util-0.3+io-dev, librust-proptest-1+default-dev, librust-quinn-0.11+ring-dev, librust-quinn-0.11+runtime-tokio-dev, librust-quinn-0.11+rustls-dev, librust-quinn-proto-0.11-dev, librust-rcgen+default-dev, librust-rustls-0.23+logging-dev, librust-rustls-0.23+ring-dev, librust-rustls-0.23+std-dev, librust-tokio-1+default-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-util-0.7+default-dev, librust-tracing-subscriber-0.3+ansi-dev, librust-tracing-subscriber-0.3+fmt-dev, librust-tracing-subscriber-0.3+time-dev, librust-tracing-subscriber-0.3+tracing-log-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/h3]"
   ],
   "Version": [
-    "0.0.6-2"
+    "0.0.8-1"
   ]
 }
