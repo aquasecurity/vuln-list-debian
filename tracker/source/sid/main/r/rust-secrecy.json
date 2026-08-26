@@ -6,16 +6,19 @@
     "librust-secrecy-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e, librust-zeroize-1-dev (\u003e= 1.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-zeroize-1+alloc-dev (\u003e= 1.6) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9556f12fe728d505049cc13785a3af3bf2cc7390ae740c134dfe4cee04ac4172 2271 rust-secrecy_0.8.0-1.dsc 9bd1c54ea06cfd2f6b63219704de0b9b4f72dcc2b8fdef820be6cd799780e91e 11916 rust-secrecy_0.8.0.orig.tar.gz 1d79dd709b7e89c1c79886644498b18d37ca1a6cb7cfbc964386331d6fb8f9c3 2916 rust-secrecy_0.8.0-1.debian.tar.xz"
+    "d2dd3efa0ecc14242300b7fb952842fa768c9c4dc022ddf94fe369215ce7589b 2271 rust-secrecy_0.10.3-2.dsc e891af845473308773346dc847b2c23ee78fe442e0472ac50e22a18a93d3ae5a 11303 rust-secrecy_0.10.3.orig.tar.gz 4b537a9c724960be2b4d39a68109f7782395971d6c7e1fc607bb651c05497f6d 2952 rust-secrecy_0.10.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-secrecy"
   ],
   "Files": [
-    "8ff9ef02196268b5587f5ad768b4a67b 2271 rust-secrecy_0.8.0-1.dsc 7838a493ea448bf611b43d93f3fcb755 11916 rust-secrecy_0.8.0.orig.tar.gz 8bf24b0d86dc6d99ca2c51a6ec8ca497 2916 rust-secrecy_0.8.0-1.debian.tar.xz"
+    "b7507bbcc644634d4221e108ea3836ef 2271 rust-secrecy_0.10.3-2.dsc 9159f4435890f94abcef6ad3d271d57e 11303 rust-secrecy_0.10.3.orig.tar.gz a00debed3814c65366e884c61726d461 2952 rust-secrecy_0.10.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/secrecy]"
   ],
   "Version": [
-    "0.8.0-1"
+    "0.10.3-2"
   ]
 }

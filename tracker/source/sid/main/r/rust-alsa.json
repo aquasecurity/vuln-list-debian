@@ -6,16 +6,19 @@
     "librust-alsa-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-alsa-sys-0.3+default-dev (\u003e= 0.3.1-~~) \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.4.0-~~) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-alsa-sys-0.6+default-dev (\u003e= 0.6.1) \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.13.0) \u003c!nocheck\u003e, librust-cfg-if-1+default-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.186) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e30dd086d39c19919f878c25f5a1f9601937aa573c8370027857b29256251b40 1723 rust-alsa_0.9.1-1.dsc ed7572b7ba83a31e20d1b48970ee402d2e3e0537dcfe0a3ff4d6eb7508617d43 72824 rust-alsa_0.9.1.orig.tar.gz 1609e8df4ab6a9d996f4f13ffee539a073d20423200a45f9ff1ed8eb8418ddef 3856 rust-alsa_0.9.1-1.debian.tar.xz"
+    "d09926be2fe90421df20878aedcaf0ceed46cb05fda2358620d296e099363b4d 2391 rust-alsa_0.12.1-1.dsc d3f93573e7ddb15145d27c58c0fa0a452faad9f5452ac17ed4554ea035ea9b71 78642 rust-alsa_0.12.1.orig.tar.gz 7551b5fe90aad69ca0138a848ca31b65c45aa29b0bf34898232622ef9d90444f 4296 rust-alsa_0.12.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-alsa"
   ],
   "Files": [
-    "789c50967a8f9fd1382f46cb710bb0d0 1723 rust-alsa_0.9.1-1.dsc 06ecab0209cb7cea93013a2d02c143c1 72824 rust-alsa_0.9.1.orig.tar.gz 8004907700a022cc4c9cf237562877e5 3856 rust-alsa_0.9.1-1.debian.tar.xz"
+    "972a7002bb62d4126f0fe82ef9cabba6 2391 rust-alsa_0.12.1-1.dsc 0c3db6e2f1b78baa47f590ae90873dea 78642 rust-alsa_0.12.1.orig.tar.gz 55499b8e51d38b34be3329afc162954f 4296 rust-alsa_0.12.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-anyhow-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Andreas Henriksson \u003candreas@fatal.se\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/alsa]"
   ],
   "Version": [
-    "0.9.1-1"
+    "0.12.1-1"
   ]
 }

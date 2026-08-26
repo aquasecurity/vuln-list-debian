@@ -6,19 +6,25 @@
     "librust-alsa-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.65-~~) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev \u003c!nocheck\u003e, libasound2-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev (\u003e= 1.2) \u003c!nocheck\u003e, librust-libc-0.2+default-dev (\u003e= 0.2.186) \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.32) \u003c!nocheck\u003e, libasound2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f2a67487031d2c70adcabafcc6c0907eddcd2868057a22764cdad0ecd48b9748 2271 rust-alsa-sys_0.3.1-2.dsc db8fee663d06c4e303404ef5f40488a53e062f89ba8bfed81f42325aafad1527 32748 rust-alsa-sys_0.3.1.orig.tar.gz 4d4aca44a1d5b518f6f8c7a1c712308cf2058bfb3a76bb1c0b6fd7b5df07b384 3156 rust-alsa-sys_0.3.1-2.debian.tar.xz"
+    "2829b5ac45c84e0e9df32ca874aa298fa3624dd5e6359101305f046579b0249c 2378 rust-alsa-sys_0.6.1-1.dsc f0320138053ef93099f168102c37b46ac0b9c53affc56ef7696633ad5477e2be 40298 rust-alsa-sys_0.6.1.orig.tar.gz 0eab1cc5d8f7b47aba8ba5406046deaa77517d7a2ac91568c6441377cf36a1eb 3304 rust-alsa-sys_0.6.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-alsa-sys"
   ],
   "Files": [
-    "cd9a1e0eadaf4cb916525ed88fd685cc 2271 rust-alsa-sys_0.3.1-2.dsc 730ff1a5c2f3becc07743810ad47e66e 32748 rust-alsa-sys_0.3.1.orig.tar.gz ce7130c81b4d745a41441b350e362c5d 3156 rust-alsa-sys_0.3.1-2.debian.tar.xz"
+    "e7e53840eaca1306e979b8227fa29d3b 2378 rust-alsa-sys_0.6.1-1.dsc c2f40cc2009d4a4ce073609621769d62 40298 rust-alsa-sys_0.6.1.orig.tar.gz 15e7d65aef7f9fdd4fd4afe5a67d81a2 3304 rust-alsa-sys_0.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/diwic/alsa-sys"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/alsa-sys]"
   ],
   "Version": [
-    "0.3.1-2"
+    "0.6.1-1"
   ]
 }

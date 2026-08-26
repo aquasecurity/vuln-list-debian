@@ -6,19 +6,25 @@
     "librust-cryptoki-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libloading-0+default-dev (\u003e= 0.7.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libloading-0.8+default-dev (\u003e= 0.8.9) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "064e76c8ace9baa2408eb41faf6e114fe7369f5048817d230632bc2977fa9708 2258 rust-cryptoki-sys_0.1.8-1.dsc 750380200f47d4ff677be725b6e0d78b590e1d0343573dcd4b62147f25dc6efa 194732 rust-cryptoki-sys_0.1.8.orig.tar.gz 3cc43c136f83128a0c894e3417c215acd1a7a8e5c327b560e3fc1ff440a16fe8 2820 rust-cryptoki-sys_0.1.8-1.debian.tar.xz"
+    "2f2e7fcc31ce91a35004495d2d72ebd2c2a215c0eb10df83524f5eaca58f18f0 2316 rust-cryptoki-sys_0.5.0-2.dsc f1fd850498411e4057f1cba79e6e2bc7cbe960544c1046ab46d4685c403a1121 396598 rust-cryptoki-sys_0.5.0.orig.tar.gz c596e7e61c3d846ce6e0563e2134aeecd6b8b3981b4162d3ecbd91fc276bc897 2860 rust-cryptoki-sys_0.5.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cryptoki-sys"
   ],
   "Files": [
-    "a5ec479263c8a98737aae4f6373344cd 2258 rust-cryptoki-sys_0.1.8-1.dsc 8d469f4fa74a5bd60ebef5ce12d0331f 194732 rust-cryptoki-sys_0.1.8.orig.tar.gz f99ee05729b649c73011ac854ce5f368 2820 rust-cryptoki-sys_0.1.8-1.debian.tar.xz"
+    "7fa2370bda7ddaa40648b7da15e7daf7 2316 rust-cryptoki-sys_0.5.0-2.dsc 4e0e3809d33176246f101f5c8ce48882 396598 rust-cryptoki-sys_0.5.0.orig.tar.gz 8878998e2770811308dca5238a51696c 2860 rust-cryptoki-sys_0.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/parallaxsecond/rust-cryptoki"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cryptoki-sys]"
   ],
   "Version": [
-    "0.1.8-1"
+    "0.5.0-2"
   ]
 }
