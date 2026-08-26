@@ -3,19 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-string-dev, librust-string+bytes-dev"
+    "librust-string-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e | librust-bytes-0+default-dev (\u003e= 0.4-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9bb3d5607ede9027b8e0faa81f7f660989242d56fc212fc22ba5cb494ea5e12e 2347 rust-string_0.2.1-2.dsc d24114bfcceb867ca7f71a0d3fe45d45619ec47a6fbfa98cb14e14250bfa5d6d 5081 rust-string_0.2.1.orig.tar.gz bc61d4f79975b9016c15e2e87eee5205691bc7c01acde130268103c72debce52 3076 rust-string_0.2.1-2.debian.tar.xz"
+    "3b727af73e26fd87f98814c19a72f700a54fc6ef5eb319faa84573a5bba8e8ed 2218 rust-string_0.3.1-1.dsc 73d5d847c1450954c3bcc99db14566d9e4c6ab0736a928bc366d5265e45031e2 5319 rust-string_0.3.1.orig.tar.gz be2af0209673ffd90e90db496de49efa20359ce6689fcbb15ec55625a1879b53 3528 rust-string_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-string"
   ],
   "Files": [
-    "0553079eb373bf8bd20e80cb9844f4f2 2347 rust-string_0.2.1-2.dsc 27f7bce4b68f716beed9cc5ed5ac51bc 5081 rust-string_0.2.1.orig.tar.gz f88e4a0223e8ac06c979cbbe4e053d95 3076 rust-string_0.2.1-2.debian.tar.xz"
+    "e10673d77a5d541b156857943404ee4a 2218 rust-string_0.3.1-1.dsc 29409509c0bb6e835b4a07202f34dd8d 5319 rust-string_0.3.1.orig.tar.gz 4ea486366aff0c09e5d4b2da8de18a1e 3528 rust-string_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "rust-string"
   ],
   "Package-List": [
-    "librust-string+bytes-dev deb rust optional arch=any librust-string-dev deb rust optional arch=any"
+    "librust-string-dev deb rust optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/string]"
   ],
   "Version": [
-    "0.2.1-2"
+    "0.3.1-1"
   ]
 }

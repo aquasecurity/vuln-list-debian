@@ -6,19 +6,25 @@
     "librust-str-indices-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1e0bf3d8d2fc28ccfccb61712aeb313a8ba2db5a8f265b0c3bcf0dde574ccf14 2287 rust-str-indices_0.4.3-1.dsc e9557cb6521e8d009c51a8666f09356f4b817ba9ba0981a305bd86aee47bd35c 19096 rust-str-indices_0.4.3.orig.tar.gz 81854384d4bef72fc0cd4d60a0e3e26a605e9fdf3a45e9acac8ba8721597c9d2 2568 rust-str-indices_0.4.3-1.debian.tar.xz"
+    "a1e23cba8fee89353323d07a12b7a5a3ac3f861a5483c8d8b58686cc327ae71a 2338 rust-str-indices_0.4.4-1.dsc d08889ec5408683408db66ad89e0e1f93dff55c73a4ccc71c427d5b277ee47e6 19480 rust-str-indices_0.4.4.orig.tar.gz 13261a8459f807d679c060ed2bedd7ffdb85a4689b2001841a8fc08936d23f9e 3056 rust-str-indices_0.4.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-str-indices"
   ],
   "Files": [
-    "71b3b530711c68be7e7bb7b219643fb1 2287 rust-str-indices_0.4.3-1.dsc e7a9e8d19807b3724dc9b57f68b860ed 19096 rust-str-indices_0.4.3.orig.tar.gz aefc625fe02d563baa800c34ab56d1a4 2568 rust-str-indices_0.4.3-1.debian.tar.xz"
+    "c76fadeb49118c5fce03f24c73fa1e07 2338 rust-str-indices_0.4.4-1.dsc 452113b4d2683bebc05853a136e1a97a 19480 rust-str-indices_0.4.4.orig.tar.gz 5ec6a3dec6b91f05f4d3e5f604a515dc 3056 rust-str-indices_0.4.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/cessen/str_indices"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.3+default-dev, librust-criterion-0.3+html-reports-dev, librust-proptest-1+default-dev"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-criterion-0.5+html-reports-dev, librust-proptest-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/str-indices]"
   ],
   "Version": [
-    "0.4.3-1"
+    "0.4.4-1"
   ]
 }
