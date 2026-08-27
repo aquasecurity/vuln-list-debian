@@ -6,19 +6,25 @@
     "librust-jod-thread-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4ddc55cb38455959ed0fae99ced30a75ba2b46a860a99ca4334e515160626b5e 1789 rust-jod-thread_0.1.2-1.dsc 8b23360e99b8717f20aaa4598f5a6541efbe30630039fbc7706cf954a87947ae 6322 rust-jod-thread_0.1.2.orig.tar.gz 01718feeb80f7c6d69dcc8f3a3c0b6b6c6c9a2e57d77e7750e32f309adca73b2 2524 rust-jod-thread_0.1.2-1.debian.tar.xz"
+    "8a91d313da0e3c3f0fc8710a0d311ddfbe8f2e94ba68dfcb09e4f344cff6713c 1609 rust-jod-thread_1.0.0-1.dsc a037eddb7d28de1d0fc42411f501b53b75838d313908078d6698d064f3029b24 6407 rust-jod-thread_1.0.0.orig.tar.gz ad7997f9b9a6beeb9422f2d467fe1d9210a566eace22ace56aeefbc4f5b125f0 2620 rust-jod-thread_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jod-thread"
   ],
   "Files": [
-    "e2be6d01b134ebe4fd169af0f20229b0 1789 rust-jod-thread_0.1.2-1.dsc 7e967d3bf59c9c7306ca4dc3bb5f9ed9 6322 rust-jod-thread_0.1.2.orig.tar.gz b9d9d52d692be3572dce2f3298131e69 2524 rust-jod-thread_0.1.2-1.debian.tar.xz"
+    "25acb6afd6b898926ffc15140d128e2a 1609 rust-jod-thread_1.0.0-1.dsc 25be8636f7cff53ec97ee055b670d22f 6407 rust-jod-thread_1.0.0.orig.tar.gz 8977cc2f528b3f863635b995ba16919d 2620 rust-jod-thread_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/matklad/jod-thread"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jod-thread]"
   ],
   "Version": [
-    "0.1.2-1"
+    "1.0.0-1"
   ]
 }
