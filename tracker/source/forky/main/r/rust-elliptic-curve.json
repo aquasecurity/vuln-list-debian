@@ -9,22 +9,22 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base16ct+default-dev (\u003c\u003c 2) \u003c!nocheck\u003e, librust-base16ct+default-dev (\u003e= 0.2) \u003c!nocheck\u003e, librust-crypto-bigint-0.5+generic-array-dev \u003c!nocheck\u003e, librust-crypto-bigint-0.5+rand-core-dev \u003c!nocheck\u003e, librust-crypto-bigint-0.5+zeroize-dev \u003c!nocheck\u003e, librust-ff-0.13-dev \u003c!nocheck\u003e, librust-generic-array-0.14+zeroize-dev (\u003e= 0.14.6) \u003c!nocheck\u003e, librust-group-0.13-dev \u003c!nocheck\u003e, librust-rand-core-0.6-dev (\u003e= 0.6.4) \u003c!nocheck\u003e, librust-subtle-2-dev \u003c!nocheck\u003e, librust-zeroize-1-dev (\u003e= 1.7) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base16ct-1+default-dev \u003c!nocheck\u003e, librust-crypto-bigint-0.7+hybrid-array-dev (\u003e= 0.7.5) \u003c!nocheck\u003e, librust-crypto-bigint-0.7+rand-core-dev (\u003e= 0.7.5) \u003c!nocheck\u003e, librust-crypto-bigint-0.7+subtle-dev (\u003e= 0.7.5) \u003c!nocheck\u003e, librust-crypto-bigint-0.7+zeroize-dev (\u003e= 0.7.5) \u003c!nocheck\u003e, librust-crypto-common-0.2+default-dev \u003c!nocheck\u003e, librust-crypto-common-0.2+rand-core-dev \u003c!nocheck\u003e, librust-ff-0.14-dev \u003c!nocheck\u003e, librust-group-0.14-dev \u003c!nocheck\u003e, librust-hybrid-array-0.4+zeroize-dev (\u003e= 0.4.13) \u003c!nocheck\u003e, librust-rand-core-0.10-dev \u003c!nocheck\u003e, librust-subtle-2-dev (\u003e= 2.6) \u003c!nocheck\u003e, librust-zeroize-1-dev (\u003e= 1.7) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "970212d448ad1dade8c2a6a4aea6f2776d91e91c68197d9e00a834b220d93c03 2992 rust-elliptic-curve_0.13.8-4.dsc b5e6043086bf7973472e0c7dff2142ea0b680d30e18d9cc40f267efbf222bd47 63198 rust-elliptic-curve_0.13.8.orig.tar.gz 511aa3ece9c2ddd6a01550c95801e5d01eb8d074c3e7b9c9a24305911a9fdb6a 3988 rust-elliptic-curve_0.13.8-4.debian.tar.xz"
+    "29758bd628916bcb9e4a43d1b20a86092fbc8e50328a6fe94051a09830aadc1b 3041 rust-elliptic-curve_0.14.1-1.dsc 9d65aa39b3a5c1c9c1b745c9a019234bb7a21b77abcb4f4d266d706e2d577d65 53234 rust-elliptic-curve_0.14.1.orig.tar.gz 2e637adb203f4ac8bef4179d763567cda0953f8493a488e09e14fd4d48269e4c 3636 rust-elliptic-curve_0.14.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-elliptic-curve"
   ],
   "Files": [
-    "6daaa22e00caa80241d78f90f3a87632 2992 rust-elliptic-curve_0.13.8-4.dsc ffc9c1ed3a5f35182084b40ff2ff6111 63198 rust-elliptic-curve_0.13.8.orig.tar.gz 460970caca34a74b57548f5421b30f17 3988 rust-elliptic-curve_0.13.8-4.debian.tar.xz"
+    "b8c79218277164c18f861c9ee9a39ee3 3041 rust-elliptic-curve_0.14.1-1.dsc c05e3100917572438e90a56e568f6b61 53234 rust-elliptic-curve_0.14.1.orig.tar.gz bfe24dc3df4152bde99851ed8cc0f5ae 3636 rust-elliptic-curve_0.14.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/RustCrypto/traits/tree/master/elliptic-curve"
+    "https://github.com/RustCrypto/traits"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal+default-dev, librust-sha2-0.10+default-dev, librust-sha3-0.10+default-dev, rustc"
+    "dh-cargo, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e, Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/elliptic-curve]"
   ],
   "Version": [
-    "0.13.8-4"
+    "0.14.1-1"
   ]
 }
