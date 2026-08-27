@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "libmirage11, gir1.2-mirage-3.2, libmirage-dev, libmirage-doc"
+    "libmirage12, gir1.2-mirage-3.2, libmirage-dev, libmirage-doc"
   ],
   "Build-Depends": [
-    "cmake (\u003e= 3.7.0), debhelper-compat (= 13), gobject-introspection, gtk-doc-tools, intltool, libbz2-dev, liblzma-dev, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.38), libsamplerate0-dev, libsndfile1-dev, pkgconf, zlib1g-dev"
+    "cmake (\u003e= 3.16.0), debhelper-compat (= 13), gir1.2-gio-2.0-dev, gir1.2-gmodule-2.0-dev, gir1.2-gobject-2.0-dev, gobject-introspection (\u003e= 1.80), gtk-doc-tools, intltool, libbz2-dev, libgcrypt20-dev, liblzma-dev, libglib2.0-dev (\u003e= 2.38), libsamplerate0-dev, libsndfile1-dev, pkgconf, valac, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "71a638390162be1c53cb9be34a5210a3e3d747a3d309144d63afaf113c423c21 2121 libmirage_3.2.10-1.dsc f93e46bb755ca6b0a448972afe44f24919cd23b9dcf866d1b5cb4b9333e180ae 230960 libmirage_3.2.10.orig.tar.xz ccb9e35af77deee89eddec4cb4fb18d3c05500efd77f712871e47e025e1deae5 5572 libmirage_3.2.10-1.debian.tar.xz"
+    "daffec4e86fd97b032748046c3c62a8709b4d23619bc8d5f8742d7f893e487dc 2259 libmirage_3.3.1-3.dsc 9acb4e19d98a257454ad00391750d91aa56e63e7f6e50e59a5d3973f1e0c6512 256024 libmirage_3.3.1.orig.tar.xz 51a15c1e8e3b5e6d1c08e482117046bc6cee516f405fcebc2797af76f9637cbb 6608 libmirage_3.3.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libm/libmirage"
   ],
   "Files": [
-    "7eb997c2dbbee2a19dd7321c4b8bb0f1 2121 libmirage_3.2.10-1.dsc 086ee537d761cdf0cab6dad660d5401b 230960 libmirage_3.2.10.orig.tar.xz 6e54737d4126b73a7c05b3b96d2d464f 5572 libmirage_3.2.10-1.debian.tar.xz"
+    "02f3c8565dbc4d5e2abba96619528253 2259 libmirage_3.3.1-3.dsc cc3149164c86d031ea90f29a143638e3 256024 libmirage_3.3.1.orig.tar.xz a123bb6f8e92a005688468c00e4bce0a 6608 libmirage_3.3.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "libmirage"
   ],
   "Package-List": [
-    "gir1.2-mirage-3.2 deb introspection optional arch=any libmirage-dev deb libdevel optional arch=any libmirage-doc deb doc optional arch=all libmirage11 deb libs optional arch=any"
+    "gir1.2-mirage-3.2 deb introspection optional arch=any libmirage-dev deb libdevel optional arch=any libmirage-doc deb doc optional arch=all libmirage12 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,9 +39,15 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, valac"
   ],
   "Version": [
-    "3.2.10-1"
+    "3.3.1-3"
   ]
 }
