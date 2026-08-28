@@ -6,16 +6,19 @@
     "python3-pykmtronic"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-lxml \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "247bbae35b15b7e8fc609c5cb6561050feb84c3700072bbe7e1c2edcd927a479 2001 pykmtronic_0.3.0-2.dsc cdc3b8cd47fec0aac1c361e9b5d6a72f9995f9d9eda656b3afbe55ca16f41aaa 3369 pykmtronic_0.3.0.orig.tar.gz 1f6e9c1c3e6afa1f28c145ae8ca0c8ed0cba6226497f364d74d5fc03067c586c 2184 pykmtronic_0.3.0-2.debian.tar.xz"
+    "4ca073a5d02fc5f11863ce913cdf4d67bb4740b4dfd82c5b94ca3d949d569545 2224 pykmtronic_0.4.0-1.dsc 678f59076e8f9d7ac0f241cf310808f8ea4ec981a526e9d10ecb1869c8aa4a74 5342 pykmtronic_0.4.0.orig.tar.gz 19ae5f8a511690238a0e0edbb49329fabd866b0c36e8ca3c2618c1b2c432ded1 2376 pykmtronic_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pykmtronic"
   ],
   "Files": [
-    "b09a4c9981dc9aa428490619f63df1f9 2001 pykmtronic_0.3.0-2.dsc 062bb86b6dd543cac0e192f50d2c07b2 3369 pykmtronic_0.3.0.orig.tar.gz 2cbfec59181740ef61343dbb4c720d3c 2184 pykmtronic_0.3.0-2.debian.tar.xz"
+    "88485873bcefd5d9a64cc76bf7dd3fce 2224 pykmtronic_0.4.0-1.dsc 3e09adb4ef05966efafcb44603a889ac 5342 pykmtronic_0.4.0.orig.tar.gz 0d4f1174548abd74f630d289bd30a9fe 2376 pykmtronic_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/pykmtronic.git"
   ],
   "Version": [
-    "0.3.0-2"
+    "0.4.0-1"
   ]
 }
