@@ -6,10 +6,10 @@
     "python3-petl"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-lxml, python3-numpy, python3-openpyxl, python3-pandas, python3-pymysql, python3-pytest \u003c!nocheck\u003e, python3-requests, python3-setuptools, python3-setuptools-scm, python3-whoosh"
+    "debhelper-compat (= 14), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-lxml \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-openpyxl \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-pymysql \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sqlalchemy \u003c!nocheck\u003e, python3-whoosh \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c0cbd143a0f23042679404ceebd7fe805ee8336b55264876fdb1e4b7cf07e66b 2360 python-petl_1.7.20-1.dsc f28e9c9a0e8245588020c90bd99c06ad83dec28ad9e6e0ac21924187cf046a1d 422837 python-petl_1.7.20.orig.tar.gz e343fda0ba821afec8868178239e5f19ef6b019d1ed38c399ec99822c0fa7ac5 2416 python-petl_1.7.20-1.debian.tar.xz"
+    "64e449961f2c9be8e1569644617128837a8b325ddf0e3aa015f89132da16fc34 2662 python-petl_1.7.24-1.dsc 5fcfd0550d3574bc2b7eb5d33907cce30ce97bf3aa036c6054c2b1a7831e490e 430079 python-petl_1.7.24.orig.tar.gz b744338e4df843d114b2daf777b1876f85e1e93d927be5a5836a3f603e9debb9 2916 python-petl_1.7.24-1.debian.tar.xz"
   ],
   "Description": [
     "Extracting, transforming and loading tables of data Petl is a general purpose Python package for extracting, transforming and loading tables of data."
@@ -18,7 +18,7 @@
     "pool/main/p/python-petl"
   ],
   "Files": [
-    "9635b59284bbea4d880affbb024bf8df 2360 python-petl_1.7.20-1.dsc 9b4a48ed808ae949eab4eaf9206d9cdb 422837 python-petl_1.7.20.orig.tar.gz 02cbbcf7bd319f3497890e1e0abd9db1 2416 python-petl_1.7.20-1.debian.tar.xz"
+    "c69670d7bde2e44458e555306ab47563 2662 python-petl_1.7.24-1.dsc bbeab498b2f90a0581da1472b14858f9 430079 python-petl_1.7.24.orig.tar.gz 43d0471b138907ff33a9c1d1926a91ce 2916 python-petl_1.7.24-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "python-petl"
   ],
   "Package-List": [
-    "python3-petl deb python optional arch=all"
+    "python3-petl deb python unknown arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,13 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-lxml, python3-numpy, python3-openpyxl, python3-pandas, python3-pymysql, python3-pytest, python3-sqlalchemy, python3-whoosh"
+  ],
+  "Uploaders": [
+    "Lester Guerzon \u003clester@guerzon.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-petl"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/python-petl.git"
   ],
   "Version": [
-    "1.7.20-1"
+    "1.7.24-1"
   ]
 }
