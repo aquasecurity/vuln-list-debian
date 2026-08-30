@@ -3,13 +3,13 @@
     "any all"
   ],
   "Binary": [
-    "libopencc-data, libopencc-dev, libopencc-doc, libopencc1.4, opencc, python3-opencc"
+    "libopencc-data, libopencc-dev, libopencc-doc, libopencc1.4, opencc, opencc-jieba, opencc-jieba-data, python3-opencc"
   ],
   "Build-Depends": [
-    "chrpath, cmake, debhelper-compat (= 14), dh-sequence-python3, doxygen \u003c!nodoc\u003e, googletest \u003c!nocheck\u003e, libmarisa-dev (\u003e= 0.3.1+git20250817-2~), libtclap-dev, opencc \u003ccross\u003e, dh-sequence-pkgkde-symbolshelper, pybind11-dev, python3-all-dev, rapidjson-dev, pybuild-plugin-pyproject, python3-pybind11, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-wheel"
+    "cmake, debhelper-compat (= 14), dh-sequence-python3, doxygen \u003c!nodoc\u003e, googletest \u003c!nocheck\u003e, libmarisa-dev (\u003e= 0.3.1), libtclap-dev, opencc \u003ccross\u003e, dh-sequence-pkgkde-symbolshelper, pybind11-dev, python3-all-dev, rapidjson-dev, pybuild-plugin-pyproject, python3-pybind11, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-wheel"
   ],
   "Checksums-Sha256": [
-    "58cced3217c376cc3e24a9f1819229587b6dbb4bfa17d1f808a8218917509e7d 2951 opencc_1.4.1+ds1-3.dsc 0aefdbd7c52739f0af0ca8f0b4294072e38505427098eaf60767ce9cb3e56b4c 7185608 opencc_1.4.1+ds1.orig.tar.xz 1af2e2e56d14a4da240dbbf23522a975029e76b560a928fd834d206bf66a8e16 21168 opencc_1.4.1+ds1-3.debian.tar.xz"
+    "2a74cdf387978d5775b3e20619936ae5fd9693b286803d25708d9674333526e6 3141 opencc_1.4.2+ds1-1.dsc f99a2e4b29fb4daf3c2b11cddc3388e04e00c14abfcce6a44f2ffb619afa23bc 7219292 opencc_1.4.2+ds1.orig.tar.xz 94a35892b243c39ea32f4c185c4c1046eeb7930aaec2cd0800042c9709c45136 24088 opencc_1.4.2+ds1-1.debian.tar.xz"
   ],
   "Description": [
     "simplified-traditional Chinese conversion library opencc is a library for converting character between traditional Chinese and simplified Chinese."
@@ -18,7 +18,7 @@
     "pool/main/o/opencc"
   ],
   "Files": [
-    "7f468fdfa9d4c40d5aeef934dc93906d 2951 opencc_1.4.1+ds1-3.dsc 3e882b5d06a9e5224d80c9ec56f95146 7185608 opencc_1.4.1+ds1.orig.tar.xz 32176d6114113f1c9ff01460c69a44c2 21168 opencc_1.4.1+ds1-3.debian.tar.xz"
+    "332353d1612f61932d5918663d3acef9 3141 opencc_1.4.2+ds1-1.dsc 2030b335bfc1025f7bc14e85c478705b 7219292 opencc_1.4.2+ds1.orig.tar.xz 9b63e61a5a0058f8cfc80cac47bf91b0 24088 opencc_1.4.2+ds1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "opencc"
   ],
   "Package-List": [
-    "libopencc-data deb libs optional arch=all libopencc-dev deb libdevel optional arch=any libopencc-doc deb doc optional arch=all libopencc1.4 deb libs optional arch=any opencc deb utils optional arch=any python3-opencc deb python optional arch=any"
+    "libopencc-data deb libs optional arch=all libopencc-dev deb libdevel optional arch=any libopencc-doc deb doc optional arch=all libopencc1.4 deb libs optional arch=any opencc deb utils optional arch=any opencc-jieba deb utils optional arch=any opencc-jieba-data deb utils optional arch=all python3-opencc deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,10 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, cmake, googletest, pkgconf, rapidjson-dev"
   ],
   "Uploaders": [
     "Debian Chinese Team \u003cchinese-developers@lists.alioth.debian.org\u003e, Asias He \u003casias@debian.org\u003e, YunQiang Su \u003csyq@debian.org\u003e, Osamu Aoki \u003cosamu@debian.org\u003e, Aron Xu \u003caron@debian.org\u003e, xiao sheng wen \u003catzlinux@sina.com\u003e, Boyuan Yang \u003cbyang@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian/opencc.git"
   ],
   "Version": [
-    "1.4.1+ds1-3"
+    "1.4.2+ds1-1"
   ]
 }

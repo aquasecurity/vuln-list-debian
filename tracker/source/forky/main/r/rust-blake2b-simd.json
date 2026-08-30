@@ -6,19 +6,25 @@
     "librust-blake2b-simd-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayref-0.3+default-dev (\u003e= 0.3.5-~~) \u003c!nocheck\u003e, librust-arrayvec-0.7-dev \u003c!nocheck\u003e, librust-constant-time-eq-0.3+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev \u003c!nocheck\u003e, librust-constant-time-eq-dev (\u003c\u003c 0.5) \u003c!nocheck\u003e, librust-constant-time-eq-dev (\u003e= 0.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "39b4ff180663726fb0a330e28dd6a7ac6569c9ef837f282f3adf9375d94c0418 2340 rust-blake2b-simd_1.0.2-1.dsc 23285ad32269793932e830392f2fe2f83e26488fd3ec778883a93c8323735780 34165 rust-blake2b-simd_1.0.2.orig.tar.gz 4c1f2b373fbd9acdf775106cdef5cb17c3a0fb42bb133f8920a6336fb0f1c072 2640 rust-blake2b-simd_1.0.2-1.debian.tar.xz"
+    "7c20669c1df8300afe0a1abc81c496504d6eb523a6fe01ce5643c28e6e42a028 2383 rust-blake2b-simd_1.0.5-1.dsc 3560a7b1951efe814fcd721938313adc56753ca39f4b23847d7e9a2402f5dbff 35233 rust-blake2b-simd_1.0.5.orig.tar.gz 695532be4a9b884496ebbd34eb03730972348fd780bb571c08bf65ca49d29d15 3052 rust-blake2b-simd_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-blake2b-simd"
   ],
   "Files": [
-    "1e118b2be245588f2bbea428b9b74c35 2340 rust-blake2b-simd_1.0.2-1.dsc 15d2cb01c6b739038422c43b7caac3be 34165 rust-blake2b-simd_1.0.2.orig.tar.gz 1e9ba1e9a7c546df08f1a79f589731ab 2640 rust-blake2b-simd_1.0.2-1.debian.tar.xz"
+    "3f405c38e1f7e1f7a7db4f62ed9c62f8 2383 rust-blake2b-simd_1.0.5-1.dsc 2e0822b4ea144a3217a18a6628f728d9 35233 rust-blake2b-simd_1.0.5.orig.tar.gz 6d0e43a6e916e4984333a42023cba52e 3052 rust-blake2b-simd_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/oconnor663/blake2_simd"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/blake2b-simd]"
   ],
   "Version": [
-    "1.0.2-1"
+    "1.0.5-1"
   ]
 }

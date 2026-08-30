@@ -6,16 +6,19 @@
     "librust-devicemapper-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0+runtime-dev \u003c!nocheck\u003e, libdevmapper-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bindgen-0.72+default-dev \u003c!nocheck\u003e, librust-pkg-config-0.3+default-dev (\u003e= 0.3.31) \u003c!nocheck\u003e, libdevmapper-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c5511ede5e79370dfd7693d9f07ea9ee0d6f8ea5ac872d5a555a2b6a04fa479 1675 rust-devicemapper-sys_0.3.0-1.dsc 3d6681f5413e2094480381a97b8299f548c0579f07095ee20fe58e0a28cb34b5 7225 rust-devicemapper-sys_0.3.0.orig.tar.gz 5def5a552a4aadfd1e86e32069a731c38dfea82b99c32469533d30b8361fec65 2204 rust-devicemapper-sys_0.3.0-1.debian.tar.xz"
+    "026262a56b003b81f11ad7576678136a07c6c803888ff958d5d01390c860718c 2375 rust-devicemapper-sys_0.3.3-1.dsc 06421aaad10b53bd5d1fe004c26efddfaaeaa4438ff52b84a0f660b3c87d63e6 9813 rust-devicemapper-sys_0.3.3.orig.tar.gz b4a59b4393de325e5685419faea0074cd58cb3b16c1bdc685b1d7da78de044cd 2304 rust-devicemapper-sys_0.3.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-devicemapper-sys"
   ],
   "Files": [
-    "7360f1e457fa5b1cc4a8a0a2e330130f 1675 rust-devicemapper-sys_0.3.0-1.dsc 4bba721dd8f009170c2782004246aabb 7225 rust-devicemapper-sys_0.3.0.orig.tar.gz 79c872df0eaa70a96f30660ad2e8a403 2204 rust-devicemapper-sys_0.3.0-1.debian.tar.xz"
+    "857fcda52e9f4e4e41579b1a476ffcff 2375 rust-devicemapper-sys_0.3.3-1.dsc 7994fecc3722cdf38ca0976656aafed5 9813 rust-devicemapper-sys_0.3.3.orig.tar.gz 219425163bf24049a38698e0d75dc649 2304 rust-devicemapper-sys_0.3.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/devicemapper-sys"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/devicemapper-sys]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.3-1"
   ]
 }

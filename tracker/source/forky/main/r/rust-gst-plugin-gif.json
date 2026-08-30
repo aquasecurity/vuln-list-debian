@@ -3,22 +3,22 @@
     "any"
   ],
   "Binary": [
-    "librust-gst-plugin-gif-dev"
+    "librust-gst-plugin-gif-dev, gstreamer1.0-gif"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo"
+    "debhelper-compat (= 13), dh-sequence-cargo, cargo-c:native"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.92) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-atomic-refcell-0.1+default-dev \u003c!nocheck\u003e, librust-gif-0.14+default-dev \u003c!nocheck\u003e, librust-gst-plugin-version-helper-0.8+default-dev \u003c!nocheck\u003e, librust-gstreamer-0.25+default-dev \u003c!nocheck\u003e, librust-gstreamer-video-0.25+default-dev \u003c!nocheck\u003e"
+    "cargo:native, rustc:native (\u003e= 1.92), libstd-rust-dev, librust-atomic-refcell-0.1+default-dev, librust-gif-0.14+default-dev, librust-gst-plugin-version-helper-0.8+default-dev, librust-gstreamer-0.25+default-dev, librust-gstreamer-video-0.25+default-dev"
   ],
   "Checksums-Sha256": [
-    "7ad618cfb38346b2e1f581c69bc5f5a46104653e1d41e7c66a76165ca5096ad2 2582 rust-gst-plugin-gif_0.15.0-2.dsc 0b86f9391e55b43c6c03d18d626d725c9c72d9d88aea4b1e0751ea23978e4bc2 21798 rust-gst-plugin-gif_0.15.0.orig.tar.gz 2d3cc2e1185a82336a9979f1d7b40e4665fc87e41c65a6e0cb2f0da2cc3d28bf 3480 rust-gst-plugin-gif_0.15.0-2.debian.tar.xz"
+    "89eb7f44983f84b36185e6ea36b1b01632e6e707b410c9bf010b88493bc5cb27 2544 rust-gst-plugin-gif_0.15.0-3.dsc 0b86f9391e55b43c6c03d18d626d725c9c72d9d88aea4b1e0751ea23978e4bc2 21798 rust-gst-plugin-gif_0.15.0.orig.tar.gz 72d92d2400718b75c0169b46e9fbef96aefd31497cdcf5d3ddca119f0decfe86 4272 rust-gst-plugin-gif_0.15.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gst-plugin-gif"
   ],
   "Files": [
-    "28e7693a379a6ffce748bce0bc07bcb3 2582 rust-gst-plugin-gif_0.15.0-2.dsc e8dc222997adac1f97194322aaea8bc9 21798 rust-gst-plugin-gif_0.15.0.orig.tar.gz 9e2aec2e3edbbcb060f1f561d9e3be22 3480 rust-gst-plugin-gif_0.15.0-2.debian.tar.xz"
+    "5584b9d069f748d69a176bc0f25cb373 2544 rust-gst-plugin-gif_0.15.0-3.dsc e8dc222997adac1f97194322aaea8bc9 21798 rust-gst-plugin-gif_0.15.0.orig.tar.gz ccb1f437e90e1ad82d2e407206daab4a 4272 rust-gst-plugin-gif_0.15.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "rust-gst-plugin-gif"
   ],
   "Package-List": [
-    "librust-gst-plugin-gif-dev deb rust optional arch=any"
+    "gstreamer1.0-gif deb libs optional arch=any librust-gst-plugin-gif-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gst-plugin-gif]"
   ],
   "Version": [
-    "0.15.0-2"
+    "0.15.0-3"
   ]
 }
