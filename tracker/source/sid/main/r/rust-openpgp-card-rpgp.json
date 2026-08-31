@@ -6,16 +6,19 @@
     "librust-openpgp-card-rpgp-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-openpgp-card-0.5+default-dev \u003c!nocheck\u003e, librust-pgp-0.15+default-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-rsa-0.9+default-dev \u003c!nocheck\u003e, librust-secrecy-0.8+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ed25519-dalek-2+default-dev \u003c!nocheck\u003e, librust-openpgp-card-0.7+default-dev \u003c!nocheck\u003e, librust-p256-0.13+default-dev \u003c!nocheck\u003e, librust-p384-0.13+default-dev \u003c!nocheck\u003e, librust-p521-0.13+default-dev \u003c!nocheck\u003e, librust-pgp-0.20-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-rsa-0.9+default-dev \u003c!nocheck\u003e, librust-secrecy-0.10+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-x25519-dalek-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "42c6ef01870eded14fdcc1adfbb37cf4ccaa1d3d312d819911957c0723fad58a 2316 rust-openpgp-card-rpgp_0.3.0-1.dsc d2ad14d80a7f815645f434a355ed131824d42f40603334c6bfa0a56f3c0f1406 76608 rust-openpgp-card-rpgp_0.3.0.orig.tar.gz 3da81e8e1fd83841d3ff919dc638f6733fb43be2048776c6c77bb88a97e22a6f 2812 rust-openpgp-card-rpgp_0.3.0-1.debian.tar.xz"
+    "b2d44212973ba5a930f5123170cb74afe1866dcbcd1dda4968b1b575d1c322fe 3065 rust-openpgp-card-rpgp_0.8.1-1.dsc 2c0a443281913544afc20d9deab29e9a60eb3b197f9d840b62d68bb1f6674a3c 81997 rust-openpgp-card-rpgp_0.8.1.orig.tar.gz b7f4739d72ac54c00af66bd85282c7ce0c3939db28763188cef46c5f45267448 3980 rust-openpgp-card-rpgp_0.8.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-openpgp-card-rpgp"
   ],
   "Files": [
-    "11875a21d203c276c78168d47f637721 2316 rust-openpgp-card-rpgp_0.3.0-1.dsc 7ffd0ac618ac125d1ecc4d43723cb376 76608 rust-openpgp-card-rpgp_0.3.0.orig.tar.gz 9b2ee1c5f7a055059c8495c91547782d 2812 rust-openpgp-card-rpgp_0.3.0-1.debian.tar.xz"
+    "0570770bfa607292f209a3b5c13bb64d 3065 rust-openpgp-card-rpgp_0.8.1-1.dsc 13b243a3fa266d002e46286366fa3a69 81997 rust-openpgp-card-rpgp_0.8.1.orig.tar.gz 39d549ce84ad03b475914f172a6b730f 3980 rust-openpgp-card-rpgp_0.8.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-card-backend-pcsc-0.5+default-dev, librust-card-backend-scdc-0.5+default-dev, librust-env-logger-0.11+default-dev, librust-hex-0.4+default-dev, librust-log-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-testresult-0.4+default-dev, librust-toml-0.8+default-dev, rustc"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-card-backend-pcsc-0.5+default-dev, librust-env-logger-0.11+default-dev, librust-hex-0.4+default-dev, librust-log-0.4+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-testresult-0.4+default-dev, librust-toml-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/openpgp-card-rpgp]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.8.1-1"
   ]
 }

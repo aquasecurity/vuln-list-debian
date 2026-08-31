@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "linux-any all"
+    "amd64 arm64 riscv64 loong64 all"
   ],
   "Binary": [
-    "grout, grout-headers"
+    "grout, grout-headers, grout-frr"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), bash-completion, libcmocka-dev \u003c!nocheck\u003e, libdpdk-dev (\u003e= 25.11), libecoli-dev, libedit-dev, libevent-dev, libmnl-dev, libnuma-dev, meson, ninja-build, pkgconf, scdoc, systemd-dev"
+    "debhelper-compat (= 13), bash-completion, frr-dev (\u003e= 10.5), libcmocka-dev \u003c!nocheck\u003e, libdpdk-dev (\u003e= 25.11), libecoli-dev, libedit-dev, libevent-dev, libmnl-dev, libnuma-dev, meson, ninja-build, pkgconf, po-debconf, scdoc, systemd-dev"
   ],
   "Checksums-Sha256": [
-    "e7bed80115a5fba35943a255024ffb5cc1f5e1e7e5232d90939e46537bdf919a 2038 grout_0.16.0-1.dsc 748c750dd609bf6eb67ee2b2597f0db039f6622aa37eaee1187bb64d7e22e038 427459 grout_0.16.0.orig.tar.gz ef0f0fe86259de9222a0674b1cd64e2e1ee701c36e282369b13f796ad0258add 5056 grout_0.16.0-1.debian.tar.xz"
+    "1b6185a0961a3159c5e1dbd67c13552e297adb26e1959ae18db47f04e5be6fbc 1592 grout_0.17.1-1.dsc d88040f7583ae97d299b3ec185250ece70cbe68303907095674411f674dcfbe0 342324 grout_0.17.1.orig.tar.xz 4a2a091fdf6fc44e3a3be202d6ef9b4fc1975ff77de93b3aa8ee8615e76dd0e3 7056 grout_0.17.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/grout"
   ],
   "Files": [
-    "435c27ec189257897e599fbbab0abbd8 2038 grout_0.16.0-1.dsc e43a57031379c327a7b14f48364b8b36 427459 grout_0.16.0.orig.tar.gz 9ea56af549764bf4aec2e70cda5248ae 5056 grout_0.16.0-1.debian.tar.xz"
+    "fac5e1d3962ff81c36efeea94b2f53a6 1592 grout_0.17.1-1.dsc 23f116499e42814dce597184c6363917 342324 grout_0.17.1.orig.tar.xz c433727bf68adef6d02fdf0de317ab6c 7056 grout_0.17.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "grout"
   ],
   "Package-List": [
-    "grout deb net optional arch=linux-any grout-headers deb net optional arch=all"
+    "grout deb net optional arch=amd64,arm64,riscv64,loong64 grout-frr deb net optional arch=amd64,arm64,riscv64,loong64 grout-headers deb net optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org/debian/grout.git"
   ],
   "Version": [
-    "0.16.0-1"
+    "0.17.1-1"
   ]
 }

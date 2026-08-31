@@ -6,16 +6,16 @@
     "php-cache-integration-tests"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-phpcomposer, phpab"
+    "debhelper-compat (= 14), dh-sequence-phpcomposer, php-cache-tag-interop \u003c!nocheck\u003e, php-psr-cache \u003c!nocheck\u003e, php-psr-simple-cache \u003c!nocheck\u003e, php-symfony-cache \u003c!nocheck\u003e, phpab, phpunit \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "53741da1a523cf5ed754366a3a28d77421eab7e15e92cb606192042e51bfd56b 1827 php-cache-integration-tests_0.17.0-6.dsc 171380a8931ab4aa9524aba5461ed3b7075e642a242c8450da5c850591305d2c 10372 php-cache-integration-tests_0.17.0.orig.tar.gz 3c05df4ce9eb02841b288bfa35798d4403008b2cac476c9105218f20eccefc6c 5656 php-cache-integration-tests_0.17.0-6.debian.tar.xz"
+    "9eacef38743f90609ffbe117d6c349d9f7ddc7192f3c089014e15d55416799bd 2055 php-cache-integration-tests_1.0.5-1.dsc 1dedb0a4b4303e52f5f7bc77a4bf6ddf9c6986eabd5b94b529206837cc388cd9 16681 php-cache-integration-tests_1.0.5.orig.tar.gz 8280667cd56a2478388408e787f4a7f8f6df826af34dc320b12d42a978c27cbd 4300 php-cache-integration-tests_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/php-cache-integration-tests"
   ],
   "Files": [
-    "d0feda6c0b24d5b1b274c6c55ad82feb 1827 php-cache-integration-tests_0.17.0-6.dsc 1f9db670c20d4f12537da9408da5ce32 10372 php-cache-integration-tests_0.17.0.orig.tar.gz e9c116ce51b9e37574a85bffb6c8deeb 5656 php-cache-integration-tests_0.17.0-6.debian.tar.xz"
+    "71bf4ab82b95f985dbeda9b7c3e82702 2055 php-cache-integration-tests_1.0.5-1.dsc 6bb457d87923bfd19701cfd27bb55a67 16681 php-cache-integration-tests_1.0.5.orig.tar.gz 47f50613bd0638306bc5f46392a86baa 4300 php-cache-integration-tests_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "php-symfony-cache, phpab, phpunit, pkg-php-tools"
   ],
   "Uploaders": [
     "David Prévot \u003ctaffit@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/php-team/pear/php-cache-integration-tests.git"
   ],
   "Version": [
-    "0.17.0-6"
+    "1.0.5-1"
   ]
 }
