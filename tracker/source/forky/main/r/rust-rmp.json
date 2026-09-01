@@ -6,19 +6,25 @@
     "librust-rmp-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-byteorder-1+std-dev (\u003e= 1.4.2-~~) \u003c!nocheck\u003e, librust-byteorder-1-dev (\u003e= 1.4.2-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.14-~~) \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.19) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.19) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "105915cf8becde558e0398cc4b732e1d7e4a9f86307d2a430cf06f7a924f52b1 1771 rust-rmp_0.8.14-1.dsc 228ed7c16fa39782c3b3468e974aec2795e9089153cd08ee2e9aefb3613334c4 29687 rust-rmp_0.8.14.orig.tar.gz eb6fbe222e55cdb6a0a7acace78647f876adb336add6d148a83edd13a103bdd9 2788 rust-rmp_0.8.14-1.debian.tar.xz"
+    "1e422ad4a5c00b81d865b7d1d7f7c18a21a1806d7f2b9f434dae988ecce43b11 2292 rust-rmp_0.8.15-1.dsc 4ba8be72d372b2c9b35542551678538b562e7cf86c3315773cae48dfbfe7790c 33421 rust-rmp_0.8.15.orig.tar.gz c153149bd090e86d91b15847235d505e24d36c708f34aeb62b51b40b21046098 2864 rust-rmp_0.8.15-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rmp"
   ],
   "Files": [
-    "fb03efd08f6a8b3906d5b77ddbb71963 1771 rust-rmp_0.8.14-1.dsc e8a05659cc24a565b63307931c67d830 29687 rust-rmp_0.8.14.orig.tar.gz 38684ec4bcc6cbf5f66ef3f9246460d7 2788 rust-rmp_0.8.14-1.debian.tar.xz"
+    "72bb30fe63b784f156da919c43c6e955 2292 rust-rmp_0.8.15-1.dsc b9050fe4e2d8e423ddc7e6a647751848 33421 rust-rmp_0.8.15.orig.tar.gz 1d686e0c4b4aa341991f4a87e5193365 2864 rust-rmp_0.8.15-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/3Hren/msgpack-rust"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-quickcheck-1+default-dev"
+    "dh-cargo, librust-quickcheck-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Blair Noctis \u003cncts@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rmp]"
   ],
   "Version": [
-    "0.8.14-1"
+    "0.8.15-1"
   ]
 }
