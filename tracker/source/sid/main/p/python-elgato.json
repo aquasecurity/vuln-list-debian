@@ -6,19 +6,31 @@
     "python3-elgato"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-aresponses \u003c!nocheck\u003e, python3-mashumaro \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-poetry-core, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-yarl \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-click \u003c!nocheck\u003e, python3-cryptography \u003c!nocheck\u003e, python3-mashumaro \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-syrupy \u003c!nocheck\u003e, python3-typer \u003c!nocheck\u003e, python3-yarl \u003c!nocheck\u003e, python3-zeroconf \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9a4f96d84ba7c33fdd17b4f51051ed1723d375af427eee08f867c17ed68abd2a 2441 python-elgato_5.1.2-3.dsc ea963c26fa61657ca7567812d166ece2e9fd46e8c8cb3eb8eab147025fd9e3f5 68707 python-elgato_5.1.2.orig.tar.gz 7667e00336a2ddcca66ab3d18ccc27fad09efec1ac4e6121790989a8cc60ea94 2876 python-elgato_5.1.2-3.debian.tar.xz"
+    "de2ce58a62308842c53aff16f4e372b4d0cb26434bf696ae9ac13bbad496861a 2800 python-elgato_6.1.1-1.dsc 88381bbc3746d845c1ab462d3374a33db80cd163f20afdb12e741c4f6ae37fbc 122952 python-elgato_6.1.1.orig.tar.xz ae9b8ba7fd636fc9e404ba676d9d3c6bed154bbc25d5108efcd6ee94ad3b62e6 2876 python-elgato_6.1.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "b90d82d1cd95af67dab1cc721a3030fcf5035073 debian archive/debian/6.1.1-1 https://git.dgit.debian.org/python-elgato"
   ],
   "Directory": [
     "pool/main/p/python-elgato"
   ],
   "Files": [
-    "968ba36947be72fc1e92a10c72ef78ef 2441 python-elgato_5.1.2-3.dsc e999a41ec786d92bb8cf567d091cb78e 68707 python-elgato_5.1.2.orig.tar.gz 7204af34ae569155d2acce847165b638 2876 python-elgato_5.1.2-3.debian.tar.xz"
+    "2b0e59acf4936f4565573c32ab53110d 2800 python-elgato_6.1.1-1.dsc e3f5062bf17b9a0fb5a7a8ed02906f8c 122952 python-elgato_6.1.1.orig.tar.xz 0e3c83f4da2753300f80cf209de32e6a 2876 python-elgato_6.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=1fa39fba0b42a497cc4be3156fe0e9c43ee48a7d fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/frenck/python-elgato"
@@ -39,13 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-aresponses, python3-pytest, python3-pytest-asyncio"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-elgato.git"
   ],
   "Version": [
-    "5.1.2-3"
+    "6.1.1-1"
   ]
 }

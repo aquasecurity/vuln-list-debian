@@ -6,19 +6,31 @@
     "python3-pyprobeplus"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-bleak \u003c!nocheck\u003e, python3-bleak-retry-connector \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ac87e74ee62d152e2fcdb9c8cfa7e1ee3d2c4d2ff861e0a7e253c5e7eff3306e 2098 pyprobeplus_1.1.2-1.dsc 69e08c2841e7f45ad1baf1ddfd0ef403830953cf06d74445bf74852523bfdaac 14117 pyprobeplus_1.1.2.orig.tar.gz b4789f14831578cefab5e25f5c627b9070cff80c24cb38f7e58b9800e3722235 2212 pyprobeplus_1.1.2-1.debian.tar.xz"
+    "22b914a873ab47e592070cd359d7416f7a10e84ae43836a4ec2fe196379d0fdd 2507 pyprobeplus_2.0.0-1.dsc dcaa84328466e4c79a99a6abd2d658d0210c4637d0d80ad858134aaae3bc152c 20192 pyprobeplus_2.0.0.orig.tar.xz 8638ed60e0f9baa80faabe295203d7c2a218cc068fd6cebf802b70ca8e040020 2304 pyprobeplus_2.0.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "e6ccd91ab70cddb83a92a9b697a693b5950b010d debian archive/debian/2.0.0-1 https://git.dgit.debian.org/pyprobeplus"
   ],
   "Directory": [
     "pool/main/p/pyprobeplus"
   ],
   "Files": [
-    "1ead7fb56ad0379178be53a9ee1e3201 2098 pyprobeplus_1.1.2-1.dsc 01bf4d5fe3c3b1d59999c43d30e19fcb 14117 pyprobeplus_1.1.2.orig.tar.gz ff925dd72f3cf7824b760a0a8f3f70f6 2212 pyprobeplus_1.1.2-1.debian.tar.xz"
+    "a0bccd11321de16f0b7e9e075d6b0842 2507 pyprobeplus_2.0.0-1.dsc 2891e8b88852527acb968caa3a34a699 20192 pyprobeplus_2.0.0.orig.tar.xz 8c5f984161a8d2585deb16fbfb341abf 2304 pyprobeplus_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=8b206be96301d001b42456b8cd57c839896e68ee fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/pantherale0/pyprobeplus"
@@ -39,13 +51,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e,"
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/pyprobeplus"
@@ -54,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/pyprobeplus.git"
   ],
   "Version": [
-    "1.1.2-1"
+    "2.0.0-1"
   ]
 }

@@ -6,16 +6,16 @@
     "ldap-rest"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-nodejs, dh-nodejs, help2man, node-body-parser, node-csv-parse, node-express, node-express-rate-limit, node-fetch, node-fast-glob, node-ldapts, node-linagora-rabbitmq-client, node-lru-cache, node-multer, node-openid-client, node-p-limit, node-rollup-plugin-commonjs, node-rollup-plugin-json, node-rollup-plugin-terser, node-rollup-plugin-typescript, node-tslib, node-winston, rollup"
+    "debhelper-compat (= 13), dh-sequence-nodejs, dh-nodejs, help2man, node-body-parser, node-csv-parse, node-express, node-express-rate-limit, node-fetch, node-fast-glob, node-ldapts, node-linagora-rabbitmq-client, node-lru-cache, node-multer, node-openid-client, node-p-limit, node-rollup-plugin-commonjs, node-rollup-plugin-json, node-rollup-plugin-terser, node-rollup-plugin-typescript, node-tslib, node-typescript (\u003e= 6), node-winston, rollup"
   ],
   "Checksums-Sha256": [
-    "e3b38edf0b5792373d0bce2a48b61dd0d59a08f1fcf5c9284cdf7a58e49d5c19 2362 ldap-rest_0.6.0-1.dsc f5c0165f998f4c2056bc5e06edb15944091b96501f95547223b5e4aaae0fc73b 797104 ldap-rest_0.6.0.orig.tar.gz 5a6e62e770e887ca2644f9c2128b0724925a75238873ffb523e57e0167fb4185 16644 ldap-rest_0.6.0-1.debian.tar.xz"
+    "df0b3a7d522c7eeac1ad9cff630912c312b3d6ea42e273b6b838ea7dc9d14486 2443 ldap-rest_0.6.0-2.dsc f5c0165f998f4c2056bc5e06edb15944091b96501f95547223b5e4aaae0fc73b 797104 ldap-rest_0.6.0.orig.tar.gz 008e60fca7679f9145b13945834d7511c89d4f052ccaca36230e1ed5f4ed194c 16832 ldap-rest_0.6.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/ldap-rest"
   ],
   "Files": [
-    "d6a160311382321a396c490057037ecf 2362 ldap-rest_0.6.0-1.dsc 16e1b1bde6a795f4a7c7165bca9e8349 797104 ldap-rest_0.6.0.orig.tar.gz adeaf4671741862eda38c3f2873250e0 16644 ldap-rest_0.6.0-1.debian.tar.xz"
+    "7039a6ecf2a888e2dfe64371cd219733 2443 ldap-rest_0.6.0-2.dsc 16e1b1bde6a795f4a7c7165bca9e8349 797104 ldap-rest_0.6.0.orig.tar.gz 5f5c678fac9552cb65183d0d8588612d 16832 ldap-rest_0.6.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-nodejs"
+    "autopkgtest, autopkgtest-pkg-nodejs"
+  ],
+  "Testsuite-Triggers": [
+    "curl, ldap-utils, slapd"
   ],
   "Uploaders": [
     "Xavier Guimard \u003cyadd@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/js-team/ldap-rest.git"
   ],
   "Version": [
-    "0.6.0-1"
+    "0.6.0-2"
   ]
 }
