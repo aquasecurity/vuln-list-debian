@@ -6,19 +6,25 @@
     "librust-sha2-asm-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cc-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8f6048ab9b20ebe5d1cb3e53a58b8aa7d52b8855084b4253ca01dd78ac23f7f5 2202 rust-sha2-asm_0.6.2-2.dsc bf27176fb5d15398e3a479c652c20459d9dac830dedd1fa55b42a77dbcdbfcea 12341 rust-sha2-asm_0.6.2.orig.tar.gz 2001aaadeed3379e9ae88f880938bb68247e7ac1a920fb8284c3ac7b37c1ade0 4144 rust-sha2-asm_0.6.2-2.debian.tar.xz"
+    "c44c07b21198354a1274ec9ccf1af5fb5639d30250d962f942af6c445b22a956 2256 rust-sha2-asm_0.6.4-1.dsc b845214d6175804686b2bd482bcffe96651bb2d1200742b712003504a2dac1ab 12581 rust-sha2-asm_0.6.4.orig.tar.gz 6edf2601432cdcb2c83623657d6386757948966afe3a4271d29b3eee22c28459 4324 rust-sha2-asm_0.6.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-sha2-asm"
   ],
   "Files": [
-    "43fc69979c8ef008b5a71910bb2e92dd 2202 rust-sha2-asm_0.6.2-2.dsc 208b7c7650153748fe2546e1fea9d2b8 12341 rust-sha2-asm_0.6.2.orig.tar.gz a6a837ceee107917b27378cfdb00075c 4144 rust-sha2-asm_0.6.2-2.debian.tar.xz"
+    "046d767eb00131e8c5ca5f4ffb44375b 2256 rust-sha2-asm_0.6.4-1.dsc 1985c883a748d057143a113bddf8704c 12581 rust-sha2-asm_0.6.4.orig.tar.gz 31960c2e961f75557ad3739d7c4eb979 4324 rust-sha2-asm_0.6.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/asm-hashes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cpufeatures-0.2+default-dev"
+    "dh-cargo, librust-cpufeatures-0.2+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/sha2-asm]"
   ],
   "Version": [
-    "0.6.2-2"
+    "0.6.4-1"
   ]
 }
