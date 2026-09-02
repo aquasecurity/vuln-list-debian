@@ -1,33 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libcec-dev, libcec7, cec-utils, python3-libcec"
+    "libcec-dev, libcec8, cec-utils, python3-libcec, node-libcec, librust-libcec-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pkgconf, pkg-kde-tools, libudev-dev [linux-any], libp8-platform-dev, cmake, swig, python3-dev, libxrandr-dev, x11proto-core-dev, libncurses-dev"
+    "debhelper-compat (= 14), pkgconf, libudev-dev [linux-any], cmake, swig, python3-dev, dh-python, libxrandr-dev, x11proto-core-dev, libncurses-dev, cargo \u003c!pkg.libcec.norust\u003e, rustc \u003c!pkg.libcec.norust\u003e, nodejs \u003c!pkg.libcec.nonodejs\u003e, libnode-dev \u003c!pkg.libcec.nonodejs\u003e, node-gyp \u003c!pkg.libcec.nonodejs\u003e, node-addon-api \u003c!pkg.libcec.nonodejs\u003e"
   ],
   "Checksums-Sha256": [
-    "bb81b1a783ff1cc9746bd15244cbbe81bf397f2a0a472a03e67bb61900a4fa5d 2396 libcec_7.1.1-2.dsc f3ccbfd313c7584a178eee72913515f778809b65a19dad80f66aca9964342d53 282144 libcec_7.1.1.orig.tar.xz 1df573dcf5e42f6b06a7998c3e01f9cd3983c5fd2a49cb47111dfd86adbf75ca 34748 libcec_7.1.1-2.debian.tar.xz"
-  ],
-  "Dgit": [
-    "9f2653019826abf29fa7f178a6cda43f6338f40d debian archive/debian/7.1.1-2 https://git.dgit.debian.org/libcec"
+    "4f573959991bf8e217b3a7dc2a055fd3ce1d3c886c366a5cf42ab7a0e882eb70 1972 libcec_8.1.6+dfsg2-1.dsc add88ac71759d9ff9e982e44d1ec305a4f1d56a8554bf2f9c5045c14c00ba789 384172 libcec_8.1.6+dfsg2.orig.tar.xz a331c469d466f04b68862a236d34015d7bd75aea90cbdbf611ba801e220ccf26 87448 libcec_8.1.6+dfsg2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libc/libcec"
   ],
   "Files": [
-    "9a5ce2014983b2fbcdf74a99b8ef3e06 2396 libcec_7.1.1-2.dsc 8cab4e8bc5ef32a21724d7592ec1dd8f 282144 libcec_7.1.1.orig.tar.xz e3fb4a7062defc84c0da3a2b1209c0f9 34748 libcec_7.1.1-2.debian.tar.xz"
+    "18c678be9c444e505ca83b92909981b5 1972 libcec_8.1.6+dfsg2-1.dsc d19b3f8a3b68b4486513677b878076eb 384172 libcec_8.1.6+dfsg2.orig.tar.xz 305d210a27116783c4d8f2f997737c3a 87448 libcec_8.1.6+dfsg2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=9338f435b71b02257bef9db581f0dc15e70f7144 fp=fa765acfe244ec39f601e7c299eb1ea4d2337b88"
-  ],
-  "Git-Tag-Tagger": [
-    "Barak A. Pearlmutter \u003cbarak+git@pearlmutter.net\u003e"
   ],
   "Homepage": [
     "https://libcec.pulse-eight.com/"
@@ -39,7 +30,7 @@
     "libcec"
   ],
   "Package-List": [
-    "cec-utils deb utils optional arch=any libcec-dev deb libdevel optional arch=any libcec7 deb libs optional arch=any python3-libcec deb python optional arch=any"
+    "cec-utils deb utils optional arch=any libcec-dev deb libdevel optional arch=any libcec8 deb libs optional arch=any librust-libcec-dev deb rust optional arch=all profile=!pkg.libcec.norust profile:v1=!pkg.libcec.norust node-libcec deb javascript optional arch=any profile=!pkg.libcec.nonodejs profile:v1=!pkg.libcec.nonodejs python3-libcec deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,7 +39,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/libcec"
@@ -57,6 +48,6 @@
     "https://salsa.debian.org/debian/libcec.git"
   ],
   "Version": [
-    "7.1.1-2"
+    "8.1.6+dfsg2-1"
   ]
 }

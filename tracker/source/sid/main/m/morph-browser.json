@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "morph-browser, morph-webapp-container, qml-module-morph-web, qml-module-morph-web-doc, morph-browser-qt6, morph-webapp-container-qt6, qml6-module-morph-web"
+    "morph-browser, morph-webapp-container, qml-module-morph-web-doc, morph-browser-qt6, morph-webapp-container-qt6, qml6-module-morph-web"
   ],
   "Build-Depends": [
-    "apparmor:native, cmake, debhelper-compat (= 13), libapparmor-dev, libqt5sql5-sqlite, lsb-release, pkgconf, python3-all:any, python3-flake8 (\u003e= 2.2.2-1ubuntu4) | python3-flake8:native, qml-module-qt-labs-folderlistmodel, qml-module-qt-labs-settings, qml-module-qtquick2 (\u003e= 5.4), qml-module-qtquick-controls2, qml-module-qtquick-layouts, qml-module-qtsysteminfo, qml-module-qttest, qml-module-qtwebengine, qml-module-lomiri-components, qml-module-lomiri-test, qml-module-lomiri-components-extras, qtbase5-dev (\u003e= 5.4), qtbase5-dev-tools, qtdeclarative5-dev, qttools5-dev-tools, qtwebengine5-dev, libqt5svg5-dev, libpsl-dev, qml6-module-qt-labs-folderlistmodel, qml6-module-qt-labs-settings, qml6-module-qtquick, qml6-module-qtquick-controls, qml6-module-qtquick-layouts, qml6-module-lomiri-systeminfo, qml6-module-qttest, qml6-module-qtwebengine, qml6-module-lomiri-components, qml6-module-lomiri-components-extras, qml6-module-lomiri-downloadmanager, qml6-module-lomiri-test, qml6-module-lomiri-connectivity, qt6-base-dev, qt6-svg-dev, qt6-5compat-dev, qt6-declarative-dev, qt6-tools-dev, qt6-webengine-dev, qt6-documentation-tools | qdoc-qt6, xauth, xvfb"
+    "debhelper-compat (= 13), dh-sequence-user-session-migration, cmake, libapparmor-dev, libpsl-dev, libqt5sql5-sqlite, libqt5svg5-dev, lsb-release, pkgconf, python3-all:any, python3-flake8:native, qml6-module-lomiri-components \u003c!nocheck\u003e, qml6-module-lomiri-components-extras \u003c!nocheck\u003e, qml6-module-lomiri-connectivity \u003c!nocheck\u003e, qml6-module-lomiri-downloadmanager \u003c!nocheck\u003e, qml6-module-lomiri-systeminfo \u003c!nocheck\u003e, qml6-module-lomiri-test \u003c!nocheck\u003e, qml6-module-qt-labs-folderlistmodel \u003c!nocheck\u003e, qml6-module-qt-labs-settings \u003c!nocheck\u003e, qml6-module-qtquick \u003c!nocheck\u003e, qml6-module-qtquick-controls \u003c!nocheck\u003e, qml6-module-qtquick-layouts \u003c!nocheck\u003e, qml6-module-qttest \u003c!nocheck\u003e, qml6-module-qtwebengine \u003c!nocheck\u003e, qt6-5compat-dev, qt6-base-dev, qt6-declarative-dev, qt6-documentation-tools | qdoc-qt6, qt6-svg-dev, qt6-tools-dev, qt6-webengine-dev, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ee07e865c9a781e35a84956b7f150b9d6703bb79edefcccd987ebb951165754b 3607 morph-browser_1.99.6-1.dsc dcbca55322492601bfd92d47d93771feab10ebdae99cb4101c23b5dd2e7f5b28 1037822 morph-browser_1.99.6.orig.tar.bz2 e14721332b7ed252e9b487b9aacd847bb9df213d31da0de752530088230706ba 19356 morph-browser_1.99.6-1.debian.tar.xz"
+    "efd49da8e4a695bf9beb5d8a31431dfa315a6071b94b1688c9b9bace4710f0b4 3281 morph-browser_1.99.6-2.dsc dcbca55322492601bfd92d47d93771feab10ebdae99cb4101c23b5dd2e7f5b28 1037822 morph-browser_1.99.6.orig.tar.bz2 ca00c2fea2c401f520f171fa4c88018627c01426539b2e78c31332784ededb00 20180 morph-browser_1.99.6-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/morph-browser"
   ],
   "Files": [
-    "534b3730473bc702cd4aadb61399d899 3607 morph-browser_1.99.6-1.dsc 604249509af7d41d90aa4c59a749380a 1037822 morph-browser_1.99.6.orig.tar.bz2 09fe8cd46d7737d6c7752068979c14f4 19356 morph-browser_1.99.6-1.debian.tar.xz"
+    "5cf95c4dcad5ed21664bc4a0288d7e80 3281 morph-browser_1.99.6-2.dsc 604249509af7d41d90aa4c59a749380a 1037822 morph-browser_1.99.6.orig.tar.bz2 d918dd6c5dcf7a9bf99f4c851e3b5057 20180 morph-browser_1.99.6-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "morph-browser"
   ],
   "Package-List": [
-    "morph-browser deb x11 optional arch=any morph-browser-qt6 deb x11 optional arch=any morph-webapp-container deb x11 optional arch=any morph-webapp-container-qt6 deb x11 optional arch=any qml-module-morph-web deb x11 optional arch=any qml-module-morph-web-doc deb doc optional arch=all qml6-module-morph-web deb x11 optional arch=any"
+    "morph-browser deb x11 optional arch=any morph-browser-qt6 deb oldlibs optional arch=all morph-webapp-container deb x11 optional arch=any morph-webapp-container-qt6 deb oldlibs optional arch=all qml-module-morph-web-doc deb doc optional arch=all qml6-module-morph-web deb x11 optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/ubports-team/morph-browser.git"
   ],
   "Version": [
-    "1.99.6-1"
+    "1.99.6-2"
   ]
 }
