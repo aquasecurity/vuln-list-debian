@@ -6,19 +6,25 @@
     "librust-blake2-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e, librust-digest-0.10+mac-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e, librust-digest-0.10+std-dev (\u003e= 0.10.3-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.11+alloc-dev \u003c!nocheck\u003e, librust-digest-0.11+default-dev \u003c!nocheck\u003e, librust-digest-0.11+mac-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c579de741512bd9d93336c64198379b8b8e8af2de29082543683c63da20db32e 2397 rust-blake2_0.10.6-3.dsc 46502ad458c9a52b69d4d4d32775c788b7a1b85e8bc9d482d92250fc0e3f8efe 47234 rust-blake2_0.10.6.orig.tar.gz aced6452699de96342234b97674bf97e1dcd598094149bacdecbba5d75eb6e9e 3272 rust-blake2_0.10.6-3.debian.tar.xz"
+    "8c77c62f585740c35212d58a5083420895602caa624ca25c1469d459577fb47d 2429 rust-blake2_0.11.0-1.dsc 5b5d4d889834ee8ecfc0f8426ad30faf7cdcb10f741a8e6d7224d95325479f6f 46491 rust-blake2_0.11.0.orig.tar.gz 6ccf54f6550eacd252f6f098f70e20c317b38e474f95bc7703c2f45ee1e1fab3 3124 rust-blake2_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-blake2"
   ],
   "Files": [
-    "74aa334ae6cf610e69ba78b7fdfa39cd 2397 rust-blake2_0.10.6-3.dsc 87ba9457ae5c2e77d0cf5f893ed0bf1e 47234 rust-blake2_0.10.6.orig.tar.gz 64fe0f900f9f5f348e58edbe4f31e02d 3272 rust-blake2_0.10.6-3.debian.tar.xz"
+    "532c7fa3bee0b89c5aa2dc0b5a4fd633 2429 rust-blake2_0.11.0-1.dsc 1c187aebc2922d2591bc3e0e6b650a89 46491 rust-blake2_0.11.0.orig.tar.gz c1562aa45d5c8a59a585ce26ee415ee5 3124 rust-blake2_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/hashes"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-digest-0.10+default-dev, librust-digest-0.10+dev-dev, librust-hex-literal-0.4+default-dev"
+    "dh-cargo, librust-digest-0.11+default-dev, librust-digest-0.11+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Antonio Russo \u003caerusso@aerusso.net\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/blake2]"
   ],
   "Version": [
-    "0.10.6-3"
+    "0.11.0-1"
   ]
 }
