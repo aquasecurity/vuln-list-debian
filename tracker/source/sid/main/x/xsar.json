@@ -6,10 +6,10 @@
     "python3-xsar"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-affine, python3-aiohttp, python3-all, python3-cartopy, python3-dask, python3-distributed, python3-fiona, python3-fsspec, python3-geopandas, python3-lxml, python3-mapraster, python3-numpy, python3-psutil, python3-pyproj, python3-rasterio, python3-rioxarray, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-shapely, python3-xarray (\u003e= 2024.10.0), python3-xarray-safe-rcm, python3-xarray-safe-s1, python3-xradarsat2, python3-yaml"
+    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-affine, python3-aiohttp, python3-all, python3-dask, python3-distributed, python3-fiona, python3-fsspec, python3-geopandas, python3-lxml, python3-mapraster, python3-numpy, python3-psutil, python3-pyproj, python3-rasterio, python3-rioxarray, python3-scipy, python3-setuptools, python3-setuptools-scm, python3-shapely, python3-xarray (\u003e= 2024.10.0), python3-xarray-safe-rcm, python3-xarray-safe-s1, python3-xradarsat2, python3-yaml"
   ],
   "Checksums-Sha256": [
-    "5ec4ffad018ff52c5845a3a0bad6ffc3fa592aedc5a1fad7e57555f768061b7b 3462 xsar_2026.02.10-1.dsc 59794413f01421777051c680afc1d9a8f385edcf4fe26a4e871099742d3253be 1387012 xsar_2026.02.10.orig.tar.gz cb693f10398d8e75ee3638c9f1337a26906c14b4173b39f67295c85731aeb9b3 4076 xsar_2026.02.10-1.debian.tar.xz"
+    "8b4c706dfdba0dc601c135a568a5cacf0fb37fbb326ae656d606c4b37c1ee4d5 3445 xsar_2026.08.31-1.dsc b15a3bd7758443b53da28bc7c9972a3149f52a4acc9543aee19f4388ebaf2423 1387491 xsar_2026.08.31.orig.tar.gz 8d73b8416659d06f522b4d54c3999ee71748dbaffdc9f4e862c588c4c855b218 4256 xsar_2026.08.31-1.debian.tar.xz"
   ],
   "Description": [
     "Python xarray reader to use Level-1 GRD Synthetic Aperture Radar products XSAR is a distributed Level 1 Synthetic Aperture Radar (SAR) file reader designed to write efficient distributed processing algorithms with xarray and dask. . It currently handles Level-1 Sentinel-1 and Radarsat-2 data in SAFE format, as found on scihub or PEPS. . XSAR rely on `xarray.open_rasterio`, rasterio and GDAL to read digital_number from SAFE product to return an `xarray.Dataset` object with dask chunks. LUTs are decoded from XML files and applied to digital_number, following official ESA thermal de-noising document and ESA Sentinel-1 Product Specification. . End user can directly use for example sigma0 variable, or the de-noised sigma0 computed from digital_number and by applying relevant LUTs. . Since XSAR rely on dask, it have a small memory footprint: variables are read from file and computed only if needed."
@@ -18,7 +18,7 @@
     "pool/main/x/xsar"
   ],
   "Files": [
-    "4d6f53257b0c5c60b3b68a3e735e5540 3462 xsar_2026.02.10-1.dsc 6da2930081d86c84e5a6a512423c4ec0 1387012 xsar_2026.02.10.orig.tar.gz 1d5833793f1030efeb6fe3f9106b986a 4076 xsar_2026.02.10-1.debian.tar.xz"
+    "e7af1b85c1db3d7f4ae8117c1401689d 3445 xsar_2026.08.31-1.dsc 4cbf337964a61a05a1789c1a9785f95f 1387491 xsar_2026.08.31.orig.tar.gz 12ea2f2ebbbacdecd7308c25faab6420 4256 xsar_2026.08.31-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian-gis-team/xsar.git"
   ],
   "Version": [
-    "2026.02.10-1"
+    "2026.08.31-1"
   ]
 }
