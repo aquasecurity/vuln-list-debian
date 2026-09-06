@@ -6,19 +6,16 @@
     "python3-asyncssh, python-asyncssh-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, openssh-client, openssl, openssl-provider-legacy | openssl (\u003c\u003c 3.3.1-5~), pybuild-plugin-pyproject, python3-all, python3-bcrypt (\u003e= 3.1.3) \u003c!nocheck\u003e, python3-cryptography (\u003e= 39.0), python3-fido2 (\u003e= 2) \u003c!nocheck\u003e, python3-gssapi \u003c!nocheck\u003e, python3-ifaddr \u003c!nocheck\u003e, python3-openssl \u003c!nocheck\u003e, python3-pkcs11 \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx (\u003e= 1.0.7+dfsg-1~), python3-typing-extensions \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-python, openssh-client, openssl, openssl-provider-legacy | openssl (\u003c\u003c 3.3.1-5~), pybuild-plugin-pyproject, python3-all, python3-aiofiles \u003c!nocheck\u003e, python3-bcrypt (\u003e= 3.1.3) \u003c!nocheck\u003e, python3-cryptography (\u003e= 48.0.1), python3-fido2 (\u003e= 2) \u003c!nocheck\u003e, python3-gssapi \u003c!nocheck\u003e, python3-ifaddr \u003c!nocheck\u003e, python3-openssl \u003c!nocheck\u003e, python3-pkcs11 \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx (\u003e= 1.0.7+dfsg-1~), python3-typing-extensions \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "775a266728daa327b28ebf321fd89174bb4c1bee7077f7d9a52966482265f589 2911 python-asyncssh_2.23.0-1.dsc cbb228ef6328219a3435f139cf13178fc0691dbaa08fc1151713767c0801a85d 536524 python-asyncssh_2.23.0.orig.tar.gz c969d8f6339af2959c944c5b2a539e6918f619629e44c388685d204e02d85d31 8908 python-asyncssh_2.23.0-1.debian.tar.xz"
-  ],
-  "Dgit": [
-    "958a02378ad6aba294a6a60c35711b8319100014 debian archive/debian/2.23.0-1 https://git.dgit.debian.org/python-asyncssh"
+    "8c30b2c76e10670ea59560256fae49b374ee005b24279ea6b8cb658d7cddd5f4 2787 python-asyncssh_2.24.0-1.dsc 38ad660ac860a1333ae86123a51d7aa6ab1ccc55d0cbaa7afaa51cce589d333a 544154 python-asyncssh_2.24.0.orig.tar.gz d89332caadc8bfa9cc4aa59042bb57750167b780c9dd7858e4bdb572905ba36b 9316 python-asyncssh_2.24.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-asyncssh"
   ],
   "Files": [
-    "aa828faba90c35b66f303d13e814685a 2911 python-asyncssh_2.23.0-1.dsc ff6dc2bc26491c9fef1b2de9755e5888 536524 python-asyncssh_2.23.0.orig.tar.gz 95c4a80bcfd53f71b284291a37476138 8908 python-asyncssh_2.23.0-1.debian.tar.xz"
+    "14fa3bb6a741931e6c8f4b64096614e3 2787 python-asyncssh_2.24.0-1.dsc 75ad4c14295fe227292f0f6c53c0b468 544154 python-asyncssh_2.24.0.orig.tar.gz eb20268b81a1ec832ecc9181ef3f1a6f 9316 python-asyncssh_2.24.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "python-asyncssh"
   ],
   "Package-List": [
-    "python-asyncssh-doc deb doc optional arch=all python3-asyncssh deb python optional arch=all"
+    "python-asyncssh-doc deb doc unknown arch=all python3-asyncssh deb python unknown arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "openssh-client, openssl, openssl-provider-legacy, python3-all, python3-bcrypt, python3-cryptography, python3-fido2, python3-gssapi, python3-ifaddr, python3-openssl, python3-pkcs11, python3-pytest, python3-typing-extensions"
+    "openssh-client, openssl, openssl-provider-legacy, python3-aiofiles, python3-all, python3-bcrypt, python3-fido2, python3-gssapi, python3-ifaddr, python3-openssl, python3-pkcs11, python3-pytest"
   ],
   "Uploaders": [
     "Vincent Bernat \u003cbernat@debian.org\u003e"
@@ -60,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-asyncssh.git"
   ],
   "Version": [
-    "2.23.0-1"
+    "2.24.0-1"
   ]
 }
