@@ -9,16 +9,16 @@
     "bison, debhelper-compat (= 12), dh-apparmor, dh-exec, libcap2-dev [linux-any], libcmocka-dev, libedit-dev, libfstrm-dev, libidn2-dev, libjemalloc-dev, libjson-c-dev, libkrb5-dev, liblmdb-dev, libmaxminddb-dev (\u003e= 1.3.0), libnghttp2-dev, libprotobuf-c-dev, libssl-dev, libsystemd-dev [linux-any], libtool, liburcu-dev, libuv1-dev, libxml2-dev, pkgconf, protobuf-c-compiler, zlib1g-dev"
   ],
   "Build-Depends-Indep": [
-    "fonts-freefont-otf, latexmk, python3-sphinx, python3-sphinx-rtd-theme, texlive-fonts-extra, texlive-latex-recommended, texlive-xetex, xindy"
+    "fonts-freefont-otf \u003c!nodoc\u003e, latexmk \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, texlive-fonts-extra \u003c!nodoc\u003e, texlive-latex-recommended \u003c!nodoc\u003e, texlive-xetex \u003c!nodoc\u003e, xindy \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "31f5b08f90c1998fed672badc352c04b2fc6428c72f90f503716257e7938457c 3154 bind9_9.20.27-1.dsc 145ab7a50b33a06d9d488b5e668c887e754f42acf8954e2b5dc7e238b080e4a0 5932248 bind9_9.20.27.orig.tar.xz bcf8f9c80786e729f53fc766095cdc786d50970dbe73e44c19bdfa4e4c2a743c 870 bind9_9.20.27.orig.tar.xz.asc 4931eab138de638f35f4602cf7180fccec80a08401f8f290c211495b2f25872e 62576 bind9_9.20.27-1.debian.tar.xz"
+    "66382129185d60dfb3d29a281d278d0a5855d7e87ad97f280634fb4bdad9a660 3154 bind9_9.20.27-2.dsc 145ab7a50b33a06d9d488b5e668c887e754f42acf8954e2b5dc7e238b080e4a0 5932248 bind9_9.20.27.orig.tar.xz bcf8f9c80786e729f53fc766095cdc786d50970dbe73e44c19bdfa4e4c2a743c 870 bind9_9.20.27.orig.tar.xz.asc 4a6d9205f51b9202f09f529feed8d8ed90602b108222b418f122af542c7f1b6c 62644 bind9_9.20.27-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/bind9"
   ],
   "Files": [
-    "2dace5b551fbf2679711633fc1f0fba6 3154 bind9_9.20.27-1.dsc 0a05c630261429e9da8b012314507b05 5932248 bind9_9.20.27.orig.tar.xz 447b6cd1760975dead5adf0a7e287d3f 870 bind9_9.20.27.orig.tar.xz.asc daae2bee7ee8bc421a8eacbfc273a5c7 62576 bind9_9.20.27-1.debian.tar.xz"
+    "a5de4849f5be558e141597c46842af8c 3154 bind9_9.20.27-2.dsc 0a05c630261429e9da8b012314507b05 5932248 bind9_9.20.27.orig.tar.xz 447b6cd1760975dead5adf0a7e287d3f 870 bind9_9.20.27.orig.tar.xz.asc 7853ed143f9f18ee2966f3db72d29eaa 62644 bind9_9.20.27-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "bind9"
   ],
   "Package-List": [
-    "bind9 deb net optional arch=any bind9-dev deb devel optional arch=any bind9-dnsutils deb net standard arch=any bind9-doc deb doc optional arch=all bind9-host deb net standard arch=any bind9-libs deb libs standard arch=any bind9-utils deb net optional arch=any"
+    "bind9 deb net optional arch=any bind9-dev deb devel optional arch=any bind9-dnsutils deb net standard arch=any bind9-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc bind9-host deb net standard arch=any bind9-libs deb libs optional arch=any bind9-utils deb net optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/dns-team/bind9.git -b debian/9.20"
   ],
   "Version": [
-    "1:9.20.27-1"
+    "1:9.20.27-2"
   ]
 }
