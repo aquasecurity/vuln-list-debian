@@ -6,16 +6,19 @@
     "librust-num-bigint-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.46-~~) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.46-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.18-~~) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.18-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-integer-0.1+i128-dev (\u003e= 0.1.46) \u003c!nocheck\u003e, librust-num-integer-0.1+std-dev (\u003e= 0.1.46) \u003c!nocheck\u003e, librust-num-traits-0.2+i128-dev (\u003e= 0.2.18) \u003c!nocheck\u003e, librust-num-traits-0.2+std-dev (\u003e= 0.2.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6f258568912f60dd9ddc82a9a1db56659c9d53af8af6bf779670c84b270ebba4 2419 rust-num-bigint_0.4.6-1.dsc a5e44f723f1133c9deac646763579fdb3ac745e418f2a7af9cd0c431da1f20b9 102801 rust-num-bigint_0.4.6.orig.tar.gz 07679d2cd1a0fbf73e3d6e77dabd49f4733a0c3fc72c654ab7801451c901ed94 3124 rust-num-bigint_0.4.6-1.debian.tar.xz"
+    "d929fec36912eb055638cbd630a55dc6b5e730d554e63c87367f32c2301bfd17 2456 rust-num-bigint_0.5.1-1.dsc 93e7820bc0a80a0238e650327316f929ba18d5be054b647490a3a6a339f3e7c0 111279 rust-num-bigint_0.5.1.orig.tar.gz b4e92f51fce283e2aee8c25ca1e5e5ddd3a314bdb126f60265a4e7d2cecb4108 3524 rust-num-bigint_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-num-bigint"
   ],
   "Files": [
-    "23fc2147f5a50bae4d96ade107366c3a 2419 rust-num-bigint_0.4.6-1.dsc 9ad9785decbdb61128f4d05833d5e959 102801 rust-num-bigint_0.4.6.orig.tar.gz 01d075bf72ac62a5433308e6489d17f5 3124 rust-num-bigint_0.4.6-1.debian.tar.xz"
+    "396983dc4fcc5e4aa26d398bc0a7191c 2456 rust-num-bigint_0.5.1-1.dsc 6e845e847288ec998b82407c608cf82c 111279 rust-num-bigint_0.5.1.orig.tar.gz d515ccaa5d16ecc42ff462382e6cbdc0 3524 rust-num-bigint_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/num-bigint]"
   ],
   "Version": [
-    "0.4.6-1"
+    "0.5.1-1"
   ]
 }

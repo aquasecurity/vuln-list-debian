@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libtrantor1, libtrantor-dev"
+    "libtrantor1, libtrantor-dev, libtrantor-doc"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dh-cmake, dh-cmake-compat (= 1)"
+    "debhelper-compat (= 13), dh-cmake, dh-cmake-compat (= 1), cmake, libc-ares-dev, libssl-dev"
+  ],
+  "Build-Depends-Indep": [
+    "dia, doxygen, graphviz"
   ],
   "Checksums-Sha256": [
-    "4d517be8032a99a6537d5d73654567b0e729a2203fa06c914a3615bcade01765 1974 trantor_1.5.26+ds-2.dsc 797eea62a6a011f6d7e92936027b76d337db94c0d45511b563f693a66c830793 111088 trantor_1.5.26+ds.orig.tar.xz 4358ac1e14933cceb227c13009209a93ca508fc146e29bc521861d80e657c460 2800 trantor_1.5.26+ds-2.debian.tar.xz"
+    "b0d13332f6f75d2c2b113d76c78df79663f6fdef4224b02c62e59d68c0bfaf31 2127 trantor_1.5.28+ds-2.dsc e71bd9026f8b3e8c600a624c7c0a2d1d95430fea690515b0449b0dccc99b1300 110608 trantor_1.5.28+ds.orig.tar.xz 141a6032870873a07aa613036c5d6ebfb05d6883a1f3a6f36a1c8347d0ce0e55 3472 trantor_1.5.28+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/trantor"
   ],
   "Files": [
-    "08709de11eade578ed57262844f9ce34 1974 trantor_1.5.26+ds-2.dsc 57ac93993f5d0b61c61535aff6d7ac8f 111088 trantor_1.5.26+ds.orig.tar.xz 893320905058ee9b20021dd6da238285 2800 trantor_1.5.26+ds-2.debian.tar.xz"
+    "48c1599e3d06530735deba43e7346dc4 2127 trantor_1.5.28+ds-2.dsc ae4a9472fdf420f04256008d89100689 110608 trantor_1.5.28+ds.orig.tar.xz 84eeed60f5c5e3a00979e9d85891483b 3472 trantor_1.5.28+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "trantor"
   ],
   "Package-List": [
-    "libtrantor-dev deb libdevel optional arch=any libtrantor1 deb libs optional arch=any"
+    "libtrantor-dev deb libdevel optional arch=any libtrantor-doc deb doc optional arch=all libtrantor1 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/trantor"
@@ -48,6 +51,6 @@
     "https://salsa.debian.org/debian/trantor.git"
   ],
   "Version": [
-    "1.5.26+ds-2"
+    "1.5.28+ds-2"
   ]
 }
