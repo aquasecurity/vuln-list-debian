@@ -6,22 +6,28 @@
     "python3-cachelib, python-cachelib-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, python3-setuptools, python3-all, python3-boto3 \u003c!nocheck\u003e, memcached \u003c!nocheck\u003e, python3-pylibmc \u003c!nocheck\u003e, python3-pymongo \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-xprocess \u003c!nocheck\u003e, python3-redis \u003c!nocheck\u003e, redis-server \u003c!nocheck\u003e, python3-pallets-sphinx-themes \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib-log-cabinet \u003c!nodoc\u003e, python3-sphinxcontrib.applehelp \u003c!nodoc\u003e, python3-sphinxcontrib.devhelp \u003c!nodoc\u003e, python3-sphinxcontrib.htmlhelp \u003c!nodoc\u003e, python3-sphinxcontrib.jsmath \u003c!nodoc\u003e, python3-sphinxcontrib.qthelp \u003c!nodoc\u003e, python3-sphinxcontrib.serializinghtml \u003c!nodoc\u003e, python3-sphinx-issues \u003c!nodoc\u003e, python3-sphinx-tabs \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-python, flit, pybuild-plugin-pyproject, python3-all, python3-boto3 \u003c!nocheck\u003e, memcached \u003c!nocheck\u003e, python3-pylibmc \u003c!nocheck\u003e, python3-pymongo \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-xprocess \u003c!nocheck\u003e, python3-redis \u003c!nocheck\u003e, python3-valkey \u003c!nocheck\u003e, redis-server \u003c!nocheck\u003e, valkey-server \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, python3-pallets-sphinx-themes \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib-log-cabinet \u003c!nodoc\u003e, python3-sphinxcontrib.applehelp \u003c!nodoc\u003e, python3-sphinxcontrib.devhelp \u003c!nodoc\u003e, python3-sphinxcontrib.htmlhelp \u003c!nodoc\u003e, python3-sphinxcontrib.jsmath \u003c!nodoc\u003e, python3-sphinxcontrib.qthelp \u003c!nodoc\u003e, python3-sphinxcontrib.serializinghtml \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinx-tabs \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "a5f8d0ff6717d12999d1d80890db597d95369ef1304faae93d816bbb41e62995 2954 cachelib_0.13.0-2.dsc b981bdb6ed477ae037f88a9fea90bf14e6137c9b2c54a5d56b9783404a9f9b4c 31116 cachelib_0.13.0.orig.tar.gz 77a251beb3523b5ff6cf6a05ac2fa3fc3acfc3a0e6b6b5a51c21b4b617aa6e3f 4528 cachelib_0.13.0-2.debian.tar.xz"
+    "bbd795a392265f75dbdb978c71c7841d7ff76badd58295dd37338d03365077ff 3250 cachelib_0.17.0-1.dsc d60eccca859aa6941671ac553a52223bae4ec37f716fb7a981c9c0b19c0e833e 141470 cachelib_0.17.0.orig.tar.gz aa913052ab633459381f27154c74e569b741d20c665d3a5e8e2c9b82cd1be21b 5100 cachelib_0.17.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "7ec0217385b5886efc37a888dd79b2a1cd42a23d debian archive/debian/0.13.0-2 https://git.dgit.debian.org/cachelib"
+    "b2fe232ad0c3b445628535e36d7a88fcd406e3ce debian archive/debian/0.17.0-1 https://git.dgit.debian.org/cachelib"
   ],
   "Directory": [
     "pool/main/c/cachelib"
   ],
   "Files": [
-    "b829d222ac7a83d7c8a9b16b9b6588ae 2954 cachelib_0.13.0-2.dsc 36c8644c7390a1f853ce44e67cd279dd 31116 cachelib_0.13.0.orig.tar.gz 38c9c58e7fae63e37aaa422806ceda3a 4528 cachelib_0.13.0-2.debian.tar.xz"
+    "28bf90499b0719323e067d0fb63dbd86 3250 cachelib_0.17.0-1.dsc 5bb4ef3f0c929414370ad89a421f9bc6 141470 cachelib_0.17.0.orig.tar.gz f43637913e7bad2b94e1cc991de1e12e 5100 cachelib_0.17.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=22d353e84901f8614fbe83b60c8b53535b02b300 fp=ac0a4ff12611b6fccf01c111393587d97d86500b"
+  ],
+  "Git-Tag-Tagger": [
+    "Colin Watson \u003ccjwatson@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/pallets/cachelib/"
@@ -42,13 +48,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "memcached, python3-all, python3-pylibmc, python3-pytest, python3-pytest-xprocess, python3-redis, redis-server"
+    "memcached, python3-all, python3-pylibmc, python3-pymongo, python3-pytest, python3-pytest-xprocess, python3-redis, python3-valkey, redis-server, valkey-server"
   ],
   "Uploaders": [
     "Joseph Nahmias \u003cjello@debian.org\u003e"
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/cachelib.git"
   ],
   "Version": [
-    "0.13.0-2"
+    "0.17.0-1"
   ]
 }
