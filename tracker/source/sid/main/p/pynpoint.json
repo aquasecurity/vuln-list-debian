@@ -6,16 +6,16 @@
     "python3-pynpoint"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-all:any, python3-astropy, python3-emcee, python3-ephem, python3-h5py, python3-opencv, python3-photutils, python3-setuptools, python3-skimage, python3-sklearn, python3-statsmodels, python3-typeguard, python3-pip"
+    "debhelper-compat (= 14), dh-python, dh-sequence-python3, pybuild-plugin-pyproject, python3-all:any, python3-astropy, python3-emcee, python3-ephem, python3-h5py, python3-numba, python3-opencv, python3-photutils, python3-pooch, python3-pytest, python3-pywt, python3-setuptools, python3-setuptools-scm, python3-skimage, python3-sklearn, python3-statsmodels, python3-typeguard, python3-pip"
   ],
   "Checksums-Sha256": [
-    "34314eeb11b9275b6bc9c9105d41da5dc51ef313b3b7da3902550d4dd753094b 2215 pynpoint_0.11.1-3.dsc 78d9a9d931f03830775253bd1f517a514d4fa910f65355dd959559156209ceb0 915484 pynpoint_0.11.1.orig.tar.gz 55690ad8100a18d5299000a2ddd94b1418f4cd82d27c916174df01c3c68b5252 3920 pynpoint_0.11.1-3.debian.tar.xz"
+    "280a6b499857bedb5c4fac91f19aba8e2f7729b113147568010f096b5e8840c3 2435 pynpoint_0.11.1-4.dsc 78d9a9d931f03830775253bd1f517a514d4fa910f65355dd959559156209ceb0 915484 pynpoint_0.11.1.orig.tar.gz 55b8a37500438a27cf3f2bac48c4c8fb70491e7be452d8faa8fc1fdaab5b2e8a 3996 pynpoint_0.11.1-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pynpoint"
   ],
   "Files": [
-    "c1caebe18aee6096d13778475571151c 2215 pynpoint_0.11.1-3.dsc a75092e4a48f7935b9c649d3322cb87c 915484 pynpoint_0.11.1.orig.tar.gz 7442c58f4e9099afe76955db4bb1c573 3920 pynpoint_0.11.1-3.debian.tar.xz"
+    "c993acc6174f7da479f85bddb0e81d96 2435 pynpoint_0.11.1-4.dsc a75092e4a48f7935b9c649d3322cb87c 915484 pynpoint_0.11.1.orig.tar.gz cc7a3bed6291a3713e16cfb06710fc11 3996 pynpoint_0.11.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,15 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3, python3-numba, python3-pooch, python3-pytest, python3-pywt"
+  ],
+  "Uploaders": [
+    "Ole Streicher \u003colebole@debian.org\u003e"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian-astro-team/pynpoint"
   ],
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/debian-astro-team/pynpoint.git"
   ],
   "Version": [
-    "0.11.1-3"
+    "0.11.1-4"
   ]
 }
