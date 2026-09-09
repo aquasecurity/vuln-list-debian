@@ -6,16 +6,19 @@
     "libldm-common0t64, libldm-common-dev, libldm-common-qt6-0, libldm-common-qt6-dev, libldm-priv-common-qt6-0, libldm-priv-common0t64, liblomiri-download-manager-client-dev, liblomiri-download-manager-client-doc, liblomiri-download-manager-client-qt6-0, liblomiri-download-manager-client-qt6-dev, liblomiri-download-manager-client0t64, liblomiri-download-manager-common-dev, liblomiri-download-manager-common-qt6-0, liblomiri-download-manager-common-qt6-dev, liblomiri-download-manager-common0t64, liblomiri-upload-manager-common-dev, liblomiri-upload-manager-common-qt6-0, liblomiri-upload-manager-common-qt6-dev, liblomiri-upload-manager-common0t64, lomiri-download-manager, lomiri-download-manager-common, lomiri-upload-manager, qml-module-lomiri-downloadmanager, qml-module-lomiri-downloadmanager-doc, qml6-module-lomiri-downloadmanager"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-apparmor, dpkg-dev (\u003e= 1.22.5), cmake, cmake-extras, dbus-test-runner \u003c!nocheck\u003e, doxygen, googletest \u003c!nocheck\u003e, graphviz, libapparmor-dev, libboost-log-dev, libboost-program-options-dev, libdbus-1-dev, libgoogle-glog-dev, libgtest-dev \u003c!nocheck\u003e, liblomiri-api-dev, libqt5sql5-sqlite, libqt6sql6-sqlite, network-manager, pkgconf, python3, qml-module-qttest \u003c!nocheck\u003e, qml6-module-qttest \u003c!nocheck\u003e, qt6-base-dev, qt6-base-dev-tools, qt6-declarative-dev, qt6-scxml-dev, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools, qttools5-dev-tools, rdfind, symlinks, systemd-dev, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-apparmor, dh-sequence-user-session-migration, dpkg-dev (\u003e= 1.22.5), cmake, cmake-extras, dbus-test-runner \u003c!nocheck\u003e, googletest \u003c!nocheck\u003e, libapparmor-dev, libboost-log-dev, libboost-program-options-dev, libdbus-1-dev, libgoogle-glog-dev, libgtest-dev \u003c!nocheck\u003e, liblomiri-api-dev, libqt5sql5-sqlite, libqt6sql6-sqlite, network-manager, pkgconf, python3, qml-module-qttest \u003c!nocheck\u003e, qml6-module-qttest \u003c!nocheck\u003e, qt6-base-dev, qt6-base-dev-tools, qt6-declarative-dev, qt6-scxml-dev, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools, qttools5-dev-tools, systemd-dev, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+  ],
+  "Build-Depends-Indep": [
+    "doxygen \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, rdfind \u003c!nodoc\u003e, symlinks \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "4cd5c515e2969b36e53c5a33dfc435299059bbfa2946ad2d1b3c1edcfb64204b 5070 lomiri-download-manager_0.3.2-1.dsc 57a825b0ca26e1e3ad481a4a7296ef34f1d0b57db8719f9cbdbedd2ecc58a01d 264091 lomiri-download-manager_0.3.2.orig.tar.bz2 52b70a8ca8a81f1d956980d5c05d5744c36fe648de500273650c31ed0bf2fd6f 21116 lomiri-download-manager_0.3.2-1.debian.tar.xz"
+    "8409d55e68eb37988f52c53a438fdb99b9bd501954e22d79d5a491df4796a9b6 5228 lomiri-download-manager_0.3.2-2.dsc 57a825b0ca26e1e3ad481a4a7296ef34f1d0b57db8719f9cbdbedd2ecc58a01d 264091 lomiri-download-manager_0.3.2.orig.tar.bz2 eb2da2979bcdbf8f4cf924d3790198e3bb22dc5fd6ceb7511986f7dbe5162d82 21636 lomiri-download-manager_0.3.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lomiri-download-manager"
   ],
   "Files": [
-    "3600216ffbb2af3ac55278ce890a9367 5070 lomiri-download-manager_0.3.2-1.dsc 666290454de0579cc40d993528a518d1 264091 lomiri-download-manager_0.3.2.orig.tar.bz2 dcdf6314c9924deca90117ca3315e297 21116 lomiri-download-manager_0.3.2-1.debian.tar.xz"
+    "44201413ac000fad1256bdf79afafb26 5228 lomiri-download-manager_0.3.2-2.dsc 666290454de0579cc40d993528a518d1 264091 lomiri-download-manager_0.3.2.orig.tar.bz2 cf18932dcbf6bc8558582d31a5f9b852 21636 lomiri-download-manager_0.3.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "lomiri-download-manager"
   ],
   "Package-List": [
-    "libldm-common-dev deb libdevel optional arch=any libldm-common-qt6-0 deb libs optional arch=any libldm-common-qt6-dev deb libdevel optional arch=any libldm-common0t64 deb libs optional arch=any libldm-priv-common-qt6-0 deb libs optional arch=any libldm-priv-common0t64 deb libs optional arch=any liblomiri-download-manager-client-dev deb libdevel optional arch=any liblomiri-download-manager-client-doc deb doc optional arch=all liblomiri-download-manager-client-qt6-0 deb libs optional arch=any liblomiri-download-manager-client-qt6-dev deb libdevel optional arch=any liblomiri-download-manager-client0t64 deb libs optional arch=any liblomiri-download-manager-common-dev deb libdevel optional arch=any liblomiri-download-manager-common-qt6-0 deb libs optional arch=any liblomiri-download-manager-common-qt6-dev deb libdevel optional arch=any liblomiri-download-manager-common0t64 deb libs optional arch=any liblomiri-upload-manager-common-dev deb libdevel optional arch=any liblomiri-upload-manager-common-qt6-0 deb libs optional arch=any liblomiri-upload-manager-common-qt6-dev deb libdevel optional arch=any liblomiri-upload-manager-common0t64 deb libs optional arch=any lomiri-download-manager deb net optional arch=any lomiri-download-manager-common deb net optional arch=all lomiri-upload-manager deb net optional arch=any qml-module-lomiri-downloadmanager deb net optional arch=any qml-module-lomiri-downloadmanager-doc deb doc optional arch=all qml6-module-lomiri-downloadmanager deb net optional arch=any"
+    "libldm-common-dev deb libdevel optional arch=any libldm-common-qt6-0 deb libs optional arch=any libldm-common-qt6-dev deb libdevel optional arch=any libldm-common0t64 deb libs optional arch=any libldm-priv-common-qt6-0 deb libs optional arch=any libldm-priv-common0t64 deb libs optional arch=any liblomiri-download-manager-client-dev deb libdevel optional arch=any liblomiri-download-manager-client-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc liblomiri-download-manager-client-qt6-0 deb libs optional arch=any liblomiri-download-manager-client-qt6-dev deb libdevel optional arch=any liblomiri-download-manager-client0t64 deb libs optional arch=any liblomiri-download-manager-common-dev deb libdevel optional arch=any liblomiri-download-manager-common-qt6-0 deb libs optional arch=any liblomiri-download-manager-common-qt6-dev deb libdevel optional arch=any liblomiri-download-manager-common0t64 deb libs optional arch=any liblomiri-upload-manager-common-dev deb libdevel optional arch=any liblomiri-upload-manager-common-qt6-0 deb libs optional arch=any liblomiri-upload-manager-common-qt6-dev deb libdevel optional arch=any liblomiri-upload-manager-common0t64 deb libs optional arch=any lomiri-download-manager deb net optional arch=any lomiri-download-manager-common deb net optional arch=all lomiri-upload-manager deb net optional arch=any qml-module-lomiri-downloadmanager deb net optional arch=any qml-module-lomiri-downloadmanager-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc qml6-module-lomiri-downloadmanager deb net optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/ubports-team/lomiri-download-manager.git"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.2-2"
   ]
 }
