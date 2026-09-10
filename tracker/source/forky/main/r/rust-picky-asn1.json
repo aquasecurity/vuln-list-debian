@@ -6,19 +6,25 @@
     "librust-picky-asn1-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-oid-0.2+serde-support-dev (\u003e= 0.2.1-~~) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.152-~~) \u003c!nocheck\u003e, librust-serde-bytes-0.11+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.61) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-oid-0.2+serde-support-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-bytes-0.11+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "109c1cb252a471daadde126325bc5fa77f03291caa8fbe276f52ba8da1357111 2297 rust-picky-asn1_0.7.2-1.dsc 6f338f1fd4f3e13e75e986ca29f2a3c62528d88d3cbadf4afdcefb6b087f2d32 15110 rust-picky-asn1_0.7.2.orig.tar.gz 8c9adfacd73d83023665e9f453f63883551da62b6ab5b7fd5fe0a12ced925c86 4960 rust-picky-asn1_0.7.2-1.debian.tar.xz"
+    "981630e0f3f57c1e18896be1cf131c476a79903edf0d140b8c616928f04af9e9 2366 rust-picky-asn1_0.10.1-1.dsc 2ff038f9360b934342fb3c0a1d6e82c438a2624b51c3c6e3e6d7cf252b6f3ee3 20234 rust-picky-asn1_0.10.1.orig.tar.gz a3f761769ec00e568e62ca7b30c704640b2bc9e73bf33b7217705c34f1176d2e 5104 rust-picky-asn1_0.10.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-picky-asn1"
   ],
   "Files": [
-    "d1813d9a3d0cdace73b21d0e9edbb1d7 2297 rust-picky-asn1_0.7.2-1.dsc 604d5c743920c2aa5237ce3c37cb9090 15110 rust-picky-asn1_0.7.2.orig.tar.gz ab7088fc11ab97ef38b35dec97a4792d 4960 rust-picky-asn1_0.7.2-1.debian.tar.xz"
+    "9b1ad0573c1e622accc543c9b3549c52 2366 rust-picky-asn1_0.10.1-1.dsc 0c64733c0916566223ac44912dc5488f 20234 rust-picky-asn1_0.10.1.orig.tar.gz 05ffa45c0a9ad4454d19319974898c1b 5104 rust-picky-asn1_0.10.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Devolutions/picky-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/picky-asn1]"
   ],
   "Version": [
-    "0.7.2-1"
+    "0.10.1-1"
   ]
 }

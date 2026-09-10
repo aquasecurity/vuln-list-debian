@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.82) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arc-swap-1+default-dev (\u003e= 1.9.0) \u003c!nocheck\u003e, librust-gix-features-0.48+crc32-dev \u003c!nocheck\u003e, librust-gix-features-0.48+default-dev \u003c!nocheck\u003e, librust-gix-features-0.48+walkdir-dev \u003c!nocheck\u003e, librust-gix-features-0.48+zlib-dev \u003c!nocheck\u003e, librust-gix-fs-0.21+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.25+default-dev \u003c!nocheck\u003e, librust-gix-hashtable-0.15+default-dev \u003c!nocheck\u003e, librust-gix-object-0.60+default-dev \u003c!nocheck\u003e, librust-gix-pack-0.70-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev \u003c!nocheck\u003e, librust-gix-quote-0.7+default-dev (\u003e= 0.7.1) \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.4) \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arc-swap-1+default-dev (\u003e= 1.9.0) \u003c!nocheck\u003e, librust-gix-features-0.49+crc32-dev \u003c!nocheck\u003e, librust-gix-features-0.49+default-dev \u003c!nocheck\u003e, librust-gix-features-0.49+walkdir-dev \u003c!nocheck\u003e, librust-gix-fs-0.22+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.26+default-dev \u003c!nocheck\u003e, librust-gix-hashtable-0.16+default-dev \u003c!nocheck\u003e, librust-gix-object-0.63+default-dev \u003c!nocheck\u003e, librust-gix-pack-0.73-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev (\u003e= 0.12.3) \u003c!nocheck\u003e, librust-gix-quote-0.7+default-dev (\u003e= 0.7.2) \u003c!nocheck\u003e, librust-gix-zlib-0.1+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.4) \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0ff749f02f660e902f1effa4989148ce52adf6931ff82d56ecf18ffd8d6045ff 2385 rust-gix-odb_0.80.0-1.dsc aeeda12a9663120418735ecdc1250d06eeab0be75700e47b3402a981331716ba 64877 rust-gix-odb_0.80.0.orig.tar.gz 10e9de63dcc47b3fa52565d417355f23726fad6fcd803e6a50be5b28ce0a3dad 3376 rust-gix-odb_0.80.0-1.debian.tar.xz"
+    "805912a9f22613c84f7e87a91ce6ebbeb13037b5fb0a8d71d98f2f555d548c78 3148 rust-gix-odb_0.83.0-1.dsc 8dd494ffb5037e62b8220109e894d2861ff2150a2cacbfccdba57ae1ebab2b96 66116 rust-gix-odb_0.83.0.orig.tar.gz b8479add94c4feb51583506f8e4e8125e4170f49a9be37a264db17aa5ca25010 3580 rust-gix-odb_0.83.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-odb"
   ],
   "Files": [
-    "08354dc20149f44fc86e586e629b6062 2385 rust-gix-odb_0.80.0-1.dsc 7fdb9b37968ca4cef8e7d2b42b04e60d 64877 rust-gix-odb_0.80.0.orig.tar.gz b14637aa4011ca7949e12bb53bde2849 3376 rust-gix-odb_0.80.0-1.debian.tar.xz"
+    "1bc4297a152b7513ef249fe1ce3e0aa3 3148 rust-gix-odb_0.83.0-1.dsc 3287543c3673bef3fc723aa7559c8568 66116 rust-gix-odb_0.83.0.orig.tar.gz b9172dd1e4008201d9ec60a14a44230a 3580 rust-gix-odb_0.83.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-crossbeam-channel-0.5+default-dev, librust-filetime-0.2+default-dev, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-odb]"
   ],
   "Version": [
-    "0.80.0-1"
+    "0.83.0-1"
   ]
 }

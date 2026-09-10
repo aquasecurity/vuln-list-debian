@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-signal-hook-tokio-dev, librust-signal-hook-tokio+futures-core-0-3-dev"
+    "librust-signal-hook-tokio-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-signal-hook-0.3+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+net-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-signal-hook-0.4+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+net-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b3a3bdea4af9545be43b3fa5297b0c10cf18e41c768e5242b9ac33145bbd90ce 2656 rust-signal-hook-tokio_0.3.1-1.dsc 213241f76fb1e37e27de3b6aa1b068a2c333233b59cca6634f634b80a27ecf1e 7984 rust-signal-hook-tokio_0.3.1.orig.tar.gz e96422264b1339bd43e487c1c65c356a976f1f3e5d86a58956016a5888eabfc4 2988 rust-signal-hook-tokio_0.3.1-1.debian.tar.xz"
+    "90d1d8d7351703d98bde9e4377f8ad0798565b7ebc264e34eaef10791b44e3ed 2550 rust-signal-hook-tokio_0.4.0-1.dsc e513e435a8898a0002270f29d0a708b7879708fb5c4d00e46983ca2d2d378cf0 11358 rust-signal-hook-tokio_0.4.0.orig.tar.gz 8aaaf20d60f7f0acf3f85f7a55bd4143f43f89f7bc8608cc1bf7d7f92f9b21dc 3524 rust-signal-hook-tokio_0.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-signal-hook-tokio"
   ],
   "Files": [
-    "3dbf4735097567145198e055e8b7314f 2656 rust-signal-hook-tokio_0.3.1-1.dsc a68b912e7a336d655de68580feb0218d 7984 rust-signal-hook-tokio_0.3.1.orig.tar.gz 8e33979e440ddafed94fed0d42fff891 2988 rust-signal-hook-tokio_0.3.1-1.debian.tar.xz"
+    "ba997f802fca27d307331d65ceec2dae 2550 rust-signal-hook-tokio_0.4.0-1.dsc 20fef663b073808c43d97306250e26aa 11358 rust-signal-hook-tokio_0.4.0.orig.tar.gz d1456a0b78edcca0e6618aca973e6113 3524 rust-signal-hook-tokio_0.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/vorner/signal-hook"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-signal-hook-tokio"
   ],
   "Package-List": [
-    "librust-signal-hook-tokio+futures-core-0-3-dev deb rust optional arch=any librust-signal-hook-tokio-dev deb rust optional arch=any"
+    "librust-signal-hook-tokio-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-futures-0.3+default-dev, librust-serial-test-0.5+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev"
+    "dh-cargo, librust-futures-0.3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+full-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/signal-hook-tokio]"
   ],
   "Version": [
-    "0.3.1-1"
+    "0.4.0-1"
   ]
 }

@@ -6,16 +6,19 @@
     "librust-rpgpie-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pgp-0.15+default-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-zeroize-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0.4+default-dev \u003c!nocheck\u003e, librust-chrono-0.4+serde-dev \u003c!nocheck\u003e, librust-hex-0.4+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-pgp-0.20-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-rand-core-0.6+default-dev \u003c!nocheck\u003e, librust-rsa-0.9+default-dev (\u003e= 0.9.7) \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-json-1+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-zeroize-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9bc5042a35529beddc39276de5b9cb7a441e9013a2b083eb82f28419bb6aedd8 1851 rust-rpgpie_0.5.4-1.dsc 9e362f8e31f5d220605de465458116af58cab01e36c2a551688303db8102692b 51778 rust-rpgpie_0.5.4.orig.tar.gz 13a19a519f14b8a9fa0e66b8f6acdf06e201d563ede0083cdc421324fc5d2f65 3292 rust-rpgpie_0.5.4-1.debian.tar.xz"
+    "6782a1c638a0368b54dd510dde52ed348464aaf23fe13ddfa232f7f73fdef4b6 2805 rust-rpgpie_0.11.0-1.dsc ded5fc7cbc2508434d019b3a314998f3868061e40e93f74c74559073dc0be2e9 1873382 rust-rpgpie_0.11.0.orig.tar.gz 68cbcedd02affc55dcb10ec4b6f149f013c837a29c81af6f98c6705387ff8468 3852 rust-rpgpie_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rpgpie"
   ],
   "Files": [
-    "f5db2af3c64d2114d40cca63a528d937 1851 rust-rpgpie_0.5.4-1.dsc 9144f7c0b52346eca36bcd2e911b1158 51778 rust-rpgpie_0.5.4.orig.tar.gz 18d3e37287ca13b6e3ed91639b8e6005 3292 rust-rpgpie_0.5.4-1.debian.tar.xz"
+    "47b7c213d30cf18f155b9b68031c36d6 2805 rust-rpgpie_0.11.0-1.dsc 24fe4e3942886e68cfeca0b95abdbba7 1873382 rust-rpgpie_0.11.0.orig.tar.gz 74b8f2fac13ee7ba3df6fd6644cdbfc0 3852 rust-rpgpie_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-env-logger-0.11+default-dev, librust-rstest-0.26+default-dev, rustc"
   ],
   "Uploaders": [
     "Daniel Kahn Gillmor \u003cdkg@fifthhorseman.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rpgpie]"
   ],
   "Version": [
-    "0.5.4-1"
+    "0.11.0-1"
   ]
 }

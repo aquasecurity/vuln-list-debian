@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-signal-hook-0.3+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-signal-hook-0.4+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "982205b5fd40209d6623603ba269667f92fe8c716cec0506259dc0351762ed89 2429 rust-signal-hook-mio_0.2.5-1.dsc b75a19a7a740b25bc7944bdee6172368f988763b744e3d4dfe753f6b4ece40cc 14373 rust-signal-hook-mio_0.2.5.orig.tar.gz 811114f614b8cbe44362ef6b7431c89bc4f758eb90dd8b25e7f414586bb6d61c 3492 rust-signal-hook-mio_0.2.5-1.debian.tar.xz"
+    "2e5f6a9523b0bba6727c31a0ee4424cce9b79c62ae810b4a7d862203170e8f53 2374 rust-signal-hook-mio_0.3.0-1.dsc c3c965b71730d01c671d7a7f6b2c4f5729acc8fba1acb65a36576f9181076dfa 12245 rust-signal-hook-mio_0.3.0.orig.tar.gz 820dd25884e6c44236f64af2e92654f47f2ebaef6c18fcba9ea62ebbecda864b 4156 rust-signal-hook-mio_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-signal-hook-mio"
   ],
   "Files": [
-    "57e6c22e361e857369040ed51d4da851 2429 rust-signal-hook-mio_0.2.5-1.dsc b1bc9e5d82774814a4357bc250fe060f 14373 rust-signal-hook-mio_0.2.5.orig.tar.gz 62567981977d66f217fac755fa4b8104 3492 rust-signal-hook-mio_0.2.5-1.debian.tar.xz"
+    "60ad9b5195db5d86baec424471e4d5ca 2374 rust-signal-hook-mio_0.3.0-1.dsc 0f1689834af94ef8ddaa51bbd4cae11a 12245 rust-signal-hook-mio_0.3.0.orig.tar.gz 4a8dfd179784bf5f543a1ebfef37a1b9 4156 rust-signal-hook-mio_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serial-test-3+default-dev, rustc"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/signal-hook-mio]"
   ],
   "Version": [
-    "0.2.5-1"
+    "0.3.0-1"
   ]
 }

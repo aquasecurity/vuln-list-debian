@@ -6,19 +6,25 @@
     "librust-cryptoki-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.66.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-1+default-dev (\u003e= 1.3-~~) \u003c!nocheck\u003e, librust-cryptoki-sys-0.1+default-dev \u003c!nocheck\u003e, librust-libloading-0+default-dev (\u003e= 0.7.0-~~) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.14-~~) \u003c!nocheck\u003e, librust-paste-1+default-dev (\u003e= 1.0.6-~~) \u003c!nocheck\u003e, librust-secrecy-0.8+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.77) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.10.0) \u003c!nocheck\u003e, librust-cryptoki-sys-0.5+default-dev \u003c!nocheck\u003e, librust-libloading-0.8+default-dev (\u003e= 0.8.9) \u003c!nocheck\u003e, librust-log-0.4+default-dev (\u003e= 0.4.28) \u003c!nocheck\u003e, librust-secrecy-0.10+default-dev (\u003e= 0.10.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b6623b2b2dedfada4540b642117d0ed163eb7b6ccf20c798219095a3332fe0d4 2581 rust-cryptoki_0.6.2-1.dsc 1e9123ecc6a29329cd3f852e6e6814f302ed777820e1eb60b098b89aee0eb91b 63810 rust-cryptoki_0.6.2.orig.tar.gz c89e7b1bfc3c8e6e9ab59476a3c389ec4b0bd2507d7869720892172d5be8de76 4684 rust-cryptoki_0.6.2-1.debian.tar.xz"
+    "73b0f88089dcb5717164025053622c499c1a1d69b154d4c34c53f58011cc0d9e 2638 rust-cryptoki_0.12.0-2.dsc ff765b99fc49f3116c9a908484486a2b92fd73c48da45c3a69716471c6cc56c6 117739 rust-cryptoki_0.12.0.orig.tar.gz e50bd4d486b136bf7a8d6e68802bff346abf09ab547dacb81758b6cbf18e650e 5120 rust-cryptoki_0.12.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cryptoki"
   ],
   "Files": [
-    "11ba81bd588c782c17d9e12f6d2589f3 2581 rust-cryptoki_0.6.2-1.dsc 857bf6cd16a4807c9f69d4920dd9b6a8 63810 rust-cryptoki_0.6.2.orig.tar.gz 7911526463d68c2b474d785efa411c29 4684 rust-cryptoki_0.6.2-1.debian.tar.xz"
+    "307dbeb116a845ca94c305b1741c8083 2638 rust-cryptoki_0.12.0-2.dsc 5619137498abc15854af3f8c715a02b9 117739 rust-cryptoki_0.12.0.orig.tar.gz 1c1831435806e3988dd0bd314c0001e7 5120 rust-cryptoki_0.12.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/parallaxsecond/rust-cryptoki"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-0.4+default-dev, librust-num-traits-0.2+default-dev, librust-serial-test-2+default-dev, libsofthsm2"
+    "dh-cargo, librust-hex-0.4+default-dev, librust-serial-test-3+default-dev, librust-wycheproof-0.6+aead-dev, librust-wycheproof-0.6+default-dev, libsofthsm2, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cryptoki]"
   ],
   "Version": [
-    "0.6.2-1"
+    "0.12.0-2"
   ]
 }

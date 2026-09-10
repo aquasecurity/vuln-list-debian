@@ -6,19 +6,25 @@
     "librust-picky-asn1-der-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-picky-asn1-0.7+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.136-~~) \u003c!nocheck\u003e, librust-serde-bytes-0.11+default-dev (\u003e= 0.11.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-picky-asn1-0.10+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e, librust-serde-bytes-0.11+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "602bc95d76e2f0e3036799fb86236c8e4535535fd75b68c38177525c0c242d03 2530 rust-picky-asn1-der_0.4.0-1.dsc e47267a46f4ea246b772381970b8ed3f15963dd3e15ffc2c3f4ac3bc2d77384b 16352 rust-picky-asn1-der_0.4.0.orig.tar.gz 9c7186d7020a97fa32e597756472dbced067eb857b509e9e12328c94984f5307 3048 rust-picky-asn1-der_0.4.0-1.debian.tar.xz"
+    "9b052ebf5be7c5c0db8a990d3220c59b180dd9aaf2f3a4cd003350d251b605bc 2589 rust-picky-asn1-der_0.5.6-1.dsc d413165e4bf7f808b9a27cbaba657657a2921f0965db833f488c4d4be96dcd2e 23276 rust-picky-asn1-der_0.5.6.orig.tar.gz 980318773d733497cde9605e2543212659bcee921f82b1851fae11593278cb40 3020 rust-picky-asn1-der_0.5.6-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-picky-asn1-der"
   ],
   "Files": [
-    "71f22bcb0a02f7ba3ff0d73264fcc359 2530 rust-picky-asn1-der_0.4.0-1.dsc 5dd4d8139ddb6c5da9e76d7300ef9065 16352 rust-picky-asn1-der_0.4.0.orig.tar.gz a4bccc436b0245df22bd6805bb037ef9 3048 rust-picky-asn1-der_0.4.0-1.debian.tar.xz"
+    "0e75d9be1dd7c1a5ddf7955207456294 2589 rust-picky-asn1-der_0.5.6-1.dsc 54a1a26080ac1fd8f3952ca27265ea41 23276 rust-picky-asn1-der_0.5.6.orig.tar.gz 92d99ee82c73ae5ab7d301cad588daeb 3020 rust-picky-asn1-der_0.5.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/Devolutions/picky-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-base64-0.21+default-dev, librust-num-bigint-dig-0.8+default-dev, librust-oid-0.2+serde-support-dev, librust-pretty-assertions-1+default-dev, librust-serde-bytes-0.11+default-dev"
+    "dh-cargo, librust-base64-0.22+default-dev, librust-crypto-bigint-0.7+alloc-dev, librust-oid-0.2+serde-support-dev, librust-pretty-assertions-1+default-dev, librust-serde-bytes-0.11+default-dev, rustc"
   ],
   "Uploaders": [
     "Emanuele Rocca \u003cema@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/picky-asn1-der]"
   ],
   "Version": [
-    "0.4.0-1"
+    "0.5.6-1"
   ]
 }
