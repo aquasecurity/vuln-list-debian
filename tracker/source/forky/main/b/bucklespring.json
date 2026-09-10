@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "bucklespring, bucklespring-data"
+    "bucklespring-x11, bucklespring-libinput, bucklespring, bucklespring-data"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pkgconf, libopenal-dev, libalure-dev, libxtst-dev"
+    "debhelper-compat (= 14), pkgconf, libopenal-dev, libalure-dev, libxtst-dev, libinput-dev [linux-any], libudev-dev [linux-any], po-debconf"
   ],
   "Checksums-Sha256": [
-    "6c61181c804b776a266652778a429b89401fa275462fbf4b18cb5c18cf7dc63b 2024 bucklespring_1.5.1-1.dsc f322fc23d3aef6ce542006b00820e9444ad1ef60735df1799823d1017f2a80a2 3897563 bucklespring_1.5.1.orig.tar.gz d18556e02c0acc25fe5f29f5d7486424d4abbe9464d14929f3bf973467f1c7ff 3256 bucklespring_1.5.1-1.debian.tar.xz"
+    "cdfc9c87d640fb67b513934956985664ed5f5da3e0b6ddfacaf7607c10468bae 1603 bucklespring_1.5.1-2.dsc f322fc23d3aef6ce542006b00820e9444ad1ef60735df1799823d1017f2a80a2 3897563 bucklespring_1.5.1.orig.tar.gz 18f8c9b5bd0d952f05a3a9c8a7add9c123f0f699d5e0e2c496cbfce9ebb5cbf4 12052 bucklespring_1.5.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/bucklespring"
   ],
   "Files": [
-    "c3d2ae1cb01039ea13c6d2983d773392 2024 bucklespring_1.5.1-1.dsc 4d278a758c7e1622a3431b82d95d4d2d 3897563 bucklespring_1.5.1.orig.tar.gz 4e2d4880c637aea193c64d579f9ad2fb 3256 bucklespring_1.5.1-1.debian.tar.xz"
+    "78ee26000f1bbc9726ad0f0b25bea1a8 1603 bucklespring_1.5.1-2.dsc 4d278a758c7e1622a3431b82d95d4d2d 3897563 bucklespring_1.5.1.orig.tar.gz 8e3a7e4f3759d4b92be6040c981edf84 12052 bucklespring_1.5.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://github.com/zevv/bucklespring"
   ],
   "Maintainer": [
-    "Debian QA Group \u003cpackages@qa.debian.org\u003e"
+    "Barak A. Pearlmutter \u003cbap@debian.org\u003e"
   ],
   "Package": [
     "bucklespring"
   ],
   "Package-List": [
-    "bucklespring deb games optional arch=any bucklespring-data deb games optional arch=all"
+    "bucklespring deb oldlibs optional arch=all bucklespring-data deb games optional arch=all bucklespring-libinput deb games optional arch=linux-any bucklespring-x11 deb games optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/bucklespring"
@@ -48,6 +48,6 @@
     "https://salsa.debian.org/debian/bucklespring.git"
   ],
   "Version": [
-    "1.5.1-1"
+    "1.5.1-2"
   ]
 }
