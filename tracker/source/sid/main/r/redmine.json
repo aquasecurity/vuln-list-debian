@@ -3,7 +3,7 @@
     "all"
   ],
   "Binary": [
-    "redmine, redmine-mysql, redmine-pgsql, redmine-sqlite"
+    "redmine, redmine-mariadb, redmine-pgsql, redmine-sqlite"
   ],
   "Build-Depends": [
     "debhelper-compat (= 14), dbconfig-common, gem2deb"
@@ -12,13 +12,13 @@
     "po-debconf, puma, ruby-actionpack-xml-parser, ruby-addressable, ruby-bcrypt, ruby-bundler, ruby-capybara (\u003e= 3.39), ruby-commonmarker (\u003e= 2.8.3), ruby-commonmarker (\u003c\u003c 2.9), ruby-csv (\u003e= 3.3.4), ruby-csv (\u003c\u003c 3.4.0), ruby-doorkeeper (\u003e= 5.9.3), ruby-doorkeeper (\u003c\u003c 5.10), ruby-doorkeeper-i18n (\u003e= 5.2), ruby-doorkeeper-i18n (\u003c\u003c 5.3), ruby-html-pipeline (\u003e= 2.14.3), ruby-html-pipeline (\u003c\u003c 3.2.5), ruby-i18n (\u003e= 1.15.2), ruby-i18n (\u003c\u003c 1.16), ruby-importmap-rails (\u003e= 2.0), ruby-importmap-rails (\u003c\u003c 3), ruby-jquery-rails, ruby-listen (\u003e= 3.3), ruby-listen (\u003c\u003c 4.0), ruby-mail (\u003e= 2.9.1), ruby-mail (\u003c\u003c 2.10), ruby-marcel, ruby-mini-magick (\u003e= 5.3.1), ruby-mini-magick (\u003c\u003c 5.4), ruby-mini-mime (\u003e= 1.1.0), ruby-mini-mime (\u003c\u003c 1.2), ruby-minitest (\u003e= 5.27), ruby-minitest (\u003c\u003c 6.1), ruby-mocha (\u003e= 2.0.1), ruby-net-ldap (\u003e= 0.20.0), ruby-net-ldap (\u003c\u003c 0.21), ruby-nokogiri (\u003e= 1.19.1), ruby-nokogiri (\u003c\u003c 1.20), ruby-oauth2, ruby-rack (\u003e= 3.1.3), ruby-rails (\u003e= 2:7.2.3), ruby-rails (\u003c\u003c 2:7.3), ruby-rails-propshaft (\u003e= 1.1.0), ruby-rails-propshaft (\u003c\u003c 1.2), ruby-rbpdf (\u003e= 1.21.4), ruby-rbpdf (\u003c\u003c 1.22), ruby-requestjs-rails (\u003e= 0.0.13), ruby-requestjs-rails (\u003c\u003c 0.1.0), ruby-rest-client, ruby-roadie-rails (\u003e= 3.4.0), ruby-roadie-rails (\u003c\u003c 3.5), ruby-rotp (\u003e= 5.0.0), ruby-rouge (\u003e= 5.0), ruby-rouge (\u003c\u003c 6), ruby-rqrcode, ruby-sanitize (\u003e= 7.0), ruby-sanitize (\u003c\u003c 8.0), ruby-selenium-webdriver (\u003e= 4.11.0), ruby-stimulus-rails (\u003e= 1.3), ruby-stimulus-rails (\u003c\u003c 2.0), ruby-task-list (\u003e= 2.3.2), ruby-task-list (\u003c\u003c 2.4), ruby-zip (\u003e= 3.5.0), ruby-zip (\u003c\u003c 3.6), ghostscript \u003c!nocheck\u003e, ruby-rails-dom-testing (\u003e= 2.3.0) \u003c!nocheck\u003e, ruby-sqlite3 (\u003e= 2.9.0) \u003c!nocheck\u003e, ruby-sqlite3 (\u003c\u003c 2.10.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b64738f3efca44288b1b930f65058032791159be9182e8873d53389dc3b66a68 4122 redmine_6.1.3+ds-3.dsc 01f868f82feaf25c298b7c2e3471da63f36e07d104e33d4c8e52817ce5d323df 2905280 redmine_6.1.3+ds.orig.tar.xz 19f6b03d3f5f16023f159c3b978a4df9151079fdcecb9eceb7f2095bf85226f2 101452 redmine_6.1.3+ds-3.debian.tar.xz"
+    "487343090598cd3d680b10b7948f2ca67a22abd9a60f881225459d244d52b352 4133 redmine_6.1.3+ds2-1.dsc bc48e1a7d508c1be6655b02e1d2838b310eb4f0b5312cb0dcac5549661870ad4 2900704 redmine_6.1.3+ds2.orig.tar.xz d7e5772f5ba3d4bcee25c0d9f55e346969ecd910962c87f06b7f5ef011136009 101856 redmine_6.1.3+ds2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/redmine"
   ],
   "Files": [
-    "d1f3a27cbe9f6562b24f74ba19b6aa81 4122 redmine_6.1.3+ds-3.dsc 484ca8e8989cb30bece3f691f2fc8f37 2905280 redmine_6.1.3+ds.orig.tar.xz 5766b2c067b1d54f545a5ea034e1ce67 101452 redmine_6.1.3+ds-3.debian.tar.xz"
+    "283a7844050507193c1bfe394b026411 4133 redmine_6.1.3+ds2-1.dsc 18f9817cac8940c8e49bc1189185b7c0 2900704 redmine_6.1.3+ds2.orig.tar.xz 2a8666431b7dd82f64ecfaba383922c2 101856 redmine_6.1.3+ds2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "redmine"
   ],
   "Package-List": [
-    "redmine deb web optional arch=all redmine-mysql deb web optional arch=all redmine-pgsql deb web optional arch=all redmine-sqlite deb web optional arch=all"
+    "redmine deb web optional arch=all redmine-mariadb deb web optional arch=all redmine-pgsql deb web optional arch=all redmine-sqlite deb web optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/ruby-team/redmine.git"
   ],
   "Version": [
-    "6.1.3+ds-3"
+    "6.1.3+ds2-1"
   ]
 }

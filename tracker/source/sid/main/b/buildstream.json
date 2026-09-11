@@ -3,28 +3,31 @@
     "any all"
   ],
   "Binary": [
-    "buildstream, python3-buildstream"
+    "buildstream, python3-buildstream, buildstream-doc"
   ],
   "Build-Conflicts": [
     "native-architecture-is-s390x"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, cython3, native-architecture-is, protobuf-compiler, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-click, python3-coverage \u003c!nocheck\u003e, python3-grpc-tools, python3-grpcio, python3-jinja2, python3-packaging, python3-pluginbase, python3-protobuf, python3-psutil, python3-pyftpdlib \u003c!nocheck\u003e, python3-pyroaring, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-env \u003c!nocheck\u003e, python3-pytest-pylint \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-ruamel.yaml, python3-setuptools, python3-ujson"
+    "debhelper-compat (= 14), dh-sequence-python3, cython3, native-architecture-is, protobuf-compiler, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-click, python3-coverage \u003c!nocheck\u003e, python3-grpc-tools, python3-grpcio, python3-jinja2, python3-packaging, python3-pluginbase, python3-protobuf, python3-psutil, python3-pyftpdlib \u003c!nocheck\u003e, python3-pyroaring, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-env \u003c!nocheck\u003e, python3-pytest-pylint \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-ruamel.yaml, python3-setuptools, python3-ujson"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-click \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "c0d27eb8d4a2cbca34bb1d0b878596c7800b28352cced19e25003e149e89aea4 2707 buildstream_2.7.0-3.dsc eb867917c165cd9a1504ac297b65dc6fecbe2e5b4580efbc13e1e529a2480c86 1664172 buildstream_2.7.0.orig.tar.gz 35b664b5de09f250eba2053bcd953711221757c60ff31a96c26b7980d239aad9 6888 buildstream_2.7.0-3.debian.tar.xz"
+    "d6d0562bae5cc7c03bd838c96eff649af0bd9359f7f484b4a349b842d1959b2c 2957 buildstream_2.8.0-1.dsc d5a1c28f76c50c75c3ec6fd63314cc3132cc08e289f7243d017853a613273e31 1669809 buildstream_2.8.0.orig.tar.gz dc5dfa8f1ba283e26bc879ea906502e72f42d015bf129f14fb936d715f486056 7624 buildstream_2.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/buildstream"
   ],
   "Files": [
-    "ae3ec5719c243a78b720c96f2ada2ae2 2707 buildstream_2.7.0-3.dsc c26bb9f13447d69717f62eedbf7ee73e 1664172 buildstream_2.7.0.orig.tar.gz 1c16eeb60044b95532673ffe049b2a78 6888 buildstream_2.7.0-3.debian.tar.xz"
+    "0d372ffd8be716cbe714e45d17a821ed 2957 buildstream_2.8.0-1.dsc b293ef39219a3bf7b1f8f76cea2fbfbd 1669809 buildstream_2.8.0.orig.tar.gz 42af84f8a307630b0bbf3faaee2e8e1b 7624 buildstream_2.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://buildstream.build/"
+    "https://buildstream.apache.org"
   ],
   "Maintainer": [
     "Debian GNOME Maintainers \u003cpkg-gnome-maintainers@lists.alioth.debian.org\u003e"
@@ -33,7 +36,7 @@
     "buildstream"
   ],
   "Package-List": [
-    "buildstream deb gnome optional arch=all python3-buildstream deb python optional arch=any"
+    "buildstream deb gnome optional arch=all buildstream-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-buildstream deb python optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/buildstream.git"
   ],
   "Version": [
-    "2.7.0-3"
+    "2.8.0-1"
   ]
 }

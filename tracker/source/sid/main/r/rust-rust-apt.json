@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cxx-1+default-dev \u003c!nocheck\u003e, librust-cxx-build-1+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-terminal-size-0+default-dev (\u003e= 0.3.0-~~) \u003c!nocheck\u003e, libapt-pkg-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cxx-1+default-dev (\u003e= 1.0.192) \u003c!nocheck\u003e, librust-cxx-build-1+default-dev (\u003e= 1.0.192) \u003c!nocheck\u003e, libapt-pkg-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4341c22916fc2b9730babe205d5a6bd5b1db6596ed36a112661449ad0cb393bc 1837 rust-rust-apt_0.8.0-2.dsc 89d78ef02335b0d12dff96f742b2124f371922d3efbedbcba5703025bb0e37a6 71973 rust-rust-apt_0.8.0.orig.tar.gz 87845bffa5da3c58e19d89eb492ebcf4d82e2541011333d8a6fc3151a4ce4c53 4756 rust-rust-apt_0.8.0-2.debian.tar.xz"
+    "10344cc68b49dc19c0344607cdb72c3fadd210a021ed9ef8d3e186439a708bee 2382 rust-rust-apt_0.11.2-1.dsc af431210fe16248c18124b83da8dcb809f55625eb847b899dfe2ef7060ca04bf 84066 rust-rust-apt_0.11.2.orig.tar.gz b896d7e87b8756568cf41c06bbb19206c4f5fcfa23b3de6d33de713d3ddf69e8 3356 rust-rust-apt_0.11.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rust-apt"
   ],
   "Files": [
-    "db58822b0bb2759356e74d41cc45c1fd 1837 rust-rust-apt_0.8.0-2.dsc 9f82ff1769fb7c0a760cfd52ba77ac1b 71973 rust-rust-apt_0.8.0.orig.tar.gz f56f3cebdcee7d39d2517ff2b912852e 4756 rust-rust-apt_0.8.0-2.debian.tar.xz"
+    "113104e0479c1d0461272ff459d33548 2382 rust-rust-apt_0.11.2-1.dsc d57268b3956ab9139914f038a4a7155e 84066 rust-rust-apt_0.11.2.orig.tar.gz 9906d2aadbdcf83700f210280f84dc32 3356 rust-rust-apt_0.11.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, g++, rustc"
+    "dh-cargo, dpkg-dev, g++, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e, Blake Lee \u003cblake@volian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rust-apt]"
   ],
   "Version": [
-    "0.8.0-2"
+    "0.11.2-1"
   ]
 }
