@@ -6,19 +6,25 @@
     "librust-eyre-dev, librust-eyre+default-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-indenter-0.3+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18.0-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-autocfg-1+default-dev \u003c!nocheck\u003e, librust-indenter-0.3+default-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev (\u003e= 1.18.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bef393486844b4ab13c6286626548396a943cc02cf2ab1ed41c6f2a1e5d47adf 2572 rust-eyre_0.6.12-1.dsc 7cd915d99f24784cdc19fd37ef22b97e3ff0ae756c7e492e9fbfe897d61e2aec 45330 rust-eyre_0.6.12.orig.tar.gz 35a1bf2acec406c3ddf906d53d25f8391706025c946c567b8c4f70de6b7af043 3560 rust-eyre_0.6.12-1.debian.tar.xz"
+    "9d42dd846ecd6f7e56073ddeb9067cfd348d8235538d19f41a738f41c72f4f98 2656 rust-eyre_0.6.14-1.dsc c08309dbcc659c5549a24ddb9b27027640641b282ef5768267c7e675558986a3 45647 rust-eyre_0.6.14.orig.tar.gz 1688736966e3f54cb1e6c68d52339f8f7c8b7cfb805fd12b83f4431428e5ba45 3472 rust-eyre_0.6.14-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-eyre"
   ],
   "Files": [
-    "1f2e41d81afe85ba9c039f38911e9f7e 2572 rust-eyre_0.6.12-1.dsc 2baba2a181ea323cf6e8e34f50258e35 45330 rust-eyre_0.6.12.orig.tar.gz 46588c00d61b256278cbe934c86ce124 3560 rust-eyre_0.6.12-1.debian.tar.xz"
+    "199025bdc1b2fdabfc2bbca9e3a3223a 2656 rust-eyre_0.6.14-1.dsc 93824f17c1ecf28556517e8d211cd4b9 45647 rust-eyre_0.6.14.orig.tar.gz c67077b5e34a138634b21ac56a4f0ca3 3472 rust-eyre_0.6.14-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/eyre-rs/eyre"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-anyhow-1+default-dev, librust-backtrace-0.3+default-dev, librust-futures-0.3-dev, librust-rustversion-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-thiserror-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev"
+    "dh-cargo, librust-anyhow-1+default-dev, librust-backtrace-0.3+default-dev, librust-futures-0.3-dev, librust-rustversion-1+default-dev, librust-syn-2+default-dev, librust-syn-2+full-dev, librust-thiserror-1+default-dev, librust-trybuild-1+default-dev, librust-trybuild-1+diff-dev, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/eyre]"
   ],
   "Version": [
-    "0.6.12-1"
+    "0.6.14-1"
   ]
 }
