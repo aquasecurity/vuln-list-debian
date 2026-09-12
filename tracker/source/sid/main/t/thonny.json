@@ -6,16 +6,19 @@
     "thonny"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec, dh-python, mypy, pylint, python3-all, python3-docutils, python3-jedi (\u003e= 0.18~), python3-send2trash (\u003e= 1.5), python3-serial (\u003e= 3.4~), python3-setuptools (\u003e= 45.2~), python3-tk"
+    "debhelper-compat (= 14), dh-sequence-single-binary, dh-exec, dh-python, python3-all, pybuild-plugin-pyproject, python3-uv-build, python3-jedi \u003c!nocheck\u003e, python3-parso \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-tk, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "718310e07638b28ce99e70d409b0cfde2ba1cae486003053852f86d97e553eb0 2168 thonny_4.1.7-1.dsc 6b3b5605f524c12462830e232c8eaf01235645820dd13c24d720acab44a58123 2177370 thonny_4.1.7.orig.tar.gz 86e5b9580d451433c8c9cff37583fc99ae4a90fb95d5bccff9bcac4e246711a7 7212 thonny_4.1.7-1.debian.tar.xz"
+    "3441ce2fbbd37f25883d5883d89d8e25a2d4564302ed8cba31eca786a0381762 1817 thonny_5.0.0-1.dsc 724be3c0c018ed61ae24ad0bb8f47d633854773e705a0ce3c8c1af4f64ed273e 2275861 thonny_5.0.0.orig.tar.gz b6b8a75eba75fa1cdb5e0a419c798c18144c7dcc4bb49678f9e8a396d19cdf3e 9420 thonny_5.0.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "ab97cab7c23aae03127292a0c4c325594f51ba02 debian archive/debian/5.0.0-1 https://git.dgit.debian.org/thonny"
   ],
   "Directory": [
     "pool/main/t/thonny"
   ],
   "Files": [
-    "51b248c4ed5f393c4fa8da72fb0cf9f8 2168 thonny_4.1.7-1.dsc 97b34f1b958a4e6e2da3289705964738 2177370 thonny_4.1.7.orig.tar.gz ef8bcc82706eb925f5b3d6bbb021899b 7212 thonny_4.1.7-1.debian.tar.xz"
+    "068853950c370699dc5c6cc3164f8aee 1817 thonny_5.0.0-1.dsc 66d60f55db4eb31155337b5a4f214235 2275861 thonny_5.0.0.orig.tar.gz 03324d8b06f2fc2cdce155fb13a6241d 9420 thonny_5.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pytest, xauth, xvfb"
   ],
   "Uploaders": [
-    "Aivar Annamaa \u003caivar.annamaa@gmail.com\u003e, Dominik George \u003cnatureshadow@debian.org\u003e,"
+    "Aivar Annamaa \u003caivar.annamaa@gmail.com\u003e, Dominik George \u003cnatureshadow@debian.org\u003e, Pieter Lenaerts \u003cplenae@disroot.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian-edu-pkg-team/thonny"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/debian-edu-pkg-team/thonny.git"
   ],
   "Version": [
-    "4.1.7-1"
+    "5.0.0-1"
   ]
 }
