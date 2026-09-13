@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "amd64 all"
+    "amd64 arm64 i386 ppc64el all"
   ],
   "Binary": [
-    "mit-scheme, mit-scheme-dbg, mit-scheme-doc"
+    "mit-scheme, mit-scheme-dbg, mit-scheme-svm, mit-scheme-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), mit-scheme, libssl-dev, libmhash-dev, libmcrypt-dev, libgdbm-dev, libpq-dev, libncurses-dev, libx11-dev, libxt-dev, libdb-dev, libltdl-dev, pkgconf, texinfo, texlive, ghostscript, texlive-plain-generic"
+    "debhelper-compat (= 14), mit-scheme:native | mit-scheme-svm:native | mit-scheme-interpreter, libssl-dev, libmhash-dev, libmcrypt-dev, libgdbm-dev, libpq-dev, libncurses-dev, libx11-dev, libxt-dev, libdb-dev, libltdl-dev, pkgconf, texinfo"
+  ],
+  "Build-Depends-Indep": [
+    "texlive, texlive-plain-generic, ghostscript"
   ],
   "Checksums-Sha256": [
-    "e2009ec56b963f84a8bba0b86434fb8631020c965ced6934161dfb26ef20f518 1601 mit-scheme_12.1-5.dsc 021b79aa185ca3f5ef7ff7fb5c6717b39313a4ff1f2c77579925687ae888b768 18604976 mit-scheme_12.1.orig.tar.xz 5af17f236a00afa9f29e02421a4afe22c344a1cfc463c842399e8f821e1354f6 41900 mit-scheme_12.1-5.debian.tar.xz"
+    "8498f97af344a4dda0a51deb89a44e92fea059b2d4f81240fd6389f95555041b 1969 mit-scheme_12.1-6.dsc 021b79aa185ca3f5ef7ff7fb5c6717b39313a4ff1f2c77579925687ae888b768 18604976 mit-scheme_12.1.orig.tar.xz a4634601e9cb5493148af97f69955b7c2c75b3903d60347b3ea77022aef2f36b 48804 mit-scheme_12.1-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mit-scheme"
   ],
   "Files": [
-    "a734c8ca4463b6c0fdfe866485f41fb4 1601 mit-scheme_12.1-5.dsc f0615184639e267b95a7f444e7be17de 18604976 mit-scheme_12.1.orig.tar.xz 6fc4af8ec5410da4324fd18fadbe0518 41900 mit-scheme_12.1-5.debian.tar.xz"
+    "83c5bd36cef9197e5da8c1e97164e786 1969 mit-scheme_12.1-6.dsc f0615184639e267b95a7f444e7be17de 18604976 mit-scheme_12.1.orig.tar.xz 590496e821ba09b1e72b99182950e7d3 48804 mit-scheme_12.1-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "mit-scheme"
   ],
   "Package-List": [
-    "mit-scheme deb lisp optional arch=amd64 mit-scheme-dbg deb debug optional arch=amd64 mit-scheme-doc deb doc optional arch=all"
+    "mit-scheme deb lisp optional arch=amd64,arm64 profile=!pkg.mit-scheme.nonative profile:v1=!pkg.mit-scheme.nonative mit-scheme-dbg deb debug optional arch=amd64,arm64 profile=!pkg.mit-scheme.nonative profile:v1=!pkg.mit-scheme.nonative mit-scheme-doc deb doc optional arch=all mit-scheme-svm deb lisp optional arch=amd64,arm64,i386,ppc64el profile=!pkg.mit-scheme.nosvm profile:v1=!pkg.mit-scheme.nosvm"
   ],
   "Priority": [
     "optional"
@@ -48,6 +51,6 @@
     "https://salsa.debian.org/debian/mit-scheme.git"
   ],
   "Version": [
-    "12.1-5"
+    "12.1-6"
   ]
 }
