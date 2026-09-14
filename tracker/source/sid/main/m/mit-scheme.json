@@ -6,19 +6,19 @@
     "mit-scheme, mit-scheme-dbg, mit-scheme-svm, mit-scheme-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), mit-scheme:native | mit-scheme-svm:native | mit-scheme-interpreter, libssl-dev, libmhash-dev, libmcrypt-dev, libgdbm-dev, libpq-dev, libncurses-dev, libx11-dev, libxt-dev, libdb-dev, libltdl-dev, pkgconf, texinfo"
+    "debhelper-compat (= 14), mit-scheme:native [amd64 arm64] | mit-scheme-svm:native [amd64 arm64], mit-scheme-svm:native [!amd64 !arm64] | mit-scheme:native [!amd64 !arm64], libssl-dev, libmhash-dev, libmcrypt-dev, libgdbm-dev, libpq-dev, libncurses-dev, libx11-dev, libxt-dev, libdb-dev, libltdl-dev, pkgconf, texinfo"
   ],
   "Build-Depends-Indep": [
     "texlive, texlive-plain-generic, ghostscript"
   ],
   "Checksums-Sha256": [
-    "8498f97af344a4dda0a51deb89a44e92fea059b2d4f81240fd6389f95555041b 1969 mit-scheme_12.1-6.dsc 021b79aa185ca3f5ef7ff7fb5c6717b39313a4ff1f2c77579925687ae888b768 18604976 mit-scheme_12.1.orig.tar.xz a4634601e9cb5493148af97f69955b7c2c75b3903d60347b3ea77022aef2f36b 48804 mit-scheme_12.1-6.debian.tar.xz"
+    "dcce6d14c8f168c1325aba1ccd98485adba3904661c3418b4d032218a29609b0 2067 mit-scheme_12.1-7.dsc 021b79aa185ca3f5ef7ff7fb5c6717b39313a4ff1f2c77579925687ae888b768 18604976 mit-scheme_12.1.orig.tar.xz ae1e8f414bfed5d475e059ad2f702d539ef3ee40cf791cbd0d4959db0cc5efa7 64056 mit-scheme_12.1-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mit-scheme"
   ],
   "Files": [
-    "83c5bd36cef9197e5da8c1e97164e786 1969 mit-scheme_12.1-6.dsc f0615184639e267b95a7f444e7be17de 18604976 mit-scheme_12.1.orig.tar.xz 590496e821ba09b1e72b99182950e7d3 48804 mit-scheme_12.1-6.debian.tar.xz"
+    "284ae4fc4d4a1ed0fd584c99fd92c38b 2067 mit-scheme_12.1-7.dsc f0615184639e267b95a7f444e7be17de 18604976 mit-scheme_12.1.orig.tar.xz 1eb384c72f5b1d9e53eeabd899218033 64056 mit-scheme_12.1-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/debian/mit-scheme.git"
   ],
   "Version": [
-    "12.1-6"
+    "12.1-7"
   ]
 }
