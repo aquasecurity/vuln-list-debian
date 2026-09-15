@@ -6,16 +6,19 @@
     "librust-bitfield-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitfield-macros-0.19+default-dev (\u003e= 0.19.5) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "39b829775d02e80947bc6e86f3a4332da2ed3ec13c6670a39df3b00b32432055 1675 rust-bitfield_0.17.0-1.dsc f798d2d157e547aa99aab0967df39edd0b70307312b6f8bd2848e6abe40896e0 19883 rust-bitfield_0.17.0.orig.tar.gz f9bf03be459d802d15a146ed37e8d5fbb96b3d02c337e569ed1c54e24f048885 2636 rust-bitfield_0.17.0-1.debian.tar.xz"
+    "a0e6703a1fe8830dd4bbfe7d439e5f373432f09e73a926dd5271bfa6f52f8302 2265 rust-bitfield_0.19.5-1.dsc b45721c9db4c7a20899d05efb7ad9235f50b256e980db30ffb229abf732934c3 19763 rust-bitfield_0.19.5.orig.tar.gz 705ea5ab175a21ca06d5ef202326db515f9eca17c9a91e9f93881753635adc43 2852 rust-bitfield_0.19.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bitfield"
   ],
   "Files": [
-    "83f476d9ccc4c00641d2f3652047b1b0 1675 rust-bitfield_0.17.0-1.dsc f83cd1d0c3271264c4e8e696599e9254 19883 rust-bitfield_0.17.0.orig.tar.gz 79a4baae53ce147ee90d9e9c1da1b89a 2636 rust-bitfield_0.17.0-1.debian.tar.xz"
+    "a2a53736bedd000264b56b3bcb388729 2265 rust-bitfield_0.19.5-1.dsc 87ea47e1f6a7f87bf962d28b143d18cb 19763 rust-bitfield_0.19.5.orig.tar.gz bb645aab023eba39bcbaab99a627f785 2852 rust-bitfield_0.19.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitfield]"
   ],
   "Version": [
-    "0.17.0-1"
+    "0.19.5-1"
   ]
 }
