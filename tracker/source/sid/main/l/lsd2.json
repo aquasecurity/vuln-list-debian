@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "lsd2"
+    "lsd2, liblsd2-0, liblsd2-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), cmake"
+    "debhelper-compat (= 14), d-shlibs, cmake"
   ],
   "Checksums-Sha256": [
-    "1abc853aee601743be3638b03bf444545c1ca0409b49e3bf8d2a1c2421d7c497 1933 lsd2_1.9.9+dfsg-1.dsc 1f4f8abc1664469d9f589f7e64c6b971b421159b72890b3395128def97db8f49 112228 lsd2_1.9.9+dfsg.orig.tar.xz 641b249dc802ddaf55fff9426b393dfe02a1c0a1e7a186029436e9b63c33390e 2316 lsd2_1.9.9+dfsg-1.debian.tar.xz"
+    "8cb9638fd6527c4be2e02a876745e28d5b2fbe04d6780f61fe230c412848471b 2096 lsd2_1.9.9+dfsg-2.dsc 1f4f8abc1664469d9f589f7e64c6b971b421159b72890b3395128def97db8f49 112228 lsd2_1.9.9+dfsg.orig.tar.xz 3fba097dc130b16b988abf531600de637095c99decb089b99b356c9548937f39 4320 lsd2_1.9.9+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lsd2"
   ],
   "Files": [
-    "eb46baf41f501caa0575713daced8580 1933 lsd2_1.9.9+dfsg-1.dsc 4d763e238ce59f595b6767bc3f59fb6f 112228 lsd2_1.9.9+dfsg.orig.tar.xz d67779634b67095f72e93577fb86a00e 2316 lsd2_1.9.9+dfsg-1.debian.tar.xz"
+    "4a82592c9d57cff48fec45b506d4614f 2096 lsd2_1.9.9+dfsg-2.dsc 4d763e238ce59f595b6767bc3f59fb6f 112228 lsd2_1.9.9+dfsg.orig.tar.xz cd28881ce7ba05c62a6a9fd1b1c2d682 4320 lsd2_1.9.9+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "lsd2"
   ],
   "Package-List": [
-    "lsd2 deb science optional arch=any"
+    "liblsd2-0 deb libs optional arch=any liblsd2-dev deb libdevel optional arch=any lsd2 deb science optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "g++"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/med-team/lsd2.git"
   ],
   "Version": [
-    "1.9.9+dfsg-1"
+    "1.9.9+dfsg-2"
   ]
 }
