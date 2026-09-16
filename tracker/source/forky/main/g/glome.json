@@ -6,16 +6,16 @@
     "glome-common, glome-cli, glome-login, libglome0, libglome-dev, libpam-glome"
   ],
   "Build-Depends": [
-    "cargo:native, debhelper-compat (= 13), dh-sequence-cargo, libglib2.0-dev, libpam0g-dev, libpamtest0-dev, libpam-wrapper, librust-base64-dev, librust-clap-derive-dev, librust-clap-dev, librust-hmac-dev, librust-sha2-dev, librust-x25519-dalek-dev, libssl-dev, libstd-rust-dev, meson, rustc:native (\u003e= 1.74)"
+    "cargo:native, debhelper-compat (= 13), dh-sequence-cargo, libglib2.0-dev, libpam0g-dev, libpamtest0-dev, libpam-wrapper, librust-base64-dev (\u003e= 0.22), librust-clap-derive-dev (\u003e= 4), librust-clap-dev (\u003e= 4), librust-hmac-dev (\u003e= 0.13), librust-sha2-dev (\u003e= 0.11), librust-x25519-dalek-dev (\u003e= 3.0), libssl-dev, libstd-rust-dev, meson, rustc:native (\u003e= 1.74)"
   ],
   "Checksums-Sha256": [
-    "91128c2856397d8a215932778e330bd7c0cc6bc05641c5131cd660658140fc4f 2492 glome_0.3.0-5.dsc be904ce193dfaffc4901e9c0f3bde762dfc752da51012eb9972dc45f05db6638 98695 glome_0.3.0.orig.tar.gz 44966fa80ea400943b114588fc23e1978649a57fb37813b2ab1ff1318c7ee66d 5044 glome_0.3.0-5.debian.tar.xz"
+    "b1cf44fd7c9e491c3eab2fad0a456b335a7c9571110c199118774d883cd21a60 2561 glome_0.3.0-6.dsc be904ce193dfaffc4901e9c0f3bde762dfc752da51012eb9972dc45f05db6638 98695 glome_0.3.0.orig.tar.gz 9bfc383c3282b12197402508569f7c7b5e6e87b5a3454aedc744ba637c3ac5f0 5252 glome_0.3.0-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/glome"
   ],
   "Files": [
-    "c165111857ffb31fd1063ed495e64a49 2492 glome_0.3.0-5.dsc c1c678c2dffbae7c07c69955ff360c7a 98695 glome_0.3.0.orig.tar.gz 6ec9d9f62312abed19bb5794af19f270 5044 glome_0.3.0-5.debian.tar.xz"
+    "c617ec71ce3693f04e59f81190653c93 2561 glome_0.3.0-6.dsc c1c678c2dffbae7c07c69955ff360c7a 98695 glome_0.3.0.orig.tar.gz 7dec1e10185fce48219468f9a844f1b9 5252 glome_0.3.0-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "expect, login, openssh-server"
+    "expect, login, openssh-client, openssh-server"
   ],
   "Uploaders": [
     "Philipp Kern \u003cpkern@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/glome.git"
   ],
   "Version": [
-    "0.3.0-5"
+    "0.3.0-6"
   ]
 }

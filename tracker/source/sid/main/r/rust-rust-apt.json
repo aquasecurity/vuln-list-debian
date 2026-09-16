@@ -6,19 +6,19 @@
     "librust-rust-apt-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, apt \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo, apt \u003c!nocheck\u003e, gpgv \u003c!nocheck\u003e"
   ],
   "Build-Depends-Arch": [
     "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cxx-1+default-dev (\u003e= 1.0.192) \u003c!nocheck\u003e, librust-cxx-build-1+default-dev (\u003e= 1.0.192) \u003c!nocheck\u003e, libapt-pkg-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b5e012581d2e7866a6378f8534f1bbbf06455df3135f8401ed5583ada99951c8 2403 rust-rust-apt_0.11.3-1.dsc 6f3baa272fd784ce1a791ea2ef2f599fca23fbbbced7782a05c6f5007431ec79 84058 rust-rust-apt_0.11.3.orig.tar.gz 101b70d076133e2e47bf25c68979861a0a361fd915548b0766fb7759fb71ca9c 3480 rust-rust-apt_0.11.3-1.debian.tar.xz"
+    "27b503eb0a323678ec6744cbf8b930302a55a0bbbd3aa8bc421758247c8ba3d2 2426 rust-rust-apt_0.11.3-2.dsc 6f3baa272fd784ce1a791ea2ef2f599fca23fbbbced7782a05c6f5007431ec79 84058 rust-rust-apt_0.11.3.orig.tar.gz 8fb17afa0d6701a7fdc40e1121d7f9e4880dbadf47d256dbd987e1bb18286fd2 3508 rust-rust-apt_0.11.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rust-apt"
   ],
   "Files": [
-    "c9aed85a6a1f6dd95000a1b2692ce9f4 2403 rust-rust-apt_0.11.3-1.dsc 137976db34f285d77db64a1d7334cfb7 84058 rust-rust-apt_0.11.3.orig.tar.gz f9af5360fbff2d2b93794666f046ec3f 3480 rust-rust-apt_0.11.3-1.debian.tar.xz"
+    "265a951ef20ecca85757e85bb31bb872 2426 rust-rust-apt_0.11.3-2.dsc 137976db34f285d77db64a1d7334cfb7 84058 rust-rust-apt_0.11.3.orig.tar.gz f30ddcecd808c1f64e439b342df1c86a 3508 rust-rust-apt_0.11.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "apt, dh-cargo, dpkg-dev, g++, rustc"
+    "apt, dh-cargo, dpkg-dev, g++, gpgv, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e, Blake Lee \u003cblake@volian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rust-apt]"
   ],
   "Version": [
-    "0.11.3-1"
+    "0.11.3-2"
   ]
 }
