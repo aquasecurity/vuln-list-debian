@@ -3,7 +3,7 @@
     "all"
   ],
   "Binary": [
-    "installation-guide-amd64, installation-guide-arm64, installation-guide-armhf, installation-guide-ppc64el, installation-guide-riscv64, installation-guide-s390x"
+    "installation-guide-amd64, installation-guide-arm64, installation-guide-armhf, installation-guide-loong64, installation-guide-ppc64el, installation-guide-riscv64, installation-guide-s390x"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13)"
@@ -12,13 +12,13 @@
     "docbook, docbook-xml, docbook-xsl, xsltproc, gawk, libhtml-parser-perl, w3m, poxml, dblatex, docbook-dsssl, ghostscript, texlive-xetex, lmodern, texlive-lang-chinese, texlive-lang-cyrillic, texlive-lang-czechslovak, texlive-lang-european, texlive-lang-french, texlive-lang-german, texlive-lang-greek, texlive-lang-italian, texlive-lang-korean, texlive-lang-other, texlive-lang-portuguese, texlive-lang-spanish, fonts-wqy-microhei, fonts-vlgothic, fonts-noto-cjk, fonts-freefont-ttf"
   ],
   "Checksums-Sha256": [
-    "79742a893b3ee85c95a7c2ad572d5a013cc43f11625cca113cc6378be8e66b39 2607 installation-guide_20250823.dsc 70c47e019175e723948aaaab4ac0af8b8bafdde79c3700f739dd41659aaf6f94 4349124 installation-guide_20250823.tar.xz"
+    "96ff6c158fbd0525bf8626a86d46cc42ea41bb4811e5a7387d125236edc4824b 2761 installation-guide_20260916.dsc f988b50385245a4bc613bafe9e31df49ef821823b0406a0639f67f2fe585c62c 4342452 installation-guide_20260916.tar.xz"
   ],
   "Directory": [
     "pool/main/i/installation-guide"
   ],
   "Files": [
-    "d87dcfd2a16a32df66ea20dd7017e2ef 2607 installation-guide_20250823.dsc ffe2a389a5552ad925c898515d464657 4349124 installation-guide_20250823.tar.xz"
+    "0d847cc866a0acbe48375acc934a5afc 2761 installation-guide_20260916.dsc 4e1dd00b6c3e837227780303a1ff704d 4342452 installation-guide_20260916.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -30,7 +30,7 @@
     "installation-guide"
   ],
   "Package-List": [
-    "installation-guide-amd64 deb doc optional arch=all installation-guide-arm64 deb doc optional arch=all installation-guide-armhf deb doc optional arch=all installation-guide-ppc64el deb doc optional arch=all installation-guide-riscv64 deb doc optional arch=all installation-guide-s390x deb doc optional arch=all"
+    "installation-guide-amd64 deb doc optional arch=all installation-guide-arm64 deb doc optional arch=all installation-guide-armhf deb doc optional arch=all installation-guide-loong64 deb doc optional arch=all installation-guide-ppc64el deb doc optional arch=all installation-guide-riscv64 deb doc optional arch=all installation-guide-s390x deb doc optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.6.0"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, build-essential"
   ],
   "Uploaders": [
     "Samuel Thibault \u003csthibault@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/installer-team/installation-guide.git"
   ],
   "Version": [
-    "20250823"
+    "20260916"
   ]
 }
