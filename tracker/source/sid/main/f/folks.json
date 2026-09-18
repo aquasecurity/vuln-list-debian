@@ -6,19 +6,19 @@
     "libfolks26, libfolks-dev, libfolks-doc, folks-common, gir1.2-folks-0.7, libfolks-telepathy26, libfolks-telepathy-dev, libfolks-telepathy-doc, libfolks-eds26, libfolks-eds-dev, libfolks-eds-doc, libfolks-dummy26, libfolks-dummy-dev, libfolks-dummy-doc, folks-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, dh-sequence-gnome, evolution-data-server (\u003e= 3.38) \u003c!nocheck\u003e, evolution-data-server-dev (\u003e= 3.38), gir1.2-ebookcontacts-1.2-dev, gir1.2-edataserver-1.2-dev, gir1.2-gee-0.8-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gir1.2-telepathyglib-0.12, gir1.2-telepathyglib-0.12-dev, gobject-introspection (\u003e= 1.80), libdbus-glib-1-dev, libebook-contacts1.2-dev (\u003e= 3.33.2), libebook1.2-dev (\u003e= 3.33.2), libedataserver1.2-dev (\u003e= 3.33.2), libgee-0.8-dev (\u003e= 0.8.4), libglib2.0-dev (\u003e= 2.58), libreadline-dev, libsysprof-capture-4-dev (\u003e= 3.38.0) [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x hppa loong64 powerpc ppc64 sh4], libtelepathy-glib-dev (\u003e= 0.19.9), libxml2-dev, meson (\u003e= 0.57), python3-dbusmock, valac (\u003e= 0.22)"
+    "debhelper-compat (= 14), dh-sequence-gir, dh-sequence-gnome, evolution-data-server \u003c!nocheck\u003e, evolution-data-server-dev, gir1.2-ebookcontacts-1.2-dev, gir1.2-edataserver-1.2-dev, gir1.2-gee-0.8-dev, gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gir1.2-telepathyglib-0.12-dev [linux-any], libdbus-glib-1-dev, libebook-contacts1.2-dev, libebook1.2-dev, libedataserver1.2-dev, libgee-0.8-dev, libglib2.0-dev, libreadline-dev, libsysprof-capture-4-dev [linux-any], libtelepathy-glib-dev, libxml2-dev, meson, python3-dbusmock, valac"
   ],
   "Build-Depends-Indep": [
     "gtk-doc-tools \u003c!nodoc\u003e, valadoc \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "09df6ec638e1f6ffd770e7b7eb7711f8013bcd5f308990cac1a538678fe27600 3777 folks_0.15.12-1.dsc 21f44e2bdabb1ee7f8e41bb996d10ac7daf35c78c498177db0c00f580a20a914 513004 folks_0.15.12.orig.tar.xz 1177101d07dc42c1617d20781498d9e3cb9fdf91c636c7a91ee7b55971b2687f 12792 folks_0.15.12-1.debian.tar.xz"
+    "f2bf1370ae118e3243103ea056cd622f3a82a7c314aa0616e3446e8cc10bb521 3599 folks_0.15.12-3.dsc 21f44e2bdabb1ee7f8e41bb996d10ac7daf35c78c498177db0c00f580a20a914 513004 folks_0.15.12.orig.tar.xz cd69a5ce8741688c457467b94c7149ed0b2fa8830cf931c3ab81d40045ed8d94 13192 folks_0.15.12-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/folks"
   ],
   "Files": [
-    "6048f9fd4ee7dbbcdc4659d28d404a2d 3777 folks_0.15.12-1.dsc f1c82f88fd54c3d6439d069c2277565c 513004 folks_0.15.12.orig.tar.xz 43a5aee25969fae02f2c86cdb920ce67 12792 folks_0.15.12-1.debian.tar.xz"
+    "17493a243ff6967a8fbe0431402c9552 3599 folks_0.15.12-3.dsc f1c82f88fd54c3d6439d069c2277565c 513004 folks_0.15.12.orig.tar.xz 1ac99195ba3b348083518347b5f0bb95 13192 folks_0.15.12-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "folks"
   ],
   "Package-List": [
-    "folks-common deb libs optional arch=all folks-tools deb utils optional arch=any gir1.2-folks-0.7 deb introspection optional arch=any libfolks-dev deb libdevel optional arch=any libfolks-doc deb doc optional arch=all profile=!nodoc libfolks-dummy-dev deb libdevel optional arch=any libfolks-dummy-doc deb doc optional arch=all profile=!nodoc libfolks-dummy26 deb libs optional arch=any libfolks-eds-dev deb libdevel optional arch=any libfolks-eds-doc deb doc optional arch=all profile=!nodoc libfolks-eds26 deb libs optional arch=any libfolks-telepathy-dev deb libdevel optional arch=any libfolks-telepathy-doc deb doc optional arch=all profile=!nodoc libfolks-telepathy26 deb libs optional arch=any libfolks26 deb libs optional arch=any"
+    "folks-common deb libs optional arch=all folks-tools deb utils optional arch=any gir1.2-folks-0.7 deb introspection optional arch=any libfolks-dev deb libdevel optional arch=any libfolks-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libfolks-dummy-dev deb libdevel optional arch=any libfolks-dummy-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libfolks-dummy26 deb libs optional arch=any libfolks-eds-dev deb libdevel optional arch=any libfolks-eds-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libfolks-eds26 deb libs optional arch=any libfolks-telepathy-dev deb libdevel optional arch=any libfolks-telepathy-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libfolks-telepathy26 deb libs optional arch=any libfolks26 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,7 +42,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Uploaders": [
     "Emilio Pozuelo Monfort \u003cpochu@debian.org\u003e, Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Laurent Bigonville \u003cbigon@debian.org\u003e"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/gnome-team/folks.git"
   ],
   "Version": [
-    "0.15.12-1"
+    "0.15.12-3"
   ]
 }
