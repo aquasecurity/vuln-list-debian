@@ -6,19 +6,19 @@
     "librust-rust-apt-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo"
+    "debhelper-compat (= 13), dh-sequence-cargo, apt \u003c!nocheck\u003e, gpgv \u003c!nocheck\u003e"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cxx-1+default-dev \u003c!nocheck\u003e, librust-cxx-build-1+default-dev \u003c!nocheck\u003e, librust-paste-1+default-dev \u003c!nocheck\u003e, librust-terminal-size-0+default-dev (\u003e= 0.3.0-~~) \u003c!nocheck\u003e, libapt-pkg-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cxx-1+default-dev (\u003e= 1.0.192) \u003c!nocheck\u003e, librust-cxx-build-1+default-dev (\u003e= 1.0.192) \u003c!nocheck\u003e, libapt-pkg-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4341c22916fc2b9730babe205d5a6bd5b1db6596ed36a112661449ad0cb393bc 1837 rust-rust-apt_0.8.0-2.dsc 89d78ef02335b0d12dff96f742b2124f371922d3efbedbcba5703025bb0e37a6 71973 rust-rust-apt_0.8.0.orig.tar.gz 87845bffa5da3c58e19d89eb492ebcf4d82e2541011333d8a6fc3151a4ce4c53 4756 rust-rust-apt_0.8.0-2.debian.tar.xz"
+    "27b503eb0a323678ec6744cbf8b930302a55a0bbbd3aa8bc421758247c8ba3d2 2426 rust-rust-apt_0.11.3-2.dsc 6f3baa272fd784ce1a791ea2ef2f599fca23fbbbced7782a05c6f5007431ec79 84058 rust-rust-apt_0.11.3.orig.tar.gz 8fb17afa0d6701a7fdc40e1121d7f9e4880dbadf47d256dbd987e1bb18286fd2 3508 rust-rust-apt_0.11.3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rust-apt"
   ],
   "Files": [
-    "db58822b0bb2759356e74d41cc45c1fd 1837 rust-rust-apt_0.8.0-2.dsc 9f82ff1769fb7c0a760cfd52ba77ac1b 71973 rust-rust-apt_0.8.0.orig.tar.gz f56f3cebdcee7d39d2517ff2b912852e 4756 rust-rust-apt_0.8.0-2.debian.tar.xz"
+    "265a951ef20ecca85757e85bb31bb872 2426 rust-rust-apt_0.11.3-2.dsc 137976db34f285d77db64a1d7334cfb7 84058 rust-rust-apt_0.11.3.orig.tar.gz f30ddcecd808c1f64e439b342df1c86a 3508 rust-rust-apt_0.11.3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, g++, rustc"
+    "apt, dh-cargo, dpkg-dev, g++, gpgv, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e, Blake Lee \u003cblake@volian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rust-apt]"
   ],
   "Version": [
-    "0.8.0-2"
+    "0.11.3-2"
   ]
 }
