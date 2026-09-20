@@ -6,16 +6,16 @@
     "python3-pymediainfo, python-pymediainfo-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-myst-parser, python3-pdm-backend, pybuild-plugin-pyproject, python3-setuptools, python3-setuptools-scm, python3-sphinx"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, libmediainfo0v5 \u003c!nocheck\u003e, python3-all, python3-myst-parser \u003c!nodoc\u003e, python3-pdm-backend, python3-pytest \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-setuptools-scm \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "d8e4f5fe311c6d1dbec42a160aca23e4f25b59b2914534dfab5900811312211c 2230 pymediainfo_7.0.1-2.dsc f11ab5c30116e7880483a9c22d5ca2ef36e84759c21e6c075122e2611fb50ccf 438695 pymediainfo_7.0.1.orig.tar.gz 7c0349c07bacd2aed92e619d6af3636f97f7f10a96c760279cc0e6809da10ca9 3292 pymediainfo_7.0.1-2.debian.tar.xz"
+    "09fdea7aa813205f1fe73b50fd37b87665f08f8321e338a37f104a52e4efb514 2359 pymediainfo_7.0.1-3.dsc f11ab5c30116e7880483a9c22d5ca2ef36e84759c21e6c075122e2611fb50ccf 438695 pymediainfo_7.0.1.orig.tar.gz 7fe3d3d89dc746ad817edd8de109403ae33542dcbb9791c80633531a61d67ebf 3684 pymediainfo_7.0.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pymediainfo"
   ],
   "Files": [
-    "d2f622fb3015b15a550f7f6cc1198224 2230 pymediainfo_7.0.1-2.dsc 8b5a2ad255e01e43d650221cc3347728 438695 pymediainfo_7.0.1.orig.tar.gz 9045e529c93bf182017c6903868e8f52 3292 pymediainfo_7.0.1-2.debian.tar.xz"
+    "8543ae129dff251e8320ad4dc75fd952 2359 pymediainfo_7.0.1-3.dsc 8b5a2ad255e01e43d650221cc3347728 438695 pymediainfo_7.0.1.orig.tar.gz 0b79100318bae8ecd1f38c89fb658d48 3684 pymediainfo_7.0.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Antoine Beaupré \u003canarcat@debian.org\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/pymediainfo.git"
   ],
   "Version": [
-    "7.0.1-2"
+    "7.0.1-3"
   ]
 }
