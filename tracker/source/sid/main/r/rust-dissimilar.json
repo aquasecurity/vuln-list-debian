@@ -6,19 +6,25 @@
     "librust-dissimilar-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 26), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.68) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1ad6b78b2fc0f0987a3c3a357363c887e9c1192ec719c5ccebbbeb6d9a3d4546 2179 rust-dissimilar_1.0.2-1.dsc fc4b29f4b9bb94bf267d57269fd0706d343a160937108e9619fe380645428abb 27914 rust-dissimilar_1.0.2.orig.tar.gz 1520457ab3b7d00c2ca6ad06bffd10d25114c601c702c4a8aef5ae7e22e04724 9184 rust-dissimilar_1.0.2-1.debian.tar.xz"
+    "ba5db55a74e915569a9412c1fba14d4668f51db2db74f4fbc2fbcc64b8094f16 2270 rust-dissimilar_1.0.11-1.dsc aeda16ab4059c5fd2a83f2b9c9e9c981327b18aa8e3b313f7e6563799d4f093e 31622 rust-dissimilar_1.0.11.orig.tar.gz 04d3e852bb4993d91ada87b317e8ab1729eddafad481b8358b99198608603df3 9548 rust-dissimilar_1.0.11-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-dissimilar"
   ],
   "Files": [
-    "b8fd278e206d3c3ccc83441121d8aae5 2179 rust-dissimilar_1.0.2-1.dsc 3275aedc366172e5f0770c17f1b7f7f4 27914 rust-dissimilar_1.0.2.orig.tar.gz 9eda378e1444871f35606d361ddddfcb 9184 rust-dissimilar_1.0.2-1.debian.tar.xz"
+    "f8d7cb869dc18c89db658151c55c7488 2270 rust-dissimilar_1.0.11-1.dsc c67e55ca68ca0d0c5158f441c9f16ed9 31622 rust-dissimilar_1.0.11.orig.tar.gz 1fa116fd7654d9259f40198a27d3d7f2 9548 rust-dissimilar_1.0.11-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/dtolnay/dissimilar"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-criterion-0.5-dev, rustc"
   ],
   "Uploaders": [
     "Wolfgang Silbermayr \u003cwolfgang@silbermayr.at\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/dissimilar]"
   ],
   "Version": [
-    "1.0.2-1"
+    "1.0.11-1"
   ]
 }

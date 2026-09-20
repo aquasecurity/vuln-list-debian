@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.2-~~) \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+sync-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.63) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev (\u003e= 1.2) \u003c!nocheck\u003e, librust-http-1+default-dev \u003c!nocheck\u003e, librust-http-body-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+default-dev \u003c!nocheck\u003e, librust-tokio-1+sync-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8a8dd7f1af7ee4fd9611a8f39c6d04d5cc429dc0494af9702df955d32f8c9816 3164 rust-hyper_1.8.1-1.dsc 2ab2d4f250c3d7b1c9fcdff1cece94ea4e2dfbec68614f7b87cb205f24ca9d11 157353 rust-hyper_1.8.1.orig.tar.gz ff2a928532bbac91c586d8167f5025950dea45e99c03864f4788d2d93b327c1f 5000 rust-hyper_1.8.1-1.debian.tar.xz"
+    "2aad22fa2f965f5d1ae65e5dad9707ac54dcb741678232d44f6af85d2f37f6a4 3215 rust-hyper_1.11.1-1.dsc 27b501faa50e7a26c3d3560ca625132f4078a17771f4810baf70475ae48cbe43 170053 rust-hyper_1.11.1.orig.tar.gz 3bd6a8f3127dd811f10305553ae35f5cf5385285d352046f8562068cf12cd7bb 5728 rust-hyper_1.11.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-hyper"
   ],
   "Files": [
-    "0dd44688b44c3f3a31e7be110f2c0dfb 3164 rust-hyper_1.8.1-1.dsc e0aaefdd1f59bdda0fdb98943105935b 157353 rust-hyper_1.8.1.orig.tar.gz f2d38819257024dfa22d06545847ce92 5000 rust-hyper_1.8.1-1.debian.tar.xz"
+    "f4375814818bcea433bd4950ef686470 3215 rust-hyper_1.11.1-1.dsc 99962227072ffc59361121ea2dc13f4f 170053 rust-hyper_1.11.1.orig.tar.gz c5d703d9588d980a481606e5bd2f13ad 5728 rust-hyper_1.11.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-form-urlencoded-1+default-dev, librust-futures-channel-0.3+default-dev, librust-futures-channel-0.3+sink-dev, librust-futures-util-0.3+alloc-dev, librust-futures-util-0.3+sink-dev, librust-http-body-util-0.1+default-dev, librust-pin-project-lite-0.2+default-dev, librust-pretty-env-logger-0.5+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, librust-tokio-1+test-util-dev, librust-tokio-1+time-dev, librust-tokio-test-0.4+default-dev, librust-tokio-util-0.7+default-dev, rustc"
+    "dh-cargo, librust-form-urlencoded-1+default-dev, librust-futures-channel-0.3+default-dev, librust-futures-channel-0.3+sink-dev, librust-futures-util-0.3+alloc-dev, librust-futures-util-0.3+sink-dev, librust-http-body-util-0.1+default-dev, librust-pin-project-lite-0.2+default-dev, librust-pretty-env-logger-0.5+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+fs-dev, librust-tokio-1+io-std-dev, librust-tokio-1+io-util-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, librust-tokio-1+test-util-dev, librust-tokio-1+time-dev, librust-tokio-test-0.4+default-dev, librust-tokio-util-0.7+default-dev, librust-tracing-0.1+default-dev, librust-tracing-subscriber-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/hyper]"
   ],
   "Version": [
-    "1.8.1-1"
+    "1.11.1-1"
   ]
 }
