@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-foldhash-0.2-dev \u003c!nocheck\u003e, librust-hifijson-0.5+alloc-dev \u003c!nocheck\u003e, librust-hifijson-0.5+std-dev \u003c!nocheck\u003e, librust-indexmap-2-dev \u003c!nocheck\u003e, librust-jaq-core-3+default-dev (\u003e= 3.1.0) \u003c!nocheck\u003e, librust-jaq-std-3+default-dev (\u003e= 3.0.1) \u003c!nocheck\u003e, librust-num-bigint-0.4-dev (\u003e= 0.4.6) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.19) \u003c!nocheck\u003e, librust-ryu-1+default-dev (\u003e= 1.0.20) \u003c!nocheck\u003e, librust-self-cell-1+default-dev (\u003e= 1.2.0) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+default-dev \u003c!nocheck\u003e, librust-bytes-1+default-dev \u003c!nocheck\u003e, librust-foldhash-0.2-dev \u003c!nocheck\u003e, librust-hifijson-0.5+alloc-dev \u003c!nocheck\u003e, librust-hifijson-0.5+std-dev \u003c!nocheck\u003e, librust-indexmap-2-dev \u003c!nocheck\u003e, librust-jaq-core-3+std-dev (\u003e= 3.1.0) \u003c!nocheck\u003e, librust-jaq-core-3-dev (\u003e= 3.1.0) \u003c!nocheck\u003e, librust-jaq-std-3+std-dev (\u003e= 3.0.1) \u003c!nocheck\u003e, librust-jaq-std-3-dev (\u003e= 3.0.1) \u003c!nocheck\u003e, librust-num-bigint-0.4-dev (\u003e= 0.4.6) \u003c!nocheck\u003e, librust-num-traits-0.2-dev (\u003e= 0.2.19) \u003c!nocheck\u003e, librust-ryu-1+default-dev (\u003e= 1.0.20) \u003c!nocheck\u003e, librust-self-cell-1+default-dev (\u003e= 1.2.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b4c63555b36e10e4c2a8e521f90b17d8335b5c6759b364dab89653904a6c0873 2178 rust-jaq-json_2.0.1-1.dsc d4ec9aaad7340e6990c6c1878ef3b46dbec624e535d7f786cc9ddcf94f773d33 30401 rust-jaq-json_2.0.1.orig.tar.gz d3ff9843ecf8989c931b5dffc7a084e2c69c85b5976a99193285f0bf656a0bf1 3228 rust-jaq-json_2.0.1-1.debian.tar.xz"
+    "0473116d393c7b6c05b6412342871373d88b666edf1ac98a6cc4964a429a1de4 3066 rust-jaq-json_2.0.2-1.dsc 48d801b0b57f10064c4e9f5a4f6c97d0ccf62649b179ff8ac23cd494a3120ee9 28762 rust-jaq-json_2.0.2.orig.tar.gz 867f7e9f12f0de54e6b7b51bbc1a295197b6ceb9b25d963ae9eb44beed77767e 3456 rust-jaq-json_2.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-jaq-json"
   ],
   "Files": [
-    "08211257d4d6f8f94806b13b41a37345 2178 rust-jaq-json_2.0.1-1.dsc 8d8db3a4986c51bf823ecb20036c448f 30401 rust-jaq-json_2.0.1.orig.tar.gz 7fba482dd7f349079fba8e320cf07c68 3228 rust-jaq-json_2.0.1-1.debian.tar.xz"
+    "7349425da920c1f83c6c96e8c2ab572c 3066 rust-jaq-json_2.0.2-1.dsc 878e598efd9eae4f53e4964fe9191f21 28762 rust-jaq-json_2.0.2.orig.tar.gz 98a0a7ab44d30e62bcd92e5ed0ff911f 3456 rust-jaq-json_2.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-jaq-std-3+default-dev, librust-jaq-std-3+format-dev, librust-jaq-std-3+log-dev, librust-jaq-std-3+math-dev, librust-jaq-std-3+regex-dev, librust-jaq-std-3+std-dev, librust-jaq-std-3+time-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Ivan Carvalho \u003civancarvalho@google.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/jaq-json]"
   ],
   "Version": [
-    "2.0.1-1"
+    "2.0.2-1"
   ]
 }
