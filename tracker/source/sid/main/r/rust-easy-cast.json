@@ -3,22 +3,28 @@
     "any"
   ],
   "Binary": [
-    "librust-easy-cast-dev, librust-easy-cast+always-assert-dev, librust-easy-cast+libm-dev"
+    "librust-easy-cast-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.79.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8b720bd622d922679c3faef8f61d2a7f952030e54f58f3c13097aed9e1e9c3b4 2319 rust-easy-cast_0.4.4-1.dsc 4bd102ee8c418348759919b83b81cdbdc933ffe29740b903df448b4bafaa348e 11814 rust-easy-cast_0.4.4.orig.tar.gz 9e6ed274ba1b27ecb81f6ba1f77987c78dfd8f09265380b701159f2deb765f1e 2304 rust-easy-cast_0.4.4-1.debian.tar.xz"
+    "87444aef1a6756dfa9522a8ccf4e1ceca33d5012dcaf96cbfd3a565630673762 1621 rust-easy-cast_0.5.4-1.dsc 23f40539c229fc2e4674bdecdf24bfcc2cb83631ca911c78a035fa9f2381c32b 18284 rust-easy-cast_0.5.4.orig.tar.gz e433b9a3f26aa4f9ba27e5f38293fc459dd1b237dbb3b496e76908377995d428 2404 rust-easy-cast_0.5.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-easy-cast"
   ],
   "Files": [
-    "b05dd98434c5b63b024130dcc4bb0411 2319 rust-easy-cast_0.4.4-1.dsc 985c4cee9dc4fcc2990755981c027d98 11814 rust-easy-cast_0.4.4.orig.tar.gz 69ee9bcf6b1fb4f5c26009eec5ba5847 2304 rust-easy-cast_0.4.4-1.debian.tar.xz"
+    "1a96c7b967303013af83dbca1cd4d187 1621 rust-easy-cast_0.5.4-1.dsc a31a089c33f0c32bdcadd94273811c88 18284 rust-easy-cast_0.5.4.orig.tar.gz 2184d854d7c131285c7d2f0780c34f1c 2404 rust-easy-cast_0.5.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/kas-gui/easy-cast"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -27,7 +33,7 @@
     "rust-easy-cast"
   ],
   "Package-List": [
-    "librust-easy-cast+always-assert-dev deb rust optional arch=any librust-easy-cast+libm-dev deb rust optional arch=any librust-easy-cast-dev deb rust optional arch=any"
+    "librust-easy-cast-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/easy-cast]"
   ],
   "Version": [
-    "0.4.4-1"
+    "0.5.4-1"
   ]
 }
