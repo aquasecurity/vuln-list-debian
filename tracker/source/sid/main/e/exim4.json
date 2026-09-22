@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "exim4-base, exim4-config, exim4-daemon-light, exim4, exim4-daemon-heavy, exim4-daemon-mod, eximon4, exim4-dev, exim4-mod-ldap, exim4-mod-cyrus-sasl, exim4-mod-mysql, exim4-mod-pam, exim4-mod-perl, exim4-mod-postgresql, exim4-mod-spf"
+    "exim4-base, exim4-config, exim4-daemon-light, exim4, exim4-daemon-heavy, exim4-daemon-mod, eximon4, exim4-dev, exim4-mod-ldap, exim4-mod-cyrus-sasl, exim4-mod-gsasl, exim4-mod-mysql, exim4-mod-pam, exim4-mod-perl, exim4-mod-postgresql, exim4-mod-spf"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-installsysusers, docbook-xml, docbook-xsl, libfile-fcntllock-perl, libgnutls28-dev (\u003e= 3.5.7), libidn-dev, libidn2-dev, libldap2-dev, libmariadb-dev, libpam0g-dev, libpcre2-dev, libperl-dev, libpq-dev, libsasl2-dev, libspf2-dev, libsqlite3-dev, libx11-dev, libxaw7-dev, libxext-dev, libxmu-dev, libxt-dev, lynx, po-debconf, xsltproc"
+    "debhelper-compat (= 13), dh-sequence-installsysusers, docbook-xml, docbook-xsl, libfile-fcntllock-perl, libgnutls28-dev (\u003e= 3.5.7), libgsasl-dev, libidn-dev, libidn2-dev, libldap2-dev, libmariadb-dev, libpam0g-dev, libpcre2-dev, libperl-dev, libpq-dev, libsasl2-dev, libspf2-dev, libsqlite3-dev, libx11-dev, libxaw7-dev, libxext-dev, libxmu-dev, libxt-dev, lynx, po-debconf, xsltproc"
   ],
   "Checksums-Sha256": [
-    "9a022e1a1da32f37fca8d2b4e3795b01b54c4712f390c61a2a9117c6a7645ebf 3360 exim4_4.100-3.dsc 5bd0a3e353dbfcd5c8174388b824316a61ee2455d9052ea2f0877dee939d33b3 2007860 exim4_4.100.orig.tar.xz 1650a5e4615cd8e5befcd11e91bc7fcf6b0b8dd9572920eb58a9c8399c7f13cc 252 exim4_4.100.orig.tar.xz.asc 3408f5c0cd7fbb1cae9c9ea4d247d618063af65f05412349a4041e8aee1827a0 460240 exim4_4.100-3.debian.tar.xz"
+    "56dd0420a8d0103350f768ca7ada0809b05ba826e7ff59be304b46d98123d636 3455 exim4_4.100.1-1.dsc e9fb41f6724a5b136d64c9d19dbc5f26494af879a3e7e3190f91639eaa79fa0d 2007956 exim4_4.100.1.orig.tar.xz a94a658998ff794a93db399b9310a60e2382389d9c105de7899293967c93f787 252 exim4_4.100.1.orig.tar.xz.asc eae0695f7ccb0557bc9bdc1465e51bb8631ee9af325acdc64a586dc8992f06f0 463248 exim4_4.100.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/exim4"
   ],
   "Files": [
-    "18e81a6a8fad8b86b4c01db08ac51c9d 3360 exim4_4.100-3.dsc 0fa646b6f2a40e6b86604926b4a8bcfc 2007860 exim4_4.100.orig.tar.xz b1def3497f3481d34fb9af981f070066 252 exim4_4.100.orig.tar.xz.asc b07b9bd468033ad859258839ebe199a1 460240 exim4_4.100-3.debian.tar.xz"
+    "dfe83c6026f57652ba4090ea498f423a 3455 exim4_4.100.1-1.dsc 2156671c9739e4e53b7b2fd9357038ab 2007956 exim4_4.100.1.orig.tar.xz c31716f2a37496b674ed60938ba3a6c2 252 exim4_4.100.1.orig.tar.xz.asc 65709e8fe50098e470451079dd484035 463248 exim4_4.100.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "exim4"
   ],
   "Package-List": [
-    "exim4 deb mail optional arch=all exim4-base deb mail optional arch=any exim4-config deb mail optional arch=all exim4-daemon-heavy deb mail optional arch=any exim4-daemon-light deb mail optional arch=any exim4-daemon-mod deb mail optional arch=any exim4-dev deb mail optional arch=any exim4-mod-cyrus-sasl deb mail optional arch=any exim4-mod-ldap deb mail optional arch=any exim4-mod-mysql deb mail optional arch=any exim4-mod-pam deb mail optional arch=any exim4-mod-perl deb mail optional arch=any exim4-mod-postgresql deb mail optional arch=any exim4-mod-spf deb mail optional arch=any eximon4 deb mail optional arch=any"
+    "exim4 deb mail optional arch=all exim4-base deb mail optional arch=any exim4-config deb mail optional arch=all exim4-daemon-heavy deb mail optional arch=any exim4-daemon-light deb mail optional arch=any exim4-daemon-mod deb mail optional arch=any exim4-dev deb mail optional arch=any exim4-mod-cyrus-sasl deb mail optional arch=any exim4-mod-gsasl deb mail optional arch=any exim4-mod-ldap deb mail optional arch=any exim4-mod-mysql deb mail optional arch=any exim4-mod-pam deb mail optional arch=any exim4-mod-perl deb mail optional arch=any exim4-mod-postgresql deb mail optional arch=any exim4-mod-spf deb mail optional arch=any eximon4 deb mail optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/exim-team/exim4.git"
   ],
   "Version": [
-    "4.100-3"
+    "4.100.1-1"
   ]
 }
