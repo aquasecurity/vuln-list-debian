@@ -6,19 +6,19 @@
     "migraphx, migraphx-doc, migraphx-tools, migraphx-tests, migraphx-dev, libmigraphx-c3, libmigraphx-c-dev"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit, clang, cmake, debhelper-compat (= 13), libboost-dev, libhalf-dev, libmsgpack-c-dev, libmsgpack-cxx-dev, libprotobuf-dev, libsqlite3-dev, nlohmann-json3-dev, protobuf-compiler, pybind11-dev, python3-sphinx-collapse, rocm-cmake"
+    "architecture-is-64-bit, clang, cmake, debhelper-compat (= 13), hipcc [arm64 amd64], libboost-dev, libhalf-dev, libhipblas-common-dev, libhipblas-dev, libhipblaslt-dev, libmiopen-dev, libmsgpack-c-dev, libmsgpack-cxx-dev, libprotobuf-dev, librocblas-dev, libsqlite3-dev, nlohmann-json3-dev, protobuf-compiler, pybind11-dev, python3-sphinx-collapse, rocm-cmake"
   ],
   "Build-Depends-Indep": [
     "python3-rocm-docs (\u003e= 1.20.0-1~) \u003c!nodoc\u003e, sphinx-common \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "d152f890dd7cdad1091c70d0d0be5388a5499f1a8de2068f65c76176fc26330b 2717 migraphx_7.1.1-7.dsc 66d7317770eefc3fbc06cb875109d4478f3779680e50320013d504a3f8f747fd 4255036 migraphx_7.1.1.orig.tar.gz 2f4e71f55ef8d7b375300f87838ead9a4623066b6823af1d58d1407a80e3fce2 12524 migraphx_7.1.1-7.debian.tar.xz"
+    "e4e53491e70ea8129c297443860d7b05b1955e83b1ff558bc37def22ad5299c2 2842 migraphx_7.1.1-8.dsc 66d7317770eefc3fbc06cb875109d4478f3779680e50320013d504a3f8f747fd 4255036 migraphx_7.1.1.orig.tar.gz 8de75ad315e4500e9922b895e37e4e2b71e44f59e40f13b90ccc8eeaedb4ad81 13368 migraphx_7.1.1-8.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/migraphx"
   ],
   "Files": [
-    "7ec1600305d58b8945e12df5b97065cb 2717 migraphx_7.1.1-7.dsc ec94ae6685e98c333cb8a02113693d76 4255036 migraphx_7.1.1.orig.tar.gz ae9689904937398e78df0ac3c136883f 12524 migraphx_7.1.1-7.debian.tar.xz"
+    "9024eea0350d41378d333cf59d4235fa 2842 migraphx_7.1.1-8.dsc ec94ae6685e98c333cb8a02113693d76 4255036 migraphx_7.1.1.orig.tar.gz 32a479b544198708b9bf216493e88c6b 13368 migraphx_7.1.1-8.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "libdevel"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "g++"
+    "g++, pkg-rocm-tools"
   ],
   "Uploaders": [
     "Utkarsh Raj \u003cencode.sh@protonmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rocm-team/migraphx.git"
   ],
   "Version": [
-    "7.1.1-7"
+    "7.1.1-8"
   ]
 }
