@@ -9,22 +9,22 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-ringbuf-0.3+default-dev \u003c!nocheck\u003e, librust-rkyv-0.8+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-serde-1+derive-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.93.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-libc-0.2+default-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-ringbuf-0.3+default-dev \u003c!nocheck\u003e, librust-rkyv-0.8+alloc-dev \u003c!nocheck\u003e, librust-rkyv-0.8+bytecheck-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "accb328483a23adbe9d93b15b0a65c26648533aed84d58020ba0555bd593ffac 2560 rust-rootasrole-exec_4.0.0-1.dsc ebe36b9d64237dc7d0289af4a1b55360a71e8f66c6fa8a0e59dfb09fd9afb19c 34210 rust-rootasrole-exec_4.0.0.orig.tar.gz 6be6d9d9aa41c428485f5a57f3843dd97f3d64f001feb0c45778dfd8adf1b00c 3264 rust-rootasrole-exec_4.0.0-1.debian.tar.xz"
+    "3f945c99f0d0363e60f087e71dae220a1c27ef1fb026270f611103225c7c3464 2490 rust-rootasrole-exec_4.0.2-1.dsc 3e07e43e418c9711da96f1f2233707cce0b8a4225d4963a31a053b7d02bddbbd 32246 rust-rootasrole-exec_4.0.2.orig.tar.gz 1a231c1a44ecdfffa522ef23e2e84e841189664eeeca98cbba54ecb9d5a90c35 3660 rust-rootasrole-exec_4.0.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-rootasrole-exec"
   ],
   "Files": [
-    "1fc3f19114df528f085ad877f5eddb37 2560 rust-rootasrole-exec_4.0.0-1.dsc 0070f4917cf1a562015a2736dbb25117 34210 rust-rootasrole-exec_4.0.0.orig.tar.gz 3bbb874304a239bda3cd8f020213832a 3264 rust-rootasrole-exec_4.0.0-1.debian.tar.xz"
+    "b75943b6f6927070e361127fba7bfc14 2490 rust-rootasrole-exec_4.0.2-1.dsc b9640ed3d00edcd2c52ff7f9176db0db 32246 rust-rootasrole-exec_4.0.2.orig.tar.gz 86e9ca0737b59080b3f5c35651412e77 3660 rust-rootasrole-exec_4.0.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://crates.io/crates/rootasrole-exec/4.0.0"
+    "https://lechatp.github.io/RootAsRole/"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -42,13 +42,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-serial-test-3+default-dev, rustc"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Eddie Billoir \u003clechatp@outlook.fr\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/rootasrole-exec]"
   ],
   "Version": [
-    "4.0.0-1"
+    "4.0.2-1"
   ]
 }
