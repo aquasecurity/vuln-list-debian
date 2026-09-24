@@ -6,19 +6,25 @@
     "librust-want-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-log-0.4+default-dev \u003c!nocheck\u003e, librust-try-lock-0.2+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-try-lock-0.2+default-dev (\u003e= 0.2.4) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "827a795676cad207a4a033c31200c89634bedc0d4953eaf1495bb2c08b20c079 2293 rust-want_0.3.0-1.dsc 84a492269037b672a6df4da1b9eaa21dedfc368a98558f725f834939527de432 6427 rust-want_0.3.0.orig.tar.gz c3d60cb753fb5c4682db8a938e6a4bb67806f339570ffdb55d7dc78d5d1ef786 3176 rust-want_0.3.0-1.debian.tar.xz"
+    "e401ef6f8b894bd97e40cebaf3b4b7447e778cfcb0db613a1c8c32b2a56748f0 2323 rust-want_0.3.1+ds-1.dsc 1332741f4c661b780c3377e478d76c69beacb912a1bc43c4c53b5e5411655a95 6278 rust-want_0.3.1+ds.orig.tar.gz 1ebbc8dccb5d895cea06d0026f4b4a38f55d512e15d379a47d8c69989179654d 3368 rust-want_0.3.1+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-want"
   ],
   "Files": [
-    "ab128c859495aad74023b2f9ac21a20a 2293 rust-want_0.3.0-1.dsc 069dc2bd7de39e667e0cf76b66679017 6427 rust-want_0.3.0.orig.tar.gz 0b971e6e9bc9f21316a40a1d49dca1d6 3176 rust-want_0.3.0-1.debian.tar.xz"
+    "119f6d988e0f925c37ac0a83a95fe0ef 2323 rust-want_0.3.1+ds-1.dsc 53cf0180c88bb5743d104eceaceb5abc 6278 rust-want_0.3.1+ds.orig.tar.gz bdf340cfdb906a0a256b49cf04474025 3368 rust-want_0.3.1+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/seanmonstar/want"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-tokio-0.2+default-dev, librust-tokio-0.2+rt-core-dev, librust-tokio-0.2+sync-dev"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+rt-dev, librust-tokio-1+sync-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e, Robin Krahl \u003crobin.krahl@ireas.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/want]"
   ],
   "Version": [
-    "0.3.0-1"
+    "0.3.1+ds-1"
   ]
 }
