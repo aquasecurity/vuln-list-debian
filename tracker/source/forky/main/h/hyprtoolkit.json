@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "libhyprtoolkit-dev, libhyprtoolkit5"
+    "libhyprtoolkit-dev, libhyprtoolkit6"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, hyprwayland-scanner (\u003e= 0.4.0), libaquamarine-dev (\u003e= 0.10.0), libcairo2-dev, libdrm-dev, libegl-dev, libgbm-dev, libgles-dev, libgtest-dev, libhyprgraphics-dev (\u003e= 0.5.0), libhyprlang-dev (\u003e= 0.6.0), libhyprutils-dev (\u003e= 0.11.0), libiniparser-dev, libpango1.0-dev, libpixman-1-dev, libwayland-dev, libxkbcommon-dev, pkgconf, wayland-protocols"
+    "debhelper-compat (= 14), cmake, hyprwayland-scanner (\u003e= 0.4.0), libabsl-dev, libaquamarine-dev (\u003e= 0.10.0), libcairo2-dev, libdrm-dev, libegl-dev, libgbm-dev, libgles-dev, libgtest-dev, libhyprgraphics-dev (\u003e= 0.5.0), libhyprlang-dev (\u003e= 0.6.0), libhyprutils-dev (\u003e= 0.14.2), libiniparser-dev, libpango1.0-dev, libpixman-1-dev, libwayland-dev, libxkbcommon-dev, pkgconf, wayland-protocols"
   ],
   "Checksums-Sha256": [
-    "9b93a080b52290c7b7dc65bf194034b1e1e74e58543044fba0f54f003bc0b820 2450 hyprtoolkit_0.5.4-1.dsc 6b4e1ba3e78c86eac266d56c82f8ebd1b1d5905fdae569b3fbde18c8d36a57ad 577767 hyprtoolkit_0.5.4.orig.tar.gz 6424ed42dd7a420dc923db09e2b2e10e41c9e7b24a436722eb951e3e75d4c69c 4344 hyprtoolkit_0.5.4-1.debian.tar.xz"
+    "8277013896b275dafaeda0f9b557b4d0353dbd6129b9992861b8d3f16ba65248 2530 hyprtoolkit_0.6.0-3.dsc dbae7535f3420e57cf93bc6252f47a8fd2e068b8e44c73782bb0b7dfb351832a 624075 hyprtoolkit_0.6.0.orig.tar.gz 50d05e65eae25d77afe350a4e493fa97ae3124677561fd0753985e3df9a48e8d 5004 hyprtoolkit_0.6.0-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hyprtoolkit"
   ],
   "Files": [
-    "594a3946ace84df0ad4b0f27788ebdfd 2450 hyprtoolkit_0.5.4-1.dsc bc6b1904015ce7fa030bb5279c3c0e56 577767 hyprtoolkit_0.5.4.orig.tar.gz d494a65443968ac015159b0a23de95c2 4344 hyprtoolkit_0.5.4-1.debian.tar.xz"
+    "49b19ba32b338a2dadcdcd201465e5ef 2530 hyprtoolkit_0.6.0-3.dsc 2a9ae8a1af0716abf0aecce630ef5d4b 624075 hyprtoolkit_0.6.0.orig.tar.gz dc528efb6de251d6e647dcf101d9eca3 5004 hyprtoolkit_0.6.0-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "hyprtoolkit"
   ],
   "Package-List": [
-    "libhyprtoolkit-dev deb libdevel optional arch=any libhyprtoolkit5 deb libs optional arch=any"
+    "libhyprtoolkit-dev deb libdevel optional arch=any libhyprtoolkit6 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -41,8 +41,14 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@, libgtest-dev"
+  ],
   "Uploaders": [
-    "Carl Keinath \u003ccarl.keinath@gmail.com\u003e, Chow Loong Jin \u003chyperair@debian.org\u003e, Alex Myczko \u003ctar@debian.org\u003e,"
+    "Carl Keinath \u003ccarl.keinath@gmail.com\u003e, Chow Loong Jin \u003chyperair@debian.org\u003e, Alex Myczko \u003ctar@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/hyprland-team/hyprtoolkit"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/hyprland-team/hyprtoolkit.git"
   ],
   "Version": [
-    "0.5.4-1"
+    "0.6.0-3"
   ]
 }

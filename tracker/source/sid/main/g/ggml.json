@@ -6,16 +6,16 @@
     "libggml0, libggml-dev, libggml0-backend-blas, libggml0-backend-hip, libggml0-backend-rpc, libggml0-backend-vulkan"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), libblas-dev \u003c!pkg.ggml.noblas\u003e, pkgconf, libvulkan-dev \u003c!pkg.ggml.novulkan\u003e, glslc \u003c!pkg.ggml.novulkan\u003e, spirv-headers \u003c!pkg.ggml.novulkan\u003e, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.nohip\u003e, libamdhip64-dev (\u003e= 5.7.1-6+deb13u1) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, libhipblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e, librocblas-dev [amd64 arm64] \u003c!pkg.ggml.nohip\u003e"
+    "cmake, debhelper-compat (= 13), libblas-dev \u003c!pkg.ggml.noblas\u003e, pkgconf, libvulkan-dev \u003c!pkg.ggml.novulkan\u003e, glslc \u003c!pkg.ggml.novulkan\u003e, spirv-headers \u003c!pkg.ggml.novulkan\u003e, pkg-rocm-tools (\u003e= 0.9.1~) \u003c!pkg.ggml.nohip\u003e, libamdhip64-dev (\u003e= 5.7.1-6+deb13u1) [amd64] \u003c!pkg.ggml.nohip\u003e, hipcc (\u003e= 7.0.2+dfsg-2) [amd64] \u003c!pkg.ggml.nohip\u003e, libhipblas-dev [amd64] \u003c!pkg.ggml.nohip\u003e, librocblas-dev [amd64] \u003c!pkg.ggml.nohip\u003e"
   ],
   "Checksums-Sha256": [
-    "8353f8963c0d4b586616e9d22f7b959aaa029d6899e100e5026ea568239ef4d7 3167 ggml_0.24.0-1.dsc 4969156ca293394ebd8aa5af309fb64feb9cb3e1ad001b52b6ebfe286655258f 4011703 ggml_0.24.0.orig.tar.gz cacc79ecfedc86aa18abe1cf9484a1fbe8a5b103c0327e16bfe5f32325ea4a06 35956 ggml_0.24.0-1.debian.tar.xz"
+    "433263a82f61187a7e567563a1f8ef33532e3c4e4484fe09d58b43f183dda9e7 3137 ggml_0.25.1-1.dsc 09e7c3fc8c2e996e1264afea7e41728889668f5524d2653d860ec2e838d5585e 4098780 ggml_0.25.1.orig.tar.gz 0b5ecee527a537870497c61516531f852215753a291e3a9b81fd6c8138c8dc8f 36540 ggml_0.25.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/ggml"
   ],
   "Files": [
-    "5e27127d7e8ccef2eb05cf6c5fd86d96 3167 ggml_0.24.0-1.dsc 8b16ece4bee4a3a6cc78f9623a16939e 4011703 ggml_0.24.0.orig.tar.gz bdf0ebe51ad7e1a22b71fef79f6317a4 35956 ggml_0.24.0-1.debian.tar.xz"
+    "8ac17b626e205a5ab41158672fe06c4c 3137 ggml_0.25.1-1.dsc 88b9b26dc6faa3e38cf41f7a1ce02b7d 4098780 ggml_0.25.1.orig.tar.gz 42a6519ead897386f768fb4e00fc80fd 36540 ggml_0.25.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ggml"
   ],
   "Package-List": [
-    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.noblas libggml0-backend-hip deb libs optional arch=amd64,arm64 profile=!pkg.ggml.nohip libggml0-backend-rpc deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.noblas libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.novulkan"
+    "libggml-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0 deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x libggml0-backend-blas deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.noblas libggml0-backend-hip deb libs optional arch=amd64 profile=!pkg.ggml.nohip libggml0-backend-rpc deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.noblas libggml0-backend-vulkan deb libs optional arch=amd64,arm64,loong64,ppc64,ppc64el,riscv64,s390x profile=!pkg.ggml.novulkan"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/deeplearning-team/ggml.git"
   ],
   "Version": [
-    "0.24.0-1"
+    "0.25.1-1"
   ]
 }
