@@ -6,19 +6,19 @@
     "python3-pygmsh, python-pygmsh-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, flit, python3-all:any, python3-gmsh, gmsh, python3-meshio (\u003e= 4.3.2~), python3-numpy (\u003e= 1.20.0~), python3-sphinx, python3-wheel"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all:any, python3-flit, python3-gmsh, gmsh, python3-meshio (\u003e= 4.3.2~), python3-numpy (\u003e= 1.20.0~), python3-sphinx, python3-wheel"
   ],
   "Build-Depends-Indep": [
     "libjs-mathjax, python3-sphinx-autodoc-typehints"
   ],
   "Checksums-Sha256": [
-    "0cd85d027f74f758e60441db94daeea67f5e89eb770ef1f795b77dc156222b39 2377 pygmsh_7.1.17-9.dsc 9c9c0fb507eb5c0d0f1f64a23909b3bda25652df737e935ea9336b08773afc4e 56576 pygmsh_7.1.17.orig.tar.gz b1bbd66f203f4dc9adfa73b5524e3ddbe5c2165c0b7fd863c3cc9c100729c9bb 4616 pygmsh_7.1.17-9.debian.tar.xz"
+    "45a9d3cef2089f91e07be5e7a748fc5631c163db99f7800ae39e12b2288210c1 2406 pygmsh_7.1.17-10.dsc 9c9c0fb507eb5c0d0f1f64a23909b3bda25652df737e935ea9336b08773afc4e 56576 pygmsh_7.1.17.orig.tar.gz 5c3462600d9d7dd1bf328bf395d4561ca55aff84819a9841d246bad3612abd19 4744 pygmsh_7.1.17-10.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pygmsh"
   ],
   "Files": [
-    "08f0fa104eea5c8791a0662e08b95158 2377 pygmsh_7.1.17-9.dsc 5eb21b0708e6319af9bc6e72eeb29460 56576 pygmsh_7.1.17.orig.tar.gz 5903b141b32a08f71a54233ee883d603 4616 pygmsh_7.1.17-9.debian.tar.xz"
+    "80ad6abb475298fa9d43ff71a3f35784 2406 pygmsh_7.1.17-10.dsc 5eb21b0708e6319af9bc6e72eeb29460 56576 pygmsh_7.1.17.orig.tar.gz 2a662d05723dc5820cc27237a2572f95 4744 pygmsh_7.1.17-10.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3-pytest"
+    "dpkg-dev, gcc, python3-numpy, python3-pytest"
   ],
   "Uploaders": [
     "Drew Parsons \u003cdparsons@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/science-team/pygmsh.git"
   ],
   "Version": [
-    "7.1.17-9"
+    "7.1.17-10"
   ]
 }
