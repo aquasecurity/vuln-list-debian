@@ -6,19 +6,25 @@
     "librust-ssh-format-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-ssh-format-error-0.1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-1+default-dev \u003c!nocheck\u003e, librust-ssh-format-error-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "51abc732b8206ddbcdde430bb1d314fe742c98f20fce81fa1dd2731cb8c096ce 1801 rust-ssh-format_0.14.1-1.dsc 24ab31081d1c9097c327ec23550858cb5ffb4af6b866c1ef4d728455f01f3304 9188 rust-ssh-format_0.14.1.orig.tar.gz a80a7a3758fe70651f15237311ddce5b5c65d8d8abfb15b8c7f683afb4465223 2652 rust-ssh-format_0.14.1-1.debian.tar.xz"
+    "dfb2c293e6c3737ec792d8a4bf8c2aa2aea350f179e7fc79ce17378f54f5f1b2 2491 rust-ssh-format_0.14.1-2.dsc 24ab31081d1c9097c327ec23550858cb5ffb4af6b866c1ef4d728455f01f3304 9188 rust-ssh-format_0.14.1.orig.tar.gz b01fb1adbd0631af0f9168677921645f063e64cf6907ebcad1b5ee0540b55510 3540 rust-ssh-format_0.14.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ssh-format"
   ],
   "Files": [
-    "91f23ac40c959282b0fff1ac01b88c8c 1801 rust-ssh-format_0.14.1-1.dsc 236e0ca423552dd1f9ac4a94f8a74166 9188 rust-ssh-format_0.14.1.orig.tar.gz d89e189a0a443ca334659d9e1c6dae59 2652 rust-ssh-format_0.14.1-1.debian.tar.xz"
+    "bf93bd006049616d881afb59f76bf126 2491 rust-ssh-format_0.14.1-2.dsc 236e0ca423552dd1f9ac4a94f8a74166 9188 rust-ssh-format_0.14.1.orig.tar.gz 302ae172c233fa98031402c01221fd6d 3540 rust-ssh-format_0.14.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/openssh-rust/ssh_format"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-assert-matches-1+default-dev, librust-generator-0.7+default-dev, librust-itertools-0.10+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev"
+    "dh-cargo, librust-assert-matches-1+default-dev, librust-generator-0.8+default-dev, librust-itertools-0.14+default-dev, librust-serde-1+default-dev, librust-serde-1+derive-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ssh-format]"
   ],
   "Version": [
-    "0.14.1-1"
+    "0.14.1-2"
   ]
 }
