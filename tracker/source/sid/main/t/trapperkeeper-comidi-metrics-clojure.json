@@ -6,25 +6,25 @@
     "libtrapperkeeper-comidi-metrics-clojure"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 10), javahelper (\u003e= 0.32), maven-repo-helper (\u003e= 1.7), default-jdk"
+    "debhelper-compat (= 14), dh-clojure, libbcpkix-java \u003c!nocheck\u003e, libcomidi-clojure (\u003e= 1.1.4), libkitchensink-clojure (\u003e= 3.5.8) \u003c!nocheck\u003e, libnetty-java, libpuppetlabs-http-client-clojure (\u003e= 2.3.1) \u003c!nocheck\u003e, libtrapperkeeper-clojure (\u003e= 5.0.6) \u003c!nocheck\u003e, libtrapperkeeper-metrics-clojure (\u003e= 2.3.2), libtrapperkeeper-status-clojure (\u003e= 1.5.1) \u003c!nocheck\u003e, libtrapperkeeper-webserver-clojure \u003c!nocheck\u003e, libprismatic-schema-clojure (\u003e= 1.4.2)"
   ],
   "Checksums-Sha256": [
-    "d6aceebcb70855fb8fd9c1714677f81b4eade5723ef57444de5abd3a336174c1 2312 trapperkeeper-comidi-metrics-clojure_0.1.2-2.dsc 9d4eb5c3d171f33b9ff2595443a8d2b02631f92b3cfadd4ed570afb7d6f941a5 10180 trapperkeeper-comidi-metrics-clojure_0.1.2.orig.tar.xz 0dce1f899882208a087a32632badeab21aee18ab77afc128dec3653057b86491 3168 trapperkeeper-comidi-metrics-clojure_0.1.2-2.debian.tar.xz"
+    "a693c95aadae532e9c6e649735287683e9bcaef0603dcee5c9d4c060617e3786 2367 trapperkeeper-comidi-metrics-clojure_1.1.1-1.dsc 34b4cc9f1ae5312a3240f37108bb9fec1e0eced0799c170e76492576dd696f15 11467 trapperkeeper-comidi-metrics-clojure_1.1.1.orig.tar.gz e847d72948466daba69a7c7b9e2f77b26fdada378920cd2a46e6dee2388af65d 3020 trapperkeeper-comidi-metrics-clojure_1.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/trapperkeeper-comidi-metrics-clojure"
   ],
   "Files": [
-    "b671461309d448ef4923982dab4e6af2 2312 trapperkeeper-comidi-metrics-clojure_0.1.2-2.dsc 42480a07bccae888300bd88d1e0a0236 10180 trapperkeeper-comidi-metrics-clojure_0.1.2.orig.tar.xz b7be9baef96ba8c227dc1f67bfbe9fa9 3168 trapperkeeper-comidi-metrics-clojure_0.1.2-2.debian.tar.xz"
+    "08efd1f17986b73999cdb3cdc750896c 2367 trapperkeeper-comidi-metrics-clojure_1.1.1-1.dsc 14386ef260fd4eaa61b56fa2be97a295 11467 trapperkeeper-comidi-metrics-clojure_1.1.1.orig.tar.gz e5623e60c6aa3cb1604735d47536e531 3020 trapperkeeper-comidi-metrics-clojure_1.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/puppetlabs/trapperkeeper-comidi-metrics"
+    "https://github.com/OpenVoxProject/trapperkeeper-comidi-metrics"
   ],
   "Maintainer": [
-    "Debian Clojure Maintainers \u003cpkg-clojure-maintainers@lists.alioth.debian.org\u003e"
+    "Debian Clojure Maintainers \u003cteam+clojure@tracker.debian.org\u003e"
   ],
   "Package": [
     "trapperkeeper-comidi-metrics-clojure"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.1.3"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "default-jre-headless, libbcpkix-java, libcognitect-test-runner-clojure, libkitchensink-clojure, libpuppetlabs-http-client-clojure, libtrapperkeeper-clojure, libtrapperkeeper-status-clojure, libtrapperkeeper-webserver-clojure"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e"
+    "Jérôme Charaoui \u003cjerome@riseup.net\u003e, Thomas Goirand \u003czigo@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/clojure-team/trapperkeeper-comidi-metrics-clojure"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/clojure-team/trapperkeeper-comidi-metrics-clojure.git"
   ],
   "Version": [
-    "0.1.2-2"
+    "1.1.1-1"
   ]
 }
