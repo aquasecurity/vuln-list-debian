@@ -6,16 +6,16 @@
     "radon, python-radon-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, libjs-mathjax, python3-all:any, python3-docutils, python3-setuptools, python3-sphinx \u003c!nodoc\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc, libjs-mathjax, pybuild-plugin-pyproject, python3-all:any, python3-docutils, python3-poetry-core, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "216c4e88599ca0ebcc2aabdd31b7f72d8453f633c1d02fcd9f93c98010682dc7 2175 radon_6.0.1+ds1-4.dsc 5d8d3661d28fce3f8b6bed049f6a2c7f670bfb9dbb1d7ea3f477f5bf6f238306 311308 radon_6.0.1+ds1.orig.tar.xz dba98f9a418adae2428434a5bd91a3216ff87c7f91cd0c27df0a3c5c7158e8f1 6316 radon_6.0.1+ds1-4.debian.tar.xz"
+    "2b0c755c09bdd8b59de1299ea7535ab50b922b69ce51f4cabbc847ac11419597 2256 radon_6.0.1+ds1-5.dsc 5d8d3661d28fce3f8b6bed049f6a2c7f670bfb9dbb1d7ea3f477f5bf6f238306 311308 radon_6.0.1+ds1.orig.tar.xz c19c160bba78bb60d4e8b763c35d5504f8ddc7d0acbff544a59ed32b84f0ef1d 6516 radon_6.0.1+ds1-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/radon"
   ],
   "Files": [
-    "3823c8e65d0a8663aee473b1d39b7a07 2175 radon_6.0.1+ds1-4.dsc e563bcb5cb77de4edb5c531a0fbdfdff 311308 radon_6.0.1+ds1.orig.tar.xz 084c0db69ece1ab5790c95b1be2d2197 6316 radon_6.0.1+ds1-4.debian.tar.xz"
+    "b20026aae2f6e4671254081655cdb58b 2256 radon_6.0.1+ds1-5.dsc e563bcb5cb77de4edb5c531a0fbdfdff 311308 radon_6.0.1+ds1.orig.tar.xz e298da0ce8f2b192f6e88fa5affd8fd1 6516 radon_6.0.1+ds1-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "radon"
   ],
   "Package-List": [
-    "python-radon-doc deb doc optional arch=all radon deb devel optional arch=all"
+    "python-radon-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc radon deb devel optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -48,7 +48,7 @@
     "python3-pytest-mock"
   ],
   "Uploaders": [
-    "Alexandre Detiste \u003ctchet@debian.org\u003e,"
+    "Alexandre Detiste \u003ctchet@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/radon"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/radon.git"
   ],
   "Version": [
-    "6.0.1+ds1-4"
+    "6.0.1+ds1-5"
   ]
 }
