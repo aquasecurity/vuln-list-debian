@@ -6,19 +6,31 @@
     "python3-smart-meter-texas"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-pytest-runner, python3-aiohttp \u003c!nocheck\u003e, python3-asn1 \u003c!nocheck\u003e, python3-openssl \u003c!nocheck\u003e, python3-dateutil \u003c!nocheck\u003e, python3-tenacity \u003c!nocheck\u003e, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-pytest-runner, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-asn1 \u003c!nocheck\u003e, python3-certifi \u003c!nocheck\u003e, python3-dateutil \u003c!nocheck\u003e, python3-openssl \u003c!nocheck\u003e, python3-tenacity \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6243d265c8e72a38025cb1af4d0679943e9dea27561ef768095b2841c60ffc19 2271 smart-meter-texas_0.5.5-2.dsc b4fc0cd56cd8582c1761fc4b61175f17f246fc238391655af09cedba5b567f62 15746 smart-meter-texas_0.5.5.orig.tar.gz 850ea220218ca8ac87c426e1a4704f7cc800e3c83bbc3e38aa51d82cf86f7ef4 2252 smart-meter-texas_0.5.5-2.debian.tar.xz"
+    "b4f5084d845457fc57b3e419362f6249946a4e3b09a1e262ced339a2cbdbfb81 2647 smart-meter-texas_0.5.6-1.dsc 8f589f8cb038dd503aa2ab7cce43af7b82b2497bce591481b2973ac35363e623 14488 smart-meter-texas_0.5.6.orig.tar.xz 1f54a3ee38ce893815f4e61b86ea0e402bec24f3ddbc44b1d7525d485a2dbf16 2340 smart-meter-texas_0.5.6-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "1e31a6acec68a744ec75b69cd5a0d04b8bc135c9 debian archive/debian/0.5.6-1 https://git.dgit.debian.org/smart-meter-texas"
   ],
   "Directory": [
     "pool/main/s/smart-meter-texas"
   ],
   "Files": [
-    "8c22d0464f129bbad86411a867b99a8e 2271 smart-meter-texas_0.5.5-2.dsc c5d9b2d6388b0578fa2283c2d63703a4 15746 smart-meter-texas_0.5.5.orig.tar.gz 2f8b4eaa8d98aa40ffc7375d16f1fbec 2252 smart-meter-texas_0.5.5-2.debian.tar.xz"
+    "98a367f9ce870309d06a4cf6f8ee3a67 2647 smart-meter-texas_0.5.6-1.dsc 4b25b2a60f5d1507c3fd81d79febfd20 14488 smart-meter-texas_0.5.6.orig.tar.xz 9787ff0364c9fa6da68b1e68e739eac9 2340 smart-meter-texas_0.5.6-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=20331125991f3756f1674dcb9431cf5cbf5a9235 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/grahamwetzler/smart-meter-texas"
@@ -39,7 +51,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -51,6 +63,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/smart-meter-texas.git"
   ],
   "Version": [
-    "0.5.5-2"
+    "0.5.6-1"
   ]
 }
