@@ -6,16 +6,19 @@
     "python3-matplotlib-inline"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, flit, python3-all, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-flit"
+  ],
+  "Build-Depends-Indep": [
+    "python3-ipython \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-nbval \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8c3aec2972396810d5e22727232fb0a6fbfb883e7c7184ee4c181c3be81e058a 2150 matplotlib-inline_0.2.1-1.dsc bf48c58f1d5c961ebcb8302953ace3a83201db530f8c03c16701e13bef85b841 107440 matplotlib-inline_0.2.1.orig.tar.gz 15075ab91a0906b27cee11428a65f1ae88730c4d42fa428ec103e6c6a872242f 2312 matplotlib-inline_0.2.1-1.debian.tar.xz"
+    "631a2eecee1d1284f2ac7bfb66a406ce6588b16b79fb0bd52f3b18f3c2eb895c 2306 matplotlib-inline_0.2.2-1.dsc ed7dedb6dd340142458cb64b906f690f9d2a2df9ce319d40d1a563959ac733d1 107579 matplotlib-inline_0.2.2.orig.tar.gz c04bafc7fc0c9eea13be8f3b690396049a38c8a0b554f735357fdead3acdf3ea 2576 matplotlib-inline_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/matplotlib-inline"
   ],
   "Files": [
-    "25bd83af0c7337473b15593fa8a95832 2150 matplotlib-inline_0.2.1-1.dsc df3d5c946049185fdcba4b206e29cd50 107440 matplotlib-inline_0.2.1.orig.tar.gz 018822d150a7d69ab3a108c4a289fb69 2312 matplotlib-inline_0.2.1-1.debian.tar.xz"
+    "e1710a81b7ac595d0cb2ea57ddf83431 2306 matplotlib-inline_0.2.2-1.dsc 59ae9c8c6d33481d071886d9c2cbf129 107579 matplotlib-inline_0.2.2.orig.tar.gz 27611f855c8f913a7937dd16db461607 2576 matplotlib-inline_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +42,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Gordon Ball \u003cgordon@chronitis.net\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/matplotlib-inline.git"
   ],
   "Version": [
-    "0.2.1-1"
+    "0.2.2-1"
   ]
 }

@@ -6,22 +6,25 @@
     "librust-weezl-dev, librust-weezl+async-dev, librust-weezl+futures-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3345adec7e0f6d9681fe02f8d6ec0e568787eecd2dd74029770f9141918929d3 2512 rust-weezl_0.1.8-1.dsc 53a85b86a771b1c87058196170769dd264f66c0782acf1ae6cc51bfd64b39082 42175 rust-weezl_0.1.8.orig.tar.gz e6222176e431f9de41ab3ab522763090f0a8991376bd902f342097006faebc54 4696 rust-weezl_0.1.8-1.debian.tar.xz"
+    "8d2b3375967c0d7c6bb08e9fce7cc86fc5f3c827be00f606d9c4901654325fb8 1910 rust-weezl_0.2.1-1.dsc d4ca08e5ef825b65b056d9efbd95c8750683f0a6d0466d02e96dc2e4e360f3d2 76689 rust-weezl_0.2.1.orig.tar.gz c950f6a66a674a22d574059d16ef6a65e81e4eca2e94cfbf606867fcd4c9abad 9388 rust-weezl_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-weezl"
   ],
   "Files": [
-    "e3256aefdcec26d05eb96b6fe6fcebf9 2512 rust-weezl_0.1.8-1.dsc 3463b870b51ee10369d6b1a5139ad166 42175 rust-weezl_0.1.8.orig.tar.gz 94f28bbdfc680d23bf6ae1b57f2e48ac 4696 rust-weezl_0.1.8-1.debian.tar.xz"
+    "bc676c8fdc36f707076eeba051d2317e 1910 rust-weezl_0.2.1-1.dsc 455208aefc86dc819273342e94a06f53 76689 rust-weezl_0.2.1.orig.tar.gz df1659b5387b24180c3fa196b9e35b16 9388 rust-weezl_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/image-rs/lzw"
+    "https://github.com/image-rs/weezl"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/weezl]"
   ],
   "Version": [
-    "0.1.8-1"
+    "0.2.1-1"
   ]
 }
