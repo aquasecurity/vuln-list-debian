@@ -6,22 +6,25 @@
     "librust-waker-fn-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 24), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.51) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a136a8d4faf96d334ff5904cea388fdbbbf16143a4a76c7639e4c8dcbb482071 2164 rust-waker-fn_1.1.0-1.dsc 9d5b2c62b4012a3e1eca5a7e077d13b3bf498c4073e33ccd58626607748ceeca 7114 rust-waker-fn_1.1.0.orig.tar.gz 6414a4545d7fcdd9bd37cd35c5e82b17ab0beee9bb94113178dd84844b65c1be 2500 rust-waker-fn_1.1.0-1.debian.tar.xz"
+    "7603e795eb7159172ca1a677b4a44c333f7daf4caa095e756a566d79bdaee43e 2205 rust-waker-fn_1.2.0-1.dsc 317211a0dc0ceedd78fb2ca9a44aed3d7b9b26f81870d485c07122b4350673b7 6685 rust-waker-fn_1.2.0.orig.tar.gz 1670b7e15f1e979f57f0752157d314807421a4c1b637de4926187e5fad938b27 2828 rust-waker-fn_1.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-waker-fn"
   ],
   "Files": [
-    "44c35b85e58828e123aa09dabcd725ab 2164 rust-waker-fn_1.1.0-1.dsc 274f9bcda1e4afd4a290329eff9267ad 7114 rust-waker-fn_1.1.0.orig.tar.gz 24a37894c74b212fb0719e4ed73400ff 2500 rust-waker-fn_1.1.0-1.debian.tar.xz"
+    "1d11a7f700c4ce8256426af2ac6be12c 2205 rust-waker-fn_1.2.0-1.dsc 3f6532604aeeeb2e27936a1558899443 6685 rust-waker-fn_1.2.0.orig.tar.gz 6f1956a65717ae4d2104b70091a39117 2828 rust-waker-fn_1.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/stjepang/waker-fn"
+    "https://github.com/smol-rs/waker-fn"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/waker-fn]"
   ],
   "Version": [
-    "1.1.0-1"
+    "1.2.0-1"
   ]
 }
