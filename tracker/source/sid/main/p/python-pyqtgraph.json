@@ -6,22 +6,31 @@
     "python3-pyqtgraph, python-pyqtgraph-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, libpyside6-py3, pyqt5-dev-tools, pyqt6-dev-tools, python-numpy-doc, python3-all, python3-colorama, python3-doc, python3-numpy, python3-opengl, python3-pydata-sphinx-theme (\u003e= 0.15.4~), python3-pyqt5.qtopengl, python3-setuptools, python3-sphinx, python3-sphinx-autodoc-typehints, python3-sphinx-design, python3-sphinx-favicon, python3-sphinx-qt-documentation, python3-sphinx-rtd-theme, python3-sphinxcontrib.images, python3-sphinxext-rediraffe, qt6-base-dev-tools, qtbase5-dev-tools"
+    "debhelper-compat (= 13), dh-sequence-python3, libpyside6-py3, pybuild-plugin-pyproject, pyqt5-dev-tools, pyqt6-dev-tools, pyside6-tools \u003c!nocheck\u003e, python-numpy-doc, python3-all, python3-colorama, python3-doc, python3-numpy, python3-opengl, python3-pydata-sphinx-theme (\u003e= 0.15.4~), python3-pyqt5.qtopengl \u003c!nocheck\u003e, python3-pyside6.qtcore \u003c!nocheck\u003e, python3-pyside6.qtgui \u003c!nocheck\u003e, python3-pyside6.qtopengl \u003c!nocheck\u003e, python3-pyside6.qtopenglwidgets \u003c!nocheck\u003e, python3-pyside6.qtsvg \u003c!nocheck\u003e, python3-pyside6.qttest \u003c!nocheck\u003e, python3-pyside6.qtwidgets \u003c!nocheck\u003e, python3-pyqt6.qtsvg \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-setuptools, python3-sphinx, python3-sphinx-autodoc-typehints, python3-sphinx-design, python3-sphinx-favicon, python3-sphinx-qt-documentation, python3-sphinx-rtd-theme, python3-sphinxcontrib.images, python3-sphinxext-rediraffe, qt6-base-dev-tools, qtbase5-dev-tools, xauth \u003c!nocheck\u003e, xserver-xephyr \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a5666a437141fc0aa85e70c6cbd9676d7cb13975d5e6cf15014d603b95db18bb 2529 python-pyqtgraph_0.14.0-5.dsc 30f41a2f27ec41fb7d4442dbb150b004520ba83e777cdf5bb9cce0d18017424f 2397130 python-pyqtgraph_0.14.0.orig.tar.gz ab4e0b523047bb1c35cc5ac3d577bf615f802df1f6cd4d04e7a797ee061419f2 11992 python-pyqtgraph_0.14.0-5.debian.tar.xz"
+    "dea45bbc34db5e0f62985391c595407497172c0dd9a1dec984b077ee91db12af 3397 python-pyqtgraph_0.14.0-7.dsc 30f41a2f27ec41fb7d4442dbb150b004520ba83e777cdf5bb9cce0d18017424f 2397130 python-pyqtgraph_0.14.0.orig.tar.gz fb6742626d9bcbf02a8b8e9e721a28089937402f7e2f1e6d57affa3c266b9af7 17580 python-pyqtgraph_0.14.0-7.debian.tar.xz"
+  ],
+  "Dgit": [
+    "42138538f6dbec9b617aaa77961047678a5e2b85 debian archive/debian/0.14.0-7 https://git.dgit.debian.org/python-pyqtgraph"
   ],
   "Directory": [
     "pool/main/p/python-pyqtgraph"
   ],
   "Files": [
-    "207cdd1357f7712adbedbdf6e6b5359b 2529 python-pyqtgraph_0.14.0-5.dsc 8d5e593ce26c980880ceaf40b3896599 2397130 python-pyqtgraph_0.14.0.orig.tar.gz b956060bd449471d842c76ee7a384d77 11992 python-pyqtgraph_0.14.0-5.debian.tar.xz"
+    "ae032b860f7349b6740e4d8046deab63 3397 python-pyqtgraph_0.14.0-7.dsc 8d5e593ce26c980880ceaf40b3896599 2397130 python-pyqtgraph_0.14.0.orig.tar.gz 1c8042885d733eec7c65d5b478be1825 17580 python-pyqtgraph_0.14.0-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
+  "Git-Tag-Info": [
+    "tag=7b0cfa6824da7837a438d6b71ed857947dbf6a76 fp=90e2d2c1ad146a1b7ebb891dbbc17ebb1396f2f7"
+  ],
+  "Git-Tag-Tagger": [
+    "Stuart Prescott \u003cstuart@debian.org\u003e"
+  ],
   "Homepage": [
-    "http://luke.campagnola.me/code/pyqtgraph"
+    "https://www.pyqtgraph.org/"
   ],
   "Maintainer": [
     "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
@@ -39,13 +48,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Gianfranco Costamagna \u003clocutusofborg@debian.org\u003e"
@@ -57,6 +63,6 @@
     "https://salsa.debian.org/science-team/python-pyqtgraph.git"
   ],
   "Version": [
-    "0.14.0-5"
+    "0.14.0-7"
   ]
 }
