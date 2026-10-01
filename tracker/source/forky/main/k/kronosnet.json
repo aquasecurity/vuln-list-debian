@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "linux-any all"
+    "any all"
   ],
   "Binary": [
-    "libknet-dev, libknet-doc, libknet1t64, libnozzle-dev, libnozzle1t64"
+    "kronosnet-wireshark, libknet-dev, libknet-doc, libknet1t64, libnozzle-dev, libnozzle1t64"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), iproute2 [linux-any], libnl-3-dev, libnl-route-3-dev, libqb-dev, libsctp-dev [linux-any], pkgconf, libbz2-dev, liblz4-dev, liblzma-dev, liblzo2-dev, libzstd-dev, zlib1g-dev, libnss3-dev, libnspr4-dev, libssl-dev"
+    "debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), iproute2 [linux-any], libnl-3-dev, libnl-route-3-dev, libqb-dev, libsctp-dev [linux-any], pkgconf, libbz2-dev, liblz4-dev, liblzma-dev, liblzo2-dev, libzstd-dev, zlib1g-dev, libnss3-dev, libnspr4-dev, libssl-dev, libwireshark-dev"
   ],
   "Build-Depends-Indep": [
     "doxygen, doxygen2man"
   ],
   "Checksums-Sha256": [
-    "21b73a414c66e2a7f5233cd7e08bfe7ef574e6d08d12f3b0631a6faa577ccd7e 2922 kronosnet_1.33-1.dsc 7c386a8aaaa3aece727eec3e1a51217a97f4af36cca28c8ea2fb2280b09edd6e 498452 kronosnet_1.33.orig.tar.xz 42d09e1a22396bad8a94bb4ba224db468c86f6da8bf480d86e7f28109714e7af 833 kronosnet_1.33.orig.tar.xz.asc e6d44a3d0b50e68bdec9c700a7bba9aba30009713ecb45074fe40b016dc27dd4 11676 kronosnet_1.33-1.debian.tar.xz"
+    "e9aa08aeb19b93b81d5bf67c5400aa9fb4aa2c46ebfd9fddfc60bb81a24db3fb 3020 kronosnet_1.35-1.dsc e980d57a75c9ae9ca4ba2826cd3b02bcbc6463a32aaac0d0ab8eb0b6b5df8d0a 546068 kronosnet_1.35.orig.tar.xz 787660375a0bba6e380735f06af2381c072cc53f52aba001c8deca253457e328 833 kronosnet_1.35.orig.tar.xz.asc 1e2804fac6a1304a2cabbafe4d0c4ccc699a4a5923a1bfdabc46ebe09877eb09 12524 kronosnet_1.35-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kronosnet"
   ],
   "Files": [
-    "349a28e5d23fec644a0ca95032a367fb 2922 kronosnet_1.33-1.dsc 8b6fbecfc0704cca07020c7eca60a680 498452 kronosnet_1.33.orig.tar.xz 5ae64064e4e4d9ee0900d769cd3062a1 833 kronosnet_1.33.orig.tar.xz.asc 012db7afd46ee76b32525f55a7b13e26 11676 kronosnet_1.33-1.debian.tar.xz"
+    "d5aff1309952b56a54be2fb26ecd9b7f 3020 kronosnet_1.35-1.dsc 38973ebe3f7b3dd44efe13b70515684d 546068 kronosnet_1.35.orig.tar.xz e465d3c4024e4db627c6e6c809a8c5bd 833 kronosnet_1.35.orig.tar.xz.asc 49a6a2db8b8030f87b09939f236b2224 12524 kronosnet_1.35-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "kronosnet"
   ],
   "Package-List": [
-    "libknet-dev deb libdevel optional arch=linux-any libknet-doc deb doc optional arch=all libknet1t64 deb libs optional arch=linux-any libnozzle-dev deb libdevel optional arch=linux-any libnozzle1t64 deb libs optional arch=linux-any"
+    "kronosnet-wireshark deb net optional arch=any libknet-dev deb libdevel optional arch=linux-any libknet-doc deb doc optional arch=all libknet1t64 deb libs optional arch=linux-any libnozzle-dev deb libdevel optional arch=linux-any libnozzle1t64 deb libs optional arch=linux-any"
   ],
   "Priority": [
     "extra"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, iproute2, libbz2-dev, liblz4-dev, liblzma-dev, liblzo2-dev, libnl-3-dev, libnl-route-3-dev, libnss3-dev, libqb-dev, libsctp-dev, libssl-dev, libzstd-dev, pkgconf, zlib1g-dev"
+    "build-essential, iproute2, libbz2-dev, liblz4-dev, liblzma-dev, liblzo2-dev, libnl-3-dev, libnl-route-3-dev, libnss3-dev, libqb-dev, libsctp-dev, libssl-dev, libwireshark-dev, libzstd-dev, pkgconf, zlib1g-dev"
   ],
   "Uploaders": [
     "Ferenc Wágner \u003cwferi@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/ha-team/kronosnet.git"
   ],
   "Version": [
-    "1.33-1"
+    "1.35-1"
   ]
 }
