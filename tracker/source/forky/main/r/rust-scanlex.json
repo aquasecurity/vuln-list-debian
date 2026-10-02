@@ -6,19 +6,25 @@
     "librust-scanlex-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a264c289f4932574fd18e5eeeb76944b57e73ae69c4775a8acf02cb583cd38bd 2107 rust-scanlex_0.1.4-1.dsc 088c5d71572124929ea7549a8ce98e1a6fd33d0a38367b09027b382e67c033db 10496 rust-scanlex_0.1.4.orig.tar.gz 566fdc92b0c7546eb7c26f3b091854e7dbe0aced725ea2e669e98c47a70b1fde 2500 rust-scanlex_0.1.4-1.debian.tar.xz"
+    "911553a6337526aa67d622485eb90590f718dcc6a97caea4e9cc5fbc133b7f88 2193 rust-scanlex_0.2.0-1.dsc 2d1ccd92ba75bf41b8f357c0ed1c74c64d6361a3b22303872d89197cda291e42 10971 rust-scanlex_0.2.0.orig.tar.gz 8fb41f78f1fa1fa1f18954bcdabb36f759da72529082fabd74b2a06d0f6f4c8d 2640 rust-scanlex_0.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-scanlex"
   ],
   "Files": [
-    "1f197b3028f6f0287a0f8eaf2ee48e18 2107 rust-scanlex_0.1.4-1.dsc 64257d4929d6537e68865332aa5bbd05 10496 rust-scanlex_0.1.4.orig.tar.gz 205b4536642e7e8a976f865602989b00 2500 rust-scanlex_0.1.4-1.debian.tar.xz"
+    "9a14c3df31ced6320de4eaae44669690 2193 rust-scanlex_0.2.0-1.dsc 7eababa3c51d9bfeffcd66f5f0bf1428 10971 rust-scanlex_0.2.0.orig.tar.gz 6ad464c1a1ec6e5f003f9e4424775c56 2640 rust-scanlex_0.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/stevedonovan/scanlex.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/scanlex]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.2.0-1"
   ]
 }

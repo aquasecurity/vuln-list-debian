@@ -6,19 +6,31 @@
     "python3-pytestqt, python-pytestqt-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-all:any, python3-pyqt5 \u003c!nocheck\u003e, python3-pytest, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, sphinx-common, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, python3-pytest-xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-all:any, python3-pyqt5 \u003c!nocheck\u003e, python3-pyqt6 \u003c!nocheck\u003e, python3-pyside6.qtgui \u003c!nocheck\u003e, python3-pyside6.qttest \u003c!nocheck\u003e, python3-pytest, python3-pytest-xvfb \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, python3-typing-extensions \u003c!nodoc\u003e, sphinx-common"
   ],
   "Checksums-Sha256": [
-    "7e3c3816cf90cda895e52907e3e52357e10b674d5f2c44abdd0304a352cb2a2e 2372 pytest-qt_4.4.0-4.dsc de4b3429a07eede7a6cc12cfb815ce45849d34fb397d0fe24ef1238a2fe05f6a 119696 pytest-qt_4.4.0.orig.tar.gz 94dd7246851811447929dbbb1b22610775b0e6eca74e345653a3ad141f992ebf 5996 pytest-qt_4.4.0-4.debian.tar.xz"
+    "2c476099f5281fcc26bea7b6b67466d244f36b4b719279f7a7c6eab4ab980bc4 3374 pytest-qt_4.5.0-2.dsc 77153ec8dca6ac4344373acaac26e6def7a887c37c945765eda6452ff0f6f5aa 122656 pytest-qt_4.5.0.orig.tar.gz 21c962e0f0a4d77ba1543275e8a076ab29986db801bff1621a0555dc059c311b 7740 pytest-qt_4.5.0-2.debian.tar.xz"
+  ],
+  "Description": [
+    "pytest plugin for Qt application testing Pytest-qt is a pytest plugin that allows programmers to write tests for PySide and PyQt applications. . The main features are the qtbot fixture, responsible for handling qApp creation as needed and provides methods to simulate user interaction, like key presses and mouse clicks. . Users should explicitly set the Qt API that is to be used in the tests either by setting the PYTEST_QT_API environment variable or by specifying the qt_api config option for pytest."
+  ],
+  "Dgit": [
+    "850c6e8e790e02d2dc8489c044c90311f0c56da6 debian archive/debian/4.5.0-2 https://git.dgit.debian.org/pytest-qt"
   ],
   "Directory": [
     "pool/main/p/pytest-qt"
   ],
   "Files": [
-    "df7d9427d470338e39965fb76fd68f87 2372 pytest-qt_4.4.0-4.dsc 6b0ec99c87736c09dcf60cc58ed5a6ac 119696 pytest-qt_4.4.0.orig.tar.gz ea3133f5e1b293f80ac450678944755f 5996 pytest-qt_4.4.0-4.debian.tar.xz"
+    "8dcb9b90751086e906c567a9d75c538f 3374 pytest-qt_4.5.0-2.dsc bdf6f3c54f78f4d8d11d026f6974e0e7 122656 pytest-qt_4.5.0.orig.tar.gz 42411b48898a8433b2b402e61a73d862 7740 pytest-qt_4.5.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=30d204fa462706fc58f596183df96a7632a1022e fp=90e2d2c1ad146a1b7ebb891dbbc17ebb1396f2f7"
+  ],
+  "Git-Tag-Tagger": [
+    "Stuart Prescott \u003cstuart@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/pytest-dev/pytest-qt"
@@ -30,7 +42,7 @@
     "pytest-qt"
   ],
   "Package-List": [
-    "python-pytestqt-doc deb doc optional arch=all profile=!nodoc python3-pytestqt deb python optional arch=all"
+    "python-pytestqt-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-pytestqt deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,13 +51,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-pyqt5, python3-pyqt6, python3-pyside6.qtgui, python3-pyside6.qttest, python3-pytest"
   ],
   "Uploaders": [
-    "Ghislain Antony Vaillant \u003cghisvail@gmail.com\u003e"
+    "Stuart Prescott \u003cstuart@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/pytest-qt"
@@ -54,6 +69,6 @@
     "https://salsa.debian.org/python-team/packages/pytest-qt.git"
   ],
   "Version": [
-    "4.4.0-4"
+    "4.5.0-2"
   ]
 }
