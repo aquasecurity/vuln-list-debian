@@ -6,16 +6,16 @@
     "python3-flask-dance, python-flask-dance-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, flit, python3-all, python3-requests-oauthlib, python3-requests, python3-oauthlib, python3-flask, python3-werkzeug, python3-urlobject, python3-sphinx \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-coverage \u003c!nocheck\u003e, python3-flask-sqlalchemy \u003c!nocheck\u003e, python3-sqlalchemy \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-flask-login \u003c!nocheck\u003e, python3-flask-caching \u003c!nocheck\u003e, python3-betamax \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-sphinxcontrib.spelling \u003c!nodoc\u003e, python3-sphinxcontrib.seqdiag \u003c!nodoc\u003e, python3-enchant \u003c!nodoc\u003e, python3-docs-theme \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, libjs-jquery \u003c!nodoc\u003e, sphinx-common \u003c!nodoc\u003e, python3-blinker \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc, libjs-jquery \u003c!nodoc\u003e, libjs-underscore \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-betamax \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-blinker \u003c!nocheck\u003e, python3-coverage \u003c!nocheck\u003e, python3-docs-theme \u003c!nodoc\u003e, python3-enchant \u003c!nodoc\u003e, python3-flask, python3-flask-caching \u003c!nocheck\u003e, python3-flask-login \u003c!nocheck\u003e, python3-flask-sqlalchemy \u003c!nocheck\u003e, python3-flit, python3-freezegun \u003c!nocheck\u003e, python3-oauthlib, python3-pytest \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-requests, python3-requests-oauthlib, python3-responses \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.seqdiag \u003c!nodoc\u003e, python3-sphinxcontrib.spelling \u003c!nodoc\u003e, python3-sqlalchemy \u003c!nocheck\u003e \u003c!nodoc\u003e, python3-urlobject, python3-werkzeug, sphinx-common \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "aa76ddcb52390112c4ce086158da2ffd2cce928ae5fcce413e2c601b1af94c41 3037 flask-dance_7.1.0-3.dsc 5313761a2479f6bd01432defeae9a44500882a2b26e60ad04be11f9ace0fd314 135495 flask-dance_7.1.0.orig.tar.gz 64c5f09bd6154db443a4ae0e63c665bb127a3dc752c761e8c0daae8ea45438a4 4164 flask-dance_7.1.0-3.debian.tar.xz"
+    "ab1a9112db6ba5808c3fd28a336cdfffe0410c2c6ed4da964579f9fa13b7024e 3209 flask-dance_7.1.0-4.dsc 5313761a2479f6bd01432defeae9a44500882a2b26e60ad04be11f9ace0fd314 135495 flask-dance_7.1.0.orig.tar.gz 56d218b7c7b6b3b549d1952294b6b655a19b8bed80fb40b3ffb8b1c75c113924 4212 flask-dance_7.1.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/flask-dance"
   ],
   "Files": [
-    "c9bb3975d7b6295c43cca026017e322a 3037 flask-dance_7.1.0-3.dsc a3b2c4f9c35192bd32843a5df511992e 135495 flask-dance_7.1.0.orig.tar.gz 45c69bb3ed68aee38fe26194f28071df 4164 flask-dance_7.1.0-3.debian.tar.xz"
+    "c98fd9d438be0e4dee132dd19678a939 3209 flask-dance_7.1.0-4.dsc a3b2c4f9c35192bd32843a5df511992e 135495 flask-dance_7.1.0.orig.tar.gz df3efd99a8d344c370efc7ac9c370e35 4212 flask-dance_7.1.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest, autopkgtest-pkg-python"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@"
+    "python3-betamax, python3-coverage, python3-flask-caching, python3-flask-login, python3-freezegun, python3-pytest, python3-pytest-mock, python3-responses"
   ],
   "Uploaders": [
     "Sergio de Almeida Cipriano Junior \u003csergiosacj@riseup.net\u003e, Gabriela Pivetta \u003cgpivetta99@gmail.com\u003e, João Pedro \u003cjoaopedrohm17@gmail.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/flask-dance.git"
   ],
   "Version": [
-    "7.1.0-3"
+    "7.1.0-4"
   ]
 }

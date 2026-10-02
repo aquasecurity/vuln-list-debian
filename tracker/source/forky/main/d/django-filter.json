@@ -6,22 +6,31 @@
     "python-django-filters-doc, python3-django-filters"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, python3-all"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, python3-all, python3-flit"
   ],
   "Build-Depends-Indep": [
-    "flit, furo \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-babel, python3-django \u003c!nocheck\u003e, python3-django-crispy-forms \u003c!nodoc\u003e, python3-djangorestframework \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e"
+    "furo \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-babel, python3-django \u003c!nocheck\u003e, python3-django-crispy-forms \u003c!nodoc\u003e, python3-djangorestframework \u003c!nocheck\u003e, python3-pytz \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "606e47b5fb64a34ca60093005fd59dbebe3174edb2e0c341bfdd94162a6a0d04 2432 django-filter_25.1-2.dsc d36849955447fddbe890119b427863148c5870f88c54cea77b88c5b9611b2c32 131065 django-filter_25.1.orig.tar.gz 28a9402fd5120523c52d74d82a546f67093a609680270f350cc115e72b941cab 83676 django-filter_25.1-2.debian.tar.xz"
+    "9fd6a2ede020351cb01df45edac777f06c703913b16ccc6640e24e7f781a3dd6 2740 django-filter_25.1-4.dsc d36849955447fddbe890119b427863148c5870f88c54cea77b88c5b9611b2c32 131065 django-filter_25.1.orig.tar.gz 48988a9d19895e7c3175c54d726a1319aafb7b69c70f59192577093858f182e6 83944 django-filter_25.1-4.debian.tar.xz"
+  ],
+  "Dgit": [
+    "3568d84dfd17ba900ea16d531fdd90102481211d debian archive/debian/25.1-4 https://git.dgit.debian.org/django-filter"
   ],
   "Directory": [
     "pool/main/d/django-filter"
   ],
   "Files": [
-    "157ae332d3890e10f3343c8848ca2b67 2432 django-filter_25.1-2.dsc de1b2e4a0c38257983624653cfc4d6f4 131065 django-filter_25.1.orig.tar.gz 86e55251ab2f39f8d1e8819870978c39 83676 django-filter_25.1-2.debian.tar.xz"
+    "9c244d119aaf942742f274b4ccd18c79 2740 django-filter_25.1-4.dsc de1b2e4a0c38257983624653cfc4d6f4 131065 django-filter_25.1.orig.tar.gz 3517c90a614ec6403d6e1ec5739f5bf3 83944 django-filter_25.1-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=371ee7dd607c6674b5d6ef1981fc34946580f36d fp=ac0a4ff12611b6fccf01c111393587d97d86500b"
+  ],
+  "Git-Tag-Tagger": [
+    "Colin Watson \u003ccjwatson@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/carltongibson/django-filter"
@@ -42,16 +51,16 @@
     "python"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "@builddeps@, python3-all"
+    "python3-all, python3-djangorestframework, python3-pytz"
   ],
   "Uploaders": [
-    "Brian May \u003cbam@debian.org\u003e,"
+    "Brian May \u003cbam@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/django-filter"
@@ -60,6 +69,6 @@
     "https://salsa.debian.org/python-team/packages/django-filter.git"
   ],
   "Version": [
-    "25.1-2"
+    "25.1-4"
   ]
 }
