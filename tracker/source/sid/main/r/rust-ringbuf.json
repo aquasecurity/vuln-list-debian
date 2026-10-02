@@ -6,22 +6,25 @@
     "librust-ringbuf-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev \u003c!nocheck\u003e, librust-portable-atomic-1+std-dev \u003c!nocheck\u003e, librust-portable-atomic-util-0.2+alloc-dev \u003c!nocheck\u003e, librust-portable-atomic-util-0.2+std-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0ca63e09597efc492ffba5944bc2bc8fc4d805e46ea391c4b8ee600afb69cd60 2226 rust-ringbuf_0.3.3-2.dsc 79abed428d1fd2a128201cec72c5f6938e2da607c6f3745f769fabea399d950a 28701 rust-ringbuf_0.3.3.orig.tar.gz 024aa7abb4ea43a01bcc22cf1c9f4e979e733272703821b700db4b4bb16a4b78 2792 rust-ringbuf_0.3.3-2.debian.tar.xz"
+    "67f2fe43d756ede3e62b2a3f41f629bf2d17923201115adfa4b2a26ed6dee011 2404 rust-ringbuf_0.5.2-1.dsc 0b123165531e325df9079f56c036f2da4103a5d5abfef9e2fda4b9c34d1ef7aa 33613 rust-ringbuf_0.5.2.orig.tar.gz e5d80ac43d1508f40393843f8c113951e10b698d84940d7fbed902e9ac06a3cb 3804 rust-ringbuf_0.5.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ringbuf"
   ],
   "Files": [
-    "39e443feb6ab625b56f66857d0768e5e 2226 rust-ringbuf_0.3.3-2.dsc bab4cde3230fe9b00d43d7d93bacf65e 28701 rust-ringbuf_0.3.3.orig.tar.gz d13387f43e518bb91bc4d9ec6852142b 2792 rust-ringbuf_0.3.3-2.debian.tar.xz"
+    "02fb44a8f88c5ee2fa30bdc2af9c14a8 2404 rust-ringbuf_0.5.2-1.dsc fe26214d7a2453c265fa2dc4265e890a 33613 rust-ringbuf_0.5.2.orig.tar.gz 8c627c4a602d13011c5693b30a624aa6 3804 rust-ringbuf_0.5.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/agerasev/ringbuf"
+    "https://github.com/agerasev/ringbuf.git"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@riseup.net\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ringbuf]"
   ],
   "Version": [
-    "0.3.3-2"
+    "0.5.2-1"
   ]
 }
