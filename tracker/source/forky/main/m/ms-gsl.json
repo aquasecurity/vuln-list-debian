@@ -6,19 +6,19 @@
     "libmsgsl-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "debhelper-compat (= 14), dh-sequence-single-binary, dpkg-build-api (= 1)"
   ],
   "Build-Depends-Indep": [
-    "cmake (\u003e= 3.14), libgtest-dev \u003c!nocheck\u003e, pkgconf \u003c!nocheck\u003e"
+    "cmake (\u003e= 3.14), libgtest-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "88b4efe0900401d7e6f1490d138a8a07cc13cd657b17829d8a1895923e786188 1442 ms-gsl_4.2.1-1.dsc d959f1cb8bbb9c94f033ae5db60eaf5f416be1baa744493c32585adca066fe1f 62226 ms-gsl_4.2.1.orig.tar.gz 3547ce3247ae235a1287ef21747cc6e10f5f9e67da3f384a728e2aa38f3df7dc 5900 ms-gsl_4.2.1-1.debian.tar.xz"
+    "4b939fbe56b71234edd2600f380b49e2ee9312826559332ebdc7bd5041d00505 1458 ms-gsl_5.0.1-1.dsc 733a87a7eea56db075ee060735ba7616a27c1c55955f264d5473bf9e83294ad0 75787 ms-gsl_5.0.1.orig.tar.gz b1b69d562d78a52b280b6e7896279ad66fe8aaf11e574508cebb1797232fc0a9 7000 ms-gsl_5.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/ms-gsl"
   ],
   "Files": [
-    "729b7105d00c3be2c5dcbcada55393cb 1442 ms-gsl_4.2.1-1.dsc ae93f67a036c15d8787ab6461c35de6d 62226 ms-gsl_4.2.1.orig.tar.gz c598a23740d53f1271afa640891061f4 5900 ms-gsl_4.2.1-1.debian.tar.xz"
+    "ee2ffabe3e65f3bef27229cc2d7012a6 1458 ms-gsl_5.0.1-1.dsc 054de39bd095c035f7d353cbf22e0e77 75787 ms-gsl_5.0.1.orig.tar.gz 834033c758b7b76c59b5b3ace3b094f0 7000 ms-gsl_5.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "ms-gsl"
   ],
   "Package-List": [
-    "libmsgsl-dev deb libdevel optional arch=all"
+    "libmsgsl-dev deb libdevel unknown arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "c++-compiler, clang, cmake, g++, libc++-dev, libc++abi-dev, libgtest-dev, make, pkgconf"
+    "c++-compiler, clang, cmake, g++, googletest, libc++-dev, libgtest-dev, make"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/ms-gsl"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/ms-gsl.git"
   ],
   "Version": [
-    "4.2.1-1"
+    "5.0.1-1"
   ]
 }
