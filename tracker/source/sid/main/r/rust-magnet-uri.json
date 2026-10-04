@@ -6,19 +6,25 @@
     "librust-magnet-uri-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-urlencoded-0+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-serde-urlencoded-0.7+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f06fdd1d251b9fa2d07c264f3039411fc00c13085b7e7483c2aa0b16e05e8f44 2199 rust-magnet-uri_0.2.0-1.dsc 6ded8a654bb8db4526b81c3385ed1db0591623ec38c8aefd46a2534f6a598844 5031 rust-magnet-uri_0.2.0.orig.tar.gz 35bad1c1c3543782ec2a4f048a446cc785cd5566e5006c122e6a4015d53661d3 2744 rust-magnet-uri_0.2.0-1.debian.tar.xz"
+    "5e2b6b628e8790f8b92d41d252829637f2587d01d99f3719a01e1f9be59fb661 2279 rust-magnet-uri_0.2.1-1.dsc 07723eb22b26f20ba0ff64f78f4a8aa68452d0cb4ae62c7541da08feb269fd60 5918 rust-magnet-uri_0.2.1.orig.tar.gz dce87f594ee2ebcc9063b242e92eebf994b09dd1681911fb231c3b5f9ce503ca 2776 rust-magnet-uri_0.2.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-magnet-uri"
   ],
   "Files": [
-    "2f9122aaab59e8df5648277f73325092 2199 rust-magnet-uri_0.2.0-1.dsc a420a2fdce3ff8ab8a71e1e5834e8bdc 5031 rust-magnet-uri_0.2.0.orig.tar.gz 1d59531acfcb9eeb420f173c1e46653b 2744 rust-magnet-uri_0.2.0-1.debian.tar.xz"
+    "1bc02eea4498905662ea51fab4c475a6 2279 rust-magnet-uri_0.2.1-1.dsc 50b35c342959994becc4396f8221dd69 5918 rust-magnet-uri_0.2.1.orig.tar.gz 528c2a800d680f98b29d64019e1e61fa 2776 rust-magnet-uri_0.2.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/pierd/magnet-uri"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cmatthias.geiger1024@tutanota.de\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/magnet-uri]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.1-1"
   ]
 }

@@ -6,25 +6,31 @@
     "python-dbus-dev, python-dbus-doc, python3-dbus, python3-dbus-tests"
   ],
   "Build-Depends": [
-    "dbus-daemon, debhelper-compat (= 13), dh-python, dh-sequence-python3, libdbus-1-dev, libglib2.0-dev, meson, ninja-build, python3-all-dev, python3-gi, python3-setuptools, python3-tap \u003c!nocheck\u003e, python3-wheel"
+    "debhelper-compat (= 14), dh-python, dh-sequence-python3, dbus-daemon, libdbus-1-dev, libglib2.0-dev, meson, ninja-build, patchelf, pybuild-plugin-pyproject, python3-all-dev, python3-gi, python3-mesonpy, python3-tap \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "python3-sphinx, python3-sphinx-rtd-theme"
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "789f529dc7b6e19b071aa6f124c11fee89ca126a3c9041b82fb7a36a0c29389c 3083 dbus-python_1.4.0-1.dsc c36b28f10ffcc8f1f798aca973bcc132f91f33eb9b6b8904381b4077766043d5 168268 dbus-python_1.4.0.orig.tar.xz 855c03b351e2ecbedf6d46f938bc4d9734f8573d252fd0ac496cbaeda27a2c53 833 dbus-python_1.4.0.orig.tar.xz.asc be7bd429a0bab67226783e6de0f4dcff8b7f6b9889debc2baac23376b07ca045 35128 dbus-python_1.4.0-1.debian.tar.xz"
+    "1669a2bdc67e30aba488134ca96ee0265831deef0277a73e8b7fa5d273ca7949 3334 dbus-python_1.5.0-1.dsc ac94ce330879108e5d37105164cc14b595bdf9326d2ce4a5acad6c1ab2bf6476 203989 dbus-python_1.5.0.orig.tar.gz a7dac5ffac4eca1224e7c8f7f417d7a36b797229974468030a23e5e684c51803 833 dbus-python_1.5.0.orig.tar.gz.asc 20d8a259f21a95c35c2fe79527f93b5772b09138879eebb8b1b53dfdcc4f5814 30404 dbus-python_1.5.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "b30b2807441f3009bd2cf5000aa9e8621525fa26 debian archive/debian/1.4.0-1 https://git.dgit.debian.org/dbus-python"
+    "82ffb5efaef8f1d637cf49862dcb65354c669c83 debian archive/debian/1.5.0-1 https://git.dgit.debian.org/dbus-python"
   ],
   "Directory": [
     "pool/main/d/dbus-python"
   ],
   "Files": [
-    "8446a96633f1cb3cde9fb6d1d9edf161 3083 dbus-python_1.4.0-1.dsc edca335d1c80f338e3255455eb876b72 168268 dbus-python_1.4.0.orig.tar.xz e30259eaded5e3798ff3e9daff38bdf8 833 dbus-python_1.4.0.orig.tar.xz.asc 263c6c71c151f59ce20a2016c0c89051 35128 dbus-python_1.4.0-1.debian.tar.xz"
+    "4044056a9933a3fc3c94b1b6c1aeaaa0 3334 dbus-python_1.5.0-1.dsc 6c2b06c6c0d2bfd5a03c3fafafedcf09 203989 dbus-python_1.5.0.orig.tar.gz b79beaaff872c0441f21372f56878139 833 dbus-python_1.5.0.orig.tar.gz.asc 5b32bee7420ab11ade377831a66f29e4 30404 dbus-python_1.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=1a87fdd4d969eefd8921f4589611c768f7eaf752 fp=7a073ad1ae694fa25bff62e5235c099d3eb33076"
+  ],
+  "Git-Tag-Tagger": [
+    "Simon McVittie \u003csmcv@debian.org\u003e"
   ],
   "Homepage": [
     "https://www.freedesktop.org/wiki/Software/DBusBindings#Python"
@@ -36,7 +42,7 @@
     "dbus-python"
   ],
   "Package-List": [
-    "python-dbus-dev deb python optional arch=all python-dbus-doc deb doc optional arch=all python3-dbus deb python optional arch=any python3-dbus-tests deb python optional arch=any"
+    "python-dbus-dev deb python optional arch=all python-dbus-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-dbus deb python optional arch=any python3-dbus-tests deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +51,7 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-python"
@@ -54,7 +60,7 @@
     "build-essential, dbus-daemon, gnome-desktop-testing, libglib2.0-dev, python3-all-dbg, python3-all-dev, python3-gi, python3-tap"
   ],
   "Uploaders": [
-    "Sjoerd Simons \u003csjoerd@debian.org\u003e, Sebastian Dröge \u003cslomo@debian.org\u003e, Simon McVittie \u003csmcv@debian.org\u003e, Loic Minier \u003clool@dooz.org\u003e,"
+    "Sjoerd Simons \u003csjoerd@debian.org\u003e, Sebastian Dröge \u003cslomo@debian.org\u003e, Simon McVittie \u003csmcv@debian.org\u003e, Loic Minier \u003clool@dooz.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/dbus-python"
@@ -63,6 +69,6 @@
     "https://salsa.debian.org/debian/dbus-python.git"
   ],
   "Version": [
-    "1.4.0-1"
+    "1.5.0-1"
   ]
 }
