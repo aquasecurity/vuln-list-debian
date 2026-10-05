@@ -6,19 +6,31 @@
     "python3-aioeagle"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-setuptools, python3-xmltodict \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-xmltodict \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a9da74fea712279ec4c0b941adc244f662a32fc62be92a0458af307b558955e2 2051 aioeagle_1.1.0-2.dsc 109130b28a2869ea99712753bffba506a23f783fff2cd44ccdb0609109937eb4 10608 aioeagle_1.1.0.orig.tar.gz ff23a513c5d7c1017a747a3b0c3193166ddbbb861cba7aa325b9bcc3787f6888 1968 aioeagle_1.1.0-2.debian.tar.xz"
+    "90a5657d090560ff36dc9fd57d782ee4f83a6dfa2eb32620628fd03bc5c7f2ab 2425 aioeagle_1.1.1-1.dsc 0fcde80b351dfb4bef9f84e6d75d50e5b90166872a1855cd3954f693177d8879 12212 aioeagle_1.1.1.orig.tar.gz 8b3cdcce8516fbb7b10497f5fe4ec41827462fd62bf1ea0cb56b31fba12311da 2192 aioeagle_1.1.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "159ac15b2c81bce2563421c6d6aa4c1b8a769895 debian archive/debian/1.1.1-1 https://git.dgit.debian.org/aioeagle"
   ],
   "Directory": [
     "pool/main/a/aioeagle"
   ],
   "Files": [
-    "856d3c96ea2fe68e93ae31d11f155ff2 2051 aioeagle_1.1.0-2.dsc 8c603e00a944b5bb29b6d1e58d43985c 10608 aioeagle_1.1.0.orig.tar.gz 1f21bfc1cd22c25fdb14a8e4d3307fec 1968 aioeagle_1.1.0-2.debian.tar.xz"
+    "87b982f483ce724fe6dac93f28a2c167 2425 aioeagle_1.1.1-1.dsc 42d9ee002879ac72f83f7f5357c50336 12212 aioeagle_1.1.1.orig.tar.gz cd7b50b018330cf2a7dbac1109d62937 2192 aioeagle_1.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=0de012a1eb197ae2aa27e1298333e9b072832e0c fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/home-assistant-libs/aioeagle"
@@ -39,7 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -51,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/aioeagle.git"
   ],
   "Version": [
-    "1.1.0-2"
+    "1.1.1-1"
   ]
 }

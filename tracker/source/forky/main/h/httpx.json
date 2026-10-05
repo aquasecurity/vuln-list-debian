@@ -6,16 +6,16 @@
     "python3-httpx"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 13), debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-anyio, python3-brotli \u003c!nocheck\u003e, python3-certifi, python3-chardet, python3-charset-normalizer \u003c!nocheck\u003e, python3-click (\u003e= 8) \u003c!nocheck\u003e, python3-h11, python3-h2, python3-hatch-fancy-pypi-readme, python3-hatchling, python3-httpcore (\u003e= 1) \u003c!nocheck\u003e, python3-idna, python3-pygments \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-rich (\u003e= 10) \u003c!nocheck\u003e, python3-setuptools, python3-sniffio, python3-socksio \u003c!nocheck\u003e, python3-trio \u003c!nocheck\u003e, python3-trustme \u003c!nocheck\u003e, python3-urllib3, python3-uvicorn \u003c!nocheck\u003e, python3-zstandard \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-anyio \u003c!nocheck\u003e, python3-brotli \u003c!nocheck\u003e, python3-certifi \u003c!nocheck\u003e, python3-chardet \u003c!nocheck\u003e, python3-click (\u003e= 8) \u003c!nocheck\u003e, python3-cryptography \u003c!nocheck\u003e, python3-h2 \u003c!nocheck\u003e, python3-hatch-fancy-pypi-readme, python3-hatchling, python3-httpcore (\u003e= 1) \u003c!nocheck\u003e, python3-idna \u003c!nocheck\u003e, python3-pygments \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-rich (\u003e= 10) \u003c!nocheck\u003e, python3-sniffio \u003c!nocheck\u003e, python3-socksio \u003c!nocheck\u003e, python3-trio \u003c!nocheck\u003e, python3-trustme \u003c!nocheck\u003e, python3-uvicorn \u003c!nocheck\u003e, python3-zstandard \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "efa69814cc7783aeae12fceda45807cb424a654499099fe2354316740bd6ac27 2552 httpx_0.28.1-1.1.dsc a18051d0df8fe82c89e950ed61afc2285f2603537130f062cc9b91dcb4dd4715 4031464 httpx_0.28.1.orig.tar.xz 23e02d1644d53f54f5a1ccd46fde47b3158bdcf16a01f89513a766bd2ee06468 5036 httpx_0.28.1-1.1.debian.tar.xz"
+    "8ea3d897d6a5bbebc38ed16e82ecd20ab00fcbd42105c8313a389cde5ef8693c 2510 httpx_0.28.1-2.dsc a18051d0df8fe82c89e950ed61afc2285f2603537130f062cc9b91dcb4dd4715 4031464 httpx_0.28.1.orig.tar.xz 6742b8f95c7971d7771a11036ef6a518c4ca0337b1e0adba2cbbcb7ad6236164 6184 httpx_0.28.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/httpx"
   ],
   "Files": [
-    "690737823e0580f11d9ac03172f9abd9 2552 httpx_0.28.1-1.1.dsc a202051666d836a50320e4a6a41a1bfb 4031464 httpx_0.28.1.orig.tar.xz 65c93229c15ab60a44f9602d0bf20fec 5036 httpx_0.28.1-1.1.debian.tar.xz"
+    "124ef71377b852ee7fdfe6c1b69303b1 2510 httpx_0.28.1-2.dsc a202051666d836a50320e4a6a41a1bfb 4031464 httpx_0.28.1.orig.tar.xz 6cb319ce6e221d869917d841acf2e784 6184 httpx_0.28.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2.0"
+    "4.7.4.1"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "@builddeps@"
+    "autopkgtest, autopkgtest-pkg-pybuild"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/morph/httpx"
@@ -54,6 +51,6 @@
     "https://salsa.debian.org/morph/httpx.git"
   ],
   "Version": [
-    "0.28.1-1.1"
+    "0.28.1-2"
   ]
 }
