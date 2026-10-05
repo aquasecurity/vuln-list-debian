@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8-dev \u003c!nocheck\u003e, librust-cached-proc-macro-0.27+default-dev \u003c!nocheck\u003e, librust-cached-proc-macro-types-0.1+default-dev (\u003e= 0.1.1) \u003c!nocheck\u003e, librust-hashbrown-0.16+default-dev \u003c!nocheck\u003e, librust-hashbrown-0.16+inline-more-dev \u003c!nocheck\u003e, librust-once-cell-1+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.5) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-web-time-1+default-dev (\u003e= 1.1.0) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.92) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ahash-0.8+runtime-rng-dev \u003c!nocheck\u003e, librust-ahash-0.8-dev \u003c!nocheck\u003e, librust-cached-proc-macro-3+default-dev (\u003e= 3.0.1) \u003c!nocheck\u003e, librust-cached-proc-macro-types-3+default-dev \u003c!nocheck\u003e, librust-hashbrown-0.16+default-dev \u003c!nocheck\u003e, librust-hashbrown-0.16+inline-more-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.5) \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-web-time-1+default-dev (\u003e= 1.1.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "19bc16fa13e8a64434d88358ff41eea6626fbe8a5634bb44ba0b9275fcbc18e5 2807 rust-cached_0.59.0-1.dsc 53b6f5d101f0f6322c8646a45b7c581a673e476329040d97565815c2461dd0c4 76985 rust-cached_0.59.0.orig.tar.gz 4d87bda8be211f991a585779a80d46debc624d3f99ab8de660c35b05ca906063 3932 rust-cached_0.59.0-1.debian.tar.xz"
+    "c413ee34d04227e674658b170d1232824530975e6cbdd0d573bc731a72960cda 3198 rust-cached_4.0.1-1.dsc 292f39b5c459538e148825347c400cb2005a618b897d0e6be183bad677d460b7 1147799 rust-cached_4.0.1.orig.tar.gz e0686ce9f0f88d2a593aec398413a48d5051d7c4bd9b033402798d5bec7ef80b 5160 rust-cached_4.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-cached"
   ],
   "Files": [
-    "2b1313c910ed79016ccb5faf0ec334d3 2807 rust-cached_0.59.0-1.dsc aa7e9dcbbb5d943eb8ce8a08a34986be 76985 rust-cached_0.59.0.orig.tar.gz 43fe00929b4c410b6a4f2cdc36acff6f 3932 rust-cached_0.59.0-1.debian.tar.xz"
+    "49639069a325d19b315172d63aac6e9a 3198 rust-cached_4.0.1-1.dsc dafb5626f69fd1499cfcc6c72865c6fb 1147799 rust-cached_4.0.1.orig.tar.gz c9585d2005272950c3bacc821d878ae1 5160 rust-cached_4.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-serial-test-3+default-dev, librust-smartstring-1+default-dev, librust-tempfile-3+default-dev, rustc"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-compact-str-0.10+default-dev, librust-criterion-0.5+default-dev, librust-futures-0.3+default-dev, librust-googletest-0.14+default-dev, librust-moka-0.12+default-dev, librust-moka-0.12+sync-dev, librust-serial-test-3+default-dev, librust-tempfile-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+parking-lot-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+sync-dev, librust-tokio-1+time-dev, librust-trybuild-1+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/cached]"
   ],
   "Version": [
-    "0.59.0-1"
+    "4.0.1-1"
   ]
 }

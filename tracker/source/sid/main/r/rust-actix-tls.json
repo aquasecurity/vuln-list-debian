@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.76) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-actix-rt-2-dev (\u003e= 2.2) \u003c!nocheck\u003e, librust-actix-service-2+default-dev \u003c!nocheck\u003e, librust-actix-utils-3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+alloc-dev (\u003e= 0.3.7) \u003c!nocheck\u003e, librust-impl-more+default-dev (\u003c\u003c 0.4) \u003c!nocheck\u003e, librust-impl-more+default-dev (\u003e= 0.1) \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.7) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.44.2) \u003c!nocheck\u003e, librust-tokio-util-0.7+default-dev \u003c!nocheck\u003e, librust-tracing-0.1+log-dev (\u003e= 0.1.30) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-actix-rt-2+net-dev (\u003e= 2.14) \u003c!nocheck\u003e, librust-actix-service-2+default-dev \u003c!nocheck\u003e, librust-actix-utils-3+default-dev \u003c!nocheck\u003e, librust-futures-core-0.3+alloc-dev (\u003e= 0.3.7) \u003c!nocheck\u003e, librust-impl-more-0.3+default-dev \u003c!nocheck\u003e, librust-pin-project-lite-0.2+default-dev (\u003e= 0.2.7) \u003c!nocheck\u003e, librust-tokio-1+default-dev (\u003e= 1.44.2) \u003c!nocheck\u003e, librust-tokio-util-0.7+default-dev \u003c!nocheck\u003e, librust-tracing-0.1+log-dev (\u003e= 0.1.30) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bea262d87ef61e2e252da7ba24f8dfa652cb7432099f5e06b1c00559c0604fad 3096 rust-actix-tls_3.5.0+dfsg-2.dsc 8114486f217e36a256da50a19788a94ddf35ef31c255f25359421ea40ba230b5 47107 rust-actix-tls_3.5.0+dfsg.orig.tar.gz b1216bdc6febb969675263234500248913ca7d11f87d4974c29e0887d1860faa 4480 rust-actix-tls_3.5.0+dfsg-2.debian.tar.xz"
+    "ee5e7a92a79e0651d40ad610f2a450346e55eab7a8cf34ffc134176ba7ebc5dd 3154 rust-actix-tls_3.6.1+ds-1.dsc 62c12d692d591bc14419783f78c093a423c345c27fb051cad1d6199953bc5469 49524 rust-actix-tls_3.6.1+ds.orig.tar.gz 2e33676f08bcbe25f2fa752422c81e74423e5ef79231fef7216d69f175de6856 4752 rust-actix-tls_3.6.1+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-actix-tls"
   ],
   "Files": [
-    "90f2b97c5b8c2fda9d9a36602357b96d 3096 rust-actix-tls_3.5.0+dfsg-2.dsc 96a4a41713a0c1cbc3ec2fac6a9550d2 47107 rust-actix-tls_3.5.0+dfsg.orig.tar.gz 24f790f782be4523a556807aa281b7a5 4480 rust-actix-tls_3.5.0+dfsg-2.debian.tar.xz"
+    "62f24330d3a8b743b1f41ab6565cbfa0 3154 rust-actix-tls_3.6.1+ds-1.dsc f10e413e2da8ea77e05f7139532d0492 49524 rust-actix-tls_3.6.1+ds.orig.tar.gz 0221e790016ae8c33a213ac72eb864e4 4752 rust-actix-tls_3.6.1+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-actix-codec-0.5+default-dev, librust-actix-rt-2+default-dev, librust-actix-server-2+default-dev, librust-bytes-1+default-dev, librust-futures-util-0.3+sink-dev, librust-itertools+default-dev, librust-pretty-env-logger-0.5+default-dev, librust-rcgen+default-dev, librust-rustls-pemfile-2+default-dev, librust-tokio-rustls-0.26+default-dev, rustc"
+    "dh-cargo, librust-actix-codec-0.5+default-dev, librust-actix-rt-2+default-dev, librust-actix-server-2+default-dev, librust-arc-swap-1+default-dev, librust-bytes-1+default-dev, librust-futures-util-0.3+sink-dev, librust-itertools-0.14+default-dev, librust-pretty-env-logger-0.5+default-dev, librust-rcgen-0.14+default-dev, librust-rustls-pemfile-2+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-tokio-rustls-0.26+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/actix-tls]"
   ],
   "Version": [
-    "3.5.0+dfsg-2"
+    "3.6.1+ds-1"
   ]
 }

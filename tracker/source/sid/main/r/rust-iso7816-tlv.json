@@ -6,19 +6,25 @@
     "librust-iso7816-tlv-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-untrusted-0.9+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-untrusted-0.9+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8f407cb733b0f67b2689fec5dc15bfe5688f6a542085b5aca9f2c16455e66e0e 2377 rust-iso7816-tlv_0.4.4-1.dsc 7660d28d24a831d690228a275d544654a30f3b167a8e491cf31af5fe5058b546 11273 rust-iso7816-tlv_0.4.4.orig.tar.gz 2cb1f7aafb3e3547837cddd3028192b75e4c98f5428e3a392cb5e2df674a3d30 2584 rust-iso7816-tlv_0.4.4-1.debian.tar.xz"
+    "b7afb7cf5b15286123b70504f367a09448b0463d46884c3e68278fcf89f110ff 2435 rust-iso7816-tlv_0.4.4-2.dsc 7660d28d24a831d690228a275d544654a30f3b167a8e491cf31af5fe5058b546 11273 rust-iso7816-tlv_0.4.4.orig.tar.gz 9f72b6cccdbd761d590884587ca16becc23bdfe431489cbdb7dc9102ab22eaae 2988 rust-iso7816-tlv_0.4.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-iso7816-tlv"
   ],
   "Files": [
-    "15c52146faad739dba5a6eaf83197612 2377 rust-iso7816-tlv_0.4.4-1.dsc 3fa0508ed82f4c4887db13e76c365574 11273 rust-iso7816-tlv_0.4.4.orig.tar.gz 849e00a02a2e4c33f389eddd07908931 2584 rust-iso7816-tlv_0.4.4-1.debian.tar.xz"
+    "849ea6d4089f668d50cbb86e4ca109ea 2435 rust-iso7816-tlv_0.4.4-2.dsc 3fa0508ed82f4c4887db13e76c365574 11273 rust-iso7816-tlv_0.4.4.orig.tar.gz 0715ef48dc920f49ebfcaac78b4f764f 2988 rust-iso7816-tlv_0.4.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/jkowalsk/iso7816-tlv"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-rand-core-0.6+default-dev, librust-rand-xorshift-0.3+default-dev, librust-static-alloc-0.2+default-dev"
+    "dh-cargo, librust-hex-literal-0.4+default-dev, librust-rand-core-0.10+default-dev, librust-rand-xorshift-0.5+default-dev, librust-static-alloc-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/iso7816-tlv]"
   ],
   "Version": [
-    "0.4.4-1"
+    "0.4.4-2"
   ]
 }
