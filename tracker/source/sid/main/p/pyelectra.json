@@ -6,19 +6,31 @@
     "python3-pyelectra"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e911b3968c5da8c88dc5593fd9b9d7f0d46364425ab313bf6d76b31601814df0 2034 pyelectra_1.2.4-1.dsc 54b32a4ef81bd8cbf9a77eb51a3d0c594eb6b3e39a0847a00d531722ab20798a 9664 pyelectra_1.2.4.orig.tar.gz 4a5ce6914dc3152c934151de42186a7c0a19b811a4111843cefa70dc8b2ff086 2028 pyelectra_1.2.4-1.debian.tar.xz"
+    "1b43e4e4cdf797290916a0c0a143195972a88765d87facfeaea63ffea63f4ab5 2476 pyelectra_1.2.5-1.dsc 51a9ccff689b60ea36aa0c4295f59a24b265de6abacf07e8b1be591c7e12efb0 11864 pyelectra_1.2.5.orig.tar.xz e559b326c0c0ca22fd0df3358b8391862bd49cdd172ccb376460aa1c327007b2 2084 pyelectra_1.2.5-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "4012becac0fbcf199bee44149aad7c33b303dc31 debian archive/debian/1.2.5-1 https://git.dgit.debian.org/pyelectra"
   ],
   "Directory": [
     "pool/main/p/pyelectra"
   ],
   "Files": [
-    "5811c992a4751d71f729aeab7e7e105f 2034 pyelectra_1.2.4-1.dsc a0b3cb6fe24cf53968f87a801544789c 9664 pyelectra_1.2.4.orig.tar.gz 59e100fe6e49f8150f546b8b41a2cc92 2028 pyelectra_1.2.4-1.debian.tar.xz"
+    "6f0d11ab96ed27d29b17fda42ecec0a5 2476 pyelectra_1.2.5-1.dsc c3871e8ba642b3d85de514f24f2f97ef 11864 pyelectra_1.2.5.orig.tar.xz d705b6a17b0e10c5dd02afc61bd4e288 2084 pyelectra_1.2.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=ef209b90385866a839a93e6c8c4c8a9c4ad810b4 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/jafar-atili/pyelectra"
@@ -39,7 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -51,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/pyelectra.git"
   ],
   "Version": [
-    "1.2.4-1"
+    "1.2.5-1"
   ]
 }
