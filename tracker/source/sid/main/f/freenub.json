@@ -6,19 +6,31 @@
     "python3-freenub"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-cbor2 \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-pycryptodome \u003c!nocheck\u003e, python3-poetry-core, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-cbor2 \u003c!nocheck\u003e, python3-pycryptodome \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "88bd8660d3b083790f291af2b8ce0edafa969055c438415c2280d38d8ed8a2f0 2298 freenub_0.1.0-2.dsc 2efd38add1ae7d3f77849eea0575952a8d5b16b397ddfcadd46a1c002c68a43b 125284 freenub_0.1.0.orig.tar.gz 41d3445d1e723b9376dfc9d48b1199fddf696c0466d0be2a8edab3dfc23e91ba 2508 freenub_0.1.0-2.debian.tar.xz"
+    "b542a19624deb195483277f7ee194a8a16dc06f3d0e143f68c94688c321e3959 2554 freenub_0.1.2-1.dsc e3fc37c81297672d835d368f3643833230ad03074fca29b619e903967c4a5e5d 134065 freenub_0.1.2.orig.tar.gz 61a1655fede5f90d6981b39971f56015340e1521e005695bef29f18e6b8b7c8b 2472 freenub_0.1.2-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "0e608344ebce1644e88da31e2d6145ad13f669bb debian archive/debian/0.1.2-1 https://git.dgit.debian.org/freenub"
   ],
   "Directory": [
     "pool/main/f/freenub"
   ],
   "Files": [
-    "420607d0b21ba80e2b168d4e6cbe3f86 2298 freenub_0.1.0-2.dsc a26926cfde92802b8578d8abffa85d8d 125284 freenub_0.1.0.orig.tar.gz 733b3c1a9cc97e6a661bf65b3f2ecab4 2508 freenub_0.1.0-2.debian.tar.xz"
+    "2dd7401fa158312e4d429a1b32b6b85d 2554 freenub_0.1.2-1.dsc 9de1306324325deb48b573ca07977a69 134065 freenub_0.1.2.orig.tar.gz afa77a096ee108a7c4ea2fd8b04b44ad 2472 freenub_0.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=047af6bf71ce360537ebcac63bbee563f235762e fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/bdraco/freenub"
@@ -39,13 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-pytest, python3-pytest-cov"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/freenub.git"
   ],
   "Version": [
-    "0.1.0-2"
+    "0.1.2-1"
   ]
 }
