@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "tasgrid, libtasmaniansparsegrid8, libtasmaniandream8, libtasmanianfortran8, libtasmaniancaddons8, libtasmanian-dev, octave-tasmanian, python3-tasmanian"
+    "tasgrid, libtasmaniansparsegrid8, libtasmaniandream8, libtasmanianfortran8, libtasmaniancaddons8, libtasmanian-dev, octave-tasmanian, python3-tasmanian, libtasmanian-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-fortran, dh-sequence-python3, cmake, libblas-dev, liblapack-dev, python3-numpy"
+    "debhelper-compat (= 14), dh-sequence-fortran, dh-sequence-python3, cmake, libblas-dev, liblapack-dev, python3-numpy, dh-sequence-doc-privacy, doxygen"
   ],
   "Checksums-Sha256": [
-    "a6dc392a8670e31cf0e7adc64627a34ce8cb32aca27944cad2030daf6279a0d1 2569 tasmanian_8.2-2.dsc ae2a3ad91c9e7aab1672ab98871fb7fb1600170ddbc09ad69d479755369fb7fc 680212 tasmanian_8.2.orig.tar.gz 7bbe1af9db410e2410f2680a1fcd59fa0ade9296a5bd7c67027420579158d1d4 6152 tasmanian_8.2-2.debian.tar.xz"
+    "c87dea1b87f719c0e4afe7f0c0d01879e0f1fb3786091af294b5a31eb361ca70 2672 tasmanian_8.2-3.dsc ae2a3ad91c9e7aab1672ab98871fb7fb1600170ddbc09ad69d479755369fb7fc 680212 tasmanian_8.2.orig.tar.gz 313971f1b8969eef9bf5404c0f67293675c8ab6ce02e177427f97c8b130e6478 7200 tasmanian_8.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/t/tasmanian"
   ],
   "Files": [
-    "5d8f8ea9f11e2d843a48c4878ab1d71b 2569 tasmanian_8.2-2.dsc 59c87d6625bc0bc36214dab4364a68a9 680212 tasmanian_8.2.orig.tar.gz 712ed70b9af8f9e48772a478a8af490a 6152 tasmanian_8.2-2.debian.tar.xz"
+    "0a51ce7b95f9a5527dbd774641e5883a 2672 tasmanian_8.2-3.dsc 59c87d6625bc0bc36214dab4364a68a9 680212 tasmanian_8.2.orig.tar.gz 7d15b66adaf0f74b353540752c5c94ca 7200 tasmanian_8.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "tasmanian"
   ],
   "Package-List": [
-    "libtasmanian-dev deb libdevel optional arch=any libtasmaniancaddons8 deb libs optional arch=any libtasmaniandream8 deb libs optional arch=any libtasmanianfortran8 deb libs optional arch=any libtasmaniansparsegrid8 deb libs optional arch=any octave-tasmanian deb math optional arch=all python3-tasmanian deb python optional arch=any tasgrid deb math optional arch=any"
+    "libtasmanian-dev deb libdevel optional arch=any libtasmanian-doc deb doc optional arch=all libtasmaniancaddons8 deb libs optional arch=any libtasmaniandream8 deb libs optional arch=any libtasmanianfortran8 deb libs optional arch=any libtasmaniansparsegrid8 deb libs optional arch=any octave-tasmanian deb math optional arch=all python3-tasmanian deb python optional arch=any tasgrid deb math optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "g++, gfortran, octave"
+    "cmake, g++, gfortran, octave"
   ],
   "Uploaders": [
     "Sébastien Villemot \u003csebastien@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/tasmanian.git"
   ],
   "Version": [
-    "8.2-2"
+    "8.2-3"
   ]
 }

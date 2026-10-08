@@ -6,16 +6,16 @@
     "python3-anndata"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-sequence-python3, hdf5-tools \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-all, python3-array-api-compat \u003c!nocheck\u003e, python3-pyarrow \u003c!nocheck\u003e, python3-awkward \u003c!nocheck\u003e, python3-boltons \u003c!nocheck\u003e, python3-distributed \u003c!nocheck\u003e, python3-filelock \u003c!nocheck\u003e, python3-h5py, python3-hatch-vcs, python3-hatchling, python3-httpx \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-joblib \u003c!nocheck\u003e, python3-legacy-api-wrap, python3-natsort, python3-numba \u003c!nocheck\u003e, python3-numpy, python3-openpyxl \u003c!nocheck\u003e, python3-packaging, python3-pandas, python3-pydantic, python3-pydantic-settings \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-scverse-misc \u003c!nocheck\u003e, python3-sklearn \u003c!nocheck\u003e, python3-tqdm \u003c!nocheck\u003e, python3-xarray \u003c!nocheck\u003e, python3-xlrd \u003c!nocheck\u003e, python3-zarr \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, hdf5-tools \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-all, python3-array-api-compat \u003c!nocheck\u003e, python3-awkward \u003c!nocheck\u003e, python3-boltons \u003c!nocheck\u003e, python3-distributed \u003c!nocheck\u003e, python3-filelock \u003c!nocheck\u003e, python3-h5py, python3-hatch-vcs, python3-hatchling, python3-httpx \u003c!nocheck\u003e, python3-joblib \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-legacy-api-wrap, python3-matplotlib \u003c!nocheck\u003e, python3-natsort, python3-numba \u003c!nocheck\u003e, python3-numpy, python3-openpyxl \u003c!nocheck\u003e, python3-packaging, python3-pandas, python3-pooch \u003c!nocheck\u003e, python3-pyarrow \u003c!nocheck\u003e, python3-pydantic, python3-pydantic-settings \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-scverse-misc-settings \u003c!nocheck\u003e, python3-sklearn \u003c!nocheck\u003e, python3-tqdm \u003c!nocheck\u003e, python3-xarray \u003c!nocheck\u003e, python3-xlrd \u003c!nocheck\u003e, python3-zarr \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c90e265832662fc09425d59ce4f2f2da0851fa3793876aa79d51197744e8430 2973 python-anndata_0.13.4-1.dsc a2cce400078ea6748e82366c8860d6f9d643ccb64fccb95d102cef856d208aad 2228332 python-anndata_0.13.4.orig.tar.xz a673de71ee8f2c692b4ae108e22e86f932c87ba40c1070e5f6c232a7a4a3b9b1 6040 python-anndata_0.13.4-1.debian.tar.xz"
+    "16c9122891507c63d70de14cb57be37c561f76032d5ad8f9b3fc900d6a5003cc 3075 python-anndata_0.13.4-2.dsc a2cce400078ea6748e82366c8860d6f9d643ccb64fccb95d102cef856d208aad 2228332 python-anndata_0.13.4.orig.tar.xz 0f47305bd7af5328de1273ff2806bec002c4b960926c529856bf1c5ffa3ec53b 6552 python-anndata_0.13.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-anndata"
   ],
   "Files": [
-    "43c0405da59d13ce3a9f845c86da96dd 2973 python-anndata_0.13.4-1.dsc 42bd1e9d46f74a1fb5674c74c994e5b2 2228332 python-anndata_0.13.4.orig.tar.xz 0934834b64a571c6ef4fe54a47eae3c2 6040 python-anndata_0.13.4-1.debian.tar.xz"
+    "df26f2a00cb7516247fbb6937fc775b2 3075 python-anndata_0.13.4-2.dsc 42bd1e9d46f74a1fb5674c74c994e5b2 2228332 python-anndata_0.13.4.orig.tar.xz 5d6c4fd9de192fe88d87b3f96007d718 6552 python-anndata_0.13.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,10 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Diane Trout \u003cdiane@ghic.org\u003e, Steffen Moeller \u003cmoeller@debian.org\u003e"
+    "Diane Trout \u003cdiane@ghic.org\u003e, Steffen Moeller \u003cmoeller@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/med-team/python-anndata"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/med-team/python-anndata.git"
   ],
   "Version": [
-    "0.13.4-1"
+    "0.13.4-2"
   ]
 }
