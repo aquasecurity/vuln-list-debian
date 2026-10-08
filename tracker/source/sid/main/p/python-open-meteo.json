@@ -6,22 +6,31 @@
     "python3-open-meteo"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-poetry-core, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-aresponses, python3-covdefaults, python3-coverage, python3-mashumaro, python3-orjson, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, python3-syrupy"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-covdefaults \u003c!nocheck\u003e, python3-coverage \u003c!nocheck\u003e, python3-mashumaro \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-syrupy \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8bd3e9829aa64dc2d326b7da5361d68a38adfb3966482fe2d85c5302a8dbeb96 2422 python-open-meteo_0.4.0-4.dsc 4433e7862b18ebbd2807180792a90dfb7ac6db96ca018336314877505121f9c5 82576 python-open-meteo_0.4.0.orig.tar.xz 944386f9ad415d6fe0dd0be8eab19b1e8dd39df6bbcca216721b3bc5461bcba2 2784 python-open-meteo_0.4.0-4.debian.tar.xz"
+    "f16446aebe0e6da0e9deebc4da31f684462a26024da103cc103192742318843c 2849 python-open-meteo_1.0.1-1.dsc cfc9d515d8089b5d749fb9b40e1246dd821fedc37fd8a9ab7dfb09cac1f275fc 125752 python-open-meteo_1.0.1.orig.tar.xz 8d36f74999b0ecff60b56ceb526c122d804c99bb470b77737a2d861b9b3d0402 3084 python-open-meteo_1.0.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "c39e2e35eba0a80e8564c5bcb206d5cb86c3c357 debian archive/debian/1.0.1-1 https://git.dgit.debian.org/python-open-meteo"
   ],
   "Directory": [
     "pool/main/p/python-open-meteo"
   ],
   "Files": [
-    "3a21d3a40da5d9186c948a61fadfddcf 2422 python-open-meteo_0.4.0-4.dsc bc791e5bd1c114fc902539ad4e26f0db 82576 python-open-meteo_0.4.0.orig.tar.xz 97ccc7fc4b743b929bf8ac3acbe7de1d 2784 python-open-meteo_0.4.0-4.debian.tar.xz"
+    "42808986f504f1bee8e52e826f3f0893 2849 python-open-meteo_1.0.1-1.dsc f321f324fa0c837cc9991e659a91f1c5 125752 python-open-meteo_1.0.1.orig.tar.xz c8956fca142d5dabe335c90a7d5700c5 3084 python-open-meteo_1.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=37b4905eb2746bf61a1d7572695c0c5d99221aad fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/frenck/python-open-meteo"
@@ -44,6 +53,9 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e"
   ],
@@ -54,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-open-meteo.git"
   ],
   "Version": [
-    "0.4.0-4"
+    "1.0.1-1"
   ]
 }
