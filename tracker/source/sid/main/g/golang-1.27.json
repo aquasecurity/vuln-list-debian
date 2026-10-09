@@ -1,24 +1,33 @@
 {
   "Architecture": [
-    "amd64 arm64 armel armhf i386 loong64 mips mips64el mipsel ppc64 ppc64el riscv64 s390x all"
+    "amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x all"
   ],
   "Binary": [
     "golang-1.27-go, golang-1.27, golang-1.27-doc, golang-1.27-src"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), binutils-gold [arm64], golang-1.26-go:native | golang-1.25-go:native, netbase"
+    "debhelper-compat (= 13), binutils-gold [arm64], golang-1.27-go:native | golang-1.26-go:native | golang-1.25-go:native | golang-1.24-go:native, netbase"
   ],
   "Checksums-Sha256": [
-    "ecc8734fcbeb2272de7a5dd882919343e53553810dcdbea43b2da50fdfaa3697 2915 golang-1.27_1.27.1-2.dsc 4e408abae126d916b6164627193f2c54f0e3ca1312d693b86db45f862ab238b1 35109201 golang-1.27_1.27.1.orig.tar.gz 31f49c2381ebd52d46aca35343a4492f12521896a848987cebeac14e29cfb2d7 833 golang-1.27_1.27.1.orig.tar.gz.asc 5f3c42a1ae90ad4a3222a19934f3930f78324024f04f38877f1a2d338fee6e75 48228 golang-1.27_1.27.1-2.debian.tar.xz"
+    "1051487fa72df0ebc9b8ecb8a6e2ba1afd07c78d7dd7379e0b0ec308b8012675 2915 golang-1.27_1.27.2-1.dsc 99f9f06c1988e31b1e838cdbc9932212d9320034bc9ea971592241d583c0e0dd 25034468 golang-1.27_1.27.2.orig.tar.xz 053414656bb57323678ad48b150cfbf674208685f8697c4eb8cfea6a255e86dd 48632 golang-1.27_1.27.2-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "bcb04fe074f3989b20d5f2332183145f3a796034 debian archive/debian/1.27.2-1 https://git.dgit.debian.org/golang-1.27"
   ],
   "Directory": [
     "pool/main/g/golang-1.27"
   ],
   "Files": [
-    "fb9e26ac5e0ae6322043a275457ebe7e 2915 golang-1.27_1.27.1-2.dsc 0e86758aeea9130020f2c4c895835914 35109201 golang-1.27_1.27.1.orig.tar.gz cd444d29f555b0954925b6b00fb39013 833 golang-1.27_1.27.1.orig.tar.gz.asc 735f00771dd094d661b1001000a2de9d 48228 golang-1.27_1.27.1-2.debian.tar.xz"
+    "c78c7601d69ee506d6ef6e4d82677798 2915 golang-1.27_1.27.2-1.dsc 0ea7641678d8b23e9490757453ed1cc9 25034468 golang-1.27_1.27.2.orig.tar.xz 980a24c5e28939cce4356abe46c044e0 48632 golang-1.27_1.27.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=3e4323013e83ea5fe3666fed312e07b132dc03d2 fp=d1cb8f39bc5ded24c5d2c78c1302f1f036ebeb19"
+  ],
+  "Git-Tag-Tagger": [
+    "Dr. Tobias Quathamer \u003ctoddy@debian.org\u003e"
   ],
   "Homepage": [
     "https://go.dev/"
@@ -30,7 +39,7 @@
     "golang-1.27"
   ],
   "Package-List": [
-    "golang-1.27 deb golang optional arch=all golang-1.27-doc deb doc optional arch=all golang-1.27-go deb golang optional arch=amd64,arm64,armel,armhf,i386,loong64,mips,mips64el,mipsel,ppc64,ppc64el,riscv64,s390x golang-1.27-src deb golang optional arch=all"
+    "golang-1.27 deb golang optional arch=all golang-1.27-doc deb doc optional arch=all golang-1.27-go deb golang optional arch=amd64,arm64,armhf,i386,loong64,ppc64el,riscv64,s390x golang-1.27-src deb golang optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/go-team/compiler/golang.git -b golang-1.27"
   ],
   "Version": [
-    "1.27.1-2"
+    "1.27.2-1"
   ]
 }
