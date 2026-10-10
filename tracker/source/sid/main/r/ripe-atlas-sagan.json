@@ -6,16 +6,19 @@
     "python3-ripe-atlas-sagan, python-ripe-atlas-sagan-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, python3-cryptography, python3-dateutil, python3-ipy, python3-pytest, python3-pytz, python3-setuptools, python3-sphinx"
+    "debhelper-compat (= 14), dh-sequence-python3, python3-all, python3-setuptools"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, python3-cryptography, python3-dateutil, python3-pytest \u003c!nocheck\u003e, python3-pytz, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "1a9fbc790f42c482b713a2ed5c6470b55d64bdc651763e8cc2cf90bf4188fab6 2337 ripe-atlas-sagan_2.0.0-1.dsc d6ae3f64e785989e8db0b774a8262fc5a9e3cece4f2282e693ac611de5ec232e 116458 ripe-atlas-sagan_2.0.0.orig.tar.gz 988f82e731ad35d7671c0d2846c3a4a40f089d8fedf8bbdc322886ee79dab510 3208 ripe-atlas-sagan_2.0.0-1.debian.tar.xz"
+    "bd9543809f938958b15542ca249987acc0bd1d4577136c5a49ae7073b9e56e8e 2462 ripe-atlas-sagan_2.0.1-1.dsc 94328eeea5fdccb7db91a12f43e0f85473191c8eddc25aba4b7a3fcc9d13260d 116753 ripe-atlas-sagan_2.0.1.orig.tar.gz 9c0f0e6b16c21f25fac802bb0efbbfe868ce07c455c4895bdf78f01e59d9a2ce 3460 ripe-atlas-sagan_2.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/ripe-atlas-sagan"
   ],
   "Files": [
-    "cbb098453c0035d928aafe114c2effee 2337 ripe-atlas-sagan_2.0.0-1.dsc 93c547af4d12ba0d4daf46c9cd5cdf5f 116458 ripe-atlas-sagan_2.0.0.orig.tar.gz 70bcaa770c2c55eabc8bcba7b5d06ea8 3208 ripe-atlas-sagan_2.0.0-1.debian.tar.xz"
+    "ce2de3e45eae3f955187ed6cc4adad57 2462 ripe-atlas-sagan_2.0.1-1.dsc 45ea2bd6bbbacd5b54221cab66137313 116753 ripe-atlas-sagan_2.0.1.orig.tar.gz 6c904922318c8bbb78f20716270e4a51 3460 ripe-atlas-sagan_2.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "ripe-atlas-sagan"
   ],
   "Package-List": [
-    "python-ripe-atlas-sagan-doc deb doc optional arch=all python3-ripe-atlas-sagan deb python optional arch=all"
+    "python-ripe-atlas-sagan-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-ripe-atlas-sagan deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e,"
+    "Apollon Oikonomopoulos \u003capoikos@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/ripe-atlas-sagan"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/ripe-atlas-sagan.git"
   ],
   "Version": [
-    "2.0.0-1"
+    "2.0.1-1"
   ]
 }

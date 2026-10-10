@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "openrc, librc1t64, librc-dev, libeinfo1, libeinfo-dev"
+    "openrc, openrc-init, librc1t64, librc-dev, libeinfo1, libeinfo-dev, openrc-dbus-user-session"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), dh-exec, libaudit-dev [linux-any], libcap-dev [linux-any], libpam0g-dev, libselinux-dev [linux-any], meson, pkgconf"
+    "debhelper-compat (= 14), dpkg-dev (\u003e= 1.22.5), libaudit-dev [linux-any], libcap-dev [linux-any], libpam0g-dev, libselinux-dev [linux-any], meson, pkgconf"
   ],
   "Checksums-Sha256": [
-    "b46187087c739b40d5b02635e998f096ec2223c4b65f69b569d73b2a101e0c03 2342 openrc_0.63.3-1.dsc c94a646a8bb940fb82553f2deb1c1377fb35f08ca5b0f1977d66ec0a44713e05 208100 openrc_0.63.3.orig.tar.xz 09589559944b588a4c48d040218402aaeffd72512e699426d4793f8a43a7183e 27404 openrc_0.63.3-1.debian.tar.xz"
+    "443973addd199b3ea292af2e475eae469135d9b92430ce680ea48e4372208a9a 2439 openrc_0.64.1-2.dsc 458d61e3ce9a4c2d14a292156c95c202db754569c47225ec511da7b4977fcc6b 216268 openrc_0.64.1.orig.tar.xz e7ef36497278bfd3c38700fa7ece0d59ad4464e7985d2ceb789dcf8158cd5c0a 31440 openrc_0.64.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openrc"
   ],
   "Files": [
-    "a84ec8e920bd5c293fd86994550e9425 2342 openrc_0.63.3-1.dsc ff55304fccc1b16e5c3f201c7e2ce766 208100 openrc_0.63.3.orig.tar.xz f8f56dd2bb0e9cd16bc2b6f9f48c73ae 27404 openrc_0.63.3-1.debian.tar.xz"
+    "cd3c29f2ba19becc3aef3052adf0affb 2439 openrc_0.64.1-2.dsc 9e2c6a77bcd6261103bd1c0f2c41f922 216268 openrc_0.64.1.orig.tar.xz 7613acc4107adbd2806f4cc9a6d4db9e 31440 openrc_0.64.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "openrc"
   ],
   "Package-List": [
-    "libeinfo-dev deb libdevel optional arch=any libeinfo1 deb libs optional arch=any librc-dev deb libdevel optional arch=any librc1t64 deb libs optional arch=any openrc deb admin optional arch=any"
+    "libeinfo-dev deb libdevel optional arch=any libeinfo1 deb libs optional arch=any librc-dev deb libdevel optional arch=any librc1t64 deb libs optional arch=any openrc deb admin optional arch=any openrc-dbus-user-session deb admin optional arch=all openrc-init deb admin optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e, Mark Hindley \u003cleepen@debian.org\u003e, Benda Xu \u003cheroxbd@gentoo.org\u003e, Mo Zhou \u003ccdluminate@gmail.com\u003e"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Mark Hindley \u003cleepen@debian.org\u003e, Benda Xu \u003cheroxbd@gentoo.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/openrc"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/openrc.git"
   ],
   "Version": [
-    "0.63.3-1"
+    "0.64.1-2"
   ]
 }
