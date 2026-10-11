@@ -6,16 +6,22 @@
     "python3-pyrisco"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiohttp \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cd06d8d513cf0ac38efeb21004c7e149c4cd5e77ddc6559173add9fdf288ceea 2040 pyrisco_0.7.0~rc0-1.dsc 82c3ed7e7c868eb5e2d3317eb948fa6ce7ad575b7a845847a677df3293779c59 12815 pyrisco_0.7.0~rc0.orig.tar.gz 017b1e3fd3512dafe4e3e4beef4ad09446c06cf8dd6d8b0692cba1e7d8ef69f3 2304 pyrisco_0.7.0~rc0-1.debian.tar.xz"
+    "53fdafc35dca54277629198338aae30794d75db9f42ab1667374417f24105282 2344 pyrisco_0.8.1-2.dsc f8761653d711ed867089bbf15f57a4221307ab0c168727071fb1bc18d8b8bf2d 20664 pyrisco_0.8.1.orig.tar.xz b6b9c3dcf6e4fc29d18ace6e3e31481e6fe48203bff1958bee5aaa16a5f5ca3e 2560 pyrisco_0.8.1-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "204593c0ef226171f93437dae2d9553083f6b237 debian archive/debian/0.8.1-2 https://git.dgit.debian.org/pyrisco"
   ],
   "Directory": [
     "pool/main/p/pyrisco"
   ],
   "Files": [
-    "71dd22d994dda4c5128b490ec971eb6e 2040 pyrisco_0.7.0~rc0-1.dsc ff1f2483c0ba1ca98343bddf9cd08ece 12815 pyrisco_0.7.0~rc0.orig.tar.gz b8a383fe3186fc71a19676823ed8c708 2304 pyrisco_0.7.0~rc0-1.debian.tar.xz"
+    "82589db29f0452028e88a20d9e948fcc 2344 pyrisco_0.8.1-2.dsc 1afb665c8162872a318e71957188a3e5 20664 pyrisco_0.8.1.orig.tar.xz f122516467daf8466087e1255eca3eaa 2560 pyrisco_0.8.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,10 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Edward Betts \u003cedward@4angle.com\u003e,"
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/pyrisco"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/pyrisco.git"
   ],
   "Version": [
-    "0.7.0~rc0-1"
+    "0.8.1-2"
   ]
 }

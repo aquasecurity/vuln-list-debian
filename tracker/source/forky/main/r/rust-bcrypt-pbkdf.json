@@ -6,19 +6,25 @@
     "librust-bcrypt-pbkdf-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-blowfish-0.9+bcrypt-dev (\u003e= 0.9.1-~~) \u003c!nocheck\u003e, librust-blowfish-0.9+default-dev (\u003e= 0.9.1-~~) \u003c!nocheck\u003e, librust-pbkdf2-0.12-dev \u003c!nocheck\u003e, librust-sha2-0.10-dev (\u003e= 0.10.5-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-blowfish-0.10+bcrypt-dev \u003c!nocheck\u003e, librust-blowfish-0.10+default-dev \u003c!nocheck\u003e, librust-pbkdf2-0.13-dev \u003c!nocheck\u003e, librust-sha2-0.11-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "6a5ca93ddec1a333cf58019a28e7665134c55f64d238e597740a6cec318c073f 2263 rust-bcrypt-pbkdf_0.10.0-1.dsc 6aeac2e1fe888769f34f05ac343bbef98b14d1ffb292ab69d4608b3abc86f2a2 11032 rust-bcrypt-pbkdf_0.10.0.orig.tar.gz bb8c1e8a17dc1dc1607f0df67a24a6e30a94a4f3096925bd96142f3287bc186f 2760 rust-bcrypt-pbkdf_0.10.0-1.debian.tar.xz"
+    "44bd7a3c18ea1d9e74826a8a5223a49777f5b47ad5bb8db9d6b485413420297f 2500 rust-bcrypt-pbkdf_0.11.0-1.dsc 144e573728da132683b9488acd528274c790e07fc06ff81ee29f9d8f8b1041e0 13132 rust-bcrypt-pbkdf_0.11.0.orig.tar.gz cc6a2079923b2e95bcac8a658c68dcf9864e1416c7efd23073f0c158de717121 2900 rust-bcrypt-pbkdf_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-bcrypt-pbkdf"
   ],
   "Files": [
-    "706826e85c2cbbcbc4eb3a853591ec8f 2263 rust-bcrypt-pbkdf_0.10.0-1.dsc 60cbc9c6df95ebe4e5ecd67569b866a6 11032 rust-bcrypt-pbkdf_0.10.0.orig.tar.gz ebc460ea4580d73de6a77061808bbece 2760 rust-bcrypt-pbkdf_0.10.0-1.debian.tar.xz"
+    "cd5bb74c340cae91e268f335a4470489 2500 rust-bcrypt-pbkdf_0.11.0-1.dsc 19cc18246865f444e9bc0a3217c9cab9 13132 rust-bcrypt-pbkdf_0.11.0.orig.tar.gz 892f3ab5cbc075203fecf64ac50775cd 2900 rust-bcrypt-pbkdf_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/password-hashes/tree/master/bcrypt-pbkdf"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hex-literal-0.3+default-dev"
+    "dh-cargo, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Bastian Germann \u003cbage@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/bcrypt-pbkdf]"
   ],
   "Version": [
-    "0.10.0-1"
+    "0.11.0-1"
   ]
 }

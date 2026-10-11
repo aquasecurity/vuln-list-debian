@@ -6,19 +6,28 @@
     "python3-aiohttp-socks"
   ],
   "Build-Depends": [
-    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-python, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-anyio \u003c!nocheck\u003e, python3-flask \u003c!nocheck\u003e, python3-python-socks, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-setuptools, python3-tiny-proxy \u003c!nocheck\u003e, python3-trustme \u003c!nocheck\u003e"
+    "ca-certificates \u003c!nocheck\u003e, debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-anyio \u003c!nocheck\u003e, python3-flask \u003c!nocheck\u003e, python3-python-socks, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-setuptools, python3-starlette \u003c!nocheck\u003e, python3-tiny-proxy \u003c!nocheck\u003e, python3-trustme \u003c!nocheck\u003e, python3-uvicorn \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "5a6e791072296147199afe4c924c804c84d83a338b69458f6cad7d14eb58d920 2481 aiohttp-socks_0.11.0-1.dsc e82ea97b6d21f7d9eeeea410601727ed57fa4c6d8a7bb3fdd97a756d88a4d861 13949 aiohttp-socks_0.11.0.orig.tar.gz 8a4f32e297c820a3e00058bca0e7c2f92b540f0984c868d0a3c4221b21f1b38b 3044 aiohttp-socks_0.11.0-1.debian.tar.xz"
+    "785be2b7918bc300691a0a3c43e44e56a187645d0b5830cdafb26dc228912ca4 2863 aiohttp-socks_0.12.0-2.dsc 6ab2530ba47a1beeb7d9645ab2d6d4734cc4a0a2176ac9b67e7739cb555ddb28 201569 aiohttp-socks_0.12.0.orig.tar.gz c725b157cadef20945018d7cb038e14786de4262eb9ac511980a4a741d6ba0ad 3140 aiohttp-socks_0.12.0-2.debian.tar.xz"
+  ],
+  "Dgit": [
+    "2afed578c976ed0d35ffdf3a2c627cda993df188 debian archive/debian/0.12.0-2 https://git.dgit.debian.org/aiohttp-socks"
   ],
   "Directory": [
     "pool/main/a/aiohttp-socks"
   ],
   "Files": [
-    "6d6c51d23c9cba25f8b8261b29a945e1 2481 aiohttp-socks_0.11.0-1.dsc 984af91af0b8d455a4d5aeeb529ca52d 13949 aiohttp-socks_0.11.0.orig.tar.gz 7cd8809246241c0dc5ac54617dabf8ec 3044 aiohttp-socks_0.11.0-1.debian.tar.xz"
+    "b5da0b04be778fab3446c74be8803c20 2863 aiohttp-socks_0.12.0-2.dsc 9617f9833154bf0f8efcc2a2bce0fb91 201569 aiohttp-socks_0.12.0.orig.tar.gz 19a1a0a34b890c7c5de9b6e781a1fb71 3140 aiohttp-socks_0.12.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=f7e652b1fcf2b5104c0c1b602a0bfba0cf9fc082 fp=ac0a4ff12611b6fccf01c111393587d97d86500b"
+  ],
+  "Git-Tag-Tagger": [
+    "Colin Watson \u003ccjwatson@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/romis2012/aiohttp-socks"
@@ -30,7 +39,7 @@
     "aiohttp-socks"
   ],
   "Package-List": [
-    "python3-aiohttp-socks deb python unknown arch=all"
+    "python3-aiohttp-socks deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -45,7 +54,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-anyio, python3-flask, python3-pytest, python3-pytest-asyncio, python3-tiny-proxy, python3-trustme"
+    "python3-all, python3-anyio, python3-flask, python3-pytest, python3-pytest-asyncio, python3-starlette, python3-tiny-proxy, python3-trustme, python3-uvicorn"
   ],
   "Uploaders": [
     "Piotr Ożarowski \u003cpiotr@debian.org\u003e"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/aiohttp-socks.git"
   ],
   "Version": [
-    "0.11.0-1"
+    "0.12.0-2"
   ]
 }
