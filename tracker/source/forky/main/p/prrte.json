@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libprrte-dev, libprrte3, libprrte-bin"
+    "libprrte-dev, libprrte4, libprrte-bin, prrte-common"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 13), architecture-is-64-bit, chrpath, flex, bison, libpmix-dev, libpmix-bin, python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-recommonmark, libjs-jquery, libevent-dev, libltdl-dev, libmunge-dev [!hurd-any]"
+    "dpkg-dev (\u003e= 1.22.5), debhelper-compat (= 14), architecture-is-64-bit, chrpath, flex, bison, libpmix-dev (\u003e= 6.1.0-1~), libpmix-bin (\u003e= 6.1.0-1~), python3-setuptools, python3-sphinx, python3-sphinx-rtd-theme, python3-recommonmark, libjs-jquery, libevent-dev, libev-dev, libltdl-dev, libmunge-dev [!hurd-any]"
   ],
   "Checksums-Sha256": [
-    "90a669e76fe5b1eb412449a6fa4201e34151fbab379357713fa2f6f338139827 2290 prrte_3.0.13-3.dsc 235fd854dafd06c6187a51db25d0ec77f92912a04d6bf68e32920dd2569794ad 1247408 prrte_3.0.13.orig.tar.gz 62db1a588ab8469df9a8e8f0a899a2cbfabf89b5098a96dfdd22686035767d6b 27620 prrte_3.0.13-3.debian.tar.xz"
+    "7429448d39358eaacef0758cc3b89823116782aa6a8d5cf788cf0b585a28869d 2408 prrte_5.0.0~rc1-1.dsc 79a6e02cf8b675e9c90033ababc39d8ff246cc97b324703fe0d67683423d334e 3669124 prrte_5.0.0~rc1.orig.tar.gz 2469fc37e1f99545b81340d2c8b8cbfd796efdd1d81636a9c402f4fe51a8ad56 28080 prrte_5.0.0~rc1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/prrte"
   ],
   "Files": [
-    "55a0406c772e389a73ee969e767cb770 2290 prrte_3.0.13-3.dsc 2d921d507e0ff48a1451d608dac06c88 1247408 prrte_3.0.13.orig.tar.gz 83fc3a967e2f55572f3280dcf72dc563 27620 prrte_3.0.13-3.debian.tar.xz"
+    "31d1b17de57277a761ebc9db66cedfd5 2408 prrte_5.0.0~rc1-1.dsc 2dfcc8212a4029d789cb3aa55a1b7832 3669124 prrte_5.0.0~rc1.orig.tar.gz bd7ca8d1345a69a7b5ccc3ceffff0665 28080 prrte_5.0.0~rc1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "prrte"
   ],
   "Package-List": [
-    "libprrte-bin deb net optional arch=any libprrte-dev deb libdevel optional arch=any libprrte3 deb libs optional arch=any"
+    "libprrte-bin deb net optional arch=any libprrte-dev deb libdevel optional arch=any libprrte4 deb libs optional arch=any prrte-common deb net optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "net"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Uploaders": [
     "Alastair McKinstry \u003cmckinstry@debian.org\u003e"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/science-team/prrte.git -b debian/latest"
   ],
   "Version": [
-    "3.0.13-3"
+    "5.0.0~rc1-1"
   ]
 }

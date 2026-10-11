@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-alloc-traits-0.1+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-alloc-traits-0.1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ab7e6382e363725fc73efce62c137cfc0797d85fd03631d151c9ff85cb1b133b 2296 rust-static-alloc_0.2.6-1.dsc 2e1e06c73b06b04d730f68ecb5f805e86b8d509cf80072a28128160025fbf928 34658 rust-static-alloc_0.2.6.orig.tar.gz f086924b46542fdc01a58b4840e0ff6cddb7db28d666144d63f6a1c0f2ddaedc 3488 rust-static-alloc_0.2.6-1.debian.tar.xz"
+    "a29d2ab6e123f66eb935072346baa01af15c76744b60fa3a0f83cdb94374b5d2 2382 rust-static-alloc_0.3.2-1.dsc a91b520aeed47495079f584e562fc29d3d7a246a7fadbaef5e315fe4901709f5 43365 rust-static-alloc_0.3.2.orig.tar.gz c0c53d43e86417116c7fce61f3ab53b40227d52bccd3051ef06120fe110e4257 3732 rust-static-alloc_0.3.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-static-alloc"
   ],
   "Files": [
-    "a1137a3421b834b276aa666fde1ff613 2296 rust-static-alloc_0.2.6-1.dsc fbb5a3a1d0d58044e80113cb815aef41 34658 rust-static-alloc_0.2.6.orig.tar.gz 1aa7210be73d687367a14639dac95d24 3488 rust-static-alloc_0.2.6-1.debian.tar.xz"
+    "1030f8d224005801d39510611f7d9696 2382 rust-static-alloc_0.3.2-1.dsc 2e40d4c48746897932a60e4032574a4c 43365 rust-static-alloc_0.3.2.orig.tar.gz a2c8100b483e39cd621c5bc598a305fa 3732 rust-static-alloc_0.3.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-allocator-api2-0.2+default-dev, librust-allocator-api2-0.2+std-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/static-alloc]"
   ],
   "Version": [
-    "0.2.6-1"
+    "0.3.2-1"
   ]
 }
