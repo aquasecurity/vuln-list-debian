@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev \u003c!nocheck\u003e, librust-ssh-encoding-0.2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "375be4cb420fa43632224da0a4b79eedc82c5d5cece32641dc8a3e4d7b3f09e9 1737 rust-ssh-cipher_0.2.0-2.dsc caac132742f0d33c3af65bfcde7f6aa8f62f0e991d80db99149eb9d44708784f 10843 rust-ssh-cipher_0.2.0.orig.tar.gz 1a81e9199f981a4deb2c3960043288da5c96fbc600ec7810e7958a0fa88f9298 2968 rust-ssh-cipher_0.2.0-2.debian.tar.xz"
+    "90cccdc5050d82fd7f8409c750e0ca209da568e99bf32ebc8b4c758364e3375d 2341 rust-ssh-cipher_0.3.0-1.dsc d801accda99469cde6d73da741422610fdf6508a72d9a69d1b55cb241c720597 20627 rust-ssh-cipher_0.3.0.orig.tar.gz d17c5b61663bd7aa9a78068bde8ca92f8ebe002f1bd8111854c694a617b4657e 3276 rust-ssh-cipher_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-ssh-cipher"
   ],
   "Files": [
-    "60e87a629bb6f23841e9c6ce95473a8d 1737 rust-ssh-cipher_0.2.0-2.dsc bc32a4ef838fed1786ea6cd1278e6732 10843 rust-ssh-cipher_0.2.0.orig.tar.gz 7795f66c041f33a4430ddab9e7b2c0e9 2968 rust-ssh-cipher_0.2.0-2.debian.tar.xz"
+    "d41c67b20515155b26d172c0c70c4045 2341 rust-ssh-cipher_0.3.0-1.dsc f79be434662b38cf9c98cce66f334842 20627 rust-ssh-cipher_0.3.0.orig.tar.gz 105ce331ee28a65666cb09ba3860304f 3276 rust-ssh-cipher_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,16 +42,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
-    "Nadzeya Hutsko \u003cnadzya.info@gmail.com\u003e"
+    "Nadzeya Hutsko \u003cnadzeya@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/ssh-cipher"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/ssh-cipher]"
   ],
   "Version": [
-    "0.2.0-2"
+    "0.3.0-1"
   ]
 }

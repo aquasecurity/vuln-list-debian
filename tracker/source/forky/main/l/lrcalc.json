@@ -3,34 +3,34 @@
     "any"
   ],
   "Binary": [
-    "lrcalc, liblrcalc1t64, liblrcalc-dev"
+    "lrcalc, liblrcalc2, liblrcalc-dev, python3-lrcalc"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), debhelper (\u003e= 9), dh-autoreconf (\u003e= 4~)"
+    "cython3, d-shlibs, debhelper-compat (= 13), dh-python, dh-sequence-python3, python3-all-dev, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "70d21cd364c6a8b97dac068f18b627dc16a1c324b28ad4123f085a7e64b94344 2074 lrcalc_1.2-2.2.dsc 792dd538a0d19698be2c5b8c138730bbb4820e8a44e03b001ae14bd5f1d7040b 363120 lrcalc_1.2.orig.tar.gz 5aa11d30fc3f83d12391fff15f36184e6f1393e2f5875b2c1282562edf702def 3996 lrcalc_1.2-2.2.debian.tar.xz"
+    "e75d5223caf3e92e9338e51c27743326e5a8ffe267e02a2982ea0596b86a9caf 2233 lrcalc_2.1-3.dsc 996ac00e6ea8321ef09b34478f5379f613933c3254aeba624b6419b8afa5df57 425484 lrcalc_2.1.orig.tar.gz 168b59d283f1a3a73701223e07321cf5d0fcee2b8eed48c036097ad275fe095d 6316 lrcalc_2.1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lrcalc"
   ],
   "Files": [
-    "603e8a34675915c6f749f91e3666ac88 2074 lrcalc_1.2-2.2.dsc 6bba16c0cca9debccd0af847bd3d4a23 363120 lrcalc_1.2.orig.tar.gz 8a44c78f1a68409a8bd4a0a0781628f1 3996 lrcalc_1.2-2.2.debian.tar.xz"
+    "427f16295007b75dac652591c8ae8b30 2233 lrcalc_2.1-3.dsc 7cfa8f67287f2b70a15a833b94bc24b6 425484 lrcalc_2.1.orig.tar.gz 8d41cc1be4946479e4dd5cf4eec6fbda 6316 lrcalc_2.1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.math.rutgers.edu/~asbuch/lrcalc/"
+    "https://sites.math.rutgers.edu/~asbuch/lrcalc/"
   ],
   "Maintainer": [
-    "Debian Science Team \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
+    "Debian Math Team \u003cteam+math@tracker.debian.org\u003e"
   ],
   "Package": [
     "lrcalc"
   ],
   "Package-List": [
-    "liblrcalc-dev deb libdevel optional arch=any liblrcalc1t64 deb libs optional arch=any lrcalc deb math optional arch=any"
+    "liblrcalc-dev deb libdevel optional arch=any liblrcalc2 deb libs optional arch=any lrcalc deb math optional arch=any python3-lrcalc deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "3.9.8"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, python3-all"
   ],
   "Uploaders": [
-    "Tobias Hansen \u003cthansen@debian.org\u003e"
+    "Tobias Hansen \u003cthansen@debian.org\u003e, Maximiliano Curia \u003cmaxy@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/math-team/lrcalc"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/math-team/lrcalc.git"
   ],
   "Version": [
-    "1.2-2.2"
+    "2.1-3"
   ]
 }
