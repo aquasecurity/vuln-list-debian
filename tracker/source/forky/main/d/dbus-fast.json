@@ -6,22 +6,31 @@
     "python3-dbus-fast"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-poetry-core"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-all-dev, python3-poetry-core"
   ],
   "Build-Depends-Arch": [
     "dh-sequence-sphinxdoc, cython3 (\u003e= 3.0.5), dbus-daemon \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b295166444a8adab0ec370297dee1f96e56b428a37c463c9bb8b2b0459a4dded 2517 dbus-fast_5.0.22-2.dsc b9be8757f14dde766a23d55dac9e4c708e434a730b6924211ac62c65251f6cab 262698 dbus-fast_5.0.22.orig.tar.gz 428962865b288e4e69fec6141aca5f47c80e2566b2f661c57b7afe7c50ed4b76 5228 dbus-fast_5.0.22-2.debian.tar.xz"
+    "a5182a46398ae8294a1f580cd77b07b5136acc666d4d5ae45586ad0967df1019 2673 dbus-fast_5.2.0-1.dsc 612dcd80cb30d04ee2f4f8dd846ad1c26ba58b4e8b2357e84ba74c0d597a89b8 299416 dbus-fast_5.2.0.orig.tar.gz 3b0af48d844ae0a8a41f50af193e69cf71d5cf5524019631214297c3965f96b5 5056 dbus-fast_5.2.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "03704515f38411014313d92b374ab109e7cf8047 debian archive/debian/5.2.0-1 https://git.dgit.debian.org/dbus-fast"
   ],
   "Directory": [
     "pool/main/d/dbus-fast"
   ],
   "Files": [
-    "d342d3167d8a6bf32370fc49c2005fb6 2517 dbus-fast_5.0.22-2.dsc 47321bc2de0b938393bfb613c7f812bb 262698 dbus-fast_5.0.22.orig.tar.gz 603bd087490a635230afc176c31be3c9 5228 dbus-fast_5.0.22-2.debian.tar.xz"
+    "a556bcb69f60d36c35bb4af2af9735c7 2673 dbus-fast_5.2.0-1.dsc 564a514bae2cbbb4205d5f4a96980c51 299416 dbus-fast_5.2.0.orig.tar.gz 6280e4518078729c5eeb075d9ac5cb85 5056 dbus-fast_5.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=c9f8da58bba244f454e06b689d332e2e7e7eaf5f fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/bluetooth-devices/dbus-fast"
@@ -45,10 +54,7 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "dbus-daemon, python3-all, python3-pytest, python3-pytest-asyncio, python3-pytest-cov, xauth, xvfb"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/dbus-fast.git"
   ],
   "Version": [
-    "5.0.22-2"
+    "5.2.0-1"
   ]
 }
