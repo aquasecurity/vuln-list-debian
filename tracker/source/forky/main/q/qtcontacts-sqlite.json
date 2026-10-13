@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libqt5contact5-plugin-sqlite, qtcontacts5-plugin-sqlite-dev"
+    "libqt5contact5-plugin-sqlite, qtcontacts5-plugin-sqlite-dev, libqt6contact6-plugin-sqlite, qtcontacts6-plugin-sqlite-dev, qtcontacts-sqlite-common"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dbus-daemon \u003c!nocheck\u003e, libglib2.0-bin \u003c!nocheck\u003e, libgsettings-qt-dev, libqt5sql5-sqlite, libsqlite3-dev, libsqlite3-ext-icu, pkgconf, qtbase5-dev, qtpim5-dev, sqlite3 \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), cmake, dbus-daemon \u003c!nocheck\u003e, libglib2.0-bin \u003c!nocheck\u003e, libgsettings-qt-dev, libgsettings-qt6-dev, libqt5sql5-sqlite, libqt6sql6-sqlite, libsqlite3-dev, libsqlite3-ext-icu, pkgconf, qt6-base-dev, qtbase5-dev, qtpim5-dev, qtpim6-dev, sqlite3 \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3f7d6a94bf7ac1b338796a94a3b1a8fc37a471a83ae5bd8d008a467e1b33081a 2315 qtcontacts-sqlite_0.3.24-1.dsc db2cf7ebc5e1c53d355d9bdce2cb634104564127b101a16e647a6c4878ae3f54 289138 qtcontacts-sqlite_0.3.24.orig.tar.gz f814a662d47259f7f1a5ad360a01c90377fb65ff71c091b3adce41c408622be5 9660 qtcontacts-sqlite_0.3.24-1.debian.tar.xz"
+    "5b7d7c3c466ce28b1ec20ec5532179203635d9fbb0e7f3a58e7f8059a10ad16e 2652 qtcontacts-sqlite_0.3.25-2.dsc 25d09f9076eb9bc8390a2f8785ce18d7edbc6280cd4e5f783089e0ac9abeda84 291633 qtcontacts-sqlite_0.3.25.orig.tar.gz e43d98d4d5d93f547bc62d55b08c2d810960ec213f383be4771d9a8790964ee5 9204 qtcontacts-sqlite_0.3.25-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/qtcontacts-sqlite"
   ],
   "Files": [
-    "52f6072c3ad883972da8cb5a13eff7e8 2315 qtcontacts-sqlite_0.3.24-1.dsc 2f269a991f520d052b412375fb535ece 289138 qtcontacts-sqlite_0.3.24.orig.tar.gz 9c2374e5c62d5154cf5d7bd145c79fb8 9660 qtcontacts-sqlite_0.3.24-1.debian.tar.xz"
+    "578d2be64eed05d8949fb7bfe5a86fc3 2652 qtcontacts-sqlite_0.3.25-2.dsc 55371c680a1ec043861a67aeedc468a3 291633 qtcontacts-sqlite_0.3.25.orig.tar.gz 5afa3629d1a0db168534b07c3ac84de3 9204 qtcontacts-sqlite_0.3.25-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "qtcontacts-sqlite"
   ],
   "Package-List": [
-    "libqt5contact5-plugin-sqlite deb libs optional arch=any qtcontacts5-plugin-sqlite-dev deb libdevel optional arch=any"
+    "libqt5contact5-plugin-sqlite deb libs optional arch=any libqt6contact6-plugin-sqlite deb libs optional arch=any qtcontacts-sqlite-common deb misc optional arch=all qtcontacts5-plugin-sqlite-dev deb libdevel optional arch=any qtcontacts6-plugin-sqlite-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/ubports-team/qtcontacts-sqlite.git"
   ],
   "Version": [
-    "0.3.24-1"
+    "0.3.25-2"
   ]
 }

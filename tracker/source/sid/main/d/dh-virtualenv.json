@@ -3,25 +3,25 @@
     "all"
   ],
   "Binary": [
-    "dh-virtualenv"
+    "dh-virtualenv, dh-virtualenv-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), python3, python3-docutils, python3-pytest \u003c!nocheck\u003e, python3-setuptools, dh-exec, dh-python, libjs-jquery, libjs-underscore"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3, python3-docutils, python3-hatchling, python3-pytest \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-rtd-theme \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "2ffaa4fbeaff7ab0daee7dd1c263d2d727ac65532d6fb53a692bfccb2feeea83 2109 dh-virtualenv_1.2.2-3.dsc 204870b7b8b2920bef08bb1f5fc3a5a09e9f60f560d2f0223f24588a4a630701 63109 dh-virtualenv_1.2.2.orig.tar.gz f59527f2d8e672ba24ee0acbc6e2d7a849ad5d8542244f4439b79c4b65c8ce6f 19304 dh-virtualenv_1.2.2-3.debian.tar.xz"
+    "fe32d672fab62e9f28d10bd50cfc0eb97ddf3c11f39cda8c62891c873517ff25 2050 dh-virtualenv_1.3.dsc dcf3026c5a4a893cc760ccde53e55bebd37e384e06fb41e41fbce0b0baa59b84 57816 dh-virtualenv_1.3.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dh-virtualenv"
   ],
   "Files": [
-    "55b8024cf9c66df12c8db4b204cb7c8f 2109 dh-virtualenv_1.2.2-3.dsc bf7f2386edb4173f35e6b9359b74258d 63109 dh-virtualenv_1.2.2.orig.tar.gz d69a0bf7725ffcb229ef34d3601be7ea 19304 dh-virtualenv_1.2.2-3.debian.tar.xz"
+    "baf9cce79d3a9d27284e6f928e3a5530 2050 dh-virtualenv_1.3.dsc 29a74e20c4150deecd8066e8145aa1a1 57816 dh-virtualenv_1.3.tar.xz"
   ],
   "Format": [
-    "3.0 (quilt)"
+    "3.0 (native)"
   ],
   "Homepage": [
-    "https://www.github.com/spotify/dh-virtualenv"
+    "https://salsa.debian.org/python-team/packages/dh-virtualenv"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -30,7 +30,7 @@
     "dh-virtualenv"
   ],
   "Package-List": [
-    "dh-virtualenv deb python optional arch=all"
+    "dh-virtualenv deb python optional arch=all dh-virtualenv-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,9 @@
   ],
   "Standards-Version": [
     "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Nico Della Torre \u003cnicoz91@ubuntu.com\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/dh-virtualenv.git"
   ],
   "Version": [
-    "1.2.2-3"
+    "1.3"
   ]
 }

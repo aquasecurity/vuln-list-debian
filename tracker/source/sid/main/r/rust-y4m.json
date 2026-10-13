@@ -6,16 +6,19 @@
     "librust-y4m-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "65b37d509473ec78e20787306c89659de9c239cc8c9a9adcc1d03675f9a0a666 1535 rust-y4m_0.8.0-1.dsc 7a5a4b21e1a62b67a2970e6831bc091d7b87e119e7f9791aef9702e3bef04448 12455 rust-y4m_0.8.0.orig.tar.gz 6dd5f5319431e9b405828f3e46cd41f97d8bfd085ad9bf6630491206eae142e8 2568 rust-y4m_0.8.0-1.debian.tar.xz"
+    "774c1b9dfdd4cc7bb633f4eaddd38560c6959ce93930b84b376003c93f0e9d55 1633 rust-y4m_0.8.0-2.dsc 7a5a4b21e1a62b67a2970e6831bc091d7b87e119e7f9791aef9702e3bef04448 12455 rust-y4m_0.8.0.orig.tar.gz 0dd597c789e64dd4c4e6601964eb111c791bb0c5e908eb170dce192c9dfa61d6 2792 rust-y4m_0.8.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-y4m"
   ],
   "Files": [
-    "90c86c8fe4c7ca72853de98888600100 1535 rust-y4m_0.8.0-1.dsc 89b4034c1b5577f57b3014aaf583dabe 12455 rust-y4m_0.8.0.orig.tar.gz f537d53c28cd7c58e5cee1d8d8495087 2568 rust-y4m_0.8.0-1.debian.tar.xz"
+    "1cfd3ff2d125a7349300fbebbfba4f4e 1633 rust-y4m_0.8.0-2.dsc 89b4034c1b5577f57b3014aaf583dabe 12455 rust-y4m_0.8.0.orig.tar.gz 8cb315efbea37e8d7685e45ece4ab6e6 2792 rust-y4m_0.8.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-resize-0.4+default-dev"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/y4m]"
   ],
   "Version": [
-    "0.8.0-1"
+    "0.8.0-2"
   ]
 }
