@@ -6,22 +6,22 @@
     "python3-serializable"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-setuptools, python3-all"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-setuptools, python3-all, python3-pytest \u003c!nocheck\u003e, python3-typechecks \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4a60e3a84c297f0444f68a6cfcc1361e1c45b9c6af0fd8e2b5513fc2d83de8a8 2202 python-serializable_0.4.1+ds-2.dsc 8ad1dc562af65dbd20f695f6dcb0afae74debdd235c56a235c476ae8a842a18c 11404 python-serializable_0.4.1+ds.orig.tar.xz 8f75f9ed1e9f761ec5892746afa7a356a223ce4d6613533bc72eded153105532 2780 python-serializable_0.4.1+ds-2.debian.tar.xz"
+    "eab50fdf16687e2a21f1954dda6bb65fc290f3eebbee493a0df563f9a1ea24c4 2251 python-serializable_1.3.1-1.dsc 1f2f5c11a276dad27251696115fc5b714d96ef4d02dd278bee5d3f754c8d29ff 27588 python-serializable_1.3.1.orig.tar.xz c24e8789dedc05980978dec42f0c8158aa28a5e68e882a5a3b23879865b18c71 4484 python-serializable_1.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-serializable"
   ],
   "Files": [
-    "a45e202e3978a16f378a156cff449279 2202 python-serializable_0.4.1+ds-2.dsc 46371fd0609ffdf84a44510acfac075e 11404 python-serializable_0.4.1+ds.orig.tar.xz 9e64ded6a803186ba2a19731ab068711 2780 python-serializable_0.4.1+ds-2.debian.tar.xz"
+    "e6af42fe83094612b76e27d5fea3dbe9 2251 python-serializable_1.3.1-1.dsc 4e34b78e18a48d9cb2bc6104934d750f 27588 python-serializable_1.3.1.orig.tar.xz 405f63a8a88d95de068bf682e7582969 4484 python-serializable_1.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/iskandr/serializable"
+    "https://github.com/openvax/serializable"
   ],
   "Maintainer": [
     "Debian Python Team \u003cteam+python@tracker.debian.org\u003e"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-pytest"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-serializable.git"
   ],
   "Version": [
-    "0.4.1+ds-2"
+    "1.3.1-1"
   ]
 }

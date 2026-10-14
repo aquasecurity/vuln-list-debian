@@ -6,19 +6,19 @@
     "python3-ipyparallel, python-ipyparallel-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pandoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python-ipython-doc \u003c!nodoc\u003e, python-jupyter-client-doc \u003c!nodoc\u003e, python-pymongo-doc \u003c!nodoc\u003e, python3-all, python3-autodoc-traits \u003c!nodoc\u003e, python3-dateutil, python3-decorator, python3-doc \u003c!nodoc\u003e, python3-hatchling, python3-ipykernel, python3-ipython, python3-jupyter-client, python3-matplotlib \u003c!nodoc\u003e, python3-myst-nb \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-psutil, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-tornado \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinxext-rediraffe \u003c!nodoc\u003e, python3-testpath \u003c!nocheck\u003e, python3-tornado, python3-tqdm, python3-traitlets, python3-zmq"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+  ],
+  "Build-Depends-Indep": [
+    "dh-sequence-sphinxdoc \u003c!nodoc\u003e, pandoc \u003c!nodoc\u003e, python-ipython-doc \u003c!nodoc\u003e, python-jupyter-client-doc \u003c!nodoc\u003e, python-pymongo-doc \u003c!nodoc\u003e, python3-autodoc-traits \u003c!nodoc\u003e, python3-dateutil, python3-decorator, python3-doc \u003c!nodoc\u003e, python3-ipykernel, python3-ipython, python3-jupyter-client, python3-matplotlib \u003c!nodoc\u003e, python3-myst-nb \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-nbsphinx \u003c!nodoc\u003e, python3-psutil, python3-pydata-sphinx-theme \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-tornado \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinx-copybutton \u003c!nodoc\u003e, python3-sphinxext-rediraffe \u003c!nodoc\u003e, python3-testpath \u003c!nocheck\u003e, python3-tornado, python3-tqdm \u003c!nocheck\u003e, python3-traitlets, python3-zmq \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1b59a51f677826360512856b71473adf4b3514501382fbcf753cabf9f35ee0b8 3156 ipyparallel_9.0.2-1.dsc d569f622275a7a73472a572a36b306876ed38f8bf266f31e0b182470a9905b9e 4407437 ipyparallel_9.0.2.orig.tar.gz eaf02e782fc209cc452d71c5aede0ef1370642207f20d1ca67ca964bb1943ea9 10652 ipyparallel_9.0.2-1.debian.tar.xz"
-  ],
-  "Dgit": [
-    "7aa443d83497041d1ee4ae5845972bb2d8021ac3 debian archive/debian/9.0.2-1 https://git.dgit.debian.org/ipyparallel"
+    "3a8314d9e6ce7271c6ab0aa8208a3cae3d5ca2850d7a18d17ccddc1a086a313c 3156 ipyparallel_9.2.0-1.dsc 4514ec3efe33d99e27a3a7488bde8cd53e773137b7daed82647d7fcf67eec62c 4427548 ipyparallel_9.2.0.orig.tar.gz 73cf58099636532f424479ff4b6703ce9ecb40ea180ddd58eee37d5dde7fc03d 10712 ipyparallel_9.2.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/ipyparallel"
   ],
   "Files": [
-    "69d33bcaba1b1a7cf83f286546417d57 3156 ipyparallel_9.0.2-1.dsc 95354938a7c423d3d72e0be761589430 4407437 ipyparallel_9.0.2.orig.tar.gz 38f64d2768cc869937e77e6432822526 10652 ipyparallel_9.0.2-1.debian.tar.xz"
+    "24b21888b8694df6b0f03fbf1822907a 3156 ipyparallel_9.2.0-1.dsc 70df0f449be7ceafd49ad08216ad84c3 4427548 ipyparallel_9.2.0.orig.tar.gz 2d459551c6ac2dd5a9303590d4b03d0f 10712 ipyparallel_9.2.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "ipyparallel"
   ],
   "Package-List": [
-    "python-ipyparallel-doc deb doc optional arch=all profile=!nodoc python3-ipyparallel deb python optional arch=all"
+    "python-ipyparallel-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-ipyparallel deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -42,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest, autopkgtest-pkg-python"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/python-team/packages/ipyparallel.git"
   ],
   "Version": [
-    "9.0.2-1"
+    "9.2.0-1"
   ]
 }
