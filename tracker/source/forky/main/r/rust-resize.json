@@ -6,16 +6,19 @@
     "librust-resize-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-rayon-1+default-dev (\u003e= 1.11.0) \u003c!nocheck\u003e, librust-rgb-0.8-dev (\u003e= 0.8.52) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a7d280a7d34bdd9aa839b7cd1124c0e54f0c37ff2cb910229aeab0dc0d55cd05 1574 rust-resize_0.4.3-1.dsc 04d90e9bbc087131e45af0987e701ba91910ccb5da78560dc1889e5105cf552d 7240 rust-resize_0.4.3.orig.tar.gz fc4beb7f48e5012369e1382f6013f97798ca106f8d21d89bc5963f89582ed361 2552 rust-resize_0.4.3-1.debian.tar.xz"
+    "961cce47a3c89e32546ee5759997bd2a07409f78b425c4b553832193aae21eb1 2347 rust-resize_0.8.9-1.dsc 71725ecd5e0197b54fe859055b108688472ab6a358f8fbe5cee4a556b1b5bfea 13360 rust-resize_0.8.9.orig.tar.gz 6819a3b1e529b02f16b9aadbee6462fe33c7a851da1a293f2a09ef6b8b8bc0c8 3096 rust-resize_0.8.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-resize"
   ],
   "Files": [
-    "7dc08c0891f852ae4db339fd0f84bcd1 1574 rust-resize_0.4.3-1.dsc b156d939ccf6123b0a07c5ef0a47802d 7240 rust-resize_0.4.3.orig.tar.gz 6d68fdaa51b67a83158b04c256df3e8a 2552 rust-resize_0.4.3-1.debian.tar.xz"
+    "0689a25c3f46fba5e70708c236a23f4d 2347 rust-resize_0.8.9-1.dsc acb0f0096bd833cee7f9682368e938d6 13360 rust-resize_0.8.9.orig.tar.gz 3fabf722eb4b4c41d3e52ba0a1b070d9 3096 rust-resize_0.8.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-png-0.16+default-dev"
+    "dh-cargo, librust-png-0+default-dev, librust-rgb-0.8+bytemuck-dev, rustc"
   ],
   "Uploaders": [
     "Sebastian Ramacher \u003csramacher@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/resize]"
   ],
   "Version": [
-    "0.4.3-1"
+    "0.8.9-1"
   ]
 }
