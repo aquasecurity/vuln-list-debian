@@ -6,19 +6,31 @@
     "python3-radios"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-aiodns \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-all, python3-aresponses \u003c!nocheck\u003e, python3-awesomeversion \u003c!nocheck\u003e, python3-backoff \u003c!nocheck\u003e, python3-cachetools \u003c!nocheck\u003e, python3-mashumaro \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-poetry-core, python3-pycountry \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-yarl \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-poetry-core"
+  ],
+  "Build-Depends-Indep": [
+    "python3-aiodns \u003c!nocheck\u003e, python3-aiohttp \u003c!nocheck\u003e, python3-aioresponses \u003c!nocheck\u003e, python3-awesomeversion \u003c!nocheck\u003e, python3-backoff \u003c!nocheck\u003e, python3-cachetools \u003c!nocheck\u003e, python3-mashumaro \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-probatio \u003c!nocheck\u003e, python3-pycountry \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-syrupy \u003c!nocheck\u003e, python3-yarl \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "090acc656faf3d89d93c48bdd1b5340e111495b088551c0037e7aa09ceb45aba 2592 python-radios_0.3.2-2.dsc a6d53eec0169f4a50a197b7bbbf000be6669cac43870b047e6204427eebf6206 88869 python-radios_0.3.2.orig.tar.gz 1864d98c5a09d427883668f84403c8b351303df2395cd6c49088794654aa3e98 2680 python-radios_0.3.2-2.debian.tar.xz"
+    "5fcbca65b4ee0180782222ac0a2aa6c0ab66d92fa77b26763e7d84fca7ead623 2866 python-radios_2.0.1-1.dsc f2264df2d46e953cf7561d164f07b16b0bfc31598ad430d239bd338e9898b4d4 144484 python-radios_2.0.1.orig.tar.xz 53f8b8ea0e3ff29ace0187ed80e9aef6ebecfa04cf389e9391821c1434827302 4360 python-radios_2.0.1-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "0bd0bfed5d345eb723fc476a33e1c9a5d1d0d8d5 debian archive/debian/2.0.1-1 https://git.dgit.debian.org/python-radios"
   ],
   "Directory": [
     "pool/main/p/python-radios"
   ],
   "Files": [
-    "3c3bb5f05f941e8dcea2081447fb3577 2592 python-radios_0.3.2-2.dsc 0bab8dd33e9d7d23b5219606b37299a9 88869 python-radios_0.3.2.orig.tar.gz afa8f46e509f2e35d9d2b00c29021696 2680 python-radios_0.3.2-2.debian.tar.xz"
+    "61348b58f7f5e1d0c9ed2c5906d8d415 2866 python-radios_2.0.1-1.dsc 6134709b81d0452954314b12ac81341d 144484 python-radios_2.0.1.orig.tar.xz d2bce2a4a5717842a13a3041c1d64159 4360 python-radios_2.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=8a32d755c294116477be46228a0df98c7a010511 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/frenck/python-radios"
@@ -39,13 +51,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
-  ],
-  "Testsuite-Triggers": [
-    "python3-all, python3-aresponses, python3-pytest, python3-pytest-asyncio"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -57,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-radios.git"
   ],
   "Version": [
-    "0.3.2-2"
+    "2.0.1-1"
   ]
 }

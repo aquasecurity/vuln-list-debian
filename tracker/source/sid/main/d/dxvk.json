@@ -6,16 +6,16 @@
     "dxvk, dxvk-wine32, dxvk-wine64, dxvk-wine32-development, dxvk-wine64-development, libdxvk-native-dev, libdxvk-dxgi0, libdxvk-d3d8-0, libdxvk-d3d9-0, libdxvk-d3d10core0, libdxvk-d3d11-0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), glslang-tools, meson, ninja-build, libsdl2-dev, libsdl3-dev, libwine-dev [amd64 arm64 i386 armhf] \u003c!nowindows\u003e, libvulkan-dev, spirv-headers, gcc-mingw-w64-x86-64-posix [amd64 arm64] \u003c!nowindows\u003e, gcc-mingw-w64-i686-posix [i386 armhf] \u003c!nowindows\u003e, g++-mingw-w64-x86-64-posix [amd64 arm64] \u003c!nowindows\u003e, g++-mingw-w64-i686-posix [i386 armhf] \u003c!nowindows\u003e, rename, llvm"
+    "debhelper-compat (= 13), glslang-tools, meson, ninja-build, libsdl2-dev, libsdl3-dev, libwine-dev [amd64 arm64 i386 armhf] \u003c!nowindows\u003e, libvulkan-dev, spirv-headers, gcc-mingw-w64-x86-64-posix [amd64 arm64] \u003c!nowindows\u003e, gcc-mingw-w64-i686-posix [i386 armhf] \u003c!nowindows\u003e, g++-mingw-w64-x86-64-posix [amd64 arm64] \u003c!nowindows\u003e, g++-mingw-w64-i686-posix [i386 armhf] \u003c!nowindows\u003e, rename, llvm, vkd3d-compiler [amd64 arm64 i386]"
   ],
   "Checksums-Sha256": [
-    "77826da0446295b73764c6b227945845c0f302a812b9bf7df5779da00009e5f6 3757 dxvk_2.7.1-4.dsc edee13c6f8e7f47eb4b85db929616024fdd6de70cb8620bc0c016386cf4a63b0 94357 dxvk_2.7.1.orig-libdisplay-info.tar.gz 8ba368dfb212e5e268d069468e182bf19884d214d05d72c44b35795854b4ec0f 463512 dxvk_2.7.1.orig-mingw-directx-headers.tar.gz 4966be884da4a1ded7e38ee018caef5626bd06bbd0853715084b1a1644aaaf02 1245578 dxvk_2.7.1.orig.tar.gz e9e2afb4a4880416ab5aeacfdd481e9dca4449a7896c05b7bdeecb751f08acb1 37140 dxvk_2.7.1-4.debian.tar.xz"
+    "5e22b7b29351869731abc593faa47bc5efedce02ee50a30dffd5b8dbecbedba2 3251 dxvk_3.1.1+ds-2.dsc 4f4d7c99eea52244f775a8200bc656fb5f6d0d56c1909f05a440f271c5576231 3421596 dxvk_3.1.1+ds.orig.tar.xz 7b11556c4db977a377a3fe2edbc66ce5ccb637697d95d2de61d340866764c5a9 37080 dxvk_3.1.1+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dxvk"
   ],
   "Files": [
-    "6883dcc1f552d282f7ac7b6cf5e0e650 3757 dxvk_2.7.1-4.dsc 7dd97cf2d3a1894115d131149db5062a 94357 dxvk_2.7.1.orig-libdisplay-info.tar.gz 41a834c7217ea1772ddd2907906754fe 463512 dxvk_2.7.1.orig-mingw-directx-headers.tar.gz 2c63467c4b16b5401bd7d649c6ae5d54 1245578 dxvk_2.7.1.orig.tar.gz 6f1ce336842d30979c49413cabbe68de 37140 dxvk_2.7.1-4.debian.tar.xz"
+    "4f11adcacc4567d49777bf5fa49ad5ef 3251 dxvk_3.1.1+ds-2.dsc 123aeb8190d9ceb32b22f472dca3c25a 3421596 dxvk_3.1.1+ds.orig.tar.xz b172678374e76e5065ffddf924de34e4 37080 dxvk_3.1.1+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, dpkg-dev, libsdl2-dev, libsdl3-dev, pkg-config, wine, wine32, wine64, xauth, xvfb"
+    "build-essential, dpkg-dev, libsdl2-dev, libsdl3-dev, pkgconf, vkd3d-compiler, wine, wine32, wine64, xauth, xvfb"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/dxvk"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/dxvk.git"
   ],
   "Version": [
-    "2.7.1-4"
+    "3.1.1+ds-2"
   ]
 }
