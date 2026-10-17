@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e894785b954d56da3e316d399aaf1166ba8482ae0d6b0bbf33b575b47554a8f0 2315 rust-gix-validate_0.11.4-1.dsc 4dae8780f63ed8a803b8bdabbd7aa5f5c5d74592c8b50eed875c1bb4f6545a6a 13506 rust-gix-validate_0.11.4.orig.tar.gz 75ba4ebe02332a2e68da480557caa8a068b425fd246a25f257a2436c627cec42 2964 rust-gix-validate_0.11.4-1.debian.tar.xz"
+    "8e06e6401aa9becfd71e16a25d2ab84c702851465b97f6fd2a3766c945030acc 2390 rust-gix-validate_0.13.0-1.dsc cbcd59cc52742468bc5c8a0e7123390d154f45e6cbd37461b0dcecdc681f2179 15698 rust-gix-validate_0.13.0.orig.tar.gz 07728fe1e5cc558fe8080b4c1484eb1e50a35d5c494bea520d8007b17cbef569 2928 rust-gix-validate_0.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-validate"
   ],
   "Files": [
-    "69319d88943feb5bf158139399e195a0 2315 rust-gix-validate_0.11.4-1.dsc 1f6b2db5834aeea237b9b26a6512326a 13506 rust-gix-validate_0.11.4.orig.tar.gz 2571647d97f028a6a04e2c3607441e79 2964 rust-gix-validate_0.11.4-1.debian.tar.xz"
+    "cdb9c42dd7e7f1a376b9847a17b8dcd4 2390 rust-gix-validate_0.13.0-1.dsc e61538756782fadff6afde5c1afc3247 15698 rust-gix-validate_0.13.0.orig.tar.gz 041305d149e131e091239ec2d4d0e145 2928 rust-gix-validate_0.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-validate]"
   ],
   "Version": [
-    "0.11.4-1"
+    "0.13.0-1"
   ]
 }

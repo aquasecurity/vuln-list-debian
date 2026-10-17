@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-bstr-1+unicode-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-actor-0.42+default-dev \u003c!nocheck\u003e, librust-gix-date-0.16+default-dev \u003c!nocheck\u003e, librust-gix-error-0.3+default-dev (\u003e= 0.3.1) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-bstr-1+unicode-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-actor-0.44+default-dev \u003c!nocheck\u003e, librust-gix-date-0.18+default-dev \u003c!nocheck\u003e, librust-gix-error-0.5+bstr-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "c83f0a2a4be17921241f5746d8fa6903337ff3ff8205ba8b5c493aa69667ecfb 2505 rust-gix-mailmap_0.34.1-1.dsc 1a1c6ca2f9481e5e98b3600b859bc595d46cdf3b600709d5f91b8c118ae452a1 14320 rust-gix-mailmap_0.34.1.orig.tar.gz 1d5b0e14edca2d3f1b54aa70108b86e1be28c58d47f5e993a23034de485d6cbb 3156 rust-gix-mailmap_0.34.1-1.debian.tar.xz"
+    "174ff430d4c0d1c1df4ec8e26f4e961db2328694cd78e9ec5ecd06f4bbfade4a 2566 rust-gix-mailmap_0.36.0-1.dsc a046c3dac556b482817ad1ecee62662ad2efb2d5469e7c600e014449b4c96c93 15926 rust-gix-mailmap_0.36.0.orig.tar.gz 74aec97d27a477676923fed385cd360d071663458911d3e1cfd893a5bcdb5da8 3160 rust-gix-mailmap_0.36.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-mailmap"
   ],
   "Files": [
-    "c652cac25fddea5f9917e6c42e3ec302 2505 rust-gix-mailmap_0.34.1-1.dsc 89abee7eb743585fef8e1c19a9cbfd83 14320 rust-gix-mailmap_0.34.1.orig.tar.gz a67e7a263366efb742459cfc2a1d3c43 3156 rust-gix-mailmap_0.34.1-1.debian.tar.xz"
+    "e55a41ad901d3c02b12671e54c008734 2566 rust-gix-mailmap_0.36.0-1.dsc 9d158ba00c8827ddb73bf5da8342b195 15926 rust-gix-mailmap_0.36.0.orig.tar.gz a2052075d52945b5b2de0154a77e5ae4 3160 rust-gix-mailmap_0.36.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-mailmap]"
   ],
   "Version": [
-    "0.34.1-1"
+    "0.36.0-1"
   ]
 }

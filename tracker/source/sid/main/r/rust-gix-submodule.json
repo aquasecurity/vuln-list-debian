@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-config-0.60+default-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev (\u003e= 0.12.5) \u003c!nocheck\u003e, librust-gix-pathspec-0.20+default-dev \u003c!nocheck\u003e, librust-gix-refspec-0.45+default-dev \u003c!nocheck\u003e, librust-gix-url-0.38+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-config-0.62+default-dev \u003c!nocheck\u003e, librust-gix-error-0.5+bstr-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-path-0.14+default-dev \u003c!nocheck\u003e, librust-gix-pathspec-0.22+default-dev \u003c!nocheck\u003e, librust-gix-refspec-0.47+default-dev \u003c!nocheck\u003e, librust-gix-url-0.40+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "52994f99b2ae75b220f6bd9238381613d3bd9afbe1d5f3642898c8597d79293a 2638 rust-gix-submodule_0.34.0-1.dsc da85564d6725c483b8d95d7b31d1db0b78c29e462a2b481949e2f18e1ed55a6a 19796 rust-gix-submodule_0.34.0.orig.tar.gz b9de7cadda331fe0c9effc330b9570740f667875ce903747c72b9a7e011a0533 3148 rust-gix-submodule_0.34.0-1.debian.tar.xz"
+    "d3cc699a8769397238eb3a6c649f8c196d4ec378c319a686b7441ca0415a447f 2688 rust-gix-submodule_0.36.0-1.dsc 6d945257bd0d624ca844a5a36c79d748df080f355b0ac92d68793875aa529a3f 19832 rust-gix-submodule_0.36.0.orig.tar.gz 44cc56f423abbd8d8970f94d8278c0e713ffccc99f2c2f85b84e6a8125a7c04d 3144 rust-gix-submodule_0.36.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-submodule"
   ],
   "Files": [
-    "3200ba6e39cc3639db77ca61a1fc8dc1 2638 rust-gix-submodule_0.34.0-1.dsc 928d76a2e287e525fa547ca27423c332 19796 rust-gix-submodule_0.34.0.orig.tar.gz 101c0664d4c2db9d9a786c125621dde9 3148 rust-gix-submodule_0.34.0-1.debian.tar.xz"
+    "fcc3fb022bf6e9cde2187f37301ff6e9 2688 rust-gix-submodule_0.36.0-1.dsc d013fbc69d3899a9d7d6ba0812404f41 19832 rust-gix-submodule_0.36.0.orig.tar.gz 24d0a70bedab21a5a7a62b2d6d010ab1 3144 rust-gix-submodule_0.36.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Fabian Grünbichler \u003cdebian@fabian.gruenbichler.email\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-submodule]"
   ],
   "Version": [
-    "0.34.0-1"
+    "0.36.0-1"
   ]
 }

@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-attributes-0.35+default-dev \u003c!nocheck\u003e, librust-gix-fs-0.22+default-dev (\u003e= 0.22.1) \u003c!nocheck\u003e, librust-gix-glob-0.27+default-dev (\u003e= 0.27.1) \u003c!nocheck\u003e, librust-gix-hash-0.26+default-dev (\u003e= 0.26.1) \u003c!nocheck\u003e, librust-gix-ignore-0.22+default-dev (\u003e= 0.22.1) \u003c!nocheck\u003e, librust-gix-index-0.55+default-dev \u003c!nocheck\u003e, librust-gix-object-0.64+default-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev (\u003e= 0.12.5) \u003c!nocheck\u003e, librust-gix-validate-0.11+default-dev (\u003e= 0.11.4) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-attributes-0.37+default-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-fs-0.24+default-dev \u003c!nocheck\u003e, librust-gix-glob-0.29+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.28+default-dev \u003c!nocheck\u003e, librust-gix-ignore-0.24+default-dev \u003c!nocheck\u003e, librust-gix-index-0.57+default-dev \u003c!nocheck\u003e, librust-gix-object-0.66+default-dev \u003c!nocheck\u003e, librust-gix-path-0.14+default-dev \u003c!nocheck\u003e, librust-gix-validate-0.13+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ecaf044a2dbae46b5269d3be84ee0883fd5b5fdccfe4d380eff10a08348707dd 2804 rust-gix-worktree_0.56.0-1.dsc 3ed36b627476e2072c129900a17c977a38052b5497e27308159bc881fbf4eecf 25451 rust-gix-worktree_0.56.0.orig.tar.gz 57929268a2bdb3a754b4e7606b049d2d5b35d9f24b9650b83f6564785f840831 3432 rust-gix-worktree_0.56.0-1.debian.tar.xz"
+    "df84db69c9f943c600542d85ca5f6f94500f01e349f3046b1c7cbf02ea477219 2839 rust-gix-worktree_0.58.0-1.dsc a285c0f6b41e504e8bb81ca3f861c4da00cb3d5ced3210a4591112f22da6d38f 36291 rust-gix-worktree_0.58.0.orig.tar.gz 4d749483a1dc114e5a1898514701dc6333a1bc95dc42679e61d4a98565dc61e1 4572 rust-gix-worktree_0.58.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-worktree"
   ],
   "Files": [
-    "3f27bcd1f1c9b16bfe5ef71665ae0bfd 2804 rust-gix-worktree_0.56.0-1.dsc ed9efc6ab0fd88abdec90ca9f6ffe4a4 25451 rust-gix-worktree_0.56.0.orig.tar.gz 3278c76bf8d7f69ed7b4821ca77fdc4a 3432 rust-gix-worktree_0.56.0-1.debian.tar.xz"
+    "7abcb8e6c394b34063be0cf9427572fa 2839 rust-gix-worktree_0.58.0-1.dsc 2dc8d9143632139224b3c50f34f20b4f 36291 rust-gix-worktree_0.58.0.orig.tar.gz eb5af7a1fa09ee703ddf09613d0e08d0 4572 rust-gix-worktree_0.58.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-worktree]"
   ],
   "Version": [
-    "0.56.0-1"
+    "0.58.0-1"
   ]
 }

@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-chunk-0.8+default-dev \u003c!nocheck\u003e, librust-gix-error-0.3+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.26+default-dev (\u003e= 0.26.1) \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-nonempty-0.11+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-chunk-0.10+default-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.28+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev (\u003e= 0.9.11) \u003c!nocheck\u003e, librust-nonempty-0.12+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "27d57b70ec2b7f78ea572e86e811be1cdddff7640ce050485f54815dd62bd6d4 2588 rust-gix-commitgraph_0.39.0-1.dsc 6b93c9fb1f5be01bba54a7a3b7455d359efc68555539c75ef74b8021bb6db497 21532 rust-gix-commitgraph_0.39.0.orig.tar.gz 2c9d20d8433f9f9d26d4d4342fe6f1eeb41454a36ea92924ed28160ccaf5a0ed 3484 rust-gix-commitgraph_0.39.0-1.debian.tar.xz"
+    "9c977416ecacba4f3868a1c941709bb13e02e2505694aa2753d713f992024b63 2618 rust-gix-commitgraph_0.41.0-1.dsc dfede9936d4b789867c09722576aea4ceb0e3aacf962eef035ebab0686b41a80 23318 rust-gix-commitgraph_0.41.0.orig.tar.gz 6d6c1855750f5162d833203dba694770e84c64e75458d5c9718144c75b7093c7 3380 rust-gix-commitgraph_0.41.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-commitgraph"
   ],
   "Files": [
-    "af4b82d0da400fd5df187e83b454eb26 2588 rust-gix-commitgraph_0.39.0-1.dsc 455a7cf680ef3c3a56f08ef5f79bf215 21532 rust-gix-commitgraph_0.39.0.orig.tar.gz c9202f11d9411547080f048787218b12 3484 rust-gix-commitgraph_0.39.0-1.debian.tar.xz"
+    "ee90595a1e2e452a38714cbb527fe96d 2618 rust-gix-commitgraph_0.41.0-1.dsc d66146bf1391b8812d95558a37569f97 23318 rust-gix-commitgraph_0.41.0.orig.tar.gz 4cd5db5a03d9bbe861de08daa0ab49e4 3380 rust-gix-commitgraph_0.41.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-commitgraph]"
   ],
   "Version": [
-    "0.39.0-1"
+    "0.41.0-1"
   ]
 }

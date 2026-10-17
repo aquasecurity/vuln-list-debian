@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-bstr-1+unicode-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev (\u003e= 0.12.6) \u003c!nocheck\u003e, librust-gix-quote-0.8+default-dev \u003c!nocheck\u003e, librust-gix-trace-0.1+default-dev (\u003e= 0.1.20) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-bstr-1+unicode-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-path-0.14+default-dev \u003c!nocheck\u003e, librust-gix-quote-0.10+default-dev \u003c!nocheck\u003e, librust-gix-trace-0.3+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e56c3fe5fdb4fd5f55e64f29394f930fc67fc99ca9cfa558ee8feae4d6720c2c 2517 rust-gix-command_0.10.1-1.dsc aa00adbd2c77f584cfe41f348772d2f131af1fa519a7f6b98638f1144ead96a4 17784 rust-gix-command_0.10.1.orig.tar.gz b54fbb74e074910f96ab1f4af3051b4dedd2c6da83b44368d39046dfe4ac3383 3380 rust-gix-command_0.10.1-1.debian.tar.xz"
+    "06b9d20fe56d697abf9cedbf9289cdd733f0841bb5073d110cf024c5c9bf018a 2569 rust-gix-command_0.12.0-1.dsc ac560c05e19455016a4a94b33a77debe59aaed8783da32a73d31c9975947152e 19877 rust-gix-command_0.12.0.orig.tar.gz 783d2d1b2a26fc5d55f5cb706a67978e7834c19dac82d18b235a002c54a93211 3348 rust-gix-command_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-command"
   ],
   "Files": [
-    "effa9c4e4d6082c1da621d11d0521446 2517 rust-gix-command_0.10.1-1.dsc a6890935068992b5de0162ff5d9fd7e9 17784 rust-gix-command_0.10.1.orig.tar.gz 262edec34f8c5bbcc84940b6a762b749 3380 rust-gix-command_0.10.1-1.debian.tar.xz"
+    "2f8875f777fa92e46ea2d790059f5f3a 2569 rust-gix-command_0.12.0-1.dsc 528dcc49ed30fd44bf705164f706e69d 19877 rust-gix-command_0.12.0.orig.tar.gz 9a05e6b957edf5d7e3ed9b5f8e191d4f 3348 rust-gix-command_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-command]"
   ],
   "Version": [
-    "0.10.1-1"
+    "0.12.0-1"
   ]
 }

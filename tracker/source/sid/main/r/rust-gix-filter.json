@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev (\u003e= 0.8.32) \u003c!nocheck\u003e, librust-gix-attributes-0.35+default-dev \u003c!nocheck\u003e, librust-gix-command-0.10+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.26+default-dev (\u003e= 0.26.1) \u003c!nocheck\u003e, librust-gix-object-0.64+default-dev \u003c!nocheck\u003e, librust-gix-packetline-0.22+blocking-io-dev \u003c!nocheck\u003e, librust-gix-packetline-0.22+default-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev (\u003e= 0.12.5) \u003c!nocheck\u003e, librust-gix-quote-0.8+default-dev \u003c!nocheck\u003e, librust-gix-trace-0.1+default-dev (\u003e= 0.1.21) \u003c!nocheck\u003e, librust-gix-utils-0.3+default-dev (\u003e= 0.3.6) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bstr-1+std-dev (\u003e= 1.12.0) \u003c!nocheck\u003e, librust-encoding-rs-0.8+default-dev (\u003e= 0.8.32) \u003c!nocheck\u003e, librust-gix-attributes-0.37+default-dev \u003c!nocheck\u003e, librust-gix-command-0.12+default-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.28+default-dev \u003c!nocheck\u003e, librust-gix-object-0.66+default-dev \u003c!nocheck\u003e, librust-gix-packetline-0.24+blocking-io-dev \u003c!nocheck\u003e, librust-gix-packetline-0.24+default-dev \u003c!nocheck\u003e, librust-gix-path-0.14+default-dev \u003c!nocheck\u003e, librust-gix-quote-0.10+default-dev \u003c!nocheck\u003e, librust-gix-trace-0.3+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.5+default-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "208c804390eb25ca4cd09023d96c17204c4bd0a17efebfd7e1de73845b502344 2992 rust-gix-filter_0.34.0-1.dsc 9c30b28d957e2e6f1e1bbfbfd26b8e0bb0aab68d8a5e730fb4fd3049943575e3 42525 rust-gix-filter_0.34.0.orig.tar.gz d9439a5c91efeaacf1c4d865e1773a05d693e8feae220621cf08f8b4c082c3f5 3368 rust-gix-filter_0.34.0-1.debian.tar.xz"
+    "910e3aee13131f001bdb3a7b10b4361ad3622f4510f83914d330df1f05f20106 2965 rust-gix-filter_0.36.0-1.dsc 9d8d932ee4043f7d77d15ee58d2be2bc95accea5dd1d77fd145de1b7c504551b 43200 rust-gix-filter_0.36.0.orig.tar.gz c7a268fbdc3f8507c1eb8709f0fe0f510bc79e10b4794f2438668b05d38ed760 3324 rust-gix-filter_0.36.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-filter"
   ],
   "Files": [
-    "7f1bcbb9c5bdaf040b430e3c7227fc88 2992 rust-gix-filter_0.34.0-1.dsc 5ac4e60d5a16619d861038ea48c2d288 42525 rust-gix-filter_0.34.0.orig.tar.gz f23e4b6977cb1c2f71ad71f631ea3be3 3368 rust-gix-filter_0.34.0-1.debian.tar.xz"
+    "722cf32a63126d65a5f38d208885dbb7 2965 rust-gix-filter_0.36.0-1.dsc f3405fc601e18235551a2ce4f8246627 43200 rust-gix-filter_0.36.0.orig.tar.gz d6ea38a7a7d161f4e07d01899c0fc5bd 3324 rust-gix-filter_0.36.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-filter]"
   ],
   "Version": [
-    "0.34.0-1"
+    "0.36.0-1"
   ]
 }
