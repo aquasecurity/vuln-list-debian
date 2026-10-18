@@ -6,22 +6,22 @@
     "python3-neo"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, ipython3, pybuild-plugin-pyproject, python3-all, python3-matplotlib, python3-nixio \u003c!nocheck\u003e, python3-numpy, python3-pickleshare, python3-pil, python3-pydata-sphinx-theme, python3-pytest, python3-quantities (\u003e= 0.16.1~), python3-setuptools, python3-sphinx, python3-sphinx-design, python3-sphinx-inline-tabs"
+    "debhelper-compat (= 14), dh-sequence-single-binary, dh-sequence-python3, git \u003c!nocheck\u003e, ipython3, pybuild-plugin-pyproject, python3-all, python3-dateutil \u003c!nocheck\u003e, python3-h5py \u003c!nocheck\u003e, python3-igor2 (\u003e= 0.5.9-3) \u003c!nocheck\u003e, python3-joblib \u003c!nocheck\u003e, python3-matplotlib \u003c!nocheck\u003e, python3-nixio \u003c!nocheck\u003e, python3-pynwb \u003c!nocheck\u003e, python3-numpy, python3-pickleshare, python3-pil \u003c!nocheck\u003e, python3-pydata-sphinx-theme, python3-pytest, python3-quantities (\u003e= 0.16.4~), python3-scipy \u003c!nocheck\u003e, python3-tqdm \u003c!nocheck\u003e, python3-setuptools, python3-sphinx, python3-sphinx-design, python3-sphinx-inline-tabs"
   ],
   "Checksums-Sha256": [
-    "d58e4e8544db5b6c31958dd88cdfacf915765f657dc1a1078cffd75cdb573a03 2390 neo_0.14.4-2.dsc cbe24031c514543005ec698d8fe024b95a0839e9efd469bf6f8290dc3d86b3b5 5085927 neo_0.14.4.orig.tar.gz b2c7e074bd5ecaa6243eefa433ca39759167d0f81518eaf445183e8330909d78 8424 neo_0.14.4-2.debian.tar.xz"
+    "4acfdb27f77729198769038d76e8f2f7264251b9223d30c858519036d90f0052 2650 neo_0.14.4-3.dsc cbe24031c514543005ec698d8fe024b95a0839e9efd469bf6f8290dc3d86b3b5 5085927 neo_0.14.4.orig.tar.gz fa12ba05a6d31547b0b75293b091eecf12ade8d2287a1a2ca48ed1aaf4f98386 9188 neo_0.14.4-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/neo"
   ],
   "Files": [
-    "bd8b62bba74a581ca2911506f3db73c3 2390 neo_0.14.4-2.dsc e95e49671c3a764a6a72258d9cc01155 5085927 neo_0.14.4.orig.tar.gz 1d1a64d66ce0366c70d2c21fc35ffa19 8424 neo_0.14.4-2.debian.tar.xz"
+    "b4d98fbfbcec48dc934eb5d012acf5ad 2650 neo_0.14.4-3.dsc e95e49671c3a764a6a72258d9cc01155 5085927 neo_0.14.4.orig.tar.gz 63ad201bef922ffc3f98ca897b70f74f 9188 neo_0.14.4-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://neuralensemble.org/trac/neo"
+    "https://neuralensemble.org/neo"
   ],
   "Maintainer": [
     "Debian Med Packaging Team \u003cdebian-med-packaging@lists.alioth.debian.org\u003e"
@@ -42,13 +42,13 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest"
+    "autopkgtest, autopkgtest-pkg-pybuild"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "@builddeps@, python3-datalad"
   ],
   "Uploaders": [
-    "Michael Hanke \u003cmih@debian.org\u003e, Yaroslav Halchenko \u003cdebian@onerussian.com\u003e, Étienne Mollier \u003cemollier@debian.org\u003e"
+    "Michael Hanke \u003cmih@debian.org\u003e, Yaroslav Halchenko \u003cdebian@onerussian.com\u003e, Étienne Mollier \u003cemollier@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/med-team/neo"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/neo.git"
   ],
   "Version": [
-    "0.14.4-2"
+    "0.14.4-3"
   ]
 }
