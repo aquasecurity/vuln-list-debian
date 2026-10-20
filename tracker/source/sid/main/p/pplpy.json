@@ -6,22 +6,22 @@
     "python3-ppl, python-ppl-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, cython3, libgmp-dev, libmpfr-dev, libmpc-dev, libppl-dev, libpari-dev, libjs-mathjax, python3-all-dev, python3-cysignals-pari, python3-gmpy2, python3-setuptools, python3-sphinx"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, cython3, libgmp-dev, libmpfr-dev, libmpc-dev, libppl-dev, libpari-dev, libjs-mathjax, meson (\u003e= 1.11), pkgconf, ppl-dev, pybuild-plugin-pyproject, python3-all-dev, python3-cysignals-pari, python3-gmpy2, python3-mesonpy, python3-sphinx"
   ],
   "Checksums-Sha256": [
-    "347f45d570ea0da5d6dbd8c6aec4093a786c9360e4f853815ad618541a26d81a 2267 pplpy_0.8.9-2.dsc 6f67bec608fef7479883acc3136db0b0db9ce3cf52c73c660e9c976996286f48 62754 pplpy_0.8.9.orig.tar.gz 86632546d1c625d8dc29d764d509460ccd6636cdee080570ee30d6796236166a 4004 pplpy_0.8.9-2.debian.tar.xz"
+    "0cf6f71188711eeb63d4fd08390a6105fd851b4269e742adf70ba5d04186bbe5 2333 pplpy_0.9.0-1.dsc bae4d5e3fa8c126ca17d319bdd45c9acef7193eb39f8f56c273b8dc37bfb0b03 67366 pplpy_0.9.0.orig.tar.gz ff131fed83be883e8fe8094c056691a13c8189d1a3f036c048499d16b5a4d96d 4652 pplpy_0.9.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pplpy"
   ],
   "Files": [
-    "585a581ea7f67583436d89b42aefb903 2267 pplpy_0.8.9-2.dsc 71272ff3253e3729c779b25ecefcf2fa 62754 pplpy_0.8.9.orig.tar.gz 2f0e9448f9d3f030c0074e8f91b3741a 4004 pplpy_0.8.9-2.debian.tar.xz"
+    "9169f8320d6f83a6e3df6f5ee403eeaf 2333 pplpy_0.9.0-1.dsc 4bb1e2d1ec28cc1eed3171d87d1f0d68 67366 pplpy_0.9.0.orig.tar.gz f9db92c4ad526d0fa633ccb431c871a4 4652 pplpy_0.9.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://gitlab.com/videlec/pplpy"
+    "https://github.com/sagemath/pplpy"
   ],
   "Maintainer": [
     "Debian Science Maintainers \u003cdebian-science-maintainers@lists.alioth.debian.org\u003e"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "python3-all"
+  ],
   "Uploaders": [
     "Tobias Hansen \u003cthansen@debian.org\u003e, Julien Puydt \u003cjpuydt@debian.org\u003e"
   ],
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/science-team/pplpy.git"
   ],
   "Version": [
-    "0.8.9-2"
+    "0.9.0-1"
   ]
 }

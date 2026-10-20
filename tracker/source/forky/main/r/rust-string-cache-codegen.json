@@ -6,19 +6,25 @@
     "librust-string-cache-codegen-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-phf-generator-0.11+default-dev \u003c!nocheck\u003e, librust-phf-shared-0.11+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-phf-generator-0.11+default-dev \u003c!nocheck\u003e, librust-phf-shared-0.11+default-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "21ae133a3d08ab774c6b70e5f27de6a970629fbd313767088f768286a60dfda0 2442 rust-string-cache-codegen_0.5.2-2.dsc 6bb30289b722be4ff74a408c3cc27edeaad656e06cb1fe8fa9231fa59c728988 8156 rust-string-cache-codegen_0.5.2.orig.tar.gz 6f5cfdcb68ad73e8d9c2f788b0b7b59395cce1bcd03d5be96ce8686420b34a94 3088 rust-string-cache-codegen_0.5.2-2.debian.tar.xz"
+    "639d06f7894ac08821472b5c734a1fd69771a384d15a349bc7137b9930720d72 2493 rust-string-cache-codegen_0.5.2-3.dsc 6bb30289b722be4ff74a408c3cc27edeaad656e06cb1fe8fa9231fa59c728988 8156 rust-string-cache-codegen_0.5.2.orig.tar.gz 45b9c12dd676fd4bfd8556866bffd5db1fee77ad131ef3b8d4699bfef97d6096 4188 rust-string-cache-codegen_0.5.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-string-cache-codegen"
   ],
   "Files": [
-    "5c02df5787ae671ecaffddd4906d28fc 2442 rust-string-cache-codegen_0.5.2-2.dsc 7d09912f3223c11ae5df9f5723fd4fdc 8156 rust-string-cache-codegen_0.5.2.orig.tar.gz bdd7b490c55a4cb3104d4ef78d9bd9b3 3088 rust-string-cache-codegen_0.5.2-2.debian.tar.xz"
+    "343b5395345692cbf43fd28688a4272d 2493 rust-string-cache-codegen_0.5.2-3.dsc 7d09912f3223c11ae5df9f5723fd4fdc 8156 rust-string-cache-codegen_0.5.2.orig.tar.gz 0593264eb1e10470bae092545d46071a 4188 rust-string-cache-codegen_0.5.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/servo/string-cache"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/string-cache-codegen]"
   ],
   "Version": [
-    "0.5.2-2"
+    "0.5.2-3"
   ]
 }
