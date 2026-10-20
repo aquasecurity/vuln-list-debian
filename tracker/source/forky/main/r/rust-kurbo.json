@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.6) \u003c!nocheck\u003e, librust-euclid-0.22+std-dev \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arrayvec-0.7-dev (\u003e= 0.7.6) \u003c!nocheck\u003e, librust-euclid-0.22+std-dev \u003c!nocheck\u003e, librust-polycool-0.4+std-dev \u003c!nocheck\u003e, librust-polycool-0.4-dev \u003c!nocheck\u003e, librust-smallvec-1+const-new-dev (\u003e= 1.15.1) \u003c!nocheck\u003e, librust-smallvec-1+default-dev (\u003e= 1.15.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8f4d3029cc0d80485c96b40b658d3498e3d7f475da7286a25dce42968c78836e 1750 rust-kurbo_0.11.3-1.dsc c62026ae44756f8a599ba21140f350303d4f08dcdcc71b5ad9c9bb8128c13c62 137586 rust-kurbo_0.11.3.orig.tar.gz 7aa8566efec6215bbdb591d035f5a07b8037f616415c082393999f40f35af597 4156 rust-kurbo_0.11.3-1.debian.tar.xz"
+    "e979077898d1183cc9c795c66c26dce71dcb343d4da2b192b593ca04d69df196 2002 rust-kurbo_0.13.1-1.dsc 4b60dfc32f652b926df6192e55525b16d186c69d47876c3ead4da5cc9f8450e2 169000 rust-kurbo_0.13.1.orig.tar.gz ed811d2a38ad6c6f8510cd066b277554ef9cb6145605019ea11a499ddd06aa77 6636 rust-kurbo_0.13.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-kurbo"
   ],
   "Files": [
-    "0cf05b1fe0979c980435fe24c6aa289e 1750 rust-kurbo_0.11.3-1.dsc 67438dfefea36c104bcd16359a61a8d8 137586 rust-kurbo_0.11.3.orig.tar.gz 9a37ee67d0dcb29706c01a116f9928f7 4156 rust-kurbo_0.11.3-1.debian.tar.xz"
+    "845701ca6ea1b60d762a1f6661032021 2002 rust-kurbo_0.13.1-1.dsc 9735cee003212e87bbd68eb7b63ffca6 169000 rust-kurbo_0.13.1.orig.tar.gz 759906e37c2e467c804a26d64138ae52 6636 rust-kurbo_0.13.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-rand-0.10+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+cargo-bench-support-dev, librust-getrandom-0.4+default-dev, librust-getrandom-0.4+wasm-js-dev, librust-rand-0.10+default-dev, rustc"
   ],
   "Uploaders": [
     "Andrej Shadura \u003candrewsh@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/kurbo]"
   ],
   "Version": [
-    "0.11.3-1"
+    "0.13.1-1"
   ]
 }
