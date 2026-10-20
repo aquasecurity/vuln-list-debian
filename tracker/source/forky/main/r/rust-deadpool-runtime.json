@@ -6,19 +6,25 @@
     "librust-deadpool-runtime-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.75) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "965e268a36340a9a57089e9ee5f05df579ce11eac79bf4872e9a5c176ed3d530 1622 rust-deadpool-runtime_0.1.4-1.dsc 092966b41edc516079bdf31ec78a2e0588d1d0c08f78b91d8307215928642b2b 7664 rust-deadpool-runtime_0.1.4.orig.tar.gz 101ad33a60180e1251b3340f07ed929103d8b57d5c0992583dfb2180f7ebc9ef 2680 rust-deadpool-runtime_0.1.4-1.debian.tar.xz"
+    "4c51a451d70193e399b20774a83ffe76c98a8884e205b301363f84a8229d9690 2379 rust-deadpool-runtime_0.3.1-1.dsc 2657f61fb1dd8bf37a8d51093cc7cee4e77125b22f7753f49b289f831bec2bae 13216 rust-deadpool-runtime_0.3.1.orig.tar.gz b2f811f4fd6dfe01421719ca0e4c356a686046ed3b73534d4ed5fbb1790b9b2d 2952 rust-deadpool-runtime_0.3.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-deadpool-runtime"
   ],
   "Files": [
-    "fca3e44661ba510d7dc3543643c2f1b7 1622 rust-deadpool-runtime_0.1.4-1.dsc 14c2b3f86dcb483af2de89f01046a671 7664 rust-deadpool-runtime_0.1.4.orig.tar.gz c92308047a56723d8a8c99df06c6b320 2680 rust-deadpool-runtime_0.1.4-1.debian.tar.xz"
+    "d7011f3fb0132e0ca08c93e117919fb7 2379 rust-deadpool-runtime_0.3.1-1.dsc 066be7abd0832a55c565c113802be852 13216 rust-deadpool-runtime_0.3.1.orig.tar.gz 7797cd4699c0910aa9015b4310f26dcc 2952 rust-deadpool-runtime_0.3.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/deadpool-rs/deadpool"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Ananthu C V \u003cweepingclown@disroot.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/deadpool-runtime]"
   ],
   "Version": [
-    "0.1.4-1"
+    "0.3.1-1"
   ]
 }
