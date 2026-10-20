@@ -1,24 +1,21 @@
 {
   "Architecture": [
-    "any-amd64 any-i386"
+    "any"
   ],
   "Binary": [
     "sortmerna"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-all, cmake, librocksdb-dev (\u003e= 6.25.3), libgflags-dev, libsnappy-dev, libzstd-dev, rapidjson-dev, libconcurrentqueue-dev"
+    "debhelper-compat (= 14), dh-sequence-python3, architecture-is-64-bit, architecture-is-little-endian, cmake, libbbhash-dev, libgflags-dev, libparasail-dev, librapidarchive-dev, librocksdb-dev, libsnappy-dev, libzstd-dev, python3-all, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "118045ea23b8fa25d3cbfe471cb8091438f6e54afdb802e1251b966768f8d4b5 2327 sortmerna_4.3.7-3.dsc 6b62def30704ea956e1de060b602f9bebc8f2ba68107c59329b332500997b1d2 31353353 sortmerna_4.3.7.orig.tar.gz 37ab760bf995c453320186adcb4ef3f1bba18c50a20331bc613e3d7d7a390ede 11364 sortmerna_4.3.7-3.debian.tar.xz"
-  ],
-  "Dgit": [
-    "cde22878f7e45101e9cb3b0c8445f00be009c78c debian archive/debian/4.3.7-3 https://git.dgit.debian.org/sortmerna"
+    "7653055a70b26b3eb509651f63349076337f670e221cf3687f62da974f9dcf47 2273 sortmerna_7.1.0-1.dsc 110917dd5b5669ad045e84195d164a11d1f65e9ee733ed425d6ee796886809da 31463307 sortmerna_7.1.0.orig.tar.gz e05cdf3804661e4b739f0e95dba3287dafaeeab41eede45f0e5a667fc0c189aa 14016 sortmerna_7.1.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sortmerna"
   ],
   "Files": [
-    "08424f2253ad135beaa019ee9bd74faf 2327 sortmerna_4.3.7-3.dsc bc312ee925efb6fc4a15c7d01db2526f 31353353 sortmerna_4.3.7.orig.tar.gz faec839fedd2cbbcd0ea2a55034c7af0 11364 sortmerna_4.3.7-3.debian.tar.xz"
+    "7d05ed24fbc6f5ec2a6dede1f4a71fe2 2273 sortmerna_7.1.0-1.dsc 2cb6e33ee672608775fe44f65fd9bcbb 31463307 sortmerna_7.1.0.orig.tar.gz 8393b19978377be51a6feb283d4bdf9f 14016 sortmerna_7.1.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +30,7 @@
     "sortmerna"
   ],
   "Package-List": [
-    "sortmerna deb science optional arch=any-amd64,any-i386,x32"
+    "sortmerna deb science optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -42,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "diffutils"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e, Étienne Mollier \u003cemollier@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/sortmerna.git"
   ],
   "Version": [
-    "4.3.7-3"
+    "7.1.0-1"
   ]
 }
