@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "ltrsift"
+    "ltrsift, ltrsift-sample"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libgenometools0-dev, libgtk2.0-dev, libglib2.0-dev"
+    "debhelper-compat (= 14), libgenometools0-dev, libglib2.0-dev, libgtk-3-dev"
   ],
   "Checksums-Sha256": [
-    "0d1a732aadf2c046ec3dc32e3873b78d94cadb98a0ca3edfa83824b53250ffa4 1654 ltrsift_1.0.2-11.dsc aa9332f880f85fc5b9fda7ebafdf8a728ce814a4b71daedb6a915d05df88a237 7301845 ltrsift_1.0.2.orig.tar.gz bc54c760f88e322fe5e1e93b2a5e6673d8e60b493418b89418f0dc81c1fe01fd 12544 ltrsift_1.0.2-11.debian.tar.xz"
+    "4ea264661da338dcd56a37ae9034cab0722a0c8d255469c6c346917ec1a267fb 2162 ltrsift_1.0.2-12.dsc aa9332f880f85fc5b9fda7ebafdf8a728ce814a4b71daedb6a915d05df88a237 7301845 ltrsift_1.0.2.orig.tar.gz 7499f5cc7260e3459e6beb8a52be5294d6746f9868671064b2a37c03024c7b07 19624 ltrsift_1.0.2-12.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/ltrsift"
   ],
   "Files": [
-    "ac3f0ffff8cd8b9d8aaf0caa738a60e4 1654 ltrsift_1.0.2-11.dsc a1e5e1ff14cb181130243aec69286270 7301845 ltrsift_1.0.2.orig.tar.gz 10222a2d64eaba3c28e23801f2b08f6d 12544 ltrsift_1.0.2-11.debian.tar.xz"
+    "89eb7c134dc808a0ee448aca72560277 2162 ltrsift_1.0.2-12.dsc a1e5e1ff14cb181130243aec69286270 7301845 ltrsift_1.0.2.orig.tar.gz d1d4885963338e96d0f567f916aa50b4 19624 ltrsift_1.0.2-12.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "ltrsift"
   ],
   "Package-List": [
-    "ltrsift deb science optional arch=any"
+    "ltrsift deb science optional arch=any ltrsift-sample deb science optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "openbox, xauth, xdotool, xvfb"
   ],
   "Uploaders": [
     "Sascha Steinbiss \u003csatta@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/med-team/ltrsift.git"
   ],
   "Version": [
-    "1.0.2-11"
+    "1.0.2-12"
   ]
 }
