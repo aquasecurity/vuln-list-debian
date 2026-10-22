@@ -1,24 +1,24 @@
 {
   "Architecture": [
-    "linux-any kfreebsd-any"
+    "linux-any"
   ],
   "Binary": [
     "hostapd, wpagui, wpasupplicant, wpasupplicant-udeb, eapoltest, libwpa-client-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-installsysusers, libdbus-1-dev, libssl-dev, qtbase5-dev [linux-any] \u003c!pkg.wpa.nogui\u003e, libncurses5-dev, libpcsclite-dev, libnl-3-dev [linux-any], libnl-genl-3-dev [linux-any], libnl-route-3-dev [linux-any], libpcap-dev [kfreebsd-any], libbsd-dev [kfreebsd-any], libreadline-dev, pkgconf | pkg-config, docbook-to-man \u003c!nodoc\u003e, docbook-utils \u003c!nodoc\u003e"
+    "debhelper-compat (= 13), dh-sequence-installsysusers, libdbus-1-dev, libssl-dev, qtbase5-dev [linux-any] \u003c!pkg.wpa.nogui\u003e, libncurses5-dev, libpcsclite-dev, libnl-3-dev [linux-any], libnl-genl-3-dev [linux-any], libnl-route-3-dev [linux-any], libreadline-dev, pkgconf | pkg-config, docbook-to-man \u003c!nodoc\u003e, docbook-utils \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "1c0e8029fe997c484745636d319d3d50bfc9372c8accad9d77e66275fdaeec3f 2214 wpa_2.10-25.dsc b39f85be9d8fd58adee1acae3735ec0a1f7bdc460fe3f6fd76a1d57e9ac910c6 2549336 wpa_2.10.orig.tar.xz e464cb54eebf549b1d85bfe310cee238592e1a056efb36bfef652cb9f3b6502d 95320 wpa_2.10-25.debian.tar.xz"
+    "bf5a2290640486ec6e009a8d87c6984d2a1fe74aa2908c62451aa4886c70e1fa 2134 wpa_2.11-3.dsc 4bc22d37533b53f0e9dfc4788cd7798457908dfb57e08ab5894a721061e66247 2780612 wpa_2.11.orig.tar.xz 4fa64b4e21e76c04526c5881d9716b023bdf6766e045860de1c386acbacb5e9e 93016 wpa_2.11-3.debian.tar.xz"
   ],
   "Dgit": [
-    "d8c9165a25baf11c61a4fb879d4d253dd57cc5bb debian archive/debian/2%2.10-25 https://git.dgit.debian.org/wpa"
+    "cc812a3f704320214c13945ce46900b28301461d debian archive/debian/2%2.11-3 https://git.dgit.debian.org/wpa"
   ],
   "Directory": [
     "pool/main/w/wpa"
   ],
   "Files": [
-    "31b1b2a14338bdb5fefd1fb7dcf8b606 2214 wpa_2.10-25.dsc 65a019b87548bbe385635f93cfa9cddb 2549336 wpa_2.10.orig.tar.xz f8504b2f50a3088bf99ecc90ece2cdb8 95320 wpa_2.10-25.debian.tar.xz"
+    "e852dcecdadc933573520582c0edeb33 2134 wpa_2.11-3.dsc fd9f9a56b7208b3b21643dc8ebb7fa73 2780612 wpa_2.11.orig.tar.xz ed93cd2aba8b16f6b338c1b2f821b9c0 93016 wpa_2.11-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "wpa"
   ],
   "Package-List": [
-    "eapoltest deb net optional arch=linux-any,kfreebsd-any hostapd deb net optional arch=linux-any,kfreebsd-any libwpa-client-dev deb libdevel optional arch=linux-any,kfreebsd-any wpagui deb net optional arch=linux-any profile=!pkg.wpa.nogui wpasupplicant deb net optional arch=linux-any,kfreebsd-any wpasupplicant-udeb udeb debian-installer standard arch=linux-any profile=!noudeb"
+    "eapoltest deb net optional arch=linux-any hostapd deb net optional arch=linux-any libwpa-client-dev deb libdevel optional arch=linux-any wpagui deb net optional arch=linux-any profile=!pkg.wpa.nogui profile:v1=!pkg.wpa.nogui wpasupplicant deb net optional arch=linux-any wpasupplicant-udeb udeb debian-installer standard arch=linux-any profile=!noudeb profile:v1=!noudeb"
   ],
   "Priority": [
     "optional"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/debian/wpa.git"
   ],
   "Version": [
-    "2:2.10-25"
+    "2:2.11-3"
   ]
 }
