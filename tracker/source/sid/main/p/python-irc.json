@@ -6,25 +6,28 @@
     "python3-irc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12)"
+    "dh-python, pybuild-plugin-pyproject, debhelper-compat (= 14)"
   ],
   "Build-Depends-Indep": [
-    "python3-setuptools, python3-six, python3-mock, python3-pytest, python3-all, dh-python"
+    "python3-jaraco.collections, python3-jaraco.functools (\u003e= 1.20), python3-jaraco.logging, python3-jaraco.stream, python3-jaraco.text (\u003e= 3.14), python3-more-itertools, python3-pytest \u003c!nocheck\u003e, python3-pytz, python3-setuptools, python3-setuptools-scm, python3-tempora, python3-all"
   ],
   "Checksums-Sha256": [
-    "9b05ee13721cb5fac127aee52251b6cd549b2f36908123e90558ef592a1df430 1988 python-irc_8.5.3+dfsg-5.dsc a55eddfb84bf013d41d2f67b93e620359747029c0efe96d11e6441b0a795750c 57733 python-irc_8.5.3+dfsg.orig.tar.gz 6f90a1d92fc6a807084132a1bdb2480e73a358ca0bed7601a8e9abca578e2d85 7460 python-irc_8.5.3+dfsg-5.debian.tar.xz"
+    "1f1f7b9b53399b11a95a5a9b113ab5b54bf85275aeb431c05b98ea57dd035cb6 2605 python-irc_20.5.0+dfsg1-1.dsc 875e3978e02cf45a40e34067e025fb6c5725ddce0019a5833332adb9fa594f26 46976 python-irc_20.5.0+dfsg1.orig.tar.xz a55bad1570d9d2be7e3f8d627aab404a219a09b1205f74294cfcbc3da2d2705e 230152 python-irc_20.5.0+dfsg1-1.debian.tar.xz"
+  ],
+  "Description": [
+    "Internet Relay Chat (IRC) protocol client library This library is intended to encapsulate the IRC protocol at a quite low level. It provides an event-driven IRC client framework. It has a fairly thorough support for the basic IRC protocol, CTCP and DCC connections."
   ],
   "Directory": [
     "pool/main/p/python-irc"
   ],
   "Files": [
-    "220992f47c4b6d0308f3285c6070bae2 1988 python-irc_8.5.3+dfsg-5.dsc 938bb86f182fa39f9c4a456560efe4bb 57733 python-irc_8.5.3+dfsg.orig.tar.gz cfa00f321b1f4630c164ecf634adaf8a 7460 python-irc_8.5.3+dfsg-5.debian.tar.xz"
+    "b6661fd851bfdf9d7e03e8d76724d085 2605 python-irc_20.5.0+dfsg1-1.dsc 4bd8a45906a4a808a459ca832c9ba130 46976 python-irc_20.5.0+dfsg1.orig.tar.xz b458b1413887082120e5a0f4a105f803 230152 python-irc_20.5.0+dfsg1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://pypi.org/project/irc/"
+    "https://github.com/jaraco/irc/"
   ],
   "Maintainer": [
     "Ben Finney \u003cbignose@debian.org\u003e"
@@ -42,7 +45,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all, python3-package-smoke-test"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/pkg-python-irc/"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/debian/pkg-python-irc.git"
   ],
   "Version": [
-    "8.5.3+dfsg-5"
+    "20.5.0+dfsg1-1"
   ]
 }
