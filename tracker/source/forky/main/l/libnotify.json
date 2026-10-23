@@ -6,22 +6,25 @@
     "libnotify-dev, libnotify4, libnotify-bin, libnotify-doc, gir1.2-notify-0.7"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, dbus-daemon \u003c!nocheck\u003e, docbook-xsl-ns \u003c!nodoc\u003e, gir1.2-gdkpixbuf-2.0-dev, gobject-introspection (\u003e= 1.80), libglib2.0-dev (\u003e= 2.62.0), libgtk-4-dev, libgdk-pixbuf-2.0-dev, meson (\u003e= 0.64), python3-dbus \u003c!nocheck\u003e, python3-dbusmock \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xsltproc \u003c!nodoc\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-gir, dbus-daemon \u003c!nocheck\u003e, docbook-xsl-ns \u003c!nodoc\u003e, gir1.2-gdkpixbuf-2.0-dev, libgdk-pixbuf-2.0-dev, libglib2.0-dev, libgtk-4-dev, meson, python3-dbus \u003c!nocheck\u003e, python3-dbusmock \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xsltproc \u003c!nodoc\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
     "gi-docgen \u003c!nodoc\u003e, xmlto \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "86e5ae1f90ff835564d40208cdb429374f88a8f1103f98afc39399de02447805 2664 libnotify_0.8.8-1.dsc 79d3c302cc76b8337cb8c342c5308efbca11d0a95aa5fbcd2e7371a3e85ca2a2 124388 libnotify_0.8.8.orig.tar.xz 1800e52c67669198232df19e0077fa84f35e02f962406c4a351e5dadedb4bcda 10356 libnotify_0.8.8-1.debian.tar.xz"
+    "af102a17d08d93db7f5c85371a6197e2729c67cb43c065f7cd1609d1d211425b 2689 libnotify_0.8.9-1.dsc c906bb084027ea512f94a60fbfc0cc8d4f17e4b4d525bed370d07a6d8714c923 116628 libnotify_0.8.9.orig.tar.xz 84c6f67978e5a73399215d32297d30ed8124b8456f5ce5c865de4549e25a8857 10308 libnotify_0.8.9-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/libn/libnotify"
   ],
   "Files": [
-    "63c1a7d484fc204cb82ba3645c621e4d 2664 libnotify_0.8.8-1.dsc 6b347566620474ead33b2a28dfd27d5a 124388 libnotify_0.8.8.orig.tar.xz 60935daa4896f3c710e405e1a9ded294 10356 libnotify_0.8.8-1.debian.tar.xz"
+    "0a6ba131c12968e6019194c38eb80b36 2689 libnotify_0.8.9-1.dsc 113412e490d26799863207ad30646bcc 116628 libnotify_0.8.9.orig.tar.xz 39780f9e98923de1f74c85ae881b8747 10308 libnotify_0.8.9-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://gnome.pages.gitlab.gnome.org/libnotify/"
   ],
   "Maintainer": [
     "Debian GNOME Maintainers \u003cpkg-gnome-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +33,7 @@
     "libnotify"
   ],
   "Package-List": [
-    "gir1.2-notify-0.7 deb introspection optional arch=any libnotify-bin deb utils optional arch=any libnotify-dev deb libdevel optional arch=any libnotify-doc deb doc optional arch=all profile=!nodoc libnotify4 deb libs optional arch=any"
+    "gir1.2-notify-0.7 deb introspection optional arch=any libnotify-bin deb utils optional arch=any libnotify-dev deb libdevel optional arch=any libnotify-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libnotify4 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +42,13 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, dbus, pkg-config, python3-dbusmock"
+    "build-essential, dbus-daemon, pkgconf, python3-dbusmock"
   ],
   "Uploaders": [
     "Jeremy Bícha \u003cjbicha@ubuntu.com\u003e, Marco Trevisan (Treviño) \u003cmarco@ubuntu.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/gnome-team/libnotify.git"
   ],
   "Version": [
-    "0.8.8-1"
+    "0.8.9-1"
   ]
 }

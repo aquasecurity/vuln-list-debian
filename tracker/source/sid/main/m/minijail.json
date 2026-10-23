@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "linux-any"
+    "linux-any all"
   ],
   "Binary": [
-    "minijail, libminijail1, libminijail-dev"
+    "minijail, libminijail1, libminijail-dev, librust-minijail-sys-dev, librust-minijail-dev, python3-minijail"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), libcap-dev, pkgconf"
   ],
+  "Build-Depends-Indep": [
+    "dh-sequence-python3, help2man, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+  ],
   "Checksums-Sha256": [
-    "bd3d9d68333287fdd714cb4410bb305ee3488a06969b23eea987a0c7e3b64b4e 2153 minijail_2026.05.18+git20261016.8787d1a-1.dsc 0209030afadd481703e4370caf0498801a9cdb63a92e84524073c72850f03ef5 253163 minijail_2026.05.18+git20261016.8787d1a.orig.tar.gz ae6ae2480b6e996e2628400fa083cb6f62ca5c12febd043c5fcaad9d4a534a5b 6092 minijail_2026.05.18+git20261016.8787d1a-1.debian.tar.xz"
+    "0d1ec988ca531ce700b9a234e4db74f7ba52dbeb3794b6421057ce80a5412e82 2555 minijail_2026.05.18+git20261016.8787d1a-2.dsc 0209030afadd481703e4370caf0498801a9cdb63a92e84524073c72850f03ef5 253163 minijail_2026.05.18+git20261016.8787d1a.orig.tar.gz 7b615d35490fb9c9065abddd73154e347672c0b6a934f7e9bc6e9759fb9df0cb 9464 minijail_2026.05.18+git20261016.8787d1a-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/minijail"
   ],
   "Files": [
-    "c31b001ec3e87660cba903cd4a9c66c7 2153 minijail_2026.05.18+git20261016.8787d1a-1.dsc 88ea7b52e71e22fd4bb8fe5418243379 253163 minijail_2026.05.18+git20261016.8787d1a.orig.tar.gz ff5c0379415e7fb54e3f32b31e4cb077 6092 minijail_2026.05.18+git20261016.8787d1a-1.debian.tar.xz"
+    "5fb4e4871e9770d72b0558d9c6f6fcc4 2555 minijail_2026.05.18+git20261016.8787d1a-2.dsc 88ea7b52e71e22fd4bb8fe5418243379 253163 minijail_2026.05.18+git20261016.8787d1a.orig.tar.gz 8cedda40b13c9d7d847540c02e765f30 9464 minijail_2026.05.18+git20261016.8787d1a-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "minijail"
   ],
   "Package-List": [
-    "libminijail-dev deb libdevel optional arch=linux-any libminijail1 deb libs optional arch=linux-any minijail deb admin optional arch=linux-any"
+    "libminijail-dev deb libdevel optional arch=linux-any libminijail1 deb libs optional arch=linux-any librust-minijail-dev deb rust optional arch=linux-any librust-minijail-sys-dev deb rust optional arch=linux-any minijail deb admin optional arch=linux-any python3-minijail deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +42,13 @@
     "libdevel"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "cargo, gcc, rustc"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/ysk/minijail"
@@ -48,6 +57,6 @@
     "https://salsa.debian.org/ysk/minijail.git"
   ],
   "Version": [
-    "2026.05.18+git20261016.8787d1a-1"
+    "2026.05.18+git20261016.8787d1a-2"
   ]
 }
