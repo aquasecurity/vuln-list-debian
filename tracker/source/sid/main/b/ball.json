@@ -3,34 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "libball1.5-data, libball1.5, libball1.5-dev, libballview1.5, libballview1.5-dev, ballview, libball1.5-doc"
+    "ballview, ballview-data"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-builtusing, bison, cmake, flex, libboost-dev, libboost-iostreams-dev, libboost-thread-dev, libeigen3-dev, libgl-dev, libglew-dev, liblpsolve55-dev, libnsl-dev, libqt5opengl5-desktop-dev, libsvm-dev, libx11-dev, qtbase5-dev, qttools5-dev, qtwebengine5-dev [amd64 arm64 armhf i386 mips64el], tidy"
-  ],
-  "Build-Depends-Indep": [
-    "doxygen \u003c!nodoc\u003e, ghostscript \u003c!nodoc\u003e, graphviz \u003c!nodoc\u003e, texlive-fonts-recommended \u003c!nodoc\u003e, texlive-latex-base \u003c!nodoc\u003e, texlive-latex-extra \u003c!nodoc\u003e, texlive-latex-recommended \u003c!nodoc\u003e"
+    "debhelper-compat (= 14), dh-sequence-builtusing, bison, cmake, flex, imagemagick, libboost-iostreams-dev, libboost-thread-dev, libcups2-dev, libeigen3-dev, libfftw3-dev, libgl-dev, libglew-dev, liblpsolve55-dev, libnsl-dev, libopenbabel-dev, libsvm-dev, libtbb-dev [linux-any], qt6-svg-dev, qt6-tools-dev, qt6-webengine-dev [amd64 arm64 armhf i386]"
   ],
   "Checksums-Sha256": [
-    "d4554f33be2482027c44af3b96756d7b10598da1e1ed44b550d48b429fe7e193 3326 ball_1.5.0+git20220524.d85d2dd-5.dsc d8209c81107417f5d8ddef51080d98cd8af2a8dd2ed33c8c6b61418a997a0e0f 21353788 ball_1.5.0+git20220524.d85d2dd.orig.tar.xz edcc76bf524f730a02606c5c9fc32269a94c35078cc8dd0b57f93461d6d296ee 27640 ball_1.5.0+git20220524.d85d2dd-5.debian.tar.xz"
-  ],
-  "Dgit": [
-    "a2a6cd9d0f7a5acac7f329e209d5b84be53ff3f5 debian archive/debian/1.5.0+git20220524.d85d2dd-5 https://git.dgit.debian.org/ball"
+    "ff0cf4711355fd8b4d6f7c68bc2b2d9269fc18e20b9cef561f14504be3117c0f 2426 ball_1.7.4-2.dsc 5d4d038aed5ee2f73199a0172f536aff77ef24150e13ed2f87a5ba924ae19f39 39417077 ball_1.7.4.orig.tar.gz 2159a672a28876f885412a850810d928ce82d4881dbb38433bbb4b56c6cd0f50 20412 ball_1.7.4-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/ball"
   ],
   "Files": [
-    "941ab99d6eb528ed212c91f713c89a7f 3326 ball_1.5.0+git20220524.d85d2dd-5.dsc 17b927adb470454db592d11d4d911cf6 21353788 ball_1.5.0+git20220524.d85d2dd.orig.tar.xz 66e53243c685603c0096b471d229f222 27640 ball_1.5.0+git20220524.d85d2dd-5.debian.tar.xz"
+    "71f634f9b861cefd49361e938a74aa32 2426 ball_1.7.4-2.dsc 8b7622159c7a1845578e1cd654aaca3b 39417077 ball_1.7.4.orig.tar.gz 24f47d7328c96f476348f6dc71756f23 20412 ball_1.7.4-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=c020a35a9584e455efd4877fccc9c6d5f6e44df5 fp=bbbd45ea818ab86ff67e7285d3e17383cfa7ff06"
-  ],
-  "Git-Tag-Tagger": [
-    "Anton Gladky \u003cgladk@debian.org\u003e"
   ],
   "Homepage": [
     "http://www.ball-project.org/"
@@ -42,7 +30,7 @@
     "ball"
   ],
   "Package-List": [
-    "ballview deb science optional arch=any libball1.5 deb libs optional arch=any libball1.5-data deb science optional arch=all libball1.5-dev deb libdevel optional arch=any libball1.5-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libballview1.5 deb libs optional arch=any libballview1.5-dev deb libdevel optional arch=any"
+    "ballview deb science optional arch=any ballview-data deb science optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -57,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkgconf"
+    "build-essential, libboost-dev, pkgconf, qt6-base-dev"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e, Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -69,6 +57,6 @@
     "https://salsa.debian.org/med-team/ball.git"
   ],
   "Version": [
-    "1.5.0+git20220524.d85d2dd-5"
+    "1.7.4-2"
   ]
 }

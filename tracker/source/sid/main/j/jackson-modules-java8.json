@@ -9,10 +9,10 @@
     "debhelper-compat (= 13), default-jdk, maven-debian-helper (\u003e= 2.6)"
   ],
   "Build-Depends-Indep": [
-    "libbuild-helper-maven-plugin-java, libjackson2-annotations-java (\u003e= 2.18.11), libjackson2-core-java (\u003e= 2.18.11), libjackson2-databind-java (\u003e= 2.18.11), libmaven-bundle-plugin-java, libmaven-shade-plugin-java, libreplacer-java, libassertj-core-java, libmockito-java, libsurefire-java \u003c!nocheck\u003e"
+    "libbuild-helper-maven-plugin-java, libjackson2-annotations-java (\u003e= 2.22), libjackson2-core-java (\u003e= 2.22.4), libjackson2-databind-java (\u003e= 2.22.4), libmaven-bundle-plugin-java, libmaven-shade-plugin-java, libreplacer-java, libassertj-core-java, libmockito-java, junit5 \u003c!nocheck\u003e, libsurefire-java \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "9c3ed91162fce7d9301d0255cde44906fd2c2e592d7dd95a2ef45c9b1d3054aa 3565 jackson-modules-java8_2.18.11-1.dsc 9ed27cd0746b4630da9d9e1aaf710668451bbbdf0473c6bfbe62bc5f398031e7 108612 jackson-modules-java8_2.18.11.orig.tar.xz 39a12dfdbe6c1ba4b6311fd856362bba108cd7a953bffaff9816c2476d246e67 3296 jackson-modules-java8_2.18.11-1.debian.tar.xz"
+    "f3c9b1bd9e559d80f60fea6577107f0667da20257dfdffe8a2cf603d123c7a4d 3572 jackson-modules-java8_2.22.4-1.dsc 743127a0c9cbea6640cc29bda91b6d885555414bcf81f52f10d1a5856de5b511 112396 jackson-modules-java8_2.22.4.orig.tar.xz 20309e867dda5ece2ae38c9fbf95eb8cf38100bbdc1fff0e3c1a6482e252ec3d 3376 jackson-modules-java8_2.22.4-1.debian.tar.xz"
   ],
   "Description": [
     "Jackson support modules for Java 8 Set of support modules for Java 8 datatypes (Optionals, date/time) and features (parameter names). When used with Jackson 2.x, Java 8 support is provided via 3 separate modules: . * Parameter names: support for detecting constructor and factory method (\"creator\") parameters without having to use @JsonProperty annotation + provides com.fasterxml.jackson.module.paramnames.ParameterNamesModule . * Java 8 Date/time: support for Java 8 date/time types (specified in JSR-310 specification) + provides com.fasterxml.jackson.datatype.jsr310.JavaTimeModule + ALSO provides legacy variant com.fasterxml.jackson.datatype.jsr310.JSR310TimeModule + difference between 2 modules is that of configuration defaults: use of JavaTimeModule strongly recommended for new code . * Java 8 Datatypes: support for other new Java 8 datatypes outside of date/time: most notably Optional, OptionalLong, OptionalDouble + provides com.fasterxml.jackson.datatype.jdk8.Jdk8Module"
@@ -21,7 +21,7 @@
     "pool/main/j/jackson-modules-java8"
   ],
   "Files": [
-    "5fd48c099147e1ea87ace3cd243aaad8 3565 jackson-modules-java8_2.18.11-1.dsc db2bd1580d698b62dc814ab36661bb01 108612 jackson-modules-java8_2.18.11.orig.tar.xz b45de74c363563d1c36e5a3e3bcf5385 3296 jackson-modules-java8_2.18.11-1.debian.tar.xz"
+    "b379616626a4000180f28ceab65bbc08 3572 jackson-modules-java8_2.22.4-1.dsc ef4c0130f660ae9a6f37ec7ab9ed2a15 112396 jackson-modules-java8_2.22.4.orig.tar.xz 50921b38e4a4b99eb754cbd5ac9b9356 3376 jackson-modules-java8_2.22.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/java-team/jackson-modules-java8.git"
   ],
   "Version": [
-    "2.18.11-1"
+    "2.22.4-1"
   ]
 }
