@@ -6,16 +6,16 @@
     "node-prosemirror-test-builder"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-sequence-single-binary, dh-sequence-nodejs, node-prosemirror-buildhelper, node-prosemirror-model, node-prosemirror-schema-basic, node-prosemirror-schema-list"
+    "debhelper-compat (= 14), dh-sequence-single-binary, dh-sequence-nodejs, node-prosemirror-buildhelper (\u003e= 0.2.0-3), node-ist, node-prosemirror-model, node-prosemirror-schema-basic, node-prosemirror-schema-list"
   ],
   "Checksums-Sha256": [
-    "e39ea55fa9187bcaba644aed59fa1098c7d9d810a9e4389ebb2525999f8c4089 2391 node-prosemirror-test-builder_1.1.1-1.dsc c563c76220389e70b1252e146a9aa7ead9f2a81b991ee3bf96838925f39e2b0d 5540 node-prosemirror-test-builder_1.1.1.orig.tar.xz 3fd9baf22d18ba4f223150da267847ed7ad98c0925b5fa543191371895171379 3032 node-prosemirror-test-builder_1.1.1-1.debian.tar.xz"
+    "21caf867e08fde28ae45d7fc61a38bf4d558c65b65c8501717a9ef47f3080e59 2491 node-prosemirror-test-builder_1.1.1-2.dsc c563c76220389e70b1252e146a9aa7ead9f2a81b991ee3bf96838925f39e2b0d 5540 node-prosemirror-test-builder_1.1.1.orig.tar.xz 587243ffe2614ec399441e813500356c990f1a0a37ede111760bf9259ed4cbb1 3664 node-prosemirror-test-builder_1.1.1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/n/node-prosemirror-test-builder"
   ],
   "Files": [
-    "ab152d2bcc440438c586f48685fb44a1 2391 node-prosemirror-test-builder_1.1.1-1.dsc 6194aeabb1b51ccfab691e6ecd00f315 5540 node-prosemirror-test-builder_1.1.1.orig.tar.xz 62a5ba2b6220be5dd1616fdc93ad0bcb 3032 node-prosemirror-test-builder_1.1.1-1.debian.tar.xz"
+    "f8467d09d3e26dd6ae81877a01cc8f0a 2491 node-prosemirror-test-builder_1.1.1-2.dsc 6194aeabb1b51ccfab691e6ecd00f315 5540 node-prosemirror-test-builder_1.1.1.orig.tar.xz 148d9f31f70e3cd3bbcb625dce0b801b 3664 node-prosemirror-test-builder_1.1.1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +42,13 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-nodejs"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "node-prosemirror-buildhelper, nodejs"
   ],
   "Uploaders": [
-    "Abraham Raji \u003cavronr@tuta.io\u003e"
+    "Abraham Raji \u003cavronr@tuta.io\u003e, Emfox Zhou \u003cemfox@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/js-team/node-prosemirror-test-builder"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/js-team/node-prosemirror-test-builder.git"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.1.1-2"
   ]
 }
