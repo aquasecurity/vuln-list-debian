@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64"
+    "amd64 arm64 armhf all"
   ],
   "Binary": [
-    "libflutter-linux-gtk, libflutter-linux-gtk-dev, libflutter-linux-gtk-profile, libflutter-engine-embedder, libflutter-engine-embedder-dev, flutter-engine-tools, flutter-engine-font-subset"
+    "libflutter-linux-gtk, libflutter-linux-gtk-dev, libflutter-linux-gtk-profile, libflutter-engine-embedder, libflutter-engine-embedder-dev, flutter-engine-tools, flutter-engine-font-subset, sky-engine, flutter-patched-sdk, flutter-tester"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-exec, clang-22, lld-22, llvm-22, libclang-rt-22-dev, generate-ninja, ninja-build, pkgconf, python3, dart-sdk (\u003e= 3.13.4+dfsg1-6), libepoxy-dev, libglib2.0-dev, libgtk-3-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libjpeg-dev, libpng-dev, libwebp-dev, zlib1g-dev, libexpat1-dev, libicu-dev, libegl-dev, libgles-dev, libgl-dev, libvulkan-dev, glslang-dev, spirv-headers, spirv-tools-dev, libflatbuffers-dev, rapidjson-dev"
+    "debhelper-compat (= 14), dh-exec, clang-22, lld-22, llvm-22, libclang-rt-22-dev, generate-ninja, ninja-build, pkgconf, python3, dart-sdk (\u003e= 3.13.4+dfsg1-6), dart-kernel-compiler (\u003e= 3.13.4+dfsg1-7), dart-args, dart-path, libepoxy-dev, libglib2.0-dev, libgtk-3-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libjpeg-dev, libpng-dev, libwebp-dev, zlib1g-dev, libexpat1-dev, libicu-dev, libegl-dev, libgles-dev, libgl-dev, libvulkan-dev, glslang-dev, spirv-headers, spirv-tools-dev, libflatbuffers-dev, rapidjson-dev"
   ],
   "Checksums-Sha256": [
-    "a93c78464f86570b3fb2fac3c3021a2fe1530c68c971f070f3b8c42d341b71dd 3123 flutter-engine_3.47.5+ds1-1.dsc 7888789dc6066ee5cff069f0cf24c7d6abd0465c8c0ae886d0f6b83c77276401 48651928 flutter-engine_3.47.5+ds1.orig.tar.xz d06382783ab5bac6a0e3f93f7598cadecdfd470382fa8e55fb7d73a36ce23040 23564 flutter-engine_3.47.5+ds1-1.debian.tar.xz"
+    "e863e362f0408458f6a7dfa0e83f726fa3bcf140bdf26c8851437c4a7d82b6bb 3435 flutter-engine_3.47.5+ds1-2.dsc 7888789dc6066ee5cff069f0cf24c7d6abd0465c8c0ae886d0f6b83c77276401 48651928 flutter-engine_3.47.5+ds1.orig.tar.xz ab4647a3ad901bf72a65e15c5b50a5434fcb84f1bec4eeb752b073a70238710d 25636 flutter-engine_3.47.5+ds1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/flutter-engine"
   ],
   "Files": [
-    "076c36965ac27f11b9481216e172320c 3123 flutter-engine_3.47.5+ds1-1.dsc fced15269734defee09d20b8ecbedae5 48651928 flutter-engine_3.47.5+ds1.orig.tar.xz 493e8d75979f61c2aaca33a040aefe70 23564 flutter-engine_3.47.5+ds1-1.debian.tar.xz"
+    "57c90ab119d620c2099bf584dfafc5d5 3435 flutter-engine_3.47.5+ds1-2.dsc fced15269734defee09d20b8ecbedae5 48651928 flutter-engine_3.47.5+ds1.orig.tar.xz b981338fdeea93b00b32d0361aa35c21 25636 flutter-engine_3.47.5+ds1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "flutter-engine"
   ],
   "Package-List": [
-    "flutter-engine-font-subset deb devel optional arch=amd64,arm64 flutter-engine-tools deb devel optional arch=amd64,arm64 libflutter-engine-embedder deb libs optional arch=amd64,arm64 libflutter-engine-embedder-dev deb libdevel optional arch=amd64,arm64 libflutter-linux-gtk deb libs optional arch=amd64,arm64 libflutter-linux-gtk-dev deb libdevel optional arch=amd64,arm64 libflutter-linux-gtk-profile deb libs optional arch=amd64,arm64"
+    "flutter-engine-font-subset deb devel optional arch=amd64,arm64,armhf flutter-engine-tools deb devel optional arch=amd64,arm64,armhf flutter-patched-sdk deb devel optional arch=all flutter-tester deb devel optional arch=amd64,arm64,armhf libflutter-engine-embedder deb libs optional arch=amd64,arm64,armhf libflutter-engine-embedder-dev deb libdevel optional arch=amd64,arm64,armhf libflutter-linux-gtk deb libs optional arch=amd64,arm64,armhf libflutter-linux-gtk-dev deb libdevel optional arch=amd64,arm64,armhf libflutter-linux-gtk-profile deb libs optional arch=amd64,arm64,armhf sky-engine deb devel optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/dart-team/flutter-engine.git"
   ],
   "Version": [
-    "3.47.5+ds1-1"
+    "3.47.5+ds1-2"
   ]
 }
