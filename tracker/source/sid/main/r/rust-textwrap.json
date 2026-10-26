@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.70) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-smawk-0.3+default-dev (\u003e= 0.3.2-~~) \u003c!nocheck\u003e, librust-unicode-linebreak-0.1+default-dev (\u003e= 0.1.5-~~) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-icu-segmenter-2+compiled-data-dev (\u003e= 2.2) \u003c!nocheck\u003e, librust-smawk-0.3+default-dev (\u003e= 0.3.2) \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a9e6ace266c3e72897b6afc5fe04d38f49caef9c8e9925b4ef5cc33b6f5b1cd1 1813 rust-textwrap_0.16.2-1.dsc c13547615a44dc9c452a8a534638acdf07120d4b6847c8178705da06306a3057 57077 rust-textwrap_0.16.2.orig.tar.gz 95c05e78ad574fd395181d123508e8209b13f381436dc71b9c1aec48048aa059 4044 rust-textwrap_0.16.2-1.debian.tar.xz"
+    "c7c5942bdcab84ce1afd94f971b3bf59bf7963a554b85ea6522a7fa812d80077 2532 rust-textwrap_0.16.4-1.dsc 6ecfad6c3abc80a577f2b91c1e412ee57e7a060d430b553c1b0c940974ebcd49 61575 rust-textwrap_0.16.4.orig.tar.gz 3e000c3e290ed00104b64ea2e2c1cf456cddabd4e6d7fd8cce6d77f37139cc30 4312 rust-textwrap_0.16.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-textwrap"
   ],
   "Files": [
-    "81b1ae4a46aa2a5cc345477cd767bd90 1813 rust-textwrap_0.16.2-1.dsc 4b5ece77b3e731cba47059a5e2385b86 57077 rust-textwrap_0.16.2.orig.tar.gz 18bf3db8ab5b8668ee0fb2678790b690 4044 rust-textwrap_0.16.2-1.debian.tar.xz"
+    "4aa9739be5860179d2ccf394a9ffc55c 2532 rust-textwrap_0.16.4-1.dsc e2eaa476b05070b9216660ef21364e73 61575 rust-textwrap_0.16.4.orig.tar.gz a217cdc633e9512eeafbe75ebf0ae0b4 4312 rust-textwrap_0.16.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-termion+default-dev, rustc"
+    "dh-cargo, librust-termion-4+default-dev, librust-unic-emoji-char-0.9+default-dev, librust-version-sync-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/textwrap]"
   ],
   "Version": [
-    "0.16.2-1"
+    "0.16.4-1"
   ]
 }
