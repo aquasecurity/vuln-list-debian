@@ -6,19 +6,19 @@
     "librust-gix-hash-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, librust-sha1-checked-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo, librust-sha1dc-dev"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-faster-hex-0.10+std-dev \u003c!nocheck\u003e, librust-gix-features-0.49+default-dev (\u003e= 0.49.1) \u003c!nocheck\u003e, librust-gix-features-0.49+progress-dev (\u003e= 0.49.1) \u003c!nocheck\u003e, librust-sha1-checked-0.10-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-faster-hex-1+std-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.5+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.5+progress-dev \u003c!nocheck\u003e, librust-sha1dc-0.1+std-dev (\u003e= 0.1.3) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a21244d4215e3536d2f9f93033f4d46e7696504d2a2d7ecfe76803385cbfc75a 2517 rust-gix-hash_0.26.2-1.dsc 380b9c423a54f0821064b954b5a5ab25c660812f6a91da03c3f1cb4b10762aa5 23468 rust-gix-hash_0.26.2.orig.tar.gz 88e3e3307b31d38d5d0b2175f26775b90a183469d75c6cf8199b9c8554a1b7bc 7164 rust-gix-hash_0.26.2-1.debian.tar.xz"
+    "3a7dee4d7a17ac761f529b6be382ac438624cd950a0afc41a892020f88f479b3 2503 rust-gix-hash_0.28.0-1.dsc 40ca156064e378d8c657084365846cedb8dc498c6ea4500965a64d74f12af2be 24922 rust-gix-hash_0.28.0.orig.tar.gz 4caab9b6b822f1ce9c45a9c0effc6f87b87a9dfdcd28036db7aeb64fb15e5c4f 7560 rust-gix-hash_0.28.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-hash"
   ],
   "Files": [
-    "b8d0047a1a166cc92568afccd787c7b1 2517 rust-gix-hash_0.26.2-1.dsc 25bf735a0bdd0c286b509ff17d5679fe 23468 rust-gix-hash_0.26.2.orig.tar.gz 871e19dbecc81c85c916c7f7f87373b8 7164 rust-gix-hash_0.26.2-1.debian.tar.xz"
+    "415054454be60cecc34fcdc31bd9c207 2503 rust-gix-hash_0.28.0-1.dsc 1222179c74340d09dbee593696e70b20 24922 rust-gix-hash_0.28.0.orig.tar.gz f1c8c68a40ff82d2887274151dd98f7a 7560 rust-gix-hash_0.28.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-hash]"
   ],
   "Version": [
-    "0.26.2-1"
+    "0.28.0-1"
   ]
 }

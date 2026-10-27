@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gix-error-0.3+default-dev (\u003e= 0.3.1) \u003c!nocheck\u003e, librust-gix-hash-0.26+default-dev (\u003e= 0.26.2) \u003c!nocheck\u003e, librust-gix-hashtable-0.16+default-dev \u003c!nocheck\u003e, librust-gix-object-0.64+default-dev (\u003e= 0.64.1) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-hash-0.28+default-dev \u003c!nocheck\u003e, librust-gix-object-0.66+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cbfe3ceb123a99c338d0f1bf2d621e234c06d2f632e273d614a189817826598c 2434 rust-gix-note_0.1.1-1.dsc 9af6bbdb3f3c62b4920407c479af1cc0beb27fd75a762782d48baed53d330958 15091 rust-gix-note_0.1.1.orig.tar.gz 0e44ef354f10cce348902bd68e98957a3f4a0412b861b47b5f60ccdedba0d282 2808 rust-gix-note_0.1.1-1.debian.tar.xz"
+    "b8a71c8a17e9195818d1874aabca3b01bcbdd2ea54fa8ea0ac79acdeba790e94 2412 rust-gix-note_0.3.0-1.dsc bd364f8bdceaed9e7f3ae40f324b16e39f20e9c7e6a6a058f7c6ec66c3e6205c 22075 rust-gix-note_0.3.0.orig.tar.gz da3733d602605afefbb1bb833ffc2ee04eb2773e2215c6426f3518024d4e14cc 3052 rust-gix-note_0.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-note"
   ],
   "Files": [
-    "fa4700b381f16ddbe3f6d8a7330993c5 2434 rust-gix-note_0.1.1-1.dsc 552855cf69e52415b4fcb6728ab1365a 15091 rust-gix-note_0.1.1.orig.tar.gz 71b19c6e9685e007dbdba96da32de339 2808 rust-gix-note_0.1.1-1.debian.tar.xz"
+    "9ab5694f1e4ab100d6d1dd5bc3b7bb31 2412 rust-gix-note_0.3.0-1.dsc fcc524357cc74e7669a24b28415facea 22075 rust-gix-note_0.3.0.orig.tar.gz 2afe270b2c3a21a4e6664fec57b04476 3052 rust-gix-note_0.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-insta-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Simon Quigley \u003ctsimonq2@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-note]"
   ],
   "Version": [
-    "0.1.1-1"
+    "0.3.0-1"
   ]
 }

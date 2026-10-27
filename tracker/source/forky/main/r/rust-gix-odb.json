@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arc-swap-1+default-dev (\u003e= 1.9.0) \u003c!nocheck\u003e, librust-gix-features-0.49+crc32-dev (\u003e= 0.49.1) \u003c!nocheck\u003e, librust-gix-features-0.49+default-dev (\u003e= 0.49.1) \u003c!nocheck\u003e, librust-gix-features-0.49+walkdir-dev (\u003e= 0.49.1) \u003c!nocheck\u003e, librust-gix-fs-0.22+default-dev (\u003e= 0.22.1) \u003c!nocheck\u003e, librust-gix-hash-0.26+default-dev (\u003e= 0.26.1) \u003c!nocheck\u003e, librust-gix-hashtable-0.16+default-dev \u003c!nocheck\u003e, librust-gix-object-0.64+default-dev \u003c!nocheck\u003e, librust-gix-pack-0.74-dev \u003c!nocheck\u003e, librust-gix-path-0.12+default-dev (\u003e= 0.12.5) \u003c!nocheck\u003e, librust-gix-quote-0.8+default-dev \u003c!nocheck\u003e, librust-gix-zlib-0.1+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.4) \u003c!nocheck\u003e, librust-tempfile-3+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev (\u003e= 2.0.18) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.88) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arc-swap-1+default-dev (\u003e= 1.9.0) \u003c!nocheck\u003e, librust-crc32fast-1+default-dev (\u003e= 1.5.0) \u003c!nocheck\u003e, librust-gix-error-0.5+default-dev \u003c!nocheck\u003e, librust-gix-fs-0.24+default-dev \u003c!nocheck\u003e, librust-gix-fs-0.24+walkdir-dev \u003c!nocheck\u003e, librust-gix-hash-0.28+default-dev \u003c!nocheck\u003e, librust-gix-hashtable-0.18+default-dev \u003c!nocheck\u003e, librust-gix-object-0.66+default-dev \u003c!nocheck\u003e, librust-gix-pack-0.76-dev \u003c!nocheck\u003e, librust-gix-parallel-0.50+default-dev \u003c!nocheck\u003e, librust-gix-path-0.14+default-dev \u003c!nocheck\u003e, librust-gix-quote-0.10+default-dev \u003c!nocheck\u003e, librust-gix-trace-0.3+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.5+default-dev \u003c!nocheck\u003e, librust-gix-utils-0.5+progress-dev \u003c!nocheck\u003e, librust-gix-zlib-0.3+default-dev \u003c!nocheck\u003e, librust-memmap2-0.9+default-dev (\u003e= 0.9.11) \u003c!nocheck\u003e, librust-parking-lot-0.12+default-dev (\u003e= 0.12.4) \u003c!nocheck\u003e, librust-tempfile-3+default-dev (\u003e= 3.26.0) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "93121cedda9f3ed7de5024150a4a68ab24fe81d42e97e21352c04590dbc7727a 3197 rust-gix-odb_0.84.0-1.dsc cf45d195b71cb6363886e7b466821bf4dffd7aba1b6b814ff75488e0061d72a7 66815 rust-gix-odb_0.84.0.orig.tar.gz 3d0ef9bc15fbc6ec55145791cbf59416b3731f550675e01567ff04adacab8815 3600 rust-gix-odb_0.84.0-1.debian.tar.xz"
+    "0201194c33cff9df177d92ea30d0e7e7d41a57d933fff145e91fd36292bb2753 3309 rust-gix-odb_0.86.0-1.dsc ca444f33f2140876ed6b5313c2b550b4af699008193c96f3bff5023afa9ef4ea 67882 rust-gix-odb_0.86.0.orig.tar.gz c6f3a689816bb0f9b365a3de01c3a14695efddd2627fe749aa0612668b672727 3500 rust-gix-odb_0.86.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-gix-odb"
   ],
   "Files": [
-    "6e5ca8216f065ff9ff795b48032e3ac2 3197 rust-gix-odb_0.84.0-1.dsc cc7c63a1db6839f5b002749d1e6d183f 66815 rust-gix-odb_0.84.0.orig.tar.gz 5675d80f30506b28516ae2f3892fd22e 3600 rust-gix-odb_0.84.0-1.debian.tar.xz"
+    "0ce44231c12a4e52936c4e975a08855f 3309 rust-gix-odb_0.86.0-1.dsc cd0f0167760e9e459b899c20d820c41d 67882 rust-gix-odb_0.86.0.orig.tar.gz 6e958fadb937022a1d48ff334c89cdf5 3500 rust-gix-odb_0.86.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-crossbeam-channel-0.5+default-dev, librust-filetime-0.2+default-dev, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, rustc"
+    "dh-cargo, librust-crossbeam-channel-0.5+default-dev, librust-filetime-0.2+default-dev, librust-insta-1+default-dev, librust-maplit-1+default-dev, librust-pretty-assertions-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/gix-odb]"
   ],
   "Version": [
-    "0.84.0-1"
+    "0.86.0-1"
   ]
 }
