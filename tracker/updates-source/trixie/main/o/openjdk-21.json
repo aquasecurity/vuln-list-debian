@@ -6,13 +6,13 @@
     "openjdk-21-jdk-headless, openjdk-21-jre-headless, openjdk-21-jdk, openjdk-21-jre, openjdk-21-demo, openjdk-21-source, openjdk-21-doc, openjdk-21-dbg, openjdk-21-testsupport, openjdk-21-jre-zero"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, procps, wdiff, pkgconf, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), jtreg7 (\u003e= 7.5.2+1~) \u003c!nocheck\u003e, libtestng7-java \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xfonts-base \u003c!nocheck\u003e, libgl1-mesa-dri [!x32] \u003c!nocheck\u003e, xfwm4 \u003c!nocheck\u003e, x11-xkb-utils \u003c!nocheck\u003e, dbus-x11 \u003c!nocheck\u003e, libasmtools-java \u003c!nocheck\u003e, autoconf, automake, ant, ant-optional, g++-14 \u003c!cross\u003e, openjdk-21-jdk-headless:native | openjdk-20-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, systemtap-sdt-dev [!powerpc !ppc64 !ppc64el !sh4 !s390x], libnss3-dev (\u003e= 2:3.17.1), openjdk-21-jdk-headless \u003ccross\u003e"
+    "debhelper (\u003e= 11), m4, lsb-release, zip, unzip, sharutils, gawk, cpio, procps, wdiff, pkgconf, fastjar (\u003e= 2:0.96-0ubuntu2), time, strip-nondeterminism, debugedit (\u003e= 4.16), jtreg8 (\u003e= 8.2.1+1~) \u003c!nocheck\u003e, libtestng7-java \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e, xauth \u003c!nocheck\u003e, xfonts-base \u003c!nocheck\u003e, libgl1-mesa-dri [!x32] \u003c!nocheck\u003e, xfwm4 \u003c!nocheck\u003e, x11-xkb-utils \u003c!nocheck\u003e, dbus-x11 \u003c!nocheck\u003e, libasmtools-java \u003c!nocheck\u003e, autoconf, automake, ant, ant-optional, g++-14 \u003c!cross\u003e, openjdk-21-jdk-headless:native | openjdk-20-jdk-headless:native, libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libxinerama-dev, libkrb5-dev, xsltproc, libpcsclite-dev, libxrandr-dev, libelf-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libffi-dev, libffi-dev:native, zlib1g-dev:native, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, systemtap-sdt-dev [!powerpc !ppc64 !ppc64el !sh4 !s390x], libnss3-dev (\u003e= 2:3.17.1), openjdk-21-jdk-headless \u003ccross\u003e"
   ],
   "Build-Depends-Indep": [
     "graphviz, pandoc"
   ],
   "Checksums-Sha256": [
-    "bf1593ec4a5cc809e445b6a456625328d358058353be86f1f36a08fc2110cedd 5152 openjdk-21_21.0.12.1+1-1~deb13u1.dsc 94695f01012f939e8eeb51f839dd11323a57a6bb70dee8a34c7a7a1cddf00905 615644 openjdk-21_21.0.12.1+1.orig-googletest.tar.xz ec270145b9c8870e6f0263597efefc6e2c90d99dbe41135b3d8fb8b887499aa5 67853652 openjdk-21_21.0.12.1+1.orig.tar.xz b81c5aee89347faf1777b44a487d8ca3e323f5253be6da56b574dbba7cce98a5 232260 openjdk-21_21.0.12.1+1-1~deb13u1.debian.tar.xz"
+    "13b674e28524000e28f06d2a622a90553314e09e6c3ee5b8ef4f14200d96d5cf 5132 openjdk-21_21.0.13+9-1~deb13u2.dsc 3fb8083be7e0062b97d78eaff64e886d2b8d353565c68de518deeb4e23468da2 617052 openjdk-21_21.0.13+9.orig-googletest.tar.xz ac878da21e1a6fa7ab948c11418ec7abdca98617901214dde526cf45dbcf1f01 68094328 openjdk-21_21.0.13+9.orig.tar.xz 2fd912f7592717db7f39a86d63f6fc78d8e570be9ddb4ade7574998452529bd3 245884 openjdk-21_21.0.13+9-1~deb13u2.debian.tar.xz"
   ],
   "Directory": [
     "pool/updates/main/o/openjdk-21"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "bash, build-essential, dbus-x11, jtreg7, libatk-wrapper-java, libatk-wrapper-java-jni, libtestng7-java, lsb-release, xauth, xfwm4, xvfb"
+    "bash, build-essential, dbus-x11, jtreg8, libatk-wrapper-java, libatk-wrapper-java-jni, libtestng7-java, lsb-release, xauth, xfwm4, xvfb"
   ],
   "Uploaders": [
     "Matthias Klose \u003cdoko@ubuntu.com\u003e, Vladimir Petko \u003cvladimir.petko@canonical.com\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/openjdk-team/openjdk.git -b openjdk-21"
   ],
   "Version": [
-    "21.0.12.1+1-1~deb13u1"
+    "21.0.13+9-1~deb13u2"
   ]
 }

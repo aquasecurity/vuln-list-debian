@@ -9,16 +9,16 @@
     "debhelper-compat (= 10), dh-python, openstack-pkg-tools, python3-all, python3-pbr, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-eventlet, python3-keystoneauth1, python3-openstacksdk, python3-os-ken, python3-oslo.config, python3-oslo.log, python3-oslo.messaging"
+    "python3-eventlet, python3-keystoneauth1, python3-openstacksdk, python3-os-ken, python3-oslo.config, python3-oslo.log, python3-oslo.messaging, python3-stestr, python3-testtools"
   ],
   "Checksums-Sha256": [
-    "fa9ca3c0bcfbf0a7963d952461625d735e686d8112359e91a3da925f4edec2be 2066 neutron-ipv6-bgp-injector_0.0.1.dsc a66da99d90dfc9074de78e7a8a87bb947ac88c24589b16bc1752222aeea366f9 13592 neutron-ipv6-bgp-injector_0.0.1.tar.xz"
+    "b385c74aa2e4adbb473d967df3b4c038db40449a792f97856ede6609e6fd9440 2154 neutron-ipv6-bgp-injector_0.0.5.dsc 23a9fd9cf63cbf027471d5ae454cd36631249e1141b6550a2384aaf0355bccf5 26336 neutron-ipv6-bgp-injector_0.0.5.tar.xz"
   ],
   "Directory": [
     "pool/main/n/neutron-ipv6-bgp-injector"
   ],
   "Files": [
-    "43484dd3af4e5e3586aff724e738b6fb 2066 neutron-ipv6-bgp-injector_0.0.1.dsc 8a2f1b7ceeab745f2efcd9ef2675d983 13592 neutron-ipv6-bgp-injector_0.0.1.tar.xz"
+    "0bf1920a8e1673dc36f2689ca244f7c0 2154 neutron-ipv6-bgp-injector_0.0.5.dsc ecc105f464ef210da3f4d721d94d4775 26336 neutron-ipv6-bgp-injector_0.0.5.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -44,8 +44,14 @@
   "Standards-Version": [
     "4.7.2"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/openstack-team/services/neutron-ipv6-bgp-injector"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/openstack-team/services/neutron-ipv6-bgp-injector.git"
   ],
   "Version": [
-    "0.0.1"
+    "0.0.5"
   ]
 }
