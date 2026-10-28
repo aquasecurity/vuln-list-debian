@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "duckdb, libduckdb1.5, libduckdb-dev"
+    "duckdb, libduckdb2.0, libduckdb-dev"
   ],
   "Build-Depends": [
-    "architecture-is-64-bit, architecture-is-little-endian, debhelper-compat (= 14), cmake, ninja-build, pkgconf, libbrotli-dev, libicu-dev, liblz4-dev, libmbedtls-dev, libsnappy-dev, libyyjson-dev, libzstd-dev, libxxhash-dev"
+    "architecture-is-64-bit, architecture-is-little-endian, debhelper-compat (= 14), cmake, ninja-build, pkgconf, python3, libbrotli-dev, libcurl4-openssl-dev, liblz4-dev, libmariadb-dev, libmbedtls-dev, libpq-dev, libsnappy-dev, libssl-dev, libyyjson-dev, libzstd-dev, libxxhash-dev, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "d0598bb995822e2df863348fb4e8221ba4204ef8fe06a47e1590bb6095310366 2317 duckdb_1.5.5-3.dsc 8f89af1879bdce06252d9d9186ddc05b245dd15aec6bcd4762159bd6cfb9558a 101171463 duckdb_1.5.5.orig.tar.gz dcaf6ae23e6ae369c8f3ad4e23e6361c4948c19b8b50f3d533f7ad32a441a671 15508 duckdb_1.5.5-3.debian.tar.xz"
+    "011688b8cae4ff494000a9705215027bb17e3486a281939a5013bb838f3a4454 2432 duckdb_2.0.0+dfsg2-1.dsc 75f34bca21ebc379ad6b2d3c43ef3007d6bfdaeb18bcb67fa71b5a89c582920e 24566974 duckdb_2.0.0+dfsg2.orig.tar.gz 08d056c8b0e2b56938e55bb1e5cdb0e2878ae58f5a63b10c71626e1aa318c433 21328 duckdb_2.0.0+dfsg2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/duckdb"
   ],
   "Files": [
-    "903d1dc60fc2e4e9f994331137dca801 2317 duckdb_1.5.5-3.dsc 207f1790c831ddea8f86ea4b66b59362 101171463 duckdb_1.5.5.orig.tar.gz 0d57efb201f8889cd84309483d38a815 15508 duckdb_1.5.5-3.debian.tar.xz"
+    "515f07c33c673423e8997c72131fc989 2432 duckdb_2.0.0+dfsg2-1.dsc 7b9d4946910f8ade0e4f7a5d235e6ae7 24566974 duckdb_2.0.0+dfsg2.orig.tar.gz f59879f2becfb5cf9e1c15f010be7800 21328 duckdb_2.0.0+dfsg2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "duckdb"
   ],
   "Package-List": [
-    "duckdb deb database optional arch=any libduckdb-dev deb libdevel optional arch=any libduckdb1.5 deb libs optional arch=any"
+    "duckdb deb database optional arch=any libduckdb-dev deb libdevel optional arch=any libduckdb2.0 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "cmake, gcc, libc6-dev"
+    "cmake, curl, gcc, libc6-dev"
   ],
   "Uploaders": [
     "Dominique Belhachemi \u003cdomibel@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/science-team/duckdb.git"
   ],
   "Version": [
-    "1.5.5-3"
+    "2.0.0+dfsg2-1"
   ]
 }

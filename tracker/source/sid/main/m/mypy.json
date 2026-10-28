@@ -6,16 +6,16 @@
     "mypy, mypy-doc, python3-mypy"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, dh-python (\u003e= 6.20251221), python3-setuptools (\u003e= 77.0.3), pybuild-plugin-pyproject, flake8 \u003c!nocheck\u003e, help2man, python3-all, python3-ast-serialize, python3-librt, python3-lxml, python3-attr \u003c!nocheck\u003e, python3-pathspec (\u003e= 1), python3-pytest (\u003e= 8.1.0) \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, furo \u003c!nodoc\u003e, python3-typeshed, python3-psutil, python3-mypy-extensions (\u003e= 1.0.0), python3-typing-extensions (\u003e= 4.16.0), python3-virtualenv \u003c!nocheck\u003e, python3-all-dev:native, libpython3-all-dev, python3-tomli \u003c!nocheck\u003e, python3-all-venv \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, cython-doc \u003c!nodoc\u003e, python-six-doc \u003c!nodoc\u003e, python-setuptools-doc \u003c!nodoc\u003e, python-attr-doc \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-sphinx-inline-tabs \u003c!nodoc\u003e, python3-orjson [!i386 !alpha !hppa !m68k !sh4 !x32] \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, dh-python (\u003e= 6.20251221), python3-setuptools (\u003e= 77.0.3), pybuild-plugin-pyproject, flake8 \u003c!nocheck\u003e, help2man, python3-all, python3-ast-serialize (\u003e= 0.13.0), python3-librt, python3-lxml, python3-attr \u003c!nocheck\u003e, python3-pathspec (\u003e= 1), python3-pytest (\u003e= 8.1.0) \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, furo \u003c!nodoc\u003e, python3-typeshed, python3-psutil, python3-mypy-extensions (\u003e= 1.0.0), python3-typing-extensions (\u003e= 4.16.0), python3-virtualenv \u003c!nocheck\u003e, python3-all-dev:native, libpython3-all-dev, python3-tomli \u003c!nocheck\u003e, python3-all-venv \u003c!nocheck\u003e, python3-doc \u003c!nodoc\u003e, cython-doc \u003c!nodoc\u003e, python-six-doc \u003c!nodoc\u003e, python-setuptools-doc \u003c!nodoc\u003e, python-attr-doc \u003c!nodoc\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-sphinx-inline-tabs \u003c!nodoc\u003e, python3-orjson [!i386 !alpha !hppa !m68k !sh4 !x32] \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ecf8c908cb4c150fc981e550b81f2f93b79e992d04cbaa6792d6dc4028252ff8 2975 mypy_2.4.0-3.dsc 77bdaebd452f43fcfc4cc3ba94352a3ea537cd01e3f2d0879f48673d2ec00d6e 4064425 mypy_2.4.0.orig.tar.gz 16544aba8c6563e0fad77753e3b1f7477b5e1f81daf44e64066f67679ea5ea62 24492 mypy_2.4.0-3.debian.tar.xz"
+    "bb0e5c9febe9c806d2004ec2d7b30d52d42834d2181125098caf00faf933d573 2978 mypy_2.4.0-4.dsc 77bdaebd452f43fcfc4cc3ba94352a3ea537cd01e3f2d0879f48673d2ec00d6e 4064425 mypy_2.4.0.orig.tar.gz 4aab16b12e37dd0c08eb1c75733d2516767d26ef38eda4a956c50c8ac004aede 24844 mypy_2.4.0-4.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mypy"
   ],
   "Files": [
-    "db46d436ba99dc5c02e6d3b51a9a48e2 2975 mypy_2.4.0-3.dsc ec1d664d1e3304484e63381a64136227 4064425 mypy_2.4.0.orig.tar.gz b4a9dc6ac4166832d24cb335923e4ca9 24492 mypy_2.4.0-3.debian.tar.xz"
+    "6f9c3848fe7f9839f7c1753a1956a28b 2978 mypy_2.4.0-4.dsc ec1d664d1e3304484e63381a64136227 4064425 mypy_2.4.0.orig.tar.gz 543c2a8b6dc858cbc4ac9d0cc61eae3d 24844 mypy_2.4.0-4.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "mypy"
   ],
   "Package-List": [
-    "mypy deb utils optional arch=all mypy-doc deb doc optional arch=all profile=!nodoc python3-mypy deb python optional arch=any"
+    "mypy deb utils optional arch=all mypy-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-mypy deb python optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Michael R. Crusoe \u003ccrusoe@debian.org\u003e,"
+    "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/mypy"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/python-team/packages/mypy.git"
   ],
   "Version": [
-    "2.4.0-3"
+    "2.4.0-4"
   ]
 }

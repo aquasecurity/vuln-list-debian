@@ -3,19 +3,19 @@
     "amd64 arm64 armhf riscv64"
   ],
   "Binary": [
-    "dart-sdk"
+    "dart-sdk, dart-kernel-compiler"
   ],
   "Build-Depends": [
     "debhelper-compat (= 13), generate-ninja, ninja-build, git, dart-sdk \u003c!pkg.dart-sdk.stage0\u003e, clang-22, lld-22, llvm-22, libclang-rt-22-dev, zlib1g-dev, libdouble-conversion-dev, python3:any"
   ],
   "Checksums-Sha256": [
-    "3dde2a70762fa0d40d0d6f448b948cf0aa7ee8c68316643c1ea34032c143ebb8 2139 dart-sdk_3.13.4+dfsg1-6.dsc 0787fbd6cb4b8fa419109fadf73a69f0622457b3f32e8dd8c776220b39d23a18 169682996 dart-sdk_3.13.4+dfsg1.orig.tar.xz 8a3ecfa552a633a4da43827fe0a6daa5e6304209192c7d77cb110ff0dc65d697 34096 dart-sdk_3.13.4+dfsg1-6.debian.tar.xz"
+    "67cd28945f2eb9dccdb0a3ef2b1ccdffdd282c9d5f6a24ec57e0cd7d034b9075 2278 dart-sdk_3.13.4+dfsg1-7.dsc 0787fbd6cb4b8fa419109fadf73a69f0622457b3f32e8dd8c776220b39d23a18 169682996 dart-sdk_3.13.4+dfsg1.orig.tar.xz afb81a809d4e70821e099c97375a450dd9debd4f11d980b785d8aedf2b59c049 34708 dart-sdk_3.13.4+dfsg1-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/d/dart-sdk"
   ],
   "Files": [
-    "636dc0cfc432fc1916b2a51dbc9f3f20 2139 dart-sdk_3.13.4+dfsg1-6.dsc 1d29154f54706694b53aab53ba8b35e6 169682996 dart-sdk_3.13.4+dfsg1.orig.tar.xz 6557b625f333707668094bcf8b0c14b4 34096 dart-sdk_3.13.4+dfsg1-6.debian.tar.xz"
+    "34d2cad658257b08fcb80f549dd4fd65 2278 dart-sdk_3.13.4+dfsg1-7.dsc 1d29154f54706694b53aab53ba8b35e6 169682996 dart-sdk_3.13.4+dfsg1.orig.tar.xz c54069fc1bd063371e673095b88d62df 34708 dart-sdk_3.13.4+dfsg1-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "dart-sdk"
   ],
   "Package-List": [
-    "dart-sdk deb devel optional arch=amd64,arm64,armhf,riscv64"
+    "dart-kernel-compiler deb devel optional arch=amd64,arm64,armhf,riscv64 dart-sdk deb devel optional arch=amd64,arm64,armhf,riscv64"
   ],
   "Priority": [
     "optional"
@@ -44,13 +44,16 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Uploaders": [
+    "Emfox Zhou \u003cemfox@debian.org\u003e"
+  ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/mendezr/dart-sdk"
+    "https://salsa.debian.org/dart-team/dart-sdk"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/mendezr/dart-sdk.git"
+    "https://salsa.debian.org/dart-team/dart-sdk.git"
   ],
   "Version": [
-    "3.13.4+dfsg1-6"
+    "3.13.4+dfsg1-7"
   ]
 }

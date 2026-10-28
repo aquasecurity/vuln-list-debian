@@ -6,16 +6,16 @@
     "libmailutils9t64, libmu-dbm9t64, libmailutils-dev, mailutils, mailutils-mda, mailutils-common, mailutils-imap4d, mailutils-pop3d, mailutils-comsatd, mailutils-guile, mailutils-mh, python3-mailutils, mailutils-doc"
   ],
   "Build-Depends": [
-    "dpkg-dev (\u003e= 1.22.5), bison, debhelper-compat (= 13), dh-python, libmariadb-dev, dejagnu \u003c!nocheck\u003e, flex, gawk, gettext, guile-3.0-dev \u003c!noguile\u003e, help2man, libcrypt-dev, libfribidi-dev, libgnutls28-dev, libgsasl-dev, libkrb5-dev, libgdbm-dev, libkyotocabinet-dev, libldap2-dev, liblocale-gettext-perl, libltdl-dev, libpam0g-dev, libpq-dev, libreadline-dev, libunistring-dev, libwrap0-dev, python3-dev, texinfo, zlib1g-dev"
+    "dpkg-dev (\u003e= 1.22.5), bison, debhelper-compat (= 14), dh-python, libmariadb-dev, dejagnu \u003c!nocheck\u003e, flex, gawk, gettext, guile-3.0-dev \u003c!noguile\u003e, help2man, libcrypt-dev, libfribidi-dev, libgnutls28-dev, libgsasl-dev, libkrb5-dev, libgdbm-dev, libkyotocabinet-dev, libldap2-dev, liblocale-gettext-perl, libltdl-dev, libpam0g-dev, libpq-dev, libreadline-dev, libunistring-dev, libwrap0-dev, python3-dev, texinfo, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "fb86464ab927955aba4ed930e0f0f8a5d0b3780811617c01e78b04d12721d9c9 3257 mailutils_3.21-1.dsc e47c1edc699b8d6675fdbc77db3a84ae837f18e1f2094fe29d48bb58a97ef5e9 3381076 mailutils_3.21.orig.tar.xz 83a20fec1e546d451894995743290c72c5c584a70e7c2ef8ec24d2de5cfe1713 833 mailutils_3.21.orig.tar.xz.asc f8fdea1836a38c57c07afdc0dcc099a0caa08c6084e30e3b26407550566e1734 49060 mailutils_3.21-1.debian.tar.xz"
+    "bb98d586addabb8faf899fc8e3d0295a46027813b38aea352e5b2c7bbc7b2ef0 3325 mailutils_3.21-2.dsc e47c1edc699b8d6675fdbc77db3a84ae837f18e1f2094fe29d48bb58a97ef5e9 3381076 mailutils_3.21.orig.tar.xz 83a20fec1e546d451894995743290c72c5c584a70e7c2ef8ec24d2de5cfe1713 833 mailutils_3.21.orig.tar.xz.asc f073478ad19d2455f7a440f2c0adde979b9936dc66186baac4cf41671f1f1889 50496 mailutils_3.21-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/mailutils"
   ],
   "Files": [
-    "6c96d357c6ee4df99dda4eec5bb50d38 3257 mailutils_3.21-1.dsc e063532187102c1a2a2320de12860e0d 3381076 mailutils_3.21.orig.tar.xz 306e38601b64bdafcbc41ad5647d3af1 833 mailutils_3.21.orig.tar.xz.asc e1014fe3627fe7a3af9631abbeccc971 49060 mailutils_3.21-1.debian.tar.xz"
+    "656505c2cd2333006d8ab9205ec92979 3325 mailutils_3.21-2.dsc e063532187102c1a2a2320de12860e0d 3381076 mailutils_3.21.orig.tar.xz 306e38601b64bdafcbc41ad5647d3af1 833 mailutils_3.21.orig.tar.xz.asc a33cd3427d655fc90ac526b5c1208b3d 50496 mailutils_3.21-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "mail"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential, python3"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/mailutils"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/mailutils.git"
   ],
   "Version": [
-    "1:3.21-1"
+    "1:3.21-2"
   ]
 }
