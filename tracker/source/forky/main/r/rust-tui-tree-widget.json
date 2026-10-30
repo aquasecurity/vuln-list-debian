@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.86) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ratatui-core-0.1-dev \u003c!nocheck\u003e, librust-ratatui-widgets-0.3+default-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.86) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-ratatui-core-0.1-dev \u003c!nocheck\u003e, librust-ratatui-widgets-0.3-dev \u003c!nocheck\u003e, librust-unicode-width-0.2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7ace86655744b6a12195a54b931f0c133750d65174f9338eabea449a54019c1e 2544 rust-tui-tree-widget_0.24.0-4.dsc deca119555009eee2e0cfb9c020f39f632444dc4579918d5fc009d51d75dff92 24749 rust-tui-tree-widget_0.24.0.orig.tar.gz 9e9f252882344038330e2c2356cb1ffdb00924af5c7cbbd616c7c70dacff3d3e 2872 rust-tui-tree-widget_0.24.0-4.debian.tar.xz"
+    "a3191d98bacc67f86582311bfd7814939529fb97de630bf3082bd6f7c5194399 2508 rust-tui-tree-widget_0.24.1-1.dsc 246c1142baa1e7a42b94f0fb2b60d838fc884c16281e330bf8624da65ed8f89a 20430 rust-tui-tree-widget_0.24.1.orig.tar.gz a7864086dcce094fb52adebbb76712d1c1371db0772c9c9d97cc98002eb94130 2976 rust-tui-tree-widget_0.24.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-tui-tree-widget"
   ],
   "Files": [
-    "4b35052b251f944c2e59f7f801acf8d4 2544 rust-tui-tree-widget_0.24.0-4.dsc 1c85735f9c23f6511da69b6ec3b4e561 24749 rust-tui-tree-widget_0.24.0.orig.tar.gz 2c372c0fe6e2ee707d63639942c17cc3 2872 rust-tui-tree-widget_0.24.0-4.debian.tar.xz"
+    "c192aa3ecabb0b534d7c5268836f770d 2508 rust-tui-tree-widget_0.24.1-1.dsc b1a99c19a8ebdb19c2bfe77d77358e96 20430 rust-tui-tree-widget_0.24.1.orig.tar.gz 7e1e503e897b1e278aae07c2e37db157 2976 rust-tui-tree-widget_0.24.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+default-dev, librust-ratatui-0.30+default-dev, rustc"
+    "dh-cargo, librust-criterion-0.5+default-dev, librust-ratatui-0.30+crossterm-dev, rustc"
   ],
   "Uploaders": [
     "Christopher Obbard \u003cobbardc@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/tui-tree-widget]"
   ],
   "Version": [
-    "0.24.0-4"
+    "0.24.1-1"
   ]
 }

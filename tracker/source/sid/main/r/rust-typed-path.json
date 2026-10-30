@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "librust-typed-path-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.65.0) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "cc2ebcb76d30e7c133c84d443c8d71716a8143e1c29add795b495091568afb29 2098 rust-typed-path_0.12.3+ds-3.dsc c750071f9fcc591324aa2cc19ca929d320ea37ebcedcc3d770595832b4968eb5 64700 rust-typed-path_0.12.3+ds.orig.tar.xz 3cf1fb0a3726aec01984453fdc60da621a83fb92cb6ab06ce95c1c892165e636 3544 rust-typed-path_0.12.3+ds-3.debian.tar.xz"
+    "b68e45100e7fcf93f7d9f516226207fe99615b4c956aadb8cc7459510b5d8540 1682 rust-typed-path_0.13.0-1.dsc 9ce898823d8cd0f028662d2f349694b1af0a5cc9be83f1d213a00d3147445e1e 122136 rust-typed-path_0.13.0.orig.tar.gz 549363ae5f941769d60a596f9a6ffc4626b392dc5cd2b3c21aa4d8112df6f33d 3176 rust-typed-path_0.13.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-typed-path"
   ],
   "Files": [
-    "083fa25dc82ccab19ac3f9f0c8b39181 2098 rust-typed-path_0.12.3+ds-3.dsc faa1247ebb2e80619681c413d5f61224 64700 rust-typed-path_0.12.3+ds.orig.tar.xz c858a052fbe3e3c05f62023e2f36a18e 3544 rust-typed-path_0.12.3+ds-3.debian.tar.xz"
+    "4ab65fcc5809b7a5f56487b0edf0f712 1682 rust-typed-path_0.13.0-1.dsc 47016e6b6871963a41c6f24dd58fd975 122136 rust-typed-path_0.13.0.orig.tar.gz 019aa53b7fd6fe9577e4ebdfd80b69e3 3176 rust-typed-path_0.13.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +27,13 @@
     "https://github.com/chipsenkbeil/typed-path"
   ],
   "Maintainer": [
-    "Jonas Smedegaard \u003cdr@jones.dk\u003e"
+    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
   ],
   "Package": [
     "rust-typed-path"
   ],
   "Package-List": [
-    "librust-typed-path-dev deb rust optional arch=all"
+    "librust-typed-path-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,15 +48,18 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-typed-path-0.12+default-dev, librust-typed-path-0.12+std-dev"
+    "dh-cargo, librust-serde-json-1+default-dev, rustc"
+  ],
+  "Uploaders": [
+    "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/debian/rust-typed-path"
+    "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/typed-path"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/debian/rust-typed-path.git"
+    "https://salsa.debian.org/rust-team/debcargo-conf.git [src/typed-path]"
   ],
   "Version": [
-    "0.12.3+ds-3"
+    "0.13.0-1"
   ]
 }

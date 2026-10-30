@@ -6,28 +6,22 @@
     "donkey"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-package-notes, dh-sequence-single-binary, dpkg-build-api (= 1), libmd-dev | libssl-dev, python3 \u003c!nocheck\u003e, python3-ddt \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-single-binary, dpkg-build-api (= 1), cargo, librust-anyhow-dev, librust-bitvec-dev, librust-bytes-dev, librust-camino-dev, librust-chrono-dev, librust-clap-derive-dev, librust-clap-dev, librust-datatest-stable-dev, librust-digest-dev, librust-feature-check-dev, librust-glob-dev, librust-itertools-dev, librust-log-dev, librust-md-5-dev, librust-nix-dev, librust-oneshot-dev, librust-roundlet-dev, librust-rustyline-dev, librust-serde-derive-dev, librust-serde-dev, librust-simple-logger-dev, librust-termion-dev, librust-tokio-dev, librust-toml-edit-dev"
   ],
   "Checksums-Sha256": [
-    "98d18c6857f481b643fde05b59ca62e5ea64db735a416abbf1f292f85d4431f0 2553 donkey_1.2.0-11.dsc c72ba554743eb228a37d0e6d0f49256a3a989f20215fbd2c670724c60ec55603 46988 donkey_1.2.0.orig.tar.xz 92c1055897afe47ba89e3f5ef5fffdc0059a23422a58aeef64a30cbbf469dfc9 833 donkey_1.2.0.orig.tar.xz.asc 59239129e4181f82340240c670b79395d53503b114e68fdfc5a37ec2da95796f 12636 donkey_1.2.0-11.debian.tar.xz"
+    "eb5361a7c08bba1539b46a11b315146aa76ac0018d89152858086ff7972b5fc3 2821 donkey_2.0.0-1.dsc 7851f8693ec45f50673c9a17aaf18f916d4fcf8a27b39ccf8a8ac3a07050004c 72612 donkey_2.0.0.orig.tar.xz 46b782bac0af09064526fb673b4609a9ffcf6c0d34dbc84f3f85ca7eff31683c 833 donkey_2.0.0.orig.tar.xz.asc 2c069bd4280698df1005fa74bed8b0820d808160c84bb6d3dea45c3e0247c1d9 10292 donkey_2.0.0-1.debian.tar.xz"
   ],
   "Dgit": [
-    "6cd944460a33ab65d449458f95a67c247ab4f3ef debian archive/debian/1.2.0-11 https://git.dgit.debian.org/donkey"
+    "c64a2ef8385eaa466b306ffc0c831248c3578ec6 debian archive/debian/2.0.0-1 https://git.dgit.debian.org/donkey"
   ],
   "Directory": [
     "pool/main/d/donkey"
   ],
   "Files": [
-    "cfba5b021185b5510d73db5282063eec 2553 donkey_1.2.0-11.dsc adf303392b296e09e399847598c454b0 46988 donkey_1.2.0.orig.tar.xz 3063304d10b63675f0edd754dfacd451 833 donkey_1.2.0.orig.tar.xz.asc 634e64d9268f0efa2c9584cc78266a5b 12636 donkey_1.2.0-11.debian.tar.xz"
+    "9100338155e0960a92b21456d7edc896 2821 donkey_2.0.0-1.dsc ee36b5d0218cf416ee70e60b33a174a9 72612 donkey_2.0.0.orig.tar.xz 3caa35dfb9d1d0c013f6b84b9b4c590a 833 donkey_2.0.0.orig.tar.xz.asc cdcb3e793f3016f35cb22451a0713615 10292 donkey_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=f44ab7ecab7d00f854de3c4155f68af754ad22b6 fp=2ee7a7a517fc124cf115c354651eefb02527df13"
-  ],
-  "Git-Tag-Tagger": [
-    "Peter Pentchev \u003croam@debian.org\u003e"
   ],
   "Homepage": [
     "https://devel.ringlet.net/security/donkey/"
@@ -54,15 +48,15 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "feature-check, python3, python3-ddt"
+    "@builddeps@, feature-check"
   ],
   "Vcs-Browser": [
-    "https://gitlab.com/donkey/donkey/tree/debian/master"
+    "https://salsa.debian.org/debian/donkey"
   ],
   "Vcs-Git": [
-    "https://gitlab.com/donkey/donkey.git -b debian/master"
+    "https://salsa.debian.org/debian/donkey.git"
   ],
   "Version": [
-    "1.2.0-11"
+    "2.0.0-1"
   ]
 }
