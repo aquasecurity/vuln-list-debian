@@ -6,16 +6,19 @@
     "python3-fscacher"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-setuptools, python3-all, python3-joblib, python3-platformdirs, python3-pytest, python3-pytest-cov, python3-pytest-mock, python3-pytest-rerunfailures"
+    "debhelper-compat (= 13), git \u003c!nocheck\u003e, git-annex \u003c!nocheck\u003e, pybuild-plugin-pyproject, python3-setuptools, python3-all, python3-joblib, python3-platformdirs, python3-pytest, python3-pytest-cov, python3-pytest-mock, python3-pytest-rerunfailures"
   ],
   "Checksums-Sha256": [
-    "62db24df6ca57e622823c5d141a14a17b3511e5b452b51f31bc19d3eb51d2e85 2069 fscacher_0.4.3-0.3.dsc 4581be4e2ab02bd6b3784981f2726b782d2574f2a5e109d2581e0bf55726e991 35075 fscacher_0.4.3.orig.tar.gz c41decddcc8a991a55bf110428aeb1c3347be6ee38a5710a394e74758a146ca7 4024 fscacher_0.4.3-0.3.debian.tar.xz"
+    "835ac17d43ddec58e0b3c57c11e24dc8356a1f50aaf5ec75a227fdb5bf76c108 2913 fscacher_0.5.0-0.1.dsc 414afda5a98bb4f84a1c8e159d0cee3db254139cd832eec2dd74fa5124e92d14 43793 fscacher_0.5.0.orig.tar.gz 8d392b9656a41e184f1a1802ebc91f4c152f94ac1ad2e16ed027194cf40aef54 5768 fscacher_0.5.0-0.1.debian.tar.xz"
+  ],
+  "Description": [
+    "caching results of operations on heavy file trees fscacher is a Python module which provides a cache and decorator for memoizing functions whose outputs depend upon the contents of a file argument. . If you have a function 'foo()' that takes a file path as its first argument, and if the behavior of 'foo()' is pure in the *contents* of the path and the values of its other arguments, 'fscacher' can help cache that function. It caches the outputs of 'foo()' will be cached for each set of input arguments and for a \"fingerprint\" (timestamps and size) of each 'path'.  If 'foo()' is called twice with the same set of arguments, the result from the first call will be reused for the second, unless the file pointed to by 'path' changes, in which case the function will be run again."
   ],
   "Directory": [
     "pool/main/f/fscacher"
   ],
   "Files": [
-    "aed3e2409d707fb84c7aa46537ae0063 2069 fscacher_0.4.3-0.3.dsc 5b086cd02f3cc9460f790f5e74bfbac0 35075 fscacher_0.4.3.orig.tar.gz 8141d56d2a65a94c03ea16018559b20f 4024 fscacher_0.4.3-0.3.debian.tar.xz"
+    "fc4370f5e1636b031b4dfb9c552c80c6 2913 fscacher_0.5.0-0.1.dsc 9d01ad4e2f301680e4f38e86f0ac8fe7 43793 fscacher_0.5.0.orig.tar.gz 33adba04fc2305504e513795362a08be 5768 fscacher_0.5.0-0.1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +42,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/debian/fscacher.git"
   ],
   "Version": [
-    "0.4.3-0.3"
+    "0.5.0-0.1"
   ]
 }

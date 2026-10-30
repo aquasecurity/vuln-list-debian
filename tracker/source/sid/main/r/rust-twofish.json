@@ -6,19 +6,25 @@
     "librust-twofish-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.4+default-dev (\u003e= 0.4.2-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-cipher-0.5+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "b83fad54d7d2a26e1c3df78de593f72da0f54618ffecbb53103fd14e4fd9d38f 2267 rust-twofish_0.7.1-1.dsc 0bb8b2893592094f96967b0282caeffe8b829213f446c24fe25d3f4f78f5d07e 12058 rust-twofish_0.7.1.orig.tar.gz 85ad5c9ea4ef8c31947e7d259005babe95f238c5416d384574b891c0d8b07bc1 2648 rust-twofish_0.7.1-1.debian.tar.xz"
+    "5c5d09748d014b2518fe4cafff5eacc1011aac7fca9f8327e67d39fe7694bb3d 2364 rust-twofish_0.8.0-1.dsc 0218ef702a91e18ba84dd516edf8df33a9f9fb4431d6ada13e6f9502c3bcb6fc 13008 rust-twofish_0.8.0.orig.tar.gz 88d41839366c9dd3cbfb894c897e204e456a4489cfaa5c796bf2166a297eb19e 2832 rust-twofish_0.8.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-twofish"
   ],
   "Files": [
-    "7b0cb7642f6edc469da0b543355bac0b 2267 rust-twofish_0.7.1-1.dsc 2ef5a5be2d2a4712e046d9936fa76c06 12058 rust-twofish_0.7.1.orig.tar.gz e7c03fe61519ae58c4b3c4aba4dd251d 2648 rust-twofish_0.7.1-1.debian.tar.xz"
+    "3c40862cba9ff8db26f33c7163d4511a 2364 rust-twofish_0.8.0-1.dsc 89bc1f8e02027c109a6a1b3617696912 13008 rust-twofish_0.8.0.orig.tar.gz faeb8bc460e89bf151fb586148b0f0b1 2832 rust-twofish_0.8.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/RustCrypto/block-ciphers"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-cipher-0.4+default-dev, librust-cipher-0.4+dev-dev, librust-hex-literal-0.3+default-dev"
+    "dh-cargo, librust-cipher-0.5+default-dev, librust-cipher-0.5+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/twofish]"
   ],
   "Version": [
-    "0.7.1-1"
+    "0.8.0-1"
   ]
 }
