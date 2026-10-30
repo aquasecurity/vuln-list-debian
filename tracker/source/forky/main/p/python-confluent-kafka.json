@@ -6,19 +6,19 @@
     "python3-confluent-kafka"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-python, librdkafka-dev (\u003e= 2.12.1), pybuild-plugin-pyproject, python3-all-dev, python3-avro, python3-jsonschema, python3-orjson, python3-protobuf, python3-pyrsistent, python3-pytest, python3-pytest-asyncio, python3-pytest-timeout, python3-pytest-xdist, python3-requests, python3-requests-mock, python3-setuptools"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all-dev, python3-setuptools"
+  ],
+  "Build-Depends-Arch": [
+    "librdkafka-dev (\u003e= 2.12.1), python3-avro \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-protobuf \u003c!nocheck\u003e, python3-pyrsistent \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-asyncio \u003c!nocheck\u003e, python3-pytest-timeout \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-requests-mock \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fb32206f8563fcf9197f0b1bd552facd89c1e1e0411a99bf13a36f987dc87fcb 2631 python-confluent-kafka_2.12.2-1.dsc 8317982200d3bc6302a5f724d982b4e8af5b72e85c83c0e973eadd45db1eab42 398624 python-confluent-kafka_2.12.2.orig.tar.xz 9291b1ec25442659ef5d538c4bb3fbbe799975db23b9456e74df53fca4283309 4232 python-confluent-kafka_2.12.2-1.debian.tar.xz"
-  ],
-  "Dgit": [
-    "846df34d5895d82538d0f7a1cc50c4705ca54396 debian archive/debian/2.12.2-1 https://git.dgit.debian.org/python-confluent-kafka"
+    "6b751c889ce5fe29b23618222d430f7e4a7cffb3b8ec50f8d9b7ce5b0b32768b 2676 python-confluent-kafka_2.12.2-2.dsc 8317982200d3bc6302a5f724d982b4e8af5b72e85c83c0e973eadd45db1eab42 398624 python-confluent-kafka_2.12.2.orig.tar.xz 6e398e87cf716a11b11aff42327301f560f8d124f348e2ee77c2a293c24edc54 4508 python-confluent-kafka_2.12.2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-confluent-kafka"
   ],
   "Files": [
-    "e99f7f31b6205f49c4fae1cc79651a9a 2631 python-confluent-kafka_2.12.2-1.dsc 9dbdaa01c029c257f6e5e1ef2a2df65e 398624 python-confluent-kafka_2.12.2.orig.tar.xz ece5342bc283b8aec09c64be4bcbb366 4232 python-confluent-kafka_2.12.2-1.debian.tar.xz"
+    "c27cbffbbbfde4142a33427b26429843 2676 python-confluent-kafka_2.12.2-2.dsc 9dbdaa01c029c257f6e5e1ef2a2df65e 398624 python-confluent-kafka_2.12.2.orig.tar.xz 8d669175b96cf1edd783caf3e80e415f 4508 python-confluent-kafka_2.12.2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Christos Trochalakis \u003cctrochalakis@debian.org\u003e, Nicolas Dandrimont \u003colasd@debian.org\u003e,"
+    "Christos Trochalakis \u003cctrochalakis@debian.org\u003e, Nicolas Dandrimont \u003colasd@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-confluent-kafka"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-confluent-kafka.git"
   ],
   "Version": [
-    "2.12.2-1"
+    "2.12.2-2"
   ]
 }
