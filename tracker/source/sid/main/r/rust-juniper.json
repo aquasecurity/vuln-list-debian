@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.73) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev (\u003e= 0.1.39) \u003c!nocheck\u003e, librust-auto-enums-0.8+default-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.5) \u003c!nocheck\u003e, librust-futures-0.3+alloc-dev (\u003e= 0.3.22) \u003c!nocheck\u003e, librust-indexmap-2+default-dev \u003c!nocheck\u003e, librust-indexmap-2+serde-dev \u003c!nocheck\u003e, librust-juniper-codegen-0.16+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.122) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.122) \u003c!nocheck\u003e, librust-smartstring-1+default-dev \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-arcstr-1-dev (\u003e= 1.1) \u003c!nocheck\u003e, librust-async-trait-0.1+default-dev (\u003e= 0.1.39) \u003c!nocheck\u003e, librust-auto-enums-0.8+default-dev \u003c!nocheck\u003e, librust-compact-str-0.10+default-dev \u003c!nocheck\u003e, librust-derive-more-2+debug-dev \u003c!nocheck\u003e, librust-derive-more-2+default-dev \u003c!nocheck\u003e, librust-derive-more-2+deref-dev \u003c!nocheck\u003e, librust-derive-more-2+display-dev \u003c!nocheck\u003e, librust-derive-more-2+error-dev \u003c!nocheck\u003e, librust-derive-more-2+from-dev \u003c!nocheck\u003e, librust-derive-more-2+into-dev \u003c!nocheck\u003e, librust-derive-more-2+into-iterator-dev \u003c!nocheck\u003e, librust-derive-more-2+try-into-dev \u003c!nocheck\u003e, librust-fnv-1+default-dev (\u003e= 1.0.5) \u003c!nocheck\u003e, librust-futures-0.3+alloc-dev (\u003e= 0.3.22) \u003c!nocheck\u003e, librust-indexmap-2+default-dev \u003c!nocheck\u003e, librust-indexmap-2+serde-dev \u003c!nocheck\u003e, librust-itertools-0.14+default-dev \u003c!nocheck\u003e, librust-juniper-codegen-0.18+default-dev \u003c!nocheck\u003e, librust-ref-cast-1+default-dev \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.122) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.122) \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "1fb93b715f3772d9536cf3e5963340aea7e201666fc3c6acae9e4823edc1e776 3112 rust-juniper_0.16.2-3.dsc 3478f4a8a2a1c7679944f5f4f08c60d6440f9970da481d79c8f8931201424403 197146 rust-juniper_0.16.2.orig.tar.gz 3733979b267d3d02365cf2472d71ec2bc0183be2071320722c3835d82cacca66 6640 rust-juniper_0.16.2-3.debian.tar.xz"
+    "e78557597f6b7b68d968816b97d7ce8d46dbc3ca619ed72abde6c2a824da6d9c 3178 rust-juniper_0.18.0-1.dsc 571c64a26767dad86fe8271719cc43dd503a55607813c9ec3db5134bb2137270 249980 rust-juniper_0.18.0.orig.tar.gz 95984311919a79ec78524dee2e29c9c831993dec4243329272e72b9ef710b863 7316 rust-juniper_0.18.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-juniper"
   ],
   "Files": [
-    "ddfb7977fa8669722b66958fa98b308f 3112 rust-juniper_0.16.2-3.dsc 4c6c36e51ebea0a0dd07f3af4dc53496 197146 rust-juniper_0.16.2.orig.tar.gz 427d062c3b668ca80dd22348b1aebd8b 6640 rust-juniper_0.16.2-3.debian.tar.xz"
+    "0cbdc94b8ca94a129891835a9a470bf4 3178 rust-juniper_0.18.0-1.dsc 08ce76bd362f697ed9efedaabaa41704 249980 rust-juniper_0.18.0.orig.tar.gz acf81ffd6330752fd4606257caaed793 7316 rust-juniper_0.18.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bencher-0.1+default-dev, librust-chrono-0.4+alloc-dev, librust-pretty-assertions-1+default-dev, librust-serde-json-1+default-dev, librust-serial-test-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, rustc"
+    "dh-cargo, librust-arcstr-1+default-dev, librust-arcstr-1+serde-dev, librust-bencher-0.1+default-dev, librust-chrono-0.4+alloc-dev, librust-compact-str-0.10+default-dev, librust-compact-str-0.10+serde-dev, librust-jiff-0.2+tzdb-bundle-always-dev, librust-pretty-assertions-1+default-dev, librust-serde-json-1+default-dev, librust-serial-test-3+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/juniper]"
   ],
   "Version": [
-    "0.16.2-3"
+    "0.18.0-1"
   ]
 }
