@@ -3,25 +3,25 @@
     "all"
   ],
   "Binary": [
-    "scala, scala-library, scala-doc"
+    "scala, scala-library"
   ],
   "Build-Depends": [
-    "default-jdk, ant, ant-contrib, ant-optional, bnd, libjarjar-java, libaether-ant-tasks-java, junit4, libjline2-java, debhelper (\u003e= 11), javahelper, maven-repo-helper, scala, scala-asm, scala-parser-combinators, scala-xml"
+    "debhelper-compat (= 14), dh-sequence-maven-repo-helper, ant, libjline2-java, openjdk-25-jdk-headless, scala (\u003e= 2.12~) \u003c!pkg.scala.stage0\u003e, scala-asm (\u003e= 9.9.0), scala-stage0 \u003cpkg.scala.stage0\u003e"
   ],
   "Checksums-Sha256": [
-    "1dbc131107cd541035f2a0c8b526386b8e1db5d6b93acb34bb9eaf0f87ca9ece 2195 scala_2.11.12-6.dsc b8db9faffd136d376a1885c04b2cced1b25fee5e61295c1c2a66bceaf99e7301 4863496 scala_2.11.12.orig.tar.xz 24b337ec55c3f8e73e9825cd2ef0e5812e31a26208b1b7ace7789328cca249bf 31160 scala_2.11.12-6.debian.tar.xz"
+    "2062810b20ec2910edb4731dadeafa1641ce8f8a3398c6f85d694864a413cc43 2183 scala_2.12.21+ds3-2.dsc e278d016c08cc152e40ba73780eb17ea40d547920bce773c58d7577f3b0e6f09 4944100 scala_2.12.21+ds3.orig.tar.xz 6c7ae00659451903e084a12a55566b44a958d709d945ad6ba7284c065a741f7a 15252 scala_2.12.21+ds3-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/scala"
   ],
   "Files": [
-    "3bb5cba37268ef0c2b8766d85dd68de7 2195 scala_2.11.12-6.dsc d2c7b0e593c9335fa2796c163946becb 4863496 scala_2.11.12.orig.tar.xz c7227e1b4cfe9cef9d1e05f414faacf3 31160 scala_2.11.12-6.debian.tar.xz"
+    "e85b7f9716c48fadbd7321825cf5ddcb 2183 scala_2.12.21+ds3-2.dsc 31be3ea62ef9a43bcd85017eba6225c0 4944100 scala_2.12.21+ds3.orig.tar.xz e327de2996f528ead3b520e931ea43ec 15252 scala_2.12.21+ds3-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.scala-lang.org/"
+    "https://www.scala-lang.org"
   ],
   "Maintainer": [
     "Debian Java Maintainers \u003cpkg-java-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "scala"
   ],
   "Package-List": [
-    "scala deb devel optional arch=all scala-doc deb doc optional arch=all scala-library deb devel optional arch=all"
+    "scala deb devel optional arch=all scala-library deb devel optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,13 @@
     "devel"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
   ],
   "Uploaders": [
-    "Min Huang \u003cmin.huang@alumni.usc.edu\u003e"
+    "Juan Manuel Méndez Rey \u003cjuan.mendezr@proton.me\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/java-team/scala"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/java-team/scala.git"
   ],
   "Version": [
-    "2.11.12-6"
+    "2.12.21+ds3-2"
   ]
 }
