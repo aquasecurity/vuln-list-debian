@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.89) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-num-traits-0.2-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "309940a63d315dd1f9e810d3fcea5e033d32e992df8d5cd95af74d9633a9f092 2494 rust-argminmax_0.6.3-1.dsc 70f13d10a41ac8d2ec79ee34178d61e6f47a29c2edfe7ef1721c7383b0359e65 67236 rust-argminmax_0.6.3.orig.tar.gz cfd2f4b7d60ba98e190b2de890ee80d2ce6b506831ffd049ba45bd7b022884ea 3392 rust-argminmax_0.6.3-1.debian.tar.xz"
+    "4bbe8ddd62de1351fce36b7161a32d675df996a80b00a564f4ddfdd77c4ec4c0 2367 rust-argminmax_0.7.1-1.dsc 088a9c28ca36500c581f9f54b63460492d2b4f71e1e61d176e8fb79565109b01 82525 rust-argminmax_0.7.1.orig.tar.gz 8247de3aaff06de45d5c5d33c3e2483b0d2e011b45754b28bfee92955f41fa5e 7088 rust-argminmax_0.7.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-argminmax"
   ],
   "Files": [
-    "f15214f40cfa044c3dbe9976c76207be 2494 rust-argminmax_0.6.3-1.dsc 3e1415c24aad2701ad1e441076fad35f 67236 rust-argminmax_0.6.3.orig.tar.gz 5e76950e335cb8dedc0cfdae01b41daf 3392 rust-argminmax_0.6.3-1.debian.tar.xz"
+    "8c2fca776b3d6fc94a375a08235fc0c8 2367 rust-argminmax_0.7.1-1.dsc 96d2a1f2ae3c80de6f06d48e564fa698 82525 rust-argminmax_0.7.1.orig.tar.gz 8d51a21123a2fbeafccd6cea369870f0 7088 rust-argminmax_0.7.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-codspeed-criterion-compat-2+default-dev, librust-criterion-0.5+default-dev, librust-half-2+num-traits-dev, librust-half-2+rand-distr-dev, librust-rand-0.9-dev, librust-rstest-0.25-dev, librust-rstest-reuse-0.7-dev, rustc"
+    "dh-cargo, librust-half-2+num-traits-dev, librust-rand-0.10+thread-rng-dev, librust-rstest-dev, librust-rstest-reuse-0.7-dev, rustc"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/argminmax]"
   ],
   "Version": [
-    "0.6.3-1"
+    "0.7.1-1"
   ]
 }
