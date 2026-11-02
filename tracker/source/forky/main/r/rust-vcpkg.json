@@ -6,19 +6,25 @@
     "librust-vcpkg-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), dh-cargo (\u003e= 18), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f932c94e583c91297685bd27c6ff02845260ab0510970715fb8d8cc666edfc05 2163 rust-vcpkg_0.2.8-1.dsc 3fc439f2794e98976c88a2a2dafce96b930fe8010b0a256b3c2199a773933168 11209 rust-vcpkg_0.2.8.orig.tar.gz c44ffb2c01ef2c6f852143871232b143bcba912ed8cf32a22dcebad50ad48ba4 2620 rust-vcpkg_0.2.8-1.debian.tar.xz"
+    "30540778861f815dd5d2367d7d7c685c1686087ecde372aa12687e128a89e692 1635 rust-vcpkg_0.2.15+ds-1.dsc 99f7fe80502400878a5ae610eee9a3d22cfdc6c3fbd793fe6d4b659396c4e1d0 228994 rust-vcpkg_0.2.15+ds.orig.tar.gz 6a31857c08a06e88790b47bb88e0b8f5031da92ea9f37e3d4c8a4bd1606b1cce 3892 rust-vcpkg_0.2.15+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-vcpkg"
   ],
   "Files": [
-    "b5036262cca68d49d3e64bd5a4a50fae 2163 rust-vcpkg_0.2.8-1.dsc aab44b0dae2fc434c7b1f119ffb100b9 11209 rust-vcpkg_0.2.8.orig.tar.gz bf6a9823d66c4f5559ec69caec9b1cd3 2620 rust-vcpkg_0.2.8-1.debian.tar.xz"
+    "038b55ac48aabfdd5ce918a883d3b14e 1635 rust-vcpkg_0.2.15+ds-1.dsc 68d755c04d84c9a1e4fcd73dde78493b 228994 rust-vcpkg_0.2.15+ds.orig.tar.gz 855ad77cb8393bad04308aa291d4f55a 3892 rust-vcpkg_0.2.15+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mcgoo/vcpkg-rs"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-lazy-static-1+default-dev, librust-tempdir-0.3+default-dev"
+    "dh-cargo, librust-lazy-static-1+default-dev, librust-tempfile-3+default-dev, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/vcpkg]"
   ],
   "Version": [
-    "0.2.8-1"
+    "0.2.15+ds-1"
   ]
 }
