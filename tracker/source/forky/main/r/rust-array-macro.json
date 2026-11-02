@@ -9,22 +9,22 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.56) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d487c8bf538266a8aa3078485cba74e8deca1dc92e58700dcf6bc28ed0ef6ef7 2242 rust-array-macro_1.0.5-1.dsc 06e97b4e522f9e55523001238ac59d13a8603af57f69980de5d8de4bbbe8ada6 7610 rust-array-macro_1.0.5.orig.tar.gz b7bedcbb4ea4f3b5bc8c85fb3575ae158747fdf0b01d7c27663d4dcdbbd6a629 2684 rust-array-macro_1.0.5-1.debian.tar.xz"
+    "8cbd8ed77bf2d5287aa3364a8350e9ba8749f3b850861ab3d5861a2555d410e7 2328 rust-array-macro_2.1.8-1.dsc 220a2c618ab466efe41d0eace94dfeff1c35e3aa47891bdb95e1c0fefffd3c99 11876 rust-array-macro_2.1.8.orig.tar.gz 9ebf574ea511c8914930c9ab79518bec5625c33f64da0f658dcfa80b5040ed07 3072 rust-array-macro_2.1.8-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-array-macro"
   ],
   "Files": [
-    "c865eb4d69ad3c6e4b04a7d9edb4b8f4 2242 rust-array-macro_1.0.5-1.dsc 85202835c4412ee843e4b6f1c6415830 7610 rust-array-macro_1.0.5.orig.tar.gz b4b27b694ede211110733237363c8fd2 2684 rust-array-macro_1.0.5-1.debian.tar.xz"
+    "2f84ff48e88c96ea47d8c7b617a9d569 2328 rust-array-macro_2.1.8-1.dsc 0146ff93aa09f435f0de157ad41f2e2a 11876 rust-array-macro_2.1.8.orig.tar.gz 1cf49b825f9374cab01baea8272d8141 3072 rust-array-macro_2.1.8-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://gitlab.com/KonradBorowski/array-macro"
+    "https://codeberg.org/xfix/array-macro"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, rustc"
+    "dh-cargo, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/array-macro]"
   ],
   "Version": [
-    "1.0.5-1"
+    "2.1.8-1"
   ]
 }

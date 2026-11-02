@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.61) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.44) \u003c!nocheck\u003e, librust-syn-2+default-dev (\u003e= 2.0.21) \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev (\u003e= 2.0.21) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.83) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev (\u003e= 1.0.61) \u003c!nocheck\u003e, librust-quote-1+default-dev (\u003e= 1.0.44) \u003c!nocheck\u003e, librust-syn-3+default-dev \u003c!nocheck\u003e, librust-syn-3+extra-traits-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fe50ee682145ea7cb42513f0ce7a5b50c7faf55af31023e3cfcaca636fb8c7b5 1979 rust-zerovec-derive_0.11.3-1.dsc 625dc425cab0dca6dc3c3319506e6593dcb08a9f387ea3b284dbd52a92c40555 22115 rust-zerovec-derive_0.11.3.orig.tar.gz 6e37ebb67c4d1222db6dd468cb4e798bc306d53eb7aa8c5c823fbd6add2a8c29 6780 rust-zerovec-derive_0.11.3-1.debian.tar.xz"
+    "ce00fd6371a1398e34f438044292a6683c355b9cfd96a8d4386e7d996a4e9667 2667 rust-zerovec-derive_0.11.7-1.dsc c3743ddbf47738d929cd1ae2e199d40d0162979dfe31aef8ae646d2bf00bf97a 23232 rust-zerovec-derive_0.11.7.orig.tar.gz 7e51091f68087d20cfa6d67259a8fe66daef8036e12af196511f41da7c364a87 7008 rust-zerovec-derive_0.11.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zerovec-derive"
   ],
   "Files": [
-    "cf86ba9bd16fd7bc502fef61ee4ed952 1979 rust-zerovec-derive_0.11.3-1.dsc c50911ed184900ccff97f3ca16d25e90 22115 rust-zerovec-derive_0.11.3.orig.tar.gz cd0388812b89d520cec6b13a7cc461c5 6780 rust-zerovec-derive_0.11.3-1.debian.tar.xz"
+    "f30f101f6fb3520285f5193025a39d20 2667 rust-zerovec-derive_0.11.7-1.dsc f9203278d23c10a0d37813d5f8364849 23232 rust-zerovec-derive_0.11.7.orig.tar.gz 59791a4a7ff3e5312d56a37c115082a8 7008 rust-zerovec-derive_0.11.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-bincode-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-bincode-1+default-dev, librust-serde-1+derive-dev, librust-serde-json-1+default-dev, librust-zerovec-0.11+alloc-dev, librust-zerovec-0.11+derive-dev, librust-zerovec-0.11+serde-dev, rustc"
   ],
   "Uploaders": [
     "Alexander Kjäll \u003calexander.kjall@gmail.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zerovec-derive]"
   ],
   "Version": [
-    "0.11.3-1"
+    "0.11.7-1"
   ]
 }

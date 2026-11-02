@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "libharfbuzz0b, libharfbuzz-gobject0, gir1.2-harfbuzz-0.0, libharfbuzz-icu0, libharfbuzz-dev, libharfbuzz-bin, libharfbuzz-subset0, libharfbuzz-cairo0, libharfbuzz-doc, libharfbuzz0-udeb"
+    "libharfbuzz0b, libharfbuzz-gobject0, gir1.2-harfbuzz-0.0, libharfbuzz-icu0, libharfbuzz-dev, libharfbuzz-bin, libharfbuzz-subset0, libharfbuzz-cairo0, libharfbuzz-vector0, libharfbuzz-raster0, libharfbuzz-gpu0, libharfbuzz-doc, libharfbuzz0-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-freetype2-2.0-dev, gir1.2-gobject-2.0-dev, meson (\u003e= 0.55), libglib2.0-dev, libcairo2-dev, libchafa-dev, libfreetype-dev, libicu-dev, libgraphite2-dev, gobject-introspection (\u003e= 1.80), gtk-doc-tools, help2man"
+    "debhelper-compat (= 13), dh-sequence-gir, gir1.2-freetype2-2.0-dev, gir1.2-gobject-2.0-dev, meson (\u003e= 0.55), libglib2.0-dev, libcairo2-dev, libchafa-dev, libfreetype-dev, libicu-dev, libgraphite2-dev, gobject-introspection (\u003e= 1.80), gtk-doc-tools, help2man, libpng-dev, zlib1g-dev, libglew-dev, libglfw3-dev"
   ],
   "Checksums-Sha256": [
-    "d6e9e342b811b32697413fb8b9ad795b01227fc5ee7cd42680aad9e4e7877b4a 2573 harfbuzz_12.3.2-2.dsc 6f6db164359a2da5a84ef826615b448b33e6306067ad829d85d5b0bf936f1bb8 19282952 harfbuzz_12.3.2.orig.tar.xz e60831c79be0f1621c559e621d6149a21195731126fc7b8b71c0b7a7369cfeea 19848 harfbuzz_12.3.2-2.debian.tar.xz"
+    "8c274afb7501d45ea84f6ae57a818fe92a51ac5b53119b6956f7c9d4d1c7e417 3093 harfbuzz_14.4.0+ds-1.dsc 3542659ee10c06c59e5de9209ba72d5453300a1c66b5afede2f21bc60ffc0735 19732908 harfbuzz_14.4.0+ds.orig.tar.xz 21328be3109a4744c3b777047b4aa0af688ee77852401e63fdfbab6395cbefc7 22628 harfbuzz_14.4.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/harfbuzz"
   ],
   "Files": [
-    "5f91c12c1852f08daa575cd6b171d908 2573 harfbuzz_12.3.2-2.dsc 10040432f566e50bda84bfba8ad80b8d 19282952 harfbuzz_12.3.2.orig.tar.xz d0f8d6b4973c33145b06fbf1b9780032 19848 harfbuzz_12.3.2-2.debian.tar.xz"
+    "846f5aa8383e40ff3c38b873eb17f048 3093 harfbuzz_14.4.0+ds-1.dsc 3b3d97f861c116be41eb27d5c513f7c7 19732908 harfbuzz_14.4.0+ds.orig.tar.xz ba713dfdc4d89fc5b675bb7b8964c7ac 22628 harfbuzz_14.4.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://harfbuzz.github.io/"
   ],
   "Maintainer": [
-    "أحمد المحمودي (Ahmed El-Mahmoudy) \u003caelmahmoudy@users.sourceforge.net\u003e"
+    "Debian freedesktop.org maintainers \u003cpkg-freedesktop-maintainers@lists.alioth.debian.org\u003e"
   ],
   "Package": [
     "harfbuzz"
   ],
   "Package-List": [
-    "gir1.2-harfbuzz-0.0 deb introspection unknown arch=any libharfbuzz-bin deb utils unknown arch=any libharfbuzz-cairo0 deb libs unknown arch=any libharfbuzz-dev deb libdevel unknown arch=any libharfbuzz-doc deb doc unknown arch=all libharfbuzz-gobject0 deb libs unknown arch=any libharfbuzz-icu0 deb libs unknown arch=any libharfbuzz-subset0 deb libs unknown arch=any libharfbuzz0-udeb udeb debian-installer unknown arch=any libharfbuzz0b deb libs unknown arch=any"
+    "gir1.2-harfbuzz-0.0 deb introspection optional arch=any libharfbuzz-bin deb utils optional arch=any libharfbuzz-cairo0 deb libs optional arch=any libharfbuzz-dev deb libdevel optional arch=any libharfbuzz-doc deb doc optional arch=all libharfbuzz-gobject0 deb libs optional arch=any libharfbuzz-gpu0 deb libs optional arch=any libharfbuzz-icu0 deb libs optional arch=any libharfbuzz-raster0 deb libs optional arch=any libharfbuzz-subset0 deb libs optional arch=any libharfbuzz-vector0 deb libs optional arch=any libharfbuzz0-udeb udeb debian-installer optional arch=any libharfbuzz0b deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,16 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, pkg-config"
+    "build-essential, pkgconf"
   ],
   "Uploaders": [
-    "Emilio Pozuelo Monfort \u003cpochu@debian.org\u003e"
+    "Emilio Pozuelo Monfort \u003cpochu@debian.org\u003e, أحمد المحمودي (Ahmed El-Mahmoudy) \u003caelmahmoudy@users.sourceforge.net\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/freedesktop-team/harfbuzz"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/freedesktop-team/harfbuzz.git"
   ],
   "Version": [
-    "12.3.2-2"
+    "14.4.0+ds-1"
   ]
 }
