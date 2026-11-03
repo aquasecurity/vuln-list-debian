@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any all"
   ],
   "Binary": [
-    "libjline3-java"
+    "libjline3-java, libjline3-jni"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libbuild-helper-maven-plugin-java, libjansi1-java, libjna-java, libjuniversalchardet-java, libmaven-bundle-plugin-java, libmaven-dependency-plugin-java, libmaven-source-plugin-java, maven-debian-helper"
+    "debhelper-compat (= 13), default-jdk-headless, libbuild-helper-maven-plugin-java, libjansi-java, libjna-java, libjsr305-java, junit5, libeasymock-java, libjuniversalchardet-java, libmaven-bundle-plugin-java, libmaven-dependency-plugin-java, libmaven-shade-plugin-java, libmaven-source-plugin-java, libmina-sshd-java, maven-debian-helper"
   ],
   "Checksums-Sha256": [
-    "62004ec2769c4b1cceaf86683a7027d72e5e1653f42499096496def044f69f28 2177 jline3_3.3.1-5.dsc 0e9fc779c7eb0b40fc24140cb567744677a60f91d712b64608355833c36e2376 208572 jline3_3.3.1.orig.tar.xz 909fdebc3a54b30d74859231a38d0632f1c64789b22627ef70165dbfff83c240 5776 jline3_3.3.1-5.debian.tar.xz"
+    "925d78353e68df739df8cbd7970b2ecf0abe5aaf2e442c066b77e0a87c52c6a1 2400 jline3_3.29.0+ds-2.dsc 0a4f99cb3f8277cf37385fe0046abd526ea6816d64012386a510f2c2567603ea 763808 jline3_3.29.0+ds.orig.tar.xz 8c4d1816c7c18b6077654f951c1930e8eac063139d3074f7b7c30e14d32b8531 13972 jline3_3.29.0+ds-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jline3"
   ],
   "Files": [
-    "8ea2578478917aee67998ac55b45f02b 2177 jline3_3.3.1-5.dsc 9f9ee3d9b8c81b35bde9e3eda13f378e 208572 jline3_3.3.1.orig.tar.xz 79c8ff7eced66516599995221e931f88 5776 jline3_3.3.1-5.debian.tar.xz"
+    "b26967eeb93076887c57102ed398ff78 2400 jline3_3.29.0+ds-2.dsc e113aff6ea9db111b23e468455042462 763808 jline3_3.29.0+ds.orig.tar.xz 9769f13daa2cc3b0ceb05d179715d234 13972 jline3_3.29.0+ds-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "jline3"
   ],
   "Package-List": [
-    "libjline3-java deb java optional arch=all"
+    "libjline3-java deb java optional arch=all libjline3-jni deb java optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,10 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Uploaders": [
-    "Saif Abdul Cassim \u003csaif.15@cse.mrt.ac.lk\u003e, Samyak Jain \u003csamyak.jn11@gmail.com\u003e"
+    "Saif Abdul Cassim \u003csaif.15@cse.mrt.ac.lk\u003e, Samyak Jain \u003csamyak.jn11@gmail.com\u003e, Juan Manuel Méndez Rey \u003cjuan.mendezr@proton.me\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/java-team/jline3"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/java-team/jline3.git"
   ],
   "Version": [
-    "3.3.1-5"
+    "3.29.0+ds-2"
   ]
 }
