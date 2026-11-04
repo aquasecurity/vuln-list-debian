@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 loong64 ppc64 s390x armhf riscv64 all"
+    "amd64 arm64 loong64 ppc64el s390x armhf riscv64 all"
   ],
   "Binary": [
     "libbpfcc, libbpfcc-dev, python3-bpfcc, bpfcc-tools, libbpf-tools, bpfcc-introspection, bpfcc-lua"
   ],
   "Build-Depends": [
-    "arping, bison, clang-format, cmake (\u003e= 3.12), debhelper-compat (= 13), dh-python, pkg-kde-tools, ethtool, flex, inetutils-ping | iputils-ping, iperf, libbpf-dev (\u003e= 1:0.4.0~), libclang-dev, libclang-cpp-dev, libedit-dev, libelf-dev, libfl-dev, libzip-dev, linux-libc-dev (\u003e= 5.10~), llvm-dev, libluajit-5.1-dev [!riscv64 !loong64 !ppc64], luajit [!riscv64 !loong64 !ppc64], python3-netaddr, python3-pyroute2, python3-setuptools, zip, python3:any | python3-all:any | python3-dev:any | python3-all-dev:any | dh-sequence-python3, bpftool, clang"
+    "arping, bison, clang-format, cmake (\u003e= 3.12), debhelper-compat (= 13), dh-python, pkg-kde-tools, ethtool, flex, inetutils-ping | iputils-ping, iperf, libbpf-dev (\u003e= 1:0.4.0~), libclang-dev, libclang-cpp-dev, libedit-dev, libelf-dev, libfl-dev, libzip-dev, linux-libc-dev (\u003e= 5.10~), llvm-dev, libluajit-5.1-dev [!riscv64 !loong64 !ppc64 !ppc64el], luajit [!riscv64 !loong64 !ppc64 !ppc64el], python3-netaddr, python3-pyroute2, python3-setuptools, zip, python3:any | python3-all:any | python3-dev:any | python3-all-dev:any | dh-sequence-python3, bpftool, clang"
   ],
   "Checksums-Sha256": [
-    "ee547304afd183a4bb366e5dc002fe3506c5b773d722a0f62e1a93765e7f17c3 2780 bpfcc_0.35.0+ds-1.1.dsc 72d1f41f73350ebb6cd996b1128a2c80206bf0cf1c99e2ab6ab637487e2824fa 4080396 bpfcc_0.35.0+ds.orig.tar.xz 80d3852fd094d395361b9ffcb6936b8a498fdcfaa03770cdb0d3ce195606fde3 23544 bpfcc_0.35.0+ds-1.1.debian.tar.xz"
+    "0d8f2923635b53f692bef38ef80f832aaa3959ce6121600fa299f48c978175d3 3006 bpfcc_0.37.0+ds-9.dsc a9f2d8b8b262a49591cbbdd16f86ac7ea6a40f3eab8c096470e799f78eb77437 4099924 bpfcc_0.37.0+ds.orig.tar.xz 1ee1dd8820eecba5e0b433552e6471280842d697f57f9750cab8c5e03e917d1b 32676 bpfcc_0.37.0+ds-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/b/bpfcc"
   ],
   "Files": [
-    "8f1278c119bbd964fc98fb8808305e43 2780 bpfcc_0.35.0+ds-1.1.dsc c58e3d3817a70532d247f04b3098244b 4080396 bpfcc_0.35.0+ds.orig.tar.xz 7b440f94e4425ffd2f5feb7da1df2594 23544 bpfcc_0.35.0+ds-1.1.debian.tar.xz"
+    "38f77a142cee95a67c95afa0174aac34 3006 bpfcc_0.37.0+ds-9.dsc ca97be63afdfb190e40a4cb16ca08fab 4099924 bpfcc_0.37.0+ds.orig.tar.xz a4ec12152e3d17fc0f60a50c0318d27f 32676 bpfcc_0.37.0+ds-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "bpfcc"
   ],
   "Package-List": [
-    "bpfcc-introspection deb misc optional arch=amd64,arm64,loong64,ppc64,riscv64 bpfcc-lua deb misc optional arch=amd64,arm64,s390x,armhf bpfcc-tools deb misc optional arch=all libbpf-tools deb misc optional arch=amd64,arm64 libbpfcc deb misc optional arch=amd64,arm64,loong64,ppc64,s390x,armhf,riscv64 libbpfcc-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64,s390x,armhf,riscv64 python3-bpfcc deb python optional arch=all"
+    "bpfcc-introspection deb misc optional arch=amd64,arm64,loong64,ppc64el,riscv64 bpfcc-lua deb misc optional arch=amd64,arm64,s390x,armhf bpfcc-tools deb misc optional arch=all libbpf-tools deb misc optional arch=amd64,arm64 libbpfcc deb misc optional arch=amd64,arm64,loong64,ppc64el,s390x,armhf,riscv64 libbpfcc-dev deb libdevel optional arch=amd64,arm64,loong64,ppc64el,s390x,armhf,riscv64 python3-bpfcc deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -40,6 +40,12 @@
   ],
   "Standards-Version": [
     "4.6.2"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "linux-libc-dev"
   ],
   "Uploaders": [
     "Vasudev Kamath \u003cvasudev@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/debian/bpfcc.git"
   ],
   "Version": [
-    "0.35.0+ds-1.1"
+    "0.37.0+ds-9"
   ]
 }
