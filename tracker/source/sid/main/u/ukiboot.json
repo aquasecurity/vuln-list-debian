@@ -6,16 +6,16 @@
     "ukiboot, ukiboot-tools"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, gnu-efi, libssl-dev, meson, pkgconf, systemd-boot-efi, systemd-dev, systemd-ukify"
+    "debhelper-compat (= 13), cmake, gnu-efi, libssl-dev, meson, openssl \u003c!nocheck\u003e, pkgconf, sbsigntool \u003c!nocheck\u003e, systemd-boot-efi, systemd-dev, systemd-ukify"
   ],
   "Checksums-Sha256": [
-    "198473f3fe15050b40e9915ae4e493e9151bcacd112a71cf5ca109831b0a5f29 2250 ukiboot_0.2.1+git20260604.ec869c7-4.dsc 25d07d010d62754d0b5398ebd3975ccc98d9fbca6cf31f25c6959afe4fe1a29e 48954 ukiboot_0.2.1+git20260604.ec869c7.orig.tar.gz 20aa6c55ee2ff1e0b8f2569f4e6849ba137f47d0432ed51774a0e524c0c7024f 6528 ukiboot_0.2.1+git20260604.ec869c7-4.debian.tar.xz"
+    "f803355bd16fd94b3ffd237cae768a50a24fe17255a6fe73631e9d3e198ccb41 2314 ukiboot_0.2.2-1.dsc c5f4967be25e05be70b46da4e5b33854021fd922f6bc2fdf5a18cc0e184c143b 52003 ukiboot_0.2.2.orig.tar.gz fe8ace81d09d085690bc9dc6db217289c32a34020c1cf7096a4477f31e456cd2 6332 ukiboot_0.2.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/u/ukiboot"
   ],
   "Files": [
-    "c718bc29fef1a40430413e73abb35c22 2250 ukiboot_0.2.1+git20260604.ec869c7-4.dsc ea0b435a4b0a37ce7f8e79b0c9219c72 48954 ukiboot_0.2.1+git20260604.ec869c7.orig.tar.gz 0fce2645357eb70a1c32bd8c3808f2e1 6528 ukiboot_0.2.1+git20260604.ec869c7-4.debian.tar.xz"
+    "ba349cf23daf9020e6859aefb51d5d9e 2314 ukiboot_0.2.2-1.dsc 4063febc798b622420bd68e4da64cb21 52003 ukiboot_0.2.2.orig.tar.gz ec037613fff7e6314f91312209c3062b 6332 ukiboot_0.2.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -41,6 +41,12 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "clang, dosfstools, fdisk, gnu-efi, lld, mtools, openssl, ovmf, python3, qemu-efi-aarch64, qemu-system-arm, qemu-system-x86, sbsigntool, util-linux"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/ukiboot"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/ukiboot.git"
   ],
   "Version": [
-    "0.2.1+git20260604.ec869c7-4"
+    "0.2.2-1"
   ]
 }
