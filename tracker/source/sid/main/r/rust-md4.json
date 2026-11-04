@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.10+default-dev (\u003e= 0.10.3) \u003c!nocheck\u003e, librust-digest-0.10+std-dev (\u003e= 0.10.3) \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-digest-0.11+alloc-dev \u003c!nocheck\u003e, librust-digest-0.11+default-dev \u003c!nocheck\u003e, librust-digest-0.11+oid-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0a4d595d3d4f80a82a43c9525ad7663d5ecf9fb53b84839840ef77c6ba9c1774 2344 rust-md4_0.10.2-1.dsc 7da5ac363534dce5fabf69949225e174fbf111a498bf0ff794c8ea1fba9f3dda 9199 rust-md4_0.10.2.orig.tar.gz b95ecfbd18f0c09dc353e6e942e95d337bfc015a531a128c4eece57898fca381 3372 rust-md4_0.10.2-1.debian.tar.xz"
+    "cfa33380ff53d71edaf4479480f3e95ccce3dcf1631ab9a8f4ab239925ebcd54 2375 rust-md4_0.11.0-1.dsc bd76fb0fd6b2e4be62a73f8e0858ca97f81babcb1af322dcaca196f735f17f80 10594 rust-md4_0.11.0.orig.tar.gz 6a69328984f8312cc001ca5efe7a540dfc69c9c6abc572e82f9670aad25a6721 3304 rust-md4_0.11.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-md4"
   ],
   "Files": [
-    "0fdbbfc2486d6e1604c29fe6e5b0a07f 2344 rust-md4_0.10.2-1.dsc 97d703daa8b16c402699aac588b4e2d9 9199 rust-md4_0.10.2.orig.tar.gz cab16875df308bc940820a00143ef59f 3372 rust-md4_0.10.2-1.debian.tar.xz"
+    "c00789b33e46ad688ee9fee393c61c6f 2375 rust-md4_0.11.0-1.dsc 8f992f89d0a245406ad1603a43e1a542 10594 rust-md4_0.11.0.orig.tar.gz 994ca25a9f38f41fff1724731aaf7e93 3304 rust-md4_0.11.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-digest-0.10+default-dev, librust-digest-0.10+dev-dev, librust-hex-literal-1+default-dev, rustc"
+    "dh-cargo, librust-digest-0.11+default-dev, librust-digest-0.11+dev-dev, librust-hex-literal-1+default-dev, rustc"
   ],
   "Uploaders": [
     "何庆 He Qing \u003cheqing@rool.me\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/md4]"
   ],
   "Version": [
-    "0.10.2-1"
+    "0.11.0-1"
   ]
 }
