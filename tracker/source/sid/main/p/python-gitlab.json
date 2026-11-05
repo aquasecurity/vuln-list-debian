@@ -6,19 +6,19 @@
     "python-gitlab-doc, python3-gitlab, gitlab-cli"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), debhelper, help2man, pybuild-plugin-pyproject, python3-sphinxcontrib.autoprogram, dh-sequence-sphinxdoc"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, help2man, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-python3, python3-all, python3-gql, python3-httmock, python3-httpx, python3-myst-parser, python3-pytest, python3-requests, python3-requests-toolbelt, python3-responses, python3-respx, python3-setuptools, python3-sphinx, python3-trio"
+    "python3-anyio \u003c!nocheck\u003e, python3-gql \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-myst-parser \u003c!nodoc\u003e, python3-pytest \u003c!nocheck\u003e, python3-requests, python3-requests-toolbelt, python3-responses \u003c!nocheck\u003e, python3-respx \u003c!nocheck\u003e, python3-sphinx \u003c!nodoc\u003e, python3-sphinxcontrib.autoprogram \u003c!nodoc\u003e, python3-trio \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8628ac2aaeb92f48c891a620acd48326c4a63b5e56d1976c74e6d89e737a22fe 2486 python-gitlab_8.5.0-1.dsc f1dae5e751afe425fbdb58c1d16454ff87cbed57ad7601bcfe34338eaa754dfe 412315 python-gitlab_8.5.0.orig.tar.gz ca65a5b78c513d3521f969015946f4b80c28e673d66f9853b3206e039a533f0a 5280 python-gitlab_8.5.0-1.debian.tar.xz"
+    "a516904c81e8fd935dce997b0af4410a8a22f2387a564a2946e026697d412ef3 2624 python-gitlab_8.6.0-1.dsc 14d4434c99dd485ced3ef89ecdc915c490fd58a7b0951437db52afcfb9834113 424091 python-gitlab_8.6.0.orig.tar.gz cb402ff0d900ceb19ff2d4d6b9d760384549ec20db3b4e3cc21fb1d1f68effd7 6568 python-gitlab_8.6.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-gitlab"
   ],
   "Files": [
-    "8e5dc1769cf293999af35b5dcbb173f5 2486 python-gitlab_8.5.0-1.dsc c57689c65ad4af0b736758f44ea10687 412315 python-gitlab_8.5.0.orig.tar.gz 6cbee33bae5f22f44a111636685a222b 5280 python-gitlab_8.5.0-1.debian.tar.xz"
+    "4aee54f86fcff941242ad87165cad00f 2624 python-gitlab_8.6.0-1.dsc afe89a3e7212180f746bf60c4a0e33ff 424091 python-gitlab_8.6.0.orig.tar.gz f5c9bf07207ad30f9e9470f3dd433894 6568 python-gitlab_8.6.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "python-gitlab"
   ],
   "Package-List": [
-    "gitlab-cli deb utils optional arch=all python-gitlab-doc deb doc optional arch=all python3-gitlab deb python optional arch=all"
+    "gitlab-cli deb utils unknown arch=all python-gitlab-doc deb doc unknown arch=all profile=!nodoc python3-gitlab deb python unknown arch=all"
   ],
   "Priority": [
     "extra"
@@ -45,7 +45,7 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Federico Ceratto \u003cfederico@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/debian/python-pygitlab.git"
   ],
   "Version": [
-    "1:8.5.0-1"
+    "1:8.6.0-1"
   ]
 }
