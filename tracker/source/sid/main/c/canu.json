@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 mips64el ppc64el riscv64 s390x ia64 loong64 ppc64 sparc64 x32"
+    "any"
   ],
   "Binary": [
     "canu"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libboost-dev, libmeryl-dev, libsnappy-dev, libfilesys-df-perl, mhap, debhelper"
+    "debhelper-compat (= 13), architecture-is-64-bit [!x32], libboost-dev, libmeryl-dev, libsnappy-dev, libfilesys-df-perl, mhap, zlib1g-dev, libcurl4-openssl-dev, liblzma-dev, libbz2-dev, debhelper"
   ],
   "Checksums-Sha256": [
-    "45d8de7c34ae0b9b86a7866e9d338395ed894d0abf443dc02cf94ecab15da77e 2131 canu_2.2+dfsg-5.dsc a0e68ddd7234070e9f134374a3442590199f1f3734b1855a46a4147c97680fde 1230624 canu_2.2+dfsg.orig.tar.xz b46328555c6d70b6a8baca86a3f4521893563a55815158b3f4a3e1e0c0e2089a 12360 canu_2.2+dfsg-5.debian.tar.xz"
+    "ef14eec1619c5a02f457d1167df07d5b988e0949db98d4c2bbdce41082ad861c 2148 canu_2.3+dfsg-1.dsc 05d8577aef9da3474a953633c7288f88ad50e7a2016a0bf22a4093b465fcbae2 1940332 canu_2.3+dfsg.orig.tar.xz 332829868410c1ef2a211e1d6f380d9ae4ffa8fddfa87b845a3dfb8c7f1dba53 12932 canu_2.3+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/c/canu"
   ],
   "Files": [
-    "1062d0382e6c9138d0a42bc34ab9929e 2131 canu_2.2+dfsg-5.dsc f9329149a74d54458678b7a1c7c42982 1230624 canu_2.2+dfsg.orig.tar.xz e90979f8e9f152ccffe2316daab69dd8 12360 canu_2.2+dfsg-5.debian.tar.xz"
+    "facc9dccbf02fd57fc66134592516172 2148 canu_2.3+dfsg-1.dsc f3a3e7d74c2eafbc5c8ce6bca9ce3e0d 1940332 canu_2.3+dfsg.orig.tar.xz 1b04090542ac4e34dc8ee9ae6b54949b 12932 canu_2.3+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "canu"
   ],
   "Package-List": [
-    "canu deb science optional arch=amd64,arm64,mips64el,ppc64el,riscv64,s390x,ia64,loong64,ppc64,sparc64,x32"
+    "canu deb science optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
     "curl, procps"
+  ],
+  "Uploaders": [
+    "Charles Plessy \u003cplessy@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/med-team/canu"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/med-team/canu.git"
   ],
   "Version": [
-    "2.2+dfsg-5"
+    "2.3+dfsg-1"
   ]
 }

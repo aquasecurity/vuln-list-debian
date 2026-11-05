@@ -6,19 +6,25 @@
     "librust-parse-datetime-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-chrono-0+alloc-dev \u003c!nocheck\u003e, librust-chrono-0+clock-dev \u003c!nocheck\u003e, librust-chrono-0+std-dev \u003c!nocheck\u003e, librust-regex-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.71.1) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-jiff-0.2+tz-system-dev (\u003e= 0.2.15) \u003c!nocheck\u003e, librust-jiff-0.2+tzdb-bundle-platform-dev (\u003e= 0.2.15) \u003c!nocheck\u003e, librust-jiff-0.2+tzdb-zoneinfo-dev (\u003e= 0.2.15) \u003c!nocheck\u003e, librust-num-traits-0.2+default-dev (\u003e= 0.2.19) \u003c!nocheck\u003e, librust-winnow+default-dev (\u003c\u003c 2) \u003c!nocheck\u003e, librust-winnow+default-dev (\u003e= 0.7.13) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f4ce41d53caef4f1684911ce70718da92c284277e1c5154050177aff1a07e6b5 2336 rust-parse-datetime_0.5.0-1.dsc 3bbf4e25b13841080e018a1e666358adfe5e39b6d353f986ca5091c210b586a1 9954 rust-parse-datetime_0.5.0.orig.tar.gz 9a0d8dfb58b6ca0cf7cb8f2a40aa66e8acc1166ed4b5d14081b848c8fc42e821 2788 rust-parse-datetime_0.5.0-1.debian.tar.xz"
+    "bd1f7a341fcf6cd6566890c501250865d579a41f909124c75a1c7a452eae1c53 2650 rust-parse-datetime_0.17.0-1.dsc cb51967a779ef73b125a243688e53e4bb2474f91cae72734ee5051e857fb2645 70267 rust-parse-datetime_0.17.0.orig.tar.gz cb96e2eefca944fd684318659e64077496f275c8a9bffbf7138e9f4a29bdc03e 3148 rust-parse-datetime_0.17.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-parse-datetime"
   ],
   "Files": [
-    "76ca7b720d6c7975ee23a40393ebd82f 2336 rust-parse-datetime_0.5.0-1.dsc 8e3375ea073b50900c67bdcac63cc2f5 9954 rust-parse-datetime_0.5.0.orig.tar.gz 61fb3cc46478c766f8ed3349ce2e8918 2788 rust-parse-datetime_0.5.0-1.debian.tar.xz"
+    "e49a773b7876485c778c080c9ed4d794 2650 rust-parse-datetime_0.17.0-1.dsc 37d2c8c56be08b3264640d2cf6249449 70267 rust-parse-datetime_0.17.0.orig.tar.gz 3b9458aefc96836dc9a0ba3a4d39d7e3 3148 rust-parse-datetime_0.17.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/uutils/parse_datetime"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, librust-rstest+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/parse-datetime]"
   ],
   "Version": [
-    "0.5.0-1"
+    "0.17.0-1"
   ]
 }

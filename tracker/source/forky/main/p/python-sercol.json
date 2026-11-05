@@ -6,16 +6,16 @@
     "python3-sercol"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-all, python3-pandas \u003c!nocheck\u003e, python3-serializable \u003c!nocheck\u003e, python3-simplejson \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-pandas \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-serializable \u003c!nocheck\u003e, python3-setuptools"
   ],
   "Checksums-Sha256": [
-    "d3fb849151fef8ac25f51d1d6abb32f9b4c3bdf4d9835cb89aa988ea2a74adbc 2183 python-sercol_0.0+git20250731-2.dsc d12c2f05474af2f0f9c67f0fe1244943dfdd94d737f21189a91464a63d5e7f70 10896 python-sercol_0.0+git20250731.orig.tar.xz ca17fe83e9e068d49a8c25395ccd1ece81790d3f0915b959327eb7e4d314aea6 2088 python-sercol_0.0+git20250731-2.debian.tar.xz"
+    "a0c5918a020b3e5b38af95d4c36f05a07c0853e71ef0fc5e75af00d74b4e8e4b 2221 python-sercol_1.0.5-1.dsc ec2240edc80708fe172ed4a8480bf90f01a8e6e8937de29308738d159af5fea1 16267 python-sercol_1.0.5.orig.tar.gz 0528ba67de9a0df4657fc2a54b6988b3b688f56f6824d86b2f9b2b024d28e791 2432 python-sercol_1.0.5-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-sercol"
   ],
   "Files": [
-    "92f515654c76f0a90b4013c8e4ae7748 2183 python-sercol_0.0+git20250731-2.dsc 664be219b41aa52a603d53c20d36a732 10896 python-sercol_0.0+git20250731.orig.tar.xz dfe2fd269bd1a902ec7d689e76f86973 2088 python-sercol_0.0+git20250731-2.debian.tar.xz"
+    "a0fd52cfd90f2b5a4f1514fcf32545a3 2221 python-sercol_1.0.5-1.dsc c200fc1a721b6356c15dad080db5338c 16267 python-sercol_1.0.5.orig.tar.gz 906be269f0f60bcdbb711ece9fff8bfe 2432 python-sercol_1.0.5-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python-sercol"
   ],
   "Package-List": [
-    "python3-sercol deb science optional arch=all"
+    "python3-sercol deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,10 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/med-team/python-sercol.git"
   ],
   "Version": [
-    "0.0+git20250731-2"
+    "1.0.5-1"
   ]
 }
