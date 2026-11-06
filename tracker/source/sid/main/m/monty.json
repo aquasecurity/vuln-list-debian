@@ -6,16 +6,16 @@
     "python3-monty, python-monty-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), pybuild-plugin-pyproject, python3-all, python3-myst-parser, python3-numpy, python3-orjson, python3-pandas, python3-pydantic, python3-pymongo, python3-pytest, python3-ruamel.yaml, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-torch [amd64 arm64 ppc64el riscv64 s390x], python3-tqdm \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc \u003c!nodoc\u003e, pybuild-plugin-pyproject, python3-all, python3-myst-parser \u003c!nodoc\u003e, python3-numpy \u003c!nocheck\u003e, python3-orjson \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-pydantic \u003c!nocheck\u003e, python3-pymongo \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-ruamel.yaml \u003c!nocheck\u003e, python3-setuptools, python3-setuptools-scm, python3-sphinx \u003c!nodoc\u003e, python3-torch [amd64 arm64 ppc64el riscv64 s390x] \u003c!nocheck\u003e, python3-tqdm \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fece727223fb8c88427c505ed3b0808eb94cdfab705c637274b18f3b04a87d84 2529 monty_2026.2.18-3.dsc 3048bc5bf7c3595c9a1d756d01f054318c4ffd8977fe32c39e8e8681e3c5f604 231548 monty_2026.2.18.orig.tar.gz 5608f36addd2db7be68468b124764206899538415aabaa66c4c5c6ac3fc470d5 6876 monty_2026.2.18-3.debian.tar.xz"
+    "1f658fb6a97bee0a08d4a70b6c2db2bd6c39179e4e86013d6348be23277693c8 2781 monty_2026.10.21-1.dsc 5cfc6fad90348255784f7ffa998f8016ed4043cd0e3d88c6f3374d3fb0746ee2 304377 monty_2026.10.21.orig.tar.gz 96ce41f4ac48396af79f15ab50696abca17fe109c2d160eeced6367963093bba 8124 monty_2026.10.21-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/m/monty"
   ],
   "Files": [
-    "f5a089da75a1cffebbc42c9f8f0e548c 2529 monty_2026.2.18-3.dsc 19a65dff4383f75b27d253f212df7431 231548 monty_2026.2.18.orig.tar.gz ba509ac3f83e28d971d35f90a224ba6c 6876 monty_2026.2.18-3.debian.tar.xz"
+    "7127b12753f85321314569b43d6a2972 2781 monty_2026.10.21-1.dsc 12695c1529be1f1d4aba3c52b1497829 304377 monty_2026.10.21.orig.tar.gz 069bf049835cb6d03f7d8e9935f11ef4 8124 monty_2026.10.21-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "monty"
   ],
   "Package-List": [
-    "python-monty-doc deb doc optional arch=all python3-monty deb python optional arch=all"
+    "python-monty-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-monty deb python optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/monty.git"
   ],
   "Version": [
-    "2026.2.18-3"
+    "2026.10.21-1"
   ]
 }

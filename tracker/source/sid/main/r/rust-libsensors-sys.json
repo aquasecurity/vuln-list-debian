@@ -6,19 +6,25 @@
     "librust-libsensors-sys-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libsensors-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, libsensors-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e565eaed717eee96d7fc2016c736f838b2a67568f3bc19a19820fc37b69d2f87 2202 rust-libsensors-sys_0.2.0-1.dsc a1730cc7164b96de1d460c1f87c993430a3dda88ee336f0d2ea9a52097243132 5475 rust-libsensors-sys_0.2.0.orig.tar.gz c6b312e873cea64e92c3860fbe2cb32e036aa7ecde37ef37a06107ec98eae86c 3284 rust-libsensors-sys_0.2.0-1.debian.tar.xz"
+    "e28e08bef91f55ee441ad363886340c0cacc785cded8fe1814586ea5e223b2a9 2290 rust-libsensors-sys_0.2.0-2.dsc a1730cc7164b96de1d460c1f87c993430a3dda88ee336f0d2ea9a52097243132 5475 rust-libsensors-sys_0.2.0.orig.tar.gz c7a856635f90cf6146504ee0a7e0306e9e4eb9e2b41571f62867202a7c9c9513 4824 rust-libsensors-sys_0.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-libsensors-sys"
   ],
   "Files": [
-    "d024973e590d1f527fb038780cf3f708 2202 rust-libsensors-sys_0.2.0-1.dsc 7333fa34c83b4574e8750bc781b99bf9 5475 rust-libsensors-sys_0.2.0.orig.tar.gz b866f6244c6c7b9664707b7272f876a3 3284 rust-libsensors-sys_0.2.0-1.debian.tar.xz"
+    "5ad81eced2b0d48b6fd0bf7e7d34a49a 2290 rust-libsensors-sys_0.2.0-2.dsc 7333fa34c83b4574e8750bc781b99bf9 5475 rust-libsensors-sys_0.2.0.orig.tar.gz d6a841e6647b7d7692b0ae2c0f2d3368 4824 rust-libsensors-sys_0.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://crates.io/crates/libsensors-sys/0.2.0"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Carlos F. Sanz \u003ccarlos@sanz.dev\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/libsensors-sys]"
   ],
   "Version": [
-    "0.2.0-1"
+    "0.2.0-2"
   ]
 }
