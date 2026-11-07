@@ -6,19 +6,25 @@
     "librust-concurrent-queue-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.11-~~) \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.60) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-crossbeam-utils-0.8-dev (\u003e= 0.8.11) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3200d472a807a28f641cc0cc4e62e0c4b5f3cde3cb67873b5b737d9fed8f4977 1812 rust-concurrent-queue_2.5.0-4.dsc 4ca0197aee26d1ae37445ee532fefce43251d24cc7c166799f4d46817f1d3973 22654 rust-concurrent-queue_2.5.0.orig.tar.gz 93662b545561125865c3b187a4e8783d9e547239f25744a3922875329598909c 3748 rust-concurrent-queue_2.5.0-4.debian.tar.xz"
+    "361a003eae86ecd1c0a148ffddd932729c5eaae83e5ee171d023266d0fd94e14 2505 rust-concurrent-queue_2.5.0-5.dsc 4ca0197aee26d1ae37445ee532fefce43251d24cc7c166799f4d46817f1d3973 22654 rust-concurrent-queue_2.5.0.orig.tar.gz 4af230ae7fe75dccc851c52c1efba07d4cfd02fb603d100e499ac7942f6ed858 5628 rust-concurrent-queue_2.5.0-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-concurrent-queue"
   ],
   "Files": [
-    "71b48cca34f012cb6715ad41564c9879 1812 rust-concurrent-queue_2.5.0-4.dsc d1f70680f36b13b74bab20250fb2f26f 22654 rust-concurrent-queue_2.5.0.orig.tar.gz 0b4c32b3888906e679805b7d7d862183 3748 rust-concurrent-queue_2.5.0-4.debian.tar.xz"
+    "e9b778ed96c55943a266bfc217d86dfc 2505 rust-concurrent-queue_2.5.0-5.dsc d1f70680f36b13b74bab20250fb2f26f 22654 rust-concurrent-queue_2.5.0.orig.tar.gz 8b565e6dbcf512fbf8cd87835b29c589 5628 rust-concurrent-queue_2.5.0-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/smol-rs/concurrent-queue"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-criterion-0.5+cargo-bench-support-dev, librust-easy-parallel-3+default-dev, librust-fastrand-2+default-dev"
+    "dh-cargo, librust-criterion-0.5+cargo-bench-support-dev, librust-easy-parallel-3+default-dev, librust-fastrand-2+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -54,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/concurrent-queue]"
   ],
   "Version": [
-    "2.5.0-4"
+    "2.5.0-5"
   ]
 }
