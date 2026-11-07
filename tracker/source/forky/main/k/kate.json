@@ -3,19 +3,19 @@
     "any all"
   ],
   "Binary": [
-    "kate, kate-data, kwrite"
+    "kate, kate-data, kwrite, kate-addons, kate-libs"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-kf6, cmake (\u003e= 3.16~), extra-cmake-modules (\u003e= 6.0.0~), gettext, libkf6config-dev (\u003e= 6.0.0~), libkf6coreaddons-dev (\u003e= 6.0.0~), libkf6crash-dev (\u003e= 6.0.0~), libkf6dbusaddons-dev (\u003e= 6.0.0~), libkf6doctools-dev (\u003e= 6.0.0~), libkf6guiaddons-dev (\u003e= 6.0.0~), libkf6i18n-dev (\u003e= 6.0.0~), libkf6iconthemes-dev (\u003e= 6.0.0~), libkf6newstuff-dev (\u003e= 6.0.0~), libkf6texteditor-dev (\u003e= 6.0.0~), libkf6textwidgets-dev (\u003e= 6.0.0~), libkf6userfeedback-dev (\u003e= 6.0.0~), libkf6wallet-dev (\u003e= 6.0.0~), libkf6windowsystem-dev (\u003e= 6.0.0~), libkf6xmlgui-dev (\u003e= 6.0.0~), pkgconf, qt6-base-dev (\u003e= 6.5.0~), qt6-base-private-dev (\u003e= 6.5.0~), qt6-declarative-dev (\u003e= 6.5.0~), qtkeychain-qt6-dev, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-kf6, dh-sequence-qmldeps, cmake (\u003e= 3.16~), extra-cmake-modules (\u003e= 6.0.0~), gettext, libkf6config-dev (\u003e= 6.0.0~), libkf6coreaddons-dev (\u003e= 6.0.0~), libkf6crash-dev (\u003e= 6.0.0~), libkf6dbusaddons-dev (\u003e= 6.0.0~), libkf6doctools-dev (\u003e= 6.0.0~), libkf6guiaddons-dev (\u003e= 6.0.0~), libkf6i18n-dev (\u003e= 6.0.0~), libkf6iconthemes-dev (\u003e= 6.0.0~), libkf6newstuff-dev (\u003e= 6.0.0~), libkf6texteditor-dev (\u003e= 6.0.0~), libkf6textwidgets-dev (\u003e= 6.0.0~), libkf6userfeedback-dev (\u003e= 6.0.0~), libkf6wallet-dev (\u003e= 6.0.0~), libkf6windowsystem-dev (\u003e= 6.0.0~), libkf6xmlgui-dev (\u003e= 6.0.0~), libsingleapplication-dev, pkgconf, qt6-base-dev (\u003e= 6.5.0~), qt6-base-private-dev (\u003e= 6.5.0~), qt6-declarative-dev (\u003e= 6.5.0~), qtkeychain-qt6-dev, xauth \u003c!nocheck\u003e, xvfb \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "0567de82b765933d20ea2128c9cff28b6806fff4f26ed30c5a9a509763812fdb 3080 kate_26.08.2-1.dsc 6fad08032362300d8de646c6d45f11dac72c9c7c6dfea2261c844a42a17a8652 8719216 kate_26.08.2.orig.tar.xz 5001f7b68c50b81cfb9150ef8b78bfff26ba560555058ca7b3dd1ce9042a03ba 833 kate_26.08.2.orig.tar.xz.asc b3473ca4a5737d401dc068fe29599d5fa5f74a6da05be7488e6c68d29d401457 24648 kate_26.08.2-1.debian.tar.xz"
+    "cf70f6dcb4c3b296ef8006f5b72bb6d9215a51cf858a869a27d3095b022600b2 2948 kate_26.08.2+dfsg-2.dsc c8fa8a0feeff981fc944578b0684550b894a1e310850f77c95b206b600729e38 8973956 kate_26.08.2+dfsg.orig.tar.xz 198f73c0e1ee73ecb63bac0cdbff0ab8133934e3d42ebf1107bba5b23347e5e5 28912 kate_26.08.2+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/k/kate"
   ],
   "Files": [
-    "5d6b2b53bdb1fe9d0b5e0bcf04d021dc 3080 kate_26.08.2-1.dsc 1797a967288087e09dc104c14b68c579 8719216 kate_26.08.2.orig.tar.xz cb055b5ab8c92632f56d611fa9a1926a 833 kate_26.08.2.orig.tar.xz.asc 4582e17d2832b643085db5a59ed415ce 24648 kate_26.08.2-1.debian.tar.xz"
+    "9740adad5480c825175f5e025edcfa14 2948 kate_26.08.2+dfsg-2.dsc 477419e75d1bd3ba6b4e4af03a907237 8973956 kate_26.08.2+dfsg.orig.tar.xz 694f8ea7f8cab4869232698c36ce8988 28912 kate_26.08.2+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "kate"
   ],
   "Package-List": [
-    "kate deb editors optional arch=any kate-data deb kde optional arch=all kwrite deb editors optional arch=any"
+    "kate deb editors optional arch=any kate-addons deb kde optional arch=any kate-data deb kde optional arch=all kate-libs deb kde optional arch=any kwrite deb editors optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/qt-kde-team/kde/kate.git"
   ],
   "Version": [
-    "4:26.08.2-1"
+    "4:26.08.2+dfsg-2"
   ]
 }
