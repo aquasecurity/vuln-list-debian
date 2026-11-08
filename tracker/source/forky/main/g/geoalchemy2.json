@@ -6,22 +6,31 @@
     "python3-geoalchemy2, python-geoalchemy2-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, dh-sequence-sphinxdoc, architecture-is-64-bit, architecture-is-little-endian, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc, architecture-is-64-bit, architecture-is-little-endian, pybuild-plugin-pyproject, python3-all, python3-setuptools, python3-setuptools-scm"
   ],
   "Build-Depends-Indep": [
-    "mariadb-server, postgis, postgresql-postgis, postgresql-postgis-scripts, python3-alembic \u003c!nocheck\u003e, python3-psycopg2, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-rasterio \u003c!nocheck\u003e, python3-shapely, python3-sphinx-gallery, python3-sqlalchemy (\u003e= 1.4)"
+    "mariadb-server, postgis, postgresql-postgis, postgresql-postgis-scripts, python3-alembic \u003c!nocheck\u003e, python3-mysqldb \u003c!nocheck\u003e, python3-psycopg2, python3-pytest \u003c!nocheck\u003e, python3-pytest-benchmark \u003c!nocheck\u003e, python3-rasterio \u003c!nocheck\u003e, python3-shapely, python3-sphinx-gallery, python3-sqlalchemy (\u003e= 1.4), python3-wkb-wkt-converter \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "d8e675262225c14d77bd1420e66836187142278c39b73881c72b9e4bfc5c467b 2848 geoalchemy2_0.18.4-1.dsc c249404d74585933aba7356d1ba41614587e95b90e80747932ad07bbb63850be 234932 geoalchemy2_0.18.4.orig.tar.gz d7f9c0ba269c2a121d470cdbb441cd0e8261c3aadca19c2b3206c54e55ccaf3f 9664 geoalchemy2_0.18.4-1.debian.tar.xz"
+    "934ac9754b86ec6f03bd84762f1d1d1f683ada38e652158bc3a5c49594fffd5d 3216 geoalchemy2_0.21.0~rc0-1.dsc 9d56dc20f8c7915322f8e55790af84a5aef42495ea124722924fadc27ff049d1 296507 geoalchemy2_0.21.0~rc0.orig.tar.gz 39bce8669f7af505663ee48f6bf2896c0317d0d44b723ab27af002fdfeaeeb12 9848 geoalchemy2_0.21.0~rc0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "9f7f629747392406807aa3b7a6feae6cb82472d8 debian archive/debian/0.21.0_rc0-1 https://git.dgit.debian.org/geoalchemy2"
   ],
   "Directory": [
     "pool/main/g/geoalchemy2"
   ],
   "Files": [
-    "5103f0475f948efc8759597ca0afc206 2848 geoalchemy2_0.18.4-1.dsc b1a6fa699b85114b4670f4057fe69c3b 234932 geoalchemy2_0.18.4.orig.tar.gz 56da3ed66cf4f88e36ad9c91f5def508 9664 geoalchemy2_0.18.4-1.debian.tar.xz"
+    "71581cb5e9dedd749e29e0cbcc0b84b1 3216 geoalchemy2_0.21.0~rc0-1.dsc cb7038a54cce739fba6c8330fe80f475 296507 geoalchemy2_0.21.0~rc0.orig.tar.gz bee1efda21530076afdf8abfd132f150 9848 geoalchemy2_0.21.0~rc0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=bef99dbc7e5bc0f5faf06745fb6af6e1170ebf83 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://geoalchemy-2.readthedocs.io/"
@@ -42,7 +51,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +69,6 @@
     "https://salsa.debian.org/python-team/packages/geoalchemy2.git"
   ],
   "Version": [
-    "0.18.4-1"
+    "0.21.0~rc0-1"
   ]
 }

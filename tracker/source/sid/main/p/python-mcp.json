@@ -6,19 +6,31 @@
     "python3-mcp"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-python, pybuild-plugin-pyproject, python3-all, python3-hatchling, python3-pytest \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-anyio \u003c!nocheck\u003e, python3-httpx \u003c!nocheck\u003e, python3-pydantic \u003c!nocheck\u003e, python3-pydantic-settings \u003c!nocheck\u003e, python3-httpx-sse \u003c!nocheck\u003e, python3-dirty-equals \u003c!nocheck\u003e, python3-inline-snapshot \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-starlette \u003c!nocheck\u003e, python3-sse-starlette \u003c!nocheck\u003e, python3-uvicorn \u003c!nocheck\u003e, python3-websockets \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-typer \u003c!nocheck\u003e, python3-python-multipart \u003c!nocheck\u003e, python3-jwt \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-python, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+  ],
+  "Build-Depends-Indep": [
+    "python3-anyio \u003c!nocheck\u003e, python3-blockbuster \u003c!nocheck\u003e, python3-coverage \u003c!nocheck\u003e, python3-cryptography \u003c!nocheck\u003e, python3-dirty-equals \u003c!nocheck\u003e, python3-griffe \u003c!nocheck\u003e, python3-httpx-sse \u003c!nocheck\u003e, python3-httpx2 \u003c!nocheck\u003e, python3-inline-snapshot \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-jwt \u003c!nocheck\u003e, python3-logfire \u003c!nocheck\u003e, python3-markdown \u003c!nocheck\u003e, python3-opentelemetry-sdk \u003c!nocheck\u003e, python3-pydantic \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-examples \u003c!nocheck\u003e, python3-pytest-xdist \u003c!nocheck\u003e, python3-python-multipart \u003c!nocheck\u003e, python3-requests \u003c!nocheck\u003e, python3-sse-starlette \u003c!nocheck\u003e, python3-starlette \u003c!nocheck\u003e, python3-trio \u003c!nocheck\u003e, python3-typer \u003c!nocheck\u003e, python3-uvicorn \u003c!nocheck\u003e, python3-websockets \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "8b28a1a4c08371ba50fdd5d16b39330c5f73962e678ac21e9b0ef14d36605edf 2638 python-mcp_1.28.1-1.dsc 80905c2f78c54a9fe1c848e706a82f245c653642db3ca2e7b549e0372ac6fb38 647106 python-mcp_1.28.1.orig.tar.gz c97be4fc37ad85691c4631c5880746c747b0bada160f4fbde1d1c6203aa538dc 8072 python-mcp_1.28.1-1.debian.tar.xz"
+    "816bb26cc5086c13f36c6d994aa0ee98df499e489730120ce57ad5dd421dd28d 3192 python-mcp_2.3.0-1.dsc 33db4c9e1f2fdae4a493281436f145f12ba6efe2091b5f21c5280387ee8ee047 4224779 python-mcp_2.3.0.orig.tar.gz 05c74d7fcb85b66d8d16b04b080a900a950ba3bbc8af9637f54d7390b8a7065a 8140 python-mcp_2.3.0-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "39e012cc24076f9df7923018d483893f1095ca72 debian archive/debian/2.3.0-1 https://git.dgit.debian.org/python-mcp"
   ],
   "Directory": [
     "pool/main/p/python-mcp"
   ],
   "Files": [
-    "1211dbd9001413b098177127fe99d147 2638 python-mcp_1.28.1-1.dsc e09d148964a574868b4220e49f34dc39 647106 python-mcp_1.28.1.orig.tar.gz dd8f43a4ca03e58e4ce6f6a327308455 8072 python-mcp_1.28.1-1.debian.tar.xz"
+    "8c24a486b46d02122af2d9a47d5f52cc 3192 python-mcp_2.3.0-1.dsc a473c3be77de4174867a53d6132b4459 4224779 python-mcp_2.3.0.orig.tar.gz 89ba33a3dc96f1e2fe772be3217fc82c 8140 python-mcp_2.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=d55edfb8b1be54303ebdc5c8c417eed8985c9bee fp=2b2e0e3fb52f5a53164cabca05b8f2b072a0e0eb"
+  ],
+  "Git-Tag-Tagger": [
+    "Pieter Lenaerts \u003cplenae@disroot.org\u003e"
   ],
   "Homepage": [
     "https://modelcontextprotocol.io/docs/getting-started/intro"
@@ -30,7 +42,7 @@
     "python-mcp"
   ],
   "Package-List": [
-    "python3-mcp deb python unknown arch=all"
+    "python3-mcp deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -45,7 +57,7 @@
     "autopkgtest, autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Pieter Lenaerts \u003cplenae@disroot.org\u003e,"
+    "Pieter Lenaerts \u003cplenae@disroot.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/python-team/packages/python-mcp"
@@ -54,6 +66,6 @@
     "https://salsa.debian.org/python-team/packages/python-mcp.git"
   ],
   "Version": [
-    "1.28.1-1"
+    "2.3.0-1"
   ]
 }
