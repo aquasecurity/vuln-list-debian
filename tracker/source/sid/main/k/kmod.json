@@ -6,19 +6,28 @@
     "kmod, libkmod2, libkmod-dev, kmod-udeb, libkmod2-udeb"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), meson, pahole \u003c!nocheck\u003e, pkgconf, liblzma-dev (\u003e= 5.4.5-0.2), libssl-dev, libzstd-dev, zstd \u003c!nocheck\u003e, linux-headers-generic [!armel !i386 !mips64el !sh4 !x32] \u003c!nocheck\u003e, linux-headers-mips64r6el [mips64el] \u003c!nocheck\u003e, linux-headers-rpi [armel] \u003c!nocheck\u003e, linux-headers-sh7785lcr [sh4] \u003c!nocheck\u003e, gtk-doc-tools \u003c!nodoc\u003e, scdoc"
+    "debhelper-compat (= 14), meson, pahole \u003c!nocheck\u003e, pkgconf, liblzma-dev (\u003e= 5.4.5-0.2), libssl-dev, libzstd-dev, zstd \u003c!nocheck\u003e, linux-headers-generic [!armel !i386 !mips64el !sh4 !x32] \u003c!nocheck\u003e, linux-headers-mips64r6el [mips64el] \u003c!nocheck\u003e, linux-headers-rpi [armel] \u003c!nocheck\u003e, linux-headers-sh7751r [sh4] \u003c!nocheck\u003e, gtk-doc-tools \u003c!nodoc\u003e, scdoc"
   ],
   "Checksums-Sha256": [
-    "a36884eceaccc3647b5181233282578548d1f1fc39bfb5c1d4459982fb52505a 1819 kmod_34.2-2.dsc 012d16e2099115486d8aa9f2c2a23d058d3d0cad83113a60512647d25d3869e8 192520 kmod_34.2.orig.tar.xz 93c9d227cf07a7c18a7292a79e51c94a6ea23e0ef4626ab2c31b5d711c73cefe 12144 kmod_34.2-2.debian.tar.xz"
+    "f3db977d7b73c992a1d3a965fd3d39dd28a61fbd0c780adb961201578ef121fe 2715 kmod_34.3-3.dsc 21768efd014d5569b5aac349c40c64047a6d804ccff7f338328f3326dbe4a1f7 192680 kmod_34.3.orig.tar.xz 96ec4be1b33107f740310db4dcfa32c0e274c7db3afa0341ee64055a3bb73a11 11916 kmod_34.3-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "16351cdfb1128531977fa212b4e32c9ab92a562b debian archive/debian/34.3-3 https://git.dgit.debian.org/kmod"
   ],
   "Directory": [
     "pool/main/k/kmod"
   ],
   "Files": [
-    "7187fe05cd92c03f94151a48c0c32e31 1819 kmod_34.2-2.dsc c4bdd6fbf9900fc7794f291b4fc1f632 192520 kmod_34.2.orig.tar.xz 18d0e2c97cb725b68830650ce5b5d1ea 12144 kmod_34.2-2.debian.tar.xz"
+    "89b19b691cbe5cfb2bf54c6780ac5b36 2715 kmod_34.3-3.dsc d58a43edcc7b5355e011b0adf03817b9 192680 kmod_34.3.orig.tar.xz 57df500f4f0bac5db24f4c85f75109ce 11916 kmod_34.3-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=39e18c08e946418cd04817294a7597fa0e77db0e fp=272945cd836d38dfb7427e86cb3ec33ae1ded781"
+  ],
+  "Git-Tag-Tagger": [
+    "Marco d'Itri \u003cmd@linux.it\u003e"
   ],
   "Maintainer": [
     "Marco d'Itri \u003cmd@linux.it\u003e"
@@ -27,7 +36,7 @@
     "kmod"
   ],
   "Package-List": [
-    "kmod deb admin important arch=linux-any kmod-udeb udeb debian-installer important arch=linux-any profile=!noudeb libkmod-dev deb libdevel optional arch=linux-any libkmod2 deb libs optional arch=linux-any libkmod2-udeb udeb debian-installer important arch=linux-any profile=!noudeb"
+    "kmod deb admin important arch=linux-any kmod-udeb udeb debian-installer important arch=linux-any profile=!noudeb profile:v1=!noudeb libkmod-dev deb libdevel optional arch=linux-any libkmod2 deb libs optional arch=linux-any libkmod2-udeb udeb debian-installer important arch=linux-any profile=!noudeb profile:v1=!noudeb"
   ],
   "Priority": [
     "optional"
@@ -36,7 +45,7 @@
     "admin"
   ],
   "Standards-Version": [
-    "4.7.2.0"
+    "4.7.4.1"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/md/kmod.git"
   ],
   "Version": [
-    "34.2-2"
+    "34.3-3"
   ]
 }

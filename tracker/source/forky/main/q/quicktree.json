@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "quicktree, libquicktree-dev"
+    "quicktree, libquicktree2, libquicktree-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), help2man, dh-exec"
+    "debhelper-compat (= 14), d-shlibs, help2man"
   ],
   "Checksums-Sha256": [
-    "46d139d8baba230c20198b63d50f292f4f0cb0dbcdabfa3055bbbd0025578cbd 2019 quicktree_2.5-6.dsc 731aa845ce3f1f0645bd0df2b54df75f78fce065d6a3ddc47fedf4bdcb11c248 39784 quicktree_2.5.orig.tar.gz ac8993853ea900963d4c854969e7d250b7f637029eada0b93a9c6aff197e01a4 5872 quicktree_2.5-6.debian.tar.xz"
+    "6834f919238074ffb1d1fde25d63f9244f18885c8252ae128f5be09f543c43c1 2138 quicktree_2.5-7.dsc 731aa845ce3f1f0645bd0df2b54df75f78fce065d6a3ddc47fedf4bdcb11c248 39784 quicktree_2.5.orig.tar.gz 9d95475eb19074e20b159108cb95f1578d6802a71b5274669f40dd90c9bf219a 7064 quicktree_2.5-7.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/q/quicktree"
   ],
   "Files": [
-    "33eedcee43a96546778bd974399dd06e 2019 quicktree_2.5-6.dsc e7fcd348f16de227383461373565b8de 39784 quicktree_2.5.orig.tar.gz b4b7cee711ae26366501b2fd12cccd56 5872 quicktree_2.5-6.debian.tar.xz"
+    "e19e0b18bae6b319ef99ca6ae2ac4f4a 2138 quicktree_2.5-7.dsc e7fcd348f16de227383461373565b8de 39784 quicktree_2.5.orig.tar.gz dd63ee6cbf039d21c3d5a54774b8f3e5 7064 quicktree_2.5-7.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "quicktree"
   ],
   "Package-List": [
-    "libquicktree-dev deb libdevel optional arch=any quicktree deb science optional arch=any"
+    "libquicktree-dev deb libdevel optional arch=any libquicktree2 deb libs optional arch=any quicktree deb science optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "build-essential"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/med-team/quicktree.git"
   ],
   "Version": [
-    "2.5-6"
+    "2.5-7"
   ]
 }
