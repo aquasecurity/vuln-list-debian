@@ -6,16 +6,16 @@
     "python3-friendly-traceback"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-asttokens, python3-executing, python3-pure-eval, python3-pytest \u003c!nocheck\u003e, python3-tk \u003c!nocheck\u003e, python3-setuptools, python3-stack-data"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-asttokens, python3-executing, python3-hatchling, python3-pure-eval, python3-pytest \u003c!nocheck\u003e, python3-tk \u003c!nocheck\u003e, python3-setuptools, python3-stack-data"
   ],
   "Checksums-Sha256": [
-    "2d5f49abb9d950b9efc3b3731df3ec10300c47ca049cc265e97da83e08a41281 2536 python-friendly-traceback_0.7.62+git20250413.bba8fc4-1.dsc a880b9ffc475ad8a2baa03118c0a6c00e7a2af1ba8cbe392d4448e44fb7295f5 454088 python-friendly-traceback_0.7.62+git20250413.bba8fc4.orig.tar.xz 36f1704a541c59757fea156551ce664f0be7fdfe883028f19a5dc1373d38c9f9 5304 python-friendly-traceback_0.7.62+git20250413.bba8fc4-1.debian.tar.xz"
+    "d1a47cb25f1992e327a6189edbe9c852c3f92bd1e54f085460890760198166fe 2627 python-friendly-traceback_0.7.62+git20261031.995a95b-1.dsc aca66dc950993ed89c5a8ceb760c6b4a85bfb58056fbf539ce0b364355b8d1ea 457316 python-friendly-traceback_0.7.62+git20261031.995a95b.orig.tar.xz e13c8f147e62148de2d862bf5e2c2f8c139468b3bbd817b1f6f0c1d8a8ae7b97 7596 python-friendly-traceback_0.7.62+git20261031.995a95b-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-friendly-traceback"
   ],
   "Files": [
-    "d2682f29c1325b0a4370ca5a5c16066c 2536 python-friendly-traceback_0.7.62+git20250413.bba8fc4-1.dsc b3ee3f4cd97a1069c7fa24c5ec10a124 454088 python-friendly-traceback_0.7.62+git20250413.bba8fc4.orig.tar.xz b0f3a4a96d57bebfa74303bd9f7f9690 5304 python-friendly-traceback_0.7.62+git20250413.bba8fc4-1.debian.tar.xz"
+    "114679a74db713f97603a597322a5a69 2627 python-friendly-traceback_0.7.62+git20261031.995a95b-1.dsc 1aea2f35b69f0a755875ccac1d156466 457316 python-friendly-traceback_0.7.62+git20261031.995a95b.orig.tar.xz 3a905a2fdebeb8ad6816f34e3cb3af9c 7596 python-friendly-traceback_0.7.62+git20261031.995a95b-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,10 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest, autopkgtest-pkg-pybuild"
+  ],
+  "Testsuite-Triggers": [
+    "python3-all"
   ],
   "Uploaders": [
     "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/python-team/packages/python-friendly-traceback.git"
   ],
   "Version": [
-    "0.7.62+git20250413.bba8fc4-1"
+    "0.7.62+git20261031.995a95b-1"
   ]
 }
