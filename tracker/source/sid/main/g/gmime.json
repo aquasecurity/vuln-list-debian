@@ -5,17 +5,20 @@
   "Binary": [
     "libgmime-3.0-dev, gir1.2-gmime-3.0, libgmime-3.0-doc, libgmime-3.0-0t64, gmime-bin"
   ],
+  "Build-Conflicts": [
+    "gpg-from-sq"
+  ],
   "Build-Depends": [
-    "autoconf, automake, debhelper-compat (= 13), dh-exec, dpkg-dev (\u003e= 1.22.5), gnupg \u003c!nocheck\u003e, gobject-introspection, gtk-doc-tools, libgirepository1.0-dev, libglib2.0-dev (\u003e= 2.68~), libgpgme11-dev (\u003e= 1.8.0~), libidn2-dev, libtool, valac, zlib1g-dev"
+    "autoconf, automake, debhelper-compat (= 14), dh-exec, dpkg-dev (\u003e= 1.22.5), gir1.2-gio-2.0-dev, gir1.2-gobject-2.0-dev, gnupg \u003c!nocheck\u003e, gobject-introspection (\u003e= 1.80), gtk-doc-tools, libglib2.0-dev (\u003e= 2.68~), libgpgme11-dev (\u003e= 1.8.0~), libidn2-dev, libtool, valac, zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "185a8eb2b3685649edb55a8ded2291d2f6ce8ed4e54beaab9ed40da70bc57220 1875 gmime_3.2.15+dfsg-1.dsc d6c4445a2630f12f704eab3f764aef1a240dabb467c198e14b312ed9767e23e4 1911252 gmime_3.2.15+dfsg.orig.tar.xz a4b21b3c0aa721815dc0be49fcf4d202819fe2181961b41d31ae6fee9633fc18 14860 gmime_3.2.15+dfsg-1.debian.tar.xz"
+    "5487c405fcacf6a814b4e50be85cda0584ef40a34846a9ba436055c24a9058e2 1965 gmime_3.2.15+dfsg-2.dsc d6c4445a2630f12f704eab3f764aef1a240dabb467c198e14b312ed9767e23e4 1911252 gmime_3.2.15+dfsg.orig.tar.xz 6efbb2eec4a774124e7655baed666edb579c878597487ecc0299adfd69e44bfe 23748 gmime_3.2.15+dfsg-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gmime"
   ],
   "Files": [
-    "a2854201be2e579fcd09a790bcfa32d8 1875 gmime_3.2.15+dfsg-1.dsc 3ef37ef4aa4acdb6ad73766ad692d362 1911252 gmime_3.2.15+dfsg.orig.tar.xz 5c93251683545ee10f175ff60dc71caf 14860 gmime_3.2.15+dfsg-1.debian.tar.xz"
+    "550cd3abe24c944ae75295968aeaa5b9 1965 gmime_3.2.15+dfsg-2.dsc 3ef37ef4aa4acdb6ad73766ad692d362 1911252 gmime_3.2.15+dfsg.orig.tar.xz 77714266f06ab4a9fd01c41ee4d196b7 23748 gmime_3.2.15+dfsg-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +33,7 @@
     "gmime"
   ],
   "Package-List": [
-    "gir1.2-gmime-3.0 deb introspection optional arch=any gmime-bin deb utils optional arch=any libgmime-3.0-0t64 deb libs optional arch=any libgmime-3.0-dev deb libdevel optional arch=any libgmime-3.0-doc deb doc optional arch=all"
+    "gir1.2-gmime-3.0 deb introspection optional arch=any gmime-bin deb utils optional arch=any libgmime-3.0-0t64 deb libs optional arch=any libgmime-3.0-dev deb libdevel optional arch=any libgmime-3.0-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -48,7 +51,7 @@
     "build-essential, diffutils, python3-gi"
   ],
   "Uploaders": [
-    "Mirco Bauer \u003cmeebey@debian.org\u003e,"
+    "Mirco Bauer \u003cmeebey@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/gmime"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/debian/gmime.git"
   ],
   "Version": [
-    "3.2.15+dfsg-1"
+    "3.2.15+dfsg-2"
   ]
 }
