@@ -6,16 +6,16 @@
     "libpq-dev, libpq5, libpq-oauth, libecpg6, libecpg-dev, libecpg-compat3, libpgtypes3, postgresql-18, postgresql-client-18, postgresql-server-dev-18, postgresql-doc-18, postgresql-plperl-18, postgresql-plpython3-18, postgresql-pltcl-18, postgresql-18-jit"
   ],
   "Build-Depends": [
-    "autoconf, bison, clang [amd64 arm64 mips64el ppc64 ppc64el s390x] \u003c!pkg.postgresql.nollvm\u003e, debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libcurl4-openssl-dev [linux-any], libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libnuma-dev [linux-any], libpam0g-dev | libpam-dev, libperl-dev, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], liburing-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [amd64 arm64 mips64el ppc64 ppc64el s390x] \u003c!pkg.postgresql.nollvm\u003e, lz4 | liblz4-tool, mawk, openssl, perl (\u003e= 5.8), pkgconf, postgresql-common-dev, python3-dev, systemtap-sdt-dev [linux-any], tcl-dev, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
+    "autoconf, bison, clang [amd64 arm64 mips64el ppc64 ppc64el s390x] \u003c!pkg.postgresql.nollvm\u003e, debhelper-compat (= 13), dh-exec (\u003e= 0.13~), docbook-xml, docbook-xsl (\u003e= 1.77), dpkg-dev (\u003e= 1.16.1~), flex, gdb \u003c!nocheck\u003e, gettext, libcurl4-openssl-dev [linux-any], libicu-dev, libio-pty-perl \u003c!nocheck\u003e, libipc-run-perl \u003c!nocheck\u003e, libkrb5-dev, libldap2-dev, liblz4-dev, libnuma-dev [linux-any], libpam0g-dev | libpam-dev, libperl-dev \u003c!noperl\u003e, libreadline-dev, libselinux1-dev [linux-any], libssl-dev, libsystemd-dev [linux-any], liburing-dev [linux-any], libxml2-dev, libxml2-utils, libxslt1-dev, libzstd-dev (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e, llvm-dev [amd64 arm64 mips64el ppc64 ppc64el s390x] \u003c!pkg.postgresql.nollvm\u003e, lz4 | liblz4-tool, mawk, openssl, perl (\u003e= 5.8), pkgconf, postgresql-common-dev, python3-dev \u003c!nopython\u003e, systemtap-sdt-dev [linux-any], tcl-dev \u003c!pkg.postgresql.notcl\u003e, tzdata \u003c!nocheck\u003e, tzdata-legacy \u003c!nocheck\u003e | tzdata (\u003c\u003c 2023c-8) \u003c!nocheck\u003e, uuid-dev, xsltproc, zlib1g-dev | libz-dev, zstd (\u003e= 1.4.0) \u003c!pkg.postgresql.nozstd\u003e"
   ],
   "Checksums-Sha256": [
-    "a4254c4548ebeea683832de193460ee8a9f1271418e884803b44ded1aead1776 4752 postgresql-18_18.6-3.dsc 555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f 22632314 postgresql-18_18.6.orig.tar.bz2 5efd00aa59930757931d13e3b2a343b5ac983fdf646a54a3b96caa30cb40512b 34488 postgresql-18_18.6-3.debian.tar.xz"
+    "66323aaa12b5bc7f07f458bfff60bc7e376aa2e6824e3adc0a0342da5cc876d4 4947 postgresql-18_18.7-1.dsc 441dfae4280cae3e0425e5f876f80559fb0731c140f1aae22b3e5a54d0411bfd 23155657 postgresql-18_18.7.orig.tar.bz2 98836410b0c02d1ba603b16df4121601fcb4da1e896fdcaba7ab09ffe65f0ec5 33204 postgresql-18_18.7-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/postgresql-18"
   ],
   "Files": [
-    "b5643c3a1a59f33dfa00e6dac1201aaa 4752 postgresql-18_18.6-3.dsc 6143c18ab91bdfcaa056a61861814cde 22632314 postgresql-18_18.6.orig.tar.bz2 074961747b2a26d6921ea3fc06b78a2d 34488 postgresql-18_18.6-3.debian.tar.xz"
+    "7fd8c33654c5c9a2d3a3666a70c3c488 4947 postgresql-18_18.7-1.dsc 641e4167c939f31af0049edcff4239d6 23155657 postgresql-18_18.7.orig.tar.bz2 a974fe663b6ead7ef20f60246d80b649 33204 postgresql-18_18.7-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "postgresql-18"
   ],
   "Package-List": [
-    "libecpg-compat3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libecpg-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libecpg6 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpgtypes3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq-oauth deb libs optional arch=linux-any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq5 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs postgresql-18 deb database optional arch=any postgresql-18-jit deb database optional arch=amd64,arm64,mips64el,ppc64,ppc64el,s390x profile=!pkg.postgresql.nollvm profile:v1=!pkg.postgresql.nollvm postgresql-client-18 deb database optional arch=any postgresql-doc-18 deb doc optional arch=all profile=!nodoc profile:v1=!nodoc postgresql-plperl-18 deb database optional arch=any postgresql-plpython3-18 deb database optional arch=any postgresql-pltcl-18 deb database optional arch=any postgresql-server-dev-18 deb libdevel optional arch=any"
+    "libecpg-compat3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libecpg-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libecpg6 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpgtypes3 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq-dev deb libdevel optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq-oauth deb libs optional arch=linux-any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs libpq5 deb libs optional arch=any profile=!pkg.postgresql.nolibpkgs profile:v1=!pkg.postgresql.nolibpkgs postgresql-18 deb database optional arch=any postgresql-18-jit deb database optional arch=amd64,arm64,mips64el,ppc64,ppc64el,s390x profile=!pkg.postgresql.nollvm profile:v1=!pkg.postgresql.nollvm postgresql-client-18 deb database optional arch=any postgresql-doc-18 deb doc optional arch=all profile=!nodoc profile:v1=!nodoc postgresql-plperl-18 deb database optional arch=any profile=!noperl profile:v1=!noperl postgresql-plpython3-18 deb database optional arch=any profile=!nopython profile:v1=!nopython postgresql-pltcl-18 deb database optional arch=any profile=!pkg.postgresql.notcl profile:v1=!pkg.postgresql.notcl postgresql-server-dev-18 deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "build-essential, debhelper, fakeroot, hunspell-en-us, iproute2, locales-all, logrotate, netcat-openbsd, perl, postgresql-common-dev, procps, tzdata, tzdata-legacy"
+    "build-essential, debhelper, fakeroot, hunspell-en-us, iproute2, libicu-dev, locales-all, logrotate, netcat-openbsd, perl, postgresql-common-dev, procps, tzdata, tzdata-legacy"
   ],
   "Uploaders": [
     "Martin Pitt \u003cmpitt@debian.org\u003e, Peter Eisentraut \u003cpetere@debian.org\u003e, Christoph Berg \u003cmyon@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/postgresql/postgresql.git -b 18"
   ],
   "Version": [
-    "18.6-3"
+    "18.7-1"
   ]
 }
