@@ -6,19 +6,16 @@
     "python3-eumdac"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-all, python3-requests \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, python3-setuptools, python3-all, python3-requests \u003c!nocheck\u003e, python3-paho-mqtt \u003c!nocheck\u003e, python3-yaml \u003c!nocheck\u003e, python3-responses \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "a917889a0c097d30ad3802fb83ce2211dfcbc52d80d258d9cb59c30b0f59617b 2171 eumdac_3.0.0-2.dsc 3ca67309e2d4535b0337e9fae166d1b1179b36af61779602f912f0299d7c7fc6 179179 eumdac_3.0.0.orig.tar.gz eea14d03503d78a397813eb72430318f5626c8f864c0e3f947c193acaf0d4c34 2984 eumdac_3.0.0-2.debian.tar.xz"
-  ],
-  "Dgit": [
-    "373d13c08a941ad1f93a83ab91b47eb625205a6d debian archive/debian/3.0.0-2 https://git.dgit.debian.org/eumdac"
+    "fb62a05b57812d710c25ad364847a0b1a674095f3acf4b8a563ae7ba880331b7 2134 eumdac_3.1.1-1.dsc 1bbcab22094463bb798f3056c64a4e0a30d22bce5ba89fd34472b49e5a44621b 183964 eumdac_3.1.1.orig.tar.xz 87f053ffe00353229c4e3e131006c65e19541a29910755438956dc29030c9d27 3868 eumdac_3.1.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/e/eumdac"
   ],
   "Files": [
-    "cf41ddd326eccf3c618524e6471c8927 2171 eumdac_3.0.0-2.dsc f94c734236be0f0963a2d1154a53ea6c 179179 eumdac_3.0.0.orig.tar.gz aa131471666bc1f5f56611d0e88206dd 2984 eumdac_3.0.0-2.debian.tar.xz"
+    "e3574e8fa2192a91b4e314ffa173e4f0 2134 eumdac_3.1.1-1.dsc 37bef59e17b315c94226a664df0a0fdb 183964 eumdac_3.1.1.orig.tar.xz 63d1576c5edfbdef3b5645caaa497832 3868 eumdac_3.1.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-python"
+    "autopkgtest, autopkgtest-pkg-python"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/science-team/eumdac"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/science-team/eumdac.git"
   ],
   "Version": [
-    "3.0.0-2"
+    "3.1.1-1"
   ]
 }

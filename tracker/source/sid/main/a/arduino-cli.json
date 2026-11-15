@@ -6,16 +6,16 @@
     "golang-github-arduino-arduino-cli-dev, arduino-cli"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-golang, dh-shell-completions, golang-any, golang-bugst-downloader-dev, golang-bugst-f-dev, golang-bugst-relaxed-semver-dev, golang-bugst-testifyjson-dev \u003c!nocheck\u003e, golang-fortio-safecast-dev, golang-github-arduino-go-paths-helper-dev, golang-github-arduino-go-properties-orderedmap-dev, golang-github-arduino-go-serial-utils-dev, golang-github-arduino-go-timeutils-dev, golang-github-arduino-pluggable-discovery-protocol-handler-dev, golang-github-arduino-pluggable-monitor-protocol-handler-dev, golang-github-cmaglie-pb-dev, golang-github-codeclysm-extract-dev, golang-github-djherbis-buffer-dev, golang-github-djherbis-nio-dev, golang-github-fatih-color-dev, golang-github-go-git-go-git-dev, golang-github-goccy-go-json-dev, golang-github-gofrs-uuid-dev, golang-github-leonelquinteros-gotext-dev, golang-github-mailru-easyjson-dev, golang-github-marcinbor85-gohex-dev, golang-github-mattn-go-colorable-dev, golang-github-mattn-go-isatty-dev, golang-github-protonmail-go-crypto-dev, golang-github-rifflock-lfshook-dev, golang-github-rogpeppe-go-internal-dev, golang-github-schollz-closestmatch-dev, golang-github-sirupsen-logrus-dev, golang-github-spf13-cobra-dev, golang-github-spf13-viper-dev, golang-github-stretchr-testify-dev, golang-github-xeipuuv-gojsonschema-dev \u003c!nocheck\u003e, golang-golang-x-sys-dev, golang-golang-x-term-dev, golang-golang-x-text-dev, golang-google-genproto-dev, golang-google-grpc-dev, golang-google-protobuf-dev, golang-gopkg-yaml.v3-dev"
+    "debhelper-compat (= 14), dh-go, dh-shell-completions, golang-any, golang-bugst-downloader-dev, golang-bugst-f-dev, golang-bugst-relaxed-semver-dev, golang-bugst-testifyjson-dev \u003c!nocheck\u003e, golang-fortio-safecast-dev, golang-github-arduino-go-paths-helper-dev, golang-github-arduino-go-properties-orderedmap-dev, golang-github-arduino-go-serial-utils-dev, golang-github-arduino-go-timeutils-dev, golang-github-arduino-pluggable-discovery-protocol-handler-dev, golang-github-arduino-pluggable-monitor-protocol-handler-dev, golang-github-cmaglie-pb-dev, golang-github-codeclysm-extract-dev, golang-github-djherbis-buffer-dev, golang-github-djherbis-nio-dev, golang-github-fatih-color-dev, golang-github-go-git-go-git-dev, golang-github-goccy-go-json-dev, golang-github-gofrs-uuid-dev, golang-github-leonelquinteros-gotext-dev, golang-github-mailru-easyjson-dev, golang-github-marcinbor85-gohex-dev, golang-github-mattn-go-colorable-dev, golang-github-mattn-go-isatty-dev, golang-github-protonmail-go-crypto-dev, golang-github-rifflock-lfshook-dev, golang-github-rogpeppe-go-internal-dev, golang-github-schollz-closestmatch-dev, golang-github-sirupsen-logrus-dev, golang-github-spf13-cobra-dev, golang-github-spf13-viper-dev, golang-github-stretchr-testify-dev, golang-github-xeipuuv-gojsonschema-dev \u003c!nocheck\u003e, golang-golang-x-sys-dev, golang-golang-x-term-dev, golang-golang-x-text-dev, golang-google-genproto-dev, golang-google-grpc-dev, golang-google-protobuf-dev, golang-gopkg-yaml.v3-dev"
   ],
   "Checksums-Sha256": [
-    "ae0621f6d25b5dd00b0d4b6df85405f6ebe8f90d293d8f522a27adc1a6ad99bf 3937 arduino-cli_1.6.0+ds1-1.dsc 7af9b351f46f66f073dabb0143a94171ab0fc7faef5ed7f19dab271cc06e6bde 7895048 arduino-cli_1.6.0+ds1.orig.tar.xz bb16f38242f4aadf8e539d69e8bc8030e2c714397672d65cfc6c937f1db4785d 11164 arduino-cli_1.6.0+ds1-1.debian.tar.xz"
+    "d458227a57be4d361fd341f94b07c3ba737f2fa25a4c4f5660b50e0a5e868da7 3942 arduino-cli_1.6.0+ds1-2.dsc 7af9b351f46f66f073dabb0143a94171ab0fc7faef5ed7f19dab271cc06e6bde 7895048 arduino-cli_1.6.0+ds1.orig.tar.xz 19e4579fe355ba42b969a69d5669e2aaf43d4e4ee5aa6e59a84ade0d6e9c844c 12264 arduino-cli_1.6.0+ds1-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/arduino-cli"
   ],
   "Files": [
-    "8d37cbb640edcb8fb6745f7cf09c312d 3937 arduino-cli_1.6.0+ds1-1.dsc 8e1b13fb3024774b82503e17c46f211b 7895048 arduino-cli_1.6.0+ds1.orig.tar.xz c7d983a9342e6cd641c09ff1b6ecac79 11164 arduino-cli_1.6.0+ds1-1.debian.tar.xz"
+    "5315289393c1faf79374a01837f71d53 3942 arduino-cli_1.6.0+ds1-2.dsc 8e1b13fb3024774b82503e17c46f211b 7895048 arduino-cli_1.6.0+ds1.orig.tar.xz 7e14c11549b0350e88b3753a0da3e764 12264 arduino-cli_1.6.0+ds1-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest, autopkgtest-pkg-go"
   ],
   "Testsuite-Triggers": [
-    "@recommends@"
+    "@recommends@, arduino-core-avr"
   ],
   "Uploaders": [
     "Matthias Geiger \u003cwerdahias@debian.org\u003e, Christopher Obbard \u003cobbardc@debian.org\u003e, Nicolas Peugnet \u003cnicolas@club1.fr\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/electronics-team/arduino/arduino-cli.git"
   ],
   "Version": [
-    "1.6.0+ds1-1"
+    "1.6.0+ds1-2"
   ]
 }
