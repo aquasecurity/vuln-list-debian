@@ -3,25 +3,25 @@
     "all"
   ],
   "Binary": [
-    "libjawn-java"
+    "libjawn-parser-scala3-java, libjawn-util-scala3-java, libjawn-ast-scala3-java"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 11), default-jdk, libjson4s-java, maven-repo-helper, scala"
+    "debhelper-compat (= 14), dh-sequence-scala, scala3"
   ],
   "Checksums-Sha256": [
-    "ae9c8e9cc84eaaa8fde7e38824d2e9f8a3f51449f70d02f65c26521e9c96ed75 2055 jawn_0.11.1+really0.6.0-1.dsc bcb8ad48f73475d6f63510dbac4a96cff2cdb648dca8744bc783b6b6cd39bffb 1847280 jawn_0.11.1+really0.6.0.orig.tar.xz bfda459918771c548d43e68211284205664b9bcc0c33bc7e621a611ae8eafd04 4800 jawn_0.11.1+really0.6.0-1.debian.tar.xz"
+    "85056aa3a3424b954dcb94142819e3af324a20e6434db2127ea4059a2ec578c1 2235 jawn_1.7.0+ds-1.dsc 308418269a3b8d7a8596eda5e19a9fb78dcd118b2b556b8992e7ff3f48357d76 36016 jawn_1.7.0+ds.orig.tar.xz 6eabae1d5e6daccdfeaa160414712c6db44fafc12cbb60bc8cfaf7d50250fee2 4348 jawn_1.7.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/j/jawn"
   ],
   "Files": [
-    "97ff02f3dcf6ef2c4379bb4ab0ab63e5 2055 jawn_0.11.1+really0.6.0-1.dsc de4862f440752a5d9287e2b3455919fd 1847280 jawn_0.11.1+really0.6.0.orig.tar.xz 23d7cacd9d21adcc411b6b07a4d144e3 4800 jawn_0.11.1+really0.6.0-1.debian.tar.xz"
+    "ad4283577afc8dd80839985975275c7d 2235 jawn_1.7.0+ds-1.dsc 3951b4b3fe1af885b4f1716096331300 36016 jawn_1.7.0+ds.orig.tar.xz 16f3ec51f63e1db2a5f5bd6d39ec6310 4348 jawn_1.7.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "https://github.com/non/jawn"
+    "https://github.com/typelevel/jawn"
   ],
   "Maintainer": [
     "Debian Java Maintainers \u003cpkg-java-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "jawn"
   ],
   "Package-List": [
-    "libjawn-java deb java optional arch=all"
+    "libjawn-ast-scala3-java deb java optional arch=all libjawn-parser-scala3-java deb java optional arch=all libjawn-util-scala3-java deb java optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.2.1"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "scala-debian-helper"
   ],
   "Uploaders": [
-    "Frédéric Bonnard \u003cfrediz@linux.vnet.ibm.com\u003e"
+    "Frédéric Bonnard \u003cfrediz@linux.vnet.ibm.com\u003e, Juan Manuel Méndez Rey \u003cjuan.mendezr@proton.me\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/java-team/jawn"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/java-team/jawn.git"
   ],
   "Version": [
-    "0.11.1+really0.6.0-1"
+    "1.7.0+ds-1"
   ]
 }

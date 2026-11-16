@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-html5ever-0.40+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.40+default-dev \u003c!nocheck\u003e, librust-tendril-0.5+default-dev \u003c!nocheck\u003e, librust-xml5ever-0.40+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-html5ever-0.40+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.40+default-dev \u003c!nocheck\u003e, librust-markup5ever-0.40+serde-dev \u003c!nocheck\u003e, librust-tendril-0.5+default-dev \u003c!nocheck\u003e, librust-xml5ever-0.40+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "bcc9be255b275663537eac3eb5b2d25b0c690af610ef7f01afc4b1b2af86f429 2649 rust-markup5ever-rcdom_0.35.0+ds-3.dsc 806dd3a0f7cfcccf26337a2bfb87a5c21f2c567f4db3cdea7abcf519e36823df 32294 rust-markup5ever-rcdom_0.35.0+ds.orig.tar.gz 2eea5ad37d8c1c51abd31f554907bb0fd2d25f387501c27168a0eb3188a78271 4516 rust-markup5ever-rcdom_0.35.0+ds-3.debian.tar.xz"
+    "6b539b924ef3ba1054e1dcc4401da2c575ba5e38e9f5e2390f183a215f9f94f9 2617 rust-markup5ever-rcdom_0.40.1-1.dsc 64206f12eb431c03d9b6f293846f8b0517578905b6c0cac266aa52f09c11ad7c 19419 rust-markup5ever-rcdom_0.40.1.orig.tar.gz 024a3824cf01eb75f3faf07e161c94ae01196ddc2a0d169a51a042c3e6d36f87 3604 rust-markup5ever-rcdom_0.40.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-markup5ever-rcdom"
   ],
   "Files": [
-    "01aba3944439e47892d2be6832cf9f61 2649 rust-markup5ever-rcdom_0.35.0+ds-3.dsc ca40d657621ac6c2979d7d4184411fb8 32294 rust-markup5ever-rcdom_0.35.0+ds.orig.tar.gz 670eff21e4b29c96c88fd3dc184d2883 4516 rust-markup5ever-rcdom_0.35.0+ds-3.debian.tar.xz"
+    "a26aaabe787090e6e8a7f335cc6f1da2 2617 rust-markup5ever-rcdom_0.40.1-1.dsc a33d7011cbc9f5800d19bf5c4ddeff7f 19419 rust-markup5ever-rcdom_0.40.1.orig.tar.gz 730ece5dfc8e3ad52d45f6750b495a8b 3604 rust-markup5ever-rcdom_0.40.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-env-logger-0.11+default-dev, librust-libtest-mimic-0.7+default-dev, librust-serde-json-1+default-dev, rustc"
+    "dh-cargo, librust-env-logger-0.11+default-dev, librust-serde-json-1+default-dev, rustc"
   ],
   "Uploaders": [
     "Henry-Nicolas Tourneur \u003cdebian@nilux.be\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/markup5ever-rcdom]"
   ],
   "Version": [
-    "0.35.0+ds-3"
+    "0.40.1-1"
   ]
 }

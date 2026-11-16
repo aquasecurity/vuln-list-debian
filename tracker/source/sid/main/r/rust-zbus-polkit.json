@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.64) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-enumflags2-0.7+default-dev (\u003e= 0.7.9) \u003c!nocheck\u003e, librust-enumflags2-0.7+serde-dev (\u003e= 0.7.9) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.200) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.200) \u003c!nocheck\u003e, librust-serde-repr-0.1+default-dev (\u003e= 0.1.19) \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1.0) \u003c!nocheck\u003e, librust-zbus-5+async-io-dev \u003c!nocheck\u003e, librust-zbus-5+blocking-api-dev \u003c!nocheck\u003e, librust-zbus-5-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.89) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-bitflags-2+default-dev (\u003e= 2.13.2) \u003c!nocheck\u003e, librust-serde-1+default-dev (\u003e= 1.0.200) \u003c!nocheck\u003e, librust-serde-1+derive-dev (\u003e= 1.0.200) \u003c!nocheck\u003e, librust-serde-repr-0.1+default-dev (\u003e= 0.1.19) \u003c!nocheck\u003e, librust-static-assertions-1+default-dev (\u003e= 1.1.0) \u003c!nocheck\u003e, librust-zbus-6+default-rt-dev \u003c!nocheck\u003e, librust-zbus-6+proxy-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2c135e1b44cdd8786c84e0ee71869e006fcd40f91840d1076aa7edcc0bf1f971 2832 rust-zbus-polkit_5.1.0-1.dsc 283d50dac36a7fee0d9c2e6b9c71253326c1f863a9d350342d338637aa3019ae 16247 rust-zbus-polkit_5.1.0.orig.tar.gz bad2e8a4e712cf3e1a8c994619fad622d2f6f713bb4b44240852a5b46de96309 3140 rust-zbus-polkit_5.1.0-1.debian.tar.xz"
+    "50797524faec7d86a8143de268b782ba98ad3cfea5f3b990838acb5050b8247c 3005 rust-zbus-polkit_6.0.0-1.dsc 493c2474ae7bd12adcda9daabda8b7db0a8c95b4563876edf0f34afaf5f9e74e 34685 rust-zbus-polkit_6.0.0.orig.tar.gz 5d967905c85ad54deee3c7417960a23833818edf981d8a3a24a1be4d0233d6ed 3160 rust-zbus-polkit_6.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-zbus-polkit"
   ],
   "Files": [
-    "97c76b1749d0f721470998b9fef112a6 2832 rust-zbus-polkit_5.1.0-1.dsc 9a53fccc738590660d6eb81bc421221c 16247 rust-zbus-polkit_5.1.0.orig.tar.gz 8d4882d7fe4bf72085e3e7dfef556550 3140 rust-zbus-polkit_5.1.0-1.debian.tar.xz"
+    "67ee9b23f5f55f7ac353eab91c632782 3005 rust-zbus-polkit_6.0.0-1.dsc bba2258c2d3bb9400d62f0c10bdb9b3c 34685 rust-zbus-polkit_6.0.0.orig.tar.gz e7b9d4f9c399d54af0f5c9b0adb824fb 3160 rust-zbus-polkit_6.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-byteorder-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, rustc"
+    "dh-cargo, librust-byteorder-1+default-dev, librust-futures-util-0.3+std-dev, librust-rustix-1+default-dev, librust-rustix-1+process-dev, librust-serde-json-1+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+net-dev, librust-tokio-1+rt-dev, librust-tokio-1+rt-multi-thread-dev, librust-tokio-1+time-dev, librust-zbus-6+p2p-dev, librust-zbus-6+service-dev, rustc"
   ],
   "Uploaders": [
     "Seyed Mohamad Amin Modaresi \u003cmodaresisofthard@proton.me\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/zbus-polkit]"
   ],
   "Version": [
-    "5.1.0-1"
+    "6.0.0-1"
   ]
 }

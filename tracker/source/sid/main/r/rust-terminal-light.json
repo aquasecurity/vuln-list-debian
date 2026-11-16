@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-coolor-1+default-dev (\u003e= 1.1-~~) \u003c!nocheck\u003e, librust-crossterm+default-dev (\u003c\u003c 0.30-~~) \u003c!nocheck\u003e, librust-crossterm+default-dev (\u003e= 0.27-~~) \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e, librust-xterm-query-0.5+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-coolor-1+default-dev (\u003e= 1.1) \u003c!nocheck\u003e, librust-crossterm-0.29+default-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e, librust-xterm-query-0.6+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "303c982b8cad4d458cb879dbef74cc7beecf367fcc36c9d83b827a5816f53cc3 2679 rust-terminal-light_1.8.0-3.dsc a6f76be906d875a0ce764c52a055858c24847cb7dc674d3a5ad8cf7e3dd4ee9f 40098 rust-terminal-light_1.8.0.orig.tar.gz 669569f477eda8e71fe73759282dff5b73e0b8a1f6a2d1dae9c577bfd6bf44a0 2996 rust-terminal-light_1.8.0-3.debian.tar.xz"
+    "cdb8058ae55a14d0a1e81ad568ab00cd0173aaafc36fc0a97b2061ae9abfa1b6 2497 rust-terminal-light_1.9.1-1.dsc 23493cf1be461ed14d2c81bf1d39dcea17c8095d4f623b1a1292ea212f6b88ed 40216 rust-terminal-light_1.9.1.orig.tar.gz 3441acc2cb00f84c940dfa04ff307f645392facbf1f5e0de0b44714e2f6b3918 3028 rust-terminal-light_1.9.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-terminal-light"
   ],
   "Files": [
-    "863f808b4741d4e234a26bf43c940809 2679 rust-terminal-light_1.8.0-3.dsc 9170e3515cfb0b3a899c6581de2d829c 40098 rust-terminal-light_1.8.0.orig.tar.gz b44fb2be8c84b04240ceaed530feb612 2996 rust-terminal-light_1.8.0-3.debian.tar.xz"
+    "1800c32c8c362bc3d682bf073d2fcedc 2497 rust-terminal-light_1.9.1-1.dsc dfe524f0a19c3bf13b92fa78d144a93b 40216 rust-terminal-light_1.9.1.orig.tar.gz 2a537f8450ca511d835ccde5596cfa87 3028 rust-terminal-light_1.9.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-crossterm+default-dev, rustc"
+    "dh-cargo, librust-crossterm-0.29+default-dev, rustc"
   ],
   "Uploaders": [
     "NoisyCoil \u003cnoisycoil@tutanota.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/terminal-light]"
   ],
   "Version": [
-    "1.8.0-3"
+    "1.9.1-1"
   ]
 }

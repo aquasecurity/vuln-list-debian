@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "r-cran-kedd"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-r, r-base-dev, architecture-is-64-bit, architecture-is-little-endian"
+    "debhelper-compat (= 14), dh-r, r-base-dev, r-cran-ggplot2, r-cran-rcpp, r-pkg-team-core-architecture"
   ],
   "Checksums-Sha256": [
-    "d5f2fe1556c34184b7d588cc486c814351bf5b3f88eea50e45a8e1b3ffee8ad2 2076 r-cran-kedd_1.0.4-2.dsc bb944389a61cff22bb3bdde938a0ff6c16700a1ca725ef36b391b97812c45b26 356937 r-cran-kedd_1.0.4.orig.tar.gz 4a26c6ff64867362808161992c8f6df1fec3891665287ef6b4f2f13512bed1b2 2128 r-cran-kedd_1.0.4-2.debian.tar.xz"
+    "c6df5ec75b8a30d43c7349e8645e3118668d6972359a3855bddfe1f2cd7fb1b9 2174 r-cran-kedd_2.0.1-1.dsc 674bcc38c1320ba1eb85e0d2d995c8038908a5bacb5a8d12e1d74f292a5d711c 410477 r-cran-kedd_2.0.1.orig.tar.gz 0866b6bf41e85c58fc95db63257ded43ba370e4d0417bd6968e0ebcee3d36af2 3040 r-cran-kedd_2.0.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/r-cran-kedd"
   ],
   "Files": [
-    "9df038415d0dbc011a9525040a85f75d 2076 r-cran-kedd_1.0.4-2.dsc 7c1241e076a55d46bc06dbc3bcdb5eb0 356937 r-cran-kedd_1.0.4.orig.tar.gz 1b91a468572aa44bda4bb3af2e50d515 2128 r-cran-kedd_1.0.4-2.debian.tar.xz"
+    "95649550c6b12e60ab6b3bfd15eeb879 2174 r-cran-kedd_2.0.1-1.dsc e275920d5a4db2151e9fbadc31cb6e46 410477 r-cran-kedd_2.0.1.orig.tar.gz 521f00c069c7378ca833c9d13fee4f2b 3040 r-cran-kedd_2.0.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "r-cran-kedd"
   ],
   "Package-List": [
-    "r-cran-kedd deb gnu-r optional arch=all"
+    "r-cran-kedd deb gnu-r optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -39,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-r"
+    "autopkgtest, autopkgtest-pkg-r"
+  ],
+  "Testsuite-Triggers": [
+    "r-cran-covr, r-cran-knitr, r-cran-rmarkdown, r-cran-testthat"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/r-pkg-team/r-cran-kedd.git"
   ],
   "Version": [
-    "1.0.4-2"
+    "2.0.1-1"
   ]
 }
