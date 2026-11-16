@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "all"
+    "any"
   ],
   "Binary": [
     "librust-flume-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-rust, librust-async-std-dev, librust-criterion-dev, librust-crossbeam-channel-dev, librust-crossbeam-utils-dev, librust-futures-core-dev, librust-futures-dev, librust-futures-sink-dev, librust-nanorand-dev, librust-rand-dev, librust-spin-dev, librust-tokio-dev, librust-waker-fn-dev"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand-2+default-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-fastrand-2+js-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-fastrand-2+std-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-sink-0.3-dev \u003c!nocheck\u003e, librust-spin+default-dev (\u003e= 0.9.8) \u003c!nocheck\u003e, librust-spin+mutex-dev (\u003e= 0.9.8) \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "7dc8d58130c9bab59bae7b4f4bfbfece50dfe01bf3519570473451c4ca0edd80 2637 rust-flume_0.11.1+20241019-4.dsc 6c26b505f87ddeab13ff89c3678ccba9dbe4f10c3ab9b3137cd3b2d97b8784e5 108928 rust-flume_0.11.1+20241019.orig.tar.xz a26fd9c35b5a34aff34f082f71e5d84a96b1540b88ad03e7ca9b147411c40b7d 6276 rust-flume_0.11.1+20241019-4.debian.tar.xz"
+    "0ddd43ebcfa2ec7b399d49ebffd3a0268eab14951a19a13b81099f7fc303d6cf 3008 rust-flume_0.12.0-1.dsc 5e139bc46ca777eb5efaf62df0ab8cc5fd400866427e56c68b22e414e53bd3be 68700 rust-flume_0.12.0.orig.tar.gz a517921b9e67be43111ea401980d7da037c0237a77e730a32457eada2323eba8 4072 rust-flume_0.12.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-flume"
   ],
   "Files": [
-    "e96afffe8c4f025026f21d1cc5f2aaca 2637 rust-flume_0.11.1+20241019-4.dsc e44cee76e6a4e1fa0760bcd4c5d90688 108928 rust-flume_0.11.1+20241019.orig.tar.xz 6bde0062b06502f1ae43d408dea53c0f 6276 rust-flume_0.11.1+20241019-4.debian.tar.xz"
+    "11763e33c82e26ab05d7dbfcc920f0e5 3008 rust-flume_0.12.0-1.dsc d6485ae05b4b9546857928effb297647 68700 rust-flume_0.12.0.orig.tar.gz 88276a3bd15218ac6cc9956b335d61cd 4072 rust-flume_0.12.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +27,13 @@
     "https://github.com/zesterer/flume"
   ],
   "Maintainer": [
-    "Jonas Smedegaard \u003cdr@jones.dk\u003e"
+    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
   ],
   "Package": [
     "rust-flume"
   ],
   "Package-List": [
-    "librust-flume-dev deb rust optional arch=all"
+    "librust-flume-dev deb rust optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,15 +48,18 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-rust, librust-async-std-dev, librust-criterion-dev, librust-crossbeam-channel-dev, librust-crossbeam-utils-dev, librust-flume-0.11+async-dev, librust-flume-0.11+default-dev, librust-flume-0.11+eventual-fairness-dev, librust-flume-0.11+select-dev, librust-flume-0.11+spin-dev, librust-futures-dev, librust-rand-dev, librust-tokio-dev, librust-waker-fn-dev"
+    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-async-std-1+unstable-dev, librust-criterion-0.5-dev, librust-crossbeam-channel-0.5+default-dev, librust-crossbeam-utils-0.8+default-dev, librust-futures-0.3+default-dev, librust-futures-0.3+std-dev, librust-getrandom+default-dev, librust-getrandom+wasm-js-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-waker-fn-1+default-dev, rustc"
+  ],
+  "Uploaders": [
+    "Ying-Chun Liu (PaulLiu) \u003cpaulliu@debian.org\u003e"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/debian/rust-flume"
+    "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/flume"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/debian/rust-flume.git"
+    "https://salsa.debian.org/rust-team/debcargo-conf.git [src/flume]"
   ],
   "Version": [
-    "0.11.1+20241019-4"
+    "0.12.0-1"
   ]
 }
