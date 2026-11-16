@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "pyensembl"
+    "pyensembl, python3-pyensembl"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-setuptools, python3-all, python3-pandas, python3-numpy, python3-datacache, python3-serializable, python3-memoized-property, python3-gtfparse, python3-pytest \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-setuptools, python3, python3-argcomplete (\u003e= 3), python3-pandas, python3-numpy, python3-mypy (\u003e= 1.18) \u003c!nocheck\u003e, python3-pyfaidx (\u003e= 0.8.1), python3-datacache (\u003e= 1.30.0), python3-serializable, python3-memoized-property, python3-gtfparse (\u003e= 2.9), python3-pytest \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f310ffad0a052723b799af3c4513dab67526dff1f91794ac01e809edad221ada 2285 pyensembl_2.6.9-1.dsc 860b62cc3bb1071fc35215b1750680df4b31e99338eb19f9b10281f77b7a3c1e 66976 pyensembl_2.6.9.orig.tar.xz 505244db4dcf9c28aecf8e1d618c17f288cf70f4883f72f4a23888e97b4859bf 9960 pyensembl_2.6.9-1.debian.tar.xz"
+    "03ae714d40c61f3c93df036ec983b76f89f67b974504e45254dc84bfd6a554b6 2458 pyensembl_2.33.2-1.dsc 51332df648e05d780c38b48471b1a252e6d3291a2dd25a76ccfd19f193a28113 440308 pyensembl_2.33.2.orig.tar.xz 546887f3f76f12950c3729ca5ff233fa5e0ecf8d0ad2cd04e0bf8a6027c4bafc 10856 pyensembl_2.33.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/pyensembl"
   ],
   "Files": [
-    "3971c03185990fda94d7a12845ca284c 2285 pyensembl_2.6.9-1.dsc 8ef1bb708fd95407e1aa573b5f1fe447 66976 pyensembl_2.6.9.orig.tar.xz 73a56a1e1affbcfb61f7e208312f278b 9960 pyensembl_2.6.9-1.debian.tar.xz"
+    "ac517e9597836031dda577c7cec93f99 2458 pyensembl_2.33.2-1.dsc 90768ee143c699f3c1c6fea319f0acb5 440308 pyensembl_2.33.2.orig.tar.xz 9832d949e28cf4807130ccc3420ac855 10856 pyensembl_2.33.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "pyensembl"
   ],
   "Package-List": [
-    "pyensembl deb science optional arch=all"
+    "pyensembl deb science optional arch=all python3-pyensembl deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -42,10 +42,10 @@
     "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest, autopkgtest-pkg-pybuild"
+    "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3-all, python3-pytest"
+    "python3, python3-mypy, python3-pytest"
   ],
   "Uploaders": [
     "Steffen Moeller \u003cmoeller@debian.org\u003e, Étienne Mollier \u003cemollier@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/pyensembl.git"
   ],
   "Version": [
-    "2.6.9-1"
+    "2.33.2-1"
   ]
 }
