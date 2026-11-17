@@ -3,25 +3,25 @@
     "all"
   ],
   "Binary": [
-    "libscala-tools-sbinary-java"
+    "libsbinary-scala3-java"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 12), default-jdk, maven-repo-helper, scala"
+    "debhelper-compat (= 14), default-jdk-headless, dh-sequence-scala, dh-sequence-single-binary, libfreemarker-java, libscala-xml-scala3-java, scala3"
   ],
   "Checksums-Sha256": [
-    "2ec3dd14763027495972eaecc6921cdb98f4439c6567e5ac4ea66e5f13f743a2 2283 scala-tools-sbinary_0.4.2-on-scala-2.11.0~M5-1.dsc 0b9d525cc7ae4ac8dc9de84d7a693cf21f71ae418bf3443ff54aa1bb1674f116 11784 scala-tools-sbinary_0.4.2-on-scala-2.11.0~M5.orig.tar.xz aa9724e326c0c81e704d04f0bafcf5fd70a5576932f85b9eb3b29a2d2c943f65 4952 scala-tools-sbinary_0.4.2-on-scala-2.11.0~M5-1.debian.tar.xz"
+    "226bae53e528fe067510b465cf6148bb72b033b929bbc3f7a3da29ce25b429ed 2321 scala-tools-sbinary_0.5.1-1.dsc dc292dc3666dbf3be84c84c45dfbf072ef97c546218e0079aefeb5e74c9edc6e 18024 scala-tools-sbinary_0.5.1.orig.tar.xz deadc65c168dcdddd5480eeafd750deda561c681ba6f228763bd5a6895fe5f0e 5360 scala-tools-sbinary_0.5.1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/scala-tools-sbinary"
   ],
   "Files": [
-    "7f702ac187dfe58a4685fcbf5e3406f9 2283 scala-tools-sbinary_0.4.2-on-scala-2.11.0~M5-1.dsc f9cdfa27885ff974b57043ebc1ed09dd 11784 scala-tools-sbinary_0.4.2-on-scala-2.11.0~M5.orig.tar.xz 3488fcb405cade3d0574aae1136dff4e 4952 scala-tools-sbinary_0.4.2-on-scala-2.11.0~M5-1.debian.tar.xz"
+    "3df6bdb8523ecad6a4536cf0ee2de118 2321 scala-tools-sbinary_0.5.1-1.dsc 838efa2f0173c3f9d9a955d31edf942d 18024 scala-tools-sbinary_0.5.1.orig.tar.xz b71a2586f8555d51119f20ac4b1b8c8a 5360 scala-tools-sbinary_0.5.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://www.scala-sbt.org"
+    "https://github.com/sbt/sbinary"
   ],
   "Maintainer": [
     "Debian Java Maintainers \u003cpkg-java-maintainers@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "scala-tools-sbinary"
   ],
   "Package-List": [
-    "libscala-tools-sbinary-java deb java optional arch=all"
+    "libsbinary-scala3-java deb java optional arch=all"
   ],
   "Priority": [
     "extra"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "scala-debian-helper, scala3"
   ],
   "Uploaders": [
-    "Frédéric Bonnard \u003cfrediz@linux.vnet.ibm.com\u003e, Emmanuel Bourg \u003cebourg@apache.org\u003e"
+    "Frédéric Bonnard \u003cfrediz@linux.vnet.ibm.com\u003e, Emmanuel Bourg \u003cebourg@apache.org\u003e, Juan Manuel Méndez Rey \u003cjuan.mendezr@proton.me\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/java-team/scala-tools-sbinary"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/java-team/scala-tools-sbinary.git"
   ],
   "Version": [
-    "0.4.2-on-scala-2.11.0~M5-1"
+    "0.5.1-1"
   ]
 }

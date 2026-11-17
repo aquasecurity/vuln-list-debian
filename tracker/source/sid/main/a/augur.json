@@ -6,28 +6,19 @@
     "augur"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, mafft, python3-all, python3-setuptools, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-biopython \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-networkx \u003c!nocheck\u003e, python3-packaging \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-pyfastx \u003c!nocheck\u003e, python3-treetime (\u003e= 0.9.4) \u003c!nocheck\u003e, python3-typeshed \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-isodate \u003c!nocheck\u003e, python3-zstandard \u003c!nocheck\u003e, vcftools \u003c!nocheck\u003e, python3-xopen (\u003e= 1.7.0-1~)"
+    "debhelper-compat (= 14), dh-sequence-python3, flake8 \u003c!nocheck\u003e, mafft, mypy \u003c!nocheck\u003e, python3-all, python3-bcbio-gff \u003c!nocheck\u003e, python3-biopython \u003c!nocheck\u003e, python3-cvxopt \u003c!nocheck\u003e, python3-docutils \u003c!nocheck\u003e, python3-freezegun \u003c!nocheck\u003e, python3-isodate \u003c!nocheck\u003e, python3-jsonschema \u003c!nocheck\u003e, python3-networkx \u003c!nocheck\u003e, python3-numpy \u003c!nocheck\u003e, python3-odf \u003c!nocheck\u003e, python3-openpyxl \u003c!nocheck\u003e, python3-packaging \u003c!nocheck\u003e, python3-pandas \u003c!nocheck\u003e, python3-pyfastx \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-pytest-mock \u003c!nocheck\u003e, python3-referencing \u003c!nocheck\u003e, python3-ruamel.yaml \u003c!nocheck\u003e, python3-scipy \u003c!nocheck\u003e, python3-setuptools, python3-treetime \u003c!nocheck\u003e, python3-typeshed \u003c!nocheck\u003e, python3-typing-extensions \u003c!nocheck\u003e, python3-xlrd \u003c!nocheck\u003e, python3-xopen, python3-zstandard \u003c!nocheck\u003e, vcftools \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "e93275865e1a62645e747b918cd14e99f14cf9da492bd021aa7709ecdba64b2e 2738 augur_24.4.0-3.dsc 054aeafe72e60828e6168e9ea5bc9bfd6fa7665f0b5684ca6663ccfbd2d4f34b 6802265 augur_24.4.0.orig.tar.gz 71c475a15d563d30d7e3cd52afacedeb758ac184bd317d4e50136f6a151edb65 16504 augur_24.4.0-3.debian.tar.xz"
-  ],
-  "Dgit": [
-    "0887a42447190171cf8b94e10920ed4f151ee0c9 debian archive/debian/24.4.0-3 https://git.dgit.debian.org/augur"
+    "be1f26959650056c6e66222330e0822bea92b2780386dc355db478aff07c301f 2931 augur_34.3.0-1.dsc ba869ebb629c0e76c6415e8c3039c1dcfef370c0f29d7500453f981cf2c0da0c 7439114 augur_34.3.0.orig.tar.gz 6d70c759f99d940808cea496c986963367cc333ab7a61dace3f041d67bdece5f 20984 augur_34.3.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/a/augur"
   ],
   "Files": [
-    "6f776e8d99a685bf5dd82fc691f8ab2c 2738 augur_24.4.0-3.dsc 50d43c5099edf9c39d42b6044528716d 6802265 augur_24.4.0.orig.tar.gz 4e40069cd0bffba4528750ea4dfa6855 16504 augur_24.4.0-3.debian.tar.xz"
+    "d8c501b6030adac159c21f31ec713f69 2931 augur_34.3.0-1.dsc b9db212f718f8bec6ba49d3205e66833 7439114 augur_34.3.0.orig.tar.gz b26b09bd0cd08f50b05cc5539598053c 20984 augur_34.3.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
-  ],
-  "Git-Tag-Info": [
-    "tag=38ef7b98241bb0b6cd221f746d9d6de067cdd431 fp=724d609337113c710550d7473c26763f6c67e6e2"
-  ],
-  "Git-Tag-Tagger": [
-    "Michael R. Crusoe \u003ccrusoe@debian.org\u003e"
   ],
   "Homepage": [
     "https://github.com/nextstrain/augur"
@@ -48,10 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
-    "autopkgtest-pkg-pybuild"
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "flake8, mypy, python3-all, python3-freezegun, python3-pytest, python3-pytest-mock, python3-typeshed"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e, Étienne Mollier \u003cemollier@debian.org\u003e"
@@ -63,6 +57,6 @@
     "https://salsa.debian.org/med-team/augur.git"
   ],
   "Version": [
-    "24.4.0-3"
+    "34.3.0-1"
   ]
 }
