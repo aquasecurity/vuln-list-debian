@@ -6,16 +6,19 @@
     "librust-snap-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3b3f55dbb5b2ceb22e7b1fc901b00518547fadb581cbfead7d9f15ca1ffafa0c 2310 rust-snap_1.1.1-1.dsc 1b6b67fb9a61334225b5b790716f609cd58395f895b3fe8b328786812a40bc3b 33763 rust-snap_1.1.1.orig.tar.gz ae5e65d7434a83bf074e8f0b452ed477a0d6add96bbc533ff717f7dae12fccb6 2720 rust-snap_1.1.1-1.debian.tar.xz"
+    "ee4f366197d3a33e599425a2da3c56a3ff1e78c5da6a8a1ad3e511af6317a8ca 2212 rust-snap_1.1.2-1.dsc 199905e6153d6405f9728fe44daace35f8f837bbf830bb6e85fbd5828709a886 34083 rust-snap_1.1.2.orig.tar.gz 85d4d61c8916d040fce2a3ae6eac254eca2d755eebebc718e5df2a911588a107 2876 rust-snap_1.1.2-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-snap"
   ],
   "Files": [
-    "9117cf0e710b60ca22cf8e9385672533 2310 rust-snap_1.1.1-1.dsc ad22a7a471122a12fdf3620cfab7945a 33763 rust-snap_1.1.1.orig.tar.gz e308f32aa574df219154b24a0b88f0da 2720 rust-snap_1.1.1-1.debian.tar.xz"
+    "99ce958fbd0a241fcb32ab1a68725b2c 2212 rust-snap_1.1.2-1.dsc 192e5dc8ec99e1c4931c4ee15312c5cb 34083 rust-snap_1.1.2.orig.tar.gz d64fe1456bb4f2c1decf61ca6fa74f20 2876 rust-snap_1.1.2-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-doc-comment-0.3+default-dev"
+    "dh-cargo, librust-doc-comment-0.3+default-dev, rustc"
   ],
   "Uploaders": [
     "Josenilson Ferreira da Silva \u003cnilsonfsilva@hotmail.com\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/snap]"
   ],
   "Version": [
-    "1.1.1-1"
+    "1.1.2-1"
   ]
 }
