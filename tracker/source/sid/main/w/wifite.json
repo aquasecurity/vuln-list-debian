@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-python3, python3, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "aircrack-ng \u003c!nocheck\u003e, cowpatty \u003c!nocheck\u003e, python3-chardet \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, tshark \u003c!nocheck\u003e"
+    "aircrack-ng \u003c!nocheck\u003e, cowpatty \u003c!nocheck\u003e, hcxtools \u003c!nocheck\u003e, iproute2 \u003c!nocheck\u003e, iptables \u003c!nocheck\u003e, python3-chardet \u003c!nocheck\u003e, python3-pytest \u003c!nocheck\u003e, python3-rich \u003c!nocheck\u003e, python3-scapy \u003c!nocheck\u003e, tshark \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "50e8aa027b0ec9bbe827793ec515f973a3c07ab7eab4c1e075f0e6851fe23c2d 2138 wifite_2.8.2-2.dsc d2eb49e72bf9c273008a9f9fc6db194366287ca1d89e05ac79b51a3306bf5cc2 4633059 wifite_2.8.2.orig.tar.gz 3f79ecd71dcaca631fb16e07893d1c3fdb3808aac30a9577d4e66e877317a6c5 8072 wifite_2.8.2-2.debian.tar.xz"
+    "316847adb8f88fb0276b946dda58f123d1933c698eb4061445b5c31201338386 2331 wifite_3.0.0-1.dsc 404ca8f75f9f55f7f060c111511144e81d6bad9730a10f484770ea12a0eced35 5490509 wifite_3.0.0.orig.tar.gz 50ce8c322212bd545f5f64ed454222042488d09294200d79b6186ba9aacd9371 6616 wifite_3.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/w/wifite"
   ],
   "Files": [
-    "ac2a216e74198627774f3cb0e9cdd605 2138 wifite_2.8.2-2.dsc 09772608f8a54b8373913063f270e2bb 4633059 wifite_2.8.2.orig.tar.gz 6d84a23bd32e336e6b84affefba3ff46 8072 wifite_2.8.2-2.debian.tar.xz"
+    "6c5e96e33ca25ff661a66523ae5caa7d 2331 wifite_3.0.0-1.dsc 073a966ac0575fa42cfc0b500b4a10c4 5490509 wifite_3.0.0.orig.tar.gz 094cbf5fc012053b61110e1b974726a5 6616 wifite_3.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -47,6 +47,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "cowpatty, hcxtools, iproute2, iptables, python3-pytest"
+  ],
   "Uploaders": [
     "Daniel Echeverri \u003cepsilon@debian.org\u003e"
   ],
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/pkg-security-team/wifite.git"
   ],
   "Version": [
-    "2.8.2-2"
+    "3.0.0-1"
   ]
 }
