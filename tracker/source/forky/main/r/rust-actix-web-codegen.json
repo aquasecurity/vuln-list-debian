@@ -6,16 +6,19 @@
     "librust-actix-web-codegen-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo, cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.72) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-actix-router-0.5-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-2+default-dev \u003c!nocheck\u003e, librust-syn-2+extra-traits-dev \u003c!nocheck\u003e, librust-syn-2+full-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.89) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-actix-router-0.5-dev \u003c!nocheck\u003e, librust-proc-macro2-1+default-dev \u003c!nocheck\u003e, librust-quote-1+default-dev \u003c!nocheck\u003e, librust-syn-3+default-dev \u003c!nocheck\u003e, librust-syn-3+extra-traits-dev \u003c!nocheck\u003e, librust-syn-3+full-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "02b21d5c7e11c1c5883548b5a915b4e5f6f3372fd0dc79f41ed37b13acfbbd8f 2868 rust-actix-web-codegen_4.3.0-1.dsc f591380e2e68490b5dfaf1dd1aa0ebe78d84ba7067078512b4ea6e4492d622b8 20382 rust-actix-web-codegen_4.3.0.orig.tar.gz 6f152a17e525b9fbdd508057e7a72854c79acf0fdba81c27b4d746ef25b95c4f 2848 rust-actix-web-codegen_4.3.0-1.debian.tar.xz"
+    "6cec3a4b891bf858f07da303ff2d5c7c1fba3b4382924bce4df35ae820dedb83 2510 rust-actix-web-codegen_4.5.0-1.dsc f7c9f4c52b954a73c76757a3952d3437fca00a2fbcb49704f8a6ea9f767e73f0 32535 rust-actix-web-codegen_4.5.0.orig.tar.gz c37f9c7a5c3aa7863ba0ae99ff5b9bad971614a49d6f1052900291b9a9320310 3384 rust-actix-web-codegen_4.5.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-actix-web-codegen"
   ],
   "Files": [
-    "acec8424d56d1e48704d5c5afb2f1ab3 2868 rust-actix-web-codegen_4.3.0-1.dsc 98e8328cf2ef3a141105ffb5330a03da 20382 rust-actix-web-codegen_4.3.0.orig.tar.gz 1eb9d5c586afe0c75492128bdfdbdbaf 2848 rust-actix-web-codegen_4.3.0-1.debian.tar.xz"
+    "b7d1b96f778d938f0463115d7b91b45b 2510 rust-actix-web-codegen_4.5.0-1.dsc e8ec79fa67365d50a467545f90e4f8cd 32535 rust-actix-web-codegen_4.5.0.orig.tar.gz 31645db34b3dd19813b804418316c921 3384 rust-actix-web-codegen_4.5.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-actix-macros-0.2+default-dev, librust-actix-rt-2+default-dev, librust-actix-test-0.1+default-dev, librust-actix-utils-3+default-dev, librust-actix-web-4+default-dev, librust-futures-core-0.3+alloc-dev, librust-rustversion-1+default-dev, librust-trybuild-1+default-dev, rustc"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "kpcyrd \u003cgit@rxv.cc\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/actix-web-codegen]"
   ],
   "Version": [
-    "4.3.0-1"
+    "4.5.0-1"
   ]
 }
