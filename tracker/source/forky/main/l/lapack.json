@@ -3,10 +3,10 @@
     "any all"
   ],
   "Binary": [
-    "liblapack3, liblapack64-3, liblapacke, liblapacke64, liblapacke-dev, liblapacke64-dev, libtmglib3, libtmglib64-3, libtmglib-dev, libtmglib64-dev, liblapack-dev, liblapack64-dev, liblapack-test, liblapack64-test, liblapack-doc, libblas3, libatlas3-base, libblas64-3, libblas-dev, libblas64-dev, libblas-test, libblas64-test"
+    "liblapack3, liblapack64-3, liblapacke, liblapacke64, liblapacke-dev, liblapacke64-dev, libtmglib3, libtmglib64-3, libtmglib-dev, libtmglib64-dev, liblapack-dev, liblapack64-dev, liblapack-test, liblapack64-test, liblapack-doc, libblas3, libblas64-3, libblas-dev, libblas64-dev, libblas-test, libblas64-test"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-exec"
+    "debhelper-compat (= 14), dh-exec, dh-sequence-doc-privacy"
   ],
   "Build-Depends-Arch": [
     "gfortran-for-host, python3 \u003c!nocheck\u003e"
@@ -15,13 +15,13 @@
     "doxygen, graphviz, rename"
   ],
   "Checksums-Sha256": [
-    "9876dc7bf6e862ddaaac8ac1cadcd474c0dfb431504b09a93651170f8d50160f 3421 lapack_3.12.1-8.dsc 2ca6407a001a474d4d4d35f3a61550156050c48016d949f0da0529c0aa052422 8067087 lapack_3.12.1.orig.tar.gz fbbb7f768ffec6869e01270f775cb48ba26adf503f36ebdc6a4ceef6c7f0b020 30156 lapack_3.12.1-8.debian.tar.xz"
+    "96e757071a46165bafde8e82499b0d25e75037bd16f51658afe4003ba5835dc7 3359 lapack_3.12.1-9.dsc 2ca6407a001a474d4d4d35f3a61550156050c48016d949f0da0529c0aa052422 8067087 lapack_3.12.1.orig.tar.gz f7f0fec1585e92c1b659d3713cc2c2d7c7c700909167f2dc1867711d3b5825df 30784 lapack_3.12.1-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/lapack"
   ],
   "Files": [
-    "65716d725113c9872554a96f25a5625b 3421 lapack_3.12.1-8.dsc 2f069617e16b42f5eddcfee85768f204 8067087 lapack_3.12.1.orig.tar.gz 1392240cbd4d7b5d77c8f80eaefb7b7b 30156 lapack_3.12.1-8.debian.tar.xz"
+    "1765798cb2b7f89a6f1474a85cf82ec5 3359 lapack_3.12.1-9.dsc 2f069617e16b42f5eddcfee85768f204 8067087 lapack_3.12.1.orig.tar.gz 8c91ac7372a0abcb3870ec78fdbeaa56 30784 lapack_3.12.1-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "lapack"
   ],
   "Package-List": [
-    "libatlas3-base deb oldlibs optional arch=any libblas-dev deb libdevel optional arch=any libblas-test deb devel optional arch=any libblas3 deb libs optional arch=any libblas64-3 deb libs optional arch=any libblas64-dev deb libdevel optional arch=any libblas64-test deb devel optional arch=any liblapack-dev deb libdevel optional arch=any liblapack-doc deb doc optional arch=all liblapack-test deb devel optional arch=any liblapack3 deb libs optional arch=any liblapack64-3 deb libs optional arch=any liblapack64-dev deb libdevel optional arch=any liblapack64-test deb devel optional arch=any liblapacke deb libs optional arch=any liblapacke-dev deb libdevel optional arch=any liblapacke64 deb libs optional arch=any liblapacke64-dev deb libdevel optional arch=any libtmglib-dev deb libdevel optional arch=any libtmglib3 deb libs optional arch=any libtmglib64-3 deb libs optional arch=any libtmglib64-dev deb libdevel optional arch=any"
+    "libblas-dev deb libdevel optional arch=any libblas-test deb devel optional arch=any libblas3 deb libs optional arch=any libblas64-3 deb libs optional arch=any libblas64-dev deb libdevel optional arch=any libblas64-test deb devel optional arch=any liblapack-dev deb libdevel optional arch=any liblapack-doc deb doc optional arch=all liblapack-test deb devel optional arch=any liblapack3 deb libs optional arch=any liblapack64-3 deb libs optional arch=any liblapack64-dev deb libdevel optional arch=any liblapack64-test deb devel optional arch=any liblapacke deb libs optional arch=any liblapacke-dev deb libdevel optional arch=any liblapacke64 deb libs optional arch=any liblapacke64-dev deb libdevel optional arch=any libtmglib-dev deb libdevel optional arch=any libtmglib3 deb libs optional arch=any libtmglib64-3 deb libs optional arch=any libtmglib64-dev deb libdevel optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -45,7 +45,7 @@
     "libs"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -63,6 +63,6 @@
     "https://salsa.debian.org/science-team/lapack.git"
   ],
   "Version": [
-    "3.12.1-8"
+    "3.12.1-9"
   ]
 }
