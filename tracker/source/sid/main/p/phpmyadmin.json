@@ -6,16 +6,16 @@
     "phpmyadmin"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-phpcomposer, dh-sequence-sphinxdoc, libjs-bootstrap5, locales-all, minify, php-bz2, php-cli, php-code-lts-u2f-php-server, php-composer-ca-bundle, php-curl, php-gd, php-google-recaptcha, php-mariadb-mysql-kbs, php-mbstring, php-mysql, php-nikic-fast-route, php-phpmyadmin-motranslator, php-phpmyadmin-shapefile (\u003e= 3.0.1), php-phpmyadmin-sql-parser (\u003e= 5.8), php-phpseclib, php-psr-http-factory, php-psr-http-message, php-slim-psr7, php-symfony-config, php-symfony-dependency-injection, php-symfony-expression-language, php-tcpdf, php-twig (\u003e= 3.3.5), php-twig-i18n-extension (\u003e= 4.1.3), php-webmozart-assert (\u003e= 1.10), php-zip, phpab, phpunit, pkg-php-tools, po-debconf, python3-sphinx, sassc, webpack"
+    "debhelper-compat (= 13), dh-sequence-phpcomposer, dh-sequence-sphinxdoc, libjs-bootstrap5, locales-all, minify, node-babel7, node-bootstrap (\u003e= 5.3.8), node-quickselect, php-bz2, php-cli, php-code-lts-u2f-php-server, php-composer-ca-bundle, php-curl, php-gd, php-google-recaptcha, php-mariadb-mysql-kbs, php-mbstring, php-mysql, php-nikic-fast-route, php-phpmyadmin-motranslator, php-phpmyadmin-shapefile (\u003e= 3.0.1), php-phpmyadmin-sql-parser (\u003e= 5.8), php-phpseclib, php-psr-http-factory, php-psr-http-message, php-slim-psr7, php-symfony-config, php-symfony-dependency-injection, php-symfony-expression-language, php-tcpdf, php-twig (\u003e= 3.3.5), php-twig-i18n-extension (\u003e= 4.1.3), php-webmozart-assert (\u003e= 1.10), php-zip, phpab, phpunit (\u003e= 13), pkg-php-tools, po-debconf, python3-sphinx, sassc, webpack"
   ],
   "Checksums-Sha256": [
-    "ebd562d05d1f867bd0f5640acca5cae078b320a8ebb54e7a26153b43e824923b 2530 phpmyadmin_5.2.4~dev~git20260809.e0909b211b+dfsg-1.dsc 0dbb4ca14d42cde4bcbb9e18917e6c61c0dbcf04dc0285ee289e2054f34f1d7c 10458416 phpmyadmin_5.2.4~dev~git20260809.e0909b211b+dfsg.orig.tar.xz 9d30da6bfd5ed90959d69d45e2bc4844f18e78d233ad9e6cfddd10a9721c501f 1242580 phpmyadmin_5.2.4~dev~git20260809.e0909b211b+dfsg-1.debian.tar.xz"
+    "b1cf517fc9a3ace31ae911007a9d42c90467621701d68e5e91ac38c944c634e0 2653 phpmyadmin_5.2.4~dev~git20261119.f3f112049a+dfsg-1.dsc 3dc9e461e44569eec829f34449eb86cdf09dd2f434f6335fc35b45b26c63dbc1 10633136 phpmyadmin_5.2.4~dev~git20261119.f3f112049a+dfsg.orig.tar.xz 5ab8831a9a16c46ba97ea8b41c6f19fb805385871df8b85371c80fcbb1bb5fc3 1065920 phpmyadmin_5.2.4~dev~git20261119.f3f112049a+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/phpmyadmin"
   ],
   "Files": [
-    "c6e1cddadd5631015b0251c4e4851601 2530 phpmyadmin_5.2.4~dev~git20260809.e0909b211b+dfsg-1.dsc c4d4b6954b8ac6d2ffd55dc346e431a3 10458416 phpmyadmin_5.2.4~dev~git20260809.e0909b211b+dfsg.orig.tar.xz 0457a1a62926addc371f68d07ffefd52 1242580 phpmyadmin_5.2.4~dev~git20260809.e0909b211b+dfsg-1.debian.tar.xz"
+    "c6e323e3bf67cd57984bfac4ac9a58a5 2653 phpmyadmin_5.2.4~dev~git20261119.f3f112049a+dfsg-1.dsc 415ba97c2c34cc9b04ae4e2693a851d1 10633136 phpmyadmin_5.2.4~dev~git20261119.f3f112049a+dfsg.orig.tar.xz 8676387f1a092479d5a04c6af8ad9417 1065920 phpmyadmin_5.2.4~dev~git20261119.f3f112049a+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -45,7 +45,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "default-mysql-server, mariadb-server, php-bz2, php-cli, php-code-lts-u2f-php-server, php-curl, php-gd, php-mysql, php-tcpdf, php-zip, phpab, phpunit"
+    "curl, dbconfig-common, debconf, lighttpd, mariadb-server, php-bz2, php-cgi, php-cli, php-code-lts-u2f-php-server, php-curl, php-gd, php-mysql, php-tcpdf, php-zip, phpab, phpunit, python3, python3-mechanize"
   ],
   "Uploaders": [
     "Felipe Sateler \u003cfsateler@debian.org\u003e, William Desportes \u003cwilliamdes@wdes.fr\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/phpmyadmin-team/phpmyadmin.git -b debian/latest"
   ],
   "Version": [
-    "4:5.2.4~dev~git20260809.e0909b211b+dfsg-1"
+    "4:5.2.4~dev~git20261119.f3f112049a+dfsg-1"
   ]
 }
