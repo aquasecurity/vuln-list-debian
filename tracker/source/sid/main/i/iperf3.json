@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "iperf3, libiperf-dev, libiperf0"
+    "iperf3, iperf3-client, iperf3-server, libiperf-dev, libiperf0"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-sequence-installsysusers, libsctp-dev [linux-any], libssl-dev"
+    "debhelper-compat (= 14), libsctp-dev [linux-any], libssl-dev"
   ],
   "Checksums-Sha256": [
-    "cecc961fb19d21e402c3a2af8deed9261f35d92c6ca809d4d77f3dc87e14d6ea 1358 iperf3_3.22-7.dsc 88ece405c56e70d1504e220b5ae3805bd1aaed40efd160e83a49a9aa0d734c45 638780 iperf3_3.22.orig.tar.xz 3bceb28cc91ab7de347565f1a1d5cd96212e7754f956af71e16734ba23e88fa8 16240 iperf3_3.22-7.debian.tar.xz"
+    "0d00c909c43e1fc37cdfc8233f06c5a577270f467b3572452b800cf7cc152273 1449 iperf3_3.22-9.dsc 88ece405c56e70d1504e220b5ae3805bd1aaed40efd160e83a49a9aa0d734c45 638780 iperf3_3.22.orig.tar.xz 9651623894f35de15a261928f8f007155105d14d1bb6f80c58222879722fc3bc 15148 iperf3_3.22-9.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/i/iperf3"
   ],
   "Files": [
-    "aeb8ca1f2630da9b1504c8c24b627d29 1358 iperf3_3.22-7.dsc f572295b83d81879416b7727b080c0ab 638780 iperf3_3.22.orig.tar.xz 5404acdb0d414d67c077de64caac63e1 16240 iperf3_3.22-7.debian.tar.xz"
+    "78f494893b2d68e47aa54ea9b21980e2 1449 iperf3_3.22-9.dsc f572295b83d81879416b7727b080c0ab 638780 iperf3_3.22.orig.tar.xz c5d7ba19d28bff8e9444de9440063f2a 15148 iperf3_3.22-9.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "iperf3"
   ],
   "Package-List": [
-    "iperf3 deb net optional arch=any libiperf-dev deb libdevel optional arch=any libiperf0 deb libs optional arch=any"
+    "iperf3 deb oldlibs optional arch=all iperf3-client deb net optional arch=any iperf3-server deb net optional arch=all libiperf-dev deb libdevel optional arch=any libiperf0 deb libs optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -48,6 +48,6 @@
     "https://forgejo.debian.net/linux/iperf3"
   ],
   "Version": [
-    "3.22-7"
+    "3.22-9"
   ]
 }
