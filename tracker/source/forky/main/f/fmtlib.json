@@ -3,25 +3,25 @@
     "any all"
   ],
   "Binary": [
-    "libfmt-dev, libfmt-doc, libfmt11"
+    "libfmt-dev, libfmt-doc, libfmt12"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "debhelper-compat (= 14)"
   ],
   "Build-Depends-Arch": [
-    "cmake, googletest"
+    "cmake, googletest \u003c!nocheck\u003e"
   ],
   "Build-Depends-Indep": [
-    "dh-sequence-mkdocs, doxygen, mkdocs, mkdocstrings, python3-typing-extensions"
+    "dh-sequence-mkdocs \u003c!nodoc\u003e, doxygen \u003c!nodoc\u003e, mkdocs \u003c!nodoc\u003e, mkdocstrings \u003c!nodoc\u003e, python3-typing-extensions \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "12db4ece2d6d8c6d680a9fbd815916aaea8a96ce19cb7b9874b400f3a3c6dfbe 1457 fmtlib_11.1.1+ds1-2.dsc 7d8550c9c5fdc4d03d50b55e0697176a19d3f34a3070580fb54e282da1aca555 260848 fmtlib_11.1.1+ds1.orig.tar.xz c74a42aaf45eb4f5f08517184a0b418ab5b516e41ce58d02fb1bbff047de6a19 17344 fmtlib_11.1.1+ds1-2.debian.tar.xz"
+    "43f653f1f9833b01d2083d1401b6295900e405993e121a3934f12e1453d17fd6 1543 fmtlib_12.2.1+ds1-1.dsc 12b45e6c01f57963fda6af853067216a6225671b18729ada86ea068844e31365 291004 fmtlib_12.2.1+ds1.orig.tar.xz 54f0fa8b19c45c8635d09c59c529c5fb5b88ca0fcab13d81fcbec6826dbd2ec0 9616 fmtlib_12.2.1+ds1-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/fmtlib"
   ],
   "Files": [
-    "ae4db44b5033bd5d558b51f6c025939c 1457 fmtlib_11.1.1+ds1-2.dsc 86d993fd3ba00a7f3d4a68d23461b124 260848 fmtlib_11.1.1+ds1.orig.tar.xz efd4e67cf1659822dc8ba3270d985a01 17344 fmtlib_11.1.1+ds1-2.debian.tar.xz"
+    "3c15341a911989a6512b46bd12216712 1543 fmtlib_12.2.1+ds1-1.dsc bab558ee8f4fb90536f5900cfa16d6ab 291004 fmtlib_12.2.1+ds1.orig.tar.xz 724b2cf681d61d58fa45df0141c2040a 9616 fmtlib_12.2.1+ds1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -36,7 +36,7 @@
     "fmtlib"
   ],
   "Package-List": [
-    "libfmt-dev deb libdevel optional arch=any libfmt-doc deb doc optional arch=all libfmt11 deb libs optional arch=any"
+    "libfmt-dev deb libdevel optional arch=any libfmt-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc libfmt12 deb libs optional arch=any"
   ],
   "Priority": [
     "extra"
@@ -45,7 +45,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/zhsj/fmtlib"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/zhsj/fmtlib.git"
   ],
   "Version": [
-    "11.1.1+ds1-2"
+    "12.2.1+ds1-1"
   ]
 }

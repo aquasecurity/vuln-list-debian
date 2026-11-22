@@ -6,16 +6,19 @@
     "librust-unescaper-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-1+default-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-thiserror-2+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "3d53137681a9ddee7b1ada420a3bc66228ba36a02977caea0de00bf9b5c1f8a0 2223 rust-unescaper_0.1.5-1.dsc c878a167baa8afd137494101a688ef8c67125089ff2249284bd2b5f9bfedb815 17960 rust-unescaper_0.1.5.orig.tar.gz 5ef7fc1d105310e85e38e1777282b4fb9544670963dfe9813a65a33bfa61114c 2676 rust-unescaper_0.1.5-1.debian.tar.xz"
+    "8a1961dadb2ab472b9be23f1632b5301f6cc81889ae01301e5ae7f56befa290b 2262 rust-unescaper_0.1.10-1.dsc 7285e83a80ce76f5e7bce79fa41f68d78ba62d1003cf27bf748ab24413808cf4 22073 rust-unescaper_0.1.10.orig.tar.gz 3fd6d73430b29203666debedc2a2e8245f399adc5e35ceaff1780cf4981bf141 2988 rust-unescaper_0.1.10-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-unescaper"
   ],
   "Files": [
-    "21ca4bac8f60ed1dcfcf48d97919487d 2223 rust-unescaper_0.1.5-1.dsc d5b687c9c977d6a1c96df35092742376 17960 rust-unescaper_0.1.5.orig.tar.gz 760fe7f0ae14c8632c448093ba8f6cd8 2676 rust-unescaper_0.1.5-1.debian.tar.xz"
+    "a99e50b16bcc7de439ad1cdd18ce0241 2262 rust-unescaper_0.1.10-1.dsc 947af2d026ba96ffdf404789a22ab8bf 22073 rust-unescaper_0.1.10.orig.tar.gz 4fa5c8f984013461cf19e2d88d66d6a5 2988 rust-unescaper_0.1.10-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Johannes Schauer Marin Rodrigues \u003cjosch@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/unescaper]"
   ],
   "Version": [
-    "0.1.5-1"
+    "0.1.10-1"
   ]
 }

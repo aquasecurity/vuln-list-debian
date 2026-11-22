@@ -6,16 +6,19 @@
     "librust-indenter-dev"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 12), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.39) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "604b69d87d039633650c4812f3ab09c8722470c15d9540202f66e5b3e2d9b256 1811 rust-indenter_0.3.3-1.dsc ce23b50ad8242c51a442f3ff322d56b02f08852c77e4c0b4d3fd684abc89c683 6587 rust-indenter_0.3.3.orig.tar.gz 9870b464d9627ce6d0ecbe72a1bede44987944ad797b92100e81d6fe75c7ee27 2536 rust-indenter_0.3.3-1.debian.tar.xz"
+    "59b3d5d0f285f91d2853f2f8cc768540154a51da878cce89ae164ce9225ed0f2 2201 rust-indenter_0.3.4-1.dsc 964de6e86d545b246d84badc0fef527924ace5134f30641c203ef52ba83f58d5 11101 rust-indenter_0.3.4.orig.tar.gz 5b259f77d36eca970d90210e23d23882778b7fad6e19ec94fbf5010fcfdd0620 2784 rust-indenter_0.3.4-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-indenter"
   ],
   "Files": [
-    "d891584219192b701ac8c7642d776dc1 1811 rust-indenter_0.3.3-1.dsc b282f9480cee8f4248077e6033a7b5a7 6587 rust-indenter_0.3.3.orig.tar.gz 542d991f6360f42c3055b7d4ce82b033 2536 rust-indenter_0.3.3-1.debian.tar.xz"
+    "15aabd5656a141388c62299e1ceb2361 2201 rust-indenter_0.3.4-1.dsc ab47171a0ecf8951392783ebf39750bb 11101 rust-indenter_0.3.4.orig.tar.gz 97ab817e618692ff78ccfcd29e81092b 2784 rust-indenter_0.3.4-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,13 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo"
+    "dh-cargo, rustc"
   ],
   "Uploaders": [
     "Jelmer Vernooĳ \u003cjelmer@debian.org\u003e"
@@ -57,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/indenter]"
   ],
   "Version": [
-    "0.3.3-1"
+    "0.3.4-1"
   ]
 }
