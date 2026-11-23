@@ -6,16 +6,16 @@
     "php-pear"
   ],
   "Build-Depends": [
-    "debhelper (\u003e= 10), php-cli, php-xml"
+    "debhelper-compat (= 14), php-archive-tar, php-cli, php-console-getopt, php-pear \u003c!nocheck\u003e, php-structures-graph, php-xml, php-xml-util, phpunit \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "098d62d07d60961ef5811d3ac6e95f942e71f09108796a3ddfbbe6d30cb2e465 1870 php-pear_1.10.18+submodules+notgz-1.dsc bd86d18dd312db61031749ccaf514ed06d790b5db1a7a1d058cc7a8751fb6161 2213942 php-pear_1.10.18+submodules+notgz.orig.tar.gz 4be46baeaf3c9a4f04810e05594b40dfd85952ae06e64e2fc075dc6cc9a9d096 7056 php-pear_1.10.18+submodules+notgz-1.debian.tar.xz"
+    "107850eaa3e69a4b83c5f85797fe0298684ef4e0162ad574710af16e37f9c1b7 1970 php-pear_1.10.18+tgz-1.dsc 8e04d40e14e89e8ce25f88bec6f25f76a1e07b903c4b302e4396a8147d689c80 5479580 php-pear_1.10.18+tgz.orig.tar.xz 770e9a7c31d3886288beafbbdc0cd9c3abba733e453b89239deb9fcf27d4afc8 18880 php-pear_1.10.18+tgz-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/php-pear"
   ],
   "Files": [
-    "a55a01bf44c5fd978b4ef87eb14c806e 1870 php-pear_1.10.18+submodules+notgz-1.dsc 37c47f63da2fea4d028e11aaceaeee52 2213942 php-pear_1.10.18+submodules+notgz.orig.tar.gz 7f66fcf55c2742299dfd68d2bc20d2c4 7056 php-pear_1.10.18+submodules+notgz-1.debian.tar.xz"
+    "7bcb14b143f2ea3354cf27e4fef23a38 1970 php-pear_1.10.18+tgz-1.dsc 47a143595b4a19c7df5e7e1e94264d01 5479580 php-pear_1.10.18+tgz.orig.tar.xz 0ceac6aa76db2981e0da45f7d225a6f3 18880 php-pear_1.10.18+tgz-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -39,7 +39,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.4.0"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "ca-certificates, phpunit"
   ],
   "Uploaders": [
     "Mathieu Parent \u003csathieu@debian.org\u003e, Ondřej Surý \u003condrej@debian.org\u003e, Debian PHP PEAR Maintainers \u003cpkg-php-pear@lists.alioth.debian.org\u003e, David Prévot \u003ctaffit@debian.org\u003e"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/php-team/pear/php-pear.git"
   ],
   "Version": [
-    "1:1.10.18+submodules+notgz-1"
+    "1:1.10.18+tgz-1"
   ]
 }
