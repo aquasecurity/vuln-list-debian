@@ -6,16 +6,16 @@
     "openstack-debian-images, openstack-debian-images-build-farm, openstack-debian-images-updater"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), openstack-pkg-tools"
+    "debhelper-compat (= 11), ipcalc, openstack-pkg-tools (\u003e= 158~)"
   ],
   "Checksums-Sha256": [
-    "278ece107758abebeb0a696323bb094ca25d64f8b101d9e150c5075bd794d669 1993 openstack-debian-images_1.95.dsc 247aae565b8e8c5548f7e7ebc8af90c6e9bbec0de0f87977dbec422dd8b9f9dd 47160 openstack-debian-images_1.95.tar.xz"
+    "34c46b6fcf0f6bd50634d139626c3d3dba1960496a2b972f315599920ac66ddb 2066 openstack-debian-images_1.98.dsc 54a7fa3fab88e8a3753e4ed0f89b05e9ddb40fb03b9c5a0d0b2881daca80b435 58520 openstack-debian-images_1.98.tar.xz"
   ],
   "Directory": [
     "pool/main/o/openstack-debian-images"
   ],
   "Files": [
-    "4bc25ad853708a5ac3140d18a0eebbcf 1993 openstack-debian-images_1.95.dsc a731b21c00995df43d6bf886b3a0cee4 47160 openstack-debian-images_1.95.tar.xz"
+    "e7b36b44e4a0a4129ca37aa9f0957355 2066 openstack-debian-images_1.98.dsc cf6278bdc8033a7f90413315271aa2d9 58520 openstack-debian-images_1.98.tar.xz"
   ],
   "Format": [
     "3.0 (native)"
@@ -38,6 +38,12 @@
   "Standards-Version": [
     "4.5.0"
   ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Uploaders": [
     "Thomas Goirand \u003czigo@debian.org\u003e"
   ],
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/openstack-team/debian/openstack-debian-images.git"
   ],
   "Version": [
-    "1.95"
+    "1.98"
   ]
 }
