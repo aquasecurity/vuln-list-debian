@@ -1,21 +1,24 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "libgnome-autoar-0-0, libgnome-autoar-0-dev, gir1.2-gnomeautoar-0.1"
+    "libgnome-autoar-0-0, libgnome-autoar-0-dev, gir1.2-gnomeautoar-0.1, libgnome-autoar-doc"
   ],
   "Build-Depends": [
     "debhelper-compat (= 14), dh-sequence-gir, gir1.2-gio-2.0-dev, gir1.2-glib-2.0-dev, gir1.2-gobject-2.0-dev, gir1.2-gtk-3.0-dev, gobject-introspection (\u003e= 1.80), libarchive-dev, libglib2.0-dev, libgtk-3-dev, meson, pkgconf, valac"
   ],
+  "Build-Depends-Indep": [
+    "gi-docgen \u003c!nodoc\u003e"
+  ],
   "Checksums-Sha256": [
-    "918e7344fd31782318277125124ca5c40b2609d013df29d1970d4238aff89fc2 2347 gnome-autoar_0.5.2-2.dsc 6c20bd16c87aba15869e56444424481f632ac302989a203e8ce4dcc73dea33a5 49748 gnome-autoar_0.5.2.orig.tar.xz 1bf2c35c927844227f1e66f3db3797c8a9ee36d0fe4da14baf0c7a3bfcab826c 5532 gnome-autoar_0.5.2-2.debian.tar.xz"
+    "9f8077bb655ea4859c5f5f562e2a5ebf5072b67c6119193c9f1ed80fa1240a53 2492 gnome-autoar_0.5.2-3.dsc 6c20bd16c87aba15869e56444424481f632ac302989a203e8ce4dcc73dea33a5 49748 gnome-autoar_0.5.2.orig.tar.xz ca84e83258f2500ba248c15d2fd48ed1140b8f051de6e84c18e355f2b4947b8b 5656 gnome-autoar_0.5.2-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/g/gnome-autoar"
   ],
   "Files": [
-    "e613b68550a428d260442c3825b114e5 2347 gnome-autoar_0.5.2-2.dsc 59e9c59bf195bb11c59b8005df61c000 49748 gnome-autoar_0.5.2.orig.tar.xz 5811197205e89b6dedab3387698e3f78 5532 gnome-autoar_0.5.2-2.debian.tar.xz"
+    "953e8313ceab06118d14baca03151037 2492 gnome-autoar_0.5.2-3.dsc 59e9c59bf195bb11c59b8005df61c000 49748 gnome-autoar_0.5.2.orig.tar.xz 7999e348847667ea1fb7ad88908e489a 5656 gnome-autoar_0.5.2-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,7 +30,7 @@
     "gnome-autoar"
   ],
   "Package-List": [
-    "gir1.2-gnomeautoar-0.1 deb introspection optional arch=any libgnome-autoar-0-0 deb libs optional arch=any libgnome-autoar-0-dev deb libdevel optional arch=any"
+    "gir1.2-gnomeautoar-0.1 deb introspection optional arch=any libgnome-autoar-0-0 deb libs optional arch=any libgnome-autoar-0-dev deb libdevel optional arch=any libgnome-autoar-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc"
   ],
   "Priority": [
     "optional"
@@ -54,6 +57,6 @@
     "https://salsa.debian.org/gnome-team/gnome-autoar.git"
   ],
   "Version": [
-    "0.5.2-2"
+    "0.5.2-3"
   ]
 }
