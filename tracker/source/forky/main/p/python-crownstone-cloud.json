@@ -6,22 +6,31 @@
     "python3-crownstone-cloud"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 11), dh-python, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, openstack-pkg-tools, pybuild-plugin-pyproject, python3-all, python3-setuptools"
   ],
   "Build-Depends-Indep": [
-    "python3-aiohttp, python3-certifi, python3-coverage"
+    "python3-aiohttp \u003c!nocheck\u003e, python3-certifi \u003c!nocheck\u003e, python3-coverage \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "ce9ce3fd1973a1fdc8268ebd944c7e92237b2986edd7d577449b734c1dce9783 2296 python-crownstone-cloud_1.4.11-2.dsc 06463f657c9e4a93aeb02a1182269e246d6ad63f2aebe26fd6067f79774ac757 20568 python-crownstone-cloud_1.4.11.orig.tar.xz f17886e5f26fb5265ca647af50ddc3e57e419e05fb206dd15caeb831abcdbfb3 2832 python-crownstone-cloud_1.4.11-2.debian.tar.xz"
+    "d67c82d0a2dbf5b3bb854b7eab3dd0c70e975e766358fd221c7514a3c385ab0c 2715 python-crownstone-cloud_1.4.11-3.dsc 06463f657c9e4a93aeb02a1182269e246d6ad63f2aebe26fd6067f79774ac757 20568 python-crownstone-cloud_1.4.11.orig.tar.xz 27d3f0f18fa9abcf8f83c82fb53897276f325ac21d8e51544e5300a525321624 3556 python-crownstone-cloud_1.4.11-3.debian.tar.xz"
+  ],
+  "Dgit": [
+    "f0bbab17ca6e00c8641fa02b8c42838d86a387cc debian archive/debian/1.4.11-3 https://git.dgit.debian.org/python-crownstone-cloud"
   ],
   "Directory": [
     "pool/main/p/python-crownstone-cloud"
   ],
   "Files": [
-    "6d89f78d0f246ba988a05b660be12bb2 2296 python-crownstone-cloud_1.4.11-2.dsc 0314d8f92d9a7f2f41c48df98fc94a71 20568 python-crownstone-cloud_1.4.11.orig.tar.xz 4cc3f3874aa139dc6d32a996acf7c800 2832 python-crownstone-cloud_1.4.11-2.debian.tar.xz"
+    "9b390d5b865cdfa7fd37576a4e2cf93e 2715 python-crownstone-cloud_1.4.11-3.dsc 0314d8f92d9a7f2f41c48df98fc94a71 20568 python-crownstone-cloud_1.4.11.orig.tar.xz 9cf179b415fd4d907eb5b930fc3406d5 3556 python-crownstone-cloud_1.4.11-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=877d5b4bb3bbedcae621a09505496ab8bff6583f fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+  ],
+  "Git-Tag-Tagger": [
+    "Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Homepage": [
     "https://github.com/Crownstone-Community/crownstone-lib-python-cloud"
@@ -42,10 +51,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.1"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
   ],
   "Uploaders": [
-    "Thomas Goirand \u003czigo@debian.org\u003e,"
+    "Thomas Goirand \u003czigo@debian.org\u003e, Edward Betts \u003cedward@4angle.com\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/homeassistant-team/deps/python-crownstone-cloud"
@@ -54,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-crownstone-cloud.git"
   ],
   "Version": [
-    "1.4.11-2"
+    "1.4.11-3"
   ]
 }

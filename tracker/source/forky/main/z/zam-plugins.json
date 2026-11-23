@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "any all"
   ],
   "Binary": [
-    "zam-plugins"
+    "zam-plugins, zam-plugins-jack, zam-plugins-clap, zam-plugins-ladspa, zam-plugins-lv2, zam-plugins-vst, zam-plugins-vst3"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dpf-source:native, ladspa-sdk, libgl-dev, libjack-dev | libjack-jackd2-dev, liblo-dev, libsamplerate0-dev, libzita-convolver-dev (\u003e= 4.0.0), pkg-config"
+    "debhelper-compat (= 14), dpf-source:native, ladspa-sdk, libfftw3-dev, libgl-dev, libjack-dev | libjack-jackd2-dev, liblo-dev, libsamplerate0-dev, libzita-convolver-dev (\u003e= 4.0.0), pkgconf"
   ],
   "Checksums-Sha256": [
-    "de90cf0e7b2ac1c03039a18673c346b78dc154536234cd164fafbabd2940b848 2226 zam-plugins_4.2+ds-1.dsc 82a100186f5f8d4316280641cd491c62566940c93a8e22cc55384d58fa74c5d4 12706784 zam-plugins_4.2+ds.orig.tar.xz ec9a2a0f6bd95a43b9cda34e4b6411fe3045ce646fd3c85554a9fc1eb14970fb 10624 zam-plugins_4.2+ds-1.debian.tar.xz"
+    "e9b0557be86df0c04afa1a9b0cf4eb9bf6c3d234583f3aaf856bb0ddc1eb98c4 2706 zam-plugins_4.5+ds-5.dsc 3119ca3011275b609a7a317cdf574154e077315f9425d64c2d503f62315a9f43 12945064 zam-plugins_4.5+ds.orig.tar.xz 105b5b1ec1b7f6169668e75312f08b6f0a97ea20a4428210718fc4412a7e9395 14856 zam-plugins_4.5+ds-5.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/z/zam-plugins"
   ],
   "Files": [
-    "398c8044b8ff56204b0e430ed05fb083 2226 zam-plugins_4.2+ds-1.dsc face9cefa8dbd324c10b11a1d41f94fe 12706784 zam-plugins_4.2+ds.orig.tar.xz 0bac86cf15da02228075504f8d55f698 10624 zam-plugins_4.2+ds-1.debian.tar.xz"
+    "91ce722b59502404bc3bee73a08a3f50 2706 zam-plugins_4.5+ds-5.dsc 26e264c9db7c713780230f4b2bcbbd3e 12945064 zam-plugins_4.5+ds.orig.tar.xz 635d1f73f097ab5a5728b0dfb6013be0 14856 zam-plugins_4.5+ds-5.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "zam-plugins"
   ],
   "Package-List": [
-    "zam-plugins deb sound optional arch=any"
+    "zam-plugins deb sound optional arch=all zam-plugins-clap deb sound optional arch=any zam-plugins-jack deb sound optional arch=any zam-plugins-ladspa deb sound optional arch=any zam-plugins-lv2 deb sound optional arch=any zam-plugins-vst deb sound optional arch=any zam-plugins-vst3 deb sound optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "ffmpeg, ladspa-sdk, lilv-utils, lv2file"
   ],
   "Uploaders": [
-    "Jaromír Mikeš \u003cmira.mikes@seznam.cz\u003e, Adrian Knoth \u003cadi@drcomp.erfurt.thur.de\u003e, Dennis Braun \u003csnd@debian.org\u003e,"
+    "Jaromír Mikeš \u003cmira.mikes@seznam.cz\u003e, Adrian Knoth \u003cadi@drcomp.erfurt.thur.de\u003e, Dennis Braun \u003csnd@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/multimedia-team/zam-plugins"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/multimedia-team/zam-plugins.git"
   ],
   "Version": [
-    "4.2+ds-1"
+    "4.5+ds-5"
   ]
 }
