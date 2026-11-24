@@ -6,25 +6,28 @@
     "python3-qbusmqttapi"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-python3, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-single-binary, pybuild-plugin-pyproject, python3-all, python3-hatchling"
+  ],
+  "Build-Depends-Indep": [
+    "python3-pytest \u003c!nocheck\u003e, python3-pytest-cov \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "fc433ff28dc3d482c58de79c74a346343a4ac2a67e087778506d1e02c96a7368 2396 python-qbusmqttapi_1.5.1-1.dsc 97cc03a69dbaf3ed9a28c2c6951627fa12318f22ed6cf4c3f791e7891edcb7e9 13124 python-qbusmqttapi_1.5.1.orig.tar.xz 372c3c8f73a0af422682acca27b96c3ad114bc9767e13214920e1cdd9e57c87c 2208 python-qbusmqttapi_1.5.1-1.debian.tar.xz"
+    "88a26e73ca9284c5c01060ecf42af320619bd3033bf7617002d7a548cb69ac4a 2536 python-qbusmqttapi_1.6.1-1.dsc 9a2fec07ccbe689898fa108427c6d7369ef45160f8571ffdacfbd0e9954ff022 20036 python-qbusmqttapi_1.6.1.orig.tar.xz aaa2313376bd1235b3814512940ed5ff8f0b46d7694835d9efbf5570d243f735 2376 python-qbusmqttapi_1.6.1-1.debian.tar.xz"
   ],
   "Dgit": [
-    "a86967fd3fbcbbaef06f5922a202ce40a36204dd debian archive/debian/1.5.1-1 https://git.dgit.debian.org/python-qbusmqttapi"
+    "a29352a06446c5343aab1512e21363d27e282337 debian archive/debian/1.6.1-1 https://git.dgit.debian.org/python-qbusmqttapi"
   ],
   "Directory": [
     "pool/main/p/python-qbusmqttapi"
   ],
   "Files": [
-    "ed1d815373168154500f1e959b44f2ba 2396 python-qbusmqttapi_1.5.1-1.dsc 7eff556fd9caca528609c7d616d9327d 13124 python-qbusmqttapi_1.5.1.orig.tar.xz 1f30cb4f1c60230a93f995c1a45aef34 2208 python-qbusmqttapi_1.5.1-1.debian.tar.xz"
+    "dba25eddb8c5ba1d829d91f7ee0f0668 2536 python-qbusmqttapi_1.6.1-1.dsc 4adc964a75e87de920ba6d6b5a47e209 20036 python-qbusmqttapi_1.6.1.orig.tar.xz dad40428a3259658dacf479e63c16ac1 2376 python-qbusmqttapi_1.6.1-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Git-Tag-Info": [
-    "tag=4b1798c01ca007b717244edf3a24229a63a74a6e fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
+    "tag=7e5f9e2017b7dfcf6e30a693bd0d8d8a3e053d93 fp=fb8acfa78c726089c38ad0269605a1098c63b92a"
   ],
   "Git-Tag-Tagger": [
     "Edward Betts \u003cedward@4angle.com\u003e"
@@ -50,6 +53,9 @@
   "Standards-Version": [
     "4.7.4"
   ],
+  "Testsuite": [
+    "autopkgtest-pkg-pybuild"
+  ],
   "Uploaders": [
     "Edward Betts \u003cedward@4angle.com\u003e"
   ],
@@ -60,6 +66,6 @@
     "https://salsa.debian.org/homeassistant-team/deps/python-qbusmqttapi.git"
   ],
   "Version": [
-    "1.5.1-1"
+    "1.6.1-1"
   ]
 }

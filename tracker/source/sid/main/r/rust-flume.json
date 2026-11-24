@@ -1,24 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "all"
   ],
   "Binary": [
     "librust-flume-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo"
-  ],
-  "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-fastrand-2+default-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-fastrand-2+js-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-fastrand-2+std-dev (\u003e= 2.3) \u003c!nocheck\u003e, librust-futures-core-0.3-dev \u003c!nocheck\u003e, librust-futures-sink-0.3-dev \u003c!nocheck\u003e, librust-spin+default-dev (\u003e= 0.9.8) \u003c!nocheck\u003e, librust-spin+mutex-dev (\u003e= 0.9.8) \u003c!nocheck\u003e"
+    "debhelper-compat (= 14), dh-sequence-rust, dh-sequence-single-binary, librust-async-std-1-dev, librust-crossbeam-channel-0.5-dev, librust-crossbeam-utils-0.8-dev, librust-fastrand-2-dev, librust-futures-core-0.3-dev, librust-futures-0.3-dev, librust-futures-sink-0.3-dev, librust-rand-0.8-dev, librust-spin-0.10-dev, librust-tokio-1-dev, librust-waker-fn-1-dev"
   ],
   "Checksums-Sha256": [
-    "0ddd43ebcfa2ec7b399d49ebffd3a0268eab14951a19a13b81099f7fc303d6cf 3008 rust-flume_0.12.0-1.dsc 5e139bc46ca777eb5efaf62df0ab8cc5fd400866427e56c68b22e414e53bd3be 68700 rust-flume_0.12.0.orig.tar.gz a517921b9e67be43111ea401980d7da037c0237a77e730a32457eada2323eba8 4072 rust-flume_0.12.0-1.debian.tar.xz"
+    "d24d0606d3cacb90fdcc6389a400a6e74ae1e74b35474e4ed99a1766bcbbfb82 2471 rust-flume_0.12.0+ds-1.dsc 94e6519e968d57ed46571ecd6d4cb3fa3410403cf4f802d4596599e1c3caeea8 108380 rust-flume_0.12.0+ds.orig.tar.xz 1be696f2dd9063cf75a8e8b4ec1204ef0a746055ca5057a0d9afcc0a2a16cfdc 6596 rust-flume_0.12.0+ds-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-flume"
   ],
   "Files": [
-    "11763e33c82e26ab05d7dbfcc920f0e5 3008 rust-flume_0.12.0-1.dsc d6485ae05b4b9546857928effb297647 68700 rust-flume_0.12.0.orig.tar.gz 88276a3bd15218ac6cc9956b335d61cd 4072 rust-flume_0.12.0-1.debian.tar.xz"
+    "a73e74664f4f11025748960c970e7595 2471 rust-flume_0.12.0+ds-1.dsc 39fc0ae837379db3435af148388f5fe4 108380 rust-flume_0.12.0+ds.orig.tar.xz 89dd9a11fc700ea08a006d2855727a4f 6596 rust-flume_0.12.0+ds-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -27,13 +24,13 @@
     "https://github.com/zesterer/flume"
   ],
   "Maintainer": [
-    "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
+    "Jonas Smedegaard \u003cdr@jones.dk\u003e"
   ],
   "Package": [
     "rust-flume"
   ],
   "Package-List": [
-    "librust-flume-dev deb rust optional arch=any"
+    "librust-flume-dev deb rust optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,18 +45,15 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-async-std-1+attributes-dev, librust-async-std-1+default-dev, librust-async-std-1+unstable-dev, librust-criterion-0.5-dev, librust-crossbeam-channel-0.5+default-dev, librust-crossbeam-utils-0.8+default-dev, librust-futures-0.3+default-dev, librust-futures-0.3+std-dev, librust-getrandom+default-dev, librust-getrandom+wasm-js-dev, librust-rand-0.8+default-dev, librust-tokio-1+default-dev, librust-tokio-1+macros-dev, librust-tokio-1+rt-dev, librust-waker-fn-1+default-dev, rustc"
-  ],
-  "Uploaders": [
-    "Ying-Chun Liu (PaulLiu) \u003cpaulliu@debian.org\u003e"
+    "dh-rust, librust-async-std-1-dev, librust-crossbeam-channel-0.5-dev, librust-crossbeam-utils-0.8-dev, librust-futures-0.3-dev, librust-rand-0.8-dev, librust-tokio-1-dev, librust-waker-fn-1-dev"
   ],
   "Vcs-Browser": [
-    "https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/flume"
+    "https://salsa.debian.org/debian/rust-flume"
   ],
   "Vcs-Git": [
-    "https://salsa.debian.org/rust-team/debcargo-conf.git [src/flume]"
+    "https://salsa.debian.org/debian/rust-flume.git"
   ],
   "Version": [
-    "0.12.0-1"
+    "0.12.0+ds-1"
   ]
 }
