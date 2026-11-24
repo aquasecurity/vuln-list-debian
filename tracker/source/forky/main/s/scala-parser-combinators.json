@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "scala-parser-combinators"
+    "libscala-parser-combinators-scala3-java"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk, maven-repo-helper, scala"
+    "debhelper-compat (= 14), dh-sequence-scala, dh-sequence-single-binary, scala3"
   ],
   "Checksums-Sha256": [
-    "e3ada13256a18131b7339dc1b2886beeebf09baf24c86cb1ddb80abe6da7fc96 2163 scala-parser-combinators_1.0.3-4.dsc 3fd127bcacd030992c2f7888e2b7aab7cd06cb58f2804e7bd1d4d141847ff047 43482 scala-parser-combinators_1.0.3.orig.tar.gz 2a85c5d5ebe5980b931d184902b2833ddc0004a45aebb94501be2951ab9de959 3520 scala-parser-combinators_1.0.3-4.debian.tar.xz"
+    "9ae265f8c3c8ba2c16494028e3012dc42a12d94a3fe4dcf8338d4412393f128d 2295 scala-parser-combinators_2.4.0-1.dsc ab3fdbe0d4abfdbb0383190afaeea410f3d14ab85b1abd7b40b8c80e4f597e2a 44504 scala-parser-combinators_2.4.0.orig.tar.xz 427a3d1da3d985dac488ec41c111a2c17f58f26cb6a8b6fead647e6208e3ab66 3828 scala-parser-combinators_2.4.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/scala-parser-combinators"
   ],
   "Files": [
-    "e5929f3e6170228af3ad7440267c0916 2163 scala-parser-combinators_1.0.3-4.dsc aa8cd49bbb5d2cb998a1095c0bf3a5c5 43482 scala-parser-combinators_1.0.3.orig.tar.gz 07af94907c7721e8f021f258883488bf 3520 scala-parser-combinators_1.0.3-4.debian.tar.xz"
+    "d569bb1b8b39f6fe390a03db2f622868 2295 scala-parser-combinators_2.4.0-1.dsc f00492e27b4b2bcd23eb88ef5a6678fe 44504 scala-parser-combinators_2.4.0.orig.tar.xz c820e57ae8def870d533f3a914dda2a2 3828 scala-parser-combinators_2.4.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "scala-parser-combinators"
   ],
   "Package-List": [
-    "scala-parser-combinators deb devel optional arch=all"
+    "libscala-parser-combinators-scala3-java deb java optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,10 +39,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "scala-debian-helper"
   ],
   "Uploaders": [
-    "Emmanuel Bourg \u003cebourg@apache.org\u003e"
+    "Emmanuel Bourg \u003cebourg@apache.org\u003e, Juan Manuel Méndez Rey \u003cjuan.mendezr@proton.me\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/java-team/scala-parser-combinators"
@@ -51,6 +57,6 @@
     "https://salsa.debian.org/java-team/scala-parser-combinators.git"
   ],
   "Version": [
-    "1.0.3-4"
+    "2.4.0-1"
   ]
 }
