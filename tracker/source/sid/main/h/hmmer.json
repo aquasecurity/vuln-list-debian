@@ -1,27 +1,27 @@
 {
   "Architecture": [
-    "any all"
+    "any-amd64 any-i386 arm64 powerpc ppc64 all"
   ],
   "Binary": [
-    "hmmer, hmmer-doc, hmmer-examples"
+    "hmmer, hmmer-doc, libhmmer3, libhmmer-dev, hmmer-examples"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), libdivsufsort-dev, python3"
+    "autoconf-archive, debhelper-compat (= 14), d-shlibs, libdivsufsort-dev, libeasel-dev, pkgconf, python3, rman, texlive-fonts-recommended, texlive-latex-base, texlive-latex-extra, texlive-latex-recommended"
   ],
   "Checksums-Sha256": [
-    "ed6f9a78f0395e7ae7bd682a72b3b6a3553508fc5be636186dc71e1eee988278 1774 hmmer_3.4+dfsg-3.dsc 87ada77366ed6ab0159a0c1217f8a55cbe9a708c4a98cf644929eb3703ce3309 13297988 hmmer_3.4+dfsg.orig.tar.xz 3864769123ce5f52fca65a9fad242e1930dc813e28baca4d09075d143379deda 12996 hmmer_3.4+dfsg-3.debian.tar.xz"
+    "6ee11729d536d5fc4dbcc9eee65b30b1478b55d498d3e20fa47ccbfd8f25b59e 2578 hmmer_3.4+dfsg2-2.dsc 30af0f1ffa10c074e821edf357fc35bd72653e67f5edf9f0cfde9ff88741fd71 7164916 hmmer_3.4+dfsg2.orig.tar.xz 38176e6214b210e3b85fef2b07daeac599928913748561be6dfc3efe267196a4 22820 hmmer_3.4+dfsg2-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/h/hmmer"
   ],
   "Files": [
-    "b026f0598e60afcc39455fc14645dc74 1774 hmmer_3.4+dfsg-3.dsc ac66418b48c613d96d43770f971a22d3 13297988 hmmer_3.4+dfsg.orig.tar.xz 1381e0ec563f438fa48b147b0c6b4335 12996 hmmer_3.4+dfsg-3.debian.tar.xz"
+    "4e122bb9936e4f92e6a1c8419296705a 2578 hmmer_3.4+dfsg2-2.dsc f3a745d90ba3d3f95a9936f3e49d4773 7164916 hmmer_3.4+dfsg2.orig.tar.xz 9a2fe7ea726dfe828f07a42eb305e6c6 22820 hmmer_3.4+dfsg2-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
   ],
   "Homepage": [
-    "http://hmmer.org/"
+    "https://hmmer.org/"
   ],
   "Maintainer": [
     "Debian Med Packaging Team \u003cdebian-med-packaging@lists.alioth.debian.org\u003e"
@@ -30,7 +30,7 @@
     "hmmer"
   ],
   "Package-List": [
-    "hmmer deb science optional arch=any-amd64,any-i386,arm64,powerpc,ppc64,x32 hmmer-doc deb doc optional arch=all hmmer-examples deb doc optional arch=any"
+    "hmmer deb science optional arch=any-amd64,any-i386,arm64,powerpc,ppc64,x32 hmmer-doc deb doc optional arch=all hmmer-examples deb doc optional arch=any-amd64,any-i386,arm64,powerpc,ppc64,x32 libhmmer-dev deb libdevel optional arch=any-amd64,any-i386,arm64,powerpc,ppc64,x32 libhmmer3 deb libs optional arch=any-amd64,any-i386,arm64,powerpc,ppc64,x32"
   ],
   "Priority": [
     "optional"
@@ -39,13 +39,13 @@
     "science"
   ],
   "Standards-Version": [
-    "4.7.2"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "python3"
+    "build-essential, pkgconf"
   ],
   "Uploaders": [
     "Andreas Tille \u003ctille@debian.org\u003e"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/med-team/hmmer.git"
   ],
   "Version": [
-    "3.4+dfsg-3"
+    "3.4+dfsg2-2"
   ]
 }
