@@ -6,19 +6,31 @@
     "webhook"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-golang, golang-github-fsnotify-fsnotify-dev, golang-github-gorilla-mux-dev, golang-github-urfave-negroni-dev, golang-go"
+    "debhelper-compat (= 14), dh-sequence-golang, dh-sequence-single-binary, dpkg-build-api (= 1)"
+  ],
+  "Build-Depends-Arch": [
+    "golang-github-clbanning-mxj-dev, golang-github-coreos-go-systemd-dev, golang-github-dustin-go-humanize-dev, golang-github-fsnotify-fsnotify-dev, golang-github-ghodss-yaml-dev, golang-github-go-chi-chi-dev, golang-github-gofrs-uuid-dev, golang-github-gorilla-mux-dev, golang-github-microsoft-go-winio-dev, golang-go, golang-golang-x-sys-dev"
   ],
   "Checksums-Sha256": [
-    "78ff9d647070a0dcecae8263d02819b1ec97f0d40b0474a0d543b00cc631a5af 2184 webhook_2.8.0-4.dsc c521558083f96bcefef16575a6f3f98ac79c0160fd0073be5e76d6645e068398 1657141 webhook_2.8.0.orig.tar.gz bc6260936f0a5a0fe2b31bb6bfa75398cc5a87a59eb38078f677505a0d02e78f 3724 webhook_2.8.0-4.debian.tar.xz"
+    "b41d6c8128fe5fffe311c0b631b3e65bda46c29f2a5b40afff1ed58f5bbf6f66 2751 webhook_2.8.3-1.dsc ecf3ace84d072f92378143bffd53cb5ab0cd5d40a6e267b6fd03fb7f67476472 722520 webhook_2.8.3.orig.tar.xz 6f0812e4148b95583c33c42cc37f065cdbe06d9b420707a3dda18b4a19a69bd0 4084 webhook_2.8.3-1.debian.tar.xz"
+  ],
+  "Dgit": [
+    "e14c3d36199e19e0476e0a84f1eff59fa220c561 debian archive/debian/2.8.3-1 https://git.dgit.debian.org/webhook"
   ],
   "Directory": [
     "pool/main/w/webhook"
   ],
   "Files": [
-    "a4c6528611d819841b900dbafb357f5f 2184 webhook_2.8.0-4.dsc 4113df77c01abfb6afda5eb1c992f02d 1657141 webhook_2.8.0.orig.tar.gz 22d8131fb69745baf74f642b2481787a 3724 webhook_2.8.0-4.debian.tar.xz"
+    "9cad4f35f9c1e4b523841a04756f5eb5 2751 webhook_2.8.3-1.dsc c93e195a81491067cb32f0a85d037b80 722520 webhook_2.8.3.orig.tar.xz 8be9d0bd2cc1544105f483d27fa18738 4084 webhook_2.8.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Git-Tag-Info": [
+    "tag=8cad10303f3f14042df079f726035aa64efd05f6 fp=ba56e348bd94451edec970074a9208a2455077a7"
+  ],
+  "Git-Tag-Tagger": [
+    "Andrea Pappacoda \u003ctachi@debian.org\u003e"
   ],
   "Go-Import-Path": [
     "github.com/adnanh/webhook"
@@ -42,7 +54,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.6.0.1"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -51,7 +63,7 @@
     "curl, systemd"
   ],
   "Uploaders": [
-    "Free Ekanayaka \u003cfreee@debian.org\u003e, Michael Stapelberg \u003cstapelberg@debian.org\u003e,"
+    "Free Ekanayaka \u003cfreee@debian.org\u003e, Michael Stapelberg \u003cstapelberg@debian.org\u003e"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/go-team/packages/webhook"
@@ -60,6 +72,6 @@
     "https://salsa.debian.org/go-team/packages/webhook.git"
   ],
   "Version": [
-    "2.8.0-4"
+    "2.8.3-1"
   ]
 }

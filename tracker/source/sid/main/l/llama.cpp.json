@@ -3,22 +3,22 @@
     "any all"
   ],
   "Binary": [
-    "llama.cpp, libllama0, libllama-dev, llama.cpp-tools, llama.cpp-tools-extra, llama.cpp-services, llama.cpp-examples, llama.cpp-tests, python3-gguf"
+    "llama.cpp, libllama1, libllama-dev, llama.cpp-tools, llama.cpp-tools-extra, llama.cpp-tools-conversion, llama.cpp-services, llama.cpp-examples, llama.cpp-tests, python3-gguf"
   ],
   "Build-Depends": [
-    "dh-sequence-bash-completion, cmake, dh-python, dh-sequence-installsysusers, debhelper-compat (= 13), help2man, libssl-dev, libggml-dev (\u003e= 0.29.0), pkgconf, po-debconf"
+    "dh-sequence-bash-completion, cmake, dh-python, dh-sequence-installsysusers, debhelper-compat (= 13), help2man, libssl-dev, libggml-dev (\u003e= 1.0.0), pkgconf, po-debconf"
   ],
   "Build-Depends-Indep": [
     "dh-sequence-python3, python3-all, pybuild-plugin-pyproject, python3-poetry-core, python3-numpy, python3-tqdm, python3-yaml, python3-sentencepiece, python3-pytest"
   ],
   "Checksums-Sha256": [
-    "4b599a806ce286cf35d30b79db8922cd9472fec5e222b1c51f479a32309a94c6 3035 llama.cpp_0.9.0+dfsg-1.dsc 32541f60a35486c15292b1ca3ae9ff87c98ba95558ba4134565da16617cea9e4 8932016 llama.cpp_0.9.0+dfsg.orig.tar.xz 1920ffe8aaf685c22e62f918f11a0737c0ef201f8b97c1d3c3ff56083c17481c 71776 llama.cpp_0.9.0+dfsg-1.debian.tar.xz"
+    "8f3e704a8095a030264ee93341a5a73f32b5ee7430d00f2eb42d0496d7c12d91 3120 llama.cpp_1.0.0+dfsg-1.dsc 100a15f3fc669cbefcceb24c4ea15fc83ff5854976aec9d4fa2837301589a6a1 8661300 llama.cpp_1.0.0+dfsg.orig.tar.xz ff52f24e364865ff22d2e0c87a927a8651bac97b3c11f1b19cedf948cd2d8774 72284 llama.cpp_1.0.0+dfsg-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/l/llama.cpp"
   ],
   "Files": [
-    "0c679aab6bc334d953d62731aa7218ef 3035 llama.cpp_0.9.0+dfsg-1.dsc dc20888281662a8d7987e1251859ca34 8932016 llama.cpp_0.9.0+dfsg.orig.tar.xz 25ce9c5875ec72007e66f2d92bd75fc7 71776 llama.cpp_0.9.0+dfsg-1.debian.tar.xz"
+    "4db20ac554fb497a52351843a3257261 3120 llama.cpp_1.0.0+dfsg-1.dsc 403e6a092accfd1a5cbf72c0ccf76e54 8661300 llama.cpp_1.0.0+dfsg.orig.tar.xz 306c2eb7c859bee4af6e50f6136ffa57 72284 llama.cpp_1.0.0+dfsg-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -33,7 +33,7 @@
     "llama.cpp"
   ],
   "Package-List": [
-    "libllama-dev deb libdevel optional arch=any libllama0 deb libs optional arch=any llama.cpp deb science optional arch=all llama.cpp-examples deb science optional arch=any llama.cpp-services deb science optional arch=all llama.cpp-tests deb science optional arch=any llama.cpp-tools deb science optional arch=any llama.cpp-tools-extra deb science optional arch=any python3-gguf deb python optional arch=all"
+    "libllama-dev deb libdevel optional arch=any libllama1 deb libs optional arch=any llama.cpp deb science optional arch=all llama.cpp-examples deb science optional arch=any llama.cpp-services deb science optional arch=all llama.cpp-tests deb science optional arch=any llama.cpp-tools deb science optional arch=any llama.cpp-tools-conversion deb science optional arch=all llama.cpp-tools-extra deb science optional arch=any python3-gguf deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "ca-certificates, dpkg-dev, libggml0-backend-cuda, libggml0-backend-hip, libggml0-backend-vulkan, mesa-vulkan-drivers, nvidia-vulkan-icd, wget"
+    "ca-certificates, dpkg-dev, libggml1-backend-cuda, libggml1-backend-hip, libggml1-backend-vulkan, mesa-vulkan-drivers, nvidia-vulkan-icd, wget"
   ],
   "Uploaders": [
     "Christian Kastner \u003cckk@debian.org\u003e, Mathieu Baudier \u003cmbaudier@argeo.org\u003e,"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/deeplearning-team/llama.cpp.git"
   ],
   "Version": [
-    "1:0.9.0+dfsg-1"
+    "1:1.0.0+dfsg-1"
   ]
 }
