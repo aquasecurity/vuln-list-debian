@@ -3,19 +3,19 @@
     "all"
   ],
   "Binary": [
-    "libsisu-inject-java"
+    "libsisu-inject-java, libsisu-plexus-java, libeclipse-sisu-maven-plugin-java"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), default-jdk, junit4, libbuild-helper-maven-plugin-java, libcdi-api-java, libgeronimo-annotation-1.3-spec-java, libguice-java, liblogback-java, libosgi-core-java (\u003e= 6.0), libservlet-api-java, libslf4j-java, maven-debian-helper (\u003e= 1.5), testng"
+    "debhelper-compat (= 13), default-jdk, junit4, junit5, libbnd-maven-plugin-java, libasm-java, libcdi-api-java, libeclipse-sisu-maven-plugin-java, libgeronimo-annotation-1.3-spec-java, libguice-java, libmaven-common-artifact-filters-java, libmaven-plugin-tools-java, libmaven3-core-java, libosgi-core-java (\u003e= 6.0), libplexus-build-api-java (\u003e= 1.2), libplexus-classworlds-java, libplexus-component-annotations-java, libplexus-utils2-java, libservlet-api-java, libslf4j-java, maven-debian-helper (\u003e= 2.7~), testng"
   ],
   "Checksums-Sha256": [
-    "7935c9df1d908b572c7d6c7cfc42df6b999d5645ed4a0787df6f2f7184306c8d 2222 sisu-inject_0.3.5-1.dsc 09edfe8e6f1259127f91f7c2456c6f97e0e8a66d09f52426d6812e36a7d15d7b 176800 sisu-inject_0.3.5.orig.tar.xz 656c8ce7614b56f3bd74cc46df66d42320988c4d9342a163172c869995a243a1 8352 sisu-inject_0.3.5-1.debian.tar.xz"
+    "b0f71b5c601cb9e0bb832d57abbf33b0d0ad15fbdbd391bc35a8eea1826e86c8 2632 sisu-inject_1.0.0-1.dsc 8c6dcf5ebf55949eaf6ed02b2c3dd2e835e81519506c660f58102721a5575b6a 220036 sisu-inject_1.0.0.orig.tar.xz 81dfbcc64e5adb7008447c484066c116f24139afed034cdae3f57075462de668 9744 sisu-inject_1.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/s/sisu-inject"
   ],
   "Files": [
-    "72ac700a24bb8e8011ec071293732d3b 2222 sisu-inject_0.3.5-1.dsc 6ed0fa357d44b351e081c58742681e60 176800 sisu-inject_0.3.5.orig.tar.xz f03da5befa4c4a6e4f73bb25aad5021d 8352 sisu-inject_0.3.5-1.debian.tar.xz"
+    "fe1604ffbac89780b44d73472e47e4a3 2632 sisu-inject_1.0.0-1.dsc 32feb545dd9cce5b3df90c72a26cfd5c 220036 sisu-inject_1.0.0.orig.tar.xz 416696cb3d5053104a07e073f4802630 9744 sisu-inject_1.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "sisu-inject"
   ],
   "Package-List": [
-    "libsisu-inject-java deb java optional arch=all"
+    "libeclipse-sisu-maven-plugin-java deb java optional arch=all libsisu-inject-java deb java optional arch=all libsisu-plexus-java deb java optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -39,7 +39,7 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Uploaders": [
     "Emmanuel Bourg \u003cebourg@apache.org\u003e"
@@ -51,6 +51,6 @@
     "https://salsa.debian.org/java-team/sisu-inject.git"
   ],
   "Version": [
-    "0.3.5-1"
+    "1.0.0-1"
   ]
 }
