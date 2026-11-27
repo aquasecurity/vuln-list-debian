@@ -6,19 +6,25 @@
     "librust-smawk-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-cargo (\u003e= 25), cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
+    "debhelper-compat (= 13), dh-sequence-cargo"
+  ],
+  "Build-Depends-Arch": [
+    "cargo:native \u003c!nocheck\u003e, rustc:native \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "2bf1cfb901f0c480ce76a3d27baea35dc4d695c8743218a567f8604b3f764a47 2062 rust-smawk_0.3.2-1.dsc b7c388c1b5e93756d0c740965c41e8822f866621d41acbdf6336a6a168f8840c 13831 rust-smawk_0.3.2.orig.tar.gz 242c4ae3f1a1145b71edd32b0fdab2ced36980c0fac09d8ccdf3dab9c3bebba3 3060 rust-smawk_0.3.2-1.debian.tar.xz"
+    "a50bb64a464bb5649bfdca0b6ed5568879af0833966c5b7aad3e4994055ceeda 2330 rust-smawk_0.3.3-1.dsc e8e2fb0f499abb4d162f2bedad68f5ef91a1682b5a03596ddb67efd37768d100 30133 rust-smawk_0.3.3.orig.tar.gz 0803a8f4d3460e987efd6af2ad7e37451d01574f2f43108a261d7b69928b7b5f 2924 rust-smawk_0.3.3-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-smawk"
   ],
   "Files": [
-    "ab3703200d073264793c069168e7c403 2062 rust-smawk_0.3.2-1.dsc ea275797b6ebf7a4089a9b005ced5e6e 13831 rust-smawk_0.3.2.orig.tar.gz fbcdb5932899fa7395d8c6ce7c13d389 3060 rust-smawk_0.3.2-1.debian.tar.xz"
+    "38408f11154647f54f16ab789db6d664 2330 rust-smawk_0.3.3-1.dsc 6d6bc3ab9abed3f8a58aad3ebf2d7187 30133 rust-smawk_0.3.3.orig.tar.gz f935adff2333784ed300fbbf736e7cf8 2924 rust-smawk_0.3.3-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
+  ],
+  "Homepage": [
+    "https://github.com/mgeisler/smawk"
   ],
   "Maintainer": [
     "Debian Rust Maintainers \u003cpkg-rust-maintainers@alioth-lists.debian.net\u003e"
@@ -36,10 +42,13 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.7.0"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "dh-cargo, librust-divan-0.1+default-dev, librust-num-traits-0.2+default-dev, librust-rand-0.10+default-dev, librust-rstest-0.26+default-dev, librust-version-sync-0.9+default-dev, rustc"
   ],
   "Uploaders": [
     "Sylvestre Ledru \u003csylvestre@debian.org\u003e"
@@ -51,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/smawk]"
   ],
   "Version": [
-    "0.3.2-1"
+    "0.3.3-1"
   ]
 }
