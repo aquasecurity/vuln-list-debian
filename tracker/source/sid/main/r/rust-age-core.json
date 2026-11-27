@@ -9,16 +9,16 @@
     "debhelper-compat (= 13), dh-sequence-cargo"
   ],
   "Build-Depends-Arch": [
-    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.74) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-bech32-0.11+default-dev \u003c!nocheck\u003e, librust-chacha20poly1305-0.10+alloc-dev \u003c!nocheck\u003e, librust-cookie-factory-0.3+default-dev (\u003e= 0.3.1) \u003c!nocheck\u003e, librust-hkdf-0.12+default-dev \u003c!nocheck\u003e, librust-hpke-0.13+alloc-dev \u003c!nocheck\u003e, librust-io-tee-0.1+default-dev (\u003e= 0.1.1) \u003c!nocheck\u003e, librust-nom-8+alloc-dev \u003c!nocheck\u003e, librust-rand-0.8+default-dev \u003c!nocheck\u003e, librust-secrecy-0.10+default-dev \u003c!nocheck\u003e, librust-sha2-0.10+default-dev \u003c!nocheck\u003e"
+    "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.85) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e, librust-base64-0.22+default-dev \u003c!nocheck\u003e, librust-bech32-0.11+default-dev \u003c!nocheck\u003e, librust-chacha20poly1305-0.11+alloc-dev \u003c!nocheck\u003e, librust-cookie-factory-0.3+default-dev (\u003e= 0.3.1) \u003c!nocheck\u003e, librust-hkdf-0.13+default-dev \u003c!nocheck\u003e, librust-hpke-0.15+alloc-dev \u003c!nocheck\u003e, librust-hpke-0.15+chacha-dev \u003c!nocheck\u003e, librust-hpke-0.15+hkdfsha2-dev \u003c!nocheck\u003e, librust-hpke-0.15+nistp-dev \u003c!nocheck\u003e, librust-io-tee-0.1+default-dev (\u003e= 0.1.1) \u003c!nocheck\u003e, librust-nom-8+alloc-dev \u003c!nocheck\u003e, librust-rand-0.10+default-dev \u003c!nocheck\u003e, librust-secrecy-0.10+default-dev \u003c!nocheck\u003e, librust-sha2-0.11+default-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "f18935635e240b014ba068452ed121ff972c2ceeaf97a838134b0fddbdda856e 2767 rust-age-core_0.12.0-1.dsc 01d4375964d1501e5f1b32aef2ead573913893ff238448d4e9fdf1522d828656 22392 rust-age-core_0.12.0.orig.tar.gz b5e91da616e3b8c55dcea1e1b661fdaf273bf485ac93d3e9d2f6e695ed3a4cc5 3244 rust-age-core_0.12.0-1.debian.tar.xz"
+    "ae399135032db3a419b6dec68f8ed68d81d9481f1dc3024325b35ff1bbd5cdd8 2347 rust-age-core_0.12.0-2.dsc 01d4375964d1501e5f1b32aef2ead573913893ff238448d4e9fdf1522d828656 22392 rust-age-core_0.12.0.orig.tar.gz d469395637202bc0b787039983abd52ba979289af0bc642f70485ad6857af0fb 7032 rust-age-core_0.12.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-age-core"
   ],
   "Files": [
-    "fa0d7e5435a90b5923e1a866036531aa 2767 rust-age-core_0.12.0-1.dsc aca13e8ca82ba95b13c13d1561ebb92d 22392 rust-age-core_0.12.0.orig.tar.gz 199a704a96f7e82d1635167e0f3d2d04 3244 rust-age-core_0.12.0-1.debian.tar.xz"
+    "9901f40aa48ff72d4d2f572cf155ca66 2347 rust-age-core_0.12.0-2.dsc aca13e8ca82ba95b13c13d1561ebb92d 22392 rust-age-core_0.12.0.orig.tar.gz b4d2d6e742d6335bbb6e401e2f240317 7032 rust-age-core_0.12.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -48,7 +48,7 @@
     "autopkgtest"
   ],
   "Testsuite-Triggers": [
-    "dh-cargo, librust-hpke-0.13+alloc-dev, librust-hpke-0.13+p256-dev, rustc"
+    "dh-cargo, librust-hpke-0.15+alloc-dev, librust-hpke-0.15+chacha-dev, librust-hpke-0.15+mlkem-dev, librust-hpke-0.15+nistp-dev, rustc"
   ],
   "Uploaders": [
     "Ivan Carvalho \u003civancarvalho@google.com\u003e"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/age-core]"
   ],
   "Version": [
-    "0.12.0-1"
+    "0.12.0-2"
   ]
 }
