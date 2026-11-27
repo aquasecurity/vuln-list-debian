@@ -3,19 +3,19 @@
     "any"
   ],
   "Binary": [
-    "par2"
+    "par2, libpar2-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13)"
+    "cmake, debhelper-compat (= 13), libcxxopts-dev"
   ],
   "Checksums-Sha256": [
-    "c51eea81185dcaf0b0fb7f25f752f6f383070c588dc06729ea0b20cdcfe6e28c 2129 par2cmdline_1.4.0-1.dsc 269aff9d49c6a0c0d1c394300d35c36229764588f56faad5850eaf36c7a298dc 2538977 par2cmdline_1.4.0.orig.tar.bz2 85a561b66be293d29af516ca11f7a0d683227a7c5bd846f477b974d56d3fb9b6 833 par2cmdline_1.4.0.orig.tar.bz2.asc 71df8c4a65232f3b6eadbc5b40e11b93f5fbb7e4c3b8cceb7c04b804fa69619c 8232 par2cmdline_1.4.0-1.debian.tar.xz"
+    "3e45b0a545d55536c4251652149cfddfd3b6cacba1493d9f664108021b9f1426 2242 par2cmdline_2.0.0-1.dsc 93b8403d6304bcfbfe5bc5a619099496bfe3510c48b73dae6c26127eeaa91cbb 2552701 par2cmdline_2.0.0.orig.tar.bz2 cdaa2d7c2c843ebdcb8928e13db5f2100c920e976f51a0005f21de53cd7048af 833 par2cmdline_2.0.0.orig.tar.bz2.asc dcff9f2a00cbc4a1f0998ea1a0fb767eb4f4bc8458a7fee78e3ab6f41166926a 9336 par2cmdline_2.0.0-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/par2cmdline"
   ],
   "Files": [
-    "082745e938b95993a4c6600ca947718e 2129 par2cmdline_1.4.0-1.dsc 253ef7999067f1b8ff0964e444054029 2538977 par2cmdline_1.4.0.orig.tar.bz2 3f3dd269db62308b70beeb27c6261695 833 par2cmdline_1.4.0.orig.tar.bz2.asc 1a9c793899a7736abd1c140122785170 8232 par2cmdline_1.4.0-1.debian.tar.xz"
+    "16822b0670a7fd163599d59bc188b62c 2242 par2cmdline_2.0.0-1.dsc f4e2a6cac44aaad9f3988e091990984c 2552701 par2cmdline_2.0.0.orig.tar.bz2 c5f68bb69c5f651507d8e5c147eea8e4 833 par2cmdline_2.0.0.orig.tar.bz2.asc 0d30a8942d52528a1a089eeff2b6d975 9336 par2cmdline_2.0.0-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "par2cmdline"
   ],
   "Package-List": [
-    "par2 deb utils unknown arch=any"
+    "libpar2-dev deb libdevel optional arch=any par2 deb utils optional arch=any"
   ],
   "Priority": [
     "optional"
@@ -44,6 +44,9 @@
   "Testsuite": [
     "autopkgtest"
   ],
+  "Testsuite-Triggers": [
+    "@builddeps@"
+  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/jcfp/par2cmdline"
   ],
@@ -51,6 +54,6 @@
     "https://salsa.debian.org/jcfp/par2cmdline.git"
   ],
   "Version": [
-    "1.4.0-1"
+    "2.0.0-1"
   ]
 }
