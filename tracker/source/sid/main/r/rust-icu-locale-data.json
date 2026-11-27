@@ -6,19 +6,19 @@
     "librust-icu-locale-data-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), dh-sequence-cargo"
+    "debhelper-compat (= 13), dh-sequence-cargo, rustfmt, icu4x-datagen (\u003e= 2.2~), icu4x-datagen (\u003c\u003c 2.3~), unicode-cldr-json (\u003e= 48.2.0), unicode-cldr-json (\u003c\u003c 48.3~)"
   ],
   "Build-Depends-Arch": [
     "cargo:native \u003c!nocheck\u003e, rustc:native (\u003e= 1.86) \u003c!nocheck\u003e, libstd-rust-dev \u003c!nocheck\u003e"
   ],
   "Checksums-Sha256": [
-    "4bda422b652b243cbd2ccb57f0500ac7a0db385bff3c2269c7bd5b3efd7ace08 1677 rust-icu-locale-data_2.2.0-1.dsc d5fdcc9ac77c6d74ff5cf6e65ef3181d6af32003b16fce3a77fb451d2f695993 116702 rust-icu-locale-data_2.2.0.orig.tar.gz bea3d35cb279c24c54eda138f778e269fc663737badfbff8ec9d838a1c5a4072 3136 rust-icu-locale-data_2.2.0-1.debian.tar.xz"
+    "5d3eb2d769273c8078a6fa75c60715a6f0a51d86915595044105ce40bc9cb238 2402 rust-icu-locale-data_2.2.0-2.dsc d5fdcc9ac77c6d74ff5cf6e65ef3181d6af32003b16fce3a77fb451d2f695993 116702 rust-icu-locale-data_2.2.0.orig.tar.gz 47b02b985f66f1ad68874b1d71ede8a50ae0a85e6ad6af7dfefa03c1dc252917 3884 rust-icu-locale-data_2.2.0-2.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rust-icu-locale-data"
   ],
   "Files": [
-    "49ea9b75b0665077a3533dc63f86b619 1677 rust-icu-locale-data_2.2.0-1.dsc 7d616a86433ae7964599e5971da3ee9c 116702 rust-icu-locale-data_2.2.0.orig.tar.gz 535581037b28e3083e58182dd83826bd 3136 rust-icu-locale-data_2.2.0-1.debian.tar.xz"
+    "92bedc32d46d65e772fd8a8710b4be3a 2402 rust-icu-locale-data_2.2.0-2.dsc 7d616a86433ae7964599e5971da3ee9c 116702 rust-icu-locale-data_2.2.0.orig.tar.gz fc0eb22250b5fab16d4a3f1dffb3d51b 3884 rust-icu-locale-data_2.2.0-2.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -42,7 +42,7 @@
     "rust"
   ],
   "Standards-Version": [
-    "4.7.3"
+    "4.7.4"
   ],
   "Testsuite": [
     "autopkgtest"
@@ -60,6 +60,6 @@
     "https://salsa.debian.org/rust-team/debcargo-conf.git [src/icu-locale-data]"
   ],
   "Version": [
-    "2.2.0-1"
+    "2.2.0-2"
   ]
 }

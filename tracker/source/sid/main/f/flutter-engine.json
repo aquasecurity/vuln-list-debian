@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "amd64 arm64 armhf all"
+    "amd64 arm64 armhf riscv64 all"
   ],
   "Binary": [
     "libflutter-linux-gtk, libflutter-linux-gtk-dev, libflutter-linux-gtk-profile, libflutter-engine-embedder, libflutter-engine-embedder-dev, flutter-engine-tools, flutter-engine-font-subset, sky-engine, flutter-patched-sdk, flutter-tester"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-exec, clang-22, lld-22, llvm-22, libclang-rt-22-dev, generate-ninja, ninja-build, pkgconf, python3, dart-sdk (\u003e= 3.13.4+dfsg1-6), dart-kernel-compiler (\u003e= 3.13.4+dfsg1-7), dart-args, dart-path, libepoxy-dev, libglib2.0-dev, libgtk-3-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libjpeg-dev, libpng-dev, libwebp-dev, zlib1g-dev, libexpat1-dev, libicu-dev, libegl-dev, libgles-dev, libgl-dev, libvulkan-dev, glslang-dev, spirv-headers, spirv-tools-dev, libflatbuffers-dev, rapidjson-dev"
+    "debhelper-compat (= 14), dh-exec, clang-23, lld-23, llvm-23, libclang-rt-23-dev, generate-ninja, ninja-build, pkgconf, python3, dart-sdk (\u003e= 3.13.4+dfsg1-6), dart-kernel-compiler (\u003e= 3.13.4+dfsg1-7), dart-args, dart-path, libepoxy-dev, libglib2.0-dev, libgtk-3-dev, libfontconfig-dev, libfreetype-dev, libharfbuzz-dev, libjpeg-dev, libpng-dev, libwebp-dev, zlib1g-dev, libexpat1-dev, libicu-dev, libegl-dev, libgles-dev, libgl-dev, libvulkan-dev, glslang-dev, spirv-headers, spirv-tools-dev, libflatbuffers-dev, rapidjson-dev"
   ],
   "Checksums-Sha256": [
-    "51480df76fa9ee5dff694f4f7a004a247797b616cafda2093304955695a963e9 3449 flutter-engine_3.47.9+ds1-1.dsc e9354e97021b63161123c75c6d1687410e9b19a03a9cf20999ee4814130171f5 48870520 flutter-engine_3.47.9+ds1.orig.tar.xz 8718d7efb011bd6498b035da305217328f4d5c0705f49f8736862ea2c69fba08 26976 flutter-engine_3.47.9+ds1-1.debian.tar.xz"
+    "7378a620da34d04aac51f8ee0b7ac63f50a3ae8dc5ff31498ac276ca6423a167 3439 flutter-engine_3.47.9+ds1-3.dsc e9354e97021b63161123c75c6d1687410e9b19a03a9cf20999ee4814130171f5 48870520 flutter-engine_3.47.9+ds1.orig.tar.xz 358bcc180f6de24b21fb17f4014dc0a1a9d0b8fbf8eb7b7eace2cd57e6bbd324 30000 flutter-engine_3.47.9+ds1-3.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/f/flutter-engine"
   ],
   "Files": [
-    "a58e31253e4208ff3cdc1db133a595dc 3449 flutter-engine_3.47.9+ds1-1.dsc 1ca10dceb5294f83d1fa0aa61237bdbb 48870520 flutter-engine_3.47.9+ds1.orig.tar.xz f6415d0434c43031b45fd46ae18f4843 26976 flutter-engine_3.47.9+ds1-1.debian.tar.xz"
+    "1dbabfde0f81c485b2a6d2e39aedd414 3439 flutter-engine_3.47.9+ds1-3.dsc 1ca10dceb5294f83d1fa0aa61237bdbb 48870520 flutter-engine_3.47.9+ds1.orig.tar.xz 45016f46b35d5fb746519de34f411cf6 30000 flutter-engine_3.47.9+ds1-3.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -24,13 +24,13 @@
     "https://flutter.dev/"
   ],
   "Maintainer": [
-    "Debian Flutter Team \u003cteam+flutter@tracker.debian.org\u003e"
+    "Emfox Zhou \u003cemfox@debian.org\u003e"
   ],
   "Package": [
     "flutter-engine"
   ],
   "Package-List": [
-    "flutter-engine-font-subset deb devel optional arch=amd64,arm64,armhf flutter-engine-tools deb devel optional arch=amd64,arm64,armhf flutter-patched-sdk deb devel optional arch=amd64,arm64,armhf flutter-tester deb devel optional arch=amd64,arm64,armhf libflutter-engine-embedder deb libs optional arch=amd64,arm64,armhf libflutter-engine-embedder-dev deb libdevel optional arch=amd64,arm64,armhf libflutter-linux-gtk deb libs optional arch=amd64,arm64,armhf libflutter-linux-gtk-dev deb libdevel optional arch=amd64,arm64,armhf libflutter-linux-gtk-profile deb libs optional arch=amd64,arm64,armhf sky-engine deb devel optional arch=all"
+    "flutter-engine-font-subset deb devel optional arch=amd64,arm64,armhf,riscv64 flutter-engine-tools deb devel optional arch=amd64,arm64,armhf,riscv64 flutter-patched-sdk deb devel optional arch=amd64,arm64,armhf,riscv64 flutter-tester deb devel optional arch=amd64,arm64,armhf,riscv64 libflutter-engine-embedder deb libs optional arch=amd64,arm64,armhf,riscv64 libflutter-engine-embedder-dev deb libdevel optional arch=amd64,arm64,armhf,riscv64 libflutter-linux-gtk deb libs optional arch=amd64,arm64,armhf,riscv64 libflutter-linux-gtk-dev deb libdevel optional arch=amd64,arm64,armhf,riscv64 libflutter-linux-gtk-profile deb libs optional arch=amd64,arm64,armhf,riscv64 sky-engine deb devel optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -47,9 +47,6 @@
   "Testsuite-Triggers": [
     "build-essential, fonts-dejavu-core, pkgconf, python3"
   ],
-  "Uploaders": [
-    "Emfox Zhou \u003cemfox@debian.org\u003e"
-  ],
   "Vcs-Browser": [
     "https://salsa.debian.org/dart-team/flutter-engine"
   ],
@@ -57,6 +54,6 @@
     "https://salsa.debian.org/dart-team/flutter-engine.git"
   ],
   "Version": [
-    "3.47.9+ds1-1"
+    "3.47.9+ds1-3"
   ]
 }
