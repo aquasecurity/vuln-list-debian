@@ -6,16 +6,16 @@
     "python3-ebooklib, python-ebooklib-doc"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 14), dh-sequence-python3, python3-all, python3-lxml, python3-setuptools, python3-six, python3-sphinx, python3-pytest"
+    "debhelper-compat (= 14), dh-sequence-python3, dh-sequence-sphinxdoc, pybuild-plugin-pyproject, python3-all, python3-lxml, python3-pygments, python3-pytest \u003c!nocheck\u003e, python3-setuptools, python3-sphinx \u003c!nodoc\u003e"
   ],
   "Checksums-Sha256": [
-    "ceaa45459e248a090694fe0a4c9107e743b4417010d58926e6ac8d84dc815843 2010 python-ebooklib_0.20-2.dsc b8dc574bf675e4832e69ef13514d4578d547f85619db6dbf5d0428e999838377 238619 python-ebooklib_0.20.orig.tar.gz a64242f1f0232e153b2af604894043eab09621129240f56a180791bbda66efff 4044 python-ebooklib_0.20-2.debian.tar.xz"
+    "fea19abc86c8c0d2aadb8fa3c937079b94c1b257889ab4fb62593cc05ed8ad8c 2117 python-ebooklib_0.21-1.dsc 6739f80f1642999de2bd4521dddb7fedb1a8615e48d52cac49c8e6048f946e75 261437 python-ebooklib_0.21.orig.tar.gz 5d420cfbdb4233e1cbf69c477294238f2721301e046920e73e782e1a3ba8f13f 4404 python-ebooklib_0.21-1.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/p/python-ebooklib"
   ],
   "Files": [
-    "190b4931011275581df0eb9e5176b3ab 2010 python-ebooklib_0.20-2.dsc 8b6a119819fa431d65d7bf194f1841e3 238619 python-ebooklib_0.20.orig.tar.gz e474011f4ac4b1d8f492837086747662 4044 python-ebooklib_0.20-2.debian.tar.xz"
+    "1143ac1ee4a9a51eb595d27690927c19 2117 python-ebooklib_0.21-1.dsc 414ee17d823d5a7b9ba36c1806341f90 261437 python-ebooklib_0.21.orig.tar.gz 91342ea3e1d5144793a7955d09798f87 4404 python-ebooklib_0.21-1.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "python-ebooklib"
   ],
   "Package-List": [
-    "python-ebooklib-doc deb doc optional arch=all python3-ebooklib deb python optional arch=all"
+    "python-ebooklib-doc deb doc optional arch=all profile=!nodoc profile:v1=!nodoc python3-ebooklib deb python optional arch=all"
   ],
   "Priority": [
     "optional"
@@ -54,6 +54,6 @@
     "https://salsa.debian.org/debian/python-ebooklib.git"
   ],
   "Version": [
-    "0.20-2"
+    "0.21-1"
   ]
 }

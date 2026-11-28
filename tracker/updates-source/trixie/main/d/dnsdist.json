@@ -6,10 +6,10 @@
     "dnsdist"
   ],
   "Build-Depends": [
-    "cmake, debhelper-compat (= 13), dpkg-dev (\u003e= 1.22.5), libboost-all-dev, libbpf-dev, libcap-dev [linux-any], libcdb-dev, libedit-dev, libfstrm-dev, liblmdb-dev, libluajit-5.1-dev (\u003e= 2.1.0~beta3+dfsg-5.3) [amd64 arm64] | libluajit-5.1-dev [amd64] | liblua5.1-0-dev, libnghttp2-dev, libprotobuf-dev, libre2-dev, libsnmp-dev, libsodium-dev, libssl-dev, libsystemd-dev, libxdp-dev, pkgconf, protobuf-compiler, ragel, systemd, zlib1g-dev"
+    "debhelper-compat (= 13), dh-cargo, dh-sequence-installsysusers, dpkg-dev (\u003e= 1.22.5), architecture-is-64-bit, cargo, libboost-container-dev, libboost-dev, libboost-test-dev, libbpf-dev, libcap-dev [linux-any], libcdb-dev, libedit-dev, libfstrm-dev, libgnutls28-dev, liblmdb-dev, libluajit-5.1-dev [amd64 arm64] | liblua5.3-dev, libnghttp2-dev, libprotobuf-dev, libre2-dev, librust-cxx-build-dev (\u003e= 1.0.130-1~), librust-cxx-dev (\u003e= 1.0.130-1~), librust-cxx-dev (\u003c= 1.0.175~) | librust-cxx-dev (\u003e= 1.0.181-1~), librust-serde-derive-dev, librust-serde-dev, librust-serde-yaml-dev (\u003e= 0.9.34~), libsnmp-dev, libsodium-dev, libssl-dev, libsystemd-dev, libxdp-dev, meson, pkgconf, protobuf-compiler, python3-yaml, ragel, systemd, systemd-dev | systemd (\u003c\u003c 257), zlib1g-dev"
   ],
   "Checksums-Sha256": [
-    "a36a755fec37e4eb98c67b345692df7df181ac554d7b9c8ee4adf5fa77878ecf 2314 dnsdist_1.9.16-0+deb13u1.dsc 5f9d8ba13c4d4ae47ae7d84d912b11540c50fc0e8c797f6836912d038c921a60 1618251 dnsdist_1.9.16.orig.tar.bz2 553dc12978984f9ff7d0de44d68a93017ed1a3aba80d7fa2d60a4b540922415d 10620 dnsdist_1.9.16-0+deb13u1.debian.tar.xz"
+    "73cf0afae73db2c3833120149a23d62bb13864e66519f28d0d732802840ccbcb 2099 dnsdist_2.1.4-1~deb13u1.dsc 9a9d3088716468a885bcf255ee5daf17673cf01ad67d6fa4be1bbab14b4da201 2376012 dnsdist_2.1.4.orig.tar.xz 7cce674a33ae41bdfe0308a5d1fbff370b0ea74b6396288ca9504f7e9b15e1e9 12904 dnsdist_2.1.4-1~deb13u1.debian.tar.xz"
   ],
   "Directory": [
     "pool/updates/main/d/dnsdist"
@@ -36,10 +36,16 @@
     "misc"
   ],
   "Standards-Version": [
-    "4.5.1"
+    "4.7.4"
+  ],
+  "Testsuite": [
+    "autopkgtest"
+  ],
+  "Testsuite-Triggers": [
+    "bind9-dnsutils, curl"
   ],
   "Uploaders": [
-    "Chris Hofstaedtler \u003czeha@debian.org\u003e"
+    "Chris Hofstaedtler \u003czeha@debian.org\u003e,"
   ],
   "Vcs-Browser": [
     "https://salsa.debian.org/debian/dnsdist"
@@ -48,6 +54,6 @@
     "https://salsa.debian.org/debian/dnsdist.git"
   ],
   "Version": [
-    "1.9.16-0+deb13u1"
+    "2.1.4-1~deb13u1"
   ]
 }
