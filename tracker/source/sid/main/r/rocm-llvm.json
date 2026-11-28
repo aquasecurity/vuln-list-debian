@@ -1,21 +1,21 @@
 {
   "Architecture": [
-    "any"
+    "amd64 arm64 ppc64el riscv64"
   ],
   "Binary": [
-    "hipcc, rocm-device-libs-21, libamd-comgr3, libamd-comgr-dev"
+    "hipcc, libamd-comgr3, libamd-comgr-dev"
   ],
   "Build-Depends": [
-    "debhelper-compat (= 13), cmake, clang-21, clang-tools-21, libclang-21-dev, libclang-rt-21-dev, libhsa-runtime-dev (\u003e= 6.1.2~), libnuma-dev, lld-21, liblld-21-dev, llvm-21-dev, libzstd-dev, zlib1g-dev, libxml2-dev, chrpath"
+    "debhelper-compat (= 13), cmake, clang-21, clang-tools-21, libclang-21-dev, libclang-rt-21-dev, libhsa-runtime-dev (\u003e= 6.1.2~), libnuma-dev, lld-21, liblld-21-dev, llvm-21-dev, libzstd-dev, rocm-device-libs-21 (\u003e= 7.1.1+ds-1), zlib1g-dev, libxml2-dev, chrpath"
   ],
   "Checksums-Sha256": [
-    "2d34680404c9c8e66e69ac1cf5e430dfbcd4482c5212bb01c49f5500e4e3443b 2587 rocm-llvm_7.0.2+dfsg-5.dsc c0abd0b9d526c6f486a0065edf0e2ab749519f4ad3c8dccfcaea3a545651e5f9 325280 rocm-llvm_7.0.2+dfsg.orig.tar.xz 209402033aa190c732b12e77adbcf67d6631a7d749872cd482e14bb2974bcea7 14620 rocm-llvm_7.0.2+dfsg-5.debian.tar.xz"
+    "8e7412a27b773febef81498005a34c24ea19ab469d14aecd97b40d6b2c07eca3 2579 rocm-llvm_7.0.2+dfsg-6.dsc c0abd0b9d526c6f486a0065edf0e2ab749519f4ad3c8dccfcaea3a545651e5f9 325280 rocm-llvm_7.0.2+dfsg.orig.tar.xz f133f4e1e94f2c0b32cf606a91362b67f5ba0ccafa00512e87e9fdf78ac52526 14468 rocm-llvm_7.0.2+dfsg-6.debian.tar.xz"
   ],
   "Directory": [
     "pool/main/r/rocm-llvm"
   ],
   "Files": [
-    "262da919545d71655fd2f76f27909aeb 2587 rocm-llvm_7.0.2+dfsg-5.dsc eca66c03a8d70969a71db8f55db2c963 325280 rocm-llvm_7.0.2+dfsg.orig.tar.xz 7a459abc78c6b2ccf0b963c64f428f8b 14620 rocm-llvm_7.0.2+dfsg-5.debian.tar.xz"
+    "98a84043ca3fc85750c23beb2e069cde 2579 rocm-llvm_7.0.2+dfsg-6.dsc eca66c03a8d70969a71db8f55db2c963 325280 rocm-llvm_7.0.2+dfsg.orig.tar.xz 443635db2cd7726348c0db7dfe1d19b6 14468 rocm-llvm_7.0.2+dfsg-6.debian.tar.xz"
   ],
   "Format": [
     "3.0 (quilt)"
@@ -30,7 +30,7 @@
     "rocm-llvm"
   ],
   "Package-List": [
-    "hipcc deb devel optional arch=amd64,arm64,ppc64el,riscv64 libamd-comgr-dev deb libdevel optional arch=amd64,arm64,ppc64el,riscv64 libamd-comgr3 deb libs optional arch=amd64,arm64,ppc64el,riscv64 rocm-device-libs-21 deb libs optional arch=any"
+    "hipcc deb devel optional arch=amd64,arm64,ppc64el,riscv64 libamd-comgr-dev deb libdevel optional arch=amd64,arm64,ppc64el,riscv64 libamd-comgr3 deb libs optional arch=amd64,arm64,ppc64el,riscv64"
   ],
   "Priority": [
     "optional"
@@ -57,6 +57,6 @@
     "https://salsa.debian.org/rocm-team/rocm-llvm.git"
   ],
   "Version": [
-    "7.0.2+dfsg-5"
+    "7.0.2+dfsg-6"
   ]
 }
